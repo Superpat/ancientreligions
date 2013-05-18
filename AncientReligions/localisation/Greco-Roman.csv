@@ -107,3 +107,20 @@ job_treasurer_grecoroman;Quaestor;;;;;;;;;;;;;;;x
 job_treasurer_grecoroman_reformed;Quaestor;;;;;;;;;;;;;;;x
 job_spiritual_grecoroman;Augur;;;;;;;;;;;;;;;x
 job_spiritual_grecoroman_reformed;Augur;;;;;;;;;;;;;;;x
+;;;;;;;;;;
+opinion_no_grecoroman_state_religion;Did not establish a Greco-Roman state religion;;;;;;;;;;;;;;;x
+opinion_no_forced_grecoroman_state_religion;Did not enforce a Greco-Roman state religion;;;;;;;;;;;;;;;x
+opinion_grecoroman_state_religion;Established a Greco-Roman state religion;;;;;;;;;;;;;;;x
+opinion_forced_grecoroman_state_religion;Enforced a Greco-Roman state religion;;;;;;;;;;;;;;;x
+opinion_adopted_grecoroman_state_religion;Adopted the Greco-Roman state religion;;;;;;;;;;;;;;;x
+opinion_rejected_grecoroman_state_religion;Rejected the Greco-Roman state religion;;;;;;;;;;;;;;;x
+EVTDESCancrel.100;Having long studied the old Greek and Roman classics you are wondering if their religious views wasn't better than your own.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.100;Yes, the old religion was better;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.100;No, I'm secure in my faith;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.102;As the newly crowned Emperor, you have the opportunity to re-establish the old imperial state religion once again, but your Christian vasals are not likely to appreciate such a decree.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.102;We must restore the glory of the old faith!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTTOOLTIPAancrel.102;Parts of the Empire will convert to the old imperial state religion.\n;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.102;Let my vassals choose their own faith.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.103;The newly crowed Emperor has endeavored to restore the ancient faith to the Empire, and demands that you convert.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.103;Glory to [From.Religion.GetRandomGodName] and the Empire!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.103;May [Root.Religion.GetRandomGodName] protect us.;;;;;;;;;;;;;;;;;;;;;;;;x

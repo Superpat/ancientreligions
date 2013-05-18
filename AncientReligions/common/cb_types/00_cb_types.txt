@@ -99,6 +99,26 @@ claim = {
 				clr_character_flag = claimant_adventurer
 			}
 		}
+		
+		hidden_tooltip = {
+			if = {
+				limit = {
+					OR = {
+						title = e_byzantium
+						title = e_roman_empire
+						title = e_latin_empire
+					}
+					FROM = { NOT = { religion_group = pagan_group } }
+					ROOT = {
+						OR = {
+							religion = grecoroman
+							religion = grecoroman_reformed
+						}
+					}
+				}
+				ROOT = { character_event = { id = ancrel.102 days = 1 } }
+			}
+		}
 	}
 
 	on_fail_title = {
@@ -422,6 +442,26 @@ other_claim = {
 			}
 			hidden_tooltip = { conquest_culture = ROOT }
 		}
+		
+		hidden_tooltip = {
+			if = {
+				limit = {
+					OR = {
+						title = e_byzantium
+						title = e_roman_empire
+						title = e_latin_empire
+					}
+					FROM = { NOT = { religion_group = pagan_group } }
+					ROOT = {
+						OR = {
+							religion = grecoroman
+							religion = grecoroman_reformed
+						}
+					}
+				}
+				ROOT = { character_event = { id = ancrel.102 days = 1 } }
+			}
+		}
 	}
 
 	on_fail_title = {
@@ -626,6 +666,26 @@ claim_on_liege = {
 			}
 			hidden_tooltip = { conquest_culture = ROOT }
 		}
+		
+		hidden_tooltip = {
+			if = {
+				limit = {
+					OR = {
+						title = e_byzantium
+						title = e_roman_empire
+						title = e_latin_empire
+					}
+					FROM = { NOT = { religion_group = pagan_group } }
+					ROOT = {
+						OR = {
+							religion = grecoroman
+							religion = grecoroman_reformed
+						}
+					}
+				}
+				ROOT = { character_event = { id = ancrel.102 days = 1 } }
+			}
+		}
 	}
 
 	on_fail = {
@@ -799,6 +859,26 @@ claim_on_liege_plot = {
 		}
 		ROOT = {
 			plot_succeeds = yes
+		}
+		
+		hidden_tooltip = {
+			if = {
+				limit = {
+					OR = {
+						title = e_byzantium
+						title = e_roman_empire
+						title = e_latin_empire
+					}
+					FROM = { NOT = { religion_group = pagan_group } }
+					ROOT = {
+						OR = {
+							religion = grecoroman
+							religion = grecoroman_reformed
+						}
+					}
+				}
+				ROOT = { character_event = { id = ancrel.102 days = 1 } }
+			}
 		}
 	}
 
@@ -1165,6 +1245,26 @@ other_claim_on_liege = {
 			}
 			hidden_tooltip = { conquest_culture = ROOT }
 		}
+		
+		hidden_tooltip = {
+			if = {
+				limit = {
+					OR = {
+						title = e_byzantium
+						title = e_roman_empire
+						title = e_latin_empire
+					}
+					FROM = { NOT = { religion_group = pagan_group } }
+					ROOT = {
+						OR = {
+							religion = grecoroman
+							religion = grecoroman_reformed
+						}
+					}
+				}
+				ROOT = { character_event = { id = ancrel.102 days = 1 } }
+			}
+		}
 	}
 
 	on_success_posttitle = {
@@ -1373,6 +1473,26 @@ claim_all = {
 						NOT = { culture = ROOT }
 					}
 					hidden_tooltip = { conquest_culture = ROOT }
+				}
+		
+				hidden_tooltip = {
+					if = {
+						limit = {
+							OR = {
+								title = e_byzantium
+								title = e_roman_empire
+								title = e_latin_empire
+							}
+							FROM = { NOT = { religion_group = pagan_group } }
+							ROOT = {
+								OR = {
+									religion = grecoroman
+									religion = grecoroman_reformed
+								}
+							}
+						}
+						ROOT = { character_event = { id = ancrel.102 days = 1 } }
+					}
 				}
 			}
 		}
@@ -2041,6 +2161,26 @@ invasion = {
 				NOT = { culture = ROOT }
 			}
 			hidden_tooltip = { conquest_culture = ROOT }
+		}
+		
+		hidden_tooltip = {
+			if = {
+				limit = {
+					OR = {
+						title = e_byzantium
+						title = e_roman_empire
+						title = e_latin_empire
+					}
+					FROM = { NOT = { religion_group = pagan_group } }
+					ROOT = {
+						OR = {
+							religion = grecoroman
+							religion = grecoroman_reformed
+						}
+					}
+				}
+				ROOT = { character_event = { id = ancrel.102 days = 1 } }
+			}
 		}
 	}
 
@@ -3629,6 +3769,26 @@ succession_on_liege = {
 					tier = FROM
 				}
 				usurp_title_plus_barony_if_unlanded = ROOT
+		
+				hidden_tooltip = {
+					if = {
+						limit = {
+							OR = {
+								title = e_byzantium
+								title = e_roman_empire
+								title = e_latin_empire
+							}
+							FROM = { NOT = { religion_group = pagan_group } }
+							ROOT = {
+								OR = {
+									religion = grecoroman
+									religion = grecoroman_reformed
+								}
+							}
+						}
+						ROOT = { character_event = { id = ancrel.102 days = 1 } }
+					}
+				}
 			}
 		}
 		any_attacker = {
@@ -3803,6 +3963,26 @@ other_succession = {
 				add_law = centralization_3
 			}
 		}
+		
+		hidden_tooltip = {
+			if = {
+				limit = {
+					OR = {
+						title = e_byzantium
+						title = e_roman_empire
+						title = e_latin_empire
+					}
+					FROM = { NOT = { religion_group = pagan_group } }
+					ROOT = {
+						OR = {
+							religion = grecoroman
+							religion = grecoroman_reformed
+						}
+					}
+				}
+				ROOT = { character_event = { id = ancrel.102 days = 1 } }
+			}
+		}
 	}
 
 	on_success_posttitle = {
@@ -3966,6 +4146,26 @@ other_succession_on_liege = {
 					tier = FROM
 				}
 				usurp_title_plus_barony_if_unlanded = ROOT
+				
+				hidden_tooltip = {
+					if = {
+						limit = {
+							OR = {
+								title = e_byzantium
+								title = e_roman_empire
+								title = e_latin_empire
+							}
+							FROM = { NOT = { religion_group = pagan_group } }
+							ROOT = {
+								OR = {
+									religion = grecoroman
+									religion = grecoroman_reformed
+								}
+							}
+						}
+						ROOT = { character_event = { id = ancrel.102 days = 1 } }
+					}
+				}
 			}
 		}
 		

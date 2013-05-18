@@ -1,0 +1,437 @@
+#######################################
+#
+# Revival of the Greco-Roman religion
+#
+# Event ID ancrel.100 - ancrel.109 reserved
+#
+#######################################
+
+# Written by Jon Severinsson
+
+namespace = ancrel
+
+# Studied the classics
+character_event = {
+	id = ancrel.100
+	desc = EVTDESCancrel.100
+	picture = GFX_evt_library
+	border = GFX_event_normal_frame_religion
+
+	min_age = 16
+	max_age = 22
+	capable_only = yes
+	prisoner = no
+
+	trigger = {
+		has_dlc = "The Old Gods"
+
+		NOT = { year = 1066 }
+
+		learning = 6
+		is_female = no
+		is_landed = no
+		religion_group = christian
+		OR = {
+			culture = roman
+			culture = italian
+			culture = greek
+		}
+		NOT = { has_character_flag = flag_studied_the_classics }
+	}
+
+	mean_time_to_happen = {
+		years = 6
+
+		modifier = {
+			factor = 1.5
+			year = 916
+		}
+		modifier = {
+			factor = 1.5
+			year = 966
+		}
+		modifier = {
+			factor = 2
+			year = 1016
+		}
+
+		modifier = {
+			factor = 1.25
+			trait = content
+		}
+		modifier = {
+			factor = 1.25
+			trait = craven
+		}
+		modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+		modifier = {
+			factor = 0.8
+			learning = 12
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				trait = mastermind_theologian
+				trait = scholarly_theologian
+				trait = scholar
+				trait = mystic
+			}
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				trait = zealous
+				trait = cynical
+			}
+		}
+	}
+
+	immediate = {
+		set_character_flag = flag_studied_the_classics
+	}
+
+	option = {
+		name = EVTOPTAancrel.100
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0.25
+				trait = zealous
+			}
+			modifier = {
+				factor = 1.25
+				trait = cynical
+			}
+			modifier = {
+				factor = 0.8
+				OR = {
+					trait = mastermind_theologian
+					trait = scholarly_theologian
+				}
+			}
+			modifier = {
+				factor = 1.25
+				trait = mystic
+			}
+			modifier = {
+				factor = 0.8
+				trait = content
+			}
+			modifier = {
+				factor = 1.25
+				trait = ambitious
+			}
+			modifier = {
+				factor = 0.8
+				religion_authority = 0.6
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { religion_authority = 0.4 }
+			}
+		}
+		if = {
+			limit = { d_grecoroman_reformed = { owner = { always = yes } } }
+			religion = grecoroman_reformed
+		}
+		if = {
+			limit = { NOT = { d_grecoroman_reformed = { owner = { always = yes } } } }
+			religion = grecoroman
+		}
+		if = {
+			limit = { trait = cynical }
+			remove_trait = cynical
+		}
+		if = {
+			limit = { trait = zealous }
+			remove_trait = zealous
+		}
+	}
+
+	option = {
+		name = EVTOPTBancrel.100
+		ai_chance = { factor = 90 }
+		piety = 50
+	}
+}
+
+# A Christian Roman emperor dies and a Greco-Roman pagan succeds him
+character_event = {
+	id = ancrel.101
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		has_dlc = "The Old Gods"
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					has_landed_title = e_byzantium
+					has_landed_title = e_roman_empire
+					has_landed_title = e_latin_empire
+				}
+				NOT = { religion_group = pagan_group }
+				current_heir = {
+					OR = {
+						religion = grecoroman
+						religion = grecoroman_reformed
+					}
+				}
+			}
+			current_heir = { character_event = { id = ancrel.102 days = 1 } }
+		}
+	}
+
+	option = {
+		name = OK
+	}
+}
+
+# Make Greco-Roman Paganism the state religion?
+character_event = {
+	id = ancrel.102
+	desc = EVTDESCancrel.102
+	picture = GFX_evt_pagan
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+	hide_from = yes
+
+	option = {
+		name = EVTOPTAancrel.102
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.25
+				trait = zealous
+			}
+			modifier = {
+				factor = 0.8
+				trait = cynical
+			}
+			modifier = {
+				factor = 1.25
+				trait = proud
+			}
+			modifier = {
+				factor = 0.8
+				trait = humble
+			}
+			modifier = {
+				factor = 0.8
+				OR = {
+					trait = mastermind_theologian
+					trait = scholarly_theologian
+					trait = scholar
+					trait = mystic
+				}
+			}
+		}
+		piety = 50
+		if = {
+			limit = { d_grecoroman_reformed = { owner = { always = yes } } }
+			religion = grecoroman_reformed
+		}
+		if = {
+			limit = { NOT = { trait = zealous } }
+			random = {
+				chance = 50
+				add_trait = zealous
+			}
+		}
+		custom_tooltip = EVTTOOLTIPAancrel.102
+		hidden_tooltip = {
+			any_realm_character  = {
+				limit = {
+					is_adult = yes
+					OR = {
+						religion = grecoroman
+						religion = grecoroman_reformed
+					}
+				}
+				opinion = { modifier = opinion_grecoroman_state_religion who = ROOT }
+			}
+			any_realm_character  = {
+				limit = {
+					is_adult = yes
+					NOT = { religion_group = pagan_group }
+				}
+				opinion = { modifier = opinion_forced_grecoroman_state_religion who = ROOT }
+			}
+			capital_scope = {
+				religion = ROOT
+			}
+			any_courtier = {
+				limit = { employer = { character = ROOT } }
+				religion = ROOT
+			}
+			any_vassal = {
+				limit = { is_playable = no }
+				religion = ROOT
+			}
+			any_vassal = {
+				limit = {
+					is_playable = yes
+					NOT = { religion = ROOT }
+				}
+				character_event = { id = ancrel.103 }
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTBancrel.102
+		ai_chance = {
+			factor = 50
+		}
+		if = {
+			limit = { trait = zealous }
+			remove_trait = zealous
+		}
+		hidden_tooltip = {
+			any_realm_character  = {
+				limit = {
+					is_adult = yes
+					OR = {
+						religion = grecoroman
+						religion = grecoroman_reformed
+					}
+				}
+				opinion = { modifier = opinion_no_grecoroman_state_religion who = ROOT }
+			}
+			any_realm_character  = {
+				limit = {
+					is_adult = yes
+					NOT = { religion = grecoroman }
+					NOT = { religion = grecoroman_reformed }
+				}
+				opinion = { modifier = opinion_no_forced_grecoroman_state_religion who = ROOT }
+			}
+		}
+	}
+}
+
+# Adopt the new Greco-Pagan state religion?
+character_event = {
+	id = ancrel.103
+	desc = EVTDESCancrel.103
+	picture = GFX_evt_pagan
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAancrel.103
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0.8
+				trait = zealous
+			}
+			modifier = {
+				factor = 1.25
+				trait = cynical
+			}
+			modifier = {
+				factor = 0.8
+				trait = proud
+			}
+			modifier = {
+				factor = 1.25
+				trait = humble
+			}
+			modifier = {
+				factor = 0.8
+				religion_authority = 0.6
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { religion_authority = 0.4 }
+			}
+			modifier = {
+				factor = 1.25
+				opinion = { who = FROM value = 80 }
+			}
+			modifier = {
+				factor = 1.25
+				opinion = { who = FROM value = 40 }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { opinion = { who = FROM value = -40 } }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { opinion = { who = FROM value = -80 } }
+			}
+			modifier = {
+				factor = 2.0
+				OR = {
+					culture = roman
+					culture = italian
+					culture = greek
+				}
+			}
+			modifier = {
+				factor = 3.0
+				is_landed = no
+				host = { character = FROM }
+			}
+			modifier = {
+				factor = 2.0
+				is_landed = yes
+				liege = { character = FROM }
+			}
+			modifier = {
+				factor = 2.0
+				is_landed = yes
+				OR = {
+					# free infidel revokation
+					crownlaw_title = { has_law = centralization_2 }
+					crownlaw_title = { has_law = centralization_3 }
+					crownlaw_title = { has_law = centralization_4 }
+				}
+			}
+		}
+		religion = FROM
+		if = {
+			limit = { trait = zealous }
+			remove_trait = zealous
+		}
+		hidden_tooltip = {
+			capital_scope = {
+				religion = FROM
+			}
+			any_courtier = {
+				limit = { employer = { character = ROOT } }
+				religion = FROM
+			}
+			any_vassal = {
+				limit = { is_playable = no }
+				religion = FROM
+			}
+			any_vassal = {
+				limit = {
+					is_playable = yes
+					NOT = { religion = FROM }
+				}
+				character_event = { id = ancrel.103 }
+			}
+		}
+		reverse_opinion = { modifier = opinion_adopted_grecoroman_state_religion who = FROM }
+	}
+
+	option = {
+		name = EVTOPTBancrel.103
+		ai_chance = { factor = 80 }
+		piety = 10
+		reverse_opinion = { modifier = opinion_rejected_grecoroman_state_religion who = FROM }
+	}
+}

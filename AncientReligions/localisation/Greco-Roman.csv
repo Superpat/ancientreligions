@@ -115,6 +115,19 @@ title_aedile_desc;The aediles are responsible for maintenance of public building
 title_magister_equitum;Magister Equitum;;;;;;;;;;;;;;;x
 title_magister_equitum_desc;Originally a very powerful office second only to the Dictator, the Magister Equitum, or Master of the Horse, is now a mostly ceremonial, but still prestigeous, military function.;;;;;;;;;;;;;;;x
 ;;;;;;;;;;
+title_flamen_dialis;Flamen Dialis;;;;;;;;;;;;;;;x
+title_flamen_dialis_desc;The Flamen Dialis is the high priest of Jupiter.;;;;;;;;;;;;;;;x
+title_flaminica_dialis;Flaminica Dialis;;;;;;;;;;;;;;;x
+title_flaminica_dialis_desc;As wife of the Flamen Dialis, the Flaminica Dialis are entrusted to performs certain religious rituals.;;;;;;;;;;;;;;;x
+title_flamen_martialis;Flamen Martialis;;;;;;;;;;;;;;;x
+title_flamen_martialis_desc;The Flamen Martialis is the high priest of Mars.;;;;;;;;;;;;;;;x
+title_flaminica_martialis;Flaminica Martialis;;;;;;;;;;;;;;;x
+title_flaminica_martialis_desc;As wife of the Flamen Martialis, the Flaminica Martialis are entrusted to performs certain religious rituals.;;;;;;;;;;;;;;;x
+title_flamen_quirinalis;Flamen Quirinalis;;;;;;;;;;;;;;;x
+title_flamen_quirinalis_desc;The Flamen Quirinalis is the high priest of Quirinus.;;;;;;;;;;;;;;;x
+title_flaminica_quirinalis;Flaminica Quirinalis;;;;;;;;;;;;;;;x
+title_flaminica_quirinalis_desc;As wife of the Flamen Quirinalis, the Flaminica Quirinalis are entrusted to performs certain religious rituals.;;;;;;;;;;;;;;;x
+;;;;;;;;;;
 opinion_no_grecoroman_state_religion;Did not establish a Greco-Roman state religion;;;;;;;;;;;;;;;x
 opinion_no_forced_grecoroman_state_religion;Did not enforce a Greco-Roman state religion;;;;;;;;;;;;;;;x
 opinion_grecoroman_state_religion;Established a Greco-Roman state religion;;;;;;;;;;;;;;;x
@@ -131,3 +144,7 @@ EVTOPTBancrel.102;Let my vassals choose their own faith.;;;;;;;;;;;;;;;;;;;;;;;;
 EVTDESCancrel.103;The newly crowed Emperor has endeavored to restore the ancient faith to the Empire, and demands that you convert.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTAancrel.103;Glory to [From.Religion.GetRandomGodName] and the Empire!;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTBancrel.103;May [Root.Religion.GetRandomGodName] protect us.;;;;;;;;;;;;;;;;;;;;;;;;x
+;;;;;;;;;;
+EVTDESCancrel.110;Without the Flaminica Dialis to assist you in your duties, the ancient religious laws require that you retire.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.111;Without the Flaminica Martialis to assist you in your duties, the ancient religious laws require that you retire.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.112;Without the Flaminica Quirinalis to assist you in your duties, the ancient religious laws require that you retire.;;;;;;;;;;;;;;;;;;;;;;;;x

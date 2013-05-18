@@ -1,0 +1,194 @@
+title_flamen_dialis = {
+	dignity = 0.15
+	grant_limit = 1
+	opinion_effect = 15
+
+	monthly_salary = 0.005
+	monthly_prestige = 0.015
+	monthly_piety = 0.005
+	general_opinion = 10
+
+	allow = {
+		is_adult = yes
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			independent = yes
+			higher_tier_than = COUNT
+			religion = grecoroman_reformed
+		}
+		OR = {
+			spouse = { religion = grecoroman_reformed }
+			# We want to remove the title by event if his wife dies or converts
+			has_minor_title = title_flamen_dialis
+		}
+		religion = grecoroman_reformed
+		NOT = { has_minor_title = title_court_jester }
+		NOT = { has_minor_title = title_censor }
+	}
+
+	gain_effect = {
+		remove_title = title_cupbearer
+		remove_title = title_aedile
+		remove_title = title_magister_equitum
+		remove_title = title_flamen_martialis
+		remove_title = title_flamen_quirinalis
+		spouse = { give_minor_title = title_flaminica_dialis }
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_flaminica_dialis = {
+	dignity = 0.10
+	grant_limit = 1
+
+	monthly_salary = 0.000
+	monthly_prestige = 0.005
+	monthly_piety = 0.005
+
+	allow = {
+		spouse = { has_minor_title = title_flamen_dialis }
+	}
+
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = no
+}
+
+
+title_flamen_martialis = {
+	dignity = 0.14
+	grant_limit = 1
+	opinion_effect = 10
+
+	monthly_salary = 0.005
+	monthly_prestige = 0.010
+	monthly_piety = 0.005
+	general_opinion = 5
+
+	allow = {
+		is_adult = yes
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			independent = yes
+			higher_tier_than = COUNT
+			religion = grecoroman_reformed
+		}
+		OR = {
+			spouse = { religion = grecoroman_reformed }
+			# We want to remove the title by event if his wife dies or converts
+			has_minor_title = title_flamen_martialis
+		}
+		religion = grecoroman_reformed
+		NOT = { has_minor_title = title_court_jester }
+		NOT = { has_minor_title = title_censor }
+		NOT = { has_minor_title = title_flamen_dialis }
+		NOT = { has_minor_title = title_flamen_quirinalis }
+	}
+
+	gain_effect = {
+		remove_title = title_cupbearer
+		remove_title = title_aedile
+		remove_title = title_magister_equitum
+		spouse = { give_minor_title = title_flaminica_martialis }
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_flaminica_martialis = {
+	dignity = 0.09
+	grant_limit = 1
+
+	monthly_salary = 0.000
+	monthly_prestige = 0.005
+	monthly_piety = 0.005
+
+	allow = {
+		spouse = { has_minor_title = title_flamen_martialis }
+	}
+
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = no
+}
+
+
+title_flamen_quirinalis = {
+	dignity = 0.13
+	grant_limit = 1
+	opinion_effect = 10
+
+	monthly_salary = 0.005
+	monthly_prestige = 0.010
+	monthly_piety = 0.005
+	general_opinion = 5
+
+	allow = {
+		is_adult = yes
+		is_female = no
+		OR = {
+			is_theocracy = yes
+			is_ruler = no
+		}
+		FROM = {
+			is_feudal = yes
+			independent = yes
+			higher_tier_than = COUNT
+			religion = grecoroman_reformed
+		}
+		OR = {
+			spouse = { religion = grecoroman_reformed }
+			# We want to remove the title by event if his wife dies or converts
+			has_minor_title = title_flamen_quirinalis
+		}
+		religion = grecoroman_reformed
+		NOT = { has_minor_title = title_court_jester }
+		NOT = { has_minor_title = title_censor }
+		NOT = { has_minor_title = title_flamen_dialis }
+		NOT = { has_minor_title = title_flamen_martialis }
+	}
+
+	gain_effect = {
+		remove_title = title_cupbearer
+		remove_title = title_aedile
+		remove_title = title_magister_equitum
+		spouse = { give_minor_title = title_flaminica_quirinalis }
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_flaminica_quirinalis = {
+	dignity = 0.08
+	grant_limit = 1
+
+	monthly_salary = 0.000
+	monthly_prestige = 0.005
+	monthly_piety = 0.005
+
+	allow = {
+		spouse = { has_minor_title = title_flamen_martialis }
+	}
+
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = no
+}

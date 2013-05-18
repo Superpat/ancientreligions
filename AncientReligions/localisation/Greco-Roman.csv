@@ -66,6 +66,11 @@ job_marshal_grecoroman_byzantine;Stratelates;;;;;;;;;;;;;;;x
 job_treasurer_grecoroman;Quaestor;;;;;;;;;;;;;;;x
 job_spiritual_grecoroman;Court Augur;;;;;;;;;;;;;;;x
 ;;;;;;;;;;
+title_censor;Censor;Censeur;Censur;;Censor;;;;;;;;;;;x
+title_censor_desc;The Censor is responsible for taking the census of the realm. While the office was originally instituded for taxation purposes the most important duty of the Censor is to supervise public morality and recommend suitable candidates for public offices.;;;;;;;;;;;;;;;x
+title_augur;Augur;Augure;Augur;;Augur;;;;;;;;;;;x
+title_augur_desc;An Augur is a priest and public official responsible for interpreting the will of the gods by studying the flight of birds.;;;;;;;;;;;;;;;x
+;;;;;;;;;;
 opinion_no_grecoroman_state_religion;Did not establish a Greco-Roman state religion;;;;;;;;;;;;;;;x
 opinion_no_forced_grecoroman_state_religion;Did not enforce a Greco-Roman state religion;;;;;;;;;;;;;;;x
 opinion_grecoroman_state_religion;Established a Greco-Roman state religion;;;;;;;;;;;;;;;x

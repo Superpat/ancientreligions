@@ -1,0 +1,58 @@
+title_censor = {
+	realm_in_name = yes
+	dignity = 0.15
+	grant_limit = 1
+	opinion_effect = 15
+
+	monthly_salary = 0.010
+	monthly_prestige = 0.010
+
+	allow = {
+		is_adult = yes
+		is_female = no
+		religion = FROM
+		FROM = {
+			is_feudal = yes
+			independent = yes
+			religion = grecoroman
+		}
+	}
+
+	gain_effect = {
+		remove_title = title_augur
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_augur = {
+	realm_in_name = yes
+	dignity = 0.075
+	grant_limit = 3
+	opinion_effect = 10
+
+	monthly_salary = 0.001
+	monthly_prestige = 0.005
+	monthly_piety = 0.005
+
+	allow = {
+		is_adult = yes
+		is_female = no
+		religion = FROM
+		learning = 6
+		FROM = {
+			is_feudal = yes
+			religion = grecoroman
+		}
+		NOT = { has_minor_title = title_censor }
+	}
+
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}

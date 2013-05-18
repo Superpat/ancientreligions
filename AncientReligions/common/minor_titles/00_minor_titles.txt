@@ -243,6 +243,7 @@ title_keeper_of_swans = {
 			NOT = { has_landed_title = e_byzantium }
 			NOT = { has_landed_title = e_roman_empire }
 			NOT = { religion_group = muslim }
+			NOT = { religion = grecoroman }
 		}
 		NOT = { has_minor_title = title_court_jester }
 		NOT = { has_minor_title = title_master_of_the_horse }
@@ -277,6 +278,7 @@ title_master_of_the_horse = {
 			NOT = { has_landed_title = e_byzantium }
 			NOT = { has_landed_title = e_roman_empire }
 			NOT = { religion_group = muslim }
+			NOT = { religion = grecoroman }
 		}
 		
 		NOT = { has_minor_title = title_court_jester }
@@ -312,6 +314,7 @@ title_master_of_the_hunt = {
 			NOT = { has_landed_title = e_byzantium }
 			NOT = { has_landed_title = e_roman_empire }
 			NOT = { religion_group = muslim }
+			NOT = { religion = grecoroman }
 		}
 		NOT = { has_minor_title = title_court_jester }
 		NOT = { has_minor_title = title_keeper_of_swans }
@@ -345,6 +348,7 @@ title_high_almoner = {
 			NOT = { has_landed_title = e_byzantium }
 			NOT = { has_landed_title = e_roman_empire }
 			NOT = { religion_group = muslim }
+			NOT = { religion = grecoroman }
 		}
 		NOT = { has_minor_title = title_court_jester }
 		NOT = { has_minor_title = title_keeper_of_swans }
@@ -600,6 +604,7 @@ title_anthypatos = {
 				has_landed_title = e_roman_empire
 			}
 			NOT = { religion_group = muslim }
+			NOT = { religion = grecoroman }
 		}
 	}
 	

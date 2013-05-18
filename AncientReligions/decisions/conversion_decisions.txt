@@ -590,6 +590,7 @@ decisions = {
 				religion = slavic_pagan
 				religion = aztec
 				religion = west_african_pagan
+				religion = grecoroman
 			}
 		}
 		allow = {
@@ -625,6 +626,10 @@ decisions = {
 			if = {
 				limit = { religion = west_african_pagan }
 				religion = west_african_pagan_reformed
+			}
+			if = {
+				limit = { religion = grecoroman }
+				religion = grecoroman_reformed
 			}
 			
 			hidden_tooltip = {

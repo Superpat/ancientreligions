@@ -1,0 +1,146 @@
+#######################################
+#
+# Flamines maiores
+#
+# Event ID ancrel.110 - ancrel.119 reserved
+#
+#######################################
+
+# Written by Jon Severinsson
+
+namespace = ancrel
+
+# The Flamen Dialis must resign
+character_event = {
+	id = ancrel.110
+	desc = EVTDESCancrel.110
+	picture = GFX_evt_council
+
+	trigger = {
+		has_minor_title = title_flamen_dialis
+		NOT = {
+			any_spouse = {
+				is_alive = yes
+				has_minor_title = title_flaminica_dialis
+			}
+		}
+	}
+
+	option = {
+		name = OK
+		remove_title = title_flamen_dialis
+	}
+}
+
+# The Flamen Martialis must resign
+character_event = {
+	id = ancrel.111
+	desc = EVTDESCancrel.111
+	picture = GFX_evt_council
+
+	trigger = {
+		has_minor_title = title_flamen_martialis
+		NOT = {
+			any_spouse = {
+				is_alive = yes
+				has_minor_title = title_flaminica_martialis
+			}
+		}
+	}
+
+	option = {
+		name = OK
+		remove_title = title_flamen_martialis
+	}
+}
+
+# The Flamen Quirinalis must resign
+character_event = {
+	id = ancrel.112
+	desc = EVTDESCancrel.112
+	picture = GFX_evt_council
+
+	trigger = {
+		has_minor_title = title_flamen_quirinalis
+		NOT = {
+			any_spouse = {
+				is_alive = yes
+				has_minor_title = title_flaminica_quirinalis
+			}
+		}
+	}
+
+	option = {
+		name = OK
+		remove_title = title_flamen_quirinalis
+	}
+}
+
+# The Flaminica Dialis must resign
+character_event = {
+	id = ancrel.113
+	desc = "NotShown"
+
+	hide_window = yes
+
+	trigger = {
+		has_minor_title = title_flaminica_dialis
+		NOT = {
+			any_spouse = {
+				is_alive = yes
+				has_minor_title = title_flamen_dialis
+			}
+		}
+	}
+
+	option = {
+		name = "NotShown"
+		remove_title = title_flaminica_dialis
+	}
+}
+
+# The Flaminica Martialis must resign
+character_event = {
+	id = ancrel.114
+	desc = "NotShown"
+
+	hide_window = yes
+
+	trigger = {
+		has_minor_title = title_flaminica_martialis
+		NOT = {
+			any_spouse = {
+				is_alive = yes
+				has_minor_title = title_flamen_martialis
+			}
+		}
+	}
+
+	option = {
+		name = "NotShown"
+		remove_title = title_flaminica_martialis
+	}
+}
+
+# The Flaminica Quirinalis must resign
+character_event = {
+	id = ancrel.115
+	desc = "NotShown"
+
+	hide_window = yes
+
+	trigger = {
+		has_minor_title = title_flaminica_quirinalis
+		NOT = {
+			any_spouse = {
+				is_alive = yes
+				has_minor_title = title_flamen_quirinalis
+			}
+		}
+	}
+
+	option = {
+		name = "NotShown"
+		remove_title = title_flaminica_quirinalis
+	}
+}

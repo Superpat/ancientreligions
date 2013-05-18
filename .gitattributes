@@ -1,0 +1,18 @@
+# Default setting:
+#  - Try to guess if a file is binary or a text file
+#  - If a text file, use windows line endings on all platforms
+* text=auto eol=crlf
+
+# These are known text files, use windows line endings on all platforms
+*.mod text eol=crlf
+*.txt text eol=crlf
+*.csv text eol=crlf
+*.gfx text eol=crlf
+*.gui text eol=crlf
+
+# These are known binary files, don't try to handle line endings.
+*.dds binary
+*.bmp binary
+*.png binary
+*.wav binary
+*.ogg binary

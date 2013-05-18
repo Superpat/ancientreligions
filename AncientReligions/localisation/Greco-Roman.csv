@@ -1,0 +1,67 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+;;;;;;;;;;
+grecoroman;Greco-Roman;Gréco-Romaine;Greco-Roman;;Greco-romano;;;;;;;;;x
+GOD_JUNO;Juno;Junon;Juno;;Juno;;;;;;;;;x
+GOD_JUNO_byzantine;Hera;Héra;Hera;;Hera;;;;;;;;;x
+GOD_VESTA;Vesta;Vesta;Vesta;;Vesta;;;;;;;;;x
+GOD_VESTA_byzantine;Hestia;Hestia;Hestia;;Hestia;;;;;;;;;x
+GOD_MINERVA;Minerva;Minerve;Minerva;;Minerva;;;;;;;;;x
+GOD_MINERVA_byzantine;Athena;Athéna;Athene;;Atenea;;;;;;;;;x
+GOD_CERES;Ceres;Cérès;Ceres;;Ceres;;;;;;;;;x
+GOD_CERES_byzantine;Demeter;Déméter;Demeter;;Deméter;;;;;;;;;x
+GOD_DIANA;Diana;Diane;Diana;;Diana;;;;;;;;;x
+GOD_DIANA_byzantine;Artemis;Artémis;Artemis;;Artemisa;;;;;;;;;x
+GOD_VENUS;Venus;Vénus;Venus;;Venus;;;;;;;;;x
+GOD_VENUS_byzantine;Aphrodite;Aphrodite;Aphrodite;;Afrodita;;;;;;;;;x
+GOD_MARS;Mars;Mars;Mars;;Marte;;;;;;;;;x
+GOD_MARS_byzantine;Ares;Arès;Ares;;Ares;;;;;;;;;x
+GOD_MERCURY;Mercury;Mercure;Mercurius;;Mercurio;;;;;;;;;x
+GOD_MERCURY_byzantine;Hermes;Hermès;Hermes;;Hermes;;;;;;;;;x
+GOD_JUPITER;Jupiter;Jupiter;Jupiter;;Júpiter;;;;;;;;;x
+GOD_JUPITER_byzantine;Zeus;Zeus;Zeus;;Zeus;;;;;;;;;x
+GOD_NEPTUNE;Neptune;Neptune;Neptun;;Neptuno;;;;;;;;;x
+GOD_NEPTUNE_byzantine;Poseidon;Poséidon;Poseidon;;Poseidón;;;;;;;;;x
+GOD_VULCAN;Vulcan;Vulcain;Vulcanus;;Vulcano;;;;;;;;;x
+GOD_VULCAN_byzantine;Hephaestus;Héphaïstos;Hephaistos;;Hefesto;;;;;;;;;x
+GOD_APOLLO;Apollo;Apollon;Apollon;;Apolo;;;;;;;;;x
+THE_THEOGONY;The Theogony;La Théogonie;Die Theogonie;;La Teogonía;;;;;;;;;x
+;;;;;;;;;;
+king_grecoroman;Rex;Roi;Rex;;Rey;;;;;;;;;x
+king_grecoroman_byzantine;Rēgas;Roi;Rēgas;;Rey;;;;;;;;;x
+king_female_grecoroman;Regina;Reine;Regina;;Reina;;;;;;;;;x
+duke_grecoroman;Legatus Augusti;;;;;;;;;;;;;x
+duke_female_grecoroman;Legata Augusti;;;;;;;;;;;;;x
+count_grecoroman;Legatus;;;;;;;;;;;;;x
+count_female_grecoroman;Legata;;;;;;;;;;;;;x
+baron_grecoroman;Eques;;;;;;;;;;;;;x
+baron_female_grecoroman;Eques;;;;;;;;;;;;;x
+;;;;;;;;;;
+temple_king_grecoroman;Rex Sacrorum;Roi Sacrorum;Rex Sacrorum;;Rey Sacrorum;;;;;;;;;x
+temple_king_female_grecoroman;Regina Sacrorum;Reine Sacrorum;Regina Sacrorum;;Reina Sacrorum;;;;;;;;;x
+temple_duke_grecoroman;Pontifex Magnus;;;;;;;;;;;;;x
+temple_count_grecoroman;Pontifex;;;;;;;;;;;;;x
+;;;;;;;;;;
+city_emperor_grecoroman;Emperor;Empereur;Kaiser;;Emperador;;;;;;;;;x
+city_king_grecoroman;Consul;Consul;Konsulat;;Cónsul;;;;;;;;;x
+city_king_grecoroman_byzantine;Hypatos;;;;;;;;;;;;;x
+city_duke_grecoroman;Proconsul;Proconsul;Prokonsul;;Procónsul;;;;;;;;;x
+city_duke_grecoroman_byzantine;Anthypatos;;;;;;;;;;;;;x
+city_count_grecoroman;Lord Prefect;Seigneur-Préfet;Oberbürgermeister;;Gran Prefecto;;;;;;;;;x
+city_baron_grecoroman;Prefect;Préfet;Bürgermeister;;Prefecto;;;;;;;;;x
+family_palace_baron_grecoroman;Pater Familias;;;;;;;;;;;;;x
+family_palace_baron_female_grecoroman;Mater Familias;;;;;;;;;;;;;x
+;;;;;;;;;;
+duchy_grecoroman;Province;Province;Provinz;;Provincia;;;;;;;;;x;
+duchy_of_grecoroman;Province of;Province de;Provinz von;;Provincia de;;;;;;;;;x;
+temple_kingdom_grecoroman;Sacred Kingdom of;;;;;;;;;;;;;x
+temple_kingdom_of_grecoroman;Sacred Kingdom;;;;;;;;;;;;;x
+temple_duchy_grecoroman;Grand Pontificate;;;;;;;;;;;;;x;
+temple_duchy_of_grecoroman;Grand Pontificate of;;;;;;;;;;;;;x;
+temple_conty_grecoroman;Pontificate;;;;;;;;;;;;;x;
+temple_conty_of_grecoroman;Pontificate of;;;;;;;;;;;;;x;
+;;;;;;;;;;
+job_chancellor_grecoroman;Magister Officiorum;;;;;;;;;;;;;;;x
+job_marshal_grecoroman;Magister Militum;;;;;;;;;;;;;;;x
+job_marshal_grecoroman_byzantine;Stratelates;;;;;;;;;;;;;;;x
+job_treasurer_grecoroman;Quaestor;;;;;;;;;;;;;;;x
+job_spiritual_grecoroman;Court Augur;;;;;;;;;;;;;;;x

@@ -1,0 +1,328 @@
+#######################################
+#
+# Revival of the Greco-Roman religion
+#
+# Event ID ancrel.100 - ancrel.109 reserved
+#
+#######################################
+
+# Written by Jon Severinsson
+
+namespace = ancrel
+
+# Studied the classics
+character_event = {
+	id = ancrel.100
+	desc = EVTDESCancrel.100
+	picture = GFX_evt_library
+
+	min_age = 16
+	max_age = 22
+	capable_only = yes
+	prisoner = no
+
+	trigger = {
+		NOT = { year = 1066 }
+
+		learning = 6
+		is_female = no
+		is_landed = no
+		religion_group = christian
+		OR = {
+			culture = italian
+			culture = greek
+		}
+		NOT = { has_character_flag = flag_studied_the_classics }
+	}
+
+	mean_time_to_happen = {
+		years = 6
+
+		modifier = {
+			factor = 1.5
+			year = 916
+		}
+		modifier = {
+			factor = 1.5
+			year = 966
+		}
+		modifier = {
+			factor = 2
+			year = 1016
+		}
+
+		modifier = {
+			factor = 0.8
+			learning = 12
+		}
+		modifier = {
+			factor = 2.0
+			trait = slothful
+		}
+		modifier = {
+			factor = 1.5
+			trait = content
+		}
+		modifier = {
+			factor = 0.8
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+	}
+
+	immediate = {
+		set_character_flag = flag_studied_the_classics
+	}
+
+	option = {
+		name = EVTOPTAancrel.100
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				ai_zeal = 80
+			}
+			modifier = {
+				factor = 0.5
+				ai_zeal = 40
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { religion_authority = 0.4 }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { ai_ambition = -40 }
+			}
+			modifier = {
+				factor = 1.2
+				ai_ambition = 40
+			}
+		}
+		religion = grecoroman
+		if = {
+			limit = { trait = cynical }
+			remove_trait = cynical
+		}
+		if = {
+			limit = { trait = zealous }
+			remove_trait = zealous
+		}
+	}
+
+	option = {
+		name = EVTOPTBancrel.100
+		ai_chance = { factor = 90 }
+		piety = 50
+		if = {
+			limit = { NOT = { trait = zealous } }
+			random = {
+				chance = 25
+				add_trait = zealous
+			}
+		}
+	}
+}
+
+# A Christian Roman emperor dies and a Greco-Roman pagan succeds him
+character_event = {
+	id = ancrel.101
+	desc "NotShown"
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					has_landed_title = e_byzantium
+					has_landed_title = e_roman_empire
+					has_landed_title = e_latin_empire
+				}
+				religion_group = christian
+				current_heir = { religion = grecoroman }
+			}
+			current_heir = { character_event = { id = ancrel.102 days = 1 } }
+		}
+	}
+
+	option = {
+		name = "NotShown"
+	}
+}
+
+# Make Greco-Roman Paganism the state religion?
+character_event = {
+	id = ancrel.102
+	desc = EVTDESCancrel.102
+	picture = GFX_evt_pagan
+
+	is_triggered_only = yes
+	hide_from = yes
+
+	option = {
+		name = EVTOPTAancrel.102
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				ai_zeal = 80
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { ai_zeal = 0 }
+			}
+		}
+		piety = 50
+		if = {
+			limit = { NOT = { trait = zealous } }
+			random = {
+				chance = 50
+				add_trait = zealous
+			}
+		}
+		custom_tooltip = EVTTOOLTIPAancrel.102
+		hidden_tooltip = {
+			any_realm_province = {
+				limit = { NOT = { religion = grecoroman } }
+				random = {
+					chance = 25
+					religion = grecoroman
+				}
+			}
+			any_realm_character  = {
+				limit = { religion = grecoroman }
+				opinion = { modifier = opinion_grecoroman_state_religion who = ROOT }
+			}
+			any_realm_character  = {
+				limit = { NOT = { religion_group = pagan_group } }
+				opinion = { modifier = opinion_forced_grecoroman_state_religion who = ROOT }
+			}
+			any_realm_character = {
+				limit = { NOT = { religion = grecoroman } }
+				character_event = { id = ancrel.103 }
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTBancrel.102
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				ai_zeal = 80
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { ai_zeal = 0 }
+			}
+		}
+		if = {
+			limit = { trait = zealous }
+			remove_trait = zealous
+		}
+		hidden_tooltip = {
+			any_vassal  = {
+				limit = { religion = grecoroman }
+				opinion = { modifier = opinion_no_grecoroman_state_religion who = ROOT }
+			}
+			any_vassal  = {
+				limit = { NOT = { religion = grecoroman } }
+				opinion = { modifier = opinion_no_forced_grecoroman_state_religion who = ROOT }
+			}
+		}
+	}
+}
+
+# Adopt the new Greco-Pagan state religion?
+character_event = {
+	id = ancrel.103
+	desc = EVTDESCancrel.103
+	picture = GFX_evt_pagan
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAancrel.103
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0.8
+				ai_zeal = 50
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { ai_zeal = -50 }
+			}
+			modifier = {
+				factor = 0.8
+				religion_authority = 0.6
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { religion_authority = 0.4 }
+			}
+			modifier = {
+				factor = 1.25
+				opinion = { who = FROM value = 80 }
+			}
+			modifier = {
+				factor = 1.25
+				opinion = { who = FROM value = 40 }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { opinion = { who = FROM value = -40 } }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { opinion = { who = FROM value = -80 } }
+			}
+			modifier = {
+				factor = 2.0
+				OR = {
+					culture = italian
+					culture = greek
+				}
+			}
+			modifier = {
+				factor = 3.0
+				is_landed = no
+				host = FROM
+			}
+			modifier = {
+				factor = 2.0
+				is_landed = yes
+				liege = FROM
+			}
+			modifier = {
+				factor = 2.0
+				is_landed = yes
+				OR = {
+					# free infidel revokation
+					crownlaw_title = { has_law = centralization_2 }
+					crownlaw_title = { has_law = centralization_3 }
+					crownlaw_title = { has_law = centralization_4 }
+				}
+			}
+		}
+		religion = FROM
+		if = {
+			limit = { trait = zealous }
+			remove_trait = zealous
+		}
+		reverse_opinion = { modifier = opinion_adopted_grecoroman_state_religion who = FROM }
+	}
+
+	option = {
+		name = EVTOPTBancrel.103
+		ai_chance = { factor = 80 }
+		piety = 10
+		reverse_opinion = { modifier = opinion_rejected_grecoroman_state_religion who = FROM }
+	}
+}

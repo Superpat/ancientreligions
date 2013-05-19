@@ -1,0 +1,111 @@
+title_vestalis = {
+	dignity = 0.91
+	grant_limit = 5
+	opinion_effect = 10
+
+	monthly_salary = 0.005
+	monthly_prestige = 0.300
+	monthly_piety = 0.100
+
+	cannot_marry = yes
+	cannot_inherit = yes
+
+	allow = {
+		is_female = yes
+		is_landed = no
+		religion = FROM
+		NOT = { trait = bastard }
+		NOT = { trait = legit_bastard }
+		OR = {
+			has_minor_title = title_vestalis
+			AND = {
+				age = 6
+				NOT = { age = 10 }
+				father_even_if_dead = { religion = FROM }
+				mother = { religion = FROM }
+			}
+		}
+		FROM = {
+			is_feudal = yes
+			independent = yes
+			primary_title = { higher_tier_than = COUNT }
+			religion = grecoroman
+		}
+	}
+
+	gain_effect = {
+		set_character_flag = flag_vestalis
+
+		if = {
+			limit = { trait = hedonist }
+			remove_trait = hedonist
+		}
+		if = {
+			limit = { NOT = { trait = celibate } }
+			add_trait = celibate
+		}
+
+		# Count the number of vestales
+		top_liege = {
+			set_variable = { which = "num_vestales" value = 0 }
+			any_courtier = {
+				limit = { has_minor_title = title_vestalis }
+				top_liege = {
+					change_variable = { which = "num_vestales" value = 1 }
+				}
+			}
+		}
+	}
+	lose_effect = {
+		# Count the number of vestales
+		top_liege = {
+			set_variable = { which = "num_vestales" value = 0 }
+			any_courtier = {
+				limit = { has_minor_title = title_vestalis }
+				top_liege = {
+					change_variable = { which = "num_vestales" value = 1 }
+				}
+			}
+		}
+	}
+
+	message = yes
+}
+
+title_vestalis_maxima = {
+	dignity = 0.92
+	grant_limit = 1
+	opinion_effect = 15
+
+	monthly_salary = 0.010
+	monthly_prestige = 0.500
+	monthly_piety = 0.200
+
+	cannot_marry = yes
+	cannot_inherit = yes
+
+	allow = {
+		is_adult = yes
+		is_female = yes
+		is_landed = no
+		religion = FROM
+		OR = {
+			has_minor_title = title_vestalis
+			has_minor_title = title_vestalis_maxima
+		}
+		FROM = {
+			is_feudal = yes
+			independent = yes
+			primary_title = { higher_tier_than = COUNT }
+			religion = grecoroman
+		}
+	}
+
+	gain_effect = {
+		remove_title = title_vestalis
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}

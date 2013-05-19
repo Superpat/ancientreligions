@@ -1,0 +1,6 @@
+retired_vestalis = {
+	icon = 8
+	cannot_inherit = yes
+	monthly_character_wealth = 0.050
+	same_religion_opinion = 5
+}

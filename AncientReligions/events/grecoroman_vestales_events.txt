@@ -1,0 +1,143 @@
+#######################################
+#
+# Vestales
+#
+# Event ID ancrel.120 - ancrel.129 reserved
+#
+#######################################
+
+# Written by Jon Severinsson
+
+namespace = ancrel
+
+# The Vestalis Maxima should be the guardian of all underage Vestalis
+character_event {
+	id = ancrel.120
+	desc = "NotShown"
+
+	hide_window = yes
+
+	trigger = {
+		has_minor_title = title_vestalis_maxima
+		host = { 
+			any_courtier = {
+				has_minor_title = title_vestalis
+				age = 6
+				NOT = { age = 16 }
+				NOT = { guardian = { character = ROOT } }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		host = { 
+			any_courtier = {
+				limit = {
+					has_minor_title = title_vestalis
+					age = 6
+					NOT = { age = 16 }
+					NOT = { guardian = { character = ROOT } }
+				}
+				set_guardian = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = "NotShown"
+	}
+}
+
+# A vestalis must retire after 30 years
+character_event = {
+	id = ancrel.121
+	desc = EVTDESCancrel.121
+	picture = GFX_evt_princess_byzantine
+
+	trigger {
+		had_character_flag = {
+			flag = flag_vestalis
+			years = 30
+		}
+		OR = {
+			has_minor_title = title_vestalis
+			has_minor_title = title_vestalis_maxima
+		}
+	}
+
+	option = {
+		name = OK
+		clr_character_flag = flag_vestalis
+		if = {
+			limit = { has_minor_title = title_vestalis }
+			remove_title = title_vestalis
+		}
+		if = {
+			limit = { has_minor_title = title_vestalis_maxima }
+			remove_title = title_vestalis_maxima
+		}
+		add_character_modifier = { name = retired_vestalis }
+	}
+}
+
+# A vassal has nominated a vestalis
+character_event = {
+	id = ancrel.122
+	desc = EVTDESCancrel.122
+	picture = GFX_evt_princess_byzantine
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAancrel.122
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 0
+				OR = {
+					is_primary_heir = ROOT
+					is_pretender = ROOT
+				}
+			}
+			modifier = {
+				factor = 1.5
+				dynasty = ROOT
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { opinion = { who = FROM value = -40 } }
+			}
+			modifier = {
+				factor = 1.25
+				opinion = { who = FROM value = 40 }
+			}
+			modifier = {
+				factor = 0.5
+				check_variable = { which = "num_vestales" value = 4 }
+			}
+			modifier = {
+				factor = 2
+				NOT = { check_variable = { which = "num_vestales" value = 2 } }
+			}
+		}
+
+		FROM = { host = { prestige = 50 } }
+		FROM = { host = { piety = 50 } }
+		hidden_tooltip = { FROM = { banish = ROOT } } # Move FROM to ROOT's court
+		FROM = { give_minor_title = title_vestalis }
+		FROM = { clr_character_flag = flag_nominated_as_vestalis }
+	}
+
+	option = {
+		name = EVTOPTBancrel.122
+		ai_chance = {
+			factor = 40
+		}
+		FROM = { host = { prestige = -10 } }
+		FROM = { clr_character_flag = flag_nominated_as_vestalis }
+	}
+}

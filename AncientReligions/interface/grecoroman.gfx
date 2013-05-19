@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_nominate_vestalis_decision"
+		texturefile = "gfx\\interface\\decision_icon_nominate_vestalis.dds"
+	}
+}

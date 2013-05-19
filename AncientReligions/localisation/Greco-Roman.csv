@@ -84,6 +84,11 @@ title_flamen_quirinalis_desc;The Flamen Quirinalis is the high priest of Quirinu
 title_flaminica_quirinalis;Flaminica Quirinalis;;;;;;;;;;;;;;;x
 title_flaminica_quirinalis_desc;As wife of the Flamen Quirinalis, the Flaminica Quirinalis are entrusted to performs certain religious rituals.;;;;;;;;;;;;;;;x
 ;;;;;;;;;;
+title_vestalis;Vestalis;;;;;;;;;;;;;;;x
+title_vestalis_desc;The College of the Vestales is the foremost order of priestesses of the Greco-Roman religion, each member taking a vow of chastity in order to devote themselves to the study and correct observance of religious rituals.;;;;;;;;;;;;;;;x
+title_vestalis_maxima;Vestalis Maxima;;;;;;;;;;;;;;;x
+title_vestalis_maxima_desc;As the head of the College of the Vestales and the only female member of the College of Pontiffs, the Vestalis Maxima is the most important of the high priestesses of the Greco-Roman religion.;;;;;;;;;;;;;;;x
+;;;;;;;;;;
 opinion_no_grecoroman_state_religion;Did not establish a Greco-Roman state religion;;;;;;;;;;;;;;;x
 opinion_no_forced_grecoroman_state_religion;Did not enforce a Greco-Roman state religion;;;;;;;;;;;;;;;x
 opinion_grecoroman_state_religion;Established a Greco-Roman state religion;;;;;;;;;;;;;;;x
@@ -104,3 +109,12 @@ EVTOPTBancrel.103;May [Root.Religion.GetRandomGodName] protect us.;;;;;;;;;;;;;;
 EVTDESCancrel.110;Without the Flaminica Dialis to assist you in your duties, the ancient religious laws require that you retire.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESCancrel.111;Without the Flaminica Martialis to assist you in your duties, the ancient religious laws require that you retire.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESCancrel.112;Without the Flaminica Quirinalis to assist you in your duties, the ancient religious laws require that you retire.;;;;;;;;;;;;;;;;;;;;;;;;x
+;;;;;;;;;;
+retired_vestalis;Retired Vestalis;;;;;;;;;;;;;;;x
+retired_vestalis_desc;Having served Vesta for 30 years this character has retiered from the College of the Vestales.;;;;;;;;;;;;;;;x
+nominate_vestalis_decision;Nominate [Root.GetTitledFirstName] as Vestalis;;;;;;;;;;;;;;;;;;;;;;;x
+nominate_vestalis_decision_desc;Nominate [Root.GetFirstName] for 30 years of dedicated service to the goddess Vesta.;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.121;After 30 years of devoted service to Vesta the time has come for you to retire from public office.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.122;One of your vasals has nominated a child for service to Vesta.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.122;Appoint her as Vestalis;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.122;I can find someone better;Vous pouvez trouver mieux.;Ich kann einen Besseren finden;;Puedo hallar a alguien mejor;;;;;;;;;x

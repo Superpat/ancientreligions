@@ -1,0 +1,70 @@
+vassal_decisions = {
+
+	nominate_vestalis_decision = {
+
+		from_potential = {
+			independent = no
+			religion = grecoroman
+			top_liege = {
+				is_feudal = yes
+				independent = yes
+				primary_title = { higher_tier_than = COUNT }
+				religion = grecoroman
+			}
+		}
+
+		potential = {
+			age = 6
+			NOT = { age = 10 }
+			is_female = yes
+			is_landed = no
+			is_prisoner = no
+			host = { character = FROM }
+			NOT = { has_character_flag = flag_nominated_as_vestalis }
+		}
+
+		allow = {
+			age = 6
+			NOT = { age = 10 }
+			is_female = yes
+			NOT = { trait = bastard }
+			NOT = { trait = legit_bastard }
+			religion = grecoroman
+			father_even_if_dead = { religion = FROM }
+			mother = { religion = FROM }
+		}
+
+		effect = {
+			set_character_flag = flag_nominated_as_vestalis
+			FROM = { top_liege = { character_event = { id = ancrel.122 days = 1 } } }
+		}
+
+		ai_will_do = {
+			factor = 0.2
+			modifier = {
+				factor = 0
+				OR = {
+					is_primary_heir = FROM
+					is_pretender = FROM
+				}
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { FROM = { ai_zeal = 40 } }
+			}
+			modifier = {
+				factor = 1.25
+				FROM = { ai_zeal = 80 }
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { FROM = { top_liege = { reverse_opinion = { who = FROM value = -40 } } } }
+			}
+			modifier = {
+				factor = 1.25
+				FROM = { top_liege = { reverse_opinion = { who = FROM value = 40 } } }
+			}
+		}
+	}
+
+}

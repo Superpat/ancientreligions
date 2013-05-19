@@ -112,9 +112,20 @@ EVTDESCancrel.112;Without the Flaminica Quirinalis to assist you in your duties,
 ;;;;;;;;;;
 retired_vestalis;Retired Vestalis;;;;;;;;;;;;;;;x
 retired_vestalis_desc;Having served Vesta for 30 years this character has retiered from the College of the Vestales.;;;;;;;;;;;;;;;x
+unchaste_vestalis;Unchaste Vestalis;;;;;;;;;;;;;;;x
+unchaste_vestalis_desc;This character has broken her vow of celebacy to Vesta.;;;;;;;;;;;;;;;x
 nominate_vestalis_decision;Nominate [Root.GetTitledFirstName] as Vestalis;;;;;;;;;;;;;;;;;;;;;;;x
 nominate_vestalis_decision_desc;Nominate [Root.GetFirstName] for 30 years of dedicated service to the goddess Vesta.;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESCancrel.121;After 30 years of devoted service to Vesta the time has come for you to retire from public office.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESCancrel.122;One of your vasals has nominated a child for service to Vesta.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTAancrel.122;Appoint her as Vestalis;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTBancrel.122;I can find someone better;Vous pouvez trouver mieux.;Ich kann einen Besseren finden;;Puedo hallar a alguien mejor;;;;;;;;;x
+EVTDESCancrel.123;Your love affair has become public knowledge, which has ruined your reputation as a Vestalis.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.124;One of the Vestalis has been caught in a love affair, contrary to to her vow of celibacy. The ancient religious laws requires that any Vestalis who breaks her vow is to be buried alive, and that any man who defiles a Vestalis is to be whipped to death.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.124;The old laws must be followed to the letter;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.124;Breaking a vow to the gods must be punished;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTCancrel.124;Quietly discharge her from service;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTDancrel.124;Ignore the incident;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.125;Your pregnancy has become public knowledge, which has ruined your reputation as a Vestalis.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.126;One of the Vestalis has become pregnant, contrary to to her vow of celibacy. The ancient religious laws requires that any Vestalis who breaks her vow is to be buried alive, and that any man who defiles a Vestalis is to be whipped to death.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.128;One of the Vestalis has given birth to a child, contrary to to her vow of celibacy. The ancient religious laws requires that any child of a Vestalis is to be thrown in the river.;;;;;;;;;;;;;;;;;;;;;;;;x

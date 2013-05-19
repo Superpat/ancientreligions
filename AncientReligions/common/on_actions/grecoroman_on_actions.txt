@@ -3,3 +3,15 @@ on_death = {
 		ancrel.101
 	}
 }
+
+on_pregnancy = {
+	events = {
+		ancrel.125
+	}
+}
+
+on_birth = {
+	events = {
+		ancrel.127
+	}
+}

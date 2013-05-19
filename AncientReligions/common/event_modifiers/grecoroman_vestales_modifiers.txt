@@ -4,3 +4,8 @@ retired_vestalis = {
 	monthly_character_wealth = 0.050
 	same_religion_opinion = 5
 }
+
+unchaste_vestalis = {
+	icon = 26
+	general_opinion = -10
+}

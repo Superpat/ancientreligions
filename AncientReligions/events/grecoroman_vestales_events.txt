@@ -141,3 +141,464 @@ character_event = {
 		FROM = { clr_character_flag = flag_nominated_as_vestalis }
 	}
 }
+
+# A Vestalis' love afair is discovered
+character_event = {
+	id = ancrel.123
+	desc = EVTDESCancrel.123
+	picture = GFX_evt_lovers
+
+	trigger = {
+		has_lover = yes
+		has_character_flag = flag_vestalis
+		NOT = { has_character_modifier = unchaste_vestalis }
+	}
+
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	option = {
+		name = OK
+		add_character_modifier = {
+			name = unchaste_vestalis
+			duration = -1
+		}
+		if = {
+			limit = {
+				top_liege = {
+					is_capable = yes
+					is_prisoner = no
+				}
+			}
+			top_liege = { character_event = { id = ancrel.124 } }
+		}
+	}
+}
+
+# A Vestalis' love afair has been discovered
+character_event = {
+	id = ancrel.124
+	desc = EVTDESCancrel.124
+	picture = GFX_evt_scandal
+
+	is_triggered_only = yes
+	hide_from = yes
+
+	option = {
+		name = EVTOPTAancrel.124
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				OR = {
+					FROM = { lover = ROOT }
+					FROM = { lover = { is_primary_heir = ROOT } }
+					FROM = { lover = { is_pretender = ROOT } }
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = { lover = { is_child_of = ROOT } }
+			}
+			modifier = {
+				factor = 0.5
+				FROM = { lover = { dynasty = ROOT } }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { FROM = { lover = { reverse_opinion = { who = ROOT value = -40 } } } }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { lover = { reverse_opinion = { who = ROOT value = 40 } } }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { is_child_of = ROOT }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { dynasty = ROOT }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { FROM = { reverse_opinion = { who = ROOT value = -40 } } }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { reverse_opinion = { who = ROOT value = 40 } }
+			}
+			modifier = {
+				factor = 2
+				ai_zeal = 80
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { ai_zeal = 0 }
+			}
+		}
+		piety = 10
+		FROM = { death = { death_reason = death_execution killer = ROOT } }
+		FROM = { lover = { death = { death_reason = death_execution killer = ROOT } } }
+	}
+	option = {
+		name = EVTOPTBancrel.124
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0.8
+				FROM = { is_child_of = ROOT }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { dynasty = ROOT }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { FROM = { reverse_opinion = { who = ROOT value = -40 } } }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { reverse_opinion = { who = ROOT value = 40 } }
+			}
+			modifier = {
+				factor = 1.25
+				ai_zeal = 80
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { ai_zeal = 0 }
+			}
+		}
+		FROM = { death = { death_reason = death_execution killer = ROOT } }
+	}
+	option = {
+		name = EVTOPTCancrel.124
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 1.25
+				FROM = { is_child_of = ROOT }
+			}
+			modifier = {
+				factor = 1.25
+				FROM = { dynasty = ROOT }
+			}
+			modifier = {
+				factor = 0.8
+				ai_zeal = 80
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { ai_zeal = 0 }
+			}
+		}
+		piety = -50
+		FROM = {
+			clr_character_flag = flag_vestalis
+			if = {
+				limit = { has_minor_title = title_vestalis }
+				remove_title = title_vestalis
+			}
+			if = {
+				limit = { has_minor_title = title_vestalis_maxima }
+				remove_title = title_vestalis_maxima
+			}
+		}
+	}
+	option = {
+		name = EVTOPTDancrel.124
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0.5
+				ai_zeal = 80
+			}
+			modifier = {
+				factor = 2
+				NOT = { ai_zeal = 0 }
+			}
+			modifier = {
+				factor = 2
+				trait = slothful
+			}
+		}
+		piety = -100
+	}
+}
+
+# A Vestalis' pregnancy is discovered
+character_event = {
+	id = ancrel.125
+	desc = EVTDESCancrel.125
+	picture = GFX_evt_pregnancy
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = flag_vestalis
+	}
+
+	option = {
+		name = OK
+		if = {
+			limit = { NOT = { has_character_modifier = unchaste_vestalis } }
+			add_character_modifier = {
+				name = unchaste_vestalis
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				top_liege = {
+					is_capable = yes
+					is_prisoner = no
+				}
+			}
+			top_liege = { character_event = { id = ancrel.126 } }
+		}
+	}
+}
+
+# A Vestalis' pregnancy has been discovered
+character_event = {
+	id = ancrel.126
+	desc = EVTDESCancrel.126
+	picture = GFX_evt_scandal
+
+	is_triggered_only = yes
+	hide_from = yes
+
+	option = {
+		name = EVTOPTAancrel.124
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				OR = {
+					FROM = { father_of_unborn = ROOT }
+					FROM = { father_of_unborn = { is_primary_heir = ROOT } }
+					FROM = { father_of_unborn = { is_pretender = ROOT } }
+				}
+			}
+			modifier = {
+				factor = 0.5
+				FROM = { father_of_unborn = { is_child_of = ROOT } }
+			}
+			modifier = {
+				factor = 0.5
+				FROM = { father_of_unborn = { dynasty = ROOT } }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { FROM = { father_of_unborn = { reverse_opinion = { who = ROOT value = -40 } } } }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { father_of_unborn = { reverse_opinion = { who = ROOT value = 40 } } }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { is_child_of = ROOT }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { dynasty = ROOT }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { FROM = { reverse_opinion = { who = ROOT value = -40 } } }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { reverse_opinion = { who = ROOT value = 40 } }
+			}
+			modifier = {
+				factor = 2
+				ai_zeal = 80
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { ai_zeal = 0 }
+			}
+		}
+		piety = 10
+		FROM = { death = { death_reason = death_execution killer = ROOT } }
+		FROM = { father_of_unborn = { death = { death_reason = death_execution killer = ROOT } } }
+	}
+	option = {
+		name = EVTOPTBancrel.124
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0.8
+				FROM = { is_child_of = ROOT }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { dynasty = ROOT }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { FROM = { reverse_opinion = { who = ROOT value = -40 } } }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { reverse_opinion = { who = ROOT value = 40 } }
+			}
+			modifier = {
+				factor = 1.25
+				ai_zeal = 80
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { ai_zeal = 0 }
+			}
+		}
+		FROM = { death = { death_reason = death_execution killer = ROOT } }
+	}
+	option = {
+		name = EVTOPTCancrel.124
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 1.25
+				FROM = { is_child_of = ROOT }
+			}
+			modifier = {
+				factor = 1.25
+				FROM = { dynasty = ROOT }
+			}
+			modifier = {
+				factor = 0.8
+				ai_zeal = 80
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { ai_zeal = 0 }
+			}
+		}
+		piety = -50
+		FROM = {
+			clr_character_flag = flag_vestalis
+			if = {
+				limit = { has_minor_title = title_vestalis }
+				remove_title = title_vestalis
+			}
+			if = {
+				limit = { has_minor_title = title_vestalis_maxima }
+				remove_title = title_vestalis_maxima
+			}
+		}
+	}
+	option = {
+		name = EVTOPTDancrel.124
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0.5
+				ai_zeal = 80
+			}
+			modifier = {
+				factor = 2
+				NOT = { ai_zeal = 0 }
+			}
+			modifier = {
+				factor = 2
+				trait = slothful
+			}
+		}
+		piety = -100
+	}
+}
+
+# A Vestalis' child is born
+character_event = {
+	id = ancrel.127
+	desc = "NotShown"
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		mother {
+			has_character_flag = flag_vestalis
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				mother = {
+					top_liege = {
+						is_capable = yes
+						is_prisoner = no
+					}
+				}
+			}
+			mother = { top_liege = { character_event = { id = ancrel.128 } } }
+		}
+	}
+
+	option = {
+		name = "NotShown"
+	}
+}
+
+# A Vestalis' child has been born
+character_event = {
+	id = ancrel.128
+	desc = EVTDESCancrel.128
+	picture = GFX_evt_scandal
+
+	is_triggered_only = yes
+	hide_from = yes
+
+	option = {
+		name = EVTOPTAancrel.124
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0.8
+				OR = {
+					FROM = { is_child_of = ROOT }
+					FROM = { father = { is_primary_heir = ROOT } }
+					FROM = { father = { is_pretender = ROOT } }
+				}
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { dynasty = ROOT }
+			}
+			modifier = {
+				factor = 1.25
+				ai_zeal = 80
+			}
+			modifier = {
+				factor = 0.8
+				NOT = { ai_zeal = 0 }
+			}
+		}
+		FROM = { death = { death_reason = death_execution killer = ROOT } }
+	}
+	option = {
+		name = EVTOPTDancrel.124
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0.8
+				ai_zeal = 80
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { ai_zeal = 0 }
+			}
+			modifier = {
+				factor = 2
+				trait = slothful
+			}
+		}
+		piety = -50
+	}
+}

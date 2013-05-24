@@ -28,7 +28,10 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+		}
 		NOT = { has_global_flag = syria_palaestina }
 		completely_controls = d_oultrejourdain ### WARNING: completely_controls is a very demanding trigger.
 		completely_controls = d_edessa
@@ -65,7 +68,10 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+		}
 		NOT = { has_global_flag = aegyptus }
 		completely_controls = d_aswan
 		completely_controls = d_alexandria
@@ -97,7 +103,10 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+		}
 		NOT = { has_global_flag = cyrenaica }
 		completely_controls = d_cyrenaica
 	}
@@ -125,7 +134,10 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+		}
 		NOT = { has_global_flag = africa }
 		completely_controls = d_tripolitania
 		completely_controls = d_tunis
@@ -155,7 +167,10 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+		}
 		NOT = { has_global_flag = illyricum }
 		completely_controls = d_carinthia
 		completely_controls = d_rashka
@@ -190,7 +205,10 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+		}
 		NOT = { has_global_flag = italia }
 		completely_controls = d_latium
 		completely_controls = d_venice
@@ -235,7 +253,10 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+		}
 		NOT = { has_global_flag = gallia }
 		completely_controls = d_normandy
 		completely_controls = d_berry
@@ -280,7 +301,10 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+		}
 		NOT = { has_global_flag = germania }
 		completely_controls = d_mecklemburg
 		completely_controls = d_brunswick
@@ -330,7 +354,10 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+		}
 		NOT = { has_global_flag = britannia }
 		completely_controls = d_northumberland
 		completely_controls = d_lancaster
@@ -370,7 +397,10 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+		}
 		NOT = { has_global_flag = hispania }
 		completely_controls = d_galicia
 		completely_controls = d_castilla
@@ -415,7 +445,10 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+		}
 		NOT = { has_global_flag = mauretania }
 		completely_controls = d_marrakech
 		completely_controls = d_tangiers
@@ -447,7 +480,10 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+		}
 		NOT = { has_global_flag = mesopotamia }
 		completely_controls = d_tigris
 		completely_controls = d_mesopotamia
@@ -478,7 +514,10 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+		}
 		NOT = { has_global_flag = caledonia }
 		completely_controls = d_albany
 		completely_controls = d_galloway
@@ -510,7 +549,10 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+		}
 		NOT = { has_global_flag = hibernia }
 		completely_controls = d_connacht
 		completely_controls = d_ulster
@@ -705,7 +747,10 @@ narrative_event = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		religion_group = christian
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+		}
 		NOT = { has_global_flag = roman_borders }
 		
 		completely_controls = d_northumberland

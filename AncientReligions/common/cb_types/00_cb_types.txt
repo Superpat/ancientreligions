@@ -1342,10 +1342,18 @@ claim_all = {
 					limit = {
 						has_dlc = "Legacy of Rome"
 						OR = { 
+							has_landed_title = e_latin_empire
 							has_landed_title = e_byzantium
 							has_landed_title = e_roman_empire
+							OR = {
+								religion = grecoroman
+								primary_title = { higher_tier_than = COUNT }
+							}
 						}
-						religion_group = christian
+						OR = {
+							religion_group = christian
+							religion_group = pagan_group
+						}
 					}
 					character_event = { id = LoR.30 days = 12 }
 				}
@@ -1406,10 +1414,18 @@ claim_all = {
 				limit = { 
 					has_dlc = "Legacy of Rome"
 					OR = { 
+						has_landed_title = e_latin_empire
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						OR = {
+							religion = grecoroman
+							primary_title = { higher_tier_than = COUNT }
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -1972,10 +1988,18 @@ invasion = {
 					limit = {
 						has_dlc = "Legacy of Rome"
 						OR = { 
+							has_landed_title = e_latin_empire
 							has_landed_title = e_byzantium
 							has_landed_title = e_roman_empire
+							OR = {
+								religion = grecoroman
+								primary_title = { higher_tier_than = COUNT }
+							}
 						}
-						religion_group = christian
+						OR = {
+							religion_group = christian
+							religion_group = pagan_group
+						}
 					}
 					character_event = { id = LoR.30 days = 12 }
 				}
@@ -2047,10 +2071,18 @@ invasion = {
 				limit = { 
 					has_dlc = "Legacy of Rome"
 					OR = { 
+						has_landed_title = e_latin_empire
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						OR = {
+							religion = grecoroman
+							primary_title = { higher_tier_than = COUNT }
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -2206,10 +2238,18 @@ tribal_invasion = {
 				limit = { 
 					has_dlc = "Legacy of Rome"
 					OR = { 
+						has_landed_title = e_latin_empire
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						OR = {
+							religion = grecoroman
+							primary_title = { higher_tier_than = COUNT }
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -2452,10 +2492,18 @@ crusade = {
 				limit = { 
 					has_dlc = "Legacy of Rome"
 					OR = { 
+						has_landed_title = e_latin_empire
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						OR = {
+							religion = grecoroman
+							primary_title = { higher_tier_than = COUNT }
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -2487,10 +2535,18 @@ crusade = {
 				limit = { 
 					has_dlc = "Legacy of Rome"
 					OR = { 
+						has_landed_title = e_latin_empire
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						OR = {
+							religion = grecoroman
+							primary_title = { higher_tier_than = COUNT }
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -5860,10 +5916,18 @@ muslim_invasion = {
 				limit = {
 					has_dlc = "Legacy of Rome"
 					OR = { 
+						has_landed_title = e_latin_empire
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						OR = {
+							religion = grecoroman
+							primary_title = { higher_tier_than = COUNT }
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -5898,10 +5962,18 @@ muslim_invasion = {
 				limit = { 
 					has_dlc = "Legacy of Rome"
 					OR = { 
+						has_landed_title = e_latin_empire
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						OR = {
+							religion = grecoroman
+							primary_title = { higher_tier_than = COUNT }
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}

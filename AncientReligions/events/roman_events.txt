@@ -610,10 +610,19 @@ character_event = {
 	
 	trigger = {
 		OR = {
+			has_landed_title = e_latin_empire
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
+			OR = {
+				religion = grecoroman
+				independent = yes
+				primary_title = { higher_tier_than = DUKE }
+			}
 		}
-		religion_group = christian
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+		}
 	}
 	
 	option = {

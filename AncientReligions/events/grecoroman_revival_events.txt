@@ -187,13 +187,87 @@ character_event = {
 		}
 		custom_tooltip = EVTTOOLTIPAancrel.102
 		hidden_tooltip = {
-			any_realm_province = {
+			# ToDo: Should use something like this, but for some reason that doesn't work :(
+#			any_realm_province = {
+#				limit = { NOT = { religion = grecoroman } }
+#				random = {
+#					chance = 25
+#					religion = grecoroman
+#				}
+#			}
+			capital_scope = {
 				limit = { NOT = { religion = grecoroman } }
 				random = {
-					chance = 25
+					chance = 50
 					religion = grecoroman
 				}
 			}
+			random_demesne_province = {
+				limit = { NOT = { religion = grecoroman } }
+				religion = grecoroman
+			}
+			random_realm_province = {
+				limit = { NOT = { religion = grecoroman } }
+				religion = grecoroman
+			}
+			if = {
+				limit = { realm_size = 30 }
+				random_realm_province = {
+					limit = { NOT = { religion = grecoroman } }
+					religion = grecoroman
+				}
+			}
+			if = {
+				limit = { realm_size = 40 }
+				random_realm_province = {
+					limit = { NOT = { religion = grecoroman } }
+					religion = grecoroman
+				}
+			}
+			if = {
+				limit = { realm_size = 50 }
+				random_realm_province = {
+					limit = { NOT = { religion = grecoroman } }
+					religion = grecoroman
+				}
+			}
+			if = {
+				limit = { realm_size = 60 }
+				random_realm_province = {
+					limit = { NOT = { religion = grecoroman } }
+					religion = grecoroman
+				}
+			}
+			if = {
+				limit = { realm_size = 70 }
+				random_realm_province = {
+					limit = { NOT = { religion = grecoroman } }
+					religion = grecoroman
+				}
+			}
+			if = {
+				limit = { realm_size = 80 }
+				random_realm_province = {
+					limit = { NOT = { religion = grecoroman } }
+					religion = grecoroman
+				}
+			}
+			if = {
+				limit = { realm_size = 90 }
+				random_realm_province = {
+					limit = { NOT = { religion = grecoroman } }
+					religion = grecoroman
+				}
+			}
+			if = {
+				limit = { realm_size = 100 }
+				random_realm_province = {
+					limit = { NOT = { religion = grecoroman } }
+					religion = grecoroman
+				}
+			}
+		}
+		hidden_tooltip = {
 			any_realm_character  = {
 				limit = { religion = grecoroman }
 				opinion = { modifier = opinion_grecoroman_state_religion who = ROOT }

@@ -321,6 +321,7 @@ decisions = {
 			prisoner = no
 			NOT = { trait = incapable }
 			OR = {
+				has_landed_title = e_latin_empire
 				has_landed_title = e_byzantium
 				has_landed_title = e_roman_empire
 			}
@@ -343,6 +344,51 @@ decisions = {
 		}
 		effect = {
 			narrative_event = { id = LoR.210 tooltip = EVTTOOLTIPLoR.210}
+			set_global_flag = schism_mended
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	catholic_mend_great_schism = {
+		is_high_prio = yes
+		potential = {
+			has_dlc = "Legacy of Rome"
+			age = 16
+			prisoner = no
+			NOT = { trait = incapable }
+			OR = {
+				has_landed_title = k_papal_state
+				tier = emperor
+			}
+			OR = {
+				has_landed_title = k_papal_state
+				completely_controls = c_byzantion
+				completely_controls = c_antiocheia
+				completely_controls = c_jerusalem
+				completely_controls = c_alexandria
+				completely_controls = c_roma
+			}
+			religion = catholic
+			NOT = { has_global_flag = schism_mended }
+		}
+		allow = {
+			piety = 2000
+			religion_authority = 0.9
+			completely_controls = c_byzantion
+			b_hagiasophia = { holder_scope = { religion = orthodox } }
+			completely_controls = c_antiocheia
+			b_antiocheia = { holder_scope = { religion = orthodox } }
+			completely_controls = c_jerusalem
+			b_jerusalem = { holder_scope = { religion = orthodox } }
+			completely_controls = c_alexandria
+			b_alexandria = { holder_scope = { religion = orthodox } }
+			completely_controls = c_roma
+			b_roma = { holder_scope = { religion = orthodox } }
+		}
+		effect = {
+			narrative_event = { id = ancrel.210 tooltip = EVTTOOLTIPLoR.210}
 			set_global_flag = schism_mended
 		}
 		ai_will_do = {

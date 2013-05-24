@@ -1504,8 +1504,20 @@ claim_all = {
 						OR = { 
 							has_landed_title = e_byzantium
 							has_landed_title = e_roman_empire
+							AND = {
+								independent = yes
+								higher_tier_than = COUNT
+								OR = {
+									culture = roman
+									religion = grecoroman
+									religion = grecoroman_reformed
+								}
+							}
 						}
-						religion_group = christian
+						OR = {
+							religion_group = christian
+							religion_group = pagan_group
+						}
 					}
 					character_event = { id = LoR.30 days = 12 }
 				}
@@ -1568,8 +1580,20 @@ claim_all = {
 					OR = { 
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						AND = {
+							independent = yes
+							higher_tier_than = COUNT
+							OR = {
+								culture = roman
+								religion = grecoroman
+								religion = grecoroman_reformed
+							}
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -2128,8 +2152,20 @@ invasion = {
 						OR = { 
 							has_landed_title = e_byzantium
 							has_landed_title = e_roman_empire
+							AND = {
+								independent = yes
+								higher_tier_than = COUNT
+								OR = {
+									culture = roman
+									religion = grecoroman
+									religion = grecoroman_reformed
+								}
+							}
 						}
-						religion_group = christian
+						OR = {
+							religion_group = christian
+							religion_group = pagan_group
+						}
 					}
 					character_event = { id = LoR.30 days = 12 }
 				}
@@ -2223,8 +2259,20 @@ invasion = {
 					OR = { 
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						AND = {
+							independent = yes
+							higher_tier_than = COUNT
+							OR = {
+								culture = roman
+								religion = grecoroman
+								religion = grecoroman_reformed
+							}
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -2402,8 +2450,20 @@ tribal_invasion = {
 					OR = { 
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						AND = {
+							independent = yes
+							higher_tier_than = COUNT
+							OR = {
+								culture = roman
+								religion = grecoroman
+								religion = grecoroman_reformed
+							}
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -2665,8 +2725,20 @@ crusade = {
 					OR = { 
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						AND = {
+							independent = yes
+							higher_tier_than = COUNT
+							OR = {
+								culture = roman
+								religion = grecoroman
+								religion = grecoroman_reformed
+							}
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -2706,8 +2778,20 @@ crusade = {
 					OR = { 
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						AND = {
+							independent = yes
+							higher_tier_than = COUNT
+							OR = {
+								culture = roman
+								religion = grecoroman
+								religion = grecoroman_reformed
+							}
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -5407,8 +5491,20 @@ muslim_invasion = {
 					OR = { 
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						AND = {
+							independent = yes
+							higher_tier_than = COUNT
+							OR = {
+								culture = roman
+								religion = grecoroman
+								religion = grecoroman_reformed
+							}
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -5445,8 +5541,20 @@ muslim_invasion = {
 					OR = { 
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						AND = {
+							independent = yes
+							higher_tier_than = COUNT
+							OR = {
+								culture = roman
+								religion = grecoroman
+								religion = grecoroman_reformed
+							}
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -6338,8 +6446,20 @@ viking_invasion = {
 					OR = { 
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						AND = {
+							independent = yes
+							higher_tier_than = COUNT
+							OR = {
+								culture = roman
+								religion = grecoroman
+								religion = grecoroman_reformed
+							}
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -6568,8 +6688,20 @@ pagan_subjugation = {
 					OR = { 
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						AND = {
+							independent = yes
+							higher_tier_than = COUNT
+							OR = {
+								culture = roman
+								religion = grecoroman
+								religion = grecoroman_reformed
+							}
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -7342,8 +7474,20 @@ caliphal_subjugation = {
 					OR = { 
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						AND = {
+							independent = yes
+							higher_tier_than = COUNT
+							OR = {
+								culture = roman
+								religion = grecoroman
+								religion = grecoroman_reformed
+							}
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}

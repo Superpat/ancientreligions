@@ -612,8 +612,20 @@ character_event = {
 		OR = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
+			AND = {
+				independent = yes
+				higher_tier_than = COUNT
+				OR = {
+					culture = roman
+					religion = grecoroman
+					religion = grecoroman_reformed
+				}
+			}
 		}
-		religion_group = christian
+		OR = {
+			religion_group = christian
+			religion_group = pagan_group
+		}
 	}
 	
 	option = {

@@ -3,12 +3,14 @@
 # Roman Events
 #
 # Event ID LoR.1 - LoR.199 reserved
+# Event ID ancrel.220 - ancrel.229 reserved
 #
 #######################################
 
 # Written by Henrik Eklund
 
 namespace = LoR
+namespace = ancrel
 
 ### Lost Roman Provinces
 
@@ -584,7 +586,7 @@ narrative_event = {
 
 ### Roman Empire Restored
 
-# The Restoration of Rome
+# The Restoration of Rome (Byzantium / Latin Empire)
 narrative_event = {
 	id = LoR.20
 	title = EVTNAMELoR.20
@@ -597,37 +599,67 @@ narrative_event = {
 	option = {
 		name = EVTOPTALoR.20
 		set_global_flag = rome_restored
-		hidden_tooltip = {
-			primary_title = {
-				any_direct_de_jure_vassal_title = {
-					de_jure_liege = e_roman_empire
+		primary_title = {
+			e_roman_empire = {
+				grant_title = ROOT
+				copy_title_laws = PREV
+				if = {
+					limit = { e_byzantium = { owner = ROOT } }
+					copy_title_history = e_byzantium
+					set_global_flag = rome_restored_by_byzantium
+				}
+				if = {
+					limit = { e_latin_empire = { owner = ROOT } NOT = { e_byzantium = { owner = ROOT } } }
+					copy_title_history = e_latin_empire
+					set_global_flag = rome_restored_by_latin_empire
 				}
 			}
-		}
-		e_roman_empire = {
-			grant_title = ROOT
-			copy_title_laws = e_byzantium
-			copy_title_history = e_byzantium
-		}
-		e_byzantium = {
-			destroy_landed_title = THIS
 		}
 		add_trait = augustus
 		give_nickname = nick_the_glorious
 		hidden_tooltip = {
-			activate_title = { title = e_byzantium status = no }
+			e_byzantium = {
+				if = {
+					limit = { owner = ROOT }
+					any_direct_de_jure_vassal_title = {
+						de_jure_liege = e_roman_empire
+					}
+					destroy_landed_title = THIS
+					activate_title = { title = e_byzantium status = no }
+				}
+			}
+			e_latin_empire = {
+				if = {
+					limit = { owner = ROOT }
+					any_direct_de_jure_vassal_title = {
+						de_jure_liege = e_roman_empire
+					}
+					destroy_landed_title = THIS
+					activate_title = { title = e_latin_empire status = no }
+				}
+			}
+			e_hre = {
+				if = {
+					limit = { owner = ROOT }
+					any_direct_de_jure_vassal_title = {
+						de_jure_liege = e_roman_empire
+					}
+					destroy_landed_title = THIS
+					activate_title = { title = e_hre status = no }
+				}
+			}
 			any_playable_ruler = {
 				limit = {
-					NOT = { has_landed_title = e_byzantium }
+					NOT = { character = ROOT }
 					ai = no
 				}
 				narrative_event = { id = LoR.21 }
 			}
 		}
-	}	
+	}
 }
 
-# Informed about Restoration of Rome
+# Informed about Restoration of Rome (Byzantium / Latin Empire)
 narrative_event = {
 	id = LoR.21
 	title = EVTNAMELoR.21
@@ -641,14 +673,194 @@ narrative_event = {
 		name = EVTOPTALoR.21
 		trigger = {
 			NOT = { has_landed_title = e_hre }
+			NOT = { has_landed_title = e_byzantium }
+			NOT = { has_landed_title = e_latin_empire }
 		}
 	}
 	option = {
 		name = EVTOPTBLoR.21
 		trigger = {
-			has_landed_title = e_hre
+			OR = {
+				has_landed_title = e_hre
+				has_landed_title = e_byzantium
+				has_landed_title = e_latin_empire
+			}
 		}
 		prestige = -500
+	}
+}
+
+# The Restoration of Rome (HRE)
+narrative_event = {
+	id = ancrel.220
+	title = EVTNAMELoR.20
+	desc = EVTDESCancrel.220
+	
+	picture = GFX_evt_rome_restored_byzantine
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.20
+		set_global_flag = rome_restored
+		set_global_flag = rome_restored_by_hre
+		primary_title = {
+			e_roman_empire = {
+				grant_title = ROOT
+				copy_title_laws = PREV
+				copy_title_history = e_hre
+			}
+		}
+		add_trait = augustus
+		give_nickname = nick_the_glorious
+		hidden_tooltip = {
+			e_hre = {
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_roman_empire
+				}
+				destroy_landed_title = THIS
+				activate_title = { title = e_hre status = no }
+			}
+			e_byzantium = {
+				if = {
+					limit = { owner = ROOT }
+					any_direct_de_jure_vassal_title = {
+						de_jure_liege = e_roman_empire
+					}
+					destroy_landed_title = THIS
+					activate_title = { title = e_byzantium status = no }
+				}
+			}
+			e_latin_empire = {
+				if = {
+					limit = { owner = ROOT }
+					any_direct_de_jure_vassal_title = {
+						de_jure_liege = e_roman_empire
+					}
+					destroy_landed_title = THIS
+					activate_title = { title = e_latin_empire status = no }
+				}
+			}
+			any_playable_ruler = {
+				limit = {
+					NOT = { character = ROOT }
+					ai = no
+				}
+				narrative_event = { id = ancrel.221 }
+			}
+		}
+	}
+}
+
+# Informed about Restoration of Rome (HRE)
+narrative_event = {
+	id = ancrel.221
+	title = EVTNAMELoR.21
+	desc = EVTDESCancrel.221
+	
+	picture = GFX_evt_rome_restored_byzantine
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.21
+		trigger = {
+			NOT = { has_landed_title = e_byzantium }
+			NOT = { has_landed_title = e_latin_empire }
+		}
+	}
+	option = {
+		name = EVTOPTBLoR.21
+		trigger = {
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_latin_empire
+			}
+		}
+		prestige = -500
+	}
+}
+
+# The Creation of a new Rome
+narrative_event = {
+	id = ancrel.222
+	title = EVTNAMELoR.20
+	desc = EVTDESCancrel.222
+	
+	picture = GFX_evt_rome_restored_byzantine
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.20
+		set_global_flag = rome_restored
+		set_global_flag = rome_recreated
+		primary_title = {
+			e_roman_empire = {
+				grant_title = ROOT
+				copy_title_laws = PREV
+			}
+		}
+		add_trait = augustus
+		give_nickname = nick_the_glorious
+		hidden_tooltip = {
+			e_byzantium = {
+				destroy_landed_title = THIS
+				activate_title = { title = e_byzantium status = no }
+			}
+			e_latin_empire = {
+				destroy_landed_title = THIS
+				activate_title = { title = e_latin_empire status = no }
+			}
+			e_hre = {
+				destroy_landed_title = THIS
+				activate_title = { title = e_hre status = no }
+			}
+			k_italy = {
+				if = {
+					limit = {
+						OR = {
+							is_liege_or_above = ROOT
+							owner = { character = ROOT } 
+						}
+					}
+					de_jure_liege = e_roman_empire
+				}
+			}
+			k_sicily = {
+				if = {
+					limit = {
+						OR = {
+							is_liege_or_above = ROOT
+							owner = { character = ROOT } 
+						}
+					}
+					de_jure_liege = e_roman_empire
+				}
+			}
+			any_playable_ruler = {
+				limit = {
+					NOT = { character = ROOT }
+					ai = no
+				}
+				narrative_event = { id = ancrel.221 }
+			}
+		}
+	}
+}
+
+# Informed about Creation of a new Rome
+narrative_event = {
+	id = ancrel.223
+	title = EVTNAMELoR.21
+	desc = EVTDESCancrel.223
+	
+	picture = GFX_evt_rome_restored_byzantine
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.21
 	}
 }
 

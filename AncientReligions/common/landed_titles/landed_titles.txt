@@ -3987,6 +3987,8 @@ e_byzantium = {
 				b_lebedos = {
 					holy_site = orthodox
 					holy_site = nestorian
+					holy_site = grecoroman
+					holy_site = grecoroman_reformed
 				}
 				b_miletos = {
 				}
@@ -4575,6 +4577,8 @@ e_byzantium = {
 				b_naupaktos = {
 				}
 				b_amphissa = {
+					holy_site = grecoroman
+					holy_site = grecoroman_reformed
 				}
 				b_lidoriki = {
 				}
@@ -4625,6 +4629,8 @@ e_byzantium = {
 				b_patras = {
 				}
 				b_pyrgos = {
+					holy_site = grecoroman
+					holy_site = grecoroman_reformed
 				}
 				b_andravida = {
 				}
@@ -6552,6 +6558,8 @@ e_byzantium = {
 				b_aversa = {
 				}
 				b_cumae = {
+					holy_site = grecoroman
+					holy_site = grecoroman_reformed
 				}
 				b_pozzuoli = {
 				}
@@ -7968,6 +7976,8 @@ e_italy = {
 					holy_site = catholic
 					holy_site = aztec
 					holy_site = aztec_reformed
+					holy_site = grecoroman
+					holy_site = grecoroman_reformed
 					used_for_dynasty_names = no
 				}
 				b_viterbo = {

@@ -93,6 +93,10 @@ temple_county_grecoroman_reformed;Pontificate;;;;;;;;;;;;;x;
 temple_county_of_grecoroman;Pontificate of;;;;;;;;;;;;;x;
 temple_county_of_grecoroman_reformed;Pontificate of;;;;;;;;;;;;;x;
 ;;;;;;;;;;
+d_grecoroman_reformed;The Greatest Pontificate;;;;;;;;;;;;;x
+PONTIFEX_MAXIMUS;Pontifex Maximus;Pontifex Maximus;Pontifex Maximus;;Pontifex Maximus;;;;;;;;;x
+PONTIFEX_MAXIMUS_FOA;Your Holiness;Sa Sainteté;Eure Heiligkeit;;Su Santidad;;;;;;;;;x
+;;;;;;;;;;
 job_chancellor_grecoroman;Magister Officiorum;;;;;;;;;;;;;;;x
 job_chancellor_grecoroman_reformed;Magister Officiorum;;;;;;;;;;;;;;;x
 job_marshal_grecoroman;Magister Militum;;;;;;;;;;;;;;;x

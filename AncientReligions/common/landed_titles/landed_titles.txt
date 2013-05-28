@@ -28423,6 +28423,35 @@ d_west_african_pagan_reformed = {
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
 
+d_grecoroman_reformed = {
+	color={ 155 155 235 }
+	color2={ 220 220 0 }
+	
+	capital = 333 #Roma
+	
+	title = "PONTIFEX_MAXIMUS"
+	foa = "PONTIFEX_MAXIMUS_FOA"
+	
+	creation_requires_capital = no
+	
+	allow = {
+		religion = grecoroman_reformed
+		num_of_holy_sites = 3
+		piety = 500
+	}
+	
+	short_name = yes
+	
+	dignity = 100 # Counted as having this many more counties than it does
+	
+	# Controls a religion
+	controls_religion = grecoroman_reformed
+	
+	religion = grecoroman_reformed
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
 d_zoroastrian = {
 	color={ 180 120 40 }
 	color2={ 220 220 0 }

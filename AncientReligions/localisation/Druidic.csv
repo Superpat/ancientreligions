@@ -1,0 +1,149 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+;;;;;;;;;;
+druidic;Druidic;;;;;;;;;;;;;;;;;;x
+druidic_reformed;Greco-Roman;Gréco-Romaine;Greco-Roman;;Greco-romano;;;;;;;;;x
+druidic_DESC;Celtic heathenry is the last surviving branch of the ancient druidic belief systems. A pantheon of gods and a world full of spirits , the children of Don rule the Skies, the Earth and the Otherworld. The main gods are Don and Lud, parents of the gods, Beli, the god of Healing, the Great Queen Rhiannon, the Horned god, called Amanaeth, Manawydan, the Sea God and Lleu of the Skillful Hand. Defining features in-game:\n§Y*§! Can raid neighbors for loot\n§Y*§! Low-tech non-pagans have very low Supply Limit in Pagan counties\n§Y*§! Can declare Subjugation Wars against all other pagans\n§Y*§! Rulers are limited to Gavelkind Succession\n§Y*§! Rulers cannot declare Holy Wars\n§Y*§! Inferior at conversion and vulnerable to non-pagan missionaries\n§Y*§! Rulers lose Prestige if at peace for too long\n§Y*§! The Druidic Pagan faith can be Reformed;;;;;;;;;x
+druidic_reformed_DESC;The reformed Druidic Pagan church has a standardized liturgy etched on the many raised stones in Britain and is led by the circle of the Druids, the Arch-Druid is the religious leader of the faithful. Defining features in-game:\n§Y*§! Can raid neighbors for loot\n§Y*§! The Arch-Druid can call Great Holy Wars;;;;;;;;;x
+GOD_BELI;Beli Mawr;;;;;;;;;;;;;;;;;;;;x
+GOD_BELI_irish;Angus mac Og;;;;;;;;;;;;;;;;;;;;x
+GOD_AMANAETH;Amanaeth;;;;;;;;;;;;;;;;;;;;x
+GOD_AMANAETH_irish;The Horned God;;;;;;;;;;;;;;;;;;;;x
+GOD_MANAWYDAN;Manawydan;;;;;;;;;;;;;;;;;;;;x
+GOD_MANAWYDAN_irish;Manannan mac Lir;;;;;;;;;;;;;;;;;;;;x
+GOD_LLEU;Lleu;;;;;;;;;;;;;;;;;;;;x
+GOD_LLEU_irish;Lugh;;;;;;;;;;;;;;;;;;;;x
+GOD_RHIANNON;Rhiannon;;;;;;;;;;;;;;;;;;;;x
+GOD_RHIANNON_irish;Macha;;;;;;;;;;;;;;;;;;;;x
+GOD_EARTH;Don;;;;;;;;;;;;;;;;;;;;x
+GOD_EARTH_irish;Dana;;;;;;;;;;;;;;;;;;;;x
+GOD_SKY;Lud;;;;;;;;;;;;;;;;;;;;x
+GOD_SKY_irish;Nuada;;;;;;;;;;;;;;;;;;;;x
+THE_BALLADS;The Ballads;;;;;;;;;;;;;;;;;;;;x
+d_druidic_reformed;The Circle of Druids;;;;;;;;;;;;;x
+ARCH_DRUID;Arch Druid;Archi Druide;Arch Druid;;Arch Druid;;;;;;;;;x
+ARCH_DRUID_FOA;Eldest of the Druids;Sa Sainteté;Eure Heiligkeit;;Su Santidad;;;;;;;;;x
+;;;;;;;;;;
+baron_druidic;Lord;;;;;;;;;;;x
+baron_female_druidic;Lady;;;;;;;;;;;;;;;;;;x
+barony_of_druidic;Castle of;;;;;;;;;;;;;;x
+count_druidic;High Lord;;;;;;;;;;;;;x
+count_female_druidic;High Lady;;;;;;;;;;;;;;;;;;x
+county_of_druidic;High Lordship of;;;;;;;;;;;;;;x
+duke_druidic;Prince;;;;;;;;;;;;;x
+duke_female_druidic;Princess;;;;;;;;;;;;;;;;;;x
+duchy_of_druidic;Principality of;;;;;;;;;;;;;;x
+king_druidic;King;;;;;;;;;;;;;x
+king_female_druidic;Queen;;;;;;;;;;;;;;;;;;x
+kingdom_of_druidic;Kingdom of;;;;;;;;;;;;;;x
+emperor_druidic;Pendragon;;;;;;;;;;;;;x
+emperor_female_druidic;High Queen;;;;;;;;;;;;;;;;;;x
+empire_of_druidic;High Kingdom of;;;;;;;;;;;;;;x
+;;;;;;;;;;
+family_palace_baron_druidic;Elder;;;;;;;;;;x
+family_palace_baron_female_druidic;Lady;;;;;;;;;;x
+city_baron_druidic;Chief;;;;;;;;;;;x
+city_baron_female_druidic;Lady;;;;;;;;;;;;;;;;;;x
+city_count_druidic;High Chief;;;;;;;;;;;;;x
+city_count_female_druidic;Lady;;;;;;;;;;;;;;;;;;x
+city_duke_druidic;Prince;;;;;;;;;;;;;x
+city_duke_female_druidic;Lady;;;;;;;;;;;;;;;;;;x
+city_duchy_of_druidic;Tribe of;;;;;;;;;;;;;;x
+city_king_druidic;Grand Prince;;;;;;;;;;;;;x
+city_king_female_druidic;Lady;;;;;;;;;;;;;;;;;;x
+city_kingdom_of_druidic;Federation of;;;;;;;;;;;;;;x
+city_emperor_druidic;Vergobret;;;;;;;;;;;;;x
+city_emperor_female_druidic;Lady;;;;;;;;;;;;;;;;;;x
+city_empire_of_druidic;Nation of;;;;;;;;;;;;;;x
+;;;;;;;;;;
+temple_baron_druidic;Druid;;;;;;;;;;;x
+temple_barony_of_druidic;Sacred Grove of;;;;;;;;;;;;;;x
+temple_count_druidic;Druid;;;;;;;;;;;;;x
+temple_county_of_druidic;Temple of;;;;;;;;;;;;;;x
+temple_duke_druidic;Head Druid;;;;;;;;;;;;;x
+temple_duchy_of_druidic;Tribe of;;;;;;;;;;;;;;x
+temple_king_druidic;Archdruid;;;;;;;;;;;;;x
+temple_kingdom_of_druidic;Federation of;;;;;;;;;;;;;;x
+temple_emperor_druidic;Myrdynn;;;;;;;;;;;;;x
+temple_empire_of_druidic;Nation of;;;;;;;;;;;;;;x
+;;;;;;;;;;
+job_spiritual_druidic;Seer;;;;;;;;;;;;;;;x
+job_marshal_druidic;Champion;;;;;;;;;;;;;x
+;;;;;;;;;;
+druid;Druid;;;;;;;;;;;;;;;;;;;;x
+druid_desc;The druid's knowledge of the ancient celtic ballads and of sacred traditions is great and their power among the celts is without equal.
+;;;;;;;;;;
+obj_convert_druidism_title;Learn about your ancestors;;;;;;;;;;;;;;;;;;;;;;;;x
+obj_convert_druidism_desc;Your lack of knowledge of your ancestors makes you feel empty inside.;;;;;;;;;;;;;;;;;;;;;;;;x
+ancrel.000;An Afternoon walk;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.000;Riding through the forest, you dismount from your horse and attach it to a nearby tree. Feeling at peace in the surrounding beauty, you settle down for a nap. 	A strange sound, like the string of a harp, stirs you from your rest, you open your eyes only to see an old man slowly making his way towards you. He feebly asks where he is andthen proceeds to collapse on the ground.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.000;That poor man, I will bring him back to my domain.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.000;Strange man, better leave him there.;;;;;;;;;;;;;;;;;;;;;;;;x
+ancrel.001;The Druid;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.001;The old man calls himself a druid, his knowledge is fascinating and your conversations always last well into the night. He talks of Lleu and his spear, of the children of Don and of the mysteries of Amanaeth, his stories bring up visions of a better time, when giants and fairies where friends, before man destroyed all in his folly.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.001;Perhaps I should revive some of these practices, the Sidhes are no demons but they must still appeased...;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.001;The ways of the druids are dead and shall stay so.;;;;;;;;;;;;;;;;;;;;;;;;x
+ancrel.002;Message from the Pope;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.002;The old man calls himself a druid, his knowledge is fascinating and your conversations always last well into the night. He talks of Lleu and his spear, of the children of Don and of the mysteries of Amanaeth, his stories bring up visions of a better time, when giants and fairies where friends, before man destroyed all in his folly.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.002;I will follow the druids and reinstate the old cults.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.002;The Old Ways are barbarous, the power of God conquers all.;;;;;;;;;;;;;;;;;;;;;;;;x
+;;;;;;;;;;
+head1;First Blood;;;;;;;;;;;;;;;;;;;;;;;;x
+head1_desc;This character has defeated a valiant foe and taken his head as a trophy.;;;;;;;;;;;;;;;;;;;;;;;;x
+head2;Headhunter;;;;;;;;;;;;;;;;;;;;;;;;x
+head2_desc;This character has a chest containing the heads of his most valiant foes.;;;;;;;;;;;;;;;;;;;;;;;;x
+head3;Veteran Headhunter;;;;;;;;;;;;;;;;;;;;;;;;x
+head3_desc;The walls of this character are lined with severed heads, trophies of his most glorious fights.;;;;;;;;;;;;;;;;;;;;;;;;x
+head4;Heroic Headhunter;;;;;;;;;;;;;;;;;;;;;;;;x
+head4_desc;The heads of heroes and generals are bloody tokens of this character's valiance in combat.;;;;;;;;;;;;;;;;;;;;;;;;x
+head5;Living Legend;;;;;;;;;;;;;;;;;;;;;;;;x
+head5_desc;The life of this warrior is legendary, his exploits match those of the legendary warriors of old.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.010;Your fallen enemy lies before you, he was a valiant foe and his head will make a great trophy to prove your valor to the gods. Grasping your blade firmly, you severe his head from the rest of his body.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.010;For [Root.Religion.GetRandomGodName]!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.014;The gods must favor you, for again you are blessed with victory! As you severe your foe's head from the rest of his body, you hear a bard singing the song of Cu Chullain.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.014;He will have a new hero to sing about now!;;;;;;;;;;;;;;;;;;;;;;;;x
+;;;;;;;;;;
+baron_druidic_reformed;Lord;;;;;;;;;;;x
+baron_female_druidic_reformed;Lady;;;;;;;;;;;;;;;;;;x
+barony_of_druidic_reformed;Castle of;;;;;;;;;;;;;;x
+count_druidic_reformed;High Lord;;;;;;;;;;;;;x
+count_female_druidic_reformed;High Lady;;;;;;;;;;;;;;;;;;x
+county_of_druidic_reformed;High Lordship of;;;;;;;;;;;;;;x
+duke_druidic_reformed;Prince;;;;;;;;;;;;;x
+duke_female_druidic_reformed;Princess;;;;;;;;;;;;;;;;;;x
+duchy_of_druidic_reformed;Principality of;;;;;;;;;;;;;;x
+king_druidic_reformed;King;;;;;;;;;;;;;x
+king_female_druidic_reformed;Queen;;;;;;;;;;;;;;;;;;x
+kingdom_of_druidic_reformed;Kingdom of;;;;;;;;;;;;;;x
+emperor_druidic_reformed;Pendragon;;;;;;;;;;;;;x
+emperor_female_druidic_reformed;High Queen;;;;;;;;;;;;;;;;;;x
+empire_of_druidic_reformed;High Kingdom of;;;;;;;;;;;;;;x
+;;;;;;;;;;
+family_palace_baron_druidic_reformed;Elder;;;;;;;;;;x
+family_palace_baron_female_druidic_reformed;Lady;;;;;;;;;;x
+city_baron_druidic_reformed;Chief;;;;;;;;;;;x
+city_baron_female_druidic_reformed;Lady;;;;;;;;;;;;;;;;;;x
+city_count_druidic_reformed;High Chief;;;;;;;;;;;;;x
+city_count_female_druidic_reformed;Lady;;;;;;;;;;;;;;;;;;x
+city_duke_druidic_reformed;Prince;;;;;;;;;;;;;x
+city_duke_female_druidic_reformed;Lady;;;;;;;;;;;;;;;;;;x
+city_duchy_of_druidic_reformed;Tribe of;;;;;;;;;;;;;;x
+city_king_druidic_reformed;Grand Prince;;;;;;;;;;;;;x
+city_king_female_druidic_reformed;Lady;;;;;;;;;;;;;;;;;;x
+city_kingdom_of_druidic_reformed;Federation of;;;;;;;;;;;;;;x
+city_emperor_druidic_reformed;Vergobret;;;;;;;;;;;;;x
+city_emperor_female_druidic_reformed;Lady;;;;;;;;;;;;;;;;;;x
+city_empire_of_druidic_reformed;Nation of;;;;;;;;;;;;;;x
+;;;;;;;;;;
+temple_baron_druidic_reformed;Druid;;;;;;;;;;;x
+temple_barony_of_druidic_reformed;Sacred Grove of;;;;;;;;;;;;;;x
+temple_count_druidic_reformed;Druid;;;;;;;;;;;;;x
+temple_county_of_druidic_reformed;Temple of;;;;;;;;;;;;;;x
+temple_duke_druidic_reformed;Head Druid;;;;;;;;;;;;;x
+temple_duchy_of_druidic_reformed;Tribe of;;;;;;;;;;;;;;x
+temple_king_druidic_reformed;Archdruid;;;;;;;;;;;;;x
+temple_kingdom_of_druidic_reformed;Federation of;;;;;;;;;;;;;;x
+temple_emperor_druidic_reformed;Myrdynn;;;;;;;;;;;;;x
+temple_empire_of_druidic_reformed;Nation of;;;;;;;;;;;;;;x
+;;;;;;;;;;
+job_spiritual_druidic_reformed;Seer;;;;;;;;;;;;;;;x
+job_marshal_druidic_reformed;Champion;;;;;;;;;;;;;x

@@ -1,3 +1,5 @@
+namespace = ancrel
+
 #On-action combat event: Killed in action
 character_event = {
 	id = 242
@@ -1108,9 +1110,76 @@ character_event = {
 	trigger = {
 		is_alive = yes
 	}
-
 	option = {
 		name = EVTOPTA249
+		hidden_tooltip = {
+			if = {
+				limit = {
+					OR = {
+						religion = druidic
+						religion = druidic_reformed
+					}
+					NOT = {
+						trait = head1
+						trait = head2
+						trait = head3
+						trait = head4
+						trait = head5
+					}
+				}
+				character_event = { id = ancrel.010 }
+			}
+			if = {
+				limit = {
+					OR = {
+						religion = druidic
+						religion = druidic_reformed
+					}
+					trait = head1
+				}
+				character_event = { id = ancrel.011 }
+			}
+			if = {
+				limit = {
+					OR = {
+						religion = druidic
+						religion = druidic_reformed
+					}
+					trait = head2
+				}
+				character_event = { id = ancrel.012 }
+			}
+			if = {
+				limit = {
+					OR = {
+						religion = druidic
+						religion = druidic_reformed
+					}
+					trait = head3
+				}
+				character_event = { id = ancrel.013 }
+			}
+			if = {
+				limit = {
+					OR = {
+						religion = druidic
+						religion = druidic_reformed
+					}
+					trait = head4
+				}
+				character_event = { id = ancrel.014 }
+			}
+			if = {
+				limit = {
+					OR = {
+						religion = druidic
+						religion = druidic_reformed
+					}
+					trait = head5
+				}
+				character_event = { id = ancrel.015 }
+			}
+		}
 	}
 }
 

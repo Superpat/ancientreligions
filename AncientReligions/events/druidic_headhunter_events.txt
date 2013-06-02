@@ -1,0 +1,106 @@
+#######################################
+#
+# Druidism Headhunters
+#
+# Event ID ancrel.010 - ancrel.019 reserved
+#
+#######################################
+
+# Written by Patrick Marchand
+
+namespace = ancrel
+
+#Druidic character takes first enemy head
+character_event = {
+	id = ancrel.010
+	desc = EVTDESCancrel.010
+	picture = GFX_evt_headhunter
+	border = GFX_event_normal_frame_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAancrel.010
+		add_trait = head1
+	}
+}
+
+#Druidic character takes second enemy head
+character_event = {
+	id = ancrel.011
+	desc = EVTDESCancrel.010
+	picture = GFX_evt_headhunter
+	border = GFX_event_normal_frame_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAancrel.010
+		remove_trait = head1
+		add_trait = head2
+	}
+}
+
+#Druidic character takes third enemy head
+character_event = {
+	id = ancrel.012
+	desc = EVTDESCancrel.010
+	picture = GFX_evt_headhunter
+	border = GFX_event_normal_frame_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAancrel.010
+		remove_trait = head2
+		add_trait = head3
+	}
+}
+
+#Druidic character takes fourth enemy head
+character_event = {
+	id = ancrel.013
+	desc = EVTDESCancrel.010
+	picture = GFX_evt_headhunter
+	border = GFX_event_normal_frame_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAancrel.010
+		remove_trait = head3
+		add_trait = head4
+	}
+}
+
+#Druidic character takes fifth enemy head and becomes a legend
+character_event = {
+	id = ancrel.014
+	desc = EVTDESCancrel.014
+	picture = GFX_evt_headhunter
+	border = GFX_event_normal_frame_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAancrel.014
+		remove_trait = head4
+		add_trait = head7
+	}
+}
+
+#Druidic hero takes a enemy head
+character_event = {
+	id = ancrel.015
+	desc = EVTDESCancrel.010
+	picture = GFX_evt_headhunter
+	border = GFX_event_normal_frame_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAancrel.010
+		prestige = 20
+		piety = 10
+	}
+}

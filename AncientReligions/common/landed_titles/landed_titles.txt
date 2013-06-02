@@ -28437,7 +28437,7 @@ d_druidic_reformed = {
 	color={ 122 165 70 }
 	color2={ 220 220 0 }
 	
-	capital = 366 #Stettin
+	capital = 64 # Gwynedd
 	
 	title = "ARCH_DRUID"
 	title_female = "ARCH_DRUIDESSE"
@@ -28446,7 +28446,7 @@ d_druidic_reformed = {
 	short_name = yes
 	
 	# Always exists
-	landless = yes	
+	landless = yes
 	
 	# Controls a religion
 	controls_religion = druidic_reformed

@@ -1,0 +1,69 @@
+spriteTypes = {
+	# Traits
+	spriteType = {
+		name = "GFX_trait_head1"
+		texturefile = "gfx/traits/headhunter.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_head2"
+		texturefile = "gfx/traits/headhunter.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_head3"
+		texturefile = "gfx/traits/headhunter.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_head4"
+		texturefile = "gfx/traits/headhunter.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_head5"
+		texturefile = "gfx/traits/livinglegend.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_druid"
+		texturefile = "gfx/traits/druid.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	# Objectives
+	spriteType = {
+		name = "GFX_obj_convert_druidism"
+		texturefile = "gfx/ambitions/obj_convert_druidism.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	# Event Pictures
+	spriteType = {
+		name = "GFX_evt_headhunter"
+		texturefile = "gfx\\event_pictures\saxon_army_banners.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_oak_tree"
+		texturefile = "gfx\\event_pictures\oak_forest.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_Ruler_listening_to_supplicant"
+		texturefile = "gfx\\event_pictures\Ruler_listening_to_supplicant.tga"
+		allwaystransparent = yes
+	}
+}

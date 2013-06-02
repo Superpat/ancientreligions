@@ -1,0 +1,33 @@
+head1 = {
+	monthly_character_prestige = 0.10
+	monthly_character_piety = 0.05
+}
+
+head2 = {
+	monthly_character_prestige = 0.20
+	monthly_character_piety = 0.10
+}
+
+head3 = {
+	monthly_character_prestige = 0.40
+	monthly_character_piety = 0.20
+	customizer = no
+}
+
+head4 = {
+	monthly_character_prestige = 0.80
+	monthly_character_piety = 0.40
+	customizer = no
+}
+
+head5 = {
+	monthly_character_prestige = 1.60
+	monthly_character_piety = 0.80
+	customizer = no
+}
+druid = {
+	monthly_character_piety = 1.00
+	learning = 5
+	diplomacy = 2
+	customizer = no
+}

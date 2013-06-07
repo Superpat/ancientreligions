@@ -490,6 +490,32 @@ d_jomsvikings = {
 	modifier = d_jomsvikings_modifier
 }
 
+d_gwydion = {
+	
+	color={ 75 75 75 }
+	color2={ 255 255 255 }
+	
+	capital = 64
+
+	title = "WARCHIEF"
+	foa = "WARCHIEF_FOA"
+	
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = druidic
+	
+	culture = welsh
+	
+	# Cannot be held as a secondary title
+	primary = yes
+
+	modifier = d_gwydion_modifier
+}
+
 # MERCS
 
 d_sunni_turkic_company = {

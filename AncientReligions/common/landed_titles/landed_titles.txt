@@ -18178,8 +18178,6 @@ e_france = {
 				b_chateaudun = {
 				}
 				b_chartres = {
-					holy_site = druidic
-					holy_site = druidic_reformed
 				}
 				b_dreux = {
 				}
@@ -18190,6 +18188,8 @@ e_france = {
 				b_epernon = {
 				}
 				b_bonneval = {
+					holy_site = druidic
+					holy_site = druidic_reformed
 				}
 				b_tiron = {
 				}
@@ -20426,10 +20426,10 @@ e_spain = {
 				color2={ 255 255 255 }
 				
 				b_corunna = {
-					holy_site = druidic
-					holy_site = druidic_reformed
 				}
 				b_mondonedo = {
+					holy_site = druidic
+					holy_site = druidic_reformed
 				}
 				b_lugo = {
 				}
@@ -25576,13 +25576,13 @@ e_britannia = {
 				b_degannwy = {
 				}
 				b_bangor_fawr = {
+					holy_site = druidic
+					holy_site = druidic_reformed
 				}
 				b_aberffraw = {
 					norwegian = Ongullsøy
 					english = Anglesey
 					saxon = Anglesey
-					holy_site = druidic
-					holy_site = druidic_reformed
 				}
 				b_harlech = {
 				}
@@ -26457,12 +26457,12 @@ e_britannia = {
 				b_wicklow = {
 				}
 				b_ath_cliath = {
-					holy_site = druidic
-					holy_site = druidic_reformed
 				}
 				b_christ_church = {
 				}
 				b_mellifont = {
+					holy_site = druidic
+					holy_site = druidic_reformed
 				}
 				b_trim = {
 				}

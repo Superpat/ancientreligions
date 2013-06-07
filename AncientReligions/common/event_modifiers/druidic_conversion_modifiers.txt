@@ -3,9 +3,3 @@ celtic_ways = {
 	church_opinion = -20
 	icon = 35
 }
-
-celtic_heretic = {
-	monthly_character_piety = 0.2
-	church_opinion = -50
-	icon = 35
-}

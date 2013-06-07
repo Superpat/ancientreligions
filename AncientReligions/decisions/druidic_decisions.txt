@@ -1,0 +1,115 @@
+decisions = {
+
+	hold_celtic_feast = {
+		potential = {
+			has_dlc = "The Old Gods"
+			is_ruler = yes
+			age = 16
+			prisoner = no
+			OR = {
+				religion = druidic
+				religion = druidic_reformed
+			}
+			NOT = { has_character_modifier = held_celtic_feast_timer }
+			NOT = {	has_character_flag = holding_celtic_feast }
+		}
+		allow = {
+			war = no
+			any_demesne_title = {
+				is_occupied = no
+			}
+			OR = {
+				month = 5
+				month = 8
+				month = 12
+				month = 10
+			}
+			scaled_wealth = 0.20
+			prisoner = no
+		}
+		effect = {
+			scaled_wealth = -0.20
+			set_character_flag = holding_celtic_feast
+			hidden_tooltip = { 
+				character_event = { id = ancrel.020 } 
+			}
+			custom_tooltip = prepare_celtic_feast
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					scaled_wealth = 3.0
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					martial = 8
+				}
+			}
+		}
+	}
+
+	reinstate_celtic_rites = {
+		potential = {
+			has_dlc = "The Old Gods"
+			is_ruler = yes
+			age = 16
+			prisoner = no
+			NOT = {
+				has_character_flag = adopted_celtic_rites
+				OR = {
+					religion = druidic
+					religion = druidic_reformed
+				}
+			}
+			any_courtier = {
+				religion = druidic
+			}
+		}
+		allow = {
+			war = no
+			scaled_wealth = 0.10
+			prisoner = no
+			learning = 8
+			NOT = {trait = zealous}
+			any_courtier = {
+				religion = druidic
+				prisoner = no
+			}
+		}
+		effect = {
+			scaled_wealth = -0.10
+			set_character_flag = adopted_celtic_rites
+			custom_tooltip = adopt_celtic_rites
+			hidden_tooltip = {
+				character_event = { id = ancrel.001 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				trait = zealous
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					learning = 0
+					learning = 1
+					learning = 2
+					learning = 3
+					learning = 4
+					learning = 5
+				}
+			}
+		}
+	}
+}

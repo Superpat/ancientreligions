@@ -1,0 +1,230 @@
+#######################################
+#
+# Rebirth of Druidism
+#
+# Event ID ancrel.000 - ancrel.009 reserved
+#
+#######################################
+
+# Written by Superskierpat
+
+namespace = ancrel
+
+# Old "Wizard" Appears
+character_event = {
+	id = ancrel.000
+	desc = EVTDESCancrel.000
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	ai = no
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		has_dlc = "The Old Gods"
+		is_ruler = yes
+		in_command = no
+		culture_group = celtic
+		NOT = {
+			OR = {
+				religion = druidic
+				religion = druidic_reformed
+			}
+			any_courtier = {
+				has_minor_title = title_pagan_wizard
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 2200
+	}	
+	
+	option = {
+		name = EVTOPTAancrel.000
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			male = yes
+			age = 53
+			religion = druidic
+			culture = ROOT
+			trait = mystic
+			trait = scholarly_theologian
+		}
+		new_character = {
+			give_minor_title = title_pagan_wizard
+		}
+	}
+	option = {
+		name = EVTOPTBancrel.000
+		custom_tooltip = begone_sorcerer
+	}
+}
+
+# Adopt celtic rites
+character_event = {
+	id = ancrel.001
+	desc = EVTDESCancrel.001
+	picture = GFX_evt_Ruler_listening_to_supplicant
+	
+<<<<<<< HEAD
+	triggered_only = yes
+=======
+	prisoner = no
+	
+	is_triggered_only = yes
+>>>>>>> Fixed Rebirth of Druidism chain
+	
+	option = {
+		name = EVTOPTAancrel.001
+		piety = -50
+		custom_tooltip = adopt_celtic_rites
+		add_character_modifier = {
+			name = celtic_ways
+			duration = -1
+		}
+		any_vassal = {
+			limit = {
+				NOT = { religion = druidic }
+				age = 16
+				prisoner = no
+				war = no
+				NOT = { trait = incapable }
+			}
+			character_event = { id = ancrel.003 days = 5 }
+		}
+	}
+}
+
+# Bishop asks character to reform Celtic ways
+character_event = {
+	id = ancrel.002
+	desc = EVTDESCancrel.002
+	picture = GFX_evt_scandal
+	
+	prisoner = no
+	incapable = no
+	
+	trigger = {
+		NOT = { religion = druidic }
+		has_character_modifier = celtic_ways
+		any_vassal = {
+				is_theocracy = yes
+				NOT = { religion = druidic }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = EVTOPTAancrel.002
+		ai_chance = { factor = 50 }
+		hidden_tooltip = { remove_character_modifier = celtic_ways }
+		religion = druidic
+		piety = 50
+	}
+	option = {
+		name = EVTOPTBancrel.002
+		piety = 50
+		ai_chance = { factor = 50 }
+		random_vassal = {
+			limit = {
+				is_theocracy = yes
+				religion = catholic
+			}
+			opinion = {
+				modifier = opinion_happy
+				who = ROOT
+				years = 2
+			}
+		}
+		remove_event_modifier = celtic_ways
+	}
+}
+
+# Adopt celtic rites (vassal)
+character_event = {
+	id = ancrel.003
+	desc = EVTDESCancrel.003
+	picture = GFX_evt_Ruler_listening_to_supplicant
+	
+	prisoner = no
+	incapable = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.003
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				trait = zealous
+			}
+		}
+		piety = -50
+		custom_tooltip = adopt_celtic_rites
+		add_character_modifier = {
+			name = celtic_ways
+			duration = -1
+		}
+		hidden_tooltip = {
+			top_liege = { character_event = { id = ancrel.004 } days = 5 }
+		}
+	}
+	option = {
+		name = EVTOPTBancrel.003
+		piety = 50
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				trait = zealous
+			}
+		}
+		random_vassal = {
+			limit = {
+				is_theocracy = yes
+				religion = catholic
+			}
+			opinion = {
+				modifier = opinion_happy
+				who = ROOT
+				years = 2
+			}
+		}
+		add_character_flag = refuse_celtic_ways
+		hidden_tooltip = {
+			top_liege = { character_event = { id = ancrel.005 } days = 5 }
+		}
+	}
+}
+# Vassal adopted celtic rites
+character_event = {
+	id = ancrel.004
+	desc = EVTDESCancrel.004
+	picture = GFX_evt_Ruler_listening_to_supplicant
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.004
+	}
+}
+# Vassal refuses celtic rites
+character_event = {
+	id = ancrel.005
+	desc = EVTDESCancrel.005
+	picture = GFX_evt_Ruler_listening_to_supplicant
+
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.005
+	}
+}

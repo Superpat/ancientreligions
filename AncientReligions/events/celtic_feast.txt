@@ -1,0 +1,3094 @@
+###################################
+#
+# THE OLD GODS 
+# - Celtic Feasts Events
+# Event ID ancrel.020-ancrel.99 and ancrel.200 to ancrel.202 is reserved
+#
+###################################
+
+# Written by Patrick Marchand
+
+namespace = ancrel
+
+# You summon your vassals to the celebrations
+character_event = {
+	id = ancrel.020
+	desc = EVTDESCancrel.020
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.020
+		any_vassal = {
+			limit = {
+				OR = {
+					religion = druidic
+					religion = druidic_reformed
+				}
+				age = 16
+				prisoner = no
+				war = no
+				NOT = { trait = incapable }
+			}
+			character_event = { id = ancrel.021 tooltip = EVTTOOLTIPancrel.021 }
+			hidden_tooltip = { character_event = { id = ancrel.025 days = 10 } }
+		}
+		any_vassal = {
+			limit = {
+				OR = {
+					religion_group = christian
+					religion_group = muslim
+				}
+				age = 16
+				prisoner = no
+				war = no
+				NOT = { trait = incapable }
+			}
+			character_event = { id = ancrel.022 tooltip = EVTTOOLTIPancrel.022 }
+		}
+		hidden_tooltip = { character_event = { id = ancrel.024 days = 10 } }
+	}
+}
+
+# Summoned to celebrations (Vassal)
+character_event = {
+	id = ancrel.021
+	desc = EVTDESCancrel.021
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.021
+		set_character_flag = attending_celtic_feast
+	}
+}
+
+# Non-Druidic Pagans pay to skip celebrations
+character_event = {
+	id = ancrel.022
+	desc = EVTDESCancrel.022
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = { # Pay
+		name = EVTOPTAancrel.022
+		trigger = {
+			wealth = 20
+		}
+		FROM = {
+			character_event = { id = ancrel.023 tooltip = EVTTOOLTIPancrel.023 }
+		}
+		wealth = -20
+	}
+	option = { # Don't pay
+		name = EVTOPTBancrel.022
+		FROM = {
+			character_event = { id = ancrel.056 tooltip = EVTTOOLTIPancrel.056 }
+		}
+		tooltip = {
+			FROM = {
+				opinion = {
+					modifier = opinion_refused_celtic_feast
+					who = ROOT
+				}
+				any_vassal = {
+					limit = { has_character_flag = attending_celtic_feast }
+					opinion = {
+						modifier = opinion_refused_celtic_feast
+						who = ROOT
+					}
+				}
+			}
+		}
+	}
+}
+
+# Non-Druidic Pagans pay to skip celebrations (Liege)
+character_event = {
+	id = ancrel.023
+	desc = EVTDESCancrel.023
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.023
+		wealth = 20
+	}
+}
+
+# Non-Druidic Pagans refuse to pay to skip celebrations (Liege)
+character_event = {
+	id = ancrel.056
+	desc = EVTDESCancrel.056
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.056
+	}
+}
+
+# Celebrations Begin! (Liege)
+character_event = {
+	id = ancrel.024
+	desc = EVTDESCancrel.024
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.024
+		hidden_tooltip = {
+			if = {
+				limit = { 
+					any_courtier = {
+						prisoner = yes
+						host = { character = ROOT }
+						age = 16
+					}
+				}
+				random_courtier = {
+					limit = { 
+						prisoner = yes 
+						host = { character = ROOT }
+						age = 16
+					}
+					character_event = { id = ancrel.026 days = 5 }
+				}
+			}
+			if = {
+				limit = { 
+					NOT = {
+						any_courtier = {
+							prisoner = yes
+							host = { character = ROOT }
+							age = 16
+						}
+					}
+				}
+				character_event = { id = ancrel.054 days = 5 }
+			}
+		}
+		custom_tooltip = celebrations_begin
+	}
+}
+
+# Celebrations Begin! (Vassal)
+character_event = {
+	id = ancrel.025
+	desc = EVTDESCancrel.025
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.025
+	}
+}
+
+# Sacrifice Prisoner 1 (Prisoner)
+character_event = {
+	id = ancrel.026
+	desc = EVTDESCancrel.026
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.026
+		hidden_tooltip = {
+			if = {
+				limit = { # Generic
+					NOT = {
+						sibling = FROM
+						father = { character = FROM }
+						mother = { character = FROM }
+						any_spouse = { character = FROM }
+						any_child = { character = FROM }
+						any_dynasty_member = { character = FROM}
+						religion_group = christian
+						religion_group = muslim
+					}
+				}
+				random_list = {
+					25 = { FROM = { character_event = { id = ancrel.030 } } }
+					25 = { FROM = { character_event = { id = ancrel.200 } } }
+					25 = { FROM = { character_event = { id = ancrel.201 } } }
+					25 = { FROM = { character_event = { id = ancrel.202 } } }
+				}
+			}
+			if = {
+				limit = { # Christian
+					religion_group = christian
+					NOT = {
+						sibling = FROM
+						father = { character = FROM }
+						mother = { character = FROM }
+						any_spouse = { character = FROM }
+						any_child = { character = FROM }
+						any_dynasty_member = { character = FROM}
+					}
+				}
+				FROM = { character_event = { id = ancrel.031 } }
+			}
+			if = {
+				limit = { # Muslim
+					religion_group = muslim
+					NOT = {
+						sibling = FROM
+						father = { character = FROM }
+						mother = { character = FROM }
+						any_spouse = { character = FROM }
+						any_child = { character = FROM }
+						any_dynasty_member = { character = FROM}
+					}
+				}
+				FROM = { character_event = { id = ancrel.032 } }
+			}
+			if = {
+				limit = { # Brother
+					sibling = FROM
+					is_female = no
+				}
+				FROM = { character_event = { id = ancrel.033 } }
+			}
+			if = {
+				limit = { # Sister
+					sibling = FROM
+					is_female = yes
+				}
+				FROM = { character_event = { id = ancrel.034 } }
+			}
+			if = {
+				limit = { # Father
+					any_child = { character = FROM }
+					is_female = no
+				}
+				FROM = { character_event = { id = ancrel.035 } }
+			}
+			if = {
+				limit = { # Mother
+					any_child = { character = FROM }
+					is_female = yes
+				}
+				FROM = { character_event = { id = ancrel.036 } }
+			}
+			if = {
+				limit = { # Son
+					OR = {
+						father = { character = FROM }
+						mother = { character = FROM }
+					}
+					is_female = no
+				}
+				FROM = { character_event = { id = ancrel.037 } }
+			}
+			if = {
+				limit = { # Daughter
+					OR = {
+						father = { character = FROM }
+						mother = { character = FROM }
+					}
+					is_female = yes
+				}
+				FROM = { character_event = { id = ancrel.038 } }
+			}
+			if = {
+				limit = { # Kin
+					any_dynasty_member = { character = FROM}
+					NOT = {
+						sibling = FROM
+						father = { character = FROM }
+						mother = { character = FROM }
+						any_spouse = { character = FROM }
+						any_child = { character = FROM }
+					}
+				}
+				FROM = { character_event = { id = ancrel.039 } }
+			}
+			if = {
+				limit = { # Spouse
+					any_spouse = { character = FROM }
+					NOT = {
+						sibling = FROM
+						father = { character = FROM }
+						mother = { character = FROM }
+						any_child = { character = FROM }
+						any_dynasty_member = { character = FROM}
+					}
+				}
+				FROM = { character_event = { id = ancrel.040 } }
+			}
+			if = {
+				limit = { # Aztec
+					OR = {
+						religion = aztec
+						religion = aztec_reformed
+					}
+					culture = nahuatl
+					NOT = {
+						sibling = FROM
+						father = { character = FROM }
+						mother = { character = FROM }
+						any_spouse = { character = FROM }
+						any_child = { character = FROM }
+						any_dynasty_member = { character = FROM}
+					}
+				}
+				FROM = { character_event = { id = ancrel.041 } }
+			}
+			FROM = { character_event = { id = ancrel.065 } }
+		}
+	}
+}
+
+# Sacrifice Prisoner 2 (Prisoner)
+character_event = {
+	id = ancrel.026
+	desc = EVTDESCancrel.026
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.026
+		hidden_tooltip = {
+			if = {
+				limit = { # Generic
+					NOT = {
+						sibling = FROM
+						father = { character = FROM }
+						mother = { character = FROM }
+						any_spouse = { character = FROM }
+						any_child = { character = FROM }
+						any_dynasty_member = { character = FROM}
+						religion_group = christian
+						religion_group = muslim
+					}
+				}
+				random_list = {
+					25 = { FROM = { character_event = { id = ancrel.030 } } }
+					25 = { FROM = { character_event = { id = ancrel.200 } } }
+					25 = { FROM = { character_event = { id = ancrel.201 } } }
+					25 = { FROM = { character_event = { id = ancrel.202 } } }
+				}
+			}
+			if = {
+				limit = { # Christian
+					religion_group = christian
+					NOT = {
+						sibling = FROM
+						father = { character = FROM }
+						mother = { character = FROM }
+						any_spouse = { character = FROM }
+						any_child = { character = FROM }
+						any_dynasty_member = { character = FROM}
+					}
+				}
+				FROM = { character_event = { id = ancrel.031 } }
+			}
+			if = {
+				limit = { # Muslim
+					religion_group = muslim
+					NOT = {
+						sibling = FROM
+						father = { character = FROM }
+						mother = { character = FROM }
+						any_spouse = { character = FROM }
+						any_child = { character = FROM }
+						any_dynasty_member = { character = FROM}
+					}
+				}
+				FROM = { character_event = { id = ancrel.032 } }
+			}
+			if = {
+				limit = { # Brother
+					sibling = FROM
+					is_female = no
+				}
+				FROM = { character_event = { id = ancrel.033 } }
+			}
+			if = {
+				limit = { # Sister
+					sibling = FROM
+					is_female = yes
+				}
+				FROM = { character_event = { id = ancrel.034 } }
+			}
+			if = {
+				limit = { # Father
+					any_child = { character = FROM }
+					is_female = no
+				}
+				FROM = { character_event = { id = ancrel.035 } }
+			}
+			if = {
+				limit = { # Mother
+					any_child = { character = FROM }
+					is_female = yes
+				}
+				FROM = { character_event = { id = ancrel.036 } }
+			}
+			if = {
+				limit = { # Son
+					OR = {
+						father = { character = FROM }
+						mother = { character = FROM }
+					}
+					is_female = no
+				}
+				FROM = { character_event = { id = ancrel.037 } }
+			}
+			if = {
+				limit = { # Daughter
+					OR = {
+						father = { character = FROM }
+						mother = { character = FROM }
+					}
+					is_female = yes
+				}
+				FROM = { character_event = { id = ancrel.038 } }
+			}
+			if = {
+				limit = { # Kin
+					any_dynasty_member = { character = FROM}
+					NOT = {
+						sibling = FROM
+						father = { character = FROM }
+						mother = { character = FROM }
+						any_spouse = { character = FROM }
+						any_child = { character = FROM }
+					}
+				}
+				FROM = { character_event = { id = ancrel.039 } }
+			}
+			if = {
+				limit = { # Spouse
+					any_spouse = { character = FROM }
+					NOT = {
+						sibling = FROM
+						father = { character = FROM }
+						mother = { character = FROM }
+						any_child = { character = FROM }
+						any_dynasty_member = { character = FROM}
+					}
+				}
+				FROM = { character_event = { id = ancrel.040 } }
+			}
+			if = {
+				limit = { # Aztec
+					OR = {
+						religion = aztec
+						religion = aztec_reformed
+					}
+					culture = nahuatl
+					NOT = {
+						sibling = FROM
+						father = { character = FROM }
+						mother = { character = FROM }
+						any_spouse = { character = FROM }
+						any_child = { character = FROM }
+						any_dynasty_member = { character = FROM}
+					}
+				}
+				FROM = { character_event = { id = ancrel.041 } }
+			}
+			FROM = { character_event = { id = ancrel.066 } }
+		}
+	}
+}
+
+# Sacrifice Prisoner 3 (Prisoner)
+character_event = {
+	id = ancrel.028
+	desc = EVTDESCancrel.026
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.026
+		hidden_tooltip = {
+			if = {
+				limit = { # Generic
+					NOT = {
+						sibling = FROM
+						father = { character = FROM }
+						mother = { character = FROM }
+						any_spouse = { character = FROM }
+						any_child = { character = FROM }
+						any_dynasty_member = { character = FROM}
+						religion_group = christian
+						religion_group = muslim
+					}
+				}
+				random_list = {
+					25 = { FROM = { character_event = { id = ancrel.030 } } }
+					25 = { FROM = { character_event = { id = ancrel.200 } } }
+					25 = { FROM = { character_event = { id = ancrel.201 } } }
+					25 = { FROM = { character_event = { id = ancrel.202 } } }
+				}
+			}
+			if = {
+				limit = { # Christian
+					religion_group = christian
+					NOT = {
+						sibling = FROM
+						father = { character = FROM }
+						mother = { character = FROM }
+						any_spouse = { character = FROM }
+						any_child = { character = FROM }
+						any_dynasty_member = { character = FROM}
+					}
+				}
+				FROM = { character_event = { id = ancrel.031 } }
+			}
+			if = {
+				limit = { # Muslim
+					religion_group = muslim
+					NOT = {
+						sibling = FROM
+						father = { character = FROM }
+						mother = { character = FROM }
+						any_spouse = { character = FROM }
+						any_child = { character = FROM }
+						any_dynasty_member = { character = FROM}
+					}
+				}
+				FROM = { character_event = { id = ancrel.032 } }
+			}
+			if = {
+				limit = { # Brother
+					sibling = FROM
+					is_female = no
+				}
+				FROM = { character_event = { id = ancrel.033 } }
+			}
+			if = {
+				limit = { # Sister
+					sibling = FROM
+					is_female = yes
+				}
+				FROM = { character_event = { id = ancrel.034 } }
+			}
+			if = {
+				limit = { # Father
+					any_child = { character = FROM }
+					is_female = no
+				}
+				FROM = { character_event = { id = ancrel.035 } }
+			}
+			if = {
+				limit = { # Mother
+					any_child = { character = FROM }
+					is_female = yes
+				}
+				FROM = { character_event = { id = ancrel.036 } }
+			}
+			if = {
+				limit = { # Son
+					OR = {
+						father = { character = FROM }
+						mother = { character = FROM }
+					}
+					is_female = no
+				}
+				FROM = { character_event = { id = ancrel.037 } }
+			}
+			if = {
+				limit = { # Daughter
+					OR = {
+						father = { character = FROM }
+						mother = { character = FROM }
+					}
+					is_female = yes
+				}
+				FROM = { character_event = { id = ancrel.038 } }
+			}
+			if = {
+				limit = { # Kin
+					any_dynasty_member = { character = FROM}
+					NOT = {
+						sibling = FROM
+						father = { character = FROM }
+						mother = { character = FROM }
+						any_spouse = { character = FROM }
+						any_child = { character = FROM }
+					}
+				}
+				FROM = { character_event = { id = ancrel.039 } }
+			}
+			if = {
+				limit = { # Spouse
+					any_spouse = { character = FROM }
+					NOT = {
+						sibling = FROM
+						father = { character = FROM }
+						mother = { character = FROM }
+						any_child = { character = FROM }
+						any_dynasty_member = { character = FROM}
+					}
+				}
+				FROM = { character_event = { id = ancrel.040 } }
+			}
+			if = {
+				limit = { # Aztec
+					OR = {
+						religion = aztec
+						religion = aztec_reformed
+					}
+					culture = nahuatl
+					NOT = {
+						sibling = FROM
+						father = { character = FROM }
+						mother = { character = FROM }
+						any_spouse = { character = FROM }
+						any_child = { character = FROM }
+						any_dynasty_member = { character = FROM}
+					}
+				}
+				FROM = { character_event = { id = ancrel.041 } }
+			}
+			FROM = { character_event = { id = ancrel.067 } }
+		}
+	}
+}
+
+# Sacrifice Prisoner 4 (Prisoner)
+character_event = {
+	id = ancrel.029
+	desc = EVTDESCancrel.026
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.026
+		hidden_tooltip = {
+			if = {
+				limit = { # Generic
+					NOT = {
+						sibling = FROM
+						father = { character = FROM }
+						mother = { character = FROM }
+						any_spouse = { character = FROM }
+						any_child = { character = FROM }
+						any_dynasty_member = { character = FROM}
+						religion_group = christian
+						religion_group = muslim
+					}
+				}
+				random_list = {
+					25 = { FROM = { character_event = { id = ancrel.030 } } }
+					25 = { FROM = { character_event = { id = ancrel.200 } } }
+					25 = { FROM = { character_event = { id = ancrel.201 } } }
+					25 = { FROM = { character_event = { id = ancrel.202 } } }
+				}
+			}
+			if = {
+				limit = { # Christian
+					religion_group = christian
+					NOT = {
+						sibling = FROM
+						father = { character = FROM }
+						mother = { character = FROM }
+						any_spouse = { character = FROM }
+						any_child = { character = FROM }
+						any_dynasty_member = { character = FROM}
+					}
+				}
+				FROM = { character_event = { id = ancrel.031 } }
+			}
+			if = {
+				limit = { # Muslim
+					religion_group = muslim
+					NOT = {
+						sibling = FROM
+						father = { character = FROM }
+						mother = { character = FROM }
+						any_spouse = { character = FROM }
+						any_child = { character = FROM }
+						any_dynasty_member = { character = FROM}
+					}
+				}
+				FROM = { character_event = { id = ancrel.032 } }
+			}
+			if = {
+				limit = { # Brother
+					sibling = FROM
+					is_female = no
+				}
+				FROM = { character_event = { id = ancrel.033 } }
+			}
+			if = {
+				limit = { # Sister
+					sibling = FROM
+					is_female = yes
+				}
+				FROM = { character_event = { id = ancrel.034 } }
+			}
+			if = {
+				limit = { # Father
+					any_child = { character = FROM }
+					is_female = no
+				}
+				FROM = { character_event = { id = ancrel.035 } }
+			}
+			if = {
+				limit = { # Mother
+					any_child = { character = FROM }
+					is_female = yes
+				}
+				FROM = { character_event = { id = ancrel.036 } }
+			}
+			if = {
+				limit = { # Son
+					OR = {
+						father = { character = FROM }
+						mother = { character = FROM }
+					}
+					is_female = no
+				}
+				FROM = { character_event = { id = ancrel.037 } }
+			}
+			if = {
+				limit = { # Daughter
+					OR = {
+						father = { character = FROM }
+						mother = { character = FROM }
+					}
+					is_female = yes
+				}
+				FROM = { character_event = { id = ancrel.038 } }
+			}
+			if = {
+				limit = { # Kin
+					any_dynasty_member = { character = FROM}
+					NOT = {
+						sibling = FROM
+						father = { character = FROM }
+						mother = { character = FROM }
+						any_spouse = { character = FROM }
+						any_child = { character = FROM }
+					}
+				}
+				FROM = { character_event = { id = ancrel.039 } }
+			}
+			if = {
+				limit = { # Spouse
+					any_spouse = { character = FROM }
+					NOT = {
+						sibling = FROM
+						father = { character = FROM }
+						mother = { character = FROM }
+						any_child = { character = FROM }
+						any_dynasty_member = { character = FROM}
+					}
+				}
+				FROM = { character_event = { id = ancrel.040 } }
+			}
+			if = {
+				limit = { # Aztec
+					OR = {
+						religion = aztec
+						religion = aztec_reformed
+					}
+					culture = nahuatl
+					NOT = {
+						sibling = FROM
+						father = { character = FROM }
+						mother = { character = FROM }
+						any_spouse = { character = FROM }
+						any_child = { character = FROM }
+						any_dynasty_member = { character = FROM}
+					}
+				}
+				FROM = { character_event = { id = ancrel.041 } }
+			}
+			FROM = { character_event = { id = ancrel.060 days = 5 } }
+		}
+	}
+}
+
+# Sacrifice Generic 1 (Liege)
+character_event = {
+	id = ancrel.030
+	desc = EVTDESCancrel.030
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.030
+		FROM = {
+			death = {
+				death_reason = death_sacrificed
+				killer = ROOT
+			}
+		}
+		hidden_tooltip = {
+			any_vassal = {
+				limit = { has_character_flag = attending_celtic_feast }
+				character_event = { id = ancrel.044 }
+			}
+		}
+		prestige = 25
+		piety = 15
+	}
+	option = {
+		name = EVTOPTBancrel.030
+		FROM = { character_event = { id = ancrel.057 tooltip = EVTTOOLTIPancrel.057 } }
+		piety = -25
+	}
+}
+
+# Sacrifice Christian (Liege)
+character_event = {
+	id = ancrel.031
+	desc = EVTDESCancrel.031
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.031
+		FROM = {
+			death = {
+				death_reason = death_sacrificed
+				killer = ROOT
+			}
+		}
+		hidden_tooltip = {
+			any_vassal = {
+				limit = { has_character_flag = attending_celtic_feast }
+				character_event = { id = ancrel.043 }
+			}
+		}
+		prestige = 50
+		piety = 25
+	}
+	option = {
+		name = EVTOPTBancrel.031
+		FROM = { character_event = { id = ancrel.057 tooltip = EVTTOOLTIPancrel.057 } }
+		piety = -50
+	}
+}
+
+# Sacrifice Muslim (Liege)
+character_event = {
+	id = ancrel.032
+	desc = EVTDESCancrel.032
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.032
+		FROM = {
+			death = {
+				death_reason = death_sacrificed
+				killer = ROOT
+			}
+		}
+		hidden_tooltip = {
+			any_vassal = {
+				limit = { has_character_flag = attending_celtic_feast }
+				character_event = { id = ancrel.044 }
+			}
+		}
+		prestige = 50
+		piety = 25
+	}
+	option = {
+		name = EVTOPTBancrel.032
+		FROM = { character_event = { id = ancrel.057 tooltip = EVTTOOLTIPancrel.057 } }
+		piety = -50
+	}
+}
+
+# Sacrifice Brother (Liege)
+character_event = {
+	id = ancrel.033
+	desc = EVTDESCancrel.033
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.033
+		FROM = {
+			death = {
+				death_reason = death_sacrificed
+				killer = ROOT
+			}
+		}
+		add_trait = kinslayer
+		hidden_tooltip = {
+			character_event = { id = 38287 } #Notify Kinslayer
+			any_vassal = {
+				limit = { has_character_flag = attending_celtic_feast }
+				character_event = { id = ancrel.045 }
+			}
+		}
+		prestige = 25
+		piety = 15
+	}
+	option = {
+		name = EVTOPTBancrel.033
+		FROM = { character_event = { id = ancrel.057 tooltip = EVTTOOLTIPancrel.057 } }
+		piety = -25
+	}
+}
+
+# Sacrifice Sister (Liege)
+character_event = {
+	id = ancrel.034
+	desc = EVTDESCancrel.034
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.034
+		FROM = {
+			death = {
+				death_reason = death_sacrificed
+				killer = ROOT
+			}
+		}
+		add_trait = kinslayer
+		hidden_tooltip = {
+			character_event = { id = 38287 } #Notify Kinslayer
+			any_vassal = {
+				limit = { has_character_flag = attending_celtic_feast }
+				character_event = { id = ancrel.046 }
+			}
+		}
+		prestige = 25
+		piety = 15
+	}
+	option = {
+		name = EVTOPTBancrel.034
+		FROM = { character_event = { id = ancrel.057 tooltip = EVTTOOLTIPancrel.057 } }
+		piety = -25
+	}
+}
+
+# Sacrifice Father (Liege)
+character_event = {
+	id = ancrel.035
+	desc = EVTDESCancrel.035
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.035
+		FROM = {
+			death = {
+				death_reason = death_sacrificed
+				killer = ROOT
+			}
+		}
+		add_trait = kinslayer
+		hidden_tooltip = {
+			character_event = { id = 38287 } #Notify Kinslayer
+			any_vassal = {
+				limit = { has_character_flag = attending_celtic_feast }
+				character_event = { id = ancrel.047 }
+			}
+		}
+		prestige = 25
+		piety = 15
+	}
+	option = {
+		name = EVTOPTBancrel.035
+		FROM = { character_event = { id = ancrel.057 tooltip = EVTTOOLTIPancrel.057 } }
+		piety = -25
+	}
+}
+
+# Sacrifice Mother (Liege)
+character_event = {
+	id = ancrel.036
+	desc = EVTDESCancrel.036
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.036
+		FROM = {
+			death = {
+				death_reason = death_sacrificed
+				killer = ROOT
+			}
+		}
+		add_trait = kinslayer
+		hidden_tooltip = {
+			character_event = { id = 38287 } #Notify Kinslayer
+			any_vassal = {
+				limit = { has_character_flag = attending_celtic_feast }
+				character_event = { id = ancrel.048 }
+			}
+		}
+		prestige = 25
+		piety = 15
+	}
+	option = {
+		name = EVTOPTBancrel.036
+		FROM = { character_event = { id = ancrel.057 tooltip = EVTTOOLTIPancrel.057 } }
+		piety = -25
+	}
+}
+
+# Sacrifice Son (Liege)
+character_event = {
+	id = ancrel.037
+	desc = EVTDESCancrel.037
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.037
+		FROM = {
+			death = {
+				death_reason = death_sacrificed
+				killer = ROOT
+			}
+		}
+		add_trait = kinslayer
+		hidden_tooltip = {
+			character_event = { id = 38287 } #Notify Kinslayer
+			any_vassal = {
+				limit = { has_character_flag = attending_celtic_feast }
+				character_event = { id = ancrel.049 }
+			}
+		}
+		prestige = 25
+		piety = 15
+	}
+	option = {
+		name = EVTOPTBancrel.037
+		FROM = { character_event = { id = ancrel.057 tooltip = EVTTOOLTIPancrel.057 } }
+		piety = -25
+	}
+}
+
+# Sacrifice Daughter (Liege)
+character_event = {
+	id = ancrel.038
+	desc = EVTDESCancrel.038
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.038
+		FROM = {
+			death = {
+				death_reason = death_sacrificed
+				killer = ROOT
+			}
+		}
+		add_trait = kinslayer
+		hidden_tooltip = {
+			character_event = { id = 38287 } #Notify Kinslayer
+			any_vassal = {
+				limit = { has_character_flag = attending_celtic_feast }
+				character_event = { id = ancrel.050 }
+			}
+		}
+		prestige = 25
+		piety = 15
+	}
+	option = {
+		name = EVTOPTBancrel.038
+		FROM = { character_event = { id = ancrel.057 tooltip = EVTTOOLTIPancrel.057 } }
+		piety = -25
+	}
+}
+
+# Sacrifice Other Kinsman (Liege)
+character_event = {
+	id = ancrel.039
+	desc = EVTDESCancrel.039
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.039
+		FROM = {
+			death = {
+				death_reason = death_sacrificed
+				killer = ROOT
+			}
+		}
+		hidden_tooltip = {
+			any_vassal = {
+				limit = { has_character_flag = attending_celtic_feast }
+				character_event = { id = ancrel.051 }
+			}
+		}
+		prestige = 25
+		piety = 15
+	}
+	option = {
+		name = EVTOPTBancrel.039
+		FROM = { character_event = { id = ancrel.057 tooltip = EVTTOOLTIPancrel.057 } }
+		piety = -25
+	}
+}
+
+# Sacrifice Spouse/Consort (Liege)
+character_event = {
+	id = ancrel.040
+	desc = EVTDESCancrel.040
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.040
+		FROM = {
+			death = {
+				death_reason = death_sacrificed
+				killer = ROOT
+			}
+		}
+		hidden_tooltip = {
+			any_vassal = {
+				limit = { has_character_flag = attending_celtic_feast }
+				character_event = { id = ancrel.052 }
+			}
+		}
+		prestige = 25
+		piety = 15
+	}
+	option = {
+		name = EVTOPTBancrel.040
+		FROM = { character_event = { id = ancrel.057 tooltip = EVTTOOLTIPancrel.057 } }
+		piety = -25
+	}
+}
+
+# Sacrifice Aztec (Liege)
+character_event = {
+	id = ancrel.041
+	desc = EVTDESCancrel.041
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.041
+		FROM = {
+			death = {
+				death_reason = death_sacrificed
+				killer = ROOT
+			}
+		}
+		hidden_tooltip = {
+			any_vassal = {
+				limit = { has_character_flag = attending_celtic_feast }
+				character_event = { id = ancrel.053 }
+			}
+		}
+		prestige = 50
+		piety = 25
+	}
+	option = {
+		name = EVTOPTBancrel.041
+		FROM = { character_event = { id = ancrel.057 tooltip = EVTTOOLTIPancrel.057 } }
+		piety = -50
+	}
+}
+
+# Sacrifice Generic (Vassal)
+character_event = {
+	id = ancrel.042
+	desc = EVTDESCancrel.042
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.042
+		tooltip = {
+			FROMFROM = {
+				death = {
+					death_reason = death_sacrificed
+					killer = FROM
+				}
+			}
+		}
+	}
+}
+
+# Sacrifice Christian (Vassal)
+character_event = {
+	id = ancrel.043
+	desc = EVTDESCancrel.043
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.043
+		tooltip = {
+			FROMFROM = {
+				death = {
+					death_reason = death_sacrificed
+					killer = FROM
+				}
+			}
+		}
+	}
+}
+
+# Sacrifice Muslim (Vassal)
+character_event = {
+	id = ancrel.044
+	desc = EVTDESCancrel.044
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.042
+		tooltip = {
+			FROMFROM = {
+				death = {
+					death_reason = death_sacrificed
+					killer = FROM
+				}
+			}
+		}
+	}
+}
+
+# Sacrifice Brother (Vassal)
+character_event = {
+	id = ancrel.045
+	desc = EVTDESCancrel.045
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.042
+		tooltip = {
+			FROMFROM = {
+				death = {
+					death_reason = death_sacrificed
+					killer = FROM
+				}
+			}
+		}
+	}
+}
+
+# Sacrifice Sister (Vassal)
+character_event = {
+	id = ancrel.046
+	desc = EVTDESCancrel.046
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.042
+		tooltip = {
+			FROMFROM = {
+				death = {
+					death_reason = death_sacrificed
+					killer = FROM
+				}
+			}
+		}
+	}
+}
+
+# Sacrifice Father (Vassal)
+character_event = {
+	id = ancrel.047
+	desc = EVTDESCancrel.047
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.042
+		tooltip = {
+			FROMFROM = {
+				death = {
+					death_reason = death_sacrificed
+					killer = FROM
+				}
+			}
+		}
+	}
+}
+
+# Sacrifice Mother (Vassal)
+character_event = {
+	id = ancrel.048
+	desc = EVTDESCancrel.0408
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.042
+		tooltip = {
+			FROMFROM = {
+				death = {
+					death_reason = death_sacrificed
+					killer = FROM
+				}
+			}
+		}
+	}
+}
+
+# Sacrifice Son (Vassal)
+character_event = {
+	id = ancrel.049
+	desc = EVTDESCancrel.049
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.042
+		tooltip = {
+			FROMFROM = {
+				death = {
+					death_reason = death_sacrificed
+					killer = FROM
+				}
+			}
+		}
+	}
+}
+
+# Sacrifice Daughter (Vassal)
+character_event = {
+	id = ancrel.050
+	desc = EVTDESCancrel.050
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.042
+		tooltip = {
+			FROMFROM = {
+				death = {
+					death_reason = death_sacrificed
+					killer = FROM
+				}
+			}
+		}
+	}
+}
+
+# Sacrifice Other Kinsman (Vassal)
+character_event = {
+	id = ancrel.051
+	desc = EVTDESCancrel.051
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.042
+		tooltip = {
+			FROMFROM = {
+				death = {
+					death_reason = death_sacrificed
+					killer = FROM
+				}
+			}
+		}
+	}
+}
+
+# Sacrifice Spouse/Consort (Vassal)
+character_event = {
+	id = ancrel.052
+	desc = EVTDESCancrel.052
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.042
+		tooltip = {
+			FROMFROM = {
+				death = {
+					death_reason = death_sacrificed
+					killer = FROM
+				}
+			}
+		}
+	}
+}
+
+# Sacrifice Aztec (Vassal)
+character_event = {
+	id = ancrel.053
+	desc = EVTDESCancrel.053
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.042
+		tooltip = {
+			FROMFROM = {
+				death = {
+					death_reason = death_sacrificed
+					killer = FROM
+				}
+			}
+		}
+	}
+}
+
+# No Prisoners, Slaves sacrificed instead (Liege)
+character_event = {
+	id = ancrel.054
+	desc = EVTDESCancrel.054
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.054
+		hidden_tooltip = {
+			any_vassal = {
+				limit = { has_character_flag = attending_celtic_feast }
+				character_event = { id = ancrel.055 }
+			}
+			character_event = { id = ancrel.060 days = 5 }
+		}
+		wealth = -50
+		prestige = 50
+		piety = 50
+	}
+}
+
+# No Prisoners, Slaves sacrificed instead (Vassal)
+character_event = {
+	id = ancrel.055
+	desc = EVTDESCancrel.055
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.055
+	}
+}
+
+# Liege changed his mind about sacrifice (prisoner)
+character_event = {
+	id = ancrel.057
+	desc = EVTDESCancrel.057
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.057
+	}
+}
+
+# Prisoner 2 (Liege invisible)
+character_event = {
+	id = ancrel.065
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = { 
+				any_courtier = {
+					prisoner = yes
+					host = { character = ROOT }
+					age = 16
+					NOT = { character = FROM }
+				}
+			}
+			random_courtier = {
+				limit = { 
+					prisoner = yes 
+					host = { character = ROOT }
+					age = 16
+					NOT = { character = FROM }
+				}
+				character_event = { id = ancrel.027 days = 5 }
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					any_courtier = {
+						prisoner = yes
+						host = { character = ROOT }
+						age = 16
+						NOT = { character = FROM }
+					}
+				}
+			}
+			character_event = { id = ancrel.060 days = 5 }
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+# Prisoner 3 (Liege invisible)
+character_event = {
+	id = ancrel.066
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = { 
+				any_courtier = {
+					prisoner = yes
+					host = { character = ROOT }
+					age = 16
+					NOT = { character = FROM }
+				}
+			}
+			random_courtier = {
+				limit = { 
+					prisoner = yes 
+					host = { character = ROOT }
+					age = 16
+					NOT = { character = FROM }
+				}
+				character_event = { id = ancrel.028 days = 5 }
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					any_courtier = {
+						prisoner = yes
+						host = { character = ROOT }
+						age = 16
+						NOT = { character = FROM }
+					}
+				}
+			}
+			character_event = { id = ancrel.060 days = 5 }
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+# Prisoner 4 (Liege invisible)
+character_event = {
+	id = ancrel.067
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = { 
+				any_courtier = {
+					prisoner = yes
+					host = { character = ROOT }
+					age = 16
+					NOT = { character = FROM }
+				}
+			}
+			random_courtier = {
+				limit = { 
+					prisoner = yes 
+					host = { character = ROOT }
+					age = 16
+					NOT = { character = FROM }
+				}
+				character_event = { id = ancrel.029 days = 5 }
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					any_courtier = {
+						prisoner = yes
+						host = { character = ROOT }
+						age = 16
+						NOT = { character = FROM }
+					}
+				}
+			}
+			character_event = { id = ancrel.060 days = 5 }
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+# Feast Begins (Liege)
+character_event = {
+	id = ancrel.060
+	desc = EVTDESCancrel.060
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.060
+		hidden_tooltip = {
+			any_vassal = {
+				limit = { has_character_flag = attending_celtic_feast }
+				character_event = { id = ancrel.061 }
+			}
+			character_event = { id = ancrel.062 days = 25 }
+		}
+		set_character_flag = celtic_feast
+		any_vassal = {
+			limit = { has_character_flag = attending_celtic_feast }
+			opinion = {
+				modifier = opinion_held_celtic_feast
+				who = ROOT
+			}
+		}
+		custom_tooltip = feast_begins
+	}
+}
+
+# Feast Begins (Vassal)
+character_event = {
+	id = ancrel.061
+	desc = EVTDESCancrel.060
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.060
+		set_character_flag = celtic_feast_vassal
+		custom_tooltip = feast_begins
+	}
+}
+
+# Feast Ends (Liege)
+character_event = {
+	id = ancrel.062
+	desc = EVTDESCancrel.062
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.062
+		hidden_tooltip = {
+			any_vassal = {
+				limit = { has_character_flag = attending_celtic_feast }
+				character_event = { id = ancrel.063 }
+			}
+		}
+		add_character_modifier = {
+			name = held_celtic_feast_timer
+			duration = 3285
+			hidden = yes
+		}
+		add_character_modifier = {
+			name = held_celtic_feast_modifier
+			duration = 365
+		}
+		clr_character_flag = holding_celtic_feast
+		clr_character_flag = celtic_feast
+		clr_character_flag = feast_drunkard
+		clr_character_flag = feast_gluttonous
+		clr_character_flag = feast_lunatic
+		clr_character_flag = feast_lustful
+		clr_character_flag = feast_homosexual
+	}
+}
+
+# Feast Ends (Vassal)
+character_event = {
+	id = ancrel.063
+	desc = EVTDESCancrel.063
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.062
+		clr_character_flag = attending_celtic_feast
+		clr_character_flag = celtic_feast_vassal
+		clr_character_flag = feast_drunkard
+		clr_character_flag = feast_gluttonous
+		clr_character_flag = feast_lunatic
+		clr_character_flag = feast_lustful
+		clr_character_flag = feast_friendship
+		clr_character_flag = feast_homosexual
+	}
+}
+
+### Feast Events
+
+# Drunkard (Guest)
+character_event = {
+	id = ancrel.070
+	desc = EVTDESCancrel.070
+	picture = GFX_evt_drunk
+	border = GFX_event_normal_frame_religion
+	
+	trigger = {
+		has_dlc = "The Old Gods"
+		has_character_flag = celtic_feast_vassal
+		NOT = { has_character_flag = feast_drunkard }
+		liege = { 
+			has_character_flag = celtic_feast
+			NOT = { has_character_flag = feast_drunkard }
+		}
+		trait = drunkard
+	}
+	
+	mean_time_to_happen = {
+		days = 60
+		
+		modifier = {
+			factor = 1.1
+			liege = { num_of_vassals = 10 }
+		}
+		modifier = {
+			factor = 1.2
+			liege = { num_of_vassals = 20 }
+		}
+		modifier = {
+			factor = 1.3
+			liege = { num_of_vassals = 30 }
+		}
+		modifier = {
+			factor = 1.4
+			liege = { num_of_vassals = 40 }
+		}
+		modifier = {
+			factor = 1.5
+			liege = { num_of_vassals = 50 }
+		}
+		modifier = {
+			factor = 3
+			liege = { num_of_vassals = 100 }
+		}
+	}
+	
+	option = {
+		name = EVTOPTAancrel.070
+		tooltip_info = drunkard
+		set_character_flag = feast_drunkard
+		hidden_tooltip = {
+			liege = {
+				set_character_flag = feast_drunkard
+				character_event = { id = ancrel.071 }
+				any_vassal = {
+					limit = {
+						has_character_flag = celtic_feast_vassal
+						NOT = { character = ROOT }
+					}
+					character_event = { id = ancrel.071 }
+				}
+			}
+		}
+		tooltip = {
+			liege = {
+				if = {
+					limit = { NOT = { trait = drunkard } }
+					opinion = {
+						modifier = opinion_feast_scandal
+						who = ROOT
+					}
+				}
+				if = {
+					limit = { trait = drunkard }
+					opinion = {
+						modifier = opinion_drinking_buddy
+						who = ROOT
+					}
+				}
+				any_vassal = {
+					limit = {
+						has_character_flag = celtic_feast_vassal
+						NOT = { character = ROOT }
+						NOT = { trait = drunkard }
+					}
+					opinion = {
+						modifier = opinion_feast_scandal
+						who = ROOT
+					}
+				}
+				any_vassal = {
+					limit = {
+						has_character_flag = celtic_feast_vassal
+						NOT = { character = ROOT }
+						trait = drunkard
+					}
+					opinion = {
+						modifier = opinion_drinking_buddy
+						who = ROOT
+					}
+				}
+			}
+		}
+	}
+}
+
+# Drunkard (Host and Other Guests)
+character_event = {
+	id = ancrel.071
+	desc = EVTDESCancrel.071
+	picture = GFX_evt_drunk
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.071
+		trigger = { 
+			NOT = { trait = drunkard } 
+		}
+		opinion = {
+			modifier = opinion_feast_scandal
+			who = FROM
+		}
+	}
+	option = {
+		name = EVTOPTBancrel.071
+		tooltip_info = drunkard
+		trigger = { 
+			trait = drunkard
+		}
+		opinion = {
+			modifier = opinion_drinking_buddy
+			who = FROM
+		}
+	}
+}
+
+# Gluttonous (Victim Hidden)
+character_event = {
+	id = ancrel.072
+	hide_window = yes
+	
+	trigger = {
+		has_dlc = "The Old Gods"
+		has_character_flag = celtic_feast_vassal
+		liege = {
+			has_character_flag = celtic_feast
+			NOT = { has_character_flag = feast_gluttonous }
+			any_vassal = {
+				has_character_flag = celtic_feast_vassal
+				NOT = { has_character_flag = feast_gluttonous }
+				trait = gluttonous
+				NOT = { character = ROOT }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 60
+		
+		modifier = {
+			factor = 1.1
+			liege = { num_of_vassals = 10 }
+		}
+		modifier = {
+			factor = 1.2
+			liege = { num_of_vassals = 20 }
+		}
+		modifier = {
+			factor = 1.3
+			liege = { num_of_vassals = 30 }
+		}
+		modifier = {
+			factor = 1.4
+			liege = { num_of_vassals = 40 }
+		}
+		modifier = {
+			factor = 1.5
+			liege = { num_of_vassals = 50 }
+		}
+		modifier = {
+			factor = 3
+			liege = { num_of_vassals = 100 }
+		}
+	}
+	
+	immediate = {
+		liege = {
+			set_character_flag = feast_gluttonous
+			random_vassal = {
+				limit = {
+					has_character_flag = celtic_feast_vassal
+					trait = gluttonous
+					NOT = { character = ROOT }
+				}
+				character_event = { id = ancrel.073 }
+				set_character_flag = feast_gluttonous
+			}
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+# Gluttonous (Guest)
+character_event = {
+	id = ancrel.073
+	desc = EVTDESCancrel.073
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.073
+		tooltip_info = gluttonous
+		FROM = {
+			character_event = { id = ancrel.074 tooltip = EVTTOOLTIPancrel.074 }
+		}	
+		hidden_tooltip = {
+			liege = {
+				character_event = { id = ancrel.075 }
+				any_vassal = {
+					limit = {
+						has_character_flag = celtic_feast_vassal
+						NOT = { 
+							character = ROOT 
+							character = FROM
+						}
+					}
+					character_event = { id = ancrel.075 }
+				}
+			}
+		}
+		tooltip = {
+			FROM = {
+				opinion = {
+					modifier = opinion_vomit
+					who = ROOT
+				}
+			}
+			liege = {
+				opinion = {
+					modifier = opinion_feast_scandal
+					who = ROOT
+				}
+				any_vassal = {
+					limit = {
+						has_character_flag = celtic_feast_vassal
+						NOT = { 
+							character = ROOT 
+							character = FROM
+						}
+					}
+					opinion = {
+						modifier = opinion_feast_scandal
+						who = ROOT
+					}
+				}
+			}
+		}
+	}
+}
+
+# Gluttonous (Victim)
+character_event = {
+	id = ancrel.074
+	desc = EVTDESCancrel.074
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.074
+		opinion = {
+			modifier = opinion_vomit
+			who = FROM
+		}
+	}
+}
+
+# Gluttonous (Host and Other Guests)
+character_event = {
+	id = ancrel.075
+	desc = EVTDESCancrel.075
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.075
+		opinion = {
+			modifier = opinion_feast_scandal
+			who = FROM
+		}
+	}
+}
+
+# Lunatic (Guest)
+character_event = {
+	id = ancrel.076
+	desc = EVTDESCancrel.076
+	picture = GFX_evt_lunatic
+	border = GFX_event_normal_frame_religion
+	
+	trigger = {
+		has_dlc = "The Old Gods"
+		has_character_flag = celtic_feast_vassal
+		NOT = { has_character_flag = feast_lunatic }
+		liege = { 
+			has_character_flag = celtic_feast
+			NOT = { has_character_flag = feast_lunatic }
+		}
+		trait = lunatic
+	}
+	
+	mean_time_to_happen = {
+		days = 60
+		
+		modifier = {
+			factor = 1.1
+			liege = { num_of_vassals = 10 }
+		}
+		modifier = {
+			factor = 1.2
+			liege = { num_of_vassals = 20 }
+		}
+		modifier = {
+			factor = 1.3
+			liege = { num_of_vassals = 30 }
+		}
+		modifier = {
+			factor = 1.4
+			liege = { num_of_vassals = 40 }
+		}
+		modifier = {
+			factor = 1.5
+			liege = { num_of_vassals = 50 }
+		}
+		modifier = {
+			factor = 3
+			liege = { num_of_vassals = 100 }
+		}
+	}
+	
+	option = {
+		name = EVTOPTAancrel.076
+		tooltip_info = lunatic
+		set_character_flag = feast_lunatic
+		hidden_tooltip = {
+			liege = {
+				set_character_flag = feast_lunatic
+				character_event = { id = ancrel.077 }
+				any_vassal = {
+					limit = {
+						has_character_flag = celtic_feast_vassal
+						NOT = { character = ROOT }
+					}
+					character_event = { id = ancrel.077 }
+				}
+			}
+		}
+		tooltip = {
+			liege = {
+				if = {
+					limit = { NOT = { trait = lunatic } }
+					opinion = {
+						modifier = opinion_feast_scandal
+						who = ROOT
+					}
+				}
+				if = {
+					limit = { trait = lunatic }
+					opinion = {
+						modifier = opinion_feast_friend
+						who = ROOT
+					}
+				}
+				any_vassal = {
+					limit = {
+						has_character_flag = celtic_feast_vassal
+						NOT = { character = ROOT }
+						NOT = { trait = lunatic }
+					}
+					opinion = {
+						modifier = opinion_feast_scandal
+						who = ROOT
+					}
+				}
+				any_vassal = {
+					limit = {
+						has_character_flag = celtic_feast_vassal
+						NOT = { character = ROOT }
+						trait = lunatic
+					}
+					opinion = {
+						modifier = opinion_feast_friend
+						who = ROOT
+					}
+				}
+			}
+		}	
+	}
+}
+
+# Lunatic (Host and Other Guests)
+character_event = {
+	id = ancrel.077
+	desc = EVTDESCancrel.077
+	picture = GFX_evt_lunatic
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.077
+		trigger = {
+			NOT = { trait = lunatic }
+		}
+		opinion = {
+			modifier = opinion_feast_scandal
+			who = ROOT
+		}
+	}
+	option = {
+		name = EVTOPTBancrel.077
+		tooltip_info = lunatic
+		trigger = {
+			trait = lunatic
+		}
+		opinion = {
+			modifier = opinion_feast_friend
+			who = ROOT
+		}
+	}
+}
+
+# Lustful (Guest)
+character_event = {
+	id = ancrel.078
+	desc = EVTDESCancrel.078
+	picture = GFX_evt_brothel
+	border = GFX_event_normal_frame_religion
+	
+	trigger = {
+		has_dlc = "The Old Gods"
+		has_character_flag = celtic_feast_vassal
+		NOT = { has_character_flag = feast_lustful }
+		liege = { 
+			has_character_flag = celtic_feast
+			NOT = { has_character_flag = feast_lustful }
+		}
+		trait = lustful
+		is_female = no
+	}
+	
+	mean_time_to_happen = {
+		days = 60
+		
+		modifier = {
+			factor = 1.1
+			liege = { num_of_vassals = 10 }
+		}
+		modifier = {
+			factor = 1.2
+			liege = { num_of_vassals = 20 }
+		}
+		modifier = {
+			factor = 1.3
+			liege = { num_of_vassals = 30 }
+		}
+		modifier = {
+			factor = 1.4
+			liege = { num_of_vassals = 40 }
+		}
+		modifier = {
+			factor = 1.5
+			liege = { num_of_vassals = 50 }
+		}
+		modifier = {
+			factor = 3
+			liege = { num_of_vassals = 100 }
+		}
+	}
+	
+	option = {
+		name = EVTOPTAancrel.078
+		tooltip_info = lustful
+		set_character_flag = feast_lustful
+		trigger = {
+			is_married = no
+		}
+		hidden_tooltip = {
+			liege = {
+				set_character_flag = feast_lustful
+				character_event = { id = ancrel.079 }
+				any_vassal = {
+					limit = {
+						has_character_flag = celtic_feast_vassal
+						NOT = { character = ROOT }
+					}
+					character_event = { id = ancrel.079 }
+				}
+			}
+		}
+		tooltip = {
+			liege = {
+				if = {
+					limit = { NOT = { trait = lustful } }
+					opinion = {
+						modifier = opinion_feast_scandal
+						who = ROOT
+					}
+				}
+				if = {
+					limit = { trait = lustful }
+					opinion = {
+						modifier = opinion_lustful_buddy
+						who = ROOT
+					}
+				}
+				any_vassal = {
+					limit = {
+						has_character_flag = celtic_feast_vassal
+						NOT = { character = ROOT }
+						NOT = { trait = lustful }
+					}
+					opinion = {
+						modifier = opinion_feast_scandal
+						who = ROOT
+					}
+				}
+				any_vassal = {
+					limit = {
+						has_character_flag = celtic_feast_vassal
+						NOT = { character = ROOT }
+						trait = lustful
+					}
+					opinion = {
+						modifier = opinion_lustful_buddy
+						who = ROOT
+					}
+				}
+			}
+		}	
+	}
+	option = {
+		name = EVTOPTBancrel.078
+		tooltip_info = lustful
+		set_character_flag = feast_lustful
+		trigger = {
+			is_married = yes
+		}
+		hidden_tooltip = {
+			liege = {
+				set_character_flag = feast_lustful
+				character_event = { id = ancrel.079 }
+				any_vassal = {
+					limit = {
+						has_character_flag = celtic_feast_vassal
+						NOT = { character = ROOT }
+					}
+					character_event = { id = ancrel.079 }
+				}
+			}
+		}
+		tooltip = {
+			liege = {
+				if = {
+					limit = { NOT = { trait = lustful } }
+					opinion = {
+						modifier = opinion_feast_scandal
+						who = ROOT
+					}
+				}
+				if = {
+					limit = { trait = lustful }
+					opinion = {
+						modifier = opinion_lustful_buddy
+						who = ROOT
+					}
+				}
+				any_vassal = {
+					limit = {
+						has_character_flag = celtic_feast_vassal
+						NOT = { character = ROOT }
+						NOT = { trait = lustful }
+					}
+					opinion = {
+						modifier = opinion_feast_scandal
+						who = ROOT
+					}
+				}
+				any_vassal = {
+					limit = {
+						has_character_flag = celtic_feast_vassal
+						NOT = { character = ROOT }
+						trait = lustful
+					}
+					opinion = {
+						modifier = opinion_lustful_buddy
+						who = ROOT
+					}
+				}
+			}
+			any_spouse = {
+				opinion = {
+					modifier = opinion_mad_as_hell
+					who = ROOT
+					years = 1
+				}
+			}
+		}	
+	}
+}
+
+# Lustful (Host and Other Guests)
+character_event = {
+	id = ancrel.079
+	desc = EVTDESCancrel.079
+	picture = GFX_evt_brothel
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.079
+		trigger = {
+			NOT = { trait = lustful }
+			NOT = { any_spouse = { character = FROM } }
+		}
+		opinion = {
+			modifier = opinion_feast_scandal
+			who = FROM
+		}
+	}
+	option = {
+		name = EVTOPTBancrel.079
+		tooltip_info = lustful
+		trigger = {
+			trait = lustful
+			NOT = { any_spouse = { character = FROM } }
+		}
+		opinion = {
+			modifier = opinion_lustful_buddy
+			who = FROM
+		}
+	}
+	option = {
+		name = EVTOPTCancrel.079
+		trigger = {
+			any_spouse = { character = FROM }
+		}
+		opinion = {
+			modifier = opinion_mad_as_hell
+			who = FROM
+			years = 1
+		}
+	}
+}
+
+# Friendship Formed (Guest 1 Hidden)
+character_event = {
+	id = ancrel.080
+	hide_window = yes
+	
+	trigger = {
+		has_dlc = "The Old Gods"
+		has_character_flag = celtic_feast_vassal
+		NOT = { has_character_flag = feast_friendship }
+		liege = { 
+			has_character_flag = celtic_feast
+			any_vassal = {
+				has_character_flag = celtic_feast_vassal
+				NOT = { has_character_flag = feast_friendship }
+				NOT = { character = ROOT }
+				opinion = { who = ROOT value =  20 }
+			}		
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 60
+		
+		modifier = {
+			factor = 1.1
+			liege = { num_of_vassals = 10 }
+		}
+		modifier = {
+			factor = 1.2
+			liege = { num_of_vassals = 20 }
+		}
+		modifier = {
+			factor = 1.3
+			liege = { num_of_vassals = 30 }
+		}
+		modifier = {
+			factor = 1.4
+			liege = { num_of_vassals = 40 }
+		}
+		modifier = {
+			factor = 1.5
+			liege = { num_of_vassals = 50 }
+		}
+		modifier = {
+			factor = 3
+			liege = { num_of_vassals = 100 }
+		}
+	}
+	
+	immediate = {
+		set_character_flag = feast_friendship
+		liege = { 
+			random_vassal = {
+				limit = {
+					has_character_flag = celtic_feast_vassal
+					NOT = { character = ROOT }
+					opinion = { who = ROOT value =  20 }
+				}
+				character_event = { id = ancrel.081 }
+				set_character_flag = feast_friendship
+				opinion = {
+					modifier = opinion_feast_friend
+					who = ROOT
+				}
+				reverse_opinion = {
+					modifier = opinion_feast_friend
+					who = ROOT
+				}
+			}		
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+# Friendship Formed (Guest 2)
+character_event = {
+	id = ancrel.081
+	desc = EVTDESCancrel.081
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.081
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = ancrel.082 }
+			}
+		}
+		tooltip = {
+			FROM = {
+				opinion = {
+					modifier = opinion_feast_friend
+					who = ROOT
+				}
+			}
+			opinion = {
+				modifier = opinion_feast_friend
+				who = FROM
+			}
+		}
+	}
+}
+
+# Friendship Formed (Guest 1)
+character_event = {
+	id = ancrel.082
+	desc = EVTDESCancrel.081
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.081
+		tooltip = {
+			FROM = {
+				opinion = {
+					modifier = opinion_feast_friend
+					who = ROOT
+				}
+			}
+			opinion = {
+				modifier = opinion_feast_friend
+				who = FROM
+			}
+		}
+	}
+}
+
+# Homosexual Male (Guest 1 Hidden)
+character_event = {
+	id = ancrel.083
+	hide_window = yes
+	
+	trigger = {
+		has_dlc = "The Old Gods"
+		has_character_flag = celtic_feast_vassal
+		NOT = { has_character_flag = feast_homosexual }
+		trait = homosexual
+		is_female = no
+		has_lover = no
+		liege = { 
+			NOT = { has_character_flag = feast_homosexual }
+			has_character_flag = celtic_feast
+			any_vassal = {
+				has_character_flag = celtic_feast_vassal
+				NOT = { has_character_flag = feast_homosexual }
+				NOT = { character = ROOT }
+				opinion = { who = ROOT value =  0 }
+				trait = homosexual
+				is_female = no
+				has_lover = no
+			}		
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 40
+		
+		modifier = {
+			factor = 1.1
+			liege = { num_of_vassals = 10 }
+		}
+		modifier = {
+			factor = 1.2
+			liege = { num_of_vassals = 20 }
+		}
+		modifier = {
+			factor = 1.3
+			liege = { num_of_vassals = 30 }
+		}
+		modifier = {
+			factor = 1.4
+			liege = { num_of_vassals = 40 }
+		}
+		modifier = {
+			factor = 1.5
+			liege = { num_of_vassals = 50 }
+		}
+		modifier = {
+			factor = 3
+			liege = { num_of_vassals = 100 }
+		}
+	}
+	
+	immediate = {
+		set_character_flag = feast_homosexual
+		liege = { 
+			set_character_flag = feast_homosexual
+			random_vassal = {
+				limit = {
+					has_character_flag = celtic_feast_vassal
+					NOT = { has_character_flag = feast_homosexual }
+					NOT = { character = ROOT }
+					opinion = { who = ROOT value =  0 }
+					trait = homosexual
+					is_female = no
+				}
+				character_event = { id = ancrel.084 }
+				add_lover = FROM
+				set_character_flag = feast_homosexual
+			}		
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+# Homosexual Male (Guest 2)
+character_event = {
+	id = ancrel.084
+	desc = EVTDESCancrel.084
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.084
+		tooltip_info = homosexual
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = ancrel.085 }
+			}
+			liege = {
+				character_event = { id = ancrel.090 }
+				any_vassal = {
+					limit = {
+						has_character_flag = celtic_feast_vassal
+						NOT = {
+							character = ROOT
+							character = FROM
+						}
+					}
+					character_event = { id = ancrel.090 }
+				}
+			}
+		}
+		tooltip = {
+			random = {
+				chance = 50
+				character_event = { id = ancrel.089 tooltip = EVTTOOLTIPancrel.089 }
+			}
+			add_lover = FROM
+		}
+	}
+}
+
+# Homosexual Male (Guest 1)
+character_event = {
+	id = ancrel.085
+	desc = EVTDESCancrel.084
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.084
+		tooltip_info = homosexual
+		random = {
+			chance = 50
+			character_event = { id = ancrel.089 tooltip = EVTTOOLTIPancrel.089 }
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = ancrel.089 }
+				}
+			}
+		}
+		tooltip = {
+			add_lover = FROM
+		}
+	}
+}
+
+# Homosexual Female (Guest 1 Hidden)
+character_event = {
+	id = ancrel.086
+	hide_window = yes
+	
+	trigger = {
+		has_dlc = "The Old Gods"
+		has_character_flag = celtic_feast_vassal
+		NOT = { has_character_flag = feast_homosexual }
+		trait = homosexual
+		is_female = yes
+		has_lover = no
+		liege = { 
+			NOT = { has_character_flag = feast_homosexual }
+			has_character_flag = celtic_feast
+			any_vassal = {
+				has_character_flag = celtic_feast_vassal
+				NOT = { has_character_flag = feast_homosexual }
+				NOT = { character = ROOT }
+				opinion = { who = ROOT value =  0 }
+				trait = homosexual
+				is_female = yes
+				has_lover = no
+			}		
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 40
+		
+		modifier = {
+			factor = 1.1
+			liege = { num_of_vassals = 10 }
+		}
+		modifier = {
+			factor = 1.2
+			liege = { num_of_vassals = 20 }
+		}
+		modifier = {
+			factor = 1.3
+			liege = { num_of_vassals = 30 }
+		}
+		modifier = {
+			factor = 1.4
+			liege = { num_of_vassals = 40 }
+		}
+		modifier = {
+			factor = 1.5
+			liege = { num_of_vassals = 50 }
+		}
+		modifier = {
+			factor = 3
+			liege = { num_of_vassals = 100 }
+		}
+	}
+	
+	immediate = {
+		set_character_flag = feast_homosexual
+		liege = { 
+			set_character_flag = feast_homosexual
+			random_vassal = {
+				limit = {
+					has_character_flag = celtic_feast_vassal
+					NOT = { has_character_flag = feast_homosexual }
+					NOT = { character = ROOT }
+					opinion = { who = ROOT value =  0 }
+					trait = homosexual
+					is_female = yes
+				}
+				character_event = { id = ancrel.087 }
+				set_character_flag = feast_homosexual
+				add_lover = FROM
+			}		
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+# Homosexual Female (Guest 2)
+character_event = {
+	id = ancrel.087
+	desc = EVTDESCancrel.084
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.084
+		tooltip_info = homosexual
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = ancrel.088 }
+			}
+			liege = {
+				character_event = { id = ancrel.090 }
+				any_vassal = {
+					limit = {
+						has_character_flag = celtic_feast_vassal
+						NOT = {
+							character = ROOT
+							character = FROM
+						}
+					}
+					character_event = { id = ancrel.090 }
+				}
+			}			
+		}
+		tooltip = {
+			random = {
+				chance = 50
+				character_event = { id = ancrel.089 tooltip = EVTTOOLTIPancrel.089 }
+			}
+			add_lover = FROM
+		}
+	}
+}
+
+# Homosexual Female (Guest 1)
+character_event = {
+	id = ancrel.088
+	desc = EVTDESCancrel.084
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.084
+		tooltip_info = homosexual
+		random = {
+			chance = 50
+			character_event = { id = ancrel.089 tooltip = EVTTOOLTIPancrel.089 }
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = ancrel.089 }
+				}
+			}
+		}
+		tooltip = {
+			add_lover = FROM
+		}
+	}
+}
+
+# Homosexual Caught
+character_event = {
+	id = ancrel.089
+	desc = EVTDESCancrel.089
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.089
+		tooltip = {
+			liege = {
+				if = {
+					limit = { NOT = { trait = homosexual } }
+					opinion = {
+						modifier = opinion_feast_scandal
+						who = ROOT
+					}
+				}
+				if = {
+					limit = { trait = homosexual }
+					opinion = {
+						modifier = opinion_homosexual_sympathy
+						who = ROOT
+					}
+				}
+				any_vassal = {
+					limit = {
+						has_character_flag = celtic_feast_vassal
+						NOT = { character = ROOT }
+						NOT = { trait = homosexual }
+					}
+					opinion = {
+						modifier = opinion_feast_scandal
+						who = ROOT
+					}
+				}
+				any_vassal = {
+					limit = {
+						has_character_flag = celtic_feast_vassal
+						NOT = { character = ROOT }
+						trait = homosexual
+					}
+					opinion = {
+						modifier = opinion_homosexual_sympathy
+						who = ROOT
+					}
+				}
+			}
+		}	
+	}
+}
+
+# Homosexual Caught (Host and Other Guests)
+character_event = {
+	id = ancrel.090
+	desc = EVTDESCancrel.090
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.090
+		trigger = {
+			NOT = { trait = homosexual }
+		}
+		opinion = {
+			modifier = opinion_feast_scandal
+			who = FROM
+		}
+	}
+	option = {
+		name = EVTOPTBancrel.090
+		tooltip_info = homosexual
+		trigger = {
+			trait = homosexual
+		}
+		opinion = {
+			modifier = opinion_homosexual_sympathy
+			who = FROM
+		}
+	}
+}
+
+# Sacrifice Generic 2 (Liege)
+character_event = {
+	id = ancrel.200
+	desc = EVTDESCancrel.200
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.030
+		FROM = {
+			death = {
+				death_reason = death_sacrificed
+				killer = ROOT
+			}
+		}
+		hidden_tooltip = {
+			any_vassal = {
+				limit = { has_character_flag = attending_celtic_feast }
+				character_event = { id = ancrel.042 }
+			}
+		}
+		prestige = 25
+		piety = 15
+	}
+	option = {
+		name = EVTOPTBancrel.030
+		FROM = { character_event = { id = ancrel.057 tooltip = EVTTOOLTIPancrel.057 } }
+		piety = -25
+	}
+}
+
+# Sacrifice Generic 3 (Liege)
+character_event = {
+	id = ancrel.201
+	desc = EVTDESCancrel.201
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.030
+		FROM = {
+			death = {
+				death_reason = death_sacrificed
+				killer = ROOT
+			}
+		}
+		hidden_tooltip = {
+			any_vassal = {
+				limit = { has_character_flag = attending_celtic_feast }
+				character_event = { id = ancrel.042 }
+			}
+		}
+		prestige = 25
+		piety = 15
+	}
+	option = {
+		name = EVTOPTBancrel.030
+		FROM = { character_event = { id = ancrel.057 tooltip = EVTTOOLTIPancrel.057 } }
+		piety = -25
+	}
+}
+
+# Sacrifice Generic 4 (Liege)
+character_event = {
+	id = ancrel.202
+	desc = EVTDESCancrel.202
+	picture = GFX_evt_midwinter_blot_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.030
+		FROM = {
+			death = {
+				death_reason = death_sacrificed
+				killer = ROOT
+			}
+		}
+		hidden_tooltip = {
+			any_vassal = {
+				limit = { has_character_flag = attending_celtic feast }
+				character_event = { id = ancrel.042 }
+			}
+		}
+		prestige = 25
+		piety = 15
+	}
+	option = {
+		name = EVTOPTBancrel.030
+		FROM = { character_event = { id = ancrel.057 tooltip = EVTTOOLTIPancrel.057 } }
+		piety = -25
+	}
+}

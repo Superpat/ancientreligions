@@ -1,0 +1,22 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+
+# inherit = yes  # Heirs inherit this opinion
+
+# Opinion modifiers can give a reason to do the following actions without penalties
+# prison_reason
+# banish_reason
+# execute_reason
+# revoke_reason
+
+
+opinion_held_celtic_feast = {
+	opinion = 15
+	months = 12
+}
+
+opinion_refused_celtic_feast = {
+	opinion = -15
+	months = 12
+}

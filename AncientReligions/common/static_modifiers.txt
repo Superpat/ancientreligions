@@ -458,6 +458,13 @@ d_jomsvikings_modifier = {
 	archers = 200
 }
 
+d_gwydion_modifier = {
+	levy_size = 6
+	heavy_infantry = 700
+	light_infantry = 300
+	archers = 500
+}
+
 d_muslim_turkic_company_modifier = {
 	levy_size = 5
 	horse_archers = 300

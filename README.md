@@ -14,8 +14,9 @@ The following has been completed for basic launch:
 - Irish history files
 - Feast/Sacrifice chain
 - Minor titles
+- Holy Order
+- Unique traits
 
 
 The following needs to be completed before basic launch:
 - Holy Order
-- Unique Druidic Icon

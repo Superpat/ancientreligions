@@ -982,8 +982,8 @@ pagan_group = {
 	druidic_reformed = {
 		graphical_culture = norsegfx
 
-		icon = 5
-		heresy_icon = 5
+		icon = 38
+		heresy_icon = 39
 		
 		color = { 0.75 0.5 0.35 }
 		crusade_name = GREAT_HOLY_WAR
@@ -1027,8 +1027,8 @@ pagan_group = {
 	druidic = {
 		graphical_culture = norsegfx
 
-		icon = 5
-		heresy_icon = 5
+		icon = 37
+		heresy_icon = 39
 		
 		color = { 0.6 0.4 0.3 }
 		crusade_name = GREAT_HOLY_WAR

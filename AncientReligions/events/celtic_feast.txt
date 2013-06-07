@@ -2,7 +2,7 @@
 #
 # THE OLD GODS 
 # - Celtic Feasts Events
-# Event ID ancrel.020-ancrel.99 and ancrel.200 to ancrel.202 is reserved
+# Event ID ancrel.020 - ancrel.109 is reserved
 #
 ###################################
 
@@ -233,9 +233,9 @@ character_event = {
 				}
 				random_list = {
 					25 = { FROM = { character_event = { id = ancrel.030 } } }
-					25 = { FROM = { character_event = { id = ancrel.200 } } }
-					25 = { FROM = { character_event = { id = ancrel.201 } } }
-					25 = { FROM = { character_event = { id = ancrel.202 } } }
+					25 = { FROM = { character_event = { id = ancrel.100 } } }
+					25 = { FROM = { character_event = { id = ancrel.101 } } }
+					25 = { FROM = { character_event = { id = ancrel.102 } } }
 				}
 			}
 			if = {
@@ -390,9 +390,9 @@ character_event = {
 				}
 				random_list = {
 					25 = { FROM = { character_event = { id = ancrel.030 } } }
-					25 = { FROM = { character_event = { id = ancrel.200 } } }
-					25 = { FROM = { character_event = { id = ancrel.201 } } }
-					25 = { FROM = { character_event = { id = ancrel.202 } } }
+					25 = { FROM = { character_event = { id = ancrel.100 } } }
+					25 = { FROM = { character_event = { id = ancrel.101 } } }
+					25 = { FROM = { character_event = { id = ancrel.102 } } }
 				}
 			}
 			if = {
@@ -547,9 +547,9 @@ character_event = {
 				}
 				random_list = {
 					25 = { FROM = { character_event = { id = ancrel.030 } } }
-					25 = { FROM = { character_event = { id = ancrel.200 } } }
-					25 = { FROM = { character_event = { id = ancrel.201 } } }
-					25 = { FROM = { character_event = { id = ancrel.202 } } }
+					25 = { FROM = { character_event = { id = ancrel.100 } } }
+					25 = { FROM = { character_event = { id = ancrel.101 } } }
+					25 = { FROM = { character_event = { id = ancrel.102 } } }
 				}
 			}
 			if = {
@@ -704,9 +704,9 @@ character_event = {
 				}
 				random_list = {
 					25 = { FROM = { character_event = { id = ancrel.030 } } }
-					25 = { FROM = { character_event = { id = ancrel.200 } } }
-					25 = { FROM = { character_event = { id = ancrel.201 } } }
-					25 = { FROM = { character_event = { id = ancrel.202 } } }
+					25 = { FROM = { character_event = { id = ancrel.100 } } }
+					25 = { FROM = { character_event = { id = ancrel.101 } } }
+					25 = { FROM = { character_event = { id = ancrel.102 } } }
 				}
 			}
 			if = {
@@ -2996,8 +2996,8 @@ character_event = {
 
 # Sacrifice Generic 2 (Liege)
 character_event = {
-	id = ancrel.200
-	desc = EVTDESCancrel.200
+	id = ancrel.100
+	desc = EVTDESCancrel.100
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -3029,8 +3029,8 @@ character_event = {
 
 # Sacrifice Generic 3 (Liege)
 character_event = {
-	id = ancrel.201
-	desc = EVTDESCancrel.201
+	id = ancrel.101
+	desc = EVTDESCancrel.101
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -3062,8 +3062,8 @@ character_event = {
 
 # Sacrifice Generic 4 (Liege)
 character_event = {
-	id = ancrel.202
-	desc = EVTDESCancrel.202
+	id = ancrel.102
+	desc = EVTDESCancrel.102
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	

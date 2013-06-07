@@ -6,17 +6,21 @@ Druidism
 
 This section takes care of the druidic religions.
 
-The following has been completed for basic launch:
-- Basic Religion
-- Rebirth chain
-- Headhunting chain
-- Localisations
-- Irish history files
-- Feast/Sacrifice chain
-- Minor titles
-- Holy Order
-- Unique traits
+[B][U]Features:[/U][/B]
 
+[B]Heroic Religion:[/B]
+As a heroic religion, the celtic faith can raise more warriors, happy to prove their worth. Its warriors also fight with greater valor when defending their lands. But do not stay at peace for too long, or they will grow restless...
 
-The following needs to be completed before basic launch:
-- Holy Order
+[B]The cult of the severed Head:[/B]
+Prove your valor in battle by defeating your enemies and taking their heads, the more enemies you kill, the greater your legend!
+
+[B]Sacrifices:[/B]
+Sacrifice your enemies during great celebrations to the glory of the Gods!
+
+[B]The Sons of Gwydion:[/B]
+Call the sons of Gwydion to the defense of Britain and send your sons to gather glory in their band, but beware, not all of them will come back!
+
+[B]Reformation:[/B]
+If your faith grows powerful enough, you will need to reorganize it and give greater powers to the druids.
+
+The work on the brythonic branch of Druidism is complete for the first release, next step is to work on the Gaelic branch.

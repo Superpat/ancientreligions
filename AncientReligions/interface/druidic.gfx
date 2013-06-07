@@ -42,10 +42,9 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
-	# Objectives
 	spriteType = {
-		name = "GFX_obj_convert_druidism"
-		texturefile = "gfx/ambitions/obj_convert_druidism.tga"
+		name = "GFX_trait_wolf"
+		texturefile = "gfx/traits/wolf.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"

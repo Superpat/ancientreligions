@@ -1,26 +1,27 @@
 ACR
 ===
 
-Druidism
+Ancient Religions mod for Crusader Kings 2
 ===
 
-This section takes care of the druidic religions.
+Current Version: 0.1
 
-[B][U]Features:[/U][/B]
+This mod aims at recreating dead or pseudo-dead religions in vanilla Crusader Kings 2,
+the premier release features the ancient cults of the celts, the Druidic religion. 
+Other plans include Greco-Roman, Basque, Guanche and Mesopotamian paganism 
+and further plans include Egyptian paganism and the Cult of Cthulhu.
 
-[B]Heroic Religion:[/B]
-As a heroic religion, the celtic faith can raise more warriors, happy to prove their worth. Its warriors also fight with greater valor when defending their lands. But do not stay at peace for too long, or they will grow restless...
+Ancient Religions Installation:
 
-[B]The cult of the severed Head:[/B]
-Prove your valor in battle by defeating your enemies and taking their heads, the more enemies you kill, the greater your legend!
+1. Important: Delete your Ancient Religions folder if you have one
+2. Extract the Ancient Religions folder and the ancientreligions.mod file to your mod-folder (Crusader Kings II\mod)
+3. Enable it when launching the game
+4. Have fun
 
-[B]Sacrifices:[/B]
-Sacrifice your enemies during great celebrations to the glory of the Gods!
+This mod is created, owned, and maintained by Super(skier)pat. If you want to include it in any publicly released mod you need my permission.
 
-[B]The Sons of Gwydion:[/B]
-Call the sons of Gwydion to the defense of Britain and send your sons to gather glory in their band, but beware, not all of them will come back!
+If you encounter any issues or are wondering about anything you can ask in the Ancient Religions thread on the Paradox Forums: http://forum.paradoxplaza.com/forum/showthread.php?685812-Ancient-Religions
 
-[B]Reformation:[/B]
-If your faith grows powerful enough, you will need to reorganize it and give greater powers to the druids.
+Do note that you have to register your copy of Crusader Kings II in order to view the thread.
 
-The work on the brythonic branch of Druidism is complete for the first release, next step is to work on the Gaelic branch.
+For beta access to the current work please look in the project branches.

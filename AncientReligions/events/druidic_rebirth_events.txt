@@ -70,13 +70,11 @@ character_event = {
 	desc = EVTDESCancrel.001
 	picture = GFX_evt_Ruler_listening_to_supplicant
 	
-<<<<<<< HEAD
 	triggered_only = yes
-=======
+	
 	prisoner = no
 	
 	is_triggered_only = yes
->>>>>>> Fixed Rebirth of Druidism chain
 	
 	option = {
 		name = EVTOPTAancrel.001

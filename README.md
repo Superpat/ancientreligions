@@ -17,7 +17,5 @@ The following has been completed for basic launch:
 
 
 The following needs to be completed before basic launch:
-- Welsh, scottish and breton history files
-- Fix Rebirth chain
 - Holy Order
 - Unique Druidic Icon

@@ -2,7 +2,7 @@
 ;;;;;;;;;;
 druidic;Celtic;;;;;;;;;;;;;;;;;;x
 druidic_reformed;Druidic;Druidique;Greco-Roman;;Greco-romano;;;;;;;;;x
-druidic_DESC;Celtic paganism is the last surviving branch of the ancient druidic belief systems. A pantheon of gods and a world full of spirits , the children of Don rule the Skies, the Earth and the Otherworld. The main gods are Don and Lud, parents of the gods, Beli, the god of Healing, the Great Queen Rhiannon, the Horned god, called Amanaeth, Manawydan, the Sea God and Lleu of the Skillful Hand. Defining features in-game:\* Can raid neighbors for loot\* Low-tech non-pagans have very low Supply Limit in Pagan counties\§*§ Can declare Subjugation Wars against all other pagans\nY* Rulers are limited to Gavelkind Succession\n§Y*§! Rulers cannot declare Holy Wars\n§Y*§! Inferior at conversion and vulnerable to non-pagan missionaries\n§Y*§! Rulers lose Prestige if at peace for too long\n§Y*§! The Celtic Pagan faith can be Reformed;;;;;;;;;x
+druidic_DESC;Celtic paganism is the last surviving branch of the ancient druidic belief systems. A pantheon of gods and a world full of spirits , the children of Don rule the Skies, the Earth and the Otherworld. The main gods are Don and Lud, parents of the gods, Beli, the god of Healing, the Great Queen Rhiannon, the Horned god, called Amanaeth, Manawydan, the Sea God and Lleu of the Skillful Hand. Defining features in-game:\n§Y*§! Can raid neighbors for loot\n§Y*§! Low-tech non-pagans have very low Supply Limit in Pagan counties\n§Y*§! Can declare Subjugation Wars against all other pagans\n§Y*§! Rulers are limited to Gavelkind Succession\n§Y*§! Rulers cannot declare Holy Wars\n§Y*§! Inferior at conversion and vulnerable to non-pagan missionaries\n§Y*§! Rulers lose Prestige if at peace for too long\n§Y*§! The Celtic Pagan faith can be Reformed;;;;;;;;;x
 druidic_reformed_DESC;The reformed celtic faith has a standardized liturgy etched on the many raised stones in Britain, telling the story of Don, Lud and their children. It is led by the circle of the Druids with the Arch-Druid as the religious leader of the faithful. Defining features in-game:\n§Y*§! Can raid neighbors for loot\n§Y*§! The Arch-Druid can call Great Holy Wars;;;;;;;;;x
 GOD_BELI;Beli Mawr;;;;;;;;;;;;;;;;;;;;x
 GOD_BELI_irish;Angus mac Og;;;;;;;;;;;;;;;;;;;;x
@@ -18,6 +18,7 @@ GOD_EARTH;Don;;;;;;;;;;;;;;;;;;;;x
 GOD_EARTH_irish;Dana;;;;;;;;;;;;;;;;;;;;x
 GOD_SKY;Lud;;;;;;;;;;;;;;;;;;;;x
 GOD_SKY_irish;Nuada;;;;;;;;;;;;;;;;;;;;x
+THE_STONES;The Sacred Stones;Les Pierres Sacrées;;;;;;;;;;;;;;;;;;;x
 THE_BALLADS;The Ballads;Les Ballades;;;;;;;;;;;;;;;;;;;x
 d_druidic_reformed;The Circle of Druids;Le Cercle des Druides;;;;;;;;;;;;x
 ARCH_DRUID;Arch Druid;Archi Druide;Arch Druid;;Arch Druid;;;;;;;;;x
@@ -136,7 +137,7 @@ EVTDESCancrel.000;A faint whisper draws your attention and you find a haggard ol
 EVTOPTAancrel.000;A man should keep eyes on all matters.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTBancrel.000;Strange man, begone!;;;;;;;;;;;;;;;;;;;;;;;;x
 begone_sorcerer;You send the pagan away.;Vous faites sortir cette misérable créature.;Ihr schickt die elende Kreatur fort.;;Echas a la criatura miserable.;;;;;;;;;x
-EVTDESCancrel.001;Lleu and his spear, the children of Don and the mysteries of Amanaeth, these stories bring up visions of a better time, when giants and fairies where friends, before man destroyed all in his folly. With the help of your court wizard, you have decided to adopt certain old celtic rites.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.001;The exploits of Lleu, the mysteries of Amanaeth and the adventures of Gwydion, these stories bring up visions of a better time, when giants and fairies where friends, before man destroyed all in his folly. With the help of your court wizard, you have decided to adopt certain old celtic rites.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTAancrel.001;The spirits of the land must be appeased;;;;;;;;;;;;;;;;;;;;;;;;x
 adopt_celtic_rites;You reinstitute old pagan traditions;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESCancrel.002;Revolted by the resurgeance of old practices in your lands, a priest has come to your court, asking you to reform your ways.;;;;;;;;;;;;;;;;;;;;;;;;x

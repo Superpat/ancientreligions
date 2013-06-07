@@ -14,7 +14,7 @@ namespace = ancrel
 character_event = {
 	id = ancrel.000
 	desc = EVTDESCancrel.000
-	picture = GFX_evt_viking_throneroom_oldgods
+	picture = GFX_evt_Whispering_in_ear
 	border = GFX_event_normal_frame_religion
 	
 	ai = no
@@ -68,7 +68,7 @@ character_event = {
 character_event = {
 	id = ancrel.001
 	desc = EVTDESCancrel.001
-	picture = GFX_evt_Ruler_listening_to_supplicant
+	picture = GFX_evt_Pagan_dolmen
 	
 	triggered_only = yes
 	
@@ -149,7 +149,7 @@ character_event = {
 character_event = {
 	id = ancrel.003
 	desc = EVTDESCancrel.003
-	picture = GFX_evt_Ruler_listening_to_supplicant
+	picture = GFX_evt_Pagan_dolmen
 	
 	prisoner = no
 	incapable = no
@@ -206,7 +206,7 @@ character_event = {
 character_event = {
 	id = ancrel.004
 	desc = EVTDESCancrel.004
-	picture = GFX_evt_Ruler_listening_to_supplicant
+	picture = GFX_evt_Pagan_dolmen
 	
 	is_triggered_only = yes
 	

@@ -210,7 +210,7 @@ character_event = {
 character_event = {
 	id = ancrel.026
 	desc = EVTDESCancrel.026
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -367,7 +367,7 @@ character_event = {
 character_event = {
 	id = ancrel.026
 	desc = EVTDESCancrel.026
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -524,7 +524,7 @@ character_event = {
 character_event = {
 	id = ancrel.028
 	desc = EVTDESCancrel.026
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -681,7 +681,7 @@ character_event = {
 character_event = {
 	id = ancrel.029
 	desc = EVTDESCancrel.026
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -838,7 +838,7 @@ character_event = {
 character_event = {
 	id = ancrel.030
 	desc = EVTDESCancrel.030
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -871,7 +871,7 @@ character_event = {
 character_event = {
 	id = ancrel.031
 	desc = EVTDESCancrel.031
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -904,7 +904,7 @@ character_event = {
 character_event = {
 	id = ancrel.032
 	desc = EVTDESCancrel.032
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -937,7 +937,7 @@ character_event = {
 character_event = {
 	id = ancrel.033
 	desc = EVTDESCancrel.033
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -972,7 +972,7 @@ character_event = {
 character_event = {
 	id = ancrel.034
 	desc = EVTDESCancrel.034
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1007,7 +1007,7 @@ character_event = {
 character_event = {
 	id = ancrel.035
 	desc = EVTDESCancrel.035
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1042,7 +1042,7 @@ character_event = {
 character_event = {
 	id = ancrel.036
 	desc = EVTDESCancrel.036
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1077,7 +1077,7 @@ character_event = {
 character_event = {
 	id = ancrel.037
 	desc = EVTDESCancrel.037
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1112,7 +1112,7 @@ character_event = {
 character_event = {
 	id = ancrel.038
 	desc = EVTDESCancrel.038
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1147,7 +1147,7 @@ character_event = {
 character_event = {
 	id = ancrel.039
 	desc = EVTDESCancrel.039
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1180,7 +1180,7 @@ character_event = {
 character_event = {
 	id = ancrel.040
 	desc = EVTDESCancrel.040
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1213,7 +1213,7 @@ character_event = {
 character_event = {
 	id = ancrel.041
 	desc = EVTDESCancrel.041
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1246,7 +1246,7 @@ character_event = {
 character_event = {
 	id = ancrel.042
 	desc = EVTDESCancrel.042
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1268,7 +1268,7 @@ character_event = {
 character_event = {
 	id = ancrel.043
 	desc = EVTDESCancrel.043
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1290,7 +1290,7 @@ character_event = {
 character_event = {
 	id = ancrel.044
 	desc = EVTDESCancrel.044
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1312,7 +1312,7 @@ character_event = {
 character_event = {
 	id = ancrel.045
 	desc = EVTDESCancrel.045
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1334,7 +1334,7 @@ character_event = {
 character_event = {
 	id = ancrel.046
 	desc = EVTDESCancrel.046
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1356,7 +1356,7 @@ character_event = {
 character_event = {
 	id = ancrel.047
 	desc = EVTDESCancrel.047
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1378,7 +1378,7 @@ character_event = {
 character_event = {
 	id = ancrel.048
 	desc = EVTDESCancrel.0408
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1400,7 +1400,7 @@ character_event = {
 character_event = {
 	id = ancrel.049
 	desc = EVTDESCancrel.049
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1422,7 +1422,7 @@ character_event = {
 character_event = {
 	id = ancrel.050
 	desc = EVTDESCancrel.050
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1444,7 +1444,7 @@ character_event = {
 character_event = {
 	id = ancrel.051
 	desc = EVTDESCancrel.051
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1466,7 +1466,7 @@ character_event = {
 character_event = {
 	id = ancrel.052
 	desc = EVTDESCancrel.052
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1488,7 +1488,7 @@ character_event = {
 character_event = {
 	id = ancrel.053
 	desc = EVTDESCancrel.053
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1510,7 +1510,7 @@ character_event = {
 character_event = {
 	id = ancrel.054
 	desc = EVTDESCancrel.054
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1536,7 +1536,7 @@ character_event = {
 character_event = {
 	id = ancrel.055
 	desc = EVTDESCancrel.055
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1550,7 +1550,7 @@ character_event = {
 character_event = {
 	id = ancrel.057
 	desc = EVTDESCancrel.057
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -2998,7 +2998,7 @@ character_event = {
 character_event = {
 	id = ancrel.100
 	desc = EVTDESCancrel.100
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -3031,7 +3031,7 @@ character_event = {
 character_event = {
 	id = ancrel.101
 	desc = EVTDESCancrel.101
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -3064,7 +3064,7 @@ character_event = {
 character_event = {
 	id = ancrel.102
 	desc = EVTDESCancrel.102
-	picture = GFX_evt_midwinter_blot_oldgods
+	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes

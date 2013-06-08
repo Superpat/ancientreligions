@@ -1004,6 +1004,8 @@ pagan_group = {
 		allow_looting = yes
 		female_temple_holders = no
 
+		max_consorts = 2
+
 		short_reign_opinion_year_mult = 2 # The default is 2
 
 		aggression = 1.5 # AI aggression factor
@@ -1034,6 +1036,7 @@ pagan_group = {
 
 		allow_looting = yes
 		female_temple_holders = no
+		max_consorts = 2
 		defensive_attrition = yes
 		peace_prestige_loss = yes # Lose Prestige while at peace
 		raised_vassal_opinion_loss = no

@@ -1,8 +1,8 @@
 #######################################
 #
-# The Sons of Gwydion
+# The Fianna
 #
-# Event ID ancrel.110 - ancrel.149 reserved
+# Event ID ancrel.150 - ancrel.189 reserved
 #
 #######################################
 
@@ -10,11 +10,11 @@
 
 namespace = ancrel
 
-# The Sons of Gwydion Founded (Brythonic King)
+# The Fianna Founded (Gaelic King)
 narrative_event = {
-	id = ancrel.110
-	title = EVTNAMEancrel.110
-	desc = EVTDESCancrel.110
+	id = ancrel.150
+	title = EVTNAMEancrel.150
+	desc = EVTDESCancrel.150
 	picture = GFX_evt_celtic_warriors
 	border = GFX_event_narrative_frame_war
 	
@@ -23,50 +23,47 @@ narrative_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAancrel.110
+		name = EVTOPTAancrel.150
 		hidden_tooltip = {
 			any_playable_ruler = {
 				limit = {
 					ai = no
-					OR = {
-						religion = druidic
-						religion = druidic_reformed
-					}
+					religion = gaelic_pagan
 				}
-				narrative_event = { id = ancrel.111 }
+				narrative_event = { id = ancrel.151 }
 			}
 		}
 	}
 }
 
-# The sons of Gwydion Founded (Druidic)
+# The Fianna Founded (Gaelic)
 narrative_event = {
-	id = ancrel.111
-	title = EVTNAMEancrel.110
-	desc = EVTDESCancrel.111
+	id = ancrel.151
+	title = EVTNAMEancrel.150
+	desc = EVTDESCancrel.151
 	picture = GFX_evt_celtic_warriors
 	border = GFX_event_narrative_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.111
-		custom_tooltip = gwydion_organized
+		name = EVTOPTAancrel.151
+		custom_tooltip = fianna_organized
 	}
 }
 
-# Sons of Gwydion Chief gets Wolf trait
+# Fianna Chief gets Fian trait
 character_event = {
-	id = ancrel.115
+	id = ancrel.155
 	hide_window = yes
 	
 	trigger = {
-		has_landed_title = d_gwydion
-		NOT = { trait = wolf }
+		has_landed_title = d_fianna
+		NOT = { trait = fian }
 	}
 	
 	immediate = {
-		add_trait = wolf
+		add_trait = fian
 	}
 	
 	option = {
@@ -76,14 +73,14 @@ character_event = {
 
 # Son has served a few years
 character_event = {
-	id = ancrel.118
+	id = ancrel.158
 	hide_window = yes
 	
 	is_triggered_only = yes
 	
 	immediate = {
-		set_character_flag = serving_gwydion
-		clr_character_flag = wants_gwydion
+		set_character_flag = serving_fianna
+		clr_character_flag = wants_fianna
 	}
 	
 	option = {
@@ -91,9 +88,9 @@ character_event = {
 	}
 }
 
-# Son wants to join the Sons of Gwydion (Son)
+# Son wants to join the Fianna (Son)
 character_event = {
-	id = ancrel.119
+	id = ancrel.159
 	hide_window = yes
 	
 	ai = yes
@@ -107,18 +104,21 @@ character_event = {
 		has_dlc = "The Old Gods"
 		is_landed = no
 		in_command = no
-		has_global_flag = gwydion_founded
+		has_global_flag = fianna_founded
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = gaelic_pagan
+			religion = gaelic_pagan_reformed
 		}
 		NOT = { 
-			trait = wolf 
-			has_character_flag = wants_gwydion
+			trait = varangian 
+			has_character_flag = wants_fianna
 		}
 		father = {
 			is_alive = yes
-			religion = celtic
+			OR = {
+				religion = gaelic_pagan
+				religion = gaelic_pagan_reformed
+			}
 			is_ruler = yes
 			is_liege_of = ROOT
 			prisoner = no
@@ -175,8 +175,8 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = ancrel.120 } }
-		set_character_flag = wants_gwydion
+		father = { character_event = { id = ancrel.160 } }
+		set_character_flag = wants_fianna
 	}
 	
 	option = {
@@ -184,17 +184,17 @@ character_event = {
 	}
 }
 
-# Son wants to join the sons of Gwydion (Father)
+# Son wants to join the fianna (Father)
 character_event = {
-	id = ancrel.120
-	desc = EVTDESCancrel.120
+	id = ancrel.160
+	desc = EVTDESCancrel.160
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.120
+		name = EVTOPTAancrel.160
 		FROM = {
 			opinion = {
 				modifier = opinion_very_disappointed
@@ -205,8 +205,8 @@ character_event = {
 		prestige = -100
 	}
 	option = {
-		name = EVTOPTBancrel.120
-		d_gwydion = {
+		name = EVTOPTBancrel.160
+		d_fianna = {
 			holder_scope = {
 				FROM = {
 					move_character = PREV
@@ -215,7 +215,7 @@ character_event = {
 		}
 		hidden_tooltip = {
 			FROM = { 
-				character_event = { id = ancrel.118 days = 1460 }
+				character_event = { id = ancrel.158 days = 1460 }
 			}
 		}
 		prestige = 100
@@ -224,12 +224,12 @@ character_event = {
 
 # Son returns scarred but seasoned (Son)
 character_event = {
-	id = ancrel.124
+	id = ancrel.164
 	hide_window = yes
 	
 	trigger = {
 		has_dlc = "The Old Gods"
-		has_character_flag = serving_gwydion
+		has_character_flag = serving_fianna
 		NOT = { trait = scarred }
 	}
 	
@@ -247,8 +247,8 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = ancrel.125 } }
-		clr_character_flag = serving_gwydion
+		father = { character_event = { id = ancrel.165 } }
+		clr_character_flag = serving_fianna
 	}
 	
 	option = {
@@ -258,19 +258,19 @@ character_event = {
 
 # Son returns scarred but seasoned
 character_event = {
-	id = ancrel.125
-	desc = EVTDESCancrel.125
+	id = ancrel.165
+	desc = EVTDESCancrel.165
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.125
+		name = EVTOPTAancrel.165
 		FROM = {
 			move_character = ROOT
 			add_trait = scarred
-			add_trait = wolf
+			add_trait = fian
 			change_martial = 4
 		}
 	}
@@ -278,12 +278,12 @@ character_event = {
 
 # Son returns maimed (Son)
 character_event = {
-	id = ancrel.128
+	id = ancrel.168
 	hide_window = yes
 	
 	trigger = {
 		has_dlc = "The Old Gods"
-		has_character_flag = serving_gwydion
+		has_character_flag = serving_fianna
 		NOT = {
 			trait = maimed
 		}
@@ -295,8 +295,8 @@ character_event = {
 	
 	immediate = {
 		add_trait = maimed
-		father = { character_event = { id = ancrel.129 } }
-		clr_character_flag = serving_gwydion
+		father = { character_event = { id = ancrel.169 } }
+		clr_character_flag = serving_fianna
 	}
 	
 	option = {
@@ -306,31 +306,31 @@ character_event = {
 
 # Son returns maimed
 character_event = {
-	id = ancrel.129
-	desc = EVTDESCancrel.129
+	id = ancrel.169
+	desc = EVTDESCancrel.169
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.129
+		name = EVTOPTAancrel.169
 		FROM = {
 			move_character = ROOT
 			tooltip = { add_trait = maimed }
-			add_trait = wolf
+			add_trait = fian
 		}
 	}
 }
 
 # Son returns as excellent strategist (Son)
 character_event = {
-	id = ancrel.130
+	id = ancrel.170
 	hide_window = yes
 	
 	trigger = {
 		has_dlc = "The Old Gods"
-		has_character_flag = serving_gwydion
+		has_character_flag = serving_varangian
 		NOT = { trait = brilliant_strategist }
 		OR = {
 			trait = misguided_warrior
@@ -365,8 +365,8 @@ character_event = {
 	}
 
 	immediate = {
-		father = { character_event = { id = ancrel.131 } }
-		clr_character_flag = serving_gwydion
+		father = { character_event = { id = ancrel.171 } }
+		clr_character_flag = serving_fianna
 	}
 	
 	option = {
@@ -376,15 +376,15 @@ character_event = {
 
 # Son returns as excellent strategist
 character_event = {
-	id = ancrel.131
-	desc = EVTDESCancrel.131
+	id = ancrel.171
+	desc = EVTDESCancrel.171
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.131
+		name = EVTOPTAancrel.171
 		if = {
 			limit = {
 				FROM = {
@@ -415,7 +415,7 @@ character_event = {
 		}
 		FROM = {
 			change_martial = 2
-			add_trait = wolf
+			add_trait = fian
 			move_character = ROOT
 		}
 	}
@@ -423,12 +423,12 @@ character_event = {
 
 # Son returns with PTSD (Son)
 character_event = {
-	id = ancrel.132
+	id = ancrel.172
 	hide_window = yes
 	
 	trigger = {
 		has_dlc = "The Old Gods"
-		has_character_flag = serving_gwydion
+		has_character_flag = serving_fianna
 		NOT = { trait = depressed }
 	}
 	
@@ -450,8 +450,8 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = ancrel.133 } }
-		clr_character_flag = serving_gwydion
+		father = { character_event = { id = ancrel.173 } }
+		clr_character_flag = serving_fianna
 	}
 	
 	option = {
@@ -461,32 +461,32 @@ character_event = {
 
 # Son returns with PTSD
 character_event = {
-	id = ancrel.133
-	desc = EVTDESCancrel.133
+	id = ancrel.173
+	desc = EVTDESCancrel.173
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.133
+		name = EVTOPTAancrel.173
 		FROM = {
 			move_character = ROOT
 			add_trait = stressed
 			add_trait = depressed
-			add_trait = wolf
+			add_trait = fian
 		}
 	}
 }
 
 # Son returns home with wife (Son)
 character_event = {
-	id = ancrel.134
+	id = ancrel.174
 	hide_window = yes
 	
 	trigger = {
 		has_dlc = "The Old Gods"
-		has_character_flag = serving_varangian
+		has_character_flag = serving_fianna
 		is_married = no
 	}
 	
@@ -500,8 +500,8 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = ancrel.135 } }
-		clr_character_flag = serving_gwydion
+		father = { character_event = { id = ancrel.175 } }
+		clr_character_flag = serving_fianna
 	}
 	
 	option = {
@@ -511,21 +511,21 @@ character_event = {
 
 # Son returns home with wife
 character_event = {
-	id = ancrel.135
-	desc = EVTDESCancrel.135
+	id = ancrel.175
+	desc = EVTDESCancrel.175
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.135
+		name = EVTOPTAancrel.175
 		create_character = {
 			random_traits = yes
 			dynasty = NONE
 			female = yes
 			age = 26
-			religion = druidic
+			religion = gaelic_pagan
 			culture = FROM
 		}
 		new_character = {
@@ -540,12 +540,12 @@ character_event = {
 
 # Son returns home as a zealot (Son)
 character_event = {
-	id = ancrel.136
+	id = ancrel.176
 	hide_window = yes
 	
 	trigger = {
 		has_dlc = "The Old Gods"
-		has_character_flag = serving_gwydion
+		has_character_flag = serving_fianna
 		NOT = { trait = zealous }
 	}
 	
@@ -559,8 +559,8 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = ancrel.137 } }
-		clr_character_flag = serving_gwydion
+		father = { character_event = { id = ancrel.177 } }
+		clr_character_flag = serving_fianna
 	}
 	
 	option = {
@@ -570,31 +570,31 @@ character_event = {
 
 # Son returns home as a zealot
 character_event = {
-	id = ancrel.137
-	desc = EVTDESCancrel.137
+	id = ancrel.177
+	desc = EVTDESCancrel.177
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.137
+		name = EVTOPTAancrel.177
 		FROM = {
 			move_character = ROOT
 			add_trait = zealous
-			add_trait = wolf
+			add_trait = fian
 		}
 	}
 }
 
 # Son returns home as a seasoned warrior (Son)
 character_event = {
-	id = ancrel.138
+	id = ancrel.178
 	hide_window = yes
 	
 	trigger = {
 		has_dlc = "The Old Gods"
-		has_character_flag = serving_gwydion
+		has_character_flag = serving_fianna
 	}
 	
 	mean_time_to_happen = {
@@ -631,8 +631,8 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = ancrel.139 } }
-		clr_character_flag = serving_gwydion
+		father = { character_event = { id = ancrel.179 } }
+		clr_character_flag = serving_fianna
 	}
 	
 	option = {
@@ -642,19 +642,19 @@ character_event = {
 
 # Son returns home as a seasoned warrior
 character_event = {
-	id = ancrel.139
-	desc = EVTDESCancrel.139
+	id = ancrel.179
+	desc = EVTDESCancrel.179
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.139
+		name = EVTOPTAancrel.179
 		FROM = {
 			move_character = ROOT
 			add_trait = brave
-			add_trait = wolf
+			add_trait = fian
 			change_martial = 2
 		}
 	}
@@ -662,12 +662,12 @@ character_event = {
 
 # Son dies in battle (Son)
 character_event = {
-	id = ancrel.140
+	id = ancrel.180
 	hide_window = yes
 	
 	trigger = {
 		has_dlc = "The Old Gods"
-		has_character_flag = serving_gwydion
+		has_character_flag = serving_fianna
 	}
 	
 	mean_time_to_happen = {
@@ -689,7 +689,7 @@ character_event = {
 			factor = 0.75
 			trait = head2
 		}
-				modifier = {
+		modifier = {
 			factor = 0.75
 			trait = head3
 		}
@@ -748,8 +748,8 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = ancrel.141 } }
-		clr_character_flag = serving_gwydion
+		father = { character_event = { id = ancrel.181 } }
+		clr_character_flag = serving_fianna
 	}
 	
 	option = {
@@ -759,27 +759,27 @@ character_event = {
 
 # Son dies in battle
 character_event = {
-	id = ancrel.141
-	desc = EVTDESCancrel.141
+	id = ancrel.181
+	desc = EVTDESCancrel.181
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.141
+		name = EVTOPTAancrel.181
 		FROM = { death = { death_reason = death_battle } }
 	}
 }
 
 # Son returns with loot (Son)
 character_event = {
-	id = ancrel.142
+	id = ancrel.182
 	hide_window = yes
 	
 	trigger = {
 		has_dlc = "The Old Gods"
-		has_character_flag = serving_gwydion
+		has_character_flag = serving_fianna
 	}
 	
 	mean_time_to_happen = {
@@ -796,8 +796,8 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = ancrel.143 } }
-		clr_character_flag = serving_gwydion
+		father = { character_event = { id = ancrel.183 } }
+		clr_character_flag = serving_fianna
 	}
 	
 	option = {
@@ -807,18 +807,18 @@ character_event = {
 
 # Son returns with loot
 character_event = {
-	id = ancrel.143
-	desc = EVTDESCancrel.143
+	id = ancrel.183
+	desc = EVTDESCancrel.183
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.143
+		name = EVTOPTAancrel.183
 		FROM = {
 			move_character = ROOT
-			add_trait = wolf
+			add_trait = fian
 		}
 		wealth = 300
 	}
@@ -826,8 +826,8 @@ character_event = {
 
 # Father dies, Player Son is heir
 character_event = {
-	id = ancrel.144
-	desc = EVTDESCancrel.144
+	id = ancrel.184
+	desc = EVTDESCancrel.184
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
@@ -835,44 +835,44 @@ character_event = {
 		has_dlc = "The Old Gods"
 		ai = no
 		OR = {
-			has_character_flag = wants_gwydion
-			has_character_flag = serving_gwydion
+			has_character_flag = wants_fianna
+			has_character_flag = serving_fianna
 		}
 		father = { is_alive = no }
 	}
 	
 	immediate = {
-		clr_character_flag = wants_gwydion
-		clr_character_flag = serving_gwydion
+		clr_character_flag = wants_fianna
+		clr_character_flag = serving_fianna
 	}
 	
 	option = {
-		name = EVTOPTAancrel.144
-		add_trait = wolf
+		name = EVTOPTAancrel.184
+		add_trait = fian
 		prestige = 200
 		wealth = 200
 	}
 }
 
-# Father dies, Son gets Wolf Warrior trait
+# Father dies, Son gets Fian trait
 character_event = {
-	id = ancrel.145
+	id = ancrel.185
 	hide_window = yes
 	
 	trigger = {
 		has_dlc = "The Old Gods"
 		ai = yes
 		OR = {
-			has_character_flag = wants_gwydion
-			has_character_flag = serving_gwydion
+			has_character_flag = wants_fianna
+			has_character_flag = serving_fianna
 		}
 		father = { is_alive = no }
 	}
 	
 	immediate = {
-		add_trait = wolf
-		clr_character_flag = wants_gwydion
-		clr_character_flag = serving_gwydion
+		add_trait = fian
+		clr_character_flag = wants_fianna
+		clr_character_flag = serving_fianna
 	}
 	
 	option = {

@@ -31,6 +31,8 @@ character_event = {
 			OR = {
 				religion = druidic
 				religion = druidic_reformed
+				religion = gaelic_pagan
+				religion = gaelic_pagan_reformed
 			}
 			has_character_flag = hates_magic
 			any_courtier = {
@@ -45,15 +47,41 @@ character_event = {
 	
 	option = {
 		name = EVTOPTAancrel.000
-		create_character = {
-			random_traits = no
-			dynasty = NONE
-			male = yes
-			age = 53
-			religion = druidic
-			culture = ROOT
-			trait = mystic
-			trait = scholarly_theologian
+		if = {
+			limit = {
+				OR = {
+					culture =  breton
+					culture = welsh
+				}
+			}
+			create_character = {
+				random_traits = no
+				dynasty = NONE
+				male = yes
+				age = 53
+				religion = druidic
+				culture = ROOT
+				trait = mystic
+				trait = scholarly_theologian
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					culture =  scottish
+					culture = irish
+				}
+			}
+			create_character = {
+				random_traits = no
+				dynasty = NONE
+				male = yes
+				age = 53
+				religion = gaelic_pagan
+				culture = ROOT
+				trait = mystic
+				trait = scholarly_theologian
+			}
 		}
 		new_character = {
 			give_minor_title = title_pagan_wizard
@@ -88,7 +116,12 @@ character_event = {
 		}
 		any_vassal = {
 			limit = {
-				NOT = { religion = druidic }
+				NOT = {
+					OR = {
+						religion = druidic
+						religion = gaelic_pagan
+					}
+				}
 				age = 16
 				prisoner = no
 				war = no
@@ -109,11 +142,21 @@ character_event = {
 	incapable = no
 	
 	trigger = {
-		NOT = { religion = druidic }
+		NOT = {
+			OR = {
+				religion = druidic
+				religion = gaelic_pagan
+			}
+		}
 		has_character_modifier = celtic_ways
 		any_vassal = {
-				is_theocracy = yes
-				NOT = { religion = druidic }
+			is_theocracy = yes
+			NOT = {
+				OR = {
+					religion = druidic
+					religion = gaelic_pagan
+				}
+			}
 		}
 	}
 	
@@ -125,7 +168,24 @@ character_event = {
 		name = EVTOPTAancrel.002
 		ai_chance = { factor = 50 }
 		hidden_tooltip = { remove_character_modifier = celtic_ways }
-		religion = druidic
+		if = {
+			limit = { 
+				OR = {
+					culture = scottish
+					culture = irish
+				}
+			}
+			religion = gaelic_pagan
+		}
+		if = {
+			limit = { 
+				OR = {
+					culture = welsh
+					culture = breton
+				}
+			}
+			religion = druidic
+		}
 		piety = 50
 	}
 	option = {

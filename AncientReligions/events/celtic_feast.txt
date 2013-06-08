@@ -28,6 +28,8 @@ character_event = {
 				OR = {
 					religion = druidic
 					religion = druidic_reformed
+					religion = gaelic_pagan
+					religion = gaelic_pagan_reformed
 				}
 				age = 16
 				prisoner = no

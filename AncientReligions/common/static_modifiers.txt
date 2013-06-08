@@ -465,6 +465,13 @@ d_gwydion_modifier = {
 	archers = 500
 }
 
+d_fianna_modifier = {
+	levy_size = 6
+	heavy_infantry = 700
+	light_infantry = 300
+	archers = 500
+}
+
 d_muslim_turkic_company_modifier = {
 	levy_size = 5
 	horse_archers = 300

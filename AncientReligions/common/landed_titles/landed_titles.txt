@@ -516,6 +516,32 @@ d_gwydion = {
 	modifier = d_gwydion_modifier
 }
 
+d_fianna = {
+	
+	color={ 75 75 75 }
+	color2={ 255 255 255 }
+	
+	capital = 15
+
+	title = "WARCHIEF"
+	foa = "WARCHIEF_FOA"
+	
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = gaelic_pagan
+	
+	culture = irish
+	
+	# Cannot be held as a secondary title
+	primary = yes
+
+	modifier = d_fianna_modifier
+}
+
 # MERCS
 
 d_sunni_turkic_company = {
@@ -18216,6 +18242,8 @@ e_france = {
 				b_bonneval = {
 					holy_site = druidic
 					holy_site = druidic_reformed
+					holy_site = gaelic_pagan
+					holy_site = gaelic_pagan_reformed
 				}
 				b_tiron = {
 				}
@@ -20456,6 +20484,8 @@ e_spain = {
 				b_mondonedo = {
 					holy_site = druidic
 					holy_site = druidic_reformed
+					holy_site = gaelic_pagan
+					holy_site = gaelic_pagan_reformed
 				}
 				b_lugo = {
 				}
@@ -25604,6 +25634,8 @@ e_britannia = {
 				b_bangor_fawr = {
 					holy_site = druidic
 					holy_site = druidic_reformed
+					holy_site = gaelic_pagan
+					holy_site = gaelic_pagan_reformed
 				}
 				b_aberffraw = {
 					norwegian = Ongullsøy
@@ -25816,6 +25848,8 @@ e_britannia = {
 				b_whithorn = {
 					holy_site = druidic
 					holy_site = druidic_reformed
+					holy_site = gaelic_pagan
+					holy_site = gaelic_pagan_reformed
 				}
 				b_dunrod = {
 				}
@@ -26489,6 +26523,8 @@ e_britannia = {
 				b_mellifont = {
 					holy_site = druidic
 					holy_site = druidic_reformed
+					holy_site = gaelic_pagan
+					holy_site = gaelic_pagan_reformed
 				}
 				b_trim = {
 				}
@@ -28478,6 +28514,32 @@ d_druidic_reformed = {
 	controls_religion = druidic_reformed
 	
 	religion = druidic_reformed
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_gaelic_pagan_reformed = {
+	color={ 122 165 70 }
+	color2={ 220 220 0 }
+	
+	capital = 15 # Dublin
+	
+	title = "ARCH_DRUID"
+	title_female = "ARCH_DRUIDESSE"
+	foa = "ARCH_DRUID_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = gaelic_pagan_reformed
+	
+	religion = gaelic_pagan_reformed
 	
 	# Cannot be held as a secondary title
 	primary = yes

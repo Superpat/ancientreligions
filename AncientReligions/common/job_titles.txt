@@ -160,6 +160,8 @@ job_spiritual = {
 				NOT = { religion = aztec_reformed}
 				NOT = { religion = tengri_pagan }
 				NOT = { religion = tengri_pagan_reformed}
+				NOT = { religion = grecoroman }
+				NOT = { religion = grecoroman_reformed}
 			}
 		}
 		

@@ -15,7 +15,7 @@ narrative_event = {
 	id = ancrel.110
 	title = EVTNAMEancrel.110
 	desc = EVTDESCancrel.110
-	picture = GFX_evt_viking_battle_oldgods
+	picture = GFX_evt_celtic_warriors
 	border = GFX_event_narrative_frame_war
 	
 	is_triggered_only = yes
@@ -41,7 +41,7 @@ narrative_event = {
 	id = ancrel.111
 	title = EVTNAMEancrel.110
 	desc = EVTDESCancrel.111
-	picture = GFX_evt_viking_battle_oldgods
+	picture = GFX_evt_celtic_warriors
 	border = GFX_event_narrative_frame_war
 	
 	is_triggered_only = yes

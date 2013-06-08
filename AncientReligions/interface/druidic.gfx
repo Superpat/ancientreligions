@@ -49,6 +49,13 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	spriteType = {
+		name = "GFX_trait_fian"
+		texturefile = "gfx/traits/fian.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 	# Event Pictures
 	spriteType = {
 		name = "GFX_evt_headhunter"

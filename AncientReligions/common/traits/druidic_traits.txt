@@ -3,6 +3,8 @@ head1 = {
 		OR = {
 			religion = druidic
 			religion = druidic_reformed
+			religion = gaelic_pagan
+			religion = gaelic_pagan_reformed
 		}
 	}
 	monthly_character_prestige = 0.1
@@ -13,6 +15,8 @@ head2 = {
 		OR = {
 			religion = druidic
 			religion = druidic_reformed
+			religion = gaelic_pagan
+			religion = gaelic_pagan_reformed
 		}
 	}
 	monthly_character_prestige = 0.2
@@ -24,6 +28,8 @@ head3 = {
 		OR = {
 			religion = druidic
 			religion = druidic_reformed
+			religion = gaelic_pagan
+			religion = gaelic_pagan_reformed
 		}
 	}
 	monthly_character_prestige = 0.4
@@ -36,6 +42,8 @@ head4 = {
 		OR = {
 			religion = druidic
 			religion = druidic_reformed
+			religion = gaelic_pagan
+			religion = gaelic_pagan_reformed
 		}
 	}
 	monthly_character_prestige = 0.8
@@ -47,6 +55,8 @@ head5 = {
 		OR = {
 			religion = druidic
 			religion = druidic_reformed
+			religion = gaelic_pagan
+			religion = gaelic_pagan_reformed
 		}
 	}
 	martial = 1
@@ -59,6 +69,8 @@ druid = {
 		OR = {
 			religion = druidic
 			religion = druidic_reformed
+			religion = gaelic_pagan
+			religion = gaelic_pagan_reformed
 		}
 	}
 	monthly_character_piety = 1.00
@@ -72,6 +84,29 @@ wolf = {
 		OR = {
 			religion = druidic
 			religion = druidic_reformed
+		}
+	}
+	martial = 2
+	learning = 1
+	
+	same_religion_opinion = 5
+	
+	same_opinion = 20
+	
+	customizer = no
+	
+	command_modifier = {
+		religious_enemy = 0.2
+		morale_attack = 0.1
+		defence = -0.1
+	}
+}
+
+fian = {
+	potential = {
+		OR = {
+			religion = gaelic_pagan
+			religion = gaelic_pagan_reformed
 		}
 	}
 	martial = 2

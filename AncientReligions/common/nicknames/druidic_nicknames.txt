@@ -12,11 +12,16 @@
 nick_the_wolf = {
 	allow = {
 		NOT = { trait = craven }
-		trait = wolf
-		OR = {
-			trait = head2
-			trait = head3
-			trait = head4
+		AND = {	
+			OR = {
+				trait = wolf
+				trait = fian
+			}
+			OR = {
+				trait = head2
+				trait = head3
+				trait = head4
+			}
 		}
 	}
 	chance = {

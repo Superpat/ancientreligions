@@ -6850,6 +6850,8 @@ pagan_holy_war = {
 				religion = aztec_reformed
 				religion = aztec
 				religion = west_african_pagan_reformed
+				religion = druidic_reformed
+				religion = gaelic_pagan_reformed
 			}
 			NOT = { same_realm = FROM }
 			NOT = { religion = FROM }
@@ -6926,6 +6928,8 @@ pagan_holy_war = {
 				religion = aztec_reformed
 				religion = aztec
 				religion = west_african_pagan_reformed
+				religion = druidic_reformed
+				religion = gaelic_pagan_reformed
 			}
 			NOT = { same_realm = FROM }
 			NOT = { religion = FROM }

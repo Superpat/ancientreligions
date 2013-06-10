@@ -816,7 +816,7 @@ narrative_event = {
 				if = {
 					limit = {
 						OR = {
-							is_liege_or_above = ROOT
+							owner = { is_liege_or_above = ROOT }
 							ROOT = { has_landed_title = PREV }
 						}
 					}
@@ -827,7 +827,7 @@ narrative_event = {
 				if = {
 					limit = {
 						OR = {
-							is_liege_or_above = ROOT
+							owner = { is_liege_or_above = ROOT }
 							ROOT = { has_landed_title = PREV }
 						}
 					}

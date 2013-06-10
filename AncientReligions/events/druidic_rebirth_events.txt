@@ -34,7 +34,10 @@ character_event = {
 				religion = gaelic_pagan
 				religion = gaelic_pagan_reformed
 			}
-			has_character_flag = hates_magic
+			OR = {
+				has_character_flag = hates_magic
+				has_character_flag = pagan_wizard
+			}
 			any_courtier = {
 				has_minor_title = title_pagan_wizard
 			}
@@ -83,6 +86,7 @@ character_event = {
 				trait = scholarly_theologian
 			}
 		}
+		set_character_flag = pagan_wizard
 		new_character = {
 			give_minor_title = title_pagan_wizard
 		}
@@ -129,6 +133,21 @@ character_event = {
 			}
 			character_event = { id = ancrel.003 days = 5 }
 		}
+		any_courtier = {
+			limit = {
+				NOT = {
+					OR = {
+						religion = druidic
+						religion = gaelic_pagan
+					}
+				}
+				age = 16
+				prisoner = no
+				war = no
+				NOT = { trait = incapable }
+			}
+			character_event = { id = ancrel.003 days = 5 }
+		}
 	}
 }
 
@@ -149,15 +168,6 @@ character_event = {
 			}
 		}
 		has_character_modifier = celtic_ways
-		any_vassal = {
-			is_theocracy = yes
-			NOT = {
-				OR = {
-					religion = druidic
-					religion = gaelic_pagan
-				}
-			}
-		}
 	}
 	
 	mean_time_to_happen = {
@@ -274,6 +284,11 @@ character_event = {
 	
 	option = {
 		name = EVTOPTAancrel.004
+		opinion = {
+				modifier = opinion_happy
+				who = ROOT
+				years = 2
+		}
 	}
 }
 # Vassal refuses celtic rites
@@ -286,5 +301,9 @@ character_event = {
 	
 	option = {
 		name = EVTOPTAancrel.005
+		opinion = {
+				modifier = opinion_refused_celtic_rites
+				who = FROM
+		}
 	}
 }

@@ -115,14 +115,17 @@ title_aedile_desc;The aediles are responsible for maintenance of public building
 title_magister_equitum;Magister Equitum;;;;;;;;;;;;;;;x
 title_magister_equitum_desc;Originally a very powerful office second only to the Dictator, the Magister Equitum, or Master of the Horse, is now a mostly ceremonial, but still prestigeous, military function.;;;;;;;;;;;;;;;x
 ;;;;;;;;;;
+modifier_flamen_dialis;Flamen Dialis;;;;;;;;;;;;;;;x
 title_flamen_dialis;Flamen Dialis;;;;;;;;;;;;;;;x
 title_flamen_dialis_desc;The Flamen Dialis is the high priest of Jupiter.;;;;;;;;;;;;;;;x
 title_flaminica_dialis;Flaminica Dialis;;;;;;;;;;;;;;;x
 title_flaminica_dialis_desc;As wife of the Flamen Dialis, the Flaminica Dialis are entrusted to performs certain religious rituals.;;;;;;;;;;;;;;;x
+modifier_flamen_martialis;Flamen Martialis;;;;;;;;;;;;;;;x
 title_flamen_martialis;Flamen Martialis;;;;;;;;;;;;;;;x
 title_flamen_martialis_desc;The Flamen Martialis is the high priest of Mars.;;;;;;;;;;;;;;;x
 title_flaminica_martialis;Flaminica Martialis;;;;;;;;;;;;;;;x
 title_flaminica_martialis_desc;As wife of the Flamen Martialis, the Flaminica Martialis are entrusted to performs certain religious rituals.;;;;;;;;;;;;;;;x
+modifier_flamen_quirinalis;Flamen Quirinalis;;;;;;;;;;;;;;;x
 title_flamen_quirinalis;Flamen Quirinalis;;;;;;;;;;;;;;;x
 title_flamen_quirinalis_desc;The Flamen Quirinalis is the high priest of Quirinus.;;;;;;;;;;;;;;;x
 title_flaminica_quirinalis;Flaminica Quirinalis;;;;;;;;;;;;;;;x

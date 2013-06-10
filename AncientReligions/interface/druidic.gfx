@@ -49,6 +49,13 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	spriteType = {
+		name = "GFX_trait_fian"
+		texturefile = "gfx/traits/fian.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 	# Event Pictures
 	spriteType = {
 		name = "GFX_evt_headhunter"
@@ -68,6 +75,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_evt_Whispering_in_ear"
 		texturefile = "gfx\\event_pictures\Whispering_in_ear.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_celtic_warriors"
+		texturefile = "gfx\\event_pictures\battle_gaul.tga"
 		allwaystransparent = yes
 	}
 }

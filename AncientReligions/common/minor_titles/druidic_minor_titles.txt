@@ -20,11 +20,15 @@ title_druid = {
 		OR = {
 			religion = druidic
 			religion = druidic_reformed
+			religion = gaelic_pagan
+			religion = gaelic_pagan_reformed
 		}
 		FROM = {
 			OR = {
 				religion = druidic
 				controls_religion = druidic_reformed
+				religion = gaelic_pagan
+				religion = gaelic_pagan_reformed
 			}
 		}
 	}
@@ -69,6 +73,37 @@ title_uchelwr = {
 
 	message = yes
 }
+title_laoch = {
+	dignity = 0.075
+	grant_limit = 4
+	opinion_effect = 10
+	
+	monthly_salary = 0.005
+	monthly_prestige = 0.005
+	
+	allow = {
+		is_adult = yes
+		is_female = no
+		FROM = {
+			is_feudal = yes
+			OR = {
+				religion = gaelic
+				religion = gaelic_reformed
+			}
+		}
+		NOT = { has_minor_title = title_vates }
+		NOT = { has_minor_title = title_druid }
+		NOT = { has_minor_title = title_champion }
+		NOT = { has_minor_title = title_court_bard }
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
 title_royal_champion = {
 	dignity = 0.2
 	realm_in_name = yes
@@ -98,6 +133,8 @@ title_royal_champion = {
 				OR = {
 					religion = druidic
 					religion = druidic_reformed
+					religion = gaelic_pagan
+					religion = gaelic_pagan_reformed
 				}
 			}
 		}
@@ -105,6 +142,8 @@ title_royal_champion = {
 			OR = {
 				religion = druidic
 				religion = druidic_reformed
+				religion = gaelic_pagan
+				religion = gaelic_pagan_reformed
 
 			}
 			OR = {
@@ -119,6 +158,7 @@ title_royal_champion = {
 		NOT = { has_minor_title = title_druid }
 		NOT = { has_minor_title = title_court_bard }
 		NOT = { has_minor_title = title_uchelwr }
+		NOT = { has_minor_title = title_laoch }
 	}
 	
 	gain_effect = {
@@ -144,16 +184,21 @@ title_vates = {
 			OR = {
 				religion = druidic
 				religion = druidic_reformed
+				religion = gaelic_pagan
+				religion = gaelic_pagan_reformed
 			}
 		}
 		OR = {
 				religion = druidic
 				religion = druidic_reformed
+				religion = gaelic_pagan
+				religion = gaelic_pagan_reformed
 		}
 		NOT = { has_minor_title = title_champion }
 		NOT = { has_minor_title = title_druid }
 		NOT = { has_minor_title = title_court_bard }
 		NOT = { has_minor_title = title_uchelwr }
+		NOT = { has_minor_title = title_laoch }
 	}
 	
 	gain_effect = {
@@ -177,8 +222,10 @@ title_court_bard = {
 		FROM = {
 			is_feudal = yes
 			OR = {
-				religion = norse_pagan
-				religion = norse_pagan_reformed
+				religion = druidic
+				religion = druidic_reformed
+				religion = gaelic_pagan
+				religion = gaelic_pagan_reformed
 			}
 		}
 		trait = poet
@@ -186,8 +233,9 @@ title_court_bard = {
 		NOT = { has_minor_title = title_champion }
 		NOT = { has_minor_title = title_vates }
 		NOT = { has_minor_title = title_uchelwr }
+		NOT = { has_minor_title = title_laoch }
 	}
-	
+
 	gain_effect = {
 	}
 	lose_effect = {

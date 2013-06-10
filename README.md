@@ -30,4 +30,4 @@ Reformation:
 If your faith grows powerful enough, you will need to reorganize it and give greater powers to the druids.
 
 
-The work on the brythonic branch of Druidism is complete for the first release, next step is to work on the Gaelic branch.
+With Gaelic and Brythonic druidism released, the current step is to make each one more unique and iron out any bugs.

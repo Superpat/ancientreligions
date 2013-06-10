@@ -21,9 +21,9 @@ Sacrifices:
 
 Sacrifice your enemies during great celebrations to the glory of the Gods!
 
-The Sons of Gwydion:
+The Sons of Gwydion/ The Fianna:
 
-Call the sons of Gwydion to the defense of Britain and send your sons to gather glory in their band, but beware, not all of them will come back!
+Call the sons of Gwydion/The Fianna to the defense of Britain/The Isles and send your sons to gather glory in their bands, but beware, not all of them will come back!
 
 Reformation:
 

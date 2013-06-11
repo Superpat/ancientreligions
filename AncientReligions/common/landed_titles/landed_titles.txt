@@ -2171,6 +2171,41 @@ d_ghilman = {
 	modifier = d_ghilman_modifier
 }
 
+d_ghanan_band = {
+	color = { 108 123 48 }
+	color2 = { 255 255 255 }
+
+	capital = 913 # Ghana
+	
+	# Hire Trigger
+	allow = {
+		always = yes
+	}
+	
+	# Parent Religion 
+	religion = west_african_pagan
+	
+	culture = manden
+	
+	mercenary = yes
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 1.0
+	
+	modifier = d_ghanan_band_modifier
+}
+
 # EMPIRES
 
 e_hre = {
@@ -2633,6 +2668,48 @@ e_hre = {
 				b_salm = {
 				}
 				b_stavelot = {
+				}
+			}
+			c_julich = {
+				color={ 138 138 138 }
+				color2={ 255 255 255 }
+			
+				b_julich = {
+				}
+				b_aachen = {
+				}
+				b_prum = {
+				}
+				b_geldern = {
+				}
+				b_roermond = {
+				}
+				b_duren = {
+				}
+				b_moers = {
+				}
+				b_monschau = {
+				}
+			}
+			c_loon = {
+				color={ 147 146 140 }
+				color2={ 255 255 255 }
+			
+				b_loon = {
+				}
+				b_maastricht = {
+				}
+				b_hasselt = {
+				}
+				b_valkenburg = {
+				}
+				b_heinsberg = {
+				}
+				b_hesbaie = {
+				}
+				b_wassenberg = {
+				}
+				b_tongeren = {
 				}
 			}
 		}
@@ -3479,27 +3556,6 @@ e_hre = {
 				b_brauweiler = {
 				}
 			}
-			c_loon = {
-				color={ 147 146 140 }
-				color2={ 255 255 255 }
-			
-				b_loon = {
-				}
-				b_maastricht = {
-				}
-				b_hasselt = {
-				}
-				b_valkenburg = {
-				}
-				b_heinsberg = {
-				}
-				b_hesbaie = {
-				}
-				b_wassenberg = {
-				}
-				b_tongeren = {
-				}
-			}
 			c_munster = {
 				color={ 212 212 212 }
 				color2={ 255 255 255 }
@@ -3521,28 +3577,6 @@ e_hre = {
 				b_ahlen = {
 				}
 			}
-			c_julich = {
-				color={ 138 138 138 }
-				color2={ 255 255 255 }
-			
-				b_julich = {
-				}
-				b_aachen = {
-				}
-				b_prum = {
-				}
-				b_geldern = {
-				}
-				b_roermond = {
-				}
-				b_duren = {
-				}
-				b_moers = {
-				}
-				b_monschau = {
-				}
-			}
-			
 			c_kleve = {
 				color={ 132 132 132 }
 				color2={ 255 255 255 }
@@ -4067,6 +4101,7 @@ e_byzantium = {
 					turkish = "Balakhisar"
 				}
 				b_lampsakos = {
+					holy_site = hellenic_pagan
 				}
 				b_alexandriatroas = {
 				}
@@ -4344,6 +4379,7 @@ e_byzantium = {
 					turkish = "Salonika"
 				}
 				b_thesedessa = {
+					holy_site = hellenic_pagan
 				}
 				b_voden = {
 				}
@@ -4597,6 +4633,7 @@ e_byzantium = {
 				}
 				b_piraeaus = {
 					holy_site = orthodox
+					holy_site = hellenic_pagan
 				}
 				b_megara = {
 				}
@@ -7968,6 +8005,8 @@ e_italy = {
 					holy_site = catholic
 					holy_site = aztec
 					holy_site = aztec_reformed
+					holy_site = hellenic_pagan
+					holy_site = pagan
 					used_for_dynasty_names = no
 				}
 				b_viterbo = {
@@ -8451,6 +8490,7 @@ e_scandinavia = {
 					danish = "Lødøse"
 				}
 				b_skara = {
+					holy_site = pagan
 				}
 				b_falkoping = {
 					norwegian = "Falkøping"
@@ -11264,7 +11304,7 @@ e_wendish_empire = {
 				template = 0
 				layer = {
 					texture = 2
-					texture_internal = 0
+					texture_internal = 2
 					emblem = 0
 					color = 0
 					color = 0
@@ -21512,6 +21552,7 @@ e_arabia = {
 				b_mecca = {
 					holy_site = sunni
 					holy_site = shiite
+					holy_site = pagan
 				}
 				b_jeddah = {
 				}
@@ -21986,6 +22027,7 @@ e_arabia = {
 					holy_site = miaphysite
 					holy_site = monophysite
 					holy_site = nestorian
+					holy_site = hellenic_pagan
 				}
 				b_abukir = {
 				}
@@ -22670,6 +22712,7 @@ e_arabia = {
 					holy_site = miaphysite
 					holy_site = monophysite
 					holy_site = nestorian
+					holy_site = pagan
 				}
 				b_nablus = {
 				}
@@ -26397,10 +26440,11 @@ e_britannia = {
 			
 			capital = 11 # Dublin
 			
-			norwegian = "Dublin"
-			danish = "Dublin"
-			swedish = "Dublin"
-			norse = "Dublin"
+			norwegian = Dublin
+			danish = Dublin
+			swedish = Dublin
+			norse = Dublin
+			irish = Tara
 			
 			pagan_coa = {
 				template = 0
@@ -26710,7 +26754,9 @@ e_mali = {
 				
 				b_el_ghaba = {}
 				b_koumbi_saleh = {}
-				b_silla = {}
+				b_silla = {
+					holy_site = pagan
+				}
 				b_singhanah = {}
 				b_samakanda = {}
 				b_ras_elma = {}

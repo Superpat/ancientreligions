@@ -6841,15 +6841,10 @@ pagan_holy_war = {
 
 	can_use = {
 		ROOT = {
+			religion_group = pagan_group
 			OR = {
-				religion = norse_pagan_reformed
-				religion = tengri_pagan_reformed
-				religion = baltic_pagan_reformed
-				religion = slavic_pagan_reformed
-				religion = finnish_pagan_reformed
-				religion = aztec_reformed
 				religion = aztec
-				religion = west_african_pagan_reformed
+				is_reformed_religion = yes
 			}
 			NOT = { same_realm = FROM }
 			NOT = { religion = FROM }
@@ -6917,15 +6912,10 @@ pagan_holy_war = {
 
 	is_valid = {
 		ROOT = {
+			religion_group = pagan_group
 			OR = {
-				religion = norse_pagan_reformed
-				religion = tengri_pagan_reformed
-				religion = baltic_pagan_reformed
-				religion = slavic_pagan_reformed
-				religion = finnish_pagan_reformed
-				religion = aztec_reformed
 				religion = aztec
-				religion = west_african_pagan_reformed
+				is_reformed_religion = yes
 			}
 			NOT = { same_realm = FROM }
 			NOT = { religion = FROM }

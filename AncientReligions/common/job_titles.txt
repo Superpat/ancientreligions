@@ -156,7 +156,7 @@ job_spiritual = {
 			is_female = no
 			AND = {
 				religion_group = pagan_group
-				NOT = { religion = grecoroman }
+				NOT = { religion = hellenic_pagan }
 				NOT = { religion = aztec }
 				NOT = { religion = aztec_reformed}
 				NOT = { religion = tengri_pagan }

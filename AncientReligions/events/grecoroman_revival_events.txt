@@ -1,6 +1,6 @@
 #######################################
 #
-# Revival of the Greco-Roman religion
+# Revival of the Hellenic religion
 #
 # Event ID ancrel.100 - ancrel.109 reserved
 #
@@ -129,7 +129,7 @@ character_event = {
 				religion_authority = 0.6
 			}
 		}
-		religion = grecoroman
+		religion = hellenic_pagan
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical
@@ -147,7 +147,7 @@ character_event = {
 	}
 }
 
-# Make Greco-Roman Paganism the state religion?
+# Make Hellenic Paganism the state religion?
 character_event = {
 	id = ancrel.102
 	desc = EVTDESCancrel.102
@@ -200,16 +200,16 @@ character_event = {
 			any_realm_character  = {
 				limit = {
 					is_adult = yes
-					religion = grecoroman
+					religion = hellenic_pagan
 				}
-				opinion = { modifier = opinion_grecoroman_state_religion who = ROOT }
+				opinion = { modifier = opinion_hellenic_state_religion who = ROOT }
 			}
 			any_realm_character  = {
 				limit = {
 					is_adult = yes
 					NOT = { religion_group = pagan_group }
 				}
-				opinion = { modifier = opinion_forced_grecoroman_state_religion who = ROOT }
+				opinion = { modifier = opinion_forced_hellenic_state_religion who = ROOT }
 			}
 			capital_scope = {
 				religion = ROOT
@@ -245,22 +245,22 @@ character_event = {
 			any_realm_character  = {
 				limit = {
 					is_adult = yes
-					religion = grecoroman
+					religion = hellenic_pagan
 				}
-				opinion = { modifier = opinion_no_grecoroman_state_religion who = ROOT }
+				opinion = { modifier = opinion_no_hellenic_state_religion who = ROOT }
 			}
 			any_realm_character  = {
 				limit = {
 					is_adult = yes
-					NOT = { religion = grecoroman }
+					NOT = { religion = hellenic_pagan }
 				}
-				opinion = { modifier = opinion_no_forced_grecoroman_state_religion who = ROOT }
+				opinion = { modifier = opinion_no_forced_hellenic_state_religion who = ROOT }
 			}
 		}
 	}
 }
 
-# Adopt the new Greco-Pagan state religion?
+# Adopt the new Hellenic state religion?
 character_event = {
 	id = ancrel.103
 	desc = EVTDESCancrel.103
@@ -367,13 +367,13 @@ character_event = {
 				character_event = { id = ancrel.103 }
 			}
 		}
-		reverse_opinion = { modifier = opinion_adopted_grecoroman_state_religion who = FROM }
+		reverse_opinion = { modifier = opinion_adopted_hellenic_state_religion who = FROM }
 	}
 
 	option = {
 		name = EVTOPTBancrel.103
 		ai_chance = { factor = 80 }
 		piety = 10
-		reverse_opinion = { modifier = opinion_rejected_grecoroman_state_religion who = FROM }
+		reverse_opinion = { modifier = opinion_rejected_hellenic_state_religion who = FROM }
 	}
 }

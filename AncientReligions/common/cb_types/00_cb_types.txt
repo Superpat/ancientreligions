@@ -1389,7 +1389,7 @@ claim_all = {
 								higher_tier_than = COUNT
 								OR = {
 									culture = roman
-									religion = grecoroman
+									religion = hellenic_pagan
 								}
 							}
 						}
@@ -1464,7 +1464,7 @@ claim_all = {
 							higher_tier_than = COUNT
 							OR = {
 								culture = roman
-								religion = grecoroman
+								religion = hellenic_pagan
 							}
 						}
 					}
@@ -2035,7 +2035,7 @@ invasion = {
 								higher_tier_than = COUNT
 								OR = {
 									culture = roman
-									religion = grecoroman
+									religion = hellenic_pagan
 								}
 							}
 						}
@@ -2121,7 +2121,7 @@ invasion = {
 							higher_tier_than = COUNT
 							OR = {
 								culture = roman
-								religion = grecoroman
+								religion = hellenic_pagan
 							}
 						}
 					}
@@ -2312,7 +2312,7 @@ tribal_invasion = {
 							higher_tier_than = COUNT
 							OR = {
 								culture = roman
-								religion = grecoroman
+								religion = hellenic_pagan
 							}
 						}
 					}
@@ -2587,7 +2587,7 @@ crusade = {
 							higher_tier_than = COUNT
 							OR = {
 								culture = roman
-								religion = grecoroman
+								religion = hellenic_pagan
 							}
 						}
 					}
@@ -2639,7 +2639,7 @@ crusade = {
 							higher_tier_than = COUNT
 							OR = {
 								culture = roman
-								religion = grecoroman
+								religion = hellenic_pagan
 							}
 						}
 					}
@@ -5291,7 +5291,7 @@ muslim_invasion = {
 							higher_tier_than = COUNT
 							OR = {
 								culture = roman
-								religion = grecoroman
+								religion = hellenic_pagan
 							}
 						}
 					}
@@ -5340,7 +5340,7 @@ muslim_invasion = {
 							higher_tier_than = COUNT
 							OR = {
 								culture = roman
-								religion = grecoroman
+								religion = hellenic_pagan
 							}
 						}
 					}
@@ -6244,7 +6244,7 @@ viking_invasion = {
 							higher_tier_than = COUNT
 							OR = {
 								culture = roman
-								religion = grecoroman
+								religion = hellenic_pagan
 							}
 						}
 					}
@@ -6485,7 +6485,7 @@ pagan_subjugation = {
 							higher_tier_than = COUNT
 							OR = {
 								culture = roman
-								religion = grecoroman
+								religion = hellenic_pagan
 							}
 						}
 					}
@@ -7313,7 +7313,7 @@ caliphal_subjugation = {
 							higher_tier_than = COUNT
 							OR = {
 								culture = roman
-								religion = grecoroman
+								religion = hellenic_pagan
 							}
 						}
 					}

@@ -1,7 +1,5 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ;;;;;;;;;;
-grecoroman;Greco-Roman;Gréco-Romaine;Greco-Roman;;Greco-romano;;;;;;;;;x
-grecoroman_DESC;The Greco-Roman religion is the last surviving branch of the ancient Greek and Roman belief systems. A pantheon of gods under the king of the gods, called Zeus or Jupiter, rules both Heaven and Earth. Other main gods are the god of war, called Ares or Mars, the goddes of marriage, called Hera or Juno, the goddess of Widsom, called Athena or Minerva, and the goddess of fire, called Hestia or Vesta. Defining features in-game:\n§Y*§! Can raid neighbors for loot\n§Y*§! Can declare Subjugation Wars against all other pagans\n§Y*§! The Pontifex Maximus can call Great Holy Wars;;;;;;;;;x
 GOD_JUNO;Juno;Junon;Juno;;Juno;;;;;;;;;x
 GOD_JUNO_byzantine;Hera;Héra;Hera;;Hera;;;;;;;;;x
 GOD_VESTA;Vesta;Vesta;Vesta;;Vesta;;;;;;;;;x
@@ -27,49 +25,49 @@ GOD_VULCAN_byzantine;Hephaestus;Héphaïstos;Hephaistos;;Hefesto;;;;;;;;;x
 GOD_APOLLO;Apollo;Apollon;Apollon;;Apolo;;;;;;;;;x
 THE_THEOGONY;The Theogony;La Théogonie;Die Theogonie;;La Teogonía;;;;;;;;;x
 ;;;;;;;;;;
-king_grecoroman;Rex;Roi;Rex;;Rey;;;;;;;;;x
-king_grecoroman_byzantine;Regas;Roi;Regas;;Rey;;;;;;;;;x
-king_female_grecoroman;Regina;Reine;Regina;;Reina;;;;;;;;;x
-duke_grecoroman;Legatus Augusti;;;;;;;;;;;;;x
-duke_female_grecoroman;Legata Augusti;;;;;;;;;;;;;x
-count_grecoroman;Legatus;;;;;;;;;;;;;x
-count_female_grecoroman;Legata;;;;;;;;;;;;;x
-baron_grecoroman;Eques;;;;;;;;;;;;;x
-baron_female_grecoroman;Eques;;;;;;;;;;;;;x
+king_hellenic_pagan;Rex;Roi;Rex;;Rey;;;;;;;;;x
+king_hellenic_pagan_byzantine;Regas;Roi;Regas;;Rey;;;;;;;;;x
+king_female_hellenic_pagan;Regina;Reine;Regina;;Reina;;;;;;;;;x
+duke_hellenic_pagan;Legatus Augusti;;;;;;;;;;;;;x
+duke_female_hellenic_pagan;Legata Augusti;;;;;;;;;;;;;x
+count_hellenic_pagan;Legatus;;;;;;;;;;;;;x
+count_female_hellenic_pagan;Legata;;;;;;;;;;;;;x
+baron_hellenic_pagan;Eques;;;;;;;;;;;;;x
+baron_female_hellenic_pagan;Eques;;;;;;;;;;;;;x
 ;;;;;;;;;;
-temple_king_grecoroman;Rex Sacrorum;Roi Sacrorum;Rex Sacrorum;;Rey Sacrorum;;;;;;;;;x
-temple_king_female_grecoroman;Regina Sacrorum;Reine Sacrorum;Regina Sacrorum;;Reina Sacrorum;;;;;;;;;x
-temple_duke_grecoroman;Pontifex Magnus;;;;;;;;;;;;;x
-temple_count_grecoroman;Pontifex;;;;;;;;;;;;;x
+temple_king_hellenic_pagan;Rex Sacrorum;Roi Sacrorum;Rex Sacrorum;;Rey Sacrorum;;;;;;;;;x
+temple_king_female_hellenic_pagan;Regina Sacrorum;Reine Sacrorum;Regina Sacrorum;;Reina Sacrorum;;;;;;;;;x
+temple_duke_hellenic_pagan;Pontifex Magnus;;;;;;;;;;;;;x
+temple_count_hellenic_pagan;Pontifex;;;;;;;;;;;;;x
 ;;;;;;;;;;
-city_emperor_grecoroman;Emperor;Empereur;Kaiser;;Emperador;;;;;;;;;x
-city_king_grecoroman;Consul;Consul;Konsulat;;Cónsul;;;;;;;;;x
-city_king_grecoroman_byzantine;Hypatos;;;;;;;;;;;;;x
-city_duke_grecoroman;Proconsul;Proconsul;Prokonsul;;Procónsul;;;;;;;;;x
-city_duke_grecoroman_byzantine;Anthypatos;;;;;;;;;;;;;x
-city_count_grecoroman;Lord Prefect;Seigneur-Préfet;Oberbürgermeister;;Gran Prefecto;;;;;;;;;x
-city_baron_grecoroman;Prefect;Préfet;Bürgermeister;;Prefecto;;;;;;;;;x
-family_palace_baron_grecoroman;Pater Familias;;;;;;;;;;;;;x
-family_palace_baron_female_grecoroman;Mater Familias;;;;;;;;;;;;;x
+city_emperor_hellenic_pagan;Emperor;Empereur;Kaiser;;Emperador;;;;;;;;;x
+city_king_hellenic_pagan;Consul;Consul;Konsulat;;Cónsul;;;;;;;;;x
+city_king_hellenic_pagan_byzantine;Hypatos;;;;;;;;;;;;;x
+city_duke_hellenic_pagan;Proconsul;Proconsul;Prokonsul;;Procónsul;;;;;;;;;x
+city_duke_hellenic_pagan_byzantine;Anthypatos;;;;;;;;;;;;;x
+city_count_hellenic_pagan;Lord Prefect;Seigneur-Préfet;Oberbürgermeister;;Gran Prefecto;;;;;;;;;x
+city_baron_hellenic_pagan;Prefect;Préfet;Bürgermeister;;Prefecto;;;;;;;;;x
+family_palace_baron_hellenic_pagan;Pater Familias;;;;;;;;;;;;;x
+family_palace_baron_female_hellenic_pagan;Mater Familias;;;;;;;;;;;;;x
 ;;;;;;;;;;
-duchy_grecoroman;Province;Province;Provinz;;Provincia;;;;;;;;;x;
-duchy_of_grecoroman;Province of;Province de;Provinz von;;Provincia de;;;;;;;;;x;
-temple_kingdom_grecoroman;Sacred Kingdom;;;;;;;;;;;;;x
-temple_kingdom_of_grecoroman;Sacred Kingdom of;;;;;;;;;;;;;x
-temple_duchy_grecoroman;Grand Pontificate;;;;;;;;;;;;;x;
-temple_duchy_of_grecoroman;Grand Pontificate of;;;;;;;;;;;;;x;
-temple_county_grecoroman;Pontificate;;;;;;;;;;;;;x;
-temple_county_of_grecoroman;Pontificate of;;;;;;;;;;;;;x;
+duchy_hellenic_pagan;Province;Province;Provinz;;Provincia;;;;;;;;;x;
+duchy_of_hellenic_pagan;Province of;Province de;Provinz von;;Provincia de;;;;;;;;;x;
+temple_kingdom_hellenic_pagan;Sacred Kingdom;;;;;;;;;;;;;x
+temple_kingdom_of_hellenic_pagan;Sacred Kingdom of;;;;;;;;;;;;;x
+temple_duchy_hellenic_pagan;Grand Pontificate;;;;;;;;;;;;;x;
+temple_duchy_of_hellenic_pagan;Grand Pontificate of;;;;;;;;;;;;;x;
+temple_county_hellenic_pagan;Pontificate;;;;;;;;;;;;;x;
+temple_county_of_hellenic_pagan;Pontificate of;;;;;;;;;;;;;x;
 ;;;;;;;;;;
-d_grecoroman;The Pontificate Maxima;;;;;;;;;;;;;x
+d_hellenic_pagan;The Pontificate Maxima;;;;;;;;;;;;;x
 PONTIFEX_MAXIMUS;Pontifex Maximus;Pontifex Maximus;Pontifex Maximus;;Pontifex Maximus;;;;;;;;;x
 PONTIFEX_MAXIMUS_FOA;Your Holiness;Sa Sainteté;Eure Heiligkeit;;Su Santidad;;;;;;;;;x
 ;;;;;;;;;;
-job_chancellor_grecoroman;Magister Officiorum;;;;;;;;;;;;;;;x
-job_marshal_grecoroman;Magister Militum;;;;;;;;;;;;;;;x
-job_marshal_grecoroman_byzantine;Stratelates;;;;;;;;;;;;;;;x
-job_treasurer_grecoroman;Quaestor;;;;;;;;;;;;;;;x
-job_spiritual_grecoroman;Augur;;;;;;;;;;;;;;;x
+job_chancellor_hellenic_pagan;Magister Officiorum;;;;;;;;;;;;;;;x
+job_marshal_hellenic_pagan;Magister Militum;;;;;;;;;;;;;;;x
+job_marshal_hellenic_pagan_byzantine;Stratelates;;;;;;;;;;;;;;;x
+job_treasurer_hellenic_pagan;Quaestor;;;;;;;;;;;;;;;x
+job_spiritual_hellenic_pagan;Augur;;;;;;;;;;;;;;;x
 ;;;;;;;;;;
 title_censor;Censor;Censeur;Censur;;Censor;;;;;;;;;;;x
 title_censor_desc;The Censor is responsible for taking the census of the realm. While the office was originally instituded for taxation purposes the most important duty of the Censor is to supervise public morality and recommend suitable candidates for public offices.;;;;;;;;;;;;;;;x
@@ -94,12 +92,12 @@ title_flamen_quirinalis_desc;The Flamen Quirinalis is the high priest of Quirinu
 title_flaminica_quirinalis;Flaminica Quirinalis;;;;;;;;;;;;;;;x
 title_flaminica_quirinalis_desc;As wife of the Flamen Quirinalis, the Flaminica Quirinalis are entrusted to performs certain religious rituals.;;;;;;;;;;;;;;;x
 ;;;;;;;;;;
-opinion_no_grecoroman_state_religion;Did not establish a Greco-Roman state religion;;;;;;;;;;;;;;;x
-opinion_no_forced_grecoroman_state_religion;Did not enforce a Greco-Roman state religion;;;;;;;;;;;;;;;x
-opinion_grecoroman_state_religion;Established a Greco-Roman state religion;;;;;;;;;;;;;;;x
-opinion_forced_grecoroman_state_religion;Enforced a Greco-Roman state religion;;;;;;;;;;;;;;;x
-opinion_adopted_grecoroman_state_religion;Adopted the Greco-Roman state religion;;;;;;;;;;;;;;;x
-opinion_rejected_grecoroman_state_religion;Rejected the Greco-Roman state religion;;;;;;;;;;;;;;;x
+opinion_no_hellenic_state_religion;Did not establish a Hellenic state religion;;;;;;;;;;;;;;;x
+opinion_no_forced_hellenic_state_religion;Did not enforce a Hellenic state religion;;;;;;;;;;;;;;;x
+opinion_hellenic_state_religion;Established a Hellenic state religion;;;;;;;;;;;;;;;x
+opinion_forced_hellenic_state_religion;Enforced a Hellenic state religion;;;;;;;;;;;;;;;x
+opinion_adopted_hellenic_state_religion;Adopted the Hellenic state religion;;;;;;;;;;;;;;;x
+opinion_rejected_hellenic_state_religion;Rejected the Hellenic state religion;;;;;;;;;;;;;;;x
 EVTDESCancrel.100;Having long studied the old Greek and Roman classics you are wondering if their religious views wasn't better than your own.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTAancrel.100;Yes, the old religion was better;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTBancrel.100;No, I'm secure in my faith;;;;;;;;;;;;;;;;;;;;;;;;x

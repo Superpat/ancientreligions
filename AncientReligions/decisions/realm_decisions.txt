@@ -390,7 +390,7 @@ decisions = {
 			OR = {
 				culture = roman
 				culture = italian
-				religion = grecoroman
+				religion = hellenic_pagan
 				has_landed_title = e_italy
 			}
 			OR = {
@@ -915,8 +915,8 @@ decisions = {
 		is_high_prio = yes
 		potential = {
 			has_dlc = "The Old Gods"
-			religion = grecoroman
-			NOT = { has_global_flag = grecoroman_priesthood_founded }
+			religion = hellenic_pagan
+			NOT = { has_global_flag = hellenic_priesthood_founded }
 			OR = {
 				tier = emperor
 				tier = king
@@ -928,14 +928,14 @@ decisions = {
 			piety = 300
 		}
 		effect = {
-			set_global_flag = grecoroman_priesthood_founded
+			set_global_flag = hellenic_priesthood_founded
 			piety = -300
-			activate_title = { title = d_grecoroman status = yes }
+			activate_title = { title = d_hellenic_pagan status = yes }
 			hidden_tooltip = {
-				d_grecoroman = { grant_title = ROOT }
+				d_hellenic_pagan = { grant_title = ROOT }
 				if = {
 					limit = {
-						religion = grecoroman
+						religion = hellenic_pagan
 						OR = {
 							has_landed_title = e_byzantium
 							has_landed_title = e_roman_empire

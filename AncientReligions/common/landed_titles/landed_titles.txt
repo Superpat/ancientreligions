@@ -4021,7 +4021,7 @@ e_byzantium = {
 				b_lebedos = {
 					holy_site = orthodox
 					holy_site = nestorian
-					holy_site = grecoroman
+					holy_site = hellenic_pagan
 				}
 				b_miletos = {
 				}
@@ -4102,7 +4102,6 @@ e_byzantium = {
 					turkish = "Balakhisar"
 				}
 				b_lampsakos = {
-					holy_site = hellenic_pagan
 				}
 				b_alexandriatroas = {
 				}
@@ -4612,7 +4611,6 @@ e_byzantium = {
 				b_naupaktos = {
 				}
 				b_amphissa = {
-					holy_site = grecoroman
 				}
 				b_lidoriki = {
 				}
@@ -4635,7 +4633,6 @@ e_byzantium = {
 				}
 				b_piraeaus = {
 					holy_site = orthodox
-					holy_site = hellenic_pagan
 				}
 				b_megara = {
 				}
@@ -4664,7 +4661,7 @@ e_byzantium = {
 				b_patras = {
 				}
 				b_pyrgos = {
-					holy_site = grecoroman
+					holy_site = hellenic_pagan
 				}
 				b_andravida = {
 				}
@@ -6592,7 +6589,6 @@ e_byzantium = {
 				b_aversa = {
 				}
 				b_cumae = {
-					holy_site = grecoroman
 				}
 				b_pozzuoli = {
 				}
@@ -8009,7 +8005,6 @@ e_italy = {
 					holy_site = catholic
 					holy_site = aztec
 					holy_site = aztec_reformed
-					holy_site = grecoroman
 					holy_site = hellenic_pagan
 					holy_site = pagan
 					used_for_dynasty_names = no
@@ -28474,7 +28469,7 @@ d_west_african_pagan_reformed = {
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
 
-d_grecoroman = {
+d_hellenic_pagan = {
 	color={ 155 155 235 }
 	color2={ 220 220 0 }
 	
@@ -28494,9 +28489,9 @@ d_grecoroman = {
 	dignity = 100 # Counted as having this many more counties than it does
 	
 	# Controls a religion
-	controls_religion = grecoroman
+	controls_religion = hellenic_pagan
 	
-	religion = grecoroman
+	religion = hellenic_pagan
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }

@@ -881,7 +881,7 @@ character_event = {
 				higher_tier_than = COUNT
 				OR = {
 					culture = roman
-					religion = grecoroman
+					religion = hellenic_pagan
 				}
 			}
 		}

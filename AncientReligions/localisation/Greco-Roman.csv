@@ -1,38 +1,38 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ;;;;;;;;;;
-grecoroman;Greco-Roman;GrÃ©co-Romaine;Greco-Roman;;Greco-romano;;;;;;;;;x
-grecoroman_reformed;Greco-Roman;GrÃ©co-Romaine;Greco-Roman;;Greco-romano;;;;;;;;;x
-grecoroman_DESC;The Greco-Roman heathenry is the last surviving branch of the ancient Greek and Roman belief systems. A pantheon of gods under the king of the gods, called Zeus or Jupiter, rules both Heaven and Earth. Other main gods are the god of war, called Ares or Mars, the goddes of marriage, called Hera or Juno, the goddess of Widsom, called Athena or Minerva, and the goddess of fire, called Hestia or Vesta. Defining features in-game:\nÂ§Y*Â§! Can raid neighbors for loot\nÂ§Y*Â§! Low-tech non-pagans have very low Supply Limit in Pagan counties\nÂ§Y*Â§! Can declare Subjugation Wars against all other pagans\nÂ§Y*Â§! Rulers are limited to Gavelkind Succession\nÂ§Y*Â§! Rulers cannot declare Holy Wars\nÂ§Y*Â§! Inferior at conversion and vulnerable to non-pagan missionaries\nÂ§Y*Â§! Rulers lose Prestige if at peace for too long\nÂ§Y*Â§! The Greco-Roman Pagan faith can be Reformed;;;;;;;;;x
-grecoroman_reformed_DESC;The reformed Greco-Roman Pagan church has a standardized liturgy and a formal church hierarchy modelled after the religious institutions of the old Roman Republic and are led by the Pontifex Maximus, who - much like an Islamic Caliph - is both a secular ruler and the religious leader of the faithful. Defining features in-game:\nÂ§Y*Â§! Can raid neighbors for loot\nÂ§Y*Â§! The Pontifex Maximus can call Great Holy Wars;;;;;;;;;x
+grecoroman;Greco-Roman;Gréco-Romaine;Greco-Roman;;Greco-romano;;;;;;;;;x
+grecoroman_reformed;Greco-Roman;Gréco-Romaine;Greco-Roman;;Greco-romano;;;;;;;;;x
+grecoroman_DESC;The Greco-Roman heathenry is the last surviving branch of the ancient Greek and Roman belief systems. A pantheon of gods under the king of the gods, called Zeus or Jupiter, rules both Heaven and Earth. Other main gods are the god of war, called Ares or Mars, the goddes of marriage, called Hera or Juno, the goddess of Widsom, called Athena or Minerva, and the goddess of fire, called Hestia or Vesta. Defining features in-game:\n§Y*§! Can raid neighbors for loot\n§Y*§! Low-tech non-pagans have very low Supply Limit in Pagan counties\n§Y*§! Can declare Subjugation Wars against all other pagans\n§Y*§! Rulers are limited to Gavelkind Succession\n§Y*§! Rulers cannot declare Holy Wars\n§Y*§! Inferior at conversion and vulnerable to non-pagan missionaries\n§Y*§! Rulers lose Prestige if at peace for too long\n§Y*§! The Greco-Roman Pagan faith can be Reformed;;;;;;;;;x
+grecoroman_reformed_DESC;The reformed Greco-Roman Pagan church has a standardized liturgy and a formal church hierarchy modelled after the religious institutions of the old Roman Republic and are led by the Pontifex Maximus, who - much like an Islamic Caliph - is both a secular ruler and the religious leader of the faithful. Defining features in-game:\n§Y*§! Can raid neighbors for loot\n§Y*§! The Pontifex Maximus can call Great Holy Wars;;;;;;;;;x
 GOD_JUNO;Juno;Junon;Juno;;Juno;;;;;;;;;x
-GOD_JUNO_byzantine;Hera;HÃ©ra;Hera;;Hera;;;;;;;;;x
+GOD_JUNO_byzantine;Hera;Héra;Hera;;Hera;;;;;;;;;x
 GOD_VESTA;Vesta;Vesta;Vesta;;Vesta;;;;;;;;;x
 GOD_VESTA_byzantine;Hestia;Hestia;Hestia;;Hestia;;;;;;;;;x
 GOD_MINERVA;Minerva;Minerve;Minerva;;Minerva;;;;;;;;;x
-GOD_MINERVA_byzantine;Athena;AthÃ©na;Athene;;Atenea;;;;;;;;;x
-GOD_CERES;Ceres;CÃ©rÃ¨s;Ceres;;Ceres;;;;;;;;;x
-GOD_CERES_byzantine;Demeter;DÃ©mÃ©ter;Demeter;;DemÃ©ter;;;;;;;;;x
+GOD_MINERVA_byzantine;Athena;Athéna;Athene;;Atenea;;;;;;;;;x
+GOD_CERES;Ceres;Cérès;Ceres;;Ceres;;;;;;;;;x
+GOD_CERES_byzantine;Demeter;Déméter;Demeter;;Deméter;;;;;;;;;x
 GOD_DIANA;Diana;Diane;Diana;;Diana;;;;;;;;;x
-GOD_DIANA_byzantine;Artemis;ArtÃ©mis;Artemis;;Artemisa;;;;;;;;;x
-GOD_VENUS;Venus;VÃ©nus;Venus;;Venus;;;;;;;;;x
+GOD_DIANA_byzantine;Artemis;Artémis;Artemis;;Artemisa;;;;;;;;;x
+GOD_VENUS;Venus;Vénus;Venus;;Venus;;;;;;;;;x
 GOD_VENUS_byzantine;Aphrodite;Aphrodite;Aphrodite;;Afrodita;;;;;;;;;x
 GOD_MARS;Mars;Mars;Mars;;Marte;;;;;;;;;x
-GOD_MARS_byzantine;Ares;ArÃ¨s;Ares;;Ares;;;;;;;;;x
+GOD_MARS_byzantine;Ares;Arès;Ares;;Ares;;;;;;;;;x
 GOD_MERCURY;Mercury;Mercure;Mercurius;;Mercurio;;;;;;;;;x
-GOD_MERCURY_byzantine;Hermes;HermÃ¨s;Hermes;;Hermes;;;;;;;;;x
-GOD_JUPITER;Jupiter;Jupiter;Jupiter;;JÃºpiter;;;;;;;;;x
+GOD_MERCURY_byzantine;Hermes;Hermès;Hermes;;Hermes;;;;;;;;;x
+GOD_JUPITER;Jupiter;Jupiter;Jupiter;;Júpiter;;;;;;;;;x
 GOD_JUPITER_byzantine;Zeus;Zeus;Zeus;;Zeus;;;;;;;;;x
 GOD_NEPTUNE;Neptune;Neptune;Neptun;;Neptuno;;;;;;;;;x
-GOD_NEPTUNE_byzantine;Poseidon;PosÃ©idon;Poseidon;;PoseidÃ³n;;;;;;;;;x
+GOD_NEPTUNE_byzantine;Poseidon;Poséidon;Poseidon;;Poseidón;;;;;;;;;x
 GOD_VULCAN;Vulcan;Vulcain;Vulcanus;;Vulcano;;;;;;;;;x
-GOD_VULCAN_byzantine;Hephaestus;HÃ©phaÃ¯stos;Hephaistos;;Hefesto;;;;;;;;;x
+GOD_VULCAN_byzantine;Hephaestus;Héphaïstos;Hephaistos;;Hefesto;;;;;;;;;x
 GOD_APOLLO;Apollo;Apollon;Apollon;;Apolo;;;;;;;;;x
-THE_THEOGONY;The Theogony;La ThÃ©ogonie;Die Theogonie;;La TeogonÃ­a;;;;;;;;;x
+THE_THEOGONY;The Theogony;La Théogonie;Die Theogonie;;La Teogonía;;;;;;;;;x
 ;;;;;;;;;;
 king_grecoroman;Rex;Roi;Rex;;Rey;;;;;;;;;x
 king_grecoroman_reformed;Rex;Roi;Rex;;Rey;;;;;;;;;x
-king_grecoroman_byzantine;RÄ“gas;Roi;RÄ“gas;;Rey;;;;;;;;;x
-king_grecoroman_reformed_byzantine;RÄ“gas;Roi;RÄ“gas;;Rey;;;;;;;;;x
+king_grecoroman_byzantine;Regas;Roi;Regas;;Rey;;;;;;;;;x
+king_grecoroman_reformed_byzantine;Regas;Roi;Regas;;Rey;;;;;;;;;x
 king_female_grecoroman;Regina;Reine;Regina;;Reina;;;;;;;;;x
 king_female_grecoroman_reformed;Regina;Reine;Regina;;Reina;;;;;;;;;x
 duke_grecoroman;Legatus Augusti;;;;;;;;;;;;;x
@@ -59,18 +59,18 @@ temple_count_grecoroman_reformed;Pontifex;;;;;;;;;;;;;x
 ;;;;;;;;;;
 city_emperor_grecoroman;Emperor;Empereur;Kaiser;;Emperador;;;;;;;;;x
 city_emperor_grecoroman_reformed;Emperor;Empereur;Kaiser;;Emperador;;;;;;;;;x
-city_king_grecoroman;Consul;Consul;Konsulat;;CÃ³nsul;;;;;;;;;x
-city_king_grecoroman_reformed;Consul;Consul;Konsulat;;CÃ³nsul;;;;;;;;;x
+city_king_grecoroman;Consul;Consul;Konsulat;;Cónsul;;;;;;;;;x
+city_king_grecoroman_reformed;Consul;Consul;Konsulat;;Cónsul;;;;;;;;;x
 city_king_grecoroman_byzantine;Hypatos;;;;;;;;;;;;;x
 city_king_grecoroman_reformed_byzantine;Hypatos;;;;;;;;;;;;;x
-city_duke_grecoroman;Proconsul;Proconsul;Prokonsul;;ProcÃ³nsul;;;;;;;;;x
-city_duke_grecoroman_reformed;Proconsul;Proconsul;Prokonsul;;ProcÃ³nsul;;;;;;;;;x
+city_duke_grecoroman;Proconsul;Proconsul;Prokonsul;;Procónsul;;;;;;;;;x
+city_duke_grecoroman_reformed;Proconsul;Proconsul;Prokonsul;;Procónsul;;;;;;;;;x
 city_duke_grecoroman_byzantine;Anthypatos;;;;;;;;;;;;;x
 city_duke_grecoroman_reformed_byzantine;Anthypatos;;;;;;;;;;;;;x
-city_count_grecoroman;Lord Prefect;Seigneur-PrÃ©fet;OberbÃ¼rgermeister;;Gran Prefecto;;;;;;;;;x
-city_count_grecoroman_reformed;Lord Prefect;Seigneur-PrÃ©fet;OberbÃ¼rgermeister;;Gran Prefecto;;;;;;;;;x
-city_baron_grecoroman;Prefect;PrÃ©fet;BÃ¼rgermeister;;Prefecto;;;;;;;;;x
-city_baron_grecoroman_reformed;Prefect;PrÃ©fet;BÃ¼rgermeister;;Prefecto;;;;;;;;;x
+city_count_grecoroman;Lord Prefect;Seigneur-Préfet;Oberbürgermeister;;Gran Prefecto;;;;;;;;;x
+city_count_grecoroman_reformed;Lord Prefect;Seigneur-Préfet;Oberbürgermeister;;Gran Prefecto;;;;;;;;;x
+city_baron_grecoroman;Prefect;Préfet;Bürgermeister;;Prefecto;;;;;;;;;x
+city_baron_grecoroman_reformed;Prefect;Préfet;Bürgermeister;;Prefecto;;;;;;;;;x
 family_palace_baron_grecoroman;Pater Familias;;;;;;;;;;;;;x
 family_palace_baron_grecoroman_reformed;Pater Familias;;;;;;;;;;;;;x
 family_palace_baron_female_grecoroman;Mater Familias;;;;;;;;;;;;;x
@@ -95,7 +95,7 @@ temple_county_of_grecoroman_reformed;Pontificate of;;;;;;;;;;;;;x;
 ;;;;;;;;;;
 d_grecoroman_reformed;The Greatest Pontificate;;;;;;;;;;;;;x
 PONTIFEX_MAXIMUS;Pontifex Maximus;Pontifex Maximus;Pontifex Maximus;;Pontifex Maximus;;;;;;;;;x
-PONTIFEX_MAXIMUS_FOA;Your Holiness;Sa SaintetÃ©;Eure Heiligkeit;;Su Santidad;;;;;;;;;x
+PONTIFEX_MAXIMUS_FOA;Your Holiness;Sa Sainteté;Eure Heiligkeit;;Su Santidad;;;;;;;;;x
 ;;;;;;;;;;
 job_chancellor_grecoroman;Magister Officiorum;;;;;;;;;;;;;;;x
 job_chancellor_grecoroman_reformed;Magister Officiorum;;;;;;;;;;;;;;;x
@@ -110,7 +110,7 @@ job_spiritual_grecoroman_reformed;Augur;;;;;;;;;;;;;;;x
 ;;;;;;;;;;
 title_censor;Censor;Censeur;Censur;;Censor;;;;;;;;;;;x
 title_censor_desc;The Censor is responsible for taking the census of the realm. While the office was originally instituded for taxation purposes the most important duty of the Censor is to supervise public morality and recommend suitable candidates for public offices.;;;;;;;;;;;;;;;x
-title_aedile;Aedile;Ã‰dile;Ã„dil;;Edil;;;;;;;;;;;x
+title_aedile;Aedile;Édile;Ädil;;Edil;;;;;;;;;;;x
 title_aedile_desc;The aediles are responsible for maintenance of public buildings and regulation of public festivals.;;;;;;;;;;;;;;;x
 title_magister_equitum;Magister Equitum;;;;;;;;;;;;;;;x
 title_magister_equitum_desc;Originally a very powerful office second only to the Dictator, the Magister Equitum, or Master of the Horse, is now a mostly ceremonial, but still prestigeous, military function.;;;;;;;;;;;;;;;x

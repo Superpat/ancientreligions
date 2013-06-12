@@ -989,16 +989,19 @@ pagan_group = {
 		graphical_culture = westerngfx
 
 		icon = 37
+		heresy_icon = 37
 		
 		color = { 0.6 0.1 0.1 }
 		god_names = {
-			GOD_JUPITER GOD_MERCURY GOD_MARS GOD_VENUS GOD_MINERVA GOD_VESTA
+			GOD_JUNO GOD_VESTA GOD_MINERVA GOD_CERES GOD_DIANA GOD_VENUS GOD_MARS GOD_MERCURY GOD_JUPITER GOD_NEPTUNE GOD_VULCAN GOD_APOLLO
 		}
 		crusade_name = GREAT_HOLY_WAR
-		scripture_name = THE_LEGENDS
+		scripture_name = THE_THEOGONY
 		priests_can_marry = yes
-		female_temple_holders = yes
-		max_consorts = 3
+		female_temple_holders = no
+		max_consorts = 2
+		
+		can_call_crusade = yes
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3

@@ -1,0 +1,14 @@
+modifier_flamen_dialis = {
+	icon = 17
+	general_opinion = 10
+}
+
+modifier_flamen_martialis = {
+	icon = 17
+	general_opinion = 5
+}
+
+modifier_flamen_quirinalis = {
+	icon = 17
+	general_opinion = 5
+}

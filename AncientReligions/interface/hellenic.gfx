@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_become_pontifex_maximus"
+		texturefile = "gfx\\interface\\decision_icon_convert_to_liege_religion.dds"
+	}
+}

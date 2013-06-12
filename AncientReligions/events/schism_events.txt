@@ -3,10 +3,12 @@
 # Schism Events
 #
 # Event ID ID LoR.200 - LoR.399 reserved
+# Event ID ancrel.200 - ancrel.219 reserved
 #
 #######################################
 
 namespace = LoR
+namespace = ancrel
 
 ### The Pentarchy
 
@@ -19,8 +21,13 @@ character_event = {
 	trigger = {
 		has_dlc = "Legacy of Rome"
 		OR = {
+			has_landed_title = e_latin_empire
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
+		}
+		OR = {
+			religion = orthodox
+			is_heresy_of = orthodox
 		}
 		NOT = { has_global_flag = pat_antioch }
 		completely_controls = c_antiocheia
@@ -29,6 +36,31 @@ character_event = {
 	option = {
 		name = EVTOPTALoR.200
 		set_global_flag = pat_antioch
+		piety = 100
+	}
+}
+character_event = {
+	id = ancrel.200
+	desc = EVTDESCancrel.200
+	picture = GFX_evt_bishop
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		OR = {
+			has_landed_title = k_papal_state
+			tier = emperor
+		}
+		OR = {
+			religion = catholic
+			is_heresy_of = catholic
+		}
+		NOT = { has_global_flag = lat_pat_antioch }
+		completely_controls = c_antiocheia
+	}
+	
+	option = {
+		name = EVTOPTALoR.200
+		set_global_flag = lat_pat_antioch
 		piety = 100
 	}
 }
@@ -42,8 +74,13 @@ character_event = {
 	trigger = {
 		has_dlc = "Legacy of Rome"
 		OR = {
+			has_landed_title = e_latin_empire
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
+		}
+		OR = {
+			religion = orthodox
+			is_heresy_of = orthodox
 		}
 		NOT = { has_global_flag = pat_jerusalem }
 		completely_controls = c_jerusalem
@@ -52,6 +89,31 @@ character_event = {
 	option = {
 		name = EVTOPTALoR.200
 		set_global_flag = pat_jerusalem
+		piety = 100
+	}
+}
+character_event = {
+	id = ancrel.201
+	desc = EVTDESCancrel.201
+	picture = GFX_evt_bishop
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		OR = {
+			has_landed_title = k_papal_state
+			tier = emperor
+		}
+		OR = {
+			religion = catholic
+			is_heresy_of = catholic
+		}
+		NOT = { has_global_flag = lat_pat_jerusalem }
+		completely_controls = c_jerusalem
+	}
+	
+	option = {
+		name = EVTOPTALoR.200
+		set_global_flag = lat_pat_jerusalem
 		piety = 100
 	}
 }
@@ -65,8 +127,13 @@ character_event = {
 	trigger = {
 		has_dlc = "Legacy of Rome"
 		OR = {
+			has_landed_title = e_latin_empire
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
+		}
+		OR = {
+			religion = orthodox
+			is_heresy_of = orthodox
 		}
 		NOT = { has_global_flag = pat_alexandria }
 		completely_controls = c_alexandria
@@ -75,6 +142,31 @@ character_event = {
 	option = {
 		name = EVTOPTALoR.200
 		set_global_flag = pat_alexandria
+		piety = 100
+	}
+}
+character_event = {
+	id = ancrel.202
+	desc = EVTDESCancrel.202
+	picture = GFX_evt_bishop
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		OR = {
+			has_landed_title = k_papal_state
+			tier = emperor
+		}
+		OR = {
+			religion = catholic
+			is_heresy_of = catholic
+		}
+		NOT = { has_global_flag = lat_pat_alexandria }
+		completely_controls = c_alexandria
+	}
+	
+	option = {
+		name = EVTOPTALoR.200
+		set_global_flag = lat_pat_alexandria
 		piety = 100
 	}
 }
@@ -88,8 +180,13 @@ character_event = {
 	trigger = {
 		has_dlc = "Legacy of Rome"
 		OR = {
+			has_landed_title = e_latin_empire
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
+		}
+		OR = {
+			religion = orthodox
+			is_heresy_of = orthodox
 		}
 		NOT = { has_global_flag = pat_rome }
 		completely_controls = c_roma
@@ -98,6 +195,33 @@ character_event = {
 	option = {
 		name = EVTOPTALoR.200
 		set_global_flag = pat_rome
+		piety = 100
+	}
+}
+
+# Patriarchate of Constantinople
+character_event = {
+	id = ancrel.203
+	desc = EVTDESCancrel.203
+	picture = GFX_evt_bishop
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		OR = {
+			has_landed_title = k_papal_state
+			tier = emperor
+		}
+		OR = {
+			religion = catholic
+			is_heresy_of = catholic
+		}
+		NOT = { has_global_flag = lat_pat_constantinople }
+		completely_controls = c_byzantion
+	}
+	
+	option = {
+		name = EVTOPTALoR.200
+		set_global_flag = lat_pat_constantinople
 		piety = 100
 	}
 }
@@ -119,6 +243,13 @@ narrative_event = {
 		set_parent_religion = { religion = catholic parent = orthodox }
 		set_global_flag = schism_mended
 		give_nickname = nick_the_saint
+		if = {
+			limit = {
+				NOT = { has_landed_title = k_orthodox }
+				NOT = { k_orthodox = { holder_scope = { is_liege_or_above = ROOT } } }
+			}
+			k_orthodox = { holder_scope = { set_defacto_liege = ROOT } }
+		}
 		hidden_tooltip = {
 			any_playable_ruler = {
 				limit = { 
@@ -126,6 +257,38 @@ narrative_event = {
 					controls_religion = no
 				}
 				narrative_event = { id = LoR.211 }
+			}
+		}
+	}
+}
+narrative_event = {
+	id = ancrel.210
+	title = EVTNAMELoR.210
+	desc = EVTDESCancrel.210
+	
+	picture = GFX_evt_pope
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.200
+		set_parent_religion = { religion = orthodox parent = catholic }
+		set_global_flag = schism_mended
+		give_nickname = nick_the_saint
+		if = {
+			limit = {
+				NOT = { has_landed_title = k_papal_state }
+				NOT = { k_papal_state = { holder_scope = { is_liege_or_above = ROOT } } }
+			}
+			k_papal_state = { holder_scope = { set_defacto_liege = ROOT } }
+		}
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = { 
+					religion = orthodox
+					controls_religion = no
+				}
+				narrative_event = { id = ancrel.211 }
 			}
 		}
 	}
@@ -146,10 +309,45 @@ narrative_event = {
 		ai_chance = { factor = 75 }
 		religion = orthodox
 		any_courtier = {
+			limit = { employer = { character = ROOT } }
+			religion = orthodox
+		}
+		any_vassal = {
+			limit = { is_playable = no }
 			religion = orthodox
 		}
 		capital_scope = {
 			religion = orthodox
+		}
+	}
+	option = { # No
+		name = EVTOPTBLoR.211
+		ai_chance = { factor = 25 }
+	}
+}
+narrative_event = {
+	id = ancrel.211
+	title = EVTNAMELoR.210
+	desc = EVTDESCLoR.210
+	
+	picture = GFX_evt_pope
+	
+	is_triggered_only = yes
+	
+	option = { # Yes
+		name = EVTOPTALoR.211
+		ai_chance = { factor = 75 }
+		religion = catholic
+		any_courtier = {
+			limit = { employer = { character = ROOT } }
+			religion = catholic
+		}
+		any_vassal = {
+			limit = { is_playable = no }
+			religion = catholic
+		}
+		capital_scope = {
+			religion = catholic
 		}
 	}
 	option = { # No

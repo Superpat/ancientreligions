@@ -1,0 +1,116 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+;;;;;;;;;;
+GOD_JUNO;Juno;Junon;Juno;;Juno;;;;;;;;;x
+GOD_JUNO_byzantine;Hera;Héra;Hera;;Hera;;;;;;;;;x
+GOD_VESTA;Vesta;Vesta;Vesta;;Vesta;;;;;;;;;x
+GOD_VESTA_byzantine;Hestia;Hestia;Hestia;;Hestia;;;;;;;;;x
+GOD_MINERVA;Minerva;Minerve;Minerva;;Minerva;;;;;;;;;x
+GOD_MINERVA_byzantine;Athena;Athéna;Athene;;Atenea;;;;;;;;;x
+GOD_CERES;Ceres;Cérès;Ceres;;Ceres;;;;;;;;;x
+GOD_CERES_byzantine;Demeter;Déméter;Demeter;;Deméter;;;;;;;;;x
+GOD_DIANA;Diana;Diane;Diana;;Diana;;;;;;;;;x
+GOD_DIANA_byzantine;Artemis;Artémis;Artemis;;Artemisa;;;;;;;;;x
+GOD_VENUS;Venus;Vénus;Venus;;Venus;;;;;;;;;x
+GOD_VENUS_byzantine;Aphrodite;Aphrodite;Aphrodite;;Afrodita;;;;;;;;;x
+GOD_MARS;Mars;Mars;Mars;;Marte;;;;;;;;;x
+GOD_MARS_byzantine;Ares;Arès;Ares;;Ares;;;;;;;;;x
+GOD_MERCURY;Mercury;Mercure;Mercurius;;Mercurio;;;;;;;;;x
+GOD_MERCURY_byzantine;Hermes;Hermès;Hermes;;Hermes;;;;;;;;;x
+GOD_JUPITER;Jupiter;Jupiter;Jupiter;;Júpiter;;;;;;;;;x
+GOD_JUPITER_byzantine;Zeus;Zeus;Zeus;;Zeus;;;;;;;;;x
+GOD_NEPTUNE;Neptune;Neptune;Neptun;;Neptuno;;;;;;;;;x
+GOD_NEPTUNE_byzantine;Poseidon;Poséidon;Poseidon;;Poseidón;;;;;;;;;x
+GOD_VULCAN;Vulcan;Vulcain;Vulcanus;;Vulcano;;;;;;;;;x
+GOD_VULCAN_byzantine;Hephaestus;Héphaïstos;Hephaistos;;Hefesto;;;;;;;;;x
+GOD_APOLLO;Apollo;Apollon;Apollon;;Apolo;;;;;;;;;x
+THE_THEOGONY;The Theogony;La Théogonie;Die Theogonie;;La Teogonía;;;;;;;;;x
+;;;;;;;;;;
+king_hellenic_pagan;Rex;Roi;Rex;;Rey;;;;;;;;;x
+king_hellenic_pagan_byzantine;Regas;Roi;Regas;;Rey;;;;;;;;;x
+king_female_hellenic_pagan;Regina;Reine;Regina;;Reina;;;;;;;;;x
+duke_hellenic_pagan;Legatus Augusti;;;;;;;;;;;;;x
+duke_female_hellenic_pagan;Legata Augusti;;;;;;;;;;;;;x
+count_hellenic_pagan;Legatus;;;;;;;;;;;;;x
+count_female_hellenic_pagan;Legata;;;;;;;;;;;;;x
+baron_hellenic_pagan;Eques;;;;;;;;;;;;;x
+baron_female_hellenic_pagan;Eques;;;;;;;;;;;;;x
+;;;;;;;;;;
+temple_king_hellenic_pagan;Rex Sacrorum;Roi Sacrorum;Rex Sacrorum;;Rey Sacrorum;;;;;;;;;x
+temple_king_female_hellenic_pagan;Regina Sacrorum;Reine Sacrorum;Regina Sacrorum;;Reina Sacrorum;;;;;;;;;x
+temple_duke_hellenic_pagan;Pontifex Magnus;;;;;;;;;;;;;x
+temple_count_hellenic_pagan;Pontifex;;;;;;;;;;;;;x
+;;;;;;;;;;
+city_emperor_hellenic_pagan;Emperor;Empereur;Kaiser;;Emperador;;;;;;;;;x
+city_king_hellenic_pagan;Consul;Consul;Konsulat;;Cónsul;;;;;;;;;x
+city_king_hellenic_pagan_byzantine;Hypatos;;;;;;;;;;;;;x
+city_duke_hellenic_pagan;Proconsul;Proconsul;Prokonsul;;Procónsul;;;;;;;;;x
+city_duke_hellenic_pagan_byzantine;Anthypatos;;;;;;;;;;;;;x
+city_count_hellenic_pagan;Lord Prefect;Seigneur-Préfet;Oberbürgermeister;;Gran Prefecto;;;;;;;;;x
+city_baron_hellenic_pagan;Prefect;Préfet;Bürgermeister;;Prefecto;;;;;;;;;x
+family_palace_baron_hellenic_pagan;Pater Familias;;;;;;;;;;;;;x
+family_palace_baron_female_hellenic_pagan;Mater Familias;;;;;;;;;;;;;x
+;;;;;;;;;;
+duchy_hellenic_pagan;Province;Province;Provinz;;Provincia;;;;;;;;;x;
+duchy_of_hellenic_pagan;Province of;Province de;Provinz von;;Provincia de;;;;;;;;;x;
+temple_kingdom_hellenic_pagan;Sacred Kingdom;;;;;;;;;;;;;x
+temple_kingdom_of_hellenic_pagan;Sacred Kingdom of;;;;;;;;;;;;;x
+temple_duchy_hellenic_pagan;Grand Pontificate;;;;;;;;;;;;;x;
+temple_duchy_of_hellenic_pagan;Grand Pontificate of;;;;;;;;;;;;;x;
+temple_county_hellenic_pagan;Pontificate;;;;;;;;;;;;;x;
+temple_county_of_hellenic_pagan;Pontificate of;;;;;;;;;;;;;x;
+;;;;;;;;;;
+d_hellenic_pagan;The Pontificate Maxima;;;;;;;;;;;;;x
+PONTIFEX_MAXIMUS;Pontifex Maximus;Pontifex Maximus;Pontifex Maximus;;Pontifex Maximus;;;;;;;;;x
+PONTIFEX_MAXIMUS_FOA;Your Holiness;Sa Sainteté;Eure Heiligkeit;;Su Santidad;;;;;;;;;x
+;;;;;;;;;;
+job_chancellor_hellenic_pagan;Magister Officiorum;;;;;;;;;;;;;;;x
+job_marshal_hellenic_pagan;Magister Militum;;;;;;;;;;;;;;;x
+job_marshal_hellenic_pagan_byzantine;Stratelates;;;;;;;;;;;;;;;x
+job_treasurer_hellenic_pagan;Quaestor;;;;;;;;;;;;;;;x
+job_spiritual_hellenic_pagan;Augur;;;;;;;;;;;;;;;x
+;;;;;;;;;;
+title_censor;Censor;Censeur;Censur;;Censor;;;;;;;;;;;x
+title_censor_desc;The Censor is responsible for taking the census of the realm. While the office was originally instituded for taxation purposes the most important duty of the Censor is to supervise public morality and recommend suitable candidates for public offices.;;;;;;;;;;;;;;;x
+title_aedile;Aedile;Édile;Ädil;;Edil;;;;;;;;;;;x
+title_aedile_desc;The aediles are responsible for maintenance of public buildings and regulation of public festivals.;;;;;;;;;;;;;;;x
+title_magister_equitum;Magister Equitum;;;;;;;;;;;;;;;x
+title_magister_equitum_desc;Originally a very powerful office second only to the Dictator, the Magister Equitum, or Master of the Horse, is now a mostly ceremonial, but still prestigeous, military function.;;;;;;;;;;;;;;;x
+;;;;;;;;;;
+modifier_flamen_dialis;Flamen Dialis;;;;;;;;;;;;;;;x
+title_flamen_dialis;Flamen Dialis;;;;;;;;;;;;;;;x
+title_flamen_dialis_desc;The Flamen Dialis is the high priest of Jupiter.;;;;;;;;;;;;;;;x
+title_flaminica_dialis;Flaminica Dialis;;;;;;;;;;;;;;;x
+title_flaminica_dialis_desc;As wife of the Flamen Dialis, the Flaminica Dialis are entrusted to performs certain religious rituals.;;;;;;;;;;;;;;;x
+modifier_flamen_martialis;Flamen Martialis;;;;;;;;;;;;;;;x
+title_flamen_martialis;Flamen Martialis;;;;;;;;;;;;;;;x
+title_flamen_martialis_desc;The Flamen Martialis is the high priest of Mars.;;;;;;;;;;;;;;;x
+title_flaminica_martialis;Flaminica Martialis;;;;;;;;;;;;;;;x
+title_flaminica_martialis_desc;As wife of the Flamen Martialis, the Flaminica Martialis are entrusted to performs certain religious rituals.;;;;;;;;;;;;;;;x
+modifier_flamen_quirinalis;Flamen Quirinalis;;;;;;;;;;;;;;;x
+title_flamen_quirinalis;Flamen Quirinalis;;;;;;;;;;;;;;;x
+title_flamen_quirinalis_desc;The Flamen Quirinalis is the high priest of Quirinus.;;;;;;;;;;;;;;;x
+title_flaminica_quirinalis;Flaminica Quirinalis;;;;;;;;;;;;;;;x
+title_flaminica_quirinalis_desc;As wife of the Flamen Quirinalis, the Flaminica Quirinalis are entrusted to performs certain religious rituals.;;;;;;;;;;;;;;;x
+;;;;;;;;;;
+opinion_no_hellenic_state_religion;Did not establish a Hellenic state religion;;;;;;;;;;;;;;;x
+opinion_no_forced_hellenic_state_religion;Did not enforce a Hellenic state religion;;;;;;;;;;;;;;;x
+opinion_hellenic_state_religion;Established a Hellenic state religion;;;;;;;;;;;;;;;x
+opinion_forced_hellenic_state_religion;Enforced a Hellenic state religion;;;;;;;;;;;;;;;x
+opinion_adopted_hellenic_state_religion;Adopted the Hellenic state religion;;;;;;;;;;;;;;;x
+opinion_rejected_hellenic_state_religion;Rejected the Hellenic state religion;;;;;;;;;;;;;;;x
+EVTDESCancrel.100;Having long studied the old Greek and Roman classics you are wondering if their religious views wasn't better than your own.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.100;Yes, the old religion was better;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.100;No, I'm secure in my faith;;;;;;;;;;;;;;;;;;;;;;;;x
+become_pontifex_maximus;Become Pontifex Maximus;;;;;;;;;;;;;;;;;;;;;;;;x
+become_pontifex_maximus_desc;If we can return our ancient faith to it's former glory, we can restore the religious institutions of old and claim the title of Pontifex Maximus.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.102;With the restoration of the religious institutions of old, you have the opportunity to re-establish the old imperial state religion once again, but your Christian vasals are not likely to appreciate such a decree.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.102;We must restore the glory of the old faith!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTTOOLTIPAancrel.102;Parts of the Empire will convert to the re-established imperial state religion.\n;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.102;Let my vassals choose their own faith.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.103;[From.GetTitledName] has endeavored to restore the ancient faith to the Empire, and demands that you convert.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.103;Glory to [From.Religion.GetRandomGodName] and the Empire!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.103;May [Root.Religion.GetRandomGodName] protect us.;;;;;;;;;;;;;;;;;;;;;;;;x
+;;;;;;;;;;
+EVTDESCancrel.110;Without the Flaminica Dialis to assist you in your duties, the ancient religious laws require that you retire.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.111;Without the Flaminica Martialis to assist you in your duties, the ancient religious laws require that you retire.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.112;Without the Flaminica Quirinalis to assist you in your duties, the ancient religious laws require that you retire.;;;;;;;;;;;;;;;;;;;;;;;;x

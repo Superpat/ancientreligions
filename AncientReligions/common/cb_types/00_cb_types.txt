@@ -2346,6 +2346,7 @@ tribal_invasion = {
 					OR = {
 						culture_group = altaic
 						culture_group = magyar
+						culture_group = mesoamerican
 					}
 					higher_tier_than = COUNT
 					OR = {
@@ -2509,6 +2510,7 @@ crusade = {
 			can_call_crusade = yes
 			has_called_crusade = no
 			religion_authority = 0.05
+			is_landed = yes # Otherwise the war score starts at -100%
 			OR = {
 				AND = { 
 					religion_group = pagan_group
@@ -6491,7 +6493,7 @@ viking_invasion = {
 	}
 }
 
-# Pagans can subjugate people of their own culture
+# Pagans can subjugate other pagans
 pagan_subjugation = {
 	name = CB_NAME_PAGAN_SUBJUGATION
 	war_name = WAR_NAME_PAGAN_SUBJUGATION
@@ -6575,7 +6577,7 @@ pagan_subjugation = {
 				}
 				add_character_modifier = { 
 					name = launched_subjugation
-					days = 3650
+					days = -1
 					hidden = yes
 				}
 			}
@@ -6788,7 +6790,15 @@ peasant_revolt = {
 				}
 			}
 		}
-		ROOT = { imprison = FROM }
+		ROOT = { 
+			imprison = FROM
+			hidden_tooltip = {
+				add_character_modifier = { 
+					name = broken_spirit
+					days = -1
+				}
+			}
+		}
 	}
 
 	on_reverse_demand = {
@@ -6802,7 +6812,15 @@ peasant_revolt = {
 				}
 			}
 		}
-		ROOT = { imprison = FROM }
+		ROOT = {
+			imprison = FROM 
+			hidden_tooltip = {
+				add_character_modifier = { 
+					name = broken_spirit
+					days = -1
+				}
+			}
+		}
 	}
 
 	attacker_ai_victory_worth = {
@@ -6855,8 +6873,14 @@ heretic_revolt = {
 
 	on_fail = {
 		ROOT = {
-			imprison = FROM 
+			imprison = FROM
 			clr_character_flag = heretic_revolter
+			hidden_tooltip = {
+				add_character_modifier = { 
+					name = broken_spirit
+					days = -1
+				}
+			}
 		}
 		FROM = {
 			prestige = 50
@@ -6876,8 +6900,14 @@ heretic_revolt = {
 
 	on_reverse_demand = {
 		ROOT = {
-			imprison = FROM 
+			imprison = FROM
 			clr_character_flag = heretic_revolter
+			hidden_tooltip = {
+				add_character_modifier = { 
+					name = broken_spirit
+					days = -1
+				}
+			}
 		}
 		FROM = {
 			prestige = 100
@@ -7009,8 +7039,15 @@ liberation_revolt = {
 			}
 		}
 		ROOT = {
-			imprison = FROM 
+			imprison = FROM
 			clr_character_flag = nationalist_rebel
+			hidden_tooltip = {
+				add_character_modifier = { 
+					name = broken_spirit
+					days = -1
+				}
+				remove_trait = inspiring_leader
+			}
 		}
 	}
 
@@ -7026,8 +7063,15 @@ liberation_revolt = {
 			}
 		}
 		ROOT = {
-			imprison = FROM 
+			imprison = FROM
 			clr_character_flag = nationalist_rebel
+			hidden_tooltip = {
+				add_character_modifier = { 
+					name = broken_spirit
+					days = -1
+				}
+				remove_trait = inspiring_leader
+			}
 		}
 	}
 
@@ -7070,6 +7114,7 @@ duchy_adventure = {
 			prestige = 250
 			hidden_tooltip = {
 				clr_character_flag = duchy_adventurer
+				give_nickname = nick_the_conqueror
 			}
 		}
 		FROM = {
@@ -7747,6 +7792,7 @@ pagan_county_conquest = {
 					ROOT = { religion = norse_pagan }
 					ROOT = { religion = norse_pagan_reformed }
 				}
+				FROM = { NOT = { religion_group = pagan_group } }
 				location = {
 					port = yes
 				}

@@ -13,15 +13,9 @@ title_censor = {
 		FROM = {
 			is_feudal = yes
 			independent = yes
-			OR = {
-				religion = grecoroman
-				religion = grecoroman_reformed
-			}
-		}
-		OR = {
 			religion = grecoroman
-			religion = grecoroman_reformed
 		}
+		religion = grecoroman
 		NOT = { has_minor_title = title_court_jester }
 		NOT = { has_minor_title = title_flamen_dialis }
 		NOT = { has_minor_title = title_flamen_martialis }
@@ -53,15 +47,9 @@ title_aedile = {
 		is_female = no
 		FROM = {
 			is_feudal = yes
-			OR = {
-				religion = grecoroman
-				religion = grecoroman_reformed
-			}
-		}
-		OR = {
 			religion = grecoroman
-			religion = grecoroman_reformed
 		}
+		religion = grecoroman
 		NOT = { has_minor_title = title_court_jester }
 		NOT = { has_minor_title = title_cupbearer }
 		NOT = { has_minor_title = title_censor }
@@ -95,10 +83,7 @@ title_magister_equitum = {
 			is_feudal = yes
 			NOT = { has_landed_title = e_byzantium }
 			NOT = { has_landed_title = e_roman_empire }
-			OR = {
-				religion = grecoroman
-				religion = grecoroman_reformed
-			}
+			religion = grecoroman
 		}
 		NOT = { has_minor_title = title_court_jester }
 		NOT = { has_minor_title = title_cupbearer }

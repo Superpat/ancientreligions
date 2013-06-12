@@ -4022,7 +4022,6 @@ e_byzantium = {
 					holy_site = orthodox
 					holy_site = nestorian
 					holy_site = grecoroman
-					holy_site = grecoroman_reformed
 				}
 				b_miletos = {
 				}
@@ -4614,7 +4613,6 @@ e_byzantium = {
 				}
 				b_amphissa = {
 					holy_site = grecoroman
-					holy_site = grecoroman_reformed
 				}
 				b_lidoriki = {
 				}
@@ -4667,7 +4665,6 @@ e_byzantium = {
 				}
 				b_pyrgos = {
 					holy_site = grecoroman
-					holy_site = grecoroman_reformed
 				}
 				b_andravida = {
 				}
@@ -6596,7 +6593,6 @@ e_byzantium = {
 				}
 				b_cumae = {
 					holy_site = grecoroman
-					holy_site = grecoroman_reformed
 				}
 				b_pozzuoli = {
 				}
@@ -8014,7 +8010,6 @@ e_italy = {
 					holy_site = aztec
 					holy_site = aztec_reformed
 					holy_site = grecoroman
-					holy_site = grecoroman_reformed
 					holy_site = hellenic_pagan
 					holy_site = pagan
 					used_for_dynasty_names = no
@@ -28479,7 +28474,7 @@ d_west_african_pagan_reformed = {
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
 
-d_grecoroman_reformed = {
+d_grecoroman = {
 	color={ 155 155 235 }
 	color2={ 220 220 0 }
 	
@@ -28491,9 +28486,7 @@ d_grecoroman_reformed = {
 	creation_requires_capital = no
 	
 	allow = {
-		religion = grecoroman_reformed
-		num_of_holy_sites = 3
-		piety = 500
+		always = no
 	}
 	
 	short_name = yes
@@ -28501,9 +28494,9 @@ d_grecoroman_reformed = {
 	dignity = 100 # Counted as having this many more counties than it does
 	
 	# Controls a religion
-	controls_religion = grecoroman_reformed
+	controls_religion = grecoroman
 	
-	religion = grecoroman_reformed
+	religion = grecoroman
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }

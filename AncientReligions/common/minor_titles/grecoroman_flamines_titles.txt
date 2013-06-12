@@ -10,18 +10,19 @@ title_flamen_dialis = {
 	allow = {
 		is_adult = yes
 		is_female = no
+		has_global_flag = grecoroman_priesthood_founded
 		FROM = {
 			is_feudal = yes
 			independent = yes
 			higher_tier_than = COUNT
-			religion = grecoroman_reformed
+			religion = grecoroman
 		}
 		OR = {
-			spouse = { religion = grecoroman_reformed }
+			spouse = { religion = grecoroman }
 			# We want to remove the title by event if his wife dies or converts
 			has_minor_title = title_flamen_dialis
 		}
-		religion = grecoroman_reformed
+		religion = grecoroman
 		NOT = { has_minor_title = title_court_jester }
 		NOT = { has_minor_title = title_censor }
 	}
@@ -81,20 +82,21 @@ title_flamen_martialis = {
 	monthly_piety = 0.005
 
 	allow = {
+		has_global_flag = grecoroman_priesthood_founded
 		is_adult = yes
 		is_female = no
 		FROM = {
 			is_feudal = yes
 			independent = yes
 			higher_tier_than = COUNT
-			religion = grecoroman_reformed
+			religion = grecoroman
 		}
 		OR = {
-			spouse = { religion = grecoroman_reformed }
+			spouse = { religion = grecoroman }
 			# We want to remove the title by event if his wife dies or converts
 			has_minor_title = title_flamen_martialis
 		}
-		religion = grecoroman_reformed
+		religion = grecoroman
 		NOT = { has_minor_title = title_court_jester }
 		NOT = { has_minor_title = title_censor }
 		NOT = { has_minor_title = title_flamen_dialis }
@@ -151,6 +153,7 @@ title_flamen_quirinalis = {
 	monthly_piety = 0.005
 
 	allow = {
+		has_global_flag = grecoroman_priesthood_founded
 		is_adult = yes
 		is_female = no
 		OR = {
@@ -161,14 +164,14 @@ title_flamen_quirinalis = {
 			is_feudal = yes
 			independent = yes
 			higher_tier_than = COUNT
-			religion = grecoroman_reformed
+			religion = grecoroman
 		}
 		OR = {
-			spouse = { religion = grecoroman_reformed }
+			spouse = { religion = grecoroman }
 			# We want to remove the title by event if his wife dies or converts
 			has_minor_title = title_flamen_quirinalis
 		}
-		religion = grecoroman_reformed
+		religion = grecoroman
 		NOT = { has_minor_title = title_court_jester }
 		NOT = { has_minor_title = title_censor }
 		NOT = { has_minor_title = title_flamen_dialis }

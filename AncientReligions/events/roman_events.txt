@@ -882,7 +882,6 @@ character_event = {
 				OR = {
 					culture = roman
 					religion = grecoroman
-					religion = grecoroman_reformed
 				}
 			}
 		}

@@ -153,6 +153,10 @@ decisions = {
 			NOT = { has_global_flag = gwydion_founded }
 		}
 		allow = {
+			OR = {
+				tier = king
+				tier = emperor
+			}
 			prestige = 300
 			wealth = 300
 		}
@@ -202,8 +206,13 @@ decisions = {
 			NOT = { has_global_flag = fianna_founded }
 		}
 		allow = {
+			OR = {
+				tier = king
+				tier = emperor
+			}
 			prestige = 300
 			wealth = 300
+			
 		}
 		effect = {
 			set_global_flag = fianna_founded

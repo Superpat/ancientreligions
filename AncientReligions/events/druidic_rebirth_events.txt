@@ -34,10 +34,7 @@ character_event = {
 				religion = gaelic_pagan
 				religion = gaelic_pagan_reformed
 			}
-			OR = {
-				has_character_flag = hates_magic
-				has_character_flag = pagan_wizard
-			}
+			has_character_flag = hates_magic
 			any_courtier = {
 				has_minor_title = title_pagan_wizard
 			}
@@ -86,7 +83,6 @@ character_event = {
 				trait = scholarly_theologian
 			}
 		}
-		set_character_flag = pagan_wizard
 		new_character = {
 			give_minor_title = title_pagan_wizard
 		}
@@ -118,35 +114,37 @@ character_event = {
 			name = celtic_ways
 			duration = -1
 		}
-		any_vassal = {
-			limit = {
-				NOT = {
-					OR = {
-						religion = druidic
-						religion = gaelic_pagan
+		hidden_trigger = {
+			any_vassal = {
+				limit = {
+					NOT = {
+						OR = {
+							religion = druidic
+							religion = gaelic_pagan
+						}
 					}
+					age = 16
+					prisoner = no
+					war = no
+					NOT = { trait = incapable }
 				}
-				age = 16
-				prisoner = no
-				war = no
-				NOT = { trait = incapable }
+				character_event = { id = ancrel.003 days = 5 }
 			}
-			character_event = { id = ancrel.003 days = 5 }
-		}
-		any_courtier = {
-			limit = {
-				NOT = {
-					OR = {
-						religion = druidic
-						religion = gaelic_pagan
+			any_courtier = {
+				limit = {
+					NOT = {
+						OR = {
+							religion = druidic
+							religion = gaelic_pagan
+						}
 					}
+					age = 16
+					prisoner = no
+					war = no
+					NOT = { trait = incapable }
 				}
-				age = 16
-				prisoner = no
-				war = no
-				NOT = { trait = incapable }
+				character_event = { id = ancrel.003 days = 5 }
 			}
-			character_event = { id = ancrel.003 days = 5 }
 		}
 	}
 }
@@ -202,11 +200,7 @@ character_event = {
 		name = EVTOPTBancrel.002
 		piety = 50
 		ai_chance = { factor = 50 }
-		random_vassal = {
-			limit = {
-				is_theocracy = yes
-				religion = catholic
-			}
+		religion_head = {
 			opinion = {
 				modifier = opinion_happy
 				who = ROOT
@@ -244,7 +238,10 @@ character_event = {
 			duration = -1
 		}
 		hidden_tooltip = {
-			top_liege = { character_event = { id = ancrel.004 } days = 5 }
+			IF = {
+				limit = { is_ruler = yes }
+				top_liege = { character_event = { id = ancrel.004 } days = 5 }
+			}
 		}
 	}
 	option = {
@@ -270,7 +267,10 @@ character_event = {
 		}
 		add_character_flag = refuse_celtic_ways
 		hidden_tooltip = {
-			top_liege = { character_event = { id = ancrel.005 } days = 5 }
+			IF = {
+				limit = { is_ruler = yes }
+				top_liege = { character_event = { id = ancrel.004 } days = 5 }
+			}
 		}
 	}
 }
@@ -284,11 +284,6 @@ character_event = {
 	
 	option = {
 		name = EVTOPTAancrel.004
-		opinion = {
-				modifier = opinion_happy
-				who = ROOT
-				years = 2
-		}
 	}
 }
 # Vassal refuses celtic rites
@@ -301,9 +296,5 @@ character_event = {
 	
 	option = {
 		name = EVTOPTAancrel.005
-		opinion = {
-				modifier = opinion_refused_celtic_rites
-				who = FROM
-		}
 	}
 }

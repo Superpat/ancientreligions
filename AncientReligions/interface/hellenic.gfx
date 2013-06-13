@@ -1,6 +1,13 @@
+# Decisions
 spriteTypes = {
 	spriteType = {
 		name = "GFX_become_pontifex_maximus"
 		texturefile = "gfx\\interface\\decision_icon_convert_to_liege_religion.dds"
+	}
+# Events
+	spriteType = {
+		name = "GFX_evt_roman_temple"
+		texturefile = "gfx\\event_pictures\roman_great_temple.tga"
+		allwaystransparent = yes
 	}
 }

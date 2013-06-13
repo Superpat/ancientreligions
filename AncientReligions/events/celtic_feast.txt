@@ -44,8 +44,6 @@ character_event = {
 				OR = {
 					religion_group = christian
 					religion_group = muslim
-					religion = norse_pagan
-					religion = norse_pagan_reformed
 				}
 				age = 16
 				prisoner = no
@@ -257,23 +255,6 @@ character_event = {
 				FROM = { character_event = { id = ancrel.031 } }
 			}
 			if = {
-				limit = { # Norse Pagans
-					OR = {
-						religion = norse_pagan
-						religion = norse_pagan_reformed
-					}
-					NOT = {
-						sibling = FROM
-						father = { character = FROM }
-						mother = { character = FROM }
-						any_spouse = { character = FROM }
-						any_child = { character = FROM }
-						any_dynasty_member = { character = FROM}
-					}
-				}
-				FROM = { character_event = { id = ancrel.103 } }
-			}
-			if = {
 				limit = { # Muslim
 					religion_group = muslim
 					NOT = {
@@ -429,23 +410,6 @@ character_event = {
 					}
 				}
 				FROM = { character_event = { id = ancrel.031 } }
-			}
-			if = {
-				limit = { # Norse Pagans
-					OR = {
-						religion = norse_pagan
-						religion = norse_pagan_reformed
-					}
-					NOT = {
-						sibling = FROM
-						father = { character = FROM }
-						mother = { character = FROM }
-						any_spouse = { character = FROM }
-						any_child = { character = FROM }
-						any_dynasty_member = { character = FROM}
-					}
-				}
-				FROM = { character_event = { id = ancrel.103 } }
 			}
 			if = {
 				limit = { # Muslim
@@ -605,23 +569,6 @@ character_event = {
 				FROM = { character_event = { id = ancrel.031 } }
 			}
 			if = {
-				limit = { # Norse Pagans
-					OR = {
-						religion = norse_pagan
-						religion = norse_pagan_reformed
-					}
-					NOT = {
-						sibling = FROM
-						father = { character = FROM }
-						mother = { character = FROM }
-						any_spouse = { character = FROM }
-						any_child = { character = FROM }
-						any_dynasty_member = { character = FROM}
-					}
-				}
-				FROM = { character_event = { id = ancrel.103 } }
-			}
-			if = {
 				limit = { # Muslim
 					religion_group = muslim
 					NOT = {
@@ -777,23 +724,6 @@ character_event = {
 					}
 				}
 				FROM = { character_event = { id = ancrel.031 } }
-			}
-			if = {
-				limit = { # Norse Pagans
-					OR = {
-						religion = norse_pagan
-						religion = norse_pagan_reformed
-					}
-					NOT = {
-						sibling = FROM
-						father = { character = FROM }
-						mother = { character = FROM }
-						any_spouse = { character = FROM }
-						any_child = { character = FROM }
-						any_dynasty_member = { character = FROM}
-					}
-				}
-				FROM = { character_event = { id = ancrel.103 } }
 			}
 			if = {
 				limit = { # Muslim
@@ -1449,7 +1379,7 @@ character_event = {
 # Sacrifice Mother (Vassal)
 character_event = {
 	id = ancrel.048
-	desc = EVTDESCancrel.0408
+	desc = EVTDESCancrel.408
 	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	
@@ -3162,58 +3092,5 @@ character_event = {
 		name = EVTOPTBancrel.030
 		FROM = { character_event = { id = ancrel.057 tooltip = EVTTOOLTIPancrel.057 } }
 		piety = -25
-	}
-}
-# Sacrifice Norse Pagan (Liege)
-character_event = {
-	id = ancrel.103
-	desc = EVTDESCancrel.103
-	picture = GFX_evt_oak_tree
-	border = GFX_event_normal_frame_religion
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTAancrel.103
-		FROM = {
-			death = {
-				death_reason = death_sacrificed
-				killer = ROOT
-			}
-		}
-		hidden_tooltip = {
-			any_vassal = {
-				limit = { has_character_flag = attending_celtic_feast }
-				character_event = { id = ancrel.104 }
-			}
-		}
-		prestige = 50
-		piety = 25
-	}
-	option = {
-		name = EVTOPTBancrel.103
-		FROM = { character_event = { id = ancrel.057 tooltip = EVTTOOLTIPancrel.057 } }
-		piety = -50
-	}
-}
-# Sacrifice Norse Pagan (Vassal)
-character_event = {
-	id = ancrel.104
-	desc = EVTDESCancrel.104
-	picture = GFX_evt_oak_tree
-	border = GFX_event_normal_frame_religion
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTAancrel.104
-		tooltip = {
-			FROMFROM = {
-				death = {
-					death_reason = death_sacrificed
-					killer = FROM
-				}
-			}
-		}
 	}
 }

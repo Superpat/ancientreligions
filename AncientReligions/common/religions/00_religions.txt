@@ -988,8 +988,8 @@ pagan_group = {
 	hellenic_pagan = {
 		graphical_culture = westerngfx
 
-		icon = 37
-		heresy_icon = 37
+		icon = 42
+		heresy_icon = 43
 		
 		color = { 0.6 0.1 0.1 }
 		god_names = {

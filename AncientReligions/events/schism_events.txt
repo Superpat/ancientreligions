@@ -3,7 +3,7 @@
 # Schism Events
 #
 # Event ID ID LoR.200 - LoR.399 reserved
-# Event ID ancrel.200 - ancrel.219 reserved
+# Event ID ancrel.2200 - ancrel.2219 reserved
 #
 #######################################
 
@@ -40,8 +40,8 @@ character_event = {
 	}
 }
 character_event = {
-	id = ancrel.200
-	desc = EVTDESCancrel.200
+	id = ancrel.2200
+	desc = EVTDESCancrel.2200
 	picture = GFX_evt_bishop
 	
 	trigger = {
@@ -93,8 +93,8 @@ character_event = {
 	}
 }
 character_event = {
-	id = ancrel.201
-	desc = EVTDESCancrel.201
+	id = ancrel.2201
+	desc = EVTDESCancrel.2201
 	picture = GFX_evt_bishop
 	
 	trigger = {
@@ -146,8 +146,8 @@ character_event = {
 	}
 }
 character_event = {
-	id = ancrel.202
-	desc = EVTDESCancrel.202
+	id = ancrel.2202
+	desc = EVTDESCancrel.2202
 	picture = GFX_evt_bishop
 	
 	trigger = {
@@ -201,8 +201,8 @@ character_event = {
 
 # Patriarchate of Constantinople
 character_event = {
-	id = ancrel.203
-	desc = EVTDESCancrel.203
+	id = ancrel.2203
+	desc = EVTDESCancrel.2203
 	picture = GFX_evt_bishop
 	
 	trigger = {
@@ -262,9 +262,9 @@ narrative_event = {
 	}
 }
 narrative_event = {
-	id = ancrel.210
+	id = ancrel.2210
 	title = EVTNAMELoR.210
-	desc = EVTDESCancrel.210
+	desc = EVTDESCancrel.2210
 	
 	picture = GFX_evt_pope
 	
@@ -288,7 +288,7 @@ narrative_event = {
 					religion = orthodox
 					controls_religion = no
 				}
-				narrative_event = { id = ancrel.211 }
+				narrative_event = { id = ancrel.2211 }
 			}
 		}
 	}
@@ -326,7 +326,7 @@ narrative_event = {
 	}
 }
 narrative_event = {
-	id = ancrel.211
+	id = ancrel.2211
 	title = EVTNAMELoR.210
 	desc = EVTDESCLoR.210
 	

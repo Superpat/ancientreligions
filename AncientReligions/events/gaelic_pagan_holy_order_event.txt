@@ -2,7 +2,7 @@
 #
 # The Fianna
 #
-# Event ID ancrel.150 - ancrel.189 reserved
+# Event ID ancrel.11150 - ancrel.11189 reserved
 #
 #######################################
 
@@ -12,9 +12,9 @@ namespace = ancrel
 
 # The Fianna Founded (Gaelic King)
 narrative_event = {
-	id = ancrel.150
-	title = EVTNAMEancrel.150
-	desc = EVTDESCancrel.150
+	id = ancrel.1150
+	title = EVTNAMEancrel.1150
+	desc = EVTDESCancrel.1150
 	picture = GFX_evt_celtic_warriors
 	border = GFX_event_narrative_frame_war
 	
@@ -23,14 +23,14 @@ narrative_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAancrel.150
+		name = EVTOPTAancrel.1150
 		hidden_tooltip = {
 			any_playable_ruler = {
 				limit = {
 					ai = no
 					religion = gaelic_pagan
 				}
-				narrative_event = { id = ancrel.151 }
+				narrative_event = { id = ancrel.1151 }
 			}
 		}
 	}
@@ -38,23 +38,23 @@ narrative_event = {
 
 # The Fianna Founded (Gaelic)
 narrative_event = {
-	id = ancrel.151
-	title = EVTNAMEancrel.150
-	desc = EVTDESCancrel.151
+	id = ancrel.1151
+	title = EVTNAMEancrel.1150
+	desc = EVTDESCancrel.1151
 	picture = GFX_evt_celtic_warriors
 	border = GFX_event_narrative_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.151
+		name = EVTOPTAancrel.1151
 		custom_tooltip = fianna_organized
 	}
 }
 
 # Fianna Chief gets Fian trait
 character_event = {
-	id = ancrel.155
+	id = ancrel.1155
 	hide_window = yes
 	
 	trigger = {
@@ -73,7 +73,7 @@ character_event = {
 
 # Son has served a few years
 character_event = {
-	id = ancrel.158
+	id = ancrel.1158
 	hide_window = yes
 	
 	is_triggered_only = yes
@@ -90,7 +90,7 @@ character_event = {
 
 # Son wants to join the Fianna (Son)
 character_event = {
-	id = ancrel.159
+	id = ancrel.1159
 	hide_window = yes
 	
 	ai = yes
@@ -175,7 +175,7 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = ancrel.160 } }
+		father = { character_event = { id = ancrel.1160 } }
 		set_character_flag = wants_fianna
 	}
 	
@@ -186,15 +186,15 @@ character_event = {
 
 # Son wants to join the fianna (Father)
 character_event = {
-	id = ancrel.160
-	desc = EVTDESCancrel.160
+	id = ancrel.1160
+	desc = EVTDESCancrel.1160
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.160
+		name = EVTOPTAancrel.1160
 		FROM = {
 			opinion = {
 				modifier = opinion_very_disappointed
@@ -205,7 +205,7 @@ character_event = {
 		prestige = -100
 	}
 	option = {
-		name = EVTOPTBancrel.160
+		name = EVTOPTBancrel.1160
 		d_fianna = {
 			holder_scope = {
 				FROM = {
@@ -215,7 +215,7 @@ character_event = {
 		}
 		hidden_tooltip = {
 			FROM = { 
-				character_event = { id = ancrel.158 days = 1460 }
+				character_event = { id = ancrel.1158 days = 1460 }
 			}
 		}
 		prestige = 100
@@ -224,7 +224,7 @@ character_event = {
 
 # Son returns scarred but seasoned (Son)
 character_event = {
-	id = ancrel.164
+	id = ancrel.1164
 	hide_window = yes
 	
 	trigger = {
@@ -247,7 +247,7 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = ancrel.165 } }
+		father = { character_event = { id = ancrel.1165 } }
 		clr_character_flag = serving_fianna
 	}
 	
@@ -258,15 +258,15 @@ character_event = {
 
 # Son returns scarred but seasoned
 character_event = {
-	id = ancrel.165
-	desc = EVTDESCancrel.165
+	id = ancrel.1165
+	desc = EVTDESCancrel.1165
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.165
+		name = EVTOPTAancrel.1165
 		FROM = {
 			move_character = ROOT
 			add_trait = scarred
@@ -278,7 +278,7 @@ character_event = {
 
 # Son returns maimed (Son)
 character_event = {
-	id = ancrel.168
+	id = ancrel.1168
 	hide_window = yes
 	
 	trigger = {
@@ -295,7 +295,7 @@ character_event = {
 	
 	immediate = {
 		add_trait = maimed
-		father = { character_event = { id = ancrel.169 } }
+		father = { character_event = { id = ancrel.1169 } }
 		clr_character_flag = serving_fianna
 	}
 	
@@ -306,15 +306,15 @@ character_event = {
 
 # Son returns maimed
 character_event = {
-	id = ancrel.169
-	desc = EVTDESCancrel.169
+	id = ancrel.1169
+	desc = EVTDESCancrel.1169
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.169
+		name = EVTOPTAancrel.1169
 		FROM = {
 			move_character = ROOT
 			tooltip = { add_trait = maimed }
@@ -325,7 +325,7 @@ character_event = {
 
 # Son returns as excellent strategist (Son)
 character_event = {
-	id = ancrel.170
+	id = ancrel.1170
 	hide_window = yes
 	
 	trigger = {
@@ -365,7 +365,7 @@ character_event = {
 	}
 
 	immediate = {
-		father = { character_event = { id = ancrel.171 } }
+		father = { character_event = { id = ancrel.1171 } }
 		clr_character_flag = serving_fianna
 	}
 	
@@ -376,15 +376,15 @@ character_event = {
 
 # Son returns as excellent strategist
 character_event = {
-	id = ancrel.171
-	desc = EVTDESCancrel.171
+	id = ancrel.1171
+	desc = EVTDESCancrel.1171
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.171
+		name = EVTOPTAancrel.1171
 		if = {
 			limit = {
 				FROM = {
@@ -423,7 +423,7 @@ character_event = {
 
 # Son returns with PTSD (Son)
 character_event = {
-	id = ancrel.172
+	id = ancrel.1172
 	hide_window = yes
 	
 	trigger = {
@@ -450,7 +450,7 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = ancrel.173 } }
+		father = { character_event = { id = ancrel.1173 } }
 		clr_character_flag = serving_fianna
 	}
 	
@@ -461,15 +461,15 @@ character_event = {
 
 # Son returns with PTSD
 character_event = {
-	id = ancrel.173
-	desc = EVTDESCancrel.173
+	id = ancrel.1173
+	desc = EVTDESCancrel.1173
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.173
+		name = EVTOPTAancrel.1173
 		FROM = {
 			move_character = ROOT
 			add_trait = stressed
@@ -481,7 +481,7 @@ character_event = {
 
 # Son returns home with wife (Son)
 character_event = {
-	id = ancrel.174
+	id = ancrel.1174
 	hide_window = yes
 	
 	trigger = {
@@ -500,7 +500,7 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = ancrel.175 } }
+		father = { character_event = { id = ancrel.1175 } }
 		clr_character_flag = serving_fianna
 	}
 	
@@ -511,15 +511,15 @@ character_event = {
 
 # Son returns home with wife
 character_event = {
-	id = ancrel.175
-	desc = EVTDESCancrel.175
+	id = ancrel.1175
+	desc = EVTDESCancrel.1175
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.175
+		name = EVTOPTAancrel.1175
 		create_character = {
 			random_traits = yes
 			dynasty = NONE
@@ -540,7 +540,7 @@ character_event = {
 
 # Son returns home as a zealot (Son)
 character_event = {
-	id = ancrel.176
+	id = ancrel.1176
 	hide_window = yes
 	
 	trigger = {
@@ -559,7 +559,7 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = ancrel.177 } }
+		father = { character_event = { id = ancrel.1177 } }
 		clr_character_flag = serving_fianna
 	}
 	
@@ -570,15 +570,15 @@ character_event = {
 
 # Son returns home as a zealot
 character_event = {
-	id = ancrel.177
-	desc = EVTDESCancrel.177
+	id = ancrel.1177
+	desc = EVTDESCancrel.1177
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.177
+		name = EVTOPTAancrel.1177
 		FROM = {
 			move_character = ROOT
 			add_trait = zealous
@@ -589,7 +589,7 @@ character_event = {
 
 # Son returns home as a seasoned warrior (Son)
 character_event = {
-	id = ancrel.178
+	id = ancrel.1178
 	hide_window = yes
 	
 	trigger = {
@@ -631,7 +631,7 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = ancrel.179 } }
+		father = { character_event = { id = ancrel.1179 } }
 		clr_character_flag = serving_fianna
 	}
 	
@@ -642,15 +642,15 @@ character_event = {
 
 # Son returns home as a seasoned warrior
 character_event = {
-	id = ancrel.179
-	desc = EVTDESCancrel.179
+	id = ancrel.1179
+	desc = EVTDESCancrel.1179
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.179
+		name = EVTOPTAancrel.1179
 		FROM = {
 			move_character = ROOT
 			add_trait = brave
@@ -662,7 +662,7 @@ character_event = {
 
 # Son dies in battle (Son)
 character_event = {
-	id = ancrel.180
+	id = ancrel.1180
 	hide_window = yes
 	
 	trigger = {
@@ -748,7 +748,7 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = ancrel.181 } }
+		father = { character_event = { id = ancrel.1181 } }
 		clr_character_flag = serving_fianna
 	}
 	
@@ -759,22 +759,22 @@ character_event = {
 
 # Son dies in battle
 character_event = {
-	id = ancrel.181
-	desc = EVTDESCancrel.181
+	id = ancrel.1181
+	desc = EVTDESCancrel.1181
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.181
+		name = EVTOPTAancrel.1181
 		FROM = { death = { death_reason = death_battle } }
 	}
 }
 
 # Son returns with loot (Son)
 character_event = {
-	id = ancrel.182
+	id = ancrel.1182
 	hide_window = yes
 	
 	trigger = {
@@ -796,7 +796,7 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = ancrel.183 } }
+		father = { character_event = { id = ancrel.1183 } }
 		clr_character_flag = serving_fianna
 	}
 	
@@ -807,15 +807,15 @@ character_event = {
 
 # Son returns with loot
 character_event = {
-	id = ancrel.183
-	desc = EVTDESCancrel.183
+	id = ancrel.1183
+	desc = EVTDESCancrel.1183
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.183
+		name = EVTOPTAancrel.1183
 		FROM = {
 			move_character = ROOT
 			add_trait = fian
@@ -826,8 +826,8 @@ character_event = {
 
 # Father dies, Player Son is heir
 character_event = {
-	id = ancrel.184
-	desc = EVTDESCancrel.184
+	id = ancrel.1184
+	desc = EVTDESCancrel.1184
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
@@ -847,7 +847,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.184
+		name = EVTOPTAancrel.1184
 		add_trait = fian
 		prestige = 200
 		wealth = 200
@@ -856,7 +856,7 @@ character_event = {
 
 # Father dies, Son gets Fian trait
 character_event = {
-	id = ancrel.185
+	id = ancrel.1185
 	hide_window = yes
 	
 	trigger = {

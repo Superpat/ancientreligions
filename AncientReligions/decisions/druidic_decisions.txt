@@ -45,7 +45,7 @@ decisions = {
 			scaled_wealth = -0.20
 			set_character_flag = holding_celtic_feast
 			hidden_tooltip = { 
-				character_event = { id = ancrel.020 } 
+				character_event = { id = ancrel.0020 }
 			}
 			custom_tooltip = prepare_celtic_feast
 		}
@@ -111,7 +111,7 @@ decisions = {
 			set_character_flag = adopted_celtic_rites
 			custom_tooltip = adopt_celtic_rites
 			hidden_tooltip = {
-				character_event = { id = ancrel.001 }
+				character_event = { id = ancrel.0001 }
 			}
 		}
 		ai_will_do = {
@@ -166,7 +166,7 @@ decisions = {
 			wealth = -300
 			activate_title = { title = d_gwydion status = yes }
 			hidden_tooltip = {
-				narrative_event = { id = ancrel.110 }
+				narrative_event = { id = ancrel.0110 }
 				create_character = {
 					random_traits = yes
 					religion = druidic
@@ -220,7 +220,7 @@ decisions = {
 			wealth = -300
 			activate_title = { title = d_fianna status = yes }
 			hidden_tooltip = {
-				narrative_event = { id = ancrel.150 }
+				narrative_event = { id = ancrel.1150 }
 				create_character = {
 					random_traits = yes
 					religion = gaelic_pagan

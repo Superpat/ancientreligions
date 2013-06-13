@@ -1676,7 +1676,7 @@ character_event = {
 						trait = head5
 					}
 				}
-				character_event = { id = ancrel.010 }
+				character_event = { id = ancrel.0010 }
 			}
 			if = {
 				limit = {
@@ -1688,7 +1688,7 @@ character_event = {
 					}
 					trait = head1
 				}
-				character_event = { id = ancrel.011 }
+				character_event = { id = ancrel.0011 }
 			}
 			if = {
 				limit = {
@@ -1700,7 +1700,7 @@ character_event = {
 					}
 					trait = head2
 				}
-				character_event = { id = ancrel.012 }
+				character_event = { id = ancrel.0012 }
 			}
 			if = {
 				limit = {
@@ -1712,7 +1712,7 @@ character_event = {
 					}
 					trait = head3
 				}
-				character_event = { id = ancrel.013 }
+				character_event = { id = ancrel.0013 }
 			}
 			if = {
 				limit = {
@@ -1724,7 +1724,7 @@ character_event = {
 					}
 					trait = head4
 				}
-				character_event = { id = ancrel.014 }
+				character_event = { id = ancrel.0014 }
 			}
 			if = {
 				limit = {
@@ -1736,7 +1736,7 @@ character_event = {
 					}
 					trait = head5
 				}
-				character_event = { id = ancrel.015 }
+				character_event = { id = ancrel.0015 }
 			}
 		}
 	}
@@ -1771,7 +1771,7 @@ character_event = {
 						trait = head5
 					}
 				}
-				character_event = { id = ancrel.010 }
+				character_event = { id = ancrel.0010 }
 			}
 			if = {
 				limit = {
@@ -1783,7 +1783,7 @@ character_event = {
 					}
 					trait = head1
 				}
-				character_event = { id = ancrel.011 }
+				character_event = { id = ancrel.0011 }
 			}
 			if = {
 				limit = {
@@ -1795,7 +1795,7 @@ character_event = {
 					}
 					trait = head2
 				}
-				character_event = { id = ancrel.012 }
+				character_event = { id = ancrel.0012 }
 			}
 			if = {
 				limit = {
@@ -1807,7 +1807,7 @@ character_event = {
 					}
 					trait = head3
 				}
-				character_event = { id = ancrel.013 }
+				character_event = { id = ancrel.0013 }
 			}
 			if = {
 				limit = {
@@ -1819,7 +1819,7 @@ character_event = {
 					}
 					trait = head4
 				}
-				character_event = { id = ancrel.014 }
+				character_event = { id = ancrel.0014 }
 			}
 			if = {
 				limit = {
@@ -1831,7 +1831,7 @@ character_event = {
 					}
 					trait = head5
 				}
-				character_event = { id = ancrel.015 }
+				character_event = { id = ancrel.0015 }
 			}
 		}
 	}
@@ -1866,7 +1866,7 @@ hidden_tooltip = {
 						trait = head5
 					}
 				}
-				character_event = { id = ancrel.010 }
+				character_event = { id = ancrel.0010 }
 			}
 			if = {
 				limit = {
@@ -1878,7 +1878,7 @@ hidden_tooltip = {
 					}
 					trait = head1
 				}
-				character_event = { id = ancrel.011 }
+				character_event = { id = ancrel.0011 }
 			}
 			if = {
 				limit = {
@@ -1890,7 +1890,7 @@ hidden_tooltip = {
 					}
 					trait = head2
 				}
-				character_event = { id = ancrel.012 }
+				character_event = { id = ancrel.0012 }
 			}
 			if = {
 				limit = {
@@ -1902,7 +1902,7 @@ hidden_tooltip = {
 					}
 					trait = head3
 				}
-				character_event = { id = ancrel.013 }
+				character_event = { id = ancrel.0013 }
 			}
 			if = {
 				limit = {
@@ -1914,7 +1914,7 @@ hidden_tooltip = {
 					}
 					trait = head4
 				}
-				character_event = { id = ancrel.014 }
+				character_event = { id = ancrel.0014 }
 			}
 			if = {
 				limit = {
@@ -1926,7 +1926,7 @@ hidden_tooltip = {
 					}
 					trait = head5
 				}
-				character_event = { id = ancrel.015 }
+				character_event = { id = ancrel.0015 }
 			}
 		}
 	}
@@ -1961,7 +1961,7 @@ hidden_tooltip = {
 						trait = head5
 					}
 				}
-				character_event = { id = ancrel.010 }
+				character_event = { id = ancrel.0010 }
 			}
 			if = {
 				limit = {
@@ -1973,7 +1973,7 @@ hidden_tooltip = {
 					}
 					trait = head1
 				}
-				character_event = { id = ancrel.011 }
+				character_event = { id = ancrel.0011 }
 			}
 			if = {
 				limit = {
@@ -1985,7 +1985,7 @@ hidden_tooltip = {
 					}
 					trait = head2
 				}
-				character_event = { id = ancrel.012 }
+				character_event = { id = ancrel.0012 }
 			}
 			if = {
 				limit = {
@@ -1997,7 +1997,7 @@ hidden_tooltip = {
 					}
 					trait = head3
 				}
-				character_event = { id = ancrel.013 }
+				character_event = { id = ancrel.0013 }
 			}
 			if = {
 				limit = {
@@ -2009,7 +2009,7 @@ hidden_tooltip = {
 					}
 					trait = head4
 				}
-				character_event = { id = ancrel.014 }
+				character_event = { id = ancrel.0014 }
 			}
 			if = {
 				limit = {
@@ -2021,7 +2021,7 @@ hidden_tooltip = {
 					}
 					trait = head5
 				}
-				character_event = { id = ancrel.015 }
+				character_event = { id = ancrel.0015 }
 			}
 		}
 	}
@@ -2056,7 +2056,7 @@ hidden_tooltip = {
 						trait = head5
 					}
 				}
-				character_event = { id = ancrel.010 }
+				character_event = { id = ancrel.0010 }
 			}
 			if = {
 				limit = {
@@ -2068,7 +2068,7 @@ hidden_tooltip = {
 					}
 					trait = head1
 				}
-				character_event = { id = ancrel.011 }
+				character_event = { id = ancrel.0011 }
 			}
 			if = {
 				limit = {
@@ -2080,7 +2080,7 @@ hidden_tooltip = {
 					}
 					trait = head2
 				}
-				character_event = { id = ancrel.012 }
+				character_event = { id = ancrel.0012 }
 			}
 			if = {
 				limit = {
@@ -2092,7 +2092,7 @@ hidden_tooltip = {
 					}
 					trait = head3
 				}
-				character_event = { id = ancrel.013 }
+				character_event = { id = ancrel.0013 }
 			}
 			if = {
 				limit = {
@@ -2104,7 +2104,7 @@ hidden_tooltip = {
 					}
 					trait = head4
 				}
-				character_event = { id = ancrel.014 }
+				character_event = { id = ancrel.0014 }
 			}
 			if = {
 				limit = {
@@ -2116,7 +2116,7 @@ hidden_tooltip = {
 					}
 					trait = head5
 				}
-				character_event = { id = ancrel.015 }
+				character_event = { id = ancrel.0015 }
 			}
 		}
 	}
@@ -2151,7 +2151,7 @@ character_event = {
 						trait = head5
 					}
 				}
-				character_event = { id = ancrel.010 }
+				character_event = { id = ancrel.0010 }
 			}
 			if = {
 				limit = {
@@ -2163,7 +2163,7 @@ character_event = {
 					}
 					trait = head1
 				}
-				character_event = { id = ancrel.011 }
+				character_event = { id = ancrel.0011 }
 			}
 			if = {
 				limit = {
@@ -2175,7 +2175,7 @@ character_event = {
 					}
 					trait = head2
 				}
-				character_event = { id = ancrel.012 }
+				character_event = { id = ancrel.0012 }
 			}
 			if = {
 				limit = {
@@ -2187,7 +2187,7 @@ character_event = {
 					}
 					trait = head3
 				}
-				character_event = { id = ancrel.013 }
+				character_event = { id = ancrel.0013 }
 			}
 			if = {
 				limit = {
@@ -2199,7 +2199,7 @@ character_event = {
 					}
 					trait = head4
 				}
-				character_event = { id = ancrel.014 }
+				character_event = { id = ancrel.0014 }
 			}
 			if = {
 				limit = {
@@ -2211,7 +2211,7 @@ character_event = {
 					}
 					trait = head5
 				}
-				character_event = { id = ancrel.015 }
+				character_event = { id = ancrel.0015 }
 			}
 		}
 	}

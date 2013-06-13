@@ -2,7 +2,7 @@
 #
 # Rebirth of Druidism
 #
-# Event ID ancrel.000 - ancrel.009 reserved
+# Event ID ancrel.0000 - ancrel.0009 reserved
 #
 #######################################
 
@@ -12,8 +12,8 @@ namespace = ancrel
 
 # Old "Wizard" Appears
 character_event = {
-	id = ancrel.000
-	desc = EVTDESCancrel.000
+	id = ancrel.0000
+	desc = EVTDESCancrel.0000
 	picture = GFX_evt_Whispering_in_ear
 	border = GFX_event_normal_frame_religion
 	
@@ -46,7 +46,7 @@ character_event = {
 	}	
 	
 	option = {
-		name = EVTOPTAancrel.000
+		name = EVTOPTAancrel.0000
 		if = {
 			limit = {
 				OR = {
@@ -88,7 +88,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTBancrel.000
+		name = EVTOPTBancrel.0000
 		custom_tooltip = begone_sorcerer
 		set_character_flag = hates_magic
 	}
@@ -96,8 +96,8 @@ character_event = {
 
 # Adopt celtic rites
 character_event = {
-	id = ancrel.001
-	desc = EVTDESCancrel.001
+	id = ancrel.0001
+	desc = EVTDESCancrel.0001
 	picture = GFX_evt_Pagan_dolmen
 	
 	triggered_only = yes
@@ -107,7 +107,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.001
+		name = EVTOPTAancrel.0001
 		piety = -50
 		custom_tooltip = adopt_celtic_rites
 		add_character_modifier = {
@@ -128,7 +128,7 @@ character_event = {
 					war = no
 					NOT = { trait = incapable }
 				}
-				character_event = { id = ancrel.003 days = 5 }
+				character_event = { id = ancrel.0003 days = 5 }
 			}
 			any_courtier = {
 				limit = {
@@ -151,8 +151,8 @@ character_event = {
 
 # Bishop asks character to reform Celtic ways
 character_event = {
-	id = ancrel.002
-	desc = EVTDESCancrel.002
+	id = ancrel.0002
+	desc = EVTDESCancrel.0002
 	picture = GFX_evt_scandal
 	
 	prisoner = no
@@ -173,7 +173,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.002
+		name = EVTOPTAancrel.0002
 		ai_chance = { factor = 50 }
 		hidden_tooltip = { remove_character_modifier = celtic_ways }
 		if = {
@@ -197,7 +197,7 @@ character_event = {
 		piety = 50
 	}
 	option = {
-		name = EVTOPTBancrel.002
+		name = EVTOPTBancrel.0002
 		piety = 50
 		ai_chance = { factor = 50 }
 		religion_head = {
@@ -213,8 +213,8 @@ character_event = {
 
 # Adopt celtic rites (vassal)
 character_event = {
-	id = ancrel.003
-	desc = EVTDESCancrel.003
+	id = ancrel.0003
+	desc = EVTDESCancrel.0003
 	picture = GFX_evt_Pagan_dolmen
 	
 	prisoner = no
@@ -223,7 +223,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.003
+		name = EVTOPTAancrel.0003
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -240,12 +240,12 @@ character_event = {
 		hidden_tooltip = {
 			IF = {
 				limit = { is_ruler = yes }
-				top_liege = { character_event = { id = ancrel.004 } days = 5 }
+				top_liege = { character_event = { id = ancrel.0004 } days = 5 }
 			}
 		}
 	}
 	option = {
-		name = EVTOPTBancrel.003
+		name = EVTOPTBancrel.0003
 		piety = 50
 		ai_chance = {
 			factor = 50
@@ -269,32 +269,32 @@ character_event = {
 		hidden_tooltip = {
 			IF = {
 				limit = { is_ruler = yes }
-				top_liege = { character_event = { id = ancrel.004 } days = 5 }
+				top_liege = { character_event = { id = ancrel.0004 } days = 5 }
 			}
 		}
 	}
 }
 # Vassal adopted celtic rites
 character_event = {
-	id = ancrel.004
-	desc = EVTDESCancrel.004
+	id = ancrel.0004
+	desc = EVTDESCancrel.0004
 	picture = GFX_evt_Pagan_dolmen
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.004
+		name = EVTOPTAancrel.0004
 	}
 }
 # Vassal refuses celtic rites
 character_event = {
-	id = ancrel.005
-	desc = EVTDESCancrel.005
+	id = ancrel.0005
+	desc = EVTDESCancrel.0005
 	picture = GFX_evt_Ruler_listening_to_supplicant
 
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.005
+		name = EVTOPTAancrel.0005
 	}
 }

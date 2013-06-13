@@ -2,7 +2,7 @@
 #
 # Revival of the Hellenic religion
 #
-# Event ID ancrel.100 - ancrel.109 reserved
+# Event ID ancrel.2100 - ancrel.2109 reserved
 #
 #######################################
 
@@ -12,8 +12,8 @@ namespace = ancrel
 
 # Studied the classics
 character_event = {
-	id = ancrel.100
-	desc = EVTDESCancrel.100
+	id = ancrel.2100
+	desc = EVTDESCancrel.2100
 	picture = GFX_evt_library
 	border = GFX_event_normal_frame_religion
 
@@ -94,7 +94,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.100
+		name = EVTOPTAancrel.2100
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -141,7 +141,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTBancrel.100
+		name = EVTOPTBancrel.2100
 		ai_chance = { factor = 90 }
 		piety = 50
 	}
@@ -149,8 +149,8 @@ character_event = {
 
 # Make Hellenic Paganism the state religion?
 character_event = {
-	id = ancrel.102
-	desc = EVTDESCancrel.102
+	id = ancrel.2102
+	desc = EVTDESCancrel.2102
 	picture = GFX_evt_roman_temple
 	border = GFX_event_normal_frame_religion
 
@@ -158,7 +158,7 @@ character_event = {
 	hide_from = yes
 
 	option = {
-		name = EVTOPTAancrel.102
+		name = EVTOPTAancrel.2102
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -195,7 +195,7 @@ character_event = {
 				add_trait = zealous
 			}
 		}
-		custom_tooltip = EVTTOOLTIPAancrel.102
+		custom_tooltip = EVTTOOLTIPAancrel.2102
 		hidden_tooltip = {
 			any_realm_character  = {
 				limit = {
@@ -227,13 +227,13 @@ character_event = {
 					is_playable = yes
 					NOT = { religion = ROOT }
 				}
-				character_event = { id = ancrel.103 }
+				character_event = { id = ancrel.2103 }
 			}
 		}
 	}
 
 	option = {
-		name = EVTOPTBancrel.102
+		name = EVTOPTBancrel.2102
 		ai_chance = {
 			factor = 50
 		}
@@ -262,15 +262,15 @@ character_event = {
 
 # Adopt the new Hellenic state religion?
 character_event = {
-	id = ancrel.103
-	desc = EVTDESCancrel.103
+	id = ancrel.2103
+	desc = EVTDESCancrel.2103
 	picture = GFX_evt_roman_temple
 	border = GFX_event_normal_frame_religion
 
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.103
+		name = EVTOPTAancrel.2103
 		ai_chance = {
 			factor = 20
 			modifier = {
@@ -364,14 +364,14 @@ character_event = {
 					is_playable = yes
 					NOT = { religion = FROM }
 				}
-				character_event = { id = ancrel.103 }
+				character_event = { id = ancrel.2103 }
 			}
 		}
 		reverse_opinion = { modifier = opinion_adopted_hellenic_state_religion who = FROM }
 	}
 
 	option = {
-		name = EVTOPTBancrel.103
+		name = EVTOPTBancrel.2103
 		ai_chance = { factor = 80 }
 		piety = 10
 		reverse_opinion = { modifier = opinion_rejected_hellenic_state_religion who = FROM }

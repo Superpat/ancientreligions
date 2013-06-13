@@ -423,7 +423,7 @@ decisions = {
 			completely_controls = d_calabria
 		}
 		effect = {
-			narrative_event = { id = ancrel.222 tooltip = EVTTOOLTIPLoR.20 }
+			narrative_event = { id = ancrel.2222 tooltip = EVTTOOLTIPLoR.20 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -942,7 +942,7 @@ decisions = {
 							has_landed_title = e_latin_empire
 						}
 					}
-					character_event = { id = ancrel.102 days = 2 }
+					character_event = { id = ancrel.2102 days = 2 }
 				}
 			}
 		}

@@ -3,7 +3,7 @@
 # Roman Events
 #
 # Event ID LoR.1 - LoR.199 reserved
-# Event ID ancrel.220 - ancrel.229 reserved
+# Event ID ancrel.2220 - ancrel.2229 reserved
 #
 #######################################
 
@@ -690,9 +690,9 @@ narrative_event = {
 
 # The Restoration of Rome (HRE)
 narrative_event = {
-	id = ancrel.220
+	id = ancrel.2220
 	title = EVTNAMELoR.20
-	desc = EVTDESCancrel.220
+	desc = EVTDESCancrel.2220
 	
 	picture = GFX_evt_rome_restored_byzantine
 	
@@ -732,7 +732,7 @@ narrative_event = {
 					NOT = { character = ROOT }
 					ai = no
 				}
-				narrative_event = { id = ancrel.221 }
+				narrative_event = { id = ancrel.2221 }
 			}
 		}
 	}
@@ -740,9 +740,9 @@ narrative_event = {
 
 # Informed about Restoration of Rome (HRE)
 narrative_event = {
-	id = ancrel.221
+	id = ancrel.2221
 	title = EVTNAMELoR.21
-	desc = EVTDESCancrel.221
+	desc = EVTDESCancrel.2221
 	
 	picture = GFX_evt_rome_restored_byzantine
 	
@@ -769,9 +769,9 @@ narrative_event = {
 
 # The Creation of a new Rome
 narrative_event = {
-	id = ancrel.222
+	id = ancrel.2222
 	title = EVTNAMELoR.20
-	desc = EVTDESCancrel.222
+	desc = EVTDESCancrel.2222
 	
 	picture = GFX_evt_rome_restored_byzantine
 	
@@ -839,7 +839,7 @@ narrative_event = {
 					NOT = { character = ROOT }
 					ai = no
 				}
-				narrative_event = { id = ancrel.223 }
+				narrative_event = { id = ancrel.2223 }
 			}
 		}
 	}
@@ -847,9 +847,9 @@ narrative_event = {
 
 # Informed about Creation of a new Rome
 narrative_event = {
-	id = ancrel.223
+	id = ancrel.2223
 	title = EVTNAMELoR.21
-	desc = EVTDESCancrel.223
+	desc = EVTDESCancrel.2223
 	
 	picture = GFX_evt_rome_restored_byzantine
 	

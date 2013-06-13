@@ -2,7 +2,7 @@
 #
 # Flamines maiores
 #
-# Event ID ancrel.110 - ancrel.119 reserved
+# Event ID ancrel.2110 - ancrel.2119 reserved
 #
 #######################################
 
@@ -12,8 +12,8 @@ namespace = ancrel
 
 # The Flamen Dialis must resign
 character_event = {
-	id = ancrel.110
-	desc = EVTDESCancrel.110
+	id = ancrel.2110
+	desc = EVTDESCancrel.2110
 	picture = GFX_evt_council
 	border = GFX_event_normal_frame_religion
 
@@ -36,8 +36,8 @@ character_event = {
 
 # The Flamen Martialis must resign
 character_event = {
-	id = ancrel.111
-	desc = EVTDESCancrel.111
+	id = ancrel.2111
+	desc = EVTDESCancrel.2111
 	picture = GFX_evt_council
 	border = GFX_event_normal_frame_religion
 
@@ -60,8 +60,8 @@ character_event = {
 
 # The Flamen Quirinalis must resign
 character_event = {
-	id = ancrel.112
-	desc = EVTDESCancrel.112
+	id = ancrel.2112
+	desc = EVTDESCancrel.2112
 	picture = GFX_evt_council
 	border = GFX_event_normal_frame_religion
 
@@ -84,7 +84,7 @@ character_event = {
 
 # Cleanup when a Flamines lost his title some other way
 character_event = {
-	id = ancrel.113
+	id = ancrel.2113
 	hide_window = yes
 
 	trigger = {

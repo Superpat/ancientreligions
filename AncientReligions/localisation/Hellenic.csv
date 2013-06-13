@@ -98,12 +98,12 @@ opinion_hellenic_state_religion;Established a Hellenic state religion;;;;;;;;;;;
 opinion_forced_hellenic_state_religion;Enforced a Hellenic state religion;;;;;;;;;;;;;;;x
 opinion_adopted_hellenic_state_religion;Adopted the Hellenic state religion;;;;;;;;;;;;;;;x
 opinion_rejected_hellenic_state_religion;Rejected the Hellenic state religion;;;;;;;;;;;;;;;x
-EVTDESCancrel.100;Having long studied the old Greek and Roman classics you are wondering if their religious views wasn't better than your own.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.100;Having long studied the old Greek and Roman classics you are wondering if their religious views aren't better than your own.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTAancrel.100;Yes, the old religion was better;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTBancrel.100;No, I'm secure in my faith;;;;;;;;;;;;;;;;;;;;;;;;x
 become_pontifex_maximus;Become Pontifex Maximus;;;;;;;;;;;;;;;;;;;;;;;;x
 become_pontifex_maximus_desc;If we can return our ancient faith to it's former glory, we can restore the religious institutions of old and claim the title of Pontifex Maximus.;;;;;;;;;;;;;;;;;;;;;;;;x
-EVTDESCancrel.102;With the restoration of the religious institutions of old, you have the opportunity to re-establish the old imperial state religion once again, but your Christian vasals are not likely to appreciate such a decree.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.102;With the restoration of the religious institutions of old, you have the opportunity to re-establish the old imperial state religion once again, but your Christian vassals are not likely to appreciate such a decree.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTAancrel.102;We must restore the glory of the old faith!;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTTOOLTIPAancrel.102;Parts of the Empire will convert to the re-established imperial state religion.\n;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTBancrel.102;Let my vassals choose their own faith.;;;;;;;;;;;;;;;;;;;;;;;;x

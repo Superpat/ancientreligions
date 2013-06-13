@@ -1003,8 +1003,8 @@ pagan_group = {
 		
 		can_call_crusade = yes
 		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
 	}
 	
 	druidic_reformed = {

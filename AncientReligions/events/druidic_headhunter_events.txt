@@ -85,7 +85,7 @@ character_event = {
 	option = {
 		name = EVTOPTAancrel.0014
 		remove_trait = head4
-		add_trait = head7
+		add_trait = head5
 	}
 }
 

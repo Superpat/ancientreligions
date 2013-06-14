@@ -13,7 +13,7 @@ title_pagan_wizard = {
 	
 	allow = {
 		is_adult = yes
-		is_male = yes
+		is_female = no
 		is_ruler = no
 		trait = mystic
 		OR = {
@@ -21,8 +21,8 @@ title_pagan_wizard = {
 		}
 		FROM = {
 			OR = {
-				religion_group = christian_group
-				religion_group = muslim_group
+				religion_group = christian
+				religion_group = muslim
 				religion_group = zoroastrian_group
 			}
 		}

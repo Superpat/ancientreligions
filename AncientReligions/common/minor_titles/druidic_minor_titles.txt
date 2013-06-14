@@ -14,7 +14,7 @@ title_druid = {
 	
 	allow = {
 		is_adult = yes
-		is_male = yes
+		is_female = no
 		is_ruler = no
 		trait = scholar
 		OR = {
@@ -26,7 +26,7 @@ title_druid = {
 		FROM = {
 			OR = {
 				religion = druidic
-				controls_religion = druidic_reformed
+				religion = druidic_reformed
 				religion = gaelic_pagan
 				religion = gaelic_pagan_reformed
 			}
@@ -34,7 +34,7 @@ title_druid = {
 	}
 	
 	gain_effect = {
-		trait = druid
+		add_trait = druid
 	}
 	lose_effect = {
 		remove_trait = druid
@@ -87,8 +87,8 @@ title_laoch = {
 		FROM = {
 			is_feudal = yes
 			OR = {
-				religion = gaelic
-				religion = gaelic_reformed
+				religion = gaelic_pagan
+				religion = gaelic_pagan_reformed
 			}
 		}
 		NOT = { has_minor_title = title_vates }

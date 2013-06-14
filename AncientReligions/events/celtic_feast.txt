@@ -367,7 +367,7 @@ character_event = {
 
 # Sacrifice Prisoner 2 (Prisoner)
 character_event = {
-	id = ancrel.0026
+	id = ancrel.0027
 	desc = EVTDESCancrel.0026
 	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
@@ -3081,7 +3081,7 @@ character_event = {
 		}
 		hidden_tooltip = {
 			any_vassal = {
-				limit = { has_character_flag = attending_celtic feast }
+				limit = { has_character_flag = attending_celtic_feast }
 				character_event = { id = ancrel.0042 }
 			}
 		}

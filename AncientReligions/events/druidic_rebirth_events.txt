@@ -240,7 +240,7 @@ character_event = {
 		hidden_tooltip = {
 			IF = {
 				limit = { is_ruler = yes }
-				top_liege = { character_event = { id = ancrel.0004 } days = 5 }
+				top_liege = { character_event = { id = ancrel.0004 days = 5 } }
 			}
 		}
 	}
@@ -269,7 +269,7 @@ character_event = {
 		hidden_tooltip = {
 			IF = {
 				limit = { is_ruler = yes }
-				top_liege = { character_event = { id = ancrel.0004 } days = 5 }
+				top_liege = { character_event = { id = ancrel.0005 days = 5 } }
 			}
 		}
 	}

@@ -20,3 +20,7 @@ opinion_refused_celtic_feast = {
 	opinion = -15
 	months = 12
 }
+opinion_refused_celtic_rites = {
+	opinion = -15
+	months = 76
+}

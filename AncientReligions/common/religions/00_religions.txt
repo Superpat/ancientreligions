@@ -1113,7 +1113,7 @@ pagan_group = {
 		graphical_culture = norsegfx
 		
 
-		icon = 38
+		icon = 41
 		heresy_icon = 39
 		
 		color = { 0.2 0.6 0.03 }
@@ -1163,7 +1163,7 @@ pagan_group = {
 	gaelic_pagan = {
 		graphical_culture = norsegfx
 		
-		icon = 37
+		icon = 40
 		heresy_icon = 39
 		
 		color = { 0.2 0.6 0.03 }

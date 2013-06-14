@@ -143,7 +143,7 @@ character_event = {
 					war = no
 					NOT = { trait = incapable }
 				}
-				character_event = { id = ancrel.003 days = 5 }
+				character_event = { id = ancrel.0003 days = 5 }
 			}
 		}
 	}

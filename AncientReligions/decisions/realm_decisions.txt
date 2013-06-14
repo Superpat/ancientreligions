@@ -365,7 +365,7 @@ decisions = {
 			completely_controls = c_abydos
 		}
 		effect = {
-			narrative_event = { id = ancrel.220 tooltip = EVTTOOLTIPLoR.20 }
+			narrative_event = { id = ancrel.2220 tooltip = EVTTOOLTIPLoR.20 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -516,7 +516,7 @@ decisions = {
 			b_roma = { holder_scope = { religion = catholic } }
 		}
 		effect = {
-			narrative_event = { id = ancrel.210 tooltip = EVTTOOLTIPLoR.210}
+			narrative_event = { id = ancrel.2210 tooltip = EVTTOOLTIPLoR.210}
 			set_global_flag = schism_mended
 		}
 		ai_will_do = {

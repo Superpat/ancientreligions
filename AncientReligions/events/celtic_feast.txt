@@ -1379,7 +1379,7 @@ character_event = {
 # Sacrifice Mother (Vassal)
 character_event = {
 	id = ancrel.0048
-	desc = EVTDESCancrel.00408
+	desc = EVTDESCancrel.0408
 	picture = GFX_evt_oak_tree
 	border = GFX_event_normal_frame_religion
 	

@@ -74,6 +74,10 @@ city_job_marshal_hellenic_pagan_byzantine;Stratelates;;;;;;;;;;;;;;;x
 city_job_treasurer_hellenic_pagan;Quaestor;;;;;;;;;;;;;;;x
 city_job_spiritual_hellenic_pagan;Augur;;;;;;;;;;;;;;;x
 ;;;;;;;;;;
+hellenic_county_liberation_desc;Hellenic pagan rulers can liberate Italian and Greek provinces from the tyrannical rule of the monotheistic religions.;;;;;;;;;;;;;;;x
+CB_NAME_HELLENIC_LIBERATION;Liberation of [Title.GetBaseName];;;;;;;;;;;;;;;x
+WAR_NAME_HELLENIC_LIBERATION;$ORDER$$FIRST_ADJ$ Liberation of $OTHER_TITLE$;;;;;;;;;;;;;;;x
+;;;;;;;;;;
 title_censor;Censor;Censeur;Censur;;Censor;;;;;;;;;;;x
 title_censor_desc;The Censor is responsible for taking the census of the realm. While the office was originally instituded for taxation purposes the most important duty of the Censor is to supervise public morality and recommend suitable candidates for public offices.;;;;;;;;;;;;;;;x
 title_aedile;Aedile;Édile;Ädil;;Edil;;;;;;;;;;;x

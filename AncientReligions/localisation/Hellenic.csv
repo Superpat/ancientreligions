@@ -68,6 +68,11 @@ job_marshal_hellenic_pagan;Magister Militum;;;;;;;;;;;;;;;x
 job_marshal_hellenic_pagan_byzantine;Stratelates;;;;;;;;;;;;;;;x
 job_treasurer_hellenic_pagan;Quaestor;;;;;;;;;;;;;;;x
 job_spiritual_hellenic_pagan;Augur;;;;;;;;;;;;;;;x
+city_job_chancellor_hellenic_pagan;Magister Officiorum;;;;;;;;;;;;;;;x
+city_job_marshal_hellenic_pagan;Magister Militum;;;;;;;;;;;;;;;x
+city_job_marshal_hellenic_pagan_byzantine;Stratelates;;;;;;;;;;;;;;;x
+city_job_treasurer_hellenic_pagan;Quaestor;;;;;;;;;;;;;;;x
+city_job_spiritual_hellenic_pagan;Augur;;;;;;;;;;;;;;;x
 ;;;;;;;;;;
 title_censor;Censor;Censeur;Censur;;Censor;;;;;;;;;;;x
 title_censor_desc;The Censor is responsible for taking the census of the realm. While the office was originally instituded for taxation purposes the most important duty of the Censor is to supervise public morality and recommend suitable candidates for public offices.;;;;;;;;;;;;;;;x

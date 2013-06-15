@@ -110,8 +110,6 @@ opinion_rejected_hellenic_state_religion;Rejected the Hellenic state religion;;;
 EVTDESCancrel.2100;Having long studied the old Greek and Roman classics you are wondering if their religious views aren't better than your own.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTAancrel.2100;Yes, the old religion was better;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTBancrel.2100;No, I'm secure in my faith;;;;;;;;;;;;;;;;;;;;;;;;x
-become_pontifex_maximus;Become Pontifex Maximus;;;;;;;;;;;;;;;;;;;;;;;;x
-become_pontifex_maximus_desc;If we can return our ancient faith to it's former glory, we can restore the religious institutions of old and claim the title of Pontifex Maximus.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESCancrel.2102;With the restoration of the religious institutions of old, you have the opportunity to re-establish the old imperial state religion once again, but your Christian vassals are not likely to appreciate such a decree.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTAancrel.2102;We must restore the glory of the old faith!;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTTOOLTIPAancrel.2102;Parts of the Empire will convert to the re-established imperial state religion.\n;;;;;;;;;;;;;;;;;;;;;;;;x

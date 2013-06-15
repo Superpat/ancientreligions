@@ -910,44 +910,4 @@ decisions = {
 			factor = 1
 		}
 	}
-	
-	become_pontifex_maximus = {
-		is_high_prio = yes
-		potential = {
-			has_dlc = "The Old Gods"
-			religion = hellenic_pagan
-			NOT = { has_global_flag = hellenic_priesthood_founded }
-			OR = {
-				tier = emperor
-				tier = king
-			}
-		}
-		allow = {
-			num_of_holy_sites = 3
-			religion_authority = 0.6
-			piety = 300
-		}
-		effect = {
-			set_global_flag = hellenic_priesthood_founded
-			piety = -300
-			activate_title = { title = d_hellenic_pagan status = yes }
-			hidden_tooltip = {
-				d_hellenic_pagan = { grant_title = ROOT }
-				if = {
-					limit = {
-						religion = hellenic_pagan
-						OR = {
-							has_landed_title = e_byzantium
-							has_landed_title = e_roman_empire
-							has_landed_title = e_latin_empire
-						}
-					}
-					character_event = { id = ancrel.2102 days = 2 }
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
 }

@@ -10,13 +10,7 @@ title_flamen_dialis = {
 	allow = {
 		is_adult = yes
 		is_female = no
-		has_global_flag = hellenic_priesthood_founded
-		FROM = {
-			is_feudal = yes
-			independent = yes
-			higher_tier_than = COUNT
-			religion = hellenic_pagan
-		}
+		FROM = { has_landed_title = d_hellenic_pagan }
 		OR = {
 			spouse = { religion = hellenic_pagan }
 			# We want to remove the title by event if his wife dies or converts
@@ -82,15 +76,9 @@ title_flamen_martialis = {
 	monthly_piety = 0.005
 
 	allow = {
-		has_global_flag = hellenic_priesthood_founded
 		is_adult = yes
 		is_female = no
-		FROM = {
-			is_feudal = yes
-			independent = yes
-			higher_tier_than = COUNT
-			religion = hellenic_pagan
-		}
+		FROM = { has_landed_title = d_hellenic_pagan }
 		OR = {
 			spouse = { religion = hellenic_pagan }
 			# We want to remove the title by event if his wife dies or converts
@@ -153,19 +141,13 @@ title_flamen_quirinalis = {
 	monthly_piety = 0.005
 
 	allow = {
-		has_global_flag = hellenic_priesthood_founded
 		is_adult = yes
 		is_female = no
 		OR = {
 			is_theocracy = yes
 			is_ruler = no
 		}
-		FROM = {
-			is_feudal = yes
-			independent = yes
-			higher_tier_than = COUNT
-			religion = hellenic_pagan
-		}
+		FROM = { has_landed_title = d_hellenic_pagan }
 		OR = {
 			spouse = { religion = hellenic_pagan }
 			# We want to remove the title by event if his wife dies or converts

@@ -1,0 +1,951 @@
+###################################
+#
+# THE OLD GODS 
+# - Aonach Tailteann Events
+#
+###################################
+
+# Written by Patrick Marchand
+
+namespace = ancrel
+
+# Invitation
+character_event = {
+	id = ancrel.1190
+	title = TAILTEANNTITLE
+	desc = EVTDESCancrel.1190
+	picture = GFX_evt_courier
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAancrel.1190
+		prestige = 25
+		piety = 25
+		set_character_flag = attending_tailteann
+	}
+	option = {
+		name = EVTOPTBancrel.1190
+		prestige = -50
+		piety = -50
+	}
+}	
+
+# Start of Aonach
+character_event = {
+	id = ancrel.1191
+	title = TAILTEANNTITLE
+	desc = EVTDESCancrel.1191
+	picture = GFX_evt_joust
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAancrel.1191
+		trigger = {
+			war = no
+		}
+		hidden_tooltip = {
+			set_character_flag = tailteann_begins
+			set_character_flag = tailteann_death_phase
+			set_character_flag = attending_tailteann
+			location = {
+				set_province_flag = tailteann_60_days
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBancrel.1191
+		trigger = {
+			war = yes
+		}
+		wealth = 200
+		prestige = -100
+		hidden_tooltip = {
+			any_realm_character = {
+				limit = {
+					has_character_flag = attending_tailteann
+				}
+				character_event = { id = ancrel.1192 }
+			}
+		}
+		clr_character_flag = epic_tournament
+	}
+}
+
+# Aonach has been cancelled
+character_event = {
+	id = ancrel.1192
+	title = TAILTEANNTITLE
+	desc = EVTDESCancrel.1192
+	picture = GFX_evt_joust
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.1192
+		prestige = -50
+		clr_character_flag = attending_tailteann
+	}
+}
+
+# Invitations have gone out
+character_event = {
+	id = ancrel.1193
+	title = TAILTEANNTITLE
+	desc = EVTDESCancrel.1193
+	picture = GFX_evt_courier
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAancrel.1193
+	}
+}
+
+# Ruler has died, the Aonach is over
+character_event = {
+	id = ancrel.1194
+	title = TAILTEANNTITLE
+	desc = EVTDESCancrel.1194
+	picture = GFX_evt_death
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = tailteann_begins
+	}
+	
+	option = {
+		name = EVTOPTAancrel.1194
+		clr_character_flag = tailteann_begins
+		clr_character_flag = winner
+		clr_character_flag = second_place
+		clr_character_flag = third_place
+		clr_character_flag = attending_tailteann
+		clr_character_flag = attending_tailteann_event
+		clr_character_flag = tailteann_third_place
+		clr_character_flag = tailteann_second_place
+		clr_character_flag = tailteann_winner
+		any_vassal = {
+			limit = {
+				has_character_flag = attending_tailteann
+				NOT = {
+					character = PREV
+				}
+				NOT = {
+					has_character_flag = tailteann_third_place
+				}
+				NOT = {
+					has_character_flag = tailteann_second_place
+				}
+				NOT = {
+					has_character_flag = tailteann_winner
+				}
+			}
+			set_character_flag = tailteann_has_ended
+			clr_character_flag = attending_tailteann
+			clr_character_flag = attending_tailteann_event
+			letter_event = {
+				id = ancrel.1195
+				days = 2
+				random = 2
+				tooltip = EVTTOOLTIPancrel.1195
+			}
+		}
+		any_vassal = {
+			limit = {
+				has_character_flag = attending_tailteann
+				OR = {
+					has_character_flag = tailteann_third_place
+					has_character_flag = tailteann_second_place
+					has_character_flag = tailteann_winner
+				}
+			}
+			letter_event = {
+				id = ancrel.1195
+				days = 2
+				random = 2
+				tooltip = EVTTOOLTIPancrel.1195
+			}
+			set_character_flag = tailteann_has_ended
+			clr_character_flag = tailteann_third_place
+			clr_character_flag = tailteann_second_place
+			clr_character_flag = tailteann_winner
+			clr_character_flag = attending_tailteann
+			clr_character_flag = attending_tailteann_event
+		}
+	}
+}
+
+# The Aonach has been cancelled due to Ruler's death
+letter_event = {
+	id = ancrel.1195
+	title = TAILTEANNTITLE
+	desc = EVTDESCancrel.1195
+	picture = GFX_evt_death
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.1195
+	}
+}
+
+# Choose who to honor at the bonfire
+character_event = {
+	id = ancrel.1200
+	title = TAILTEANNTITLE
+	desc = EVTDESCancrel.1200
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_normal_frame_diplomacy
+	
+	trigger = {
+		is_ruler = yes
+		has_character_flag = tailteann_death_phase
+		NOT = {
+			has_character_flag = choose_dead_one_tailteann
+			has_character_flag = chosen_dead_one_tailteann
+		}
+		OR = {
+			father_even_if_dead = {
+				is_alive = no
+			}
+			mother = {
+				is_alive = no
+			}
+		}
+	}
+	
+	hide_from = yes
+	
+	option = { # In memory of father
+		name = EVTOPTAancrel.1200
+		trigger = {
+			father_even_if_dead = {
+				is_alive = no
+			}
+		}
+		set_character_flag = choose_dead_one_tailteann
+		if = {
+			limit = { father_even_if_dead = { death_reason = death_by_nature } }
+			hidden_tooltip = { character_event = { id = ancrel.1210 days = 2 random = 10 } }
+		}
+		if = {
+			limit = {
+				father_even_if_dead = {
+					OR = {
+						death_reason = death_battle
+						death_reason = death_battle_no_killer
+					}
+				}
+			}
+			hidden_tooltip = { character_event = { id = ancrel.1211 days = 2 random = 10 } }
+		}
+		if = {
+			limit = {
+				father_even_if_dead = {
+					death_reason = death_execution 
+					NOT = { killer = { character = ROOT } }
+				}
+			}
+			hidden_tooltip = { character_event = { id = ancrel.1212 days = 2 random = 10 } }
+		}
+		if = {
+			limit = {
+				father_even_if_dead = {
+					death_reason = death_murder
+					NOT = { killer = { character = ROOT } }
+				}
+			}
+			hidden_tooltip = { character_event = { id = ancrel.1213 days = 2 random = 10 } }
+		}
+		if = {
+			limit = {
+				father_even_if_dead = {
+					OR = {
+						death_reason = death_accident 
+						death_reason = death_murder_unknown
+					} 
+				}
+			}
+			hidden_tooltip = { character_event = { id = ancrel.1215 days = 2 random = 10 } }
+		}
+		if = {
+			limit = {
+				father_even_if_dead = {
+					death_reason = death_dungeon
+					NOT = { killer = { character = ROOT } }
+				} 
+			}
+			hidden_tooltip = { character_event = { id = ancrel.1216 days = 2 random = 10 } }
+		}
+		if = {
+			limit = {
+				father_even_if_dead = {
+				death_reason = death_sacrificed
+					NOT = { killer = { character = ROOT } }
+				} 
+			}
+			hidden_tooltip = { character_event = { id = ancrel.1217 days = 2 random = 10 } }
+		}
+		if = {
+			limit = { father_even_if_dead = { death_reason = death_duel } }
+			hidden_tooltip = { character_event = { id = ancrel.1218 days = 2 random = 10 } }
+		}
+		if = {
+			limit = { father_even_if_dead = { death_reason = death_suicide } }
+			hidden_tooltip = { character_event = { id = ancrel.1219 days = 2 random = 10 } }
+		}
+		if = {
+			limit = {
+				father_even_if_dead = {
+					OR = {
+						and = {
+							death_reason = death_murder
+							killer = { character = ROOT }
+						}
+						and = {
+							death_reason = death_execution 
+							killer = { character = ROOT }
+						}
+						and = {
+							death_reason = death_dungeon 
+							killer = { character = ROOT }
+						}
+						and = {
+							death_reason = death_sacrificed
+							killer = { character = ROOT }
+						}
+					}
+				}
+			}
+			hidden_tooltip = { character_event = { id = ancrel.1220 days = 2 } }
+		}
+		if = {
+			limit = {
+				NOT = {
+					father_even_if_dead = {
+						OR = {
+							death_reason = death_by_nature
+							death_reason = death_battle
+							death_reason = death_execution
+							death_reason = death_murder
+							death_reason = death_murder_unknown
+							death_reason = death_accident
+							death_reason = death_dungeon
+							death_reason = death_sacrificed
+							death_reason = death_duel
+							death_reason = death_suicide
+						}
+					}
+				}
+			}
+			hidden_tooltip = { character_event = { id = ancrel.1221 days = 2 random = 10 } }
+		}
+		custom_tooltip = honor_dead_tailteann
+	}
+	
+	option = { # In memory of mother
+		name = EVTOPTBancrel.1200
+		trigger = {
+			mother = {
+				is_alive = no
+			}
+		}
+		set_character_flag = choose_dead_one_tailteann
+		
+		if = {
+			limit = { mother_even_if_dead = { death_reason = death_by_nature } }
+			hidden_tooltip = { character_event = { id = ancrel.1222 days = 2 random = 10 } }
+		}
+		if = {
+			limit = { 
+				mother_even_if_dead = {
+					death_reason = death_execution 
+					NOT = { killer = { character = ROOT } }
+				} 
+			}
+			hidden_tooltip = { character_event = { id = ancrel.1223 days = 2 random = 10 } }
+		}
+		if = {
+			limit = { 
+				mother_even_if_dead = { 
+					death_reason = death_murder
+					NOT = { killer = { character = ROOT } }
+				}
+			}
+			hidden_tooltip = { character_event = { id = ancrel.1224 days = 2 random = 10 } }
+		}
+		if = {
+			limit = { 
+				mother_even_if_dead = { 
+					OR = {
+						death_reason = death_accident 
+						death_reason = death_murder_unknown
+					}
+				}
+			}
+			hidden_tooltip = { character_event = { id = ancrel.1225 days = 2 random = 10 } }
+		}
+		if = {
+			limit = { 
+				mother_even_if_dead = { 
+					death_reason = death_dungeon
+					NOT = { killer = { character = ROOT } }
+				} 
+			}
+			hidden_tooltip = { character_event = { id = ancrel.1226 days = 2 random = 10 } }
+		}
+		if = {
+			limit = { 
+				mother_even_if_dead = {
+					death_reason = death_sacrificed
+					NOT = { killer = { character = ROOT } }
+				} 
+			}
+			hidden_tooltip = { character_event = { id = ancrel.1227 days = 2 random = 10 } }
+		}
+		if = {
+			limit = { mother_even_if_dead = { death_reason = death_suicide } }
+			hidden_tooltip = { character_event = { id = ancrel.1228 days = 2 random = 10 } }
+		}
+		if = {
+			limit = { 
+				mother_even_if_dead = { 
+					OR = {
+						and = {
+							death_reason = death_murder 
+							killer = { character = ROOT }
+						}
+						and = {
+							death_reason = death_execution 
+							killer = { character = ROOT }
+						}
+						and = {
+							death_reason = death_dungeon 
+							killer = { character = ROOT }
+						}
+						and = {
+							death_reason = death_sacrificed
+							killer = { character = ROOT }
+						}
+					}
+				} 
+			}
+			hidden_tooltip = { character_event = { id = ancrel.1229 days = 2 random = 10 } }
+		}
+		if = {
+			limit = {
+				NOT = {
+					mother_even_if_dead = { 
+						OR = {
+							death_reason = death_by_nature
+							death_reason = death_execution
+							death_reason = death_murder
+							death_reason = death_murder_unknown
+							death_reason = death_accident
+							death_reason = death_dungeon
+							death_reason = death_sacrificed
+							death_reason = death_suicide
+						}
+					}
+				}
+			}
+			hidden_tooltip = { character_event = { id = ancrel.1230 days = 2 random = 10 } }
+		}
+		set_character_flag = choose_dead_one_tailteann
+		custom_tooltip = honor_dead_tailteann
+	}
+	
+}
+
+# Father (Death by Natural Causes)
+narrative_event = {
+	id = ancrel.1210
+	title = EVTNAMEancrel.1210
+	desc = EVTDESCancrel.1210
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.1240
+		piety = 100
+		clr_character_flag = choose_dead_one_tailteann
+		set_character_flag = chosen_dead_one_tailteann
+		hidden_tooltip = { character_event = { id = ancrel.1242 } }
+	}
+}
+
+# Father (Death by Battle)
+narrative_event = {
+	id = ancrel.1211
+	title = EVTNAMEancrel.1210
+	desc = EVTDESCancrel.1211
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.1240
+		piety = 150
+		clr_character_flag = choose_dead_one_tailteann
+		set_character_flag = chosen_dead_one_tailteann
+		hidden_tooltip = { character_event = { id = ancrel.1242 } }
+	}
+}
+
+# Father (Death by Execution)
+narrative_event = {
+	id = ancrel.1212
+	title = EVTNAMEancrel.1210
+	desc = EVTDESCancrel.1212
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.1240
+		piety = 100
+		clr_character_flag = choose_dead_one_tailteann
+		set_character_flag = chosen_dead_one_tailteann
+		hidden_tooltip = { character_event = { id = ancrel.1242 } }
+	}
+}
+
+# Father (Death by Murder)
+narrative_event = {
+	id = ancrel.1213
+	title = EVTNAMEancrel.1210
+	desc = EVTDESCancrel.1213
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.1240
+		piety = 100
+		clr_character_flag = choose_dead_one_tailteann
+		set_character_flag = chosen_dead_one_tailteann
+		hidden_tooltip = { character_event = { id = ancrel.1242 } }
+	}
+}
+
+# Father (Death by Accident)
+narrative_event = {
+	id = ancrel.1215
+	title = EVTNAMEancrel.1210
+	desc = EVTDESCancrel.1215
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.1240
+		piety = 100
+		clr_character_flag = choose_dead_one_tailteann
+		set_character_flag = chosen_dead_one_tailteann
+		hidden_tooltip = { character_event = { id = ancrel.1242 } }
+	}
+}
+
+# Father (Death by Dungeon)
+narrative_event = {
+	id = ancrel.1216
+	title = EVTNAMEancrel.1210
+	desc = EVTDESCancrel.1216
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.1240
+		piety = 100
+		clr_character_flag = choose_dead_one_tailteann
+		set_character_flag = chosen_dead_one_tailteann
+		hidden_tooltip = { character_event = { id = ancrel.1242 } }
+	}
+}
+
+# Father (Death by Sacrifice)
+narrative_event = {
+	id = ancrel.1217
+	title = EVTNAMEancrel.1210
+	desc = EVTDESCancrel.1217
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.1240
+		piety = 100
+		clr_character_flag = choose_dead_one_tailteann
+		set_character_flag = chosen_dead_one_tailteann
+		hidden_tooltip = { character_event = { id = ancrel.1242 } }
+	}
+}
+
+# Father (Death by Duel)
+narrative_event = {
+	id = ancrel.1218
+	title = EVTNAMEancrel.1210
+	desc = EVTDESCancrel.1218
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.1240
+		piety = 125
+		clr_character_flag = choose_dead_one_tailteann
+		set_character_flag = chosen_dead_one_tailteann
+		hidden_tooltip = { character_event = { id = ancrel.1242 } }
+	}
+}
+
+# Father (Death by Suicide)
+narrative_event = {
+	id = ancrel.1219
+	title = EVTNAMEancrel.1210
+	desc = EVTDESCancrel.1219
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.1240
+		piety = 50
+		clr_character_flag = choose_dead_one_tailteann
+		set_character_flag = chosen_dead_one_tailteann
+		hidden_tooltip = { character_event = { id = ancrel.1242 } }
+	}
+}
+
+# Father (Death by Murder - YOU are the killer)
+narrative_event = {
+	id = ancrel.1220
+	title = EVTNAMEancrel.1210
+	desc = EVTDESCancrel.1220
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.1240
+		piety = 50
+		clr_character_flag = choose_dead_one_tailteann
+		set_character_flag = chosen_dead_one_tailteann
+		hidden_tooltip = { character_event = { id = ancrel.1242 } }
+	}
+}
+
+# Father (Death by Other Reasons)
+narrative_event = {
+	id = ancrel.1221
+	title = EVTNAMEancrel.1210
+	desc = EVTDESCancrel.1221
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.1240
+		piety = 100
+		clr_character_flag = choose_dead_one_tailteann
+		set_character_flag = chosen_dead_one_tailteann
+		hidden_tooltip = { character_event = { id = ancrel.1242 } }
+	}
+}
+
+# Mother (Death by Natural Causes)
+narrative_event = {
+	id = ancrel.1222
+	title = EVTNAMEancrel.1222
+	desc = EVTDESCancrel.1222
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.1240
+		piety = 100
+		clr_character_flag = choose_dead_one_tailteann
+		set_character_flag = chosen_dead_one_tailteann
+		hidden_tooltip = { character_event = { id = ancrel.1242 } }
+	}
+}
+
+# Mother (Death by Execution)
+narrative_event = {
+	id = ancrel.1223
+	title = EVTNAMEancrel.1222
+	desc = EVTDESCancrel.1223
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.1240
+		piety = 100
+		clr_character_flag = choose_dead_one_tailteann
+		set_character_flag = chosen_dead_one_tailteann
+		hidden_tooltip = { character_event = { id = ancrel.1242 } }
+	}
+}
+
+# Mother (Death by Murder)
+narrative_event = {
+	id = ancrel.1224
+	title = EVTNAMEancrel.1222
+	desc = EVTDESCancrel.1224
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.1240
+		piety = 100
+		clr_character_flag = choose_dead_one_tailteann
+		set_character_flag = chosen_dead_one_tailteann
+		hidden_tooltip = { character_event = { id = ancrel.1242 } }
+	}
+}
+
+# Mother (Death by Accident)
+narrative_event = {
+	id = ancrel.1225
+	title = EVTNAMEancrel.1222
+	desc = EVTDESCancrel.1225
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.1240
+		piety = 100
+		clr_character_flag = choose_dead_one_tailteann
+		set_character_flag = chosen_dead_one_tailteann
+		hidden_tooltip = { character_event = { id = ancrel.1242 } }
+	}
+}
+
+# Mother (Death by Dungeon)
+narrative_event = {
+	id = ancrel.1226
+	title = EVTNAMEancrel.1222
+	desc = EVTDESCancrel.1226
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.1240
+		piety = 100
+		clr_character_flag = choose_dead_one_tailteann
+		set_character_flag = chosen_dead_one_tailteann
+		hidden_tooltip = { character_event = { id = ancrel.1242 } }
+	}
+}
+
+# Mother (Death by Sacrifice)
+narrative_event = {
+	id = ancrel.1227
+	title = EVTNAMEancrel.1222
+	desc = EVTDESCancrel.1227
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.1240
+		piety = 100
+		clr_character_flag = choose_dead_one_tailteann
+		set_character_flag = chosen_dead_one_tailteann
+		hidden_tooltip = { character_event = { id = ancrel.1242 } }
+	}
+}
+
+# Mother (Death by Suicide)
+narrative_event = {
+	id = ancrel.1228
+	title = EVTNAMEancrel.1222
+	desc = EVTDESCancrel.1228
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.1240
+		piety = 100
+		clr_character_flag = choose_dead_one_tailteann
+		set_character_flag = chosen_dead_one_tailteann
+		hidden_tooltip = { character_event = { id = ancrel.1242 } }
+	}
+}
+
+# Mother (Death by Murder - YOU are the killer)
+narrative_event = {
+	id = ancrel.1229
+	title = EVTNAMEancrel.1222
+	desc = EVTDESCancrel.1229
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.1240
+		piety = 100
+		clr_character_flag = choose_dead_one_tailteann
+		set_character_flag = chosen_dead_one_tailteann
+		hidden_tooltip = { character_event = { id = ancrel.1242 } }
+	}
+}
+
+# Mother (Death by Other Reasons)
+narrative_event = {
+	id = ancrel.1230
+	title = EVTNAMEancrel.1222
+	desc = EVTDESCancrel.1230
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.1240
+		piety = 100
+		clr_character_flag = choose_dead_one_tailteann
+		set_character_flag = chosen_dead_one_tailteann
+		hidden_tooltip = { character_event = { id = ancrel.1242 } }
+	}
+}
+
+# Generic
+narrative_event = {
+	id = ancrel.1240
+	title = EVTNAMEancrel.1240
+	desc = EVTDESCancrel.1240
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.1240
+		piety = 100
+		clr_character_flag = choose_dead_one_tailteann
+		set_character_flag = chosen_dead_one_tailteann
+		hidden_tooltip = { character_event = { id = ancrel.1242 } }
+	}
+}
+
+# Sets the end of the death phase
+narrative_event = {
+	id = ancrel.1242
+	title = TAILTEANNTITLE
+	desc = EVTDESCancrel.1242
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = aonach_tailteann
+		any_realm_character = {
+			NOT = { has_character_flag = choose_dead_one_tailteann }
+			has_character_flag = chosen_dead_one_tailteann
+		}
+	}
+	
+	hide_from = yes
+	
+	option = {
+		name = EVTOPTAancrel.1242
+		hidden_tooltip = { character_event = { id = ancrel.1241 } }
+	}
+}
+
+# Bonfire for the dead
+character_event = {
+	id = ancrel.1241
+	title = TAILTEANNTITLE
+	desc = EVTDESCancrel.1241
+	picture = GFX_evt_joust
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = tailteann_death_phase
+	}
+
+	option = {
+		name = EVTOPTAancrel.1241
+		hidden_tooltip = {
+			clr_character_flag = tailteann_death_phase
+			clr_character_flag = chosen_dead_one_tailteann
+			set_character_flag = tailteann_law_phase
+		}
+	}
+}

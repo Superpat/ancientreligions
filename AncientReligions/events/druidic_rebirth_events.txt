@@ -298,3 +298,112 @@ character_event = {
 		name = EVTOPTAancrel.0005
 	}
 }
+
+### Lunatic and Possessed conversion
+# Hear a tapping at the door
+character_event = {
+	id = ancrel.0006
+	desc = EVTDESCancrel.0006
+	picture = GFX_evt_courier
+	
+	min_age = 16
+	prisoner = no
+	
+	trigger = {
+		culture_group = celtic
+		OR = {
+			trait = lunatic
+			trait = possessed
+		}
+		NOT = { has_character_modifier = voice_of_jesus }
+	}
+	
+	mean_time_to_happen = {
+		months = 420
+	}
+	
+	option = {
+		name = EVTOPTAancrel.0006
+		ai_chance = {
+			factor = 50
+		}
+		tooltip_info = lunatic
+		hidden_tooltip = {
+			character_event = { id = ancrel.0007 }
+		}
+	}
+	option = {
+		name = EVTOPTBancrel.0006
+		tooltip_info = lunatic
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+# The elves come in
+character_event = {
+	id = ancrel.0007
+	desc = EVTDESCancrel.0007
+	picture = GFX_evt_courier
+	
+	min_age = 16
+	prisoner = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.0007
+		tooltip_info = lunatic
+		ai_chance = {
+			factor = 50
+		}
+		hidden_tooltip = {
+			character_event = { id = ancrel.0008 }
+		}
+	}
+	option = {
+		name = EVTOPTBancrel.0007
+		tooltip_info = lunatic
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				trait = zealous
+			}
+		}
+	}
+}
+# King of the Elves!
+character_event = {
+	id = ancrel.0008
+	desc = EVTDESCancrel.0008
+	picture = GFX_evt_courier
+	
+	min_age = 16
+	prisoner = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.0008
+		tooltip_info = lunatic
+		if = {
+			limit = {
+				OR = {
+					culture = breton
+					culture = welsh
+				}
+			}
+			religion = druidic
+		}
+		if = {
+			limit = {
+				OR = {
+					culture = scottish
+					culture = irish
+				}
+			}
+			religion = gaelic_pagan
+		}
+	}
+}

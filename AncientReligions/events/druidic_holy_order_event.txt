@@ -118,7 +118,7 @@ character_event = {
 		}
 		father = {
 			is_alive = yes
-			culture = celtic
+			culture_group = celtic
 			is_ruler = yes
 			is_liege_of = ROOT
 			prisoner = no

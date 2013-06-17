@@ -12,7 +12,6 @@ decisions = {
 				religion = gaelic_pagan
 				religion = gaelic_pagan_reformed
 			}
-			NOT = { has_character_modifier = held_celtic_feast_timer }
 			NOT = {	has_character_flag = holding_celtic_feast }
 		}
 		allow = {
@@ -123,14 +122,7 @@ decisions = {
 			}
 			modifier = {
 				factor = 0
-				OR = {
-					learning = 0
-					learning = 1
-					learning = 2
-					learning = 3
-					learning = 4
-					learning = 5
-				}
+				NOT = { learning = 6 }
 			}
 		}
 	}

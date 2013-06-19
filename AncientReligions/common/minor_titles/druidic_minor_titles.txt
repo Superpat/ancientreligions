@@ -128,7 +128,7 @@ title_royal_champion = {
 					primary_title = {
 						tier = duke
 					}
-					is_independent = yes
+					independent = yes
 				}
 				OR = {
 					religion = druidic

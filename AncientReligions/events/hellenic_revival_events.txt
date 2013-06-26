@@ -274,11 +274,11 @@ character_event = {
 		ai_chance = {
 			factor = 20
 			modifier = {
-				factor = 0.8
+				factor = 0.5
 				trait = zealous
 			}
 			modifier = {
-				factor = 1.25
+				factor = 2
 				trait = cynical
 			}
 			modifier = {
@@ -291,6 +291,10 @@ character_event = {
 			}
 			modifier = {
 				factor = 0.8
+				religion_authority = 0.8
+			}
+			modifier = {
+				factor = 0.8
 				religion_authority = 0.6
 			}
 			modifier = {
@@ -299,19 +303,27 @@ character_event = {
 			}
 			modifier = {
 				factor = 1.25
-				opinion = { who = FROM value = 80 }
+				NOT = { religion_authority = 0.2 }
 			}
 			modifier = {
 				factor = 1.25
-				opinion = { who = FROM value = 40 }
+				opinion = { who = FROM value = 75 }
+			}
+			modifier = {
+				factor = 1.25
+				opinion = { who = FROM value = 50 }
 			}
 			modifier = {
 				factor = 0.8
-				NOT = { opinion = { who = FROM value = -40 } }
+				NOT = { opinion = { who = FROM value = 25 } }
 			}
 			modifier = {
 				factor = 0.8
-				NOT = { opinion = { who = FROM value = -80 } }
+				NOT = { opinion = { who = FROM value = 0 } }
+			}
+			modifier = {
+				factor = 0.5
+				religion_group = pagan_group
 			}
 			modifier = {
 				factor = 2.0
@@ -322,18 +334,11 @@ character_event = {
 				}
 			}
 			modifier = {
-				factor = 3.0
-				is_landed = no
-				host = { character = FROM }
-			}
-			modifier = {
 				factor = 2.0
-				is_landed = yes
 				liege = { character = FROM }
 			}
 			modifier = {
 				factor = 2.0
-				is_landed = yes
 				OR = {
 					# free infidel revokation
 					crownlaw_title = { has_law = centralization_2 }

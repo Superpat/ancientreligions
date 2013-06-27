@@ -1,5 +1,14 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ;;;;;;;;;;
+EVTNAMEancrel.2230;The Province of Cyrenaica et Creta;;;;;;;;;;;;;x
+EVTDESCancrel.2230;The citizens of Cyrenaica et Creta can rejoice, as Roman law is once more upheld in this barren land. Yet another ancient Roman province has been returned to the bosom of the mightiest empire the civilised world has ever seen. May it never suffer the cruel touch of barbarians again.;;;;;;;;;;;;;x
+EVTNAMEancrel.2231;The Province of Sicilia;;;;;;;;;;;;;x
+EVTDESCancrel.2231;Imperial rule over Sicilia, one of the last western outposts of the Empire to be lost to barbarian rule, has been reinstated yet again - this time hopefully for good.;;;;;;;;;;;;;x
+EVTNAMEancrel.2232;The Province of Corsica et Sardinia;;;;;;;;;;;;;x
+EVTDESCancrel.2232;The islands of Corsica and Sardinia, originally inorporated in the empire after the First Pulic War, is yet again under imperial rule. The conquest of this strategic location in the Mediteranian heralds a glorious westward expansion of the Empire.;;;;;;;;;;;;;x
+EVTNAMEancrel.2233;The Province of Viennensis;;;;;;;;;;;;;x
+EVTDESCancrel.2233;Viennensis, named after the town Vienne in southeastern Gaul, has long been lost to Roman rule, but has now been incorporated back into the Empire. It was originally formed as a merger of the provinces Gallia Aquitania and Gallia Narbonensis created by Caesar after his campaigns had expanded the old province of Gaul too far to be administered as a single province.;;;;;;;;;;;;;x
+;;;;;;;;;;
 restore_roman_empire_hre;Restore the Roman Empire;Rétablir l'Empire romain;Das Römische Reich wiederherstellen;;Reinstaurar el Imperio Romano;;;;;;;;;x
 restore_roman_empire_hre_desc;If Rome, Constantinople, and other key territories of the old empire could be reclaimed, the Holy Roman Empire would win recognition in the eyes of the East as the true and rightful successor of the Roman State.;;;;;;;;;;;;;x
 EVTDESCancrel.2220;Friends, Romans, countrymen, lend me your ears! After the miraculous recovery of territory lost centuries ago, the Roman Empire has been reborn! Europe has endured dark times since the imperial frontiers were stormed by barbarians and province after province burned at their touch, but now a bright new age has dawned for all of civilization.\n\nThe Roman State will no longer be referred to as the "Empire of the Germans" by jealous pretenders in the East, but recognized as the true heir to the legacy of Rome. [Root.GetTitledFirstName] rules a restored Imperium Romanum, but much work remains to be done. There is still territory to recover and ancient borders to reclaim. For the Senate and People of Rome!;;;;;;;;;;;;;x

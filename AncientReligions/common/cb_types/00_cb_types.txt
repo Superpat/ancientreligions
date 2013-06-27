@@ -14,7 +14,8 @@
 # These three all have war scopes, which currently has the following scope changes: 
 # attacker, defender, thirdparty(only valid if thirdparty character is involved), thirdparty_title(only valid if thirdparty title is involved)
 #
-# Added ai_will_do, modifies value AI places on the CB compared to other CBs (default: 1)
+# ai_will_do: modifies value AI places on the CB compared to other CBs (default: 1)
+# can_use_gui: If otherwise valid, the CB is listed in the Diplo View, but you can't declare war unless 'can_use_gui' is also valid (also shows a trigger tooltip.)
 #
 
 claim = {
@@ -2359,15 +2360,14 @@ crusade = {
 	is_permanent = yes
 	is_holy_war = yes
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
-
-	can_use = {
+	
+	can_use_gui = {
 		ROOT = {
-			can_call_crusade = yes
 			has_called_crusade = no
 			religion_authority = 0.05
-			is_landed = yes # Otherwise the war score starts at -100%
 			OR = {
-				AND = { 
+				religion_group = zoroastrian_group
+				AND = {
 					religion_group = pagan_group
 					year = 1100
 				}
@@ -2376,14 +2376,16 @@ crusade = {
 					year = 1090
 				}
 				AND = {
-					religion = sunni 
-					year = 1187 # Allow if the Caliphate has survived this long
-				}
-				AND = {
-					religion = shiite 
-					year = 1187 # Allow if the Caliphate has survived this long
+					religion_group = muslim
+					year = 1187 # Allow if the Caliphates have survived this long
 				}
 			}
+		}
+	}
+
+	can_use = {
+		ROOT = {
+			can_call_crusade = yes
 		}
 		
 		FROM = {
@@ -2420,7 +2422,7 @@ crusade = {
 			}
 		}
 	}
-
+	
 	is_valid = {
 		ROOT = {
 			can_call_crusade = yes
@@ -5150,7 +5152,15 @@ muslim_invasion = {
 	can_ask_to_join_war = yes
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	
-	piety_cost = 500
+	can_use_gui = {
+		ROOT = {
+			piety = 500
+		}
+	}
+	
+	on_add = {
+		ROOT = { piety = -500 }
+	}
 
 	can_use = {
 		ROOT = {
@@ -5222,10 +5232,6 @@ muslim_invasion = {
 			}
 		}
 	}
-	
-#	on_add = {
-#		ROOT = { piety = -500 }
-#	}
 
 	on_success = {
 		ROOT = {
@@ -5612,61 +5618,222 @@ imperial_reconquest = {
 
 	can_use = {
 		ROOT = {
-			has_landed_title = e_roman_empire
-			independent = yes
-			religion_group = christian
+			OR = {
+				AND = {
+					has_landed_title = e_roman_empire
+					NOT = { FROM = { religion_group = muslim } }
+				}
+				AND = {
+					independent = yes
+					higher_tier_than = DUKE
+					religion = hellenic_pagan
+					NOT = { FROM = { religion = hellenic_pagan } }
+					NOT = {
+						any_war = {
+							attacker = { character = ROOT }
+							using_cb = imperial_reconquest
+						}
+					}
+					OR = {
+						NOT = { has_character_flag = called_imperial_reconquest }
+						had_character_flag = { flag = called_imperial_reconquest days = 1825 }
+					}
+				}
+			}
+			OR = {
+				religion_group = christian
+				religion_group = pagan_group
+			}
 			NOT = { same_realm = FROM }
-		}
-		FROM = {
-			NOT = { religion_group = muslim }
 		}
 	}
 
 	can_use_title = {
 		OR = {
-			de_jure_liege_or_above = k_byzantium
-			de_jure_liege_or_above = k_anatolia
-			de_jure_liege_or_above = k_armenia
-			de_jure_liege_or_above = k_bulgaria
-			de_jure_liege_or_above = k_serbia
-			de_jure_liege_or_above = k_croatia
-			de_jure_liege_or_above = k_italy
-			de_jure_liege_or_above = k_sicily
-			de_jure_liege_or_above = k_bavaria
-			de_jure_liege_or_above = k_burgundy
-			de_jure_liege_or_above = k_france
-			de_jure_liege_or_above = k_aquitaine
-			de_jure_liege_or_above = k_brittany
-			de_jure_liege_or_above = k_england
-			de_jure_liege_or_above = k_wales
-			de_jure_liege_or_above = k_frisia
-			de_jure_liege_or_above = k_lotharingia
-			de_jure_liege_or_above = k_aragon
-			de_jure_liege_or_above = k_castille
-			de_jure_liege_or_above = k_andalusia
-			de_jure_liege_or_above = k_leon
-			de_jure_liege_or_above = k_spanish_galicia
-			de_jure_liege_or_above = k_portugal
-			de_jure_liege_or_above = k_navarra
-			de_jure_liege_or_above = k_syria
-			de_jure_liege_or_above = k_jerusalem
-			de_jure_liege_or_above = k_egypt
-			de_jure_liege_or_above = k_africa
-			de_jure_liege_or_above = k_mauretania
-			de_jure_liege_or_above = k_papal_state
-			de_jure_liege_or_above = k_venice
+			# Provincia Britannia
+			title = d_northumberland
+			title = d_lancaster
+			title = d_york
+			title = d_norfolk
+			title = d_bedford
+			title = d_hereford
+			title = d_gloucester
+			title = d_canterbury
+			title = d_somerset
+			title = d_gwynedd
+			title = d_deheubarth
+			title = d_cornwall
+			
+			# Provincia Italia
+			title = d_venice
+			title = d_verona
+			title = d_susa
+			title = d_lombardia
+			title = d_genoa
+			title = d_modena
+			title = d_ferrara
+			title = d_toscana
+			title = d_pisa
+			title = d_ancona
+			title = d_spoleto
+			title = d_latium
+			title = d_benevento
+			title = d_capua
+			title = d_apulia
+			title = d_salerno
+			title = d_calabria
+			
+			# Provincia Cilicia et Cyprus
+			title = d_armenia_minor
+			title = d_cyprus
+
+			# Provincia Syria Palaestina
+			title = d_edessa
+			title = d_aleppo
+			title = d_antioch
+			title = d_tripoli
+			title = d_damascus
+			title = d_syria
+			title = d_galilee
+			title = d_jerusalem
+			title = d_ascalon
+			title = d_oultrejourdain
+			
+			# Provincia Aegyptus
+			title = d_alexandria
+			title = d_damietta
+			title = d_cairo
+			title = d_aswan
+			title = d_sinai
+			title = d_nubia
+			
+			# Provincia Cyrenaica et Creta
+			title = d_cyrenaica
+			title = d_krete
+			
+			# Provincia Africa
+			title = d_tripolitania
+			title = d_tunis
+			title = d_kabylia
+			
+			# Provincia Illyricum
+			title = d_vidin
+			title = d_rashka
+			title = d_dioclea
+			title = d_slavonia
+			title = d_bosnia
+			title = d_croatia
+			title = d_dalmatia
+			title = d_carinthia
+			
+			# Provincia Sicilia
+			title = d_sicily
+			
+			# Provincia Corsica et Sardinia
+			title = d_sardinia
+			
+			# Provincia Viennensis
+			title = d_aquitaine
+			title = d_toulouse
+			title = d_gascogne
+			title = d_poitou
+			title = d_auvergne
+			title = d_bourbon
+			title = d_dauphine
+			title = d_provence
+			
+			# Provincia Gallia
+			title = d_brittany
+			title = d_berry
+			title = d_anjou
+			title = d_normandy
+			title = d_orleans
+			title = d_champagne
+			title = d_valois
+			title = d_burgundy
+			title = d_upper_burgundy
+			title = d_savoie
+			title = d_brabant
+			title = d_flanders
+			title = d_luxembourg
+			title = d_upper_lorraine
+			title = d_lower_lorraine
+			title = d_alsace
+
+			# Provincia Hispania
+			title = d_castilla
+			title = d_aragon
+			title = d_barcelona
+			title = d_valencia
+			title = d_mallorca
+			title = d_navarra
+			title = d_asturias
+			title = d_leon
+			title = d_galicia
+			title = d_porto
+			title = d_beja
+			title = d_algarve
+			title = d_cordoba
+			title = d_murcia
+			title = d_granada
+			title = d_sevilla
+			title = d_badajoz
+			title = d_toledo
+			
+			# Provincia Mauretania
+			title = d_marrakech
+			title = d_tangiers
+			title = d_fes
+			title = d_alger
+			title = d_tlemcen
+			
+			# Provincia Macedonia
+			title = d_dyrrachion
+			title = d_epirus
+			title = d_thessalonika
+			title = d_athens
+			title = d_achaia
+			title = d_aegean_islands
+			
+			# Provincia Thracia
+			title = d_turnovo
+			title = d_karvuna
+			title = d_adrianopolis
+			title = d_thrace
+			
+			# Provincia Asia
+			title = d_nikaea
+			title = d_samos
+			title = d_cibyrrhaeot
+			title = d_thracesia
+			title = d_anatolia
+			
+			# Provincia Pontus
+			title = d_paphlagonia
+			title = d_armeniacon
+			title = d_charsianon
+			title = d_trebizond
+			title = d_coloneia
+			title = d_mesopotamia
 		}
 	}
 	
 	is_valid = {
 		ROOT = {
 			independent = yes
-			religion_group = christian
+			OR = {
+				religion_group = christian
+				religion_group = pagan_group
+			}
 			NOT = { same_realm = FROM }
 		}
 	}
 	
 	on_success = {
+		ROOT = {
+			clr_character_flag = called_imperial_reconquest
+			set_character_flag = called_imperial_reconquest
+		}
 		any_attacker = {
 			limit = { character = ROOT }
 			participation_scaled_prestige = 100
@@ -5700,16 +5867,22 @@ imperial_reconquest = {
 	}
 
 	on_fail = {
-		ROOT = { prestige = -150 }
+		ROOT = {
+			clr_character_flag = called_imperial_reconquest
+			set_character_flag = called_imperial_reconquest
+			prestige = -150
+		}
 	}
 
 	on_reverse_demand = {
 		ROOT = {
+			clr_character_flag = called_imperial_reconquest
+			set_character_flag = called_imperial_reconquest
 			transfer_scaled_wealth = {
 				to = FROM
 				value = 4.0
 			}
-			ROOT = { prestige = -200 }
+			prestige = -200
 		}
 		any_defender = {
 			limit = { character = FROM }
@@ -6294,13 +6467,12 @@ pagan_subjugation = {
 	can_ask_to_join_war = yes
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	
-#	prestige_cost = 100
-
 	can_use = {
 		ROOT = {
 			religion_group = pagan_group
 			is_reformed_religion = no
 			NOT = { religion = aztec }
+			NOT = { religion = hellenic_pagan }
 			NOT = { same_realm = FROM }
 			NOT = { is_liege_or_above = FROM }
 			has_horde_culture = no # Should use tribal invasion instead
@@ -7003,7 +7175,15 @@ pagan_holy_war = {
 	is_holy_war = yes
 	check_de_jure_tier = DUKE # this scans all dejure duchies for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	
-	piety_cost = 100
+	can_use_gui = {
+		ROOT = {
+			piety = 100
+		}
+	}
+	
+	on_add = {
+		ROOT = { piety = -100 }
+	}
 
 	can_use = {
 		ROOT = {
@@ -7200,7 +7380,15 @@ caliphal_subjugation = {
 	can_ask_to_join_war = yes
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	
-	piety_cost = 200
+	can_use_gui = {
+		ROOT = {
+			piety = 200
+		}
+	}
+	
+	on_add = {
+		ROOT = { piety = -200 }
+	}
 
 	can_use = {
 		ROOT = {
@@ -7363,7 +7551,15 @@ muslim_county_conquest = {
 	press_claim = yes
 	can_ask_to_join_war = no
 	
-	piety_cost = 50
+	can_use_gui = {
+		ROOT = {
+			piety = 50
+		}
+	}
+	
+	on_add = {
+		ROOT = { piety = -50 }
+	}
 	
 	can_use = {
 		ROOT = {
@@ -7507,10 +7703,6 @@ muslim_county_conquest = {
 		}
 	}
 	
-#	on_add = {
-#		ROOT = { piety = -50 }
-#	}
-
 	attacker_ai_victory_worth = {
 		factor = -1 # always accept
 	}
@@ -7596,6 +7788,18 @@ pagan_county_conquest = {
 				}
 			}
 		}
+		
+		# Should use hellenic_county_liberation instead
+		OR = {
+			NOT = { ROOT = { religion = hellenic_pagan } }
+			FROM = { religion_group = pagan_group }
+			FROM = { any_liege = { religion_group = pagan_group } }
+			location = {
+				NOT = { culture = roman }
+				NOT = { culture = italian }
+				NOT = { culture = greek }
+			}
+		}
 	}
 
 	is_valid_title = {
@@ -7631,6 +7835,176 @@ pagan_county_conquest = {
 							is_liege_or_above = ROOT
 							NOT = { culture = ROOT }
 							NOT = { religion = ROOT }
+						}
+					}
+				}
+			}
+
+			usurp_title = ROOT
+		}
+		
+		any_attacker = {
+			limit = { character = ROOT }
+			participation_scaled_prestige = 100
+			participation_scaled_piety = 50
+		}
+		any_attacker = {
+			limit = { NOT = { character = ROOT } }
+			hidden_tooltip = { 
+				participation_scaled_prestige = 100 
+				participation_scaled_piety = 50
+			}
+		}
+		
+		ROOT = {
+			religion_authority = {
+				modifier = won_county_conquest
+			}
+		}
+	}
+
+	on_fail_title = {
+		ROOT = {
+			prestige = -100
+			religion_authority = {
+				modifier = lost_county_conquest
+			}
+		}
+		any_defender = {
+			limit = { character = FROM }
+			participation_scaled_prestige = 50
+		}
+		any_defender = {
+			limit = { NOT = { character = FROM } }
+			hidden_tooltip = { participation_scaled_prestige = 50 }
+		}
+	}
+
+	on_reverse_demand = {
+		ROOT = {
+			prestige = -200
+			transfer_scaled_wealth = {
+				to = FROM
+				value = 4.0
+			}
+			religion_authority = {
+				modifier = lost_county_conquest
+			}
+		}
+		any_defender = {
+			limit = { character = FROM }
+			participation_scaled_prestige = 100
+			participation_scaled_piety = 50
+		}
+		any_defender = {
+			limit = { NOT = { character = FROM } }
+			hidden_tooltip = {
+				participation_scaled_prestige = 100 
+				participation_scaled_piety = 50
+			}
+		}
+	}
+
+	attacker_ai_victory_worth = {
+		factor = -1 # always accept
+	}
+	
+	attacker_ai_defeat_worth = {
+		factor = 100
+	}
+
+	defender_ai_victory_worth = {
+		factor = -1 # always accept
+	}
+	
+	defender_ai_defeat_worth = {
+		factor = 100
+	}
+}
+
+hellenic_county_liberation = {
+	name = CB_NAME_HELLENIC_LIBERATION
+	war_name = WAR_NAME_HELLENIC_LIBERATION
+	sprite = 16
+	truce_days = 1825
+	hostile_against_others = yes
+	is_permanent = yes
+	check_all_titles = yes # if permanent, setting this to true will check against all of someones titles, including vassal held titles
+	press_claim = yes
+	can_ask_to_join_war = no
+	
+	allow_distant = yes
+	
+	can_use = {
+		ROOT = { religion = hellenic_pagan }
+		NOT = { FROM = { religion_group = pagan_group } }
+		NOT = { FROM = { any_liege = { religion_group = pagan_group } } }
+	}
+
+	can_use_title = {
+		tier = count
+		OR = {
+			FROM = {
+				has_landed_title = PREV
+			}
+			holder_scope = {
+				is_liege_or_above = FROM
+				NOT = { same_realm = ROOT }
+			}
+		}
+
+		NOT = {
+			OR = {
+				ROOT = {
+					has_landed_title = PREV
+				}
+				holder_scope = {
+					is_liege_or_above = ROOT
+				}
+			}
+		}
+
+		location = {
+			OR = {
+				culture = roman
+				culture = italian
+				culture = greek
+			}
+		}
+	}
+
+	is_valid_title = {
+		ROOT = {
+			religion_group = pagan_group
+			NOT = { same_realm = FROM }
+		}
+		FROM = {
+			NOT = { religion = ROOT }
+		}
+
+		OR = {
+			FROM = {
+				has_landed_title = PREV
+			}
+			holder_scope = {
+				is_liege_or_above = FROM
+			}
+		}
+	}
+	
+	on_success_title = {
+		usurp_title_plus_barony_if_unlanded = ROOT
+		
+		any_de_jure_vassal_title = { # take all baronies too
+			limit = {
+				has_holder = yes
+				holder_scope = {
+					OR = {
+						character = FROM
+						is_liege_or_above = FROM
+						AND = {
+							is_liege_or_above = ROOT
+							NOT = { religion = hellenic_pagan }
 						}
 					}
 				}

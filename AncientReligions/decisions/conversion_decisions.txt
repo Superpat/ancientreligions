@@ -295,6 +295,27 @@ decisions = {
 			modifier = {
 				factor = 0.2 # Slow it down a bit
 			}
+			
+			modifier = { # Do not flip if we're in a huge Norse empire
+				factor = 0
+				top_liege = { culture = norse }
+				290 = { # Uppland
+					owner = {
+						same_realm = ROOT
+					}
+				}
+				272 = { # Akershus
+					owner = {
+						same_realm = ROOT
+					}
+				}
+				266 = { # Sjaelland
+					owner = {
+						same_realm = ROOT
+					}
+				}
+			}
+			
 			modifier = {
 				factor = 0.01
 				capital_scope = {
@@ -376,6 +397,27 @@ decisions = {
 			modifier = {
 				factor = 0.2 # Slow it down a bit
 			}
+			
+			modifier = { # Do not flip if we're in a huge Norse empire
+				factor = 0
+				top_liege = { culture = norse }
+				290 = { # Uppland
+					owner = {
+						same_realm = ROOT
+					}
+				}
+				272 = { # Akershus
+					owner = {
+						same_realm = ROOT
+					}
+				}
+				266 = { # Sjaelland
+					owner = {
+						same_realm = ROOT
+					}
+				}
+			}
+			
 			modifier = {
 				factor = 0.01
 				capital_scope = {
@@ -458,6 +500,27 @@ decisions = {
 			modifier = {
 				factor = 0.2 # Slow it down a bit
 			}
+			
+			modifier = { # Do not flip if we're in a huge Norse empire
+				factor = 0
+				top_liege = { culture = norse }
+				290 = { # Uppland
+					owner = {
+						same_realm = ROOT
+					}
+				}
+				272 = { # Akershus
+					owner = {
+						same_realm = ROOT
+					}
+				}
+				266 = { # Sjaelland
+					owner = {
+						same_realm = ROOT
+					}
+				}
+			}
+			
 			modifier = {
 				factor = 0.01
 				capital_scope = {

@@ -782,12 +782,35 @@ decisions = {
 			}
 		}
 		effect = {
+			custom_tooltip = EVTOPTA62910_CUSTOM
 			narrative_event = { id = 62910 tooltip = EVTTOOLTIP62910 }
 			if = {
 				limit = { has_nickname = no }
 				give_nickname = nick_the_great
 			}
-			prestige = 500
+			prestige = 1000
+			wealth = 1000
+			spawn_unit = {
+				province = 522 # Pest
+				owner = ROOT
+				match_character = ROOT
+				match_mult = 2.0
+				attrition = 0.5
+			}
+			spawn_unit = {
+				province = 522 # Pest
+				owner = ROOT
+				match_character = ROOT
+				match_mult = 2.0
+				attrition = 0.5
+			}
+			spawn_unit = {
+				province = 522 # Pest
+				owner = ROOT
+				match_character = ROOT
+				match_mult = 2.0
+				attrition = 0.5
+			}
 		}
 		ai_will_do = {
 			factor = 1

@@ -211,7 +211,7 @@ character_event = {
 			father_even_if_dead = {
 				is_alive = no
 			}
-			mother = {
+			mother_even_if_dead = {
 				is_alive = no
 			}
 		}
@@ -228,7 +228,11 @@ character_event = {
 		}
 		set_character_flag = choose_dead_one_tailteann
 		if = {
-			limit = { father_even_if_dead = { death_reason = death_by_nature } }
+			limit = {
+				father_even_if_dead = {
+					death_reason = death_by_nature
+				}
+			}
 			hidden_tooltip = { character_event = { id = ancrel.1210 days = 2 random = 10 } }
 		}
 		if = {
@@ -264,8 +268,8 @@ character_event = {
 			limit = {
 				father_even_if_dead = {
 					OR = {
-						death_reason = death_accident 
 						death_reason = death_murder_unknown
+						death_reason = death_accident
 					} 
 				}
 			}
@@ -283,62 +287,56 @@ character_event = {
 		if = {
 			limit = {
 				father_even_if_dead = {
-				death_reason = death_sacrificed
+					death_reason = death_sacrificed
 					NOT = { killer = { character = ROOT } }
 				} 
 			}
 			hidden_tooltip = { character_event = { id = ancrel.1217 days = 2 random = 10 } }
 		}
 		if = {
-			limit = { father_even_if_dead = { death_reason = death_duel } }
+			limit = {
+				father_even_if_dead = {
+					death_reason = death_duel
+				}
+			}
 			hidden_tooltip = { character_event = { id = ancrel.1218 days = 2 random = 10 } }
 		}
 		if = {
-			limit = { father_even_if_dead = { death_reason = death_suicide } }
+			limit = {
+				father_even_if_dead = {
+					death_reason = death_suicide
+				}
+			}
 			hidden_tooltip = { character_event = { id = ancrel.1219 days = 2 random = 10 } }
 		}
 		if = {
 			limit = {
 				father_even_if_dead = {
 					OR = {
-						and = {
-							death_reason = death_murder
-							killer = { character = ROOT }
-						}
-						and = {
-							death_reason = death_execution 
-							killer = { character = ROOT }
-						}
-						and = {
-							death_reason = death_dungeon 
-							killer = { character = ROOT }
-						}
-						and = {
-							death_reason = death_sacrificed
-							killer = { character = ROOT }
-						}
+						death_reason = death_execution
+						death_reason = death_murder
+						death_reason = death_dungeon
+						death_reason = death_sacrificed
 					}
+					killer = { character = ROOT }
 				}
 			}
 			hidden_tooltip = { character_event = { id = ancrel.1220 days = 2 } }
 		}
 		if = {
 			limit = {
-				NOT = {
-					father_even_if_dead = {
-						OR = {
-							death_reason = death_by_nature
-							death_reason = death_battle
-							death_reason = death_execution
-							death_reason = death_murder
-							death_reason = death_murder_unknown
-							death_reason = death_accident
-							death_reason = death_dungeon
-							death_reason = death_sacrificed
-							death_reason = death_duel
-							death_reason = death_suicide
-						}
-					}
+				father_even_if_dead = {
+					NOT = { death_reason = death_by_nature }
+					NOT = { death_reason = death_battle }
+					NOT = { death_reason = death_battle_no_killer }
+					NOT = { death_reason = death_execution }
+					NOT = { death_reason = death_murder }
+					NOT = { death_reason = death_murder_unknown }
+					NOT = { death_reason = death_accident }
+					NOT = { death_reason = death_dungeon }
+					NOT = { death_reason = death_sacrificed }
+					NOT = { death_reason = death_duel }
+					NOT = { death_reason = death_suicide }
 				}
 			}
 			hidden_tooltip = { character_event = { id = ancrel.1221 days = 2 random = 10 } }
@@ -349,14 +347,18 @@ character_event = {
 	option = { # In memory of mother
 		name = EVTOPTBancrel.1200
 		trigger = {
-			mother = {
+			mother_even_if_dead = {
 				is_alive = no
 			}
 		}
-		set_character_flag = choose_dead_one_tailteann
 		
+		set_character_flag = choose_dead_one_tailteann
 		if = {
-			limit = { mother_even_if_dead = { death_reason = death_by_nature } }
+			limit = {
+				mother_even_if_dead = {
+					death_reason = death_by_nature
+				}
+			}
 			hidden_tooltip = { character_event = { id = ancrel.1222 days = 2 random = 10 } }
 		}
 		if = {
@@ -381,8 +383,8 @@ character_event = {
 			limit = { 
 				mother_even_if_dead = { 
 					OR = {
-						death_reason = death_accident 
 						death_reason = death_murder_unknown
+						death_reason = death_accident
 					}
 				}
 			}
@@ -407,57 +409,44 @@ character_event = {
 			hidden_tooltip = { character_event = { id = ancrel.1227 days = 2 random = 10 } }
 		}
 		if = {
-			limit = { mother_even_if_dead = { death_reason = death_suicide } }
+			limit = {
+				mother_even_if_dead = {
+					death_reason = death_suicide
+				}
+			}
 			hidden_tooltip = { character_event = { id = ancrel.1228 days = 2 random = 10 } }
 		}
 		if = {
 			limit = { 
 				mother_even_if_dead = { 
 					OR = {
-						and = {
-							death_reason = death_murder 
-							killer = { character = ROOT }
-						}
-						and = {
-							death_reason = death_execution 
-							killer = { character = ROOT }
-						}
-						and = {
-							death_reason = death_dungeon 
-							killer = { character = ROOT }
-						}
-						and = {
-							death_reason = death_sacrificed
-							killer = { character = ROOT }
-						}
+						death_reason = death_execution
+						death_reason = death_murder
+						death_reason = death_dungeon
+						death_reason = death_sacrificed
 					}
+					killer = { character = ROOT }
 				} 
 			}
 			hidden_tooltip = { character_event = { id = ancrel.1229 days = 2 random = 10 } }
 		}
 		if = {
 			limit = {
-				NOT = {
-					mother_even_if_dead = { 
-						OR = {
-							death_reason = death_by_nature
-							death_reason = death_execution
-							death_reason = death_murder
-							death_reason = death_murder_unknown
-							death_reason = death_accident
-							death_reason = death_dungeon
-							death_reason = death_sacrificed
-							death_reason = death_suicide
-						}
-					}
+				mother_even_if_dead = {
+					NOT = { death_reason = death_by_nature }
+					NOT = { death_reason = death_execution }
+					NOT = { death_reason = death_murder }
+					NOT = { death_reason = death_murder_unknown }
+					NOT = { death_reason = death_accident }
+					NOT = { death_reason = death_dungeon }
+					NOT = { death_reason = death_sacrificed }
+					NOT = { death_reason = death_suicide }
 				}
 			}
 			hidden_tooltip = { character_event = { id = ancrel.1230 days = 2 random = 10 } }
 		}
-		set_character_flag = choose_dead_one_tailteann
 		custom_tooltip = honor_dead_tailteann
 	}
-	
 }
 
 # Father (Death by Natural Causes)

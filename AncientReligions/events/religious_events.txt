@@ -3588,7 +3588,10 @@ character_event = {
 			}
 			modifier = {
 				factor = 5
-				is_reformed_religion = yes
+				OR = {
+					is_reformed_religion = yes
+					religion = hellenic_pagan
+				}
 			}
 		}
 		FROM = {

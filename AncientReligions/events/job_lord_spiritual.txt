@@ -108,10 +108,12 @@ character_event = {
 			factor = 3.0
 			religion_group = pagan_group
 			is_reformed_religion = no
+			NOT = { religion = hellenic_pagan }
 			location = {
 				OR = {
 					NOT = { religion_group = pagan_group }
 					is_reformed_religion = yes
+					religion = hellenic_pagan
 				}
 			}
 		}
@@ -286,6 +288,7 @@ character_event = {
 			factor = 3.0
 			religion_group = pagan_group
 			is_reformed_religion = no
+			NOT = { religion = hellenic_pagan }
 		}
 	}
 	

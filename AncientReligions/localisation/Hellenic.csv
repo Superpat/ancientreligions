@@ -68,6 +68,15 @@ job_marshal_hellenic_pagan;Magister Militum;;;;;;;;;;;;;;;x
 job_marshal_hellenic_pagan_byzantine;Stratelates;;;;;;;;;;;;;;;x
 job_treasurer_hellenic_pagan;Quaestor;;;;;;;;;;;;;;;x
 job_spiritual_hellenic_pagan;Augur;;;;;;;;;;;;;;;x
+city_job_chancellor_hellenic_pagan;Magister Officiorum;;;;;;;;;;;;;;;x
+city_job_marshal_hellenic_pagan;Magister Militum;;;;;;;;;;;;;;;x
+city_job_marshal_hellenic_pagan_byzantine;Stratelates;;;;;;;;;;;;;;;x
+city_job_treasurer_hellenic_pagan;Quaestor;;;;;;;;;;;;;;;x
+city_job_spiritual_hellenic_pagan;Augur;;;;;;;;;;;;;;;x
+;;;;;;;;;;
+hellenic_county_liberation_desc;Hellenic pagan rulers can liberate Italian and Greek provinces from the tyrannical rule of the monotheistic religions.;;;;;;;;;;;;;;;x
+CB_NAME_HELLENIC_LIBERATION;Liberation of [Title.GetBaseName];;;;;;;;;;;;;;;x
+WAR_NAME_HELLENIC_LIBERATION;$ORDER$$FIRST_ADJ$ Liberation of $OTHER_TITLE$;;;;;;;;;;;;;;;x
 ;;;;;;;;;;
 title_censor;Censor;Censeur;Censur;;Censor;;;;;;;;;;;x
 title_censor_desc;The Censor is responsible for taking the census of the realm. While the office was originally instituded for taxation purposes the most important duty of the Censor is to supervise public morality and recommend suitable candidates for public offices.;;;;;;;;;;;;;;;x
@@ -92,6 +101,15 @@ title_flamen_quirinalis_desc;The Flamen Quirinalis is the high priest of Quirinu
 title_flaminica_quirinalis;Flaminica Quirinalis;;;;;;;;;;;;;;;x
 title_flaminica_quirinalis_desc;As wife of the Flamen Quirinalis, the Flaminica Quirinalis are entrusted to performs certain religious rituals.;;;;;;;;;;;;;;;x
 ;;;;;;;;;;
+vestalis;Vestalis;;;;;;;;;;;;;;;x
+vestalis_desc;This character is a member of the College of the Vestales, and has dedicated 30 years of her life in service to the godess Vesta.;;;;;;;;;;;;;;;x
+retired_vestalis;Retired Vestalis;;;;;;;;;;;;;;;x
+retired_vestalis_desc;This character has completed her 30 years of service in the College of the Vestales.;;;;;;;;;;;;;;;x
+title_vestalis;Vestalis;;;;;;;;;;;;;;;x
+title_vestalis_desc;The College of the Vestales is the foremost order of priestesses of the Hellenic religion, each member taking a vow of chastity in order to devote themselves to the study and correct observance of religious rituals.;;;;;;;;;;;;;;;x
+title_vestalis_maxima;Vestalis Maxima;;;;;;;;;;;;;;;x
+title_vestalis_maxima_desc;As the head of the College of the Vestales and the only female member of the College of Pontiffs, the Vestalis Maxima is the most important of the high priestesses of the Hellenic religion.;;;;;;;;;;;;;;;x
+;;;;;;;;;;
 opinion_no_hellenic_state_religion;Did not establish a Hellenic state religion;;;;;;;;;;;;;;;x
 opinion_no_forced_hellenic_state_religion;Did not enforce a Hellenic state religion;;;;;;;;;;;;;;;x
 opinion_hellenic_state_religion;Established a Hellenic state religion;;;;;;;;;;;;;;;x
@@ -101,8 +119,6 @@ opinion_rejected_hellenic_state_religion;Rejected the Hellenic state religion;;;
 EVTDESCancrel.2100;Having long studied the old Greek and Roman classics you are wondering if their religious views aren't better than your own.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTAancrel.2100;Yes, the old religion was better;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTBancrel.2100;No, I'm secure in my faith;;;;;;;;;;;;;;;;;;;;;;;;x
-become_pontifex_maximus;Become Pontifex Maximus;;;;;;;;;;;;;;;;;;;;;;;;x
-become_pontifex_maximus_desc;If we can return our ancient faith to it's former glory, we can restore the religious institutions of old and claim the title of Pontifex Maximus.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESCancrel.2102;With the restoration of the religious institutions of old, you have the opportunity to re-establish the old imperial state religion once again, but your Christian vassals are not likely to appreciate such a decree.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTAancrel.2102;We must restore the glory of the old faith!;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTTOOLTIPAancrel.2102;Parts of the Empire will convert to the re-established imperial state religion.\n;;;;;;;;;;;;;;;;;;;;;;;;x
@@ -114,3 +130,12 @@ EVTOPTBancrel.2103;May [Root.Religion.GetRandomGodName] protect us.;;;;;;;;;;;;;
 EVTDESCancrel.2110;Without the Flaminica Dialis to assist you in your duties, the ancient religious laws require that you retire.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESCancrel.2111;Without the Flaminica Martialis to assist you in your duties, the ancient religious laws require that you retire.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESCancrel.2112;Without the Flaminica Quirinalis to assist you in your duties, the ancient religious laws require that you retire.;;;;;;;;;;;;;;;;;;;;;;;;x
+;;;;;;;;;;
+nominate_vestalis_decision;Nominate [Root.GetTitledFirstName] as Vestalis;;;;;;;;;;;;;;;;;;;;;;;x
+nominate_vestalis_decision_desc;Nominate [Root.GetFirstName] for 30 years of dedicated service to the goddess Vesta.;;;;;;;;;;;;;;;;;;;;;;;x
+opinion_nominated_vestalis;Nominated a Vestalis;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.2121;After 30 years of devoted service to Vesta the time has come for you to retire from public office.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.2124;One of your vasals has nominated a child for service to Vesta.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.2124;Appoint her as Vestalis;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.2124;I can find someone better;Vous pouvez trouver mieux.;Ich kann einen Besseren finden;;Puedo hallar a alguien mejor;;;;;;;;;x
+EVTOPTCancrel.2124;I'm affraid there is no opening in the College of the Vestales.;;;;;;;;;;;;;;;;;;;;;;;;x

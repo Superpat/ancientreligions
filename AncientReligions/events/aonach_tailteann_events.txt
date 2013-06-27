@@ -241,6 +241,7 @@ character_event = {
 					OR = {
 						death_reason = death_battle
 						death_reason = death_battle_no_killer
+						always = no
 					}
 				}
 			}
@@ -270,6 +271,7 @@ character_event = {
 					OR = {
 						death_reason = death_murder_unknown
 						death_reason = death_accident
+						always = no
 					} 
 				}
 			}
@@ -317,6 +319,7 @@ character_event = {
 						death_reason = death_murder
 						death_reason = death_dungeon
 						death_reason = death_sacrificed
+						always = no
 					}
 					killer = { character = ROOT }
 				}
@@ -385,6 +388,7 @@ character_event = {
 					OR = {
 						death_reason = death_murder_unknown
 						death_reason = death_accident
+						always = no
 					}
 				}
 			}
@@ -424,6 +428,7 @@ character_event = {
 						death_reason = death_murder
 						death_reason = death_dungeon
 						death_reason = death_sacrificed
+						always = no
 					}
 					killer = { character = ROOT }
 				} 

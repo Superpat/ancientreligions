@@ -10150,6 +10150,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
+	father=160261
 	880.1.1={
 		birth="880.1.1"
 	}
@@ -21240,5 +21241,329 @@
 	}
 	1132.1.1={
 		death="1132.1.1"
+	}
+}
+160261 = {
+	name="Lorcán"
+	dynasty=100009
+	martial=5
+	diplomacy=5
+	intrigue=6
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=160262
+	850.1.1={
+		birth="850.1.1"
+		add_claim = c_thomond
+		add_claim = d_munster
+	}
+	921.5.11={  
+		death="921.5.11"
+	}
+}
+160262 = {
+	name="Lachtna" #mac Cuircc
+	dynasty=100009
+	martial=5
+	diplomacy=5
+	intrigue=6
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=160263
+	820.1.1={
+		birth="820.1.1"
+	}
+	864.7.1={  
+		death="864.7.1"
+	}
+}
+160263 = {
+	name="Cuircc" #mac Anluain
+	dynasty=100009
+	martial=5
+	diplomacy=5
+	intrigue=6
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=160264
+	795.12.1={
+		birth="795.12.1"
+	}
+	850.7.1={  
+		death="850.7.1"
+	}
+}
+160264 = {
+	name="Anluan"
+	dynasty=100009
+	martial=5
+	diplomacy=5
+	intrigue=6
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=160265
+	740.1.1={
+		birth="740.1.1"
+	}
+	800.7.1={  
+		death="800.7.1"
+	}
+}
+160265 = {
+	name="Mathgamna" #mac Tairdelbaich
+	dynasty=100009
+	martial=5
+	diplomacy=5
+	intrigue=6
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=160266
+	695.1.1={
+		birth="695.1.1"
+	}
+	750.7.1={  
+		death="750.7.1"
+	}
+}
+160266 = {
+	name="Tairdelbach" #mac Caidélene
+	dynasty=100009
+	martial=5
+	diplomacy=5
+	intrigue=6
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=160267
+	670.1.1={
+		birth="670.1.1"
+	}
+	730.7.1={  
+		death="730.7.1"
+	}
+}
+160267 = {
+	name="Cadlén"
+	dynasty=100009
+	martial=5
+	diplomacy=5
+	intrigue=6
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=160268
+	645.1.1={
+		birth="645.1.1"
+	}
+	740.7.1={  
+		death="740.7.1"
+	}
+}
+160268 = {
+	name="Áed"
+	dynasty=100009
+	martial=5
+	diplomacy=5
+	intrigue=6
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=160269
+	610.1.1={
+		birth="610.1.1"
+	}
+	710.7.1={  
+		death="710.7.1"
+	}
+}
+160269 = {
+	name="Conall" #Echach Ballderg
+	dynasty=100009
+	martial=5
+	diplomacy=5
+	intrigue=6
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=160270
+	580.1.1={
+		birth="580.1.1"
+	}
+	640.7.1={  
+		death="640.7.1"
+	}
+}
+160270 = {
+	name="Eochu Ballderg" #mac Cáirthind
+	dynasty=100009
+	martial=5
+	diplomacy=5
+	intrigue=6
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=160271
+	530.1.1={
+		birth="530.1.1"
+	}
+	600.7.1={  
+		death="600.7.1"
+	}
+}
+160271 = {
+	name="Cárthind" #mac Blait
+	dynasty=100009
+	martial=5
+	diplomacy=5
+	intrigue=6
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=160272
+	495.1.1={
+		birth="495.1.1"
+	}
+	540.1.1={  
+		death="540.1.1"
+	}
+}
+160272 = {
+	name="Blat" #mac Tháil Cass
+	dynasty=100009
+	martial=5
+	diplomacy=5
+	intrigue=6
+	stewardship=7
+	religion="gaelic_pagan"
+	culture="irish"
+	father=160273
+	450.1.1={
+		birth="450.1.1"
+	}
+	515.7.1={  
+		death="515.7.1"
+	}
+}
+160273 = {
+	name="Tál Cas" # mac Conaill Echluaith
+	dynasty=100009
+	martial=5
+	diplomacy=5
+	intrigue=6
+	stewardship=7
+	religion="gaelic_pagan"
+	culture="irish"
+	father=160274
+	400.1.1={
+		birth="400.1.1"
+	}
+	458.7.1={  
+		death="458.7.1"
+	}
+}
+160274 = {
+	name="Conall Echluaith" # mac Luigdech Mind
+	dynasty=100009
+	martial=5
+	diplomacy=5
+	intrigue=6
+	stewardship=7
+	religion="gaelic_pagan"
+	culture="irish"
+	father=160275
+	365.1.1={
+		birth="365.1.1"
+	}
+	450.7.1={  
+		death="450.7.1"
+	}
+}
+160275 = {
+	name="Luigdech Mind" # mac Óengusa Tírich
+	dynasty=100009
+	martial=5
+	diplomacy=5
+	intrigue=6
+	stewardship=7
+	religion="gaelic_pagan"
+	culture="irish"
+	father=160276
+	320.1.1={
+		birth="320.1.1"
+	}
+	412.7.1={  
+		death="412.7.1"
+	}
+}
+160276 = {
+	name="Óengus Tírich" # mac Fir Choirb
+	dynasty=100009
+	martial=5
+	diplomacy=5
+	intrigue=6
+	stewardship=7
+	religion="gaelic_pagan"
+	culture="irish"
+	father=160277
+	280.1.1={
+		birth="280.1.1"
+	}
+	360.7.1={  
+		death="360.7.1"
+	}
+}
+160277 = {
+	name="Fir Corb" # mac Moga Coirb
+	dynasty=100009
+	martial=5
+	diplomacy=5
+	intrigue=6
+	stewardship=7
+	religion="gaelic_pagan"
+	culture="irish"
+	father=160278
+	245.1.1={
+		birth="245.1.1"
+	}
+	299.1.1={  
+		death="299.1.1"
+	}
+}
+160278 = {
+	name="Mog Corb" # mac Cormaic Caiss
+	dynasty=100009
+	martial=5
+	diplomacy=5
+	intrigue=6
+	stewardship=7
+	religion="gaelic_pagan"
+	culture="irish"
+	father=160279
+	220.1.1={
+		birth="220.1.1"
+	}
+	292.1.1={  
+		death="292.1.1"
+	}
+}
+160279 = {
+	name="Cormac Cas" #
+	dynasty=100009
+	martial=5
+	diplomacy=5
+	intrigue=6
+	stewardship=7
+	religion="gaelic_pagan"
+	culture="irish"
+	200.1.1={
+		birth="200.1.1"
+	}
+	250.1.1={  
+		death="250.1.1"
 	}
 }

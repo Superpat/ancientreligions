@@ -215,6 +215,15 @@ d_sunni = {
 	}
 	
 	caliphate = yes
+	
+	coat_of_arms=
+	{
+		data=
+		{
+			0 0 0 3 0 2 2
+		}
+		religion=sunni
+	}
 }
 
 d_shiite = {
@@ -303,6 +312,15 @@ d_shiite = {
 	}
 
 	caliphate = yes
+	
+	coat_of_arms=
+	{
+		data=
+		{
+			0 0 0 9 1 7 7
+		}
+		religion=shiite
+	}
 }
 
 e_golden_horde = {
@@ -2231,7 +2249,7 @@ d_ghanan_band = {
 	
 	# Hire Trigger
 	allow = {
-		always = yes
+		culture_group = west_african
 	}
 	
 	# Parent Religion 
@@ -9934,6 +9952,7 @@ e_scandinavia = {
 			OR = {
 				culture_group = north_germanic
 				culture_group = finno_ugric
+				culture_group = east_slavic
 			}
 		}
 	
@@ -12260,7 +12279,8 @@ e_russia = {
 		allow = {
 			OR = {
 				culture_group = north_germanic
-				culture_group = east_slavic 
+				culture_group = east_slavic
+				culture_group = finno_ugric
 			}
 		}
 		
@@ -19128,6 +19148,8 @@ e_france = {
 		
 		catholic = 300 # Crusade target weight
 		
+		norse = Bertangaland
+		
 		allow = {
 			culture_group = celtic
 		}
@@ -19139,6 +19161,8 @@ e_france = {
 			capital = 105 # Vannes
 			
 			culture = breton
+			
+			norse = Bertangaland
 			
 			c_nantes = {
 				color={ 37 28 230 }
@@ -24532,56 +24556,6 @@ e_abyssinia = {
 			}
 		}
 		
-		d_hayya = {
-			color={ 186 40 91 }
-			color2={ 255 255 255 }
-			
-			capital = 878 # Hayya
-		
-			c_hayya = {
-				color={ 206 38 101 }
-				color2={ 255 255 255 }
-			
-				b_marawi = {
-				}
-				b_kanisah = {
-				}
-				b_affat = {
-				}
-				b_korti = {
-				}
-				b_gabriya = {
-				}
-				b_keheilli = {
-				}
-				b_abudis = {
-				}
-				b_ummmardi = {
-				}
-			}
-			c_atbara = {
-				color={ 208 40 103 }
-				color2={ 255 255 255 }
-			
-				b_atbara = {
-				}
-				b_omdurman = {
-				}
-				b_begarawiyah = {
-				}
-				b_soba = {
-				}
-				b_tabat = {
-				}
-				b_wadrawah = {
-				}
-				b_meruwah = {
-				}
-				b_hajaralasla = {
-				}
-			}
-		}
-		
 		d_axum = {
 			color={ 198 30 93 }
 			color2={ 255 255 255 }
@@ -24852,6 +24826,56 @@ e_abyssinia = {
 				b_dradate = {
 				}
 				b_derri = {
+				}
+			}
+		}
+		
+		d_hayya = {
+			color={ 186 40 91 }
+			color2={ 255 255 255 }
+			
+			capital = 878 # Hayya
+		
+			c_hayya = {
+				color={ 206 38 101 }
+				color2={ 255 255 255 }
+			
+				b_marawi = {
+				}
+				b_kanisah = {
+				}
+				b_affat = {
+				}
+				b_korti = {
+				}
+				b_gabriya = {
+				}
+				b_keheilli = {
+				}
+				b_abudis = {
+				}
+				b_ummmardi = {
+				}
+			}
+			c_atbara = {
+				color={ 208 40 103 }
+				color2={ 255 255 255 }
+			
+				b_atbara = {
+				}
+				b_omdurman = {
+				}
+				b_begarawiyah = {
+				}
+				b_soba = {
+				}
+				b_tabat = {
+				}
+				b_wadrawah = {
+				}
+				b_meruwah = {
+				}
+				b_hajaralasla = {
 				}
 			}
 		}
@@ -25880,6 +25904,14 @@ e_britannia = {
 		catholic = 300 # Crusade target weight
 		norse_pagan_reformed = 200 # Crusade target weight
 		
+		norse = Skotland
+		swedish = Skottland
+		danish = Skotland
+		norwegian = Skottland
+		welsh = Alba
+		irish = Alba
+		breton = Alba
+		
 		d_galloway = {
 			color={ 77 116 208 }
 			color2={ 255 255 255 }
@@ -26352,6 +26384,11 @@ e_britannia = {
 		catholic = 300 # Crusade target weight
 		norse_pagan_reformed = 200 # Crusade target weight
 		
+		norse = Irland
+		swedish = Irland
+		danish = Irland
+		norwegian = Irland
+		
 		d_ulster = {
 			color={ 5 222 31 }
 			color2={ 255 255 255 }
@@ -26519,7 +26556,7 @@ e_britannia = {
 			norwegian = Dublin
 			danish = Dublin
 			swedish = Dublin
-			norse = Dublin
+			norse = Dyflinn
 			irish = Tara
 			
 			pagan_coa = {
@@ -26560,7 +26597,10 @@ e_britannia = {
 				color={ 55 250 85 }
 				color2={ 255 255 255 }
 				
+				norse = Dyflinn
+				
 				b_dublin = {
+					norse = Dyflinn
 				}
 				b_clondalkin = {
 				}
@@ -27864,7 +27904,7 @@ k_saruhan = {
 }
 k_seljuk_turks = { # Seljuk Turks
 	color={ 99 168 74 }
-	capital = 900 # Kyzylorda
+	capital = 646 # Esfahan
 	culture = turkish
 	
 	tribe=yes
@@ -28561,7 +28601,48 @@ d_hellenic_pagan = {
 	creation_requires_capital = no
 	
 	allow = {
-		always = no
+		religion = hellenic_pagan
+		num_of_holy_sites = 3
+		religion_authority = 0.6
+		piety = 500
+	}
+	
+	gain_effect = {
+		hidden_tooltip = {
+			e_roman_empire = {
+				owner = {
+					if = {
+						limit = {
+							religion = hellenic_pagan
+						}
+						character_event = { id = ancrel.2102 days = 1 }
+					}
+				}
+			}
+			e_byzantium = {
+				owner = {
+					if = {
+						limit = {
+							religion = hellenic_pagan
+							NOT = { has_landed_title = e_roman_empire }
+						}
+						character_event = { id = ancrel.2102 days = 1 }
+					}
+				}
+			}
+			e_latin_empire = {
+				owner = {
+					if = {
+						limit = {
+							religion = hellenic_pagan
+							NOT = { has_landed_title = e_roman_empire }
+							NOT = { has_landed_title = e_byzantium }
+						}
+						character_event = { id = ancrel.2102 days = 1 }
+					}
+				}
+			}
+		}
 	}
 	
 	short_name = yes

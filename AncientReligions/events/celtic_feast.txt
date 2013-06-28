@@ -2684,9 +2684,9 @@ character_event = {
 					is_female = no
 				}
 				character_event = { id = ancrel.0084 }
-				add_lover = FROM
 				set_character_flag = feast_homosexual
-			}		
+				add_lover = ROOT
+			}
 		}
 	}
 	
@@ -2833,8 +2833,8 @@ character_event = {
 				}
 				character_event = { id = ancrel.0087 }
 				set_character_flag = feast_homosexual
-				add_lover = FROM
-			}		
+				add_lover = ROOT
+			}
 		}
 	}
 	

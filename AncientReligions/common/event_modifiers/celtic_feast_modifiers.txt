@@ -1,0 +1,7 @@
+held_celtic_feast_modifier = {
+	land_morale = 0.15
+	monthly_character_prestige = 0.3
+	icon = 13
+}
+
+held_celtic_feast_timer = { icon = 1 }

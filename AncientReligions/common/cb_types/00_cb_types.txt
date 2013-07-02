@@ -5614,15 +5614,12 @@ imperial_reconquest = {
 	can_use = {
 		ROOT = {
 			OR = {
-				AND = {
-					has_landed_title = e_roman_empire
-					NOT = { FROM = { religion_group = muslim } }
-				}
+				has_landed_title = e_roman_empire
 				AND = {
 					independent = yes
 					higher_tier_than = DUKE
 					religion = hellenic_pagan
-					NOT = { FROM = { religion = hellenic_pagan } }
+					NOT = { religion_group = FROM }
 					NOT = {
 						any_war = {
 							attacker = { character = ROOT }
@@ -5640,6 +5637,42 @@ imperial_reconquest = {
 				religion_group = pagan_group
 			}
 			NOT = { same_realm = FROM }
+
+			NOT = {
+				# Use CB "pagan_holy_war" instead
+				AND = {
+					religion_group = pagan_group
+					OR = {
+						religion = aztec
+						is_reformed_religion = yes
+					}
+					NOT = { religion = FROM }
+					top_liege = { religion = ROOT }
+				}
+			}
+
+			NOT = {
+				# Use CB "religious" instead
+				AND = {
+					religion_group = christian
+					OR = {
+						NOT = { religion_group = FROM }
+						is_heresy_of = FROM
+						is_parent_religion = FROM
+					}
+					top_liege = {
+						religion_group = ROOT
+						NOT = { religion = FROM }
+						OR = {
+							religion = ROOT
+							AND = {
+								is_heretic = no
+								ROOT = { is_heretic = no }
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 

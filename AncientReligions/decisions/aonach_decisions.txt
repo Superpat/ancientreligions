@@ -6,7 +6,6 @@ decisions = {
 				has_character_flag = aonach_tailteann
 			}
 			OR = {
-				culture = irish
 				religion = gaelic_pagan
 				religion = gaelic_pagan_reformed
 			}

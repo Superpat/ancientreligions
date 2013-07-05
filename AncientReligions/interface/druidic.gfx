@@ -59,12 +59,12 @@ spriteTypes = {
 	# Event Pictures
 	spriteType = {
 		name = "GFX_evt_headhunter"
-		texturefile = "gfx\\event_pictures\saxon_army_banners.tga"
+		texturefile = "gfx\\event_pictures\headhunter.tga"
 		allwaystransparent = yes
 	}
 	spriteType = {
-		name = "GFX_evt_oak_tree"
-		texturefile = "gfx\\event_pictures\oak_forest.tga"
+		name = "GFX_evt_druidic_sacrifice"
+		texturefile = "gfx\\event_pictures\druidic_sacrifice.tga"
 		allwaystransparent = yes
 	}
 	spriteType = {
@@ -80,6 +80,36 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_evt_celtic_warriors"
 		texturefile = "gfx\\event_pictures\battle_gaul.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_bonfire_celtic"
+		texturefile = "gfx\\event_pictures\bonfire_celtic.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_ollamh_laws"
+		texturefile = "gfx\\event_pictures\ollamh_laws.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_nightmare"
+		texturefile = "gfx\\event_pictures\nightmare.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_craftsman"
+		texturefile = "gfx\\event_pictures\craftsman.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_athlete"
+		texturefile = "gfx\\event_pictures\athlete.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_funeral_pyre"
+		texturefile = "gfx\\event_pictures\funeral_pyre.tga"
 		allwaystransparent = yes
 	}
 }

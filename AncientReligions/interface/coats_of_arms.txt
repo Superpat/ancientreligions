@@ -202,6 +202,10 @@ culture = {
 		"aztec"
 		"slavic_pagan_reformed"
 		"slavic_pagan"
+		"gaelic_pagan"
+		"gaelic_pagan_reformed"
+		"druidic"
+		"druidic_reformed"
 	}
 	
 	templates = { 
@@ -431,6 +435,9 @@ culture = {
 
 culture = {
 	religion_group = "zoroastrian_group"
+	religion = {
+		"hellenic_pagan"
+	}
 	
 	templates = { 
 		"coa_plain_muslim:1"

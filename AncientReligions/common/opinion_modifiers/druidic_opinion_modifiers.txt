@@ -20,3 +20,18 @@ opinion_refused_celtic_feast = {
 	opinion = -15
 	months = 12
 }
+opinion_tailteann_participant = {
+	opinion = 10
+}
+
+opinion_tailteann_athlete = {
+	opinion = 20
+}
+
+opinion_tailteann_fighting = {
+	opinion = 20
+}
+
+opinion_tailteann_craftsman = {
+	opinion = 20
+}

@@ -57,7 +57,7 @@ character_event = {
 			create_character = {
 				random_traits = no
 				dynasty = NONE
-				male = yes
+				female = no
 				age = 53
 				religion = druidic
 				culture = ROOT
@@ -75,7 +75,7 @@ character_event = {
 			create_character = {
 				random_traits = no
 				dynasty = NONE
-				male = yes
+				female = no
 				age = 53
 				religion = gaelic_pagan
 				culture = ROOT
@@ -100,8 +100,6 @@ character_event = {
 	desc = EVTDESCancrel.0001
 	picture = GFX_evt_Pagan_dolmen
 	
-	triggered_only = yes
-	
 	prisoner = no
 	
 	is_triggered_only = yes
@@ -114,7 +112,7 @@ character_event = {
 			name = celtic_ways
 			duration = -1
 		}
-		hidden_trigger = {
+		hidden_tooltip = {
 			any_vassal = {
 				limit = {
 					NOT = {
@@ -156,7 +154,7 @@ character_event = {
 	picture = GFX_evt_scandal
 	
 	prisoner = no
-	incapable = no
+	capable_only = yes
 	
 	trigger = {
 		NOT = {
@@ -207,7 +205,7 @@ character_event = {
 				years = 2
 			}
 		}
-		remove_event_modifier = celtic_ways
+		hidden_tooltip = { remove_character_modifier = celtic_ways }
 	}
 }
 
@@ -218,7 +216,7 @@ character_event = {
 	picture = GFX_evt_Pagan_dolmen
 	
 	prisoner = no
-	incapable = no
+	capable_only = yes
 	
 	is_triggered_only = yes
 	
@@ -265,7 +263,7 @@ character_event = {
 				years = 2
 			}
 		}
-		add_character_flag = refuse_celtic_ways
+		set_character_flag = refuse_celtic_ways
 		hidden_tooltip = {
 			IF = {
 				limit = { is_ruler = yes }
@@ -296,5 +294,114 @@ character_event = {
 	
 	option = {
 		name = EVTOPTAancrel.0005
+	}
+}
+
+### Lunatic and Possessed conversion
+# Hear a tapping at the door
+character_event = {
+	id = ancrel.0006
+	desc = EVTDESCancrel.0006
+	picture = GFX_evt_courier
+	
+	min_age = 16
+	prisoner = no
+	
+	trigger = {
+		culture_group = celtic
+		OR = {
+			trait = lunatic
+			trait = possessed
+		}
+		NOT = { has_character_modifier = voice_of_jesus }
+	}
+	
+	mean_time_to_happen = {
+		months = 420
+	}
+	
+	option = {
+		name = EVTOPTAancrel.0006
+		ai_chance = {
+			factor = 50
+		}
+		tooltip_info = lunatic
+		hidden_tooltip = {
+			character_event = { id = ancrel.0007 }
+		}
+	}
+	option = {
+		name = EVTOPTBancrel.0006
+		tooltip_info = lunatic
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+# The elves come in
+character_event = {
+	id = ancrel.0007
+	desc = EVTDESCancrel.0007
+	picture = GFX_evt_courier
+	
+	min_age = 16
+	prisoner = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.0007
+		tooltip_info = lunatic
+		ai_chance = {
+			factor = 50
+		}
+		hidden_tooltip = {
+			character_event = { id = ancrel.0008 }
+		}
+	}
+	option = {
+		name = EVTOPTBancrel.0007
+		tooltip_info = lunatic
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				trait = zealous
+			}
+		}
+	}
+}
+# King of the Elves!
+character_event = {
+	id = ancrel.0008
+	desc = EVTDESCancrel.0008
+	picture = GFX_evt_courier
+	
+	min_age = 16
+	prisoner = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.0008
+		tooltip_info = lunatic
+		if = {
+			limit = {
+				OR = {
+					culture = breton
+					culture = welsh
+				}
+			}
+			religion = druidic
+		}
+		if = {
+			limit = {
+				OR = {
+					culture = scottish
+					culture = irish
+				}
+			}
+			religion = gaelic_pagan
+		}
 	}
 }

@@ -3962,6 +3962,7 @@ e_byzantium = {
 		
 		orthodox = 400 # Crusade target weight
 		catholic = 100 # Crusade target weight
+		zoroastrian_group = 100 # Crusade target weight
 		
 		d_nikaea = {
 			color={ 202 101 167 }
@@ -5027,6 +5028,7 @@ e_byzantium = {
 		orthodox = 300 # Crusade target weight
 		catholic = 75 # Crusade target weight
 		muslim = 100 # Crusade target weight
+		zoroastrian_group = 100 # Crusade target weight
 		
 		d_anatolia = {
 			color={ 174 23 122 }
@@ -5572,6 +5574,7 @@ e_byzantium = {
 		
 		orthodox = 300 # Crusade target weight
 		muslim = 100 # Crusade target weight
+		zoroastrian_group = 200 # Crusade target weight
 		
 		# Creation/usurpation trigger
 		allow = {
@@ -7094,6 +7097,7 @@ e_byzantium = {
 		
 		orthodox = 200 # Crusade target weight
 		tengri_pagan_reformed = 50
+		zoroastrian_group = 50 # Crusade target weight
 		
 		d_kartli = {
 			color={ 234 119 119 }
@@ -8253,6 +8257,8 @@ e_scandinavia = {
 		catholic = 100 # Crusade target weight
 		baltic_pagan_reformed = 50 # Crusade target weight
 		finnish_pagan_reformed = 50
+		
+		norse = Sviþjod
 	
 		d_uppland = {
 			color={ 20 20 145 }
@@ -14016,6 +14022,7 @@ e_tartaria = {
 		capital = 594 #	Sarkel
 		
 		tengri_pagan_reformed = 500
+		zoroastrian_group = 50 # Crusade target weight
 		
 		# Creation/Usurp Trigger
 		allow = {
@@ -15197,6 +15204,7 @@ e_tartaria = {
 		culture = turkish
 		
 		tengri_pagan_reformed = 500
+		zoroastrian_group = 150 # Crusade target weight
 
 		d_khwarizmian = { # Turkestan
 			color={ 224 170 24 }
@@ -15362,6 +15370,7 @@ e_persia = {
 		culture = persian
 		
 		muslim = 400 # Crusade target weight
+		zoroastrian_group = 1000 # Crusade target weight
 		
 		d_merv = { 
 			color={ 153 201 70 }
@@ -16312,6 +16321,7 @@ e_persia = {
 		culture = persian
 		
 		tengri_pagan_reformed = 50
+		zoroastrian_group = 700 # Crusade target weight
 		
 		d_khiva = {
 			color={ 185 210 142 }
@@ -16537,6 +16547,7 @@ e_persia = {
 		culture = levantine_arabic
 		
 		muslim = 400 # Crusade target weight
+		zoroastrian_group = 500 # Crusade target weight
 		
 		d_kermanshah = {
 			color={ 55 144 95 }
@@ -21446,6 +21457,7 @@ e_arabia = {
 		culture = bedouin_arabic
 		
 		muslim = 25 # Crusade target weight
+		zoroastrian_group = 150 # Crusade target weight
 	
 		d_arabia_petrae = {
 			color={ 121 196 2 }
@@ -22102,6 +22114,7 @@ e_arabia = {
 		
 		orthodox = 20 # Crusade target weight
 		muslim = 400 # Crusade target weight
+		zoroastrian_group = 150 # Crusade target weight
 		
 		d_alexandria = {
 			color={ 100 219 134 }
@@ -22549,6 +22562,7 @@ e_arabia = {
 		
 		christian = 500 # Crusade target weight
 		muslim = 250 # Crusade target weight
+		zoroastrian_group = 200 # Crusade target weight
 		
 		d_oultrejourdain = {
 			color={ 159 188 41 }
@@ -22975,6 +22989,7 @@ e_arabia = {
 		
 		orthodox = 200 # Crusade target weight
 		muslim = 200 # Crusade target weight
+		zoroastrian_group = 250 # Crusade target weight
 		
 		d_aleppo = {
 			color={ 85 232 20 }
@@ -24015,6 +24030,7 @@ e_arabia = {
 		orthodox = 10 # Crusade target weight
 		muslim = 200 # Crusade target weight
 		west_african_pagan_reformed = 50
+		zoroastrian_group = 50 # Crusade target weight
 		
 		d_tunis = {
 			color={ 20 232 95 }
@@ -25299,9 +25315,11 @@ e_britannia = {
 			
 				b_westminster = {
 					used_for_dynasty_names = no
+					norse=Vestmystur
 				}
 				b_london = {
 					used_for_dynasty_names = no
+					norse=Lundúnir
 				}
 				b_st_pauls = {
 					holy_site = aztec

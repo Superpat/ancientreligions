@@ -7,8 +7,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="brave"
-	add_trait="skilled_tactician"
+	trait="brave"
+	trait="skilled_tactician"
 	father=1001
 	1040.1.1={
 		birth="1040.1.1"
@@ -27,8 +27,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="proud"
-	add_trait="tough_soldier"
+	trait="proud"
+	trait="tough_soldier"
 	father=83537
 	990.1.1={
 		birth="990.1.1"
@@ -47,8 +47,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="wroth"
-	add_trait="tough_soldier"
+	trait="wroth"
+	trait="tough_soldier"
 	father=1001
 	1010.1.1={
 		birth="1010.1.1"
@@ -67,7 +67,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=1005 #Ualgarg mac Néill
 	1046.1.1={
 		birth="1046.1.1"
@@ -86,7 +86,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=1003 #Tigernán mac Ualgairg
 	1065.1.1={
 		birth="1065.1.1"
@@ -105,8 +105,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="proud"
-	add_trait="tough_soldier"
+	trait="proud"
+	trait="tough_soldier"
 	father=1002
 	1029.1.2={
 		birth="1029.1.2"
@@ -126,8 +126,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="proud"
-	add_trait="tough_soldier"
+	trait="proud"
+	trait="tough_soldier"
 	1024.1.1={
 		birth="1024.1.1"
 	}
@@ -148,8 +148,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="charitable"
-	add_trait="thrifty_clerk"
+	trait="charitable"
+	trait="thrifty_clerk"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -168,7 +168,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="thrifty_clerk"
+	trait="thrifty_clerk"
 	father=1010
 	mother=1011
 	1055.1.1={
@@ -189,9 +189,9 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="charitable"
-	add_trait="kind"
-	add_trait="tough_soldier"
+	trait="charitable"
+	trait="kind"
+	trait="tough_soldier"
 	1045.1.1={
 		birth="1045.1.1"
 	}
@@ -214,8 +214,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="gluttonous"
-	add_trait="flamboyant_schemer"
+	trait="gluttonous"
+	trait="flamboyant_schemer"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -234,7 +234,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=1015
 	mother=1016
 	1060.1.1={
@@ -273,8 +273,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="envious"
-	add_trait="skilled_tactician"
+	trait="envious"
+	trait="skilled_tactician"
 	father=83213
 	1030.1.1={
 		birth="1030.1.1"
@@ -297,8 +297,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="proud"
-	add_trait="amateurish_plotter"
+	trait="proud"
+	trait="amateurish_plotter"
 	1035.1.1={
 		birth="1035.1.1"
 	}
@@ -316,7 +316,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=1020
 	mother=1021
 	1050.1.1={
@@ -336,8 +336,8 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="gluttonous"
-	add_trait="tough_soldier"
+	trait="gluttonous"
+	trait="tough_soldier"
 	father=1020
 	mother=1021
 	1055.1.1={
@@ -358,7 +358,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
 	father=900 #Brian Bóruma
 	mother=166123 #Eachraidh
 	984.1.1={
@@ -379,7 +379,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
 	father=916
 	1001.1.2={
 		birth="1001.1.2"
@@ -402,9 +402,9 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="diligent"
-	add_trait="charitable"
-	add_trait="skilled_tactician"
+	trait="diligent"
+	trait="charitable"
+	trait="skilled_tactician"
 	father=7276
 	825.1.2={
 		birth="825.1.2"
@@ -427,8 +427,8 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
-	add_trait="diligent"
+	trait="tough_soldier"
+	trait="diligent"
 	father=131501
 	847.1.2={
 		birth="847.1.2"
@@ -461,7 +461,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=131502
 	mother=165000
 	879.1.2={
@@ -491,7 +491,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=131503
 	mother=166058
 	911.1.2={
@@ -515,7 +515,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=131504
 	mother=131520
 	948.1.2={
@@ -548,7 +548,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="irish"
-	add_trait="patient"
+	trait="patient"
 	father=131502
 	mother=165000
 	875.1.1={
@@ -569,7 +569,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="irish"
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
 	father=166023
 	829.1.1={
 		birth="829.1.1"
@@ -589,7 +589,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=944
 	mother=165002 #Máel Muire ingen Cináeda mac Ailpín.
 	869.1.2={
@@ -613,7 +613,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=131511
 	mother=131506
 	900.1.2={
@@ -636,7 +636,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=131512
 	mother=166058
 	930.1.2={
@@ -659,7 +659,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=131513
 	960.1.2={
 		birth="960.1.2"
@@ -678,8 +678,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="humble"
-	add_trait="clubfooted"
+	trait="humble"
+	trait="clubfooted"
 	father=131513
 	954.1.2={
 		birth="954.1.2"
@@ -698,8 +698,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="deceitful"
-	add_trait="proud"
+	trait="deceitful"
+	trait="proud"
 	father=939 
 	975.1.2={
 		birth="975.1.2"
@@ -718,7 +718,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="deceitful"
+	trait="deceitful"
 	father=131516
 	1010.1.2={
 		birth="1010.1.2"
@@ -740,7 +740,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=131517
 	1049.1.1={
 		birth="1049.1.1"
@@ -759,7 +759,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="proud"
+	trait="proud"
 	father=131517
 	1052.1.2={
 		birth="1052.1.2"
@@ -780,8 +780,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="envious"
-	add_trait="flamboyant_schemer"
+	trait="envious"
+	trait="flamboyant_schemer"
 	father=131512
 	mother=166058
 	932.1.2={
@@ -802,7 +802,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=5790
 	mother=131520
 	960.1.2={
@@ -823,7 +823,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=131521
 	979.1.2={
 		birth="979.1.2"
@@ -842,7 +842,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=131521
 	980.1.2={
 		birth="980.1.2"
@@ -862,9 +862,9 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="temperate"
-	add_trait="stutter"
-	add_trait="skilled_tactician"
+	trait="temperate"
+	trait="stutter"
+	trait="skilled_tactician"
 	1039.1.1={
 		birth="1039.1.1"
 	}
@@ -883,9 +883,9 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="deceitful"
-	add_trait="just"
-	add_trait="scholarly_theologian"
+	trait="deceitful"
+	trait="just"
+	trait="scholarly_theologian"
 	father = 203026
 	1134.1.2={
 		birth="1134.1.2"
@@ -905,8 +905,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="irish"
-	add_trait="deceitful"
-	add_trait="scholarly_theologian"
+	trait="deceitful"
+	trait="scholarly_theologian"
 	1130.1.2={
 		birth="1130.1.2"
 	}
@@ -924,8 +924,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="charitable"
-	add_trait="fortune_builder"
+	trait="charitable"
+	trait="fortune_builder"
 	father=214008 #4th son
 	1140.1.1={
 		birth="1140.1.1"
@@ -944,7 +944,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father = 7285
 	1105.1.1={
 		birth="1105.1.1"
@@ -963,7 +963,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=214007
 	1181.1.1={
 		birth="1181.1.1"
@@ -982,9 +982,9 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="kind"
-	add_trait="clubfooted"
-	add_trait="tough_soldier"
+	trait="kind"
+	trait="clubfooted"
+	trait="tough_soldier"
 	father=214021 #Máél-Sechlain mac Tigernan Móir Ua Ruairc
 	1162.1.1={
 		birth="1162.1.1"
@@ -1006,7 +1006,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=214022 #Tigearnan Mór Ua Ruairc
 	mother=83159
 	1134.1.1={
@@ -1026,8 +1026,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="diligent"
-	add_trait="skilled_tactician"
+	trait="diligent"
+	trait="skilled_tactician"
 	father=214024 #Áed mac Domnaill
 	1107.1.1={
 		birth="1107.1.1"
@@ -1046,8 +1046,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="proud"
-	add_trait="thrifty_clerk"
+	trait="proud"
+	trait="thrifty_clerk"
 	1108.1.2={
 		birth="1108.1.2"
 	}
@@ -1065,7 +1065,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father = 7287 #Domnall mac Ualgairg
 	1064.1.1={
 		birth="1064.1.1"
@@ -1085,8 +1085,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="just"
-	add_trait="misguided_warrior"
+	trait="just"
+	trait="misguided_warrior"
 	father=214022 #Tigearnan Mór Ua Ruairc
 	1142.1.1={
 		birth="1142.1.1"
@@ -1109,9 +1109,9 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="temperate"
-	add_trait="cynical"
-	add_trait="charismatic_negotiator"
+	trait="temperate"
+	trait="cynical"
+	trait="charismatic_negotiator"
 	1144.1.2={
 		birth="1144.1.2"
 	}
@@ -1129,9 +1129,9 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="diligent"
-	add_trait="charitable"
-	add_trait="charismatic_negotiator"
+	trait="diligent"
+	trait="charitable"
+	trait="charismatic_negotiator"
 	father=214025 #Cathal Liath
 	mother=214026
 	1166.1.1={
@@ -1151,9 +1151,9 @@
 	stewardship=3
 	religion="catholic"
 	culture="irish"
-	add_trait="lustful"
-	add_trait="gluttonous"
-	add_trait="tough_soldier"
+	trait="lustful"
+	trait="gluttonous"
+	trait="tough_soldier"
 	father=214025 #Cathal Liath
 	mother=214026
 	1168.1.1={
@@ -1174,9 +1174,9 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="gluttonous"
-	add_trait="humble"
-	add_trait="naive_appeaser"
+	trait="gluttonous"
+	trait="humble"
+	trait="naive_appeaser"
 	1168.1.2={
 		birth="1168.1.2"
 	}
@@ -1194,11 +1194,11 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="kind"
-	add_trait="humble"
-	add_trait="brave"
-	add_trait="clubfooted"
-	add_trait="tough_soldier"
+	trait="kind"
+	trait="humble"
+	trait="brave"
+	trait="clubfooted"
+	trait="tough_soldier"
 	father=214510 #Ruaidrí mac Toirrdelbaig
 	1148.1.1={
 		birth="1148.1.1"
@@ -1217,7 +1217,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="skilled_tactician"
+	trait="skilled_tactician"
 	father=214510 #Ruaidrí mac Toirrdelbaig
 	1154.1.1={
 		birth="1154.1.1"
@@ -1236,9 +1236,9 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="slothful"
-	add_trait="kind"
-	add_trait="flamboyant_schemer"
+	trait="slothful"
+	trait="kind"
+	trait="flamboyant_schemer"
 	father=214510 #Ruaidrí mac Toirrdelbaig
 	1156.1.1={
 		birth="1156.1.1"
@@ -1257,9 +1257,9 @@
 	stewardship=8
 	religion="catholic"
 	culture="irish"
-	add_trait="clubfooted"
-	add_trait="inbred"
-	add_trait="scholarly_theologian"
+	trait="clubfooted"
+	trait="inbred"
+	trait="scholarly_theologian"
 	father=214510 #Ruaidrí mac Toirrdelbaig
 	1155.1.1={
 		birth="1155.1.1"
@@ -1278,8 +1278,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="irish"
-	add_trait="patient"
-	add_trait="tough_soldier"
+	trait="patient"
+	trait="tough_soldier"
 	father=214500 #Conchobar Máenmaige mac Ruaidrí
 	1170.1.1={
 		birth="1170.1.1"
@@ -1298,8 +1298,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="charitable"
-	add_trait="martial_cleric"
+	trait="charitable"
+	trait="martial_cleric"
 	father=214520 #Toirrdelbach mac Ruaidrí
 	1123.1.1={
 		birth="1123.1.1"
@@ -1318,8 +1318,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="skilled_tactician"
-	add_trait="lustful"
+	trait="skilled_tactician"
+	trait="lustful"
 	father = 911 #Ruaidrí na Saide Buide
 	1088.1.1={
 		birth="1088.1.1"
@@ -1338,8 +1338,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="irish"
-	add_trait="slothful"
-	add_trait="tough_soldier"
+	trait="slothful"
+	trait="tough_soldier"
 	father=6166
 	1110.1.2={
 		birth="1110.1.2"
@@ -1362,7 +1362,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="underhanded_rogue"
+	trait="underhanded_rogue"
 	1115.1.2={
 		birth="1115.1.2"
 	}
@@ -1381,9 +1381,9 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="diligent"
-	add_trait="kind"
-	add_trait="amateurish_plotter"
+	trait="diligent"
+	trait="kind"
+	trait="amateurish_plotter"
 	1129.1.2={
 		birth="1129.1.2"
 	}
@@ -1402,8 +1402,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="stutter"
-	add_trait="flamboyant_schemer"
+	trait="stutter"
+	trait="flamboyant_schemer"
 	father=214550
 	mother=214551
 	1135.1.2={
@@ -1424,8 +1424,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="wroth"
-	add_trait="scholarly_theologian"
+	trait="wroth"
+	trait="scholarly_theologian"
 	father=214550
 	mother=214551
 	1139.1.2={
@@ -1445,8 +1445,8 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="patient"
-	add_trait="flamboyant_schemer"
+	trait="patient"
+	trait="flamboyant_schemer"
 	father=214590
 	mother=332038
 	1137.1.1={
@@ -1469,8 +1469,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="irish"
-	add_trait="slothful"
-	add_trait="scholarly_theologian"
+	trait="slothful"
+	trait="scholarly_theologian"
 	father=214580
 	mother=214554
 	1157.1.1={
@@ -1490,8 +1490,8 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="honest"
-	add_trait="amateurish_plotter"
+	trait="honest"
+	trait="amateurish_plotter"
 	father=214580
 	mother=214554
 	1159.1.1={
@@ -1511,7 +1511,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	father=214580
 	mother=214554
 	1161.1.1={
@@ -1531,9 +1531,9 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="cynical"
-	add_trait="brave"
-	add_trait="martial_cleric"
+	trait="cynical"
+	trait="brave"
+	trait="martial_cleric"
 	father=214580
 	mother=214554
 	1163.1.1={
@@ -1553,8 +1553,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="charitable"
-	add_trait="skilled_tactician"
+	trait="charitable"
+	trait="skilled_tactician"
 	father=214580
 	mother=214554
 	1165.1.1={
@@ -1574,8 +1574,8 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="lisp"
-	add_trait="scholarly_theologian"
+	trait="lisp"
+	trait="scholarly_theologian"
 	father=214590
 	1140.1.1={
 		birth="1140.1.1"
@@ -1594,7 +1594,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
 	father = 913 #Diarmait son of Toirrdelbach
 	1100.1.1={
 		birth="1100.1.1"
@@ -1617,7 +1617,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="skilled_tactician"
+	trait="skilled_tactician"
 	father=214610
 	1147.1.1={
 		birth="1147.1.1"
@@ -1636,9 +1636,9 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="wroth"
-	add_trait="craven"
-	add_trait="martial_cleric"
+	trait="wroth"
+	trait="craven"
+	trait="martial_cleric"
 	father=214600
 	1178.1.1={
 		birth="1178.1.1"
@@ -1657,9 +1657,9 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="proud"
-	add_trait="hunchback"
-	add_trait="martial_cleric"
+	trait="proud"
+	trait="hunchback"
+	trait="martial_cleric"
 	father=214600
 	1180.1.1={
 		birth="1180.1.1"
@@ -1678,9 +1678,9 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="cynical"
-	add_trait="gluttonous"
-	add_trait="martial_cleric"
+	trait="cynical"
+	trait="gluttonous"
+	trait="martial_cleric"
 	father=214610
 	1150.1.1={
 		birth="1150.1.1"
@@ -1700,9 +1700,9 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="cynical"
-	add_trait="stutter"
-	add_trait="skilled_tactician"
+	trait="cynical"
+	trait="stutter"
+	trait="skilled_tactician"
 	father=83255
 	1115.1.1={
 		birth="1115.1.1"
@@ -1722,7 +1722,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="diligent"
+	trait="diligent"
 	1105.1.2={
 		birth="1105.1.2"
 	}
@@ -1740,7 +1740,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="bastard"
+	trait="bastard"
 	1165.1.2={
 		birth="1165.1.2"
 	}
@@ -1775,7 +1775,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="honest"
+	trait="honest"
 	1166.1.2={
 		birth="1166.1.2"
 	}
@@ -1811,7 +1811,7 @@
 	stewardship=2
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=220030
 	1186.1.1={
 		birth="1186.1.1"
@@ -1851,7 +1851,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="irish"
-	add_trait="honest"
+	trait="honest"
 	1131.1.1={
 		birth="1131.1.1"
 	}
@@ -1870,8 +1870,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="charismatic_negotiator"
-	add_trait="temperate"
+	trait="charismatic_negotiator"
+	trait="temperate"
 	1163.1.1={
 		birth="1163.1.1"
 	}
@@ -1908,7 +1908,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="irish"
-	add_trait="underhanded_rogue"
+	trait="underhanded_rogue"
 	1042.1.2={
 		birth="1042.1.2"
 	}
@@ -1926,9 +1926,9 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="brave"
-	add_trait="proud"
-	add_trait="tough_soldier"
+	trait="brave"
+	trait="proud"
+	trait="tough_soldier"
 	father=83341 #Tadg of Cáeluisce
 	1250.1.1={
 		birth="1250.1.1"
@@ -1947,8 +1947,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="honest"
-	add_trait="flamboyant_schemer"
+	trait="honest"
+	trait="flamboyant_schemer"
 	1294.1.1={
 		birth="1294.1.1"
 	}
@@ -1966,9 +1966,9 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="honest"
-	add_trait="wroth"
-	add_trait="tough_soldier"
+	trait="honest"
+	trait="wroth"
+	trait="tough_soldier"
 	father=454205
 	mother=454141
 	1313.1.1={
@@ -1988,9 +1988,9 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="humble"
-	add_trait="envious"
-	add_trait="tough_soldier"
+	trait="humble"
+	trait="envious"
+	trait="tough_soldier"
 	father=454205
 	mother=454141
 	1320.1.1={
@@ -2010,7 +2010,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=454205
 	mother=454141
 	1330.1.1={
@@ -2030,8 +2030,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="chaste"
-	add_trait="tough_soldier"
+	trait="chaste"
+	trait="tough_soldier"
 	father=454140 #Toirrdelbach mac Taidg
 	1287.1.1={
 		birth="1287.1.1"
@@ -2050,9 +2050,9 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="deceitful"
-	add_trait="proud"
-	add_trait="tough_soldier"
+	trait="deceitful"
+	trait="proud"
+	trait="tough_soldier"
 	father=454140 #Toirrdelbach mac Taidg
 	1289.1.1={
 		birth="1289.1.1"
@@ -2071,9 +2071,9 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="greedy"
-	add_trait="arbitrary"
-	add_trait="skilled_tactician"
+	trait="greedy"
+	trait="arbitrary"
+	trait="skilled_tactician"
 	father=454161
 	1295.1.1={
 		birth="1295.1.1"
@@ -2095,7 +2095,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=83562
 	1255.1.1={
 		birth="1255.1.1"
@@ -2114,9 +2114,9 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="greedy"
-	add_trait="just"
-	add_trait="tough_soldier"
+	trait="greedy"
+	trait="just"
+	trait="tough_soldier"
 	father=454161
 	1308.1.1={
 		birth="1308.1.1"
@@ -2135,9 +2135,9 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="humble"
-	add_trait="lustful"
-	add_trait="tough_soldier"
+	trait="humble"
+	trait="lustful"
+	trait="tough_soldier"
 	father=454161
 	1311.1.1={
 		birth="1311.1.1"
@@ -2157,9 +2157,9 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="proud"
-	add_trait="temperate"
-	add_trait="flamboyant_schemer"
+	trait="proud"
+	trait="temperate"
+	trait="flamboyant_schemer"
 	1300.1.1={
 		birth="1300.1.1"
 	}
@@ -2197,8 +2197,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="lustful"
-	add_trait="flamboyant_schemer"
+	trait="lustful"
+	trait="flamboyant_schemer"
 	1317.1.1={
 		birth="1317.1.1"
 	}
@@ -2216,8 +2216,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="irish"
-	add_trait="envious"
-	add_trait="skilled_tactician"
+	trait="envious"
+	trait="skilled_tactician"
 	1319.1.1={
 		birth="1319.1.1"
 	}
@@ -2235,10 +2235,10 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="charitable"
-	add_trait="brave"
-	add_trait="stutter"
-	add_trait="tough_soldier"
+	trait="charitable"
+	trait="brave"
+	trait="stutter"
+	trait="tough_soldier"
 	father=454140 #Toirrdelbach mac Taidg
 	1285.1.1={
 		birth="1285.1.1"
@@ -2260,9 +2260,9 @@
 	stewardship=8
 	religion="catholic"
 	culture="irish"
-	add_trait="proud"
-	add_trait="zealous"
-	add_trait="charismatic_negotiator"
+	trait="proud"
+	trait="zealous"
+	trait="charismatic_negotiator"
 	father=931
 	1050.1.2={
 		birth="1050.1.2"
@@ -2281,7 +2281,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father = 131505
 	mother=166102
 	993.1.2={
@@ -2301,8 +2301,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="wroth"
-	add_trait="tough_soldier"
+	trait="wroth"
+	trait="tough_soldier"
 	father = 6115 #Domnall abbot of Clonard
 	1010.1.2={
 		birth="1010.1.2"
@@ -2321,9 +2321,9 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="wroth"
-	add_trait="patient"
-	add_trait="tough_soldier"
+	trait="wroth"
+	trait="patient"
+	trait="tough_soldier"
 	father=6116 #Flann son of abbot Domnall
 	1035.1.2={
 		birth="1035.1.2"
@@ -2342,9 +2342,9 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="wroth"
-	add_trait="proud"
-	add_trait="tough_soldier"
+	trait="wroth"
+	trait="proud"
+	trait="tough_soldier"
 	father=6116 #Flann son of abbot Domnall
 	1030.1.2={
 		birth="1030.1.2"
@@ -2365,9 +2365,9 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="temperate"
-	add_trait="kind"
-	add_trait="tough_soldier"
+	trait="temperate"
+	trait="kind"
+	trait="tough_soldier"
 	father=6120 #Conchobar son of Domnall abbot of Clonard
 	mother=6121
 	1043.1.2={
@@ -2387,7 +2387,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	father = 6115 #Domnall abbot of Clonard
 	1014.1.2={
 		birth="1014.1.2"
@@ -2411,8 +2411,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="harelip"
-	add_trait="amateurish_plotter"
+	trait="harelip"
+	trait="amateurish_plotter"
 	1017.1.2={
 		birth="1017.1.2"
 	}
@@ -2430,8 +2430,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="charitable"
-	add_trait="tough_soldier"
+	trait="charitable"
+	trait="tough_soldier"
 	father=6120 #Conchobar son of Domnall abbot of Clonard
 	mother=6121
 	1045.1.2={
@@ -2470,8 +2470,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="irish"
-	add_trait="chaste"
-	add_trait="amateurish_plotter"
+	trait="chaste"
+	trait="amateurish_plotter"
 	father=6181
 	1024.1.2={
 		birth="1024.1.2"
@@ -2891,8 +2891,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="cynical"
-	add_trait="charismatic_negotiator"
+	trait="cynical"
+	trait="charismatic_negotiator"
 	father=6203
 	1014.1.2={
 		birth="1014.1.2"
@@ -2911,9 +2911,9 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="honest"
-	add_trait="patient"
-	add_trait="martial_cleric"
+	trait="honest"
+	trait="patient"
+	trait="martial_cleric"
 	father=6204
 	1050.1.2={
 		birth="1050.1.2"
@@ -2932,8 +2932,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="brave"
-	add_trait="thrifty_clerk"
+	trait="brave"
+	trait="thrifty_clerk"
 	father=6204
 	1053.1.2={
 		birth="1053.1.2"
@@ -2952,10 +2952,10 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="slothful"
-	add_trait="brave"
-	add_trait="lisp"
-	add_trait="charismatic_negotiator"
+	trait="slothful"
+	trait="brave"
+	trait="lisp"
+	trait="charismatic_negotiator"
 	father = 902
 	1020.1.2={
 		birth="1020.1.2"
@@ -2974,8 +2974,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="kind"
-	add_trait="flamboyant_schemer"
+	trait="kind"
+	trait="flamboyant_schemer"
 	father=6207
 	1043.1.2={
 		birth="1043.1.2"
@@ -2994,9 +2994,9 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="humble"
-	add_trait="zealous"
-	add_trait="tough_soldier"
+	trait="humble"
+	trait="zealous"
+	trait="tough_soldier"
 	father=6207
 	1044.1.2={
 		birth="1044.1.2"
@@ -3350,7 +3350,7 @@
 		add_spouse=166126
 	}
 	1030.1.1={
-		add_trait="pilgrim"
+		trait="pilgrim"
 	} #Pilgrimage to Rome
 	1036.7.1={
 		death="1036.7.1"
@@ -3378,8 +3378,8 @@
 	diplomacy=12
 	intrigue=9
 	stewardship=12
-	add_trait="proud"
-	add_trait="tough_soldier"
+	trait="proud"
+	trait="tough_soldier"
 	religion="pagan"
 	culture="irish"
 	father=83432
@@ -3768,8 +3768,8 @@
 	dynasty=101675
 	religion="catholic"
 	culture="irish"
-	add_trait="brave"
-	add_trait="skilled_tactician"
+	trait="brave"
+	trait="skilled_tactician"
 	father= 7287 #Domnall mac Ualgairg
 	1066.1.1={
 		birth="1066.1.1"
@@ -3786,8 +3786,8 @@
 	diplomacy=4
 	intrigue=4
 	stewardship=5
-	add_trait="clubfooted"
-	add_trait="hunchback"
+	trait="clubfooted"
+	trait="hunchback"
 	religion="catholic"
 	culture="irish"
 	father= 1005 #Ualgarg mac Néill
@@ -4117,9 +4117,9 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="wroth"
-	add_trait="brave"
-	add_trait="martial_cleric"
+	trait="wroth"
+	trait="brave"
+	trait="martial_cleric"
 	father=83330 #Cennétig of Dál gCais
 	mother=166063 #Bé Binn of Uí Briúin Seóla
 	941.1.1={
@@ -4158,8 +4158,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="ill"
-	add_trait="charismatic_negotiator"
+	trait="ill"
+	trait="charismatic_negotiator"
 	father=902
 	1000.1.2={
 		birth="1000.1.2"
@@ -4178,7 +4178,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=900 #Brian Bóruma
 	mother=166102 #Gormflaith
 	1000.1.1={
@@ -4198,9 +4198,9 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="patient"
-	add_trait="temperate"
-	add_trait="flamboyant_schemer"
+	trait="patient"
+	trait="temperate"
+	trait="flamboyant_schemer"
 	father=900
 	mother=166116
 	965.1.1={
@@ -4220,8 +4220,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="slothful"
-	add_trait="skilled_tactician"
+	trait="slothful"
+	trait="skilled_tactician"
 	father=903
 	996.1.2={
 		birth="996.1.2"
@@ -4241,8 +4241,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="diligent"
-	add_trait="amateurish_plotter"
+	trait="diligent"
+	trait="amateurish_plotter"
 	father=900 #Brian Bóruma
 	mother=166123 #Eachraidh
 	985.1.1={
@@ -4262,7 +4262,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="charismatic_negotiator"
+	trait="charismatic_negotiator"
 	father=905  #Tadg mac Briain High-King of Ireland
 	1009.1.1={
 		birth="1009.1.1"
@@ -4287,9 +4287,9 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="arbitrary"
-	add_trait="zealous"
-	add_trait="amateurish_plotter"
+	trait="arbitrary"
+	trait="zealous"
+	trait="amateurish_plotter"
 	father=906 #Toirrdelbach Ua Briain High-King of Ireland
 	mother=908
 	1041.1.1={
@@ -4310,7 +4310,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
 	1010.1.1={
 		birth="1010.1.1"
 	}
@@ -4328,9 +4328,9 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="humble"
-	add_trait="brave"
-	add_trait="tough_soldier"
+	trait="humble"
+	trait="brave"
+	trait="tough_soldier"
 	father=83389
 	992.1.1={
 		birth="992.1.1"
@@ -4350,8 +4350,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="just"
-	add_trait="flamboyant_schemer"
+	trait="just"
+	trait="flamboyant_schemer"
 	father=909
 	1015.1.1={
 		birth="1015.1.1"
@@ -4373,7 +4373,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="skilled_tactician"
+	trait="skilled_tactician"
 	father=910
 	mother=914
 	1040.1.1={
@@ -4393,8 +4393,8 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="wroth"
-	add_trait="flamboyant_schemer"
+	trait="wroth"
+	trait="flamboyant_schemer"
 	father=906 #Toirrdelbach Ua Briain High-King of Ireland
 	mother=908
 	1049.1.1={
@@ -4414,7 +4414,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=906 #Toirrdelbach Ua Briain High-King of Ireland
 	mother=908
 	1047.1.1={
@@ -4435,7 +4435,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="flamboyant_schemer"
+	trait="flamboyant_schemer"
 	1020.1.2={
 		birth="1020.1.2"
 	}
@@ -4454,7 +4454,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="flamboyant_schemer"
+	trait="flamboyant_schemer"
 	985.1.2={
 		birth="985.1.2"
 	}
@@ -4472,7 +4472,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="irish"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	father=916
 	1001.1.2={
 		birth="1001.1.2"
@@ -4491,9 +4491,9 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="arbitrary"
-	add_trait="gluttonous"
-	add_trait="martial_cleric"
+	trait="arbitrary"
+	trait="gluttonous"
+	trait="martial_cleric"
 	father=916
 	1002.1.2={
 		birth="1002.1.2"
@@ -4512,9 +4512,9 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="honest"
-	add_trait="envious"
-	add_trait="martial_cleric"
+	trait="honest"
+	trait="envious"
+	trait="martial_cleric"
 	father=916
 	1004.1.2={
 		birth="1004.1.2"
@@ -4533,8 +4533,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="gluttonous"
-	add_trait="tough_soldier"
+	trait="gluttonous"
+	trait="tough_soldier"
 	father=959
 	1022.1.1={
 		birth="1022.1.1"
@@ -4553,8 +4553,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="lustful"
-	add_trait="thrifty_clerk"
+	trait="lustful"
+	trait="thrifty_clerk"
 	father=958
 	995.1.2={
 		birth="995.1.2"
@@ -4576,7 +4576,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	father=922
 	mother=901
 	1032.1.2={
@@ -4596,11 +4596,11 @@
 	stewardship=3
 	religion="catholic"
 	culture="irish"
-	add_trait="lustful"
-	add_trait="honest"
-	add_trait="humble"
-	add_trait="temperate"
-	add_trait="misguided_warrior"
+	trait="lustful"
+	trait="honest"
+	trait="humble"
+	trait="temperate"
+	trait="misguided_warrior"
 	father=922
 	mother=901
 	1025.1.2={
@@ -4624,8 +4624,8 @@
 	stewardship=3
 	religion="catholic"
 	culture="irish"
-	add_trait="cynical"
-	add_trait="amateurish_plotter"
+	trait="cynical"
+	trait="amateurish_plotter"
 	1026.1.2={
 		birth="1026.1.2"
 	}
@@ -4644,7 +4644,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	1031.1.2={
 		birth="1031.1.2"
 	}
@@ -4662,7 +4662,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=939
 	1004.1.2={
 		birth="1004.1.2"
@@ -4681,7 +4681,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="irish"
-	add_trait="underhanded_rogue"
+	trait="underhanded_rogue"
 	father=927
 	1038.1.2={
 		birth="1038.1.2"
@@ -4700,8 +4700,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="irish"
-	add_trait="harelip"
-	add_trait="thrifty_clerk"
+	trait="harelip"
+	trait="thrifty_clerk"
 	father=83114
 	1030.1.2={
 		birth="1030.1.2"
@@ -4720,7 +4720,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="flamboyant_schemer"
+	trait="flamboyant_schemer"
 	father=927
 	1030.1.2={
 		birth="1030.1.2"
@@ -4740,7 +4740,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="irish"
-	add_trait="thrifty_clerk"
+	trait="thrifty_clerk"
 	father=927
 	1036.1.2={
 		birth="1036.1.2"
@@ -4760,7 +4760,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=940
 	935.1.2={
 		birth="935.1.2"
@@ -4780,7 +4780,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=942
 	900.1.2={
 		birth="900.1.2"
@@ -4799,7 +4799,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=943
 	880.1.2={
 		birth="880.1.2"
@@ -4818,7 +4818,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=944
 	mother=165016
 	851.1.2={
@@ -4839,7 +4839,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=945
 	mother=165011 #Gormflaith ingen Donncadha Midi
 	831.1.2={
@@ -4872,7 +4872,7 @@
 	stewardship=9
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father = 7275
 	785.1.2={
 		birth="785.1.2"
@@ -4894,7 +4894,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=945
 	840.1.2={
 		birth="840.1.2"
@@ -4913,7 +4913,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=946
 	860.1.2={
 		birth="860.1.2"
@@ -4932,7 +4932,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=947
 	879.1.2={
 		birth="879.1.2"
@@ -4951,7 +4951,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=948
 	938.1.2={
 		birth="938.1.2"
@@ -5010,7 +5010,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=951
 	940.1.1={
 		birth="940.1.1"
@@ -5029,7 +5029,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=953
 	969.1.1={
 		birth="969.1.1"
@@ -5048,7 +5048,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=956
 	979.1.1={
 		birth="979.1.1"
@@ -5068,7 +5068,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=958
 	1004.1.1={
 		birth="1004.1.1"
@@ -5157,8 +5157,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="temperate"
-	add_trait="flamboyant_schemer"
+	trait="temperate"
+	trait="flamboyant_schemer"
 	father = 83598
 	831.1.1={
 		birth="831.1.1"
@@ -5180,8 +5180,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="charismatic_negotiator"
-	add_trait="tough_soldier"
+	trait="charismatic_negotiator"
+	trait="tough_soldier"
 	father=83016
 	865.1.1={
 		birth="865.1.1"
@@ -5200,9 +5200,9 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="temperate"
-	add_trait="slothful"
-	add_trait="skilled_tactician"
+	trait="temperate"
+	trait="slothful"
+	trait="skilled_tactician"
 	father=83016
 	869.1.1={
 		birth="869.1.1"
@@ -5221,7 +5221,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=83017
 	885.1.1={
 		birth="885.1.1"
@@ -5240,7 +5240,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=83019
 	935.1.1={
 		birth="935.1.1"
@@ -5259,7 +5259,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=83019
 	939.1.1={
 		birth="939.1.1"
@@ -5296,8 +5296,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="charitable"
-	add_trait="tough_soldier"
+	trait="charitable"
+	trait="tough_soldier"
 	father=83022
 	969.1.1={
 		birth="969.1.1"
@@ -5319,7 +5319,7 @@
 	stewardship=8
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=83023
 	990.1.1={
 		birth="990.1.1"
@@ -5393,7 +5393,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=83027
 	1032.1.1={
 		birth="1032.1.1"
@@ -5412,7 +5412,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=83027
 	1034.1.1={
 		birth="1034.1.1"
@@ -5431,7 +5431,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=83028
 	1052.1.1={
 		birth="1052.1.1"
@@ -5488,7 +5488,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=83031
 	1148.1.1={
 		birth="1148.1.1"
@@ -5508,7 +5508,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father = 83594
 	901.1.1={
 		birth="901.1.1"
@@ -5530,7 +5530,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=83034
 	920.1.1={
 		birth="920.1.1"
@@ -5644,7 +5644,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=83040
 	1004.1.1={
 		birth="1004.1.1"
@@ -5902,9 +5902,9 @@
 	stewardship=8
 	religion="catholic"
 	culture="irish"
-	add_trait="ambitious"
-	add_trait="fortune_builder"
-	add_trait="underhanded_rogue"
+	trait="ambitious"
+	trait="fortune_builder"
+	trait="underhanded_rogue"
 	1150.1.1={
 		birth="1150.1.1"
 	}
@@ -5922,9 +5922,9 @@
 	stewardship=8
 	religion="catholic"
 	culture="irish"
-	add_trait="charismatic_negotiator"
-	add_trait="cynical"
-	add_trait="diligent"
+	trait="charismatic_negotiator"
+	trait="cynical"
+	trait="diligent"
 	father=83055
 	1180.1.1={
 		birth="1180.1.1"
@@ -5943,7 +5943,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="misguided_warrior"
+	trait="misguided_warrior"
 	father=83056
 	1205.1.1={
 		birth="1205.1.1"
@@ -5998,7 +5998,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="craven"
+	trait="craven"
 	father=83054
 	1188.1.1={
 		birth="1188.1.1"
@@ -6017,8 +6017,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="greedy"
-	add_trait="lustful"
+	trait="greedy"
+	trait="lustful"
 	father=83059
 	1265.1.1={
 		birth="1265.1.1"
@@ -6038,9 +6038,9 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="amateurish_plotter"
-	add_trait="humble"
-	add_trait="lisp"
+	trait="amateurish_plotter"
+	trait="humble"
+	trait="lisp"
 	father=83059
 	1263.1.1={
 		birth="1263.1.1"
@@ -6241,8 +6241,8 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="humble"
-	add_trait="amateurish_plotter"
+	trait="humble"
+	trait="amateurish_plotter"
 	father=83110
 	1148.1.11={
 		birth="1148.1.11"
@@ -6280,10 +6280,10 @@
 	stewardship=2
 	religion="catholic"
 	culture="irish"
-	add_trait="clubfooted"
-	add_trait="craven"
-	add_trait="gluttonous"
-	add_trait="slothful"
+	trait="clubfooted"
+	trait="craven"
+	trait="gluttonous"
+	trait="slothful"
 	father=83073
 	1027.1.1={
 		birth="1027.1.1"
@@ -6302,8 +6302,8 @@
 	stewardship=3
 	religion="catholic"
 	culture="irish"
-	add_trait="craven"
-	add_trait="harelip"
+	trait="craven"
+	trait="harelip"
 	father=83074
 	1045.1.1={
 		birth="1045.1.1"
@@ -6340,7 +6340,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="slothful"
+	trait="slothful"
 	father=83076
 	1087.1.1={
 		birth="1087.1.1"
@@ -6359,7 +6359,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="diligent"
+	trait="diligent"
 	father=83077
 	1109.1.1={
 		birth="1109.1.1"
@@ -6378,8 +6378,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="brave"
-	add_trait="proud"
+	trait="brave"
+	trait="proud"
 	father=83078
 	1135.1.1={
 		birth="1135.1.1"
@@ -6398,8 +6398,8 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="brave"
-	add_trait="tough_soldier"
+	trait="brave"
+	trait="tough_soldier"
 	father=83079
 	1160.1.1={
 		birth="1160.1.1"
@@ -6418,9 +6418,9 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="cynical"
-	add_trait="honest"
-	add_trait="lustful"
+	trait="cynical"
+	trait="honest"
+	trait="lustful"
 	father=83079
 	1164.1.1={
 		birth="1164.1.1"
@@ -6439,7 +6439,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=83080
 	1200.1.1={
 		birth="1200.1.1"
@@ -6459,12 +6459,12 @@
 	religion="catholic"
 	culture="irish"
 	father=83081
-	add_trait="ambitious"
-	add_trait="brave"
-	add_trait="charismatic_negotiator"
-	add_trait="flamboyant_schemer"
-	add_trait="misguided_warrior"
-	add_trait="proud"
+	trait="ambitious"
+	trait="brave"
+	trait="charismatic_negotiator"
+	trait="flamboyant_schemer"
+	trait="misguided_warrior"
+	trait="proud"
 	1211.1.1={
 		birth="1211.1.1"
 	}
@@ -6591,7 +6591,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="hunchback"
+	trait="hunchback"
 	father=83087
 	1253.1.1={
 		birth="1253.1.1"
@@ -6719,8 +6719,8 @@
 	religion="catholic"
 	culture="irish"
 	father=83083
-	add_trait="lustful"
-	add_trait="wroth"
+	trait="lustful"
+	trait="wroth"
 	1242.1.1={
 		birth="1242.1.1"
 	}
@@ -6936,7 +6936,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="wroth"
+	trait="wroth"
 	father=214008
 	1128.1.1={
 		birth="1128.1.1"
@@ -6955,7 +6955,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="gluttonous"
+	trait="gluttonous"
 	father=214008
 	1132.1.1={
 		birth="1132.1.1"
@@ -6974,8 +6974,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="humble"
-	add_trait="temperate"
+	trait="humble"
+	trait="temperate"
 	father=214008
 	1136.1.1={
 		birth="1136.1.1"
@@ -7012,8 +7012,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="humble"
-	add_trait="temperate"
+	trait="humble"
+	trait="temperate"
 	father=214008
 	1136.1.1={
 		birth="1136.1.1"
@@ -7501,7 +7501,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=6119 #Máel Sechlainn Bán
 	1065.1.2={
 		birth="1065.1.2"
@@ -9259,8 +9259,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="irish"
-	add_trait="just"
-	add_trait="skilled_tactician"
+	trait="just"
+	trait="skilled_tactician"
 	father=214550
 	mother=214551
 	1141.1.2={
@@ -9286,7 +9286,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="zealous"
+	trait="zealous"
 	father=907
 	1082.1.1={
 		birth="1082.1.1"
@@ -10127,11 +10127,11 @@
 	stewardship=9
 	religion="catholic"
 	culture="irish"
-	add_trait="cynical"
-	add_trait="lustful"
-	add_trait="proud"
-	add_trait="tough_soldier"
-	add_trait="zealous"
+	trait="cynical"
+	trait="lustful"
+	trait="proud"
+	trait="tough_soldier"
+	trait="zealous"
 	father=83294
 	1336.1.1={
 		birth="1336.1.1"
@@ -10245,7 +10245,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	father = 913 #Diarmait son of Toirrdelbach
 	1106.1.1={
 		birth="1106.1.1"
@@ -10607,7 +10607,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=902 #Donnchad son Brian Bóruma
 	1027.1.1={
 		birth="1027.1.1"
@@ -10626,7 +10626,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=902 #Donnchad son Brian Bóruma
 	1029.1.1={
 		birth="1029.1.1"
@@ -10645,7 +10645,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=83355 #Murchad son of Donnchad son of Brian Bóruma
 	1048.1.1={
 		birth="1048.1.1"
@@ -10664,7 +10664,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=83356 #Lorcán son of Donnchad
 	1047.1.1={
 		birth="1047.1.1"
@@ -10683,7 +10683,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=83356 #Lorcán son of Donnchad
 	1049.1.1={
 		birth="1049.1.1"
@@ -10793,8 +10793,8 @@
 	stewardship=2
 	religion="catholic"
 	culture="irish"
-	add_trait="charitable"
-	add_trait="indulgent_wastrel"
+	trait="charitable"
+	trait="indulgent_wastrel"
 	father=454146
 	1320.1.1={
 		birth="1320.1.1"
@@ -10944,7 +10944,7 @@
 	religion="catholic"
 	culture="irish"
 	father=83388
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	954.1.1={
 		birth="954.1.1"
 	}
@@ -12162,7 +12162,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="skilled_tactician"
+	trait="skilled_tactician"
 	father = 911 #Ruaidrí na Saide Buide
 	1061.1.1={
 		birth="1061.1.1"
@@ -12181,7 +12181,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="skilled_tactician"
+	trait="skilled_tactician"
 	father = 911 #Ruaidrí na Saide Buide
 	1063.1.1={
 		birth="1063.1.1"
@@ -12255,7 +12255,7 @@
 	religion="catholic"
 	culture="irish"
 	father=214520 #Toirrdelbach mac Ruaidrí
-	add_trait="skilled_tactician"
+	trait="skilled_tactician"
 	1143.1.1={
 		birth="1143.1.1"
 	}
@@ -12327,8 +12327,8 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="charitable"
-	add_trait="martial_cleric"
+	trait="charitable"
+	trait="martial_cleric"
 	father=214520 #Toirrdelbach mac Ruaidrí
 	1151.1.1={
 		birth="1151.1.1"
@@ -12348,7 +12348,7 @@
 	religion="catholic"
 	culture="irish"
 	father=83462 #Cathal Crobderg
-	add_trait="skilled_tactician"
+	trait="skilled_tactician"
 	1193.1.1={
 		birth="1193.1.1"
 	}
@@ -12367,7 +12367,7 @@
 	religion="catholic"
 	culture="irish"
 	father=83462 #Cathal Crobderg
-	add_trait="skilled_tactician"
+	trait="skilled_tactician"
 	1195.1.1={
 		birth="1195.1.1"
 	}
@@ -12475,8 +12475,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="zealous"
-	add_trait="mastermind_theologian"
+	trait="zealous"
+	trait="mastermind_theologian"
 	father=83461 #Áed Dall
 	1154.1.1={
 		birth="1154.1.1"
@@ -12549,8 +12549,8 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="chaste"
-	add_trait="mastermind_theologian"
+	trait="chaste"
+	trait="mastermind_theologian"
 	father=83476
 	1205.1.1={
 		birth="1205.1.1"
@@ -12788,8 +12788,8 @@
 	stewardship=3
 	religion="catholic"
 	culture="irish"
-	add_trait="charitable"
-	add_trait="martial_cleric"
+	trait="charitable"
+	trait="martial_cleric"
 	father=83466 #Máel-Íosa co-arb of Roscommon
 	1191.1.1={
 		birth="1191.1.1"
@@ -12844,7 +12844,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	father=83465 #Muirchertach Muimnech
 	1193.1.1={
 		birth="1193.1.1"
@@ -12881,7 +12881,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="martial_cleric"
+	trait="martial_cleric"
 	father=83492 #Magnus mac Muirchertaig Ua Conchobair
 	1220.1.1={
 		birth="1220.1.1"
@@ -13028,7 +13028,7 @@
 	religion="catholic"
 	culture="irish"
 	father=83468 #Fedlimid mac Cathail Chrobdeirg
-	add_trait="skilled_tactician"
+	trait="skilled_tactician"
 	1223.1.1={
 		birth="1223.1.1"
 	}
@@ -13047,8 +13047,8 @@
 	religion="catholic"
 	culture="irish"
 	father=83468 #Fedlimid mac Cathail Chrobdeirg
-	add_trait="skilled_tactician"
-	add_trait="bastard"
+	trait="skilled_tactician"
+	trait="bastard"
 	1227.1.1={
 		birth="1227.1.1"
 	}
@@ -13067,7 +13067,7 @@
 	religion="catholic"
 	culture="irish"
 	father=83467 #Áed mac Cathail Chrobdeirg
-	add_trait="hunchback"
+	trait="hunchback"
 	1214.1.1={
 		birth="1214.1.1"
 	}
@@ -13085,7 +13085,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="lisp"
+	trait="lisp"
 	father=83467 #Áed mac Cathail Chrobdeirg
 	1216.1.1={
 		birth="1216.1.1"
@@ -13105,7 +13105,7 @@
 	religion="catholic"
 	culture="irish"
 	father=83467 #Áed mac Cathail Chrobdeirg
-	add_trait="lisp"
+	trait="lisp"
 	1218.1.1={
 		birth="1218.1.1"
 	}
@@ -13124,8 +13124,8 @@
 	religion="catholic"
 	culture="irish"
 	father=83467 #Áed mac Cathail Chrobdeirg
-	add_trait="greedy"
-	add_trait="skilled_tactician"
+	trait="greedy"
+	trait="skilled_tactician"
 	1220.1.1={
 		birth="1220.1.1"
 	}
@@ -13162,8 +13162,8 @@
 	religion="catholic"
 	culture="irish"
 	father=83509 #Toirrdelbach mac Áeda Ua Conchobair king of Connaught
-	add_trait="greedy"
-	add_trait="skilled_tactician"
+	trait="greedy"
+	trait="skilled_tactician"
 	1253.1.1={
 		birth="1253.1.1"
 	}
@@ -13200,7 +13200,7 @@
 	religion="catholic"
 	culture="irish"
 	father=83508 #Ruaidrí mac Áeda Ua Conchobair
-	add_trait="lisp"
+	trait="lisp"
 	1238.1.1={
 		birth="1238.1.1"
 	}
@@ -13681,7 +13681,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="detached_priest"
+	trait="detached_priest"
 	father=214022 #Tigearnan Mór Ua Ruairc
 	mother=83159
 	1138.1.1={
@@ -14097,8 +14097,8 @@
 	stewardship=8
 	religion="catholic"
 	culture="irish"
-	add_trait="lustful"
-	add_trait="tough_soldier"
+	trait="lustful"
+	trait="tough_soldier"
 	father=83561 #Art son of Domnall son of Fergal
 	1202.1.1={
 		birth="1202.1.1"
@@ -14438,7 +14438,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	840.1.2={
 		birth="840.1.2"
 	}
@@ -14459,7 +14459,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=165004 #Flannacán mac Cellach
 	877.1.1={
 		birth="877.1.1"
@@ -14479,7 +14479,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=165004 #Flannacán mac Cellach
 	mother=165001 #Eithne ingen Áed Findliath
 	881.1.1={
@@ -14502,7 +14502,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=165006 #Máel Mithig mac Flannacán
 	mother=165003 #Lígach ingen Flann Sinna
 	901.1.2={
@@ -14545,7 +14545,7 @@
 		birth="876.1.1"
 	}
 	919.1.1={
-		add_trait = "blinded"
+		trait = "blinded"
 	}
 	925.1.1={
 		death="925.1.1"
@@ -14592,7 +14592,7 @@
 	female=yes
 	religion="catholic"
 	culture="irish"
-	add_trait="fair"
+	trait="fair"
 	father=7274
 	780.1.1={
 		birth="780.1.1"
@@ -14627,7 +14627,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	811.1.1={
 		birth="811.1.1"
 	}
@@ -14649,7 +14649,7 @@
 	stewardship=3
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=165013 #Conaing mac Flainn
 	mother=165012 #Gormflaith ingen Niall Callie
 	833.1.1={
@@ -14670,7 +14670,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=165013 #Conaing mac Flainn
 	mother=165012 #Gormflaith ingen Niall Callie
 	838.1.1={
@@ -14723,7 +14723,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	father=944
 	mother=131507 #Lann ingen mac Dúnlainge
 	866.1.1={
@@ -14778,7 +14778,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	add_trait="intricate_webweaver"
+	trait="intricate_webweaver"
 	father=5790
 	mother=166102
 	970.1.1={
@@ -14801,7 +14801,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=1025
 	mother=1026
 	1000.1.1={
@@ -14825,7 +14825,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="flamboyant_schemer"
+	trait="flamboyant_schemer"
 	father=1027
 	mother=1028
 	1018.1.1={
@@ -14866,7 +14866,7 @@
 	dynasty=1040000
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=166000
 	534.1.1={
 		birth="534.1.1"
@@ -15068,7 +15068,7 @@
 	dynasty=1040001
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=166011
 	692.1.1={
 		birth="692.1.1"
@@ -15185,7 +15185,7 @@
 	dynasty=1040001
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=166023
 	815.1.1={
 		birth="815.1.1"
@@ -15261,7 +15261,7 @@
 	dynasty=1040001
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=166027
 	mother=131507 #Lann ingen mac Dúnlainge
 	880.1.1={
@@ -15276,7 +15276,7 @@
 	dynasty=1040001
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=166033
 	850.1.1={
 		birth="850.1.1"
@@ -15303,7 +15303,7 @@
 	dynasty=1040001
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=166033
 	860.1.1={
 		birth="860.1.1"
@@ -15483,7 +15483,7 @@
 	dynasty=199
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=131503
 	mother=166055
 	904.1.1={
@@ -15503,7 +15503,7 @@
 	stewardship=2
 	religion="catholic"
 	culture="irish"
-	add_trait="lustful"
+	trait="lustful"
 	father=131503
 	mother=166055
 	906.1.1={
@@ -15572,7 +15572,7 @@
 	religion="catholic"
 	culture="irish"
 	father=83453
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	858.1.1={
 		birth="858.1.1"
 	}
@@ -15592,7 +15592,7 @@
 	religion="catholic"
 	culture="irish"
 	father=166061
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	882.1.1={
 		birth="882.1.1"
 	}
@@ -15658,7 +15658,7 @@
 	culture="irish"
 	father=83387
 	mother=166064
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	932.1.1={
 		birth="932.1.1"
 	}
@@ -16181,7 +16181,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	911.1.1={
 		birth="911.1.1"
 	}
@@ -16200,8 +16200,8 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
-	add_trait="intricate_webweaver"
+	trait="tough_soldier"
+	trait="intricate_webweaver"
 	father=166100
 	951.1.1={
 		birth="951.1.1"
@@ -16220,8 +16220,8 @@
 	dynasty=690
 	religion="catholic"
 	culture="irish"
-	add_trait="fair"
-	add_trait="intricate_webweaver"
+	trait="fair"
+	trait="intricate_webweaver"
 	father=166100
 	953.1.1={
 		birth="953.1.1"
@@ -16239,7 +16239,7 @@
 	culture="irish"
 	father=5790
 	mother=131520
-	add_trait="fair"
+	trait="fair"
 	977.1.1={
 		birth="977.1.1"
 	}
@@ -16257,7 +16257,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father = 131505
 	mother=166102
 	982.6.1={
@@ -16277,7 +16277,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father = 131505
 	mother=166102
 	985.1.1={
@@ -16297,7 +16297,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father = 131505
 	mother=166102
 	990.1.1={
@@ -16317,7 +16317,7 @@
 	stewardship=6
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father = 131505
 	mother=166103
 	1001.1.1={
@@ -16337,7 +16337,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father = 131505
 	mother=166103
 	1005.1.1={
@@ -16353,7 +16353,7 @@
 	dynasty=14116
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	859.1.1={
 		birth="859.1.1"
 	}
@@ -16367,7 +16367,7 @@
 	dynasty=14116
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=166109
 	887.1.1={
 		birth="887.1.1"
@@ -16382,7 +16382,7 @@
 	dynasty=14116
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=166110
 	915.1.1={
 		birth="915.1.1"
@@ -16397,7 +16397,7 @@
 	dynasty=14116
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=166111
 	943.1.1={
 		birth="943.1.1"
@@ -16412,7 +16412,7 @@
 	dynasty=14116
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=166111
 	954.1.1={
 		birth="954.1.1"
@@ -16427,7 +16427,7 @@
 	dynasty=14116
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=166112
 	972.1.1={
 		birth="972.1.1"
@@ -16442,7 +16442,7 @@
 	dynasty=14116
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=166712
 	972.1.1={
 		birth="972.1.1"
@@ -16476,7 +16476,7 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=900
 	mother=166116
 	975.1.1={
@@ -16496,7 +16496,7 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=900
 	mother=166116
 	980.1.1={
@@ -16513,7 +16513,7 @@
 	dynasty=695
 	religion="catholic"
 	culture="irish"
-	add_trait="fair"
+	trait="fair"
 	father=900
 	mother=166116
 	970.1.1={
@@ -16531,7 +16531,7 @@
 	father=83712 #Bran son of Cian
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	933.1.1={
 		birth="933.1.1"
 	}
@@ -16545,7 +16545,7 @@
 	dynasty=9228
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=166120
 	960.1.1={
 		birth="960.1.1"
@@ -16563,7 +16563,7 @@
 	dynasty=1040007
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	926.1.1={
 		birth="926.1.1"
 	}
@@ -16659,7 +16659,7 @@
 	dynasty=695
 	religion="catholic"
 	culture="irish"
-	add_trait="fair"
+	trait="fair"
 	father=900
 	mother=166116
 	962.9.1={
@@ -16724,10 +16724,10 @@
 	culture="irish"
 	father = 166129
 	mother = 166130
-	add_trait="chaste"
-	add_trait="diligent"
-	add_trait="brave"
-	add_trait="mastermind_theologian"
+	trait="chaste"
+	trait="diligent"
+	trait="brave"
+	trait="mastermind_theologian"
 	521.12.7={
 		birth="521.12.7"
 	}
@@ -16743,7 +16743,7 @@
 	martial=7
 	religion="catholic"
 	culture="irish"
-	add_trait="tough_soldier"
+	trait="tough_soldier"
 	father=159339
 	320.1.1={
 		birth="320.1.1"
@@ -19744,10 +19744,10 @@
 	dynasty=199
 	religion="catholic"
 	culture="irish"
-	add_trait="chaste"
-	add_trait="humble"
-	add_trait="temperate"
-	add_trait="mastermind_theologian"
+	trait="chaste"
+	trait="humble"
+	trait="temperate"
+	trait="mastermind_theologian"
 	father=166334
 	536.1.1={
 		birth="536.1.1"
@@ -19777,10 +19777,10 @@
 	dynasty=199
 	religion="catholic"
 	culture="irish"
-	add_trait="chaste"
-	add_trait="kind"
-	add_trait="just"
-	add_trait="scholarly_theologian"
+	trait="chaste"
+	trait="kind"
+	trait="just"
+	trait="scholarly_theologian"
 	father = 166336
 	540.1.1={
 		birth="540.1.1"
@@ -19794,7 +19794,7 @@
 	name="Fergno-Britt"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	555.1.1={
 		birth="555.1.1"
 	}
@@ -19822,7 +19822,7 @@
 	dynasty=199
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	father=166339
 	581.1.1={
 		birth="581.1.1"
@@ -19836,7 +19836,7 @@
 	name="Suibne"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	594.1.1={
 		birth="594.1.1"
 	}
@@ -19864,7 +19864,7 @@
 	dynasty=199
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	father=166342
 	602.1.1={
 		birth="602.1.1"
@@ -19921,7 +19921,7 @@
 	dynasty=199
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	father = 166346
 	614.1.1={
 		birth="614.1.1"
@@ -19996,10 +19996,10 @@
 	dynasty=199
 	religion="catholic"
 	culture="irish"
-	add_trait="chaste"
-	add_trait="diligent"
-	add_trait="patient"
-	add_trait="mastermind_theologian"
+	trait="chaste"
+	trait="diligent"
+	trait="patient"
+	trait="mastermind_theologian"
 	father = 166350
 	mother = 166351
 	627.1.1={
@@ -20198,7 +20198,7 @@
 	dynasty=199
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	father = 166365
 	642.1.1={
 		birth="642.1.1"
@@ -20283,7 +20283,7 @@
 	dynasty=199
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	father = 166371
 	654.1.1={
 		birth="654.1.1"
@@ -20297,7 +20297,7 @@
 	name="Dorbbéne"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	650.1.1={
 		birth="650.1.1"
 	}
@@ -20310,7 +20310,7 @@
 	name="Fáelchú"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	661.1.1={
 		birth="661.1.1"
 	}
@@ -20323,7 +20323,7 @@
 	name="Fedelmid"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	680.1.1={
 		birth="680.1.1"
 	}
@@ -20336,7 +20336,7 @@
 	name="Cilléne-Fota"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	665.1.1={
 		birth="665.1.1"
 	}
@@ -20349,7 +20349,7 @@
 	name="Cilléne-Droichtech"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	693.1.1={
 		birth="693.1.1"
 	}
@@ -20362,7 +20362,7 @@
 	name="Sléibíne"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	702.1.1={
 		birth="702.1.1"
 	}
@@ -20375,7 +20375,7 @@
 	name="Suibne"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	730.1.1={
 		birth="730.1.1"
 	}
@@ -20388,7 +20388,7 @@
 	name="Bresal"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	741.1.1={
 		birth="741.1.1"
 	}
@@ -20401,7 +20401,7 @@
 	name="Connachtach"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	752.1.1={
 		birth="752.1.1"
 	}
@@ -20414,7 +20414,7 @@
 	name="Cellach"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	774.1.1={
 		birth="774.1.1"
 	}
@@ -20427,7 +20427,7 @@
 	name="Diarmait"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	765.1.1={
 		birth="765.1.1"
 	}
@@ -20440,8 +20440,8 @@
 	name="Blathmac"
 	religion="catholic"
 	culture="irish"
-	add_trait="chaste"
-	add_trait="mastermind_theologian"
+	trait="chaste"
+	trait="mastermind_theologian"
 	750.1.1={
 		birth="750.1.1"
 	}
@@ -20455,9 +20455,9 @@
 	name="Indrechtach"
 	religion="catholic"
 	culture="irish"
-	add_trait="chaste"
-	add_trait="brave"
-	add_trait="mastermind_theologian"
+	trait="chaste"
+	trait="brave"
+	trait="mastermind_theologian"
 	792.1.1={
 		birth="792.1.1"
 	}
@@ -20471,7 +20471,7 @@
 	name="Cellach"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	801.1.1={
 		birth="801.1.1"
 	}
@@ -20484,7 +20484,7 @@
 	name="Feradach"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	813.1.1={
 		birth="813.1.1"
 	}
@@ -20497,7 +20497,7 @@
 	name="Flann"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	826.1.1={
 		birth="826.1.1"
 	}
@@ -20510,7 +20510,7 @@
 	name="Máel-Brigte"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	854.1.1={
 		birth="854.1.1"
 	}
@@ -20523,7 +20523,7 @@
 	name="Dubthach"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	873.1.1={
 		birth="873.1.1"
 	}
@@ -20536,7 +20536,7 @@
 	name="Cáenchomrac"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	876.1.1={
 		birth="876.1.1"
 	}
@@ -20549,7 +20549,7 @@
 	name="Robartach"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	885.1.1={
 		birth="885.1.1"
 	}
@@ -20562,7 +20562,7 @@
 	name="Dub-Dúin"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	889.1.1={
 		birth="889.1.1"
 	}
@@ -20575,7 +20575,7 @@
 	name="Dub-Scoile"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	896.1.1={
 		birth="896.1.1"
 	}
@@ -20588,7 +20588,7 @@
 	name="Mugrón"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	908.1.1={
 		birth="908.1.1"
 	}
@@ -20601,9 +20601,9 @@
 	name="Máel-Ciaráin"
 	religion="catholic"
 	culture="irish"
-	add_trait="chaste"
-	add_trait="brave"
-	add_trait="mastermind_theologian"
+	trait="chaste"
+	trait="brave"
+	trait="mastermind_theologian"
 	932.1.1={
 		birth="932.1.1"
 	}
@@ -20617,7 +20617,7 @@
 	name="Dúnchad"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	926.1.1={
 		birth="926.1.1"
 	}
@@ -20630,7 +20630,7 @@
 	name="Dub-dá-Leithe"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	933.1.1={
 		birth="933.1.1"
 	}
@@ -20643,7 +20643,7 @@
 	name="Máel-Brigte"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	957.1.1={
 		birth="957.1.1"
 	}
@@ -20656,7 +20656,7 @@
 	name="Muiredach"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	961.1.1={
 		birth="961.1.1"
 	}
@@ -20669,7 +20669,7 @@
 	name="Ferdomnach"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	958.1.1={
 		birth="958.1.1"
 	}
@@ -20682,7 +20682,7 @@
 	name="Máel-Muire"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	965.1.1={
 		birth="965.1.1"
 	}
@@ -20695,7 +20695,7 @@
 	name="Flandabra"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	973.1.1={
 		birth="973.1.1"
 	}
@@ -20708,7 +20708,7 @@
 	name="Máel-Eóin"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	970.1.1={
 		birth="970.1.1"
 	}
@@ -20721,7 +20721,7 @@
 	name="Máel-Muire"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	974.1.1={
 		birth="974.1.1"
 	}
@@ -20734,7 +20734,7 @@
 	name="Robartach"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	1002.1.1={
 		birth="1002.1.1"
 	}
@@ -20747,7 +20747,7 @@
 	name="Gilla-Críst"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	1017.1.1={
 		birth="1017.1.1"
 	}
@@ -20760,7 +20760,7 @@
 	name="Mac-Meic-Báethéne"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	1034.1.1={
 		birth="1034.1.1"
 	}
@@ -20773,7 +20773,7 @@
 	name="Domnall"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	1056.1.1={
 		birth="1056.1.1"
 	}
@@ -20786,7 +20786,7 @@
 	name="Donnchad"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	1047.1.1={
 		birth="1047.1.1"
 	}
@@ -20799,7 +20799,7 @@
 	name="Ferdomnach"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	1063.1.1={
 		birth="1063.1.1"
 	}
@@ -20812,7 +20812,7 @@
 	name="Máel-Brigte"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	1067.1.1={
 		birth="1067.1.1"
 	}
@@ -20825,7 +20825,7 @@
 	name="Conaing"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	1080.1.1={
 		birth="1080.1.1"
 	}
@@ -20838,7 +20838,7 @@
 	name="Gilla-Adamnáin"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	1077.1.1={
 		birth="1077.1.1"
 	}
@@ -20851,7 +20851,7 @@
 	name="Gilla-Meic-Liac"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	1109.1.1={
 		birth="1109.1.1"
 	}
@@ -20864,7 +20864,7 @@
 	name="Muiredach"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	1083.1.1={
 		birth="1083.1.1"
 	}
@@ -20877,7 +20877,7 @@
 	name="Flaithbertach"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	1116.1.1={
 		birth="1116.1.1"
 	}
@@ -20890,7 +20890,7 @@
 	name="Gilla-Meic-Liac"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	1152.1.1={
 		birth="1152.1.1"
 	}
@@ -20903,7 +20903,7 @@
 	name="Gilla-Críst"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	1158.1.1={
 		birth="1158.1.1"
 	}
@@ -20916,7 +20916,7 @@
 	name="Fonachtan"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	1164.1.1={
 		birth="1164.1.1"
 	}
@@ -20929,7 +20929,7 @@
 	name="Flann"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	1187.1.1={
 		birth="1187.1.1"
 	}
@@ -20942,7 +20942,7 @@
 	name="Muichertach"
 	religion="catholic"
 	culture="irish"
-	add_trait="scholarly_theologian"
+	trait="scholarly_theologian"
 	1178.1.1={
 		birth="1178.1.1"
 	}
@@ -20961,7 +20961,7 @@
 		birth="1162.1.1"
 	}
 	1186.1.1={
-		add_trait=kinslayer
+		trait=kinslayer
 	}
 	1197.1.1={
 		death="1197.1.1"
@@ -21159,7 +21159,7 @@
 		birth="1025.1.1"
 	}
 	1051.1.1={
-		add_trait=blinded
+		trait=blinded
 	}
 	1075.1.1={
 		death="1075.1.1"

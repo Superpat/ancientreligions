@@ -360,7 +360,7 @@ character_event = {
 				}
 				FROM = { character_event = { id = ancrel.0041 } }
 			}
-			FROM = { character_event = { id = ancrel.0065 } }
+			FROM = { character_event = { id = ancrel.0103 } }
 		}
 	}
 }
@@ -517,7 +517,7 @@ character_event = {
 				}
 				FROM = { character_event = { id = ancrel.0041 } }
 			}
-			FROM = { character_event = { id = ancrel.0103 } }
+			FROM = { character_event = { id = ancrel.0104 } }
 		}
 	}
 }
@@ -674,7 +674,7 @@ character_event = {
 				}
 				FROM = { character_event = { id = ancrel.0041 } }
 			}
-			FROM = { character_event = { id = ancrel.0104 } }
+			FROM = { character_event = { id = ancrel.0105 } }
 		}
 	}
 }

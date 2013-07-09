@@ -26585,18 +26585,6 @@ e_britannia = {
 			norse = Dyflinn
 			irish = Tara
 			
-			pagan_coa = {
-				template = 0
-				layer = {
-					texture = 2
-					texture_internal = 3
-					emblem = 0
-					color = 0
-					color = 0
-					color = 0
-				}
-				religion = "norse_pagan"
-			}
 		
 			c_kildare = {
 				color={ 102 248 65 }

@@ -9420,11 +9420,11 @@ e_scandinavia = {
 				swedish = "Västisland"
 				
 				b_reykjavik = {
+					holy_site = gaelic_pagan
+					holy_site = gaelic_pagan_reformed
 				}
 				b_alftanes = {
 					swedish = "Alftanäs"
-					holy_site = gaelic_pagan
-					holy_site = gaelic_pagan_reformed
 				}
 				b_skalholt = {
 				}
@@ -19208,10 +19208,10 @@ e_france = {
 				b_josselin = {
 				}
 				b_st_gildas = {
-					holy_site = druidic
-					holy_site = druidic_reformed
 				}
 				b_locmine = {
+					holy_site = druidic
+					holy_site = druidic_reformed
 				}
 				b_hennebont = {
 				}
@@ -25346,14 +25346,14 @@ e_britannia = {
 				b_maldon = {
 				}
 				b_havering = {
-					holy_site = druidic
-					holy_site = druidic_reformed
 				}
 				b_dunmow = {
 				}
 				b_colchester = {
 				}
 				b_waltham = {
+					holy_site = druidic
+					holy_site = druidic_reformed
 				}
 				b_barking = {
 				}

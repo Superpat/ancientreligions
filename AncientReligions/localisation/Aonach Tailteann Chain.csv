@@ -37,7 +37,7 @@ EVTOPTDancrel.1199;I will treat everyone equaly;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTEancrel.1199;I will favor the crown;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTFancrel.1199;I will favor the fianna;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTGancrel.1199;I will favor the birds!;;;;;;;;;;;;;;;;;;;;;x
-give_laws_ollam;The Ollamh distribues the new laws to your vassals;L'Ollamh distribu les nouvelles lois à tes vassaux.;The Ollamh distribues the new laws to your vassals;;The Ollamh distribues the new laws to your vassals;;;;;;;;;;;;;;;;;;;;;x
+give_laws_ollam;The Ollamh distribues the new laws to your vassals\n;L'Ollamh distribu les nouvelles lois à tes vassaux.\n;The Ollamh distribues the new laws to your vassals\n;;The Ollamh distribues the new laws to your vassals\n;;;;;;;;;;;;;;;;;;;;;x
 favored_warriors;Favors the Warrior caste;;;;;;;;;;;;;;;;;;;;;x
 favored_druids;Favors the Druidic caste;;;;;;;;;;;;;;;;;;;;;x
 favored_merchants;Favors the Merchant caste;;;;;;;;;;;;;;;;;;;;;x

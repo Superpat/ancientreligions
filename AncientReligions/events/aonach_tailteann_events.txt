@@ -302,11 +302,11 @@ character_event = {
 		name = EVTOPTAancrel.1199
 		custom_tooltip = give_laws_ollam
 		change_martial = 2
+		prestige = 150
 		add_character_modifier = {
 			name = favored_warriors
 			duration = 3650
 		}
-		prestige = 150
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_ruler
 			clr_character_flag = tailteann_death_phase
@@ -378,11 +378,11 @@ character_event = {
 		trigger = {
 			diplomacy = 12
 		}
+		custom_tooltip = give_laws_ollam
 		add_character_modifier = {
 			name = favored_balance
 			duration = 3650
 		}
-		custom_tooltip = give_laws_ollam
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_ruler
 			clr_character_flag = tailteann_death_phase

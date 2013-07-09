@@ -138,7 +138,7 @@ nominate_vestalis_decision;Nominate [Root.GetTitledFirstName] as Vestalis;;;;;;;
 nominate_vestalis_decision_desc;Nominate [Root.GetFirstName] for 30 years of dedicated service to the goddess Vesta.;;;;;;;;;;;;;;;;;;;;;;;x
 opinion_nominated_vestalis;Nominated a Vestalis;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESCancrel.2121;After 30 years of devoted service to Vesta the time has come for you to retire from public office.;;;;;;;;;;;;;;;;;;;;;;;;x
-EVTDESCancrel.2124;One of your vasals has nominated a child for service to Vesta.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.2124;One of your vassals has nominated a child for service to Vesta.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTAancrel.2124;Appoint her as Vestalis;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTBancrel.2124;I can find someone better;Vous pouvez trouver mieux.;Ich kann einen Besseren finden;;Puedo hallar a alguien mejor;;;;;;;;;x
-EVTOPTCancrel.2124;I'm affraid there is no opening in the College of the Vestales.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTCancrel.2124;I'm afraid there is no opening in the College of the Vestales.;;;;;;;;;;;;;;;;;;;;;;;;x

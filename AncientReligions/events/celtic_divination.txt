@@ -148,7 +148,7 @@ character_event = {
 character_event = {
 	id = ancrel.0024
 	desc = EVTDESCancrel.0024
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -196,7 +196,7 @@ character_event = {
 character_event = {
 	id = ancrel.0025
 	desc = EVTDESCancrel.0025
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -212,7 +212,7 @@ character_event = {
 character_event = {
 	id = ancrel.0026
 	desc = EVTDESCancrel.0026
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -369,7 +369,7 @@ character_event = {
 character_event = {
 	id = ancrel.0027
 	desc = EVTDESCancrel.0026
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -526,7 +526,7 @@ character_event = {
 character_event = {
 	id = ancrel.0028
 	desc = EVTDESCancrel.0026
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -683,7 +683,7 @@ character_event = {
 character_event = {
 	id = ancrel.0029
 	desc = EVTDESCancrel.0026
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -860,7 +860,7 @@ character_event = {
 character_event = {
 	id = ancrel.0030
 	desc = EVTDESCancrel.0030
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -893,7 +893,7 @@ character_event = {
 character_event = {
 	id = ancrel.0031
 	desc = EVTDESCancrel.0031
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -926,7 +926,7 @@ character_event = {
 character_event = {
 	id = ancrel.0032
 	desc = EVTDESCancrel.0032
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -959,7 +959,7 @@ character_event = {
 character_event = {
 	id = ancrel.0033
 	desc = EVTDESCancrel.0033
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -994,7 +994,7 @@ character_event = {
 character_event = {
 	id = ancrel.0034
 	desc = EVTDESCancrel.0034
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1029,7 +1029,7 @@ character_event = {
 character_event = {
 	id = ancrel.0035
 	desc = EVTDESCancrel.0035
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1064,7 +1064,7 @@ character_event = {
 character_event = {
 	id = ancrel.0036
 	desc = EVTDESCancrel.0036
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1099,7 +1099,7 @@ character_event = {
 character_event = {
 	id = ancrel.0037
 	desc = EVTDESCancrel.0037
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1134,7 +1134,7 @@ character_event = {
 character_event = {
 	id = ancrel.0038
 	desc = EVTDESCancrel.0038
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1169,7 +1169,7 @@ character_event = {
 character_event = {
 	id = ancrel.0039
 	desc = EVTDESCancrel.0039
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1202,7 +1202,7 @@ character_event = {
 character_event = {
 	id = ancrel.0040
 	desc = EVTDESCancrel.0040
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1235,7 +1235,7 @@ character_event = {
 character_event = {
 	id = ancrel.0041
 	desc = EVTDESCancrel.0041
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1268,7 +1268,7 @@ character_event = {
 character_event = {
 	id = ancrel.0042
 	desc = EVTDESCancrel.0042
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1290,7 +1290,7 @@ character_event = {
 character_event = {
 	id = ancrel.0043
 	desc = EVTDESCancrel.0043
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1312,7 +1312,7 @@ character_event = {
 character_event = {
 	id = ancrel.0044
 	desc = EVTDESCancrel.0044
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1334,7 +1334,7 @@ character_event = {
 character_event = {
 	id = ancrel.0045
 	desc = EVTDESCancrel.0045
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1356,7 +1356,7 @@ character_event = {
 character_event = {
 	id = ancrel.0046
 	desc = EVTDESCancrel.0046
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1378,7 +1378,7 @@ character_event = {
 character_event = {
 	id = ancrel.0047
 	desc = EVTDESCancrel.0047
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1400,7 +1400,7 @@ character_event = {
 character_event = {
 	id = ancrel.0048
 	desc = EVTDESCancrel.0048
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1422,7 +1422,7 @@ character_event = {
 character_event = {
 	id = ancrel.0049
 	desc = EVTDESCancrel.0049
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1444,7 +1444,7 @@ character_event = {
 character_event = {
 	id = ancrel.0050
 	desc = EVTDESCancrel.0050
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1466,7 +1466,7 @@ character_event = {
 character_event = {
 	id = ancrel.0051
 	desc = EVTDESCancrel.0051
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1488,7 +1488,7 @@ character_event = {
 character_event = {
 	id = ancrel.0052
 	desc = EVTDESCancrel.0052
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1510,7 +1510,7 @@ character_event = {
 character_event = {
 	id = ancrel.0053
 	desc = EVTDESCancrel.0053
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1532,7 +1532,7 @@ character_event = {
 character_event = {
 	id = ancrel.0054
 	desc = EVTDESCancrel.0054
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1574,7 +1574,7 @@ character_event = {
 character_event = {
 	id = ancrel.0055
 	desc = EVTDESCancrel.0055
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -1588,7 +1588,7 @@ character_event = {
 character_event = {
 	id = ancrel.0057
 	desc = EVTDESCancrel.0057
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -2080,7 +2080,7 @@ character_event = {
 character_event = {
 	id = ancrel.0100
 	desc = EVTDESCancrel.0100
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -2113,7 +2113,7 @@ character_event = {
 character_event = {
 	id = ancrel.0101
 	desc = EVTDESCancrel.0101
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -2146,7 +2146,7 @@ character_event = {
 character_event = {
 	id = ancrel.0102
 	desc = EVTDESCancrel.0102
-	picture = GFX_evt_oak_tree
+	picture = GFX_evt_druidic_sacrifice
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes

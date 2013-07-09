@@ -11,12 +11,12 @@
 # revoke_reason
 
 
-opinion_held_celtic_feast = {
+opinion_held_divination = {
 	opinion = 15
 	months = 12
 }
 
-opinion_refused_celtic_feast = {
+opinion_refused_divination = {
 	opinion = -15
 	months = 12
 }
@@ -28,7 +28,7 @@ opinion_tailteann_athlete = {
 	opinion = 20
 }
 
-opinion_tailteann_fighting = {
+opinion_tailteann_fighter = {
 	opinion = 20
 }
 

@@ -352,7 +352,7 @@ character_event = {
 		name = EVTOPTCancrel.1199
 		custom_tooltip = give_laws_ollam
 		change_stewardship = 2
-		cash = 100
+		wealth = 100
 		add_character_modifier = {
 			name = favored_merchants
 			duration = 3650
@@ -1036,7 +1036,7 @@ character_event = {
 		name = EVTOPTAancrel.1217
 		FROM = {
 			opinion = {
-				modifier = opinion_tailteann_fighting
+				modifier = opinion_tailteann_fighter
 				who = ROOT
 				years = 15
 			}

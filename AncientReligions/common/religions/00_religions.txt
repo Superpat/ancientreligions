@@ -1211,6 +1211,7 @@ pagan_group = {
 		max_consorts = 3
 		peace_prestige_loss = yes # Lose Prestige while at peace
 		raised_vassal_opinion_loss = no
+		reformer_head_of_religion = yes #make the character that reforms this religion the head of the new reformed faith
 		
 		reformed = gaelic_pagan_reformed
 		aggression = 1.5 # AI aggression factor

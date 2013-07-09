@@ -9410,6 +9410,9 @@ e_scandinavia = {
 			
 			capital = 1 # Vestisland
 			
+			irish = "Íoslainn"
+			scottish = "Íoslainn"
+			
 			c_vestisland = {
 				color={ 190 230 250 }
 				color2={ 220 220 220 }
@@ -9420,6 +9423,8 @@ e_scandinavia = {
 				}
 				b_alftanes = {
 					swedish = "Alftanäs"
+					holy_site = gaelic_pagan
+					holy_site = gaelic_pagan_reformed
 				}
 				b_skalholt = {
 				}
@@ -18320,8 +18325,6 @@ e_france = {
 				b_bonneval = {
 					holy_site = druidic
 					holy_site = druidic_reformed
-					holy_site = gaelic_pagan
-					holy_site = gaelic_pagan_reformed
 				}
 				b_tiron = {
 				}
@@ -19205,6 +19208,8 @@ e_france = {
 				b_josselin = {
 				}
 				b_st_gildas = {
+					holy_site = druidic
+					holy_site = druidic_reformed
 				}
 				b_locmine = {
 				}
@@ -20564,8 +20569,6 @@ e_spain = {
 				b_corunna = {
 				}
 				b_mondonedo = {
-					holy_site = druidic
-					holy_site = druidic_reformed
 					holy_site = gaelic_pagan
 					holy_site = gaelic_pagan_reformed
 				}
@@ -25343,6 +25346,8 @@ e_britannia = {
 				b_maldon = {
 				}
 				b_havering = {
+					holy_site = druidic
+					holy_site = druidic_reformed
 				}
 				b_dunmow = {
 				}
@@ -25727,8 +25732,6 @@ e_britannia = {
 				b_bangor_fawr = {
 					holy_site = druidic
 					holy_site = druidic_reformed
-					holy_site = gaelic_pagan
-					holy_site = gaelic_pagan_reformed
 				}
 				b_aberffraw = {
 					norwegian = Ongullsøy
@@ -25802,8 +25805,13 @@ e_britannia = {
 				b_dinefwr = {
 				}
 				b_st_davids = {
+					breton = Tydewwi
+					scottish = Tydewwi
+					irish = Tyddewi
 					welsh = Tyddewi
 					norwegian = "Ramsøy"
+					holy_site = gaelic_pagan
+					holy_site = gaelic_pagan_reformed
 				}
 				b_kidwelly = {
 					welsh = Cydweli
@@ -25949,8 +25957,6 @@ e_britannia = {
 				b_whithorn = {
 					holy_site = druidic
 					holy_site = druidic_reformed
-					holy_site = gaelic_pagan
-					holy_site = gaelic_pagan_reformed
 				}
 				b_dunrod = {
 				}
@@ -26044,6 +26050,8 @@ e_britannia = {
 				b_finlaggan = {
 				}
 				b_iona = {
+					holy_site = gaelic_pagan
+					holy_site = gaelic_pagan_reformed
 				}
 				b_stornoway = {
 					norwegian = "Stornavåg"
@@ -26631,8 +26639,6 @@ e_britannia = {
 				b_christ_church = {
 				}
 				b_mellifont = {
-					holy_site = druidic
-					holy_site = druidic_reformed
 					holy_site = gaelic_pagan
 					holy_site = gaelic_pagan_reformed
 				}
@@ -28707,22 +28713,23 @@ d_gaelic_pagan_reformed = {
 	
 	capital = 15 # Dublin
 	
-	title = "ARCH_DRUID"
-	title_female = "ARCH_DRUIDESSE"
-	foa = "ARCH_DRUID_FOA"
+	title = "HIGH_KING"
+	title_female = "HIGH_QUEEN"
+	foa = "HIGH_KING_FOA"
 	
 	short_name = yes
 	
-	# Always exists
-	landless = yes
+	allow = {
+		religion = gaelic_pagan_reformed
+		num_of_holy_sites = 3
+		religion_authority = 0.6
+		piety = 500
+	}
 	
 	# Controls a religion
 	controls_religion = gaelic_pagan_reformed
 	
 	religion = gaelic_pagan_reformed
-	
-	# Cannot be held as a secondary title
-	primary = yes
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }

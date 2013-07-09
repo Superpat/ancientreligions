@@ -304,7 +304,7 @@ character_event = {
 		change_martial = 2
 		add_character_modifier = {
 			name = favored_warriors
-			duration = 10
+			duration = 3650
 		}
 		prestige = 150
 		hidden_tooltip = {
@@ -330,7 +330,7 @@ character_event = {
 		piety = 100
 		add_character_modifier = {
 			name = favored_druids
-			duration = 10
+			duration = 3650
 		}
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_ruler
@@ -355,7 +355,7 @@ character_event = {
 		cash = 100
 		add_character_modifier = {
 			name = favored_merchants
-			duration = 10
+			duration = 3650
 		}
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_ruler
@@ -380,7 +380,7 @@ character_event = {
 		}
 		add_character_modifier = {
 			name = favored_balance
-			duration = 10
+			duration = 3650
 		}
 		custom_tooltip = give_laws_ollam
 		hidden_tooltip = {
@@ -407,7 +407,7 @@ character_event = {
 		}
 		add_character_modifier = {
 			name = favored_crown
-			duration = 10
+			duration = 3650
 		}
 		prestige = 50
 		piety = 50
@@ -435,7 +435,7 @@ character_event = {
 		}
 		add_character_modifier = {
 			name = favored_fianna
-			duration = 10
+			duration = 3650
 		}
 		custom_tooltip = give_laws_ollam
 		hidden_tooltip = {
@@ -462,6 +462,10 @@ character_event = {
 		tooltip_info = lunatic
 		custom_tooltip = give_laws_ollam
 		hidden_tooltip = {
+			add_character_modifier = {
+				name = favored_birds
+				duration = 3650
+			}
 			clr_character_flag = tailteann_death_ruler
 			clr_character_flag = tailteann_death_phase
 			clr_character_flag = chosen_dead_one_tailteann
@@ -492,7 +496,7 @@ character_event = {
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_phase
 			clr_character_flag = chosen_dead_one_tailteann
-			set_character_flag = tailteann_game_phase
+			character_event = { id = ancrel.1251 }
 		}
 	}
 }
@@ -511,7 +515,7 @@ character_event = {
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_phase
 			clr_character_flag = chosen_dead_one_tailteann
-			set_character_flag = tailteann_game_phase
+			character_event = { id = ancrel.1251 }
 		}
 	}
 }
@@ -530,7 +534,7 @@ character_event = {
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_phase
 			clr_character_flag = chosen_dead_one_tailteann
-			set_character_flag = tailteann_game_phase
+			character_event = { id = ancrel.1251 }
 		}
 	}
 }
@@ -549,7 +553,7 @@ character_event = {
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_phase
 			clr_character_flag = chosen_dead_one_tailteann
-			set_character_flag = tailteann_game_phase
+			character_event = { id = ancrel.1251 }
 		}
 	}
 }
@@ -568,7 +572,7 @@ character_event = {
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_phase
 			clr_character_flag = chosen_dead_one_tailteann
-			set_character_flag = tailteann_game_phase
+			character_event = { id = ancrel.1251 }
 		}
 	}
 }
@@ -587,7 +591,7 @@ character_event = {
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_phase
 			clr_character_flag = chosen_dead_one_tailteann
-			set_character_flag = tailteann_game_phase
+			character_event = { id = ancrel.1251 }
 		}
 	}
 }
@@ -606,7 +610,7 @@ character_event = {
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_phase
 			clr_character_flag = chosen_dead_one_tailteann
-			set_character_flag = tailteann_game_phase
+			character_event = { id = ancrel.1251 }
 		}
 	}
 }
@@ -625,6 +629,7 @@ character_event = {
 		hidden_tooltip = {
 			clr_character_flag = tailteann_law_phase
 			set_character_flag = tailteann_game_phase
+			character_event = { id = ancrel.1251 }
 		}
 		add_character_modifier = {
 			name = favored_warriors
@@ -647,6 +652,7 @@ character_event = {
 		hidden_tooltip = {
 			clr_character_flag = tailteann_law_phase
 			set_character_flag = tailteann_game_phase
+			character_event = { id = ancrel.1251 }
 		}
 		add_character_modifier = {
 			name = favored_druids
@@ -669,6 +675,7 @@ character_event = {
 		hidden_tooltip = {
 			clr_character_flag = tailteann_law_phase
 			set_character_flag = tailteann_game_phase
+			character_event = { id = ancrel.1251 }
 		}
 		add_character_modifier = {
 			name = favored_merchants
@@ -691,6 +698,7 @@ character_event = {
 		hidden_tooltip = {
 			clr_character_flag = tailteann_law_phase
 			set_character_flag = tailteann_game_phase
+			character_event = { id = ancrel.1251 }
 		}
 		add_character_modifier = {
 			name = favored_balance
@@ -713,6 +721,7 @@ character_event = {
 		hidden_tooltip = {
 			clr_character_flag = tailteann_law_phase
 			set_character_flag = tailteann_game_phase
+			character_event = { id = ancrel.1251 }
 		}
 		add_character_modifier = {
 			name = favored_fianna
@@ -735,6 +744,7 @@ character_event = {
 		hidden_tooltip = {
 			clr_character_flag = tailteann_law_phase
 			set_character_flag = tailteann_game_phase
+			character_event = { id = ancrel.1251 }
 		}
 		add_character_modifier = {
 			name = favored_crown
@@ -757,6 +767,7 @@ character_event = {
 		hidden_tooltip = {
 			clr_character_flag = tailteann_law_phase
 			set_character_flag = tailteann_game_phase
+			character_event = { id = ancrel.1251 }
 		}
 		add_character_modifier = {
 			name = favored_birds
@@ -1239,22 +1250,22 @@ province_event = {
 				hidden_tooltip = {
 					random_list = {
 						10 = {
-							character_event = { id = ancrel.2224 }
+							character_event = { id = ancrel.1224 }
 						}
 						10 = {
-							character_event = { id = ancrel.2225 }
+							character_event = { id = ancrel.1225 }
 						}
 						10 = {
-							character_event = { id = ancrel.2226 }
+							character_event = { id = ancrel.1226 }
 						}
 						10 = {
-							character_event = { id = ancrel.2227 }
+							character_event = { id = ancrel.1227 }
 						}
 						10 = {
-							character_event = { id = ancrel.2228 }
+							character_event = { id = ancrel.1228 }
 						}
 						10 = {
-							character_event = { id = ancrel.2229 }
+							character_event = { id = ancrel.1229 }
 						}
 					}
 				}
@@ -1297,9 +1308,9 @@ character_event = {
 
 # Message about maimed
 character_event = {
-	id = ancrel.2222
+	id = ancrel.1222
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2222
+	desc = EVTDESCancrel.1222
 	picture = GFX_evt_viking_throneroom_oldgods
 	
 	is_triggered_only = yes
@@ -1320,9 +1331,9 @@ character_event = {
 
 # Message about wounded
 character_event = {
-	id = ancrel.2223
+	id = ancrel.1223
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2223
+	desc = EVTDESCancrel.1223
 	picture = GFX_evt_viking_throneroom_oldgods
 
 	trigger = {
@@ -1343,99 +1354,99 @@ character_event = {
 
 # End of tailteann event
 character_event = {
-	id = ancrel.2224
+	id = ancrel.1224
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2224
+	desc = EVTDESCancrel.1224
 	picture = GFX_evt_athlete
 
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.2224
+		name = EVTOPTAancrel.1224
 		prestige = 50
 	}
 }
 
 # End of tailteann event
 character_event = {
-	id = ancrel.2225
+	id = ancrel.1225
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2225
+	desc = EVTDESCancrel.1225
 	picture = GFX_evt_athlete
 
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.2225
+		name = EVTOPTAancrel.1225
 		prestige = 100
 	}
 }
 
 # End of tailteann event
 character_event = {
-	id = ancrel.2226
+	id = ancrel.1226
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2226
+	desc = EVTDESCancrel.1226
 	picture = GFX_evt_athlete
 
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.2226
+		name = EVTOPTAancrel.1226
 		prestige = -50
 	}
 }
 
 # End of tailteann event
 character_event = {
-	id = ancrel.2227
+	id = ancrel.1227
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2227
+	desc = EVTDESCancrel.1227
 	picture = GFX_evt_athlete
 
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.2227
+		name = EVTOPTAancrel.1227
 		prestige = -100
 	}
 }
 
 # End of tailteann event
 character_event = {
-	id = ancrel.2228
+	id = ancrel.1228
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2228
+	desc = EVTDESCancrel.1228
 	picture = GFX_evt_athlete
 
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.2228
+		name = EVTOPTAancrel.1228
 		change_martial = 1
 	}
 }
 
 # End of tailteann event
 character_event = {
-	id = ancrel.2229
+	id = ancrel.1229
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2229
+	desc = EVTDESCancrel.1229
 	picture = GFX_evt_athlete
 
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.2229
+		name = EVTOPTAancrel.1229
 		change_martial = -1
 	}
 }	
 
 # Character is killed
 character_event = {
-	id = ancrel.2230
+	id = ancrel.1230
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2230
+	desc = EVTDESCancrel.1230
 	picture = GFX_evt_death
 
 	min_age = 16
@@ -1509,7 +1520,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.2230
+		name = EVTOPTAancrel.1230
 		death = {
 			death_reason = death_battle
 		}
@@ -1530,9 +1541,9 @@ character_event = {
 
 # Character is maimed
 character_event = {
-	id = ancrel.2231
+	id = ancrel.1231
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2231
+	desc = EVTDESCancrel.1231
 	picture = GFX_evt_melee
 
 	min_age = 16
@@ -1609,7 +1620,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.2231
+		name = EVTOPTAancrel.1231
 		add_trait = maimed
 		hidden_tooltip = {
 			if = {
@@ -1620,7 +1631,7 @@ character_event = {
 						}
 					}
 				}
-				top_liege = { character_event = { id = ancrel.2222 } }
+				top_liege = { character_event = { id = ancrel.1222 } }
 			}
 		}
 	}
@@ -1628,9 +1639,9 @@ character_event = {
 
 # Character is wounded
 character_event = {
-	id = ancrel.2232
+	id = ancrel.1232
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2232
+	desc = EVTDESCancrel.1232
 	picture = GFX_evt_melee
 
 	min_age = 16
@@ -1707,7 +1718,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.2232
+		name = EVTOPTAancrel.1232
 		add_trait = wounded
 		hidden_tooltip = {
 			if = {
@@ -1718,7 +1729,7 @@ character_event = {
 						}
 					}
 				}
-				top_liege = { character_event = { id = ancrel.2223 } }
+				top_liege = { character_event = { id = ancrel.1223 } }
 			}
 		}
 	}
@@ -1726,9 +1737,9 @@ character_event = {
 
 # Character becomes craven
 character_event = {
-	id = ancrel.2233
+	id = ancrel.1233
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2233
+	desc = EVTDESCancrel.1233
 	picture = GFX_evt_melee
 
 	min_age = 16
@@ -1794,16 +1805,16 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.2233
+		name = EVTOPTAancrel.1233
 		add_trait = craven
 	}
 }
 
 # Character becomes brave
 character_event = {
-	id = ancrel.2234
+	id = ancrel.1234
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2234
+	desc = EVTDESCancrel.1234
 	picture = GFX_evt_melee
 
 	min_age = 16
@@ -1869,16 +1880,16 @@ character_event = {
 	}	
 
 	option = {
-		name = EVTOPTAancrel.2234
+		name = EVTOPTAancrel.1234
 		add_trait = brave
 	}
 }
 
 # Character becomes tough soldier
 character_event = {
-	id = ancrel.2235
+	id = ancrel.1235
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2235
+	desc = EVTDESCancrel.1235
 	picture = GFX_evt_athlete
 
 	min_age = 16
@@ -1942,7 +1953,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.2235
+		name = EVTOPTAancrel.1235
 		remove_trait = misguided_warrior
 		add_trait = tough_soldier 
 	}
@@ -1950,9 +1961,9 @@ character_event = {
 
 # Character becomes skilled tactician
 character_event = {
-	id = ancrel.2236
+	id = ancrel.1236
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2236
+	desc = EVTDESCancrel.1236
 	picture = GFX_evt_athlete
 
 	min_age = 16
@@ -2016,7 +2027,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.2236
+		name = EVTOPTAancrel.1236
 		remove_trait = tough_soldier 
 		add_trait = skilled_tactician 
 	}
@@ -2024,9 +2035,9 @@ character_event = {
 
 # Character becomes brilliant strategist
 character_event = {
-	id = ancrel.2237
+	id = ancrel.1237
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2237
+	desc = EVTDESCancrel.1237
 	picture = GFX_evt_athlete
 
 	min_age = 16
@@ -2090,7 +2101,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.2237
+		name = EVTOPTAancrel.1237
 		remove_trait = skilled_tactician 
 		add_trait = brilliant_strategist 
 	}
@@ -2098,9 +2109,9 @@ character_event = {
 
 # Character becomes skilled tactician
 character_event = {
-	id = ancrel.2238
+	id = ancrel.1238
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2238
+	desc = EVTDESCancrel.1238
 	picture = GFX_evt_athlete
 
 	min_age = 16
@@ -2164,7 +2175,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.2238
+		name = EVTOPTAancrel.1238
 		remove_trait = brilliant_strategist
 		add_trait = skilled_tactician  
 	}
@@ -2172,9 +2183,9 @@ character_event = {
 
 # Character becomes tough soldier
 character_event = {
-	id = ancrel.2239
+	id = ancrel.1239
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2239
+	desc = EVTDESCancrel.1239
 	picture = GFX_evt_athlete
 
 	min_age = 16
@@ -2238,7 +2249,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.2239
+		name = EVTOPTAancrel.1239
 		remove_trait = skilled_tactician
 		add_trait = tough_soldier
 	}
@@ -2246,9 +2257,9 @@ character_event = {
 
 # Character becomes misguided warrior
 character_event = {
-	id = ancrel.2240
+	id = ancrel.1240
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2240
+	desc = EVTDESCancrel.1240
 	picture = GFX_evt_athlete
 
 	min_age = 16
@@ -2312,7 +2323,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.2240
+		name = EVTOPTAancrel.1240
 		remove_trait = tough_soldier
 		add_trait = misguided_warrior
 	}
@@ -2320,9 +2331,9 @@ character_event = {
 
 # Character becomes homosexual
 character_event = {
-	id = ancrel.2241
+	id = ancrel.1241
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2241
+	desc = EVTDESCancrel.1241
 	picture = GFX_evt_shadowy_cabal
 
 	min_age = 16
@@ -2390,16 +2401,16 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.2241
+		name = EVTOPTAancrel.1241
 		add_trait = homosexual
 	}
 }
 
 # Character becomes syphilitic
 character_event = {
-	id = ancrel.2242
+	id = ancrel.1242
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2242
+	desc = EVTDESCancrel.1242
 	picture = GFX_evt_lovers
 
 	min_age = 16
@@ -2456,16 +2467,16 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.2242
+		name = EVTOPTAancrel.1242
 		add_trait = syphilitic
 	}
 }
 
 # Character becomes drunkard
 character_event = {
-	id = ancrel.2243
+	id = ancrel.1243
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2243
+	desc = EVTDESCancrel.1243
 	picture = GFX_evt_drunk
 	
 	min_age = 16
@@ -2521,16 +2532,16 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.2243
+		name = EVTOPTAancrel.1243
 		add_trait = drunkard
 	}
 }
 
 # Character becomes duelist
 character_event = {
-	id = ancrel.2244
+	id = ancrel.1244
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2244
+	desc = EVTDESCancrel.1244
 	picture = GFX_evt_melee
 	
 	min_age = 16
@@ -2590,16 +2601,16 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.2244
+		name = EVTOPTAancrel.1244
 		add_trait = duelist
 	}
 }
 
 # Character gains diplomacy
 character_event = {
-	id = ancrel.2245
+	id = ancrel.1245
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2245
+	desc = EVTDESCancrel.1245
 	picture = GFX_evt_whispers
 
 	min_age = 16
@@ -2669,16 +2680,16 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.2245
+		name = EVTOPTAancrel.1245
 		change_diplomacy = 1
 	}
 }
 
 # Character loses diplomacy
 character_event = {
-	id = ancrel.2246
+	id = ancrel.1246
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2246
+	desc = EVTDESCancrel.1246
 	picture = GFX_evt_whispers
 
 	min_age = 16
@@ -2748,16 +2759,16 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.2246
+		name = EVTOPTAancrel.1246
 		change_diplomacy = -1
 	}
 }
 
 # Character gains stewardship
 character_event = {
-	id = ancrel.2247
+	id = ancrel.1247
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2247
+	desc = EVTDESCancrel.1247
 	picture = GFX_evt_market
 
 	min_age = 16
@@ -2827,16 +2838,16 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.2247
+		name = EVTOPTAancrel.1247
 		change_stewardship = 1
 	}
 }
 
 # Character loses stewardship
 character_event = {
-	id = ancrel.2248
+	id = ancrel.1248
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2248
+	desc = EVTDESCancrel.1248
 	picture = GFX_evt_market
 
 	min_age = 16
@@ -2906,16 +2917,16 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.2248
+		name = EVTOPTAancrel.1248
 		change_stewardship = -1
 	}
 }
 
 # Character gains diplomacy
 character_event = {
-	id = ancrel.2249
+	id = ancrel.1249
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2249
+	desc = EVTDESCancrel.1249
 	picture = GFX_evt_council
 
 	min_age = 16
@@ -2985,16 +2996,16 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.2249
+		name = EVTOPTAancrel.1249
 		change_diplomacy = 1
 	}
 }
 
 # Character loses diplomacy
 character_event = {
-	id = ancrel.2250
+	id = ancrel.1250
 	title = TAILTEANNTITLE
-	desc = EVTDESCancrel.2250
+	desc = EVTDESCancrel.1250
 	picture = GFX_evt_council
 
 	min_age = 16
@@ -3064,7 +3075,21 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.2250
+		name = EVTOPTAancrel.1250
 		change_diplomacy = -1
+	}
+}
+
+#  Game Phase
+character_event = {
+	id = ancrel.1251
+	title = TAILTEANNTITLE
+	desc = EVTDESCancrel.1251
+	picture = GFX_evt_athlete
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAancrel.1211
 	}
 }

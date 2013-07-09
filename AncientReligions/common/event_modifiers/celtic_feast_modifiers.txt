@@ -1,7 +1,16 @@
-held_celtic_feast_modifier = {
+held_divination_modifier = {
 	land_morale = 0.15
 	monthly_character_prestige = 0.3
 	icon = 13
 }
 
-held_celtic_feast_timer = { icon = 1 }
+promised_victory = {
+	land_morale = 0.1
+	icon = 13
+}
+
+promised_riches = {
+	city_opinion = 5
+	tech_growth_modifier_economy = 0.02
+	icon = 10
+}

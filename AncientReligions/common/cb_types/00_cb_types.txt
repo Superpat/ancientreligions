@@ -8959,4 +8959,3 @@ shia_caliphate_rising = {
 		factor = 100
 	}
 }
-

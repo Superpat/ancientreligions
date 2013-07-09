@@ -1,6 +1,6 @@
 decisions = {
 
-	hold_celtic_feast = {
+	hold_divination = {
 		potential = {
 			has_dlc = "The Old Gods"
 			is_ruler = yes
@@ -12,41 +12,26 @@ decisions = {
 				religion = gaelic_pagan
 				religion = gaelic_pagan_reformed
 			}
-			NOT = {	has_character_flag = holding_celtic_feast }
+			NOT = {	has_character_flag = holding_divination }
+			NOT = {	has_character_modifier = held_divination_timer }
 		}
 		allow = {
 			war = no
 			any_demesne_title = {
 				is_occupied = no
 			}
-			OR = {
-				AND = { 
-					month = 5
-					NOT = { month = 6 }
-				}
-				AND = { 
-					month = 8
-					NOT = { month = 9 }
-				}
-				AND = { 
-					month = 12
-					NOT = { month = 1 }
-				}
-				AND = { 
-					month = 10
-					NOT = { month = 11 }
-				}
-			}
+			month = 5
+			NOT = { month = 11 }
 			scaled_wealth = 0.20
 			prisoner = no
 		}
 		effect = {
 			scaled_wealth = -0.20
-			set_character_flag = holding_celtic_feast
+			set_character_flag = holding_divination
 			hidden_tooltip = { 
 				character_event = { id = ancrel.0020 }
 			}
-			custom_tooltip = prepare_celtic_feast
+			custom_tooltip = prepare_divination
 		}
 		revoke_allowed = {
 			always = no

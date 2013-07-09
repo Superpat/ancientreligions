@@ -5,8 +5,8 @@ Ancient Religions mod for Crusader Kings 2
 ===
 
 
-Current Version: 0.2
-For Crusader Kings 2 Version: 1.101
+Current Version: 0.21
+For Crusader Kings 2 Version: 1.103
 
 
 This mod aims at recreating dead or pseudo-dead religions in vanilla Crusader
@@ -30,7 +30,7 @@ Ancient Religions Installation:
 4. Have fun
 
 
-This mod is created, owned, and maintained by Super(skier)pat. If you want to include it in any publicly released mod you need my permission.
+This mod is created, owned, and maintained by Patrick Marchand and Jon Severinsson. If you want to include it in any publicly released mod you need our permission.
 
 
 If you encounter any issues or are wondering about anything you can ask in the Ancient Religions thread on the Paradox Forums: http://forum.paradoxplaza.com/forum/showthread.php?685812-Ancient-Religions

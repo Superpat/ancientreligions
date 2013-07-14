@@ -1,0 +1,13 @@
+name = "Ancient Religions - Project Balance"
+path = "mod/ACR-PB"
+user_dir = "ACR-PB"
+dependencies = { "AncientReligions" "Project Balance" }
+overrid = "common"
+overrid = "common/cb_types"
+overrid = "common/landed_titles"
+overrid = "common/objectives"
+overrid = "common/religions"
+overrid = "decision"
+overrid = "event"
+overrid = "gfx/interface"
+overrid = "interface"

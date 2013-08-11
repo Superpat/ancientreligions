@@ -281,6 +281,22 @@ faction_succ_seniority = {
 			factor = 4.0
 			FROM = { trait = ambitious }
 		}
+		modifier = {
+			factor = 0
+			FROM = {
+				primary_title = { is_primary_type_title = yes } # Mercs, the Pope, Holy Orders, etc
+			}
+		}
+		modifier = {
+			factor = 0
+			FROM = {
+				has_opinion_modifier = {
+					who = LIEGE
+					modifier = opinion_coerced_into_leaving_faction
+				}
+				opinion = { who = LIEGE value = -25 }
+			}
+		}
 	}
 	
 	# AI membership weight: ROOT is the prospective member. FROM is the faction leader. FROMFROM is the target title or character.

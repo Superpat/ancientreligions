@@ -59,7 +59,7 @@ province_base_values = {
 }
 
 coastal = {
-	tech_growth_modifier = 0.8
+	tech_growth_modifier = 1
 }
 
 non_coastal = {
@@ -485,7 +485,7 @@ d_knights_templar_modifier = {
 }
 
 d_teutonic_order_modifier = {
-	levy_size = 4
+	levy_size = 5
 	heavy_infantry = 600
 	knights = 300
 	archers = 200

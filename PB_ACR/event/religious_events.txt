@@ -3428,15 +3428,6 @@ character_event = {
 			modifier = {
 				factor = 10
 				any_war = {
-					using_cb = pagan_holy_war
-					attacker = {
-						character = ROOT
-					}
-				}
-			}
-			modifier = {
-				factor = 10
-				any_war = {
 					using_cb = viking_invasion
 					attacker = {
 						character = ROOT

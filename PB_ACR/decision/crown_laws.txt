@@ -804,7 +804,7 @@ de_jure_laws = {
 		allow = {
 			OR = {
 				holder_scope = {
-					prestige = 500
+					prestige = 1000
 					NOT = { trait = content }
 					NOT = { trait = slothful }
 					OR = {
@@ -914,7 +914,7 @@ de_jure_laws = {
 			NOT = { has_law = succ_feudal_elective }
 			has_law = emperor_peace_1
 			holder_scope = {
-				prestige = 750
+				prestige = 1500
 				NOT = { trait = content }
 				NOT = { trait = slothful }
 				OR = {
@@ -1558,6 +1558,7 @@ de_jure_laws = {
 		potential = {
 			OR = {
 				title = e_hre
+				title = e_hre_french
 				title = e_germany
 			}
 			NOT = { has_global_flag = shattered_balance }
@@ -1591,6 +1592,7 @@ de_jure_laws = {
 		potential = {
 			OR = {
 				title = e_hre
+				title = e_hre_french
 				title = e_germany
 			}
 			NOT = { has_global_flag = shattered_balance }

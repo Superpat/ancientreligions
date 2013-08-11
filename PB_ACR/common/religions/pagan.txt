@@ -413,9 +413,9 @@ pagan_group = {
 			GOD_PERUN GOD_VELES GOD_JARILO GOD_SVAROG GOD_TRIGLAV GOD_RADEGAST
 		}
 		
-		unit_modifier = {		
-			garrison_size = 0.3
-			levy_size = 0.1
+		unit_modifier = {	
+			heavy_infantry_offensive = 0.3
+			heavy_infantry_defensive = 0.3
 			
 			key = "DEF_RELIGION"
 		}

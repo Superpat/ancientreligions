@@ -56,7 +56,7 @@ character_event = {
 			factor = 0.5
 			location = { religion_group = ROOT }
 		}
-modifier = {
+	modifier = {
 			factor = 2.0
 			location = {
 				OR = {
@@ -168,7 +168,7 @@ modifier = {
 			factor = 2.0
 			has_province_modifier = heretic_stronghold
 		}
-modifier = {
+	modifier = {
 			factor = 0.8
 			liege = { has_ambition = obj_convert_a_province }
 		}
@@ -1889,7 +1889,7 @@ character_event = {
 	picture = GFX_evt_bishop
 	border = GFX_event_normal_frame_religion
 
-	only_men = yes
+
 	capable_only = yes
 	prisoner = no
 	
@@ -2022,7 +2022,7 @@ character_event = {
 	picture = GFX_evt_peasants
 	border = GFX_event_normal_frame_religion
 
-	only_men = yes
+
 	capable_only = yes
 	prisoner = no
 	
@@ -2175,7 +2175,7 @@ character_event = {
 	picture = GFX_evt_bishop
 	border = GFX_event_normal_frame_religion
 	
-	only_men = yes
+
 	capable_only = yes
 	prisoner = no
 	
@@ -2248,7 +2248,7 @@ character_event = {
 	picture = GFX_evt_bishop
 	border = GFX_event_normal_frame_religion
 	
-	only_men = yes
+
 	capable_only = yes
 	prisoner = no
 	

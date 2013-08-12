@@ -85,7 +85,7 @@ christian = {
 		
 		color = { 0.5 0.8 0.8 }
 		parent = catholic
-		
+		priests_can_marry = yes				
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
 	}
@@ -179,13 +179,16 @@ christian = {
 	}
 	
 	nestorian = {
-		graphical_culture = westerngfx
+		graphical_culture = muslimgfx
 
-		icon = 2
-		heresy_icon = 7
+		icon = 48
+		heresy_icon = 49	
 		
 		color = { 0.8 0.3 0.5 }
-		parent = orthodox
+		scripture_name = THE_PESHITTA
+		god_names = {
+			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
+		}
 		
 		investiture = no
 		autocephaly = yes
@@ -231,6 +234,104 @@ christian = {
 		
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
+	}
+	
+	mandaean = {
+		graphical_culture = westerngfx
+
+		scripture_name = THE_GINZA_RABA
+		
+		god_names = {
+			GOD_GOD GOD_ABATUR
+		}
+
+		icon = 48
+		heresy_icon = 49
+		color = { 0.85 0.35 0.2 }
+		parent = nestorian
+		
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		
+	}
+	
+	chaldean = {
+		graphical_culture = westerngfx
+
+		scripture_name = THE_PESHITTA
+		
+		icon = 48
+		heresy_icon = 49
+		color = { 0.8 0.4 0.05 }
+		parent = nestorian
+		
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		
+	}
+	
+	paulician = {
+		graphical_culture = westerngfx
+
+		icon = 2
+		heresy_icon = 7
+
+		color = { 0.95 0.8 0.1 }
+		parent = orthodox
+		
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+	}
+	
+	bosnian = {
+		graphical_culture = westerngfx
+
+		icon = 2
+		heresy_icon = 7
+		
+		color = { 0.8 0.65 0.7 }
+		parent = orthodox
+		
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+	}
+	
+	syriac = {
+		graphical_culture = westerngfx
+
+		scripture_name = THE_PESHITTA
+		
+		icon = 11
+		heresy_icon = 13
+		
+		color = { 0.85 0.3 0.25 }
+		parent = miaphysite
+		
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+
+	}
+	
+	maronite = {
+		graphical_culture = westerngfx
+
+		scripture_name = THE_PESHITTA
+		
+		icon = 11
+		heresy_icon = 13
+		
+		color = { 0.85 0.3 0.25 }
+		parent = miaphysite
+		
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+
 	}
 	
 }
@@ -286,6 +387,13 @@ muslim = {
 		icon = 3
 		heresy_icon = 8
 		
+		scripture_name = THE_QAWLS
+		
+		god_names = {
+			GOD_GOD GOD_MELEK_TAUS GOD_THE_HEFT_SIRR
+		}
+
+		
 		color = { 0.1 0.7 0.1 }
 		parent = sunni
 		priests_can_marry = yes
@@ -306,6 +414,18 @@ muslim = {
 		psc_marriage = no
 		max_wives = 4
 	}
+	qadiri = {
+		graphical_culture = muslimgfx
+
+		icon = 8
+		heresy_icon = 8
+		color = { 0.25 0.55 0.25 }
+		parent = sunni
+		priests_can_marry = yes
+		can_hold_temples = yes
+		psc_marriage = no
+		max_wives = 4
+	}
 	shiite = {
 		graphical_culture = muslimgfx
 
@@ -313,7 +433,7 @@ muslim = {
 		heresy_icon = 9
 		
 		color = { 0 0.8 0 }
-		
+		parent = sunni		
 		crusade_name = "JIHAD"
 		scripture_name = THE_KORAN
 		god_names = {
@@ -366,6 +486,18 @@ muslim = {
 		psc_marriage = no
 		max_wives = 4
 	}
+	alawite = {
+		graphical_culture = muslimgfx
+
+		icon = 9
+		heresy_icon = 9
+		color = { 0.4 0.75 0.35 }
+		parent = shiite
+		priests_can_marry = yes
+		can_hold_temples = yes
+		psc_marriage = no
+		max_wives = 4
+	}
 }
 
 pagan_group = {
@@ -411,7 +543,7 @@ pagan_group = {
 		
 		color = { 0.6 0.6 0.6 }
 		god_names = {
-			GOD_THOR GOD_THE_THUNDERER GOD_THE_ALLFATHER GOD_THE_ODIN GOD_FREY GOD_TYR
+			GOD_THOR GOD_THE_THUNDERER GOD_THE_ALLFATHER GOD_THE_ODIN GOD_FREY GOD_TYR Frigg
 		}
 		
 		unit_modifier = {
@@ -449,7 +581,7 @@ pagan_group = {
 		
 		color = { 0.4 0.4 0.4 }
 		god_names = {
-			GOD_THOR GOD_THE_THUNDERER GOD_THE_ALLFATHER GOD_THE_ODIN GOD_FREY GOD_TYR
+			GOD_THOR GOD_THE_THUNDERER GOD_THE_ALLFATHER GOD_THE_ODIN GOD_FREY GOD_TYR Frigg
 		}
 		
 		unit_modifier = {
@@ -491,7 +623,7 @@ pagan_group = {
 		
 		color = { 0.1 0.3 0.85 }
 		god_names = {
-			GOD_TENGRI GOD_ERLIK_KHAN GOD_TUNG-AK
+			GOD_TENGRI GOD_ERLIK_KHAN GOD_TUNG-AK Bai-Ulgan
 		}
 		
 		unit_modifier = {
@@ -526,7 +658,7 @@ pagan_group = {
 		
 		color = { 0.0 0.2 0.8 }
 		god_names = {
-			GOD_TENGRI GOD_ERLIK_KHAN GOD_TUNG-AK
+			GOD_TENGRI GOD_ERLIK_KHAN GOD_TUNG-AK Bai-Ulgan
 		}
 		
 		unit_modifier = {
@@ -660,7 +792,7 @@ pagan_group = {
 		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_LEGENDS
 		god_names = {
-			GOD_UKKO GOD_PERKELE GOD_JUMI GOD_THE_GREAT_BEAR GOD_KUU GOD_TAPIO GOD_TAARA GOD_OMOL GOD_MASTOR_AVA
+			GOD_UKKO GOD_PERKELE GOD_JUMI GOD_THE_GREAT_BEAR GOD_KUU GOD_TAPIO GOD_TAARA GOD_OMOL GOD_MASTOR_AVA Äkräs Mielikki Lempo Väinämöinen Ilmarinen Ahti
 		}
 		
 		can_call_crusade = yes
@@ -708,7 +840,7 @@ pagan_group = {
 		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_LEGENDS
 		god_names = {
-			GOD_UKKO GOD_PERKELE GOD_JUMI GOD_THE_GREAT_BEAR GOD_KUU GOD_TAPIO GOD_TAARA GOD_OMOL GOD_MASTOR_AVA
+			GOD_UKKO GOD_PERKELE GOD_JUMI GOD_THE_GREAT_BEAR GOD_KUU GOD_TAPIO GOD_TAARA GOD_OMOL GOD_MASTOR_AVA Äkräs Mielikki Lempo Väinämöinen Ilmarinen Ahti
 		}
 		
 		unit_modifier = {		
@@ -752,7 +884,7 @@ pagan_group = {
 		icon = 17
 		color = { 0.95 0.3 0.3 }
 		god_names = {
-			GOD_HUITZILOPOCHTLI GOD_XIPE_TOTEC GOD_TEZCATLIPOCA GOD_QUETZALCOATL GOD_MICTLANTECUHTLI GOD_TLALOC
+			GOD_HUITZILOPOCHTLI GOD_XIPE_TOTEC GOD_TEZCATLIPOCA GOD_QUETZALCOATL GOD_MICTLANTECUHTLI GOD_TLALOC Chalchiuhtlicue Xiuhtecuhtli Itzpapalotl Centeotl Mictlantecuhtli Coatlicue Toci
 		}
 		
 		unit_modifier = {
@@ -778,7 +910,7 @@ pagan_group = {
 		icon = 15
 		color = { 0.8 0.2 0.2 }
 		god_names = {
-			GOD_HUITZILOPOCHTLI GOD_XIPE_TOTEC GOD_TEZCATLIPOCA GOD_QUETZALCOATL GOD_MICTLANTECUHTLI GOD_TLALOC
+			GOD_HUITZILOPOCHTLI GOD_XIPE_TOTEC GOD_TEZCATLIPOCA GOD_QUETZALCOATL GOD_MICTLANTECUHTLI GOD_TLALOC Chalchiuhtlicue Xiuhtecuhtli Itzpapalotl Centeotl Mictlantecuhtli Coatlicue Toci
 		}
 		
 		unit_modifier = {
@@ -812,7 +944,7 @@ pagan_group = {
 		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_LEGENDS
 		god_names = {
-			GOD_PERUN GOD_VELES GOD_JARILO GOD_SVAROG GOD_TRIGLAV GOD_RADEGAST
+			GOD_PERUN GOD_VELES GOD_JARILO GOD_SVAROG GOD_TRIGLAV GOD_RADEGAST Svetovid Dazbog Kresnik Zaria
 		}
 		
 		unit_modifier = {		
@@ -858,7 +990,7 @@ pagan_group = {
 		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_LEGENDS
 		god_names = {
-			GOD_PERUN GOD_VELES GOD_JARILO GOD_SVAROG GOD_TRIGLAV GOD_RADEGAST
+			GOD_PERUN GOD_VELES GOD_JARILO GOD_SVAROG GOD_TRIGLAV GOD_RADEGAST Svetovid Dazbog Kresnik Zaria
 		}
 		
 		unit_modifier = {		
@@ -1001,7 +1133,7 @@ pagan_group = {
 		
 		color = { 0.6 0.1 0.1 }
 		god_names = {
-			GOD_JUNO GOD_VESTA GOD_MINERVA GOD_CERES GOD_DIANA GOD_VENUS GOD_MARS GOD_MERCURY GOD_JUPITER GOD_NEPTUNE GOD_VULCAN GOD_APOLLO
+			GOD_JUNO GOD_VESTA GOD_MINERVA GOD_CERES GOD_DIANA GOD_VENUS GOD_MARS GOD_MERCURY GOD_JUPITER GOD_NEPTUNE GOD_VULCAN GOD_APOLLO Juno Neptune Sol Diana Vulcan Ceres Saturn Liber Janus Luna Uranus Pluto Hercules Aurora
 		}
 		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_THEOGONY
@@ -1247,6 +1379,8 @@ zoroastrian_group = {
 			GOD_AHURA_MAZDA GOD_ZURVAN GOD_OHRMAZD GOD_MANAH PROPHET_ZOROASTER
 		}
 		
+		priests_can_marry = yes	
+		
 		can_grant_divorce = yes
 		can_call_crusade = yes
 		can_grant_invasion_cb = invasion
@@ -1261,7 +1395,7 @@ zoroastrian_group = {
 		religious_clothing_priest = 5
 	}
 	
-	mazdaki = {
+	mazdakite = {
 		graphical_culture = persiangfx
 		
 		icon = 10
@@ -1276,10 +1410,17 @@ zoroastrian_group = {
 		}
 		
 		parent = zoroastrian
+		priests_can_marry = yes	
 		
 		can_grant_divorce = yes
 		can_call_crusade = yes
 		can_grant_invasion_cb = invasion
+		
+		max_consorts = 3 # Can take concubines
+		
+		divine_blood = yes # Sacred Xwedodah close-kin marriage mechanics
+		pc_marriage = yes
+		bs_marriage = yes
 		
 		religious_clothing_head = 5
 		religious_clothing_priest = 5
@@ -1292,11 +1433,14 @@ zoroastrian_group = {
 		heresy_icon = 12
 		
 		color = { 0.7 0.7 0.4 }
+		
+		scripture_name = THE_EVANGELION
+		
 		god_names = {
-			GOD_ZURVAN GOD_OHRMAZD PROPHET_MANI GOD_MIHRYAZD
+			GOD_THE_FATHER_OF_GREATNESS GOD_THE_MOTHER_OF_LIFE GOD_JESUS_THE_SPLENDOR
 		}
 		
-		parent = zoroastrian
+		parent = zoroastrian	
 		
 		can_grant_divorce = yes
 		can_call_crusade = yes
@@ -1304,5 +1448,31 @@ zoroastrian_group = {
 		
 		religious_clothing_head = 5
 		religious_clothing_priest = 5
+	}
+
+	zurvanite = {
+		graphical_culture = muslimgfx
+
+		icon = 10
+		heresy_icon = 12
+		color = { 0.65 0.85 0.15 }
+		parent = zoroastrian
+		priests_can_marry = yes	
+
+		parent = zoroastrian
+		priests_can_marry = yes	
+		
+		can_grant_divorce = yes
+		can_call_crusade = yes
+		can_grant_invasion_cb = invasion
+		
+		max_consorts = 3 # Can take concubines
+		
+		divine_blood = yes # Sacred Xwedodah close-kin marriage mechanics
+		pc_marriage = yes
+		bs_marriage = yes
+		
+		religious_clothing_head = 5
+		religious_clothing_priest = 5		
 	}
 }

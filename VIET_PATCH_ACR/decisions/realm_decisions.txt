@@ -99,7 +99,7 @@ decisions = {
 	issue_declaration_of_repentance = {
 		potential = {
 			religion = catholic
-			age = 16
+			is_adult = yes
 			demesne_size = 1
 			NOT = { has_character_flag = ask_for_repentance }
 			rightful_religious_head_scope = {
@@ -171,7 +171,7 @@ decisions = {
 		potential = {
 			ai = no
 			religion_group = muslim
-			age = 16
+			is_adult = yes
 			demesne_size = 1
 			NOT = { has_character_flag = voluntary_charity }
 			rightful_religious_head_scope = {	
@@ -185,7 +185,10 @@ decisions = {
 		}
 		allow = {
 			scaled_wealth = 1.0
-			is_heretic = no
+			OR = {
+				is_heretic = no
+				religion = shiite
+			}
 		}
 		effect = {
 			set_character_flag = voluntary_charity
@@ -229,7 +232,7 @@ decisions = {
 			war = no
 			in_command = no
 			prisoner = no
-			age = 16
+			is_adult = yes
 			prestige = 500
 			wealth = 200
 		}
@@ -247,7 +250,7 @@ decisions = {
 					limit = {
 						is_feudal = yes
 						NOT = { has_job_title = job_spiritual }
-						age = 16
+						is_adult = yes
 						NOT = { age = 50 }
 						NOT = { trait = incapable }
 						prisoner = no	
@@ -283,7 +286,7 @@ decisions = {
 		is_high_prio = yes
 		potential = {
 			has_dlc = "Legacy of Rome"
-			age = 16
+			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
 			NOT = { has_global_flag = rome_restored }
@@ -434,7 +437,7 @@ decisions = {
 		is_high_prio = yes
 		potential = {
 			has_dlc = "Legacy of Rome"
-			age = 16
+			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
 			OR = {
@@ -477,59 +480,22 @@ decisions = {
 		}
 	}
 	
-	catholic_mend_great_schism = {
-		is_high_prio = yes
-		potential = {
-			has_dlc = "Legacy of Rome"
-			age = 16
-			prisoner = no
-			NOT = { trait = incapable }
-			OR = {
-				has_landed_title = k_papal_state
-				has_landed_title = e_hre
-				has_landed_title = e_latin_empire
-				has_landed_title = e_byzantium
-				has_landed_title = e_roman_empire
-				AND = {
-					NOT = { e_hre = { owner = { religion = catholic } } }
-					NOT = { e_latin_empire = { owner = { religion = catholic } } }
-					NOT = { e_byzantium = { owner = { religion = catholic } } }
-					NOT = { e_roman_empire = { owner = { religion = catholic } } }
-					tier = emperor
-				}
-			}
-			religion = catholic
-			NOT = { has_global_flag = schism_mended }
-		}
-		allow = {
-			piety = 2000
-			religion_authority = 0.9
-			completely_controls = c_byzantion
-			b_hagiasophia = { holder_scope = { religion = catholic } }
-			completely_controls = c_antiocheia
-			b_antiocheia = { holder_scope = { religion = catholic } }
-			completely_controls = c_jerusalem
-			b_jerusalem = { holder_scope = { religion = catholic } }
-			completely_controls = c_alexandria
-			b_alexandria = { holder_scope = { religion = catholic } }
-			completely_controls = c_roma
-			b_roma = { holder_scope = { religion = catholic } }
-		}
-		effect = {
-			narrative_event = { id = ancrel.2210 tooltip = EVTTOOLTIPLoR.210}
-			set_global_flag = schism_mended
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
 	claim_constantinople = {
 		is_high_prio = yes
 		potential = {
-			has_dlc = "Legacy of Rome"
+			OR = {
+				AND = {
+					has_dlc = "Legacy of Rome"
+					has_landed_title = e_byzantium
+				}
+				AND = {
+					independent = yes
+					culture = turkish
+					religion_group = muslim
+				}
+			}
 			NOT = { has_landed_title = c_byzantion }
-			has_landed_title = e_byzantium
+
 			any_realm_lord = { 
 				AND = {
 					ai = yes
@@ -628,6 +594,9 @@ decisions = {
 					}
 				}
 			}
+			NOT = { trait = slothful }
+			NOT = { trait = content }
+			NOT = { trait = imbecile }
 		}
 		allow = {
 			liege = {
@@ -636,8 +605,10 @@ decisions = {
 					value = 25
 				}
 			}
+			prestige = 100
 		}
 		effect = {
+			prestige = -50
 			set_character_flag = petition_doge_for_tp_taken
 			liege = {
 				letter_event = { id = REP.500 days = 5 tooltip = EVTTOOLTIP_REP_500 }
@@ -670,11 +641,16 @@ decisions = {
 					}
 				}
 			}
+			NOT = { trait = slothful }
+			NOT = { trait = content }
+			NOT = { trait = imbecile }
 		}
 		allow = {
+			prestige = 100
 			is_merchant_republic = yes
 		}
 		effect = {
+			prestige = -50
 			set_character_flag = usurp_tp_taken
 			if = {
 				limit = {

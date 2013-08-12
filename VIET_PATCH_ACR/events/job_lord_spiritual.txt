@@ -36,7 +36,24 @@ character_event = {
 	
 	trigger = {
 		has_job_action = action_inquisition
+		NOT = {
+			AND = {
+				OR = {
+					religion = orthodox
+					religion = miaphysite
+					religion = nestorian
+				}
+				OR = {
+					location = { religion = orthodox }
+					location = { religion = miaphysite }
+					location = { religion = nestorian } 
+				}
+			}
+		}
 		NOT = { location = { religion = ROOT } }
+		liege = {
+			NOT = { ROOT = { location = { religion = PREVPREV } } }
+		}
 		location = {
 			owner = { same_realm = ROOT }
 		}
@@ -89,19 +106,19 @@ character_event = {
 			learning = 13
 		}
 		modifier = {
-			factor = 2.0
+			factor = 1.5
 			NOT = { religion_authority = 0.4 }
 		}
 		modifier = {
-			factor = 4.0
+			factor = 2.5
 			NOT = { religion_authority = 0.2 }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
 			religion_authority = 0.6
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.8
 			religion_authority = 0.8
 		}
 		modifier = {
@@ -219,6 +236,20 @@ character_event = {
 			any_province_character = {
 				NOT = { character = ROOT }
 				NOT = { is_liege_of = ROOT }
+				NOT = {
+					AND = {
+						OR = {
+							religion = orthodox
+							religion = miaphysite
+							religion = nestorian
+						}
+						OR = {
+							ROOT = { religion = orthodox }
+							ROOT = { religion = miaphysite }
+							ROOT = { religion = nestorian } 
+						}
+					}
+				}
 				NOT = { religion = ROOT }
 				OR = {
 					is_ruler = no
@@ -227,6 +258,9 @@ character_event = {
 						mercenary = no
 						holy_order = no
 					}
+				}
+				liege = {
+					NOT = { religion = PREV }
 				}
 				same_realm = ROOT
 			}

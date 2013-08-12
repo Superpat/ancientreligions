@@ -37,7 +37,11 @@ decisions = {
 			always = no
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 0.05
+			modifier = {
+				factor = 2
+				trait = content
+			}
 		}
 	}
 	
@@ -261,6 +265,88 @@ decisions = {
 		}
 	}
 	
+	convert_to_icelandic = {
+		potential = {
+			culture = norse
+			is_ruler = yes
+			capital_scope = {
+				kingdom = { title = k_iceland }
+			}
+			any_realm_province = {
+				culture = icelandic
+			}
+		}
+		allow = {
+			culture = norse
+		}
+		effect = {
+			culture = icelandic
+			any_courtier = {
+				limit = {
+					culture = norse
+					employer = { character = ROOT }
+					dynasty = ROOT
+				}
+				culture = icelandic
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.2 # Slow it down a bit
+			}
+			modifier = {
+				factor = 0.01
+				capital_scope = {
+					NOT = { culture = icelandic }
+				}
+			}
+			modifier = {
+				factor = 2.0
+				liege = { culture = icelandic }
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					num = 2
+					culture = icelandic
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					num = 4
+					culture = icelandic
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					num = 6
+					culture = icelandic
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					num = 8
+					culture = icelandic
+				}
+			}
+			modifier = {
+				factor = 1.1
+				num_culture_realm_provs = {
+					num = 10
+					culture = icelandic
+				}
+			}
+		}
+	}
+
 	convert_to_swedish = {
 		potential = {
 			culture = norse
@@ -834,7 +920,7 @@ decisions = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 0.1
 		}
 	}
 	
@@ -882,7 +968,7 @@ decisions = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 0.1
 		}
 	}
 	
@@ -930,7 +1016,7 @@ decisions = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 0.1
 		}
 	}
 	
@@ -978,7 +1064,7 @@ decisions = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 0.1
 		}
 	}
 	
@@ -1026,7 +1112,7 @@ decisions = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 0.1
 		}
 	}
 	
@@ -1074,7 +1160,151 @@ decisions = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 0.1
+		}
+	}
+	
+	# Pagans can convert to the Nestorian faith if their wife or a concubine is a believer
+	convert_to_spouse_nestorian = {
+		potential = {
+			is_playable = yes
+			religion_group = pagan_group
+			controls_religion = no
+			NOT = { trait = zealous }
+			OR = {
+				any_spouse = {
+					religion = nestorian
+					hidden_tooltip = {
+						is_alive = yes
+					}
+				}
+				any_consort = {
+					religion = nestorian
+					hidden_tooltip = {
+						is_alive = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = -500
+			religion_authority = {
+				modifier = ruler_converted_from
+			}
+			
+			religion = nestorian
+			
+			hidden_tooltip = {
+				religion_authority = {
+					modifier = ruler_converted_to
+				}
+			}
+			piety = 200
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0.1
+		}
+	}
+	
+	# Pagans can convert to the Hindu faith if their wife or a concubine is a believer
+	convert_to_spouse_hindu = {
+		potential = {
+			is_playable = yes
+			religion_group = pagan_group
+			controls_religion = no
+			NOT = { trait = zealous }
+			OR = {
+				any_spouse = {
+					religion = hindu
+					hidden_tooltip = {
+						is_alive = yes
+					}
+				}
+				any_consort = {
+					religion = hindu
+					hidden_tooltip = {
+						is_alive = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = -500
+			religion_authority = {
+				modifier = ruler_converted_from
+			}
+			
+			religion = hindu
+			
+			hidden_tooltip = {
+				religion_authority = {
+					modifier = ruler_converted_to
+				}
+			}
+			piety = 200
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0.1
+		}
+	}
+	
+	# Pagans can convert to the Buddhist faith if their wife or a concubine is a believer
+	convert_to_spouse_buddhist = {
+		potential = {
+			is_playable = yes
+			religion_group = pagan_group
+			controls_religion = no
+			NOT = { trait = zealous }
+			OR = {
+				any_spouse = {
+					religion = buddhist
+					hidden_tooltip = {
+						is_alive = yes
+					}
+				}
+				any_consort = {
+					religion = buddhist
+					hidden_tooltip = {
+						is_alive = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = -500
+			religion_authority = {
+				modifier = ruler_converted_from
+			}
+			
+			religion = buddhist
+			
+			hidden_tooltip = {
+				religion_authority = {
+					modifier = ruler_converted_to
+				}
+			}
+			piety = 200
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0.1
 		}
 	}
 	

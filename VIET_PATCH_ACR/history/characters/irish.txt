@@ -792,66 +792,6 @@
 	}
 }
 
-131521 = {
-	name="Glúniairn"
-	# AKA: Gluniairn
-	dynasty=20084
-	martial=4
-	diplomacy=4
-	intrigue=4
-	stewardship=8
-	religion="catholic"
-	culture="irish"
-	trait="tough_soldier"
-	father=5790
-	mother=131520
-	960.1.2={
-		birth="960.1.2"
-	}
-	989.1.2={
-		death="989.1.2"
-	}
-}
-
-131522 = {
-	name="Gilla Ciaráin"
-	# AKA: Gilla Ciarain
-	dynasty=20084
-	martial=5
-	diplomacy=4
-	intrigue=3
-	stewardship=4
-	religion="catholic"
-	culture="irish"
-	trait="tough_soldier"
-	father=131521
-	979.1.2={
-		birth="979.1.2"
-	}
-	1014.1.24={
-		death="1014.1.24"
-	}
-}
-
-131523 = {
-	name="Sihtric"
-	dynasty=20084
-	martial=3
-	diplomacy=5
-	intrigue=3
-	stewardship=5
-	religion="catholic"
-	culture="irish"
-	trait="tough_soldier"
-	father=131521
-	980.1.2={
-		birth="980.1.2"
-	}
-	1014.1.24={
-		death="1014.1.24"
-	}
-}
-
 20054 = {
 	name="Seoán"
 	# AKA: Seoan
@@ -14753,89 +14693,6 @@
 	}
 }
 
-159291 = {
-	name="Sihtric" #Swtrig ab Anlaff
-	dynasty=20084
-	religion="catholic"
-	culture="irish"
-	father=1027
-	mother=1028
-	1014.1.1={
-		birth="1014.1.1" #unknown
-	}
-	1030.4.1={
-		death="1030.4.1"
-	}
-}
-
-1025 = {
-	name="Sihtric" #Sigtrygg
-	# AKA: Sigtrygg Silkbeard
-	dynasty=20084
-	martial=5
-	diplomacy=8
-	intrigue=7
-	stewardship=7
-	religion="catholic"
-	culture="irish"
-	trait="intricate_webweaver"
-	father=5790
-	mother=166102
-	970.1.1={
-		birth="970.1.1"
-	}
-	1000.1.2={
-		add_spouse=1026
-	}
-	1042.1.5={
-		death="1042.1.5"
-	}
-}
-
-1027 = {
-	name="Amlaíb" #Olaf
-	dynasty=20084
-	martial=6
-	diplomacy=6
-	intrigue=4
-	stewardship=4
-	religion="catholic"
-	culture="irish"
-	trait="tough_soldier"
-	father=1025
-	mother=1026
-	1000.1.1={
-		birth="1000.1.1"
-	}
-	1018.1.2={
-		add_spouse=1028
-	}
-	1034.1.5={
-		death="1034.1.5"
-	}
-}
-
-1029 = {
-	name="Ragnailt" #Ragnhild
-	female = yes
-	dynasty=20084
-	martial=6
-	diplomacy=6
-	intrigue=4
-	stewardship=4
-	religion="catholic"
-	culture="irish"
-	trait="flamboyant_schemer"
-	father=1027
-	mother=1028
-	1018.1.1={
-		birth="1018.1.1"
-	}
-	1065.1.5={
-		death="1065.1.5"
-	}
-}
-
 163114 = {
 	name="Blathmac" 
 	dynasty=819
@@ -16231,22 +16088,22 @@
 	}
 }
 
-166103 = {
-	name="Máel Muire"
-	female=yes
-	dynasty=20084
-	religion="catholic"
-	culture="irish"
-	father=5790
-	mother=131520
-	trait="fair"
-	977.1.1={
-		birth="977.1.1"
-	}
-	1021.1.1={
-		death="1021.1.1"
-	}
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 166104 = {
 	name="Conchobar"

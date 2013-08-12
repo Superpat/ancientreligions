@@ -52,6 +52,19 @@ job_marshal = {
 		is_adult = yes
 		prisoner = no
 		NOT = { trait = incapable }
+		NOT = {
+			AND = {
+				religion_group = christian
+				is_priest = yes
+				OR ={
+					NOT = { trait = cruel }	
+					NOT = { trait = cynical }
+					NOT = { trait = ambitious }	
+					NOT = { trait = skilled_tactician }
+					NOT = { trait = brilliant_strategist }	
+				}
+			}
+		}
 	}
 	
 	gain_effect = {
@@ -104,21 +117,6 @@ job_spymaster = {
 	monthly_salary = 0.1
 	
 	allow = {
-		OR = {
-			is_female = no
-			liege = { 
-				OR = {
-					mother = { character = FROM }
-					spouse = { character = FROM }
-				}
-			}
-			AND = {
-				religion_group = pagan_group
-				liege = {
-					religion_group = pagan_group
-				}
-			}
-		}
 		is_adult = yes
 		prisoner = no
 		NOT = { trait = incapable }
@@ -163,6 +161,15 @@ job_spiritual = {
 				NOT = { religion = tengri_pagan_reformed}
 			}
 		}
+		OR = {
+			trait = sacred_reindeer
+			liege = {
+				AND = {
+					NOT = { religion = finnish_pagan }
+					NOT = { religion = finnish_pagan_reformed}			
+				}
+			}
+		}
 		
 		NOT = { trait = incapable }
 		
@@ -175,6 +182,8 @@ job_spiritual = {
 				NOT = { is_heresy_of = orthodox }
 				NOT = { religion = miaphysite }
 				NOT = { is_heresy_of = miaphysite }
+				NOT = { religion = nestorian }
+				NOT = { is_heresy_of = nestorian }
 			}
 		}
 		

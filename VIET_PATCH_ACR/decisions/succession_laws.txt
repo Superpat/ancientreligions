@@ -10,7 +10,10 @@ succession_laws = {
 	
 		potential = {
 			holder_scope = {
-				NOT = { religion_group = muslim }
+				OR = {
+					NOT = {religion_group = muslim }
+					culture_group = west_african 
+				}
 				is_merchant_republic = no
 				is_patrician = no
 			}
@@ -25,7 +28,12 @@ succession_laws = {
 					tier = baron
 					is_feudal = yes
 				}
-				holder_scope = { is_feudal = yes }
+				holder_scope = {
+					AND = {
+						is_feudal = yes
+						NOT = { has_landed_title = e_hre}						
+					}
+				}
 			}
 			is_primary_type_title = no
 		}
@@ -34,7 +42,10 @@ succession_laws = {
 		}
 		revoke_allowed = {
 			always = no
-		}			
+		}
+		ai_will_do = {
+			factor = 0.3
+		}		
 	}
 	
 	succ_seniority = {
@@ -45,21 +56,27 @@ succession_laws = {
 	
 		potential = {
 			holder_scope = {
-				NOT = { religion_group = muslim }
-				is_merchant_republic = no
-				
+
+
+
 				OR = {
-					NOT = { religion_group = pagan_group }
+					AND = {
+						NOT = {religion_group = muslim }
+						NOT = {religion_group = pagan_group }
+					}
+					culture_group = west_african 
 					is_reformed_religion = yes
 					religion = hellenic_pagan
 					is_patrician = yes
 				}
+				is_merchant_republic = no
 				
 				OR = {
 					is_republic = no
 					is_patrician = yes
 				}
 			}
+			NOT = { holder_scope = { culture = irish } }
 			OR = {
 				is_landless_type_title = no
 				is_tribal_type_title = yes
@@ -69,7 +86,12 @@ succession_laws = {
 					tier = baron
 					is_feudal = yes
 				}
-				holder_scope = { is_feudal = yes }
+			holder_scope = {
+					AND = {
+						is_feudal = yes
+						NOT = { has_landed_title = e_hre}						
+					}
+				}
 			}
 			
 			is_primary_type_title = no
@@ -101,7 +123,10 @@ succession_laws = {
 		}
 		revoke_allowed = {
 			always = no
-		}			
+		}
+		ai_will_do = {
+			factor = 0.05
+		}		
 	}
 	
 	succ_primogeniture = {
@@ -111,9 +136,13 @@ succession_laws = {
 		dynasty_opinion = -5
 		potential = {
 			holder_scope = {
-				NOT = { religion_group = muslim }
+
 				OR = {
-					NOT = { religion_group = pagan_group }
+					AND = {
+						NOT = {religion_group = muslim }
+						NOT = {religion_group = pagan_group }
+					}
+					culture_group = west_african 
 					is_reformed_religion = yes
 					religion = hellenic_pagan
 				}
@@ -121,6 +150,7 @@ succession_laws = {
 				is_merchant_republic = no
 				is_patrician = no
 			}
+           		NOT = { holder_scope = { culture = irish } }
 			OR = {
 				is_landless_type_title = no
 				is_tribal_type_title = yes
@@ -131,7 +161,12 @@ succession_laws = {
 					tier = baron
 					is_feudal = yes
 				}
-				holder_scope = { is_feudal = yes }
+				holder_scope = {
+					AND = {
+						is_feudal = yes
+						NOT = { has_landed_title = e_hre}						
+					}
+				}
 			}
 		}
 		allow = {
@@ -153,7 +188,10 @@ succession_laws = {
 		}
 		revoke_allowed = {
 			always = no
-		}			
+		}
+		ai_will_do = {
+			factor = 0.05
+		}		
 	}
 	
 	succ_feudal_elective = {
@@ -163,15 +201,21 @@ succession_laws = {
 		vassal_opinion = 20
 		potential = {
 			holder_scope = {
-				NOT = { religion_group = muslim }
-				is_merchant_republic = no
-				is_patrician = no
-				
+
+
+
+
 				OR = {
-					NOT = { religion_group = pagan_group }
+					AND = {
+						NOT = {religion_group = muslim }
+						NOT = {religion_group = pagan_group }
+					}
+					culture_group = west_african 
 					is_reformed_religion = yes
 					religion = hellenic_pagan
 				}
+				is_merchant_republic = no
+				is_patrician = no
 			}
 			OR = {
 				is_landless_type_title = no
@@ -192,7 +236,10 @@ succession_laws = {
 		}
 		revoke_allowed = {
 			always = no
-		}			
+		}
+		ai_will_do = {
+			factor = 0.05
+		}		
 	}
 	
 	succ_tanistry = {
@@ -205,7 +252,10 @@ succession_laws = {
 				NOT = { religion_group = muslim }
 				is_merchant_republic = no
 				is_patrician = no
-				culture_group = celtic
+				OR = {
+						culture_group = celtic
+						culture = saxon
+				}
 			}
 			OR = {
 				is_landless_type_title = no
@@ -218,7 +268,12 @@ succession_laws = {
 					tier = baron
 					is_feudal = yes
 				}
-				holder_scope = { is_feudal = yes }
+				holder_scope = {
+					AND = {
+						is_feudal = yes
+						NOT = { has_landed_title = e_hre}						
+					}
+				}
 			}
 		}
 		effect = {
@@ -226,7 +281,7 @@ succession_laws = {
 		}
 		revoke_allowed = {
 			always = no
-		}			
+		}	
 	}
 	
 	succ_ultimogeniture = {
@@ -248,7 +303,7 @@ succession_laws = {
 						NOT = { religion = slavic_pagan }
 					}
 				}
-				
+				NOT = { culture = irish }
 				NOT = { religion_group = muslim }
 				is_merchant_republic = no
 				is_patrician = no
@@ -263,7 +318,12 @@ succession_laws = {
 					tier = baron
 					is_feudal = yes
 				}
-				holder_scope = { is_feudal = yes }
+				holder_scope = {
+					AND = {
+						is_feudal = yes
+						NOT = { has_landed_title = e_hre}						
+					}
+				}
 			}
 		}
 		allow = {
@@ -283,6 +343,13 @@ succession_laws = {
 		revoke_allowed = {
 			always = no
 		}
+		ai_will_do = {
+			factor = 0.05
+			modifier = {
+				factor = 0
+				NOT = { culture = mongol }
+			}
+		}
 	}
 
 	succ_turkish_succession = {
@@ -297,7 +364,9 @@ succession_laws = {
 			holder_scope = {
 				is_republic = no
 				is_merchant_republic = no
+				is_patrician = no
 				religion_group = muslim
+				NOT = { holder_scope = { culture_group = west_african } }
 			}
 			is_primary_type_title = no
 		}
@@ -400,8 +469,8 @@ gender_laws = {
 		potential = {
 			holder_scope = { 
 				NOT = { religion_group = muslim }
-				NOT = { religion = tengri_pagan_reformed }
-				NOT = { religion = tengri_pagan }
+
+
 				has_horde_culture = no
 				is_merchant_republic = no
 				is_patrician = no
@@ -424,7 +493,10 @@ gender_laws = {
 		}
 		revoke_allowed = {
 			always = no
-		}			
+		}
+		ai_will_do = {
+			factor = 0
+		}		
 	}
 	agnatic_succession = {
 		female_dynasty_opinion = -10
@@ -437,7 +509,10 @@ gender_laws = {
 		}
 		revoke_allowed = {
 			always = no
-		}			
+		}
+		ai_will_do = {
+			factor = 1
+		}		
 	}
 	true_cognatic_succession = {
 		male_dynasty_opinion = -10
@@ -480,7 +555,10 @@ gender_laws = {
 		}
 		revoke_allowed = {
 			always = no
-		}			
+		}
+		ai_will_do = {
+			factor = 0
+		}		
 	}
 	
 	enatic_succession = {

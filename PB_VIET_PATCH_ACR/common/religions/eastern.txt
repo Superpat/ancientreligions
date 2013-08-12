@@ -1,0 +1,169 @@
+eastern_group = {
+	has_coa_on_barony_only = no
+	graphical_culture = mongolgfx
+	playable = yes
+	
+	buddhist = { # Buddhism
+		graphical_culture = mongolgfx
+
+		icon = 52
+		heresy_icon = 53
+		
+		color = { 0.99 0.6 0.2 }
+		crusade_name = "HOLY_WAR"
+		god_names = {
+			GOD_THE_BUDDHAS GOD_THE_BODHISATTVAS GOD_THE_ANCESTORS Shakyamuni Amitabha Bhaisajyaguru Budai Vairocana Manjusri Samantabhadra Vajrapani Avalokiteshvara Maitreya
+		}
+		
+		scripture_name = THE_SUTRAS
+		
+		unit_modifier = {		
+			garrison_size = 0.1
+			
+			key = "DEF_RELIGION"
+		}
+		unit_home_modifier = {
+			land_morale = 0.25
+			light_infantry_defensive = 0.25
+			heavy_infantry_defensive = 0.25
+			pikemen_defensive = 0.25
+			light_cavalry_defensive = 0.25
+			knights_defensive = 0.25
+			archers_defensive = 0.25
+			horse_archers_defensive = 0.25
+			
+			garrison_size = 0.1
+			
+			key = "DEF_RELIGION_HOME_TERRITORY"
+		}
+
+		max_consorts = 2
+		can_grant_divorce = yes
+		
+		aggression = 0.6 # AI aggression factor
+		
+	}	
+	bon = { # Tibetan Bon
+		graphical_culture = mongolgfx
+
+		icon = 52
+		heresy_icon = 53
+		
+		color = { 0.99 0.6 0.2 }
+		parent = buddhist
+		crusade_name = "HOLY_WAR"
+		god_names = {
+			GOD_THE_BUDDHAS GOD_THE_BODHISATTVAS GOD_THE_ANCESTORS Shakyamuni Amitabha Bhaisajyaguru Budai Vairocana Manjusri Samantabhadra Vajrapani Avalokiteshvara Maitreya
+		}
+		
+		scripture_name = THE_SUTRAS
+		
+		unit_modifier = {		
+			garrison_size = 0.1
+			
+			key = "DEF_RELIGION"
+		}
+		unit_home_modifier = {
+			land_morale = 0.25
+			light_infantry_defensive = 0.25
+			heavy_infantry_defensive = 0.25
+			pikemen_defensive = 0.25
+			light_cavalry_defensive = 0.25
+			knights_defensive = 0.25
+			archers_defensive = 0.25
+			horse_archers_defensive = 0.25
+			
+			garrison_size = 0.1
+			
+			key = "DEF_RELIGION_HOME_TERRITORY"
+		}
+
+		max_consorts = 2
+		can_grant_divorce = yes
+		
+		aggression = 0.6 # AI aggression factor
+		
+	}	
+	maitreyaism = { # Maitreyan Cults
+		graphical_culture = mongolgfx
+
+		icon = 52
+		heresy_icon = 53
+		
+		color = { 0.99 0.6 0.2 }
+		parent = buddhist
+		crusade_name = "HOLY_WAR"
+		god_names = {
+			GOD_THE_BUDDHAS GOD_THE_BODHISATTVAS GOD_THE_ANCESTORS Shakyamuni Amitabha Bhaisajyaguru Budai Vairocana Manjusri Samantabhadra Vajrapani Avalokiteshvara Maitreya
+		}
+		
+		scripture_name = THE_SUTRAS
+		
+		unit_modifier = {		
+			garrison_size = 0.1
+			
+			key = "DEF_RELIGION"
+		}
+		unit_home_modifier = {
+			land_morale = 0.25
+			light_infantry_defensive = 0.25
+			heavy_infantry_defensive = 0.25
+			pikemen_defensive = 0.25
+			light_cavalry_defensive = 0.25
+			knights_defensive = 0.25
+			archers_defensive = 0.25
+			horse_archers_defensive = 0.25
+			
+			garrison_size = 0.1
+			
+			key = "DEF_RELIGION_HOME_TERRITORY"
+		}
+
+		max_consorts = 2
+		can_grant_divorce = yes
+		
+		aggression = 0.6 # AI aggression factor
+		
+	}	
+	sammitiya = { # Sammitiya Sect
+		graphical_culture = mongolgfx
+
+		icon = 52
+		heresy_icon = 53
+		
+		color = { 0.99 0.6 0.2 }
+		parent = buddhist
+		crusade_name = "HOLY_WAR"
+		god_names = {
+			GOD_THE_BUDDHAS GOD_THE_BODHISATTVAS GOD_THE_ANCESTORS Shakyamuni Amitabha Bhaisajyaguru Budai Vairocana Manjusri Samantabhadra Vajrapani Avalokiteshvara Maitreya
+		}
+		
+		scripture_name = THE_SUTRAS
+		
+		unit_modifier = {		
+			garrison_size = 0.1
+			
+			key = "DEF_RELIGION"
+		}
+		unit_home_modifier = {
+			land_morale = 0.25
+			light_infantry_defensive = 0.25
+			heavy_infantry_defensive = 0.25
+			pikemen_defensive = 0.25
+			light_cavalry_defensive = 0.25
+			knights_defensive = 0.25
+			archers_defensive = 0.25
+			horse_archers_defensive = 0.25
+			
+			garrison_size = 0.1
+			
+			key = "DEF_RELIGION_HOME_TERRITORY"
+		}
+
+		max_consorts = 2
+		can_grant_divorce = yes
+		
+		aggression = 0.6 # AI aggression factor
+		
+	}
+}

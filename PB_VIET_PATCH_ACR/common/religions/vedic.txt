@@ -1,0 +1,69 @@
+vedic = {
+	has_coa_on_barony_only = no
+	graphical_culture = muslimgfx
+	playable = yes
+
+	hindu = {
+		graphical_culture = muslimgfx
+		icon = 50
+		heresy_icon = 51
+		color = { 0.4 0.6 0.8 }
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_VEDAS
+		god_names = {
+			Brahman Vishnu Shiva Devi Ganesha Indra Agna Yama Surya Varuna Pavana Kubera Soma Parvati
+		}
+		priests_can_marry = yes
+		psc_marriage = no
+		max_wives = 2
+		can_grant_divorce = yes
+	}
+	lingayat = {
+		graphical_culture = muslimgfx
+		icon = 50
+		heresy_icon = 51
+		color = { 0.4 0.6 0.8 }
+		parent = hindu
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_VEDAS
+		god_names = {
+			Brahman Vishnu Shiva Devi Ganesha Indra Agna Yama Surya Varuna Pavana Kubera Soma Parvati
+		}
+		priests_can_marry = yes
+		psc_marriage = no
+		max_wives = 2
+		can_grant_divorce = yes
+	}
+	bhakti = {
+		graphical_culture = muslimgfx
+		icon = 50
+		heresy_icon = 51
+		color = { 0.4 0.6 0.8 }
+		parent = hindu
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_VEDAS
+		god_names = {
+			Brahman Vishnu Shiva Devi Ganesha Indra Agna Yama Surya Varuna Pavana Kubera Soma Parvati
+		}
+		priests_can_marry = yes
+		psc_marriage = no
+		max_wives = 2
+		can_grant_divorce = yes
+	}	
+	carvaka = {
+		graphical_culture = muslimgfx
+		icon = 50
+		heresy_icon = 51
+		color = { 0.4 0.6 0.8 }
+		parent = hindu
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_VEDAS
+		god_names = {
+			Brahman Vishnu Shiva Devi Ganesha Indra Agna Yama Surya Varuna Pavana Kubera Soma Parvati
+		}
+		priests_can_marry = yes
+		psc_marriage = no
+		max_wives = 2
+		can_grant_divorce = yes
+	}	
+}

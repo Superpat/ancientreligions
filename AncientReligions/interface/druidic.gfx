@@ -112,4 +112,9 @@ spriteTypes = {
 		texturefile = "gfx\\event_pictures\funeral_pyre.tga"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_evt_banshee"
+		texturefile = "gfx\\event_pictures\banshee.tga"
+		allwaystransparent = yes
+	}
 }

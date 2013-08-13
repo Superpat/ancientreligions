@@ -1,12 +1,13 @@
 #######################################
 #
-# Rebirth of Druidism
+# ANCIENT RELIGIONS
+# - Rebirth of Druidism
 #
 # Event ID ancrel.0000 - ancrel.0009 reserved
 #
 #######################################
 
-# Written by Superskierpat
+# Written by Patrick Marchand
 
 namespace = ancrel
 

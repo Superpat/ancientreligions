@@ -1,6 +1,7 @@
 #######################################
 #
-# Vestales
+# ANCIENT RELIGIONS
+# - Vestales
 #
 # Event ID ancrel.2120 - ancrel.2129 reserved
 #

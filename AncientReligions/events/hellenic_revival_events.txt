@@ -1,6 +1,7 @@
 #######################################
 #
-# Revival of the Hellenic religion
+# ANCIENT RELIGIONS
+# - Revival of the Hellenic religion
 #
 # Event ID ancrel.2100 - ancrel.2109 reserved
 #

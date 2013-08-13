@@ -1,6 +1,7 @@
 #######################################
 #
-# Druidism Headhunters
+# ANCIENT RELIGIONS
+# - Druidic Headhunters
 #
 # Event ID ancrel.0010 - ancrel.0019 reserved
 #

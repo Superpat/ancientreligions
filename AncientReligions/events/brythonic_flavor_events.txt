@@ -1,0 +1,13 @@
+###################################
+#
+# ANCIENT RELIGIONS
+# - Brythonic Flavor Events
+#
+# Event ID ancrel.0150 -
+#
+###################################
+
+# Written by Patrick Marchand
+
+namespace = ancrel
+

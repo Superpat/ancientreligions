@@ -1,0 +1,13 @@
+###################################
+#
+# ANCIENT RELIGIONS
+# - Hellenic Flavor Events
+#
+# Event ID ancrel.2240 -
+#
+###################################
+
+# Written by Patrick Marchand
+
+namespace = ancrel
+

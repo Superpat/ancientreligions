@@ -1,0 +1,70 @@
+###################################
+#
+# ANCIENT RELIGIONS
+# - Gaelic Flavor Events
+#
+# Event ID ancrel.1252 -
+#
+###################################
+
+# Written by Patrick Marchand
+
+namespace = ancrel
+
+character_event = {
+	id = ancrel.1252
+	desc = EVTDESCancrel.1252
+	picture = GFX_evt_banshee
+	border = GFX_event_normal_frame_religion
+	
+		trigger = {
+		OR = {
+			religion = gaelic_pagan
+			religion = gaelic_pagan_reformed
+		}
+		is_abroad = no
+			
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1000
+
+		modifier = {
+			factor = 0.5
+			trait = zealous
+		}
+		modifier = {
+			factor = 2.0
+			trait = cynical
+		}
+		modifier = {
+			factor = 0.5
+			trait = paranoid
+		}
+		modifier = {
+			factor = 0.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = humble
+		}
+		modifier = {
+			factor = 1.5
+			trait = content
+		}
+		modifier = {
+			factor = 0.4
+			trait = wounded
+		}
+		modifier = {
+			factor = 0.4
+			trait = ill
+		}
+	}
+	
+	option = {
+		name = EVTOPTAancrel.1252
+	}
+}

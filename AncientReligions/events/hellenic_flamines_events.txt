@@ -1,6 +1,7 @@
 #######################################
 #
-# Flamines maiores
+# ANCIENT RELIGIONS
+# - Flamines Maiores
 #
 # Event ID ancrel.2110 - ancrel.2119 reserved
 #

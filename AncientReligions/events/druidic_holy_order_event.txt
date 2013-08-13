@@ -1,12 +1,13 @@
 #######################################
 #
-# The Sons of Gwydion
+# ANCIENT RELIGIONS
+# - The Sons of Gwydion
 #
 # Event ID ancrel.0110 - ancrel.0149 reserved
 #
 #######################################
 
-# Written by Superskierpat
+# Written by Patrick Marchand
 
 namespace = ancrel
 

@@ -1,6 +1,7 @@
 #######################################
 #
-# The Fianna
+# ANCIENT RELIGIONS
+# - The Fianna
 #
 # Event ID ancrel.1150 - ancrel.1189 reserved
 #

@@ -130,15 +130,18 @@ de_jure_laws = {
 		allow = {
 			holder_scope = { 
 				is_republic = no 
-				hidden_tooltip = {
-					NOT = { religion = norse_pagan }
-					NOT = { religion = tengri_pagan }
-					NOT = { religion = baltic_pagan }
-					NOT = { religion = finnish_pagan }
-					NOT = { religion = aztec }
-					NOT = { religion = slavic_pagan }
+				
+				custom_tooltip = { 
+					text = TT_NOT_UNREFORMED_PAGAN
+					hidden_tooltip = {
+						NOT = { religion = norse_pagan }
+						NOT = { religion = tengri_pagan }
+						NOT = { religion = baltic_pagan }
+						NOT = { religion = finnish_pagan }
+						NOT = { religion = aztec }
+						NOT = { religion = slavic_pagan }
+					}
 				}
-				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
 			OR = {
 				has_law = centralization_1
@@ -217,15 +220,17 @@ de_jure_laws = {
 		allow = {
 			holder_scope = { 
 				is_republic = no 
-				hidden_tooltip = {
-					NOT = { religion = norse_pagan }
-					NOT = { religion = tengri_pagan }
-					NOT = { religion = baltic_pagan }
-					NOT = { religion = finnish_pagan }
-					NOT = { religion = aztec }
-					NOT = { religion = slavic_pagan }
+				custom_tooltip = {
+					text = TT_NOT_UNREFORMED_PAGAN
+					hidden_tooltip = {
+						NOT = { religion = norse_pagan }
+						NOT = { religion = tengri_pagan }
+						NOT = { religion = baltic_pagan }
+						NOT = { religion = finnish_pagan }
+						NOT = { religion = aztec }
+						NOT = { religion = slavic_pagan }
+					}
 				}
-				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
 			OR = {
 				has_law = centralization_2
@@ -308,15 +313,17 @@ de_jure_laws = {
 		allow = {
 			holder_scope = { 
 				is_republic = no 
-				hidden_tooltip = {
-					NOT = { religion = norse_pagan }
-					NOT = { religion = tengri_pagan }
-					NOT = { religion = baltic_pagan }
-					NOT = { religion = finnish_pagan }
-					NOT = { religion = aztec }
-					NOT = { religion = slavic_pagan }
+				custom_tooltip = {
+					text = TT_NOT_UNREFORMED_PAGAN
+					hidden_tooltip = {
+						NOT = { religion = norse_pagan }
+						NOT = { religion = tengri_pagan }
+						NOT = { religion = baltic_pagan }
+						NOT = { religion = finnish_pagan }
+						NOT = { religion = aztec }
+						NOT = { religion = slavic_pagan }
+					}
 				}
-				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
 			has_law = centralization_3
 		}

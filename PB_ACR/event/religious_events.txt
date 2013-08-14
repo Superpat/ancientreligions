@@ -3612,7 +3612,6 @@ character_event = {
 				factor = 5
 				OR = {
 					is_reformed_religion = yes
-					religion = hellenic_pagan
 				}
 			}
 		}

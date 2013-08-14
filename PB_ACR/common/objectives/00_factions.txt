@@ -34,7 +34,6 @@ faction_succ_seniority = {
 			OR = {
 				NOT = { religion_group = pagan_group }
 				is_reformed_religion = yes
-				religion = hellenic_pagan
 			}
 		}
 		NOT = { religion_group = muslim }
@@ -1825,7 +1824,6 @@ faction_succ_feudal_elective = {
 			OR = {
 				NOT = { religion_group = pagan_group }
 				is_reformed_religion = yes
-				religion = hellenic_pagan
 			}
 		}
 		NOT = { religion_group = muslim }
@@ -2529,13 +2527,11 @@ faction_independence = {
 							OR = {
 								NOT = { religion_group = pagan_group }
 								is_reformed_religion = yes
-								religion = hellenic_pagan
 							}
 						}
 						OR = {
 							NOT = { ROOT = { religion_group = pagan_group } }
 							ROOT = { is_reformed_religion = yes }
-							ROOT = { religion = hellenic_pagan }
 						}
 					}
 					AND = {
@@ -2561,7 +2557,6 @@ faction_independence = {
 			OR = {
 				NOT = { religion_group = pagan_group }
 				is_reformed_religion = yes
-				religion = hellenic_pagan
 			}
 			liege = {
 				culture_group = ROOT
@@ -2625,7 +2620,6 @@ faction_independence = {
 			OR = {
 				NOT = { religion_group = pagan_group }
 				is_reformed_religion = yes
-				religion = hellenic_pagan
 			}
 			liege = {
 				NOT = { distance = { who = ROOT distance = 200 } }
@@ -2895,7 +2889,6 @@ faction_independence = {
 			OR = {
 				NOT = { religion_group = pagan_group }
 				is_reformed_religion = yes
-				religion = hellenic_pagan
 			}
 			liege = {
 				culture_group = ROOT
@@ -3023,7 +3016,6 @@ faction_independence = {
 			OR = {
 				NOT = { religion_group = pagan_group }
 				is_reformed_religion = yes
-				religion = hellenic_pagan
 			}
 			liege = {
 				NOT = { distance = { who = ROOT distance = 200 } }

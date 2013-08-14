@@ -134,7 +134,6 @@ de_jure_laws = {
 					OR = {
 						NOT = { religion_group = pagan_group }
 						religion = pagan
-						religion = hellenic_pagan
 						is_reformed_religion = yes
 					}
 				}
@@ -221,7 +220,6 @@ de_jure_laws = {
 					OR = {
 						NOT = { religion_group = pagan_group }
 						religion = pagan
-						religion = hellenic_pagan
 						is_reformed_religion = yes
 					}
 				}
@@ -332,7 +330,6 @@ de_jure_laws = {
 					OR = {
 						NOT = { religion_group = pagan_group }
 						religion = pagan
-						religion = hellenic_pagan
 						is_reformed_religion = yes
 					}
 				}

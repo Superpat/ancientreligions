@@ -75,7 +75,6 @@ succession_laws = {
 				OR = {
 					NOT = { religion_group = pagan_group }
 					is_reformed_religion = yes
-					religion = hellenic_pagan
 					is_patrician = yes
 				}
 				
@@ -169,7 +168,6 @@ succession_laws = {
 				OR = {
 					NOT = { religion_group = pagan_group }
 					is_reformed_religion = yes
-					religion = hellenic_pagan
 				}
 				
 				is_merchant_republic = no
@@ -250,7 +248,6 @@ succession_laws = {
 				OR = {
 					NOT = { religion_group = pagan_group }
 					is_reformed_religion = yes
-					religion = hellenic_pagan
 				}
 			}
 			OR = {
@@ -393,7 +390,6 @@ succession_laws = {
 					culture = mongol
 					NOT = { religion_group = pagan_group }
 					is_reformed_religion = yes
-					religion = hellenic_pagan
 				}
 				
 				NOT = { religion_group = muslim }

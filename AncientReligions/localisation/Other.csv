@@ -1,17 +1,23 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-;;;;;;;;;;
-HEAD_PRIEST_finnish_pagan_reformed;Ylipappi;Ylipappi;Ylipappi;;Ylipappi;;;;;;;;;x
-HEAD_PRIESTESS_finnish_pagan_reformed;Ylipapitar;Ylipapitar;Ylipapitar;;Ylipapitar;;;;;;;;;x
-HEAD_PRIEST_baltic_pagan_reformed;Vyriausiasis Kunigas;Vyriausiasis Kunigas;Vyriausiasis Kunigas;;Vyriausiasis Kunigas;;;;;;;;;x
-HEAD_PRIESTESS_baltic_pagan_reformed;Didelis Vaidilute;Didelis Vaidilute;Didelis Vaidilute;;Didelis Vaidilute;;;;;;;;;x
-HEAD_PRIEST_slavic_pagan_reformed;Vel'knaz;Vel'knaz;Vel'knaz;;Vel'knaz;;;;;;;;;x
-HEAD_PRIESTESS_slavic_pagan_reformed;Vel'knazka;Vel'knazka;Vel'knazka;;Vel'knazka;;;;;;;;;x
-finnish_pagan_reformed;Suomenusko;;;;;;;;;x
-norse_pagan_reformed;Asatru;;;;;;;;;x
-baltic_pagan_reformed;Romuva;;;;;;;;;x
-altaic_pagan_reformed;Tengri;;;;;;;;;x
-slavic_pagan_reformed;Rodnovery;;;;;;;;;x
-west_african_pagan_reformed;Akan;;;;;;;;;x
-finnish_pagan;Finnic;;;;;;;;;x
-baltic_pagan;Baltic;;;;;;;;;x
-altaic_pagan;Altaic;;;;;;;;;x
+;;;;;;;;;;;;;;
+finnish_pagan_reformed;Suomenusko;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+norse_pagan_reformed;Asatru;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+baltic_pagan_reformed;Romuva;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+altaic_pagan_reformed;Tengri;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+slavic_pagan_reformed;Rodnovery;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+west_african_pagan_reformed;Akan;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+finnish_pagan;Finnic;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+baltic_pagan;Baltic;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+altaic_pagan;Altaic;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+;;;;;;;;;;;;;;
+HEAD_PRIEST_finnish_pagan_reformed;Päänpappi;Päänpappi;Päänpappi;;Päänpappi;;;;;;;;;x
+HEAD_PRIESTESS_finnish_pagan_reformed;Päänpappitar;Päänpappitar;Päänpappitar;;Päänpappitar;;;;;;;;;x
+HEAD_PRIEST_baltic_pagan_reformed;Kriwe;Kriwe;Kriwe;;Kriwe;;;;;;;;;x
+HEAD_PRIESTESS_baltic_pagan_reformed;Kriwe Ponia;Kriwe Ponia;Kriwe Ponia;;Kriwe Ponia;;;;;;;;;x
+HEAD_PRIEST_slavic_pagan_reformed;Hlava Knez;Hlava Knez;Hlava Knez;;Hlava Knez;;;;;;;;;x
+HEAD_PRIESTESS_slavic_pagan_reformed;Hlava Knazka;Hlava Knazka;Hlava Knazka;;Hlava Knazka;;;;;;;;;x
+HEAD_PRIEST_african_pagan_reformed;Kungo Hogon;Kungo Hogon;Kungo Hogon;;Kungo Hogon;;;;;;;;;x
+HEAD_PRIESTESS_african_pagan_reformed;Musoo Hogon;Musoo Hogon;Musoo Hogon;;Musoo Hogon;;;;;;;;;;;;;x
+HEAD_PRIEST_aztec_pagan_reformed;Quetzalcoatl;Quetzalcoatl;Quetzalcoatl;;Quetzalcoatl;;;;;;;;;x
+HEAD_PRIESTESS_aztec_pagan_reformed;Quetzalcoatl;Quetzalcoatl;Quetzalcoatl;;Quetzalcoatl;;;;;;;;;;;;;x
+;;;;;;;;;;;;;;

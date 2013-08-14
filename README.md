@@ -5,8 +5,8 @@ Ancient Religions mod for Crusader Kings 2
 ===
 
 
-Current Version: 0.21
-For Crusader Kings 2 Version: 1.103
+Current Version: 0.3
+For Crusader Kings 2 Version: 1.11
 
 
 This mod aims at recreating dead or pseudo-dead religions in vanilla Crusader
@@ -28,6 +28,10 @@ Ancient Religions Installation:
 2. Extract the Ancient Religions folder and the ancientreligions.mod file to your mod-folder (Crusader Kings II\mod)
 3. Enable it when launching the game
 4. Have fun
+
+
+Compatibility Patches:
+This mod has compatibility patches or instructions for the following mods: Project Balance, Viet, PB + Viet, SWMH and Arko Armories. To use a compatibility patch, just extract it into the main folder and enable it, alongside all its dependencies, when you play the game.
 
 
 This mod is created, owned, and maintained by Patrick Marchand and Jon Severinsson. If you want to include it in any publicly released mod you need our permission.

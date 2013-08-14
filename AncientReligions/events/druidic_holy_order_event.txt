@@ -52,7 +52,7 @@ narrative_event = {
 	
 	option = {
 		name = EVTOPTAancrel.0111
-		custom_tooltip = gwydion_organized
+		custom_tooltip = { text = gwydion_organized }
 	}
 }
 

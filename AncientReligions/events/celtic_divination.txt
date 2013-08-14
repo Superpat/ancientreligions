@@ -157,38 +157,40 @@ character_event = {
 	
 	option = {
 		name = EVTOPTAancrel.0024
-		hidden_tooltip = {
-			if = {
-				limit = { 
-					any_courtier = {
-						prisoner = yes
-						host = { character = ROOT }
-						age = 16
-					}
-				}
-				random_courtier = {
+		custom_tooltip = {
+			text = divination_begin
+			hidden_tooltip = {
+				if = {
 					limit = { 
-						prisoner = yes 
-						host = { character = ROOT }
-						age = 16
-					}
-					character_event = { id = ancrel.0026 days = 5 }
-				}
-			}
-			if = {
-				limit = { 
-					NOT = {
 						any_courtier = {
 							prisoner = yes
 							host = { character = ROOT }
 							age = 16
 						}
 					}
+					random_courtier = {
+						limit = { 
+							prisoner = yes 
+							host = { character = ROOT }
+							age = 16
+						}
+						character_event = { id = ancrel.0026 days = 5 }
+					}
 				}
-				character_event = { id = ancrel.0054 days = 5 }
+				if = {
+					limit = { 
+						NOT = {
+							any_courtier = {
+								prisoner = yes
+								host = { character = ROOT }
+								age = 16
+							}
+						}
+					}
+					character_event = { id = ancrel.0054 days = 5 }
+				}
 			}
 		}
-		custom_tooltip = divination_begin
 	}
 }
 
@@ -1833,24 +1835,26 @@ character_event = {
 	
 	option = {
 		name = EVTOPTAancrel.0061
-		hidden_tooltip = {
-			add_character_modifier = {
-				name = promised_victory
-				duration = 1095
+		custom_tooltip = {
+			text = divination_victory
+			hidden_tooltip = {
+				add_character_modifier = {
+					name = promised_victory
+					duration = 1095
+				}
+				any_vassal = {
+					limit = { has_character_flag = attending_divination }
+					character_event = { id = ancrel.0068 }
+				}
+				character_event = { id = ancrel.0062 days = 1 }
 			}
+			set_character_flag = divination
 			any_vassal = {
 				limit = { has_character_flag = attending_divination }
-				character_event = { id = ancrel.0068 }
-			}
-			character_event = { id = ancrel.0062 days = 1 }
-		}
-		custom_tooltip = divination_victory
-		set_character_flag = divination
-		any_vassal = {
-			limit = { has_character_flag = attending_divination }
-			opinion = {
-				modifier = opinion_held_divination
-				who = ROOT
+				opinion = {
+					modifier = opinion_held_divination
+					who = ROOT
+				}
 			}
 		}
 	}
@@ -1914,24 +1918,26 @@ character_event = {
 	
 	option = {
 		name = EVTOPTAancrel.0064
-		hidden_tooltip = {
-			add_character_modifier = {
-				name = promised_riches
-				duration = 1095
+		custom_tooltip = {
+			text = divination_wealth
+			hidden_tooltip = {
+				add_character_modifier = {
+					name = promised_riches
+					duration = 1095
+				}
+				any_vassal = {
+					limit = { has_character_flag = attending_divination }
+					character_event = { id = ancrel.0069 }
+				}
+				character_event = { id = ancrel.0062 days = 1 }
 			}
+			set_character_flag = divination
 			any_vassal = {
 				limit = { has_character_flag = attending_divination }
-				character_event = { id = ancrel.0069 }
-			}
-			character_event = { id = ancrel.0062 days = 1 }
-		}
-		custom_tooltip = divination_wealth
-		set_character_flag = divination
-		any_vassal = {
-			limit = { has_character_flag = attending_divination }
-			opinion = {
-				modifier = opinion_held_divination
-				who = ROOT
+				opinion = {
+					modifier = opinion_held_divination
+					who = ROOT
+				}
 			}
 		}
 	}

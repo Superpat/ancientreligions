@@ -90,8 +90,10 @@ character_event = {
 	}
 	option = {
 		name = EVTOPTBancrel.0000
-		custom_tooltip = begone_sorcerer
-		set_character_flag = hates_magic
+		custom_tooltip = {
+			text = begone_sorcerer
+			set_character_flag = hates_magic
+		}
 	}
 }
 
@@ -107,42 +109,44 @@ character_event = {
 	
 	option = {
 		name = EVTOPTAancrel.0001
-		piety = -50
-		custom_tooltip = adopt_celtic_rites
-		add_character_modifier = {
-			name = celtic_ways
-			duration = -1
-		}
-		hidden_tooltip = {
-			any_vassal = {
-				limit = {
-					NOT = {
-						OR = {
-							religion = druidic
-							religion = gaelic_pagan
-						}
-					}
-					age = 16
-					prisoner = no
-					war = no
-					NOT = { trait = incapable }
-				}
-				character_event = { id = ancrel.0003 days = 5 }
+		custom_tooltip = {
+			text = adopt_celtic_rites
+			piety = -50
+			add_character_modifier = {
+				name = celtic_ways
+				duration = -1
 			}
-			any_courtier = {
-				limit = {
-					NOT = {
-						OR = {
-							religion = druidic
-							religion = gaelic_pagan
+			hidden_tooltip = {
+				any_vassal = {
+					limit = {
+						NOT = {
+							OR = {
+								religion = druidic
+								religion = gaelic_pagan
+							}
 						}
+						age = 16
+						prisoner = no
+						war = no
+						NOT = { trait = incapable }
 					}
-					age = 16
-					prisoner = no
-					war = no
-					NOT = { trait = incapable }
+					character_event = { id = ancrel.0003 days = 5 }
 				}
-				character_event = { id = ancrel.0003 days = 5 }
+				any_courtier = {
+					limit = {
+						NOT = {
+							OR = {
+								religion = druidic
+								religion = gaelic_pagan
+							}
+						}
+						age = 16
+						prisoner = no
+						war = no
+						NOT = { trait = incapable }
+					}
+					character_event = { id = ancrel.0003 days = 5 }
+				}
 			}
 		}
 	}
@@ -230,16 +234,18 @@ character_event = {
 				trait = zealous
 			}
 		}
-		piety = -50
-		custom_tooltip = adopt_celtic_rites
-		add_character_modifier = {
-			name = celtic_ways
-			duration = -1
-		}
-		hidden_tooltip = {
-			IF = {
-				limit = { is_ruler = yes }
-				top_liege = { character_event = { id = ancrel.0004 days = 5 } }
+		custom_tooltip = {
+			text = adopt_celtic_rites
+			piety = -50
+			add_character_modifier = {
+				name = celtic_ways
+				duration = -1
+			}
+			hidden_tooltip = {
+				IF = {
+					limit = { is_ruler = yes }
+					top_liege = { character_event = { id = ancrel.0004 days = 5 } }
+				}
 			}
 		}
 	}

@@ -49,7 +49,9 @@ narrative_event = {
 	
 	option = {
 		name = EVTOPTAancrel.1151
-		custom_tooltip = fianna_organized
+		custom_tooltip = {
+			text = fianna_organized
+		}
 	}
 }
 

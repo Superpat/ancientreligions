@@ -11,3 +11,152 @@
 
 namespace = ancrel
 
+# Meeting a Bard
+character_event = {
+	id = ancrel.0150
+	desc = EVTDESCancrel.0150
+	picture = GFX_evt_thebard
+	border = GFX_event_normal_frame_religion
+	
+		trigger = {
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+		is_abroad = no
+		}
+	
+	mean_time_to_happen = {
+		days = 750
+		modifier = {
+			factor = 0.5
+			trait = zealous
+		}
+		modifier = {
+			factor = 2.0
+			trait = cynical
+		}
+		modifier = {
+			factor = 0.5
+			trait = paranoid
+		}
+		modifier = {
+			factor = 0.5
+			trait = mystic
+		}
+		modifier = {
+			factor = 0.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 1.5
+			trait = content
+		}
+	}
+	
+	option = {
+		name = EVTOPTAancrel.0150
+		piety = 25
+
+		random_list = {
+			10 = {
+				learning = 1
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTBancrel.0150
+		trigger = {
+			trait = poet
+		}
+		tooltip_info = poet
+		custom_tooltip = {
+			text = sing_poetry
+			piety = 25
+			prestige = 25
+			random_list = {
+				50 = {
+					learning = 1
+				}
+			}
+		}
+	}
+}
+
+# The Afanc
+character_event = {
+	id = ancrel.0151
+	desc = EVTDESCancrel.0151
+	picture = GFX_evt_lakeside
+	border = GFX_event_normal_frame_religion
+	
+		trigger = {
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+		is_abroad = no
+		}
+	
+	mean_time_to_happen = {
+		days = 1000
+
+		modifier = {
+			factor = 0.4
+			trait = zealous
+		}
+		modifier = {
+			factor = 2.0
+			trait = cynical
+		}
+		modifier = {
+			factor = 0.3
+			trait = paranoid
+		}
+		modifier = {
+			factor = 0.6
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = proud
+		}
+		modifier = {
+			factor = 1.8
+			trait = content
+		}
+		modifier = {
+			factor = 0.5
+			trait = ill
+		}
+	}
+	
+	option = {
+		name = EVTOPTAancrel.0151
+		piety = 20
+		prestige = 20
+		random_list = {
+			20 = {
+				add_trait = brave
+			}
+			20 = {
+				add_trait = wounded
+			}
+			5 = {
+				add_trait = maimed
+			}
+			5 = {
+				death = {
+					death_reason = death_accident
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBancrel.0151
+		piety = 20
+		prestige = -25
+		remove_trait = brave
+	}
+}

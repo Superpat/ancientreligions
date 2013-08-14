@@ -5,3 +5,10 @@ EVTOPTAancrel.1252;It’s a Banshee!;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 EVTOPTBancrel.1252;Pah, spirits don't scare me.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 EVTDESCancrel.1252;The fresh sea air fills your lungs as you look over the wild waters of the bay, you notice a strange ship, sailing in the distance. Its making is ancient and it never seems to approach the land, only slipping in and out of the fog like a spirit on the doorway.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 EVTOPTAancrel.1252;Bran’s ship, come to see the shores of Éire.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+EVTDESCancrel.0150;Out on a stroll in the mountain nearby, you encounter a strange, entrancing melody, following the source of the sound, you come across an old, blind bard, playing his harp with a grace akin to the gods themselves.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+EVTOPTAancrel.0150;Stand by and listen;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+EVTOPTBancrel.0150;Mind if I join?;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+sing_poetry;You start declaiming poetry;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+EVTDESCancrel.0151;The lake is placid as you throw your rope into the water, you let the soft singing of the birds lull you into deep thoughts as you daydream on its banks. Suddenly, the rope stirs and you are pulled into the water. Opening your eyes in the water shows a dark form swiftly swimming towards you.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+EVTOPTAancrel.0151;Stay and Fight;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+EVTOPTBancrel.0151;Run Away!;FRENCH;GERMAN;SPANISH;;;;;;;;;;x

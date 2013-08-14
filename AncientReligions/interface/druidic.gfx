@@ -122,4 +122,14 @@ spriteType = {
 		texturefile = "gfx\\event_pictures\boatcoast.tga"
 		allwaystransparent = yes
 	}
+spriteType = {
+		name = "GFX_evt_thebard"
+		texturefile = "gfx\\event_pictures\thebard.tga"
+		allwaystransparent = yes
+	}
+spriteType = {
+		name = "GFX_evt_lakeside"
+		texturefile = "gfx\\event_pictures\lakeside.tga"
+		allwaystransparent = yes
+	}
 }

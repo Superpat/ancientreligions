@@ -581,18 +581,20 @@ decisions = {
 			any_realm_lord = { has_landed_title = c_roma }
 		}
 		effect = {
-			custom_tooltip = rome_capital
-			hidden_tooltip = {
-				b_tivoli = { province_capital = yes }
-				ROOT = {
-					b_tivoli = {
-						usurp_title = PREV
+			custom_tooltip = {
+				text = rome_capital
+				hidden_tooltip = {
+					b_tivoli = { province_capital = yes }
+					ROOT = {
+						b_tivoli = {
+							usurp_title = PREV
+						}
 					}
-				}
-				#b_roma = { set_name = Lateran }
-				b_tivoli = { 
-					set_name = Rome 
-					ROOT = { capital = PREV }
+					#b_roma = { set_name = Lateran }
+					b_tivoli = { 
+						set_name = Rome 
+						ROOT = { capital = PREV }
+					}
 				}
 			}
 		}
@@ -782,7 +784,9 @@ decisions = {
 			}
 		}
 		effect = {
-			custom_tooltip = EVTOPTA62910_CUSTOM
+			custom_tooltip = {
+				text = EVTOPTA62910_CUSTOM
+			}
 			narrative_event = { id = 62910 tooltip = EVTTOOLTIP62910 }
 			if = {
 				limit = { has_nickname = no }

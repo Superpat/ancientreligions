@@ -161,8 +161,8 @@ d_sunni = {
 				trait = sayyid
 				piety = 1000
 			}
-			custom_tooltip = controls_mecca_medina
-			AND = {
+			custom_tooltip = { 
+				text = controls_mecca_medina
 				hidden_tooltip = {
 					719 = { # Mecca
 						owner = {
@@ -182,8 +182,8 @@ d_sunni = {
 					}
 				}
 			}
-			custom_tooltip = controls_jerusalem_damascus_baghdad
-			AND = {
+			custom_tooltip = {
+				text = controls_jerusalem_damascus_baghdad
 				hidden_tooltip = {
 					774 = { # Jerusalem
 						owner = {
@@ -258,8 +258,8 @@ d_shiite = {
 				trait = sayyid
 				piety = 1000
 			}
-			custom_tooltip = controls_mecca_medina
-			AND = {
+			custom_tooltip = {
+				text = controls_mecca_medina
 				hidden_tooltip = {
 					719 = { # Mecca
 						owner = {
@@ -279,8 +279,8 @@ d_shiite = {
 					}
 				}
 			}
-			custom_tooltip = controls_jerusalem_damascus_baghdad
-			AND = {
+			custom_tooltip = {
+				text = controls_jerusalem_damascus_baghdad
 				hidden_tooltip = {
 					774 = { # Jerusalem
 						owner = {
@@ -636,8 +636,10 @@ d_sunni_berber_company = {
 	
 	# Hire Trigger
 	allow = {
-		religion_group = muslim
-		religion_group = zoroastrian_group
+		OR = {
+			religion_group = muslim
+			religion_group = zoroastrian_group
+		}
 	}
 	
 	# Parent Religion 
@@ -671,8 +673,10 @@ d_sunni_bedouin_company = {
 	
 	# Hire Trigger
 	allow = {
-		religion_group = muslim
-		religion_group = zoroastrian_group
+		OR = {
+			religion_group = muslim
+			religion_group = zoroastrian_group
+		}
 	}
 	
 	# Parent Religion 
@@ -773,8 +777,10 @@ d_shiite_berber_company = {
 	
 	# Hire Trigger
 	allow = {
-		religion_group = muslim
-		religion_group = zoroastrian_group
+		OR = {
+			religion_group = muslim
+			religion_group = zoroastrian_group
+		}
 	}
 	
 	# Parent Religion 
@@ -808,8 +814,10 @@ d_shiite_bedouin_company = {
 	
 	# Hire Trigger
 	allow = {
-		religion_group = muslim
-		religion_group = zoroastrian_group
+		OR = {
+			religion_group = muslim
+			religion_group = zoroastrian_group
+		}
 	}
 	
 	# Parent Religion 
@@ -8289,10 +8297,10 @@ e_scandinavia = {
 				color={ 30 30 155 }
 				color2={ 255 255 255 }
 				
-			   	b_sigtuna = {
+				b_sigtuna = {
 				}
-			   	b_uppsala = {
-			   		# norse = Uppsalir
+				b_uppsala = {
+			   	# norse = Uppsalir
 					holy_site = norse_pagan
 					holy_site = norse_pagan_reformed
 				}
@@ -8649,7 +8657,7 @@ e_scandinavia = {
 				color2={ 255 255 255 }
 				
 				finnish=Lappi
-				lappish=Lappi
+				lappish=Sápmi
 				
 				b_lycksele = {
 				}
@@ -9862,6 +9870,8 @@ e_scandinavia = {
 			c_finnmark = {
 				color={ 174 161 110 }
 				color2={ 255 255 255 }
+				
+				lappish=Finnmárku
 				
 				b_varghoeya = {
 				}
@@ -19743,12 +19753,12 @@ e_spain = {
 	culture = castillan
 	
 	# Creation/usurpation trigger
-	allow = {
-		OR = {
-			culture_group = iberian
-			culture = andalusian_arabic
-		}
-	}
+	#allow = {
+	#	OR = {
+	#		culture_group = iberian
+	#		culture = andalusian_arabic
+	#	}
+	#}
 
 	k_castille = { #Spain
 		color={ 243 209 23 }
@@ -28019,21 +28029,23 @@ e_latin_empire = {
 		e_roman_empire = {
 			has_holder = no
 		}
-		custom_tooltip = controls_kaliopolis_thrake
-		hidden_tooltip = {
-			495 = { # Kaliopolis
-				owner = {
-					OR = {
-						is_liege_or_above = ROOT
-						character = ROOT
+		custom_tooltip = {
+			text = controls_kaliopolis_thrake
+			hidden_tooltip = {
+				495 = { # Kaliopolis
+					owner = {
+						OR = {
+							is_liege_or_above = ROOT
+							character = ROOT
+						}
 					}
 				}
-			}
-			497 = { # Thrake
-				owner = {
-					OR = {
-						is_liege_or_above = ROOT
-						character = ROOT
+				497 = { # Thrake
+					owner = {
+						OR = {
+							is_liege_or_above = ROOT
+							character = ROOT
+						}
 					}
 				}
 			}

@@ -11,7 +11,7 @@
 
 namespace = ancrel
 
-#character_event = {
+character_event = {
 	id = ancrel.1252
 	desc = EVTDESCancrel.1252
 	picture = GFX_evt_banshee
@@ -23,7 +23,6 @@ namespace = ancrel
 			religion = gaelic_pagan_reformed
 		}
 		is_abroad = no
-			
 		}
 	
 	mean_time_to_happen = {
@@ -65,5 +64,86 @@ namespace = ancrel
 	
 	option = {
 		name = EVTOPTAancrel.1252
+		piety = 75
+		random_list = {
+			10 = {
+				add_trait = depressed
+			}
+			10 = {
+				add_trait = stressed
+			}
+			10 = {
+				remove_trait = cynical
+			}
+		}
+		hidden_tooltip = {
+			health = -1
+		}
+	}
+	option = {
+		name = EVTOPTBancrel.1252
+		prestige = 50
+		random_list = {
+			20 = {
+				remove_trait = zealous
+			}
+		}
+		hidden_tooltip = {
+			health = -1
+		}
+	}
+}
+
+character_event = {
+	id = ancrel.1253
+	desc = EVTDESCancrel.1253
+	picture = GFX_evt_boatcoast
+	border = GFX_event_normal_frame_religion
+	
+		trigger = {
+		OR = {
+			religion = gaelic_pagan
+			religion = gaelic_pagan_reformed
+		}
+		is_abroad = no
+		}
+	
+	mean_time_to_happen = {
+		days = 750
+		modifier = {
+			factor = 0.5
+			trait = zealous
+		}
+		modifier = {
+			factor = 2.0
+			trait = cynical
+		}
+		modifier = {
+			factor = 0.5
+			trait = paranoid
+		}
+		modifier = {
+			factor = 0.5
+			trait = mystic
+		}
+		modifier = {
+			factor = 0.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 1.5
+			trait = content
+		}
+	}
+	
+	option = {
+		name = EVTOPTAancrel.1252
+		piety = 20
+		prestige = 25
+		random_list = {
+			10 = {
+				learning = 1
+			}
+		}
 	}
 }

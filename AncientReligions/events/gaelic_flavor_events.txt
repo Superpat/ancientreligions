@@ -75,6 +75,7 @@ character_event = {
 			10 = {
 				remove_trait = cynical
 			}
+			70 = {}
 		}
 		hidden_tooltip = {
 			health = -1
@@ -87,6 +88,7 @@ character_event = {
 			20 = {
 				remove_trait = zealous
 			}
+			80 = {}
 		}
 		hidden_tooltip = {
 			health = -1
@@ -142,8 +144,9 @@ character_event = {
 		prestige = 25
 		random_list = {
 			10 = {
-				learning = 1
+				change_learning = 1
 			}
+			90 = {}
 		}
 	}
 }

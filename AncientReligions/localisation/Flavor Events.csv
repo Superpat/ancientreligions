@@ -3,8 +3,8 @@
 EVTDESCancrel.1252;Unable to sleep, you take a walk in the castle gardens. Suddenly, you see a dark form near a small stream. It seems to be a woman, dressed in green  and washing some bloody rags, as you try to see her more clearly, she raises her head and lets go a melodious, soul wrenching scream. By the time you blink your eyes, she has disappeared.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 EVTOPTAancrel.1252;It’s a Banshee!;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 EVTOPTBancrel.1252;Pah, spirits don't scare me.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-EVTDESCancrel.1252;The fresh sea air fills your lungs as you look over the wild waters of the bay, you notice a strange ship, sailing in the distance. Its making is ancient and it never seems to approach the land, only slipping in and out of the fog like a spirit on the doorway.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-EVTOPTAancrel.1252;Bran’s ship, come to see the shores of Éire.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+EVTDESCancrel.1253;The fresh sea air fills your lungs as you look over the wild waters of the bay, you notice a strange ship, sailing in the distance. Its making is ancient and it never seems to approach the land, only slipping in and out of the fog like a spirit on the doorway.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+EVTOPTAancrel.1253;Bran’s ship, come to see the shores of Éire.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 EVTDESCancrel.0150;Out on a stroll in the mountain nearby, you encounter a strange, entrancing melody, following the source of the sound, you come across an old, blind bard, playing his harp with a grace akin to the gods themselves.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 EVTOPTAancrel.0150;Stand by and listen;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 EVTOPTBancrel.0150;Mind if I join?;FRENCH;GERMAN;SPANISH;;;;;;;;;;x

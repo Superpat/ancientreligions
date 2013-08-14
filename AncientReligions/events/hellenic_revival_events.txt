@@ -229,39 +229,41 @@ character_event = {
 				add_trait = zealous
 			}
 		}
-		custom_tooltip = EVTTOOLTIPAancrel.2102
-		hidden_tooltip = {
-			any_realm_character  = {
-				limit = {
-					is_adult = yes
-					religion = hellenic_pagan
+		custom_tooltip = {
+			text = EVTTOOLTIPAancrel.2102
+			hidden_tooltip = {
+				any_realm_character  = {
+					limit = {
+						is_adult = yes
+						religion = hellenic_pagan
+					}
+					opinion = { modifier = opinion_hellenic_state_religion who = ROOT }
 				}
-				opinion = { modifier = opinion_hellenic_state_religion who = ROOT }
-			}
-			any_realm_character  = {
-				limit = {
-					is_adult = yes
-					NOT = { religion_group = pagan_group }
+				any_realm_character  = {
+					limit = {
+						is_adult = yes
+						NOT = { religion_group = pagan_group }
+					}
+					opinion = { modifier = opinion_forced_hellenic_state_religion who = ROOT }
 				}
-				opinion = { modifier = opinion_forced_hellenic_state_religion who = ROOT }
-			}
-			capital_scope = {
-				religion = ROOT
-			}
-			any_courtier = {
-				limit = { employer = { character = ROOT } }
-				religion = ROOT
-			}
-			any_vassal = {
-				limit = { is_playable = no }
-				religion = ROOT
-			}
-			any_vassal = {
-				limit = {
-					is_playable = yes
-					NOT = { religion = ROOT }
+				capital_scope = {
+					religion = ROOT
 				}
-				character_event = { id = ancrel.2103 }
+				any_courtier = {
+					limit = { employer = { character = ROOT } }
+					religion = ROOT
+				}
+				any_vassal = {
+					limit = { is_playable = no }
+					religion = ROOT
+				}
+				any_vassal = {
+					limit = {
+						is_playable = yes
+						NOT = { religion = ROOT }
+					}
+					character_event = { id = ancrel.2103 }
+				}
 			}
 		}
 	}

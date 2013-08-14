@@ -11,7 +11,7 @@
 
 namespace = ancrel
 
-character_event = {
+#character_event = {
 	id = ancrel.1252
 	desc = EVTDESCancrel.1252
 	picture = GFX_evt_banshee
@@ -25,7 +25,6 @@ character_event = {
 		is_abroad = no
 			
 		}
-	}
 	
 	mean_time_to_happen = {
 		days = 1000

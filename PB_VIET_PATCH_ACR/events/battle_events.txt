@@ -657,10 +657,6 @@ character_event = {
 	option = {
 		name = CURSES
 		add_trait = incapable
-
-
-
-
 	}
 }
 

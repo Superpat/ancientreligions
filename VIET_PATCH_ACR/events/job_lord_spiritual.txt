@@ -62,6 +62,20 @@ character_event = {
 	mean_time_to_happen = {
 		months = 960
 		modifier = {
+			factor = 3.0
+			religion_group = jewish_group
+		}
+		modifier = {
+			factor = 3.0
+			culture_group = west_african
+		}
+		modifier = {
+			factor = 2.0
+			location = {
+				religion_group = pagan_group
+			}
+		}
+		modifier = {
 			factor = 0.75
 			location = { culture_group = ROOT }
 		}
@@ -125,7 +139,6 @@ character_event = {
 			factor = 3.0
 			religion_group = pagan_group
 			is_reformed_religion = no
-			NOT = { religion = hellenic_pagan }
 			location = {
 				OR = {
 					NOT = { religion_group = pagan_group }
@@ -321,7 +334,6 @@ character_event = {
 			factor = 3.0
 			religion_group = pagan_group
 			is_reformed_religion = no
-			NOT = { religion = hellenic_pagan }
 		}
 	}
 	
@@ -1805,7 +1817,7 @@ character_event = {
 	
 	option = {
 		name = "EVTOPTA927"
-		ai_chance = { factor = 80 }
+		ai_chance = { factor = 50 }
 		become_heretic = yes
 		hidden_tooltip = {
 			liege = { letter_event = { id = 20270 days = 2 } }
@@ -1813,7 +1825,7 @@ character_event = {
 	}
 	option = {
 		name = "EVTOPTB927"
-		ai_chance = { factor = 20 }
+		ai_chance = { factor = 50 }
 	}
 }
 

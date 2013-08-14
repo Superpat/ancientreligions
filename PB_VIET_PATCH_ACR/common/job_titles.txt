@@ -40,9 +40,6 @@ job_chancellor = {
 			limit = {
 				NOT = { 
 					has_character_flag = council_prestige_bonus
-
-
-
 				}
 			}
 			if = {
@@ -126,9 +123,6 @@ job_marshal = {
 			limit = {
 				NOT = { 
 					has_character_flag = council_prestige_bonus
-
-
-
 				}
 			}
 			if = {
@@ -208,9 +202,6 @@ job_treasurer = {
 			limit = {
 				NOT = { 
 					has_character_flag = council_prestige_bonus
-
-
-
 				}
 			}
 			if = {
@@ -272,9 +263,6 @@ job_spymaster = {
 			limit = {
 				NOT = { 
 					has_character_flag = council_prestige_bonus
-
-
-
 				}
 			}
 			if = {
@@ -390,9 +378,6 @@ job_spiritual = {
 			limit = {
 				NOT = { 
 					has_character_flag = council_prestige_bonus
-
-
-
 				}
 			}
 			if = {

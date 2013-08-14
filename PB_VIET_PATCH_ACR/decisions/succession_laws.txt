@@ -84,9 +84,6 @@ succession_laws = {
 	
 		potential = {
 			holder_scope = {
-
-
-
 				OR = {
 					AND = {
 						NOT = {religion_group = muslim }
@@ -193,7 +190,6 @@ succession_laws = {
 		dynasty_opinion = -5
 		potential = {
 			holder_scope = {
-
 				OR = {
 					AND = {
 						NOT = {religion_group = muslim }
@@ -201,8 +197,7 @@ succession_laws = {
 					}
 					culture_group = west_african 
 					is_reformed_religion = yes
-				}
-				
+				}			
 				is_merchant_republic = no
 				is_patrician = no
 			}
@@ -283,10 +278,6 @@ succession_laws = {
 		vassal_opinion = 10
 		potential = {
 			holder_scope = {
-
-
-
-
 				OR = {
 					AND = {
 						NOT = {religion_group = muslim }
@@ -777,8 +768,10 @@ gender_laws = {
 				has_law = enatic_cognatic_succession
 				AND = {
 					holder_scope = {
-						custom_tooltip = gender_equality
-						has_global_flag = gender_equality
+						custom_tooltip = {
+							text = gender_equality
+							has_global_flag = gender_equality
+						}
 					}
 					has_law = true_cognatic_succession
 				}
@@ -797,7 +790,6 @@ gender_laws = {
 	enatic_cognatic_succession = {
 		male_dynasty_opinion = -15
 		female_dynasty_opinion = 10
-
 		
 		potential = {
 			holder_scope = {
@@ -868,8 +860,10 @@ gender_laws = {
 				has_law = enatic_succession
 				AND = {
 					holder_scope = {
-						custom_tooltip = gender_equality
-						has_global_flag = gender_equality
+						custom_tooltip = {
+							text = gender_equality
+							has_global_flag = gender_equality
+						}
 					}
 					has_law = true_cognatic_succession
 				}
@@ -950,8 +944,10 @@ gender_laws = {
 				}
 				holder_scope = {
 					prestige = 500
-					custom_tooltip = gender_equality
-					has_global_flag = gender_equality
+					custom_tooltip = {
+						text = gender_equality
+						has_global_flag = gender_equality
+					}
 				}
 			}
 		}

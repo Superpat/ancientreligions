@@ -130,14 +130,20 @@ de_jure_laws = {
 		allow = {
 			holder_scope = { 
 				is_republic = no 
-				hidden_tooltip = {
-					OR = {
-						NOT = { religion_group = pagan_group }
-						religion = pagan
-						is_reformed_religion = yes
+				
+				custom_tooltip = { 
+					text = TT_NOT_UNREFORMED_PAGAN
+					hidden_tooltip = {
+						NOT = { religion = norse_pagan }
+						NOT = { religion = tengri_pagan }
+						NOT = { religion = baltic_pagan }
+						NOT = { religion = finnish_pagan }
+						NOT = { religion = aztec }
+						NOT = { religion = slavic_pagan }
+						NOT = { religion = gaelic_pagan }
+						NOT = { religion = druidic }
 					}
 				}
-				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
 			OR = {
 				has_law = centralization_1
@@ -216,14 +222,19 @@ de_jure_laws = {
 		allow = {
 			holder_scope = { 
 				is_republic = no 
-				hidden_tooltip = {
-					OR = {
-						NOT = { religion_group = pagan_group }
-						religion = pagan
-						is_reformed_religion = yes
+				custom_tooltip = {
+					text = TT_NOT_UNREFORMED_PAGAN
+					hidden_tooltip = {
+						NOT = { religion = norse_pagan }
+						NOT = { religion = tengri_pagan }
+						NOT = { religion = baltic_pagan }
+						NOT = { religion = finnish_pagan }
+						NOT = { religion = aztec }
+						NOT = { religion = slavic_pagan }
+						NOT = { religion = gaelic_pagan }
+						NOT = { religion = druidic }
 					}
 				}
-				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
 			OR = {
 				has_law = centralization_2
@@ -326,14 +337,19 @@ de_jure_laws = {
 		allow = {
 			holder_scope = { 
 				is_republic = no 
-				hidden_tooltip = {
-					OR = {
-						NOT = { religion_group = pagan_group }
-						religion = pagan
-						is_reformed_religion = yes
+				custom_tooltip = {
+					text = TT_NOT_UNREFORMED_PAGAN
+					hidden_tooltip = {
+						NOT = { religion = norse_pagan }
+						NOT = { religion = tengri_pagan }
+						NOT = { religion = baltic_pagan }
+						NOT = { religion = finnish_pagan }
+						NOT = { religion = aztec }
+						NOT = { religion = slavic_pagan }
+						NOT = { religion = gaelic_pagan }
+						NOT = { religion = druidic }
 					}
 				}
-				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
 			has_law = centralization_3
 			holder_scope = {
@@ -371,7 +387,6 @@ de_jure_laws = {
 				}
 			}
 		}
-		
 		ai_will_revoke = {
 			factor = 0
 		}

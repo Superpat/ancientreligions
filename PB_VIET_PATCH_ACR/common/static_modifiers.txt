@@ -476,6 +476,7 @@ religiously_tolerant_culture = {
 religious_syncreticism_culture = {
 	RELIGION_FLEX = -0.8
 }
+
 cultural_flexibility = {
 	culture_flex = -0.4
 }
@@ -484,6 +485,7 @@ cultural_and_religious_flexibility = {
 	culture_flex = -0.4
 	RELIGION_FLEX = -0.2
 }
+
 ##########################################################################
 # Landed title modifiers
 ##########################################################################

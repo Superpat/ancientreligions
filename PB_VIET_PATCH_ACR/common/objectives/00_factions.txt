@@ -42,6 +42,8 @@ faction_succ_seniority = {
 		NOT = { in_faction = faction_succ_primogeniture }
 		NOT = { in_faction = faction_succ_feudal_elective }
 		NOT = { in_faction = faction_succ_gavelkind }
+		NOT = { in_faction = faction_succ_ultimogeniture }
+		NOT = { in_faction = faction_succ_tanistry }
 		
 		OR = {
 			# Is not affected by a Crown Law title
@@ -939,16 +941,6 @@ faction_succ_primogeniture = {
 		
 		modifier = {
 			factor = 0
-
-
-
-
-
-
-
-
-
-
 			has_opinion_modifier = {
 				who = LIEGE
 				modifier = opinion_coerced_into_leaving_faction
@@ -2220,6 +2212,8 @@ faction_succ_feudal_elective = {
 				in_faction = faction_succ_seniority
 				in_faction = faction_succ_primogeniture
 				in_faction = faction_succ_gavelkind
+				in_faction = faction_succ_tanistry
+				in_faction = faction_succ_ultimogeniture
 			}
 		}
 		
@@ -2424,7 +2418,6 @@ faction_succ_feudal_elective = {
 		#Slow it down a bit
 		modifier = {
 			factor = 0.5
-
 		}
 		modifier = {
 			factor = 0
@@ -2484,11 +2477,6 @@ faction_independence = {
 		NOT = { trait = incapable }
 		
 		higher_tier_than = BARON
-
-
-
-
-
 		
 		liege = {
 			independent = yes
@@ -2683,12 +2671,11 @@ faction_independence = {
 				distance = { who = ROOT distance = 400 }
 			}
 		}
-		
+
 		modifier = {
 			factor = 2.0
 			religion_group = pagan_group
 			is_reformed_religion = no
-			NOT = { religion = hellenic_pagan }
 		}
 		
 		modifier = {
@@ -2754,10 +2741,6 @@ faction_independence = {
 		modifier = {
 			factor = 0.5
 			opinion = { who = LIEGE value = 50 } 
-
-
-
-
 		}
 		modifier = {
 			factor = 1.5
@@ -2974,7 +2957,6 @@ faction_independence = {
 			OR = {
 				prisoner = yes
 				trait = incapable
-
 				is_landed = no
 				has_landed_title = k_orthodox
 				preparing_invasion = yes
@@ -3176,7 +3158,6 @@ faction_independence = {
 			factor = 2.0
 			religion_group = pagan_group
 			is_reformed_religion = no
-			NOT = { religion = hellenic_pagan }
 		}
 		
 		modifier = {
@@ -3249,10 +3230,6 @@ faction_independence = {
 		modifier = {
 			factor = 0.5
 			opinion = { who = LIEGE value = 50 } 
-
-
-
-
 		}
 		modifier = {
 			factor = 1.5

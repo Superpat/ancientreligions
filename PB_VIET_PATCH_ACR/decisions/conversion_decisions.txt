@@ -346,6 +346,7 @@ decisions = {
 			}
 		}
 	}
+
 	convert_to_swedish = {
 		potential = {
 			culture = norse

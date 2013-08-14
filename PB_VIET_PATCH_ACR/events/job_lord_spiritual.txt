@@ -172,7 +172,6 @@ character_event = {
 			factor = 3.0
 			religion_group = pagan_group
 			is_reformed_religion = no
-			NOT = { religion = hellenic_pagan }
 			location = {
 				OR = {
 					NOT = { religion_group = pagan_group }
@@ -401,7 +400,6 @@ character_event = {
 			factor = 3.0
 			religion_group = pagan_group
 			is_reformed_religion = no
-			NOT = { religion = hellenic_pagan }
 		}
 	}
 	
@@ -1930,7 +1928,6 @@ character_event = {
 	picture = GFX_evt_bishop
 	border = GFX_event_normal_frame_religion
 
-
 	capable_only = yes
 	prisoner = no
 	
@@ -2062,7 +2059,6 @@ character_event = {
 	title = "EVTNAME20043"
 	picture = GFX_evt_peasants
 	border = GFX_event_normal_frame_religion
-
 
 	capable_only = yes
 	prisoner = no
@@ -2216,7 +2212,6 @@ character_event = {
 	picture = GFX_evt_bishop
 	border = GFX_event_normal_frame_religion
 	
-
 	capable_only = yes
 	prisoner = no
 	
@@ -2289,7 +2284,6 @@ character_event = {
 	picture = GFX_evt_bishop
 	border = GFX_event_normal_frame_religion
 	
-
 	capable_only = yes
 	prisoner = no
 	

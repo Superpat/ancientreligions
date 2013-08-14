@@ -71,6 +71,8 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		intermarry = norse_pagan
 	}		
 	
 	norse_pagan = {
@@ -112,6 +114,8 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		intermarry = norse_pagan_reformed
 	}	
 	
 	tengri_pagan_reformed = { # Mongols
@@ -258,8 +262,6 @@ pagan_group = {
 			GOD_UKKO GOD_PERKELE GOD_JUMI GOD_THE_GREAT_BEAR GOD_KUU GOD_TAPIO GOD_TAARA GOD_OMOL GOD_MASTOR_AVA Äkräs Mielikki Lempo Väinämöinen Ilmarinen Ahti
 		}
 		
-
-
 		unit_modifier = {		
 			heavy_infantry_offensive = 0.3
 			heavy_infantry_defensive = 0.3
@@ -510,6 +512,8 @@ pagan_group = {
 	
 	hellenic_pagan = {
 		graphical_culture = westerngfx
+
+		pre_reformed = yes
 
 		icon = 42
 		heresy_icon = 43

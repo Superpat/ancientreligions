@@ -159,7 +159,6 @@ title_anthypatos = {
 				has_landed_title = e_byzantium
 				has_landed_title = e_roman_empire
 			}
-			NOT = { religion = hellenic_pagan }
 			NOT = { religion_group = muslim }
 			NOT = { religion_group = zoroastrian_group }
 		}

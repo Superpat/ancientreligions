@@ -56,9 +56,6 @@ succession_laws = {
 	
 		potential = {
 			holder_scope = {
-
-
-
 				OR = {
 					AND = {
 						NOT = {religion_group = muslim }
@@ -85,7 +82,7 @@ succession_laws = {
 					tier = baron
 					is_feudal = yes
 				}
-			holder_scope = {
+				holder_scope = {
 					AND = {
 						is_feudal = yes
 						NOT = { has_landed_title = e_hre}						
@@ -135,7 +132,6 @@ succession_laws = {
 		dynasty_opinion = -5
 		potential = {
 			holder_scope = {
-
 				OR = {
 					AND = {
 						NOT = {religion_group = muslim }
@@ -143,8 +139,7 @@ succession_laws = {
 					}
 					culture_group = west_african 
 					is_reformed_religion = yes
-				}
-				
+				}			
 				is_merchant_republic = no
 				is_patrician = no
 			}
@@ -199,10 +194,6 @@ succession_laws = {
 		vassal_opinion = 20
 		potential = {
 			holder_scope = {
-
-
-
-
 				OR = {
 					AND = {
 						NOT = {religion_group = muslim }
@@ -466,8 +457,6 @@ gender_laws = {
 		potential = {
 			holder_scope = { 
 				NOT = { religion_group = muslim }
-
-
 				has_horde_culture = no
 				is_merchant_republic = no
 				is_patrician = no

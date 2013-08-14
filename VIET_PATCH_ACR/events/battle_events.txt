@@ -1110,6 +1110,7 @@ character_event = {
 	trigger = {
 		is_alive = yes
 	}
+
 	option = {
 		name = EVTOPTA249
 	}

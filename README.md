@@ -31,6 +31,7 @@ Ancient Religions Installation:
 
 
 Compatibility Patches:
+
 This mod has compatibility patches or instructions for the following mods: Project Balance, Viet, PB + Viet, SWMH and Arko Armories. To use a compatibility patch, just extract it into the main folder and enable it, alongside all its dependencies, when you play the game.
 
 

@@ -542,15 +542,14 @@ decisions = {
 	claim_constantinople = {
 		is_high_prio = yes
 		potential = {
-			has_dlc = "Legacy of Rome"
+			#has_dlc = "Legacy of Rome"
 			NOT = { has_landed_title = c_byzantion }
 			has_landed_title = e_byzantium
 			any_realm_lord = { 
-				AND = {
-					ai = yes
-					has_landed_title = c_byzantion 
-				}
+				ai = yes
+				has_landed_title = c_byzantion 
 			}
+
 		}
 		allow = {
 			NOT = { has_landed_title = c_byzantion }
@@ -579,16 +578,13 @@ decisions = {
 				NOT = { province_id = 333 }
 			}
 			any_realm_lord = { 
-				AND = {
-					ai = yes
-					has_landed_title = c_roma 
-				}
+				ai = yes
+				has_landed_title = c_roma 
 			}
-			any_realm_lord = { 
-				AND = {
-					ai = yes
-					has_landed_title = b_tivoli
-				}
+			any_realm_title = {
+				tier = baron
+				is_feudal = yes
+				county = { title = c_roma }
 			}
 		}
 		allow = {
@@ -596,19 +592,22 @@ decisions = {
 			any_realm_lord = { has_landed_title = c_roma }
 		}
 		effect = {
-			custom_tooltip = rome_capital
-			hidden_tooltip = {
-				b_tivoli = { province_capital = yes }
-				ROOT = {
-					b_tivoli = {
-						usurp_title = PREV
+			custom_tooltip = {
+				text = rome_capital
+				hidden_tooltip = {
+					random_realm_title = {
+						limit = {
+							tier = baron
+							holder_scope = { is_feudal = yes }
+							county = { title = c_roma }
+						}
+						province_capital = yes
+						usurp_title = ROOT
+						set_name = Rome 
+						ROOT = { capital = PREV }
 					}
 				}
-				#b_roma = { set_name = Lateran }
-				b_tivoli = { 
-					set_name = Rome 
-					ROOT = { capital = PREV }
-				}
+
 			}
 		}
 		ai_will_do = {
@@ -797,7 +796,9 @@ decisions = {
 			}
 		}
 		effect = {
-			custom_tooltip = EVTOPTA62910_CUSTOM
+			custom_tooltip = {
+				text = EVTOPTA62910_CUSTOM
+			}
 			k_hungary = {
 				grant_title = ROOT
 				copy_title_laws = k_magyar
@@ -810,7 +811,6 @@ decisions = {
 				give_nickname = nick_the_great
 			}
 			prestige = 500
-
 		}
 		ai_will_do = {
 			factor = 1

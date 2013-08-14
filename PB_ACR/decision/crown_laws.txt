@@ -76,17 +76,20 @@ de_jure_laws = {
 							}
 							prestige = 300
 						}
-						hidden_tooltip = {
-							NOT = {
-								any_vassal = {
-									higher_tier_than = count
-									NOT = { opinion = { who = liege value = -25 } }
-									prisoner = no
-									primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+						custom_tooltip = {
+							text = pb_vassal_opinion_neg_25
+							hidden_tooltip = {
+								NOT = {
+									any_vassal = {
+										higher_tier_than = count
+										NOT = { opinion = { who = liege value = -25 } }
+										prisoner = no
+										primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+									}
 								}
 							}
 						}
-						custom_tooltip = pb_vassal_opinion_neg_25
+
 					}
 				}
 				has_law = crown_levies_2
@@ -177,34 +180,37 @@ de_jure_laws = {
 							}
 							prestige = 600
 						}
-						hidden_tooltip = {
-							NOT = {
-								any_vassal = {
-									higher_tier_than = count
-									prisoner = no
-									NOT = { opinion = { who = ROOT value = -20 } }
-									primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+						custom_tooltip = {
+							text = pb_vassal_opinion_neg_20
+							hidden_tooltip = {
+								NOT = {
+									any_vassal = {
+										higher_tier_than = count
+										prisoner = no
+										NOT = { opinion = { who = ROOT value = -20 } }
+										primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+									}
 								}
 							}
 						}
-						custom_tooltip = pb_vassal_opinion_neg_20
 					}
 				}
 				has_law = crown_levies_3
 			}
 			holder_scope = {
-				hidden_tooltip = {
-					NOT = { religion = norse_pagan }
-					NOT = { religion = tengri_pagan }
-					NOT = { religion = baltic_pagan }
-					NOT = { religion = finnish_pagan }
-					NOT = { religion = aztec }
-					NOT = { religion = slavic_pagan }
-					NOT = { religion = west_african_pagan }
-					NOT = { religion = gaelic_pagan }
-					NOT = { religion = druidic }
+				custom_tooltip = { 
+					text = TT_NOT_UNREFORMED_PAGAN
+					hidden_tooltip = {
+						NOT = { religion = norse_pagan }
+						NOT = { religion = tengri_pagan }
+						NOT = { religion = baltic_pagan }
+						NOT = { religion = finnish_pagan }
+						NOT = { religion = aztec }
+						NOT = { religion = slavic_pagan }
+						NOT = { religion = gaelic_pagan }
+						NOT = { religion = druidic }
+					}
 				}
-				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
 		}
 		revoke_allowed = {
@@ -301,34 +307,37 @@ de_jure_laws = {
 							}
 							prestige = 900
 						}
-						hidden_tooltip = {
-							NOT = {
-								any_vassal = {
-									higher_tier_than = count
-									prisoner = no
-									NOT = { opinion = { who = ROOT value = -15 } }
-									primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+						custom_tooltip = {
+							text = pb_vassal_opinion_neg_15
+							hidden_tooltip = {
+								NOT = {
+									any_vassal = {
+										higher_tier_than = count
+										prisoner = no
+										NOT = { opinion = { who = ROOT value = -15 } }
+										primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+									}
 								}
 							}
 						}
-						custom_tooltip = pb_vassal_opinion_neg_15
 					}
 				}
 				has_law = crown_levies_4
 			}
 			holder_scope = {
-				hidden_tooltip = {
-					NOT = { religion = norse_pagan }
-					NOT = { religion = tengri_pagan }
-					NOT = { religion = baltic_pagan }
-					NOT = { religion = finnish_pagan }
-					NOT = { religion = aztec }
-					NOT = { religion = slavic_pagan }
-					NOT = { religion = west_african_pagan }
-					NOT = { religion = gaelic_pagan }
-					NOT = { religion = druidic }
+				custom_tooltip = { 
+					text = TT_NOT_UNREFORMED_PAGAN
+					hidden_tooltip = {
+						NOT = { religion = norse_pagan }
+						NOT = { religion = tengri_pagan }
+						NOT = { religion = baltic_pagan }
+						NOT = { religion = finnish_pagan }
+						NOT = { religion = aztec }
+						NOT = { religion = slavic_pagan }
+						NOT = { religion = gaelic_pagan }
+						NOT = { religion = druidic }
+					}
 				}
-				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
 		}
 		revoke_allowed = {
@@ -423,31 +432,35 @@ de_jure_laws = {
 					}
 					prestige = 1200
 				}
-				hidden_tooltip = {
-					NOT = {
-						any_vassal = {
-							higher_tier_than = count
-							prisoner = no
-							NOT = { opinion = { who = ROOT value = -10 } }
-							primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+				custom_tooltip = {
+					text = pb_vassal_opinion_neg_10
+					hidden_tooltip = {
+						NOT = {
+							any_vassal = {
+								higher_tier_than = count
+								prisoner = no
+								NOT = { opinion = { who = ROOT value = -10 } }
+								primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+							}
 						}
 					}
 				}
 				custom_tooltip = pb_vassal_opinion_neg_10
 			}
 			holder_scope = {
-				hidden_tooltip = {
-					NOT = { religion = norse_pagan }
-					NOT = { religion = tengri_pagan }
-					NOT = { religion = baltic_pagan }
-					NOT = { religion = finnish_pagan }
-					NOT = { religion = aztec }
-					NOT = { religion = slavic_pagan }
-					NOT = { religion = west_african_pagan }
-					NOT = { religion = gaelic_pagan }
-					NOT = { religion = druidic }
+				custom_tooltip = { 
+					text = TT_NOT_UNREFORMED_PAGAN
+					hidden_tooltip = {
+						NOT = { religion = norse_pagan }
+						NOT = { religion = tengri_pagan }
+						NOT = { religion = baltic_pagan }
+						NOT = { religion = finnish_pagan }
+						NOT = { religion = aztec }
+						NOT = { religion = slavic_pagan }
+						NOT = { religion = gaelic_pagan }
+						NOT = { religion = druidic }
+					}
 				}
-				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
 		}
 		revoke_allowed = {
@@ -567,33 +580,36 @@ de_jure_laws = {
 						trait = mastermind_theologian
 						trait = genius
 					}
-					hidden_tooltip = {
-						NOT = {
-							any_vassal = {
-								higher_tier_than = count
-								prisoner = no
-								NOT = { opinion = { who = ROOT value = -15 } }
-								primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+					custom_tooltip = {
+						text = pb_vassal_opinion_neg_15
+						hidden_tooltip = {
+							NOT = {
+								any_vassal = {
+									higher_tier_than = count
+									prisoner = no
+									NOT = { opinion = { who = ROOT value = -15 } }
+									primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+								}
 							}
 						}
 					}
-					custom_tooltip = pb_vassal_opinion_neg_15
 				}
 				has_law = king_peace_2
 			}
 			holder_scope = {
-				hidden_tooltip = {
-					NOT = { religion = norse_pagan }
-					NOT = { religion = tengri_pagan }
-					NOT = { religion = baltic_pagan }
-					NOT = { religion = finnish_pagan }
-					NOT = { religion = aztec }
-					NOT = { religion = slavic_pagan }
-					NOT = { religion = west_african_pagan }
-					NOT = { religion = gaelic_pagan }
-					NOT = { religion = druidic }
+				custom_tooltip = { 
+					text = TT_NOT_UNREFORMED_PAGAN
+					hidden_tooltip = {
+						NOT = { religion = norse_pagan }
+						NOT = { religion = tengri_pagan }
+						NOT = { religion = baltic_pagan }
+						NOT = { religion = finnish_pagan }
+						NOT = { religion = aztec }
+						NOT = { religion = slavic_pagan }
+						NOT = { religion = gaelic_pagan }
+						NOT = { religion = druidic }
+					}
 				}
-				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
 		}
 		revoke_allowed = {
@@ -677,31 +693,34 @@ de_jure_laws = {
 					trait = mastermind_theologian
 					trait = genius
 				}
-				hidden_tooltip = {
-					NOT = {
-						any_vassal = {
-							higher_tier_than = count
-							prisoner = no
-							NOT = { opinion = { who = ROOT value = -10 } }
-							primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+				custom_tooltip = {
+					text = pb_vassal_opinion_neg_10
+					hidden_tooltip = {
+						NOT = {
+							any_vassal = {
+								higher_tier_than = count
+								prisoner = no
+								NOT = { opinion = { who = ROOT value = -10 } }
+								primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+							}
 						}
 					}
 				}
-				custom_tooltip = pb_vassal_opinion_neg_10
 			}
 			holder_scope = {
-				hidden_tooltip = {
-					NOT = { religion = norse_pagan }
-					NOT = { religion = tengri_pagan }
-					NOT = { religion = baltic_pagan }
-					NOT = { religion = finnish_pagan }
-					NOT = { religion = aztec }
-					NOT = { religion = slavic_pagan }
-					NOT = { religion = west_african_pagan }
-					NOT = { religion = gaelic_pagan }
-					NOT = { religion = druidic }
+				custom_tooltip = { 
+					text = TT_NOT_UNREFORMED_PAGAN
+					hidden_tooltip = {
+						NOT = { religion = norse_pagan }
+						NOT = { religion = tengri_pagan }
+						NOT = { religion = baltic_pagan }
+						NOT = { religion = finnish_pagan }
+						NOT = { religion = aztec }
+						NOT = { religion = slavic_pagan }
+						NOT = { religion = gaelic_pagan }
+						NOT = { religion = druidic }
+					}
 				}
-				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
 		}
 		revoke_allowed = {
@@ -817,33 +836,36 @@ de_jure_laws = {
 						trait = mastermind_theologian
 						trait = genius
 					}
-					hidden_tooltip = {
-						NOT = {
-							any_vassal = {
-								higher_tier_than = count
-								prisoner = no
-								NOT = { opinion = { who = ROOT value = -5 } }
-								primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+					custom_tooltip = {
+						text = pb_vassal_opinion_neg_5
+						hidden_tooltip = {
+							NOT = {
+								any_vassal = {
+									higher_tier_than = count
+									prisoner = no
+									NOT = { opinion = { who = ROOT value = -5 } }
+									primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+								}
 							}
 						}
 					}
-					custom_tooltip = pb_vassal_opinion_neg_5
 				}
 				has_law = emperor_peace_2
 			}
 			holder_scope = {
-				hidden_tooltip = {
-					NOT = { religion = norse_pagan }
-					NOT = { religion = tengri_pagan }
-					NOT = { religion = baltic_pagan }
-					NOT = { religion = finnish_pagan }
-					NOT = { religion = aztec }
-					NOT = { religion = slavic_pagan }
-					NOT = { religion = west_african_pagan }
-					NOT = { religion = gaelic_pagan }
-					NOT = { religion = druidic }
+				custom_tooltip = { 
+					text = TT_NOT_UNREFORMED_PAGAN
+					hidden_tooltip = {
+						NOT = { religion = norse_pagan }
+						NOT = { religion = tengri_pagan }
+						NOT = { religion = baltic_pagan }
+						NOT = { religion = finnish_pagan }
+						NOT = { religion = aztec }
+						NOT = { religion = slavic_pagan }
+						NOT = { religion = gaelic_pagan }
+						NOT = { religion = druidic }
+					}
 				}
-				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
 		}
 		revoke_allowed = {
@@ -927,31 +949,34 @@ de_jure_laws = {
 					trait = mastermind_theologian
 					trait = genius
 				}
-				hidden_tooltip = {
-					NOT = {
-						any_vassal = {
-							higher_tier_than = count
-							prisoner = no
-							NOT = { opinion = { who = ROOT value = 0 } }
-							primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+				custom_tooltip = {
+					text = pb_vassal_opinion_neg_0
+					hidden_tooltip = {
+						NOT = {
+							any_vassal = {
+								higher_tier_than = count
+								prisoner = no
+								NOT = { opinion = { who = ROOT value = 0 } }
+								primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+							}
 						}
 					}
 				}
-				custom_tooltip = pb_vassal_opinion_neg_0
 			}
 			holder_scope = {
-				hidden_tooltip = {
-					NOT = { religion = norse_pagan }
-					NOT = { religion = tengri_pagan }
-					NOT = { religion = baltic_pagan }
-					NOT = { religion = finnish_pagan }
-					NOT = { religion = aztec }
-					NOT = { religion = slavic_pagan }
-					NOT = { religion = west_african_pagan }
-					NOT = { religion = gaelic_pagan }
-					NOT = { religion = druidic }
+				custom_tooltip = { 
+					text = TT_NOT_UNREFORMED_PAGAN
+					hidden_tooltip = {
+						NOT = { religion = norse_pagan }
+						NOT = { religion = tengri_pagan }
+						NOT = { religion = baltic_pagan }
+						NOT = { religion = finnish_pagan }
+						NOT = { religion = aztec }
+						NOT = { religion = slavic_pagan }
+						NOT = { religion = gaelic_pagan }
+						NOT = { religion = druidic }
+					}
 				}
-				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
 		}
 		revoke_allowed = {
@@ -1067,17 +1092,19 @@ de_jure_laws = {
 						trait = mastermind_theologian
 						trait = genius
 					}
-					hidden_tooltip = {
-						NOT = {
-							any_vassal = {
-								higher_tier_than = count
-								prisoner = no
-								NOT = { opinion = { who = ROOT value = -15 } }
-								primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+					custom_tooltip = {
+						text = pb_vassal_opinion_neg_15
+							hidden_tooltip = {
+							NOT = {
+								any_vassal = {
+									higher_tier_than = count
+									prisoner = no
+									NOT = { opinion = { who = ROOT value = -15 } }
+									primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+								}
 							}
 						}
 					}
-					custom_tooltip = pb_vassal_opinion_neg_15
 				}
 				has_law = revokation_2
 			}
@@ -1161,32 +1188,35 @@ de_jure_laws = {
 					trait = mastermind_theologian
 					trait = genius
 				}
-				hidden_tooltip = {
-					NOT = {
-						any_vassal = {
-							religion = ROOT
-							higher_tier_than = count
-							prisoner = no
-							NOT = { opinion = { who = ROOT value = -10 } }
-							primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+				custom_tooltip = {
+					text = pb_vassal_opinion_neg_10
+					hidden_tooltip = {
+						NOT = {
+							any_vassal = {
+								religion = ROOT
+								higher_tier_than = count
+								prisoner = no
+								NOT = { opinion = { who = ROOT value = -10 } }
+								primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+							}
 						}
 					}
 				}
-				custom_tooltip = pb_vassal_opinion_neg_10
 			}
 			holder_scope = {
-				hidden_tooltip = {
-					NOT = { religion = norse_pagan }
-					NOT = { religion = tengri_pagan }
-					NOT = { religion = baltic_pagan }
-					NOT = { religion = finnish_pagan }
-					NOT = { religion = aztec }
-					NOT = { religion = slavic_pagan }
-					NOT = { religion = west_african_pagan }
-					NOT = { religion = gaelic_pagan }
-					NOT = { religion = druidic }
+				custom_tooltip = { 
+					text = TT_NOT_UNREFORMED_PAGAN
+					hidden_tooltip = {
+						NOT = { religion = norse_pagan }
+						NOT = { religion = tengri_pagan }
+						NOT = { religion = baltic_pagan }
+						NOT = { religion = finnish_pagan }
+						NOT = { religion = aztec }
+						NOT = { religion = slavic_pagan }
+						NOT = { religion = gaelic_pagan }
+						NOT = { religion = druidic }
+					}
 				}
-				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
 		}
 		revoke_allowed = {
@@ -1293,31 +1323,34 @@ de_jure_laws = {
 					}
 					prestige = 300
 				}
-				hidden_tooltip = {
-					NOT = {
-						any_vassal = {
-							higher_tier_than = count
-							NOT = { opinion = { who = liege value = -25 } }
-							primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
-							prisoner = no
+				custom_tooltip = {
+					text = pb_vassal_opinion_neg_25
+					hidden_tooltip = {
+						NOT = {
+							any_vassal = {
+								higher_tier_than = count
+								NOT = { opinion = { who = liege value = -25 } }
+								primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+								prisoner = no
+							}
 						}
 					}
 				}
-				custom_tooltip = pb_vassal_opinion_neg_25
 			}
 			holder_scope = {
-				hidden_tooltip = {
-					NOT = { religion = norse_pagan }
-					NOT = { religion = tengri_pagan }
-					NOT = { religion = baltic_pagan }
-					NOT = { religion = finnish_pagan }
-					NOT = { religion = aztec }
-					NOT = { religion = slavic_pagan }
-					NOT = { religion = west_african_pagan }
-					NOT = { religion = gaelic_pagan }
-					NOT = { religion = druidic }
+				custom_tooltip = { 
+					text = TT_NOT_UNREFORMED_PAGAN
+					hidden_tooltip = {
+						NOT = { religion = norse_pagan }
+						NOT = { religion = tengri_pagan }
+						NOT = { religion = baltic_pagan }
+						NOT = { religion = finnish_pagan }
+						NOT = { religion = aztec }
+						NOT = { religion = slavic_pagan }
+						NOT = { religion = gaelic_pagan }
+						NOT = { religion = druidic }
+					}
 				}
-				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
 		}
 		revoke_allowed = {
@@ -1423,17 +1456,19 @@ de_jure_laws = {
 					trait = ambitious
 				}
 				prestige = 1000
-				hidden_tooltip = {
-					NOT = {
-						any_vassal = {
-							higher_tier_than = count
-							NOT = { opinion = { who = liege value = -25 } }
-							primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
-							prisoner = no
+				custom_tooltip = {
+					text = pb_vassal_opinion_neg_25
+					hidden_tooltip = {
+						NOT = {
+							any_vassal = {
+								higher_tier_than = count
+								NOT = { opinion = { who = liege value = -25 } }
+								primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+								prisoner = no
+							}
 						}
 					}
 				}
-				custom_tooltip = pb_vassal_opinion_neg_25
 			}
 			NOT = { has_law = themes_2 }
 		}
@@ -1498,17 +1533,19 @@ de_jure_laws = {
 				NOT = { trait = slothful }
 				NOT = { trait = craven }
 				prestige = 2000
-				hidden_tooltip = {
-					NOT = {
-						any_vassal = {
-							higher_tier_than = count
-							NOT = { opinion = { who = liege value = -10 } }
-							primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
-							prisoner = no
+				custom_tooltip = {
+					text = pb_vassal_opinion_neg_10
+					hidden_tooltip = {
+						NOT = {
+							any_vassal = {
+								higher_tier_than = count
+								NOT = { opinion = { who = liege value = -10 } }
+								primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+								prisoner = no
+							}
 						}
 					}
 				}
-				custom_tooltip = pb_vassal_opinion_neg_10
 			}
 		}
 		revoke_allowed = {
@@ -1604,17 +1641,19 @@ de_jure_laws = {
 					trait = ambitious
 				}
 				prestige = 1000
-				hidden_tooltip = {
-					NOT = {
-						any_vassal = {
-							higher_tier_than = count
-							NOT = { opinion = { who = liege value = -25 } }
-							primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
-							prisoner = no
+				custom_tooltip = {
+					text = pb_vassal_opinion_neg_25
+					hidden_tooltip = {
+						NOT = {
+							any_vassal = {
+								higher_tier_than = count
+								NOT = { opinion = { who = liege value = -25 } }
+								primary_title = { is_primary_type_title = no } # Mercs, the Pope, Holy Orders, etc
+								prisoner = no
+							}
 						}
 					}
 				}
-				custom_tooltip = pb_vassal_opinion_neg_25
 			}
 		}
 		revoke_allowed = {

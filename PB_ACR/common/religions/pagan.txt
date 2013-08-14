@@ -71,6 +71,8 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		intermarry = norse_pagan
 	}		
 	
 	norse_pagan = {
@@ -112,6 +114,8 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		intermarry = norse_pagan_reformed
 	}	
 	
 	tengri_pagan_reformed = { # Mongols
@@ -459,20 +463,6 @@ pagan_group = {
 			
 			key = "DEF_RELIGION"
 		}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		
 		priests_can_marry = yes
 		female_temple_holders = yes
@@ -505,20 +495,6 @@ pagan_group = {
 			
 			key = "DEF_RELIGION"
 		}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		
 		priests_can_marry = yes
 		female_temple_holders = yes
@@ -538,6 +514,8 @@ pagan_group = {
 	
 	hellenic_pagan = {
 		graphical_culture = westerngfx
+
+		pre_reformed = yes
 
 		icon = 42
 		heresy_icon = 43

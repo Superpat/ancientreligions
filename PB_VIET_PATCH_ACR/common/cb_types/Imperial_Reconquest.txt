@@ -34,7 +34,10 @@ imperial_reconquest = {
 				has_landed_title = e_roman_empire
 			}
 			independent = yes
-			religion_group = christian
+			OR = {
+				religion_group = christian
+				religion = hellenic_pagan
+			}
 			NOT = { same_realm = FROM }
 		}
 		OR = {
@@ -157,7 +160,10 @@ imperial_reconquest = {
 				has_landed_title = e_roman_empire
 			}
 			independent = yes
-			religion_group = christian
+			OR = {
+				religion_group = christian
+				religion = hellenic_pagan
+			}
 			NOT = { same_realm = FROM }
 		}
 	}

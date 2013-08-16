@@ -23,11 +23,12 @@ character_event = {
 			religion = druidic
 			religion = druidic_reformed
 		}
+		is_landed = yes
 		is_abroad = no
 		}
 	
 	mean_time_to_happen = {
-		days = 750
+		months = 750
 		modifier = {
 			factor = 0.5
 			trait = zealous
@@ -102,7 +103,7 @@ character_event = {
 		}
 	
 	mean_time_to_happen = {
-		days = 1000
+		months = 1000
 
 		modifier = {
 			factor = 0.4

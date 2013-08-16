@@ -1,7 +1,7 @@
 ###################################
 #
 # ANCIENT RELIGIONS
-# - Gaelic Flavor Events
+# - Gaelic Flavour Events
 #
 # Event ID ancrel.1252 -
 #
@@ -22,11 +22,12 @@ character_event = {
 			religion = gaelic_pagan
 			religion = gaelic_pagan_reformed
 		}
+		is_landed = yes
 		is_abroad = no
 		}
 	
 	mean_time_to_happen = {
-		days = 1000
+		months = 1000
 
 		modifier = {
 			factor = 0.5
@@ -107,11 +108,12 @@ character_event = {
 			religion = gaelic_pagan
 			religion = gaelic_pagan_reformed
 		}
+		is_landed = yes
 		is_abroad = no
 		}
 	
 	mean_time_to_happen = {
-		days = 750
+		months = 750
 		modifier = {
 			factor = 0.5
 			trait = zealous

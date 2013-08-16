@@ -1,7 +1,7 @@
 ###################################
 #
 # ANCIENT RELIGIONS
-# - Hellenic Flavor Events
+# - Hellenic Flavour Events
 #
 # Event ID ancrel.2240 -
 #
@@ -21,10 +21,11 @@ character_event = {
 		trigger = {
 			religion = hellenic_pagan
 			is_abroad = no
+			is_landed = yes
 		}
 	
 	mean_time_to_happen = {
-		days = 750
+		months = 750
 		modifier = {
 			factor = 0.5
 			trait = zealous
@@ -88,10 +89,11 @@ character_event = {
 		trigger = {
 			religion = hellenic_pagan
 			is_abroad = no
+			is_landed = yes
 		}
 	
 	mean_time_to_happen = {
-		days = 1000
+		months = 1000
 
 		modifier = {
 			factor = 0.4

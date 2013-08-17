@@ -2871,10 +2871,6 @@ religious = {
 	#					enemy = FROM
 	#				}
 				}
-
-
-
-
 			}
 		}
 	}
@@ -7070,7 +7066,6 @@ liberation_revolt = {
 						}
 						usurp_title = PREV
 					}
-
 				}
 			}
 		}

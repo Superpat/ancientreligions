@@ -43,7 +43,7 @@ succession_laws = {
 		dynasty_opinion = 10
  
 	
-		potential = {                                                       
+		potential = {                                                      
 			holder_scope = {
 				NOT = { religion_group = muslim }
 				is_merchant_republic = no
@@ -116,12 +116,7 @@ succession_laws = {
 		dynasty_opinion = -5
 		potential = {
 			holder_scope = {
-				NOT = { religion_group = muslim }
-				OR = {
-					NOT = { religion_group = pagan_group }
-					is_reformed_religion = yes
-				}
-				
+				NOT = { religion_group = muslim }	
 				is_merchant_republic = no
 				is_patrician = no
 			}
@@ -170,11 +165,6 @@ succession_laws = {
 				NOT = { religion_group = muslim }
 				is_merchant_republic = no
 				is_patrician = no
-				
-				OR = {
-					NOT = { religion_group = pagan_group }
-					is_reformed_religion = yes
-				}
 			}
 			OR = {
 				is_landless_type_title = no
@@ -406,8 +396,6 @@ gender_laws = {
 		potential = {
 			holder_scope = { 
 				NOT = { religion_group = muslim }
-				NOT = { religion = tengri_pagan_reformed }
-				NOT = { religion = tengri_pagan }
 				has_horde_culture = no
 				is_merchant_republic = no
 				is_patrician = no
@@ -451,8 +439,6 @@ gender_laws = {
 		potential = {
 			holder_scope = { 
 				NOT = { religion_group = muslim }
-				NOT = { religion = tengri_pagan_reformed }
-				NOT = { religion = tengri_pagan }
 				has_horde_culture = no
 				is_merchant_republic = no
 				is_patrician = no
@@ -488,41 +474,4 @@ gender_laws = {
 			always = no
 		}			
 	}
-	
-	enatic_succession = {
-		male_dynasty_opinion = -20
-		female_dynasty_opinion = 20
-		
-		potential = {
-			always = no # For modders only
-		}
-		allow = {
-			always=yes
-		}
-		effect = {
-			gender_succ = enatic
-		}
-		revoke_allowed = {
-			always = no
-		}			
-	}
-	
-	enatic_cognatic_succession = {
-		male_dynasty_opinion = -15
-		female_dynasty_opinion = 10
-		
-		potential = {
-			always = no # For modders only
-		}
-		allow = {
-			always=yes
-		}
-		effect = {
-			gender_succ = enatic_cognatic
-		}
-		revoke_allowed = {
-			always = no
-		}			
-	}
-	
 }

@@ -1708,7 +1708,7 @@ e_britannia = {
 				}
 				b_mellifont = {
 					holy_site = gaelic_pagan
-					holy_site = gaelic _pagan_reformed
+					holy_site = gaelic_pagan_reformed
 				}
 				b_trim = {
 				}

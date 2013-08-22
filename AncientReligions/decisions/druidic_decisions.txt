@@ -9,8 +9,6 @@ decisions = {
 			OR = {
 				religion = druidic
 				religion = druidic_reformed
-				religion = gaelic_pagan
-				religion = gaelic_pagan_reformed
 			}
 			NOT = {	has_character_flag = holding_divination }
 			NOT = {	has_character_modifier = held_divination_timer }
@@ -65,14 +63,11 @@ decisions = {
 				OR = {
 					religion = druidic
 					religion = druidic_reformed
-					religion = gaelic_pagan
-					religion = gaelic_pagan_reformed
 				}
 			}
 			any_courtier = {
 				OR = {
 					religion = druidic
-					religion = gaelic_pagan
 				}
 			}
 		}
@@ -85,7 +80,6 @@ decisions = {
 			any_courtier = {
 				OR = {
 					religion = druidic
-					religion = gaelic_pagan
 				}
 				prisoner = no
 			}
@@ -168,14 +162,10 @@ decisions = {
 		is_high_prio = yes
 		potential = {
 			AND = {
+				has_landed_title = k_ireland
 				OR = {
-					tier = duke
-					tier = king
-					tier = emperor
-				}
-				OR = {
-					religion = gaelic_pagan
-					religion = gaelic_pagan_reformed
+					religion = druidic
+					religion = druidic_reformed
 				}				
 			}
 			prisoner = no
@@ -200,7 +190,7 @@ decisions = {
 				narrative_event = { id = ancrel.1150 }
 				create_character = {
 					random_traits = yes
-					religion = gaelic_pagan
+					religion = druidic
 					culture = ROOT
 					dynasty = NONE
 					female = no

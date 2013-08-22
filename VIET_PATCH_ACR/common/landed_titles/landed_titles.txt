@@ -550,7 +550,7 @@ d_fianna = {
 	holy_order = yes
 	
 	# Parent Religion 
-	religion = gaelic_pagan
+	religion = druidic
 	
 	culture = irish
 	
@@ -9445,8 +9445,6 @@ e_scandinavia = { #Renamed to Kalmar Union
 				
 				b_reykjavik = {
 						icelandic = "Reykjavík"
-						holy_site = gaelic_pagan
-						holy_site = gaelic_pagan_reformed
 				}
 				b_alftanes = {
 						swedish = "Alftanäs"
@@ -20594,8 +20592,6 @@ e_spain = {
 				b_corunna = {
 				}
 				b_mondonedo = {
-					holy_site = gaelic_pagan
-					holy_site = gaelic_pagan_reformed
 				}
 				b_lugo = {
 				}
@@ -25960,8 +25956,6 @@ e_britannia = {
 					irish = Tyddewi
 					welsh = Tyddewi
 					norwegian = "Ramsøy"
-					holy_site = gaelic_pagan
-					holy_site = gaelic_pagan_reformed
 				}
 				b_kidwelly = {
 					welsh = Cydweli
@@ -26217,8 +26211,6 @@ e_britannia = {
 				b_finlaggan = {
 				}
 				b_iona = {
-					holy_site = gaelic_pagan
-					holy_site = gaelic_pagan_reformed
 				}
 				b_stornoway = {
 					norwegian = "Stornavåg"
@@ -26808,8 +26800,8 @@ e_britannia = {
 				b_christ_church = {
 				}
 				b_mellifont = {
-					holy_site = gaelic_pagan
-					holy_site = gaelic_pagan_reformed
+					holy_site = druidic
+					holy_site = druidic_reformed
 				}
 				b_trim = {
 				}
@@ -29526,33 +29518,6 @@ d_druidic_reformed = {
 	
 	# Cannot be held as a secondary title
 	primary = yes
-	
-	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
-}
-
-d_gaelic_pagan_reformed = {
-	color={ 122 165 70 }
-	color2={ 220 220 0 }
-	
-	capital = 15 # Dublin
-	
-	title = "HIGH_KING"
-	title_female = "HIGH_QUEEN"
-	foa = "HIGH_KING_FOA"
-	
-	short_name = yes
-	
-	allow = {
-		religion = gaelic_pagan_reformed
-		num_of_holy_sites = 3
-		religion_authority = 0.6
-		piety = 500
-	}
-	
-	# Controls a religion
-	controls_religion = gaelic_pagan_reformed
-	
-	religion = gaelic_pagan_reformed
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }

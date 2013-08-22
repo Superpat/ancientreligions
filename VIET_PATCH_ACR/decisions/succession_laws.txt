@@ -531,8 +531,6 @@ gender_laws = {
 					culture = basque
 					religion = druidic
 					religion = druidic_reformed
-					religion = gaelic_pagan
-					religion = gaelic_pagan_reformed
 				}
 			}
 		}

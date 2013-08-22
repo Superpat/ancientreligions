@@ -207,5 +207,295 @@ decisions = {
 		ai_will_do = {
 			factor = 1
 		}
+	
+	
+	invite_druid_to_court = { #Invite a Druid to court
+		potential = {
+			OR = {
+				religion = druidic
+				religion = druidic_reformed
+			}
+		}
+		allow = {
+			NOT = { has_character_modifier = new_druid_in_court }
+			NOT = { has_character_flag = inviting_druid_over }
+			primary_title = { higher_tier_than = BARON }
+			NOT = {
+				any_vassal = {
+					has_minor_title = title_court_druid
+				}
+			}
+			NOT = {
+				any_courtier = {
+					has_minor_title = title_court_druid
+				}
+			}
+		}
+		effect = {
+			scaled_wealth = -0.5
+			
+			set_character_flag = inviting_druid_over
+
+			hidden_tooltip = {
+				character_event = {
+					id = ancrel.0152
+					days = 3
+				}
+			}
+			
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.3 #Decrease chance AI will do this
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					any_vassal = {
+						has_minor_title = title_court_druid
+					}
+					any_courtier = {
+						has_minor_title = title_court_druid
+					}
+				}
+			}
+			modifier = {
+				factor = 0.1
+				any_vassal = {
+					trait = druid
+				}
+				any_courtier = {
+					trait = druid
+				}
+			}
+			modifier = {
+				factor = 2
+				trait = diligent
+			}	
+			modifier = {
+				factor = 0.5
+				trait = slothful
+			}	
+			modifier = {
+				factor = 2
+				trait = ambitious
+			}	
+			modifier = {
+				factor = 0.5
+				trait = imbecile
+			}		
+			modifier = {
+				factor = 2
+				trait = zealous
+			}	
+			modifier = {
+				factor = 0.5
+				trait = cynical
+			}			
+			modifier = {
+				factor = 2
+				primary_title = { higher_tier_than = DUKE }
+			}	
+			modifier = {
+				factor = 0.5
+				trait = slow
+			}	
+		}
+	}	
+
+	assign_druid = { # For the AI, because they are dumb enough not to hand out minor titles
+		potential = {
+			ai = yes
+			OR = {
+				religion = druidic
+				religion = druidic_reformed
+			}
+			NOT = { 
+				any_courtier = {
+					has_minor_title = title_court_druid
+				}
+			}
+		}
+		allow = {
+			primary_title = { higher_tier_than = BARON }
+			any_courtier = {
+				trait = druid
+				is_female = no
+				is_adult = yes
+			}
+		}
+		effect = {
+			random_courtier = {
+				limit = {
+					is_adult = yes
+					is_female = no
+					trait = druid
+				}
+				give_minor_title = title_court_druid
+			}
+			
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.75 #Decrease chance AI will do this - they'll still do it eventually anyways, this will just prevent them from doing it immediately
+			}
+		}
+	}
+	
+	assign_bard = { # For the AI, because they are dumb enough not to hand out minor titles
+		potential = {
+			ai = yes
+			OR = {
+				religion = druidic
+				religion = druidic_reformed
+			}
+			NOT = { 
+				any_courtier = {
+					has_minor_title = title_court_bard
+				}
+			}
+		}
+		allow = {
+			primary_title = { higher_tier_than = BARON }
+			any_courtier = {
+				trait = poet
+				is_female = no
+				is_adult = yes
+			}
+		}
+		effect = {
+			random_courtier = {
+				limit = {
+					is_adult = yes
+					is_female = no
+					trait = poet
+				}
+				give_minor_title = title_court_poet
+			}
+			
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.75 #Decrease chance AI will do this - they'll still do it eventually anyways, this will just prevent them from doing it immediately
+			}
+		}
+	}
+
+	host_bard_performance = { # Start Bard performance event chain
+		potential = {
+			OR = {
+				religion = druidic
+				religion = druidic_reformed
+			}
+			NOT = { has_character_modifier = bard_performance_timer }
+			NOT = { has_character_modifier = held_bard_performance }
+			NOT = { has_character_flag = hosting_bard_performance }
+		}
+		allow = {
+			primary_title = { higher_tier_than = BARON }
+			OR = {
+				any_vassal = {
+					has_minor_title = title_court_bard
+				}
+				any_courtier = {
+					has_minor_title = title_court_bard
+				}
+			}
+			scaled_wealth = 0.2
+		}
+		effect = {
+			scaled_wealth = -0.2
+
+			hidden_tooltip = {
+				character_event = {
+					id = ancrel.0154
+					days = 3
+				}
+			}
+			
+			set_character_flag = hosting_bard_performance
+			
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.7 #Decrease chance AI will do this
+			}
+			modifier = {
+				factor = 2
+				trait = diligent
+			}	
+			modifier = {
+				factor = 0.5
+				trait = slothful
+			}	
+			modifier = {
+				factor = 2
+				trait = ambitious
+			}	
+			modifier = {
+				factor = 0.5
+				trait = imbecile
+			}		
+			modifier = {
+				factor = 2
+				trait = zealous
+			}	
+			modifier = {
+				factor = 0.5
+				trait = cynical
+			}			
+			modifier = {
+				factor = 2
+				trait = charitable
+			}	
+			modifier = {
+				factor = 0.5
+				trait = slow
+			}				
+			modifier = {
+				factor = 2
+				trait = gregarious
+			}	
+			modifier = {
+				factor = 0.5
+				trait = shy
+			}				
+			modifier = {
+				factor = 2
+				trait = poet
+			}	
+			modifier = {
+				factor = 0.5
+				trait = inbred
+			}					
+			modifier = {
+				factor = 2
+				trait = scholar
+			}	
+			modifier = {
+				factor = 0.5
+				trait = cruel
+			}						
+			modifier = {
+				factor = 2
+				trait = proud
+			}	
+			modifier = {
+				factor = 0.5
+				trait = humble
+			}							
+			modifier = {
+				factor = 2
+				trait = poet
+			}	
+			modifier = {
+				factor = 0.5
+				trait = arbitrary
+			}	
+		}
 	}
 }

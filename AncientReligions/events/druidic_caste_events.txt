@@ -1,0 +1,1025 @@
+#######################################
+#
+# ANCIENT RELIGIONS
+# - Druidic Caste Events
+#
+# Event ID ancrel.0152 - ancrel.0182 reserved
+#
+#######################################
+
+# Written by Cybrxkhan, modified by Patrick Marchand
+
+namespace = ancrel
+
+# Character gets Druid
+character_event = {
+	id = ancrel.0152
+	desc = EVTDESCancrel.0152
+	picture = GFX_evt_druid
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.0152
+		add_character_modifier = {
+			name = "new_druid_in_court"
+			duration = 730
+			hidden = yes
+		}
+		clr_character_flag = inviting_druid_over
+		random_list = {
+			35 = {
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					trait = druid
+					attributes = {
+						diplomacy = 3
+						martial = 3
+						stewardship = 3
+						intrigue = 3
+						learning = 3
+					}
+				}
+				new_character = {
+					opinion = {
+						modifier = opinion_patron
+						who = ROOT
+						years = 20
+					}
+					reverse_opinion = {
+						modifier = opinion_new_courtier
+						who = ROOT
+						years = 5
+					}				
+				}		
+			}
+			30 = {
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					trait = druid
+					attributes = {
+						diplomacy = 5
+						martial = 5
+						stewardship = 5
+						intrigue = 5
+						learning = 5
+					}
+				}
+				new_character = {
+					opinion = {
+						modifier = opinion_patron
+						who = ROOT
+						years = 20
+					}
+					reverse_opinion = {
+						modifier = opinion_new_courtier
+						who = ROOT
+						years = 5
+					}				
+				}			
+			}
+			20 = {
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					trait = druid
+					attributes = {
+						diplomacy = 8
+						martial = 8
+						stewardship = 8
+						intrigue = 8
+						learning = 8
+					}
+				}
+				new_character = {
+					opinion = {
+						modifier = opinion_patron
+						who = ROOT
+						years = 20
+					}
+					reverse_opinion = {
+						modifier = opinion_new_courtier
+						who = ROOT
+						years = 5
+					}				
+				}			
+			}
+			12 = {
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					trait = druid
+					attributes = {
+						diplomacy = 10
+						martial = 10
+						stewardship = 10
+						intrigue = 10
+						learning = 10
+					}
+				}
+				new_character = {
+					opinion = {
+						modifier = opinion_patron
+						who = ROOT
+						years = 20
+					}
+					reverse_opinion = {
+						modifier = opinion_new_courtier
+						who = ROOT
+						years = 5
+					}				
+				}			
+			}
+			3 = {
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					trait = druid
+					attributes = {
+						diplomacy = 13
+						martial = 13
+						stewardship = 13
+						intrigue = 13
+						learning = 13
+					}
+				}
+				new_character = {
+					opinion = {
+						modifier = opinion_patron
+						who = ROOT
+						years = 20
+					}
+					reverse_opinion = {
+						modifier = opinion_new_courtier
+						who = ROOT
+						years = 5
+					}				
+				}			
+			}
+		}
+	}
+}
+
+# Liege doesn't have a Druid - fired on a yearly basis to remind players
+character_event = {
+	id = ancrel.0153
+	desc = EVTDESCancrel.0153
+	picture = GFX_evt_druid
+	
+	is_triggered_only = yes
+	
+	only_rulers = yes
+	
+	trigger = {
+		ai = no
+		OR = {
+				religion = druidic
+				religion = druidic_reformed
+		}
+		primary_title = { higher_tier_than = BARON }
+		NOT = {
+			any_vassal = {
+				has_minor_title = title_court_druid
+			}
+		}
+		NOT = {
+			any_courtier = {
+				has_minor_title = title_court_druid
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTAancrel.0153 #Ok
+	}
+}
+
+
+##################################################################
+#
+# Bard Performances - fired via decision
+#
+# Two randomly chosen performance events will happen in the chain
+#
+##################################################################
+
+
+# Bard performance start
+character_event = {
+	id = ancrel.0154
+	desc = EVTDESCancrel.0154
+	picture = GFX_evt_bard
+	
+	is_triggered_only = yes
+	
+	#trigger = {
+	#	has_character_flag = hosting_bard_performance
+	#}
+	option = {
+		name = ancrel.0154.a
+		narrative_event = { id = ancrel.0177 days = 4 tooltip = "ancrel.0177.tooltip" }
+		#clr_character_flag = hosting_bard_performance
+	}
+	
+}
+
+# Bard performance preparations
+narrative_event = {
+	id = ancrel.0177
+	title = ancrel.0177.name
+	desc = ancrel.0177.desc
+	picture = GFX_evt_bard
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ancrel.0177.a
+		narrative_event = { id = ancrel.0183 days = 10 tooltip = "ancrel.0183.tooltip" }
+	}
+	
+}
+
+
+# Bard performance begins
+narrative_event = {
+	id = ancrel.0183
+	title = ancrel.0183.name
+	desc = ancrel.0183.desc
+	picture = GFX_evt_bard
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_tooltip = {
+			character_event = { id = ancrel.0171 days = 12 } #Middle of Performance
+		}
+	}
+	
+	option = {
+		name = ancrel.0183.a # 1 of 25 performance events will fire
+		hidden_tooltip = {
+			random_list = {
+				4 = { character_event = { id = ancrel.0155 days = 6 } }
+				4 = { character_event = { id = ancrel.0156 days = 6 } }
+				4 = { character_event = { id = ancrel.0157 days = 6 } }
+				4 = { character_event = { id = ancrel.0158 days = 6 } }
+				4 = { character_event = { id = ancrel.0159 days = 6 } }
+				4 = { character_event = { id = ancrel.0160 days = 6 } }
+				4 = { character_event = { id = ancrel.0161 days = 6 } }
+				4 = { character_event = { id = ancrel.0162 days = 6 } }
+				4 = { character_event = { id = ancrel.0163 days = 6 } }
+				4 = { character_event = { id = ancrel.0164 days = 6 } }
+				4 = { character_event = { id = ancrel.0165 days = 6 } }
+				4 = { character_event = { id = ancrel.0166 days = 6 } }
+				4 = { character_event = { id = ancrel.0167 days = 6 } }
+				4 = { character_event = { id = ancrel.0168 days = 6 } }
+				4 = { character_event = { id = ancrel.0169 days = 6 } }
+				4 = { character_event = { id = ancrel.0170 days = 6 } }
+				4 = { character_event = { id = ancrel.0173 days = 6 } }
+				4 = { character_event = { id = ancrel.0174 days = 6 } }
+				4 = { character_event = { id = ancrel.0175 days = 6 } }
+				4 = { character_event = { id = ancrel.0176 days = 6 } }
+				4 = { character_event = { id = ancrel.0178 days = 6 } }
+				4 = { character_event = { id = ancrel.0179 days = 6 } }
+				4 = { character_event = { id = ancrel.0180 days = 6 } }
+				4 = { character_event = { id = ancrel.0181 days = 6 } }
+				4 = { character_event = { id = ancrel.0182 days = 6 } }
+			}
+		}
+	}
+}
+
+# Bard performance Continues
+character_event = {
+	id = ancrel.0171
+	desc = ancrel.0171.desc
+	picture = GFX_evt_bard
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_tooltip = {
+			character_event = { id = ancrel.0172 days = 10 } #End of Performance
+		}
+	}
+	
+	option = {
+		name = ancrel.0171.a # 1 of 20 performance events will fire
+		hidden_tooltip = {
+			random_list = {
+				4 = { character_event = { id = ancrel.0155 days = 5 } }
+				4 = { character_event = { id = ancrel.0156 days = 5 } }
+				4 = { character_event = { id = ancrel.0157 days = 5 } }
+				4 = { character_event = { id = ancrel.0158 days = 5 } }
+				4 = { character_event = { id = ancrel.0159 days = 5 } }
+				4 = { character_event = { id = ancrel.0160 days = 5 } }
+				4 = { character_event = { id = ancrel.0161 days = 5 } }
+				4 = { character_event = { id = ancrel.0162 days = 5 } }
+				4 = { character_event = { id = ancrel.0163 days = 5 } }
+				4 = { character_event = { id = ancrel.0164 days = 5 } }
+				4 = { character_event = { id = ancrel.0165 days = 5 } }
+				4 = { character_event = { id = ancrel.0166 days = 5 } }
+				4 = { character_event = { id = ancrel.0167 days = 5 } }
+				4 = { character_event = { id = ancrel.0168 days = 5 } }
+				4 = { character_event = { id = ancrel.0169 days = 5 } }
+				4 = { character_event = { id = ancrel.0170 days = 5 } }
+				4 = { character_event = { id = ancrel.0173 days = 5 } }
+				4 = { character_event = { id = ancrel.0174 days = 5 } }
+				4 = { character_event = { id = ancrel.0175 days = 5 } }
+				4 = { character_event = { id = ancrel.0176 days = 5 } }
+				4 = { character_event = { id = ancrel.0178 days = 5 } }
+				4 = { character_event = { id = ancrel.0179 days = 5 } }
+				4 = { character_event = { id = ancrel.0180 days = 5 } }
+				4 = { character_event = { id = ancrel.0181 days = 5 } }
+				4 = { character_event = { id = ancrel.0182 days = 5 } }
+			}
+		}
+	}
+}
+
+# Bard performance ends
+character_event = {
+	id = ancrel.0172
+	desc = ancrel.0172.desc
+	picture = GFX_evt_bard
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ancrel.0172.a # ok
+		prestige = 10
+		piety = 10
+		any_courtier = {
+			limit = {
+				has_minor_title = title_court_bard
+			}
+			prestige = 10
+		}
+		any_vassal = {
+			limit = {
+				has_minor_title = title_court_bard
+bard		name = ancrel.0155.b
+		prestige = 1
+	}	
+	option = { # Different Suggestion
+		name = ancrel.0155.c
+		prestige = 1
+	}
+	
+}
+
+# Chief Nuh and the Hunters
+character_event = {
+	id = ancrel.0156
+	desc = ancrel.0156.desc
+	picture = GFX_evt_mud_mosque
+	
+	is_triggered_only = yes
+	
+	
+	option = { # oh my
+		name = ancrel.0156.a
+		prestige = 1
+	}	
+	option = { # Actually...
+		name = ancrel.0156.b
+		tooltip_info = scholar
+		trigger = { 
+			trait = scholar
+			NOT = { learning = 13 }
+		}
+		prestige = 3
+	}	
+	option = { # Actually...
+		name = ancrel.0156.b
+		tooltip_info = learning
+		trigger = { 
+			learning = 13
+		}
+		prestige = 3
+	}
+	
+}
+
+# Ancestor took baklava
+narrative_event = {
+	id = ancrel.0157
+	title = ancrel.0157.name
+	desc = ancrel.0157.desc
+	picture = GFX_evt_baklava
+	
+	is_triggered_only = yes
+	
+	
+	option = { # ok
+		name = ancrel.0157.a
+		prestige = 1
+	}	
+	option = { # I want baklava
+		name = ancrel.0157.b
+		tooltip_info = gluttonous
+		trigger = { 
+			trait = gluttonous
+		}
+		prestige = 1
+	}	
+	
+}
+
+# I am Ozymandias
+character_event = {
+	id = ancrel.0158
+	desc = ancrel.0158.desc
+	picture = GFX_evt_african_savanna
+	
+	is_triggered_only = yes
+	
+	
+	option = { # ok
+		name = ancrel.0158.a
+		prestige = 1
+	}
+	
+}
+
+
+# Dad fights lions
+character_event = {
+	id = ancrel.0159
+	desc = ancrel.0159.desc
+	picture = GFX_evt_african_savanna
+	
+	is_triggered_only = yes
+	
+	
+	option = { # eager
+		name = ancrel.0159.a
+		prestige = 1
+	}	
+	option = { # dad never told me
+		name = ancrel.0159.b
+		prestige = 1
+	}	
+	option = { # bard making it all up
+		name = ancrel.0159.c
+		tooltip_info = cynical
+		trigger = { 
+			trait = cynical
+		}
+		prestige = 1
+	}
+	
+}
+
+# Fate
+narrative_event = {
+	id = ancrel.0160
+	title = ancrel.0160.name
+	desc = ancrel.0160.desc
+	picture = GFX_evt_carriage_west_african
+	
+	is_triggered_only = yes
+	
+	
+	option = { # ok
+		name = ancrel.0160.a
+		prestige = 1
+	}	
+	option = { # Cynical option
+		name = ancrel.0160.b
+		tooltip_info = cynical
+		trigger = { 
+			trait = cynical
+		}
+		prestige = 1
+	}
+	
+}
+
+# Recounting geneaology
+character_event = {
+	id = ancrel.0161
+	desc = ancrel.0161.desc
+	picture = GFX_evt_bard
+	
+	is_triggered_only = yes
+	
+	
+	option = { # ok
+		name = ancrel.0161.a
+		prestige = 1
+	}	
+	option = { # Cynical option
+		name = ancrel.0161.b
+		tooltip_info = cynical
+		trigger = { 
+			trait = cynical
+		}
+		prestige = 1
+	}	
+	option = { # Actually...
+		name = ancrel.0161.c
+		tooltip_info = genius
+		trigger = { 
+			trait = genius
+			NOT = { learning = 13 }
+			NOT = { trait = scholar }
+		}
+		prestige = 5
+	}	
+	option = { # Actually...
+		name = ancrel.0161.c
+		tooltip_info = scholar
+		trigger = { 
+			trait = scholar
+			NOT = { learning = 13 }
+		}
+		prestige = 5
+	}	
+	option = { # Actually...
+		name = ancrel.0161.c
+		tooltip_info = learning
+		trigger = { 
+			learning = 13
+		}
+		prestige = 5
+	}
+	
+}
+
+# Hyouka (Ouati and Kadi)
+narrative_event = {
+	id = ancrel.0162
+	title = ancrel.0162.name
+	desc = ancrel.0162.desc
+	picture = GFX_evt_dogon_village
+	
+	is_triggered_only = yes
+	
+	
+	option = { # ok
+		name = ancrel.0162.a
+		prestige = 1
+	}		
+	
+}
+
+# Hyouka 2 - Ouati, Kadi, and the lions
+character_event = {
+	id = ancrel.0163
+	desc = ancrel.0163.desc
+	picture = GFX_evt_african_savanna
+	
+	is_triggered_only = yes
+	
+	
+	option = { # ok
+		name = ancrel.0163.a
+		prestige = 1
+	}		
+	option = { # I know
+		name = ancrel.0163.b
+		tooltip_info = genius
+		trigger = { 
+			trait = genius
+		}
+		prestige = 5
+	}			
+	option = { # I know
+		name = ancrel.0163.b
+		tooltip_info = quick
+		trigger = { 
+			trait = quick
+		}
+		prestige = 5
+	}				
+	option = { # I know
+		name = ancrel.0163.b
+		tooltip_info = perceptive
+		trigger = { 
+			trait = perceptive
+			NOT = { trait = quick }
+			NOT = { trait = genius }
+		}
+		prestige = 5
+	}	
+	
+}
+
+# Samurai Jack and AKU
+narrative_event = {
+	id = ancrel.0164
+	title = ancrel.0164.name
+	desc = ancrel.0164.desc
+	picture = GFX_evt_small_town_west_african
+	
+	is_triggered_only = yes
+	
+	
+	option = { # ok
+		name = ancrel.0164.a
+		prestige = 2
+	}		
+	
+}
+
+# Bard mimics ruler
+character_event = {
+	id = ancrel.0165
+	desc = ancrel.0165.desc
+	picture = GFX_evt_malian_ceremony
+	
+	is_triggered_only = yes
+	
+	
+	option = { # ok
+		name = ancrel.0165.a
+		prestige = -2
+		piety = 2
+	}		
+	option = { # grr
+		name = ancrel.0165.b
+		prestige = 1
+	}				
+	option = { # haha
+		name = ancrel.0165.c
+		tooltip_info = gregarious
+		trigger = { 
+			trait = gregarious
+		}
+		prestige = 2
+	}		
+	
+}
+
+# Samurai Jack 2
+character_event = {
+	id = ancrel.0166
+	desc = ancrel.0166.desc
+	picture = GFX_evt_african_savanna
+	
+	is_triggered_only = yes
+	
+	
+	option = { # ok
+		name = ancrel.0166.a
+		prestige = 1
+	}		
+	option = { # Actually...
+		name = ancrel.0166.b
+		tooltip_info = scholar
+		trigger = { 
+			trait = scholar
+			NOT = { learning = 13 }
+		}
+		prestige = 5
+	}	
+	option = { # Actually...
+		name = ancrel.0166.b
+		tooltip_info = learning
+		trigger = { 
+			learning = 13
+		}
+		prestige = 5
+	}	
+	
+}
+
+# Bakemonogatari
+character_event = {
+	id = ancrel.0167
+	desc = ancrel.0167.desc
+	picture = GFX_evt_malian_ceremony
+	
+	is_triggered_only = yes
+	
+	
+	option = { # ok
+		name = ancrel.0167.a
+		prestige = 1
+	}		
+	
+}
+
+# Ragnar the Red
+character_event = {
+	id = ancrel.0168
+	desc = ancrel.0168.desc
+	picture = GFX_evt_mud_mosque
+	
+	is_triggered_only = yes
+	
+	
+	option = { # ok
+		name = ancrel.0168.a
+		prestige = 1
+	}		
+	
+}
+
+# Ji'ub and Cliffracers
+character_event = {
+	id = ancrel.0169
+	desc = ancrel.0169.desc
+	picture = GFX_evt_african_savanna
+	
+	is_triggered_only = yes
+	
+	
+	option = { # ok
+		name = ancrel.0169.a
+		prestige = 1
+	}			
+	option = { # I've heard others say the same
+		name = ancrel.0169.b
+		if = {
+			limit = { NOT = { trait = cynical } }
+			random_list = {
+				80 = { }
+				20 = { add_trait = cynical }
+			}
+		}
+		prestige = 1
+	}		
+	
+}
+
+# Hyouka 3
+character_event = {
+	id = ancrel.0170
+	desc = ancrel.0170.desc
+	picture = GFX_evt_dogon_village
+	
+	is_triggered_only = yes
+	
+	
+	option = { # ok
+		name = ancrel.0170.a
+		piety = 1
+	}			
+	option = { # PLOT TWIST
+		name = ancrel.0170.b
+		tooltip_info = learning
+		trigger = { 
+			learning = 9
+		}
+		prestige = 1
+	}		
+	
+}
+
+# Ararararararararararagi
+narrative_event = {
+	id = ancrel.0173
+	title = ancrel.0173.name
+	desc = ancrel.0173.desc
+	picture = GFX_evt_african_savanna
+	
+	is_triggered_only = yes
+	
+	
+	option = { # ok
+		name = ancrel.0173.a
+		prestige = 1
+	}			
+	option = { # Me hungry
+		name = ancrel.0173.b
+		tooltip_info = gluttonous
+		trigger = { 
+			trait = gluttonous
+		}
+		prestige = 1
+	}					
+	option = { # Doubloe entendre
+		name = ancrel.0173.c
+		tooltip_info = lustful
+		trigger = { 
+			trait = lustful
+		}
+		prestige = 1
+	}		
+	
+}
+
+# Praising the lord
+character_event = {
+	id = ancrel.0174
+	desc = ancrel.0174.desc
+	picture = GFX_evt_carriage_west_african
+	
+	is_triggered_only = yes
+	
+	
+	option = { # ok
+		name = ancrel.0174.a
+		prestige = 1
+		piety = 1
+	}			
+	option = { # humility
+		name = ancrel.0174.b
+		piety = 2
+		if = {
+			limit = { NOT = { trait = humble } }
+			random_list = {
+				70 = { }
+				30 = { add_trait = humble }
+			}
+		}
+	}					
+	option = { # pride
+		name = ancrel.0174.c
+		if = {
+			limit = { NOT = { trait = proud } }
+			random_list = {
+				70 = { }
+				30 = { add_trait = proud }
+			}
+		}
+		prestige = 2
+	}						
+	option = { # cynical
+		name = ancrel.0174.d
+		if = {
+			limit = { NOT = { trait = cynical } }
+			random_list = {
+				70 = { }
+				30 = { add_trait = cynical }
+			}
+		}
+		prestige = 2
+	}		
+	
+}
+
+# Solemn Ceremony
+narrative_event = {
+	id = ancrel.0175
+	title = ancrel.0175.name
+	desc = ancrel.0175.desc
+	picture = GFX_evt_malian_ceremony
+	
+	is_triggered_only = yes
+	
+	
+	option = { # ok
+		name = ancrel.0175.a
+		prestige = 2
+		piety = 2
+	}				
+	option = { # no skepticism here
+		name = ancrel.0175.b
+		tooltip_info = cynical
+		trigger = { 
+			trait = cynical
+		}
+		piety = 6
+	}							
+	
+}
+
+# Children's stories
+narrative_event = {
+	id = ancrel.0176
+	title = ancrel.0176.name
+	desc = ancrel.0176.desc
+	picture = GFX_evt_malian_ceremony
+	
+	is_triggered_only = yes
+	
+	
+	option = { # ok
+		name = ancrel.0176.a
+		prestige = 2
+		piety = 2
+	}						
+	
+}
+
+# Time Immemorial
+narrative_event = {
+	id = ancrel.0178
+	title = ancrel.0178.name
+	desc = ancrel.0178.desc
+	picture = GFX_evt_malian_ceremony
+	
+	is_triggered_only = yes
+	
+	
+	option = { # ok
+		name = ancrel.0178.a
+		prestige = 2
+		piety = 2
+	}						
+	
+}
+
+# The Trickster
+narrative_event = {
+	id = ancrel.0179
+	title = ancrel.0179.name
+	desc = ancrel.0179.desc
+	picture = GFX_evt_malian_ceremony
+	
+	is_triggered_only = yes
+	
+	
+	option = { # ok
+		name = ancrel.0179.a
+		piety = 2
+	}
+			
+	option = { # yup
+		name = ancrel.0179.b
+		tooltip_info = cynical
+		trigger = { 
+			trait = cynical
+		}
+		prestige = 2
+	}		
+	
+}
+
+# Crazy Fanboys
+narrative_event = {
+	id = ancrel.0180
+	title = ancrel.0180.name
+	desc = ancrel.0180.desc
+	picture = GFX_evt_mud_mosque
+	
+	is_triggered_only = yes
+	
+	
+	option = { # ok
+		name = ancrel.0180.a
+		piety = 2
+	}	
+	option = { # own suggestion
+		name = ancrel.0180.b
+		prestige = 2
+	}						
+	
+}
+
+# Trolling
+narrative_event = {
+	id = ancrel.0181
+	title = ancrel.0181.name
+	desc = ancrel.0181.desc
+	picture = GFX_evt_bard
+	
+	is_triggered_only = yes
+	
+	
+	option = { # Don't insult me!
+		name = ancrel.0181.a
+		prestige = 2
+		if = {
+			limit = { NOT = { trait = proud } }
+			random_list = {
+				70 = { }
+				30 = { add_trait = proud }
+			}
+		}
+	}	
+	option = { # Talk about my flaws too
+		name = ancrel.0181.b
+		piety = 2
+		if = {
+			limit = { NOT = { trait = humble } }
+			random_list = {
+				70 = { }
+				30 = { add_trait = humble }
+			}
+		}
+	}	
+	option = { # Talk about children
+		name = ancrel.0181.c
+		trigger = {
+			any_child = {
+				is_alive = yes
+				is_adult = no
+			}
+		}
+		prestige = 2
+	}				
+	
+}
+
+# Speak of the Ancestors
+narrative_event = {
+	id = ancrel.0182
+	title = ancrel.0182.name
+	desc = ancrel.0182.desc
+	picture = GFX_evt_dogon_village
+	
+	is_triggered_only = yes
+	
+	
+	option = { # ok
+		name = ancrel.0182.a
+		prestige = 1
+	}					
+	
+}

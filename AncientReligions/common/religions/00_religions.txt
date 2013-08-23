@@ -1123,7 +1123,8 @@ pagan_group = {
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
 	}
-
+}
+	
 zoroastrian_group = {
 	has_coa_on_barony_only = yes
 	graphical_culture = muslimgfx

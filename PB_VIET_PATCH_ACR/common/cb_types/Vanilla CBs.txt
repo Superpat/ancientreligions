@@ -3056,6 +3056,29 @@ tribal_invasion = {
 				primary_title = { higher_tier_than = DUKE }
 				NOT = { culture = mongol }
 				NOT = { has_landed_title = e_timurids }
+				NOT = {
+					AND = {
+						ROOT = {
+							has_landed_title = k_cumania
+							culture = cuman
+						}
+						FROM = {
+							has_landed_title = k_pechenegs
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			AND = {
+				NOT = { year = 1245 }
+				ROOT = {
+					has_landed_title = e_il-khanate
+				}
+				FROM = {
+					has_landed_title = e_golden_horde
+				}
 			}
 		}		
 	}
@@ -3647,6 +3670,10 @@ religious = {
 			NOT = {
 				AND = {
 					NOT = { religion_group = pagan_group }
+					OR = {
+						NOT = { religion_group = zoroastrian_group }
+						has_global_flag = zoroastrian_priesthood_founded
+					}
 					FROM = { religion_group = pagan_group }
 					any_realm_province = {
 						religion_group = pagan_group
@@ -4123,6 +4150,13 @@ religious = {
 			OR = {
 				ROOT = { culture_group = west_african }
 				FROM = { culture_group = west_african }
+			}
+		}
+		modifier = {
+			factor = 0.5 #slow down
+			OR = {
+				ROOT = { culture_group = east_african }
+				FROM = { culture_group = east_african }
 			}
 		}	
 	}

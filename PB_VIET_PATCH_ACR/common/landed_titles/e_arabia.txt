@@ -1867,6 +1867,7 @@ e_arabia = {
 		color={ 0 70 0 }
 		capital = 868 # Muscat
 		muslim = 25 # Crusade target weight
+		zoroastrian_group = 25 # Crusade target weight
 		
 
 		d_oman = {
@@ -2023,13 +2024,19 @@ e_arabia = {
 		
 		# Creation/Usurp Trigger
 		allow = {
-			religion_group = christian
+			OR = {
+				religion_group = christian
+				religion_group = jewish_group # if Jewish, will set off chain of events to restore Kingdom of Israel
+			}
+			k_israel = {
+				has_holder = no
+			}	
 		}
 		
 		# Creation Effect
 		gain_effect = {
-			prestige = 5000
-			piety = 2000
+			prestige = 250
+			piety = 250
 		}
 		
 		christian = 500 # Crusade target weight

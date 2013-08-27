@@ -18,6 +18,7 @@ jewish_group = {
 
 		priests_can_marry = yes
 		can_grant_divorce = yes
+		allow_looting = yes
 	}
 	karaite = {
 		graphical_culture = muslimgfx
@@ -36,6 +37,7 @@ jewish_group = {
 
 		priests_can_marry = yes
 		can_grant_divorce = yes
+		allow_looting = yes
 	}
 	samaritan = {
 		graphical_culture = muslimgfx
@@ -47,12 +49,13 @@ jewish_group = {
 		parent = jewish
 		
 		crusade_name = "HOLY_WAR"
-		scripture_name = THE_TORAH
+		scripture_name = THE_PENTATEUCH
 		god_names = {
 			GOD_GOD GOD_HASHEM GOD_ADONAI
 		}
 
 		priests_can_marry = yes
 		can_grant_divorce = yes
+		allow_looting = yes
 	}
 }

@@ -952,26 +952,16 @@ d_maghreb_corsairs_modifier = {
 
 #New mercenaries and holy orders
 
-d_sudanese_band_modifier = {
-	levy_size = 3
-	archers = 300
-	pikemen = 150
-	light_infantry = 200
-	heavy_infantry = 50
-	light_cavalry = 100
-}
-d_agaw_band_modifier = {
-	levy_size = 1
-	archers = 300
-	pikemen = 100
-	light_infantry = 300
-}
-d_beja_band_modifier = {
+d_zhayedan_modifier_1 = {
 	levy_size = 1.5
-	archers = 200
-	pikemen = 100
-	light_infantry = 400
-	heavy_infantry = 150
+	knights = 500
+	horse_archers = 500
+}
+
+d_zhayedan_modifier_2 = {
+	levy_size = 1.5
+	knights = 500
+	horse_archers = 500
 }
 d_mandinka_horsemen_modifier = {
 	levy_size = 1
@@ -985,42 +975,6 @@ d_sofa_warriors_modifier = {
 	light_infantry = 300
 	heavy_infantry = 100
 	light_cavalry = 150
-}
-d_yotvingian_band_modifier = {
-	levy_size = 1.5
-	light_infantry = 300
-	pikemen = 125
-	light_cavalry = 50
-	archers = 200
-	heavy_infantry = 100
-	knights = 25
-}
-d_samogitian_band_modifier = {
-	levy_size = 4
-	light_infantry = 300
-	pikemen = 125
-	light_cavalry = 50
-	archers = 200
-	heavy_infantry = 100
-	knights = 25
-}
-d_estonian_band_modifier = {
-	levy_size = 1.5
-	light_infantry = 300
-	pikemen = 125
-	light_cavalry = 50
-	archers = 200
-	heavy_infantry = 100
-	knights = 25
-}
-d_chud_band_modifier = {
-	levy_size = 4
-	light_infantry = 300
-	pikemen = 125
-	light_cavalry = 50
-	archers = 200
-	heavy_infantry = 100
-	knights = 25
 }
 d_sindhi_bawarij_modifier = {
 	levy_size = 4

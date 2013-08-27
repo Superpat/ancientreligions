@@ -169,17 +169,6 @@ character_event = {
 			religion_authority = 0.8
 		}
 		modifier = {
-			factor = 3.0
-			religion_group = pagan_group
-			is_reformed_religion = no
-			location = {
-				OR = {
-					NOT = { religion_group = pagan_group }
-					is_reformed_religion = yes
-				}
-			}
-		}
-		modifier = {
 			factor = 1.5
 			is_heresy_of = ROOT
 		}

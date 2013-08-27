@@ -115,6 +115,9 @@ christian = {
 		
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
+		
+		intermarry = tengri_pagan
+		intermarry = tengri_pagan_reformed
 	}
 	
 	miaphysite = {

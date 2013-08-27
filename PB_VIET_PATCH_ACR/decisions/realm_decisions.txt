@@ -496,20 +496,23 @@ decisions = {
 		is_high_prio = yes
 		potential = {
 			OR = {
-				#AND = {
-				#	has_dlc = "Legacy of Rome"
+				AND = {
+					has_dlc = "Legacy of Rome"
 					has_landed_title = e_byzantium
-				#}
+				}
 				AND = {
 					independent = yes
 					culture = turkish
 					religion_group = muslim
 				}
+				has_landed_title = e_latin_empire
 			}
 			NOT = { has_landed_title = c_byzantion }
 			any_realm_lord = { 
-				ai = yes
-				has_landed_title = c_byzantion 
+				AND = {
+					ai = yes
+					has_landed_title = c_byzantion 
+				}
 			}
 		}
 		allow = {
@@ -864,14 +867,25 @@ decisions = {
 			has_dlc = "The Old Gods"
 			religion_group = zoroastrian_group
 			NOT = { has_global_flag = zoroastrian_priesthood_founded }
+			age = 16
+			prisoner = no	
 		}
 		allow = {
-			has_landed_title = e_persia
-			piety = 300
+			OR = {
+				has_landed_title = k_persia
+				has_landed_title = e_persia
+				}
+			realm_learning = 35
+			piety = 500
+			wealth = 500
+			war = no
+			religion_authority = 0.6
 		}
 		effect = {
 			set_global_flag = zoroastrian_priesthood_founded
-			piety = -300
+			wealth = -500
+			piety = -250
+			prestige = 250
 			activate_title = { title = d_zoroastrian status = yes }
 			hidden_tooltip = {
 				create_random_priest = {

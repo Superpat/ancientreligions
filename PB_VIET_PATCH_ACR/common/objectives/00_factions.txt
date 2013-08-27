@@ -2742,6 +2742,7 @@ faction_independence = {
 			factor = 0.5
 			opinion = { who = LIEGE value = 50 } 
 		}
+		
 		modifier = {
 			factor = 1.5
 			NOT = { opinion = { who = LIEGE value = 0 } } 

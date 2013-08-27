@@ -85,6 +85,7 @@ e_norse_empire = {
 		ruled_years = 5
 		is_adult = yes
 		NOT = { tier = emperor }
+
 	}
 }
 
@@ -93,17 +94,28 @@ k_israel = {
 	
 	capital = 774 # Jerusalem
 	
+	assimilate = no # Duchies cannot de jure drift OUT of this title
+	
 	culture = mizrahi
 	
 	religion = jewish
 	
+	dignity = 200 # Never want Israel to change primary title
+	
 	allow = {
-		OR = {
-			culture_group = judaic
-			religion_group = jewish_group
-		}
+		religion_group = jewish_group
 		independent = yes
 	}
+	
+	# Creation Effect
+	gain_effect = {
+		prestige = 250
+		piety = 250
+	}
+	
+	christian = 500 # Crusade target weight
+	muslim = 250 # Crusade target weight
+	jewish_group = 500 # Crusade target weight
 }
 
 k_sardinia = {
@@ -130,27 +142,112 @@ k_antioch = { #Principality of Antioch
 
 	short_name = yes
 	
-	allow = {
-		religion = catholic
+	title = "Prince"
+	title_female = "Princess"	
+	title_prefix="Principality of"
+	
+	allow = { #formed by event
+		always = no
 	}
 }
 
-# Invasions
-e_songhai = { # Songhaiese
-	color={ 94 14 30 }
-	capital = 914 # Gao
-	culture = songhai
-	religion = sunni
+e_khitan = { # Khitan
+	color={ 255 222 40 }
 	
-	tribe=yes
+	short_name = yes
+
+	culture = khitan
+	religion = buddhist
 	
+	capital = 622
+	
+	# Always exists
 	landless = yes
+	
+	allow = {
+		always = no
+	}
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+
+	# Regnal names	
+	male_names = {
+		Aidi Aizong Bala Chengzong Chongzong Daizong Daozong Dezong Dingzong Duanzong Duzong Gaozong Gaozu Gongzong Guangzong Guizong 
+		Hendeji Houzhu Huaizong Huanzong Huizong Hula Jingzong Kangzong Liezu Lizong Mingzong Muzong Ningzong Qinzong Renzong Ruizong 
+		Shangdi Shaozhu Shenzong Shizong Shizu Shunzong Su Suzong Taizong Tianzuo Wa Wenzong Wuwang Wuzong Xiangzong Xianzhi Xianzhu Xianzong Xiaozong 
+		Xingzong Xizong Xuanzong Yelan Yingzong Yizong Yuanzong Zhangzong Zhaogu Zhaozong Zhengzong Zhenzong Zhongzhu Zhongzong Zhuangzong Zuwu
+	}
+}
+
+e_china = { # China
+	color={ 180 0 0 }
+
+	culture = chinese
+	religion = buddhist
+	
+	capital = 622
+	
+	# Always exists
+	landless = yes
+	
+	allow = {
+		always = no
+	}
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+
+	# Regnal names	
+	male_names = {
+		Aidi Aizong Bala Chengzong Chongzong Daizong Daozong Dezong Dingzong Duanzong Duzong Gaozong Gaozu Gongzong Guangzong Guizong 
+		Hendeji Houzhu Huaizong Huanzong Huizong Hula Jingzong Kangzong Liezu Lizong Mingzong Muzong Ningzong Qinzong Renzong Ruizong 
+		Shangdi Shaozhu Shenzong Shizong Shizu Shunzong Su Suzong Taizong Tianzuo Wa Wenzong Wuwang Wuzong Xiangzong Xianzhi Xianzhu Xianzong Xiaozong 
+		Xingzong Xizong Xuanzong Yelan Yingzong Yizong Yuanzong Zhangzong Zhaogu Zhaozong Zhengzong Zhenzong Zhongzhu Zhongzong Zhuangzong Zuwu
+	}
+}
+
+
+d_oran = { #Oran "Republic"
+	color={ 36 150 88 }
+	color2={ 255 255 20 }
+	
+	capital = 832 # Orania
+	
+	culture = maghreb_arabic
+	religion = sunni
 	
 	allow = {
 		always = no
 	}
 }
 
+
+#Trebizond - from Latinokratia
+e_trebizond = {
+	color={ 100 150 30 }
+	color2={ 255 255 255 }
+	
+	capital = 678 #Trapezous
+		
+	culture = greek
+		
+	allow = {
+		always = no
+	}
+}
+
+#Nicaea - from Latinokratia
+e_nikaea = {
+	color={ 230 210 0 }
+	color2={ 255 255 20 }
+	
+	capital = 750 #Nikaea
+	
+	culture = greek
+
+	allow = {
+		always = no
+	}
+}
 
 #Religious Titles
 
@@ -211,105 +308,8 @@ d_yazidi = {
 	#NONE FOR YAZIDI
 }
 
-#East African
 
-d_sudanese_band = {
-	color = { 95 135 55 }
-	color2 = { 255 255 255 }
-
-	capital = 793 # Makuria
-
-	# Hire Trigger
-	allow = {
-		culture_group = east_african
-	}
-
-	religion = miaphysite
-	culture = nubian
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	modifier = d_sudanese_band_modifier
-	strength_growth_per_century = 0.25
-}
-
-d_agaw_band = {
-	color = { 85 125 45 }
-	color2 = { 255 255 255 }
-
-	capital = 883 # Gondar
-
-	# Hire Trigger
-	allow = {
-		culture_group = east_african
-	}
-
-	religion = miaphysite
-	culture = ethiopian
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	modifier = d_agaw_band_modifier
-	strength_growth_per_century = 0.25
-}
-
-d_beja_band = {
-	color = { 80 135 40 }
-	color2 = { 255 255 255 }
-
-	capital = 877 # Kassala
-
-	# Hire Trigger
-	allow = {
-		culture_group = east_african
-	}
-
-	religion = miaphysite
-	culture = ethiopian
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	modifier = d_beja_band_modifier
-	strength_growth_per_century = 0.25
-}
-
-#West African
+#West African mercenaries
 d_mandinka_horsemen = {
 	color = { 160 190 65 }
 	color2 = { 255 255 255 }
@@ -372,134 +372,6 @@ d_sofa_warriors = {
 	
 	modifier = d_sofa_warriors_modifier
 	strength_growth_per_century = 0.25
-}
-
-#Baltic Pagan
-d_yotvingian_band = {
-	color = { 213 197 162 }
-	color2 = { 255 255 255 }
-
-	capital = 423 #Sudovia 
-
-	# Hire Trigger
-	allow = {
-		culture_group = baltic
-		religion  = baltic_pagan
-	}
-	
-	religion = baltic_pagan
-	culture = prussian
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	modifier = d_yotvingian_band_modifier
-}
-
-d_samogitian_band = {
-	color = { 201 55 47 }
-	color2 = { 255 255 255 }
-
-	capital = 372 #Memel
-
-	# Hire Trigger
-	allow = {
-		culture_group = baltic
-		religion  = baltic_pagan
-	}
-	
-	religion = baltic_pagan
-	culture = lithuanian
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-
-	# Cannot be vassalized
-	independent = yes
-	
-	modifier = d_samogitian_band_modifier
-}
-
-#Finnic Pagan
-d_estonian_band = {
-	color = { 255 203 0 }
-	color2 = { 255 255 255 }
-
-	capital = 387 #Reval 
-
-	# Hire Trigger
-	allow = {
-		culture_group = finno_ugric
-		religion  = finnish_pagan
-	}
-	
-	religion = finnish_pagan
-	culture = ugricbaltic
-	
-	mercenary = yes
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	# Cannot be vassalized
-	independent = yes
-	
-	modifier = d_estonian_band_modifier
-}
-
-d_chud_band = {
-	color = { 54 78 225 }
-	color2 = { 255 255 255 }
-
-	capital = 405 #Chud
-
-	# Hire Trigger
-	allow = {
-		culture_group = finno_ugric
-		religion  = finnish_pagan
-	}
-	
-	religion = finnish_pagan
-	culture = finnish
-
-	title = "CAPTAIN"
-	foa = "CAPTAIN_FOA"
-
-	# Always exists
-	landless = yes
-	
-	# Cannot be held as a secondary title
-	primary = yes
-
-	# Cannot be vassalized
-	independent = yes
-	
-	modifier = d_chud_band_modifier
 }
 
 #Indian Ocean Naval Mercenaries

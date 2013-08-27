@@ -29,6 +29,11 @@ muslim = {
 		can_hold_temples = yes
 		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
 		max_wives = 4
+		
+		intermarry = tengri_pagan
+		intermarry = tengri_pagan_reformed
+		intermarry = west_african_pagan
+		intermarry = west_african_pagan_reformed
 	}
 	zikri = {
 		graphical_culture = muslimgfx
@@ -109,6 +114,11 @@ muslim = {
 		can_hold_temples = yes
 		psc_marriage = no
 		max_wives = 4
+		
+		intermarry = tengri_pagan
+		intermarry = tengri_pagan_reformed		
+		intermarry = west_african_pagan
+		intermarry = west_african_pagan_reformed
 	}
 	bektashi = {
 		graphical_culture = muslimgfx

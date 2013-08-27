@@ -18,6 +18,7 @@ e_persia = {
 		culture = persian
 		
 		muslim = 400 # Crusade target weight
+		zoroastrian_group = 400 # Crusade target weight
 		
 		d_merv = { 
 			color={ 153 201 70 }
@@ -642,6 +643,7 @@ e_persia = {
 		capital	= 626 # Khiva
 		culture = persian
 		
+		zoroastrian_group = 100 # Crusade target weight
 		tengri_pagan_reformed = 50
 		
 		d_khiva = {
@@ -868,6 +870,7 @@ e_persia = {
 		culture = levantine_arabic
 		
 		muslim = 400 # Crusade target weight
+		zoroastrian_group = 300 # Crusade target weight
 		
 		d_kermanshah = {
 			color={ 55 144 95 }
@@ -1470,6 +1473,7 @@ e_persia = {
 		
 		orthodox = 300 # Crusade target weight
 		muslim = 100 # Crusade target weight
+		zoroastrian_group = 100 # Crusade target weight
 		
 		# Creation/usurpation trigger
 		allow = {
@@ -1915,8 +1919,10 @@ e_persia = {
 		
 		capital = 728 # Damascus
 		
+		catholic = 300 # Crusade target weight	
 		orthodox = 200 # Crusade target weight
 		muslim = 200 # Crusade target weight
+		zoroastrian_group = 100 # Crusade target weight
 		
 		d_aleppo = {
 			color={ 85 232 20 }
@@ -2551,6 +2557,9 @@ e_persia = {
 		color2={ 255 255 255 }
 		
 		capital = 632 # Khorasan
+		
+		culture = pashtun
+		zoroastrian_group = 200 # Crusade target weight
 
 		# Creation/Usurp Trigger
 		allow = {

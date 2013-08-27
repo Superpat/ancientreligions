@@ -333,8 +333,7 @@ title_noyan = {
 	message = yes
 }
 
-# ZOROASTRIAN TITLES
-
+######ZOROASTRIAN TITLES
 title_shahrwaraz = {
 	dignity = 0.2
 	realm_in_name = yes
@@ -353,7 +352,11 @@ title_shahrwaraz = {
 			religion_group = zoroastrian_group
 		}
 		NOT = { has_minor_title = title_kardarigan }
-		NOT = { has_minor_title = title_shahin }
+		NOT = { has_minor_title = title_pushtigban_salar }
+		NOT = { has_minor_title = title_dregvant }
+		NOT = { has_minor_title = title_ashavan }
+		NOT = { has_minor_title = title_sraoshavarez }
+		NOT = { has_minor_title = title_shapsheraz}
 	}
 	
 	gain_effect = {
@@ -382,36 +385,11 @@ title_kardarigan = {
 			religion_group = zoroastrian_group
 		}
 		NOT = { has_minor_title = title_shahrwaraz }
-		NOT = { has_minor_title = title_shahin }
-	}
-	
-	gain_effect = {
-	}
-	lose_effect = {
-	}
-
-	message = yes
-}
-
-title_shahin = {
-	dignity = 0.15
-	realm_in_name = yes
-	grant_limit = 1
-	opinion_effect = 15
-	
-	monthly_salary = 0.075
-	monthly_prestige = 0.075
-	
-	allow = {
-		is_adult = yes
-		is_female = no
-		martial = 15
-		FROM = {
-			is_feudal = yes
-			religion_group = zoroastrian_group
-		}
-		NOT = { has_minor_title = title_shahrwaraz }
-		NOT = { has_minor_title = title_kardarigan }
+		NOT = { has_minor_title = title_pushtigban_salar }
+		NOT = { has_minor_title = title_dregvant }
+		NOT = { has_minor_title = title_ashavan }
+		NOT = { has_minor_title = title_sraoshavarez }
+		NOT = { has_minor_title = title_shapsheraz}
 	}
 	
 	gain_effect = {
@@ -438,8 +416,12 @@ title_pushtigban_salar = {
 			is_feudal = yes
 			religion_group = zoroastrian_group
 		}
-		NOT = { has_minor_title = title_spahbod }
-		NOT = { has_minor_title = title_eran_ambaragbed }
+		NOT = { has_minor_title = title_shahrwaraz }
+		NOT = { has_minor_title = title_kardarigan }
+		NOT = { has_minor_title = title_dregvant }
+		NOT = { has_minor_title = title_ashavan }
+		NOT = { has_minor_title = title_sraoshavarez }
+		NOT = { has_minor_title = title_shapsheraz}
 	}
 	
 	gain_effect = {
@@ -450,25 +432,38 @@ title_pushtigban_salar = {
 	message = yes
 }
 
-title_spahbod = {
-	dignity = 0.15
-	realm_in_name = yes
-	grant_limit = 4
-	opinion_effect = 15
+title_dregvant = {
+	dignity = 0.01
+	grant_limit = 1
+	opinion_effect = -15
 	
-	monthly_salary = 0.075
-	monthly_prestige = 0.075
+	monthly_prestige = -0.02
 	
 	allow = {
-		is_adult = yes
-		is_female = no
-		FROM = {
-			higher_tier_than = DUKE
-			is_feudal = yes
-			religion_group = zoroastrian_group
+		age = 16
+		OR = {
+			trait = cruel
+			trait = kinslayer
+			trait = slothful
+			trait = wroth
+			trait = deceitful
 		}
+		FROM = {
+			religion_group = zoroastrian_group
+			is_feudal = yes
+			primary_title = {
+				OR = {
+					tier = king
+					tier = emperor
+				}
+			}
+		}
+		NOT = { has_minor_title = title_shahrwaraz }
+		NOT = { has_minor_title = title_kardarigan }
 		NOT = { has_minor_title = title_pushtigban_salar }
-		NOT = { has_minor_title = title_eran_ambaragbed }
+		NOT = { has_minor_title = title_ashavan }
+		NOT = { has_minor_title = title_sraoshavarez }
+		NOT = { has_minor_title = title_shapsheraz}
 	}
 	
 	gain_effect = {
@@ -479,22 +474,115 @@ title_spahbod = {
 	message = yes
 }
 
-title_eran_ambaragbed = {
-	dignity = 0.075
+title_ashavan = {
+	dignity = 0.01
+	grant_limit = 1
+	opinion_effect = 15
+	
+	monthly_prestige = 0.02
+	
+	allow = {
+		age = 16
+		OR = {
+			trait = kind
+			trait = diligent
+			trait = patient
+			trait = honest
+		}
+		FROM = {
+			religion_group = zoroastrian_group
+			is_feudal = yes
+			primary_title = {
+				OR = {
+					tier = king
+					tier = emperor
+				}
+			}
+		}
+		NOT = { has_minor_title = title_shahrwaraz }
+		NOT = { has_minor_title = title_kardarigan }
+		NOT = { has_minor_title = title_pushtigban_salar }
+		NOT = { has_minor_title = title_dregvant }
+		NOT = { has_minor_title = title_sraoshavarez }
+		NOT = { has_minor_title = title_shapsheraz}
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_sraoshavarez = {
+	dignity = 0.01
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 15
+	
+	monthly_salary = 0.02
+	monthly_prestige = 0.01
+	
+	allow = {
+		age = 16
+		is_female = no
+		religion_group = zoroastrian_group
+		FROM = {
+			religion_group = zoroastrian_group
+			is_feudal = yes
+			primary_title = {
+				OR = {
+					tier = king
+					tier = emperor
+				}
+			}
+		}
+		NOT = { has_minor_title = title_shahrwaraz }
+		NOT = { has_minor_title = title_kardarigan }
+		NOT = { has_minor_title = title_pushtigban_salar }
+		NOT = { has_minor_title = title_dregvant }
+		NOT = { has_minor_title = title_ashavan }
+		NOT = { has_minor_title = title_shapsheraz}
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_shapsheraz = {
+	dignity = 0.01
+	realm_in_name = yes
 	grant_limit = 1
 	opinion_effect = 10
 	
-	monthly_salary = 0.005
-	monthly_prestige = 0.005
+	monthly_salary = 0.02
+	monthly_prestige = 0.01
 	
 	allow = {
-		is_adult = yes
+		age = 16
+		is_female = no
 		FROM = {
-			is_feudal = yes
 			religion_group = zoroastrian_group
+			is_feudal = yes
+			primary_title = {
+				OR = {
+					tier = duke
+					tier = king
+					tier = emperor
+				}
+			}
 		}
+		NOT = { has_minor_title = title_shahrwaraz }
+		NOT = { has_minor_title = title_kardarigan }
 		NOT = { has_minor_title = title_pushtigban_salar }
-		NOT = { has_minor_title = title_spahbod }
+		NOT = { has_minor_title = title_dregvant }
+		NOT = { has_minor_title = title_ashavan }
+		NOT = { has_minor_title = title_sraoshavarez }
 	}
 	
 	gain_effect = {

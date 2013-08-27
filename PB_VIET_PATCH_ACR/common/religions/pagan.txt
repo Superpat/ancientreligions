@@ -73,6 +73,12 @@ pagan_group = {
 		religious_clothing_priest = 3
 		
 		intermarry = norse_pagan
+		intermarry = finnish_pagan
+		intermarry = baltic_pagan
+		intermarry = slavic_pagan
+		intermarry = finnish_pagan_reformed
+		intermarry = baltic_pagan_reformed
+		intermarry = slavic_pagan_reformed
 	}		
 	
 	norse_pagan = {
@@ -116,6 +122,12 @@ pagan_group = {
 		religious_clothing_priest = 3
 		
 		intermarry = norse_pagan_reformed
+		intermarry = finnish_pagan
+		intermarry = baltic_pagan
+		intermarry = slavic_pagan
+		intermarry = finnish_pagan_reformed
+		intermarry = baltic_pagan_reformed
+		intermarry = slavic_pagan_reformed
 	}	
 	
 	tengri_pagan_reformed = { # Mongols
@@ -147,6 +159,15 @@ pagan_group = {
 		
 		religious_clothing_head = 6
 		religious_clothing_priest = 4
+		
+		intermarry = tengri_pagan
+		intermarry = finnish_pagan
+		intermarry = slavic_pagan
+		intermarry = finnish_pagan_reformed
+		intermarry = slavic_pagan_reformed
+		intermarry = orthodox
+		intermarry = sunni
+		intermarry = shiite
 	}		
 	
 	tengri_pagan = { #Mongols
@@ -183,6 +204,15 @@ pagan_group = {
 		
 		religious_clothing_head = 6
 		religious_clothing_priest = 4
+		
+		intermarry = tengri_pagan_reformed
+		intermarry = finnish_pagan
+		intermarry = slavic_pagan
+		intermarry = finnish_pagan_reformed
+		intermarry = slavic_pagan_reformed
+		intermarry = orthodox
+		intermarry = sunni
+		intermarry = shiite
 	}
 	
 	baltic_pagan_reformed = {
@@ -213,6 +243,14 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		intermarry = norse_pagan
+		intermarry = finnish_pagan
+		intermarry = slavic_pagan
+		intermarry = norse_pagan_reformed
+		intermarry = finnish_pagan_reformed
+		intermarry = slavic_pagan_reformed
+		intermarry = baltic_pagan
 	}		
 	
 	baltic_pagan = {
@@ -247,6 +285,14 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		intermarry = norse_pagan
+		intermarry = finnish_pagan
+		intermarry = slavic_pagan
+		intermarry = norse_pagan_reformed
+		intermarry = finnish_pagan_reformed
+		intermarry = slavic_pagan_reformed
+		intermarry = baltic_pagan_reformed
 	}	
 	
 	finnish_pagan_reformed = {
@@ -279,6 +325,16 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		intermarry = norse_pagan
+		intermarry = finnish_pagan
+		intermarry = slavic_pagan
+		intermarry = tengri_pagan
+		intermarry = norse_pagan_reformed
+		intermarry = finnish_pagan_reformed
+		intermarry = slavic_pagan_reformed
+		intermarry = tengri_pagan_reformed
+		intermarry = finnish_pagan
 	}	
 	
 	finnish_pagan = {
@@ -315,6 +371,16 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		intermarry = norse_pagan
+		intermarry = finnish_pagan
+		intermarry = slavic_pagan
+		intermarry = tengri_pagan
+		intermarry = norse_pagan_reformed
+		intermarry = finnish_pagan_reformed
+		intermarry = slavic_pagan_reformed
+		intermarry = tengri_pagan_reformed
+		intermarry = finnish_pagan_reformed
 	}
 	
 	aztec_reformed = {
@@ -400,6 +466,16 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		intermarry = norse_pagan
+		intermarry = finnish_pagan
+		intermarry = baltic_pagan
+		intermarry = tengri_pagan
+		intermarry = norse_pagan_reformed
+		intermarry = finnish_pagan_reformed
+		intermarry = baltic_pagan_reformed
+		intermarry = tengri_pagan_reformed
+		intermarry = slavic_pagan
 	}		
 	
 	slavic_pagan = {
@@ -438,6 +514,16 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		intermarry = norse_pagan
+		intermarry = finnish_pagan
+		intermarry = baltic_pagan
+		intermarry = tengri_pagan
+		intermarry = norse_pagan_reformed
+		intermarry = finnish_pagan_reformed
+		intermarry = baltic_pagan_reformed
+		intermarry = tengri_pagan_reformed
+		intermarry = slavic_pagan_reformed
 	}
 	
 	west_african_pagan_reformed = {
@@ -472,6 +558,9 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		intermarry = sunni
+		intermarry = shiite
 	}
 	
 	west_african_pagan = {
@@ -508,6 +597,9 @@ pagan_group = {
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
+		
+		intermarry = sunni
+		intermarry = shiite
 	}
 	
 	hellenic_pagan = {

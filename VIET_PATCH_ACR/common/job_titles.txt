@@ -48,7 +48,23 @@ job_marshal = {
 	monthly_prestige = 0.015
 	
 	allow = {
-		is_female = no
+		OR = {
+			is_female = no
+			AND = {
+				liege = { religion_group = zoroastrian_group }
+				liege = { culture_group = iranian }
+				religion_group = zoroastrian_group
+				culture_group = iranian
+				any_dynasty_member = { higher_tier_than = baron }
+				martial = 10
+				OR = {
+					trait = misguided_warrior
+					trait = tough_soldier
+					trait = skilled_tactician
+					trait = brilliant_strategist
+					}
+			}
+		}
 		is_adult = yes
 		prisoner = no
 		NOT = { trait = incapable }

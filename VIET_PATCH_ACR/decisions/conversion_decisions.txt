@@ -760,6 +760,7 @@ decisions = {
 				religion = slavic_pagan
 				religion = aztec
 				religion = west_african_pagan
+				religion = east_african_pagan
 				religion = druidic
 				religion = gaelic_pagan
 			}
@@ -805,6 +806,10 @@ decisions = {
 			if = {
 				limit = { religion = gaelic_pagan }
 				religion = gaelic_pagan_reformed
+			}
+			if = {
+				limit = { religion = east_african_pagan }
+				religion = east_african_pagan_reformed
 			}
 			
 			hidden_tooltip = {

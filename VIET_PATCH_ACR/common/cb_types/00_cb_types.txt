@@ -2356,7 +2356,142 @@ tribal_invasion = {
 				primary_title = { higher_tier_than = DUKE }
 				NOT = { culture = mongol }
 				NOT = { has_landed_title = e_timurids }
+				NOT = {
+					AND = {
+						ROOT = {
+							has_landed_title = k_cumania
+							culture = cuman
+						}
+						FROM = {
+							has_landed_title = k_pechenegs
+						}
+					}
+				}
 			}
+		}
+		modifier = {
+			factor = 0
+			AND = {
+				NOT = { year = 1245 }
+				ROOT = {
+					has_landed_title = e_il-khanate
+				}
+				FROM = {
+					has_landed_title = e_golden_horde
+				}
+			}
+		}		
+		modifier = {
+			factor = 0
+			AND = {
+				NOT = { year = 1245 }
+				ROOT = {
+					has_landed_title = e_golden_horde
+				}
+				FROM = {
+					has_landed_title = e_il-khanate
+				}
+			}
+		}	
+		modifier = {
+			factor = 0.1
+			AND = {
+				NOT = { year = 1280 }
+				ROOT = {
+					has_landed_title = e_il-khanate
+				}
+				FROM = {
+					has_landed_title = e_golden_horde
+				}
+			}
+		}		
+		modifier = {
+			factor = 0.1
+			AND = {
+				NOT = { year = 1280 }
+				ROOT = {
+					has_landed_title = e_golden_horde
+				}
+				FROM = {
+					has_landed_title = e_il-khanate
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			AND = {
+				ROOT = {
+					has_landed_title = e_il-khanate
+				}
+				FROM = {
+					any_realm_title = {
+						de_jure_liege_or_above = e_persia
+					}
+				}
+			}		
+		}
+		modifier = {
+			factor = 5
+			AND = {
+				ROOT = {
+					has_landed_title = e_golden_horde
+				}
+				OR = {
+					FROM = {
+						any_realm_title = {
+							de_jure_liege_or_above = e_tartaria
+						}
+					}
+					FROM = {
+						any_realm_title = {
+							de_jure_liege_or_above = e_turkestan
+						}
+					}
+					FROM = {
+						any_realm_title = {
+							de_jure_liege_or_above = e_russia
+						}
+					}
+				}
+			}		
+		}		
+		modifier = {
+			factor = 0.4
+			AND = {
+				ROOT = {
+					has_landed_title = e_golden_horde
+				}
+				FROM = {
+					any_realm_title = {
+						de_jure_liege_or_above = e_persia
+					}
+				}
+			}		
+		}
+		modifier = {
+			factor = 0.4
+			AND = {
+				ROOT = {
+					has_landed_title = e_il-khanate
+				}
+				OR = {
+					FROM = {
+						any_realm_title = {
+							de_jure_liege_or_above = e_tartaria
+						}
+					}
+					FROM = {
+						any_realm_title = {
+							de_jure_liege_or_above = e_turkestan
+						}
+					}
+					FROM = {
+						any_realm_title = {
+							de_jure_liege_or_above = e_russia
+						}
+					}
+				}
+			}		
 		}		
 	}
 }
@@ -2369,7 +2504,7 @@ crusade = {
 	is_permanent = yes
 	is_holy_war = yes
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
-	
+
 	can_use_gui = {
 		NOT = { has_global_flag = shattered_balance }
 		OR = {
@@ -2870,6 +3005,10 @@ religious = {
 			NOT = {
 				AND = {
 					NOT = { religion_group = pagan_group }
+					OR = {
+						NOT = { religion_group = zoroastrian_group }
+						has_global_flag = zoroastrian_priesthood_founded
+					}
 					FROM = { religion_group = pagan_group }
 					any_realm_province = {
 						religion_group = pagan_group
@@ -3124,6 +3263,13 @@ religious = {
 			OR = {
 				ROOT = { culture_group = west_african }
 				FROM = { culture_group = west_african }
+			}
+		}
+		modifier = {
+			factor = 0.5 #slow down
+			OR = {
+				ROOT = { culture_group = east_african }
+				FROM = { culture_group = east_african }
 			}
 		}	
 	}
@@ -5707,7 +5853,14 @@ muslim_invasion = {
 				is_patrician = yes
 				is_merchant_republic = yes
 			}
-		}			
+		}
+		modifier = {
+			factor = 0.5 #slow down
+			AND = {
+				ROOT = { culture_group = east_african }
+				FROM = { culture_group = east_african }
+			}
+		}		
 	}
 }
 

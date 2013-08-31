@@ -453,7 +453,7 @@ character_event = {
 		trigger = {
 			trait = fian
 		}
-		custom_tooltip = 
+		custom_tooltip = { 
 			text = give_laws_ollam
 			add_character_modifier = {
 				name = favored_fianna

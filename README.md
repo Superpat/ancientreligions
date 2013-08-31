@@ -5,7 +5,7 @@ Ancient Religions mod for Crusader Kings 2
 ===
 
 
-Current Version: 0.3
+Current Version: 0.31
 For Crusader Kings 2 Version: 1.11
 
 
@@ -21,7 +21,7 @@ Current Religions:
  - Brythonic Druidism
  - Gaelic Druidism
 
- 
+
 Ancient Religions Installation:
 
 1. Important: Delete your Ancient Religions folder if you have one
@@ -35,7 +35,7 @@ Compatibility Patches:
 This mod has compatibility patches or instructions for the following mods: Project Balance, Viet, PB + Viet, SWMH and Arko Armories. To use a compatibility patch, just extract it into the main folder and enable it, alongside all its dependencies, when you play the game.
 
 
-This mod is created, owned, and maintained by Patrick Marchand and Jon Severinsson. If you want to include it in any publicly released mod you need our permission.
+This mod is created, owned, and maintained by Patrick Marchand and lascuela0788. If you want to include it in any publicly released mod you need our permission.
 
 
 If you encounter any issues or are wondering about anything you can ask in the Ancient Religions thread on the Paradox Forums: http://forum.paradoxplaza.com/forum/showthread.php?685812-Ancient-Religions

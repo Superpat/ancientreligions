@@ -3636,10 +3636,12 @@ e_hre = {
 				b_albano = {}
 				b_avio = {}
 			}
-			allow = {
-				has_landed_title = c_tirol
-				has_landed_title = c_trent
-			}
+                        allow = {
+				OR = {
+					has_landed_title = c_tirol
+					any_vassal = { has_landed_title = c_tirol }
+				}
+                         }
 		}
 		d_bamberg = {
 			color={ 240 189 63 }
@@ -3853,6 +3855,12 @@ e_hre = {
 				b_pottschach = {}
 				b_seebenstein = {}
 			}
+                       allow = {
+				OR = {
+					has_landed_title = c_osterreich
+					any_vassal = { has_landed_title = c_osterreich }
+				}
+                         }
 		}
 		allow = {
 			OR = {
@@ -3879,9 +3887,6 @@ e_hre = {
 			
 			culture = karantanci			
 			
-			title = "MARGRAVE"
-			foa = "MARGRAVE_FOA"
-			title_prefix = "MARGRAVE_OF"
 			
 			c_steiermark = {
 				color={ 45 45 45 }
@@ -3921,7 +3926,13 @@ e_hre = {
 				b_pettau = {}
 				b_windischgraz = {}
 				b_guetenegg = {}
-			}              
+			}
+                        allow = {
+				OR = {
+					has_landed_title = c_steiermark
+					any_vassal = { has_landed_title = c_steiermark }
+				}
+                         }
 		}
 d_carinthia = {
 			color={ 98 120 93 }
@@ -4022,8 +4033,14 @@ d_carinthia = {
                         bosnian = "Krnskigrad"
                         serbian = "Krnskigrad"
                         karantanci = "Krnskigrad"
-                        bulgarian = "Krnskigrad"}
-			}                        
+                        bulgarian = "Krnskigrad"}			
+			}
+                        allow = {
+				OR = {
+					has_landed_title = c_karnten
+					any_vassal = { has_landed_title = c_karnten }
+				}
+                         }
 		}
 		d_verona = {
 			color={ 0 86 148 }
@@ -7380,6 +7397,8 @@ e_hungary = {
 			c_torki = {
 				color={ 227 206 149 }
 				color2={ 255 255 255 }
+			
+				romanian = Suceava
 				
 				b_bogdana = {}
 				b_suceava = {}
@@ -7413,6 +7432,8 @@ e_hungary = {
 				color={ 231 210 153 }
 				color2={ 255 255 255 }
 				
+				romanian = Scheia
+				
 				b_chisinau = {}
 				b_vasluimoldavia = {}
 				b_scheia = {}
@@ -7427,6 +7448,8 @@ e_hungary = {
 				color={ 217 102 253 }
 				color2={ 255 255 255 }
 				
+				romanian = CetateaAlba
+			
 				b_oblucita = {}
 				b_tigheci = {}
 				b_vicina = {}
@@ -7596,6 +7619,8 @@ e_hungary = {
 			c_marmaros = {
 				color={ 164 23 23 }
 				color2={ 255 255 255 }
+				
+				romanian = Maramures
 				
 				b_veszpramvar = {}
 				b_belhungary = {}
@@ -8299,6 +8324,8 @@ e_hungary = {
 				color={ 241 58 58 }
 				color2={ 255 255 255 }
 				
+				romanian = Bihor
+				
 				b_bihar = {}
 				b_nagyvarad = {}
 				b_debrecen = {}
@@ -8329,6 +8356,8 @@ e_hungary = {
 				color={ 237 54 54 }
 				color2={ 255 255 255 }
 				
+				romanian = TinutulSecuiesc
+				
 				b_csik = {}
 				b_aranyos = {}
 				b_haromszek = {}
@@ -8341,6 +8370,8 @@ e_hungary = {
 			c_feher = {
 				color={ 245 62 62 }
 				color2={ 255 255 255 }
+				
+				romanian = AlbaIulia
 				
 				b_feher = {}
 				b_aradan = {}
@@ -9961,19 +9992,15 @@ e_scandinavia = {
 	capital = 266 # Sjaelland
 	culture = danish
 
-        danish = "Norðríki"
-        norwegian = "Norðríki"
-	swedish = "Norðríki"
-	anglonorse = "Norðríki"
-	gothic = "Norðríki"
-        norse = "Norðríki"
-        norsegaelic = "Norðríki"
-        icelandic = "Norðríki"
+        danish = "Norðurríki"
+        norwegian = "Norðurríki"
+	swedish = "Norðurríki"
+	anglonorse = "Norðurríki"
+	gothic = "Norðurríki"
+        norse = "Norðurríki"
+        norsegaelic = "Norðurríki"
+        icelandic = "Norðurríki"
         greek = "Thule"
-
-	title = "EN"
-	foa = "EN_FOA"
-	title_prefix = "EN_OF"
 	
 	catholic = 100 # Crusade target weight
                              	
@@ -10313,11 +10340,6 @@ e_scandinavia = {
 
                         german = "Schleswig"
 		        saxon = "Sillende"
-		        swedish = "Sillende"
-		        anglonorse = "Sillende"
-		        gothic = "Sillende"
-		        danish = "Sillende"
-		        norwegian = "Sillende"
                         norse = "Sillende"
 			
 			c_slesvig = {
@@ -10337,6 +10359,18 @@ e_scandinavia = {
                                 german = "Schleswig"
 				}
 				b_aabenraahus = {
+				}
+				b_thyraborg = {
+                                german = "Thyraburg"
+		                saxon = "Þyrvéburg"
+		                swedish = "Thyraborg"
+		                anglonorse = "Þyrvéborg"
+		                icelandic = "Þyrvéborg"
+		                norsegaelic = "Þyrvéborg"
+		                gothic = "Thyraborg"
+		                danish = "Thyraburgh"
+		                norwegian = "Þyrvéborg"
+                                norse = "Þyrvéborg"
 				}
 				b_loegum = {
 				}
@@ -10612,15 +10646,13 @@ e_scandinavia = {
 
 		d_uppland = {
 			color={ 87 99 104 }
-			color2={ 255 255 255 }
-			
-                        norse = "Sviþjod"
+			color2={ 255 255 255 }		
 
 			capital = 290 # Uppland
                         
                         norse_pagan_reformed = 500 # Crusade target weight
 			
-			dignity = 8
+			dignity = 4
 
                         culture = swedish
 			
@@ -10962,8 +10994,11 @@ e_scandinavia = {
 			color2={ 255 255 255 }
 			capital = 288 # Värmland
 
+			dignity = 8
+
                         culture = swedish
 
+                        norse = "Sviþjod"
                        			
 			c_varmland = {
 				color={ 159 24 14 }
@@ -11083,6 +11118,8 @@ e_scandinavia = {
 		d_halsingland = { 
 			color={ 104 147 54 }
 			color2={ 255 255 255 }
+
+                        dignity = 5
 			
 			capital = 285 # Hälsingland
 
@@ -12653,7 +12690,17 @@ k_pomerania = {
 	capital = 262 #Lübeck
 	
 	catholic = 400 # Crusade target weight
-			
+	
+        saxon = "Winedaland"		
+        danish = "Vindarland"
+        swedish = "Vindarland"
+        norse = "Vindarland"
+        icelandic = "Vindarland"
+	norwegian = "Vindarland"
+	gothic = "Vindarland"
+	norsegaelic = "Vindarland"
+        anglonorse = "Vindarland" 
+
 	d_mecklemburg = {
                 color={ 78 49 36 }		
 		color2={ 255 255 255 }
@@ -12679,11 +12726,13 @@ k_pomerania = {
                         berber = "Qal'at Nakon"
                         tuareg = "Qal'at Nakon"
                         danish = "Mikelenburgh"
-                        swedish = "Mikelenburgh"
-			norwegian = "Mikelenburgh"
-			gothic = "Mikelenburgh"
-			norsegaelic = "Mikelenburgh"
-                        anglonorse = "Mikelenburgh" 
+                        norse = "Mikelenborg"
+                        icelandic = "Mikelenborg"
+                        swedish = "Mikelenborg"
+			norwegian = "Mikelenborg"
+			gothic = "Mikelenborg"
+			norsegaelic = "Mikelenborg"
+                        anglonorse = "Mikelenborg" 
 		
 		c_mecklemburg = {
 			color={ 207 207 207 }
@@ -12708,11 +12757,13 @@ k_pomerania = {
                         berber = "Qal'at Nakon"
                         tuareg = "Qal'at Nakon"
                         danish = "Mikelenburgh"
-                        swedish = "Mikelenburgh"
-			norwegian = "Mikelenburgh"
-			gothic = "Mikelenburgh"
-			norsegaelic = "Mikelenburgh"
-                        anglonorse = "Mikelenburgh" 
+                        norse = "Mikelenborg"
+                        icelandic = "Mikelenborg"
+                        swedish = "Mikelenborg"
+			norwegian = "Mikelenborg"
+			gothic = "Mikelenborg"
+			norsegaelic = "Mikelenborg"
+                        anglonorse = "Mikelenborg" 
 			
 			b_mecklemburg = {
                         polish = "Meklemburgia"
@@ -12734,11 +12785,13 @@ k_pomerania = {
                         berber = "Qal'at Nakon"
                         tuareg = "Qal'at Nakon"
                         danish = "Mikelenburgh"
-                        swedish = "Mikelenburgh"
-			norwegian = "Mikelenburgh"
-			gothic = "Mikelenburgh"
-			norsegaelic = "Mikelenburgh"
-                        anglonorse = "Mikelenburgh" 
+                        norse = "Mikelenborg"
+                        icelandic = "Mikelenborg"
+                        swedish = "Mikelenborg"
+			norwegian = "Mikelenborg"
+			gothic = "Mikelenborg"
+			norsegaelic = "Mikelenborg"
+                        anglonorse = "Mikelenborg" 
 			}
 			b_wismar = {
                         danish = "Wizmar"
@@ -13811,6 +13864,15 @@ e_poland = {
 		culture = polish
 
 		catholic = 100 # Crusade target weight
+		
+                danish = "Pulinaland"
+                swedish = "Pulinaland"
+                norse = "Pulinaland"
+                icelandic = "Pulinaland"
+	        norwegian = "Pulinaland"
+	        gothic = "Pulinaland"
+	        norsegaelic = "Pulinaland"
+                anglonorse = "Pulinaland" 
 		
 		d_mazovia = {
 			color={ 147 21 39 }
@@ -18930,7 +18992,7 @@ e_russia = {
 			}
 		}
 	} # END k_polotsk
-	k_kiev = {
+	k_ruthenia = {
 		color={ 220 183 61 }
 		color2={ 255 255 255 }
 		
@@ -19337,7 +19399,7 @@ e_russia = {
 				b_serpeysk = {}
 			}
 		}
-	} # END k_kiev
+	} # END k_ruthenia
 	k_novgorod = {
 		color={ 224 224 224 }
 		color2={ 255 255 255 }
@@ -19601,7 +19663,7 @@ allow = {
 	}
 } # END e_russia
 
-	k_crimea = {
+	k_taurica = {
 		color={ 90 150 175 }
 		color2={ 210 180 65 }
 		
@@ -19830,7 +19892,7 @@ allow = {
 				b_beshtau = {}
 			}
 		}
-	} # END k_crimea
+	} # END k_taurica
 	k_khazaria = {
 		color={ 250 184 31 }
 		color2={ 255 255 255 }
@@ -23251,7 +23313,7 @@ e_italy = {
 				b_pontecorvo = {}
 			}
 			c_gaeta = {
-				color={ 186 202 251 }
+				color={ 78 35 75 }
 				color2={ 255 255 255 }
 
 				name_tier = duke
@@ -40782,7 +40844,7 @@ e_britannia = {
 			}
 		}#End d_lancaster
                 d_northumberland = {
-			color={ 220 143 21 }
+			color={ 234 207 99 }
 			color2={ 255 255 255 }
 
 			capital = 52
@@ -44283,6 +44345,52 @@ e_britannia = {
 					anglonorse = "Dundrennan"
 				}
 			}
+			c_carrick = {
+				color={ 66 125 125 }
+				color2={ 255 255 255 }
+												
+				irish = "A' Charraig"
+				scottish = "A' Charraig"
+				norsegaelic = "A' Charraig"
+				welsh = "A' Charraig"
+				cumbric = "A' Charraig"
+				cornish = "A' Charraig"
+				breton = "A' Charraig"
+				english = "Carrick"
+				saxon = "Carrick"
+				anglonorse = "Carrick"
+				
+				b_turnberry = {
+					irish = "Turnberry"
+					scottish = "Turnberry"
+					norsegaelic = "Turnberry"
+					welsh = "Turnberry"
+					english = "Turnberry"
+					saxon = "Turnberry"
+					anglonorse = "Turnberry"
+				}				
+				b_maybole = {
+					irish = "Am Magh Baoghail"
+					scottish = "Am Magh Baoghail"
+					norsegaelic = "Am Magh Baoghail"
+					welsh = "Am Magh Baoghail"
+					cumbric = "Am Magh Baoghail"
+					cornish = "Am Magh Baoghail"
+					breton = "Am Magh Baoghail"
+					english = "Maybole"
+					saxon = "Maybole"
+					anglonorse = "Maybole"
+				}				
+				b_crossraguel = {
+					irish = "Crossraguel"
+					scottish = "Crossraguel"
+					norsegaelic = "Crossraguel"
+					welsh = "Crossraguel"
+					english = "Crossraguel"
+					saxon = "Crossraguel"
+					anglonorse = "Crossraguel"
+				}
+			}
 			c_bailenahuige = {
 				color={ 50 185 243 }
 				color2={ 255 255 255 }
@@ -45847,54 +45955,8 @@ e_britannia = {
 					saxon = "Dunure"
 					anglonorse = "Dunure"
 				}
-			}			
-			c_carrick = {
-				color={ 66 125 125 }
-				color2={ 255 255 255 }
-												
-				irish = "A' Charraig"
-				scottish = "A' Charraig"
-				norsegaelic = "A' Charraig"
-				welsh = "A' Charraig"
-				cumbric = "A' Charraig"
-				cornish = "A' Charraig"
-				breton = "A' Charraig"
-				english = "Carrick"
-				saxon = "Carrick"
-				anglonorse = "Carrick"
-				
-				b_turnberry = {
-					irish = "Turnberry"
-					scottish = "Turnberry"
-					norsegaelic = "Turnberry"
-					welsh = "Turnberry"
-					english = "Turnberry"
-					saxon = "Turnberry"
-					anglonorse = "Turnberry"
-				}				
-				b_maybole = {
-					irish = "Am Magh Baoghail"
-					scottish = "Am Magh Baoghail"
-					norsegaelic = "Am Magh Baoghail"
-					welsh = "Am Magh Baoghail"
-					cumbric = "Am Magh Baoghail"
-					cornish = "Am Magh Baoghail"
-					breton = "Am Magh Baoghail"
-					english = "Maybole"
-					saxon = "Maybole"
-					anglonorse = "Maybole"
-				}				
-				b_crossraguel = {
-					irish = "Crossraguel"
-					scottish = "Crossraguel"
-					norsegaelic = "Crossraguel"
-					welsh = "Crossraguel"
-					english = "Crossraguel"
-					saxon = "Crossraguel"
-					anglonorse = "Crossraguel"
-				}
 			}
-		}
+               }			
 	} # END k_scotland
         k_ellan_vannin = {
 			color={ 60 60 118 }
@@ -48376,6 +48438,30 @@ b_ziani = {
 	religion = catholic
 }
 
+b_candiano = {
+	culture = venetian
+	religion = catholic
+}
+
+b_orsoleo = {
+	culture = venetian
+	religion = catholic
+}
+
+b_participazio = {
+	culture = venetian
+	religion = catholic
+}
+
+b_tribuno = {
+	culture = venetian
+	religion = catholic
+}
+
+b_tradonico = {
+	culture = venetian
+	religion = catholic
+}
 # GENOA:
 
 b_doria = {

@@ -3470,6 +3470,8 @@ k_brittany = {
 			b_st_gildas = {
 			}
 			b_locmine = {
+				holy_site = druidic
+				holy_site = druidic_reformed
 			}
 			b_hennebont = {
 			}

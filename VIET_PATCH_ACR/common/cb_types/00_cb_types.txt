@@ -3264,7 +3264,7 @@ religious = {
 				ROOT = { culture_group = west_african }
 				FROM = { culture_group = west_african }
 			}
-		}
+		}	
 		modifier = {
 			factor = 0.5 #slow down
 			OR = {

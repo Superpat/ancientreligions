@@ -579,7 +579,7 @@ character_event = {
 			trait = weak
 			factor = 2.5
 		}		
-		modifier = {
+				modifier = {
 			factor = 1.25
 			trait = stressed
 		}
@@ -1168,7 +1168,7 @@ character_event = {
 			trait = weak
 			factor = 0.8
 		}		
-		modifier = {
+				modifier = {
 			factor = 0.8
 			trait = stressed
 		}
@@ -1507,7 +1507,7 @@ character_event = {
 			trait = weak
 			factor = 0.8
 		}	
-		modifier = {
+				modifier = {
 			factor = 0.8
 			trait = stressed
 		}
@@ -2044,7 +2044,7 @@ character_event = {
 	option = {
 		name = EVTOPTA262
 		prestige = 100
-hidden_tooltip = {
+		hidden_tooltip = {
 			if = {
 				limit = {
 					OR = {

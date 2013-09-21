@@ -984,3 +984,11 @@ d_swahili_fleet_modifier = {
 	levy_size = 4
 	galleys = 10
 }
+d_israel_defense = {
+	levy_size = 6
+	light_infantry = 250
+	light_cavalry = 150
+	archers = 200
+	heavy_infantry = 100
+	knights = 75
+}

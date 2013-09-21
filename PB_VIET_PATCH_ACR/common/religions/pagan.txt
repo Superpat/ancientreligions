@@ -1,6 +1,5 @@
 pagan_group = {
 	has_coa_on_barony_only = no
-
 	graphical_culture = westerngfx
 	playable = yes
 	
@@ -582,7 +581,7 @@ pagan_group = {
 			
 			key = "DEF_RELIGION"
 		}
-
+		
 		priests_can_marry = yes
 		female_temple_holders = yes
 		defensive_attrition = yes
@@ -604,7 +603,7 @@ pagan_group = {
 	
 	hellenic_pagan = {
 		graphical_culture = westerngfx
-
+		
 		pre_reformed = yes
 
 		icon = 42

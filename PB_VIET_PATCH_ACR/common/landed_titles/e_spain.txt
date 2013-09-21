@@ -362,6 +362,7 @@ e_spain = {
 					holy_site = sunni
 					holy_site = aztec
 					holy_site = aztec_reformed
+					holy_site = jewish
 					bedouin_arabic = "Qurtubah"
 					maghreb_arabic = "Qurtubah"
 					levantine_arabic = "Qurtubah"

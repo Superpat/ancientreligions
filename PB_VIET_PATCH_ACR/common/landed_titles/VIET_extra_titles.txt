@@ -308,6 +308,35 @@ d_yazidi = {
 	#NONE FOR YAZIDI
 }
 
+#Misc mercenaries and holy orders
+
+d_israel_defense = {
+	color={ 220 220 225 }
+	color2={ 255 255 255 }
+
+	capital = 774 # Jerusalem
+	
+	culture = mizrahi
+	
+	religion = jewish
+	
+	mercenary = yes
+
+	title = "Aluf"
+	foa = "CAPTAIN_FOA"
+
+	# Always exists
+	landless = yes
+	
+	#holy_order = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	strength_growth_per_century = 0.10
+	
+	modifier = d_israel_defense_modifier
+}
 
 #West African mercenaries
 d_mandinka_horsemen = {

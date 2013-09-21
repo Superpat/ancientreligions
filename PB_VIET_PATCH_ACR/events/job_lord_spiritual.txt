@@ -81,16 +81,6 @@ character_event = {
 			factor = 0.5
 			location = { religion_group = ROOT }
 		}
-	modifier = {
-			factor = 2.0
-			location = {
-				OR = {
-					religion_group = pagan_group
-					religion_group = zoroastrian_group
-					religion_group = jewish_group
-				}
-			}
-		}
 		modifier = {
 			factor = 2.0
 			OR = {
@@ -103,7 +93,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 2.0
+			factor = 1.5
 			location = {
 				NOT = {
 					any_neighbor_province = {
@@ -180,7 +170,7 @@ character_event = {
 			factor = 2.0
 			has_province_modifier = heretic_stronghold
 		}
-	modifier = {
+		modifier = {
 			factor = 0.8
 			liege = { has_ambition = obj_convert_a_province }
 		}

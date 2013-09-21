@@ -3154,7 +3154,7 @@ faction_independence = {
 				distance = { who = ROOT distance = 400 }
 			}
 		}
-		
+
 		modifier = {
 			factor = 2.0
 			religion_group = pagan_group
@@ -3232,6 +3232,7 @@ faction_independence = {
 			factor = 0.5
 			opinion = { who = LIEGE value = 50 } 
 		}
+		
 		modifier = {
 			factor = 1.5
 			NOT = { opinion = { who = LIEGE value = 0 } } 
@@ -4123,6 +4124,7 @@ faction_claimant = {
 				opinion = { who = LIEGE value = -25 }
 			}
 		}
+		
 	}
 	
 	# AI membership weight: ROOT is the prospective member. FROM is the faction leader. FROMFROM is the target title or character.

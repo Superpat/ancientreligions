@@ -138,7 +138,7 @@ d_sunni = {
 	
 	creation_requires_capital = no
 	
-	dignity = 100 # Counted as having this many more counties than it does
+	dignity = 200 # Counted as having this many more counties than it does
 	
 	title = "CALIPH"
 	title_female = "CALIPHA"
@@ -234,7 +234,7 @@ d_shiite = {
 	
 	creation_requires_capital = no
 	
-	dignity = 100 # Counted as having this many more counties than it does
+	dignity = 200 # Counted as having this many more counties than it does
 	
 	title = "CALIPH"
 	title_female = "CALIPHA"
@@ -29254,6 +29254,11 @@ k_rum = {
 	color = { 144 182 161 }
 	culture = turkish
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+	
+	allow = {
+		always = no
+	}	
+	
 }
 k_saruhan = {
 	color = { 144 171 225 }
@@ -29351,6 +29356,9 @@ e_latin_empire = {
 	capital = 496 # Byzantion
 	
 	short_name = yes
+
+	title="Imperator"
+	title_female="Imperatrix"
 	
 	assimilate = yes
 	

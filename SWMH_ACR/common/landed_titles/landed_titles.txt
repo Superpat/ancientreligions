@@ -3231,7 +3231,7 @@ e_hre = {
 				b_gandersheim = {}
 			}
 		}
-		allow = {
+		allow = {                  
 			OR = {
 				prestige = 2500
 				AND = {
@@ -3855,7 +3855,7 @@ e_hre = {
 				b_pottschach = {}
 				b_seebenstein = {}
 			}
-                       allow = {
+                        allow = {
 				OR = {
 					has_landed_title = c_osterreich
 					any_vassal = { has_landed_title = c_osterreich }
@@ -37060,7 +37060,7 @@ e_britannia = {
 		saxon = "Ænglaland"
 		english = "Engelond"
 		swedish = "Ænglandi"
-		norsegelic = "Ænglandi"
+		norsegaelic = "Ænglandi"
 		anglonorse = "Ænglandi"
 		gothic = "Ænglandi"
 		danish = "Ænglandi"
@@ -40271,23 +40271,25 @@ e_britannia = {
 			c_york = { # West ridding / York Vale
 				color={ 200 180 15 }
 				color2={ 255 255 255 }
+
+		                short_name = yes 
 				
-				norwegian = "Jorvík"
-				danish = "Jorvík"
-				swedish = "Jorvík"
-				anglonorse = "Jorvík"
-				gothic = "Jorvík"
-                                norse = "Jorvík"
-                                norsegaelic = "Jorvík"
-                                icelandic = "Jorvík"
-                                saxon = "Eoforwic"
-                                welsh = "Efrog" 
-                                cumbric = "Efrog" 
-                                cornish = "Ebrauc" 
-                                breton = "Ebrauc" 
-                                irish = "Ebrauc" 
-                                scottish = "Ebrauc" 
-	
+				#norwegian = "Jorvík"
+				#danish = "Jorvík"
+				#swedish = "Jorvík"
+				#anglonorse = "Jorvík"
+				#gothic = "Jorvík"
+                                #norse = "Jorvík"
+                                #norsegaelic = "Jorvík"
+                                #icelandic = "Jorvík"
+                                #saxon = "Eoforwic"
+                                #welsh = "Efrog" 
+                                #cumbric = "Efrog" 
+                                #cornish = "Ebrauc" 
+                                #breton = "Ebrauc" 
+                                #irish = "Ebrauc" 
+                                #scottish = "Ebrauc" 
+		
 				b_york = {
 					norwegian = "Jorvik"
 					danish = "Jorvik"
@@ -40422,6 +40424,8 @@ e_britannia = {
                         c_york_moors = { # North Ridding / York Moors
 				color={ 25 180 55 }
 				color2={ 255 255 255 }
+
+                                short_name = yes 
 					
 				b_scarborough = {
                                         danish = "Skardaburgh"
@@ -40540,6 +40544,8 @@ e_britannia = {
                         c_york_wolds = { # East Ridding / York Wolds
 				color={ 255 80 5 }
 				color2={ 255 255 255 }
+
+                                short_name = yes 
 					
 				b_cottingham = {
                                         danish = "Cotingeham"

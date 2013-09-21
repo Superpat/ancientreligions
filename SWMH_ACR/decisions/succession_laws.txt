@@ -362,7 +362,7 @@ succession_laws = {
 				is_merchant_republic = no
 			}
 		}
-
+		
 		effect = {
 			succession = open_elective
 		}
@@ -459,6 +459,8 @@ gender_laws = {
 		potential = {
 			holder_scope = { 
 				NOT = { religion_group = muslim }
+				NOT = { religion = tengri_pagan_reformed }
+				NOT = { religion = tengri_pagan }
 				has_horde_culture = no
 				is_merchant_republic = no
 				is_patrician = no

@@ -2673,6 +2673,10 @@ faction_independence = {
 								is_reformed_religion = yes
 							}
 						}
+						OR = {
+							NOT = { ROOT = { religion_group = pagan_group } }
+							ROOT = { is_reformed_religion = yes }
+						}
 					}
 					AND = {
 						de_jure_vassal_or_below = ROOT
@@ -2791,7 +2795,6 @@ faction_independence = {
 			factor = 2.0
 			religion_group = pagan_group
 			is_reformed_religion = no
-			NOT = { religion = hellenic_pagan }
 		}
 		
 		modifier = {
@@ -2938,7 +2941,6 @@ faction_independence = {
 							OR = {
 								NOT = { religion_group = pagan_group }
 								is_reformed_religion = yes
-								religion = hellenic_pagan
 							}
 						}
 					}
@@ -3115,7 +3117,6 @@ faction_independence = {
 			factor = 2.0
 			religion_group = pagan_group
 			is_reformed_religion = no
-			NOT = { religion = hellenic_pagan }
 		}
 		
 		modifier = {

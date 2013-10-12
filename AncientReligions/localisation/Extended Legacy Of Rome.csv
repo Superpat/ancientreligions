@@ -1,5 +1,11 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ;;;;;;;;;;
+ca_culture_roman_1_desc;Rome's military might has always relied upon highly disciplined and heavily armored infantry. This is where such soldiers are drilled.;;;;;;;;;;;;;x
+ca_culture_roman_1;Legionary Training Camp;;;;;;;;;;;;;x
+ca_culture_roman_2;Legionary Training Camp;;;;;;;;;;;;;x
+ca_culture_roman_3;Legionary Training Camp;;;;;;;;;;;;;x
+ca_culture_roman_4;Legionary Training Camp;;;;;;;;;;;;;x
+;;;;;;;;;;
 EVTNAMEancrel.2230;The Province of Cyrenaica et Creta;;;;;;;;;;;;;x
 EVTDESCancrel.2230;The citizens of Cyrenaica et Creta can rejoice, as Roman law is once more upheld in this barren land. Yet another ancient Roman province has been returned to the bosom of the mightiest empire the civilised world has ever seen. May it never suffer the cruel touch of barbarians again.;;;;;;;;;;;;;x
 EVTNAMEancrel.2231;The Province of Sicilia;;;;;;;;;;;;;x

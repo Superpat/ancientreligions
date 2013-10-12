@@ -3588,9 +3588,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 5
-				OR = {
-					is_reformed_religion = yes
-				}
+				is_reformed_religion = yes
 			}
 		}
 		FROM = {

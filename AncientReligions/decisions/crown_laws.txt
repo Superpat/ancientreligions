@@ -130,15 +130,17 @@ de_jure_laws = {
 		allow = {
 			holder_scope = { 
 				is_republic = no 
-				hidden_tooltip = {
-					OR = {
-						NOT = { religion_group = pagan_group }
-						religion = pagan
-						religion = hellenic_pagan
-						is_reformed_religion = yes
+				custom_tooltip = { 
+					text = TT_NOT_UNREFORMED_PAGAN
+					hidden_tooltip = {
+						OR = {
+							NOT = { religion_group = pagan_group }
+							religion = pagan
+							religion = hellenic_pagan
+							is_reformed_religion = yes
+						}
 					}
 				}
-				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
 			OR = {
 				has_law = centralization_1
@@ -217,15 +219,17 @@ de_jure_laws = {
 		allow = {
 			holder_scope = { 
 				is_republic = no 
-				hidden_tooltip = {
-					OR = {
-						NOT = { religion_group = pagan_group }
-						religion = pagan
-						religion = hellenic_pagan
-						is_reformed_religion = yes
+				custom_tooltip = {
+					text = TT_NOT_UNREFORMED_PAGAN
+					hidden_tooltip = {
+						OR = {
+							NOT = { religion_group = pagan_group }
+							religion = pagan
+							religion = hellenic_pagan
+							is_reformed_religion = yes
+						}
 					}
 				}
-				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
 			OR = {
 				has_law = centralization_2
@@ -308,15 +312,17 @@ de_jure_laws = {
 		allow = {
 			holder_scope = { 
 				is_republic = no 
-				hidden_tooltip = {
-					OR = {
-						NOT = { religion_group = pagan_group }
-						religion = pagan
-						religion = hellenic_pagan
-						is_reformed_religion = yes
+				custom_tooltip = {
+					text = TT_NOT_UNREFORMED_PAGAN
+					hidden_tooltip = {
+						OR = {
+							NOT = { religion_group = pagan_group }
+							religion = pagan
+							religion = hellenic_pagan
+							is_reformed_religion = yes
+						}
 					}
 				}
-				custom_tooltip = TT_NOT_UNREFORMED_PAGAN
 			}
 			has_law = centralization_3
 		}

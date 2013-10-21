@@ -8,6 +8,10 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\decision_icon_restore_roman_empire.dds"
 	}
 	spriteType = {
+		name = "GFX_make_rome_capital_city"
+		texturefile = "gfx\\interface\\decision_icon_make_rome_capital.dds"
+	}
+	spriteType = {
 		name = "GFX_catholic_mend_great_schism"
 		texturefile = "gfx\\interface\\decision_icon_mend_great_schism.dds"
 	}

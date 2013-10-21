@@ -130,7 +130,6 @@ de_jure_laws = {
 		allow = {
 			holder_scope = {
 				is_republic = no 
-				
 				custom_tooltip = { 
 					text = TT_NOT_UNREFORMED_PAGAN
 					hidden_tooltip = {
@@ -218,8 +217,7 @@ de_jure_laws = {
 		allow = {
 			holder_scope = {
 				is_republic = no 
-				
-				custom_tooltip = { 
+				custom_tooltip = {
 					text = TT_NOT_UNREFORMED_PAGAN
 					hidden_tooltip = {
 						OR = {
@@ -310,8 +308,7 @@ de_jure_laws = {
 		allow = {
 			holder_scope = {
 				is_republic = no 
-				
-				custom_tooltip = { 
+				custom_tooltip = {
 					text = TT_NOT_UNREFORMED_PAGAN
 					hidden_tooltip = {
 						OR = {

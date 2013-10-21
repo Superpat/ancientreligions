@@ -2067,7 +2067,6 @@ invasion = {
 					}
 					FROM = { imprison = ROOT }
 				}
-
 			}
 		}
 		
@@ -2735,7 +2734,7 @@ religious = {
 	}
 	
 	can_use_title = {
-		# The attacker needs at least one county in the target kingdom, or a border, or be only two sea zones away from one of your counties
+		# The attacker needs at least one county in the target dutchy, or a border, or be only two sea zones away from one of your counties
 		any_direct_de_jure_vassal_title = {
 			OR = {
 				holder_scope = {
@@ -2763,7 +2762,7 @@ religious = {
 									ROOT = { religion_group = muslim }
 									FROM = { religion_group = muslim }
 								}
-									any_neighbor_province = {
+								any_neighbor_province = {
 									OR = {
 										AND = {
 											has_owner = yes
@@ -7305,7 +7304,7 @@ pagan_holy_war = {
 	}
 	
 	can_use_title = {
-		# The attacker needs at least one county in the target kingdom, or a border, or be only two sea zones away from one of your counties
+		# The attacker needs at least one county in the target dutchy, or a border, or be only two sea zones away from one of your counties
 		any_direct_de_jure_vassal_title = {
 			OR = {
 				holder_scope = {

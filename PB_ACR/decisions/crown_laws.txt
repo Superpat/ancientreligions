@@ -89,7 +89,6 @@ de_jure_laws = {
 								}
 							}
 						}
-
 					}
 				}
 				has_law = crown_levies_2
@@ -201,14 +200,10 @@ de_jure_laws = {
 				custom_tooltip = { 
 					text = TT_NOT_UNREFORMED_PAGAN
 					hidden_tooltip = {
-						NOT = { religion = norse_pagan }
-						NOT = { religion = tengri_pagan }
-						NOT = { religion = baltic_pagan }
-						NOT = { religion = finnish_pagan }
-						NOT = { religion = aztec }
-						NOT = { religion = slavic_pagan }
-						NOT = { religion = gaelic_pagan }
-						NOT = { religion = druidic }
+						OR = {
+							NOT = { religion_group = pagan_group }
+							is_reformed_religion = yes
+						}
 					}
 				}
 			}
@@ -328,14 +323,10 @@ de_jure_laws = {
 				custom_tooltip = { 
 					text = TT_NOT_UNREFORMED_PAGAN
 					hidden_tooltip = {
-						NOT = { religion = norse_pagan }
-						NOT = { religion = tengri_pagan }
-						NOT = { religion = baltic_pagan }
-						NOT = { religion = finnish_pagan }
-						NOT = { religion = aztec }
-						NOT = { religion = slavic_pagan }
-						NOT = { religion = gaelic_pagan }
-						NOT = { religion = druidic }
+						OR = {
+							NOT = { religion_group = pagan_group }
+							is_reformed_religion = yes
+						}
 					}
 				}
 			}
@@ -445,20 +436,15 @@ de_jure_laws = {
 						}
 					}
 				}
-				custom_tooltip = pb_vassal_opinion_neg_10
 			}
 			holder_scope = {
 				custom_tooltip = { 
 					text = TT_NOT_UNREFORMED_PAGAN
 					hidden_tooltip = {
-						NOT = { religion = norse_pagan }
-						NOT = { religion = tengri_pagan }
-						NOT = { religion = baltic_pagan }
-						NOT = { religion = finnish_pagan }
-						NOT = { religion = aztec }
-						NOT = { religion = slavic_pagan }
-						NOT = { religion = gaelic_pagan }
-						NOT = { religion = druidic }
+						OR = {
+							NOT = { religion_group = pagan_group }
+							is_reformed_religion = yes
+						}
 					}
 				}
 			}
@@ -600,14 +586,10 @@ de_jure_laws = {
 				custom_tooltip = { 
 					text = TT_NOT_UNREFORMED_PAGAN
 					hidden_tooltip = {
-						NOT = { religion = norse_pagan }
-						NOT = { religion = tengri_pagan }
-						NOT = { religion = baltic_pagan }
-						NOT = { religion = finnish_pagan }
-						NOT = { religion = aztec }
-						NOT = { religion = slavic_pagan }
-						NOT = { religion = gaelic_pagan }
-						NOT = { religion = druidic }
+						OR = {
+							NOT = { religion_group = pagan_group }
+							is_reformed_religion = yes
+						}
 					}
 				}
 			}
@@ -711,14 +693,10 @@ de_jure_laws = {
 				custom_tooltip = { 
 					text = TT_NOT_UNREFORMED_PAGAN
 					hidden_tooltip = {
-						NOT = { religion = norse_pagan }
-						NOT = { religion = tengri_pagan }
-						NOT = { religion = baltic_pagan }
-						NOT = { religion = finnish_pagan }
-						NOT = { religion = aztec }
-						NOT = { religion = slavic_pagan }
-						NOT = { religion = gaelic_pagan }
-						NOT = { religion = druidic }
+						OR = {
+							NOT = { religion_group = pagan_group }
+							is_reformed_religion = yes
+						}
 					}
 				}
 			}
@@ -856,14 +834,10 @@ de_jure_laws = {
 				custom_tooltip = { 
 					text = TT_NOT_UNREFORMED_PAGAN
 					hidden_tooltip = {
-						NOT = { religion = norse_pagan }
-						NOT = { religion = tengri_pagan }
-						NOT = { religion = baltic_pagan }
-						NOT = { religion = finnish_pagan }
-						NOT = { religion = aztec }
-						NOT = { religion = slavic_pagan }
-						NOT = { religion = gaelic_pagan }
-						NOT = { religion = druidic }
+						OR = {
+							NOT = { religion_group = pagan_group }
+							is_reformed_religion = yes
+						}
 					}
 				}
 			}
@@ -967,14 +941,10 @@ de_jure_laws = {
 				custom_tooltip = { 
 					text = TT_NOT_UNREFORMED_PAGAN
 					hidden_tooltip = {
-						NOT = { religion = norse_pagan }
-						NOT = { religion = tengri_pagan }
-						NOT = { religion = baltic_pagan }
-						NOT = { religion = finnish_pagan }
-						NOT = { religion = aztec }
-						NOT = { religion = slavic_pagan }
-						NOT = { religion = gaelic_pagan }
-						NOT = { religion = druidic }
+						OR = {
+							NOT = { religion_group = pagan_group }
+							is_reformed_religion = yes
+						}
 					}
 				}
 			}
@@ -1207,14 +1177,10 @@ de_jure_laws = {
 				custom_tooltip = { 
 					text = TT_NOT_UNREFORMED_PAGAN
 					hidden_tooltip = {
-						NOT = { religion = norse_pagan }
-						NOT = { religion = tengri_pagan }
-						NOT = { religion = baltic_pagan }
-						NOT = { religion = finnish_pagan }
-						NOT = { religion = aztec }
-						NOT = { religion = slavic_pagan }
-						NOT = { religion = gaelic_pagan }
-						NOT = { religion = druidic }
+						OR = {
+							NOT = { religion_group = pagan_group }
+							is_reformed_religion = yes
+						}
 					}
 				}
 			}
@@ -1341,14 +1307,10 @@ de_jure_laws = {
 				custom_tooltip = { 
 					text = TT_NOT_UNREFORMED_PAGAN
 					hidden_tooltip = {
-						NOT = { religion = norse_pagan }
-						NOT = { religion = tengri_pagan }
-						NOT = { religion = baltic_pagan }
-						NOT = { religion = finnish_pagan }
-						NOT = { religion = aztec }
-						NOT = { religion = slavic_pagan }
-						NOT = { religion = gaelic_pagan }
-						NOT = { religion = druidic }
+						OR = {
+							NOT = { religion_group = pagan_group }
+							is_reformed_religion = yes
+						}
 					}
 				}
 			}
@@ -1765,6 +1727,87 @@ de_jure_laws = {
 			factor = 0
 		}
 		effect = {
+		}
+	}
+
+#Centralization; needed for the converter to work
+	centralization_0 = {
+		show_as_title = yes
+		group = centralization
+		
+		potential = { always = no }
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+	}
+	
+	centralization_1 = {
+		show_as_title = yes
+		group = centralization
+		
+		potential = { always = no }
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+	}
+	
+	centralization_2 = {
+		show_as_title = yes
+		group = centralization
+		
+		potential = { always = no }
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+	}
+	
+	centralization_3 = {
+		show_as_title = yes
+		group = centralization
+		
+		potential = { always = no }
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+	}
+	
+	centralization_4 = {
+		show_as_title = yes
+		group = centralization
+		
+		potential = { always = no }
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
 		}
 	}
 }

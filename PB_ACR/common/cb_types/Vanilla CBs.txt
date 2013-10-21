@@ -1733,8 +1733,19 @@ claim_all = {
 						OR = { 
 							has_landed_title = e_byzantium
 							has_landed_title = e_roman_empire
+							AND = {
+								independent = yes
+								higher_tier_than = COUNT
+								OR = {
+									culture = roman
+									religion = hellenic_pagan
+								}
+							}
 						}
-						religion_group = christian
+						OR = {
+							religion_group = christian
+							religion_group = pagan_group
+						}
 					}
 					character_event = { id = LoR.30 days = 12 }
 				}
@@ -1797,8 +1808,19 @@ claim_all = {
 					OR = { 
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						AND = {
+							independent = yes
+							higher_tier_than = COUNT
+							OR = {
+								culture = roman
+								religion = hellenic_pagan
+							}
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -2570,8 +2592,19 @@ invasion = {
 						OR = { 
 							has_landed_title = e_byzantium
 							has_landed_title = e_roman_empire
+							AND = {
+								independent = yes
+								higher_tier_than = COUNT
+								OR = {
+									culture = roman
+									religion = hellenic_pagan
+								}
+							}
 						}
-						religion_group = christian
+						OR = {
+							religion_group = christian
+							religion_group = pagan_group
+						}
 					}
 					character_event = { id = LoR.30 days = 12 }
 				}
@@ -2647,8 +2680,19 @@ invasion = {
 					OR = { 
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						AND = {
+							independent = yes
+							higher_tier_than = COUNT
+							OR = {
+								culture = roman
+								religion = hellenic_pagan
+							}
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -2971,8 +3015,19 @@ tribal_invasion = {
 					OR = { 
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						AND = {
+							independent = yes
+							higher_tier_than = COUNT
+							OR = {
+								culture = roman
+								religion = hellenic_pagan
+							}
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -3348,8 +3403,19 @@ crusade = {
 					OR = { 
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						AND = {
+							independent = yes
+							higher_tier_than = COUNT
+							OR = {
+								culture = roman
+								religion = hellenic_pagan
+							}
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -3389,8 +3455,19 @@ crusade = {
 					OR = { 
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						AND = {
+							independent = yes
+							higher_tier_than = COUNT
+							OR = {
+								culture = roman
+								religion = hellenic_pagan
+							}
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -3647,59 +3724,63 @@ religious = {
 			}
 		}
 		#Prevents duplicate CBs
-		NOT = {
-			OR = {
-				AND = {
-					ROOT = { has_landed_title = d_teutonic_order }
-					FROM = { religion_group = pagan_group }
-				}
-				AND = {
-					OR = {
-						ROOT = { has_landed_title = d_knights_templar }
-						ROOT = { has_landed_title = d_knights_hospitaler }
+		OR = {
+			NOT = {
+				OR = {
+					AND = {
+						ROOT = { has_landed_title = d_teutonic_order }
+						FROM = { religion_group = pagan_group }
 					}
-					FROM = { religion_group = muslim }
-				}
-				AND = {
-					de_jure_liege_or_above = k_jerusalem
-					ROOT = { has_landed_title = k_jerusalem }
-					FROM = { religion_group = muslim }
+					AND = {
+						OR = {
+							ROOT = { has_landed_title = d_knights_templar }
+							ROOT = { has_landed_title = d_knights_hospitaler }
+						}
+						FROM = { religion_group = muslim }
+					}
+					AND = {
+						de_jure_liege_or_above = k_jerusalem
+						ROOT = { has_landed_title = k_jerusalem }
+						FROM = { religion_group = muslim }
+					}
 				}
 			}
-			NOT = { has_global_flag = rapid_conquest }
+			has_global_flag = rapid_conquest
 		}
 		#Prevents duplicate CBs
-		NOT = {
-			any_direct_de_jure_vassal_title = {
-				NOT = {
-					FROM = { has_landed_title = k_rum } #Need help surviving
-				}
-				NOT = {
-					FROM = { has_landed_title = k_pechenegs }  #Need help surviving
-				}
-				# Muslim reconquest does not make much sense
-				NOT = {
-					AND = {
-						FROM = { religion_group = muslim }
-						ROOT = { religion_group = muslim }
+		OR = {
+			NOT = {
+				any_direct_de_jure_vassal_title = {
+					NOT = {
+						FROM = { has_landed_title = k_rum } #Need help surviving
 					}
-				}
-				holder_scope = {
-					OR = {
-						character = FROM
-						is_liege_or_above = FROM
+					NOT = {
+						FROM = { has_landed_title = k_pechenegs }  #Need help surviving
 					}
-				}
-				NOT = {
-					ROOT = { is_reformed_religion = FROM }
-				}
-				location = {
-					ROOT = {
-						religion = PREV
+					# Muslim reconquest does not make much sense
+					NOT = {
+						AND = {
+							FROM = { religion_group = muslim }
+							ROOT = { religion_group = muslim }
+						}
+					}
+					holder_scope = {
+						OR = {
+							character = FROM
+							is_liege_or_above = FROM
+						}
+					}
+					NOT = {
+						ROOT = { is_reformed_religion = FROM }
+					}
+					location = {
+						ROOT = {
+							religion = PREV
+						}
 					}
 				}
 			}
-			NOT = { has_global_flag = rapid_conquest }
+			has_global_flag = rapid_conquest
 		}
 		# The attacker needs at least one county in the target kingdom, or a border, or be only two sea zones away from one of your counties
 		any_direct_de_jure_vassal_title = {
@@ -8024,8 +8105,19 @@ muslim_invasion = {
 					OR = { 
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						AND = {
+							independent = yes
+							higher_tier_than = COUNT
+							OR = {
+								culture = roman
+								religion = hellenic_pagan
+							}
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -8062,8 +8154,19 @@ muslim_invasion = {
 					OR = { 
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						AND = {
+							independent = yes
+							higher_tier_than = COUNT
+							OR = {
+								culture = roman
+								religion = hellenic_pagan
+							}
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}

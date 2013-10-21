@@ -36,7 +36,7 @@ imperial_reconquest = {
 			independent = yes
 			OR = {
 				religion_group = christian
-				religion = hellenic_pagan
+				religion_group = pagan_group
 			}
 			NOT = { same_realm = FROM }
 		}
@@ -162,7 +162,7 @@ imperial_reconquest = {
 			independent = yes
 			OR = {
 				religion_group = christian
-				religion = hellenic_pagan
+				religion_group = pagan_group
 			}
 			NOT = { same_realm = FROM }
 		}

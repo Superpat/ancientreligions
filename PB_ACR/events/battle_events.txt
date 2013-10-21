@@ -14,7 +14,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 1
+		days = 1	
 		modifier = {
 			factor = 1.5
 			trait = brave
@@ -660,7 +660,7 @@ character_event = {
 			50 = { add_trait = incapable }
 			25 = { add_trait = blinded }
 			25 = { add_trait = deaf }
-		}
+		}	
 	}
 }
 
@@ -1854,7 +1854,7 @@ character_event = {
 	option = {
 		name = EVTOPTA262
 		prestige = 100
-hidden_tooltip = {
+		hidden_tooltip = {
 			if = {
 				limit = {
 					OR = {
@@ -1949,7 +1949,7 @@ character_event = {
 	option = {
 		name = EVTOPTA262
 		prestige = 100
-hidden_tooltip = {
+		hidden_tooltip = {
 			if = {
 				limit = {
 					OR = {
@@ -2044,7 +2044,7 @@ character_event = {
 	option = {
 		name = EVTOPTA262
 		prestige = 100
-hidden_tooltip = {
+		hidden_tooltip = {
 			if = {
 				limit = {
 					OR = {

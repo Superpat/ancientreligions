@@ -2,14 +2,13 @@
 #
 # Roman Empire Restored
 #
-# Event ID LoR.20 - LoR.21 reserved
 # Event ID ancrel.2220 - ancrel.2229 reserved
 #
 #######################################
 
 # The Restoration of Rome (Byzantium / Latin Empire)
 narrative_event = {
-	id = LoR.20
+	id = ancrel.2220
 	title = EVTNAMELoR.20
 	desc = EVTDESCLoR.20
 	
@@ -74,7 +73,7 @@ narrative_event = {
 					NOT = { character = ROOT }
 					ai = no
 				}
-				narrative_event = { id = LoR.21 }
+				narrative_event = { id = ancrel.2221 }
 			}
 		}
 	}
@@ -82,7 +81,7 @@ narrative_event = {
 
 # Informed about Restoration of Rome (Byzantium / Latin Empire)
 narrative_event = {
-	id = LoR.21
+	id = ancrel.2221
 	title = EVTNAMELoR.21
 	desc = EVTDESCLoR.21
 	
@@ -113,9 +112,9 @@ narrative_event = {
 
 # The Restoration of Rome (HRE)
 narrative_event = {
-	id = ancrel.2220
+	id = ancrel.2222
 	title = EVTNAMELoR.20
-	desc = EVTDESCancrel.2220
+	desc = EVTDESCancrel.2222
 	
 	picture = GFX_evt_rome_restored_byzantine
 	
@@ -155,7 +154,7 @@ narrative_event = {
 					NOT = { character = ROOT }
 					ai = no
 				}
-				narrative_event = { id = ancrel.2221 }
+				narrative_event = { id = ancrel.2223 }
 			}
 		}
 	}
@@ -163,9 +162,9 @@ narrative_event = {
 
 # Informed about Restoration of Rome (HRE)
 narrative_event = {
-	id = ancrel.2221
+	id = ancrel.2223
 	title = EVTNAMELoR.21
-	desc = EVTDESCancrel.2221
+	desc = EVTDESCancrel.2223
 	
 	picture = GFX_evt_rome_restored_byzantine
 	
@@ -194,9 +193,9 @@ narrative_event = {
 
 # The Creation of a new Rome
 narrative_event = {
-	id = ancrel.2222
+	id = ancrel.2224
 	title = EVTNAMELoR.20
-	desc = EVTDESCancrel.2222
+	desc = EVTDESCancrel.2224
 	
 	picture = GFX_evt_rome_restored_byzantine
 	
@@ -240,7 +239,7 @@ narrative_event = {
 					NOT = { character = ROOT }
 					ai = no
 				}
-				narrative_event = { id = ancrel.2223 }
+				narrative_event = { id = ancrel.2225 }
 			}
 		}
 	}
@@ -248,9 +247,9 @@ narrative_event = {
 
 # Informed about Creation of a new Rome
 narrative_event = {
-	id = ancrel.2223
+	id = ancrel.2225
 	title = EVTNAMELoR.21
-	desc = EVTDESCancrel.2223
+	desc = EVTDESCancrel.2225
 	
 	picture = GFX_evt_rome_restored_byzantine
 	

@@ -317,7 +317,7 @@ decisions = {
 			completely_controls = d_tunis
 		}
 		effect = {
-			narrative_event = { id = LoR.20 tooltip = EVTTOOLTIPLoR.20 }
+			narrative_event = { id = ancrel.2220 tooltip = EVTTOOLTIPLoR.20 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -365,7 +365,7 @@ decisions = {
 			completely_controls = c_abydos
 		}
 		effect = {
-			narrative_event = { id = ancrel.2220 tooltip = EVTTOOLTIPLoR.20 }
+			narrative_event = { id = ancrel.2222 tooltip = EVTTOOLTIPLoR.20 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -426,7 +426,7 @@ decisions = {
 			completely_controls = d_calabria
 		}
 		effect = {
-			narrative_event = { id = ancrel.2222 tooltip = EVTTOOLTIPLoR.20 }
+			narrative_event = { id = ancrel.2224 tooltip = EVTTOOLTIPLoR.20 }
 		}
 		ai_will_do = {
 			factor = 1

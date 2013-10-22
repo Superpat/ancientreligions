@@ -532,7 +532,10 @@ decisions = {
 		potential = {
 			has_dlc = "Legacy of Rome"
 			NOT = { has_landed_title = c_byzantion }
-			has_landed_title = e_byzantium
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_latin_empire
+			}
 			any_realm_lord = { 
 				AND = {
 					ai = yes

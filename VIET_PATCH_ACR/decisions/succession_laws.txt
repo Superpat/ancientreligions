@@ -529,8 +529,8 @@ gender_laws = {
 			is_primary_type_title = no
 		}
 		allow = {
-			holder_scope = { 
-				OR = { 
+			holder_scope = {
+				OR = {
 					culture = basque
 					religion = druidic
 					religion = druidic_reformed

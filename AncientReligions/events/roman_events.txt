@@ -667,7 +667,7 @@ narrative_event = {
 narrative_event = {
 	id = LoR.20
 	title = EVTNAMELoR.20
-	desc = EVTDESCLoR.20
+	desc = EVTDESCLoR.20
 	
 	picture = GFX_evt_rome_restored_byzantine
 	
@@ -678,6 +678,7 @@ narrative_event = {
 		set_global_flag = rome_restored
 		e_roman_empire = {
 			grant_title = ROOT
+			make_primary_title = yes
 			if = {
 				limit = { ROOT = { has_landed_title = e_byzantium } }
 				copy_title_laws = e_byzantium
@@ -698,44 +699,31 @@ narrative_event = {
 		give_nickname = nick_the_glorious
 		hidden_tooltip = {
 			e_byzantium = {
-				if = {
-					limit = { ROOT = { has_landed_title = PREV } }
-					any_direct_de_jure_vassal_title = {
-						de_jure_liege = e_roman_empire
-					}
-					destroy_landed_title = THIS
-					activate_title = { title = e_byzantium status = no }
+				limit = { ROOT = { has_landed_title = PREV } }
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_roman_empire
 				}
+				destroy_landed_title = THIS
+				activate_title = { title = e_byzantium status = no }
 			}
 			e_latin_empire = {
-				if = {
-					limit = { ROOT = { has_landed_title = PREV } }
-					any_direct_de_jure_vassal_title = {
-						de_jure_liege = e_roman_empire
-					}
-					destroy_landed_title = THIS
-					activate_title = { title = e_latin_empire status = no }
+				limit = { ROOT = { has_landed_title = PREV } }
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_roman_empire
 				}
-			}
-			e_hre = {
-				if = {
-					limit = { ROOT = { has_landed_title = PREV } }
-					any_direct_de_jure_vassal_title = {
-						de_jure_liege = e_roman_empire
-					}
-					destroy_landed_title = THIS
-					activate_title = { title = e_hre status = no }
-				}
+				destroy_landed_title = THIS
+				activate_title = { title = e_latin_empire status = no }
 			}
 			e_italy = {
-				if = {
-					limit = { ROOT = { has_landed_title = PREV } }
-					any_direct_de_jure_vassal_title = {
-						de_jure_liege = e_roman_empire
-					}
-					destroy_landed_title = THIS
-					activate_title = { title = e_italy status = no }
+				limit = { ROOT = { has_landed_title = PREV } }
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_roman_empire
 				}
+				destroy_landed_title = THIS
+				activate_title = { title = e_italy status = no }
+			}
+			e_hre = {
+				set_name="Germania"
 			}
 			any_playable_ruler = {
 				limit = {
@@ -752,7 +740,7 @@ narrative_event = {
 narrative_event = {
 	id = LoR.21
 	title = EVTNAMELoR.21
-	desc = EVTDESCLoR.21
+	desc = EVTDESCLoR.21
 	
 	picture = GFX_evt_rome_restored_byzantine
 	
@@ -783,7 +771,7 @@ narrative_event = {
 narrative_event = {
 	id = ancrel.2220
 	title = EVTNAMELoR.20
-	desc = EVTDESCancrel.2220
+	desc = EVTDESCancrel.2220
 	
 	picture = GFX_evt_rome_restored_byzantine
 	
@@ -795,6 +783,7 @@ narrative_event = {
 		set_global_flag = rome_restored_by_hre
 		e_roman_empire = {
 			grant_title = ROOT
+			make_primary_title = yes
 			copy_title_laws = e_hre
 			copy_title_history = e_hre
 		}
@@ -802,6 +791,7 @@ narrative_event = {
 		give_nickname = nick_the_glorious
 		hidden_tooltip = {
 			e_hre = {
+				limit = { ROOT = { has_landed_title = PREV } }
 				any_direct_de_jure_vassal_title = {
 					de_jure_liege = e_roman_empire
 				}
@@ -809,14 +799,12 @@ narrative_event = {
 				activate_title = { title = e_hre status = no }
 			}
 			e_italy = {
-				if = {
-					limit = { ROOT = { has_landed_title = PREV } }
-					any_direct_de_jure_vassal_title = {
-						de_jure_liege = e_roman_empire
-					}
-					destroy_landed_title = THIS
-					activate_title = { title = e_italy status = no }
+				limit = { ROOT = { has_landed_title = PREV } }
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_roman_empire
 				}
+				destroy_landed_title = THIS
+				activate_title = { title = e_italy status = no }
 			}
 			any_playable_ruler = {
 				limit = {
@@ -833,7 +821,7 @@ narrative_event = {
 narrative_event = {
 	id = ancrel.2221
 	title = EVTNAMELoR.21
-	desc = EVTDESCancrel.2221
+	desc = EVTDESCancrel.2221
 	
 	picture = GFX_evt_rome_restored_byzantine
 	
@@ -842,6 +830,7 @@ narrative_event = {
 	option = {
 		name = EVTOPTALoR.21
 		trigger = {
+			NOT = { has_landed_title = e_hre }
 			NOT = { has_landed_title = e_byzantium }
 			NOT = { has_landed_title = e_latin_empire }
 		}
@@ -850,6 +839,7 @@ narrative_event = {
 		name = EVTOPTBLoR.21
 		trigger = {
 			OR = {
+				has_landed_title = e_hre
 				has_landed_title = e_byzantium
 				has_landed_title = e_latin_empire
 			}
@@ -862,7 +852,7 @@ narrative_event = {
 narrative_event = {
 	id = ancrel.2222
 	title = EVTNAMELoR.20
-	desc = EVTDESCancrel.2222
+	desc = EVTDESCancrel.2222
 	
 	picture = GFX_evt_rome_restored_byzantine
 	
@@ -871,10 +861,11 @@ narrative_event = {
 	option = {
 		name = EVTOPTALoR.20
 		set_global_flag = rome_restored
-		set_global_flag = rome_recreated
+		set_global_flag = rome_restored_by_holding_italy
 		primary_title = {
 			e_roman_empire = {
 				grant_title = ROOT
+				make_primary_title = yes
 				copy_title_laws = PREV
 			}
 		}
@@ -889,41 +880,16 @@ narrative_event = {
 				destroy_landed_title = THIS
 				activate_title = { title = e_latin_empire status = no }
 			}
-			e_hre = {
-				destroy_landed_title = THIS
-				activate_title = { title = e_hre status = no }
-			}
 			e_italy = {
-				if = {
-					limit = { ROOT = { has_landed_title = PREV } }
-					any_direct_de_jure_vassal_title = {
-						de_jure_liege = e_roman_empire
-					}
-					destroy_landed_title = THIS
-					activate_title = { title = e_italy status = no }
-				}
-			}
-			k_italy = {
-				if = {
-					limit = {
-						OR = {
-							owner = { is_liege_or_above = ROOT }
-							ROOT = { has_landed_title = PREV }
-						}
-					}
+				limit = { ROOT = { has_landed_title = PREV } }
+				any_direct_de_jure_vassal_title = {
 					de_jure_liege = e_roman_empire
 				}
+				destroy_landed_title = THIS
+				activate_title = { title = e_italy status = no }
 			}
-			k_sicily = {
-				if = {
-					limit = {
-						OR = {
-							owner = { is_liege_or_above = ROOT }
-							ROOT = { has_landed_title = PREV }
-						}
-					}
-					de_jure_liege = e_roman_empire
-				}
+			e_hre = {
+				set_name="Germania"
 			}
 			any_playable_ruler = {
 				limit = {
@@ -940,7 +906,7 @@ narrative_event = {
 narrative_event = {
 	id = ancrel.2223
 	title = EVTNAMELoR.21
-	desc = EVTDESCancrel.2223
+	desc = EVTDESCancrel.2223
 	
 	picture = GFX_evt_rome_restored_byzantine
 	
@@ -948,6 +914,22 @@ narrative_event = {
 	
 	option = {
 		name = EVTOPTALoR.21
+		trigger = {
+			NOT = { has_landed_title = e_hre }
+			NOT = { has_landed_title = e_byzantium }
+			NOT = { has_landed_title = e_latin_empire }
+		}
+	}
+	option = {
+		name = EVTOPTBLoR.21
+		trigger = {
+			OR = {
+				has_landed_title = e_hre
+				has_landed_title = e_byzantium
+				has_landed_title = e_latin_empire
+			}
+		}
+		prestige = -500
 	}
 }
 

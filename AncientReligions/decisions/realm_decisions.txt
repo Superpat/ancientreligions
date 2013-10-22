@@ -283,7 +283,7 @@ decisions = {
 		is_high_prio = yes
 		potential = {
 			has_dlc = "Legacy of Rome"
-			age = 16
+			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
 			NOT = { has_global_flag = rome_restored }
@@ -328,17 +328,17 @@ decisions = {
 		is_high_prio = yes
 		potential = {
 			has_dlc = "Legacy of Rome"
-			age = 16
+			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
 			NOT = { has_global_flag = rome_restored }
-			has_landed_title = e_hre
 			NOT = { has_landed_title = e_byzantium }
 			NOT = { has_landed_title = e_latin_empire }
+			has_landed_title = e_hre
 			religion = catholic
 			OR = {
-				completely_controls = d_latium
-				completely_controls = d_thrace
+				completely_controls = c_roma
+				completely_controls = c_byzantion
 			}
 		}
 		allow = {
@@ -376,13 +376,16 @@ decisions = {
 		is_high_prio = yes
 		potential = {
 			has_dlc = "Legacy of Rome"
-			age = 16
+			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
 			NOT = { has_global_flag = rome_restored }
-			NOT = { e_hre = { owner = { always = yes } } }
 			NOT = { e_byzantium = { owner = { always = yes } } }
 			NOT = { e_latin_empire = { owner = { always = yes } } }
+			NOT = {
+				has_landed_title = e_hre
+				religion = catholic
+			}
 			OR = {
 				religion_group = christian
 				religion_group = pagan_group

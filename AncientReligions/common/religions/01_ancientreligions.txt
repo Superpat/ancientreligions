@@ -5,7 +5,7 @@ pagan_group = {
 		pre_reformed = yes
 
 		icon = 37
-		heresy_icon = 39
+		heresy_icon = 49
 		
 		color = { 0.6 0.1 0.1 }
 		god_names = {
@@ -33,8 +33,8 @@ pagan_group = {
 	druidic_reformed = {
 		graphical_culture = norsegfx
 		
-		icon = 41
-		heresy_icon = 42
+		icon = 51
+		heresy_icon = 52
 		
 		color = { 0.2 0.6 0.03 }
 		crusade_name = GREAT_HOLY_WAR
@@ -82,8 +82,8 @@ pagan_group = {
 	druidic = {
 		graphical_culture = norsegfx
 		
-		icon = 40
-		heresy_icon = 42
+		icon = 50
+		heresy_icon = 52
 		
 		color = { 0.14 0.36 0.16 }
 		crusade_name = GREAT_HOLY_WAR
@@ -136,8 +136,8 @@ pagan_group = {
 		graphical_culture = norsegfx
 		
 
-		icon = 44
-		heresy_icon = 42
+		icon = 54
+		heresy_icon = 52
 		
 		color = { 0.11 0.14 0.3 }
 		crusade_name = GREAT_HOLY_WAR
@@ -186,8 +186,8 @@ pagan_group = {
 	gaelic_pagan = {
 		graphical_culture = norsegfx
 		
-		icon = 43
-		heresy_icon = 42
+		icon = 53
+		heresy_icon = 52
 		
 		color = { 0.2 0.25 0.5 }
 		crusade_name = GREAT_HOLY_WAR

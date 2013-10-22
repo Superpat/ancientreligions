@@ -36,6 +36,8 @@ character_event = {
 			culture = roman
 			culture = italian
 			culture = greek
+			culture = sicilian_greek # SWMH
+			culture_group = italian_group # SWMH
 		}
 		NOT = { has_character_flag = flag_studied_the_classics }
 	}
@@ -367,6 +369,8 @@ character_event = {
 					culture = roman
 					culture = italian
 					culture = greek
+					culture = sicilian_greek # SWMH
+					culture_group = italian_group # SWMH
 				}
 			}
 			modifier = {

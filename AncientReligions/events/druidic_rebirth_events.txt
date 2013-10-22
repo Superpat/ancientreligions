@@ -51,8 +51,10 @@ character_event = {
 		if = {
 			limit = {
 				OR = {
-					culture =  breton
+					culture = breton
 					culture = welsh
+					culture = cornish # SWMH
+					culture = cumbric # SWMH
 				}
 			}
 			create_character = {
@@ -69,8 +71,9 @@ character_event = {
 		if = {
 			limit = {
 				OR = {
-					culture =  scottish
+					culture = scottish
 					culture = irish
+					culture = norsegaelic # SWMH
 				}
 			}
 			create_character = {
@@ -184,6 +187,7 @@ character_event = {
 				OR = {
 					culture = scottish
 					culture = irish
+					culture = norsegaelic # SWMH
 				}
 			}
 			religion = gaelic_pagan
@@ -191,8 +195,10 @@ character_event = {
 		if = {
 			limit = { 
 				OR = {
-					culture = welsh
 					culture = breton
+					culture = welsh
+					culture = cornish # SWMH
+					culture = cumbric # SWMH
 				}
 			}
 			religion = druidic
@@ -397,6 +403,8 @@ character_event = {
 				OR = {
 					culture = breton
 					culture = welsh
+					culture = cornish # SWMH
+					culture = cumbric # SWMH
 				}
 			}
 			religion = druidic
@@ -406,6 +414,7 @@ character_event = {
 				OR = {
 					culture = scottish
 					culture = irish
+					culture = norsegaelic # SWMH
 				}
 			}
 			religion = gaelic_pagan

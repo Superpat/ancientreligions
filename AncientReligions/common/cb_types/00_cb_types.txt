@@ -7901,10 +7901,16 @@ pagan_county_conquest = {
 			NOT = { ROOT = { religion = hellenic_pagan } }
 			FROM = { religion_group = pagan_group }
 			FROM = { any_liege = { religion_group = pagan_group } }
-			location = {
-				NOT = { culture = roman }
-				NOT = { culture = italian }
-				NOT = { culture = greek }
+			NOT = {
+				location = {
+					OR = {
+						culture = roman
+						culture = italian
+						culture = greek
+						culture = sicilian_greek # SWMH
+						culture_group = italian_group # SWMH
+					}
+				}
 			}
 		}
 	}

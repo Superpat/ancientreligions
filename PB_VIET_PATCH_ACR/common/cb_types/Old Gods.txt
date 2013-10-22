@@ -144,8 +144,19 @@ viking_invasion = {
 					OR = { 
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						AND = {
+							independent = yes
+							higher_tier_than = COUNT
+							OR = {
+								culture = roman
+								religion = hellenic_pagan
+							}
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -196,14 +207,6 @@ pagan_subjugation = {
 			NOT = { trait = craven }
 			NOT = { trait = stressed }
 			NOT = { trait = depressed }
-			NOT = { trait = imbecile }
-			OR = {
-				trait = ambitious
-				trait = diligent
-				trait = greedy
-				trait = envious
-				trait = wroth
-			}
 		}
 	}
 	
@@ -436,8 +439,19 @@ pagan_subjugation = {
 					OR = { 
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						AND = {
+							independent = yes
+							higher_tier_than = COUNT
+							OR = {
+								culture = roman
+								religion = hellenic_pagan
+							}
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -479,9 +493,6 @@ pagan_subjugation = {
 				NOT = { religion = tengri_pagan }
 				NOT = { trait = ambitious }
 			}
-		}
-		modifier = {
-			factor = 0.9 #slow down
 		}
 	}
 }
@@ -1088,8 +1099,19 @@ caliphal_subjugation = {
 					OR = { 
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
+						AND = {
+							independent = yes
+							higher_tier_than = COUNT
+							OR = {
+								culture = roman
+								religion = hellenic_pagan
+							}
+						}
 					}
-					religion_group = christian
+					OR = {
+						religion_group = christian
+						religion_group = pagan_group
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -1200,6 +1222,24 @@ pagan_county_conquest = {
 							character = ROOT
 							is_liege_or_above = ROOT
 						}
+					}
+				}
+			}
+		}
+		
+		# Should use hellenic_county_liberation instead
+		OR = {
+			NOT = { ROOT = { religion = hellenic_pagan } }
+			FROM = { religion_group = pagan_group }
+			FROM = { any_liege = { religion_group = pagan_group } }
+			NOT = {
+				location = {
+					OR = {
+						culture = roman
+						culture = italian
+						culture = greek
+						culture = sicilian_greek # SWMH
+						culture_group = italian_group # SWMH
 					}
 				}
 			}

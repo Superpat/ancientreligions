@@ -379,11 +379,14 @@ character_event = {
 			}
 			modifier = {
 				factor = 2.0
-				OR = {
-					# free infidel revokation
-					crownlaw_title = { has_law = centralization_2 }
-					crownlaw_title = { has_law = centralization_3 }
-					crownlaw_title = { has_law = centralization_4 }
+				crownlaw_title = {
+					OR = {
+						# free infidel revokation
+						has_law = centralization_2
+						has_law = centralization_3
+						has_law = centralization_4
+						has_law = revokation_2 # PB
+					}
 				}
 			}
 		}

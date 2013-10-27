@@ -412,3 +412,31 @@ character_event = {
 		}
 	}
 }
+
+narrative_event = {
+	id = ancrel.0009
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = { religion = gaelic_pagan_reformed }
+			d_fianna = {
+				religion = gaelic_pagan_reformed # This Holy Order now changes religion
+			}
+			set_global_flag = gaelic_reformation
+		}
+		if = {
+			limit = { religion = druidic_reformed }
+			d_gwydion = {
+				religion = druidic_reformed # This Holy Order now changes religion
+			}
+			set_global_flag = druidic_reformation
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}

@@ -128,8 +128,9 @@ de_jure_laws = {
 		feudal_opinion = -10
 		
 		allow = {
-			holder_scope = {
+			holder_scope = { 
 				is_republic = no 
+				
 				custom_tooltip = { 
 					text = TT_NOT_UNREFORMED_PAGAN
 					hidden_tooltip = {
@@ -215,7 +216,7 @@ de_jure_laws = {
 		feudal_opinion = -20
 		
 		allow = {
-			holder_scope = {
+			holder_scope = { 
 				is_republic = no 
 				custom_tooltip = {
 					text = TT_NOT_UNREFORMED_PAGAN
@@ -306,7 +307,7 @@ de_jure_laws = {
 		feudal_opinion = -30
 		
 		allow = {
-			holder_scope = {
+			holder_scope = { 
 				is_republic = no 
 				custom_tooltip = {
 					text = TT_NOT_UNREFORMED_PAGAN

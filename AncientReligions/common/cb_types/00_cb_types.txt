@@ -2734,7 +2734,7 @@ religious = {
 	}
 	
 	can_use_title = {
-		# The attacker needs at least one county in the target dutchy, or a border, or be only two sea zones away from one of your counties
+		# The attacker needs at least one county in the target kingdom, or a border, or be only two sea zones away from one of your counties
 		any_direct_de_jure_vassal_title = {
 			OR = {
 				holder_scope = {
@@ -5856,7 +5856,7 @@ imperial_reconquest = {
 			title = d_coloneia
 			title = d_mesopotamia
 		}
-		# The attacker needs at least one county in the target dutchy, or a border, or be only two sea zones away from one of your counties
+		# The attacker needs at least one county in the target kingdom, or a border, or be only two sea zones away from one of your counties
 		any_direct_de_jure_vassal_title = {
 			OR = {
 				holder_scope = {
@@ -7304,7 +7304,7 @@ pagan_holy_war = {
 	}
 	
 	can_use_title = {
-		# The attacker needs at least one county in the target dutchy, or a border, or be only two sea zones away from one of your counties
+		# The attacker needs at least one county in the target kingdom, or a border, or be only two sea zones away from one of your counties
 		any_direct_de_jure_vassal_title = {
 			OR = {
 				holder_scope = {

@@ -1110,6 +1110,7 @@ character_event = {
 	trigger = {
 		is_alive = yes
 	}
+
 	option = {
 		name = EVTOPTA249
 	}
@@ -1849,7 +1850,7 @@ character_event = {
 	option = {
 		name = EVTOPTA262
 		prestige = 100
-hidden_tooltip = {
+		hidden_tooltip = {
 			if = {
 				limit = {
 					OR = {
@@ -1944,7 +1945,7 @@ character_event = {
 	option = {
 		name = EVTOPTA262
 		prestige = 100
-hidden_tooltip = {
+		hidden_tooltip = {
 			if = {
 				limit = {
 					OR = {
@@ -2039,7 +2040,7 @@ character_event = {
 	option = {
 		name = EVTOPTA262
 		prestige = 100
-hidden_tooltip = {
+		hidden_tooltip = {
 			if = {
 				limit = {
 					OR = {

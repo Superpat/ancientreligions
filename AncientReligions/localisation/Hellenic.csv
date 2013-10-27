@@ -131,6 +131,25 @@ EVTDESCancrel.2103;[From.GetTitledName] has endeavored to restore the ancient fa
 EVTOPTAancrel.2103;Glory to [From.Religion.GetRandomGodName] and the Empire!;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTBancrel.2103;May [Root.Religion.GetRandomGodName] protect us.;;;;;;;;;;;;;;;;;;;;;;;;x
 ;;;;;;;;;;
+was_refused_roman_revival;Roman revival refused;;;;;;;;;;;;;;;;;;;;;;;;x
+was_allowed_roman_revival;Roman revival allowed;;;;;;;;;;;;;;;;;;;;;;;;x
+refused_roman_revival;Refused Roman revival;;;;;;;;;;;;;;;;;;;;;;;;x
+allowed_roman_revival;Allowed Roman revival;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.2152;As you are holding court, [From.GetTitledFirstName] aproaces you with a petition supported by several prominent burghers in [From.PrimaryTitle.GetName], aksing for your permission to restore the rights and customs befitting citizens of a Roman city.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.2152;Of course, Roman customs are far superior to [From.Capital.Culture.GetName]!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.2152;If that is the will of the people, so be it.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTCancrel.2152;No, [Root.Culture.GetName] customs are superior and should be maintained!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTDancrel.2152;No, I will not have any walking relics in my realm!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.2153;An excelent idea, let's get started immediately!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.2153;You'll have my persmission.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.2154;[From.GetTitledFirstName] has approved the petion of [From.From.GetTitledFirstName] and allowd the burghers in [From.From.PrimaryTitle.GetName] to restore the rights and customs they think befitting citizens of a Roman city.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.2154;Excelent, let's get started immediately!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.2154;Good for them, I guess...;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTCancrel.2154;Great news!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.2156;The burghers in [From.From.PrimaryTitle.GetName] has choosen to restore most customs practiced in old Roman times.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.2156;Perhaps I should do the same;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.2158;With the restoration of Roman customs in [From.PrimaryTitle.GetName] the populace in [From.Capital.GetName] have embraced Roman culture.;;;;;;;;;;;;;;;;;;;;;;;;x
+;;;;;;;;;;
 EVTDESCancrel.2110;Without the Flaminica Dialis to assist you in your duties, the ancient religious laws require that you retire.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESCancrel.2111;Without the Flaminica Martialis to assist you in your duties, the ancient religious laws require that you retire.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESCancrel.2112;Without the Flaminica Quirinalis to assist you in your duties, the ancient religious laws require that you retire.;;;;;;;;;;;;;;;;;;;;;;;;x

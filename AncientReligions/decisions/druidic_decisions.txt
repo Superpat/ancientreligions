@@ -122,16 +122,14 @@ decisions = {
 	organize_gwydion = {
 		is_high_prio = yes
 		potential = {
-			AND = {
-				OR = {
-					tier = duke
-					tier = king
-					tier = emperor
-				}
-				OR = {
-					religion = druidic
-					religion = druidic_reformed
-				}				
+			OR = {
+				tier = duke
+				tier = king
+				tier = emperor
+			}
+			OR = {
+				religion = druidic
+				religion = druidic_reformed
 			}
 			prisoner = no
 			age = 16
@@ -175,16 +173,14 @@ decisions = {
 	organize_fianna = {
 		is_high_prio = yes
 		potential = {
-			AND = {
-				OR = {
-					tier = duke
-					tier = king
-					tier = emperor
-				}
-				OR = {
-					religion = gaelic_pagan
-					religion = gaelic_pagan_reformed
-				}				
+			OR = {
+				tier = duke
+				tier = king
+				tier = emperor
+			}
+			OR = {
+				religion = gaelic_pagan
+				religion = gaelic_pagan_reformed
 			}
 			prisoner = no
 			age = 16

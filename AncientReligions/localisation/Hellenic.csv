@@ -120,9 +120,9 @@ opinion_rejected_hellenic_state_religion;Rejected the Hellenic state religion;;;
 EVTDESCancrel.2100;Having long studied the old Greek and Roman classics you are wondering if their religious views aren't better than your own.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTAancrel.2100;Yes, the old religion was better;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTBancrel.2100;No, I'm secure in my faith;;;;;;;;;;;;;;;;;;;;;;;;x
-EVTDESCancrel.2101;As you are sitting down to dinner, your [Root.GetLordSpiritualName] comes up to you and tells you that [From.GetBestName] has strayed from the true faith. Claiming to have found enlightenment in the classical texts of ancient Rome and Greece, [From.GetHeShe] has forsaken [Root.Religion.GetRandomGodName] and professed his devotion to [From.Religion.GetRandomGodName].;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.2101;As you are sitting down to dinner, your [Root.GetLordSpiritualName] comes up to you and tells you that [From.GetBestName] has strayed from the true faith. Claiming to have found enlightenment in the classical texts of ancient Rome and Greece, [From.GetSheHe] has forsaken [Root.Religion.GetRandomGodName] and professed his devotion to [From.Religion.GetRandomGodName].;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTAancrel.2101;My [From.GetSonDaughter] did WHAT?;;;;;;;;;;;;;;;;;;;;;;;;x
-EVTOPTBancrel.2101;[From.GetHeShe] did WHAT?;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.2101;[From.GetSheHe] did WHAT?;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESCancrel.2102;With the restoration of the religious institutions of old, you have the opportunity to re-establish the old imperial state religion once again, but your Christian vassals are not likely to appreciate such a decree.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTAancrel.2102;We must restore the glory of the old faith!;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTTOOLTIPAancrel.2102;Parts of the Empire will convert to the re-established imperial state religion.\n;;;;;;;;;;;;;;;;;;;;;;;;x

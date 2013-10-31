@@ -589,6 +589,7 @@ de_jure_laws = {
 						OR = {
 							NOT = { religion_group = pagan_group }
 							is_reformed_religion = yes
+						}
 					}
 				}
 			}

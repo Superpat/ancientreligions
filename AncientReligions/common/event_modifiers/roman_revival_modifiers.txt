@@ -1,0 +1,19 @@
+was_refused_roman_revival = {
+	local_revolt_risk = 0.02
+	icon = 33
+}
+
+was_allowed_roman_revival = {
+	local_revolt_risk = -0.02
+	icon = 15
+}
+
+refused_roman_revival = {
+	town_opinion = -10
+	icon = 33
+}
+
+allowed_roman_revival = {
+	town_opinion = 10
+	icon = 15
+}

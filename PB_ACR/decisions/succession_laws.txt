@@ -168,6 +168,7 @@ succession_laws = {
 				OR = {
 					NOT = { religion_group = pagan_group }
 					is_reformed_religion = yes
+					religion = hellenic_pagan
 				}
 				
 				is_merchant_republic = no
@@ -390,6 +391,7 @@ succession_laws = {
 					culture = mongol
 					NOT = { religion_group = pagan_group }
 					is_reformed_religion = yes
+					religion = hellenic_pagan
 				}
 				
 				NOT = { religion_group = muslim }
@@ -658,12 +660,14 @@ gender_laws = {
 				AND = {
 					has_law = cognatic_succession
 					OR = {
-						holder_scope = {
-							culture = basque
-							religion = gaelic_pagan
-							religion = gaelic_pagan_reformed
-							religion = druidic
-							religion = druidic_reformed
+						holder_scope = { 
+							OR = { 
+								culture = basque
+								religion = druidic
+								religion = druidic_reformed
+								religion = gaelic_pagan
+								religion = gaelic_pagan_reformed
+							}
 						}
 						holder_scope = {
 							is_female = yes

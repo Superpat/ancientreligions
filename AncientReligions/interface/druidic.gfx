@@ -2,56 +2,56 @@ spriteTypes = {
 	# Traits
 	spriteType = {
 		name = "GFX_trait_head1"
-		texturefile = "gfx/traits/headhunter.tga"
+		texturefile = "gfx/traits/headhunter.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
 		name = "GFX_trait_head2"
-		texturefile = "gfx/traits/headhunter.tga"
+		texturefile = "gfx/traits/headhunter.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
 		name = "GFX_trait_head3"
-		texturefile = "gfx/traits/headhunter.tga"
+		texturefile = "gfx/traits/headhunter.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
 		name = "GFX_trait_head4"
-		texturefile = "gfx/traits/headhunter.tga"
+		texturefile = "gfx/traits/headhunter.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
 		name = "GFX_trait_head5"
-		texturefile = "gfx/traits/livinglegend.tga"
+		texturefile = "gfx/traits/livinglegend.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
 		name = "GFX_trait_druid"
-		texturefile = "gfx/traits/druid.tga"
+		texturefile = "gfx/traits/druid.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
 		name = "GFX_trait_wolf"
-		texturefile = "gfx/traits/wolf.tga"
+		texturefile = "gfx/traits/wolf.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
 		name = "GFX_trait_fian"
-		texturefile = "gfx/traits/fian.tga"
+		texturefile = "gfx/traits/fian.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"

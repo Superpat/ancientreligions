@@ -283,7 +283,7 @@ decisions = {
 		is_high_prio = yes
 		potential = {
 			has_dlc = "Legacy of Rome"
-			age = 16
+			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
 			NOT = { has_global_flag = rome_restored }
@@ -317,7 +317,7 @@ decisions = {
 			completely_controls = d_tunis
 		}
 		effect = {
-			narrative_event = { id = LoR.20 tooltip = EVTTOOLTIPLoR.20 }
+			narrative_event = { id = ancrel.2220 tooltip = EVTTOOLTIPLoR.20 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -328,17 +328,17 @@ decisions = {
 		is_high_prio = yes
 		potential = {
 			has_dlc = "Legacy of Rome"
-			age = 16
+			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
 			NOT = { has_global_flag = rome_restored }
-			has_landed_title = e_hre
 			NOT = { has_landed_title = e_byzantium }
 			NOT = { has_landed_title = e_latin_empire }
+			has_landed_title = e_hre
 			religion = catholic
 			OR = {
-				completely_controls = d_latium
-				completely_controls = d_thrace
+				completely_controls = c_roma
+				completely_controls = c_byzantion
 			}
 		}
 		allow = {
@@ -365,7 +365,7 @@ decisions = {
 			completely_controls = c_abydos
 		}
 		effect = {
-			narrative_event = { id = ancrel.2220 tooltip = EVTTOOLTIPLoR.20 }
+			narrative_event = { id = ancrel.2222 tooltip = EVTTOOLTIPLoR.20 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -376,13 +376,16 @@ decisions = {
 		is_high_prio = yes
 		potential = {
 			has_dlc = "Legacy of Rome"
-			age = 16
+			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
 			NOT = { has_global_flag = rome_restored }
-			NOT = { e_hre = { owner = { always = yes } } }
 			NOT = { e_byzantium = { owner = { always = yes } } }
 			NOT = { e_latin_empire = { owner = { always = yes } } }
+			NOT = {
+				has_landed_title = e_hre
+				religion = catholic
+			}
 			OR = {
 				religion_group = christian
 				religion_group = pagan_group
@@ -390,6 +393,7 @@ decisions = {
 			OR = {
 				culture = roman
 				culture = italian
+				culture_group = italian_group # SWMH
 				religion = hellenic_pagan
 				has_landed_title = e_italy
 			}
@@ -423,7 +427,7 @@ decisions = {
 			completely_controls = d_calabria
 		}
 		effect = {
-			narrative_event = { id = ancrel.2222 tooltip = EVTTOOLTIPLoR.20 }
+			narrative_event = { id = ancrel.2224 tooltip = EVTTOOLTIPLoR.20 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -529,7 +533,10 @@ decisions = {
 		potential = {
 			has_dlc = "Legacy of Rome"
 			NOT = { has_landed_title = c_byzantion }
-			has_landed_title = e_byzantium
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_latin_empire
+			}
 			any_realm_lord = { 
 				AND = {
 					ai = yes
@@ -560,46 +567,108 @@ decisions = {
 		potential = {
 			has_dlc = "Legacy of Rome"
 			has_landed_title = e_roman_empire
+			is_feudal = yes
 			capital_scope = {
 				NOT = { province_id = 333 }
 			}
-			any_realm_lord = { 
-				AND = {
+			OR = {
+				has_landed_title = c_roma
+				any_realm_lord = {
 					ai = yes
-					has_landed_title = c_roma 
+					has_landed_title = c_roma
 				}
 			}
-			any_realm_lord = { 
-				AND = {
+			OR = {
+				has_landed_title = b_tusculum
+				any_realm_lord = {
 					ai = yes
-					has_landed_title = b_tivoli
+					has_landed_title = b_tusculum
 				}
 			}
 		}
 		allow = {
 			has_landed_title = e_roman_empire
-			any_realm_lord = { has_landed_title = c_roma }
+			OR = {
+				has_landed_title = c_roma
+				any_realm_lord = { has_landed_title = c_roma }
+			}
 		}
 		effect = {
 			custom_tooltip = {
 				text = rome_capital
 				hidden_tooltip = {
-					b_tivoli = { province_capital = yes }
-					ROOT = {
-						b_tivoli = {
-							usurp_title = PREV
-						}
+					b_roma = {
+						set_name = "Lateran"
 					}
-					#b_roma = { set_name = Lateran }
-					b_tivoli = { 
-						set_name = Rome 
+					b_viterbo = {
+						set_name = ""
+					}
+					b_tusculum = {
+						set_name = "Rome"
+						province_capital = yes
+						usurp_title = ROOT
 						ROOT = { capital = PREV }
 					}
 				}
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
+		}
+	}
+	
+	make_rome_capital_city = {
+		is_high_prio = yes
+		potential = {
+			has_dlc = "Legacy of Rome"
+			has_landed_title = e_roman_empire
+			is_republic = yes
+			capital_scope = {
+				NOT = { province_id = 333 }
+			}
+			OR = {
+				has_landed_title = c_roma
+				any_realm_lord = {
+					ai = yes
+					has_landed_title = c_roma
+				}
+			}
+			OR = {
+				has_landed_title = b_viterbo
+				any_realm_lord = {
+					ai = yes
+					has_landed_title = b_viterbo
+				}
+			}
+		}
+		allow = {
+			has_landed_title = e_roman_empire
+			OR = {
+				has_landed_title = c_roma
+				any_realm_lord = { has_landed_title = c_roma }
+			}
+		}
+		effect = {
+			custom_tooltip = {
+				text = rome_capital
+				hidden_tooltip = {
+					b_roma = {
+						set_name = "Lateran"
+					}
+					b_tusculum = {
+						set_name = ""
+					}
+					b_viterbo = {
+						set_name = "Rome"
+						province_capital = yes
+						usurp_title = ROOT
+						ROOT = { capital = PREV }
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 	

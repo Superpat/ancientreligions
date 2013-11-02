@@ -1,0 +1,176 @@
+# HOLY ORDERS
+
+d_gwydion = {
+	
+	color={ 75 75 75 }
+	color2={ 255 255 255 }
+	
+	capital = 64
+
+	title = "WARCHIEF"
+	foa = "WARCHIEF_FOA"
+	
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = druidic
+	
+	culture = welsh
+	
+	# Cannot be held as a secondary title
+	primary = yes
+
+	modifier = d_gwydion_modifier
+}
+
+d_fianna = {
+	
+	color={ 75 75 75 }
+	color2={ 255 255 255 }
+	
+	capital = 15
+
+	title = "WARCHIEF"
+	foa = "WARCHIEF_FOA"
+	
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = gaelic_pagan
+	
+	culture = irish
+	
+	# Cannot be held as a secondary title
+	primary = yes
+
+	modifier = d_fianna_modifier
+}
+
+# Pagan heads of religion
+
+d_hellenic_pagan = {
+	color={ 155 155 235 }
+	color2={ 220 220 0 }
+	
+	capital = 333 #Roma
+	
+	title = "PONTIFEX_MAXIMUS"
+	foa = "PONTIFEX_MAXIMUS_FOA"
+	
+	creation_requires_capital = no
+	
+	allow = {
+		religion = hellenic_pagan
+		num_of_holy_sites = 3
+		religion_authority = 0.6
+		piety = 500
+	}
+	
+	gain_effect = {
+		hidden_tooltip = {
+			e_roman_empire = {
+				owner = {
+					if = {
+						limit = {
+							religion = hellenic_pagan
+						}
+						character_event = { id = ancrel.2102 days = 1 }
+					}
+				}
+			}
+			e_byzantium = {
+				owner = {
+					if = {
+						limit = {
+							religion = hellenic_pagan
+							NOT = { has_landed_title = e_roman_empire }
+						}
+						character_event = { id = ancrel.2102 days = 1 }
+					}
+				}
+			}
+			e_latin_empire = {
+				owner = {
+					if = {
+						limit = {
+							religion = hellenic_pagan
+							NOT = { has_landed_title = e_roman_empire }
+							NOT = { has_landed_title = e_byzantium }
+						}
+						character_event = { id = ancrel.2102 days = 1 }
+					}
+				}
+			}
+		}
+	}
+	
+	short_name = yes
+	
+	dignity = 100 # Counted as having this many more counties than it does
+	
+	# Controls a religion
+	controls_religion = hellenic_pagan
+	
+	religion = hellenic_pagan
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_druidic_reformed = {
+	color={ 122 165 70 }
+	color2={ 220 220 0 }
+	
+	capital = 64 # Gwynedd
+	
+	title = "ARCH_DRUID"
+	title_female = "ARCH_DRUIDESS"
+	foa = "ARCH_DRUID_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = druidic_reformed
+	
+	religion = druidic_reformed
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+d_gaelic_pagan_reformed = {
+	color={ 122 165 70 }
+	color2={ 220 220 0 }
+	
+	capital = 15 # Dublin
+	
+	title = "HIGH_KING"
+	title_female = "HIGH_QUEEN"
+	foa = "HIGH_KING_FOA"
+	
+	short_name = yes
+	
+	allow = {
+		religion = gaelic_pagan_reformed
+		num_of_holy_sites = 3
+		religion_authority = 0.6
+		piety = 500
+	}
+	
+	# Controls a religion
+	controls_religion = gaelic_pagan_reformed
+	
+	religion = gaelic_pagan_reformed
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}

@@ -3,3 +3,9 @@ on_death = {
 		ancrel.1194
 	}
 }
+
+on_reform_religion = {
+	events = {
+		ancrel.0009
+	}
+}

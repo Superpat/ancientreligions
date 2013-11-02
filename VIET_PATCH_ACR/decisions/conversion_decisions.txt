@@ -800,16 +800,16 @@ decisions = {
 				religion = west_african_pagan_reformed
 			}
 			if = {
+				limit = { religion = east_african_pagan }
+				religion = east_african_pagan_reformed
+			}
+			if = {
 				limit = { religion = druidic }
 				religion = druidic_reformed
 			}
 			if = {
 				limit = { religion = gaelic_pagan }
 				religion = gaelic_pagan_reformed
-			}
-			if = {
-				limit = { religion = east_african_pagan }
-				religion = east_african_pagan_reformed
 			}
 			
 			hidden_tooltip = {

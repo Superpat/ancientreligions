@@ -1,0 +1,365 @@
+#######################################
+#
+# Roman Empire Restored
+#
+# Event ID ancrel.2220 - ancrel.2229 reserved
+#
+#######################################
+
+# The Restoration of Rome (Byzantium / Latin Empire)
+narrative_event = {
+	id = ancrel.2220
+	title = EVTNAMELoR.20
+	desc = EVTDESCLoR.20
+	
+	picture = GFX_evt_rome_restored_byzantine
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.20
+		set_global_flag = rome_restored
+		e_roman_empire = {
+			grant_title = ROOT
+			make_primary_title = yes
+			if = {
+				limit = { ROOT = { has_landed_title = e_byzantium } }
+				copy_title_laws = e_byzantium
+				copy_title_history = e_byzantium
+				set_global_flag = rome_restored_by_byzantium
+			}
+			if = {
+				limit = {
+					ROOT = { has_landed_title = e_latin_empire }
+					NOT = { ROOT = { has_landed_title = e_byzantium } }
+				}
+				copy_title_laws = e_latin_empire
+				copy_title_history = e_latin_empire
+				set_global_flag = rome_restored_by_latin_empire
+			}
+			if = {
+				limit = { has_law = themes_0 }
+				add_law = crown_levies_2
+				revoke_law = themes_0
+			}
+			if = {
+				limit = { has_law = themes_1 }
+				add_law = crown_levies_3
+				revoke_law = themes_1
+			}
+			if = {
+				limit = { has_law = themes_2 }
+				add_law = crown_levies_4
+				revoke_law = themes_2
+			}
+		}
+		add_trait = augustus
+		give_nickname = nick_the_glorious
+		hidden_tooltip = {
+			e_byzantium = {
+				limit = { ROOT = { has_landed_title = PREV } }
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_roman_empire
+				}
+				destroy_landed_title = THIS
+				activate_title = { title = e_byzantium status = no }
+			}
+			e_latin_empire = {
+				limit = { ROOT = { has_landed_title = PREV } }
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_roman_empire
+				}
+				destroy_landed_title = THIS
+				activate_title = { title = e_latin_empire status = no }
+			}
+			e_italy = {
+				limit = { ROOT = { has_landed_title = PREV } }
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_roman_empire
+				}
+				destroy_landed_title = THIS
+				activate_title = { title = e_italy status = no }
+			}
+			e_hre = {
+				limit = { e_germany = { has_holder = no } }
+				holder_scope = { e_germany = { grant_title = PREV } }
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_germany
+				}
+				e_germany = {
+					copy_title_laws = e_hre
+					copy_title_history = e_hre
+				}
+				destroy_landed_title = THIS
+			}
+			e_hre_french = {
+				limit = { e_france = { has_holder = no } }
+				holder_scope = { e_france = { grant_title = PREV } }
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_france
+				}
+				e_france = {
+					copy_title_laws = e_hre_french
+					copy_title_history = e_hre_french
+				}
+				destroy_landed_title = THIS
+			}
+			any_playable_ruler = {
+				limit = {
+					NOT = { character = ROOT }
+					ai = no
+				}
+				narrative_event = { id = ancrel.2221 }
+			}
+		}
+	}
+}
+
+# Informed about Restoration of Rome (Byzantium / Latin Empire)
+narrative_event = {
+	id = ancrel.2221
+	title = EVTNAMELoR.21
+	desc = EVTDESCLoR.21
+	
+	picture = GFX_evt_rome_restored_byzantine
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.21
+		trigger = {
+			NOT = { has_landed_title = e_hre }
+			NOT = { has_landed_title = e_hre_french }
+			NOT = { has_landed_title = e_byzantium }
+			NOT = { has_landed_title = e_latin_empire }
+		}
+	}
+	option = {
+		name = EVTOPTBLoR.21
+		trigger = {
+			OR = {
+				has_landed_title = e_hre
+				has_landed_title = e_hre_french
+				has_landed_title = e_byzantium
+				has_landed_title = e_latin_empire
+			}
+		}
+		prestige = -500
+	}
+}
+
+# The Restoration of Rome (HRE)
+narrative_event = {
+	id = ancrel.2222
+	title = EVTNAMELoR.20
+	desc = EVTDESCancrel.2222
+	
+	picture = GFX_evt_rome_restored_byzantine
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.20
+		set_global_flag = rome_restored
+		set_global_flag = rome_restored_by_hre
+		e_roman_empire = {
+			grant_title = ROOT
+			make_primary_title = yes
+			if = {
+				limit = { ROOT = { has_landed_title = e_hre } }
+				copy_title_laws = e_hre
+				copy_title_history = e_hre
+				set_global_flag = rome_restored_by_hre
+			}
+			if = {
+				limit = {
+					ROOT = { has_landed_title = e_hre_french }
+					NOT = { ROOT = { has_landed_title = e_hre } }
+				}
+				copy_title_laws = e_hre_french
+				copy_title_history = e_hre_french
+				set_global_flag = rome_restored_by_hre_french
+			}
+			hidden_tooltip = {
+				revoke_law = hre_law_0
+				revoke_law = hre_law_1
+			}
+		}
+		add_trait = augustus
+		give_nickname = nick_the_glorious
+		hidden_tooltip = {
+			e_hre = {
+				limit = { ROOT = { has_landed_title = PREV } }
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_roman_empire
+				}
+				destroy_landed_title = THIS
+				activate_title = { title = e_hre status = no }
+			}
+			e_hre_french = {
+				limit = { ROOT = { has_landed_title = PREV } }
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_roman_empire
+				}
+				destroy_landed_title = THIS
+				activate_title = { title = e_hre_french status = no }
+			}
+			e_italy = {
+				limit = { ROOT = { has_landed_title = PREV } }
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_roman_empire
+				}
+				destroy_landed_title = THIS
+				activate_title = { title = e_italy status = no }
+			}
+			any_playable_ruler = {
+				limit = {
+					NOT = { character = ROOT }
+					ai = no
+				}
+				narrative_event = { id = ancrel.2223 }
+			}
+		}
+	}
+}
+
+# Informed about Restoration of Rome (HRE)
+narrative_event = {
+	id = ancrel.2223
+	title = EVTNAMELoR.21
+	desc = EVTDESCancrel.2223
+	
+	picture = GFX_evt_rome_restored_byzantine
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.21
+		trigger = {
+			NOT = { has_landed_title = e_hre }
+			NOT = { has_landed_title = e_hre_french }
+			NOT = { has_landed_title = e_byzantium }
+			NOT = { has_landed_title = e_latin_empire }
+		}
+	}
+	option = {
+		name = EVTOPTBLoR.21
+		trigger = {
+			OR = {
+				has_landed_title = e_hre
+				has_landed_title = e_hre_french
+				has_landed_title = e_byzantium
+				has_landed_title = e_latin_empire
+			}
+		}
+		prestige = -500
+	}
+}
+
+# The Creation of a new Rome
+narrative_event = {
+	id = ancrel.2224
+	title = EVTNAMELoR.20
+	desc = EVTDESCancrel.2224
+	
+	picture = GFX_evt_rome_restored_byzantine
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.20
+		set_global_flag = rome_restored
+		set_global_flag = rome_restored_by_holding_italy
+		primary_title = {
+			e_roman_empire = {
+				grant_title = ROOT
+				make_primary_title = yes
+				copy_title_laws = PREV
+			}
+		}
+		add_trait = augustus
+		give_nickname = nick_the_glorious
+		hidden_tooltip = {
+			e_byzantium = {
+				destroy_landed_title = THIS
+				activate_title = { title = e_byzantium status = no }
+			}
+			e_latin_empire = {
+				destroy_landed_title = THIS
+				activate_title = { title = e_latin_empire status = no }
+			}
+			e_italy = {
+				limit = { ROOT = { has_landed_title = PREV } }
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_roman_empire
+				}
+				destroy_landed_title = THIS
+				activate_title = { title = e_italy status = no }
+			}
+			e_hre = {
+				limit = { e_germany = { has_holder = no } }
+				holder_scope = { e_germany = { grant_title = PREV } }
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_germany
+				}
+				e_germany = {
+					copy_title_laws = e_hre
+					copy_title_history = e_hre
+				}
+				destroy_landed_title = THIS
+			}
+			e_hre_french = {
+				limit = { e_france = { has_holder = no } }
+				holder_scope = { e_france = { grant_title = PREV } }
+				any_direct_de_jure_vassal_title = {
+					de_jure_liege = e_france
+				}
+				e_france = {
+					copy_title_laws = e_hre_french
+					copy_title_history = e_hre_french
+				}
+				destroy_landed_title = THIS
+			}
+			any_playable_ruler = {
+				limit = {
+					NOT = { character = ROOT }
+					ai = no
+				}
+				narrative_event = { id = ancrel.2225 }
+			}
+		}
+	}
+}
+
+# Informed about Creation of a new Rome
+narrative_event = {
+	id = ancrel.2225
+	title = EVTNAMELoR.21
+	desc = EVTDESCancrel.2225
+	
+	picture = GFX_evt_rome_restored_byzantine
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTALoR.21
+		trigger = {
+			NOT = { has_landed_title = e_hre }
+			NOT = { has_landed_title = e_hre_french }
+			NOT = { has_landed_title = e_byzantium }
+			NOT = { has_landed_title = e_latin_empire }
+		}
+	}
+	option = {
+		name = EVTOPTBLoR.21
+		trigger = {
+			OR = {
+				has_landed_title = e_hre
+				has_landed_title = e_hre_french
+				has_landed_title = e_byzantium
+				has_landed_title = e_latin_empire
+			}
+		}
+		prestige = -500
+	}
+}

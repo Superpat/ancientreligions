@@ -24,6 +24,7 @@ GOD_VULCAN;Vulcan;Vulcain;Vulcanus;;Vulcano;;;;;;;;;x
 GOD_VULCAN_byzantine;Hephaestus;Héphaïstos;Hephaistos;;Hefesto;;;;;;;;;x
 GOD_APOLLO;Apollo;Apollon;Apollon;;Apolo;;;;;;;;;x
 THE_THEOGONY;The Theogony;La Théogonie;Die Theogonie;;La Teogonía;;;;;;;;;x
+hellenic_pagan_DESC;The Hellenistic religion is polytheistic, with a pantheon of twelve major gods including Jupiter, Mars, Mercury, Venus, Minerva and Vesta. It originated in ancient Greece and with the conquests of Alexander the Great and the Roman Empire, it would go on to become the dominant religion in the Mediterranean world until the rise of Christendom. Defining features in-game: \n§Y*§! Can try to reconquer the land of the old Roman Empire from non-pagan rulers.\n§Y*§! Can liberate Italian and Greek provinces from non-pagan rulers.\n§Y*§! The Pontifex Maximus can call Great Holy Wars;;;;;;;;;;;;;x
 ;;;;;;;;;;
 king_hellenic_pagan;Rex;Roi;Rex;;Rey;;;;;;;;;x
 king_hellenic_pagan_byzantine;Regas;Roi;Regas;;Rey;;;;;;;;;x
@@ -119,9 +120,9 @@ opinion_rejected_hellenic_state_religion;Rejected the Hellenic state religion;;;
 EVTDESCancrel.2100;Having long studied the old Greek and Roman classics you are wondering if their religious views aren't better than your own.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTAancrel.2100;Yes, the old religion was better;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTBancrel.2100;No, I'm secure in my faith;;;;;;;;;;;;;;;;;;;;;;;;x
-EVTDESCancrel.2101;As you are sitting down to dinner, your [Root.GetLordSpiritualName] comes up to you and tells you that [From.GetBestName] has strayed from the true faith. Claiming to have found enlightenment in the classical texts of ancient Rome and Greece, [From.GetHeShe] has forsaken [Root.Religion.GetRandomGodName] and professed his devotion to [From.Religion.GetRandomGodName].;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.2101;As you are sitting down to dinner, your [Root.GetLordSpiritualName] comes up to you and tells you that [From.GetBestName] has strayed from the true faith. Claiming to have found enlightenment in the classical texts of ancient Rome and Greece, [From.GetSheHe] has forsaken [Root.Religion.GetRandomGodName] and professed his devotion to [From.Religion.GetRandomGodName].;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTAancrel.2101;My [From.GetSonDaughter] did WHAT?;;;;;;;;;;;;;;;;;;;;;;;;x
-EVTOPTBancrel.2101;[From.GetHeShe] did WHAT?;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.2101;[From.GetSheHe] did WHAT?;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESCancrel.2102;With the restoration of the religious institutions of old, you have the opportunity to re-establish the old imperial state religion once again, but your Christian vassals are not likely to appreciate such a decree.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTAancrel.2102;We must restore the glory of the old faith!;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTTOOLTIPAancrel.2102;Parts of the Empire will convert to the re-established imperial state religion.\n;;;;;;;;;;;;;;;;;;;;;;;;x
@@ -129,6 +130,25 @@ EVTOPTBancrel.2102;Let my vassals choose their own faith.;;;;;;;;;;;;;;;;;;;;;;;
 EVTDESCancrel.2103;[From.GetTitledName] has endeavored to restore the ancient faith to the Empire, and demands that you convert.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTAancrel.2103;Glory to [From.Religion.GetRandomGodName] and the Empire!;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTBancrel.2103;May [Root.Religion.GetRandomGodName] protect us.;;;;;;;;;;;;;;;;;;;;;;;;x
+;;;;;;;;;;
+was_refused_roman_revival;Roman revival refused;;;;;;;;;;;;;;;;;;;;;;;;x
+was_allowed_roman_revival;Roman revival allowed;;;;;;;;;;;;;;;;;;;;;;;;x
+refused_roman_revival;Refused Roman revival;;;;;;;;;;;;;;;;;;;;;;;;x
+allowed_roman_revival;Allowed Roman revival;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.2152;As you are holding court, [From.GetTitledFirstName] aproaces you with a petition supported by several prominent burghers in [From.PrimaryTitle.GetName], aksing for your permission to restore the rights and customs befitting citizens of a Roman city.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.2152;Of course, Roman customs are far superior to [From.Capital.Culture.GetName]!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.2152;If that is the will of the people, so be it.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTCancrel.2152;No, [Root.Culture.GetName] customs are superior and should be maintained!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTDancrel.2152;No, I will not have any walking relics in my realm!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.2153;An excelent idea, let's get started immediately!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.2153;You'll have my persmission.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.2154;[From.GetTitledFirstName] has approved the petion of [From.From.GetTitledFirstName] and allowd the burghers in [From.From.PrimaryTitle.GetName] to restore the rights and customs they think befitting citizens of a Roman city.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.2154;Excelent, let's get started immediately!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.2154;Good for them, I guess...;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTCancrel.2154;Great news!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.2156;The burghers in [From.From.PrimaryTitle.GetName] has choosen to restore most customs practiced in old Roman times.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.2156;Perhaps I should do the same;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.2158;With the restoration of Roman customs in [From.PrimaryTitle.GetName] the populace in [From.Capital.GetName] have embraced Roman culture.;;;;;;;;;;;;;;;;;;;;;;;;x
 ;;;;;;;;;;
 EVTDESCancrel.2110;Without the Flaminica Dialis to assist you in your duties, the ancient religious laws require that you retire.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESCancrel.2111;Without the Flaminica Martialis to assist you in your duties, the ancient religious laws require that you retire.;;;;;;;;;;;;;;;;;;;;;;;;x

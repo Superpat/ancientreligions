@@ -1,0 +1,66 @@
+### Hellenic Pagan
+#
+#b_lebedos = {
+#	# Temple of Artemis at Ephesus
+#	holy_site = hellenic_pagan
+#}
+#b_lampsakos = {
+#	remove_holy_site = hellenic_pagan
+#}
+#b_piraeaus = {
+#	remove_holy_site = hellenic_pagan
+#}
+#b_pyrgos = {
+#	# Statue of Zeus at Olympia
+#	holy_site = hellenic_pagan
+#}
+
+### Druidic Pagan
+
+b_bonneval = {
+	holy_site = druidic
+	holy_site = druidic_reformed
+}
+b_locmine = {
+	holy_site = druidic
+	holy_site = druidic_reformed
+}
+b_waltham = {
+	holy_site = druidic
+	holy_site = druidic_reformed
+}
+b_bangor_fawr = {
+	holy_site = druidic
+	holy_site = druidic_reformed
+}
+b_whithorn = {
+	holy_site = druidic
+	holy_site = druidic_reformed
+}
+
+### Gaelic Pagan
+b_reykjavik = {
+	holy_site = gaelic_pagan
+	holy_site = gaelic_pagan_reformed
+}
+b_mondonedo = {
+	holy_site = gaelic_pagan
+	holy_site = gaelic_pagan_reformed
+}
+b_st_davids = {
+	breton = Tydewwi
+	scottish = Tydewwi
+	irish = Tyddewi
+	welsh = Tyddewi
+	norwegian = "Ramsøy"
+	holy_site = gaelic_pagan
+	holy_site = gaelic_pagan_reformed
+}
+b_iona = {
+	holy_site = gaelic_pagan
+	holy_site = gaelic_pagan_reformed
+}
+b_mellifont = {
+	holy_site = gaelic_pagan
+	holy_site = gaelic_pagan_reformed
+}

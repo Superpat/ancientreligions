@@ -51,8 +51,10 @@ character_event = {
 		if = {
 			limit = {
 				OR = {
-					culture =  breton
+					culture = breton
 					culture = welsh
+					culture = cornish # SWMH
+					culture = cumbric # SWMH
 				}
 			}
 			create_character = {
@@ -69,8 +71,9 @@ character_event = {
 		if = {
 			limit = {
 				OR = {
-					culture =  scottish
+					culture = scottish
 					culture = irish
+					culture = norsegaelic # SWMH
 				}
 			}
 			create_character = {
@@ -184,6 +187,7 @@ character_event = {
 				OR = {
 					culture = scottish
 					culture = irish
+					culture = norsegaelic # SWMH
 				}
 			}
 			religion = gaelic_pagan
@@ -191,8 +195,10 @@ character_event = {
 		if = {
 			limit = { 
 				OR = {
-					culture = welsh
 					culture = breton
+					culture = welsh
+					culture = cornish # SWMH
+					culture = cumbric # SWMH
 				}
 			}
 			religion = druidic
@@ -397,6 +403,8 @@ character_event = {
 				OR = {
 					culture = breton
 					culture = welsh
+					culture = cornish # SWMH
+					culture = cumbric # SWMH
 				}
 			}
 			religion = druidic
@@ -406,9 +414,38 @@ character_event = {
 				OR = {
 					culture = scottish
 					culture = irish
+					culture = norsegaelic # SWMH
 				}
 			}
 			religion = gaelic_pagan
 		}
+	}
+}
+
+narrative_event = {
+	id = ancrel.0009
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = { religion = gaelic_pagan_reformed }
+			d_fianna = {
+				religion = gaelic_pagan_reformed # This Holy Order now changes religion
+			}
+			set_global_flag = gaelic_reformation
+		}
+		if = {
+			limit = { religion = druidic_reformed }
+			d_gwydion = {
+				religion = druidic_reformed # This Holy Order now changes religion
+			}
+			set_global_flag = druidic_reformation
+		}
+	}
+	
+	option = {
+		name = OK
 	}
 }

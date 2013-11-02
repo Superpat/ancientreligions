@@ -1,3 +1,7 @@
+# Audax Validator EnableCommentMetadata
+# Audax Validator "!" Ignore_1001
+# Audax Validator "!" Ignore_1002
+
 ## normal scopes(including posttitle scopes) ##
 # ROOT = receiver
 # FROM = giver
@@ -2067,7 +2071,6 @@ invasion = {
 					}
 					FROM = { imprison = ROOT }
 				}
-
 			}
 		}
 		
@@ -2763,7 +2766,7 @@ religious = {
 									ROOT = { religion_group = muslim }
 									FROM = { religion_group = muslim }
 								}
-									any_neighbor_province = {
+								any_neighbor_province = {
 									OR = {
 										AND = {
 											has_owner = yes
@@ -5857,7 +5860,7 @@ imperial_reconquest = {
 			title = d_coloneia
 			title = d_mesopotamia
 		}
-		# The attacker needs at least one county in the target dutchy, or a border, or be only two sea zones away from one of your counties
+		# The attacker needs at least one county in the target kingdom, or a border, or be only two sea zones away from one of your counties
 		any_direct_de_jure_vassal_title = {
 			OR = {
 				holder_scope = {
@@ -7902,10 +7905,16 @@ pagan_county_conquest = {
 			NOT = { ROOT = { religion = hellenic_pagan } }
 			FROM = { religion_group = pagan_group }
 			FROM = { any_liege = { religion_group = pagan_group } }
-			location = {
-				NOT = { culture = roman }
-				NOT = { culture = italian }
-				NOT = { culture = greek }
+			NOT = {
+				location = {
+					OR = {
+						culture = roman
+						culture = italian
+						culture = greek
+						culture = sicilian_greek # SWMH
+						culture_group = italian_group # SWMH
+					}
+				}
 			}
 		}
 	}
@@ -7943,176 +7952,6 @@ pagan_county_conquest = {
 							is_liege_or_above = ROOT
 							NOT = { culture = ROOT }
 							NOT = { religion = ROOT }
-						}
-					}
-				}
-			}
-
-			usurp_title = ROOT
-		}
-		
-		any_attacker = {
-			limit = { character = ROOT }
-			participation_scaled_prestige = 100
-			participation_scaled_piety = 50
-		}
-		any_attacker = {
-			limit = { NOT = { character = ROOT } }
-			hidden_tooltip = { 
-				participation_scaled_prestige = 100 
-				participation_scaled_piety = 50
-			}
-		}
-		
-		ROOT = {
-			religion_authority = {
-				modifier = won_county_conquest
-			}
-		}
-	}
-
-	on_fail_title = {
-		ROOT = {
-			prestige = -100
-			religion_authority = {
-				modifier = lost_county_conquest
-			}
-		}
-		any_defender = {
-			limit = { character = FROM }
-			participation_scaled_prestige = 50
-		}
-		any_defender = {
-			limit = { NOT = { character = FROM } }
-			hidden_tooltip = { participation_scaled_prestige = 50 }
-		}
-	}
-
-	on_reverse_demand = {
-		ROOT = {
-			prestige = -200
-			transfer_scaled_wealth = {
-				to = FROM
-				value = 4.0
-			}
-			religion_authority = {
-				modifier = lost_county_conquest
-			}
-		}
-		any_defender = {
-			limit = { character = FROM }
-			participation_scaled_prestige = 100
-			participation_scaled_piety = 50
-		}
-		any_defender = {
-			limit = { NOT = { character = FROM } }
-			hidden_tooltip = {
-				participation_scaled_prestige = 100 
-				participation_scaled_piety = 50
-			}
-		}
-	}
-
-	attacker_ai_victory_worth = {
-		factor = -1 # always accept
-	}
-	
-	attacker_ai_defeat_worth = {
-		factor = 100
-	}
-
-	defender_ai_victory_worth = {
-		factor = -1 # always accept
-	}
-	
-	defender_ai_defeat_worth = {
-		factor = 100
-	}
-}
-
-hellenic_county_liberation = {
-	name = CB_NAME_HELLENIC_LIBERATION
-	war_name = WAR_NAME_HELLENIC_LIBERATION
-	sprite = 16
-	truce_days = 1825
-	hostile_against_others = yes
-	is_permanent = yes
-	check_all_titles = yes # if permanent, setting this to true will check against all of someones titles, including vassal held titles
-	press_claim = yes
-	can_ask_to_join_war = no
-	
-	allow_distant = yes
-	
-	can_use = {
-		ROOT = { religion = hellenic_pagan }
-		NOT = { FROM = { religion_group = pagan_group } }
-		NOT = { FROM = { any_liege = { religion_group = pagan_group } } }
-	}
-
-	can_use_title = {
-		tier = count
-		OR = {
-			FROM = {
-				has_landed_title = PREV
-			}
-			holder_scope = {
-				is_liege_or_above = FROM
-				NOT = { same_realm = ROOT }
-			}
-		}
-
-		NOT = {
-			OR = {
-				ROOT = {
-					has_landed_title = PREV
-				}
-				holder_scope = {
-					is_liege_or_above = ROOT
-				}
-			}
-		}
-
-		location = {
-			OR = {
-				culture = roman
-				culture = italian
-				culture = greek
-			}
-		}
-	}
-
-	is_valid_title = {
-		ROOT = {
-			religion_group = pagan_group
-			NOT = { same_realm = FROM }
-		}
-		FROM = {
-			NOT = { religion = ROOT }
-		}
-
-		OR = {
-			FROM = {
-				has_landed_title = PREV
-			}
-			holder_scope = {
-				is_liege_or_above = FROM
-			}
-		}
-	}
-	
-	on_success_title = {
-		usurp_title_plus_barony_if_unlanded = ROOT
-		
-		any_de_jure_vassal_title = { # take all baronies too
-			limit = {
-				has_holder = yes
-				holder_scope = {
-					OR = {
-						character = FROM
-						is_liege_or_above = FROM
-						AND = {
-							is_liege_or_above = ROOT
-							NOT = { religion = hellenic_pagan }
 						}
 					}
 				}

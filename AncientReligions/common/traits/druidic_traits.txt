@@ -115,3 +115,25 @@ fian = {
 		defence = -0.1
 	}
 }
+
+learning_druidic_arts = {
+	potential = {
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+	}
+	
+	customizer = no
+	
+	monthly_character_piety = 0.5
+	same_religion_opinion = 10
+	fertility = -50.0
+	
+	stewardship = -2
+	intrigue = -2
+	diplomacy = -2
+	
+	pilgrimage = yes # Will need a regent, but can still be guardian to children
+}
+}

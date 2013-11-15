@@ -68,12 +68,12 @@ job_chancellor_hellenic_pagan;Magister Officiorum;Magister Officiorum;;;;;;;;;;;
 job_marshal_hellenic_pagan;Magister Militum;Magister Militum;;;;;;;;;;;;;;x
 job_marshal_hellenic_pagan_byzantine;Stratelates;Stratelates;;;;;;;;;;;;;;x
 job_treasurer_hellenic_pagan;Quaestor;Quaestor;;;;;;;;;;;;;;x
-job_spiritual_hellenic_pagan;Augur;Augur;;;;;;;;;;;;;;x
+job_spiritual_hellenic_pagan;Augur;Augure;;;;;;;;;;;;;;x
 city_job_chancellor_hellenic_pagan;Magister Officiorum;Magister Officiorum;;;;;;;;;;;;;;x
 city_job_marshal_hellenic_pagan;Magister Militum;Magister Militum;;;;;;;;;;;;;;x
 city_job_marshal_hellenic_pagan_byzantine;Stratelates;Stratelates;;;;;;;;;;;;;;x
 city_job_treasurer_hellenic_pagan;Quaestor;Quaestor;;;;;;;;;;;;;;x
-city_job_spiritual_hellenic_pagan;Augur;Augur;;;;;;;;;;;;;;x
+city_job_spiritual_hellenic_pagan;Augur;Augure;;;;;;;;;;;;;;x
 ;;;;;;;;;;
 hellenic_county_liberation_desc;Hellenic pagan rulers can liberate Italian and Greek provinces from the tyrannical rule of the monotheistic religions.;Les paiens hellènes peuvent libérer les provinces italiennes et grecques du joug tyranique des religions monothéistes;;;;;;;;;;;;;;x
 CB_NAME_HELLENIC_LIBERATION;Liberation of [Title.GetBaseName];Libération de [Title.GetBaseName];;;;;;;;;;;;;;x

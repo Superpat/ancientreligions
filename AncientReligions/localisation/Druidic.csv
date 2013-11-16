@@ -1,5 +1,5 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-;;;;;;;;;;
+;;;;;;;;;;;;;;
 HERO_RELIGION;Heroic Religion;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 HERO_RELIGION_HOME_TERRITORY;Heroic Religion in Home Territory;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 gaelic_pagan;Gaelic;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
@@ -13,8 +13,8 @@ GOD_LUGH;Lugh;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 GOD_MACHA;Macha;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 GOD_DANA;Dana;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 GOD_NUADA;Nuada;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-d_gaelic_pagan_reformed;Tara;;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-HIGH_KING;Ard Ri;;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+d_gaelic_pagan_reformed;Tara;;FRENCH;GERMAN;SPANISH;;;;;;;;;x
+HIGH_KING;Ard Ri;;FRENCH;GERMAN;SPANISH;;;;;;;;;x
 HIGH_QUEEN;Ard Banrion;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 HIGH_KING_FOA;Great Lord;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 druidic;Brythonic;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
@@ -41,7 +41,7 @@ d_druidic_reformed;The Circle of Druids;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 ARCH_DRUID;Arch Druid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 ARCH_DRUIDESS;Arch Druidess;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 ARCH_DRUID_FOA;Eldest of the Druids;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-;;;;;;;;;;
+;;;;;;;;;;;;;;
 baron_druidic_reformed;Lord;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 baron_female_druidic_reformed;Lady;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 barony_of_druidic_reformed;Castle of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
@@ -57,7 +57,7 @@ kingdom_of_druidic_reformed;Kingdom of;Royaume de;Königreich von;;Reino de;;;;;;
 emperor_druidic_reformed;High King;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 emperor_female_druidic_reformed;High Queen;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 empire_of_druidic_reformed;High Kingdom of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-;;;;;;;;;;
+;;;;;;;;;;;;;;
 family_palace_baron_druidic_reformed;Elder;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 family_palace_baron_female_druidic_reformed;Lady;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 city_baron_druidic_reformed;Lord;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
@@ -73,7 +73,7 @@ city_kingdom_of_druidic_reformed;Federation of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 city_emperor_druidic_reformed;Vergobret;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 city_emperor_female_druidic_reformed;Lady;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 city_empire_of_druidic_reformed;Nation of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-;;;;;;;;;;
+;;;;;;;;;;;;;;
 temple_baron_druidic_reformed;Druid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 temple_barony_of_druidic_reformed;Sacred Grove of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 temple_count_druidic_reformed;Druid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
@@ -84,10 +84,10 @@ temple_king_druidic_reformed;Archdruid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 temple_kingdom_of_druidic_reformed;Federation of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 temple_emperor_druidic_reformed;Myrdynn;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 temple_empire_of_druidic_reformed;Nation of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-;;;;;;;;;;
+;;;;;;;;;;;;;;
 job_spiritual_druidic_reformed;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
 city_job_spiritual_druidic_reformed;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
-;;;;;;;;;;
+;;;;;;;;;;;;;;
 baron_druidic;Lord;Seigneur;GERMAN;;Señor;;;;;;;;;x
 baron_female_druidic;Lady;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 barony_of_druidic;Castle of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
@@ -103,7 +103,7 @@ kingdom_of_druidic;Kingdom of;Royaume de;Königreich von;;Reino de;;;;;;;;;x
 emperor_druidic;High King;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 emperor_female_druidic;High Queen;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 empire_of_druidic;High Kingdom of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-;;;;;;;;;;
+;;;;;;;;;;;;;;
 family_palace_baron_druidic;Elder;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 family_palace_baron_female_druidic;Lady;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 city_baron_druidic;Chief;Chef;Häuptling;;Mandatario;;;;;;;;;x
@@ -119,7 +119,7 @@ city_kingdom_of_druidic;Federation of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 city_emperor_druidic;Vergobret;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 city_emperor_female_druidic;Lady;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 city_empire_of_druidic;Nation of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-;;;;;;;;;;
+;;;;;;;;;;;;;;
 temple_baron_druidic;Druid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 temple_barony_of_druidic;Sacred Grove of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 temple_count_druidic;Druid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
@@ -130,10 +130,10 @@ temple_king_druidic;Archdruid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 temple_kingdom_of_druidic;Federation of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 temple_emperor_druidic;Myrdynn;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 temple_empire_of_druidic;Nation of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-;;;;;;;;;;
+;;;;;;;;;;;;;;
 job_spiritual_druidic;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
 city_job_spiritual_druidic;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
-;;;;;;;;;;
+;;;;;;;;;;;;;;
 baron_gaelic_pagan_reformed;Chief;Chef;GERMAN;;Señor;;;;;;;;;x
 baron_female_gaelic_pagan_reformed;Lady;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 barony_of_gaelic_pagan_reformed;Tuath of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
@@ -149,7 +149,7 @@ kingdom_of_gaelic_pagan_reformed;Kingdom of;Royaume de;Königreich von;;Reino de;
 emperor_gaelic_pagan_reformed;Ard Ri;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 emperor_female_gaelic_pagan_reformed;Ard Banrion;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 empire_of_gaelic_pagan_reformed;High Kingdom of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-;;;;;;;;;;
+;;;;;;;;;;;;;;
 family_palace_baron_gaelic_pagan_reformed;Elder;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 family_palace_baron_female_gaelic_pagan_reformed;Lady;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 city_baron_gaelic_pagan_reformed;Chieftain;Chef;Häuptling;;Mandatario;;;;;;;;;x
@@ -165,7 +165,7 @@ city_kingdom_of_gaelic_pagan_reformed;Federation of;FRENCH;GERMAN;SPANISH;;;;;;;
 city_emperor_gaelic_pagan_reformed;Taoiseach;Taoiseach;;;;;;;;;;;;x
 city_emperor_female_gaelic_pagan_reformed;Lady;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 city_empire_of_gaelic_pagan_reformed;Nation of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-;;;;;;;;;;
+;;;;;;;;;;;;;;
 temple_baron_gaelic_pagan_reformed;Druid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 temple_barony_of_gaelic_pagan_reformed;Sacred Grove of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 temple_count_gaelic_pagan_reformed;Druid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
@@ -176,10 +176,10 @@ temple_king_gaelic_pagan_reformed;Archdruid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 temple_kingdom_of_gaelic_pagan_reformed;Federation of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 temple_emperor_gaelic_pagan_reformed;Myrdynn;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 temple_empire_of_gaelic_pagan_reformed;Nation of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-;;;;;;;;;;
+;;;;;;;;;;;;;;
 job_spiritual_gaelic_pagan_reformed;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
 city_job_spiritual_gaelic_pagan_reformed;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
-;;;;;;;;;;
+;;;;;;;;;;;;;;
 baron_gaelic_pagan;Chief;Chef;GERMAN;;Señor;;;;;;;;;x
 baron_female_gaelic_pagan;Lady;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 barony_of_gaelic_pagan;Tuath of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
@@ -195,7 +195,7 @@ kingdom_of_gaelic_pagan;Kingdom of;Royaume de;Königreich von;;Reino de;;;;;;;;;x
 emperor_gaelic_pagan;Ard Ri;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 emperor_female_gaelic_pagan;Ard Banrion;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 empire_of_gaelic_pagan;High Kingdom of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-;;;;;;;;;;
+;;;;;;;;;;;;;;
 family_palace_baron_gaelic_pagan;Elder;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 family_palace_baron_female_gaelic_pagan;Lady;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 city_baron_gaelic_pagan;Chieftain;Chef;Häuptling;;Mandatario;;;;;;;;;x
@@ -211,7 +211,7 @@ city_kingdom_of_gaelic_pagan;Federation of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 city_emperor_gaelic_pagan;Taoiseach;Taoiseach;;;;;;;;;;;;x
 city_emperor_female_gaelic_pagan;Lady;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 city_empire_of_gaelic_pagan;Nation of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-;;;;;;;;;;
+;;;;;;;;;;;;;;
 temple_baron_gaelic_pagan;Druid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 temple_barony_of_gaelic_pagan;Sacred Grove of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 temple_count_gaelic_pagan;Druid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
@@ -222,12 +222,12 @@ temple_king_gaelic_pagan;Archdruid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 temple_kingdom_of_gaelic_pagan;Federation of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 temple_emperor_gaelic_pagan;Myrdynn;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 temple_empire_of_gaelic_pagan;Nation of;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-;;;;;;;;;;
+;;;;;;;;;;;;;;
 job_spiritual_gaelic_pagan;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
 city_job_spiritual_gaelic_pagan;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
-;;;;;;;;;;
+;;;;;;;;;;;;;;
 title_laoch;laoch;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-title_laoch_desc;The Teaghlach (literally meaning "family") are strongly armed retainers. Known individually as laoch, these upper class warriors favour red tunics, and dress for battle in a similar style to the frankish knights, although equipped with horses, the laoch's fight on foot.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+title_laoch_desc;"The Teaghlach (literally meaning ""family"") are strongly armed retainers. Known individually as laoch, these upper class warriors favour red tunics, and dress for battle in a similar style to the frankish knights, although equipped with horses, the laoch's fight on foot.";FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 title_pagan_wizard;Court Wizard;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 title_pagan_wizard_desc;An unwashed, mysterious pagan from the countryside, his powers are unclear, but they serve to appease the more occult worries of a ruler.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 title_druid;Druid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
@@ -237,7 +237,7 @@ title_court_bard_desc;Bards were those who sang the songs recalling the tribal w
 title_royal_champion;Champion;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 title_royal_champion_desc;The best warrior of the land, the title of champion is a great honor among celtic peoples, their task is to protect their king.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 title_uchelwr;Uchelwr;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-title_uchelwr_desc;The Teulu (literally meaning "family") are strongly armed and mounted retainers. Known individually as Uchelwr, these upper class warriors favour red tunics, and dress for battle in a similar style to the frankish knights, although armed with lances, the Uchelwr's throw javelins.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+title_uchelwr_desc;"The Teulu (literally meaning ""family"") are strongly armed and mounted retainers. Known individually as Uchelwr, these upper class warriors favour red tunics, and dress for battle in a similar style to the frankish knights, although armed with lances, the Uchelwr's throw javelins.";FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 title_vates;Vates;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 title_vates_desc;The vates were one of three classes of Celtic priesthood, the other two being the druids and the bards. The Vates had the role of seers and performed sacrifices (in particular administering human sacrifice) under the presidence of a druid.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 druid;Druid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x

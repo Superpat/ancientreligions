@@ -539,7 +539,7 @@ character_event = {
 	}
 }
 
-# Son returns as excellent strategist (Son)
+# Son returns as excellent theologian (Son)
 character_event = {
 	id = ancrel.0192
 	hide_window = yes
@@ -1090,10 +1090,10 @@ character_event = {
 		name = EVTOPTAancrel.0206
 		remove_trait = learning_druidic_arts
 			random_list = {
-				25 = { add_trait = scholar }
+				30 = { add_trait = scholar }
 				25 = { add_trait = mystic }
-				25 = { add_trait = poet }
-				25 = { add_trait = druid }
+				30 = { add_trait = poet }
+				10 = { add_trait = druid }
 			}
 		prestige = 100
 		piety = 100

@@ -11,6 +11,9 @@ pagan_group = {
 		god_names = {
 			GOD_JUNO GOD_VESTA GOD_MINERVA GOD_CERES GOD_DIANA GOD_VENUS GOD_MARS GOD_MERCURY GOD_JUPITER GOD_NEPTUNE GOD_VULCAN GOD_APOLLO
 		}
+		evil_god_names = {
+			PLUTO
+		}
 		unit_modifier = {
 			levy_size = 0.3
 			
@@ -19,6 +22,7 @@ pagan_group = {
 		
 		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_THEOGONY
+		priest_title = AUGUR
 		priests_can_marry = yes
 		female_temple_holders = no
 		allow_looting = yes

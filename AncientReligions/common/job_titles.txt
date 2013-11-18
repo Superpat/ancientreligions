@@ -186,6 +186,18 @@ job_spiritual = {
 			trait = scholarly_theologian
 			trait = mastermind_theologian
 		}
+		
+		OR = {
+			if = {
+				OR = {
+					religion = druidic
+					religion = druidic_reformed
+				}
+				limit = {
+					trait = druid
+				}
+			}
+		}
 	}
 	gain_effect = {
 	}

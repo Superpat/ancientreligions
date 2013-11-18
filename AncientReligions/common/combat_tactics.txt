@@ -108,7 +108,7 @@ volly_harass_tactic = {
 				value = 0.7
 			}
 			light_troops = { 
-				who = horse_archers
+				who = archers
 				value = 0.3
 			}
 		}
@@ -123,7 +123,7 @@ volly_harass_tactic = {
 				value = 0.6
 			}
 			light_troops = { 
-				who = horse_archers
+				who = archers
 				value = 0.3
 			}
 		}
@@ -138,15 +138,15 @@ volly_harass_tactic = {
 				value = 0.5
 			}
 			light_troops = { 
-				who = horse_archers
+				who = archers
 				value = 0.3
 			}
 		}
 	}
 
-	light_cavalry_offensive = 1.8
-	horse_archers_offensive = 0.6
-	archers_offensive = -1.8
+	light_cavalry_offensive = 2.4
+	archers_offensive = 0.6
+	horse_archers_offensive = -1.8
 	enemy = {
 		group = swarm
 		factor = 1

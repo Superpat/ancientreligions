@@ -16,14 +16,21 @@ character_event = {
 	desc = EVTDESCLoR.200
 	picture = GFX_evt_bishop_byzantine
 	
+	ai = no
+	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		NOT = { has_global_flag = pat_antioch }
+		religion = orthodox
 		OR = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		NOT = { has_global_flag = pat_antioch }
 		completely_controls = c_antiocheia
+	}
+	
+	mean_time_to_happen = {
+		days = 1
 	}
 	
 	option = {
@@ -39,14 +46,21 @@ character_event = {
 	desc = EVTDESCLoR.201
 	picture = GFX_evt_bishop_byzantine
 	
+	ai = no
+	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		NOT = { has_global_flag = pat_jerusalem }
+		religion = orthodox
 		OR = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		NOT = { has_global_flag = pat_jerusalem }
 		completely_controls = c_jerusalem
+	}
+	
+	mean_time_to_happen = {
+		days = 1
 	}
 	
 	option = {
@@ -62,14 +76,21 @@ character_event = {
 	desc = EVTDESCLoR.202
 	picture = GFX_evt_bishop_byzantine
 	
+	ai = no
+	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		NOT = { has_global_flag = pat_alexandria }
+		religion = orthodox
 		OR = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		NOT = { has_global_flag = pat_alexandria }
 		completely_controls = c_alexandria
+	}
+	
+	mean_time_to_happen = {
+		days = 1
 	}
 	
 	option = {
@@ -85,14 +106,21 @@ character_event = {
 	desc = EVTDESCLoR.203
 	picture = GFX_evt_bishop_byzantine
 	
+	ai = no
+	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		NOT = { has_global_flag = pat_rome }
+		religion = orthodox
 		OR = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		NOT = { has_global_flag = pat_rome }
 		completely_controls = c_roma
+	}
+	
+	mean_time_to_happen = {
+		days = 1
 	}
 	
 	option = {

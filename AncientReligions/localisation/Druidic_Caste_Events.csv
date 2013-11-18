@@ -133,3 +133,37 @@ ancrel.0183.tooltip;Preparations for the performance are made - everybody can't 
 ancrel.0183.desc;The day of the performance has dawned. Your Bard, dressed in his finest attire, holds in his hand a kora harp - the sweet, delicate, yet powerful instrument of the Bards - as he presents himself before the community. What sort of stories will he tell? What sort of people will he mock? What ancestors will he honor? For the next few days, you and the community will bear witness to these, and more, perhaps for hours on end.\nIt is custom among the peoples of the savanna that the audience can make suggestions (or even constructive criticisms) to the Bard throughout his performance. Since you are the highest-ranked member of the community present, your Bard allows you to make a suggestion first. “What would I like to hear?” you think to yourself. There are so many things to hear of - too many, for the Bards know much. So many choices indeed!;;;;;;;;;;;;;x
 ancrel.0183.name;The Show Begins!;;;;;;;;;;;;;x
 ancrel.0183.a;I think we should start with the story about...;;;;;;;;;;;;;x
+;;;;;;;;;;;;;x
+EVTNAMEancrel.01843;Coming of age;;;;;;;;;;;;;x
+EVTDESCancrel.0183;Coming of age ceremony - father's event;;;;;;;;;;;;;x
+EVTOPTAancrel.0183;Warrior;;;;;;;;;;;;;x
+EVTOPTBancrel.0183;Druid;;;;;;;;;;;;;x
+EVTNAMEancrel.0184;Coming of age;;;;;;;;;;;;;x
+EVTDESCancrel.0184;Coming of age ceremony - child's event;;;;;;;;;;;;;x
+EVTOPTAancrel.0184;Ok;;;;;;;;;;;;;x
+EVTNAMEancrel.0185;The Path of the Druids;;;;;;;;;;;;;x
+EVTDESCancrel.0185;Training about to begin;;;;;;;;;;;;;x
+EVTOPTAancrel.0185;Ok;;;;;;;;;;;;;x
+EVTDESCancrel.0187;Son wants to become a druid;;;;;;;;;;;;;x
+EVTOPTAancrel.0187;No;;;;;;;;;;;;;x
+EVTOPTBancrel.0187;Yes;;;;;;;;;;;;;x
+EVTDESCancrel.0189;Son returns scarred;;;;;;;;;;;;;x
+EVTOPTAancrel.0189;Ok;;;;;;;;;;;;;x
+EVTDESCancrel.0191;Son returns maimed;;;;;;;;;;;;;x
+EVTOPTAancrel.0191;Ok;;;;;;;;;;;;;x
+EVTDESCancrel.0193;Son returns as excellent theologian;;;;;;;;;;;;;x
+EVTOPTAancrel.0193;Ok;;;;;;;;;;;;;x
+EVTDESCancrel.0195;Son is touched by the gods;;;;;;;;;;;;;x
+EVTOPTAancrel.0195;Ok;;;;;;;;;;;;;x
+EVTDESCancrel.0197;Son returns home with strange child;;;;;;;;;;;;;x
+EVTOPTAancrel.0197;Ok;;;;;;;;;;;;;x
+EVTDESCancrel.0199;Son returns home as a zealot;;;;;;;;;;;;;x
+EVTOPTAancrel.0199;Ok;;;;;;;;;;;;;x
+EVTDESCancrel.0201;Son returns home with the patience of an oak tree;;;;;;;;;;;;;x
+EVTOPTAancrel.0201;Ok;;;;;;;;;;;;;x
+EVTDESCancrel.0203;Son dies in training;;;;;;;;;;;;;x
+EVTOPTAancrel.0203;Ok;;;;;;;;;;;;;x
+EVTDESCancrel.0205;Son returns with gifts;;;;;;;;;;;;;x
+EVTOPTAancrel.0205;Ok;;;;;;;;;;;;;x
+EVTDESCancrel.0206;Father dies, Player Son is heir;;;;;;;;;;;;;x
+EVTOPTAancrel.0206;Ok;;;;;;;;;;;;;x

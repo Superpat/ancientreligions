@@ -236,7 +236,7 @@ character_event = {
 		custom_tooltip = {
 			text = honor_dead_tailteann
 			hidden_tooltip = { 
-				character_event = { id = ancrel.1197 days = 2 } 
+				narrative_event = { id = ancrel.1197 days = 2 }
 			}
 		}
 	}
@@ -252,7 +252,7 @@ character_event = {
 		custom_tooltip = {
 			text = honor_dead_tailteann
 			hidden_tooltip = { 
-				character_event = { id = ancrel.1198 days = 2 } 
+				narrative_event = { id = ancrel.1198 days = 2 }
 			}
 		}
 	}
@@ -453,7 +453,7 @@ character_event = {
 		trigger = {
 			trait = fian
 		}
-		custom_tooltip = 
+		custom_tooltip = { 
 			text = give_laws_ollam
 			add_character_modifier = {
 				name = favored_fianna

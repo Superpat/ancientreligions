@@ -24,12 +24,16 @@ decisions = {
 			prisoner = no
 		}
 		effect = {
-			scaled_wealth = -0.20
-			set_character_flag = holding_divination
-			hidden_tooltip = { 
-				character_event = { id = ancrel.0020 }
-			}
-			custom_tooltip = prepare_divination
+			custom_tooltip = {
+				text = prepare_divination
+				
+				scaled_wealth = -0.20
+				set_character_flag = holding_divination
+				
+				hidden_tooltip = {
+					character_event = { id = ancrel.0020 }
+				}
+			}	
 		}
 		revoke_allowed = {
 			always = no
@@ -58,6 +62,7 @@ decisions = {
 			is_ruler = yes
 			age = 16
 			prisoner = no
+			culture_group = celtic
 			NOT = {
 				has_character_flag = adopted_celtic_rites
 				OR = {
@@ -85,11 +90,14 @@ decisions = {
 			}
 		}
 		effect = {
-			scaled_wealth = -0.10
-			set_character_flag = adopted_celtic_rites
-			custom_tooltip = adopt_celtic_rites
-			hidden_tooltip = {
-				character_event = { id = ancrel.0001 }
+			custom_tooltip = {
+				text = adopt_celtic_rites
+				
+				scaled_wealth = -0.10
+				set_character_flag = adopted_celtic_rites
+				hidden_tooltip = {
+					character_event = { id = ancrel.0001 }
+				}
 			}
 		}
 		ai_will_do = {
@@ -108,16 +116,15 @@ decisions = {
 	organize_gwydion = {
 		is_high_prio = yes
 		potential = {
-			AND = {
-				OR = {
-					tier = duke
-					tier = king
-					tier = emperor
-				}
-				OR = {
-					religion = druidic
-					religion = druidic_reformed
-				}				
+			OR = {
+				tier = duke
+				tier = king
+				tier = emperor
+			}
+			OR = {
+				religion = druidic
+				religion = druidic_reformed
+
 			}
 			prisoner = no
 			age = 16

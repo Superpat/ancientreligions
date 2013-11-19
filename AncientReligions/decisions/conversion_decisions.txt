@@ -141,6 +141,16 @@ decisions = {
 			religion_authority = {
 				modifier = ruler_converted_from
 			}
+			
+			if = {
+				limit = { religion_group = pagan_group }
+				add_trait = sympathy_pagans
+			}
+			if = {
+				limit = { religion_group = zoroastrian_group }
+				add_trait = sympathy_zoroastrianism
+			}
+			
 			any_war = {
 				limit = {
 					defender = { character = ROOT }
@@ -603,19 +613,26 @@ decisions = {
 			modifier = { # Do not flip if we're in a huge Norse empire
 				factor = 0
 				top_liege = { culture = norse }
-				290 = { # Uppland
-					owner = {
-						same_realm = ROOT
+				OR = {
+					top_liege = {
+						tier = emperor
 					}
-				}
-				272 = { # Akershus
-					owner = {
-						same_realm = ROOT
-					}
-				}
-				266 = { # Sjaelland
-					owner = {
-						same_realm = ROOT
+					AND = {
+						290 = { # Uppland
+							owner = {
+								same_realm = ROOT
+							}
+						}
+						272 = { # Akershus
+							owner = {
+								same_realm = ROOT
+							}
+						}
+						266 = { # Sjaelland
+							owner = {
+								same_realm = ROOT
+							}
+						}
 					}
 				}
 			}
@@ -814,6 +831,25 @@ decisions = {
 				modifier = ruler_converted_from
 			}
 			
+			if = {
+				limit = {
+					trait = cynical
+				}
+				random = {
+					chance = 60
+					add_trait = sympathy_pagans
+				}
+			}
+			if = {
+				limit = {
+					NOT = { trait = cynical }
+				}
+				random = {
+					chance = 50
+					add_trait = sympathy_pagans
+				}
+			}		
+			
 			religion = catholic
 			
 			hidden_tooltip = {
@@ -861,6 +897,25 @@ decisions = {
 			religion_authority = {
 				modifier = ruler_converted_from
 			}
+			
+			if = {
+				limit = {
+					trait = cynical
+				}
+				random = {
+					chance = 60
+					add_trait = sympathy_pagans
+				}
+			}
+			if = {
+				limit = {
+					NOT = { trait = cynical }
+				}
+				random = {
+					chance = 50
+					add_trait = sympathy_pagans
+				}
+			}		
 			
 			religion = orthodox
 			
@@ -910,6 +965,25 @@ decisions = {
 				modifier = ruler_converted_from
 			}
 			
+			if = {
+				limit = {
+					trait = cynical
+				}
+				random = {
+					chance = 60
+					add_trait = sympathy_pagans
+				}
+			}
+			if = {
+				limit = {
+					NOT = { trait = cynical }
+				}
+				random = {
+					chance = 50
+					add_trait = sympathy_pagans
+				}
+			}		
+			
 			religion = sunni
 			
 			hidden_tooltip = {
@@ -957,6 +1031,25 @@ decisions = {
 			religion_authority = {
 				modifier = ruler_converted_from
 			}
+			
+			if = {
+				limit = {
+					trait = cynical
+				}
+				random = {
+					chance = 60
+					add_trait = sympathy_pagans
+				}
+			}
+			if = {
+				limit = {
+					NOT = { trait = cynical }
+				}
+				random = {
+					chance = 50
+					add_trait = sympathy_pagans
+				}
+			}		
 			
 			religion = shiite
 			
@@ -1006,6 +1099,25 @@ decisions = {
 				modifier = ruler_converted_from
 			}
 			
+			if = {
+				limit = {
+					trait = cynical
+				}
+				random = {
+					chance = 60
+					add_trait = sympathy_pagans
+				}
+			}
+			if = {
+				limit = {
+					NOT = { trait = cynical }
+				}
+				random = {
+					chance = 50
+					add_trait = sympathy_pagans
+				}
+			}		
+			
 			religion = zoroastrian
 			
 			hidden_tooltip = {
@@ -1054,7 +1166,94 @@ decisions = {
 				modifier = ruler_converted_from
 			}
 			
+			if = {
+				limit = {
+					trait = cynical
+				}
+				random = {
+					chance = 60
+					add_trait = sympathy_pagans
+				}
+			}
+			if = {
+				limit = {
+					NOT = { trait = cynical }
+				}
+				random = {
+					chance = 50
+					add_trait = sympathy_pagans
+				}
+			}		
+			
 			religion = miaphysite
+			
+			hidden_tooltip = {
+				religion_authority = {
+					modifier = ruler_converted_to
+				}
+			}
+			piety = 200
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	# Pagans can convert to the Jewish faith if their wife or a concubine is a believer
+	convert_to_spouse_jewish = {
+		potential = {
+			has_dlc = "Sons of Abraham"
+			is_playable = yes
+			religion_group = pagan_group
+			controls_religion = no
+			NOT = { trait = zealous }
+			OR = {
+				any_spouse = {
+					religion = jewish
+					hidden_tooltip = {
+						is_alive = yes
+					}
+				}
+				any_consort = {
+					religion = jewish
+					hidden_tooltip = {
+						is_alive = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = -500
+			religion_authority = {
+				modifier = ruler_converted_from
+			}
+			
+			if = {
+				limit = {
+					trait = cynical
+				}
+				random = {
+					chance = 60
+					add_trait = sympathy_pagans
+				}
+			}
+			if = {
+				limit = {
+					NOT = { trait = cynical }
+				}
+				random = {
+					chance = 50
+					add_trait = sympathy_pagans
+				}
+			}		
+			
+			religion = jewish
 			
 			hidden_tooltip = {
 				religion_authority = {

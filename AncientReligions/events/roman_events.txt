@@ -3,7 +3,7 @@
 # Roman Events
 #
 # Event ID LoR.1 - LoR.199 reserved
-# Event ID ancrel.2220 - ancrel.2239 reserved
+# Event ID ancrel.2230 - ancrel.2239 reserved
 #
 #######################################
 
@@ -47,6 +47,10 @@ narrative_event = {
 		completely_controls = d_oultrejourdain
 	}
 	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
 	option = {
 		name = EVTOPTALoR.1
 		set_global_flag = syria_palaestina
@@ -83,6 +87,10 @@ narrative_event = {
 		completely_controls = d_nubia
 	}
 	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
 	option = {
 		name = EVTOPTALoR.1
 		set_global_flag = aegyptus
@@ -115,10 +123,14 @@ narrative_event = {
 		completely_controls = d_krete
 	}
 	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
 	option = {
 		name = EVTOPTALoR.1
 		set_global_flag = cyrenaica
-		prestige = 50
+		prestige = 100
 	}
 }
 
@@ -146,6 +158,10 @@ narrative_event = {
 		completely_controls = d_tripolitania
 		completely_controls = d_tunis
 		completely_controls = d_kabylia
+	}
+	
+	mean_time_to_happen = {
+		days = 1
 	}
 	
 	option = {
@@ -184,6 +200,10 @@ narrative_event = {
 		completely_controls = d_croatia
 		completely_controls = d_dalmatia
 		completely_controls = d_carinthia
+	}
+	
+	mean_time_to_happen = {
+		days = 1
 	}
 	
 	option = {
@@ -232,6 +252,10 @@ narrative_event = {
 		completely_controls = d_salerno
 		completely_controls = d_calabria
 	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
 	
 	option = {
 		name = EVTOPTALoR.1
@@ -263,6 +287,10 @@ narrative_event = {
 		NOT = { has_global_flag = sicilia }
 		completely_controls = d_sicily
 	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
 	
 	option = {
 		name = EVTOPTALoR.1
@@ -294,6 +322,10 @@ narrative_event = {
 		NOT = { has_global_flag = sardinia }
 		completely_controls = d_sardinia
 	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
 	
 	option = {
 		name = EVTOPTALoR.1
@@ -332,6 +364,10 @@ narrative_event = {
 		completely_controls = d_dauphine
 		completely_controls = d_provence
 	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
 	
 	option = {
 		name = EVTOPTALoR.1
@@ -378,6 +414,10 @@ narrative_event = {
 		completely_controls = d_lower_lorraine
 		completely_controls = d_alsace
 	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
 	
 	option = {
 		name = EVTOPTALoR.1
@@ -425,10 +465,14 @@ narrative_event = {
 		completely_controls = d_tyrol
 	}
 	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
 	option = {
 		name = EVTOPTALoR.1
 		set_global_flag = germania
-		prestige = 50
+		prestige = 100
 	}
 }
 
@@ -465,6 +509,10 @@ narrative_event = {
 		completely_controls = d_gwynedd
 		completely_controls = d_deheubarth
 		completely_controls = d_cornwall
+	}
+	
+	mean_time_to_happen = {
+		days = 1
 	}
 	
 	option = {
@@ -515,6 +563,10 @@ narrative_event = {
 		completely_controls = d_toledo
 	}
 	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
 	option = {
 		name = EVTOPTALoR.1
 		set_global_flag = hispania
@@ -549,7 +601,9 @@ narrative_event = {
 		completely_controls = d_alger
 		completely_controls = d_tlemcen
 	}
-	
+	mean_time_to_happen = {
+		days = 1
+	}
 	option = {
 		name = EVTOPTALoR.1
 		set_global_flag = mauretania
@@ -583,6 +637,10 @@ narrative_event = {
 		completely_controls = d_mosul
 		completely_controls = d_jazira
 	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
 	
 	option = {
 		name = EVTOPTALoR.1
@@ -619,10 +677,14 @@ narrative_event = {
 		completely_controls = d_moray
 	}
 	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
 	option = {
 		name = EVTOPTALoR.1
 		set_global_flag = caledonia
-		prestige = 50
+		prestige = 100
 	}
 }
 
@@ -654,300 +716,14 @@ narrative_event = {
 		completely_controls = d_munster
 	}
 	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
 	option = {
 		name = EVTOPTALoR.1
 		set_global_flag = hibernia
-		prestige = 50
-	}
-}
-
-### Roman Empire Restored
-
-# The Restoration of Rome (Byzantium / Latin Empire)
-narrative_event = {
-	id = LoR.20
-	title = EVTNAMELoR.20
-	desc = EVTDESCLoR.20
-	
-	picture = GFX_evt_rome_restored_byzantine
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTALoR.20
-		set_global_flag = rome_restored
-		e_roman_empire = {
-			grant_title = ROOT
-			if = {
-				limit = { ROOT = { has_landed_title = e_byzantium } }
-				copy_title_laws = e_byzantium
-				copy_title_history = e_byzantium
-				set_global_flag = rome_restored_by_byzantium
-			}
-			if = {
-				limit = {
-					ROOT = { has_landed_title = e_latin_empire }
-					NOT = { ROOT = { has_landed_title = e_byzantium } }
-				}
-				copy_title_laws = e_latin_empire
-				copy_title_history = e_latin_empire
-				set_global_flag = rome_restored_by_latin_empire
-			}
-		}
-		add_trait = augustus
-		give_nickname = nick_the_glorious
-		hidden_tooltip = {
-			e_byzantium = {
-				if = {
-					limit = { ROOT = { has_landed_title = PREV } }
-					any_direct_de_jure_vassal_title = {
-						de_jure_liege = e_roman_empire
-					}
-					destroy_landed_title = THIS
-					activate_title = { title = e_byzantium status = no }
-				}
-			}
-			e_latin_empire = {
-				if = {
-					limit = { ROOT = { has_landed_title = PREV } }
-					any_direct_de_jure_vassal_title = {
-						de_jure_liege = e_roman_empire
-					}
-					destroy_landed_title = THIS
-					activate_title = { title = e_latin_empire status = no }
-				}
-			}
-			e_hre = {
-				if = {
-					limit = { ROOT = { has_landed_title = PREV } }
-					any_direct_de_jure_vassal_title = {
-						de_jure_liege = e_roman_empire
-					}
-					destroy_landed_title = THIS
-					activate_title = { title = e_hre status = no }
-				}
-			}
-			e_italy = {
-				if = {
-					limit = { ROOT = { has_landed_title = PREV } }
-					any_direct_de_jure_vassal_title = {
-						de_jure_liege = e_roman_empire
-					}
-					destroy_landed_title = THIS
-					activate_title = { title = e_italy status = no }
-				}
-			}
-			any_playable_ruler = {
-				limit = {
-					NOT = { character = ROOT }
-					ai = no
-				}
-				narrative_event = { id = LoR.21 }
-			}
-		}
-	}
-}
-
-# Informed about Restoration of Rome (Byzantium / Latin Empire)
-narrative_event = {
-	id = LoR.21
-	title = EVTNAMELoR.21
-	desc = EVTDESCLoR.21
-	
-	picture = GFX_evt_rome_restored_byzantine
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTALoR.21
-		trigger = {
-			NOT = { has_landed_title = e_hre }
-			NOT = { has_landed_title = e_byzantium }
-			NOT = { has_landed_title = e_latin_empire }
-		}
-	}
-	option = {
-		name = EVTOPTBLoR.21
-		trigger = {
-			OR = {
-				has_landed_title = e_hre
-				has_landed_title = e_byzantium
-				has_landed_title = e_latin_empire
-			}
-		}
-		prestige = -500
-	}
-}
-
-# The Restoration of Rome (HRE)
-narrative_event = {
-	id = ancrel.2220
-	title = EVTNAMELoR.20
-	desc = EVTDESCancrel.2220
-	
-	picture = GFX_evt_rome_restored_byzantine
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTALoR.20
-		set_global_flag = rome_restored
-		set_global_flag = rome_restored_by_hre
-		e_roman_empire = {
-			grant_title = ROOT
-			copy_title_laws = e_hre
-			copy_title_history = e_hre
-		}
-		add_trait = augustus
-		give_nickname = nick_the_glorious
-		hidden_tooltip = {
-			e_hre = {
-				any_direct_de_jure_vassal_title = {
-					de_jure_liege = e_roman_empire
-				}
-				destroy_landed_title = THIS
-				activate_title = { title = e_hre status = no }
-			}
-			e_italy = {
-				if = {
-					limit = { ROOT = { has_landed_title = PREV } }
-					any_direct_de_jure_vassal_title = {
-						de_jure_liege = e_roman_empire
-					}
-					destroy_landed_title = THIS
-					activate_title = { title = e_italy status = no }
-				}
-			}
-			any_playable_ruler = {
-				limit = {
-					NOT = { character = ROOT }
-					ai = no
-				}
-				narrative_event = { id = ancrel.2221 }
-			}
-		}
-	}
-}
-
-# Informed about Restoration of Rome (HRE)
-narrative_event = {
-	id = ancrel.2221
-	title = EVTNAMELoR.21
-	desc = EVTDESCancrel.2221
-	
-	picture = GFX_evt_rome_restored_byzantine
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTALoR.21
-		trigger = {
-			NOT = { has_landed_title = e_byzantium }
-			NOT = { has_landed_title = e_latin_empire }
-		}
-	}
-	option = {
-		name = EVTOPTBLoR.21
-		trigger = {
-			OR = {
-				has_landed_title = e_byzantium
-				has_landed_title = e_latin_empire
-			}
-		}
-		prestige = -500
-	}
-}
-
-# The Creation of a new Rome
-narrative_event = {
-	id = ancrel.2222
-	title = EVTNAMELoR.20
-	desc = EVTDESCancrel.2222
-	
-	picture = GFX_evt_rome_restored_byzantine
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTALoR.20
-		set_global_flag = rome_restored
-		set_global_flag = rome_recreated
-		primary_title = {
-			e_roman_empire = {
-				grant_title = ROOT
-				copy_title_laws = PREV
-			}
-		}
-		add_trait = augustus
-		give_nickname = nick_the_glorious
-		hidden_tooltip = {
-			e_byzantium = {
-				destroy_landed_title = THIS
-				activate_title = { title = e_byzantium status = no }
-			}
-			e_latin_empire = {
-				destroy_landed_title = THIS
-				activate_title = { title = e_latin_empire status = no }
-			}
-			e_hre = {
-				destroy_landed_title = THIS
-				activate_title = { title = e_hre status = no }
-			}
-			e_italy = {
-				if = {
-					limit = { ROOT = { has_landed_title = PREV } }
-					any_direct_de_jure_vassal_title = {
-						de_jure_liege = e_roman_empire
-					}
-					destroy_landed_title = THIS
-					activate_title = { title = e_italy status = no }
-				}
-			}
-			k_italy = {
-				if = {
-					limit = {
-						OR = {
-							owner = { is_liege_or_above = ROOT }
-							ROOT = { has_landed_title = PREV }
-						}
-					}
-					de_jure_liege = e_roman_empire
-				}
-			}
-			k_sicily = {
-				if = {
-					limit = {
-						OR = {
-							owner = { is_liege_or_above = ROOT }
-							ROOT = { has_landed_title = PREV }
-						}
-					}
-					de_jure_liege = e_roman_empire
-				}
-			}
-			any_playable_ruler = {
-				limit = {
-					NOT = { character = ROOT }
-					ai = no
-				}
-				narrative_event = { id = ancrel.2223 }
-			}
-		}
-	}
-}
-
-# Informed about Creation of a new Rome
-narrative_event = {
-	id = ancrel.2223
-	title = EVTNAMELoR.21
-	desc = EVTDESCancrel.2223
-	
-	picture = GFX_evt_rome_restored_byzantine
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTALoR.21
+		prestige = 100
 	}
 }
 
@@ -1025,7 +801,6 @@ character_event = {
 					}
 					character_event = { id = LoR.32 }
 				}
-
 			}
 		}
 	}
@@ -1055,6 +830,10 @@ narrative_event = {
 	picture = GFX_evt_rome_restored_byzantine
 	
 	ai = no
+	
+	immediate = {
+		set_character_flag = achievement_spqr
+	}
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
@@ -1234,6 +1013,10 @@ narrative_event = {
 		completely_controls = d_coloneia
 		completely_controls = d_mesopotamia
 	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
 	
 	option = {
 		name = EVTOPTALoR.40
@@ -1252,10 +1035,14 @@ character_event = {
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		has_global_flag = rome_restored
 		has_landed_title = e_roman_empire
 		NOT = { trait = augustus }
 	}
 	
+	mean_time_to_happen = {
+		days = 1
+	}
 	option = {
 		name = EVTOPTALoR.45
 		add_trait = augustus
@@ -1270,9 +1057,14 @@ character_event = {
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		has_global_flag = rome_restored
 		trait = augustus
 		NOT = { has_landed_title = e_roman_empire }
 		is_alive = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
 	}
 	
 	option = {

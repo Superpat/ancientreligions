@@ -1,0 +1,39 @@
+### Hellenic Pagan
+#
+#b_lebedos = {
+#	# Temple of Artemis at Ephesus
+#	holy_site = hellenic_pagan
+#}
+#b_lampsakos = {
+#	remove_holy_site = hellenic_pagan
+#}
+#b_piraeaus = {
+#	remove_holy_site = hellenic_pagan
+#}
+#b_pyrgos = {
+#	# Statue of Zeus at Olympia
+#	holy_site = hellenic_pagan
+#}
+
+### Druidic Pagan
+
+b_locmine = {
+	holy_site = druidic
+	holy_site = druidic_reformed
+}
+b_waltham = {
+	holy_site = druidic
+	holy_site = druidic_reformed
+}
+b_bangor_fawr = {
+	holy_site = druidic
+	holy_site = druidic_reformed
+}
+b_whithorn = {
+	holy_site = druidic
+	holy_site = druidic_reformed
+}
+b_mellifont = {
+	holy_site = druidic
+	holy_site = druidic_reformed
+}

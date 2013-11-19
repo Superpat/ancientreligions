@@ -13,7 +13,7 @@ character_event = {
 		NOT = { trait = berserker }
 	}
 
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 1.5
@@ -191,7 +191,7 @@ character_event = {
 		is_alive = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		
 		modifier = {
@@ -353,7 +353,7 @@ character_event = {
 		is_alive = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		
 		modifier = {
@@ -514,7 +514,7 @@ character_event = {
 		is_alive = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		
 		modifier = {
@@ -679,7 +679,7 @@ character_event = {
 		}
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 1.5
@@ -837,7 +837,7 @@ character_event = {
 		NOT = { martial = 10 }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 1.5
@@ -978,7 +978,7 @@ character_event = {
 		}
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 1.5
@@ -1110,6 +1110,7 @@ character_event = {
 	trigger = {
 		is_alive = yes
 	}
+
 	option = {
 		name = EVTOPTA249
 	}
@@ -1130,7 +1131,7 @@ character_event = {
 		NOT = { trait = craven }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		
 		modifier = {
@@ -1266,7 +1267,7 @@ character_event = {
 		NOT = { trait = craven }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			trait = clubfooted
@@ -1416,7 +1417,7 @@ character_event = {
 		NOT = { trait = patient }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 	}
 
@@ -1441,7 +1442,7 @@ character_event = {
 		NOT = { trait = patient }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 	}
 
@@ -1462,7 +1463,7 @@ character_event = {
 		is_alive = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 1.5
@@ -1611,7 +1612,7 @@ character_event = {
 		is_alive = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 1.5
@@ -1825,7 +1826,7 @@ character_event = {
 	option = {
 		name = EVTOPTA262
 		prestige = 100
-hidden_tooltip = {
+		hidden_tooltip = {
 			if = {
 				limit = {
 					OR = {
@@ -1908,7 +1909,7 @@ character_event = {
 	option = {
 		name = EVTOPTA262
 		prestige = 100
-hidden_tooltip = {
+		hidden_tooltip = {
 			if = {
 				limit = {
 					OR = {
@@ -1991,7 +1992,7 @@ character_event = {
 	option = {
 		name = EVTOPTA262
 		prestige = 100
-hidden_tooltip = {
+		hidden_tooltip = {
 			if = {
 				limit = {
 					OR = {
@@ -2163,7 +2164,7 @@ character_event = {
 		}
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 
 		modifier = {
@@ -2336,7 +2337,7 @@ character_event = {
 		trait = cruel
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 	}
 	
@@ -2412,7 +2413,7 @@ character_event = {
 		is_alive = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 1.5
@@ -2625,7 +2626,7 @@ character_event = {
 		is_alive = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 1.5
@@ -2819,7 +2820,7 @@ character_event = {
 		is_alive = yes
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 1.5

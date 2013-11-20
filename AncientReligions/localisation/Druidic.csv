@@ -15,6 +15,11 @@ druidic_DESC;Celtic paganism is one of the last surviving branch of the ancient 
 druidic_reformed_DESC;The reformed Celtic faith has a standardized liturgy etched on the many raised stones on the British Isles, telling the story of the Tuatha De Danann.. It is led by the circle of the Druids with the Arch-Druid as the religious leader of the faithful. Defining features in-game:\n§Y*§! Can raid neighbors for loot\n§Y*§! The Arch-Druid can call Great Holy Wars;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 THE_STONES;The Sacred Stones;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 THE_BALLADS;The Ballads;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+DRUID;Druid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+THE_FOMORIANS;The Fomorians;FRENCH;GERMAN;SPANISH;;;;;;;;;;;;;x
+EVIL_BALOR;Balor;FRENCH;GERMAN;SPANISH;;;;;;;;;;;;x
+EVIL_BRES;Bres;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+GOD_CAILLEACH;Cailleach;FRENCH;GERMAN;SPANISH;;;;;;;;x
 d_druidic_reformed;The Circle of Druids;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 ARCH_DRUID;Arch Druid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 ARCH_DRUID_female;Arch Druidesse;FRENCH;GERMAN;SPANISH;;;;;;;;;;x

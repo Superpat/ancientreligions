@@ -1,0 +1,147 @@
+pagan_group = {
+	hellenic_pagan = {
+		graphical_culture = westerngfx
+		
+		pre_reformed = yes
+
+		icon = 37
+		heresy_icon = 49
+		
+		color = { 0.6 0.1 0.1 }
+		god_names = {
+			GOD_JUNO GOD_VESTA GOD_MINERVA GOD_CERES GOD_DIANA GOD_VENUS GOD_MARS GOD_MERCURY GOD_JUPITER GOD_NEPTUNE GOD_VULCAN GOD_APOLLO
+		}
+		evil_god_names = {
+			GOD_PLUTO
+		}
+		unit_modifier = {
+			levy_size = 0.3
+			
+			key = "OFF_RELIGION"
+		}
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_THEOGONY
+		priest_title = AUGUR
+		priests_can_marry = yes
+		female_temple_holders = no
+		allow_looting = yes
+		max_consorts = 3
+		
+		can_call_crusade = yes
+		
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
+	}
+	
+	druidic_reformed = {
+		graphical_culture = norsegfx
+		
+		icon = 38
+		heresy_icon = 39
+		
+		color = { 0.2 0.6 0.03 }
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_STONES
+		priest_title = DRUID
+		god_names = {
+			GOD_ANGUS GOD_MANANNAN GOD_DAGHDA GOD_LUGH GOD_MACHA GOD_DANA GOD_NUADA
+		}
+		evil_god_names = {
+			THE_FOMORIANS EVIL_BALOR EVIL_BRES GOD_CAILLEACH
+		}
+		
+		unit_modifier = {	
+			levy_size = 0.15
+			
+			retinuesize_perc = 0.3
+			garrison_size = 0.2
+			
+			key = "HERO_RELIGION"
+		}
+		unit_home_modifier = {
+			land_morale = 0.4
+			light_infantry_defensive = 0.4
+			heavy_infantry_defensive = 0.4
+			pikemen_defensive = 0.4
+			light_cavalry_defensive = 0.4
+			knights_defensive = 0.4
+			archers_defensive = 0.4
+			horse_archers_defensive = 0.4
+			
+			garrison_size = 0.2
+			
+			key = "HERO_RELIGION_HOME_TERRITORY"
+		}
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		allow_looting = yes
+		max_consorts = 3
+		
+		aggression = 1.5 # AI aggression factor
+		
+		short_reign_opinion_year_mult = 4 # The default is 2
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+	}
+	
+	druidic = {
+		graphical_culture = norsegfx
+		
+		icon = 37
+		heresy_icon = 39
+		
+		color = { 0.14 0.36 0.16 }
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_BALLADS
+		priest_title = DRUID
+		god_names = {
+			GOD_ANGUS GOD_MANANNAN GOD_DAGHDA GOD_LUGH GOD_MACHA GOD_DANA GOD_NUADA
+		}
+		evil_god_names = {
+			THE_FOMORIANS EVIL_BALOR EVIL_BRES GOD_CAILLEACH
+		}
+		
+		unit_modifier = {	
+			levy_size = 0.15
+			
+			retinuesize_perc = 0.3	
+			garrison_size = 0.2
+			
+			key = "HERO_RELIGION"
+		}
+		unit_home_modifier = {
+			land_morale = 0.6
+			light_infantry_defensive = 0.6
+			heavy_infantry_defensive = 0.6
+			pikemen_defensive = 0.6
+			light_cavalry_defensive = 0.6
+			knights_defensive = 0.6
+			archers_defensive = 0.6
+			horse_archers_defensive = 0.6
+			
+			garrison_size = 0.2
+			
+			key = "HERO_RELIGION_HOME_TERRITORY"
+		}
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		defensive_attrition = yes
+		allow_looting = yes
+		max_consorts = 3
+		peace_prestige_loss = yes # Lose Prestige while at peace
+		raised_vassal_opinion_loss = no
+		
+		reformed = druidic_reformed
+		aggression = 1.5 # AI aggression factor
+		
+		
+		short_reign_opinion_year_mult = 4 # The default is 2
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+	}
+}

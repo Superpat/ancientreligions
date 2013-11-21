@@ -2389,8 +2389,10 @@ crusade = {
 			OR = {
 				religion_group = zoroastrian_group
 				religion_group = jewish_group
+				religion = hellenic_pagan
 				AND = {
 					religion_group = pagan_group
+					NOT = { religion = hellenic_pagan }
 					custom_tooltip = {
 						text = CTT_PAGAN_GHWS_UNLOCKED
 						has_global_flag = pagan_ghws_unlocked

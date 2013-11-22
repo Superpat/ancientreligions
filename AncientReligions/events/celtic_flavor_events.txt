@@ -165,6 +165,7 @@ character_event = {
 	}
 }
 
+# The banshee
 character_event = {
 	id = ancrel.1252
 	desc = EVTDESCancrel.1252
@@ -251,6 +252,8 @@ character_event = {
 	}
 }
 
+
+Bran's Voyage
 character_event = {
 	id = ancrel.1253
 	desc = EVTDESCancrel.1253
@@ -295,7 +298,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.1252
+		name = EVTOPTAancrel.1253
 		piety = 20
 		prestige = 25
 		random_list = {

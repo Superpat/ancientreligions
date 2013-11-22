@@ -18,6 +18,14 @@ decisions = {
 			any_demesne_title = {
 				is_occupied = no
 			}
+			OR = {
+				any_vassal = {
+					has_minor_title = title_court_druid
+				}
+				any_courtier = {
+					has_minor_title = title_court_druid
+				}
+			}
 			month = 5
 			NOT = { month = 11 }
 			scaled_wealth = 0.20

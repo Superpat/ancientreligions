@@ -339,6 +339,7 @@ character_event = {
 			any_vassal = {has_landed_title = c_innse_gall }
 		}
 		NOT = { religion_group = pagan_group }
+		culture_group = celtic
 	}
 
 	mean_time_to_happen = {

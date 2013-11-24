@@ -167,7 +167,8 @@ sacred_stonehenge = {
 }
 
 sacred_hill_of_uisneach = {
-	local_revolt_risk = -0.05
+	local_tax_modifier = 0.03
+	local_revolt_risk = -0.03
 	icon = 8
 }
 sacred_ring_of_brodgar = {
@@ -179,7 +180,7 @@ sacred_bear = {
 	icon = 8
 }
 sacred_horse = {
-	local_tax_modifier = -0.03
+	local_tax_modifier = 0.03
 	icon = 8
 }
 sacred_yew = {
@@ -187,11 +188,11 @@ sacred_yew = {
 	icon = 8
 }
 sacred_stag = {
-	local_tax_modifier = -0.03
+	local_tax_modifier = 0.03
 	icon = 8
 }
 sacred_dog = {
-	local_tax_modifier = -0.03
+	local_tax_modifier = 0.03
 	icon = 8
 }
 sacred_oak = {

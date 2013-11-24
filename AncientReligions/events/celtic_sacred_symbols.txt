@@ -36,6 +36,12 @@ province_event = {
 		NOT = { has_province_modifier = sacred_lake }
 		NOT = { has_province_modifier = sacred_source }
 		NOT = { has_province_modifier = sacred_river }
+		NOT = { province_id = 5 }
+		NOT = { province_id = 11 }
+		NOT = { province_id = 105 }
+		NOT = { province_id = 23 }
+		NOT = { province_id = 10 }
+		NOT = { province_id = 36 }
 	}
 	
 	mean_time_to_happen = {
@@ -128,6 +134,281 @@ province_event = {
 					duration = -1
 				}
 			}
+		}
+	}
+}
+province_event = {
+	id = ancrel.0213
+	desc = ancrel.0211.desc
+	picture = GFX_evt_journey_to_spirit_world
+	
+	trigger = {
+		owner = {
+			OR = {
+				religion = druidic
+				religion = druidic_reformed			
+			}
+		}
+		NOT = { has_province_modifier = sacred_the_giants_causeway }
+		NOT = { has_province_modifier = sacred_lia_fail }
+		NOT = { has_province_modifier = sacred_carnac }
+		NOT = { has_province_modifier = sacred_stonehenge }
+		NOT = { has_province_modifier = sacred_hill_of_uisneach }
+		NOT = { has_province_modifier = sacred_ring_of_brodgar }
+		NOT = { has_province_modifier = sacred_bear }
+		NOT = { has_province_modifier = sacred_horse }
+		NOT = { has_province_modifier = sacred_yew }
+		NOT = { has_province_modifier = sacred_stag }
+		NOT = { has_province_modifier = sacred_dog }
+		NOT = { has_province_modifier = sacred_oak }
+		NOT = { has_province_modifier = sacred_standing_stones }
+		NOT = { has_province_modifier = sacred_lake }
+		NOT = { has_province_modifier = sacred_source }
+		NOT = { has_province_modifier = sacred_river }
+		OR = {
+			province_id = 5
+			province_id = 11
+			province_id = 105
+			province_id = 23
+			province_id = 10
+			province_id = 36
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+		modifier = {
+			owner = {
+				is_alive = yes
+			}
+			factor = 0.01
+		}
+		modifier = {
+			owner = {
+				OR = {
+					is_female = yes
+					is_female = no
+				}
+			}
+			factor = 0.01
+		}
+		modifier = {
+			owner = {
+				OR = {
+					is_ruler = yes
+					is_ruler = no
+				}
+			}
+			factor = 0.01
+		}
+	}
+	option = {
+		name = ancrel.0211.a
+		IF = {
+			limit = { province_id = 5 }
+			add_province_modifier = {
+				name = sacred_the_giants_causeway
+				duration = -1
+			}
+		}
+		IF = {
+			limit = { province_id = 11 }
+			add_province_modifier = {
+				name = sacred_lia_fail
+				duration = -1
+			}
+		}
+		IF = {
+			limit = { province_id = 105 }
+			add_province_modifier = {
+				name = sacred_carnac
+				duration = -1
+			}
+		}
+		IF = {
+			limit = { province_id = 23 }
+			add_province_modifier = {
+				name = sacred_stonehenge
+				duration = -1
+			}
+		}
+		IF = {
+			limit = { province_id = 10 }
+			add_province_modifier = {
+				name = sacred_hill_of_uisneach
+				duration = -1
+			}
+		}
+		IF = {
+			limit = { province_id = 36 }
+			add_province_modifier = {
+				name = sacred_ring_of_brodgar
+				duration = -1
+			}
+		}
+	}
+}
+# Remove holy symbol
+
+province_event = {
+	id = ancrel.0212
+	desc = ancrel.0212.desc
+	picture = GFX_evt_journey_to_spirit_world
+	
+		trigger = {
+		owner = {
+			NOT = {
+				OR = {
+					religion = druidic
+					religion = druidic_reformed			
+				}
+			}
+		}
+		OR = {
+			has_province_modifier = sacred_the_giants_causeway
+			has_province_modifier = sacred_lia_fail
+			has_province_modifier = sacred_carnac
+			has_province_modifier = sacred_stonehenge
+			has_province_modifier = sacred_hill_of_uisneach
+			has_province_modifier = sacred_ring_of_brodgar
+			has_province_modifier = sacred_bear
+			has_province_modifier = sacred_horse
+			has_province_modifier = sacred_yew
+			has_province_modifier = sacred_stag
+			has_province_modifier = sacred_dog
+			has_province_modifier = sacred_oak
+			has_province_modifier = sacred_standing_stones
+			has_province_modifier = sacred_lake
+			has_province_modifier = sacred_source
+			has_province_modifier = sacred_river
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		modifier = {
+			owner = {
+				is_alive = yes
+			}
+			factor = 0.01
+		}
+		modifier = {
+			owner = {
+				OR = {
+					is_female = yes
+					is_female = no
+				}
+			}
+			factor = 0.01
+		}
+		modifier = {
+			owner = {
+				OR = {
+					is_ruler = yes
+					is_ruler = no
+				}
+			}
+			factor = 0.01
+		}
+	}
+	
+	option = {
+		name = ancrel.0212.a
+		if = {
+			limit = {
+				has_province_modifier = sacred_the_giants_causeway
+			}
+			remove_province_modifier = sacred_the_giants_causeway
+		}
+		if = {
+			limit = {
+				has_province_modifier = sacred_lia_fail
+			}
+			remove_province_modifier = sacred_lia_fail
+		}
+		if = {
+			limit = {
+				has_province_modifier = sacred_carnac
+			}
+			remove_province_modifier = sacred_carnac
+		}
+		if = {
+			limit = {
+				has_province_modifier = sacred_stonehenge
+			}
+			remove_province_modifier = sacred_stonehenge
+		}
+		if = {
+			limit = {
+				has_province_modifier = sacred_hill_of_uisneach
+			}
+			remove_province_modifier = sacred_hill_of_uisneach
+		}
+		if = {
+			limit = {
+				has_province_modifier = sacred_ring_of_brodgar
+			}
+			remove_province_modifier = sacred_ring_of_brodgar
+		}
+		if = {
+			limit = {
+				has_province_modifier = sacred_bear
+			}
+			remove_province_modifier = sacred_bear
+		}
+		if = {
+			limit = {
+				has_province_modifier = sacred_horse
+			}
+			remove_province_modifier = sacred_horse
+		}
+		if = {
+			limit = {
+				has_province_modifier = sacred_yew
+			}
+			remove_province_modifier = sacred_yew
+		}
+		if = {
+			limit = {
+				has_province_modifier = sacred_stag
+			}
+			remove_province_modifier = sacred_stag
+		}
+		if = {
+			limit = {
+				has_province_modifier = sacred_dog
+			}
+			remove_province_modifier = sacred_dog
+		}
+		if = {
+			limit = {
+				has_province_modifier = sacred_oak
+			}
+			remove_province_modifier = sacred_oak
+		}
+		if = {
+			limit = {
+				has_province_modifier = sacred_standing_stones
+			}
+			remove_province_modifier = sacred_standing_stones
+		}
+		if = {
+			limit = {
+				has_province_modifier = sacred_lake
+			}
+			remove_province_modifier = sacred_lake
+		}
+		if = {
+			limit = {
+				has_province_modifier = sacred_source
+			}
+			remove_province_modifier = sacred_source
+		}
+		if = {
+			limit = {
+				has_province_modifier = sacred_river
+			}
+			remove_province_modifier = sacred_river
 		}
 	}
 }

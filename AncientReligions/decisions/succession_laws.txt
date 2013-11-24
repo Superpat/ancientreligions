@@ -295,6 +295,7 @@ succession_laws = {
 						NOT = { religion = aztec }
 						NOT = { religion = pagan }
 						NOT = { religion = slavic_pagan }
+						NOT = { religion = west_african_pagan }
 					}
 				}
 				
@@ -586,7 +587,12 @@ gender_laws = {
 			is_primary_type_title = no
 		}
 		allow = {
-			holder_scope = { culture = basque }
+			holder_scope = {
+				OR = {
+					culture = basque
+					religion = cathar
+				}
+			}
 		}
 		effect = {
 			gender_succ = true_cognatic

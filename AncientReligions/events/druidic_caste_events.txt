@@ -1296,12 +1296,19 @@ character_event = {
 		any_vassal = {
 			limit = {
 				has_minor_title = title_court_bard
-bard		name = ancrel.0155.b
-		prestige = 1
-	}	
-	option = { # Different Suggestion
-		name = ancrel.0155.c
-		prestige = 1
+			}
+			prestige = 10
+		}
+		add_character_modifier = {
+			name = "bard_performance_timer"
+			duration = 2190
+			hidden = yes
+		}
+		add_character_modifier = {
+			name = held_bard_performance
+			duration = 365
+		}
+		clr_character_flag = hosting_bardic_performance
 	}
 	
 }

@@ -56,7 +56,6 @@ character_event = {
 			culture = ROOT
 			trait = mystic
 			trait = scholarly_theologian
-			}
 		}
 		new_character = {
 			give_minor_title = title_pagan_wizard

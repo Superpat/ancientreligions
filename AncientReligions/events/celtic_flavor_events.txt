@@ -253,7 +253,7 @@ character_event = {
 }
 
 
-Bran's Voyage
+# Bran's Voyage
 character_event = {
 	id = ancrel.1253
 	desc = EVTDESCancrel.1253

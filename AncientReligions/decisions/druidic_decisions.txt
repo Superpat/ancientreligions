@@ -222,7 +222,7 @@ decisions = {
 		ai_will_do = {
 			factor = 1
 		}
-	
+	}
 	
 	invite_druid_to_court = { #Invite a Druid to court
 		potential = {

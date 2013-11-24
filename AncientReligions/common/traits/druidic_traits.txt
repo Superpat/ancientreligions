@@ -136,4 +136,3 @@ learning_druidic_arts = {
 	
 	pilgrimage = yes # Will need a regent, but can still be guardian to children
 }
-}

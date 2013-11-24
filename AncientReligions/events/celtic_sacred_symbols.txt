@@ -1,0 +1,133 @@
+##################################################################
+#
+# Celtic sacred symbols Events
+#
+##################################################################
+
+namespace = ancrel
+
+#Set up holy symbol
+
+province_event = {
+	id = ancrel.0211
+	desc = ancrel.0211.desc
+	picture = GFX_evt_journey_to_spirit_world
+	
+	trigger = {
+		owner = {
+			OR = {
+				religion = druidic
+				religion = druidic_reformed			
+			}
+		}
+		NOT = { has_province_modifier = sacred_the_giants_causeway }
+		NOT = { has_province_modifier = sacred_lia_fail }
+		NOT = { has_province_modifier = sacred_carnac }
+		NOT = { has_province_modifier = sacred_stonehenge }
+		NOT = { has_province_modifier = sacred_hill_of_uisneach }
+		NOT = { has_province_modifier = sacred_ring_of_brodgar }
+		NOT = { has_province_modifier = sacred_bear }
+		NOT = { has_province_modifier = sacred_horse }
+		NOT = { has_province_modifier = sacred_yew }
+		NOT = { has_province_modifier = sacred_stag }
+		NOT = { has_province_modifier = sacred_dog }
+		NOT = { has_province_modifier = sacred_oak }
+		NOT = { has_province_modifier = sacred_standing_stones }
+		NOT = { has_province_modifier = sacred_lake }
+		NOT = { has_province_modifier = sacred_source }
+		NOT = { has_province_modifier = sacred_river }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		modifier = {
+			owner = {
+				is_alive = yes
+			}
+			factor = 0.01
+		}
+		modifier = {
+			owner = {
+				OR = {
+					is_female = yes
+					is_female = no
+				}
+			}
+			factor = 0.01
+		}
+		modifier = {
+			owner = {
+				OR = {
+					is_ruler = yes
+					is_ruler = no
+				}
+			}
+			factor = 0.01
+		}
+	}
+	option = {
+		name = ancrel.0211.a
+		random_list = {
+			10 = {
+				add_province_modifier = {
+					name = sacred_bear
+					duration = -1
+				}
+			}
+			10 = {
+				add_province_modifier = {
+					name = sacred_horse
+					duration = -1
+				}
+			}
+			10 = {
+				add_province_modifier = {
+					name = sacred_yew
+					duration = -1
+				}
+			}
+			10 = {
+				add_province_modifier = {
+					name = sacred_stag
+					duration = -1
+				}
+			}
+			10 = {
+				add_province_modifier = {
+					name = sacred_dog
+					duration = -1
+				}
+			}
+			10 = {
+				add_province_modifier = {
+					name = sacred_oak
+					duration = -1
+				}
+			}
+			10 = {
+				add_province_modifier = {
+					name = sacred_standing_stones
+					duration = -1
+				}
+			}
+			10 = {
+				add_province_modifier = {
+					name = sacred_lake
+					duration = -1
+				}
+			}
+			10 = {
+				add_province_modifier = {
+					name = sacred_source
+					duration = -1
+				}
+			}
+			10 = {
+				add_province_modifier = {
+					name = sacred_river
+					duration = -1
+				}
+			}
+		}
+	}
+}

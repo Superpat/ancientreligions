@@ -590,7 +590,9 @@ gender_laws = {
 				OR = {
 					culture = basque
 					religion = druidic
-					religion = druidic_reformed}
+					religion = druidic_reformed
+					religion = cathar
+				}
 			}
 		}
 		effect = {

@@ -142,3 +142,79 @@ favored_birds = {
 	monthly_character_piety = 0.15
 	icon = 10
 }
+
+#####################################################################
+# Sacred Symbols
+#####################################################################
+sacred_the_giants_causeway = {
+	local_revolt_risk = -0.05
+	icon = 8
+}
+
+sacred_lia_fail = {
+	local_revolt_risk = -0.05
+	icon = 8
+}
+
+sacred_carnac = {
+	local_tax_modifier = 0.05
+	icon = 8
+}
+
+sacred_stonehenge = {
+	local_tax_modifier = 0.05
+	icon = 8
+}
+
+sacred_hill_of_uisneach = {
+	local_revolt_risk = -0.05
+	icon = 8
+}
+sacred_ring_of_brodgar = {
+	local_revolt_risk = -0.05
+	icon = 8
+}
+sacred_bear = {
+	local_revolt_risk = -0.03
+	icon = 8
+}
+sacred_horse = {
+	local_tax_modifier = -0.03
+	icon = 8
+}
+sacred_snake = {
+	local_revolt_risk = -0.03
+	icon = 8
+}
+sacred_stag = {
+	local_tax_modifier = -0.03
+	icon = 8
+}
+sacred_dog = {
+	local_tax_modifier = -0.03
+	icon = 8
+}
+sacred_oak = {
+	local_revolt_risk = -0.03
+	icon = 8
+}
+sacred_standing_stones = {
+	local_revolt_risk = -0.02
+	local_tax_modifier = 0.02
+	icon = 8
+}
+sacred_lake = {
+	local_revolt_risk = -0.02
+	local_tax_modifier = 0.02
+	icon = 8
+}
+sacred_source = {
+	local_revolt_risk = -0.02
+	local_tax_modifier = 0.02
+	icon = 8
+}
+sacred_river = {
+	local_revolt_risk = -0.02
+	local_tax_modifier = 0.02
+	icon = 8
+}

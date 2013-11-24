@@ -182,7 +182,7 @@ sacred_horse = {
 	local_tax_modifier = -0.03
 	icon = 8
 }
-sacred_snake = {
+sacred_yew = {
 	local_revolt_risk = -0.03
 	icon = 8
 }

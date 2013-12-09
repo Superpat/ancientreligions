@@ -32,6 +32,18 @@ job_chancellor = {
 			}
 			has_character_flag = special_chancellor
 		}
+		OR = {
+			AND = {
+				OR = {
+						religion = druidic
+						religion = druidic_reformed
+				}
+				OR = {
+						trait = druid
+						trait = poet
+				}
+			}
+		}
 		
 		prisoner = no
 		NOT = { trait = incapable }
@@ -237,14 +249,12 @@ job_spiritual = {
 		}
 		
 		OR = {
-			if = {
+			AND = {
 				OR = {
-					religion = druidic
-					religion = druidic_reformed
+						religion = druidic
+						religion = druidic_reformed
 				}
-				limit = {
-					trait = druid
-				}
+				trait = druid
 			}
 		}
 	}

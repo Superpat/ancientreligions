@@ -431,3 +431,43 @@ character_event = {
 		}
 	}
 }
+
+#######################################
+#
+# - Gaelic abdication
+#
+#######################################
+
+character_event = {
+	id = ancrel.0214
+	desc = "EVTDESCancrel.0214"
+	picture = GFX_evt_death
+
+	only_rulers = yes
+
+	trigger = {
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+		OR = {
+			culture = irish
+			culture = scottish
+		}
+		is_ruler = yes
+		OR = {
+			trait = maimed
+			trait = eunuch
+			trait = blinded
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTAancrel.0214"
+		abdicate = yes
+	}
+}

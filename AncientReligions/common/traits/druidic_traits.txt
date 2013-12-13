@@ -66,6 +66,7 @@ druid = {
 	learning = 3
 	diplomacy = 2
 	customizer = no
+	religious = yes # Lost immediately on religion change
 	
 	cannot_inherit = yes
 }
@@ -85,6 +86,7 @@ wolf = {
 	same_opinion = 20
 	
 	customizer = no
+	religious = yes # Lost immediately on religion change
 	
 	command_modifier = {
 		religious_enemy = 0.2
@@ -108,6 +110,7 @@ fian = {
 	same_opinion = 20
 	
 	customizer = no
+	religious = yes # Lost immediately on religion change
 	
 	command_modifier = {
 		religious_enemy = 0.2

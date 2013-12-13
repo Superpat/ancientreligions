@@ -144,4 +144,9 @@ spriteTypes = {
 		texturefile = "gfx\\event_pictures\nuada_mag_tuired.dds"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_evt_the_changeling_fuseli"
+		texturefile = "gfx\\event_pictures\the_changeling_fuseli.tga"
+		allwaystransparent = yes
+	}
 }

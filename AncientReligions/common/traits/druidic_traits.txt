@@ -132,10 +132,34 @@ learning_druidic_arts = {
 	monthly_character_piety = 0.5
 	same_religion_opinion = 10
 	fertility = -50.0
+	religious = yes # Lost immediately on religion change
 	
 	stewardship = -2
 	intrigue = -2
 	diplomacy = -2
 	
 	pilgrimage = yes # Will need a regent, but can still be guardian to children
+}
+
+changeling = {
+	potential = {
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+	}
+	health = 3
+	religious = yes # Lost immediately on religion change
+	
+	same_religion_opinion = 5
+	
+	same_opinion = -10
+	
+	customizer = no
+	
+	command_modifier = {
+		morale_offence = 0.2
+		defence = -0.1
+	}
+	ai_rationality = -5
 }

@@ -137,6 +137,13 @@ d_druidic_reformed = {
 	# Always exists
 	landless = yes
 	
+	allow = {
+		religion = druidic_reformed
+		num_of_holy_sites = 1
+		piety = 1000
+		trait = druid
+	}
+	
 	# Controls a religion
 	controls_religion = druidic_reformed
 	

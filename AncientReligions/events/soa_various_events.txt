@@ -1940,7 +1940,7 @@ character_event = {
 	
 	immediate = {
 		liege = {
-			character_event { id = SoA.3074 }
+			character_event = { id = SoA.3074 }
 		}
 		top_liege = {
 			random_realm_character = {
@@ -2035,7 +2035,7 @@ character_event = {
 				}
 			}
 			liege = {
-				narrative_event { id = SoA.3077 }
+				narrative_event = { id = SoA.3077 }
 			}
 		}
 		if = {
@@ -2045,7 +2045,7 @@ character_event = {
 				}
 			}
 			liege = {
-				narrative_event { id = SoA.3078 }
+				narrative_event = { id = SoA.3078 }
 			}
 		}
 		death = {

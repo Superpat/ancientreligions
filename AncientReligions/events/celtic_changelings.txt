@@ -688,7 +688,7 @@ character_event = {
 		name = EVTOPTAancrel.0234
 		
 		custom_tooltip = {
-			text = Changeling Trade_begins
+			text = changeling_trade_begins
 			hidden_tooltip = {
 				random_child = {
 					limit = { has_character_flag = changeling_trade }
@@ -709,7 +709,7 @@ character_event = {
 	immediate = {
 		father = {
 			random_courtier = {
-				limit = { has_minor_title = druid }
+				limit = { trait = druid }
 				character_event = { id = ancrel.0236 }
 			}
 		}
@@ -868,11 +868,9 @@ character_event = {
 	picture = GFX_evt_the_changeling_fuseli
 	border = GFX_event_normal_frame_religion
 	
-	min_age = 16
-	max_age = 17
-	
+	is_triggered_only = yes
+
 	trigger = {
-		has_dlc = "The Old Gods"
 		has_character_flag = changeling_child
 	}
 	
@@ -887,14 +885,48 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTCancrel.0241
+		name = EVTOPTAancrel.0241
 		add_trait = changeling
 		hidden_tooltip = {
 			random_list = {
-				25 = { add_trait = possessed }
-				25 = { add_trait = wroth }
-				25 = { add_trait = lunatic }
-				25 = { add_trait = cruel }
+				50 = {    # Born from Fomorian
+					remove_trait = chaste
+					remove_trait = kind
+					remove_trait = honest
+					remove_trait = content
+					remove_trait = charitable
+					remove_trait = just
+					remove_trait = humble
+					remove_trait = slow
+					remove_trait = imbecile
+					remove_trait = weak
+					remove_trait = shy
+					remove_trait = trusting
+					add_trait = lustful
+					add_trait = envious
+					add_trait = deceitful
+					add_trait = ambitious
+					add_trait = cruel
+					add_trait = wroth
+					add_trait = lunatic
+				}
+				50 = { 		# Born from Sidhe
+					remove_trait = cruel
+					remove_trait = wroth
+					remove_trait = envious
+					remove_trait = content
+					remove_trait = slow
+					remove_trait = imbecile
+					remove_trait = weak
+					remove_trait = shy
+					remove_trait = trusting
+					add_trait = kind
+					add_trait = patient
+					add_trait = lunatic
+					add_trait = charitable
+					add_trait = lustful
+					add_trait = deceitful
+				}
 			}
 		}
 	}

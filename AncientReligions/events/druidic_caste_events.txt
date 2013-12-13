@@ -745,12 +745,14 @@ character_event = {
 		name = EVTOPTAancrel.0197
 		create_character = {
 			random_traits = yes
+			
 			age = 1
 			religion = druidic
 			culture = FROM
 		}
 		new_character = {
 			add_child = FROM
+			set_character_flag = changeling_child
 		}
 		FROM = { 
 			remove_trait = learning_druidic_arts

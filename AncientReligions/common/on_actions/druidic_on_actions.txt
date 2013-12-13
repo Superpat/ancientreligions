@@ -9,3 +9,15 @@ on_reform_religion = {
 		ancrel.0009
 	}
 }
+
+on_birth = {
+	events = {
+		ancrel.0215 # Child Perceived to be a Changeling
+	}
+}
+
+on_adulthood = {
+	events = {
+		ancrel.0241   # Changeling child's true nature asserts itself
+	}
+}

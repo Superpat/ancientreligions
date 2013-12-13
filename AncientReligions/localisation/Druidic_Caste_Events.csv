@@ -1,20 +1,6 @@
 #Druid Stuff ;;;;;;;;;;;;;;x
 invite_druid_to_court;Invite Druid to Court;;;;;;;;;;;;;x
 invite_druid_to_court_desc;Invite a Druid to your court - this can only be done every two years;;;;;;;;;;;;;x
-no_druid;Lack of a Druid;;;;;;;;;;;;;x
-no_druid_desc;This Celtic lord has no Druid at his court. Who will sing praises to his ancestors, advise and counsel him, encourage his troops, and worship the Gods?;;;;;;;;;;;;;x
-adequate_druid_diplomacy;Druid Adequate in Speech and Song;;;;;;;;;;;;;x
-adequate_druid_diplomacy_desc;While this lord's Druid is not the most talented of his profession, he nevertheless does an admirable job when it comes to musicianship and inspiring others.;;;;;;;;;;;;;x
-good_druid_diplomacy;Druid Skilled in Speech and Song;;;;;;;;;;;;;x
-good_druid_diplomacy_desc;This lord's Druid is known for being able to influence and inspire others with his honeyed words and musical ability.;;;;;;;;;;;;;x
-great_druid_diplomacy;Druid Unmatched in Speech and Song;;;;;;;;;;;;;x
-great_druid_diplomacy_desc;This lord's Druid is known far and wide as one of the greatest Druids of his generation, able to influence others with his silver tongue and musical ability.;;;;;;;;;;;;;x
-adequate_druid_learning;Druid Has Adequate Knowledge and Wisdom;;;;;;;;;;;;;x
-adequate_druid_learning_desc;This lord's Druid level of knowledge and wisdom is typical of any Druid, and he assists his lord dutifully but unremarkably.;;;;;;;;;;;;;x
-good_druid_learning;Druid Has Much Knowledge and Wisdom;;;;;;;;;;;;;x
-good_druid_learning_desc;This lord's Druid is well-known for possessing a great amount of knowledge and wisdom, and many are amazed at the many things he knows or the prudence of his counsel.;;;;;;;;;;;;;x
-great_druid_learning;Druid Unmatched in Knowledge and Wisdom;;;;;;;;;;;;;x
-great_druid_learning_desc;This lord's Druid has all the accumulated knowledge and wisdom of a hundred generations, and is renowned throughout the region as a peerless sage.;;;;;;;;;;;;;x
 druid;Druid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 druid_desc;The Druid's knowledge of the ancient Celtic ballads and of sacred traditions is great and their power among the Celts is without equal. They are responsible for organising worship and sacrifices, divination, and judicial procedure in Celtic society;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 ancrel.0152.desc;I have searched far and wide for a worthy Druid to serve at my court. He will organise worship and sacrifices, divination, and judicial procedure, encourage my warriors, and provide me counsel. At long last, one such man has arrived at my court, but I am not sure whether he is worthy... A ruler must choose his Druid wisely, after all.;;;;;;;;;;;;;x
@@ -167,3 +153,5 @@ EVTDESCancrel.0205;Son returns with gifts;;;;;;;;;;;;;x
 EVTOPTAancrel.0205;Ok;;;;;;;;;;;;;x
 EVTDESCancrel.0206;Father dies, Player Son is heir;;;;;;;;;;;;;x
 EVTOPTAancrel.0206;Ok;;;;;;;;;;;;;x
+learning_druidic_arts;Novice;French;German;;Spanish;;;;;;;;;;;x
+learning_druidic_arts_desc;This character is learning the secrets arts and rituals of the Druids, he has much to learn;Franch;German;;Spanish;;;;;;;;;;;;x

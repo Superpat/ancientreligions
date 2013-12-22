@@ -390,13 +390,21 @@ de_jure_laws = {
 	
 # INVESTITURE
 
+	# Papal Investiture
 	investiture_law_0 = {
 		show_as_title = yes
 		group = investiture_law
 		default = yes
 		potential = {
+			holder_scope = {
+				OR = {
+					religion = catholic
+					religion = fraticelli
+				}
+			}
+		}
+		allow = {
 			year = 1000
-			holder_scope = { religion = catholic }
 		}
 		revoke_allowed = {
 			always = no
@@ -416,6 +424,7 @@ de_jure_laws = {
 		}
 	}
 	
+	# Free Investiture
 	investiture_law_1 = {
 		show_as_title = yes
 		rel_head_opinion = -30
@@ -423,7 +432,12 @@ de_jure_laws = {
 		temple_all_opinion = 10 # Bishops will tend to be more loyal to the Crown
 		group = investiture_law
 		potential = {
-			holder_scope = { religion = catholic }
+			holder_scope = {
+				OR = {
+					religion = catholic
+					religion = fraticelli
+				}
+			}
 		}
 		revoke_allowed = {
 			always = no

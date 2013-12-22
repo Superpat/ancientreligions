@@ -335,47 +335,12 @@ narrative_event = {
 	option = { # Yes
 		name = EVTOPTALoR.211
 		ai_chance = { factor = 75 }
-		religion = orthodox
+		religion = FROM
 		any_courtier = {
-			limit = { employer = { character = ROOT } }
-			religion = orthodox
-		}
-		any_vassal = {
-			limit = { is_playable = no }
-			religion = orthodox
+			religion = FROM
 		}
 		capital_scope = {
-			religion = orthodox
-		}
-	}
-	option = { # No
-		name = EVTOPTBLoR.211
-		ai_chance = { factor = 25 }
-	}
-}
-narrative_event = {
-	id = ancrel.2211
-	title = EVTNAMELoR.210
-	desc = EVTDESCLoR.210
-	
-	picture = GFX_evt_pope
-	
-	is_triggered_only = yes
-	
-	option = { # Yes
-		name = EVTOPTALoR.211
-		ai_chance = { factor = 75 }
-		religion = catholic
-		any_courtier = {
-			limit = { employer = { character = ROOT } }
-			religion = catholic
-		}
-		any_vassal = {
-			limit = { is_playable = no }
-			religion = catholic
-		}
-		capital_scope = {
-			religion = catholic
+			religion = FROM
 		}
 	}
 	option = { # No

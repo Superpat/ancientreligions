@@ -14,7 +14,9 @@ RETTYPE_CUL_ROMAN =
 	second_type = 3
 	second_amount = 50
 
-	culture = roman
+	potential = {
+		culture = roman
+	}
 
 	modifier = {
 		light_cavalry_offensive = 0.3

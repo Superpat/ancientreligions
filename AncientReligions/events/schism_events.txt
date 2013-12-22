@@ -144,12 +144,29 @@ narrative_event = {
 	
 	option = {
 		name = EVTOPTALoR.200
-		set_parent_religion = { religion = catholic parent = orthodox }
+
+		if = {
+			limit = { religion = orthodox }
+			set_parent_religion = { religion = catholic parent = orthodox }
+		}
+		if = {
+			limit = { religion = nestorian }
+			set_parent_religion = { religion = catholic parent = nestorian }
+		}
+		if = {
+			limit = { religion = monothelite }
+			set_parent_religion = { religion = catholic parent = monothelite }
+		}
+		if = {
+			limit = { religion = iconoclast }
+			set_parent_religion = { religion = catholic parent = iconoclast }
+		}
+
 		set_global_flag = schism_mended
 		give_nickname = nick_the_saint
 		hidden_tooltip = {
 			any_playable_ruler = {
-				limit = { 
+				limit = {
 					religion = catholic
 					controls_religion = no
 				}
@@ -172,12 +189,12 @@ narrative_event = {
 	option = { # Yes
 		name = EVTOPTALoR.211
 		ai_chance = { factor = 75 }
-		religion = orthodox
+		religion = FROM
 		any_courtier = {
-			religion = orthodox
+			religion = FROM
 		}
 		capital_scope = {
-			religion = orthodox
+			religion = FROM
 		}
 	}
 	option = { # No

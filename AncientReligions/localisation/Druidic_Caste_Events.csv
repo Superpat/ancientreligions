@@ -1,14 +1,14 @@
 #Druid Stuff ;;;;;;;;;;;;;;x
-invite_druid_to_court;Invite Druid to Court;;;;;;;;;;;;;x
-invite_druid_to_court_desc;Invite a Druid to your court - this can only be done every two years;;;;;;;;;;;;;x
+invite_druid_to_court;Invite Druid to Court;French;German;;Spanish;;;;;;;;;;;x
+invite_druid_to_court_desc;Invite a Druid to your court - this can only be done every two years;French;German;;Spanish;;;;;;;;;;;x
 druid;Druid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 druid_desc;The Druid's knowledge of the ancient Celtic ballads and of sacred traditions is great and their power among the Celts is without equal. They are responsible for organising worship and sacrifices, divination, and judicial procedure in Celtic society;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-ancrel.0152.desc;I have searched far and wide for a worthy Druid to serve at my court. He will organise worship and sacrifices, divination, and judicial procedure, encourage my warriors, and provide me counsel. At long last, one such man has arrived at my court, but I am not sure whether he is worthy... A ruler must choose his Druid wisely, after all.;;;;;;;;;;;;;x
-ancrel.0152.a;Let us meet, then.;;;;;;;;;;;;;x
-ancrel.0153.desc;The people of your court are incredulous. “Great [Root.GetTitle],” they might say, “it is a shame that you do not have a Druid at court! Are you to be like a Bard without his voice, a warrior without his spear, a farmer without his seeds?” No self-respecting ruler of the islands can go without a Druid, after all.;;;;;;;;;;;;;x
-ancrel.0153.a;I must find a knowledgeable Druid soon, and fast!;;;;;;;;;;;;;x
-new_druid_in_court;New Druid in Court;;;;;;;;;;;;;x
-new_druid_in_court_desc;A Druid has just arrived in this lord's court.;;;;;;;;;;;;;x
+ancrel.0152.desc;I have searched far and wide for a worthy Druid to serve at my court. He will organise worship and sacrifices, divination, and judicial procedure, encourage my warriors, and provide me counsel. At long last, one such man has arrived at my court, but I am not sure whether he is worthy... A ruler must choose his Druid wisely, after all.;French;German;;Spanish;;;;;;;;;;;x
+ancrel.0152.a;Let us meet, then.;French;German;;Spanish;;;;;;;;;;;x
+ancrel.0153.desc;The people of your court are incredulous. “Great [Root.GetTitle],” they might say, “it is a shame that you do not have a Druid at court! Are you to be like a Bard without his voice, a warrior without his spear, a farmer without his seeds?” No self-respecting ruler of the islands can go without a Druid, after all.;French;German;;Spanish;;;;;;;;;;;x
+ancrel.0153.a;I must find a knowledgeable Druid soon, and fast!;French;German;;Spanish;;;;;;;;;;;x
+new_druid_in_court;New Druid in Court;French;German;;Spanish;;;;;;;;;;;x
+new_druid_in_court_desc;A Druid has just arrived in this lord's court.;French;German;;Spanish;;;;;;;;;;;x
 title_court_druid;Druid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 title_court_druid_desc;The druid's knowledge of the ancient celtic ballads and of sacred traditions is great and their power among the celts is without equal.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 title_court_bard;Bard;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
@@ -115,13 +115,14 @@ ancrel.0183.desc;The day of the performance has dawned. Your Bard, dressed in hi
 ancrel.0183.name;The Show Begins!;;;;;;;;;;;;;x
 ancrel.0183.a;I think we should start with the story about...;;;;;;;;;;;;;x
 ;;;;;;;;;;;;;x
-EVTNAMEancrel.01843;Coming of age;;;;;;;;;;;;;x
-EVTDESCancrel.0183;Coming of age ceremony - father's event;;;;;;;;;;;;;x
-EVTOPTAancrel.0183;Warrior;;;;;;;;;;;;;x
-EVTOPTBancrel.0183;Druid;;;;;;;;;;;;;x
-EVTNAMEancrel.0184;Coming of age;;;;;;;;;;;;;x
-EVTDESCancrel.0184;Coming of age ceremony - child's event;;;;;;;;;;;;;x
-EVTOPTAancrel.0184;Ok;;;;;;;;;;;;;x
+EVTNAMEancrel.01843;Coming of age;French;German;;Spanish;;;;;;;;;;;x
+EVTDESCancrel.0183;Today your child comes of age. [From.GetSheHe] will join the clan today as the Druids present [From.GetHerHim] to the gods. You can use this opportunity to plan [From.GetHerHis] future.;French;German;;Spanish;;;;;;;;;;;x
+EVTOPTAancrel.0183;[From.GetSheHe] will be a warrior;French;German;;Spanish;;;;;;;;;;;x
+EVTOPTBancrel.0183;The Gods are in need of [From.GetHerHim];French;German;;Spanish;;;;;;;;;;;x
+EVTNAMEancrel.0184;Coming of age;French;German;;Spanish;;;;;;;;;;;x
+EVTDESCancrel.0184;Today is the day I become an adult, it is time I meet my destiny;French;German;;Spanish;;;;;;;;;;;x
+EVTOPTAancrel.0184;Ask my father for advice;French;German;;Spanish;;;;;;;;;;;x
+path_of_the_druids;Your child will undergo training with the druids;French;German;;Spanish;;;;;;;;;;;x
 EVTNAMEancrel.0185;The Path of the Druids;;;;;;;;;;;;;x
 EVTDESCancrel.0185;Training about to begin;;;;;;;;;;;;;x
 EVTOPTAancrel.0185;Ok;;;;;;;;;;;;;x

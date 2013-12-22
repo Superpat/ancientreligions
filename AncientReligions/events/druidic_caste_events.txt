@@ -225,16 +225,24 @@ character_event = {
 				trait = poet
 				trait = mystic
 				trait = druid
+				trait = content
+			}
+			OR = {
+				FROM = { NOT = { is_ruler = yes }}
+				FROM = { is_theocracy = yes }
 			}
 		}
-		FROM = {piety = 50}
-		FROM = { change_learning = 1}
-		FROM = { change_martial = -1}
-		hidden_tooltip = {
-			FROM = {
-				character_event = {
-					id = ancrel.0185
-					days = 3
+		custom_tooltip = {
+			text = path_of_the_druids
+			FROM = {piety = 50}
+			FROM = { change_learning = 1}
+			FROM = { change_martial = -1}
+			hidden_tooltip = {
+				FROM = {
+					character_event = {
+						id = ancrel.0185
+						days = 3
+					}
 				}
 			}
 		}
@@ -261,7 +269,7 @@ character_event = {
 		father = { is_alive = yes }
 		NOT = {
 				has_character_flag = had_coming_of_age_celtic
-			}
+		}
 	}
 	
 	mean_time_to_happen = {

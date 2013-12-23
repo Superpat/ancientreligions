@@ -32,15 +32,22 @@ job_chancellor = {
 			}
 			has_character_flag = special_chancellor
 		}
+		
 		OR = {
+			liege = { 
+				OR = {
+					religion = druidic
+					religion = druidic_reformed
+				}
+			}
 			AND = {
 				OR = {
-						religion = druidic
-						religion = druidic_reformed
+					trait = druid
+					trait = poet
 				}
 				OR = {
-						trait = druid
-						trait = poet
+					religion = druidic
+					religion = druidic_reformed
 				}
 			}
 		}
@@ -249,12 +256,18 @@ job_spiritual = {
 		}
 		
 		OR = {
-			AND = {
+			liege = { 
 				OR = {
-						religion = druidic
-						religion = druidic_reformed
+					religion = druidic
+					religion = druidic_reformed
 				}
+			}
+			AND = {
 				trait = druid
+				OR = {
+					religion = druidic
+					religion = druidic_reformed
+				}
 			}
 		}
 	}

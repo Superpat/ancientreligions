@@ -30,7 +30,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_trait_head5"
-		texturefile = "gfx/traits/livinglegend.dds"
+		texturefile = "gfx/traits/living_legend.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"

@@ -112,6 +112,8 @@ d_hellenic_pagan = {
 	
 	short_name = yes
 	
+	primary = no
+	
 	dignity = 100 # Counted as having this many more counties than it does
 	
 	# Controls a religion

@@ -222,8 +222,7 @@ decisions = {
 		ai_will_do = {
 			factor = 1
 		}
-	}
-	
+	}	
 	invite_druid_to_court = { #Invite a Druid to court
 		potential = {
 			OR = {
@@ -253,7 +252,7 @@ decisions = {
 
 			hidden_tooltip = {
 				character_event = {
-					id = ancrel.0152
+					id = ancrel.0212
 					days = 3
 				}
 			}
@@ -318,7 +317,6 @@ decisions = {
 			}	
 		}
 	}	
-
 	assign_druid = { # For the AI, because they are dumb enough not to hand out minor titles
 		potential = {
 			ai = yes
@@ -358,7 +356,6 @@ decisions = {
 			}
 		}
 	}
-	
 	assign_bard = { # For the AI, because they are dumb enough not to hand out minor titles
 		potential = {
 			ai = yes

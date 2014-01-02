@@ -48,7 +48,7 @@ new_druid_in_court = {
 bard_performance_timer = {
 	icon = 18
 }
-bard_griot_performance = {
+bard_performance = {
 	monthly_character_prestige = 0.02
 	icon = 18
 }

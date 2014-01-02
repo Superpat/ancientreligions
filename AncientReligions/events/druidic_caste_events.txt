@@ -3,11 +3,11 @@
 # ANCIENT RELIGIONS
 # - Druidic Caste Events
 #
-# Event ID ancrel.0152 - ancrel.0207 reserved
+# Event ID ancrel.0152 - ancrel.0207, ancrel.0211, ancrel.0212 reserved
 #
 #######################################
 
-# Written by Patrick Marchand, great thanks to Cybrxkhan
+# Written by Patrick Marchand
 
 namespace = ancrel
 
@@ -32,6 +32,163 @@ character_event = {
 				create_character = {
 					random_traits = yes
 					dynasty = random
+					trait = druid
+					trait = detached_priest
+					attributes = {
+						diplomacy = 3
+						martial = 3
+						stewardship = 3
+						intrigue = 3
+						learning = 3
+					}
+				}
+				new_character = {
+					opinion = {
+						modifier = opinion_patron
+						who = ROOT
+						years = 20
+					}
+					reverse_opinion = {
+						modifier = opinion_new_courtier
+						who = ROOT
+						years = 5
+					}				
+				}		
+			}
+			30 = {
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					trait = druid
+					trait = martial_cleric
+					attributes = {
+						diplomacy = 5
+						martial = 5
+						stewardship = 5
+						intrigue = 5
+						learning = 5
+					}
+				}
+				new_character = {
+					opinion = {
+						modifier = opinion_patron
+						who = ROOT
+						years = 20
+					}
+					reverse_opinion = {
+						modifier = opinion_new_courtier
+						who = ROOT
+						years = 5
+					}				
+				}			
+			}
+			20 = {
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					trait = druid
+					trait = scholarly_theologian
+					attributes = {
+						diplomacy = 8
+						martial = 8
+						stewardship = 8
+						intrigue = 8
+						learning = 8
+					}
+				}
+				new_character = {
+					opinion = {
+						modifier = opinion_patron
+						who = ROOT
+						years = 20
+					}
+					reverse_opinion = {
+						modifier = opinion_new_courtier
+						who = ROOT
+						years = 5
+					}				
+				}			
+			}
+			12 = {
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					trait = druid
+					trait = mastermind_theologian
+					attributes = {
+						diplomacy = 10
+						martial = 10
+						stewardship = 10
+						intrigue = 10
+						learning = 10
+					}
+				}
+				new_character = {
+					opinion = {
+						modifier = opinion_patron
+						who = ROOT
+						years = 20
+					}
+					reverse_opinion = {
+						modifier = opinion_new_courtier
+						who = ROOT
+						years = 5
+					}				
+				}			
+			}
+			3 = {
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					trait = druid
+					trait = mastermind_theologian
+					attributes = {
+						diplomacy = 13
+						martial = 13
+						stewardship = 13
+						intrigue = 13
+						learning = 13
+					}
+				}
+				new_character = {
+					opinion = {
+						modifier = opinion_patron
+						who = ROOT
+						years = 20
+					}
+					reverse_opinion = {
+						modifier = opinion_new_courtier
+						who = ROOT
+						years = 5
+					}				
+				}			
+			}
+		}
+	}
+}
+
+# Character gets Druid
+character_event = {
+	id = ancrel.0245
+	desc = EVTDESCancrel.0245
+	picture = GFX_evt_druid
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.0245
+		add_character_modifier = {
+			name = "new_druid_in_court"
+			duration = 730
+			hidden = yes
+		}
+		clr_character_flag = inviting_druid_over
+		random_list = {
+			35 = {
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					trait = naive_appeaser
 					trait = druid
 					attributes = {
 						diplomacy = 3
@@ -59,6 +216,7 @@ character_event = {
 					random_traits = yes
 					dynasty = random
 					trait = druid
+					trait = underhanded_rogue
 					attributes = {
 						diplomacy = 5
 						martial = 5
@@ -85,6 +243,7 @@ character_event = {
 					random_traits = yes
 					dynasty = random
 					trait = druid
+					trait = charismatic_negotiator
 					attributes = {
 						diplomacy = 8
 						martial = 8
@@ -111,6 +270,7 @@ character_event = {
 					random_traits = yes
 					dynasty = random
 					trait = druid
+					trait = grey_eminence
 					attributes = {
 						diplomacy = 10
 						martial = 10
@@ -137,6 +297,7 @@ character_event = {
 					random_traits = yes
 					dynasty = random
 					trait = druid
+					trait = grey_eminence
 					attributes = {
 						diplomacy = 13
 						martial = 13
@@ -157,6 +318,35 @@ character_event = {
 						years = 5
 					}				
 				}			
+			}
+		}
+	}
+}
+
+# Character chooses Druid
+character_event = {
+	id = ancrel.0246
+	desc = EVTDESCancrel.0246
+	picture = GFX_evt_viking_throneroom_oldgods
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.0246
+		hidden_tooltip = {
+			character_event = {
+				id = ancrel.0152
+				days = 1
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTBancrel.0246
+		hidden_tooltip = {
+			character_event = {
+				id = ancrel.0245
+				days = 1
 			}
 		}
 	}
@@ -437,7 +627,7 @@ character_event = {
 	}
 }
 
-# Son returns scarred but seasoned (Son)
+# Son returns scarred but learned (Son)
 character_event = {
 	id = ancrel.0188
 	hide_window = yes
@@ -483,13 +673,16 @@ character_event = {
 	option = {
 		name = EVTOPTAancrel.0189
 		FROM = {
-			remove_trait = learning_druidic_arts
 			add_trait = scarred
-			random_list = {
-				10 = { add_trait = scholar }
-				10 = { add_trait = mystic }
-				40 = { add_trait = poet }
-				40 = { add_trait = druid }
+			custom_tooltip = { 
+				text = return_from_druidic_training
+				remove_trait = learning_druidic_arts
+				random_list = {
+					10 = { add_trait = scholar }
+					10 = { add_trait = mystic }
+					40 = { add_trait = poet }
+					40 = { add_trait = druid }
+				}
 			}
 		}
 	}
@@ -535,14 +728,17 @@ character_event = {
 	option = {
 		name = EVTOPTAancrel.0191
 		FROM = {
-			remove_trait = learning_druidic_arts
-			tooltip = { add_trait = maimed }
-			random_list = {
-				10 = { add_trait = scholar }
-				10 = { add_trait = mystic }
-				40 = { add_trait = poet }
-				40 = { add_trait = druid }
+			custom_tooltip = { 
+				text = return_from_druidic_training
+				remove_trait = learning_druidic_arts
+				random_list = {
+					10 = { add_trait = scholar }
+					10 = { add_trait = mystic }
+					40 = { add_trait = poet }
+					40 = { add_trait = druid }
+				}
 			}
+			tooltip = { add_trait = maimed }
 		}
 	}
 }
@@ -638,13 +834,16 @@ character_event = {
 			}
 		}
 		FROM = {
-			random_list = {
-				10 = { add_trait = scholar }
-				10 = { add_trait = mystic }
-				40 = { add_trait = poet }
-				40 = { add_trait = druid }
+			custom_tooltip = { 
+				text = return_from_druidic_training
+				remove_trait = learning_druidic_arts
+				random_list = {
+					10 = { add_trait = scholar }
+					10 = { add_trait = mystic }
+					40 = { add_trait = poet }
+					40 = { add_trait = druid }
+				}
 			}
-			remove_trait = learning_druidic_arts
 		}
 	}
 }
@@ -699,13 +898,16 @@ character_event = {
 	option = {
 		name = EVTOPTAancrel.0195
 		FROM = {
-			remove_trait = learning_druidic_arts
 			add_trait = lunatic
-			random_list = {
-				10 = { add_trait = scholar }
-				10 = { add_trait = mystic }
-				40 = { add_trait = poet }
-				40 = { add_trait = druid }
+			custom_tooltip = { 
+				text = return_from_druidic_training
+				remove_trait = learning_druidic_arts
+				random_list = {
+					10 = { add_trait = scholar }
+					10 = { add_trait = mystic }
+					40 = { add_trait = poet }
+					40 = { add_trait = druid }
+				}
 			}
 		}
 	}
@@ -763,12 +965,15 @@ character_event = {
 			set_character_flag = changeling_child
 		}
 		FROM = { 
-			remove_trait = learning_druidic_arts
-			random_list = {
-				10 = { add_trait = scholar }
-				10 = { add_trait = mystic }
-				40 = { add_trait = poet }
-				40 = { add_trait = druid }
+			custom_tooltip = { 
+				text = return_from_druidic_training
+				remove_trait = learning_druidic_arts
+				random_list = {
+					10 = { add_trait = scholar }
+					10 = { add_trait = mystic }
+					40 = { add_trait = poet }
+					40 = { add_trait = druid }
+				}
 			}
 		}
 	}
@@ -817,12 +1022,15 @@ character_event = {
 		name = EVTOPTAancrel.0199
 		FROM = {
 			add_trait = zealous
-			remove_trait = learning_druidic_arts
-			random_list = {
-				10 = { add_trait = scholar }
-				10 = { add_trait = mystic }
-				40 = { add_trait = poet }
-				40 = { add_trait = druid }
+			custom_tooltip = { 
+				text = return_from_druidic_training
+				remove_trait = learning_druidic_arts
+				random_list = {
+					10 = { add_trait = scholar }
+					10 = { add_trait = mystic }
+					40 = { add_trait = poet }
+					40 = { add_trait = druid }
+				}
 			}
 		}
 	}
@@ -894,12 +1102,15 @@ character_event = {
 		name = EVTOPTAancrel.0201
 		FROM = {
 			add_trait = patient
-			remove_trait = learning_druidic_arts
-			random_list = {
-				10 = { add_trait = scholar }
-				10 = { add_trait = mystic }
-				40 = { add_trait = poet }
-				40 = { add_trait = druid }
+			custom_tooltip = { 
+				text = return_from_druidic_training
+				remove_trait = learning_druidic_arts
+				random_list = {
+					10 = { add_trait = scholar }
+					10 = { add_trait = mystic }
+					40 = { add_trait = poet }
+					40 = { add_trait = druid }
+				}
 			}
 		}
 	}
@@ -1062,12 +1273,15 @@ character_event = {
 	option = {
 		name = EVTOPTAancrel.0205
 		FROM = {
-			remove_trait = learning_druidic_arts
-			random_list = {
-				10 = { add_trait = scholar }
-				10 = { add_trait = mystic }
-				40 = { add_trait = poet }
-				40 = { add_trait = druid }
+			custom_tooltip = { 
+				text = return_from_druidic_training
+				remove_trait = learning_druidic_arts
+				random_list = {
+					10 = { add_trait = scholar }
+					10 = { add_trait = mystic }
+					40 = { add_trait = poet }
+					40 = { add_trait = druid }
+				}
 			}
 		}
 		wealth = 300
@@ -1098,13 +1312,16 @@ character_event = {
 	
 	option = {
 		name = EVTOPTAancrel.0206
-		remove_trait = learning_druidic_arts
+		custom_tooltip = {
+			text = return_from_druidic_training_player
+			remove_trait = learning_druidic_arts
 			random_list = {
 				30 = { add_trait = scholar }
 				25 = { add_trait = mystic }
 				30 = { add_trait = poet }
 				10 = { add_trait = druid }
 			}
+		}
 		prestige = 100
 		piety = 100
 		wealth = 100

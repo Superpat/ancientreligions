@@ -1,6 +1,6 @@
 # HOLY ORDERS
 
-d_gwydion = {
+d_wolftails = {
 	
 	color={ 75 75 75 }
 	color2={ 255 255 255 }

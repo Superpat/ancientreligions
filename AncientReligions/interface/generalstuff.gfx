@@ -624,13 +624,13 @@ spriteTypes = {
 	### icons
 	spriteType = {
 		name = "GFX_religion_icon_strip"
-		texturefile = "gfx\\interface\\religion_icon_strip.tga"
-		noOfFrames = 56
+		texturefile = "gfx\\interface\\religion_icon_strip.dds"
+		noOfFrames = 60
 	}
 	spriteType = {
 		name = "GFX_religion_icon_strip_small"
-		texturefile = "gfx\\interface\\religion_icon_strip_small.tga"
-		noOfFrames = 56
+		texturefile = "gfx\\interface\\religion_icon_strip_small.dds"
+		noOfFrames = 60
 	}
 	spriteType = {
 		name = "GFX_commandmodifier_icon"

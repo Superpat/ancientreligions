@@ -49,33 +49,8 @@ druid = {
 	learning = 3
 	diplomacy = 2
 	customizer = no
-	religious = yes # Lost immediately on religion change
 	
 	cannot_inherit = yes
-}
-
-wolf = {
-	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
-	}
-	martial = 2
-	learning = 1
-	
-	same_religion_opinion = 5
-	
-	same_opinion = 20
-	
-	customizer = no
-	religious = yes # Lost immediately on religion change
-	
-	command_modifier = {
-		religious_enemy = 0.2
-		morale_offence = 0.1
-		defence = -0.1
-	}
 }
 
 fian = {
@@ -92,13 +67,44 @@ fian = {
 	
 	same_opinion = 20
 	
+	fertility = 5.0
+	
 	customizer = no
-	religious = yes # Lost immediately on religion change
 	
 	command_modifier = {
 		religious_enemy = 0.2
-		morale_offence = 0.1
+		morale_offence = 0.2
 		defence = -0.1
+	}
+}
+
+celtic_knight = {
+	potential = {
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+	}
+	
+	martial = 2
+	learning = 1
+	
+	same_religion_opinion = 10
+	
+	same_opinion = 20
+	
+	customizer = no
+	
+	cannot_inherit = yes
+	cannot_marry = yes
+	
+	sex_appeal_opinion = 5
+	fertility = 15.0
+	
+	command_modifier = {
+		religious_enemy = 0.25
+		morale_offence = 0.1
+		defence = 0.1
 	}
 }
 
@@ -115,7 +121,6 @@ learning_druidic_arts = {
 	monthly_character_piety = 0.5
 	same_religion_opinion = 10
 	fertility = -50.0
-	religious = yes # Lost immediately on religion change
 	
 	stewardship = -2
 	intrigue = -2
@@ -132,7 +137,6 @@ changeling = {
 		}
 	}
 	health = 3
-	religious = yes # Lost immediately on religion change
 	
 	same_religion_opinion = 5
 	
@@ -144,5 +148,160 @@ changeling = {
 		morale_offence = 0.2
 		defence = -0.1
 	}
-	ai_rationality = -5
+	ai_rationality = -15
+	ai_ambition = 30
+}
+
+treasure_cauldron = {
+	potential = {
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+	}
+	
+	customizer = no
+}
+
+treasure_chariot = {
+	potential = {
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+	}
+	
+	customizer = no
+}
+
+treasure_chessboard = {
+	potential = {
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+	}
+	
+	customizer = no
+}
+
+treasure_coat = {
+	potential = {
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+	}
+	
+	customizer = no
+}
+
+treasure_crock_and_dish = {
+	potential = {
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+	}
+	
+	customizer = no
+}
+
+treasure_dyrnwyn = {
+	potential = {
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+	}
+	
+	customizer = no
+}
+
+treasure_halter = {
+	potential = {
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+	}
+	
+	customizer = no
+}
+
+treasure_hamper = {
+	potential = {
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+	}
+	
+	customizer = no
+}
+
+treasure_horn = {
+	potential = {
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+	}
+	
+	customizer = no
+}
+
+treasure_knife = {
+	potential = {
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+	}
+	
+	customizer = no
+}
+
+treasure_mantle_arthur = {
+	potential = {
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+	}
+	
+	customizer = no
+}
+
+treasure_mantle_tegau = {
+	potential = {
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+	}
+	
+	customizer = no
+}
+
+treasure_stone_and_ring = {
+	potential = {
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+	}
+	
+	customizer = no
+}
+
+treasure_whetstone = {
+	potential = {
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+	}
+	
+	customizer = no
 }

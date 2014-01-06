@@ -9,27 +9,6 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_trait_head2"
-		texturefile = "gfx/traits/headhunter.dds"
-		noOfFrames = 1
-		norefcount = yes
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-	spriteType = {
-		name = "GFX_trait_head3"
-		texturefile = "gfx/traits/headhunter.dds"
-		noOfFrames = 1
-		norefcount = yes
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-	spriteType = {
-		name = "GFX_trait_head4"
-		texturefile = "gfx/traits/headhunter.dds"
-		noOfFrames = 1
-		norefcount = yes
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-	spriteType = {
-		name = "GFX_trait_head5"
 		texturefile = "gfx/traits/living_legend.dds"
 		noOfFrames = 1
 		norefcount = yes
@@ -43,8 +22,8 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_wolf"
-		texturefile = "gfx/traits/wolf.dds"
+		name = "GFX_trait_celtic_knight"
+		texturefile = "gfx/traits/celtic_knight.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -59,6 +38,111 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_trait_learning_druidic_arts"
 		texturefile = "gfx/traits/druid.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_celtic_knight"
+		texturefile = "gfx/traits/celtic_knight.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_treasure_cauldron"
+		texturefile = "gfx/traits/treasure_cauldron.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_treasure_chariot"
+		texturefile = "gfx/traits/treasure_chariot.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_treasure_chessboard"
+		texturefile = "gfx/traits/treasure_chessboard.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_treasure_coat"
+		texturefile = "gfx/traits/treasure_coat.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_treasure_crock_and_dish"
+		texturefile = "gfx/traits/treasure_crock_and_dish.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_treasure_dyrnwyn"
+		texturefile = "gfx/traits/treasure_dyrnwyn.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_treasure_halter"
+		texturefile = "gfx/traits/treasure_halter.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_treasure_hamper"
+		texturefile = "gfx/traits/treasure_hamper.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_treasure_horn"
+		texturefile = "gfx/traits/treasure_horn.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_treasure_knife"
+		texturefile = "gfx/traits/treasure_knife.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_treasure_mantle_arthur"
+		texturefile = "gfx/traits/treasure_mantle_arthur.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_treasure_mantle_tegau"
+		texturefile = "gfx/traits/treasure_mantle_tegau.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_treasure_stone_and_ring"
+		texturefile = "gfx/traits/treasure_stone_and_ring.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_treasure_whetstone"
+		texturefile = "gfx/traits/treasure_whetstone.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"

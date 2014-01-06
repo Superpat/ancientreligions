@@ -21,3 +21,10 @@ on_adulthood = {
 		ancrel.0241   # Changeling child's true nature asserts itself
 	}
 }
+
+on_combat_pulse = {
+	random_events = {
+		17 = ancrel.0010 # Becomes reknowned headhunter
+		5 = ancrel.0011 # Becomes a legendary hero
+	}
+}

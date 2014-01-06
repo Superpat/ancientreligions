@@ -5,7 +5,15 @@ head1 = {
 			religion = druidic_reformed
 		}
 	}
-	monthly_character_prestige = 0.1
+	
+	martial = 1
+	monthly_character_prestige = 0.5
+	command_modifier = {	
+		religious_enemy = 0.1
+		morale_offence = 0.1
+	}
+	ai_ambition = 15
+	ai_zeal = 5
 }
 
 head2 = {
@@ -15,44 +23,19 @@ head2 = {
 			religion = druidic_reformed
 		}
 	}
-	monthly_character_prestige = 0.2
-}
-
-head3 = {
-	martial = 1
-	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
-	}
-	monthly_character_prestige = 0.4
-	customizer = no
-}
-
-head4 = {
-	martial = 1
-	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
-	}
-	monthly_character_prestige = 0.8
-	customizer = no
-}
-
-head5 = {
-	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
-	}
-	martial = 1
-	monthly_character_prestige = 1.6
+	martial = 3
+	monthly_character_prestige = 1.5
 	customizer = no
 	same_religion_opinion = 10
+	
+	command_modifier = {
+		center = 0.1
+		religious_enemy = 0.3
+		morale_offence = 0.2
+		defence = 0.2
+	}
+	ai_ambition = 40
+	ai_zeal = 10
 }
 
 druid = {

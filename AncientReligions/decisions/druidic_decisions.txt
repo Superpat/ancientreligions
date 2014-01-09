@@ -264,7 +264,7 @@ decisions = {
 				factor = 0.3 #Decrease chance AI will do this
 			}
 			modifier = {
-				factor = 0
+				factor = 0.1
 				OR = {
 					any_vassal = {
 						has_minor_title = title_court_druid

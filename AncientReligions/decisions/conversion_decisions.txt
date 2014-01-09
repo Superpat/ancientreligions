@@ -2479,4 +2479,272 @@ decisions = {
 			factor = 0
 		}
 	}
+	
+	# Cultures can convert to their cultural pagan beliefs if the MA of their current religion is low
+	gone_pagan = {
+	
+		is_high_prio = yes	
+
+		potential = {
+			age = 16
+			prisoner = no
+			is_heretic = no
+			piety = 0	
+			
+			NOT = {
+				has_character_flag = gone_pagan
+				religion_authority = 0.35				
+				trait = zealous 
+				trait = incapable
+				AND = {
+					culture_group = arabic # No pagan religion to assign them to
+#					NOT = { culture = egyptian_arabic }
+				}
+			}
+			NOT = {
+				AND = {
+					religion_group = pagan_group
+					is_reformed_religion = no
+				}
+			}
+			
+			# Specific Lock outs. Don't want the option to appear for someone who can only go pagan to their current religion
+#			NOT = {	
+#				AND = {
+#					OR = {
+#						religion = egyptian_pagan
+#					}
+#					culture = egyptian_arabic
+#				}
+#			}
+			NOT = {	
+				AND = {
+					OR = {
+						religion = hellenic_pagan
+					}
+					OR = {
+						culture = roman
+						culture = greek
+						culture = italian
+						culture = sicilian
+						culture = sicilian_greek
+						culture_group = byzantine
+					}
+				}
+			}
+			NOT = {	
+				OR = {
+					AND = {
+						religion_group = jewish_group
+						culture_group = judaic
+						religion_authority = 0.10
+					}
+					AND = {
+						religion_group = jewish_group
+						NOT = { culture_group = judaic }
+						religion_authority = 0.15
+					}					
+				}
+			}
+			NOT = {	
+				AND = {
+					religion_group = zoroastrian_group
+					culture_group = iranian
+				}
+			}
+			NOT = {	
+				AND = {
+					religion = druidic_reformed
+					OR = {
+						culture_group = celtic
+						culture_group = west_germanic
+						culture_group = iberian
+						culture = frankish
+						culture = occitan
+					}
+				}
+			}
+			NOT = {	
+				AND = {
+					religion = norse_pagan_reformed
+					OR = {
+						culture_group = north_germanic
+						culture_group = west_germanic
+						culture_group = central_germanic
+						culture = norman
+					}
+				}
+			}
+			NOT = {	
+				AND = {
+					religion = baltic_pagan_reformed
+					OR = {
+						 culture_group = baltic
+						 culture = ugricbaltic
+					}
+				}
+			}
+			NOT = {	
+				AND = {
+					religion = finnish_pagan_reformed
+					culture_group = finno_ugric
+				}
+			}
+			NOT = {	
+				AND = {
+					religion = tengri_pagan_reformed
+					OR = {
+						culture_group = altaic
+						culture = hungarian
+					}
+				}
+			}
+			NOT = {	
+				AND = {
+					religion = aztec_pagan_reformed
+					culture_group = mesoamerican
+				}
+			}	
+			NOT = {	
+				AND = {
+					religion = slavic_pagan_reformed
+					OR = {
+						culture_group = east_slavic
+						culture_group = west_slavic
+						culture_group = south_slavic
+					}
+				}
+			}		
+			NOT = {	
+				AND = {
+					religion = west_african_pagan_reformed
+					culture_group = west_african
+				}
+			}				
+		}
+		allow = {
+			war = no
+			custom_tooltip = {
+				text = gone_pagan_ctt
+				OR = {
+					AND = {
+						any_demesne_province = {
+							OR = { # Make sure only the culturally relevant religion lowers the MA cost
+								AND = {
+									religion_group = zoroastrian_group
+									ROOT = { culture_group = iranian }
+								}
+								AND = {
+									religion_group = jewish_group
+									ROOT = { culture_group = judaic }
+								}
+#								AND = { 
+#									OR = {
+#										religion = egyptian_pagan
+#									}
+#									ROOT = { culture = egyptian_arabic }
+#								}
+								AND = {
+									OR = {
+										religion = hellenic_pagan
+									}
+									ROOT = {
+										OR = {
+											culture = roman
+											culture = greek
+											culture = italian
+											culture = sicilian
+											culture = sicilian_greek
+											culture_group = byzantine
+										}
+									}
+								}
+								AND = {
+									religion = druidic
+									ROOT = {
+										OR = {
+											culture_group = celtic
+											culture_group = west_germanic
+											culture_group = iberian
+											culture = frankish
+											culture = occitan
+										}
+									}
+								}
+								AND = {
+									religion = norse_pagan
+									ROOT = {
+										OR = {
+											culture_group = north_germanic
+											culture_group = west_germanic
+											culture_group = central_germanic
+											culture = norman
+										}
+									}
+								}
+								AND = {
+									religion = baltic_pagan
+									ROOT = {
+										OR = {
+											 culture_group = baltic
+											 culture = ugricbaltic
+										}
+									}
+								}
+								AND = {
+									religion = finnish_pagan
+									ROOT = { culture_group = finno_ugric }
+								}
+								AND = {
+									religion = tengri_pagan
+									ROOT = {
+										OR = {
+											culture_group = altaic
+											culture = hungarian
+										}
+									}
+								}
+								AND = {	
+									religion = aztec_pagan
+									ROOT = { culture_group = mesoamerican }
+								}	
+								AND = {	
+										religion = slavic_pagan
+										ROOT = {
+											OR = {
+												culture_group = east_slavic
+												culture_group = west_slavic
+												culture_group = south_slavic
+											}
+										}
+								}		
+								AND = {	
+										religion = west_african_pagan
+										ROOT = { culture_group = west_african }
+								}	
+							}
+						}
+						NOT = { religion_authority = 0.30 }
+					}
+					OR = {
+						NOT = { religion_authority = 0.20 }
+						AND = {
+							NOT = { religion_authority = 0.50 }
+							trait = lunatic
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			set_character_flag = gone_pagan
+			character_event = { id = 1000182323} 
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

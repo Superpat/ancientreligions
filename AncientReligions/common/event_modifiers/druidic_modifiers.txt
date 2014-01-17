@@ -147,56 +147,64 @@ favored_birds = {
 # Sacred Symbols
 #####################################################################
 sacred_the_giants_causeway = {
-	local_revolt_risk = -0.05
+	fort_level = 0.10
 	icon = 8
 }
 
 sacred_lia_fail = {
-	local_revolt_risk = -0.05
+	local_revolt_risk = -0.06
+	local_tax_modifier = 0.015
 	icon = 8
 }
 
 sacred_carnac = {
 	local_tax_modifier = 0.05
+	tech_growth_modifier_economy = 0.02
 	icon = 8
 }
 
 sacred_stonehenge = {
-	local_tax_modifier = 0.05
+	tech_growth_modifier_culture = 0.08
 	icon = 8
 }
 
 sacred_hill_of_uisneach = {
-	local_tax_modifier = 0.03
-	local_revolt_risk = -0.03
+	tech_growth_modifier_military = 0.02
+	local_build_cost_modifier = -0.05
 	icon = 8
 }
 sacred_ring_of_brodgar = {
-	local_revolt_risk = -0.05
+	temple_levy_size = 0.05
+	fort_level = 0.03
 	icon = 8
 }
 sacred_bear = {
-	local_revolt_risk = -0.03
+	tech_growth_modifier_economy = 0.02
+	garrison_size = 0.02
 	icon = 8
 }
 sacred_horse = {
-	local_tax_modifier = 0.03
+	supply_limit = 0.02
+	local_revolt_risk = -0.02
 	icon = 8
 }
 sacred_yew = {
-	local_revolt_risk = -0.03
+	tech_growth_modifier_culture = 0.02
+	temple_levy_size = 0.02
 	icon = 8
 }
 sacred_stag = {
-	local_tax_modifier = 0.03
+	local_tax_modifier = 0.01
+	levy_size = 0.015
 	icon = 8
 }
 sacred_dog = {
-	local_tax_modifier = 0.03
+	disease_defence = 0.025
+	garrison_growth = 0.015
 	icon = 8
 }
 sacred_oak = {
-	local_revolt_risk = -0.03
+	tech_growth_modifier = 0.02
 	icon = 8
 }
 sacred_standing_stones = {
@@ -205,17 +213,16 @@ sacred_standing_stones = {
 	icon = 8
 }
 sacred_lake = {
-	local_revolt_risk = -0.02
+	tech_growth_modifier_military = 0.02
 	local_tax_modifier = 0.02
 	icon = 8
 }
 sacred_source = {
-	local_revolt_risk = -0.02
-	local_tax_modifier = 0.02
+	disease_defence = 0.04
 	icon = 8
 }
 sacred_river = {
-	local_revolt_risk = -0.02
-	local_tax_modifier = 0.02
+	fort_level = 0.02
+	local_build_time_modifier = -0.02
 	icon = 8
 }

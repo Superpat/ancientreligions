@@ -344,6 +344,18 @@ character_event = {
 
 	mean_time_to_happen = {
 		months = 40
+		modifier = {
+			factor = 2.0
+			trait = cynical
+		}
+		modifier = {
+			factor = 2.0
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.7
+			trait = sympathy_for_pagans
+		}
 	}
 
 	option = {
@@ -469,5 +481,52 @@ character_event = {
 	option = {
 		name = "EVTOPTAancrel.0214"
 		abdicate = yes
+	}
+}
+
+########################################
+#
+# - First Celtic Emperor
+#
+#######################################
+
+#Founder of an Empire gets nickname
+narrative_event = {
+	id = ancrel.0249
+	title = ancrel.0248.name
+	desc = EVTDESCancrel.0249
+	picture = GFX_evt_y_mab_darogan
+	
+	only_rulers = yes
+
+	trigger = {
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+		OR = {
+				culture = welsh
+				culture = breton
+		}
+		has_landed_title = { e_britannia }
+		primary_title = { 
+			any_previous_holder = { #Will not fire if Kingdom is usurped by someone else or reformed
+				NOT = {
+					has_character_flag = first_brythonic_emperor
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTAancrel.0249 #Ok
+		give_nickname = nick_pendragon
+		set_character_flag = first_brythonic_emperor
+		prestige = 200
+		piety = 100
 	}
 }

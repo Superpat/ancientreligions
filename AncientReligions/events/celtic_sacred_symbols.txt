@@ -19,6 +19,23 @@ province_event = {
 				religion = druidic
 				religion = druidic_reformed			
 			}
+			learning = 8
+			piety = 500
+			Or = {
+				trait = head1
+				trait = head2
+				trait = zealous
+				trait = brave
+				trait = fian
+				trait = druid
+				trait = poet
+				trait = mystic
+				trait = lunatic
+				trait = changeling
+			}
+			NOT = {
+				trait = cynical
+			}
 		}
 		NOT = { has_province_modifier = sacred_the_giants_causeway }
 		NOT = { has_province_modifier = sacred_lia_fail }
@@ -45,36 +62,59 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 1
+		months = 100
 		modifier = {
 			owner = {
-				is_alive = yes
+				trait = head2
 			}
-			factor = 0.01
+			factor = 0.04
+		}
+		modifier = {
+			owner = {
+				is_female = yes
+			}
+			factor = 0.07
+		}
+		modifier = {
+			owner = {
+				trait = druid
+			}
+			factor = 0.02
+		}
+		modifier = {
+			owner = {
+				learning = 13
+			}
+			factor = 0.04
+		}
+		modifier = {
+			owner = {
+				learning = 8
+			}
+			factor = 1.5
+		}
+		modifier = {
+			owner = {
+				trait = coward
+			}
+			factor = 2.0
 		}
 		modifier = {
 			owner = {
 				OR = {
-					is_female = yes
-					is_female = no
+					has_landed_title = k_ireland
+					has_landed_title = e_britannia
 				}
 			}
-			factor = 0.01
-		}
-		modifier = {
-			owner = {
-				OR = {
-					is_ruler = yes
-					is_ruler = no
-				}
-			}
-			factor = 0.01
+			factor = 0.06
 		}
 	}
 	option = {
 		name = ancrel.0211.a
 		custom_tooltip = {
 			text = sacred_symbol_built
+		}
+		hidden_tooltip = {
 			random_list = {
 				10 = {
 					add_province_modifier = {

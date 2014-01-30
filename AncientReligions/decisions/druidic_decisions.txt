@@ -434,14 +434,12 @@ decisions = {
 		effect = {
 			custom_tooltip = {
 				text = prepare_offerings
-				
 				scaled_wealth = -0.15
 				set_character_flag = sidhe_offerings_giving
-				
 				hidden_tooltip = {
-					character_event = { id = ancrel.248 }
+					character_event = { id = ancrel.0248 }
 				}
-			}	
+			}
 		}
 		revoke_allowed = {
 			always = no

@@ -148,81 +148,100 @@ favored_birds = {
 #####################################################################
 sacred_the_giants_causeway = {
 	fort_level = 0.10
-	icon = 8
+	icon = 11
 }
 
 sacred_lia_fail = {
 	local_revolt_risk = -0.06
 	local_tax_modifier = 0.015
-	icon = 8
+	icon = 11
 }
 
 sacred_carnac = {
 	local_tax_modifier = 0.05
 	tech_growth_modifier_economy = 0.02
-	icon = 8
+	icon = 11
 }
 
 sacred_stonehenge = {
 	tech_growth_modifier_culture = 0.08
-	icon = 8
+	icon = 11
 }
 
 sacred_hill_of_uisneach = {
 	tech_growth_modifier_military = 0.02
 	local_build_cost_modifier = -0.05
-	icon = 8
+	icon = 11
 }
 sacred_ring_of_brodgar = {
 	temple_levy_size = 0.05
 	fort_level = 0.03
-	icon = 8
+	icon = 11
 }
 sacred_bear = {
 	tech_growth_modifier_economy = 0.02
 	garrison_size = 0.02
-	icon = 8
+	icon = 11
 }
 sacred_horse = {
 	supply_limit = 0.02
 	local_revolt_risk = -0.02
-	icon = 8
+	icon = 11
 }
 sacred_yew = {
 	tech_growth_modifier_culture = 0.02
 	temple_levy_size = 0.02
-	icon = 8
+	icon = 11
 }
 sacred_stag = {
 	local_tax_modifier = 0.01
 	levy_size = 0.015
-	icon = 8
+	icon = 11
 }
 sacred_dog = {
 	disease_defence = 0.025
 	garrison_growth = 0.015
-	icon = 8
+	icon = 11
 }
 sacred_oak = {
 	tech_growth_modifier = 0.02
-	icon = 8
+	icon = 11
 }
 sacred_standing_stones = {
 	local_revolt_risk = -0.02
 	local_tax_modifier = 0.02
-	icon = 8
+	icon = 11
 }
 sacred_lake = {
-	tech_growth_modifier_military = 0.02
-	local_tax_modifier = 0.02
-	icon = 8
+	tech_growth_modifier_military = 0.05
+	local_tax_modifier = 0.1
+	icon = 11
 }
 sacred_source = {
 	disease_defence = 0.04
-	icon = 8
+	icon = 11
 }
 sacred_river = {
 	fort_level = 0.02
 	local_build_time_modifier = -0.02
-	icon = 8
+	icon = 11
+}
+sidhe_angry = {
+	local_revolt_risk = 0.05
+	local_tax_modifier = -0.1
+	local_build_time_modifier = 0.05
+	local_build_cost_modifier = 0.05
+	icon = 26
+}
+sidhe_offerings_bad ={
+	monthly_character_piety = -0.02
+	icon = 11
+}
+sidhe_offerings_neutral = {
+	monthly_character_piety = 0.02
+	icon = 11
+}
+sidhe_offerings_good = {
+	monthly_character_piety = 0.05
+	icon = 11
 }

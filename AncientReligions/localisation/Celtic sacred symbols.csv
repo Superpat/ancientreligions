@@ -37,3 +37,33 @@ sacred_source;Sacred Spring;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 sacred_source_desc;The waters flowing from this source are thought to hold healing powers and are thus sacred.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 sacred_river;Sacred River;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 sacred_river_desc;A goddess is believed to reside in the waters of this river, blessing all peoples living near it.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+give_offerings_sidhe;Offerings to the Sidhe;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+give_offerings_sidhe_desc;The spirits and minor gods of the land must also be appeased.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+prepare_offerings;Prepare a ceremony to appease the sidhe.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0247.desc;Spirits are angry;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0247.a;ok;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+sidhe_angry;;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+sidhe_angry_desc;;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0248.desc;Offerings start;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0248.a;Poems;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0248.b;Gold;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0249.desc;Offering poem;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0249.a;ok;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0253.desc;Offering gold;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0253.a;ok;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0250.desc;Sidhe are not satisfied;FRENCH;GERMAN;;SPANISH;;;;;;;;;;x
+ancrel.0250.a;ok;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+sidhe_offerings_bad;Bad;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+sidhe_offerings_bad_desc;Bad;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0251.desc;Sidhe are satisfied;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0251.a;ok;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+sidhe_offerings_neutral;Neutral;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+sidhe_offerings_neutral_desc;Neutral;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0252.desc;Sidhe are happy;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0252.a;ok;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+sidhe_offerings_good;Good;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+sidhe_offerings_good_desc;Good;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0253.desc;Spirits destroy sacred sites;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0213.a;Ok;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0254.desc;Spirits are calmed;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0254.a;Ok;FRENCH;GERMAN;;SPANISH;;;;;;;;;x

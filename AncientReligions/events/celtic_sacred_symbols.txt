@@ -7,7 +7,6 @@
 namespace = ancrel
 
 #Set up holy symbol
-
 province_event = {
 	id = ancrel.0211
 	desc = ancrel.0211.desc
@@ -19,24 +18,12 @@ province_event = {
 				religion = druidic
 				religion = druidic_reformed			
 			}
-			learning = 8
-			piety = 500
-			Or = {
-				trait = head1
-				trait = head2
-				trait = zealous
-				trait = brave
-				trait = fian
-				trait = druid
-				trait = poet
-				trait = mystic
-				trait = lunatic
-				trait = changeling
-			}
+			piety = 250
 			NOT = {
 				trait = cynical
 			}
 		}
+		NOT = { has_province_modifier = sidhe_angry }
 		NOT = { has_province_modifier = sacred_the_giants_causeway }
 		NOT = { has_province_modifier = sacred_lia_fail }
 		NOT = { has_province_modifier = sacred_carnac }
@@ -62,7 +49,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 100
+		months = 260
 		modifier = {
 			owner = {
 				trait = head2
@@ -82,22 +69,114 @@ province_event = {
 			factor = 0.02
 		}
 		modifier = {
+			factor = 1.2
 			owner = {
-				learning = 13
+				trait = cynical
 			}
-			factor = 0.04
 		}
 		modifier = {
+			factor = 0.8
 			owner = {
-				learning = 8
+				trait = zealous
 			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				trait = greedy
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				trait = charitable
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				trait = cruel
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				trait = kind
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				trait = proud
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				trait = humble
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				trait = slothful
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				trait = diligent
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				trait = changeling
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				NOT = { learning = 5 }
+			}
+		}
+		modifier = {
 			factor = 1.5
+			owner = {
+				learning = 5
+				NOT = { learning = 10 }
+			}
 		}
 		modifier = {
+			factor = 0.75
 			owner = {
-				trait = coward
+				learning = 10
+				NOT = { learning = 16 }
 			}
-			factor = 2.0
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				learning = 16
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				has_character_modifier = sidhe_offerings_good 
+			}
+		}
+		modifier = {
+			factor = 0.9
+			owner = {
+				has_character_modifier = sidhe_offerings_neutral 
+			}
+		}
+		modifier = {
+			factor = 1.8
+			owner = {
+				has_character_modifier = sidhe_offerings_bad 
+			}
 		}
 		modifier = {
 			owner = {
@@ -291,8 +370,8 @@ province_event = {
 		}
 	}
 }
-# Remove holy symbol
 
+# Remove sacred symbol
 province_event = {
 	id = ancrel.0213
 	desc = ancrel.0213.desc
@@ -456,4 +535,698 @@ province_event = {
 			}
 		}
 	}
+}
+
+# Spirits are angry
+province_event = {
+	id = ancrel.0247
+	desc = ancrel.0247.desc
+	picture = GFX_evt_journey_to_spirit_world
+	
+	trigger = {
+		owner = {
+			OR = {
+				religion = druidic
+				religion = druidic_reformed			
+			}
+		}
+		NOT = {
+			has_province_modifier = sidhe_angry
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 260
+		modifier = {
+			factor = 0.8
+			owner = {
+				trait = cynical
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				trait = zealous
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				trait = greedy
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				trait = charitable
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				trait = cruel
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				trait = kind
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				trait = proud
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				trait = humble
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				trait = slothful
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				trait = diligent
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				NOT = { learning = 5 }
+			}
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				learning = 5
+				NOT = { learning = 10 }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				learning = 10
+				NOT = { learning = 16 }
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				learning = 16
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				trait = head2 
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				trait = head1
+			}
+		}
+		modifier = {
+			factor = 1.8
+			owner = {
+				has_character_modifier = sidhe_offerings_good 
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				has_character_modifier = sidhe_offerings_neutral 
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				has_character_modifier = sidhe_offerings_bad 
+			}
+		}
+	}
+	
+	option = {
+		name = ancrel.0247.a
+		add_province_modifier = {
+			name = sidhe_angry
+			duration = -1
+		}
+	}
+}
+
+# Lost sacred symbol
+province_event = {
+	id = ancrel.0253
+	desc = ancrel.0253.desc
+	picture = GFX_evt_journey_to_spirit_world
+	
+		trigger = {
+		owner = {
+			OR = {
+				religion = druidic
+				religion = druidic_reformed			
+			}
+		}
+		has_province_modifier = sidhe_angry
+		OR = {
+			has_province_modifier = sacred_bear
+			has_province_modifier = sacred_horse
+			has_province_modifier = sacred_yew
+			has_province_modifier = sacred_stag
+			has_province_modifier = sacred_dog
+			has_province_modifier = sacred_oak
+			has_province_modifier = sacred_standing_stones
+			has_province_modifier = sacred_lake
+			has_province_modifier = sacred_source
+			has_province_modifier = sacred_river
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 260
+		modifier = {
+			factor = 0.8
+			owner = {
+				trait = cynical
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				trait = zealous
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				trait = greedy
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				trait = charitable
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				trait = cruel
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				trait = kind
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				trait = proud
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				trait = humble
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				trait = slothful
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				trait = diligent
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				NOT = { learning = 5 }
+			}
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				learning = 5
+				NOT = { learning = 10 }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				learning = 10
+				NOT = { learning = 16 }
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				learning = 16
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				trait = head2 
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				trait = head1
+			}
+		}
+		modifier = {
+			factor = 1.8
+			owner = {
+				has_character_modifier = sidhe_offerings_good 
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				has_character_modifier = sidhe_offerings_neutral 
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				has_character_modifier = sidhe_offerings_bad 
+			}
+		}
+	}
+	
+	option = {
+		name = ancrel.0253.a
+		hidden_tooltip = {
+			if = {
+				limit = {
+					has_province_modifier = sacred_bear
+				}
+				remove_province_modifier = sacred_bear
+			}
+			if = {
+				limit = {
+					has_province_modifier = sacred_horse
+				}
+				remove_province_modifier = sacred_horse
+			}
+			if = {
+				limit = {
+					has_province_modifier = sacred_yew
+				}
+				remove_province_modifier = sacred_yew
+			}
+			if = {
+				limit = {
+					has_province_modifier = sacred_stag
+				}
+				remove_province_modifier = sacred_stag
+			}
+			if = {
+				limit = {
+					has_province_modifier = sacred_dog
+				}
+				remove_province_modifier = sacred_dog
+			}
+			if = {
+				limit = {
+					has_province_modifier = sacred_oak
+				}
+				remove_province_modifier = sacred_oak
+			}
+			if = {
+				limit = {
+					has_province_modifier = sacred_standing_stones
+				}
+				remove_province_modifier = sacred_standing_stones
+			}
+			if = {
+				limit = {
+					has_province_modifier = sacred_lake
+				}
+				remove_province_modifier = sacred_lake
+			}
+			if = {
+				limit = {
+					has_province_modifier = sacred_source
+				}
+				remove_province_modifier = sacred_source
+			}
+			if = {
+				limit = {
+					has_province_modifier = sacred_river
+				}
+				remove_province_modifier = sacred_river
+			}
+		}
+	}
+}
+
+# Spirits are calmed
+province_event = {
+	id = ancrel.0254
+	desc = ancrel.0254.desc
+	picture = GFX_evt_journey_to_spirit_world
+	
+	trigger = {
+		owner = {
+			OR = {
+				religion = druidic
+				religion = druidic_reformed			
+			}
+		}
+		has_province_modifier = sidhe_angry
+	}
+	
+	mean_time_to_happen = {
+		months = 260
+		modifier = {
+			factor = 1.5
+			owner = {
+				trait = cynical
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				trait = zealous
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				trait = greedy
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				trait = charitable
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				trait = cruel
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				trait = kind
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				trait = proud
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				trait = humble
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				trait = slothful
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				trait = diligent
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				NOT = { learning = 5 }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				learning = 5
+				NOT = { learning = 8 }
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				learning = 8
+				NOT = { learning = 16 }
+			}
+		}
+		modifier = {
+			factor = 0.2
+			owner = {
+				learning = 16
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				trait = head2 
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				trait = head1
+			}
+		}
+		modifier = {
+			factor = 0.2
+			owner = {
+				has_character_modifier = sidhe_offerings_good 
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				has_character_modifier = sidhe_offerings_neutral 
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				has_character_modifier = sidhe_offerings_bad 
+			}
+		}
+	}
+	
+	option = {
+		name = ancrel.0254.a
+		remove_province_modifier = sidhe_angry
+	}
+}
+
+##################################################################
+# Offerings
+##################################################################
+
+#Offerings start
+character_event = {
+	id = ancrel.248
+	desc = ancrel.248.desc
+	picture = GFX_evt_journey_to_spirit_world
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ancrel.248.a
+		scaled_wealth = -0.25
+		hidden_tooltip = {
+			character_event = { id = ancrel.0253 days = 5 }
+		}
+	}
+	option = {
+		name = ancrel.248.b
+		trigger = {
+			OR = {
+				any_vassal = {
+					has_minor_title = title_court_bard
+				}
+				any_courtier = {
+					has_minor_title = title_court_bard
+				}
+			}
+		}
+		hidden_tooltip = {
+			character_event = { id = ancrel.0249 days = 5 }
+		}
+	}
+	
+}
+
+#Offerings middle (Poem)
+character_event = {
+	id = ancrel.0249
+	desc = ancrel.0249.desc
+	picture = GFX_evt_journey_to_spirit_world
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ancrel.0249.a
+		if = {
+			limit = {
+				NOT = { learning = 8 }
+			}
+			random_list = {
+				35 = { character_event = { id = ancrel.0250 days = 2 tooltip = "ancrel.0250.tooltip" } } #bad
+				50 = { character_event = { id = ancrel.0251 days = 2 tooltip = "ancrel.0251.tooltip" } } #neutral
+				15 = { character_event = { id = ancrel.0252 days = 2 tooltip = "ancrel.0252.tooltip" } } #good
+			}
+		}
+		if = {
+			limit = {
+				learning = 8
+				NOT = { learning = 16 }
+			}
+			random_list = {
+				25 = { character_event = { id = ancrel.0250 days = 2 tooltip = "ancrel.0250.tooltip" } } #bad
+				50 = { character_event = { id = ancrel.0251 days = 2 tooltip = "ancrel.0251.tooltip" } } #neutral
+				25 = { character_event = { id = ancrel.0252 days = 2 tooltip = "ancrel.0252.tooltip" } } #good
+			}
+		}
+		if = {
+			limit = {
+				learning = 16
+			}
+			random_list = {
+				15 = { character_event = { id = ancrel.0250 days = 2 tooltip = "ancrel.0250.tooltip" } } #bad
+				50 = { character_event = { id = ancrel.0251 days = 2 tooltip = "ancrel.0251.tooltip" } } #neutral
+				35 = { character_event = { id = ancrel.0252 days = 2 tooltip = "ancrel.0252.tooltip" } } #good
+			}
+		}
+	}
+	
+}
+
+#Offerings middle (Gold)
+character_event = {
+	id = ancrel.0253
+	desc = ancrel.0253.desc
+	picture = GFX_evt_journey_to_spirit_world
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ancrel.0253.a
+		if = {
+			limit = {
+				NOT = { stewardship = 8 }
+			}
+			random_list = {
+				35 = { character_event = { id = ancrel.0250 days = 2 tooltip = "ancrel.0250.tooltip" } } #bad
+				50 = { character_event = { id = ancrel.0251 days = 2 tooltip = "ancrel.0251.tooltip" } } #neutral
+				15 = { character_event = { id = ancrel.0252 days = 2 tooltip = "ancrel.0252.tooltip" } } #good
+			}
+		}
+		if = {
+			limit = {
+				stewardship = 8
+				NOT = { stewardship = 16 }
+			}
+			random_list = {
+				25 = { character_event = { id = ancrel.0250 days = 2 tooltip = "ancrel.0250.tooltip" } } #bad
+				50 = { character_event = { id = ancrel.0251 days = 2 tooltip = "ancrel.0251.tooltip" } } #neutral
+				25 = { character_event = { id = ancrel.0252 days = 2 tooltip = "ancrel.0252.tooltip" } } #good
+			}
+		}
+		if = {
+			limit = {
+				stewardship = 16
+			}
+			random_list = {
+				15 = { character_event = { id = ancrel.0250 days = 2 tooltip = "ancrel.0250.tooltip" } } #bad
+				50 = { character_event = { id = ancrel.0251 days = 2 tooltip = "ancrel.0251.tooltip" } } #neutral
+				35 = { character_event = { id = ancrel.0252 days = 2 tooltip = "ancrel.0252.tooltip" } } #good
+			}
+		}
+	}
+	
+}
+
+#Offerings bad
+character_event = {
+	id = ancrel.0250
+	desc = ancrel.0250.desc
+	picture = GFX_evt_journey_to_spirit_world
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ancrel.0250.a
+		prestige = -25
+		piety = -15
+		clr_character_flag = sidhe_offerings_giving
+		add_character_modifier = {
+			name = sidhe_offerings_bad
+			duration = 730
+		}
+	}
+	
+}
+
+#Offerings neutral
+character_event = {
+	id = ancrel.0251
+	desc = ancrel.0251.desc
+	picture = GFX_evt_journey_to_spirit_world
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ancrel.0251.a
+		piety = 5
+		clr_character_flag = sidhe_offerings_giving
+		add_character_modifier = {
+			name = sidhe_offerings_neutral
+			duration = 730
+		}
+	}
+	
+}
+
+#Offerings good
+character_event = {
+	id = ancrel.0252
+	desc = ancrel.0252.desc
+	picture = GFX_evt_journey_to_spirit_world
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ancrel.0252.a
+		prestige = 25
+		piety = 15
+		clr_character_flag = sidhe_offerings_giving
+		add_character_modifier = {
+			name = sidhe_offerings_good
+			duration = 730
+		}
+	}
+	
 }

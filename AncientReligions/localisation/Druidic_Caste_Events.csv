@@ -9,7 +9,7 @@ EVTDESCancrel.0245;I have searched far and wide for a worthy Druid to serve at m
 EVTOPTAancrel.0245;Let us meet, then.;French;German;;Spanish;;;;;;;;;;;x
 EVTDESCancrel.0246;A lord must choose his Druid with care, for while all druids are wise, not all have specialised in the same teachings.;French;German;;Spanish;;;;;;;;;;;x
 EVTOPTAancrel.0246;Send for a master of law.;French;German;;Spanish;;;;;;;;;;;x
-EVTOPTAancrel.0246;Bring me a servant of the gods.;French;German;;Spanish;;;;;;;;;;;x
+EVTOPTBancrel.0246;Bring me a servant of the gods.;French;German;;Spanish;;;;;;;;;;;x
 EVTDESCancrel.0153;The people of your court are incredulous. “Great [Root.GetTitle], it is a shame that you do not have a Druid at court! Are you to be like a Bard without his voice, a warrior without his spear, a farmer without his seeds?” No self-respecting ruler of the islands can go without a Druid, after all.;French;German;;Spanish;;;;;;;;;;;x
 EVTOPTAancrel.0153;I must find a knowledgeable Druid soon, and fast!;French;German;;Spanish;;;;;;;;;;;x
 new_druid_in_court;New Druid in Court;French;German;;Spanish;;;;;;;;;;;x

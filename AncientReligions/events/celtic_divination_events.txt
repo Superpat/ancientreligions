@@ -2093,21 +2093,27 @@ character_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAancrel.0065
-		prestige = -200
-		hidden_tooltip = {
-			any_vassal = {
-				limit = { has_character_flag = attending_divination }
-				character_event = { id = ancrel.0070 }
+		name = EVTOPTAancrel.0065		
+		custom_tooltip = {
+			text = divination_bad
+			prestige = -200
+			hidden_tooltip = {
+				any_vassal = {
+					limit = { has_character_flag = attending_divination }
+					character_event = { id = ancrel.0070 }
+				}
+				character_event = { id = ancrel.0062 days = 1 }
 			}
-			character_event = { id = ancrel.0062 days = 1 }
-		}
-		set_character_flag = divination
-		any_vassal = {
-			limit = { has_character_flag = attending_divination }
-			opinion = {
-				modifier = opinion_held_divination
-				who = ROOT
+			set_character_flag = divination
+			any_vassal = {
+				limit = { 
+					has_character_flag = attending_divination
+					NOT = { trait = cynical }
+				}
+				opinion = {
+					modifier = opinion_held_bad_divination
+					who = ROOT
+				}
 			}
 		}
 	}
@@ -2126,20 +2132,26 @@ character_event = {
 	
 	option = {
 		name = EVTOPTAancrel.0066
-		piety = -50
-		hidden_tooltip = {
-			any_vassal = {
-				limit = { has_character_flag = attending_divination }
-				character_event = { id = ancrel.0071 }
+		custom_tooltip = {
+			text = divination_bad
+			piety = -50
+			hidden_tooltip = {
+				any_vassal = {
+					limit = { has_character_flag = attending_divination }
+					character_event = { id = ancrel.0071 }
+				}
+				character_event = { id = ancrel.0062 days = 1 }
 			}
-			character_event = { id = ancrel.0062 days = 1 }
-		}
-		set_character_flag = divination
-		any_vassal = {
-			limit = { has_character_flag = attending_divination }
-			opinion = {
-				modifier = opinion_held_divination
-				who = ROOT
+			set_character_flag = divination
+			any_vassal = {
+				limit = { 
+					has_character_flag = attending_divination
+					NOT = { trait = cynical }
+				}
+				opinion = {
+					modifier = opinion_held_bad_divination
+					who = ROOT
+				}
 			}
 		}
 	}

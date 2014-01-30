@@ -16,6 +16,11 @@ opinion_held_divination = {
 	months = 12
 }
 
+opinion_held_bad_divination = {
+	opinion = -5
+	months = 12
+}
+
 opinion_refused_divination = {
 	opinion = -15
 	months = 12

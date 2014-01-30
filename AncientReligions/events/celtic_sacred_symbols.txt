@@ -1047,21 +1047,21 @@ province_event = {
 
 #Offerings start
 character_event = {
-	id = ancrel.248
-	desc = ancrel.248.desc
+	id = ancrel.0248
+	desc = ancrel.0248.desc
 	picture = GFX_evt_journey_to_spirit_world
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = ancrel.248.a
+		name = ancrel.0248.a
 		scaled_wealth = -0.25
 		hidden_tooltip = {
 			character_event = { id = ancrel.0253 days = 5 }
 		}
 	}
 	option = {
-		name = ancrel.248.b
+		name = ancrel.0248.b
 		trigger = {
 			OR = {
 				any_vassal = {

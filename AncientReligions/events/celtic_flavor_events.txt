@@ -492,10 +492,10 @@ character_event = {
 
 #Founder of an Empire gets nickname
 narrative_event = {
-	id = ancrel.0249
-	title = ancrel.0248.name
-	desc = EVTDESCancrel.0249
-	picture = GFX_evt_y_mab_darogan
+	id = ancrel.0256
+	title = ancrel.0256.name
+	desc = EVTDESCancrel.0256
+	picture = GFX_event_y_mab_darogan
 	
 	only_rulers = yes
 
@@ -523,7 +523,7 @@ narrative_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.0249 #Ok
+		name = EVTOPTAancrel.0256 #Ok
 		give_nickname = nick_pendragon
 		set_character_flag = first_brythonic_emperor
 		prestige = 200

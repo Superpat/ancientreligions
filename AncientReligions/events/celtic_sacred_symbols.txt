@@ -10,7 +10,7 @@ namespace = ancrel
 province_event = {
 	id = ancrel.0211
 	desc = ancrel.0211.desc
-	picture = GFX_evt_journey_to_spirit_world
+	picture = GFX_evt_Pagan_dolmen
 	
 	trigger = {
 		owner = {
@@ -262,7 +262,7 @@ province_event = {
 province_event = {
 	id = ancrel.0212
 	desc = ancrel.0211.desc
-	picture = GFX_evt_journey_to_spirit_world
+	picture = GFX_evt_Pagan_dolmen
 	
 	trigger = {
 		owner = {
@@ -375,7 +375,7 @@ province_event = {
 province_event = {
 	id = ancrel.0213
 	desc = ancrel.0213.desc
-	picture = GFX_evt_journey_to_spirit_world
+	picture = GFX_evt_Pagan_dolmen
 	
 		trigger = {
 		owner = {
@@ -541,7 +541,7 @@ province_event = {
 province_event = {
 	id = ancrel.0247
 	desc = ancrel.0247.desc
-	picture = GFX_evt_journey_to_spirit_world
+	picture = GFX_evt_Pagan_dolmen
 	
 	trigger = {
 		owner = {
@@ -688,7 +688,7 @@ province_event = {
 province_event = {
 	id = ancrel.0253
 	desc = ancrel.0253.desc
-	picture = GFX_evt_journey_to_spirit_world
+	picture = GFX_evt_Pagan_dolmen
 	
 		trigger = {
 		owner = {
@@ -903,7 +903,7 @@ province_event = {
 province_event = {
 	id = ancrel.0254
 	desc = ancrel.0254.desc
-	picture = GFX_evt_journey_to_spirit_world
+	picture = GFX_evt_Pagan_dolmen
 	
 	trigger = {
 		owner = {
@@ -1049,7 +1049,7 @@ province_event = {
 character_event = {
 	id = ancrel.0248
 	desc = ancrel.0248.desc
-	picture = GFX_evt_journey_to_spirit_world
+	picture = GFX_evt_Pagan_dolmen
 	
 	is_triggered_only = yes
 	
@@ -1083,7 +1083,7 @@ character_event = {
 character_event = {
 	id = ancrel.0249
 	desc = ancrel.0249.desc
-	picture = GFX_evt_journey_to_spirit_world
+	picture = GFX_evt_Pagan_dolmen
 	
 	is_triggered_only = yes
 	
@@ -1128,7 +1128,7 @@ character_event = {
 character_event = {
 	id = ancrel.0253
 	desc = ancrel.0253.desc
-	picture = GFX_evt_journey_to_spirit_world
+	picture = GFX_evt_Pagan_dolmen
 	
 	is_triggered_only = yes
 	
@@ -1173,7 +1173,7 @@ character_event = {
 character_event = {
 	id = ancrel.0250
 	desc = ancrel.0250.desc
-	picture = GFX_evt_journey_to_spirit_world
+	picture = GFX_evt_Pagan_dolmen
 	
 	is_triggered_only = yes
 	
@@ -1194,7 +1194,7 @@ character_event = {
 character_event = {
 	id = ancrel.0251
 	desc = ancrel.0251.desc
-	picture = GFX_evt_journey_to_spirit_world
+	picture = GFX_evt_Pagan_dolmen
 	
 	is_triggered_only = yes
 	
@@ -1214,7 +1214,7 @@ character_event = {
 character_event = {
 	id = ancrel.0252
 	desc = ancrel.0252.desc
-	picture = GFX_evt_journey_to_spirit_world
+	picture = GFX_evt_Pagan_dolmen
 	
 	is_triggered_only = yes
 	

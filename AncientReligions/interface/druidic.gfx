@@ -238,4 +238,17 @@ spriteTypes = {
 		texturefile = "gfx\\event_pictures\y_mab_darogan.tga"
 		allwaystransparent = yes
 	}
+	# Decision icons
+	spriteType = {
+		name = "GFX_hold_divination"
+		texturefile = "gfx\\interface\\decision_icon_hold_divination.dds"
+	}
+	spriteType = {
+		name = "GFX_invite_druid_to_court"
+		texturefile = "gfx\\interface\\decision_icon_invite_druid_to_court.dds"
+	}
+	spriteType = {
+		name = "GFX_give_offerings_sidhe"
+		texturefile = "gfx\\interface\\decision_icon_give_offerings_sidhe.dds"
+	}
 }

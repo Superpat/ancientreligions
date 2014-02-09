@@ -130,4 +130,5 @@ title_vates_desc;The vates were one of three classes of Celtic priesthood, the o
 abdication_gaelic;Abdicate your throne;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 abdication_gaelic_desc;Your injuries are a sign of weakness, following great Nuada's example, it would be wise to abdicate your throne for the safety of your people.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 gaelic_abdication;For the glory of Éire!;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-unfit_gaelic_king;A serious injury to this ruler's body has made his rule illegitimate in the eyes of his people;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+unfit_gaelic_king;Unfit to rule;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+unfit_gaelic_king_desc;A serious injury to this ruler's body has made his rule illegitimate in the eyes of his people;FRENCH;GERMAN;SPANISH;;;;;;;;;;x

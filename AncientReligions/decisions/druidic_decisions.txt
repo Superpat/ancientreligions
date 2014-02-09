@@ -468,3 +468,54 @@ decisions = {
 		}
 	}
 }
+
+	abdicate_gaelic = {
+		potential = {
+			is_ruler = yes
+			prisoner = no
+			OR = {
+				religion = druidic
+				religion = druidic_reformed
+			}
+			has_character_modifier = unfit_gaelic_king
+		}
+		allow = {
+			war = no
+			any_demesne_title = {
+				is_occupied = no
+			}
+			prisoner = no
+		}
+		effect = {
+			custom_tooltip = {
+				text = gaelic_abdication
+				abdicate = yes
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					scaled_wealth = 3.0
+				}
+			}
+			modifier = {
+				factor = 0
+				trait = cynical
+			}
+			modifier = {
+				factor = 0
+				trait = coward
+			}
+			modifier = {
+				factor = 0
+				trait = paranoid
+			}
+		}
+	}
+}

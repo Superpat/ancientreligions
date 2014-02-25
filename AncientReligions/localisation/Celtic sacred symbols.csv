@@ -40,30 +40,30 @@ sacred_river_desc;A goddess is believed to reside in the waters of this river, b
 give_offerings_sidhe;Offerings to the Sidhe;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 give_offerings_sidhe_desc;The spirits and minor gods of the land must also be appeased.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 prepare_offerings;Prepare a ceremony to appease the sidhe.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0247.desc;Spirits are angry;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0247.a;ok;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-sidhe_angry;;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-sidhe_angry_desc;;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0248.desc;Offerings start;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0248.a;Poems;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0248.b;Gold;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0249.desc;Offering poem;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0249.a;ok;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0253.desc;Offering gold;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0253.a;ok;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0250.desc;Sidhe are not satisfied;FRENCH;GERMAN;;SPANISH;;;;;;;;;;x
-ancrel.0250.a;ok;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-sidhe_offerings_bad;Bad;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-sidhe_offerings_bad_desc;Bad;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0251.desc;Sidhe are satisfied;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0251.a;ok;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-sidhe_offerings_neutral;Neutral;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-sidhe_offerings_neutral_desc;Neutral;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0252.desc;Sidhe are happy;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0252.a;ok;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-sidhe_offerings_good;Good;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-sidhe_offerings_good_desc;Good;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0253.desc;Spirits destroy sacred sites;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0213.a;Ok;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0254.desc;Spirits are calmed;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0254.a;Ok;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0247.desc;A few dead birds, lost crops, disease... These are all signs of restlessness amongst the lesser gods and spirits of the land, it does not take long before your druids come bearing ill news. It seems like the Sidhe are angry, whether the cause of a peasant's stupidity or a warrior's cowardice, this does not bode well for the realm.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0247.a;I must find a way to appease the Sidhe.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+sidhe_angry;Restless Sidhe;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+sidhe_angry_desc;The Sidhe in this province are restless and are the cause of many troubles.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0248.desc;At the behest of your court druid, you have decided to hold a ceremony for the Sidhe, the minor gods and spirits of the realm, in order to honor them with an offering. You hope this is enough to improve your relationship with them, but before you continue, you must decide on what offering to make. ;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0248.a;I will make an offering of gold and treasure.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0248.b;My court bard will help me craft a worthy ballad.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0249.desc;As you and your men gather in the sacred grove, your druid and vates start spreading the scent of burning herbs to attract the attention of the Sidhe. Your court bard approaches the middle of the grove and starts singing a beautiful ballad, the hymn resonating in the night air.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0249.a;Lets hope the Sidhe accept this offering;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0253.desc;Fine treasures of gold and silver are brought inside the grove, the smell of burning herbs permeates the air as you kneel before a small stream of water. You slowly place the offerings inside the stream and watch as they are taken away, to be enjoyed by the spirits.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0253.a;Lets hope the Sidhe accept this offering;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0250.desc;Despite your offering, it seems like the Sidhe have not accepted your attempt at bolstering your relations. Your druid says that your offering was seen as disrespectful and insulting, while they might not get angry, we must thread carefully.;FRENCH;GERMAN;;SPANISH;;;;;;;;;;x
+ancrel.0250.a;There is no satisfying them!;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+sidhe_offerings_bad;Sidhe rejected offerings;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+sidhe_offerings_bad_desc;The recent offerings made by this ruler to appease the Sidhe have been rejected;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0251.desc;You await, breathless, as the Druids colloquy with the Sidhe comes to an end. It seems like your offerings have been accepted! Nonetheless he warns you that the spirits are not necessarily pleased and, while they will probably not cause any troubles, future offerings will need to be superior for them to be satisfied completely.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0251.a;We have peace, for now..;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+sidhe_offerings_neutral;Sidhe accepted offerings;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+sidhe_offerings_neutral_desc;An inferior offering left the spirits of the land satisfied, but wanting for more.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0252.desc;The good news rapidly spread thoughout your lands, the offerings made to the great Sidhe have been accepted! The Druid tells of dancing elves and restfull tree-spirits receiving the offerings with great pleasure. While the Sidhe are fickle beings, it is probable that our standing with them shall improve.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0252.a;Praise be the gods!;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+sidhe_offerings_good;Sidhe appreciate offerings;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+sidhe_offerings_good_desc;Recent offerings to the Sidhe has put this ruler in good standing with them.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0253.desc;Terrible winds scour our domain, waters appears where none was before.. It seems that the Sidhe, the ancient spirits that protect our lands have grown restless. Their antics have destroyed many of the shrines and groves that praise our protectors.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0213.a;We must find a way to appease them!;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0254.desc;Through just ruling and worthy sacrifices, it seems you have managed to calm the spirits that lay siege to our lands, the freemen will now be able to completely dedicate themselves again to the support of your rule. ;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0254.a;Thank you [This.Religion.GetRandomGodNameCap];FRENCH;GERMAN;;SPANISH;;;;;;;;;x

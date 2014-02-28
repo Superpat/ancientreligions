@@ -37,7 +37,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_trait_learning_druidic_arts"
-		texturefile = "gfx/traits/druid.dds"
+		texturefile = "gfx/traits/learning_druidic_arts.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"

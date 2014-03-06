@@ -251,4 +251,16 @@ spriteTypes = {
 		name = "GFX_give_offerings_sidhe"
 		texturefile = "gfx\\interface\\decision_icon_give_offerings_sidhe.dds"
 	}
+	spriteType = {
+		name = "GFX_organize_fianna"
+		texturefile = "gfx\\interface\\decision_icon_organize_fianna.dds"
+	}
+	spriteType = {
+		name = "GFX_vassalize_fianna"
+		texturefile = "gfx\\interface\\decision_icon_vassalize_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_hold_an_aonach_tailteann"
+		texturefile = "gfx\\interface\\decision_icon_hold_an_aonach_tailteann.dds"
+	}
 }

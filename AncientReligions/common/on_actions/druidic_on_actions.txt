@@ -1,6 +1,7 @@
 on_death = {
 	events = {
 		ancrel.1194
+		45340 # Thirteen treasures inheritance
 	}
 }
 
@@ -24,7 +25,7 @@ on_adulthood = {
 
 on_combat_pulse = {
 	random_events = {
-		17 = ancrel.0010 # Becomes reknowned headhunter
+		20 = ancrel.0010 # Becomes reknowned headhunter
 		5 = ancrel.0011 # Becomes a legendary hero
 	}
 }

@@ -1,14 +1,53 @@
-# HOLY ORDERS
+# Mercenaries
 
 d_wolftails = {
+	color={ 75 75 0 }
+	color2={ 255 255 255 }
+
+	capital = 64
 	
-	color={ 75 75 75 }
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+	}
+	
+	# Parent Religion 
+	religion = druidic
+	culture = welsh
+	
+	mercenary = yes
+
+	title = "WARCHIEF"
+	foa = "WARCHIEF_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	# Cannot be vassalized
+	independent = yes
+	
+	strength_growth_per_century = 1.0
+
+	modifier = d_wolftails_modifier
+}
+
+# HOLY ORDERS
+
+d_red_dragons = {
+	
+	color={ 75 0 75 }
 	color2={ 255 255 255 }
 	
 	capital = 64
 
-	title = "WARCHIEF"
-	foa = "WARCHIEF_FOA"
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
 	
 	# Always exists
 	landless = yes
@@ -20,10 +59,12 @@ d_wolftails = {
 	
 	culture = welsh
 	
+	monthly_income = 4
+	
 	# Cannot be held as a secondary title
 	primary = yes
 
-	modifier = d_gwydion_modifier
+	modifier = d_red_dragons_modifier
 }
 
 d_fianna = {
@@ -43,6 +84,8 @@ d_fianna = {
 	
 	# Parent Religion 
 	religion = druidic
+	
+	monthly_income = 1
 	
 	culture = irish
 	

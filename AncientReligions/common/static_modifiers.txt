@@ -553,11 +553,11 @@ d_knights_calatrava_modifier = {
 	archers = 100
 }
 
-d_gwydion_modifier = {
+d_red_dragons_modifier = {
 	levy_size = 6
-	heavy_infantry = 700
-	light_infantry = 300
-	archers = 500
+	knights = 200
+	archers = 250
+	heavy_infantry = 250
 }
 
 d_fianna_modifier = {
@@ -565,6 +565,14 @@ d_fianna_modifier = {
 	heavy_infantry = 700
 	light_infantry = 300
 	archers = 500
+}
+
+d_wolftails_modifier = {
+	levy_size = 3
+	archers = 300
+	pikemen = 150
+	heavy_infantry = 150
+	light_cavalry = 150
 }
 
 d_muslim_turkic_company_modifier = {

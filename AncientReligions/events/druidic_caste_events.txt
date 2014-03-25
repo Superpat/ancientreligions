@@ -446,8 +446,6 @@ character_event = {
 	desc = "EVTDESCancrel.0184"
 	picture = "GFX_evt_child_bully"
 	
-	is_triggered_only = yes
-	
 	min_age = 13
 	max_age = 16
 
@@ -463,7 +461,7 @@ character_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 1
+		months = 6
 	}
 	
 	option = {

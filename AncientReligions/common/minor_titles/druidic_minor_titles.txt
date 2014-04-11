@@ -80,23 +80,20 @@ title_royal_champion = {
 		is_adult = yes
 		FROM = {
 			is_feudal = yes
-			AND = {
+			OR = {
 				primary_title = {
-					OR = {
-						tier = king
-						tier = emperor
-					}
+					higher_tier_than = duke		# is a king or emperor
 				}
-				OR = {
+				AND = {
 					primary_title = {
-						tier = duke
+						tier = duke			# or an independent duke
 					}
-					independent = yes
+					is_independent = yes
 				}
-				OR = {
-					religion = druidic
-					religion = druidic_reformed
-				}
+			}
+			OR = {
+				religion = druidic
+				religion = druidic_reformed
 			}
 		}
 		AND = {

@@ -751,9 +751,9 @@ character_event = {
 		has_character_flag = druidic_training
 		NOT = { trait = brilliant_strategist }
 		OR = {
-			trait = misguided_warrior
-			trait = tough_soldier
-			trait = skilled_tactician
+			trait = detached_priest
+			trait = martial_cleric
+			trait = scholarly_theologian
 		}
 	}
 	

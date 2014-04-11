@@ -958,3 +958,582 @@ letter_event = {
 		name = EXCELLENT
 	}
 }
+
+#############################################
+#
+# Fianna band event Series
+#
+# Event ID ancrel.1254-71999 is reserved
+#
+#############################################
+#Written by Patrick Marchand
+
+#Fianna visiting
+character_event = {
+	id = ancrel.1254
+	desc = EVTDESCancrel.1254	
+	
+	is_triggered_only = yes
+	
+	only_playable = yes
+	prisoner = no
+	
+	picture = GFX_evt_emissary
+
+	trigger = {
+		war = no
+		in_command = no
+		Or = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+		Or = {
+			culture = irish
+			culture = scottish
+		}
+		NOT = { has_character_flag = fian_band_visiting }
+		NOT = { has_character_flag = hates_fianna }
+		any_courtier = {
+			has_job_title = job_chancellor
+		}
+	}
+
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 1.5
+			trait = gregarious
+		}
+		modifier = {
+			factor = 2.0
+			prestige = 100
+		}
+		modifier = {
+			factor = 2.0
+			tier = count
+		}
+		modifier = {
+			factor = 0.5
+			tier = king
+		}
+		modifier = {
+			factor = 0.2
+			tier = emperor
+		}
+		modifier = {
+			factor = 0.8
+			trait = stressed
+		}
+		modifier = {
+			factor = 0.8
+			trait = depressed
+		}
+		modifier = {
+			factor = 0.75
+			trait = lunatic
+		}
+		modifier = {
+			factor = 0.75
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.9
+			trait = ill
+		}
+		modifier = {
+			factor = 0.8
+			trait = pneumonic
+		}
+		modifier = {
+			factor = 0.8
+			trait = syphilitic
+		}
+		modifier = {
+			factor = 0.5
+			trait = leper
+		}
+		modifier = {
+			factor = 0.9
+			trait = wounded
+		}
+		modifier = {
+			factor = 0.8
+			trait = maimed
+		}
+		modifier = {
+			factor = 0.5
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.4
+			trait = incapable
+		}
+		modifier = {
+			factor = 0.5
+			trait = drunkard
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_tuberculosis
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_typhoid_fever
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_typhus
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_bubonic_plague
+		}
+		modifier = {
+			factor = 0.5
+			trait = has_measles
+		}		
+		modifier = {
+			factor = 0.5
+			trait = has_small_pox
+		}
+				
+	}	
+	
+	option = {
+		name = EVTOPTAancrel.1254 #Welcome them with a lavish feast
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 2
+				trait = gregarious
+			}
+			modifier = {
+				factor = 2
+				trait = charitable
+			}
+			modifier = {
+				factor = 0
+				trait = greedy
+			}
+			modifier = {
+				factor = 0
+				trait = shy
+			}
+		}
+		set_character_flag = fian_band_visiting
+		prestige = 10
+		if = {
+			limit = {
+				not = { trait = gregarious }
+			}
+			add_trait = gregarious
+		}
+		if = {
+			limit = {
+				NOT = { trait = greedy }
+			}
+			scaled_wealth = -0.2
+		}
+		if = {
+			limit = {
+				trait = greedy
+			}
+			scaled_wealth = -0.4
+			remove_trait = greedy
+		}
+		
+	}
+	option = {
+		name = EVTOPTBancrel.1254 #Welcome them reluctantly
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				OR = {
+					trait = gregarious
+					trait = proud
+					trait = ambitious
+					trait = charitable
+				}
+			}
+			
+		}
+		prestige = 1
+		scaled_wealth = -0.05
+		set_character_flag = fian_band_visiting
+	}
+	option = {
+		name = EVTOPTCancrel.1254 #Refuse them Access
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { trait = greedy }
+			}
+		}
+		prestige = -5
+		any_courtier = {
+			opinion = {
+				modifier = tight_ruler
+				who = ROOT
+			}
+		}
+	}
+}
+	
+#Minor brawl Fiann Injured
+character_event = {
+	id = ancrel.1255
+	desc = EVTDESCancrel.1255	
+	
+	only_playable = yes
+	prisoner = no
+	
+	picture = GFX_evt_joust
+	trigger = {
+	 	has_character_flag = fian_band_visiting
+		NOT = {	has_character_flag = fian_recruited }
+		NOT = {	has_character_flag = fian_woman_seduced	}
+	}
+
+	mean_time_to_happen = {
+		days = 20
+	}	
+	
+	immediate = {
+		clr_character_flag = fian_band_visiting
+		clr_character_flag = fian_recruited	
+		clr_character_flag = fian_woman_seduced
+	}
+	
+	option = {
+		name = EVTOPTAancrel.1255 	# pay for their expenses, and send them on their way
+		scaled_wealth = -0.05
+		piety = 5
+		
+	}
+	option = {
+		name = EVTOPTBancrel.1255 #let them stay at the castle while recovering.
+		prestige = -5
+		piety = 5
+		if = {
+			limit = { NOT = { personality_traits = 5 } }
+			add_trait = just
+		}
+	}
+}	
+
+#One fian distinguishes himself
+character_event = {
+	id = ancrel.1256
+	desc = EVTDESCancrel.1256	
+	
+	only_playable = yes
+	prisoner = no
+	
+	picture = GFX_evt_joust
+	
+	trigger =  {
+	 	has_character_flag = fian_band_visiting
+		NOT = {	has_character_flag = fian_recruited }
+		NOT = {	has_character_flag = fian_woman_seduced	}
+	}
+	immediate = {
+		set_character_flag = fian_recruited	
+	}
+
+	mean_time_to_happen = {
+		days = 100
+		modifier = {
+			factor = 0.5
+			trait = gregarious
+		}
+	}	
+	
+	option = {
+		name = EVTOPTAancrel.1256  #take him in your service.
+		create_character = {
+			random_traits = no
+			dynasty = random
+			female = no
+			age = 16
+			trait = brave
+			trait = ambitious
+			trait = humble
+			trait = fian
+			health = 10
+			attributes = {
+				martial = 10
+			}
+		}	
+		scaled_wealth = -0.1
+	}
+	option = {
+		name = EVTOPTBancrel.1256 #give him lavish praise.
+		prestige = 5
+	}
+}	
+
+#Male courtier insulted by fianna
+character_event = {
+	id = ancrel.1257
+	desc = EVTDESCancrel.1257	
+	
+	
+	only_playable = yes
+	prisoner = no
+	
+	picture = GFX_evt_joust
+	trigger = {
+	 	has_character_flag = fian_band_visiting
+	 	any_courtier = {
+	 		age = 16
+	 		is_female = no
+	 		OR = {
+	 			trait = cruel
+	 			trait = proud
+	 			trait = wroth
+	 			trait = zealous
+	 			trait = envious
+	 			prestige = 100
+	 		}
+	 	}
+	}	
+
+	mean_time_to_happen = {
+		days = 30
+		modifier = {
+			factor = 0.9
+			trait = arbitrary
+		}
+		
+		modifier = {
+			factor = 5
+			has_character_flag = fian_recruited	
+		}
+		
+		modifier = {
+			factor = 5
+			has_character_flag = fian_woman_seduced	
+		}		
+		
+	}	
+	option = {
+		name = EVTOPTAancrel.1257  #Throw them out.
+		clr_character_flag = fian_band_visiting
+		clr_character_flag = fian_recruited	
+		clr_character_flag = fian_woman_seduced
+		piety = -10 
+	}
+	option = {
+		name = EVTOPTBancrel.1257 #Ignore the complaints
+	 	random_courtier = {
+	 		limit = {
+	 			age = 16
+	 			is_female = no
+	 			OR = {
+		 			trait = cruel
+		 			trait = proud
+		 			trait = wroth
+		 			trait = zealous
+		 			trait = envious
+		 			prestige = 100
+		 		}
+		 	}
+			opinion = {
+				modifier = ruler_not_respect_rank
+				who = ROOT
+				months = 60
+			}
+	 	}		
+	}
+	
+}	
+
+#A young woman has been seduced by a fian
+character_event = {
+	id = ancrel.1258
+	desc = EVTDESCancrel.1258	
+	
+	only_playable = yes
+	prisoner = no
+	
+	picture = GFX_evt_lovers
+	
+	trigger = {
+		has_lover = no
+	 	has_character_flag = fian_band_visiting
+		NOT = {	has_character_flag = fian_recruited }
+		NOT = {	has_character_flag = fian_woman_seduced	}
+		any_courtier = {
+	 		age = 16
+	 		not = { age = 20 }
+	 		is_female = yes	
+	 		is_married = no
+	 		is_pregnant = no
+			fertility = 0.3
+	 	}	 	
+	}	
+	
+	immediate = {
+		set_character_flag = fian_woman_seduced
+	}
+
+	mean_time_to_happen = {
+		days = 20
+		
+		modifier = {
+			factor = 5
+			has_character_flag = fian_recruited	
+		}		
+	}	
+	option = {
+		name = EVTOPTAancrel.1258 #stay
+ 		
+ 		
+		random_courtier = {
+	 		limit = {
+	 			age = 16
+	 			not = { age = 20 }
+	 			is_female = yes	
+	 			is_married = no
+	 			is_pregnant = no
+				has_lover = no
+	 		}
+	 		add_trait = lustful
+	 		create_character = {
+				random_traits = yes
+				dynasty = random
+				trait  = fian
+				fertility = 0.6
+				female = no
+				age = 24
+	 		}
+			new_character = {
+	 			impregnate = PREV
+	 			add_lover = PREV
+				add_trait = lustful
+	 		}
+	 	}
+	 	piety = -10
+	}
+	option = {
+		name = EVTOPTBancrel.1258 #dungeon
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				OR = {
+					trait = cruel
+					trait = zealous
+				 }
+			}
+		}
+		random_courtier = {
+	 		limit = {
+	 			age = 16
+	 			not = { age = 20 }
+	 			is_female = yes	
+	 			is_married = no
+	 			is_pregnant = no
+	 		}
+	 		add_trait = lustful
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				fertility = 0.6
+				trait = fian
+				female = no
+				age = 24
+	 		}
+			new_character = {
+	 			impregnate = PREV
+	 			add_lover = PREV
+				add_trait = lustful
+				imprison = root
+	 		}
+	 	}		
+	}
+}
+
+#Fianna leaving
+character_event = {
+	id = ancrel.1259
+	desc = EVTDESCancrel.1259	
+	
+	only_playable = yes
+	prisoner = no
+	
+	trigger = {
+	 	has_character_flag = fian_band_visiting
+	}	
+	immediate = {
+		clr_character_flag = fian_band_visiting
+		clr_character_flag = fian_woman_seduced
+		clr_character_flag = fian_recruited	
+	}
+	
+	picture = GFX_evt_feast
+
+	mean_time_to_happen = {
+		days = 40
+		modifier = {
+			factor = 0.1
+			has_character_flag = fian_recruited	
+		}		
+	}	
+	option = {
+		name = EVTOPTAancrel.1259 #give them a farewell feast
+		prestige = 10
+		scaled_wealth = -0.05
+
+	}
+	option = {
+		name = EVTOPTBancrel.1259 #let them leave quitely
+		prestige = -5
+	}
+}
+
+#Marshal has arrested a fian
+character_event = {
+	id = ancrel.1260
+	desc = EVTDESCancrel.1260	
+	
+	is_triggered_only = yes
+	
+	only_playable = yes
+	prisoner = no
+	
+	picture = GFX_evt_melee
+	
+	trigger = {
+		war = no
+		in_command = no
+		religion = catholic
+		NOT = { has_character_flag = fian_band_visiting }
+		any_courtier = {
+			has_job_title = job_marshal
+		}
+	}
+	
+	option = {
+		name = EVTOPTAancrel.1260  #order him released
+		job_marshal = {
+			opinion = {
+				modifier = marshal_overruled
+				who = ROOT
+			}
+		}
+		piety = 5
+		clr_character_flag = hates_fianna
+	}
+	option = {
+		name = EVTOPTBancrel.1260 #it is not my concern
+		job_marshal = {
+			prestige = 10
+		}
+		prestige = -5
+		set_character_flag = hates_fianna
+	}
+}	
+	

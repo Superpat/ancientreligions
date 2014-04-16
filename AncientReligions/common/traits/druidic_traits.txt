@@ -1,9 +1,6 @@
 head1 = {
 	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
+		religion_group = pagan_group
 	}
 	
 	martial = 1
@@ -18,16 +15,13 @@ head1 = {
 
 head2 = {
 	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
+		religion_group = pagan_group
 	}
 	martial = 3
 	monthly_character_prestige = 1.5
 	customizer = no
 	same_religion_opinion = 10
-	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
 	command_modifier = {
 		center = 0.1
 		religious_enemy = 0.3
@@ -40,10 +34,7 @@ head2 = {
 
 druid = {
 	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
+		religion_group = pagan_group
 	}
 	monthly_character_piety = 0.5
 	learning = 3
@@ -55,10 +46,7 @@ druid = {
 
 fian = {
 	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
+		religion_group = pagan_group
 	}
 	martial = 2
 	learning = 1
@@ -80,10 +68,7 @@ fian = {
 
 celtic_knight = {
 	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
+		religion = druidic_reformed
 	}
 	
 	martial = 2
@@ -110,10 +95,7 @@ celtic_knight = {
 
 learning_druidic_arts = {
 	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
+		religion_group = pagan_group
 	}
 	
 	customizer = no
@@ -131,12 +113,11 @@ learning_druidic_arts = {
 
 changeling = {
 	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
+		religion_group = pagan_group
 	}
 	health = 3
+	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
 	
 	same_religion_opinion = 5
 	
@@ -154,154 +135,109 @@ changeling = {
 
 treasure_cauldron = {
 	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
+		religion_group = pagan_group
 	}
-	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
 	customizer = no
 }
 
 treasure_chariot = {
 	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
+		religion_group = pagan_group
 	}
-	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
 	customizer = no
 }
 
 treasure_chessboard = {
 	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
+		religion_group = pagan_group
 	}
-	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
 	customizer = no
 }
 
 treasure_coat = {
 	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
+		religion_group = pagan_group
 	}
-	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
 	customizer = no
 }
 
 treasure_crock_and_dish = {
 	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
+		religion_group = pagan_group
 	}
-	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
 	customizer = no
 }
 
 treasure_dyrnwyn = {
 	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
+		religion_group = pagan_group
 	}
-	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
 	customizer = no
 }
 
 treasure_halter = {
 	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
+		religion_group = pagan_group
 	}
-	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
 	customizer = no
 }
 
 treasure_hamper = {
 	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
+		religion_group = pagan_group
 	}
-	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
 	customizer = no
 }
 
 treasure_horn = {
 	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
+		religion_group = pagan_group
 	}
-	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
 	customizer = no
 }
 
 treasure_knife = {
 	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
+		religion_group = pagan_group
 	}
-	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
 	customizer = no
 }
 
 treasure_mantle_arthur = {
 	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
+		religion_group = pagan_group
 	}
-	
-	customizer = no
-}
-
-treasure_mantle_tegau = {
-	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
-	}
-	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
 	customizer = no
 }
 
 treasure_stone_and_ring = {
 	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
+		religion_group = pagan_group
 	}
-	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
 	customizer = no
 }
 
 treasure_whetstone = {
 	potential = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
+		religion_group = pagan_group
 	}
-	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
+	customizer = no
+}
+
+dead_target = {
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
 	customizer = no
 }

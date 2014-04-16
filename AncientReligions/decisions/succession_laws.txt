@@ -295,6 +295,7 @@ succession_laws = {
 						NOT = { religion = aztec }
 						NOT = { religion = pagan }
 						NOT = { religion = slavic_pagan }
+						NOT = { religion = west_african_pagan }
 					}
 				}
 				
@@ -344,6 +345,7 @@ succession_laws = {
 				is_tribal_type_title = yes
 			}
 			holder_scope = {
+				OR = {
 					independent = yes
 					NOT = {
 						any_liege = {
@@ -351,7 +353,6 @@ succession_laws = {
 						}
 					}
 				}
-				OR = {
 				is_republic = no
 				is_merchant_republic = no
 				religion_group = muslim

@@ -31,6 +31,42 @@ decisions = {
 					}
 				}
 			}
+			if = {
+				limit = { liege = { trait = shaivist_hindu } }
+				add_trait = shaivist_hindu
+			}
+			if = {
+				limit = { liege = { trait = vaishnavist_hindu } }
+				add_trait = vaishnavist_hindu
+			}
+			if = {
+				limit = { liege = { trait = shaktist_hindu } }
+				add_trait = shaktist_hindu
+			}
+			if = {
+				limit = { liege = { trait = smartist_hindu } }
+				add_trait = smartist_hindu
+			}
+			if = {
+				limit = { liege = { trait = mahayana_buddhist } }
+				add_trait = mahayana_buddhist
+			}
+			if = {
+				limit = { liege = { trait = vajrayana_buddhist } }
+				add_trait = vajrayana_buddhist
+			}
+			if = {
+				limit = { liege = { trait = theravada_buddhist } }
+				add_trait = theravada_buddhist
+			}
+			if = {
+				limit = { liege = { trait = digambara_jain } }
+				add_trait = digambara_jain
+			}
+			if = {
+				limit = { liege = { trait = svetambara_jain } }
+				add_trait = svetambara_jain
+			}
 			piety = 200
 		}
 		revoke_allowed = {
@@ -50,12 +86,184 @@ decisions = {
 			}
 		}
 		allow = {
-			prestige = 50
+			prestige = 200
 		}
 		effect = {
-			prestige = -50
+			prestige = -200
 			liege = {
 				reverse_culture = ROOT
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	convert_to_local_culture = {
+		potential = {
+			is_playable = yes
+			capital_scope = {
+				NOT = { culture = ROOT }
+			}
+			OR = {
+				independent = yes
+				liege = {
+					NOT = { culture = ROOT }
+				}
+			}
+			holy_order = no
+			has_dlc = "Rajas of India"
+		}
+		allow = {
+			prestige = 500
+		}
+		effect = {
+			prestige = -500
+			capital_scope = {
+				reverse_culture = ROOT
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+			}
+			modifier = {
+				factor = 0
+				primary_title = {
+					is_conquered = yes
+					conquest_culture = ROOT
+				}
+			}
+			modifier = {
+				factor = 0
+				any_vassal = {
+					culture = ROOT
+					OR = {
+						tier = duke
+						tier = king
+						AND = {
+							tier = count
+							ROOT = { tier = duke }
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				capital_scope = {
+					OR = {
+						AND = {
+							culture = norse
+							NOT = {	has_global_flag = norse_culture_flipping }
+							ROOT = {
+								OR = {
+									culture = swedish 
+									culture = norwegian
+									culture = danish
+									culture = norman
+								}
+							}
+						}
+						AND = {
+							culture = saxon
+							ROOT = {
+								OR = {
+									culture = norman 
+									culture = english
+								}
+							}
+						}
+						AND = {
+							culture = english
+							ROOT = {
+								OR = {
+									culture = norman 
+									culture = saxon
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	convert_to_local_religion = {
+		potential = {
+			is_playable = yes
+			capital_scope = {
+				NOT = { religion = ROOT }
+			}
+			OR = {
+				independent = yes
+				liege = {
+					NOT = { religion = ROOT }
+				}
+			}
+			
+			# The Indian religions can convert to each other anyway
+			OR = {
+				NOT = { religion_group = indian_group }
+				capital_scope = {
+					NOT = { religion_group = indian_group }
+				}
+			}
+			
+			controls_religion = no
+			holy_order = no
+			
+			has_dlc = "Rajas of India"
+		}
+		allow = {
+			OR = {
+				AND = {
+					piety = 500
+					capital_scope = {
+						religion_group = ROOT
+					}
+				}
+				AND = {
+					piety = 1000
+					capital_scope = {
+						NOT = { religion_group = ROOT }
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = { religion_group = ROOT }
+					}
+				}
+				piety = -1000
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						religion_group = ROOT
+					}
+				}
+				piety = -500
+			}
+			religion_authority = {
+				modifier = ruler_converted_from
+			}
+			capital_scope = {
+				reverse_religion = ROOT
+			}
+			hidden_tooltip = {
+				religion_authority = {
+					modifier = ruler_converted_to
+				}
 			}
 		}
 		revoke_allowed = {
@@ -111,7 +319,14 @@ decisions = {
 		potential = {
 			is_playable = yes
 			OR = {
-				religion_group = pagan_group
+				religion = norse_pagan
+				religion = slavic_pagan
+				religion = baltic_pagan
+				religion = finnish_pagan
+				religion = tengri_pagan	
+				religion = west_african_pagan
+				religion = hellenic_pagan
+				religion = aztec
 				religion_group = zoroastrian_group
 			}
 			controls_religion = no
@@ -2479,6 +2694,701 @@ decisions = {
 			factor = 0
 		}
 	}
+
+	convert_to_hinduism = {
+		potential = {
+			is_playable = yes
+			religion_group = indian_group
+			NOT = { religion = hindu }
+			is_theocracy = no
+		}
+		allow = {
+			is_adult = yes
+			prestige = 500
+			NOT = { trait = zealous }
+			any_realm_province = {
+				religion = hindu
+			}
+			custom_tooltip = {
+				text = indian_has_not_converted
+				NOT = { has_character_flag = india_converted }
+			}
+		}
+		effect = {
+			if = {
+				limit = { higher_tier_than = BARON }
+				religion_authority = {
+					modifier = ruler_converted_from
+				}
+			}
+			religion = hindu
+			if = {
+				limit = { higher_tier_than = BARON }
+				hidden_tooltip = {
+					religion_authority = {
+						modifier = ruler_converted_to
+					}
+				}
+			}
+			set_character_flag = india_converted
+			prestige = -500
+			piety = 100
+			hidden_tooltip = { character_event = { id = RoI.110 } } # Choose branch
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { # Slow down
+				factor = 0.1
+			}
+			modifier = { # Don't convert away from liege's religion
+				factor = 0
+				liege = { religion = ROOT }
+			}
+			modifier = { # Don't start rocking the boat if all your provinces are under foreign religious influence
+				factor = 0
+				NOT = {
+					any_realm_province = {
+						religion_group = indian_group
+					}
+				}
+			}
+			modifier = { # NEVER consider it unless your liege or, if independent, all your vassals are Hindu and they don't like you
+				factor = 0
+				NOT = {
+					OR = {
+						AND = {
+							independent = yes
+							NOT = {
+								any_vassal = {
+									NOT = { religion = hindu }
+								}
+							}
+							NOT = {
+								any_vassal = {
+									opinion = {
+										who = ROOT
+										value = 25
+									}
+								}
+							}
+						}
+						AND = {
+							liege = { religion = hindu }
+							opinion = {
+								who = liege
+								value = 25
+							}
+						}
+					}
+				}
+			}
+			modifier = { # More likely to do it sooner
+				factor = 3
+				trait = cynical
+			}
+			modifier = { # Sometimes you really need to hurry up
+				factor = 5
+				higher_tier_than = DUKE
+				num_of_vassals = 5
+			}
+		}
+	}
+
+	convert_to_buddhism = {
+		potential = {
+			is_playable = yes
+			religion_group = indian_group
+			NOT = { religion = buddhist }
+			is_theocracy = no
+		}
+		allow = {
+			is_adult = yes
+			prestige = 500
+			NOT = { trait = zealous }
+			any_realm_province = {
+				religion = buddhist
+			}
+			custom_tooltip = {
+				text = indian_has_not_converted
+				NOT = { has_character_flag = india_converted }
+			}
+		}
+		effect = {
+			if = {
+				limit = { higher_tier_than = BARON }
+				religion_authority = {
+					modifier = ruler_converted_from
+				}
+			}
+			religion = buddhist
+			if = {
+				limit = { higher_tier_than = BARON }
+				hidden_tooltip = {
+					religion_authority = {
+						modifier = ruler_converted_to
+					}
+				}
+			}
+			set_character_flag = india_converted
+			prestige = -500
+			piety = 100
+			hidden_tooltip = { character_event = { id = RoI.111 } } # Choose branch
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { # Slow down
+				factor = 0.1
+			}
+			modifier = { # Don't convert away from liege's religion
+				factor = 0
+				liege = { religion = ROOT }
+			}
+			modifier = { # Don't start rocking the boat if all your provinces are under foreign religious influence
+				factor = 0
+				NOT = {
+					any_realm_province = {
+						religion_group = indian_group
+					}
+				}
+			}
+			modifier = { # NEVER consider it unless your liege or, if independent, all your vassals are Buddhist and they don't like you
+				factor = 0
+				NOT = {
+					OR = {
+						AND = {
+							independent = yes
+							NOT = {
+								any_vassal = {
+									NOT = { religion = buddhist }
+								}
+							}
+							NOT = {
+								any_vassal = {
+									opinion = {
+										who = ROOT
+										value = 25
+									}
+								}
+							}
+						}
+						AND = {
+							liege = { religion = buddhist }
+							opinion = {
+								who = liege
+								value = 25
+							}
+						}
+					}
+				}
+			}
+			modifier = { # More likely to do it sooner
+				factor = 3
+				trait = cynical
+			}
+			modifier = { # Sometimes you really need to hurry up
+				factor = 5
+				higher_tier_than = DUKE
+				num_of_vassals = 5
+			}
+		}
+	}
+
+	convert_to_jainism = {
+		potential = {
+			is_playable = yes
+			religion_group = indian_group
+			NOT = { religion = jain }
+			is_theocracy = no
+		}
+		allow = {
+			is_adult = yes
+			prestige = 500
+			NOT = { trait = zealous }
+			any_realm_province = {
+				religion = jain
+			}
+			custom_tooltip = {
+				text = indian_has_not_converted
+				NOT = { has_character_flag = india_converted }
+			}
+		}
+		effect = {
+			if = {
+				limit = { higher_tier_than = BARON }
+				religion_authority = {
+					modifier = ruler_converted_from
+				}
+			}
+			religion = jain
+			if = {
+				limit = { higher_tier_than = BARON }
+				hidden_tooltip = {
+					religion_authority = {
+						modifier = ruler_converted_to
+					}
+				}
+			}
+			set_character_flag = india_converted
+			prestige = -500
+			piety = 100
+			hidden_tooltip = { character_event = { id = RoI.112 } } # Choose branch
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = { # Slow down
+				factor = 0.1
+			}
+			modifier = { # Don't convert away from liege's religion
+				factor = 0
+				liege = { religion = ROOT }
+			}
+			modifier = { # Don't start rocking the boat if all your provinces are under foreign religious influence
+				factor = 0
+				NOT = {
+					any_realm_province = {
+						religion_group = indian_group
+					}
+				}
+			}
+			modifier = { # NEVER consider it unless your liege or, if independent, all your vassals are Jain and they don't like you
+				factor = 0
+				NOT = {
+					OR = {
+						AND = {
+							independent = yes
+							NOT = {
+								any_vassal = {
+									NOT = { religion = jain }
+								}
+							}
+							NOT = {
+								any_vassal = {
+									opinion = {
+										who = ROOT
+										value = 25
+									}
+								}
+							}
+						}
+						AND = {
+							liege = { religion = jain }
+							opinion = {
+								who = liege
+								value = 25
+							}
+						}
+					}
+				}
+			}
+			modifier = { # More likely to do it sooner
+				factor = 3
+				trait = cynical
+			}
+			modifier = { # Sometimes you really need to hurry up
+				factor = 5
+				higher_tier_than = DUKE
+				num_of_vassals = 5
+			}
+		}
+	}
+
+	convert_indian_branch = {
+		potential = {
+			is_playable = yes
+			is_adult = yes
+			is_theocracy = no
+			religion_group = indian_group
+		}
+		allow = {
+			NOT = { trait = zealous }
+			prestige = 50
+			custom_tooltip = {
+				text = indian_has_not_converted
+				NOT = { has_character_flag = india_branch_converted }
+			}
+		}
+		effect = {
+			set_character_flag = india_branch_converted
+			prestige = -50
+			piety = 25
+			if = {
+				limit = { religion = hindu }
+				character_event = { id = RoI.115 } # Choose branch
+			}
+			if = {
+				limit = { religion = buddhist }
+				character_event = { id = RoI.116 } # Choose branch
+			}
+			if = {
+				limit = { religion = jain }
+				character_event = { id = RoI.117 } # Confirm conversion
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# Pagans can convert to the Hindu faith if their wife or a concubine is a believer
+	convert_to_spouse_hindu = {
+		potential = {
+			is_playable = yes
+			religion_group = pagan_group
+			controls_religion = no
+			NOT = { trait = zealous }
+			OR = {
+				any_spouse = {
+					religion = hindu
+					hidden_tooltip = {
+						is_alive = yes
+					}
+				}
+				any_consort = {
+					religion = hindu
+					hidden_tooltip = {
+						is_alive = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = -500
+			religion_authority = {
+				modifier = ruler_converted_from
+			}
+			
+			if = {
+				limit = {
+					trait = cynical
+				}
+				random = {
+					chance = 60
+					add_trait = sympathy_pagan
+				}
+			}
+			if = {
+				limit = {
+					NOT = { trait = cynical }
+				}
+				random = {
+					chance = 50
+					add_trait = sympathy_pagan
+				}
+			}		
+			
+			religion = hindu
+
+			if = {
+				limit = {
+					any_courtier = {
+						OR = {
+							spouse = { character = ROOT }
+							is_consort = ROOT
+						}
+						religion = hindu
+						hidden_tooltip = {
+							is_alive = yes
+						}
+						trait = shaivist_hindu
+					}
+				}
+				add_trait = shaivist_hindu
+			}
+			if = {
+				limit = {
+					any_courtier = {
+						OR = {
+							spouse = { character = ROOT }
+							is_consort = ROOT
+						}
+						religion = hindu
+						hidden_tooltip = {
+							is_alive = yes
+						}
+						trait = vaishnavist_hindu
+					}
+				}
+				add_trait = vaishnavist_hindu
+			}
+			if = {
+				limit = {
+					any_courtier = {
+						OR = {
+							spouse = { character = ROOT }
+							is_consort = ROOT
+						}
+						religion = hindu
+						hidden_tooltip = {
+							is_alive = yes
+						}
+						trait = shaktist_hindu
+					}
+				}
+				add_trait = shaktist_hindu
+			}
+			if = {
+				limit = {
+					any_courtier = {
+						OR = {
+							spouse = { character = ROOT }
+							is_consort = ROOT
+						}
+						religion = hindu
+						hidden_tooltip = {
+							is_alive = yes
+						}
+						trait = smartist_hindu
+					}
+				}
+				add_trait = smartist_hindu
+			}
+			hidden_tooltip = {
+				religion_authority = {
+					modifier = ruler_converted_to
+				}
+			}
+			piety = 200
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# Pagans can convert to the Buddhist faith if their wife or a concubine is a believer
+	convert_to_spouse_buddhist = {
+		potential = {
+			is_playable = yes
+			religion_group = pagan_group
+			controls_religion = no
+			NOT = { trait = zealous }
+			OR = {
+				any_spouse = {
+					religion = buddhist
+					hidden_tooltip = {
+						is_alive = yes
+					}
+				}
+				any_consort = {
+					religion = buddhist
+					hidden_tooltip = {
+						is_alive = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = -500
+			religion_authority = {
+				modifier = ruler_converted_from
+			}
+			
+			if = {
+				limit = {
+					trait = cynical
+				}
+				random = {
+					chance = 60
+					add_trait = sympathy_pagans
+				}
+			}
+			if = {
+				limit = {
+					NOT = { trait = cynical }
+				}
+				random = {
+					chance = 50
+					add_trait = sympathy_pagans
+				}
+			}		
+			
+			religion = buddhist
+			
+			if = {
+				limit = {
+					any_courtier = {
+						OR = {
+							spouse = { character = ROOT }
+							is_consort = ROOT
+						}
+						religion = hindu
+						hidden_tooltip = {
+							is_alive = yes
+						}
+						trait = mahayana_buddhist
+					}
+				}
+				add_trait = mahayana_buddhist
+			}
+			if = {
+				limit = {
+					any_courtier = {
+						OR = {
+							spouse = { character = ROOT }
+							is_consort = ROOT
+						}
+						religion = hindu
+						hidden_tooltip = {
+							is_alive = yes
+						}
+						trait = vajrayana_buddhist
+					}
+				}
+				add_trait = vajrayana_buddhist
+			}
+			if = {
+				limit = {
+					any_courtier = {
+						OR = {
+							spouse = { character = ROOT }
+							is_consort = ROOT
+						}
+						religion = hindu
+						hidden_tooltip = {
+							is_alive = yes
+						}
+						trait = theravada_buddhist
+					}
+				}
+				add_trait = theravada_buddhist
+			}
+			hidden_tooltip = {
+				religion_authority = {
+					modifier = ruler_converted_to
+				}
+			}
+			piety = 200
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# Pagans can convert to the Jain faith if their wife or a concubine is a believer
+	convert_to_spouse_jain = {
+		potential = {
+			is_playable = yes
+			religion_group = pagan_group
+			controls_religion = no
+			NOT = { trait = zealous }
+			OR = {
+				any_spouse = {
+					religion = jain
+					hidden_tooltip = {
+						is_alive = yes
+					}
+				}
+				any_consort = {
+					religion = jain
+					hidden_tooltip = {
+						is_alive = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = -500
+			religion_authority = {
+				modifier = ruler_converted_from
+			}
+			
+			if = {
+				limit = {
+					trait = cynical
+				}
+				random = {
+					chance = 60
+					add_trait = sympathy_pagans
+				}
+			}
+			if = {
+				limit = {
+					NOT = { trait = cynical }
+				}
+				random = {
+					chance = 50
+					add_trait = sympathy_pagans
+				}
+			}		
+			
+			religion = jain
+			
+			if = {
+				limit = {
+					any_courtier = {
+						OR = {
+							spouse = { character = ROOT }
+							is_consort = ROOT
+						}
+						religion = hindu
+						hidden_tooltip = {
+							is_alive = yes
+						}
+						trait = digambara_jain
+					}
+				}
+				add_trait = digambara_jain
+			}
+			if = {
+				limit = {
+					any_courtier = {
+						OR = {
+							spouse = { character = ROOT }
+							is_consort = ROOT
+						}
+						religion = hindu
+						hidden_tooltip = {
+							is_alive = yes
+						}
+						trait = svetambara_jain
+					}
+				}
+				add_trait = svetambara_jain
+			}
+			hidden_tooltip = {
+				religion_authority = {
+					modifier = ruler_converted_to
+				}
+			}
+			piety = 200
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
 	
 	# Cultures can convert to their cultural pagan beliefs if the MA of their current religion is low
 	gone_pagan = {

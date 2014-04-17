@@ -125,7 +125,12 @@ character_event = {
 	
 	trigger = {
 		has_dlc = "Sons of Abraham"
-		NOT = { religion_group = pagan_group }
+		OR = {
+			religion_group = christian
+			religion_group = muslim
+			religion_group = zoroastrian_group
+			religion_group = jewish_group
+		}
 		any_child = {
 			NOT = { age = 3 }
 			is_ill = no

@@ -88,6 +88,10 @@ job_marshal = {
 						liege = { religion = cathar }
 					}
 				}
+				OR = {
+					NOT = { religion = hindu }
+					trait = kshatriya
+				}
 				is_adult = yes
 			}
 			has_character_flag = special_marshal
@@ -95,6 +99,7 @@ job_marshal = {
 		
 		prisoner = no
 		NOT = { trait = incapable }
+		NOT = { has_character_flag = guru }
 	}
 	
 	gain_effect = {
@@ -135,6 +140,7 @@ job_treasurer = {
 		}
 		prisoner = no
 		NOT = { trait = incapable }
+		NOT = { has_character_flag = guru }
 	}
 	gain_effect = {
 	}
@@ -186,6 +192,7 @@ job_spymaster = {
 		
 		prisoner = no
 		NOT = { trait = incapable }
+		NOT = { has_character_flag = guru }
 	}
 	gain_effect = {
 	}
@@ -227,6 +234,11 @@ job_spiritual = {
 						NOT = { religion = tengri_pagan_reformed}
 					}
 					religion = cathar
+					religion = bogomilist
+				}
+				OR = {
+					NOT = { religion = hindu }
+					trait = brahmin
 				}
 			}
 			has_character_flag = special_spiritual
@@ -239,10 +251,7 @@ job_spiritual = {
 			liege = { religion_group = muslim }
 			AND = {
 				is_ruler = no
-				NOT = { religion = orthodox }
-				NOT = { is_heresy_of = orthodox }
-				NOT = { religion = miaphysite }
-				NOT = { is_heresy_of = miaphysite }
+				has_autocephaly = no
 			}
 		}
 		

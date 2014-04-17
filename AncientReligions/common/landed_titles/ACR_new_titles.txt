@@ -40,7 +40,7 @@ d_wolftails = {
 # HOLY ORDERS
 
 d_red_dragons = {
-	
+
 	color={ 75 0 75 }
 	color2={ 255 255 255 }
 	
@@ -55,7 +55,7 @@ d_red_dragons = {
 	holy_order = yes
 	
 	# Parent Religion 
-	religion = druidic
+	religion = druidic_reformed
 	
 	culture = welsh
 	

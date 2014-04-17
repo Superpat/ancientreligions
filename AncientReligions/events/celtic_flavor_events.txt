@@ -450,7 +450,7 @@ character_event = {
 #
 #######################################
 
-#Founder of an Empire gets nickname
+# Y Mab Darogan
 narrative_event = {
 	id = ancrel.0256
 	title = ancrel.0256.name

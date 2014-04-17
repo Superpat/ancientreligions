@@ -570,5 +570,203 @@ decisions = {
 				trait = paranoid
 			}
 		}
+	} 
+	
+	expel_red_dragons = {
+		potential = {
+			ai = no
+			religion = druidic_reformed
+			higher_tier_than = DUKE
+			independent = yes
+			is_title_active = d_red_dragons
+			NOT = { has_character_modifier = expelled_d_red_dragons }
+			
+			any_realm_province = {
+				any_province_lord = {
+					d_red_dragons = {
+						holder_scope = {
+							OR = {
+								character = PREVPREV
+								is_vassal_or_below = PREVPREV
+							}
+						}
+					}
+				}
+			}
+			
+			has_dlc = "Sons of Abraham"
+		}
+		
+		allow = {
+			piety = 1000
+		}
+		
+		effect = {
+			piety = -1000
+			
+			religion_authority = {
+				modifier = holy_order_expelled
+				years = 20
+			}
+			
+			hidden_tooltip = {
+				d_red_dragons = {
+					holder_scope = {
+						character_event = {
+							id = ancrel.1329
+						}
+					}
+				}
+				add_character_modifier = {
+					name = expelled_d_red_dragons
+					duration = -1
+					inherit = yes
+				}
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	donate_money_to_red_dragons = {
+		potential = {
+			religion = druidic_reformed
+			
+			is_title_active = d_red_dragons
+			
+			NOT = { has_character_modifier = expelled_d_red_dragons }
+			
+			has_dlc = "Sons of Abraham"
+			
+			d_red_dragons = {
+				holder_scope = {
+					liege = {
+						NOT = { character = ROOT }
+					}
+				}
+			}
+		}
+		
+		allow = {
+			wealth = 300
+		}
+		
+		effect = {
+			if = {
+				limit = { 
+					NOT = { has_character_modifier = donated_to_holy_order }
+				}
+				add_character_modifier = {
+					name = donated_to_holy_order
+					duration = -1
+				}
+			}
+			
+			hidden_tooltip = {
+				d_red_dragons = {
+					holder_scope = {
+						character_event = {
+							id = ancrel.1331
+						}
+					}
+				}
+			}
+			
+			wealth = -300
+			piety = 300
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					piety = 1000
+					NOT = { wealth = 1000 }
+					NOT = { controls_religion = druidic_reformed }
+				}
+			}
+			modifier = {
+				factor = 0.002 # Slow it down
+			}
+		}
+	}
+	
+	donate_money_to_fianna = {
+		potential = {
+			religion = druidic_reformed
+			
+			is_title_active = d_red_dragons
+			
+			NOT = { has_character_modifier = expelled_d_fianna }
+			
+			has_dlc = "Sons of Abraham"
+			
+			d_fianna = {
+				holder_scope = {
+					liege = {
+						NOT = { character = ROOT }
+					}
+				}
+			}
+		}
+		
+		allow = {
+			wealth = 300
+		}
+		
+		effect = {
+			if = {
+				limit = { 
+					NOT = { has_character_modifier = donated_to_holy_order }
+				}
+				add_character_modifier = {
+					name = donated_to_holy_order
+					duration = -1
+				}
+			}
+			
+			hidden_tooltip = {
+				d_fianna = {
+					holder_scope = {
+						character_event = {
+							id = ancrel.1333
+						}
+					}
+				}
+			}
+			
+			wealth = -300
+			piety = 300
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					piety = 1000
+					NOT = { wealth = 1000 }
+					NOT = { controls_religion = druidic_reformed }
+				}
+			}
+			modifier = {
+				factor = 0.002 # Slow it down
+			}
+		}
 	}
 }

@@ -961,14 +961,14 @@ letter_event = {
 
 #############################################
 #
-# Fianna band event Series
+# Fianna event Series
 #
 # Event ID ancrel.1254-71999 is reserved
 #
 #############################################
 #Written by Patrick Marchand
 
-#Fianna visiting
+#Fian visiting
 character_event = {
 	id = ancrel.1254
 	desc = EVTDESCancrel.1254	
@@ -1181,7 +1181,7 @@ character_event = {
 	}
 }
 	
-#Minor brawl Fiann Injured
+#Minor brawl fennid Injured
 character_event = {
 	id = ancrel.1255
 	desc = EVTDESCancrel.1255	
@@ -1223,7 +1223,7 @@ character_event = {
 	}
 }	
 
-#One fian distinguishes himself
+#One fennid distinguishes himself
 character_event = {
 	id = ancrel.1256
 	desc = EVTDESCancrel.1256	
@@ -1274,7 +1274,7 @@ character_event = {
 	}
 }	
 
-#Male courtier insulted by fianna
+#Male courtier insulted by fennid
 character_event = {
 	id = ancrel.1257
 	desc = EVTDESCancrel.1257	
@@ -1350,7 +1350,7 @@ character_event = {
 	
 }	
 
-#A young woman has been seduced by a fian
+#A young woman has been seduced by a fennid
 character_event = {
 	id = ancrel.1258
 	desc = EVTDESCancrel.1258	
@@ -1456,7 +1456,7 @@ character_event = {
 	}
 }
 
-#Fianna leaving
+#Fian leaving
 character_event = {
 	id = ancrel.1259
 	desc = EVTDESCancrel.1259	
@@ -1494,7 +1494,7 @@ character_event = {
 	}
 }
 
-#Marshal has arrested a fian
+#Marshal has arrested a fennid
 character_event = {
 	id = ancrel.1260
 	desc = EVTDESCancrel.1260	
@@ -1537,3 +1537,44 @@ character_event = {
 	}
 }	
 	
+# Ping event when donating money to the fianna
+character_event = {
+	id = ancrel.1333
+	desc = OK
+	picture = GFX_evt_throne_room_norse_pagan
+	border = GFX_event_normal_frame_religion
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		wealth = 300
+		FROM = {
+			letter_event = {
+				id = ancrel.1334
+			}
+		}
+		opinion = {
+			who = FROM
+			modifier = opinion_generous_donation
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+# Notification event when donating money to the fianna
+letter_event = {
+	id = ancrel.1334
+	desc = EVTDESCancrel.1334
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EXCELLENT
+	}
+}

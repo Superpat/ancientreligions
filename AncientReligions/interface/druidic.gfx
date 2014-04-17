@@ -238,6 +238,37 @@ spriteTypes = {
 		texturefile = "gfx\\event_pictures\y_mab_darogan.tga"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_evt_royal_court"
+		texturefile = "gfx\\event_pictures\royal_court.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_library"
+		texturefile = "gfx\\event_pictures\\druid_room.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_emissary"
+		texturefile = "gfx\\event_pictures\\Emissary_kneeling_before_throne.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_forest_warrior_alone"
+		texturefile = "gfx\\event_pictures\forest_warrior_alone.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_black_bear"
+		texturefile = "gfx\\event_pictures\black_bear.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_warrior_banners"
+		texturefile = "gfx\\event_pictures\warrior_banners.tga"
+		allwaystransparent = yes
+	}
+	
 	# Decision icons
 	spriteType = {
 		name = "GFX_hold_divination"

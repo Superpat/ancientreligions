@@ -1,0 +1,51 @@
+descendant_of_aeneus = {
+	random = no
+	birth = 0
+	inherit_chance = 100
+	
+	monthly_character_prestige = 0.25
+}
+descendant_of_hector = {
+	random = no
+	birth = 0
+	inherit_chance = 100
+	
+	monthly_character_prestige = 0.25
+	
+	command_modifier = {
+		morale_defence = 0.25
+	}
+}
+descendant_of_paris = {
+	random = no
+	birth = 0	
+	inherit_chance = 100
+	
+	monthly_character_prestige = 0.25
+}
+
+descendant_of_achilles = {
+	random = no
+	birth = 0
+	inherit_chance = 100
+	
+	monthly_character_prestige = 0.25
+	
+	command_modifier = {
+		morale_offence = 0.25
+	}
+}
+descendant_of_odysseus = {
+	random = no
+	birth = 0
+	inherit_chance = 100
+	
+	monthly_character_prestige = 0.25
+}
+descendant_of_nestor = {
+	random = no
+	birth = 0
+	inherit_chance = 100
+	
+	monthly_character_prestige = 0.25
+}

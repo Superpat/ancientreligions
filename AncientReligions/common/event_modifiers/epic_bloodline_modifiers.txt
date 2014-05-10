@@ -1,33 +1,33 @@
 # Greek Heroes
 emulating_achilles = {
-	monthly_character_prestige = 0.3
+	monthly_character_prestige = 0.1
 	change_martial = 1
 	icon = 13
 }
 emulating_odysseus = {
-	monthly_character_prestige = 0.3
+	monthly_character_prestige = 0.1
 	change_intrigue = 1
 	icon = 13
 }
 emulating_nestor = {
-	monthly_character_prestige = 0.3
+	monthly_character_prestige = 0.1
 	change_diplomacy = 1
 	icon = 11
 }
 
 # Trojan Heroes
 emulating_aeneus = {
-	monthly_character_prestige = 0.3
+	monthly_character_prestige = 0.1
 	change_stewardship = 1
 	icon = 13
 }
 emulating_hector = {
-	monthly_character_prestige = 0.3
+	monthly_character_prestige = 0.1
 	change_martial = 1
 	icon = 13
 }
-emulating_priam = {
-	monthly_character_prestige = 0.3
+emulating_paris = {
+	monthly_character_prestige = 0.1
 	change_fertility = 0.25
 	icon = 10
 }

@@ -341,7 +341,7 @@ character_event = {
 	
 	trigger = {
 		has_dlc = "The Old Gods"
-		has_character_flag = serving_varangian
+		has_character_flag = serving_fianna
 		NOT = { trait = brilliant_strategist }
 		OR = {
 			trait = misguided_warrior

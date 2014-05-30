@@ -16,14 +16,14 @@ emulating_nestor = {
 }
 
 # Trojan Heroes
-emulating_aeneus = {
-	monthly_character_prestige = 0.1
-	change_stewardship = 1
-	icon = 13
-}
 emulating_hector = {
 	monthly_character_prestige = 0.1
 	change_martial = 1
+	icon = 13
+}
+emulating_aeneus = {
+	monthly_character_prestige = 0.1
+	change_stewardship = 1
 	icon = 13
 }
 emulating_paris = {

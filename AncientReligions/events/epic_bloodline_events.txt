@@ -30,8 +30,6 @@ character_event = {
 		religion = hellenic_pagan
 		higher_tier_than = COUNT # Dukes or higher only
 		NOT = { has_character_flag = flag_studied_the_classics }
-		NOT = { has_trait = epic_trojan_descent }
-		NOT = { has_trait = epic_greek_descent }
 	}
 	
 	mean_time_to_happen = {

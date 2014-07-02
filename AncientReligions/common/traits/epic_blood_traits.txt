@@ -56,7 +56,7 @@ descendant_of_odysseus = {
 	same_opinion = 5
 	monthly_character_prestige = 0.25
 	
-	
+	change_intrigue = 1
 }
 descendant_of_nestor = {
 	random = no

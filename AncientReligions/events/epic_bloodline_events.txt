@@ -7,7 +7,7 @@
 #
 ###################################################
 
-# Written by Adam 'theStormWeaver' Chevalier
+# Written by Adam 'theStormWeaver/la_xirsoi' Chevalier
 
 namespace = ancrel
 
@@ -26,10 +26,19 @@ character_event = {
 		has_dlc = "The Old Gods"
 		
 		learning = 6
-		is_landed = yes
 		religion = hellenic_pagan
 		higher_tier_than = COUNT # Dukes or higher only
 		NOT = { has_character_flag = flag_studied_the_classics }
+		NOT = { # No one who already claims epic heritage
+			OR { 
+				trait = descendant_of_aeneas
+				trait = descendant_of_hector
+				trait = descendant_of_paris
+				trait = descendant_of_achilles
+				trait = descendant_of_odysseus
+				trait = descendant_of_nestor
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -257,7 +266,7 @@ character_event = {
 			add_character_modifier = emulating_hector
 		}		
 	}
-	#Aeneus
+	# Aeneas
 	option = {
 		name = EVTOPTBancrel.10003
 		ai_chance = {
@@ -271,7 +280,7 @@ character_event = {
 			}
 		}
 		immediate = {
-			add_character_modifier = emulating_aeneus
+			add_character_modifier = emulating_aeneas
 		}
 	}
 	#Paris

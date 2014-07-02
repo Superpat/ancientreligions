@@ -21,7 +21,7 @@ emulating_hector = {
 	change_martial = 1
 	icon = 13
 }
-emulating_aeneus = {
+emulating_aeneas = {
 	monthly_character_prestige = 0.1
 	change_stewardship = 1
 	icon = 13

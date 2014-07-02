@@ -79,7 +79,7 @@ CB_NAME_HELLENIC_LIBERATION;Liberation of [Title.GetBaseName];;;;;;;;;;;;;;;x
 WAR_NAME_HELLENIC_LIBERATION;$ORDER$$FIRST_ADJ$ Liberation of $OTHER_TITLE$;;;;;;;;;;;;;;;x
 ;;;;;;;;;;
 title_censor;Censor;Censeur;Censur;;Censor;;;;;;;;;;;x
-title_censor_desc;The Censor is responsible for taking the census of the realm. While the office was originally instituded for taxation purposes the most important duty of the Censor is to supervise public morality and recommend suitable candidates for public offices.;;;;;;;;;;;;;;;x
+title_censor_desc;The Censor is responsible for taking the census of the realm. While the office was originally instituted for taxation purposes the most important duty of the Censor is to supervise public morality and recommend suitable candidates for public offices.;;;;;;;;;;;;;;;x
 title_aedile;Aedile;Édile;Ädil;;Edil;;;;;;;;;;;x
 title_aedile_desc;The aediles are responsible for maintenance of public buildings and regulation of public festivals.;;;;;;;;;;;;;;;x
 title_magister_equitum;Magister Equitum;;;;;;;;;;;;;;;x
@@ -102,7 +102,7 @@ title_flaminica_quirinalis;Flaminica Quirinalis;;;;;;;;;;;;;;;x
 title_flaminica_quirinalis_desc;As wife of the Flamen Quirinalis, the Flaminica Quirinalis are entrusted to performs certain religious rituals.;;;;;;;;;;;;;;;x
 ;;;;;;;;;;
 vestalis;Vestalis;;;;;;;;;;;;;;;x
-vestalis_desc;This character is a member of the College of the Vestales, and has dedicated 30 years of her life in service to the godess Vesta.;;;;;;;;;;;;;;;x
+vestalis_desc;This character is a member of the College of the Vestales, and has dedicated 30 years of her life in service to the goddess Vesta.;;;;;;;;;;;;;;;x
 retired_vestalis;Retired Vestalis;;;;;;;;;;;;;;;x
 retired_vestalis_desc;This character has completed her 30 years of service in the College of the Vestales.;;;;;;;;;;;;;;;x
 title_vestalis;Vestalis;;;;;;;;;;;;;;;x
@@ -126,7 +126,7 @@ EVTDESCancrel.2102;With the restoration of the religious institutions of old, yo
 EVTOPTAancrel.2102;We must restore the glory of the old faith!;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTTOOLTIPAancrel.2102;Parts of the Empire will convert to the re-established imperial state religion.\n;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTBancrel.2102;Let my vassals choose their own faith.;;;;;;;;;;;;;;;;;;;;;;;;x
-EVTDESCancrel.2103;[From.GetTitledName] has endeavored to restore the ancient faith to the Empire, and demands that you convert.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.2103;[From.GetTitledName] has endeavoured to restore the ancient faith to the Empire, and demands that you convert.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTAancrel.2103;Glory to [From.Religion.GetRandomGodName] and the Empire!;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTBancrel.2103;May [Root.Religion.GetRandomGodName] protect us.;;;;;;;;;;;;;;;;;;;;;;;;x
 ;;;;;;;;;;
@@ -148,7 +148,7 @@ EVTDESCancrel.10000;You've recently finished studying the classics, and you coul
 EVTOPTAancrel.10000;I think I shall!;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTBancrel.10000;No point in chasing the impossible...;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESCancrel.10001;The greatest heroes were those who took part in the Trojan War. Admirable qualities could be found on both sides of that terrible war, but still you must decide, from which side will your heroic muse come?;;;;;;;;;;;;;;;;;;;;;;;;x
-EVTOPTAancrel.10001;The Danaans!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.10001;The Greeks!;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTBancrel.10001;The Trojans!;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESCancrel.10002;Of the epic heroes who sided with the Greeks, there were three who stood out as exemplars, which shall you choose to emulate?;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTAancrel.10002;I shall endeavour to be like the mighty Achilles!;;;;;;;;;;;;;;;;;;;;;;;;x
@@ -156,5 +156,5 @@ EVTOPTBancrel.10002;Odysseus' towering intellect shall be my inspiration.;;;;;;;
 EVTOPTCancrel.10002;The honeyed words of Nestor shall guide my life.;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESCancrel.10003;Among the many great heroes who defended the walls of Troy, three stood out from the rest, which shall you choose to emulate?;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTAancrel.10003;Hector, the great commander!;;;;;;;;;;;;;;;;;;;;;;;;x
-EVTOPTBancrel.10003;Aeneus, founder of Rome!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.10003;Aeneas, founder of Rome!;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTCancrel.10003;Paris, lover of women!;;;;;;;;;;;;;;;;;;;;;;;;x

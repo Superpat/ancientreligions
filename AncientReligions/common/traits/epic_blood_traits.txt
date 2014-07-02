@@ -1,15 +1,21 @@
-descendant_of_aeneus = {
+descendant_of_aeneas = {
 	random = no
 	birth = 0
 	inherit_chance = 100
 	
+	same_religion_opinion = 5
+	same_opinion = 5
 	monthly_character_prestige = 0.25
+	
+	vassal_opinion = 5
 }
 descendant_of_hector = {
 	random = no
 	birth = 0
 	inherit_chance = 100
 	
+	same_religion_opinion = 5
+	same_opinion = 5
 	monthly_character_prestige = 0.25
 	
 	command_modifier = {
@@ -21,7 +27,11 @@ descendant_of_paris = {
 	birth = 0	
 	inherit_chance = 100
 	
+	same_religion_opinion = 5
+	same_opinion = 5
 	monthly_character_prestige = 0.25
+	
+	sex_appeal_opinion = 5
 }
 
 descendant_of_achilles = {
@@ -29,6 +39,8 @@ descendant_of_achilles = {
 	birth = 0
 	inherit_chance = 100
 	
+	same_religion_opinion = 5
+	same_opinion = 5
 	monthly_character_prestige = 0.25
 	
 	command_modifier = {
@@ -40,12 +52,20 @@ descendant_of_odysseus = {
 	birth = 0
 	inherit_chance = 100
 	
+	same_religion_opinion = 5
+	same_opinion = 5
 	monthly_character_prestige = 0.25
+	
+	
 }
 descendant_of_nestor = {
 	random = no
 	birth = 0
 	inherit_chance = 100
 	
+	same_religion_opinion = 5
+	same_opinion = 5
 	monthly_character_prestige = 0.25
+	
+	change_diplomacy = 1
 }

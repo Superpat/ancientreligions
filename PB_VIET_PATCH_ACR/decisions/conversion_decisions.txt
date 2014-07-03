@@ -762,7 +762,6 @@ decisions = {
 				religion = west_african_pagan
 				religion = east_african_pagan
 				religion = druidic
-				religion = gaelic_pagan
 			}
 		}
 		allow = {

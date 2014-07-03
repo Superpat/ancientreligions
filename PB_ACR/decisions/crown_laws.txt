@@ -207,7 +207,6 @@ de_jure_laws = {
 						NOT = { religion = finnish_pagan }
 						NOT = { religion = aztec }
 						NOT = { religion = slavic_pagan }
-						NOT = { religion = gaelic_pagan }
 						NOT = { religion = druidic }
 					}
 				}
@@ -334,7 +333,6 @@ de_jure_laws = {
 						NOT = { religion = finnish_pagan }
 						NOT = { religion = aztec }
 						NOT = { religion = slavic_pagan }
-						NOT = { religion = gaelic_pagan }
 						NOT = { religion = druidic }
 					}
 				}
@@ -457,7 +455,6 @@ de_jure_laws = {
 						NOT = { religion = finnish_pagan }
 						NOT = { religion = aztec }
 						NOT = { religion = slavic_pagan }
-						NOT = { religion = gaelic_pagan }
 						NOT = { religion = druidic }
 					}
 				}
@@ -606,7 +603,6 @@ de_jure_laws = {
 						NOT = { religion = finnish_pagan }
 						NOT = { religion = aztec }
 						NOT = { religion = slavic_pagan }
-						NOT = { religion = gaelic_pagan }
 						NOT = { religion = druidic }
 					}
 				}
@@ -717,7 +713,6 @@ de_jure_laws = {
 						NOT = { religion = finnish_pagan }
 						NOT = { religion = aztec }
 						NOT = { religion = slavic_pagan }
-						NOT = { religion = gaelic_pagan }
 						NOT = { religion = druidic }
 					}
 				}
@@ -862,7 +857,6 @@ de_jure_laws = {
 						NOT = { religion = finnish_pagan }
 						NOT = { religion = aztec }
 						NOT = { religion = slavic_pagan }
-						NOT = { religion = gaelic_pagan }
 						NOT = { religion = druidic }
 					}
 				}
@@ -973,7 +967,6 @@ de_jure_laws = {
 						NOT = { religion = finnish_pagan }
 						NOT = { religion = aztec }
 						NOT = { religion = slavic_pagan }
-						NOT = { religion = gaelic_pagan }
 						NOT = { religion = druidic }
 					}
 				}
@@ -1213,7 +1206,6 @@ de_jure_laws = {
 						NOT = { religion = finnish_pagan }
 						NOT = { religion = aztec }
 						NOT = { religion = slavic_pagan }
-						NOT = { religion = gaelic_pagan }
 						NOT = { religion = druidic }
 					}
 				}
@@ -1347,7 +1339,6 @@ de_jure_laws = {
 						NOT = { religion = finnish_pagan }
 						NOT = { religion = aztec }
 						NOT = { religion = slavic_pagan }
-						NOT = { religion = gaelic_pagan }
 						NOT = { religion = druidic }
 					}
 				}

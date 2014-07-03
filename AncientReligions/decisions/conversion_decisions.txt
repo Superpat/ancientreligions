@@ -675,7 +675,6 @@ decisions = {
 				religion = aztec
 				religion = west_african_pagan
 				religion = druidic
-				religion = gaelic_pagan
 			}
 		}
 		allow = {
@@ -715,10 +714,6 @@ decisions = {
 			if = {
 				limit = { religion = druidic }
 				religion = druidic_reformed
-			}
-			if = {
-				limit = { religion = gaelic_pagan }
-				religion = gaelic_pagan_reformed
 			}
 			
 			hidden_tooltip = {

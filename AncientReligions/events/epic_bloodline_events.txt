@@ -21,25 +21,29 @@ character_event = {
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+
+	# disabling these events to keep things simple
+	# will renew work on these when compatibility with 2.1.5 is achieved
+	is_triggered_only = yes
 	
-	trigger = {
-		has_dlc = "The Old Gods"
-		
-		learning = 6
-		religion = hellenic_pagan
-		higher_tier_than = COUNT # Dukes or higher only
-		NOT = { has_character_flag = flag_studied_the_classics }
-		NOT = { # No one who already claims epic heritage
-			OR { 
-				trait = descendant_of_aeneas
-				trait = descendant_of_hector
-				trait = descendant_of_paris
-				trait = descendant_of_achilles
-				trait = descendant_of_odysseus
-				trait = descendant_of_nestor
-			}
-		}
-	}
+#	trigger = {
+#		has_dlc = "The Old Gods"
+#		
+#		learning = 6
+#		religion = hellenic_pagan
+#		higher_tier_than = COUNT # Dukes or higher only
+#		NOT = { has_character_flag = flag_studied_the_classics }
+#		NOT = { # No one who already claims epic heritage
+#			OR { 
+#				trait = descendant_of_aeneas
+#				trait = descendant_of_hector
+#				trait = descendant_of_paris
+#				trait = descendant_of_achilles
+#				trait = descendant_of_odysseus
+#				trait = descendant_of_nestor
+#			}
+#		}
+#	}
 	
 	mean_time_to_happen = {
 		years = 10 # this should be fairly rare

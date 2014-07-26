@@ -987,18 +987,6 @@ character_event = {
 			trait = head2
 		}
 		modifier = {
-			factor = 0.75
-			trait = head3
-		}
-		modifier = {
-			factor = 0.75
-			trait = head4
-		}
-		modifier = {
-			factor = 0.75
-			trait = head5
-		}
-		modifier = {
 			factor = 1.25
 			NOT = { trait = dwarf }
 		}

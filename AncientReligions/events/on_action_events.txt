@@ -2786,8 +2786,8 @@ character_event = {
 # On-action event: Zoroastrian Xwedodah marriage
 character_event = {
 	id = 501
-	desc = "EVTDESC501"
-	picture = "GFX_evt_marriage_zoroastrian"
+	desc = EVTDESC501
+	picture = GFX_evt_marriage_zoroastrian_group
 	
 	is_triggered_only = yes
 	

@@ -44,7 +44,6 @@ obj_find_thirteen_treasures = {
 		NOT = { trait = treasure_horn }
 		NOT = { trait = treasure_knife }
 		NOT = { trait = treasure_mantle_arthur }
-		NOT = { trait = treasure_mantle_tegau }
 		NOT = { trait = treasure_stone_and_ring }
 		NOT = { trait = treasure_whetstone }
 	}
@@ -143,6 +142,7 @@ obj_find_thirteen_treasures = {
 					religion = druidic 
 					religion = druidic_reformed
 				}
+			}
 			AND = {
 				NOT = { has_character_flag = char_found_thirteen_treasure }
 			}

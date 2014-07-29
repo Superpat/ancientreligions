@@ -28,6 +28,8 @@ MIRACLE_STKILDA;The magic of the druids has healed you;FRENCH;GERMAN;;SPANISH;;;
 #Gaelic Abdication;;;;;;;;;;;;;;;x
 EVTDESCancrel.0214;During the first great battle at Mag Tuired, Nuada lost an arm in combat with the Fir Bolg champion Sreng. Having lost his arm, Nuada was no longer eligible for kingship since, by law, the king must be physically perfect, and he was replaced as king by the tyrant Bres.;FRENCH;GERMAN;;SPANISH;;;;;;;;;;x
 EVTOPTAancrel.0214;May [This.Religion.GetRandomGodNameCap] protect us!;FRENCH;GERMAN;;SPANISH;;;;;;;;;;x
+abdicate_gaelic;Abdicate your throne;FRENCH;GERMAN;;SPANISH;;;;;;;;;;x
+abdicate_gaelic_desc;Even the great Nuada abdicated his throne after losing a limb, are you greater than a god?;FRENCH;GERMAN;;SPANISH;;;;;;;;;;x
 ###### Hellenic Flavor events;;;;;;;;;;x
 EVTDESCancrel.2240;A local Augur has come to your court to perform a public Auguria, the ceremony is held in a plain outside the castle walls and while approaching clouds make you worrisome, the Augur will not postpone it. After observing the entrails of many sacrifices, the Augur is about to declaim the will of the gods when a bolt of lightning strikes him violently!;FRENCH;GERMAN;;SPANISH;;;;;;;;;;x
 EVTOPTAancrel.2240;It seems the gods spoke for themselves;FRENCH;GERMAN;;SPANISH;;;;;;;;;;x

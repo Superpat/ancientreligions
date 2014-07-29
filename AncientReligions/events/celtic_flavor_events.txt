@@ -460,6 +460,9 @@ narrative_event = {
 	only_rulers = yes
 
 	trigger = {
+		NOT = {
+			has_character_flag = first_brythonic_emperor
+		}
 		OR = {
 			religion = druidic
 			religion = druidic_reformed

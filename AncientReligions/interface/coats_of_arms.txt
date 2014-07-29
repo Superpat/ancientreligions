@@ -204,6 +204,7 @@ culture = {
 		"slavic_pagan"
 		"druidic"
 		"druidic_reformed"
+		"helenic_pagan"
 	}
 	
 	templates = { 
@@ -433,9 +434,6 @@ culture = {
 
 culture = {
 	religion_group = "zoroastrian_group"
-	religion = {
-		"hellenic_pagan"
-	}
 	
 	templates = { 
 		"coa_plain_muslim:1"

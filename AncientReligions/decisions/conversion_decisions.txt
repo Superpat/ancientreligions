@@ -3388,7 +3388,6 @@ decisions = {
 			factor = 0
 		}
 	}
-}
 	
 	# Cultures can convert to their cultural pagan beliefs if the MA of their current religion is low
 	gone_pagan = {

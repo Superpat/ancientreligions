@@ -512,7 +512,7 @@ decisions = {
 			}
 			modifier = {
 				factor = 0
-				trait = coward
+				trait = craven
 			}
 			modifier = {
 				factor = 0
@@ -520,7 +520,6 @@ decisions = {
 			}
 		}
 	}
-}
 
 	abdicate_gaelic = {
 		potential = {
@@ -563,14 +562,14 @@ decisions = {
 			}
 			modifier = {
 				factor = 0
-				trait = coward
+				trait = craven
 			}
 			modifier = {
 				factor = 0
 				trait = paranoid
 			}
 		}
-	} 
+	}
 	
 	expel_red_dragons = {
 		potential = {

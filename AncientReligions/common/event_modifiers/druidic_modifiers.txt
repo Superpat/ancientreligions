@@ -27,6 +27,13 @@
 # 37 - Prison 				- 38
 # 39 - Love 				- 40
 
+expelled_d_red_dragons = {
+	icon = 35
+}
+
+expelled_d_fianna = {
+	icon = 35
+}
 
 #####################################################################
 # Conversion Modifiers

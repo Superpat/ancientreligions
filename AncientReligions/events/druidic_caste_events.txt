@@ -567,7 +567,7 @@ character_event = {
 		}
 		modifier = {
 			factor = 1.5
-			trait = c
+			trait = craven
 		}
 		modifier = {
 			factor = 1.5
@@ -1143,18 +1143,6 @@ character_event = {
 			factor = 0.75
 			trait = head2
 		}
-				modifier = {
-			factor = 0.75
-			trait = head3
-		}
-		modifier = {
-			factor = 0.75
-			trait = head4
-		}
-		modifier = {
-			factor = 0.75
-			trait = head5
-		}
 		modifier = {
 			factor = 1.25
 			trait = craven
@@ -1358,7 +1346,7 @@ character_event = {
 	}
 }
 
-# REmove druidic traits on conversion
+# Remove druidic traits on conversion
 character_event = {
 	id = ancrel.0247
 	hide_window = yes

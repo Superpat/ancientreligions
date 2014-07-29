@@ -19,3 +19,8 @@
 # Event ID ancrel.6000 - ancrel.7999 is reserved
 #
 ###################################
+#
+# Epic Bloodlines
+# Event IDs ancrel.10000 - ancrel.10199 are reserved
+#
+###################################

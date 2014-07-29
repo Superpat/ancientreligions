@@ -1,0 +1,76 @@
+#
+# Trojan Heroes
+#
+descendant_of_aeneas = {
+	random = no
+	birth = 0
+	inherit_chance = 100
+	
+	same_religion_opinion = 5
+	same_opinion = 5
+	monthly_character_prestige = 0.25
+	
+	vassal_opinion = 5
+}
+descendant_of_hector = {
+	random = no
+	birth = 0
+	inherit_chance = 100
+	
+	same_religion_opinion = 5
+	same_opinion = 5
+	monthly_character_prestige = 0.25
+	
+	command_modifier = {
+		morale_defence = 0.25
+	}
+}
+descendant_of_paris = {
+	random = no
+	birth = 0	
+	inherit_chance = 100
+	
+	same_religion_opinion = 5
+	same_opinion = 5
+	monthly_character_prestige = 0.25
+	
+	sex_appeal_opinion = 5
+}
+#
+# Greek Heroes
+#
+descendant_of_achilles = {
+	random = no
+	birth = 0
+	inherit_chance = 100
+	
+	same_religion_opinion = 5
+	same_opinion = 5
+	monthly_character_prestige = 0.25
+	
+	command_modifier = {
+		morale_offence = 0.25
+	}
+}
+descendant_of_odysseus = {
+	random = no
+	birth = 0
+	inherit_chance = 100
+	
+	same_religion_opinion = 5
+	same_opinion = 5
+	monthly_character_prestige = 0.25
+	
+	change_intrigue = 1
+}
+descendant_of_nestor = {
+	random = no
+	birth = 0
+	inherit_chance = 100
+	
+	same_religion_opinion = 5
+	same_opinion = 5
+	monthly_character_prestige = 0.25
+	
+	change_diplomacy = 1
+}

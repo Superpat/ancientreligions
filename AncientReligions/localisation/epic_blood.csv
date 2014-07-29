@@ -1,0 +1,15 @@
+#Epic Bloodline Verbiage
+EVTDESCancrel.10000;You've recently finished studying the classics, and you couldn't help but be inspired by the great heroes of the epic poems. Perhaps you should try emulating these mythic figures?;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.10000;I think I shall!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.10000;No point in chasing the impossible...;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.10001;The greatest heroes were those who took part in the Trojan War. Admirable qualities could be found on both sides of that terrible war, but still you must decide, from which side will your heroic muse come?;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.10001;The Greeks!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.10001;The Trojans!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.10002;Of the epic heroes who sided with the Greeks, there were three who stood out as exemplars, which shall you choose to emulate?;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.10002;I shall endeavour to be like the mighty Achilles!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.10002;Odysseus' towering intellect shall be my inspiration.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTCancrel.10002;The honeyed words of Nestor shall guide my life.;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESCancrel.10003;Among the many great heroes who defended the walls of Troy, three stood out from the rest, which shall you choose to emulate?;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTAancrel.10003;Hector, the great commander!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTBancrel.10003;Aeneas, founder of Rome!;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTCancrel.10003;Paris, lover of women!;;;;;;;;;;;;;;;;;;;;;;;;x

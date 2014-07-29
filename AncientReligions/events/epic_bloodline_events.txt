@@ -1,0 +1,313 @@
+###################################################
+#
+# ANCIENT RELIGIONS
+# - Events to trace ancestry to ancient heroes
+#
+# Event ID ancrel.10000 - ancrel.10020 reserved
+#
+###################################################
+
+# Written by Adam 'theStormWeaver/la_xirsoi' Chevalier
+
+namespace = ancrel
+
+# Studied the epic poems
+character_event = {
+	id = ancrel.10000
+	desc = EVTDESCancrel.10000
+	picture = GFX_evt_library
+	border = GFX_event_normal_frame_religion
+	
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+
+	# disabling these events to keep things simple
+	# will renew work on these when compatibility with 2.1.5 is achieved
+	is_triggered_only = yes
+	
+#	trigger = {
+#		has_dlc = "The Old Gods"
+#		
+#		learning = 6
+#		religion = hellenic_pagan
+#		higher_tier_than = COUNT # Dukes or higher only
+#		NOT = { has_character_flag = flag_studied_the_classics }
+#		NOT = { # No one who already claims epic heritage
+#			OR { 
+#				trait = descendant_of_aeneas
+#				trait = descendant_of_hector
+#				trait = descendant_of_paris
+#				trait = descendant_of_achilles
+#				trait = descendant_of_odysseus
+#				trait = descendant_of_nestor
+#			}
+#		}
+#	}
+	
+	mean_time_to_happen = {
+		years = 10 # this should be fairly rare
+		
+		modifier = {
+			factor = 1.25
+			trait = content
+		}
+		modifier = {
+			factor = 1.25
+			trait = craven
+		}
+		modifier = {
+			factor = 1.25
+			trait = slothful
+		}
+		modifier = {
+			factor = 0.8
+			trait = proud
+		}
+		modifier = {
+			factor = 0.8
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				trait = mastermind_theologian
+				trait = scholarly_theologian
+				trait = scholar
+				trait = mystic
+			}
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				trait = zealous
+				trait = cynical
+			}
+		}
+	}
+	
+	immediate = {
+		set_character_flag = flag_stuidied_the_classics
+	}
+	
+	# Decide to emulate one of the epic heroes
+	option = {
+		name = EVTOPTAancrel.10000
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.75
+				NOT = { 
+					OR = {
+						culture = greek
+						culture = italian
+						culture = roman	
+					}
+				}
+			}
+			modifier = {
+				factor = 1.25
+				OR = {
+					trait = zealous
+					trait = cynical
+				}
+			}
+			modifier = {
+				factor = 1.5
+				trait = ambitious
+			}
+			modifier = {
+				factor = 1.25
+				religion_authority = 0.75
+			}
+		}
+		character_event = { id = ancrel.10001 }
+	}
+	# Be boring and just let it go
+	option = {
+		name = EVTOPTBancrel.10000
+		ai_chance = { factor = 50 }
+		option = { name = NO }
+	}
+}
+
+# You've decided to emulate an epic hero, but which one?
+# A Greek or Trojan hero?
+character_event = {
+	id = ancrel.10001
+	desc = EVTDESCancrel.10001
+	picture = GFX_evt_roman_temple
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	hide_from = yes
+	
+	# Greek
+	option = {
+		name = EVTOPTAancrel.10001
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				culture = greek
+			}
+			modifier = {
+				factor = 0.5
+				culture = roman
+			}
+		}
+		character_event = { id = ancrel.10002 }
+	}
+	# Trojan
+	option = {
+		name = EVTOPTBancrel.10001
+		character_event = { id = ancrel.10003 }
+	}
+}
+
+# Emulating a Greek Hero
+character_event = {
+	id = ancrel.10002
+	desc = EVTDESCancrel.10002
+	picture = GFX_evt_roman_temple
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	hide_from = yes
+	
+	#Achilles
+	option = {
+		name = EVTOPTAancrel.10002
+		ai_chance = {
+			factor = 34
+			modifier = {
+				factor = 1.5
+				OR = {
+					trait = brilliant_strategist
+					trait = skilled_tactician
+				}
+			}
+			modifier = {
+				factor = 0.5
+				OR = {
+					trait = craven
+					trait = content
+				}
+			}
+		}
+		immediate = {
+			add_character_modifier = emulating_achilles
+		}		
+	}
+	#Odysseus
+	option = {
+		name = EVTOPTBancrel.10002
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 1.5
+				OR = {
+					trait = intricate_webweaver
+					trait = elusive_shadow
+				}
+			}
+		}
+		immediate = {
+			add_character_modifier = emulating_odysseus
+		}
+	}
+	#Nestor
+	option = {
+		name = EVTOPTCancrel.10002
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 1.5
+				OR = {
+					trait = grey_emminence
+					trait = charismatic_negotiator
+				}
+			}
+		}
+		immediate = {
+			add_character_modifier = emulating_nestor
+		}
+	}
+}
+
+# Emulating a Trojan Hero
+character_event = {
+	id = ancrel.10003
+	desc = EVTDESCancrel.10003
+	picture = GFX_evt_roman_temple
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	hide_from = yes
+	
+	#Hector
+	option = {
+		name = EVTOPTAancrel.10003
+		ai_chance = {
+			factor = 34
+			modifier = {
+				factor = 1.5
+				OR = {
+					trait = brilliant_strategist
+					trait = skilled_tactician
+					trait = brave
+				}
+			}
+			modifier = {
+				factor = 0.5
+				OR = {
+					trait = craven
+					trait = content
+				}
+			}
+		}
+		immediate = {
+			add_character_modifier = emulating_hector
+		}		
+	}
+	# Aeneas
+	option = {
+		name = EVTOPTBancrel.10003
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 1.5
+				OR = {
+					trait = midas_touch
+					trait = fortune_builder
+				}
+			}
+		}
+		immediate = {
+			add_character_modifier = emulating_aeneas
+		}
+	}
+	#Paris
+	option = {
+		name = EVTOPTCancrel.10003
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 1.25
+				OR = {
+					trait = grey_emminence
+					trait = charismatic_negotiator
+				}
+			}
+			modifier = {
+				factor 1.5
+				trait = lustful
+			}
+		}
+		immediate = {
+			add_character_modifier = emulating_paris
+		}
+	}
+}
+
+# 

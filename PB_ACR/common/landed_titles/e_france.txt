@@ -319,8 +319,6 @@ e_france = {
 				b_epernon = {
 				}
 				b_bonneval = {
-					holy_site = druidic
-					holy_site = druidic_reformed
 				}
 				b_tiron = {
 				}

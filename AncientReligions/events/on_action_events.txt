@@ -3449,9 +3449,9 @@ narrative_event = {
 			set_global_flag = norse_reformation
 		}
 		if = {
-			limit = { religion = gaelic_pagan_reformed }
+			limit = { religion = druidic_reformed }
 			d_fianna = {
-				religion = gaelic_pagan_reformed # This Holy Order now changes religion
+				religion = druidic_reformed # This Holy Order now changes religion
 			}
 			set_global_flag = gaelic_reformation
 		}

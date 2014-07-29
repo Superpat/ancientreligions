@@ -6,8 +6,12 @@ decisions = {
 				has_character_flag = aonach_tailteann
 			}
 			OR = {
-				religion = gaelic_pagan
-				religion = gaelic_pagan_reformed
+				religion = druidic
+				religion = druidic_reformed
+			}
+			OR = {
+				culture = irish
+				culture = scottish
 			}
 			independent = yes
 			OR = {

@@ -357,7 +357,7 @@ d_fianna = {
 	holy_order = yes
 	
 	# Parent Religion 
-	religion = gaelic_pagan
+	religion = druidic
 	
 	culture = irish
 	
@@ -25584,8 +25584,6 @@ e_france = {
 				b_chateaudun = {}
 				b_beaugency = {}
 				b_bonneval = {
-					holy_site = druidic
-					holy_site = druidic_reformed
 				}
 			}
 			c_sancerre = {
@@ -27350,8 +27348,6 @@ k_castille = {
 					andalusian_arabic = "Qambr"
 					sicilian_arabic = "Qambr"
 					basque = "Kambre"
-					holy_site = gaelic_pagan
-					holy_site = gaelic_pagan_reformed
 				}
 				b_ferrol = {
 					bedouin_arabic = "Fiyyrul"
@@ -41426,8 +41422,6 @@ e_britannia = {
 								english = "St. Davids"
 								saxon = "St. Davids"
 								anglonorse = "St. Davids"
-								holy_site = gaelic_pagan
-								holy_site = gaelic_pagan_reformed
 				}
 				b_llanismel = {
 								irish = "Llanismel"
@@ -43114,8 +43108,8 @@ e_britannia = {
 				        gothic = "Kenlis"
 				        norwegian = "Kenlis"
 				        icelandic = "Kenlis"
-						holy_site = gaelic_pagan
-						holy_site = gaelic_pagan_reformed
+						holy_site = druidic
+						holy_site = druidic_reformed
 				}
 				b_trim = {
 					irish = "Baile Átha Troim"
@@ -46038,8 +46032,6 @@ e_britannia = {
 					english = "Peel"
 					saxon = "Peel"
 					anglonorse = "Peel"
-					holy_site = gaelic_pagan
-					holy_site = gaelic_pagan_reformed
 				}				
 				b_douglas = {
 					irish = "Doolish"
@@ -46165,8 +46157,6 @@ e_britannia = {
 					english = "Iona"
 					saxon = "Iona"
 					anglonorse = "Iona"
-					holy_site = gaelic_pagan
-					holy_site = gaelic_pagan_reformed
 				}				
 				b_salen = {
 					irish = "An t-Sàilean"
@@ -48808,33 +48798,6 @@ d_druidic_reformed = {
 	
 	# Cannot be held as a secondary title
 	primary = yes
-	
-	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
-}
-
-d_gaelic_pagan_reformed = {
-	color={ 122 165 70 }
-	color2={ 220 220 0 }
-	
-	capital = 15 # Dublin
-	
-	title = "HIGH_KING"
-	title_female = "HIGH_QUEEN"
-	foa = "HIGH_KING_FOA"
-	
-	short_name = yes
-	
-	allow = {
-		religion = gaelic_pagan_reformed
-		num_of_holy_sites = 3
-		religion_authority = 0.6
-		piety = 500
-	}
-	
-	# Controls a religion
-	controls_religion = gaelic_pagan_reformed
-	
-	religion = gaelic_pagan_reformed
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }

@@ -29,7 +29,7 @@ narrative_event = {
 			any_playable_ruler = {
 				limit = {
 					ai = no
-					religion = gaelic_pagan
+					religion = druidic
 				}
 				narrative_event = { id = ancrel.1151 }
 			}
@@ -109,18 +109,26 @@ character_event = {
 		in_command = no
 		has_global_flag = fianna_founded
 		OR = {
-			religion = gaelic_pagan
-			religion = gaelic_pagan_reformed
+			religion = druidic
+			religion = druidic_reformed
 		}
-		NOT = { 
-			trait = varangian 
+		OR = {
+			culture = irish
+			culture = scottish
+		}
+		NOT = {
+			trait = fian 
 			has_character_flag = wants_fianna
 		}
 		father = {
 			is_alive = yes
 			OR = {
-				religion = gaelic_pagan
-				religion = gaelic_pagan_reformed
+				religion = druidic
+				religion = druidic_reformed
+			}
+			OR = {
+				culture = irish
+				culture = scottish
 			}
 			is_ruler = yes
 			is_liege_of = ROOT
@@ -333,7 +341,7 @@ character_event = {
 	
 	trigger = {
 		has_dlc = "The Old Gods"
-		has_character_flag = serving_varangian
+		has_character_flag = serving_fianna
 		NOT = { trait = brilliant_strategist }
 		OR = {
 			trait = misguided_warrior
@@ -528,7 +536,7 @@ character_event = {
 			dynasty = NONE
 			female = yes
 			age = 26
-			religion = gaelic_pagan
+			religion = druidic
 			culture = FROM
 		}
 		new_character = {

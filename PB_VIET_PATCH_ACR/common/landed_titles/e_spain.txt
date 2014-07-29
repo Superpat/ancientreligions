@@ -950,8 +950,6 @@ e_spain = {
 				b_burela = {
 				}
 				b_mondonedo = {
-					holy_site = gaelic_pagan
-					holy_site = gaelic_pagan_reformed
 				}
 				b_villalba = {
 				}

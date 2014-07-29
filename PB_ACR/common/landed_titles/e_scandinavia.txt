@@ -1016,8 +1016,6 @@ e_scandinavia = {
 				swedish = "Västisland"
 				
 				b_reykjavik = {
-					holy_site = gaelic_pagan
-					holy_site = gaelic_pagan_reformed
 				}
 				b_alftanes = {
 					swedish = "Alftanäs"

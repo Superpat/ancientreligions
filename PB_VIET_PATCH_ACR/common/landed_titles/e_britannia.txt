@@ -891,8 +891,6 @@ e_britannia = {
 					irish = Tyddewi
 					welsh = Tyddewi
 					norwegian = "Ramsøy"
-					holy_site = gaelic_pagan
-					holy_site = gaelic_pagan_reformed
 				}
 				b_kidwelly = {
 					welsh = Cydweli
@@ -1132,8 +1130,6 @@ e_britannia = {
 				b_finlaggan = {
 				}
 				b_iona = {
-					holy_site = gaelic_pagan
-					holy_site = gaelic_pagan_reformed
 				}
 				b_stornoway = {
 					norwegian = "Stornavåg"
@@ -1708,8 +1704,8 @@ e_britannia = {
 				b_christ_church = {
 				}
 				b_mellifont = {
-					holy_site = gaelic_pagan
-					holy_site = gaelic_pagan_reformed
+					holy_site = druidic
+					holy_site = druidic_reformed
 				}
 				b_trim = {
 				}

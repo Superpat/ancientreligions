@@ -37,7 +37,7 @@ EVTOPTDancrel.1199;I will treat everyone equaly;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 EVTOPTEancrel.1199;I will favor the crown;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 EVTOPTFancrel.1199;I will favor the fianna;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 EVTOPTGancrel.1199;I will favor the birds!;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-give_laws_ollam;The Ollamh distribues the new laws to your vassals;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+give_laws_ollam;The Ollamh distribues the new laws to your vassals\n;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 favored_warriors;Favors the Warrior caste;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 favored_druids;Favors the Druidic caste;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 favored_merchants;Favors the Merchant caste;FRENCH;GERMAN;SPANISH;;;;;;;;;;x

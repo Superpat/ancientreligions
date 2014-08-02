@@ -34,7 +34,7 @@ d_wolftails = {
 	
 	strength_growth_per_century = 1.0
 
-	modifier = d_wolftails_modifier
+	mercenary_type = wolftails_composition
 }
 
 # HOLY ORDERS
@@ -64,7 +64,7 @@ d_red_dragons = {
 	# Cannot be held as a secondary title
 	primary = yes
 
-	modifier = d_red_dragons_modifier
+	mercenary_type = red_dragons_composition
 }
 
 d_fianna = {
@@ -92,7 +92,7 @@ d_fianna = {
 	# Cannot be held as a secondary title
 	primary = yes
 
-	modifier = d_fianna_modifier
+	mercenary_type = fianna_composition
 }
 
 # Pagan heads of religion

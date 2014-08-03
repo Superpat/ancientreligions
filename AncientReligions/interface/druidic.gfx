@@ -22,8 +22,15 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_celtic_knight"
-		texturefile = "gfx/traits/celtic_knight.dds"
+		name = "GFX_trait_bad_priest_druidic"
+		texturefile = "gfx/traits/bad_priest_druid.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_changeling"
+		texturefile = "gfx/traits/changeling.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -44,7 +51,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_trait_celtic_knight"
-		texturefile = "gfx/traits/celtic_knight.dds"
+		texturefile = "gfx/traits/celtic_warrior.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -271,6 +278,14 @@ spriteTypes = {
 	
 	# Decision icons
 	spriteType = {
+		name = "GFX_reinstate_celtic_rites"
+		texturefile = "gfx\\interface\\decision_icon_convert_to_reformed.dds"
+	}
+	spriteType = {
+		name = "GFX_abdicate_gaelic"
+		texturefile = "gfx\\interface\\decision_icon_faction_lower_crown_authority_ultimatum.dds"
+	}
+	spriteType = {
 		name = "GFX_hold_divination"
 		texturefile = "gfx\\interface\\decision_icon_hold_divination.dds"
 	}
@@ -294,4 +309,13 @@ spriteTypes = {
 		name = "GFX_hold_an_aonach_tailteann"
 		texturefile = "gfx\\interface\\decision_icon_hold_an_aonach_tailteann.dds"
 	}
+	spriteType = {
+		name = "GFX_donate_money_to_fianna"
+		texturefile = "gfx\\interface\\decision_icon_donate_to_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_donate_money_to_red_dragons"
+		texturefile = "gfx\\interface\\decision_icon_donate_to_holy_order.dds"
+	}
+	
 }

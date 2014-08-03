@@ -2,7 +2,7 @@
 ;;;;;;;;;;
 ancrel.0211.desc;A happy day! It seems like your worthy rule has turned the attention of the gods to your lands and the discovery of a symbol sacred to your people bodes well for your continued rule.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ancrel.0211.a;Glory to the gods;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-sacred_symbol_built;Shrines are built in honor of the gods;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+sacred_symbol_built;Shrines are built in honor of the gods\n;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ancrel.0213.desc;This province is littered with pagan artefacts and shrines, you have your men promptly destroy them.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ancrel.0213.a;Crazy pagans;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 sacred_the_giants_causeway;The Giants Causeway;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
@@ -39,7 +39,7 @@ sacred_river;Sacred River;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 sacred_river_desc;A goddess is believed to reside in the waters of this river, blessing all peoples living near it.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 give_offerings_sidhe;Offerings to the Sidhe;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 give_offerings_sidhe_desc;The spirits and minor gods of the land must also be appeased.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-prepare_offerings;Prepare a ceremony to appease the sidhe.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+prepare_offerings;Prepare a ceremony to appease the sidhe.\n;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ancrel.0247.desc;A few dead birds, lost crops, disease... These are all signs of restlessness amongst the lesser gods and spirits of the land, it does not take long before your druids come bearing ill news. It seems like the Sidhe are angry, whether the cause of a peasant's stupidity or a warrior's cowardice, this does not bode well for the realm.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ancrel.0247.a;I must find a way to appease the Sidhe.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 sidhe_angry;Restless Sidhe;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
@@ -51,15 +51,18 @@ ancrel.0249.desc;As you and your men gather in the sacred grove, your druid and 
 ancrel.0249.a;Lets hope the Sidhe accept this offering;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ancrel.0253.desc;Fine treasures of gold and silver are brought inside the grove, the smell of burning herbs permeates the air as you kneel before a small stream of water. You slowly place the offerings inside the stream and watch as they are taken away, to be enjoyed by the spirits.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ancrel.0253.a;Lets hope the Sidhe accept this offering;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0250.tooltip;The offering is rejected;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ancrel.0250.desc;Despite your offering, it seems like the Sidhe have not accepted your attempt at bolstering your relations. Your druid says that your offering was seen as disrespectful and insulting, while they might not get angry, we must thread carefully.;FRENCH;GERMAN;;SPANISH;;;;;;;;;;x
 ancrel.0250.a;There is no satisfying them!;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 sidhe_offerings_bad;Sidhe rejected offerings;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 sidhe_offerings_bad_desc;The recent offerings made by this ruler to appease the Sidhe have been rejected;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0251.tooltip;The offering is accepted, but spirits are not completely pleased;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ancrel.0251.desc;You await, breathless, as the Druids colloquy with the Sidhe comes to an end. It seems like your offerings have been accepted! Nonetheless he warns you that the spirits are not necessarily pleased and, while they will probably not cause any troubles, future offerings will need to be superior for them to be satisfied completely.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ancrel.0251.a;We have peace, for now..;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 sidhe_offerings_neutral;Sidhe accepted offerings;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 sidhe_offerings_neutral_desc;An inferior offering left the spirits of the land satisfied, but wanting for more.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0252.desc;The good news rapidly spread thoughout your lands, the offerings made to the great Sidhe have been accepted! The Druid tells of dancing elves and restfull tree-spirits receiving the offerings with great pleasure. While the Sidhe are fickle beings, it is probable that our standing with them shall improve.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0252.tooltip;The offering is accepted;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0252.desc;The good news rapidly spread thoughout your lands, the offerings made to the great Sidhe have been accepted! The Druid tells of dancing elves and restful tree-spirits receiving the offerings with great pleasure. While the Sidhe are fickle beings, it is probable that our standing with them shall improve.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ancrel.0252.a;Praise be the gods!;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 sidhe_offerings_good;Sidhe appreciate offerings;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 sidhe_offerings_good_desc;Recent offerings to the Sidhe has put this ruler in good standing with them.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x

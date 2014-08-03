@@ -10,10 +10,10 @@ EVTOPTBancrel.0000;Strange man, begone!;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 begone_sorcerer;You send the pagan away.;Vous faites sortir cette misérable créature.;Ihr schickt die elende Kreatur fort.;;Echas a la criatura miserable.;;;;;;;;;x
 EVTDESCancrel.0001;The exploits of the heroes of old, of the High Kings of Albion, Eire and Alba, these stories bring up visions of a better time, when giants and fairies where friends, before man destroyed all in his folly. With the help of your court wizard, you have decided to adopt certain old celtic rites.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 EVTOPTAancrel.0001;The spirits of the land must be appeased;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-adopt_celtic_rites;You reinstitute old pagan traditions;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+adopt_celtic_rites;You reinstitute old pagan traditions\n;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 EVTDESCancrel.0002;Revolted by the resurgeance of old practices in your lands, a priest has come to your court, asking you to reform your ways.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 EVTOPTAancrel.0002;Why limit myself to one God?;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-adopt_druidism;You become a celtic pagan;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+adopt_druidism;You become a celtic pagan\n;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 EVTOPTBancrel.0002;The Old Ways are barbarous, the power of God conquers all.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 EVTDESCancrel.0003;Your liege has started to follow the teachings of an unwashed pagan wizard and is reinstating old practices, as a celt, you find these ideas somewhat interesting...;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 EVTOPTAancrel.0003;The spirits of the land must be appeased;FRENCH;GERMAN;SPANISH;;;;;;;;;;x

@@ -1,0 +1,91 @@
+# ACR impacted on_actions: vanilla events need to be kept, as it does a full override of events & random_events lists
+
+on_death = {
+	events = {
+		650
+		24500
+		24502
+		70041
+		88291
+		SoA.5306
+		705
+	
+		ancrel.1194
+		ancrel.2123
+		45340 # Thirteen treasures inheritance
+	}
+	
+	random_events = {
+		10 = 24505
+		10 = 24510
+		100 = 0
+	}
+}
+
+# When a pagan religion is reformed
+on_reform_religion = {
+	events = {
+		670 # Pagan reformation
+		ancrel.0009 # Fianna reforms
+	}
+}
+
+on_birth = {
+	events = {
+		300 # A Bastard is born
+		312 # The child of a consort is born		
+		318 # A Bastard is born, but is not recognized as such by the mother's spouse (cuckoo!)
+		TOG.3206 # Child Perceived to be Demon Born
+		706 # Full House achievement
+		707 # Keeping it in the Family achievement
+		
+		ancrel.0215 # Child Perceived to be a Changeling
+	}
+	
+	random_events = {
+		200 = 0
+		1 = RoI.10000 # Reincarnation?
+	}
+}
+
+on_adulthood = {
+	events = {
+		SoA.3020 # Demon child's true nature asserts itself
+		
+		ancrel.0241   # Changeling child's true nature asserts itself
+	}
+}
+
+#on combat pulse
+on_combat_pulse = {
+	random_events = {
+		2750 = 0
+		10 = 242 # Killed
+		20 = 243 # Wounded
+		10 = 244 # Maimed
+		5 = 245 # Serious head injury
+		50 = 246 # Improves martial education
+		20 = 247 # Flat improvement to martial skill
+
+		20 = 248 # Knowledge boost in capital from battle.
+		10 = 255 # Marshal: Unnecessary violence
+		25 = 270 # Gain Brave
+		25 = 271 # Gain Craven
+		20 = 272 # Gain Wroth
+		20 = 273 # Gain Patient
+		
+		30 = 96500 # Gain Combat Trait 1
+		15 = 96501 # Gain Combat Trait 2
+		15 = 96502 # Gain Combat Trait 3
+		15 = 96503 # Gain Combat Trait 4
+		
+		50 = TOG.3000 # Becomes Berserker
+		15 = TOG.3001 # Berserker Maimed
+		20 = TOG.3002 # Berserker Wounded
+		15 = TOG.3003 # Berserker Killed
+		25 = TOG.3004 # Berserker Kills Many
+		
+		20 = ancrel.0010 # Becomes reknowned headhunter
+		5 = ancrel.0011 # Becomes a legendary hero
+	}
+}

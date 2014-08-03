@@ -44,7 +44,7 @@ d_red_dragons = {
 	color={ 75 0 75 }
 	color2={ 255 255 255 }
 	
-	capital = 64
+	capital = 64 #Gwynedd
 
 	title = "GRANDMASTER"
 	foa = "GRANDMASTER_FOA"
@@ -72,7 +72,7 @@ d_fianna = {
 	color={ 75 75 75 }
 	color2={ 255 255 255 }
 	
-	capital = 15
+	capital = 15 #Ormond
 
 	title = "WARCHIEF"
 	foa = "WARCHIEF_FOA"

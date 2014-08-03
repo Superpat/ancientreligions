@@ -79,9 +79,7 @@ decisions = {
 				}
 			}
 			any_courtier = {
-				OR = {
-					religion = druidic
-				}
+				religion = druidic
 			}
 		}
 		allow = {
@@ -91,9 +89,7 @@ decisions = {
 			learning = 8
 			NOT = {trait = zealous}
 			any_courtier = {
-				OR = {
-					religion = druidic
-				}
+				religion = druidic
 				prisoner = no
 			}
 		}
@@ -705,7 +701,7 @@ decisions = {
 		potential = {
 			religion = druidic_reformed
 			
-			is_title_active = d_red_dragons
+			is_title_active = d_fianna
 			
 			NOT = { has_character_modifier = expelled_d_fianna }
 			

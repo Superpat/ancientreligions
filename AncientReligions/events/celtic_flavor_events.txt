@@ -354,7 +354,7 @@ character_event = {
 		}
 		modifier = {
 			factor = 0.7
-			trait = sympathy_for_pagans
+			trait = sympathy_pagans
 		}
 	}
 
@@ -471,7 +471,7 @@ narrative_event = {
 				culture = welsh
 				culture = breton
 		}
-		has_landed_title = { e_britannia }
+		has_landed_title = e_britannia
 		primary_title = { 
 			any_previous_holder = { #Will not fire if Kingdom is usurped by someone else or reformed
 				NOT = {

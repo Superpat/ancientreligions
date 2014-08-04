@@ -14,6 +14,8 @@ EVTOPTAancrel.0246;Send for a master of law.;French;German;;Spanish;;;;;;;;;;;x
 EVTOPTBancrel.0246;Bring me a servant of the gods.;French;German;;Spanish;;;;;;;;;;;x
 EVTDESCancrel.0153;The people of your court are incredulous. “Great [Root.GetTitle], it is a shame that you do not have a Druid at court! Are you to be like a Bard without his voice, a warrior without his spear, a farmer without his seeds?” No self-respecting ruler of the islands can go without a Druid, after all.;French;German;;Spanish;;;;;;;;;;;x
 EVTOPTAancrel.0153;I must find a knowledgeable Druid soon, and fast!;French;German;;Spanish;;;;;;;;;;;x
+EVTOPTBancrel.0153;I will give the title to one of my courtiers;French;German;;Spanish;;;;;;;;;;;x
+EVTOPTCancrel.0153;I will give the title to one of my vassals;French;German;;Spanish;;;;;;;;;;;x
 new_druid_in_court;New Druid in Court;French;German;;Spanish;;;;;;;;;;;x
 new_druid_in_court_desc;A Druid has just arrived in this lord's court.;French;German;;Spanish;;;;;;;;;;;x
 title_court_druid;Court Druid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
@@ -124,12 +126,13 @@ ancrel.0183.name;The Show Begins!;;;;;;;;;;;;;x
 ancrel.0183.a;I think we should start with the story about...;;;;;;;;;;;;;x
 ;;;;;;;;;;;;;x
 EVTNAMEancrel.0183;Coming of age;French;German;;Spanish;;;;;;;;;;;x
-EVTDESCancrel.0183;Today your child comes of age. [From.GetSheHe] will join the clan today as the Druids present [From.GetHerHim] to the gods. You can use this opportunity to plan [From.GetHerHis] future.;French;German;;Spanish;;;;;;;;;;;x
-EVTOPTAancrel.0183;[From.GetSheHe] will be a warrior;French;German;;Spanish;;;;;;;;;;;x
+EVTDESCancrel.0183;Today your child comes of age. [From.GetSheHeCap] will join the clan today as the Druids present [From.GetHerHim] to the gods. You can use this opportunity to plan [From.GetHerHis] future.;French;German;;Spanish;;;;;;;;;;;x
+EVTOPTAancrel.0183;[From.GetSheHeCap] will be a warrior;French;German;;Spanish;;;;;;;;;;;x
 EVTOPTBancrel.0183;The Gods are in need of [From.GetHerHim];French;German;;Spanish;;;;;;;;;;;x
 EVTNAMEancrel.0184;Coming of age;French;German;;Spanish;;;;;;;;;;;x
 EVTDESCancrel.0184;Today is the day I become an adult, it is time I meet my destiny;French;German;;Spanish;;;;;;;;;;;x
 EVTOPTAancrel.0184;Ask my father for advice;French;German;;Spanish;;;;;;;;;;;x
+path_of_the_warriors;Your child will undergo training with the warriors\n;French;German;;Spanish;;;;;;;;;;;x
 path_of_the_druids;Your child will undergo training with the druids\n;French;German;;Spanish;;;;;;;;;;;x
 EVTNAMEancrel.0185;The Path of the Druids;;;;;;;;;;;;;x
 EVTDESCancrel.0185;An old man has arrived, dressed in the garbs of a druid, he is here to take your child with him to a sacred grove deep inside the forest.\nThere [From.GetSheHe] will be taught the secret arts of the druids, this training will take many years and novices have been known to come back changed, or worse... dead.;;;;;;;;;;;;;x
@@ -141,7 +144,7 @@ return_from_druidic_training;Your child has learned much\n;FRENCH;GERMAN;;SPANIS
 return_from_druidic_training_player;You have learned much\n;FRENCH;GERMAN;;SPANISH;;;;;;;;;;;;;;x
 EVTDESCancrel.0189;The night is dark and cold when your servants wake you, a visitor has come to see you. Suddenly, a black shape pushes them to the side and approaches your bedside, you reach for your sword but slowly realize who it is, [From.GetTitledFirstName], back from the forests of the druids!;;;;;;;;;;;;;x
 EVTOPTAancrel.0189;[From.GetFirstName]! You've... changed!;;;;;;;;;;;;;x
-EVTDESCancrel.0191;On of the supplicants at your court today is hopping on one leg, trying to keep [From.GetHerHis] balance with the help of a knoted stick of wood. [From.GetsSheHe] has a familiar look and as [From.GetSheHe] approaches your throne, you finally understand why, it is [From.GetTitledFirstName], back from the druids!;;;;;;;;;;;;;x
+EVTDESCancrel.0191;On of the supplicants at your court today is hopping on one leg, trying to keep [From.GetHerHis] balance with the help of a knoted stick of wood. [From.GetSheHe] has a familiar look and as [From.GetSheHe] approaches your throne, you finally understand why, it is [From.GetTitledFirstName], back from the druids!;;;;;;;;;;;;;x
 EVTOPTAancrel.0191;My child, what have the gods done to you?;;;;;;;;;;;;;x
 EVTDESCancrel.0193;[From.GetTitledFirstName] is back from the druidic groves, there he has learned much of the ways of the gods and our people, he has sung numerous stories and even come up with a few of his own.;;;;;;;;;;;;;x
 EVTOPTAancrel.0193;I wish to hear of these new stories!;;;;;;;;;;;;;x

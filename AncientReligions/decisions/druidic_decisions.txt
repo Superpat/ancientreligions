@@ -172,12 +172,10 @@ decisions = {
 	organize_fianna = {
 		is_high_prio = yes
 		potential = {
-			AND = {
-				has_landed_title = k_ireland
-				OR = {
-					religion = druidic
-					religion = druidic_reformed
-				}
+			has_landed_title = k_ireland
+			OR = {
+				religion = druidic
+				religion = druidic_reformed
 			}
 			prisoner = no
 			age = 16
@@ -293,6 +291,7 @@ decisions = {
 					has_minor_title = title_court_druid
 				}
 			}
+			scaled_wealth = 0.5
 		}
 		effect = {
 			scaled_wealth = -0.5

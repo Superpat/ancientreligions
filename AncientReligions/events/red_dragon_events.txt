@@ -342,7 +342,7 @@ character_event = {
 	
 	immediate = {
 		FROMFROM = {
-			character_event = {
+			letter_event = {
 				id = ancrel.1327
 			}
 		}

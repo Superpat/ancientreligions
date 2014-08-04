@@ -874,10 +874,6 @@ character_event = {
 		has_character_flag = changeling_child
 	}
 	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
 	immediate = {
 		clr_character_flag = changeling_child
 		clr_character_flag = changeling_child_fake

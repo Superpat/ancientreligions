@@ -1,4 +1,4 @@
-#Epic Bloodline Verbiage
+#Epic Bloodline Events
 EVTDESCancrel.10000;You've recently finished studying the classics, and you couldn't help but be inspired by the great heroes of the epic poems. Perhaps you should try emulating these mythic figures?;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTAancrel.10000;I think I shall!;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTBancrel.10000;No point in chasing the impossible...;;;;;;;;;;;;;;;;;;;;;;;;x
@@ -13,3 +13,47 @@ EVTDESCancrel.10003;Among the many great heroes who defended the walls of Troy, 
 EVTOPTAancrel.10003;Hector, the great commander!;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTBancrel.10003;Aeneas, founder of Rome!;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTCancrel.10003;Paris, lover of women!;;;;;;;;;;;;;;;;;;;;;;;;x
+
+#Epic Bloodline Modifiers
+emulating_achilles;Emulating Achilles;;;;;;;;;;;;;;;;;;;;;;;;x
+emulating_achilles_desc;This character strives to be like the hero Achilles.;;;;;;;;;;;;;;;;;;;;;;;;x
+emulating_odysseus;Emulating Odysseus;;;;;;;;;;;;;;;;;;;;;;;;x
+emulating_odysseus_desc;This character is modeling their life after Odysseus.;;;;;;;;;;;;;;;;;;;;;;;;x
+emulating_nestor;Emulating Nestor;;;;;;;;;;;;;;;;;;;;;;;;x
+emulating_nestor_desc;Nestor's example guides this character's life.;;;;;;;;;;;;;;;;;;;;;;;;x
+
+emulating_hector;Emulating Hector;;;;;;;;;;;;;;;;;;;;;;;;x
+emulating_hector_desc;This character is using Hector as a guide for their life.;;;;;;;;;;;;;;;;;;;;;;;;x
+emulating_aeneas;Emulating Aeneas;;;;;;;;;;;;;;;;;;;;;;;;x
+emulating_aeneas_desc;Aeneas is providing this character a model of life.;;;;;;;;;;;;;;;;;;;;;;;;x
+emulating_paris;Emulating Paris;;;;;;;;;;;;;;;;;;;;;;;;x
+emulating_paris_desc;This character strives to be like Paris of Troy.;;;;;;;;;;;;;;;;;;;;;;;;x
+
+#Epic Bloodline Traits
+descendant_of_achilles;Blood of Achilles;;;;;;;;;;;;;;;;;;;;;;;;x
+descendant_of_achilles_desc;This character is recognized as a direct descendant of Achilles. Their presence on the battlefield unnerves their enemies.;;;;;;;;;;;;;;;;;;;;;;;;x
+descendant_of_odysseus;Blood of Odysseus;;;;;;;;;;;;;;;;;;;;;;;;x
+descendant_of_odysseus_desc;This character is recognized as a direct descendant of Odysseus. Their presence as part of a conspiracy makes others more confident in it's success, and those who conspire against them are less confident in their own success.;;;;;;;;;;;;;;;;;;;;;;;;x
+descendant_of_nestor;Blood of Nestor;;;;;;;;;;;;;;;;;;;;;;;;x
+descendant_of_nestor_desc;This character is recognized as a direct descendant of Geronian Nestor. Their words are respected throughout the known world, and their presence at the negotiating table is an important influence.;;;;;;;;;;;;;;;;;;;;;;;;x
+
+descendant_of_hector;Blood of Hector;;;;;;;;;;;;;;;;;;;;;;;;x
+descendant_of_hector_desc;This character is recognized as a direct descendant of Prince Hector. Their presence in battle strengthens the resolve of their allies.;;;;;;;;;;;;;;;;;;;;;;;;x
+descendant_of_aeneas;Blood of Aeneas;;;;;;;;;;;;;;;;;;;;;;;;x
+descendant_of_aeneas_desc;This character is recognized as a direct descendant of Aeneas. Their vassals are more confident in their rule.
+descendant_of_paris;Blood of Paris;;;;;;;;;;;;;;;;;;;;;;;;x
+descendant_of_paris_desc;This character is recognized as a direct descendant of Paris of Troy. They are considered more sexually appealing, being descended from two of the most attractive mortals of the mythic era, Paris and Hellen.;;;;;;;;;;;;;;;;;;;;;;;;x
+
+achilles_reborn;Achilles Reborn;;;;;;;;;;;;;;;;;;;;;;;;x
+achilles_reborn_desc;This character is the reincarnation of Achilles, the mythic hero of The Illiad. Enemy armies tremble at the mention of their name.;;;;;;;;;;;;;;;;;;;;;;;;x
+odysseus_reborn;Odysseus Reborn;;;;;;;;;;;;;;;;;;;;;;;;x
+odysseus_reborn_desc;This character is the reincarnation of Odysseus, the mythic hero of The Illiad. All those that dare to plot in this character's realm fear the day they are discovered by this character.;;;;;;;;;;;;;;;;;;;;;;;;x
+nestor_reborn;Nestor Reborn;;;;;;;;;;;;;;;;;;;;;;;;x
+nestor_reborn_desc;This character is the reincarnation of Geronian Nestor, the mythic hero of The Illiad. All listen with rapt attention when this character speaks, hanging on their every word.
+
+hector_reborn;Hector Reborn;;;;;;;;;;;;;;;;;;;;;;;;x
+hector_reborn_desc;This character is the reincarnation of Prince Hector, the Defender of Troy. Soldiers under this character's command believe that they can defend against anything, excepting only the Olympian gods themselves.;;;;;;;;;;;;;;;;;;;;;;;;x
+aeneas_reborn;Aeneas Reborn;;;;;;;;;;;;;;;;;;;;;;;;x
+aeneas_reborn_desc;This character is the reincarnation of Aeneas, hero of Troy and founder of Rome. This character's vassals feel secure in the knowledge that they are being led by such a great administrator.
+paris_reborn;Paris Reborn;;;;;;;;;;;;;;;;;;;;;;;;x
+paris_reborn_desc;This character is the reincarnation of Paris, Prince of Troy. This character is considered one of the most desirable people in the world, the object of sexual and romantic fantasy for many.

@@ -3,7 +3,7 @@
 # ANCIENT RELIGIONS
 # - Events to trace ancestry to ancient heroes
 #
-# Event ID ancrel.10000 - ancrel.10020 reserved
+# Event ID ancrel.10000 - ancrel.10100 reserved
 #
 ###################################################
 
@@ -27,22 +27,11 @@ character_event = {
 		
 		learning = 6
 		religion = hellenic_pagan
-		higher_tier_than = COUNT # Dukes or higher only
 		NOT = { has_character_flag = flag_studied_the_classics }
-		NOT = { # No one who already claims epic heritage
-			OR { 
-				trait = descendant_of_aeneas
-				trait = descendant_of_hector
-				trait = descendant_of_paris
-				trait = descendant_of_achilles
-				trait = descendant_of_odysseus
-				trait = descendant_of_nestor
-			}
-		}
 	}
 	
 	mean_time_to_happen = {
-		years = 10 # this should be fairly rare
+		years = 20 # this should be fairly rare
 		
 		modifier = {
 			factor = 1.25
@@ -266,7 +255,7 @@ character_event = {
 			add_character_modifier = emulating_hector
 		}		
 	}
-	# Aeneas
+	#Aeneas
 	option = {
 		name = EVTOPTBancrel.10003
 		ai_chance = {
@@ -296,7 +285,7 @@ character_event = {
 				}
 			}
 			modifier = {
-				factor 1.5
+				factor = 1.5
 				trait = lustful
 			}
 		}
@@ -306,4 +295,64 @@ character_event = {
 	}
 }
 
-# 
+#Lover Remarks of your Paris-like love making skills
+character_event = {
+	id = ancrel.10050
+	desc = EVTDESCancrel.10050
+	picture = GFX_evt_roman_temple
+	border = GFX_event_normal_frame_religion
+
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		has_dlc = "The Old Gods"
+		has_character_modifier = emulating_paris
+		religion = hellenic_pagan
+
+		has_lover = yes
+
+		NOT = { #cannot already claim epic blood
+			has_trait = descendant_of_hector
+			has_trait = descendant_of_aeneas
+			has_trait = descendant_of_paris
+
+			has_trait = descendant_of_achilles
+			has_trait = descendant_of_odysseus
+			has_trait = descendant_of_nestor
+		}
+		NOT = { #can't be ugly, fat, or have bad genetic traits
+			has_trait = ugly
+			has_trait = inbred
+			has_trait = slow
+			has_trait = fat
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 100 # quite rare
+
+		modifier = {
+			factor = 0.95
+			NOT = {
+				age = 40
+			}
+		}
+		modifier = {
+			factor = 0.95
+			NOT = {
+				age = 35
+			}
+		}
+		modifier = {
+			factor = 0.95
+			NOT = {
+				age = 30
+			}
+		}
+		modifier = {
+			factor = 0.95
+			has_trait = attractive
+		}
+	}
+}

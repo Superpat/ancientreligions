@@ -1,8 +1,12 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ;;;;;;;;;;;;
 donate_money_to_fianna;Donate money to the Fianna;FRENCH;GERMAN;SPANISH;;;;;;;;;;;x
+donate_money_to_fianna_desc;I can donate money to the Fianna in exchange for Piety and lifelong respect from the [Root.Religion.GetName] Church;FRENCH;GERMAN;SPANISH;;;;;;;;;;;x
 donate_money_to_red_dragons;Donate money to the Red Dragon Knights;FRENCH;GERMAN;SPANISH;;;;;;;;;;;x
-expel_red_dragons;Expel the Red Dragon Order;FRENCH;GERMAN;SPANISH;;;;;;;;;;;x
+donate_money_to_red_dragons_desc;I can donate money to the Red Dragon Knights in exchange for Piety and lifelong respect from the [Root.Religion.GetName] Church;FRENCH;GERMAN;SPANISH;;;;;;;;;;;x
+expel_red_dragons;Expel the Red Dragon Knights;FRENCH;GERMAN;SPANISH;;;;;;;;;;;x
+expelled_d_fianna;Expelled the Fianna;FRENCH;GERMAN;SPANISH;;;;;;;;;;;x
+expelled_d_red_dragons;Expelled the Red Dragon Knights;FRENCH;GERMAN;SPANISH;;;;;;;;;;;x
 d_red_dragons;Red Dragon;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 d_wolftails;Wolftails;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 d_fianna;Fianna;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
@@ -75,7 +79,7 @@ EVTOPTAancrel.1183;[From.GetFirstName], you make me proud!;[From.GetFirstName], 
 EVTDESCancrel.1184;Upon learning of the death of your father, you left the Fianna and departed the Circle for home in a caravan filled with loot from your campaigns. It was a long and perilous journey back, but your feet are now firmly planted on the soil of the land that is your birthright. The throne is yours.;Après avoir appris la mort de votre père, vous avez abandonné la Garde varègue et quittez Miklagård sur un drakkar pour rentrer au bercail, rapportant un important butin amassé lors de vos campagnes en Serkland. Le voyage du retour fut long et périlleux, mais vos pieds foulent maintenant la terre ferme, cette terre dont vous êtes l'héritier. Le trône est à vous.;Als Ihr vom Tod Eures Vaters erfahrt, verlasst Ihr die Warägergarde und Miklagard in einem großen Beiboot, gefüllt mit der Beute Eurer Schlachten in Serkland. Es war eine lange und gefahrvolle Reise, doch jetzt setzt Ihr Eure Füße auf heimatliche Erde, dir Euer Geburtsrecht ist. Der Thron gehört Euch. ;;Al enterarte de la muerte de tu padre, dejas la Guardia Varangiana y dejas Miklagard para volver a casa en un drakkar lleno de botines de tus campañas en Serkland. Fue un largo y peligroso viaje de regreso, pero tus pies están ahora firmemente plantados en la tierra que es tu patrimonio. El trono es tuyo.;;;;;;;;;x
 EVTOPTAancrel.1184;It is as I remember it.;C'est comme dans mes souvenirs.;Ganz wie in meiner Erinnerung. ;;Es tal y como lo recordaba.;;;;;;;;;x
 vassalize_fianna;Vassalize the Fianna;;;;;;;;;;;;;x
-vassalize_fianna_desc;Our religion has been reformed, yet still the warbands of the Fianna run freely, many forgoing the authority of the Circle. By vassalizing their leader, we could further legitimise our rule and gain more control on their members.
+vassalize_fianna_desc;Our religion has been reformed, yet still the warbands of the Fianna run freely, many forgoing the authority of the Circle. By vassalizing their leader, we could further legitimise our rule and gain more control on their members.;;;;;;;;;;;;;x
 EVTDESCancrel.1254;A group of fennid warriors have come to visit [Root.PrimaryTitle.GetName]. [Root.job_chancellor.GetTitledFirstName] has met with them, and ask for my reply.;Un groupe de chevaliers errants se présente à [Root.Location.GetName]. [Root.job_chancellor.GetTitledFirstName] les accueille et attend ma réponse.;Eine Gruppe fahrender Ritter besucht [Root.Location.GetName]. [Root.job_chancellor.GetTitledFirstName] hat sich mit ihnen getroffen und wartet nun auf meine Antwort.;;Ha venido un grupo de Caballeros Errantes a visitar [Root.Location.GetName]. [Root.job_chancellor.GetTitledFirstName] se ha reunido con ellos y pide mi respuesta.;;;;;;;;;x
 EVTOPTAancrel.1254;Welcome them with a lavish feast!;Qu’on organise un somptueux festin en leur honneur !;Zu ihren Ehren ein üppiges Gelage geben!;;¡Dales la bienvenida con una gran fiesta!;;;;;;;;;x
 EVTOPTBancrel.1254;Welcome them reluctantly...;Je les accueille à contrecœur...;Sie widerwillig willkommen heißen ...;;Recíbeles de mala gana...;;;;;;;;;x

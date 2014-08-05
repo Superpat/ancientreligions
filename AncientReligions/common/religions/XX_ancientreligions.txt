@@ -7,6 +7,8 @@ pagan_group = {
 		icon = 37
 		heresy_icon = 57
 		
+		ai_convert_other_group = 2 # always try to convert
+		
 		color = { 0.6 0.1 0.1 }
 		god_names = {
 			GOD_JUNO GOD_VESTA GOD_MINERVA GOD_CERES GOD_DIANA GOD_VENUS GOD_MARS GOD_MERCURY GOD_JUPITER GOD_NEPTUNE GOD_VULCAN GOD_APOLLO
@@ -35,10 +37,13 @@ pagan_group = {
 	}
 	
 	druidic_reformed = {
+		# Use norsegfx rather than celticgfx to have the northern pagan rounded CoA on the map
 		graphical_culture = norsegfx
 		
 		icon = 59
 		heresy_icon = 60
+		
+		ai_convert_other_group = 2 # always try to convert
 		
 		color = { 0.2 0.6 0.03 }
 		crusade_name = GREAT_HOLY_WAR
@@ -88,6 +93,7 @@ pagan_group = {
 	}
 	
 	druidic = {
+		# Use norsegfx rather than celticgfx to have the northern pagan rounded CoA on the map
 		graphical_culture = norsegfx
 		
 		icon = 58

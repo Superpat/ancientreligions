@@ -16,9 +16,8 @@ title_pagan_wizard = {
 		is_female = no
 		is_ruler = no
 		trait = mystic
-		OR = {
-			religion_group = pagan_group
-		}
+		religion_group = pagan_group
+
 		FROM = {
 			OR = {
 				religion_group = christian

@@ -25,9 +25,9 @@ character_event = {
 	min_age = 16
 	capable_only = yes
 	prisoner = no
-	is_alive = yes
 
 	trigger = {
+		is_alive = yes
 		NOT = { trait = head1 }
 		OR = {
 			religion = druidic
@@ -173,9 +173,9 @@ character_event = {
 	min_age = 16
 	capable_only = yes
 	prisoner = no
-	is_alive = yes
 	
 	trigger = {
+		is_alive = yes
 		trait = head1
 		trait = brave
 		OR = {

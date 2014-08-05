@@ -77,7 +77,7 @@ promised_victory = {
 
 promised_riches = {
 	local_tax_modifier = 0.04
-	city_opinion = 5
+	town_opinion = 5
 	tech_growth_modifier_economy = 0.04
 	icon = 10
 }
@@ -91,8 +91,8 @@ held_divination_timer = {
 #####################################################################
 
 favored_warriors = {
-	feudal_opinion = 10
-	city_opinion = -10
+	castle_opinion = 10
+	town_opinion = -10
 	monthly_character_prestige = 0.02
 	tech_growth_modifier_military = 0.03
 	icon = 13
@@ -100,7 +100,7 @@ favored_warriors = {
 
 favored_druids = {
 	church_opinion = 10
-	city_opinion = -10
+	town_opinion = -10
 	monthly_character_prestige = 0.02
 	monthly_character_piety = 0.1
 	tech_growth_modifier_culture = 0.03
@@ -109,8 +109,8 @@ favored_druids = {
 
 favored_merchants = {
 	monthly_character_prestige = 0.02
-	city_opinion = 10
-	feudal_opinion = -10
+	town_opinion = 10
+	castle_opinion = -10
 	church_opinion = -10
 	tech_growth_modifier_culture = 0.02
 	tech_growth_modifier_military = 0.02
@@ -136,8 +136,8 @@ favored_fianna = {
 
 favored_crown = {
 	monthly_character_prestige = 0.05
-	city_opinion = -10
-	feudal_opinion = -10
+	town_opinion = -10
+	castle_opinion = -10
 	church_opinion = -10
 	tech_growth_modifier_culture = 0.05
 	tech_growth_modifier_military = 0.05

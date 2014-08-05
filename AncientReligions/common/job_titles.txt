@@ -264,15 +264,15 @@ job_spiritual = {
 			trait = mastermind_theologian
 		}
 		
-		or = {
+		OR = {
 			liege = { 
-				not = { 
+				NOT = { 
 					religion = druidic 
 					religion = druidic_reformed
 				}
 			}
-		   and = {
-				or = { 
+		   AND = {
+				OR = { 
 					religion = druidic 
 					religion = druidic_reformed 
 				}

@@ -114,7 +114,7 @@ character_event = {
 	}
 }
 
-# Cleanup when a Vestalis dies
+#[on_death] Cleanup when a Vestalis dies
 character_event = {
 	id = ancrel.2123
 	hide_window = yes

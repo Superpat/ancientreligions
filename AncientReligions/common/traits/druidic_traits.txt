@@ -1,4 +1,5 @@
 head1 = {
+	
 	potential = {
 		religion_group = pagan_group
 	}
@@ -14,6 +15,7 @@ head1 = {
 }
 
 head2 = {
+	
 	potential = {
 		religion_group = pagan_group
 	}
@@ -33,18 +35,50 @@ head2 = {
 }
 
 druid = {
+	
 	potential = {
 		religion_group = pagan_group
 	}
+	opposites =  {
+		bad_druid
+	}
+	
+	religious = no # Cleared manually on religious conversion, to avoid losing it on reformation
+	
 	monthly_character_piety = 0.5
 	learning = 3
 	diplomacy = 2
+	
 	customizer = no
 	
 	cannot_inherit = yes
 }
 
-fian = {
+bad_druid = {
+
+	potential = {
+		religion_group = pagan_group
+	}
+	opposites =  {
+		druid
+	}
+	
+	religious = no # Cleared manually on religious conversion, to avoid losing it on reformation
+	
+	opposite_opinion = -10
+	church_opinion = -20
+	same_opinion_if_same_religion = 50
+	
+	monthly_character_piety = -1
+
+	customizer = no
+	random = no
+	
+	cannot_inherit = yes
+}
+
+fian = {	
+
 	potential = {
 		religion_group = pagan_group
 	}
@@ -67,6 +101,7 @@ fian = {
 }
 
 celtic_knight = {
+
 	potential = {
 		religion = druidic_reformed
 	}
@@ -94,6 +129,7 @@ celtic_knight = {
 }
 
 learning_druidic_arts = {
+	
 	potential = {
 		religion_group = pagan_group
 	}
@@ -112,6 +148,7 @@ learning_druidic_arts = {
 }
 
 changeling = {
+	
 	potential = {
 		religion_group = pagan_group
 	}

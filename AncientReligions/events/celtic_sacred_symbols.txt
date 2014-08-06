@@ -69,6 +69,12 @@ province_event = {
 			factor = 0.02
 		}
 		modifier = {
+			owner = {
+				trait = bad_druid
+			}
+			factor = 50
+		}
+		modifier = {
 			factor = 1.2
 			owner = {
 				trait = cynical

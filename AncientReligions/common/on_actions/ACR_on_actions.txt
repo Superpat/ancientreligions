@@ -1,5 +1,234 @@
 # ACR impacted on_actions: vanilla events need to be kept, as it does a full override of events & random_events lists
 
+#character
+on_yearly_pulse = {
+	events = {
+		ancrel.0153 # Liege doesn't have a Druid
+	}
+	random_events = {
+		
+		# Feudal Life Events
+		100 = 4000
+		100 = 4005
+		100 = 4010
+		100 = 4015
+		100 = 4020
+		100 = 4035
+		100 = 4036
+		100 = 4040
+		100 = 4041
+		100 = 4045
+		100 = 4050
+		100 = 4055
+		100 = 4060
+		100 = 4085
+		100 = 4110
+		100 = 4115
+		100 = 4120
+		100 = 4125
+		100 = 4130
+		100 = 4135
+		100 = 4145
+		100 = 4150
+		100 = 4155
+		100 = 4175
+		
+		# Married Life Events
+		100 = 30000
+		100 = 30001
+		100 = 30004
+		100 = 30020
+		100 = 30021
+		100 = 30025
+		100 = 30030
+		100 = 30040
+		100 = 30045
+		100 = 30050
+		100 = 30051
+		100 = 30052
+		100 = 30055
+		100 = 30056
+		100 = 30057
+		100 = 30058
+		100 = 30059
+		100 = 30060
+		100 = 30063
+		100 = 30066
+		100 = 30069
+		100 = 30072
+		100 = 30075
+		100 = 30085
+		100 = 30100
+		100 = 30105
+		100 = 30110
+		
+		#Lovers Events
+		100 = 64000
+		100 = 64005
+		100 = 64006
+		100 = 64010
+		100 = 64015
+		100 = 64025
+		100 = 64030
+		100 = 64035
+		100 = 64040
+		
+		#Job Flavour Events
+		100 = 75010
+		100 = 75020
+		100 = 75030
+		100 = 75040
+		100 = 75050
+		100 = 75060
+		100 = 75065
+		100 = 75070
+		100 = 75075
+		100 = 75080
+		100 = 75085
+		100 = 75090
+		100 = 75095
+		100 = 75105
+		100 = 75110
+		100 = 75120
+
+		#Dynasty requests
+		250 = 66000
+		250 = 66050
+		250 = 66100
+		
+		#Hedge Knights Events
+		100 = 71000 
+		100 = 71006 
+		
+		#Rumours Events
+		10 = 69000
+		10 = 69003 
+		10 = 69010 
+		10 = 69014 
+		10 = 69020 
+		10 = 69023 
+		10 = 69030 
+		10 = 69037 
+		10 = 69040 
+		10 = 69043 
+		10 = 69050 
+		10 = 69052 
+		10 = 69054 
+		10 = 69056 
+		10 = 69058  
+		10 = 69060  
+		10 = 69063  
+		10 = 69070
+		10 = 69073
+		10 = 69100
+		10 = 69095
+		
+		#Court Events
+		100 = 73000
+		100 = 73001
+		100 = 73002
+		100 = 73003
+		100 = 73004
+		100 = 73005
+		100 = 73006
+		100 = 73007
+		100 = 73008
+		100 = 73009
+		100 = 73010
+		
+		#Religious Events
+		100 = 39230
+		
+		#Bastard Events
+		100 = 76000
+		100 = 76005
+		100 = 76010
+		100 = 76015
+		100 = 76020
+		100 = 76025
+		100 = 76030
+		100 = 76035
+		100 = 76040
+		
+		#Ward Events
+		100 = 78000
+		100 = 78005
+		100 = 78010
+		100 = 78015
+		100 = 78020
+		100 = 78025
+		100 = 78030
+		
+		#Various Events
+		100 = TOG.3403
+		100 = TOG.3401
+		100 = TOG.3402
+		
+		# Reincarnation: Memories of the previous life
+		1000 = RoI.10020
+		1000 = RoI.10021
+		1000 = RoI.10022
+		
+		# Indian guru events
+		100 = RoI.3100
+		100 = RoI.3101
+		100 = RoI.3102
+		100 = RoI.3103
+		100 = RoI.3104
+		100 = RoI.3105
+		100 = RoI.3106
+		100 = RoI.3107
+		100 = RoI.3108
+		100 = RoI.3109
+		100 = RoI.3110
+		100 = RoI.3111
+		100 = RoI.3112
+		100 = RoI.3113
+		100 = RoI.3114
+		500 = RoI.3200
+		500 = RoI.3300
+		100 = RoI.3400
+		
+		# Indian ascetics and yogis
+		20 = RoI.203
+		20 = RoI.206
+		20 = RoI.209
+		20 = RoI.193
+		
+		# Indian story events
+		20 = RoI.215
+		20 = RoI.20147
+		20 = RoI.20164
+		
+		# Indian minor events
+		100 = RoI.157
+		100 = RoI.158
+		100 = RoI.163
+		100 = RoI.180
+		100 = RoI.190
+		50 = RoI.401
+		100 = RoI.403
+		100 = RoI.410
+		100 = RoI.411
+		200 = RoI.412
+		500 = RoI.500
+		
+		# Indian low religious authority events
+		50 = RoI.3500
+		50 = RoI.3506
+		50 = RoI.3510
+		50 = RoI.3516
+		10 = RoI.3520
+		50 = RoI.3530
+		50 = RoI.3536
+		
+		# Religious tolerance events
+		100 = RoI.400
+		
+		5000 = 0 # Chance of no yearly event
+	}
+}
+
 on_death = {
 	events = {
 		650
@@ -10,8 +239,8 @@ on_death = {
 		SoA.5306
 		705
 	
-		ancrel.1194
-		ancrel.2123
+		ancrel.1194 # Ruler has died, the Aonach is over
+		ancrel.2123 # Cleanup when a Vestalis dies
 		45340 # Thirteen treasures inheritance
 	}
 	
@@ -45,6 +274,8 @@ on_birth = {
 	random_events = {
 		200 = 0
 		1 = RoI.10000 # Reincarnation?
+		
+		1 = ancrel.0270 # Reincarnation (celtic) ?
 	}
 }
 
@@ -53,6 +284,90 @@ on_adulthood = {
 		SoA.3020 # Demon child's true nature asserts itself
 		
 		ancrel.0241   # Changeling child's true nature asserts itself
+	}
+}
+
+
+# For characters 2 to 16 years old
+on_yearly_childhood_pulse = {
+	random_events = {
+		# Childhood Personality Events
+		
+		#Age 6-16, aiming to get at least 4 traits before adult.
+		100 = 1500
+		100 = 1510
+		100 = 1520
+		100 = 1530
+		100 = 1540
+		100 = 1550
+		100 = 1560
+		100 = 1570
+		100 = 1580
+		100 = 1590
+		100 = 1600
+		100 = 1610
+		100 = 1620
+		100 = 1630
+		100 = 1640
+		100 = 1650
+		100 = 1660
+		100 = 1670
+		100 = 1680
+		100 = 1690
+		100 = 1700
+		100 = 1710
+		100 = 1720
+		100 = 1730
+		100 = 1965
+		100 = 1632
+		100 = 1732
+		5000 = RoI.10010 # Acknowledged reincarnated child acquires trait from previous personality
+		
+		5000 = ancrel.0272 # Acknowledged reincarnated child acquires trait from previous personality
+		
+		#Toddler flavour events (age 2-5), not very common, but some will get them.
+		10 = 1900 
+		10 = 1901
+		10 = 1902
+		10 = 1903
+		10 = 1904
+		
+		#Young children flavour events, (age 6-10), not very common, but some will get then..
+		20 = 1905
+		20 = 1906
+		20 = 1907
+		20 = 1908
+		20 = 1909
+		20 = 1910
+		20 = 1911
+		20 = 1912
+		
+		#Youngsters flavour events (age 11-15), not very common, but some will get then..
+		50 = 1913
+		50 = 1914
+		50 = 1915
+		50 = 1916
+		50 = 1917
+		50 = 1918
+		50 = 1919
+		50 = 1920
+		50 = 1921
+		50 = 1922
+		50 = 1923
+		50 = 1924
+		50 = 1925
+		50 = 1926
+		50 = 1927
+		50 = 1928
+		50 = 1929
+		50 = 1930
+		50 = 1931
+		50 = 1932
+		50 = 1933
+		50 = 1934
+		50 = 1935
+		
+		1500 = 0
 	}
 }
 

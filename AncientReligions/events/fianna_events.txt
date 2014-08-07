@@ -891,7 +891,7 @@ character_event = {
 	}
 }
 
-# Fianna Reforms
+#[on_reform_religion] Fianna Reforms
 character_event = {
 	id = ancrel.0009
 	hide_window = yes

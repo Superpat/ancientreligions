@@ -186,7 +186,10 @@ d_druidic_reformed = {
 		religion = druidic_reformed
 		num_of_holy_sites = 1
 		piety = 1000
-		trait = druid
+		OR = {
+			trait = druid
+			trait = bad_druid
+		}
 	}
 	
 	# Controls a religion

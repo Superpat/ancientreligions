@@ -462,13 +462,15 @@ character_event = {
 			trait = slothful
 			trait = shy
 			trait = paranoid
-			trait = lunatic
-			trait = possessed
 		}
 	}
 
 	mean_time_to_happen = {
 		months = 24
+		modifier = {
+			factor = 0.5
+			trait = ambitious
+		}
 	}
 	
 	option = {
@@ -479,26 +481,8 @@ character_event = {
 			limit = {
 				is_ruler = yes
 				has_nickname = no
-				NOT = { trait = possessed }
-				NOT = { trait = lunatic }
 			}
 			give_nickname = nick_the_wicked
-		}
-		if = {
-			limit = {
-				is_ruler = yes
-				has_nickname = no
-				trait = possessed
-			}
-			give_nickname = nick_the_bewitched
-		}
-		if = {
-			limit = {
-				is_ruler = yes
-				has_nickname = no
-				trait = lunatic
-			}
-			give_nickname = nick_the_mad
 		}
 	}
 }

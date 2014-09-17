@@ -6,7 +6,7 @@ descendant_of_aeneas = {
 	
 	same_religion_opinion = 5
 	same_opinion = 5
-	monthly_character_prestige = 0.25
+	monthly_character_prestige = 0.15
 	
 	vassal_opinion = 5
 }
@@ -17,10 +17,10 @@ descendant_of_hector = {
 	
 	same_religion_opinion = 5
 	same_opinion = 5
-	monthly_character_prestige = 0.25
+	monthly_character_prestige = 0.15
 	
 	command_modifier = {
-		morale_defence = 0.25
+		morale_defence = 0.05
 	}
 }
 descendant_of_paris = {
@@ -30,7 +30,7 @@ descendant_of_paris = {
 	
 	same_religion_opinion = 5
 	same_opinion = 5
-	monthly_character_prestige = 0.25
+	monthly_character_prestige = 0.15
 	
 	sex_appeal_opinion = 5
 }
@@ -42,10 +42,10 @@ descendant_of_achilles = {
 	
 	same_religion_opinion = 5
 	same_opinion = 5
-	monthly_character_prestige = 0.25
+	monthly_character_prestige = 0.15
 	
 	command_modifier = {
-		morale_offence = 0.25
+		morale_offence = 0.05
 	}
 }
 descendant_of_odysseus = {
@@ -55,9 +55,9 @@ descendant_of_odysseus = {
 	
 	same_religion_opinion = 5
 	same_opinion = 5
-	monthly_character_prestige = 0.25
+	monthly_character_prestige = 0.15
 	
-	change_intrigue = 1
+	intrigue = 1
 }
 descendant_of_nestor = {
 	random = no
@@ -66,9 +66,9 @@ descendant_of_nestor = {
 	
 	same_religion_opinion = 5
 	same_opinion = 5
-	monthly_character_prestige = 0.25
+	monthly_character_prestige = 0.15
 	
-	change_diplomacy = 1
+	diplomacy = 1
 }
 
 # Trojan Heroes
@@ -80,7 +80,7 @@ aeneas_reborn = {
 	same_religion_opinion = 15
 	monthly_character_prestige = 1
 	
-	vassal_opinion = 15
+	vassal_opinion = 20
 }
 hector_reborn = {
 	random = no
@@ -91,7 +91,7 @@ hector_reborn = {
 	monthly_character_prestige = 1
 	
 	command_modifier = {
-		morale_defence = 0.5
+		morale_defence = 0.25
 	}
 }
 paris_reborn = {
@@ -114,7 +114,7 @@ achilles_reborn = {
 	monthly_character_prestige = 1
 	
 	command_modifier = {
-		morale_offence = 0.5
+		morale_offence = 0.25
 	}
 }
 odysseus_reborn = {
@@ -125,7 +125,7 @@ odysseus_reborn = {
 	same_religion_opinion = 15
 	monthly_character_prestige = 1
 	
-	change_intrigue = 3
+	intrigue = 3
 }
 nestor_reborn = {
 	random = no
@@ -135,5 +135,5 @@ nestor_reborn = {
 	same_religion_opinion = 15
 	monthly_character_prestige = 1
 	
-	change_diplomacy = 3
+	diplomacy = 3
 }

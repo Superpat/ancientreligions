@@ -7,7 +7,7 @@
 #
 ###################################################
 
-# Written by Adam 'theStormWeaver/la_xirsoi' Chevalier
+# Written by Adam 'theStormWeaver/xirsoi' Chevalier
 
 namespace = ancrel
 
@@ -180,10 +180,8 @@ character_event = {
 				}
 			}
 		}
-		immediate = {
-			# add_character_modifier = emulating_achilles
-			add_trait = descendant_of_achilles
-		}		
+		# add_character_modifier = emulating_achilles
+		trait = descendant_of_achilles
 	}
 	#Odysseus
 	option = {
@@ -198,10 +196,8 @@ character_event = {
 				}
 			}
 		}
-		immediate = {
-			# add_character_modifier = emulating_odysseus
-			add_trait = descendant_of_odysseus
-		}
+		# add_character_modifier = emulating_odysseus
+		trait = descendant_of_odysseus
 	}
 	#Nestor
 	option = {
@@ -216,10 +212,8 @@ character_event = {
 				}
 			}
 		}
-		immediate = {
-			# add_character_modifier = emulating_nestor
-			add_trait = descendant_of_nestor
-		}
+		# add_character_modifier = emulating_nestor
+		trait = descendant_of_nestor
 	}
 }
 
@@ -254,10 +248,8 @@ character_event = {
 				}
 			}
 		}
-		immediate = {
-			# add_character_modifier = emulating_hector
-			add_trait = descendant_of_hector
-		}		
+		add_character_modifier = emulating_hector
+		# trait = descendant_of_hector	
 	}
 	#Aeneas
 	option = {
@@ -273,8 +265,8 @@ character_event = {
 			}
 		}
 		immediate = {
-			# add_character_modifier = emulating_aeneas
-			add_trait = descendant_of_aeneas
+			add_character_modifier = emulating_aeneas
+			# trait = descendant_of_aeneas
 		}
 	}
 	#Paris
@@ -294,10 +286,8 @@ character_event = {
 				trait = lustful
 			}
 		}
-		immediate = {
-			# add_character_modifier = emulating_paris
-			add_trait = descendant_of_paris
-		}
+		add_character_modifier = emulating_paris
+		# trait = descendant_of_paris
 	}
 }
 

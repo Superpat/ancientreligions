@@ -181,7 +181,8 @@ character_event = {
 			}
 		}
 		immediate = {
-			add_character_modifier = emulating_achilles
+			# add_character_modifier = emulating_achilles
+			add_trait = descendant_of_achilles
 		}		
 	}
 	#Odysseus
@@ -198,7 +199,8 @@ character_event = {
 			}
 		}
 		immediate = {
-			add_character_modifier = emulating_odysseus
+			# add_character_modifier = emulating_odysseus
+			add_trait = descendant_of_odysseus
 		}
 	}
 	#Nestor
@@ -215,7 +217,8 @@ character_event = {
 			}
 		}
 		immediate = {
-			add_character_modifier = emulating_nestor
+			# add_character_modifier = emulating_nestor
+			add_trait = descendant_of_nestor
 		}
 	}
 }
@@ -252,7 +255,8 @@ character_event = {
 			}
 		}
 		immediate = {
-			add_character_modifier = emulating_hector
+			# add_character_modifier = emulating_hector
+			add_trait = descendant_of_hector
 		}		
 	}
 	#Aeneas
@@ -269,7 +273,8 @@ character_event = {
 			}
 		}
 		immediate = {
-			add_character_modifier = emulating_aeneas
+			# add_character_modifier = emulating_aeneas
+			add_trait = descendant_of_aeneas
 		}
 	}
 	#Paris
@@ -290,7 +295,8 @@ character_event = {
 			}
 		}
 		immediate = {
-			add_character_modifier = emulating_paris
+			# add_character_modifier = emulating_paris
+			add_trait = descendant_of_paris
 		}
 	}
 }

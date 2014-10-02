@@ -1,0 +1,142 @@
+#Lover Remarks of your Paris-like sexual prowess
+character_event = {
+	id = ancrel.3010
+	desc = EVTDESCancrel.3010
+	picture = GFX_evt_roman_temple
+	border = GFX_event_normal_frame_religion
+
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		has_dlc = "The Old Gods"
+		has_character_modifier = emulating_paris
+		religion = hellenic_pagan
+
+		has_lover = yes
+
+		NOT = { #cannot already claim epic blood
+			has_trait = descendant_of_hector
+			has_trait = descendant_of_aeneas
+			has_trait = descendant_of_paris
+
+			has_trait = descendant_of_achilles
+			has_trait = descendant_of_odysseus
+			has_trait = descendant_of_nestor
+		}
+		NOT = { #can't be ugly, fat, or have bad genetic traits
+			has_trait = ugly
+			has_trait = inbred
+			has_trait = slow
+			has_trait = fat
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 50 # an attractive, lustful, under 30 year old will have a MTTH of ~34 years
+
+		modifier = {
+			factor = 0.95
+			NOT = {
+				age = 40
+			}
+		}
+		modifier = {
+			factor = 0.95
+			NOT = {
+				age = 35
+			}
+		}
+		modifier = {
+			factor = 0.95
+			NOT = {
+				age = 30
+			}
+		}
+		modifier = {
+			factor = 0.90
+			has_trait = attractive
+		}
+		modifier = {
+			factor = 0.90
+			has_trait = lustful
+		}
+	}
+
+	immediate = {
+		prestige = 10
+	}
+
+	option = {
+		name = OK
+		limit = {
+			NOT = {
+				has_character_flag = personal_legend_1
+			}
+		}
+		set_character_flag = personal_legend_1
+	}
+	option = {
+		name = OK
+		limit = {
+			NOT = {
+				has_character_flag = personal_legend_2
+			}
+		}
+		set_character_flag = personal_legend_2
+	}
+	option = {
+		name = OK
+		limit = {
+			NOT = {
+				has_character_flag = personal_legend_3
+			}
+		}
+		set_character_flag = personal_legend_3
+	}
+	option = {
+		name = OK
+		limit = {
+			NOT = {
+				has_character_flag = personal_legend_4
+			}
+		}
+		set_character_flag = personal_legend_4
+	}
+	option = {
+		name = OK
+		limit = {
+			NOT = {
+				has_character_flag = personal_legend_5
+			}
+		}
+		set_character_flag = personal_legend_5
+	}
+}
+
+#Lover Remarks of your Paris-like sexual prowess
+character_event = {
+	id = ancrel.3011
+	desc = EVTDESCancrel.3011
+	picture = GFX_evt_roman_temple
+	border = GFX_event_normal_frame_religion
+
+	capable_only = yes
+	
+	trigger = {
+		has_dlc = "The Old Gods"
+		has_character_modifier = emulating_odysseus
+		religion = hellenic_pagan
+
+		NOT = { #cannot already claim epic blood
+			has_trait = descendant_of_hector
+			has_trait = descendant_of_aeneas
+			has_trait = descendant_of_paris
+
+			has_trait = descendant_of_achilles
+			has_trait = descendant_of_odysseus
+			has_trait = descendant_of_nestor
+		}
+		
+	}
+}

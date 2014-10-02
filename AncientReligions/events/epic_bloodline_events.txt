@@ -135,10 +135,13 @@ character_event = {
 			modifier = {
 				factor = 1.5
 				culture = greek
+				culture = sicilian_greek # SWMH
 			}
 			modifier = {
-				factor = 0.5
+				factor = 0.15
 				culture = roman
+				culture_group = latin_group
+				culture_group = italian_group # SWMH
 			}
 		}
 		character_event = { id = ancrel.3002 }
@@ -177,6 +180,14 @@ character_event = {
 				OR = {
 					trait = craven
 					trait = content
+				}
+			}
+			modifier = {
+				factor = 0.01
+				OR = {
+					culture_group = latin_group
+					culture = italian_group # SWMH
+					culture = roman
 				}
 			}
 		}
@@ -288,8 +299,10 @@ character_event = {
 #Legitimate Child born to a reborn hero
 character_event = {
 	id = ancrel.3004
-	hide_window = yes
 	is_triggered_only = yes
+	desc = EVTDESCancrel.3004
+	picture = GFX_evt_roman_temple
+	border = GFX_event_normal_frame_religion	
 
 	trigger = {
    		OR = {
@@ -421,7 +434,7 @@ character_event = {
 
 	trigger = {
 		has_dlc = "The Old Gods"
-		has_character_modifier = personal_legend_5
+		has_character_flag = personal_legend_5
 		OR = {
 			has_character_modifier = emulating_paris
 			has_character_modifier = emulating_aeneas
@@ -437,6 +450,14 @@ character_event = {
 		months = 1
 	}
 
+	immediate = {
+		clr_character_flag = personal_legend_5
+		clr_character_flag = personal_legend_4
+		clr_character_flag = personal_legend_3
+		clr_character_flag = personal_legend_2
+		clr_character_flag = personal_legend_1				
+	}
+
 	option = {
 		name = OK
 		limit = {
@@ -444,6 +465,7 @@ character_event = {
 		}
 
 		add_trait = paris_reborn
+		remove_character_modifier = emulating_paris
 	}
 	option = {
 		name = OK
@@ -452,6 +474,7 @@ character_event = {
 		}
 
 		add_trait = aeneas_reborn
+		remove_character_modifier = emulating_aeneas		
 	}
 	option = {
 		name = OK
@@ -460,6 +483,7 @@ character_event = {
 		}
 
 		add_trait = hector_reborn
+		remove_character_modifier = emulating_hector
 	}
 	option = {
 		name = OK
@@ -468,6 +492,7 @@ character_event = {
 		}
 
 		add_trait = nestor_reborn
+		remove_character_modifier = emulating_nestor		
 	}
 	option = {
 		name = OK
@@ -476,6 +501,7 @@ character_event = {
 		}
 
 		add_trait = odysseus_reborn
+		remove_character_modifier = emulating_odysseus		
 	}
 	option = {
 		name = OK
@@ -484,71 +510,6 @@ character_event = {
 		}
 
 		add_trait = achilles_reborn
+		remove_character_modifier = emulating_achilles
 	}	
-}
-
-#Lover Remarks of your Paris-like sexual prowess
-character_event = {
-	id = ancrel.3010
-	desc = EVTDESCancrel.3010
-	picture = GFX_evt_roman_temple
-	border = GFX_event_normal_frame_religion
-
-	capable_only = yes
-	prisoner = no
-	
-	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_modifier = emulating_paris
-		religion = hellenic_pagan
-
-		has_lover = yes
-
-		NOT = { #cannot already claim epic blood
-			has_trait = descendant_of_hector
-			has_trait = descendant_of_aeneas
-			has_trait = descendant_of_paris
-
-			has_trait = descendant_of_achilles
-			has_trait = descendant_of_odysseus
-			has_trait = descendant_of_nestor
-		}
-		NOT = { #can't be ugly, fat, or have bad genetic traits
-			has_trait = ugly
-			has_trait = inbred
-			has_trait = slow
-			has_trait = fat
-		}
-	}
-
-	mean_time_to_happen = {
-		years = 100 # quite rare
-
-		modifier = {
-			factor = 0.95
-			NOT = {
-				age = 40
-			}
-		}
-		modifier = {
-			factor = 0.95
-			NOT = {
-				age = 35
-			}
-		}
-		modifier = {
-			factor = 0.95
-			NOT = {
-				age = 30
-			}
-		}
-		modifier = {
-			factor = 0.95
-			has_trait = attractive
-		}
-		modifier = {
-			factor = 0.90
-			has_trait = lustful
-		}
-	}
 }

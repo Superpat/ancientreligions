@@ -166,6 +166,18 @@ character_event = {
 				}
 			}
 		}
+		if = {
+			limit = { trait = in_hiding	}
+			remove_trait = in_hiding
+			add_character_modifier = {
+				name = went_out_of_hiding_timer
+				duration = 180
+				hidden = yes
+			}
+			hidden_tooltip = { character_event = { id = CM.6400 } } # Notify plotters and family
+		}
+		set_character_flag = do_not_disturb
+		character_event = { id = TOG.1215 days = 730 }
 	}
 	
 	option = {
@@ -243,6 +255,7 @@ character_event = {
 	immediate = {
 		
 		wealth = 500
+		clr_character_flag = do_not_disturb
 		
 		liege = {
 			character_event = {
@@ -902,6 +915,18 @@ character_event = {
 				}
 			}
 		}
+		if = {
+			limit = { trait = in_hiding	}
+			remove_trait = in_hiding
+			add_character_modifier = {
+				name = went_out_of_hiding_timer
+				duration = 180
+				hidden = yes
+			}
+			hidden_tooltip = { character_event = { id = CM.6400 } } # Notify plotters and family
+		}
+		set_character_flag = do_not_disturb
+		character_event = { id = TOG.1215 days = 730 }
 	}
 	
 	option = {
@@ -995,6 +1020,7 @@ character_event = {
 	
 	immediate = {
 		wealth = 500
+		clr_character_flag = do_not_disturb
 		
 		liege = {
 			character_event = {
@@ -1209,5 +1235,18 @@ character_event = {
 	
 	option = {
 		name = "EVTOPTA_TOG_1203"
+	}
+}
+
+#safety clear of DND
+character_event = {
+	id = TOG.1215
+	
+	is_triggered_only = yes
+	
+	hide_window = yes
+	
+	immediate = {
+		clr_character_flag = do_not_disturb
 	}
 }

@@ -181,11 +181,58 @@ decisions = {
 							}
 						}
 						AND = {
-							culture = english
+							culture = norman
 							ROOT = {
 								OR = {
-									culture = norman 
+									culture = english 
 									culture = saxon
+								}
+							}
+						}
+						AND = {
+							culture_group = east_slavic
+							ROOT = {
+								culture = russian
+							}
+						}
+						AND = {
+							culture = pictish
+							ROOT = {
+								culture = scottish
+							}
+						}
+						AND = {
+							culture = lombard
+							ROOT = {
+								culture = italian
+							}
+						}
+						AND = {
+							culture = old_frankish
+							ROOT = {
+								culture = frankish
+							}
+						}
+						AND = {
+							culture = frisian
+							ROOT = {
+								culture = dutch
+							}
+						}
+						AND = {
+							culture = old_saxon
+							ROOT = {
+								culture = german
+							}
+						}
+						AND = {
+							culture = visigothic
+							ROOT = {
+								OR = {
+									culture_group = iberian
+									culture = andalusian_arabic
+									culture = occitan
+									religion_group = muslim
 								}
 							}
 						}

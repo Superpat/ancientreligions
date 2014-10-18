@@ -6,6 +6,8 @@ title_flamen_dialis = {
 	monthly_salary = 0.005
 	monthly_prestige = 0.015
 	monthly_piety = 0.005
+	
+	is_unique = yes
 
 	allow = {
 		is_adult = yes
@@ -17,20 +19,9 @@ title_flamen_dialis = {
 			has_minor_title = title_flamen_dialis
 		}
 		religion = hellenic_pagan
-		NOT = { has_minor_title = title_court_jester }
-		NOT = { has_minor_title = title_censor }
 	}
 
 	gain_effect = {
-		remove_title = title_cupbearer
-		remove_title = title_aedile
-		remove_title = title_magister_equitum
-
-		remove_title = title_flamen_martialis
-		remove_title = title_flamen_quirinalis
-		remove_character_modifier = modifier_flamen_martialis
-		remove_character_modifier = modifier_flamen_quirinalis
-
 		spouse = { give_minor_title = title_flaminica_dialis }
 		add_character_modifier = {
 			name = modifier_flamen_dialis
@@ -74,6 +65,8 @@ title_flamen_martialis = {
 	monthly_salary = 0.005
 	monthly_prestige = 0.010
 	monthly_piety = 0.005
+	
+	is_unique = yes
 
 	allow = {
 		is_adult = yes
@@ -85,17 +78,9 @@ title_flamen_martialis = {
 			has_minor_title = title_flamen_martialis
 		}
 		religion = hellenic_pagan
-		NOT = { has_minor_title = title_court_jester }
-		NOT = { has_minor_title = title_censor }
-		NOT = { has_minor_title = title_flamen_dialis }
-		NOT = { has_minor_title = title_flamen_quirinalis }
 	}
 
 	gain_effect = {
-		remove_title = title_cupbearer
-		remove_title = title_aedile
-		remove_title = title_magister_equitum
-
 		spouse = { give_minor_title = title_flaminica_martialis }
 		add_character_modifier = {
 			name = modifier_flamen_martialis
@@ -139,6 +124,8 @@ title_flamen_quirinalis = {
 	monthly_salary = 0.005
 	monthly_prestige = 0.010
 	monthly_piety = 0.005
+	
+	is_unique = yes
 
 	allow = {
 		is_adult = yes
@@ -154,17 +141,9 @@ title_flamen_quirinalis = {
 			has_minor_title = title_flamen_quirinalis
 		}
 		religion = hellenic_pagan
-		NOT = { has_minor_title = title_court_jester }
-		NOT = { has_minor_title = title_censor }
-		NOT = { has_minor_title = title_flamen_dialis }
-		NOT = { has_minor_title = title_flamen_martialis }
 	}
 
 	gain_effect = {
-		remove_title = title_cupbearer
-		remove_title = title_aedile
-		remove_title = title_magister_equitum
-
 		spouse = { give_minor_title = title_flaminica_quirinalis }
 		add_character_modifier = {
 			name = modifier_flamen_quirinalis

@@ -5,7 +5,7 @@ pagan_group = {
 		pre_reformed = yes
 
 		icon = 37
-		heresy_icon = 57
+		heresy_icon = 62
 		
 		ai_convert_other_group = 2 # always try to convert
 		
@@ -34,14 +34,16 @@ pagan_group = {
 		
 		religious_clothing_head = 5
 		religious_clothing_priest = 5
+		
+		dislike_tribal_organization = yes
 	}
 	
 	druidic_reformed = {
 		# Use norsegfx rather than celticgfx to have the northern pagan rounded CoA on the map
 		graphical_culture = norsegfx
 		
-		icon = 59
-		heresy_icon = 60
+		icon = 64
+		heresy_icon = 65
 		
 		ai_convert_other_group = 2 # always try to convert
 		
@@ -96,8 +98,8 @@ pagan_group = {
 		# Use norsegfx rather than celticgfx to have the northern pagan rounded CoA on the map
 		graphical_culture = norsegfx
 		
-		icon = 58
-		heresy_icon = 60
+		icon = 63
+		heresy_icon = 65
 		
 		color = { 0.14 0.36 0.16 }
 		crusade_name = GREAT_HOLY_WAR

@@ -46,15 +46,15 @@ character_event = {
 			trait = slothful
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.9
 			trait = proud
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.9
 			trait = ambitious
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.9
 			OR = {
 				trait = mastermind_theologian
 				trait = scholarly_theologian
@@ -63,7 +63,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.9
 			OR = {
 				trait = zealous
 				trait = cynical
@@ -84,9 +84,11 @@ character_event = {
 				factor = 0.75
 				NOT = { 
 					OR = {
-						culture = greek
 						culture = italian
 						culture = roman	
+						culture = byzantine_group
+						culture = italian_group # SwMH
+						culture = sicilian_group # SWMH
 					}
 				}
 			}
@@ -112,7 +114,6 @@ character_event = {
 	option = {
 		name = EVTOPTBancrel.3000
 		ai_chance = { factor = 50 }
-		option = { name = NO }
 	}
 }
 
@@ -133,12 +134,12 @@ character_event = {
 		ai_chance = {
 			factor = 50
 			modifier = {
-				factor = 1.5
+				factor = 2.0
 				culture = greek
-				culture = sicilian_greek # SWMH
+				culture = sicilian_group # SWMH
 			}
 			modifier = {
-				factor = 0.15
+				factor = 0.50
 				culture = roman
 				culture_group = latin_group
 				culture_group = italian_group # SWMH
@@ -241,7 +242,7 @@ character_event = {
 		ai_chance = {
 			factor = 34
 			modifier = {
-				factor = 1.5
+				factor = 2.0
 				OR = {
 					trait = brilliant_strategist
 					trait = skilled_tactician
@@ -270,10 +271,16 @@ character_event = {
 					trait = fortune_builder
 				}
 			}
+			modifier = {
+				factor = 1.5
+				OR = { # Romans really liked Aeneas
+					culture = roman
+					culture_group = latin_group
+					culture_group = italian_group #SWMH
+				}
+			}
 		}
-		immediate = {
-			add_character_modifier = emulating_aeneas
-		}
+		add_character_modifier = emulating_aeneas
 	}
 	#Paris
 	option = {
@@ -290,6 +297,18 @@ character_event = {
 			modifier = {
 				factor = 1.5
 				trait = lustful
+			}
+			modifier = {
+				factor = 1.25
+				trait = proud
+			}
+			modifier = {
+				factor = 1.25
+				trait = attractive
+			}
+			modifier = {
+				factor = 0.75
+				trait = humble
 			}
 		}
 		add_character_modifier = emulating_paris
@@ -434,7 +453,13 @@ character_event = {
 
 	trigger = {
 		has_dlc = "The Old Gods"
-		has_character_flag = personal_legend_5
+		AND = {
+			has_character_flag = personal_legend_5
+			has_character_flag = personal_legend_4
+			has_character_flag = personal_legend_3
+			has_character_flag = personal_legend_2
+			has_character_flag = personal_legend_1			
+		}
 		OR = {
 			has_character_modifier = emulating_paris
 			has_character_modifier = emulating_aeneas
@@ -444,18 +469,19 @@ character_event = {
 			has_character_modifier = emulating_odysseus
 			has_character_modifier = emulating_achilles
 		}
+		NOT = { #cannot already claim epic blood
+			has_trait = descendant_of_hector
+			has_trait = descendant_of_aeneas
+			has_trait = descendant_of_paris
+
+			has_trait = descendant_of_achilles
+			has_trait = descendant_of_odysseus
+			has_trait = descendant_of_nestor
+		}
 	}
 
 	mean_time_to_happen = {
 		months = 1
-	}
-
-	immediate = {
-		clr_character_flag = personal_legend_5
-		clr_character_flag = personal_legend_4
-		clr_character_flag = personal_legend_3
-		clr_character_flag = personal_legend_2
-		clr_character_flag = personal_legend_1				
 	}
 
 	option = {

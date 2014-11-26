@@ -15,25 +15,18 @@ character_event = {
 
 		has_lover = yes
 
-		NOT = { #cannot already claim epic blood
-			has_trait = descendant_of_hector
-			has_trait = descendant_of_aeneas
-			has_trait = descendant_of_paris
-
-			has_trait = descendant_of_achilles
-			has_trait = descendant_of_odysseus
-			has_trait = descendant_of_nestor
-		}
 		NOT = { #can't be ugly, fat, or have bad genetic traits
 			has_trait = ugly
 			has_trait = inbred
 			has_trait = slow
 			has_trait = fat
+
+			has_character_modifier = personal_legend_5
 		}
 	}
 
 	mean_time_to_happen = {
-		years = 50 # an attractive, lustful, under 30 year old will have a MTTH of ~34 years
+		years = 50
 
 		modifier = {
 			factor = 0.95
@@ -61,82 +54,150 @@ character_event = {
 			factor = 0.90
 			has_trait = lustful
 		}
+		modifier = {
+			factor = 0.90
+			has_character_modifier = sweet_temptation
+			has_character_modifier = one_hedonist
+		}
 	}
 
-	immediate = {
-		prestige = 10
-	}
-
 	option = {
-		name = OK
-		limit = {
-			NOT = {
-				has_character_flag = personal_legend_1
-			}
-		}
-		set_character_flag = personal_legend_1
-	}
-	option = {
-		name = OK
-		limit = {
-			NOT = {
-				has_character_flag = personal_legend_2
-			}
-		}
-		set_character_flag = personal_legend_2
-	}
-	option = {
-		name = OK
-		limit = {
-			NOT = {
-				has_character_flag = personal_legend_3
-			}
-		}
-		set_character_flag = personal_legend_3
-	}
-	option = {
-		name = OK
-		limit = {
-			NOT = {
-				has_character_flag = personal_legend_4
-			}
-		}
-		set_character_flag = personal_legend_4
-	}
-	option = {
-		name = OK
-		limit = {
-			NOT = {
-				has_character_flag = personal_legend_5
-			}
-		}
+		name = EVTOPTAancrel.3010
 		set_character_flag = personal_legend_5
+		prestige = 10
 	}
 }
 
-#Lover Remarks of your Paris-like sexual prowess
+#Your Odyssian cleverness becomes renowned after your 
+#involvement in a successfull assassination becomes known
 character_event = {
 	id = ancrel.3011
 	desc = EVTDESCancrel.3011
 	picture = GFX_evt_roman_temple
 	border = GFX_event_normal_frame_religion
-
+	triggered_only = yes
 	capable_only = yes
 	
 	trigger = {
 		has_dlc = "The Old Gods"
 		has_character_modifier = emulating_odysseus
 		religion = hellenic_pagan
-
-		NOT = { #cannot already claim epic blood
-			has_trait = descendant_of_hector
-			has_trait = descendant_of_aeneas
-			has_trait = descendant_of_paris
-
-			has_trait = descendant_of_achilles
-			has_trait = descendant_of_odysseus
-			has_trait = descendant_of_nestor
+		intrigue = 10
+		NOT = {
+			has_character_flag = personal_legend_5
 		}
-		
 	}
+
+	option = {
+		name = EVTOPTAancrel.3011
+		set_character_flag = personal_legend_5
+		prestige = 10
+	}
+}
+
+#Your Nestor-ian skills at diplomacy are becoming famous
+character_event = {
+	id = ancrel.3012
+	desc = EVTDESCancrel.3012
+	picture = GFX_evt_roman_temple
+	border = GFX_event_normal_frame_religion
+
+	capable_only = yes
+
+	trigger = {
+		has_dlc = "The Old Gods"
+		has_character_modifier = emulating_nestor
+		religion = hellenic_pagan
+		diplomacy = 10
+		NOT = {
+			has_character_flag = personal_legend_5
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 50	# ~27 years with all below modifiers (65+ year old grey emminence with 26+ Diplo)
+
+		modifier = {
+			factor = 0.95
+			age = 55
+		}
+		modifier = {
+			factor = 0.95
+			age = 60
+		}
+		modifier = {
+			factor = 0.95
+			age = 65
+		}
+		modifier = {
+			factor = 0.95
+			has_trait = grey_emminence
+		}
+		modifier = {
+			factor = 0.95
+			diplomacy = 12
+		}
+		modifier = {
+			factor = 0.95
+			diplomacy = 14
+		}
+		modifier = {
+			factor = 0.95
+			diplomacy = 16
+		}
+		modifier = {
+			factor = 0.95
+			diplomacy = 18
+		}
+		modifier = {
+			factor = 0.95
+			diplomacy = 20
+		}
+		modifier = {
+			factor = 0.95
+			diplomacy = 22
+		}
+		modifier = {
+			factor = 0.95
+			diplomacy = 24
+		}
+		modifier = {
+			factor = 0.95
+			diplomacy = 26
+		}
+	}
+
+	option = {
+		name = EVTOPTAancrel.3012
+		set_character_flag = personal_legend_5
+		prestige = 10
+	}
+}
+
+#You're Achilles-like valor is on display for all to see as you take an enemy holding
+character_event = {
+	id = ancrel.3013
+	desc = EVTDESCancrel.3013
+	picture = GFX_evt_roman_temple
+	border = GFX_event_normal_frame_religion
+
+	triggered_only = yes
+	capable_only = yes
+
+	trigger = {
+		has_dlc = "The Old Gods"
+		has_character_modifier = emulating_achilles
+		religion = hellenic_pagan
+
+		martial = 15
+
+		NOT = { 
+			has_character_flag = personal_legend_5
+		}
+	}
+
+	option = {
+		name = EVTOPTAancrel.3013
+		set_character_flag = personal_legend_5
+	}	
 }

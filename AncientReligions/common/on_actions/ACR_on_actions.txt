@@ -90,3 +90,20 @@ on_combat_pulse = {
 		5 = ancrel.0011 # Becomes a legendary hero
 	}
 }
+
+#on sieg won (for the leader)
+on_siege_won_leader = {
+	random_events = {
+		10 = ancrel.3013 # leader shows great valor
+	}
+}
+
+on_assassination_disc = {
+	events = {
+		164		# assassination discovered, from vanilla
+	}
+
+	random_events = {
+		50 = ancrel.3011 # discovered, but your ingenious plan has made you famous!
+	}
+}

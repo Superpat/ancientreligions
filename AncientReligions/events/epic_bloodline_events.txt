@@ -442,7 +442,7 @@ character_event = {
    	}
 }
 
-#Someone emulating a hero has achieved a personal legend rating of 5
+#Someone emulating a hero has achieved all 5 personal legend events
 character_event = {
 	id = ancrel.3005
 	desc = EVTDESCancrel.3005
@@ -460,7 +460,7 @@ character_event = {
 			has_character_flag = personal_legend_2
 			has_character_flag = personal_legend_1			
 		}
-		OR = {
+		OR = { # must be emulating a hero
 			has_character_modifier = emulating_paris
 			has_character_modifier = emulating_aeneas
 			has_character_modifier = emulating_hector

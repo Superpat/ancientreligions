@@ -26,7 +26,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		years = 50
+		years = 50		# ~32 years with all below modifiers (attractive, lustful, hedonist under the age of 30)
 
 		modifier = {
 			factor = 0.95
@@ -86,8 +86,13 @@ character_event = {
 		NOT = {
 			has_character_flag = personal_legend_5
 		}
-	}
 
+		# 50% chance of occuring on a successful but revealed plot
+		# where the plotter meets the above criteria
+	}
+	mean_time_to_happen = {
+		days = 14	
+	}
 	option = {
 		name = EVTOPTAancrel.3011
 		set_character_flag = personal_legend_5
@@ -174,7 +179,7 @@ character_event = {
 	}
 }
 
-#You're Achilles-like valor is on display for all to see as you take an enemy holding
+#Your Achilles-like valor is on display for all to see as you take an enemy holding
 character_event = {
 	id = ancrel.3013
 	desc = EVTDESCancrel.3013
@@ -191,6 +196,9 @@ character_event = {
 
 		martial = 15
 
+		NOT = { # this is for takers of towns, not defenders!
+			completely_controls = FROM 
+		} 
 		NOT = { 
 			has_character_flag = personal_legend_5
 		}
@@ -200,4 +208,34 @@ character_event = {
 		name = EVTOPTAancrel.3013
 		set_character_flag = personal_legend_5
 	}	
+}
+
+#Your Hector-ish bravery is plainly seen while defending your land against an enemy army
+character_event = {
+	id = ancrel.3013
+	desc = EVTDESCancrel.3013
+	picture = GFX_evt_roman_temple
+	border = GFX_event_normal_frame_religion
+
+	triggered_only = yes
+	capable_only = yes
+
+	trigger = {
+		has_dlc = "The Old Gods"
+		has_character_modifier = emulating_hector
+		religion = hellenic_pagan
+
+		martial = 15
+
+		completely_controls = FROM
+
+		NOT = { 
+			has_character_flag = personal_legend_5
+		}
+	}
+
+	option = {
+		name = EVTOPTAancrel.3013
+		set_character_flag = personal_legend_5
+	}
 }

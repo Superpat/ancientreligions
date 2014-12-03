@@ -1,7 +1,7 @@
 # ACR impacted on_actions: vanilla events need to be kept, as it does a full override of events & random_events lists
-
 on_death = {
 	events = {
+#		8250
 		650
 		24500
 		24502
@@ -9,12 +9,15 @@ on_death = {
 		88291
 		SoA.5306
 		705
-	
+		CM.1068 # Carloman dies
+		CM.1069 # Charlemagne dies
+		CM.10010 # Chronicle entry
+		CM.6185 # Dies of other causes while assassination is in progress - clear flags
+
 		ancrel.1194
 		ancrel.2123
-		45340 # Thirteen treasures inheritance
+		45340 # Thirteen treasures inheritance		
 	}
-	
 	random_events = {
 		10 = 24505
 		10 = 24510
@@ -38,7 +41,8 @@ on_birth = {
 		TOG.3206 # Child Perceived to be Demon Born
 		706 # Full House achievement
 		707 # Keeping it in the Family achievement
-		
+		CM.10011 # Chronicle entry
+
 		ancrel.0215 # Child Perceived to be a Changeling
 		ancrel.3004 # Child is recognized as the blood of a reborn hero
 	}
@@ -92,18 +96,52 @@ on_combat_pulse = {
 }
 
 #on sieg won (for the leader)
+# The taken Holding title is in FROM.
 on_siege_won_leader = {
+	events = {
+		8330 # Conquers the crusade target
+		60100 # Mongols sack Kiev
+		60101 # Mongols sack Novgorod
+		60102 # Mongols sack Krakow
+		60103 # Mongols sack Aachen
+		60104 # Mongols sack Paris
+		60105 # Mongols sack London
+		60106 # Mongols sack Rome
+		60107 # Mongols sack Venice
+		60108 # Mongols sack Constantinople
+		60109 # Mongols sack Lisbon
+		60110 # Mongols sack Smolensk
+		60111 # Mongols sack Prague
+		60112 # Mongols sack Vienna
+		60113 # Mongols sack Esztergom
+		60114 # Mongols sack Athens
+		60115 # Mongols sack Belgrade
+		60116 # Mongols sack Baghdad
+		60117 # Mongols sack Damascus
+		60118 # Mongols sack Jerusalem
+		60119 # Mongols sack Alexandria
+		60120 # Mongols sack Cairo
+		60121 # Mongols sack Mecca
+		88005 # Mongols sack city near the Hashshashin
+		CM.10033 # Chronicle for certain major locations
+		CM.10034 # Chronicle for certain major locations
+	}
 	random_events = {
+		300 = 0
+		100 = 8340 # Finds the Spear of Destiny / Holy Lance
+		100 = 8342 # Finds the Holy Grail
+		500 = 8345 # Sack of Jerusalem
+
 		10 = ancrel.3013 # leader shows great valor
 	}
 }
 
 on_assassination_disc = {
 	events = {
-		164		# assassination discovered, from vanilla
+		163		#vanilla
 	}
 
 	random_events = {
-		50 = ancrel.3011 # discovered, but your ingenious plan has made you famous!
+		25  = ancrel.3011 # discovered, but your ingenious plan has made you famous!
 	}
 }

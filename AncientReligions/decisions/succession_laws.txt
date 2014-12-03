@@ -31,14 +31,76 @@ succession_laws = {
 			OR = {
 				AND = {
 					tier = baron
-					is_feudal = yes
+					OR = {
+						is_feudal = yes
+						is_tribal = yes
+					}
 				}
 				holder_scope = { is_feudal = yes }
+				holder_scope = { is_tribal = yes }
 			}
 			is_primary_type_title = no
+			is_vice_royalty = no
+		}
+		allow = {
+			holder_scope = {
+				OR = {
+					is_tribal = no
+					NOT = { religion_group = pagan_group }
+				}
+			}
 		}
 		effect = {
 			succession = gavelkind
+		}
+		revoke_allowed = {
+			always = no
+		}			
+	}
+	
+	succ_elective_gavelkind = {
+		child_opinion = 25
+		dynasty_opinion = 10
+	
+		potential = {
+			holder_scope = {
+				OR = {
+					independent = yes
+					NOT = {
+						any_liege = {
+							holy_order = yes
+						}
+					}
+				}
+				NOT = { religion_group = muslim }
+				is_merchant_republic = no
+				is_patrician = no
+			}
+			OR = {
+				is_landless_type_title = no
+				is_tribal_type_title = yes
+				temporary = yes
+			}
+			rebel = no
+			OR = {
+				AND = {
+					tier = baron
+					OR = {
+						is_feudal = yes
+						is_tribal = yes
+					}
+				}
+				holder_scope = { is_feudal = yes }
+				holder_scope = { is_tribal = yes }
+			}
+			is_primary_type_title = no
+			is_vice_royalty = no
+		}
+		allow = {
+			holder_scope = { is_tribal = yes }
+		}
+		effect = {
+			succession = elective_gavelkind
 		}
 		revoke_allowed = {
 			always = no
@@ -64,7 +126,6 @@ succession_laws = {
 				
 				NOT = { religion_group = muslim }
 				NOT = { religion_group = indian_group }
-				is_merchant_republic = no
 				
 				OR = {
 					NOT = { religion_group = pagan_group }
@@ -89,9 +150,11 @@ succession_laws = {
 					is_feudal = yes
 				}
 				holder_scope = { is_feudal = yes }
+				holder_scope = { is_patrician = yes }
 			}
 			
 			is_primary_type_title = no
+			is_vice_royalty = no
 			
 			OR = {
 				NOT = { tier = baron }
@@ -104,12 +167,20 @@ succession_laws = {
 				hidden_tooltip = {
 					has_crown_law_title = no
 				}
-				holder_scope = { is_patrician = yes }
+				holder_scope = {
+					is_patrician = yes 
+					OR = {
+						is_merchant_republic = no
+						PREV = {
+							is_primary_holder_title = no
+						}
+					}
+				}
 				crownlaw_title = {
 					OR = {
-						has_law = centralization_2
-						has_law = centralization_3
-						has_law = centralization_4
+						has_law = crown_authority_2
+						has_law = crown_authority_3
+						has_law = crown_authority_4
 					}
 				}
 			}
@@ -154,6 +225,7 @@ succession_laws = {
 				temporary = yes
 			}
 			is_primary_type_title = no
+			is_vice_royalty = no
 			OR = {
 				AND = {
 					tier = baron
@@ -169,8 +241,8 @@ succession_laws = {
 				}
 				crownlaw_title = {
 					OR = {
-						has_law = centralization_3
-						has_law = centralization_4
+						has_law = crown_authority_3
+						has_law = crown_authority_4
 					}
 				}
 			}
@@ -216,6 +288,7 @@ succession_laws = {
 				temporary = yes
 			}
 			is_primary_type_title = no
+			is_vice_royalty = no
 			NOT = { tier = baron }
 			OR = {
 				AND = {
@@ -259,6 +332,7 @@ succession_laws = {
 				temporary = yes
 			}
 			is_primary_type_title = no
+			is_vice_royalty = no
 			NOT = { tier = baron }
 			OR = {
 				AND = {
@@ -315,6 +389,7 @@ succession_laws = {
 				temporary = yes
 			}
 			is_primary_type_title = no
+			is_vice_royalty = no
 			OR = {
 				AND = {
 					tier = baron
@@ -329,7 +404,7 @@ succession_laws = {
 					has_crown_law_title = no
 				}
 				crownlaw_title = {
-					NOT = { has_law = centralization_0 }
+					NOT = { has_law = crown_authority_0 }
 				}
 			}
 		}
@@ -366,6 +441,7 @@ succession_laws = {
 				religion_group = muslim
 			}
 			is_primary_type_title = no
+			is_vice_royalty = no
 		}
 		effect = {
 			succession = turkish_succession
@@ -377,6 +453,7 @@ succession_laws = {
 	succ_papal_succession = {
 		potential = {
 			title = k_papal_state
+			is_vice_royalty = no
 		}
 		
 		effect = {
@@ -398,6 +475,7 @@ succession_laws = {
 				}
 				is_merchant_republic = no
 			}
+			is_vice_royalty = no
 		}
 		effect = {
 			succession = appointment
@@ -458,6 +536,7 @@ succession_laws = {
 					}
 				}
 			}
+			is_vice_royalty = no
 		}
 		
 		effect = {
@@ -495,6 +574,7 @@ succession_laws = {
 				}
 			}
 			is_primary_type_title = no
+			is_vice_royalty = no
 		}
 		effect = {
 			succession = catholic_bishopric
@@ -506,7 +586,11 @@ succession_laws = {
 	
 	succ_patrician_elective = {
 		potential = {
-			holder_scope = { is_merchant_republic = yes }
+			is_primary_holder_title = yes
+			holder_scope = {
+				is_merchant_republic = yes
+			}
+			is_vice_royalty = no
 		}
 		effect = {
 			succession = patrician_elective
@@ -545,10 +629,13 @@ gender_laws = {
 					tier = baron
 					is_feudal = yes
 				}
-				holder_scope = { is_feudal = yes }
+				holder_scope = {
+					is_feudal = yes
+				}
 			}
 			
 			is_primary_type_title = no
+			is_vice_royalty = no
 		}
 		effect = {
 			gender_succ = cognatic
@@ -562,6 +649,7 @@ gender_laws = {
 	
 		potential = {
 			always = yes
+			is_vice_royalty = no
 		}
 		effect = {
 			gender_succ = agnatic
@@ -594,6 +682,7 @@ gender_laws = {
 			}
 			
 			is_primary_type_title = no
+			is_vice_royalty = no
 		}
 		allow = {
 			holder_scope = {
@@ -620,6 +709,7 @@ gender_laws = {
 		
 		potential = {
 			always = no # For modders only
+			is_vice_royalty = no
 		}
 		allow = {
 			always=yes
@@ -638,6 +728,7 @@ gender_laws = {
 		
 		potential = {
 			always = no # For modders only
+			is_vice_royalty = no
 		}
 		allow = {
 			always=yes

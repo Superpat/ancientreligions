@@ -861,7 +861,7 @@ character_event = {
 	}
 }
 
-# Changeling child becomes and adult (Trait makes character more keen to go on adventures and harder to kill)
+#[on_adulthood] Changeling child becomes and adult (Trait makes character more keen to go on adventures and harder to kill)
 character_event = {
 	id = ancrel.0241
 	desc = EVTDESCancrel.0241

@@ -107,7 +107,7 @@ character_event = {
 	}
 }
 
-# Ruler has died, the Aonach is over
+#[on_death] Ruler has died, the Aonach is over
 character_event = {
 	id = ancrel.1194
 	title = TAILTEANNTITLE

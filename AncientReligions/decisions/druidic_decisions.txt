@@ -282,11 +282,6 @@ decisions = {
 			NOT = { has_character_flag = inviting_druid_over }
 			primary_title = { higher_tier_than = BARON }
 			NOT = {
-				any_vassal = {
-					has_minor_title = title_court_druid
-				}
-			}
-			NOT = {
 				any_courtier = {
 					has_minor_title = title_court_druid
 				}
@@ -313,20 +308,12 @@ decisions = {
 			}
 			modifier = {
 				factor = 0.1
-				OR = {
-					any_vassal = {
-						has_minor_title = title_court_druid
-					}
-					any_courtier = {
-						has_minor_title = title_court_druid
-					}
+				any_courtier = {
+					has_minor_title = title_court_druid
 				}
 			}
 			modifier = {
 				factor = 0.1
-				any_vassal = {
-					trait = druid
-				}
 				any_courtier = {
 					trait = druid
 				}

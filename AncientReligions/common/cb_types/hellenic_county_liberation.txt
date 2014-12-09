@@ -192,11 +192,7 @@ hellenic_reconquest = {
 					had_character_flag = { flag = called_imperial_reconquest days = 1825 }
 				}
 			}
-
-			NOT = {
-				religion_group = christian
-				religion_group = pagan_group
-			}
+			
 			NOT = { same_realm = FROM }
 
 			NOT = {

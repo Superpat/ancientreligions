@@ -961,8 +961,6 @@ e_spain = {
 				color2={ 255 255 255 }
 				
 				b_corunna = {
-					holy_site = gaelic_pagan
-					holy_site = gaelic_pagan_reformed
 				}
 				b_santiago = {
 					holy_site = catholic

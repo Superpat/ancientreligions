@@ -730,8 +730,6 @@ gender_laws = {
 					OR = {
 						holder_scope = {
 							culture = basque
-							religion = gaelic_pagan
-							religion = gaelic_pagan_reformed
 							religion = druidic
 							religion = druidic_reformed
 						}

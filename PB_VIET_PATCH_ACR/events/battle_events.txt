@@ -1670,8 +1670,6 @@ character_event = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					NOT = {
 						trait = head1
@@ -1688,8 +1686,6 @@ character_event = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head1
 				}
@@ -1700,8 +1696,6 @@ character_event = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head2
 				}
@@ -1712,8 +1706,6 @@ character_event = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head3
 				}
@@ -1724,8 +1716,6 @@ character_event = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head4
 				}
@@ -1736,8 +1726,6 @@ character_event = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head5
 				}
@@ -1765,8 +1753,6 @@ character_event = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					NOT = {
 						trait = head1
@@ -1783,8 +1769,6 @@ character_event = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head1
 				}
@@ -1795,8 +1779,6 @@ character_event = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head2
 				}
@@ -1807,8 +1789,6 @@ character_event = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head3
 				}
@@ -1819,8 +1799,6 @@ character_event = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head4
 				}
@@ -1831,8 +1809,6 @@ character_event = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head5
 				}
@@ -1860,8 +1836,6 @@ hidden_tooltip = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					NOT = {
 						trait = head1
@@ -1878,8 +1852,6 @@ hidden_tooltip = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head1
 				}
@@ -1890,8 +1862,6 @@ hidden_tooltip = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head2
 				}
@@ -1902,8 +1872,6 @@ hidden_tooltip = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head3
 				}
@@ -1914,8 +1882,6 @@ hidden_tooltip = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head4
 				}
@@ -1926,8 +1892,6 @@ hidden_tooltip = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head5
 				}
@@ -1955,8 +1919,6 @@ hidden_tooltip = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					NOT = {
 						trait = head1
@@ -1973,8 +1935,6 @@ hidden_tooltip = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head1
 				}
@@ -1985,8 +1945,6 @@ hidden_tooltip = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head2
 				}
@@ -1997,8 +1955,6 @@ hidden_tooltip = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head3
 				}
@@ -2009,8 +1965,6 @@ hidden_tooltip = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head4
 				}
@@ -2021,8 +1975,6 @@ hidden_tooltip = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head5
 				}
@@ -2050,8 +2002,6 @@ hidden_tooltip = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					NOT = {
 						trait = head1
@@ -2068,8 +2018,6 @@ hidden_tooltip = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head1
 				}
@@ -2080,8 +2028,6 @@ hidden_tooltip = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head2
 				}
@@ -2092,8 +2038,6 @@ hidden_tooltip = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head3
 				}
@@ -2104,8 +2048,6 @@ hidden_tooltip = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head4
 				}
@@ -2116,8 +2058,6 @@ hidden_tooltip = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head5
 				}
@@ -2145,8 +2085,6 @@ character_event = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					NOT = {
 						trait = head1
@@ -2163,8 +2101,6 @@ character_event = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head1
 				}
@@ -2175,8 +2111,6 @@ character_event = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head2
 				}
@@ -2187,8 +2121,6 @@ character_event = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head3
 				}
@@ -2199,8 +2131,6 @@ character_event = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head4
 				}
@@ -2211,8 +2141,6 @@ character_event = {
 					OR = {
 						religion = druidic
 						religion = druidic_reformed
-						religion = gaelic_pagan
-						religion = gaelic_pagan_reformed
 					}
 					trait = head5
 				}

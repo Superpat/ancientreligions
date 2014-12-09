@@ -32,8 +32,6 @@ character_event = {
 			OR = {
 				religion = druidic
 				religion = druidic_reformed
-				religion = gaelic_pagan
-				religion = gaelic_pagan_reformed
 			}
 			has_character_flag = hates_magic
 			any_courtier = {
@@ -48,47 +46,16 @@ character_event = {
 	
 	option = {
 		name = EVTOPTAancrel.0000
-		if = {
-			limit = {
-				OR = {
-					culture = breton
-					culture = welsh
-					culture = cornish
-					culture = cumbric
-				}
-			}
-			create_character = {
-				random_traits = no
-				dynasty = NONE
-				female = no
-				age = 53
-				religion = druidic
-				culture = ROOT
-				trait = mystic
-				trait = scholarly_theologian
-			}
-		}
-		if = {
-			limit = {
-				OR = {
-					culture = scottish
-					culture = irish
-					culture = norsegaelic
-				}
-			}
-			create_character = {
-				random_traits = no
-				dynasty = NONE
-				female = no
-				age = 53
-				religion = gaelic_pagan
-				culture = ROOT
-				trait = mystic
-				trait = scholarly_theologian
-			}
-		}
-		new_character = {
-			give_minor_title = title_pagan_wizard
+		
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			female = no
+			age = 53
+			religion = druidic
+			culture = ROOT
+			trait = mystic
+			trait = scholarly_theologian
 		}
 	}
 	option = {
@@ -122,12 +89,7 @@ character_event = {
 			hidden_tooltip = {
 				any_vassal = {
 					limit = {
-						NOT = {
-							OR = {
-								religion = druidic
-								religion = gaelic_pagan
-							}
-						}
+						religion = druidic
 						age = 16
 						prisoner = no
 						war = no
@@ -137,12 +99,7 @@ character_event = {
 				}
 				any_courtier = {
 					limit = {
-						NOT = {
-							OR = {
-								religion = druidic
-								religion = gaelic_pagan
-							}
-						}
+						religion = druidic
 						age = 16
 						prisoner = no
 						war = no
@@ -166,10 +123,7 @@ character_event = {
 	
 	trigger = {
 		NOT = {
-			OR = {
-				religion = druidic
-				religion = gaelic_pagan
-			}
+			religion = druidic
 		}
 		has_character_modifier = celtic_ways
 	}
@@ -182,27 +136,7 @@ character_event = {
 		name = EVTOPTAancrel.0002
 		ai_chance = { factor = 50 }
 		hidden_tooltip = { remove_character_modifier = celtic_ways }
-		if = {
-			limit = { 
-				OR = {
-					culture = scottish
-					culture = irish
-					culture = norsegael
-				}
-			}
-			religion = gaelic_pagan
-		}
-		if = {
-			limit = { 
-				OR = {
-					culture = breton
-					culture = welsh
-					culture = cornish
-					culture = cumbric
-				}
-			}
-			religion = druidic
-		}
+		religion = druidic
 		piety = 50
 	}
 	option = {
@@ -398,26 +332,6 @@ character_event = {
 	option = {
 		name = EVTOPTAancrel.0008
 		tooltip_info = lunatic
-		if = {
-			limit = {
-				OR = {
-					culture = breton
-					culture = welsh
-					culture = cornish
-					culture = cumbric
-				}
-			}
-			religion = druidic
-		}
-		if = {
-			limit = {
-				OR = {
-					culture = scottish
-					culture = irish
-					culture = norsegael
-				}
-			}
-			religion = gaelic_pagan
-		}
+		religion = druidic
 	}
 }

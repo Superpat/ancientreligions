@@ -21,7 +21,7 @@
 # 13 - Military 			- 31
 # 14 - Plots 				- 32
 # 15 - Messages 			- 33
-# 16 - Diplomatic actions 	- 34
+# 16 - Diplomatic actions 		- 34
 # 17 - Church 				- 35
 # 18 - Characters 			- 36
 # 37 - Prison 				- 38

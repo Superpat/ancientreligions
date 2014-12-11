@@ -1,5 +1,4 @@
 decisions = {
-
 	hold_divination = {
 		potential = {
 			has_dlc = "The Old Gods"

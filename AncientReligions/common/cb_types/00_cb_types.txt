@@ -5914,7 +5914,6 @@ imperial_reconquest = {
 	is_valid = {
 		ROOT = {
 			independent = yes
-			religion_group = christian
 			NOT = { same_realm = FROM }
 		}
 	}

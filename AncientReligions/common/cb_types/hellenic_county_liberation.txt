@@ -175,7 +175,7 @@ hellenic_reconquest = {
 
 	can_use = {
 		ROOT = {
-			has_landed_title = e_roman_empire
+			NOT = { has_landed_title = e_roman_empire }
 			AND = {
 				independent = yes
 				higher_tier_than = DUKE
@@ -205,29 +205,6 @@ hellenic_reconquest = {
 					}
 					NOT = { religion = FROM }
 					top_liege = { religion = ROOT }
-				}
-			}
-
-			NOT = {
-				# Use CB "religious" instead
-				AND = {
-					religion_group = christian
-					OR = {
-						NOT = { religion_group = FROM }
-						is_heresy_of = FROM
-						is_parent_religion = FROM
-					}
-					top_liege = {
-						religion_group = ROOT
-						NOT = { religion = FROM }
-						OR = {
-							religion = ROOT
-							AND = {
-								is_heretic = no
-								ROOT = { is_heretic = no }
-							}
-						}
-					}
 				}
 			}
 		}

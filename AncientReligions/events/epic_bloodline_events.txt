@@ -352,7 +352,7 @@ character_event = {
 
   	option = {
   		name = OK
-  		limit = {
+  		trigger = {
   			OR = {
   				mother = {
   					trait = achilles_reborn
@@ -367,7 +367,7 @@ character_event = {
    	}
    	option = {
   		name = OK
-  		limit = {
+  		trigger = {
   			OR = {
   				mother = {
   					trait = odysseus_reborn
@@ -382,7 +382,7 @@ character_event = {
    	}
 	option = {
   		name = OK
-  		limit = {
+  		trigger = {
   			OR = {
   				mother = {
   					trait = nestor_reborn
@@ -397,7 +397,7 @@ character_event = {
    	}
 	option = {
   		name = OK
-  		limit = {
+  		trigger = {
   			OR = {
   				mother = {
   					trait = hector_reborn
@@ -412,7 +412,7 @@ character_event = {
    	}
 	option = {
   		name = OK
-  		limit = {
+  		trigger = {
   			OR = {
   				mother = {
   					trait = aeneas_reborn
@@ -427,7 +427,7 @@ character_event = {
    	}	
    	option = {
   		name = OK
-  		limit = {
+  		trigger = {
   			OR = {
   				mother = {
   					trait = paris_reborn
@@ -486,7 +486,7 @@ character_event = {
 
 	option = {
 		name = OK
-		limit = {
+		trigger = {
 			has_character_modifier = emulating_paris
 		}
 
@@ -495,7 +495,7 @@ character_event = {
 	}
 	option = {
 		name = OK
-		limit = {
+		trigger = {
 			has_character_modifier = emulating_aeneas
 		}
 
@@ -504,7 +504,7 @@ character_event = {
 	}
 	option = {
 		name = OK
-		limit = {
+		trigger = {
 			has_character_modifier = emulating_hector
 		}
 
@@ -513,7 +513,7 @@ character_event = {
 	}
 	option = {
 		name = OK
-		limit = {
+		trigger = {
 			has_character_modifier = emulating_nestor
 		}
 
@@ -522,7 +522,7 @@ character_event = {
 	}
 	option = {
 		name = OK
-		limit = {
+		trigger = {
 			has_character_modifier = emulating_odysseus
 		}
 
@@ -531,7 +531,7 @@ character_event = {
 	}
 	option = {
 		name = OK
-		limit = {
+		trigger = {
 			has_character_modifier = emulating_achilles
 		}
 

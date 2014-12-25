@@ -29,16 +29,15 @@ character_event = {
 	is_triggered_only = yes 
 	
 	immediate = {
-		opinion = {
-			who = FROM
-			modifier = opinion_arrest_attempt
-			months = 120
-		}
 		FROM = { character_event = { id = 40000 } }
 	}
 
 	option = {
 		name = "EVTOPTA150"
+		chronicle = {
+			entry = CHRONICLE_AVOID_IMPRISON_WAR
+			portrait = [From.GetID]
+		}
 	}
 }
 
@@ -51,6 +50,10 @@ character_event = {
 	
 	option = {
 		name = "EVTOPTA40000"
+		chronicle = {
+			entry = CHRONICLE_FAILED_IMPRISON_WAR
+			portrait = [From.GetID]
+		}
 	}
 }
 
@@ -291,7 +294,7 @@ character_event = {
 		NOT = { trait = maimed }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 3
@@ -544,7 +547,7 @@ character_event = {
 		NOT = { trait = maimed }
 	}
 	
-	mean_time_to_happen = {
+	weight_multiplier = {
 		days = 1
 		modifier = {
 			factor = 3
@@ -652,6 +655,19 @@ character_event = {
 	hide_FROM = yes
 	is_triggered_only = yes 
 	
+	immediate = {
+		if = {
+			limit = {
+				spouse = { character = FROM }
+				FROM = { 
+					ai = no
+					NOT = { has_character_flag = achievement_spouse_killer } 
+				}
+			}
+			FROM = { set_character_flag = achievement_spouse_killer }
+		}
+	}
+	
 	option = {
 		name = "EVTOPTA162"
 		hidden_tooltip = {
@@ -671,7 +687,6 @@ character_event = {
 	
 	hide_FROM = yes
 	is_triggered_only = yes 
-	
 
 	option = {
 		name = "EVTOPTA40009"
@@ -707,6 +722,16 @@ character_event = {
 					months = 60
 				}
 			}
+		}
+		if = {
+			limit = {
+				spouse = { character = FROM }
+				FROM = { 
+					ai = no
+					NOT = { has_character_flag = achievement_spouse_killer } 
+				}
+			}
+			FROM = { set_character_flag = achievement_spouse_killer }
 		}
 		if = {
 			limit = { 
@@ -2224,22 +2249,22 @@ diploresponse_event = {
 }
 
 # GRANT_LANDED_TITLE_INTERACTION_DECLINE_EVENT =
-diploresponse_event = {
-	id = 229
-
-	is_triggered_only = yes
-	major = no
-
-	trigger = {
-		ai = no
-	}
-
-	desc = "EVTDESC229"
-
-	option = {
-		name = "OK"
-	}
-}
+#diploresponse_event = {
+#	id = 229
+#
+#	is_triggered_only = yes
+#	major = no
+#
+#	trigger = {
+#		ai = no
+#	}
+#
+#	desc = "EVTDESC229"
+#
+#	option = {
+#		name = "OK"
+#	}
+#}
 
 # APPOINT_TO_OFFICE_INTERACTION_ACCEPT_EVENT =
 diploresponse_event = {
@@ -2709,15 +2734,21 @@ diploresponse_event = {
 # On-action event: Royal Marriage Aid Duty
 character_event = {
 	id = 500
-	desc = "EVTDESC500"
-	picture = "GFX_evt_marriage"
+	desc = EVTDESC500
+	picture = GFX_evt_marriage
 	
 	is_triggered_only = yes
 	
 	trigger = {
-		NOT = { religion_group = muslim }
+		NOT = { 
+			religion_group = muslim 
+			has_character_flag = recieved_royal_marriage_aid_duty
+		}
 		OR = {
-			NOT = { religion = zoroastrian }
+			AND = {
+				NOT = { religion = zoroastrian }
+				NOT = { religion = messalian }
+			}
 			NOT = { new_character = { is_close_relative = FROM } }
 		}
 		OR = {
@@ -2733,14 +2764,9 @@ character_event = {
 			}
 		}
 	}
-
+	
 	immediate = {
-		hidden_tooltip = {
-			if = {
-				limit = { ai = no }
-				set_character_flag = achievement_get_married
-			}
-		}
+		set_character_flag = recieved_royal_marriage_aid_duty
 	}
 	
 	option = {
@@ -2775,8 +2801,8 @@ character_event = {
 # On-action event: Zoroastrian Xwedodah marriage
 character_event = {
 	id = 501
-	desc = "EVTDESC501"
-	picture = "GFX_evt_marriage_zoroastrian"
+	desc = EVTDESC501
+	picture = GFX_evt_marriage_zoroastrian_group
 	
 	is_triggered_only = yes
 	
@@ -2793,15 +2819,6 @@ character_event = {
 				new_character = {
 					NOT = { character = ROOT }
 				}
-			}
-		}
-	}
-
-	immediate = {
-		hidden_tooltip = {
-			if = {
-				limit = { ai = no }
-				set_character_flag = achievement_get_married
 			}
 		}
 	}
@@ -2832,6 +2849,101 @@ character_event = {
 	}
 	option = {
 		name = "EVTOPTB500"
+		if = {
+			limit = { tier = EMPEROR }
+			prestige = 300
+		}
+		if = {
+			limit = { tier = KING }
+			prestige = 200
+		}
+		if = {
+			limit = { tier = DUKE }
+			prestige = 100
+		}
+		if = {
+			limit = { tier = COUNT }
+			prestige = 50
+		}
+		if = {
+			limit = { tier = BARON }
+			prestige = 25
+		}
+		
+		if = {
+			limit = { tier = EMPEROR }
+			piety = 300
+		}
+		if = {
+			limit = { tier = KING }
+			piety = 200
+		}
+		if = {
+			limit = { tier = DUKE }
+			piety = 100
+		}
+		if = {
+			limit = { tier = COUNT }
+			piety = 50
+		}
+		if = {
+			limit = { tier = BARON }
+			piety = 25
+		}
+	}
+}
+
+# On-action event: Messalian close kin marriage
+character_event = {
+	id = 502
+	desc = EVTDESC502
+	picture = GFX_evt_marriage
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		religion = messalian
+		new_character = { is_close_relative = FROM }
+		OR = {
+			FROM = { character = ROOT }
+			AND = {
+				FROM = {
+					dynasty = ROOT
+					is_primary_heir = ROOT
+				}
+				new_character = {
+					NOT = { character = ROOT }
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA500
+		scaled_wealth = 0.5
+		if = {
+			limit = { tier = EMPEROR }
+			piety = 300
+		}
+		if = {
+			limit = { tier = KING }
+			piety = 200
+		}
+		if = {
+			limit = { tier = DUKE }
+			piety = 100
+		}
+		if = {
+			limit = { tier = COUNT }
+			piety = 50
+		}
+		if = {
+			limit = { tier = BARON }
+			piety = 25
+		}
+	}
+	option = {
+		name = EVTOPTB500
 		if = {
 			limit = { tier = EMPEROR }
 			prestige = 300
@@ -3092,7 +3204,7 @@ province_event = {
 						spawn_unit = {
 							province = prev
 							home = prev
-							scaled_by_biggest_garrison = 1.25
+							scaled_by_biggest_garrison = 1.0
 							troops = {
 								archers = { 6 6 }
 								light_cavalry = { 4 4 }
@@ -3115,7 +3227,7 @@ province_event = {
 						spawn_unit = {
 							province = prev
 							home = prev
-							scaled_by_biggest_garrison = 1.25
+							scaled_by_biggest_garrison = 1.0
 							troops = {
 								archers = { 6 6 }
 								light_cavalry = { 3 3 }
@@ -3138,7 +3250,7 @@ province_event = {
 						spawn_unit = {
 							province = prev
 							home = prev
-							scaled_by_biggest_garrison = 1.25
+							scaled_by_biggest_garrison = 1.0
 							troops = {
 								archers = { 6 6 }
 								light_infantry = { 14 14 }
@@ -3414,6 +3526,10 @@ narrative_event = {
 	only_rulers = yes
 	
 	immediate = {
+		if = {
+			limit = { ai = no }
+			set_character_flag = achievement_new_ways
+		}
 		any_courtier = {
 			limit = {
 				is_heresy_of = ROOT
@@ -3449,15 +3565,36 @@ narrative_event = {
 			set_global_flag = norse_reformation
 		}
 		if = {
-			limit = { religion = druidic_reformed }
-			d_fianna = {
-				religion = druidic_reformed # This Holy Order now changes religion
-			}
-			set_global_flag = gaelic_reformation
+			limit = { religion = tengri_pagan_reformed }
+			set_global_flag = tengri_reformation
+		}
+		if = {
+			limit = { religion = baltic_pagan_reformed }
+			set_global_flag = baltic_reformation
+		}
+		if = {
+			limit = { religion = finnish_pagan_reformed }
+			set_global_flag = finnish_reformation
+		}
+		if = {
+			limit = { religion = aztec_reformed }
+			set_global_flag = aztec_reformation
+		}
+		if = {
+			limit = { religion = slavic_pagan_reformed }
+			set_global_flag = slavic_reformation
+		}
+		if = {
+			limit = { religion = west_african_pagan_reformed }
+			set_global_flag = west_african_reformation
+		}
+		if = {
+			limit = { religion = zun_pagan_reformed }
+			set_global_flag = zun_reformation
 		}
 		if = {
 			limit = { religion = druidic_reformed }
-			d_gwydion = {
+			d_fianna = {
 				religion = druidic_reformed # This Holy Order now changes religion
 			}
 			set_global_flag = druidic_reformation
@@ -3467,11 +3604,25 @@ narrative_event = {
 	option = {
 		name = "EVTOPTA670" # The Reformer
 		trigger = { religion = ROOT }
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PLAYER_REFORMED_RELIGION
+				portrait = [Root.GetID]
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTB670" # Rulers of the old Faith - Accept
 		trigger = {
 			is_heresy_of = ROOT # The old religion has become a heresy of the Reformed one
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_OTHER_REFORMED_PLAYERS_RELIGION
+				portrait = [Root.GetID]
+			}
 		}
 		ai_chance = {
 			factor = 50
@@ -3531,6 +3682,13 @@ narrative_event = {
 		trigger = {
 			is_heresy_of = ROOT # The old religion has become a heresy of the Reformed one
 		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_OTHER_REFORMED_PLAYERS_RELIGION
+				portrait = [Root.GetID]
+			}
+		}
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -3547,4 +3705,133 @@ narrative_event = {
 			NOT = { is_heresy_of = ROOT }
 		}
 	}
+}
+
+character_event = {
+	id = 671
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_rival = { religion = ROOT }
+		
+	}
+	
+	immediate = {
+		any_rival = {
+			limit = { religion = ROOT }
+			character_event = { id = 100500 }
+		}
+	}
+}
+
+####################################################
+# Elective Gavelkind Succession:
+# Vassal Junior Heir Can Choose Independence
+####################################################
+
+character_event = {
+	id = 63103
+	desc = EVTDESC_63103
+	picture = GFX_evt_throne_room
+
+	capable_only = yes
+	prisoner = no
+	min_age = 16
+	
+	is_triggered_only = yes
+
+	trigger = {
+		has_dlc = "Charlemagne"
+	}
+	
+	option = {
+		name = EVTOPTA_63103 # Remain a vassal
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 2
+				opinion = {
+					who = FROM
+					value = 25
+				}
+			}
+			modifier = {
+				factor = 2
+				opinion = {
+					who = FROM
+					value = 50
+				}
+			}
+			modifier = {
+				factor = 4
+				trait = content
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB_63103 # Go independent
+		
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -25
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -50
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				trait = ambitious
+			}
+		}
+		
+		hidden_tooltip = {
+			FROM = { character_event = { id = 63104 } }
+		}
+		
+		set_defacto_liege = THIS
+		any_demesne_title = {
+			limit = {
+				OR = {
+					tier = king
+					tier = emperor
+					is_primary_holder_title_tier = yes
+				}
+			}
+			FROM = {
+				add_claim = PREV
+			}
+		}
+	}
+}
+
+# The liege is notified of the independence
+character_event = {
+	id = 63104
+	desc = EVTDESC_63104
+	picture = GFX_evt_emissary
+
+	is_triggered_only = yes
+	
+	notification = yes
+	
+	option = {
+		name = EVTOPTA_63104
+	}
+	
 }

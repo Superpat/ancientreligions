@@ -1,5 +1,0 @@
-celtic_ways = {
-	monthly_character_piety = 0.1
-	church_opinion = -20
-	icon = 35
-}

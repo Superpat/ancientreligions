@@ -30,6 +30,14 @@ decisions = {
 			age = 16
 			prestige = 500
 			wealth = 200
+			OR = {
+				any_vassal = {
+					has_minor_title = title_court_bard
+				}
+				any_courtier = {
+					has_minor_title = title_court_bard
+				}
+			}
 		}
 		effect = {
 			set_character_flag = aonach_tailteann

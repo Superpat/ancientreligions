@@ -1,0 +1,52 @@
+##################################################
+#
+# STRATEGIC EFFECTS - A.K.A. "TRIGGERED MODIFIERS"
+#
+##################################################
+
+# Bankruptcy
+negative_money = {
+	potential = {
+		is_ruler = yes
+	}
+	
+	trigger = {
+		NOT = { wealth = 0 }
+	}
+	
+	icon = 24
+	
+	land_morale = -0.25
+	
+	active = no
+}
+
+# Gaelic King mechanic
+unfit_gaelic_king = {
+	potential = {
+		is_ruler = yes
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+		OR = {
+			culture = irish
+			culture = scottish
+		}
+	}
+	
+	trigger = {
+		OR = {
+			trait = maimed
+			trait = eunuch
+			trait = blinded
+		}
+	}
+	
+	icon = 24
+	
+	land_morale = -0.20
+	general_opinion = -10
+	
+	active = no
+}

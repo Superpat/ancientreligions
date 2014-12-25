@@ -12,16 +12,10 @@
 nick_the_wolf = {
 	allow = {
 		NOT = { trait = craven }
-		AND = {	
-			OR = {
-				trait = wolf
-				trait = fian
-			}
-			OR = {
-				trait = head2
-				trait = head3
-				trait = head4
-			}
+		trait = fian
+		OR = {
+			trait = head1
+			trait = head2
 		}
 	}
 	chance = {
@@ -35,7 +29,7 @@ nick_the_wolf = {
 nick_the_boar = {
 	allow = {
 		NOT = { trait = craven }
-		trait = head5
+		trait = head1
 	}
 	chance = {
 		factor = 2
@@ -45,3 +39,4 @@ nick_the_boar = {
 		}
 	}
 }
+nick_pendragon = {}

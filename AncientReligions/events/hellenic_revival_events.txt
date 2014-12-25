@@ -36,6 +36,8 @@ character_event = {
 			culture = roman
 			culture = italian
 			culture = greek
+			culture = sicilian_greek # SWMH
+			culture_group = italian_group # SWMH
 		}
 		NOT = { has_character_flag = flag_studied_the_classics }
 	}
@@ -367,6 +369,8 @@ character_event = {
 					culture = roman
 					culture = italian
 					culture = greek
+					culture = sicilian_greek # SWMH
+					culture_group = italian_group # SWMH
 				}
 			}
 			modifier = {
@@ -375,11 +379,14 @@ character_event = {
 			}
 			modifier = {
 				factor = 2.0
-				OR = {
-					# free infidel revokation
-					crownlaw_title = { has_law = centralization_2 }
-					crownlaw_title = { has_law = centralization_3 }
-					crownlaw_title = { has_law = centralization_4 }
+				crownlaw_title = {
+					OR = {
+						# free infidel revokation
+						has_law = centralization_2
+						has_law = centralization_3
+						has_law = centralization_4
+						has_law = revokation_2 # PB
+					}
 				}
 			}
 		}
@@ -416,134 +423,5 @@ character_event = {
 		ai_chance = { factor = 80 }
 		piety = 10
 		reverse_opinion = { modifier = opinion_rejected_hellenic_state_religion who = FROM }
-	}
-}
-
-
-# This is a workaround for the "Demand religious conversion" diplomatic action not working.
-# AI characters that normaly would have converted when asked will instead slowly do so by themselves.
-# Players should use the standard "convert_to_liege_religion" decisions instead, which the AI never uses.
-character_event = {
-	id = ancrel.2104
-	hide_window = yes
-	
-	trigger = {
-		ai = yes
-		NOT = { religion = hellenic_pagan }
-		OR = {
-			AND = {
-				is_landed = yes
-				independent = no
-				liege = { religion = hellenic_pagan }
-				liege = { reverse_opinion = { who = ROOT value = 25 } }
-			}
-			AND = {
-				is_landed = no
-				employer = { religion = hellenic_pagan }
-				employer = { reverse_opinion = { who = ROOT value = 25 } }
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		years = 2
-		modifier = {
-			factor = 10 # Slow process (ca 20 years) for higher tier rulers.
-			is_landed = yes
-			higher_tier_than = BARON
-		}
-		modifier = {
-			factor = 2
-			trait = zealous
-		}
-		modifier = {
-			factor = 0.5
-			trait = cynical
-		}
-		modifier = {
-			factor = 1.25
-			trait = proud
-		}
-		modifier = {
-			factor = 0.8
-			trait = humble
-		}
-		modifier = {
-			factor = 1.25
-			religion_authority = 0.8
-		}
-		modifier = {
-			factor = 1.25
-			religion_authority = 0.6
-		}
-		modifier = {
-			factor = 0.8
-			NOT = { religion_authority = 0.4 }
-		}
-		modifier = {
-			factor = 0.8
-			NOT = { religion_authority = 0.2 }
-		}
-		modifier = {
-			factor = 0.8
-			is_landed = yes
-			liege = { reverse_opinion = { who = ROOT value = 75 } }
-		}
-		modifier = {
-			factor = 1.25
-			is_landed = yes
-			NOT = { liege = { reverse_opinion = { who = ROOT value = 50 } } }
-		}
-		modifier = {
-			factor = 0.8
-			is_landed = no
-			employer = { reverse_opinion = { who = ROOT value = 75 } }
-		}
-		modifier = {
-			factor = 1.25
-			is_landed = no
-			NOT = { employer = { reverse_opinion = { who = ROOT value = 50 } } }
-		}
-		modifier = {
-			factor = 10
-			is_landed = yes
-			NOT = { religion_group = pagan_group }
-			any_liege = { religion_group = ROOT }
-		}
-		modifier = {
-			factor = 10
-			is_landed = no
-			NOT = { religion_group = pagan_group }
-			employer = { any_liege = { religion_group = ROOT } }
-		}
-		modifier = {
-			factor = 2
-			religion_group = pagan_group
-		}
-		modifier = {
-			factor = 1.5
-			NOT = { culture = roman }
-			NOT = { culture = italian }
-			NOT = { culture = greek }
-		}
-		modifier = {
-			factor = 0.5
-			is_landed = yes
-			NOT = { any_liege = { religion = ROOT } }
-			OR = {
-				# free infidel revokation
-				crownlaw_title = { has_law = centralization_2 }
-				crownlaw_title = { has_law = centralization_3 }
-				crownlaw_title = { has_law = centralization_4 }
-			}
-		}
-	}
-
-	immediate = {
-		religion = hellenic_pagan
-	}
-
-	option = {
-		name = OK
 	}
 }

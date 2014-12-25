@@ -16,6 +16,11 @@ opinion_held_divination = {
 	months = 12
 }
 
+opinion_held_bad_divination = {
+	opinion = -5
+	months = 12
+}
+
 opinion_refused_divination = {
 	opinion = -15
 	months = 12
@@ -34,4 +39,11 @@ opinion_tailteann_fighter = {
 
 opinion_tailteann_craftsman = {
 	opinion = 20
+}
+
+opinion_patron = {
+	opinion = 30
+}
+opinion_new_courtier = {
+	opinion = 10
 }

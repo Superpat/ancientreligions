@@ -3,7 +3,7 @@
 # ANCIENT RELIGIONS
 # - Celtic Flavor Events
 #
-# Event ID ancrel.0150, ancrel.0151, ancrel.1252, ancrel.1253
+# Event ID ancrel.0150 - 0151, ancrel.1252 - 1253 and ancrel.0208 - 0210
 #
 ###################################
 
@@ -165,6 +165,7 @@ character_event = {
 	}
 }
 
+# The banshee
 character_event = {
 	id = ancrel.1252
 	desc = EVTDESCancrel.1252
@@ -251,6 +252,8 @@ character_event = {
 	}
 }
 
+
+# Bran's Voyage
 character_event = {
 	id = ancrel.1253
 	desc = EVTDESCancrel.1253
@@ -295,7 +298,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.1252
+		name = EVTOPTAancrel.1253
 		piety = 20
 		prestige = 25
 		random_list = {
@@ -304,5 +307,189 @@ character_event = {
 			}
 			90 = {}
 		}
+	}
+}
+
+#######################################
+#
+# - Journey to St Kilda
+#
+#######################################
+
+# Written by Jacob Hodge
+
+#Character Sick, Rumor of Celts on St Kilda
+
+character_event = {
+	id = ancrel.0208
+	desc = EVTDESCancrel.0208
+	picture = GFX_evt_whispering_in_ear
+	border = GFX_event_normal_frame_religion
+
+	ai = no
+	min_age = 16
+	prisoner = no
+
+	trigger = {
+		has_dlc = "The Old Gods"
+		is_ruler = yes
+		is_ill = yes
+		OR = {
+			has_landed_title = c_innse_gall  
+			any_vassal = {has_landed_title = c_innse_gall }
+		}
+		NOT = { religion_group = pagan_group }
+		culture_group = celtic
+	}
+
+	mean_time_to_happen = {
+		months = 40
+		modifier = {
+			factor = 2.0
+			trait = cynical
+		}
+		modifier = {
+			factor = 2.0
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.7
+			trait = sympathy_pagans
+		}
+	}
+
+	option = {
+		name = EVTOPTAancrel.0208
+		ai_chance = {
+			factor = 50
+		}
+		custom_tooltip = {
+			text = travel_island
+			character_event = { id = ancrel.0209 days=5}
+		}
+	}
+	option = {
+		name = EVTOPTBancrel.0208
+		ai_chance = {
+			factor = 50
+		}
+		custom_tooltip = {
+			text = ignore_rumors
+		}
+	}	
+}
+
+# Arrival at St Kilda
+character_event = {
+	id = ancrel.0209
+	desc = EVTDESCancrel.0209
+	picture = GFX_evt_merchant_ship_at_sea_republic
+
+	min_age = 16
+	prisoner = no
+
+	is_triggered_only = yes
+
+	option = {	 #Accept the healing/conversion
+		name = EVTOPTAancrel.0209
+		ai_chance = {
+			factor = 50
+		}
+		hidden_tooltip = {
+			character_event = { id = ancrel.0210 days=2}
+		}
+	}
+	option = {
+		name = EVTOPTBancrel.0209
+		ai_chance = {
+			factor = 50
+		}
+		if = {
+			limit = {
+				NOT = {trait = zealous}
+				NOT = {trait = cynical}
+			}
+			add_trait = zealous 
+		}
+	}
+}
+
+#Accept their faith
+character_event = {
+	id = ancrel.0210
+	desc = EVTDESCancrel.0210
+	picture = GFX_evt_Pagan_dolmen
+
+	min_age = 16
+	prisoner = no
+
+	is_triggered_only = yes
+
+	option = { #Character healed/converted
+		name = EVTOPTAancrel.0210
+		religion = druidic
+		custom_tooltip = {
+			text = MIRACLE_STKILDA
+			if = { limit = { trait = ill } remove_trait = ill }
+			if = { limit = { trait = pneumonic } remove_trait = pneumonic }
+			if = { limit = { trait = syphilitic } remove_trait = syphilitic }
+			if = { limit = { trait = leper } remove_trait = leper }
+			if = { limit = { trait = has_tuberculosis} remove_trait = has_tuberculosis }
+			if = { limit = { trait = has_typhoid_fever } remove_trait = has_typhoid_fever }
+			if = { limit = { trait = has_typhus } remove_trait = has_typhus }
+			if = { limit = { trait = has_bubonic_plague } remove_trait = has_bubonic_plague }
+			if = { limit = { trait = has_measles } remove_trait = has_measles }
+			if = { limit = { trait = has_small_pox } remove_trait = has_small_pox }
+		}
+	}
+}
+
+########################################
+#
+# - First Celtic Emperor
+#
+#######################################
+
+# Y Mab Darogan
+narrative_event = {
+	id = ancrel.0256
+	title = "EVTNAMEancrel.0256"
+	desc = "EVTDESCancrel.0256"
+	picture = GFX_event_y_mab_darogan
+	
+	only_rulers = yes
+
+	trigger = {
+		NOT = {
+			has_character_flag = first_brythonic_emperor
+		}
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+		OR = {
+				culture = welsh
+				culture = breton
+		}
+		has_landed_title = e_britannia
+		primary_title = { 
+			any_previous_holder = { #Will not fire if Kingdom is usurped by someone else or reformed
+				NOT = {
+					has_character_flag = first_brythonic_emperor
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTAancrel.0256 #Ok
+		give_nickname = nick_pendragon
+		set_character_flag = first_brythonic_emperor
+		prestige = 200
+		piety = 100
 	}
 }

@@ -19,10 +19,43 @@ job_chancellor = {
 	monthly_prestige = 0.015
 	
 	allow = {
-		is_female = no
-		is_adult = yes
+		OR = {
+			AND = {
+				OR = {
+					is_female = no
+					AND = {
+						religion = cathar
+						liege = { religion = cathar }
+					}
+				}
+				is_adult = yes
+			}
+			has_character_flag = special_chancellor
+		}
+		
+		OR = {
+			liege = { 
+				NOT = { 
+					religion = druidic 
+					religion = druidic_reformed
+				}
+			}
+		   AND = {
+				OR = { 
+					religion = druidic 
+					religion = druidic_reformed 
+				}
+				OR = { 
+					trait = druid
+					trait = bad_druid
+					trait = poet
+				}
+			}
+		}
+		
 		prisoner = no
 		NOT = { trait = incapable }
+		NOT = { trait = in_hiding }
 	}
 	gain_effect = {
 	}
@@ -48,10 +81,38 @@ job_marshal = {
 	monthly_prestige = 0.015
 	
 	allow = {
-		is_female = no
-		is_adult = yes
+		OR = {
+			AND = {
+				OR = {
+					is_female = no
+					AND = {
+						religion = cathar
+						liege = { religion = cathar }
+					}
+					AND = {
+						OR = {
+							religion = druidic
+							religion = druidic_reformed
+						}
+						OR = {
+							liege = { religion = druidic }
+							liege = { religion = druidic_reformed }
+						}
+					}
+				}
+				OR = {
+					NOT = { religion = hindu }
+					trait = kshatriya
+				}
+				is_adult = yes
+			}
+			has_character_flag = special_marshal
+		}
+		
 		prisoner = no
 		NOT = { trait = incapable }
+		NOT = { trait = in_hiding }
+		NOT = { has_character_flag = guru }
 	}
 	
 	gain_effect = {
@@ -63,6 +124,7 @@ job_marshal = {
 	action = action_assist_arrest
 	action = action_train_troops
 	action = action_advance_mil_tech
+	action = action_organize_raid # Replaces action_advance_mil_tech for Tribes
 
 	lift_fow = yes
 }
@@ -77,10 +139,23 @@ job_treasurer = {
 	monthly_prestige = 0.015
 	
 	allow = {
-		is_female = no
-		is_adult = yes
+		OR = {
+			AND = {
+				OR = {
+					is_female = no
+					AND = {
+						religion = cathar
+						liege = { religion = cathar }
+					}
+				}
+				is_adult = yes
+			}
+			has_character_flag = special_treasurer
+		}
 		prisoner = no
 		NOT = { trait = incapable }
+		NOT = { trait = in_hiding }
+		NOT = { has_character_flag = guru }
 	}
 	gain_effect = {
 	}
@@ -89,8 +164,10 @@ job_treasurer = {
 	}
 	
 	action = action_squeeze_peasants
+	action = action_settle_tribe # Replaces action_squeeze_peasants for Tribes
 	action = action_oversee_construction
 	action = action_advance_eco_tech
+	action = action_build_legend # Replaces action_advance_eco_tech for Tribes
 
 	lift_fow = yes
 }
@@ -105,23 +182,35 @@ job_spymaster = {
 	
 	allow = {
 		OR = {
-			is_female = no
-			liege = { 
-				OR = {
-					mother = { character = FROM }
-					spouse = { character = FROM }
-				}
-			}
 			AND = {
-				religion_group = pagan_group
-				liege = {
-					religion_group = pagan_group
+				OR = {
+					is_female = no
+					liege = { 
+						OR = {
+							mother = { character = FROM }
+							spouse = { character = FROM }
+						}
+					}
+					AND = {
+						religion_group = pagan_group
+						liege = {
+							religion_group = pagan_group
+						}
+					}
+					AND = {
+						religion = cathar
+						liege = { religion = cathar }
+					}
 				}
+				is_adult = yes
 			}
+			has_character_flag = special_spymaster
 		}
-		is_adult = yes
+		
 		prisoner = no
 		NOT = { trait = incapable }
+		NOT = { trait = in_hiding }
+		NOT = { has_character_flag = guru }
 	}
 	gain_effect = {
 	}
@@ -146,35 +235,45 @@ job_spiritual = {
 	monthly_piety = 0.015
 	
 	allow = {
-		is_adult = yes
 		prisoner = no
+		NOT = { trait = incapable }
+		NOT = { trait = in_hiding }
 		liege = {
 			religion = ROOT
 		}
-		
 		OR = {
-			is_female = no
 			AND = {
-				religion_group = pagan_group
-				NOT = { religion = hellenic_pagan }
-				NOT = { religion = aztec }
-				NOT = { religion = aztec_reformed}
-				NOT = { religion = tengri_pagan }
-				NOT = { religion = tengri_pagan_reformed}
+				is_adult = yes
+				OR = {
+					is_female = no
+					AND = {
+						religion_group = pagan_group
+						NOT = { religion = aztec }
+						NOT = { religion = aztec_reformed}
+						NOT = { religion = tengri_pagan }
+						NOT = { religion = tengri_pagan_reformed}
+					}
+					religion = cathar
+					religion = bogomilist
+				}
+				OR = {
+					NOT = { religion = hindu }
+					trait = brahmin
+				}
 			}
+			has_character_flag = special_spiritual
 		}
-		
-		NOT = { trait = incapable }
 		
 		OR = {
 			is_theocracy = yes
+			AND = {
+				liege = { is_tribal = yes }
+				is_ruler = no
+			}
 			liege = { religion_group = muslim }
 			AND = {
 				is_ruler = no
-				NOT = { religion = orthodox }
-				NOT = { is_heresy_of = orthodox }
-				NOT = { religion = miaphysite }
-				NOT = { is_heresy_of = miaphysite }
+				has_autocephaly = no
 			}
 		}
 		
@@ -185,6 +284,25 @@ job_spiritual = {
 			trait = martial_cleric
 			trait = scholarly_theologian
 			trait = mastermind_theologian
+		}
+		
+		OR = {
+			liege = { 
+				NOT = { 
+					religion = druidic 
+					religion = druidic_reformed
+				}
+			}
+		   AND = {
+				OR = { 
+					religion = druidic 
+					religion = druidic_reformed 
+				}
+				OR = {
+					trait = druid
+					trait = bad_druid
+				}
+			}
 		}
 	}
 	gain_effect = {
@@ -200,6 +318,7 @@ job_spiritual = {
 	action = action_advance_cul_tech
 	action = action_improve_rel_relations
 	action = action_charity
+	action = action_build_zeal # Tribal replacement for 'action_advance_cul_tech'
 
 	lift_fow = yes
 }

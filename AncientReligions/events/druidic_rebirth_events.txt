@@ -56,7 +56,9 @@ character_event = {
 			culture = ROOT
 			trait = mystic
 			trait = scholarly_theologian
-			}
+		}
+		new_character = {
+			give_minor_title = title_pagan_wizard
 		}
 	}
 	option = {
@@ -83,6 +85,12 @@ character_event = {
 		custom_tooltip = {
 			text = adopt_celtic_rites
 			piety = -50
+			if = {
+				limit = {
+					NOT = { religion_group = pagan_group }
+				}
+				add_trait = sympathy_pagans
+			}
 			add_character_modifier = {
 				name = celtic_ways
 				duration = -1
@@ -109,6 +117,7 @@ character_event = {
 						prisoner = no
 						war = no
 						NOT = { trait = incapable }
+						is_ruler = no # Councillors can be both courtier and vassals
 					}
 					character_event = { id = ancrel.0003 days = 5 }
 				}
@@ -134,19 +143,26 @@ character_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 12
+		months = 24
 	}
 	
 	option = {
 		name = EVTOPTAancrel.0002
 		ai_chance = { factor = 50 }
 		hidden_tooltip = { remove_character_modifier = celtic_ways }
+		if = {
+			limit = {
+				religion_group = christian
+			}
+			add_trait = sympathy_christendom
+		}
 		religion = druidic
 		piety = 50
 	}
 	option = {
 		name = EVTOPTBancrel.0002
 		piety = 50
+		remove_trait = sympathy_pagans
 		ai_chance = { factor = 50 }
 		religion_head = {
 			opinion = {
@@ -182,6 +198,12 @@ character_event = {
 		custom_tooltip = {
 			text = adopt_celtic_rites
 			piety = -50
+			if = {
+				limit = {
+					NOT = { religion_group = pagan_group }
+				}
+				add_trait = sympathy_pagans
+			}
 			add_character_modifier = {
 				name = celtic_ways
 				duration = -1
@@ -340,3 +362,4 @@ character_event = {
 		religion = druidic
 	}
 }
+

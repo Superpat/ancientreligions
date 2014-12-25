@@ -1546,21 +1546,56 @@ character_event = {
 				limit = { has_character_flag = attending_divination }
 				character_event = { id = ancrel.0055 }
 			}
-			random_list = {
-				20 = {
-					character_event = { id = ancrel.0060 }
+			if = {
+				limit = {
+					NOT = {
+						has_character_modifier = sidhe_offerings_bad
+						has_character_modifier = sidhe_offerings_neutral
+						has_character_modifier = sidhe_offerings_good
+					}
 				}
-				20 = {
-					character_event = { id = ancrel.0061 }
+				random_list = {
+					20 = { character_event = { id = ancrel.0060 } }
+					20 = { character_event = { id = ancrel.0061 } }
+					20 = { character_event = { id = ancrel.0064 } }
+					20 = { character_event = { id = ancrel.0065 } }
+					20 = { character_event = { id = ancrel.0066 } }
 				}
-				20 = {
-					character_event = { id = ancrel.0064 }
+			}
+			if = {
+				limit = {
+					has_character_modifier = sidhe_offerings_bad
 				}
-				20 = {
-					character_event = { id = ancrel.0065 }
+				random_list = {
+					15 = { character_event = { id = ancrel.0060 } }
+					15 = { character_event = { id = ancrel.0061 } }
+					15 = { character_event = { id = ancrel.0064 } }
+					27 = { character_event = { id = ancrel.0065 } }
+					28 = { character_event = { id = ancrel.0066 } }
 				}
-				20 = {
-					character_event = { id = ancrel.0066 }
+			}
+			if = {
+				limit = {
+					has_character_modifier = sidhe_offerings_neutral
+				}
+				random_list = {
+					22 = { character_event = { id = ancrel.0060 } }
+					22 = { character_event = { id = ancrel.0061 } }
+					22 = { character_event = { id = ancrel.0064 } }
+					17 = { character_event = { id = ancrel.0065 } }
+					17 = { character_event = { id = ancrel.0066 } }
+				}
+			}
+			if = {
+				limit = {
+					has_character_modifier = sidhe_offerings_good
+				}
+				random_list = {
+					25 = { character_event = { id = ancrel.0060 } }
+					25 = { character_event = { id = ancrel.0061 } }
+					25 = { character_event = { id = ancrel.0064 } }
+					13 = { character_event = { id = ancrel.0065 } }
+					12 = { character_event = { id = ancrel.0066 } }
 				}
 			}
 		}
@@ -1636,21 +1671,56 @@ character_event = {
 					}
 				}
 			}
-			random_list = {
-				20 = {
-					character_event = { id = ancrel.0060 }
+			if = {
+				limit = {
+					NOT = {
+						has_character_modifier = sidhe_offerings_bad
+						has_character_modifier = sidhe_offerings_neutral
+						has_character_modifier = sidhe_offerings_good
+					}
 				}
-				20 = {
-					character_event = { id = ancrel.0061 }
+				random_list = {
+					20 = { character_event = { id = ancrel.0060 } }
+					20 = { character_event = { id = ancrel.0061 } }
+					20 = { character_event = { id = ancrel.0064 } }
+					20 = { character_event = { id = ancrel.0065 } }
+					20 = { character_event = { id = ancrel.0066 } }
 				}
-				20 = {
-					character_event = { id = ancrel.0064 }
+			}
+			if = {
+				limit = {
+					has_character_modifier = sidhe_offerings_bad
 				}
-				20 = {
-					character_event = { id = ancrel.0065 }
+				random_list = {
+					15 = { character_event = { id = ancrel.0060 } }
+					15 = { character_event = { id = ancrel.0061 } }
+					15 = { character_event = { id = ancrel.0064 } }
+					27 = { character_event = { id = ancrel.0065 } }
+					28 = { character_event = { id = ancrel.0066 } }
 				}
-				20 = {
-					character_event = { id = ancrel.0066 }
+			}
+			if = {
+				limit = {
+					has_character_modifier = sidhe_offerings_neutral
+				}
+				random_list = {
+					22 = { character_event = { id = ancrel.0060 } }
+					22 = { character_event = { id = ancrel.0061 } }
+					22 = { character_event = { id = ancrel.0064 } }
+					17 = { character_event = { id = ancrel.0065 } }
+					17 = { character_event = { id = ancrel.0066 } }
+				}
+			}
+			if = {
+				limit = {
+					has_character_modifier = sidhe_offerings_good
+				}
+				random_list = {
+					25 = { character_event = { id = ancrel.0060 } }
+					25 = { character_event = { id = ancrel.0061 } }
+					25 = { character_event = { id = ancrel.0064 } }
+					13 = { character_event = { id = ancrel.0065 } }
+					12 = { character_event = { id = ancrel.0066 } }
 				}
 			}
 		}
@@ -1699,21 +1769,56 @@ character_event = {
 					}
 				}
 			}
-			random_list = {
-				20 = {
-					character_event = { id = ancrel.0060 }
+			if = {
+				limit = {
+					NOT = {
+						has_character_modifier = sidhe_offerings_bad
+						has_character_modifier = sidhe_offerings_neutral
+						has_character_modifier = sidhe_offerings_good
+					}
 				}
-				20 = {
-					character_event = { id = ancrel.0061 }
+				random_list = {
+					20 = { character_event = { id = ancrel.0060 } }
+					20 = { character_event = { id = ancrel.0061 } }
+					20 = { character_event = { id = ancrel.0064 } }
+					20 = { character_event = { id = ancrel.0065 } }
+					20 = { character_event = { id = ancrel.0066 } }
 				}
-				20 = {
-					character_event = { id = ancrel.0064 }
+			}
+			if = {
+				limit = {
+					has_character_modifier = sidhe_offerings_bad
 				}
-				20 = {
-					character_event = { id = ancrel.0065 }
+				random_list = {
+					15 = { character_event = { id = ancrel.0060 } }
+					15 = { character_event = { id = ancrel.0061 } }
+					15 = { character_event = { id = ancrel.0064 } }
+					27 = { character_event = { id = ancrel.0065 } }
+					28 = { character_event = { id = ancrel.0066 } }
 				}
-				20 = {
-					character_event = { id = ancrel.0066 }
+			}
+			if = {
+				limit = {
+					has_character_modifier = sidhe_offerings_neutral
+				}
+				random_list = {
+					22 = { character_event = { id = ancrel.0060 } }
+					22 = { character_event = { id = ancrel.0061 } }
+					22 = { character_event = { id = ancrel.0064 } }
+					17 = { character_event = { id = ancrel.0065 } }
+					17 = { character_event = { id = ancrel.0066 } }
+				}
+			}
+			if = {
+				limit = {
+					has_character_modifier = sidhe_offerings_good
+				}
+				random_list = {
+					25 = { character_event = { id = ancrel.0060 } }
+					25 = { character_event = { id = ancrel.0061 } }
+					25 = { character_event = { id = ancrel.0064 } }
+					13 = { character_event = { id = ancrel.0065 } }
+					12 = { character_event = { id = ancrel.0066 } }
 				}
 			}
 		}
@@ -1762,21 +1867,56 @@ character_event = {
 					}
 				}
 			}
-			random_list = {
-				20 = {
-					character_event = { id = ancrel.0060 }
+			if = {
+				limit = {
+					NOT = {
+						has_character_modifier = sidhe_offerings_bad
+						has_character_modifier = sidhe_offerings_neutral
+						has_character_modifier = sidhe_offerings_good
+					}
 				}
-				20 = {
-					character_event = { id = ancrel.0061 }
+				random_list = {
+					20 = { character_event = { id = ancrel.0060 } }
+					20 = { character_event = { id = ancrel.0061 } }
+					20 = { character_event = { id = ancrel.0064 } }
+					20 = { character_event = { id = ancrel.0065 } }
+					20 = { character_event = { id = ancrel.0066 } }
 				}
-				20 = {
-					character_event = { id = ancrel.0064 }
+			}
+			if = {
+				limit = {
+					has_character_modifier = sidhe_offerings_bad
 				}
-				20 = {
-					character_event = { id = ancrel.0065 }
+				random_list = {
+					15 = { character_event = { id = ancrel.0060 } }
+					15 = { character_event = { id = ancrel.0061 } }
+					15 = { character_event = { id = ancrel.0064 } }
+					27 = { character_event = { id = ancrel.0065 } }
+					28 = { character_event = { id = ancrel.0066 } }
 				}
-				20 = {
-					character_event = { id = ancrel.0066 }
+			}
+			if = {
+				limit = {
+					has_character_modifier = sidhe_offerings_neutral
+				}
+				random_list = {
+					22 = { character_event = { id = ancrel.0060 } }
+					22 = { character_event = { id = ancrel.0061 } }
+					22 = { character_event = { id = ancrel.0064 } }
+					17 = { character_event = { id = ancrel.0065 } }
+					17 = { character_event = { id = ancrel.0066 } }
+				}
+			}
+			if = {
+				limit = {
+					has_character_modifier = sidhe_offerings_good
+				}
+				random_list = {
+					25 = { character_event = { id = ancrel.0060 } }
+					25 = { character_event = { id = ancrel.0061 } }
+					25 = { character_event = { id = ancrel.0064 } }
+					13 = { character_event = { id = ancrel.0065 } }
+					12 = { character_event = { id = ancrel.0066 } }
 				}
 			}
 		}
@@ -1953,21 +2093,27 @@ character_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAancrel.0065
-		prestige = -200
-		hidden_tooltip = {
-			any_vassal = {
-				limit = { has_character_flag = attending_divination }
-				character_event = { id = ancrel.0070 }
+		name = EVTOPTAancrel.0065		
+		custom_tooltip = {
+			text = divination_bad
+			prestige = -200
+			hidden_tooltip = {
+				any_vassal = {
+					limit = { has_character_flag = attending_divination }
+					character_event = { id = ancrel.0070 }
+				}
+				character_event = { id = ancrel.0062 days = 1 }
 			}
-			character_event = { id = ancrel.0062 days = 1 }
-		}
-		set_character_flag = divination
-		any_vassal = {
-			limit = { has_character_flag = attending_divination }
-			opinion = {
-				modifier = opinion_held_divination
-				who = ROOT
+			set_character_flag = divination
+			any_vassal = {
+				limit = { 
+					has_character_flag = attending_divination
+					NOT = { trait = cynical }
+				}
+				opinion = {
+					modifier = opinion_held_bad_divination
+					who = ROOT
+				}
 			}
 		}
 	}
@@ -1986,20 +2132,26 @@ character_event = {
 	
 	option = {
 		name = EVTOPTAancrel.0066
-		piety = -50
-		hidden_tooltip = {
-			any_vassal = {
-				limit = { has_character_flag = attending_divination }
-				character_event = { id = ancrel.0071 }
+		custom_tooltip = {
+			text = divination_bad
+			piety = -50
+			hidden_tooltip = {
+				any_vassal = {
+					limit = { has_character_flag = attending_divination }
+					character_event = { id = ancrel.0071 }
+				}
+				character_event = { id = ancrel.0062 days = 1 }
 			}
-			character_event = { id = ancrel.0062 days = 1 }
-		}
-		set_character_flag = divination
-		any_vassal = {
-			limit = { has_character_flag = attending_divination }
-			opinion = {
-				modifier = opinion_held_divination
-				who = ROOT
+			set_character_flag = divination
+			any_vassal = {
+				limit = { 
+					has_character_flag = attending_divination
+					NOT = { trait = cynical }
+				}
+				opinion = {
+					modifier = opinion_held_bad_divination
+					who = ROOT
+				}
 			}
 		}
 	}

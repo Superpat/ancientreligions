@@ -107,7 +107,7 @@ character_event = {
 	}
 }
 
-# Ruler has died, the Aonach is over
+#[on_death] Ruler has died, the Aonach is over
 character_event = {
 	id = ancrel.1194
 	title = TAILTEANNTITLE
@@ -236,7 +236,7 @@ character_event = {
 		custom_tooltip = {
 			text = honor_dead_tailteann
 			hidden_tooltip = { 
-				character_event = { id = ancrel.1197 days = 2 } 
+				narrative_event = { id = ancrel.1197 days = 2 }
 			}
 		}
 	}
@@ -252,7 +252,7 @@ character_event = {
 		custom_tooltip = {
 			text = honor_dead_tailteann
 			hidden_tooltip = { 
-				character_event = { id = ancrel.1198 days = 2 } 
+				narrative_event = { id = ancrel.1198 days = 2 }
 			}
 		}
 	}
@@ -487,7 +487,7 @@ character_event = {
 			add_character_modifier = {
 					name = favored_birds
 					duration = 3650
-				}
+			}
 			hidden_tooltip = {
 				clr_character_flag = tailteann_death_ruler
 				clr_character_flag = tailteann_death_phase
@@ -655,10 +655,6 @@ character_event = {
 			set_character_flag = tailteann_game_phase
 			character_event = { id = ancrel.1251 }
 		}
-		add_character_modifier = {
-			name = favored_warriors
-			duration = 10
-		}
 	}
 }
 
@@ -677,10 +673,6 @@ character_event = {
 			clr_character_flag = tailteann_law_phase
 			set_character_flag = tailteann_game_phase
 			character_event = { id = ancrel.1251 }
-		}
-		add_character_modifier = {
-			name = favored_druids
-			duration = 10
 		}
 	}
 }
@@ -701,10 +693,6 @@ character_event = {
 			set_character_flag = tailteann_game_phase
 			character_event = { id = ancrel.1251 }
 		}
-		add_character_modifier = {
-			name = favored_merchants
-			duration = 10
-		}
 	}
 }
 
@@ -723,10 +711,6 @@ character_event = {
 			clr_character_flag = tailteann_law_phase
 			set_character_flag = tailteann_game_phase
 			character_event = { id = ancrel.1251 }
-		}
-		add_character_modifier = {
-			name = favored_balance
-			duration = 10
 		}
 	}
 }
@@ -747,10 +731,6 @@ character_event = {
 			set_character_flag = tailteann_game_phase
 			character_event = { id = ancrel.1251 }
 		}
-		add_character_modifier = {
-			name = favored_fianna
-			duration = 10
-		}
 	}
 }
 
@@ -770,10 +750,6 @@ character_event = {
 			set_character_flag = tailteann_game_phase
 			character_event = { id = ancrel.1251 }
 		}
-		add_character_modifier = {
-			name = favored_crown
-			duration = 10
-		}
 	}
 }
 
@@ -792,10 +768,6 @@ character_event = {
 			clr_character_flag = tailteann_law_phase
 			set_character_flag = tailteann_game_phase
 			character_event = { id = ancrel.1251 }
-		}
-		add_character_modifier = {
-			name = favored_birds
-			duration = 10
 		}
 	}
 }
@@ -985,18 +957,6 @@ character_event = {
 		modifier = {
 			factor = 0.75
 			trait = head2
-		}
-		modifier = {
-			factor = 0.75
-			trait = head3
-		}
-		modifier = {
-			factor = 0.75
-			trait = head4
-		}
-		modifier = {
-			factor = 0.75
-			trait = head5
 		}
 		modifier = {
 			factor = 1.25

@@ -3,18 +3,18 @@
 # ANCIENT RELIGIONS
 # - Events to trace ancestry to ancient heroes
 #
-# Event ID ancrel.10000 - ancrel.10020 reserved
+# Event ID ancrel.3000 - ancrel.3050 reserved
 #
 ###################################################
 
-# Written by Adam 'theStormWeaver/la_xirsoi' Chevalier
+# Written by Adam 'theStormWeaver/xirsoi' Chevalier
 
 namespace = ancrel
 
 # Studied the epic poems
 character_event = {
-	id = ancrel.10000
-	desc = EVTDESCancrel.10000
+	id = ancrel.3000
+	desc = EVTDESCancrel.3000
 	picture = GFX_evt_library
 	border = GFX_event_normal_frame_religion
 	
@@ -27,22 +27,11 @@ character_event = {
 		
 		learning = 6
 		religion = hellenic_pagan
-		higher_tier_than = COUNT # Dukes or higher only
 		NOT = { has_character_flag = flag_studied_the_classics }
-		NOT = { # No one who already claims epic heritage
-			OR { 
-				trait = descendant_of_aeneas
-				trait = descendant_of_hector
-				trait = descendant_of_paris
-				trait = descendant_of_achilles
-				trait = descendant_of_odysseus
-				trait = descendant_of_nestor
-			}
-		}
 	}
 	
 	mean_time_to_happen = {
-		years = 10 # this should be fairly rare
+		years = 20 # this should be fairly rare
 		
 		modifier = {
 			factor = 1.25
@@ -57,15 +46,15 @@ character_event = {
 			trait = slothful
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.9
 			trait = proud
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.9
 			trait = ambitious
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.9
 			OR = {
 				trait = mastermind_theologian
 				trait = scholarly_theologian
@@ -74,7 +63,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.9
 			OR = {
 				trait = zealous
 				trait = cynical
@@ -88,16 +77,18 @@ character_event = {
 	
 	# Decide to emulate one of the epic heroes
 	option = {
-		name = EVTOPTAancrel.10000
+		name = EVTOPTAancrel.3000
 		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 0.75
 				NOT = { 
 					OR = {
-						culture = greek
 						culture = italian
 						culture = roman	
+						culture = byzantine_group
+						culture = italian_group # SwMH
+						culture = sicilian_group # SWMH
 					}
 				}
 			}
@@ -117,21 +108,20 @@ character_event = {
 				religion_authority = 0.75
 			}
 		}
-		character_event = { id = ancrel.10001 }
+		character_event = { id = ancrel.3001 }
 	}
 	# Be boring and just let it go
 	option = {
-		name = EVTOPTBancrel.10000
+		name = EVTOPTBancrel.3000
 		ai_chance = { factor = 50 }
-		option = { name = NO }
 	}
 }
 
 # You've decided to emulate an epic hero, but which one?
 # A Greek or Trojan hero?
 character_event = {
-	id = ancrel.10001
-	desc = EVTDESCancrel.10001
+	id = ancrel.3001
+	desc = EVTDESCancrel.3001
 	picture = GFX_evt_roman_temple
 	border = GFX_event_normal_frame_religion
 	
@@ -140,31 +130,34 @@ character_event = {
 	
 	# Greek
 	option = {
-		name = EVTOPTAancrel.10001
+		name = EVTOPTAancrel.3001
 		ai_chance = {
 			factor = 50
 			modifier = {
-				factor = 1.5
+				factor = 2.0
 				culture = greek
+				culture = sicilian_group # SWMH
 			}
 			modifier = {
-				factor = 0.5
+				factor = 0.50
 				culture = roman
+				culture_group = latin_group
+				culture_group = italian_group # SWMH
 			}
 		}
-		character_event = { id = ancrel.10002 }
+		character_event = { id = ancrel.3002 }
 	}
 	# Trojan
 	option = {
-		name = EVTOPTBancrel.10001
-		character_event = { id = ancrel.10003 }
+		name = EVTOPTBancrel.3001
+		character_event = { id = ancrel.3003 }
 	}
 }
 
 # Emulating a Greek Hero
 character_event = {
-	id = ancrel.10002
-	desc = EVTDESCancrel.10002
+	id = ancrel.3002
+	desc = EVTDESCancrel.3002
 	picture = GFX_evt_roman_temple
 	border = GFX_event_normal_frame_religion
 	
@@ -173,7 +166,7 @@ character_event = {
 	
 	#Achilles
 	option = {
-		name = EVTOPTAancrel.10002
+		name = EVTOPTAancrel.3002
 		ai_chance = {
 			factor = 34
 			modifier = {
@@ -190,14 +183,20 @@ character_event = {
 					trait = content
 				}
 			}
+			modifier = {
+				factor = 0.01
+				OR = {
+					culture_group = latin_group
+					culture = italian_group # SWMH
+					culture = roman
+				}
+			}
 		}
-		immediate = {
-			add_character_modifier = emulating_achilles
-		}		
+		add_character_modifier = emulating_achilles
 	}
 	#Odysseus
 	option = {
-		name = EVTOPTBancrel.10002
+		name = EVTOPTBancrel.3002
 		ai_chance = {
 			factor = 33
 			modifier = {
@@ -208,13 +207,11 @@ character_event = {
 				}
 			}
 		}
-		immediate = {
-			add_character_modifier = emulating_odysseus
-		}
+		add_character_modifier = emulating_odysseus
 	}
 	#Nestor
 	option = {
-		name = EVTOPTCancrel.10002
+		name = EVTOPTCancrel.3002
 		ai_chance = {
 			factor = 33
 			modifier = {
@@ -225,16 +222,14 @@ character_event = {
 				}
 			}
 		}
-		immediate = {
-			add_character_modifier = emulating_nestor
-		}
+		add_character_modifier = emulating_nestor
 	}
 }
 
 # Emulating a Trojan Hero
 character_event = {
-	id = ancrel.10003
-	desc = EVTDESCancrel.10003
+	id = ancrel.3003
+	desc = EVTDESCancrel.3003
 	picture = GFX_evt_roman_temple
 	border = GFX_event_normal_frame_religion
 	
@@ -243,11 +238,11 @@ character_event = {
 	
 	#Hector
 	option = {
-		name = EVTOPTAancrel.10003
+		name = EVTOPTAancrel.3003
 		ai_chance = {
 			factor = 34
 			modifier = {
-				factor = 1.5
+				factor = 2.0
 				OR = {
 					trait = brilliant_strategist
 					trait = skilled_tactician
@@ -262,13 +257,11 @@ character_event = {
 				}
 			}
 		}
-		immediate = {
-			add_character_modifier = emulating_hector
-		}		
+		add_character_modifier = emulating_hector
 	}
-	# Aeneas
+	#Aeneas
 	option = {
-		name = EVTOPTBancrel.10003
+		name = EVTOPTBancrel.3003
 		ai_chance = {
 			factor = 33
 			modifier = {
@@ -278,14 +271,20 @@ character_event = {
 					trait = fortune_builder
 				}
 			}
+			modifier = {
+				factor = 1.5
+				OR = { # Romans really liked Aeneas
+					culture = roman
+					culture_group = latin_group
+					culture_group = italian_group #SWMH
+				}
+			}
 		}
-		immediate = {
-			add_character_modifier = emulating_aeneas
-		}
+		add_character_modifier = emulating_aeneas
 	}
 	#Paris
 	option = {
-		name = EVTOPTCancrel.10003
+		name = EVTOPTCancrel.3003
 		ai_chance = {
 			factor = 33
 			modifier = {
@@ -296,14 +295,248 @@ character_event = {
 				}
 			}
 			modifier = {
-				factor 1.5
+
+				factor = 1.5
 				trait = lustful
 			}
+			modifier = {
+				factor = 1.25
+				trait = proud
+			}
+			modifier = {
+				factor = 1.25
+				trait = attractive
+			}
+			modifier = {
+				factor = 0.75
+				trait = humble
+			}
 		}
-		immediate = {
-			add_character_modifier = emulating_paris
-		}
+		add_character_modifier = emulating_paris
 	}
 }
 
-# 
+#Legitimate Child born to a reborn hero
+character_event = {
+	id = ancrel.3004
+	is_triggered_only = yes
+	desc = EVTDESCancrel.3004
+	picture = GFX_evt_roman_temple
+	border = GFX_event_normal_frame_religion	
+
+	trigger = {
+   		OR = {
+    		mother = {
+    			OR = {
+        			trait = achilles_reborn
+	        		trait = odysseus_reborn
+    	    		trait = nestor_reborn
+
+	        		trait = hector_reborn
+    	    		trait = aeneas_reborn
+        			trait = paris_reborn    		
+        		}
+      		}
+      		father_even_if_dead = {
+        		OR = {
+	        		trait = achilles_reborn
+    	    		trait = odysseus_reborn
+        			trait = nestor_reborn
+				
+					trait = hector_reborn
+        			trait = aeneas_reborn
+        			trait = paris_reborn
+        		}
+        	}
+   		}
+   	}
+
+  	option = {
+  		name = OK
+  		trigger = {
+  			OR = {
+  				mother = {
+  					trait = achilles_reborn
+  				}
+  				father_even_if_dead = {
+  					trait = achilles_reborn
+  				}
+  			}
+  		}
+
+  		add_trait = descendant_of_achilles
+   	}
+   	option = {
+  		name = OK
+  		trigger = {
+  			OR = {
+  				mother = {
+  					trait = odysseus_reborn
+  				}
+  				father_even_if_dead = {
+  					trait = odysseus_reborn
+  				}
+  			}
+  		}
+
+  		add_trait = descendant_of_odysseus
+   	}
+	option = {
+  		name = OK
+  		trigger = {
+  			OR = {
+  				mother = {
+  					trait = nestor_reborn
+  				}
+  				father_even_if_dead = {
+  					trait = nestor_reborn
+  				}
+  			}
+  		}
+
+  		add_trait = descendant_of_nestor
+   	}
+	option = {
+  		name = OK
+  		trigger = {
+  			OR = {
+  				mother = {
+  					trait = hector_reborn
+  				}
+  				father_even_if_dead = {
+  					trait = hector_reborn
+  				}
+  			}
+  		}
+
+  		add_trait = descendant_of_hector
+   	}
+	option = {
+  		name = OK
+  		trigger = {
+  			OR = {
+  				mother = {
+  					trait = aeneas_reborn
+  				}
+  				father_even_if_dead = {
+  					trait = aeneas_reborn
+  				}
+  			}
+  		}
+
+  		add_trait = descendant_of_aeneas
+   	}	
+   	option = {
+  		name = OK
+  		trigger = {
+  			OR = {
+  				mother = {
+  					trait = paris_reborn
+  				}
+  				father_even_if_dead = {
+  					trait = paris_reborn
+  				}
+  			}
+  		}
+
+  		add_trait = descendant_of_paris
+   	}
+}
+
+#Someone emulating a hero has achieved all 5 personal legend events
+character_event = {
+	id = ancrel.3005
+	desc = EVTDESCancrel.3005
+	picture = GFX_evt_roman_temple
+	border = GFX_event_normal_frame_religion
+
+	capable_only = yes
+
+	trigger = {
+		has_dlc = "The Old Gods"
+		AND = {
+			has_character_flag = personal_legend_5
+			has_character_flag = personal_legend_4
+			has_character_flag = personal_legend_3
+			has_character_flag = personal_legend_2
+			has_character_flag = personal_legend_1			
+		}
+		OR = { # must be emulating a hero
+			has_character_modifier = emulating_paris
+			has_character_modifier = emulating_aeneas
+			has_character_modifier = emulating_hector
+
+			has_character_modifier = emulating_nestor
+			has_character_modifier = emulating_odysseus
+			has_character_modifier = emulating_achilles
+		}
+		NOT = { #cannot already claim epic blood
+			has_trait = descendant_of_hector
+			has_trait = descendant_of_aeneas
+			has_trait = descendant_of_paris
+
+			has_trait = descendant_of_achilles
+			has_trait = descendant_of_odysseus
+			has_trait = descendant_of_nestor
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = OK
+		trigger = {
+			has_character_modifier = emulating_paris
+		}
+
+		add_trait = paris_reborn
+		remove_character_modifier = emulating_paris
+	}
+	option = {
+		name = OK
+		trigger = {
+			has_character_modifier = emulating_aeneas
+		}
+
+		add_trait = aeneas_reborn
+		remove_character_modifier = emulating_aeneas		
+	}
+	option = {
+		name = OK
+		trigger = {
+			has_character_modifier = emulating_hector
+		}
+
+		add_trait = hector_reborn
+		remove_character_modifier = emulating_hector
+	}
+	option = {
+		name = OK
+		trigger = {
+			has_character_modifier = emulating_nestor
+		}
+
+		add_trait = nestor_reborn
+		remove_character_modifier = emulating_nestor		
+	}
+	option = {
+		name = OK
+		trigger = {
+			has_character_modifier = emulating_odysseus
+		}
+
+		add_trait = odysseus_reborn
+		remove_character_modifier = emulating_odysseus		
+	}
+	option = {
+		name = OK
+		trigger = {
+			has_character_modifier = emulating_achilles
+		}
+
+		add_trait = achilles_reborn
+		remove_character_modifier = emulating_achilles
+	}	
+}

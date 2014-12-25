@@ -196,17 +196,13 @@ decisions = {
 			# Specific Lock outs. Don't want the option to appear for someone who can only go pagan to their current religion
 #			NOT = {	
 #				AND = {
-#					OR = {
-#						religion = egyptian_pagan
-#					}
+#					religion = egyptian_pagan
 #					culture = egyptian_arabic
 #				}
 #			}
 			NOT = {	
 				AND = {
-					OR = {
-						religion = hellenic_pagan
-					}
+					religion = hellenic_pagan
 					OR = {
 						culture = roman
 						culture = greek
@@ -324,15 +320,11 @@ decisions = {
 									ROOT = { culture_group = judaic }
 								}
 #								AND = { 
-#									OR = {
-#										religion = egyptian_pagan
-#									}
+#									religion = egyptian_pagan
 #									ROOT = { culture = egyptian_arabic }
 #								}
 								AND = {
-									OR = {
-										religion = hellenic_pagan
-									}
+									religion = hellenic_pagan
 									ROOT = {
 										OR = {
 											culture = roman

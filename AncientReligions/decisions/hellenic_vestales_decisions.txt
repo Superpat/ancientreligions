@@ -46,7 +46,7 @@ vassal_decisions = {
 				factor = 0
 				OR = {
 					is_primary_heir = FROM
-					is_pretender = FROM
+					FROM = { is_pretender = yes }
 				}
 			}
 			modifier = {

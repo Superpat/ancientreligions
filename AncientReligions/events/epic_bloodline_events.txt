@@ -86,7 +86,7 @@ character_event = {
 					OR = {
 						culture = italian
 						culture = roman	
-						culture = byzantine_group
+						culture = greek
 						culture = italian_group # SwMH
 						culture = sicilian_group # SWMH
 					}
@@ -217,7 +217,7 @@ character_event = {
 			modifier = {
 				factor = 1.5
 				OR = {
-					trait = grey_emminence
+					trait = gray_emminence
 					trait = charismatic_negotiator
 				}
 			}
@@ -267,7 +267,7 @@ character_event = {
 			modifier = {
 				factor = 1.5
 				OR = {
-					trait = midas_touch
+					trait = midas_touched
 					trait = fortune_builder
 				}
 			}
@@ -290,7 +290,7 @@ character_event = {
 			modifier = {
 				factor = 1.25
 				OR = {
-					trait = grey_emminence
+					trait = gray_emminence
 					trait = charismatic_negotiator
 				}
 			}
@@ -302,10 +302,6 @@ character_event = {
 			modifier = {
 				factor = 1.25
 				trait = proud
-			}
-			modifier = {
-				factor = 1.25
-				trait = attractive
 			}
 			modifier = {
 				factor = 0.75
@@ -454,13 +450,13 @@ character_event = {
 
 	trigger = {
 		has_dlc = "The Old Gods"
-		AND = {
-			has_character_flag = personal_legend_5
-			has_character_flag = personal_legend_4
-			has_character_flag = personal_legend_3
-			has_character_flag = personal_legend_2
-			has_character_flag = personal_legend_1			
-		}
+
+		has_character_flag = personal_legend_5
+		has_character_flag = personal_legend_4
+		has_character_flag = personal_legend_3
+		has_character_flag = personal_legend_2
+		has_character_flag = personal_legend_1
+
 		OR = { # must be emulating a hero
 			has_character_modifier = emulating_paris
 			has_character_modifier = emulating_aeneas
@@ -471,13 +467,13 @@ character_event = {
 			has_character_modifier = emulating_achilles
 		}
 		NOT = { #cannot already claim epic blood
-			has_trait = descendant_of_hector
-			has_trait = descendant_of_aeneas
-			has_trait = descendant_of_paris
+			trait = descendant_of_hector
+			trait = descendant_of_aeneas
+			trait = descendant_of_paris
 
-			has_trait = descendant_of_achilles
-			has_trait = descendant_of_odysseus
-			has_trait = descendant_of_nestor
+			trait = descendant_of_achilles
+			trait = descendant_of_odysseus
+			trait = descendant_of_nestor
 		}
 	}
 

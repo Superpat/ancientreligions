@@ -453,8 +453,8 @@ character_event = {
 # Y Mab Darogan
 narrative_event = {
 	id = ancrel.0256
-	title = "EVTNAMEancrel.0256"
-	desc = "EVTDESCancrel.0256"
+	title = EVTNAMEancrel.0256
+	desc = EVTDESCancrel.0256
 	picture = GFX_event_y_mab_darogan
 	
 	only_rulers = yes

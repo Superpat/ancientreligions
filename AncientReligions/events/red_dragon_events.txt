@@ -1,3 +1,5 @@
+namespace = ancrel
+
 # The son of a ruler volunteers to join the Red Dragons
 character_event = {
 	id = ancrel.1320
@@ -407,7 +409,7 @@ province_event = {
 	}
 	
 	option = {
-		name =  EVTOPTAancrel.1328
+		name =  OK
 		build_holding = {
 		   type = castle
 		   holder = FROMFROM
@@ -468,7 +470,7 @@ letter_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name =  EVTOPTBancrel.1330
+		name =  EVTOPTAancrel.1330
 	}
 }
 
@@ -495,7 +497,7 @@ character_event = {
 			modifier = opinion_generous_donation
 		}
 	}
-	
+
 	option = {
 		name = OK
 	}

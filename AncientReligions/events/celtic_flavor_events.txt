@@ -326,7 +326,6 @@ character_event = {
 	picture = GFX_evt_whispering_in_ear
 	border = GFX_event_normal_frame_religion
 
-	ai = no
 	min_age = 16
 	prisoner = no
 

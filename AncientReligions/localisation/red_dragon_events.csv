@@ -1,0 +1,30 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+;;;;;;;;;;;;
+d_red_dragons;Red Dragon Knights;;;;;;;;;;;;;x
+donate_money_to_red_dragons;Donate money to the Red Dragon Knights;FRENCH;GERMAN;SPANISH;;;;;;;;;;;x
+donate_money_to_red_dragons_desc;I can donate money to the Red Dragon Knights in exchange for Piety and lifelong respect from the [Root.Religion.GetName] Church.;;;;;;;;;;;;;;x
+expel_red_dragons;Expel the Red Dragons from your Realm;;;;;;;;;;;;;x
+expel_red_dragons_desc;Throw the Red Dragons out of your realm and seize their holdings.;;;;;;;;;;;;;x
+expelled_d_red_dragons;Expelled the Red Dragon Knights;;;;;;;;;;;;;;x
+celtic_knight;Dragon;Dragon;;;;;;;;;;;;x
+celtic_knight_desc;This character is a veteran of the Red Dragon Knights.;;;;;;;;;;;;;x
+EVTDESCancrel.1320;You've decided you wish to join the Red Dragon Knights. But do you dare ask your liege for permission?;;;;;;;;;;;;;x
+EVTOPTAancrel.1320;Yes!;;;;;;;;;;;;;x
+EVTOPTBancrel.1320;This seems like a bad idea...;;;;;;;;;;;;;x
+EVTDESCancrel.1321;Your son, [From.GetTitledFirstName], has decided to join with the Sons of Gwydion and seek his fortune at their side! Although he will no doubt gain both riches and valuable battle experience in service of the druids, there will be many perils that could well cost him his life.;;;;;;;;;;;;;x
+EVTOPTAancrel.1321;I will not allow it!;Je ne permettrai pas !;Das werde ich nicht erlauben!;;¡No lo permitiré!;;;;;;;;;x
+EVTOPTBancrel.1321;Go to the Dragons and make me proud, son.;;;;;;;;;;;;;x
+EVTTOOLTIPancrel.1322;[From.GetFirstName] joins The Red Dragon Knights.;;;;;;;;;;;;;x
+EVTTOOLTIPancrel.1323;[From.GetFirstName] is dissapointed...;;;;;;;;;;;;;x
+EVTDESCancrel.1322;[From.GetTitledFirstName] has granted your request to join The Red Dragon Knights!;;;;;;;;;;;;;x
+EVTDESCancrel.1323;[From.GetTitledFirstName] has denied your request to join The Red Dragon Knights!;;;;;;;;;;;;;x
+EVTOPTAancrel.1323;That bastard!;;;;;;;;;;;;;x
+EVTDESCancrel.1327;[From.GetTitledFirstName] has requested permission to build a castle in your province of [FromFrom.County.GetName] so that his warriors might better protect the Druidic lands against its enemies. What say you?;;;;;;;;;;;;;x
+EVTOPTAancrel.1327;The [From.GetPrimaryTitle.GetFOA] may have his castle.;;;;;;;;;;;;;x
+EVTOPTBancrel.1327;Land doesn't come cheap, get your own!;;;;;;;;;;;;;x
+EVTDESCancrel.1328;[From.GetTitledFirstName] has permitted The Red Dragon Knights to construct a castle in [County.GetName].;;;;;;;;;;;;;x
+EVTDESCancrel.1329;[From.GetTitledFirstName] has expelled The Red Dragon Knights from [From.PrimaryTitle.GetFullBaseName]!;;;;;;;;;;;;;x
+EVTDESCancrel.1330;The Red Dragon Knights have been expelled from [PrimaryTitle.GetFullBaseName] and all of their lands handed over to you.;;;;;;;;;;;;;x
+EVTOPTAancrel.1330;Good riddance!;;;;;;;;;;;;;x
+EVTDESCancrel.1331;[From.GetTitledFirstName] has sent a generous donation to your order, to help you in the fight against the infidels!;;;;;;;;;;;;;x
+EVTDESCancrel.1332;[From.GetTitledFirstName] has graciously accepted your donation and has assured you it will be put to good use.;;;;;;;;;;;;;x

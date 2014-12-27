@@ -18,17 +18,17 @@ character_event = {
 		has_lover = yes
 
 		NOT = { #can't be ugly, fat, or have bad genetic traits
-			has_trait = ugly
-			has_trait = inbred
-			has_trait = slow
-			has_trait = fat
+			trait = ugly
+			trait = inbred
+			trait = slow
+			trait = fat
 
-			has_character_modifier = personal_legend_5
+			has_character_flag = personal_legend_5
 		}
 	}
 
 	mean_time_to_happen = {
-		years = 50		# ~32 years with all below modifiers (attractive, lustful, hedonist under the age of 30)
+		years = 50		# ~40 years with all below modifiers (lustful, hedonist under the age of 30)
 
 		modifier = {
 			factor = 0.95
@@ -50,11 +50,7 @@ character_event = {
 		}
 		modifier = {
 			factor = 0.90
-			has_trait = attractive
-		}
-		modifier = {
-			factor = 0.90
-			has_trait = lustful
+			trait = lustful
 		}
 		modifier = {
 			factor = 0.90
@@ -77,7 +73,7 @@ character_event = {
 	desc = EVTDESCancrel.3011
 	picture = GFX_evt_roman_temple
 	border = GFX_event_normal_frame_religion
-	triggered_only = yes
+	is_triggered_only = yes
 	capable_only = yes
 	
 	always = no #disabled for now
@@ -140,7 +136,7 @@ character_event = {
 		}
 		modifier = {
 			factor = 0.95
-			has_trait = grey_emminence
+			trait = grey_emminence
 		}
 		modifier = {
 			factor = 0.95
@@ -190,7 +186,7 @@ character_event = {
 	picture = GFX_evt_roman_temple
 	border = GFX_event_normal_frame_religion
 
-	triggered_only = yes
+	is_triggered_only = yes
 	capable_only = yes
 	always = no #disabled for now
 	trigger = {
@@ -216,12 +212,12 @@ character_event = {
 
 #Your Hector-ish bravery is plainly seen while defending your land against an enemy army
 character_event = {
-	id = ancrel.3013
+	id = ancrel.3014
 	desc = EVTDESCancrel.3013
 	picture = GFX_evt_roman_temple
 	border = GFX_event_normal_frame_religion
 	always = no #disabled for now
-	triggered_only = yes
+	is_triggered_only = yes
 	capable_only = yes
 
 	trigger = {

@@ -116,7 +116,6 @@ celtic_knight = {
 	customizer = no
 	
 	cannot_inherit = yes
-	cannot_marry = yes
 	
 	sex_appeal_opinion = 5
 	fertility = 15.0
@@ -126,6 +125,21 @@ celtic_knight = {
 		morale_offence = 0.1
 		defence = 0.1
 	}
+}
+
+wolf = {
+	potential = {
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+	}
+	martial = 2
+	prestige = 0.15
+
+	same_opinion = 20
+
+	cannot_inherit = yes
 }
 
 learning_druidic_arts = {

@@ -75,7 +75,6 @@ character_event = {
 	}
 }
 
-# Son has served a few years
 character_event = {
 	id = ancrel.0118
 	hide_window = yes

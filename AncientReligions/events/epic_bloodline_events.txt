@@ -217,7 +217,7 @@ character_event = {
 			modifier = {
 				factor = 1.5
 				OR = {
-					trait = gray_emminence
+					trait = grey_eminence
 					trait = charismatic_negotiator
 				}
 			}
@@ -290,7 +290,7 @@ character_event = {
 			modifier = {
 				factor = 1.25
 				OR = {
-					trait = gray_emminence
+					trait = grey_eminence
 					trait = charismatic_negotiator
 				}
 			}

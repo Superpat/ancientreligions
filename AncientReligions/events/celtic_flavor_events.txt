@@ -3,7 +3,7 @@
 # ANCIENT RELIGIONS
 # - Celtic Flavor Events
 #
-# Event ID ancrel.0150 - 0151, ancrel.1252 - 1253 and ancrel.0208 - 0210
+# Event ID ancrel.0150 - 0151, ancrel.1252 - 1253 and ancrel.0208 - 0256
 #
 ###################################
 
@@ -445,9 +445,71 @@ character_event = {
 
 ########################################
 #
+# - First Celtic Province, Wolf Tails founded
+#
+########################################
+
+province_event = {
+	id = ancrel.0211
+	desc = EVTDESCancrel.0211
+	picture = GFX_evt_celtic_warriors
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		OR = {
+			religion = druidic
+		}
+		NOT = { has_global_flag = wolftails_founded }
+	}
+	
+	immediate = {
+		set_global_flag = wolftails_founded
+		activate_title = { title = d_wolftails status = yes }
+		hidden_tooltip = {
+			narrative_event = { id = ancrel.0212 }
+			create_character = {
+				random_traits = yes
+				religion = druidic
+				culture = welsh
+				dynasty = random
+				female = no
+				age = 34
+				trait = skilled_tactician
+			}
+			new_character = {
+				d_gwydion = {
+					grant_title = PREV
+				}
+			}
+		}
+	}
+			
+	option = {
+		name = OK
+	}
+}
+
+narrative_event = {
+	id = ancrel.0212
+	desc = EVTDESCancrel.0212
+	picture = GFX_evt_celtic_warriors
+	border = GFX_event_normal_frame_war
+
+	is_triggered_only = yes
+
+	trigger = {
+	
+	}
+}
+
+########################################
+#
 # - First Celtic Emperor
 #
-#######################################
+########################################
 
 # Y Mab Darogan
 narrative_event = {
@@ -483,12 +545,35 @@ narrative_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-	
-	option = {
-		name = EVTOPTAancrel.0256 #Ok
+	immediate = {
 		give_nickname = nick_pendragon
 		set_character_flag = first_brythonic_emperor
 		prestige = 200
 		piety = 100
+	}
+	option = {
+		trigger = {
+			OR = {
+				religion = druidic
+				religion = druidic_reformed
+			}
+		}
+		name = EVTOPTAancrel.0256 #Ok
+	}
+	option = {
+		trigger = {
+			OR = {
+				religion_group = christian
+				religion_group = muslim
+				religion_group = zoroastrian_group
+			}
+		}
+		name = EVTOPTBancrel.0256
+	}
+	option = {
+		trigger = {
+			religion_group = indian
+		}
+		name = EVTOPTCancrel.0256
 	}
 }

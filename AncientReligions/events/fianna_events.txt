@@ -876,7 +876,7 @@ character_event = {
 	}
 }
 
-#[on_reform_religion] Fianna Reforms
+#[on_reform_religion] Celtic Orders and Merc Companies Reform
 character_event = {
 	id = ancrel.0009
 	hide_window = yes
@@ -897,8 +897,15 @@ character_event = {
 			holder_scope = {
 				religion = druidic_reformed
 			}
+		}		
+		d_wolftails = {
+			religion = druidic_reformed
+			holder_scope = {
+				religion = druidic_reformed
+			}
 		}
 		set_global_flag = fianna_reformed
+
 	}
 		
 	option = {

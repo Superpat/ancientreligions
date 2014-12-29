@@ -508,3 +508,11 @@ on_assassination_disc = {
 		25  = ancrel.3011 # discovered, but your ingenious plan has made you famous!
 	}
 }
+
+# When the religion changes in a county
+on_county_religion_change = {
+	events = {
+		SoA.4121
+		ancrel.0211 # Wolf Tails founded with first Celtic Pagan province
+	}
+}

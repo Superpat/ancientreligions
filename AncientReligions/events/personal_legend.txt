@@ -7,10 +7,9 @@ character_event = {
 
 	capable_only = yes
 	prisoner = no
-	
-	always = no #disabled for now
 
 	trigger = {
+		always = no #disabled for now	
 		has_dlc = "The Old Gods"
 		has_character_modifier = emulating_paris
 		religion = hellenic_pagan
@@ -74,11 +73,10 @@ character_event = {
 	picture = GFX_evt_roman_temple
 	border = GFX_event_normal_frame_religion
 	is_triggered_only = yes
-	capable_only = yes
-	
-	always = no #disabled for now
+	capable_only = yes	
 	
 	trigger = {
+		always = no #disabled for now
 		has_dlc = "The Old Gods"
 		has_character_modifier = emulating_odysseus
 		religion = hellenic_pagan
@@ -108,8 +106,9 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 
 	capable_only = yes
-	always = no #disabled for now
+	
 	trigger = {
+		always = no #disabled for now
 		has_dlc = "The Old Gods"
 		has_character_modifier = emulating_nestor
 		religion = hellenic_pagan
@@ -120,7 +119,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		years = 50	# ~27 years with all below modifiers (65+ year old grey emminence with 26+ Diplo)
+		years = 50	# ~27 years with all below modifiers (65+ year old grey eminence with 26+ Diplo)
 
 		modifier = {
 			factor = 0.95
@@ -136,7 +135,7 @@ character_event = {
 		}
 		modifier = {
 			factor = 0.95
-			trait = grey_emminence
+			trait = grey_eminence
 		}
 		modifier = {
 			factor = 0.95
@@ -188,8 +187,9 @@ character_event = {
 
 	is_triggered_only = yes
 	capable_only = yes
-	always = no #disabled for now
+	
 	trigger = {
+		always = no #disabled for now
 		has_dlc = "The Old Gods"
 		has_character_modifier = emulating_achilles
 		religion = hellenic_pagan

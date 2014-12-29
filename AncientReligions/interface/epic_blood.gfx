@@ -1,4 +1,4 @@
-spriteTypes {
+spriteTypes = {
 	# Reborn Traits
 	spriteType = {
  		name = "GFX_trait_aeneas_reborn"

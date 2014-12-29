@@ -37,6 +37,40 @@ d_wolftails = {
 	mercenary_type = wolftails_composition
 }
 
+d_gwydion = {
+	color={ 75 70 0 }
+	color2={ 255 260 255 }
+
+	capital = 64
+	
+	# Hire Trigger
+	allow = {
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+	}
+	
+	# Parent Religion 
+	religion = druidic
+	culture = welsh
+	
+	mercenary = yes
+
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+
+	# Always exists
+	landless = yes
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	strength_growth_per_century = 0.10
+
+	mercenary_type = gwydion_composition
+}
+
 # HOLY ORDERS
 
 d_red_dragons = {
@@ -65,6 +99,10 @@ d_red_dragons = {
 	primary = yes
 
 	mercenary_type = red_dragons_composition
+
+	strength_growth_per_century = 1.0	
+
+	dyanstic_title_names = no	
 }
 
 d_fianna = {
@@ -92,7 +130,11 @@ d_fianna = {
 	# Cannot be held as a secondary title
 	primary = yes
 
+	strength_growth_per_century = 0.1
+
 	mercenary_type = fianna_composition
+
+	dyanstic_title_names = no
 }
 
 # Pagan heads of religion

@@ -116,58 +116,57 @@ decisions = {
 			}
 		}
 	}
-#	organize_gwydion = {
-#		is_high_prio = yes
-#		potential = {
-#			OR = {
-#				tier = duke
-#				tier = king
-#				tier = emperor
-#			}
-#			OR = {
-#				religion = druidic
-#				religion = druidic_reformed
-#
-#			}
-#			prisoner = no
-#			age = 16
-#			NOT = { has_global_flag = gwydion_founded }
-#		}
-#		allow = {
-#			OR = {
-#				tier = king
-#				tier = emperor
-#			}
-#			prestige = 300
-#			wealth = 300
-#		}
-#		effect = {
-#			set_global_flag = gwydion_founded
-#			prestige = -300
-#			wealth = -300
-#			activate_title = { title = d_gwydion status = yes }
-#			hidden_tooltip = {
-#				narrative_event = { id = ancrel.0110 }
-#				create_character = {
-#					random_traits = yes
-#					religion = druidic
-#					culture = ROOT
-#					dynasty = NONE
-#					female = no
-#					age = 34
-#					trait = skilled_tactician
-#				}
-#				new_character = {
-#					d_gwydion = {
-#						grant_title = PREV
-#					}
-#				}
-#			}
-#		}
-#		ai_will_do = {
-#			factor = 1
-#		}
-#	}
+	organize_gwydion = {
+		is_high_prio = yes
+		potential = {
+			OR = {
+				tier = duke
+				tier = king
+				tier = emperor
+			}
+			
+			religion = druidic_reformed
+
+			prisoner = no
+			age = 16
+			NOT = { has_global_flag = gwydion_founded }
+		}
+		allow = {
+			OR = {
+				tier = king
+				tier = emperor
+			}
+			prestige = 300
+			wealth = 300
+		}
+		effect = {
+			set_global_flag = gwydion_founded
+			prestige = -300
+			wealth = -300
+			activate_title = { title = d_gwydion status = yes }
+			hidden_tooltip = {
+				narrative_event = { id = ancrel.0110 }
+				create_character = {
+					random_traits = yes
+					religion = druidic
+					culture = ROOT
+					dynasty = NONE
+					female = no
+					age = 34
+					trait = skilled_tactician
+				}
+				new_character = {
+					d_gwydion = {
+						grant_title = PREV
+					}
+					set_defacto_liege = PREV
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	organize_fianna = {
 		is_high_prio = yes
 		potential = {

@@ -3,7 +3,9 @@
 # ANCIENT RELIGIONS
 # - The Fianna
 #
-# Event ID ancrel.1150 - ancrel.1189 reserved
+# Event IDs ancrel.1150-1189 reserved
+# Event IDs ancrel.1254-1300 reserved
+# Event IDs ancrel.1333-1334 reserved
 #
 #######################################
 
@@ -876,9 +878,9 @@ character_event = {
 	}
 }
 
-#[on_reform_religion] Celtic Orders and Merc Companies Reform
+# Fianna Reforms
 character_event = {
-	id = ancrel.0009
+	id = ancrel.1186
 	hide_window = yes
 	
 	trigger = {
@@ -898,12 +900,6 @@ character_event = {
 				religion = druidic_reformed
 			}
 		}		
-		d_wolftails = {
-			religion = druidic_reformed
-			holder_scope = {
-				religion = druidic_reformed
-			}
-		}
 		set_global_flag = fianna_reformed
 
 	}
@@ -955,7 +951,8 @@ letter_event = {
 #
 # Fianna event Series
 #
-# Event ID ancrel.1254-71999 is reserved
+# Event IDs ancrel.1254-1300 reserved
+# Event IDs ancrel.1333-1334 reserved
 #
 #############################################
 #Written by Patrick Marchand

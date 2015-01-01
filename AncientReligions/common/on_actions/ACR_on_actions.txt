@@ -411,14 +411,6 @@ on_death = { #death
 	}
 }
 
-# When a pagan religion is reformed
-on_reform_religion = {
-	events = {
-		670 # Pagan reformation
-		ancrel.0009 # Fianna reforms
-	}
-}
-
 on_birth = {
 	events = {
 		300 # A Bastard is born

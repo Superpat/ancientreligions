@@ -3,7 +3,9 @@
 # ANCIENT RELIGIONS
 # - Celtic Flavor Events
 #
-# Event ID ancrel.0150 - 0151, ancrel.1252 - 1253 and ancrel.0208 - 0256
+# Event IDs ancrel.0150 - 0151 
+#			ancrel.1252 - 1253
+#			ancrel.0208 - 0256
 #
 ###################################
 
@@ -445,68 +447,6 @@ character_event = {
 
 ########################################
 #
-# - First Celtic Province, Wolf Tails founded
-#
-########################################
-
-province_event = {
-	id = ancrel.0211
-	desc = EVTDESCancrel.0211
-	picture = GFX_evt_celtic_warriors
-	border = GFX_event_normal_frame_religion
-	
-	is_triggered_only = yes
-	hide_window = yes
-	
-	trigger = {
-		OR = {
-			religion = druidic
-		}
-		NOT = { has_global_flag = wolftails_founded }
-	}
-	
-	immediate = {
-		set_global_flag = wolftails_founded
-		activate_title = { title = d_wolftails status = yes }
-		hidden_tooltip = {
-			narrative_event = { id = ancrel.0212 }
-			create_character = {
-				random_traits = yes
-				religion = druidic
-				culture = welsh
-				dynasty = random
-				female = no
-				age = 34
-				trait = skilled_tactician
-			}
-			new_character = {
-				d_gwydion = {
-					grant_title = PREV
-				}
-			}
-		}
-	}
-			
-	option = {
-		name = OK
-	}
-}
-
-narrative_event = {
-	id = ancrel.0212
-	desc = EVTDESCancrel.0212
-	picture = GFX_evt_celtic_warriors
-	border = GFX_event_normal_frame_war
-
-	is_triggered_only = yes
-
-	trigger = {
-	
-	}
-}
-
-########################################
-#
 # - First Celtic Emperor
 #
 ########################################
@@ -517,6 +457,10 @@ narrative_event = {
 	title = EVTNAMEancrel.0256
 	desc = EVTDESCancrel.0256
 	picture = GFX_event_y_mab_darogan
+
+	major = yes
+	show_ROOT = yes
+	hide_other = yes
 	
 	only_rulers = yes
 

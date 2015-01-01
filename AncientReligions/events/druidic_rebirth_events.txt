@@ -3,7 +3,7 @@
 # ANCIENT RELIGIONS
 # - Rebirth of Druidism
 #
-# Event ID ancrel.0000 - ancrel.0009 reserved
+# Event ID ancrel.0000 - ancrel.0010 reserved
 #
 #######################################
 
@@ -363,3 +363,197 @@ character_event = {
 	}
 }
 
+# override of vanilla event to support druidic
+#[on_reform_religion]
+narrative_event = {
+	id = 670
+	title = "EVTNAME670"
+	desc = "EVTDESC670"
+	picture = GFX_evt_heretic
+	border = "GFX_event_narrative_frame_religion"	
+	
+	is_triggered_only = yes
+	major = yes
+	show_ROOT = yes
+	hide_new = yes
+	
+	only_rulers = yes
+	
+	immediate = {
+		if = {
+			limit = { ai = no }
+			set_character_flag = achievement_new_ways
+		}
+		any_courtier = {
+			limit = {
+				is_heresy_of = ROOT
+				employer = { character = ROOT }
+			}
+			religion = ROOT
+		}
+		any_dynasty_member = {
+			limit = {
+				is_heresy_of = ROOT
+				is_playable = no
+			}
+			religion = ROOT
+		}
+		any_vassal = {
+			limit = {
+				is_playable = no
+				is_heresy_of = ROOT
+			}
+			religion = ROOT
+		}
+		capital_scope = {
+			if = {
+				limit = { is_heresy_of = ROOT }
+				religion = ROOT
+			}
+		}
+		if = {
+			limit = { religion = norse_pagan_reformed }
+			d_jomsvikings = {
+				religion = norse_pagan_reformed # This Holy Order now changes religion
+			}
+			set_global_flag = norse_reformation
+		}
+		if = {
+			limit = { religion = tengri_pagan_reformed }
+			set_global_flag = tengri_reformation
+		}
+		if = {
+			limit = { religion = baltic_pagan_reformed }
+			set_global_flag = baltic_reformation
+		}
+		if = {
+			limit = { religion = finnish_pagan_reformed }
+			set_global_flag = finnish_reformation
+		}
+		if = {
+			limit = { religion = aztec_reformed }
+			set_global_flag = aztec_reformation
+		}
+		if = {
+			limit = { religion = slavic_pagan_reformed }
+			set_global_flag = slavic_reformation
+		}
+		if = {
+			limit = { religion = west_african_pagan_reformed }
+			set_global_flag = west_african_reformation
+		}
+		if = {
+			limit = { religion = zun_pagan_reformed }
+			set_global_flag = zun_reformation
+		}
+		if = {
+			limit = { religion = druidic_pagan_reformed }
+			set_global_flag = zun_reformation
+		}
+	}
+
+	option = {
+		name = "EVTOPTA670" # The Reformer
+		trigger = { religion = ROOT }
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_PLAYER_REFORMED_RELIGION
+				portrait = [Root.GetID]
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB670" # Rulers of the old Faith - Accept
+		trigger = {
+			is_heresy_of = ROOT # The old religion has become a heresy of the Reformed one
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_OTHER_REFORMED_PLAYERS_RELIGION
+				portrait = [Root.GetID]
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 5
+				any_liege = { religion = ROOT }
+			}
+			modifier = {
+				factor = 2
+				same_realm = ROOT
+			}
+			modifier = {
+				factor = 5
+				trait = cynical
+			}
+			modifier = {
+				factor = 10
+				dynasty = ROOT
+			}
+			modifier = {
+				factor = 0.1
+				trait = zealous
+			}
+			modifier = {
+				factor = 0.5
+				trait = content
+			}
+		}
+		
+		religion = ROOT
+		
+		hidden_tooltip = {
+			any_courtier = {
+				limit = {
+					is_heresy_of = ROOT
+					employer = { character = PREV }
+				}
+				religion = ROOT
+			}
+			any_vassal = {
+				limit = {
+					is_playable = no
+					is_heresy_of = ROOT
+				}
+				religion = ROOT
+			}
+			capital_scope = {
+				if = {
+					limit = { is_heresy_of = ROOT }
+					religion = ROOT
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTC670" # Rulers of the old Faith - Decline
+		trigger = {
+			is_heresy_of = ROOT # The old religion has become a heresy of the Reformed one
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_OTHER_REFORMED_PLAYERS_RELIGION
+				portrait = [Root.GetID]
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_landed_title = d_jomsvikings
+			}
+		}
+		tooltip = { religion = THIS }
+	}
+	option = {
+		name = "EVTOPTD670" # Other playable rulers
+		trigger = {
+			NOT = { religion = ROOT }
+			NOT = { is_heresy_of = ROOT }
+		}
+	}
+}

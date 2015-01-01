@@ -167,23 +167,6 @@ character_event = {
 		}
 		piety = -200
 	}
-#	option = {
-#		name = "EVTOPTK1000182323"
-#		ai_chance = { factor = 10 }
-#		trigger = {
-#			culture = egyptian_arabic
-#			NOT = { 
-#				religion = egyptian_pagan
-#				religion = aten_pagan
-#			}
-#		}
-#		religion = egyptian_pagan
-#		if = {
-#			limit = { trait = cynical }
-#			remove_trait = cynical
-#		}
-#		piety = -200
-#	}
 	option = {
 		name = "EVTOPTL1000182323"
 		ai_chance = { factor = 20 }

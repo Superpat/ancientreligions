@@ -1,15 +1,17 @@
+#########################################
+# Ancient Religions Reborn										
+# - Thirteen Treasures of Britain events  
+# 
+# Event IDs ancrel.1261 - 1275
+#########################################
+
 namespace = ancrel
-#################################
-#							#
-# Thirteen Treasures of Britain events 
-#							#
-#################################
 
 # Starting Event
 character_event = {
 	id = ancrel.1261
-	title = "EVTNAMEancrel.1261"
-	desc = "EVTDESCancrel.1261"
+	title = EVTNAMEancrel.1261
+	desc = EVTDESCancrel.1261
 	picture = GFX_evt_library
 	
 	only_rulers = yes
@@ -18,7 +20,6 @@ character_event = {
 	min_age = 16
 	
 	trigger = {
-		age = 16
 		OR = {
 			religion = druidic
 			religion = druidic_reformed
@@ -1541,7 +1542,7 @@ narrative_event = {
 	}
 
 	option = {
-		name = "EVTOPTAancrel.1273"
+		name = EVTOPTAancrel.1273
 		prestige = 300
 		piety = 150
 		wealth = -50
@@ -1553,20 +1554,20 @@ narrative_event = {
 #Inform inherited sacred treasure
 character_event = {   
 	id = 250277
-	desc = "EVTDESC250277"
+	desc = EVTDESC250277
 	picture = "GFX_evt_Pagan_dolmen"
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "EVTOPTA250277"
+		name = EVTOPTA250277
 	}
 }
 
 ### Succession Event ###
 character_event = {
 	id = 45340
-	desc = "EVTDESC45340"
+	desc = EVTDESC45340
 	picture = "GFX_evt_death"
 	
 	is_triggered_only = yes 

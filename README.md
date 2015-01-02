@@ -5,27 +5,23 @@ Ancient Religions mod for Crusader Kings 2
 ===
 
 
-Current Version: 0.31
-For Crusader Kings 2 Version: 1.11
+Current Version: x.y
+For Crusader Kings 2 Version: 2.3
 
 
-This mod aims at recreating dead or pseudo-dead religions in vanilla Crusader
-Kings 2. This version features the ancient cults of the celts, the Druidic
-religion, and the ancient religion of the Roman and Greek peoples. Other plans
-include Basque, Guanche and Mesopotamian paganism, and further plans include
-Egyptian paganism and the Cult of Cthulhu.
+This mod aims at recreating dead or pseudo-dead religions in vanilla Crusader Kings 2.
+This version features the ancient cults of the celts, the Druidic religion, and the ancient religion of the Roman and Greek peoples. 
+Other plans include Basque, Guanche and Mesopotamian paganism, and further plans include Egyptian paganism and the Cult of Cthulhu.
 
 
 Current Religions:
  - Hellenic paganism
- - Brythonic Druidism
- - Gaelic Druidism
-
+ - Celtic Druidism
 
 Ancient Religions Installation:
 
 1. Important: Delete your Ancient Religions folder if you have one
-2. Extract the Ancient Religions folder and the ancientreligions.mod file to your mod-folder (Crusader Kings II\mod)
+2. Extract the Ancient Religions folder and the AncientReligions.mod file to your mod-folder (~\Documents\Paradox Interactive\Crusader Kings II\mod)
 3. Enable it when launching the game
 4. Have fun
 

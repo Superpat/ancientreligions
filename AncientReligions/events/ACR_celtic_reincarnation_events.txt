@@ -7,6 +7,8 @@
 #
 #######################################
 
+namespace = ancrel
+
 # [on_birth] Child might be a reincarnation
 # Duplicate event RoI.10000 for the religion check and to have Celtic specific text on chained event
 character_event = {

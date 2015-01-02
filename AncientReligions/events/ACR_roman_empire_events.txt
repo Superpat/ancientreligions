@@ -6,6 +6,8 @@
 #
 #######################################
 
+namespace = ancrel
+
 # The Restoration of Rome (Byzantium / Latin Empire)
 narrative_event = {
 	id = ancrel.2220

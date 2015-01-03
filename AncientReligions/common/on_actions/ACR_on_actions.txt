@@ -400,9 +400,9 @@ on_death = { #death
 		CM.10010 # Chronicle entry
 		CM.6185 # Dies of other causes while assassination is in progress - clear flags
 
-		ancrel.1194
-		ancrel.2123
-		45340 # Thirteen treasures inheritance		
+		ancrel.1194 # Aonach must be canceled
+		ancrel.2123 # a Vestalis has died, cleanup must be done
+		ancrel.1275 # Thirteen treasures inheritance		
 	}
 	random_events = {
 		10 = 24505

@@ -37,3 +37,26 @@ b_mellifont = {
 	holy_site = druidic
 	holy_site = druidic_reformed
 }
+
+# Egyptian pagan
+
+b_zweitina = {
+	holy_site = egyptian_pagan
+	holy_site = aten_pagan
+}
+b_ikonion = {		
+	holy_site = egyptian_pagan
+	holy_site = aten_pagan
+}
+b_fuwa = {
+	holy_site = egyptian_pagan
+	holy_site = aten_pagan		
+}
+b_memphis = {
+	holy_site = egyptian_pagan
+	holy_site = aten_pagan
+}
+b_luxor = {
+	holy_site = egyptian_pagan
+	holy_site = aten_pagan				
+}

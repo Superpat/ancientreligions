@@ -447,7 +447,12 @@ culture = {
 }
 
 culture = {
-	religion_group = "zoroastrian_group"
+	religion = {
+		"zoroastrian"
+		"mazdaki"
+		"manichean"
+		"egyptian_pagan"
+	}
 	
 	templates = { 
 		"coa_plain_muslim:1"

@@ -45,6 +45,29 @@ EVTOPTA_ancrel_4007;Worrisome...;Inquiétant...;Worrisome...;;Worrisome...;;;;;;;
 EVTNAME_ancrel_4008;The Horus Guard;La Garde d'Horus;The Horus Guard;;The Horus Guard;;;;;;;;;x
 EVTDESC_ancrel_4008;With the ongoing success of the Anubis guard, yet another Kemetic holy order has been organized. The Horusian Guard is ready to defend the Egyptian empire from all heathens and heretics that would dare threaten it. Only a fool would attack the Egyptians head on now.;Avec le succès en cours de la garde d'Anubis, un nouvel ordre saint kémite a été créé. La garde d'Horus est preste à défendre l'empire égyptien contre tous les païens et tous les hérétiques qui oseroient le menacer. Seul un fol attaqueroit de front les Egyptiens à présent.;With the ongoing success of the Anubis guard, yet another Kemetic holy order has been organized. The Horusian Guard is ready to defend the Egyptian empire from all heathens and heretics that would dare threaten it. Only a fool would attack the Egyptians head on now.;;With the ongoing success of the Anubis guard, yet another Kemetic holy order has been organized. The Horusian Guard is ready to defend the Egyptian empire from all heathens and heretics that would dare threaten it. Only a fool would attack the Egyptians head on now.;;;;;;;;;x
 EVTOPTA_ancrel_4008;Worrisome...;Inquiétant...;Worrisome...;;Worrisome...;;;;;;;;;x
+#Sed festival;;;;;;;;;;
+hold_sed_festival;Hold a Sed Festival;Organiser un Festival de Sed;Hold a Sed Festival;;Hold a Sed Festival;;;;;;;;;x
+hold_sed_festival_desc;Traditionally, after 30 years of rule and every 3 years after that, a Pharaoh holds a festival to celebrate his continuous success, renew his royal powers and rejuvenate his strength.;;;;;;;;;;;;;x
+EVTDESC_ancrel_4010;On the first day of the festival, you present offerings to the gods. Then, while seated and crowned on a raised platform, the priests carry the statues of the gods and present offerings, in a sign of giving thanks for past loyalty and to secure good relationships in the future.;;;;;;;;;;x
+EVTOPTA_ancrel_4010;This is good to be the Pharaoh !;;;;;;;;;;x
+EVTDESC_ancrel_4011;On the second day, attired with a short kilt with a bull's tail in its back, you prepare yourself to run the ritual race alongside the Apis Bull. The course is bounded by two points symbolizing the borders of the realm, to reinforce your dominion over the whole kingdom.;;;;;;;;;;;;;x
+EVTOPTA_ancrel_4011;I dedicate the race to the gods !;;;;;;;;;;x
+EVTDESC_ancrel_4012;On the last day, you are carried in a procession to visit the chapels of the gods. At the chapel of Horus, you receive the crook and the flail. At the two chapels of Horus and Seth, you are handed a bow and arrow, to shoot an arrow in each one of the four directions.;;;;;;;;;;;;;x
+EVTOPTA_ancrel_4012;Praise the gods !;;;;;;;;;;x
+EVTDESC_ancrel_4013;The festival was a great success. I've proved that I was still physically able to rule the country, and I feel rejuvenated and reborn.;;;;;;;;;;x
+EVTOPTA_ancrel_4013;I shall organize another one in three years !;;;;;;;;;;x
+EVTDESC_ancrel_4014;The afternoon is getting hot, and it seems as if the procession of priests would never end. You start loosing attention to them, and slowly fall asleep in your throne... Soon the high priests realize what is happening, and are outraged !;;;;;;;;;;x
+EVTOPTA_ancrel_4014;Must be something from the food...;;;;;;;;;;x
+EVTDESC_ancrel_4015;The race is not going well, you're exhausted, and suddenly you feel the sand falling from under your feet. Seconds after you're on the ground, grasping for your breath, and unable to complete the race.;;;;;;;;;;x
+EVTOPTA_ancrel_4015;The terrain was too heavy...;;;;;;;;;;x
+EVTDESC_ancrel_4016;You hear a scream and the noise of something falling down. The crowd opens up and you realize that you've hit someone with an arrow !;;;;;;;;;;x
+EVTOPTA_ancrel_4016;The bow's aim must have been flawed...;;;;;;;;;;x
+EVTDESC_ancrel_4017;Due to the incident, the festival could not be completed properly. I've failed to honnor the gods according to tradition, and people all over the realm will soon be laughing when told about the incident...;;;;;;;;;;x
+EVTOPTA_ancrel_4017;Maybe I'm no longer trusted by the Gods...;;;;;;;;;;x
+EVTOPTB_ancrel_4017;Who cares ? This is a stupid tradition anyway.;;;;;;;;;;x
+EVTOPTC_ancrel_4017;I'll make sure someone gets punished for this.;;;;;;;;;;x
+held_sed_festival;Held a Sed festival;;;;;;;;;;x
+held_failed_sed_festival;Held a failed Sed festival;;;;;;;;;;x
 #Chronicle;;;;;;;;;;
 CHRONICLE_EGYPTIAN_PRIESTHOOD;Backed by [Root.GetTitledName]'s contributions and the growing power of the reborn Kemetic faith, [Prev.GetDynName] was installed as the Paragon Xroj, the first high priest of a new Kemetic era.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 CHRONICLE_ANUBIS_GUARD;Backed by [Root.GetTitledName]'s contributions and the growing power of the reborn Kemetic faith, the Anubis Guard, an order of chariot archers and spears, was established under the command of [Prev.GetDynName].;FRENCH;GERMAN;;SPANISH;;;;;;;;;x

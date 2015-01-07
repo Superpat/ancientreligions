@@ -40,3 +40,19 @@ luxor_admin = {
 	local_tax_modifier = 0.6
 	icon = 4	
 }
+
+#Timers
+held_sed_festival_timer = {
+	icon = 1
+}
+
+held_sed_festival = {
+	health = 1
+	general_opinion = 10
+	icon = 17
+}
+
+held_failed_sed_festival = {
+	general_opinion = -10
+	icon = 35
+}

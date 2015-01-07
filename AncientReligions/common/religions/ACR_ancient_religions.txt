@@ -170,7 +170,7 @@ pagan_group = {
 		
 		icon = 66
 		heresy_icon = 67
-		
+
 		ai_convert_other_group = 2 # always try to convert
 		ai_convert_same_group = 2 # always try to convert
 

@@ -1043,6 +1043,7 @@ character_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
+	
 	option = {
 		name = EVTOPTALoR.45
 		add_trait = augustus

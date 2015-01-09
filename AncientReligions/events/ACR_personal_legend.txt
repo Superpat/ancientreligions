@@ -1,3 +1,5 @@
+namespace = ancrel
+
 #Lover Remarks of your Paris-like sexual prowess
 character_event = {
 	id = ancrel.3010

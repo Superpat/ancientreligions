@@ -10,6 +10,7 @@ obj_find_thirteen_treasures = {
 	
 	allow = {
 		prisoner = no
+		always = no
 		age = 16
 		OR = {
 			religion = druidic
@@ -20,7 +21,7 @@ obj_find_thirteen_treasures = {
 			culture = breton
 		}
 		piety = 200
-		
+
 		NOT = { trait = incapable }
 		NOT = { trait = content }
 		NOT = { trait = imbecile }

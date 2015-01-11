@@ -22,27 +22,30 @@ character_event = {
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		NOT = { has_global_flag = pat_antioch }
+		OR = {
+			religion = orthodox
+			is_heresy_of = orthodox
+		}
 		OR = {
 			has_landed_title = e_latin_empire
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		OR = {
-			religion = orthodox
-			is_heresy_of = orthodox
-		}
-		NOT = { has_global_flag = pat_antioch }
 		completely_controls = c_antiocheia
 	}
+	
 	mean_time_to_happen = {
 		days = 1
-		}
+	}
+		
 	option = {
 		name = EVTOPTALoR.200
 		set_global_flag = pat_antioch
 		piety = 100
 	}
 }
+
 character_event = {
 	id = ancrel.2200
 	desc = EVTDESCancrel.2200
@@ -82,21 +85,23 @@ character_event = {
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		NOT = { has_global_flag = pat_jerusalem }
+		OR = {
+			religion = orthodox
+			is_heresy_of = orthodox
+		}
 		OR = {
 			has_landed_title = e_latin_empire
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		OR = {
-			religion = orthodox
-			is_heresy_of = orthodox
-		}
-		NOT = { has_global_flag = pat_jerusalem }
 		completely_controls = c_jerusalem
 	}
+	
 	mean_time_to_happen = {
 		days = 1
 	}
+	
 	option = {
 		name = EVTOPTALoR.200
 		set_global_flag = pat_jerusalem
@@ -141,21 +146,23 @@ character_event = {
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		NOT = { has_global_flag = pat_alexandria }
+		OR = {
+			religion = orthodox
+			is_heresy_of = orthodox
+		}
 		OR = {
 			has_landed_title = e_latin_empire
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		OR = {
-			religion = orthodox
-			is_heresy_of = orthodox
-		}
-		NOT = { has_global_flag = pat_alexandria }
 		completely_controls = c_alexandria
 	}
+	
 	mean_time_to_happen = {
 		days = 1
 	}
+	
 	option = {
 		name = EVTOPTALoR.200
 		set_global_flag = pat_alexandria
@@ -201,18 +208,19 @@ character_event = {
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		NOT = { has_global_flag = pat_rome }
+		OR = {
+			religion = orthodox
+			is_heresy_of = orthodox
+		}
 		OR = {
 			has_landed_title = e_latin_empire
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		OR = {
-			religion = orthodox
-			is_heresy_of = orthodox
-		}
-		NOT = { has_global_flag = pat_rome }
 		completely_controls = c_roma
 	}
+	
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -268,9 +276,24 @@ narrative_event = {
 	
 	option = {
 		name = EVTOPTALoR.200
-		set_parent_religion = { religion = catholic parent = orthodox }
-		set_global_flag = schism_mended
-		give_nickname = nick_the_saint
+		
+		if = {
+			limit = { religion = orthodox }
+			set_parent_religion = { religion = catholic parent = orthodox }
+		}
+		if = {
+			limit = { religion = nestorian }
+			set_parent_religion = { religion = catholic parent = nestorian }
+		}
+		if = {
+			limit = { religion = monothelite }
+			set_parent_religion = { religion = catholic parent = monothelite }
+		}
+		if = {
+			limit = { religion = iconoclast }
+			set_parent_religion = { religion = catholic parent = iconoclast }
+		}
+		
 		if = {
 			limit = {
 				NOT = { has_landed_title = k_orthodox }
@@ -278,9 +301,12 @@ narrative_event = {
 			}
 			k_orthodox = { holder_scope = { set_defacto_liege = ROOT } }
 		}
+		
+		set_global_flag = schism_mended
+		give_nickname = nick_the_saint
 		hidden_tooltip = {
 			any_playable_ruler = {
-				limit = { 
+				limit = {
 					religion = catholic
 					controls_religion = no
 				}

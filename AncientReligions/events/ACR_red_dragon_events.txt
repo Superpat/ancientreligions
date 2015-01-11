@@ -144,7 +144,6 @@ narrative_event = {
 	}
 }
 
-# The son of a ruler volunteers to join the Red Dragons
 character_event = {
 	id = ancrel.1320
 	desc = EVTDESCancrel.1320

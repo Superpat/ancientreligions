@@ -337,7 +337,7 @@ character_event = {
 		is_ill = yes
 		OR = {
 			has_landed_title = c_innse_gall  
-			any_vassal = {has_landed_title = c_innse_gall }
+			any_vassal = { has_landed_title = c_innse_gall }
 		}
 		NOT = { religion_group = pagan_group }
 		culture_group = celtic
@@ -366,7 +366,7 @@ character_event = {
 		}
 		custom_tooltip = {
 			text = travel_island
-			character_event = { id = ancrel.0209 days=5}
+			character_event = { id = ancrel.0209 days = 5 }
 		}
 	}
 	option = {
@@ -397,7 +397,7 @@ character_event = {
 			factor = 50
 		}
 		hidden_tooltip = {
-			character_event = { id = ancrel.0210 days=2}
+			character_event = { id = ancrel.0210 days = 2 }
 		}
 	}
 	option = {

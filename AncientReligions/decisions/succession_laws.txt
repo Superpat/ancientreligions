@@ -325,7 +325,11 @@ succession_laws = {
 				NOT = { religion_group = muslim }
 				is_merchant_republic = no
 				is_patrician = no
-				culture_group = celtic
+				OR = {
+					culture_group = celtic
+					religion = druidic
+					religion = druidic_reformed
+				}
 			}
 			OR = {
 				is_landless_type_title = no
@@ -418,8 +422,6 @@ succession_laws = {
 
 	succ_turkish_succession = {
 		oldest_child_opinion = -10
-#		child_opinion = 30
-#		dynasty_opinion = 10
 		potential = {
 			OR = {
 				is_landless_type_title = no

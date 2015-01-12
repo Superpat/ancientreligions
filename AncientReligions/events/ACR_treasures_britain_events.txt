@@ -1,24 +1,24 @@
+#########################################
+# Ancient Religions Reborn										
+# - Thirteen Treasures of Britain events  
+# 
+# Event IDs ancrel.1261 - 1275
+#########################################
+
 namespace = ancrel
-#################################
-#							#
-# Thirteen Treasures of Britain events 
-#							#
-#################################
 
 # Starting Event
 character_event = {
 	id = ancrel.1261
-	title = "EVTNAMEancrel.1261"
-	desc = "EVTDESCancrel.1261"
+	title = EVTNAMEancrel.1261
+	desc = EVTDESCancrel.1261
 	picture = GFX_evt_library
 	
-	only_rulers = yes
 	capable_only = yes
 	prisoner = no
 	min_age = 16
 	
 	trigger = {
-		age = 16
 		OR = {
 			religion = druidic
 			religion = druidic_reformed
@@ -81,97 +81,66 @@ character_event = {
 	}
 
 	immediate = {
-		hidden_tooltip = {
-			ROOT = {
-				set_character_flag = treasures_britain_quest_started
-			}
-		}
+		set_character_flag = treasures_britain_quest_started
 	}
 	
 	option = {
-		name = "EVTOPTAancrel.1261"
-		ROOT = {
-			character_event = { id = ancrel.1262 days = 1 }
-		}
+		name = EVTOPTAancrel.1261
+		character_event = { id = ancrel.1262 days = 1 }
 		piety = 10
 	}
 	
 	option = {
-		name = "EVTOPTBancrel.1261"
+		name = EVTOPTBancrel.1261
 		trigger = {
 			trait = zealous
 		}
-		ROOT = {
-			cancel_ambition = yes
-			set_character_flag = abandoned_thirteen_treasure_quest
-			piety = -25
-			remove_trait = zealous
-		}
+		cancel_ambition = yes
+		set_character_flag = abandoned_thirteen_treasure_quest
+		piety = -25
+		remove_trait = zealous
 	}
 	
 	option = {
-		name = "EVTOPTBancrel.1261"
+		name = EVTOPTBancrel.1261
 		trigger = {
 			NOT = { trait = zealous }
 		}
-		ROOT = {
-			cancel_ambition = yes
-			set_character_flag = abandoned_thirteen_treasure_quest
-			piety = -25
-			add_trait = cynical
-		}
+		cancel_ambition = yes
+		set_character_flag = abandoned_thirteen_treasure_quest
+		piety = -25
+		add_trait = cynical
 	}
 }
+
 ### Initial setup
 # Bards and Druids research thirteen treasures
 character_event = {
 	id = ancrel.1262
-	title = "EVTNAMEancrel.1262"
-	desc = "EVTDESCancrel.1262"
+	title = EVTNAMEancrel.1262
+	desc = EVTDESCancrel.1262
 	picture = GFX_evt_priests_in_forest
 	
-	only_rulers = yes
 	is_triggered_only = yes
-	
-	trigger = {
-		age = 16
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
-		has_ambition = obj_find_thirteen_treasures
-		has_character_flag = treasures_britain_quest_started
-		NOT = { has_character_flag = abandoned_thirteen_treasure_quest }
-	}
 		
 	option = {
-		name = "EVTOPTAancrel.1262"
-		ROOT = {
-			character_event = { id = ancrel.1263 days = 60 random = 20 }
-		}
+		name = EVTOPTAancrel.1262
+		character_event = { id = ancrel.1263 days = 60 random = 20 }
 		piety = 15
 	}
 }
+
 # Bards and druids return with choices
 character_event = {
 	id = ancrel.1263
-	title = "EVTNAMEancrel.1263"
-	desc = "EVTDESCancrel.1263"
+	title = EVTNAMEancrel.1263
+	desc = EVTDESCancrel.1263
 	picture = GFX_evt_druid_room
 	
-	only_rulers = yes
 	is_triggered_only = yes
 	
 	trigger = {
-		age = 16
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
 		has_ambition = obj_find_thirteen_treasures
-		has_character_flag = treasures_britain_quest_started
-		NOT = { has_character_flag = finished_researching_treasures_britain }
-		NOT = { has_character_flag = abandoned_thirteen_treasure_quest }
 	}
 	
 	mean_time_to_happen = {
@@ -219,58 +188,40 @@ character_event = {
 	}
 	
 	immediate = {
-		ROOT = {
-			set_character_flag = finished_researching_treasures_britain
-		}
+		set_character_flag = finished_researching_treasures_britain
 	}
 	
 	option = {
-		name = "EVTOPTAancrel.1263"
-		ROOT = {
-			character_event = { id = ancrel.1264 days = 1 }
-		}
+		name = EVTOPTAancrel.1263
+		character_event = { id = ancrel.1264 days = 1 }
 	}
 }
 # Send out knights on quest
 character_event = {
 	id = ancrel.1264
-	title = "EVTNAMEancrel.1264"
-	desc = "EVTDESCancrel.1264"
+	title = EVTNAMEancrel.1264
+	desc = EVTDESCancrel.1264
 	picture = GFX_evt_warrior_banners
 	
-	only_rulers = yes
 	is_triggered_only = yes
 	
 	trigger = {
-		age = 16
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
 		has_ambition = obj_find_thirteen_treasures
-		has_character_flag = finished_researching_treasures_britain
-		NOT = { has_character_flag = searching_for_the_treasures_britain_britain }
-		NOT = { has_character_flag = searching_for_the_treasures_britain_britain_fast }
-		NOT = { has_character_flag = abandoned_thirteen_treasure_quest }
 	}
 		
 	option = {
-		name = "EVTOPTAancrel.1264"
-		ROOT = {
-			set_character_flag = searching_for_the_treasures_britain_britain_fast
-			set_character_flag = searching_for_the_treasures_britain_britain
-			piety = 40
-			wealth = -150
-		}
+		name = EVTOPTAancrel.1264
+		set_character_flag = searching_for_the_treasures_britain_britain_fast
+		set_character_flag = searching_for_the_treasures_britain_britain
+		piety = 40
+		wealth = -150
 	}
 	
 	option = {
-		name = "EVTOPTBancrel.1264"
-		ROOT = {
-			set_character_flag = searching_for_the_treasures_britain_britain
-			piety = 10
-			wealth = -35
-		}
+		name = EVTOPTBancrel.1264
+		set_character_flag = searching_for_the_treasures_britain_britain
+		piety = 10
+		wealth = -35
 	}
 }
 
@@ -278,8 +229,8 @@ character_event = {
 # Knight dies
 character_event = {
 	id = ancrel.1265
-	title = "EVTNAMEancrel.1265"
-	desc = "EVTDESCancrel.1265"
+	title = EVTNAMEancrel.1265
+	desc = EVTDESCancrel.1265
 	picture = GFX_evt_emissary
 	
 	only_rulers = yes
@@ -289,10 +240,6 @@ character_event = {
 
 
 	trigger = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
 		has_ambition = obj_find_thirteen_treasures
 		had_character_flag = { flag = searching_for_the_treasures_britain days = 60 }
 		NOT = { has_character_flag = abandoned_thirteen_treasure_quest }
@@ -380,62 +327,53 @@ character_event = {
 	}
 
 	option = {
-		name = "EVTOPTAancrel.1265"
+		name = EVTOPTAancrel.1265
 		prestige = -100
 		wealth = -50
 	}
 		
 	option = {
-		name = "EVTOPTBancrel.1265"
+		name = EVTOPTBancrel.1265
 		trigger = {
 			trait = zealous
 		}
-		ROOT = {
-			cancel_ambition = yes
-			clr_character_flag = searching_for_the_treasures_britain
-			set_character_flag = abandoned_thirteen_treasure_quest
-			prestige = -100
-			piety = -50
-			wealth = -50
-			remove_trait = zealous
-		}
+		cancel_ambition = yes
+		clr_character_flag = searching_for_the_treasures_britain
+		set_character_flag = abandoned_thirteen_treasure_quest
+		prestige = -100
+		piety = -50
+		wealth = -50
+		remove_trait = zealous
 	}
 	
 	option = {
-		name = "EVTOPTBancrel.1265"
+		name = EVTOPTBancrel.1265
 		trigger = {
 			NOT = { trait = zealous }
 		}
-		ROOT = {
-			cancel_ambition = yes
-			clr_character_flag = searching_for_the_treasures_britain
-			set_character_flag = abandoned_thirteen_treasure_quest
-			prestige = -100
-			piety = -50
-			wealth = -50
-			add_trait = cynical
-		}
+		cancel_ambition = yes
+		clr_character_flag = searching_for_the_treasures_britain
+		set_character_flag = abandoned_thirteen_treasure_quest
+		prestige = -100
+		piety = -50
+		wealth = -50
+		add_trait = cynical
 	}
 }
 
 # Knight is captured
 character_event = {
 	id = ancrel.1265
-	title = "EVTNAMEancrel.1265"
-	desc = "EVTDESCancrel.1265"
+	title = EVTNAMEancrel.1265
+	desc = EVTDESCancrel.1265
 	picture = GFX_evt_emissary
 	
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
-	min_age = 16
 
 
 	trigger = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
 		has_ambition = obj_find_thirteen_treasures
 		had_character_flag = { flag = searching_for_the_treasures_britain days = 60 }
 		NOT = { has_character_flag = abandoned_thirteen_treasure_quest }
@@ -523,62 +461,52 @@ character_event = {
 	}
 
 	option = {
-		name = "EVTOPTAancrel.1265"
+		name = EVTOPTAancrel.1265
 		prestige = -100
 		wealth = -25
 	}
 		
 	option = {
-		name = "EVTOPTBancrel.1265"
+		name = EVTOPTBancrel.1265
 		trigger = {
 			trait = zealous
 		}
-		ROOT = {
-			cancel_ambition = yes
-			clr_character_flag = searching_for_the_treasures_britain
-			set_character_flag = abandoned_thirteen_treasure_quest
-			prestige = -100
-			piety = -50
-			wealth = -25
-			remove_trait = zealous
-		}
+		cancel_ambition = yes
+		clr_character_flag = searching_for_the_treasures_britain
+		set_character_flag = abandoned_thirteen_treasure_quest
+		prestige = -100
+		piety = -50
+		wealth = -25
+		remove_trait = zealous
 	}
 	
 	option = {
-		name = "EVTOPTBancrel.1265"
+		name = EVTOPTBancrel.1265
 		trigger = {
 			NOT = { trait = zealous }
 		}
-		ROOT = {
-			cancel_ambition = yes
-			clr_character_flag = searching_for_the_treasures_britain
-			set_character_flag = abandoned_thirteen_treasure_quest
-			prestige = -100
-			piety = -50
-			wealth = -25
-			add_trait = cynical
-		}
+		cancel_ambition = yes
+		clr_character_flag = searching_for_the_treasures_britain
+		set_character_flag = abandoned_thirteen_treasure_quest
+		prestige = -100
+		piety = -50
+		wealth = -25
+		add_trait = cynical
 	}
 }
 
 # Knight returns hopeless
 character_event = {
 	id = ancrel.1266
-	title = "EVTNAMEancrel.1266"
-	desc = "EVTDESCancrel.1266"
+	title = EVTNAMEancrel.1266
+	desc = EVTDESCancrel.1266
 	picture = GFX_evt_forest_warrior_alone # emissary kneels
 	
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
-	min_age = 16
-
 
 	trigger = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
 		has_ambition = obj_find_thirteen_treasures
 		had_character_flag = { flag = searching_for_the_treasures_britain days = 60 }
 		NOT = { has_character_flag = abandoned_thirteen_treasure_quest }
@@ -666,49 +594,45 @@ character_event = {
 	}
 
 	option = {
-		name = "EVTOPTAancrel.1266"
+		name = EVTOPTAancrel.1266
 		prestige = -50
 		wealth = -15
 	}
 		
 	option = {
-		name = "EVTOPTBancrel.1266"
+		name = EVTOPTBancrel.1266
 		trigger = {
 			trait = zealous
 		}
-		ROOT = {
-			cancel_ambition = yes
-			clr_character_flag = searching_for_the_treasures_britain
-			set_character_flag = abandoned_thirteen_treasure_quest
-			prestige = -50
-			piety = -50
-			wealth = -15
-			remove_trait = zealous
-		}
+		cancel_ambition = yes
+		clr_character_flag = searching_for_the_treasures_britain
+		set_character_flag = abandoned_thirteen_treasure_quest
+		prestige = -50
+		piety = -50
+		wealth = -15
+		remove_trait = zealous
 	}
 	
 	option = {
-		name = "EVTOPTBancrel.1266"
+		name = EVTOPTBancrel.1266
 		trigger = {
 			NOT = { trait = zealous }
 		}
-		ROOT = {
-			cancel_ambition = yes
-			clr_character_flag = searching_for_the_treasures_britain
-			set_character_flag = abandoned_thirteen_treasure_quest
-			prestige = -50
-			piety = -50
-			wealth = -15
-			add_trait = cynical
-		}
+		cancel_ambition = yes
+		clr_character_flag = searching_for_the_treasures_britain
+		set_character_flag = abandoned_thirteen_treasure_quest
+		prestige = -50
+		piety = -50
+		wealth = -15
+		add_trait = cynical
 	}
 }
 
 # Knight joins ennemy
 character_event = {
 	id = ancrel.1267
-	title = "EVTNAMEancrel.1267"
-	desc = "EVTDESCancrel.1267"
+	title = EVTNAMEancrel.1267
+	desc = EVTDESCancrel.1267
 	picture = GFX_evt_emissary
 	
 	only_rulers = yes
@@ -718,10 +642,6 @@ character_event = {
 
 
 	trigger = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
 		has_ambition = obj_find_thirteen_treasures
 		had_character_flag = { flag = searching_for_the_treasures_britain days = 60 }
 		NOT = { has_character_flag = abandoned_thirteen_treasure_quest }
@@ -809,41 +729,37 @@ character_event = {
 	}
 
 	option = {
-		name = "EVTOPTAancrel.1267"
+		name = EVTOPTAancrel.1267
 		prestige = -100
 		wealth = -15
 	}
 		
 	option = {
-		name = "EVTOPTBancrel.1267"
+		name = EVTOPTBancrel.1267
 		trigger = {
 			trait = zealous
 		}
-		ROOT = {
-			cancel_ambition = yes
-			clr_character_flag = searching_for_the_treasures_britain
-			set_character_flag = abandoned_thirteen_treasure_quest
-			prestige = -100
-			piety = -50
-			wealth = -15
-			remove_trait = zealous
-		}
+		cancel_ambition = yes
+		clr_character_flag = searching_for_the_treasures_britain
+		set_character_flag = abandoned_thirteen_treasure_quest
+		prestige = -100
+		piety = -50
+		wealth = -15
+		remove_trait = zealous
 	}
 	
 	option = {
-		name = "EVTOPTBancrel.1267"
+		name = EVTOPTBancrel.1267
 		trigger = {
 			NOT = { trait = zealous }
 		}
-		ROOT = {
-			cancel_ambition = yes
-			clr_character_flag = searching_for_the_treasures_britain
-			set_character_flag = abandoned_thirteen_treasure_quest
-			prestige = -100
-			piety = -50
-			wealth = -15
-			add_trait = cynical
-		}
+		cancel_ambition = yes
+		clr_character_flag = searching_for_the_treasures_britain
+		set_character_flag = abandoned_thirteen_treasure_quest
+		prestige = -100
+		piety = -50
+		wealth = -15
+		add_trait = cynical
 	}
 }
 
@@ -851,8 +767,8 @@ character_event = {
 # Knight finds treasure
 character_event = {
 	id = ancrel.1268
-	title = "EVTNAMEancrel.1268"
-	desc = "EVTDESCancrel.1268"
+	title = EVTNAMEancrel.1268
+	desc = EVTDESCancrel.1268
 	picture = GFX_evt_warrior_banners
 	
 	only_rulers = yes
@@ -862,10 +778,6 @@ character_event = {
 
 
 	trigger = {
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
 		has_ambition = obj_find_thirteen_treasures
 		had_character_flag = { flag = searching_for_the_treasures_britain days = 60 }
 		NOT = { has_character_flag = abandoned_thirteen_treasure_quest }
@@ -953,7 +865,7 @@ character_event = {
 	}
 
 	option = {
-		name = "EVTOPTAancrel.1268"
+		name = EVTOPTAancrel.1268
 		prestige = 100
 		wealth = -50
 		clr_character_flag = searching_for_the_treasures_britain
@@ -972,19 +884,14 @@ character_event = {
 # Challenge
 narrative_event = { # A dark Cavern
 	id = ancrel.1269
-	title = "EVTNAMEancrel.1269"
-	desc = "EVTDESCancrel.1269"
+	title = EVTNAMEancrel.1269
+	desc = EVTDESCancrel.1269
 	picture = GFX_evt_forest_warrior_alone
 	
 	only_rulers = yes
 	is_triggered_only = yes
 	
 	trigger = {
-		age = 16
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
 		has_ambition = obj_find_thirteen_treasures
 		has_character_flag = challenge_stage_britain_treasures
 		NOT = { has_character_flag = abandoned_thirteen_treasure_quest }
@@ -992,40 +899,31 @@ narrative_event = { # A dark Cavern
 	}
 
 	option = {
-		name = "EVTOPTAancrel.1269" # Right tunnel
-		ROOT = {
-			narrative_event = { id = ancrel.1270 days = 5 }
-			set_character_flag = challenge_stage_britain_treasures
-		}
+		name = EVTOPTAancrel.1269 # Right tunnel
+		set_character_flag = challenge_stage_britain_treasures
 		prestige = 25
+		narrative_event = { id = ancrel.1270 days = 5 }
 	}
 	
 	option = {
 		name = "EVTOPTBancrel.1269" # Left Tunnel
-		ROOT = {
-			narrative_event = { id = ancrel.1277 days = 5 }
-			set_character_flag = challenge_stage_britain_treasures
-		}
+		set_character_flag = challenge_stage_britain_treasures
 		prestige = 25
+		narrative_event = { id = ancrel.1277 days = 5 }
 	}
 }
 
 # Cave; Right Tunnel; Bear!
 narrative_event = {
 	id = ancrel.1270
-	title = "EVTNAMEancrel.1270"
-	desc = "EVTDESCancrel.1270"
+	title = EVTNAMEancrel.1270
+	desc = EVTDESCancrel.1270
 	picture = GFX_evt_black_bear
 	
 	only_rulers = yes
 	is_triggered_only = yes
 	
 	trigger = {
-		age = 16
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
 		has_ambition = obj_find_thirteen_treasures
 		has_character_flag = challenge_stage_britain_treasures
 		NOT = { has_character_flag = abandoned_thirteen_treasure_quest }
@@ -1033,7 +931,7 @@ narrative_event = {
 	}
 
 	option = { # Attack the Bear
-		name = "EVTOPTAancrel.1270"
+		name = EVTOPTAancrel.1270
 		if = {
 			limit = {
 				OR = {
@@ -1142,7 +1040,7 @@ narrative_event = {
 	}
 	
 	option = { # Trap it
-		name = "EVTOPTBancrel.1270"
+		name = EVTOPTBancrel.1270
 		trigger = {
 			NOT = {
 				OR = {
@@ -1260,7 +1158,7 @@ narrative_event = {
 	}
 
 	option = { # Run Away!
-		name = "EVTOPTCancrel.1270"
+		name = EVTOPTCancrel.1270
 		trigger = {
 			trait = craven
 		}
@@ -1281,8 +1179,8 @@ narrative_event = {
 # Success
 narrative_event = { # The Whetstone of Tudwal
 	id = ancrel.1271
-	title = "EVTNAMEancrel.1271"
-	desc = "EVTDESCancrel.1271"
+	title = EVTNAMEancrel.1271
+	desc = EVTDESCancrel.1271
 	picture = GFX_evt_treasures
 	
 	only_rulers = yes
@@ -1301,7 +1199,7 @@ narrative_event = { # The Whetstone of Tudwal
 	}
 	
 	option = {
-		name = "EVTOPTAancrel.1271"
+		name = EVTOPTAancrel.1271
 		set_character_flag = whetstone_of_tudwal
 		clr_character_flag = challenge_stage_britain_treasures
 		piety = 25
@@ -1312,8 +1210,8 @@ narrative_event = { # The Whetstone of Tudwal
 # Treasure is fake
 character_event = {
 	id = ancrel.1272
-	title = "EVTNAMEancrel.1272"
-	desc = "EVTDESCancrel.1272"
+	title = EVTNAMEancrel.1272
+	desc = EVTDESCancrel.1272
 	picture = GFX_evt_library
 	
 	only_rulers = yes
@@ -1410,7 +1308,7 @@ character_event = {
 	}
 		
 	option = {
-		name = "EVTOPTAancrel.1272"
+		name = EVTOPTAancrel.1272
 		trigger = {
 			trait = zealous
 		}
@@ -1425,7 +1323,7 @@ character_event = {
 	}
 	
 	option = {
-		name = "EVTOPTAancrel.1272"
+		name = EVTOPTAancrel.1272
 		trigger = {
 			NOT = { trait = zealous }
 		}
@@ -1443,8 +1341,8 @@ character_event = {
 # Show treasure to the realm
 narrative_event = {
 	id = ancrel.1273
-	title = "EVTNAMEancrel.1273"
-	desc = "EVTDESCancrel.1273"
+	title = EVTNAMEancrel.1273
+	desc = EVTDESCancrel.1273
 	picture = GFX_evt_royal_court
 	
 	only_rulers = yes
@@ -1541,7 +1439,7 @@ narrative_event = {
 	}
 
 	option = {
-		name = "EVTOPTAancrel.1273"
+		name = EVTOPTAancrel.1273
 		prestige = 300
 		piety = 150
 		wealth = -50
@@ -1552,26 +1450,23 @@ narrative_event = {
 
 #Inform inherited sacred treasure
 character_event = {   
-	id = 250277
-	desc = "EVTDESC250277"
-	picture = "GFX_evt_Pagan_dolmen"
+	id = ancrel.1274
+	desc = EVTDESCancrel.1274
+	picture = GFX_evt_Pagan_dolmen
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "EVTOPTA250277"
+		name = EVTOPTAancrel.1274
 	}
 }
 
 ### Succession Event ###
 character_event = {
-	id = 45340
-	desc = "EVTDESC45340"
-	picture = "GFX_evt_death"
-	
-	is_triggered_only = yes 
-
+	id = ancrel.1275
 	hide_window = yes
+
+	is_triggered_only = yes 
 	
 	immediate = {
 		if = {
@@ -1596,7 +1491,7 @@ character_event = {
 				random_child = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_cauldron
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -1605,7 +1500,7 @@ character_event = {
 				random_sibling = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_cauldron
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -1614,7 +1509,7 @@ character_event = {
 				random_dynasty_member = {
 					limit = { is_alive = yes }
 					add_trait = treasure_cauldron
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -1623,7 +1518,7 @@ character_event = {
 				random_child = {
 					limit = { is_primary_heir = yes is_alive = yes }
 					add_trait = treasure_cauldron
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -1632,7 +1527,7 @@ character_event = {
 				random_child = {
 					limit = { is_alive = yes }
 					add_trait = treasure_cauldron
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -1641,7 +1536,7 @@ character_event = {
 					NOT = { trait = dead_target }
 					spouse = { is_alive = yes }		
 				}
-				spouse = { add_trait = treasure_cauldron character_event = { id = 250277 } }
+				spouse = { add_trait = treasure_cauldron character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
@@ -1649,14 +1544,14 @@ character_event = {
 					NOT = { trait = dead_target }	
 					liege = { NOT = { character = ROOT } }
 				}
-				liege = { add_trait = treasure_cauldron character_event = { id = 250277 } }
+				liege = { add_trait = treasure_cauldron character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
 				limit = { 
 					NOT = { trait = dead_target }	
 				}
-				random_vassal = { add_trait = treasure_cauldron character_event = { id = 250277 } }
+				random_vassal = { add_trait = treasure_cauldron character_event = { id = ancrel.1274 } }
 			}
 			remove_trait = dead_target
 		}
@@ -1682,7 +1577,7 @@ character_event = {
 				random_child = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_chariot
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -1691,7 +1586,7 @@ character_event = {
 				random_sibling = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_chariot
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -1700,7 +1595,7 @@ character_event = {
 				random_dynasty_member = {
 					limit = { is_alive = yes }
 					add_trait = treasure_chariot
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -1709,7 +1604,7 @@ character_event = {
 				random_child = {
 					limit = { is_primary_heir = yes is_alive = yes }
 					add_trait = treasure_chariot
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -1718,7 +1613,7 @@ character_event = {
 				random_child = {
 					limit = { is_alive = yes }
 					add_trait = treasure_chariot
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -1727,7 +1622,7 @@ character_event = {
 					NOT = { trait = dead_target }
 					spouse = { is_alive = yes }		
 				}
-				spouse = { add_trait = treasure_chariot character_event = { id = 250277 } }
+				spouse = { add_trait = treasure_chariot character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
@@ -1735,14 +1630,14 @@ character_event = {
 					NOT = { trait = dead_target }	
 					liege = { NOT = { character = ROOT } }
 				}
-				liege = { add_trait = treasure_chariot character_event = { id = 250277 } }
+				liege = { add_trait = treasure_chariot character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
 				limit = { 
 					NOT = { trait = dead_target }	
 				}
-				random_vassal = { add_trait = treasure_chariot character_event = { id = 250277 } }
+				random_vassal = { add_trait = treasure_chariot character_event = { id = ancrel.1274 } }
 			}
 			remove_trait = dead_target
 		}
@@ -1768,7 +1663,7 @@ character_event = {
 				random_child = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_chessboard
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -1777,7 +1672,7 @@ character_event = {
 				random_sibling = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_chessboard
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -1786,7 +1681,7 @@ character_event = {
 				random_dynasty_member = {
 					limit = { is_alive = yes }
 					add_trait = treasure_chessboard
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -1795,7 +1690,7 @@ character_event = {
 				random_child = {
 					limit = { is_primary_heir = yes is_alive = yes }
 					add_trait = treasure_chessboard
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -1804,7 +1699,7 @@ character_event = {
 				random_child = {
 					limit = { is_alive = yes }
 					add_trait = treasure_chessboard
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -1813,7 +1708,7 @@ character_event = {
 					NOT = { trait = dead_target }
 					spouse = { is_alive = yes }		
 				}
-				spouse = { add_trait = treasure_chessboard character_event = { id = 250277 } }
+				spouse = { add_trait = treasure_chessboard character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
@@ -1821,14 +1716,14 @@ character_event = {
 					NOT = { trait = dead_target }	
 					liege = { NOT = { character = ROOT } }
 				}
-				liege = { add_trait = treasure_chessboard character_event = { id = 250277 } }
+				liege = { add_trait = treasure_chessboard character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
 				limit = { 
 					NOT = { trait = dead_target }	
 				}
-				random_vassal = { add_trait = treasure_chessboard character_event = { id = 250277 } }
+				random_vassal = { add_trait = treasure_chessboard character_event = { id = ancrel.1274 } }
 			}
 			remove_trait = dead_target
 		}
@@ -1854,7 +1749,7 @@ character_event = {
 				random_child = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_coat
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -1863,7 +1758,7 @@ character_event = {
 				random_sibling = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_coat
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -1872,7 +1767,7 @@ character_event = {
 				random_dynasty_member = {
 					limit = { is_alive = yes }
 					add_trait = treasure_coat
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -1881,7 +1776,7 @@ character_event = {
 				random_child = {
 					limit = { is_primary_heir = yes is_alive = yes }
 					add_trait = treasure_coat
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -1890,7 +1785,7 @@ character_event = {
 				random_child = {
 					limit = { is_alive = yes }
 					add_trait = treasure_coat
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -1899,7 +1794,7 @@ character_event = {
 					NOT = { trait = dead_target }
 					spouse = { is_alive = yes }		
 				}
-				spouse = { add_trait = treasure_coat character_event = { id = 250277 } }
+				spouse = { add_trait = treasure_coat character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
@@ -1907,14 +1802,14 @@ character_event = {
 					NOT = { trait = dead_target }	
 					liege = { NOT = { character = ROOT } }
 				}
-				liege = { add_trait = treasure_coat character_event = { id = 250277 } }
+				liege = { add_trait = treasure_coat character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
 				limit = { 
 					NOT = { trait = dead_target }	
 				}
-				random_vassal = { add_trait = treasure_coat character_event = { id = 250277 } }
+				random_vassal = { add_trait = treasure_coat character_event = { id = ancrel.1274 } }
 			}
 			remove_trait = dead_target
 		}
@@ -1940,7 +1835,7 @@ character_event = {
 				random_child = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_crock_and_dish
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -1949,7 +1844,7 @@ character_event = {
 				random_sibling = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_crock_and_dish
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -1958,7 +1853,7 @@ character_event = {
 				random_dynasty_member = {
 					limit = { is_alive = yes }
 					add_trait = treasure_crock_and_dish
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -1967,7 +1862,7 @@ character_event = {
 				random_child = {
 					limit = { is_primary_heir = yes is_alive = yes }
 					add_trait = treasure_crock_and_dish
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -1976,7 +1871,7 @@ character_event = {
 				random_child = {
 					limit = { is_alive = yes }
 					add_trait = treasure_crock_and_dish
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -1985,7 +1880,7 @@ character_event = {
 					NOT = { trait = dead_target }
 					spouse = { is_alive = yes }		
 				}
-				spouse = { add_trait = treasure_crock_and_dish character_event = { id = 250277 } }
+				spouse = { add_trait = treasure_crock_and_dish character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
@@ -1993,14 +1888,14 @@ character_event = {
 					NOT = { trait = dead_target }	
 					liege = { NOT = { character = ROOT } }
 				}
-				liege = { add_trait = treasure_crock_and_dish character_event = { id = 250277 } }
+				liege = { add_trait = treasure_crock_and_dish character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
 				limit = { 
 					NOT = { trait = dead_target }	
 				}
-				random_vassal = { add_trait = treasure_crock_and_dish character_event = { id = 250277 } }
+				random_vassal = { add_trait = treasure_crock_and_dish character_event = { id = ancrel.1274 } }
 			}
 			remove_trait = dead_target
 		}
@@ -2026,7 +1921,7 @@ character_event = {
 				random_child = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_dyrnwyn
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -2035,7 +1930,7 @@ character_event = {
 				random_sibling = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_dyrnwyn
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -2044,7 +1939,7 @@ character_event = {
 				random_dynasty_member = {
 					limit = { is_alive = yes }
 					add_trait = treasure_dyrnwyn
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2053,7 +1948,7 @@ character_event = {
 				random_child = {
 					limit = { is_primary_heir = yes is_alive = yes }
 					add_trait = treasure_dyrnwyn
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2062,7 +1957,7 @@ character_event = {
 				random_child = {
 					limit = { is_alive = yes }
 					add_trait = treasure_dyrnwyn
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2071,7 +1966,7 @@ character_event = {
 					NOT = { trait = dead_target }
 					spouse = { is_alive = yes }		
 				}
-				spouse = { add_trait = treasure_dyrnwyn character_event = { id = 250277 } }
+				spouse = { add_trait = treasure_dyrnwyn character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
@@ -2079,14 +1974,14 @@ character_event = {
 					NOT = { trait = dead_target }	
 					liege = { NOT = { character = ROOT } }
 				}
-				liege = { add_trait = treasure_dyrnwyn character_event = { id = 250277 } }
+				liege = { add_trait = treasure_dyrnwyn character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
 				limit = { 
 					NOT = { trait = dead_target }	
 				}
-				random_vassal = { add_trait = treasure_dyrnwyn character_event = { id = 250277 } }
+				random_vassal = { add_trait = treasure_dyrnwyn character_event = { id = ancrel.1274 } }
 			}
 			remove_trait = dead_target
 		}
@@ -2112,7 +2007,7 @@ character_event = {
 				random_child = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_halter
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -2121,7 +2016,7 @@ character_event = {
 				random_sibling = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_halter
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -2130,7 +2025,7 @@ character_event = {
 				random_dynasty_member = {
 					limit = { is_alive = yes }
 					add_trait = treasure_halter
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2139,7 +2034,7 @@ character_event = {
 				random_child = {
 					limit = { is_primary_heir = yes is_alive = yes }
 					add_trait = treasure_halter
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2148,7 +2043,7 @@ character_event = {
 				random_child = {
 					limit = { is_alive = yes }
 					add_trait = treasure_halter
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2157,7 +2052,7 @@ character_event = {
 					NOT = { trait = dead_target }
 					spouse = { is_alive = yes }		
 				}
-				spouse = { add_trait = treasure_halter character_event = { id = 250277 } }
+				spouse = { add_trait = treasure_halter character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
@@ -2165,14 +2060,14 @@ character_event = {
 					NOT = { trait = dead_target }	
 					liege = { NOT = { character = ROOT } }
 				}
-				liege = { add_trait = treasure_halter character_event = { id = 250277 } }
+				liege = { add_trait = treasure_halter character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
 				limit = { 
 					NOT = { trait = dead_target }	
 				}
-				random_vassal = { add_trait = treasure_halter character_event = { id = 250277 } }
+				random_vassal = { add_trait = treasure_halter character_event = { id = ancrel.1274 } }
 			}
 			remove_trait = dead_target
 		}
@@ -2198,7 +2093,7 @@ character_event = {
 				random_child = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_hamper
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -2207,7 +2102,7 @@ character_event = {
 				random_sibling = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_hamper
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -2216,7 +2111,7 @@ character_event = {
 				random_dynasty_member = {
 					limit = { is_alive = yes }
 					add_trait = treasure_hamper
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2225,7 +2120,7 @@ character_event = {
 				random_child = {
 					limit = { is_primary_heir = yes is_alive = yes }
 					add_trait = treasure_hamper
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2234,7 +2129,7 @@ character_event = {
 				random_child = {
 					limit = { is_alive = yes }
 					add_trait = treasure_hamper
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2243,7 +2138,7 @@ character_event = {
 					NOT = { trait = dead_target }
 					spouse = { is_alive = yes }		
 				}
-				spouse = { add_trait = treasure_hamper character_event = { id = 250277 } }
+				spouse = { add_trait = treasure_hamper character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
@@ -2251,14 +2146,14 @@ character_event = {
 					NOT = { trait = dead_target }	
 					liege = { NOT = { character = ROOT } }
 				}
-				liege = { add_trait = treasure_hamper character_event = { id = 250277 } }
+				liege = { add_trait = treasure_hamper character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
 				limit = { 
 					NOT = { trait = dead_target }	
 				}
-				random_vassal = { add_trait = treasure_hamper character_event = { id = 250277 } }
+				random_vassal = { add_trait = treasure_hamper character_event = { id = ancrel.1274 } }
 			}
 			remove_trait = dead_target
 		}
@@ -2284,7 +2179,7 @@ character_event = {
 				random_child = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_horn
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -2293,7 +2188,7 @@ character_event = {
 				random_sibling = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_horn
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -2302,7 +2197,7 @@ character_event = {
 				random_dynasty_member = {
 					limit = { is_alive = yes }
 					add_trait = treasure_horn
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2311,7 +2206,7 @@ character_event = {
 				random_child = {
 					limit = { is_primary_heir = yes is_alive = yes }
 					add_trait = treasure_horn
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2320,7 +2215,7 @@ character_event = {
 				random_child = {
 					limit = { is_alive = yes }
 					add_trait = treasure_horn
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2329,7 +2224,7 @@ character_event = {
 					NOT = { trait = dead_target }
 					spouse = { is_alive = yes }		
 				}
-				spouse = { add_trait = treasure_horn character_event = { id = 250277 } }
+				spouse = { add_trait = treasure_horn character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
@@ -2337,14 +2232,14 @@ character_event = {
 					NOT = { trait = dead_target }	
 					liege = { NOT = { character = ROOT } }
 				}
-				liege = { add_trait = treasure_horn character_event = { id = 250277 } }
+				liege = { add_trait = treasure_horn character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
 				limit = { 
 					NOT = { trait = dead_target }	
 				}
-				random_vassal = { add_trait = treasure_horn character_event = { id = 250277 } }
+				random_vassal = { add_trait = treasure_horn character_event = { id = ancrel.1274 } }
 			}
 			remove_trait = dead_target
 		}
@@ -2370,7 +2265,7 @@ character_event = {
 				random_child = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_knife
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -2379,7 +2274,7 @@ character_event = {
 				random_sibling = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_knife
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -2388,7 +2283,7 @@ character_event = {
 				random_dynasty_member = {
 					limit = { is_alive = yes }
 					add_trait = treasure_knife
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2397,7 +2292,7 @@ character_event = {
 				random_child = {
 					limit = { is_primary_heir = yes is_alive = yes }
 					add_trait = treasure_knife
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2406,7 +2301,7 @@ character_event = {
 				random_child = {
 					limit = { is_alive = yes }
 					add_trait = treasure_knife
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2415,7 +2310,7 @@ character_event = {
 					NOT = { trait = dead_target }
 					spouse = { is_alive = yes }		
 				}
-				spouse = { add_trait = treasure_knife character_event = { id = 250277 } }
+				spouse = { add_trait = treasure_knife character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
@@ -2423,14 +2318,14 @@ character_event = {
 					NOT = { trait = dead_target }	
 					liege = { NOT = { character = ROOT } }
 				}
-				liege = { add_trait = treasure_knife character_event = { id = 250277 } }
+				liege = { add_trait = treasure_knife character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
 				limit = { 
 					NOT = { trait = dead_target }	
 				}
-				random_vassal = { add_trait = treasure_knife character_event = { id = 250277 } }
+				random_vassal = { add_trait = treasure_knife character_event = { id = ancrel.1274 } }
 			}
 			remove_trait = dead_target
 		}
@@ -2456,7 +2351,7 @@ character_event = {
 				random_child = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_mantle_arthur
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -2465,7 +2360,7 @@ character_event = {
 				random_sibling = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_mantle_arthur
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -2474,7 +2369,7 @@ character_event = {
 				random_dynasty_member = {
 					limit = { is_alive = yes }
 					add_trait = treasure_mantle_arthur
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2483,7 +2378,7 @@ character_event = {
 				random_child = {
 					limit = { is_primary_heir = yes is_alive = yes }
 					add_trait = treasure_mantle_arthur
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2492,7 +2387,7 @@ character_event = {
 				random_child = {
 					limit = { is_alive = yes }
 					add_trait = treasure_mantle_arthur
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2501,7 +2396,7 @@ character_event = {
 					NOT = { trait = dead_target }
 					spouse = { is_alive = yes }		
 				}
-				spouse = { add_trait = treasure_mantle_arthur character_event = { id = 250277 } }
+				spouse = { add_trait = treasure_mantle_arthur character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
@@ -2509,14 +2404,14 @@ character_event = {
 					NOT = { trait = dead_target }	
 					liege = { NOT = { character = ROOT } }
 				}
-				liege = { add_trait = treasure_mantle_arthur character_event = { id = 250277 } }
+				liege = { add_trait = treasure_mantle_arthur character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
 				limit = { 
 					NOT = { trait = dead_target }	
 				}
-				random_vassal = { add_trait = treasure_mantle_arthur character_event = { id = 250277 } }
+				random_vassal = { add_trait = treasure_mantle_arthur character_event = { id = ancrel.1274 } }
 			}
 			remove_trait = dead_target
 		}
@@ -2542,7 +2437,7 @@ character_event = {
 				random_child = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_mantle_tegau
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -2551,7 +2446,7 @@ character_event = {
 				random_sibling = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_mantle_tegau
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -2560,7 +2455,7 @@ character_event = {
 				random_dynasty_member = {
 					limit = { is_alive = yes }
 					add_trait = treasure_mantle_tegau
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2569,7 +2464,7 @@ character_event = {
 				random_child = {
 					limit = { is_primary_heir = yes is_alive = yes }
 					add_trait = treasure_mantle_tegau
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2578,7 +2473,7 @@ character_event = {
 				random_child = {
 					limit = { is_alive = yes }
 					add_trait = treasure_mantle_tegau
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2587,7 +2482,7 @@ character_event = {
 					NOT = { trait = dead_target }
 					spouse = { is_alive = yes }		
 				}
-				spouse = { add_trait = treasure_mantle_tegau character_event = { id = 250277 } }
+				spouse = { add_trait = treasure_mantle_tegau character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
@@ -2595,14 +2490,14 @@ character_event = {
 					NOT = { trait = dead_target }	
 					liege = { NOT = { character = ROOT } }
 				}
-				liege = { add_trait = treasure_mantle_tegau character_event = { id = 250277 } }
+				liege = { add_trait = treasure_mantle_tegau character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
 				limit = { 
 					NOT = { trait = dead_target }	
 				}
-				random_vassal = { add_trait = treasure_mantle_tegau character_event = { id = 250277 } }
+				random_vassal = { add_trait = treasure_mantle_tegau character_event = { id = ancrel.1274 } }
 			}
 			remove_trait = dead_target
 		}
@@ -2628,7 +2523,7 @@ character_event = {
 				random_child = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_stone_and_ring
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -2637,7 +2532,7 @@ character_event = {
 				random_sibling = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_stone_and_ring
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -2646,7 +2541,7 @@ character_event = {
 				random_dynasty_member = {
 					limit = { is_alive = yes }
 					add_trait = treasure_stone_and_ring
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2655,7 +2550,7 @@ character_event = {
 				random_child = {
 					limit = { is_primary_heir = yes is_alive = yes }
 					add_trait = treasure_stone_and_ring
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2664,7 +2559,7 @@ character_event = {
 				random_child = {
 					limit = { is_alive = yes }
 					add_trait = treasure_stone_and_ring
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2673,7 +2568,7 @@ character_event = {
 					NOT = { trait = dead_target }
 					spouse = { is_alive = yes }		
 				}
-				spouse = { add_trait = treasure_stone_and_ring character_event = { id = 250277 } }
+				spouse = { add_trait = treasure_stone_and_ring character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
@@ -2681,14 +2576,14 @@ character_event = {
 					NOT = { trait = dead_target }	
 					liege = { NOT = { character = ROOT } }
 				}
-				liege = { add_trait = treasure_stone_and_ring character_event = { id = 250277 } }
+				liege = { add_trait = treasure_stone_and_ring character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
 				limit = { 
 					NOT = { trait = dead_target }	
 				}
-				random_vassal = { add_trait = treasure_stone_and_ring character_event = { id = 250277 } }
+				random_vassal = { add_trait = treasure_stone_and_ring character_event = { id = ancrel.1274 } }
 			}
 			remove_trait = dead_target
 		}
@@ -2714,7 +2609,7 @@ character_event = {
 				random_child = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_whetstone
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -2723,7 +2618,7 @@ character_event = {
 				random_sibling = {
 					limit = { dynasty = ROOT is_alive = yes }
 					add_trait = treasure_whetstone
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}	
 			}	
@@ -2732,7 +2627,7 @@ character_event = {
 				random_dynasty_member = {
 					limit = { is_alive = yes }
 					add_trait = treasure_whetstone
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2741,7 +2636,7 @@ character_event = {
 				random_child = {
 					limit = { is_primary_heir = yes is_alive = yes }
 					add_trait = treasure_whetstone
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2750,7 +2645,7 @@ character_event = {
 				random_child = {
 					limit = { is_alive = yes }
 					add_trait = treasure_whetstone
-					character_event = { id = 250277 }
+					character_event = { id = ancrel.1274 }
 					ROOT = { add_trait = dead_target }
 				}
 			}
@@ -2759,7 +2654,7 @@ character_event = {
 					NOT = { trait = dead_target }
 					spouse = { is_alive = yes }		
 				}
-				spouse = { add_trait = treasure_whetstone character_event = { id = 250277 } }
+				spouse = { add_trait = treasure_whetstone character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
@@ -2767,14 +2662,14 @@ character_event = {
 					NOT = { trait = dead_target }	
 					liege = { NOT = { character = ROOT } }
 				}
-				liege = { add_trait = treasure_whetstone character_event = { id = 250277 } }
+				liege = { add_trait = treasure_whetstone character_event = { id = ancrel.1274 } }
 				add_trait = dead_target
 			}
 			if = {
 				limit = { 
 					NOT = { trait = dead_target }	
 				}
-				random_vassal = { add_trait = treasure_whetstone character_event = { id = 250277 } }
+				random_vassal = { add_trait = treasure_whetstone character_event = { id = ancrel.1274 } }
 			}
 			remove_trait = dead_target
 		}

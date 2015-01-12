@@ -342,7 +342,7 @@ narrative_event = {
 					religion = orthodox
 					controls_religion = no
 				}
-				narrative_event = { id = ancrel.2211 }
+				narrative_event = { id = ancrel.2221 }
 			}
 		}
 	}

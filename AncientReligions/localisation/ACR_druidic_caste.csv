@@ -1,6 +1,8 @@
 #Druid Stuff ;;;;;;;;;;;;;;x
 assign_bard;You should not be seeing this (Bard Assign);French;German;;Spanish;;;;;;;;;;;x
+assign_bard_desc;you can't see this, its just to make Validator happy;French;German;;Spanish;;;;;;;;;;;x
 assign_druid;You should not be seeing this (Druid Assign);French;German;;Spanish;;;;;;;;;;;x
+assign_druid_desc;you can't see this, its just to make Validator happy;French;German;;Spanish;;;;;;;;;;;x
 invite_druid_to_court;Invite Druid to Court;French;German;;Spanish;;;;;;;;;;;x
 invite_druid_to_court_desc;Invite a Druid to your court - this can only be done every two years;French;German;;Spanish;;;;;;;;;;;x
 druid;Druid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x

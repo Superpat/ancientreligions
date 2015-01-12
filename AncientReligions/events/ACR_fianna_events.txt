@@ -3,7 +3,9 @@
 # ANCIENT RELIGIONS
 # - The Fianna
 #
-# Event ID ancrel.1150 - ancrel.1189 reserved
+# Event IDs ancrel.1150-1189 reserved
+# Event IDs ancrel.1254-1300 reserved
+# Event IDs ancrel.1333-1334 reserved
 #
 #######################################
 
@@ -154,9 +156,6 @@ character_event = {
 			OR = {
 				trait = head1
 				trait = head2
-				trait = head3
-				trait = head4
-				trait = head5
 			}
 		}
 		modifier = {
@@ -543,7 +542,7 @@ character_event = {
 			add_spouse = FROM
 		}
 		FROM = { 
-			add_trait = wolf 
+			add_trait = fian
 			move_character = ROOT
 		}
 	}
@@ -699,18 +698,6 @@ character_event = {
 		modifier = {
 			factor = 0.75
 			trait = head2
-		}
-		modifier = {
-			factor = 0.75
-			trait = head3
-		}
-		modifier = {
-			factor = 0.75
-			trait = head4
-		}
-		modifier = {
-			factor = 0.75
-			trait = head5
 		}
 		modifier = {
 			factor = 1.25
@@ -891,9 +878,9 @@ character_event = {
 	}
 }
 
-#[on_reform_religion] Fianna Reforms
+# Fianna Reforms
 character_event = {
-	id = ancrel.0009
+	id = ancrel.1186
 	hide_window = yes
 	
 	trigger = {
@@ -903,7 +890,7 @@ character_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 1
+		days = 10
 	}
 	
 	immediate = {
@@ -912,8 +899,9 @@ character_event = {
 			holder_scope = {
 				religion = druidic_reformed
 			}
-		}
+		}		
 		set_global_flag = fianna_reformed
+
 	}
 		
 	option = {
@@ -963,7 +951,8 @@ letter_event = {
 #
 # Fianna event Series
 #
-# Event ID ancrel.1254-71999 is reserved
+# Event IDs ancrel.1254-1300 reserved
+# Event IDs ancrel.1333-1334 reserved
 #
 #############################################
 #Written by Patrick Marchand

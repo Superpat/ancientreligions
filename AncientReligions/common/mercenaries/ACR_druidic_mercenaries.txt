@@ -3,7 +3,7 @@
 # Several titles can refer to the same type as well now.
 
 wolftails_composition = {
-	levy_size = 3.0
+	levy_size = 3
 	archers = 300
 	pikemen = 150
 	heavy_infantry = 150
@@ -22,4 +22,11 @@ fianna_composition = {
 	heavy_infantry = 700
 	light_infantry = 300
 	archers = 500
+}
+
+gwydion_composition = {
+	levy_size = 6
+	knights = 200
+	archers = 250
+	heavy_infantry = 250
 }

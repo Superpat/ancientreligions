@@ -34,19 +34,19 @@ obj_find_thirteen_treasures = {
 		NOT = { has_character_modifier = holding_large_feast }
 		NOT = { has_character_modifier = holding_summer_fair }
 		NOT = {	has_character_flag = holding_grand_hunt }
-		NOT = { trait = treasure_cauldron }
-		NOT = { trait = treasure_chariot }
-		NOT = { trait = treasure_chessboard }
-		NOT = { trait = treasure_coat }
-		NOT = { trait = treasure_crock_and_dish }
-		NOT = { trait = treasure_dyrnwyn }
-		NOT = { trait = treasure_halter }
-		NOT = { trait = treasure_hamper }
-		NOT = { trait = treasure_horn }
-		NOT = { trait = treasure_knife }
-		NOT = { trait = treasure_mantle_arthur }
-		NOT = { trait = treasure_stone_and_ring }
-		NOT = { trait = treasure_whetstone }
+#		NOT = { trait = treasure_cauldron }
+#		NOT = { trait = treasure_chariot }
+#		NOT = { trait = treasure_chessboard }
+#		NOT = { trait = treasure_coat }
+#		NOT = { trait = treasure_crock_and_dish }
+#		NOT = { trait = treasure_dyrnwyn }
+#		NOT = { trait = treasure_halter }
+#		NOT = { trait = treasure_hamper }
+#		NOT = { trait = treasure_horn }
+#		NOT = { trait = treasure_knife }
+#		NOT = { trait = treasure_mantle_arthur }
+#		NOT = { trait = treasure_stone_and_ring }
+#		NOT = { trait = treasure_whetstone }
 	}
 		
 	chance = {
@@ -143,9 +143,6 @@ obj_find_thirteen_treasures = {
 					religion = druidic 
 					religion = druidic_reformed
 				}
-			}
-			AND = {
-				NOT = { has_character_flag = char_found_thirteen_treasure }
 			}
 		}
 	}

@@ -1064,7 +1064,7 @@ character_event = {
 			culture = FROM
 		}
 		new_character = {
-			add_child = FROM
+			set_father = PREV
 			set_character_flag = changeling_child
 		}
 		FROM = { 

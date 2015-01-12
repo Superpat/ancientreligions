@@ -17,7 +17,7 @@ b_iona = temple
 #b_dunyveg = castle
 
 # Misc
-culture = scottish
+culture = irish
 religion = druidic
 terrain = hills
 

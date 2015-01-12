@@ -1,18 +1,20 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ;;;;;;;;;;
-HERO_RELIGION;Heroic Religion;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-HERO_RELIGION_HOME_TERRITORY;Heroic Religion in Home Territory;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-GOD_ANGUS;Angus mac Og;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-GOD_DAGHDA;The Daghda;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-GOD_MANANNAN;Manannan mac Lir;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-GOD_LUGH;Lugh;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-GOD_MACHA;Macha;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-GOD_DANA;Dana;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-GOD_NUADA;Nuada;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-druidic;Celtic;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-druidic_reformed;Druidic;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-druidic_DESC;Celtic paganism is one of the last surviving branch of the ancient druidic belief systems. A pantheon of gods and a world full of spirits , the children of Dana rule the Skies, the Earth and the Otherworld. The main gods are Dana and Nuada, Angus, the god of Youth, Macha, the horse goddess, the great Daghda, Manannan mac Lir, the Sea God and Lugh of the Long Spear. Defining features in-game:\n§Y*§! Can raid neighbors for loot\n§Y*§! Low-tech non-pagans have very low Supply Limit in Pagan counties\n§Y*§! Can declare Subjugation Wars against all other pagans\n§Y*§! Rulers are limited to Gavelkind Succession\n§Y*§! Rulers cannot declare Holy Wars\n§Y*§! Inferior at conversion and vulnerable to non-pagan missionaries\n§Y*§! Rulers lose Prestige if at peace for too long\n§Y*§! The Celtic Pagan faith can be Reformed;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-druidic_reformed_DESC;The reformed Celtic faith has a standardized liturgy etched on the many raised stones on the British Isles, telling the story of the Tuatha De Danann.. It is led by the circle of the Druids with the Arch-Druid as the religious leader of the faithful. Defining features in-game:\n§Y*§! Can raid neighbors for loot\n§Y*§! The Arch-Druid can call Great Holy Wars;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+HERO_RELIGION;Heroic Religion;;;;;;;;;;;;;x
+HERO_RELIGION_HOME_TERRITORY;Heroic Religion in Home Territory;;;;;;;;;;;;;;x
+GOD_CERNNUNOS;Cernunnos;Cernunnos;Cernunnos;;Cernunnos;;;;;;;;x
+GOD_HORNED_ONE;THE HORNED ONE;;;;;;;;;;;;;x
+GOD_ANGUS;Angus mac Og;;;;;;;;;;;;;x
+GOD_DAGHDA;The Daghda;;;;;;;;;;;;;x
+GOD_MANANNAN;Manannan mac Lir;;;;;;;;;;;;;x
+GOD_LUGH;Lugh;;;;;;;;;;;;;x
+GOD_MACHA;Macha;;;;;;;;;;;;;x
+GOD_DANA;Dannu;;;;;;;;;;;;;x
+GOD_NUADA;Nuada;;;;;;;;;;;;;x
+druidic;Celtic;;;;;;;;;;;;;x
+druidic_reformed;Druidic;;;;;;;;;;;;;x
+druidic_desc;Celtic paganism is one of the last surviving branch of the ancient druidic belief systems. A pantheon of gods and a world full of spirits, the children of Dannu rule the Skies, the Earth and the Otherworld. The main gods are Cernunnos, the Horned One, Dannu and Nuada, Angus, the god of Youth, Macha, the horse goddess, the great Daghda, Manannan mac Lir, the Sea God and Lugh of the Long Spear. Defining features in-game:\n§Y*§! Can raid neighbors for loot\n§Y*§! Low-tech non-pagans have very low Supply Limit in Pagan counties\n§Y*§! Can declare Subjugation Wars against all other pagans\n§Y*§! Rulers are limited to Gavelkind Succession\n§Y*§! Rulers cannot declare Holy Wars\n§Y*§! Inferior at conversion and vulnerable to non-pagan missionaries\n§Y*§! Rulers lose Prestige if at peace for too long\n§Y*§! Celtic Paganism is a feminist religion\n§Y*§! The Celtic Pagan faith can be Reformed;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+druidic_reformed_desc;The reformed Celtic faith has a standardized liturgy etched on the many raised stones on the British Isles, telling the story of the Tuatha De Danann. It is led by the circle of the Druids with the Arch-Druid as the religious leader of the faithful. Defining features in-game:\n§Y*§! Can raid neighbors for loot\n§Y*§! The Arch-Druid can call Great Holy Wars\n§Y*§! Druidic is a feminist religion;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 THE_STONES;The Sacred Stones;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 THE_BALLADS;The Ballads;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 DRUID;Druid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
@@ -141,3 +143,6 @@ abdication_gaelic_desc;Your injuries are a sign of weakness, following great Nua
 gaelic_abdication;For the glory of Éire!;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 unfit_gaelic_king;Unfit to rule;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 unfit_gaelic_king_desc;A serious injury to this ruler's body has made his rule illegitimate in the eyes of his people;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+;;;;;;;;;;
+d_wolftails;Wolftails;;;;;;;;;;;;;x
+EVTDESCancrel.2012;With the conversion of [From.GetBaseName] to Celtic Paganism a number of young men and women have become wrapped up in old tales of glorious battle. The bravest of these have banded together and formed the 'Wolf Tails,' a mercenary band willing to work for any brother of the faith. That is, so long as they pay...;;;;;;;;;;;;;x

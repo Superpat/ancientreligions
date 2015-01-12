@@ -17,6 +17,7 @@ Other plans include Basque, Guanche and Mesopotamian paganism, and further plans
 Current Religions:
  - Hellenic paganism
  - Celtic Druidism
+ - Egyptian paganism
 
 Ancient Religions Installation:
 
@@ -32,6 +33,9 @@ This mod has compatibility patches or instructions for the following mods: Proje
 
 
 This mod is created, owned, and maintained by Patrick Marchand and lascuela0788. If you want to include it in any publicly released mod you need our permission.
+
+Contributions:
+ - schwarherz & CK2+ team, for Egyptian pagansim
 
 
 If you encounter any issues or are wondering about anything you can ask in the Ancient Religions thread on the Paradox Forums: http://forum.paradoxplaza.com/forum/showthread.php?685812-Ancient-Religions

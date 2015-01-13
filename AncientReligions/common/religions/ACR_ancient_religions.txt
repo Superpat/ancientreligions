@@ -52,7 +52,7 @@ pagan_group = {
 		scripture_name = THE_STONES
 		priest_title = DRUID
 
-		high_god_name = { GOD_CERNNUNOS }
+		high_god_name = GOD_CERNNUNOS
 
 		god_names = {
 			GOD_ANGUS GOD_MANANNAN GOD_DAGHDA GOD_LUGH GOD_MACHA GOD_DANA GOD_NUADA GOD_HORNED_ONE
@@ -112,7 +112,7 @@ pagan_group = {
 		scripture_name = THE_BALLADS
 		priest_title = DRUID
 
-		high_god_name = { GOD_CERNNUNOS }
+		high_god_name = GOD_CERNNUNOS
 
 		god_names = {
 			GOD_ANGUS GOD_MANANNAN GOD_DAGHDA GOD_LUGH GOD_MACHA GOD_DANA GOD_NUADA GOD_HORNED_ONE

@@ -135,7 +135,7 @@ wolf = {
 		}
 	}
 	martial = 2
-	prestige = 0.15
+	monthly_character_prestige = 0.15
 
 	same_opinion = 20
 
@@ -281,6 +281,14 @@ treasure_stone_and_ring = {
 }
 
 treasure_whetstone = {
+	potential = {
+		religion_group = pagan_group
+	}
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
+	customizer = no
+}
+
+treasure_mantle_tegau = {
 	potential = {
 		religion_group = pagan_group
 	}

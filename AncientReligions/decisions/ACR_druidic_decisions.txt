@@ -136,7 +136,9 @@ decisions = {
 			prestige = 300
 			wealth = 300
 			d_druidic_reformed = {
-				is_vassal_or_below = ROOT
+				holder_scope = {
+					is_vassal_or_below = ROOT
+				}
 			}
 		}
 		effect = {

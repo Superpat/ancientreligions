@@ -181,9 +181,7 @@ decisions = {
 				religion_authority = 0.35				
 				trait = zealous 
 				trait = incapable
-				AND = {
-					culture_group = arabic # No pagan religion to assign them to
-				}
+				culture_group = arabic # No pagan religion to assign them to
 			}
 			NOT = {
 				AND = {
@@ -275,7 +273,7 @@ decisions = {
 			}
 			NOT = {	
 				AND = {
-					religion = aztec_pagan_reformed
+					religion = aztec_reformed
 					culture_group = mesoamerican
 				}
 			}	
@@ -371,7 +369,7 @@ decisions = {
 									}
 								}
 								AND = {	
-									religion = aztec_pagan
+									religion = aztec
 									ROOT = { culture_group = mesoamerican }
 								}	
 								AND = {	

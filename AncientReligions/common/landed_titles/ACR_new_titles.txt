@@ -102,7 +102,7 @@ d_red_dragons = {
 
 	strength_growth_per_century = 1.0	
 
-	dyanstic_title_names = no	
+	dynasty_title_names = no	
 }
 
 d_fianna = {
@@ -134,7 +134,7 @@ d_fianna = {
 
 	mercenary_type = fianna_composition
 
-	dyanstic_title_names = no
+	dynasty_title_names = no
 }
 
 d_anubis = {

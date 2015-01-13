@@ -176,21 +176,19 @@ hellenic_reconquest = {
 	can_use = {
 		ROOT = {
 			NOT = { has_landed_title = e_roman_empire }
-			AND = {
-				independent = yes
-				higher_tier_than = DUKE
-				religion = hellenic_pagan
-				NOT = { religion_group = FROM }
-				NOT = {
-					any_war = {
-						attacker = { character = ROOT }
-						using_cb = imperial_reconquest
-					}
+			independent = yes
+			higher_tier_than = DUKE
+			religion = hellenic_pagan
+			NOT = { religion_group = FROM }
+			NOT = {
+				any_war = {
+					attacker = { character = ROOT }
+					using_cb = imperial_reconquest
 				}
-				OR = {
-					NOT = { has_character_flag = called_imperial_reconquest }
-					had_character_flag = { flag = called_imperial_reconquest days = 1825 }
-				}
+			}
+			OR = {
+				NOT = { has_character_flag = called_imperial_reconquest }
+				had_character_flag = { flag = called_imperial_reconquest days = 1825 }
 			}
 			
 			NOT = { same_realm = FROM }

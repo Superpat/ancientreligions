@@ -1,3 +1,4 @@
+# Audax Validator "!" Ignore_1006
 # ASK_FOR_MONEY_INTERACTION_ACCEPT_EVENT =
 diploresponse_event = {
 	id = SoA.3100

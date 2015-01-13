@@ -1,3 +1,7 @@
+# Audax Validator "!" Ignore_1001
+# Audax Validator "!" Ignore_1002
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1006
 ## normal scopes(including posttitle scopes) ##
 # ROOT = receiver
 # FROM = giver

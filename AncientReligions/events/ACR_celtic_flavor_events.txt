@@ -516,7 +516,7 @@ narrative_event = {
 	}
 	option = {
 		trigger = {
-			religion_group = indian
+			religion_group = indian_group
 		}
 		name = EVTOPTCancrel.0256
 	}

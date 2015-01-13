@@ -25,7 +25,7 @@ title_court_druid;Court Druid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 title_court_druid_desc;Responsible for organising worship and sacrifices, divination, and judicial procedure in Celtic society, they are as essential to a ruler as his sword.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 title_court_bard;Court Bard;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 title_court_bard_desc;Bards were those who sang the songs recalling the tribal warriors' deeds of bravery as well as the genealogies and family histories of the ruling strata among Celtic societies. The Celtic peoples maintain an intricate oral history committed to memory and transmitted by bards. Bards facilitated the memorization of such materials by the use of metre, rhyme and other formulaic poetic devices.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-;;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;x
 ancrel.0154.desc;Typically my Bard only provides performances to a select few at my court, entertaining us with stories, histories, jokes, and more. It is time that I organize something on a grander scale for the entire community. As a display of my capacity as [Root.GetTitle], I shall host a great performance led by my Bard.;;;;;;;;;;;;;x
 ancrel.0154.a;Let me tell my Bard my thoughts.;;;;;;;;;;;;;x
 ancrel.0177.tooltip;[Root.GetTitledFirstName] discusses [Root.GetHerHis] plan with [Root.GetHerHis] Bard.;;;;;;;;;;;;;x
@@ -127,7 +127,7 @@ ancrel.0183.tooltip;Preparations for the performance are made - everybody can't 
 ancrel.0183.desc;The day of the performance has dawned. Your Bard, dressed in his finest attire, holds in his hand a kora harp - the sweet, delicate, yet powerful instrument of the Bards - as he presents himself before the community. What sort of stories will he tell? What sort of people will he mock? What ancestors will he honor? For the next few days, you and the community will bear witness to these, and more, perhaps for hours on end.\nIt is custom among the peoples of the savanna that the audience can make suggestions (or even constructive criticisms) to the Bard throughout his performance. Since you are the highest-ranked member of the community present, your Bard allows you to make a suggestion first. “What would I like to hear?” you think to yourself. There are so many things to hear of - too many, for the Bards know much. So many choices indeed!;;;;;;;;;;;;;x
 ancrel.0183.name;The Show Begins!;;;;;;;;;;;;;x
 ancrel.0183.a;I think we should start with the story about...;;;;;;;;;;;;;x
-;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;x
 EVTNAMEancrel.0183;Coming of age;French;German;;Spanish;;;;;;;;;;;x
 EVTDESCancrel.0183;Today your child comes of age. [From.GetSheHeCap] will join the clan today as the Druids present [From.GetHerHim] to the gods. You can use this opportunity to plan [From.GetHerHis] future.;French;German;;Spanish;;;;;;;;;;;x
 EVTOPTAancrel.0183;[From.GetSheHeCap] will be a warrior;French;German;;Spanish;;;;;;;;;;;x

@@ -87,8 +87,8 @@ character_event = {
 						culture = italian
 						culture = roman	
 						culture = greek
-						culture = italian_group # SwMH
-						culture = sicilian_group # SWMH
+						culture_group = italian_group # SwMH
+						culture_group = sicilian_group # SWMH
 					}
 				}
 			}
@@ -135,14 +135,18 @@ character_event = {
 			factor = 50
 			modifier = {
 				factor = 2.0
-				culture = greek
-				culture = sicilian_group # SWMH
+				OR = {
+					culture = greek
+					culture_group = sicilian_group # SWMH
+				}
 			}
 			modifier = {
 				factor = 0.50
-				culture = roman
-				culture_group = latin_group
-				culture_group = italian_group # SWMH
+				OR = {
+					culture = roman
+					culture_group = latin
+					culture_group = italian_group # SWMH
+				}
 			}
 		}
 		character_event = { id = ancrel.3002 }
@@ -186,8 +190,8 @@ character_event = {
 			modifier = {
 				factor = 0.01
 				OR = {
-					culture_group = latin_group
-					culture = italian_group # SWMH
+					culture_group = latin
+					culture_group = italian_group # SWMH
 					culture = roman
 				}
 			}
@@ -275,7 +279,7 @@ character_event = {
 				factor = 1.5
 				OR = { # Romans really liked Aeneas
 					culture = roman
-					culture_group = latin_group
+					culture_group = latin
 					culture_group = italian_group #SWMH
 				}
 			}

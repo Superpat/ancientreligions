@@ -22,7 +22,7 @@ character_event = {
 			trait = ugly
 			trait = inbred
 			trait = slow
-			trait = fat
+			trait = gluttonous
 
 			has_character_flag = personal_legend_5
 		}
@@ -218,11 +218,11 @@ character_event = {
 	desc = EVTDESCancrel.3013
 	picture = GFX_evt_roman_temple
 	border = GFX_event_normal_frame_religion
-	always = no #disabled for now
 	is_triggered_only = yes
 	capable_only = yes
 
 	trigger = {
+		always = no #disabled for now
 		has_dlc = "The Old Gods"
 		has_character_modifier = emulating_hector
 		religion = hellenic_pagan

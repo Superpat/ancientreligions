@@ -447,7 +447,7 @@ narrative_event = {
 			set_global_flag = zun_reformation
 		}
 		if = {
-			limit = { religion = druidic_pagan_reformed }
+			limit = { religion = druidic_reformed }
 			set_global_flag = zun_reformation
 		}
 	}

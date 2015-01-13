@@ -938,7 +938,7 @@ narrative_event = {
 					martial = 10
 					trait = brave
 				}
-				NOT = { trait = coward }
+				NOT = { trait = craven }
 			}
 			random_list = {
 				35 = { 
@@ -977,10 +977,8 @@ narrative_event = {
 		if = {
 			limit = {
 				NOT = { trait = brave }
-				NOT = { trait = coward }
-				AND = {
-					NOT = { martial = 10 }
-				}
+				NOT = { trait = craven }
+				NOT = { martial = 10 }
 			}
 			random_list = {
 				30 = {
@@ -1009,7 +1007,7 @@ narrative_event = {
 		}
 		if = {
 			limit = {
-				trait = coward
+				trait = craven
 			}
 			random_list = {
 				25 = {
@@ -1096,9 +1094,7 @@ narrative_event = {
 			limit = {
 				NOT = { trait = diligent }
 				NOT = { trait = slothful }
-				AND = {
-					NOT = { learning = 10 }
-				}
+				NOT = { learning = 10 }
 			}
 			random_list = {
 				35 = {

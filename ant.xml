@@ -1,7 +1,0 @@
-<project name="AncientReligions" default="copy_to_CKII_mod_folder" basedir=".">
-  <target name="copy_to_CKII_mod_folder" description="Copy from git repo to user mod folder">
-  	<copy todir="${user.home}/Documents/Paradox Interactive/Crusader Kings II/mod/AncientReligions">
-  		<fileset dir="AncientReligions" />
-  	</copy>
-  </target>
-</project>

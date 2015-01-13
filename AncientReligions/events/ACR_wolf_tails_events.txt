@@ -21,8 +21,8 @@ namespace = ancrel
 
 province_event = {
 	id = ancrel.0211
-	desc = OK
-	picture = GFX_evt_celtic_warriors
+	desc =�OK
+	picture = GFX_evt_celtic_warriors
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes

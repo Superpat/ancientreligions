@@ -1,15 +1,15 @@
 ##################################################################
 #
 # Celtic sacred symbols Events
-#
+# - Event IDs ancrel.0244-0255
 ##################################################################
 
 namespace = ancrel
 
 #Set up holy symbol
 province_event = {
-	id = ancrel.0211
-	desc = ancrel.0211.desc
+	id = ancrel.0244
+	desc = ancrel.0244.desc
 	picture = GFX_evt_Pagan_dolmen
 	
 	trigger = {
@@ -195,7 +195,7 @@ province_event = {
 		}
 	}
 	option = {
-		name = ancrel.0211.a
+		name = ancrel.0244.a
 		custom_tooltip = {
 			text = sacred_symbol_built
 		}
@@ -266,8 +266,8 @@ province_event = {
 	}
 }
 province_event = {
-	id = ancrel.0212
-	desc = ancrel.0211.desc
+	id = ancrel.0245
+	desc = ancrel.0245.desc
 	picture = GFX_evt_Pagan_dolmen
 	
 	trigger = {
@@ -307,7 +307,7 @@ province_event = {
 		days = 1
 	}
 	option = {
-		name = ancrel.0211.a
+		name = ancrel.0244.a
 		IF = {
 			limit = { province_id = 5 }
 			add_province_modifier = {
@@ -355,8 +355,8 @@ province_event = {
 
 # Remove sacred symbol
 province_event = {
-	id = ancrel.0213
-	desc = ancrel.0213.desc
+	id = ancrel.0246
+	desc = ancrel.0246.desc
 	picture = GFX_evt_Pagan_dolmen
 	
 		trigger = {
@@ -393,7 +393,7 @@ province_event = {
 	}
 	
 	option = {
-		name = ancrel.0213.a
+		name = ancrel.0246.a
 		hidden_tooltip = {
 			if = {
 				limit = {

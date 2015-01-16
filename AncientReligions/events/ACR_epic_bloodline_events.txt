@@ -196,7 +196,7 @@ character_event = {
 				}
 			}
 		}
-		add_character_modifier = { name = emulating_achilles }
+		add_character_modifier = { name = emulating_achilles days = -1 }
 	}
 	#Odysseus
 	option = {
@@ -211,7 +211,7 @@ character_event = {
 				}
 			}
 		}
-		add_character_modifier = { name = emulating_odysseus }
+		add_character_modifier = { name = emulating_odysseus days = -1 }
 	}
 	#Nestor
 	option = {
@@ -226,7 +226,7 @@ character_event = {
 				}
 			}
 		}
-		add_character_modifier = { name = emulating_nestor }
+		add_character_modifier = { name = emulating_nestor days = -1 }
 	}
 }
 
@@ -261,7 +261,7 @@ character_event = {
 				}
 			}
 		}
-		add_character_modifier = { name = emulating_hector }
+		add_character_modifier = { name = emulating_hector days = -1 }
 	}
 	#Aeneas
 	option = {
@@ -284,7 +284,7 @@ character_event = {
 				}
 			}
 		}
-		add_character_modifier = { name = emulating_aeneas }
+		add_character_modifier = { name = emulating_aeneas days = -1 }
 	}
 	#Paris
 	option = {
@@ -312,7 +312,7 @@ character_event = {
 				trait = humble
 			}
 		}
-		add_character_modifier = { name = emulating_paris }
+		add_character_modifier = { name = emulating_paris days = -1 }
 	}
 }
 

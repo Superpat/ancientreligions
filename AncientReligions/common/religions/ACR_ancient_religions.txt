@@ -27,7 +27,6 @@ pagan_group = {
 		priest_title = AUGUR
 		priests_can_marry = yes
 		female_temple_holders = no
-		allow_looting = yes
 		max_consorts = 3
 		
 		can_call_crusade = yes
@@ -89,7 +88,6 @@ pagan_group = {
 		priests_can_marry = yes
 		female_temple_holders = yes
 		feminist = yes
-		allow_looting = yes
 		max_consorts = 3
 		
 		aggression = 1.5 # AI aggression factor
@@ -149,7 +147,6 @@ pagan_group = {
 		female_temple_holders = yes
 		feminist = yes
 		defensive_attrition = yes
-		allow_looting = yes
 		max_consorts = 3
 		peace_prestige_loss = yes # Lose Prestige while at peace
 		raised_vassal_opinion_loss = no
@@ -180,12 +177,12 @@ pagan_group = {
 		
 		scripture_name = BOOK_OF_THE_DEAD
 		crusade_name = GREAT_HOLY_WAR
-		high_god_name = GOD_AMAUNET
+		high_god_name = GOD_AMON
 		god_names = {
-			GOD_AMAUNET GOD_AMON GOD_HAUHET GOD_HEH GOD_KAUKET GOD_KEK GOD_NAUNET GOD_NUN
+			GOD_AMAUNET GOD_AMON GOD_HAUHET GOD_HEH GOD_KAUKET GOD_KEK GOD_NAUNET GOD_NUN GOD_RA GOD_ISIS GOD_OSIRIS GOD_ANUBIS
 		}
 		evil_god_names = {
-			GOD_SET
+			GOD_SET GOD_APEP
 		}
 		
 		allow_rivermovement = yes
@@ -196,7 +193,6 @@ pagan_group = {
 		pc_marriage = yes
 		bs_marriage = yes
 		can_call_crusade = yes
-		allow_looting = no
 		
 		religious_clothing_head = 5
 		religious_clothing_priest = 5

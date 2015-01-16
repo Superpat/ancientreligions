@@ -15,6 +15,11 @@ GOD_NAUNET;Naunet;Naunet;Naunet;;Naunet;;;;;;;;;x
 GOD_NUN;Nun;Nun;Nun;;Nun;;;;;;;;;x
 GOD_SET;Set;Set;Set;;Set;;;;;;;;;x
 GOD_ATEN;Aten;Aton;Aten;;Aten;;;;;;;;;x
+GOD_RA;Ra;Ra;Ra;;Ra;;;;;;;;;x
+GOD_ISIS;Isis;Isis;Isis;;Isis;;;;;;;;;x
+GOD_OSIRIS;Osiris;Osiris;Osiris;;Osiris;;;;;;;;;x
+GOD_ANUBIS;Anubis;Anubis;Anubis;;Anubis;;;;;;;;;x
+GOD_APEP;Apep;Apep;Apep;;Apep;;;;;;;;;x
 #Titles;;;;;;;;;x
 d_egyptian_pagan;The Paragon Cult of Amun;Le Culte Parandon d'Amon;The Paragon Cult of Amun;;The Paragon Cult of Amun;;;;;;;;;x
 d_egyptian_pagan_adj;Cultist;Sectateur;Cultist;;Cultist;;;;;;;;;x

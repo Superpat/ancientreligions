@@ -147,3 +147,14 @@ unfit_gaelic_king_desc;A serious injury to this ruler's body has made his rule i
 d_wolftails;Wolftails;;;;;;;;;;;;;x
 d_wolftails_adj;Wolftails;;;;;;;;;;;;;x
 EVTDESCancrel.0212;With the conversion of [From.GetBaseName] to Celtic Paganism a number of young men and women have become wrapped up in old tales of glorious battle. The bravest of these have banded together and formed the 'Wolf Tails,' a mercenary band willing to work for any brother of the faith. That is, so long as they pay...;;;;;;;;;;;;;x
+#Circle of Druids;;;;;;;;;;
+CIRCLE_OF_DRUIDS;The Circle of Druids;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+NEXT_ARCH_DRUID;Successor;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+title_druid_circle_member;Member of the Circle of Druids;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+best_candidate_title_druid_circle_member;My best candidate;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+best_candidate_title_druid_circle_member_tooltip;Of all the Druids in my realm, this one is the likeliest to enter the Circle of Druids;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+expected_next_title_druid_circle_member;Expected next member;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+expected_next_title_druid_circle_member_tooltip;This druid is probably the next member of the Circle, once a position becomes available;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+SHOW_COLLEGE_OF_CARDINALS;Religious head electors;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+POPE_VOTE_SCORE;§YReligious head suitability: $SCORE$§!;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+CANDIDATE_SCORE;§YCandidate appointment score§!;FRENCH;GERMAN;SPANISH;;;;;;;;;;x

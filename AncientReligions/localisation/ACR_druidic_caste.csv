@@ -11,6 +11,8 @@ bad_druid;Wizard;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 bad_druid_desc;This druid has decided to use the ancient secrets of the druid for his own personal gain, his sacrilegious behavior is unfitting of a druid.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 EVTDESCancrel.0152;I have searched far and wide for a worthy Druid to serve at my court. He will organise worship and sacrifices, divination, and judicial procedure, encourage my warriors, and provide me counsel. At long last, one such man has arrived at my court, but I am not sure whether he is worthy... A ruler must choose his Druid wisely, after all.;French;German;;Spanish;;;;;;;;;;;x
 EVTOPTAancrel.0152;Let us meet, then.;French;German;;Spanish;;;;;;;;;;;x
+opinion_patron;New patron;;;;;;;;;;;;;;x
+opinion_new_courtier;New courtier;;;;;;;;;;;;;;x
 EVTDESCancrel.0245;I have searched far and wide for a worthy Druid to serve at my court. He will organise worship and sacrifices, divination, and judicial procedure, encourage my warriors, and provide me counsel. At long last, one such man has arrived at my court, but I am not sure whether he is worthy... A ruler must choose his Druid wisely, after all.;French;German;;Spanish;;;;;;;;;;;x
 EVTOPTAancrel.0245;Let us meet, then.;French;German;;Spanish;;;;;;;;;;;x
 EVTDESCancrel.0246;A lord must choose his Druid with care, for while all druids are wise, not all have specialised in the same teachings.;French;German;;Spanish;;;;;;;;;;;x

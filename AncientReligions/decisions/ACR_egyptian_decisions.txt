@@ -37,8 +37,8 @@ decisions = {
 					hidden = yes
 				}
 				
-				# Keep counter of number of Sed vestivals hold
-				change_variable = { which = nb_sed_vestivals value = 1 }
+				# Keep counter of number of Sed festivals hold
+				change_variable = { which = nb_sed_festivals value = 1 }
 	
 				character_event = { id = ancrel.4010 days = 15 }
 			}

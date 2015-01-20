@@ -13,5 +13,7 @@ nick_the_cunning = {
 	allow = {
 		trait = odysseus_reborn
 	}
-	chance = 100
+	chance = {
+		factor = 100
+	}
 }

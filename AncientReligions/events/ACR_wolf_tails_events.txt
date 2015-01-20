@@ -38,7 +38,6 @@ province_event = {
 		set_global_flag = wolftails_founded
 		activate_title = { title = d_wolftails status = yes }
 		hidden_tooltip = {
-			narrative_event = { id = ancrel.0212 }
 			create_character = {
 				random_traits = yes
 				religion = druidic
@@ -50,6 +49,7 @@ province_event = {
 				trait = zealous
 			}
 			new_character = {
+				narrative_event = { id = ancrel.0212 }			
 				wealth = 100
 				prestige = 100
 				piety = 50

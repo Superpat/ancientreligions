@@ -143,7 +143,7 @@ EVTOPTCancrel.2152;No, [Root.Culture.GetName] customs are superior and should be
 EVTOPTDancrel.2152;No, I will not have any walking relics in my realm!;Non, je ne veut pas de reliques vivantes sur mon domaine !;;;;;;;;;;;;x
 EVTOPTAancrel.2153;An excelent idea, let's get started immediately!;Une excellente idée, commençons immédiatement !;;;;;;;;;;;;x
 EVTOPTBancrel.2153;You'll have my persmission.;Vous aurez ma permission.;;;;;;;;;;;;x
-EVTDESCancrel.2154;[From.GetTitledFirstName] has approved the petion of [From.From.GetTitledFirstName] and allowd the burghers in [From.From.PrimaryTitle.GetName] to restore the rights and customs they think befitting citizens of a Roman city.;[From.GetTitledFirstName] a approuvé la pétition de [From.From.GetTitledFirstName] et autorisé les citoyens de [From.From.PrimaryTitle.GetName] à restaurer les droits et coutumes qu'ils pensent convenables pour des citoyens d'une ville romaine.;;;;;;;;;;;;x
+EVTDESCancrel.2154;[From.GetTitledFirstName] has approved the petition of [From.From.GetTitledFirstName] and allowd the burghers in [From.From.PrimaryTitle.GetName] to restore the rights and customs they think befitting citizens of a Roman city.;[From.GetTitledFirstName] a approuvé la pétition de [From.From.GetTitledFirstName] et autorisé les citoyens de [From.From.PrimaryTitle.GetName] à restaurer les droits et coutumes qu'ils pensent convenables pour des citoyens d'une ville romaine.;;;;;;;;;;;;x
 EVTOPTAancrel.2154;Excelent, let's get started immediately!;Excellent, mettons nous au travail tout de suite !;;;;;;;;;;;;x
 EVTOPTBancrel.2154;Good for them, I guess...;C'est bon pour eux, je suppose...;;;;;;;;;;;;x
 EVTOPTCancrel.2154;Great news!;Excellente nouvelle !;;;;;;;;;;;;x

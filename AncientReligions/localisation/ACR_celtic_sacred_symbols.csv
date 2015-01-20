@@ -37,10 +37,10 @@ give_offerings_sidhe;Offerings to the Sidhe;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 give_offerings_sidhe_desc;The spirits and minor gods of the land must also be appeased.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 prepare_offerings;Prepare a ceremony to appease the sidhe.\n;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ancrel.0244.desc;A happy day! It seems like your worthy rule has turned the attention of the gods to your lands and the discovery of a symbol sacred to your people bodes well for your continued rule.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0244.a;Glory to the gods;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0244.a;Glory to the gods!;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0245.desc;A happy day! A sacred place has been returned to the rightful rule of yor people!;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ancrel.0246.desc;This province is littered with pagan artefacts and shrines, you have your men promptly destroy them.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ancrel.0246.a;Crazy pagans;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0246.a;We must find a way to appease them!;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ancrel.0247.desc;A few dead birds, lost crops, disease... These are all signs of restlessness amongst the lesser gods and spirits of the land, it does not take long before your druids come bearing ill news. It seems like the Sidhe are angry, whether the cause of a peasant's stupidity or a warrior's cowardice, this does not bode well for the realm.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ancrel.0247.a;I must find a way to appease the Sidhe.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 sidhe_angry;Restless Sidhe;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
@@ -67,6 +67,6 @@ ancrel.0252.desc;The good news rapidly spread thoughout your lands, the offering
 ancrel.0252.a;Praise be the gods!;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 sidhe_offerings_good;Sidhe appreciate offerings;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 sidhe_offerings_good_desc;Recent offerings to the Sidhe has put this ruler in good standing with them.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0253.desc;Terrible winds scour our domain, waters appears where none was before.. It seems that the Sidhe, the ancient spirits that protect our lands have grown restless. Their antics have destroyed many of the shrines and groves that praise our protectors.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0254.desc;Through just ruling and worthy sacrifices, it seems you have managed to calm the spirits that lay siege to our lands, the freemen will now be able to completely dedicate themselves again to the support of your rule. ;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0254.a;Thank you [This.Religion.GetRandomGodNameCap];FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0254.desc;Terrible winds scour our domain, waters appears where none was before.. It seems that the Sidhe, the ancient spirits that protect our lands have grown restless. Their antics have destroyed many of the shrines and groves that praise our protectors.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0255.desc;Through just ruling and worthy sacrifices, it seems you have managed to calm the spirits that lay siege to our lands, the freemen will now be able to completely dedicate themselves again to the support of your rule. ;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0255.a;Thank you [This.Religion.GetRandomGodNameCap];FRENCH;GERMAN;;SPANISH;;;;;;;;;x

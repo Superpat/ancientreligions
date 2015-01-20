@@ -5,7 +5,8 @@
 #
 # Event IDs ancrel.0150 - 0151 
 #			ancrel.1252 - 1253
-#			ancrel.0208 - 0256
+#			ancrel.0208 - 0215
+#			ancrel.0256
 #
 ###################################
 
@@ -460,7 +461,7 @@ narrative_event = {
 
 	major = yes
 	show_ROOT = yes
-	hide_other = yes
+	hide_from = yes
 	
 	only_rulers = yes
 

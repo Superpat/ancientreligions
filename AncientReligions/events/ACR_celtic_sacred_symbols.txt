@@ -16,7 +16,7 @@ province_event = {
 		owner = {
 			OR = {
 				religion = druidic
-				religion = druidic_reformed			
+				religion = druidic_reformed
 			}
 			piety = 250
 			NOT = {
@@ -642,13 +642,199 @@ province_event = {
 	}
 }
 
-# Lost sacred symbol
-province_event = {
+#Offerings start
+character_event = {
+	id = ancrel.0248
+	desc = ancrel.0248.desc
+	picture = GFX_evt_Pagan_dolmen
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ancrel.0248.a
+		scaled_wealth = -0.25
+		hidden_tooltip = {
+			character_event = { id = ancrel.0253 days = 5 }
+		}
+	}
+	option = {
+		name = ancrel.0248.b
+		trigger = {
+			OR = {
+				any_vassal = {
+					has_minor_title = title_court_bard
+				}
+				any_courtier = {
+					has_minor_title = title_court_bard
+				}
+			}
+		}
+		hidden_tooltip = {
+			character_event = { id = ancrel.0249 days = 5 }
+		}
+	}
+	
+}
+
+#Offerings middle (Poem)
+character_event = {
+	id = ancrel.0249
+	desc = ancrel.0249.desc
+	picture = GFX_evt_Pagan_dolmen
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ancrel.0249.a
+		if = {
+			limit = {
+				NOT = { learning = 8 }
+			}
+			random_list = {
+				35 = { character_event = { id = ancrel.0250 days = 2 tooltip = "ancrel.0250.tooltip" } } #bad
+				50 = { character_event = { id = ancrel.0251 days = 2 tooltip = "ancrel.0251.tooltip" } } #neutral
+				15 = { character_event = { id = ancrel.0252 days = 2 tooltip = "ancrel.0252.tooltip" } } #good
+			}
+		}
+		if = {
+			limit = {
+				learning = 8
+				NOT = { learning = 16 }
+			}
+			random_list = {
+				25 = { character_event = { id = ancrel.0250 days = 2 tooltip = "ancrel.0250.tooltip" } } #bad
+				50 = { character_event = { id = ancrel.0251 days = 2 tooltip = "ancrel.0251.tooltip" } } #neutral
+				25 = { character_event = { id = ancrel.0252 days = 2 tooltip = "ancrel.0252.tooltip" } } #good
+			}
+		}
+		if = {
+			limit = {
+				learning = 16
+			}
+			random_list = {
+				15 = { character_event = { id = ancrel.0250 days = 2 tooltip = "ancrel.0250.tooltip" } } #bad
+				50 = { character_event = { id = ancrel.0251 days = 2 tooltip = "ancrel.0251.tooltip" } } #neutral
+				35 = { character_event = { id = ancrel.0252 days = 2 tooltip = "ancrel.0252.tooltip" } } #good
+			}
+		}
+	}
+	
+}
+
+#Offerings bad
+character_event = {
+	id = ancrel.0250
+	desc = ancrel.0250.desc
+	picture = GFX_evt_Pagan_dolmen
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ancrel.0250.a
+		prestige = -25
+		piety = -15
+		clr_character_flag = sidhe_offerings_giving
+		add_character_modifier = {
+			name = sidhe_offerings_bad
+			duration = 730
+		}
+	}
+	
+}
+
+#Offerings neutral
+character_event = {
+	id = ancrel.0251
+	desc = ancrel.0251.desc
+	picture = GFX_evt_Pagan_dolmen
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ancrel.0251.a
+		piety = 5
+		clr_character_flag = sidhe_offerings_giving
+		add_character_modifier = {
+			name = sidhe_offerings_neutral
+			duration = 730
+		}
+	}
+	
+}
+
+#Offerings good
+character_event = {
+	id = ancrel.0252
+	desc = ancrel.0252.desc
+	picture = GFX_evt_Pagan_dolmen
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ancrel.0252.a
+		prestige = 25
+		piety = 15
+		clr_character_flag = sidhe_offerings_giving
+		add_character_modifier = {
+			name = sidhe_offerings_good
+			duration = 730
+		}
+	}
+	
+}
+
+#Offerings middle (Gold)
+character_event = {
 	id = ancrel.0253
 	desc = ancrel.0253.desc
 	picture = GFX_evt_Pagan_dolmen
 	
-		trigger = {
+	is_triggered_only = yes
+	
+	option = {
+		name = ancrel.0253.a
+		if = {
+			limit = {
+				NOT = { stewardship = 8 }
+			}
+			random_list = {
+				35 = { character_event = { id = ancrel.0250 days = 2 tooltip = "ancrel.0250.tooltip" } } #bad
+				50 = { character_event = { id = ancrel.0251 days = 2 tooltip = "ancrel.0251.tooltip" } } #neutral
+				15 = { character_event = { id = ancrel.0252 days = 2 tooltip = "ancrel.0252.tooltip" } } #good
+			}
+		}
+		if = {
+			limit = {
+				stewardship = 8
+				NOT = { stewardship = 16 }
+			}
+			random_list = {
+				25 = { character_event = { id = ancrel.0250 days = 2 tooltip = "ancrel.0250.tooltip" } } #bad
+				50 = { character_event = { id = ancrel.0251 days = 2 tooltip = "ancrel.0251.tooltip" } } #neutral
+				25 = { character_event = { id = ancrel.0252 days = 2 tooltip = "ancrel.0252.tooltip" } } #good
+			}
+		}
+		if = {
+			limit = {
+				stewardship = 16
+			}
+			random_list = {
+				15 = { character_event = { id = ancrel.0250 days = 2 tooltip = "ancrel.0250.tooltip" } } #bad
+				50 = { character_event = { id = ancrel.0251 days = 2 tooltip = "ancrel.0251.tooltip" } } #neutral
+				35 = { character_event = { id = ancrel.0252 days = 2 tooltip = "ancrel.0252.tooltip" } } #good
+			}
+		}
+	}
+	
+}
+
+# Lost sacred symbol
+province_event = {
+	id = ancrel.0254
+	desc = ancrel.0254.desc
+	picture = GFX_evt_Pagan_dolmen
+	
+	trigger = {
 		owner = {
 			OR = {
 				religion = druidic
@@ -791,7 +977,7 @@ province_event = {
 	}
 	
 	option = {
-		name = ancrel.0253.a
+		name = ancrel.0254.a
 		hidden_tooltip = {
 			if = {
 				limit = {
@@ -859,8 +1045,8 @@ province_event = {
 
 # Spirits are calmed
 province_event = {
-	id = ancrel.0254
-	desc = ancrel.0254.desc
+	id = ancrel.0255
+	desc = ancrel.0255.desc
 	picture = GFX_evt_Pagan_dolmen
 	
 	trigger = {
@@ -994,197 +1180,7 @@ province_event = {
 	}
 	
 	option = {
-		name = ancrel.0254.a
+		name = ancrel.0255.a
 		remove_province_modifier = sidhe_angry
 	}
-}
-
-##################################################################
-# Offerings
-##################################################################
-
-#Offerings start
-character_event = {
-	id = ancrel.0248
-	desc = ancrel.0248.desc
-	picture = GFX_evt_Pagan_dolmen
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = ancrel.0248.a
-		scaled_wealth = -0.25
-		hidden_tooltip = {
-			character_event = { id = ancrel.0253 days = 5 }
-		}
-	}
-	option = {
-		name = ancrel.0248.b
-		trigger = {
-			OR = {
-				any_vassal = {
-					has_minor_title = title_court_bard
-				}
-				any_courtier = {
-					has_minor_title = title_court_bard
-				}
-			}
-		}
-		hidden_tooltip = {
-			character_event = { id = ancrel.0249 days = 5 }
-		}
-	}
-	
-}
-
-#Offerings middle (Poem)
-character_event = {
-	id = ancrel.0249
-	desc = ancrel.0249.desc
-	picture = GFX_evt_Pagan_dolmen
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = ancrel.0249.a
-		if = {
-			limit = {
-				NOT = { learning = 8 }
-			}
-			random_list = {
-				35 = { character_event = { id = ancrel.0250 days = 2 tooltip = "ancrel.0250.tooltip" } } #bad
-				50 = { character_event = { id = ancrel.0251 days = 2 tooltip = "ancrel.0251.tooltip" } } #neutral
-				15 = { character_event = { id = ancrel.0252 days = 2 tooltip = "ancrel.0252.tooltip" } } #good
-			}
-		}
-		if = {
-			limit = {
-				learning = 8
-				NOT = { learning = 16 }
-			}
-			random_list = {
-				25 = { character_event = { id = ancrel.0250 days = 2 tooltip = "ancrel.0250.tooltip" } } #bad
-				50 = { character_event = { id = ancrel.0251 days = 2 tooltip = "ancrel.0251.tooltip" } } #neutral
-				25 = { character_event = { id = ancrel.0252 days = 2 tooltip = "ancrel.0252.tooltip" } } #good
-			}
-		}
-		if = {
-			limit = {
-				learning = 16
-			}
-			random_list = {
-				15 = { character_event = { id = ancrel.0250 days = 2 tooltip = "ancrel.0250.tooltip" } } #bad
-				50 = { character_event = { id = ancrel.0251 days = 2 tooltip = "ancrel.0251.tooltip" } } #neutral
-				35 = { character_event = { id = ancrel.0252 days = 2 tooltip = "ancrel.0252.tooltip" } } #good
-			}
-		}
-	}
-	
-}
-
-#Offerings middle (Gold)
-character_event = {
-	id = ancrel.0253
-	desc = ancrel.0253.desc
-	picture = GFX_evt_Pagan_dolmen
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = ancrel.0253.a
-		if = {
-			limit = {
-				NOT = { stewardship = 8 }
-			}
-			random_list = {
-				35 = { character_event = { id = ancrel.0250 days = 2 tooltip = "ancrel.0250.tooltip" } } #bad
-				50 = { character_event = { id = ancrel.0251 days = 2 tooltip = "ancrel.0251.tooltip" } } #neutral
-				15 = { character_event = { id = ancrel.0252 days = 2 tooltip = "ancrel.0252.tooltip" } } #good
-			}
-		}
-		if = {
-			limit = {
-				stewardship = 8
-				NOT = { stewardship = 16 }
-			}
-			random_list = {
-				25 = { character_event = { id = ancrel.0250 days = 2 tooltip = "ancrel.0250.tooltip" } } #bad
-				50 = { character_event = { id = ancrel.0251 days = 2 tooltip = "ancrel.0251.tooltip" } } #neutral
-				25 = { character_event = { id = ancrel.0252 days = 2 tooltip = "ancrel.0252.tooltip" } } #good
-			}
-		}
-		if = {
-			limit = {
-				stewardship = 16
-			}
-			random_list = {
-				15 = { character_event = { id = ancrel.0250 days = 2 tooltip = "ancrel.0250.tooltip" } } #bad
-				50 = { character_event = { id = ancrel.0251 days = 2 tooltip = "ancrel.0251.tooltip" } } #neutral
-				35 = { character_event = { id = ancrel.0252 days = 2 tooltip = "ancrel.0252.tooltip" } } #good
-			}
-		}
-	}
-	
-}
-
-#Offerings bad
-character_event = {
-	id = ancrel.0250
-	desc = ancrel.0250.desc
-	picture = GFX_evt_Pagan_dolmen
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = ancrel.0250.a
-		prestige = -25
-		piety = -15
-		clr_character_flag = sidhe_offerings_giving
-		add_character_modifier = {
-			name = sidhe_offerings_bad
-			duration = 730
-		}
-	}
-	
-}
-
-#Offerings neutral
-character_event = {
-	id = ancrel.0251
-	desc = ancrel.0251.desc
-	picture = GFX_evt_Pagan_dolmen
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = ancrel.0251.a
-		piety = 5
-		clr_character_flag = sidhe_offerings_giving
-		add_character_modifier = {
-			name = sidhe_offerings_neutral
-			duration = 730
-		}
-	}
-	
-}
-
-#Offerings good
-character_event = {
-	id = ancrel.0252
-	desc = ancrel.0252.desc
-	picture = GFX_evt_Pagan_dolmen
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = ancrel.0252.a
-		prestige = 25
-		piety = 15
-		clr_character_flag = sidhe_offerings_giving
-		add_character_modifier = {
-			name = sidhe_offerings_good
-			duration = 730
-		}
-	}
-	
 }

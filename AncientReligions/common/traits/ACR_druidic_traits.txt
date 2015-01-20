@@ -296,7 +296,8 @@ treasure_mantle_tegau = {
 	customizer = no
 }
 
-dead_target = {
-	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
-	customizer = no
-}
+# This seems to only be used by 13 Treasures event chain as some kind of maintenance
+#dead_target = {
+#	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
+#	customizer = no
+#}

@@ -1,10 +1,10 @@
+# Audax Validator "!" Ignore_ALL
 #########################################
 # Ancient Religions Reborn										
 # - Thirteen Treasures of Britain events  
 # 
 # Event IDs ancrel.1261 - 1275
 #########################################
-
 namespace = ancrel
 
 # Starting Event

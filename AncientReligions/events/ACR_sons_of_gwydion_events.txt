@@ -40,7 +40,7 @@ narrative_event = {
 	}
 }
 
-# The sons of Gwydion Founded (celtic_pagan)
+# The sons of Gwydion Founded (Druidic)
 narrative_event = {
 	id = ancrel.0111
 	title = EVTNAMEancrel.0110

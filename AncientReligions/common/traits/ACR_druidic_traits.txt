@@ -142,7 +142,7 @@ wolf = {
 	cannot_inherit = yes
 }
 
-learning_celtic_pagan_arts = {
+learning_druidic_arts = {
 	
 	potential = {
 		religion_group = pagan_group

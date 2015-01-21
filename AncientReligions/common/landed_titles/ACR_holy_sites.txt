@@ -15,7 +15,7 @@
 #	holy_site = hellenic_pagan
 #}
 
-### celtic_pagan Pagan
+### Celtic Pagan
 
 b_locmine = {
 	holy_site = celtic_pagan

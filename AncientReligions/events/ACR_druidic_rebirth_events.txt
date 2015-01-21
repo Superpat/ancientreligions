@@ -363,7 +363,7 @@ character_event = {
 	}
 }
 
-# override of vanilla event to support celtic_pagan
+# override of vanilla event to support Druidic
 #[on_reform_religion]
 narrative_event = {
 	id = ancrel.0009

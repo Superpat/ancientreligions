@@ -335,7 +335,7 @@ character_event = {
 		}
 	}
 	
-	option = { # Favor celtic_pagan caste
+	option = { # Favor Druidic caste
 		name = EVTOPTBancrel.1199
 		custom_tooltip = {
 			text = give_laws_ollam

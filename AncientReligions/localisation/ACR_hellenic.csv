@@ -61,7 +61,7 @@ temple_county_hellenic_pagan;Pontificate;;;;;;;;;;;;;x
 temple_county_of_hellenic_pagan;Pontificate of;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;
 d_hellenic_pagan;The Pontificate Maxima;Le Pontificat Maxima;;;;;;;;;;;;x
-d_hellenic_pagan_adj;Pontifex;Pontifex;Pontifex;;Pontifex;;;;;;;;;x
+d_hellenic_pagan_adj;Pontifical;;;;;;;;;;;;x
 PONTIFEX_MAXIMUS;Pontifex Maximus;Pontifex Maximus;Pontifex Maximus;;Pontifex Maximus;;;;;;;;;x
 PONTIFEX_MAXIMUS_FOA;Your Holiness;Sa Sainteté;Eure Heiligkeit;;Su Santidad;;;;;;;;;x
 #;;;;;;;;;;;;;;

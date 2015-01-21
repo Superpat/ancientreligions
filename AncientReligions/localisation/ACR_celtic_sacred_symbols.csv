@@ -67,7 +67,7 @@ ancrel.0252.desc;The good news rapidly spread thoughout your lands, the offering
 ancrel.0252.a;Praise be the gods!;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 sidhe_offerings_good;Sidhe appreciate offerings;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 sidhe_offerings_good_desc;Recent offerings to the Sidhe has put this ruler in good standing with them.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0254.desc;Terrible winds scour our domain, waters appears where none was before.. It seems that the Sidhe, the ancient spirits that protect our lands have grown restless. Their antics have destroyed many of the shrines and groves that praise our protectors.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0254.a;May the gods forgive me...;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ancrel.0255.desc;Through just ruling and worthy sacrifices, it seems you have managed to calm the spirits that lay siege to our lands, the freemen will now be able to completely dedicate themselves again to the support of your rule. ;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0254.desc;Terrible winds scour our domain, waters appears where none was before... It seems that the Sidhe, the ancient spirits that protect our lands have grown restless. Their antics have destroyed many of the shrines and groves that praise our protectors.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0254.a;May [This.Religion.GetRandomGodNameCap] help us !;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ancrel.0255.desc;Through just ruling and worthy sacrifices, it seems you have managed to calm the spirits that lay siege to our lands, the freemen will now be able to completely dedicate themselves again to the support of your rule.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ancrel.0255.a;Thank you [This.Religion.GetRandomGodNameCap];FRENCH;GERMAN;;SPANISH;;;;;;;;;x

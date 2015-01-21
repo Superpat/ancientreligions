@@ -1,6 +1,6 @@
 namespace = ancrel
 
-### Druidic warnings
+### celtic_pagan warnings
 
 # Druid Warns About Child (AI Spouse)
 character_event = {

@@ -15,27 +15,27 @@
 #	holy_site = hellenic_pagan
 #}
 
-### Druidic Pagan
+### celtic_pagan Pagan
 
 b_locmine = {
-	holy_site = druidic
-	holy_site = druidic_reformed
+	holy_site = celtic_pagan
+	holy_site = celtic_pagan_reformed
 }
 b_waltham = {
-	holy_site = druidic
-	holy_site = druidic_reformed
+	holy_site = celtic_pagan
+	holy_site = celtic_pagan_reformed
 }
 b_bangor_fawr = {
-	holy_site = druidic
-	holy_site = druidic_reformed
+	holy_site = celtic_pagan
+	holy_site = celtic_pagan_reformed
 }
 b_whithorn = {
-	holy_site = druidic
-	holy_site = druidic_reformed
+	holy_site = celtic_pagan
+	holy_site = celtic_pagan_reformed
 }
 b_mellifont = {
-	holy_site = druidic
-	holy_site = druidic_reformed
+	holy_site = celtic_pagan
+	holy_site = celtic_pagan_reformed
 }
 
 # Egyptian pagan

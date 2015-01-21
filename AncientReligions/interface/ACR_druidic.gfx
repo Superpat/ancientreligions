@@ -43,8 +43,8 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_learning_druidic_arts"
-		texturefile = "gfx/traits/ACR/learning_druidic_arts.dds"
+		name = "GFX_trait_learning_celtic_pagan_arts"
+		texturefile = "gfx/traits/ACR/learning_celtic_pagan_arts.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -161,8 +161,8 @@ spriteTypes = {
 		allwaystransparent = yes
 	}
 	spriteType = {
-		name = "GFX_evt_druidic_sacrifice"
-		texturefile = "gfx\\event_pictures\ACR\druidic_sacrifice.tga"
+		name = "GFX_evt_celtic_pagan_sacrifice"
+		texturefile = "gfx\\event_pictures\ACR\celtic_pagan_sacrifice.tga"
 		allwaystransparent = yes
 	}
 	spriteType = {

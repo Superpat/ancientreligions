@@ -68,6 +68,7 @@ EVTOPTB_ancrel_4017;Who cares ? This is a stupid tradition anyway.;;;;;;;;;;x
 EVTOPTC_ancrel_4017;I'll make sure someone gets punished for this.;;;;;;;;;;x
 held_sed_festival;Held a Sed festival;;;;;;;;;;x
 held_failed_sed_festival;Held a failed Sed festival;;;;;;;;;;x
+held_sed_festival_timer;timer;timer;timer;;timer;;;;;;;;;x
 #Chronicle;;;;;;;;;;
 CHRONICLE_EGYPTIAN_PRIESTHOOD;Backed by [Root.GetTitledName]'s contributions and the growing power of the reborn Kemetic faith, [Prev.GetDynName] was installed as the Paragon Xroj, the first high priest of a new Kemetic era.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 CHRONICLE_ANUBIS_GUARD;Backed by [Root.GetTitledName]'s contributions and the growing power of the reborn Kemetic faith, the Anubis Guard, an order of chariot archers and spears, was established under the command of [Prev.GetDynName].;FRENCH;GERMAN;;SPANISH;;;;;;;;;x

@@ -39,7 +39,7 @@ EVTOPTFancrel.1199;I will favor the fianna;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 EVTOPTGancrel.1199;I will favor the birds!;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 give_laws_ollam;The Ollamh distribues the new laws to your vassals\n;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 favored_warriors;Favors the Warrior caste;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-favored_druids;Favors the Druidic caste;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+favored_druids;Favors the celtic_pagan caste;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 favored_merchants;Favors the Merchant caste;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 favored_balance;Treats every caste equaly;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 favored_crown;Favors the Crown;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
@@ -47,7 +47,7 @@ favored_fianna;Favors the Fianna;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 favored_birds;Favors the Birds;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 EVTDESCancrel.1200;The Ollamh, aided by other members of the bardic caste, has given out the new laws that will mark [From.GetTitledFirstName]'s reign. "By royal decree, I, [From.GetTitledFirstName], have decided to implement the following laws: The noble families will get expanded rights in the..."\nThe new laws seem heavily biased towards the warrior castes.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 EVTOPTAancrel.1200;Very Well;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
-EVTDESCancrel.1201;The Ollamh, aided by other members of the bardic caste, has given out the new laws that will mark [From.GetTitledFirstName]'s reign. "By royal decree, I, [From.GetTitledFirstName], have decided to implement the following laws: The noble Druids and Filidh will have the right to ..."\nThe new laws seem heavily biased towards the druidic castes.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+EVTDESCancrel.1201;The Ollamh, aided by other members of the bardic caste, has given out the new laws that will mark [From.GetTitledFirstName]'s reign. "By royal decree, I, [From.GetTitledFirstName], have decided to implement the following laws: The noble Druids and Filidh will have the right to ..."\nThe new laws seem heavily biased towards the celtic_pagan castes.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 EVTOPTAancrel.1201;Very Well;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 EVTDESCancrel.1202;The Ollamh, aided by other members of the bardic caste, has given out the new laws that will mark [From.GetTitledFirstName]'s reign. "By royal decree, I, [From.GetTitledFirstName], have decided to implement the following laws: Trade is of the utmost importance and thus..."\nThe new laws seem heavily biased towards the merchant castes.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 EVTOPTAancrel.1202;Very Well;FRENCH;GERMAN;SPANISH;;;;;;;;;;x

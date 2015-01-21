@@ -31,9 +31,9 @@ character_event = {
 				culture = frankish
 				culture = occitan
 			}
-			NOT = { religion = druidic}
+			NOT = { religion = celtic_pagan}
 		}
-		religion = druidic
+		religion = celtic_pagan
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical

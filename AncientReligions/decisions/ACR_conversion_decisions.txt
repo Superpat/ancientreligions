@@ -226,7 +226,7 @@ decisions = {
 			}
 			NOT = {	
 				AND = {
-					religion = druidic_reformed
+					religion = celtic_pagan_reformed
 					OR = {
 						culture_group = celtic
 						culture_group = west_germanic
@@ -324,7 +324,7 @@ decisions = {
 									}
 								}
 								AND = {
-									religion = druidic
+									religion = celtic_pagan
 									ROOT = {
 										OR = {
 											culture_group = celtic
@@ -453,8 +453,8 @@ decisions = {
 				religion = west_african_pagan_reformed
 			}
 			if = {
-				limit = { religion = druidic }
-				religion = druidic_reformed
+				limit = { religion = celtic_pagan }
+				religion = celtic_pagan_reformed
 			}
 			
 			hidden_tooltip = {

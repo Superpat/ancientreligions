@@ -1,7 +1,7 @@
 #######################################
 #
 # ANCIENT RELIGIONS
-# - Druidic Headhunters
+# - celtic_pagan Headhunters
 #
 # Event ID ancrel.0010 - ancrel.0019 reserved
 #
@@ -11,7 +11,7 @@
 
 namespace = ancrel
 
-#[on_combat_pulse] Druidic character becomes reknowned headhunter
+#[on_combat_pulse] celtic_pagan character becomes reknowned headhunter
 character_event = {
 	id = ancrel.0010
 	desc = EVTDESCancrel.0010
@@ -30,8 +30,8 @@ character_event = {
 		is_alive = yes
 		NOT = { trait = head1 }
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
 		}
 		OR = {
 			trait = brave
@@ -159,7 +159,7 @@ character_event = {
 	}
 }
 
-#[on_combat_pulse] Druidic character becomes legend
+#[on_combat_pulse] celtic_pagan character becomes legend
 character_event = {
 	id = ancrel.0011
 	desc = EVTDESCancrel.0011
@@ -186,8 +186,8 @@ character_event = {
 		}
 		NOT = { trait = head2 }
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
 		}
 	}
 	

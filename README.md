@@ -10,7 +10,7 @@ For Crusader Kings 2 Version: 2.3
 
 
 This mod aims at recreating dead or pseudo-dead religions in vanilla Crusader Kings 2.
-This version features the ancient cults of the celts, the Druidic religion, and the ancient religion of the Roman and Greek peoples. 
+This version features the ancient cults of the celts, the celtic_pagan religion, and the ancient religion of the Roman and Greek peoples. 
 Other plans include Basque, Guanche and Mesopotamian paganism, and further plans include Egyptian paganism and the Cult of Cthulhu.
 
 

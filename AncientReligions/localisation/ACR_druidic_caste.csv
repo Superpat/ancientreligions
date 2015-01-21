@@ -40,22 +40,22 @@ path_of_the_druids;Your child will undergo training with the druids\n;French;Ger
 EVTNAMEancrel.0185;The Path of the Druids;;;;;;;;;;;;;x
 EVTDESCancrel.0185;An old man has arrived, dressed in the garbs of a druid, he is here to take your child with him to a sacred grove deep inside the forest.\nThere [From.GetSheHe] will be taught the secret arts of the druids, this training will take many years and novices have been known to come back changed, or worse... dead.;;;;;;;;;;;;;x
 EVTOPTAancrel.0185;Be safe my child;;;;;;;;;;;;;x
-EVTDESCancrel.0187;Your child has expressed a peculiar wish, unsatisfied with the life of a warrior, [From.GetSheHe] wishes to learn the druidic arts and become closer to the gods. \nBut that way is strange and dangerous, not all survive it.;;;;;;;;;;;;;x
+EVTDESCancrel.0187;Your child has expressed a peculiar wish, unsatisfied with the life of a warrior, [From.GetSheHe] wishes to learn the celtic_pagan arts and become closer to the gods. \nBut that way is strange and dangerous, not all survive it.;;;;;;;;;;;;;x
 EVTOPTAancrel.0187;I will not allow it!;;;;;;;;;;;;;x
 EVTOPTBancrel.0187;Yes, this will bring great honor to our family.;;;;;;;;;;;;;x
-return_from_druidic_training;Your child has learned much\n;FRENCH;GERMAN;;SPANISH;;;;;;;;;;;;;;x
-return_from_druidic_training_player;You have learned much\n;FRENCH;GERMAN;;SPANISH;;;;;;;;;;;;;;x
+return_from_celtic_pagan_training;Your child has learned much\n;FRENCH;GERMAN;;SPANISH;;;;;;;;;;;;;;x
+return_from_celtic_pagan_training_player;You have learned much\n;FRENCH;GERMAN;;SPANISH;;;;;;;;;;;;;;x
 EVTDESCancrel.0189;The night is dark and cold when your servants wake you, a visitor has come to see you. Suddenly, a black shape pushes them to the side and approaches your bedside, you reach for your sword but slowly realize who it is, [From.GetTitledFirstName], back from the forests of the druids!;;;;;;;;;;;;;x
 EVTOPTAancrel.0189;[From.GetFirstName]! You've... changed!;;;;;;;;;;;;;x
 EVTDESCancrel.0191;On of the supplicants at your court today is hopping on one leg, trying to keep [From.GetHerHis] balance with the help of a knoted stick of wood. [From.GetSheHe] has a familiar look and as [From.GetSheHe] approaches your throne, you finally understand why, it is [From.GetTitledFirstName], back from the druids!;;;;;;;;;;;;;x
 EVTOPTAancrel.0191;My child, what have the gods done to you?;;;;;;;;;;;;;x
-EVTDESCancrel.0193;[From.GetTitledFirstName] is back from the druidic groves, there he has learned much of the ways of the gods and our people, he has sung numerous stories and even come up with a few of his own.;;;;;;;;;;;;;x
+EVTDESCancrel.0193;[From.GetTitledFirstName] is back from the celtic_pagan groves, there he has learned much of the ways of the gods and our people, he has sung numerous stories and even come up with a few of his own.;;;;;;;;;;;;;x
 EVTOPTAancrel.0193;I wish to hear of these new stories!;;;;;;;;;;;;;x
 EVTDESCancrel.0195;« My lord!, says own of your guards, a madman is dancing on the roof of the stables, we tried to get him down, but he just screams gibberish at us!» \n You follow your guards to the courtyard and soon understand that the madman is in fact,[From.GetTitledFirstName], struck mad by the gods.;;;;;;;;;;;;;x
 EVTOPTAancrel.0195;We shall share this burden my child;;;;;;;;;;;;;x
 EVTDESCancrel.0197;[From.GetTitledFirstName] has returned from the groves of the druids, but with a strange burden, a newborn child. While he refuses to talk of the mother, the childs wild eyes bode strange wisdom.;;;;;;;;;;;;;x
 EVTOPTAancrel.0197;I will love him as my own.;;;;;;;;;;;;;x
-EVTDESCancrel.0199;Knowing of [From.GetTitledFirstName] impending return, you have prepared the most magnificent chambers for him. But, ever since his return, he has been spending his nights and days in the castle grove, delving more and more into the druidic lore, stopping only to speak of the wonders of the gods.;;;;;;;;;;;;;x
+EVTDESCancrel.0199;Knowing of [From.GetTitledFirstName] impending return, you have prepared the most magnificent chambers for him. But, ever since his return, he has been spending his nights and days in the castle grove, delving more and more into the celtic_pagan lore, stopping only to speak of the wonders of the gods.;;;;;;;;;;;;;x
 EVTOPTAancrel.0199;But what about the pleasures of life?;;;;;;;;;;;;;x
 EVTDESCancrel.0201;The secrets of the druids are many and earthly problems lose of their potency when confronted to those of the otherworld, thus [From.GetTitledFirstName] has returned changed from his traning with the druids, he seems much more at peace and patient.;;;;;;;;;;;;;x
 EVTOPTAancrel.0201;Ok;;;;;;;;;;;;;x
@@ -65,7 +65,7 @@ EVTDESCancrel.0205;Child returns with gifts;;;;;;;;;;;;;x
 EVTOPTAancrel.0205;Ok;;;;;;;;;;;;;x
 EVTDESCancrel.0206;Father dies, Player Child is heir;;;;;;;;;;;;;x
 EVTOPTAancrel.0206;Ok;;;;;;;;;;;;;x
-learning_druidic_arts;Novice;French;German;;Spanish;;;;;;;;;;;x
-learning_druidic_arts_desc;This character is learning the secrets arts and rituals of the Druids, he has much to learn;Franch;German;;Spanish;;;;;;;;;;;;x
+learning_celtic_pagan_arts;Novice;French;German;;Spanish;;;;;;;;;;;x
+learning_celtic_pagan_arts_desc;This character is learning the secrets arts and rituals of the Druids, he has much to learn;Franch;German;;Spanish;;;;;;;;;;;;x
 opinion_patron;My Patron;My Patron;My Patron;;My Patron;;;;;;;;;;;x
 opinion_new_courtier;New to the Court;New to the Court;New to the Court;;New to the Court;;;;;;;;;;;x

@@ -1,6 +1,7 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 #;;;;;;;;;;;;
 d_red_dragons;Red Dragon Knights;;;;;;;;;;;;;x
+d_red_dragons_adj;Dragon;Dragon;Dragon;;Dragon;;;;;;;;;x
 donate_money_to_red_dragons;Donate money to the Red Dragon Knights;FRENCH;GERMAN;SPANISH;;;;;;;;;;;x
 donate_money_to_red_dragons_desc;I can donate money to the Red Dragon Knights in exchange for Piety and lifelong respect from the [Root.Religion.GetName] Church.;;;;;;;;;;;;;;x
 expel_red_dragons;Expel the Red Dragons from your Realm;;;;;;;;;;;;;x

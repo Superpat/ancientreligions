@@ -3,7 +3,7 @@
 # ANCIENT RELIGIONS
 # - Druidic Caste Events
 #
-# Event ID ancrel.0152 - ancrel.0207, ancrel.0211, ancrel.0212, ancrel.0260, ancrel.0261 reserved
+# Event ID ancrel.0152 - ancrel.0212
 #
 #######################################
 
@@ -11,7 +11,7 @@
 
 namespace = ancrel
 
-# Character gets Druid
+# Character gets priestly Druid
 character_event = {
 	id = ancrel.0152
 	desc = EVTDESCancrel.0152
@@ -167,16 +167,71 @@ character_event = {
 	}
 }
 
-# Character gets Druid
+#[on_yearly_pulse] Liege doesn't have a Druid - fired on a yearly basis to remind players
 character_event = {
-	id = ancrel.0245
-	desc = EVTDESCancrel.0245
+	id = ancrel.0153
+	desc = EVTDESCancrel.0153
+	picture = GFX_evt_druid
+	
+	is_triggered_only = yes
+	
+	only_rulers = yes
+	
+	trigger = {
+		ai = no
+		OR = {
+			religion = druidic
+			religion = druidic_reformed
+		}
+		primary_title = { higher_tier_than = BARON }
+		NOT = {
+			any_courtier = {
+				has_minor_title = title_court_druid
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTBancrel.0153
+		trigger = {
+			any_courtier = {
+				trait = druid
+				is_adult = yes
+				OR = {
+					religion = druidic
+					religion = druidic_reformed
+				}
+			}
+		}
+		random_courtier = {
+			limit = { 
+				trait = druid 
+				is_adult = yes
+				is_ruler = no # Councillor landed vassals are courtier
+				OR = {
+					religion = druidic
+					religion = druidic_reformed
+				}
+			}
+			give_minor_title = title_court_druid
+		}
+	}
+
+	option = {
+		name = EVTOPTAancrel.0153 #Ok
+	}
+}
+
+# Character gets diplomatic Druid
+character_event = {
+	id = ancrel.0154
+	desc = EVTDESCancrel.0154
 	picture = GFX_evt_druid
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.0245
+		name = EVTOPTAancrel.0154
 		add_character_modifier = {
 			name = "new_druid_in_court"
 			duration = 730
@@ -323,26 +378,26 @@ character_event = {
 	}
 }
 
-# Character chooses Druid
+# Character chooses type of druid Druid
 character_event = {
-	id = ancrel.0246
-	desc = EVTDESCancrel.0246
+	id = ancrel.0155
+	desc = EVTDESCancrel.0155
 	picture = GFX_evt_viking_throneroom_oldgods
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.0246 # Send for a master of law
+		name = EVTOPTAancrel.0155 # Send for a master of law
 		hidden_tooltip = {
 			character_event = {
-				id = ancrel.0245 
+				id = ancrel.0154 
 				days = 1
 			}
 		}
 	}
 	
 	option = {
-		name = EVTOPTBancrel.0246 # Send for a servant of god
+		name = EVTOPTBancrel.0155 # Send for a servant of god
 		hidden_tooltip = {
 			character_event = {
 				id = ancrel.0152
@@ -352,64 +407,9 @@ character_event = {
 	}
 }
 
-#[on_yearly_pulse] Liege doesn't have a Druid - fired on a yearly basis to remind players
-character_event = {
-	id = ancrel.0153
-	desc = EVTDESCancrel.0153
-	picture = GFX_evt_druid
-	
-	is_triggered_only = yes
-	
-	only_rulers = yes
-	
-	trigger = {
-		ai = no
-		OR = {
-			religion = druidic
-			religion = druidic_reformed
-		}
-		primary_title = { higher_tier_than = BARON }
-		NOT = {
-			any_courtier = {
-				has_minor_title = title_court_druid
-			}
-		}
-	}
-	
-	option = {
-		name = EVTOPTBancrel.0153
-		trigger = {
-			any_courtier = {
-				trait = druid
-				is_adult = yes
-				OR = {
-					religion = druidic
-					religion = druidic_reformed
-				}
-			}
-		}
-		random_courtier = {
-			limit = { 
-				trait = druid 
-				is_adult = yes
-				is_ruler = no # Councillor landed vassals are courtier
-				OR = {
-					religion = druidic
-					religion = druidic_reformed
-				}
-			}
-			give_minor_title = title_court_druid
-		}
-	}
-
-	option = {
-		name = EVTOPTAancrel.0153 #Ok
-	}
-}
-
 # Druidic priest get the druid trait as well
 character_event = {
-	id = ancrel.0260
+	id = ancrel.0156
 	hide_window = yes
 	
 	trigger = {
@@ -438,8 +438,8 @@ character_event = {
 
 # Druid can become known as wicked, if he can't hide his sins
 character_event = {
-	id = ancrel.0261
-	desc = EVTDESCancrel.0261
+	id = ancrel.0157
+	desc = EVTDESCancrel.0157
 	picture = GFX_evt_druid
 	
 	trigger = {
@@ -474,7 +474,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.0261
+		name = EVTOPTAancrel.0157
 		add_trait = bad_druid
 		remove_trait = druid
 		if = {
@@ -490,9 +490,9 @@ character_event = {
 ##### Coming of age ceremony - father's event
 character_event = {
 	id = ancrel.0183
-	title = "EVTNAMEancrel.0183"
-	desc = "EVTDESCancrel.0183"
-	picture = "GFX_evt_guardian"
+	title = EVTNAMEancrel.0183
+	desc = EVTDESCancrel.0183
+	picture = GFX_evt_guardian
 	
 	is_triggered_only = yes
 	
@@ -547,9 +547,9 @@ character_event = {
 ##### Coming of age ceremony - child's event
 character_event = {
 	id = ancrel.0184
-	title = "EVTNAMEancrel.0184"
-	desc = "EVTDESCancrel.0184"
-	picture = "GFX_evt_child_bully"
+	title = EVTNAMEancrel.0184
+	desc = EVTDESCancrel.0184
+	picture = GFX_evt_child_bully
 	
 	min_age = 13
 	max_age = 16
@@ -570,7 +570,7 @@ character_event = {
 	}
 	
 	option = {
-		name = "EVTOPTAancrel.0184"	
+		name = EVTOPTAancrel.0184
 		set_character_flag = had_coming_of_age_celtic
 		hidden_tooltip = {
 			father = {
@@ -586,14 +586,14 @@ character_event = {
 # Training about to begin
 narrative_event = {
 	id = ancrel.0185
-	title = "EVTNAMEancrel.0185"
-	desc = "EVTDESCancrel.0185"
+	title = EVTNAMEancrel.0185
+	desc = EVTDESCancrel.0185
 	picture = GFX_evt_buddhist_pagoda
 	
 	is_triggered_only = yes
 
 	option = { # Training starts
-		name = "EVTOPTAancrel.0185"	
+		name = EVTOPTAancrel.0185
 		add_trait = learning_druidic_arts
 		set_character_flag = druidic_training
 		clr_character_flag = wants_druidic_training

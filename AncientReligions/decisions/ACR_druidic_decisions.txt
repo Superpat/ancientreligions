@@ -440,7 +440,7 @@ decisions = {
 
 			hidden_tooltip = {
 				character_event = {
-					id = ancrel.0246
+					id = ancrel.0155
 					days = 3
 				}
 			}

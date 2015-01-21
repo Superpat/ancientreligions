@@ -35,14 +35,11 @@ king_female_egyptian_pagan;Pharaoh;Pharaon;Pharaoh;;Pharaoh;;;;;;;;;x
 emperor_egyptian_pagan;Aai-Pharaoh;Aai-Pharaoh;Aai-Pharaoh;;Aai-Pharaoh;;;;;;;;;x
 emperor_female_egyptian_pagan;Aai-Pharaoh;Aai-Pharaoh;Aai-Pharaoh;;Aai-Pharaoh;;;;;;;;;x
 title_queen_mother_egyptian_pagan;Mewet Pharaoh;Mewet Pharaon;Mewet Pharaoh;;Mewet Pharaoh;;;;;;;;;x
-baron_title_ruler_consort_female_egyptian_pagan;Mistress of the House;Maistresse de la Maison;Mistress of the House;;Mistress of the House;;;;;;;;;x
-count_title_ruler_consort_female_egyptian_pagan;Mistress of the House;Maistresse de la Maison;Mistress of the House;;Mistress of the House;;;;;;;;;x
-duke_title_ruler_consort_female_egyptian_pagan;Mistress of the House;Maistresse de la Maison;Mistress of the House;;Mistress of the House;;;;;;;;;x
-king_title_ruler_consort_female_egyptian_pagan;Mistress of the House;Maistresse de la Maison;Mistress of the House;;Mistress of the House;;;;;;;;;x
-emperor_title_ruler_consort_female_egyptian_pagan;Mistress of the House;Mistress of the House;Mistress of the House;;Mistress of the House;;;;;;;;;x
 temple_baron_egyptian_pagan;Local Cult Leader;Dirigeant du Culte Local;Local Cult Leader;;Local Cult Leader;;;;;;;;;x
 temple_count_egyptian_pagan;Priest;Prêtre;Priest;;Priest;;;;;;;;;x
+temple_count_female_egyptian_pagan;Priestess;Prêtresse;Priestess;;Priestess;;;;;;;;;x
 temple_duke_egyptian_pagan;High Priest;Grand Prêtre;High Priest;;High Priest;;;;;;;;;x
+temple_duke_female_egyptian_pagan;High Priestess;Grand Prêtresse;High Priestess;;High Priestess;;;;;;;;;x
 temple_king_egyptian_pagan;Pharaoh;Pharaon;Pharaoh;;Pharaoh;;;;;;;;;x
 temple_emperor_egyptian_pagan;Aai-Pharaoh;Aai-Pharaon;Aai-Pharaoh;;Aai-Pharaoh;;;;;;;;;x
 job_chancellor_egyptian_pagan;Vizier;Vizir;Wesir;;Visir;;;;;;;;;x
@@ -58,14 +55,11 @@ king_female_aten_pagan;Pharaoh;Pharaon;Pharaoh;;Pharaoh;;;;;;;;;x
 emperor_aten_pagan;Aai-Pharaoh;Aai-Pharaoh;Aai-Pharaoh;;Aai-Pharaoh;;;;;;;;;x
 emperor_female_aten_pagan;Aai-Pharaoh;Aai-Pharaoh;Aai-Pharaoh;;Aai-Pharaoh;;;;;;;;;x
 title_queen_mother_aten_pagan;Mewet Pharaoh;Mewet Pharaon;Mewet Pharaoh;;Mewet Pharaoh;;;;;;;;;x
-baron_title_ruler_consort_female_aten_pagan;Mistress of the House;Maistresse de la Maison;Mistress of the House;;Mistress of the House;;;;;;;;;x
-count_title_ruler_consort_female_aten_pagan;Mistress of the House;Maistresse de la Maison;Mistress of the House;;Mistress of the House;;;;;;;;;x
-duke_title_ruler_consort_female_aten_pagan;Mistress of the House;Maistresse de la Maison;Mistress of the House;;Mistress of the House;;;;;;;;;x
-king_title_ruler_consort_female_aten_pagan;Mistress of the House;Maistresse de la Maison;Mistress of the House;;Mistress of the House;;;;;;;;;x
-emperor_title_ruler_consort_female_aten_pagan;Mistress of the House;Mistress of the House;Mistress of the House;;Mistress of the House;;;;;;;;;x
 temple_baron_aten_pagan;Local Cult Leader;Dirigeant du Culte Local;Local Cult Leader;;Local Cult Leader;;;;;;;;;x
 temple_count_aten_pagan;Priest;Prêtre;Priest;;Priest;;;;;;;;;x
+temple_count_female_aten_pagan;Priestess;Prêtresse;Priestess;;Priestess;;;;;;;;;x
 temple_duke_aten_pagan;High Priest;Grand Prêtre;High Priest;;High Priest;;;;;;;;;x
+temple_duke_female_aten_pagan;High Priestess;Grand Prêtresse;High Priestess;;High Priestess;;;;;;;;;x
 temple_king_aten_pagan;Pharaoh;Pharaon;Pharaoh;;Pharaoh;;;;;;;;;x
 temple_emperor_aten_pagan;Aai-Pharaoh;Aai-Pharaon;Aai-Pharaoh;;Aai-Pharaoh;;;;;;;;;x
 job_chancellor_aten_pagan;Vizier;Vizir;Wesir;;Visir;;;;;;;;;x

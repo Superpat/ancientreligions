@@ -20,7 +20,11 @@ spriteTypes = {
 		name = "GFX_build_pyramid"
 		texturefile = "gfx\\interface\\ACR\\decision_icon_build_pyramid.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_hold_sed_festival"
+		texturefile = "gfx\\interface\\ACR\\decision_icon_restore_luxor.dds" #Placeholder
+	}
+
 	#Event pictures
 	spriteType = {
 		name = "GFX_evt_pyramid"

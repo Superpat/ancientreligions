@@ -147,5 +147,3 @@ unfit_gaelic_king_desc;A serious injury to this ruler's body has made his rule i
 d_wolftails;Wolftails;;;;;;;;;;;;;x
 d_wolftails_adj;Wolftails;;;;;;;;;;;;;x
 EVTDESCancrel.0281;With the conversion of [From.GetBaseName] to Celtic Paganism a number of young men and women have become wrapped up in old tales of glorious battle. The bravest of these have banded together and formed the 'Wolf Tails,' a mercenary band willing to work for any brother of the faith. That is, so long as they pay...;;;;;;;;;;;;;x
-d_gwydion;Sons of Gwydion;;;;;;;;;;;;;x
-d_gwydion_adj;Gwydion;;;;;;;;;;;;;x

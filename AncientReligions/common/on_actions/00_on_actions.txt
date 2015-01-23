@@ -1661,7 +1661,7 @@ on_reform_religion = {
 on_county_religion_change = {
 	events = {
 		SoA.4121
-		ancrel.0281 # Wolf Tails founded with first Celtic Pagan province
+		ancrel.0280 # Wolf Tails founded with first Celtic Pagan province
 	}
 }
 

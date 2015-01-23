@@ -60,3 +60,8 @@
 # Event ID ancrel.6000 - ancrel.7999 is reserved
 #
 ###################################
+#
+# Misc ancient religion events
+# Event ID ancrel.9900 - ancrel.9999 is reserved
+#
+###################################

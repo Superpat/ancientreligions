@@ -4,7 +4,7 @@
 # - Egyptian events
 #
 # Event ID ancrel.4000 - ancrel.4008 Decision events
-# Event ID ancrel.4010 - ancrel.4020 Sed festival
+# Event ID ancrel.4010 - ancrel.4019 Sed festival
 #
 ###################################################
 

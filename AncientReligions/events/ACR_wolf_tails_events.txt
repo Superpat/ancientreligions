@@ -2,7 +2,7 @@
 #
 #  Ancient Religions Reborn
 #  - Wolf Tails Events
-#	Event IDs ancrel.2011-2019 reserved
+#	Event IDs ancrel.0280-0299 reserved
 ##########################################
 
 #
@@ -20,7 +20,7 @@ namespace = ancrel
 #############################################
 
 province_event = {
-	id = ancrel.0211
+	id = ancrel.0280
 	desc = OK
 	picture = GFX_evt_celtic_warriors
 	border = GFX_event_normal_frame_religion
@@ -49,7 +49,7 @@ province_event = {
 				trait = zealous
 			}
 			new_character = {
-				narrative_event = { id = ancrel.0212 }			
+				narrative_event = { id = ancrel.0281 }			
 				wealth = 100
 				prestige = 100
 				piety = 50
@@ -138,8 +138,8 @@ province_event = {
 }
 
 narrative_event = {
-	id = ancrel.0212
-	desc = EVTDESCancrel.0212
+	id = ancrel.0281
+	desc = EVTDESCancrel.0281
 	picture = GFX_evt_celtic_warriors
 	border = GFX_event_normal_frame_war
 
@@ -156,7 +156,7 @@ narrative_event = {
 
 # Wolf Tails Reform
 narrative_event = {
-	id = ancrel.0213	
+	id = ancrel.0282	
 	hide_window = yes
 
 	trigger = {

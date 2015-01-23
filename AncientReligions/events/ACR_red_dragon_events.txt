@@ -2,7 +2,7 @@
 #
 #  Ancient Religions Reborn
 #  - Events for the Red Dragon Knights
-#  		Event IDs ancrel.1319 - ancrel.1335
+#  		Event IDs ancrel.1319 - ancrel.1332
 #
 ############################################
 

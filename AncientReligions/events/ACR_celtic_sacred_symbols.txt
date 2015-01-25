@@ -1,7 +1,10 @@
 ##################################################################
 #
-# Celtic sacred symbols Events
-# - Event IDs ancrel.0244-0255
+# ANCIENT RELIGIONS
+# - Celtic sacred symbols Events
+#
+# Event IDs ancrel.0244-0255
+#
 ##################################################################
 
 namespace = ancrel

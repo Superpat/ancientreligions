@@ -3,7 +3,7 @@
 # ANCIENT RELIGIONS
 # - Rebirth of Druidism
 #
-# Event ID ancrel.0000 - ancrel.009 reserved
+# Event ID ancrel.0000 - ancrel.0009 reserved
 #
 #######################################
 

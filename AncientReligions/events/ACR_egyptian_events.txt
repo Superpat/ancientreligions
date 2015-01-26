@@ -4,7 +4,7 @@
 # - Egyptian events
 #
 # Event ID ancrel.4000 - ancrel.4008 Decision events
-# Event ID ancrel.4010 - ancrel.4020 Sed festival
+# Event ID ancrel.4010 - ancrel.4019 Sed festival
 #
 ###################################################
 
@@ -118,7 +118,7 @@ province_event = {
 		}
 		hidden_tooltip = {
 			owner = {
-				set_character_flag = event_ancrel.4003
+				set_character_flag = event_ancrel4003
 				narrative_event = { id = ancrel.4003 days = 7 }
 			}
 		}
@@ -147,7 +147,7 @@ narrative_event = {
 		}
 		if = {
 			limit = { has_character_flag = event_ancrel4003 }
-			clr_character_flag = event_ancrel.4003
+			clr_character_flag = event_ancrel4003
 		}
 		name = OK
 	}
@@ -298,7 +298,7 @@ narrative_event = {
 	
 	option = {
 		trigger = {
-			NOT = { has_character_flag = event_ancrel.4007 }
+			NOT = { has_character_flag = event_ancrel4007 }
 		}
 		name = EVTOPTA_ancrel_4007
 	}

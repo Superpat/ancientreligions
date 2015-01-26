@@ -4,7 +4,7 @@
 # - The Fianna
 #
 # Event IDs ancrel.1150-1189 reserved
-# Event IDs ancrel.1254-1300 reserved
+# Event IDs ancrel.1254-1260 reserved
 # Event IDs ancrel.1333-1334 reserved
 #
 #######################################

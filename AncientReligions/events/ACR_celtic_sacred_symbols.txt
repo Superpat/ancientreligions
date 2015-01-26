@@ -18,8 +18,8 @@ province_event = {
 	trigger = {
 		owner = {
 			OR = {
-				religion = druidic
-				religion = druidic_reformed
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed
 			}
 			piety = 250
 			NOT = {
@@ -276,8 +276,8 @@ province_event = {
 	trigger = {
 		owner = {
 			OR = {
-				religion = druidic
-				religion = druidic_reformed			
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed			
 			}
 		}
 		NOT = { has_province_modifier = sacred_the_giants_causeway }
@@ -366,8 +366,8 @@ province_event = {
 		owner = {
 			NOT = {
 				OR = {
-					religion = druidic
-					religion = druidic_reformed			
+					religion = celtic_pagan
+					religion = celtic_pagan_reformed			
 				}
 			}
 		}
@@ -507,8 +507,8 @@ province_event = {
 	trigger = {
 		owner = {
 			OR = {
-				religion = druidic
-				religion = druidic_reformed			
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed			
 			}
 		}
 		NOT = {
@@ -840,8 +840,8 @@ province_event = {
 	trigger = {
 		owner = {
 			OR = {
-				religion = druidic
-				religion = druidic_reformed			
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed			
 			}
 		}
 		has_province_modifier = sidhe_angry
@@ -1055,8 +1055,8 @@ province_event = {
 	trigger = {
 		owner = {
 			OR = {
-				religion = druidic
-				religion = druidic_reformed			
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed			
 			}
 		}
 		has_province_modifier = sidhe_angry

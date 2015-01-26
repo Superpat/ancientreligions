@@ -327,8 +327,8 @@ succession_laws = {
 				is_patrician = no
 				OR = {
 					culture_group = celtic
-					religion = druidic
-					religion = druidic_reformed
+					religion = celtic_pagan
+					religion = celtic_pagan_reformed
 				}
 			}
 			OR = {
@@ -677,8 +677,8 @@ gender_laws = {
 			holder_scope = {
 				OR = {
 					culture = basque
-					religion = druidic
-					religion = druidic_reformed
+					religion = celtic_pagan
+					religion = celtic_pagan_reformed
 					religion = cathar
 					religion = messalian
 				}

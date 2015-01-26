@@ -30,8 +30,8 @@ character_event = {
 		culture_group = celtic
 		NOT = {
 			OR = {
-				religion = druidic
-				religion = druidic_reformed
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed
 			}
 			has_character_flag = hates_magic
 			any_courtier = {
@@ -52,7 +52,7 @@ character_event = {
 			dynasty = NONE
 			female = no
 			age = 53
-			religion = druidic
+			religion = celtic_pagan
 			culture = ROOT
 			trait = mystic
 			trait = scholarly_theologian
@@ -99,7 +99,7 @@ character_event = {
 				any_vassal = {
 					limit = {
 						NOT = {
-							religion = druidic
+							religion = celtic_pagan
 						}
 						age = 16
 						prisoner = no
@@ -111,7 +111,7 @@ character_event = {
 				any_courtier = {
 					limit = {
 						NOT = {
-							religion = druidic
+							religion = celtic_pagan
 						}
 						age = 16
 						prisoner = no
@@ -137,7 +137,7 @@ character_event = {
 	
 	trigger = {
 		NOT = {
-			religion = druidic
+			religion = celtic_pagan
 		}
 		has_character_modifier = celtic_ways
 	}
@@ -156,7 +156,7 @@ character_event = {
 			}
 			add_trait = sympathy_christendom
 		}
-		religion = druidic
+		religion = celtic_pagan
 		piety = 50
 	}
 	option = {
@@ -359,11 +359,11 @@ character_event = {
 	option = {
 		name = EVTOPTAancrel.0008
 		tooltip_info = lunatic
-		religion = druidic
+		religion = celtic_pagan
 	}
 }
 
-# override of vanilla event to support druidic
+# override of vanilla event to support Druidic
 #[on_reform_religion]
 narrative_event = {
 	id = ancrel.0009
@@ -412,8 +412,8 @@ narrative_event = {
 			}
 		}
 		if = {
-			limit = { religion = druidic_reformed }
-			set_global_flag = druidic_reformation
+			limit = { religion = celtic_pagan_reformed }
+			set_global_flag = celtic_pagan_reformation
 		}
 	}
 

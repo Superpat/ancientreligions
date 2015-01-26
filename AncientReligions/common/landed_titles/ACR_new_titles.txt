@@ -9,13 +9,13 @@ d_wolftails = {
 	# Hire Trigger
 	allow = {
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
 		}
 	}
 	
 	# Parent Religion 
-	religion = druidic
+	religion = celtic_pagan
 	culture = welsh
 	
 	mercenary = yes
@@ -46,13 +46,13 @@ d_gwydion = {
 	# Hire Trigger
 	allow = {
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
 		}
 	}
 	
 	# Parent Religion 
-	religion = druidic
+	religion = celtic_pagan
 	culture = welsh
 	
 	mercenary = yes
@@ -89,7 +89,7 @@ d_red_dragons = {
 	holy_order = yes
 	
 	# Parent Religion 
-	religion = druidic_reformed
+	religion = celtic_pagan_reformed
 	
 	culture = welsh
 	
@@ -121,7 +121,7 @@ d_fianna = {
 	holy_order = yes
 	
 	# Parent Religion 
-	religion = druidic
+	religion = celtic_pagan
 	
 	monthly_income = 1
 	
@@ -269,7 +269,7 @@ d_hellenic_pagan = {
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
 
-d_druidic_reformed = {
+d_celtic_pagan_reformed = {
 	color={ 122 165 70 }
 	color2={ 220 220 0 }
 	
@@ -285,7 +285,7 @@ d_druidic_reformed = {
 	landless = yes
 	
 	allow = {
-		religion = druidic_reformed
+		religion = celtic_pagan_reformed
 		num_of_holy_sites = 1
 		piety = 1000
 		OR = {
@@ -295,9 +295,9 @@ d_druidic_reformed = {
 	}
 	
 	# Controls a religion
-	controls_religion = druidic_reformed
+	controls_religion = celtic_pagan_reformed
 	
-	religion = druidic_reformed
+	religion = celtic_pagan_reformed
 	
 	# Cannot be held as a secondary title
 	primary = yes

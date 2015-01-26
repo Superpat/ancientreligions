@@ -57,7 +57,7 @@ character_event = {
 # Summoned to Thysia (Vassal)
 character_event = {
 	id = ancrel.3601
-	desc =Â EVTDESCancrel.3601
+	desc = EVTDESCancrel.3601
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -84,7 +84,7 @@ character_event = {
 # Non-Titanic Pagans pay to skip Thysia
 character_event = {
 	id = ancrel.3602
-	desc =Â EVTDESCancrel.3602
+	desc = EVTDESCancrel.3602
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -128,7 +128,7 @@ character_event = {
 # Non-Titanic Pagans pay to skip Thysia (Liege)
 character_event = {
 	id = ancrel.3603
-	desc =Â EVTDESCancrel.3603
+	desc = EVTDESCancrel.3603
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -143,7 +143,7 @@ character_event = {
 # Non-Titanic Pagans refuse to pay to skip Thysia (Liege)
 character_event = {
 	id = ancrel.3636
-	desc =Â EVTDESCancrel.3636
+	desc = EVTDESCancrel.3636
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -157,7 +157,7 @@ character_event = {
 # Thysia Begins! (Liege)
 character_event = {
 	id = ancrel.3604
-	desc =Â EVTDESCancrel.3604
+	desc = EVTDESCancrel.3604
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -212,7 +212,7 @@ character_event = {
 # Thysia Begins! (Vassal)
 character_event = {
 	id = ancrel.3605
-	desc =Â EVTDESCancrel.3605
+	desc = EVTDESCancrel.3605
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -228,7 +228,7 @@ character_event = {
 # Sacrifice Prisoner 1 (Prisoner)
 character_event = {
 	id = ancrel.3606
-	desc =Â EVTDESCancrel.3606
+	desc = EVTDESCancrel.3606
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -381,7 +381,7 @@ character_event = {
 # Sacrifice Prisoner 2 (Prisoner)
 character_event = {
 	id = ancrel.3607
-	desc =Â EVTDESCancrel.3606
+	desc = EVTDESCancrel.3606
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -534,7 +534,7 @@ character_event = {
 # Sacrifice Prisoner 3 (Prisoner)
 character_event = {
 	id = ancrel.3608
-	desc =Â EVTDESCancrel.3606
+	desc = EVTDESCancrel.3606
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -687,7 +687,7 @@ character_event = {
 # Sacrifice Prisoner 4 (Prisoner)
 character_event = {
 	id = ancrel.3609
-	desc =Â EVTDESCancrel.3606
+	desc = EVTDESCancrel.3606
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -840,7 +840,7 @@ character_event = {
 # Sacrifice Generic 1 (Liege)
 character_event = {
 	id = ancrel.3610
-	desc =Â EVTDESCancrel.3610
+	desc = EVTDESCancrel.3610
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -873,7 +873,7 @@ character_event = {
 # Sacrifice Christian (Liege)
 character_event = {
 	id = ancrel.3611
-	desc =Â EVTDESCancrel.3611
+	desc = EVTDESCancrel.3611
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -906,7 +906,7 @@ character_event = {
 # Sacrifice Muslim (Liege)
 character_event = {
 	id = ancrel.3612
-	desc =Â EVTDESCancrel.3612
+	desc = EVTDESCancrel.3612
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -939,7 +939,7 @@ character_event = {
 # Sacrifice Brother (Liege)
 character_event = {
 	id = ancrel.3613
-	desc =Â EVTDESCancrel.3613
+	desc = EVTDESCancrel.3613
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -974,7 +974,7 @@ character_event = {
 # Sacrifice Sister (Liege)
 character_event = {
 	id = ancrel.3614
-	desc =Â EVTDESCancrel.3614
+	desc = EVTDESCancrel.3614
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1009,7 +1009,7 @@ character_event = {
 # Sacrifice Father (Liege)
 character_event = {
 	id = ancrel.3615
-	desc =Â EVTDESCancrel.3615
+	desc = EVTDESCancrel.3615
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1044,7 +1044,7 @@ character_event = {
 # Sacrifice Mother (Liege)
 character_event = {
 	id = ancrel.3616
-	desc =Â EVTDESCancrel.3616
+	desc = EVTDESCancrel.3616
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1079,7 +1079,7 @@ character_event = {
 # Sacrifice Son (Liege)
 character_event = {
 	id = ancrel.3617
-	desc =Â EVTDESCancrel.3617
+	desc = EVTDESCancrel.3617
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1114,7 +1114,7 @@ character_event = {
 # Sacrifice Daughter (Liege)
 character_event = {
 	id = ancrel.3618
-	desc =Â EVTDESCancrel.3618
+	desc = EVTDESCancrel.3618
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1149,7 +1149,7 @@ character_event = {
 # Sacrifice Other Kinsman (Liege)
 character_event = {
 	id = ancrel.3619
-	desc =Â EVTDESCancrel.3619
+	desc = EVTDESCancrel.3619
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1182,7 +1182,7 @@ character_event = {
 # Sacrifice Spouse/Consort (Liege)
 character_event = {
 	id = ancrel.3620
-	desc =Â EVTDESCancrel.3620
+	desc = EVTDESCancrel.3620
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1215,7 +1215,7 @@ character_event = {
 # Sacrifice Olympian (Liege)
 character_event = {
 	id = ancrel.3621
-	desc =Â EVTDESCancrel.3621
+	desc = EVTDESCancrel.3621
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1248,7 +1248,7 @@ character_event = {
 # Sacrifice Generic (Vassal)
 character_event = {
 	id = ancrel.3622
-	desc =Â EVTDESCancrel.3622
+	desc = EVTDESCancrel.3622
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1270,7 +1270,7 @@ character_event = {
 # Sacrifice Christian (Vassal)
 character_event = {
 	id = ancrel.3623
-	desc =Â EVTDESCancrel.3623
+	desc = EVTDESCancrel.3623
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1292,7 +1292,7 @@ character_event = {
 # Sacrifice Muslim (Vassal)
 character_event = {
 	id = ancrel.3624
-	desc =Â EVTDESCancrel.3624
+	desc = EVTDESCancrel.3624
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1314,7 +1314,7 @@ character_event = {
 # Sacrifice Brother (Vassal)
 character_event = {
 	id = ancrel.3625
-	desc =Â EVTDESCancrel.3625
+	desc = EVTDESCancrel.3625
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1336,7 +1336,7 @@ character_event = {
 # Sacrifice Sister (Vassal)
 character_event = {
 	id = ancrel.3626
-	desc =Â EVTDESCancrel.3626
+	desc = EVTDESCancrel.3626
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1358,7 +1358,7 @@ character_event = {
 # Sacrifice Father (Vassal)
 character_event = {
 	id = ancrel.3627
-	desc =Â EVTDESCancrel.3627
+	desc = EVTDESCancrel.3627
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1380,7 +1380,7 @@ character_event = {
 # Sacrifice Mother (Vassal)
 character_event = {
 	id = ancrel.3628
-	desc =Â EVTDESCancrel.3628
+	desc = EVTDESCancrel.3628
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1402,7 +1402,7 @@ character_event = {
 # Sacrifice Son (Vassal)
 character_event = {
 	id = ancrel.3629
-	desc =Â EVTDESCancrel.3629
+	desc = EVTDESCancrel.3629
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1424,7 +1424,7 @@ character_event = {
 # Sacrifice Daughter (Vassal)
 character_event = {
 	id = ancrel.3630
-	desc =Â EVTDESCancrel.3630
+	desc = EVTDESCancrel.3630
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1446,7 +1446,7 @@ character_event = {
 # Sacrifice Other Kinsman (Vassal)
 character_event = {
 	id = ancrel.3631
-	desc =Â EVTDESCancrel.3631
+	desc = EVTDESCancrel.3631
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1468,7 +1468,7 @@ character_event = {
 # Sacrifice Spouse/Consort (Vassal)
 character_event = {
 	id = ancrel.3632
-	desc =Â EVTDESCancrel.3632
+	desc = EVTDESCancrel.3632
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1490,7 +1490,7 @@ character_event = {
 # Sacrifice Olympian (Vassal)
 character_event = {
 	id = ancrel.3633
-	desc =Â EVTDESCancrel.3633
+	desc = EVTDESCancrel.3633
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1512,7 +1512,7 @@ character_event = {
 # No Prisoners, Slaves sacrificed instead (Liege)
 character_event = {
 	id = ancrel.3634
-	desc =Â EVTDESCancrel.3634
+	desc = EVTDESCancrel.3634
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1538,7 +1538,7 @@ character_event = {
 # No Prisoners, Slaves sacrificed instead (Vassal)
 character_event = {
 	id = ancrel.3635
-	desc =Â EVTDESCancrel.3635
+	desc = EVTDESCancrel.3635
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1552,7 +1552,7 @@ character_event = {
 # Liege changed his mind about sacrifice (prisoner)
 character_event = {
 	id = ancrel.3637
-	desc =Â EVTDESCancrel.3637
+	desc = EVTDESCancrel.3637
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1707,7 +1707,7 @@ character_event = {
 # Feast Begins (Liege)
 character_event = {
 	id = ancrel.3640
-	desc =Â EVTDESCancrel.3640
+	desc = EVTDESCancrel.3640
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1779,7 +1779,7 @@ character_event = {
 # Feast Begins (Vassal)
 character_event = {
 	id = ancrel.3641
-	desc =Â EVTDESCancrel.3640
+	desc = EVTDESCancrel.3640
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1795,7 +1795,7 @@ character_event = {
 # Feast Ends (Liege)
 character_event = {
 	id = ancrel.3642
-	desc =Â EVTDESCancrel.3642
+	desc = EVTDESCancrel.3642
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1834,7 +1834,7 @@ character_event = {
 # Feast Ends (Vassal)
 character_event = {
 	id = ancrel.3643
-	desc =Â EVTDESCancrel.3643
+	desc = EVTDESCancrel.3643
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -1859,7 +1859,7 @@ character_event = {
 # Drunkard (Guest)
 character_event = {
 	id = ancrel.3650
-	desc =Â EVTDESCancrel.3650
+	desc = EVTDESCancrel.3650
 	picture = GFX_evt_drunk
 	border = GFX_event_normal_frame_religion
 	hide_from = yes
@@ -1939,7 +1939,7 @@ character_event = {
 # Drunkard (Host and Other Guests)
 character_event = {
 	id = ancrel.3651
-	desc =Â EVTDESCancrel.3651
+	desc = EVTDESCancrel.3651
 	picture = GFX_evt_drunk
 	border = GFX_event_normal_frame_religion
 	
@@ -2012,7 +2012,7 @@ character_event = {
 # Gluttonous (Guest)
 character_event = {
 	id = ancrel.3653
-	desc =Â EVTDESCancrel.3653
+	desc = EVTDESCancrel.3653
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -2072,7 +2072,7 @@ character_event = {
 # Gluttonous (Victim)
 character_event = {
 	id = ancrel.3654
-	desc =Â EVTDESCancrel.3654
+	desc = EVTDESCancrel.3654
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -2090,7 +2090,7 @@ character_event = {
 # Gluttonous (Host and Other Guests)
 character_event = {
 	id = ancrel.3655
-	desc =Â EVTDESCancrel.3655
+	desc = EVTDESCancrel.3655
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -2108,7 +2108,7 @@ character_event = {
 # Lunatic (Guest)
 character_event = {
 	id = ancrel.3656
-	desc =Â EVTDESCancrel.3656
+	desc = EVTDESCancrel.3656
 	picture = GFX_evt_lunatic
 	border = GFX_event_normal_frame_religion
 	hide_from = yes
@@ -2189,7 +2189,7 @@ character_event = {
 # Lunatic (Host and Other Guests)
 character_event = {
 	id = ancrel.3657
-	desc =Â EVTDESCancrel.3657
+	desc = EVTDESCancrel.3657
 	picture = GFX_evt_lunatic
 	border = GFX_event_normal_frame_religion
 	
@@ -2221,7 +2221,7 @@ character_event = {
 # Lustful (Guest)
 character_event = {
 	id = ancrel.3658
-	desc =Â EVTDESCancrel.3658
+	desc = EVTDESCancrel.3658
 	picture = GFX_evt_brothel
 	border = GFX_event_normal_frame_religion
 	hide_from = yes
@@ -2373,7 +2373,7 @@ character_event = {
 # Lustful (Host and Other Guests)
 character_event = {
 	id = ancrel.3659
-	desc =Â EVTDESCancrel.3659
+	desc = EVTDESCancrel.3659
 	picture = GFX_evt_brothel
 	border = GFX_event_normal_frame_religion
 	
@@ -2467,7 +2467,7 @@ character_event = {
 # Friendship Formed (Guest 2)
 character_event = {
 	id = ancrel.3661
-	desc =Â EVTDESCancrel.3661
+	desc = EVTDESCancrel.3661
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -2498,7 +2498,7 @@ character_event = {
 # Friendship Formed (Guest 1)
 character_event = {
 	id = ancrel.3662
-	desc =Â EVTDESCancrel.3661
+	desc = EVTDESCancrel.3661
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -2577,7 +2577,7 @@ character_event = {
 # Homosexual Male (Guest 2)
 character_event = {
 	id = ancrel.3664
-	desc =Â EVTDESCancrel.3664
+	desc = EVTDESCancrel.3664
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -2617,7 +2617,7 @@ character_event = {
 # Homosexual Male (Guest 1)
 character_event = {
 	id = ancrel.3665
-	desc =Â EVTDESCancrel.3664
+	desc = EVTDESCancrel.3664
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -2697,7 +2697,7 @@ character_event = {
 # Homosexual Female (Guest 2)
 character_event = {
 	id = ancrel.3667
-	desc =Â EVTDESCancrel.3664
+	desc = EVTDESCancrel.3664
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -2737,7 +2737,7 @@ character_event = {
 # Homosexual Female (Guest 1)
 character_event = {
 	id = ancrel.3668
-	desc =Â EVTDESCancrel.3664
+	desc = EVTDESCancrel.3664
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -2764,7 +2764,7 @@ character_event = {
 # Homosexual Caught
 character_event = {
 	id = ancrel.3669
-	desc =Â EVTDESCancrel.3669
+	desc = EVTDESCancrel.3669
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -2818,7 +2818,7 @@ character_event = {
 # Homosexual Caught (Host and Other Guests)
 character_event = {
 	id = ancrel.3670
-	desc =Â EVTDESCancrel.3670
+	desc = EVTDESCancrel.3670
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -2850,7 +2850,7 @@ character_event = {
 # Sacrifice Generic 2 (Liege)
 character_event = {
 	id = ancrel.3680
-	desc =Â EVTDESCancrel.3680
+	desc = EVTDESCancrel.3680
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -2883,7 +2883,7 @@ character_event = {
 # Sacrifice Generic 3 (Liege)
 character_event = {
 	id = ancrel.3681
-	desc =Â EVTDESCancrel.3681
+	desc = EVTDESCancrel.3681
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	
@@ -2916,7 +2916,7 @@ character_event = {
 # Sacrifice Generic 4 (Liege)
 character_event = {
 	id = ancrel.3682
-	desc =Â EVTDESCancrel.3682
+	desc = EVTDESCancrel.3682
 	picture = GFX_evt_midwinter_blot_oldgods
 	border = GFX_event_normal_frame_religion
 	

@@ -3,7 +3,7 @@
 # Ancient Religions Reborn										
 # - Thirteen Treasures of Britain events  
 # 
-# Event IDs ancrel.1261 - 1275
+# Event IDs ancrel.1261 - 1318
 #########################################
 namespace = ancrel
 

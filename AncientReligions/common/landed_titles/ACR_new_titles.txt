@@ -39,7 +39,7 @@ d_wolftails = {
 
 d_gwydion = {
 	color={ 75 70 0 }
-	color2={ 255 260 255 }
+	color2={ 255 255 255 }
 
 	capital = 64
 	

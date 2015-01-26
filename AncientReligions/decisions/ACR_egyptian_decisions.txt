@@ -234,7 +234,7 @@ decisions = {
 			wealth = -300
 			activate_title = { title = d_anubis status = yes }
 			hidden_tooltip = {
-				set_character_flag = event_ancrel.4007
+				set_character_flag = event_ancrel4007
 				narrative_event = { id = ancrel.4007 }
 				create_character = {
 					random_traits = yes
@@ -297,7 +297,7 @@ decisions = {
 			wealth = -300
 			activate_title = { title = d_horus status = yes }
 			hidden_tooltip = {
-				set_character_flag = event_ancrel.4008
+				set_character_flag = event_ancrel4008
 				narrative_event = { id = ancrel.4008 }
 				create_character = {
 					random_traits = yes

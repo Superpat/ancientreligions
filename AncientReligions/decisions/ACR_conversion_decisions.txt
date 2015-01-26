@@ -402,7 +402,7 @@ decisions = {
 		}
 		effect = {
 			set_character_flag = gone_pagan
-			character_event = { id = 1000182323} 
+			character_event = { id = ancrel.9999 } 
 		}
 		revoke_allowed = {
 			always = no

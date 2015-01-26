@@ -27,8 +27,7 @@
 ###################################
 #
 # Hellenic Polytheism
-# Event ID ancrel.2000 - ancrel.2999 is reserved
-# Event ID ancrel.3250 - ancrel.3999 is reserved
+# Event ID ancrel.2000 - ancrel.3999 is reserved
 #
 # ancrel.2100 - ancrel.2109 Revival of the Hellenic religion
 # ancrel.2110 - ancrel.2119 Flamines Maiores
@@ -41,13 +40,10 @@
 # ancrel.2230 - ancrel.2239 Roman Events
 # ancrel.2240 - ancrel.2259 Hellenic Flavour Events
 #
-###################################
-#
-# Epic Bloodlines
-# Event IDs ancrel.3000 - ancrel.3249 are reserved
+# ancrel.3000 - ancrel.3249 Epic Bloodlines
+# ancrel.3600 - ancrel.3699 Titan Thysia
 #
 ###################################
-#
 # Egyptian Polytheism
 # Event ID ancrel.4000 - ancrel.5999 is reserved
 #

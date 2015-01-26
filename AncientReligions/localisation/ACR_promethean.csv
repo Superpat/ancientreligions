@@ -7,7 +7,7 @@ PHILOSOPHER;Philosophos;Philosophos;Philosophos;;Philosophos;;;;;;;;;x
 promethean_pagan;Promethean;Promethean;Promethean;;Promethean;;;;;;;;;x
 promethean_pagan_DESC;Prometheanism is the worship of the Titan Prometheus and, to a lesser extent, his brother Epimetheus, as the fathers of humanity. Prometheanism acknowledges the existence, and divinity, of the Olympeans, but rejects their worthiness as beings to be worshipped. Prometheans value intellectual pursuits above all; finding guile, diplomacy, and a quick wit to be the highest art forms. They find violence distasteful, but recognize that it is ocassionally necessary.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 promethean_philosophy;Promethean Philosophy;Promethean Philosophy;Promethean Philosophy;;Promethean Philosophy;;;;;;;;;x
-desc_promethean_philosophy;Promethean beliefs encourage intellectual pursuits and the advancements of science, technology, and logic. Promethean realms often reap the rewards of such philosophy.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+promethean_philosophy_desc;Promethean beliefs encourage intellectual pursuits and the advancements of science, technology, and logic. Promethean realms often reap the rewards of such philosophy.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 #;;;;;;;;;;
 d_promethean_pagan;First Academy;Sacred Flame;Sacred Flame;;Sacred Flame;;;;;;;;;x
 d_promethean_pagan_adj;Academecian;Academecian;Academecian;;Academecian;;;;;;;;;x

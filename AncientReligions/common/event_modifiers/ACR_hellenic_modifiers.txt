@@ -80,4 +80,4 @@ held_titan_thysia_modifier = {
 	icon = 13
 }
 
-held_blot_timer = { icon = 1 }
+held_titan_thysia_timer = { icon = 1 }

@@ -1,4 +1,4 @@
-# Audax Validator "!" Ignore_ALL
+# Audax Validator "!" Ignore_NEXT
 #########################################
 # Ancient Religions Reborn										
 # - Thirteen Treasures of Britain events  

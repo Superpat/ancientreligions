@@ -5,7 +5,7 @@
 #
 ###################################
 
-# Written by Henrik Eklund for the Viking Thysia
+# Written by Henrik Eklund for the Viking Blot
 # Adapted for the Titan Cult by Adam 'theStormWeaver' Chevalier
 
 namespace = ancrel

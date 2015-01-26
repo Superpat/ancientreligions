@@ -22,8 +22,8 @@ character_event = {
 	trigger = {
 		has_dlc = "Rajas of India"
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
 		}
 		OR = {
 			father = {
@@ -210,8 +210,8 @@ character_event = {
 	
 	trigger = {
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
 		}
 		has_dlc = "Rajas of India"
 		has_character_flag = reincarnation_education

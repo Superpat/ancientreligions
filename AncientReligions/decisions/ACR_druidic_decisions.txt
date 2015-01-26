@@ -6,8 +6,8 @@ decisions = {
 			age = 16
 			prisoner = no
 			OR = {
-				religion = druidic
-				religion = druidic_reformed
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed
 			}
 			NOT = {	has_character_flag = holding_divination }
 			NOT = {	has_character_modifier = held_divination_timer }
@@ -73,12 +73,12 @@ decisions = {
 			NOT = {
 				has_character_flag = adopted_celtic_rites
 				OR = {
-					religion = druidic
-					religion = druidic_reformed
+					religion = celtic_pagan
+					religion = celtic_pagan_reformed
 				}
 			}
 			any_courtier = {
-				religion = druidic
+				religion = celtic_pagan
 			}
 		}
 		allow = {
@@ -88,7 +88,7 @@ decisions = {
 			learning = 8
 			NOT = {trait = zealous}
 			any_courtier = {
-				religion = druidic
+				religion = celtic_pagan
 				prisoner = no
 			}
 		}
@@ -125,7 +125,7 @@ decisions = {
 				tier = emperor
 			}
 			
-			religion = druidic_reformed
+			religion = celtic_pagan_reformed
 
 			prisoner = no
 			age = 16
@@ -135,7 +135,7 @@ decisions = {
 			has_landed_title = e_britannia
 			prestige = 300
 			wealth = 300
-			d_druidic_reformed = {
+			d_celtic_pagan_reformed = {
 				holder_scope = {
 					is_vassal_or_below = ROOT
 				}
@@ -150,7 +150,7 @@ decisions = {
 				narrative_event = { id = ancrel.0110 }
 				create_character = {
 					random_traits = yes
-					religion = druidic_reformed
+					religion = celtic_pagan_reformed
 					culture = ROOT
 					dynasty = NONE
 					female = no
@@ -168,7 +168,7 @@ decisions = {
 					create_character = {
 						random_traits = yes
 						dynasty = random
-						religion = druidic_reformed
+						religion = celtic_pagan_reformed
 						culture = ROOT
 						female = no
 						age = 16
@@ -176,7 +176,7 @@ decisions = {
 					create_character = {
 						random_traits = yes
 						dynasty = random
-						religion = druidic_reformed
+						religion = celtic_pagan_reformed
 						culture = ROOT
 						female = no
 						age = 18
@@ -184,7 +184,7 @@ decisions = {
 					create_character = {
 						random_traits = yes
 						dynasty = random
-						religion = druidic_reformed
+						religion = celtic_pagan_reformed
 						culture = ROOT
 						female = no
 						age = 18
@@ -192,7 +192,7 @@ decisions = {
 					create_character = {
 						random_traits = yes
 						dynasty = random
-						religion = druidic_reformed
+						religion = celtic_pagan_reformed
 						culture = ROOT
 						female = no
 						age = 20
@@ -200,7 +200,7 @@ decisions = {
 					create_character = {
 						random_traits = yes
 						dynasty = random
-						religion = druidic_reformed
+						religion = celtic_pagan_reformed
 						culture = ROOT
 						female = no
 						age = 25
@@ -208,7 +208,7 @@ decisions = {
 					create_character = {
 						random_traits = yes
 						dynasty = random
-						religion = druidic_reformed
+						religion = celtic_pagan_reformed
 						culture = ROOT
 						female = no
 						age = 26
@@ -216,7 +216,7 @@ decisions = {
 					create_character = {
 						random_traits = yes
 						dynasty = random
-						religion = druidic_reformed
+						religion = celtic_pagan_reformed
 						culture = ROOT
 						female = no
 						age = 28
@@ -224,7 +224,7 @@ decisions = {
 					create_character = {
 						random_traits = yes
 						dynasty = random
-						religion = druidic_reformed
+						religion = celtic_pagan_reformed
 						culture = ROOT
 						female = yes
 						age = 16
@@ -232,7 +232,7 @@ decisions = {
 					create_character = {
 						random_traits = yes
 						dynasty = random
-						religion = druidic_reformed
+						religion = celtic_pagan_reformed
 						culture = ROOT
 						female = yes
 						age = 17
@@ -254,8 +254,8 @@ decisions = {
 				tier = emperor
 			}
 			OR = {
-				religion = druidic
-				religion = druidic_reformed
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed
 			}
 			prisoner = no
 			age = 16
@@ -275,7 +275,7 @@ decisions = {
 				narrative_event = { id = ancrel.1150 }
 				create_character = {
 					random_traits = yes
-					religion = druidic
+					religion = celtic_pagan
 					culture = ROOT
 					dynasty = NONE
 					female = no
@@ -299,7 +299,7 @@ decisions = {
 		is_high_prio = yes
 		
 		potential = {
-			religion = druidic_reformed
+			religion = celtic_pagan_reformed
 			is_heretic = no
 			prisoner = no
 			age = 16
@@ -349,7 +349,7 @@ decisions = {
 
 	donate_money_to_fianna = {
 		potential = {
-			religion = druidic_reformed
+			religion = celtic_pagan_reformed
 			
 			is_title_active = d_fianna
 			
@@ -406,7 +406,7 @@ decisions = {
 				OR = {
 					piety = 1000
 					NOT = { wealth = 1000 }
-					NOT = { controls_religion = druidic_reformed }
+					NOT = { controls_religion = celtic_pagan_reformed }
 				}
 			}
 			modifier = {
@@ -418,8 +418,8 @@ decisions = {
 	invite_druid_to_court = { #Invite a Druid to court
 		potential = {
 			OR = {
-				religion = druidic
-				religion = druidic_reformed
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed
 			}
 		}
 		allow = {
@@ -495,8 +495,8 @@ decisions = {
 		potential = {
 			ai = yes
 			OR = {
-				religion = druidic
-				religion = druidic_reformed
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed
 			}
 			NOT = { 
 				any_courtier = {
@@ -534,8 +534,8 @@ decisions = {
 		potential = {
 			ai = yes
 			OR = {
-				religion = druidic
-				religion = druidic_reformed
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed
 			}
 			NOT = { 
 				any_courtier = {
@@ -577,8 +577,8 @@ decisions = {
 			age = 16
 			prisoner = no
 			OR = {
-				religion = druidic
-				religion = druidic_reformed
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed
 			}
 			NOT = {	
 				OR = {
@@ -647,8 +647,8 @@ decisions = {
 			is_ruler = yes
 			prisoner = no
 			OR = {
-				religion = druidic
-				religion = druidic_reformed
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed
 			}
 			has_character_modifier = unfit_gaelic_king
 		}
@@ -695,7 +695,7 @@ decisions = {
 	expel_red_dragons = {
 		potential = {
 			ai = no
-			religion = druidic_reformed
+			religion = celtic_pagan_reformed
 			higher_tier_than = DUKE
 			independent = yes
 			is_title_active = d_red_dragons
@@ -756,7 +756,7 @@ decisions = {
 	
 	donate_money_to_red_dragons = {
 		potential = {
-			religion = druidic_reformed
+			religion = celtic_pagan_reformed
 			
 			is_title_active = d_red_dragons
 			
@@ -813,7 +813,7 @@ decisions = {
 				OR = {
 					piety = 1000
 					NOT = { wealth = 1000 }
-					NOT = { controls_religion = druidic_reformed }
+					NOT = { controls_religion = celtic_pagan_reformed }
 				}
 			}
 			modifier = {

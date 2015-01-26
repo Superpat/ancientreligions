@@ -15,8 +15,8 @@ obj_find_thirteen_treasures = {
 		always = no
 		age = 16
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
 		}
 		OR = {
 			culture = welsh
@@ -142,8 +142,8 @@ obj_find_thirteen_treasures = {
 			NOT = {	piety = -100 }
 			NOT = {	
 				OR = {
-					religion = druidic 
-					religion = druidic_reformed
+					religion = celtic_pagan 
+					religion = celtic_pagan_reformed
 				}
 			}
 		}

@@ -37,7 +37,7 @@ pagan_group = {
 		dislike_tribal_organization = yes
 	}
 	
-	druidic_reformed = {
+	celtic_pagan_reformed = {
 		# Use norsegfx rather than celticgfx to have the northern pagan rounded CoA on the map
 		graphical_culture = norsegfx
 		
@@ -85,7 +85,7 @@ pagan_group = {
 			key = "HERO_RELIGION_HOME_TERRITORY"
 		}
 		
-		intermarry = druidic
+		intermarry = celtic_pagan
 		priests_can_marry = yes
 		female_temple_holders = yes
 		feminist = yes
@@ -100,7 +100,7 @@ pagan_group = {
 		religious_clothing_priest = 3
 	}
 	
-	druidic = {
+	celtic_pagan = {
 		# Use norsegfx rather than celticgfx to have the northern pagan rounded CoA on the map
 		graphical_culture = norsegfx
 		
@@ -144,7 +144,7 @@ pagan_group = {
 			key = "HERO_RELIGION_HOME_TERRITORY"
 		}
 
-		intermarry = druidic_reformed
+		intermarry = celtic_pagan_reformed
 		priests_can_marry = yes
 		female_temple_holders = yes
 		feminist = yes
@@ -153,7 +153,7 @@ pagan_group = {
 		peace_prestige_loss = yes # Lose Prestige while at peace
 		raised_vassal_opinion_loss = no
 		allow_looting = yes
-		reformed = druidic_reformed
+		reformed = celtic_pagan_reformed
 		aggression = 1.5 # AI aggression factor
 		
 		dislike_tribal_organization = yes

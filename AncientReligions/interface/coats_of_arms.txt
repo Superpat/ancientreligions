@@ -216,8 +216,8 @@ culture = {
 		"aztec"
 		"slavic_pagan_reformed"
 		"slavic_pagan"
-		"druidic"
-		"druidic_reformed"
+		"celtic_pagan"
+		"celtic_pagan_reformed"
 		"hellenic_pagan"
 	}
 	

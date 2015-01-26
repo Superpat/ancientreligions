@@ -1,0 +1,364 @@
+1045066 = {
+	name = "Abaris"
+	culture = Gaulish
+}
+1045067 = {
+	name = "Acco"
+	culture = Gaulish
+}
+1045068 = {
+	name = "Acichorios"
+	culture = Gaulish
+}
+1045069 = {
+	name = "Adiatuanos"
+	culture = Gaulish
+}
+1045070 = {
+	name = "Ambicatos"
+	culture = Gaulish
+}
+1045071 = {
+	name = "Ambiorix"
+	culture = Gaulish
+}
+1045072 = {
+	name = "Andecombogios"
+	culture = Gaulish
+}
+1045073 = {
+	name = "Aneroestes"
+	culture = Gaulish
+}
+1045074 = {
+	name = "Antaros"
+	culture = Gaulish
+}
+1045075 = {
+	name = "Apotouros"
+	culture = Gaulish
+}
+1045076 = {
+	name = "Atis"
+	culture = Gaulish
+}
+1045077 = {
+	name = "Bathanattos"
+	culture = Gaulish
+}
+1045078 = {
+	name = "Bellovesos"
+	culture = Gaulish
+}
+1045079 = {
+	name = "Bituitis"
+	culture = Gaulish
+}
+1045080 = {
+	name = "Boduognatos"
+	culture = Gaulish
+}
+1045081 = {
+	name = "Boiorix"
+	culture = Gaulish
+}
+1045082 = {
+	name = "Bolgios"
+	culture = Gaulish
+}
+1045083= {
+	name = "Brancos"
+	culture = Gaulish
+}
+1045084 = {
+	name = "Brennos"
+	culture = Gaulish
+}
+1045085 = {
+	name = "Britomaros"
+	culture = Gaulish
+}
+1045086 = {
+	name = "Caburos"
+	culture = Gaulish
+}
+1045087 = {
+	name = "Cambaules"
+	culture = Gaulish
+}
+1045088 = {
+	name = "Camulogenos"
+	culture = Gaulish
+}
+1045089 = {
+	name = "Casticos"
+	culture = Gaulish
+}
+1045090 = {
+	name = "Catamantaloedis"
+	culture = Gaulish
+}
+1045091 = {
+	name = "Catugnatos"
+	culture = Gaulish
+}
+1045092 = {
+	name = "Catuvolcos"
+	culture = Gaulish
+}
+1045093 = {
+	name = "Cauros"
+	culture = Gaulish
+}
+1045094 = {
+	name = "Cavarillos"
+	culture = Gaulish
+}
+1045095 = {
+	name = "Celtillos"
+	culture = Gaulish
+}
+1045096 = {
+	name = "Cerethrios"
+	culture = Gaulish
+}
+1045097 = {
+	name = "Ciderios"
+	culture = Gaulish
+}
+1045098 = {
+	name = "Cincibilos"
+	culture = Gaulish
+}
+1045099 = {
+	name = "Cingetorix"
+	culture = Gaulish
+}
+1045100 = {
+	name = "Claodicos"
+	culture = Gaulish
+}
+1045101 = {
+	name = "Comantorios"
+	culture = Gaulish
+}
+1045102 = {
+	name = "Concolitanos"
+	culture = Gaulish
+}
+1045103 = {
+	name = "Conconnetodumnos"
+	culture = Gaulish
+}
+1045104 = {
+	name = "Connos"
+	culture = Gaulish
+}
+1045105 = {
+	name = "Convictolitavis"
+	culture = Gaulish
+}
+1045106 = {
+	name = "Corsignatos"
+	culture = Gaulish
+}
+1045107 = {
+	name = "Cotos"
+	culture = Gaulish
+}
+1045108 = {
+	name = "Critognatos"
+	culture = Gaulish
+}
+1045109 = {
+	name = "Crixos"
+	culture = Gaulish
+}
+1045110 = {
+	name = "Divico"
+	culture = Gaulish
+}
+1045111 = {
+	name = "Divitiacos"
+	culture = Gaulish
+}
+1045112 = {
+	name = "Drappes"
+	culture = Gaulish
+}
+1045113 = {
+	name = "Ducarios"
+	culture = Gaulish
+}
+1045114 = {
+	name = "Dumnacos"
+	culture = Gaulish
+}
+1045115 = {
+	name = "Dumnorix"
+	culture = Gaulish
+}
+1045116 = {
+	name = "Dumnotauros"
+	culture = Gaulish
+}
+1045117 = {
+	name = "Duratios"
+	culture = Gaulish
+}
+1045118 = {
+	name = "Elitovios"
+	culture = Gaulish
+}
+1045119 = {
+	name = "Epasnactos"
+	culture = Gaulish
+}
+1045120 = {
+	name = "Eporedorix"
+	culture = Gaulish
+}
+1045121 = {
+	name = "Gaesorix"
+	culture = Gaulish
+}
+1045122 = {
+	name = "Galatos"
+	culture = Gaulish
+}
+1045123 = {
+	name = "Galba"
+	culture = Gaulish
+}
+1045124 = {
+	name = "Gobannitio"
+	culture = Gaulish
+}
+1045125 = {
+	name = "Gutuater"
+	culture = Gaulish
+}
+1045126 = {
+	name = "Helicon"
+	culture = Gaulish
+}
+1045127 = {
+	name = "Iccios"
+	culture = Gaulish
+}
+1045128 = {
+	name = "Indutiomaros"
+	culture = Gaulish
+}
+1045129 = {
+	name = "Litaviccos"
+	culture = Gaulish
+}
+1045130 = {
+	name = "Louernios"
+	culture = Gaulish
+}
+1045131 = {
+	name = "Lucterios"
+	culture = Gaulish
+}
+1045132 = {
+	name = "Magalos"
+	culture = Gaulish
+}
+1045133 = {
+	name = "Moenicoeptos"
+	culture = Gaulish
+}
+1045134 = {
+	name = "Molistomos"
+	culture = Gaulish
+}
+1045135 = {
+	name = "Moritasgos"
+	culture = Gaulish
+}
+1045136 = {
+	name = "Nammeios"
+	culture = Gaulish
+}
+1045137 = {
+	name = "Nannos"
+	culture = Gaulish
+}
+1045138 = {
+	name = "Ollovico"
+	culture = Gaulish
+}
+1045139 = {
+	name = "Orgetorix"
+	culture = Gaulish
+}
+1045140 = {
+	name = "Piso"
+	culture = Gaulish
+}
+1045141 = {
+	name = "Sedullos"
+	culture = Gaulish
+}
+1045142 = {
+	name = "Sigovesos"
+	culture = Gaulish
+}
+1045143 = {
+	name = "Suros"
+	culture = Gaulish
+}
+1045144 = {
+	name = "Tasgetios"
+	culture = Gaulish
+}
+1045145 = {
+	name = "Teutobodunos"
+	culture = Gaulish
+}
+1045146 = {
+	name = "Teutomatos"
+	culture = Gaulish
+}
+1045147 = {
+	name = "Valetiacos"
+	culture = Gaulish
+}
+1045148 = {
+	name = "Vercassivellaunos"
+	culture = Gaulish
+}
+1045149 = {
+	name = "Vercingetorix"
+	culture = Gaulish
+}
+1045150 = {
+	name = "Vertico"
+	culture = Gaulish
+}
+1045151 = {
+	name = "Vertiscos"
+	culture = Gaulish
+}
+1045152 = {
+	name = "Verucloetios"
+	culture = Gaulish
+}
+1045153 = {
+	name = "Viridomaros"
+	culture = Gaulish
+}
+1045154 = {
+	name = "Viridovix"
+	culture = Gaulish
+}
+1045155 = {
+	name = "Vismaros"
+	culture = Gaulish
+}
+1045156 = {
+	name = "Voccio"
+	culture = Gaulish
+}

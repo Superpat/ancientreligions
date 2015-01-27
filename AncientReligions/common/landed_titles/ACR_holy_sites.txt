@@ -1,19 +1,24 @@
-### Hellenic Pagan
-#
-#b_lebedos = {
-#	# Temple of Artemis at Ephesus
-#	holy_site = hellenic_pagan
-#}
-#b_lampsakos = {
-#	remove_holy_site = hellenic_pagan
-#}
-#b_piraeaus = {
-#	remove_holy_site = hellenic_pagan
-#}
-#b_pyrgos = {
-#	# Statue of Zeus at Olympia
-#	holy_site = hellenic_pagan
-#}
+### Hellenic Pagan Heresies (same as vanilla Hellenic)
+b_lampsakos = {
+	holy_site = promethean_pagan
+	holy_site = titan_pagan
+}
+b_thesedessa = {
+	holy_site = promethean_pagan
+	holy_site = titan_pagan
+}
+b_piraeaus = {
+	holy_site = promethean_pagan
+	holy_site = titan_pagan	
+}
+b_roma = {
+	holy_site = promethean_pagan
+	holy_site = titan_pagan
+}
+b_alexandria = {
+	holy_site = promethean_pagan
+	holy_site = titan_pagan
+}
 
 ### Celtic Pagan
 

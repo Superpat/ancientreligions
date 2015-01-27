@@ -3239,7 +3239,6 @@ character_event = {
 		clr_character_flag = titan_thysia_feast
 		clr_character_flag = attending_titan_thysia
 		clr_character_flag = titan_thysia_feast_vassal
-		clr_character_flag = feast_drunkard
 		clr_character_flag = feast_gluttonous
 		clr_character_flag = feast_lunatic
 		clr_character_flag = feast_lustful

@@ -64,6 +64,7 @@ titan_cultist = {
 
 	ai_zeal = 25
 	ai_rationality = -10
+	combat_rating = 2
 
 	active = no
 }
@@ -82,8 +83,7 @@ promethean_philosophy = {
 	ai_zeal = 25
 	ai_rationality = 10
 
-	demense_size = 1
-	vassal_limit = 1
+	learning = 1
 
 	active = no
 }

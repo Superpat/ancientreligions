@@ -298,7 +298,7 @@ d_celtic_pagan_reformed = {
 	controls_religion = celtic_pagan_reformed
 	
 	religion = celtic_pagan_reformed
-	
+	dignity = 100
 	# Cannot be held as a secondary title
 	primary = yes
 	
@@ -322,7 +322,7 @@ d_egyptian_pagan = {
 	
 	# Controls a religion
 	controls_religion = egyptian_pagan
-	
+	dignity = 100
 	religion = egyptian_pagan
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
@@ -342,7 +342,15 @@ d_promethean_pagan = {
 	color={ 100 44 201 }
 	color2={ 201 97 108 }
 
-	capital = 673 # Albania. Mt Kazbek is found here. It is the volcano that Prometheus was chained to (according to legend).
+	capital = 482 # Athens, location of Plato's Academy
+
+	allow = {
+		title_tier = king
+		religion = promethean_pagan
+		num_of_holy_sites = 3
+		piety = 500
+	}
+	creation_requires_capital = yes
 
 	title = SCHOLARCH
 
@@ -350,8 +358,10 @@ d_promethean_pagan = {
 
 	# Always exists
 	landless = yes
-	primary = yes
+	primary = no
 
+	short_name = yes
+	dignity = 100
 	controls_religion = promethean_pagan
 	religion = promethean_pagan
 

@@ -3,7 +3,7 @@
 # ANCIENT RELIGIONS
 # - Celtic Reincarnation
 #
-# Event ID  ancrel.0270 - ancrel.0280 reserved
+# Event ID  ancrel.0270 - ancrel.0279 reserved
 #
 #######################################
 

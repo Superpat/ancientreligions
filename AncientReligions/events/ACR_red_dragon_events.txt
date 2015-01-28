@@ -16,8 +16,8 @@ namespace = ancrel
 # The birth of the Red Dragon Knights
 narrative_event = {
 	id = ancrel.1319
-	title = EVTTITLEancrel.1319
-	desc = EVTDESCancrel.1319
+	title = EVTTITLEancrel.1319
+	desc = EVTDESCancrel.1319
 	picture = GFX_evt_roman_temple
 	border = GFX_event_narrative_frame_religion
 
@@ -352,7 +352,7 @@ character_event = {
 # The Grand Master humbly requests the right to build a castle in your demesne
 character_event = {
 	id = ancrel.1324
-	desc = OK
+	desc = OK
 	picture = GFX_EVT_warrior_banners
 	border = GFX_event_normal_frame_religion
 	
@@ -452,7 +452,7 @@ character_event = {
 
 province_event = {
 	id = ancrel.1325
-	desc = OK
+	desc = OK
 	picture = GFX_EVT_warrior_banners
 	border = GFX_event_normal_frame_religion
 	
@@ -477,7 +477,7 @@ province_event = {
 
 character_event = {
 	id = ancrel.1326
-	desc = OK
+	desc = OK
 	picture = GFX_EVT_warrior_banners
 	border = GFX_event_normal_frame_religion
 	
@@ -563,7 +563,7 @@ province_event = {
 # Ping event when expelling the Red Dragon
 character_event = {
 	id = ancrel.1329
-	desc = OK
+	desc = OK
 	picture = GFX_EVT_throne_room_norse_pagan
 	border = GFX_event_normal_frame_religion
 	
@@ -620,7 +620,7 @@ letter_event = {
 # Ping event when donating money to the Red dragon
 character_event = {
 	id = ancrel.1331
-	desc = OK
+	desc = OK
 	picture = GFX_EVT_throne_room_norse_pagan
 	border = GFX_event_normal_frame_religion
 	

@@ -1529,7 +1529,7 @@ character_event = {
 # Ping event when donating money to the fianna
 character_event = {
 	id = ancrel.1333
-	desc = OK
+	desc = OK
 	picture = GFX_evt_throne_room_norse_pagan
 	border = GFX_event_normal_frame_religion
 	
@@ -1558,7 +1558,7 @@ character_event = {
 # Notification event when donating money to the fianna
 letter_event = {
 	id = ancrel.1334
-	desc = EVTDESCancrel.1334
+	desc = EVTDESCancrel.1334
 	border = GFX_event_letter_frame_religion
 	
 	is_triggered_only = yes

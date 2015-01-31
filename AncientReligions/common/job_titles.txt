@@ -23,9 +23,13 @@ job_chancellor = {
 			AND = {
 				OR = {
 					is_female = no
-					AND = {
-						religion = cathar
-						liege = { religion = cathar }
+					liege = { 
+						OR = {
+							religion = cathar
+							religion = druidic
+							religion = druidic_reformed
+						}
+						religion = ROOT
 					}
 				}
 				is_adult = yes
@@ -85,19 +89,13 @@ job_marshal = {
 			AND = {
 				OR = {
 					is_female = no
-					AND = {
-						religion = cathar
-						liege = { religion = cathar }
-					}
-					AND = {
+					liege = {
 						OR = {
 							religion = druidic
 							religion = druidic_reformed
+							religion = cathar
 						}
-						OR = {
-							liege = { religion = druidic }
-							liege = { religion = druidic_reformed }
-						}
+						religion = ROOT
 					}
 				}
 				OR = {
@@ -143,9 +141,13 @@ job_treasurer = {
 			AND = {
 				OR = {
 					is_female = no
-					AND = {
-						religion = cathar
-						liege = { religion = cathar }
+					liege = { 
+						OR = {
+							religion = druidic
+							religion = druidic_reformed
+							religion = cathar
+						}
+						religion = ROOT
 					}
 				}
 				is_adult = yes

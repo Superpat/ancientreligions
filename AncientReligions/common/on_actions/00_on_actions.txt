@@ -3,6 +3,9 @@
 
 #character
 on_startup = {
+	events = {
+		ancrel.9009
+	}
 }
 
 #character

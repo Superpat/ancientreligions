@@ -345,7 +345,6 @@ d_promethean_pagan = {
 	capital = 482 # Athens, location of Plato's Academy
 
 	allow = {
-		title_tier = king
 		religion = promethean_pagan
 		num_of_holy_sites = 3
 		piety = 500
@@ -354,13 +353,9 @@ d_promethean_pagan = {
 
 	title = SCHOLARCH
 
-	short_name = yes
-
 	# Always exists
 	landless = yes
-	primary = no
 
-	short_name = yes
 	dignity = 100
 	controls_religion = promethean_pagan
 	religion = promethean_pagan

@@ -1,6 +1,5 @@
-
-# Imported from CK2+, originally with ID ancrel.9999, renamed to ancrel.9999
-
+namespace = ancrel
+# Imported from CK2+, originally with ID 999999, renamed to ancrel.9999
 # Gone pagan
 character_event = {
 	id = ancrel.9999
@@ -212,5 +211,220 @@ character_event = {
 		name = "EVTOPTZancrel.9999"
 		ai_chance = { factor = 1 }
 		clr_character_flag = gone_pagan
+	}
+}
+
+# Ask the player if they want to "paganify" the world
+character_event = {
+	id = ancrel.9001
+	is_triggered_only = yes
+	ai = no
+	hide_window = yes
+
+	trigger = {
+		NOT = { has_global_flag = acr_paganify }
+	}
+
+	immediate = {
+		set_global_flag = acr_paganify
+	}
+
+	option = {
+		name = EVTOPTAancrel.9001	
+		any_independent_ruler = {
+			any_realm_character = {
+				if = { # Celtic
+					limit = {
+						OR = {
+							culture_group = celtic
+							culture_group = iberian
+							culture_group = west_germanic
+							culture = occitan
+							culture = french
+						}
+					}
+					character_event = { id = ancrel.9002 days = 1 }
+				}
+				if = { # Hellenic
+					limit = {
+						OR = {
+							culture_group = byzantine
+							culture = italian
+						}
+
+					}
+					character_event = { id = ancrel.9003 days = 1 }
+				}
+				if = { # Kemetic
+					limit = {
+						OR = {
+							culture = bedouin_arabic
+							culture = levantine_arabic
+							culture = egyptian_arabic
+							culture_group = east_african
+						}
+					}
+					character_event = { id = ancrel.9004 days = 1 }
+				}
+				if = { # West African
+					limit = {
+						OR = {
+							culture = maghreb_arabic
+							culture = andalusian_arabic
+							culture_group = west_african
+						}
+					}
+					character_event = { id = ancrel.9005 days = 1 }
+				}
+				if = { # Slavic
+					limit = {
+						OR = {
+							culture_group = west_slavic
+							culture_group = east_slavic
+							culture_group = south_slavic
+						}
+					}
+					character_event = { id = ancrel.9006 days = 1 }
+				}
+				if = { # Norse
+					limit = {
+						culture_group = north_germanic
+						culture_group = central_germanic
+					}
+					character_event = { id = ancrel.9007 days = 1 }					
+				}
+				if = { 
+					limit = {
+						culture_group = iranian
+					}
+					character_event = { id = ancrel.9008 days = 1 }
+				}
+			}
+		}
+	}
+}
+
+# Celtic
+character_event = {
+	id = ancrel.9002
+	hide_window = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+		religion = celtic_pagan
+		any_demense_province = {
+			religion = celtic_pagan
+		}
+	}
+}
+
+# Hellenic
+character_event = {
+	id = ancrel.9003
+	hide_window = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+		religion = hellenic_pagan
+		any_demense_province = {
+			religion = hellenic_pagan
+		}
+	}
+}
+
+# Kemetic
+character_event = {
+	id = ancrel.9004
+	hide_window = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+		religion = egyptian_pagan
+		any_demense_province = {
+			religion = egyptian_pagan
+		}		
+	}
+}
+
+# West African
+character_event = {
+	id = ancrel.9005
+	hide_window = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+		religion = west_african_pagan
+		any_demense_province = {
+			religion = west_african_pagan
+		}		
+	}
+}
+
+# Slavic
+character_event = {
+	id = ancrel.9006
+	hide_window = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+		religion = slavic_pagan
+		any_demense_province = {
+			religion = slavic_pagan
+		}		
+	}
+}
+
+# Norse
+character_event = {
+	id = ancrel.9007
+	hide_window = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+		religion = norse_pagan
+		any_demense_province = {
+			religion = norse_pagan
+		}		
+	}
+}
+
+# Zoroastrian
+character_event = {
+	id = ancrel.9008
+	hide_window = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+		religion = zoroastrian
+		any_demense_province = {
+			religion = zoroastrian
+		}		
+	}
+}
+
+# Maintenance Event - Sets global flag
+# to let us know if we are on day 0
+character_event = {
+	id = ancrel.9009
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_global_flag = ancrel }
+	}
+
+	immediate = {
+		set_global_flag = ancrel
+	}
+
+	option = {
+		name = OK
 	}
 }

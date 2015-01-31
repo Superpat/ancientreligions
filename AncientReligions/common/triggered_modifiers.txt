@@ -65,8 +65,6 @@ titan_cultist = {
 	ai_zeal = 25
 	ai_rationality = -10
 	combat_rating = 2
-
-	active = no
 }
 
 # Promethean Pagan Modifier
@@ -84,6 +82,4 @@ promethean_philosophy = {
 	ai_rationality = 10
 
 	learning = 1
-
-	active = no
 }

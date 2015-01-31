@@ -39,7 +39,7 @@ character_event = {
 				OR = {
 					religion_group = christian
 					religion_group = muslim
-					religion_group = indian
+					religion_group = indian_group
 					religion = promethean_pagan
 					religion = hellenic_pagan
 				}

@@ -71,4 +71,109 @@ decisions = {
 			}
 		}
 	}
+	paganify_the_world = {
+		is_high_prio = yes
+		potential = {
+			has_dlc = "The Old Gods"
+			ai = no
+			NOT = { 
+				had_global_flag = { flag = ancrel days = 1 } # only on first day
+				has_global_flag = acr_paganify
+			}
+		}
+		effect = {
+			custom_tooltip = {
+				text = ancrel.paganify.tooltip
+			if = { # Celtic
+				limit = {
+					OR = {
+						culture_group = celtic
+						culture_group = iberian
+						culture_group = west_germanic
+						culture = occitan
+						culture = frankish
+					}
+				}
+				religion = celtic_pagan
+				any_demesne_province = {
+					religion = celtic_pagan
+				}
+			}
+			if = { # Hellenic
+				limit = {
+					OR = {
+						culture_group = byzantine
+						culture = italian
+					}
+
+				}
+				religion = hellenic_pagan
+				any_demense_province = {
+					religion = hellenic_pagan
+				}
+			}
+			if = { # Kemetic
+				limit = {
+					OR = {
+						culture = bedouin_arabic
+						culture = levantine_arabic
+						culture = egyptian_arabic
+						culture_group = east_african
+					}
+				}
+				religion = egyptian_pagan
+				any_demense_province = {
+					religion = egyptian_pagan
+				}
+			}
+			if = { # West African
+				limit = {
+					OR = {
+						culture = maghreb_arabic
+						culture = andalusian_arabic
+						culture_group = west_african
+					}
+				}
+				religion = west_african_pagan
+				any_demesne_province = {
+					religion = west_african_pagan
+				}
+			}
+			if = { # Slavic
+				limit = {
+					OR = {
+						culture_group = west_slavic
+						culture_group = east_slavic
+						culture_group = south_slavic
+					}
+				}
+				religion = slavic_pagan
+				any_demesne_province = {
+					religion = slavic_pagan
+				}
+			}
+			if = { # Norse
+				limit = {
+					culture_group = north_germanic
+					culture_group = central_germanic
+				}
+				religion = norse_pagan
+				any_demesne_province = {
+					religion = norse_pagan
+				}				
+			}
+			if = { 
+				limit = {
+					culture_group = iranian
+				}
+				religion = zoroastrian
+				any_demesne_province = {
+					religion = zoroastrian
+				}
+			}
+
+			character_event = ancrel.9001				
+			}	
+		}
+	}
 }

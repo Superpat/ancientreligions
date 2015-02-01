@@ -43,17 +43,8 @@ character_event = {
 					}
 				}
 				new_character = {
-					opinion = {
-						modifier = opinion_patron
-						who = ROOT
-						years = 20
-					}
-					reverse_opinion = {
-						modifier = opinion_new_courtier
-						who = ROOT
-						years = 5
-					}				
-				}		
+					character_event = { id = ancrel.0158 }
+				}
 			}
 			30 = {
 				create_character = {
@@ -70,17 +61,8 @@ character_event = {
 					}
 				}
 				new_character = {
-					opinion = {
-						modifier = opinion_patron
-						who = ROOT
-						years = 20
-					}
-					reverse_opinion = {
-						modifier = opinion_new_courtier
-						who = ROOT
-						years = 5
-					}				
-				}			
+					character_event = { id = ancrel.0158 }
+				}
 			}
 			20 = {
 				create_character = {
@@ -97,17 +79,8 @@ character_event = {
 					}
 				}
 				new_character = {
-					opinion = {
-						modifier = opinion_patron
-						who = ROOT
-						years = 20
-					}
-					reverse_opinion = {
-						modifier = opinion_new_courtier
-						who = ROOT
-						years = 5
-					}				
-				}			
+					character_event = { id = ancrel.0158 }
+				}
 			}
 			12 = {
 				create_character = {
@@ -124,17 +97,8 @@ character_event = {
 					}
 				}
 				new_character = {
-					opinion = {
-						modifier = opinion_patron
-						who = ROOT
-						years = 20
-					}
-					reverse_opinion = {
-						modifier = opinion_new_courtier
-						who = ROOT
-						years = 5
-					}				
-				}			
+					character_event = { id = ancrel.0158 }
+				}
 			}
 			3 = {
 				create_character = {
@@ -151,17 +115,8 @@ character_event = {
 					}
 				}
 				new_character = {
-					opinion = {
-						modifier = opinion_patron
-						who = ROOT
-						years = 20
-					}
-					reverse_opinion = {
-						modifier = opinion_new_courtier
-						who = ROOT
-						years = 5
-					}				
-				}			
+					character_event = { id = ancrel.0158 }
+				}
 			}
 		}
 	}
@@ -254,16 +209,7 @@ character_event = {
 					}
 				}
 				new_character = {
-					opinion = {
-						modifier = opinion_patron
-						who = ROOT
-						years = 20
-					}
-					reverse_opinion = {
-						modifier = opinion_new_courtier
-						who = ROOT
-						years = 5
-					}				
+					character_event = { id = ancrel.0158 }
 				}		
 			}
 			30 = {
@@ -281,16 +227,7 @@ character_event = {
 					}
 				}
 				new_character = {
-					opinion = {
-						modifier = opinion_patron
-						who = ROOT
-						years = 20
-					}
-					reverse_opinion = {
-						modifier = opinion_new_courtier
-						who = ROOT
-						years = 5
-					}				
+					character_event = { id = ancrel.0158 }
 				}			
 			}
 			20 = {
@@ -308,16 +245,7 @@ character_event = {
 					}
 				}
 				new_character = {
-					opinion = {
-						modifier = opinion_patron
-						who = ROOT
-						years = 20
-					}
-					reverse_opinion = {
-						modifier = opinion_new_courtier
-						who = ROOT
-						years = 5
-					}				
+					character_event = { id = ancrel.0158 }
 				}			
 			}
 			12 = {
@@ -335,16 +263,7 @@ character_event = {
 					}
 				}
 				new_character = {
-					opinion = {
-						modifier = opinion_patron
-						who = ROOT
-						years = 20
-					}
-					reverse_opinion = {
-						modifier = opinion_new_courtier
-						who = ROOT
-						years = 5
-					}				
+					character_event = { id = ancrel.0158 }
 				}			
 			}
 			3 = {
@@ -362,16 +281,7 @@ character_event = {
 					}
 				}
 				new_character = {
-					opinion = {
-						modifier = opinion_patron
-						who = ROOT
-						years = 20
-					}
-					reverse_opinion = {
-						modifier = opinion_new_courtier
-						who = ROOT
-						years = 5
-					}				
+					character_event = { id = ancrel.0158 }
 				}			
 			}
 		}
@@ -484,6 +394,101 @@ character_event = {
 			}
 			give_nickname = nick_the_wicked
 		}
+	}
+}
+
+# Ping new Druid to set correct scopes scope.
+# FROM is the liege
+character_event = {
+	id = ancrel.0158
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			character_event = { id = ancrel.0159 }
+		}
+	}
+
+	option = {
+		name = OK
+	}
+}
+
+# Liege is notified that a Druid arrived at court
+# FROM is the druid
+character_event = {
+	id = ancrel.0159
+	desc = EVTDESCancrel.0159
+	picture = GFX_evt_viking_throneroom_oldgods
+	
+	is_triggered_only = yes
+	
+	show_from = yes
+	
+	immediate = {
+		FROM = { 
+			opinion = {
+				modifier = opinion_patron
+				who = ROOT
+				years = 20
+			}
+			reverse_opinion = {
+				modifier = opinion_new_courtier
+				who = ROOT
+				years = 5
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTAancrel.0159
+
+		trigger = {
+			NOT = {
+				any_courtier = {
+					has_minor_title = title_court_druid
+				}
+			}
+		}
+		FROM = {
+			give_minor_title = title_court_druid
+		}
+	}
+	
+	option = {
+		name = EVTOPTBancrel.0159
+		
+		trigger = {
+			NOT = {
+				any_courtier = {
+					has_job_title = job_chancellor
+				}
+			}
+		}
+		FROM = {
+			give_job_title = job_chancellor
+		}
+	}
+	
+	option = {
+		name = EVTOPTCancrel.0159
+		
+		trigger = {
+			NOT = { 
+				any_courtier = {
+					has_job_title = job_spiritual
+				}
+			}
+		}
+		FROM = {
+			give_job_title = job_spiritual 
+		}
+	}
+	
+	option = {
+		name = EVTOPTDancrel.0159
 	}
 }
 

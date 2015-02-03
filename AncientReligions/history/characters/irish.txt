@@ -23509,7 +23509,10 @@
 	culture="irish"
 	father = 7258
 	550.1.1={
-		birth="550.1.1" 
+		birth="550.1.1"
+		effect = {
+			set_global_flag = ancrel
+		}
 	}
 	604.1.1={
 		death="604.1.1"

@@ -217,9 +217,8 @@ character_event = {
 # Ask the player if they want to "paganify" the world
 character_event = {
 	id = ancrel.9001
+	desc = ancrel.9001.desc
 	is_triggered_only = yes
-	ai = no
-	hide_window = yes
 
 	trigger = {
 		NOT = { has_global_flag = acr_paganify }
@@ -230,7 +229,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.9001	
+		name = ancrel.9001.a
 		any_independent_ruler = {
 			any_realm_character = {
 				if = { # Celtic
@@ -240,7 +239,7 @@ character_event = {
 							culture_group = iberian
 							culture_group = west_germanic
 							culture = occitan
-							culture = french
+							culture = frankish
 						}
 					}
 					character_event = { id = ancrel.9002 days = 1 }
@@ -288,8 +287,10 @@ character_event = {
 				}
 				if = { # Norse
 					limit = {
-						culture_group = north_germanic
-						culture_group = central_germanic
+						OR = {
+							culture_group = north_germanic
+							culture_group = central_germanic
+						}
 					}
 					character_event = { id = ancrel.9007 days = 1 }					
 				}
@@ -302,12 +303,16 @@ character_event = {
 			}
 		}
 	}
+
+	option = {
+		name = ancrel.9001.b
+	}
 }
 
 # Celtic
 character_event = {
 	id = ancrel.9002
-	hide_window = yes
+	desc = ancrel.9002.desc
 	is_triggered_only = yes
 
 	option = {
@@ -322,7 +327,7 @@ character_event = {
 # Hellenic
 character_event = {
 	id = ancrel.9003
-	hide_window = yes
+	desc = ancrel.9003.desc
 	is_triggered_only = yes
 
 	option = {
@@ -337,7 +342,7 @@ character_event = {
 # Kemetic
 character_event = {
 	id = ancrel.9004
-	hide_window = yes
+	desc = ancrel.9004.desc
 	is_triggered_only = yes
 
 	option = {
@@ -352,7 +357,7 @@ character_event = {
 # West African
 character_event = {
 	id = ancrel.9005
-	hide_window = yes
+	desc = ancrel.9005.desc
 	is_triggered_only = yes
 
 	option = {
@@ -367,7 +372,7 @@ character_event = {
 # Slavic
 character_event = {
 	id = ancrel.9006
-	hide_window = yes
+	desc = ancrel.9006.desc
 	is_triggered_only = yes
 
 	option = {
@@ -382,7 +387,7 @@ character_event = {
 # Norse
 character_event = {
 	id = ancrel.9007
-	hide_window = yes
+	desc = ancrel.9007.desc
 	is_triggered_only = yes
 
 	option = {
@@ -397,7 +402,7 @@ character_event = {
 # Zoroastrian
 character_event = {
 	id = ancrel.9008
-	hide_window = yes
+	desc = ancrel.9008.desc
 	is_triggered_only = yes
 
 	option = {
@@ -406,25 +411,5 @@ character_event = {
 		any_demense_province = {
 			religion = zoroastrian
 		}		
-	}
-}
-
-# Maintenance Event - Sets global flag
-# to let us know if we are on day 0
-character_event = {
-	id = ancrel.9009
-	hide_window = yes
-	is_triggered_only = yes
-
-	trigger = {
-		NOT = { has_global_flag = ancrel }
-	}
-
-	immediate = {
-		set_global_flag = ancrel
-	}
-
-	option = {
-		name = OK
 	}
 }

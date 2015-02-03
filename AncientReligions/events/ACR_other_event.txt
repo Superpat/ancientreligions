@@ -318,7 +318,7 @@ character_event = {
 	option = {
 		name = OK
 		religion = celtic_pagan
-		any_demense_province = {
+		any_demesne_province = {
 			religion = celtic_pagan
 		}
 	}
@@ -333,7 +333,7 @@ character_event = {
 	option = {
 		name = OK
 		religion = hellenic_pagan
-		any_demense_province = {
+		any_demesne_province = {
 			religion = hellenic_pagan
 		}
 	}
@@ -348,7 +348,7 @@ character_event = {
 	option = {
 		name = OK
 		religion = egyptian_pagan
-		any_demense_province = {
+		any_demesne_province = {
 			religion = egyptian_pagan
 		}		
 	}
@@ -363,7 +363,7 @@ character_event = {
 	option = {
 		name = OK
 		religion = west_african_pagan
-		any_demense_province = {
+		any_demesne_province = {
 			religion = west_african_pagan
 		}		
 	}
@@ -378,7 +378,7 @@ character_event = {
 	option = {
 		name = OK
 		religion = slavic_pagan
-		any_demense_province = {
+		any_demesne_province = {
 			religion = slavic_pagan
 		}		
 	}
@@ -393,7 +393,7 @@ character_event = {
 	option = {
 		name = OK
 		religion = norse_pagan
-		any_demense_province = {
+		any_demesne_province = {
 			religion = norse_pagan
 		}		
 	}
@@ -408,7 +408,7 @@ character_event = {
 	option = {
 		name = OK
 		religion = zoroastrian
-		any_demense_province = {
+		any_demesne_province = {
 			religion = zoroastrian
 		}		
 	}

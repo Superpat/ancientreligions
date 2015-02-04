@@ -21,6 +21,11 @@ EVTOPTAancrel.0155;Send for a master of law.;French;German;;Spanish;;;;;;;;;;;x
 EVTOPTBancrel.0155;Bring me a servant of the gods.;French;German;;Spanish;;;;;;;;;;;x
 EVTDESCancrel.0157;A Druid is expected to follow the Celtic Virtues of honor, loyalty, hospitality, honesty, justice and courage. Gossip is starting to spread about your wicked habits.;FRENCH;GERMAN;;SPANISH;;;;;;;;;;;;;;x
 EVTOPTAancrel.0157;May [Root.Religion.GetRandomGodName] have mercy on me.;FRENCH;GERMAN;;SPANISH;;;;;;;;;;;;;;x
+EVTDESCancrel.0159;The Druid presents [From.GetHerselfHimself] to you. In order to judge of [From.GetHerHis] talents, you request [From.GetHerHim] to show you the subject [From.GetSheHe] is most skillful at.;;;;;;;;;;;;;;;x
+EVTOPTAancrel.0159;[From.GetSheHeCap] shall be my new Court Druid !;;;;;;;;;;;;;;;x
+EVTOPTBancrel.0159;[From.GetSheHeCap] shall be my new [From.GetChancellorName] !;;;;;;;;;;;;;;;x
+EVTOPTCancrel.0159;[From.GetSheHeCap] shall be my new [From.GetLordSpiritualName] !;;;;;;;;;;;;;;;x
+EVTOPTDancrel.0159;I will settle this matter later.;;;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 new_druid_in_court;New Druid in Court;French;German;;Spanish;;;;;;;;;;;x
 new_druid_in_court_desc;A Druid has just arrived in this lord's court.;French;German;;Spanish;;;;;;;;;;;x
@@ -28,6 +33,7 @@ title_court_druid;Court Druid;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 title_court_druid_desc;Responsible for organising worship and sacrifices, divination, and judicial procedure in Celtic society, they are as essential to a ruler as his sword.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 title_court_bard;Court Bard;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
 title_court_bard_desc;Bards were those who sang the songs recalling the tribal warriors' deeds of bravery as well as the genealogies and family histories of the ruling strata among Celtic societies. The Celtic peoples maintain an intricate oral history committed to memory and transmitted by bards. Bards facilitated the memorization of such materials by the use of metre, rhyme and other formulaic poetic devices.;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+#;;;;;;;;;;;;;;x
 EVTNAMEancrel.0183;Coming of age;French;German;;Spanish;;;;;;;;;;;x
 EVTDESCancrel.0183;Today your child comes of age. [From.GetSheHeCap] will join the clan today as the Druids present [From.GetHerHim] to the gods. You can use this opportunity to plan [From.GetHerHis] future.;French;German;;Spanish;;;;;;;;;;;x
 EVTOPTAancrel.0183;[From.GetSheHeCap] will be a warrior;French;German;;Spanish;;;;;;;;;;;x

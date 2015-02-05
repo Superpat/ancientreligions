@@ -1,47 +1,4 @@
 decisions = {
-	restore_roman_empire = {
-		is_high_prio = yes
-		potential = {
-			has_dlc = "Legacy of Rome"
-			age = 16
-			prisoner = no
-			NOT = { trait = incapable }
-			NOT = { has_global_flag = rome_restored }
-			has_landed_title = e_byzantium
-			OR = {
-				religion_group = christian
-				religion_group = pagan_group
-			}
-		}
-		
-		allow = {
-			prestige = 3000
-
-			# The two capitals
-			completely_controls = d_latium
-			completely_controls = d_thrace
-
-			# Key positions in Roman Italia
-			completely_controls = d_ferrara
-			completely_controls = d_genoa
-			completely_controls = d_capua
-			completely_controls = d_apulia
-
-			# Key positions outside Roman Italia
-			completely_controls = d_venice
-			completely_controls = d_sicily
-			completely_controls = d_alexandria
-			completely_controls = d_athens
-			completely_controls = d_tunis
-		}
-		effect = {
-			set_global_flag = rome_restored
-			narrative_event = { id = ancrel.2220 tooltip = EVTTOOLTIPLoR.20 }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
 
 	recreate_roman_empire = {
 		is_high_prio = yes

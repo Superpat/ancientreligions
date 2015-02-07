@@ -83,4 +83,64 @@ castle = {
 		
 		extra_tech_building_start = 0.8
 	}
+	ca_culture_gaulish_1 = {
+		desc = ca_culture_gaulish_1_desc
+		potential = {
+			FROM = { culture = gaulish }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		knights = 15
+		knights_offensive = 0.15
+		ai_creation_factor = 101
+
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_gaulish_2 = {
+		desc = ca_culture_gaulish_1_desc
+		potential = {
+			FROM = { culture = gaulish }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_gaulish_1
+		gold_cost = 300
+		build_time = 1095
+		knights = 20
+		knights_offensive = 0.15
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_gaulish_3 = {
+		desc = ca_culture_gaulish_1_desc
+		potential = {
+			FROM = { culture = gaulish }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_gaulish_2
+		gold_cost = 400
+		build_time = 2190
+		knights = 25
+		knights_offensive = 0.15
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_gaulish_4 = {
+		desc = ca_culture_gaulish_1_desc
+		potential = {
+			FROM = { culture = gaulish }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_culture_gaulish_3
+		gold_cost = 500
+		build_time = 2190
+		knights = 30
+		knights_offensive = 0.15
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}	
 }

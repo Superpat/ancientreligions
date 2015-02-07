@@ -1978,7 +1978,7 @@ decisions = {
 			independent = yes
 		}
 		allow = {
-			capital_scope = {
+			capital_holding = {
 				is_tribal = yes
 				has_building = tb_hillfort_4
 			}
@@ -1997,7 +1997,7 @@ decisions = {
 			custom_tooltip = {
 				text = adopt_feudalism_tooltip_1
 				hidden_tooltip = {
-					capital_scope = {
+					capital_holding = {
 						convert_to_castle = yes
 						refill_holding_levy = yes
 					}
@@ -2086,13 +2086,13 @@ decisions = {
 			OR = {
 				ai = yes
 				AND = {
-					capital_scope = { port = yes }
+					capital_holding = { port = yes }
 					has_dlc = "The Republic"
 				}
 			}
 		}
 		allow = {
-			capital_scope = {
+			capital_holding = {
 				is_tribal = yes
 				has_building = tb_market_town_4
 			}

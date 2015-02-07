@@ -10,9 +10,9 @@
 RETTYPE_CUL_ROMAN =
 {
 	first_type = 1
-	first_amount = 450
+	first_amount = 225
 	second_type = 3
-	second_amount = 50
+	second_amount = 25
 	
 	potential = {
 		culture = roman

@@ -12,7 +12,10 @@ hellenic_county_liberation = {
 	allow_distant = yes
 	
 	can_use = {
-		ROOT = { religion = hellenic_pagan }
+		ROOT = { 
+			religion = hellenic_pagan 
+			NOT = { same_realm = FROM }
+		}
 		NOT = { FROM = { religion_group = pagan_group } }
 		NOT = { FROM = { any_liege = { religion_group = pagan_group } } }
 	}
@@ -25,7 +28,6 @@ hellenic_county_liberation = {
 			}
 			holder_scope = {
 				is_liege_or_above = FROM
-				NOT = { same_realm = ROOT }
 			}
 		}
 

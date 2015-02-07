@@ -1,20 +1,3 @@
-### Hellenic Pagan
-#
-#b_lebedos = {
-#	# Temple of Artemis at Ephesus
-#	holy_site = hellenic_pagan
-#}
-#b_lampsakos = {
-#	remove_holy_site = hellenic_pagan
-#}
-#b_piraeaus = {
-#	remove_holy_site = hellenic_pagan
-#}
-#b_pyrgos = {
-#	# Statue of Zeus at Olympia
-#	holy_site = hellenic_pagan
-#}
-
 ### Celtic Pagan
 
 b_locmine = {
@@ -42,21 +25,16 @@ b_mellifont = {
 
 b_zweitina = {
 	holy_site = egyptian_pagan
-	holy_site = aten_pagan
 }
 b_ikonion = {		
 	holy_site = egyptian_pagan
-	holy_site = aten_pagan
 }
 b_fuwa = {
-	holy_site = egyptian_pagan
-	holy_site = aten_pagan		
+	holy_site = egyptian_pagan	
 }
 b_memphis = {
 	holy_site = egyptian_pagan
-	holy_site = aten_pagan
 }
 b_luxor = {
 	holy_site = egyptian_pagan
-	holy_site = aten_pagan				
 }

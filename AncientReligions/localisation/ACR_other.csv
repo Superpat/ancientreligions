@@ -49,3 +49,15 @@ gone_pagan;Adopt Native Religion;Adopt Native Religion;Adopt Native Religion;;Ad
 gone_pagan_ctt;One of the following must be true:\n- The §YMoral Authority§! of your religion must be below §R20§!\n- There must be a pagan province in your demesne that is relevant to your culture, in addition to the §YMoral Authority§! of your religion being below §R30§!\n- You must be a lunatic and the §YMoral Authority§! of you religion must be below §R50§!;;;;;;;;;;;;;;;
 gone_pagan_desc;Adopt your culture's native religion.;Adopt your culture's native religion.;Adopt your culture's native religion.;;Adopt your culture's native religion.;;;;;;;;;x;;
 #;;;;;;;;;;;;;;
+paganify_the_world;Lets. Get. PAGAN!;;;;;;;;;;;x
+paganify_the_world_desc;Convert all characters to a not Christian and not Muslim religion, based on culture. Does not affect religious heads, so the Caliphate remains. May bring older machines to their knees.;;;;;;;;;;;x
+ancrel.paganify.tooltip;Turn the world pagan by culture. This is mostly for development.;;;;;;;;;;;X
+ancrel.9001.desc;Do you want to turn most of the world pagan? Be warned, nearly every single character will recieve an event that converts their religion and that of their personal demesne. This may bring older computers to their knees. This is an unsupported feature primarily for development use!;;;;;;;;;;;x
+ancrel.9001.a;To the Old Gods!;;;;;;;;;;;x
+ancrel.9002.desc;Congrats! You're Celtic Pagan!;;;;;;;;;;;x
+ancrel.9003.desc;Congrats! You're Hellenic Pagan!;;;;;;;;;;;x
+ancrel.9004.desc;Congrats! You're Egyptian Pagan!;;;;;;;;;;;x
+ancrel.9005.desc;Congrats! You're West African Pagan!;;;;;;;;;;;X
+ancrel.9006.desc;Congrats! You're Slavic Pagan!;;;;;;;;;;;x
+ancrel.9007.desc;Congrats! You're Norse Pagan!;;;;;;;;;;;x
+ancrel.9008.desc;Congrats! You're Zoroastrian!;;;;;;;;;;;x

@@ -2,8 +2,7 @@
 # It's easier to keep whole file for merge: every patch will require a merge anyway even on the portion modified for ACR...
 
 #character
-on_startup = {
-}
+on_startup = { }
 
 #character
 on_yearly_pulse = {

@@ -23512,6 +23512,17 @@
 		birth="550.1.1"
 		effect = {
 			set_global_flag = ancrel
+			# this global flag is how we can know how many days
+			# its been since the game was startd, regardless of
+			# which start date was chosen. Primarily this is used
+			# to make sure customization decisions can only be
+			# fired on the first day (day 0) of the game. For an
+			# example of how this works, check the paganify_the_world
+			# decision in ACR_minor_decisions.
+			#
+			# It also makes it clear that Ancient Religions is active,
+			# which could prove useful in the future should a mod want
+			# to know if its being run alongside ACR
 		}
 	}
 	604.1.1={

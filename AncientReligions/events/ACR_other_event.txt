@@ -319,7 +319,8 @@ character_event = {
 	desc = ancrel.9002.desc
 	picture = GFX_evt_Pagan_dolmen
 	is_triggered_only = yes
-
+	hide_from = yes
+	
 	option = {
 		name = OK
 		religion = celtic_pagan
@@ -336,6 +337,7 @@ character_event = {
 	desc = ancrel.9003.desc
 	picture = GFX_evt_roman_temple
 	is_triggered_only = yes
+	hide_from = yes
 
 	option = {
 		name = OK
@@ -353,6 +355,7 @@ character_event = {
 	desc = ancrel.9004.desc
 	picture = GFX_evt_temple_egyptian_pagan
 	is_triggered_only = yes
+	hide_from = yes
 
 	option = {
 		name = OK
@@ -370,6 +373,7 @@ character_event = {
 	desc = ancrel.9005.desc
 	picture = GFX_evt_desert
 	is_triggered_only = yes
+	hide_from = yes
 
 	option = {
 		name = OK
@@ -387,6 +391,7 @@ character_event = {
 	desc = ancrel.9006.desc
 	picture = GFX_evt_cathedral_norse_pagan
 	is_triggered_only = yes
+	hide_from = yes
 
 	option = {
 		name = OK
@@ -404,6 +409,7 @@ character_event = {
 	desc = ancrel.9007.desc
 	picture = GFX_evt_cathedral_norse_pagan
 	is_triggered_only = yes
+	hide_from = yes
 
 	option = {
 		name = OK
@@ -421,6 +427,7 @@ character_event = {
 	desc = ancrel.9008.desc
 	picture = GFX_evt_marriage_zoroastrian_group
 	is_triggered_only = yes
+	hide_from = yes
 
 	option = {
 		name = OK

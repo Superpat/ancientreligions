@@ -685,6 +685,8 @@ culture = {
 culture = {
 	religion = {
 		"hellenic_pagan"
+		"titan_pagan"
+		"promethean_pagan"
 	}
 	
 	templates = { 
@@ -724,7 +726,7 @@ culture = {
 	# WHEN ADDING NEW, ALWAYS ADD AT THE END
 	textures = {
 		texture = {
-			file = "gfx\\coats_of_arms\\Hellenic_pack.tga"
+			file = "gfx\\coats_of_arms\\ACR\\pattern_hellenic.tga"
 			size = { x = 10 y = 4 }
 			noOfFrames = 40
 			color = 3
@@ -776,7 +778,7 @@ culture = {
 	# WHEN ADDING NEW, ALWAYS ADD AT THE END
 	textures = {
 		texture = {
-			file = "gfx\\coats_of_arms\\Kemetic_pack.tga"
+			file = "gfx\\coats_of_arms\\ACR\\pattern_kemetic.tga"
 			size = { x = 10 y = 4 }
 			noOfFrames = 40
 			color = 3
@@ -830,7 +832,7 @@ culture = {
 	# WHEN ADDING NEW, ALWAYS ADD AT THE END
 	textures = {
 		texture = {
-			file = "gfx\\coats_of_arms\\Celtic_pack.tga"
+			file = "gfx\\coats_of_arms\\ACR\\pattern_celtic.tga"
 			size = { x = 10 y = 4 }
 			noOfFrames = 40
 			color = 3

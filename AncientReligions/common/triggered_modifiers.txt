@@ -43,10 +43,43 @@ unfit_gaelic_king = {
 		}
 	}
 	
-	icon = 24
+	icon = 25
 	
 	land_morale = -0.20
 	general_opinion = -10
 	
 	active = no
+}
+
+# Titan Cultist Modifier
+titan_cultist = {
+	potential = {
+		is_ruler = yes
+	}
+	trigger = {
+		religion = titan_pagan
+	}
+
+	icon = 26
+
+	ai_zeal = 25
+	ai_rationality = -10
+	combat_rating = 2
+}
+
+# Promethean Pagan Modifier
+promethean_philosophy = {
+	potential = {
+		is_ruler = yes
+	}
+	trigger = {
+		religion = promethean_pagan
+	}
+
+	icon = 2
+
+	ai_zeal = 25
+	ai_rationality = 10
+
+	learning = 1
 }

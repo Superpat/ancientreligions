@@ -1,6 +1,5 @@
-
-# Imported from CK2+, originally with ID ancrel.9999, renamed to ancrel.9999
-
+namespace = ancrel
+# Imported from CK2+, originally with ID 999999, renamed to ancrel.9999
 # Gone pagan
 character_event = {
 	id = ancrel.9999
@@ -212,5 +211,223 @@ character_event = {
 		name = "EVTOPTZancrel.9999"
 		ai_chance = { factor = 1 }
 		clr_character_flag = gone_pagan
+	}
+}
+
+# Ask the player if they want to "paganify" the world
+character_event = {
+	id = ancrel.9001
+	desc = ancrel.9001.desc
+	picture = GFX_evt_Pagan_dolmen
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_global_flag = acr_paganify }
+	}
+
+	immediate = {
+		set_global_flag = acr_paganify
+	}
+
+	option = {
+		name = ancrel.9001.a
+		any_independent_ruler = {
+			any_realm_character = {
+				if = { # Celtic
+					limit = {
+						NOT = { religion_group = pagan_group }
+						OR = {
+							culture_group = celtic
+							culture_group = iberian
+							culture_group = west_germanic
+							culture = occitan
+							culture = frankish
+						}
+					}
+					character_event = { id = ancrel.9002 }
+				}
+				if = { # Hellenic
+					limit = {
+						NOT = { religion_group = pagan_group }					
+						OR = {
+							culture_group = byzantine
+							culture = italian
+						}
+
+					}
+					character_event = { id = ancrel.9003 }
+				}
+				if = { # Kemetic
+					limit = {
+						NOT = { religion_group = pagan_group }					
+						OR = {
+							culture = bedouin_arabic
+							culture = levantine_arabic
+							culture = egyptian_arabic
+							culture_group = east_african
+						}
+					}
+					character_event = { id = ancrel.9004 }
+				}
+				if = { # West African
+					limit = {
+						NOT = { religion_group = pagan_group }					
+						OR = {
+							culture = maghreb_arabic
+							culture = andalusian_arabic
+							culture_group = west_african
+						}
+					}
+					character_event = { id = ancrel.9005 }
+				}
+				if = { # Slavic
+					limit = {
+						NOT = { religion_group = pagan_group }					
+						OR = {
+							culture_group = west_slavic
+							culture_group = east_slavic
+							culture_group = south_slavic
+						}
+					}
+					character_event = { id = ancrel.9006 }
+				}
+				if = { # Norse
+					limit = {
+						NOT = { religion_group = pagan_group }					
+						OR = {
+							culture_group = north_germanic
+							culture_group = central_germanic
+						}
+					}
+					character_event = { id = ancrel.9007 }					
+				}
+				if = { 
+					limit = {
+						NOT = { religion_group = pagan_group }					
+						culture_group = iranian
+					}
+					character_event = { id = ancrel.9008 }
+				}
+			}
+		}
+	}
+}
+
+# Celtic
+character_event = {
+	id = ancrel.9002
+	desc = ancrel.9002.desc
+	picture = GFX_evt_Pagan_dolmen
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+		religion = celtic_pagan
+		any_demesne_title = {
+			limit = { tier = count }
+			location = { religion = celtic_pagan }
+		}
+	}
+}
+
+# Hellenic
+character_event = {
+	id = ancrel.9003
+	desc = ancrel.9003.desc
+	picture = GFX_evt_roman_temple
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+		religion = hellenic_pagan
+		any_demesne_title = {
+			limit = { tier = count }
+			location = { religion = hellenic_pagan }
+		}
+	}
+}
+
+# Kemetic
+character_event = {
+	id = ancrel.9004
+	desc = ancrel.9004.desc
+	picture = GFX_evt_temple_egyptian_pagan
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+		religion = egyptian_pagan
+		any_demesne_title = {
+			limit = { tier = count }
+			location = { religion = egyptian_pagan }
+		}
+	}
+}
+
+# West African
+character_event = {
+	id = ancrel.9005
+	desc = ancrel.9005.desc
+	picture = GFX_evt_desert
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+		religion = west_african_pagan
+		any_demesne_title = {
+			limit = { tier = count }
+			location = { religion = west_african_pagan }
+		}
+	}
+}
+
+# Slavic
+character_event = {
+	id = ancrel.9006
+	desc = ancrel.9006.desc
+	picture = GFX_evt_cathedral_norse_pagan
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+		religion = slavic_pagan
+		any_demesne_title = {
+			limit = { tier = count }
+			location = { religion = slavic_pagan }
+		}
+	}
+}
+
+# Norse
+character_event = {
+	id = ancrel.9007
+	desc = ancrel.9007.desc
+	picture = GFX_evt_cathedral_norse_pagan
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+		religion = norse_pagan
+		any_demesne_title = {
+			limit = { tier = count }
+			location = { religion = norse_pagan }
+		}
+	}
+}
+
+# Zoroastrian
+character_event = {
+	id = ancrel.9008
+	desc = ancrel.9008.desc
+	picture = GFX_evt_marriage_zoroastrian_group
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+		religion = zoroastrian
+		any_demesne_title = {
+			limit = { tier = count }
+			location = { religion = zoroastrian }
+		}
 	}
 }

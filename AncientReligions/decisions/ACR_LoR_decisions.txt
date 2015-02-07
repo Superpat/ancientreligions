@@ -16,13 +16,12 @@ decisions = {
 			}
 			OR = {
 				religion_group = christian
-				religion_group = pagan_group
+				religion = hellenic_pagan
 			}
 			OR = {
 				culture = roman
 				culture = italian
 				culture_group = italian_group # SWMH
-				religion = hellenic_pagan
 				has_landed_title = e_italy
 			}
 			OR = {

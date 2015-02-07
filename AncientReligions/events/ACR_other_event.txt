@@ -218,6 +218,7 @@ character_event = {
 character_event = {
 	id = ancrel.9001
 	desc = ancrel.9001.desc
+	picture = GFX_evt_Pagan_dolmen
 	is_triggered_only = yes
 
 	trigger = {
@@ -234,6 +235,7 @@ character_event = {
 			any_realm_character = {
 				if = { # Celtic
 					limit = {
+						NOT = { religion_group = pagan_group }
 						OR = {
 							culture_group = celtic
 							culture_group = iberian
@@ -246,6 +248,7 @@ character_event = {
 				}
 				if = { # Hellenic
 					limit = {
+						NOT = { religion_group = pagan_group }					
 						OR = {
 							culture_group = byzantine
 							culture = italian
@@ -256,6 +259,7 @@ character_event = {
 				}
 				if = { # Kemetic
 					limit = {
+						NOT = { religion_group = pagan_group }					
 						OR = {
 							culture = bedouin_arabic
 							culture = levantine_arabic
@@ -267,6 +271,7 @@ character_event = {
 				}
 				if = { # West African
 					limit = {
+						NOT = { religion_group = pagan_group }					
 						OR = {
 							culture = maghreb_arabic
 							culture = andalusian_arabic
@@ -277,6 +282,7 @@ character_event = {
 				}
 				if = { # Slavic
 					limit = {
+						NOT = { religion_group = pagan_group }					
 						OR = {
 							culture_group = west_slavic
 							culture_group = east_slavic
@@ -287,6 +293,7 @@ character_event = {
 				}
 				if = { # Norse
 					limit = {
+						NOT = { religion_group = pagan_group }					
 						OR = {
 							culture_group = north_germanic
 							culture_group = central_germanic
@@ -296,6 +303,7 @@ character_event = {
 				}
 				if = { 
 					limit = {
+						NOT = { religion_group = pagan_group }					
 						culture_group = iranian
 					}
 					character_event = { id = ancrel.9008 }
@@ -309,6 +317,7 @@ character_event = {
 character_event = {
 	id = ancrel.9002
 	desc = ancrel.9002.desc
+	picture = GFX_evt_Pagan_dolmen
 	is_triggered_only = yes
 
 	option = {
@@ -325,6 +334,7 @@ character_event = {
 character_event = {
 	id = ancrel.9003
 	desc = ancrel.9003.desc
+	picture = GFX_evt_roman_temple
 	is_triggered_only = yes
 
 	option = {
@@ -341,6 +351,7 @@ character_event = {
 character_event = {
 	id = ancrel.9004
 	desc = ancrel.9004.desc
+	picture = GFX_evt_temple_egyptian_pagan
 	is_triggered_only = yes
 
 	option = {
@@ -357,6 +368,7 @@ character_event = {
 character_event = {
 	id = ancrel.9005
 	desc = ancrel.9005.desc
+	picture = GFX_evt_desert
 	is_triggered_only = yes
 
 	option = {
@@ -373,6 +385,7 @@ character_event = {
 character_event = {
 	id = ancrel.9006
 	desc = ancrel.9006.desc
+	picture = GFX_evt_cathedral_norse_pagan
 	is_triggered_only = yes
 
 	option = {
@@ -389,6 +402,7 @@ character_event = {
 character_event = {
 	id = ancrel.9007
 	desc = ancrel.9007.desc
+	picture = GFX_evt_cathedral_norse_pagan
 	is_triggered_only = yes
 
 	option = {
@@ -405,6 +419,7 @@ character_event = {
 character_event = {
 	id = ancrel.9008
 	desc = ancrel.9008.desc
+	picture = GFX_evt_marriage_zoroastrian_group
 	is_triggered_only = yes
 
 	option = {

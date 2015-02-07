@@ -1,25 +1,3 @@
-### Hellenic Pagan Heresies (same as vanilla Hellenic)
-b_lampsakos = {
-	holy_site = promethean_pagan
-	holy_site = titan_pagan
-}
-b_thesedessa = {
-	holy_site = promethean_pagan
-	holy_site = titan_pagan
-}
-b_piraeaus = {
-	holy_site = promethean_pagan
-	holy_site = titan_pagan	
-}
-b_roma = {
-	holy_site = promethean_pagan
-	holy_site = titan_pagan
-}
-b_alexandria = {
-	holy_site = promethean_pagan
-	holy_site = titan_pagan
-}
-
 ### Celtic Pagan
 
 b_locmine = {
@@ -47,21 +25,16 @@ b_mellifont = {
 
 b_zweitina = {
 	holy_site = egyptian_pagan
-	holy_site = aten_pagan
 }
 b_ikonion = {		
 	holy_site = egyptian_pagan
-	holy_site = aten_pagan
 }
 b_fuwa = {
-	holy_site = egyptian_pagan
-	holy_site = aten_pagan		
+	holy_site = egyptian_pagan	
 }
 b_memphis = {
 	holy_site = egyptian_pagan
-	holy_site = aten_pagan
 }
 b_luxor = {
 	holy_site = egyptian_pagan
-	holy_site = aten_pagan				
 }

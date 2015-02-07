@@ -27,8 +27,8 @@ character_event = {
 		any_vassal = {
 			limit = {
 				OR = {
-					religion = druidic
-					religion = druidic_reformed
+					religion = celtic_pagan
+					religion = celtic_pagan_reformed
 				}
 				age = 16
 				prisoner = no

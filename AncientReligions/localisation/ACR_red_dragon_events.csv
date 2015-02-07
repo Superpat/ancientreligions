@@ -10,7 +10,7 @@ expelled_d_red_dragons;Expelled the Red Dragon Knights;;;;;;;;;;;;;;x
 celtic_knight;Dragon;Dragon;;;;;;;;;;;;x
 celtic_knight_desc;This character is a veteran of the Red Dragon Knights.;;;;;;;;;;;;;x
 EVTTITLEancrel.1319;The Red Dragon Knights Assemble!;;;;;;;;;;;;;x
-EVTDESCancrel.1319;A band of warriors, dedicated to the protection of innocent Druidic peoples everywhere, have decided to take a more active role on the European stage. Up till now the Red Dragon Knights, as they call themselves, have contented themselves with keeping safe the high ways and guarding the holy places of the Druidic faith. The Red Dragon Knights will raise their banners for any Druidic ruler at war with infidels, but they will not fight their brothers and sisters in the faith.;;;;;;;;;;;;;x
+EVTDESCancrel.1319;A band of warriors, dedicated to the protection of innocent druidic peoples everywhere, have decided to take a more active role on the European stage. Up till now the Red Dragon Knights, as they call themselves, have contented themselves with keeping safe the high ways and guarding the holy places of the druidic faith. The Red Dragon Knights will raise their banners for any druidic ruler at war with infidels, but they will not fight their brothers and sisters in the faith.;;;;;;;;;;;;;x
 EVTOPTAancrel.1319;May the gods guide their swords!;;;;;;;;;;;;;x
 EVTOPTBancrel.1319;They will burn along with their sacred oaks!;;;;;;;;;;;;;x
 EVTDESCancrel.1320;You've decided you wish to join the Red Dragon Knights. But do you dare ask your liege for permission?;;;;;;;;;;;;;x
@@ -24,7 +24,7 @@ EVTTOOLTIPancrel.1323;[From.GetFirstName] is dissapointed...;;;;;;;;;;;;;x
 EVTDESCancrel.1322;[From.GetTitledFirstName] has granted your request to join The Red Dragon Knights!;;;;;;;;;;;;;x
 EVTDESCancrel.1323;[From.GetTitledFirstName] has denied your request to join The Red Dragon Knights!;;;;;;;;;;;;;x
 EVTOPTAancrel.1323;That jerk!;;;;;;;;;;;;;x
-EVTDESCancrel.1327;[From.GetTitledFirstName] has requested permission to build a castle in your province of [FromFrom.County.GetName] so that his warriors might better protect the Druidic lands against its enemies. What say you?;;;;;;;;;;;;;x
+EVTDESCancrel.1327;[From.GetTitledFirstName] has requested permission to build a castle in your province of [FromFrom.County.GetName] so that his warriors might better protect the druidic lands against its enemies. What say you?;;;;;;;;;;;;;x
 EVTOPTAancrel.1327;The [From.PrimaryTitle.GetFOA] may have his castle.;;;;;;;;;;;;;x
 EVTOPTBancrel.1327;Land doesn't come cheap, get your own!;;;;;;;;;;;;;x
 EVTDESCancrel.1328;[From.GetTitledFirstName] has permitted The Red Dragon Knights to construct a castle in [County.GetName].;;;;;;;;;;;;;x

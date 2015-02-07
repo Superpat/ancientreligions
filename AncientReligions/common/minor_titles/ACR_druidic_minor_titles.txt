@@ -22,13 +22,13 @@ title_court_druid = {
 			trait = bad_druid
 		}
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
 		}
 		FROM = {
 			OR = {
-				religion = druidic
-				religion = druidic_reformed
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed
 			}
 		}
 	}
@@ -56,8 +56,8 @@ title_court_druid = {
 		# FROM = {
 			# is_feudal = yes
 			# OR = {
-				# religion = druidic
-				# religion = druidic_reformed
+				# religion = celtic_pagan
+				# religion = celtic_pagan_reformed
 			# }
 		# }
 	# }
@@ -97,13 +97,13 @@ title_royal_champion = {
 				}
 			}
 			OR = {
-				religion = druidic
-				religion = druidic_reformed
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed
 			}
 		}
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
 		}
 		OR = {
 			trait = head1
@@ -135,13 +135,13 @@ title_royal_champion = {
 		# FROM = {
 			# is_feudal = yes
 			# OR = {
-				# religion = druidic
-				# religion = druidic_reformed
+				# religion = celtic_pagan
+				# religion = celtic_pagan_reformed
 			# }
 		# }
 		# OR = {
-				# religion = druidic
-				# religion = druidic_reformed
+				# religion = celtic_pagan
+				# religion = celtic_pagan_reformed
 		# }
 	# }
 	
@@ -168,8 +168,8 @@ title_court_bard = {
 		FROM = {
 			is_feudal = yes
 			OR = {
-				religion = druidic
-				religion = druidic_reformed
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed
 			}
 		}
 		trait = poet

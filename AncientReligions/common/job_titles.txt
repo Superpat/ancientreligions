@@ -23,9 +23,13 @@ job_chancellor = {
 			AND = {
 				OR = {
 					is_female = no
-					AND = {
-						religion = cathar
-						liege = { religion = cathar }
+					liege = {
+						OR = {
+							religion = cathar
+							religion = celtic_pagan
+							religion = celtic_pagan_reformed
+						}
+						religion = ROOT
 					}
 				}
 				is_adult = yes
@@ -36,14 +40,14 @@ job_chancellor = {
 		OR = {
 			liege = { 
 				NOT = { 
-					religion = druidic 
-					religion = druidic_reformed
+					religion = celtic_pagan 
+					religion = celtic_pagan_reformed
 				}
 			}
 		   AND = {
 				OR = { 
-					religion = druidic 
-					religion = druidic_reformed 
+					religion = celtic_pagan 
+					religion = celtic_pagan_reformed 
 				}
 				OR = { 
 					trait = druid
@@ -85,19 +89,13 @@ job_marshal = {
 			AND = {
 				OR = {
 					is_female = no
-					AND = {
-						religion = cathar
-						liege = { religion = cathar }
-					}
-					AND = {
+					liege = {
 						OR = {
-							religion = druidic
-							religion = druidic_reformed
+							religion = cathar
+							religion = celtic_pagan
+							religion = celtic_pagan_reformed
 						}
-						OR = {
-							liege = { religion = druidic }
-							liege = { religion = druidic_reformed }
-						}
+						religion = ROOT
 					}
 				}
 				OR = {
@@ -143,9 +141,13 @@ job_treasurer = {
 			AND = {
 				OR = {
 					is_female = no
-					AND = {
-						religion = cathar
-						liege = { religion = cathar }
+					liege = {
+						OR = {
+							religion = cathar
+							religion = celtic_pagan
+							religion = celtic_pagan_reformed
+						}
+						religion = ROOT
 					}
 				}
 				is_adult = yes
@@ -289,14 +291,14 @@ job_spiritual = {
 		OR = {
 			liege = { 
 				NOT = { 
-					religion = druidic 
-					religion = druidic_reformed
+					religion = celtic_pagan 
+					religion = celtic_pagan_reformed
 				}
 			}
 		   AND = {
 				OR = { 
-					religion = druidic 
-					religion = druidic_reformed 
+					religion = celtic_pagan 
+					religion = celtic_pagan_reformed 
 				}
 				OR = {
 					trait = druid

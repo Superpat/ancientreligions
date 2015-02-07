@@ -74,6 +74,8 @@ pagan_group = {
 	promethean_pagan = {
 		graphical_culture = westerngfx
 
+		pre_reformed = yes
+
 		icon = 62
 		heresy_icon = 37
 		parent = hellenic_pagan
@@ -275,6 +277,8 @@ pagan_group = {
 	aten_pagan = { # Atenism
 		graphical_culture = africangfx
 		
+		pre_reformed = yes
+
 		icon = 67
 		heresy_icon = 66
 		

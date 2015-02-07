@@ -242,7 +242,7 @@ character_event = {
 							culture = frankish
 						}
 					}
-					character_event = { id = ancrel.9002 days = 1 }
+					character_event = { id = ancrel.9002 }
 				}
 				if = { # Hellenic
 					limit = {
@@ -252,7 +252,7 @@ character_event = {
 						}
 
 					}
-					character_event = { id = ancrel.9003 days = 1 }
+					character_event = { id = ancrel.9003 }
 				}
 				if = { # Kemetic
 					limit = {
@@ -263,7 +263,7 @@ character_event = {
 							culture_group = east_african
 						}
 					}
-					character_event = { id = ancrel.9004 days = 1 }
+					character_event = { id = ancrel.9004 }
 				}
 				if = { # West African
 					limit = {
@@ -273,7 +273,7 @@ character_event = {
 							culture_group = west_african
 						}
 					}
-					character_event = { id = ancrel.9005 days = 1 }
+					character_event = { id = ancrel.9005 }
 				}
 				if = { # Slavic
 					limit = {
@@ -283,7 +283,7 @@ character_event = {
 							culture_group = south_slavic
 						}
 					}
-					character_event = { id = ancrel.9006 days = 1 }
+					character_event = { id = ancrel.9006 }
 				}
 				if = { # Norse
 					limit = {
@@ -292,20 +292,16 @@ character_event = {
 							culture_group = central_germanic
 						}
 					}
-					character_event = { id = ancrel.9007 days = 1 }					
+					character_event = { id = ancrel.9007 }					
 				}
 				if = { 
 					limit = {
 						culture_group = iranian
 					}
-					character_event = { id = ancrel.9008 days = 1 }
+					character_event = { id = ancrel.9008 }
 				}
 			}
 		}
-	}
-
-	option = {
-		name = ancrel.9001.b
 	}
 }
 
@@ -318,8 +314,9 @@ character_event = {
 	option = {
 		name = OK
 		religion = celtic_pagan
-		any_demesne_province = {
-			religion = celtic_pagan
+		any_demesne_title = {
+			limit = { tier = count }
+			location = { religion = celtic_pagan }
 		}
 	}
 }
@@ -333,8 +330,9 @@ character_event = {
 	option = {
 		name = OK
 		religion = hellenic_pagan
-		any_demesne_province = {
-			religion = hellenic_pagan
+		any_demesne_title = {
+			limit = { tier = count }
+			location = { religion = hellenic_pagan }
 		}
 	}
 }
@@ -348,9 +346,10 @@ character_event = {
 	option = {
 		name = OK
 		religion = egyptian_pagan
-		any_demesne_province = {
-			religion = egyptian_pagan
-		}		
+		any_demesne_title = {
+			limit = { tier = count }
+			location = { religion = egyptian_pagan }
+		}
 	}
 }
 
@@ -363,9 +362,10 @@ character_event = {
 	option = {
 		name = OK
 		religion = west_african_pagan
-		any_demesne_province = {
-			religion = west_african_pagan
-		}		
+		any_demesne_title = {
+			limit = { tier = count }
+			location = { religion = west_african_pagan }
+		}
 	}
 }
 
@@ -378,9 +378,10 @@ character_event = {
 	option = {
 		name = OK
 		religion = slavic_pagan
-		any_demesne_province = {
-			religion = slavic_pagan
-		}		
+		any_demesne_title = {
+			limit = { tier = count }
+			location = { religion = slavic_pagan }
+		}
 	}
 }
 
@@ -393,9 +394,10 @@ character_event = {
 	option = {
 		name = OK
 		religion = norse_pagan
-		any_demesne_province = {
-			religion = norse_pagan
-		}		
+		any_demesne_title = {
+			limit = { tier = count }
+			location = { religion = norse_pagan }
+		}
 	}
 }
 
@@ -408,8 +410,9 @@ character_event = {
 	option = {
 		name = OK
 		religion = zoroastrian
-		any_demesne_province = {
-			religion = zoroastrian
-		}		
+		any_demesne_title = {
+			limit = { tier = count }
+			location = { religion = zoroastrian }
+		}
 	}
 }

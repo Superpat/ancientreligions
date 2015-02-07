@@ -82,7 +82,11 @@ decisions = {
 			}
 		}
 		effect = {
-			character_event = { id = ancrel.9001 }
+			k_papal_state = {
+				holder_scope = {
+					character_event = { id = ancrel.9001 }
+				}
+			}
 		}
 	}
 }

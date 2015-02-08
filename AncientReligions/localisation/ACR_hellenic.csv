@@ -1,6 +1,6 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-#;;;;;;;;;;;;;;
-GOD_PLUTO;Pluto;Pluton;Pluto;;Pluto;;;;;;;;;;;x
+#;;;;;;;;;;;;;;x
+GOD_PLUTO;Pluto;Pluton;Pluto;;Pluto;;;;;;;;;x
 GOD_JUNO;Juno;Junon;Juno;;Juno;;;;;;;;;x
 GOD_JUNO_byzantine;Hera;Héra;Hera;;Hera;;;;;;;;;x
 GOD_VESTA;Vesta;Vesta;Vesta;;Vesta;;;;;;;;;x
@@ -61,7 +61,7 @@ temple_county_hellenic_pagan;Pontificate;;;;;;;;;;;;;x
 temple_county_of_hellenic_pagan;Pontificate of;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;
 d_hellenic_pagan;The Pontificate Maxima;Le Pontificat Maxima;;;;;;;;;;;;x
-d_hellenic_pagan_adj;Pontifical;;;;;;;;;;;;x
+d_hellenic_pagan_adj;Pontifical;;;;;;;;;;;;;x
 PONTIFEX_MAXIMUS;Pontifex Maximus;Pontifex Maximus;Pontifex Maximus;;Pontifex Maximus;;;;;;;;;x
 PONTIFEX_MAXIMUS_FOA;Your Holiness;Sa Sainteté;Eure Heiligkeit;;Su Santidad;;;;;;;;;x
 #;;;;;;;;;;;;;;
@@ -86,7 +86,7 @@ title_aedile_desc;The Aedile is an office with a history as old as the Republic 
 title_censor;Censor;Censeur;Censur;;Censor;;;;;;;;;x
 title_censor_desc;The Censor is responsible for taking the census of the realm. While the office was originally instituded for taxation purposes the most important duty of the Censor is to supervise public morality and recommend suitable candidates for public offices.;Le Censeur est responsable du recensement dans le royaume. Même si la position a été à l'origine instaurée pour la taxation, la responsabilité la plus importante du Censeur est de superviser la moralité publique et de recommander des candidats aux fonctions publiques;;;;;;;;;;;;x
 title_magister_equitum;Magister Equitum;Magister Equitum;;;;;;;;;;;;x
-title_magister_equitum_desc;Originally a very powerful office second only to the Dictator, the Magister Equitum, or Master of the Horse, is now a mostly ceremonial, but still prestigeous, military function.;A l'origine une position très puissante second après celui de Dictator, le Magister Equitum, ou Maître de cavalerie, est maintenant une fonction militaire principalement céremoniale mais néanmoins toujours prestigieuse.;;;;;;;;;;;;x
+title_magister_equitum_desc;Originally a very powerful office second only to the Dictator, the Magister Equitum, or Master of the Horse, is now a mostly ceremonial, but still prestigious, military function.;A l'origine une position très puissante second après celui de Dictator, le Magister Equitum, ou Maître de cavalerie, est maintenant une fonction militaire principalement céremoniale mais néanmoins toujours prestigieuse.;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;
 modifier_flamen_dialis;Flamen Dialis;Flamen Dialis;;;;;;;;;;;;x
 title_flamen_dialis;Flamen Dialis;Flamen Dialis;;;;;;;;;;;;x
@@ -105,7 +105,7 @@ title_flaminica_quirinalis;Flaminica Quirinalis;Flaminica Quirinalis;;;;;;;;;;;;
 title_flaminica_quirinalis_desc;As wife of the Flamen Quirinalis, the Flaminica Quirinalis are entrusted to performs certain religious rituals.;En tant que femme du Flamen Quirinalis, la Flaminica Quirinalis a la charge de pratiquer certains rituels religieux.;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;
 vestalis;Vestalis;Vestalis;;;;;;;;;;;;x
-vestalis_desc;This character is a member of the College of the Vestales, and has dedicated 30 years of her life in service to the godess Vesta.;Cette personne est un membre du collège des Vestales, et a dédié 30 ans de sa vie au service de la déesse Vesta.;;;;;;;;;;;;x
+vestalis_desc;This character is a member of the College of the Vestales, and has dedicated 30 years of her life in service to the goddess Vesta.;Cette personne est un membre du collège des Vestales, et a dédié 30 ans de sa vie au service de la déesse Vesta.;;;;;;;;;;;;x
 retired_vestalis;Retired Vestalis;Retired Vestalis;;;;;;;;;;;;x
 retired_vestalis_desc;This character has completed her 30 years of service in the College of the Vestales.;Cette personne a terminé ces 30 ans de service au Collège des Vestales.;;;;;;;;;;;;x
 title_vestalis;Vestalis;Vestalis;;;;;;;;;;;;x
@@ -137,18 +137,18 @@ was_refused_roman_revival;Roman revival refused;S'est vu refusé la renaissance r
 was_allowed_roman_revival;Roman revival allowed;S'est vu autorisé la renaissance romaine;;;;;;;;;;;;x
 refused_roman_revival;Refused Roman revival;A refusé la renaissance romaine;;;;;;;;;;;;x
 allowed_roman_revival;Allowed Roman revival;A autorisé la renaissance romaine;;;;;;;;;;;;x
-EVTDESCancrel.2152;As you are holding court, [From.GetTitledFirstName] aproaches you with a petition supported by several prominent burghers in [From.PrimaryTitle.GetName], asking for your permission to restore the rights and customs befitting citizens of a Roman city.;Tandis que vous recevez la cour, [From.GetTitledFirstName] vous approche avec une pétition signée par plusieurs citoyens éminents de [From.PrimaryTitle.GetName], demandant la permission de restaurer les droits et coutumes convenant aux citoyens d'une ville romaine.;;;;;;;;;;;;x
+EVTDESCancrel.2152;As you are holding court, [From.GetTitledFirstName] approaches you with a petition supported by several prominent burghers in [From.PrimaryTitle.GetName], asking for your permission to restore the rights and customs befitting citizens of a Roman city.;Tandis que vous recevez la cour, [From.GetTitledFirstName] vous approche avec une pétition signée par plusieurs citoyens éminents de [From.PrimaryTitle.GetName], demandant la permission de restaurer les droits et coutumes convenant aux citoyens d'une ville romaine.;;;;;;;;;;;;x
 EVTOPTAancrel.2152;Of course, Roman customs are far superior to [From.Capital.Culture.GetName]!;Bien sur, les coutumes romaines sont bien meilleures que [From.Capital.Culture.GetName] !;;;;;;;;;;;;x
 EVTOPTBancrel.2152;If that is the will of the people, so be it.;Si c'est le volonté du peuple, qu'il en soit ainsi.;;;;;;;;;;;;x
 EVTOPTCancrel.2152;No, [Root.Culture.GetName] customs are superior and should be maintained!;Non, les coutumes [Root.Culture.GetName] sont meilleures et doivent être conservées !;;;;;;;;;;;;x
 EVTOPTDancrel.2152;No, I will not have any walking relics in my realm!;Non, je ne veut pas de reliques vivantes sur mon domaine !;;;;;;;;;;;;x
-EVTOPTAancrel.2153;An excelent idea, let's get started immediately!;Une excellente idée, commençons immédiatement !;;;;;;;;;;;;x
-EVTOPTBancrel.2153;You'll have my persmission.;Vous aurez ma permission.;;;;;;;;;;;;x
-EVTDESCancrel.2154;[From.GetTitledFirstName] has approved the petition of [From.From.GetTitledFirstName] and allowd the burghers in [From.From.PrimaryTitle.GetName] to restore the rights and customs they think befitting citizens of a Roman city.;[From.GetTitledFirstName] a approuvé la pétition de [From.From.GetTitledFirstName] et autorisé les citoyens de [From.From.PrimaryTitle.GetName] à restaurer les droits et coutumes qu'ils pensent convenables pour des citoyens d'une ville romaine.;;;;;;;;;;;;x
+EVTOPTAancrel.2153;An excellence idea, let's get started immediately!;Une excellente idée, commençons immédiatement !;;;;;;;;;;;;x
+EVTOPTBancrel.2153;You'll have my permission;Vous aurez ma permission.;;;;;;;;;;;;x
+EVTDESCancrel.2154;[From.GetTitledFirstName] has approved the petition of [From.From.GetTitledFirstName] and allowed the burghers in [From.From.PrimaryTitle.GetName] to restore the rights and customs they think befitting citizens of a Roman city.;[From.GetTitledFirstName] a approuvé la pétition de [From.From.GetTitledFirstName] et autorisé les citoyens de [From.From.PrimaryTitle.GetName] à restaurer les droits et coutumes qu'ils pensent convenables pour des citoyens d'une ville romaine.;;;;;;;;;;;;x
 EVTOPTAancrel.2154;Excelent, let's get started immediately!;Excellent, mettons nous au travail tout de suite !;;;;;;;;;;;;x
 EVTOPTBancrel.2154;Good for them, I guess...;C'est bon pour eux, je suppose...;;;;;;;;;;;;x
 EVTOPTCancrel.2154;Great news!;Excellente nouvelle !;;;;;;;;;;;;x
-EVTDESCancrel.2156;The burghers in [From.From.PrimaryTitle.GetName] has choosen to restore most customs practiced in old Roman times.;Les citoyens de [From.From.PrimaryTitle.GetName] ont choisi de restaurer la plupart des coutumes pratiquées au temps de la Rome antique.;;;;;;;;;;;;x
+EVTDESCancrel.2156;The burghers in [From.From.PrimaryTitle.GetName] has chosen to restore most customs practiced in old Roman times.;Les citoyens de [From.From.PrimaryTitle.GetName] ont choisi de restaurer la plupart des coutumes pratiquées au temps de la Rome antique.;;;;;;;;;;;;x
 EVTOPTAancrel.2156;Perhaps I should do the same;Peut être je devrais faire de même;;;;;;;;;;;;x
 EVTDESCancrel.2158;With the restoration of Roman customs in [From.PrimaryTitle.GetName] the populace in [From.Capital.GetName] have embraced Roman culture.;Suite a la restauration de la culture romaine à [From.PrimaryTitle.GetName], la population de [From.Capital.GetName] a adopté la culture romaine.;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;

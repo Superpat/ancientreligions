@@ -1,12 +1,12 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-#;;;;;;;;;;;;
+#;;;;;;;;;;;;;;x
 d_red_dragons;Red Dragon Knights;;;;;;;;;;;;;x
 d_red_dragons_adj;Draconic;Draconic;Draconic;;Draconic;;;;;;;;;x
-donate_money_to_red_dragons;Donate money to the Red Dragon Knights;FRENCH;GERMAN;SPANISH;;;;;;;;;;;x
-donate_money_to_red_dragons_desc;I can donate money to the Red Dragon Knights in exchange for Piety and lifelong respect from the [Root.Religion.GetName] Church.;;;;;;;;;;;;;;x
+donate_money_to_red_dragons;Donate money to the Red Dragon Knights;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+donate_money_to_red_dragons_desc;I can donate money to the Red Dragon Knights in exchange for Piety and lifelong respect from the [Root.Religion.GetName] Church.;;;;;;;;;;;;;x
 expel_red_dragons;Expel the Red Dragons from your Realm;;;;;;;;;;;;;x
 expel_red_dragons_desc;Throw the Red Dragons out of your realm and seize their holdings.;;;;;;;;;;;;;x
-expelled_d_red_dragons;Expelled the Red Dragon Knights;;;;;;;;;;;;;;x
+expelled_d_red_dragons;Expelled the Red Dragon Knights;;;;;;;;;;;;;x
 celtic_knight;Dragon;Dragon;;;;;;;;;;;;x
 celtic_knight_desc;This character is a veteran of the Red Dragon Knights.;;;;;;;;;;;;;x
 EVTTITLEancrel.1319;The Red Dragon Knights Assemble!;;;;;;;;;;;;;x
@@ -17,7 +17,7 @@ EVTDESCancrel.1320;You've decided you wish to join the Red Dragon Knights. But d
 EVTOPTAancrel.1320;Yes!;;;;;;;;;;;;;x
 EVTOPTBancrel.1320;This seems like a bad idea...;;;;;;;;;;;;;x
 EVTDESCancrel.1321;Your [GetFromRelation], [From.GetTitledFirstName], has decided to join with the Red Dragon Knights and seek his fortune at their side! Although [From.GetSheHe] will no doubt gain both riches and valuable battle experience in service of the druids, there will be many perils that could well cost [From.GetHerHim] [From.GetHerHis] life.;;;;;;;;;;;;;x
-EVTOPTAancrel.1321;I will not allow it!;Je ne permettrai pas !;Das werde ich nicht erlauben!;;Â¡No lo permitirÃ©!;;;;;;;;;x
+EVTOPTAancrel.1321;I will not allow it!;Je ne permettrai pas !;Das werde ich nicht erlauben!;;¡No lo permitiré!;;;;;;;;;x
 EVTOPTBancrel.1321;Go to the Dragons and make me proud, [GetFromRelation].;;;;;;;;;;;;;x
 EVTTOOLTIPancrel.1322;[From.GetFirstName] joins The Red Dragon Knights.;;;;;;;;;;;;;x
 EVTTOOLTIPancrel.1323;[From.GetFirstName] is dissapointed...;;;;;;;;;;;;;x

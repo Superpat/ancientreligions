@@ -10,8 +10,8 @@ finnish_pagan;Finnic;Finnic;GERMAN;SPANISH;;;;;;;;;;x
 baltic_pagan;Baltic;Baltic;GERMAN;SPANISH;;;;;;;;;;x
 altaic_pagan;Altaic;Altaic;GERMAN;SPANISH;;;;;;;;;;x
 #;;;;;;;;;;;;;;
-HEAD_PRIEST_finnish_pagan_reformed;PÃ¤Ã¤npappi;PÃ¤Ã¤npappi;PÃ¤Ã¤npappi;;PÃ¤Ã¤npappi;;;;;;;;;x
-HEAD_PRIESTESS_finnish_pagan_reformed;PÃ¤Ã¤npappitar;PÃ¤Ã¤npappitar;PÃ¤Ã¤npappitar;;PÃ¤Ã¤npappitar;;;;;;;;;x
+HEAD_PRIEST_finnish_pagan_reformed;Päänpappi;Päänpappi;Päänpappi;;Päänpappi;;;;;;;;;x
+HEAD_PRIESTESS_finnish_pagan_reformed;Päänpappitar;Päänpappitar;Päänpappitar;;Päänpappitar;;;;;;;;;x
 HEAD_PRIEST_baltic_pagan_reformed;Kriwe;Kriwe;Kriwe;;Kriwe;;;;;;;;;x
 HEAD_PRIESTESS_baltic_pagan_reformed;Kriwe Ponia;Kriwe Ponia;Kriwe Ponia;;Kriwe Ponia;;;;;;;;;x
 HEAD_PRIEST_slavic_pagan_reformed;Hlava Knez;Hlava Knez;Hlava Knez;;Hlava Knez;;;;;;;;;x
@@ -38,7 +38,7 @@ EVTOPTLancrel.9999;God will not lead us astray;God will not lead us astray;God w
 EVTOPTMancrel.9999;Let us look to the pantheon for guidance;Let us look to the pantheon for guidance;Let us look to the pantheon for guidance;;Let us look to the pantheon for guidance;;;;;;;;;x
 EVTOPTZancrel.9999;Maybe give them one more chance...;Maybe give them one more chance...;Maybe give them one more chance...;;Maybe give them one more chance...;;;;;;;;;x
 gone_pagan;Adopt Native Religion;Adopt Native Religion;Adopt Native Religion;;Adopt Native Religion;;;;;;;;;x
-gone_pagan_ctt;One of the following must be true:\n- The Â§YMoral AuthorityÂ§! of your religion must be below Â§R20Â§!\n- There must be a pagan province in your demesne that is relevant to your culture, in addition to the Â§YMoral AuthorityÂ§! of your religion being below Â§R30Â§!\n- You must be a lunatic and the Â§YMoral AuthorityÂ§! of you religion must be below Â§R50Â§!;;;;;;;;;;;;;x
+gone_pagan_ctt;One of the following must be true:\n- The §YMoral Authority§! of your religion must be below §R20§!\n- There must be a pagan province in your demesne that is relevant to your culture, in addition to the §YMoral Authority§! of your religion being below §R30§!\n- You must be a lunatic and the §YMoral Authority§! of you religion must be below §R50§!;;;;;;;;;;;;;x
 gone_pagan_desc;Adopt your culture's native religion.;Adopt your culture's native religion.;Adopt your culture's native religion.;;Adopt your culture's native religion.;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 paganify_the_world;Lets. Get. PAGAN!;;;;;;;;;;;;;x

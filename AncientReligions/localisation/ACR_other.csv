@@ -10,6 +10,14 @@ finnish_pagan;Finnic;Finnic;GERMAN;SPANISH;;;;;;;;;;x
 baltic_pagan;Baltic;Baltic;GERMAN;SPANISH;;;;;;;;;;x
 altaic_pagan;Altaic;Altaic;GERMAN;SPANISH;;;;;;;;;;x
 #;;;;;;;;;;;;;;
+gaulish;Gualish;Gaulish;Gaulish;;Gaulish;;;;;;;;;x
+RETTYPE_CUL_GAULISH;Gaulish Cavalry;Gaulish Cavalry;Gaulish Cavalry;;Gaulish Cavalry;;;;;;;;;x
+ca_culture_gaulish_1_desc;The Celts of Gaul were renowned for there excelent cavalry tactics and were often hired on as mercenaries. They even formed the core of the Roman Empire's cavalry regiments for several hundred years. This is where the new breed of Gaulish heavy cavalry are trained.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ca_culture_gaulish_1;Cavalry Field;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ca_culture_gaulish_2;Cavalry Field;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ca_culture_gaulish_3;Cavalry Field;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ca_culture_gaulish_4;Cavalry Field;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+#;;;;;;;;;;;;;;
 HEAD_PRIEST_finnish_pagan_reformed;P‰‰npappi;P‰‰npappi;P‰‰npappi;;P‰‰npappi;;;;;;;;;x
 HEAD_PRIESTESS_finnish_pagan_reformed;P‰‰npappitar;P‰‰npappitar;P‰‰npappitar;;P‰‰npappitar;;;;;;;;;x
 HEAD_PRIEST_baltic_pagan_reformed;Kriwe;Kriwe;Kriwe;;Kriwe;;;;;;;;;x

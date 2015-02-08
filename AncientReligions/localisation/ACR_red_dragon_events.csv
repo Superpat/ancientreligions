@@ -1,12 +1,12 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-#;;;;;;;;;;;;
+#;;;;;;;;;;;;;;x
 d_red_dragons;Red Dragon Knights;;;;;;;;;;;;;x
 d_red_dragons_adj;Draconic;Draconic;Draconic;;Draconic;;;;;;;;;x
-donate_money_to_red_dragons;Donate money to the Red Dragon Knights;FRENCH;GERMAN;SPANISH;;;;;;;;;;;x
-donate_money_to_red_dragons_desc;I can donate money to the Red Dragon Knights in exchange for Piety and lifelong respect from the [Root.Religion.GetName] Church.;;;;;;;;;;;;;;x
+donate_money_to_red_dragons;Donate money to the Red Dragon Knights;FRENCH;GERMAN;SPANISH;;;;;;;;;;x
+donate_money_to_red_dragons_desc;I can donate money to the Red Dragon Knights in exchange for Piety and lifelong respect from the [Root.Religion.GetName] Church.;;;;;;;;;;;;;x
 expel_red_dragons;Expel the Red Dragons from your Realm;;;;;;;;;;;;;x
 expel_red_dragons_desc;Throw the Red Dragons out of your realm and seize their holdings.;;;;;;;;;;;;;x
-expelled_d_red_dragons;Expelled the Red Dragon Knights;;;;;;;;;;;;;;x
+expelled_d_red_dragons;Expelled the Red Dragon Knights;;;;;;;;;;;;;x
 celtic_knight;Dragon;Dragon;;;;;;;;;;;;x
 celtic_knight_desc;This character is a veteran of the Red Dragon Knights.;;;;;;;;;;;;;x
 EVTTITLEancrel.1319;The Red Dragon Knights Assemble!;;;;;;;;;;;;;x

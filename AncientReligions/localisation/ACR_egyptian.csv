@@ -1,5 +1,5 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-#Religion;;;;;;;;;;
+#Religion;;;;;;;;;;;;;;x
 egyptian_pagan;Kemetic;Kémite;Kemetic;;Kemetic;;;;;;;;;x
 egyptian_pagan_DESC;The Kemetic religion is polytheistic, with a large selection of gods and cults. It originated in ancient Egypt and with the conquests of the Egyptian empire, it would go on to become the dominant religion in the middle east until the rise of the Roman empire. Defining features in-game: \n§Y*§! Rulers can declare Holy Wars\n§Y*§! Can proselytize pagan religions \n§Y*§! Can restore Luxor Temple \n§Y*§! Can construct pyramids;La religion kémite est polythéiste, avec un grand nombre de dieux et de cultes. Elle est née dans l'Ancienne Egypte et s'étendit avec les conquestes de l'Empire Egyptien, au point de devenir la religion dominante au Moyen-Orient jusqu'à l'avènement de l'Empire Romain. Caractéristiques en jeu : \n§Y*§! Les dirigeants peuvent lancer des Guerres Saintes\n§Y*§! Peult répandre sa religion chez les Païens \n§Y*§! Peult restaurer le Temple de Luxor \n§Y*§! Peult construire des Pyramides;The Kemetic religion is polytheistic, with a large selection of gods and cults. It originated in ancient Egypt and with the conquests of the Egyptian empire, it would go on to become the dominant religion in the middle east until the rise of the Roman empire. Defining features in-game: \n§Y*§! Rulers can declare Holy Wars\n§Y*§! Can proselytize pagan religions \n§Y*§! Can restore Luxor Temple \n§Y*§! Can construct pyramids;;The Kemetic religion is polytheistic, with a large selection of gods and cults. It originated in ancient Egypt and with the conquests of the Egyptian empire, it would go on to become the dominant religion in the middle east until the rise of the Roman empire. Defining features in-game: \n§Y*§! Rulers can declare Holy Wars\n§Y*§! Can proselytize pagan religions \n§Y*§! Can restore Luxor Temple \n§Y*§! Can construct pyramids;;;;;;;;;x
 aten_pagan;Atenic;Atonien(ne);Atenic;;Atenic;;;;;;;;;x
@@ -10,7 +10,7 @@ GOD_AMON;Amon;Amon;Amon;;Amon;;;;;;;;;x
 GOD_KAUKET;Kauket;Kauket;Kauket;;Kauket;;;;;;;;;x
 GOD_KEK;Kek;Kek;Kek;;Kek;;;;;;;;;x
 GOD_HAUHET;Hauhet;Hauhet;Hauhet;;Hauhet;;;;;;;;;x
-GOD_HEH;Heh;Heh;Heh;;Heh;;;;;;;;;;;
+GOD_HEH;Heh;Heh;Heh;;Heh;;;;;;;;;x
 GOD_NAUNET;Naunet;Naunet;Naunet;;Naunet;;;;;;;;;x
 GOD_NUN;Nun;Nun;Nun;;Nun;;;;;;;;;x
 GOD_SET;Set;Set;Set;;Set;;;;;;;;;x
@@ -20,14 +20,14 @@ GOD_ISIS;Isis;Isis;Isis;;Isis;;;;;;;;;x
 GOD_OSIRIS;Osiris;Osiris;Osiris;;Osiris;;;;;;;;;x
 GOD_ANUBIS;Anubis;Anubis;Anubis;;Anubis;;;;;;;;;x
 GOD_APEP;Apep;Apep;Apep;;Apep;;;;;;;;;x
-#Titles;;;;;;;;;x
+#Titles;;;;;;;;;;;;;;x
 d_egyptian_pagan;The Paragon Cult of Amun;Le Culte Parandon d'Amon;The Paragon Cult of Amun;;The Paragon Cult of Amun;;;;;;;;;x
 d_egyptian_pagan_adj;Cultist;Sectateur;Cultist;;Cultist;;;;;;;;;x
 d_anubis;Anubis Guard;Garde d'Anubis;Anubis Guard;;Anubis Guard;;;;;;;;;x
 d_anubis_adj;Guardian;Garde;Guardian;;Guardian;;;;;;;;;x
 d_horus;Horusian Guard;Garde d'Horus;Horusian Guard;;Horusian Guard;;;;;;;;;x
 d_horus_adj;Guardian;Garde;Guardian;;Guardian;;;;;;;;;x
-#FOA egyptian_pagan;;;;;;;;;;x
+#FOA egyptian_pagan;;;;;;;;;;;;;;x
 count_egyptian_pagan;Irypat;Irypat;Irypat;;Irypat;;;;;;;;;x
 duke_egyptian_pagan;Nomarch;Nomarque;Nomarch;;Nomarch;;;;;;;;;x
 king_egyptian_pagan;Pharaoh;Pharaon;Pharaoh;;Pharaoh;;;;;;;;;x
@@ -47,7 +47,7 @@ job_marshal_egyptian_pagan;Sesemut;Sesemut;Sesemut;;Sesemut;;;;;;;;;x
 job_spiritual_egyptian_pagan;Xroj;Xroj;Xroj;;Xroj;;;;;;;;;x
 job_treasurer_egyptian_pagan;Pruj-Hdoj;Pruj-Hdoj;Pruj-Hdoj;;Pruj-Hdoj;;;;;;;;;x
 PARAGON_XROJ;Paragon;Parangon;Paragon;;Paragon;;;;;;;;;x
-#FOA aten_pagan;;;;;;;;;;x
+#FOA aten_pagan;;;;;;;;;;;;;;x
 count_aten_pagan;Irypat;Irypat;Irypat;;Irypat;;;;;;;;;x
 duke_aten_pagan;Nomarch;Nomarque;Nomarch;;Nomarch;;;;;;;;;x
 king_aten_pagan;Pharaoh;Pharaon;Pharaoh;;Pharaoh;;;;;;;;;x
@@ -66,7 +66,7 @@ job_chancellor_aten_pagan;Vizier;Vizir;Wesir;;Visir;;;;;;;;;x
 job_marshal_aten_pagan;Sesemut;Sesemut;Sesemut;;Sesemut;;;;;;;;;x
 job_spiritual_aten_pagan;Xroj;Xroj;Xroj;;Xroj;;;;;;;;;x
 job_treasurer_aten_pagan;Pruj-Hdoj;Pruj-Hdoj;Pruj-Hdoj;;Pruj-Hdoj;;;;;;;;;x
-#Holding types;;;;;;;;;;x
+#Holding types;;;;;;;;;;;;;;x
 duchy_of_egyptian_pagan;Nomarchy;Nomarquie;Nomarchy;;Nomarchy;;;;;;;;;x
 kingdom_of_aten_pagan;Pharaohate of;Pharaonnat de;Pharaohate of;;Pharaohate of;;;;;;;;;x
 duchy_of_aten_pagan;Nomarchy;Nomarquie;Nomarchy;;Nomarchy;;;;;;;;;x

@@ -20,36 +20,36 @@ HEAD_PRIEST_african_pagan_reformed;Kungo Hogon;Kungo Hogon;Kungo Hogon;;Kungo Ho
 HEAD_PRIESTESS_african_pagan_reformed;Musoo Hogon;Musoo Hogon;Musoo Hogon;;Musoo Hogon;;;;;;;;;x
 HEAD_PRIEST_aztec_reformed;Quetzalcoatl;Quetzalcoatl;Quetzalcoatl;;Quetzalcoatl;;;;;;;;;x
 HEAD_PRIESTESS_aztec_reformed;Quetzalcoatl;Quetzalcoatl;Quetzalcoatl;;Quetzalcoatl;;;;;;;;;x
-#;;;;;;;;;;;;;;
-EVTDESCancrel.9999;For quite some time now you have watched the steady decline of [Root.Religion.GetName]. No longer can you sit idly by while your people suffer at the hands of zealots and madmen of [Root.Religion.GetName]. From now on you will lead your people back to the teachings of your forefathers!;For quite some time now you have watched the steady decline of [Root.Religion.GetName]. No longer can you sit idly by while your people suffer at the hands of zealots and madmen of[Root.Religion.GetName]. From now on you will lead your people back to the teachings of your forefathers!;For quite some time now you have watched the steady decline of [Root.Religion.GetName]. No longer can you sit idly by while your people suffer at the hands of zealots and madmen of[Root.Religion.GetName]. From now on you will lead your people back to the teachings of your forefathers!;;For quite some time now you have watched the steady decline of [Root.Religion.GetName]. No longer can you sit idly by while your people suffer at the hands of zealots and madmen of [Root.Religion.GetName]. From now on you will lead your people back to the teachings of your forefathers!;;;;;;;;;
-EVTNAMEancrel.9999;Adopting the Old Ways;Adopting the Old Ways;Adopting the Old Ways;;Adopting the Old Ways;;;;;;;;;
-EVTOPTAancrel.9999;Zoroaster will lead us to enlightenment!;Zoroaster will lead us to enlightenment!;Zoroaster will lead us to enlightenment!;;Zoroaster will lead us to enlightenment!;;;;;;;;;
-EVTOPTBancrel.9999;It's time to visit the elder druids;It's time to visit the elder druids;It's time to visit the elder druids;;It's time to visit the elder druids;;;;;;;;;
-EVTOPTCancrel.9999;To the gods of old!;To the gods of old!;To the gods of old!;;To the gods of old!;;;;;;;;;
-EVTOPTDancrel.9999;Valhalla awaits!;Valhalla awaits!;Valhalla awaits!;;Valhalla awaits!;;;;;;;;;
-EVTOPTEancrel.9999;To the gods of old!;To the gods of old!;To the gods of old!;;To the gods of old!;;;;;;;;;
-EVTOPTFancrel.9999;To the gods of old!;To the gods of old!;To the gods of old!;;To the gods of old!;;;;;;;;;
-EVTOPTGancrel.9999;To the gods of old!;To the gods of old!;To the gods of old!;;To the gods of old!;;;;;;;;;
-EVTOPTHancrel.9999;To the gods of old!;To the gods of old!;To the gods of old!;;To the gods of old!;;;;;;;;;
-EVTOPTIancrel.9999;To the gods of old!;To the gods of old!;To the gods of old!;;To the gods of old!;;;;;;;;;
-EVTOPTJancrel.9999;To the gods of old!;To the gods of old!;To the gods of old!;;To the gods of old!;;;;;;;;;
-EVTOPTKancrel.9999;To the gods of old!;To the gods of old!;To the gods of old!;;To the gods of old!;;;;;;;;;
-EVTOPTLancrel.9999;God will not lead us astray;God will not lead us astray;God will not lead us astray;;God will not lead us astray;;;;;;;;;
-EVTOPTMancrel.9999;Let us look to the pantheon for guidance;Let us look to the pantheon for guidance;Let us look to the pantheon for guidance;;Let us look to the pantheon for guidance;;;;;;;;;
-EVTOPTZancrel.9999;Maybe give them one more chance...;Maybe give them one more chance...;Maybe give them one more chance...;;Maybe give them one more chance...;;;;;;;;;
-gone_pagan;Adopt Native Religion;Adopt Native Religion;Adopt Native Religion;;Adopt Native Religion;;;;;;;;;x;;
-gone_pagan_ctt;One of the following must be true:\n- The §YMoral Authority§! of your religion must be below §R20§!\n- There must be a pagan province in your demesne that is relevant to your culture, in addition to the §YMoral Authority§! of your religion being below §R30§!\n- You must be a lunatic and the §YMoral Authority§! of you religion must be below §R50§!;;;;;;;;;;;;;;;
-gone_pagan_desc;Adopt your culture's native religion.;Adopt your culture's native religion.;Adopt your culture's native religion.;;Adopt your culture's native religion.;;;;;;;;;x;;
-#;;;;;;;;;;;;;;
-paganify_the_world;Lets. Get. PAGAN!;;;;;;;;;;;x
-paganify_the_world_desc;Convert all characters to a not Christian and not Muslim religion, based on culture. Does not affect religious heads, so the Caliphate remains. May bring older machines to their knees.;;;;;;;;;;;x
-ancrel.paganify.tooltip;Turn the world pagan by culture. This is mostly for development.;;;;;;;;;;;X
-ancrel.9001.desc;Do you want to turn most of the world pagan? Be warned, nearly every single character will recieve an event that converts their religion and that of their personal demesne. This may bring older computers to their knees. This is an unsupported feature primarily for development use!;;;;;;;;;;;x
-ancrel.9001.a;To the Old Gods!;;;;;;;;;;;x
-ancrel.9002.desc;Congrats! You're Celtic Pagan!;;;;;;;;;;;x
-ancrel.9003.desc;Congrats! You're Hellenic Pagan!;;;;;;;;;;;x
-ancrel.9004.desc;Congrats! You're Egyptian Pagan!;;;;;;;;;;;x
-ancrel.9005.desc;Congrats! You're West African Pagan!;;;;;;;;;;;X
-ancrel.9006.desc;Congrats! You're Slavic Pagan!;;;;;;;;;;;x
-ancrel.9007.desc;Congrats! You're Norse Pagan!;;;;;;;;;;;x
-ancrel.9008.desc;Congrats! You're Zoroastrian!;;;;;;;;;;;x
+#;;;;;;;;;;;;;;x
+EVTDESCancrel.9999;For quite some time now you have watched the steady decline of [Root.Religion.GetName]. No longer can you sit idly by while your people suffer at the hands of zealots and madmen of [Root.Religion.GetName]. From now on you will lead your people back to the teachings of your forefathers!;For quite some time now you have watched the steady decline of [Root.Religion.GetName]. No longer can you sit idly by while your people suffer at the hands of zealots and madmen of[Root.Religion.GetName]. From now on you will lead your people back to the teachings of your forefathers!;For quite some time now you have watched the steady decline of [Root.Religion.GetName]. No longer can you sit idly by while your people suffer at the hands of zealots and madmen of[Root.Religion.GetName]. From now on you will lead your people back to the teachings of your forefathers!;;For quite some time now you have watched the steady decline of [Root.Religion.GetName]. No longer can you sit idly by while your people suffer at the hands of zealots and madmen of [Root.Religion.GetName]. From now on you will lead your people back to the teachings of your forefathers!;;;;;;;;;x
+EVTNAMEancrel.9999;Adopting the Old Ways;Adopting the Old Ways;Adopting the Old Ways;;Adopting the Old Ways;;;;;;;;;x
+EVTOPTAancrel.9999;Zoroaster will lead us to enlightenment!;Zoroaster will lead us to enlightenment!;Zoroaster will lead us to enlightenment!;;Zoroaster will lead us to enlightenment!;;;;;;;;;x
+EVTOPTBancrel.9999;It's time to visit the elder druids;It's time to visit the elder druids;It's time to visit the elder druids;;It's time to visit the elder druids;;;;;;;;;x
+EVTOPTCancrel.9999;To the gods of old!;To the gods of old!;To the gods of old!;;To the gods of old!;;;;;;;;;x
+EVTOPTDancrel.9999;Valhalla awaits!;Valhalla awaits!;Valhalla awaits!;;Valhalla awaits!;;;;;;;;;x
+EVTOPTEancrel.9999;To the gods of old!;To the gods of old!;To the gods of old!;;To the gods of old!;;;;;;;;;x
+EVTOPTFancrel.9999;To the gods of old!;To the gods of old!;To the gods of old!;;To the gods of old!;;;;;;;;;x
+EVTOPTGancrel.9999;To the gods of old!;To the gods of old!;To the gods of old!;;To the gods of old!;;;;;;;;;x
+EVTOPTHancrel.9999;To the gods of old!;To the gods of old!;To the gods of old!;;To the gods of old!;;;;;;;;;x
+EVTOPTIancrel.9999;To the gods of old!;To the gods of old!;To the gods of old!;;To the gods of old!;;;;;;;;;x
+EVTOPTJancrel.9999;To the gods of old!;To the gods of old!;To the gods of old!;;To the gods of old!;;;;;;;;;x
+EVTOPTKancrel.9999;To the gods of old!;To the gods of old!;To the gods of old!;;To the gods of old!;;;;;;;;;x
+EVTOPTLancrel.9999;God will not lead us astray;God will not lead us astray;God will not lead us astray;;God will not lead us astray;;;;;;;;;x
+EVTOPTMancrel.9999;Let us look to the pantheon for guidance;Let us look to the pantheon for guidance;Let us look to the pantheon for guidance;;Let us look to the pantheon for guidance;;;;;;;;;x
+EVTOPTZancrel.9999;Maybe give them one more chance...;Maybe give them one more chance...;Maybe give them one more chance...;;Maybe give them one more chance...;;;;;;;;;x
+gone_pagan;Adopt Native Religion;Adopt Native Religion;Adopt Native Religion;;Adopt Native Religion;;;;;;;;;x
+gone_pagan_ctt;One of the following must be true:\n- The §YMoral Authority§! of your religion must be below §R20§!\n- There must be a pagan province in your demesne that is relevant to your culture, in addition to the §YMoral Authority§! of your religion being below §R30§!\n- You must be a lunatic and the §YMoral Authority§! of you religion must be below §R50§!;;;;;;;;;;;;;x
+gone_pagan_desc;Adopt your culture's native religion.;Adopt your culture's native religion.;Adopt your culture's native religion.;;Adopt your culture's native religion.;;;;;;;;;x
+#;;;;;;;;;;;;;;x
+paganify_the_world;Lets. Get. PAGAN!;;;;;;;;;;;;;x
+paganify_the_world_desc;Convert all characters to a not Christian and not Muslim religion, based on culture. Does not affect religious heads, so the Caliphate remains. May bring older machines to their knees.;;;;;;;;;;;;;x
+ancrel.paganify.tooltip;Turn the world pagan by culture. This is mostly for development.;;;;;;;;;;;;;x
+ancrel.9001.desc;Do you want to turn most of the world pagan? Be warned, nearly every single character will receive an event that converts their religion and that of their personal demesne. This may bring older computers to their knees. This is an unsupported feature primarily for development use!;;;;;;;;;;;;;x
+ancrel.9001.a;To the Old Gods!;;;;;;;;;;;;;x
+ancrel.9002.desc;Congrats! You're Celtic Pagan!;;;;;;;;;;;;;x
+ancrel.9003.desc;Congrats! You're Hellenic Pagan!;;;;;;;;;;;;;x
+ancrel.9004.desc;Congrats! You're Egyptian Pagan!;;;;;;;;;;;;;x
+ancrel.9005.desc;Congrats! You're West African Pagan!;;;;;;;;;;;;;x
+ancrel.9006.desc;Congrats! You're Slavic Pagan!;;;;;;;;;;;;;x
+ancrel.9007.desc;Congrats! You're Norse Pagan!;;;;;;;;;;;;;x
+ancrel.9008.desc;Congrats! You're Zoroastrian!;;;;;;;;;;;;;x

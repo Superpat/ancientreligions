@@ -474,10 +474,7 @@ character_event = {
 			NOT = {
 				OR = {
 					any_courtier = {
-						has_minor_title = job_chancellor
-					}
-					any_vassal = {
-						has_minor_title = job_chancellor
+						has_job_title = job_chancellor
 					}
 				}
 			}
@@ -494,10 +491,7 @@ character_event = {
 			NOT = { 
 				OR = {
 					any_courtier = {
-						has_minor_title = job_spiritual
-					}
-					any_vassal = {
-						has_minor_title = job_spiritual
+						has_job_title = job_spiritual
 					}
 				}
 			}
@@ -1411,7 +1405,7 @@ character_event = {
 	
 	option = {
 		name = EVTOPTAancrel.0203
-		FROM = { death = { death_reaChild = death_battle } }
+		FROM = { death = { death_reason = death_battle } }
 	}
 }
 

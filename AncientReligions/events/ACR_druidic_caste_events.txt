@@ -140,8 +140,13 @@ character_event = {
 		}
 		primary_title = { higher_tier_than = BARON }
 		NOT = {
-			any_courtier = {
-				has_minor_title = title_court_druid
+			OR = {
+				any_courtier = {
+					has_minor_title = title_court_druid
+				}
+				any_vassal = {
+					has_minor_title = title_court_druid
+				}
 			}
 		}
 	}
@@ -329,8 +334,10 @@ character_event = {
 			religion = celtic_pagan
 			religion = celtic_pagan_reformed
 		}
-		NOT = { trait = druid }
-		NOT = { trait = bad_druid }
+		NOT = { 
+			trait = druid 
+			trait = bad_druid 
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -425,8 +432,6 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	show_from = yes
-	
 	immediate = {
 		FROM = { 
 			opinion = {
@@ -447,8 +452,13 @@ character_event = {
 
 		trigger = {
 			NOT = {
-				any_courtier = {
-					has_minor_title = title_court_druid
+				OR = {
+					any_courtier = {
+						has_minor_title = title_court_druid
+					}
+					any_vassal = {
+						has_minor_title = title_court_druid
+					}
 				}
 			}
 		}
@@ -462,8 +472,13 @@ character_event = {
 		
 		trigger = {
 			NOT = {
-				any_courtier = {
-					has_job_title = job_chancellor
+				OR = {
+					any_courtier = {
+						has_minor_title = job_chancellor
+					}
+					any_vassal = {
+						has_minor_title = job_chancellor
+					}
 				}
 			}
 		}
@@ -477,8 +492,13 @@ character_event = {
 		
 		trigger = {
 			NOT = { 
-				any_courtier = {
-					has_job_title = job_spiritual
+				OR = {
+					any_courtier = {
+						has_minor_title = job_spiritual
+					}
+					any_vassal = {
+						has_minor_title = job_spiritual
+					}
 				}
 			}
 		}
@@ -547,7 +567,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "EVTOPTAancrel.0183" # Send him on the path of the warrior
+		name = EVTOPTAancrel.0183 # Send them on the path of the warrior
 		
 		custom_tooltip = {
 			text = path_of_the_warriors
@@ -559,7 +579,7 @@ character_event = {
 	}
 
 	option = {
-		name = "EVTOPTBancrel.0183" # Send him to the druids
+		name = EVTOPTBancrel.0183 # Send them to the druids
 		trigger = {
 			OR = {
 				trait = zealous
@@ -579,7 +599,7 @@ character_event = {
 		}
 		custom_tooltip = {
 			text = path_of_the_druids
-			FROM = {piety = 50}
+			FROM = { piety = 50 }
 			FROM = { change_learning = 1}
 			FROM = { change_martial = -1}
 			hidden_tooltip = {
@@ -599,7 +619,7 @@ character_event = {
 	id = ancrel.0184
 	title = EVTNAMEancrel.0184
 	desc = EVTDESCancrel.0184
-	picture = GFX_evt_child_bully
+	picture = GFX_evt_son_bully
 	
 	min_age = 13
 	max_age = 16
@@ -611,7 +631,7 @@ character_event = {
 		}
 		father = { is_alive = yes }
 		NOT = {
-				has_character_flag = had_coming_of_age_celtic
+			has_character_flag = had_coming_of_age_celtic
 		}
 	}
 	
@@ -658,15 +678,13 @@ narrative_event = {
 #
 ##################################################################
 
-# Son wants to become a druid (Son)
+# Child wants to become a druid (Child)
 character_event = {
 	id = ancrel.0186
 	hide_window = yes
 	
 	ai = yes
-	min_age = 16
-	max_age = 25
-	only_men = yes
+	is_adult = yes
 	capable_only = yes
 	prisoner = no
 	
@@ -674,6 +692,7 @@ character_event = {
 		has_dlc = "The Old Gods"
 		is_landed = no
 		in_command = no
+		NOT = { age = 26 } # must not be 25
 		OR = {
 			religion = celtic_pagan
 			religion = celtic_pagan_reformed
@@ -704,6 +723,10 @@ character_event = {
 	mean_time_to_happen = {
 		months = 450
 		
+		modifier = { 
+			factor = 0.75
+			trait = zealous
+		}
 		modifier = {
 			factor = 0.5
 			trait = content
@@ -748,7 +771,7 @@ character_event = {
 	}
 }
 
-# Son wants to become a druid (Father)
+# Child wants to become a druid (Father)
 character_event = {
 	id = ancrel.0187
 	desc = EVTDESCancrel.0187
@@ -780,7 +803,7 @@ character_event = {
 	}
 }
 
-# Son returns scarred but learned (Son)
+# Child returns scarred but learned (Child)
 character_event = {
 	id = ancrel.0188
 	hide_window = yes
@@ -789,6 +812,7 @@ character_event = {
 		has_dlc = "The Old Gods"
 		has_character_flag = druidic_training
 		NOT = { trait = scarred }
+		age = 18
 	}
 	
 	mean_time_to_happen = {
@@ -814,7 +838,7 @@ character_event = {
 	}
 }
 
-# Son returns scarred but learned in the ways of the druids
+# Child returns scarred but learned in the ways of the druids
 character_event = {
 	id = ancrel.0189
 	desc = EVTDESCancrel.0189
@@ -841,7 +865,7 @@ character_event = {
 	}
 }
 
-# Son returns maimed (Son)
+# Child returns maimed (Child)
 character_event = {
 	id = ancrel.0190
 	hide_window = yes
@@ -852,6 +876,7 @@ character_event = {
 		NOT = {
 			trait = maimed
 		}
+		age = 18
 	}
 	
 	mean_time_to_happen = {
@@ -869,7 +894,7 @@ character_event = {
 	}
 }
 
-# Son returns maimed
+# Child returns maimed
 character_event = {
 	id = ancrel.0191
 	desc = EVTDESCancrel.0191
@@ -896,7 +921,7 @@ character_event = {
 	}
 }
 
-# Son returns as excellent theologian (Son)
+# Child returns as excellent theologian (Child)
 character_event = {
 	id = ancrel.0192
 	hide_window = yes
@@ -910,6 +935,7 @@ character_event = {
 			trait = martial_cleric
 			trait = scholarly_theologian
 		}
+		age = 18
 	}
 	
 	mean_time_to_happen = {
@@ -947,7 +973,7 @@ character_event = {
 	}
 }
 
-# Son returns as excellent theologian
+# Child returns as excellent theologian
 character_event = {
 	id = ancrel.0193
 	desc = EVTDESCancrel.0193
@@ -1001,7 +1027,7 @@ character_event = {
 	}
 }
 
-# Son is touched by the gods (Son)
+# Child is touched by the gods (Child)
 character_event = {
 	id = ancrel.0194
 	hide_window = yes
@@ -1010,6 +1036,7 @@ character_event = {
 		has_dlc = "The Old Gods"
 		has_character_flag = druidic_training
 		NOT = { trait = lunatic }
+		age = 18
 	}
 	
 	mean_time_to_happen = {
@@ -1039,7 +1066,7 @@ character_event = {
 	}
 }
 
-# Son is touched by the gods
+# Child is touched by the gods
 character_event = {
 	id = ancrel.0195
 	desc = EVTDESCancrel.0195
@@ -1066,7 +1093,7 @@ character_event = {
 	}
 }
 
-# Son returns home with strange child (Son)
+# Child returns home with strange child (Child)
 character_event = {
 	id = ancrel.0196
 	hide_window = yes
@@ -1074,6 +1101,7 @@ character_event = {
 	trigger = {
 		has_dlc = "The Old Gods"
 		has_character_flag = druidic_training
+		age = 18
 	}
 	
 	mean_time_to_happen = {
@@ -1095,7 +1123,7 @@ character_event = {
 	}
 }
 
-# Son returns home with strange child
+# Child returns home with strange child
 character_event = {
 	id = ancrel.0197
 	desc = EVTDESCancrel.0197
@@ -1110,11 +1138,26 @@ character_event = {
 			random_traits = yes
 			
 			age = 1
-			religion = celtic_pagan
+			religion = FROM
 			culture = FROM
 		}
 		new_character = {
-			set_father = PREV
+			if = {
+				limit = {
+					PREV = {
+						is_female = yes
+					}
+				}
+				set_mother = PREV
+			}
+			if = {
+				limit = {
+					PREV = {
+						is_female = no
+					}
+				}
+				set_father = PREV
+			}
 			set_character_flag = changeling_child
 		}
 		FROM = { 
@@ -1132,7 +1175,7 @@ character_event = {
 	}
 }
 
-# Son returns home as a zealot (Son)
+# Child returns home as a zealot (Child)
 character_event = {
 	id = ancrel.0198
 	hide_window = yes
@@ -1141,6 +1184,7 @@ character_event = {
 		has_dlc = "The Old Gods"
 		has_character_flag = druidic_training
 		NOT = { trait = zealous }
+		age = 18
 	}
 	
 	mean_time_to_happen = {
@@ -1162,7 +1206,7 @@ character_event = {
 	}
 }
 
-# Son returns home as a zealot
+# Child returns home as a zealot
 character_event = {
 	id = ancrel.0199
 	desc = EVTDESCancrel.0199
@@ -1189,7 +1233,7 @@ character_event = {
 	}
 }
 
-# Son returns home with the patience of an oak tree (Son)
+# Child returns home with the patience of an oak tree (Child)
 character_event = {
 	id = ancrel.0200
 	hide_window = yes
@@ -1197,6 +1241,7 @@ character_event = {
 	trigger = {
 		has_dlc = "The Old Gods"
 		has_character_flag = druidic_training
+		age = 18
 	}
 	
 	mean_time_to_happen = {
@@ -1242,7 +1287,7 @@ character_event = {
 	}
 }
 
-# Son returns home with the patience of an oak tree
+# Child returns home with the patience of an oak tree
 character_event = {
 	id = ancrel.0201
 	desc = EVTDESCancrel.0201
@@ -1269,7 +1314,7 @@ character_event = {
 	}
 }
 
-# Son dies in training (Son)
+# Child dies in training (Child)
 character_event = {
 	id = ancrel.0202
 	hide_window = yes
@@ -1277,6 +1322,7 @@ character_event = {
 	trigger = {
 		has_dlc = "The Old Gods"
 		has_character_flag = druidic_training
+		age = 18
 	}
 	
 	mean_time_to_happen = {
@@ -1354,7 +1400,7 @@ character_event = {
 	}
 }
 
-# Son dies in training
+# Child dies in training
 character_event = {
 	id = ancrel.0203
 	desc = EVTDESCancrel.0203
@@ -1365,11 +1411,11 @@ character_event = {
 	
 	option = {
 		name = EVTOPTAancrel.0203
-		FROM = { death = { death_reason = death_battle } }
+		FROM = { death = { death_reaChild = death_battle } }
 	}
 }
 
-# Son returns with gifts (Son)
+# Child returns with gifts (Child)
 character_event = {
 	id = ancrel.0204
 	hide_window = yes
@@ -1377,6 +1423,7 @@ character_event = {
 	trigger = {
 		has_dlc = "The Old Gods"
 		has_character_flag = druidic_training
+		age = 18
 	}
 	
 	mean_time_to_happen = {
@@ -1402,7 +1449,7 @@ character_event = {
 	}
 }
 
-# Son returns with gifts
+# Child returns with gifts
 character_event = {
 	id = ancrel.0205
 	desc = EVTDESCancrel.0205
@@ -1429,7 +1476,7 @@ character_event = {
 	}
 }
 
-# Father dies, Player Son is heir
+# Father dies, Player Child is heir
 character_event = {
 	id = ancrel.0206
 	desc = EVTDESCancrel.0206
@@ -1469,7 +1516,7 @@ character_event = {
 	}
 }
 
-# Father dies, Son gets training traits
+# Father dies, Child gets training traits
 character_event = {
 	id = ancrel.0207
 	hide_window = yes
@@ -1492,7 +1539,7 @@ character_event = {
 			25 = { add_trait = poet }
 			25 = { add_trait = druid }
 		}
-		clr_character_flag = wants_druidicn_training
+		clr_character_flag = wants_druidic_training
 		clr_character_flag = druidic_training
 	}
 	

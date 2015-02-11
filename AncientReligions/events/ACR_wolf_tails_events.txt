@@ -144,10 +144,7 @@ narrative_event = {
 	border = GFX_event_normal_frame_war
 
 	is_triggered_only = yes
-
-	trigger = {
-		ai = no
-	}
+	major = yes
 
 	option = {
 		name = OK

@@ -1,7 +1,7 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 titan_pagan;Titan Cult;Titan Cult;Titan Cult;;Titan Cult;;;;;;;;;x
 titan_pagan_DESC;The Titan Cult reject the authority of the Olympian Gods, considering them usurpers and unworthy of their worship. Titan Cultists reject the kind of civilization that Hellenism has typically fostered, and have much more in common with the more "barbaric" religions. They are extremely aggressive and prone to collapse during a succession. Defining features in-game\n§Y*§! Titan Cultists may use the Pagan Subjugation CB once per lifetime.\n§Y*§! Titan Cultists may use the Pagan Conquest CB.\n§Y*§! Priests can marry.\n§Y*§! Titan Cultists lose prestige if at peace too long.\n§Y*§! Titan Cultists do not gain an opinion penalty from having vassal levies raised too long.\n§Y*§! Titan Cultists can raid their neighbors.\n§Y*§! Titan Cultists can take up to three concubines.\n§Y*§! The Titan Cult allows marriage between children and their parent's siblings.\n§Y*§! Titan Cultists suffer from increased short reign penalties.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-titan_cultist;Titan Cultist;Titan Cultist;Titan Cultist;;Titan Cultist;;;;;;;;;x
+titan_cultist;Titan Ferocity;Titan Ferocity;Titan Ferocity;;Titan Ferocity;;;;;;;;;x
 titan_cultist_desc;Titan Cultists relish and excel in personal combat.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 GOD_KRONOS;Kronos;Kronos;Kronos;;Kronos;;;;;;;;;x
 GOD_OCEANUS;Oceanus;Oceanus;Oceanus;;Oceanus;;;;;;;;;x

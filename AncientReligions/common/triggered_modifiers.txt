@@ -62,8 +62,9 @@ titan_cultist = {
 
 	icon = 26
 
-	ai_zeal = 25
-	ai_rationality = -10
+	# these don't work in character modifiers
+	# ai_zeal = 25
+	# ai_rationality = -10
 	combat_rating = 2
 }
 
@@ -78,8 +79,9 @@ promethean_philosophy = {
 
 	icon = 2
 
-	ai_zeal = 25
-	ai_rationality = 10
+	# these don't work in character modifiers
+	# ai_zeal = 25
+	# ai_rationality = 10
 
 	learning = 1
 }

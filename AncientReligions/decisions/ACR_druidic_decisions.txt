@@ -323,13 +323,14 @@ decisions = {
 		}
 		
 		effect = {
-			prestige = 500
+			prestige = -500
 			wealth = -500
 			
 			hidden_tooltip = {
 				d_fianna = {
 					holder_scope = {
 						wealth = 500
+						prestige = 500
 						character_event = {
 							id = ancrel.0116
 						}

@@ -566,7 +566,7 @@ character_event = {
 		custom_tooltip = {
 			text = path_of_the_warriors
 		
-			FROM = { prestige = 20}
+			FROM = { prestige = 50}
 			FROM = { change_martial = 1}
 			FROM = { change_learning = -1}
 		}

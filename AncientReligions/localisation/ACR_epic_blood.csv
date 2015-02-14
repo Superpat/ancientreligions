@@ -1,5 +1,5 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-#Epic Bloodline Events;;;;;;;;;;;;;;x
+###### Epic Bloodline Events;;;;;;;;;;;;;;x
 EVTDESCancrel.3000;You've recently finished studying the classics, and you couldn't help but be inspired by the great heroes of the epic poems. Perhaps you should try emulating these mythic figures?;;;;;;;;;;;;;x
 EVTOPTAancrel.3000;I think I shall!;;;;;;;;;;;;;x
 EVTOPTBancrel.3000;No point in chasing the impossible...;;;;;;;;;;;;;x
@@ -28,7 +28,7 @@ EVTOPTAancrel.3012;It's nice to be recognized! I once knew a man who...;;;;;;;;;
 EVTDESCancrel.3013;In the final battle to take the enemy town you found yourself overwhelmed with the thrill of combat and charged headlong into the enemy ranks. Before long you were surrounded, far from your personal guard. But this did not deter you. Instead, you single-handedly cut down thirty men. But, if you were to listen to the rumors that have been circulating through [From.GetBaseName] it was more like 300! Some say that you were the image of Achilles himself.;;;;;;;;;;;;;x
 EVTOPTAancrel.3013;All I can remember is the exhileration...;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
-#Epic Bloodline Modifiers;;;;;;;;;;;;;;x
+###### Epic Bloodline Modifiers;;;;;;;;;;;;;;x
 emulating_achilles;Emulating Achilles;;;;;;;;;;;;;x
 emulating_achilles_desc;This character strives to be like the hero Achilles.;;;;;;;;;;;;;x
 emulating_odysseus;Emulating Odysseus;;;;;;;;;;;;;x
@@ -43,7 +43,7 @@ emulating_aeneas_desc;Aeneas is providing this character a model of life.;;;;;;;
 emulating_paris;Emulating Paris;;;;;;;;;;;;;x
 emulating_paris_desc;This character strives to be like Paris of Troy.;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
-#Epic Bloodline Traits;;;;;;;;;;;;;;x
+###### Epic Bloodline Traits;;;;;;;;;;;;;;x
 descendant_of_achilles;Blood of Achilles;;;;;;;;;;;;;x
 descendant_of_achilles_desc;This character is recognized as a direct descendant of Achilles. Their presence on the battlefield unnerves their enemies.;;;;;;;;;;;;;x
 descendant_of_odysseus;Blood of Odysseus;;;;;;;;;;;;;x
@@ -72,5 +72,5 @@ aeneas_reborn_desc;This character is the reincarnation of Aeneas, hero of Troy a
 paris_reborn;Paris Reborn;;;;;;;;;;;;;x
 paris_reborn_desc;This character is the reincarnation of Paris, Prince of Troy. This character is considered one of the most desirable people in the world, the object of sexual and romantic fantasy for many.;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
-#Epic Bloodline Nicknames;;;;;;;;;;;;;;x
+###### Epic Bloodline Nicknames;;;;;;;;;;;;;;x
 nick_the_cunning;the Cunning;;;;;;;;;;;;;

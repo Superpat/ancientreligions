@@ -472,10 +472,8 @@ character_event = {
 		
 		trigger = {
 			NOT = {
-				OR = {
-					any_courtier = {
-						has_job_title = job_chancellor
-					}
+				any_courtier = {
+					has_job_title = job_chancellor
 				}
 			}
 		}
@@ -489,10 +487,8 @@ character_event = {
 		
 		trigger = {
 			NOT = { 
-				OR = {
-					any_courtier = {
-						has_job_title = job_spiritual
-					}
+				any_courtier = {
+					has_job_title = job_spiritual
 				}
 			}
 		}
@@ -678,7 +674,7 @@ character_event = {
 	hide_window = yes
 	
 	ai = yes
-	is_adult = yes
+    age = 16
 	capable_only = yes
 	prisoner = no
 	

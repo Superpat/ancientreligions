@@ -424,17 +424,3 @@ character_event = {
 		reverse_opinion = { modifier = opinion_rejected_hellenic_state_religion who = FROM }
 	}
 }
-
-narrative_event = {
-	id = ancrel.2104
-	desc = ancrel.2104.desc
-	picture = GFX_evt_roman_temple
-	border = GFX_event_normal_frame_religion
-
-	major = yes
-	is_triggered_only = yes
-
-	option = {
-		name = ancrel.2104.a
-	}	
-}

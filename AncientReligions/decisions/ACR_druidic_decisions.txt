@@ -1,5 +1,6 @@
 decisions = {
 	hold_divination = {
+		is_high_prio = yes
 		potential = {
 			has_dlc = "The Old Gods"
 			is_ruler = yes
@@ -137,7 +138,7 @@ decisions = {
 			wealth = 300
 			d_celtic_pagan_reformed = {
 				holder_scope = {
-					is_vassal_or_below = ROOT
+					is_liege_or_above = ROOT
 				}
 			}
 		}
@@ -572,6 +573,7 @@ decisions = {
 	}
 
 	give_offerings_sidhe = {
+		is_high_prio = yes
 		potential = {
 			has_dlc = "The Old Gods"
 			is_ruler = yes

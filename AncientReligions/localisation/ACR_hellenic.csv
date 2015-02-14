@@ -165,5 +165,6 @@ EVTOPTAancrel.2124;Appoint her as Vestalis;La nommer en tant que Vestale;;;;;;;;
 EVTOPTBancrel.2124;I can find someone better;Vous pouvez trouver mieux.;Ich kann einen Besseren finden;;Puedo hallar a alguien mejor;;;;;;;;;x
 EVTOPTCancrel.2124;I'm afraid there is no opening in the College of the Vestales.;Il n'y a malheureusement pas de poste libre dans le Collège des Vestales.;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
-pontificate_restored;Pontificate Restored;Pontificate Restored;Pontificate Restored;;Pontificate Restored;;;;;;;;;x
-restore_pontificate;Restore the Pontifex Maxima;Restore the Pontifex Maxima;Restore the Pontifex Maxima;;Restore the Pontifex Maxima;;;;;;;;;x
+pontifex_restored;Pontificate Restored;Pontificate Restored;Pontificate Restored;;Pontificate Restored;;;;;;;;;x
+recreate_pontificate;Restore the Pontifex Maxima;Restore the Pontifex Maxima;Restore the Pontifex Maxima;;Restore the Pontifex Maxima;;;;;;;;;x
+recreate_pontificate_desc;Restore the priesthood of the Hellenic faith and declare yourself the Pontifex Maximus!;FRENCH;GERMAN;;SPANISH;;;;;;;;;x

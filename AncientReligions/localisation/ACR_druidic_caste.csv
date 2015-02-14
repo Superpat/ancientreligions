@@ -67,9 +67,9 @@ EVTDESCancrel.0201;The secrets of the druids are many and earthly problems lose 
 EVTOPTAancrel.0201;Ok;;;;;;;;;;;;;x
 EVTDESCancrel.0203;Child dies in training;;;;;;;;;;;;;x
 EVTOPTAancrel.0203;Ok;;;;;;;;;;;;;x
-EVTDESCancrel.0205;[From.GetFirstName], your [From.GetRelation] has returned from [From.GetHerHis] training with the druids with gifts! It seems [From.GetSheHe] acquired a small fortune during their travels!;;;;;;;;;;;;;x
+EVTDESCancrel.0205;[From.GetFirstName], your [GetFromRelation] has returned from [From.GetHerHis] training with the druids with gifts! It seems [From.GetSheHe] acquired a small fortune during their travels!;;;;;;;;;;;;;x
 EVTOPTAancrel.0205;Excellent!;;;;;;;;;;;;;x
-EVTDESCancrel.0206;With your [From.GetRelation] having passed to the Other World, it is your responsibility to take the throne and lead your people, even at the expense of your training as a Druid.;;;;;;;;;;;;;x
+EVTDESCancrel.0206;With your [GetFromRelation] having passed to the Other World, it is your responsibility to take the throne and lead your people, even at the expense of your training as a Druid.;;;;;;;;;;;;;x
 EVTOPTAancrel.0206;It seems my training must come to an end...;;;;;;;;;;;;;x
 learning_druidic_arts;Novice;French;German;;Spanish;;;;;;;;;x
 learning_druidic_arts_desc;This character is learning the secret arts and rituals of the Druids, they have much to learn.;Franch;German;;Spanish;;;;;;;;;x

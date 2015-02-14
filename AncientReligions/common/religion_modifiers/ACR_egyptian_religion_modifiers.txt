@@ -1,4 +1,0 @@
-luxor_restored = {
-	authority = 10
-	years = 30
-}

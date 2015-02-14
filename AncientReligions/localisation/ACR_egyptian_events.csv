@@ -70,6 +70,6 @@ held_sed_festival;Held a Sed festival;;;;;;;;;;;;;x
 held_failed_sed_festival;Held a failed Sed festival;;;;;;;;;;;;;x
 held_sed_festival_timer;Held a Sed festival;;;;;;;;;;;;;x
 #Chronicle;;;;;;;;;;;;;;x
-CHRONICLE_EGYPTIAN_PRIESTHOOD;Backed by [Root.GetTitledName]'s contributions and the growing power of the reborn Kemetic faith, [Prev.GetDynName] was installed as the Paragon Xroj, the first high priest of a new Kemetic era.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-CHRONICLE_ANUBIS_GUARD;Backed by [Root.GetTitledName]'s contributions and the growing power of the reborn Kemetic faith, the Anubis Guard, an order of chariot archers and spears, was established under the command of [Prev.GetDynName].;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-CHRONICLE_HORUS_GUARD;Backed by [Root.GetTitledName]'s contributions and the growing power of the reborn Kemetic faith, the Horusian Guard was established under the command of [Prev.GetDynName].;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+CHRONICLE_EGYPTIAN_PRIESTHOOD;Backed by [Root.GetTitledName]'s contributions and the growing power of the reborn Kemetic faith, [Prev.GetDynName] was installed as the Paragon Xroj, the first high priest of a new Kemetic era.;;;;;;;;;;;;;x
+CHRONICLE_ANUBIS_GUARD;Backed by [Root.GetTitledName]'s contributions and the growing power of the reborn Kemetic faith, the Anubis Guard, an order of chariot archers and spears, was established under the command of [Prev.GetDynName].;;;;;;;;;;;;;x
+CHRONICLE_HORUS_GUARD;Backed by [Root.GetTitledName]'s contributions and the growing power of the reborn Kemetic faith, the Horusian Guard was established under the command of [Prev.GetDynName].;;;;;;;;;;;;;x

@@ -2086,7 +2086,7 @@ decisions = {
 			OR = {
 				ai = yes
 				AND = {
-					capital_holding = { port = yes }
+					capital_scope = { port = yes }
 					has_dlc = "The Republic"
 				}
 			}
@@ -2147,7 +2147,7 @@ decisions = {
 			custom_tooltip = {
 				text = adopt_republicanism_tooltip_1
 				hidden_tooltip = {
-					capital_scope = {
+					capital_holding = {
 						convert_to_city = yes
 						refill_holding_levy = yes
 					}

@@ -1,170 +1,5 @@
 decisions = {
-	# Pagans are allowed to convert to the attacker's religion when under holy war
-	convert_to_attacker_religion = {
-		is_high_prio = yes
-		
-		potential = {
-			is_playable = yes
-			OR = {
-				religion_group = pagan_group
-				religion_group = zoroastrian_group
-			}
-			controls_religion = no
-			war = yes
-			any_war = {
-				defender = { character = ROOT }
-				attacker = {
-					OR = {
-						religion_group = muslim
-						religion_group = christian
-					}
-				}
-				OR = {
-					using_cb = crusade
-					using_cb = religious
-					using_cb = muslim_invasion
-				}
-			}
-		}
-		
-		allow = {
-			NOT = { trait = zealous }
-		}
-		
-		effect = {
-			prestige = -500
-			religion_authority = {
-				modifier = ruler_converted_from
-			}
-			
-			if = {
-				limit = { religion_group = pagan_group }
-				add_trait = sympathy_pagans
-			}
-			if = {
-				limit = { religion_group = zoroastrian_group }
-				add_trait = sympathy_zoroastrianism
-			}
-			
-			any_war = {
-				limit = {
-					defender = { character = ROOT }
-					attacker = {
-						OR = {
-							religion_group = muslim
-							religion_group = christian
-						}
-					}
-					OR = {
-						using_cb = crusade
-						using_cb = religious
-						using_cb = muslim_invasion
-					}
-				}
-				attacker = {
-					hidden_tooltip = {
-						letter_event = { id = 62800 }
-					}
-					hidden_tooltip = {
-						ROOT = {
-							any_courtier = {
-								limit = {
-									religion = ROOT
-									employer = { character = ROOT }
-								}
-								religion = PREVPREV
-							}
-							any_vassal = {
-								limit = {
-									is_playable = no
-									religion = ROOT
-								}
-								religion = PREVPREV
-							}
-							capital_scope = {
-								if = {
-									limit = { religion = ROOT }
-									religion = PREVPREV
-								}
-							}
-						}
-					}
-					reverse_religion = ROOT 
-				}
-			}
-			
-			hidden_tooltip = {
-				religion_authority = {
-					modifier = ruler_converted_to
-				}
-			}
-			
-			piety = 100
-		}
-		
-		revoke_allowed = {
-			always = no
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.1
-			}
-			modifier = {
-				factor = 0
-				NOT = {
-					any_war = {
-						defender = { character = ROOT }
-						attacker = {
-							OR = {
-								religion_group = muslim
-								religion_group = christian
-							}
-						}
-						OR = {
-							using_cb = crusade
-							using_cb = religious
-							using_cb = muslim_invasion
-						}
-						war_score = 50
-						thirdparty_title_scope = {
-							ROOT = {
-								primary_title = {
-									title = PREVPREV
-								}
-							}
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 2
-				any_war = {
-					defender = { character = ROOT }
-					attacker = {
-						OR = {
-							religion_group = muslim
-							religion_group = christian
-						}
-					}
-					OR = {
-						using_cb = crusade
-						using_cb = religious
-						using_cb = muslim_invasion
-					}
-					war_score = 75
-					thirdparty_title_scope = {
-						ROOT = {
-							primary_title = {
-								title = PREVPREV
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+	
 	# Cultures can convert to their cultural pagan beliefs if the MA of their current religion is low
 	gone_pagan = {
 	
@@ -412,71 +247,20 @@ decisions = {
 		}
 	}
 
-	convert_to_reformed = {
+	paganify_the_world = {
+		is_high_prio = yes
 		potential = {
-			is_playable = yes
-			is_heretic = yes
-			religion_group = pagan_group
-		}
-		allow = {
-			NOT = { trait = zealous }
-			piety = 50
+			has_dlc = "The Old Gods"
+			ai = no
+			NOT = {
+				had_global_flag = { flag = ancrel days = 1 } # only on first day
+				has_global_flag = acr_paganify
+			}
 		}
 		effect = {
-			piety = -50
-			if = {
-				limit = { religion = norse_pagan }
-				religion = norse_pagan_reformed
-			}
-			if = {
-				limit = { religion = finnish_pagan }
-				religion = finnish_pagan_reformed
-			}
-			if = {
-				limit = { religion = baltic_pagan }
-				religion = baltic_pagan_reformed
-			}
-			if = {
-				limit = { religion = tengri_pagan }
-				religion = tengri_pagan_reformed
-			}
-			if = {
-				limit = { religion = slavic_pagan }
-				religion = slavic_pagan_reformed
-			}
-			if = {
-				limit = { religion = aztec }
-				religion = aztec_reformed
-			}
-			if = {
-				limit = { religion = west_african_pagan }
-				religion = west_african_pagan_reformed
-			}
-			if = {
-				limit = { religion = celtic_pagan }
-				religion = celtic_pagan_reformed
-			}
-			
-			hidden_tooltip = {
-				any_courtier = {
-					limit = {
-						is_heresy_of = ROOT
-						employer = { character = ROOT }
-					}
-					religion = ROOT
-				}
-				any_vassal = {
-					limit = {
-						is_playable = no
-						is_heresy_of = ROOT
-					}
-					religion = ROOT
-				}
-				capital_scope = {
-					if = {
-						limit = { is_heresy_of = ROOT }
-						religion = ROOT
-					}
+			k_papal_state = {
+				holder_scope = {
+					character_event = { id = ancrel.9001 }
 				}
 			}
 		}
@@ -484,45 +268,7 @@ decisions = {
 			always = no
 		}
 		ai_will_do = {
-			factor = 1 # On average ca 1 year before taken
-			modifier = {
-				factor = 0.025 # Generally quite a slow process - ca 40 years
-			}
-			modifier = {
-				factor = 0.5
-				trait = slow
-			}
-			modifier = {
-				factor = 0.1
-				trait = imbecile
-			}
-			modifier = {
-				factor = 0.5
-				trait = content
-			}
-			modifier = {
-				factor = 2.0
-				trait = quick
-			}
-			modifier = {
-				factor = 4.0
-				trait = genius
-			}
-			modifier = {
-				factor = 5.0
-				trait = cynical # It's the future..
-			}
-			modifier = {
-				factor = 2.0
-				trait = ambitious
-			}
-			modifier = {
-				factor = 0
-				independent = no
-				any_liege = {
-					religion = ROOT
-				}
-			}
+			factor = 0
 		}
-	}	
+	}
 }

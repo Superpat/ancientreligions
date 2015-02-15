@@ -1,5 +1,6 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-#Decisions;;;;;;;;;;;;;;x
+###### Event/decision/modifier definitions;;;;;;;;;;;;;;x
+###### Decisions;;;;;;;;;;;;;;x
 restore_luxor;Restore Luxor Temple;Restaurer le Temple de Luxor;Restore Luxor Temple;;Restore Luxor Temple;;;;;;;;;x
 restore_luxor_desc;Restore Luxor Temple to its former glory.;Restaurer le Temple de Luxor à la hauteur de son lustre d'antan.;Restore Luxor Temple to its former glory.;;Restore Luxor Temple to its former glory.;;;;;;;;;x
 restore_priesthood_egyptian_pagan;Restore the Paragon Xroj;Restaurer le Parangon Xroj;Restore the Paragon Xroj;;Restore the Paragon Xroj;;;;;;;;;x
@@ -10,7 +11,7 @@ organize_anubis;Organize the Anubis Guard;Mettre sur pied la Garde d'Anubis;Orga
 organize_anubis_desc;Organize the Anubis Guard Holy Order;Mettre sur pied l'Ordre Saint de la Garde d'Anubis.;Organize the Anubis Guard Holy Order;;Organize the Anubis Guard Holy Order;;;;;;;;;x
 organize_horus;Organize the Horusian Guard;Mettre sur pied la Garde d'Horus;Organize the Horusian Guard;;Organize the Horusian Guard;;;;;;;;;x
 organize_horus_desc;Organize the Horusian Guard Holy Order;Mettre sur pied l'Ordre Saint de la Garde d'Horus.;Organize the Horusian Guard Holy Order;;Organize the Horusian Guard Holy Order;;;;;;;;;x
-#Events;;;;;;;;;;;;;;x
+###### Events;;;;;;;;;;;;;;x
 EVTNAME_ancrel_4000;The Restoration of Luxor Temple;La Restauration du Temple de Luxor;The Restoration of Luxor Temple;;The Restoration of Luxor Temple;;;;;;;;;x
 EVTDESC_ancrel_4000;Much time has passed since Luxor Temple’s last official use and the peasantry has moved into its location since then. A sad sight it is indeed to see it in its current status. You decide that it is in the best interest of everyone to restore this temple to its former glory and make it a beacon of a revitalized Kemetic religion.;Bien du temps a passé depuis le dernier usage officiel du Temple de Luxor et la paysannerie s'est installée dans ses lieulx depuis. C'est en effet une bien triste vision que le temple dans son état actuel. Vous décidez que c'est dans l'intérest général de restaurer ce temple dans sa gloire d'antan et d'en faire le symbole d'une religion kémite revigorée.;Much time has passed since Luxor Temple’s last official use and the peasantry has moved into its location since then. A sad sight it is indeed to see it in its current status. You decide that it is in the best interest of everyone to restore this temple to its former glory and make it a beacon of a revitalized Kemetic religion.;;Much time has passed since Luxor Temple’s last official use and the peasantry has moved into its location since then. A sad sight it is indeed to see it in its current status. You decide that it is in the best interest of everyone to restore this temple to its former glory and make it a beacon of a revitalized Kemetic religion.;;;;;;;;;x
 EVTOPTA_ancrel_4000;Make it the greatest temple there ever was!;Faites-en le plus grand temple jamais construit !;Make it the greatest temple there ever was!;;Make it the greatest temple there ever was!;;;;;;;;;x
@@ -45,7 +46,7 @@ EVTOPTA_ancrel_4007;Worrisome...;Inquiétant...;Worrisome...;;Worrisome...;;;;;;;
 EVTNAME_ancrel_4008;The Horus Guard;La Garde d'Horus;The Horus Guard;;The Horus Guard;;;;;;;;;x
 EVTDESC_ancrel_4008;With the ongoing success of the Anubis guard, yet another Kemetic holy order has been organized. The Horusian Guard is ready to defend the Egyptian empire from all heathens and heretics that would dare threaten it. Only a fool would attack the Egyptians head on now.;Avec le succès en cours de la garde d'Anubis, un nouvel ordre saint kémite a été créé. La garde d'Horus est preste à défendre l'empire égyptien contre tous les païens et tous les hérétiques qui oseroient le menacer. Seul un fol attaqueroit de front les Egyptiens à présent.;With the ongoing success of the Anubis guard, yet another Kemetic holy order has been organized. The Horusian Guard is ready to defend the Egyptian empire from all heathens and heretics that would dare threaten it. Only a fool would attack the Egyptians head on now.;;With the ongoing success of the Anubis guard, yet another Kemetic holy order has been organized. The Horusian Guard is ready to defend the Egyptian empire from all heathens and heretics that would dare threaten it. Only a fool would attack the Egyptians head on now.;;;;;;;;;x
 EVTOPTA_ancrel_4008;Worrisome...;Inquiétant...;Worrisome...;;Worrisome...;;;;;;;;;x
-#Sed festival;;;;;;;;;;;;;;
+###### Sed festival;;;;;;;;;;;;;;
 hold_sed_festival;Hold a Sed Festival;Organiser un Festival de Sed;Hold a Sed Festival;;Hold a Sed Festival;;;;;;;;;x
 hold_sed_festival_desc;Traditionally, after 30 years of rule and every 3 years after that, a Pharaoh holds a festival to celebrate his continuous success, renew his royal powers and rejuvenate his strength.;;;;;;;;;;;;;x
 EVTDESC_ancrel_4010;On the first day of the festival, you present offerings to the gods. Then, while seated and crowned on a raised platform, the priests carry the statues of the gods and present offerings, in a sign of giving thanks for past loyalty and to secure good relationships in the future.;;;;;;;;;;;;;x
@@ -69,7 +70,7 @@ EVTOPTC_ancrel_4017;I'll make sure someone gets punished for this.;;;;;;;;;;;;;x
 held_sed_festival;Held a Sed festival;;;;;;;;;;;;;x
 held_failed_sed_festival;Held a failed Sed festival;;;;;;;;;;;;;x
 held_sed_festival_timer;Held a Sed festival;;;;;;;;;;;;;x
-#Chronicle;;;;;;;;;;;;;;x
+###### Chronicle;;;;;;;;;;;;;;x
 CHRONICLE_EGYPTIAN_PRIESTHOOD;Backed by [Root.GetTitledName]'s contributions and the growing power of the reborn Kemetic faith, [Prev.GetDynName] was installed as the Paragon Xroj, the first high priest of a new Kemetic era.;;;;;;;;;;;;;x
 CHRONICLE_ANUBIS_GUARD;Backed by [Root.GetTitledName]'s contributions and the growing power of the reborn Kemetic faith, the Anubis Guard, an order of chariot archers and spears, was established under the command of [Prev.GetDynName].;;;;;;;;;;;;;x
 CHRONICLE_HORUS_GUARD;Backed by [Root.GetTitledName]'s contributions and the growing power of the reborn Kemetic faith, the Horusian Guard was established under the command of [Prev.GetDynName].;;;;;;;;;;;;;x

@@ -438,3 +438,21 @@ character_event = {
 		}
 	}
 }
+
+character_event = {
+		id = ancrel.9009
+		hide_window = yes
+		is_triggered_only = yes
+		ai = no
+		trigger = {
+			NOT = { has_global_flag = ancrel }
+		}
+
+		immediate = {
+			set_global_flag = ancrel
+		}
+
+		option = {
+			name = OK
+		}
+}

@@ -59,6 +59,6 @@
 #
 # Misc ancient religion events
 # Event ID ancrel.9900 - ancrel.9999 is reserved
-# ancrel.9001 - ancrel.9008 Paganify Customization Option
+# ancrel.9001 - ancrel.9009 Paganify Customization Option
 #
 ###################################

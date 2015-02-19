@@ -242,6 +242,7 @@ character_event = {
 							culture_group = west_germanic
 							culture = occitan
 							culture = frankish
+							culture = norman
 						}
 					}
 					character_event = { id = ancrel.9002 }
@@ -301,12 +302,20 @@ character_event = {
 					}
 					character_event = { id = ancrel.9007 }					
 				}
-				if = { 
+				if = { # Zoroastrian
 					limit = {
 						NOT = { religion_group = pagan_group }					
 						culture_group = iranian
 					}
 					character_event = { id = ancrel.9008 }
+				}
+				if = { # Tengri
+					limit = {
+						NOT = { religion_group = pagan_group }
+						culture_group = altaic
+						culture_group = magyar
+					}
+					character_event = { id = ancrel.9009 }
 				}
 			}
 		}
@@ -439,8 +448,28 @@ character_event = {
 	}
 }
 
+# Tengri
 character_event = {
-		id = ancrel.9009
+	id = ancrel.9009
+	desc = ancrel.9009.desc
+	picture = "GFX_evt_mongols"
+	border = "GFX_event_narrative_frame_war"
+
+	is_triggered_only = yes
+	hide_from = yes
+
+	option = {
+		name = OK
+		religion = tengri_pagan
+		any_demesne_title = {
+			limit = { tier = count }
+			location = { religion = tengri_pagan }
+		}
+	}
+}
+
+character_event = {
+		id = ancrel.9010
 		hide_window = yes
 		is_triggered_only = yes
 		ai = no

@@ -76,7 +76,9 @@ decisions = {
 		potential = {
 			religion = hellenic_pagan
 			primary_title = { higher_real_tier_than = DUKE }
-			NOT = { is_title_active = d_hellenic_pagan }
+			d_hellenic_pagan = {
+				has_holder = no #Covers the case of destroyed title considered active
+			}
 		}
 		allow = {
 			c_roma = { holder = ROOT }
@@ -98,6 +100,9 @@ decisions = {
 				grant_title = PREV
 			}
 			religion_authority = { modifier = pontifex_restored }
+			hidden_tooltip = {
+				narrative_event = { id = ancrel.2104 }
+			}
 		}
 		revoke_allowed = {
 			always = no

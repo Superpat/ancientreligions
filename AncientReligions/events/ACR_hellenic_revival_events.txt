@@ -26,8 +26,6 @@ character_event = {
 	trigger = {
 		has_dlc = "The Old Gods"
 
-		NOT = { year = 1066 }
-
 		learning = 6
 		is_female = no
 		is_landed = no
@@ -44,7 +42,8 @@ character_event = {
 
 	mean_time_to_happen = {
 		years = 6
-
+		
+		#Increase MTTH by 50% every 50 years
 		modifier = {
 			factor = 1.5
 			year = 916
@@ -54,10 +53,21 @@ character_event = {
 			year = 966
 		}
 		modifier = {
-			factor = 2
+			factor = 1.5
 			year = 1016
 		}
-
+		modifier = {
+			factor = 1.5
+			year = 1066
+		}
+		modifier = {
+			factor = 1.5
+			year = 1116
+		}
+		modifier = {
+			factor = 1.5
+			year = 1166
+		}
 		modifier = {
 			factor = 1.25
 			trait = content
@@ -73,6 +83,10 @@ character_event = {
 		modifier = {
 			factor = 0.8
 			learning = 12
+		}
+		modifier = {
+			factor = 0.8
+			has_focus = focus_scholarship
 		}
 		modifier = {
 			factor = 0.8
@@ -422,5 +436,32 @@ character_event = {
 		ai_chance = { factor = 80 }
 		piety = 10
 		reverse_opinion = { modifier = opinion_rejected_hellenic_state_religion who = FROM }
+	}
+}
+
+# The Pontifex Maximus is restored!
+narrative_event = {
+	id = ancrel.2104
+	title = EVTNAMEancrel.2104
+	desc = EVTDESCancrel.2104
+	picture = GFX_evt_roman_temple
+	border = GFX_event_narrative_frame_religion
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAancrel.2104
+		trigger = {
+			religion = hellenic_pagan
+		}
+	}
+	
+	option = {
+		name = EVTOPTBancrel.2104
+		trigger = {
+			NOT = { religion = hellenic_pagan }
+		}
 	}
 }

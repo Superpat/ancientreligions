@@ -38,6 +38,7 @@ Hellenic Paganism:
 - Rebalanced the Roman Legion retinue to match vanilla sizes (250)
 - Fixed hellenic_county_liberation CB discrepency (using CB on other rulers under same liege causes the CB to end inconclusively): CB cannot be used on same realm chacaters.
 - Fixed restore_roman_empire decision having no effect
+- Allowed "Studied the Classics" revival event chain to fire after year 1066 (with increased MTTH)
 
 Egyptian Paganism:
 - Added unique title frame and CoA patterns

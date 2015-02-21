@@ -1,6 +1,6 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 #Event/decision/modifier definitions;;;;;;;;;;;;;;x
-#;;;;;;;;;;;;;;
+###### Hellenic revival;;;;;;;;;;;;;;
 opinion_no_hellenic_state_religion;Did not establish a Hellenic state religion;N'a pas choisi l'hellénisme comme religion d'état;;;;;;;;;;;;x
 opinion_no_forced_hellenic_state_religion;Did not enforce a Hellenic state religion;N'a pas forcé l'hellénisme en tant que religion d'état;;;;;;;;;;;;x
 opinion_hellenic_state_religion;Established a Hellenic state religion;A établi l'hellénisme comme religion d'état;;;;;;;;;;;;x
@@ -20,7 +20,15 @@ EVTOPTBancrel.2102;Let my vassals choose their own faith.;Laissons me vassaux ch
 EVTDESCancrel.2103;[From.GetTitledName] has endeavored to restore the ancient faith to the Empire, and demands that you convert.;[From.GetTitledName] s'efforce de restaurer la foi antique de l'Empire, et exige votre conversion.;;;;;;;;;;;;x
 EVTOPTAancrel.2103;Glory to [From.Religion.GetRandomGodName] and the Empire!;Gloire à [From.Religion.GetRandomGodName] et à l'Empire !;;;;;;;;;;;;x
 EVTOPTBancrel.2103;May [Root.Religion.GetRandomGodName] protect us.;Que [Root.Religion.GetRandomGodName] nous protège.;;;;;;;;;;;;x
-#;;;;;;;;;;;;;;x
+###### Pontifex Maximus;;;;;;;;;;;;;;x
+pontifex_restored;Pontificate Restored;;;;;;;;;;;;;x
+recreate_pontificate;Restore the Pontificate Maxima;;;;;;;;;;;;;x
+recreate_pontificate_desc;Restore the priesthood of the Hellenic faith and declare yourself the Pontifex Maximus!;;;;;;;;;;;;;x
+EVTNAMEancrel.2104;Return of the Pontificate Maxima;;;;;;;;;;;;x
+EVTDESCancrel.2104;After an interlude lasting a few centuries following the Christianization, Hellenism has returned as the state religion of [From.PrimaryTitle.GetName] and [From.GetTitledFirstName] has ordered the reinstitution of the Collegium Pontificum.\n\nThe Pontificate Maxima will serve as the highest religious authority in the Hellenic world, with powers ranging from the blessing of future military expeditions to the nomination of Vestals and flamens.;;;;;;;;;;;;x
+EVTOPTAancrel.2104;Rejoice!;Réjouissons-nous !;Frohlocket!;;¡Regocijaos!;;;;;;;;;x
+EVTOPTBancrel.2104;Heathens!;Païens !;Ketzer!;;¡Paganos!;;;;;;;;;x
+###### Roman revival;;;;;;;;;;;;;;
 was_refused_roman_revival;Roman revival refused;S'est vu refusé la renaissance romaine;;;;;;;;;;;;x
 was_allowed_roman_revival;Roman revival allowed;S'est vu autorisé la renaissance romaine;;;;;;;;;;;;x
 refused_roman_revival;Refused Roman revival;A refusé la renaissance romaine;;;;;;;;;;;;x
@@ -52,10 +60,6 @@ EVTDESCancrel.2124;One of your vassals has nominated a child for service to Vest
 EVTOPTAancrel.2124;Appoint her as Vestalis;La nommer en tant que Vestale;;;;;;;;;;;;x
 EVTOPTBancrel.2124;I can find someone better;Vous pouvez trouver mieux.;Ich kann einen Besseren finden;;Puedo hallar a alguien mejor;;;;;;;;;x
 EVTOPTCancrel.2124;I'm afraid there is no opening in the College of the Vestales.;Il n'y a malheureusement pas de poste libre dans le Collège des Vestales.;;;;;;;;;;;;x
-#;;;;;;;;;;;;;;x
-pontifex_restored;Pontificate Restored;Pontificate Restored;Pontificate Restored;;Pontificate Restored;;;;;;;;;x
-recreate_pontificate;Restore the Pontifex Maxima;Restore the Pontifex Maxima;Restore the Pontifex Maxima;;Restore the Pontifex Maxima;;;;;;;;;x
-recreate_pontificate_desc;Restore the priesthood of the Hellenic faith and declare yourself the Pontifex Maximus!;;;;;;;;;;;;;x
 ###### Titan cult events;;;;;;;;;;;;;;x
 hold_titan_thysia;Hold a Great Thysia;Tenir un grand thysia ;Haltet ein Thysia ab;;Celebrar una Gran Thysia;;;;;;;;;x
 hold_titan_thysia_desc;Hold a great thysia together with your vassals and offer sacrifice to the titans for good harvests and success on the battlefield. This can only be done every ninth year.;Tenez un grand blót accompagné de vos vassaux et offrez des sacrifices aux dieux en remerciement pour les bonnes récoltes et pour le succès sur le champ de bataille. Cela ne se fait qu'une fois à tous les neuf ans.;Haltet mit Euren Vasallen ein Blót ab und dankt den Göttern für gute Ernten und Erfolge auf dem Schlachtfeld. Dies kann nur jedes neunte Jahr durchgeführt werden.;;Celebrar una gran mancha junto con tus vasallos y ofrecer sacrificios a los dioses por buenas cosechas y el éxito en el campo de batalla. Esto sólo puede hacerse cada nueve años.;;;;;;;;;x

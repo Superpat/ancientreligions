@@ -41,6 +41,7 @@ Hellenic Paganism:
 - Fixed restore_roman_empire decision having no effect
 - Allowed "Studied the Classics" revival event chain to fire after year 1066 (with increased MTTH) and added religious sympathy trait.
 - Fixed mayor not becoming Roman when city restores Roman customs
+- Allowed Court Bard and Royal Champion for tribal rulers
 
 Egyptian Paganism:
 - Added unique title frame and CoA patterns

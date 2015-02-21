@@ -1,7 +1,7 @@
 2015-02- v0.36 "?"
 -------------------------
 General:
-- Pagan group religions now use random titles flags for all tiers
+- Pagan religions now use random flags for all title tiers
 - Added a paganify decision available on startup, before unpausing the game
 - Fixed adopt feudalism and republicanism decisions
 - Removed FRENCH, SPANISH and GERMAN used as localization for non-translated keys: the game now properly defaults to English when a key is not translated in another language and playing in that language. This allows to play with partially translated mod(s), yet being able to see something useful for the keys missing translations.
@@ -39,7 +39,7 @@ Hellenic Paganism:
 - Rebalanced the Roman Legion retinue to match vanilla sizes (250)
 - Fixed hellenic_county_liberation CB discrepancy (using CB on other rulers under same liege causes the CB to end inconclusively): CB cannot be used on same realm characters.
 - Fixed restore_roman_empire decision having no effect
-- Allowed "Studied the Classics" revival event chain to fire after year 1066 (with increased MTTH)
+- Allowed "Studied the Classics" revival event chain to fire after year 1066 (with increased MTTH) and added religious sympathy trait.
 - Fixed mayor not becoming Roman when city restores Roman customs
 
 Egyptian Paganism:

@@ -146,6 +146,10 @@ character_event = {
 				religion_authority = 0.6
 			}
 		}
+		if = {
+			limit = { religion_group = christian }
+			add_trait = sympathy_christendom
+		}
 		religion = hellenic_pagan
 		if = {
 			limit = { trait = cynical }
@@ -402,6 +406,10 @@ character_event = {
 					}
 				}
 			}
+		}
+		if = {
+			limit = { religion_group = christian }
+			add_trait = sympathy_christendom
 		}
 		religion = FROM
 		if = {

@@ -312,8 +312,10 @@ character_event = {
 				if = { # Tengri
 					limit = {
 						NOT = { religion_group = pagan_group }
-						culture_group = altaic
-						culture_group = magyar
+						OR = {
+							culture_group = altaic
+							culture_group = magyar
+						}
 					}
 					character_event = { id = ancrel.9009 }
 				}

@@ -306,6 +306,10 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\decision_icon_vassalize_holy_order.dds"
 	}
 	spriteType = {
+		name = "GFX_organize_gwydion"
+		texturefile = "gfx\\interface\\ACR\\decision_icon_organize_fianna.dds" #Placeholder
+	}
+	spriteType = {
 		name = "GFX_hold_an_aonach_tailteann"
 		texturefile = "gfx\\interface\\ACR\\decision_icon_hold_an_aonach_tailteann.dds"
 	}
@@ -316,6 +320,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_donate_money_to_red_dragons"
 		texturefile = "gfx\\interface\\decision_icon_donate_to_holy_order.dds"
+	}
+	spriteType = {
+		name = "GFX_expel_red_dragons"
+		texturefile = "gfx\\interface\\decision_icon_expel_holy_order.dds"
 	}
 	
 }

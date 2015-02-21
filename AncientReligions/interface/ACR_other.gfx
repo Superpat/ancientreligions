@@ -1,0 +1,12 @@
+spriteTypes = {
+	
+	# Decision icons
+	spriteType = {
+		name = "GFX_gone_pagan"
+		texturefile = "gfx\\interface\\decision_icon_convert_to_local_religion.dds" #Placeholder
+	}
+	spriteType = {
+		name = "GFX_paganify_the_world"
+		texturefile = "gfx\\interface\\decision_icon_convert_to_local_religion.dds" #Placeholder
+	}
+}

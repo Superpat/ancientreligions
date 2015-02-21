@@ -30,8 +30,8 @@ narrative_event = {
 				limit = {
 					ai = no
 					OR = {
-						religion = druidic
-						religion = druidic_reformed
+						religion = celtic_pagan
+						religion = celtic_pagan_reformed
 					}
 				}
 				narrative_event = { id = ancrel.0111 }
@@ -109,8 +109,8 @@ character_event = {
 		in_command = no
 		has_global_flag = gwydion_founded
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
 		}
 		NOT = { 
 			trait = wolf 
@@ -522,7 +522,7 @@ character_event = {
 			dynasty = NONE
 			female = yes
 			age = 26
-			religion = druidic
+			religion = celtic_pagan
 			culture = FROM
 		}
 		new_character = {

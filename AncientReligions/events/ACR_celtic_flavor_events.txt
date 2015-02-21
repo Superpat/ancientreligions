@@ -5,7 +5,7 @@
 #
 # Event IDs ancrel.0150 - 0151 
 #			ancrel.1252 - 1253
-#			ancrel.0208 - 0215
+#			ancrel.0208 - 0210
 #			ancrel.0256
 #
 ###################################
@@ -23,8 +23,8 @@ character_event = {
 	
 		trigger = {
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
 		}
 		is_landed = yes
 		is_abroad = no
@@ -99,8 +99,8 @@ character_event = {
 	
 		trigger = {
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
 		}
 		is_abroad = no
 		}
@@ -177,8 +177,8 @@ character_event = {
 	
 		trigger = {
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
 		}
 		is_landed = yes
 		is_abroad = no
@@ -265,8 +265,8 @@ character_event = {
 	
 		trigger = {
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
 		}
 		is_landed = yes
 		is_abroad = no
@@ -429,7 +429,7 @@ character_event = {
 
 	option = { #Character healed/converted
 		name = EVTOPTAancrel.0210
-		religion = druidic
+		religion = celtic_pagan
 		custom_tooltip = {
 			text = MIRACLE_STKILDA
 			if = { limit = { trait = ill } remove_trait = ill }
@@ -470,8 +470,8 @@ narrative_event = {
 			has_character_flag = first_brythonic_emperor
 		}
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
 		}
 		OR = {
 				culture = welsh
@@ -499,8 +499,8 @@ narrative_event = {
 	option = {
 		trigger = {
 			OR = {
-				religion = druidic
-				religion = druidic_reformed
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed
 			}
 		}
 		name = EVTOPTAancrel.0256 #Ok

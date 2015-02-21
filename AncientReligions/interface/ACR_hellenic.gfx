@@ -18,10 +18,18 @@ spriteTypes = {
 
 	# Decision icons
 	spriteType = {
+		name = "GFX_recreate_pontificate"
+		texturefile = "gfx\\interface\\ACR\\decision_icon_recreate_pontificate.dds"
+	}
+	spriteType = {
 		name = "GFX_nominate_vestalis_decision"
 		texturefile = "gfx\\interface\\ACR\\decision_icon_nominate_vestalis.dds"
 	}
-
+	spriteType = {
+		name = "GFX_hold_titan_thysia"
+		texturefile = "gfx\\interface\\decision_icon_hold_blot.dds" #Placeholder
+	}
+	
 	# Event pictures
 	spriteType = {
 		name = "GFX_evt_roman_temple"

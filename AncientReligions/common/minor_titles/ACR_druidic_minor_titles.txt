@@ -22,13 +22,17 @@ title_court_druid = {
 			trait = bad_druid
 		}
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
 		}
 		FROM = {
 			OR = {
-				religion = druidic
-				religion = druidic_reformed
+				is_feudal = yes
+				is_tribal = yes
+			}
+			OR = {
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed
 			}
 		}
 	}
@@ -40,35 +44,6 @@ title_court_druid = {
 
 	message = yes
 }
-# title_uchelwr = {
-	# dignity = 0.075
-	# grant_limit = 4
-	# opinion_effect = 10
-	
-	# monthly_salary = 0.005
-	# monthly_prestige = 0.005
-	
-	# is_unique = yes
-	
-	# allow = {
-		# is_adult = yes
-		# is_female = no
-		# FROM = {
-			# is_feudal = yes
-			# OR = {
-				# religion = druidic
-				# religion = druidic_reformed
-			# }
-		# }
-	# }
-	
-	# gain_effect = {
-	# }
-	# lose_effect = {
-	# }
-
-	# message = yes
-# }
 
 title_royal_champion = {
 	dignity = 0.2
@@ -84,7 +59,10 @@ title_royal_champion = {
 	allow = {
 		is_adult = yes
 		FROM = {
-			is_feudal = yes
+			OR = {
+				is_feudal = yes
+				is_tribal = yes
+			}
 			OR = {
 				primary_title = {
 					higher_tier_than = duke		# is a king or emperor
@@ -97,13 +75,13 @@ title_royal_champion = {
 				}
 			}
 			OR = {
-				religion = druidic
-				religion = druidic_reformed
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed
 			}
 		}
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
 		}
 		OR = {
 			trait = head1
@@ -119,39 +97,7 @@ title_royal_champion = {
 
 	message = yes
 }
-# title_vates = {
-	# dignity = 0.1
-	# realm_in_name = yes
-	# grant_limit = 2
-	# opinion_effect = 10
-	
-	# monthly_salary = 0.05
-	# monthly_prestige = 0.015
-	
-	# is_unique = yes
-	
-	# allow = {
-		# is_adult = yes
-		# FROM = {
-			# is_feudal = yes
-			# OR = {
-				# religion = druidic
-				# religion = druidic_reformed
-			# }
-		# }
-		# OR = {
-				# religion = druidic
-				# religion = druidic_reformed
-		# }
-	# }
-	
-	# gain_effect = {
-	# }
-	# lose_effect = {
-	# }
 
-	# message = yes
-# }
 title_court_bard = {
 	dignity = 0.15
 	realm_in_name = yes
@@ -166,10 +112,13 @@ title_court_bard = {
 	allow = {
 		is_adult = yes
 		FROM = {
-			is_feudal = yes
 			OR = {
-				religion = druidic
-				religion = druidic_reformed
+				is_feudal = yes
+				is_tribal = yes
+			}
+			OR = {
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed
 			}
 		}
 		trait = poet

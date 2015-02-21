@@ -23,11 +23,11 @@ job_chancellor = {
 			AND = {
 				OR = {
 					is_female = no
-					liege = { 
+					liege = {
 						OR = {
 							religion = cathar
-							religion = druidic
-							religion = druidic_reformed
+							religion = celtic_pagan
+							religion = celtic_pagan_reformed
 						}
 						religion = ROOT
 					}
@@ -40,14 +40,14 @@ job_chancellor = {
 		OR = {
 			liege = { 
 				NOT = { 
-					religion = druidic 
-					religion = druidic_reformed
+					religion = celtic_pagan 
+					religion = celtic_pagan_reformed
 				}
 			}
 		   AND = {
 				OR = { 
-					religion = druidic 
-					religion = druidic_reformed 
+					religion = celtic_pagan 
+					religion = celtic_pagan_reformed 
 				}
 				OR = { 
 					trait = druid
@@ -91,9 +91,9 @@ job_marshal = {
 					is_female = no
 					liege = {
 						OR = {
-							religion = druidic
-							religion = druidic_reformed
 							religion = cathar
+							religion = celtic_pagan
+							religion = celtic_pagan_reformed
 						}
 						religion = ROOT
 					}
@@ -141,11 +141,11 @@ job_treasurer = {
 			AND = {
 				OR = {
 					is_female = no
-					liege = { 
+					liege = {
 						OR = {
-							religion = druidic
-							religion = druidic_reformed
 							religion = cathar
+							religion = celtic_pagan
+							religion = celtic_pagan_reformed
 						}
 						religion = ROOT
 					}
@@ -291,14 +291,14 @@ job_spiritual = {
 		OR = {
 			liege = { 
 				NOT = { 
-					religion = druidic 
-					religion = druidic_reformed
+					religion = celtic_pagan 
+					religion = celtic_pagan_reformed
 				}
 			}
 		   AND = {
 				OR = { 
-					religion = druidic 
-					religion = druidic_reformed 
+					religion = celtic_pagan 
+					religion = celtic_pagan_reformed 
 				}
 				OR = {
 					trait = druid

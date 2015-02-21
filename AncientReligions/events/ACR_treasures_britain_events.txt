@@ -1,9 +1,9 @@
-# Audax Validator "!" Ignore_ALL
+# Audax Validator "!" Ignore_NEXT
 #########################################
 # Ancient Religions Reborn										
 # - Thirteen Treasures of Britain events  
 # 
-# Event IDs ancrel.1261 - 1275
+# Event IDs ancrel.1261 - 1318
 #########################################
 namespace = ancrel
 
@@ -20,8 +20,8 @@ character_event = {
 	
 	trigger = {
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
 		}
 		has_ambition = obj_find_thirteen_treasures
 		NOT = { has_character_flag = treasures_britain_quest_started }
@@ -1185,8 +1185,8 @@ narrative_event = { # The Whetstone of Tudwal
 	trigger = {
 		age = 16
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
 		}
 		has_ambition = obj_find_thirteen_treasures
 		has_character_flag = challenge_stage_britain_treasures
@@ -1218,8 +1218,8 @@ character_event = {
 
 	trigger = {
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
 		}
 		has_ambition = obj_find_thirteen_treasures
 		has_character_flag = whetstone_of_tudwal
@@ -1349,8 +1349,8 @@ narrative_event = {
 
 	trigger = {
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
 		}
 		has_ambition = obj_find_thirteen_treasures
 		has_character_flag = whetstone_of_tudwal

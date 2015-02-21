@@ -5983,7 +5983,6 @@ imperial_reconquest = {
 		ROOT = {
 			has_landed_title = e_roman_empire
 			independent = yes
-			# religion_group = christian
 			NOT = { same_realm = FROM }
 		}
 		FROM = {
@@ -6165,7 +6164,6 @@ imperial_reconquest = {
 	is_valid = {
 		ROOT = {
 			independent = yes
-			# religion_group = christian
 			NOT = { same_realm = FROM }
 		}
 	}
@@ -6819,7 +6817,10 @@ pagan_subjugation = {
 		ROOT = {
 			religion_group = pagan_group
 			is_reformed_religion = no
-			NOT = { religion = aztec }
+			NOT = { 
+				religion = aztec
+				religion = promethean_pagan 
+			}
 			NOT = { same_realm = FROM }
 			NOT = { is_liege_or_above = FROM }
 			has_horde_culture = no # Should use tribal invasion instead
@@ -6831,6 +6832,7 @@ pagan_subjugation = {
 				is_reformed_religion = ROOT
 			}
 			NOT = {
+				religion = promethean_pagan
 				any_war = {
 					AND = {
 						defender = { character = FROM }
@@ -8386,6 +8388,7 @@ pagan_county_conquest = {
 	can_use = {
 		ROOT = {
 			religion_group = pagan_group
+			NOT = { religion = promethean_pagan }
 			NOT = { same_realm = FROM }
 		}
 		FROM = {

@@ -4,7 +4,7 @@
 # - The Fianna
 #
 # Event IDs ancrel.1150-1189 reserved
-# Event IDs ancrel.1254-1300 reserved
+# Event IDs ancrel.1254-1260 reserved
 # Event IDs ancrel.1333-1334 reserved
 #
 #######################################
@@ -31,7 +31,7 @@ narrative_event = {
 			any_playable_ruler = {
 				limit = {
 					ai = no
-					religion = druidic
+					religion = celtic_pagan
 				}
 				narrative_event = { id = ancrel.1151 }
 			}
@@ -111,8 +111,8 @@ character_event = {
 		in_command = no
 		has_global_flag = fianna_founded
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
 		}
 		OR = {
 			culture = irish
@@ -125,8 +125,8 @@ character_event = {
 		father = {
 			is_alive = yes
 			OR = {
-				religion = druidic
-				religion = druidic_reformed
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed
 			}
 			OR = {
 				culture = irish
@@ -535,7 +535,7 @@ character_event = {
 			dynasty = NONE
 			female = yes
 			age = 26
-			religion = druidic
+			religion = celtic_pagan
 			culture = FROM
 		}
 		new_character = {
@@ -884,7 +884,7 @@ character_event = {
 	hide_window = yes
 	
 	trigger = {
-		has_global_flag = druidic_reformation
+		has_global_flag = celtic_pagan_reformation
 		NOT = { has_global_flag = fianna_reformed }
 		is_title_active = d_fianna
 	}
@@ -895,9 +895,9 @@ character_event = {
 	
 	immediate = {
 		d_fianna = {
-			religion = druidic_reformed # This Holy Order now changes religion
+			religion = celtic_pagan_reformed # This Holy Order now changes religion
 			holder_scope = {
-				religion = druidic_reformed
+				religion = celtic_pagan_reformed
 			}
 		}		
 		set_global_flag = fianna_reformed
@@ -973,8 +973,8 @@ character_event = {
 		war = no
 		in_command = no
 		OR = {
-			religion = druidic
-			religion = druidic_reformed
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
 		}
 		OR = {
 			culture = irish
@@ -1529,7 +1529,7 @@ character_event = {
 # Ping event when donating money to the fianna
 character_event = {
 	id = ancrel.1333
-	desc = OK
+	desc = OK
 	picture = GFX_evt_throne_room_norse_pagan
 	border = GFX_event_normal_frame_religion
 	
@@ -1558,7 +1558,7 @@ character_event = {
 # Notification event when donating money to the fianna
 letter_event = {
 	id = ancrel.1334
-	desc = EVTDESCancrel.1334
+	desc = EVTDESCancrel.1334
 	border = GFX_event_letter_frame_religion
 	
 	is_triggered_only = yes

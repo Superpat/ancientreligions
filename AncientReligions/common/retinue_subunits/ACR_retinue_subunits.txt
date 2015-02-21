@@ -1,0 +1,39 @@
+# Types:
+# 0 - Light Infantry
+# 1 - Heavy Infantry
+# 2 - Pikemen
+# 3 - Light Cavalry
+# 4 - Knights (heavy cav)
+# 5 - Archers
+# 6 - Horse Archers
+
+RETTYPE_CUL_ROMAN =
+{
+	first_type = 1
+	first_amount = 225
+	second_type = 3
+	second_amount = 25
+	
+	potential = {
+		culture = roman
+	}
+
+	modifier = {
+		light_cavalry_offensive = 0.3
+		heavy_infantry_offensive = 0.1
+		heavy_infantry_defensive = 0.2
+	}
+}
+
+RETTYPE_CUL_GAULISH = {
+	first_type = 1
+	first_amount = 250
+
+	potential = {
+		culture = gaulish
+	}
+
+	modifier = {
+		knights_offensive = 0.3
+	}
+}

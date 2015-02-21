@@ -2,7 +2,7 @@
 #
 #  Ancient Religions Reborn
 #  - Events for the Red Dragon Knights
-#  		Event IDs ancrel.1319 - ancrel.1335
+#  		Event IDs ancrel.1319 - ancrel.1332
 #
 ############################################
 
@@ -16,9 +16,9 @@ namespace = ancrel
 # The birth of the Red Dragon Knights
 narrative_event = {
 	id = ancrel.1319
-	title = EVTTITLEancrel.1319
-	desc = EVTDESCancrel.1319
-	picture = GFX_evt_roman_temple
+	title = EVTTITLEancrel.1319
+	desc = EVTDESCancrel.1319
+	picture = GFX_evt_celtic_warriors
 	border = GFX_event_narrative_frame_religion
 
 	major = yes
@@ -28,11 +28,11 @@ narrative_event = {
 	
 	trigger = {
 		has_dlc = "The Old Gods"
-		has_global_flag = druidic_reformation
+		has_global_flag = celtic_pagan_reformation
 		NOT = {
 			is_title_active = d_red_dragons
 		}
-		religion = druidic_reformed
+		religion = celtic_pagan_reformed
 		controls_religion = yes # Let it happen for the Arch Druid, they'll always be around
 	}
 	
@@ -45,7 +45,7 @@ narrative_event = {
 		create_character = {
 			random_traits = no
 			dynasty = random
-			religion = druidic_reformed
+			religion = celtic_pagan_reformed
 			culture = welsh
 			female = no
 			age = 28
@@ -58,7 +58,7 @@ narrative_event = {
 			create_character = {
 				random_traits = yes
 				dynasty = random
-				religion = druidic_reformed
+				religion = celtic_pagan_reformed
 				culture = welsh
 				female = no
 				age = 16
@@ -66,7 +66,7 @@ narrative_event = {
 			create_character = {
 				random_traits = yes
 				dynasty = random
-				religion = druidic_reformed
+				religion = celtic_pagan_reformed
 				culture = welsh
 				female = no
 				age = 18
@@ -74,7 +74,7 @@ narrative_event = {
 			create_character = {
 				random_traits = yes
 				dynasty = random
-				religion = druidic_reformed
+				religion = celtic_pagan_reformed
 				culture = welsh
 				female = no
 				age = 18
@@ -82,7 +82,7 @@ narrative_event = {
 			create_character = {
 				random_traits = yes
 				dynasty = random
-				religion = druidic_reformed
+				religion = celtic_pagan_reformed
 				culture = welsh
 				female = no
 				age = 20
@@ -90,7 +90,7 @@ narrative_event = {
 			create_character = {
 				random_traits = yes
 				dynasty = random
-				religion = druidic_reformed
+				religion = celtic_pagan_reformed
 				culture = welsh
 				female = no
 				age = 25
@@ -98,7 +98,7 @@ narrative_event = {
 			create_character = {
 				random_traits = yes
 				dynasty = random
-				religion = druidic_reformed
+				religion = celtic_pagan_reformed
 				culture = welsh
 				female = no
 				age = 26
@@ -106,7 +106,7 @@ narrative_event = {
 			create_character = {
 				random_traits = yes
 				dynasty = random
-				religion = druidic_reformed
+				religion = celtic_pagan_reformed
 				culture = welsh
 				female = no
 				age = 28
@@ -114,7 +114,7 @@ narrative_event = {
 			create_character = {
 				random_traits = yes
 				dynasty = random
-				religion = druidic_reformed
+				religion = celtic_pagan_reformed
 				culture = welsh
 				female = yes
 				age = 16
@@ -122,7 +122,7 @@ narrative_event = {
 			create_character = {
 				random_traits = yes
 				dynasty = random
-				religion = druidic_reformed
+				religion = celtic_pagan_reformed
 				culture = welsh
 				female = yes
 				age = 17
@@ -131,16 +131,7 @@ narrative_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.1319
-		trigger = {
-			religion = druidic_reformed
-		}
-	}
-	option = {
-		name = EVTOPTBancrel.1319
-		trigger = {
-			NOT = { religion = druidic_reformed }
-		}
+		name = OK
 	}
 }
 
@@ -158,7 +149,7 @@ character_event = {
 	
 	trigger = {
 		is_ruler = no
-		religion = druidic_reformed
+		religion = celtic_pagan_reformed
 		is_heretic = no
 		
 		martial = 5
@@ -352,7 +343,7 @@ character_event = {
 # The Grand Master humbly requests the right to build a castle in your demesne
 character_event = {
 	id = ancrel.1324
-	desc = OK
+	desc = OK
 	picture = GFX_EVT_warrior_banners
 	border = GFX_event_normal_frame_religion
 	
@@ -361,7 +352,7 @@ character_event = {
 	only_playable = yes
 	
 	trigger = {
-		religion = druidic_reformed
+		religion = celtic_pagan_reformed
 		is_heretic = no
 		
 		d_red_dragons = {
@@ -452,7 +443,7 @@ character_event = {
 
 province_event = {
 	id = ancrel.1325
-	desc = OK
+	desc = OK
 	picture = GFX_EVT_warrior_banners
 	border = GFX_event_normal_frame_religion
 	
@@ -477,7 +468,7 @@ province_event = {
 
 character_event = {
 	id = ancrel.1326
-	desc = OK
+	desc = OK
 	picture = GFX_EVT_warrior_banners
 	border = GFX_event_normal_frame_religion
 	
@@ -563,7 +554,7 @@ province_event = {
 # Ping event when expelling the Red Dragon
 character_event = {
 	id = ancrel.1329
-	desc = OK
+	desc = OK
 	picture = GFX_EVT_throne_room_norse_pagan
 	border = GFX_event_normal_frame_religion
 	
@@ -620,7 +611,7 @@ letter_event = {
 # Ping event when donating money to the Red dragon
 character_event = {
 	id = ancrel.1331
-	desc = OK
+	desc = OK
 	picture = GFX_EVT_throne_room_norse_pagan
 	border = GFX_event_normal_frame_religion
 	

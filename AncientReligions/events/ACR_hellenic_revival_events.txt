@@ -19,7 +19,6 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 
 	min_age = 16
-	max_age = 22
 	capable_only = yes
 	prisoner = no
 
@@ -29,7 +28,11 @@ character_event = {
 		learning = 6
 		is_female = no
 		is_landed = no
-		religion_group = christian
+		NOT = {	
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
 		OR = {
 			culture = roman
 			culture = italian
@@ -113,7 +116,7 @@ character_event = {
 	option = {
 		name = EVTOPTAancrel.2100
 		ai_chance = {
-			factor = 10
+			factor = 15
 			modifier = {
 				factor = 0.25
 				trait = zealous
@@ -145,10 +148,46 @@ character_event = {
 				factor = 0.8
 				religion_authority = 0.6
 			}
+			modifier = {
+				factor = 1.2
+				OR = {
+					religion_group = christian
+					religion_group = muslim
+				}
+			}
+			modifier = {
+				factor = 0.1
+				religion_group = jewish_group
+			}
+			modifier = { # Zeus who?
+				factor = 0.1
+				religion_group = indian_group
+			}
+			modifier = {
+				factor = 1.5
+				religion_group = pagan_group
+				NOT = { religion_authority = 0.35 }
+			}
 		}
 		if = {
 			limit = { religion_group = christian }
 			add_trait = sympathy_christendom
+		}
+		if = {
+			limit = { religion_group = muslim }
+			add_trait = sympathy_islam
+		}
+		if = {
+			limit = { religion_group = zoroastrian_group }
+			add_trait = sympathy_zoroastrianism
+		}
+		if = {
+			limit = { religion_group = indian_group }
+			add_trait = sympathy_indian
+		}
+		if = {
+			limit = { religion_group = jewish_group }
+			add_trait = sympathy_judaism
 		}
 		religion = hellenic_pagan
 		if = {
@@ -171,7 +210,7 @@ character_event = {
 
 	option = {
 		name = EVTOPTBancrel.2100
-		ai_chance = { factor = 90 }
+		ai_chance = { factor = 85 }
 		piety = 50
 	}
 }
@@ -251,6 +290,7 @@ character_event = {
 		}
 		custom_tooltip = {
 			text = EVTTOOLTIPAancrel.2102
+			give_nickname = nick_the_apostate
 			hidden_tooltip = {
 				any_realm_character  = {
 					limit = {

@@ -34,12 +34,14 @@ Celtic Paganism:
 
 Hellenic Paganism:
 - Added unique title frame and CoA patterns
+- Making Hellenism the state religion will now give you the nickname 'the Apostate'
 - Created decision to recreate the pontificate and pontifex_restored religion modifier
 - Created titan_pagan and promethean_pagan heresies
   - Added titan 'Hold Thysia' decision 
+  - Titan Cultists are barbaric, it is an unreformed faith that cannot reform, and has many simalarities to other such religions
   - Promethean pagans can no longer use, or are subject to, subjugation
   - Promethean pagans can no longer use county conquest
-  - Prometheans are pre-reformed and have a creatable head of religion, the Scholarch
+  - Prometheans are pre-reformed and have a creatable head of religion, the Scholarch of the First Academy
 - Rebalanced the Roman Legion retinue to match vanilla sizes (250)
 - Fixed hellenic_county_liberation CB discrepancy (using CB on other rulers under same liege causes the CB to end inconclusively): CB cannot be used on same realm characters.
 - Fixed restore_roman_empire decision having no effect
@@ -47,6 +49,11 @@ Hellenic Paganism:
 - Fixed mayor not becoming Roman when city restores Roman customs
 - Allowed Court Bard and Royal Champion for tribal rulers
 - Made it clear in events and in trait description that Vestals cannot inherit.
+- Opened up the conversion event a little more to make it more likely
+  - No maximum age requirement.
+  - No longer requires Christian group, and pagans more likely to convert if moral authority low.
+  - Based chance of courtier converting changed to 15%.
+  - Christians and Muslims far more likely to convert than jews or indians.
 
 Egyptian Paganism:
 - Added unique title frame and CoA patterns

@@ -48,7 +48,8 @@ Hellenic Paganism:
 - Allowed "Studied the Classics" revival event chain to fire after year 1066 (with increased MTTH) and added religious sympathy trait.
 - Fixed mayor not becoming Roman when city restores Roman customs
 - Allowed Court Bard and Royal Champion for tribal rulers
-- Made it clear in events and in trait description that Vestals cannot inherit.
+- Made it clear in events and in trait description that Vestals cannot inherit
+- Fixed a typo that allowed you to emulate multiple heroes
 - Opened up the conversion event a little more to make it more likely
   - No maximum age requirement.
   - No longer requires Christian group, and pagans more likely to convert if moral authority low.

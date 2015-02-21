@@ -72,7 +72,7 @@ character_event = {
 	}
 	
 	immediate = {
-		set_character_flag = flag_stuidied_the_classics
+		set_character_flag = flag_studied_the_classics
 	}
 	
 	# Decide to emulate one of the epic heroes

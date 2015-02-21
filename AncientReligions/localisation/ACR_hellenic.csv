@@ -26,7 +26,7 @@ GOD_VULCAN_byzantine;Hephaestus;Héphaïstos;Hephaistos;;Hefesto;;;;;;;;;x
 GOD_APOLLO;Apollo;Apollon;Apollon;;Apolo;;;;;;;;;x
 THE_THEOGONY;The Theogony;La Théogonie;Die Theogonie;;La Teogonía;;;;;;;;;x
 hellenic_pagan_DESC;The Hellenistic religion is polytheistic, with a pantheon of twelve major gods including Jupiter, Mars, Mercury, Venus, Minerva and Vesta. It originated in ancient Greece and with the conquests of Alexander the Great and the Roman Empire, it would go on to become the dominant religion in the Mediterranean world until the rise of Christendom. Defining features in-game: \n§Y*§! Can try to reconquer the land of the old Roman Empire from non-pagan rulers.\n§Y*§! Can liberate Italian and Greek provinces from non-pagan rulers.\n§Y*§! The Pontifex Maximus can call Great Holy Wars;L'hellénisme est polythéiste, avec un panthéon de douze dieux majeurs incluant Jupiter, Mars, Mercure, Venus, Minerve et Vesta. Il est originaire de la Grèce antique et avec les conquête d'Alexandre le Grand et l'Empire romain, allait devenir la religion dominante autour de la Méditerranée jusqu'à la montée du Christianisme. Dans le jeu : \n§Y*§! Peut tenter de recapturer les terres du vieil Empire romain dirigées par des non païens.\n§Y*§! Peut libérer les provinces italiennes et grecques dirigées par des non païens.\n§Y*§! Le Pontifex Maximus peut déclarer de grandes guerres saintes;;;;;;;;;;;;x
-#;;;;;;;;;;;;;;
+#;;;;;;;;;;;;;;x
 king_hellenic_pagan;Rex;Rex;Rex;;Rey;;;;;;;;;x
 king_hellenic_pagan_byzantine;Regas;Regas;Regas;;Rey;;;;;;;;;x
 king_female_hellenic_pagan;Regina;Regina;Regina;;Reina;;;;;;;;;x
@@ -36,12 +36,12 @@ count_hellenic_pagan;Legatus;Legatus;;;;;;;;;;;;x
 count_female_hellenic_pagan;Legata;Legata;;;;;;;;;;;;x
 baron_hellenic_pagan;Eques;Eques;;;;;;;;;;;;x
 baron_female_hellenic_pagan;Eques;Eques;;;;;;;;;;;;x
-#;;;;;;;;;;;;;;
+#;;;;;;;;;;;;;;x
 temple_king_hellenic_pagan;Rex Sacrorum;Rex Sacrorum;Rex Sacrorum;;Rey Sacrorum;;;;;;;;;x
 temple_king_female_hellenic_pagan;Regina Sacrorum;Regina Sacrorum;Regina Sacrorum;;Reina Sacrorum;;;;;;;;;x
 temple_duke_hellenic_pagan;Pontifex Magnus;Pontifex Magnus;;;;;;;;;;;;x
 temple_count_hellenic_pagan;Pontifex;Pontifex;;;;;;;;;;;;x
-#;;;;;;;;;;;;;;
+#;;;;;;;;;;;;;;x
 city_emperor_hellenic_pagan;Emperor;Emperor;Kaiser;;Emperador;;;;;;;;;x
 city_king_hellenic_pagan;Consul;Consul;Konsulat;;Cónsul;;;;;;;;;x
 city_king_hellenic_pagan_byzantine;Hypatos;Hypatos;;;;;;;;;;;;x
@@ -50,7 +50,7 @@ city_count_hellenic_pagan;Lord Prefect;Seigneur-Préfet;Oberbürgermeister;;Gran P
 city_baron_hellenic_pagan;Prefect;Préfet;Bürgermeister;;Prefecto;;;;;;;;;x
 family_palace_baron_hellenic_pagan;Pater Familias;Pater Familias;;;;;;;;;;;;x
 family_palace_baron_female_hellenic_pagan;Mater Familias;Mater Familias;;;;;;;;;;;;x
-#;;;;;;;;;;;;;;
+#;;;;;;;;;;;;;;x
 duchy_hellenic_pagan;Province;Province;Provinz;;Provincia;;;;;;;;;x
 duchy_of_hellenic_pagan;Province of;Province de;Provinz von;;Provincia de;;;;;;;;;x
 temple_kingdom_hellenic_pagan;Sacred Kingdom;;;;;;;;;;;;;x
@@ -119,7 +119,7 @@ GOD_OLYMPIANS;the Olympians;the Olympians;the Olympians;;the Olympians;;;;;;;;;x
 THE_DIALOGUES;The Dialogues;The Dialogues;The Dialogues;;The Dialogues;;;;;;;;;x
 PHILOSOPHER;Philosophos;Philosophos;Philosophos;;Philosophos;;;;;;;;;x
 promethean_pagan;Promethean;Promethean;Promethean;;Promethean;;;;;;;;;x
-promethean_pagan_DESC;Prometheanism is the worship of the Titan Prometheus and, to a lesser extent, his brother Epimetheus, as the fathers of humanity. Prometheanism acknowledges the existence, and divinity, of the Olympians, but rejects their worthiness as beings to be worshiped Prometheans value intellectual pursuits above all; finding guile, diplomacy, and a quick wit to be the highest art forms. They find violence distasteful, but recognize that it is ocassionally necessary.Defining features in-game:\n§Y*§! Prometheans gain piety while at peace.\n§Y*§! The Scholarch of the First Academy leads the Promethean faitfhul.\n§Y*§! Prometheans cannot use, and are not targetable by, the Pagan Subjugation CB.\n§Y*§! Prometheans gain a bonus to Learning.\n§Y*§! Prometheanism is a feminist faith.\n§Y*§! Women may hold temples.\n§Y*§! Priests can marry.\n§Y*§! Promethean rulers may designate their heir.;;;;;;;;;;;;x
+promethean_pagan_DESC;Prometheanism is the worship of the Titan Prometheus and, to a lesser extent, his brother Epimetheus, as the fathers of humanity. Prometheanism acknowledges the existence, and divinity, of the Olympians, but rejects their worthiness as beings to be worshiped. Prometheans value intellectual pursuits above all, finding guile, diplomacy, and a quick wit to be the highest art forms. They find violence distasteful, but recognize that it is ocassionally necessary.Defining features in-game:\n§Y*§! Prometheans gain piety while at peace.\n§Y*§! The Scholarch of the First Academy leads the Promethean faitfhul.\n§Y*§! Prometheans cannot use, and are not targetable by, the Pagan Subjugation CB.\n§Y*§! Prometheans gain a bonus to Learning.\n§Y*§! Prometheanism is a feminist faith.\n§Y*§! Women may hold temples.\n§Y*§! Priests can marry.\n§Y*§! Promethean rulers may designate their heir.;;;;;;;;;;;;;x
 promethean_philosophy;Promethean Philosophy;Promethean Philosophy;Promethean Philosophy;;Promethean Philosophy;;;;;;;;;x
 promethean_philosophy_desc;Promethean beliefs encourage intellectual pursuits and the advancements of science, technology, and logic. Promethean tend toward higher education as a result.;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
@@ -144,9 +144,10 @@ temple_emperor_female_promethean_pagan;Sofos Matriarchia;;;;;;;;;;;;;x
 temple_empire_of_promethean_pagan;Enlightened Realm of;;;;;;;;;;;;;x
 ###### Titan cult;;;;;;;;;;;;;;x
 titan_pagan;Titan Cult;Titan Cult;Titan Cult;;Titan Cult;;;;;;;;;x
-titan_pagan_DESC;The Titan Cult reject the authority of the Olympian Gods, considering them usurpers and unworthy of their worship. Titan Cultists reject the kind of civilization that Hellenism has typically fostered, and have much more in common with the more "barbaric" religions. They are extremely aggressive and prone to collapse during a succession. Defining features in-game\n§Y*§! Titan Cultists may use the Pagan Subjugation CB once per lifetime.\n§Y*§! Titan Cultists may use the Pagan Conquest CB.\n§Y*§! Priests can marry.\n§Y*§! Titan Cultists lose prestige if at peace too long.\n§Y*§! Titan Cultists do not gain an opinion penalty from having vassal levies raised too long.\n§Y*§! Titan Cultists can raid their neighbors.\n§Y*§! Titan Cultists can take up to three concubines.\n§Y*§! The Titan Cult allows marriage between children and their parent's siblings.\n§Y*§! Titan Cultists suffer from increased short reign penalties.;;;;;;;;;;;;;x
+titan_pagan_DESC;The Titan Cult reject the authority of the Olympian Gods, considering them usurpers and unworthy of their worship. Titan Cultists reject the kind of civilization that Hellenism has typically fostered, and have much more in common with the more "barbaric" religions. They are extremely aggressive and prone to collapse during a succession. Defining features in-game:\n§Y*§! Titan Cultists may use the Pagan Subjugation CB once per lifetime.\n§Y*§! Titan Cultists may use the Pagan Conquest CB.\n§Y*§! Priests can marry.\n§Y*§! Titan Cultists lose prestige if at peace too long.\n§Y*§! Titan Cultists do not gain an opinion penalty from having vassal levies raised too long.\n§Y*§! Titan Cultists can raid their neighbors.\n§Y*§! Titan Cultists can take up to three concubines.\n§Y*§! The Titan Cult allows marriage between children and their parent's siblings.\n§Y*§! Titan Cultists suffer from increased short reign penalties.;;;;;;;;;;;;;x
 titan_cultist;Titan Ferocity;Titan Ferocity;Titan Ferocity;;Titan Ferocity;;;;;;;;;x
 titan_cultist_desc;Titan Cultists relish and excel in personal combat.;;;;;;;;;;;;;x
+temple_baron_titan_pagan;Priest;;;;;;;;;;;;;x
 GOD_KRONOS;Kronos;Kronos;Kronos;;Kronos;;;;;;;;;x
 GOD_OCEANUS;Oceanus;Oceanus;Oceanus;;Oceanus;;;;;;;;;x
 GOD_TETHYS;Tethys;Tethys;Tethys;;Tethys;;;;;;;;;x

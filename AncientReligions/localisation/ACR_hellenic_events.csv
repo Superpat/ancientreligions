@@ -1,6 +1,6 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 #Event/decision/modifier definitions;;;;;;;;;;;;;;x
-###### Hellenic revival;;;;;;;;;;;;;;
+###### Hellenic revival;;;;;;;;;;;;;;x
 opinion_no_hellenic_state_religion;Did not establish a Hellenic state religion;N'a pas choisi l'hellénisme comme religion d'état;;;;;;;;;;;;x
 opinion_no_forced_hellenic_state_religion;Did not enforce a Hellenic state religion;N'a pas forcé l'hellénisme en tant que religion d'état;;;;;;;;;;;;x
 opinion_hellenic_state_religion;Established a Hellenic state religion;A établi l'hellénisme comme religion d'état;;;;;;;;;;;;x
@@ -24,8 +24,8 @@ EVTOPTBancrel.2103;May [Root.Religion.GetRandomGodName] protect us.;Que [Root.Re
 pontifex_restored;Pontificate Restored;;;;;;;;;;;;;x
 recreate_pontificate;Restore the Pontificate Maxima;;;;;;;;;;;;;x
 recreate_pontificate_desc;Restore the priesthood of the Hellenic faith and declare yourself the Pontifex Maximus!;;;;;;;;;;;;;x
-EVTNAMEancrel.2104;Return of the Pontificate Maxima;;;;;;;;;;;;x
-EVTDESCancrel.2104;After an interlude lasting a few centuries following the Christianization, Hellenism has returned as the state religion of [From.PrimaryTitle.GetName] and [From.GetTitledFirstName] has ordered the reinstitution of the Collegium Pontificum.\n\nThe Pontificate Maxima will serve as the highest religious authority in the Hellenic world, with powers ranging from the blessing of future military expeditions to the nomination of Vestals and flamens.;;;;;;;;;;;;x
+EVTNAMEancrel.2104;Return of the Pontificate Maxima;;;;;;;;;;;;;x
+EVTDESCancrel.2104;After an interlude lasting a few centuries following the Christianization, Hellenism has returned as the state religion of [From.PrimaryTitle.GetName] and [From.GetTitledFirstName] has ordered the reinstitution of the Collegium Pontificum.\n\nThe Pontificate Maxima will serve as the highest religious authority in the Hellenic world, with powers ranging from the blessing of future military expeditions to the nomination of Vestals and flamens.;;;;;;;;;;;;;x
 EVTOPTAancrel.2104;Rejoice!;Réjouissons-nous !;Frohlocket!;;¡Regocijaos!;;;;;;;;;x
 EVTOPTBancrel.2104;Heathens!;Païens !;Ketzer!;;¡Paganos!;;;;;;;;;x
 ###### Roman revival;;;;;;;;;;;;;;

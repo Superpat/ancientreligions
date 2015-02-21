@@ -139,6 +139,7 @@ province_event = {
 
 narrative_event = {
 	id = ancrel.0281
+	title = EVTNAMEancrel.0281
 	desc = EVTDESCancrel.0281
 	picture = GFX_evt_celtic_warriors
 	border = GFX_event_narrative_frame_war

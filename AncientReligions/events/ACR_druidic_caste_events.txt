@@ -157,6 +157,7 @@ character_event = {
 			any_courtier = {
 				trait = druid
 				is_adult = yes
+				is_ruler = no # Councillor landed vassals are courtier
 				OR = {
 					religion = celtic_pagan
 					religion = celtic_pagan_reformed

@@ -12,10 +12,11 @@ General:
 - Fixed convert_to_attacker_religion and convert_to_reformed decisions having no effect
 - Simplified convert_to_reformed effect using abandon_heresy = yes
 - Updated README and add DEV installation steps
+- Added dignity to all new heads of religion
 
 Celtic Paganism:
 - Added unique title frame and CoA patterns
-- Added College of cardinals for Druidic religion (fallbacks to open-elective w/o SoA) !
+- Added College of cardinals for Druidic religion (falls back to open-elective w/o SoA) !
 	- Added druidic suitability icon
 	- Tweaked the "Open Cardinals screen" button to be non-Christian
 	- Tweaked the selection of Arch-druid to ensure he holds a holy site, and favor reformer culture / culture group
@@ -23,11 +24,13 @@ Celtic Paganism:
 - Changed druidic to celtic_pagan and druidic_reformed to celtic_pagan_reformed for better mod compatibility
 - Cleaned up councilor allow clauses and made celtic_pagan properly feminist
 - Improved invite druid decision feedback with follow-up event where the druid actually presents himself and event options to nominate as Chancellor/Seer/Court druid, if applicable
-- Added basic gaulish culture (no flavor)
+- Added basic gaulish culture (no flavor), with a cultural building and retinue
 - Tweaked merc and holy orders composition/growth (sons of gwydion growth increased to 25%,  wolf tails composition tweaked, fianna levy size reduced)
 - Changed hold divination and give offerings to sidhe to be high priority
 - Changed vassalizing fianna to cost 500 prestige
 - Fixed auto-suggest court druid notification that kept firing
+- Druidic education events now work for both genders
+- Made it clear in events and in trait description that Druids cannot inherit.
 
 Hellenic Paganism:
 - Added unique title frame and CoA patterns
@@ -36,12 +39,14 @@ Hellenic Paganism:
   - Added titan 'Hold Thysia' decision 
   - Promethean pagans can no longer use, or are subject to, subjugation
   - Promethean pagans can no longer use county conquest
+  - Prometheans are pre-reformed and have a creatable head of religion, the Scholarch
 - Rebalanced the Roman Legion retinue to match vanilla sizes (250)
 - Fixed hellenic_county_liberation CB discrepancy (using CB on other rulers under same liege causes the CB to end inconclusively): CB cannot be used on same realm characters.
 - Fixed restore_roman_empire decision having no effect
 - Allowed "Studied the Classics" revival event chain to fire after year 1066 (with increased MTTH) and added religious sympathy trait.
 - Fixed mayor not becoming Roman when city restores Roman customs
 - Allowed Court Bard and Royal Champion for tribal rulers
+- Made it clear in events and in trait description that Vestals cannot inherit.
 
 Egyptian Paganism:
 - Added unique title frame and CoA patterns
@@ -49,6 +54,7 @@ Egyptian Paganism:
   - Can be retaken every 3 years for increased bonuses each time
   - Chances of bad outcomes, based on traits
 - Fixed typos in some Egyptian event flags
+- Atenism is pre-reformed.
 
 
 2015-01-31 v0.35.4 "Minor Fixes"

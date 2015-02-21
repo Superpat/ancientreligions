@@ -25,7 +25,7 @@ pontifex_restored;Pontificate Restored;;;;;;;;;;;;;x
 recreate_pontificate;Restore the Pontificate Maxima;;;;;;;;;;;;;x
 recreate_pontificate_desc;Restore the priesthood of the Hellenic faith and declare yourself the Pontifex Maximus!;;;;;;;;;;;;;x
 EVTNAMEancrel.2104;Return of the Pontificate Maxima;;;;;;;;;;;;;x
-EVTDESCancrel.2104;After an interlude lasting a few centuries following the Christianization, Hellenism has returned as the state religion of [From.PrimaryTitle.GetName] and [From.GetTitledFirstName] has ordered the reinstitution of the Collegium Pontificum.\n\nThe Pontificate Maxima will serve as the highest religious authority in the Hellenic world, with powers ranging from the blessing of future military expeditions to the nomination of Vestals and flamens.;;;;;;;;;;;;;x
+EVTDESCancrel.2104;After an interlude lasting a few centuries following the adoption of Christianity in Rome, Hellenism has returned as the state religion of [From.PrimaryTitle.GetName] and [From.GetTitledFirstName] has ordered the reinstitution of the Collegium Pontificum.\n\nThe Pontificate Maxima will serve as the highest religious authority in the Hellenic world, with powers ranging from the blessing of future military expeditions to the nomination of Vestals and flamens.;;;;;;;;;;;;;x
 EVTOPTAancrel.2104;Rejoice!;Réjouissons-nous !;Frohlocket!;;¡Regocijaos!;;;;;;;;;x
 EVTOPTBancrel.2104;Heathens!;Païens !;Ketzer!;;¡Paganos!;;;;;;;;;x
 ###### Roman revival;;;;;;;;;;;;;;x
@@ -53,7 +53,7 @@ EVTDESCancrel.2111;Without the Flaminica Martialis to assist you in your duties,
 EVTDESCancrel.2112;Without the Flaminica Quirinalis to assist you in your duties, the ancient religious laws require that you retire.;Sans la Flaminica Quirinalis pour vous assister  dans vos fonctions, la loi religieuse antique exige que vous démissionniez.;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 nominate_vestalis_decision;Nominate [Root.GetTitledFirstName] as Vestalis;Nommer [Root.GetTitledFirstName] en tant que Vestale;;;;;;;;;;;;x
-nominate_vestalis_decision_desc;Nominate [Root.GetFirstName] for 30 years of dedicated service to the goddess Vesta.;Nommer [Root.GetFirstName] pour 30 ans au service de Vesta.;;;;;;;;;;;;x
+nominate_vestalis_decision_desc;Nominate [Root.GetFirstName] for 30 years of dedicated service to the goddess Vesta. If accepted, she will abandon all claims at temporal power.;Nommer [Root.GetFirstName] pour 30 ans au service de Vesta.;;;;;;;;;;;;x
 opinion_nominated_vestalis;Nominated a Vestalis;A nommé une Vestale;;;;;;;;;;;;x
 EVTDESCancrel.2121;After 30 years of devoted service to Vesta the time has come for you to retire from public office.;Après 30 ans dévoués au service de Vesta, le moment est venu pour vous de vous retirer de votre fonction publique.;;;;;;;;;;;;x
 EVTDESCancrel.2124;One of your vassals has nominated a child for service to Vesta.;L'un de vos vassaux a nommé un enfant au service de Vesta;;;;;;;;;;;;x

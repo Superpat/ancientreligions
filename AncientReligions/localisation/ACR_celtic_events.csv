@@ -169,7 +169,7 @@ assign_druid_desc;you can't see this, its just to make Validator happy;;;;;;;;;;
 invite_druid_to_court;Invite Druid to Court;;;;;;;;;;;;;x
 invite_druid_to_court_desc;Invite a Druid to your court - this can only be done every two years;;;;;;;;;;;;;x
 druid;Druid;;;;;;;;;;;;;x
-druid_desc;The Druid's knowledge of the ancient Celtic ballads and of sacred traditions is great and their power among the Celts is without equal. They are responsible for organising worship and sacrifices, divination, and judicial procedure in Celtic society.;;;;;;;;;;;;;x
+druid_desc;The Druid's knowledge of the ancient Celtic ballads and of sacred traditions is great and their power among the Celts is without equal. They are responsible for organising worship and sacrifices, divination, and judicial procedure in Celtic society. In exchange for this knowledge and power, they give up all rights to inherit fuedal lands.;;;;;;;;;;;;;x
 bad_druid;Wizard;;;;;;;;;;;;;x
 bad_druid_desc;This druid has decided to use the ancient secrets of the druid for his own personal gain, his sacrilegious behavior is unfitting of a druid.;;;;;;;;;;;;;x
 EVTDESCancrel.0152;I have searched far and wide for a worthy Druid to serve at my court. He will organise worship and sacrifices, divination, and judicial procedure, encourage my warriors, and provide me counsel. At long last, one such man has arrived at my court, but I am not sure whether he is worthy... A ruler must choose his Druid wisely, after all.;;;;;;;;;;;;;x
@@ -204,10 +204,10 @@ EVTOPTBancrel.0183;The Gods are in need of [From.GetHerHim];;;;;;;;;;;;;x
 EVTNAMEancrel.0184;Coming of age;;;;;;;;;;;;;x
 EVTDESCancrel.0184;Today is the day I become an adult, it is time I meet my destiny;;;;;;;;;;;;;x
 EVTOPTAancrel.0184;Ask my father for advice;;;;;;;;;;;;;x
-path_of_the_warriors;Your child will undergo training with the warriors\n;;;;;;;;;;;;;x
-path_of_the_druids;Your child will undergo training with the druids\n;;;;;;;;;;;;;x
+path_of_the_warriors;Your child will undergo training with the warriors.\n;;;;;;;;;;;;;x
+path_of_the_druids;Your child will undergo training with the druids, giving up any inheritance.\n;;;;;;;;;;;;;x
 EVTNAMEancrel.0185;The Path of the Druids;;;;;;;;;;;;;x
-EVTDESCancrel.0185;An old man has arrived, dressed in the garbs of a druid, he is here to take your child with him to a sacred grove deep inside the forest.\nThere [From.GetSheHe] will be taught the secret arts of the druids, this training will take many years and novices have been known to come back changed, or worse... dead.;;;;;;;;;;;;;x
+EVTDESCancrel.0185;An old man has arrived, dressed in the garbs of a druid, he is here to take your child with him to a sacred grove deep inside the forest.\nThere [From.GetSheHe] will be taught the secret arts of the druids, this training will take many years and novices have been known to come back changed, or worse... dead. Either way, they are barred from inheriting lands.;;;;;;;;;;;;;x
 EVTOPTAancrel.0185;Be safe my child;;;;;;;;;;;;;x
 EVTDESCancrel.0187;Your child has expressed a peculiar wish, unsatisfied with the life of a warrior, [From.GetSheHe] wishes to learn the druidic arts and become closer to the gods. \nBut that way is strange and dangerous, not all survive it.;;;;;;;;;;;;;x
 EVTOPTAancrel.0187;I will not allow it!;;;;;;;;;;;;;x

@@ -4,29 +4,30 @@ General:
 - Pagan group religions now use random titles flags for all tiers
 - Added a paganify decision available on startup, before unpausing the game
 - Fixed adopt feudalism and republicanism decisions
-- Removed FRENCH, SPANISH and GERMAN used as localization for non-tranlated keys: the game now properly defaults to English when a key is not translated in another language and playing in that language. This allows to play with partially translated mod(s), yet being able to see something useful for the keys missing translations.
+- Removed FRENCH, SPANISH and GERMAN used as localization for non-translated keys: the game now properly defaults to English when a key is not translated in another language and playing in that language. This allows to play with partially translated mod(s), yet being able to see something useful for the keys missing translations.
 - Merged localization files to simplify maintenance and translations
 - Listed all event ranges in event_id.txt and fixed some event ID collisions
 - Fixed encoding of some files
 - Fixed ALL validation errors from non-vanilla files
 - Fixed convert_to_attacker_religion and convert_to_reformed decisions having no effect
 - Simplified convert_to_reformed effect using abandon_heresy = yes
-- Update README and add DEV installation steps
+- Updated README and add DEV installation steps
 
 Celtic Paganism:
 - Added unique title frame and CoA patterns
 - Added College of cardinals for Druidic religion (fallbacks to open-elective w/o SoA) !
 	- Added druidic suitability icon
-	- Tweaked the "Open Cradinals screen" button to be non-Christian
+	- Tweaked the "Open Cardinals screen" button to be non-Christian
 	- Tweaked the selection of Arch-druid to ensure he holds a holy site, and favor reformer culture / culture group
 	- Workaround vanilla bug of cardinal seat nominations not firing, thanks to the above usurpation
 - Changed druidic to celtic_pagan and druidic_reformed to celtic_pagan_reformed for better mod compatibility
 - Cleaned up councilor allow clauses and made celtic_pagan properly feminist
-- Improved invide druid decision feedback with follow-up event where the druid actually presents himself and event options to nominate as Chancellor/Seer/Court druid, if applicable
+- Improved invite druid decision feedback with follow-up event where the druid actually presents himself and event options to nominate as Chancellor/Seer/Court druid, if applicable
 - Added basic gaulish culture (no flavor)
 - Tweaked merc and holy orders composition/growth (sons of gwydion growth increased to 25%,  wolf tails composition tweaked, fianna levy size reduced)
 - Changed hold divination and give offerings to sidhe to be high priority
 - Changed vassalizing fianna to cost 500 prestige
+- Fixed auto-suggest court druid notification that kept firing
 
 Hellenic Paganism:
 - Added unique title frame and CoA patterns
@@ -36,16 +37,17 @@ Hellenic Paganism:
   - Promethean pagans can no longer use, or are subject to, subjugation
   - Promethean pagans can no longer use county conquest
 - Rebalanced the Roman Legion retinue to match vanilla sizes (250)
-- Fixed hellenic_county_liberation CB discrepency (using CB on other rulers under same liege causes the CB to end inconclusively): CB cannot be used on same realm chacaters.
+- Fixed hellenic_county_liberation CB discrepancy (using CB on other rulers under same liege causes the CB to end inconclusively): CB cannot be used on same realm characters.
 - Fixed restore_roman_empire decision having no effect
 - Allowed "Studied the Classics" revival event chain to fire after year 1066 (with increased MTTH)
+- Fixed mayor not becoming Roman when city restores Roman customs
 
 Egyptian Paganism:
 - Added unique title frame and CoA patterns
 - Added Sed festival decision and event chain, for Pharaoh's having ruled for 30 years:
   - Can be retaken every 3 years for increased bonuses each time
   - Chances of bad outcomes, based on traits
-- Fixed typos in some egyptian event flags
+- Fixed typos in some Egyptian event flags
 
 
 2015-01-31 v0.35.4 "Minor Fixes"

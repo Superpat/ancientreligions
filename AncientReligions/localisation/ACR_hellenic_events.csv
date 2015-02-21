@@ -28,7 +28,7 @@ EVTNAMEancrel.2104;Return of the Pontificate Maxima;;;;;;;;;;;;;x
 EVTDESCancrel.2104;After an interlude lasting a few centuries following the Christianization, Hellenism has returned as the state religion of [From.PrimaryTitle.GetName] and [From.GetTitledFirstName] has ordered the reinstitution of the Collegium Pontificum.\n\nThe Pontificate Maxima will serve as the highest religious authority in the Hellenic world, with powers ranging from the blessing of future military expeditions to the nomination of Vestals and flamens.;;;;;;;;;;;;;x
 EVTOPTAancrel.2104;Rejoice!;Réjouissons-nous !;Frohlocket!;;¡Regocijaos!;;;;;;;;;x
 EVTOPTBancrel.2104;Heathens!;Païens !;Ketzer!;;¡Paganos!;;;;;;;;;x
-###### Roman revival;;;;;;;;;;;;;;
+###### Roman revival;;;;;;;;;;;;;;x
 was_refused_roman_revival;Roman revival refused;S'est vu refusé la renaissance romaine;;;;;;;;;;;;x
 was_allowed_roman_revival;Roman revival allowed;S'est vu autorisé la renaissance romaine;;;;;;;;;;;;x
 refused_roman_revival;Refused Roman revival;A refusé la renaissance romaine;;;;;;;;;;;;x
@@ -44,7 +44,7 @@ EVTDESCancrel.2154;[From.GetTitledFirstName] has approved the petition of [From.
 EVTOPTAancrel.2154;Excelent, let's get started immediately!;Excellent, mettons nous au travail tout de suite !;;;;;;;;;;;;x
 EVTOPTBancrel.2154;Good for them, I guess...;C'est bon pour eux, je suppose...;;;;;;;;;;;;x
 EVTOPTCancrel.2154;Great news!;Excellente nouvelle !;;;;;;;;;;;;x
-EVTDESCancrel.2156;The burghers in [From.From.PrimaryTitle.GetName] has chosen to restore most customs practiced in old Roman times. With time, Roman culture may spread to the whole province.;Les citoyens de [From.From.PrimaryTitle.GetName] ont choisi de restaurer la plupart des coutumes pratiquées au temps de la Rome antique. Avec du temps, la culture romaine pourrait se propager à toute la province.;;;;;;;;;;;;x
+EVTDESCancrel.2156;The burghers in [From.From.PrimaryTitle.GetName] have chosen to restore most customs practiced in old Roman times. With time, Roman culture may spread to the whole province.;Les citoyens de [From.From.PrimaryTitle.GetName] ont choisi de restaurer la plupart des coutumes pratiquées au temps de la Rome antique. Avec du temps, la culture romaine pourrait se propager à toute la province.;;;;;;;;;;;;x
 EVTOPTAancrel.2156;Perhaps I should do the same;Peut être je devrais faire de même;;;;;;;;;;;;x
 EVTDESCancrel.2158;With the restoration of Roman customs in [From.PrimaryTitle.GetName] the populace in [From.Capital.GetName] have embraced Roman culture.;Suite a la restauration de la culture romaine à [From.PrimaryTitle.GetName], la population de [From.Capital.GetName] a adopté la culture romaine.;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x

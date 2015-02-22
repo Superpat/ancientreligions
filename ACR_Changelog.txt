@@ -1,4 +1,4 @@
-2015-02- v0.36 "?"
+2015-02- v0.36 "Third Firecracker"
 -------------------------
 General:
 - Pagan religions now use random flags for all title tiers

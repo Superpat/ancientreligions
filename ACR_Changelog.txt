@@ -34,6 +34,7 @@ Celtic Paganism:
 
 Hellenic Paganism:
 - Added unique title frame and CoA patterns
+- Hellenic pagans can not raid unless they are tribal.
 - Making Hellenism the state religion will now give you the nickname 'the Apostate'
 - Created decision to recreate the pontificate and pontifex_restored religion modifier
 - Created titan_pagan and promethean_pagan heresies

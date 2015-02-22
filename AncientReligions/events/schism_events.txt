@@ -15,7 +15,7 @@ namespace = ancrel
 # Patriarchate of Antioch
 character_event = {
 	id = LoR.200
-	desc = EVTDESCLoR.200
+	desc = EVTDESCLoR.200
 	picture = GFX_evt_bishop_byzantine
 	
 	ai = no
@@ -48,7 +48,7 @@ character_event = {
 
 character_event = {
 	id = ancrel.2200
-	desc = EVTDESCancrel.2200
+	desc = EVTDESCancrel.2200
 	picture = GFX_evt_bishop
 	
 	trigger = {
@@ -78,7 +78,7 @@ character_event = {
 # Patriarchate of Jerusalem
 character_event = {
 	id = LoR.201
-	desc = EVTDESCLoR.201
+	desc = EVTDESCLoR.201
 	picture = GFX_evt_bishop_byzantine
 	
 	ai = no
@@ -110,7 +110,7 @@ character_event = {
 }
 character_event = {
 	id = ancrel.2201
-	desc = EVTDESCancrel.2201
+	desc = EVTDESCancrel.2201
 	picture = GFX_evt_bishop
 	
 	trigger = {
@@ -139,7 +139,7 @@ character_event = {
 # Patriarchate of Alexandria
 character_event = {
 	id = LoR.202
-	desc = EVTDESCLoR.202
+	desc = EVTDESCLoR.202
 	picture = GFX_evt_bishop_byzantine
 	
 	ai = no
@@ -171,7 +171,7 @@ character_event = {
 }
 character_event = {
 	id = ancrel.2202
-	desc = EVTDESCancrel.2202
+	desc = EVTDESCancrel.2202
 	picture = GFX_evt_bishop
 	
 	trigger = {
@@ -201,7 +201,7 @@ character_event = {
 # Patriarchate of Rome
 character_event = {
 	id = LoR.203
-	desc = EVTDESCLoR.203
+	desc = EVTDESCLoR.203
 	picture = GFX_evt_bishop_byzantine
 	
 	ai = no
@@ -235,7 +235,7 @@ character_event = {
 # Patriarchate of Constantinople
 character_event = {
 	id = ancrel.2203
-	desc = EVTDESCancrel.2203
+	desc = EVTDESCancrel.2203
 	picture = GFX_evt_bishop
 	
 	trigger = {
@@ -268,7 +268,7 @@ character_event = {
 narrative_event = {
 	id = LoR.210
 	title = EVTNAMELoR.210
-	desc = EVTDESCLoR.210
+	desc = EVTDESCLoR.210
 	
 	picture = GFX_evt_icon
 	
@@ -318,7 +318,7 @@ narrative_event = {
 narrative_event = {
 	id = ancrel.2210
 	title = EVTNAMELoR.210
-	desc = EVTDESCancrel.2210
+	desc = EVTDESCancrel.2210
 	
 	picture = GFX_evt_pope
 	
@@ -352,7 +352,7 @@ narrative_event = {
 narrative_event = {
 	id = LoR.211
 	title = EVTNAMELoR.210
-	desc = EVTDESCLoR.210
+	desc = EVTDESCLoR.210
 	
 	picture = GFX_evt_icon
 	

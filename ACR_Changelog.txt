@@ -1,4 +1,25 @@
-2015-02- v0.36 "Third Firecracker"
+2015-02-27 v0.36.1 "Adonis"
+-------------------------
+General:
+- New cover image for Steam Workshop.
+- Tags added for Steam Workshop.
+- Pagan County Conquest can now target counties up to one sea zone away. Celts in Britain should have an easier time hoping the Irish Sea or the Channel.
+
+Celtic Paganism:
+- Children who are already Druids, or are training to become Druids, will not ask their parent to send them for Druid training.
+- The Sacred Dogs modifier should now work as intended.
+- The Sacred Lake tax bonus has been reduced from the insane 80% to the, likely intended, 8%.
+- Your daughter will no longer be referred to as a "madman" if she comes back from her Druid training insane.
+- Druidic (reformed celtic) can no longer be selected in Ruler Designer.
+
+Hellenic:
+- Epic Blood traits no longer selectable in Ruler Designer. Its not finished yet, stop asking!
+
+Promethean Paganism:
+- Prometheans can now hire women to any councilor position, just like the other <feminist = yes> religions, as intended.
+
+
+2015-02-21 v0.36.0 "Venus"
 -------------------------
 General:
 - Pagan religions now use random flags for all title tiers

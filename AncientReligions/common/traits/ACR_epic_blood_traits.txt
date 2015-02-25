@@ -3,6 +3,7 @@ descendant_of_aeneas = {
 	random = no
 	birth = 0
 	inherit_chance = 100
+	customizer = no
 	
 	same_religion_opinion = 5
 	same_opinion = 5
@@ -14,6 +15,7 @@ descendant_of_hector = {
 	random = no
 	birth = 0
 	inherit_chance = 100
+	customizer = no	
 	
 	same_religion_opinion = 5
 	same_opinion = 5
@@ -27,6 +29,7 @@ descendant_of_paris = {
 	random = no
 	birth = 0	
 	inherit_chance = 100
+	customizer = no
 	
 	same_religion_opinion = 5
 	same_opinion = 5
@@ -39,6 +42,7 @@ descendant_of_achilles = {
 	random = no
 	birth = 0
 	inherit_chance = 100
+	customizer = no
 	
 	same_religion_opinion = 5
 	same_opinion = 5
@@ -52,6 +56,7 @@ descendant_of_odysseus = {
 	random = no
 	birth = 0
 	inherit_chance = 100
+	customizer = no
 	
 	same_religion_opinion = 5
 	same_opinion = 5
@@ -63,6 +68,7 @@ descendant_of_nestor = {
 	random = no
 	birth = 0
 	inherit_chance = 100
+	customizer = no
 	
 	same_religion_opinion = 5
 	same_opinion = 5
@@ -77,6 +83,7 @@ aeneas_reborn = {
 	random = no
 	birth = 0
 	inherit_chance = 0
+	customizer = no
 	
 	same_religion_opinion = 15
 	monthly_character_prestige = 1
@@ -88,6 +95,7 @@ hector_reborn = {
 	random = no
 	birth = 0
 	inherit_chance = 0
+	customizer = no
 	
 	same_religion_opinion = 15
 	monthly_character_prestige = 1
@@ -101,6 +109,7 @@ paris_reborn = {
 	random = no
 	birth = 0	
 	inherit_chance = 0
+	customizer = no
 	
 	same_religion_opinion = 15
 	monthly_character_prestige = 1
@@ -113,6 +122,7 @@ achilles_reborn = {
 	random = no
 	birth = 0
 	inherit_chance = 0
+	customizer = no
 	
 	same_religion_opinion = 15
 	monthly_character_prestige = 1
@@ -126,6 +136,7 @@ odysseus_reborn = {
 	random = no
 	birth = 0
 	inherit_chance = 0
+	customizer = no
 	
 	same_religion_opinion = 15
 	monthly_character_prestige = 1
@@ -137,6 +148,7 @@ nestor_reborn = {
 	random = no
 	birth = 0
 	inherit_chance = 0
+	customizer = no
 	
 	same_religion_opinion = 15
 	monthly_character_prestige = 1

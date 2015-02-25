@@ -4,6 +4,8 @@ General:
 - New cover image for Steam Workshop.
 - Tags added for Steam Workshop.
 - Pagan County Conquest can now target counties up to one sea zone away. Celts in Britain should have an easier time hoping the Irish Sea or the Channel.
+- Added missing OR in the paganify event that meant that those cultures who should have gone Tengri, didn't.
+- Added localization for the new CoA types, so they don't show as coa_plain_celtic, etc., in the Ruler Designer.
 
 Celtic Paganism:
 - Children who are already Druids, or are training to become Druids, will not ask their parent to send them for Druid training.

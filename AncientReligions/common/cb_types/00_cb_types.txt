@@ -8446,11 +8446,6 @@ pagan_county_conquest = {
 						}
 						AND = {
 							is_land = no
-							OR = {
-								year = 1100
-								ROOT = { religion_group = muslim }
-								FROM = { religion_group = muslim }
-							}
 							any_neighbor_province = {
 								AND = {
 									has_owner = yes

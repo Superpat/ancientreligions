@@ -675,7 +675,8 @@ character_event = {
 	hide_window = yes
 	
 	ai = yes
-    age = 16
+    min_age = 16
+    max_age = 25
 	capable_only = yes
 	prisoner = no
 	
@@ -683,7 +684,6 @@ character_event = {
 		has_dlc = "The Old Gods"
 		is_landed = no
 		in_command = no
-		NOT = { age = 26 } # must not be 25
 		OR = {
 			religion = celtic_pagan
 			religion = celtic_pagan_reformed
@@ -694,6 +694,9 @@ character_event = {
 				trait = imbecile
 				trait = slow
 				trait = craven
+				trait = learning_druidic_arts #don't ask to be a druid if you already are one
+				trait = druid
+				trait = bad_druid
 			}
 			has_character_flag = wants_druidic_training
 		}
@@ -723,7 +726,7 @@ character_event = {
 			trait = content
 		}
 		modifier = {
-			factor = 0.5
+			factor = 1.5
 			trait = brave
 		}
 		modifier = {
@@ -735,7 +738,7 @@ character_event = {
 			trait = genius
 		}
 		modifier = {
-			factor = 1.5
+			factor = 0.5
 			trait = craven
 		}
 		modifier = {

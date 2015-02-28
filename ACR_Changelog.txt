@@ -1,4 +1,31 @@
-2015-02- v0.36 "?"
+2015-02-27 v0.36.1 "Adonis"
+-------------------------
+General:
+- New cover image for Steam Workshop.
+- Tags added for Steam Workshop.
+- Pagan County Conquest can now target counties up to one sea zone away. Celts in Britain should have an easier time hoping the Irish Sea or the Channel.
+- Added missing OR in the paganify event that meant that those cultures who should have gone Tengri, didn't.
+- Added localization for the new CoA types, so they don't show as coa_plain_celtic, etc., in the Ruler Designer.
+- Updated the Gone Pagan decision(s) to the latest version available from CK2+.
+-- Characters that convert via the Gone Pagan decisions will gain the Zealous trait, which should make it less likely for them to instantly convert when faced with a Holy War.
+
+Celtic Paganism:
+- Children who are already Druids, or are training to become Druids, will not ask their parent to send them for Druid training.
+- The Sacred Dogs modifier should now work as intended, giving a garrison growth bonus.
+- The Sacred Lake tax bonus has been reduced from the insane 80% to the, likely intended, 8%.
+- Your daughter will no longer be referred to as a "madman" if she comes back from her Druid training insane.
+- Druidic (reformed celtic) can no longer be selected in Ruler Designer.
+- Added missing gfx for wolf trait.
+- Fixed localization for the Sons of Gwydion formation event ("restless sons of Emperor." -> "restless sons of the Empire.")
+
+Hellenic:
+- Epic Blood traits no longer selectable in Ruler Designer. Its not finished yet, stop asking!
+
+Promethean Paganism:
+- Prometheans can now hire women to any councilor position, just like the other <feminist = yes> religions, as intended.
+
+
+2015-02-21 v0.36.0 "Venus"
 -------------------------
 General:
 - Pagan religions now use random flags for all title tiers
@@ -17,10 +44,10 @@ General:
 Celtic Paganism:
 - Added unique title frame and CoA patterns
 - Added College of cardinals for Druidic religion (falls back to open-elective w/o SoA) !
-	- Added druidic suitability icon
-	- Tweaked the "Open Cardinals screen" button to be non-Christian
-	- Tweaked the selection of Arch-druid to ensure he holds a holy site, and favor reformer culture / culture group
-	- Workaround vanilla bug of cardinal seat nominations not firing, thanks to the above usurpation
+-- Added druidic suitability icon
+-- Tweaked the "Open Cardinals screen" button to be non-Christian
+-- Tweaked the selection of Arch-druid to ensure he holds a holy site, and favor reformer culture / culture group
+-- Workaround vanilla bug of cardinal seat nominations not firing, thanks to the above usurpation
 - Changed druidic to celtic_pagan and druidic_reformed to celtic_pagan_reformed for better mod compatibility
 - Cleaned up councilor allow clauses and made celtic_pagan properly feminist
 - Improved invite druid decision feedback with follow-up event where the druid actually presents himself and event options to nominate as Chancellor/Seer/Court druid, if applicable
@@ -34,14 +61,15 @@ Celtic Paganism:
 
 Hellenic Paganism:
 - Added unique title frame and CoA patterns
+- Hellenic pagans can not raid unless they are tribal.
 - Making Hellenism the state religion will now give you the nickname 'the Apostate'
 - Created decision to recreate the pontificate and pontifex_restored religion modifier
 - Created titan_pagan and promethean_pagan heresies
-  - Added titan 'Hold Thysia' decision 
-  - Titan Cultists are barbaric, it is an unreformed faith that cannot reform, and has many simalarities to other such religions
-  - Promethean pagans can no longer use, or are subject to, subjugation
-  - Promethean pagans can no longer use county conquest
-  - Prometheans are pre-reformed and have a creatable head of religion, the Scholarch of the First Academy
+-- Added titan 'Hold Thysia' decision 
+-- Titan Cultists are barbaric, it is an unreformed faith that cannot reform, and has many simalarities to other such religions
+-- Promethean pagans can no longer use, or are subject to, subjugation
+-- Promethean pagans can no longer use county conquest
+-- Prometheans are pre-reformed and have a creatable head of religion, the Scholarch of the First Academy
 - Rebalanced the Roman Legion retinue to match vanilla sizes (250)
 - Fixed hellenic_county_liberation CB discrepancy (using CB on other rulers under same liege causes the CB to end inconclusively): CB cannot be used on same realm characters.
 - Fixed restore_roman_empire decision having no effect
@@ -51,16 +79,16 @@ Hellenic Paganism:
 - Made it clear in events and in trait description that Vestals cannot inherit
 - Fixed a typo that allowed you to emulate multiple heroes
 - Opened up the conversion event a little more to make it more likely
-  - No maximum age requirement.
-  - No longer requires Christian group, and pagans more likely to convert if moral authority low.
-  - Based chance of courtier converting changed to 15%.
-  - Christians and Muslims far more likely to convert than jews or indians.
+-- No maximum age requirement.
+-- No longer requires Christian group, and pagans more likely to convert if moral authority low.
+-- Based chance of courtier converting changed to 15%.
+-- Christians and Muslims far more likely to convert than jews or indians.
 
 Egyptian Paganism:
 - Added unique title frame and CoA patterns
 - Added Sed festival decision and event chain, for Pharaoh's having ruled for 30 years:
-  - Can be retaken every 3 years for increased bonuses each time
-  - Chances of bad outcomes, based on traits
+-- Can be retaken every 3 years for increased bonuses each time
+-- Chances of bad outcomes, based on traits
 - Fixed typos in some Egyptian event flags
 - Atenism is pre-reformed.
 

@@ -209,7 +209,7 @@ sacred_stag = {
 }
 sacred_dog = {
 	disease_defence = 0.04
-	garrison_growth = 0.05
+	regiment_reinforcement_speed = 0.05
 	icon = 11
 }
 sacred_oak = {
@@ -223,7 +223,7 @@ sacred_standing_stones = {
 }
 sacred_lake = {
 	tech_growth_modifier_military = 0.05
-	local_tax_modifier = 0.8
+	local_tax_modifier = 0.08
 	icon = 11
 }
 sacred_source = {

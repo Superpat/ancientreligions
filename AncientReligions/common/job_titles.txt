@@ -28,6 +28,7 @@ job_chancellor = {
 							religion = cathar
 							religion = celtic_pagan
 							religion = celtic_pagan_reformed
+							religion = promethean_pagan
 						}
 						religion = ROOT
 					}
@@ -94,6 +95,7 @@ job_marshal = {
 							religion = cathar
 							religion = celtic_pagan
 							religion = celtic_pagan_reformed
+							religion = promethean_pagan
 						}
 						religion = ROOT
 					}
@@ -146,6 +148,7 @@ job_treasurer = {
 							religion = cathar
 							religion = celtic_pagan
 							religion = celtic_pagan_reformed
+							religion = promethean_pagan
 						}
 						religion = ROOT
 					}

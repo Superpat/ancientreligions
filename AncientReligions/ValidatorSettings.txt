@@ -8,7 +8,7 @@
 ###########################################
 
 # Generates files containing flag and variable analysis.
-#AddFlag = TraceFlags
+AddFlag = TraceFlags
 
 # Turn this on to spit out errors when you use something that is valid, but causes bugginess in one
 # of the patches. Note that if you turn this on, the error messages will not look any different from

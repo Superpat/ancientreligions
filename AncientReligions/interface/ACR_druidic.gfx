@@ -57,6 +57,15 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
+		name = "GFX_trait_wolf"
+		texturefile = "gfx/traits/ACR/wolf.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	#### 13 treasures traits
+	spriteType = {
 		name = "GFX_trait_treasure_cauldron"
 		texturefile = "gfx/traits/ACR/treasure_cauldron.dds"
 		noOfFrames = 1

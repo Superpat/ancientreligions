@@ -18,7 +18,7 @@ namespace = ancrel
 narrative_event = {
 	id = LoR.1
 	title = EVTNAMELoR.1
-	desc = EVTDESCLoR.1
+	desc = EVTDESCLoR.1
 	
 	picture = GFX_evt_victory_arch_byzantine
 	
@@ -62,7 +62,7 @@ narrative_event = {
 narrative_event = {
 	id = LoR.2
 	title = EVTNAMELoR.2
-	desc = EVTDESCLoR.2
+	desc = EVTDESCLoR.2
 	
 	picture = GFX_evt_victory_arch_byzantine
 	
@@ -138,7 +138,7 @@ narrative_event = {
 narrative_event = {
 	id = LoR.4
 	title = EVTNAMELoR.4
-	desc = EVTDESCLoR.4
+	desc = EVTDESCLoR.4
 	
 	picture = GFX_evt_victory_arch_byzantine
 	
@@ -175,7 +175,7 @@ narrative_event = {
 narrative_event = {
 	id = LoR.5
 	title = EVTNAMELoR.5
-	desc = EVTDESCLoR.5
+	desc = EVTDESCLoR.5
 	
 	picture = GFX_evt_victory_arch_byzantine
 	
@@ -217,7 +217,7 @@ narrative_event = {
 narrative_event = {
 	id = LoR.6
 	title = EVTNAMELoR.6
-	desc = EVTDESCLoR.6
+	desc = EVTDESCLoR.6
 	
 	picture = GFX_evt_victory_arch_byzantine
 	
@@ -380,7 +380,7 @@ narrative_event = {
 narrative_event = {
 	id = LoR.7
 	title = EVTNAMELoR.7
-	desc = EVTDESCLoR.7
+	desc = EVTDESCLoR.7
 	
 	picture = GFX_evt_victory_arch_byzantine
 	
@@ -430,7 +430,7 @@ narrative_event = {
 narrative_event = {
 	id = LoR.8
 	title = EVTNAMELoR.8
-	desc = EVTDESCLoR.8
+	desc = EVTDESCLoR.8
 	
 	picture = GFX_evt_victory_arch_byzantine
 	
@@ -480,7 +480,7 @@ narrative_event = {
 narrative_event = {
 	id = LoR.9
 	title = EVTNAMELoR.9
-	desc = EVTDESCLoR.9
+	desc = EVTDESCLoR.9
 	
 	picture = GFX_evt_victory_arch_byzantine
 	
@@ -526,7 +526,7 @@ narrative_event = {
 narrative_event = {
 	id = LoR.10
 	title = EVTNAMELoR.10
-	desc = EVTDESCLoR.10
+	desc = EVTDESCLoR.10
 	
 	picture = GFX_evt_victory_arch_byzantine
 	
@@ -578,7 +578,7 @@ narrative_event = {
 narrative_event = {
 	id = LoR.11
 	title = EVTNAMELoR.11
-	desc = EVTDESCLoR.11
+	desc = EVTDESCLoR.11
 	
 	picture = GFX_evt_victory_arch_byzantine
 	
@@ -615,7 +615,7 @@ narrative_event = {
 narrative_event = {
 	id = LoR.12
 	title = EVTNAMELoR.12
-	desc = EVTDESCLoR.12
+	desc = EVTDESCLoR.12
 	
 	picture = GFX_evt_victory_arch_byzantine
 	
@@ -653,7 +653,7 @@ narrative_event = {
 narrative_event = {
 	id = LoR.13
 	title = EVTNAMELoR.13
-	desc = EVTDESCLoR.13
+	desc = EVTDESCLoR.13
 	
 	picture = GFX_evt_victory_arch_byzantine
 	
@@ -692,7 +692,7 @@ narrative_event = {
 narrative_event = {
 	id = LoR.14
 	title = EVTNAMELoR.14
-	desc = EVTDESCLoR.14
+	desc = EVTDESCLoR.14
 	
 	picture = GFX_evt_victory_arch_byzantine
 	
@@ -732,7 +732,7 @@ narrative_event = {
 # Triumph Expected
 character_event = {
 	id = LoR.30
-	desc = EVTDESCLoR.30
+	desc = EVTDESCLoR.30
 	picture = GFX_evt_victory_arch_byzantine
 	
 	hide_from = yes
@@ -778,7 +778,7 @@ character_event = {
 # Triumph Held
 character_event = {
 	id = LoR.31
-	desc = EVTDESCLoR.31
+	desc = EVTDESCLoR.31
 	picture = GFX_evt_victory_arch_byzantine
 	
 	hide_from = yes
@@ -809,7 +809,7 @@ character_event = {
 # Triumph Held Vassals
 character_event = {
 	id = LoR.32
-	desc = EVTDESCLoR.32
+	desc = EVTDESCLoR.32
 	picture = GFX_evt_victory_arch_byzantine
 	
 	is_triggered_only = yes
@@ -825,7 +825,7 @@ character_event = {
 narrative_event = {
 	id = LoR.40
 	title = EVTNAMELoR.40
-	desc = EVTDESCLoR.40
+	desc = EVTDESCLoR.40
 	
 	picture = GFX_evt_rome_restored_byzantine
 	
@@ -1030,7 +1030,7 @@ narrative_event = {
 # Augustus Trait Gained
 character_event = {
 	id = LoR.45
-	desc = EVTDESCLoR.45
+	desc = EVTDESCLoR.45
 	picture = GFX_evt_rome_restored_byzantine
 	
 	trigger = {
@@ -1053,7 +1053,7 @@ character_event = {
 # Augustus Trait Lost
 character_event = {
 	id = LoR.46
-	desc = EVTDESCLoR.46
+	desc = EVTDESCLoR.46
 	picture = GFX_evt_rome_restored_byzantine
 	
 	trigger = {

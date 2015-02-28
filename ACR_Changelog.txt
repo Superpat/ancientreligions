@@ -13,6 +13,7 @@ Celtic Paganism:
 - The Sacred Lake tax bonus has been reduced from the insane 80% to the, likely intended, 8%.
 - Your daughter will no longer be referred to as a "madman" if she comes back from her Druid training insane.
 - Druidic (reformed celtic) can no longer be selected in Ruler Designer.
+- Added missing gfx for wolf trait
 
 Hellenic:
 - Epic Blood traits no longer selectable in Ruler Designer. Its not finished yet, stop asking!

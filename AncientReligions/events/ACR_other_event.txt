@@ -1,7 +1,7 @@
 namespace = ancrel
 namespace = GoPagan
 
-#reserved: GoPagan.100 to Plus.199
+#reserved: GoPagan.100 to GoPagan.199
 
 #######################################
 # REVERSION TO PAGAN RELIGIONS
@@ -27,6 +27,7 @@ character_event = {
 			remove_trait = cynical
 		}
 		piety = -200
+		add_trait = zealous
 	}
 	option = { # Maybe Not
 		name = "EVTOPTZ_GoPagan_100"
@@ -62,6 +63,7 @@ character_event = {
 			remove_trait = cynical
 		}
 		piety = -200
+		add_trait = zealous		
 	}
 	option = {
 		name = "EVTOPTD_GoPagan_100"
@@ -80,6 +82,7 @@ character_event = {
 			remove_trait = cynical
 		}
 		piety = -200
+		add_trait = zealous		
 	}
 	option = {
 		name = "EVTOPTE_GoPagan_100"
@@ -96,6 +99,7 @@ character_event = {
 			remove_trait = cynical
 		}
 		piety = -200
+		add_trait = zealous
 	}
 	option = { # Maybe Not
 		name = "EVTOPTZ_GoPagan_100"
@@ -130,6 +134,7 @@ character_event = {
 			remove_trait = cynical
 		}
 		piety = -200
+		add_trait = zealous
 	}
 	option = {
 		name = "EVTOPTC_GoPagan_100"
@@ -144,6 +149,7 @@ character_event = {
 			remove_trait = cynical
 		}
 		piety = -200
+		add_trait = zealous
 	}
 	option = { # Maybe Not
 		name = "EVTOPTZ_GoPagan_100"
@@ -169,6 +175,7 @@ character_event = {
 			remove_trait = cynical
 		}
 		piety = -200
+		add_trait = zealous
 	}
 	option = { # Maybe Not
 		name = "EVTOPTZ_GoPagan_100"
@@ -194,6 +201,7 @@ character_event = {
 			remove_trait = cynical
 		}
 		piety = -200
+		add_trait = zealous
 	}
 	option = { # Maybe Not
 		name = "EVTOPTZ_GoPagan_100"
@@ -222,19 +230,7 @@ character_event = {
 			remove_trait = cynical
 		}
 		piety = -200
-	}
-	option = {
-		name = "EVTOPTC_GoPagan_100"
-		ai_chance = { factor = 10 }
-		trigger = {
-			culture_group = east_african
-		}
-		religion = pagan
-		if = {
-			limit = { trait = cynical }
-			remove_trait = cynical
-		}
-		piety = -200
+		add_trait = zealous
 	}
 	option = { # Maybe Not
 		name = "EVTOPTZ_GoPagan_100"
@@ -260,6 +256,7 @@ character_event = {
 			remove_trait = cynical
 		}
 		piety = -200
+		add_trait = zealous
 	}
 	option = { # Maybe Not
 		name = "EVTOPTZ_GoPagan_100"
@@ -284,6 +281,7 @@ character_event = {
 			limit = { trait = cynical }
 			remove_trait = cynical
 		}
+		add_trait = zealous
 	}
 	option = { # Maybe Not
 		name = "EVTOPTZ_GoPagan_100"
@@ -320,6 +318,7 @@ character_event = {
 			remove_trait = cynical
 		}
 		piety = -200
+		add_trait = zealous
 	}
 	option = { # Maybe Not
 		name = "EVTOPTZ_GoPagan_100"
@@ -507,6 +506,13 @@ character_event = {
 }
 
 
+##############################################
+#
+# Ancient Religions Reborn
+# - Lets. Get. PAGAN! Events
+#
+# Event Ids: ancrel.9001 - 9100 reserved
+##############################################
 
 # Ask the player if they want to "paganify" the world
 character_event = {

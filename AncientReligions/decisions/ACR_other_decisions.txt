@@ -20,7 +20,6 @@ decisions = {
 						religion_authority = 0.25
 						NOT = {
 							religion = shiite
-							religion = bektashi
 							religion = druze
 							religion = hurufi
 						}
@@ -107,7 +106,6 @@ decisions = {
 						religion_authority = 0.25
 						NOT = {
 							religion = shiite
-							religion = bektashi
 							religion = druze
 							religion = hurufi
 						}
@@ -140,14 +138,8 @@ decisions = {
 					OR = {
 						culture_group = north_germanic
 						culture_group = west_germanic
-						culture = norman
-					}
-				}
-				AND = {
-					religion = german_pagan_reformed
-					OR = {
-						culture_group = west_germanic
 						culture_group = central_germanic
+						culture = norman
 					}
 				}
 			}
@@ -179,16 +171,8 @@ decisions = {
 											OR = {
 												culture_group = north_germanic
 												culture_group = west_germanic
-												culture = norman
-											}
-										}
-									}
-									AND = {
-										religion = german_pagan
-										ROOT = {
-											OR = {
-												culture_group = west_germanic
 												culture_group = central_germanic
+												culture = norman
 											}
 										}
 									}
@@ -246,7 +230,6 @@ decisions = {
 						religion_authority = 0.25
 						NOT = {
 							religion = shiite
-							religion = bektashi
 							religion = druze
 							religion = hurufi
 						}
@@ -356,7 +339,6 @@ decisions = {
 						religion_authority = 0.25
 						NOT = {
 							religion = shiite
-							religion = bektashi
 							religion = druze
 							religion = hurufi
 						}
@@ -449,7 +431,6 @@ decisions = {
 						religion_authority = 0.25
 						NOT = {
 							religion = shiite
-							religion = bektashi
 							religion = druze
 							religion = hurufi
 						}
@@ -531,7 +512,6 @@ decisions = {
 						religion_authority = 0.25
 						NOT = {
 							religion = shiite
-							religion = bektashi
 							religion = druze
 							religion = hurufi
 						}
@@ -625,7 +605,6 @@ decisions = {
 						religion_authority = 0.25
 						NOT = {
 							religion = shiite
-							religion = bektashi
 							religion = druze
 							religion = hurufi
 						}
@@ -704,7 +683,6 @@ decisions = {
 						religion_authority = 0.25
 						NOT = {
 							religion = shiite
-							religion = bektashi
 							religion = druze
 							religion = hurufi
 						}
@@ -790,7 +768,6 @@ decisions = {
 						religion_authority = 0.25
 						NOT = {
 							religion = shiite
-							religion = bektashi
 							religion = druze
 							religion = hurufi
 						}

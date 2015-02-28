@@ -90,7 +90,7 @@ character_event = {
 				culture_group = west_germanic
 			}
 		}
-		religion = german_pagan
+		religion = norse_pagan
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical

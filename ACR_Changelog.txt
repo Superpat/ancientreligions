@@ -17,6 +17,9 @@ Celtic Paganism:
 - Druidic (reformed celtic) can no longer be selected in Ruler Designer.
 - Added missing gfx for wolf trait.
 - Fixed localization for the Sons of Gwydion formation event ("restless sons of Emperor." -> "restless sons of the Empire.")
+- Fixed bug in "Child returns from druidic training with a strange child" event that made the ruler the parent of the strange child, instead of the returning druid.
+- Fixed some localization that was gender specific. These will continue to crop up as we find them.
+- The temple of Mellifont (Dublin holy site) should exist in all starts now.
 
 Hellenic:
 - Epic Blood traits no longer selectable in Ruler Designer. Its not finished yet, stop asking!

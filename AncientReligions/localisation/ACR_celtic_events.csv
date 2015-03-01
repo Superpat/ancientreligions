@@ -222,11 +222,11 @@ EVTDESCancrel.0193;[From.GetTitledFirstName] is back from the druidic groves, th
 EVTOPTAancrel.0193;I wish to hear of these new stories!;;;;;;;;;;;;;x
 EVTDESCancrel.0195;« My lord!, says own of your guards, a mad[From.GetManWoman] is dancing on the roof of the stables, we tried to get him down, but he just screams gibberish at us!» \n You follow your guards to the courtyard and soon understand that the madman is in fact,[From.GetTitledFirstName], struck mad by the gods.;;;;;;;;;;;;;x
 EVTOPTAancrel.0195;We shall share this burden my child;;;;;;;;;;;;;x
-EVTDESCancrel.0197;[From.GetTitledFirstName] has returned from the groves of the druids, but with a strange burden, a newborn child. While he refuses to talk of the mother, the child wild eyes bode strange wisdom.;;;;;;;;;;;;;x
+EVTDESCancrel.0197;[From.GetTitledFirstName] has returned from the groves of the druids, but with a strange burden, a newborn child. While [From.GetSheHe] refuses to talk of the lover that gave [From.GetHerHim] the child, the child's wild eyes bode strange wisdom.;;;;;;;;;;;;;x
 EVTOPTAancrel.0197;I will love him as my own.;;;;;;;;;;;;;x
-EVTDESCancrel.0199;Knowing of [From.GetTitledFirstName] impending return, you have prepared the most magnificent chambers for him. But, ever since his return, he has been spending his nights and days in the castle grove, delving more and more into the druidic lore, stopping only to speak of the wonders of the gods.;;;;;;;;;;;;;x
+EVTDESCancrel.0199;Knowing of [From.GetTitledFirstName]'s impending return, you have prepared the most magnificent chambers for [From.GetHerHim]. But, ever since their return, [From.GetSheHe] has been spending [From.GetHerHis] nights and days in the castle grove, delving more and more into the druidic lore, stopping only to speak of the wonders of the gods.;;;;;;;;;;;;;x
 EVTOPTAancrel.0199;But what about the pleasures of life?;;;;;;;;;;;;;x
-EVTDESCancrel.0201;The secrets of the druids are many and earthly problems lose of their potency when confronted to those of the otherworld, thus [From.GetTitledFirstName] has returned changed from his training with the druids, he seems much more at peace and patient.;;;;;;;;;;;;;x
+EVTDESCancrel.0201;The secrets of the druids are many and earthly problems lose of their potency when confronted to those of the otherworld, thus [From.GetTitledFirstName] has returned changed from their training with the druids, seemingly much more at peace and patient.;;;;;;;;;;;;;x
 EVTOPTAancrel.0201;Ok;;;;;;;;;;;;;x
 EVTDESCancrel.0203;Child dies in training;;;;;;;;;;;;;x
 EVTOPTAancrel.0203;Ok;;;;;;;;;;;;;x

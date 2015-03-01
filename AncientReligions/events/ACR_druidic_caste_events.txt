@@ -1099,7 +1099,7 @@ character_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 180
+		months = 1200
 		
 		modifier = {
 			factor = 0.75
@@ -1138,19 +1138,19 @@ character_event = {
 		new_character = {
 			if = {
 				limit = {
-					PREV = {
+					FROM = {
 						is_female = yes
 					}
 				}
-				set_mother = PREV
+				set_mother = FROM
 			}
 			if = {
 				limit = {
-					PREV = {
+					FROM = {
 						is_female = no
 					}
 				}
-				set_father = PREV
+				set_father = FROM
 			}
 			set_character_flag = changeling_child
 		}

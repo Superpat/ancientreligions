@@ -26,10 +26,7 @@ title_court_druid = {
 			religion = celtic_pagan_reformed
 		}
 		FROM = {
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+			is_ruler = yes
 			OR = {
 				religion = celtic_pagan
 				religion = celtic_pagan_reformed
@@ -110,18 +107,17 @@ title_court_bard = {
 	is_unique = yes
 	
 	allow = {
+		is_ruler = no
 		is_adult = yes
+		trait = poet
 		FROM = {
-			OR = {
-				is_feudal = yes
-				is_tribal = yes
-			}
+			is_ruler = yes
 			OR = {
 				religion = celtic_pagan
 				religion = celtic_pagan_reformed
 			}
 		}
-		trait = poet
+
 	}
 
 	gain_effect = {

@@ -1,3 +1,11 @@
+2015-3-10 v0.36.2 "Anchises"
+-------------------------
+Celtic Paganism:
+- Wolf, Learning Druidic Arts, and Fennid traits have had their fertility moddifiers reduced by a factor of 100.
+- Court Druid and Bard minor titles no longer restricted by government type. Any ruler (that matches other requirements) can hire them.
+- Court Bards can no longer be landed. If they are busy administering their own land, how can they have time being your bard all day?
+
+
 2015-02-27 v0.36.1 "Adonis"
 -------------------------
 General:

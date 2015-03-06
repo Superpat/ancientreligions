@@ -513,11 +513,12 @@ province_event = {
 		}
 		NOT = {
 			has_province_modifier = sidhe_angry
+			has_character_modifier = side_offerings_good
 		}
 	}
 	
 	mean_time_to_happen = {
-		months = 260
+		months = 360
 		modifier = {
 			factor = 0.8
 			owner = {
@@ -614,12 +615,6 @@ province_event = {
 			factor = 1.2
 			owner = {
 				trait = head1
-			}
-		}
-		modifier = {
-			factor = 1.8
-			owner = {
-				has_character_modifier = sidhe_offerings_good 
 			}
 		}
 		modifier = {
@@ -1063,7 +1058,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 260
+		months = 120
 		modifier = {
 			factor = 1.5
 			owner = {

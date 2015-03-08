@@ -510,11 +510,9 @@ province_event = {
 				religion = celtic_pagan
 				religion = celtic_pagan_reformed			
 			}
+			NOT = { has_character_modifier = sidhe_offerings_good }
 		}
-		NOT = {
-			has_province_modifier = sidhe_angry
-			has_character_modifier = side_offerings_good
-		}
+		NOT = { has_province_modifier = sidhe_angry }
 	}
 	
 	mean_time_to_happen = {

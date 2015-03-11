@@ -58,7 +58,8 @@
 ###################################
 #
 # Misc ancient religion events
-# Event ID ancrel.9900 - ancrel.9999 is reserved
+# Event ID ancrel.9000 - ancrel.9999 is reserved
+# GonePagan.1 - GonePagan.199 Gone Pagan events, from CK2+
 # ancrel.9001 - ancrel.9009 Paganify Customization Option
 #
 ###################################

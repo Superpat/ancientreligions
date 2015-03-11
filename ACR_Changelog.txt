@@ -1,3 +1,16 @@
+2015-3-10 v0.36.2 "Anchises"
+-------------------------
+Celtic Paganism:
+- Wolf, Learning Druidic Arts, and Fennid traits have had their fertility moddifiers reduced by a factor of 100.
+- Court Druid and Bard minor titles no longer restricted by government type. Any ruler (that matches other requirements) can hire them.
+- Court Bards can no longer be landed. If they are busy administering their own land, how can they have time being your bard all day?
+- Restless Sidhe is about 40% less likely to occur, and if you've had a good sacrifice to the Sidhe recently it won't happen.
+-- Also descreased the mtth for the "sidhe are calmed" event, which requires you have at least a neutral response to your sacrifice. Should be far less annoying for those of you with a demense larger than 4 now ;)
+- Fixed localization problems in the Sidhe events that mistakenly referenced the religion of the province, instead of the ruler. This meant that a Celtic Pagan may occassinonaly say "May the Blessed Virgin protect us!".
+- Adjusted the Potential on Invite Court Druid and Organize Fianna so it stops cluttering up your menu when its irrelevant. You now must either be a Irish cultured or personally hold land in Ireland to see it (in addition to being Celtic Pagan or Druidic).
+- Fixed bug that made nearly every child of a Celtic Pagan player reincarnated.
+- More small localization fixes.
+
 2015-02-27 v0.36.1 "Adonis"
 -------------------------
 General:

@@ -671,8 +671,8 @@ EVTDESCancrel.1320;You've decided you wish to join the Red Dragon Knights. But d
 EVTOPTAancrel.1320;Yes!;;;;;;;;;;;;;x
 EVTOPTBancrel.1320;This seems like a bad idea...;;;;;;;;;;;;;x
 EVTDESCancrel.1321;Your [GetFromRelation], [From.GetTitledFirstName], has decided to join with the Red Dragon Knights and seek his fortune at their side! Although [From.GetSheHe] will no doubt gain both riches and valuable battle experience in service of the druids, there will be many perils that could well cost [From.GetHerHim] [From.GetHerHis] life.;;;;;;;;;;;;;x
-EVTOPTAancrel.1321;I will not allow it!;Je ne permettrai pas !;Das werde ich nicht erlauben!;;¡No lo permitiré!;;;;;;;;;x
-EVTOPTBancrel.1321;Go to the Dragons and make me proud, [GetFromRelation].;;;;;;;;;;;;;x
+EVTOPTAancrel.1321;Go to the Dragons and make me proud, [GetFromRelation].;;;;;;;;;;;;;x
+EVTOPTBancrel.1321;I will not allow it!;Je ne permettrai pas !;Das werde ich nicht erlauben!;;¡No lo permitiré!;;;;;;;;;x
 EVTTOOLTIPancrel.1322;[From.GetFirstName] joins The Red Dragon Knights.;;;;;;;;;;;;;x
 EVTTOOLTIPancrel.1323;[From.GetFirstName] is dissapointed...;;;;;;;;;;;;;x
 EVTDESCancrel.1322;[From.GetTitledFirstName] has granted your request to join The Red Dragon Knights!;;;;;;;;;;;;;x

@@ -1,3 +1,9 @@
+################################
+#
+# The Isles
+#
+################################
+
 k_england = {
 	celtic_pagan_reformed = 1000
 	hellenic_pagan = 1
@@ -25,6 +31,12 @@ k_scotland = {
 	egyptian_pagan = 1
 	aten_pagan = 1	
 }
+
+################################
+#
+# Western Europe
+#
+################################
 
 k_brittany = {
 	celtic_pagan_reformed = 800
@@ -61,6 +73,12 @@ k_frisia = {
 	aten_pagan = 1	
 }
 
+################################
+#
+# Central Europe and Italia
+#
+################################
+
 k_germany = {
 	celtic_pagan_reformed = 400
 	hellenic_pagan = 1
@@ -89,13 +107,6 @@ k_bavaria = {
 	aten_pagan = 25
 }
 
-k_bohemia = {
-	celtic_pagan_reformed = 100
-	hellenic_pagan = 1
-	egyptian_pagan = 1
-	aten_pagan = 1	
-}
-
 k_italy = {
 	celtic_pagan_reformed = 550
 	hellenic_pagan = 1000
@@ -109,6 +120,12 @@ k_sicily = {
 	egyptian_pagan = 250
 	aten_pagan = 250
 }
+
+################################
+#
+# Hispania
+#
+################################
 
 k_galicia = {
 	celtic_pagan_reformed = 100 # don't weigh a two county kingdom too high, despite being in a historically celtic area
@@ -152,6 +169,12 @@ k_andalusia = {
 	aten_pagan = 100
 }
 
+################################
+#
+# Scandinavia
+#
+################################
+
 k_norway = {
 	celtic_pagan_reformed = 100
 	hellenic_pagan = 1
@@ -179,6 +202,14 @@ k_finland = {
 	egyptian_pagan = 1
 	aten_pagan = 1
 }
+
+
+################################
+#
+# The Southern Slavic Kingdoms,
+# and Greece
+#
+################################
 
 k_croatia = {
 	celtic_pagan_reformed = 50
@@ -215,12 +246,25 @@ k_wallachia = {
 	aten_pagan = 1	
 }
 
+k_bohemia = {
+	celtic_pagan_reformed = 100
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1	
+}
+
 k_hungary = {
 	celtic_pagan_reformed = 50
 	hellenic_pagan = 400
 	egyptian_pagan = 1
 	aten_pagan = 1	
 }
+
+################################
+#
+# East Mediterranean/Anatolia
+#
+################################
 
 k_anatolia = {
 	celtic_pagan_reformed = 200 # Galatia was a well known and long standing Celtic colony, they still spoke a recognizably Celtic language in the 4th century!
@@ -242,6 +286,12 @@ k_georgia = {
 	egyptian_pagan = 100
 	aten_pagan = 100
 }
+
+################################
+#
+# Persia
+#
+################################
 
 k_mesopotamia = {
 	celtic_pagan_reformed = 1
@@ -277,6 +327,19 @@ k_syria = {
 	egyptian_pagan = 600
 	aten_pagan = 600
 }
+
+k_khiva = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 300
+	egyptian_pagan = 200
+	aten_pagan = 200
+}
+
+################################
+#
+# The Levant, Arabia, and Africa
+#
+################################
 
 k_jerusalem = {
 	celtic_pagan_reformed = 1
@@ -328,6 +391,228 @@ k_mauretania = {
 }
 
 k_mali = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1
+}
+
+################################
+#
+# West and East Slavs 
+# + Lithuania
+#
+################################
+
+k_pommerania = {
+	celtic_pagan_reformed = 50
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1
+}
+
+k_poland = {
+	celtic_pagan_reformed = 25
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1	
+}
+
+k_lithuania = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1
+}
+
+k_ruthenia = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1
+}
+
+k_rus = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1
+}
+
+################################
+#
+# The Steppes
+#
+################################
+
+k_perm = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1	
+}
+
+k_volga_bulgaria = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1	
+}
+
+k_cuman = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1
+}
+
+k_taurica = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1	
+}
+
+k_alania = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1	
+}
+
+k_turkestan = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1
+}
+
+################################
+#
+# India
+#
+################################
+
+k_sindh = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1	
+}
+
+k_punjab = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1
+}
+
+k_delhi = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1
+}
+
+k_gujarat = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1
+}
+
+k_rajputana = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1
+}
+
+k_malwa = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1
+}
+
+k_kosala = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1
+}
+
+k_gondwana = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1
+}
+
+k_bengal = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1
+}
+
+k_kamarupa = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1
+}
+
+k_orissa = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1
+}
+
+k_bihar = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1
+}
+
+k_maharastra = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1
+}
+
+k_karnata = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1
+}
+
+k_tamilakam = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1
+}
+
+k_andhra = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1
+}
+
+k_telingana = {
+	celtic_pagan_reformed = 1
+	hellenic_pagan = 1
+	egyptian_pagan = 1
+	aten_pagan = 1
+}
+
+k_lanka = {
 	celtic_pagan_reformed = 1
 	hellenic_pagan = 1
 	egyptian_pagan = 1

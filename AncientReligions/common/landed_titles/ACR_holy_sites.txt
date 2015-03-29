@@ -12,7 +12,7 @@ b_bangor_fawr = {
 	holy_site = celtic_pagan
 	holy_site = celtic_pagan_reformed
 }
-b_citeaux = {
+b_autun = {
 	holy_site = celtic_pagan
 	holy_site = celtic_pagan_reformed
 }

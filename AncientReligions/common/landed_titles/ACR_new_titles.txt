@@ -197,6 +197,48 @@ d_horus = {
 	mercenary_type = horus_composition
 }
 
+d_men_of_steel = {
+	color = { 128 120 20 }
+	color2 = { 255 255 255 }
+
+	capital = 679 # Kartli, location of Mount Kazbek, where Prometheus was chained
+
+	title = GRANDMASTER
+	foa = GRANDMASTER_FOA
+
+	landless = yes
+	holy_order = yes
+	religion = promethean_pagan
+	culture = greek
+
+	primary = yes
+
+	monthly_income = 2
+	strength_growth_per_century = 1.0
+	mercenary_type = steel_composition
+}
+
+d_sickles = {
+	color = { 128 120 20 }
+	color2 = { 255 255 255 }
+
+	capital = 482 # Athens, because I can't find anyplace close to Mt Othys
+
+	title = WARCHIEF
+	foa = WARCHIEF_FOA
+
+	holy_order = yes
+	landless = yes
+	religion = titan_pagan
+	culture = greek
+
+	primary = yes
+
+	monthly_income = 2
+	strength_growth_per_century = 1.0
+	mercenary_type = sickle_composition
+}
+
 # Pagan heads of religion
 
 d_hellenic_pagan = {

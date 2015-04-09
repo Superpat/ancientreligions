@@ -122,11 +122,13 @@ PHILOSOPHER;Philosophos;Philosophos;Philosophos;;Philosophos;;;;;;;;;x
 promethean_pagan;Promethean;Promethean;Promethean;;Promethean;;;;;;;;;x
 promethean_pagan_DESC;Prometheanism is the worship of the Titan Prometheus and, to a lesser extent, his brother Epimetheus, as the fathers of humanity. Prometheanism acknowledges the existence, and divinity, of the Olympians, but rejects their worthiness as beings to be worshiped. Prometheans value intellectual pursuits above all, finding guile, diplomacy, and a quick wit to be the highest art forms. They find violence distasteful, but recognize that it is ocassionally necessary.Defining features in-game:\n§Y*§! Prometheans gain piety while at peace.\n§Y*§! The Scholarch of the First Academy leads the Promethean faitfhul.\n§Y*§! Prometheans cannot use, and are not targetable by, the Pagan Subjugation CB.\n§Y*§! Prometheans gain a bonus to Learning.\n§Y*§! Prometheanism is a feminist faith.\n§Y*§! Women may hold temples.\n§Y*§! Priests can marry.\n§Y*§! Promethean rulers may designate their heir.;;;;;;;;;;;;;x
 promethean_philosophy;Promethean Philosophy;Promethean Philosophy;Promethean Philosophy;;Promethean Philosophy;;;;;;;;;x
-promethean_philosophy_desc;Promethean beliefs encourage intellectual pursuits and the advancements of science, technology, and logic. Promethean tend toward higher education as a result.;;;;;;;;;;;;;x
+promethean_philosophy_desc;Promethean beliefs encourage intellectual pursuits and the advancements of science, technology, and logic. Prometheans tend toward higher education as a result.;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
-d_promethean_pagan;First Academy;Sacred Flame;Sacred Flame;;Sacred Flame;;;;;;;;;x
-d_promethean_pagan_adj;Academecian;Academecian;Academecian;;Academecian;;;;;;;;;x
+d_promethean_pagan;First Academy;;;;;;;;;;;;;x
+d_promethean_pagan_adj;Academecian;;;;;;;;;;;;;x
 SCHOLARCH;Scholarch;Scholarch;Scholarch;;Scholarch;;;;;;;;;x
+d_men_of_steel;Men of Steel;;;;;;;;;;;;;x
+d_men_of_steel_adj;Steel;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 temple_baron_promethean_pagan;Philosophos;Philosophos;Philosophos;;Philosophos;;;;;;;;;x
 temple_baron_female_promethean_pagan;Philosophoia;Philosophoia;Philosophoia;;Philosophoia;;;;;;;;;x
@@ -144,9 +146,9 @@ temple_emperor_promethean_pagan;Sofos Patriarchis;;;;;;;;;;;;;x
 temple_emperor_female_promethean_pagan;Sofos Matriarchia;;;;;;;;;;;;;x
 temple_empire_of_promethean_pagan;Enlightened Realm of;;;;;;;;;;;;;x
 ###### Titan cult;;;;;;;;;;;;;;x
-titan_pagan;Titan Cult;Titan Cult;Titan Cult;;Titan Cult;;;;;;;;;x
+titan_pagan;Titan Cult;;;;;;;;;;;;;x
 titan_pagan_DESC;The Titan Cult rejects the authority of the Olympian Gods, considering them usurpers and unworthy of their worship. Titan Cultists reject the kind of civilization that Hellenism has typically fostered, and have much more in common with the more "barbaric" religions. They are extremely aggressive and prone to collapse during a succession. Defining features in-game:\n§Y*§! Titan Cultists may use the Pagan Subjugation CB once per lifetime.\n§Y*§! Titan Cultists may use the Pagan Conquest CB.\n§Y*§! Priests can marry.\n§Y*§! Titan Cultists lose prestige if at peace too long.\n§Y*§! Titan Cultists do not gain an opinion penalty from having vassal levies raised too long.\n§Y*§! Titan Cultists can raid their neighbors.\n§Y*§! Titan Cultists can take up to three concubines.\n§Y*§! The Titan Cult allows marriage between children and their parent's siblings.\n§Y*§! Titan Cultists suffer from increased short reign penalties.;;;;;;;;;;;;;x
-titan_cultist;Titan Ferocity;Titan Ferocity;Titan Ferocity;;Titan Ferocity;;;;;;;;;x
+titan_cultist;Titan Ferocity;;;;;;;;;;;;;x
 titan_cultist_desc;Titan Cultists relish and excel in personal combat.;;;;;;;;;;;;;x
 temple_baron_titan_pagan;Priest;;;;;;;;;;;;;x
 GOD_KRONOS;Kronos;Kronos;Kronos;;Kronos;;;;;;;;;x
@@ -162,4 +164,7 @@ GOD_MNEMOSYNE;Mnemosyne;Mnemosyne;Mnemosyne;;Mnemosyne;;;;;;;;;x
 GOD_THEMIS;Themis;Themis;Themis;;Themis;;;;;;;;;x
 GOD_KRIUS;Krius;Krius;Krius;;Krius;;;;;;;;;x
 GOD_IAPETUS;Iapetus;Iapetus;Iapetus;;Iapetus;;;;;;;;;x
+#;;;;;;;;;;;;;x
+d_sickles;Sickles;;;;;;;;;;;;;x
+d_sicles_adj;Sickle;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x

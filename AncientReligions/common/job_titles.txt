@@ -26,6 +26,7 @@ job_chancellor = {
 					liege = {
 						OR = {
 							religion = cathar
+							religion = messalian
 							religion = celtic_pagan
 							religion = celtic_pagan_reformed
 							religion = promethean_pagan
@@ -93,6 +94,7 @@ job_marshal = {
 					liege = {
 						OR = {
 							religion = cathar
+							religion = messalian
 							religion = celtic_pagan
 							religion = celtic_pagan_reformed
 							religion = promethean_pagan
@@ -146,6 +148,7 @@ job_treasurer = {
 					liege = {
 						OR = {
 							religion = cathar
+							religion = messalian
 							religion = celtic_pagan
 							religion = celtic_pagan_reformed
 							religion = promethean_pagan
@@ -259,6 +262,7 @@ job_spiritual = {
 						NOT = { religion = tengri_pagan_reformed}
 					}
 					religion = cathar
+					religion = messalian
 					religion = bogomilist
 				}
 				OR = {

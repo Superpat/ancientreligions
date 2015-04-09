@@ -209,7 +209,6 @@ d_men_of_steel = {
 	landless = yes
 	holy_order = yes
 	religion = promethean_pagan
-	culture = greek
 
 	primary = yes
 
@@ -230,7 +229,6 @@ d_sickles = {
 	holy_order = yes
 	landless = yes
 	religion = titan_pagan
-	culture = greek
 
 	primary = yes
 

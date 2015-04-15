@@ -19,14 +19,15 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 
 	min_age = 16
+	max_age = 22
 	capable_only = yes
 	prisoner = no
+	only_men = yes
 
 	trigger = {
 		has_dlc = "The Old Gods"
 
 		learning = 6
-		is_female = no
 		is_landed = no
 		NOT = {	
 			religion = hellenic_pagan
@@ -118,6 +119,13 @@ character_event = {
 		ai_chance = {
 			factor = 15
 			modifier = {
+				factor = 5
+				host = {
+					ai = no # Make it 50% chances for the player
+					NOT = { has_character_flag = flag_courtier_studied_the_classics }
+				}
+			}
+			modifier = {
 				factor = 0.25
 				trait = zealous
 			}
@@ -189,7 +197,12 @@ character_event = {
 			limit = { religion_group = jewish_group }
 			add_trait = sympathy_judaism
 		}
-		religion = hellenic_pagan
+		random_list = {
+			75 = { religion = hellenic_pagan }
+			20 = { religion = promethean_pagan }
+			5 = { religion = titan_pagan }
+		}
+		
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical
@@ -201,7 +214,7 @@ character_event = {
 		hidden_tooltip = {
 			host = {
 				if = {
-					limit = { NOT = { religion = hellenic_pagan } }
+					limit = { NOT = { religion = ROOT } }
 					character_event = { id = ancrel.2101 }
 				}
 			}
@@ -210,11 +223,14 @@ character_event = {
 
 	option = {
 		name = EVTOPTBancrel.2100
-		ai_chance = { factor = 85 }
+		ai_chance = { 
+			factor = 85
+		}
 		piety = 50
 	}
 }
 
+# Host is notified of conversion
 character_event = {
 	id = ancrel.2101
 	desc = EVTDESCancrel.2101
@@ -223,6 +239,10 @@ character_event = {
 
 	is_triggered_only = yes
 	hide_from = yes
+	
+	immediate = {
+		set_character_flag = flag_courtier_studied_the_classics
+	}
 
 	option = {
 		name = EVTOPTAancrel.2101
@@ -238,9 +258,43 @@ character_event = {
 		}
 		piety = -10
 	}
+	option = {
+		name = EVTOPTCancrel.2101
+		trigger = {
+			OR = {
+			  trait = arbitrary
+			  trait = scholar
+			  trait = mystic
+			  trait = lunatic
+			  trait = possessed
+		    }
+		}
+		if = {
+			limit = { religion_group = christian }
+			add_trait = sympathy_christendom
+		}
+		if = {
+			limit = { religion_group = muslim }
+			add_trait = sympathy_islam
+		}
+		if = {
+			limit = { religion_group = zoroastrian_group }
+			add_trait = sympathy_zoroastrianism
+		}
+		if = {
+			limit = { religion_group = indian_group }
+			add_trait = sympathy_indian
+		}
+		if = {
+			limit = { religion_group = jewish_group }
+			add_trait = sympathy_judaism
+		}
+		religion = FROM
+	}
 }
 
 # Make Hellenic Paganism the state religion?
+# Fired on creation of the Pontificate Maxima for Roman/Latin/Byzantine empire
 character_event = {
 	id = ancrel.2102
 	desc = EVTDESCancrel.2102
@@ -513,3 +567,221 @@ narrative_event = {
 		}
 	}
 }
+
+#######################################
+#
+# - Journey to the Mani Penninsula
+#
+#######################################
+
+# 32 pages thread on the forum deserves an event ;-)
+
+# Rumors on Mani Penninsula
+# Only happens once in a lifetime
+character_event = {
+	id = ancrel.2105
+	desc = EVTDESCancrel.2105
+	picture = GFX_evt_whispering_in_ear
+	border = GFX_event_normal_frame_religion
+
+	min_age = 16
+	capable_only = yes
+	only_rulers = yes
+	only_independent = yes
+	prisoner = no
+	
+	trigger = {
+		has_dlc = "The Old Gods"
+		war = no
+		
+		completely_controls = c_monemvasia
+		
+		NOT = { religion_group = pagan_group }
+		OR = {
+			culture = roman
+			culture = italian
+			culture = greek
+			culture = sicilian_greek # SWMH
+			culture_group = italian_group # SWMH
+		}
+		NOT = { has_character_flag = flag_mani_penninsula }
+	}
+	
+	mean_time_to_happen = {
+		months = 40
+		modifier = {
+			factor = 2.0
+			trait = cynical
+		}
+		modifier = {
+			factor = 2.0
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.7
+			trait = sympathy_pagans
+		}
+		modifier = {
+			factor = 0.5
+			has_landed_title = c_monemvasia
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { year = 800 }
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { year = 900 }
+		}
+		modifier = {
+			factor = 1.2
+			year = 1000
+		}
+		modifier = {
+			factor = 1.5
+			year = 1100
+		}
+	}
+	
+	immediate = {
+		set_character_flag = flag_mani_penninsula
+	}
+	
+	option = {
+		name = EVTOPTAancrel.2105
+		ai_chance = {
+			factor = 50
+		}
+		custom_tooltip = {
+			text = travel_penninsula
+			hidden_tooltip = {
+				character_event = { id = ancrel.2106 days = 15 }
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBancrel.2105
+		ai_chance = {
+			factor = 50
+		}
+		custom_tooltip = {
+			text = ignore_rumors
+		}
+	}
+}
+
+# Arrival in Mani Penninsula
+character_event = {
+	id = ancrel.2106
+	desc = EVTDESCancrel.2106
+	picture = GFX_evt_cave_dwellers
+
+	is_triggered_only = yes
+	
+	immediate = {
+		create_random_priest = {
+			random_traits = no
+			dynasty = none
+			religion = hellenic_pagan
+			culture = greek
+			age = 50
+			trait = patient
+			trait = zealous
+			trait = mystic
+			trait = proud
+		}
+		new_character = {
+			save_event_target_as = target_maniot_priest
+		}
+	}
+
+	option = {
+		name = EVTOPTAancrel.2106
+		ai_chance = {
+			factor = 50
+		}
+		custom_tooltip = {
+			text = listen_to_maniot
+			hidden_tooltip = {
+				character_event = { id = ancrel.2107 days = 2 }
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBancrel.2106
+		ai_chance = {
+			factor = 50
+		}
+		FROM = {
+			if = {
+				limit = {
+					NOT = {trait = zealous}
+					NOT = {trait = cynical}
+				}
+				add_trait = zealous 
+			}
+		}
+		event_target:target_maniot_priest = {
+			imprison = ROOT
+		}
+		478 = { # Monemvasia
+			add_province_modifier = { 
+				name = religious_tension 
+				duration = 365
+			}
+		}
+	}
+}
+
+# Listen to the oracle
+character_event = {
+	id = ancrel.2107
+	desc = EVTDESCancrel.2107
+	picture = GFX_evt_roman_temple
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAancrel.2107
+		ai_chance = {
+			factor = 50
+		}
+		
+		if = {
+			limit = { religion_group = christian }
+			add_trait = sympathy_christendom
+		}
+		if = {
+			limit = { religion_group = muslim }
+			add_trait = sympathy_islam
+		}
+		if = {
+			limit = { religion_group = zoroastrian_group }
+			add_trait = sympathy_zoroastrianism
+		}
+		if = {
+			limit = { religion_group = indian_group }
+			add_trait = sympathy_indian
+		}
+		if = {
+			limit = { religion_group = jewish_group }
+			add_trait = sympathy_judaism
+		}
+		
+		religion = hellenic_pagan
+		
+		event_target:target_maniot_priest = {
+			give_job_title = job_spiritual
+		}
+	}
+	
+	option = {
+		name = EVTOPTBancrel.2107
+		ai_chance = {
+			factor = 50
+		}
+		add_trait = sympathy_pagans
+		add_trait = cynical
+	}
+}
+

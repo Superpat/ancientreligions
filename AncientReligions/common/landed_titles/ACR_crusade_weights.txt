@@ -1,0 +1,620 @@
+################################
+#
+# The Isles
+#
+################################
+
+k_england = {
+	celtic_pagan_reformed = 1000
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_wales = {
+	celtic_pagan_reformed = 1000
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 1	
+}
+
+k_ireland = {
+	celtic_pagan_reformed = 1000
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_scotland = {
+	celtic_pagan_reformed = 1000
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 1	
+}
+
+################################
+#
+# Western Europe
+#
+################################
+
+k_brittany = {
+	celtic_pagan_reformed = 800
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_france = {
+	celtic_pagan_reformed = 700
+	hellenic_pagan = 50
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_aquitane = {
+	celtic_pagan_reformed = 700
+	hellenic_pagan = 100
+	egyptian_pagan = 0
+	aten_pagan = 1	
+}
+
+k_burgundy = {
+	celtic_pagan_reformed = 650
+	hellenic_pagan = 150
+	egyptian_pagan = 25
+	aten_pagan = 25
+}
+
+k_frisia = {
+	celtic_pagan_reformed = 600
+	hellenic_pagan = 25
+	egyptian_pagan = 0
+	aten_pagan = 1	
+}
+
+################################
+#
+# Central Europe and Italia
+#
+################################
+
+k_germany = {
+	celtic_pagan_reformed = 400
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 1	
+}
+
+k_saxony = {
+	celtic_pagan_reformed = 400
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 1	
+}
+
+k_lotharingia = {
+	celtic_pagan_reformed = 500
+	hellenic_pagan = 25
+	egyptian_pagan = 0
+	aten_pagan = 1	
+}
+
+k_bavaria = {
+	celtic_pagan_reformed = 400
+	hellenic_pagan = 200
+	egyptian_pagan = 25
+	aten_pagan = 25
+}
+
+k_italy = {
+	celtic_pagan_reformed = 550
+	hellenic_pagan = 1000
+	egyptian_pagan = 100
+	aten_pagan = 100
+}
+
+k_sicily = {
+	celtic_pagan_reformed = 350
+	hellenic_pagan = 700
+	egyptian_pagan = 250
+	aten_pagan = 250
+}
+
+################################
+#
+# Hispania
+#
+################################
+
+k_galicia = {
+	celtic_pagan_reformed = 100 # don't weigh a two county kingdom too high, despite being in a historically celtic area
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_leon = {
+	celtic_pagan_reformed = 550
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 1	
+}
+
+k_navarra = {
+	celtic_pagan_reformed = 100 # don't weigh a three county kingdom too high, despite being in a historically celtic area
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 1	
+}
+
+k_asturias = {
+	celtic_pagan_reformed = 550
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 1	
+}
+
+k_aragon = {
+	celtic_pagan_reformed = 400
+	hellenic_pagan = 100
+	egyptian_pagan = 100
+	aten_pagan = 100	
+}
+
+k_andalusia = {
+	celtic_pagan_reformed = 400
+	hellenic_pagan = 100
+	egyptian_pagan = 100
+	aten_pagan = 100
+}
+
+################################
+#
+# Scandinavia
+#
+################################
+
+k_norway = {
+	celtic_pagan_reformed = 100
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_denmark = {
+	celtic_pagan_reformed = 100
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_sweden = {
+	celtic_pagan_reformed = 100
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 1	
+}
+
+k_finland = {
+	celtic_pagan_reformed = 75
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+
+################################
+#
+# The Southern Slavic Kingdoms,
+# and Greece
+#
+################################
+
+k_croatia = {
+	celtic_pagan_reformed = 50
+	hellenic_pagan = 300
+	egyptian_pagan = 50
+	aten_pagan = 50
+}
+
+k_serbia = {
+	celtic_pagan_reformed = 25
+	hellenic_pagan = 400
+	egyptian_pagan = 75
+	aten_pagan = 75
+}
+
+k_greece = {
+	celtic_pagan_reformed = 25
+	hellenic_pagan = 1000
+	egyptian_pagan = 250
+	aten_pagan = 250
+}
+
+k_bulgaria = {
+	celtic_pagan_reformed = 100
+	hellenic_pagan = 1000
+	egyptian_pagan = 250
+	aten_pagan = 250	
+}
+
+k_wallachia = {
+	celtic_pagan_reformed = 50
+	hellenic_pagan = 600
+	egyptian_pagan = 0
+	aten_pagan = 1	
+}
+
+k_bohemia = {
+	celtic_pagan_reformed = 100
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 1	
+}
+
+k_hungary = {
+	celtic_pagan_reformed = 50
+	hellenic_pagan = 400
+	egyptian_pagan = 0
+	aten_pagan = 1	
+}
+
+################################
+#
+# East Mediterranean/Anatolia
+#
+################################
+
+k_anatolia = {
+	celtic_pagan_reformed = 200 # Galatia was a well known and long standing Celtic colony, they still spoke a recognizably Celtic language in the 4th century!
+	hellenic_pagan = 700
+	egyptian_pagan = 500
+	aten_pagan = 500
+}
+
+k_armenia = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 700
+	egyptian_pagan = 250
+	aten_pagan = 250
+}
+
+k_georgia = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 600
+	egyptian_pagan = 100
+	aten_pagan = 100
+}
+
+################################
+#
+# Persia
+#
+################################
+
+k_mesopotamia = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 500
+	egyptian_pagan = 600
+	aten_pagan = 600	
+}
+
+k_persia = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 400
+	egyptian_pagan = 500
+	aten_pagan = 500	
+}
+
+k_baluchistan = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 300
+	egyptian_pagan = 400
+	aten_pagan = 400		
+}
+
+k_afghanistan = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 300
+	egyptian_pagan = 400
+	aten_pagan = 400	
+}
+
+k_syria = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 600
+	egyptian_pagan = 600
+	aten_pagan = 600
+}
+
+k_khiva = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 300
+	egyptian_pagan = 200
+	aten_pagan = 200
+}
+
+################################
+#
+# The Levant, Arabia, and Africa
+#
+################################
+
+k_jerusalem = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 550
+	egyptian_pagan = 1000
+	aten_pagan = 1000
+}
+
+k_arabia = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 400
+	egyptian_pagan = 700
+	aten_pagan = 700	
+}
+
+k_egypt = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 500
+	egyptian_pagan = 1000
+	aten_pagan = 1000
+}
+
+k_nubia = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 300
+	egyptian_pagan = 1000
+	aten_pagan = 1000
+}
+
+k_abyssinia = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 100
+	egyptian_pagan = 800
+	aten_pagan = 800
+}
+
+k_africa = {
+	celtic_pagan_reformed = 50
+	hellenic_pagan = 400
+	egyptian_pagan = 700
+	aten_pagan = 700
+}
+
+k_mauretania = {
+	celtic_pagan_reformed = 75
+	hellenic_pagan = 200
+	egyptian_pagan = 500
+	aten_pagan = 500
+}
+
+k_mali = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+################################
+#
+# West and East Slavs 
+# + Lithuania
+#
+################################
+
+k_pommerania = {
+	celtic_pagan_reformed = 50
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_poland = {
+	celtic_pagan_reformed = 25
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 1	
+}
+
+k_lithuania = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_ruthenia = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_rus = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+################################
+#
+# The Steppes
+#
+################################
+
+k_perm = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 1	
+}
+
+k_volga_bulgaria = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 1	
+}
+
+k_cuman = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_taurica = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 1	
+}
+
+k_alania = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 1	
+}
+
+k_turkestan = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+################################
+#
+# India
+#
+################################
+
+k_sindh = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 1	
+}
+
+k_punjab = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_delhi = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_gujarat = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_rajputana = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_malwa = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_kosala = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_gondwana = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_bengal = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_kamarupa = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_orissa = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_bihar = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_maharastra = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_karnata = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_tamilakam = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_andhra = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_telingana = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}
+
+k_lanka = {
+	celtic_pagan_reformed = 0
+	hellenic_pagan = 0
+	egyptian_pagan = 0
+	aten_pagan = 0
+}

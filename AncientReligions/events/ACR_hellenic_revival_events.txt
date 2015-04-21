@@ -19,7 +19,7 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 
 	min_age = 16
-	max_age = 22
+	max_age = 30
 	capable_only = yes
 	prisoner = no
 	only_men = yes
@@ -600,7 +600,7 @@ character_event = {
 		OR = {
 			culture = roman
 			culture = italian
-			culture = greek
+			culture_group = byzantine
 			culture = sicilian_greek # SWMH
 			culture_group = italian_group # SWMH
 		}
@@ -689,6 +689,7 @@ character_event = {
 			trait = zealous
 			trait = mystic
 			trait = proud
+			trait = scholarly_theologian
 		}
 		new_character = {
 			save_event_target_as = target_maniot_priest

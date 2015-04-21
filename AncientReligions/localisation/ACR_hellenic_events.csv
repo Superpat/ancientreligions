@@ -34,13 +34,13 @@ EVTOPTBancrel.2104;Heathens!;Païens !;Ketzer!;;¡Paganos!;;;;;;;;;x
 EVTDESCancrel.2105;You have heard rumours about a group of Hellenic peasants on the Mani Penninsula who continue to practice their old ways. There is much debate at court on how large that group is, and how much their practices may have evolved since the old times...;;;;;;;;;;;;;x
 EVTOPTAancrel.2105;This is an opportunity to better know my realm.;;;;;;;;;;;;;x
 EVTOPTBancrel.2105;How stupid, the Hellenic faith is long dead !;;;;;;;;;;;;;x
-travel_penninsula;You travel to the penninsula\n;;;;;;;;;;;;;x
-EVTDESCancrel.2106;Reaching the tip of the penninsula, you discover in the hills a waterless and innaccesible place where the Maniots live. As you approach, you notice an old [Root.target_maniot_priest.GetManWoman] who seem to be waiting for you. [Root.target_maniot_priest.GetSheHeCap] explains that the gods have sent signs of your venue.;;;;;;;;;;;;;x
-EVTOPTAancrel.2106;An augur, how facinating !;;;;;;;;;;;;;x
+travel_penninsula;You travel to the penninsula...;;;;;;;;;;;;;x
+EVTDESCancrel.2106;Reaching the tip of the penninsula, you discover in the hills a waterless and innaccesible place where the Maniots live. As you approach, you notice an old [Root.target_maniot_priest.GetManWoman] who seems to be waiting for you. [Root.target_maniot_priest.GetSheHeCap] explains that the gods have sent signs of your arrival.;;;;;;;;;;;;;x
+EVTOPTAancrel.2106;An augur, how facinating!;;;;;;;;;;;;;x
 listen_to_maniot;Listen to the story of the augur;;;;;;;;;;;;;x
 EVTOPTBancrel.2106;Enough, imprison [Root.target_maniot_priest.GetHerHim] and fetch a [Root.Religion.GetPriestTitle] to convert those pagans.;;;;;;;;;;;;;x
 EVTDESCancrel.2107;The augur describes how the Maniots managed to keep the knowledge of the old Hellenic practices. [Root.target_maniot_priest.GetSheHeCap] has forseen that a ruler would one day restore the old faith, and build a mighty Empire that would last centuries.;;;;;;;;;;;;;x
-EVTOPTAancrel.2107;Obviously the gods have spoken, I shall embrace my destiny !;;;;;;;;;;;;;x
+EVTOPTAancrel.2107;Obviously the gods have spoken, I shall embrace my destiny!;;;;;;;;;;;;;x
 EVTOPTBancrel.2107;Funny how augurs always tell you what you want to hear...;;;;;;;;;;;;;x
 ###### Roman revival;;;;;;;;;;;;;;x
 was_refused_roman_revival;Roman revival refused;S'est vu refusé la renaissance romaine;;;;;;;;;;;;x

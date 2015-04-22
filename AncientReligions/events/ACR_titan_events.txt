@@ -1,7 +1,19 @@
 ###################################
 #
 # Ancient Religions
+# - Titan Flavor Events
+#
+# ancrel.3600-3699 Titan Thysia
+# ancrel.3700-3749 Holy Orders
+#
+###################################
+
+
+###################################
+#
+# Ancient Religions
 # - Titan Thysia Events
+# ancrel.3600 - ancrel.3699 reserved
 #
 ###################################
 
@@ -3246,5 +3258,175 @@ character_event = {
 		clr_character_flag = feast_drunkard
 		clr_character_flag = feast_friendship
 		clr_character_flag = do_not_disturb
+	}
+}
+
+###################################
+#
+# Ancient Religions
+# - Titan Holy Order Events
+# ancrel.3700 - ancrel.3749 reserved
+#
+###################################
+
+#create the sickles
+character_event = {
+	id = ancrel.3700
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_dlc = "The Old Gods"
+
+		any_province = {
+			religion = titan_pagan
+			religion_authority = 0.25
+			count = 5
+		}
+
+		religion = catholic	# hit the pope
+		controls_religion = yes
+	}
+
+	immediate = {
+		activate_title = { title = d_sickles active = yes }
+		create_character = {
+			random_traits = no
+			religion = titan_pagan
+			culture = greek
+			dynasty = random
+			female = no
+			age = 26
+			trait = zealous
+			trait = skilled_tactician
+			trait = strong
+			trait = proud
+			trait = wroth
+		}
+		new_character = {
+			d_sickles = {
+				grant_title = PREV
+				wealth = 100
+				piety = 100
+				prestige = 100
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = titan_pagan
+				culture = greek
+				female = no
+				age = 16
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = titan_pagan
+				culture = armenian
+				female = no
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = titan_pagan
+				culture = georgian
+				female = no
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = titan_pagan
+				culture = alan
+				female = no
+				age = 20
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = titan_pagan
+				culture = greek
+				female = no
+				age = 25
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = titan_pagan
+				culture = armenian
+				female = no
+				age = 26
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = titan_pagan
+				culture = alan
+				female = no
+				age = 28
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = titan_pagan
+				culture = georgian
+				female = yes
+				age = 16
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = titan_pagan
+				culture = italian
+				female = yes
+				age = 17
+			}
+
+			character_event = {
+				id = ancrel.3701 # bounce the event to have the warchief as root and from
+			}
+		}
+	}
+}
+
+# The Sicles are formed, and now everyone knows it!
+narrative_event = {
+	id = ancrel.3701
+	title = ancrel.3701.title
+	desc = ancrel.3701.desc
+	picture = GFX_evt_war_planning
+	border = GFX_event_narrative_frame_religion
+
+	major = yes
+	
+	only_rulers = yes
+
+	option = {
+		trigger = {
+			religion = titan_pagan
+		}
+
+		name = ancrel.3701.a
+	}
+
+	option = {
+		trigger = {
+			religion = { is_reformed_religion = yes }
+		}
+
+		name = ancrel.3701.b
+	}
+
+	option = {
+		trigger = {
+			NOT = {
+				religion = titan_pagan
+				religion = { is_reformed_religion = yes }
+			}
+		}
+
+		name = ancrel.3701.c
 	}
 }

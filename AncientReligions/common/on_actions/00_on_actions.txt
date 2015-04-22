@@ -17,6 +17,7 @@ on_yearly_pulse = {
 		
 		#ACR Events
 		ancrel.0153 # Liege doesn't have a Druid
+		ancrel.3700 # should The Sickles form?
 	}
 	
 	random_events = {

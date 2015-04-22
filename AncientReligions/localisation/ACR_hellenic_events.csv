@@ -191,3 +191,8 @@ opinion_held_titan_thysia;Held Thysia;Blót tenu;Hat Blót veranstaltet;;Mancha Re
 opinion_refused_titan_thysia;Refused to join the Thysia;Refused to join the Thysia;Refused to join the Thysia;;Refused to join the Thysia;;;;;;;;;x
 held_titan_thysia_timer;make validator happy;make validator happy;make validator happy;;make validator happy;;;;;;;;;x
 CHRONICLE_HELD_THYSIA;[Root.GetTitledName] held a great thysia at [Root.Location.GetName].;[Root.GetTitledName] a organisé un grand thysia à [Root.Location.GetName].;[Root.GetTitledName] veranstaltete in [Root.Location.GetName] ein großes Opferfest.;;[Root.GetTitledName] tuvo una gran thysia [Root.Location.GetName].;;;;;;;;;x
+ancrel.3701.title;The Sickles of Kronos;;;;;;;;;;;;;x
+ancrel.3701.desc;The hand of Kronos is mighty, but he still requires a sharp blade to fell his enemies. The Sickles are an order of fanatical warriors formed in the wake of increasing numbers of Titan worshipers. Dedicated to culling all infidels and heretics from Mother Gaia, they charge into battle with a total disregard for their own safety.;;;;;;;;;;;;;x
+ancrel.3701.a;For the Titans!;;;;;;;;;;;;;x
+ancrel.3701.b;Filthy savages...;;;;;;;;;;;;;x
+ancrel.3701.c;By [Religion.GetRandomGodName], they will know true fury if they look my way!;;;;;;;;;;;;;x

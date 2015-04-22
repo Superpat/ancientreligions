@@ -40,8 +40,11 @@
 # ancrel.2230 - ancrel.2239 Roman Events
 # ancrel.2240 - ancrel.2259 Hellenic Flavour Events
 #
-# ancrel.3000 - ancrel.3249 Epic Bloodlines
+# ancrel.3000 - ancrel.3399 Epic Bloodlines
+# ancrel.3400 - ancrel.3549 Promethean Flavor Events
+# ancrel.3550 - ancrel.3569 Promethean Holy Orders
 # ancrel.3600 - ancrel.3699 Titan Thysia
+# ancrel.3700 - ancrel.3749 Titan Holy Orders
 #
 ###################################
 # Egyptian Polytheism

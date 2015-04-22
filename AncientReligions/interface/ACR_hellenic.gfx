@@ -36,7 +36,7 @@ spriteTypes = {
 		texturefile = "gfx\\event_pictures\ACR\roman_great_temple.tga"
 		allwaystransparent = yes
 	}
-		spriteType = {
+	spriteType = {
 		name = "GFX_evt_lightning_strike"
 		texturefile = "gfx\\event_pictures\ACR\lightning_strike.tga"
 		allwaystransparent = yes

@@ -21,7 +21,7 @@ b_mellifont = {
 	holy_site = celtic_pagan_reformed
 }
 
-# Egyptian pagan
+### Egyptian Pagan
 
 b_zweitina = {
 	holy_site = egyptian_pagan
@@ -37,4 +37,45 @@ b_memphis = {
 }
 b_luxor = {
 	holy_site = egyptian_pagan
+}
+
+### Hellenic Heresies
+
+
+b_thesedessa = {
+	holy_site = promethean_pagan
+}
+
+# Athens, location of the Academy
+b_piraeaus = {
+	holy_site = promethean_pagan
+}
+
+# a center of learning for over a thousand years
+b_alexandria = {
+	holy_site = promethean_pagan
+}
+
+# site of a pythagorean academy
+# (must be rebuilt)
+b_crotone ={
+	holy_site = promethean_pagan
+}
+
+# Kartli covers the southern slopes of Mt Kazbek,
+# the legendary location of Prometheus' binding
+b_svetitskhoveli = {
+	holy_site = promethean_pagan
+}
+
+# temple in Thessalia, the location of Mt Othrys,
+# which served as the base of the Titans during
+# the Titanomachy
+b_volos = {
+	holy_site = titan_pagan
+}
+
+# major temple to saturn(kronos)
+b_roma = {
+	holy_site = titan_pagan
 }

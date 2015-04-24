@@ -274,7 +274,6 @@ pagan_group = {
 		
 		religious_clothing_head = 5
 		religious_clothing_priest = 5
-		
 	}
 	
 	aten_pagan = { # Atenism
@@ -285,8 +284,14 @@ pagan_group = {
 		icon = 67
 		heresy_icon = 66
 		
+		ai_convert_other_group = 2 # always try to convert
+		ai_convert_same_group = 2 # always try to convert
+
 		color = {0.9 0.8 0}
 		
+		scripture_name = AMARNA_SCROLLS
+		crusade_name = GREAT_HOLY_WAR
+
 		high_god_name = GOD_ATEN
 		god_names = {
 			GOD_ATEN
@@ -298,6 +303,15 @@ pagan_group = {
 		allow_in_ruler_designer = no
 		parent = egyptian_pagan
 		allow_rivermovement = yes
+		priests_can_marry = yes
+		female_temple_holders = yes
+		max_wives = 4
+		divine_blood = yes
+		pc_marriage = yes
+		bs_marriage = yes
 		can_call_crusade = yes
+		
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
 	}
 }

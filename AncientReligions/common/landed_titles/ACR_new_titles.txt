@@ -237,6 +237,34 @@ d_sickles = {
 	mercenary_type = sickle_composition
 }
 
+d_sun_warriors = {
+	color = { 128 120 45 }
+	color2 = { 255 255 255 }
+	
+	capital = 795 # Asyut
+
+	title = WARCHIEF
+	foa = CAPTAIN_FOA
+	
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = aten_pagan
+	
+	# Extra income due to donations, etc
+	monthly_income = 2 # (Must be an integer between 1 and 512)	
+	
+	# Cannot be held as a secondary title
+	primary = yes
+
+	strength_growth_per_century = 1.0
+
+	mercenary_type = horus_composition
+}
+
 # Pagan heads of religion
 
 d_hellenic_pagan = {
@@ -371,6 +399,33 @@ d_egyptian_pagan = {
 	female_names = {
 		Baketwernel Behenu Beket_Beket Beketamun_Beket Beketaten Benerib Betrest Bintanath_Bintanath Bentanath_Bintanath Bunefer Cleopatra Dakhamunzu Djefatnebti Djefatsen Djehuti_Djehuti Thuty_Djehuti "Djehuty Sekhemresementawy"_Djehuti Djeseretnebti Duatentopet_Duatentopet Tentopet_Duatentopet Duathathor-Henuttawy Gautseshen Gilukhipa Hatshepsut Hatshepsut-Merytre Hedjetnebu Hekenuhedjet Hemetre Hemiunu Henutmehyt Henutmire Henutsen Henuttaneb Henuttawy Henutwati Herneith Hetepheres Hetephernebti Hui Iaret Inenek-Inti Ineni_Ineni Ini_Ineni Inetkawes Ipu Iput Iry-Hor Isesu Iset "Iset Ta-Hemdjert" Isetemkheb Isetnofret Itet Kapes Karomama_Karomama "Karomama Meritmut"_Karomama Keminub Khamerernebty Khedebneithirbinet Khenemetneferhedjet_Khenemetneferhedjet "Khenemetneferhedjet Weret"_Khenemetneferhedjet Khensa Khentetka Khenthap Khentimeresh Khentkaus Khenut Khuit Kiya Maathorneferure Maatkare_Maatkare "Maatkare Mutemhat"_Maatkare Maia_Maia Matia_Maia Maya_Maia Mehytenweskhet Meketaten Menhet Mentuhotep Menwi Mereret Mereruka Meresamun Meresankh Meretseger Meritamen Meritaten_Meritaten "Meritaten Tasherit"_Meritaten Meritites Merneith Merti Meryteti_Meryteti Mutbenret Mutemwiya Mutnedjmet Mutnofret Nakhtneith Nakhtubasterau Naparaye Nauny Nebet Nebetah Nebetia Nebetiunet Nebetnehat Nebettawy Nebtu Nebtyemneferes Nebty-tepites Nedjeftet Nedjemib Neferetnebty Neferhetepes Neferneferuaten_Neferneferuaten  "Neferneferuaten Ankhkheperure" Neferneferuaten "Neferneferuaten Tasherit" Neferneferure Nefertari Neferthenut Nefertiabet Nefertiti Nefertkau Nefertnesu Neferu Neferuptah Neferure Nefrubity Neith Neithhotep Nesitanebetashru Nesitaudjatakhet Neskhons Nimaethap Nitocris Nofret Nubhetepti-khered Nubkhaes Nubkhesbed Nubwenet Pageti Patareshnes Pebatjma Peksater Penebui Persenet Peseshet Pyhia Qalhata Rekhetre Reptynub Reputnebty Satiah Scota Sekhmakh Semat Senseneb Serethor Seshemetka Sesheshet Setepenre Shepenupet Sitamun Sitdjehuti Sithathoriunet Sitre_Sitre "Sitre In"_Sitre Sobekneferu Tabekenamun Tabiry Tadukhipa Takahatenamun Takhat Takhuit Tashedkhonsu Tawerettenru Tentamun Tentkheta Tetisheri Tey Tia_Tia Tiaa_Tia Tiye_Tia Tiy-Merenese Tjuyu Tuya Twosret Tyti Udjebten
 	}
+}
+
+d_aten_pagan = {
+	color = { 222 125 120 }
+	color2 = { 120 120 0 }
+	
+	capital = 795 # Asyut
+	
+	title = PHARAOH
+	title_female = PHARAOH
+	
+	short_name = yes
+
+	creation_requires_capital = yes
+	
+	allow = {
+		religion = aten_pagan
+		number_of_holy_sites = 3
+		piety = 500
+	}
+	
+	# Controls a religion
+	controls_religion = egyptian_pagan
+	dignity = 100
+	religion = aten_pagan
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
 
 d_promethean_pagan = {

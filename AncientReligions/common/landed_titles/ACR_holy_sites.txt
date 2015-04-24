@@ -25,31 +25,31 @@ b_mellifont = {
 
 b_zweitina = {
 	holy_site = egyptian_pagan
+	holy_site = aten_pagan
 }
 b_ikonion = {		
 	holy_site = egyptian_pagan
+	holy_site = aten_pagan
 }
 b_fuwa = {
-	holy_site = egyptian_pagan	
+	holy_site = egyptian_pagan
+	holy_site = aten_pagan
 }
 b_memphis = {
 	holy_site = egyptian_pagan
+	holy_site = aten_pagan
 }
 b_luxor = {
 	holy_site = egyptian_pagan
 }
+# 7km from Amarna
+# (must be rebuilt)
+b_meir = {
+	holy_site = aten_pagan
+	coptic = "Akhetaten"
+}
 
 ### Hellenic Heresies
-
-
-b_thesedessa = {
-	holy_site = promethean_pagan
-}
-
-# Athens, location of the Academy
-b_piraeaus = {
-	holy_site = promethean_pagan
-}
 
 # a center of learning for over a thousand years
 b_alexandria = {
@@ -68,6 +68,18 @@ b_svetitskhoveli = {
 	holy_site = promethean_pagan
 }
 
+b_thesedessa = {
+	holy_site = promethean_pagan
+	holy_site = titan_pagan
+}
+
+# Athens, location of the Academy
+# and the Kronia festival
+b_piraeaus = {
+	holy_site = promethean_pagan
+	holy_site = titan_pagan
+}
+
 # temple in Thessalia, the location of Mt Othrys,
 # which served as the base of the Titans during
 # the Titanomachy
@@ -77,5 +89,11 @@ b_volos = {
 
 # major temple to saturn(kronos)
 b_roma = {
+	holy_site = titan_pagan
+}
+
+# mythical entrance to Tartarus, 
+# location of an oracle
+b_paramythia = {
 	holy_site = titan_pagan
 }

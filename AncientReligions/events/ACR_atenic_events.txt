@@ -1,0 +1,220 @@
+###################################################
+#
+# ANCIENT RELIGIONS
+# - Atenic Events
+#
+# Event ID ancrel.5000 - ancrel.5008 Decision Events
+#
+###################################################
+
+namespace = ancrel
+
+# Amarna Restoration Part 1
+province_event = {
+	id = ancrel.5000
+	title = ancrel.5000.title
+	desc = ancrel.5000.desc
+	picture = GFX_persepolis_ruin
+
+	is_triggered_only = yes
+	
+	immediate = {
+		795 = { set_province_flag = reb_amarna_1 }
+	}	
+
+	option = {
+		name = ancrel.5000.a # Make it the greatest temple there ever was!
+	}
+}
+
+# Amarna Restoration Part 2 - Add Asyut bonus modifier ~8 years
+province_event = {
+	id = ancrel.4001
+	title = EVTNAME_ancrel_4001
+	desc = EVTDESC_ancrel_4001
+	picture = GFX_evt_temple_egyptian_pagan
+
+	trigger = {
+		has_global_flag = amarna_restoring
+		province_id = 795 # Asyut
+		NOT = { has_global_flag = amarna_restored }
+		had_province_flag = { flag = reb_amarna_1 days = 2555 random = 365 }
+		NOT = { has_province_flag = reb_amarna_2 }
+	}
+
+	immediate = {
+		set_province_flag = reb_amarna_2
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = ancrel.5001.a # Library
+		795 = {
+			add_province_modifier = { name = amarna_library duration = -1 }
+			}
+	}
+	option = {
+		name = ancrel.5001.b # Promote Fanaticism
+		795 = {
+			add_province_modifier = { name = amarna_fanaticism duration = -1 }
+			}
+	}
+	option = {
+		name = ancrel.5001.c # Promote Tax Collection
+		795 = {
+			add_province_modifier = { name = amarna_admin duration = -1 }
+			}
+	}
+}
+
+# Amarna Restoration Part 3 ~2 years
+
+province_event = {
+	id = ancrel.5002
+	title = ancrel.5002.title
+	desc = ancrel.5002.desc
+	picture = GFX_evt_temple_egyptian_pagan
+	
+	trigger = {
+		has_global_flag = amarna_restoring
+		province_id = 795 # Asyut
+		NOT = { has_global_flag = amarna_restored }
+		has_province_flag = reb_amarna_1
+		had_province_flag = { flag = reb_amarna_2 days = 638 random = 92 }		
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	immediate = {
+		clr_global_flag = amarna_restoring
+		set_global_flag = amarna_restored
+		clr_province_flag = reb_amarna_1
+		clr_province_flag = reb_amarna_2
+	}
+
+	option = {
+		name = ancrel.5002.a
+		owner = {
+			795 = {
+				build_holding = {
+				   title = b_amarna
+				   type = temple
+				   holder = PREV
+				}
+			}
+		}
+		owner = {
+			prestige = 500
+			religion_authority = {
+				modifier = amarna_restored
+				years = 30
+			}
+		}
+		hidden_tooltip = {
+			owner = {
+				set_character_flag = event_ancrel_5003
+				narrative_event = { id = ancrel.5003 days = 7 }
+			}
+		}
+	}
+}
+
+# News spread about amarna
+narrative_event = {
+	id = ancrel.5003
+	title = ancrel.5003.title
+	desc = ancrel.5003.desc
+	picture = GFX_evt_temple_egyptian_pagan
+	border = GFX_event_narrative_frame_religion
+	
+	major = yes
+	only_rulers = yes
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			OR = {
+				has_character_flag = event_ancrel_5003
+				religion = egyptian_pagan
+				religion = aten_pagan
+			}
+		}
+		if = {
+			limit = { has_character_flag = event_ancrel_5003 }
+			clr_character_flag = event_ancrel_5003
+		}
+		name = ancrel.5003.a
+	}
+	
+	option = {
+		trigger = {
+			NOT = { has_character_flag = event_ancrel_5003 }
+		}
+		name = ancrel.5003.b
+	}
+}
+
+# The Priesthood Restored
+narrative_event = {
+	id = ancrel.5004
+	title = ancrel.5004
+	desc = ancrel.5004.desc
+	picture = GFX_evt_bishop_muslim
+	border = GFX_event_narrative_frame_religion
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ancrel.5004.a
+		trigger = {
+			OR = {
+				religion = egyptian_pagan
+				religion = aten_pagan
+			}
+		}
+	}
+	option = {
+		name = ancrel.5004.a
+		trigger = {
+			NOT = {
+				religion = egyptian_pagan
+				religion = aten_pagan
+			}
+		}
+	}
+}
+
+# Sun Warriors founded
+narrative_event = {
+	id = ancrel.5005
+	title = ancrel.5005.title
+	desc = ancrel.5005.desc
+	picture = GFX_evt_anubis
+	border = GFX_event_narrative_frame_religion
+	
+	major = yes
+	only_rulers = yes
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			has_character_flag = event_ancrel_5005
+		}
+		clr_character_flag = event_ancrel_5005
+		name = OK
+	}
+	
+	option = {
+		trigger = {
+			NOT = { has_character_flag = event_ancrel_5005 }
+		}
+		name = ancrel.5005.a
+	}
+}

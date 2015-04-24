@@ -3276,19 +3276,6 @@ character_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
-		has_dlc = "The Old Gods"
-
-		any_province = {
-			religion = titan_pagan
-			religion_authority = 0.25
-			count = 5
-		}
-
-		religion = catholic	# hit the pope
-		controls_religion = yes
-	}
-
 	immediate = {
 		activate_title = { title = d_sickles active = yes }
 		create_character = {
@@ -3386,6 +3373,13 @@ character_event = {
 
 			character_event = {
 				id = ancrel.3701 # bounce the event to have the warchief as root and from
+			}
+
+			ROOT = {
+				chronicle = {
+					entry = CHRONICLE_SICKLES
+					portrait = [Prev.GetID]
+				}
 			}
 		}
 	}

@@ -1,0 +1,71 @@
+narrative_event = {
+	id = HRR01
+	title = "HRRTITLE01"
+	desc = "HRRDESC01"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_narrative_frame_religion"
+	
+	major = yes
+	only_playable = yes
+	only_men = yes
+	
+	trigger = {
+	
+	
+			AND = {
+			religion = hellenic_pagan
+		}
+		is_heretic = no
+		
+		NOT = { is_title_active = d_legio_hellenica }
+		
+		
+		OR = {
+			e_byzantium = {
+				holder_scope = {
+					AND = { religion_group = hellenic_pagan }
+				}
+			}
+			496 = { # Constantinople
+				AND = { owner = { religion_group = hellenic_pagan } }
+			}
+			333 = { # Rome
+				AND = { owner = { religion_group = hellenic_pagan } }
+			}
+
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	immediate = {
+		activate_title = { title = d_legio_hellenica status = yes }
+		create_random_soldier = {
+			dynasty = None
+			random_traits = yes
+			culture = roman
+			religion = hellenic_pagan
+		}
+		new_character = {
+			d_legio_hellenica = {
+				grant_title = PREV
+			}
+			set_defacto_liege = THIS
+			wealth = 500
+		}
+		
+		religion_authority = {
+			modifier = religious_order_formed
+			years = 10
+		}
+	}
+	option = {
+		name = "HRROPT001"
+		trigger = {
+	
+		}
+	}
+	
+}

@@ -1,0 +1,5 @@
+hellenic_composition = {
+	levy_size = 4
+	heavy_infantry = 2000
+	archers = 500
+}

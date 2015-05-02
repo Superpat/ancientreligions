@@ -14,11 +14,7 @@ decisions = {
 				culture = scottish
 			}
 			independent = yes
-			OR = {
-				tier = duke
-				tier = king
-				tier = emperor 
-			}
+			primary_title = { higher_tier_than = COUNT }
 			location = {
 				owner = { character = ROOT }
 			}

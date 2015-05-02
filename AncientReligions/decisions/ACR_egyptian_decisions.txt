@@ -59,9 +59,7 @@ decisions = {
 			is_playable = yes	
 			independent = yes
 			higher_tier_than = duke
-			OR = {
-				religion = egyptian_pagan
-			}
+			religion = egyptian_pagan
 			NOT = { has_global_flag = luxor_restored }
 			NOT = { has_global_flag = luxor_restoring }
 		}	
@@ -103,17 +101,15 @@ decisions = {
 		}
 	}
 
-	restore_amarna = {
+	restore_akhetaten = {
 		is_high_prio = yes
 		potential = {
 			is_playable = yes	
 			independent = yes
 			higher_tier_than = duke
-			OR = {
-				religion = aten_pagan
-			}
-			NOT = { has_global_flag = amarna_restored }
-			NOT = { has_global_flag = amarna_restoring }
+			religion = aten_pagan
+			NOT = { has_global_flag = akhetaten_restored }
+			NOT = { has_global_flag = akhetaten_restoring }
 		}	
 		allow = {
 			wealth = 1000
@@ -126,7 +122,7 @@ decisions = {
 			has_regent = no	
 		}
 		effect = {
-			set_global_flag = amarna_restoring
+			set_global_flag = akhetaten_restoring
 			wealth = -1000
 			795 = {
 				province_event = { id = ancrel.5000 }
@@ -316,9 +312,7 @@ decisions = {
 			is_playable = yes
 			higher_tier_than = duke
 			has_regent = no
-			OR = {
-				religion = egyptian_pagan
-			}
+			religion = egyptian_pagan
 			NOT = { has_global_flag = anubis_founded }
 		}
 		allow = {
@@ -376,9 +370,7 @@ decisions = {
 			is_playable = yes
 			higher_tier_than = duke # Tease the decision for kings
 			has_regent = no
-			OR = {
-				religion = egyptian_pagan
-			}
+			religion = egyptian_pagan
 			NOT = { has_global_flag = horus_founded }
 			has_global_flag = anubis_founded
 		}
@@ -431,17 +423,15 @@ decisions = {
 		}
 	}
 
-	organize_sun_warriors = {
+	organize_burning_blades = {
 		is_high_prio = yes
 		
 		potential = {
 			is_playable = yes
 			higher_tier_than = duke # Tease the decision for kings
 			has_regent = no
-			OR = {
-				religion = aten_pagan
-			}
-			NOT = { has_global_flag = sun_warriors_founded }
+			religion = aten_pagan
+			NOT = { has_global_flag = burning_blades_founded }
 		}
 		allow = {
 			d_aten_pagan = {
@@ -452,10 +442,10 @@ decisions = {
 			wealth = 300
 		}
 		effect = {
-			set_global_flag = sun_warriors_founded
+			set_global_flag = burning_blades_founded
 			prestige = -300
 			wealth = -300
-			activate_title = { title = d_sun_warriors status = yes }
+			activate_title = { title = d_burning_blades status = yes }
 			hidden_tooltip = {
 				set_character_flag = event_ancrel_5005
 				narrative_event = { id = ancrel.5005 }
@@ -474,7 +464,8 @@ decisions = {
 					}
 				}
 				new_character = {
-					d_sun_warriors = {
+					add_trait = zealous
+					d_burning_blades = {
 						grant_title = PREV
 					}
 					set_defacto_liege = ROOT
@@ -482,7 +473,7 @@ decisions = {
 						limit = { ROOT = { ai = no } }
 						ROOT = {
 							chronicle = {
-								entry = CHRONICLE_ATEN_WARRIORS
+								entry = CHRONICLE_BURNING_BLADES
 								portrait = [Prev.GetID]
 							}
 						}

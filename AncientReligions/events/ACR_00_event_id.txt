@@ -52,11 +52,7 @@
 #
 # ancrel.4000 - ancrel.4008 Decision events
 # ancrel.4010 - ancrel.4019 Sed festival
-#
-###################################
-#
-# Assyrian Polytheism
-# Event ID ancrel.6000 - ancrel.7999 is reserved
+# ancrel.5000 - ancrel.5500 Aten Stuff
 #
 ###################################
 #

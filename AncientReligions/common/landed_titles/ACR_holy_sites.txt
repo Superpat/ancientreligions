@@ -46,7 +46,6 @@ b_luxor = {
 # (must be rebuilt)
 b_meir = {
 	holy_site = aten_pagan
-	coptic = "Akhetaten"
 }
 
 ### Hellenic Heresies

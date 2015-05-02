@@ -9,7 +9,7 @@
 
 namespace = ancrel
 
-# Amarna Restoration Part 1
+# akhetaten Restoration Part 1
 province_event = {
 	id = ancrel.5000
 	title = ancrel.5000.title
@@ -19,7 +19,7 @@ province_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		795 = { set_province_flag = reb_amarna_1 }
+		795 = { set_province_flag = reb_akhetaten_1 }
 	}	
 
 	option = {
@@ -27,23 +27,23 @@ province_event = {
 	}
 }
 
-# Amarna Restoration Part 2 - Add Asyut bonus modifier ~8 years
+# akhetaten Restoration Part 2 - Add Asyut bonus modifier ~8 years
 province_event = {
-	id = ancrel.4001
-	title = EVTNAME_ancrel_4001
-	desc = EVTDESC_ancrel_4001
+	id = ancrel.5001
+	title = ancrel.5001.title
+	desc = ancrel.5001.desc
 	picture = GFX_evt_temple_egyptian_pagan
 
 	trigger = {
-		has_global_flag = amarna_restoring
+		has_global_flag = akhetaten_restoring
 		province_id = 795 # Asyut
-		NOT = { has_global_flag = amarna_restored }
-		had_province_flag = { flag = reb_amarna_1 days = 2555 random = 365 }
-		NOT = { has_province_flag = reb_amarna_2 }
+		NOT = { has_global_flag = akhetaten_restored }
+		had_province_flag = { flag = reb_akhetaten_1 days = 2555 random = 365 }
+		NOT = { has_province_flag = reb_akhetaten_2 }
 	}
 
 	immediate = {
-		set_province_flag = reb_amarna_2
+		set_province_flag = reb_akhetaten_2
 	}
 	
 	mean_time_to_happen = {
@@ -53,24 +53,24 @@ province_event = {
 	option = {
 		name = ancrel.5001.a # Library
 		795 = {
-			add_province_modifier = { name = amarna_library duration = -1 }
-			}
+			add_province_modifier = { name = akhetaten_library duration = -1 }
+		}
 	}
 	option = {
 		name = ancrel.5001.b # Promote Fanaticism
 		795 = {
-			add_province_modifier = { name = amarna_fanaticism duration = -1 }
-			}
+			add_province_modifier = { name = akhetaten_fanaticism duration = -1 }
+		}
 	}
 	option = {
 		name = ancrel.5001.c # Promote Tax Collection
 		795 = {
-			add_province_modifier = { name = amarna_admin duration = -1 }
-			}
+			add_province_modifier = { name = akhetaten_admin duration = -1 }
+		}
 	}
 }
 
-# Amarna Restoration Part 3 ~2 years
+# akhetaten Restoration Part 3 ~2 years
 
 province_event = {
 	id = ancrel.5002
@@ -79,11 +79,11 @@ province_event = {
 	picture = GFX_evt_temple_egyptian_pagan
 	
 	trigger = {
-		has_global_flag = amarna_restoring
+		has_global_flag = akhetaten_restoring
 		province_id = 795 # Asyut
-		NOT = { has_global_flag = amarna_restored }
-		has_province_flag = reb_amarna_1
-		had_province_flag = { flag = reb_amarna_2 days = 638 random = 92 }		
+		NOT = { has_global_flag = akhetaten_restored }
+		has_province_flag = reb_akhetaten_1
+		had_province_flag = { flag = reb_akhetaten_2 days = 638 random = 92 }		
 	}
 
 	mean_time_to_happen = {
@@ -91,10 +91,10 @@ province_event = {
 	}
 	
 	immediate = {
-		clr_global_flag = amarna_restoring
-		set_global_flag = amarna_restored
-		clr_province_flag = reb_amarna_1
-		clr_province_flag = reb_amarna_2
+		clr_global_flag = akhetaten_restoring
+		set_global_flag = akhetaten_restored
+		clr_province_flag = reb_akhetaten_1
+		clr_province_flag = reb_akhetaten_2
 	}
 
 	option = {
@@ -102,7 +102,7 @@ province_event = {
 		owner = {
 			795 = {
 				build_holding = {
-				   title = b_amarna
+				   title = b_meir
 				   type = temple
 				   holder = PREV
 				}
@@ -111,7 +111,7 @@ province_event = {
 		owner = {
 			prestige = 500
 			religion_authority = {
-				modifier = amarna_restored
+				modifier = akhetaten_restored
 				years = 30
 			}
 		}
@@ -124,7 +124,7 @@ province_event = {
 	}
 }
 
-# News spread about amarna
+# News spread about akhetaten
 narrative_event = {
 	id = ancrel.5003
 	title = ancrel.5003.title
@@ -140,7 +140,6 @@ narrative_event = {
 		trigger = {
 			OR = {
 				has_character_flag = event_ancrel_5003
-				religion = egyptian_pagan
 				religion = aten_pagan
 			}
 		}
@@ -162,7 +161,7 @@ narrative_event = {
 # The Priesthood Restored
 narrative_event = {
 	id = ancrel.5004
-	title = ancrel.5004
+	title = ancrel.5004.title
 	desc = ancrel.5004.desc
 	picture = GFX_evt_bishop_muslim
 	border = GFX_event_narrative_frame_religion
@@ -191,7 +190,7 @@ narrative_event = {
 	}
 }
 
-# Sun Warriors founded
+# Burning Blades founded
 narrative_event = {
 	id = ancrel.5005
 	title = ancrel.5005.title

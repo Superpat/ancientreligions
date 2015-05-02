@@ -234,16 +234,16 @@ d_sickles = {
 
 	monthly_income = 2
 	strength_growth_per_century = 1.0
-	mercenary_type = sickle_composition
+	mercenary_type = sickles_composition
 }
 
-d_sun_warriors = {
+d_burning_blades = {
 	color = { 128 120 45 }
 	color2 = { 255 255 255 }
 	
 	capital = 795 # Asyut
 
-	title = WARCHIEF
+	title = CAPTAIN
 	foa = CAPTAIN_FOA
 	
 	# Always exists
@@ -407,8 +407,8 @@ d_aten_pagan = {
 	
 	capital = 795 # Asyut
 	
-	title = PHARAOH
-	title_female = PHARAOH
+	title = MERYATEN
+	title_female = MERYATEN
 	
 	short_name = yes
 
@@ -416,7 +416,7 @@ d_aten_pagan = {
 	
 	allow = {
 		religion = aten_pagan
-		number_of_holy_sites = 3
+		num_of_holy_sites = 3
 		piety = 500
 	}
 	

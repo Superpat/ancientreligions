@@ -3277,111 +3277,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		activate_title = { title = d_sickles active = yes }
-		create_character = {
-			random_traits = no
-			religion = titan_pagan
-			culture = greek
-			dynasty = random
-			female = no
-			age = 26
-			trait = zealous
-			trait = skilled_tactician
-			trait = strong
-			trait = proud
-			trait = wroth
-		}
-		new_character = {
-			d_sickles = {
-				grant_title = PREV
-				wealth = 100
-				piety = 100
-				prestige = 100
-			}
-			create_character = {
-				random_traits = yes
-				dynasty = random
-				religion = titan_pagan
-				culture = greek
-				female = no
-				age = 16
-			}
-			create_character = {
-				random_traits = yes
-				dynasty = random
-				religion = titan_pagan
-				culture = armenian
-				female = no
-				age = 18
-			}
-			create_character = {
-				random_traits = yes
-				dynasty = random
-				religion = titan_pagan
-				culture = georgian
-				female = no
-				age = 18
-			}
-			create_character = {
-				random_traits = yes
-				dynasty = random
-				religion = titan_pagan
-				culture = alan
-				female = no
-				age = 20
-			}
-			create_character = {
-				random_traits = yes
-				dynasty = random
-				religion = titan_pagan
-				culture = greek
-				female = no
-				age = 25
-			}
-			create_character = {
-				random_traits = yes
-				dynasty = random
-				religion = titan_pagan
-				culture = armenian
-				female = no
-				age = 26
-			}
-			create_character = {
-				random_traits = yes
-				dynasty = random
-				religion = titan_pagan
-				culture = alan
-				female = no
-				age = 28
-			}
-			create_character = {
-				random_traits = yes
-				dynasty = random
-				religion = titan_pagan
-				culture = georgian
-				female = yes
-				age = 16
-			}
-			create_character = {
-				random_traits = yes
-				dynasty = random
-				religion = titan_pagan
-				culture = italian
-				female = yes
-				age = 17
-			}
 
-			character_event = {
-				id = ancrel.3701 # bounce the event to have the warchief as root and from
-			}
-
-			ROOT = {
-				chronicle = {
-					entry = CHRONICLE_SICKLES
-					portrait = [Prev.GetID]
-				}
-			}
-		}
 	}
 }
 
@@ -3407,7 +3303,7 @@ narrative_event = {
 
 	option = {
 		trigger = {
-			religion = { is_reformed_religion = yes }
+			is_reformed_religion = yes
 		}
 
 		name = ancrel.3701.b
@@ -3417,7 +3313,7 @@ narrative_event = {
 		trigger = {
 			NOT = {
 				religion = titan_pagan
-				religion = { is_reformed_religion = yes }
+				is_reformed_religion = yes
 			}
 		}
 

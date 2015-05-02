@@ -71,6 +71,163 @@ decisions = {
 			}
 		}
 	}
+	found_sickles = {
+		is_high_prio = yes
+		potential = {
+			has_dlc = "The Old Gods"
+			is_ruler = yes
+			age = 16
+			prisoner = no
+			
+			religion = titan_pagan
+
+			primary_title = { higher_tier_than = COUNT }
+			d_sickles = {
+				has_holder = no
+			}
+		}
+		allow = {
+			num_of_holy_sites = 2
+			primary_title = { higher_tier_than = DUKE }
+			moral_authority = 0.30
+
+			wealth = 300
+			piety = 100
+			prestige = 200
+		}
+		effect = {
+			wealth = -300
+			piety = -100
+			prestige = -200
+			activate_title = { title = d_sickles status = yes }
+			create_character = {
+				random_traits = no
+				religion = titan_pagan
+				culture = ROOT
+				dynasty = random
+				female = no
+				age = 26
+				trait = zealous
+				trait = skilled_tactician
+				trait = strong
+				trait = proud
+				trait = wroth
+			}
+			new_character = {
+				d_sickles = {
+					grant_title = PREV
+				}
+				wealth = 100
+				piety = 100
+				prestige = 100
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = titan_pagan
+					culture = ROOT
+					female = no
+					age = 16
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = titan_pagan
+					culture = ROOT
+					female = no
+					age = 18
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = titan_pagan
+					culture = ROOT
+					female = no
+					age = 18
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = titan_pagan
+					culture = ROOT
+					female = no
+					age = 20
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = titan_pagan
+					culture = ROOT
+					female = no
+					age = 25
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = titan_pagan
+					culture = ROOT
+					female = no
+					age = 26
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = titan_pagan
+					culture = ROOT
+					female = no
+					age = 28
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = titan_pagan
+					culture = ROOT
+					female = yes
+					age = 16
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = titan_pagan
+					culture = ROOT
+					female = yes
+					age = 17
+				}
+
+				narrative_event = {
+					id = ancrel.3701 # bounce the event to have the warchief as root, ruler as from
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0
+				NOT = {
+					wealth = 500
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					piety = 200
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					prestige = 300
+				}
+			}
+			modifier = {
+				factor = 0.25
+				trait = cynical
+			}
+		}
+	}
 	recreate_pontificate = {
 		is_high_prio = yes
 		potential = {
@@ -140,7 +297,7 @@ vassal_decisions = {
 		from_potential = {
 			religion = hellenic_pagan
 			NOT = { has_landed_title = d_hellenic_pagan }
-			NOT = { NOT = { d_hellenic_pagan = { owner = { always = yes } } } } # There is currently a Pontifex Maximus
+			d_hellenic_pagan = { owner = { always = yes } } # There is currently a Pontifex Maximus
 			d_hellenic_pagan = { owner = { NOT = { check_variable = { which = "num_vestales" value = 5 } } } } # The College of the Vestales has a seat open.
 		}
 

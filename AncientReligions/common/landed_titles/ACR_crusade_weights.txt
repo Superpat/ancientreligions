@@ -52,7 +52,7 @@ k_france = {
 	aten_pagan = 0
 }
 
-k_aquitane = {
+k_aquitaine = {
 	celtic_pagan_reformed = 700
 	hellenic_pagan = 100
 	egyptian_pagan = 0
@@ -127,7 +127,7 @@ k_sicily = {
 #
 ################################
 
-k_galicia = {
+k_spanish_galicia = {
 	celtic_pagan_reformed = 100 # don't weigh a two county kingdom too high, despite being in a historically celtic area
 	hellenic_pagan = 0
 	egyptian_pagan = 0
@@ -225,7 +225,7 @@ k_serbia = {
 	aten_pagan = 75
 }
 
-k_greece = {
+k_byzantium = {
 	celtic_pagan_reformed = 25
 	hellenic_pagan = 1000
 	egyptian_pagan = 250
@@ -239,7 +239,7 @@ k_bulgaria = {
 	aten_pagan = 250	
 }
 
-k_wallachia = {
+k_dacia = {
 	celtic_pagan_reformed = 50
 	hellenic_pagan = 600
 	egyptian_pagan = 0
@@ -403,8 +403,8 @@ k_mali = {
 # + Lithuania
 #
 ################################
-
-k_pommerania = {
+ 
+k_pomerania = {
 	celtic_pagan_reformed = 50
 	hellenic_pagan = 0
 	egyptian_pagan = 0

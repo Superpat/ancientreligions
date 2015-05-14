@@ -162,4 +162,8 @@ GOD_MNEMOSYNE;Mnemosyne;Mnemosyne;Mnemosyne;;Mnemosyne;;;;;;;;;x
 GOD_THEMIS;Themis;Themis;Themis;;Themis;;;;;;;;;x
 GOD_KRIUS;Krius;Krius;Krius;;Krius;;;;;;;;;x
 GOD_IAPETUS;Iapetus;Iapetus;Iapetus;;Iapetus;;;;;;;;;x
-#;;;;;;;;;;;;;;x
+###### Holy orders;;;;;;;;;;;;;;x
+d_legio_hellenica;Legio Hellenica;;;;;;;;;;;;;x
+d_legio_hellenica_adj;Legio Hellenica;;;;;;;;;;;;;x
+CENTURIO;Centurio;;;;;;;;;;;;;x
+CENTURIO_FOA;Centurio's;;;;;;;;;;;;;x

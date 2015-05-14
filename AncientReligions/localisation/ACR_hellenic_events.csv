@@ -42,6 +42,10 @@ EVTOPTBancrel.2106;Enough, imprison [Root.target_maniot_priest.GetHerHim] and fe
 EVTDESCancrel.2107;The augur describes how the Maniots managed to keep the knowledge of the old Hellenic practices. [Root.target_maniot_priest.GetSheHeCap] has forseen that a ruler would one day restore the old faith, and build a mighty Empire that would last centuries.;;;;;;;;;;;;;x
 EVTOPTAancrel.2107;Obviously the gods have spoken, I shall embrace my destiny!;;;;;;;;;;;;;x
 EVTOPTBancrel.2107;Funny how augurs always tell you what you want to hear...;;;;;;;;;;;;;x
+###### Holy order;;;;;;;;;;;;;;x
+EVTTITLEancrel.2109;The Rise of the Hellenic Faith;;;;;;;;;;;;;x
+EVTDESCancrel.2109;The lost Hellenic Faith, but there is a new hope for their gods. The last believers captured major cities and are trying to lead the faith to its former Glory. After the occupation of Rome and Constantinople the hidden cult of the Legio Hellenica armed themselves and started fighting for their Gods again.;;;;;;;;;;;;;x
+EVTOPTAancrel.2109;Interesting...;;;;;;;;;;;;;x
 ###### Roman revival;;;;;;;;;;;;;;x
 was_refused_roman_revival;Roman revival refused;S'est vu refusé la renaissance romaine;;;;;;;;;;;;x
 was_allowed_roman_revival;Roman revival allowed;S'est vu autorisé la renaissance romaine;;;;;;;;;;;;x

@@ -1,3 +1,16 @@
+Next
+-------------------------
+
+Celtic Paganism:
+- Tweaked St Kilda event chain to be more likely
+
+Hellenic:
+- Added an Hellenic revival event chance if Mani Peninsula is in the realm, and an homage to the 30 pages thread about that on the forum.
+- Tweaked Studied the classics event chain:
+-- Made it more likely to be taken by an AI courtier of the player
+-- Added low possibility for Hellenic heresies
+-- Added opportunity for host to convert, if specific traits
+
 2015-3-10 v0.36.2 "Anchises"
 -------------------------
 Celtic Paganism:

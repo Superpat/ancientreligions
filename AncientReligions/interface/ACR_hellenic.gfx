@@ -41,5 +41,12 @@ spriteTypes = {
 		texturefile = "gfx\\event_pictures\ACR\lightning_strike.tga"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_evt_cave_dwellers"
+		texturefile = "gfx\\event_pictures\ACR\cave_dwellers.tga"
+		allwaystransparent = yes
+	}
+	
+	
 
 }

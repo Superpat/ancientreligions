@@ -14,6 +14,7 @@ EVTOPTBancrel.2100;No, I'm secure in my faith;Non, je suis convaincu dans ma foi
 EVTDESCancrel.2101;As you are sitting down to dinner, your [Root.GetLordSpiritualName] comes up to you and tells you that [From.GetBestName] has strayed from the true faith. Claiming to have found enlightenment in the classical texts of ancient Rome and Greece, [From.GetSheHe] has forsaken [Root.Religion.GetRandomGodName] and professed his devotion to [From.Religion.GetRandomGodName].;Alors que vous vous asseyez pour dîner, votre [Root.GetLordSpiritualName] s'approche et vous explique que [From.GetBestName] s'est écarté de la vraie foi. Prétendant avoir trouvé l'illumination dans les textes classiques de la Rome et Grèce antique, [From.GetSheHe] a délaissé [Root.Religion.GetRandomGodName] et proclamé sa dévotion à [From.Religion.GetRandomGodName].;;;;;;;;;;;;x
 EVTOPTAancrel.2101;My [From.GetSonDaughter] did WHAT?;[From.GetSonDaughter] a fait QUOI ?;;;;;;;;;;;;x
 EVTOPTBancrel.2101;[From.GetSheHe] did WHAT?;[From.GetSheHe] a fait QUOI ?;;;;;;;;;;;;x
+EVTOPTCancrel.2101;Tell him I'd like to know more about these ancient gods.;;;;;;;;;;;;x
 EVTDESCancrel.2102;With the restoration of the religious institutions of old, you have the opportunity to re-establish the old imperial state religion once again, but your Christian vassals are not likely to appreciate such a decree.;Suite à la restauration des institutions religieuses du passé, vous avez l'opportunité de rétablir l'ancienne religion impériale à nouveau, mais vos vassaux chrétiens ne vont probablement pas apprécier un tel décret.;;;;;;;;;;;;x
 EVTOPTAancrel.2102;We must restore the glory of the old faith!;Nous devons restaurer la gloire de foi antique !;;;;;;;;;;;;x
 EVTTOOLTIPAancrel.2102;Parts of the Empire will convert to the re-established imperial state religion.\n;Des parties de l'Empire vont se convertir à la religion impériale rétablie.\n;;;;;;;;;;;;x
@@ -29,6 +30,18 @@ EVTNAMEancrel.2104;Return of the Pontificate Maxima;;;;;;;;;;;;;x
 EVTDESCancrel.2104;After an interlude lasting a few centuries following the adoption of Christianity in Rome, Hellenism has returned as the state religion of [From.PrimaryTitle.GetName] and [From.GetTitledFirstName] has ordered the reinstitution of the Collegium Pontificum.\n\nThe Pontificate Maxima will serve as the highest religious authority in the Hellenic world, with powers ranging from the blessing of future military expeditions to the nomination of Vestals and flamens.;;;;;;;;;;;;;x
 EVTOPTAancrel.2104;Rejoice!;Réjouissons-nous !;Frohlocket!;;¡Regocijaos!;;;;;;;;;x
 EVTOPTBancrel.2104;Heathens!;Païens !;Ketzer!;;¡Paganos!;;;;;;;;;x
+###### Mani Penninsula;;;;;;;;;;;;;;x
+EVTDESCancrel.2105;You have heard rumours about a group of Hellenic peasants on the Mani Penninsula who continue to practice their old ways. There is much debate at court on how large that group is, and how much their practices may have evolved since the old times...;;;;;;;;;;;;;x
+EVTOPTAancrel.2105;This is an opportunity to better know my realm.;;;;;;;;;;;;;x
+EVTOPTBancrel.2105;How stupid, the Hellenic faith is long dead !;;;;;;;;;;;;;x
+travel_penninsula;You travel to the penninsula...;;;;;;;;;;;;;x
+EVTDESCancrel.2106;Reaching the tip of the penninsula, you discover in the hills a waterless and innaccesible place where the Maniots live. As you approach, you notice an old [Root.target_maniot_priest.GetManWoman] who seems to be waiting for you. [Root.target_maniot_priest.GetSheHeCap] explains that the gods have sent signs of your arrival.;;;;;;;;;;;;;x
+EVTOPTAancrel.2106;An augur, how facinating!;;;;;;;;;;;;;x
+listen_to_maniot;Listen to the story of the augur;;;;;;;;;;;;;x
+EVTOPTBancrel.2106;Enough, imprison [Root.target_maniot_priest.GetHerHim] and fetch a [Root.Religion.GetPriestTitle] to convert those pagans.;;;;;;;;;;;;;x
+EVTDESCancrel.2107;The augur describes how the Maniots managed to keep the knowledge of the old Hellenic practices. [Root.target_maniot_priest.GetSheHeCap] has forseen that a ruler would one day restore the old faith, and build a mighty Empire that would last centuries.;;;;;;;;;;;;;x
+EVTOPTAancrel.2107;Obviously the gods have spoken, I shall embrace my destiny!;;;;;;;;;;;;;x
+EVTOPTBancrel.2107;Funny how augurs always tell you what you want to hear...;;;;;;;;;;;;;x
 ###### Roman revival;;;;;;;;;;;;;;x
 was_refused_roman_revival;Roman revival refused;S'est vu refusé la renaissance romaine;;;;;;;;;;;;x
 was_allowed_roman_revival;Roman revival allowed;S'est vu autorisé la renaissance romaine;;;;;;;;;;;;x

@@ -120,15 +120,27 @@ GOD_OLYMPIANS;the Olympians;the Olympians;the Olympians;;the Olympians;;;;;;;;;x
 THE_DIALOGUES;The Dialogues;The Dialogues;The Dialogues;;The Dialogues;;;;;;;;;x
 PHILOSOPHER;Philosophos;Philosophos;Philosophos;;Philosophos;;;;;;;;;x
 promethean_pagan;Promethean;Promethean;Promethean;;Promethean;;;;;;;;;x
-promethean_pagan_DESC;Prometheanism is the worship of the Titan Prometheus and, to a lesser extent, his brother Epimetheus, as the fathers of humanity. Prometheanism acknowledges the existence, and divinity, of the Olympians, but rejects their worthiness as beings to be worshiped. Prometheans value intellectual pursuits above all, finding guile, diplomacy, and a quick wit to be the highest art forms. They find violence distasteful, but recognize that it is ocassionally necessary.Defining features in-game:\n§Y*§! Prometheans gain piety while at peace.\n§Y*§! The Scholarch of the First Academy leads the Promethean faitfhul.\n§Y*§! Prometheans cannot use, and are not targetable by, the Pagan Subjugation CB.\n§Y*§! Prometheans gain a bonus to Learning.\n§Y*§! Prometheanism is a feminist faith.\n§Y*§! Women may hold temples.\n§Y*§! Priests can marry.\n§Y*§! Promethean rulers may designate their heir.;;;;;;;;;;;;;x
+promethean_pagan_DESC;Prometheanism is the worship of the Titan Prometheus and, to a lesser extent, his brother Epimetheus, as the fathers of humanity. Prometheanism acknowledges the existence, and divinity, of the Olympians, but rejects their worthiness as beings to be worshiped. Prometheans value intellectual pursuits above all, finding guile, diplomacy, and a quick wit to be the highest art forms. They find violence distasteful, but recognize that it is ocassionally necessary. Defining features in-game:\n§Y*§! Prometheans gain piety while at peace.\n§Y*§! The Scholarch of the First Academy leads the Promethean faithful.\n§Y*§! Prometheans cannot use, and are not targetable by, the Pagan Subjugation CB.\n§Y*§! Prometheans gain a bonus to Learning.\n§Y*§! Prometheanism is a feminist faith.\n§Y*§! Women may hold temples.\n§Y*§! Priests can marry.\n§Y*§! Promethean rulers may designate their heir.\n§Y*§! Prometheans may use a once-per-life-time Expansion CB.;;;;;;;;;;;;;x
 promethean_philosophy;Promethean Philosophy;Promethean Philosophy;Promethean Philosophy;;Promethean Philosophy;;;;;;;;;x
 promethean_philosophy_desc;Promethean beliefs encourage intellectual pursuits and the advancements of science, technology, and logic. Prometheans tend toward higher education as a result.;;;;;;;;;;;;;x
+promethean_expansion_desc;Promethean rulers may, once per lifetime, invade a neighboring kingdom to expand the realm.;;;;;;;;;;;;;x
+CB_NAME_EXPANSION;Expansion into [Title.GetBaseName];;;;;;;;;;;;;x
+WAR_NAME_EXPANSION;$ORDER$$FIRST_ADJ$ Expansion into $OTHER_TITLE$;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 d_promethean_pagan;First Academy;;;;;;;;;;;;;x
 d_promethean_pagan_adj;Academecian;;;;;;;;;;;;;x
 SCHOLARCH;Scholarch;Scholarch;Scholarch;;Scholarch;;;;;;;;;x
 d_men_of_steel;Men of Steel;;;;;;;;;;;;;x
-d_men_of_steel_adj;Steel;;;;;;;;;;;;;x
+d_men_of_steel_adj;Steely;;;;;;;;;;;;;x
+organize_men_of_steel;Organize the Men of Steel;;;;;;;;;;;;;x
+organize_men_of_steel_desc;Create the Men of Steel, a Holy Order of Prometheanism.;;;;;;;;;;;;;x
+hold_unbinding_festival;Hold the Unbinding Festival;;;;;;;;;;;;;x
+hold_unbinding_festival_desc;Hold a festival in remembrance of Prometheus' Unbinding from Mt Kazbek;;;;;;;;;;;;;x
+rebuild_first_academy;Rebuild the First Academy;;;;;;;;;;;;;x
+rebuild_first_academy_desc;Rebuild the First Academy, with the Scholarch as the head of the Promethean faith.;;;;;;;;;;;;;x
+rebuild_crotone;Rebuild Crotone;;;;;;;;;;;;;x
+rebuild_crotone_desc;Rebuild the Academy at Crotone;;;;;;;;;;;;;x
+first_academy_restored;First Academy Restored;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 temple_baron_promethean_pagan;Philosophos;Philosophos;Philosophos;;Philosophos;;;;;;;;;x
 temple_baron_female_promethean_pagan;Philosophoia;Philosophoia;Philosophoia;;Philosophoia;;;;;;;;;x
@@ -162,7 +174,7 @@ GOD_KOIOS;Koios;Koios;Koios;;Koios;;;;;;;;;x
 GOD_PHOEBE;Phoebe;Phoebe;Phoebe;;Phoebe;;;;;;;;;x
 GOD_MNEMOSYNE;Mnemosyne;Mnemosyne;Mnemosyne;;Mnemosyne;;;;;;;;;x
 GOD_THEMIS;Themis;Themis;Themis;;Themis;;;;;;;;;x
-GOD_KRIUS;Krius;Krius;Krius;;Krius;;;;;;;;;x
+GOD_KRIOS;Krios;Krios;Krios;;Krios;;;;;;;;;x
 GOD_IAPETUS;Iapetus;Iapetus;Iapetus;;Iapetus;;;;;;;;;x
 #;;;;;;;;;;;;;x
 d_sickles;Sickles;;;;;;;;;;;;;x

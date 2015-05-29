@@ -1,0 +1,86 @@
+##################################################################
+# 
+# ANCIENT RELIGIONS
+# - Promethean Events
+#
+# Event IDs ancrel.3400-3569 are reserved
+#
+# ancrel.3400 - 3410   various maintenance type events
+# ancrel.3411 - 
+#
+##################################################################
+
+# Author: Adam 'theStormWeaver/xirsoi' Chevalier
+namespace = ancrel
+
+# First Academy has been restored!
+narrative_event = {
+	id = ancrel.3400
+	title = ancrel.3400.title
+	desc = ancrel.3400.desc
+	picture = GFX_evt_scientist
+	border = GFX_event_narrative_frame_religion
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		trigger = {
+			ROOT = FROM
+		}
+		name = ancrel.3400.a
+	}
+
+	option = {
+		trigger = {
+			religion = promethean_pagan
+			NOT = {
+				ROOT = FROM
+			}
+		}
+		name = ancrel.3400.b
+	}
+
+	option = {
+		trigger = {
+			NOT = { religion = promethean_pagan }
+		}
+		name = ancrel.3400.c
+	}
+}
+
+# Men of Steel created!
+narrative_event = {
+	id = ancrel.3401
+	title = ancrel.3401.title
+	desc = ancrel.3401.desc
+	picture = GFX_evt_war_planning
+	border = GFX_evt_narrative_frame_war
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		trigger = {
+			ROOT = FROM
+		}
+		name = ancrel.3401.a
+	}
+
+	option = {
+		trigger = {
+			religion = promethean_pagan
+			NOT = {
+				ROOT = FROM
+			}
+		}
+		name = ancrel.3401.b
+	}
+
+	option = {
+		trigger = {
+			NOT = { religion = promethean_pagan }
+		}
+		name = ancrel.3401.c
+	}
+}

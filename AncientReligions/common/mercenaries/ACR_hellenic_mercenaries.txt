@@ -16,3 +16,9 @@ steel_composition = {
 	archers = 300
 	knights = 200
 }
+
+hellenic_composition = {
+	levy_size = 4
+	heavy_infantry = 2000
+	archers = 500
+}

@@ -318,6 +318,7 @@ decisions = {
 					d_promethean_pagan = {
 						grant_title = PREV
 					}
+					set_de_facto_liege = ROOT
 				}
 			}
 			religion_authority = { modifier = first_academy_restored }

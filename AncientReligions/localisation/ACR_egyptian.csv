@@ -29,8 +29,8 @@ d_anubis;Anubis Guard;Garde d'Anubis;Anubis Guard;;Anubis Guard;;;;;;;;;x
 d_anubis_adj;Guardian;Garde;Guardian;;Guardian;;;;;;;;;x
 d_horus;Horus Guard;Garde d'Horus;Horus Guard;;Horus Guard;;;;;;;;;x
 d_horus_adj;Guardian;Garde;Guardian;;Guardian;;;;;;;;;x
-d_aten_pagan;The Paragon Cult of Aten;;;;;;;;;;;;;x
-d_aten_pagan_adj;Atenic;;;;;;;;;;;;;x
+k_aten_pagan;The Paragon Cult of Aten;;;;;;;;;;;;;x
+k_aten_pagan_adj;Atenic;;;;;;;;;;;;;x
 d_burning_blades;The Burning Blades;;;;;;;;;;;;;x
 d_burning_blades_adj;Burning;;;;;;;;;;;;;x
 ###### FOA egyptian_pagan;;;;;;;;;;;;;;x

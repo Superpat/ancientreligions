@@ -283,7 +283,7 @@ decisions = {
 			wealth = -500
 			piety = -250
 			prestige = 250
-			activate_title = { title = d_aten_pagan status = yes }
+			activate_title = { title = k_aten_pagan status = yes }
 			hidden_tooltip = {
 				d_egyptian_pagan = {
 					grant_title = ROOT
@@ -434,7 +434,7 @@ decisions = {
 			NOT = { has_global_flag = burning_blades_founded }
 		}
 		allow = {
-			d_aten_pagan = {
+			k_aten_pagan = {
 				holder = ROOT
 			}
 			higher_tier_than = king

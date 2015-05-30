@@ -3,10 +3,12 @@
 # ANCIENT RELIGIONS
 # - Promethean Events
 #
-# Event IDs ancrel.3400-3569 are reserved
+# Event IDs ancrel.3400-3549 are reserved
 #
-# ancrel.3400 - 3410   various maintenance type events
-# ancrel.3411 - 
+# ancrel.3400 - 3410	various maintenance type events
+# ancrel.3411 - 3430	Rebuilding of Crotone
+# ancrel.3450 - 3549	The Unbinding Festival
+# ancrel.3550 - 3599	Holy Order Events
 #
 ##################################################################
 
@@ -49,11 +51,64 @@ narrative_event = {
 	}
 }
 
+# Depopulated Province Converts!
+province_event = {
+	id = ancrel.3401
+	desc = ancrel.3401.desc
+	picture = GFX_evt_peasants
+	border = GFX_event_normal_frame_economy
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_province_modifier = depopulated_province
+	}
+
+	weight_multiplier = {
+		years = 50
+		modifier = {
+			religion_authority = 0.50
+			factor = 1.5
+		}
+		modifier = {
+			religion_authority = 0.75
+			factor = 1.5
+		}
+		modifier = {
+			religion_authority = 0.90
+			factor = 1.5
+		}
+		modifier = {
+			top_liege = holder
+			factor = 1.25
+		}
+	}
+
+	immediate = {
+		top_liege = {
+			ROOT = {
+				religion = PREV
+				culture = PREV
+			}
+		}
+	}
+
+	option = {
+		name = OK
+	}
+}
+
+###################################################################
+#
+# Men of Steel
+#
+###################################################################
+
 # Men of Steel created!
 narrative_event = {
-	id = ancrel.3401
-	title = ancrel.3401.title
-	desc = ancrel.3401.desc
+	id = ancrel.3550
+	title = ancrel.3550.title
+	desc = ancrel.3550.desc
 	picture = GFX_evt_war_planning
 	border = GFX_evt_narrative_frame_war
 
@@ -64,7 +119,7 @@ narrative_event = {
 		trigger = {
 			ROOT = FROM
 		}
-		name = ancrel.3401.a
+		name = ancrel.3550.a
 	}
 
 	option = {
@@ -74,13 +129,13 @@ narrative_event = {
 				ROOT = FROM
 			}
 		}
-		name = ancrel.3401.b
+		name = ancrel.3550.b
 	}
 
 	option = {
 		trigger = {
 			NOT = { religion = promethean_pagan }
 		}
-		name = ancrel.3401.c
+		name = ancrel.3550.c
 	}
 }

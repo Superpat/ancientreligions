@@ -42,9 +42,9 @@ EVTOPTBancrel.2106;Enough, imprison [Root.target_maniot_priest.GetHerHim] and fe
 EVTDESCancrel.2107;The augur describes how the Maniots managed to keep the knowledge of the old Hellenic practices. [Root.target_maniot_priest.GetSheHeCap] has forseen that a ruler would one day restore the old faith, and build a mighty Empire that would last centuries.;;;;;;;;;;;;;x
 EVTOPTAancrel.2107;Obviously the gods have spoken, I shall embrace my destiny!;;;;;;;;;;;;;x
 EVTOPTBancrel.2107;Funny how augurs always tell you what you want to hear...;;;;;;;;;;;;;x
-###### Holy order;;;;;;;;;;;;;;x
+###### Hellenic Legion;;;;;;;;;;;;;;x
 EVTTITLEancrel.2109;The Rise of the Hellenic Faith;;;;;;;;;;;;;x
-EVTDESCancrel.2109;The lost Hellenic Faith, but there is a new hope for their gods. The last believers captured major cities and are trying to lead the faith to its former Glory. After the occupation of Rome and Constantinople the hidden cult of the Legio Hellenica armed themselves and started fighting for their Gods again.;;;;;;;;;;;;;x
+EVTDESCancrel.2109;Secret adherents to the ancient beliefs of the Greek and Roman people have been coming forward in droves. Holding onto the ancient customs of Rome and led by a Centurio, they refer to themselves as the Hellenic Legion. Sworn to push back the tide of Sons of Abraham, these zealots are prepared to be the sword arm of a new Hellenism.;;;;;;;;;;;;;x
 EVTOPTAancrel.2109;Interesting...;;;;;;;;;;;;;x
 ###### Roman revival;;;;;;;;;;;;;;x
 was_refused_roman_revival;Roman revival refused;S'est vu refusé la renaissance romaine;;;;;;;;;;;;x
@@ -84,11 +84,12 @@ ancrel.3400.desc;Centuries after Plato's Academy was shuttered by the Emperor Ju
 ancrel.3400.a;Let it shine as a beacon of enlightenment!;;;;;;;;;;;;;x
 ancrel.3400.b;Let its holy fires never darken!;;;;;;;;;;;;;x
 ancrel.3400.c;Distressing...;;;;;;;;;;;;;x
-ancrel.3401.title;Men of Steel;;;;;;;;;;;;;x
-ancrel.3401.desc;In response to a growing need to defend Promethean interests against the 'un-enlightened', [From.GetTitledName] has created an elite fighting force, the Men of Steel. In Promethean society, the military caste is known as the 'Men of Iron', the Men of Steel are formed from the elite members of the Iron caste. Forged in the heat of battle, these warriors of Prometheus will face any foe that threatens their ways with cunning and bravery.;;;;;;;;;;;;;x
-ancrel.3401.a;Make our Father proud...;;;;;;;;;;;;;x
-ancrel.3401.b;Englightenment cannot be stopped!;;;;;;;;;;;;;x
-ancrel.3401.c;Thats not good...;;;;;;;;;;;;;x
+ancrel.3401.desc;The province of [Root.GetName], devestated after its conquest by your armies, has been slowly settled since then by people from your realm. The majority of its inhabitants are now [This.Culture.GetName] [This.Religion.GetName]!;;;;;;;;;;;;;x
+ancrel.3550.title;Men of Steel;;;;;;;;;;;;;x
+ancrel.3550.desc;In response to a growing need to defend Promethean interests against the 'un-enlightened', [From.GetTitledName] has created an elite fighting force, the Men of Steel. In Promethean society, the military caste is known as the 'Men of Iron', the Men of Steel are formed from the elite members of the Iron caste. Forged in the heat of battle, these warriors of Prometheus will face any foe that threatens their ways with cunning and bravery.;;;;;;;;;;;;;x
+ancrel.3550.a;Make our Father proud...;;;;;;;;;;;;;x
+ancrel.3550.b;Englightenment cannot be stopped!;;;;;;;;;;;;;x
+ancrel.3550.c;Thats not good...;;;;;;;;;;;;;x
 ###### Titan Cult events;;;;;;;;;;;;;;x
 hold_titan_thysia;Hold a Great Thysia;Tenir un grand thysia ;Haltet ein Thysia ab;;Celebrar una Gran Thysia;;;;;;;;;x
 hold_titan_thysia_desc;Hold a great thysia together with your vassals and offer sacrifice to the titans for good harvests and success on the battlefield. This can only be done every ninth year.;Tenez un grand blót accompagné de vos vassaux et offrez des sacrifices aux dieux en remerciement pour les bonnes récoltes et pour le succès sur le champ de bataille. Cela ne se fait qu'une fois à tous les neuf ans.;Haltet mit Euren Vasallen ein Blót ab und dankt den Göttern für gute Ernten und Erfolge auf dem Schlachtfeld. Dies kann nur jedes neunte Jahr durchgeführt werden.;;Celebrar una gran mancha junto con tus vasallos y ofrecer sacrificios a los dioses por buenas cosechas y el éxito en el campo de batalla. Esto sólo puede hacerse cada nueve años.;;;;;;;;;x

@@ -134,7 +134,7 @@ d_egyptian_pagan = {
 	}
 }
 
-d_aten_pagan = {
+k_aten_pagan = {
 	color = { 222 125 120 }
 	color2 = { 120 120 0 }
 	

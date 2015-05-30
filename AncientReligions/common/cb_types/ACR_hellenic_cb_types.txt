@@ -640,6 +640,21 @@ promethean_expansion = {
 						type = invasion
 					}
 				}
+				any_province = {
+					if = {
+						limit = {
+							de_jure_liege_or_above = PREV # target kingdom 
+							ROOT = {
+								completely_controls = PREV # conqueror controls the province
+							}
+							NOT = {
+								religion = ROOT
+							}
+						}
+						remove_province_modifier = depopulated_province
+						add_province_modifier = { name = depopulated_province duration = 10950 }
+					}
+				}
 			}
 		}
 	}

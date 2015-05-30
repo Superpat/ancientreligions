@@ -42,7 +42,7 @@
 #
 # ancrel.3000 - ancrel.3399 Epic Bloodlines
 # ancrel.3400 - ancrel.3549 Promethean Flavor Events
-# ancrel.3550 - ancrel.3569 Promethean Holy Orders
+# ancrel.3550 - ancrel.3599 Promethean Holy Orders
 # ancrel.3600 - ancrel.3699 Titan Thysia
 # ancrel.3700 - ancrel.3749 Titan Holy Orders
 #

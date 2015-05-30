@@ -51,33 +51,58 @@ modifier_flamen_quirinalis = {
 #####################################################################
 
 was_refused_roman_revival = {
-local_revolt_risk = 0.02
-icon = 33
+	icon = 33
+	local_revolt_risk = 0.02
 }
 
 was_allowed_roman_revival = {
-local_revolt_risk = -0.02
-icon = 15
+	icon = 15
+	local_revolt_risk = -0.02
 }
 
 refused_roman_revival = {
-town_opinion = -10
-icon = 33
+	icon = 33
+	town_opinion = -10
 }
 
 allowed_roman_revival = {
-town_opinion = 10
-icon = 15
+	icon = 15
+	town_opinion = 10
 }
 
 #####################################################################
 # Titan Modifiers
 #####################################################################
 held_titan_thysia_modifier = {
+	icon = 13
 	land_morale = 0.15
 	monthly_character_prestige = 0.25
 	monthly_character_piety = 0.5
-	icon = 13
 }
 
 held_titan_thysia_timer = { icon = 1 }
+
+#####################################################################
+# Promethean Modifiers
+#####################################################################
+depopulated_province = {
+	icon = 36
+
+	land_morale = -0.15
+	disease_defense = -0.10
+	supply_limit = -2
+	castle_levy_size = -0.25
+	city_levy_size = -0.25
+	temple_levy_size = -0.25	
+}
+
+held_unbinding_festival = {
+	icon = 17
+
+	land_morale = 0.15
+	monthly_character_prestige = 0.25
+	monthly_character_piety = 0.5
+    rel_head_opinion = 10
+}
+
+held_unbinding_festival_timer = { icon = 1 }

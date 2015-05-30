@@ -146,6 +146,10 @@ rebuild_first_academy_desc;Rebuild the First Academy, with the Scholarch as the 
 rebuild_crotone;Rebuild Crotone;;;;;;;;;;;;;x
 rebuild_crotone_desc;Rebuild the Academy at Crotone;;;;;;;;;;;;;x
 first_academy_restored;First Academy Restored;;;;;;;;;;;;;x
+held_unbinding_festival;Held an Unbinding Festival;;;;;;;;;;;;;x
+held_unbinding_festival_timer;timer;;;;;;;;;;;;;x
+depopulated_province;Depopulated;;;;;;;;;;;;;x
+depopulated_province_desc;This province was recently invaded and is severely depopulated. It will take a long time for it to fully recover.;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 temple_baron_promethean_pagan;Philosophos;Philosophos;Philosophos;;Philosophos;;;;;;;;;x
 temple_baron_female_promethean_pagan;Philosophoia;Philosophoia;Philosophoia;;Philosophoia;;;;;;;;;x

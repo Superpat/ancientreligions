@@ -807,6 +807,11 @@ narrative_event = {
 					religion = hellenic_pagan
 				}
 			}
+			e_rome = {
+				holder_scope = {
+					religion = hellenic_pagan
+				}
+			}
 			496 = { # Constantinople
 				owner = { religion = hellenic_pagan }
 			}

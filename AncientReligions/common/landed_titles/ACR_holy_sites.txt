@@ -67,6 +67,7 @@ b_svetitskhoveli = {
 	holy_site = promethean_pagan
 }
 
+# Thessalonike
 b_thesedessa = {
 	holy_site = promethean_pagan
 	holy_site = titan_pagan

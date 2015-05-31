@@ -296,6 +296,7 @@ on_yearly_pulse = {
 		# Ancient Religions
 		100 = ancrel.1260 # fennid arrested by marshal, catholics only (why?)
 		100 = ancrel.1254 # fian visiting your court
+		100 = ancrel.3401 # Depopulated Province is Settled
 
 		5000 = 0 # Chance of no yearly event
 	}

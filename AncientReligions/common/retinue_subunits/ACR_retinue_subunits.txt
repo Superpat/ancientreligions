@@ -26,7 +26,7 @@ RETTYPE_CUL_ROMAN =
 }
 
 RETTYPE_CUL_GAULISH = {
-	first_type = 1
+	first_type = 4
 	first_amount = 250
 
 	potential = {

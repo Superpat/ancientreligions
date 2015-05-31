@@ -807,7 +807,7 @@ narrative_event = {
 					religion = hellenic_pagan
 				}
 			}
-			e_rome = {
+			e_roman_empire = {
 				holder_scope = {
 					religion = hellenic_pagan
 				}

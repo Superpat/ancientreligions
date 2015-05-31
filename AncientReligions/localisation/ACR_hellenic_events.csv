@@ -84,7 +84,7 @@ ancrel.3400.desc;Centuries after Plato's Academy was shuttered by the Emperor Ju
 ancrel.3400.a;Let it shine as a beacon of enlightenment!;;;;;;;;;;;;;x
 ancrel.3400.b;Let its holy fires never darken!;;;;;;;;;;;;;x
 ancrel.3400.c;Distressing...;;;;;;;;;;;;;x
-ancrel.3401.desc;The province of [Root.GetName], devestated after its conquest by your armies, has been slowly settled since then by people from your realm. The majority of its inhabitants are now [This.Culture.GetName] [This.Religion.GetName]!;;;;;;;;;;;;;x
+ancrel.3401.desc;The province of [Root.GetName], devestated after its conquest by your armies, has been slowly settled since then by people from your realm. The majority of its inhabitants are now [This.Culture.GetName] and [This.Religion.GetName]!;;;;;;;;;;;;;x
 ancrel.3550.title;Men of Steel;;;;;;;;;;;;;x
 ancrel.3550.desc;In response to a growing need to defend Promethean interests against the 'un-enlightened', [From.GetTitledName] has created an elite fighting force, the Men of Steel. In Promethean society, the military caste is known as the 'Men of Iron', the Men of Steel are formed from the elite members of the Iron caste. Forged in the heat of battle, these warriors of Prometheus will face any foe that threatens their ways with cunning and bravery.;;;;;;;;;;;;;x
 ancrel.3550.a;Make our Father proud...;;;;;;;;;;;;;x

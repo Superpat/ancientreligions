@@ -71,6 +71,7 @@ decisions = {
 			}
 		}
 	}
+
 	found_sickles = {
 		is_high_prio = yes
 		potential = {
@@ -89,16 +90,16 @@ decisions = {
 		allow = {
 			num_of_holy_sites = 2
 			primary_title = { higher_tier_than = DUKE }
-			moral_authority = 0.30
+			religion_authority = 0.30
 
-			wealth = 300
-			piety = 100
-			prestige = 200
+			wealth = 200
+			piety = 300
+			prestige = 300
 		}
 		effect = {
-			wealth = -300
-			piety = -100
-			prestige = -200
+			wealth = -200
+			piety = -300
+			prestige = -300
 			activate_title = { title = d_sickles status = yes }
 			create_character = {
 				random_traits = no
@@ -117,9 +118,9 @@ decisions = {
 				d_sickles = {
 					grant_title = PREV
 				}
-				wealth = 100
-				piety = 100
-				prestige = 100
+				wealth = 200
+				piety = 300
+				prestige = 300
 				create_character = {
 					random_traits = yes
 					dynasty = random
@@ -207,19 +208,19 @@ decisions = {
 			modifier = {
 				factor = 0
 				NOT = {
-					wealth = 500
+					wealth = 300
 				}
 			}
 			modifier = {
 				factor = 0
 				NOT = {
-					piety = 200
+					piety = 500
 				}
 			}
 			modifier = {
 				factor = 0
 				NOT = {
-					prestige = 300
+					prestige = 500
 				}
 			}
 			modifier = {
@@ -228,16 +229,21 @@ decisions = {
 			}
 		}
 	}
+
 	recreate_pontificate = {
 		is_high_prio = yes
 		potential = {
 			religion = hellenic_pagan
 			primary_title = { higher_real_tier_than = DUKE }
+			independent = yes
 			d_hellenic_pagan = {
 				has_holder = no #Covers the case of destroyed title considered active
 			}
 		}
 		allow = {
+			age = 16
+			prisoner = no
+
 			c_roma = { holder = ROOT }
 			OR = {
 				completely_controls = d_latium
@@ -289,6 +295,7 @@ decisions = {
 			}			
 		}
 	}
+
 	rebuild_first_academy = {
 		is_high_prio = yes
 		potential = {
@@ -299,9 +306,12 @@ decisions = {
 			}
 		}
 		allow = {
+			age = 16
+			prisoner = no
+
 			c_atheniai = { holder = ROOT }
 			b_piraeaus = { 
-				holder = {
+				owner = {
 					religion = promethean_pagan
 				}
 			}
@@ -314,14 +324,15 @@ decisions = {
 			prestige = -300
 			activate_title = { title = d_promethean_pagan status = yes }
 			b_piraeaus = {
-				holder = {
+				owner = {
 					d_promethean_pagan = {
 						grant_title = PREV
 					}
-					set_de_facto_liege = ROOT
+					set_defacto_liege = ROOT
 				}
 			}
 			religion_authority = { modifier = first_academy_restored }
+			set_character_flag = acr_restorer_of_academy
 			hidden_tooltip = {
 				narrative_event = { id = ancrel.3400 }
 			}
@@ -354,12 +365,254 @@ decisions = {
 			}			
 		}
 	}
+
 	rebuild_crotone = {
-	
+		is_high_prio = yes
+		potential = {
+			religion = promethean_pagan
+			primary_title = { higher_real_tier_than = COUNT }
+			NOT = {
+				has_global_flag = acr_crotone_rebuilt
+			}
+		}
+		allow = {
+			completely_controls = c_consenza
+			wealth = 1000
+			age = 16
+
+			prisoner = no
+			war = no
+			has_regent = no
+		}
+		effect = {
+			
+		}
+		revoke_allowed = { }
+		ai_will_do = { }
 	}
+
 	hold_unbinding_festival = {
+		is_high_prio = yes
+		potential = {
+			has_dlc = "The Old Gods"
+			is_ruler = yes
+			age = 16
+			prisoner = no
+			
+			religion = promethean_pagan
+			
+			NOT = { has_character_modifier = held_unbinding_festival_timer }
+			NOT = {	has_character_flag = holding_unbinding_festival }
+			NOT = {	has_character_flag = do_not_disturb }
+		}
+		allow = {
+			war = no
+			any_demesne_title = {
+				is_occupied = no
+			}
+			OR = {
+				month = 6			
+				NOT = { month = 9 }
+			}
+			wealth = 50
+			prisoner = no
+			NOT = { trait = in_hiding }
+		}
+		effect = {
+			wealth = -50
+			set_character_flag = holding_unbinding_festival
+			set_character_flag = recent_minor_decision
+			set_character_flag = do_not_disturb
+			hidden_tooltip = { character_event = { id = ancrel.3549 days = 150 } } # Safety catch flag clearing
+			custom_tooltip = {
+				text = prepare_unbinding_festival
+				hidden_tooltip = { 
+					character_event = { id = ancrel.3450 } 
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					wealth = 300
+				}
+			}
+			modifier = {
+				factor = 0
+				trait = cynical
+			}
+			modifier = {
+				factor = 0
+				NOT = { diplomacy = 10 }
+			}	
+			modifier = {
+				factor = 0
+				has_character_flag = recent_minor_decision
+				NOT = {
+					had_character_flag = {
+						flag = recent_minor_decision
+						days = 180
+					}
+				}
+			}
+		}
 	}
+
 	organize_men_of_steel = {
+		is_high_prio = yes
+		potential = {
+			is_ruler = yes
+			religion = promethean_pagan
+			primary_title = { higher_real_tier_than = DUKE }
+			d_promethean_pagan = { has_holder = yes } # There must be a Scholarch of the First Academy
+		}
+		allow = {
+			age = 16
+			prisoner = no
+
+			piety = 300
+			prestige = 300
+			wealth = 200
+			religion_authority = 0.75
+		}
+		effect = {
+			piety = -300
+			prestige = -300
+			wealth = -200
+
+			activate_title = { title = d_men_of_steel status = yes }
+			create_character = {
+				random_traits = no
+				religion = promethean_pagan
+				culture = ROOT
+				dynasty = random
+				female = no
+				age = 26
+				trait = zealous
+				trait = skilled_tactician
+				trait = strong
+				trait = scholar
+			}
+			new_character = {
+				d_men_of_steel = {
+					grant_title = PREV
+				}
+				wealth = 200
+				piety = 300
+				prestige = 100
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = promethean_pagan
+					culture = ROOT
+					female = no
+					age = 16
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = promethean_pagan
+					culture = ROOT
+					female = no
+					age = 18
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = promethean_pagan
+					culture = ROOT
+					female = no
+					age = 18
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = promethean_pagan
+					culture = ROOT
+					female = no
+					age = 20
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = promethean_pagan
+					culture = ROOT
+					female = no
+					age = 25
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = promethean_pagan
+					culture = ROOT
+					female = no
+					age = 26
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = promethean_pagan
+					culture = ROOT
+					female = no
+					age = 28
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = promethean_pagan
+					culture = ROOT
+					female = yes
+					age = 16
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = promethean_pagan
+					culture = ROOT
+					female = yes
+					age = 17
+				}
+
+				narrative_event = {
+					id = ancrel.3550 # bounce the event to have the Grandmaster as root, ruler as from
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0
+				NOT = {
+					wealth = 300
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					piety = 500
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					prestige = 500
+				}
+			}
+			modifier = {
+				factor = 0.25
+				trait = cynical
+			}
+		}
 	}
 }
 

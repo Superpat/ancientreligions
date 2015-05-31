@@ -28,7 +28,7 @@ narrative_event = {
 
 	option = {
 		trigger = {
-			ROOT = FROM
+			has_character_flag = acr_restorer_of_academy
 		}
 		name = ancrel.3400.a
 	}
@@ -37,7 +37,7 @@ narrative_event = {
 		trigger = {
 			religion = promethean_pagan
 			NOT = {
-				ROOT = FROM
+				has_character_flag = acr_restorer_of_academy
 			}
 		}
 		name = ancrel.3400.b
@@ -78,17 +78,15 @@ province_event = {
 			religion_authority = 0.90
 			factor = 1.5
 		}
-		modifier = {
-			top_liege = holder
-			factor = 1.25
-		}
 	}
 
 	immediate = {
-		top_liege = {
-			ROOT = {
-				religion = PREV
-				culture = PREV
+		owner = { 
+			top_liege = {
+				ROOT = {
+					religion = PREV
+					culture = PREV
+				}
 			}
 		}
 	}
@@ -117,7 +115,7 @@ narrative_event = {
 
 	option = {
 		trigger = {
-			ROOT = FROM
+			has_character_flag = acr_organizer_steel
 		}
 		name = ancrel.3550.a
 	}
@@ -126,7 +124,7 @@ narrative_event = {
 		trigger = {
 			religion = promethean_pagan
 			NOT = {
-				ROOT = FROM
+				has_character_flag = acr_organizer_steel
 			}
 		}
 		name = ancrel.3550.b

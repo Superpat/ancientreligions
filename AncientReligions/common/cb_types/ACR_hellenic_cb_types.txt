@@ -551,6 +551,7 @@ promethean_expansion = {
 	truce_days = 3650
 	hostile_against_others = yes
 	is_permanent = yes
+	is_holy_war = yes
 	can_ask_to_join_war = yes
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 
@@ -566,7 +567,7 @@ promethean_expansion = {
 	on_add = {
 		ROOT = { 
 			prestige = -500
-			add_character_flag = acr_promethean_expansion
+			set_character_flag = acr_promethean_expansion
 		}
 	}
 
@@ -640,20 +641,17 @@ promethean_expansion = {
 						type = invasion
 					}
 				}
-				any_province = {
-					if = {
-						limit = {
-							de_jure_liege_or_above = PREV # target kingdom 
-							ROOT = {
-								completely_controls = PREV # conqueror controls the province
-							}
-							NOT = {
-								religion = ROOT
-							}
+				any_title_under = {
+					limit = {
+						ROOT = {
+							completely_controls = PREV # conqueror controls the province
 						}
-						remove_province_modifier = depopulated_province
-						add_province_modifier = { name = depopulated_province duration = 10950 }
+						NOT = {
+							religion = ROOT
+						}
 					}
+					remove_province_modifier = depopulated_province
+					add_province_modifier = { name = depopulated_province duration = 10950 }
 				}
 			}
 		}

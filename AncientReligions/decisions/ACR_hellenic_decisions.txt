@@ -97,6 +97,7 @@ decisions = {
 			prestige = 300
 		}
 		effect = {
+			set_character_flag = acr_founded_sickles
 			wealth = -200
 			piety = -300
 			prestige = -300
@@ -195,7 +196,7 @@ decisions = {
 				}
 
 				narrative_event = {
-					id = ancrel.3701 # bounce the event to have the warchief as root, ruler as from
+					id = ancrel.3700 # bounce the event to have the warchief as root, ruler as from
 				}
 			}
 		}
@@ -373,6 +374,7 @@ decisions = {
 			primary_title = { higher_real_tier_than = COUNT }
 			NOT = {
 				has_global_flag = acr_crotone_rebuilt
+				has_global_flag = acr_crotone_building
 			}
 		}
 		allow = {
@@ -385,10 +387,31 @@ decisions = {
 			has_regent = no
 		}
 		effect = {
-			
+			wealth = -1000
+			set_global_flag = acr_crotone_building
+			character_event = { id = ancrel.3411 days = 1 }
 		}
-		revoke_allowed = { }
-		ai_will_do = { }
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { wealth = 1300 }
+					trait = cynical
+				}
+			}
+			modifier = {
+				factor = 1.25
+				trait = zealous
+			}
+			modifier = {
+				factor = 0.50
+				trait = content
+			}
+		}
 	}
 
 	hold_unbinding_festival = {

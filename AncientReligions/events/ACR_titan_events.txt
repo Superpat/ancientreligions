@@ -3269,54 +3269,47 @@ character_event = {
 #
 ###################################
 
-#create the sickles
-character_event = {
-	id = ancrel.3700
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-
-	}
-}
-
-# The Sicles are formed, and now everyone knows it!
+# The Sickles are formed, and now everyone knows it!
 narrative_event = {
-	id = ancrel.3701
-	title = ancrel.3701.title
-	desc = ancrel.3701.desc
+	id = ancrel.3700
+	title = ancrel.3700.title
+	desc = ancrel.3700.desc
 	picture = GFX_evt_war_planning
 	border = GFX_event_narrative_frame_religion
 
 	major = yes
 	
 	only_rulers = yes
-
+	
 	option = {
 		trigger = {
-			religion = titan_pagan
+			has_character_flag = acr_formed_sickles
 		}
 
-		name = ancrel.3701.a
+		chronicle = { 
+			entry = CHRONICLE_SICKLES
+			portrait = [From.GetID]
+		}
+
+		name = ancrel.3700.a
 	}
 
 	option = {
 		trigger = {
-			is_reformed_religion = yes
+			religion = titan_pagan
+			NOT = { has_character_flag = acr_formed_sickles }
 		}
 
-		name = ancrel.3701.b
+		name = ancrel.3700.b
 	}
 
 	option = {
 		trigger = {
 			NOT = {
 				religion = titan_pagan
-				is_reformed_religion = yes
 			}
 		}
 
-		name = ancrel.3701.c
+		name = ancrel.3700.c
 	}
 }

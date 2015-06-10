@@ -6,7 +6,7 @@
 # Event IDs ancrel.3400-3549 are reserved
 #
 # ancrel.3400 - 3410	various maintenance type events
-# ancrel.3411 - 3430	Rebuilding of Crotone
+# ancrel.3411 - 3420	Rebuilding of Crotone
 # ancrel.3450 - 3549	The Unbinding Festival
 # ancrel.3550 - 3599	Holy Order Events
 #
@@ -30,6 +30,12 @@ narrative_event = {
 		trigger = {
 			has_character_flag = acr_restorer_of_academy
 		}
+
+		chronicle = {
+			entry = CHRONICLE_FIRST_ACADEMY
+			portrait = [Root.GetID]
+		}
+
 		name = ancrel.3400.a
 	}
 
@@ -93,6 +99,162 @@ province_event = {
 
 	option = {
 		name = OK
+	}
+}
+
+###################################################################
+#
+# Rebuilding Crotone
+#  - ancrel.3411 - 3420 reserved
+#
+###################################################################
+
+# Rebuild Crotone
+province_event = {
+	id = ancrel.3411
+	title = ancrel.3411.title
+	desc = ancrel.3411.desc
+	picture = GFX_persepolis_ruin
+
+	is_triggered_only = yes
+	
+	immediate = {
+		337 = { set_province_flag = acr_reb_crotone_1 }
+	}	
+
+	option = {
+		name = ancrel.3411.a # Make it the greatest academy there ever was!
+	}
+}
+
+# Choose the focus of the academy
+province_event = {
+	id = ancrel.3412
+	title = ancrel.3412.title
+	desc = ancrel.3412.desc
+	picture = GFX_evt_roman_temple
+
+	trigger = {
+		has_global_flag = acr_crotone_building
+		province_id = 337 # Consenza
+		NOT = { has_global_flag = acr_crotone_rebuilt }
+		had_province_flag = { flag = acr_reb_crotone_1 days = 1225 random = 180 }
+		NOT = { has_province_flag = acr_reb_crotone_2 }
+	}
+
+	immediate = {
+		set_province_flag = acr_reb_crotone_2
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = ancrel.3412.a # Art, History, and Philosophy; Culture
+		337 = {
+			add_province_modifier = { name = acr_crotone_arts duration = -1 }
+		}
+	}
+	option = {
+		name = ancrel.3412.b # Engineering & Architecture; Economic
+		337 = {
+			add_province_modifier = { name = acr_crotone_business duration = -1 }
+		}
+	}
+	option = {
+		name = ancrel.3412.c # Officer Academy; Military
+		337 = {
+			add_province_modifier = { name = acr_crotone_military duration = -1 }
+		}
+	}
+}
+
+# Crotone Finished!
+province_event = {
+	id = ancrel.3413
+	title = ancrel.3413.title
+	desc = ancrel.3413.desc
+	picture = GFX_evt_roman_temple
+	
+	trigger = {
+		has_global_flag = acr_crotone_rebuilding
+		province_id = 337 # Consenza
+		NOT = { has_global_flag = acr_crotone_restored }
+		has_province_flag = acr_reb_crotone_1
+		had_province_flag = { flag = acr_reb_crotone_2 days = 638 random = 92 }		
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	immediate = {
+		clr_global_flag = acr_crotone_building
+		set_global_flag = acr_crotone_rebuilt
+		clr_province_flag = acr_reb_crotone_1
+		clr_province_flag = acr_reb_crotone_2
+	}
+
+	option = {
+		name = ancrel.3413.a
+		owner = {
+			337 = {
+				build_holding = {
+				   title = b_crotone
+				   type = temple
+				   holder = PREV
+				}
+			}
+
+			prestige = 500
+		}
+		hidden_tooltip = {
+			owner = {
+				set_character_flag = acr_rebuilt_crotone
+				narrative_event = { id = ancrel.3414 days = 7 }
+			}
+		}
+	}
+}
+
+# Crotone Complete major event
+narrative_event = {
+	id = ancrel.3414
+	title = ancrel.3414.title
+	desc = ancrel.3414.desc
+	picture = GFX_evt_roman_temple
+	border = GFX_event_narrative_frame_religion
+	
+	major = yes
+	only_rulers = yes
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			has_character_flag = acr_rebuilt_crotone
+		}
+		chronicle = {
+			entry = CHRONICLE_CROTONE
+			portrait = [Root.GetID]
+		}
+		name = ancrel.3414.a
+	}
+	
+	option = {
+		trigger = {
+			NOT = { has_character_flag = acr_rebuilt_crotone }
+			religion = promethean_pagan
+		}
+		name = ancrel.3414.b
+	}
+
+	option = {
+		trigger = {
+			NOT = { religion = promethean_pagan }
+		}
+
+		name = ancrel.3414.c
 	}
 }
 

@@ -14,45 +14,35 @@ namespace = ancrel
 # The Sons of Gwydion Founded (Brythonic King)
 narrative_event = {
 	id = ancrel.0110
-	title = EVTNAMEancrel.0110
-	desc = EVTDESCancrel.0110
+	title = ancrel.0110.title
+	desc = ancrel.0110.desc
 	picture = GFX_evt_celtic_warriors
 	border = GFX_event_narrative_frame_war
 	
-	is_triggered_only = yes
-	
+	is_triggered_only = yes	
 	hide_from = yes
+	major = yes
 	
 	option = {
-		name = EVTOPTAancrel.0110
-		hidden_tooltip = {
-			any_playable_ruler = {
-				limit = {
-					ai = no
-					OR = {
-						religion = celtic_pagan
-						religion = celtic_pagan_reformed
-					}
-				}
-				narrative_event = { id = ancrel.0111 }
-			}
+		name = ancrel.0110.a
+		has_character_flag = acr_founded_gwydion
+		chronicle = {
+			entry = CHRONICLE_GWYDION
+			portrait = [Root.GetID]
 		}
 	}
-}
 
-# The sons of Gwydion Founded (Druidic)
-narrative_event = {
-	id = ancrel.0111
-	title = EVTNAMEancrel.0110
-	desc = EVTDESCancrel.0111
-	picture = GFX_evt_celtic_warriors
-	border = GFX_event_narrative_frame_war
-	
-	is_triggered_only = yes
-	
 	option = {
-		name = EVTOPTAancrel.0111
-		custom_tooltip = { text = gwydion_organized }
+		name = ancrel.0110.b
+
+		NOT = { has_character_flag = acr_founded_gwyidion }
+		religion = celtic_pagan_reformed
+	}
+
+	option = {
+		name = ancrel.0110.c
+
+		NOT = { religion = celtic_pagan_reformed }
 	}
 }
 

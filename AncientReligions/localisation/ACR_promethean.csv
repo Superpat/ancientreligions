@@ -1,0 +1,53 @@
+GOD_PROMETHEUS;Prometheus;Prometheus;Prometheus;;Prometheus;;;;;;;;;x
+GOD_EPIMETHEUS;Epimetheus;Epimetheus;Epimetheus;;Epimetheus;;;;;;;;;x
+GOD_OLYMPIANS;the Olympians;the Olympians;the Olympians;;the Olympians;;;;;;;;;x
+THE_DIALOGUES;The Dialogues;The Dialogues;The Dialogues;;The Dialogues;;;;;;;;;x
+PHILOSOPHER;Philosophos;Philosophos;Philosophos;;Philosophos;;;;;;;;;x
+promethean_pagan;Promethean;Promethean;Promethean;;Promethean;;;;;;;;;x
+promethean_pagan_DESC;Prometheanism is the worship of the Titan Prometheus and, to a lesser extent, his brother Epimetheus, as the fathers of humanity. Prometheanism acknowledges the existence, and divinity, of the Olympians, but rejects their worthiness as beings to be worshiped. Prometheans value intellectual pursuits above all, finding guile, diplomacy, and a quick wit to be the highest art forms. They find violence distasteful, but recognize that it is ocassionally necessary. Defining features in-game:\n§Y*§! Prometheans gain piety while at peace.\n§Y*§! The Scholarch of the First Academy leads the Promethean faithful.\n§Y*§! Prometheans cannot use, and are not targetable by, the Pagan Subjugation CB.\n§Y*§! Prometheans gain a bonus to Learning.\n§Y*§! Prometheanism is a feminist faith.\n§Y*§! Women may hold temples.\n§Y*§! Priests can marry.\n§Y*§! Promethean rulers may designate their heir.\n§Y*§! Prometheans may use a once-per-life-time Expansion CB.;;;;;;;;;;;;;x
+promethean_philosophy;Promethean Philosophy;Promethean Philosophy;Promethean Philosophy;;Promethean Philosophy;;;;;;;;;x
+promethean_philosophy_desc;Promethean beliefs encourage intellectual pursuits and the advancements of science, technology, and logic. Prometheans tend toward higher education as a result.;;;;;;;;;;;;;x
+promethean_expansion_desc;Promethean rulers may, once per lifetime, invade a neighboring kingdom to expand the realm.;;;;;;;;;;;;;x
+CB_NAME_EXPANSION;Expansion into [Title.GetBaseName];;;;;;;;;;;;;x
+WAR_NAME_EXPANSION;$ORDER$$FIRST_ADJ$ Expansion into $OTHER_TITLE$;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;x
+d_promethean_pagan;First Academy;;;;;;;;;;;;;x
+d_promethean_pagan_adj;Academecian;;;;;;;;;;;;;x
+SCHOLARCH;Scholarch;Scholarch;Scholarch;;Scholarch;;;;;;;;;x
+d_men_of_steel;Men of Steel;;;;;;;;;;;;;x
+d_men_of_steel_adj;Steely;;;;;;;;;;;;;x
+organize_men_of_steel;Organize the Men of Steel;;;;;;;;;;;;;x
+organize_men_of_steel_desc;Create the Men of Steel, a Holy Order of Prometheanism.;;;;;;;;;;;;;x
+hold_unbinding_festival;Hold the Unbinding Festival;;;;;;;;;;;;;x
+hold_unbinding_festival_desc;Hold a festival in remembrance of Prometheus' Unbinding from Mt Kazbek;;;;;;;;;;;;;x
+rebuild_first_academy;Rebuild the First Academy;;;;;;;;;;;;;x
+rebuild_first_academy_desc;Rebuild the First Academy, with the Scholarch as the head of the Promethean faith.;;;;;;;;;;;;;x
+rebuild_crotone;Rebuild Crotone;;;;;;;;;;;;;x
+rebuild_crotone_desc;Rebuild the Academy at Crotone;;;;;;;;;;;;;x
+first_academy_restored;First Academy Restored;;;;;;;;;;;;;x
+held_unbinding_festival;Held an Unbinding Festival;;;;;;;;;;;;;x
+held_unbinding_festival_timer;timer;;;;;;;;;;;;;x
+depopulated_province;Depopulated;;;;;;;;;;;;;x
+depopulated_province_desc;This province was recently invaded and is severely depopulated. It will take a long time for it to fully recover.;;;;;;;;;;;;;x
+acr_crotone_arts;Academy of the Arts;;;;;;;;;;;;;x
+acr_crotone_arts_desc;This province is home to the Crotone Academy of the Arts, and enjoys quality entertainment and cultural advancement as a result.;;;;;;;;;;;;;x
+acr_crotone_engineering;Academy of Engineering;;;;;;;;;;;;;x
+acr_crotone_engineering_desc;This province is home to the Crotone Academy of Engineering. It benefits from advanced construction techniques pioneered at the school.;;;;;;;;;;;;;x
+acr_crotone_military;Military Academy;;;;;;;;;;;;;x
+acr_crotone_military_desc;This province is home to the Crotone Military Academy. Here cadets are transformed into officers, many of which go on to join the Men of Steel. Their presence strengthens the morale of the local garrison.
+#;;;;;;;;;;;;;;x
+temple_baron_promethean_pagan;Philosophos;Philosophos;Philosophos;;Philosophos;;;;;;;;;x
+temple_baron_female_promethean_pagan;Philosophoia;Philosophoia;Philosophoia;;Philosophoia;;;;;;;;;x
+temple_barony_of_promethean_pagan;Academy of;Academy of;Academy of;;Academy of;;;;;;;;;x
+temple_count_promethean_pagan;Ypsilós Philosophos;Ypsilós Philosophos;Ypsilós Philosophos;;Ypsilós Philosophos;;;;;;;;;x
+temple_count_female_promethean_pagan;Ypsilós Philosophoia;;;;;;;;;;;;;x
+temple_county_of_promethean_pagan;High Academy of;High Academy of;High Academy of;;High Academy of;;;;;;;;;x
+temple_duke_promethean_pagan;Megálos Philosophos;Megálos Philosophos;Megálos Philosophos;;Megálos Philosophos;;;;;;;;;x
+temple_duke_female_promethean_pagan;Megálos Philosophoia;Megálos Philosophoia;Megálos Philosophoia;;Megálos Philosophoia;;;;;;;;;x
+temple_duchy_of_promethean_pagan;Grand Academy;Tribu de;Stamm der;;Tribu de;;;;;;;;;x
+temple_king_promethean_pagan;Daskalosophos;Daskalosophos;Daskalosophos;;Daskalosophos;;;;;;;;;x
+temple_king_female_promethean_pagan;Daskalosophoia;Daskalosophoia;Daskalosophoia;;Daskalosophoia;;;;;;;;;x
+temple_kingdom_of_promethean_pagan;Sofos Vasilieo;Sofos Vasilieo;Sofos Vasilieo;;Sofos Vasilieo;;;;;;;;;x
+temple_emperor_promethean_pagan;Sofos Patriarchis;;;;;;;;;;;;;x
+temple_emperor_female_promethean_pagan;Sofos Matriarchia;;;;;;;;;;;;;x
+temple_empire_of_promethean_pagan;Enlightened Realm of;;;;;;;;;;;;;x

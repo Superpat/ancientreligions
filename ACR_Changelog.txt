@@ -59,7 +59,7 @@ Atenic:
 -- This decision is almost a carbon copy of the Restore Luxor decision. It may receive more love in the future.
 - Atenism now has a religious head, the Meryaten, which is a King tier Fylkir style title held by the reformer.
 -- The Meryaten is created by decision, and requires that Akhetaten is restored.
-- The Burning Blades are a new holy order for Atenism that can be created via decision and are immediately vassalized by the organizer.=
+- The Burning Blades are a new holy order for Atenism that can be created via decision and are immediately vassalized by the organizer.
 
 2015-3-10 v0.36.2 "Anchises"
 -------------------------

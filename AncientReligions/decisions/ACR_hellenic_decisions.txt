@@ -409,6 +409,10 @@ decisions = {
 			}
 			modifier = {
 				factor = 0.50
+				trait = cynical
+			}
+			modifier = {
+				factor = 0.50
 				trait = content
 			}
 		}
@@ -446,11 +450,11 @@ decisions = {
 			set_character_flag = holding_unbinding_festival
 			set_character_flag = recent_minor_decision
 			set_character_flag = do_not_disturb
-			hidden_tooltip = { character_event = { id = ancrel.3549 days = 150 } } # Safety catch flag clearing
 			custom_tooltip = {
 				text = prepare_unbinding_festival
 				hidden_tooltip = { 
-					character_event = { id = ancrel.3450 } 
+					character_event = { id = ancrel.3549 days = 150 } # Safety catch flag clearing
+					character_event = { id = ancrel.3450 }
 				}
 			}
 		}
@@ -460,27 +464,20 @@ decisions = {
 		ai_will_do = {
 			factor = 1
 			
-			modifier = {
+			modifier = { # deal breakers
 				factor = 0
-				NOT = {
-					wealth = 300
-				}
-			}
-			modifier = {
-				factor = 0
-				trait = cynical
-			}
-			modifier = {
-				factor = 0
-				NOT = { diplomacy = 10 }
-			}	
-			modifier = {
-				factor = 0
-				has_character_flag = recent_minor_decision
-				NOT = {
-					had_character_flag = {
-						flag = recent_minor_decision
-						days = 180
+				OR = {
+					NOT = {	wealth = 300 }
+					NOT = { diplomacy = 10 }
+					trait = cynical
+					AND = {
+						has_character_flag = recent_minor_decision
+						NOT = {
+							had_character_flag = {
+								flag = recent_minor_decision
+								days = 180
+							}
+						}
 					}
 				}
 			}

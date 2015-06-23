@@ -51,3 +51,18 @@ opinion_refused_titan_thysia = {
 	opinion = -15
 	months = 12
 }
+
+ancrel_honored_me = {
+	opinion = 30
+	months = 12
+}
+
+ancrel_dissapointed = {
+	opinion = -20
+	months = 12
+}
+
+ancrel_jealous = {
+	opinion = -30
+	months = 12
+}

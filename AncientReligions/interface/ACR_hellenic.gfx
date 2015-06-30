@@ -33,20 +33,25 @@ spriteTypes = {
 	# Event pictures
 	spriteType = {
 		name = "GFX_evt_roman_temple"
-		texturefile = "gfx\\event_pictures\ACR\roman_great_temple.tga"
+		texturefile = "gfx\\event_pictures\\ACR\\roman_great_temple.tga"
 		allwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_evt_lightning_strike"
-		texturefile = "gfx\\event_pictures\ACR\lightning_strike.tga"
+		texturefile = "gfx\\event_pictures\\ACR\\lightning_strike.tga"
 		allwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_evt_cave_dwellers"
-		texturefile = "gfx\\event_pictures\ACR\cave_dwellers.tga"
+		texturefile = "gfx\\event_pictures\\ACR\\cave_dwellers.tga"
 		allwaystransparent = yes
 	}
-	
-	
-
+	spriteType = {
+		name = "GFX_evt_prometheus_bound"
+		texturefile = "gfx\\event_pictures\\ACR\\prometheus_bound.tga"
+	}
+	spriteType = {
+		name = "GFX_evt_prometheus_and_heracles"
+		texturefile = "gfx\\event_pictures\\ACR\\prometheus_and_heracles.tga"
+	}
 }

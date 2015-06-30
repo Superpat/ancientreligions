@@ -441,12 +441,12 @@ decisions = {
 				month = 6			
 				NOT = { month = 9 }
 			}
-			wealth = 50
+			wealth = 25
 			prisoner = no
 			NOT = { trait = in_hiding }
 		}
 		effect = {
-			wealth = -50
+			wealth = -25
 			set_character_flag = holding_unbinding_festival
 			set_character_flag = recent_minor_decision
 			set_character_flag = do_not_disturb
@@ -467,7 +467,7 @@ decisions = {
 			modifier = { # deal breakers
 				factor = 0
 				OR = {
-					NOT = {	wealth = 300 }
+					NOT = {	wealth = 50 }
 					NOT = { diplomacy = 10 }
 					trait = cynical
 					AND = {

@@ -290,8 +290,12 @@ character_event = {
 	triggered_only = yes
 
 	immediate = {
-		set_character_flag = unbinding_festival_prep
-		character_event = { id = ancrel.3460 days = 21 } # three weeks to let other planning events happen
+		# commenting this out disables the prep events
+		#set_character_flag = unbinding_festival_prep
+
+		# skip over individual decision events
+		# makes the whole thing too tedious
+		character_event = { id = ancrel.3457 days = 3 }
 	}
 
 	option = { # just rent out a theatre in the city
@@ -315,6 +319,10 @@ character_event = {
 		set_character_flag = unbinding_grand_open
 	}
 }
+
+#
+# Events 3452 - 3456 are disabled, but they are kept here because they may prove useful in the future.
+#
 
 # Fire Swallowers offer their services
 character_event = {
@@ -597,11 +605,48 @@ character_event = {
 	}
 }
 
-#
-# Leaving ancrel.3457 - ancrel.3459 open for more possible prep events in the future
-#
+# How much shall be spent on the festivities?
+character_event = {
+	id = ancrel.3457
+	desc = ancrel.3457.desc
+	portrait = GFX_evt_courtiers_talking
 
-# Opening Ceremony - Who Plays Prometheus?
+	is_triggered_only = yes
+
+	immediate = {
+		character_event = { id = ancrel.3460 days = 3 }
+	}
+
+	option = { # keep it simple
+		name = ancrel.3457.a
+		set_character_flag = unbinding_cheap_festivities
+
+		scaled_wealth = -0.05
+		prestige = -25
+	}
+	option = { # lets not be cheap
+		name = ancrel.3457.b
+		set_character_flag = unbinding_moderate_festivities
+
+		scaled_wealth = -0.1
+		prestige = 25
+	}
+	option = { # lets make it a festival to remember!
+		name = ancrel.3457.c
+		set_character_flag = undinding_grand_festivities
+
+		scaled_wealth = -0.2
+		prestige = 50
+	}
+}
+
+############################################################################################
+##                                                                                        ##
+### Leaving ancrel.3458 and ancrel.3459 open for more possible prep events in the future ###
+##                                                                                        ##
+############################################################################################
+
+# Who Plays Prometheus?
 character_event = {
 	id = ancrel.3460
 	desc = ancrel.3460.desc
@@ -621,6 +666,10 @@ character_event = {
 		prestige = 100
 
 		reverse_opinion = { modifier = ancrel_dissapointed who = job_spiritual }
+
+ 		hidden_tooltip = { # inform the priest
+ 			job_spiritual = { character_event = { id = ancrel.3547 days = 0 } }
+ 		}
 	}
 
 	option = { #have your Court Priest do it
@@ -634,6 +683,10 @@ character_event = {
 		job_spiritual = {
 			save_event_target_as = festival_prometheus
 			opinion = { modifier = ancrel_honored_me who = ROOT }
+		}
+
+		hidden_tooltip = { #inform the priest
+			job_spiritual = { character_event = { id = ancrel.3548 days = 0 } }
 		}
 	}
 
@@ -660,6 +713,11 @@ character_event = {
 			opinion = { modifier = ancrel_dissapointed who = ROOT }
 			opinion = { modifier = ancrel_jealous who = PREV }
 		}
+
+ 		hidden_tooltip = { # inform the characters
+ 			event_target:festival_prometheus = { character_event = { id = ancrel.3548 days = 0 } }
+ 			job_spiritual = { character_event = { id = ancrel.3547 days = 0 } }
+ 		}
 	}
 
 	option = { #totally random vassal, because apparently there is a lack of piety in your realm
@@ -685,6 +743,11 @@ character_event = {
 			opinion = { modifier = ancrel_dissapointed who = ROOT }
 			opinion = { modifier = ancrel_jealous who = event_target:festival_prometheus }
 		}
+
+ 		hidden_tooltip = { # inform the characters
+ 			event_target:festival_prometheus = { character_event = { id = ancrel.3548 days = 0 } }
+ 			character_event = { id = ancrel.3547 days = 0 }
+ 		}
 	}
 }
 
@@ -714,6 +777,11 @@ character_event = {
 		prestige = 100
 
 		reverse_opinion = { modifier = ancrel_dissapointed who = job_marshal }
+		hidden_tooltip = {
+			job_marshal = { # inform the marshal
+				character_event = { id = ancrel.3545 days = 0 }
+			}
+		}
 	}
 
 	option = { #have your Marshal do it
@@ -727,6 +795,12 @@ character_event = {
 		job_marshal = {
 			save_event_target_as = festival_heracles
 			opinion = { modifier = ancrel_honored_me who = ROOT }
+		}
+
+		hidden_tooltip = { # inform the marshal
+			job_marshal = {
+				character_event = { id = ancrel.3546 days = 0 }
+			}
 		}
 	}
 
@@ -749,9 +823,18 @@ character_event = {
 			opinion = { modifier = ancrel_honored_me who = ROOT }
 		}
 
-		job_spiritual = {
+		job_marshal = {
 			opinion = { modifier = ancrel_dissapointed who = ROOT }
-			opinion = { modifier = ancrel_jealous who = PREV }
+			opinion = { modifier = ancrel_jealous who = event_target:festival_heracles }
+		}
+
+		hidden_tooltip = {
+			job_marshal = { # inform the marshal
+				character_event = { id = ancrel.3545 days = 0 }
+			}
+			event_target:festival_heracles = { # inform the lucky vassal
+				character_event = { id = ancrel.3546 days = 0 }
+			}
 		}
 	}
 
@@ -777,14 +860,24 @@ character_event = {
 			opinion = { modifier = ancrel_dissapointed who = ROOT }
 			opinion = { modifier = ancrel_jealous who = event_target:festival_heracles }
 		}
+
+		hidden_tooltip = {
+			job_marshal = { # inform the marshal
+				character_event = { id = ancrel.3545 days = 0 }
+			}
+			event_target:festival_heracles = { # inform the lucky vassal
+				character_event = { id = ancrel.3546 days = 0 }
+			}
+		}
 	}
 }
 
-# Opening Ceremony Takes Place!
-character_event = {
+# Opening Ceremony Takes Place! (liege)
+narrative_event = {
 	id = ancrel.3462
 	picture = GFX_evt_prometheus_bound
-	border = GFX_evt_normal_frame_religion
+	border = GFX_event_normal_frame_religion
+
 	desc = { # the ruler is Prometheus
 		trigger = {
 			event_target:festival_prometheus = {
@@ -826,6 +919,107 @@ character_event = {
 	}
 }
 
+# Opening Ceremony (vassals)
+narrative_event = {
+	id = ancrel.3463
+	desc = ancrel.3463.desc
+	picture = GFX_evt_prometheus_bound
+	border = GFX_event_normal_frame_religion
+
+	option = {
+		name = ancrel.3463.a
+	}
+}
+
+# Opening Ceremony (Prometheus)
+narrative_event = {
+	id = ancrel.3464
+	desc = ancrel.3464.desc
+	picture = GFX_evt_prometheus_bound
+	border = GFX_event_normal_frame_religion
+
+	option = {
+		name = ancrel.3464.a
+	}
+}
+
+# Opening Ceremony (Heracles)
+narrative_event = {
+	id = ancrel.3465
+	desc = ancrel.3465.desc
+	picture = GFX_evt_prometheus_bound
+	border = GFX_event_normal_frame_religion
+
+	option = {
+		name = ancrel.3465.a
+	}
+}
+
+# You're liege has decided to play Heracles! (marshal)
+character_event = {
+	id = ancrel.3543
+	desc = ancrel.3543.desc
+	picture = GFX_evt_prometheus_bound
+
+	option = {
+		name = ancrel.bummer
+	}
+}
+# You're liege has decided to play Prometheus! (chaplain)
+character_event = {
+	id = ancrel.3544
+	desc = ancrel.3544.desc
+	picture = GFX_evt_prometheus_bound
+
+	option = {
+		name = ancrel.bummer
+	}
+}
+
+# You've been slighted in the selection of Heracles! (marshal)
+character_event = {
+	id = ancrel.3545
+	desc = ancrel.3545.desc
+	picture = GFX_evt_prometheus_bound
+
+	option = {
+		name = ancrel.that_bastard
+	}
+}
+
+# You've been selected to play Heracles!
+character_event = {
+	id = ancrel.3546
+	desc = ancrel.3546.desc
+	picture = GFX_evt_prometheus_bound
+
+	option = {
+		name = ancrel.fantastic
+	}
+}
+
+# You've been slighted in the selection of Prometheus! (chaplain)
+character_event = {
+	id = ancrel.3547
+	desc = ancrel.3547.desc
+	picture = GFX_evt_prometheus_bound
+
+	option = {
+		name = ancrel.that_bastard
+	}
+}
+
+# You've been selected to play Prometheus!
+character_event = {
+	id = ancrel.3548
+	desc = ancrel.3548.desc
+	picture = GFX_evt_prometheus_bound
+
+	option = {
+		name = ancrel.fantastic
+	}
+}
+
 # Safety catch flag clearing
 character_event = {
 	id = ancrel.3549
@@ -833,6 +1027,9 @@ character_event = {
 
 	immediate = {
 		clr_character_flag = holding_unbinding_festival
+		#
+		# these are for the currently unused prep events
+		#
 		clr_character_flag = unbinding_festival_prep
 		clr_character_flag = hired_fire_swallowers
 		clr_character_flag = rejected_fire_swallowers
@@ -844,6 +1041,9 @@ character_event = {
 		clr_character_flag = rejected_artists
 		clr_character_flag = hired_inventors
 		clr_character_flag = rejected_inventors
+		#
+		# </prep event flags>
+		#
 	}
 }
 

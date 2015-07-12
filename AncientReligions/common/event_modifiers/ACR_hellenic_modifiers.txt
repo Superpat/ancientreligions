@@ -96,16 +96,12 @@ depopulated_province = {
 	temple_levy_size = -0.25	
 }
 
-held_unbinding_festival = {
+holding_unbinding_festival = {
 	icon = 17
 
-	land_morale = 0.10
-	monthly_character_prestige = 0.25
-	monthly_character_piety = 0.5
-    rel_head_opinion = 10
+	monthly_character_prestige = 0.05
+	monthly_character_piety = 0.05
 }
-
-held_unbinding_festival_timer = { icon = 1 }
 
 acr_crotone_arts = {
 	icon = 3

@@ -54,4 +54,12 @@ spriteTypes = {
 		name = "GFX_evt_prometheus_and_heracles"
 		texturefile = "gfx\\event_pictures\\ACR\\prometheus_and_heracles.tga"
 	}
+	spriteType = {
+		name = "GFX_evt_couple_by_firelight"
+		texturefile = "gfx\\event_pictures\\ACR\\couple_by_firelight.tga"
+	}
+	spriteType = {
+		name = "GFX_evt_firedancers"
+		texturefile = "gfx\\event_pictures\\ACR\\firedancers.tga"
+	}
 }

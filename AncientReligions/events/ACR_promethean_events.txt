@@ -821,6 +821,7 @@ character_event = {
 	}
 
 	option = {
+		name = ancrel.3460.a
 		random_vassal = {
 			limit = {
 				prisoner = no
@@ -834,23 +835,336 @@ character_event = {
 	}
 }
 
-# a courtier looks attractive in the firelight
-character_event = { }
+# spouse/courtier/vassal looks attractive in the firelight (liege)
+character_event = {
+	id = ancrel.3461
+	desc = ancrel.3461.desc
+	picture = GFX_evt_couple_by_firelight
 
-# spouse looks attractive in the firelight
-character_event = { }
+	is_triggered_only = yes
 
-# a courtier looks attractive in the firelight (courtier)
-character_event = { }
+	immediate = {
+		set_character_flag = festival_event_happened
+	}
 
-# spouse looks attractive in the firelight (spouse)
-character_event = { }
+	option = { # make your move!
+		name = ancrel.3461.a
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = ancrel.3463 }
+			}
+		}
 
-# courtier accepts advances (liege)
-character_event = { }
+		random = {
+			chance = 25
+			add_trait = lustful
+			hidden_tooltip = {
+				character_event = { id = 38272 } #Notify Lustful
+			}
+		}
 
-# spouse accepts advances (liege)
-character_event = { }
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 5
+				is_lover = FROM
+			}
+			modifier = {
+				factor = 10
+
+			}
+		}
+	}
+
+	option = { # admire from afar
+		name = ancrel.3461.b
+		piety = 25
+
+		random_list = {
+			20 = {
+				add_trait = stressed
+			}
+			10 = {
+				add_trait = content
+			}
+		}
+
+		ai_will_do = {
+			factor = 60
+			modifier = {
+				factor = 200
+				any_lover = {
+					count = 3
+				}
+			}
+			modifier = {
+				factor = 2
+				trait = content
+			}
+			modifier = {
+				factor = 2
+				NOT = { 
+					opinion = { who = FROM value = 30} 
+				}
+			}
+			modifier = {
+				factor = 0.5
+				opinion = { who = FROM value = 60 }
+			}
+		}
+	}
+
+	option = { # who needs sex?
+		name = ancrel.3461.c
+		piety = 100
+
+		random_vassal = {
+			limit = {
+				is_theocracy = yes
+				NOT = {
+					trait = lustful
+					trait = master_seducer
+					trait = master_seductress
+					has_focus = focus_carousing
+					has_focus = focus_seduction
+				}
+			}
+
+			opinion = { 
+				modifier = opinion_approves 
+				who = ROOT 
+				years = 5
+			}
+		}
+		random_realm_character = {
+			limit = {
+				OR = {
+					trait = lustful
+					trait = master_seducer
+					trait = master_seductress
+					has_focus = focus_carousing
+					has_focus = focus_seduction
+				}
+			}
+
+			opinion = {
+				modifier = ancrel_dissapointed
+				who = ROOT
+				years = 5
+			}
+		}
+
+		random = {
+			chance = 25
+			add_trait = chaste
+			hidden_tooltip = {
+				character_event = { id = 38274 } #Notify Chaste
+			}
+		}
+
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 200
+				OR = {
+					trait = monk
+					trait = nun
+					trait = celibate
+				}
+
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					trait = lustful
+					trait = hedonist
+					trait = master_seducer
+					trait = master_seductress
+				}
+			}
+		}
+	}
+}
+
+# vassal/courtier looks attractive in the firelight (ping the liege)
+character_event = {
+	id = ancrel.3462
+	hide_window = yes
+
+	trigger = { 
+		liege = { 
+			has_character_modifier = holding_unbinding_festival
+			OR = {
+				NOT = { has_character_flag = festival_event_happened }
+				had_character_flag = {
+					flag = festival_event_happened
+					days = 3
+				}
+			}
+			is_valid_attraction = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 360
+		
+		modifier = {
+			factor = 0.33
+			liege = { NOT = { has_character_flag = festival_event_happened } }
+		}	
+		modifier = {
+			factor = 1.5
+			liege = { has_character_flag = festival_event_happened }
+		}			
+		modifier = {
+			factor = 1.25
+			liege = { has_character_flag = unbinding_cheap_festivities }
+		}
+		modifier = {
+			factor = 0.75
+			liege = { has_character_flag = unbinding_grand_festivities }
+		}
+		modifier = {
+			factor = 0.50
+			liege = {
+				is_lover = ROOT
+			}
+		}
+		modifier = {
+			factor = 0.50
+			liege = {
+				any_spouse = {
+					character = ROOT
+				}
+			}
+		}
+	}
+
+	option = {
+		name = OK
+		liege = {
+			character_event = { id = ancrel.3461 }
+		}
+	}
+}
+
+# spouse looks attractive in the firelight (ping spouse)
+character_event = {
+	id = ancrel.3463
+	hide_window = yes
+
+	capable_only = yes
+	is_ruler = yes
+
+	trigger = {
+		spouse = {
+			has_character_modifier = holding_unbinding_festival
+			OR = {
+				NOT = { has_character_flag = festival_event_happened }
+				had_character_flag = {
+					flag = festival_event_happened
+					days = 3
+				}
+			}
+			is_valid_attraction = ROOT
+			NOT = {
+				same_realm = ROOT
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 360
+		
+		modifier = {
+			factor = 0.33
+			spouse = { NOT = { has_character_flag = festival_event_happened } }
+		}	
+		modifier = {
+			factor = 1.5
+			spouse = { has_character_flag = festival_event_happened }
+		}			
+		modifier = {
+			factor = 1.25
+			spouse = { has_character_flag = unbinding_cheap_festivities }
+		}
+		modifier = {
+			factor = 0.75
+			spouse = { has_character_flag = unbinding_grand_festivities }
+		}
+		modifier = {
+			factor = 0.50
+			spouse = {
+				is_lover = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = OK
+		spouse = {
+			limit = {
+				has_character_modifier = holding_unbinding_festival
+			}
+			character_event = { id = ancrel.3461 }
+		}
+	}
+}
+
+# a spouse/vassal/courtier looks attractive in the firelight (other character)
+character_event = {
+	id = ancrel.3464
+}
+
+# spouse/courtier accepts advances (liege)
+character_event = {
+	id = ancrel.3465
+}
+
+# spouse/courtier rejects advances (liege)
+character_event = {
+	id = ancrel.3466
+}
+
+# you've been burned by firedancer oil!
+character_event = {
+	id = ancrel.3467
+	desc = ancrel.3467.desc
+	portrait = GFX_evt_firedancers
+
+	trigger = { 
+		has_character_modifier = holding_unbinding_festival
+		OR = {
+			NOT = { has_character_flag = festival_event_happened }
+			had_character_flag = {
+				flag = festival_event_happened
+				days = 3
+			}
+		}
+	}
+
+	immediate = {
+		set_character_flag = festival_event_happened
+	}
+
+	mean_time_to_happen = {
+		days = 360
+		modifier = {
+			factor = 0.75
+			has_character_flag = unbinding_cheap_festivities
+		}
+		modifier = {
+			factor = 1.25
+			has_character_flag = unbinding_grand_festivities
+		}
+	}
+
+	option = {
+		name = ancrel.3467.a
+
+		add_trait = maimed
+	}
+}
 
 ###################################################################
 

@@ -8992,7 +8992,6 @@ pagan_county_conquest = {
 			AND = {
 				ROOT = {
 					religion_group = pagan_group
-					NOT = { religion = promethean_pagan }
 					NOT = { same_realm = FROM }
 				}
 				FROM = {

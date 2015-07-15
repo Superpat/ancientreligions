@@ -9,6 +9,7 @@ decisions = {
 				NOT = { religion = ROOT }
 				religion_group = ROOT
 			}
+			controls_religion = no
 		}
 		allow = {
 			NOT = { trait = zealous }
@@ -106,6 +107,7 @@ decisions = {
 	convert_to_local_culture = {
 		potential = {
 			is_playable = yes
+			is_nomadic = no
 			capital_scope = {
 				NOT = { culture = ROOT }
 			}
@@ -247,6 +249,7 @@ decisions = {
 		potential = {
 			ai = no
 			is_playable = yes
+			is_nomadic = no
 			capital_scope = {
 				NOT = { religion = ROOT }
 			}
@@ -388,7 +391,10 @@ decisions = {
 		potential = {
 			is_playable = yes
 			OR = {
-				religion_group = pagan_group
+				AND = {
+					religion_group = pagan_group
+					is_reformed = no
+				}
 				religion_group = zoroastrian_group
 			}
 			controls_religion = no

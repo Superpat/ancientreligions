@@ -1,3 +1,8 @@
+Next v0.36.?
+-------------------------
+- Compatibility with vanilla 2.4.1
+- Optimization of some MTTH events, by using pre-triggers to exclude courtiers.
+
 2015-3-10 v0.36.2 "Anchises"
 -------------------------
 Celtic Paganism:

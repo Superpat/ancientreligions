@@ -21,6 +21,8 @@ character_event = {
 	picture = GFX_evt_thebard
 	border = GFX_event_normal_frame_religion
 	
+	only_rulers = yes
+	
 	trigger = {
 		OR = {
 			religion = celtic_pagan
@@ -96,6 +98,8 @@ character_event = {
 	desc = EVTDESCancrel.0151
 	picture = GFX_evt_lakeside
 	border = GFX_event_normal_frame_religion
+	
+	only_rulers = yes
 	
 	trigger = {
 		OR = {
@@ -174,6 +178,8 @@ character_event = {
 	desc = EVTDESCancrel.1252
 	picture = GFX_evt_banshee
 	border = GFX_event_normal_frame_religion
+	
+	only_rulers = yes
 	
 	trigger = {
 		OR = {
@@ -263,6 +269,8 @@ character_event = {
 	picture = GFX_evt_boatcoast
 	border = GFX_event_normal_frame_religion
 	
+	only_rulers = yes
+	
 	trigger = {
 		OR = {
 			religion = celtic_pagan
@@ -331,6 +339,7 @@ character_event = {
 
 	min_age = 16
 	prisoner = no
+	only_rulers = yes
 
 	trigger = {
 		has_dlc = "The Old Gods"

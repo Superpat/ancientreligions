@@ -152,8 +152,8 @@ pagan_group = {
 			knights_defensive = 0.4
 			archers_defensive = 0.4
 			horse_archers_defensive = 0.4
-			camel_cavalry_DEFENSIVE = 0.4
-			war_elephants_DEFENSIVE = 0.4
+			camel_cavalry_defensive = 0.4
+			war_elephants_defensive = 0.4
 			
 			garrison_size = 0.2
 			
@@ -215,8 +215,8 @@ pagan_group = {
 			knights_defensive = 0.6
 			archers_defensive = 0.6
 			horse_archers_defensive = 0.6
-			camel_cavalry_DEFENSIVE = 0.6
-			war_elephants_DEFENSIVE = 0.6
+			camel_cavalry_defensive = 0.6
+			war_elephants_defensive = 0.6
 			
 			garrison_size = 0.2
 			

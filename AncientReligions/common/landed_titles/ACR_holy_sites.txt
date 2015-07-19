@@ -1,40 +1,40 @@
 ### Celtic Pagan
 
-b_locmine = {
+c_vannes = {
 	holy_site = celtic_pagan
 	holy_site = celtic_pagan_reformed
 }
-b_waltham = {
+c_essex = {
 	holy_site = celtic_pagan
 	holy_site = celtic_pagan_reformed
 }
-b_bangor_fawr = {
+c_gwynedd = {
 	holy_site = celtic_pagan
 	holy_site = celtic_pagan_reformed
 }
-b_whithorn = {
+c_galloway = {
 	holy_site = celtic_pagan
 	holy_site = celtic_pagan_reformed
 }
-b_mellifont = {
+c_dublin = {
 	holy_site = celtic_pagan
 	holy_site = celtic_pagan_reformed
 }
 
 # Egyptian pagan
 
-b_zweitina = {
+c_homs = {
 	holy_site = egyptian_pagan
 }
-b_ikonion = {		
+c_ikonion = {		
 	holy_site = egyptian_pagan
 }
-b_fuwa = {
+c_gabiyaha = {
 	holy_site = egyptian_pagan	
 }
-b_memphis = {
+c_cairo = {
 	holy_site = egyptian_pagan
 }
-b_luxor = {
-	holy_site = egyptian_pagan
+c_asyut = {
+	holy_site = egyptian_pagan # Luxor
 }

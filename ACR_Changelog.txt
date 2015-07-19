@@ -1,7 +1,9 @@
-Next v0.36.?
+2015-7-19 v0.36.3 "Eryx"
 -------------------------
 - Compatibility with vanilla 2.4.1
 - Optimization of some MTTH events, by using pre-triggers to exclude courtiers.
+- Fixed Gaulish Cavalry Retinue being Heavy Infantry. Should be Heavy Cavalry now, as intended.
+- Messalians can hire women to all councilor positions again.
 
 2015-3-10 v0.36.2 "Anchises"
 -------------------------

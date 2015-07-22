@@ -1,3 +1,7 @@
+Next v0.36.4 
+-------------------------
+- Compatibility with vanilla 2.4.2
+
 2015-7-19 v0.36.3 "Eryx"
 -------------------------
 - Compatibility with vanilla 2.4.1

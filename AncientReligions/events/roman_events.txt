@@ -32,7 +32,7 @@ narrative_event = {
 		}
 		OR = {
 			religion_group = christian
-			religion_group = pagan_group
+			religion = hellenic_pagan
 		}
 		NOT = { has_global_flag = syria_palaestina }
 		completely_controls = d_edessa
@@ -76,7 +76,7 @@ narrative_event = {
 		}
 		OR = {
 			religion_group = christian
-			religion_group = pagan_group
+			religion = hellenic_pagan
 		}
 		NOT = { has_global_flag = aegyptus }
 		completely_controls = d_alexandria
@@ -116,7 +116,7 @@ narrative_event = {
 		}
 		OR = {
 			religion_group = christian
-			religion_group = pagan_group
+			religion = hellenic_pagan
 		}
 		NOT = { has_global_flag = cyrenaica }
 		completely_controls = d_cyrenaica
@@ -152,7 +152,7 @@ narrative_event = {
 		}
 		OR = {
 			religion_group = christian
-			religion_group = pagan_group
+			religion = hellenic_pagan
 		}
 		NOT = { has_global_flag = africa }
 		completely_controls = d_tripolitania
@@ -189,7 +189,7 @@ narrative_event = {
 		}
 		OR = {
 			religion_group = christian
-			religion_group = pagan_group
+			religion = hellenic_pagan
 		}
 		NOT = { has_global_flag = illyricum }
 		completely_controls = d_vidin
@@ -231,7 +231,7 @@ narrative_event = {
 		}
 		OR = {
 			religion_group = christian
-			religion_group = pagan_group
+			religion = hellenic_pagan
 		}
 		NOT = { has_global_flag = italia }
 		completely_controls = d_venice
@@ -282,7 +282,7 @@ narrative_event = {
 		}
 		OR = {
 			religion_group = christian
-			religion_group = pagan_group
+			religion = hellenic_pagan
 		}
 		NOT = { has_global_flag = sicilia }
 		completely_controls = d_sicily
@@ -317,7 +317,7 @@ narrative_event = {
 		}
 		OR = {
 			religion_group = christian
-			religion_group = pagan_group
+			religion = hellenic_pagan
 		}
 		NOT = { has_global_flag = sardinia }
 		completely_controls = d_sardinia
@@ -352,7 +352,7 @@ narrative_event = {
 		}
 		OR = {
 			religion_group = christian
-			religion_group = pagan_group
+			religion = hellenic_pagan
 		}
 		NOT = { has_global_flag = viennensis }
 		completely_controls = d_aquitaine
@@ -394,7 +394,7 @@ narrative_event = {
 		}
 		OR = {
 			religion_group = christian
-			religion_group = pagan_group
+			religion = hellenic_pagan
 		}
 		NOT = { has_global_flag = gallia }
 		completely_controls = d_brittany
@@ -444,7 +444,7 @@ narrative_event = {
 		}
 		OR = {
 			religion_group = christian
-			religion_group = pagan_group
+			religion = hellenic_pagan
 		}
 		NOT = { has_global_flag = germania }
 		completely_controls = d_mecklemburg
@@ -494,7 +494,7 @@ narrative_event = {
 		}
 		OR = {
 			religion_group = christian
-			religion_group = pagan_group
+			religion = hellenic_pagan
 		}
 		NOT = { has_global_flag = britannia }
 		completely_controls = d_northumberland
@@ -540,7 +540,7 @@ narrative_event = {
 		}
 		OR = {
 			religion_group = christian
-			religion_group = pagan_group
+			religion = hellenic_pagan
 		}
 		NOT = { has_global_flag = hispania }
 		completely_controls = d_castilla
@@ -592,7 +592,7 @@ narrative_event = {
 		}
 		OR = {
 			religion_group = christian
-			religion_group = pagan_group
+			religion = hellenic_pagan
 		}
 		NOT = { has_global_flag = mauretania }
 		completely_controls = d_marrakech
@@ -629,7 +629,7 @@ narrative_event = {
 		}
 		OR = {
 			religion_group = christian
-			religion_group = pagan_group
+			religion = hellenic_pagan
 		}
 		NOT = { has_global_flag = mesopotamia }
 		completely_controls = d_tigris
@@ -667,7 +667,7 @@ narrative_event = {
 		}
 		OR = {
 			religion_group = christian
-			religion_group = pagan_group
+			religion = hellenic_pagan
 		}
 		NOT = { has_global_flag = caledonia }
 		completely_controls = d_galloway
@@ -706,7 +706,7 @@ narrative_event = {
 		}
 		OR = {
 			religion_group = christian
-			religion_group = pagan_group
+			religion = hellenic_pagan
 		}
 		NOT = { has_global_flag = hibernia }
 		completely_controls = d_ulster
@@ -754,7 +754,7 @@ character_event = {
 		}
 		OR = {
 			religion_group = christian
-			religion_group = pagan_group
+			religion = hellenic_pagan
 		}
 	}
 	
@@ -843,7 +843,7 @@ narrative_event = {
 		}
 		OR = {
 			religion_group = christian
-			religion_group = pagan_group
+			religion = hellenic_pagan
 		}
 		NOT = { has_global_flag = roman_borders }
 		

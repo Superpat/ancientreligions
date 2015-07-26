@@ -640,9 +640,12 @@ decisions = {
 	}
 }
 
-vassal_decisions = {
+targetted_decisions = {
 
 	nominate_vestalis_decision = {
+		filter = court
+		ai_target_filter = court
+
 		from_potential = {
 			religion = hellenic_pagan
 			NOT = { has_landed_title = d_hellenic_pagan }

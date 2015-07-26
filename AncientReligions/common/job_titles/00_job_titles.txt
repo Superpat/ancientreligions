@@ -30,6 +30,7 @@ job_chancellor = {
 							religion = celtic_pagan
 							religion = celtic_pagan_reformed
 							religion = promethean_pagan
+							religion = messalian
 						}
 						religion = ROOT
 					}
@@ -71,6 +72,7 @@ job_chancellor = {
 	
 	action = action_improve_relations
 	action = action_fabricate_claims
+	action = action_clan_sentiment # Replaces Fabricate Claims for Nomads
 	action = action_sow_dissent
 
 	lift_fow = yes
@@ -98,6 +100,7 @@ job_marshal = {
 							religion = celtic_pagan
 							religion = celtic_pagan_reformed
 							religion = promethean_pagan
+							religion = messalian
 						}
 						religion = ROOT
 					}
@@ -125,6 +128,7 @@ job_marshal = {
 	
 	action = action_assist_arrest
 	action = action_train_troops
+	action = action_train_troops_nomadic
 	action = action_advance_mil_tech
 	action = action_organize_raid # Replaces action_advance_mil_tech for Tribes
 
@@ -152,6 +156,7 @@ job_treasurer = {
 							religion = celtic_pagan
 							religion = celtic_pagan_reformed
 							religion = promethean_pagan
+							religion = messalian
 						}
 						religion = ROOT
 					}
@@ -172,6 +177,7 @@ job_treasurer = {
 	}
 	
 	action = action_squeeze_peasants
+	action = action_collect_tribute # Replaces action_squeeze_peasants for Nomads
 	action = action_settle_tribe # Replaces action_squeeze_peasants for Tribes
 	action = action_oversee_construction
 	action = action_advance_eco_tech
@@ -254,16 +260,7 @@ job_spiritual = {
 				is_adult = yes
 				OR = {
 					is_female = no
-					AND = {
-						religion_group = pagan_group
-						NOT = { religion = aztec }
-						NOT = { religion = aztec_reformed}
-						NOT = { religion = tengri_pagan }
-						NOT = { religion = tengri_pagan_reformed}
-					}
-					religion = cathar
-					religion = messalian
-					religion = bogomilist
+					religion_allows_female_temple_holders = yes
 				}
 				OR = {
 					NOT = { religion = hindu }
@@ -281,8 +278,21 @@ job_spiritual = {
 			}
 			liege = { religion_group = muslim }
 			AND = {
-				is_ruler = no
+				clan = yes
+				liege = {
+					is_nomadic = yes
+				}
+			}
+			AND = {
 				has_autocephaly = no
+				is_ruler = no
+			}
+			AND = {
+				has_autocephaly = yes
+				is_ruler = no
+				NOT = {
+					any_vassal = { is_theocracy = yes }
+				}
 			}
 		}
 		
@@ -320,7 +330,12 @@ job_spiritual = {
 		opinion = { who = FROM modifier = opinion_fired_from_council }
 	}
 	dismiss_trigger = {
-		NOT = { FROM = { religion_group = muslim } }
+		FROM = {
+			OR = {
+				NOT = { religion_group = muslim }
+				NOT = { religion = ROOT }
+			}
+		}
 	}
 	
 	action = action_inquisition

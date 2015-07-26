@@ -52,6 +52,7 @@
 #
 # ancrel.4000 - ancrel.4008 Decision events
 # ancrel.4010 - ancrel.4019 Sed festival
+# ancrel.4100 - ancrel.4199 Cybrxkhan stuff (will be more detailed later)
 # ancrel.5000 - ancrel.5500 Aten Stuff
 #
 ###################################
@@ -61,4 +62,4 @@
 # GonePagan.1 - GonePagan.199 Gone Pagan events, from CK2+
 # ancrel.9001 - ancrel.9009 Paganify Customization Option
 #
-###################################
+################################### 

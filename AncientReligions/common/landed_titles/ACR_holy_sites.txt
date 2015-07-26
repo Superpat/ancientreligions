@@ -1,99 +1,95 @@
 ### Celtic Pagan
 
-b_locmine = {
+c_vannes = {
 	holy_site = celtic_pagan
 	holy_site = celtic_pagan_reformed
 }
-b_waltham = {
+c_essex = {
 	holy_site = celtic_pagan
 	holy_site = celtic_pagan_reformed
 }
-b_bangor_fawr = {
+c_gwynedd = {
 	holy_site = celtic_pagan
 	holy_site = celtic_pagan_reformed
 }
-b_autun = {
+
+c_dijon = {
 	holy_site = celtic_pagan
 	holy_site = celtic_pagan_reformed
 }
-b_mellifont = {
+c_dublin = {
 	holy_site = celtic_pagan
 	holy_site = celtic_pagan_reformed
 }
 
 ### Egyptian Pagan
 
-b_zweitina = {
+c_homs = {
 	holy_site = egyptian_pagan
 	holy_site = aten_pagan
 }
-b_ikonion = {		
+c_ikonion = {		
 	holy_site = egyptian_pagan
 	holy_site = aten_pagan
 }
-b_fuwa = {
+c_gabiyaha = {
 	holy_site = egyptian_pagan
 	holy_site = aten_pagan
 }
-b_memphis = {
+c_cairo = {
 	holy_site = egyptian_pagan
 	holy_site = aten_pagan
 }
-b_luxor = {
+c_asyut = {
 	holy_site = egyptian_pagan
-}
-# 7km from Amarna
-# (must be rebuilt)
-b_meir = {
 	holy_site = aten_pagan
 }
 
 ### Hellenic Heresies
 
 # a center of learning for over a thousand years
-b_alexandria = {
+c_alexandria = {
 	holy_site = promethean_pagan
 }
 
 # site of a pythagorean academy
-# (must be rebuilt)
-b_crotone ={
+c_consenza ={
 	holy_site = promethean_pagan
 }
 
 # Kartli covers the southern slopes of Mt Kazbek,
 # the legendary location of Prometheus' binding
-b_svetitskhoveli = {
+c_kartli = {
 	holy_site = promethean_pagan
 }
 
 # Thessalonike
-b_thesedessa = {
+c_thessalonike = {
 	holy_site = promethean_pagan
 	holy_site = titan_pagan
 }
 
-# Athens, location of the Academy
+# Athens is location of the Academy
 # and the Kronia festival
-b_piraeaus = {
+c_athens = {
 	holy_site = promethean_pagan
 	holy_site = titan_pagan
 }
 
-# temple in Thessalia, the location of Mt Othrys,
+# The location of Mt Othrys,
 # which served as the base of the Titans during
 # the Titanomachy
-b_volos = {
+c_thessalia = {
 	holy_site = titan_pagan
 }
 
 # major temple to saturn(kronos)
-b_roma = {
+c_roma = {
 	holy_site = titan_pagan
 }
 
 # mythical entrance to Tartarus, 
 # location of an oracle
-b_paramythia = {
+c_epeiros = {
 	holy_site = titan_pagan
 }

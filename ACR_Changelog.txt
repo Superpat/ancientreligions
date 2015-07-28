@@ -1,6 +1,9 @@
-Next v0.36.4 
+2015-7-?? v0.36.4 "Beroe"
 -------------------------
-- Compatibility with vanilla 2.4.2
+- Compatibility with vanilla 2.4.3
+- Fixed issue where Tribal Marshals couldn't use the Train Warriors action
+- Hellenism, Prometheanism, The Titan Cult, and Atenism are all available in the Ruler Designer.
+- Pagans no longer use random Coats of Arms for Count and higher titles.
 
 2015-7-19 v0.36.3 "Eryx"
 -------------------------

@@ -56,3 +56,31 @@ held_failed_sed_festival = {
 	general_opinion = -10
 	icon = 35
 }
+
+#Nile Flood Modifiers
+VIET_nile_flood_good = {
+	local_revolt_risk = -0.01
+	#local_tax_modifier = 0.1
+	icon = 12
+}
+VIET_nile_flood_great = {
+	local_revolt_risk = -0.05
+	local_tax_modifier = 0.1
+	local_build_time_modifier = -0.05
+	local_build_cost_modifier = -0.05
+	icon = 12
+}
+VIET_nile_flood_poor = {
+	local_revolt_risk = 0.05
+	local_tax_modifier = -0.1
+	#local_build_time_modifier = 0.05
+	#local_build_cost_modifier = 0.05
+	icon = 30
+}
+VIET_nile_flood_overflow = {
+	local_revolt_risk = 0.05
+	local_tax_modifier = -0.05
+	local_build_time_modifier = 0.1
+	local_build_cost_modifier = 0.1
+	icon = 30
+}

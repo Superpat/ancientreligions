@@ -5,7 +5,7 @@
 - Hellenism, Prometheanism, The Titan Cult, and Atenism are all available in the Ruler Designer.
 - Pagans no longer use random Coats of Arms for Count and higher titles.
 - "Studied the Classics" is more likely to occur in later start dates than previously (but still less likely than early start dates).
-- The third witch is now a Kemetic.
+- The third witch is now a Kemetic pagan.
 - Updated religion descriptions using the new _FEATURES localization.
 -- Should decrease repetition.
 - "Lets. Get. PAGAN!" prevents Christian and Muslim religious heads from calling Crusades/Jihads.

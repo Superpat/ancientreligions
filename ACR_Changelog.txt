@@ -8,6 +8,7 @@
 - The third witch is now a Kemetic.
 - Updated religion descriptions using the new _FEATURES localization.
 -- Should decrease repetition.
+- "Lets. Get. PAGAN!" prevents Christian and Muslim religious heads from calling Crusades/Jihads.
 
 2015-7-19 v0.36.3 "Eryx"
 -------------------------

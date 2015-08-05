@@ -340,8 +340,8 @@ other_claim = {
 			if = {
 				limit = {
 					OR = {
-						tag = k_papal_state
-						tag = d_fraticelli
+						title = k_papal_state
+						title = d_fraticelli
 					}
 				}
 				FROM = {
@@ -7281,6 +7281,7 @@ pagan_subjugation = {
 			NOT = { ROOT = { religion = aztec } }
 			FROM = { religion = aztec }
 		}
+		
 		FROM = {
 			in_revolt = no
 			religion_group = pagan_group
@@ -7295,8 +7296,10 @@ pagan_subjugation = {
 				any_war = {
 					AND = {
 						defender = { character = PREVPREV }
-						using_cb = pagan_subjugation
-						using_cb = nomad_subjugation
+						OR = {
+							using_cb = pagan_subjugation
+							using_cb = nomad_subjugation
+						}
 					}
 				}
 			}
@@ -12280,6 +12283,10 @@ cb_minor_clan_revolt = {
 			}
 		}
 	}
+	
+	on_attacker_leader_death = {
+		end_war = invalid
+	}
 
 	attacker_ai_victory_worth = {
 		factor = -1 # always accept
@@ -12330,6 +12337,9 @@ nomad_subjugation = {
 		FROM = {
 			in_revolt = no
 			is_nomadic = no # Nomads cannot be subjugated
+			NOT = {
+				higher_tier_than = ROOT
+			}
 			NOT = {
 				any_war = {
 					AND = {

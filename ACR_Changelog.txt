@@ -1,9 +1,13 @@
-2015-7-?? v0.36.4 "Beroe"
+2015-8-?? v0.36.4 "Beroe"
 -------------------------
 - Compatibility with vanilla 2.4.3
 - Fixed issue where Tribal Marshals couldn't use the Train Warriors action
 - Hellenism, Prometheanism, The Titan Cult, and Atenism are all available in the Ruler Designer.
 - Pagans no longer use random Coats of Arms for Count and higher titles.
+- "Studied the Classics" is more likely to occur in later start dates than previously (but still less likely than early start dates).
+- The third witch is now a Kemetic.
+- Updated religion descriptions using the new _FEATURES localization.
+-- Should decrease repetition.
 
 2015-7-19 v0.36.3 "Eryx"
 -------------------------

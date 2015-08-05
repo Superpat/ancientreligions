@@ -77,7 +77,6 @@ job_chancellor = {
 	lift_fow = yes
 }
 
-# NOTE: The allow trigger for this job also determines who can command armies!
 job_marshal = {
 	is_marshal = yes
 	attribute = martial
@@ -198,8 +197,8 @@ job_spymaster = {
 					is_female = no
 					liege = { 
 						OR = {
-							mother = { character = FROM }
-							spouse = { character = FROM }
+							mother = { character = ROOT }
+							spouse = { character = ROOT }
 						}
 					}
 					AND = {
@@ -211,6 +210,10 @@ job_spymaster = {
 					AND = {
 						religion = cathar
 						liege = { religion = cathar }
+					}
+					AND = {
+						religion = messalian
+						liege = { religion = messalian }
 					}
 				}
 				is_adult = yes

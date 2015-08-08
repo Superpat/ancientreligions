@@ -62,9 +62,19 @@ temple_duchy_of_hellenic_pagan;Grand Pontificate of;;;;;;;;;;;;;x
 temple_county_hellenic_pagan;Pontificate;;;;;;;;;;;;;x
 temple_county_of_hellenic_pagan;Pontificate of;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
+vice_royalty_king_roman;Prefect;;;;;;;;;;;;;x
+vice_royalty_king_female_roman;Prefecta;;;;;;;;;;;;;x
+vice_royalty_duke_hellenic_roman;Procurator Augusti;;;;;;;;;;;;;x
+vice_royalty_duke_female_roman;Procurata Augusti;;;;;;;;;;;;;x
+vice_royalty_count_hellenic_roman;Procurator;;;;;;;;;;;;;x
+vice_royalty_count_female_roman;Procurata;;;;;;;;;;;;;x
+vice_royalty_baron_roman;Quaestor;;;;;;;;;;;;;x
+vice_royalty_baron_female_roman;Quaestora;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;x
 d_hellenic_pagan;The Pontificate Maxima;Le Pontificat Maxima;;;;;;;;;;;;x
 d_hellenic_pagan_adj;Pontifical;;;;;;;;;;;;;x
 PONTIFEX_MAXIMUS;Pontifex Maximus;Pontifex Maximus;Pontifex Maximus;;Pontifex Maximus;;;;;;;;;x
+PONTIFICA_MAXIMUS;Pontifica Maximus;;;;;;;;;;;;;x
 PONTIFEX_MAXIMUS_FOA;Your Holiness;Sa Sainteté;Eure Heiligkeit;;Su Santidad;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 job_chancellor_hellenic_pagan;Magister Officiorum;Magister Officiorum;;;;;;;;;;;;x
@@ -77,6 +87,16 @@ city_job_marshal_hellenic_pagan;Magister Militum;Magister Militum;;;;;;;;;;;;x
 city_job_marshal_hellenic_pagan_byzantine;Stratelates;Stratelates;;;;;;;;;;;;x
 city_job_treasurer_hellenic_pagan;Quaestor;Quaestor;;;;;;;;;;;;x
 city_job_spiritual_hellenic_pagan;Augur;Augure;;;;;;;;;;;;x
+tribal_job_chancellor_hellenic_pagan;Magister Officiorum;Magister Officiorum;;;;;;;;;;;;x
+tribal_job_marshal_hellenic_pagan;Magister Militum;Magister Militum;;;;;;;;;;;;x
+tribal_job_marshal_hellenic_pagan_byzantine;Stratelates;Stratelates;;;;;;;;;;;;x
+tribal_job_treasurer_hellenic_pagan;Quaestor;Quaestor;;;;;;;;;;;;x
+tribal_job_spiritual_hellenic_pagan;Augur;Augure;;;;;;;;;;;;x
+nomad_job_chancellor_hellenic_pagan;Magister Officiorum;Magister Officiorum;;;;;;;;;;;;x
+nomad_job_marshal_hellenic_pagan;Magister Militum;Magister Militum;;;;;;;;;;;;x
+nomad_job_marshal_hellenic_pagan_byzantine;Stratelates;Stratelates;;;;;;;;;;;;x
+nomad_job_treasurer_hellenic_pagan;Quaestor;Quaestor;;;;;;;;;;;;x
+nomad_job_spiritual_hellenic_pagan;Augur;Augure;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 hellenic_county_liberation_desc;Hellenic pagan rulers can liberate Italian and Greek provinces from the tyrannical rule of the monotheistic religions.;Les païens hellènes peuvent libérer les provinces italiennes et grecques du joug tyrannique des religions monothéistes;;;;;;;;;;;;x
 CB_NAME_HELLENIC_LIBERATION;Liberation of [Title.GetBaseName];Libération de [Title.GetBaseName];;;;;;;;;;;;x

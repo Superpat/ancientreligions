@@ -25,10 +25,10 @@ GOD_APEP;Apep;Apep;Apep;;Apep;;;;;;;;;x
 ###### Titles;;;;;;;;;;;;;;x
 d_egyptian_pagan;The Paragon Cult of Amun;Le Culte Parandon d'Amon;The Paragon Cult of Amun;;The Paragon Cult of Amun;;;;;;;;;x
 d_egyptian_pagan_adj;Cultist;Sectateur;Cultist;;Cultist;;;;;;;;;x
-d_anubis;Anubis Guard;Garde d'Anubis;Anubis Guard;;Anubis Guard;;;;;;;;;x
-d_anubis_adj;Guardian;Garde;Guardian;;Guardian;;;;;;;;;x
-d_horus;Horusian Guard;Garde d'Horus;Horusian Guard;;Horusian Guard;;;;;;;;;x
-d_horus_adj;Guardian;Garde;Guardian;;Guardian;;;;;;;;;x
+d_anubis;Anubis Guard;Garde d'Anubis;;;;;;;;;;;;x
+d_anubis_adj;Guardian;Garde;;;;;;;;;;;;x
+d_horus;Horusian Guard;Garde d'Horus;;;;;;;;;;;;x
+d_horus_adj;Guardian;Garde;;;;;;;;;;;;x
 ###### FOA egyptian_pagan;;;;;;;;;;;;;;x
 count_egyptian_pagan;Irypat;Irypat;Irypat;;Irypat;;;;;;;;;x
 duke_egyptian_pagan;Nomarch;Nomarque;Nomarch;;Nomarch;;;;;;;;;x

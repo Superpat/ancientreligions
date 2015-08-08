@@ -79,8 +79,15 @@ temple_kingdom_of_celtic_pagan_reformed;Federation of;;;;;;;;;;;;;x
 temple_emperor_celtic_pagan_reformed;Myrdynn;;;;;;;;;;;;;x
 temple_empire_of_celtic_pagan_reformed;Nation of;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
+job_spiritual_celtic_pagan;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
+city_job_spiritual_celtic_pagan;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
+tribal_job_spiritual_celtic_pagan;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
+nomad_job_spiritual_celtic_pagan;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
+#;;;;;;;;;;;;;;x
 job_spiritual_celtic_pagan_reformed;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
 city_job_spiritual_celtic_pagan_reformed;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
+tribal_job_spiritual_celtic_pagan_reformed;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
+nomad_job_spiritual_celtic_pagan_reformed;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 baron_celtic_pagan;Chief;Chef;;;Señor;;;;;;;;;x
 baron_female_celtic_pagan;Chieftess;;;;;;;;;;;;;x

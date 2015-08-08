@@ -10,9 +10,9 @@
 -- Should decrease repetition.
 - "Lets. Get. PAGAN!" prevents Christian and Muslim religious heads from calling Crusades/Jihads.
 - Added missing councilor localization for alternate governments.
-- The Pontifica Maxima will no longer be referred to as a Legata.
+- The Pontifica Maxima will no longer be referred to as a Legata Augusti.
 - Roman Viceroys now have unique localization.
-- 
+- Sed Festival can now be taken after 10 years instead of 30, so you actually have a chance of using it.
 
 2015-7-19 v0.36.3 "Eryx"
 -------------------------

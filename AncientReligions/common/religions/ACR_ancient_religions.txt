@@ -292,6 +292,7 @@ pagan_group = {
 		
 		color = {0.9 0.8 0}
 		
+		crusade_name = GREAT_HOLY_WAR
 		high_god_name = GOD_ATEN
 		god_names = {
 			GOD_ATEN

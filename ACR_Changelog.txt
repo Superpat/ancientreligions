@@ -1,4 +1,4 @@
-2015-8-?? v0.36.4 "Beroe"
+2015-8-12 v0.36.4 "Beroe"
 -------------------------
 - Compatibility with vanilla 2.4.3
 - Fixed issue where Tribal Marshals couldn't use the Train Warriors action

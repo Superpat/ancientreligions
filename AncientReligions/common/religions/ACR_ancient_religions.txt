@@ -1,5 +1,4 @@
 pagan_group = {
-	has_coa_on_barony_only = no
 	hellenic_pagan = {
 		graphical_culture = westerngfx
 		
@@ -33,6 +32,8 @@ pagan_group = {
 		
 		religious_clothing_head = 5
 		religious_clothing_priest = 5
+
+		allow_in_ruler_designer = yes
 	}
 
 	titan_pagan = {
@@ -69,7 +70,7 @@ pagan_group = {
 
 		religious_clothing_priest = 5
 
-		allow_in_ruler_designer = no
+		allow_in_ruler_designer = yes
 	}
 
 	promethean_pagan = {
@@ -107,7 +108,7 @@ pagan_group = {
 		religious_clothing_head = 5
 		religious_clothing_priest = 5
 
-		allow_in_ruler_designer = no
+		allow_in_ruler_designer = yes
 	}
 
 	celtic_pagan_reformed = {
@@ -291,6 +292,7 @@ pagan_group = {
 		
 		color = {0.9 0.8 0}
 		
+		crusade_name = GREAT_HOLY_WAR
 		high_god_name = GOD_ATEN
 		god_names = {
 			GOD_ATEN
@@ -299,9 +301,10 @@ pagan_group = {
 			GOD_SET
 		}
 		
-		allow_in_ruler_designer = no
 		parent = egyptian_pagan
 		allow_rivermovement = yes
 		can_call_crusade = yes
+
+		allow_in_ruler_designer = yes
 	}
 }

@@ -14,8 +14,10 @@ GOD_DANA;Dannu;;;;;;;;;;;;;x
 GOD_NUADA;Nuada;;;;;;;;;;;;;x
 celtic_pagan;Celtic;;;;;;;;;;;;;x
 celtic_pagan_reformed;Druidic;;;;;;;;;;;;;x
-celtic_pagan_DESC;Celtic paganism is one of the last surviving branch of the ancient druidic belief systems. A pantheon of gods and a world full of spirits, the children of Dannu rule the Skies, the Earth and the Otherworld. The main gods are Cernunnos, the Horned One, Dannu and Nuada, Angus, the god of Youth, Macha, the horse goddess, the great Daghda, Manannan mac Lir, the Sea God and Lugh of the Long Spear. Defining features in-game:\n§Y*§! Can declare Subjugation Wars against all other pagans\n§Y*§! Rulers are limited to Gavelkind Succession;;;;;;;;;;;;;x
-celtic_pagan_reformed_DESC;The reformed Celtic faith has a standardized liturgy etched on the many raised stones on the British Isles, telling the story of the Tuatha De Danann. It is led by the Circle of the Druids with the Arch-Druid as the religious leader of the faithful. Defining features in-game:\n§Y*§! The Arch Druid is elected by, and from, the members of the Circle;;;;;;;;;;;;;x
+celtic_pagan_DESC;Celtic paganism is one of the last surviving branch of the ancient druidic belief systems. A pantheon of gods and a world full of spirits, the children of Dannu rule the Skies, the Earth and the Otherworld. The main gods are Cernunnos, the Horned One, Dannu and Nuada, Angus, the god of Youth, Macha, the horse goddess, the great Daghda, Manannan mac Lir, the Sea God and Lugh of the Long Spear.;;;;;;;;;;;;;x
+celtic_pagan_reformed_DESC;The reformed Celtic faith has a standardized liturgy etched on the many raised stones on the British Isles, telling the story of the Tuatha De Danann. It is led by the Circle of the Druids with the Arch-Druid as the religious leader of the faithful.;;;;;;;;;;;;;x
+celtic_pagan_FEATURES;§Y*§! Can declare Subjugation Wars against all other pagans\n§Y*§! Rulers are limited to Gavelkind Succession;;;;;;;;;;;;;x
+celtic_pagan_reformed_FEATURES;§Y*§! The Arch Druid is elected by, and from, the members of the Circle;;;;;;;;;;;;;x
 THE_STONES;The Sacred Stones;;;;;;;;;;;;;x
 THE_BALLADS;The Ballads;;;;;;;;;;;;;x
 DRUID;Druid;;;;;;;;;;;;;x
@@ -77,8 +79,15 @@ temple_kingdom_of_celtic_pagan_reformed;Federation of;;;;;;;;;;;;;x
 temple_emperor_celtic_pagan_reformed;Myrdynn;;;;;;;;;;;;;x
 temple_empire_of_celtic_pagan_reformed;Nation of;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
+job_spiritual_celtic_pagan;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
+city_job_spiritual_celtic_pagan;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
+tribal_job_spiritual_celtic_pagan;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
+nomad_job_spiritual_celtic_pagan;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
+#;;;;;;;;;;;;;;x
 job_spiritual_celtic_pagan_reformed;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
 city_job_spiritual_celtic_pagan_reformed;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
+tribal_job_spiritual_celtic_pagan_reformed;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
+nomad_job_spiritual_celtic_pagan_reformed;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 baron_celtic_pagan;Chief;Chef;;;Señor;;;;;;;;;x
 baron_female_celtic_pagan;Chieftess;;;;;;;;;;;;;x
@@ -126,9 +135,6 @@ temple_king_female_celtic_pagan;Archdruidess;;;;;;;;;;;;;x
 temple_kingdom_of_celtic_pagan;Federation of;;;;;;;;;;;;;x
 temple_emperor_celtic_pagan;Myrdynn;;;;;;;;;;;;;x
 temple_empire_of_celtic_pagan;Nation of;;;;;;;;;;;;;x
-#;;;;;;;;;;;;;;x
-job_spiritual_celtic_pagan;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
-city_job_spiritual_celtic_pagan;Seer;Voyant;Seher;;Vidente;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 title_pagan_wizard;Court Wizard;;;;;;;;;;;;;x
 title_pagan_wizard_desc;An unwashed, mysterious pagan from the countryside, his powers are unclear, but they serve to appease the more occult worries of a ruler.;;;;;;;;;;;;;x

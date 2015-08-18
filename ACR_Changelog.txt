@@ -28,7 +28,7 @@ Promethean:
 -- Consenza; Former site of a Pythagorean Academy, and must be rebuilt (via decision, like the Restore Luxor chain, but different).
 -- Kartli; Kartli covers the southern slopes of Mt Kazbek, the legendary peak where Prometheus was chained on the orders of Zeus.
 -- Thessalonike; Common holy site for Hellenic and Promethean, to create conflict.
--- Athens; Site of the First Academy.
+-- Athens; Site of the First Academy and point of conflict between Titan Cultists and Hellenes.
 - Prometheans may now Restore the First Academy via decision, making the Philosophos of Piraeus the Scholarch of the First Academy.
 - Prometheans can Rebuild the Academy of Crotone, the site of an ancient Pythagorean academy and a holy site of Prometheanism. This decision is similar in spirit to the Restore Luxor decision and event chain.
 - Prometheans can Organize the Men of Steel, a Holy Order of the faith. The culture of the holy order matches the organizer.
@@ -43,8 +43,8 @@ Promethean:
 Titan Cult:
 - Titan holy sites have been moved around to differentiate them from Hellenism and Prometheanism and better reflect locations that would actually be holy to them.
 -- Rome; because of the large temple to Saturn/Kronos.
--- Antioch; because of a mosaic of and dedicated to Tethys. Also it spreads the sites out.
--- Athens; Location of the Kronia festival and point of conflict with Prometheans.
+-- Antioch; because of a mosaic of, and dedicated to, Tethys. Also it spreads the sites out.
+-- Athens; Location of the Kronia festival and point of conflict with Prometheans and Hellenes.
 -- Thessalia; location of Mt Othrys, the Titans capitol during the Titanomachy (basically the Titan Olympus).
 -- Pecs; Is along the Danube, which was called "The Horn of Oceanus" by Apollonius of Rhodes. It's also far away from the other holy sites.
 - The Sickles are a holy order that can be created by Titan Cultists. The culture of the holy order matches the organizer.

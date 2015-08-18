@@ -191,9 +191,9 @@ province_event = {
 	
 	immediate = {
 		clr_global_flag = acr_crotone_building
-		set_global_flag = acr_crotone_rebuilt
 		clr_province_flag = acr_reb_crotone_1
 		clr_province_flag = acr_reb_crotone_2
+		set_global_flag = acr_crotone_rebuilt
 	}
 
 	option = {
@@ -636,6 +636,27 @@ narrative_event = {
 
 	option = {
 		name = ancrel.3455.a
+		hidden_tooltip = {
+			any_realm_character = { # regular vassals
+				limit = {
+					NOT = {
+						event_target:festival_heracles = {
+							character = THIS
+						}
+						event_target:festival_prometheus = {
+							character = THIS
+						}
+					}
+				}
+				character_event = { id = ancrel.3456 }
+			}
+			event_target:festival_prometheus = { # prometheus
+				character_event = { id = ancrel.3457 days = 0 }
+			}
+			event_target:festival_heracles = { # epimetheus
+				character_event = { id = ancrel.3458 days = 0 }
+			}
+		}
 	}
 }
 
@@ -646,25 +667,7 @@ narrative_event = {
 	picture = GFX_evt_prometheus_bound
 	border = GFX_event_normal_frame_religion
 
-	trigger = {
-		liege = {
-			has_character_modifier = holding_unbinding_festival
-		}
-		NOT = {
-			event_target:festival_prometheus = {
-				character = ROOT
-			}
-			event_target:festival_heracles = {
-				character = ROOT
-			}
-		}
-
-		NOT = { has_character_flag = unbinding_festival_open }
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = ancrel.3456.a
@@ -679,19 +682,7 @@ narrative_event = {
 	picture = GFX_evt_prometheus_bound
 	border = GFX_event_normal_frame_religion
 
-	trigger = {
-		liege = {
-			has_character_modifier = holding_unbinding_festival
-		}
-		event_target:festival_prometheus = {
-			character = ROOT
-		}
-		NOT = { has_character_flag = unbinding_festival_open }
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = ancrel.3457.a
@@ -706,19 +697,7 @@ narrative_event = {
 	picture = GFX_evt_prometheus_bound
 	border = GFX_event_normal_frame_religion
 
-	trigger = {
-		liege = {
-			has_character_modifier = holding_unbinding_festival
-		}
-		event_target:festival_prometheus = {
-			character = ROOT
-		}
-		NOT = { has_character_flag = unbinding_festival_open }
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = ancrel.3458.a
@@ -747,6 +726,11 @@ character_event = {
 				days = 3
 			}
 		}
+		NOT = { has_character_flag = ancrel_remove_firedancers }
+	}
+
+	immediate = {
+		set_character_flag = festival_event_happened
 	}
 
 	mean_time_to_happen = {
@@ -793,6 +777,7 @@ character_event = {
 				days = 3
 			}
 		}
+		NOT = { has_character_flag = ancrel_remove_firedancers }
 	}
 
 	immediate = {
@@ -843,15 +828,11 @@ character_event = {
 
 	is_triggered_only = yes
 
-	immediate = {
-		set_character_flag = festival_event_happened
-	}
-
 	option = { # make your move!
 		name = ancrel.3461.a
 		hidden_tooltip = {
-			FROM = {
-				character_event = { id = ancrel.3463 }
+			FROM = { # hop onto the spurn/accept event from vanilla, let it get handled from there
+				character_event = { id = 452 days = 0 }
 			}
 		}
 
@@ -871,7 +852,15 @@ character_event = {
 			}
 			modifier = {
 				factor = 10
-
+				has_focus = focus_seduction
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					any_lover = {
+						count = 1
+					}
+				}
 			}
 		}
 	}
@@ -883,9 +872,19 @@ character_event = {
 		random_list = {
 			20 = {
 				add_trait = stressed
+				hidden_tooltip = {
+   					character_event = {
+  						id = 38282 #Notify Stressed
+   					}
+   				}
 			}
 			10 = {
 				add_trait = content
+				hidden_tooltip = {
+   					character_event = {
+  						id = 38279 #Notify Content
+   					}
+   				}
 			}
 		}
 
@@ -986,13 +985,15 @@ character_event = {
 	}
 }
 
-# vassal/courtier looks attractive in the firelight (ping the liege)
+# courtier/vassal looks attractive in the firelight (c/v)
 character_event = {
 	id = ancrel.3462
 	hide_window = yes
 
-	trigger = { 
-		liege = { 
+	is_adult = yes
+
+	trigger = {
+		liege = {
 			has_character_modifier = holding_unbinding_festival
 			OR = {
 				NOT = { has_character_flag = festival_event_happened }
@@ -1001,41 +1002,47 @@ character_event = {
 					days = 3
 				}
 			}
-			is_valid_attraction = ROOT
+			is_valid_attraciton = ROOT
+			NOT = { is_spouse = ROOT } # different event for spouses, since they may not be a vassal
+			NOT = { has_character_flag = ancrel_remove_firedancers }
 		}
 	}
 
 	mean_time_to_happen = {
 		days = 360
-		
+
 		modifier = {
 			factor = 0.33
-			liege = { NOT = { has_character_flag = festival_event_happened } }
-		}	
-		modifier = {
-			factor = 1.5
-			liege = { has_character_flag = festival_event_happened }
-		}			
-		modifier = {
-			factor = 1.25
-			liege = { has_character_flag = unbinding_cheap_festivities }
+			NOT = { has_character_flag = festival_event_happened }
 		}
 		modifier = {
 			factor = 0.75
-			liege = { has_character_flag = unbinding_grand_festivities }
+			liege = { trait = lustful }
 		}
 		modifier = {
-			factor = 0.50
+			factor = 0.9
+			trait = lustful
+		}
+		modifier = {
+			factor = 0.8
+			trait = fair
+		}
+		modifier = {
+			factor = 0.7
 			liege = {
 				is_lover = ROOT
 			}
 		}
 		modifier = {
-			factor = 0.50
+			factor = 1.5
 			liege = {
-				any_spouse = {
-					character = ROOT
-				}
+				trait = chaste
+			}
+		}
+		modifier = {
+			factor = 10
+			liege = {
+				trait = celibate
 			}
 		}
 	}
@@ -1043,18 +1050,17 @@ character_event = {
 	option = {
 		name = OK
 		liege = {
-			character_event = { id = ancrel.3461 }
+			character_event = { id = ancrel.3461 days = 0 }
 		}
 	}
 }
 
-# spouse looks attractive in the firelight (ping spouse)
+# spouse looks attractive in the firelight (spouse)
 character_event = {
 	id = ancrel.3463
 	hide_window = yes
 
-	capable_only = yes
-	is_ruler = yes
+	is_adult = yes
 
 	trigger = {
 		spouse = {
@@ -1066,36 +1072,53 @@ character_event = {
 					days = 3
 				}
 			}
-			is_valid_attraction = ROOT
-			NOT = {
-				same_realm = ROOT
-			}
+			is_valid_attraciton = ROOT
+			NOT = { is_liege = ROOT } # different event for vassals
+			NOT = { has_character_flag = ancrel_remove_firedancers }
+		}
+	}
+
+	immediate = {
+		spouse = {
+			set_character_flag = festival_event_happened
 		}
 	}
 
 	mean_time_to_happen = {
 		days = 360
-		
+
 		modifier = {
 			factor = 0.33
-			spouse = { NOT = { has_character_flag = festival_event_happened } }
-		}	
-		modifier = {
-			factor = 1.5
-			spouse = { has_character_flag = festival_event_happened }
-		}			
-		modifier = {
-			factor = 1.25
-			spouse = { has_character_flag = unbinding_cheap_festivities }
+			NOT = { has_character_flag = festival_event_happened }
 		}
 		modifier = {
 			factor = 0.75
-			spouse = { has_character_flag = unbinding_grand_festivities }
+			spouse = { trait = lustful }
 		}
 		modifier = {
-			factor = 0.50
+			factor = 0.9
+			trait = lustful
+		}
+		modifier = {
+			factor = 0.8
+			trait = fair
+		}
+		modifier = {
+			factor = 0.7
 			spouse = {
 				is_lover = ROOT
+			}
+		}
+		modifier = {
+			factor = 1.5
+			spouse = {
+				trait = chaste
+			}
+		}
+		modifier = {
+			factor = 10
+			spouse = {
+				trait = celibate
 			}
 		}
 	}
@@ -1103,33 +1126,15 @@ character_event = {
 	option = {
 		name = OK
 		spouse = {
-			limit = {
-				has_character_modifier = holding_unbinding_festival
-			}
-			character_event = { id = ancrel.3461 }
+			character_event = { id = ancrel.3461 days = 0 }
 		}
 	}
 }
 
-# a spouse/vassal/courtier looks attractive in the firelight (other character)
-character_event = {
-	id = ancrel.3464
-}
-
-# spouse/courtier accepts advances (liege)
-character_event = {
-	id = ancrel.3465
-}
-
-# spouse/courtier rejects advances (liege)
-character_event = {
-	id = ancrel.3466
-}
-
 # you've been burned by firedancer oil!
 character_event = {
-	id = ancrel.3467
-	desc = ancrel.3467.desc
+	id = ancrel.3464
+	desc = ancrel.3464.desc
 	portrait = GFX_evt_firedancers
 
 	trigger = { 
@@ -1141,10 +1146,12 @@ character_event = {
 				days = 3
 			}
 		}
+		NOT = { has_character_flag = ancrel_remove_firedancers }
 	}
 
 	immediate = {
 		set_character_flag = festival_event_happened
+		add_trait = maimed
 	}
 
 	mean_time_to_happen = {
@@ -1159,15 +1166,222 @@ character_event = {
 		}
 	}
 
-	option = {
-		name = ancrel.3467.a
+	option = { # execute them!
+		name = ancrel.3464.a
+		custom_tooltip = {
+			text = ancrel.remove_firedancers
+			set_character_flag = ancrel_remove_firedancers
+		}
 
-		add_trait = maimed
+	}
+	option = { # imprison them!
+		name = ancrel.3464.b
+		custom_tooltip = {
+			text = ancrel.remove_firedancers
+			set_character_flag = ancrel_remove_firedancers
+		}
+	}
+	option = { # on with the show!
+		name = ancrel.3464.c
+
 	}
 }
 
-###################################################################
+# a vassal has been burned by fire dancer oil! (vassal)
+character_event = {
+	id = ancrel.3465
+	desc = ancrel.3465
+	portrait = GFX_evt_firedancers
 
+	trigger = { 
+		liege = {
+			has_character_modifier = holding_unbinding_festival
+			OR = {
+				NOT = { has_character_flag = festival_event_happened }
+				had_character_flag = {
+					flag = festival_event_happened
+					days = 3
+				}
+			}
+			NOT = { has_character_flag = ancrel_remove_firedancers }
+		}
+	}
+
+	immediate = {
+		liege = { set_character_flag = festival_event_happened }
+		add_trait = maimed
+	}
+
+	mean_time_to_happen = {
+		days = 360
+		modifier = {
+			factor = 0.75
+			liege = { has_character_flag = unbinding_cheap_festivities }
+		}
+		modifier = {
+			factor = 1.25
+			liege = { has_character_flag = unbinding_grand_festivities }
+		}
+	}
+
+	option = {
+		name = ancrel.3465.a
+		# demand the firedancers are punished!
+		custom_tooltip = {
+			text = ancrel.3465.a.tt
+			liege = {
+				character_event = { id = ancrel.3466 }
+			}
+		}
+		random = {
+			chance = 20
+			add_trait = wroth
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 5
+				trait = cruel
+			}
+			modifier = {
+				factor 10
+				trait = impaler
+			}
+		}
+	}
+	option = {
+		name = ancrel.3465.b
+		# it was an unfortunate, painful, accident. thats all
+		custom_tooltip = {
+			text = ancrel.3465.b.tt
+			liege = {
+				character_event = { id = ancrel.3467 }
+			}
+		}
+		random = {
+			chance = 20
+			add_trait = kind
+		}
+		ai_chance = {
+			modifier = {
+				factor = 2
+				trait = patient
+			}
+			modifier = {
+				factor = 5
+				trait = kind
+			}
+			modifier = {
+				factor = 10
+				trait = just
+			}
+		}
+	}
+}
+
+# a vassal is burned by firedancer oil and demands punishment! (liege)
+character_event = {
+	id = ancrel.3467
+	desc = ancrel.3467.desc
+	picture = GFX_evt_firedancers
+
+	is_triggered_only = yes
+
+	option = {
+		#kill 'em
+		name = ancrel.3467.a
+		reverse_opinion = { modifier = ancrel_pleased who = FROM }
+		custom_tooltip = {
+			text = ancrel.remove_firedancers
+			set_character_flag = ancrel_remove_firedancers
+		}
+		random = {
+			chance = 20
+			trait = arbitrary
+		}
+	}
+	option = {
+		#remove them from the festival
+		name = ancrel.3467.b
+		custom_tooltip = {
+			text = ancrel.remove_firedancers
+			set_character_flag = ancrel_remove_firedancers
+		}
+		random = {
+			chance = 20
+			trait = just
+		}
+	}
+	option = {
+		# it was just an accident
+		name = ancrel.3467.c
+		random = {
+			chance = 20
+			trait = kind
+		}
+		reverse_opinion = { modifier = ancrel_dissapointed who = FROM }
+	}
+}
+
+# a vassal is burned by firedancer oil and suggests leniency! (liege)
+character_event = {
+	id = ancrel.3468
+	desc = ancrel.3468.desc
+	picture = GFX_evt_firedancers
+
+	is_triggered_only = yes
+
+	option = {
+		#kill 'em
+		name = ancrel.3468.a
+		reverse_opinion = { modifier = ancrel_dissapointed who = FROM }
+		custom_tooltip = {
+			text = ancrel.remove_firedancers
+			set_character_flag = ancrel_remove_firedancers
+		}
+		random = {
+			chance = 20
+			trait = arbitrary
+		}
+	}
+	option = {
+		#remove them from the festival
+		name = ancrel.3468.b
+		custom_tooltip = {
+			text = ancrel.remove_firedancers
+			set_character_flag = ancrel_remove_firedancers
+		}
+		random = {
+			chance = 20
+			trait = just
+		}
+	}
+	option = {
+		# it was just an accident
+		name = ancrel.3468.c
+		random = {
+			chance = 20
+			trait = kind
+		}
+		reverse_opinion = { modifier = ancrel_pleased who = FROM }
+	}
+}
+
+# actors portray the brothers making humanity
+character_event = {
+	id = ancrel.3470
+	desc = ancrel.3470.desc
+	portrait = 
+
+	
+}
+###################################################################
+# Notification events for vassals during prep
+###################################################################
 # You've been slighted in the selection of Heracles! (marshal)
 character_event = {
 	id = ancrel.3543
@@ -1272,6 +1486,7 @@ character_event = {
 		clr_character_flag = unbinding_grand_festivities
 		clr_character_flag = unbinding_festival_open
 		clr_character_flag = festival_event_happened
+		clr_character_flag = ancrel_removed_firedancers
 		remove_character_modifier = holding_unbinding_festival
 
 		any_vassal = {
@@ -1281,6 +1496,7 @@ character_event = {
 			opinion = {
 				modifier = opinion_held_unbinding_festival
 				who = ROOT
+				months = 12
 			}
 		}		
 	}

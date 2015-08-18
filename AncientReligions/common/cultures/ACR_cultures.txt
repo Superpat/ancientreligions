@@ -1,6 +1,6 @@
 celtic = {
 	gaulish = {
-		graphical_culture = celticgfx
+		graphical_cultures = { celticgfx }
 		
 		color = { 0.9 0.9 0.5 }
 		

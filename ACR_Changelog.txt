@@ -59,6 +59,22 @@ Atenic:
 -- The Meryaten is created by decision, and requires that Akhetaten is restored.
 - The Burning Blades are a new holy order for Atenism that can be created via decision and are immediately vassalized by the organizer.
 
+2015-8-12 v0.36.4 "Beroe"
+-------------------------
+- Compatibility with vanilla 2.4.3
+- Fixed issue where Tribal Marshals couldn't use the Train Warriors action
+- Hellenism, Prometheanism, The Titan Cult, and Atenism are all available in the Ruler Designer.
+- Pagans no longer use random Coats of Arms for Count and higher titles.
+- "Studied the Classics" is more likely to occur in later start dates than previously (but still less likely than early start dates).
+- The third witch is now a Kemetic pagan.
+- Updated religion descriptions using the new _FEATURES localization.
+- "Lets. Get. PAGAN!" prevents Christian and Muslim religious heads from calling Crusades/Jihads.
+- Added missing councilor localization for alternate governments.
+- The Pontifica Maxima will no longer be referred to as a Legata Augusti.
+- Roman Viceroys now have unique localization.
+- Sed Festival can now be taken after 10 years instead of 30, so you actually have a chance of using it.
+- Court Wizard is no longer grantable.
+
 2015-7-19 v0.36.3 "Eryx"
 -------------------------
 - Compatibility with vanilla 2.4.1

@@ -11,7 +11,7 @@ decisions = {
 				religion = egyptian_pagan
 				religion = aten_pagan
 			}
-			ruled_years = 30
+			ruled_years = 10
 			NOT = {	has_character_flag = holding_sed_festival }
 			NOT = { has_character_modifier = held_sed_festival_timer }
 		}

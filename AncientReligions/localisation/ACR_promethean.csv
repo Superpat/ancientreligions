@@ -4,12 +4,18 @@ GOD_OLYMPIANS;the Olympians;the Olympians;the Olympians;;the Olympians;;;;;;;;;x
 THE_DIALOGUES;The Dialogues;The Dialogues;The Dialogues;;The Dialogues;;;;;;;;;x
 PHILOSOPHER;Philosophos;Philosophos;Philosophos;;Philosophos;;;;;;;;;x
 promethean_pagan;Promethean;Promethean;Promethean;;Promethean;;;;;;;;;x
-promethean_pagan_DESC;Prometheanism is the worship of the Titan Prometheus and, to a lesser extent, his brother Epimetheus, as the fathers of humanity. Prometheanism acknowledges the existence, and divinity, of the Olympians, but rejects their worthiness as beings to be worshiped. Prometheans value intellectual pursuits above all, finding guile, diplomacy, and a quick wit to be the highest art forms. They find violence distasteful, but recognize that it is ocassionally necessary. Defining features in-game:\n§Y*§! Prometheans gain piety while at peace.\n§Y*§! The Scholarch of the First Academy leads the Promethean faithful.\n§Y*§! Prometheans cannot use, and are not targetable by, the Pagan Subjugation CB.\n§Y*§! Prometheans gain a bonus to Learning.\n§Y*§! Prometheanism is a feminist faith.\n§Y*§! Women may hold temples.\n§Y*§! Priests can marry.\n§Y*§! Promethean rulers may designate their heir.\n§Y*§! Prometheans may use a once-per-life-time Expansion CB.;;;;;;;;;;;;;x
+promethean_pagan_DESC;Prometheanism is the worship of the Titan Prometheus and, to a lesser extent, his brother Epimetheus, as the fathers of humanity. Prometheanism acknowledges the existence, and divinity, of the Olympians, but rejects their worthiness as beings to be worshiped. Prometheans value intellectual pursuits above all, finding guile, diplomacy, and a quick wit to be the highest art forms. They find violence distasteful, but recognize that it is ocassionally necessary.;;;;;;;;;;;;;x
+promethean_pagan_FEATURES;§Y*§! Prometheans gain piety while at peace.\n§Y*§! The Scholarch of the First Academy leads the Promethean faitfhul.\n§Y*§! Prometheans cannot use, and are not targetable by, the Pagan Subjugation CB.\n§Y*§! Prometheans gain a bonus to Learning.\n§Y*§! Prometheanism is a feminist faith.;;;;;;;;;;;;;x
 promethean_philosophy;Promethean Philosophy;Promethean Philosophy;Promethean Philosophy;;Promethean Philosophy;;;;;;;;;x
 promethean_philosophy_desc;Promethean beliefs encourage intellectual pursuits and the advancements of science, technology, and logic. Prometheans tend toward higher education as a result.;;;;;;;;;;;;;x
 promethean_expansion_desc;Promethean rulers may, once per lifetime, invade a neighboring kingdom to expand the realm.;;;;;;;;;;;;;x
 CB_NAME_EXPANSION;Expansion into [Title.GetBaseName];;;;;;;;;;;;;x
 WAR_NAME_EXPANSION;$ORDER$$FIRST_ADJ$ Expansion into $OTHER_TITLE$;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;x
+job_spiritual_promethean_pagan;Dáskalos;;;;;;;;;;;;;x
+city_job_spiritual_promethean_pagan;Dáskalos;;;;;;;;;;;;;x
+tribal_job_spiritual_promethean_pagan;Dáskalos;;;;;;;;;;;;;x
+nomad_job_spiritual_promethean_pagan;Dáskalos;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 d_promethean_pagan;First Academy;;;;;;;;;;;;;x
 d_promethean_pagan_adj;Academecian;;;;;;;;;;;;;x
@@ -45,8 +51,8 @@ temple_county_of_promethean_pagan;High Academy of;High Academy of;High Academy o
 temple_duke_promethean_pagan;Megálos Philosophos;Megálos Philosophos;Megálos Philosophos;;Megálos Philosophos;;;;;;;;;x
 temple_duke_female_promethean_pagan;Megálos Philosophoia;Megálos Philosophoia;Megálos Philosophoia;;Megálos Philosophoia;;;;;;;;;x
 temple_duchy_of_promethean_pagan;Grand Academy;Tribu de;Stamm der;;Tribu de;;;;;;;;;x
-temple_king_promethean_pagan;Daskalosophos;Daskalosophos;Daskalosophos;;Daskalosophos;;;;;;;;;x
-temple_king_female_promethean_pagan;Daskalosophoia;Daskalosophoia;Daskalosophoia;;Daskalosophoia;;;;;;;;;x
+temple_king_promethean_pagan;Dáskalosophos;Dáskalosophos;Dáskalosophos;;Dáskalosophos;;;;;;;;;x
+temple_king_female_promethean_pagan;Dáskalosophoia;Dáskalosophoia;Dáskalosophoia;;Dáskalosophoia;;;;;;;;;x
 temple_kingdom_of_promethean_pagan;Sofos Vasilieo;Sofos Vasilieo;Sofos Vasilieo;;Sofos Vasilieo;;;;;;;;;x
 temple_emperor_promethean_pagan;Sofos Patriarchis;;;;;;;;;;;;;x
 temple_emperor_female_promethean_pagan;Sofos Matriarchia;;;;;;;;;;;;;x

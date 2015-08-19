@@ -91,9 +91,7 @@ depopulated_province = {
 	land_morale = -0.15
 	disease_defence = -0.10
 	supply_limit = -2
-	castle_levy_size = -0.25
-	city_levy_size = -0.25
-	temple_levy_size = -0.25	
+	levy_size = -0.25	
 }
 
 holding_unbinding_festival = {
@@ -122,4 +120,29 @@ acr_crotone_military = {
 
 	tech_growth_modifier_military = 0.05
 	land_organization = 0.05
+}
+
+acr_excellent_performance = {
+	icon = 18
+
+	revolt_risk = -0.05
+}
+
+acr_terrible_performance = {
+	icon = 36
+
+	revolt_risk = 0.05
+}
+
+acr_blasphemous_exhibition = {
+	icon = 36
+
+	revolt_risk = 0.1
+}
+
+acr_grand_sculpture = {
+	icon = 7
+
+	add_prestige_modifier = 0.05
+	add_piety_modifier = 0.05
 }

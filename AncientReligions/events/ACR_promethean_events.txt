@@ -1168,22 +1168,39 @@ character_event = {
 
 	option = { # execute them!
 		name = ancrel.3464.a
+		prestige = 100
+		random = {
+			chance = 20
+			add_trait = wroth
+		}
 		custom_tooltip = {
 			text = ancrel.remove_firedancers
 			set_character_flag = ancrel_remove_firedancers
 		}
-
+		capital_scope = {
+			add_province_modifier = {
+				name = peasant_unrest
+				days = 365
+			}
+		}
 	}
 	option = { # imprison them!
 		name = ancrel.3464.b
+		prestige = 50
 		custom_tooltip = {
 			text = ancrel.remove_firedancers
 			set_character_flag = ancrel_remove_firedancers
+		}
+		capital_scope = {
+			add_province_modifier = {
+				name = peasant_unrest
+				days = 180
+			}
 		}
 	}
 	option = { # on with the show!
 		name = ancrel.3464.c
-
+		prestige = -100
 	}
 }
 
@@ -1303,6 +1320,12 @@ character_event = {
 			chance = 20
 			trait = arbitrary
 		}
+		capital_scope = {
+			add_province_modifier = {
+				name = peasant_unrest
+				days = 365
+			}
+		}
 	}
 	option = {
 		#remove them from the festival
@@ -1314,6 +1337,12 @@ character_event = {
 		random = {
 			chance = 20
 			trait = just
+		}
+		capital_scope = {
+			add_province_modifier = {
+				name = peasant_unrest
+				days = 180
+			}
 		}
 	}
 	option = {
@@ -1347,6 +1376,12 @@ character_event = {
 			chance = 20
 			trait = arbitrary
 		}
+		capital_scope = {
+			add_province_modifier = {
+				name = peasant_unrest
+				days = 365
+			}
+		}
 	}
 	option = {
 		#remove them from the festival
@@ -1358,6 +1393,12 @@ character_event = {
 		random = {
 			chance = 20
 			trait = just
+		}
+		capital_scope = {
+			add_province_modifier = {
+				name = peasant_unrest
+				days = 180
+			}
 		}
 	}
 	option = {
@@ -1371,14 +1412,260 @@ character_event = {
 	}
 }
 
-# actors portray the brothers making humanity
+# actors portray the brothers making humanity, two vassals have theological argument
 character_event = {
 	id = ancrel.3470
 	desc = ancrel.3470.desc
-	portrait = 
+	portrait = GFX_evt_jugglers
 
-	
+	trigger = {
+		has_character_modifier = holding_unbinding_festival
+		OR = {
+			NOT = { has_character_flag = festival_event_happened }
+			had_character_flag = {
+				flag = festival_event_happened
+				days = 3
+			}
+		}
+		any_realm_character = {
+			prisoner = no
+			liege = {
+				character = ROOT
+			}
+			trait = zealous
+		}
+		any_realm_character = {
+			prisoner = no
+			liege = {
+				character = ROOT
+			}
+			trait = cynical
+		}
+	}
+
+	immediate = {
+		set_character_flag = festival_event_happened
+		random_realm_character = {
+			limit = {
+				prisoner = no
+				liege = {
+					character = ROOT
+				}
+				trait = cynical
+			}
+			save_event_target_as = cynic
+		}
+		random_realm_character = {
+			limit = {
+				prisoner = no
+				liege = {
+					character = ROOT
+				}
+				trait = zealous
+			}
+			save_event_target_as = zealot
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 270
+		modifier = {
+			factor = 0.75
+			has_character_flag = unbinding_grand_festivities
+		}
+		modifier = {
+			factor = 1.25
+			has_character_flag = unbinding_cheap_festivities
+		}
+	}
+
+	option = { # agree with the cynical vassal
+		name = ancrel.3470.a
+		event_target:cynic = {
+			add_friend = ROOT
+		}
+		event_target:zealot = {
+			add_rival = ROOT
+		}
+		random = {
+			chance = 15
+			trait = zealous
+		}
+	}
+	option = { # diffuse the situation
+		trigger = {
+			diplomacy = 13
+		}
+		tooltip_info = diplomacy
+		name = ancrel.3470.b
+	}
+	option = { # waffle
+		name = ancrel.3470.c
+		event_target:cynic = {
+			opinion = {	modifier = ancrel_dissapointed who = ROOT years = 2	}
+		}
+		event_target:zealot = {
+			opinion = {	modifier = ancrel_dissapointed who = ROOT years = 2	}
+		}
+		random = {
+			chance = 20
+			trait = stressed
+		}
+	}
+	option = { # agree with the zealous vassal
+		name = ancrel.3470.d
+		event_target:cynic = {
+			add_rival = ROOT
+		}
+		event_target:zealot = {
+			add_friend = ROOT
+		}
+		random = {
+			chance = 15
+			trait = cynical
+		}
+	}
 }
+
+# actors botch a performance and rioting ensues
+character_event = {
+	id = ancrel.3471
+	desc = ancrel.3471.desc
+	portrait = GFX_evt_riots_byzantine
+
+	trigger = {
+		has_character_modifier = holding_unbinding_festival
+		OR = {
+			NOT = { has_character_flag = festival_event_happened }
+			had_character_flag = {
+				flag = festival_event_happened
+				days = 3
+			}
+		}
+	}
+
+	immediate = {
+		set_character_flag = festival_event_happened
+	}
+
+	mean_time_to_happen = {
+		days = 270
+		modifier = {
+			factor = 0.75
+			has_character_flag = unbinding_cheap_festivities
+		}
+		modifier = {
+			factor = 1.25
+			has_character_flag = unbinding_grand_festivities
+		}
+	}
+
+	option = {
+		name = ancrel.3471.a
+		capital_scope = {
+			add_province_modifier = { name = acr_terrible_performance duration = 180 }
+		}
+	}
+}
+
+# actors do an amazing performance and peasants are pleased!
+character_event = {
+	id = ancrel.3472
+	desc = ancrel.3472.desc
+	portrait = GFX_evt_peasants
+
+	trigger = {
+		has_character_modifier = holding_unbinding_festival
+		OR = {
+			NOT = { has_character_flag = festival_event_happened }
+			had_character_flag = {
+				flag = festival_event_happened
+				days = 3
+			}
+		}
+	}
+
+	immediate = {
+		set_character_flag = festival_event_happened
+	}
+
+	mean_time_to_happen = {
+		days = 270
+		modifier = {
+			factor = 0.75
+			has_character_flag = unbinding_grand_festivities
+		}
+		modifier = {
+			factor = 1.25
+			has_character_flag = unbinding_cheap_festivities
+		}
+	}
+
+	option = {
+		name = ancrel.3472.a
+		capital_scope = {
+			add_province_modifier = { name = acr_excellent_performance duration = 180 }
+		}
+	}
+}
+
+# a brilliant actor distinguishes themselves, you may invite them to your court
+character_event = {
+	id = ancrel.3473
+	desc = ancrel.3473.desc
+	picture = GFX_evt_diplomat
+
+	trigger = {
+		has_character_modifier = holding_unbinding_festival
+		OR = {
+			NOT = { has_character_flag = festival_event_happened }
+			had_character_flag = {
+				flag = festival_event_happened
+				days = 3
+			}
+		}
+	}
+
+	immediate = {
+		set_character_flag = festival_event_happened
+	}
+
+	mean_time_to_happen = {
+		days = 270
+		modifier = {
+			factor = 0.75
+			has_character_flag = unbinding_grand_festivities
+		}
+		modifier = {
+			factor = 1.25
+			has_character_flag = unbinding_cheap_festivities
+		}
+	}
+
+	option = { # welcome them into your court
+		name = ancrel.3473.a
+		create_character = {
+			dynasty = none
+			age = 23
+			religion = promethean_pagan
+			culture = ROOT
+			attributes = {
+				diplomacy = 10
+			}
+			trait = grey_eminence
+			trait = scholar
+			trait = genius
+			trait = fair
+			trait = diligent
+			trait = proud
+			trait = envious
+		}
+	}
+	option = { # no need for professional liars in my court
+		name = ancrel.3473.b
+	}
+}
+
 ###################################################################
 # Notification events for vassals during prep
 ###################################################################
@@ -1498,7 +1785,7 @@ character_event = {
 				who = ROOT
 				months = 12
 			}
-		}		
+		}
 	}
 }
 

@@ -122,22 +122,17 @@ acr_crotone_military = {
 	land_organization = 0.05
 }
 
+# province modifier!
 acr_excellent_performance = {
 	icon = 18
 
 	revolt_risk = -0.05
 }
 
-acr_terrible_performance = {
-	icon = 36
-
-	revolt_risk = 0.05
-}
-
 acr_blasphemous_exhibition = {
 	icon = 36
 
-	revolt_risk = 0.1
+	revolt_risk = 0.05
 }
 
 acr_grand_sculpture = {
@@ -145,4 +140,31 @@ acr_grand_sculpture = {
 
 	add_prestige_modifier = 0.05
 	add_piety_modifier = 0.05
+}
+
+acr_good_performance = {
+	icon = 18
+
+	general_opinion = 5
+}
+
+# character modifier!
+acr_great_performance = {
+	icon = 18
+
+	general_opinion = 10
+	monthly_character_prestige = 0.1
+}
+
+acr_bad_performance = {
+	icon = 18
+
+	general_opinion = -5
+}
+
+acr_terrible_performance = {
+	icon = 18
+
+	general_opinion = -10
+	monthly_character_prestige = 0.1
 }

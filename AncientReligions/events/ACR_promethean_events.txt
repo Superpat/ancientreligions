@@ -1527,7 +1527,7 @@ character_event = {
 	}
 }
 
-# actors botch a performance and rioting ensues
+# actors botch a performance and unintentionally blaspheme, and rioting ensues
 character_event = {
 	id = ancrel.3471
 	desc = ancrel.3471.desc
@@ -1563,7 +1563,7 @@ character_event = {
 	option = {
 		name = ancrel.3471.a
 		capital_scope = {
-			add_province_modifier = { name = acr_terrible_performance duration = 180 }
+			add_province_modifier = { name = acr_blasphemous_exhibition duration = 180 }
 		}
 	}
 }
@@ -1663,6 +1663,200 @@ character_event = {
 	}
 	option = { # no need for professional liars in my court
 		name = ancrel.3473.b
+	}
+}
+
+# you are called up onto stage to perform a key scene
+character_event = {
+	id = ancrel.3474
+	desc = ancrel.3474.desc
+	picture = 
+
+	trigger = {
+		has_character_modifier = holding_unbinding_festival
+		OR = {
+			NOT = { has_character_flag = festival_event_happened }
+			had_character_flag = {
+				flag = festival_event_happened
+				days = 3
+			}
+		}
+	}
+
+	immediate = {
+		set_character_flag = festival_event_happened
+	}
+
+	mean_time_to_happen = {
+		days = 270
+	}
+
+	option = { # chicken out (bawk!)
+		name = ancrel.3474.a
+		random_list = {
+			10 = {
+				trait = coward
+			}
+			10 = {
+				trait = stressed
+			}
+		}
+	}
+	option = { # go on stage, but stick to the lines
+		name = ancrel.3475.b
+		custom_tooltip = {
+			text = ancrel.3475.b.tt
+			random_list = {
+				33 = { # good outcome
+					modifier = {
+						factor = 1.2
+						learning = 12
+					}
+					character_event = { id = ancrel.3475 }
+				}
+				34 = { # neutral outcome
+					modifier = {
+						factor = 1.2
+						learning = 8
+						NOT = { learning = 12 }
+					}
+					character_event = { id = ancrel.3476 }
+				}
+				33 = { # bad outcome
+					modifier = {
+						factor = 1.2
+						NOT = { learning = 8 }
+					}
+					character_event = { id = ancrel.3477 }
+				}
+			}
+		}
+	}
+	option = { # go on stage and improvise the lines
+		name = ancrel.3475.c
+		custom_tooltip = {
+			text = ancrel.3475.c.tt
+			random_list = {
+				50 = { # good outcome
+					modifier = {
+						factor = 1.2
+						intrigue = 12
+					}
+					modifier = {
+						factor = 1.2
+						intrigue = 16
+					}
+					modifier = {
+						factor = 1.2
+						diplomacy = 12
+					}
+					modifier = {
+						factor = 1.2
+						diplomacy = 16
+					}
+					modifier = {
+						factor = 1.2
+						trait = gregarious
+					}
+					character_event = { id = ancrel.3478 }
+				}
+				50 = { # bad outcome
+					modifier = {
+						factor = 1.2
+						NOT = { intrigue = 8 }
+					}
+					modifier = {
+						factor = 1.2
+						NOT = { intrigue = 4 }
+					}
+					modifier = {
+						factor = 1.2
+						NOT = { diplomacy = 8 }
+					}
+					modifier = {
+						factor = 1.2
+						NOT = { diplomacy = 4 }
+					}
+					modifier = {
+						factor = 1.2
+						trait = shy
+					}
+					character_event = { id = ancrel.3479 }
+				}
+			}
+		}
+	}
+}
+
+# stick to the lines (good outcome)
+character_event = {
+	id = ancrel.3475
+	desc = ancrel.3475.desc
+	picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.3475.a
+		prestige = 50
+		add_character_modifier = { name = acr_good_performance duration = 360 }
+	}
+}
+
+# stick to the lines (neutral outcome)
+character_event = {
+	id = ancrel.3476
+	desc = ancrel.3476.desc
+	picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.3476.a
+	}
+}
+
+# stick to the lines (bad outcome)
+character_event = {
+	id = ancrel.3477
+	desc = ancrel.3477.desc
+	picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.3477.a
+		prestige = -50
+		add_character_modifier = { name = acr_bad_performance duration = 360 }
+	}
+}
+
+# improvise! (bad outcome)
+character_event = {
+	id = ancrel.3478
+	desc = ancrel.3478.desc
+	picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.3478.a
+		prestige = -100
+		add_character_modifier = { name = acr_terrible_performance duration = 360 }
+	}
+}
+
+# improvise! (good outcome)
+character_event = {
+	id = ancrel.3479
+	desc = ancrel.3479.desc
+	picture = 
+
+	is_triggered_only = yes
+	option = {
+		name = ancrel.3479.a
+		prestige = 100
+		add_character_modifier = { name = acr_great_performance duration = 360 }
 	}
 }
 

@@ -101,6 +101,8 @@ holding_unbinding_festival = {
 	monthly_character_piety = 0.05
 }
 
+held_unbinding_festival_timer = { icon = 1 }
+
 acr_crotone_arts = {
 	icon = 3
 

@@ -19,47 +19,52 @@ spriteTypes = {
 	# Decision icons
 	spriteType = {
 		name = "GFX_recreate_pontificate"
-		texturefile = "gfx\\interface\\ACR\\decision_icon_recreate_pontificate.dds"
+		texturefile = "gfx/interface/ACR/decision_icon_recreate_pontificate.dds"
 	}
 	spriteType = {
 		name = "GFX_nominate_vestalis_decision"
-		texturefile = "gfx\\interface\\ACR\\decision_icon_nominate_vestalis.dds"
+		texturefile = "gfx/interface/ACR/decision_icon_nominate_vestalis.dds"
 	}
 	spriteType = {
 		name = "GFX_hold_titan_thysia"
-		texturefile = "gfx\\interface\\decision_icon_hold_blot.dds" #Placeholder
+		texturefile = "gfx/interface/decision_icon_hold_blot.dds" #Placeholder
 	}
 	
 	# Event pictures
 	spriteType = {
 		name = "GFX_evt_roman_temple"
-		texturefile = "gfx\\event_pictures\\ACR\\roman_great_temple.tga"
-		allwaystransparent = yes
+		texturefile = "gfx/event_pictures/ACR/roman_great_temple.tga"
 	}
 	spriteType = {
 		name = "GFX_evt_lightning_strike"
-		texturefile = "gfx\\event_pictures\\ACR\\lightning_strike.tga"
-		allwaystransparent = yes
+		texturefile = "gfx/event_pictures/ACR/lightning_strike.tga"
 	}
 	spriteType = {
 		name = "GFX_evt_cave_dwellers"
-		texturefile = "gfx\\event_pictures\\ACR\\cave_dwellers.tga"
-		allwaystransparent = yes
+		texturefile = "gfx/event_pictures/ACR/cave_dwellers.tga"
 	}
 	spriteType = {
 		name = "GFX_evt_prometheus_bound"
-		texturefile = "gfx\\event_pictures\\ACR\\prometheus_bound.tga"
+		texturefile = "gfx/event_pictures/ACR/prometheus_bound.tga"
 	}
 	spriteType = {
 		name = "GFX_evt_prometheus_and_heracles"
-		texturefile = "gfx\\event_pictures\\ACR\\prometheus_and_heracles.tga"
+		texturefile = "gfx/event_pictures/ACR/prometheus_and_heracles.tga"
 	}
 	spriteType = {
 		name = "GFX_evt_couple_by_firelight"
-		texturefile = "gfx\\event_pictures\\ACR\\couple_by_firelight.tga"
+		texturefile = "gfx/event_pictures/ACR/couple_by_firelight.tga"
 	}
 	spriteType = {
 		name = "GFX_evt_firedancers"
-		texturefile = "gfx\\event_pictures\\ACR\\firedancers.tga"
+		texturefile = "gfx/event_pictures/ACR/firedancers.tga"
+	}
+	spriteType = {
+		name = "GFX_evt_prometheus_statue"
+		texturefile = "gfx/event_pictures/ACR/prometheus_statue.tga"
+	}
+	spriteType = {
+		name = "GFX_evt_falling_statue"
+		texturefile = "gfx/event_pictures/ACR/falling_statue.tga"
 	}
 }

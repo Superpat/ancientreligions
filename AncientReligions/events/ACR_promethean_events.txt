@@ -2206,8 +2206,6 @@ character_event = {
 	hide_window = yes
 
 	trigger = {
-		# screw it. I can improve it later.
-		# always = no # gonna leave this disabled until I can complete my grand vision for this chain
 		liege = {
 			has_character_modifier = holding_unbinding_festival
 			OR = {
@@ -2279,7 +2277,7 @@ character_event = {
 				60 = {
 					trait = injured
 				}
-				20 = {
+				30 = {
 					trait = maimed
 				}
 				10 = {
@@ -2298,7 +2296,7 @@ character_event = {
 				trait = maimed
 			}
 			10 = {
-				death = { death_reaosn = death_accident }
+				death = { death_reason = death_accident }
 			}
 		}
 		add_trait = brave
@@ -2308,8 +2306,8 @@ character_event = {
 
 # artist tries something revolutionary (offensive) and does a mural of "The Sisters"
 character_event = {
-	id = ancrel.3500 # note i've left a large number of ids for a future expansion of previous event chain
-	desc = ancrel.3500.desc
+	id = ancrel.3491 
+	desc = ancrel.3491.desc
 	picture = GFX_evt_greek_mural_women
 
 	trigger = {

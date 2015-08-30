@@ -78,6 +78,9 @@ pagan_group = {
 
 		pre_reformed = yes
 
+		ai_convert_other_group = 2 # always try to convert
+		ai_convert_same_group = 2 # always try to convert
+
 		icon = 62
 		heresy_icon = 37
 		parent = hellenic_pagan
@@ -119,6 +122,7 @@ pagan_group = {
 		heresy_icon = 65
 		
 		ai_convert_other_group = 2 # always try to convert
+		ai_convert_same_group = 2 # always try to convert
 		
 		color = { 0.2 0.6 0.03 }
 		crusade_name = GREAT_HOLY_WAR

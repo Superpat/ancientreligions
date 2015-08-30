@@ -2242,8 +2242,6 @@ character_event = {
 			liege = { has_character_flag = unbinding_grand_festivities }
 		}
 	}
-
-	option = { }
 }
 
 # a statue is about to fall on you and a vassal! (liege)
@@ -2292,6 +2290,7 @@ character_event = {
 	}
 	option = { # get all heroic and push them out of the way
 		random_list = {
+			character_event = { id = ancrel.3490 }
 			60 = {
 				trait = injured
 			}

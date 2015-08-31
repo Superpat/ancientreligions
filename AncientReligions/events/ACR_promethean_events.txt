@@ -2252,17 +2252,6 @@ character_event = {
 	option = { # warn them and get out of the way
 		FROM = {
 			character_event = { id = ancrel.3488 }
-			random_list = {
-				30 = {
-					trait = injured
-				}
-				15 = {
-					trait = maimed
-				}
-				5 = {
-					death = { death_reason = death_accident }
-				}
-			}
 		}
 		random = {
 			10 = {
@@ -2287,8 +2276,8 @@ character_event = {
 		}
 	}
 	option = { # get all heroic and push them out of the way
+		FROM = { character_event = { id = ancrel.3490 } }
 		random_list = {
-			character_event = { id = ancrel.3490 }
 			60 = {
 				trait = injured
 			}
@@ -2300,13 +2289,72 @@ character_event = {
 			}
 		}
 		add_trait = brave
+	}
+}
+
+# your liege warns of the falling statue before diving out of the way
+character_event = {
+	id = ancrel.3488
+	desc = ancrel.3488.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.3488.a
+		random_list = {
+			30 = {
+				trait = injured
+			}
+			15 = {
+				trait = maimed
+			}
+			5 = {
+				death = { death_reason = death_accident }
+			}
+		}
+	}
+}
+
+# your liege flees in terror for some reason...
+character_event = {
+	id = ancrel.3489
+	desc = ancrel.3489.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.3489.a
+		random_list = {
+			60 = {
+				trait = injured
+			}
+			30 = {
+				trait = maimed
+			}
+			20 = {
+				death = { death_reason = death_accident }
+			}
+		}
+		opinion_modifier = { modifier = opinion_hate who = FROM duration = -1 }
+	}
+}
+
+# your liege throws you to safety before a statue falls on them!
+character_event = {
+	id = ancrel.3490
+	desc = ancrel.3490.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.3490.a
 		add_friend = FROM
 	}
 }
 
 # artist tries something revolutionary (offensive) and does a mural of "The Sisters"
 character_event = {
-	id = ancrel.3491 
+	id = ancrel.3491
 	desc = ancrel.3491.desc
 	picture = GFX_evt_greek_mural_women
 
@@ -2348,6 +2396,58 @@ character_event = {
 		}
 	}
 }
+
+# our liege must cancel the festival due to war
+character_event = {
+	id = ancrel.3541
+	desc = ancrel.3541.desc
+	picture = GFX_evt_market
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.3541.a
+	}
+}
+
+# we are at war, we must cancel the festival!
+character_event = {
+	id = ancrel.3542
+	desc = ancrel.3542.desc
+	picture = GFX_evt_market
+
+	war = yes
+
+	trigger = {
+		has_character_modifier = holding_unbinding_festival
+	}
+
+	immediate = {
+		clr_character_flag = unbinding_cheap_open
+		clr_character_flag = unbinding_middle_open
+		clr_character_flag = unbinding_grand_open
+		clr_character_flag = unbinding_cheap_festivities
+		clr_character_flag = unbinging_middle_festivities
+		clr_character_flag = unbinding_grand_festivities
+		clr_character_flag = unbinding_festival_open
+		clr_character_flag = festival_event_happened
+		clr_character_flag = ancrel_removed_firedancers
+		remove_character_modifier = holding_unbinding_festival
+	}
+
+	option = {
+		name = ancrel.3542.a
+		hidden_tooltip = {
+			any_vassal = {
+				limit = {
+					prisoner = no
+				}
+				character_event = { id = ancrel.3541 }
+			}
+		}
+	}
+}
+
 ###################################################################
 # Notification events for vassals during prep
 ###################################################################
@@ -2443,7 +2543,10 @@ character_event = {
 # Safety catch flag clearing
 character_event = {
 	id = ancrel.3549
-	hide_window = yes
+	desc = ancrel.3549.desc
+	picture = GFX_evt_market
+	frame = GFX_event_normal_frame_economy
+	is_triggered_only = yes
 
 	immediate = {
 		clr_character_flag = unbinding_cheap_open
@@ -2456,8 +2559,11 @@ character_event = {
 		clr_character_flag = festival_event_happened
 		clr_character_flag = ancrel_removed_firedancers
 		remove_character_modifier = holding_unbinding_festival
-		add_character_modifier = { name = held_unbinding_festival_timer duration = }
+		add_character_modifier = { name = held_unbinding_festival_timer duration = 1000 } # roughly three years
+	}
 
+	option = {
+		name = ancrel.3549.a
 		any_vassal = {
 			limit = {
 				prisoner = no

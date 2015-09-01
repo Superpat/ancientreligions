@@ -444,7 +444,7 @@ decisions = {
 			}
 			scaled_wealth = 0.1
 			any_courtier = {
-				is_spiritual = yes
+				has_job_title = job_spiritual
 			}
 		}
 		effect = {

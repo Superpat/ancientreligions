@@ -159,7 +159,7 @@ province_event = {
 	option = {
 		name = ancrel.3412.b # Engineering & Architecture; Economic
 		337 = {
-			add_province_modifier = { name = acr_crotone_business duration = -1 }
+			add_province_modifier = { name = acr_crotone_engineering duration = -1 }
 		}
 	}
 	option = {
@@ -198,16 +198,16 @@ province_event = {
 
 	option = {
 		name = ancrel.3413.a
-		chronicle = {
-			entry = CHRONICLE_CROTONE
-			portrait = [Root.GetID]
-		}
 		owner = {
-			337 = {
+			chronicle = {
+				entry = CHRONICLE_CROTONE
+				portrait = [Root.GetID]
+			}
+			c_consenza = {
 				build_holding = {
 				   title = b_crotone
 				   type = temple
-				   holder = PREVPREV
+				   holder = PREV
 				}
 			}
 
@@ -267,7 +267,7 @@ character_event = {
 	desc = ancrel.3450.desc
 	picture = GFX_evt_council
 
-	triggered_only = yes
+	is_triggered_only = yes
 
 	option = {
 		name = ancrel.3450.a
@@ -283,7 +283,7 @@ character_event = {
 	desc = ancrel.3451.desc
 	picture = GFX_evt_courtiers_talking
 
-	triggered_only = yes
+	is_triggered_only = yes
 
 	immediate = {
 		character_event = { id = ancrel.3452 days = 3 }
@@ -333,7 +333,7 @@ character_event = {
 character_event = {
 	id = ancrel.3452
 	desc = ancrel.3452.desc
-	portrait = GFX_evt_courtiers_talking
+	picture = GFX_evt_courtiers_talking
 
 	is_triggered_only = yes
 
@@ -368,7 +368,7 @@ character_event = {
 character_event = {
 	id = ancrel.3453
 	desc = ancrel.3453.desc
-	portrait = GFX_evt_prometheus_bound
+	picture = GFX_evt_prometheus_bound
 	border = GFX_event_normal_frame_religion
 
 	is_triggered_only = yes
@@ -382,7 +382,9 @@ character_event = {
 		save_event_target_as = festival_prometheus
 		prestige = 100
 
-		reverse_opinion = { modifier = ancrel_dissapointed who = job_spiritual }
+		job_spiritual = {
+			opinion = { modifier = ancrel_dissapointed who = ROOT }
+		}
 
  		hidden_tooltip = { # inform the priest
  			job_spiritual = { character_event = { id = ancrel.3547 } }
@@ -393,7 +395,7 @@ character_event = {
 		name = ancrel.3453.b
 		trigger = {
 			any_courtier = {
-				is_spiritual = yes
+				has_job_title = job_spiritual
 			}
 		}
 
@@ -408,18 +410,18 @@ character_event = {
 	}
 
 	option = { #random pious vassal
-		name = ancrel.3453.x
+		name = ancrel.3453.c
 		trigger = {
 			any_vassal = {
 				piety = 500
-				is_spiritual = no
+				NOT = { has_job_title = job_spiritual }
 			}
 		}
 
 		random_vassal = {
 			limit = {
 				piety = 500
-				is_spiritual = no
+				NOT = { has_job_title = job_spiritual }
 			}
 
 			save_event_target_as = festival_prometheus
@@ -437,19 +439,19 @@ character_event = {
 	}
 
 	option = { #totally random vassal, because apparently there is a lack of piety in your realm
-		name = ancrel.3453.x
+		name = ancrel.3453.d
 		trigger = {
 			NOT = {
 				any_vassal = {
 					piety = 500
-					is_spiritual = no
+					NOT = { has_job_title = job_spiritual }
 				}
 			}
 		}
 
 		random_vassal = {
 			limit = {
-				is_spiritual = no
+				NOT = { has_job_title = job_spiritual }
 			}
 			save_event_target_as = festival_prometheus
 			opinion = { modifier = ancrel_honored_me who = ROOT }
@@ -491,7 +493,9 @@ character_event = {
 		save_event_target_as = festival_heracles
 		prestige = 100
 
-		reverse_opinion = { modifier = ancrel_dissapointed who = job_marshal }
+		job_marshal = {
+			reverse_opinion = { modifier = ancrel_dissapointed who = ROOT }
+		}
 		hidden_tooltip = {
 			job_marshal = { # inform the marshal
 				character_event = { id = ancrel.3544 }
@@ -503,7 +507,7 @@ character_event = {
 		name = ancrel.3454.b
 		trigger = {
 			any_courtier = {
-				is_marshal = yes
+				has_job_title = job_marshal
 			}
 		}
 
@@ -520,18 +524,18 @@ character_event = {
 	}
 
 	option = { #random prestigous vassal
-		name = ancrel.3454.x
+		name = ancrel.3454.c
 		trigger = {
 			any_vassal = {
 				prestige = 500
-				is_marshal = no
+				NOT = { has_job_title = job_marshal }
 			}
 		}
 
 		random_vassal = {
 			limit = {
 				prestige = 500
-				is_marshal = no
+				NOT = { has_job_title = job_marshal }
 			}
 
 			save_event_target_as = festival_heracles
@@ -553,19 +557,19 @@ character_event = {
 	}
 
 	option = { #totally random vassal, because apparently there is a lack of prestige in your realm
-		name = ancrel.3454.x
+		name = ancrel.3454.d
 		trigger = {
 			NOT = {
 				any_vassal = {
 					prestige = 500
-					is_marshal = no
+					NOT = { has_job_title = job_marshal }
 				}
 			}
 		}
 
 		random_vassal = {
 			limit = {
-				is_marshal = no
+				NOT = { has_job_title = job_marshal }
 			}
 			save_event_target_as = festival_heracles
 			opinion = { modifier = ancrel_honored_me who = ROOT }
@@ -588,8 +592,9 @@ character_event = {
 # Opening Ceremony Takes Place! (liege)
 narrative_event = {
 	id = ancrel.3455
+	title = ancrel.unbinding_prometheus
 	picture = GFX_evt_prometheus_bound
-	border = GFX_event_normal_frame_religion
+	border = GFX_event_narrative_frame_religion
 
 	desc = { # the ruler is Prometheus
 		trigger = {
@@ -673,9 +678,10 @@ narrative_event = {
 # Opening Ceremony (vassals)
 narrative_event = {
 	id = ancrel.3456
+	tite = ancrel.unbinding_prometheus
 	desc = ancrel.3455.desc.other
 	picture = GFX_evt_prometheus_bound
-	border = GFX_event_normal_frame_religion
+	border = GFX_event_narrative_frame_religion
 
 	is_triggered_only = yes
 
@@ -688,9 +694,10 @@ narrative_event = {
 # Opening Ceremony (Prometheus)
 narrative_event = {
 	id = ancrel.3457
+	title = ancrel.unbinding_prometheus
 	desc = ancrel.3455.desc.prometheus
 	picture = GFX_evt_prometheus_bound
-	border = GFX_event_normal_frame_religion
+	border = GFX_event_narrative_frame_religion
 
 	is_triggered_only = yes
 
@@ -703,9 +710,10 @@ narrative_event = {
 # Opening Ceremony (Heracles)
 narrative_event = {
 	id = ancrel.3458
+	title = ancrel.unbinding_prometheus
 	desc = ancrel.3455.desc.heracles
 	picture = GFX_evt_prometheus_bound
-	border = GFX_event_normal_frame_religion
+	border = GFX_event_narrative_frame_religion
 
 	is_triggered_only = yes
 
@@ -766,7 +774,7 @@ character_event = {
 
 	option = {
 		name = ancrel.3459.a
-		capitol_holding = {
+		capital_holding = {
 			destroy_random_building = yes
 		}
 	}
@@ -896,9 +904,12 @@ character_event = {
    					}
    				}
 			}
+			70 = {
+				#do nothing
+			}
 		}
 
-		ai_will_do = {
+		ai_chance = {
 			factor = 60
 			modifier = {
 				factor = 200
@@ -932,8 +943,8 @@ character_event = {
 				is_theocracy = yes
 				NOT = {
 					trait = lustful
-					trait = master_seducer
-					trait = master_seductress
+					trait = seducer
+					trait = seductress
 					has_focus = focus_carousing
 					has_focus = focus_seduction
 				}
@@ -949,8 +960,8 @@ character_event = {
 			limit = {
 				OR = {
 					trait = lustful
-					trait = master_seducer
-					trait = master_seductress
+					trait = seducer
+					trait = seductress
 					has_focus = focus_carousing
 					has_focus = focus_seduction
 				}
@@ -987,8 +998,8 @@ character_event = {
 				OR = {
 					trait = lustful
 					trait = hedonist
-					trait = master_seducer
-					trait = master_seductress
+					trait = seducer
+					trait = seductress
 				}
 			}
 		}
@@ -1000,7 +1011,7 @@ character_event = {
 	id = ancrel.3462
 	hide_window = yes
 
-	is_adult = yes
+	min_age = 16
 
 	trigger = {
 		liege = {
@@ -1012,8 +1023,8 @@ character_event = {
 					days = 3
 				}
 			}
-			is_valid_attraciton = ROOT
-			NOT = { is_spouse = ROOT } # different event for spouses, since they may not be a vassal
+			is_valid_attraction = ROOT
+			NOT = { spouse = { character = PREV } } # different event for spouses, since they may not be a vassal
 			NOT = { has_character_flag = ancrel_remove_firedancers }
 		}
 	}
@@ -1070,7 +1081,7 @@ character_event = {
 	id = ancrel.3463
 	hide_window = yes
 
-	is_adult = yes
+	min_age = 16
 
 	trigger = {
 		spouse = {
@@ -1082,8 +1093,8 @@ character_event = {
 					days = 3
 				}
 			}
-			is_valid_attraciton = ROOT
-			NOT = { is_liege = ROOT } # different event for vassals
+			is_valid_attraction = ROOT
+			NOT = { is_liege_of = ROOT } # different event for vassals
 			NOT = { has_character_flag = ancrel_remove_firedancers }
 		}
 	}
@@ -1139,7 +1150,7 @@ character_event = {
 character_event = {
 	id = ancrel.3464
 	desc = ancrel.3464.desc
-	portrait = GFX_evt_firedancers
+	picture = GFX_evt_firedancers
 
 	trigger = { 
 		has_character_modifier = holding_unbinding_festival
@@ -1216,7 +1227,7 @@ character_event = {
 character_event = {
 	id = ancrel.3465
 	desc = ancrel.3465.desc
-	portrait = GFX_evt_firedancers
+	picture = GFX_evt_firedancers
 
 	trigger = { 
 		liege = {
@@ -1276,7 +1287,7 @@ character_event = {
 				trait = cruel
 			}
 			modifier = {
-				factor 10
+				factor = 10
 				trait = impaler
 			}
 		}
@@ -1294,6 +1305,7 @@ character_event = {
 			add_trait = kind
 		}
 		ai_chance = {
+			factor = 50
 			modifier = {
 				factor = 2
 				trait = patient
@@ -1328,7 +1340,7 @@ character_event = {
 		}
 		random = {
 			chance = 20
-			trait = arbitrary
+			add_trait = arbitrary
 		}
 		capital_scope = {
 			add_province_modifier = {
@@ -1346,7 +1358,7 @@ character_event = {
 		}
 		random = {
 			chance = 20
-			trait = just
+			add_trait = just
 		}
 		capital_scope = {
 			add_province_modifier = {
@@ -1360,7 +1372,7 @@ character_event = {
 		name = ancrel.3466.c
 		random = {
 			chance = 20
-			trait = kind
+			add_trait = kind
 		}
 		reverse_opinion = { modifier = ancrel_dissapointed who = FROM }
 	}
@@ -1384,7 +1396,7 @@ character_event = {
 		}
 		random = {
 			chance = 20
-			trait = arbitrary
+			add_trait = arbitrary
 		}
 		capital_scope = {
 			add_province_modifier = {
@@ -1402,7 +1414,7 @@ character_event = {
 		}
 		random = {
 			chance = 20
-			trait = just
+			add_trait = just
 		}
 		capital_scope = {
 			add_province_modifier = {
@@ -1416,7 +1428,7 @@ character_event = {
 		name = ancrel.3467.c
 		random = {
 			chance = 20
-			trait = kind
+			add_trait = kind
 		}
 		reverse_opinion = { modifier = ancrel_pleased who = FROM }
 	}
@@ -1426,9 +1438,7 @@ character_event = {
 character_event = {
 	id = ancrel.3470
 	desc = ancrel.3470.desc
-	portrait = GFX_evt_jugglers
-
-	is_triggered_only = yes
+	picture = GFX_evt_jugglers
 
 	trigger = {
 		has_character_modifier = holding_unbinding_festival
@@ -1440,18 +1450,24 @@ character_event = {
 			}
 		}
 		any_realm_character = {
-			prisoner = no
-			liege = {
-				character = ROOT
+			limit = { 
+				prisoner = no
+				liege = {
+					character = ROOT
+				}
+				trait = zealous
 			}
-			trait = zealous
+			always = yes
 		}
 		any_realm_character = {
-			prisoner = no
-			liege = {
-				character = ROOT
+			limit = {
+				prisoner = no
+				liege = {
+					character = ROOT
+				}
+				trait = cynical
 			}
-			trait = cynical
+			always = yes
 		}
 	}
 
@@ -1505,7 +1521,7 @@ character_event = {
 		}
 		random = {
 			chance = 15
-			trait = zealous
+			add_trait = zealous
 		}
 	}
 	option = { # diffuse the situation
@@ -1525,7 +1541,7 @@ character_event = {
 		}
 		random = {
 			chance = 20
-			trait = stressed
+			add_trait = stressed
 		}
 	}
 	option = { # agree with the zealous vassal
@@ -1538,7 +1554,7 @@ character_event = {
 		}
 		random = {
 			chance = 15
-			trait = cynical
+			add_trait = cynical
 		}
 	}
 }
@@ -1547,7 +1563,7 @@ character_event = {
 character_event = {
 	id = ancrel.3471
 	desc = ancrel.3471.desc
-	portrait = GFX_evt_riots_byzantine
+	picture = GFX_evt_riots_byzantine
 
 	trigger = {
 		has_character_modifier = holding_unbinding_festival
@@ -1592,7 +1608,7 @@ character_event = {
 character_event = {
 	id = ancrel.3472
 	desc = ancrel.3472.desc
-	portrait = GFX_evt_peasants
+	picture = GFX_evt_peasants
 
 	trigger = {
 		has_character_modifier = holding_unbinding_festival
@@ -1627,7 +1643,7 @@ character_event = {
 
 	option = {
 		name = ancrel.3472.a
-		any_demesne_province = {
+		capital_scope = {
 			add_province_modifier = { name = acr_excellent_performance duration = 180 }
 		}
 	}
@@ -1698,7 +1714,7 @@ character_event = {
 character_event = {
 	id = ancrel.3474
 	desc = ancrel.3474.desc
-	picture = 
+	picture = GFX_evt_theatre
 
 	trigger = {
 		has_character_modifier = holding_unbinding_festival
@@ -1728,17 +1744,20 @@ character_event = {
 		prestige = -10
 		random_list = {
 			10 = {
-				trait = coward
+				add_trait = craven
 			}
 			10 = {
-				trait = stressed
+				add_trait = stressed
+			}
+			80 = {
+				#do nothing
 			}
 		}
 	}
 	option = { # go on stage, but stick to the lines
-		name = ancrel.3475.b
+		name = ancrel.3474.b
 		custom_tooltip = {
-			text = ancrel.3475.b.tt
+			text = ancrel.3474.b.tt
 			random_list = {
 				33 = { # good outcome
 					modifier = {
@@ -1766,9 +1785,9 @@ character_event = {
 		}
 	}
 	option = { # go on stage and improvise the lines
-		name = ancrel.3475.c
+		name = ancrel.3474.c
 		custom_tooltip = {
-			text = ancrel.3475.c.tt
+			text = ancrel.3474.c.tt
 			random_list = {
 				50 = { # good outcome
 					modifier = {
@@ -1820,7 +1839,7 @@ character_event = {
 		}
 	}
 	option = { # gracefully decline
-		limit = {
+		trigger = {
 			diplomacy = 14
 		}
 		name = ancrel.3474.d
@@ -1832,7 +1851,7 @@ character_event = {
 character_event = {
 	id = ancrel.3475
 	desc = ancrel.3475.desc
-	picture = 
+	picture = GFX_evt_theatre
 
 	is_triggered_only = yes
 
@@ -1847,7 +1866,7 @@ character_event = {
 character_event = {
 	id = ancrel.3476
 	desc = ancrel.3476.desc
-	picture = 
+	picture = GFX_evt_theatre
 
 	is_triggered_only = yes
 
@@ -1860,7 +1879,7 @@ character_event = {
 character_event = {
 	id = ancrel.3477
 	desc = ancrel.3477.desc
-	picture = 
+	picture = GFX_evt_theatre
 
 	is_triggered_only = yes
 
@@ -1875,7 +1894,7 @@ character_event = {
 character_event = {
 	id = ancrel.3478
 	desc = ancrel.3478.desc
-	picture = 
+	picture = GFX_evt_theatre
 
 	is_triggered_only = yes
 
@@ -1890,7 +1909,7 @@ character_event = {
 character_event = {
 	id = ancrel.3479
 	desc = ancrel.3479.desc
-	picture = 
+	picture = GFX_evt_theatre
 
 	is_triggered_only = yes
 	option = {
@@ -1933,7 +1952,7 @@ character_event = {
 		name = ancrel.3480.a
 		piety = 10
 		ai_chance = {
-			chance = 50
+			factor = 50
 			modifier = {
 				factor = 10
 				trait = zealous
@@ -1944,7 +1963,7 @@ character_event = {
 		name = ancrel.3480.b
 		prestige = 10
 		ai_chance = {
-			chance = 50
+			factor = 50
 			modifier = {
 				factor = 10
 				trait = proud
@@ -2020,7 +2039,7 @@ character_event = {
 		name = ancrel.3482.a
 		piety = 10
 		ai_chance = {
-			chance = 50
+			factor = 50
 			modifier = {
 				factor = 10
 				trait = zealous
@@ -2128,17 +2147,15 @@ character_event = {
 	option = { # laugh
 		name = ancrel.3484.a
 		random = {
-			20 = {
-				add_trait = humble
-			}
+			chance = 20
+			add_trait = humble
 		}
 	}
 	option = { # huff
 		name = ancrel.3484.b
 		random = {
-			20 = {
-				add_trait = proud
-			}
+			chance = 20
+			add_trait = proud
 		}
 	}
 	option = { # throw 'em in the klink
@@ -2149,6 +2166,9 @@ character_event = {
 			}
 			10 = {
 				add_trait = cruel
+			}
+			80 = {
+				#do nothing
 			}
 		}
 	}
@@ -2257,6 +2277,7 @@ character_event = {
 character_event = {
 	id = ancrel.3487
 	desc = ancrel.3487.desc
+	picture = GFX_evt_falling_statue
 
 	is_triggered_only = yes
 
@@ -2269,10 +2290,10 @@ character_event = {
 		}
 		random = {
 			chance = 10
-			trait = injured
+			add_trait = wounded
 		}
 	}
-	option = { # run, like a coward
+	option = { # run, like a craven
 		custom_tooltip = {
 			text = ancrel.3487.b.tt
 			FROM = {
@@ -2281,7 +2302,7 @@ character_event = {
 		}
 		random = {
 			chance = 25
-			add_trait = coward
+			add_trait = craven
 		}
 	}
 	option = { # get all heroic and push them out of the way
@@ -2291,13 +2312,16 @@ character_event = {
 		}
 		random_list = {
 			60 = {
-				trait = injured
+				add_trait = wounded
 			}
 			20 = {
-				trait = maimed
+				add_trait = maimed
 			}
 			10 = {
 				death = { death_reason = death_accident }
+			}
+			10 = {
+				#do nothing
 			}
 		}
 		add_trait = brave
@@ -2308,6 +2332,7 @@ character_event = {
 character_event = {
 	id = ancrel.3488
 	desc = ancrel.3488.desc
+	picture = GFX_evt_falling_statue	
 
 	is_triggered_only = yes
 
@@ -2315,13 +2340,16 @@ character_event = {
 		name = ancrel.3488.a
 		random_list = {
 			30 = {
-				trait = injured
+				add_trait = wounded
 			}
 			15 = {
-				trait = maimed
+				add_trait = maimed
 			}
 			5 = {
 				death = { death_reason = death_accident }
+			}
+			50 = {
+				#do nothing
 			}
 		}
 	}
@@ -2331,23 +2359,24 @@ character_event = {
 character_event = {
 	id = ancrel.3489
 	desc = ancrel.3489.desc
+	picture = GFX_evt_falling_statue
 
 	is_triggered_only = yes
 
 	option = {
 		name = ancrel.3489.a
 		random_list = {
-			60 = {
-				trait = injured
+			50 = {
+				add_trait = wounded
 			}
 			30 = {
-				trait = maimed
+				add_trait = maimed
 			}
 			20 = {
 				death = { death_reason = death_accident }
 			}
 		}
-		opinion_modifier = { modifier = opinion_hate who = FROM duration = -1 }
+		opinion = { modifier = opinion_hate who = FROM duration = -1 }
 	}
 }
 
@@ -2355,6 +2384,7 @@ character_event = {
 character_event = {
 	id = ancrel.3490
 	desc = ancrel.3490.desc
+	picture = GFX_evt_falling_statue
 
 	is_triggered_only = yes
 
@@ -2368,7 +2398,7 @@ character_event = {
 character_event = {
 	id = ancrel.3491
 	desc = ancrel.3491.desc
-	picture = GFX_evt_greek_mural_women
+	picture = GFX_evt_favorite_poet
 
 	trigger = {
 		has_character_modifier = holding_unbinding_festival
@@ -2403,7 +2433,7 @@ character_event = {
 
 	option = {
 		name = ancrel.horrible
-		capitol_holding = {
+		capital_scope = {
 			add_province_modifier = { name = peasant_unrest duration = 720 }
 		}
 	}
@@ -2432,6 +2462,10 @@ character_event = {
 
 	trigger = {
 		has_character_modifier = holding_unbinding_festival
+	}
+
+	mean_time_to_happen = {
+		days = 1
 	}
 
 	immediate = {
@@ -2469,6 +2503,8 @@ character_event = {
 	desc = ancrel.3543.desc
 	picture = GFX_evt_prometheus_bound
 
+	is_triggered_only = yes
+	
 	option = {
 		name = ancrel.that_bastard
 		opinion = { modifier = ancrel_jealous who = event_target:festival_heracles }
@@ -2481,6 +2517,8 @@ character_event = {
 	desc = ancrel.3544.desc
 	picture = GFX_evt_prometheus_bound
 
+	is_triggered_only = yes
+	
 	option = {
 		name = ancrel.bummer
 	}
@@ -2491,18 +2529,20 @@ character_event = {
 	id = ancrel.3545
 	desc = {
 		trigger = {
-			is_marshal = yes
+			has_job_title = job_marshal
 		}
 		text = ancrel.3545.desc
 	}
 	desc = {
 		trigger = {
-			is_marshal = no
+			NOT = { has_job_title = job_marshal }
 		}
 		text = ancrel.3545.desc_alt
 	}
 	picture = GFX_evt_prometheus_bound
 
+	is_triggered_only = yes
+	
 	option = {
 		name = ancrel.fantastic
 	}
@@ -2513,6 +2553,8 @@ character_event = {
 	id = ancrel.3546
 	desc = ancrel.3546.desc
 	picture = GFX_evt_prometheus_bound
+
+	is_triggered_only = yes
 
 	option = {
 		name = ancrel.that_bastard
@@ -2526,6 +2568,8 @@ character_event = {
 	desc = ancrel.3547.desc
 	picture = GFX_evt_prometheus_bound
 
+	is_triggered_only = yes
+
 	option = {
 		name = ancrel.bummer
 	}
@@ -2536,18 +2580,20 @@ character_event = {
 	id = ancrel.3548
 	desc = {
 		trigger = {
-			is_spiritual = yes
+			has_job_title = job_spiritual
 		}
 		text = ancrel.3548.desc
 	}
 	desc = {
 		trigger = {
-			is_spiritual = no
+			NOT = { has_job_title = job_spiritual }
 		}
-		text = ancrel.3458.desc_alt
+		text = ancrel.3548.desc_alt
 	}
 	picture = GFX_evt_prometheus_bound
 
+	is_triggered_only = yes
+	
 	option = {
 		name = ancrel.fantastic
 	}
@@ -2558,7 +2604,7 @@ character_event = {
 	id = ancrel.3549
 	desc = ancrel.3549.desc
 	picture = GFX_evt_market
-	frame = GFX_event_normal_frame_economy
+	border = GFX_event_normal_frame_economy
 
 	is_triggered_only = yes
 
@@ -2604,7 +2650,7 @@ narrative_event = {
 	title = ancrel.3550.title
 	desc = ancrel.3550.desc
 	picture = GFX_evt_war_planning
-	border = GFX_evt_narrative_frame_war
+	border = GFX_event_narrative_frame_war
 
 	major = yes
 	is_triggered_only = yes

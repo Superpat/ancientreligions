@@ -71,3 +71,8 @@ ancrel_jealous = {
 	opinion = -30
 	years = 5
 }
+
+ancrel_pleased = {
+	opinion = 10
+	years = 2
+}

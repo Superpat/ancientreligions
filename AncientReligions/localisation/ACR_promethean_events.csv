@@ -43,6 +43,7 @@ ancrel.3454.a;I shall be mighty Heracles this time.;;;;;;;;;;;;;x
 ancrel.3454.b;[Root.job_marshal.GetTitledFirstName] will do his duty.;;;;;;;;;;;;;x
 ancrel.3454.c;I will choose someone prestigous...;;;;;;;;;;;;;x
 ancrel.3454.d;I don't care, how about that one over there?;;;;;;;;;;;;;x
+ancrel.unbinding_prometheus;The Unbinding of Prometheus;;;;;;;;;;;;;x
 ancrel.3455.desc.prometheus;You lie on the false Mount Kazbek, chained to a stone. A puppet eagle is above you, its beak covered in gore. You hear the twang of a bow, and there at the edge of the stage is [event_target:festival_heracles], dressed as Heracles, wielding a bow and wearing a lions pelt.\n[event_target:festival_heracles.GetSheHe] recites the lines, "I have come to free you from your bondage, Enlightened One. Even Zeus can see now that your light can not be hidden forever." [event_target:festival_heracles.GetFirstName] lifts their sword and breaks the false chains.\nYou recite your lines, "Thank you Heracles, your name shall be honored for all time! Your labors have destroyed barbarism around the world, civilization owes you a great debt!";;;;;;;;;;;;;x
 ancrel.3455.desc.heracles;You step onto the stage and see [event_target:festival_prometheus.GetFirstName] bound to the false mountain, the puppet eagle perched above with crimson beak. You fire your fake bow, and the bird dramatically drops to the ground at the sound of its twang.\nYou speak, "I have come to free you from your bondage, Enlightened One. Even Zeus can see now that your light can not be hidden forever." You lift your sword and break the chains. [event_target:festival_prometheus.GetFirstName] recites their lines, "Thank you Heracles, your name shall be honored for all time! Your labors have destroyed barbarism around the world, civilization owes you a great debt!" The crowds roar with cheering and applause!;;;;;;;;;;;;;x
 ancrel.3455.desc.other;You watch as [event_target:festival_prometheus.GetFirstName] lies chained to the false mountain, an eagle with bloodstained beak perches above. You hear a twang, and the eagle dramatically falls to the ground. From behind a rock appears [event_target:festival_heracles], dressed in a lion's pelt and holding a bow. [event_target:festival_heracles.GetHeShe] strides forward and speaks, "I have come to free you from your bondage, Enlightened One. Even Zeus can see now that your light can not be hidden forever." With one swing of [event_target:festival_heracles.GetHerHis] mighty sword, the chains are broken.\nPrometheus speaks, "Thank you Heracles, your name shall be honored for all time! Your labors have destroyed barbarism around the world, civilization owes you a great debt!" The crowd roars with applause, and you cannot help but be caught up in the excitement!;;;;;;;;;;;;;x
@@ -50,7 +51,7 @@ ancrel.3455.a;Wonderful!;;;;;;;;;;;;;x
 ancrel.3456.a;Prometheus smiles on me...;;;;;;;;;;;;;x
 ancrel.3457.a;I look good in fur...;;;;;;;;;;;;;x
 ancrel.3458.a;A grand ceremony!;;;;;;;;;;;;;x
-ancrel.3459.dec;It seems one of the firedancers you hired for the ceremony accidentally set fire to a building in the city! By the time the fires were put out the damage had been done, the structure is a smoking ruin. Thankfully, no one was hurt.;;;;;;;;;;;;;x
+ancrel.3459.desc;It seems one of the firedancers you hired for the ceremony accidentally set fire to a building in the city! By the time the fires were put out the damage had been done, the structure is a smoking ruin. Thankfully, no one was hurt.;;;;;;;;;;;;;x
 ancrel.3459.a;Clumsy bastards!;;;;;;;;;;;;;x
 ancrel.3460.desc;You stand with a crowd, watching as firedancers perform in one of the city streets. The firedance is mesmerizing, and the crowd is nearly silent for the whole act. After what seems to have been minutes, but perhaps hours, the dancers take a bow and the crowd cheers enthusiastically. One of your vassals, whom you had not noticed standing next to you, tells you how pleased they are with the firedancers this year.;;;;;;;;;;;;;x
 ancrel.3460.a;They were quite good, weren't they?;;;;;;;;;;;;;x
@@ -64,7 +65,9 @@ ancrel.3464.b;They are a menace! Throw them into the dungeons!;;;;;;;;;;;;;x
 ancrel.3464.c;The show must go on!;;;;;;;;;;;;;x
 ancrel.3465.desc;While watching one of the firedancer performances at [Root.Liege.GetTitledFirstName]'s festival, a firedancer gets too close to the crowd and you are struck by their flaming instrument! You do not have the authority to decide punishment for the offenders, but you can make a recommendation to your liege...;;;;;;;;;;;;;x
 ancrel.3465.a;I demand that they be punished!;;;;;;;;;;;;;x
+ancrel.3465.a.tt;Your liege hears your request;;;;;;;;;;;;;x
 ancrel.3465.b;Accidents happen. I shall request leniency.;;;;;;;;;;;;;x
+ancrel.3465.b.tt;Your liege hears your request;;;;;;;;;;;;;x
 ancrel.3466.desc;Your vassal, [From.GetTitledName], was involved in an accident with some firedancers and has been maimed! [From.GetSheHe] demands they be punished!;;;;;;;;;;;;;x
 ancrel.3466.a;Execute all of the firedancers!;;;;;;;;;;;;;x
 ancrel.3466.b;Remove the firedancers from the city, we can't have accidents like this.;;;;;;;;;;;;;x
@@ -121,7 +124,7 @@ ancrel.3484.c;I will not be made a fool of! Imprison this charlatan!;;;;;;;;;;;;
 ancrel.3485.desc;A sculptor has crafted a masterful statue of Prometheus giving fire to humanity. Crowds have gathered to marvel at it, and several nobles are already starting a bidding war. Such a statue would look quite impressive in a courtyard or entrance hall...;;;;;;;;;;;;;x
 ancrel.3485.a;It's marvelous, but I have the realm to look after.;;;;;;;;;;;;;x
 ancrel.3485.b;It is but a cheap immitation of the real thing.;;;;;;;;;;;;;x
-ancrel.3485.c;Shut up and take my denars!;;;;;;;;;;;;;x
+ancrel.3485.c;Shut up and take my drachma!;;;;;;;;;;;;;x
 ancrel.3487.desc;You are discussing the weather with [From.GetTitledFirstName] when you notice the sculptor behind [From.GetHerHim] has lost their balance and knocked their statue over. It is about to fall on you both!;;;;;;;;;;;;;x
 ancrel.3487.a;"Get out of the way [From.GetFirstName]!";;;;;;;;;;;;;x
 ancrel.3487.a.tt;You warn [From.GetFirstName] before diving out of the way.;;;;;;;;;;;;;x

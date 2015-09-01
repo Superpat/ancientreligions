@@ -1312,6 +1312,62 @@ character_event = {
 
 # a vassal is burned by firedancer oil and demands punishment! (liege)
 character_event = {
+	id = ancrel.3466
+	desc = ancrel.3466.desc
+	picture = GFX_evt_firedancers
+
+	is_triggered_only = yes
+
+	option = {
+		#kill 'em
+		name = ancrel.3466.a
+		reverse_opinion = { modifier = ancrel_pleased who = FROM }
+		custom_tooltip = {
+			text = ancrel.remove_firedancers
+			set_character_flag = ancrel_remove_firedancers
+		}
+		random = {
+			chance = 20
+			trait = arbitrary
+		}
+		capital_scope = {
+			add_province_modifier = {
+				name = peasant_unrest
+				days = 365
+			}
+		}
+	}
+	option = {
+		#remove them from the festival
+		name = ancrel.3466.b
+		custom_tooltip = {
+			text = ancrel.remove_firedancers
+			set_character_flag = ancrel_remove_firedancers
+		}
+		random = {
+			chance = 20
+			trait = just
+		}
+		capital_scope = {
+			add_province_modifier = {
+				name = peasant_unrest
+				days = 180
+			}
+		}
+	}
+	option = {
+		# it was just an accident
+		name = ancrel.3466.c
+		random = {
+			chance = 20
+			trait = kind
+		}
+		reverse_opinion = { modifier = ancrel_dissapointed who = FROM }
+	}
+}
+
+# a vassal is burned by firedancer oil and suggests leniency! (liege)
+character_event = {
 	id = ancrel.3467
 	desc = ancrel.3467.desc
 	picture = GFX_evt_firedancers
@@ -1321,7 +1377,7 @@ character_event = {
 	option = {
 		#kill 'em
 		name = ancrel.3467.a
-		reverse_opinion = { modifier = ancrel_pleased who = FROM }
+		reverse_opinion = { modifier = ancrel_dissapointed who = FROM }
 		custom_tooltip = {
 			text = ancrel.remove_firedancers
 			set_character_flag = ancrel_remove_firedancers
@@ -1362,62 +1418,6 @@ character_event = {
 			chance = 20
 			trait = kind
 		}
-		reverse_opinion = { modifier = ancrel_dissapointed who = FROM }
-	}
-}
-
-# a vassal is burned by firedancer oil and suggests leniency! (liege)
-character_event = {
-	id = ancrel.3468
-	desc = ancrel.3468.desc
-	picture = GFX_evt_firedancers
-
-	is_triggered_only = yes
-
-	option = {
-		#kill 'em
-		name = ancrel.3468.a
-		reverse_opinion = { modifier = ancrel_dissapointed who = FROM }
-		custom_tooltip = {
-			text = ancrel.remove_firedancers
-			set_character_flag = ancrel_remove_firedancers
-		}
-		random = {
-			chance = 20
-			trait = arbitrary
-		}
-		capital_scope = {
-			add_province_modifier = {
-				name = peasant_unrest
-				days = 365
-			}
-		}
-	}
-	option = {
-		#remove them from the festival
-		name = ancrel.3468.b
-		custom_tooltip = {
-			text = ancrel.remove_firedancers
-			set_character_flag = ancrel_remove_firedancers
-		}
-		random = {
-			chance = 20
-			trait = just
-		}
-		capital_scope = {
-			add_province_modifier = {
-				name = peasant_unrest
-				days = 180
-			}
-		}
-	}
-	option = {
-		# it was just an accident
-		name = ancrel.3468.c
-		random = {
-			chance = 20
-			trait = kind
-		}
 		reverse_opinion = { modifier = ancrel_pleased who = FROM }
 	}
 }
@@ -1427,6 +1427,8 @@ character_event = {
 	id = ancrel.3470
 	desc = ancrel.3470.desc
 	portrait = GFX_evt_jugglers
+
+	is_triggered_only = yes
 
 	trigger = {
 		has_character_modifier = holding_unbinding_festival
@@ -1625,7 +1627,7 @@ character_event = {
 
 	option = {
 		name = ancrel.3472.a
-		capital_scope = {
+		any_demesne_province = {
 			add_province_modifier = { name = acr_excellent_performance duration = 180 }
 		}
 	}
@@ -1723,6 +1725,7 @@ character_event = {
 
 	option = { # chicken out (bawk!)
 		name = ancrel.3474.a
+		prestige = -10
 		random_list = {
 			10 = {
 				trait = coward
@@ -2258,33 +2261,34 @@ character_event = {
 	is_triggered_only = yes
 
 	option = { # warn them and get out of the way
-		FROM = {
-			character_event = { id = ancrel.3488 }
+		custom_tooltip = {
+			text = ancrel.3487.a.tt
+			FROM = {
+				character_event = { id = ancrel.3488 }
+			}
 		}
 		random = {
-			10 = {
-				trait = injured
-			}
+			chance = 10
+			trait = injured
 		}
 	}
 	option = { # run, like a coward
-		FROM = {
-			character_event = { id = ancrel.3489 }
-			random_list = {
-				60 = {
-					trait = injured
-				}
-				30 = {
-					trait = maimed
-				}
-				10 = {
-					death = { death_reason = death_accident }
-				}
+		custom_tooltip = {
+			text = ancrel.3487.b.tt
+			FROM = {
+				character_event = { id = ancrel.3489 }
 			}
+		}
+		random = {
+			chance = 25
+			add_trait = coward
 		}
 	}
 	option = { # get all heroic and push them out of the way
-		FROM = { character_event = { id = ancrel.3490 } }
+		custom_tooltip = {
+			text = ancrel.3487.c.tt
+			FROM = { character_event = { id = ancrel.3490 } }
+		}
 		random_list = {
 			60 = {
 				trait = injured
@@ -2414,7 +2418,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = ancrel.3541.a
+		name = OK
 	}
 }
 
@@ -2444,7 +2448,7 @@ character_event = {
 	}
 
 	option = {
-		name = ancrel.3542.a
+		name = OK
 		hidden_tooltip = {
 			any_vassal = {
 				limit = {
@@ -2540,6 +2544,7 @@ character_event = {
 		trigger = {
 			is_spiritual = no
 		}
+		text = ancrel.3458.desc_alt
 	}
 	picture = GFX_evt_prometheus_bound
 
@@ -2548,12 +2553,13 @@ character_event = {
 	}
 }
 
-# Safety catch flag clearing
+# Festival is over!
 character_event = {
 	id = ancrel.3549
 	desc = ancrel.3549.desc
 	picture = GFX_evt_market
 	frame = GFX_event_normal_frame_economy
+
 	is_triggered_only = yes
 
 	immediate = {

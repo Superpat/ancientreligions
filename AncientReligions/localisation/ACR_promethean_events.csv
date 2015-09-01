@@ -50,16 +50,16 @@ ancrel.3455.a;Wonderful!;;;;;;;;;;;;;x
 ancrel.3456.a;Prometheus smiles on me...;;;;;;;;;;;;;x
 ancrel.3457.a;I look good in fur...;;;;;;;;;;;;;x
 ancrel.3458.a;A grand ceremony!;;;;;;;;;;;;;x
-ancrel.3459.dec;It seems one of the firedancers you hired for the ceremony accidentally set fire to a building in the city! By the time the fires were put out the damage had been done.;;;;;;;;;;;;;x
+ancrel.3459.dec;It seems one of the firedancers you hired for the ceremony accidentally set fire to a building in the city! By the time the fires were put out the damage had been done, the structure is a smoking ruin. Thankfully, no one was hurt.;;;;;;;;;;;;;x
 ancrel.3459.a;Clumsy bastards!;;;;;;;;;;;;;x
-ancrel.3460.desc;You stand with a crowd, watching as firedancers perform in one of the city streets. The performance is mesmerizing, and the crowd is nearly silent for the whole act. After what seems to have been minutes, but perhaps hours, the firedancers take a bow and the crowd cheers enthusiastically. One of your vassals, whom you had not noticed standing next to you, tells you how pleased they are with the firedancers this year, and is impressed with your work in hiring them.;;;;;;;;;;;;;x
+ancrel.3460.desc;You stand with a crowd, watching as firedancers perform in one of the city streets. The firedance is mesmerizing, and the crowd is nearly silent for the whole act. After what seems to have been minutes, but perhaps hours, the dancers take a bow and the crowd cheers enthusiastically. One of your vassals, whom you had not noticed standing next to you, tells you how pleased they are with the firedancers this year.;;;;;;;;;;;;;x
 ancrel.3460.a;They were quite good, weren't they?;;;;;;;;;;;;;x
-ancrel.3461.desc;You are walking through the streets when [From.GetTitledFirstName] catches your eye. [From.GetSheHe] is standing near a brazier, the light illuminating their face in a very... captivating way. You feel you heart pump harder, desire filling your very veins.;;;;;;;;;;;;;x
+ancrel.3461.desc;You are walking through the streets when [From.GetTitledFirstName] catches your eye. [From.GetSheHe] is standing near an ongoing firedance, the light of the dancer's implements illuminating their face in a very captivating way. You feel you heart pump harder, desire filling your veins.;;;;;;;;;;;;;x
 ancrel.3461.a;I must have [From.GetHerHim]!;;;;;;;;;;;;;x
 ancrel.3461.b;I'll just admire [From.GetHerHim] from afar.;;;;;;;;;;;;;x
-ancrel.3461.c;Lust is for corporeal things, I must be more enlightened...;;;;;;;;;;;;;x
-ancrel.3464.desc;While watching a performance, one of the firedancers gets too close and a gobbet of flaming paste hits you! You survive, but the damage is extensive.\nWhat will you do with the firedancer responsible?;;;;;;;;;;;;;x
-ancrel.3464.a;Execute the clumsy fool!;;;;;;;;;;;;;x
+ancrel.3461.c;Lust is for corporeal things, I must be more enlightened.;;;;;;;;;;;;;x
+ancrel.3464.desc;While watching a firedance, one of the performers gets too close and a gobbet of flaming paste hits you! You survive, but the damage is extensive.\nWhat will you do with the firedancer responsible?;;;;;;;;;;;;;x
+ancrel.3464.a;Execute them all!;;;;;;;;;;;;;x
 ancrel.3464.b;They are a menace! Throw them into the dungeons!;;;;;;;;;;;;;x
 ancrel.3464.c;The show must go on!;;;;;;;;;;;;;x
 ancrel.3465.desc;While watching one of the firedancer performances at [Root.Liege.GetTitledFirstName]'s festival, a firedancer gets too close to the crowd and you are struck by their flaming instrument! You do not have the authority to decide punishment for the offenders, but you can make a recommendation to your liege...;;;;;;;;;;;;;x
@@ -74,7 +74,80 @@ ancrel.3467.a;Leniency? Nonesense! Execute them all!;;;;;;;;;;;;;x
 ancrel.3467.b;Fine, I will merely imprison them.;;;;;;;;;;;;;x
 ancrel.3467.c;Agreed, accidents happen.;;;;;;;;;;;;;x
 ancrel.remove_firedancers;This decision will mean that we will have no firedancers for the rest of this festival. It may upset the commoners, who are fond of the spectacle;;;;;;;;;;;;;x
-ancrel.3468.desc;
+ancrel.3470.desc;You are watching a troup of actors as they perform the story of Prometheus and Epimetheus creating all of the worlds creatures from clay. THe narrator is explaining how the very nature of these first people, being of clay, meant they could only excel at manual labors when you hear [event_target:cynic.GetTitledFirstName] shouting "That's absurd!" It seems [event_target:cynic.GetTitledFirstName]'s gotten into an argument with [event_target:zealot.GetTitledFirstName] over the literal interpretation of the story.\nThey both look to you to resolve the argument.;;;;;;;;;;;;;x
+ancrel.3470.a;Of course it's literal!;;;;;;;;;;;;;x
+ancrel.3470.b;It was Plato, I think, who once said...;;;;;;;;;;;;;x
+ancrel.3470.c;Um, I... gotta go!;;;;;;;;;;;;;x
+ancrel.3470.d;It's clearly a metaphor, to teach school children.;;;;;;;;;;;;;x
+ancrel.3471.desc;You are watching a rather poor re-enactment of Prometheus' binding when the actor playing Prometheus begins to wail and beg for his freedom. This grave insult to their god, and terrible acting, whips the crowd into a fury. They can barely be kept from charging the stage. They pour into the streets and begin a small riot!;;;;;;;;;;;;;x
+ancrel.3471.a;[Root.Religion.GetRandomGodName] protect us...;;;;;;;;;;;;;x
+ancrel.3472.desc;A troup of actors are doing a re-enactment of Duecalion's Flood, and it's wonderful. While no one actor truly stood out, the troup as a whole performed amazingly. You can really feel the deep sadness of Duecalion and Pyrrha over the loss of their people and everything they knew, and the great joy of landfall and the creation of a new race of men. The crowds applause is deafening when the actors take their bows. The whole realm will be talking about this for months!;;;;;;;;;;;;;x
+ancrel.3472.a;Amazing! Truly wonderful!;;;;;;;;;;;;;x
+ancrel.3473.desc;During the entire festival you have heard rumors about a particularly brilliant actor; One with exceptional people skills and a disturbing knack for deception. Such an individual could be very useful in your court.
+ancrel.3473.a;Better they work for me than someone else.;;;;;;;;;;;;;x
+ancrel.3473.b;I have no need for professional liars in my court.;;;;;;;;;;;;;x
+ancrel.3474.desc;You are watching a play when, during a break before a pivotal scene, the lead gets on stage and requests that you perform his role in the next scene. The crowd is clapping and shouting encouragements. What do you do?;;;;;;;;;;;;;x
+ancrel.3474.a;What? I can't get on stage, what if I make a fool of myself!?;;;;;;;;;;;;;x
+ancrel.3474.b;Well, why not? I think I know the lines...;;;;;;;;;;;;;x
+ancrel.3474.b.tt;You get on stage and attempt to recite the lines from the play.;;;;;;;;;;;;;x
+ancrel.3474.c;I think I have an idea...;;;;;;;;;;;;;x
+ancrel.3474.c.tt;You get on stage and improvise. This could go very well, or very poorly...;;;;;;;;;;;;;x
+ancrel.3474.d;Ah, but you are doing so well!;;;;;;;;;;;;;x
+ancrel.3475.desc;You remembered the lines perfectly and acted well, the crowd gives you a hearty applause!;;;;;;;;;;;;;x
+ancrel.3475.a;I was good, wasn't I?;;;;;;;;;;;;;x
+ancrel.3476.desc;You got a line wrong, and your acting was so-so. Not everyone can be a star, it seems.;;;;;;;;;;;;;x
+ancrel.3476.a;Guess I shouldn't quit my day job...;;;;;;;;;;;;;x
+ancrel.3477.desc;You skip several lines and speak two of them out of order, your acting is rather bad. The crowd seems like it would boo at you if it wasn't so embarrassed.;;;;;;;;;;;;;x
+ancrel.3477.a;Oh, the shame!;;;;;;;;;;;;;x
+ancrel.3478.desc;Your improvised lines meet with booing and the ocassional piece of produce. The lead gently suggests you retire to the dressing rooms so he can take over.;;;;;;;;;;;;;x
+ancrel.3478.a;Uncultured heathens!;;;;;;;;;;;;;x
+ancrel.3479.desc;Your improvised lines meet with roaring applause! The actors all fall into your new performance as if it were planned, and the lot of you craft an entire new scene on stage. Afterwards the only thing anyone can talk about is your amazing performance!;;;;;;;;;;;;;x
+ancrel.3479.a;I was born for the stage!;;;;;;;;;;;;;x
+ancrel.3480.desc;A [Root.Religion.GetPriestName] is reciting the story of Pandora and the Jar. Pandora's gift from Prometheus was curiosity, a laudable trait. But Zeus used this as a weapon, for he knew that none of the gods had given her caution. So he gave Pandora a great jar, within which was all the troubles man now suffers. Curiosity overcame Pandora, and she opened the jar. Epimetheus helped her understand her mistake, and so he gave her caution. Epimetheus' gift to us is the ability to learn from our mistakes and grow beyond what the gods give us.;;;;;;;;;;;;;x
+ancrel.3480.a;A wonderous gift, to be sure.;;;;;;;;;;;;;x
+ancrel.3480.b;A useless gift, for I have no flaws.;;;;;;;;;;;;;x
+ancrel.3481.desc;While roaming the square, you come upon a [Root.Religion.GetPriestName] reciting the tale of Duecalion's Flood, and they are nearly finished.\n"And they did as his father Prometheus instructed him and cast stones over his shoulder. Those cast by Deucalion sprouted into men, and those cast by Pyrrha became women. It is from these, and from Prometheus-born Duecalion and Epimetheus-born Pyrrha, that we all descend. And it is the bits of metal ore in those stones that gave us our talents and determine our castes.;;;;;;;;;;;;;x
+ancrel.3481.a;I always liked that story...;;;;;;;;;;;;;x
+ancrel.3482.desc;As you wander through the fair you come upon a [Root.Religion.GetPriestName] speaking of Enlightenment. They talk of moving beyond the shadow of this world and finding Oneness, true enlightenment where this world will seem as real as a child's drawing does to us.;;;;;;;;;;;;;x
+ancrel.3482.a;I hope to reach CHIM someday...;;;;;;;;;;;;;x
+ancrel.3482.b;What a bunch of nonesense!;;;;;;;;;;;;;x
+ancrel.3483.desc;During the festival you've heard talk of a brilliant speaker and philosopher. Apparently they've bested many of your own [Root.Religion.GetPriestTitle] in matters of philosophy and won their grudging respect. Several of them are strongly encouraging you to invite this philosopher to your court.;;;;;;;;;;;;;x
+ancrel.3483.a;Bring this great philosopher to me.;;;;;;;;;;;;;x
+ancrel.3483.b;I have no need for know-it-alls in my court!;;;;;;;;;;;;;x
+ancrel.3484.desc;An artist from a distant realm has taken to making unflattering portraits of you with exaggerated features. They are quite popular.;;;;;;;;;;;;;x
+ancrel.3484.a;I've got four already!;;;;;;;;;;;;;x
+ancrel.3484.b;They look nothing like me!;;;;;;;;;;;;;x
+ancrel.3484.c;I will not be made a fool of! Imprison this charlatan!;;;;;;;;;;;;;x
+ancrel.3485.desc;A sculptor has crafted a masterful statue of Prometheus giving fire to humanity. Crowds have gathered to marvel at it, and several nobles are already starting a bidding war. Such a statue would look quite impressive in a courtyard or entrance hall...;;;;;;;;;;;;;x
+ancrel.3485.a;It's marvelous, but I have the realm to look after.;;;;;;;;;;;;;x
+ancrel.3485.b;It is but a cheap immitation of the real thing.;;;;;;;;;;;;;x
+ancrel.3485.c;Shut up and take my denars!;;;;;;;;;;;;;x
+ancrel.3487.desc;You are discussing the weather with [From.GetTitledFirstName] when you notice the sculptor behind [From.GetHerHim] has lost their balance and knocked their statue over. It is about to fall on you both!;;;;;;;;;;;;;x
+ancrel.3487.a;"Get out of the way [From.GetFirstName]!";;;;;;;;;;;;;x
+ancrel.3487.a.tt;You warn [From.GetFirstName] before diving out of the way.;;;;;;;;;;;;;x
+ancrel.3487.b;Ahhhhhh!;;;;;;;;;;;;;x
+ancrel.3487.b.tt;You save your own skin.;;;;;;;;;;;;;x
+ancrel.3487.c;"I'll save you!";;;;;;;;;;;;;x
+ancrel.3487.c.tt;You heroically save [From.GetFirstName], endangering yourself.;;;;;;;;;;;;;x
+ancrel.3488.desc;As you are discussing the weather with [From.GetTitledFirstName] you hear a grinding sound behind you. In that moment, [From.GetFirstName] shouts "Get out of the way!" and points behind you before diving away!
+ancrel.3488.a;By [Root.Religion.GetRandomGodName]!;;;;;;;;;;;;;x
+ancrel.3489.desc;You were discussing the weather with [From.GetTitledFirstName] when you heard the sound of stone grinding on stone. The last thing you remember before a statue falls upon you is [From.GetFirstName] fleeing in terror...;;;;;;;;;;;;;x
+ancrel.3489.a;That coward!;;;;;;;;;;;;;x
+ancrel.3490.desc;You were discussing the weather with [From.GetTitledFirstName] when you heard a strange grinding behind you. The next thing you know, [From.GetFirstName] has thrown you to the ground out of harms way, and the statue has collapsed onto [From.GetHerHim]!;;;;;;;;;;;;;x
+ancrel.3490.a;[From.GetSheHe]'s a hero!;;;;;;;;;;;;;x
+ancrel.3491.desc;An artist from a foreign land has just finished a mural and is revealing it for the first time. The gathered crowd is buzzing with excitement... at least until the cover is removed and the contents are revealed. The quality of the work is excellent, but the muralist seems to have taken... liberties. They've depicted Promethia and Epimethia, and he calls it "The Sisters." The crowd is, to put it lightly, incensed.;;;;;;;;;;;;;x
+ancrel.3541.desc;Due to the ongoing conflict, [From.GetTitledFirstName] must cancel the Unbinding Festival.;;;;;;;;;;;;;x
+ancrel.3542.desc;Due to the ongoing conflict, you must cancel the Unbinding Festival.;;;;;;;;;;;;;x
+ancrel.3543.desc;[From.GetTitledFirstName] has defied tradition and named [event_target:festival_heracles.GetTitledFirstName] as the Festival Heracles.;;;;;;;;;;;;;x
+ancrel.3544.desc;[From.GetTitledFirstName] has named [From.GetHerHim]self as the Festival Heracles.;;;;;;;;;;;;;x
+ancrel.3545.desc;In accordance with tradition, [From.GetTitledFirstName] has named you Festival Heracles for [From.GetHerHis] upcoming Unbinding Festival.;;;;;;;;;;;;;x
+ancrel.3545.desc_alt;Defying tradition, [From.GetTitledFirstName] has chosen you to play Festival Heracles, over [From.GetMarshalName] [From.job_marshal.GetFullName] or even [From.GetHerHim]self.;;;;;;;;;;;;;x
+ancrel.3546.desc;[From.GetTitledFirstName] has defied tradition and named [event_target:festival_prometheus] as the Festival Prometheus.;;;;;;;;;;;;;x
+ancrel.3547.desc;[From.GetTitledFirstName] has named [From.GetHerHim]self as the Festival Prometheus.;;;;;;;;;;;;;x
+ancrel.3548.desc;In accordance with tradition, [From.GetTitledFirstName] has named you Festival Heracles for [From.GetHerHis] upcoming Unbinding Festival.;;;;;;;;;;;;;x
+ancrel.3548.desc_alt;Defying tradition, [From.GetTitledFirstName] has chosen you to play Festival Heracles, over [From.GetLordSpiritualName] [From.job_spiritual.GetFullName] or even [From.GetHerHim]self.;;;;;;;;;;;;;x
+ancrel.3549.desc;The exhibitioners are packing up their gear, and the stage for the opening ceremony is being dismantled. The Festival is over.;;;;;;;;;;;;;x
+ancrel.3549.a;Now, to begin planning for the next one in three years...;;;;;;;;;;;;;x
 # Men of Steel Events ;;;;;;;;;;;;;;x
 ancrel.3550.title;Men of Steel;;;;;;;;;;;;;x
 ancrel.3550.desc;In response to a growing need to defend Promethean interests against the 'un-enlightened', [From.GetTitledName] has created an elite fighting force, the Men of Steel. In Promethean society, the military caste is known as the 'Men of Iron', the Men of Steel are formed from the elite members of the Iron caste. Forged in the heat of battle, these warriors of Prometheus will face any foe that threatens their ways with cunning and bravery.;;;;;;;;;;;;;x

@@ -29,8 +29,11 @@ HEAD_PRIEST_aztec_reformed;Quetzalcoatl;Quetzalcoatl;Quetzalcoatl;;Quetzalcoatl;
 HEAD_PRIESTESS_aztec_reformed;Quetzalcoatl;Quetzalcoatl;Quetzalcoatl;;Quetzalcoatl;;;;;;;;;x
 ###### Misc keys for events;;;;;;;;;;;;;;x
 ancrel.damn;Damn!;;;;;;;;;;;;;;x
-ancrel.horrible;How horrible!;;;;;;;;;;;;;;x
+ancrel.horrible;This is horrible!;;;;;;;;;;;;;;x
 ancrel.troublesome;Troublesome indeed...;;;;;;;;;;;;;;x
+ancrel.that_bastard;Bastard...;;;;;;;;;;;;;x
+ancrel.bummer;That's dissapointing...;;;;;;;;;;;;;x
+ancrel.fantastic;That's fantastic!;;;;;;;;;;;;;x
 ###### Misc pagan events;;;;;;;;;;;;;;x
 gone_pagan;Adopt the Old Ways;Adopter la Religion du pays;Adopt the Old Ways;;Adopt the Old Ways;;;;;;;;;x
 gone_pagan_zoroastrian;Adopt the Old Ways;Adopter la Religion du pays;Adopt the Old Ways;;Adopt the Old Ways;;;;;;;;;x

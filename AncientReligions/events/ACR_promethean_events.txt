@@ -198,6 +198,10 @@ province_event = {
 
 	option = {
 		name = ancrel.3413.a
+		chronicle = {
+			entry = CHRONICLE_CROTONE
+			portrait = [Root.GetID]
+		}
 		owner = {
 			337 = {
 				build_holding = {
@@ -230,23 +234,15 @@ narrative_event = {
 	only_rulers = yes
 	is_triggered_only = yes
 	
-	option = {
-		trigger = {
-			has_character_flag = acr_rebuilt_crotone
-		}
-		chronicle = {
-			entry = CHRONICLE_CROTONE
-			portrait = [Root.GetID]
-		}
-		name = ancrel.3414.a
+	trigger = {
+		NOT = { has_character_flag = acr_rebuilt_crotone }
 	}
-	
+
 	option = {
 		trigger = {
-			NOT = { has_character_flag = acr_rebuilt_crotone }
 			religion = promethean_pagan
 		}
-		name = ancrel.3414.b
+		name = ancrel.3414.a
 	}
 
 	option = {
@@ -254,7 +250,7 @@ narrative_event = {
 			NOT = { religion = promethean_pagan }
 		}
 
-		name = ancrel.3414.c
+		name = ancrel.3414.b
 	}
 }
 
@@ -296,7 +292,7 @@ character_event = {
 	option = { # just rent out a theatre in the city
 		name = ancrel.3451.a
 		scaled_wealth = -0.05
-		prestive = -50
+		prestige = -50
 
 		random = {
 			chance = 10
@@ -311,7 +307,7 @@ character_event = {
 
 	option = { # build one of wood in the city square
 		name = ancrel.3451.b
-		scaled_wealth = -0.15
+		scaled_wealth = -0.10
 		prestige = 50
 
 		set_character_flag = unbinding_middle_open
@@ -601,7 +597,7 @@ narrative_event = {
 				character = ROOT
 			}
 		}
-		text = ancrel.3455.desc.a
+		text = ancrel.3455.desc.prometheus
 	}
 	desc = { # the ruler is Heracles
 		trigger = {
@@ -609,7 +605,7 @@ narrative_event = {
 				character = ROOT
 			}
 		}
-		text = ancrel.3455.desc.b
+		text = ancrel.3455.desc.heracles
 	}
 	desc = { # the ruler is neither
 		trigger = {
@@ -622,7 +618,7 @@ narrative_event = {
 				}
 			}
 		}
-		text = ancrel.3455.desc.c
+		text = ancrel.3455.desc.other
 	}
 
 	immediate = {
@@ -639,7 +635,7 @@ narrative_event = {
 		hidden_tooltip = {
 			any_realm_character = { # regular vassals
 				limit = {
-					NOT = {
+					NOR = {
 						event_target:festival_heracles = {
 							character = PREV
 						}
@@ -650,11 +646,25 @@ narrative_event = {
 				}
 				character_event = { id = ancrel.3456 }
 			}
-			event_target:festival_prometheus = { # prometheus
-				character_event = { id = ancrel.3457 }
+			if = {
+				limit = {
+					event_target:festival_prometheus = {
+						NOT = { character = ROOT }
+					}
+				}
+				event_target:festival_prometheus = { # prometheus
+					character_event = { id = ancrel.3457 }
+				}
 			}
-			event_target:festival_heracles = { # epimetheus
-				character_event = { id = ancrel.3458 }
+			if = {
+				limit = {
+					event_target:festival_heracles = {
+						NOT = { character = ROOT }
+					}
+				}
+				event_target:festival_heracles = { # heracles
+					character_event = { id = ancrel.3458 }
+				}
 			}
 		}
 	}
@@ -663,7 +673,7 @@ narrative_event = {
 # Opening Ceremony (vassals)
 narrative_event = {
 	id = ancrel.3456
-	desc = ancrel.3456.desc
+	desc = ancrel.3455.desc.other
 	picture = GFX_evt_prometheus_bound
 	border = GFX_event_normal_frame_religion
 
@@ -678,7 +688,7 @@ narrative_event = {
 # Opening Ceremony (Prometheus)
 narrative_event = {
 	id = ancrel.3457
-	desc = ancrel.3457.desc
+	desc = ancrel.3455.desc.prometheus
 	picture = GFX_evt_prometheus_bound
 	border = GFX_event_normal_frame_religion
 
@@ -693,7 +703,7 @@ narrative_event = {
 # Opening Ceremony (Heracles)
 narrative_event = {
 	id = ancrel.3458
-	desc = ancrel.3458.desc
+	desc = ancrel.3455.desc.heracles
 	picture = GFX_evt_prometheus_bound
 	border = GFX_event_normal_frame_religion
 
@@ -1205,7 +1215,7 @@ character_event = {
 # a vassal has been burned by fire dancer oil! (vassal)
 character_event = {
 	id = ancrel.3465
-	desc = ancrel.3465
+	desc = ancrel.3465.desc
 	portrait = GFX_evt_firedancers
 
 	trigger = { 
@@ -1243,9 +1253,8 @@ character_event = {
 		}
 	}
 
-	option = {
+	option = { # demand the firedancers are punished!
 		name = ancrel.3465.a
-		# demand the firedancers are punished!
 		custom_tooltip = {
 			text = ancrel.3465.a.tt
 			liege = {
@@ -1272,9 +1281,8 @@ character_event = {
 			}
 		}
 	}
-	option = {
+	option = { 	# it was an unfortunate, painful, accident. thats all
 		name = ancrel.3465.b
-		# it was an unfortunate, painful, accident. thats all
 		custom_tooltip = {
 			text = ancrel.3465.b.tt
 			liege = {

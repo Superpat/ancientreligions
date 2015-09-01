@@ -8,7 +8,7 @@ CHRONICLE_FIRST_ACADEMY;[Root.GetFullName] rebuilt The First Academy and establi
 ancrel.3401.desc;The province of [Root.GetName], devestated after its conquest by your armies, has been slowly settled since then by people from your realm. The majority of its inhabitants are now [This.Culture.GetName] and [This.Religion.GetName]!;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 ancrel.3411.title;Crotone Construction Begins;;;;;;;;;;;;;x
-ancrel.3411.desc;Long has the ancient Pythagorean Academy at Crotone lain in ruins. But no more! You have invested significant resources into restoring this once great center of learning. From the ruins will arise a new Crotone Academy to bring enlightenment to the Western Mediterranean and spread light of Prometheus' wisdom to all the world!;;;;;;;;;;;;;x
+ancrel.3411.desc;Long has the ancient Pythagorean Academy at Crotone lain in ruins. But no more! You have invested significant resources into restoring this once great center of learning. From the ruins will arise a new Crotone Academy to bring enlightenment to the Western Mediterranean and spread the light of Prometheus' wisdom to all the world!;;;;;;;;;;;;;x
 ancrel.3411.a;It will be the greatest Academy yet!;;;;;;;;;;;;;x
 ancrel.3412.title;Crotone Academy of...?;;;;;;;;;;;;;x
 ancrel.3412.desc;Your architects report that the work on Crotone is coming along famously, the foundations are solid and most of the support structures are complete. However, they wish to know what sort of Academy Crotone will be. This will determine what sort of facilities they will need to build, and it will determine what kind of students will come out of the school.\nWhat are your orders?;;;;;;;;;;;;;x
@@ -20,10 +20,62 @@ ancrel.3413.desc;The Academy of Crotone is complete! Standing within the Shrine 
 ancrel.3413.a;Let the enlightenment begin!;;;;;;;;;;;;;x
 ancrel.3414.title;Academy Restored;;;;;;;;;;;;;x
 ancrel.3414.desc;Word has reached you that the Ancient Academy of Crotone, located on a Sicilian peninsula, ruined for centuries, has been rebuilt by [From.GetTitledFirstName]. Resplendent in polished marble and granite, it's buildings can be seen for miles. The campus itself is so massive as to practically be a city unto itself, and can support ten thousand students. This shining beacon of Promethean ideals will no doubt strengthen their grip on the Mediterranean.;;;;;;;;;;;;;x
-ancrel.3414.a;It's fire shall never be doused again...;;;;;;;;;;;;;x
-ancrel.3414.b;Glory to the Brothers!;;;;;;;;;;;;;x
-ancrel.3414.c;This is troubling...;;;;;;;;;;;;;x
-#;;;;;;;;;;;;;;x
+ancrel.3414.a;Glory to the Brothers!;;;;;;;;;;;;;x
+ancrel.3414.b;This is troubling...;;;;;;;;;;;;;x
+# Unbinding Festival Events ;;;;;;;;;;;;;;x
+ancrel.3450.desc;The Unbinding Festival is a time for all Prometheans to come together and celebrate their shared philosophy. To put aside their differences and celebrate the release of Prometheus, the Enlightened One. Soon people from all across [Root.GetTitle] will be traveling to the capitol for your festival.;;;;;;;;;;;;;x
+ancrel.3450.a;We must begin preperations at once!;;;;;;;;;;;;;x
+ancrel.3451.desc;The first decision you must make is how much to spend on the opening ceremony? Obviously, the more expensive the ceremony, the prestigious it will be for you.;;;;;;;;;;;;;x
+ancrel.3451.a;Lets not waste, simply rent a theatre;;;;;;;;;;;;;x
+ancrel.3451.b;Build a nice stage in the city square;;;;;;;;;;;;;x
+ancrel.3451.c;Prometheus was chained to a mountain, I want a mountain!;;;;;;;;;;;;;x
+ancrel.3452.desc;While the opening ceremony is the main event, the bulk of the Unbinding Festival is, well, the festival itself. Firedancers and actors perform for the crowds while sculptors and painters create works of art in honor of our gods. Orators tell the stories of our past to teach us lessons, so we do not repeat past mistakes. All of this, unfortunately, costs money. Better performers will cost more coin. How much should we spend on the festivities?
+ancrel.3452.a;Lets keep it simple, don't want to break the bank!;;;;;;;;;;;;;x
+ancrel.3452.b;We don't want to be cheap, but lets not overdo it...;;;;;;;;;;;;;x
+ancrel.3452.c;This will be a festival to remember!;;;;;;;;;;;;;x
+ancrel.3453.desc;It is the ruler's place to decide who will play the parts of Prometheus and Heracles during the opening ceremony. Traditionally this role is filled by the [GetLordSpiritualName], but you may choose to fill this role yourself, someone of exceptional [Root.Religion.GetPietyName], or anyone at all.;;;;;;;;;;;;;x
+ancrel.3453.a;I shall take the role of Prometheus.;;;;;;;;;;;;;x
+ancrel.3453.b;[Root.job_spiritual.GetTitledFirstName] shall perform this task.;;;;;;;;;;;;;x
+ancrel.3453.c;I will choose someone of great [Root.Religion.GetPietyName] for this.;;;;;;;;;;;;;x
+ancrel.3453.d;I don't really care... how about you?;;;;;;;;;;;;;x
+ancrel.3454.desc;Now you must decide who shall play the role of Heracles. Traditionally this would be your [GetMarshalName], but you can choose anyone you like.
+ancrel.3454.a;I shall be mighty Heracles this time.;;;;;;;;;;;;;x
+ancrel.3454.b;[Root.job_marshal.GetTitledFirstName] will do his duty.;;;;;;;;;;;;;x
+ancrel.3454.c;I will choose someone prestigous...;;;;;;;;;;;;;x
+ancrel.3454.d;I don't care, how about that one over there?;;;;;;;;;;;;;x
+ancrel.3455.desc.prometheus;You lie on the false Mount Kazbek, chained to a stone. A puppet eagle is above you, its beak covered in gore. You hear the twang of a bow, and there at the edge of the stage is [event_target:festival_heracles], dressed as Heracles, wielding a bow and wearing a lions pelt.\n[event_target:festival_heracles.GetSheHe] recites the lines, "I have come to free you from your bondage, Enlightened One. Even Zeus can see now that your light can not be hidden forever." [event_target:festival_heracles.GetFirstName] lifts their sword and breaks the false chains.\nYou recite your lines, "Thank you Heracles, your name shall be honored for all time! Your labors have destroyed barbarism around the world, civilization owes you a great debt!";;;;;;;;;;;;;x
+ancrel.3455.desc.heracles;You step onto the stage and see [event_target:festival_prometheus.GetFirstName] bound to the false mountain, the puppet eagle perched above with crimson beak. You fire your fake bow, and the bird dramatically drops to the ground at the sound of its twang.\nYou speak, "I have come to free you from your bondage, Enlightened One. Even Zeus can see now that your light can not be hidden forever." You lift your sword and break the chains. [event_target:festival_prometheus.GetFirstName] recites their lines, "Thank you Heracles, your name shall be honored for all time! Your labors have destroyed barbarism around the world, civilization owes you a great debt!" The crowds roar with cheering and applause!;;;;;;;;;;;;;x
+ancrel.3455.desc.other;You watch as [event_target:festival_prometheus.GetFirstName] lies chained to the false mountain, an eagle with bloodstained beak perches above. You hear a twang, and the eagle dramatically falls to the ground. From behind a rock appears [event_target:festival_heracles], dressed in a lion's pelt and holding a bow. [event_target:festival_heracles.GetHeShe] strides forward and speaks, "I have come to free you from your bondage, Enlightened One. Even Zeus can see now that your light can not be hidden forever." With one swing of [event_target:festival_heracles.GetHerHis] mighty sword, the chains are broken.\nPrometheus speaks, "Thank you Heracles, your name shall be honored for all time! Your labors have destroyed barbarism around the world, civilization owes you a great debt!" The crowd roars with applause, and you cannot help but be caught up in the excitement!;;;;;;;;;;;;;x
+ancrel.3455.a;Wonderful!;;;;;;;;;;;;;x
+ancrel.3456.a;Prometheus smiles on me...;;;;;;;;;;;;;x
+ancrel.3457.a;I look good in fur...;;;;;;;;;;;;;x
+ancrel.3458.a;A grand ceremony!;;;;;;;;;;;;;x
+ancrel.3459.dec;It seems one of the firedancers you hired for the ceremony accidentally set fire to a building in the city! By the time the fires were put out the damage had been done.;;;;;;;;;;;;;x
+ancrel.3459.a;Clumsy bastards!;;;;;;;;;;;;;x
+ancrel.3460.desc;You stand with a crowd, watching as firedancers perform in one of the city streets. The performance is mesmerizing, and the crowd is nearly silent for the whole act. After what seems to have been minutes, but perhaps hours, the firedancers take a bow and the crowd cheers enthusiastically. One of your vassals, whom you had not noticed standing next to you, tells you how pleased they are with the firedancers this year, and is impressed with your work in hiring them.;;;;;;;;;;;;;x
+ancrel.3460.a;They were quite good, weren't they?;;;;;;;;;;;;;x
+ancrel.3461.desc;You are walking through the streets when [From.GetTitledFirstName] catches your eye. [From.GetSheHe] is standing near a brazier, the light illuminating their face in a very... captivating way. You feel you heart pump harder, desire filling your very veins.;;;;;;;;;;;;;x
+ancrel.3461.a;I must have [From.GetHerHim]!;;;;;;;;;;;;;x
+ancrel.3461.b;I'll just admire [From.GetHerHim] from afar.;;;;;;;;;;;;;x
+ancrel.3461.c;Lust is for corporeal things, I must be more enlightened...;;;;;;;;;;;;;x
+ancrel.3464.desc;While watching a performance, one of the firedancers gets too close and a gobbet of flaming paste hits you! You survive, but the damage is extensive.\nWhat will you do with the firedancer responsible?;;;;;;;;;;;;;x
+ancrel.3464.a;Execute the clumsy fool!;;;;;;;;;;;;;x
+ancrel.3464.b;They are a menace! Throw them into the dungeons!;;;;;;;;;;;;;x
+ancrel.3464.c;The show must go on!;;;;;;;;;;;;;x
+ancrel.3465.desc;While watching one of the firedancer performances at [Root.Liege.GetTitledFirstName]'s festival, a firedancer gets too close to the crowd and you are struck by their flaming instrument! You do not have the authority to decide punishment for the offenders, but you can make a recommendation to your liege...;;;;;;;;;;;;;x
+ancrel.3465.a;I demand that they be punished!;;;;;;;;;;;;;x
+ancrel.3465.b;Accidents happen. I shall request leniency.;;;;;;;;;;;;;x
+ancrel.3466.desc;Your vassal, [From.GetTitledName], was involved in an accident with some firedancers and has been maimed! [From.GetSheHe] demands they be punished!;;;;;;;;;;;;;x
+ancrel.3466.a;Execute all of the firedancers!;;;;;;;;;;;;;x
+ancrel.3466.b;Remove the firedancers from the city, we can't have accidents like this.;;;;;;;;;;;;;x
+ancrel.3466.c;[From.GetSheHe]'s overreacting, it was just an accident.;;;;;;;;;;;;;x
+ancrel.3467.desc;One of your vassals, [From.GetTitledName], was maimed by a firedancer during an act. It appears to be an accident, and [From.GetFirstName] is requesting that you show leniency in light of this fact.;;;;;;;;;;;;;x
+ancrel.3467.a;Leniency? Nonesense! Execute them all!;;;;;;;;;;;;;x
+ancrel.3467.b;Fine, I will merely imprison them.;;;;;;;;;;;;;x
+ancrel.3467.c;Agreed, accidents happen.;;;;;;;;;;;;;x
+ancrel.remove_firedancers;This decision will mean that we will have no firedancers for the rest of this festival. It may upset the commoners, who are fond of the spectacle;;;;;;;;;;;;;x
+ancrel.3468.desc;
+# Men of Steel Events ;;;;;;;;;;;;;;x
 ancrel.3550.title;Men of Steel;;;;;;;;;;;;;x
 ancrel.3550.desc;In response to a growing need to defend Promethean interests against the 'un-enlightened', [From.GetTitledName] has created an elite fighting force, the Men of Steel. In Promethean society, the military caste is known as the 'Men of Iron', the Men of Steel are formed from the elite members of the Iron caste. Forged in the heat of battle, these warriors of Prometheus will face any foe that threatens their ways with cunning and bravery.;;;;;;;;;;;;;x
 ancrel.3550.a;Make our Father proud...;;;;;;;;;;;;;x

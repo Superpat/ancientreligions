@@ -84,3 +84,29 @@ VIET_nile_flood_overflow = {
 	local_build_cost_modifier = 0.1
 	icon = 30
 }
+VIET_garlic_distribution = {
+	church_opinion = 10
+	monthly_character_piety = 0.02
+	icon = 8
+}
+VIET_planted_palm_trees = {
+	local_tax_modifier = 0.01
+	icon = 7
+}
+VIET_khnum_amulet = {
+	health = 0.2
+	stewardship = 1
+	icon = 12
+}
+VIET_province_desecrated_egyptian_tombs = {
+	local_revolt_risk = 0.01
+	tech_growth_modifier = -0.03
+	local_tax_modifier = -0.05
+	icon = 22
+}
+VIET_not_upholding_maat = {
+	global_revolt_risk = 0.01
+	monthly_character_piety = -0.1
+	same_religion_opinion = -15
+	icon = 35
+}

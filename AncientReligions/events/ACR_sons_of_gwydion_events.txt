@@ -25,7 +25,9 @@ narrative_event = {
 	
 	option = {
 		name = ancrel.0110.a
-		has_character_flag = acr_founded_gwydion
+		trigger = {
+			has_character_flag = acr_founded_gwyidion
+		}
 		chronicle = {
 			entry = CHRONICLE_GWYDION
 			portrait = [Root.GetID]
@@ -34,15 +36,17 @@ narrative_event = {
 
 	option = {
 		name = ancrel.0110.b
-
-		NOT = { has_character_flag = acr_founded_gwyidion }
-		religion = celtic_pagan_reformed
+		trigger = {
+			NOT = { has_character_flag = acr_founded_gwyidion }
+			religion = celtic_pagan_reformed
+		}
 	}
 
 	option = {
 		name = ancrel.0110.c
-
-		NOT = { religion = celtic_pagan_reformed }
+		trigger = {
+			NOT = { religion = celtic_pagan_reformed }
+		}
 	}
 }
 

@@ -1,4 +1,5 @@
 pagan_group = {
+	crusade_cb = crusade
 	hellenic_pagan = {
 		graphical_culture = westerngfx
 		

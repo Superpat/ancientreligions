@@ -6,6 +6,13 @@ on_startup = {
 }
 
 #character
+on_bi_yearly_pulse = {
+	random_events = {
+		50 = ancrel.3401 # Depopulated Province converts
+	}
+}
+
+#character
 on_yearly_pulse = {
 	events = {
 		#ACR Events
@@ -13,7 +20,6 @@ on_yearly_pulse = {
 	}
 	
 	random_events = {
-		# Ancient Religions
 		100 = ancrel.1260 # fennid arrested by marshal, catholics only (why?)
 		100 = ancrel.1254 # fian visiting your court
 	}

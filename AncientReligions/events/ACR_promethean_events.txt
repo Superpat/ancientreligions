@@ -204,10 +204,12 @@ province_event = {
 				portrait = [Root.GetID]
 			}
 			c_consenza = {
-				build_holding = {
-				   title = b_crotone
-				   type = temple
-				   holder = PREV
+				province = {
+					build_holding = {
+						title = b_crotone
+						type = temple
+						holder = PREV
+					}
 				}
 			}
 
@@ -678,7 +680,7 @@ narrative_event = {
 # Opening Ceremony (vassals)
 narrative_event = {
 	id = ancrel.3456
-	tite = ancrel.unbinding_prometheus
+	title = ancrel.unbinding_prometheus
 	desc = ancrel.3455.desc.other
 	picture = GFX_evt_prometheus_bound
 	border = GFX_event_narrative_frame_religion

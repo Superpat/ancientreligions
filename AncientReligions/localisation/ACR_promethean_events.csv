@@ -29,7 +29,7 @@ ancrel.3451.desc;The first decision you must make is how much to spend on the op
 ancrel.3451.a;Lets not waste, simply rent a theatre;;;;;;;;;;;;;x
 ancrel.3451.b;Build a nice stage in the city square;;;;;;;;;;;;;x
 ancrel.3451.c;Prometheus was chained to a mountain, I want a mountain!;;;;;;;;;;;;;x
-ancrel.3452.desc;While the opening ceremony is the main event, the bulk of the Unbinding Festival is, well, the festival itself. Firedancers and actors perform for the crowds while sculptors and painters create works of art in honor of our gods. Orators tell the stories of our past to teach us lessons, so we do not repeat past mistakes. All of this, unfortunately, costs money. Better performers will cost more coin. How much should we spend on the festivities?
+ancrel.3452.desc;While the opening ceremony is the main event, the bulk of the Unbinding Festival is, well, the festival itself. Firedancers and actors perform for the crowds while sculptors and painters create works of art in honor of our gods. Orators tell the stories of our past to teach us lessons, so we do not repeat past mistakes. All of this, unfortunately, costs money. Better performers will cost more coin. How much should we spend on the festivities?;;;;;;;;;;;;;x
 ancrel.3452.a;Lets keep it simple, don't want to break the bank!;;;;;;;;;;;;;x
 ancrel.3452.b;We don't want to be cheap, but lets not overdo it...;;;;;;;;;;;;;x
 ancrel.3452.c;This will be a festival to remember!;;;;;;;;;;;;;x
@@ -38,7 +38,7 @@ ancrel.3453.a;I shall take the role of Prometheus.;;;;;;;;;;;;;x
 ancrel.3453.b;[Root.job_spiritual.GetTitledFirstName] shall perform this task.;;;;;;;;;;;;;x
 ancrel.3453.c;I will choose someone of great [Root.Religion.GetPietyName] for this.;;;;;;;;;;;;;x
 ancrel.3453.d;I don't really care... how about you?;;;;;;;;;;;;;x
-ancrel.3454.desc;Now you must decide who shall play the role of Heracles. Traditionally this would be your [GetMarshalName], but you can choose anyone you like.
+ancrel.3454.desc;Now you must decide who shall play the role of Heracles. Traditionally this would be your [GetMarshalName], but you can choose anyone you like.;;;;;;;;;;;;;x
 ancrel.3454.a;I shall be mighty Heracles this time.;;;;;;;;;;;;;x
 ancrel.3454.b;[Root.job_marshal.GetTitledFirstName] will do his duty.;;;;;;;;;;;;;x
 ancrel.3454.c;I will choose someone prestigous...;;;;;;;;;;;;;x
@@ -158,3 +158,4 @@ ancrel.3550.a;Make our Father proud...;;;;;;;;;;;;;x
 ancrel.3550.b;Englightenment cannot be stopped!;;;;;;;;;;;;;x
 ancrel.3550.c;Thats not good...;;;;;;;;;;;;;x
 CHRONICLE_STEEL;On this day, [Root.GetTitledFirstName] established the Men of Steel and charged them with keeping safe the holy fires of Prometheus.;;;;;;;;;;;;;x
+CHRONICLE_CROTONE;On this day, [Root.GetTitledFirstName] dedicated the rebuilt Academy of Crotone to The Brothers and their divine light. May it's fire never be extinguished again.;;;;;;;;;;;;;x

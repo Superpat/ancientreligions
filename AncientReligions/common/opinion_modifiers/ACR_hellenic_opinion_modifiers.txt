@@ -59,20 +59,20 @@ opinion_held_unbinding_festival = {
 
 ancrel_honored_me = {
 	opinion = 30
-	years = 5
+	months = 60
 }
 
 ancrel_dissapointed = {
 	opinion = -20
-	years = 2
+	months = 24
 }
 
 ancrel_jealous = {
 	opinion = -30
-	years = 5
+	months = 60
 }
 
 ancrel_pleased = {
 	opinion = 10
-	years = 2
+	months = 24
 }

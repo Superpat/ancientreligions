@@ -45,7 +45,7 @@ acr_good_performance_desc;This character performed well on stage.;;;;;;;;;;;;;x
 acr_great_performance;Great Acting;;;;;;;;;;;;;x
 acr_great_performance_desc;This character performed fantastically on stage.;;;;;;;;;;;;;x
 acr_grand_sculpture;Grand Sculpture;;;;;;;;;;;;;x
-acr_grand_sculpture;This character owns an impressive sculpture and has it situated strategically in their palace for maximum effect.;;;;;;;;;;;;;x
+acr_grand_sculpture_desc;This character owns an impressive sculpture and has it situated strategically in their palace for maximum effect.;;;;;;;;;;;;;x
 ancrel_pleased;Pleased;;;;;;;;;;;;;x
 acr_blasphemous_exhibition;Blasphemous Exhibition;;;;;;;;;;;;;x
 acr_blasphemous_exhibition_desc;The populace are enraged by a rather blasphemous art exhibition that took place recently.;;;;;;;;;;;;;x

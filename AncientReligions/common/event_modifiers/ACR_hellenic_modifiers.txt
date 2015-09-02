@@ -106,7 +106,7 @@ held_unbinding_festival_timer = { icon = 1 }
 acr_crotone_arts = {
 	icon = 3
 
-	tech_growth_modfiier_culture = 0.05
+	tech_growth_modifier_culture = 0.05
 	local_revolt_risk = -0.02
 }
 

@@ -203,13 +203,11 @@ province_event = {
 				entry = CHRONICLE_CROTONE
 				portrait = [Root.GetID]
 			}
-			c_consenza = {
-				province = {
-					build_holding = {
-						title = b_crotone
-						type = temple
-						holder = PREV
-					}
+			337 = {
+				build_holding = {
+					title = b_crotone
+					type = temple
+					holder = PREV
 				}
 			}
 
@@ -480,7 +478,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		character_event = { id = ancrel.3455 days = 1 }
+		narrative_event = { id = ancrel.3455 days = 1 }
 	}
 
 	option = { #play Heracles yourself
@@ -651,7 +649,7 @@ narrative_event = {
 						}
 					}
 				}
-				character_event = { id = ancrel.3456 }
+				narrative_event = { id = ancrel.3456 }
 			}
 			if = {
 				limit = {
@@ -660,7 +658,7 @@ narrative_event = {
 					}
 				}
 				event_target:festival_prometheus = { # prometheus
-					character_event = { id = ancrel.3457 }
+					narrative_event = { id = ancrel.3457 }
 				}
 			}
 			if = {
@@ -670,7 +668,7 @@ narrative_event = {
 					}
 				}
 				event_target:festival_heracles = { # heracles
-					character_event = { id = ancrel.3458 }
+					narrative_event = { id = ancrel.3458 }
 				}
 			}
 		}

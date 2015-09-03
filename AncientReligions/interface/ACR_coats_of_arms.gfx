@@ -7,7 +7,7 @@ spriteTypes = {
 		frame = "gfx\\coats_of_arms\ACR\frame_hellenic.tga"
 		mask = "gfx\\interface\seal_mask_CoA.tga"
 		seal_overlay = "gfx\\interface\seal_overlay_CoA.dds"
-		effect = "gfx\\FX\coa_shield.lua"
+		effect = "gfx/FX/coa_shield.lua"
 				
 		layer = {
 			mask = "gfx\\coats_of_arms\ACR\plain_hellenic.tga"
@@ -20,7 +20,7 @@ spriteTypes = {
 		frame = "gfx\\coats_of_arms\unit_banner_overlay_pagan.tga"
 		mask = "gfx\\interface\seal_mask_CoA.tga"
 		seal_overlay = "gfx\\interface\seal_overlay_CoA.dds"
-		effect = "gfx\\FX\coa_shield.lua"
+		effect = "gfx/FX/coa_shield.lua"
 				
 		layer = {
 			mask = "gfx\\coats_of_arms\unit_banner_mask_pagan.tga"
@@ -33,7 +33,7 @@ spriteTypes = {
 		frame = "gfx\\coats_of_arms\ACR\frame_celtic.tga"
 		mask = "gfx\\interface\seal_mask_CoA.tga"
 		seal_overlay = "gfx\\interface\seal_overlay_CoA.dds"
-		effect = "gfx\\FX\coa_shield.lua"
+		effect = "gfx/FX/coa_shield.lua"
 				
 		layer = {
 			mask = "gfx\\coats_of_arms\ACR\plain_celtic.tga"
@@ -46,7 +46,7 @@ spriteTypes = {
 		frame = "gfx\\coats_of_arms\unit_banner_overlay_pagan.tga"
 		mask = "gfx\\interface\seal_mask_CoA.tga"
 		seal_overlay = "gfx\\interface\seal_overlay_CoA.dds"
-		effect = "gfx\\FX\coa_shield.lua"
+		effect = "gfx/FX/coa_shield.lua"
 				
 		layer = {
 			mask = "gfx\\coats_of_arms\unit_banner_mask_pagan.tga"
@@ -59,7 +59,7 @@ spriteTypes = {
 		frame = "gfx\\coats_of_arms\ACR\frame_kemetic.tga"
 		mask = "gfx\\interface\seal_mask_CoA.tga"
 		seal_overlay = "gfx\\interface\seal_overlay_CoA.dds"
-		effect = "gfx\\FX\coa_shield.lua"
+		effect = "gfx/FX/coa_shield.lua"
 				
 		layer = {
 			mask = "gfx\\coats_of_arms\ACR\plain_kemetic.tga"
@@ -72,7 +72,7 @@ spriteTypes = {
 		frame = "gfx\\coats_of_arms\unit_banner_overlay_muslim.tga"
 		mask = "gfx\\interface\seal_mask_CoA.tga"
 		seal_overlay = "gfx\\interface\seal_overlay_CoA.dds"
-		effect = "gfx\\FX\coa_shield.lua"
+		effect = "gfx/FX/coa_shield.lua"
 				
 		layer = {
 			mask = "gfx\\coats_of_arms\unit_banner_mask_pagan.tga"

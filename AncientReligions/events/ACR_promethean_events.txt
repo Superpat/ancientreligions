@@ -64,25 +64,23 @@ province_event = {
 	picture = GFX_evt_peasants
 	border = GFX_event_normal_frame_economy
 
-	is_triggered_only = yes
-
 	trigger = {
 		has_province_modifier = depopulated_province
 	}
 
-	weight_multiplier = {
+	mean_time_to_happen = {
 		years = 50
 		modifier = {
+			factor = 0.75
 			religion_authority = 0.50
-			factor = 1.5
 		}
 		modifier = {
+			factor = 0.75
 			religion_authority = 0.75
-			factor = 1.5
 		}
 		modifier = {
+			factor = 0.75
 			religion_authority = 0.90
-			factor = 1.5
 		}
 	}
 
@@ -110,7 +108,7 @@ province_event = {
 ###################################################################
 
 # Rebuild Crotone
-province_event = {
+character_event = {
 	id = ancrel.3411
 	title = ancrel.3411.title
 	desc = ancrel.3411.desc
@@ -1450,24 +1448,20 @@ character_event = {
 			}
 		}
 		any_realm_character = {
-			limit = { 
-				prisoner = no
-				liege = {
-					character = ROOT
-				}
-				trait = zealous
+			count = 1
+			prisoner = no
+			liege = {
+				character = ROOT
 			}
-			always = yes
+			trait = zealous
 		}
 		any_realm_character = {
-			limit = {
-				prisoner = no
-				liege = {
-					character = ROOT
-				}
-				trait = cynical
+			count = 1
+			prisoner = no
+			liege = {
+				character = ROOT
 			}
-			always = yes
+			trait = cynical
 		}
 	}
 

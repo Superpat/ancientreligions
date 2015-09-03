@@ -6,14 +6,14 @@ spriteTypes = {
 		texturefile = "gfx\\traits\ACR\vestalis.tga"
 		noOfFrames = 1
 		norefcount = yes
-		effectFile = "gfx\\FX\buttonstate.lua"
+		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
 		name = "GFX_trait_retired_vestalis"
 		texturefile = "gfx\\traits\ACR\retired_vestalis.tga"
 		noOfFrames = 1
 		norefcount = yes
-		effectFile = "gfx\\FX\buttonstate.lua"
+		effectFile = "gfx/FX/buttonstate.lua"
 	}
 
 	# Decision icons

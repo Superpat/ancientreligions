@@ -1185,14 +1185,14 @@ character_event = {
 
 	option = { # execute them!
 		name = ancrel.3464.a
+		custom_tooltip = {
+			text = ancrel.remove_firedancers
+			set_character_flag = ancrel_remove_firedancers
+		}
 		prestige = 100
 		random = {
 			chance = 20
 			add_trait = wroth
-		}
-		custom_tooltip = {
-			text = ancrel.remove_firedancers
-			set_character_flag = ancrel_remove_firedancers
 		}
 		capital_scope = {
 			add_province_modifier = {
@@ -1203,11 +1203,11 @@ character_event = {
 	}
 	option = { # imprison them!
 		name = ancrel.3464.b
-		prestige = 50
 		custom_tooltip = {
 			text = ancrel.remove_firedancers
 			set_character_flag = ancrel_remove_firedancers
 		}
+		prestige = 50
 		capital_scope = {
 			add_province_modifier = {
 				name = peasant_unrest
@@ -1331,11 +1331,11 @@ character_event = {
 	option = {
 		#kill 'em
 		name = ancrel.3466.a
-		reverse_opinion = { modifier = ancrel_pleased who = FROM }
 		custom_tooltip = {
 			text = ancrel.remove_firedancers
 			set_character_flag = ancrel_remove_firedancers
 		}
+		reverse_opinion = { modifier = ancrel_pleased who = FROM }
 		random = {
 			chance = 20
 			add_trait = arbitrary
@@ -1354,25 +1354,25 @@ character_event = {
 			text = ancrel.remove_firedancers
 			set_character_flag = ancrel_remove_firedancers
 		}
-		random = {
-			chance = 20
-			add_trait = just
-		}
 		capital_scope = {
 			add_province_modifier = {
 				name = peasant_unrest
 				days = 180
 			}
 		}
+		random = {
+			chance = 20
+			add_trait = just
+		}
 	}
 	option = {
 		# it was just an accident
 		name = ancrel.3466.c
+		reverse_opinion = { modifier = ancrel_dissapointed who = FROM }
 		random = {
 			chance = 20
 			add_trait = kind
 		}
-		reverse_opinion = { modifier = ancrel_dissapointed who = FROM }
 	}
 }
 
@@ -1697,6 +1697,9 @@ character_event = {
 			trait = diligent
 			trait = proud
 			trait = envious
+		}
+		new_character = {
+			opinion = { modifier = opinion_patron who = ROOT months = 360 }
 		}
 	}
 	option = { # no need for professional liars in my court
@@ -2103,6 +2106,9 @@ character_event = {
 			trait = celibate
 			trait = diligent
 		}
+		new_character = {
+			opinion = { modifier = opinion_patron who = ROOT months = 360 }
+		}
 	}
 	option = { # i don't like having smart people in my employ :-/
 		name = ancrel.3483.b
@@ -2410,7 +2416,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 180
+		days = 270
 		modifier = {
 			factor = 0.33
 			NOT = { has_character_flag = festival_event_happened }
@@ -2452,10 +2458,10 @@ character_event = {
 	desc = ancrel.3542.desc
 	picture = GFX_evt_market
 
-	war = yes
 
 	trigger = {
-		has_character_modifier = holding_unbinding_festival
+		war = yes
+		has_character_flag = unbinding_festival
 	}
 
 	mean_time_to_happen = {
@@ -2463,16 +2469,7 @@ character_event = {
 	}
 
 	immediate = {
-		clr_character_flag = unbinding_cheap_open
-		clr_character_flag = unbinding_middle_open
-		clr_character_flag = unbinding_grand_open
-		clr_character_flag = unbinding_cheap_festivities
-		clr_character_flag = unbinging_middle_festivities
-		clr_character_flag = unbinding_grand_festivities
-		clr_character_flag = unbinding_festival_open
-		clr_character_flag = festival_event_happened
-		clr_character_flag = ancrel_removed_firedancers
-		remove_character_modifier = holding_unbinding_festival
+		clear_unbinding_effect = yes
 	}
 
 	option = {
@@ -2600,20 +2597,16 @@ character_event = {
 	picture = GFX_evt_market
 	border = GFX_event_normal_frame_economy
 
-	is_triggered_only = yes
+	trigger = {
+		had_character_flag = { flag = unbinding_festival days = 60 }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
 
 	immediate = {
-		clr_character_flag = unbinding_cheap_open
-		clr_character_flag = unbinding_middle_open
-		clr_character_flag = unbinding_grand_open
-		clr_character_flag = unbinding_cheap_festivities
-		clr_character_flag = unbinging_middle_festivities
-		clr_character_flag = unbinding_grand_festivities
-		clr_character_flag = unbinding_festival_open
-		clr_character_flag = festival_event_happened
-		clr_character_flag = ancrel_removed_firedancers
-		remove_character_modifier = holding_unbinding_festival
-		add_character_modifier = { name = held_unbinding_festival_timer duration = 1000 } # roughly three years
+		clear_unbinding_effect = yes
 	}
 
 	option = {

@@ -43,7 +43,7 @@ titan_cultist = {
 		religion = titan_pagan
 	}
 
-	icon = 26
+	icon = 1
 
 	# these don't work in character modifiers
 	# ai_zeal = 25

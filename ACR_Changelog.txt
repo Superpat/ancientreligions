@@ -5,6 +5,10 @@ General:
 -- This means your religious heads will call Great Holy Wars! Woo!
 - Moved some data around to different files to reduce compatability headaches.
 - Added Chronicle entries for many events.
+- Modified Lets. Get. PAGAN! to include heresies.
+-- Georgians and Armenians become Promethian.
+-- Alanians become Titan.
+-- East Africans become Atenic.
 
 Celtic Paganism:
 - Tweaked St Kilda event chain to be more likely.
@@ -12,7 +16,8 @@ Celtic Paganism:
 - Galloway is no longer a holy site. Dijon takes its place. This is to represent the Fountains of Sequana, a major place of worship for the Continental Celts. Also to make reformation a little harder. It was way too easy to start as Gwynned and take Dublin and Galloway and do some raiding to get up MA.
 - Fixed an issue caused by a Druidic training event calling a Sons of Gwydion event.
 - The Wolf Tails will still form if you somehow manage to Reform Celtic before converting even a single province.
--- In this case, they will be Druidic from the get go.
+-- In this case, they will be Druidic to start.
+- In the mercenary spirit of their ancient forebears, The Wolf Tails can be hired by anyone who has the coin.
 
 Hellenic:
 - Added a Hellenic revival event chain if the Mani Peninsula (Monemvasia) is in the realm, and an homage to the 30 pages thread about that on the forum.
@@ -36,14 +41,13 @@ Promethean:
 -- The event chain includes lots of small random events inspired by vanilla and VIET.
 -- If you're lucky you may get a skilled courtier. If you are unlucky, you may be injured, or even die!
 - Prometheans now have access to an invasion style CB called Expansion. This CB is partly based on concepts espoused in Plato's Republic. Plato asserted that The Republic would ocassionaly need to expand, at the expense of neighboring realms, in order to grow and prosper.
--- It can only be used once per lifetime.
--- It is Kingdom level.
 -- Conquered provinces suffer from a "Depopulated" modifier for 30 years after the invasion, making it difficult to hold but more likely to convert culture and religion.
+-- It is a once per lifetime Kingdom Level CB.
 
 Titan Cult:
 - Titan holy sites have been moved around to differentiate them from Hellenism and Prometheanism and better reflect locations that would actually be holy to them.
 -- Rome; because of the large temple to Saturn/Kronos.
--- Antioch; because of a mosaic of, and dedicated to, Tethys. Also it spreads the sites out.
+-- Antioch; because of a mosaic of/dedicated to Tethys. Also it spreads the sites out.
 -- Athens; Location of the Kronia festival and point of conflict with Prometheans and Hellenes.
 -- Thessalia; location of Mt Othrys, the Titans capitol during the Titanomachy (basically the Titan Olympus).
 -- Pecs; Is along the Danube, which was called "The Horn of Oceanus" by Apollonius of Rhodes. It's also far away from the other holy sites.
@@ -58,6 +62,7 @@ Atenic:
 - Atenism now has a religious head, the Meryaten, which is a King tier Fylkir style title held by the reformer.
 -- The Meryaten is created by decision, and requires that Akhetaten is restored.
 - The Burning Blades are a new holy order for Atenism that can be created via decision and are immediately vassalized by the organizer.
+- Atenic now uses Decadence.
 
 2015-8-12 v0.36.4 "Beroe"
 -------------------------

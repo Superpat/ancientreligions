@@ -859,7 +859,7 @@ character_event = {
 		religion = aten_pagan
 		any_demesne_title = {
 			limit = { tier = count }
-			location = { religion = promethean_pagan }
+			location = { religion = aten_pagan }
 		}
 	}
 }
@@ -873,7 +873,11 @@ character_event = {
 
 	immediate = {
 		any_vassal = {
-			limit = { tier = count }
+			limit = {
+				primary_title = {
+					higher_tier_than = BARON
+				}
+			}
 			set_defacto_liege = THIS
 		}
 	}

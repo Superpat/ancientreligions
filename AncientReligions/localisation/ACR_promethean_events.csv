@@ -23,30 +23,30 @@ ancrel.3414.desc;Word has reached you that the Ancient Academy of Crotone, locat
 ancrel.3414.a;Glory to the Brothers!;;;;;;;;;;;;;x
 ancrel.3414.b;This is troubling...;;;;;;;;;;;;;x
 # Unbinding Festival Events ;;;;;;;;;;;;;;x
-ancrel.3450.desc;The Unbinding Festival is a time for all Prometheans to come together and celebrate their shared philosophy. To put aside their differences and celebrate the release of Prometheus, the Enlightened One. Soon people from all across [Root.GetTitle] will be traveling to the capitol for your festival.;;;;;;;;;;;;;x
+ancrel.3450.desc;The Unbinding Festival is a time for all Prometheans to come together and celebrate their shared philosophy. To put aside their differences and celebrate the release of Prometheus, the Enlightened One. Soon people from all across [Root.PrimaryTitle] will be traveling to the capitol for your festival.;;;;;;;;;;;;;x
 ancrel.3450.a;We must begin preperations at once!;;;;;;;;;;;;;x
 ancrel.3451.desc;The first decision you must make is how much to spend on the opening ceremony? Obviously, the more expensive the ceremony, the prestigious it will be for you.;;;;;;;;;;;;;x
 ancrel.3451.a;Lets not waste, simply rent a theatre;;;;;;;;;;;;;x
 ancrel.3451.b;Build a nice stage in the city square;;;;;;;;;;;;;x
 ancrel.3451.c;Prometheus was chained to a mountain, I want a mountain!;;;;;;;;;;;;;x
-ancrel.3452.desc;While the opening ceremony is the main event, the bulk of the Unbinding Festival is, well, the festival itself. Firedancers and actors perform for the crowds while sculptors and painters create works of art in honor of our gods. Orators tell the stories of our past to teach us lessons, so we do not repeat past mistakes. All of this, unfortunately, costs money. Better performers will cost more coin. How much should we spend on the festivities?;;;;;;;;;;;;;x
-ancrel.3452.a;Lets keep it simple, don't want to break the bank!;;;;;;;;;;;;;x
+ancrel.3452.desc;While the opening ceremony is the main event, the bulk of the Unbinding Festival is the festival itself. Firedancers and actors perform for the crowds while sculptors and painters create works of art in honor of our gods. Orators tell the stories of our past so we do not repeat our mistakes. Better performers will cost more coin. How much should we spend on the festivities?;;;;;;;;;;;;;x
+ancrel.3452.a;Lets keep it simple, don't want to empty the treasury!;;;;;;;;;;;;;x
 ancrel.3452.b;We don't want to be cheap, but lets not overdo it...;;;;;;;;;;;;;x
 ancrel.3452.c;This will be a festival to remember!;;;;;;;;;;;;;x
-ancrel.3453.desc;It is the ruler's place to decide who will play the parts of Prometheus and Heracles during the opening ceremony. Traditionally this role is filled by the [GetLordSpiritualName], but you may choose to fill this role yourself, someone of exceptional [Root.Religion.GetPietyName], or anyone at all.;;;;;;;;;;;;;x
+ancrel.3453.desc;It is the ruler's place to decide who will play the parts of Prometheus and Heracles during the opening ceremony. Traditionally this role is filled by the [Root.job_spiritual.GetJobTitle], but you may choose to fill this role yourself, someone of exceptional [Root.Religion.GetPietyName], or anyone at all.;;;;;;;;;;;;;x
 ancrel.3453.a;I shall take the role of Prometheus.;;;;;;;;;;;;;x
 ancrel.3453.b;[Root.job_spiritual.GetTitledFirstName] shall perform this task.;;;;;;;;;;;;;x
 ancrel.3453.c;I will choose someone of great [Root.Religion.GetPietyName] for this.;;;;;;;;;;;;;x
 ancrel.3453.d;I don't really care... how about you?;;;;;;;;;;;;;x
-ancrel.3454.desc;Now you must decide who shall play the role of Heracles. Traditionally this would be your [GetMarshalName], but you can choose anyone you like.;;;;;;;;;;;;;x
+ancrel.3454.desc;Now you must decide who shall play the role of Heracles. Traditionally this would be your [Root.job_marshal.GetJobTitle], but you can choose anyone you like.;;;;;;;;;;;;;x
 ancrel.3454.a;I shall be mighty Heracles this time.;;;;;;;;;;;;;x
-ancrel.3454.b;[Root.job_marshal.GetTitledFirstName] will do his duty.;;;;;;;;;;;;;x
+ancrel.3454.b;[Root.job_marshal.GetTitledFirstName] will do their duty.;;;;;;;;;;;;;x
 ancrel.3454.c;I will choose someone prestigous...;;;;;;;;;;;;;x
 ancrel.3454.d;I don't care, how about that one over there?;;;;;;;;;;;;;x
 ancrel.unbinding_prometheus;The Unbinding of Prometheus;;;;;;;;;;;;;x
-ancrel.3455.desc.prometheus;You lie on the false Mount Kazbek, chained to a stone. A puppet eagle is above you, its beak covered in gore. You hear the twang of a bow, and there at the edge of the stage is [event_target:festival_heracles], dressed as Heracles, wielding a bow and wearing a lions pelt.\n[event_target:festival_heracles.GetSheHe] recites the lines, "I have come to free you from your bondage, Enlightened One. Even Zeus can see now that your light can not be hidden forever." [event_target:festival_heracles.GetFirstName] lifts their sword and breaks the false chains.\nYou recite your lines, "Thank you Heracles, your name shall be honored for all time! Your labors have destroyed barbarism around the world, civilization owes you a great debt!";;;;;;;;;;;;;x
-ancrel.3455.desc.heracles;You step onto the stage and see [event_target:festival_prometheus.GetFirstName] bound to the false mountain, the puppet eagle perched above with crimson beak. You fire your fake bow, and the bird dramatically drops to the ground at the sound of its twang.\nYou speak, "I have come to free you from your bondage, Enlightened One. Even Zeus can see now that your light can not be hidden forever." You lift your sword and break the chains. [event_target:festival_prometheus.GetFirstName] recites their lines, "Thank you Heracles, your name shall be honored for all time! Your labors have destroyed barbarism around the world, civilization owes you a great debt!" The crowds roar with cheering and applause!;;;;;;;;;;;;;x
-ancrel.3455.desc.other;You watch as [event_target:festival_prometheus.GetFirstName] lies chained to the false mountain, an eagle with bloodstained beak perches above. You hear a twang, and the eagle dramatically falls to the ground. From behind a rock appears [event_target:festival_heracles], dressed in a lion's pelt and holding a bow. [event_target:festival_heracles.GetHeShe] strides forward and speaks, "I have come to free you from your bondage, Enlightened One. Even Zeus can see now that your light can not be hidden forever." With one swing of [event_target:festival_heracles.GetHerHis] mighty sword, the chains are broken.\nPrometheus speaks, "Thank you Heracles, your name shall be honored for all time! Your labors have destroyed barbarism around the world, civilization owes you a great debt!" The crowd roars with applause, and you cannot help but be caught up in the excitement!;;;;;;;;;;;;;x
+ancrel.3455.desc.prometheus;You lie on the false Mount Kazbek, chained to a stone. A puppet eagle is above you, its beak covered in gore. You hear the twang of a bow, and there at the edge of the stage is Heracles, wielding a bow and wearing a lions pelt.\nHe recites the lines, "I have come to free you from your bondage, Enlightened One. Even Zeus can see now that your light can not be hidden forever." Heracles lifts his sword and breaks the false chains.\nYou recite your lines, "Thank you Heracles, your name shall be honored for all time! Your labors have destroyed barbarism around the world, civilization owes you a great debt!";;;;;;;;;;;;;x
+ancrel.3455.desc.heracles;You step onto the stage and see Prometheus bound to the false mountain, the puppet eagle perched above with crimson beak. You fire your fake bow, and the bird dramatically drops to the ground at the sound of its twang.\nYou speak, "I have come to free you from your bondage, Enlightened One. Even Zeus can see now that your light can not be hidden forever." You lift your sword and break the chains. Prometheus recites their lines, "Thank you Heracles, your name shall be honored for all time! Your labors have destroyed barbarism around the world, civilization owes you a great debt!" The crowds roar with cheering and applause!;;;;;;;;;;;;;x
+ancrel.3455.desc.other;You watch as Prometheus lies chained to the false mountain, an eagle with bloodstained beak perches above. You hear a twang, and the eagle dramatically falls to the ground. From behind a rock appears Heracles, dressed in a lion's pelt and holding a bow. He strides forward and speaks, "I have come to free you from your bondage, Enlightened One. Even Zeus can see now that your light can not be hidden forever." With one swing of his mighty sword, the chains are broken.\nPrometheus speaks, "Thank you Heracles, your name shall be honored for all time! Your labors have destroyed barbarism around the world, civilization owes you a great debt!" The crowd roars with applause, and you cannot help but be caught up in the excitement!;;;;;;;;;;;;;x
 ancrel.3455.a;Wonderful!;;;;;;;;;;;;;x
 ancrel.3456.a;Prometheus smiles on me...;;;;;;;;;;;;;x
 ancrel.3457.a;I look good in fur...;;;;;;;;;;;;;x
@@ -65,7 +65,7 @@ ancrel.3464.b;They are a menace! Throw them into the dungeons!;;;;;;;;;;;;;x
 ancrel.3464.c;The show must go on!;;;;;;;;;;;;;x
 ancrel.3465.desc;While watching one of the firedancer performances at [Root.Liege.GetTitledFirstName]'s festival, a firedancer gets too close to the crowd and you are struck by their flaming instrument! You do not have the authority to decide punishment for the offenders, but you can make a recommendation to your liege...;;;;;;;;;;;;;x
 ancrel.3465.a;I demand that they be punished!;;;;;;;;;;;;;x
-ancrel.3465.a.tt;Your liege hears your request;;;;;;;;;;;;;x
+ancrel.3465.a.tt;Your liege hears your request...;;;;;;;;;;;;;x
 ancrel.3465.b;Accidents happen. I shall request leniency.;;;;;;;;;;;;;x
 ancrel.3465.b.tt;Your liege hears your request;;;;;;;;;;;;;x
 ancrel.3466.desc;Your vassal, [From.GetTitledName], was involved in an accident with some firedancers and has been maimed! [From.GetSheHe] demands they be punished!;;;;;;;;;;;;;x
@@ -76,7 +76,7 @@ ancrel.3467.desc;One of your vassals, [From.GetTitledName], was maimed by a fire
 ancrel.3467.a;Leniency? Nonesense! Execute them all!;;;;;;;;;;;;;x
 ancrel.3467.b;Fine, I will merely imprison them.;;;;;;;;;;;;;x
 ancrel.3467.c;Agreed, accidents happen.;;;;;;;;;;;;;x
-ancrel.remove_firedancers;This decision will mean that we will have no firedancers for the rest of this festival. It may upset the commoners, who are fond of the spectacle;;;;;;;;;;;;;x
+ancrel.remove_firedancers;This decision will mean that we will have no firedancers for the rest of this festival. It may upset the commoners, who are fond of the spectacle.\n;;;;;;;;;;;;;x
 ancrel.3470.desc;You are watching a troup of actors as they perform the story of Prometheus and Epimetheus creating all of the worlds creatures from clay. THe narrator is explaining how the very nature of these first people, being of clay, meant they could only excel at manual labors when you hear [event_target:cynic.GetTitledFirstName] shouting "That's absurd!" It seems [event_target:cynic.GetTitledFirstName]'s gotten into an argument with [event_target:zealot.GetTitledFirstName] over the literal interpretation of the story.\nThey both look to you to resolve the argument.;;;;;;;;;;;;;x
 ancrel.3470.a;Of course it's literal!;;;;;;;;;;;;;x
 ancrel.3470.b;It was Plato, I think, who once said...;;;;;;;;;;;;;x
@@ -92,9 +92,9 @@ ancrel.3473.b;I have no need for professional liars in my court.;;;;;;;;;;;;;x
 ancrel.3474.desc;You are watching a play when, during a break before a pivotal scene, the lead gets on stage and requests that you perform his role in the next scene. The crowd is clapping and shouting encouragements. What do you do?;;;;;;;;;;;;;x
 ancrel.3474.a;What? I can't get on stage, what if I make a fool of myself!?;;;;;;;;;;;;;x
 ancrel.3474.b;Well, why not? I think I know the lines...;;;;;;;;;;;;;x
-ancrel.3474.b.tt;You get on stage and attempt to recite the lines from the play.;;;;;;;;;;;;;x
+ancrel.3474.b.tt;You get on stage and attempt to recite the lines from the play.\n;;;;;;;;;;;;;x
 ancrel.3474.c;I think I have an idea...;;;;;;;;;;;;;x
-ancrel.3474.c.tt;You get on stage and improvise. This could go very well, or very poorly...;;;;;;;;;;;;;x
+ancrel.3474.c.tt;You get on stage and improvise. This could go very well, or very poorly...\n;;;;;;;;;;;;;x
 ancrel.3474.d;Ah, but you are doing so well!;;;;;;;;;;;;;x
 ancrel.3475.desc;You remembered the lines perfectly and acted well, the crowd gives you a hearty applause!;;;;;;;;;;;;;x
 ancrel.3475.a;I was good, wasn't I?;;;;;;;;;;;;;x
@@ -127,11 +127,11 @@ ancrel.3485.b;It is but a cheap immitation of the real thing.;;;;;;;;;;;;;x
 ancrel.3485.c;Shut up and take my drachma!;;;;;;;;;;;;;x
 ancrel.3487.desc;You are discussing the weather with [From.GetTitledFirstName] when you notice the sculptor behind [From.GetHerHim] has lost their balance and knocked their statue over. It is about to fall on you both!;;;;;;;;;;;;;x
 ancrel.3487.a;"Get out of the way [From.GetFirstName]!";;;;;;;;;;;;;x
-ancrel.3487.a.tt;You warn [From.GetFirstName] before diving out of the way.;;;;;;;;;;;;;x
+ancrel.3487.a.tt;You warn [From.GetFirstName] before diving out of the way.\n;;;;;;;;;;;;;x
 ancrel.3487.b;Ahhhhhh!;;;;;;;;;;;;;x
-ancrel.3487.b.tt;You save your own skin.;;;;;;;;;;;;;x
+ancrel.3487.b.tt;You save your own skin.\n;;;;;;;;;;;;;x
 ancrel.3487.c;"I'll save you!";;;;;;;;;;;;;x
-ancrel.3487.c.tt;You heroically save [From.GetFirstName], endangering yourself.;;;;;;;;;;;;;x
+ancrel.3487.c.tt;You heroically save [From.GetFirstName], endangering yourself.\n;;;;;;;;;;;;;x
 ancrel.3488.desc;As you are discussing the weather with [From.GetTitledFirstName] you hear a grinding sound behind you. In that moment, [From.GetFirstName] shouts "Get out of the way!" and points behind you before diving away!;;;;;;;;;;;;;x
 ancrel.3488.a;By [Root.Religion.GetRandomGodName]!;;;;;;;;;;;;;x
 ancrel.3489.desc;You were discussing the weather with [From.GetTitledFirstName] when you heard the sound of stone grinding on stone. The last thing you remember before a statue falls upon you is [From.GetFirstName] fleeing in terror...;;;;;;;;;;;;;x

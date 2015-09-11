@@ -40,8 +40,8 @@ Promethean:
 - There is now an Unbinding Festival decision and event chain that Prometheans can do once a year. It is a celebration of the, you guessed it, Unbinding of Prometheus from his prison on Mt Kazbek.
 -- The event chain includes lots of small random events inspired by vanilla and VIET.
 -- If you're lucky you may get a skilled courtier. If you are unlucky, you may be injured, or even die!
-- Prometheans now have access to an invasion style CB called Expansion. This CB is partly based on concepts espoused in Plato's Republic. Plato asserted that The Republic would ocassionaly need to expand, at the expense of neighboring realms, in order to grow and prosper.
--- Conquered provinces suffer from a "Depopulated" modifier for 30 years after the invasion, making it difficult to hold but more likely to convert culture and religion.
+- Prometheans now have access to an invasion CB called Expansion. This CB is partly based on concepts espoused in Plato's Republic. Plato asserted that The Republic would ocassionaly need to expand, at the expense of neighboring realms, in order to grow and prosper.
+-- Conquered provinces suffer from a "Depopulated" modifier for 30 years after the invasion, making it difficult to hold but more likely to convert culture and religion to the top liege.
 -- It is a once per lifetime Kingdom Level CB.
 
 Titan Cult:

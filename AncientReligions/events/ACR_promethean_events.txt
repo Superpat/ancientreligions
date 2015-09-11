@@ -60,9 +60,7 @@ narrative_event = {
 # Depopulated Province Converts!
 province_event = {
 	id = ancrel.3401
-	desc = ancrel.3401.desc
-	picture = GFX_evt_peasants
-	border = GFX_event_normal_frame_economy
+	hide_window = yes
 
 	trigger = {
 		has_province_modifier = depopulated_province
@@ -87,19 +85,28 @@ province_event = {
 	immediate = {
 		owner = { 
 			top_liege = {
-				ROOT = {
-					religion = PREV
-					culture = PREV
-				}
+				character_event = { id = ancrel.3402 }
 			}
 		}
 	}
-
-	option = {
-		name = OK
-	}
 }
 
+# Depopulated Province Converts! (top liege)
+character_event = {
+	id = ancrel.3402
+	desc = ancrel.3402.desc
+	picture = GFX_evt_peasants
+	border = GFX_event_normal_frame_economy
+
+	is_triggered_only = yes
+
+	option = {
+		FROM = {
+			religion = ROOT
+			culture = ROOT
+		}
+	}
+}
 ###################################################################
 #
 # Rebuilding Crotone

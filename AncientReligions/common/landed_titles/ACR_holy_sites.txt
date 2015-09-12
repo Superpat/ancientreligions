@@ -52,7 +52,7 @@ c_alexandria = {
 	holy_site = promethean_pagan
 }
 
-# site of a pythagorean academy
+# site of a pythagorean academy at crotone
 c_consenza ={
 	holy_site = promethean_pagan
 }
@@ -66,12 +66,17 @@ c_kartli = {
 # Thessalonike
 c_thessalonike = {
 	holy_site = promethean_pagan
+}
+
+# a mural honoring thetis was found here
+# and it spreads the sites around a bit
+c_antiocheia = {
 	holy_site = titan_pagan
 }
 
 # Athens is location of the Academy
 # and the Kronia festival
-c_athens = {
+c_atheniai = {
 	holy_site = promethean_pagan
 	holy_site = titan_pagan
 }
@@ -88,8 +93,8 @@ c_roma = {
 	holy_site = titan_pagan
 }
 
-# mythical entrance to Tartarus, 
-# location of an oracle
-c_epeiros = {
+# on the danube, known as "The Horn of Oceanus"
+# helps spread stuff around
+c_pecs = {
 	holy_site = titan_pagan
 }

@@ -149,9 +149,7 @@ k_aten_pagan = {
 	creation_requires_capital = yes
 	
 	allow = {
-		religion = aten_pagan
-		num_of_holy_sites = 3
-		piety = 500
+		always = no
 	}
 	
 	# Controls a religion
@@ -169,9 +167,7 @@ d_promethean_pagan = {
 	capital = 482 # Athens, location of Plato's Academy
 
 	allow = {
-		religion = promethean_pagan
-		num_of_holy_sites = 3
-		piety = 500
+		always = no
 	}
 	creation_requires_capital = yes
 

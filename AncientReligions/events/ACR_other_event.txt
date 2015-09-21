@@ -810,7 +810,7 @@ character_event = {
 # Promethean
 character_event = {
 	id = ancrel.9011
-	desc = ancrel.9010.desc
+	desc = ancrel.9011.desc
 	picture = GFX_evt_roman_temple
 	hide_from = yes
 

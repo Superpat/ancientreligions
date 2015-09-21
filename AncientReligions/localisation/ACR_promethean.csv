@@ -13,10 +13,10 @@ promethean_expansion_desc;Promethean rulers may, once per lifetime, invade a nei
 CB_NAME_EXPANSION;Expansion into [Title.GetBaseName];;;;;;;;;;;;;x
 WAR_NAME_EXPANSION;$ORDER$$FIRST_ADJ$ Expansion into $OTHER_TITLE$;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
-job_spiritual_promethean_pagan;Dáskalos;;;;;;;;;;;;;x
-city_job_spiritual_promethean_pagan;Dáskalos;;;;;;;;;;;;;x
-tribal_job_spiritual_promethean_pagan;Dáskalos;;;;;;;;;;;;;x
-nomad_job_spiritual_promethean_pagan;Dáskalos;;;;;;;;;;;;;x
+job_spiritual_promethean_pagan;Daskalos;;;;;;;;;;;;;x
+city_job_spiritual_promethean_pagan;Daskalos;;;;;;;;;;;;;x
+tribal_job_spiritual_promethean_pagan;Daskalos;;;;;;;;;;;;;x
+nomad_job_spiritual_promethean_pagan;Daskalos;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 d_promethean_pagan;First Academy;;;;;;;;;;;;;x
 d_promethean_pagan_adj;Academecian;;;;;;;;;;;;;x

@@ -76,7 +76,7 @@ spriteTypes = {
 		texturefile = "gfx\\event_pictures\ACR\theatre.tga"
 	}
 	spriteType = {
-		name = "GFX_evt_favorite_poet"
-		texturefile = "gfx\\event_pictures\ACR\the_favorite_poet.tga"
+		name = "GFX_evt_favourite_poet"
+		texturefile = "gfx\\event_pictures\ACR\the_favourite_poet.tga"
 	}
 }

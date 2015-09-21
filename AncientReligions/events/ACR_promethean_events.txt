@@ -1254,9 +1254,10 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 360
+		days = 540 # every vassal/courtier means another opportunity for the event to fire
+		           # so it needs to be rather rare
 		modifier = {
-			factor = 0.33
+			factor = 0.50
 			NOT = { has_character_flag = festival_event_happened }
 		}	
 		modifier = {
@@ -2264,7 +2265,8 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 270
+		days = 540 # rare, because it can happen to any of the liege's vassals
+		           # more vassals means more opportunities for the event to fire
 		modifier = {
 			factor = 0.33
 			liege = { NOT = { has_character_flag = festival_event_happened } }
@@ -2289,10 +2291,11 @@ character_event = {
 	is_triggered_only = yes
 
 	option = { # warn them and get out of the way
+		name = ancrel.3487.a
 		custom_tooltip = {
 			text = ancrel.3487.a.tt
-			FROM = {
-				character_event = { id = ancrel.3488 }
+			hidden_tooltip = {
+				FROM = { character_event = { id = ancrel.3488 } }
 			}
 		}
 		random = {
@@ -2300,11 +2303,12 @@ character_event = {
 			add_trait = wounded
 		}
 	}
-	option = { # run, like a craven
+	option = { # run, like a coward
+		name = ancrel.3487.b
 		custom_tooltip = {
 			text = ancrel.3487.b.tt
-			FROM = {
-				character_event = { id = ancrel.3489 }
+			hidden_tooltip = {
+				FROM = { character_event = { id = ancrel.3489 }	}
 			}
 		}
 		random = {
@@ -2313,9 +2317,12 @@ character_event = {
 		}
 	}
 	option = { # get all heroic and push them out of the way
+		ancrel.3487.c
 		custom_tooltip = {
 			text = ancrel.3487.c.tt
-			FROM = { character_event = { id = ancrel.3490 } }
+			hidden_tooltip = {
+				FROM = { character_event = { id = ancrel.3490 } }
+			}
 		}
 		random_list = {
 			60 = {
@@ -2405,7 +2412,7 @@ character_event = {
 character_event = {
 	id = ancrel.3491
 	desc = ancrel.3491.desc
-	picture = GFX_evt_favorite_poet
+	picture = GFX_evt_favourite_poet
 
 	trigger = {
 		has_character_modifier = holding_unbinding_festival

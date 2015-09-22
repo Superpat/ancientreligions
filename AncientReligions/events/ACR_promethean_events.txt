@@ -297,7 +297,7 @@ character_event = {
 	option = { # just rent out a theatre in the city
 		name = ancrel.3451.a
 		scaled_wealth = -0.05
-		prestige = -50
+		prestige = -100
 
 		random = {
 			chance = 10
@@ -313,7 +313,6 @@ character_event = {
 	option = { # build one of wood in the city square
 		name = ancrel.3451.b
 		scaled_wealth = -0.10
-		prestige = 50
 
 		set_character_flag = unbinding_middle_open
 	}
@@ -321,6 +320,7 @@ character_event = {
 	option = { # build a grand stage of real stone!
 		name = ancrel.3451.c
 		scaled_wealth = -0.20
+		prestige = 100
 
 		random = {
 			chance = 10
@@ -764,10 +764,6 @@ character_event = {
 			NOT = { has_character_flag = festival_event_happened }
 		}	
 		modifier = {
-			factor = 1.5
-			has_character_flag = festival_event_happened
-		}			
-		modifier = {
 			factor = 0.75
 			has_character_flag = unbinding_cheap_festivities
 		}
@@ -814,10 +810,6 @@ character_event = {
 			factor = 0.33
 			NOT = { has_character_flag = festival_event_happened }
 		}	
-		modifier = {
-			factor = 1.5
-			has_character_flag = festival_event_happened
-		}			
 		modifier = {
 			factor = 1.25
 			has_character_flag = unbinding_cheap_festivities
@@ -1099,7 +1091,6 @@ character_event = {
 				}
 			}
 			is_valid_attraction = ROOT
-			NOT = { is_liege_of = ROOT } # different event for vassals
 			NOT = { has_character_flag = ancrel_remove_firedancers }
 		}
 	}
@@ -1112,7 +1103,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 360
+		days = 180
 
 		modifier = {
 			factor = 0.33
@@ -1204,7 +1195,7 @@ character_event = {
 		capital_scope = {
 			add_province_modifier = {
 				name = peasant_unrest
-				days = 365
+				days = 180
 			}
 		}
 	}
@@ -1218,7 +1209,7 @@ character_event = {
 		capital_scope = {
 			add_province_modifier = {
 				name = peasant_unrest
-				days = 180
+				days = 90
 			}
 		}
 	}
@@ -1228,46 +1219,57 @@ character_event = {
 	}
 }
 
-# a vassal has been burned by fire dancer oil! (vassal)
+# a vassal is burned by fire dancer oil!
 character_event = {
-	id = ancrel.3465
-	desc = ancrel.3465.desc
-	picture = GFX_evt_firedancers
+	id = ancrel.3492
+	hide_window = yes
 
 	trigger = { 
-		liege = {
-			has_character_modifier = holding_unbinding_festival
-			OR = {
-				NOT = { has_character_flag = festival_event_happened }
-				had_character_flag = {
-					flag = festival_event_happened
-					days = 3
-				}
+		has_character_modifier = holding_unbinding_festival
+		OR = {
+			NOT = { has_character_flag = festival_event_happened }
+			had_character_flag = {
+				flag = festival_event_happened
+				days = 3
 			}
-			NOT = { has_character_flag = ancrel_remove_firedancers }
 		}
+		NOT = { has_character_flag = ancrel_remove_firedancers }
 	}
 
 	immediate = {
-		liege = { set_character_flag = festival_event_happened }
-		add_trait = maimed
+		set_character_flag = festival_event_happened
+		random_vassal = {
+			character_event = { id = ancrel.3465 days = 0 }
+		}
 	}
 
 	mean_time_to_happen = {
-		days = 540 # every vassal/courtier means another opportunity for the event to fire
-		           # so it needs to be rather rare
+		days = 270
 		modifier = {
 			factor = 0.50
 			NOT = { has_character_flag = festival_event_happened }
 		}	
 		modifier = {
 			factor = 0.75
-			liege = { has_character_flag = unbinding_cheap_festivities }
+			has_character_flag = unbinding_cheap_festivities
 		}
 		modifier = {
 			factor = 1.25
-			liege = { has_character_flag = unbinding_grand_festivities }
+			has_character_flag = unbinding_grand_festivities
 		}
+	}
+}
+
+# a vassal has been burned by fire dancer oil! (vassal)
+character_event = {
+	id = ancrel.3465
+	desc = ancrel.3465.desc
+	picture = GFX_evt_firedancers
+
+	is_triggered_only = yes
+
+	immediate = {
+		add_trait = injured
 	}
 
 	option = { # demand the firedancers are punished!
@@ -1351,7 +1353,7 @@ character_event = {
 		capital_scope = {
 			add_province_modifier = {
 				name = peasant_unrest
-				days = 365
+				days = 180
 			}
 		}
 	}
@@ -1365,7 +1367,7 @@ character_event = {
 		capital_scope = {
 			add_province_modifier = {
 				name = peasant_unrest
-				days = 180
+				days = 90
 			}
 		}
 		random = {
@@ -1407,7 +1409,7 @@ character_event = {
 		capital_scope = {
 			add_province_modifier = {
 				name = peasant_unrest
-				days = 365
+				days = 180
 			}
 		}
 	}
@@ -1425,7 +1427,7 @@ character_event = {
 		capital_scope = {
 			add_province_modifier = {
 				name = peasant_unrest
-				days = 180
+				days = 90
 			}
 		}
 	}
@@ -2239,34 +2241,31 @@ character_event = {
 	}
 }
 
-# a statue is about to fall on you and a vassal! (vassal)
+# a statue is about to fall on liege and vassal
 character_event = {
-	id = ancrel.3486
+	id = ancrel.3493
 	hide_window = yes
 
 	trigger = {
-		liege = {
-			has_character_modifier = holding_unbinding_festival
-			OR = {
-				NOT = { has_character_flag = festival_event_happened }
-				had_character_flag = {
-					flag = festival_event_happened
-					days = 3
-				}
+		has_character_modifier = holding_unbinding_festival
+		OR = {
+			NOT = { has_character_flag = festival_event_happened }
+			had_character_flag = {
+				flag = festival_event_happened
+				days = 3
 			}
 		}
 	}
 
 	immediate = {
-		liege = { 
-			set_character_flag = festival_event_happened
-			character_event = { id = ancrel.3487 }
+		set_character_flag = festival_event_happened
+		random_vassal = { # ping the vassal
+			character_event = { id = ancrel.3486 }
 		}
 	}
 
 	mean_time_to_happen = {
-		days = 540 # rare, because it can happen to any of the liege's vassals
-		           # more vassals means more opportunities for the event to fire
+		days = 270
 		modifier = {
 			factor = 0.33
 			liege = { NOT = { has_character_flag = festival_event_happened } }
@@ -2281,6 +2280,21 @@ character_event = {
 		}
 	}
 }
+
+# falling statue, ping off the vassal
+character_event = {
+	id = ancrel.3486
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		liege = {
+			character_event = { id = ancrel.3487 }
+		}
+	}
+}
+
 
 # a statue is about to fall on you and a vassal! (liege)
 character_event = {
@@ -2448,7 +2462,7 @@ character_event = {
 	option = {
 		name = ancrel.horrible
 		capital_scope = {
-			add_province_modifier = { name = peasant_unrest duration = 720 }
+			add_province_modifier = { name = peasant_unrest duration = 180 }
 		}
 	}
 }

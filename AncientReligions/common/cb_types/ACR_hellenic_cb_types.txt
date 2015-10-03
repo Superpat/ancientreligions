@@ -577,9 +577,6 @@ promethean_expansion = {
 			religion = promethean_pagan
 			higher_tier_than = COUNT
 			FROM = { NOT = { religion = promethean_pagan } }
-		}
-		
-		ROOT = {
 			NOT = { is_liege_or_above = FROM }
 		}
 	}
@@ -645,12 +642,12 @@ promethean_expansion = {
 						remove_province_modifier = depopulated_province
 						add_province_modifier = { name = depopulated_province duration = 10950 }
 					}
-					vassalize_or_take_under_title_destroy_duchies = {
-						title = PREV
-						enemy = FROM
-						is_crusade = yes # Even if the title holder is not participating in the war, gain holdings occupied by all Crusade participants
-						type = invasion
-					}
+				}
+				vassalize_or_take_under_title_destroy_duchies = {
+					title = PREV
+					enemy = FROM
+					is_crusade = yes # Even if the title holder is not participating in the war, gain holdings occupied by all Crusade participants
+					type = invasion
 				}
 			}
 		}

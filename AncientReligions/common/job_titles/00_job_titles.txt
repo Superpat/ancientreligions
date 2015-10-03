@@ -24,14 +24,7 @@ job_chancellor = {
 				OR = {
 					is_female = no
 					liege = {
-						OR = {
-							religion = cathar
-							religion = messalian
-							religion = celtic_pagan
-							religion = celtic_pagan_reformed
-							religion = promethean_pagan
-							religion = messalian
-						}
+						feminist_trigger = yes
 						religion = ROOT
 					}
 				}
@@ -93,14 +86,7 @@ job_marshal = {
 				OR = {
 					is_female = no
 					liege = {
-						OR = {
-							religion = cathar
-							religion = messalian
-							religion = celtic_pagan
-							religion = celtic_pagan_reformed
-							religion = promethean_pagan
-							religion = messalian
-						}
+						feminist_trigger = yes
 						religion = ROOT
 					}
 				}
@@ -149,14 +135,7 @@ job_treasurer = {
 				OR = {
 					is_female = no
 					liege = {
-						OR = {
-							religion = cathar
-							religion = messalian
-							religion = celtic_pagan
-							religion = celtic_pagan_reformed
-							religion = promethean_pagan
-							religion = messalian
-						}
+						feminist_trigger = yes
 						religion = ROOT
 					}
 				}
@@ -210,14 +189,7 @@ job_spymaster = {
 							religion_group = pagan_group
 						}
 					}
-					AND = {
-						religion = cathar
-						liege = { religion = cathar }
-					}
-					AND = {
-						religion = messalian
-						liege = { religion = messalian }
-					}
+					feminist_trigger = yes
 				}
 				is_adult = yes
 			}

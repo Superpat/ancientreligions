@@ -82,6 +82,7 @@ d_celtic_pagan_reformed = {
 	
 	# Always exists
 	landless = yes
+	primary = yes
 	
 	allow = {
 		religion = celtic_pagan_reformed
@@ -176,6 +177,7 @@ d_promethean_pagan = {
 
 	# Always exists
 	landless = yes
+	primary = yes
 
 	dignity = 100
 	controls_religion = promethean_pagan

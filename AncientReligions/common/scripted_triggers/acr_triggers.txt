@@ -1,0 +1,26 @@
+#	Example:
+# 
+#	example_trigger = {
+#		year = 1066
+#		num_of_spouses = 2
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		example_trigger = yes
+#	}
+#
+# Naming convention:  xxxx_trigger
+#
+
+feminist_trigger = {
+	OR = {
+		religion = celtic_pagan_reformed
+		religion = celtic_pagan
+		religion = promethean_pagan
+		religion = messalian
+		religion = cathar
+	}
+}

@@ -369,7 +369,7 @@ character_event = {
 	}
 }
 
-# Who Plays Prometheus?
+# Opening Ceremony - Who Plays Prometheus?
 character_event = {
 	id = ancrel.3453
 	desc = ancrel.3453.desc
@@ -490,9 +490,7 @@ character_event = {
 		name = ancrel.3454.a
 		trigger = { # you can't play Prometheus and Heracles at the same time
 			NOT = {
-				event_target:festival_prometheus = {
-					character = ROOT
-				}
+				character = event_target:festival_prometheus
 			}
 		}
 		save_event_target_as = festival_heracles
@@ -603,29 +601,21 @@ narrative_event = {
 
 	desc = { # the ruler is Prometheus
 		trigger = {
-			event_target:festival_prometheus = {
-				character = ROOT
-			}
+			character = event_target:festival_prometheus
 		}
 		text = ancrel.3455.desc.prometheus
 	}
 	desc = { # the ruler is Heracles
 		trigger = {
-			event_target:festival_heracles = {
-				character = ROOT
-			}
+			character = event_target:festival_heracles
 		}
 		text = ancrel.3455.desc.heracles
 	}
 	desc = { # the ruler is neither
 		trigger = {
-			NOT = {
-				event_target:festival_heracles = {
-					character = ROOT
-				}
-				event_target:festival_prometheus = {
-					character = ROOT
-				}
+			NOR = {
+				character = event_target:festival_heracles
+				character = event_target:festival_prometheus
 			}
 		}
 		text = ancrel.3455.desc.other
@@ -885,19 +875,19 @@ character_event = {
 		piety = 25
 
 		random_list = {
-			20 = {
-				add_trait = stressed
-				hidden_tooltip = {
-   					character_event = {
-  						id = 38282 #Notify Stressed
-   					}
-   				}
-			}
 			10 = {
 				add_trait = content
 				hidden_tooltip = {
    					character_event = {
   						id = 38279 #Notify Content
+   					}
+   				}
+			}
+			20 = {
+				add_trait = stressed
+				hidden_tooltip = {
+   					character_event = {
+  						id = 38282 #Notify Stressed
    					}
    				}
 			}
@@ -1750,14 +1740,14 @@ character_event = {
 		name = ancrel.3474.a
 		prestige = -10
 		random_list = {
+			80 = {
+				#do nothing
+			}
 			10 = {
 				add_trait = craven
 			}
 			10 = {
 				add_trait = stressed
-			}
-			80 = {
-				#do nothing
 			}
 		}
 	}
@@ -2338,17 +2328,17 @@ character_event = {
 			}
 		}
 		random_list = {
-			60 = {
-				add_trait = wounded
-			}
-			20 = {
-				add_trait = maimed
+			10 = {
+				#do nothing
 			}
 			10 = {
 				death = { death_reason = death_accident }
 			}
-			10 = {
-				#do nothing
+			20 = {
+				add_trait = maimed
+			}
+			60 = {
+				add_trait = wounded
 			}
 		}
 		add_trait = brave
@@ -2366,14 +2356,14 @@ character_event = {
 	option = {
 		name = ancrel.3488.a
 		random_list = {
-			30 = {
-				add_trait = wounded
+			5 = {
+				death = { death_reason = death_accident }
 			}
 			15 = {
 				add_trait = maimed
 			}
-			5 = {
-				death = { death_reason = death_accident }
+			30 = {
+				add_trait = wounded
 			}
 			50 = {
 				#do nothing
@@ -2393,14 +2383,14 @@ character_event = {
 	option = {
 		name = ancrel.3489.a
 		random_list = {
-			50 = {
-				add_trait = wounded
+			20 = {
+				death = { death_reason = death_accident }
 			}
 			30 = {
 				add_trait = maimed
 			}
-			20 = {
-				death = { death_reason = death_accident }
+			50 = {
+				add_trait = wounded
 			}
 		}
 		opinion = { modifier = opinion_hate who = FROM duration = -1 }

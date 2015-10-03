@@ -633,14 +633,14 @@ promethean_expansion = {
 		custom_tooltip = {
 			text = tribal_invasion_succ_tip
 			hidden_tooltip = {
-				ROOT = {
+				FROM = {
 					any_realm_province = {
 						limit = {
 					    	any_province_holding = {
 					        	is_occupied = yes
-					        	controlled_by = FROM
+					        	controlled_by = ROOT
 					     	}
-					     	NOT = { religion = PREV }
+					     	NOT = { religion = promethean_pagan }
 						}
 						remove_province_modifier = depopulated_province
 						add_province_modifier = { name = depopulated_province duration = 10950 }
@@ -711,18 +711,6 @@ promethean_expansion = {
 						10 = { give_nickname = nick_the_bold }
 					}
 				}
-			}
-			
-			if = {
-				limit = { 
-					has_dlc = "Legacy of Rome"
-					OR = { 
-						has_landed_title = e_byzantium
-						has_landed_title = e_roman_empire
-					}
-					religion_group = christian
-				}
-				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
 		}
 		any_defender = {

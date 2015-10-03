@@ -12,7 +12,7 @@ General:
 
 Celtic Paganism:
 - Tweaked St Kilda event chain to be more likely.
-- Fixed issue in the event where a son or brother asks to join the red dragons the buttons would be the labeled backwards.
+- Fixed issue in the event where a son or brother asks to join the red dragons where the buttons would be labeled backwards.
 - Galloway is no longer a holy site. Dijon takes its place. This is to represent the Fountains of Sequana, a major place of worship for the Continental Celts. Also to make reformation a little harder. It was way too easy to start as Gwynned and take Dublin and Galloway and do some raiding to get up MA.
 - Fixed an issue caused by a Druidic training event calling a Sons of Gwydion event.
 - The Wolf Tails will still form if you somehow manage to Reform Celtic before converting even a single province.
@@ -20,7 +20,7 @@ Celtic Paganism:
 - In the mercenary spirit of their ancient forebears, The Wolf Tails can be hired by anyone who has the coin.
 
 Hellenic:
-- Added a Hellenic revival event chain if the Mani Peninsula (Monemvasia) is in the realm, and an homage to the 30 pages thread about that on the forum.
+- Added a Hellenic revival event chain if the Mani Peninsula (Monemvasia) is in the realm, as an homage to the 30 pages thread about that on the forum.
 - Tweaked Studied the classics event chain:
 -- Made it more likely to be taken by an AI courtier of the player
 -- Added low possibility for Hellenic heresies
@@ -35,7 +35,8 @@ Promethean:
 -- Thessalonike; Common holy site for Hellenic and Promethean, to create conflict.
 -- Athens; Site of the First Academy and point of conflict between Titan Cultists and Hellenes.
 - Prometheans may now Restore the First Academy via decision, making the Philosophos of Piraeus the Scholarch of the First Academy.
-- Prometheans can Rebuild the Academy of Crotone, the site of an ancient Pythagorean academy and a holy site of Prometheanism. This decision is similar in spirit to the Restore Luxor decision and event chain.
+- Prometheans can Rebuild the Academy of Crotone, the site of an ancient Pythagorean academy.
+-- +20% MA for Prometheanism for 30 years.
 - Prometheans can Organize the Men of Steel, a Holy Order of the faith. The culture of the holy order matches the organizer.
 - There is now an Unbinding Festival decision and event chain that Prometheans can do once a year. It is a celebration of the, you guessed it, Unbinding of Prometheus from his prison on Mt Kazbek.
 -- The event chain includes lots of small random events inspired by vanilla and VIET.

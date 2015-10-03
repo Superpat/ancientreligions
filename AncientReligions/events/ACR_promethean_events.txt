@@ -1014,6 +1014,15 @@ character_event = {
 			NOT = { spouse = { character = PREV } } # different event for spouses, since they may not be a vassal
 			NOT = { has_character_flag = ancrel_remove_firedancers }
 		}
+		is_valid_attraction = liege
+	}
+
+	immediate = {
+		liege = {
+			set_character_flag = festival_event_happened
+			set_character_flag = festival_lover
+			character_event = { id = ancrel.3461 }
+		}
 	}
 
 	mean_time_to_happen = {
@@ -1045,6 +1054,12 @@ character_event = {
 			factor = 1.5
 			liege = {
 				trait = chaste
+			}
+		}
+		modifier = {
+			factor = 2
+			liege = {
+				has_character_modifier = festival_lover
 			}
 		}
 		modifier = {
@@ -1083,17 +1098,19 @@ character_event = {
 			is_valid_attraction = ROOT
 			NOT = { has_character_flag = ancrel_remove_firedancers }
 		}
+		is_valid_attraction = spouse
 	}
 
 	immediate = {
 		spouse = {
 			set_character_flag = festival_event_happened
+			set_character_flag = festival_lover
 			character_event = { id = ancrel.3461 }
 		}
 	}
 
 	mean_time_to_happen = {
-		days = 180
+		days = 360
 
 		modifier = {
 			factor = 0.33
@@ -1121,6 +1138,12 @@ character_event = {
 			factor = 1.5
 			spouse = {
 				trait = chaste
+			}
+		}
+		modifier = {
+			factor = 2
+			liege = {
+				has_character_modifier = festival_lover
 			}
 		}
 		modifier = {

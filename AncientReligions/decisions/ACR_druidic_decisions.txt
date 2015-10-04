@@ -156,7 +156,7 @@ decisions = {
 			scaled_wealth = 0.10
 			prisoner = no
 			learning = 8
-			NOT = {trait = zealous}
+			NOT = { trait = zealous }
 			any_courtier = {
 				religion = celtic_pagan
 				prisoner = no

@@ -1014,7 +1014,6 @@ character_event = {
 			NOT = { spouse = { character = PREV } } # different event for spouses, since they may not be a vassal
 			NOT = { has_character_flag = ancrel_remove_firedancers }
 		}
-		is_valid_attraction = liege
 	}
 
 	immediate = {
@@ -1059,7 +1058,7 @@ character_event = {
 		modifier = {
 			factor = 2
 			liege = {
-				has_character_modifier = festival_lover
+				has_character_flag = festival_lover
 			}
 		}
 		modifier = {
@@ -1098,7 +1097,6 @@ character_event = {
 			is_valid_attraction = ROOT
 			NOT = { has_character_flag = ancrel_remove_firedancers }
 		}
-		is_valid_attraction = spouse
 	}
 
 	immediate = {
@@ -2021,8 +2019,9 @@ character_event = {
 		}
 	}
 
-	option = { # i got nothin'
+	option = { # git a wee bit 'o piety
 		name = ancrel.3481.a
+		piety = 10
 	}
 }
 

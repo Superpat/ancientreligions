@@ -3,13 +3,13 @@ opinion_patron = {
 }
 
 ancrel_honored_me = {
-	opinion = 30
+	opinion = 15
 	months = 60
 }
 
 ancrel_dissapointed = {
-	opinion = -10
-	months = 24
+	opinion = -15
+	months = 60
 }
 
 ancrel_jealous = {

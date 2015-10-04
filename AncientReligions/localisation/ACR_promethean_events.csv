@@ -23,7 +23,7 @@ ancrel.3414.desc;Word has reached you that the Ancient Academy of Crotone, locat
 ancrel.3414.a;Glory to the Brothers!;;;;;;;;;;;;;x
 ancrel.3414.b;This is troubling...;;;;;;;;;;;;;x
 # Unbinding Festival Events ;;;;;;;;;;;;;;x
-ancrel.3450.desc;The Unbinding Festival is a time for all Prometheans to come together and celebrate their shared philosophy. To put aside their differences and celebrate the release of Prometheus, the Enlightened One. Soon people from all across [Root.PrimaryTitle.GetBaseName] will be traveling to [Root.Capital.GetBaseName] for your festival.;;;;;;;;;;;;;x
+ancrel.3450.desc;The Unbinding Festival is a time for all Prometheans to come together and celebrate their shared philosophy. To put aside their differences and celebrate the release of Prometheus, the Enlightened One. Soon people from all across [Root.PrimaryTitle.GetBaseName] will be traveling to the capitol for your festival.;;;;;;;;;;;;;x
 ancrel.3450.a;We must begin preperations at once!;;;;;;;;;;;;;x
 ancrel.3451.desc;The first decision you must make is how much to spend on the opening ceremony? Obviously, the more expensive the ceremony, the prestigious it will be for you.;;;;;;;;;;;;;x
 ancrel.3451.a;Lets not waste, simply rent a theatre.;;;;;;;;;;;;;x
@@ -71,7 +71,7 @@ ancrel.3465.b.tt;Your liege hears your request;;;;;;;;;;;;;x
 ancrel.3466.desc;Your vassal, [From.GetTitledName], was involved in an accident with some firedancers and has been maimed! [From.GetSheHe] demands they be punished!;;;;;;;;;;;;;x
 ancrel.3466.a;Execute all of the firedancers!;;;;;;;;;;;;;x
 ancrel.3466.b;Remove the firedancers from the city, we can't have accidents like this.;;;;;;;;;;;;;x
-ancrel.3466.c;[From.GetSheHe]'s overreacting, it was just an accident.;;;;;;;;;;;;;x
+ancrel.3466.c;You're overreacting, it was just an accident.;;;;;;;;;;;;;x
 ancrel.3467.desc;One of your vassals, [From.GetTitledName], was maimed by a firedancer during an act. It appears to be an accident, and [From.GetFirstName] is requesting that you show leniency in light of this fact.;;;;;;;;;;;;;x
 ancrel.3467.a;Leniency? Nonesense! Execute them all!;;;;;;;;;;;;;x
 ancrel.3467.b;Fine, I will merely imprison them.;;;;;;;;;;;;;x
@@ -109,7 +109,7 @@ ancrel.3479.a;I was born for the stage!;;;;;;;;;;;;;x
 ancrel.3480.desc;A [Root.Religion.GetPriestTitle] is reciting the story of Pandora and the Jar. Pandora's gift from Prometheus was curiosity, a laudable trait. But Zeus used this as a weapon, for he knew that none of the gods had given her caution. So he gave Pandora a great jar, within which was all the troubles man now suffers. Curiosity overcame Pandora, and she opened the jar. Epimetheus helped her understand her mistake, and so he gave her caution. Epimetheus' gift to us is the ability to learn from our mistakes and grow beyond what the gods give us.;;;;;;;;;;;;;x
 ancrel.3480.a;A wonderous gift, to be sure.;;;;;;;;;;;;;x
 ancrel.3480.b;A useless gift, for I have no flaws.;;;;;;;;;;;;;x
-ancrel.3481.desc;While roaming the square, you come upon a [Root.Religion.GetPriestTitle] reciting the tale of Duecalion's Flood, and they are nearly finished.\n"And they did as his father Prometheus instructed him and cast stones over his shoulder. Those cast by Deucalion sprouted into men, and those cast by Pyrrha became women. It is from these, and from Prometheus-born Duecalion and Epimetheus-born Pyrrha, that we all descend. And it is the bits of metal ore in those stones that gave us our talents and determine our castes.;;;;;;;;;;;;;x
+ancrel.3481.desc;While roaming the square, you find a [Root.Religion.GetPriestTitle] reciting the tale of Duecalion's Flood, they are nearly finished. "And they did as his father Prometheus instructed and cast stones over their shoulders. Duecalion's sprouted into men, and Pyrrha's into women. It is from these, and from Prometheus-born Duecalion and Epimetheus-born Pyrrha, that we all descend. And the metal ore in those stones gave us our talents and determine our castes.;;;;;;;;;;;;;x
 ancrel.3481.a;I always liked that story...;;;;;;;;;;;;;x
 ancrel.3482.desc;As you wander through the fair you come upon a [Root.Religion.GetPriestTitle] speaking of Enlightenment. They talk of moving beyond the shadow of this world and finding Oneness, true enlightenment where this world will seem as real as a child's drawing does to us.;;;;;;;;;;;;;x
 ancrel.3482.a;I hope to reach CHIM someday...;;;;;;;;;;;;;x

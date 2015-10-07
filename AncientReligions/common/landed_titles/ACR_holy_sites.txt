@@ -84,8 +84,8 @@ c_thessalia = {
 c_roma = {
 	holy_site = titan_pagan
 }
-# on the danube, known as "The Horn of Oceanus"
+# location of the Colossus, a giant statue of Helios
 # helps spread stuff around
-c_pecs = {
+c_rhodos = {
 	holy_site = titan_pagan
 }

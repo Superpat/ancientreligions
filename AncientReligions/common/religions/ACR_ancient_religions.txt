@@ -39,8 +39,8 @@ pagan_group = {
 	titan_pagan = {
 		graphical_culture = westerngfx
 
-		icon = 62
-		heresy_icon = 37
+		icon = 37
+		heresy_icon = 62
 		parent = hellenic_pagan
 
 		color = { 0.6 0.2 0.2 }
@@ -81,8 +81,8 @@ pagan_group = {
 		ai_convert_other_group = 2 # always try to convert
 		ai_convert_same_group = 2 # always try to convert
 
-		icon = 62
-		heresy_icon = 37
+		icon = 37
+		heresy_icon = 62
 		parent = hellenic_pagan
 
 		color = { 0.6 0 0 }
@@ -197,7 +197,7 @@ pagan_group = {
 		high_god_name = GOD_LUGH
 
 		god_names = {
-			GOD_ANGUS GOD_MANANNAN GOD_DAGHDA GOD_LUGH GOD_MACHA GOD_DANA GOD_NUADA GOD_HORNED_ONE GOD_CERNUNNOS
+			GOD_ANGUS GOD_MANANNAN GOD_DAGHDA GOD_LUGH GOD_MACHA GOD_DANA GOD_NUADA GOD_HORNED_ONE GOD_CERNNUNOS
 		}
 		evil_god_names = {
 			THE_FOMORIANS EVIL_BALOR EVIL_BRES GOD_CAILLEACH
@@ -290,8 +290,8 @@ pagan_group = {
 		
 		pre_reformed = yes
 
-		icon = 67
-		heresy_icon = 66
+		icon = 66
+		heresy_icon = 67
 		
 		ai_convert_other_group = 2 # always try to convert
 		ai_convert_same_group = 2 # always try to convert

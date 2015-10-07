@@ -24,3 +24,31 @@ feminist_trigger = {
 		religion = cathar
 	}
 }
+
+is_attracted_to_prev = {
+	is_valid_attraction = PREV
+	OR = {
+		AND = {
+			is_male = yes
+			OR = {
+				AND = {
+					trait = homosexual
+					PREV = { is_female = no }
+				}
+				PREV = { is_female = yes }
+			}
+		}
+		AND = {
+			is_female = yes
+			OR = {
+				AND = {
+					trait = homosexual
+					PREV = { is_female = yes }
+				}
+				PREV = { is_female = no }
+			}
+		}
+	}
+
+	opinion = { who = PREV value = 30 }
+}

@@ -311,10 +311,11 @@ decisions = {
 			age = 16
 			prisoner = no
 
-			c_atheniai = { holder = ROOT }
-			b_piraeaus = { 
+			completely_controls = c_atheniai
+			b_piraeaus = {
 				owner = {
 					religion = promethean_pagan
+					is_theocracy = yes
 				}
 			}
 			piety = 500
@@ -439,10 +440,8 @@ decisions = {
 			any_demesne_title = {
 				is_occupied = no
 			}
-			OR = {
-				month = 6			
-				NOT = { month = 9 }
-			}
+			month = 5
+			NOT = { month = 8 }
 			scaled_wealth = 0.1
 			any_courtier = {
 				has_job_title = job_spiritual
@@ -493,6 +492,7 @@ decisions = {
 			religion = promethean_pagan
 			primary_title = { higher_real_tier_than = DUKE }
 			d_promethean_pagan = { has_holder = yes } # There must be a Scholarch of the First Academy
+			d_men_of_steel = { has_holder = no }
 		}
 		allow = {
 			age = 16
@@ -528,6 +528,9 @@ decisions = {
 				wealth = 200
 				piety = 300
 				prestige = 100
+				narrative_event = {
+					id = ancrel.3550 # bounce the event to have the Grandmaster as root, ruler as from
+				}
 				create_character = {
 					random_traits = yes
 					dynasty = random
@@ -599,10 +602,6 @@ decisions = {
 					culture = ROOT
 					female = yes
 					age = 17
-				}
-
-				narrative_event = {
-					id = ancrel.3550 # bounce the event to have the Grandmaster as root, ruler as from
 				}
 			}
 		}

@@ -38,10 +38,10 @@ Promethean:
 - Prometheans can Rebuild the Academy of Crotone, the site of an ancient Pythagorean academy.
 -- +20% MA for Prometheanism for 30 years.
 - Prometheans can Organize the Men of Steel, a Holy Order of the faith. The culture of the holy order matches the organizer.
-- There is now an Unbinding Festival decision and event chain that Prometheans can do once a year. It is a celebration of the, you guessed it, Unbinding of Prometheus from his prison on Mt Kazbek.
+- There is now an Unbinding Festival decision and event chain that Prometheans can do once a year. It is a celebration of the Unbinding of Prometheus from his prison on Mt Kazbek.
 -- The event chain includes lots of small random events inspired by vanilla and VIET.
 -- If you're lucky you may get a skilled courtier. If you are unlucky, you may be injured, or even die!
-- Prometheans now have access to an invasion CB called Expansion. This CB is partly based on concepts espoused in Plato's Republic. Plato asserted that The Republic would ocassionaly need to expand, at the expense of neighboring realms, in order to grow and prosper.
+- Prometheans now have access to an invasion CB called Expansion. It is inspired partially by Plato's Republic.
 -- Conquered provinces suffer from a "Depopulated" modifier for 30 years after the invasion, making it difficult to hold but more likely to convert culture and religion to the top liege.
 -- It is a once per lifetime Kingdom Level CB.
 
@@ -51,7 +51,7 @@ Titan Cult:
 -- Antioch; because of a mosaic of/dedicated to Tethys. Also it spreads the sites out.
 -- Athens; Location of the Kronia festival and point of conflict with Prometheans and Hellenes.
 -- Thessalia; location of Mt Othrys, the Titans capitol during the Titanomachy (basically the Titan Olympus).
--- Pecs; Is along the Danube, which was called "The Horn of Oceanus" by Apollonius of Rhodes. It's also far away from the other holy sites.
+-- Rhodes; Once held the Colossus, a massive statue to the titan Helios.
 - The Sickles are a holy order that can be created by Titan Cultists. The culture of the holy order matches the organizer.
 
 Kemetic:

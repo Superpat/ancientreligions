@@ -378,10 +378,6 @@ character_event = {
 
 	is_triggered_only = yes
 
-	immediate = {
-		character_event = { id = ancrel.3454 days = 1 }
-	}
-
 	option = { #play Prometheus yourself
 		name = ancrel.3453.a
 		save_event_target_as = festival_prometheus
@@ -394,6 +390,8 @@ character_event = {
  		hidden_tooltip = { # inform the priest
  			job_spiritual = { character_event = { id = ancrel.3547 } }
  		}
+
+ 		character_event = { id = ancrel.3454 days = 1 } # next decision
 	}
 
 	option = { #have your Court Priest do it
@@ -412,6 +410,8 @@ character_event = {
 		hidden_tooltip = { #inform the priest
 			job_spiritual = { character_event = { id = ancrel.3548 } }
 		}
+
+ 		character_event = { id = ancrel.3454 days = 1 } # next decision
 	}
 
 	option = { #random pious vassal
@@ -441,6 +441,8 @@ character_event = {
  			event_target:festival_prometheus = { character_event = { id = ancrel.3548 } }
  			job_spiritual = { character_event = { id = ancrel.3546 } }
  		}
+
+ 		character_event = { id = ancrel.3454 days = 1 } # next decision
 	}
 
 	option = { #totally random vassal, because apparently there is a lack of piety in your realm
@@ -470,6 +472,8 @@ character_event = {
  			event_target:festival_prometheus = { character_event = { id = ancrel.3548 } }
  			job_spiritual = { character_event = { id = ancrel.3546 } }
  		}
+
+ 		character_event = { id = ancrel.3454 days = 1 } # next decision
 	}
 }
 
@@ -481,10 +485,6 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 
 	is_triggered_only = yes
-
-	immediate = {
-		narrative_event = { id = ancrel.3455 days = 1 }
-	}
 
 	option = { #play Heracles yourself
 		name = ancrel.3454.a
@@ -504,6 +504,8 @@ character_event = {
 				character_event = { id = ancrel.3544 }
 			}
 		}
+
+		narrative_event = { id = ancrel.3455 days = 1 } # the opening ceremony!
 	}
 
 	option = { #have your Marshal do it
@@ -524,6 +526,8 @@ character_event = {
 				character_event = { id = ancrel.3545 }
 			}
 		}
+
+		narrative_event = { id = ancrel.3455 days = 1 } # the opening ceremony!
 	}
 
 	option = { #random prestigous vassal
@@ -557,6 +561,8 @@ character_event = {
 				character_event = { id = ancrel.3543 }
 			}
 		}
+
+		narrative_event = { id = ancrel.3455 days = 1 } # the opening ceremony!
 	}
 
 	option = { #totally random vassal, because apparently there is a lack of prestige in your realm
@@ -589,10 +595,12 @@ character_event = {
 				character_event = { id = ancrel.3543 }
 			}
 		}
+
+		narrative_event = { id = ancrel.3455 days = 1 } # the opening ceremony!
 	}
 }
 
-# Opening Ceremony Takes Place! (liege)
+# Opening Ceremony (liege)
 narrative_event = {
 	id = ancrel.3455
 	title = ancrel.unbinding_prometheus
@@ -747,12 +755,8 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 360
+		days = 480
 		
-		modifier = {
-			factor = 0.33
-			NOT = { has_character_flag = festival_event_happened }
-		}	
 		modifier = {
 			factor = 0.75
 			has_character_flag = unbinding_cheap_festivities
@@ -1010,8 +1014,8 @@ character_event = {
 					days = 3
 				}
 			}
-			is_valid_attraction = ROOT
-			NOT = { spouse = { character = PREV } } # different event for spouses, since they may not be a vassal
+			is_attracted_to_prev = yes
+			NOT = { spouse = { character = ROOT } } # different event for spouses, since they may not be a vassal
 			NOT = { has_character_flag = ancrel_remove_firedancers }
 		}
 	}
@@ -1027,10 +1031,6 @@ character_event = {
 	mean_time_to_happen = {
 		days = 360
 
-		modifier = {
-			factor = 0.33
-			NOT = { has_character_flag = festival_event_happened }
-		}
 		modifier = {
 			factor = 0.75
 			liege = { trait = lustful }
@@ -1094,7 +1094,7 @@ character_event = {
 					days = 3
 				}
 			}
-			is_valid_attraction = ROOT
+			is_attracted_to_prev = yes
 			NOT = { has_character_flag = ancrel_remove_firedancers }
 		}
 	}
@@ -1110,10 +1110,6 @@ character_event = {
 	mean_time_to_happen = {
 		days = 180
 
-		modifier = {
-			factor = 0.33
-			NOT = { has_character_flag = festival_event_happened }
-		}
 		modifier = {
 			factor = 0.75
 			spouse = { trait = lustful }
@@ -1140,8 +1136,8 @@ character_event = {
 		}
 		modifier = {
 			factor = 2
-			liege = {
-				has_character_modifier = festival_lover
+			spouse = {
+				has_character_flag = festival_lover
 			}
 		}
 		modifier = {
@@ -1150,6 +1146,204 @@ character_event = {
 				trait = celibate
 			}
 		}
+	}
+}
+
+# The character accepts or spurns the liege/spouse
+character_event = {
+	id = ancrel.3492
+	desc = ancrel.3492.desc
+	picture = GFX_evt_lovers
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA452 # What took him/her so long?
+		ai_chance = {
+			factor = 34
+			modifier = {
+				factor = 2
+				FROM = {
+					ROOT = { is_attracted_to_prev = yes }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				spouse = {
+					ROOT = { likes_better_than = { who = FROM than = PREV } }
+				}
+			}
+		}
+		
+		add_lover = FROM
+		
+		FROM = { character_event = { id = 453 tooltip = EVTTOOLTIP453 } }
+		
+		# Chance of impregnation
+		if = {
+			limit = {
+				fertility = 0.25
+				FROM = { fertility = 0.25 }
+				OR = {
+					AND = {
+						is_female = yes
+						FROM = { is_female = no }
+						NOT = { age = 45 }
+					}
+					AND = {
+						is_female = no
+						FROM = {
+							is_female = yes
+							NOT = { age = 45 }
+						}
+					}
+				}
+			}
+			if = {
+				if = {
+					limit = {
+						fertility = 0.5
+						FROM = { fertility = 0.5 }
+					}
+					random_list = {
+						75 = {
+							if = { 
+								limit = {
+									OR = {
+										AND = {
+											is_female = yes 
+											is_married = no
+											is_consort = no
+										}
+										FROM = {
+											is_female = yes
+											is_married = no
+											is_consort = no
+										}
+									}
+								}
+								impregnate = FROM
+								break = yes
+							}
+							impregnate_cuckoo = FROM
+						}
+						25 = { }
+					}
+					break = yes
+				}
+				
+				random_list = {
+					50 = {
+						if = { 
+							limit = {
+								OR = {
+									AND = {
+										is_female = yes 
+										is_married = no
+										is_consort = no
+									}
+									FROM = {
+										is_female = yes
+										is_married = no
+										is_consort = no
+									}
+								}
+							}
+							impregnate = FROM
+							break = yes
+						}
+						impregnate_cuckoo = FROM
+					}
+					50 = { }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTB452 # Dissuade
+		trigger = {
+			NOT = { trait = lustful }
+			NOT = { trait = hedonist }
+		}
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 10
+				trait = chaste
+			}
+			modifier = {
+				factor = 2
+				FROM = { is_female = no }
+				is_female = yes
+			}
+			modifier = {
+				factor = 2
+				trait = shy
+			}
+			modifier = {
+				factor = 0.5
+				trait = trusting
+			}
+			modifier = {
+				factor = 0.1
+				liege = {
+					OR = {
+						trait = seducer
+						trait = seductress
+					}
+				}
+			}
+			modifier = {
+				factor = 5
+				FROM = {
+					ROOT = { is_attracted_to_prev = no }
+				}
+			}
+		}
+		
+		FROM = { character_event = { id = 454 tooltip = EVTTOOLTIP454 } }
+	}
+
+	option = {
+		name = EVTOPTC452 # Scream for help!
+		trigger = {
+			FROM = { is_female = no }
+			is_female = yes
+			NOT = { trait = lustful }
+			NOT = { trait = hedonist }
+		}
+		ai_chance = {
+			factor = 15
+			modifier = {
+				factor = 10
+				trait = chaste
+			}
+			modifier = {
+				factor = 2
+				trait = shy
+			}
+			modifier = {
+				factor = 0.5
+				trait = trusting
+			}
+			modifier = {
+				factor = 0.01
+				liege = {
+					OR = {
+						trait = seducer
+						trait = seductress
+					}
+				}
+			}
+			modifier = {
+				factor = 10
+				FROM = {
+					ROOT = { is_attracted_to_prev = no }
+				}
+			}
+		}
+		FROM = { character_event = { id = 455 tooltip = EVTTOOLTIP455 } }
 	}
 }
 

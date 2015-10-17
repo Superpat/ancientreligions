@@ -64,21 +64,32 @@ province_event = {
 
 	trigger = {
 		has_province_modifier = depopulated_province
+		owner = {
+			top_liege = {
+				religion = promethean_pagan
+			}
+		}
 	}
 
 	mean_time_to_happen = {
 		years = 50
 		modifier = {
-			factor = 0.75
+			factor = 0.9
 			religion_authority = 0.50
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
 			religion_authority = 0.75
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.9
 			religion_authority = 0.90
+		}
+		modifier = {
+			factor = 0.9
+			any_neighbor_province = {
+				religion = promethean_pagan
+			}
 		}
 	}
 
@@ -104,6 +115,7 @@ character_event = {
 		FROM = {
 			religion = ROOT
 			culture = ROOT
+			remove_province_modifier = depopulated_province
 		}
 	}
 }
@@ -840,8 +852,8 @@ character_event = {
 	option = { # make your move!
 		name = ancrel.3461.a
 		hidden_tooltip = {
-			FROM = { # hop onto the spurn/accept event from vanilla, let it get handled from there
-				character_event = { id = 452 }
+			FROM = { # replace the vanilla spurn/accept event, because it sucks
+				character_event = { id = ancrel.3492 }
 			}
 		}
 
@@ -1068,13 +1080,6 @@ character_event = {
 			}
 		}
 	}
-
-	option = {
-		name = OK
-		liege = {
-			character_event = { id = ancrel.3461 }
-		}
-	}
 }
 
 # spouse looks attractive in the firelight (spouse)
@@ -1123,7 +1128,7 @@ character_event = {
 			trait = fair
 		}
 		modifier = {
-			factor = 0.7
+			factor = 0.5
 			spouse = {
 				is_lover = ROOT
 			}
@@ -2266,6 +2271,9 @@ character_event = {
 	option = { # bunch of balderdash...
 		name = ancrel.3482.b
 		piety = -10
+		ai_chance = {
+			factor = 50
+		}
 	}
 }
 
@@ -2721,6 +2729,7 @@ character_event = {
 ###################################################################
 # Notification events for vassals during prep
 ###################################################################
+
 # You've been slighted in the selection of Heracles! (marshal)
 character_event = {
 	id = ancrel.3543

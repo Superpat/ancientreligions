@@ -1,4 +1,4 @@
-2015-8-? v0.37.0 "Vulcan"
+2015-?-? v0.37.0 "Vulcan"
 -------------------------
 General:
 - Nearly every kingdom in the game now has a Crusade weight for all of the added religions, including the heresies.
@@ -9,8 +9,9 @@ General:
 -- Georgians and Armenians become Promethian.
 -- Alanians become Titan.
 -- East Africans become Atenic.
+- Duke of Galilee gets his stones back if the world goes pagan. Surely a blessing from Dionysus...
 
-Celtic Paganism:
+Celtic:
 - Tweaked St Kilda event chain to be more likely.
 - Fixed issue in the event where a son or brother asks to join the red dragons where the buttons would be labeled backwards.
 - Galloway is no longer a holy site. Dijon takes its place. This is to represent the Fountains of Sequana, a major place of worship for the Continental Celts. Also to make reformation a little harder. It was way too easy to start as Gwynned and take Dublin and Galloway and do some raiding to get up MA.
@@ -43,7 +44,9 @@ Promethean:
 -- If you're lucky you may get a skilled courtier. If you are unlucky, you may be injured, or even die!
 - Prometheans now have access to an invasion CB called Expansion. It is inspired partially by Plato's Republic.
 -- Conquered provinces suffer from a "Depopulated" modifier for 30 years after the invasion, making it difficult to hold but more likely to convert culture and religion to the top liege.
--- It is a once per lifetime Kingdom Level CB.
+-- It targets Kingdoms and is based on the tribal invasion cb.
+-- It cannot be used if there is a depopulated province in your realm.
+-- You must be independent to use it.
 
 Titan Cult:
 - Titan holy sites have been moved around to differentiate them from Hellenism and Prometheanism and better reflect locations that would actually be holy to them.
@@ -57,7 +60,7 @@ Titan Cult:
 Kemetic:
 
 
-Atenic: 
+Atenic:
 - Faithful followers of Aten can now restore Akhetaten, the ancient city we call Amarna today.
 -- This decision is almost a carbon copy of the Restore Luxor decision. It may receive more love in the future.
 - Atenism now has a religious head, the Meryaten, which is a King tier Fylkir style title held by the reformer.

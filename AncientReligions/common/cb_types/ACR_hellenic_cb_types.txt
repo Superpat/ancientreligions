@@ -558,8 +558,11 @@ promethean_expansion = {
 	can_use_gui = {
 		ROOT = {
 			prestige = 500
+			independent = yes
 			NOT = {
-				has_character_flag = acr_promethean_expansion
+				any_realm_province = {
+					has_province_modifier = depopulated_province
+				}
 			}
 		}
 	}
@@ -567,7 +570,6 @@ promethean_expansion = {
 	on_add = {
 		ROOT = { 
 			prestige = -500
-			set_character_flag = acr_promethean_expansion
 		}
 	}
 
@@ -605,6 +607,19 @@ promethean_expansion = {
 			prestige = -200
 		}
 		hidden_tooltip = {
+			FROM = {
+				any_realm_province = {
+					limit = {
+				    	any_province_holding = {
+				        	is_occupied = yes
+				        	controlled_by = ROOT
+				     	}
+				     	NOT = { religion = promethean_pagan }
+					}
+					remove_province_modifier = depopulated_province
+					add_province_modifier = { name = depopulated_province duration = 10950 }
+				}
+			}
 			ROOT = {
 				occupy_minors_of_occupied_settlements = FROM
 				gain_all_occupied_titles = { who = FROM type = invasion }
@@ -630,19 +645,6 @@ promethean_expansion = {
 		custom_tooltip = {
 			text = tribal_invasion_succ_tip
 			hidden_tooltip = {
-				FROM = {
-					any_realm_province = {
-						limit = {
-					    	any_province_holding = {
-					        	is_occupied = yes
-					        	controlled_by = FROM
-					     	}
-					     	NOT = { religion = promethean_pagan }
-						}
-						remove_province_modifier = depopulated_province
-						add_province_modifier = { name = depopulated_province duration = 10950 }
-					}
-				}
 				ROOT = {
 					vassalize_or_take_under_title_destroy_duchies = {
 						title = PREV

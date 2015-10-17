@@ -454,7 +454,7 @@ decisions = {
 			custom_tooltip = {
 				text = prepare_unbinding_festival
 				hidden_tooltip = { 
-					add_character_modifier = { name = held_unbinding_festival_timer duration = 1000 } # roughly three years
+					add_character_modifier = { name = held_unbinding_festival_timer duration = 1000 } # three years, less 95 days
 					character_event = { id = ancrel.3450 }
 				}
 			}

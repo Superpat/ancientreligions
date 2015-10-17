@@ -671,6 +671,16 @@ character_event = {
 	option = {
 		name = OK
 		religion = hellenic_pagan
+		if = {
+			limit = {
+				d_galilee = {
+					holder_scope = {
+						character = ROOT
+					}
+				}
+			}
+			remove_trait = eunuch
+		}
 		any_demesne_title = {
 			limit = { tier = count }
 			location = { religion = hellenic_pagan }
@@ -790,21 +800,21 @@ character_event = {
 
 #[on_startup] maintenance event
 character_event = {
-		id = ancrel.9010
-		hide_window = yes
-		is_triggered_only = yes
-		ai = no
-		trigger = {
-			NOT = { has_global_flag = ancrel }
-		}
+	id = ancrel.9010
+	hide_window = yes
+	is_triggered_only = yes
+	ai = no
+	trigger = {
+		NOT = { has_global_flag = ancrel }
+	}
 
-		immediate = {
-			set_global_flag = ancrel
-		}
+	immediate = {
+		set_global_flag = ancrel
+	}
 
-		option = {
-			name = OK
-		}
+	option = {
+		name = OK
+	}
 }
 
 # Promethean

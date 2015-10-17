@@ -37,7 +37,7 @@ pagan_group = {
 	}
 
 	titan_pagan = {
-		graphical_culture = westerngfx
+		graphical_culture = norsegfx
 
 		icon = 37
 		heresy_icon = 62
@@ -71,6 +71,10 @@ pagan_group = {
 		religious_clothing_priest = 5
 
 		allow_in_ruler_designer = yes
+
+		character_modifier = {
+			combat_rating = 2
+		}
 	}
 
 	promethean_pagan = {
@@ -112,6 +116,10 @@ pagan_group = {
 		religious_clothing_priest = 5
 
 		allow_in_ruler_designer = yes
+
+		character_modifier = {
+			learning = 4
+		}
 	}
 
 	celtic_pagan_reformed = {

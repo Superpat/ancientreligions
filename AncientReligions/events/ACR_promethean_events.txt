@@ -309,7 +309,7 @@ character_event = {
 	option = { # just rent out a theatre in the city
 		name = ancrel.3451.a
 		scaled_wealth = -0.05
-		prestige = -100
+		prestige = 75
 
 		random = {
 			chance = 10
@@ -320,19 +320,68 @@ character_event = {
 		}
 
 		set_character_flag = unbinding_cheap_open
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 1.5
+				NOT = {
+					scaled_wealth = 0.2
+				}
+			}
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+			modifier = {
+				factor = 10
+				NOT = {
+					scaled_wealth = 0.1
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { prestige = 200 }
+			}
+		}
 	}
 
 	option = { # build one of wood in the city square
 		name = ancrel.3451.b
 		scaled_wealth = -0.10
+		prestige = 150
 
 		set_character_flag = unbinding_middle_open
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.2
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.75
+				NOT = {
+					scaled_wealth = 0.2
+				}
+			}
+			modifier = {
+				factor = 2
+				scaled_wealth = 0.5
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					prestige = 200
+				}
+			}
+		}
 	}
 
 	option = { # build a grand stage of real stone!
 		name = ancrel.3451.c
 		scaled_wealth = -0.20
-		prestige = 100
+		prestige = 300
 
 		random = {
 			chance = 10
@@ -343,6 +392,22 @@ character_event = {
 		}
 
 		set_character_flag = unbinding_grand_open
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				trait = charitable
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 1.5
+				scaled_wealth = 1.0
+			}
+		}
 	}
 }
 
@@ -364,6 +429,30 @@ character_event = {
 
 		scaled_wealth = -0.05
 		prestige = -25
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 1.5
+				NOT = {
+					scaled_wealth = 0.2
+				}
+			}
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+			modifier = {
+				factor = 10
+				NOT = {
+					scaled_wealth = 0.1
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { prestige = 200 }
+			}
+		}
 	}
 	option = { # lets not be cheap
 		name = ancrel.3452.b
@@ -371,6 +460,30 @@ character_event = {
 
 		scaled_wealth = -0.1
 		prestige = 25
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.2
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.75
+				NOT = {
+					scaled_wealth = 0.2
+				}
+			}
+			modifier = {
+				factor = 2
+				scaled_wealth = 0.5
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					prestige = 200
+				}
+			}
+		}	
 	}
 	option = { # lets make it a festival to remember!
 		name = ancrel.3452.c
@@ -378,6 +491,22 @@ character_event = {
 
 		scaled_wealth = -0.2
 		prestige = 50
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				trait = charitable
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 1.5
+				scaled_wealth = 1.0
+			}
+		}
 	}
 }
 
@@ -404,6 +533,36 @@ character_event = {
  		}
 
  		character_event = { id = ancrel.3454 days = 1 } # next decision
+
+ 		ai_chance = {
+ 			factor = 25
+ 			modifier = {
+ 				factor = 1.5
+ 				trait = proud
+ 			}
+ 			modifier = {
+ 				factor = 1.5
+ 				trait = posessed
+ 			}
+ 			modifier = {
+ 				factor = 1.1
+ 				NOT = {
+ 					opinion = { who = job_spiritual value = 30 }
+ 				}
+ 			}
+ 			modifier = {
+ 				factor = 1.1
+ 				NOT = {
+ 					opinion = { who = job_spiritual value = 0 }
+ 				}
+ 			}
+ 			modifier = {
+ 				factor = 1.1
+ 				NOT = {
+ 					opinion = { who = job_spiritual value = -30 }
+ 				}
+ 			}
+ 		}
 	}
 
 	option = { #have your Court Priest do it
@@ -424,6 +583,30 @@ character_event = {
 		}
 
  		character_event = { id = ancrel.3454 days = 1 } # next decision
+
+ 		ai_chance = {
+ 			factor = 50
+ 			modifier = {
+ 				factor = 2
+ 				trait = just
+ 			}
+ 			modifier = {
+ 				factor = 1.2
+ 				trait = content
+ 			}
+ 			modifier = {
+ 				factor = 1.2
+ 				opinion = { who = job_spritual value = 60 }
+ 			}
+ 			modifier = {
+ 				factor = 1.2
+ 				trait = humble
+ 			}
+ 			modifier = {
+ 				factor = 1.2
+ 				is_plot_target_of = job_spiritual
+ 			}
+ 		}
 	}
 
 	option = { #random pious vassal
@@ -455,6 +638,22 @@ character_event = {
  		}
 
  		character_event = { id = ancrel.3454 days = 1 } # next decision
+
+ 		ai_chance = {
+ 			factor = 25
+ 			modifier = {
+ 				factor = 1.2
+ 				NOT = { opinion = { who = job_spiritual value = -30 } }
+ 			}
+ 			modifier = {
+ 				factor = 1.2
+ 				NOT = { opinion = { who = job_spiritual value = -60 } }
+ 			}
+ 			modifier = {
+ 				factor = 1.5
+ 				trait = arbitrary
+ 			}
+ 		}
 	}
 
 	option = { #totally random vassal, because apparently there is a lack of piety in your realm
@@ -486,6 +685,26 @@ character_event = {
  		}
 
  		character_event = { id = ancrel.3454 days = 1 } # next decision
+
+ 		ai_chance = {
+ 			factor = 25
+ 			modifier = {
+ 				factor = 1.2
+ 				NOT = { opinion = { who = job_spiritual value = -30 } }
+ 			}
+ 			modifier = {
+ 				factor = 1.2
+ 				NOT = { opinion = { who = job_spiritual value = -60 } }
+ 			}
+ 			modifier = {
+ 				factor = 1.5
+ 				trait = arbitrary
+ 			}
+ 			modifier = {
+ 				factor = 1.1
+ 				trait = insane
+ 			}
+ 		}
 	}
 }
 
@@ -518,6 +737,36 @@ character_event = {
 		}
 
 		narrative_event = { id = ancrel.3455 days = 1 } # the opening ceremony!
+
+ 		ai_chance = {
+ 			factor = 25
+ 			modifier = {
+ 				factor = 1.5
+ 				trait = proud
+ 			}
+ 			modifier = {
+ 				factor = 1.5
+ 				trait = posessed
+ 			}
+ 			modifier = {
+ 				factor = 1.1
+ 				NOT = {
+ 					opinion = { who = job_marshal value = 30 }
+ 				}
+ 			}
+ 			modifier = {
+ 				factor = 1.1
+ 				NOT = {
+ 					opinion = { who = job_marshal value = 0 }
+ 				}
+ 			}
+ 			modifier = {
+ 				factor = 1.1
+ 				NOT = {
+ 					opinion = { who = job_marshal value = -30 }
+ 				}
+ 			}
+ 		}
 	}
 
 	option = { #have your Marshal do it
@@ -540,6 +789,30 @@ character_event = {
 		}
 
 		narrative_event = { id = ancrel.3455 days = 1 } # the opening ceremony!
+
+ 		ai_chance = {
+ 			factor = 50
+ 			modifier = {
+ 				factor = 2
+ 				trait = just
+ 			}
+ 			modifier = {
+ 				factor = 1.2
+ 				trait = content
+ 			}
+ 			modifier = {
+ 				factor = 1.2
+ 				opinion = { who = job_marshal value = 60 }
+ 			}
+ 			modifier = {
+ 				factor = 1.2
+ 				trait = humble
+ 			}
+ 			modifier = {
+ 				factor = 1.2
+ 				is_plot_target_of = job_marshal
+ 			}
+ 		}
 	}
 
 	option = { #random prestigous vassal
@@ -547,7 +820,12 @@ character_event = {
 		trigger = {
 			any_vassal = {
 				prestige = 500
-				NOT = { has_job_title = job_marshal }
+					NOR = { 
+						has_job_title = job_marshal
+						event_target:festival_prometheus = {
+							character = PREV
+						}
+					}
 			}
 		}
 
@@ -575,6 +853,22 @@ character_event = {
 		}
 
 		narrative_event = { id = ancrel.3455 days = 1 } # the opening ceremony!
+
+ 		ai_chance = {
+ 			factor = 25
+ 			modifier = {
+ 				factor = 1.2
+ 				NOT = { opinion = { who = job_marshal value = -30 } }
+ 			}
+ 			modifier = {
+ 				factor = 1.2
+ 				NOT = { opinion = { who = job_marshal value = -60 } }
+ 			}
+ 			modifier = {
+ 				factor = 1.5
+ 				trait = arbitrary
+ 			}
+ 		}
 	}
 
 	option = { #totally random vassal, because apparently there is a lack of prestige in your realm
@@ -583,7 +877,12 @@ character_event = {
 			NOT = {
 				any_vassal = {
 					prestige = 500
-					NOT = { has_job_title = job_marshal }
+					NOR = { 
+						has_job_title = job_marshal
+						event_target:festival_prometheus = {
+							character = PREV
+						}
+					}
 				}
 			}
 		}
@@ -609,6 +908,26 @@ character_event = {
 		}
 
 		narrative_event = { id = ancrel.3455 days = 1 } # the opening ceremony!
+
+ 		ai_chance = {
+ 			factor = 25
+ 			modifier = {
+ 				factor = 1.2
+ 				NOT = { opinion = { who = job_marshal value = -30 } }
+ 			}
+ 			modifier = {
+ 				factor = 1.2
+ 				NOT = { opinion = { who = job_marshal value = -60 } }
+ 			}
+ 			modifier = {
+ 				factor = 1.5
+ 				trait = arbitrary
+ 			}
+ 			modifier = {
+ 				factor = 1.1
+ 				trait = insane
+ 			}
+ 		}
 	}
 }
 
@@ -867,6 +1186,10 @@ character_event = {
 
 		ai_chance = {
 			factor = 20
+			modifier = {
+				factor = 1.5
+				trait = lusftful
+			}
 			modifier = {
 				factor = 5
 				is_lover = FROM
@@ -1178,6 +1501,14 @@ character_event = {
 					ROOT = { likes_better_than = { who = FROM than = PREV } }
 				}
 			}
+			modifier = {
+				factor = 1.2
+				trait = lustful
+			}
+			modifier = {
+				factor = 1.2
+				trait = arbitrary
+			}
 		}
 		
 		add_lover = FROM
@@ -1267,12 +1598,8 @@ character_event = {
 
 	option = {
 		name = EVTOPTB452 # Dissuade
-		trigger = {
-			NOT = { trait = lustful }
-			NOT = { trait = hedonist }
-		}
 		ai_chance = {
-			factor = 5
+			factor = 33
 			modifier = {
 				factor = 10
 				trait = chaste
@@ -1292,7 +1619,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0.1
-				liege = {
+				FROM = {
 					OR = {
 						trait = seducer
 						trait = seductress
@@ -1319,7 +1646,7 @@ character_event = {
 			NOT = { trait = hedonist }
 		}
 		ai_chance = {
-			factor = 15
+			factor = 33
 			modifier = {
 				factor = 10
 				trait = chaste
@@ -1334,7 +1661,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0.01
-				liege = {
+				FROM = {
 					OR = {
 						trait = seducer
 						trait = seductress
@@ -1408,6 +1735,22 @@ character_event = {
 				days = 180
 			}
 		}
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				trait = impaler
+			}
+			modifier = {
+				factor = 2
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+		}
 	}
 	option = { # imprison them!
 		name = ancrel.3464.b
@@ -1422,10 +1765,42 @@ character_event = {
 				days = 90
 			}
 		}
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 1.5
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 1.5
+				trait = proud
+			}
+		}
 	}
 	option = { # on with the show!
 		name = ancrel.3464.c
 		prestige = -100
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				trait = just
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				trait = craven
+			}
+		}
 	}
 }
 
@@ -1566,6 +1941,30 @@ character_event = {
 				days = 180
 			}
 		}
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				trait = impaler
+			}
+			modifier = {
+				factor = 2
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 1.2
+				opinion = { who = FROM value = 30 }
+			}
+			modifier = {
+				factor = 1.2
+				opinion = { who = FROM value = 60 }
+			}
+		}
 	}
 	option = {
 		#remove them from the festival
@@ -1584,6 +1983,30 @@ character_event = {
 			chance = 20
 			add_trait = just
 		}
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				trait = impaler
+			}
+			modifier = {
+				factor = 2
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 1.1
+				opinion = { who = FROM value = 30 }
+			}
+			modifier = {
+				factor = 1.1
+				opinion = { who = FROM value = 60 }
+			}
+		}
 	}
 	option = {
 		# it was just an accident
@@ -1592,6 +2015,34 @@ character_event = {
 		random = {
 			chance = 20
 			add_trait = kind
+		}
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				trait = just
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				trait = craven
+			}
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = { who = FROM value = -30 }
+				}
+			}
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = { who = FROM value = -60 }
+				}
+			}
 		}
 	}
 }
@@ -1622,6 +2073,34 @@ character_event = {
 				days = 180
 			}
 		}
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				trait = impaler
+			}
+			modifier = {
+				factor = 2
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = { who = FROM value = -30 }
+				}
+			}
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = { who = FROM value = -60 }
+				}
+			}
+		}
 	}
 	option = {
 		#remove them from the festival
@@ -1640,6 +2119,30 @@ character_event = {
 				days = 90
 			}
 		}
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				trait = impaler
+			}
+			modifier = {
+				factor = 2
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 1.1
+				opinion = { who = FROM value = 30 }
+			}
+			modifier = {
+				factor = 1.1
+				opinion = { who = FROM value = 60 }
+			}
+		}
 	}
 	option = {
 		# it was just an accident
@@ -1649,6 +2152,30 @@ character_event = {
 			add_trait = kind
 		}
 		reverse_opinion = { modifier = ancrel_pleased who = FROM }
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				trait = just
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 2
+				trait = craven
+			}
+			modifier = {
+				factor = 1.2
+				opinion = { who = FROM value = 30 }
+			}
+			modifier = {
+				factor = 1.2
+				opinion = { who = FROM value = 60 }
+			}
+		}
 	}
 }
 
@@ -1668,7 +2195,6 @@ character_event = {
 			}
 		}
 		any_realm_character = {
-			count = 1
 			prisoner = no
 			liege = {
 				character = ROOT
@@ -1676,7 +2202,6 @@ character_event = {
 			trait = zealous
 		}
 		any_realm_character = {
-			count = 1
 			prisoner = no
 			liege = {
 				character = ROOT
@@ -1737,6 +2262,18 @@ character_event = {
 			chance = 15
 			add_trait = zealous
 		}
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 1.2
+				likes_better_than = { who = event_target:cynic than = event_target:zealot }
+			}
+			modifier = {
+				factor = 5
+				trait = cynic
+			}
+		}
 	}
 	option = { # diffuse the situation
 		trigger = {
@@ -1744,9 +2281,25 @@ character_event = {
 		}
 		tooltip_info = diplomacy
 		name = ancrel.3470.b
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 10
+				NOR = {
+					trait = cynic
+					trait = zealous
+				}
+			}
+		}
 	}
 	option = { # waffle
 		name = ancrel.3470.c
+		trigger = {
+			NOT = {
+				diplomacy = 13
+			}
+		}
 		event_target:cynic = {
 			opinion = {	modifier = ancrel_dissapointed who = ROOT years = 2	}
 		}
@@ -1756,6 +2309,14 @@ character_event = {
 		random = {
 			chance = 20
 			add_trait = stressed
+		}
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 5
+				trait = coward
+			}
 		}
 	}
 	option = { # agree with the zealous vassal
@@ -1769,6 +2330,18 @@ character_event = {
 		random = {
 			chance = 15
 			add_trait = cynical
+		}
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 1.2
+				likes_better_than = { who = event_target:zealot than = event_target:cynic }
+			}
+			modifier = {
+				factor = 5
+				trait = zealous
+			}
 		}
 	}
 }
@@ -1921,9 +2494,23 @@ character_event = {
 		new_character = {
 			opinion = { modifier = opinion_patron who = ROOT months = 360 }
 		}
+		ai_chance = {
+			factor = 90
+		}
 	}
 	option = { # no need for professional liars in my court
 		name = ancrel.3473.b
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 3
+				trait = honest
+			}
+			modifier = {
+				factor = 1.2
+				trait = arbitrary
+			}
+		}
 	}
 }
 
@@ -1970,6 +2557,18 @@ character_event = {
 				add_trait = stressed
 			}
 		}
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				trait = craven
+			}
+			modifier = {
+				factor = 0
+				diplomacy = 14 # be diplomatic if you can
+			}
+		}
 	}
 	option = { # go on stage, but stick to the lines
 		name = ancrel.3474.b
@@ -1978,14 +2577,14 @@ character_event = {
 			random_list = {
 				33 = { # good outcome
 					modifier = {
-						factor = 1.2
+						factor = 2
 						learning = 12
 					}
 					character_event = { id = ancrel.3475 }
 				}
 				34 = { # neutral outcome
 					modifier = {
-						factor = 1.2
+						factor = 1.5
 						learning = 8
 						NOT = { learning = 12 }
 					}
@@ -1998,6 +2597,22 @@ character_event = {
 					}
 					character_event = { id = ancrel.3477 }
 				}
+			}
+		}
+
+		ai_chance = {
+			factor = 25
+			modifier ={
+				factor = 2
+				trait = brave
+			}
+			modifier = {
+				factor = 1.5
+				trait = gregarious
+			}
+			modifier = {
+				factor = 2
+				trait = content
 			}
 		}
 	}
@@ -2054,6 +2669,22 @@ character_event = {
 				}
 			}
 		}
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				trait = brave
+			}
+			modifier = {
+				factor = 2
+				trait = gregarious
+			}
+			modifier = {
+				factor = 2
+				trait = ambitious
+			}
+		}
 	}
 	option = { # gracefully decline
 		trigger = {
@@ -2061,6 +2692,25 @@ character_event = {
 		}
 		name = ancrel.3474.d
 		tooltip_info = diplomacy
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				NOR = {
+					trait = brave
+					trait = gregarious
+				}
+			}
+			modifier ={
+				factor = 2
+				trait = craven
+			}
+			modifier = {
+				factor = 1.2 # slight preference for this option when available
+				always = yes
+			}
+		}
 	}
 }
 
@@ -2333,9 +2983,21 @@ character_event = {
 		new_character = {
 			opinion = { modifier = opinion_patron who = ROOT months = 360 }
 		}
+
+		ai_chance = {
+			factor = 90
+		}
 	}
 	option = { # i don't like having smart people in my employ :-/
 		name = ancrel.3483.b
+
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 10
+				trait = cynical
+			}
+		}
 	}
 }
 
@@ -2437,21 +3099,71 @@ character_event = {
 
 	option = { # appreciate the statue
 		name = ancrel.3485.a
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				trait = content
+			}
+			modifier = {
+				factor = 1.5
+				trait = humble
+			}
+			modifier = {
+				factor = 1.5
+				trait = charitable
+			}
+			modifier = {
+				factor = 2
+				NOT = { wealth = 200 }
+			}
+		}
 	}
 	option = { # make everyone roll there eyes at you
 		name = ancrel.3485.b
-		piety = 100
+		piety = 50
 		random_vassal = {
 			limit = {
 				NOT = { trait = zealous }
 			}
 			opinion = { modifier = opinion_annoyed who = ROOT years = 1 }
 		}
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				trait = zealous
+			}
+			modifier = {
+				factor = 0.1
+				trait = cynical
+			}
+		}
 	}
 	option = { # buy it!
 		name = ancrel.3485.c
 		wealth = -50
 		add_character_modifier = { name = acr_grand_sculpture duration = 360 }
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 1.2
+				trait = proud
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					wealth = 100
+				}
+			}
+		}
 	}
 }
 
@@ -2528,6 +3240,13 @@ character_event = {
 		random = {
 			chance = 10
 			add_trait = wounded
+			hidden_tooltip = {
+				character_event = { id = 38280 } # Notify Wounded
+			}
+		}
+
+		ai_chance = {
+			factor = 70
 		}
 	}
 	option = { # run, like a coward
@@ -2541,7 +3260,26 @@ character_event = {
 		random = {
 			chance = 25
 			add_trait = craven
+			hidden_tooltip = {
+				character_event = { id = 38257 } # Notify Craven
+			}
 		}
+
+		ai_chance = {
+			factor = 15
+			modifier = {
+				factor = 5
+				trait = craven
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { opinion = { who = FROM value = 0 } }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { opinion = { who = FROM value = -30 } }
+			}
+		} 
 	}
 	option = { # get all heroic and push them out of the way
 		name = ancrel.3487.c
@@ -2560,12 +3298,37 @@ character_event = {
 			}
 			20 = {
 				add_trait = maimed
+				hidden_tooltip = {
+					character_event = { id = 38281 } # Notify Maimed
+				}
 			}
 			60 = {
 				add_trait = wounded
+				hidden_tooltip = {
+					character_event = { id = 38280 } # Notify Wounded
+				}
 			}
 		}
 		add_trait = brave
+		hidden_tooltip = {
+			character_event = { id = 38270 } # Notify Brave
+		}
+
+		ai_chance = {
+			factor = 15
+			modifier = {
+				factor = 5
+				trait = brave
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = FROM value = 30 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = FROM value = 60 }
+			}
+		} 
 	}
 }
 
@@ -2585,9 +3348,15 @@ character_event = {
 			}
 			15 = {
 				add_trait = maimed
+				hidden_tooltip = {
+					character_event = { id = 38281 } # Notify Maimed
+				}				
 			}
 			30 = {
 				add_trait = wounded
+				hidden_tooltip = {
+					character_event = { id = 38280 } # Notify Wounded
+				}
 			}
 			50 = {
 				#do nothing
@@ -2612,9 +3381,15 @@ character_event = {
 			}
 			30 = {
 				add_trait = maimed
+				hidden_tooltip = {
+					character_event = { id = 38281 } # Notify maimed
+				}
 			}
 			50 = {
 				add_trait = wounded
+				hidden_tooltip = {
+					character_event = { id = 38280 } # Notify Wounded
+				}
 			}
 		}
 		opinion = { modifier = opinion_hate who = FROM duration = -1 }

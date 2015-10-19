@@ -77,11 +77,11 @@ ancrel.3467.a;Leniency? Nonesense! Execute them all!;;;;;;;;;;;;;x
 ancrel.3467.b;Fine, I will merely imprison them.;;;;;;;;;;;;;x
 ancrel.3467.c;Agreed, accidents happen.;;;;;;;;;;;;;x
 ancrel.remove_firedancers;This decision will mean that we will have no firedancers for the rest of this festival. It may upset the commoners, who are fond of the spectacle.\n;;;;;;;;;;;;;x
-ancrel.3470.desc;You are watching a troup of actors as they perform the story of Prometheus and Epimetheus creating all of the worlds creatures from clay. The narrator is explaining how the very nature of these first people, being of clay, meant they could only excel at manual labors when you hear [cynic.GetTitledFirstName] shouting "That's absurd!" It seems [cynic.GetTitledFirstName]'s gotten into an argument with [zealot.GetTitledFirstName] over the literal interpretation of the story.\nThey both look to you to resolve the argument.;;;;;;;;;;;;;x
-ancrel.3470.a;Of course it's literal!;;;;;;;;;;;;;x
+ancrel.3470.desc;A troup of actors are performing the story of Prometheus and Epimetheus creating the worlds creatures from clay. The narrator is explaining how the nature of these first people, that of clay, meant they could only excel at manual labors when you hear [cynic.GetTitledFirstName] shout "That's absurd!" It seems [cynic.GetTitledFirstName]'s is arguing with [zealot.GetTitledFirstName] over the literal interpretation of the story. They both look to you to resolve the argument.;;;;;;;;;;;;;x
+ancrel.3470.a;It's clearly a metaphor, to teach school children.;;;;;;;;;;;;;x
 ancrel.3470.b;It was Plato, I think, who once said...;;;;;;;;;;;;;x
 ancrel.3470.c;Um, I... gotta go!;;;;;;;;;;;;;x
-ancrel.3470.d;It's clearly a metaphor, to teach school children.;;;;;;;;;;;;;x
+ancrel.3470.d;Of course it's literal!;;;;;;;;;;;;;x
 ancrel.3471.desc;You are watching a rather poor re-enactment of Prometheus' binding when the actor playing Prometheus begins to wail and beg for his freedom. This grave insult to their god, and terrible acting, whips the crowd into a fury. They can barely be kept from charging the stage. They pour into the streets and begin a small riot!;;;;;;;;;;;;;x
 ancrel.3471.a;[Root.Religion.GetRandomGodName] protect us...;;;;;;;;;;;;;x
 ancrel.3472.desc;A troup of actors are doing a re-enactment of Duecalion's Flood, and it's wonderful. While no one actor truly stood out, the troup as a whole performed amazingly. You can really feel the deep sadness of Duecalion and Pyrrha over the loss of their people and everything they knew, and the great joy of landfall and the creation of a new race of men. The crowds applause is deafening when the actors take their bows. The whole realm will be talking about this for months!;;;;;;;;;;;;;x

@@ -2282,6 +2282,8 @@ character_event = {
 		tooltip_info = diplomacy
 		name = ancrel.3470.b
 
+		prestige = 25
+
 		ai_chance = {
 			factor = 50
 			modifier = {

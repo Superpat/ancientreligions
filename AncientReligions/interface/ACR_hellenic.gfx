@@ -27,7 +27,27 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_hold_titan_thysia"
-		texturefile = "gfx\\interface\decision_icon_hold_blot.dds" #Placeholder
+		texturefile = "gfx\\interface\decision_icon_hold_blot.dds"
+	}
+	spriteType = {
+		name = "GFX_found_sickles"
+		texturefile = "gfx\\interface\decision_icon_convert_to_attacker_religion.dds"
+	}
+	spriteType = {
+		name = "GFX_hold_unbinding_festival"
+		texturefile = "gfx\\interface\decision_icon_hold_summer_fair.dds"
+	}
+	spriteType = {
+		name = "GFX_rebuild_first_academy"
+		texturefile = "gfx\\interface\ACR\decision_icon_recreate_pontificate.dds"
+	}
+	spriteType = {
+		name = "GFX_rebuild_crotone"
+		texturefile = "gfx\\interface\decision_icon_mend_great_schism.dds"
+	}
+	spriteType = {
+		name = "GFX_organize_men_of_steel"
+		texturefile = "gfx\\interface\decision_icon_donate_to_holy_order.dds"
 	}
 	
 	# Event pictures

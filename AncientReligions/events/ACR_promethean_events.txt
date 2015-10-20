@@ -2276,11 +2276,11 @@ character_event = {
 		}
 	}
 	option = { # diffuse the situation
+		name = ancrel.3470.b
 		trigger = {
 			diplomacy = 13
 		}
 		tooltip_info = diplomacy
-		name = ancrel.3470.b
 
 		prestige = 25
 

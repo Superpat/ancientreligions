@@ -3633,6 +3633,20 @@ character_event = {
 		any_vassal = {
 			limit = {
 				prisoner = no
+				is_landed = yes
+				religion = promethean_pagan # infidels do not care
+			}
+			opinion = {
+				modifier = opinion_held_unbinding_festival
+				who = ROOT
+				months = 12
+			}
+		}
+		any_courtier = {
+			limit = {
+				prisoner = no
+				is_landed = no # councilors count as courtiers, even if landed
+				religion = promethean_pagan # infidels do not care
 			}
 			opinion = {
 				modifier = opinion_held_unbinding_festival

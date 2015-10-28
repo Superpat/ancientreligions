@@ -56,9 +56,6 @@ Titan Cult:
 -- Thessalia; location of Mt Othrys, the Titans capitol during the Titanomachy (basically the Titan Olympus).
 -- Rhodes; Once held the Colossus, a massive statue to the titan Helios.
 - The Sickles are a holy order that can be created by Titan Cultists. The culture of the holy order matches the organizer.
-- Titans now have access to a lesser festival, the Kronia.
--- This festival can be done each year and must be held in November, December, or January.
--- It grants a small amount of piety and the potential for boons or curses from your Titan gods.
 
 Kemetic:
 

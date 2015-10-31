@@ -26,7 +26,6 @@ castle = {
 	ca_culture_roman_1 = {
 		desc = ca_culture_roman_1_desc
 		potential = {
-			is_nomadic = no
 			FROM = { culture = roman }
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
@@ -42,7 +41,6 @@ castle = {
 	ca_culture_roman_2 = {
 		desc = ca_culture_roman_1_desc
 		potential = {
-			is_nomadic = no
 			FROM = { culture = roman }
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
@@ -58,7 +56,6 @@ castle = {
 	ca_culture_roman_3 = {
 		desc = ca_culture_roman_1_desc
 		potential = {
-			is_nomadic = no
 			FROM = { culture = roman }
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
@@ -74,7 +71,6 @@ castle = {
 	ca_culture_roman_4 = {
 		desc = ca_culture_roman_1_desc
 		potential = {
-			is_nomadic = no
 			FROM = { culture = roman }
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
@@ -90,7 +86,6 @@ castle = {
 	ca_culture_gaulish_1 = {
 		desc = ca_culture_gaulish_1_desc
 		potential = {
-			is_nomadic = no
 			FROM = { culture = gaulish }
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
@@ -106,7 +101,6 @@ castle = {
 	ca_culture_gaulish_2 = {
 		desc = ca_culture_gaulish_1_desc
 		potential = {
-			is_nomadic = no
 			FROM = { culture = gaulish }
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
@@ -122,7 +116,6 @@ castle = {
 	ca_culture_gaulish_3 = {
 		desc = ca_culture_gaulish_1_desc
 		potential = {
-			is_nomadic = no
 			FROM = { culture = gaulish }
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
@@ -138,7 +131,6 @@ castle = {
 	ca_culture_gaulish_4 = {
 		desc = ca_culture_gaulish_1_desc
 		potential = {
-			is_nomadic = no
 			FROM = { culture = gaulish }
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }

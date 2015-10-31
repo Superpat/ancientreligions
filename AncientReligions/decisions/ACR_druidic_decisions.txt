@@ -14,11 +14,7 @@ decisions = {
 				culture = scottish
 			}
 			independent = yes
-			OR = {
-				tier = duke
-				tier = king
-				tier = emperor 
-			}
+			primary_title = { higher_tier_than = COUNT }
 			location = {
 				owner = { character = ROOT }
 			}
@@ -71,6 +67,7 @@ decisions = {
 			}
 		}
 	}
+	
 	hold_divination = {
 		is_high_prio = yes
 		potential = {
@@ -159,7 +156,7 @@ decisions = {
 			scaled_wealth = 0.10
 			prisoner = no
 			learning = 8
-			NOT = {trait = zealous}
+			NOT = { trait = zealous }
 			any_courtier = {
 				religion = celtic_pagan
 				prisoner = no
@@ -174,6 +171,11 @@ decisions = {
 				hidden_tooltip = {
 					character_event = { id = ancrel.0001 }
 				}
+			}
+
+			chronicle = {
+				entry = CHRONICLE_CELTIC_RITES
+				portrait = [Root.GetID]
 			}
 		}
 		ai_will_do = {
@@ -216,6 +218,7 @@ decisions = {
 		}
 		effect = {
 			set_global_flag = gwydion_founded
+			set_character_flag = acr_founded_gwydion
 			prestige = -300
 			wealth = -300
 			activate_title = { title = d_gwydion status = yes }
@@ -369,6 +372,11 @@ decisions = {
 					}
 				}
 			}
+
+			chronicle = {
+				entry = CHRONICLE_FIANNA
+				portrait = [Root.GetID]
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -416,6 +424,11 @@ decisions = {
 						}
 					}
 				}
+			}
+
+			chronicle = {
+				entry = CHRONICLE_FIANNA_VASSALIZED
+				portrait = [Root.GetID]
 			}
 		}
 		
@@ -571,7 +584,7 @@ decisions = {
 				trait = slow
 			}	
 		}
-	}	
+	}
 	assign_druid = { # For the AI, because they are dumb enough not to hand out minor titles
 		potential = {
 			ai = yes

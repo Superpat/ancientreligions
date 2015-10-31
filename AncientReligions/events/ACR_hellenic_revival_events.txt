@@ -49,27 +49,27 @@ character_event = {
 		
 		#Increase MTTH by 50% every 50 years
 		modifier = {
-			factor = 1.5
+			factor = 1.1
 			year = 916
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.1
 			year = 966
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.1
 			year = 1016
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.1
 			year = 1066
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.1
 			year = 1116
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.1
 			year = 1166
 		}
 		modifier = {
@@ -803,6 +803,11 @@ narrative_event = {
 		NOT = { is_title_active = d_legio_hellenica }
 		OR = {
 			e_byzantium = {
+				holder_scope = {
+					religion = hellenic_pagan
+				}
+			}
+			e_roman_empire = {
 				holder_scope = {
 					religion = hellenic_pagan
 				}

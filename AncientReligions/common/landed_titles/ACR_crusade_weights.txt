@@ -15,7 +15,7 @@ k_wales = {
 	celtic_pagan_reformed = 1000
 	hellenic_pagan = 0
 	egyptian_pagan = 0
-	aten_pagan = 1	
+	aten_pagan = 0
 }
 
 k_ireland = {
@@ -29,7 +29,7 @@ k_scotland = {
 	celtic_pagan_reformed = 1000
 	hellenic_pagan = 0
 	egyptian_pagan = 0
-	aten_pagan = 1	
+	aten_pagan = 0
 }
 
 ################################
@@ -56,7 +56,7 @@ k_aquitaine = {
 	celtic_pagan_reformed = 700
 	hellenic_pagan = 100
 	egyptian_pagan = 0
-	aten_pagan = 1	
+	aten_pagan = 0
 }
 
 k_burgundy = {
@@ -70,7 +70,7 @@ k_frisia = {
 	celtic_pagan_reformed = 600
 	hellenic_pagan = 25
 	egyptian_pagan = 0
-	aten_pagan = 1	
+	aten_pagan = 0
 }
 
 ################################
@@ -83,21 +83,21 @@ k_germany = {
 	celtic_pagan_reformed = 400
 	hellenic_pagan = 0
 	egyptian_pagan = 0
-	aten_pagan = 1	
+	aten_pagan = 0	
 }
 
 k_saxony = {
 	celtic_pagan_reformed = 400
 	hellenic_pagan = 0
 	egyptian_pagan = 0
-	aten_pagan = 1	
+	aten_pagan = 0
 }
 
 k_lotharingia = {
 	celtic_pagan_reformed = 500
 	hellenic_pagan = 25
 	egyptian_pagan = 0
-	aten_pagan = 1	
+	aten_pagan = 0
 }
 
 k_bavaria = {
@@ -138,21 +138,21 @@ k_leon = {
 	celtic_pagan_reformed = 550
 	hellenic_pagan = 0
 	egyptian_pagan = 0
-	aten_pagan = 1	
+	aten_pagan = 0	
 }
 
 k_navarra = {
 	celtic_pagan_reformed = 100 # don't weigh a three county kingdom too high, despite being in a historically celtic area
 	hellenic_pagan = 0
 	egyptian_pagan = 0
-	aten_pagan = 1	
+	aten_pagan = 0	
 }
 
 k_asturias = {
 	celtic_pagan_reformed = 550
 	hellenic_pagan = 0
 	egyptian_pagan = 0
-	aten_pagan = 1	
+	aten_pagan = 0
 }
 
 k_aragon = {
@@ -163,7 +163,7 @@ k_aragon = {
 }
 
 k_andalusia = {
-	celtic_pagan_reformed = 400
+	celtic_pagan_reformed = 250
 	hellenic_pagan = 100
 	egyptian_pagan = 100
 	aten_pagan = 100
@@ -193,7 +193,7 @@ k_sweden = {
 	celtic_pagan_reformed = 100
 	hellenic_pagan = 0
 	egyptian_pagan = 0
-	aten_pagan = 1	
+	aten_pagan = 0
 }
 
 k_finland = {
@@ -243,21 +243,21 @@ k_dacia = {
 	celtic_pagan_reformed = 50
 	hellenic_pagan = 600
 	egyptian_pagan = 0
-	aten_pagan = 1	
+	aten_pagan = 0	
 }
 
 k_bohemia = {
 	celtic_pagan_reformed = 100
 	hellenic_pagan = 0
 	egyptian_pagan = 0
-	aten_pagan = 1	
+	aten_pagan = 0
 }
 
 k_hungary = {
 	celtic_pagan_reformed = 50
 	hellenic_pagan = 400
 	egyptian_pagan = 0
-	aten_pagan = 1	
+	aten_pagan = 0
 }
 
 ################################
@@ -415,7 +415,7 @@ k_poland = {
 	celtic_pagan_reformed = 25
 	hellenic_pagan = 0
 	egyptian_pagan = 0
-	aten_pagan = 1	
+	aten_pagan = 0
 }
 
 k_lithuania = {
@@ -449,14 +449,14 @@ k_perm = {
 	celtic_pagan_reformed = 0
 	hellenic_pagan = 0
 	egyptian_pagan = 0
-	aten_pagan = 1	
+	aten_pagan = 0	
 }
 
 k_volga_bulgaria = {
 	celtic_pagan_reformed = 0
 	hellenic_pagan = 0
 	egyptian_pagan = 0
-	aten_pagan = 1	
+	aten_pagan = 0	
 }
 
 k_cuman = {
@@ -468,16 +468,16 @@ k_cuman = {
 
 k_taurica = {
 	celtic_pagan_reformed = 0
-	hellenic_pagan = 0
+	hellenic_pagan = 75
 	egyptian_pagan = 0
-	aten_pagan = 1	
+	aten_pagan = 0
 }
 
 k_alania = {
 	celtic_pagan_reformed = 0
-	hellenic_pagan = 0
+	hellenic_pagan = 50
 	egyptian_pagan = 0
-	aten_pagan = 1	
+	aten_pagan = 0
 }
 
 k_turkestan = {
@@ -497,7 +497,7 @@ k_sindh = {
 	celtic_pagan_reformed = 0
 	hellenic_pagan = 0
 	egyptian_pagan = 0
-	aten_pagan = 1	
+	aten_pagan = 0
 }
 
 k_punjab = {

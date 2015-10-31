@@ -1,5 +1,4 @@
 pagan_group = {
-	has_coa_on_barony_only = no
 	hellenic_pagan = {
 		graphical_culture = westerngfx
 		
@@ -33,20 +32,22 @@ pagan_group = {
 		
 		religious_clothing_head = 5
 		religious_clothing_priest = 5
+
+		allow_in_ruler_designer = yes
 	}
 
 	titan_pagan = {
-		graphical_culture = westerngfx
+		graphical_culture = norsegfx
 
-		icon = 62
-		heresy_icon = 37
+		icon = 37
+		heresy_icon = 62
 		parent = hellenic_pagan
 
 		color = { 0.6 0.2 0.2 }
 
 		high_god_name = GOD_KRONOS
 		god_names = {
-			GOD_KRONOS GOD_OCEANUS GOD_TETHYS GOD_HYPERION GOD_THEIA GOD_RHEA GOD_ATLAS GOD_KOIOS GOD_PHOEBE GOD_MNEMOSYNE GOD_THEMIS GOD_KRIUS GOD_IAPETUS
+			GOD_KRONOS GOD_OCEANUS GOD_TETHYS GOD_HYPERION GOD_THEIA GOD_RHEA GOD_ATLAS GOD_KOIOS GOD_PHOEBE GOD_MNEMOSYNE GOD_THEMIS GOD_KRIOS GOD_IAPETUS
 		}
 		evil_god_names = {
 			GOD_JUNO GOD_VESTA GOD_MINERVA GOD_CERES GOD_DIANA GOD_VENUS GOD_MARS GOD_MERCURY GOD_JUPITER GOD_NEPTUNE GOD_VULCAN GOD_APOLLO	GOD_PROMETHEUS GOD_EPIMETHEUS	
@@ -69,7 +70,11 @@ pagan_group = {
 
 		religious_clothing_priest = 5
 
-		allow_in_ruler_designer = no
+		allow_in_ruler_designer = yes
+
+		character_modifier = {
+			combat_rating = 2
+		}
 	}
 
 	promethean_pagan = {
@@ -77,8 +82,11 @@ pagan_group = {
 
 		pre_reformed = yes
 
-		icon = 62
-		heresy_icon = 37
+		ai_convert_other_group = 2 # always try to convert
+		ai_convert_same_group = 2 # always try to convert
+
+		icon = 37
+		heresy_icon = 62
 		parent = hellenic_pagan
 
 		color = { 0.6 0 0 }
@@ -107,7 +115,11 @@ pagan_group = {
 		religious_clothing_head = 5
 		religious_clothing_priest = 5
 
-		allow_in_ruler_designer = no
+		allow_in_ruler_designer = yes
+
+		character_modifier = {
+			learning = 4
+		}
 	}
 
 	celtic_pagan_reformed = {
@@ -118,6 +130,7 @@ pagan_group = {
 		heresy_icon = 65
 		
 		ai_convert_other_group = 2 # always try to convert
+		ai_convert_same_group = 2 # always try to convert
 		
 		color = { 0.2 0.6 0.03 }
 		crusade_name = GREAT_HOLY_WAR
@@ -125,10 +138,10 @@ pagan_group = {
 		priest_title = DRUID
 		can_call_crusade = yes
 
-		high_god_name = GOD_CERNNUNOS
+		high_god_name = GOD_LUGH
 
 		god_names = {
-			GOD_ANGUS GOD_MANANNAN GOD_DAGHDA GOD_LUGH GOD_MACHA GOD_DANA GOD_NUADA GOD_HORNED_ONE
+			GOD_ANGUS GOD_MANANNAN GOD_DAGHDA GOD_LUGH GOD_MACHA GOD_DANA GOD_NUADA GOD_HORNED_ONE GOD_CERNNUNOS
 		}
 		evil_god_names = {
 			THE_FOMORIANS EVIL_BALOR EVIL_BRES GOD_CAILLEACH
@@ -189,10 +202,10 @@ pagan_group = {
 		scripture_name = THE_BALLADS
 		priest_title = DRUID
 
-		high_god_name = GOD_CERNNUNOS
+		high_god_name = GOD_LUGH
 
 		god_names = {
-			GOD_ANGUS GOD_MANANNAN GOD_DAGHDA GOD_LUGH GOD_MACHA GOD_DANA GOD_NUADA GOD_HORNED_ONE
+			GOD_ANGUS GOD_MANANNAN GOD_DAGHDA GOD_LUGH GOD_MACHA GOD_DANA GOD_NUADA GOD_HORNED_ONE GOD_CERNNUNOS
 		}
 		evil_god_names = {
 			THE_FOMORIANS EVIL_BALOR EVIL_BRES GOD_CAILLEACH
@@ -278,7 +291,6 @@ pagan_group = {
 		
 		religious_clothing_head = 5
 		religious_clothing_priest = 5
-		
 	}
 	
 	aten_pagan = { # Atenism
@@ -286,11 +298,17 @@ pagan_group = {
 		
 		pre_reformed = yes
 
-		icon = 67
-		heresy_icon = 66
+		icon = 66
+		heresy_icon = 67
 		
+		ai_convert_other_group = 2 # always try to convert
+		ai_convert_same_group = 2 # always try to convert
+
 		color = {0.9 0.8 0}
 		
+		scripture_name = AMARNA_SCROLLS
+		crusade_name = GREAT_HOLY_WAR
+
 		high_god_name = GOD_ATEN
 		god_names = {
 			GOD_ATEN
@@ -299,9 +317,20 @@ pagan_group = {
 			GOD_SET
 		}
 		
-		allow_in_ruler_designer = no
+		uses_decadence = yes
+
 		parent = egyptian_pagan
 		allow_rivermovement = yes
+		priests_can_marry = yes
+		female_temple_holders = yes
+		max_wives = 4
+		divine_blood = yes
+		pc_marriage = yes
+		bs_marriage = yes
 		can_call_crusade = yes
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
+
+		allow_in_ruler_designer = yes
 	}
 }

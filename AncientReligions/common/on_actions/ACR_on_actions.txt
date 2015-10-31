@@ -13,7 +13,6 @@ on_yearly_pulse = {
 	}
 	
 	random_events = {
-		# Ancient Religions
 		100 = ancrel.1260 # fennid arrested by marshal, catholics only (why?)
 		100 = ancrel.1254 # fian visiting your court
 	}

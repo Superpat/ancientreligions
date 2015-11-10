@@ -10,7 +10,7 @@ on_yearly_pulse = {
 	events = {
 		#ACR Events
 		ancrel.0153 # Liege doesn't have a Druid
-		ancrel.4100 #Nile flood
+		ancrel.4100 # Nile flood
 	}
 	
 	random_events = {

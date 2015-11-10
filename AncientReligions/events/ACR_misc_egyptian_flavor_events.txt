@@ -1,20 +1,15 @@
-#######################################################################################
+###################################
 #
+# Ancient Religions
+# - Egyptian Flavor Events
 #
-# Micellaneous Flavor Events for Ancient Egypt
+# ancrel.4150 - ancrel.4199 Flavor Events
 #
-# ancrel.4100-4199 reserved
+# Author: Cybrxkhan
 #
-# List of stuff:
-#
-# ancrel.4150-4199 Generic Egyptian Flavor Events
-#
-#######################################################################################
-
+###################################
 
 namespace = ancrel
-
-
 
 # Mmm garlic bby
 character_event = {

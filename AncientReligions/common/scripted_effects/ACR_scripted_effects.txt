@@ -12,3 +12,10 @@ clear_unbinding_effect = {
 	clr_character_flag = do_not_disturb
 	remove_character_modifier = holding_unbinding_festival
 }
+
+clear_nile_flooding_effect = {
+	remove_province_modifier = VIET_nile_flood_good
+	remove_province_modifier = VIET_nile_flood_great
+	remove_province_modifier = VIET_nile_flood_overflow
+	remove_province_modifier = VIET_nile_flood_poor
+}

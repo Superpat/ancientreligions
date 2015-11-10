@@ -1,15 +1,13 @@
-#######################################################################################
+###################################
 #
+# Ancient Religions
+# - Egyptian Flavor Events
 #
-# Micellaneous Flavor Events for Ancient Egypt
+# ancrel.4100 - ancrel.4149 Nile Flooding Events
 #
-# ancrel.4100-4199 reserved
-#
-# List of stuff:
-#
-# ancrel.4100-4199 Nile Flood events #NOTE TO SELF: CONNECT TO SOME EGYPTIAN DECISION THINGY
-#
-#######################################################################################
+# Author: Cybrxkhan
+# NOTE TO SELF: CONNECT TO SOME EGYPTIAN DECISION THINGY
+###################################
 
 
 namespace = ancrel
@@ -27,8 +25,6 @@ character_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	
-	only_playable = yes
-	
 	trigger = {
 		religion = catholic
 		controls_religion = yes # Let it happen for the Pope. He's always around.
@@ -37,33 +33,9 @@ character_event = {
 	immediate = {
 		#choose Nile flood for the year
 		random_list = {
-			#normal flood
-			500 = {
+			500 = { #normal flood
 				788 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_good
 						duration = 365
@@ -73,30 +45,7 @@ character_event = {
 					}
 				}
 				789 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_good
 						duration = 365
@@ -106,30 +55,7 @@ character_event = {
 					}
 				}
 				790 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_good
 						duration = 365
@@ -139,30 +65,7 @@ character_event = {
 					}
 				}
 				791 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_good
 						duration = 365
@@ -172,30 +75,7 @@ character_event = {
 					}
 				}
 				794 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_good
 						duration = 365
@@ -205,30 +85,7 @@ character_event = {
 					}
 				}
 				795 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_good
 						duration = 365
@@ -238,30 +95,7 @@ character_event = {
 					}
 				}
 				796 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_good
 						duration = 365
@@ -271,30 +105,7 @@ character_event = {
 					}
 				}
 				797 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_good
 						duration = 365
@@ -304,30 +115,7 @@ character_event = {
 					}
 				}
 				798 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_good
 						duration = 365
@@ -337,30 +125,7 @@ character_event = {
 					}
 				}
 				799 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_good
 						duration = 365
@@ -370,30 +135,7 @@ character_event = {
 					}
 				}
 				800 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_good
 						duration = 365
@@ -403,30 +145,7 @@ character_event = {
 					}
 				}
 				802 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_good
 						duration = 365
@@ -438,30 +157,7 @@ character_event = {
 			}
 			100 = { #great flood
 				788 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_great
 						duration = 365
@@ -471,30 +167,7 @@ character_event = {
 					}
 				}
 				789 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_great
 						duration = 365
@@ -504,30 +177,7 @@ character_event = {
 					}
 				}
 				790 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_great
 						duration = 365
@@ -537,30 +187,7 @@ character_event = {
 					}
 				}
 				791 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_great
 						duration = 365
@@ -570,30 +197,7 @@ character_event = {
 					}
 				}
 				794 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_great
 						duration = 365
@@ -603,30 +207,7 @@ character_event = {
 					}
 				}
 				795 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_great
 						duration = 365
@@ -636,30 +217,7 @@ character_event = {
 					}
 				}
 				796 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_great
 						duration = 365
@@ -669,30 +227,7 @@ character_event = {
 					}
 				}
 				797 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_great
 						duration = 365
@@ -702,30 +237,7 @@ character_event = {
 					}
 				}
 				798 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_great
 						duration = 365
@@ -735,30 +247,7 @@ character_event = {
 					}
 				}
 				799 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_great
 						duration = 365
@@ -768,30 +257,7 @@ character_event = {
 					}
 				}
 				800 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_great
 						duration = 365
@@ -801,30 +267,7 @@ character_event = {
 					}
 				}
 				802 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_great
 						duration = 365
@@ -836,30 +279,7 @@ character_event = {
 			}
 			100 = { #overflow flood
 				788 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_overflow
 						duration = 365
@@ -869,30 +289,7 @@ character_event = {
 					}
 				}
 				789 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_overflow
 						duration = 365
@@ -902,30 +299,7 @@ character_event = {
 					}
 				}
 				790 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_overflow
 						duration = 365
@@ -935,30 +309,7 @@ character_event = {
 					}
 				}
 				791 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_overflow
 						duration = 365
@@ -968,30 +319,7 @@ character_event = {
 					}
 				}
 				794 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_overflow
 						duration = 365
@@ -1001,30 +329,7 @@ character_event = {
 					}
 				}
 				795 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_overflow
 						duration = 365
@@ -1034,30 +339,7 @@ character_event = {
 					}
 				}
 				796 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_overflow
 						duration = 365
@@ -1067,30 +349,7 @@ character_event = {
 					}
 				}
 				797 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_overflow
 						duration = 365
@@ -1100,30 +359,7 @@ character_event = {
 					}
 				}
 				798 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_overflow
 						duration = 365
@@ -1133,30 +369,7 @@ character_event = {
 					}
 				}
 				799 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_overflow
 						duration = 365
@@ -1166,30 +379,7 @@ character_event = {
 					}
 				}
 				800 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_overflow
 						duration = 365
@@ -1199,30 +389,7 @@ character_event = {
 					}
 				}
 				802 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_overflow
 						duration = 365
@@ -1234,30 +401,7 @@ character_event = {
 			}
 			200 = { #poor flood
 				788 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_poor
 						duration = 365
@@ -1267,30 +411,7 @@ character_event = {
 					}
 				}
 				789 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_poor
 						duration = 365
@@ -1300,30 +421,7 @@ character_event = {
 					}
 				}
 				790 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_poor
 						duration = 365
@@ -1333,30 +431,7 @@ character_event = {
 					}
 				}
 				791 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_poor
 						duration = 365
@@ -1366,30 +441,7 @@ character_event = {
 					}
 				}
 				794 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_poor
 						duration = 365
@@ -1399,30 +451,7 @@ character_event = {
 					}
 				}
 				795 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_poor
 						duration = 365
@@ -1432,30 +461,7 @@ character_event = {
 					}
 				}
 				796 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_poor
 						duration = 365
@@ -1465,30 +471,7 @@ character_event = {
 					}
 				}
 				797 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_poor
 						duration = 365
@@ -1498,30 +481,7 @@ character_event = {
 					}
 				}
 				798 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_poor
 						duration = 365
@@ -1531,30 +491,7 @@ character_event = {
 					}
 				}
 				799 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_poor
 						duration = 365
@@ -1564,30 +501,7 @@ character_event = {
 					}
 				}
 				800 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_poor
 						duration = 365
@@ -1597,30 +511,7 @@ character_event = {
 					}
 				}
 				802 = {
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_good
-						}
-						remove_province_modifier = VIET_nile_flood_good
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_great
-						}
-						remove_province_modifier = VIET_nile_flood_great
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_overflow
-						}
-						remove_province_modifier = VIET_nile_flood_overflow
-					}
-					if = {
-						limit = {
-							has_province_modifier = VIET_nile_flood_poor
-						}
-						remove_province_modifier = VIET_nile_flood_poor
-					}
+					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_poor
 						duration = 365

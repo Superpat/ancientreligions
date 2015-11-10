@@ -74,3 +74,66 @@ akhetaten_admin = {
 	icon = 4
 	local_tax_modifier = 0.6
 }
+
+#Nile Flood Modifiers
+VIET_nile_flood_good = {
+	icon = 12
+
+	local_revolt_risk = -0.01
+	#local_tax_modifier = 0.1
+}
+VIET_nile_flood_great = {
+	icon = 12
+
+	local_revolt_risk = -0.05
+	local_tax_modifier = 0.1
+	local_build_time_modifier = -0.05
+	local_build_cost_modifier = -0.05
+}
+VIET_nile_flood_poor = {
+	icon = 30
+
+	local_revolt_risk = 0.05
+	local_tax_modifier = -0.1
+	#local_build_time_modifier = 0.05
+	#local_build_cost_modifier = 0.05
+}
+VIET_nile_flood_overflow = {
+	icon = 30
+
+	local_revolt_risk = 0.05
+	local_tax_modifier = -0.05
+	local_build_time_modifier = 0.1
+	local_build_cost_modifier = 0.1
+}
+VIET_garlic_distribution = {
+	icon = 8
+
+	church_opinion = 10
+	monthly_character_piety = 0.02
+}
+VIET_planted_palm_trees = {
+	icon = 7
+
+	local_tax_modifier = 0.01
+}
+VIET_khnum_amulet = {
+	icon = 12
+
+	health = 0.2
+	stewardship = 1
+}
+VIET_province_desecrated_egyptian_tombs = {
+	icon = 22
+
+	local_revolt_risk = 0.01
+	tech_growth_modifier = -0.03
+	local_tax_modifier = -0.05
+}
+VIET_not_upholding_maat = {
+	icon = 35
+	
+	global_revolt_risk = 0.01
+	monthly_character_piety = -0.1
+	same_religion_opinion = -15
+}

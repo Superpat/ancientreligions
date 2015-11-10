@@ -1463,8 +1463,6 @@ character_event = {
 	}
 }
 
-
-
 # Desecrated Tombs
 province_event = {
 	id = ancrel.4153
@@ -1568,9 +1566,6 @@ province_event = {
 	}
 }
 
-
-
-
 # Bes protects from nightmare
 character_event = {
 	id = ancrel.4154
@@ -1644,7 +1639,6 @@ character_event = {
 	}
 }
 
-
 # Expel evil
 character_event = {
 	id = ancrel.4155
@@ -1707,7 +1701,7 @@ character_event = {
 		}
 	}
 
-	option = { # Add 'em
+	option = { # Shake the devil out!
 		name = ancrel.4155.a
 		wealth = -10
 		character_event = { id = ancrel.4156 tooltip = ancrel.4156.tooltip }
@@ -1742,7 +1736,7 @@ character_event = {
 	}
 }
 
-# Expel evil
+# Expel evil, pt 2
 narrative_event = {
 	id = ancrel.4156
 	title = ancrel.4156.title
@@ -1838,9 +1832,6 @@ narrative_event = {
 	}
 }
 
-
-
-
 # Upholding le Ma'at
 character_event = {
 	id = ancrel.4157
@@ -1915,7 +1906,6 @@ character_event = {
 	}
 }
 
-
 # Not Upholding le Ma'at
 character_event = {
 	id = ancrel.4158
@@ -1943,9 +1933,11 @@ character_event = {
 			trait = greedy
 			trait = wroth
 		}
-		NOT = { trait = kind }
-		NOT = { trait = charitable }
-		NOT = { trait = just }
+		NOR = { 
+			trait = kind
+			trait = charitable
+			trait = just
+		}
 	}
 	
 	weight_multiplier = {
@@ -1995,7 +1987,6 @@ character_event = {
 	}
 }
 
-
 # Pussycat
 character_event = {
 	id = ancrel.4159
@@ -2016,10 +2007,12 @@ character_event = {
 		is_abroad = no
 		any_spouse = {
 			is_adult = yes
-			NOT = { age = 40 }
-			NOT = { trait = incapable }
-			NOT = { trait = inbred }
-			NOT = { trait = celibate }
+			NOR = { 
+				age = 40
+				trait = incapable
+				trait = inbred
+				trait = celibate
+			}
 			OR = {
 				is_lover = yes
 				is_friend = yes
@@ -2071,7 +2064,7 @@ character_event = {
 		}
 	}
 
-	option = { # Add 'em
+	option = {
 		name = ancrel.4159.a
 		random_spouse = {
 			limit = {
@@ -2113,7 +2106,8 @@ character_event = {
 	}
 }
 
-#As a dog person, I wanted to puke writing this pro-Cat event. :(
+# A criminal has killed a cat, a heinous crime!
+# cybrxkhan: As a dog person, I wanted to puke writing this pro-Cat event. :(
 character_event = {
 	id = ancrel.4160
 	desc = ancrel.4160.desc
@@ -2161,9 +2155,20 @@ character_event = {
 		}
 	}
 
-	option = { # Add 'em
+	option = { # Punish him
 		name = ancrel.4160.a
-		prestige = 10
+		piety = 10
 		custom_tooltip = { text = VIET_stupid_cat_lovers_boooo }
+	}
+
+	option = { # it's just a cat
+		name = ancrel.4160.b
+		prestige = 10
+		piety = -10
+		random = {
+			chance = 20
+
+			add_trait = cynical
+		}
 	}
 }

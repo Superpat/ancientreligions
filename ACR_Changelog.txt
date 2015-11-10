@@ -19,6 +19,7 @@ Celtic:
 - The Wolf Tails will still form if you somehow manage to Reform Celtic before converting even a single province.
 -- In this case, they will be Druidic to start.
 - In the mercenary spirit of their ancient forebears, The Wolf Tails can be hired by anyone who has the coin.
+- Fixed broken Headhunter events. It should be possible to become a Living Legend again.
 
 Hellenic:
 - Added a Hellenic revival event chain if the Mani Peninsula (Monemvasia) is in the realm, as an homage to the 30 pages thread about that on the forum.
@@ -62,6 +63,8 @@ Kemetic:
 -- Every year the Nile river will flood, sometimes good, sometimes bad.
 - Numerous flavor events for Egyptian and Aten pagans, also courtesy of cybrxkhan.
 -- Events involving cat worship, palm trees, and keeping the principle of Ma'at in your heart.
+- Sed Festival back to requiring a 30 year reign to use.
+-- This is more historical and matches the fairly significant boons rewarded. The previous reduction to 10 years was to counteract the lack of flavorful events and decisions available to Kemetic and Atenic characters.
 
 Atenic:
 - Faithful followers of Aten can now restore Akhetaten, the ancient city we call Amarna today.

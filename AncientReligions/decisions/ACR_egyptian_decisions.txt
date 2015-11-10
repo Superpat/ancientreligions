@@ -11,7 +11,7 @@ decisions = {
 				religion = egyptian_pagan
 				religion = aten_pagan
 			}
-			ruled_years = 10
+			ruled_years = 30
 			NOT = {	has_character_flag = holding_sed_festival }
 			NOT = { has_character_modifier = held_sed_festival_timer }
 		}
@@ -78,54 +78,6 @@ decisions = {
 			wealth = -1000
 			795 = {
 				province_event = { id = ancrel.4000 }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 0
-				NOT = {
-					wealth = 1500
-				}
-			}
-			modifier = {
-				factor = 0
-				NOT = {
-					learning = 8
-				}
-			}
-		}
-	}
-
-	restore_akhetaten = {
-		is_high_prio = yes
-		potential = {
-			is_playable = yes	
-			independent = yes
-			higher_tier_than = duke
-			religion = aten_pagan
-			NOT = { has_global_flag = akhetaten_restored }
-			NOT = { has_global_flag = akhetaten_restoring }
-		}	
-		allow = {
-			wealth = 1000
-			795 = {
-				owner = {
-					character = ROOT
-				}
-			}
-			war = no
-			has_regent = no	
-		}
-		effect = {
-			set_global_flag = akhetaten_restoring
-			wealth = -1000
-			795 = {
-				province_event = { id = ancrel.5000 }
 			}
 		}
 		revoke_allowed = {
@@ -420,6 +372,56 @@ decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+	}
+
+	# </ck2+>
+	
+	restore_akhetaten = {
+		is_high_prio = yes
+		potential = {
+			is_playable = yes	
+			independent = yes
+			higher_tier_than = duke
+			religion = aten_pagan
+			NOT = { has_global_flag = akhetaten_restored }
+			NOT = { has_global_flag = akhetaten_restoring }
+		}	
+		allow = {
+			wealth = 1000
+			795 = {
+				owner = {
+					character = ROOT
+				}
+			}
+			war = no
+			has_regent = no	
+		}
+		effect = {
+			set_global_flag = akhetaten_restoring
+			wealth = -1000
+			795 = {
+				province_event = { id = ancrel.5000 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					wealth = 1500
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					learning = 8
+				}
+			}
 		}
 	}
 

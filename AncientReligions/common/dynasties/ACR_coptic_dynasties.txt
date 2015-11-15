@@ -117,3 +117,8 @@
 	name = "Intefid"
 	culture = egyptian_coptic
 }
+
+1146025 = {
+	name = "Ramessid"
+	culture = egyptian_coptic
+}

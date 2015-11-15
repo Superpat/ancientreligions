@@ -542,24 +542,24 @@ character_event = {
  			}
  			modifier = {
  				factor = 1.5
- 				trait = posessed
+ 				trait = possessed
  			}
  			modifier = {
  				factor = 1.1
- 				NOT = {
- 					opinion = { who = job_spiritual value = 30 }
+ 				job_spiritual = {
+ 					ROOT = { NOT = { opinion = { who = PREV value = 0 } } }
  				}
  			}
  			modifier = {
  				factor = 1.1
- 				NOT = {
- 					opinion = { who = job_spiritual value = 0 }
+ 				job_spiritual = {
+ 					ROOT = { NOT = { opinion = { who = PREV value = -30 } } }
  				}
  			}
  			modifier = {
  				factor = 1.1
- 				NOT = {
- 					opinion = { who = job_spiritual value = -30 }
+ 				job_spiritual = {
+ 					ROOT = { NOT = { opinion = { who = PREV value = -60 } } }
  				}
  			}
  		}
@@ -574,6 +574,7 @@ character_event = {
 		}
 
 		job_spiritual = {
+			prestige = 100
 			save_event_target_as = festival_prometheus
 			opinion = { modifier = ancrel_honored_me who = ROOT }
 		}
@@ -596,7 +597,9 @@ character_event = {
  			}
  			modifier = {
  				factor = 1.2
- 				opinion = { who = job_spritual value = 60 }
+ 				job_spiritual = {
+ 					ROOT = { opinion = { who = PREV value = 60 } }
+ 				}
  			}
  			modifier = {
  				factor = 1.2
@@ -604,7 +607,9 @@ character_event = {
  			}
  			modifier = {
  				factor = 1.2
- 				is_plot_target_of = job_spiritual
+ 				job_spiritual = {
+ 					ROOT = { is_plot_target_of = PREV }
+ 				}
  			}
  		}
 	}
@@ -624,6 +629,7 @@ character_event = {
 				NOT = { has_job_title = job_spiritual }
 			}
 
+			prestige = 100
 			save_event_target_as = festival_prometheus
 			opinion = { modifier = ancrel_honored_me who = ROOT }
 		}
@@ -643,11 +649,15 @@ character_event = {
  			factor = 25
  			modifier = {
  				factor = 1.2
- 				NOT = { opinion = { who = job_spiritual value = -30 } }
+ 				job_spiritual = {
+ 					ROOT = { NOT = { opinion = { who = PREV value = -30 } } }
+ 				}
  			}
  			modifier = {
  				factor = 1.2
- 				NOT = { opinion = { who = job_spiritual value = -60 } }
+ 				job_spiritual = {
+ 					ROOT = { NOT = { opinion = { who = PREV value = -60 } } }
+ 				}
  			}
  			modifier = {
  				factor = 1.5
@@ -671,6 +681,7 @@ character_event = {
 			limit = {
 				NOT = { has_job_title = job_spiritual }
 			}
+			prestige = 100
 			save_event_target_as = festival_prometheus
 			opinion = { modifier = ancrel_honored_me who = ROOT }
 		}
@@ -690,11 +701,15 @@ character_event = {
  			factor = 25
  			modifier = {
  				factor = 1.2
- 				NOT = { opinion = { who = job_spiritual value = -30 } }
+ 				job_spiritual = {
+ 					ROOT = { NOT = { opinion = { who = PREV value = -30 } } }
+ 				}
  			}
  			modifier = {
  				factor = 1.2
- 				NOT = { opinion = { who = job_spiritual value = -60 } }
+ 				job_spiritual = {
+ 					ROOT = { NOT = { opinion = { who = PREV value = -60 } } }
+ 				}
  			}
  			modifier = {
  				factor = 1.5
@@ -702,7 +717,7 @@ character_event = {
  			}
  			modifier = {
  				factor = 1.1
- 				trait = insane
+ 				trait = lunatic
  			}
  		}
 	}
@@ -746,24 +761,24 @@ character_event = {
  			}
  			modifier = {
  				factor = 1.5
- 				trait = posessed
+ 				trait = possessed
  			}
  			modifier = {
  				factor = 1.1
- 				NOT = {
- 					opinion = { who = job_marshal value = 30 }
+ 				job_marshal = {
+ 					ROOT = { NOT = { opinion = { who = PREV value = 30 } } }
  				}
  			}
  			modifier = {
  				factor = 1.1
- 				NOT = {
- 					opinion = { who = job_marshal value = 0 }
+ 				job_marshal = {
+ 					ROOT = { NOT = { opinion = { who = PREV value = 0 } } }
  				}
  			}
  			modifier = {
  				factor = 1.1
- 				NOT = {
- 					opinion = { who = job_marshal value = -30 }
+ 				job_marshal = {
+ 					ROOT = { NOT = { opinion = { who = PREV value = -30 } } }
  				}
  			}
  		}
@@ -778,6 +793,7 @@ character_event = {
 		}
 
 		job_marshal = {
+			prestige = 100
 			save_event_target_as = festival_heracles
 			opinion = { modifier = ancrel_honored_me who = ROOT }
 		}
@@ -802,7 +818,9 @@ character_event = {
  			}
  			modifier = {
  				factor = 1.2
- 				opinion = { who = job_marshal value = 60 }
+ 				job_marshal = {
+ 					ROOT = { opinion = { who = PREV value = 60 } }
+ 				}
  			}
  			modifier = {
  				factor = 1.2
@@ -810,7 +828,9 @@ character_event = {
  			}
  			modifier = {
  				factor = 1.2
- 				is_plot_target_of = job_marshal
+ 				job_marshal = {
+ 					ROOT = { is_plot_target_of = PREV }
+ 				}
  			}
  		}
 	}
@@ -835,6 +855,7 @@ character_event = {
 				NOT = { has_job_title = job_marshal }
 			}
 
+			prestige = 100
 			save_event_target_as = festival_heracles
 			opinion = { modifier = ancrel_honored_me who = ROOT }
 		}
@@ -858,11 +879,15 @@ character_event = {
  			factor = 25
  			modifier = {
  				factor = 1.2
- 				NOT = { opinion = { who = job_marshal value = -30 } }
+ 				job_marshal = {
+ 					ROOT = { NOT = { opinion = { who = PREV value = -30 } } }
+ 				}
  			}
  			modifier = {
  				factor = 1.2
- 				NOT = { opinion = { who = job_marshal value = -60 } }
+ 				job_marshal = {
+ 					ROOT = { NOT = { opinion = { who = PREV value = -60 } } }
+ 				}
  			}
  			modifier = {
  				factor = 1.5
@@ -892,6 +917,7 @@ character_event = {
 				NOT = { has_job_title = job_marshal }
 			}
 			save_event_target_as = festival_heracles
+			prestige = 100
 			opinion = { modifier = ancrel_honored_me who = ROOT }
 		}
 		job_marshal = {
@@ -913,11 +939,15 @@ character_event = {
  			factor = 25
  			modifier = {
  				factor = 1.2
- 				NOT = { opinion = { who = job_marshal value = -30 } }
+ 				job_marshal = {
+ 					ROOT = { NOT = { opinion = { who = PREV value = -30 } } }
+ 				}
  			}
  			modifier = {
  				factor = 1.2
- 				NOT = { opinion = { who = job_marshal value = -60 } }
+ 				job_marshal = {
+ 					ROOT = { NOT = { opinion = { who = PREV value = -60 } } }
+ 				}
  			}
  			modifier = {
  				factor = 1.5
@@ -925,7 +955,7 @@ character_event = {
  			}
  			modifier = {
  				factor = 1.1
- 				trait = insane
+ 				trait = lunatic
  			}
  		}
 	}
@@ -1188,7 +1218,7 @@ character_event = {
 			factor = 20
 			modifier = {
 				factor = 1.5
-				trait = lusftful
+				trait = lustful
 			}
 			modifier = {
 				factor = 5
@@ -1536,52 +1566,18 @@ character_event = {
 				}
 			}
 			if = {
-				if = {
-					limit = {
-						fertility = 0.5
-						FROM = { fertility = 0.5 }
-					}
-					random_list = {
-						75 = {
-							if = { 
-								limit = {
-									OR = {
-										AND = {
-											is_female = yes 
-											is_married = no
-											is_consort = no
-										}
-										FROM = {
-											is_female = yes
-											is_married = no
-											is_consort = no
-										}
-									}
-								}
-								impregnate = FROM
-								break = yes
-							}
-							impregnate_cuckoo = FROM
-						}
-						25 = { }
-					}
-					break = yes
+				limit = {
+					fertility = 0.5
+					FROM = { fertility = 0.5 }
 				}
-				
 				random_list = {
-					50 = {
+					75 = {
 						if = { 
 							limit = {
 								OR = {
-									AND = {
-										is_female = yes 
-										is_married = no
-										is_consort = no
-									}
+									is_female = yes
 									FROM = {
 										is_female = yes
-										is_married = no
-										is_consort = no
 									}
 								}
 							}
@@ -1590,8 +1586,28 @@ character_event = {
 						}
 						impregnate_cuckoo = FROM
 					}
-					50 = { }
+					25 = { }
 				}
+				break = yes
+			}
+			
+			random_list = {
+				50 = {
+					if = { 
+						limit = {
+							OR = {
+								is_female = yes 
+								FROM = {
+									is_female = yes
+								}
+							}
+						}
+						impregnate = FROM
+						break = yes
+					}
+					impregnate_cuckoo = FROM
+				}
+				50 = { }
 			}
 		}
 	}

@@ -85,3 +85,12 @@ temple_kingdom_of_egyptian_pagan;Pharaohate of;Phara de;Pharaohate of;;Pharaohat
 temple_empire_of_egyptian_pagan;Empire of;Empire de;Empire of;;Empire of;;;;;;;;;x
 MERYATEN;Meryaten;;;;;;;;;;;;;x
 b_meir;Akhetaten;;;;;;;;;;;;;x
+###### Coptic;;;;;;;;;;;;;;x
+egyptian_coptic;Coptic;;;;;;;;;;;;;x
+egyptian_coptic_desc;The Copts represent a return to the ancient ways of the Egyptian people. The result of a revivalist movement in Egypt, elements of Ancient Egyptian language, customs, architecture, and art have all been adapted to serve the times.;;;;;;;;;;;;;x
+ca_culture_egyptian_coptic_1;Temple of Anhur;;;;;;;;;;;;;x
+ca_culture_egyptian_coptic_2;Temple of Anhur;;;;;;;;;;;;;x
+ca_culture_egyptian_coptic_3;Temple of Anhur;;;;;;;;;;;;;x
+ca_culture_egyptian_coptic_4;Temple of Anhur;;;;;;;;;;;;;x
+ca_culture_egyptian_coptic_1_desc;A building dedicated to the study of war. Named for the Anhur, the god of war, this temple is home to the elite Anhuri warriors. Here these fighters hone their skills with the Khopesh and mounted archery.;;;;;;;;;;;;;;x
+RETTYPE_CUL_COPTIC;Anhuri Warriors;;;;;;;;;;;;;x

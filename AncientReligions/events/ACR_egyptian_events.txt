@@ -648,10 +648,7 @@ character_event = {
 
 #Flood calculator
 character_event = {
-	id = ancrel.4100
-	desc = AI_EVENT
-	picture = "GFX_evt_ancient_egypt"
-	
+	id = ancrel.4100	
 	hide_window = yes
 	is_triggered_only = yes
 	
@@ -1221,8 +1218,6 @@ character_event = { #poor
 #
 ###################################
 
-namespace = ancrel
-
 # Mmm garlic bby
 character_event = {
 	id = ancrel.4150
@@ -1375,7 +1370,7 @@ character_event = {
 			chance = 10
 		}
 		capital_scope = {
-			add_character_modifier = {
+			add_province_modifier = {
 				name = VIET_planted_palm_trees
 				duration = 3650
 			}		
@@ -1507,8 +1502,8 @@ province_event = {
 		name = ancrel.4153.a
 		owner = {
 			set_character_flag = VIET_descrated_egyptian_tombs_happened
+			prestige = -20
 		}
-		prestige = -20
 		random_list = {
 			5 = {
 				add_province_modifier = {
@@ -1540,9 +1535,9 @@ province_event = {
 		name = ancrel.4153.b
 		owner = {
 			set_character_flag = VIET_descrated_egyptian_tombs_happened
+			wealth = -40
+			prestige = -10
 		}
-		wealth = -40
-		prestige = -10
 		random_list = {
 			33 = {
 				add_province_modifier = {
@@ -1737,7 +1732,7 @@ character_event = {
 }
 
 # Expel evil, pt 2
-narrative_event = {
+character_event = {
 	id = ancrel.4156
 	title = ancrel.4156.title
 	desc = ancrel.4156.desc
@@ -2014,8 +2009,8 @@ character_event = {
 				trait = celibate
 			}
 			OR = {
-				is_lover = yes
-				is_friend = yes
+				is_lover = PREV
+				is_friend = PREV
 				opinion = { who = ROOT value = 25 }
 				trait = lustful
 			}
@@ -2074,8 +2069,8 @@ character_event = {
 				NOT = { trait = inbred }
 				NOT = { trait = celibate }
 				OR = {
-					is_lover = yes
-					is_friend = yes
+					is_lover = PREV
+					is_friend = PREV
 					opinion = { who = ROOT value = 25 }
 					trait = lustful
 				}

@@ -65,6 +65,9 @@ Kemetic:
 -- Events involving cat worship, palm trees, and keeping the principle of Ma'at in your heart.
 - Sed Festival back to requiring a 30 year reign to use.
 -- This is more historical and matches the fairly significant boons rewarded. The previous reduction to 10 years was to counteract the lack of flavorful events and decisions available to Kemetic and Atenic characters.
+- Coptic culture is available through ruler designer and the console.
+-- Coptics have access to a Khopesh wielding heavy infantry/horse archer retinue called the Anhuri.
+-- Coptics also can build a Temple of Anhur building to enhance your heavy infantry troops.
 
 Atenic:
 - Faithful followers of Aten can now restore Akhetaten, the ancient city we call Amarna today.

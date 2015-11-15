@@ -139,7 +139,7 @@ ancrel.3489.a;That coward!;;;;;;;;;;;;;x
 ancrel.3490.desc;You were discussing the weather with [From.GetTitledFirstName] when you heard a strange grinding behind you. The next thing you know, [From.GetFirstName] has thrown you to the ground out of harms way, and the statue has collapsed onto [From.GetHerHim]!;;;;;;;;;;;;;x
 ancrel.3490.a;[From.GetSheHe]'s a hero!;;;;;;;;;;;;;x
 ancrel.3491.desc;An artist from a foreign land has just finished a mural and is revealing it for the first time. The gathered crowd is buzzing with excitement... at least until the cover is removed. The quality is excellent, but liberties were taken. The mural depicts Promethia and Epimethia, and he calls it "The Sisters." The crowd is, to put it lightly, incensed.;;;;;;;;;;;;;x
-ancrel3492.desc;As you stand in the city square watching a firedance, the light of the performance barely illuminating the dark corner of the plaza, [From.GetTitledFirstName], your liege, whispers something... carnal, into your ear. [From.GetSheHeCap] is attempting to seduce you!;;;;;;;;;;;;;x
+ancrel.3492.desc;As you stand in the city square watching a firedance, the light of the performance barely illuminating the dark corner of the plaza, [From.GetTitledFirstName], your liege, whispers something... carnal, into your ear. [From.GetSheHeCap] is attempting to seduce you!;;;;;;;;;;;;;x
 ancrel.3541.desc;Due to the ongoing conflict, [From.GetTitledFirstName] must cancel the Unbinding Festival.;;;;;;;;;;;;;x
 ancrel.3542.desc;Due to the ongoing conflict, you must cancel the Unbinding Festival.;;;;;;;;;;;;;x
 ancrel.3543.desc;[From.GetTitledFirstName] has defied tradition and named [festival_heracles.GetTitledFirstName] as the Festival Heracles.;;;;;;;;;;;;;x

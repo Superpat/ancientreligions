@@ -7,8 +7,7 @@
 # 5 - Archers
 # 6 - Horse Archers
 
-RETTYPE_CUL_ROMAN =
-{
+RETTYPE_CUL_ROMAN = {
 	first_type = 1
 	first_amount = 225
 	second_type = 3
@@ -35,5 +34,22 @@ RETTYPE_CUL_GAULISH = {
 
 	modifier = {
 		knights_offensive = 0.3
+	}
+}
+
+RETTYPE_CUL_COPTIC = {
+	first_type = 1
+	first_amount = 175
+	second_type = 6
+	second_amount = 75
+
+	potential = {
+		culture = egyptian_coptic
+	}
+
+	modifier = {
+		heavy_infantry_offensive = 0.2
+		heavy_infantry_defensive = 0.1
+		horse_archers_offensive = 0.2
 	}
 }

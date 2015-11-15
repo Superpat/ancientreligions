@@ -16,13 +16,7 @@ title_commander = {
 				OR = {
 					is_female = no
 					liege = {
-						OR = {
-							religion = cathar
-							religion = messalian
-							religion = celtic_pagan
-							religion = celtic_pagan_reformed
-							religion = promethean_pagan
-						}
+						is_feminist = yes
 						religion = ROOT
 					}
 				}

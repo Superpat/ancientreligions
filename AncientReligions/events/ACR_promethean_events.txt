@@ -1806,7 +1806,7 @@ character_event = {
 
 # a vassal is burned by fire dancer oil!
 character_event = {
-	id = ancrel.3492
+	id = ancrel.3494
 	hide_window = yes
 
 	trigger = { 
@@ -2271,7 +2271,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 5
-				trait = cynic
+				trait = cynical
 			}
 		}
 	}
@@ -2289,7 +2289,7 @@ character_event = {
 			modifier = {
 				factor = 10
 				NOR = {
-					trait = cynic
+					trait = cynical
 					trait = zealous
 				}
 			}
@@ -2317,7 +2317,7 @@ character_event = {
 			factor = 50
 			modifier = {
 				factor = 5
-				trait = coward
+				trait = craven
 			}
 		}
 	}

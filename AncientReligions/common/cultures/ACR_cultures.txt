@@ -60,3 +60,31 @@ celtic = {
 		mother_name_chance = 10
 	}	
 }
+
+arabic = {
+	egyptian_coptic = {
+		graphical_cultures = { arabicgfx muslimgfx }
+		
+		color = { 0.2 0.7 0.1 }
+
+		male_names = {
+            Aahotepre Ahmes Ahmose Akhenaten Amasis Amenemhat Amenemnisu Amenemope Amenhotep Chephren Cheops Dedumose Hakor Hor Hori 
+            Inkaef Intef Iuput Kagemni Khafra Khety Khnumhotep Khufu Mentuhotep Minkhaf Neferhotep Neferkare Nefermaat Nepherites 
+            Osorkon Prehotep Psusennes Rahotep Ramesses Senusret Seti Sobekhotep Thutmose Userkaf Yakareb
+		}
+		female_names = {
+            Aat Abar Ahhotep Ahmose Ankhesenpepi Arsinoe Aya Baketwernel Bastet Cleopatra Henuttawy Henutsen Hetepheres 
+            Iput Iset Isetnofret Karomama Khamerernebty Khentkaus Khuit Kiya Maatkare Meketaten Menhet Meresankh Meritamen Meritites 
+            Nefertari Nefertkau Nofret Takhat Takahatenamun Tentamun Tiaa Tiye
+		}
+		
+		male_patronym = "ari ne "
+		female_patronym = "ari ne "
+		prefix = yes
+		
+		founder_named_dynasties = yes
+		seafarer = yes
+
+		modifier = default_culture_modifier
+	}
+}

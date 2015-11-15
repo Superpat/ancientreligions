@@ -176,3 +176,11 @@ expected_next_title_druid_circle_member_tooltip;This druid is probably the next 
 SHOW_COLLEGE_OF_CARDINALS;Religious head electors;;;;;;;;;;;;;x
 POPE_VOTE_SCORE;§YReligious head suitability: $SCORE$§!;;;;;;;;;;;;;x
 CANDIDATE_SCORE;§YCandidate appointment score§!;;;;;;;;;;;;;x
+###### Gaulish;;;;;;;;;;;;;;x
+gaulish;Gaulish;Gaulish;Gaulish;;Gaulish;;;;;;;;;x
+RETTYPE_CUL_GAULISH;Gaulish Cavalry;Gaulish Cavalry;Gaulish Cavalry;;Gaulish Cavalry;;;;;;;;;x
+ca_culture_gaulish_1_desc;The Celts of Gaul were renowned for their excelent cavalry tactics and were often hired on as mercenaries. They even formed the core of the Roman Empire's cavalry regiments for several hundred years. This is where the new breed of Gaulish heavy cavalry are trained.;;;;;;;;;;;;;x
+ca_culture_gaulish_1;Cavalry Field;;;;;;;;;;;;;x
+ca_culture_gaulish_2;Cavalry Field;;;;;;;;;;;;;x
+ca_culture_gaulish_3;Cavalry Field;;;;;;;;;;;;;x
+ca_culture_gaulish_4;Cavalry Field;;;;;;;;;;;;;x

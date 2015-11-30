@@ -54,7 +54,7 @@ Titan Cult:
 -- Rome; because of the large temple to Saturn/Kronos.
 -- Antioch; because of a mosaic of/dedicated to Tethys. Also it spreads the sites out.
 -- Athens; Location of the Kronia festival and point of conflict with Prometheans and Hellenes.
--- Thessalia; location of Mt Othrys, the Titans capitol during the Titanomachy (basically the Titan Olympus).
+-- Thessalia; location of Mt Othrys, the Titan capitol during the Titanomachy (basically the Titan Olympus).
 -- Rhodes; Once held the Colossus, a massive statue to the titan Helios.
 - The Sickles are a holy order that can be created by Titan Cultists. The culture of the holy order matches the organizer.
 

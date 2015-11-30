@@ -151,6 +151,7 @@ character_event = {
 		is_ruler = no
 		religion = celtic_pagan_reformed
 		is_heretic = no
+		is_councilor = no
 		
 		martial = 5
 		
@@ -242,9 +243,6 @@ character_event = {
 	
 	option = {
 		name =  EVTOPTAancrel.1320 # Ask to go
-		ai_chance = {
-			factor = 100
-		}
 		liege = {
 			character_event = {
 				id = ancrel.1321

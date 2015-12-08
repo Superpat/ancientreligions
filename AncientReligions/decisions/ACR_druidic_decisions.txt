@@ -518,11 +518,6 @@ decisions = {
 			NOT = { has_character_modifier = new_druid_in_court }
 			NOT = { has_character_flag = inviting_druid_over }
 			primary_title = { higher_tier_than = BARON }
-			NOT = {
-				any_courtier = {
-					has_minor_title = title_court_druid
-				}
-			}
 		}
 		allow = {
 			scaled_wealth = 0.5
@@ -585,6 +580,78 @@ decisions = {
 			}	
 		}
 	}
+
+	invite_bard_to_court = {
+		potential = {
+			OR = {
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed
+			}
+			NOT = { has_character_flag = inviting_bard_over }
+			primary_title = { higher_tier_than = BARON }
+		}
+		allow = {
+			scaled_wealth = 0.5
+		}
+		effect = {
+			scaled_wealth = -0.5
+			
+			set_character_flag = inviting_bard_over
+
+			hidden_tooltip = {
+				character_event = {
+					id = ancrel.0161
+					days = 0
+				}
+			}
+			
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.3 #Decrease chance AI will do this
+			}
+			modifier = {
+				factor = 0.1
+				any_courtier = {
+					trait = poet
+				}
+			}
+			modifier = {
+				factor = 2
+				trait = diligent
+			}	
+			modifier = {
+				factor = 0.5
+				trait = slothful
+			}	
+			modifier = {
+				factor = 2
+				trait = ambitious
+			}	
+			modifier = {
+				factor = 0.5
+				trait = imbecile
+			}		
+			modifier = {
+				factor = 2
+				trait = zealous
+			}	
+			modifier = {
+				factor = 0.5
+				trait = cynical
+			}			
+			modifier = {
+				factor = 2
+				primary_title = { higher_tier_than = DUKE }
+			}	
+			modifier = {
+				factor = 0.5
+				trait = slow
+			}	
+		}
+	}
+
 	assign_druid = { # For the AI, because they are dumb enough not to hand out minor titles
 		potential = {
 			ai = yes
@@ -624,6 +691,7 @@ decisions = {
 			}
 		}
 	}
+
 	assign_bard = { # For the AI, because they are dumb enough not to hand out minor titles
 		potential = {
 			ai = yes

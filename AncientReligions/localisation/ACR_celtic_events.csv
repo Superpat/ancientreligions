@@ -3,6 +3,8 @@
 ###### Druidic rebirth;;;;;;;;;;;;;;x
 reinstate_celtic_rites;The Old Gods;;;;;;;;;;;;;x
 reinstate_celtic_rites_desc;With the help of our court wizard, we could reinstate much of the old Celtic ways.;;;;;;;;;;;;;x
+invite_bard_to_court;Invite a Bard to Court;;;;;;;;;;;;;x
+invite_bard_to_court_desc;We could patronize one of the many bards wondering the realms and have them serve in our court.;;;;;;;;;;;;;x
 celtic_ways;Celtic Rites;;;;;;;;;;;;;x
 celtic_ways_desc;This character has taken up ancient Celtic traditions.;;;;;;;;;;;;;x
 EVTDESCancrel.0000;A faint whisper draws your attention and you find a haggard old man in a dark corner of your castle. Before you have a chance to throw him out, he explains that he is a wizard. He claims to be powerful in the ways of the old gods, and he has come to offer you his services.;;;;;;;;;;;;;x
@@ -189,6 +191,8 @@ EVTOPTAancrel.0159;[From.GetSheHeCap] shall be my new Court Druid !;;;;;;;;;;;;;
 EVTOPTBancrel.0159;[From.GetSheHeCap] shall be my new [From.GetChancellorName] !;;;;;;;;;;;;;x
 EVTOPTCancrel.0159;[From.GetSheHeCap] shall be my new [From.GetLordSpiritualName] !;;;;;;;;;;;;;x
 EVTOPTDancrel.0159;I will settle this matter later.;;;;;;;;;;;;;x
+ancrel.0161.desc;Word has spread throughout the realm that you seek to employ a bard, and sure enough, one has arrived at your court to take up your offer...;;;;;;;;;;;;;x
+ancrel.0161.a;I hope they know my favorite song.;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 new_druid_in_court;New Druid in Court;;;;;;;;;;;;;x
 new_druid_in_court_desc;A Druid has just arrived in this lord's court.;;;;;;;;;;;;;x

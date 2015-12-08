@@ -102,7 +102,7 @@ title_court_bard = {
 	grant_limit = 1
 	opinion_effect = 15
 	
-	monthly_salary = 0.075
+	monthly_salary = 0.1
 	monthly_prestige = 0.075
 	
 	is_unique = yes

@@ -191,8 +191,6 @@ EVTOPTAancrel.0159;[From.GetSheHeCap] shall be my new Court Druid !;;;;;;;;;;;;;
 EVTOPTBancrel.0159;[From.GetSheHeCap] shall be my new [From.GetChancellorName] !;;;;;;;;;;;;;x
 EVTOPTCancrel.0159;[From.GetSheHeCap] shall be my new [From.GetLordSpiritualName] !;;;;;;;;;;;;;x
 EVTOPTDancrel.0159;I will settle this matter later.;;;;;;;;;;;;;x
-ancrel.0161.desc;Word has spread throughout the realm that you seek to employ a bard, and sure enough, one has arrived at your court to take up your offer...;;;;;;;;;;;;;x
-ancrel.0161.a;I hope they know my favorite song.;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 new_druid_in_court;New Druid in Court;;;;;;;;;;;;;x
 new_druid_in_court_desc;A Druid has just arrived in this lord's court.;;;;;;;;;;;;;x

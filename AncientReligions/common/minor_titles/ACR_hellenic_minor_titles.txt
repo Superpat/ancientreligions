@@ -4,7 +4,7 @@ title_censor = {
 	grant_limit = 1
 	opinion_effect = 20
 
-	monthly_salary = 0.010
+	monthly_salary = 0.02
 	monthly_prestige = 0.075
 	
 	is_unique = yes
@@ -97,7 +97,7 @@ title_vestalis = {
 	grant_limit = 5
 	opinion_effect = 10
 
-	monthly_salary = 0.005
+	monthly_salary = 0.02
 	monthly_prestige = 0.300
 	monthly_piety = 0.100
 
@@ -146,7 +146,7 @@ title_vestalis_maxima = {
 	grant_limit = 1
 	opinion_effect = 15
 
-	monthly_salary = 0.010
+	monthly_salary = 0.05
 	monthly_prestige = 0.500
 	monthly_piety = 0.200
 

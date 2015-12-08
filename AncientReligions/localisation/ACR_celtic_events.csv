@@ -191,6 +191,16 @@ EVTOPTAancrel.0159;[From.GetSheHeCap] shall be my new Court Druid !;;;;;;;;;;;;;
 EVTOPTBancrel.0159;[From.GetSheHeCap] shall be my new [From.GetChancellorName] !;;;;;;;;;;;;;x
 EVTOPTCancrel.0159;[From.GetSheHeCap] shall be my new [From.GetLordSpiritualName] !;;;;;;;;;;;;;x
 EVTOPTDancrel.0159;I will settle this matter later.;;;;;;;;;;;;;x
+ancrel.0161.desc;A travelling bard and their entourage have arrived at your court and request that they be given room and board for the duration of their stay. The entourage is not small, but it is considered bad luck to turn away a bard.;;;;;;;;;;;;;x
+ancrel.0161.a;They may stay for as long as they like!;;;;;;;;;;;;;x
+ancrel.0161.a.tt;The bard's party prepares for merrymaking.;;;;;;;;;;;;;x
+ancrel.0161.b;You may stay for the night only, and move on.;;;;;;;;;;;;;x
+ancrel.0161.b.tt;The bard's party stays for the night before hitting the road again.;;;;;;;;;;;;;x
+ancrel.0162.desc;The bard has spent the last several nights regaling your court with fanciful tales of ancient heroes battling terrible monsters and outwitting wicked gods. They have become quite popular at court, and may be convinced to stay.;;;;;;;;;;;;;x
+ancrel.0162.a;Yes, do stay! Tell me the one about Asterix again!;;;;;;;;;;;;;x
+bard_offer;The bard joins your court.;;;;;;;;;;;;;x
+ancrel.0162.b;No, I think not. Too much of a good thing, I think.;;;;;;;;;;;;;x
+bard_declined;The bard and their troupe move on to the next lord's estate.;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 new_druid_in_court;New Druid in Court;;;;;;;;;;;;;x
 new_druid_in_court_desc;A Druid has just arrived in this lord's court.;;;;;;;;;;;;;x

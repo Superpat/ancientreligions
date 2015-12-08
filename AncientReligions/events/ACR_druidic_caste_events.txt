@@ -547,6 +547,93 @@ character_event = {
 	}
 }
 
+# Bard's troupe arrives
+character_event = {
+	id = ancrel.0161
+	desc = ancrel.0161.desc
+	picture = GFX_evt_carriage
+	
+	capable_only = yes
+	only_playable = yes
+	prisoner = no
+	
+	trigger = {
+		is_adult = yes
+		in_command = no
+		OR = {
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
+		}
+		location = {
+			county = {
+				region = world_europe_west
+			}
+		}
+		NOT = { trait = in_hiding }
+	}
+	
+	mean_time_to_happen = {
+		months = 1560
+		modifier = {
+			factor = 0.5
+			any_courter = {
+				has_minor_title = title_court_bard
+			}
+		}
+	}
+	
+	option = {
+		name = ancrel.0161.a
+		character_event = { id = ancrel.0162 days = 3 tooltip = ancrel.0161.a.tt }
+	}
+	option = {
+		name = ancrel.0161.b
+		custom_tooltip = { text = ancrel.0161.b.tt }
+	}
+}
+
+# Spends the Night
+character_event = {
+	id = ancrel.0162
+	desc = ancrel.0162.desc
+	picture = GFX_evt_feast
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ancrel.0162.a
+		scaled_wealth = 0.2
+		custom_tooltip = { 
+			text = bard_offer
+			hidden_tooltip = {
+				create_random_diplomat = {
+					random_traits = no
+					age = 22
+					religion = ROOT
+					culture = ROOT
+					trait = poet
+					trait = diligent
+					trait = gregarious
+				}
+				new_character = {
+					opinion = {
+						modifier = opinion_patron
+						who = ROOT
+						years = 5
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = ancrel.0162.b
+		custom_tooltip = { text = bard_declined }
+	}
+}
+
 ##### Coming of age ceremony - father's event
 character_event = {
 	id = ancrel.0183

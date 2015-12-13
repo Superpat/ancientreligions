@@ -11,6 +11,7 @@ on_yearly_pulse = {
 		#ACR Events
 		ancrel.0153 # Liege doesn't have a Druid
 		ancrel.4100 # Nile flood
+		ancrel.2000 # philosopher approaches the Emperor
 	}
 	
 	random_events = {

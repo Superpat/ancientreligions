@@ -69,10 +69,6 @@ character_event = {
 	immediate = {
 		add_trait = wolf
 	}
-	
-	option = {
-		name = OK
-	}
 }
 
 character_event = {
@@ -84,10 +80,6 @@ character_event = {
 	immediate = {
 		set_character_flag = serving_gwydion
 		clr_character_flag = wants_gwydion
-	}
-	
-	option = {
-		name = OK
 	}
 }
 
@@ -175,10 +167,6 @@ character_event = {
 		father = { character_event = { id = ancrel.0120 } }
 		set_character_flag = wants_gwydion
 	}
-	
-	option = {
-		name = OK
-	}
 }
 
 # Son wants to join the sons of Gwydion (Father)
@@ -247,10 +235,6 @@ character_event = {
 		father = { character_event = { id = ancrel.0125 } }
 		clr_character_flag = serving_gwydion
 	}
-	
-	option = {
-		name = OK
-	}
 }
 
 # Son returns scarred but seasoned
@@ -294,10 +278,6 @@ character_event = {
 		add_trait = maimed
 		father = { character_event = { id = ancrel.0129 } }
 		clr_character_flag = serving_gwydion
-	}
-	
-	option = {
-		name = OK
 	}
 }
 
@@ -364,10 +344,6 @@ character_event = {
 	immediate = {
 		father = { character_event = { id = ancrel.0131 } }
 		clr_character_flag = serving_gwydion
-	}
-	
-	option = {
-		name = OK
 	}
 }
 
@@ -450,10 +426,6 @@ character_event = {
 		father = { character_event = { id = ancrel.0133 } }
 		clr_character_flag = serving_gwydion
 	}
-	
-	option = {
-		name = OK
-	}
 }
 
 # Son returns with PTSD
@@ -499,10 +471,6 @@ character_event = {
 	immediate = {
 		father = { character_event = { id = ancrel.0135 } }
 		clr_character_flag = serving_gwydion
-	}
-	
-	option = {
-		name = OK
 	}
 }
 
@@ -558,10 +526,6 @@ character_event = {
 	immediate = {
 		father = { character_event = { id = ancrel.0137 } }
 		clr_character_flag = serving_gwydion
-	}
-	
-	option = {
-		name = OK
 	}
 }
 
@@ -630,10 +594,6 @@ character_event = {
 	immediate = {
 		father = { character_event = { id = ancrel.0139 } }
 		clr_character_flag = serving_gwydion
-	}
-	
-	option = {
-		name = OK
 	}
 }
 
@@ -736,10 +696,6 @@ character_event = {
 		father = { character_event = { id = ancrel.0141 } }
 		clr_character_flag = serving_gwydion
 	}
-	
-	option = {
-		name = OK
-	}
 }
 
 # Son dies in battle
@@ -783,10 +739,6 @@ character_event = {
 	immediate = {
 		father = { character_event = { id = ancrel.0143 } }
 		clr_character_flag = serving_gwydion
-	}
-	
-	option = {
-		name = OK
 	}
 }
 
@@ -866,9 +818,5 @@ character_event = {
 		add_trait = wolf
 		clr_character_flag = wants_gwydion
 		clr_character_flag = serving_gwydion
-	}
-	
-	option = {
-		name = OK
 	}
 }

@@ -347,10 +347,6 @@ character_event = {
 	immediate = {
 		add_trait = druid	
 	}
-	
-	option = {
-		name = OK
-	}
 }
 
 # Druid can become known as wicked, if he can't hide his sins
@@ -416,10 +412,6 @@ character_event = {
 		FROM = {
 			character_event = { id = ancrel.0159 }
 		}
-	}
-
-	option = {
-		name = OK
 	}
 }
 
@@ -541,10 +533,6 @@ character_event = {
 		remove_trait = learning_druidic_arts
 		remove_trait = celtic_knight
 	}
-	
-	option = {
-		name = OK
-	}
 }
 
 # Bard's troupe arrives
@@ -576,7 +564,7 @@ character_event = {
 		months = 1560
 		modifier = {
 			factor = 0.5
-			any_courter = {
+			any_courtier = {
 				has_minor_title = title_court_bard
 			}
 		}
@@ -845,10 +833,6 @@ character_event = {
 		father = { character_event = { id = ancrel.0187 } }
 		set_character_flag = wants_druidic_training
 	}
-	
-	option = {
-		name = OK
-	}
 }
 
 # Child wants to become a druid (Father)
@@ -911,10 +895,6 @@ character_event = {
 		father = { character_event = { id = ancrel.0189 } }
 		clr_character_flag = druidic_training
 	}
-	
-	option = {
-		name = OK
-	}
 }
 
 # Child returns scarred but learned in the ways of the druids
@@ -966,10 +946,6 @@ character_event = {
 		add_trait = maimed
 		father = { character_event = { id = ancrel.0191 } }
 		clr_character_flag = druidic_training
-	}
-	
-	option = {
-		name = OK
 	}
 }
 
@@ -1045,10 +1021,6 @@ character_event = {
 	immediate = {
 		father = { character_event = { id = ancrel.0193 } }
 		clr_character_flag = druidic_training
-	}
-	
-	option = {
-		name = OK
 	}
 }
 
@@ -1139,10 +1111,6 @@ character_event = {
 		father = { character_event = { id = ancrel.0195 } }
 		clr_character_flag = druidic_training
 	}
-	
-	option = {
-		name = OK
-	}
 }
 
 # Child is touched by the gods
@@ -1195,10 +1163,6 @@ character_event = {
 	immediate = {
 		father = { character_event = { id = ancrel.0197 } }
 		clr_character_flag = druidic_training
-	}
-	
-	option = {
-		name = OK
 	}
 }
 
@@ -1279,10 +1243,6 @@ character_event = {
 		father = { character_event = { id = ancrel.0199 } }
 		clr_character_flag = druidic_training
 	}
-	
-	option = {
-		name = OK
-	}
 }
 
 # Child returns home as a zealot
@@ -1359,10 +1319,6 @@ character_event = {
 	immediate = {
 		father = { character_event = { id = ancrel.0201 } }
 		clr_character_flag = druidic_training
-	}
-	
-	option = {
-		name = OK
 	}
 }
 
@@ -1473,10 +1429,6 @@ character_event = {
 		father = { character_event = { id = ancrel.0203 } }
 		clr_character_flag = druidic_training
 	}
-	
-	option = {
-		name = OK
-	}
 }
 
 # Child dies in training
@@ -1521,10 +1473,6 @@ character_event = {
 	immediate = {
 		father = { character_event = { id = ancrel.0205 } }
 		clr_character_flag = druidic_training
-	}
-	
-	option = {
-		name = OK
 	}
 }
 
@@ -1628,9 +1576,5 @@ character_event = {
 		}
 		clr_character_flag = wants_druidic_training
 		clr_character_flag = druidic_training
-	}
-	
-	option = {
-		name = OK
 	}
 }

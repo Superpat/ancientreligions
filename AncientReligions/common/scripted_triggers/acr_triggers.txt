@@ -1,20 +1,3 @@
-#	Example:
-# 
-#	example_trigger = {
-#		year = 1066
-#		num_of_spouses = 2
-#	}
-#
-#
-#	In a script file:
-#
-#	trigger = {
-#		example_trigger = yes
-#	}
-#
-# Naming convention:  xxxx_trigger
-#
-
 feminist_trigger = {
 	OR = {
 		religion = celtic_pagan_reformed
@@ -51,4 +34,12 @@ is_attracted_to_prev = {
 	}
 
 	opinion = { who = PREV value = 30 }
+}
+
+is_neoplatonist = {
+	OR = {
+		trait = stoic
+		trait = skeptic
+		trait = epicurean
+	}
 }

@@ -170,3 +170,15 @@ acr_terrible_performance = {
 	general_opinion = -10
 	monthly_character_prestige = 0.1
 }
+
+acr_sided_with_church = {
+	icon = 17
+
+	christian_church_opinion = 20
+}
+
+acr_shielded_heretic = {
+	icon = 35
+
+	christian_church_opinion = -20
+}

@@ -29,6 +29,17 @@ THE_THEOGONY;The Theogony;La Théogonie;Die Theogonie;;La Teogonía;;;;;;;;;x
 hellenic_pagan_DESC;The Hellenistic religion is polytheistic, with a pantheon of twelve major gods including Jupiter, Mars, Mercury, Venus, Minerva and Vesta. It originated in ancient Greece and with the conquests of Alexander the Great and the Roman Empire, it would go on to become the dominant religion in the Mediterranean world until the rise of Christendom.;L'hellénisme est polythéiste, avec un panthéon de douze dieux majeurs incluant Jupiter, Mars, Mercure, Venus, Minerve et Vesta. Il est originaire de la Grèce antique et avec les conquête d'Alexandre le Grand et l'Empire romain, allait devenir la religion dominante autour de la Méditerranée jusqu'à la montée du Christianisme.;;;;;;;;;;;;x
 hellenic_pagan_FEATURES;§Y*§! Can try to reconquer the land of the old Roman Empire from non-pagan rulers.\n§Y*§! Can liberate Italian and Greek provinces from non-pagan rulers.;§Y*§! Peut tenter de recapturer les terres du vieil Empire romain dirigées par des non païens.\n§Y*§! Peut libérer les provinces italiennes et grecques dirigées par des non païens.;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
+stoic;Stoic;;;;;;;;;;;;;x
+stoic_desc;This character follows the Stoic school of philosophy. Stoicism teaches the development of self-control and fortitude as a means of overcoming destructive emotions. To become unbiased is to understand universal truth.;;;;;;;;;;;;;x
+skeptic;Skeptic;;;;;;;;;;;;;x
+skeptic_desc;This character follows the Skeptic school of philosophy. Skepticism teaches that knowledge of the truth is impossible, and so one should suspend belief.;;;;;;;;;;;;;x
+epicurean;Epicurean;;;;;;;;;;;;;x
+epicurean_desc;This character follows the Epicurean school of philosophy. Epicureanism teaches that the goal of mortal life should be to enhance ones pleasure, and that the ultimate pleasure is the freedom from pain. Even the pain of excess. They also hold that the gods are not interested in mortals, and that friendships are critical to happiness.;;;;;;;;;;;;;x
+acr_sided_with_church;Sided with the Church;;;;;;;;;;;;;x
+acr_sided_with_church_desc;This character recently sided with the church in a dispute.;;;;;;;;;;;;;x
+acr_shielded_heretic;Shielded a Heretic;;;;;;;;;;;;;x
+acr_shielded_heretic_desc;This character protected a heretic from persecution by the church.;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;x
 king_hellenic_pagan;Rex;Rex;Rex;;Rey;;;;;;;;;x
 king_hellenic_pagan_byzantine;Regas;Regas;Regas;;Rey;;;;;;;;;x
 king_female_hellenic_pagan;Regina;Regina;Regina;;Reina;;;;;;;;;x
@@ -110,6 +121,7 @@ title_censor;Censor;Censeur;Censur;;Censor;;;;;;;;;x
 title_censor_desc;The Censor is responsible for taking the census of the realm. While the office was originally instituded for taxation purposes the most important duty of the Censor is to supervise public morality and recommend suitable candidates for public offices.;Le Censeur est responsable du recensement dans le royaume. Même si la position a été à l'origine instaurée pour la taxation, la responsabilité la plus importante du Censeur est de superviser la moralité publique et de recommander des candidats aux fonctions publiques;;;;;;;;;;;;x
 title_magister_equitum;Magister Equitum;Magister Equitum;;;;;;;;;;;;x
 title_magister_equitum_desc;Originally a very powerful office second only to the Dictator, the Magister Equitum, or Master of the Horse, is now a mostly ceremonial, but still prestigious, military function.;A l'origine une position très puissante second après celui de Dictator, le Magister Equitum, ou Maître de cavalerie, est maintenant une fonction militaire principalement céremoniale mais néanmoins toujours prestigieuse.;;;;;;;;;;;;x
+title_hypatos_philosophon;Hypatos Philosophon;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 modifier_flamen_dialis;Flamen Dialis;Flamen Dialis;;;;;;;;;;;;x
 title_flamen_dialis;Flamen Dialis;Flamen Dialis;;;;;;;;;;;;x

@@ -8,9 +8,20 @@ opinion_hellenic_state_religion;Established a Hellenic state religion;A établi l
 opinion_forced_hellenic_state_religion;Enforced a Hellenic state religion;A forcé l'hellénisme comme religion d'état;;;;;;;;;;;;x
 opinion_adopted_hellenic_state_religion;Adopted the Hellenic state religion;A adopté l'hellénisme d'état;;;;;;;;;;;;x
 opinion_rejected_hellenic_state_religion;Rejected the Hellenic state religion;A rejeté l'hellénisme d'état;;;;;;;;;;;;x
-EVTDESCancrel.2100;Having long studied the old Greek and Roman classics you are wondering if their religious views aren't better than your own.;Après avoir longtemps étudié les oeuvres classiques grecques et romaines, vous vous demandez si leur religion n'était pas meilleur que la votre.;;;;;;;;;;;;x
-EVTOPTAancrel.2100;Yes, the old religion was better;Oui, l'ancienne religion était meilleure;;;;;;;;;;;;x
-EVTOPTBancrel.2100;No, I'm secure in my faith;Non, je suis convaincu dans ma foi;;;;;;;;;;;;x
+ancrel.2000.desc;A stuttering, but clearly brilliant, teacher of philosophy from the University of Constantinople has approached you and offered his services as an advisor. There is no doubt at court that he is a genius, and could provide much good council. However, some believe his reverence for Plato borders on the heretical. What is your answer?;;;;;;;;;;;;;x
+ancrel.2000.a;The Empire could use wise council in this time of need.;;;;;;;;;;;;;x
+ancrel.2000.a.tt;Michael 'the Stammerer' joins your court.;;;;;;;;;;;;;x
+ancrel.2000.b;I need swords and coin, not words!;;;;;;;;;;;;;x
+ancrel.2000.b.tt;The professor of philosophy stays at the University.;;;;;;;;;;;;;x
+ancrel.2002.desc;The professor who petitioned to join your court, [From.GetFirstNameWithNick], has come to you with a request. He is currently making a bid for the office of Hypatos Philosphon, "Chief Philosopher." This would make him the head of the University. "From this position I can better serve you and the Empire," he says. The burghers will not like this interference in local affairs.;;;;;;;;;;;;;x
+ancrel.2002.a;I'm the [Root.GetTitle], the burghers will learn this.;;;;;;;;;;;;;x
+ancrel.2002.b;I can't involve myself in this.;;;;;;;;;;;;;x
+ancrel.2005.desc;You've been approached by [From.GetTitledFirstName]. He says that the priesthood is concerned with the curriculum employed by [FromFrom.GetFirstName] and they believe the philosophy he teaches is too much like the pagan teachings of the old empire. [From.GetFirstName] implores you to deal with the matter. You could force [FromFrom.GetFirstName] to make a public profession of faith and restore the old curriculum, or allow him to continue.;;;;;;;;;;;;;x
+ancrel.2005.a;I support [FromFrom.GetFirstName]'s decisions...;;;;;;;;;;;;;x
+ancrel.2005.b;We need unity of faith in these dark times...;;;;;;;;;;;;;x
+ancrel.2007.desc;[From.GetFirstNameWithNick], the Hypatos Philosophon, has come to you with a proposal. "Once, Rome ruled the world. Now we are a shadow of that Empire. Nay, a sliver of a shadow. But after Constantine, we have been shattered, ever shrinking. What changed? Our gods. Our greatest threat, the Sarecens, is a twisted form of the faith we have espoused for centuries. As if they are a dark mirror we look into. I say they are punishment for abandoning the gods of our ancestors. Now, in our dakrest hour, may be our last chance to save our people and return to the old ways!";;;;;;;;;;;;;x
+ancrel.2007.a;Your words ring true, old friend. Perhaps now is the time...;;;;;;;;;;;;;x
+ancrel.2007.b;Heretic! Be gone from my sight!;;;;;;;;;;;;;x
 EVTDESCancrel.2101;As you are sitting down to dinner, your [Root.GetLordSpiritualName] comes up to you and tells you that [From.GetBestName] has strayed from the true faith. Claiming to have found enlightenment in the classical texts of ancient Rome and Greece, [From.GetSheHe] has forsaken [Root.Religion.GetRandomGodName] and professed his devotion to [From.Religion.GetRandomGodName].;Alors que vous vous asseyez pour dîner, votre [Root.GetLordSpiritualName] s'approche et vous explique que [From.GetBestName] s'est écarté de la vraie foi. Prétendant avoir trouvé l'illumination dans les textes classiques de la Rome et Grèce antique, [From.GetSheHe] a délaissé [Root.Religion.GetRandomGodName] et proclamé sa dévotion à [From.Religion.GetRandomGodName].;;;;;;;;;;;;x
 EVTOPTAancrel.2101;My [From.GetSonDaughter] did WHAT?;[From.GetSonDaughter] a fait QUOI ?;;;;;;;;;;;;x
 EVTOPTBancrel.2101;[From.GetSheHe] did WHAT?;[From.GetSheHe] a fait QUOI ?;;;;;;;;;;;;x

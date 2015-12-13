@@ -378,3 +378,23 @@ title_flaminica_quirinalis = {
 
 	message = no
 }
+
+title_hypatos_philosophon = {
+	dignity = 0.05
+	revoke_allowed = no
+	
+	realm_in_name = no
+	show_as_title = yes
+	
+	replace_order = yes
+	
+	monthly_salary = 0
+	monthly_prestige = 0.005
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = no
+}

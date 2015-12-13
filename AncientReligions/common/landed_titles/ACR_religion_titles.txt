@@ -99,8 +99,6 @@ d_celtic_pagan_reformed = {
 	
 	religion = celtic_pagan_reformed
 	dignity = 100
-	# Cannot be held as a secondary title
-	primary = yes
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }

@@ -57,7 +57,6 @@ title_divine_adoratrice = {
 	is_unique = yes
 
 	allowed_to_hold = {
-		is_adult = yes
 		is_female = yes
 		OR = {
 			religion = egyptian_pagan
@@ -155,6 +154,8 @@ title_fanbearer = {
 	}
 	lose_effect = {
 	}
+
+	message = yes
 }
 
 title_iry_pat = {
@@ -182,6 +183,8 @@ title_iry_pat = {
 	}
 	lose_effect = {
 	}
+
+	message = yes
 }
 
 title_haty_a = {
@@ -204,6 +207,13 @@ title_haty_a = {
 			religion = aten_pagan
 		}
 	}
+
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
 }
 
 title_khetemty = {
@@ -226,4 +236,11 @@ title_khetemty = {
 			religion = aten_pagan
 		}
 	}
+
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
 }

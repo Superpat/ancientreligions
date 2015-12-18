@@ -9,6 +9,11 @@ finnish_pagan;Finnic;Finnic;;;;;;;;;;;;x
 baltic_pagan;Baltic;Baltic;;;;;;;;;;;;x
 altaic_pagan;Altaic;Altaic;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
+title_acr_champion;Champion;Champion;Champion;;Campeón;;;;;;;;;x
+title_acr_champion_desc;The person that this title is bestowed upon is considered to be the Champion of the Realm. There is surely no greater honor for mortal men to aspire to.;La personne à qui ce titre est décerné est considérée comme le champion du royaume. Aucun mortel ne saurait espérer titre plus honorable.;Die Person, die diesen Titel erhalten hat, wird als Champion des Reiches angesehen. Es gibt wahrlich keine größere Ehre für Sterbliche.;;La persona a la que se le otorga este título es considerada como el Campeón del Reino. No se puede aspirar a un honor mayor para los hombres mortales.;;;;;;;;;x
+title_master_arms;Master of Arms;;;;;;;;;;;;;x
+title_master_arms_desc;The Master of Arms is responsible for maintaining the production and storage of weapons and armor in the realm. An important and prestigious post.;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;x
 HEAD_PRIEST_finnish_pagan_reformed;Päänpappi;Päänpappi;Päänpappi;;Päänpappi;;;;;;;;;x
 HEAD_PRIESTESS_finnish_pagan_reformed;Päänpappitar;Päänpappitar;Päänpappitar;;Päänpappitar;;;;;;;;;x
 HEAD_PRIEST_baltic_pagan_reformed;Kriwe;Kriwe;Kriwe;;Kriwe;;;;;;;;;x

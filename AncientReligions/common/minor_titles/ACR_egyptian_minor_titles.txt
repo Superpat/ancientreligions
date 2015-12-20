@@ -134,7 +134,7 @@ title_fanbearer = {
 
 	allowed_to_hold = {
 		is_adult = yes
-		is_capable = yes
+		has_regent = no
 	}
 
 	allowed_to_grant = {

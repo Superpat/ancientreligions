@@ -19,7 +19,7 @@ namespace = ancrel
 #
 #############################################
 
-[on_province_convert]
+# [on_province_convert]
 province_event = {
 	id = ancrel.0280
 	hide_window = yes

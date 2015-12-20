@@ -2,7 +2,6 @@
 ##### Decisions ;;;;;;;;;;;;;x;
 prepare_titan_thysia;You begin preparations for the Thysia.;;;;;;;;;;;;;x
 titan_thysia_begins;The priest readies his sickle...;;;;;;;;;;;;;x
-feast_begins;Vassal opinion increases by §G+15§! for §Y12§! months.\nYou move inside the large feast hall...;;;;;;;;;;;;;x
 EVTDESCancrel.3600;You have sent out summons to all of your vassals for the Great Thysia. Those that have been baptized, profess to follow the teachings of the Prophet, or follow the ways of Prometheus will have to offer gold to be exempted from this magnificent feast.;;;;;;;;;;;;;x
 EVTOPTAancrel.3600;I can hardly wait!;;;;;;;;;;;;;x
 EVTTOOLTIPancrel.3601;Summoned to Thysia.;;;;;;;;;;;;;x

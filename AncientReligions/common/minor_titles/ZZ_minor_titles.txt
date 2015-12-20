@@ -16,7 +16,7 @@ title_commander = {
 				OR = {
 					is_female = no
 					liege = {
-						is_feminist = yes
+						feminist_trigger = yes
 						religion = ROOT
 					}
 				}

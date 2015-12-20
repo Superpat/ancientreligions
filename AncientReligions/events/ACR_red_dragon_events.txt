@@ -151,7 +151,7 @@ character_event = {
 		is_ruler = no
 		religion = celtic_pagan_reformed
 		is_heretic = no
-		is_councilor = no
+		is_councillor = no
 		
 		martial = 5
 		

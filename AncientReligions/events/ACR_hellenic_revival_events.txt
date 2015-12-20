@@ -97,7 +97,7 @@ character_event = {
 
 	option = { # deny the request
 		name = ancrel.2000.b
-		text = ancrel.2000.b.tt
+		custom_tooltip = { text = ancrel.2000.b.tt }
 	}
 }
 

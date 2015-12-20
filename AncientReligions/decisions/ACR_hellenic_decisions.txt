@@ -79,19 +79,27 @@ decisions = {
 			NOT = { has_character_modifier = held_titan_thysia_timer }
 			NOT = {	has_character_flag = holding_titan_thysia }
 			NOT = {	has_character_flag = do_not_disturb }
-		}
-		allow = {
 			war = no
 			any_demesne_title = {
 				is_occupied = no
 			}
+		}
+		allow = {
+			prisoner = no
 			OR = {
 				NOT = { month = 2 }
 				month = 10
 			}
 			wealth = 50
-			prisoner = no
 			NOT = { trait = in_hiding }
+			OR = {
+				any_courtier = {
+					has_minor_title = title_keeper_flock
+				}
+				any_vassal = {
+					has_minor_title = title_keeper_flock
+				}			
+			}
 		}
 		effect = {
 			wealth = -50

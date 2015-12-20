@@ -122,6 +122,10 @@ title_censor_desc;The Censor is responsible for taking the census of the realm. 
 title_magister_equitum;Magister Equitum;Magister Equitum;;;;;;;;;;;;x
 title_magister_equitum_desc;Originally a very powerful office second only to the Dictator, the Magister Equitum, or Master of the Horse, is now a mostly ceremonial, but still prestigious, military function.;A l'origine une position très puissante second après celui de Dictator, le Magister Equitum, ou Maître de cavalerie, est maintenant une fonction militaire principalement céremoniale mais néanmoins toujours prestigieuse.;;;;;;;;;;;;x
 title_hypatos_philosophon;Hypatos Philosophon;;;;;;;;;;;;;x
+title_chiliarch;Chiliarch;;;;;;;;;;;;;x
+title_chiliarch_desc;Originally the commander of a 1000 man regiment called a Chiliarchy, this military title is largely honorary at this point. Only men of some martial skill can be awarded with this honor, a vestige of it's former purpose.;;;;;;;;;;;;;x
+title_proxenos;Proxenos;;;;;;;;;;;;;x
+title_proxenos_desc;Proxenoi were, in ancient times, citizens of a city chosen by a foreign power to represent their interests in their home city. While they would work to further the interests of their patrons, they always remained loyal to their home city, such as in the case of war breaking out. Proxenoi are only expected to be good hosts for visiting dignitaries now, and is considered a prestigious position.;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 modifier_flamen_dialis;Flamen Dialis;Flamen Dialis;;;;;;;;;;;;x
 title_flamen_dialis;Flamen Dialis;Flamen Dialis;;;;;;;;;;;;x

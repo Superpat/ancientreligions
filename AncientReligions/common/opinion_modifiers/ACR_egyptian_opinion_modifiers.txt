@@ -14,3 +14,27 @@
 opinion_egyptian_sexytimes = {
 	opinion = 30
 }
+opinion_egyptian_respects_women = {
+	opinion = 20
+}
+opinion_egyptian_stop_being_feminazi = {
+	opinion = -10
+}
+opinion_egyptian_disrespects_women = {
+	opinion = -10
+}
+opinion_egyptian_senet_game = {
+	opinion = 20
+}
+opinion_egyptian_sore_loser = {
+	opinion = -10
+}
+opinion_egyptian_lost_senet_game = {
+	opinion = -10
+}
+opinion_egyptian_smug_winner = {
+	opinion = -10
+}
+opinion_egyptian_pathetic_senet_player = {
+	opinion = -10
+}

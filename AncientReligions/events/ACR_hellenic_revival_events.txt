@@ -8,7 +8,7 @@
 #######################################
 
 # Written by Jon Severinsson
-# and Adam Chevaler
+# and Adam Chevalier
 
 namespace = ancrel
 
@@ -295,6 +295,8 @@ long_character_event = {
 	is_triggered_only = yes
 
 	option = { # return to the gods of your ancestors
+		name = ancrel.2007.a
+
 		religion = hellenic_pagan
 		add_trait = sympathy_christendom
 		give_nickname = nick_the_apostate
@@ -304,6 +306,8 @@ long_character_event = {
 	}
 
 	option = { # banish the hypatos to a monastery
+		name = ancrel.2007.b
+
 		FROM = {
 			add_trait = monk
 			remove_opinion = { who = ROOT modifier = opinion_patron }
@@ -327,6 +331,18 @@ long_character_event = {
 					}
 				}
 			}
+		}
+	}
+
+	option = { # convert to Prometheanism
+		name = ancrel.2007.c
+
+		religion = promethean_pagan
+		add_trait = sympathy_christendom
+		give_nickname = nick_the_apostate
+		
+		FROM = {
+			religion = promethean_pagan
 		}
 	}
 }

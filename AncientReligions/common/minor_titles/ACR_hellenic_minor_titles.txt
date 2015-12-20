@@ -505,7 +505,7 @@ title_proxenos = {
 	message = yes
 }
 
-title_hellanodikai = {
+title_hellanodikos = {
 	dignity = 0.075
 	grant_limit = 3
 	opinion_effect = 10
@@ -516,12 +516,19 @@ title_hellanodikai = {
 	allowed_to_hold = {
 		is_adult = yes
 		is_capable = yes
-		religion = hellenic_pagan
+		religion = FROM
+		NOT = {
+			trait = arbitrary
+		}
 	}
 
 	allowed_to_grant = {
 		independent = yes
-		religion = hellenic_pagan
+		OR = {
+			religion = hellenic_pagan
+			religion = promethean_pagan
+			religion = titan_pagan
+		}
 	}
 
 	gain_effect = {

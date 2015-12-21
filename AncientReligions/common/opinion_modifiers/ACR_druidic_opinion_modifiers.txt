@@ -44,3 +44,7 @@ opinion_tailteann_craftsman = {
 opinion_new_courtier = {
 	opinion = 10
 }
+
+sent_druidic_training = {
+	opinion = 10
+}

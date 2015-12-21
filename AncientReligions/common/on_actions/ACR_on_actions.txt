@@ -43,6 +43,9 @@ on_five_year_pulse = {
 
 # For characters 2 to 16 years old
 on_yearly_childhood_pulse = {
+	events = {
+		ancrel.0184 # Celtic child begins education (14 years old)
+	}
 	random_events = {
 		5000 = ancrel.0272 	# Acknowledged reincarnated child acquires trait from previous personality
 	}
@@ -90,7 +93,7 @@ on_birth = {
 
 # character
 on_adulthood = {
-	events = {		
+	events = {
 		ancrel.0241   # Changeling child's true nature asserts itself
 	}
 }

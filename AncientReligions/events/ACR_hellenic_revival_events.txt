@@ -1222,7 +1222,7 @@ narrative_event = {
 # The player is informed of the Sacred Band
 narrative_event = {
 	id = ancrel.2568
-	title = ancrel2568.title
+	title = ancrel.2568.title
 	desc = ancrel.2568.desc
 	picture = GFX_evt_roman_temple
 	border = GFX_event_narrative_frame_war
@@ -1230,14 +1230,14 @@ narrative_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = ancrel.2566.a
+		name = ancrel.2568.a
 		trigger = {
 			religion = hellenic_pagan
 		}
 	}
 	
 	option = {
-		name = ancrel.2566.b
+		name = ancrel.2568.b
 		trigger = {
 			NOT = {
 				religion = hellenic_pagan

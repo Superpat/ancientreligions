@@ -681,17 +681,18 @@ character_event = {
 
 ##### Coming of age ceremony - child's event
 character_event = {
-	id = ancrel.184
+	id = ancrel.0184
+	hide_window = yes
 	
 	is_triggered_only = yes
-	hide_window = yes
 
 	trigger = {
-		OR = {		
+		age = 14
+		OR = {
 			religion = celtic_pagan
 			religion = celtic_pagan_reformed
-		}		
-		OR = {		
+		}	
+		OR = {
 			father_even_if_dead = { is_alive = yes }
 			mother_even_if_dead = { is_alive = yes }
 		}
@@ -715,7 +716,7 @@ character_event = {
 					}
 				}
 			}
-			father = { character_event = { id = ancrel.183 days = 3 } }
+			father = { character_event = { id = ancrel.0183 days = 3 } }
 			break = yes
 		}
 		if = {
@@ -733,7 +734,7 @@ character_event = {
 					}
 				}
 			}
-			mother = { character_event = { id = ancrel.183 days = 3 } }
+			mother = { character_event = { id = ancrel.0183 days = 3 } }
 			break = yes
 		}
 	}
@@ -741,10 +742,10 @@ character_event = {
 
 # Training about to begin
 narrative_event = {
-	id = ancrel.185
+	id = ancrel.0185
 	title = ancrel.0185.title
 	desc = ancrel.0185.desc
-	picture = GFX_evt_buddhist_pagoda
+	picture = GFX_evt_priests_in_forest
 	
 	is_triggered_only = yes
 

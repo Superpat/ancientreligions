@@ -1194,3 +1194,54 @@ narrative_event = {
 	}
 }
 
+# The Sacred Band founded
+narrative_event = {
+	id = ancrel.2567
+	title = ancrel.2567.title
+	desc = ancrel.2567.desc
+	picture = GFX_evt_roman_temple
+	border = GFX_event_narrative_frame_war
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = ancrel.2567.a
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					ai = no
+				}
+				narrative_event = { id = ancrel.2568 }
+			}
+		}
+	}
+}
+
+# The player is informed of the Sacred Band
+narrative_event = {
+	id = ancrel.2568
+	title = ancrel2568.title
+	desc = ancrel.2568.desc
+	picture = GFX_evt_roman_temple
+	border = GFX_event_narrative_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ancrel.2566.a
+		trigger = {
+			religion = hellenic_pagan
+		}
+	}
+	
+	option = {
+		name = ancrel.2566.b
+		trigger = {
+			NOT = {
+				religion = hellenic_pagan
+			}
+		}
+	}
+}

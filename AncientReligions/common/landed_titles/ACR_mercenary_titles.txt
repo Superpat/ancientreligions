@@ -226,6 +226,37 @@ d_legio_hellenica = {
 	monthly_income = 10 # (Must be an integer between 1 and 512)
 }
 
+d_sacred_band = {
+	
+	color = { 255 89 48 }
+	color2 = { 255 255 255 }
+	
+	capital = 746 # Ephesos
+
+	title = "WARCHIEF"
+	foa = "CAPTAIN_FOA"
+	
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = hellenic_pagan
+	
+	# Extra income due to donations, etc
+	monthly_income = 2 # (Must be an integer between 1 and 512)	
+	
+	culture = greek
+	
+	# Cannot be held as a secondary title
+	primary = yes
+
+	strength_growth_per_century = 1.0
+
+	mercenary_type = sacred_band
+}
+
 d_men_of_steel = {
 	color = { 128 120 20 }
 	color2 = { 255 255 255 }

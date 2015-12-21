@@ -49,6 +49,10 @@ spriteTypes = {
 		name = "GFX_organize_men_of_steel"
 		texturefile = "gfx\\interface\decision_icon_donate_to_holy_order.dds"
 	}
+	spriteType = {
+		name = "GFX_organize_sacred_band"
+		texturefile = "gfx\\interface\decision_icon_heracles.dds"
+	}	
 	
 	# Event pictures
 	spriteType = {

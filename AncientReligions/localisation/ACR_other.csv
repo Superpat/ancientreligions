@@ -130,3 +130,5 @@ ancrel.9009.desc;Congrats! You're Tengri Pagan!;;;;;;;;;;;;;x
 ancrel.9011.desc;Congrats! You're Promethean!;;;;;;;;;;;;;x
 ancrel.9012.desc;Congrats! You're a Titan Cultist!;;;;;;;;;;;;;x
 ancrel.9013.desc;Congrats! You're an Aten Pagan!;;;;;;;;;;;;;x
+SUCCESSOR;Current Successor;;;;;;;;;;;;;x
+SUCCESSOR_TOOLTIP;This is the current expected successor of the religion head.;;;;;;;;;;;;;x

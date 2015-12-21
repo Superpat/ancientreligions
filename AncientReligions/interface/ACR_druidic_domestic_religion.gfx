@@ -9,11 +9,4 @@ spriteTypes = {
 		name = "GFX_druidic_election_values"
 		texturefile = "gfx\\interface\ACR\icon_druidic_suitability.dds"
 	}
-	
-	#Does not load from \pagan_interface, so cannot be overriden for pagans.
-	#Workaround: use GFX_topbar_folder_religion instead
-	#spriteType = {
-	#	name = "GFX_religion_open_cardinal_screen"
-	#	texturefile = "gfx\\interface\religion_open_cardinal_screen.dds"
-	#}
 }

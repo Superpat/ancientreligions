@@ -213,14 +213,11 @@ EVTNAMEancrel.0183;Coming of age;;;;;;;;;;;;;x
 EVTDESCancrel.0183;Today your child comes of age. [From.GetSheHeCap] will join the clan today as the Druids present [From.GetHerHim] to the gods. You can use this opportunity to plan [From.GetHerHis] future.;;;;;;;;;;;;;x
 EVTOPTAancrel.0183;[From.GetSheHeCap] will be a warrior;;;;;;;;;;;;;x
 EVTOPTBancrel.0183;The Gods are in need of [From.GetHerHim];;;;;;;;;;;;;x
-EVTNAMEancrel.0184;Coming of age;;;;;;;;;;;;;x
-EVTDESCancrel.0184;Today is the day I become an adult, it is time I meet my destiny;;;;;;;;;;;;;x
-EVTOPTAancrel.0184;Ask my father for advice;;;;;;;;;;;;;x
 path_of_the_warriors;Your child will undergo training with the warriors.\n;;;;;;;;;;;;;x
 path_of_the_druids;Your child will undergo training with the druids, giving up any inheritance.\n;;;;;;;;;;;;;x
-EVTNAMEancrel.0185;The Path of the Druids;;;;;;;;;;;;;x
-EVTDESCancrel.0185;An old man has arrived, dressed in the garbs of a druid, he is here to take your child with him to a sacred grove deep inside the forest.\nThere [From.GetSheHe] will be taught the secret arts of the druids, this training will take many years and novices have been known to come back changed, or worse... dead. Either way, they are barred from inheriting lands.;;;;;;;;;;;;;x
-EVTOPTAancrel.0185;Be safe my child;;;;;;;;;;;;;x
+ancrel.0185.title;The Path of the Druids;;;;;;;;;;;;;x
+ancrel.0185.desc;An old man has arrived, dressed in the garbs of a druid, he is here to take your child with him to a sacred grove deep inside the forest.\nThere [From.GetSheHe] will be taught the secret arts of the druids, this training will take many years and novices have been known to come back changed, or worse... dead. Either way, they are barred from inheriting lands.;;;;;;;;;;;;;x
+ancrel.0185.a;Be safe my child;;;;;;;;;;;;;x
 EVTDESCancrel.0187;Your child has expressed a peculiar wish, unsatisfied with the life of a warrior, [From.GetSheHe] wishes to learn the druidic arts and become closer to the gods. \nBut that way is strange and dangerous, not all survive it.;;;;;;;;;;;;;x
 EVTOPTAancrel.0187;I will not allow it!;;;;;;;;;;;;;x
 EVTOPTBancrel.0187;Yes, this will bring great honor to our family.;;;;;;;;;;;;;x

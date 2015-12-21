@@ -681,57 +681,83 @@ character_event = {
 
 ##### Coming of age ceremony - child's event
 character_event = {
-	id = ancrel.0184
-	title = EVTNAMEancrel.0184
-	desc = EVTDESCancrel.0184
-	picture = GFX_evt_son_bully
+	id = ancrel.184
 	
-	min_age = 13
-	max_age = 16
+	is_triggered_only = yes
+	hide_window = yes
 
 	trigger = {
 		OR = {		
 			religion = celtic_pagan
 			religion = celtic_pagan_reformed
+		}		
+		OR = {		
+			father_even_if_dead = { is_alive = yes }
+			mother_even_if_dead = { is_alive = yes }
 		}
-		father = { is_alive = yes }
-		NOT = {
-			has_character_flag = had_coming_of_age_celtic
-		}
+		NOT = { trait = incapable }
+		prisoner = no
 	}
 	
-	mean_time_to_happen = {
-		months = 6
-	}
-	
-	option = {
-		name = EVTOPTAancrel.0184
-		set_character_flag = had_coming_of_age_celtic
-		hidden_tooltip = {
-			father = {
-				character_event = {
-					id = ancrel.0183
-					days = 3
+	immediate = {
+		if = {
+			limit = {
+				father = {
+					is_alive = yes
+					any_child = {
+						character = ROOT
+						mother_even_if_dead = {
+							OR = {
+								is_alive = no
+								NOT = { higher_real_tier_than = PREVPREV }
+							}
+						}
+					}
 				}
 			}
+			father = { character_event = { id = ancrel.183 days = 3 } }
+			break = yes
+		}
+		if = {
+			limit = {
+				mother = {
+					is_alive = yes
+					any_child = {
+						character = ROOT
+						father_even_if_dead = {
+							OR = {
+								is_alive = no
+								NOT = { higher_real_tier_than = PREVPREV }
+							}
+						}
+					}
+				}
+			}
+			mother = { character_event = { id = ancrel.183 days = 3 } }
+			break = yes
 		}
 	}
 }
 
 # Training about to begin
 narrative_event = {
-	id = ancrel.0185
-	title = EVTNAMEancrel.0185
-	desc = EVTDESCancrel.0185
+	id = ancrel.185
+	title = ancrel.0185.title
+	desc = ancrel.0185.desc
 	picture = GFX_evt_buddhist_pagoda
 	
 	is_triggered_only = yes
 
 	option = { # Training starts
-		name = EVTOPTAancrel.0185
+		name = ancrel.0185.a
 		add_trait = learning_druidic_arts
 		set_character_flag = druidic_training
 		clr_character_flag = wants_druidic_training
+		opinion = {
+			who = FROM
+			modifier = sent_druidic_training
+			years = 100
+		}
 	}
 }
 

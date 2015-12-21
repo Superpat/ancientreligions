@@ -66,6 +66,49 @@ decisions = {
 		}
 	}
 
+	organize_sacred_band = {
+		is_high_prio = yes
+		
+		potential = {
+			higher_tier_than = count
+			religion = hellenic_pagan
+			has_regent = no
+			NOT = { has_global_flag = sacred_band_founded }
+		}
+		allow = {
+			tier = emperor
+			d_hellenic_pagan = { owner = { always = yes } } # There is currently a Pontifex Maximus
+			prestige = 300
+			wealth = 300
+		}
+		effect = {
+			set_global_flag = sacred_band_founded
+			prestige = -300
+			wealth = -300
+			activate_title = { title = d_sacred_band status = yes }
+			hidden_tooltip = {
+				narrative_event = { id = ancrel.2567 }
+				create_character = {
+					random_traits = yes
+					religion = ROOT
+					culture = ROOT
+					dynasty = NONE
+					female = no
+					age = 34
+					trait = skilled_tactician
+				}
+				new_character = {
+					d_sacred_band = {
+						grant_title = PREV
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	hold_titan_thysia = {
 		is_high_prio = yes
 		potential = {

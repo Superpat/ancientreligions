@@ -24,13 +24,7 @@ job_chancellor = {
 				OR = {
 					is_female = no
 					liege = {
-						OR = {
-							religion = cathar
-							religion = celtic_pagan
-							religion = celtic_pagan_reformed
-							religion = promethean_pagan
-							religion = messalian
-						}
+						feminist_trigger = yes
 						religion = ROOT
 					}
 				}
@@ -77,7 +71,6 @@ job_chancellor = {
 	lift_fow = yes
 }
 
-# NOTE: The allow trigger for this job also determines who can command armies!
 job_marshal = {
 	is_marshal = yes
 	attribute = martial
@@ -93,13 +86,7 @@ job_marshal = {
 				OR = {
 					is_female = no
 					liege = {
-						OR = {
-							religion = cathar
-							religion = celtic_pagan
-							religion = celtic_pagan_reformed
-							religion = promethean_pagan
-							religion = messalian
-						}
+						feminist_trigger = yes
 						religion = ROOT
 					}
 				}
@@ -126,6 +113,7 @@ job_marshal = {
 	
 	action = action_assist_arrest
 	action = action_train_troops
+	action = action_train_troops_nomadic
 	action = action_advance_mil_tech
 	action = action_organize_raid # Replaces action_advance_mil_tech for Tribes
 
@@ -147,13 +135,7 @@ job_treasurer = {
 				OR = {
 					is_female = no
 					liege = {
-						OR = {
-							religion = cathar
-							religion = celtic_pagan
-							religion = celtic_pagan_reformed
-							religion = promethean_pagan
-							religion = messalian
-						}
+						feminist_trigger = yes
 						religion = ROOT
 					}
 				}
@@ -197,8 +179,8 @@ job_spymaster = {
 					is_female = no
 					liege = { 
 						OR = {
-							mother = { character = FROM }
-							spouse = { character = FROM }
+							mother = { character = ROOT }
+							spouse = { character = ROOT }
 						}
 					}
 					AND = {
@@ -207,10 +189,7 @@ job_spymaster = {
 							religion_group = pagan_group
 						}
 					}
-					AND = {
-						religion = cathar
-						liege = { religion = cathar }
-					}
+					feminist_trigger = yes
 				}
 				is_adult = yes
 			}

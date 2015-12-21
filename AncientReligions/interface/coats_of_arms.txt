@@ -1,5 +1,4 @@
-culture =
-{
+culture = {
 	religion_group = "christian"
 
 	templates = { 
@@ -30,8 +29,7 @@ culture =
 	
 	rebel_colors = { 3 5 7 }
 
-	banned_colors = 
-	{ 
+	banned_colors = { 
 		{ 0 1 }						#0		
 		{ 0 1 9}					#1		
 		{ 2 3 4 6 7 8 9 12 14 }		#2		
@@ -50,28 +48,28 @@ culture =
 	}
 	
 	emblem = {
-		file = "gfx\\coats_of_arms\\emblem.tga"
+		file = "gfx\\coats_of_arms\emblem.tga"
 		noOfFrames = 25
 	}
 
 	# WHEN ADDING NEW, ALWAYS ADD AT THE END !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11111
 	textures = {
 		texture = {
-			file = "gfx\\coats_of_arms\\pattern.tga"
+			file = "gfx\\coats_of_arms\pattern.tga"
 			size = { x = 10 y = 5 }
 			noOfFrames = 47
 			color = 2
 			emblem = no
 		}
 		texture = {
-			file = "gfx\\coats_of_arms\\pattern2.tga"
+			file = "gfx\\coats_of_arms\pattern2.tga"
 			size = { x = 10 y = 3 }
 			noOfFrames = 22
 			color = 3
 			emblem = no
 		}
 		texture = {
-			file = "gfx\\coats_of_arms\\pattern3.tga"
+			file = "gfx\\coats_of_arms\pattern3.tga"
 			size = { x = 10 y = 5 }
 			noOfFrames = 44
 			color = 3
@@ -79,42 +77,42 @@ culture =
 		}
 		
 		texture = {
-			file = "gfx\\coats_of_arms\\dynasties.tga"
+			file = "gfx\\coats_of_arms\dynasties.tga"
 			size = { x = 16 y = 4 }
 			noOfFrames = 51
 			color = 0
 			random = no # Do not use for random CoAs
 		}
 		texture = {
-			file = "gfx\\coats_of_arms\\pattern4.tga"
+			file = "gfx\\coats_of_arms\pattern4.tga"
 			size = { x = 10 y = 5 }
 			noOfFrames = 45
 			color = 2
 			emblem = no
 		}
 		texture = {
-			file = "gfx\\coats_of_arms\\dynasties2.tga"
+			file = "gfx\\coats_of_arms\dynasties2.tga"
 			size = { x = 16 y = 4 }
 			noOfFrames = 50
 			color = 0
 			random = no # Do not use for random CoAs
 		}
 		texture = {
-			file = "gfx\\coats_of_arms\\patricians.tga"
+			file = "gfx\\coats_of_arms\patricians.tga"
 			size = { x = 16 y = 2 }
 			noOfFrames = 25
 			color = 0
 			random = no # Do not use for random CoAs
 		}
 		texture = {
-			file = "gfx\\coats_of_arms\\dynasties3.tga"
+			file = "gfx\\coats_of_arms\dynasties3.tga"
 			size = { x = 16 y = 4 }
 			noOfFrames = 51
 			color = 0
 			random = no # Do not use for random CoAs
 		}
 		texture = {
-			file = "gfx\\coats_of_arms\\dynasties4.tga"
+			file = "gfx\\coats_of_arms\dynasties4.tga"
 			size = { x = 16 y = 4 }
 			noOfFrames = 52
 			color = 0
@@ -125,8 +123,7 @@ culture =
 	}
 }
 
-culture =
-{
+culture = {
 	religion_group = "muslim"
 
 	templates = { 
@@ -155,8 +152,7 @@ culture =
 	
 	rebel_colors = { 3 5 7 }
 	
-	banned_colors = 
-	{
+	banned_colors = {
 		{ 0 1 9 12 }			# Gold
 		{ 1 0 12 }				# White
 		{ 2 4 6 8 10 11 }		# Dark Green
@@ -173,28 +169,28 @@ culture =
 	}
 
 	emblem = {
-		file = "gfx\\coats_of_arms\\emblem_muslim.dds"
+		file = "gfx\\coats_of_arms\emblem_muslim.dds"
 		noOfFrames = 1
 	}
 
 	# WHEN ADDING NEW, ALWAYS ADD AT THE END
 	textures = {
 		texture = {
-			file = "gfx\\coats_of_arms\\pattern_muslim.tga"
+			file = "gfx\\coats_of_arms\pattern_muslim.tga"
 			size = { x = 10 y = 4 }
 			noOfFrames = 35
 			color = 2
 			emblem = no
 		}
 		texture = {
-			file = "gfx\\coats_of_arms\\pattern2_muslim.tga"
+			file = "gfx\\coats_of_arms\pattern2_muslim.tga"
 			size = { x = 10 y = 6 }
 			noOfFrames = 55
 			color = 3
 			emblem = no
 		}
 		texture = {
-			file = "gfx\\coats_of_arms\\dynasties4_muslim.tga"
+			file = "gfx\\coats_of_arms\dynasties4_muslim.tga"
 			size = { x = 3 y = 1 }
 			noOfFrames = 3
 			color = 0
@@ -241,8 +237,7 @@ culture = {
 	
 	rebel_colors = { 3 5 7 }
 	
-	banned_colors = 
-	{
+	banned_colors = {
 		{ 0 1 4 9 13 }				# Gold
 		{ 1 0 9 13 }				# White
 		{ 2 4 6 8 9 10 11 12 }		# Dark Green
@@ -260,21 +255,21 @@ culture = {
 	}
 
 	emblem = {
-		file = "gfx\\coats_of_arms\\emblem_muslim.dds"
+		file = "gfx\\coats_of_arms\emblem_muslim.dds"
 		noOfFrames = 1
 	}
 
 	# WHEN ADDING NEW, ALWAYS ADD AT THE END
 	textures = {
 		texture = {
-			file = "gfx\\coats_of_arms\\pattern_norse.tga"
+			file = "gfx\\coats_of_arms\pattern_norse.tga"
 			size = { x = 10 y = 4 }
 			noOfFrames = 32
 			color = 2
 			emblem = no
 		}
 		texture = {
-			file = "gfx\\coats_of_arms\\pattern2_norse.tga"
+			file = "gfx\\coats_of_arms\pattern2_norse.tga"
 			size = { x = 10 y = 4 }
 			noOfFrames = 32
 			color = 3
@@ -282,7 +277,7 @@ culture = {
 		}
 		texture = {
 		# Jylland, Kiev, Livonia, Meath, Novgorod, Orkney, Ostlandet, Sjaelland, The Isles, Trondelag, Uppland, Vastergotland, York
-			file = "gfx\\coats_of_arms\\pagans.tga"
+			file = "gfx\\coats_of_arms\pagans.tga"
 			size = { x = 13 y = 1 }
 			noOfFrames = 13
 			color = 0
@@ -317,8 +312,7 @@ culture = {
 	
 	rebel_colors = { 3 5 7 }
 	
-	banned_colors = 
-	{
+	banned_colors = {
 		{ 0 1 4 9 }				# Gold
 		{ 1 0 9 }				# White
 		{ 2 4 6 8 9 10 }		# Dark Green
@@ -333,21 +327,21 @@ culture = {
 	}
 
 	emblem = {
-		file = "gfx\\coats_of_arms\\emblem_muslim.dds"
+		file = "gfx\\coats_of_arms\emblem_muslim.dds"
 		noOfFrames = 1
 	}
 
 	# WHEN ADDING NEW, ALWAYS ADD AT THE END
 	textures = {
 		texture = {
-			file = "gfx\\coats_of_arms\\pattern_westafrican.tga"
+			file = "gfx\\coats_of_arms\pattern_westafrican.tga"
 			size = { x = 10 y = 1 }
 			noOfFrames = 10
 			color = 2
 			emblem = no
 		}
 		texture = {
-			file = "gfx\\coats_of_arms\\pattern2_westafrican.tga"
+			file = "gfx\\coats_of_arms\pattern2_westafrican.tga"
 			size = { x = 10 y = 1 }
 			noOfFrames = 10
 			color = 3
@@ -355,7 +349,7 @@ culture = {
 		}
 		texture = {
 		# Jylland, Kiev, Livonia, Meath, Novgorod, Orkney, Ostlandet, Sjaelland, The Isles, Trondelag, Uppland, Vastergotland, York
-			file = "gfx\\coats_of_arms\\pagans.tga"
+			file = "gfx\\coats_of_arms\pagans.tga"
 			size = { x = 13 y = 1 }
 			noOfFrames = 13
 			color = 0
@@ -393,8 +387,7 @@ culture = {
 	
 	rebel_colors = { 3 5 7 }
 	
-	banned_colors = 
-	{
+	banned_colors = {
 		{ 0 1 4 9 13 }				# Gold
 		{ 1 0 9 13 }				# White
 		{ 2 4 6 8 9 10 11 12 }		# Azure ( Blue)
@@ -412,21 +405,21 @@ culture = {
 	}
 
 	emblem = {
-		file = "gfx\\coats_of_arms\\emblem_muslim.dds"
+		file = "gfx\\coats_of_arms\emblem_muslim.dds"
 		noOfFrames = 1
 	}
 
 	# WHEN ADDING NEW, ALWAYS ADD AT THE END
 	textures = {
 		texture = {
-			file = "gfx\\coats_of_arms\\pattern_mongol.tga"
+			file = "gfx\\coats_of_arms\pattern_mongol.tga"
 			size = { x = 10 y = 5 }
 			noOfFrames = 50
 			color = 2
 			emblem = no
 		}
 		texture = {
-			file = "gfx\\coats_of_arms\\pattern2_mongol.tga"
+			file = "gfx\\coats_of_arms\pattern2_mongol.tga"
 			size = { x = 10 y = 5 }
 			noOfFrames = 50
 			color = 3
@@ -434,7 +427,7 @@ culture = {
 		}
 		texture = {
 		# Jylland, Kiev, Livonia, Meath, Novgorod, Orkney, Ostlandet, Sjaelland, The Isles, Trondelag, Uppland, Vastergotland, York
-			file = "gfx\\coats_of_arms\\pagans.tga"
+			file = "gfx\\coats_of_arms\pagans.tga"
 			size = { x = 13 y = 1 }
 			noOfFrames = 13
 			color = 0
@@ -444,11 +437,7 @@ culture = {
 }
 
 culture = {
-	religion = {
-		"zoroastrian"
-		"mazdaki"
-		"manichean"
-	}
+	religion_group = "zoroastrian_group"
 	
 	templates = { 
 		"coa_plain_muslim:1"
@@ -474,8 +463,7 @@ culture = {
 	
 	rebel_colors = { 3 5 7 }
 	
-	banned_colors = 
-	{
+	banned_colors = {
 		{ 0 1 4 9 13 }				# Gold
 		{ 1 0 9 13 }				# White
 		{ 2 4 6 8 9 10 11 12 }		# Dark Green
@@ -493,21 +481,21 @@ culture = {
 	}
 
 	emblem = {
-		file = "gfx\\coats_of_arms\\emblem_muslim.dds"
+		file = "gfx\\coats_of_arms\emblem_muslim.dds"
 		noOfFrames = 1
 	}
 
 	# WHEN ADDING NEW, ALWAYS ADD AT THE END
 	textures = {
 		texture = {
-			file = "gfx\\coats_of_arms\\pattern_zoroastrian.tga"
+			file = "gfx\\coats_of_arms\pattern_zoroastrian.tga"
 			size = { x = 10 y = 1 }
 			noOfFrames = 10
 			color = 2
 			emblem = no
 		}
 		texture = {
-			file = "gfx\\coats_of_arms\\pattern2_zoroastrian.tga"
+			file = "gfx\\coats_of_arms\pattern2_zoroastrian.tga"
 			size = { x = 10 y = 1 }
 			noOfFrames = 10
 			color = 3
@@ -516,8 +504,7 @@ culture = {
 	}
 }
 
-culture =
-{
+culture = {
 	religion_group = "jewish_group"
 
 	templates = { 
@@ -548,8 +535,7 @@ culture =
 	
 	rebel_colors = { 3 5 7 }
 
-	banned_colors = 
-	{ 
+	banned_colors = { 
 		{ 0 1 }						#0		
 		{ 0 1 9}					#1		
 		{ 2 3 4 6 7 8 9 12 14 }		#2		
@@ -568,35 +554,35 @@ culture =
 	}
 	
 	emblem = {
-		file = "gfx\\coats_of_arms\\emblem.tga"
+		file = "gfx\\coats_of_arms\emblem.tga"
 		noOfFrames = 25
 	}
 
 	# WHEN ADDING NEW, ALWAYS ADD AT THE END !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11111
 	textures = {
 		texture = {
-			file = "gfx\\coats_of_arms\\pattern.tga"
+			file = "gfx\\coats_of_arms\pattern.tga"
 			size = { x = 10 y = 5 }
 			noOfFrames = 47
 			color = 2
 			emblem = no
 		}
 		texture = {
-			file = "gfx\\coats_of_arms\\pattern2.tga"
+			file = "gfx\\coats_of_arms\pattern2.tga"
 			size = { x = 10 y = 3 }
 			noOfFrames = 22
 			color = 3
 			emblem = no
 		}
 		texture = {
-			file = "gfx\\coats_of_arms\\pattern3.tga"
+			file = "gfx\\coats_of_arms\pattern3.tga"
 			size = { x = 10 y = 5 }
 			noOfFrames = 44
 			color = 3
 			emblem = no
 		}
 		texture = {
-			file = "gfx\\coats_of_arms\\pattern4.tga"
+			file = "gfx\\coats_of_arms\pattern4.tga"
 			size = { x = 10 y = 5 }
 			noOfFrames = 45
 			color = 2
@@ -633,8 +619,7 @@ culture = {
 	
 	rebel_colors = { 3 5 7 }
 	
-	banned_colors = 
-	{
+	banned_colors = {
 		{ 0 1 4 9 13 }				# Gold
 		{ 1 0 9 13 }				# White
 		{ 2 4 6 8 9 10 11 12 }		# Dark Green
@@ -652,28 +637,28 @@ culture = {
 	}
 
 	emblem = {
-		file = "gfx\\coats_of_arms\\emblem_muslim.dds"
+		file = "gfx\\coats_of_arms\emblem_muslim.dds"
 		noOfFrames = 1
 	}
 
 	# WHEN ADDING NEW, ALWAYS ADD AT THE END
 	textures = {
 		texture = {
-			file = "gfx\\coats_of_arms\\pattern_indian.tga"
+			file = "gfx\\coats_of_arms\pattern_indian.tga"
 			size = { x = 10 y = 4 }
 			noOfFrames = 36
 			color = 2
 			emblem = no
 		}
 		texture = {
-			file = "gfx\\coats_of_arms\\pattern2_indian.tga"
+			file = "gfx\\coats_of_arms\pattern2_indian.tga"
 			size = { x = 10 y = 4 }
 			noOfFrames = 36
 			color = 3
 			emblem = no
 		}
 		texture = {
-			file = "gfx\\coats_of_arms\\dynasties4_indian.tga"
+			file = "gfx\\coats_of_arms\dynasties4_indian.tga"
 			size = { x = 2 y = 1 }
 			noOfFrames = 2
 			color = 0
@@ -695,38 +680,37 @@ culture = {
 
 	color = {
 		{ 250 180 20 }	#0 		Gold
-		{ 200 200 200 }   #1 		Silver
+		{ 200 200 200 } #1 		Silver
 		{ 20 70 180 } 	#2 		Blue
 		{ 185 5 5 } 	#3 		Red
 		{ 30 30 30 } 	#4 		Black
-		{ 40 80 40 }	#5  		Green
-		{ 180 90 40 }	#6  		Orange
-		{ 105 45 25 }	#7  		Brown
+		{ 40 80 40 }	#5 		Green
+		{ 180 90 40 }	#6 		Orange
+		{ 105 45 25 }	#7 		Brown
 	}
 	
 	rebel_colors = { 0 3 5 }
 	
-	banned_colors = 
-	{ 
+	banned_colors = { 
 		{ 0 6 }			#0		
-		{ 1 }				#1		
+		{ 1 }			#1		
 		{ 2 5 }			#2		
-		{ 3 6 7 }			#3		
-		{ 4 }				#4		
+		{ 3 6 7 }		#3		
+		{ 4 }			#4		
 		{ 5 2 }			#5	
-		{ 6 0 3 7 }			#6
-		{ 7 3 6 }			#7			
+		{ 6 0 3 7 }		#6
+		{ 7 3 6 }		#7			
 	}
 
 	emblem = {
-		file = "gfx\\coats_of_arms\\emblem_muslim.dds"
+		file = "gfx\\coats_of_arms\emblem_muslim.dds"
 		noOfFrames = 1
 	}
 
 	# WHEN ADDING NEW, ALWAYS ADD AT THE END
 	textures = {
 		texture = {
-			file = "gfx\\coats_of_arms\\ACR\\pattern_hellenic.tga"
+			file = "gfx\\coats_of_arms\ACR\pattern_hellenic.tga"
 			size = { x = 10 y = 4 }
 			noOfFrames = 40
 			color = 3
@@ -746,39 +730,38 @@ culture = {
 	}
 
 	color = {
-		{ 250 180 20 }	#0 		Gold
-		{ 220 220 220 }   #1 		White
-		{ 20 70 180 } 	#2 		Blue
-		{ 200 20 50 } 	#3 		Red
-		{ 30 30 30 } 	#4 		Black
-		{ 40 150 100 }	#5  		Green
-		{ 240 70 50 }	#6  		Orange
-		{ 200 200 150 }	#7  		Sand
+		{ 250 180 20 }		#0 		Gold
+		{ 220 220 220 } 	#1 		White
+		{ 20 70 180 } 		#2 		Blue
+		{ 200 20 50 } 		#3 		Red
+		{ 30 30 30 } 		#4 		Black
+		{ 40 150 100 }		#5 		Green
+		{ 240 70 50 }		#6 		Orange
+		{ 200 200 150 }		#7 		Sand
 	}
 	
 	rebel_colors = { 0 3 5 }
 	
-	banned_colors = 
-	{ 
+	banned_colors = { 
 		{ 0 7 }			#0		
-		{ 1 7 }				#1		
+		{ 1 7 }			#1		
 		{ 2 5 }			#2		
 		{ 3 6 }			#3		
-		{ 4 }				#4		
+		{ 4 }			#4		
 		{ 5 2 }			#5	
 		{ 6 3 }			#6
-		{ 7 0 1 }			#7			
+		{ 7 0 1 }		#7			
 	}
 
 	emblem = {
-		file = "gfx\\coats_of_arms\\emblem_muslim.dds"
+		file = "gfx\\coats_of_arms\emblem_muslim.dds"
 		noOfFrames = 1
 	}
 
 	# WHEN ADDING NEW, ALWAYS ADD AT THE END
 	textures = {
 		texture = {
-			file = "gfx\\coats_of_arms\\ACR\\pattern_kemetic.tga"
+			file = "gfx\\coats_of_arms\ACR\pattern_kemetic.tga"
 			size = { x = 10 y = 4 }
 			noOfFrames = 40
 			color = 3
@@ -798,41 +781,40 @@ culture = {
 	}
 
 	color = {
-		{ 215 170 60 }		# 0	Gold
-		{ 245 245 245 } 		# 1 	White
+		{ 215 170 60 }		# 0	    Gold
+		{ 245 245 245 } 	# 1 	White
 		{ 35 100 30 } 		# 2 	Dark Green
 		{ 20 20 20 }		# 3 	Black
 		{ 80 40 0 }			# 4 	Brown
 		{ 130 0 0 }			# 5 	Dark Red
 		{ 205 85 10 }		# 6 	Orange
 		{ 130 0 100 }		# 7 	Violet
-		{ 30 125 130 }		# 8	Turqouise
+		{ 30 125 130 }		# 8	    Turqouise
 	}
 	
 	rebel_colors = { 3 5 7 }
 	
-	banned_colors = 
-	{
-		{ 0 1 6 }				# 0
+	banned_colors = {
+		{ 0 1 6 }			# 0
 		{ 1 0 }				# 1
 		{ 2 8 }				# 2
 		{ 3 4 }				# 3
-		{ 4 5 3 }				# 4
-		{ 5 4 7 }				# 5
+		{ 4 5 3 }			# 4
+		{ 5 4 7 }			# 5
 		{ 6 0 }				# 6
 		{ 7 5 }				# 7
 		{ 8 2 }				# 8
 	}
 
 	emblem = {
-		file = "gfx\\coats_of_arms\\emblem_muslim.dds"
+		file = "gfx\\coats_of_arms\emblem_muslim.dds"
 		noOfFrames = 1
 	}
 
 	# WHEN ADDING NEW, ALWAYS ADD AT THE END
 	textures = {
 		texture = {
-			file = "gfx\\coats_of_arms\\ACR\\pattern_celtic.tga"
+			file = "gfx\\coats_of_arms\ACR\pattern_celtic.tga"
 			size = { x = 10 y = 4 }
 			noOfFrames = 40
 			color = 3
@@ -840,7 +822,7 @@ culture = {
 		}
 		texture = {
 		# Jylland, Kiev, Livonia, Meath, Novgorod, Orkney, Ostlandet, Sjaelland, The Isles, Trondelag, Uppland, Vastergotland, York
-			file = "gfx\\coats_of_arms\\pagans.tga"
+			file = "gfx\\coats_of_arms\pagans.tga"
 			size = { x = 13 y = 1 }
 			noOfFrames = 13
 			color = 0

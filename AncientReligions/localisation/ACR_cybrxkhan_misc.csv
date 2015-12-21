@@ -46,11 +46,13 @@ ancrel.4157.desc;The peasants you rule over believe that no matter what hardship
 ancrel.4157.a;Good to hear!;;;;;;;;;;;;;x
 ancrel.4158.desc;Regardless of whether they are right or wrong, the peasants you rule over believe that due to your style of rule, you unfortunately have been unable to maintain the balance of Ma'at - justice, goodness, the natural order - in the realm. ;;;;;;;;;;;x
 ancrel.4158.a;They don't understand! Don't understand at all!;;;;;;;;;;;;;x
-ancrel.4159.desc;To honor the traditions of the ancient Egyptians, many women in the region have taken to adopting pet cats, for they represent feminine fertility and sensuality. One day while lounging with your wife, you notice she is playing with one of her cats, and you can’t help but notice as she watches you she is looking at you in a rather seductive, cat-like manner, and suddenly I feel as if I want to learn more about this cat-like fertility and sensuality in a more practical, hands-on sense...;;;;;;;;;;;x
+ancrel.4159.desc;To honor the traditions of the ancient Egyptians, many women in the region have taken to adopting pet cats, for they represent feminine fertility and sensuality. One day while lounging with your wife, you notice she is playing with one of her cats, and you can’t help but notice as she watches you she is looking at you in a rather seductive, cat-like manner, and suddenly you feel as if you want to learn more about this cat-like fertility and sensuality in a more practical, hands-on sense...;;;;;;;;;;;x
 ancrel.4159.a;Come here, kitty…;;;;;;;;;;;;;x
 ancrel.4160.desc;A heinous crime! The wretched criminal is brought before you, and few in your court can bear to look at the deviant, lawless, inhuman evil-doer. He will be punished severely for his deed, of course, that is without a doubt. You tell the man his sentence, and your guards take him away to execute him shortly.;;;;;;;;;;;x
 ancrel.4160.a;Terrible! To think he murdered a cat, even by accident! An unforgivable crime.;;;;;;;;;;;;;x
-VIET_stupid_cat_lovers_boooo;The ancient Egyptians put anyone who killed a cat - even accidentally - to death immediately. Their justice was swift and vengeful, and so is yours. The cat is sacred, are they not, particularly to the great Goddess Bast? May the criminal’s blood be adequate satisfaction for the great Goddess.;;;;;;;;;;;x
+ancrel.4160.b;Come now, it's just a cat.;;;;;;;;;;;;;x
+VIET_stupid_cat_lovers_boooo;xxxxx;;;;;;;;;;;x
+ancrel.4161.desc;The ancient Egyptians put anyone who killed a cat - even accidentally - to death immediately. Their justice was swift and vengeful, and so is yours. The cat is sacred, are they not, particularly to the great Goddess Bast? May the criminal’s blood be adequate satisfaction for the great Goddess.;;;;;;;;;;;x
 ancrel.4161.desc;Ancient texts describe how in old Egypt, women were viewed as having greater amount of rights, privileges, and opportunities than they do today. Or so I've been told. Perhaps I should treat the women of my court with more respect if I am to properly emulate the customs of ancient Egypt.;;;;;;;;;;;x
 opinion_egyptian_respects_women;Respects Women;;;;;;;;;;;;;x
 opinion_egyptian_stop_being_feminazi;Listens too much to Women;;;;;;;;;;;;;x
@@ -75,7 +77,7 @@ opinion_egyptian_sore_loser;Sore Loser;;;;;;;;;;;x
 opinion_egyptian_lost_senet_game;Lost Senet Game;;;;;;;;;;;x
 ancrel.4166.desc;Your courtier claims that while taking a walk today he was by himself and encountered the ghost of Akhenaten himself! This abominable heretic, an incompetent Pharaoh obsessed with the god Aten, caused much mayhem in old Egypt and was rightfully cursed by the priests once the old, true religion was restored. But this is not good news… has your courtier been cursed as well?;;;;;;;;;;;x
 ancrel.4166.a;Better get to the priests quickly, dear friend, just in case!;;;;;;;;;;;;;x
-ancrel.4167.desc;You watch solemnly as the criminal is beheaded. Off goes his head, and his blood spills to the ground. Shemzu, the demon-god known as the Overthrower of the Wicked at the Block, must be pleased. They say when the condemned are executed, he throws their severed heads into a wine press and turns it into red wine.;;;;;;;;;;;x
+ancrel.4167.desc;You watch solemnly as the criminal is beheaded. Off goes his head, and his blood spills to the ground. Shezmu, the demon-god known as the Overthrower of the Wicked at the Block, the Slaughterer of Souls, and the Lord of Blood, must be pleased. They say when the condemned are executed, he throws their severed heads into a wine press and turns it into red wine.;;;;;;;;;;;x
 ancrel.4167.a;Righteous red wine! I think I’ll have some later today.;;;;;;;;;;;;;x
 ancrel.4168.desc;xxxxx;;;;;;;;;;;x
 ancrel.4168.a;Xxxxxxffff;;;;;;;;;;;;;x

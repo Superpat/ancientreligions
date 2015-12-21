@@ -225,3 +225,71 @@ d_legio_hellenica = {
 	# Extra income due to banking, etc
 	monthly_income = 10 # (Must be an integer between 1 and 512)
 }
+
+d_men_of_steel = {
+	color = { 128 120 20 }
+	color2 = { 255 255 255 }
+
+	capital = 679 # Kartli, location of Mount Kazbek, where Prometheus was chained
+
+	title = GRANDMASTER
+	foa = GRANDMASTER_FOA
+
+	landless = yes
+	holy_order = yes
+	religion = promethean_pagan
+
+	primary = yes
+
+	monthly_income = 2
+	strength_growth_per_century = 1.0
+	mercenary_type = steel_composition
+}
+
+d_sickles = {
+	color = { 128 120 20 }
+	color2 = { 255 255 255 }
+
+	capital = 482 # Athens, because I can't find anyplace close to Mt Othys
+
+	title = WARCHIEF
+	foa = WARCHIEF_FOA
+
+	holy_order = yes
+	landless = yes
+	religion = titan_pagan
+
+	primary = yes
+
+	monthly_income = 2
+	strength_growth_per_century = 1.0
+	mercenary_type = sickles_composition
+}
+
+d_burning_blades = {
+	color = { 128 120 45 }
+	color2 = { 255 255 255 }
+	
+	capital = 795 # Asyut
+
+	title = CAPTAIN
+	foa = CAPTAIN_FOA
+	
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = aten_pagan
+	
+	# Extra income due to donations, etc
+	monthly_income = 2 # (Must be an integer between 1 and 512)	
+	
+	# Cannot be held as a secondary title
+	primary = yes
+
+	strength_growth_per_century = 1.0
+
+	mercenary_type = horus_composition
+}

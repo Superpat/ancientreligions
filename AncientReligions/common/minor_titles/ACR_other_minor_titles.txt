@@ -19,11 +19,83 @@ title_pagan_wizard = {
 		religion_group = pagan_group
 	}
 	allowed_to_grant = {
+		always = no
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_acr_champion = {
+	dignity = 0.2
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 20
+	
+	monthly_salary = 0.1
+	monthly_prestige = 0.075
+	
+	allowed_to_hold = {
+		is_adult = yes
+		
 		OR = {
-			religion_group = christian
-			religion_group = muslim
-			religion_group = zoroastrian_group
+			is_female = no
+			feminist_trigger = yes
 		}
+	}
+
+	allowed_to_grant = {
+		OR = {
+			is_feudal = yes
+			is_tribal = yes
+		}
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+			religion = egyptian_pagan
+			religion = aten_pagan
+		}
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_master_arms = {
+	dignity = 0.2
+	realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 15
+	
+	monthly_salary = 0.075
+	monthly_prestige = 0.075
+	
+	allowed_to_hold = {
+		is_adult = yes
+		
+		OR = {
+			is_female = no
+			feminist_trigger = yes
+		}
+
+		martial = 6
+	}
+
+	allowed_to_grant = {
+		OR = {
+			is_feudal = yes
+			is_tribal = yes
+		}
+		religion_group = pagan_group
 	}
 	
 	gain_effect = {

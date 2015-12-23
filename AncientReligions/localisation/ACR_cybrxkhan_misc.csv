@@ -52,20 +52,32 @@ ancrel.4160.desc;A heinous crime! The wretched criminal is brought before you, a
 ancrel.4160.a;Terrible! To think he murdered a cat, even by accident! An unforgivable crime.;;;;;;;;;;;;;x
 ancrel.4160.b;Come now, it's just a cat.;;;;;;;;;;;;;x
 VIET_stupid_cat_lovers_boooo;xxxxx;;;;;;;;;;;x
-ancrel.4161.desc;The ancient Egyptians put anyone who killed a cat - even accidentally - to death immediately. Their justice was swift and vengeful, and so is yours. The cat is sacred, are they not, particularly to the great Goddess Bast? May the criminal’s blood be adequate satisfaction for the great Goddess.;;;;;;;;;;;x
-ancrel.4161.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4162.desc;xxxxx;;;;;;;;;;;x
-ancrel.4162.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4163.desc;xxxxx;;;;;;;;;;;x
-ancrel.4163.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4164.desc;xxxxx;;;;;;;;;;;x
-ancrel.4164.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4165.desc;xxxxx;;;;;;;;;;;x
-ancrel.4165.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4166.desc;xxxxx;;;;;;;;;;;x
-ancrel.4166.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4167.desc;xxxxx;;;;;;;;;;;x
-ancrel.4167.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4161.desc;Ancient texts describe how in old Egypt, women were viewed as having greater amount of rights, privileges, and opportunities than they do today. Or so I've been told. Perhaps I should treat the women of my court with more respect if I am to properly emulate the customs of ancient Egypt.;;;;;;;;;;;x
+opinion_egyptian_respects_women;Respects Women;;;;;;;;;;;;;x
+opinion_egyptian_stop_being_feminazi;Listens too much to Women;;;;;;;;;;;;;x
+opinion_egyptian_disrespects_women;Disrespects Women;;;;;;;;;;;;;x
+ancrel.4161.a;Yes! The Gods speak true, we must treat women better.;;;;;;;;;;;;;x
+ancrel.4161.b;Nonsense! Probably just blabber made up by nagging housewives.;;;;;;;;;;;;;x
+ancrel.4162.desc;A courtier has challenged me to a game of Senet. This ancient game has been played in Egypt ever since recorded history, and I like to think that while I'm not the best at it, I can still hold my own.;;;;;;;;;;;x
+ancrel.4162.a;Let's play!;;;;;;;;;;;;;x
+ancrel.4163.tooltip;We'll see who wins...;;;;;;;;;;;x
+ancrel.4163.desc;I have challenged my liege to a game of Senet. This ancient game has been played in Egypt ever since recorded history, and I like to think that while I'm not the best at it, I can still hold my own.;;;;;;;;;;;x
+ancrel.4163.a;Let's see who wins!;;;;;;;;;;;;;x
+ancrel.4164.tooltip;You win;;;;;;;;;;;x
+ancrel.4164.desc;I’ve been beaten me in Senet! A humiliating defeat, but a well-deserved one.;;;;;;;;;;;x
+ancrel.4164.a;Good game. You got me this time!;;;;;;;;;;;;;x
+ancrel.4164.b;How dare you!;;;;;;;;;;;;;x
+ancrel.4165.tooltip;You lose;;;;;;;;;;;x
+ancrel.4165.desc;I have won the Senet match. Clearly the Gods have favored me!;;;;;;;;;;;x
+ancrel.4165.a;You played well, however!;;;;;;;;;;;;;x
+ancrel.4165.b;Haha! What a pathetic loser!;;;;;;;;;;;;;x
+opinion_egyptian_senet_game;Played Senet;;;;;;;;;;;x
+opinion_egyptian_sore_loser;Sore Loser;;;;;;;;;;;x
+opinion_egyptian_lost_senet_game;Lost Senet Game;;;;;;;;;;;x
+ancrel.4166.desc;Your courtier claims that while taking a walk today he was by himself and encountered the ghost of Akhenaten himself! This abominable heretic, an incompetent Pharaoh obsessed with the god Aten, caused much mayhem in old Egypt and was rightfully cursed by the priests once the old, true religion was restored. But this is not good news… has your courtier been cursed as well?;;;;;;;;;;;x
+ancrel.4166.a;Better get to the priests quickly, dear friend, just in case!;;;;;;;;;;;;;x
+ancrel.4167.desc;You watch solemnly as the criminal is beheaded. Off goes his head, and his blood spills to the ground. Shezmu, the demon-god known as the Overthrower of the Wicked at the Block, the Slaughterer of Souls, and the Lord of Blood, must be pleased. They say when the condemned are executed, he throws their severed heads into a wine press and turns it into red wine.;;;;;;;;;;;x
+ancrel.4167.a;Righteous red wine! I think I’ll have some later today.;;;;;;;;;;;;;x
 ancrel.4168.desc;xxxxx;;;;;;;;;;;x
 ancrel.4168.a;Xxxxxxffff;;;;;;;;;;;;;x
 ancrel.4169.desc;xxxxx;;;;;;;;;;;x
@@ -130,3 +142,5 @@ ancrel.4198.desc;xxxxx;;;;;;;;;;;x
 ancrel.4198.a;Xxxxxxffff;;;;;;;;;;;;;x
 ancrel.4199.desc;xxxxx;;;;;;;;;;;x
 ancrel.4199.a;Xxxxxxffff;;;;;;;;;;;;;x
+opinion_egyptian_respects_women;Respects Women;;;;;;;;;;;;;x
+agagrawgragraegawg;Xxxxxxffff;;;;;;;;;;;;;x

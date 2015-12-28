@@ -206,3 +206,15 @@ VIET_artemis_protects_province = {
 	same_religion_opinion = 10
 	icon = 13
 }
+VIET_not_convinced_Zeus = {
+	intrigue = 1
+	icon = 39
+}
+VIET_convinced_Zeus = {
+	monthly_character_prestige = 0.05
+	icon = 39
+}
+VIET_heard_about_apollo_prank = {
+	diplomacy = 1
+	icon = 12
+}

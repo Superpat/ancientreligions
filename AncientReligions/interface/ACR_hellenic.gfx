@@ -190,7 +190,15 @@ spriteTypes = {
 		texturefile = "gfx\\event_pictures\ACR\ancient_greek_scroll.tga"
 	}
 	spriteType = {
+		name = "GFX_evt_pomegranate"
+		texturefile = "gfx\\event_pictures\ACR\pomegranate.tga"
+	}
+	spriteType = {
 		name = "GFX_evt_sun_and_moon"
 		texturefile = "gfx\\event_pictures\ACR\sun_and_moon.tga"
+	}
+	spriteType = {
+		name = "GFX_evt_artemis_moon"
+		texturefile = "gfx\\event_pictures\ACR\artemis_moon.tga"
 	}
 }

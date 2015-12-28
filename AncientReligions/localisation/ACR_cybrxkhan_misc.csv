@@ -1,4 +1,4 @@
-#Stuff;;;;;;;;;;;;;;x
+#EGYPTIAN FLAVOR;;;;;;;;;;;;;;x
 ancrel.4101.desc;The Nile begins to flood once more. Egyptians everywhere sigh with relief - the coming year will give them an unremarkable but decent harvest.;;;;;;;;;;;;;x
 ancrel.4102.desc;The Nile swells with a bountiful flood this year! Egyptians everywhere rejoice, for there shall be a harvest even better than usual.;;;;;;;;;;;;;x
 ancrel.4103.desc;Woe! The Nile has overflooded its banks. Egyptians everywhere are alarmed, for the destructive waters will destroy crop fields and cause havoc, and much of the harvest is now ruined.;;;;;;;;;;;;;x
@@ -130,3 +130,271 @@ ancrel.4198.desc;xxxxx;;;;;;;;;;;x
 ancrel.4198.a;Xxxxxxffff;;;;;;;;;;;;;x
 ancrel.4199.desc;xxxxx;;;;;;;;;;;x
 ancrel.4199.a;Xxxxxxffff;;;;;;;;;;;;;x
+#HELLENIC FLAVOR;;;;;;;;;;;;;;x
+nick_cherished_of_diana;Cherished of Diana;;;;;;;;;;;x
+VIET_greek_mythology_thoughts;Contemplating Ancient Hellenic Myths;;;;;;;;;;;x
+VIET_greek_mythology_thoughts_desc;The ancient myths fascinate this character.;;;;;;;;;;;x
+VIET_gods_curse;Cursed by the Gods;;;;;;;;;;;x
+VIET_gods_curse_desc;The Gods not only scorn this character, they actively go out of their way to make his or her life miserable. Surely this person must have committed a great sin to deserve such a fate!;;;;;;;;;;;x
+VIET_Zeus_blessing;Blessed by Jupiter;;;;;;;;;;;x
+VIET_Zeus_blessing_desc;"O mortal, you have won my favor, and so I shall promise not to seduce any women in your family as much as it may pain me so.";;;;;;;;;;;x
+VIET_played_with_nymphs;Played with Nymphs;;;;;;;;;;;x
+VIET_played_with_nymphs_desc;This character claims to have met with and spent some time with nymphs, those mirthful, mischievous, female spirits.;;;;;;;;;;;x
+VIET_curse_tablet;Target of Curse Tablet;;;;;;;;;;;x
+VIET_curse_tablet_desc;Woe! Someone has used a curse tablet to target this character.;;;;;;;;;;;x
+VIET_hellenic_helped_maid;Helped Young Maid;;;;;;;;;;;x
+VIET_hellenic_helped_maid_desc;This kindly man has helped one of his maidservants find a good husband, a young man of honorable and gentle disposition who will treat her well.;;;;;;;;;;;x
+VIET_hellenic_helped_servant;Helped Young Servant;;;;;;;;;;;x
+VIET_hellenic_helped_servant_desc;This kindly woman has helped one of her servants find a good wife, a young woman of honorable and gentle disposition who will treat him well.;;;;;;;;;;;x
+VIET_nymph_protector;Protected by Powerful Nymph;;;;;;;;;;;x
+VIET_nymph_protector_desc;Legend has it that a powerful nymph resides in this province, blessing it with prosperity and security, for she was the lover and wife of a lord who once ruled here ages ago.;;;;;;;;;;;x
+VIET_follower_of_cybele;Galli;;;;;;;;;;;x
+VIET_follower_of_cybele_desc;This character is a Galli, a castrated priest in the service of the fertility goddess Cybele.;;;;;;;;;;;x
+VIET_rumored_nymph;Rumored to be a Nymph;;;;;;;;;;;x
+VIET_rumored_nymph_desc;They say that this pretty woman is actually a nymph masquerading as a mortal in order to be closer to her lover.;;;;;;;;;;;x
+VIET_fanatic_tree;Fanaticus;;;;;;;;;;;x
+VIET_fanatic_tree_desc;On this character's residence is a so-called "fanaticus." These trees have been struck by lightning and are therefore blessed by the gods.;;;;;;;;;;;x
+VIET_hades_blessing;Blessed by Pluto;;;;;;;;;;;x
+VIET_hades_blessing_desc;The mortals tend to forget that Pluto is not only the god of the dead, but also the god of wealth.;;;;;;;;;;;x
+VIET_persephone_blessing;Blessed by Prosperina;;;;;;;;;;;x
+VIET_persephone_blessing_desc;Prosperina. On one hand the Dread Iron Queen of the underworld (brave Odysseus feared more than even Pluto!), on the other innocent Kore, the rosy-cheeked maiden of springtime.;;;;;;;;;;;x
+VIET_aphrodite_blessing;Blessed by Venus;;;;;;;;;;;x
+VIET_aphrodite_blessing_desc;"You're cute for a mortal.";;;;;;;;;;;x
+VIET_hera_blessing;Blessed by Juno;;;;;;;;;;;x
+VIET_hera_blessing_desc;"As much as I like you, mortal, I won't be able to protect you if Jupiter decides to seduce you. He always seems to find a way.";;;;;;;;;;;x
+VIET_athena_blessing;Blessed by Minerva;;;;;;;;;;;x
+VIET_athena_blessing_desc;Grey-eyed Minerva, or Pallas Athena, favorite child of Jupiter, the tireless one, whose shield is thunder and who is the hope of soldiers.;;;;;;;;;;;x
+VIET_hermes_blessing;Blessed by Mercury;;;;;;;;;;;x
+VIET_hermes_blessing_desc;"I've been looking for you, my favorite mortal. Got something I'm supposed to deliver. Your hands only.";;;;;;;;;;;x
+VIET_priapus_blessing;Priapus;;;;;;;;;;;x
+VIET_priapus_blessing_desc;The ancient Latins and Hellenes looked down on those with large phalluses... except when it came to Priapus'.;;;;;;;;;;;x
+VIET_priapus_curse;Cursed by Priapus;;;;;;;;;;;x
+VIET_priapus_curse_desc;They say this character has been cursed by the god Priapus. Maybe that's why he or she has been unable to perform as adequately in bed...;;;;;;;;;;;x
+VIET_lars_diplomacy;Blessings of the Lares (Diplomacy);;;;;;;;;;;x
+VIET_lars_martial;Blessings of the Lares (Martial);;;;;;;;;;;x
+VIET_lars_stewardship;Blessings of the Lares (Stewardship);;;;;;;;;;;x
+VIET_lars_intrigue;Blessings of the Lares (Intrigue);;;;;;;;;;;x
+VIET_lars_learning;Blessings of the Lares (Learning);;;;;;;;;;;x
+VIET_artemis_blessing;Blessed by Diana;;;;;;;;;;;x
+VIET_artemis_blessing_desc;Pale-armed Diana, she who is the moon above and who roams the countryside freely, the mistress of animals and the watcher in childbirth;;;;;;;;;;;x
+VIET_chosen_of_artemis;Champion of Diana;;;;;;;;;;;x
+VIET_chosen_of_artemis_desc;Rumor has it that this character has not only won Diana's favor, but is a good friend of hers! Perhaps he has such honor and piety that he has impressed the virgin goddess of the hunt. Hopefully, he won't end up like Orion...;;;;;;;;;;;x
+VIET_apollo_blessing;Blessed by Apollo;;;;;;;;;;;x
+VIET_apollo_blessing_desc;"Oh! My favorite mortal! Tell me what you think of my latest song.";;;;;;;;;;;x
+VIET_artemis_bad_poetry;Poorly Written Poetry about Diana;;;;;;;;;;;x
+VIET_artemis_bad_poetry_desc;"This stuff is so terrible that it ends up intriguing you in the long run.";;;;;;;;;;;x
+VIET_artemis_protects_province;Protected by Diana;;;;;;;;;;;x
+VIET_artemis_protects_province_desc;They say Diana often visits this province, protecting its inhabitants from various dangers and blessing it with abundance and wealth.;;;;;;;;;;;x
+VIET_artemis_rumors;Rumors about a Relationship with Diana;;;;;;;;;;;x
+VIET_artemis_rumors_desc;Some blasphemous fools have the gall to suggest that the goddess Diana has fallen in love with this man, who is a loyal devotee and rumored companion of her as Orion once was. They even suggest she has abandoned her vow of chastity and slept with him!;;;;;;;;;;;x
+ancrel.4200.desc;The story of Proserpina’s abduction by Pluto has interested you as of late. Pluto seems like a calm, stoic type who justly dispenses judgment over the souls of the dead without bias and isn’t a philanderer like his brothers, so you wonder as to why he would have acted so rashly. Is there more to the story than meets the eye?;;;;;;;;;;;x
+ancrel.4200.a;Nah, it was as they say. He had his way with her.;;;;;;;;;;;;;x
+ancrel.4200.b;Maybe Pluto conspired with Proserpina and the abduction was an excuse...;;;;;;;;;;;;;x
+ancrel.4200.c;Perhaps a poet exaggerated the story for unnecessary drama.;;;;;;;;;;;;;x
+ancrel.4200.d;Sometimes I wonder what sort of history Pluto and Ceres had...;;;;;;;;;;;;;x
+ancrel.4200.tooltip.1;That mischievous Cupid is to blame, having shot the arrow that made Pluto obsessed. Proserpina was beautiful and Pluto was lonely and desperate.;;;;;;;;;;;;;x
+ancrel.4200.tooltip.2;Or maybe the two of them conspired with Ceres! Who knows - maybe they needed to protect Proserpina from the philandering Jupiter.;;;;;;;;;;;;;x
+ancrel.4200.tooltip.3;After all, Pluto is one of the most faithful Gods, so he doesn't seem the type to kidnap fair maidens. Maybe Pluto was just socially awkward but the poets wanted a more sensational story.;;;;;;;;;;;;;x
+ancrel.4200.tooltip.4;What if Ceres secretly loved Pluto? What if her anguish at losing her daughter was actually anguish at her unrequited love for Pluto, but she was too embarrassed to admit it so she made up the story about Prosperina’s abduction?;;;;;;;;;;;;;x
+ancrel.4201.tooltip.0;She probably knows best after all and it would be improper if not blasphemous of me to make arbitrary assumptions about her.;;;;;;;;;;;x
+ancrel.4201.desc;You ponder on the stories surrounding Apollo and Diana and how protective they were of one another. Orion died because Apollo feared Diana would break her vow of chastity. Meanwhile, Diana killed Apollo's lover Coronis when she cheated on him. It sounds like a kind of jealousy, doesn’t it? You start to wonder whether the twins are closer than they appear... ;;;;;;;;;;;x
+ancrel.4201.a;Nah, probably just siblings who care about each other.;;;;;;;;;;;;;x
+ancrel.4201.b;Aha! Diana's “virgin” status makes much more sense!;;;;;;;;;;;;;x
+ancrel.4201.c;Haha, that's a good one. What are we, Zoroastrians?;;;;;;;;;;;;;x
+ancrel.4201.d;Maybe I could ask the goddess herself, since she likes me…;;;;;;;;;;;;;x
+ancrel.4202.desc;xxxxx;;;;;;;;;;;x
+ancrel.4202.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4203.desc;xxxxx;;;;;;;;;;;x
+ancrel.4203.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4204.desc;xxxxx;;;;;;;;;;;x
+ancrel.4204.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4205.desc;xxxxx;;;;;;;;;;;x
+ancrel.4205.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4206.desc;xxxxx;;;;;;;;;;;x
+ancrel.4206.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4207.desc;xxxxx;;;;;;;;;;;x
+ancrel.4207.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4208.desc;xxxxx;;;;;;;;;;;x
+ancrel.4208.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4209.desc;xxxxx;;;;;;;;;;;x
+ancrel.4209.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4210.desc;xxxxx;;;;;;;;;;;x
+ancrel.4210.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4211.desc;xxxxx;;;;;;;;;;;x
+ancrel.4211.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4212.desc;xxxxx;;;;;;;;;;;x
+ancrel.4212.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4213.desc;xxxxx;;;;;;;;;;;x
+ancrel.4213.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4214.desc;xxxxx;;;;;;;;;;;x
+ancrel.4214.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4215.desc;xxxxx;;;;;;;;;;;x
+ancrel.4215.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4216.desc;xxxxx;;;;;;;;;;;x
+ancrel.4216.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4217.desc;xxxxx;;;;;;;;;;;x
+ancrel.4217.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4218.desc;xxxxx;;;;;;;;;;;x
+ancrel.4218.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4219.desc;xxxxx;;;;;;;;;;;x
+ancrel.4219.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4220.desc;xxxxx;;;;;;;;;;;x
+ancrel.4220.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4221.desc;xxxxx;;;;;;;;;;;x
+ancrel.4221.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4222.desc;xxxxx;;;;;;;;;;;x
+ancrel.4222.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4223.desc;xxxxx;;;;;;;;;;;x
+ancrel.4223.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4224.desc;xxxxx;;;;;;;;;;;x
+ancrel.4224.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4225.desc;xxxxx;;;;;;;;;;;x
+ancrel.4225.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4226.desc;xxxxx;;;;;;;;;;;x
+ancrel.4226.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4227.desc;xxxxx;;;;;;;;;;;x
+ancrel.4227.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4228.desc;xxxxx;;;;;;;;;;;x
+ancrel.4228.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4229.desc;xxxxx;;;;;;;;;;;x
+ancrel.4229.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4230.desc;xxxxx;;;;;;;;;;;x
+ancrel.4230.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4231.desc;xxxxx;;;;;;;;;;;x
+ancrel.4231.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4232.desc;xxxxx;;;;;;;;;;;x
+ancrel.4232.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4233.desc;xxxxx;;;;;;;;;;;x
+ancrel.4233.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4234.desc;xxxxx;;;;;;;;;;;x
+ancrel.4234.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4235.desc;xxxxx;;;;;;;;;;;x
+ancrel.4235.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4236.desc;xxxxx;;;;;;;;;;;x
+ancrel.4236.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4237.desc;xxxxx;;;;;;;;;;;x
+ancrel.4237.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4238.desc;xxxxx;;;;;;;;;;;x
+ancrel.4238.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4239.desc;xxxxx;;;;;;;;;;;x
+ancrel.4239.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4240.desc;xxxxx;;;;;;;;;;;x
+ancrel.4240.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4241.desc;xxxxx;;;;;;;;;;;x
+ancrel.4241.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4242.desc;xxxxx;;;;;;;;;;;x
+ancrel.4242.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4243.desc;xxxxx;;;;;;;;;;;x
+ancrel.4243.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4244.desc;xxxxx;;;;;;;;;;;x
+ancrel.4244.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4245.desc;xxxxx;;;;;;;;;;;x
+ancrel.4245.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4246.desc;xxxxx;;;;;;;;;;;x
+ancrel.4246.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4247.desc;xxxxx;;;;;;;;;;;x
+ancrel.4247.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4248.desc;xxxxx;;;;;;;;;;;x
+ancrel.4248.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4249.desc;xxxxx;;;;;;;;;;;x
+ancrel.4249.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4250.desc;xxxxx;;;;;;;;;;;x
+ancrel.4250.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4251.desc;xxxxx;;;;;;;;;;;x
+ancrel.4251.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4252.desc;xxxxx;;;;;;;;;;;x
+ancrel.4252.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4253.desc;xxxxx;;;;;;;;;;;x
+ancrel.4253.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4254.desc;xxxxx;;;;;;;;;;;x
+ancrel.4254.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4255.desc;xxxxx;;;;;;;;;;;x
+ancrel.4255.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4256.desc;xxxxx;;;;;;;;;;;x
+ancrel.4256.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4257.desc;xxxxx;;;;;;;;;;;x
+ancrel.4257.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4258.desc;xxxxx;;;;;;;;;;;x
+ancrel.4258.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4259.desc;xxxxx;;;;;;;;;;;x
+ancrel.4259.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4260.desc;xxxxx;;;;;;;;;;;x
+ancrel.4260.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4261.desc;xxxxx;;;;;;;;;;;x
+ancrel.4261.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4262.desc;xxxxx;;;;;;;;;;;x
+ancrel.4262.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4263.desc;xxxxx;;;;;;;;;;;x
+ancrel.4263.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4264.desc;xxxxx;;;;;;;;;;;x
+ancrel.4264.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4265.desc;xxxxx;;;;;;;;;;;x
+ancrel.4265.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4266.desc;xxxxx;;;;;;;;;;;x
+ancrel.4266.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4267.desc;xxxxx;;;;;;;;;;;x
+ancrel.4267.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4268.desc;xxxxx;;;;;;;;;;;x
+ancrel.4268.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4269.desc;xxxxx;;;;;;;;;;;x
+ancrel.4269.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4270.desc;xxxxx;;;;;;;;;;;x
+ancrel.4270.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4271.desc;xxxxx;;;;;;;;;;;x
+ancrel.4271.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4272.desc;xxxxx;;;;;;;;;;;x
+ancrel.4272.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4273.desc;xxxxx;;;;;;;;;;;x
+ancrel.4273.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4274.desc;xxxxx;;;;;;;;;;;x
+ancrel.4274.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4275.desc;xxxxx;;;;;;;;;;;x
+ancrel.4275.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4276.desc;xxxxx;;;;;;;;;;;x
+ancrel.4276.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4277.desc;xxxxx;;;;;;;;;;;x
+ancrel.4277.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4278.desc;xxxxx;;;;;;;;;;;x
+ancrel.4278.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4279.desc;xxxxx;;;;;;;;;;;x
+ancrel.4279.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4280.desc;xxxxx;;;;;;;;;;;x
+ancrel.4280.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4281.desc;xxxxx;;;;;;;;;;;x
+ancrel.4281.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4282.desc;xxxxx;;;;;;;;;;;x
+ancrel.4282.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4283.desc;xxxxx;;;;;;;;;;;x
+ancrel.4283.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4284.desc;xxxxx;;;;;;;;;;;x
+ancrel.4284.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4285.desc;xxxxx;;;;;;;;;;;x
+ancrel.4285.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4286.desc;xxxxx;;;;;;;;;;;x
+ancrel.4286.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4287.desc;xxxxx;;;;;;;;;;;x
+ancrel.4287.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4288.desc;xxxxx;;;;;;;;;;;x
+ancrel.4288.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4289.desc;xxxxx;;;;;;;;;;;x
+ancrel.4289.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4290.desc;xxxxx;;;;;;;;;;;x
+ancrel.4290.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4291.desc;xxxxx;;;;;;;;;;;x
+ancrel.4291.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4292.desc;xxxxx;;;;;;;;;;;x
+ancrel.4292.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4293.desc;xxxxx;;;;;;;;;;;x
+ancrel.4293.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4294.desc;xxxxx;;;;;;;;;;;x
+ancrel.4294.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4295.desc;xxxxx;;;;;;;;;;;x
+ancrel.4295.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4296.desc;xxxxx;;;;;;;;;;;x
+ancrel.4296.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4297.desc;xxxxx;;;;;;;;;;;x
+ancrel.4297.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4298.desc;xxxxx;;;;;;;;;;;x
+ancrel.4298.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4299.desc;xxxxx;;;;;;;;;;;x
+ancrel.4299.a;Xxxxxxffff;;;;;;;;;;;;;x

@@ -453,32 +453,46 @@ ancrel.4284.a;“And what about when you barged in on me bathing?” she asks simply
 ancrel.4285.title;Bored Goddess;;;;;;;;;;;x
 ancrel.4285.desc;You turn around. “Fair point. Anyways, you usually don’t visit me in my house… actually you rarely do that. To what pleasure do I owe your appearance?”\n\n“I’m bored,” she says. You snort to yourself, realizing that the lukewarm expression on her face makes her look more like a spoiled mortal princess than the powerful deity she is. “What are you reading?” she asks.\n\n“Oh… er… this….” You wonder whether you should tell her, but realize she’ll figure out anyways.;;;;;;;;;;;x
 ancrel.4285.a;“Stories they’ve written about you,” you reply.;;;;;;;;;;;;;x
-ancrel.4286.title;xxxxx;;;;;;;;;;;x
-ancrel.4286.desc;xxxxx;;;;;;;;;;;x
-ancrel.4286.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4287.desc;xxxxx;;;;;;;;;;;x
-ancrel.4287.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4288.desc;xxxxx;;;;;;;;;;;x
-ancrel.4288.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4289.desc;xxxxx;;;;;;;;;;;x
-ancrel.4289.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4290.desc;xxxxx;;;;;;;;;;;x
-ancrel.4290.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4291.desc;xxxxx;;;;;;;;;;;x
-ancrel.4291.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4292.desc;xxxxx;;;;;;;;;;;x
-ancrel.4292.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4293.desc;xxxxx;;;;;;;;;;;x
-ancrel.4293.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4294.desc;xxxxx;;;;;;;;;;;x
-ancrel.4294.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4295.desc;xxxxx;;;;;;;;;;;x
-ancrel.4295.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4296.desc;xxxxx;;;;;;;;;;;x
-ancrel.4296.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4297.desc;xxxxx;;;;;;;;;;;x
-ancrel.4297.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4298.desc;xxxxx;;;;;;;;;;;x
-ancrel.4298.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4299.desc;xxxxx;;;;;;;;;;;x
-ancrel.4299.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4286.title;Why Do These Exist?;;;;;;;;;;;x
+ancrel.4286.desc;You watch her nervously as she skims over the stories. After she finishes and puts the scrolls and books down, she calmly grimaces, though you can tell her eyes are ablaze with fury. “Goddamn poets! Every time I’m friendly with a man they think I’m sleeping with him. Am I sleeping with you? No, I don’t think so. Not that there’s anything wrong with you, but I’m a sworn virgin. Is it that hard for me to be friendly with a man? And they portray me as so vengeful and angry and irrational.”\n\nShe takes a deep breath and calms down. “So, what do you think of these ‘romances’ they’ve written? Why are you even reading them in the first place?”;;;;;;;;;;;x
+ancrel.4286.a;“Curiosity? They’re kind of funny - ”;;;;;;;;;;;;;x
+ancrel.4287.title;Unrealistic Fiction;;;;;;;;;;;x
+ancrel.4287.desc;Diana glares at you. “Funny? You think these are funny?”\n\n“They’re funny because they’re based on ridiculous rumors,” you say calmly. Most mortals would have cowered at the sight of an angry Diana, but you’ve known her for long enough now that you can discern between when she’s just being moody and when she’s actually angry enough someone could get hurt.\n\nShe calms down again. “Well… I suppose a few of them were funny in their complete lack of realism. Wait, can I see that one again, the one where there’s a love triangle?”;;;;;;;;;;;x
+ancrel.4287.a;You both spend the rest of the afternoon reading, laughing at the nonsense.;;;;;;;;;;;;;x
+ancrel.4288.desc;Although you and Diana often hunt together, sometimes the two of you just take walks in the wilderness and chat about things. Currently, the two of you are sitting by a stream in one of her sacred groves as she is complaining about a prank Mercury and Apollo played on her the other day, when you hear a sudden flash and bang. Instinctively, both of you grab your weapons.;;;;;;;;;;;x
+ancrel.4288.a;Who’s there?;;;;;;;;;;;;;x
+ancrel.4289.title;Diana Isn’t Surprised;;;;;;;;;;;x
+ancrel.4289.desc;It’s Jupiter! Being a mere mortal, you kneel before the king of the gods. He appears regal and imposing, a king of kings yet his voice betrays his nervousness. “Pardon me for the intrusion, I was just passing - ”\n\n“Juno found out about another one of your dalliances and she’s mad now, isn’t she?” Diana asks.\n\n“Oh no, I just wanted to spend time with my favorite daughter - ”\n\n“We all know that Minerva is your favorite. Now leave me and my friend, father, I won’t defend you. As amusing as it might be I don’t want to get in the middle of another fight between you and your wife. Last time I nearly got a head wound.”;;;;;;;;;;;x
+ancrel.4289.a;He grumbles and disappears.;;;;;;;;;;;;;x
+ancrel.4290.title;How Annoying;;;;;;;;;;;x
+ancrel.4290.desc;After Jupiter leaves, Diana scowls. Out of curiosity, you ask her, “Is he more annoying than Apollo?”\n\n“Apollo is the most anno…. No. Apollo is my brother. As much as we annoy each other, we’re still twins. We experienced much together. Father, on the other hand… he needs to learn to control his lust. Sometimes I even consider asking uncle Pluto to lecture to father on how to be a faithful husband.”\n\n“So, anyways, where were we? Oh, right, do continue telling me about what Apollo and Mercury were doing.”;;;;;;;;;;;x
+ancrel.4290.a;“So I thought that Apollo was just having sex but actually he…”;;;;;;;;;;;;;x
+ancrel.4291.desc;You and Diana are outside, preparing to go on yet another hunt. You casually observe her as she stretches her muscles and readies her bow, and notices that she seems to be in a good mood. You ask her why, and she starts laughing. “Oh, I should tell you. So you remember what my brother did to me a month ago? Well, I got my revenge. Played prank on him last night.”;;;;;;;;;;;x
+ancrel.4291.a;“So I took a statue of Prosperina and spread some hummus by the…”;;;;;;;;;;;;;x
+ancrel.4292.desc;You widen your eyes, shocked at Diana’s creativity. This prank was something you expected from Mercury, not her! You roll on the floor, guffawing with laughter. She’s beaming as well, quite proud of herself. Suddenly, she frowns and her eyes narrow. “He’s probably going to get back at me. I have to remain vigilant, or else…”;;;;;;;;;;;x
+ancrel.4292.a;I promise to help you to the best of my ability.;;;;;;;;;;;;;x
+ancrel.4293.desc;Today Diana was supposed to be hunting with you. However, she brought Apollo along with her. That is usually not a problem - every now and then he joins the two of you - but today it is not going well because the twins started arguing about something stupid, and now you’re sitting awkwardly on the side twiddling your thumbs as they scream and fling childish insults at each other.;;;;;;;;;;;x
+ancrel.4293.a;This isn’t the first time this has happened either.;;;;;;;;;;;;;x
+ancrel.4294.desc;Suddenly, they both turn to you, and ask you for your opinion. Who’s right this time around? You watch them warily. You don’t even know what they’re exactly arguing about, and your opinion is probably irrelevant, but obviously they want to one up each other.;;;;;;;;;;;x
+ancrel.4294.a;As her champion, I must support Lady Diana;;;;;;;;;;;;;x
+ancrel.4294.b;For once, Lord Apollo might have a point.;;;;;;;;;;;;;x
+ancrel.4294.c;I think it’s better I somehow appease both…;;;;;;;;;;;;;x
+ancrel.4295.tooltip.1;\n\nDiana lifts her head proudly in triumph as Apollo sulks. The goddess tries to suppress her laugh at how immature her brother looks.;;;;;;;;;;;x
+ancrel.4295.tooltip.2;\n\nDiana stomps a foot on the ground and is about to storm off, but manages to stop and collect herself once she realizes how childish she appears.;;;;;;;;;;;x
+ancrel.4295.tooltip.3;\n\nDiana and Apollo nod sagely, agreeing with the points you raise.;;;;;;;;;;;x
+ancrel.4295.desc;Today while spending some time with Lady Diana, she tells you about how her twin Apollo is frustrating her again. This time it’s because of his sexual escapades. “He’s not as bad as Jupiter,” she admits, “but it’s still rather frustrating. On Mount Olympus his room is next to mine, so I often hear… things. Yesterday he and his lady friend were really loud.”;;;;;;;;;;;x
+ancrel.4295.a;He’s a man and can’t help it, but you’re right to be angry.;;;;;;;;;;;;;x
+ancrel.4295.b;He should definitely be more considerate to you!;;;;;;;;;;;;;x
+ancrel.4296.title;Born Together, Worry Together;;;;;;;;;;;x
+ancrel.4296.desc;“Thank you for your understanding. But, you know, I don’t want him to get hurt again. He doesn’t have much luck with love, that much of the stories you mortals tell is true. Every time he finds a girl it usually does not end well” She snorts. “I can’t believe I still worry about him that much. Still, I am older, so it's my duty to watch out for him.”\n\n“You’re only older by a few days, right, Lady Diana? Or at least a few hours,” you respond. “That’s not that much older given you’re both immortal. He’s told me that sometimes he feels like the older one when he has to worry about you.”\n\n“Shut up. I’m his older sister.”;;;;;;;;;;;x
+ancrel.4296.a;You smile quietly to yourself. ;;;;;;;;;;;;;x
+ancrel.4297.desc;You’re not young anymore, but you still find time to spend with Diana, whether it’s hunting or just relaxing and engaging in dialogue. As her devoted follower, after all, it’s still your duty of sorts. However, lately you’ve been bothered by the fact that you’re no longer the young man you once were. Death ever approaches. You decide to ask Diana about your worries.;;;;;;;;;;;x
+ancrel.4297.a;Surely as a deity she might have some insight.;;;;;;;;;;;;;x
+ancrel.4298.title;The Land of Pomegranates;;;;;;;;;;;x
+ancrel.4298.desc;She frowns as she struggles to formulate an answer. Finally, she says, “I am immortal, you know. I don’t know what it’s like to die.”\n\n“But surely you have seen friends and loved ones die.”\n\n“I’m sorry, I don’t know what to say. It’s as foreign a concept to me as my immortality is to you. Don’t worry, though, I’ll make sure to visit you in the underworld after you die, even if you end up in Tartarus,” she says with a smirk. “What, you think my uncle Pluto is a recluse loner? Quite the contrary, we Olympians like to visit his realm every now and then.”;;;;;;;;;;;x
+ancrel.4298.a;“Eat the pomegranates when you get there, they’re to die for.”;;;;;;;;;;;;;x
+ancrel.4299.title;Light of the Moon;;;;;;;;;;;x
+ancrel.4299.desc;Suddenly, you see a light, and a figure appears. It is Diana in full regalia, and armed with her bow and arrow. “You’re dead,” she says as if it’s obvious. “Normally another god would escort you to the underworld, but Pluto allowed me to have the honors.”\n\n“Wait, what - ”\n\n“Come on, I don’t have all day. Do you have your coins for the ferryman? If you don’t you owe me big. Or I could steal a couple of Apollo’s coins instead, as I do need to get back at him. Yesterday he had the gall to come up to me and…. Anyways, I'll tell you later. Don’t worry, I’ll visit you in the underworld every now and then, but I’ve recommended to Pluto that you be placed in Elysium.”;;;;;;;;;;;x
+ancrel.4299.a;
+“Ah. Well. Thank you, Lady Diana. It’s the end for me, huh?”;;;;;;;;;;;;;x
+VIET_artemis_finally_a_lotr_reference;\n\nShe smiles gently. “End? No, my friend, the journey doesn't end here. Death is just another path, one that you must take.”;;;;;;;;;;;;;x

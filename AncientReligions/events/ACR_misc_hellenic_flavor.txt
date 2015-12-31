@@ -4551,9 +4551,9 @@ character_event = {
 }
 
 # Artemis tells you about a prank she played on Apollo, part 2
-narrative_event = {
+character_event = {
 	id = ancrel.4292
-	title = ancrel.4292.title
+	#title = ancrel.4292.title
 	desc = ancrel.4292.desc
 	picture = GFX_evt_zeus_on_throne
 
@@ -4828,7 +4828,7 @@ character_event = {
 		set_character_flag = VIET_ask_artemis_about_death
 	}
 	
-	option = {# he's a man, can't help it
+	option = {# what is death?
 		name = ancrel.4297.a
 		hidden_tooltip = {
 			character_event = { id = ancrel.4298 }
@@ -4845,9 +4845,9 @@ narrative_event = {
 	
 	is_triggered_only = yes
 	
-	option = {#lolol
+	option = {# pomegranates
 		name = ancrel.4298.a
-		piety = 5
+		piety = 10
 	}	
 }
 

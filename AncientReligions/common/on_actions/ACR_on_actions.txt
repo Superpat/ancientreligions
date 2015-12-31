@@ -17,27 +17,64 @@ on_yearly_pulse = {
 	random_events = {
 		100 = ancrel.1260 # fennid arrested by marshal, catholics only (why?)
 		100 = ancrel.1254 # fian visiting your court
+		
+		#Egypt Flavor
 		100 = ancrel.4154 # Bes protects from nightmare
 		100 = ancrel.4160 # someone has dared to kill a cat
+		100 = ancrel.4162 # Senet Game
+		100 = ancrel.4167 # Shemzu execution
+		
+		#Hellenic Flavor
+		100 = ancrel.4203 # Dead beggar doesn't have money to pay the ferryman
+		100 = ancrel.4209 # Found a curse tablet
+		100 = ancrel.4215 # Leptis Manialis
+		100 = ancrel.4218 # Lightning strikes tree
+		100 = ancrel.4219 # Odysseus
+		250 = ancrel.4229 # Praying to family Lares
 	}
 }
 
 #character, every 2 years
 on_bi_yearly_pulse = {
 	random_events = {
-		100 = ancrel.4150 # Distribute Garlic
-		100 = ancrel.4151 # Palm trees
-		100 = ancrel.4152 # Khnum Amulet
-		200 = ancrel.4157 # You are upholding Ma'at
-		200 = ancrel.4158 # You are NOT upholding Ma'at
+		#Egypt Flavor
+		20 = ancrel.4150 # Distribute Garlic
+		20 = ancrel.4151 # Palm trees
+		20 = ancrel.4152 # Khnum Amulet
+		50 = ancrel.4157 # You are upholding Ma'at
+		50 = ancrel.4158 # You are NOT upholding Ma'at
+		20 = ancrel.4161 # Women had more rights in ancient Egypt
+		
+		#Hellenic Flavor
+		20 = ancrel.4200 # HadesxPersephone
+		20 = ancrel.4201 # ApolloxArtemis
+		20 = ancrel.4208 # Pharmakos ceremony
+		20 = ancrel.4216 # Courtier hunted in Diana's sacred groves
+		20 = ancrel.4227 # Herma
+		20 = ancrel.4228 # Touch Priapus statue or not?
 	}
 }
 
 #character
 on_five_year_pulse = {
 	random_events = {
-		250 = ancrel.4155 # expel the evil within
-		200 = ancrel.4159 # one of your wives displays feline grace... <.< >.>
+		#Egypt Flavor
+		20 = ancrel.4155 # expel the evil within
+		20 = ancrel.4159 # one of your wives displays feline grace... <.< >.>
+		20 = ancrel.4166 # Ghost of Akhenaten
+		
+		#Hellenic Flavor
+		20 = ancrel.4202 # Zeus supposedly knocked a woman up - is she lying?
+		20 = ancrel.4204 # Zeus visits
+		20 = ancrel.4207 # Stumble on some nymphs
+		20 = ancrel.4210 # Maid attempts to use love spell
+		20 = ancrel.4211 # Servant boy attempts to use love spell
+		20 = ancrel.4212 # Daughter breastfeeds starving father
+		20 = ancrel.4213 # Nymph legend
+		20 = ancrel.4214 # Courtier's son wants to become priest of Cybele
+		20 = ancrel.4217 # Courtier marries nymph
+		20 = ancrel.4220 # Theseus and Pirithuos
+		20 = ancrel.4223 # Who's the fairest of them all?
 	}
 }
 

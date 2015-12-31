@@ -31,13 +31,13 @@ ancrel.4151.b;Perhaps I should not, this seems vain and pointless.;;;;;;;;;;;;;x
 ancrel.4152.desc;An important and influential member of the local community in your capital has given you an beautifully crafted gold amulet dedicated to the god Khnum. As controller of the Nile, he brings fortune to all and is not to be ignored.;;;;;;;;;;;x
 ancrel.4152.a;Thank you! May this amulet help me in this life.;;;;;;;;;;;;;x
 ancrel.4153.desc;Ill news! Lately it seems a crafty band of robbers have been breaking into various tombs in [Root.GetName], desecrating corpses and making away with whatever riches they can find. How now will the dead be able to properly protect their descendants, much less live contentedly in the afterlife with Osiris? This is a shame, indeed, and nothing but a shame!;;;;;;;;;;;x
-ancrel.4153.a;Hopefully local security will catch these brigands‚Ä¶;;;;;;;;;;;;;x
+ancrel.4153.a;Hopefully local security will catch these brigandsÖ;;;;;;;;;;;;;x
 ancrel.4153.b;We will provide some aid to protect any unplundered tombs.;;;;;;;;;;;;;x
 ancrel.4154.desc;In my dream I was surrounded by evil spirits. I was lost. I was scared. I fell to despair, I lost hope. But then came the god Bes, that dwarf-god of grotesque appearance, and I saw him as he took out his swords and knives and waved them like a soldier, to ward off the demons. I saw as he took out his musical instruments and played loud songs to frighten them. As I awoke, I felt at peace.;;;;;;;;;;;x
 ancrel.4154.a;As he protected the Pharaohs of old, so has he protected me just now!;;;;;;;;;;;;;x
-ancrel.4155.desc;I feel that despite my many good deeds, there are is still Isfet - evil - within me that must be purged, for I have certainly done sinful things as a ruler. If my heart is out of balance with Ma‚Äôat, then in the afterlife I will be devoured by the terrible beast Ammit and I will have no chance of a peaceful immortality. Thus, I desire to find a good sorcerer-priest, who knows how to alleviate me of this worry!;;;;;;;;;;;x
+ancrel.4155.desc;I feel that despite my many good deeds, there are is still Isfet - evil - within me that must be purged, for I have certainly done sinful things as a ruler. If my heart is out of balance with Maíat, then in the afterlife I will be devoured by the terrible beast Ammit and I will have no chance of a peaceful immortality. Thus, I desire to find a good sorcerer-priest, who knows how to alleviate me of this worry!;;;;;;;;;;;x
 ancrel.4155.a;I must ensure my place in the afterlife!;;;;;;;;;;;;;x
-ancrel.4155.b;On second thought, all this talk of ‚Äúevil‚Äù and the afterlife is stupid.;;;;;;;;;;;;;x
+ancrel.4155.b;On second thought, all this talk of ìevilî and the afterlife is stupid.;;;;;;;;;;;;;x
 ancrel.4156.tooltip;Off to the temple we go.;;;;;;;;;;;x
 ancrel.4156.title;Expel the Evil in my Heart;;;;;;;;;;;x
 ancrel.4156.desc;The sorcerer-priest understands my worries, and knows the right incantation for my situation. He thus begins to chant in my presence:\n\n"I am bringing the gods incense and natron.\nI want to expel the bad smell from your mouth.\nTherefore I come in order to expel the evil in your hearts.\nWith this I remove the Evil, Isfet, which clings to you.\nWith this I bring you Good.\nI present Justice, Maat, to you......";;;;;;;;;;;x
@@ -46,13 +46,13 @@ ancrel.4157.desc;The peasants you rule over believe that no matter what hardship
 ancrel.4157.a;Good to hear!;;;;;;;;;;;;;x
 ancrel.4158.desc;Regardless of whether they are right or wrong, the peasants you rule over believe that due to your style of rule, you unfortunately have been unable to maintain the balance of Ma'at - justice, goodness, the natural order - in the realm. ;;;;;;;;;;;x
 ancrel.4158.a;They don't understand! Don't understand at all!;;;;;;;;;;;;;x
-ancrel.4159.desc;To honor the traditions of the ancient Egyptians, many women in the region have taken to adopting pet cats, for they represent feminine fertility and sensuality. One day while lounging with your wife, you notice she is playing with one of her cats, and you can‚Äôt help but notice as she watches you she is looking at you in a rather seductive, cat-like manner, and suddenly you feel as if you want to learn more about this cat-like fertility and sensuality in a more practical, hands-on sense...;;;;;;;;;;;x
-ancrel.4159.a;Come here, kitty‚Ä¶;;;;;;;;;;;;;x
+ancrel.4159.desc;To honor the traditions of the ancient Egyptians, many women in the region have taken to adopting pet cats, for they represent feminine fertility and sensuality. One day while lounging with your wife, you notice she is playing with one of her cats, and you canít help but notice as she watches you she is looking at you in a rather seductive, cat-like manner, and suddenly you feel as if you want to learn more about this cat-like fertility and sensuality in a more practical, hands-on sense...;;;;;;;;;;;x
+ancrel.4159.a;Come here, kittyÖ;;;;;;;;;;;;;x
 ancrel.4160.desc;A heinous crime! The wretched criminal is brought before you, and few in your court can bear to look at the deviant, lawless, inhuman evil-doer. He will be punished severely for his deed, of course, that is without a doubt. You tell the man his sentence, and your guards take him away to execute him shortly.;;;;;;;;;;;x
 ancrel.4160.a;Terrible! To think he murdered a cat, even by accident! An unforgivable crime.;;;;;;;;;;;;;x
 ancrel.4160.b;Come now, it's just a cat.;;;;;;;;;;;;;x
 VIET_stupid_cat_lovers_boooo;xxxxx;;;;;;;;;;;x
-ancrel.4161.desc;The ancient Egyptians put anyone who killed a cat - even accidentally - to death immediately. Their justice was swift and vengeful, and so is yours. The cat is sacred, are they not, particularly to the great Goddess Bast? May the criminal‚Äôs blood be adequate satisfaction for the great Goddess.;;;;;;;;;;;x
+ancrel.4161.desc;The ancient Egyptians put anyone who killed a cat - even accidentally - to death immediately. Their justice was swift and vengeful, and so is yours. The cat is sacred, are they not, particularly to the great Goddess Bast? May the criminalís blood be adequate satisfaction for the great Goddess.;;;;;;;;;;;x
 ancrel.4161.a;Xxxxxxffff;;;;;;;;;;;;;x
 ancrel.4162.desc;xxxxx;;;;;;;;;;;x
 ancrel.4162.a;Xxxxxxffff;;;;;;;;;;;;;x
@@ -193,7 +193,7 @@ VIET_convinced_Zeus;Met a Woman Impregnated by Jupiter;;;;;;;;;;;x
 VIET_convinced_Zeus_desc;Even after all these centuries and millennia, the king of gods doesn't seem to have any self-control!;;;;;;;;;;;x
 VIET_heard_about_apollo_prank;Divine Prank;;;;;;;;;;;x
 VIET_heard_about_apollo_prank_desc;This character has heard a funny story about a prank a god supposedly pulled on another one.;;;;;;;;;;;x
-ancrel.4200.desc;The story of Proserpina‚Äôs abduction by Pluto has interested you as of late. Pluto seems like a calm, stoic type who justly dispenses judgment over the souls of the dead without bias and isn‚Äôt a philanderer like his brothers, so you wonder as to why he would have acted so rashly. Is there more to the story than meets the eye?;;;;;;;;;;;x
+ancrel.4200.desc;The story of Proserpinaís abduction by Pluto has interested you as of late. Pluto seems like a calm, stoic type who justly dispenses judgment over the souls of the dead without bias and isnít a philanderer like his brothers, so you wonder as to why he would have acted so rashly. Is there more to the story than meets the eye?;;;;;;;;;;;x
 ancrel.4200.a;Nah, it was as they say. He had his way with her.;;;;;;;;;;;;;x
 ancrel.4200.b;Maybe Pluto conspired with Proserpina and the abduction was an excuse...;;;;;;;;;;;;;x
 ancrel.4200.c;Perhaps a poet exaggerated the story for unnecessary drama.;;;;;;;;;;;;;x
@@ -201,19 +201,19 @@ ancrel.4200.d;Sometimes I wonder what sort of history Pluto and Ceres had...;;;;
 ancrel.4200.tooltip.1;\n\nThat mischievous Cupid is to blame, having shot the arrow that made Pluto obsessed. Proserpina was beautiful and Pluto was lonely and desperate.;;;;;;;;;;;;;x
 ancrel.4200.tooltip.2;\n\nOr maybe the two of them conspired with Ceres! Who knows - maybe they needed to protect Proserpina from the philandering Jupiter.;;;;;;;;;;;;;x
 ancrel.4200.tooltip.3;\n\nAfter all, Pluto is one of the most faithful Gods, so he doesn't seem the type to kidnap fair maidens. Maybe Pluto was just socially awkward but the poets wanted a more sensational story.;;;;;;;;;;;;;x
-ancrel.4200.tooltip.4;\n\nWhat if Ceres secretly loved Pluto? What if her anguish at losing her daughter was actually anguish at her unrequited love for Pluto, but she was too embarrassed to admit it so she made up the story about Prosperina‚Äôs abduction?;;;;;;;;;;;;;x
+ancrel.4200.tooltip.4;\n\nWhat if Ceres secretly loved Pluto? What if her anguish at losing her daughter was actually anguish at her unrequited love for Pluto, but she was too embarrassed to admit it so she made up the story about Prosperinaís abduction?;;;;;;;;;;;;;x
 ancrel.4201.tooltip.0;\n\nShe probably knows best after all and it would be improper if not blasphemous of me to make arbitrary assumptions about her.;;;;;;;;;;;x
-ancrel.4201.desc;You ponder on the stories surrounding Apollo and Diana and how protective they were of one another. Orion died because Apollo feared Diana would break her vow of chastity. Meanwhile, Diana killed Apollo's lover Coronis when she cheated on him. It sounds like a kind of jealousy snd protectiveness, doesn‚Äôt it? You start to wonder whether the twins are closer than they appear... ;;;;;;;;;;;x
+ancrel.4201.desc;You ponder on the stories surrounding Apollo and Diana and how protective they were of one another. Orion died because Apollo feared Diana would break her vow of chastity. Meanwhile, Diana killed Apollo's lover Coronis when she cheated on him. It sounds like a kind of jealousy snd protectiveness, doesnít it? You start to wonder whether the twins are closer than they appear... ;;;;;;;;;;;x
 ancrel.4201.a;Nah, probably just siblings who care about each other.;;;;;;;;;;;;;x
-ancrel.4201.b;Aha! Diana's ‚Äúvirgin‚Äù status makes much more sense!;;;;;;;;;;;;;x
+ancrel.4201.b;Aha! Diana's ìvirginî status makes much more sense!;;;;;;;;;;;;;x
 ancrel.4201.c;Haha, that's a good one. What are we, Zoroastrians?;;;;;;;;;;;;;x
-ancrel.4201.d;Maybe I could ask the goddess herself, since she likes me‚Ä¶;;;;;;;;;;;;;x
+ancrel.4201.d;Maybe I could ask the goddess herself, since she likes meÖ;;;;;;;;;;;;;x
 ancrel.4202.tooltip;\n\nI would like to, ah, have a more hands-on demonstration of what transpired between her and Jupiter. For the sake of fair judgement, of course. But not when her husband is around, of course. ;;;;;;;;;;;x
-ancrel.4202.desc;A local nobleman recently accused his wife of adultery. He says her newborn child is not his. She claims, however, that Lord Jupiter came down from the heavens and had his way with her and that while she did not want to be unfaithful, it would have been unwise for her to resist the powerful god. She is an extremely attractive young woman, so it wouldn't be impossible‚Ä¶ right? Unable to resolve the dispute, they come to you for judgment.;;;;;;;;;;;x
+ancrel.4202.desc;A local nobleman recently accused his wife of adultery. He says her newborn child is not his. She claims, however, that Lord Jupiter came down from the heavens and had his way with her and that while she did not want to be unfaithful, it would have been unwise for her to resist the powerful god. She is an extremely attractive young woman, so it wouldn't be impossibleÖ right? Unable to resolve the dispute, they come to you for judgment.;;;;;;;;;;;x
 ancrel.4202.a;I'm sorry, but how is this supposed to be my problem?;;;;;;;;;;;;;x
 ancrel.4202.b;Haha, good one. Adulteresses have always used that excuse.;;;;;;;;;;;;;x
 ancrel.4202.c;Clearly this is a child of Jupiter! Treat him well!;;;;;;;;;;;;;x
-ancrel.4202.d;Why doesn‚Äôt she show me what Jupiter did to her‚Ä¶;;;;;;;;;;;;;x
+ancrel.4202.d;Why doesnít she show me what Jupiter did to herÖ;;;;;;;;;;;;;x
 ancrel.4203.desc;While visiting a town you notice a beggar's corpse lying by the road. The locals said he recently died but otherwise ignore the corpse, saying someone will clean it up eventually. You notice the poor beggar doesn't even have the two coins needed to give to Charon in the afterlife so that he may be able to travel to the underworld without hassle.;;;;;;;;;;;x
 ancrel.4203.a;I will give the corpse two of my own gold pieces.;;;;;;;;;;;;;x
 ancrel.4203.b;It's not my business.;;;;;;;;;;;;;x
@@ -229,40 +229,40 @@ ancrel.4207.a;Don't mind if I join in!;;;;;;;;;;;;;x
 ancrel.4207.b;No. I am loyal to my beloved and will resist the temptation.;;;;;;;;;;;;;x
 ancrel.4207.c;I have no interest with these giggly airheads.;;;;;;;;;;;;;x
 ancrel.4207.d;I will entertain you, but no naughty business.;;;;;;;;;;;;;x
-ancrel.4208.desc;You come by a village engaging in the ‚Äúpharmakos‚Äù ceremony, wherein a chosen man - usually a criminal, beggar, cripple, slave, or some other undesirable - is ritually beaten and then exiled. The village recently went through some rough times, and the ceremony will supposedly help the villagers gain the favor of the gods and restore their fortunes.;;;;;;;;;;;x
+ancrel.4208.desc;You come by a village engaging in the ìpharmakosî ceremony, wherein a chosen man - usually a criminal, beggar, cripple, slave, or some other undesirable - is ritually beaten and then exiled. The village recently went through some rough times, and the ceremony will supposedly help the villagers gain the favor of the gods and restore their fortunes.;;;;;;;;;;;x
 ancrel.4208.a;Interesting. Carry on.;;;;;;;;;;;;;x
 ancrel.4208.b;Stop this! This is clearly a silly superstition.;;;;;;;;;;;;;x
-ancrel.4209.desc;One of your servants discovered a so-called ‚Äúcurse tablet‚Äù lying in a grave near your residence. Alarmingly, the writing on the tablet was an invocation of the dead spirits of the grave, as well as the gods of the underworld - Pluto and Proserpina - to bring misery and misfortune upon you. You have the priests properly dispose of the item, but you can‚Äôt help but feel uneasy.;;;;;;;;;;;x
+ancrel.4209.desc;One of your servants discovered a so-called ìcurse tabletî lying in a grave near your residence. Alarmingly, the writing on the tablet was an invocation of the dead spirits of the grave, as well as the gods of the underworld - Pluto and Proserpina - to bring misery and misfortune upon you. You have the priests properly dispose of the item, but you canít help but feel uneasy.;;;;;;;;;;;x
 ancrel.4209.a;Oh no! Heavens have mercy on me!;;;;;;;;;;;;;x
-ancrel.4209.b;It‚Äôs just mere superstition at the end of the day.;;;;;;;;;;;;;x
+ancrel.4209.b;Itís just mere superstition at the end of the day.;;;;;;;;;;;;;x
 ancrel.4209.c;There is nothing to fear from some stupid piece of writing!;;;;;;;;;;;;;x
 ancrel.4210.desc;You recently discovered one of your maids trying to write a binding spell addressed to Venus - a love spell, in other words. Surprisingly, the spell targeted you. She wanted you, her lord, to fall in love with her! Though binding spells are typically thought of as something men would do, it is not unheard of for women to try using them. And your beautiful maid is young, naive, and at your complete mercy...;;;;;;;;;;;x
 ancrel.4210.a;This is ridiculous. Why do I put up with this?;;;;;;;;;;;;;x
-ancrel.4210.b;You know, you‚Äôre very pretty, and I can teach you many things, darling...;;;;;;;;;;;;;x
+ancrel.4210.b;You know, youíre very pretty, and I can teach you many things, darling...;;;;;;;;;;;;;x
 ancrel.4210.c;She shall be punished for this witchcraft.;;;;;;;;;;;;;x
-ancrel.4210.d;I‚Äôm flattered, but I am your lord and you are a mere maid. ;;;;;;;;;;;;;x
+ancrel.4210.d;Iím flattered, but I am your lord and you are a mere maid. ;;;;;;;;;;;;;x
 ancrel.4210.tooltip.1;\n\nHer face is beet red as she promises not to make anymore trouble, and you both agree to pretend this never happened.;;;;;;;;;;;x
-ancrel.4210.tooltip.2;\n\nSeems like her love spell worked after all. And there‚Äôs nothing like seducing an innocent virgin and making her all yours.;;;;;;;;;;;x
+ancrel.4210.tooltip.2;\n\nSeems like her love spell worked after all. And thereís nothing like seducing an innocent virgin and making her all yours.;;;;;;;;;;;x
 ancrel.4210.tooltip.3;\n\nWho knows what other crazy things she might be doing?;;;;;;;;;;;x
-ancrel.4210.tooltip.4;\n\nYou gently tell her that she is being silly. ‚ÄúSomeday you‚Äôll find a good husband,‚Äù you tell her in a brotherly tone. ‚ÄúI can help you find one in the future, if you want.‚Äù;;;;;;;;;;;x
-ancrel.4210.tooltip.5;\n\nYou gently tell her that she is being silly. ‚ÄúSomeday you‚Äôll find a good husband,‚Äù you tell her in a fatherly tone. ‚ÄúI can help you find one in the future, if you want.‚Äù;;;;;;;;;;;x
-ancrel.4211.desc;You recently discovered one of your young servant boys trying to write a binding spell addressed to Venus - a love spell, in other words. Surprisingly, the spell targeted you. He wanted you to fall in love with him! You didn‚Äôt expect this from him, as he is shy and gentle, so it seems he learned about these spells from older peers. And your handsome servant is young, naive, and at your complete mercy...;;;;;;;;;;;x
+ancrel.4210.tooltip.4;\n\nYou gently tell her that she is being silly. ìSomeday youíll find a good husband,î you tell her in a brotherly tone. ìI can help you find one in the future, if you want.î;;;;;;;;;;;x
+ancrel.4210.tooltip.5;\n\nYou gently tell her that she is being silly. ìSomeday youíll find a good husband,î you tell her in a fatherly tone. ìI can help you find one in the future, if you want.î;;;;;;;;;;;x
+ancrel.4211.desc;You recently discovered one of your young servant boys trying to write a binding spell addressed to Venus - a love spell, in other words. Surprisingly, the spell targeted you. He wanted you to fall in love with him! You didnít expect this from him, as he is shy and gentle, so it seems he learned about these spells from older peers. And your handsome servant is young, naive, and at your complete mercy...;;;;;;;;;;;x
 ancrel.4211.a;This is ridiculous. Why do I put up with this?;;;;;;;;;;;;;x
-ancrel.4211.b;You know, you‚Äôre very cute, and I can teach you many things, darling...;;;;;;;;;;;;;x
+ancrel.4211.b;You know, youíre very cute, and I can teach you many things, darling...;;;;;;;;;;;;;x
 ancrel.4211.c;He shall be punished for this witchcraft.;;;;;;;;;;;;;x
-ancrel.4211.d;I‚Äôm flattered, but I am your mistress and you are a mere servant. ;;;;;;;;;;;;;x
+ancrel.4211.d;Iím flattered, but I am your mistress and you are a mere servant. ;;;;;;;;;;;;;x
 ancrel.4211.tooltip.1;\n\nHis face is beet red as he promises not to make anymore trouble, and you both agree to pretend this never happened.;;;;;;;;;;;x
-ancrel.4211.tooltip.2;\n\nSeems like his love spell worked after all. And there‚Äôs nothing like seducing an innocent young boy and making him all yours.;;;;;;;;;;;x
+ancrel.4211.tooltip.2;\n\nSeems like his love spell worked after all. And thereís nothing like seducing an innocent young boy and making him all yours.;;;;;;;;;;;x
 ancrel.4211.tooltip.3;\n\nWho knows what other crazy things he might be doing?;;;;;;;;;;;x
-ancrel.4211.tooltip.4;\n\nYou gently tell him he is being silly. ‚ÄúSomeday you‚Äôll find a good wife,‚Äù you tell him in a sisterly tone. ‚ÄúI can help you find one in the future, if you want.‚Äù;;;;;;;;;;;x
-ancrel.4211.tooltip.5;\n\nYou gently tell her that he is being silly. ‚ÄúSomeday you‚Äôll find a good wife,‚Äù you tell her in a motherly tone. ‚ÄúI can help you find one in the future, if you want.‚Äù;;;;;;;;;;;x
+ancrel.4211.tooltip.4;\n\nYou gently tell him he is being silly. ìSomeday youíll find a good wife,î you tell him in a sisterly tone. ìI can help you find one in the future, if you want.î;;;;;;;;;;;x
+ancrel.4211.tooltip.5;\n\nYou gently tell her that he is being silly. ìSomeday youíll find a good wife,î you tell her in a motherly tone. ìI can help you find one in the future, if you want.î;;;;;;;;;;;x
 ancrel.4212.desc;One of your prisoners - an insignificant, elderly peasant - was starving and frail due to his advanced age and the conditions of his confinement, but his young daughter snuck into the prison every night, breastfeeding him so he could survive. For such a display of pietas, filial duty, many in your court say that the father should be given a pardon! The gods would be proud!;;;;;;;;;;;x
 ancrel.4212.a;Yes. Clearly the gods have blessed them. Release him!;;;;;;;;;;;;;x
 ancrel.4212.b;Yes - and furthermore, I will give them public support for life!;;;;;;;;;;;;;x
 ancrel.4212.c;No. I do not care what the gods think. The law will not allow this.;;;;;;;;;;;;;x
 ancrel.4212.d;No. What more, I shall execute them for their disrespect to my authority.;;;;;;;;;;;;;x
-ancrel.4213.desc;Rumors abound that a powerful nymph resides in one of your realm‚Äôs provinces. She was said to once be the wife and lover of a kind and wise lord who once ruled the area. Though he, a mortal, has since long passed, her spirit remains to this day and blesses the province every now and then with fortune and abundance.;;;;;;;;;;;x
-ancrel.4213.a;Interesting‚Ä¶ maybe I‚Äôll get to meet her one day?;;;;;;;;;;;;;x
+ancrel.4213.desc;Rumors abound that a powerful nymph resides in one of your realmís provinces. She was said to once be the wife and lover of a kind and wise lord who once ruled the area. Though he, a mortal, has since long passed, her spirit remains to this day and blesses the province every now and then with fortune and abundance.;;;;;;;;;;;x
+ancrel.4213.a;InterestingÖ maybe Iíll get to meet her one day?;;;;;;;;;;;;;x
 ancrel.4214.desc;A courtier comes before you, asking for intervention in a family dispute. Apparently his son is a devout worshipper of Cybele, the great mother goddess. Like many of her followers, the son wishes to castrate himself and serve her for the rest of his life as a Galli, the castrated priests of Cybele. However, the father says that it is the son's duty to continue the family line.;;;;;;;;;;;x
 ancrel.4214.a;The father is right. Filial duty is as important as proper worship!;;;;;;;;;;;;;x
 ancrel.4214.b;The son is right. His faith is admirable!;;;;;;;;;;;;;x
@@ -274,40 +274,40 @@ ancrel.4216.a;Pray to Diana for mercy and admit your mistakes!;;;;;;;;;;;;;x
 ancrel.4216.b;Probably not a big deal.;;;;;;;;;;;;;x
 ancrel.4217.desc;An important nobleman in your realm has recently married a great beauty who seems to have appeared out of nowhere. She is graceful and kind, clever and friendly, and claims to be a noblewoman from elsewhere. Rumor has it that she was a local nymph who fell in love with the him and decided to take on the form of a mortal woman! What a lucky fellow.;;;;;;;;;;;x
 ancrel.4217.a;He must have pleased Venus and Cupid.;;;;;;;;;;;;;x
-ancrel.4218.desc;Lightning recently struck one of the trees on your residence. It was an otherwise clear day with nary a sign of cloud or rain. Your soothsayers say that this was clearly a sign from the gods, which they then interpreted as a good omen. Your courtiers have already begun to treat the tree as a ‚Äúfanaticus,‚Äù a sacred tree blessed by the gods.;;;;;;;;;;;x
+ancrel.4218.desc;Lightning recently struck one of the trees on your residence. It was an otherwise clear day with nary a sign of cloud or rain. Your soothsayers say that this was clearly a sign from the gods, which they then interpreted as a good omen. Your courtiers have already begun to treat the tree as a ìfanaticus,î a sacred tree blessed by the gods.;;;;;;;;;;;x
 ancrel.4218.a;Good to hear.;;;;;;;;;;;;;x
 ancrel.4219.desc;The ancient Latins regarded the ancient hero Ulysses as nothing more than a coward who manipulated and deceived those around him. The ancient Hellenes, on the other hand, who knew him as Odysseus, believed that his cunning was an admirable trait showing his resourcefulness and wisdom.;;;;;;;;;;;x
 ancrel.4219.a;The Latins are right - Ulysses is a chicken-hearted liar!;;;;;;;;;;;;;x
 ancrel.4219.b;The Greeks are right - Odysseus is brave and intelligent!;;;;;;;;;;;;;x
-ancrel.4219.c;Who cares? He‚Äôs long dead.;;;;;;;;;;;;;x
+ancrel.4219.c;Who cares? Heís long dead.;;;;;;;;;;;;;x
 ancrel.4220.tooltip;\n\nAnd unlike his philandering brothers, Pluto is a good and faithful husband, after all.;;;;;;;;;;;x
 ancrel.4220.desc;One of your courtiers is extremely drunk. So drunk, in fact, that he suddenly declares that he shall rescue Prosperina from the evil Pluto! Everyone rolls their eyes at such blasphemy. The courtier then asks you, his liege, to assist him in this effort. Together, you both will travel to the underworld and save Prosperina from her dark husband. You shake your head and tell him to watch his mouth.;;;;;;;;;;;x
 ancrel.4220.a;No one insults the gods.;;;;;;;;;;;;;x
 ancrel.4221.desc;You have angered Pluto and Prosperina with your blasphemous claims!;;;;;;;;;;;x
-ancrel.4221.a;Oh no! I don‚Äôt want to go to Tartarus!;;;;;;;;;;;;;x
+ancrel.4221.a;Oh no! I donít want to go to Tartarus!;;;;;;;;;;;;;x
 ancrel.4222.title;Hades Aidoneus;;;;;;;;;;;x
-ancrel.4222.desc;In your dreams, a man and woman appear before you. They are dark and brooding, but do not seem malevolent. The woman is young - barely an adult - and has golden tresses that frames her pale, beautiful face. The man is tall and stern, lean and handsome.\n\nHe speaks first: ‚ÄúYour friend shall be punished for his blasphemous proclamation. Only a fool tries to steal my wife from the underworld, and he shall suffer in Tartarus. But you rightly warned him. For your wisdom, I, Lord Pluto, and my wife, Queen Prosperina, shall grant you our blessings.‚Äù\n\nThe next morning, your courtier is found dead for no apparent reason.;;;;;;;;;;;x
-ancrel.4222.a;Lord Pluto is just‚Ä¶ my courtier‚Äôs hubris led to his downfall!;;;;;;;;;;;;;x
-ancrel.4222.b;I hope Prosperina will appeal to Pluto for mercy on my courtier‚Äôs soul.;;;;;;;;;;;;;x
+ancrel.4222.desc;In your dreams, a man and woman appear before you. They are dark and brooding, but do not seem malevolent. The woman is young - barely an adult - and has golden tresses that frames her pale, beautiful face. The man is tall and stern, lean and handsome.\n\nHe speaks first: ìYour friend shall be punished for his blasphemous proclamation. Only a fool tries to steal my wife from the underworld, and he shall suffer in Tartarus. But you rightly warned him. For your wisdom, I, Lord Pluto, and my wife, Queen Prosperina, shall grant you our blessings.î\n\nThe next morning, your courtier is found dead for no apparent reason.;;;;;;;;;;;x
+ancrel.4222.a;Lord Pluto is justÖ my courtierís hubris led to his downfall!;;;;;;;;;;;;;x
+ancrel.4222.b;I hope Prosperina will appeal to Pluto for mercy on my courtierís soul.;;;;;;;;;;;;;x
 ancrel.4223.desc;You are sitting with your courtiers, having idle conversation. They are discussing the Trojan War and how it all started when Venus, Juno, and Minerva competed to see which one of them was the loveliest of all. Your courtiers begin debating which of the three goddesses was truly the most beautiful. Paris may have chosen Venus, but who would you have chosen?;;;;;;;;;;;x
 ancrel.4223.a;Venus of course. She's the goddess of beauty after all.;;;;;;;;;;;;;x
 ancrel.4223.b;Juno, I think. A true beauty is regal and maternal.;;;;;;;;;;;;;x
 ancrel.4223.c;Minerva in my opinion. Intelligence is very attractive.;;;;;;;;;;;;;x
 ancrel.4223.d;I'm a woman. Why should I care? Stupid men and their fantasies.;;;;;;;;;;;;;x
-ancrel.4223.e;I don't care. Now between Apollo, Jupiter, Mars, I'd choose‚Ä¶;;;;;;;;;;;;;x
+ancrel.4223.e;I don't care. Now between Apollo, Jupiter, Mars, I'd chooseÖ;;;;;;;;;;;;;x
 ancrel.4224.desc;Later that night, in your dreams, a woman appears before you. She is physically perfect - from her body to her face to the aura that emanates from her - and every part of her is desirable. She is no doubt Venus, goddess of love and beauty, and you prostrate before her. She laughs and tells you that you made the right choice is saying she was the most beautiful of all.;;;;;;;;;;;x
-ancrel.4224.a;‚ÄúTo think Juno and Minerva could compete with me, the goddess of beauty!‚Äù;;;;;;;;;;;;;x
+ancrel.4224.a;ìTo think Juno and Minerva could compete with me, the goddess of beauty!î;;;;;;;;;;;;;x
 ancrel.4225.desc;Later that night, in your dreams, a woman appears before you. She is beautiful, but in a dignified manner befitting that of a queen. Queen? You realize that she is none other than Juno, queen of the gods! As you bow to her, she says that she was rather pleased when you said that she was the most beautiful of all.;;;;;;;;;;;x
-ancrel.4225.a;‚ÄúIndeed, Venus and Minerva are but silly little girls!‚Äù;;;;;;;;;;;;;x
+ancrel.4225.a;ìIndeed, Venus and Minerva are but silly little girls!î;;;;;;;;;;;;;x
 ancrel.4226.desc;Later that night, in your dreams, a woman appears before you. She is a young maiden of incomparable beauty. She wears a full suit of armor, and wields a spear. You realize that she is the great Minerva! As you pay your respects, she explains that you were wise in arguing that she was the most beautiful of all.;;;;;;;;;;;x
-ancrel.4226.a;‚ÄúThat Venus is such a bimbo, you know that?‚Äù;;;;;;;;;;;;;x
+ancrel.4226.a;ìThat Venus is such a bimbo, you know that?î;;;;;;;;;;;;;x
 ancrel.4227.desc;Someone suggested that I build some more herma in the area around my residence. In olden days, the herma were a rectangular column with the head of a deity on top (usually Hermes) and a phallus carved into the column. They are said to bring good luck and fortune.;;;;;;;;;;;x
-ancrel.4227.a;Yes, good idea - we‚Äôll show our devotion to Hermes!;;;;;;;;;;;;;x
+ancrel.4227.a;Yes, good idea - weíll show our devotion to Hermes!;;;;;;;;;;;;;x
 ancrel.4227.b;Phallic statues? Are you kidding me?;;;;;;;;;;;;;x
-ancrel.4228.desc;While visiting a local town my entourage and I pass by a large statue of Priapus, the old god of fertility. Like most statues of the god, he is depicted an oversized, exaggerated member, everyone is supposed to touch in order to call for the god‚Äôs blessings. If anyone angered Priapus, it is said that he would threaten to sexually assault them, regardless of gender or age or background.;;;;;;;;;;;x
-ancrel.4228.a;I duly touch the statue‚Äôs phallus and move on.;;;;;;;;;;;;;x
+ancrel.4228.desc;While visiting a local town my entourage and I pass by a large statue of Priapus, the old god of fertility. Like most statues of the god, he is depicted an oversized, exaggerated member, everyone is supposed to touch in order to call for the godís blessings. If anyone angered Priapus, it is said that he would threaten to sexually assault them, regardless of gender or age or background.;;;;;;;;;;;x
+ancrel.4228.a;I duly touch the statueís phallus and move on.;;;;;;;;;;;;;x
 ancrel.4228.b;Ew, I am not touching that disgusting thing!;;;;;;;;;;;;;x
-ancrel.4229.desc;Every now and then you pay homage to your family‚Äôs Lares, the local guardian deities who have protected your dynasty since time immemorial. It is important you honor them with sacrifices and offerings, so that they may provide help in times of need. You approach the lararium, the shrine where the small statue of the Lar is placed.;;;;;;;;;;;x
+ancrel.4229.desc;Every now and then you pay homage to your familyís Lares, the local guardian deities who have protected your dynasty since time immemorial. It is important you honor them with sacrifices and offerings, so that they may provide help in times of need. You approach the lararium, the shrine where the small statue of the Lar is placed.;;;;;;;;;;;x
 ancrel.4229.a;Salve lar familiaris!;;;;;;;;;;;;;x
 ancrel.4230.desc;xxxxx;;;;;;;;;;;x
 ancrel.4230.a;Xxxxxxffff;;;;;;;;;;;;;x
@@ -349,78 +349,111 @@ ancrel.4248.desc;xxxxx;;;;;;;;;;;x
 ancrel.4248.a;Xxxxxxffff;;;;;;;;;;;;;x
 ancrel.4249.desc;xxxxx;;;;;;;;;;;x
 ancrel.4249.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4250.desc;xxxxx;;;;;;;;;;;x
-ancrel.4250.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4251.desc;xxxxx;;;;;;;;;;;x
-ancrel.4251.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4252.desc;xxxxx;;;;;;;;;;;x
-ancrel.4252.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4253.desc;xxxxx;;;;;;;;;;;x
-ancrel.4253.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4254.desc;xxxxx;;;;;;;;;;;x
-ancrel.4254.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4255.desc;xxxxx;;;;;;;;;;;x
-ancrel.4255.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4256.desc;xxxxx;;;;;;;;;;;x
-ancrel.4256.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4257.desc;xxxxx;;;;;;;;;;;x
-ancrel.4257.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4258.desc;xxxxx;;;;;;;;;;;x
-ancrel.4258.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4259.desc;xxxxx;;;;;;;;;;;x
-ancrel.4259.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4260.desc;xxxxx;;;;;;;;;;;x
-ancrel.4260.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4261.desc;xxxxx;;;;;;;;;;;x
-ancrel.4261.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4262.desc;xxxxx;;;;;;;;;;;x
-ancrel.4262.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4263.desc;xxxxx;;;;;;;;;;;x
-ancrel.4263.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4264.desc;xxxxx;;;;;;;;;;;x
-ancrel.4264.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4265.desc;xxxxx;;;;;;;;;;;x
-ancrel.4265.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4266.desc;xxxxx;;;;;;;;;;;x
-ancrel.4266.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4267.desc;xxxxx;;;;;;;;;;;x
-ancrel.4267.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4268.desc;xxxxx;;;;;;;;;;;x
-ancrel.4268.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4269.desc;xxxxx;;;;;;;;;;;x
-ancrel.4269.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4270.desc;xxxxx;;;;;;;;;;;x
-ancrel.4270.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4271.desc;xxxxx;;;;;;;;;;;x
-ancrel.4271.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4272.desc;xxxxx;;;;;;;;;;;x
-ancrel.4272.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4273.desc;xxxxx;;;;;;;;;;;x
-ancrel.4273.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4274.desc;xxxxx;;;;;;;;;;;x
-ancrel.4274.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4275.desc;xxxxx;;;;;;;;;;;x
-ancrel.4275.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4276.desc;xxxxx;;;;;;;;;;;x
-ancrel.4276.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4277.desc;xxxxx;;;;;;;;;;;x
-ancrel.4277.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4278.desc;xxxxx;;;;;;;;;;;x
-ancrel.4278.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4279.desc;xxxxx;;;;;;;;;;;x
-ancrel.4279.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4280.desc;xxxxx;;;;;;;;;;;x
-ancrel.4280.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4281.desc;xxxxx;;;;;;;;;;;x
-ancrel.4281.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4282.desc;xxxxx;;;;;;;;;;;x
-ancrel.4282.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4283.desc;xxxxx;;;;;;;;;;;x
-ancrel.4283.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4284.desc;xxxxx;;;;;;;;;;;x
-ancrel.4284.a;Xxxxxxffff;;;;;;;;;;;;;x
-ancrel.4285.desc;xxxxx;;;;;;;;;;;x
-ancrel.4285.a;Xxxxxxffff;;;;;;;;;;;;;x
+ancrel.4250.desc;You are out hunting one day in the woods when you hear someone up ahead. Curious, you push aside the green leaves of some bushes, and behold a most wondrous sight. Before you is a woman of unearthly beauty bathing naked in a stream. Her long, dark brown hair gently curls downwards, but does little to hide her flawless porcelain skin, the soft curves of her body, or her pretty face.;;;;;;;;;;;x
+ancrel.4250.a;You notice a bow and arrow lying nearby. Is she a hunter?;;;;;;;;;;;;;x
+ancrel.4251.tooltip;\n\nWait a momentÖ. HunterÖ goddess...;;;;;;;;;;;x
+ancrel.4251.title;The Virgin Goddess;;;;;;;;;;;x
+ancrel.4251.desc;Youíre frozen - whether out of admiration or fear, you know not - as the woman notices your presence and turns to face you. Her beauty is impossible - she IS a goddess! She sighs and brings her palm to her face, and mutters, ìWhy do the Fates keep sending these mortals stumbling into me while Iím bathing?î\n\nShe straightens herself and proclaims loudly, ìI am Diana, virgin goddess of the hunt! Who dares trespass?î\n\nYou immediately look down, afraid. You donít want to end up like the unfortunate Actaeon. The next words to come out of your mouth could determine your fateÖ;;;;;;;;;;;x
+ancrel.4251.a;Beg for mercy.;;;;;;;;;;;;;x
+ancrel.4251.b;Charm and persuade her with clever words.;;;;;;;;;;;;;x
+ancrel.4251.c;Proudly boast of your power to impress her.;;;;;;;;;;;;;x
+VIET_artemis_response_possibility;\n\n(Chance of succeeding, dying, or surviving but injured.);;;;;;;;;;;x
+ancrel.4252.desc;Your words do not move the goddess, who glares at you with murderous rage.;;;;;;;;;;;x
+ancrel.4252.a;Wait, no, have mercy! I didnít mean to. Oh, no, crap, crap, crap -;;;;;;;;;;;;;x
+ancrel.4252.b;At least the last thing I see before I die is a naked beauty!;;;;;;;;;;;;;x
+ancrel.4253.desc;Your words do not seem to please Diana, who merely watches you, fuming. Next thing you know, youíre lying on the ground, wounded, head hurting. Still, youíre alive, and look around but see nothing. Is the goddess gone? Before you can process what happened, however, you hear her voice: ìBe lucky that I spared you, unlike Actaeon. Let your injury be a reminder of your transgression.î;;;;;;;;;;;x
+ancrel.4253.a;You mutter a prayer and thank her for her mercy.;;;;;;;;;;;;;x
+ancrel.4254.title;Divine Mercy;;;;;;;;;;;x
+ancrel.4254.desc;You begin nervously: ìLady Diana, it is not every day that one comes across such a great goddess. I was but hunting in these parts when I stumbled onto you by accident. I beseech you to not let me suffer the same fate as that fool Actaeon. I will not mention this to anyone, and I will forever be your loyal follower, and only ask that you have mercy on me this day.î\n\nA momentís silence. Tension.\n\nFinally, she snorts. ìIíve heard better groveling, but you could have done worse. You know your place, and, having supplicated properly to me, I shall protect you in return so long as you do not tell anyone of our meeting lest you wish to suffer my wrath.î;;;;;;;;;;;x
+ancrel.4254.a;You thank the goddess, and prepare to leave, but she stops you.;;;;;;;;;;;;;x
+ancrel.4255.title;Polumetis;;;;;;;;;;;x
+ancrel.4255.desc;It is a risk to sweet talk your way out of this, but desperate times call for desperate measures. ìMighty Diana! My punishment is great indeed, for I shall never be able to gaze on such beauty of a goddess again. It is more a punishment that all mortal women I meet will never compare to you in loveliness, that all mortal men I meet will never compare to you in power and strength. It is a punishment that I have accidentally offended the very goddess who I admire for she has skill in hunting and war far exceeding my own! These are punishments to drive a man mad, surely, incomparable goddess!î;;;;;;;;;;;x
+ancrel.4255.a;She is silent. That canít be goodÖ;;;;;;;;;;;;;x
+ancrel.4256.title;The Charmer;;;;;;;;;;;x
+ancrel.4256.desc;Suddenly, you hear laughter. The goddess tells you to stand up and look at her. When you refuse, she tells you she has put her clothes on so it is alright.\n\nFearful, but not wanting to disobey, you look up and gaze at her. She now wears a simple, humble white peplos, which does nothing to hide her majestic beauty. She smirks as she tells you, ìYou mortals think Olympians such as myself are a vengeful lot, but I can appreciate your wit, even if it is insincere flattery. You certainly have more charm than that fool Actaeon. Very well, I shall spare you.î;;;;;;;;;;;x
+ancrel.4256.a;You stand awkwardly, wondering what she will do with you now.;;;;;;;;;;;;;x
+ancrel.4257.title;Goddess of the Hunt;;;;;;;;;;;x
+ancrel.4257.desc;ìTell me, mortal,î she asks, ìWhat is your name?î\n\nìI am [Root.GetTitledFirstName],î you say.\n\nìAh! I have heard of you and your deeds, and I see that you bear yourself like a lord and ruler of men. So you are hunting, I see. As it so happens I was hunting in these parts as well and resting for a bit until I wasÖ rudely interrupted by a pervert.î She smirks as you squirm uncomfortably. ìIt seems that the Fates have decided for us - two hunters - to meet here and now. Why not join me and show me your skill?î;;;;;;;;;;;x
+ancrel.4257.a;Afraid of offending her further, you accept her invitation.;;;;;;;;;;;;;x
+ancrel.4258.title;Moon Above, Voice Within;;;;;;;;;;;x
+ancrel.4258.desc;You spend the rest of the afternoon hunting with Diana, and she teaches you many things. Before you two part, she promises to give you her protection, so long as you do not tell anyone about the whole incident, and you feel as if she thinks of you as a friend. When you emerge from the forest that evening, you wonder whether the entire incident had been a dream. However, as you look up to the moon, you feel a strange sense of peace and majesty.;;;;;;;;;;;;;x
+ancrel.4258.a;You salute the moon and continue back home.;;;;;;;;;;;;;x
+ancrel.4259.desc;Even though it's been a while, you still offer a small sacrifice to Diana every now and then. You're not quite sure if the whole incident was a dream, but better safe than sorry. On the altar, you place the corpse of a dead animal you recently killed while hunting. Hopefully this will please her.;;;;;;;;;;;x
+ancrel.4259.a;Sheís the goddess of the hunt, after all, right?;;;;;;;;;;;;;x
+ancrel.4260.title;Enough Animal Carcasses!;;;;;;;;;;;x
+ancrel.4260.desc;That night, Diana appears to you in your dreams. She is on her throne, which is colored silver like the moon and has the pelt of a deer, her sacred animal, draped over it. She sits casually, resting her chin on a palm while she dangles the remains of your sacrifice from her other hand. You fear you have somehow offended her with your sacrifice. Apparently as if she read your mind, she says, ìCalm yourself, Iím not going to hurt you. Gods, you mortals think weíre always trying to kill you. Anyways, I just wanted to tell you that you donít need to give me dead animals all the time.î;;;;;;;;;;;x
+ancrel.4260.a;Why? I thought you were goddess of the hunt?;;;;;;;;;;;;;x
+ancrel.4260.b;Your wish is my command! But what can I give you instead?;;;;;;;;;;;;;x
+ancrel.4261.title;Baklava Sacrifice;;;;;;;;;;;x
+ancrel.4261.desc;ìDead animals are fine, but itís tiring when mortals give you that all the time, not to mention we already hunt them together every now and then, so whatís the point in giving me more? What about cakes? Pastries? Pies? Cookies?î Suddenly her eyes light up with joy, her hands clap together, and her voice becomes giddy with excitement, as if she were a child. ìHow about baklava? Apollo gave me some a while back and by Olympus it was heavenly! You mortals come up with the best foods. Yes. You will sacrificeÖ erÖ offer me this baklava. Of course I would still prefer you give me some of the animals you hunted every now and then, but whoever came up with the idea that I only like animal carcasses forgets that a girl needs to eat sweets every now and then, no?î;;;;;;;;;;;x
+ancrel.4261.a;I understand. I will remember.;;;;;;;;;;;;;x
+ancrel.4262.title;Sol Invictus;;;;;;;;;;;x
+ancrel.4262.desc;You are dreaming again, and before you stands a handsome young man. He is somewhat tanned, with golden hair and a lean but well-built body. He holds a lyre in his hand, and greets you. ìI am Apollo, god of the sun, prophecy, music, the arts, and so on and so on. I have heard that my virgin sister has befriended you!î\n\nShe considers you a friend now? Thatís very humbling. But wait a momentÖ why is Apollo coming here?;;;;;;;;;;;x
+ancrel.4262.a;He doesnít thinkÖ wait, Iím not like Orion!;;;;;;;;;;;;;x
+ancrel.4263.title;Phoebus Apollo;;;;;;;;;;;x
+ancrel.4263.desc;ìOh, worry not, mortal,î Apollo said, noticing the fear on your face, ìI see that Diana does not regard you the same way as she regarded Orion. However, this is just a friendly warning - if you do anything to make her suffer, then know that my wrath on you shall be greater than hers. I am her brother, and her closest confidante, and it would pain me to see her hurt.î\n\nHe pauses, and grins. ìNow, that aside, it is a pleasure to see you in person at last. Even if in a dream. I can see why my sister is fond of you.  And she needs more friends, anyways, she needs to learn to be more sociable. Regardless, as she has offered her protection, so shall I, for though it may not always be apparent, I see in you a kind of greatness and virtue.î;;;;;;;;;;;x
+ancrel.4263.a;Thank you, o Lord Apollo!;;;;;;;;;;;;;x
+ancrel.4264.tooltip;\n\nAs you wake up and reflect on the dream, you wonder about the relationship between the twin deities. They seem awfully close to one another. You decide to ask Diana about it.;;;;;;;;;;;x
+ancrel.4264.title;Moon and Sun;;;;;;;;;;;x
+ancrel.4264.desc;In your prayers to Diana you ask her whether she and Apollo have aÖ ìspecialî kind of sibling relationship. The next night, in your dream, she appears to you and the first thing she does is punch you in the face, making you fall down. Afterwards, she helps you up and apologizes for the unwarranted violence. She then adds, ìDonít even think about it, understand? I am.. erÖ a virgin goddess after all, itísÖ itís not like I care about my brother or anything.î\n\nHer face is completely neutral, though you swear you can see a smile on her face, and is that a slight blush on her cheeks?;;;;;;;;;;;x
+ancrel.4264.a;ìAnyways, Iím not mad, itís just youíre not the first person to ask me that.î;;;;;;;;;;;;;x
+VIET_apollo_is_a_baka;ìI actually made a bet with my brother about when you'd ask, since most of my favored followers ask eventually. Apollo won, of course, since I tend to forget he's the god of prophecy.î;;;;;;;;;;;x
+ancrel.4265.desc;Your devotion to Diana is not without its benefits. For instance, you feel like she has inspired you to become a more virtuous person.;;;;;;;;;;;x
+ancrel.4265.a;Praise be to the virgin goddess of the hunt!;;;;;;;;;;;;;x
+ancrel.4266.desc;You are out hunting and get separated from your main party. You are frustrated and muttering curses under your breath as you try to find your way back, and do not notice someone standing in front of you. You bump into the person. ìWho areÖî Your eyes widen in shock as she stands before you. ìLady Diana!î;;;;;;;;;;;x
+ancrel.4266.a;ìItís been a while, mortal,î she says with a grin. ìCare to go hunting with me?î;;;;;;;;;;;;;x
+ancrel.4267.desc;You spend the rest of the day hunting with Diana and you learn a lot from her again. You realize that she seems to be fond of you. Not a romantic kind of fondness, of course, but a kind of respect. She says she wants to hunt with you every now and then as she enjoys your company, and reassures you that she will continue to provide you protection in exchange for your prayers and offerings.;;;;;;;;;;;x
+ancrel.4267.a;I am most humbled, Lady Diana.;;;;;;;;;;;;;x
+ancrel.4268.desc;In the midst of battle, you were knocked down by an enemy warrior. He would have struck you down and killed you right then and there had it not been for an arrow that flew out of nowhere and hit the unfortunate man straight through the neck, killing him instantly. You look around, but it doesnít seem like the arrow came from any of your men. ìYou owe me,î comes the goddess Dianaís voice in your head.;;;;;;;;;;;x
+ancrel.4268.a;Oh! Praise Diana! Thank you for saving my life!;;;;;;;;;;;;;x
+ancrel.4269.title;A Female Perspective;;;;;;;;;;;x
+ancrel.4269.desc;You are out hunting with Diana once more as you do every now and then. You're telling her about your recent relationship troubles with your wife and you want her advice.\n\nShe crosses her arms and looks at you incredulously. "In case you didn't notice, I'm a sworn virgin. I'm not the goddess of marriage. And as you well know other than Pluto and Prosperina and a few others we Olympians don't always have stable marriages. I'm not sure I'm the right person to ask."\n\n"You're a woman though, Lady Diana,î you explain. ìI merely seek a female perspective.";;;;;;;;;;;x
+ancrel.4269.a;She presses a palm to her face, exasperated.;;;;;;;;;;;;;x
+ancrel.4270.title;Marriage Counseling;;;;;;;;;;;x
+ancrel.4270.desc;"Apollo comes to me for advice on women all the time given he has a tendency to fall in and out of love constantly," Diana sighs, "and I do not mind helping my loyal followers every now and then, but might I remind you that I a sworn virgin with little experience in these matters? Very well, I can try my best as long as you promise to give me a lot of baklava next time you give me an offering."\n\n"I can definitely do that, great Diana!"\n\n"Alright. Tell me, what troubles you?";;;;;;;;;;;x
+ancrel.4270.a;The two of you discuss your marital problems.;;;;;;;;;;;;;x
+ancrel.4271.tooltip;Her advice doesnít work!;;;;;;;;;;;x
+ancrel.4271.desc;When you next meet Diana, in your dream, you tell her that her advice didnít work. She shrugs and tells you, ìIt was worth a try. But remember, just because Iím one doesnít mean I know everything about women.î;;;;;;;;;;;x
+ancrel.4271.a;She pats you on the shoulder in sympathy.;;;;;;;;;;;;;x
+ancrel.4272.tooltip;Her advice works!;;;;;;;;;;;x
+ancrel.4272.desc;When you next meet Diana, in a dream, you tell her about how her advice worked like charm - in fact, it worked better than you expected! She appears surprised for a moment, before saying, ìI did not expect that to workÖ I honestly said things off the top of my head. As I said before, Iím not the goddess of marriage. Iím happy things worked out, though.î;;;;;;;;;;;x
+ancrel.4272.a;I am happy as well!;;;;;;;;;;;;;x
+ancrel.4273.title;Gemini;;;;;;;;;;;x
+ancrel.4273.desc;"Do you fight with Apollo a lot?" you suddenly ask Diana one day. The two of you are resting by a river after having spent many hours hunting.\n\n"Why do you ask?"\n\n"Sometimes I get into fights with my sibling. Things can get heated."\n\nShe looks up to the sky, where the sun shines brightly above. "Apollo and I are  immortal. If my brother and I argue we always will reconcile eventually. I cannot stay mad at him forever. I suppose you donít have that luxury.î;;;;;;;;;;;x
+ancrel.4273.a;ìDo you love him?î you ask.;;;;;;;;;;;;;x
+ancrel.4274.desc;ìOf course I do, he is my only full brother. We came into this world together, and we belong together, in a way. I mean that as siblings youíre stuck together whether you like it or not.î She straightens herself. ìYour sibling may be annoying, they may even be your worst enemy sometimes, but there's always a bond between you two that cannot be easily broken whatsoever.î;;;;;;;;;;;x
+ancrel.4274.a;Thank you for your counsel, Lady Diana.;;;;;;;;;;;;;x
+ancrel.4275.desc;Today I went out hunting with Diana again. Itís always a nice experience. I always learn a lot from her - she is the goddess of the hunt after all.;;;;;;;;;;;x
+ancrel.4275.a;Good to see you again, my goddess.;;;;;;;;;;;;;x
+ancrel.4276.desc;The pain from your injury is unbearable and draining, to the point where you donít even notice a beautiful woman suddenly appearing by your side. She smiles as she places a hand over your wound. ìDiana!î you exclaim, realizing who is there. Before you know it, she is gone and your wound is healed. The physicians say it was a miraculous recovery.;;;;;;;;;;;x
+ancrel.4276.a;No one recalls seeing the goddess.;;;;;;;;;;;;;x
+ancrel.4277.desc.a;I sit in the prison cell, miserable. Suddenly, I hear a noise, and the guards nearby have been knocked unconscious. Before I can investigate what happened, a beautiful woman with moon-pale skin and eyes the color of midnight blue appears. ìItís pathetic that I have to come in here to rescue you,î Diana says, grinning. ìI expected you to break out yourself, but looks like I have to help you.î;;;;;;;;;;;x
+ancrel.4277.desc.b;I sit in the prison cell, miserable. Suddenly, I hear a noise, and the guards nearby have been knocked unconscious. Before I can investigate what happened, a beautiful woman with moon-pale skin and eyes the color of midnight blue appears. ìItís pathetic that I have to come in here to rescue you, you know,î Diana says, grinning. ìThis isnít the first time I have to save you, right, mortal?î;;;;;;;;;;;;;x
+ancrel.4277.a;Looks like I owe you one, huh?;;;;;;;;;;;;;x
+ancrel.4277.b;It is my duty as your friend to annoy you like this.;;;;;;;;;;;;;x
+ancrel.4278.desc;Impossible! [FROM.GetTitledName] somehow escaped from your prisons. Your guards say that someone - a beautiful woman with inhuman grace and strength - somehow entered and helped him break out of jail.;;;;;;;;;;;x
+ancrel.4278.a;Did my prisoner have some kind of otherworldly help?;;;;;;;;;;;;;x
+ancrel.4279.desc;Youíre out hunting with Diana today and she seems to be in a bad mood. As the two of you take a break and rest in a small clearing, you decide to risk it and ask if anything is wrong.;;;;;;;;;;;x
+ancrel.4279.a;Iím her champion, after all.;;;;;;;;;;;;;x
+ancrel.4280.title;Stupid Poets;;;;;;;;;;;x
+ancrel.4280.desc;Diana grimaces as she tells about how Apollo gave her some literature various poets have written about her, which he apparently does every now and then to annoy her. ìI hate all poets,î she mutters, in conclusion, ìexcept my brother, of course.î\n\nYou nod sympathetically as she sighs.\n\nìThey all think Iím some man-hating, lesbian loner just because Iím a sworn virgin. I donít mess with my nymphs nor have I touched Minerva in ëthat wayí and if I hated men so much then why do I care about my brother? For that matter, why would I be hunting with you, my champion, if I hated men?î;;;;;;;;;;;x
+ancrel.4280.a;Those poets donít know what youíre really like!;;;;;;;;;;;;;x
+ancrel.4281.title;Stories;;;;;;;;;;;x
+ancrel.4281.desc;She conjures some scrolls from out of nowhere. ìThis was the ëliteratureí Apollo gave me. I have no use for these, and Minerva doesnít want them, so I want you to take them and do with them as you wish.î\n\nWhen you give her a questioning look, she says, ìI figured you might find them amusing. Or burn them for all I care, I just donít want to see them again. These poets and musicians and writers, theyíre soÖ cruel. The only god who has it worse than me is Pluto, I think. Poor Pluto. Gods above, all this talk is making me miserable again, letís continue our hunt so I can forget about this.î;;;;;;;;;;;x
+ancrel.4281.a;UmÖ right, got it. (You keep the scrolls.);;;;;;;;;;;;;x
+ancrel.4281.b;UmÖ right, got it. (You burn the scrolls.);;;;;;;;;;;;;x
+ancrel.4282.desc;Youíve spent enough time with Diana as her hunting companion. It seems that her fondness for you has extended to fondness of your realm, which is beginning to flourish and thrive due to her protection and help.;;;;;;;;;;;x
+ancrel.4282.a;Well, thatís good to hear.;;;;;;;;;;;;;x
+ancrel.4283.desc;Though you take care not to tell people much about your odd friendship of sorts with Diana, the goddess of the hunt, inevitably rumors have spread. These rumors tend to be good, suggesting how you are a pious, righteous ruler beloved by the gods. However, a few of the things the poets have said about your relationship with Diana areÖ interesting, for lack of better wording.;;;;;;;;;;;x
+ancrel.4283.a;I hope she doesnít hear about them.;;;;;;;;;;;;;x
+ancrel.4284.tooltip;\n\nOh what am I kidding, of course sheís heard about them. I just hope she doesnít take it out on me!;;;;;;;;;;;x
+ancrel.4284.title;Such Interesting Literature;;;;;;;;;;;x
+ancrel.4284.desc;One day youíre sitting in your study alone. Youíre taking a break and reading some of the stories that have been written about you and Diana. Such ëliteratureí tends to be pedestrian, produced for the vulgar masses, but itís interesting to see how the commoners conceive of your relationship with Diana. You are so engrossed in reading that you do initially not realize someone standing next to you, tapping her foot on the floor impatiently for you to notice her.\n\nìAhem,î Diana finally says, arms crossed.\n\nWithout even looking up, you casually tell her,ìLady Diana, if I may, I suggest you not barge in someoneís private quarters randomly.î;;;;;;;;;;;x
+ancrel.4284.a;ìAnd what about when you barged in on me bathing?î she asks simply.;;;;;;;;;;;;;x
+ancrel.4285.title;Bored Goddess;;;;;;;;;;;x
+ancrel.4285.desc;You turn around. ìFair point. Anyways, you usually donít visit me in my houseÖ actually you rarely do that. To what pleasure do I owe your appearance?î\n\nìIím bored,î she says. You snort to yourself, realizing that the lukewarm expression on her face makes her look more like a spoiled mortal princess than the powerful deity she is. ìWhat are you reading?î she asks.\n\nìOhÖ erÖ thisÖ.î You wonder whether you should tell her, but realize sheíll figure out anyways.;;;;;;;;;;;x
+ancrel.4285.a;ìStories theyíve written about you,î you reply.;;;;;;;;;;;;;x
+ancrel.4286.title;xxxxx;;;;;;;;;;;x
 ancrel.4286.desc;xxxxx;;;;;;;;;;;x
 ancrel.4286.a;Xxxxxxffff;;;;;;;;;;;;;x
 ancrel.4287.desc;xxxxx;;;;;;;;;;;x

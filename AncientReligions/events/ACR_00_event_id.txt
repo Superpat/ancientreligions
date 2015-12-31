@@ -46,7 +46,7 @@
 # ancrel.3600 - ancrel.3699 Titan Thysia
 # ancrel.3700 - ancrel.3749 Titan Holy Orders
 # 
-# ancrel.4200 - ancrel.4299 Cybrxkhan's Flavor Events
+# ancrel.4200 - ancrel.4399 Cybrxkhan's Flavor Events
 #
 ###################################
 # Egyptian Polytheism

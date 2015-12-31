@@ -8,7 +8,7 @@
 # List of stuff:
 #
 # ancrel.4200-4249 Generic Hellenic Flavor Events
-# ancrel.4250-4299 I Can't Believe My Virgin Goddess of the Hunt is This Cute Event Chain (Become bff with Artemis)
+# ancrel.4250-4349 I Can't Believe My Virgin Goddess of the Hunt is This Cute Event Chain (Become bff with Artemis)
 #
 #######################################################################################
 
@@ -2832,7 +2832,7 @@ character_event = {
 # A few events in this event chain were very vaguely based off some Greek Mythology fanfiction I've read
 # (Yes, that exists as a genre. .___. )
 #
-# ancrel.4250-4299 reserved
+# ancrel.4250-4349 reserved
 #
 #####################################################################################################
 
@@ -2846,7 +2846,7 @@ character_event = {
 	is_triggered_only = yes
 
 	min_age = 16
-	max_age = 45
+	max_age = 40
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
@@ -2953,53 +2953,45 @@ character_event = {
 narrative_event = {
 	id = ancrel.4251
 	title = ancrel.4251.title
-	desc = {
-		text = ancrel.4251.desc.a
-		trigger = {
-			NOT = { has_global_flag =  VIET_artemis_event_happened_previously }
-		}
-	}
-	desc = {
-		text = ancrel.4251.desc.b
-		trigger = {
-			has_global_flag =  VIET_artemis_event_happened_previously
-		}
-	}
+	desc = ancrel.4251.desc
 	picture = GFX_evt_artemis_bathing
 
 	is_triggered_only = yes
 
 	option = { #beg for mercy
 		name = ancrel.4251.a
+		custom_tooltip = { text = VIET_artemis_response_possibility }
 		hidden_tooltip = {
 			random_list = {
-				20 = { character_event = { id = ancrel.4252 tooltip = ancrel.4252.tooltip days = 1 } } #Artemis kills you
-				30 = { character_event = { id = ancrel.4253 tooltip = ancrel.4253.tooltip days = 1 } } #Artemis injures you
-				50 = { character_event = { id = ancrel.4254 tooltip = ancrel.4254.tooltip days = 1 } } #Artemis spares you and becomes your bff
+				20 = { character_event = { id = ancrel.4252 } } #Artemis kills you
+				30 = { character_event = { id = ancrel.4253 } } #Artemis injures you
+				50 = { character_event = { id = ancrel.4254 } } #Artemis spares you and becomes your bff
 			}
 		}
 	}
 	option = { #charm and persuade her with clever words
-		name = ancrel.4250.b
+		name = ancrel.4251.b
 		tooltip_info = diplomacy
 		trigger = {
 			diplomacy = 9
 		}
+		custom_tooltip = { text = VIET_artemis_response_possibility }
 		hidden_tooltip = {
 			random_list = {
-				5 = { character_event = { id = ancrel.4252 tooltip = ancrel.4252.tooltip days = 1 } } #Artemis kills you
-				20 = { character_event = { id = ancrel.4253 tooltip = ancrel.4253.tooltip days = 1 } } #Artemis injures you
-				75 = { character_event = { id = ancrel.4251 tooltip = ancrel.4251.tooltip days = 1 } } #Artemis spares you and becomes your bff
+				5 = { character_event = { id = ancrel.4252 } } #Artemis kills you
+				20 = { character_event = { id = ancrel.4253 } } #Artemis injures you
+				75 = { character_event = { id = ancrel.4254 } } #Artemis spares you and becomes your bff
 			}
 		}
 	}
 	option = { #be an arrogant dick - choose only if you didn't learn anything from Greek mythology
-		name = ancrel.4250.c
+		name = ancrel.4251.c
+		custom_tooltip = { text = VIET_artemis_response_possibility }
 		hidden_tooltip = {
 			random_list = {
-				50 = { character_event = { id = ancrel.4252 tooltip = ancrel.4252.tooltip days = 1 } } #Artemis kills you because you're an idiot
-				50 = { character_event = { id = ancrel.4253 tooltip = ancrel.4253.tooltip days = 1 } } #Artemis injures you
-				#10 = { character_event = { id = ancrel.4251 tooltip = ancrel.4251.tooltip days = 1 } } #Artemis spares you and becomes your bff
+				40 = { character_event = { id = ancrel.4252 } } #Artemis kills you because you're an idiot
+				60 = { character_event = { id = ancrel.4253 } } #Artemis injures you
+				#10 = { character_event = { id = ancrel.4254 } } #Artemis spares you and becomes your bff
 			}
 		}
 	}
@@ -3023,7 +3015,7 @@ character_event = {
 		name = ancrel.4252.b
 		random = {
 			add_trait = lustful
-			chance = 10
+			chance = 25
 		}
 		death = {
 			death_reason = death_accident
@@ -3043,10 +3035,6 @@ character_event = {
 		name = ancrel.4253.a
 		add_trait = zealous
 		piety = 50
-		add_character_modifier = {
-			name = VIET_artemis_blessing
-			duration = -1
-		}
 		random_list = {
 			90 = {
 				add_trait = wounded
@@ -3125,7 +3113,7 @@ narrative_event = {
 }
 
 # You and Artemis go hunting
-long_character_event = {
+narrative_event = {
 	id = ancrel.4258
 	title = ancrel.4258.title
 	desc = ancrel.4258.desc
@@ -3175,6 +3163,11 @@ long_character_event = {
 			15 = { health = 0.5 }
 			10 = { health = 1 }		
 		}
+		add_character_modifier = {
+			name = VIET_artemis_blessing
+			duration = -1
+		}
+		hidden_tooltip = { character_event = { id = ancrel.4266 days = 123 random = 234 } } #second time hunting w/ Artemis
 	}
 }
 
@@ -3227,7 +3220,7 @@ character_event = {
 }
 
 # ... and she says that nowadays...
-long_character_event = {
+narrative_character_event = {
 	id = ancrel.4260
 	title = ancrel.4260.title
 	desc = ancrel.4260.desc
@@ -3256,7 +3249,7 @@ narrative_event = {
 
 	option = { # I can't believe my virgin goddess of the hunt has such a sweet tooth
 		name = ancrel.4261.a
-		piety = 5
+		piety = 10
 	}
 }
 
@@ -3688,12 +3681,10 @@ narrative_event = {
 
 	option = { # but ur a grill Artemis
 		name = ancrel.4270.a
-		hidden_tooltip = { 
-			random_list = {
-				50 = { character_event = { id = ancrel.4271 } } #it doesn't work
-				50 = { character_event = { id = ancrel.4272 } } #it works
-			}
-		} 
+		random_list = {
+			50 = { character_event = { id = ancrel.4271 days = 3 random = 3 tooltip = ancrel.4271.tooltip } } #it doesn't work
+			50 = { character_event = { id = ancrel.4272 days = 3 random = 3 tooltip = ancrel.4272.tooltip } } #it works
+		}
 	}
 }
 
@@ -3961,7 +3952,7 @@ character_event = {
 	}
 
 	option = { # Artemis is kewl
-		name = ancrel.4275.a
+		name = ancrel.4276.a
 		if = {
 			limit = {
 				trait = maimed
@@ -3985,173 +3976,6 @@ character_event = {
 				trait = eunuch
 			}
 			remove_trait = eunuch
-		}
-	}
-}
-
-# Artemis helps you recover from mental issues
-narrative_event = {
-	id = ancrel.4276
-	title = ancrel.4276.title
-	desc = ancrel.4276.desc
-	picture = GFX_evt_artemis
-	
-	ai = no
-
-	trigger = { 
-		war = no 
-		in_command = no 
-		is_abroad = no
-		has_character_flag = VIET_is_artemis_bff
-		has_character_flag = VIET_is_artemis_bff
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
-		OR = {
-			trait = incapable
-			trait = infirm
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 24
-		modifier = {
-			factor = 0.8
-			trait = zealous
-		}
-		modifier = {
-			factor = 1.25
-			trait = cynical
-		}
-		modifier = {
-			factor = 2
-			NOT = { has_character_flag = VIET_hunted_with_artemis_twice }
-		}
-	}
-
-	option = { # Artemis is kewl
-		name = ancrel.4275.a
-		if = {
-			limit = {
-				trait = incapable
-			}
-			remove_trait = incapable
-		}
-		if = {
-			limit = {
-				trait = infirm
-			}
-			remove_trait = infirm
-		}
-	}
-}
-
-# Artemis helps you recover from illnesses
-character_event = {
-	id = ancrel.4276
-	#title = ancrel.4276.title
-	desc = ancrel.4276.desc
-	picture = GFX_evt_artemis
-	
-	ai = no
-
-	trigger = { 
-		war = no 
-		in_command = no 
-		is_abroad = no
-		has_character_flag = VIET_is_artemis_bff
-		has_character_flag = VIET_hunted_with_artemis_twice
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
-		OR = {
-			trait = syphilitic
-			trait = leper
-			trait = has_tuberculosis
-			trait = has_typhoid_fever
-			trait = has_typhus
-			trait = has_bubonic_plague
-			trait = has_measles
-			trait = has_small_pox
-			trait = has_aztec_disease
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 24
-		modifier = {
-			factor = 0.8
-			trait = zealous
-		}
-		modifier = {
-			factor = 1.25
-			trait = cynical
-		}
-		#modifier = {
-		#	factor = 2
-		#	NOT = { has_character_flag = VIET_hunted_with_artemis_twice }
-		#}
-	}
-
-	option = { # Artemis is kewl
-		name = ancrel.4276.a
-		if = {
-			limit = {
-				trait = syphilitic
-			}
-			remove_trait = syphilitic
-		}
-		if = {
-			limit = {
-				trait = leper
-			}
-			remove_trait = leper
-		}
-		if = {
-			limit = {
-				trait = has_tuberculosis
-			}
-			remove_trait = has_tuberculosis
-		}
-		if = {
-			limit = {
-				trait = has_typhoid_fever
-			}
-			remove_trait = has_typhoid_fever
-		}
-		if = {
-			limit = {
-				trait = has_typhus
-			}
-			remove_trait = has_typhus
-		}
-		if = {
-			limit = {
-				trait = has_bubonic_plague
-			}
-			remove_trait = has_bubonic_plague
-		}
-		if = {
-			limit = {
-				trait = has_measles
-			}
-			remove_trait = has_measles
-		}
-		if = {
-			limit = {
-				trait = has_small_pox
-			}
-			remove_trait = has_small_pox
-		}
-		if = {
-			limit = {
-				trait = has_aztec_disease
-			}
-			remove_trait = has_aztec_disease
 		}
 	}
 }
@@ -4192,7 +4016,7 @@ character_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 24
+		months = 12
 		modifier = {
 			factor = 0.8
 			trait = zealous
@@ -4201,19 +4025,34 @@ character_event = {
 			factor = 1.25
 			trait = cynical
 		}
-		#modifier = {
-		#	factor = 2
-		#	NOT = { has_character_flag = VIET_hunted_with_artemis_twice }
-		#}
+		modifier = { #she can't save your ass all the time
+			factor = 4
+			has_character_flag = VIET_artemis_jailbreak_happened
+		}
 	}
 
 	option = { # Artemis is kewl
 		name = ancrel.4277.a
+		trigger = {
+			NOT = { has_character_flag =  VIET_artemis_jailbreak_happened }
+		}
 		if = {
 			limit = {
 				NOT = { has_character_flag =  VIET_artemis_jailbreak_happened }
 			}
 			set_character_flag =  VIET_artemis_jailbreak_happened
+		}
+		hidden_tooltip = {
+			host = {
+				character_event = { id = ancrel.4278 }
+			}
+		}
+		imprison = no
+	}
+	option = { # Artemis previously helped you break out of jail
+		name = ancrel.4277.b
+		trigger = {
+			has_character_flag =  VIET_artemis_jailbreak_happened
 		}
 		hidden_tooltip = {
 			host = {
@@ -5035,6 +4874,10 @@ narrative_event = {
 		has_character_flag =  VIET_hunted_with_artemis_twice
 	}
 	
+	immediate = {
+		set_global_flag = VIET_artemis_bff_has_died
+	}
+	
 	###########
 	#
 	# Nickname is based on Homeric Epithets. 
@@ -5047,6 +4890,521 @@ narrative_event = {
 	option = {
 		name = ancrel.4299.a
 		give_nickname = nick_cherished_of_diana 
-		custom_tooltip = { text = VIET_artemis_finally_a_lotr_reference }		
+		custom_tooltip = { text = VIET_artemis_finally_a_lotr_reference }
+
+		###############################
+		#
+		# Need to add event_target so character's name is saved for later events about hero cult?
+		#
+		###############################
 	}	
+}
+
+
+
+# Wild Boar Spotted
+character_event = {
+	id = ancrel.4300
+	#title = ancrel.4300.title
+	desc = ancrel.4300.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	ai = no
+	
+	trigger = {
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		has_character_flag =  VIET_is_artemis_bff
+		has_character_flag =  VIET_hunted_with_artemis_twice
+		NOT = { has_character_flag = VIET_artemis_boar_heroism }
+		NOT = { trait = incapable }
+		NOT = { trait = infirm }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 2
+			trait = paranoid
+		}
+		modifier = {
+			factor = 0.5
+			trait = trusting
+		}
+		modifier = {
+			factor = 2
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}
+		modifier = {
+			factor = 2
+			trait = patient
+		}
+		modifier = {
+			factor = 0.5
+			trait = wroth
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_artemis_boar_heroism
+	}
+	
+	option = {# oh noes
+		name = ancrel.4300.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4301 }
+		}
+	}	
+}
+
+
+# Boar attacks!
+character_event = {
+	id = ancrel.4301
+	#title = ancrel.4301.title
+	desc = ancrel.4301.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	option = {# i will be brave
+		name = ancrel.4301.a
+		trigger = {
+			NOT = { trait = craven }
+		}
+		random = {
+			add_trait = brave
+			chance = 40
+		}
+		prestige = 10
+		hidden_tooltip = {
+			character_event = { id = ancrel.4303 }
+		}
+	}	
+	option = {# run away!
+		name = ancrel.4301.a
+		trigger = {
+			NOT = { trait = craven }
+		}
+		random = {
+			add_trait = brave
+			chance = 50
+		}
+		hidden_tooltip = {
+			character_event = { id = ancrel.4302 }
+		}
+	}	
+}
+
+
+# Artemis tells you to stop being a wuss
+narrative_event = {
+	id = ancrel.4302
+	title = ancrel.4302.title
+	desc = ancrel.4302.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	option = {# i will be brave
+		name = ancrel.4302.a
+		random = {
+			add_trait = brave
+			chance = 30
+		}
+		if = {
+			limit = {
+				trait = craven
+			}
+			remove_trait = craven
+		}
+		character_event = { id = ancrel.4303 tooltip = ancrel.4303.tooltip }
+	}	
+}
+
+# Slay the boar
+narrative_event = {
+	id = ancrel.4303
+	#title = ancrel.4303.title
+	desc = ancrel.4303.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	option = {# i will be brave
+		name = ancrel.4303.a
+		random = {
+			add_trait = wounded
+			hidden_tooltip = { character_event = { id = 38280 } }
+			chance = 25
+		}
+		character_event = { id = ancrel.4304 tooltip = ancrel.4304.tooltip }
+	}	
+}
+
+# Boar is dead - but who sent it?
+narrative_event = {
+	id = ancrel.4304
+	#title = ancrel.4304.title
+	desc = ancrel.4304.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	option = {# kewl
+		name = ancrel.4304.a
+		prestige = 20
+		add_character_modifier = {
+			name = VIET_killed_hellenic_great_boar
+			duration = 1000
+		}
+	}	
+}
+
+
+
+# Ceryneian Hind Spotted
+character_event = {
+	id = ancrel.4305
+	#title = ancrel.4305.title
+	desc = ancrel.4305.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	ai = no
+	
+	trigger = {
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		has_character_flag =  VIET_is_artemis_bff
+		has_character_flag =  VIET_hunted_with_artemis_twice
+		NOT = { has_character_flag = VIET_artemis_golden_hind_heroism }
+		NOT = { trait = incapable }
+		NOT = { trait = infirm }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = shy
+		}
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+		modifier = {
+			factor = 0.5
+			trait = cruel
+		}
+		modifier = {
+			factor = 2
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}
+		modifier = {
+			factor = 2
+			trait = trusting
+		}
+		modifier = {
+			factor = 0.5
+			trait = paranoid
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_artemis_golden_hind_heroism
+	}
+	
+	option = {# oh noes
+		name = ancrel.4305.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4306 }
+		}
+	}	
+}
+
+# Ceryneian Hind goes crazy
+character_event = {
+	id = ancrel.4306
+	#title = ancrel.4306.title
+	desc = ancrel.4306.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	option = {# oh noes
+		name = ancrel.4306.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4307 }
+		}
+	}	
+}
+
+# Ceryneian Hind goes crazy
+character_event = {
+	id = ancrel.4307
+	#title = ancrel.4307.title
+	desc = ancrel.4307.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	option = {# oh noes
+		name = ancrel.4307.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4308 }
+		}
+	}	
+}
+
+# Run away from Ceryneian Hind because can't kill Artemis' sacred animal
+narrative_event = {
+	id = ancrel.4308
+	title = ancrel.4308.title
+	desc = ancrel.4308.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	option = {# oh noes
+		name = ancrel.4308.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4309 }
+		}
+	}	
+}
+
+# Artemis and Apollo save the day - turns out to be Apollo's prank on his sister
+narrative_event = {
+	id = ancrel.4309
+	title = ancrel.4309.title
+	desc = ancrel.4309.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	option = {# oh yays
+		name = ancrel.4309.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4310 }
+		}
+	}	
+}
+
+# Successfully survived Ceryneian Hind
+character_event = {
+	id = ancrel.4310
+	#title = ancrel.4310.title
+	desc = ancrel.4310.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	option = {# oh yays
+		name = ancrel.4310.a
+		add_character_modifier = {
+			name = VIET_survived_golden_hind
+			duration = 1000
+		}
+	}	
+}
+
+
+
+# Artemis helps you recover from illnesses
+character_event = {
+	id = ancrel.4311
+	#title = ancrel.4311.title
+	desc = ancrel.4311.desc
+	picture = GFX_evt_artemis
+	
+	ai = no
+
+	trigger = { 
+		war = no 
+		in_command = no 
+		is_abroad = no
+		has_character_flag = VIET_is_artemis_bff
+		has_character_flag = VIET_hunted_with_artemis_twice
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		OR = {
+			trait = syphilitic
+			trait = leper
+			trait = has_tuberculosis
+			trait = has_typhoid_fever
+			trait = has_typhus
+			trait = has_bubonic_plague
+			trait = has_measles
+			trait = has_small_pox
+			trait = has_aztec_disease
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.8
+			trait = zealous
+		}
+		modifier = {
+			factor = 1.25
+			trait = cynical
+		}
+		#modifier = {
+		#	factor = 2
+		#	NOT = { has_character_flag = VIET_hunted_with_artemis_twice }
+		#}
+	}
+
+	option = { # Artemis is kewl
+		name = ancrel.4311.a
+		if = {
+			limit = {
+				trait = syphilitic
+			}
+			remove_trait = syphilitic
+		}
+		if = {
+			limit = {
+				trait = leper
+			}
+			remove_trait = leper
+		}
+		if = {
+			limit = {
+				trait = has_tuberculosis
+			}
+			remove_trait = has_tuberculosis
+		}
+		if = {
+			limit = {
+				trait = has_typhoid_fever
+			}
+			remove_trait = has_typhoid_fever
+		}
+		if = {
+			limit = {
+				trait = has_typhus
+			}
+			remove_trait = has_typhus
+		}
+		if = {
+			limit = {
+				trait = has_bubonic_plague
+			}
+			remove_trait = has_bubonic_plague
+		}
+		if = {
+			limit = {
+				trait = has_measles
+			}
+			remove_trait = has_measles
+		}
+		if = {
+			limit = {
+				trait = has_small_pox
+			}
+			remove_trait = has_small_pox
+		}
+		if = {
+			limit = {
+				trait = has_aztec_disease
+			}
+			remove_trait = has_aztec_disease
+		}
+	}
+}
+
+
+
+# Artemis helps you recover from mental issues
+narrative_event = {
+	id = ancrel.4312
+	title = ancrel.4312.title
+	desc = ancrel.4312.desc
+	picture = GFX_evt_artemis
+	
+	ai = no
+
+	trigger = { 
+		war = no 
+		in_command = no 
+		is_abroad = no
+		has_character_flag = VIET_is_artemis_bff
+		has_character_flag = VIET_is_artemis_bff
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		OR = {
+			trait = incapable
+			trait = infirm
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.8
+			trait = zealous
+		}
+		modifier = {
+			factor = 1.25
+			trait = cynical
+		}
+		modifier = {
+			factor = 2
+			NOT = { has_character_flag = VIET_hunted_with_artemis_twice }
+		}
+	}
+
+	option = { # Artemis is kewl
+		name = ancrel.4312.a
+		if = {
+			limit = {
+				trait = incapable
+			}
+			remove_trait = incapable
+		}
+		if = {
+			limit = {
+				trait = infirm
+			}
+			remove_trait = infirm
+		}
+	}
 }

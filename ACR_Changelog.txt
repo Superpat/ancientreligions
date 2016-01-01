@@ -1,15 +1,17 @@
-2015-?-? v0.37.0 "Vulcan"
+2016-1-? v0.37.0 "Vulcan"
 -------------------------
 General:
 - Nearly every kingdom in the game now has a Crusade weight for all of the added religions, including the heresies.
--- This means your religious heads will call Great Holy Wars! Woo!
+-- This means your religious heads will intelligently call Great Holy Wars.
 - Moved some data around to different files to reduce compatability headaches.
 - Added Chronicle entries for many events.
 - Modified Lets. Get. PAGAN! to include heresies.
 -- Georgians and Armenians become Promethian.
 -- Alanians become Titan.
 -- East Africans become Atenic.
-- Duke of Galilee gets his stones back if the world goes pagan. Surely a blessing from Dionysus...
+-- Duke of Galilee gets his stones back if the world goes pagan. Surely a blessing from Dionysus...
+- New Minor Titles: Champion (copy of vanilla title that only my religions can use), Master of Arms (pagan group).
+- Holy Orders rebalanced (yes, again) to bring them more in line with Vanilla HOs.
 
 Celtic:
 - Tweaked St Kilda event chain to be more likely.
@@ -20,14 +22,29 @@ Celtic:
 -- In this case, they will be Druidic to start.
 - In the mercenary spirit of their ancient forebears, The Wolf Tails can be hired by anyone who has the coin.
 - Fixed broken Headhunter events. It should be possible to become a Living Legend again.
+- New Minor Titles: Chariot Master, Headsmen, Warden of the Wilds.
+- New decision to invite a bard to your court.
+- A random event may have a Bard and their troupe arrive at your estate seeking lodging. Allow them to stay, and you will have the opportunity to invite the bard to join your court.
+- Improved Religion UI, from CK2Plus.
 
 Hellenic:
+- New Hellenic revival event chain inspired by Michael Psellos and Plethon.
+-- Byzantine or Roman Empire must be at 100 or fewer realm holdings, be held by a non-pagan, cannot already have the philosopher in their court, and the current ruler must not have had the event happen to them already.
+-- A Philosopher from the University of Constantinople will seek to join your court and provide you with his advice.
+-- Over the course of several years, the Philosophos will cause controversy and will require your support. This will come with a price.
+- Three traits; Stoic, Skeptic, and Epicurean have been added. The Philosopher will come with the Stoic trait, but it is otherwise only available with Ruler Designer (for now).
 - Added a Hellenic revival event chain if the Mani Peninsula (Monemvasia) is in the realm, as an homage to the 30 pages thread about that on the forum.
 - Tweaked Studied the classics event chain:
--- Made it more likely to be taken by an AI courtier of the player
--- Added low possibility for Hellenic heresies
--- Added opportunity for host to convert, if specific traits
-- Added the "Hellenic Legion" holy order, created by Mbites, that appears when Rome or Constantinople is held by a Hellenic Pagan, *or* when the Roman Emperor or Basilius is Hellenic Pagan. It is a Roman cultured Holy Order, allowing another way to restore the culture to your empire (by having your children educated by the Centurio of the Legion).
+-- Made it more likely to be taken by an AI courtier of the player.
+-- Added low possibility for Hellenic heresies.
+-- Added opportunity for host to convert, if specific traits.
+-- Increased valid cultures to the entire Latin and Byzantine culture groups.
+- Sacred Band Holy Order from CK2Plus has been included (thanks guys!).
+- Added the "Hellenic Legion" holy order, created by Mbites.
+-- It appears when Rome or Constantinople is held by a Hellenic Pagan, *or* when the Roman Emperor or Basilius is Hellenic Pagan
+-- It is Roman cultured.
+- A number of flavor events created by cybrxkhan.
+- New Minor Titles: Fylakasminos (Keeper of the Flock), Chiliarch, Proxenos, Hellanodikos.
 
 Promethean:
 - Promethean holy sites have been moved around to better reflect the lore and to differentiate them from Hellenism and the Titans.
@@ -48,6 +65,7 @@ Promethean:
 -- It targets Kingdoms and is based on the tribal invasion cb.
 -- It cannot be used if there is a depopulated province in your realm.
 -- You must be independent to use it.
+- New Minor Titles: Proxenos, Hellanodikos, Archopapyri (Master of Scrolls), Archothisavrous (Master of Treasures), Fylakasflogas (Keeper of the Flame).
 
 Titan Cult:
 - Titan holy sites have been moved around to differentiate them from Hellenism and Prometheanism and better reflect locations that would actually be holy to them.
@@ -57,6 +75,7 @@ Titan Cult:
 -- Thessalia; location of Mt Othrys, the Titan capitol during the Titanomachy (basically the Titan Olympus).
 -- Rhodes; Once held the Colossus, a massive statue to the titan Helios.
 - The Sickles are a holy order that can be created by Titan Cultists. The culture of the holy order matches the organizer.
+- New Minor Title: Fylakasminos (Keeper of the Flock).
 
 Kemetic:
 - Added Nile Flooding events, courtesy of retired modder cybrxkhan.
@@ -68,6 +87,7 @@ Kemetic:
 - Coptic culture is available through ruler designer and the console.
 -- Coptics have access to a Khopesh wielding heavy infantry/horse archer retinue called the Anhuri.
 -- Coptics also can build a Temple of Anhur building to enhance your heavy infantry troops.
+- New Minor Titles: Gods Wife, Divine Adoratrice, Master of Palms, Fanbearer on the Right Hand of the King, Iry-pat, Haty-a, Khetemty.
 
 Atenic:
 - Faithful followers of Aten can now restore Akhetaten, the ancient city we call Amarna today.
@@ -75,7 +95,8 @@ Atenic:
 - Atenism now has a religious head, the Meryaten, which is a King tier Fylkir style title held by the reformer.
 -- The Meryaten is created by decision, and requires that Akhetaten is restored.
 - The Burning Blades are a new holy order for Atenism that can be created via decision and are immediately vassalized by the organizer.
-- Atenic now uses Decadence.
+- Atenic now uses Decadence. If the representitive of the divine on Earth behaves in a manner unworthy of the divine, the people will rise up to overthrow the unworthy in the name of Aten.
+- New Minor Titles: Gods Wife, Divine Adoratrice, Master of Palms, Fanbearer on the Right Hand of the King, Iry-pat, Haty-a, Khetemty.
 
 2015-8-12 v0.36.4 "Beroe"
 -------------------------

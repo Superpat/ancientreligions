@@ -379,6 +379,8 @@ title_flaminica_quirinalis = {
 	message = no
 }
 
+
+# special title
 title_hypatos_philosophon = {
 	dignity = 0.05
 	revoke_allowed = no
@@ -398,6 +400,8 @@ title_hypatos_philosophon = {
 
 	message = no
 }
+
+### "regular" minor titles
 
 title_keeper_flock = {
 	dignity = 0.1

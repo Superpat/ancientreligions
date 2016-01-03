@@ -15,7 +15,7 @@
 # ancrel.0256 				Celtic Flavor Events
 # ancrel.0270 - ancrel.0279 Celtic Reincarnation
 # ancrel.0280 - ancrel.0299 Wolf Tails Events
-#
+# ancrel.0300 - ancrel.0302 Druidic Revival Events
 # ancrel.1150 - ancrel.1189 The Fianna
 # ancrel.1190 - ancrel.1251 Aonach Tailteann Events
 # ancrel.1252 - ancrel.1253 Celtic Flavor Events

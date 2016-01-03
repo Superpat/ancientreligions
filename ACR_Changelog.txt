@@ -15,6 +15,7 @@ General:
 
 Celtic:
 - Tweaked St Kilda event chain to be more likely.
+- Court Wizard conversion chain now cascades through the entire realm, increasing likelihood that vassals will convert with you.
 - Fixed issue in the event where a son or brother asks to join the red dragons where the buttons would be labeled backwards.
 - Galloway is no longer a holy site. Dijon takes its place. This is to represent the Fountains of Sequana, a major place of worship for the Continental Celts. Also to make reformation a little harder. It was way too easy to start as Gwynned and take Dublin and Galloway and do some raiding to get up MA.
 - Fixed an issue caused by a Druidic training event calling a Sons of Gwydion event.

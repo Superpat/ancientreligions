@@ -1,7 +1,7 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ###### Event/decision/modifier definitions;;;;;;;;;;;;;;x
 ###### Druidic rebirth;;;;;;;;;;;;;;x
-reinstate_celtic_rites;The Old Gods;;;;;;;;;;;;;x
+reinstate_celtic_rites;Reinstate Celtic Rite;;;;;;;;;;;;;x
 reinstate_celtic_rites_desc;With the help of our court wizard, we could reinstate much of the old Celtic ways.;;;;;;;;;;;;;x
 invite_bard_to_court;Invite a Bard to Court;;;;;;;;;;;;;x
 invite_bard_to_court_desc;We could patronize one of the many bards wondering the realms and have them serve in our court.;;;;;;;;;;;;;x
@@ -362,6 +362,14 @@ ancrel.0255.a;Thank you [Root.Holder.Religion.GetRandomGodNameCap];;;;;;;;;;;;;x
 EVTDESCancrel.0271;After mourning the death of the person in the Otherworld which made this new birth possible, you notice your little [GetFromRelation] [From.GetFirstName] has an odd birthmark that closely matches that of my [GetFromReincarnationRelation], [From.Reincarnation.GetBestName]. Could [From.Reincarnation.GetSubjectPronoun] have been reborn as my [GetFromRelation] in this life ?;;;;;;;;;;;;;x
 EVTOPTAancrel.0271;Yes, clearly this is a sign from the Gods;;;;;;;;;;;;;x
 EVTOPTBancrel.0271;No, this is merely a coincidence;;;;;;;;;;;;;x
+###### Conversion Cascade ;;;;;;;;;;;;;;x
+ancrel.0300.desc;Your lord, [From.GetFullName], has abandoned [Religion.GetHighGodName] and returned to the worship of [From.GetHerHis] ancestral Celtic gods. Perhaps we should follow in their footsteps?;;;;;;;;;;;;;x
+ancrel.0300.a;Yes, I will embrace my heritage!;;;;;;;;;;;;;x
+ancrel.0300.b;I will not follow this infidel into the flames.;;;;;;;;;;;;;x
+ancrel.0301.desc;Your vassal, [From.GetTitledFirstName], has followed you in embracing the old gods.;;;;;;;;;;;;;x
+ancrel.0301.a;Praise [From.GetRandomGodName]!;;;;;;;;;;;;;x
+ancrel.0302.desc;Your vassal, [From.GetTitledFirstName], has rejected the old gods and clings to Christianity.;;;;;;;;;;;;;x
+ancrel.0302.a;[From.GetSheHe] lacks vision!;;;;;;;;;;;;;x
 ###### Aonach tailteann ;;;;;;;;;;;;;;x
 hold_an_aonach_tailteann;Hold Aonach Tailteann;;;;;;;;;;;;;x
 hold_an_aonach_tailteann_desc;The games were founded, by Lugh Lámhfhada, the Ollamh Érenn, as a mourning ceremony for the death of his foster-mother Tailtiu, the event is held during the last fortnight of July and culminates with the celebration of Lughnasadh.;;;;;;;;;;;;;x

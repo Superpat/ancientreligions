@@ -237,7 +237,7 @@ decisions = {
 			prestige = 250
 			activate_title = { title = k_aten_pagan status = yes }
 			hidden_tooltip = {
-				d_egyptian_pagan = {
+				k_aten_pagan = {
 					grant_title = ROOT
 				}
 				narrative_event = { id = ancrel.5004 }

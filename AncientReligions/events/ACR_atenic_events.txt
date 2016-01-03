@@ -118,9 +118,21 @@ province_event = {
 		hidden_tooltip = {
 			owner = {
 				set_character_flag = event_ancrel_5003
-				narrative_event = { id = ancrel.5003 days = 7 }
+				character_event = { id = ancrel.5006 days = 7 }
 			}
 		}
+	}
+}
+
+# Bounce through top liege to get localization to work
+character_event = {
+	id = ancrel.5006
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		narrative_event = { id = ancrel.5003 }
 	}
 }
 
@@ -217,3 +229,4 @@ narrative_event = {
 		name = ancrel.5005.a
 	}
 }
+

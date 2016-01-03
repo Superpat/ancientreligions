@@ -102,8 +102,6 @@ title_master_palms = {
 	
 	allowed_to_grant = {
 		independent = yes
-		is_feudal = yes
-
 		OR = {
 			religion = egyptian_pagan
 			religion = aten_pagan

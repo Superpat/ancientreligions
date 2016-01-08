@@ -680,11 +680,13 @@ character_event = {
 }
 
 ##### Coming of age ceremony - child's event
+[on_yearly_childhood_pulse]
 character_event = {
 	id = ancrel.0184
 	hide_window = yes
 	
 	is_triggered_only = yes
+	prisoner = no
 
 	trigger = {
 		age = 14
@@ -696,11 +698,14 @@ character_event = {
 			father_even_if_dead = { is_alive = yes }
 			mother_even_if_dead = { is_alive = yes }
 		}
-		NOT = { trait = incapable }
-		prisoner = no
+		NOR = {
+			trait = incapable
+			has_character_flag = ancrel_training
+		}
 	}
 	
 	immediate = {
+		set_character_flag = ancrel_training
 		if = {
 			limit = {
 				father = {

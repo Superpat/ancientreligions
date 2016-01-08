@@ -5408,3 +5408,403 @@ narrative_event = {
 		}
 	}
 }
+
+
+# Reports of a highwayman
+character_event = {
+	id = ancrel.4313
+	#title = ancrel.4313.title
+	desc = ancrel.4313.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	ai = no
+	
+	trigger = {
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		has_character_flag =  VIET_is_artemis_bff
+		has_character_flag =  VIET_hunted_with_artemis_twice
+		NOT = { has_character_flag = VIET_artemis_highwayman_heroism }
+		NOT = { trait = incapable }
+		NOT = { trait = infirm }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+		modifier = {
+			factor = 0.5
+			trait = cruel
+		}
+		modifier = {
+			factor = 2
+			trait = just
+		}
+		modifier = {
+			factor = 0.5
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 2
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_artemis_golden_hind_heroism
+	}
+	
+	option = {# oh noes
+		name = ancrel.4313.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4314 days = 2 random = 3 }
+		}
+	}	
+}
+
+# Capture the Highwayman
+narrative_event = {
+	id = ancrel.4314
+	title = ancrel.4314.title
+	desc = ancrel.4314.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	option = {# imprison
+		name = ancrel.4314.a
+		prestige = 20
+		add_character_modifier = {
+			name = VIET_artemis_captured_highwayman
+			duration = 1825
+		}
+		create_character = {
+			dynasty = culture
+			religion = ROOT
+			culture = ROOT
+			female = no
+			trait = envious
+			trait = brave
+			trait = gregarious
+			trait = deceitful
+		}		
+		new_character = {
+			if = {
+				limit = {
+					has_global_flag = VIET_Traits_On
+				}
+				random = {
+					add_trait = perceptive
+					chance = 15
+				}
+				random = {
+					add_trait = agile
+					chance = 15
+				}
+			}
+			random = {
+				add_trait = strong
+				chance = 40
+			}
+			random = {
+				add_trait = fair
+				chance = 20
+			}
+			random = {
+				add_trait = quick
+				chance = 20
+			}
+			imprison = ROOT
+		}		
+	}	
+	option = {# kill!
+		name = ancrel.4314.b
+		prestige = 20
+		add_character_modifier = {
+			name = VIET_artemis_captured_highwayman
+			duration = 1825
+		}	
+	}	
+}
+
+
+
+# Someone has sex in Artemis' temple
+character_event = {
+	id = ancrel.4315
+	#title = ancrel.4315.title
+	desc = ancrel.4315.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	ai = no
+	
+	trigger = {
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		has_character_flag =  VIET_is_artemis_bff
+		has_character_flag =  VIET_hunted_with_artemis_twice
+		NOT = { has_character_flag = VIET_artemis_temple_sex }
+		NOT = { has_character_modifier = VIET_heard_about_apollo_prank }
+		NOT = { trait = incapable }
+		NOT = { trait = infirm }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = shy
+		}
+		modifier = {
+			factor = 2
+			trait = cynical
+		}
+		modifier = {
+			factor = 0.5
+			trait = zealous
+		}
+		modifier = {
+			factor = 2
+			trait = chaste
+		}
+		modifier = {
+			factor = 0.5
+			trait = lustful
+		}
+		modifier = {
+			factor = 2
+			trait = paranoid
+		}
+		modifier = {
+			factor = 0.5
+			trait = trusting
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_artemis_temple_sex
+	}
+	
+	option = {# make the offenders pay a fine
+		name = ancrel.4315.a
+		random = {
+			add_trait = kind
+			chance = 25
+		}
+		hidden_tooltip = {
+			character_event = { id = ancrel.4316 }
+		}
+	}	
+	option = {# imprison the offenders
+		name = ancrel.4315.b
+		random = {
+			add_trait = zealous
+			chance = 25
+		}
+		hidden_tooltip = {
+			character_event = { id = ancrel.4316 }
+		}
+	}	
+	option = {# kill the offenders
+		name = ancrel.4315.c
+		random = {
+			add_trait = zealous
+			chance = 25
+		}
+		hidden_tooltip = {
+			character_event = { id = ancrel.4316 }
+		}
+	}	
+}
+
+# Discuss decision with Artemis
+narrative_event = {
+	id = ancrel.4316
+	title = ancrel.4316.title
+	desc = ancrel.4316.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	option = {# ok
+		name = ancrel.4316.a
+		random = {
+			add_trait = gregarious
+			chance = 20
+		}
+	}	
+	option = {# ok
+		name = ancrel.4316.b
+		add_character_modifier = {
+			name = VIET_heard_about_apollo_prank
+			duration = 365
+		}
+	}	
+}
+
+# Yo Artemis if you hate sex why are you hanging out with me?
+character_event = {
+	id = ancrel.4317
+	#title = ancrel.4317.title
+	desc = ancrel.4317.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	ai = no
+	
+	trigger = {
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		has_character_flag =  VIET_is_artemis_bff
+		has_character_flag =  VIET_hunted_with_artemis_twice
+		NOT = { has_character_flag = VIET_artemis_sex_question }
+		NOT = { trait = celibate }
+		NOT = { trait = eunuch }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = shy
+		}
+		modifier = {
+			factor = 2
+			trait = cynical
+		}
+		modifier = {
+			factor = 0.5
+			trait = zealous
+		}
+		modifier = {
+			factor = 2
+			trait = humble
+		}
+		modifier = {
+			factor = 0.5
+			trait = proud
+		}
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+		modifier = {
+			factor = 0.5
+			trait = cruel
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_artemis_sex_question
+	}
+	
+	option = {# CASTRATE MYSELF
+		name = ancrel.4317.a
+		piety = 500
+		character_event = { id = ancrel.4318 }
+	}	
+	option = {# Become celibate
+		name = ancrel.4317.b
+		piety = 200
+		add_trait = celibate
+	}	
+	option = {# Become chaste
+		name = ancrel.4317.c
+		trigger = {
+			NOT = { trait = chaste }
+		}
+		piety = 50
+		add_trait = chaste
+	}	
+	option = {# Is chaste
+		name = ancrel.4317.d
+		trigger = {
+			trait = chaste
+		}
+		piety = 50
+	}		
+	option = {# ok cool
+		name = ancrel.4317.e
+		piety = 20
+		if = {
+			limit = {
+				trait = lustful
+			}
+			remove_trait = lustful
+		}
+	}	
+}
+
+# Artemis says you're cuckoo for wanting to castrate yourself
+character_event = {
+	id = ancrel.4318
+	#title = ancrel.4318.title
+	desc = ancrel.4318.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	option = {# Become celibate
+		name = ancrel.4317.a
+		add_trait = celibate
+	}	
+	option = {# Become chaste
+		name = ancrel.4317.b
+		trigger = {
+			NOT = { trait = chaste }
+		}
+		add_trait = chaste
+	}	
+	option = {# Is chaste
+		name = ancrel.4317.c
+		trigger = {
+			trait = chaste
+		}
+	}		
+	option = {# ok cool
+		name = ancrel.4317.d
+		if = {
+			limit = {
+				trait = lustful
+			}
+			remove_trait = lustful
+		}
+	}	
+}

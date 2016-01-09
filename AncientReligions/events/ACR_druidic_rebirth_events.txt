@@ -328,26 +328,24 @@ character_event = {
 				}
 			}
 		}
-		custom_tooltip = {
-			hidden_tooltip = { 
-				remove_character_modifier = celtic_ways
-				any_vassal = {
-					character_event = { id = ancrel.0300 days = 2 }
-				}
-				if = {
-					limit = { is_ruler = yes }
-					liege = { character_event = { id = ancrel.0301 days = 2 } }
-				}
+		hidden_tooltip = { 
+			remove_character_modifier = celtic_ways
+			any_vassal = {
+				character_event = { id = ancrel.0300 days = 2 }
 			}
 			if = {
-				limit = {
-					religion_group = christian
-				}
-				add_trait = sympathy_christendom
+				limit = { is_ruler = yes }
+				liege = { character_event = { id = ancrel.0301 days = 2 } }
 			}
-			religion = celtic_pagan
-			piety = 50
 		}
+		if = {
+			limit = {
+				religion_group = christian
+			}
+			add_trait = sympathy_christendom
+		}
+		religion = celtic_pagan
+		piety = 50
 	}
 	option = { # reject their heathen ways
 		name = ancrel.0300.b

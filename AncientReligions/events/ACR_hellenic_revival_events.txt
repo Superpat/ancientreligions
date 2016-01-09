@@ -377,8 +377,8 @@ character_event = {
 			religion = promethean_pagan
 		}
 		OR = {
-			culture = latin_group
-			culture_group = byzantine_group
+			culture_group = latin
+			culture_group = byzantine
 			culture = sicilian_greek # SWMH
 			culture_group = italian_group # SWMH
 		}

@@ -2334,7 +2334,7 @@ character_event = {
 		}
 	}
 
-	option = { # Be a feminazi
+	option = {
 		name = ancrel.4162.a
 		random_courtier = {
 			limit = {
@@ -2359,8 +2359,10 @@ character_event = {
 	option = { # Ok!
 		name = ancrel.4163.a
 		FROM = {
-			50 = { character_event = { id = ancrel.4164 tooltip = ancrel.4164.tooltip } }			
-			50 = { character_event = { id = ancrel.4165 tooltip = ancrel.4165.tooltip } }			
+			random_list = {
+				50 = { character_event = { id = ancrel.4164 tooltip = ancrel.4164.tooltip } }
+				50 = { character_event = { id = ancrel.4165 tooltip = ancrel.4165.tooltip } }
+			}
 		}
 	}
 }

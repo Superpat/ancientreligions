@@ -680,7 +680,7 @@ character_event = {
 }
 
 ##### Coming of age ceremony - child's event
-[on_yearly_childhood_pulse]
+# [on_yearly_childhood_pulse]
 character_event = {
 	id = ancrel.0184
 	hide_window = yes

@@ -1,0 +1,24 @@
+# Define mercenary types here now instead of in the static_composition.txt file
+# Also remember to tell the landed title to use this mercenary type instead.
+# Several titles can refer to the same type as well now.
+
+sickles_composition = {
+	levy_size = 6
+	heavy_infantry = 500
+	knights = 250
+	horse_archers = 250	
+}
+
+steel_composition = {
+	levy_size = 6
+	heavy_infantry = 300
+	pikemen = 200
+	archers = 300
+	knights = 200
+}
+
+hellenic_composition = {
+	levy_size = 4
+	heavy_infantry = 2000
+	archers = 500
+}

@@ -427,14 +427,12 @@
 	stewardship=4
 	religion="catholic"
 	culture="irish"
-	trait="tough_soldier"
-	trait="diligent"
+	add_trait="tough_soldier"
+	add_trait="diligent"
 	father=131501
+	mother=131507 #Lann ingen mac Dúnlainge
 	847.1.2={
 		birth="847.1.2"
-	}
-	862.11.22={
-		add_claim = d_meath
 	}
 	868.1.1={
 		add_spouse=165000 #Gormlaith ingen Conaing mac Flainn - fl. 870
@@ -3360,7 +3358,7 @@
 7254 = {
 	name="Conall Cremthainne"
 	dynasty=199
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father = 7255
 	429.1.1={
@@ -3380,7 +3378,7 @@
 	stewardship=12
 	trait="proud"
 	trait="tough_soldier"
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father=83432
 	400.1.1={
@@ -3397,7 +3395,7 @@
 7256 = {
 	name="Fergus"
 	dynasty=199
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father = 7254
 	460.1.1={
@@ -3425,7 +3423,7 @@
 7258 = {
 	name="Diarmait"
 	dynasty=199
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father = 7256
 	505.1.1={
@@ -11269,8 +11267,8 @@
 	religion="catholic"
 	culture="irish"
 	father=83406 #Muiredach Muillethan
-	637.1.1={
-		birth="637.1.1"
+	667.1.1={
+		birth="667.1.1"
 	}
 	723.7.1={
 		death="723.7.1"
@@ -11611,7 +11609,7 @@
 	diplomacy=7
 	intrigue=7
 	stewardship=11
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father=159331
 	120.1.1={
@@ -11629,7 +11627,7 @@
 	diplomacy=9
 	intrigue=7
 	stewardship=7
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father=83426
 	165.1.1={
@@ -11647,7 +11645,7 @@
 	diplomacy=9
 	intrigue=7
 	stewardship=11
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father=83427
 	200.1.1={
@@ -11665,7 +11663,7 @@
 	diplomacy=9
 	intrigue=7
 	stewardship=11
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father=83428
 	249.1.1={
@@ -11683,7 +11681,7 @@
 	diplomacy=7
 	intrigue=7
 	stewardship=7
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father=83429
 	290.1.1={
@@ -11701,7 +11699,7 @@
 	diplomacy=7
 	intrigue=7
 	stewardship=11
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father=83430
 	340.1.1={
@@ -11719,7 +11717,7 @@
 	diplomacy=7
 	intrigue=7
 	stewardship=11
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father=83431
 	362.1.1={
@@ -11737,7 +11735,7 @@
 	diplomacy=7
 	intrigue=7
 	stewardship=11
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father=83432 #Eochaid Mugmedón
 	390.1.1={
@@ -11755,7 +11753,7 @@
 	diplomacy=7
 	intrigue=7
 	stewardship=11
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father=83432 #Eochaid Mugmedón
 	392.1.1={
@@ -11791,7 +11789,7 @@
 	diplomacy=7
 	intrigue=7
 	stewardship=11
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father=83433 #Brión mac Echdach
 	430.1.1={
@@ -12037,8 +12035,8 @@
 	religion="catholic"
 	culture="irish"
 	father=83449
-	688.1.1={
-		birth="688.1.1"
+	710.1.1={
+		birth="710.1.1"
 	}
 	750.7.1={
 		death="750.7.1"
@@ -14429,7 +14427,7 @@
 	}
 }
 165004 = {
-	name="Flannacán"
+	name="Flannacán" #mac Conaing
 	# AKA: Flannacán, King of Brega
 	dynasty=199
 	martial=5
@@ -14438,7 +14436,9 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	trait="tough_soldier"
+	add_trait="tough_soldier"
+	father=165013 #Conaing mac Flainn
+	mother=165012 #Gormflaith ingen Niall Callie
 	840.1.2={
 		birth="840.1.2"
 	}
@@ -14627,7 +14627,8 @@
 	stewardship=5
 	religion="catholic"
 	culture="irish"
-	trait="tough_soldier"
+	add_trait="tough_soldier"
+	father=160246
 	811.1.1={
 		birth="811.1.1"
 	}
@@ -14683,10 +14684,11 @@
 
 165016 = {
 	name="Gormlaith Rapach" #Gormlaith Rapach ingen Muiredach mac Eochada
-	dynasty=199
+	dynasty=819
 	female=yes
 	religion="catholic"
 	culture="irish"
+	father=160196
 	825.1.1={
 		birth="825.1.1"
 	}
@@ -14837,10 +14839,11 @@
 }
 
 163114 = {
-	name="Blathmac" 
+	name="Cathalán" #Cathalán mac Indrechtaig
 	dynasty=819
 	religion="catholic"
 	culture="irish"
+	father=160197
 	827.1.1={
 		birth="827.1.1"
 	}
@@ -15131,8 +15134,8 @@
 	religion="catholic"
 	culture="irish"
 	father=166015
-	635.1.1={
-		birth="635.1.1"
+	735.1.1={
+		birth="735.1.1"
 	}
 	786.1.1={
 		death = {
@@ -16679,7 +16682,7 @@
 	480.1.1={
 		birth="480.1.1"
 	}
-	410.1.1={
+	510.1.1={
 		add_spouse=166130
 	}
 	540.1.1={
@@ -16784,10 +16787,10 @@
 	religion="catholic"
 	culture="irish"
 	father=159319
-	385.1.1={
-		birth="385.1.1"
+	390.1.1={
+		birth="390.1.1"
 	}
-	405.1.1={
+	415.1.1={
 		add_spouse=159815
 	}
 	450.1.1={
@@ -16813,7 +16816,7 @@
 159331 = {
 	name="Fedlimid Rechtmar" #
 	dynasty=9217
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	100.1.1={
 		birth="100.1.1"
@@ -16826,7 +16829,7 @@
 159332 = {
 	name="Fiachra Suighe" #
 	dynasty=1029031 #Dal Fiachrach Suighe
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father=159331
 	130.1.1={
@@ -16839,7 +16842,7 @@
 159333 = {
 	name="Cairpre Rigronn" #
 	dynasty=1029031 #Dal Fiachrach Suighe
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father=159332
 	150.1.1={
@@ -16852,7 +16855,7 @@
 159334 = {
 	name="Corp" #
 	dynasty=1029031 #Dal Fiachrach Suighe
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father=159333
 	170.1.1={
@@ -16865,7 +16868,7 @@
 159335 = {
 	name="Mes Gegra" #
 	dynasty=1029031 #Dal Fiachrach Suighe
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father=159334
 	190.1.1={
@@ -16878,7 +16881,7 @@
 159336 = {
 	name="Mes Corp" #
 	dynasty=1029031 #Dal Fiachrach Suighe
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father=159335
 	210.1.1={
@@ -16891,7 +16894,7 @@
 159337 = {
 	name="Art Corp" #
 	dynasty=1029031 #Dal Fiachrach Suighe
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father=159336
 	230.1.1={
@@ -16932,7 +16935,7 @@
 83600 = {
 	name="Eógan Taidlech" #AKA Mug Nuadat
 	dynasty=100003
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	140.1.1={
 		birth="140.1.1"
@@ -16947,7 +16950,7 @@
 	name="Ailill Ólomm"
 	dynasty=100003
 	father=83600
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	175.1.1={
 		birth="175.1.1"
@@ -16966,7 +16969,7 @@
 	female=yes
 	dynasty=9217
 	father=83426 #Conn Cétchathach
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	179.1.1={
 		birth="179.1.1"
@@ -16983,7 +16986,7 @@
 	father=83601
 	mother=83602
 	dynasty=100003
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	197.1.1={
 		birth="197.1.1"
@@ -16997,7 +17000,7 @@
 	name="Fiachu Mullethan"
 	father=83603
 	dynasty=100003
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	220.1.1={
 		birth="220.1.1"
@@ -17011,7 +17014,7 @@
 	name="Aillil Fland Becc"
 	father=83604
 	dynasty=100003
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	250.1.1={
 		birth="250.1.1"
@@ -17025,7 +17028,7 @@
 	name="Luigthech"
 	father=83605
 	dynasty=100003
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	300.1.1={
 		birth="300.1.1"
@@ -17039,7 +17042,7 @@
 	name="Conall Corc"
 	father=83606
 	dynasty=100003
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	340.1.1={
 		birth="340.1.1"
@@ -17053,7 +17056,7 @@
 	name="Nad-Froich"
 	father=83607
 	dynasty=100003
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	380.1.1={
 		birth="380.1.1"
@@ -17084,7 +17087,7 @@
 	name="Eochaid"
 	father=83609
 	dynasty=9225
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	470.1.1={
 		birth="470.1.1"
@@ -17098,7 +17101,7 @@
 	name="Feidelmid"
 	father=83609
 	dynasty=9225
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	472.1.1={
 		birth="472.1.1"
@@ -17113,7 +17116,7 @@
 	name="Bressal"
 	father=83609
 	dynasty=9225
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	474.1.1={
 		birth="474.1.1"
@@ -17128,7 +17131,7 @@
 	name="Ailill"
 	father=83610
 	dynasty=9225
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	490.1.1={
 		birth="490.1.1"
@@ -17143,7 +17146,7 @@
 	name="Eógan"
 	father=83610
 	dynasty=9225
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	492.1.1={
 		birth="492.1.1"
@@ -17157,7 +17160,7 @@
 	name="Crimthann"
 	father=83613
 	dynasty=9225
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	520.1.1={
 		birth="520.1.1"
@@ -17175,7 +17178,7 @@
 	name="Crimthann"
 	father=83614
 	dynasty=9225
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	521.1.1={
 		birth="521.1.1"
@@ -18288,7 +18291,7 @@
 	name="Mac-Cass"
 	father=83607 #Conall Corc
 	dynasty=100003
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	384.1.1={
 		birth="384.1.1"
@@ -18302,7 +18305,7 @@
 	name="Echu"
 	father=83693
 	dynasty=100003
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	430.1.1={
 		birth="430.1.1"
@@ -18320,7 +18323,7 @@
 	name="Crimthann"
 	father=83694
 	dynasty=9228
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	484.1.1={
 		birth="484.1.1"
@@ -18865,7 +18868,7 @@
 	name="Ailill"
 	father=83608 #Nad Froich
 	dynasty=100003
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	440.1.1={
 		birth="440.1.1"
@@ -19497,7 +19500,7 @@
 	name="Coirpe Luachra"
 	father=83607 #Conall Corcc
 	dynasty=100003
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	400.1.1={
 		birth="400.1.1"
@@ -19511,7 +19514,7 @@
 	name="Maithne"
 	father=83778
 	dynasty=100003
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	430.1.1={
 		birth="430.1.1"
@@ -19528,7 +19531,7 @@
 	name="Dauí Iarlaithe"
 	father=83779
 	dynasty=9230
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	460.1.1={
 		birth="460.1.1"
@@ -19544,7 +19547,7 @@
 	name="Cobthach"
 	father=83780
 	dynasty=9230
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	490.1.1={
 		birth="490.1.1"
@@ -19782,14 +19785,13 @@
 	trait="just"
 	trait="scholarly_theologian"
 	father = 166336
-	540.1.1={
-		birth="540.1.1"
+	560.1.1={
+		birth = yes
 	}
 	605.9.16={
 		death="605.9.16"
 	}
 }
-
 166338 = {
 	name="Fergno-Britt"
 	religion="catholic"
@@ -19809,14 +19811,13 @@
 	religion="catholic"
 	culture="irish"
 	father = 166336
-	535.1.1={
-		birth="535.1.1"
+	556.1.1={
+		birth="556.1.1"
 	}
 	609.1.1={
 		death="609.1.1"
 	}
 }
-
 166340 = {
 	name="Ségéne"
 	dynasty=199
@@ -21439,7 +21440,7 @@
 	diplomacy=5
 	intrigue=6
 	stewardship=7
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father=160273
 	450.1.1={
@@ -21456,7 +21457,7 @@
 	diplomacy=5
 	intrigue=6
 	stewardship=7
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father=160274
 	400.1.1={
@@ -21473,7 +21474,7 @@
 	diplomacy=5
 	intrigue=6
 	stewardship=7
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father=160275
 	365.1.1={
@@ -21490,7 +21491,7 @@
 	diplomacy=5
 	intrigue=6
 	stewardship=7
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father=160276
 	320.1.1={
@@ -21507,7 +21508,7 @@
 	diplomacy=5
 	intrigue=6
 	stewardship=7
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father=160277
 	280.1.1={
@@ -21524,7 +21525,7 @@
 	diplomacy=5
 	intrigue=6
 	stewardship=7
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father=160278
 	245.1.1={
@@ -21541,7 +21542,7 @@
 	diplomacy=5
 	intrigue=6
 	stewardship=7
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	father=160279
 	220.1.1={
@@ -21558,12 +21559,1984 @@
 	diplomacy=5
 	intrigue=6
 	stewardship=7
-	religion="gaelic_pagan"
+	religion="celtic_pagan"
 	culture="irish"
 	200.1.1={
 		birth="200.1.1"
 	}
 	250.1.1={  
 		death="250.1.1"
+	}
+}
+83573 = {
+	name="Erc"
+	dynasty=9217
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=11
+	religion="catholic"
+	culture="irish"
+	father=83432 #Eochaid Mugmedón
+	405.1.1={
+		birth="405.1.1"
+	}
+	488.7.1={
+		death="488.7.1"
+	}
+}
+
+83574 = {
+	name="Fergus" #Mór
+	dynasty=9217
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=83573 #Erc son of Eochaid Mugmedón
+	457.1.1={
+		birth="457.1.1"
+	}
+	501.1.1={
+		death="501.1.1"
+	}
+}
+
+83575 = {
+	name="Domangart" #Réti
+	dynasty=9217
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=83574 #Fergus Mór mac Eirc
+	487.1.1={
+		birth="487.1.1"
+	}
+	507.1.1={
+		death="507.1.1"
+	}
+}
+
+83576 = {
+	name="Gabrán"
+	dynasty=9217
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=83575 #Domangart Réti mac Fergusa Mór
+	502.1.1={
+		birth="502.1.1"
+	}
+	560.1.1={
+		death="560.1.1"
+	}
+}
+
+83577 = {
+	name="Áedán" #Áedán mac Gabráin
+	dynasty=9217
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=83576 #Gabrán mac Domangairt
+	550.1.1={
+		birth="550.1.1"
+	}
+	570.1.1={
+		dynasty=9223 #Gabrán
+	}
+	606.1.1={
+		death="606.1.1"
+	}
+}
+
+83578 = {
+	name="Eochaid" #Eochaid Buide
+	dynasty=9223
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=83577 #Áedán mac Gabráin
+	572.1.1={
+		birth="572.1.1"
+	}
+	629.7.1={
+		death="629.7.1"
+	}
+}
+
+83579 = {
+	name="Domnall" #Domnall Brecc
+	dynasty=9223
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=83578 #Eochaid Buide
+	596.1.1={
+		birth="596.1.1"
+	}
+	642.1.1={
+		death="642.1.1"
+	}
+}
+
+83580 = {
+	name="Domangart"
+	dynasty=9223
+	martial=5
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=83579 #Domnall Brecc
+	620.1.1={
+		birth="620.1.1"
+	}
+	672.1.1={
+		death="672.1.1"
+	}
+}
+
+83581 = {
+	name="Eochaid"
+	dynasty=9223
+	martial=5
+	diplomacy=5
+	intrigue=5
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=83580
+	651.1.1={
+		birth="651.1.1"
+	}
+	697.1.1={
+		death="697.1.1"
+	}
+}
+
+83582 = {
+	name="Eochaid"
+	dynasty=9223
+	martial=5
+	diplomacy=5
+	intrigue=5
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=83581
+	684.1.1={
+		birth="684.1.1"
+	}
+	733.1.1={
+		death="733.1.1"
+	}
+}
+
+83583 = {
+	name="Áed" #Áed Find
+	dynasty=9223
+	martial=5
+	diplomacy=5
+	intrigue=5
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=83582
+	714.1.1={
+		birth="714.1.1"
+	}
+	778.1.1={
+		death="778.1.1"
+	}
+}
+
+83584 = {
+	name="Eochaid"
+	dynasty=9223
+	martial=5
+	diplomacy=5
+	intrigue=5
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=83583 #Áed Find
+	754.1.1={
+		birth="754.1.1"
+	}
+	791.1.1={
+		death="791.1.1"
+	}
+}
+166468 = {
+	name="Loarn"
+	dynasty=9217
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=83573 #Erc son of Eochaid Mugmedón
+	450.1.1={
+		birth=yes
+	}
+	480.1.1={
+		dynasty=1040010 #Mac Loairn
+	}
+	497.1.1={
+		death=yes
+	}
+}
+
+166469 = {
+	name="Comgall"
+	dynasty=9217
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=83575 #Domangart Réti mac Fergusa Mór
+	507.1.1={
+		birth=yes
+	}
+	540.1.1={
+		death=yes
+	}
+}
+
+166470 = {
+	name="Conall"
+	dynasty=9217
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166469 #Comgall
+	544.1.1={
+		birth=yes
+	}
+	574.1.1={
+		death=yes
+	}
+}
+
+166471 = {
+	name="Connad" #Cerr
+	dynasty=9217
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166470 #Conall
+	568.1.1={
+		birth=yes
+	}
+	629.1.1={
+		death=yes
+	}
+}
+
+166472 = {
+	name="Ferchar"
+	dynasty=9217
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166470 #Connad
+	604.1.1={
+		birth=yes
+	}
+	649.1.1={
+		death=yes
+	}
+}
+
+166473 = {
+	name="Conaing"
+	dynasty=9223
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=83577 #Áedán mac Gabráin
+	575.1.1={
+		birth=yes
+	}
+	619.1.1={
+		death=yes
+	}
+}
+
+166474 = {
+	name="Dúnchad"
+	dynasty=9223
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166473 #Conaing mac Áedán
+	607.1.1={
+		birth=yes
+	}
+	654.1.1={
+		death=yes
+	}
+}
+
+166475 = {
+	name="Conall" #Conall Crandomna
+	dynasty=9223
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=83578 #Eochaid Buide
+	602.1.1={
+		birth=yes
+	}
+	660.1.1={
+		death=yes
+	}
+}
+
+166476 = {
+	name="Máel-Dúin"
+	dynasty=9223
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166475 #Conall Crandomna
+	625.1.1={
+		birth=yes
+	}
+	689.1.1={
+		death=yes
+	}
+}
+
+166477 = {
+	name="Domnall" #Domnall Donn
+	dynasty=9223
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166475 #Conall Crandomna
+	633.1.1={
+		birth=yes
+	}
+	696.1.1={
+		death=yes
+	}
+}
+
+166478 = {
+	name="Cináed"
+	dynasty=1040010
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166468 #Loarn mac Eirc
+	482.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}
+
+166479 = {
+	name="Lorcán"
+	dynasty=1040010
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166478
+	500.1.1={
+		birth=yes
+	}
+	557.1.1={
+		death=yes
+	}
+}
+
+166480 = {
+	name="Óengus"
+	dynasty=1040010
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166479
+	544.1.1={
+		birth=yes
+	}
+	596.1.1={
+		death=yes
+	}
+}
+
+166481 = {
+	name="Máel-Ciaráin"
+	dynasty=1040010
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166480
+	565.1.1={
+		birth=yes
+	}
+	616.1.1={
+		death=yes
+	}
+}
+
+166482 = {
+	name="Cathal"
+	dynasty=1040010
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166481
+	588.1.1={
+		birth=yes
+	}
+	636.1.1={
+		death=yes
+	}
+}
+
+166483 = {
+	name="Feredach"
+	dynasty=1040010
+	martial=5
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=166482
+	611.1.1={
+		birth=yes
+	}
+	665.1.1={
+		death=yes
+	}
+}
+
+166484 = {
+	name="Ferchar" #Ferchar Fota
+	dynasty=1040010
+	martial=5
+	diplomacy=5
+	intrigue=5
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166483
+	634.1.1={
+		birth=yes
+	}
+	697.1.1={
+		death=yes
+	}
+}
+
+166485 = {
+	name="Ainbcellach"
+	dynasty=1040010
+	martial=5
+	diplomacy=5
+	intrigue=5
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166484
+	658.1.1={
+		birth=yes
+	}
+	718.1.1={
+		death=yes
+	}
+}
+
+166486 = {
+	name="Selbach"
+	dynasty=1040010
+	martial=5
+	diplomacy=5
+	intrigue=5
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166484
+	663.1.1={
+		birth=yes
+	}
+	730.1.1={
+		death=yes
+	}
+}
+
+166487 = {
+	name="Cormac"
+	dynasty=9223
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166474 #Dúnchad mac Conaing
+	627.1.1={
+		birth=yes
+	}
+	678.1.1={
+		death=yes
+	}
+}
+
+166488 = {
+	name="Báetán"
+	dynasty=9223
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166473 #Conaing mac Áedán
+	612.1.1={
+		birth=yes
+	}
+	651.1.1={
+		death=yes
+	}
+}
+
+166489 = {
+	name="Fiannamail"
+	dynasty=9223
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166487
+	650.1.1={
+		birth=yes
+	}
+	700.1.1={
+		death=yes
+	}
+}
+
+166490 = {
+	name="Béc"
+	dynasty=9223
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166488
+	636.1.1={
+		birth=yes
+	}
+	707.1.1={
+		death=yes
+	}
+}
+
+166491 = {
+	name="Dúnchad"
+	dynasty=9223
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166490
+	664.1.1={
+		birth=yes
+	}
+	721.1.1={
+		death=yes
+	}
+}
+
+166492 = {
+	name="Dúngal"
+	dynasty=1040010
+	martial=5
+	diplomacy=5
+	intrigue=5
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166486
+	689.1.1={
+		birth=yes
+	}
+	733.1.1={
+		death=yes
+	}
+}
+
+166493 = {
+	name="Muiredach"
+	dynasty=1040010
+	martial=5
+	diplomacy=5
+	intrigue=5
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166485
+	688.1.1={
+		birth=yes
+	}
+	736.1.1={
+		death=yes
+	}
+}
+
+166494 = {
+	name="Alpín" #Alpín I
+	dynasty=9223
+	martial=5
+	diplomacy=5
+	intrigue=5
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=83582
+	705.1.1={
+		birth=yes
+	}
+	738.1.1={
+		death=yes
+	}
+}
+
+166495 = {
+	name="Eógan"
+	dynasty=1040010
+	martial=5
+	diplomacy=5
+	intrigue=5
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166493
+	707.1.1={
+		birth=yes
+	}
+	740.1.1={
+		death=yes
+	}
+}
+
+166496 = {
+	name="Indrechtach"
+	dynasty=9223
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166489
+	698.1.1={
+		birth=yes
+	}
+	741.1.1={
+		death=yes
+	}
+}
+
+166497 = {
+	name="Conall"
+	dynasty=9223
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166489
+	706.1.1={
+		birth=yes
+	}
+	741.1.1={
+		death=yes
+	}
+}
+
+166498 = {
+	name="Diarmait"
+	dynasty=9223
+	martial=5
+	diplomacy=5
+	intrigue=5
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166494
+	719.1.1={
+		birth=yes
+	}
+	749.1.1={
+		death=yes
+	}
+}
+
+166499 = {
+	name="Áedán"
+	dynasty=1040010
+	martial=5
+	diplomacy=5
+	intrigue=5
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166495
+	724.1.1={
+		birth=yes
+	}
+	762.1.1={
+		death=yes
+	}
+}
+
+166500 = {
+	name="Donncoirce"
+	dynasty=9223
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166496
+	728.1.1={
+		birth=yes
+	}
+	792.1.1={
+		death=yes
+	}
+}
+
+166501 = {
+	name="Tadg"
+	dynasty=9223
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166497
+	730.1.1={
+		birth=yes
+	}
+	805.1.1={
+		death=yes
+	}
+}
+
+166502 = {
+	name="Boand"
+	female=yes
+	dynasty=9223
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166500
+	762.1.1={
+		birth=yes
+	}
+	815.1.1={
+		death=yes
+	}
+}
+
+166503 = {
+	name="Áed"
+	dynasty=9223
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	mother=166502
+	790.1.1={
+		birth=yes
+	}
+	839.1.1={
+		death=yes
+	}
+}
+
+166504 = {
+	name="Conall"
+	dynasty=9223
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166501
+	762.1.1={
+		birth=yes
+	}
+	807.1.1={
+		death=yes
+	}
+}
+
+166505 = {
+	name="Fergus"
+	dynasty=9223
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166504
+	787.1.1={
+		birth=yes
+	}
+	825.1.1={
+		death=yes
+	}
+}
+
+166506 = {
+	name="Gofraid"
+	dynasty=9223
+	martial=7
+	diplomacy=7
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166505
+	810.1.1={
+		birth=yes
+	}
+	853.1.1={
+		death=yes
+	}
+}
+
+166507 = {
+	name="Conall"
+	dynasty=1040010
+	martial=5
+	diplomacy=5
+	intrigue=5
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166499
+	755.1.1={
+		birth=yes
+	}
+	811.1.1={
+		death=yes
+	}
+}
+
+166508 = {
+	name="Fergus"
+	dynasty=9223
+	martial=5
+	diplomacy=5
+	intrigue=5
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=83582
+	720.1.1={
+		birth=yes
+	}
+	781.1.1={
+		death=yes
+	}
+}
+
+166509 = {
+	name="Caustantín"
+	dynasty=9223
+	martial=5
+	diplomacy=5
+	intrigue=5
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166508
+	742.1.1={
+		birth=yes
+	}
+	794.1.1={
+		death=yes
+	}
+}
+
+166510 = {
+	name="Domnall"
+	dynasty=9223
+	martial=5
+	diplomacy=5
+	intrigue=5
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166509
+	774.1.1={
+		birth=yes
+	}
+	833.1.1={
+		death=yes
+	}
+}
+
+166511 = {
+	name="Óengus"
+	dynasty=9223
+	martial=5
+	diplomacy=5
+	intrigue=5
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166508
+	760.1.1={
+		birth=yes
+	}
+	834.1.1={
+		death=yes
+	}
+}
+
+166512 = {
+	name="Eóganán"
+	dynasty=9223
+	martial=5
+	diplomacy=5
+	intrigue=5
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166511
+	782.1.1={
+		birth=yes
+	}
+	835.1.1={
+		death=yes
+	}
+}
+
+166572 = {
+	name="Dargart"
+	dynasty=1040013
+	martial=8
+	diplomacy=5
+	intrigue=5
+	stewardship=6
+	religion="catholic"
+	culture="irish"
+	645.1.1={
+		birth=yes
+	}
+	685.1.1={
+		death=yes
+	}
+}
+
+166582 = {
+	name="Máel-Muire"
+	female=yes
+	dynasty=1040010
+	martial=5
+	diplomacy=5
+	intrigue=5
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	father=166486
+	695.1.1={
+		birth=yes
+	}
+	749.1.1={
+		death=yes
+	}
+}
+
+166621 = {  	
+	name="Aulay" #Amlaíb mac Ilduilb
+	dynasty=688
+	martial=6
+	diplomacy=6
+	intrigue=7
+	stewardship=7
+	religion="catholic"
+	culture="scottish"
+	trait="arbitrary"
+	trait="amateurish_plotter"
+	father=6028
+	930.1.1={
+		birth=yes
+	}
+	977.1.1={
+		death=yes
+	}
+}
+
+166622 = {  	
+	name="Eochaid" #Eochaid mac Ilduilb
+	dynasty=688
+	martial=7
+	diplomacy=5
+	intrigue=5
+	stewardship=6
+	religion="catholic"
+	culture="scottish"
+	trait="arbitrary"
+	trait="amateurish_plotter"
+	father=6028
+	933.1.1={
+		birth=yes
+	}
+	971.1.2={
+		death=yes
+	}
+}
+160176 = {
+	name="Fíatach Finn"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="pagan"
+	culture="irish"
+	add_trait="brave"
+	add_trait="skilled_tactician"
+	2.1.1={
+		birth="2.1.1"
+	}
+	39.1.1={
+		death="39.1.1"
+	}
+}
+160177 = {
+	name="Érimón"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="pagan"
+	culture="irish"
+	father=160176
+	20.1.1={
+		birth="20.1.1"
+	}
+	70.1.1={
+		death="70.1.1"
+	}
+}
+160178 = {
+	name="Findchad"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="pagan"
+	culture="irish"
+	father=160177
+	55.1.1={
+		birth="55.1.1"
+	}
+	100.1.1={
+		death="100.1.1"
+	}
+}
+160179 = {
+	name="Imchad"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="pagan"
+	culture="irish"
+	father=160178
+	90.1.1={
+		birth="90.1.1"
+	}
+	160.1.1={
+		death="160.1.1"
+	}
+}
+160180 = {
+	name="Fergus Dubdétach"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="pagan"
+	culture="irish"
+	father=160179
+	130.1.1={
+		birth="130.1.1"
+	}
+	192.1.1={
+		death="192.1.1"
+	}
+}
+160181 = {
+	name="Óengus Finn"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="pagan"
+	culture="irish"
+	father=160180
+	160.1.1={
+		birth="160.1.1"
+	}
+	222.1.1={
+		death="222.1.1"
+	}
+}
+160182 = {
+	name="Lugaid"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="pagan"
+	culture="irish"
+	father=160181
+	190.1.1={
+		birth="190.1.1"
+	}
+	252.1.1={
+		death="252.1.1"
+	}
+}
+160183 = {
+	name="Miennach"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="pagan"
+	culture="irish"
+	father=160182
+230.1.1={
+		birth="230.1.1"
+	}
+	290.1.1={
+		death="290.1.1"
+	}
+}
+160184 = {
+	name="Dubthach"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="pagan"
+	culture="irish"
+	father=160183
+	280.1.1={
+		birth="280.1.1"
+	}
+	360.1.1={
+		death="360.1.1"
+	}
+}
+160185 = {
+	name="Dallan"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="pagan"
+	culture="irish"
+	father=160184
+320.1.1={
+		birth="320.1.1"
+	}
+	392.1.1={
+		death="392.1.1"
+	}
+}
+160186 = {
+	name="Forgg"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="pagan"
+	culture="irish"
+	father=160185
+	360.1.1={
+		birth="360.1.1"
+	}
+	420.1.1={
+		death="420.1.1"
+	}
+}
+160282 = {
+	name="Muiredach Muinderg"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160186
+	400.1.1={
+		birth="400.1.1"
+	}
+	489.1.1={
+		death="489.1.1"
+	}
+}
+160187 = {
+	name="Cairell Coscrach"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160282
+	450.1.1={
+		birth="450.1.1"
+	}
+	532.1.1={
+		death="532.1.1"
+	}
+}
+160188 = {
+	name="Demmán"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160187
+	500.1.1={
+		birth="500.1.1"
+	}
+	572.1.1={
+		death="572.1.1"
+	}
+}
+160189 = {
+	name="Fiachnae Dubtuinne"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160188
+	545.1.1={
+		birth="545.1.1"
+	}
+	590.1.1={
+		add_spouse=160280
+	}
+	627.1.1={
+		death="627.1.1"
+	}
+}
+160190 = {
+	name="Máel-Cobo"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160189
+	mother=160280
+	590.1.1={
+		birth="590.1.1"
+	}
+	647.1.1={
+		death="647.1.1"
+	}
+}
+160191 = {
+	name="Blathmac"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160190
+	620.1.1={
+		birth="620.1.1"
+	}
+	670.1.1={
+		death="670.1.1"
+	}
+}
+160192 = {
+	name="Bécc Bairrche"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160191
+	650.1.1={
+		birth="650.1.1"
+	}
+	718.1.1={
+		death="718.1.1"
+	}
+}
+160193 = {
+	name="Áed Róin"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160192
+	670.1.1={
+		birth="670.1.1"
+	}
+	735.1.1={
+		death="735.1.1"
+	}
+}
+160194 = {
+	name="Fiachnae"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160193
+	700.1.1={
+		birth="700.1.1"
+	}
+	789.1.1={
+		death="789.1.1"
+	}
+}
+160195 = {
+	name="Eochaid"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160194
+	740.1.1={
+		birth="740.1.1"
+	}
+	810.1.1={
+		death="810.1.1"
+	}
+}
+160196 = {
+	name="Muiredach"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160195
+	780.1.1={
+		birth="780.1.1"
+	}
+	839.1.1={
+		death="839.1.1"
+	}
+}
+160197 = {
+	name="Indrechtach"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160198
+	780.1.1={
+		birth="780.1.1"
+	}
+	839.1.1={
+		death="839.1.1"
+	}
+}
+160198 = {
+	name="Tommaltach"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160199
+	740.1.1={
+		birth="740.1.1"
+	}
+	789.1.1={
+		death="789.1.1"
+	}
+}
+160199 = {
+	name="Cathal"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160203
+	710.1.1={
+		birth="710.1.1"
+	}
+	755.1.1={
+		death="755.1.1"
+	}
+}
+160200 = {
+	name="Máel-Mocheirge" #Máel-Mocheirge mac Indrechtaig
+	dynasty=819
+	religion="catholic"
+	culture="irish"
+	father=160197
+	830.1.1={
+		birth="830.1.1"
+	}
+	896.1.1={
+		death="896.1.1"
+	}
+}
+160201 = {
+	name="Cummascach" 
+	dynasty=819
+	religion="catholic"
+	culture="irish"
+	father=160200
+	860.1.1={
+		birth="860.1.1"
+	}
+	910.1.1={
+		death="910.1.1"
+	}
+}
+160202 = {
+	name="Cummascach" 
+	dynasty=819
+	religion="catholic"
+	culture="irish"
+	father=163114
+	858.1.1={
+		birth="858.1.1"
+	}
+	910.1.1={
+		death="910.1.1"
+	}
+}
+160203 = {
+	name="Muiredach"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160204
+	670.1.1={
+		birth="670.1.1"
+	}
+	740.1.1={
+		death="740.1.1"
+	}
+}
+160204 = {
+	name="Óengus"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160190
+	630.1.1={
+		birth="630.1.1"
+	}
+	700.1.1={
+		death="700.1.1"
+	}
+}
+160205 = {
+	name="Áed"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160195
+	781.1.1={
+		birth="781.1.1"
+	}
+	839.1.1={
+		death="839.1.1"
+	}
+}
+160206 = {
+	name="Ainbíth"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160205
+	821.1.1={
+		birth="821.1.1"
+	}
+	882.1.1={
+		death="882.1.1"
+	}
+}
+160207 = {
+	name="Eochocán"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160205
+	822.1.1={
+		birth="822.1.1"
+	}
+	883.1.1={
+		death="883.1.1"
+	}
+}
+160208 = {
+	name="Airemón"
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160205
+	823.1.1={
+		birth="823.1.1"
+	}
+	886.1.1={
+		death="886.1.1"
+	}
+}
+160209 = {
+	name="Matudán" #mac Muiredaig mac Eochada
+	dynasty=819
+	religion="catholic"
+	culture="irish"
+	father=160196
+	824.1.1={
+		birth="824.1.1"
+	}
+	857.1.1={
+		death="857.1.1"
+	}
+}
+160210 = {
+	name="Fiachnae" #mac Ainbítha
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160206
+	840.1.1={
+		birth="840.1.1"
+	}
+	886.1.1={
+		death="886.1.1"
+	}
+}
+160211 = {
+	name="Bécc" #mac Airemóin
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160208
+	845.1.1={
+		birth="845.1.1"
+	}
+	893.1.1={
+		death="893.1.1"
+	}
+}
+160212 = {
+	name="Muiredach" #mac Eochocáin
+	dynasty=819
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160207
+	844.1.1={
+		birth="844.1.1"
+	}
+	895.1.1={
+		death="895.1.1"
+	}
+}
+
+160280 = {
+	name="Cumne" #
+	female=yes
+	martial=5
+	diplomacy=5
+	intrigue=6
+	stewardship=7
+	religion="catholic"
+	culture="irish"
+	560.1.1={
+		birth="560.1.1"
+	}
+	590.1.1={
+		add_spouse=160189
+	}
+	600.1.1={  
+		death="600.1.1"
+	}
+}
+180754 = {
+	name="Karli"
+	# freed slave of Ingolfr
+	religion="catholic"
+	culture="irish"
+	844.1.1={
+		birth="844.1.1"
+	}
+	866.1.1 = {
+		employer = 186504 # Ingolfr
+	}
+	901.1.1={
+		death="901.1.1"
+	}
+}
+180775 = {
+	name="Vífill"
+	# freed slave of Ingolfr
+	religion="catholic"
+	culture="irish"
+	829.1.1={
+		birth="829.1.1"
+	}
+	866.1.1 = {
+		employer = 186504 # Ingolfr
+	}
+	890.1.1={
+		death="890.1.1"
+	}
+}
+160246 = {
+	name="Flann" #mac Congalaig
+	dynasty=199
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160247
+	750.1.1={
+		birth="750.1.1"
+	}
+	812.1.1={
+		death="812.1.1"
+	}
+}
+160247 = {
+	name="Congalach" #mac Conaing
+	dynasty=199
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160248
+	710.1.1={
+		birth="710.1.1"
+	}
+	778.1.1={
+		death="778.1.1"
+	}
+}
+160248 = {
+	name="Conaing" #mac Amalgado
+	dynasty=199
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160249
+	680.1.1={
+		birth="680.1.1"
+	}
+	742.1.1={
+		death="742.1.1"
+	}
+}
+160249 = {
+	name="Amalgaid" #mac Congalaig
+	dynasty=199
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160250
+	650.1.1={
+		birth="650.1.1"
+	}
+	718.1.1={
+		death="718.1.1"
+	}
+}
+160250 = {
+	name="Congalach" #mac Conaing Cuirre
+	dynasty=199
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160251
+	630.1.1={
+		birth = yes
+	}
+	696.1.1={
+		death="696.1.1"
+	}
+}
+160251 = {
+	name="Congalach" #mac Conaing Cuirre
+	dynasty=199
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160252
+	610.1.1={
+		birth = yes
+	}
+	696.1.1={
+		death="696.1.1"
+	}
+}
+160252 = {
+	name="Conaing Cuirre" #mac Congaile
+	dynasty=199
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160253
+	590.1.1={
+		birth="590.1.1" 
+	}
+	662.1.1={
+		death="662.1.1"
+	}
+}
+160253 = {
+	name="Congal" #mac Áedo Sláine
+	dynasty=199
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father=160254
+	570.1.1={
+		birth="570.1.1" 
+	}
+	634.1.1={
+		death="634.1.1"
+	}
+}
+160254 = {
+	name="Áed Sláine" #mac Diarmato mac Cerbaill
+	dynasty=199
+	martial=6
+	diplomacy=5
+	intrigue=5
+	stewardship=5
+	religion="catholic"
+	culture="irish"
+	father = 7258
+	550.1.1={
+		birth="550.1.1" 
+	}
+	604.1.1={
+		death="604.1.1"
+	}
+}
+217321 = {
+	name="Sechnusach" 
+	dynasty=9208
+	religion="catholic"
+	culture="irish"
+	father=83170
+	704.1.1={ # unknown
+		birth="704.1.1"
+	}
+	747.4.1={
+		death="747.4.1"
+	}
+}
+217322 = {
+	name = Forbasach
+	dynasty = 9208
+	religion = catholic
+	culture = irish
+	father = 217321
+	
+	731.1.1 = { # unkown
+		birth = yes
+	}
+	786.8.1 = {
+		death = yes
 	}
 }

@@ -1,0 +1,310 @@
+#######################################
+#
+# ANCIENT RELIGIONS
+# - Druidic Headhunters
+#
+# Event ID ancrel.0010 - ancrel.0019 reserved
+#
+#######################################
+
+# Written by Patrick Marchand
+
+namespace = ancrel
+
+#[on_combat_pulse] Druidic character becomes reknowned headhunter
+character_event = {
+	id = ancrel.0010
+	desc = EVTDESCancrel.0010
+	picture = GFX_evt_headhunter
+	border = GFX_event_normal_frame_war
+
+	hide_from = yes
+	
+	is_triggered_only = yes
+
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+
+	trigger = {
+		is_alive = yes
+		NOT = { trait = head1 }
+		OR = {
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
+		}
+		OR = {
+			trait = brave
+			trait = fian
+			trait = celtic_knight
+			trait = wroth
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = brave
+		}		
+		modifier = {
+			factor = 2
+			martial = 10
+		}
+		modifier = {
+			factor = 2
+			trait = strong
+		}
+		modifier = {
+			factor = 10
+			trait = genius
+		}
+		modifier = {
+			factor = 5
+			trait = quick
+		}
+		modifier = {
+			factor = 0.1
+			trait = wounded
+		}
+		modifier = {
+			factor = 0.2
+			trait = slow
+		}
+		modifier = {
+			factor = 0.1
+			trait = imbecile
+		}
+		modifier = {
+			factor = 0.1
+			trait = inbred
+		}
+		modifier = {
+			factor = 0.5
+			trait = weak
+		}	
+		modifier = {
+			trait = stressed
+			factor = 0.9
+		}
+		modifier = {
+			factor = 0.8
+			trait = depressed
+		}
+		modifier = {
+			factor = 0.9
+			trait = ill
+		}
+		modifier = {
+			factor = 0.8
+			trait = pneumonic
+		}
+		modifier = {
+			factor = 0.8
+			trait = syphilitic
+		}
+		modifier = {
+			factor = 0.7
+			trait = leper
+		}
+		modifier = {
+			factor = 0.8
+			trait = maimed
+		}
+		modifier = {
+			factor = 0.7
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.6
+			trait = incapable
+		}
+		modifier = {
+			factor = 0.75
+			trait = drunkard
+		}
+		modifier = {
+			factor = 0.75
+			trait = has_tuberculosis
+		}
+		modifier = {
+			factor = 0.75
+			trait = has_typhoid_fever
+		}
+		modifier = {
+			factor = 0.75
+			trait = has_typhus
+		}
+		modifier = {
+			factor = 0.75
+			trait = has_bubonic_plague
+		}
+		modifier = {
+			factor = 0.75
+			trait = has_measles
+		}		
+		modifier = {
+			factor = 0.75
+			trait = has_small_pox
+		}
+		modifier = {
+			factor = 0.75
+			trait = craven
+		}
+	}
+	
+	option = {
+		name = EVTOPTAancrel.0010
+		add_trait = head1
+	}
+}
+
+#[on_combat_pulse] Druidic character becomes living legend
+character_event = {
+	id = ancrel.0011
+	desc = EVTDESCancrel.0011
+	picture = GFX_evt_headhunter
+	border = GFX_event_normal_frame_war
+
+	hide_from = yes
+	
+	is_triggered_only = yes
+
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		is_alive = yes
+		trait = head1
+		trait = brave
+		OR = {
+			trait = tough_soldier
+			trait = skilled_tactician
+			trait = brilliant_strategist
+			trait = duelist
+		}
+		NOT = { trait = head2 }
+		OR = {
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = brave
+		}		
+		modifier = {
+			factor = 2
+			martial = 13
+		}
+		modifier = {
+			factor = 2
+			trait = strong
+		}
+		modifier = {
+			factor = 10
+			trait = genius
+		}
+		modifier = {
+			factor = 5
+			trait = quick
+		}
+		modifier = {
+			factor = 0.1
+			trait = wounded
+		}
+		modifier = {
+			factor = 0.9
+			trait = slow
+		}
+		modifier = {
+			factor = 0.4
+			trait = imbecile
+		}
+		modifier = {
+			factor = 0.1
+			trait = inbred
+		}
+		modifier = {
+			factor = 0.6
+			trait = weak
+		}	
+		modifier = {
+			factor = 0.9
+			trait = stressed
+		}
+		modifier = {
+			factor = 0.8
+			trait = depressed
+		}
+		modifier = {
+			factor = 0.9
+			trait = ill
+		}
+		modifier = {
+			factor = 0.2
+			trait = pneumonic
+		}
+		modifier = {
+			factor = 1.2
+			trait = syphilitic
+		}
+		modifier = {
+			factor = 0.75
+			trait = leper
+		}
+		modifier = {
+			factor = 0.8
+			trait = maimed
+		}
+		modifier = {
+			factor = 0.75
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.6
+			trait = incapable
+		}
+		modifier = {
+			factor = 0.75
+			trait = drunkard
+		}
+		modifier = {
+			factor = 0.75
+			trait = has_tuberculosis
+		}
+		modifier = {
+			factor = 0.75
+			trait = has_typhoid_fever
+		}
+		modifier = {
+			factor = 0.75
+			trait = has_typhus
+		}
+		modifier = {
+			factor = 0.75
+			trait = has_bubonic_plague
+		}
+		modifier = {
+			factor = 0.75
+			trait = has_measles
+		}		
+		modifier = {
+			factor = 0.75
+			trait = has_small_pox
+		}
+		modifier = {
+			factor = 0.75
+			trait = craven
+		}
+	}
+	
+	option = {
+		name = EVTOPTAancrel.0011
+		add_trait = head2
+	}
+}

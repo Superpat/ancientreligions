@@ -1,0 +1,91 @@
+### Celtic Pagan
+
+c_dublin = {
+	holy_site = celtic_pagan
+	holy_site = celtic_pagan_reformed
+}
+c_gwynedd = {
+	holy_site = celtic_pagan
+	holy_site = celtic_pagan_reformed
+}
+c_essex = {
+	holy_site = celtic_pagan
+	holy_site = celtic_pagan_reformed
+}
+c_vannes = {
+	holy_site = celtic_pagan
+	holy_site = celtic_pagan_reformed
+}
+c_dijon = {
+	holy_site = celtic_pagan
+	holy_site = celtic_pagan_reformed
+}
+
+### Egyptian Pagan
+
+c_homs = {
+	holy_site = egyptian_pagan
+	holy_site = aten_pagan
+}
+c_ikonion = {		
+	holy_site = egyptian_pagan
+	holy_site = aten_pagan
+}
+c_gabiyaha = {
+	holy_site = egyptian_pagan
+	holy_site = aten_pagan
+}
+c_cairo = {
+	holy_site = egyptian_pagan
+	holy_site = aten_pagan
+}
+c_asyut = {
+	holy_site = egyptian_pagan
+	holy_site = aten_pagan
+}
+
+### Hellenic Heresies
+
+# a center of learning for over a thousand years
+c_alexandria = {
+	holy_site = promethean_pagan
+}
+# site of a pythagorean academy at crotone
+c_consenza ={
+	holy_site = promethean_pagan
+}
+# Kartli covers the southern slopes of Mt Kazbek,
+# the legendary location of Prometheus' binding
+c_kartli = {
+	holy_site = promethean_pagan
+}
+# Thessalonike
+c_thessalonike = {
+	holy_site = promethean_pagan
+}
+# Athens is location of the Academy
+# and the Kronia festival
+c_atheniai = {
+	holy_site = promethean_pagan
+	holy_site = titan_pagan
+}
+# a mural honoring thetis was found here
+# and it spreads the sites around a bit
+c_antiocheia = {
+	holy_site = titan_pagan
+}
+# The location of Mt Othrys,
+# which served as the base of the Titans during
+# the Titanomachy
+c_thessalia = {
+	holy_site = titan_pagan
+}
+# major temple to saturn(kronos)
+c_roma = {
+	holy_site = titan_pagan
+}
+# location of the Colossus, a giant statue of Helios
+# helps spread stuff around
+c_rhodos = {
+	holy_site = titan_pagan
+}

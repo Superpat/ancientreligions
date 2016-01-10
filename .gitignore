@@ -1,0 +1,6 @@
+*.tmp
+*.bak
+*.orig
+
+# Github Markdown viewer plugin
+*.README.md.html

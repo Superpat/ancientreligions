@@ -26,7 +26,7 @@ narrative_event = {
 	option = {
 		name = ancrel.0110.a
 		trigger = {
-			has_character_flag = acr_founded_gwyidion
+			has_character_flag = acr_founded_gwydion
 		}
 		chronicle = {
 			entry = CHRONICLE_GWYDION
@@ -37,7 +37,7 @@ narrative_event = {
 	option = {
 		name = ancrel.0110.b
 		trigger = {
-			NOT = { has_character_flag = acr_founded_gwyidion }
+			NOT = { has_character_flag = acr_founded_gwydion }
 			religion = celtic_pagan_reformed
 		}
 	}

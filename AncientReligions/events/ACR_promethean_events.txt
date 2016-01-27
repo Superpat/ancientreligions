@@ -195,9 +195,9 @@ province_event = {
 	picture = GFX_evt_roman_temple
 	
 	trigger = {
-		has_global_flag = acr_crotone_rebuilding
+		has_global_flag = acr_crotone_building
 		province_id = 337 # Consenza
-		NOT = { has_global_flag = acr_crotone_restored }
+		NOT = { has_global_flag = acr_crotone_rebuilt }
 		has_province_flag = acr_reb_crotone_1
 		had_province_flag = { flag = acr_reb_crotone_2 days = 638 random = 92 }		
 	}
@@ -456,7 +456,7 @@ character_event = {
 	}
 	option = { # lets not be cheap
 		name = ancrel.3452.b
-		set_character_flag = unbinding_moderate_festivities
+		set_character_flag = unbinding_middle_festivities
 
 		scaled_wealth = -0.1
 		prestige = 25
@@ -487,7 +487,7 @@ character_event = {
 	}
 	option = { # lets make it a festival to remember!
 		name = ancrel.3452.c
-		set_character_flag = undinding_grand_festivities
+		set_character_flag = unbinding_grand_festivities
 
 		scaled_wealth = -0.2
 		prestige = 50

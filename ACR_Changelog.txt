@@ -1,4 +1,4 @@
-2016-1-? v0.37.0 "Vulcan"
+2016-1-26 v0.37.0 "Vulcan"
 -------------------------
 General:
 - Nearly every kingdom in the game now has a Crusade weight for all of the added religions, including the heresies.
@@ -33,7 +33,7 @@ Hellenic:
 -- Byzantine or Roman Empire must be at 100 or fewer realm holdings, be held by a non-pagan, cannot already have the philosopher in their court, and the current ruler must not have had the event happen to them already.
 -- A Philosopher from the University of Constantinople will seek to join your court and provide you with his advice.
 -- Over the course of several years, the Philosophos will cause controversy and will require your support. This will come with a price.
-- Three traits; Stoic, Skeptic, and Epicurean have been added. The Philosopher will come with the Stoic trait, but it is otherwise only available with Ruler Designer (for now).
+- Three traits; Stoic, Skeptic, and Epicurean have been added. The Philosopher will come with the Stoic trait, but it is otherwise only available with Ruler Designer (for now). Skeptic and Epicurean do not yet have icons.
 - Added a Hellenic revival event chain if the Mani Peninsula (Monemvasia) is in the realm, as an homage to the 30 pages thread about that on the forum.
 - Tweaked Studied the classics event chain:
 -- Made it more likely to be taken by an AI courtier of the player.
@@ -42,9 +42,7 @@ Hellenic:
 -- Increased valid cultures to the entire Latin and Byzantine culture groups.
 - Sacred Band Holy Order from CK2Plus has been included (thanks guys!).
 - Added the "Hellenic Legion" holy order, created by Mbites.
--- It appears when Rome or Constantinople is held by a Hellenic Pagan, *or* when the Roman Emperor or Basilius is Hellenic Pagan
--- It is Roman cultured.
-- A number of flavor events created by cybrxkhan.
+-- It appears when Rome or Constantinople is held by a Hellenic Pagan, *or* when the Roman Emperor or Basilius is Hellenic Pagan, and it is Roman cultured.
 - New Minor Titles: Fylakasminos (Keeper of the Flock), Chiliarch, Proxenos, Hellanodikos.
 
 Promethean:
@@ -64,8 +62,7 @@ Promethean:
 - Prometheans now have access to an invasion CB called Expansion. It is inspired partially by Plato's Republic.
 -- Conquered provinces suffer from a "Depopulated" modifier for 30 years after the invasion, making it difficult to hold but more likely to convert culture and religion to the top liege.
 -- It targets Kingdoms and is based on the tribal invasion cb.
--- It cannot be used if there is a depopulated province in your realm.
--- You must be independent to use it.
+-- It can only be used if you are independent and do not have Depopulated provinces in your realm.
 - New Minor Titles: Proxenos, Hellanodikos, Archopapyri (Master of Scrolls), Archothisavrous (Master of Treasures), Fylakasflogas (Keeper of the Flame).
 
 Titan Cult:
@@ -76,7 +73,7 @@ Titan Cult:
 -- Thessalia; location of Mt Othrys, the Titan capitol during the Titanomachy (basically the Titan Olympus).
 -- Rhodes; Once held the Colossus, a massive statue to the titan Helios.
 - The Sickles are a holy order that can be created by Titan Cultists. The culture of the holy order matches the organizer.
-- New Minor Title: Fylakasminos (Keeper of the Flock).
+- New Minor Titles: Fylakasminos (Keeper of the Flock), Hellanodikos, Konistrachos (Master of the Arena).
 
 Kemetic:
 - Added Nile Flooding events, courtesy of retired modder cybrxkhan.

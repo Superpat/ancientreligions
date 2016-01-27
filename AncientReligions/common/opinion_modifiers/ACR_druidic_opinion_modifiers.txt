@@ -41,9 +41,10 @@ opinion_tailteann_craftsman = {
 	opinion = 20
 }
 
-opinion_patron = {
-	opinion = 30
-}
 opinion_new_courtier = {
+	opinion = 10
+}
+
+sent_druidic_training = {
 	opinion = 10
 }

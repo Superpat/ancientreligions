@@ -1,3 +1,101 @@
+2016-1-26 v0.37.0 "Vulcan"
+-------------------------
+General:
+- Nearly every kingdom in the game now has a Crusade weight for all of the added religions, including the heresies.
+-- This means your religious heads will intelligently call Great Holy Wars.
+- Moved some data around to different files to reduce compatability headaches.
+- Added Chronicle entries for many events.
+- Modified Lets. Get. PAGAN! to include heresies.
+-- Georgians and Armenians become Promethian.
+-- Alanians become Titan.
+-- East Africans become Atenic.
+-- Duke of Galilee gets his stones back if the world goes pagan. Surely a blessing from Dionysus...
+- New Minor Titles: Champion (copy of vanilla title that only my religions can use), Master of Arms (pagan group).
+- Holy Orders rebalanced (yes, again) to bring them more in line with Vanilla HOs.
+
+Celtic:
+- Tweaked St Kilda event chain to be more likely.
+- Court Wizard conversion chain now cascades through the entire realm, increasing likelihood that vassals will convert with you.
+- Fixed issue in the event where a son or brother asks to join the red dragons where the buttons would be labeled backwards.
+- Galloway is no longer a holy site. Dijon takes its place. This is to represent the Fountains of Sequana, a major place of worship for the Continental Celts. Also to make reformation a little harder. It was way too easy to start as Gwynned and take Dublin and Galloway and do some raiding to get up MA.
+- Fixed an issue caused by a Druidic training event calling a Sons of Gwydion event.
+- The Wolf Tails will still form if you somehow manage to Reform Celtic before converting even a single province.
+-- In this case, they will be Druidic to start.
+- In the mercenary spirit of their ancient forebears, The Wolf Tails can be hired by anyone who has the coin.
+- Fixed broken Headhunter events. It should be possible to become a Living Legend again.
+- New Minor Titles: Chariot Master, Headsmen, Warden of the Wilds.
+- New decision to invite a bard to your court.
+- A random event may have a Bard and their troupe arrive at your estate seeking lodging. Allow them to stay, and you will have the opportunity to invite the bard to join your court.
+- Improved Religion UI, from CK2Plus.
+
+Hellenic:
+- New Hellenic revival event chain inspired by Michael Psellos and Plethon.
+-- Byzantine or Roman Empire must be at 100 or fewer realm holdings, be held by a non-pagan, cannot already have the philosopher in their court, and the current ruler must not have had the event happen to them already.
+-- A Philosopher from the University of Constantinople will seek to join your court and provide you with his advice.
+-- Over the course of several years, the Philosophos will cause controversy and will require your support. This will come with a price.
+- Three traits; Stoic, Skeptic, and Epicurean have been added. The Philosopher will come with the Stoic trait, but it is otherwise only available with Ruler Designer (for now). Skeptic and Epicurean do not yet have icons.
+- Added a Hellenic revival event chain if the Mani Peninsula (Monemvasia) is in the realm, as an homage to the 30 pages thread about that on the forum.
+- Tweaked Studied the classics event chain:
+-- Made it more likely to be taken by an AI courtier of the player.
+-- Added low possibility for Hellenic heresies.
+-- Added opportunity for host to convert, if specific traits.
+-- Increased valid cultures to the entire Latin and Byzantine culture groups.
+- Sacred Band Holy Order from CK2Plus has been included (thanks guys!).
+- Added the "Hellenic Legion" holy order, created by Mbites.
+-- It appears when Rome or Constantinople is held by a Hellenic Pagan, *or* when the Roman Emperor or Basilius is Hellenic Pagan, and it is Roman cultured.
+- New Minor Titles: Fylakasminos (Keeper of the Flock), Chiliarch, Proxenos, Hellanodikos.
+
+Promethean:
+- Promethean holy sites have been moved around to better reflect the lore and to differentiate them from Hellenism and the Titans.
+-- Alexandria; A center of advanced learning for over 1000 years.
+-- Consenza; Former site of a Pythagorean Academy, and must be rebuilt (via decision, like the Restore Luxor chain, but different).
+-- Kartli; Kartli covers the southern slopes of Mt Kazbek, the legendary peak where Prometheus was chained on the orders of Zeus.
+-- Thessalonike; Common holy site for Hellenic and Promethean, to create conflict.
+-- Athens; Site of the First Academy and point of conflict between Titan Cultists and Hellenes.
+- Prometheans may now Restore the First Academy via decision, making the Philosophos of Piraeus the Scholarch of the First Academy.
+- Prometheans can Rebuild the Academy of Crotone, the site of an ancient Pythagorean academy.
+-- +20% MA for Prometheanism for 30 years.
+- Prometheans can Organize the Men of Steel, a Holy Order of the faith. The culture of the holy order matches the organizer.
+- There is now an Unbinding Festival decision and event chain that Prometheans can do once a year. It is a celebration of the Unbinding of Prometheus from his prison on Mt Kazbek.
+-- The event chain includes lots of small random events inspired by vanilla and VIET.
+-- If you're lucky you may get a skilled courtier. If you are unlucky, you may be injured, or even die!
+- Prometheans now have access to an invasion CB called Expansion. It is inspired partially by Plato's Republic.
+-- Conquered provinces suffer from a "Depopulated" modifier for 30 years after the invasion, making it difficult to hold but more likely to convert culture and religion to the top liege.
+-- It targets Kingdoms and is based on the tribal invasion cb.
+-- It can only be used if you are independent and do not have Depopulated provinces in your realm.
+- New Minor Titles: Proxenos, Hellanodikos, Archopapyri (Master of Scrolls), Archothisavrous (Master of Treasures), Fylakasflogas (Keeper of the Flame).
+
+Titan Cult:
+- Titan holy sites have been moved around to differentiate them from Hellenism and Prometheanism and better reflect locations that would actually be holy to them.
+-- Rome; because of the large temple to Saturn/Kronos.
+-- Antioch; because of a mosaic of/dedicated to Tethys. Also it spreads the sites out.
+-- Athens; Location of the Kronia festival and point of conflict with Prometheans and Hellenes.
+-- Thessalia; location of Mt Othrys, the Titan capitol during the Titanomachy (basically the Titan Olympus).
+-- Rhodes; Once held the Colossus, a massive statue to the titan Helios.
+- The Sickles are a holy order that can be created by Titan Cultists. The culture of the holy order matches the organizer.
+- New Minor Titles: Fylakasminos (Keeper of the Flock), Hellanodikos, Konistrachos (Master of the Arena).
+
+Kemetic:
+- Added Nile Flooding events, courtesy of retired modder cybrxkhan.
+-- Every year the Nile river will flood, sometimes good, sometimes bad.
+- Numerous flavor events for Egyptian and Aten pagans, also courtesy of cybrxkhan.
+-- Events involving cat worship, palm trees, and keeping the principle of Ma'at in your heart.
+- Sed Festival back to requiring a 30 year reign to use.
+-- This is more historical and matches the fairly significant boons rewarded. The previous reduction to 10 years was to counteract the lack of flavorful events and decisions available to Kemetic and Atenic characters.
+- Coptic culture is available through ruler designer and the console.
+-- Coptics have access to a Khopesh wielding heavy infantry/horse archer retinue called the Anhuri.
+-- Coptics also can build a Temple of Anhur building to enhance your heavy infantry troops.
+- New Minor Titles: Gods Wife, Divine Adoratrice, Master of Palms, Fanbearer on the Right Hand of the King, Iry-pat, Haty-a, Khetemty.
+
+Atenic:
+- Faithful followers of Aten can now restore Akhetaten, the ancient city we call Amarna today.
+-- This decision is almost a carbon copy of the Restore Luxor decision. It may receive more love in the future.
+- Atenism now has a religious head, the Meryaten, which is a King tier Fylkir style title held by the reformer.
+-- The Meryaten is created by decision, and requires that Akhetaten is restored.
+- The Burning Blades are a new holy order for Atenism that can be created via decision and are immediately vassalized by the organizer.
+- Atenic now uses Decadence. If the representitive of the divine on Earth behaves in a manner unworthy of the divine, the people will rise up to overthrow the unworthy in the name of Aten.
+- New Minor Titles: Gods Wife, Divine Adoratrice, Master of Palms, Fanbearer on the Right Hand of the King, Iry-pat, Haty-a, Khetemty.
+
 2015-8-12 v0.36.4 "Beroe"
 -------------------------
 - Compatibility with vanilla 2.4.3
@@ -20,6 +118,7 @@
 - Optimization of some MTTH events, by using pre-triggers to exclude courtiers.
 - Fixed Gaulish Cavalry Retinue being Heavy Infantry. Should be Heavy Cavalry now, as intended.
 - Messalians can hire women to all councilor positions again.
+
 
 2015-3-10 v0.36.2 "Anchises"
 -------------------------

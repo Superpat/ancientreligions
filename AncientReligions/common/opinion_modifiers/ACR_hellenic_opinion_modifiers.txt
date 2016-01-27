@@ -51,3 +51,8 @@ opinion_refused_titan_thysia = {
 	opinion = -15
 	months = 12
 }
+
+opinion_held_unbinding_festival = {
+	opinion = 10
+	months = 12
+}

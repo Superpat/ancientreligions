@@ -138,8 +138,6 @@ wolf = {
 	monthly_character_prestige = 0.15
 
 	same_opinion = 20
-
-	cannot_inherit = yes
 }
 
 learning_druidic_arts = {

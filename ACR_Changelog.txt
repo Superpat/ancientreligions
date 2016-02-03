@@ -1,3 +1,12 @@
+2016-2-0? v0.37.1 "Cecrops"
+-------------------------
+Promethean:
+- Bug fixes relating to the Unbinding Festival and Rebuilding Crotone.
+- Stoic trait now grants a +5 General Opinion bonus, as intended.
+- Skeptic and Epicurean traits now have icons.
+- All three philosophy traits have been given potential blocks to keep children in Scotland from getting them.
+
+
 2016-1-26 v0.37.0 "Vulcan"
 -------------------------
 General:

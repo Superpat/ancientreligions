@@ -741,7 +741,7 @@ gender_laws = {
 								is_tribal = no
 								is_nomadic = no
 							}
-							feminist_trigger = yes
+							is_feminist = yes
 						}
 						is_merchant_republic = no
 						is_patrician = no
@@ -840,7 +840,7 @@ gender_laws = {
 							AND = {
 								holder_scope = { primary_title = { has_law = status_of_women_2 } }
 								OR = {
-									feminist_trigger = yes
+									is_feminist = yes
 									culture = basque
 								}
 							}
@@ -880,7 +880,7 @@ gender_laws = {
 			OR = {
 				holder_scope = {
 					OR = {
-						feminist_trigger = yes
+						is_feminist = yes
 						culture = basque
 					}
 				}

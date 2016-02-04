@@ -44,7 +44,32 @@ title_acr_champion = {
 		
 		OR = {
 			is_female = no
-			feminist_trigger = yes
+			AND = {
+				is_feminist = yes
+				liege = { religion = PREV }
+			}
+			AND = {
+				liege = {
+					primary_title = {
+						OR = {
+							has_law = status_of_women_3
+						}
+					}
+				}
+				OR = {
+					liege = {
+						OR = {
+							dynasty = ROOT
+							is_close_relative = ROOT
+							any_spouse = { character = ROOT }
+							any_consort = { character = ROOT }
+						}
+					}
+					is_landed = yes
+					
+				}
+			}
+			has_law = status_of_women_4
 		}
 	}
 
@@ -84,7 +109,32 @@ title_master_arms = {
 		
 		OR = {
 			is_female = no
-			feminist_trigger = yes
+			AND = {
+				is_feminist = yes
+				liege = { religion = PREV }
+			}
+			AND = {
+				liege = {
+					primary_title = {
+						OR = {
+							has_law = status_of_women_3
+						}
+					}
+				}
+				OR = {
+					liege = {
+						OR = {
+							dynasty = ROOT
+							is_close_relative = ROOT
+							any_spouse = { character = ROOT }
+							any_consort = { character = ROOT }
+						}
+					}
+					is_landed = yes
+					
+				}
+			}
+			has_law = status_of_women_4
 		}
 
 		martial = 6

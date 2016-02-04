@@ -11,6 +11,7 @@ guiTypes = {
 		verticalBorder = ""
 		fullScreen = no
 		Orientation = "UPPER_LEFT"
+#		upsound = click
 		
 		iconType = {
 			name ="religion_bg"
@@ -1198,6 +1199,19 @@ guiTypes = {
 			position = { x= 0 y = 20 }
 			Orientation = "UPPER_LEFT"
 		}
+#		iconType = {
+#			name ="pope_portrait_status"
+#			spriteType = "GFX_overlay_char_status_50"
+#			position = { x= 4 y = 23 }
+#			Orientation = "UPPER_LEFT"
+#		}
+#		iconType = {
+#			name ="pope_portrait_relation"
+#			spriteType = "GFX_overlay_char_relation_50"
+#			position = { x= 39 y = 23 }
+#			Orientation = "UPPER_LEFT"
+#		}
+		
 		iconType = {
 			name ="opinion_bg"
 			spriteType = "GFX_opinion_bg"
@@ -1723,14 +1737,15 @@ guiTypes = {
 		iconType = {
 			name ="DecadenceIcon"
 			spriteType = "GFX_icon_decadence"
-			position = { x = 395 y = 1 }
+			position = { x = 385 y = 1 }
 			Orientation = "UPPER_LEFT"
-			pdx_tooltip = "DECADENCE_DESC"
+			pdx_tooltip = "DECADENCE_CHANGE"
+			pdx_tooltip_delayed = "DECADENCE_DESC"
 		}
 
 		instantTextBoxType = {
 			name = "Decadence"
-			position = { x = 407 y = 1206 }
+			position = { x = 407 y = 6 }
 			textureFile = ""
 			font = "vic_18_black"
 			borderSize = {x = 0 y = 0}
@@ -1771,7 +1786,8 @@ guiTypes = {
 		verticalBorder = ""
 		fullScreen = no
 		Orientation = "UPPER_LEFT"
-
+#		upsound = click
+		
 		iconType = {
 			name ="religion_bg"
 			spriteType = "GFX_religion_cardinals_bg"
@@ -2879,6 +2895,7 @@ guiTypes = {
 		verticalBorder = ""
 		fullScreen = no
 		Orientation = "UPPER_LEFT"
+#		upsound = click
 		
 		iconType = {
 			name ="religion_bg"

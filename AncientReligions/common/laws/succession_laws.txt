@@ -824,6 +824,11 @@ gender_laws = {
 			holder_scope = {
 				OR = {
 					AND = {
+						NOT = { has_dlc = "Zeus" }
+						is_feminist = yes
+						culture = basque
+					}
+					AND = {
 						NOT = { religion_group = muslim }
 						NOT = { religion = aztec }
 						NOT = { religion = aztec_reformed }

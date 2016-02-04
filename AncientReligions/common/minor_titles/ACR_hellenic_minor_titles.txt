@@ -11,7 +11,17 @@ title_censor = {
 
 	allowed_to_hold = {
 		is_adult = yes
-		is_female = no
+		OR = {
+			is_female = no
+			liege = {
+				primary_title = {
+					OR = {
+						has_law = status_of_women_3
+						has_law = status_of_women_4
+					}
+				}
+			}
+		}
 		religion = hellenic_pagan
 	}
 	
@@ -42,7 +52,17 @@ title_aedile = {
 
 	allowed_to_hold = {
 		is_adult = yes
-		is_female = no
+		OR = {
+			is_female = no
+			liege = {
+				primary_title = {
+					OR = {
+						has_law = status_of_women_3
+						has_law = status_of_women_4
+					}
+				}
+			}
+		}
 		religion = hellenic_pagan
 	}
 	
@@ -72,7 +92,17 @@ title_magister_equitum = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		is_female = no
+		OR = {
+			is_female = no
+			liege = {
+				primary_title = {
+					OR = {
+						has_law = status_of_women_3
+						has_law = status_of_women_4
+					}
+				}
+			}
+		}
 	}
 	
 	allowed_to_grant = {
@@ -421,6 +451,19 @@ title_keeper_flock = {
 			religion = hellenic_pagan
 			religion = titan_pagan
 		}
+
+		OR = {
+			NOT = { religion = titan_pagan }
+			is_female = no
+			liege = {
+				primary_title = {
+					OR = {
+						has_law = status_of_women_3
+						has_law = status_of_women_4
+					}
+				}
+			}
+		}
 	}
 
 	allowed_to_grant = {
@@ -451,7 +494,10 @@ title_chiliarch = {
 	allowed_to_hold = {
 		is_adult = yes
 		has_regent = no
-		is_female = no
+		OR = {
+			is_female = no
+			liege = { primary_title = {	has_law = status_of_women_4	} }
+		}
 		martial = 6
 	}
 
@@ -488,6 +534,18 @@ title_proxenos = {
 	allowed_to_hold = {
 		is_adult = yes
 		has_regent = no
+		OR = {
+			is_female = no
+			liege = { religion = promethean_pagan }
+			liege = {
+				primary_title = {
+					OR = {
+						has_law = status_of_women_3
+						has_law = status_of_women_4
+					}
+				}
+			}
+		}
 	}
 
 	allowed_to_grant = {
@@ -524,14 +582,48 @@ title_hellanodikos = {
 		NOT = {
 			trait = arbitrary
 		}
+
+		OR = {
+			AND = {
+				liege = { religion = hellenic_pagan }
+				OR = {
+					is_female = no
+					liege = {
+						primary_title = {
+							OR = {
+								has_law = status_of_women_2
+								has_law = status_of_women_3
+								has_law = status_of_women_4
+							}
+						}
+					}
+				}
+			}
+			AND = {
+				liege = { religion = titan_pagan }
+				OR = {
+					is_female = no
+					liege = {
+						primary_title = {
+							OR = {
+								has_law = status_of_women_3
+								has_law = status_of_women_4
+							}
+						}
+					}
+				}			
+			}
+			liege = { religion = promethean_pagan }
+		}
 	}
 
 	allowed_to_grant = {
 		independent = yes
+
 		OR = {
 			religion = hellenic_pagan
-			religion = promethean_pagan
 			religion = titan_pagan
+			religion = promethean_pagan
 		}
 	}
 
@@ -554,6 +646,18 @@ title_master_arena = {
 	allowed_to_hold = {
 		is_adult = yes
 		has_regent = no
+
+		OR = {
+			is_female = no
+			liege = {
+				primary_title = {
+					OR = {
+						has_law = status_of_women_3
+						has_law = status_of_women_4
+					}
+				}
+			}
+		}
 	}
 
 	allowed_to_grant = {

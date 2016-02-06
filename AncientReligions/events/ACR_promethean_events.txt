@@ -227,7 +227,7 @@ province_event = {
 					holder = PREV
 				}
 			}
-
+			religion_authority = { modifier = crotone_rebuilt }
 			prestige = 500
 		}
 		hidden_tooltip = {

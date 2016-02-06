@@ -7,10 +7,10 @@ title_gods_wife = {
 	realm_in_name = no
 	dignity = 0.20
 	grant_limit = 1
-	opinion_effect = 20
+	opinion_effect = 15
 
 	monthly_salary = 0.02
-	monthly_prestige = 0.075
+	monthly_prestige = 0.75
 	
 	is_unique = yes
 
@@ -49,10 +49,10 @@ title_divine_adoratrice = {
 	realm_in_name = no
 	dignity = 0.15
 	grant_limit = 1
-	opinion_effect = 15
+	opinion_effect = 10
 
 	monthly_salary = 0.015
-	monthly_prestige = 0.05
+	monthly_prestige = 0.5
 	
 	is_unique = yes
 
@@ -90,10 +90,10 @@ title_master_palms = {
 	realm_in_name = no
 	dignity = 0.15
 	grant_limit = 1
-	opinion_effect = 15
+	opinion_effect = 10
 
 	monthly_salary = 0.02
-	monthly_prestige = 0.05
+	monthly_prestige = 0.5
 	
 	allowed_to_hold = {
 		is_adult = yes
@@ -125,10 +125,10 @@ title_fanbearer = {
 	realm_in_name = yes
 	dignity = 0.2
 	grant_limit = 1
-	opinion_effect = 20
+	opinion_effect = 10
 
 	monthly_salary = 0.0075
-	monthly_prestige = 0.1
+	monthly_prestige = 0.5
 
 	allowed_to_hold = {
 		is_adult = yes
@@ -160,10 +160,10 @@ title_iry_pat = {
 	realm_in_name = yes
 	dignity = 0.1
 	grant_limit = 2
-	opinion_effect = 10
+	opinion_effect = 5
 
 	monthly_salary = 0.005
-	monthly_prestige = 0.025
+	monthly_prestige = 0.25
 
 	allowed_to_hold = {
 		is_adult = yes
@@ -189,10 +189,10 @@ title_haty_a = {
 	realm_in_name = yes
 	dignity = 0.1
 	grant_limit = 2
-	opinion_effect = 10
+	opinion_effect = 5
 
 	monthly_salary = 0.005
-	monthly_prestige = 0.025
+	monthly_prestige = 0.25
 
 	allowed_to_hold = {
 		is_adult = yes
@@ -218,10 +218,10 @@ title_khetemty = {
 	realm_in_name = yes
 	dignity = 0.1
 	grant_limit = 2
-	opinion_effect = 10
+	opinion_effect = 5
 
 	monthly_salary = 0.005
-	monthly_prestige = 0.025
+	monthly_prestige = 0.25
 
 	allowed_to_hold = {
 		is_adult = yes

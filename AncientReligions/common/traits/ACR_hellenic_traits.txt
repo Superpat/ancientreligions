@@ -24,7 +24,7 @@ epicurean = {
 				religion = hellenic_pagan
 				OR = {
 					is_priest = yes
-					trait = scholoar
+					trait = scholar
 				}
 			}
 			AND = {
@@ -65,7 +65,7 @@ stoic = {
 				religion = hellenic_pagan
 				OR = {
 					is_priest = yes
-					trait = scholoar
+					trait = scholar
 				}
 			}
 			AND = {
@@ -103,7 +103,7 @@ skeptic = {
 				religion = hellenic_pagan
 				OR = {
 					is_priest = yes
-					trait = scholoar
+					trait = scholar
 				}
 			}
 			AND = {

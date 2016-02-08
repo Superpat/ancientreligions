@@ -38,7 +38,7 @@ rebuild_first_academy_desc;Rebuild the First Academy, with the Scholarch as the 
 rebuild_crotone;Rebuild Crotone;;;;;;;;;;;;;x
 rebuild_crotone_desc;Rebuild the Academy at Crotone;;;;;;;;;;;;;x
 first_academy_restored;First Academy Restored;;;;;;;;;;;;;x
-crotone_rebuilt;Academy of Crotone Rebuilt;;;;;;;;;;;;;x
+crotone_academy;Academy of Crotone Rebuilt;;;;;;;;;;;;;x
 held_unbinding_festival_timer;Held an Unbinding Festival;;;;;;;;;;;;;x
 held_unbinding_festival_timer_desc;This character has held the tri-annual Unbinding Festival.;;;;;;;;;;;;;x
 opinion_held_unbinding_festival;Held an Unbinding Festival;;;;;;;;;;;;;x

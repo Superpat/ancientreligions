@@ -9054,6 +9054,18 @@ dejure_county_claim = {
 							has_character_modifier = expelled_d_zun_warriors
 						}
 					}
+					AND = {
+						primary_title = { title = d_red_dragons }
+						ROOT = {
+							has_character_modifier = expelled_d_red_dragons
+						}
+					}
+					AND = {
+						primary_title = { title = d_fianna }
+						ROOT = {
+							has_character_modifier = expelled_d_fianna
+						}
+					}
 				}
 			}
 		}
@@ -9319,6 +9331,18 @@ dejure_barony_claim = {
 						primary_title = { title = d_zun_warriors }
 						ROOT = {
 							has_character_modifier = expelled_d_zun_warriors
+						}
+					}
+					AND = {
+						primary_title = { title = d_red_dragons }
+						ROOT = {
+							has_character_modifier = expelled_d_red_dragons
+						}
+					}
+					AND = {
+						primary_title = { title = d_fianna }
+						ROOT = {
+							has_character_modifier = expelled_d_fianna
 						}
 					}
 				}
@@ -9625,6 +9649,18 @@ other_dejure_county_claim = {
 						primary_title = { title = d_zun_warriors }
 						ROOT = {
 							has_character_modifier = expelled_d_zun_warriors
+						}
+					}
+					AND = {
+						primary_title = { title = d_red_dragons }
+						ROOT = {
+							has_character_modifier = expelled_d_red_dragons
+						}
+					}
+					AND = {
+						primary_title = { title = d_fianna }
+						ROOT = {
+							has_character_modifier = expelled_d_fianna
 						}
 					}
 				}

@@ -11,6 +11,10 @@ pontifex_restored = {
 	years = 15
 }
 first_academy_restored = {
-	authority = 20
-	years = 20
+	authority = 10
+	years = 15
+}
+crotone_academy = {
+	authority = 10
+	years = 30
 }

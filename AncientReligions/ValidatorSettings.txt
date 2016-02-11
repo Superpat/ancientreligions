@@ -123,12 +123,17 @@ AddFlag = CharacterHistory.NoBirthDeathCheck
 # this might bring up lots of false positives.
 #AddFlag = Events.CheckForEventsWithNoOptions
 # Disable checks for missing option, desc, picture in events without hide_window=yes.
-#AddFlag = Event.NoNonHideWindowChecks
+# NOTE: This was renamed from Event.NoNonHideWindowChecks
+#AddFlag = Events.NoNonHideWindowChecks
 # Disables warnings about possible ID collisions.
 # Reason for warnings: Could you add a warning if a non-namespace event ID is greater than 999999, or a namespace event ID is greater than 99999? These have the potential of causing an ID collision between non-namespace and namespace IDs, or between namespaces, because of the way event ID blocks are assigned to namespaces (100000 ID blocks, starting at 1000000.) 
 #AddFlag = Event.NoCheckIdCollision
 # Disable checking for leading zeros in event IDs. It is good to have a uniform ID for each event.
 AddFlag = Events.NoCheckLeadingZeroInId
+# Disable checking that events start with GFX_event_[normal|narrative|letter|long]_frame depending on the event type
+#AddFlag = Events.NoCheckEventBorderPrefix
+# Disables checks that an event with hide_window=yes 
+AddFlag = Events.DisableSpecialHideWindowChecks
 
 ###########################################
 # DECISIONS
@@ -159,6 +164,10 @@ AddFlag = Events.NoCheckLeadingZeroInId
 
 # Allows duplicate entries in the landed_titles, as titles will get merged. Note this disables some related checks, such as that a color is specified
 AddFlag = Titles.AllowDuplicateEntries
+# For emperor/king/duke titles, will not enforce that they have a capital
+# Note that this may be a risky thing to do so be careful
+# zijistark says this: Titular titles don't strictly need capital assignments. However, titular titles can and do become de jure either by event or through drift, although obviously some special-purpose titular titles will never do so, depending upon the mod. IMHO, it'd be a best practice to always assign capitals to titles, even if a titular title such as e_summer_sea receives a placeholder capital like province 1. Titles that end-up de jure w/o a capital can cause numerous issues-- a) they screw with game mechanics re: free capital movement and AI capital choice, b) the assumption that de jure titles have a capital is a very useful one to make in general-purpose script, and c) such titles without capitals will never match a GeographicalRegion even when they really ought to do so and may cause abnormal or incoherent behavior as a result. (https://forum.paradoxplaza.com/forum/index.php?threads/the-validator-find-errors-quickly-and-with-minimal-pain.597480/page-100#post-20312271)
+#AddFlag = Titles.AllowSomeTitlesWithoutCapital
 
 
 

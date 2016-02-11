@@ -483,7 +483,7 @@ decisions = {
 			religion = promethean_pagan
 			
 			NOT = { has_character_modifier = held_unbinding_festival_timer }
-			NOT = {	has_character_flag = holding_unbinding_festival }
+			NOT = {	has_character_modifier = holding_unbinding_festival }
 			NOT = {	has_character_flag = do_not_disturb }
 		}
 		allow = {
@@ -558,7 +558,7 @@ decisions = {
 			piety = -300
 			prestige = -300
 			wealth = -200
-
+			set_character_flag = acr_organizer_steel
 			activate_title = { title = d_men_of_steel status = yes }
 			create_character = {
 				random_traits = no

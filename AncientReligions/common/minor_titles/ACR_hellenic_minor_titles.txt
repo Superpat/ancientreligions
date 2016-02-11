@@ -2,16 +2,26 @@ title_censor = {
 	realm_in_name = yes
 	dignity = 0.20
 	grant_limit = 1
-	opinion_effect = 20
+	opinion_effect = 10
 
 	monthly_salary = 0.02
-	monthly_prestige = 0.075
+	monthly_prestige = 0.75
 	
 	is_unique = yes
 
 	allowed_to_hold = {
 		is_adult = yes
-		is_female = no
+		OR = {
+			is_female = no
+			liege = {
+				primary_title = {
+					OR = {
+						has_law = status_of_women_3
+						has_law = status_of_women_4
+					}
+				}
+			}
+		}
 		religion = hellenic_pagan
 	}
 	
@@ -33,16 +43,26 @@ title_aedile = {
 	realm_in_name = yes
 	dignity = 0.10
 	grant_limit = 2
-	opinion_effect = 15
+	opinion_effect = 5
 
 	monthly_salary = 0.075
-	monthly_prestige = 0.075
+	monthly_prestige = 0.75
 	
 	is_unique = yes
 
 	allowed_to_hold = {
 		is_adult = yes
-		is_female = no
+		OR = {
+			is_female = no
+			liege = {
+				primary_title = {
+					OR = {
+						has_law = status_of_women_3
+						has_law = status_of_women_4
+					}
+				}
+			}
+		}
 		religion = hellenic_pagan
 	}
 	
@@ -66,13 +86,23 @@ title_magister_equitum = {
 	opinion_effect = 10
 	
 	monthly_salary = 0.02
-	monthly_prestige = 0.004
+	monthly_prestige = 0.04
 	
 	is_unique = yes
 	
 	allowed_to_hold = {
 		is_adult = yes
-		is_female = no
+		OR = {
+			is_female = no
+			liege = {
+				primary_title = {
+					OR = {
+						has_law = status_of_women_3
+						has_law = status_of_women_4
+					}
+				}
+			}
+		}
 	}
 	
 	allowed_to_grant = {
@@ -97,11 +127,11 @@ title_magister_equitum = {
 title_vestalis = {
 	dignity = 0.91
 	grant_limit = 5
-	opinion_effect = 10
+	opinion_effect = 5
 
 	monthly_salary = 0.02
-	monthly_prestige = 0.300
-	monthly_piety = 0.100
+	monthly_prestige = 0.5
+	monthly_piety = 0.1
 
 	allowed_to_hold = {
 		is_female = yes
@@ -146,11 +176,11 @@ title_vestalis = {
 title_vestalis_maxima = {
 	dignity = 0.92
 	grant_limit = 1
-	opinion_effect = 15
+	opinion_effect = 10
 
 	monthly_salary = 0.05
-	monthly_prestige = 0.500
-	monthly_piety = 0.200
+	monthly_prestige = 0.5
+	monthly_piety = 0.2
 
 	allowed_to_hold = {
 		is_adult = yes
@@ -184,11 +214,11 @@ title_vestalis_maxima = {
 title_flamen_dialis = {
 	dignity = 0.15
 	grant_limit = 1
-	opinion_effect = 15
+	opinion_effect = 5
 
-	monthly_salary = 0.005
-	monthly_prestige = 0.015
-	monthly_piety = 0.005
+	monthly_salary = 0.02
+	monthly_prestige = 0.1
+	monthly_piety = 0.1
 	
 	is_unique = yes
 
@@ -226,9 +256,9 @@ title_flaminica_dialis = {
 	dignity = 0.10
 	grant_limit = 1
 
-	monthly_salary = 0.000
-	monthly_prestige = 0.005
-	monthly_piety = 0.005
+	monthly_salary = 0.02
+	monthly_prestige = 0.1
+	monthly_piety = 0.1
 
 	allowed_to_hold = {
 		spouse = { has_minor_title = title_flamen_dialis }
@@ -249,11 +279,11 @@ title_flaminica_dialis = {
 title_flamen_martialis = {
 	dignity = 0.14
 	grant_limit = 1
-	opinion_effect = 10
+	opinion_effect = 5
 
-	monthly_salary = 0.005
-	monthly_prestige = 0.010
-	monthly_piety = 0.005
+	monthly_salary = 0.02
+	monthly_prestige = 0.1
+	monthly_piety = 0.1
 	
 	is_unique = yes
 
@@ -291,9 +321,9 @@ title_flaminica_martialis = {
 	dignity = 0.09
 	grant_limit = 1
 
-	monthly_salary = 0.000
-	monthly_prestige = 0.005
-	monthly_piety = 0.005
+	monthly_salary = 0.02
+	monthly_prestige = 0.1
+	monthly_piety = 0.1
 
 	allowed_to_hold = {
 		spouse = { has_minor_title = title_flamen_martialis }
@@ -314,11 +344,11 @@ title_flaminica_martialis = {
 title_flamen_quirinalis = {
 	dignity = 0.13
 	grant_limit = 1
-	opinion_effect = 10
+	opinion_effect = 5
 
-	monthly_salary = 0.005
-	monthly_prestige = 0.010
-	monthly_piety = 0.005
+	monthly_salary = 0.02
+	monthly_prestige = 0.1
+	monthly_piety = 0.1
 	
 	is_unique = yes
 
@@ -359,9 +389,9 @@ title_flaminica_quirinalis = {
 	dignity = 0.08
 	grant_limit = 1
 
-	monthly_salary = 0.000
-	monthly_prestige = 0.005
-	monthly_piety = 0.005
+	monthly_salary = 0.02
+	monthly_prestige = 0.1
+	monthly_piety = 0.1
 
 	allowed_to_hold = {
 		spouse = { has_minor_title = title_flamen_martialis }
@@ -391,7 +421,7 @@ title_hypatos_philosophon = {
 	replace_order = yes
 	
 	monthly_salary = 0
-	monthly_prestige = 0.005
+	monthly_prestige = 0.05
 	
 	gain_effect = {
 	}
@@ -406,11 +436,11 @@ title_hypatos_philosophon = {
 title_keeper_flock = {
 	dignity = 0.1
 	grant_limit = 1
-	opinion_effect = 20
+	opinion_effect = 10
 
-	monthly_salary = 0.0075
-	monthly_prestige = 0.0075
-	monthly_piety = 0.02
+	monthly_salary = 0.075
+	monthly_prestige = 0.05
+	monthly_piety = 0.2
 
 	is_unique = yes
 
@@ -420,6 +450,19 @@ title_keeper_flock = {
 		OR = {
 			religion = hellenic_pagan
 			religion = titan_pagan
+		}
+
+		OR = {
+			NOT = { religion = titan_pagan }
+			is_female = no
+			liege = {
+				primary_title = {
+					OR = {
+						has_law = status_of_women_3
+						has_law = status_of_women_4
+					}
+				}
+			}
 		}
 	}
 
@@ -441,17 +484,20 @@ title_keeper_flock = {
 title_chiliarch = {
 	dignity = 0.2
 	grant_limit = 4
-	opinion_effect = 15
+	opinion_effect = 5
 
 	monthly_salary = 0.005
-	monthly_prestige = 0.02
+	monthly_prestige = 0.2
 
 	is_unique = yes
 
 	allowed_to_hold = {
 		is_adult = yes
 		has_regent = no
-		is_female = no
+		OR = {
+			is_female = no
+			liege = { primary_title = {	has_law = status_of_women_4	} }
+		}
 		martial = 6
 	}
 
@@ -478,16 +524,28 @@ title_chiliarch = {
 title_proxenos = {
 	dignity = 0.1
 	grant_limit = 2
-	opinion_effect = 10
+	opinion_effect = 5
 
 	is_unique = yes
 
 	monthly_salary = 0.01
-	monthly_prestige = 0.01
+	monthly_prestige = 0.1
 
 	allowed_to_hold = {
 		is_adult = yes
 		has_regent = no
+		OR = {
+			is_female = no
+			liege = { religion = promethean_pagan }
+			liege = {
+				primary_title = {
+					OR = {
+						has_law = status_of_women_3
+						has_law = status_of_women_4
+					}
+				}
+			}
+		}
 	}
 
 	allowed_to_grant = {
@@ -512,10 +570,10 @@ title_proxenos = {
 title_hellanodikos = {
 	dignity = 0.075
 	grant_limit = 3
-	opinion_effect = 10
+	opinion_effect = 5
 
-	monthly_salary = 0.0075
-	monthly_prestige = 0.0075
+	monthly_salary = 0.075
+	monthly_prestige = 0.5
 
 	allowed_to_hold = {
 		is_adult = yes
@@ -524,14 +582,48 @@ title_hellanodikos = {
 		NOT = {
 			trait = arbitrary
 		}
+
+		OR = {
+			AND = {
+				liege = { religion = hellenic_pagan }
+				OR = {
+					is_female = no
+					liege = {
+						primary_title = {
+							OR = {
+								has_law = status_of_women_2
+								has_law = status_of_women_3
+								has_law = status_of_women_4
+							}
+						}
+					}
+				}
+			}
+			AND = {
+				liege = { religion = titan_pagan }
+				OR = {
+					is_female = no
+					liege = {
+						primary_title = {
+							OR = {
+								has_law = status_of_women_3
+								has_law = status_of_women_4
+							}
+						}
+					}
+				}			
+			}
+			liege = { religion = promethean_pagan }
+		}
 	}
 
 	allowed_to_grant = {
 		independent = yes
+
 		OR = {
 			religion = hellenic_pagan
-			religion = promethean_pagan
 			religion = titan_pagan
+			religion = promethean_pagan
 		}
 	}
 
@@ -546,7 +638,7 @@ title_hellanodikos = {
 title_master_arena = {
 	dignity = 0.05
 	grant_limit = 1
-	opinion_effect = 15
+	opinion_effect = 10
 
 	monthly_salary = 0.01
 	monthly_prestige = 0.01
@@ -554,6 +646,18 @@ title_master_arena = {
 	allowed_to_hold = {
 		is_adult = yes
 		has_regent = no
+
+		OR = {
+			is_female = no
+			liege = {
+				primary_title = {
+					OR = {
+						has_law = status_of_women_3
+						has_law = status_of_women_4
+					}
+				}
+			}
+		}
 	}
 
 	allowed_to_grant = {
@@ -573,11 +677,11 @@ title_master_arena = {
 title_master_scrolls = {
 	dignity = 0.05
 	grant_limit = 1
-	opinion_effect = 15
+	opinion_effect = 10
 
 	monthly_salary = 0.015
-	monthly_prestige = 0.0075
-	monthly_piety = 0.01
+	monthly_prestige = 0.25
+	monthly_piety = 0.1
 
 	allowed_to_hold = {
 		is_adult = yes
@@ -600,11 +704,11 @@ title_master_scrolls = {
 title_master_antiquities = {
 	dignity = 0.05
 	grant_limit = 1
-	opinion_effect = 15
+	opinion_effect = 10
 
-	monthly_salary = 0.0075
-	monthly_prestige = 0.015
-	monthly_piety = 0.01
+	monthly_salary = 0.075
+	monthly_prestige = 0.25
+	monthly_piety = 0.1
 
 	allowed_to_hold = {
 		is_adult = yes
@@ -627,11 +731,11 @@ title_master_antiquities = {
 title_keeper_flame = {
 	dignity = 0.05
 	grant_limit = 1
-	opinion_effect = 15
+	opinion_effect = 10
 
-	monthly_salary = 0.0075
-	monthly_prestige = 0.01
-	monthly_piety = 0.015
+	monthly_salary = 0.075
+	monthly_prestige = 0.1
+	monthly_piety = 0.15
 
 	allowed_to_hold = {
 		is_adult = yes

@@ -673,7 +673,7 @@ decisions = {
 			is_adult = yes
 			is_heretic = no
 			piety = 0
-			NOT = {
+			NOR = {
 				has_character_flag = gone_pagan
 				religion = monophysite
 				religion = miaphysite
@@ -692,7 +692,7 @@ decisions = {
 				trait = zealous 
 				trait = incapable
 			}			
-			NOT = {
+			NOR = {
 				AND = {
 					religion_group = pagan_group
 					is_reformed_religion = no

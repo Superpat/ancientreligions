@@ -22,6 +22,20 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	spriteType = {
+		name = "GFX_trait_skeptic"
+		texturefile = "gfx\\traits\ACR\skeptic.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_epicurean"
+		texturefile = "gfx\\traits\ACR\epicurean.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 
 	# Decision icons
 	spriteType = {

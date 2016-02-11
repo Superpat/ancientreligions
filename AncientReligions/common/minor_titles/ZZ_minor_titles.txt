@@ -1,4 +1,3 @@
-# Commander, granted via its own interaction, so very special
 title_commander = {
 	is_high_prio = yes
 	
@@ -8,16 +7,19 @@ title_commander = {
 	realm_in_name = yes
 	
 	monthly_salary = 0.05
-	monthly_prestige = 0.005
+	monthly_prestige = 0.50
 	
 	allowed_to_hold = {
+		liege = { character = FROM }
 		OR = {
 			AND = {
 				OR = {
 					is_female = no
+					is_feminist = yes
 					liege = {
-						feminist_trigger = yes
-						religion = ROOT
+						primary_title = {
+							has_law = status_of_women_4
+						}
 					}
 				}
 				OR = {

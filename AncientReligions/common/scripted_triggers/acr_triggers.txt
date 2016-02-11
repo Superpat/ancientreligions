@@ -1,4 +1,4 @@
-is_feminist = {
+is_feminist_trigger = {
 	OR = {
 		religion = celtic_pagan_reformed
 		religion = celtic_pagan

@@ -1,10 +1,20 @@
-2016-2-0? v0.37.1 "Cecrops"
+2016-2-10 v0.37.1 "Cecrops"
 -------------------------
+
+General:
+- Compatability with CK2 2.5.1
+- Adjusted opinion modifiers and honorary titles to match new vanilla balance.
+- Laws adjusted to take into account ancient religions.
+-- Celtic Pagan, Druidic, and Promethean will make female-friendly laws easier to get.
+-- Titan Cultists, on the other hand, are decidely less enlightened on the subject of women.
+- Minor Titles and councilor positions have been adjusted to account for ancient religions.
+-- Like Laws, appropriate religions will make it easier or harder to hire/appoint women.
+
 Promethean:
 - Bug fixes relating to the Unbinding Festival and Rebuilding Crotone.
 - Stoic trait now grants a +5 General Opinion bonus, as intended.
 - Skeptic and Epicurean traits now have icons.
-- All three philosophy traits have been given potential blocks to keep children in Scotland from getting them.
+- All three philosophy traits have been given potential blocks to keep random children in Scotland from getting them.
 
 
 2016-1-26 v0.37.0 "Vulcan"

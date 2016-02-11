@@ -12,11 +12,11 @@ For more info, check the [Ancient Religions page on ckiiwiki](http://www.ckiiwik
 
 Current Religions:
  - Hellenic paganism
- -- Titan Cult
- -- Prometheanism
+   - Titan Cult
+   - Prometheanism
  - Celtic Druidism
  - Egyptian paganism
- -- Atenism
+    Atenism
  
  There are currently no plans to add more religions, and we are not taking suggestions.
 
@@ -68,7 +68,7 @@ For improved maintainability and compatibility with other mods, the following co
 The following code and assets were included in Ancient Religions Reborn from other mods, or were included with explicit permission from the creator. To use these you must seek the permission of the authors.
 
 - Tiered Imperial Reconquest System; by zijistark of the Historical Immersion Project.
-- ALL of our trait, decision, and religion icons; by AnaxXiphos of the Historical Immersion Project.
+- Most of our trait, decision, and religion icons; by AnaxXiphos of the Historical Immersion Project.
 - Nile River Floods event chain and modifiers; by cybrxkhan.
 - Horus Guard, Anubis Guard, and Paragon Xroj Flags; CK2+ Team.
 - Celtic, Hellenic, and Kemetic CoAs and Frames; jbelig.

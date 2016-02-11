@@ -66,7 +66,7 @@ pagan_group = {
 		psc_marriage = yes
 
 		aggression = 2.0 # AI aggression factor
-		short_reign_opinion_year_mult = 4 # The default is 2
+		short_reign_opinion_year_mult = 2
 
 		religious_clothing_priest = 5
 
@@ -182,7 +182,7 @@ pagan_group = {
 
 		aggression = 1.5 # AI aggression factor
 		
-		short_reign_opinion_year_mult = 3 # The default is 2
+		short_reign_opinion_year_mult = 1.5 # The default is 2
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
@@ -250,7 +250,7 @@ pagan_group = {
 		
 		dislike_tribal_organization = yes
 
-		short_reign_opinion_year_mult = 4 # The default is 2
+		short_reign_opinion_year_mult = 2
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3

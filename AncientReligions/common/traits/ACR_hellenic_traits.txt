@@ -48,7 +48,7 @@ epicurean = {
 		skeptic
 	}
 
-	opposite_opinion = -20
+	opposite_opinion = -10
 
 	ai_rationality = 20
 	ai_zeal = -50
@@ -88,7 +88,7 @@ stoic = {
 		skeptic
 	}
 
-	opposite_opinion = -20
+	opposite_opinion = -10
 
 	ai_rationality = 20
 	ai_greed = -20
@@ -127,7 +127,7 @@ skeptic = {
 		stoic
 	}
 
-	opposite_opinion = -20
+	opposite_opinion = -10
 
 	ai_rationality = 20
 	ai_zeal = -20

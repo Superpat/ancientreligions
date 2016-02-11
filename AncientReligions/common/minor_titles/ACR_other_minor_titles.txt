@@ -45,15 +45,13 @@ title_acr_champion = {
 		OR = {
 			is_female = no
 			AND = {
-				is_feminist = yes
+				is_feminist_trigger = yes
 				liege = { religion = PREV }
 			}
 			AND = {
 				liege = {
 					primary_title = {
-						OR = {
-							has_law = status_of_women_3
-						}
+						has_law = status_of_women_3
 					}
 				}
 				OR = {
@@ -110,15 +108,13 @@ title_master_arms = {
 		OR = {
 			is_female = no
 			AND = {
-				is_feminist = yes
+				is_feminist_trigger = yes
 				liege = { religion = PREV }
 			}
 			AND = {
 				liege = {
 					primary_title = {
-						OR = {
-							has_law = status_of_women_3
-						}
+						has_law = status_of_women_3
 					}
 				}
 				OR = {

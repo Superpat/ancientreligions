@@ -741,7 +741,7 @@ gender_laws = {
 								is_tribal = no
 								is_nomadic = no
 							}
-							is_feminist = yes
+							is_feminist_trigger = yes
 						}
 						is_merchant_republic = no
 						is_patrician = no
@@ -749,7 +749,7 @@ gender_laws = {
 					AND = {
 						has_dlc = "Zeus"
 						OR = {
-							is_feminist = true
+							is_feminist_trigger = true
 							culture = basque
 							ROOT = { holder_scope = { primary_title = { has_law = status_of_women_3 } } }
 							ROOT = { holder_scope = { primary_title = { has_law = status_of_women_4 } } }
@@ -825,7 +825,7 @@ gender_laws = {
 				OR = {
 					AND = {
 						NOT = { has_dlc = "Zeus" }
-						is_feminist = yes
+						is_feminist_trigger = yes
 						culture = basque
 					}
 					AND = {
@@ -843,9 +843,9 @@ gender_laws = {
 						OR = {
 							ROOT = { holder_scope = { primary_title = { has_law = status_of_women_4 } } }
 							AND = {
-								holder_scope = { primary_title = { has_law = status_of_women_2 } }
+								primary_title = { has_law = status_of_women_2 }
 								OR = {
-									is_feminist = yes
+									is_feminist_trigger = yes
 									culture = basque
 								}
 							}
@@ -885,7 +885,7 @@ gender_laws = {
 			OR = {
 				holder_scope = {
 					OR = {
-						is_feminist = yes
+						is_feminist_trigger = yes
 						culture = basque
 					}
 				}

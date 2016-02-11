@@ -17,9 +17,9 @@ can_be_mercenary_leader_potential_trigger = {
 	OR = {
 		is_female = no
 		AND = {
-			is_feminist = yes
+			is_feminist_trigger = yes
 			FROM = {
-				is_feminist = yes
+				is_feminist_trigger = yes
 			}
 		}
 		FROM = {
@@ -91,7 +91,7 @@ can_be_chancellor_trigger = {
 				is_female = no
 				trait = horse # So we can have female glitterhoofs! :D
 				AND = {
-					is_feminist = yes
+					is_feminist_trigger = yes
 					liege = { religion = PREV }
 				}
 				AND = {
@@ -149,16 +149,14 @@ can_be_marshal_trigger = {
 				is_female = no
 				trait = horse # So we can have female glitterhoofs! :D
 				AND = {
-					is_feminist = yes
+					is_feminist_trigger = yes
 					liege = { religion = PREV }
 				}
 
 				AND = {
 					liege = {
 						primary_title = {
-							OR = {
-								has_law = status_of_women_3
-							}
+							has_law = status_of_women_3
 						}
 					}
 					OR = {
@@ -198,7 +196,7 @@ can_be_treasurer_trigger = {
 				is_female = no
 				trait = horse # So we can have female glitterhoofs! :D
 				AND = {
-					is_feminist = yes
+					is_feminist_trigger = yes
 					liege = { religion = PREV }
 				}
 				AND = {
@@ -255,7 +253,7 @@ can_be_spymaster_trigger = {
 					}
 				}
 				AND = {
-					is_feminist = yes
+					is_feminist_trigger = yes
 					liege = { religion = PREV }
 				}
 				AND = {

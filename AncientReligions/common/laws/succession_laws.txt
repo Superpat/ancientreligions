@@ -554,7 +554,10 @@ succession_laws = {
 	}
 	succ_papal_succession = {
 		potential = {
-			title = k_papal_state
+			OR = { 
+				title = k_papal_state
+				title = d_celtic_pagan_reformed
+			}
 		}
 		
 		effect = {
@@ -741,7 +744,7 @@ gender_laws = {
 								is_tribal = no
 								is_nomadic = no
 							}
-							is_feminist_trigger = yes
+							is_feminist_religion_trigger = yes
 						}
 						is_merchant_republic = no
 						is_patrician = no
@@ -749,7 +752,7 @@ gender_laws = {
 					AND = {
 						has_dlc = "Zeus"
 						OR = {
-							is_feminist_trigger = true
+							is_feminist_religion_trigger = true
 							culture = basque
 							ROOT = { holder_scope = { primary_title = { has_law = status_of_women_3 } } }
 							ROOT = { holder_scope = { primary_title = { has_law = status_of_women_4 } } }
@@ -825,7 +828,7 @@ gender_laws = {
 				OR = {
 					AND = {
 						NOT = { has_dlc = "Zeus" }
-						is_feminist_trigger = yes
+						is_feminist_religion_trigger = yes
 						culture = basque
 					}
 					AND = {
@@ -845,7 +848,7 @@ gender_laws = {
 							AND = {
 								primary_title = { has_law = status_of_women_2 }
 								OR = {
-									is_feminist_trigger = yes
+									is_feminist_religion_trigger = yes
 									culture = basque
 								}
 							}
@@ -885,7 +888,7 @@ gender_laws = {
 			OR = {
 				holder_scope = {
 					OR = {
-						is_feminist_trigger = yes
+						is_feminist_religion_trigger = yes
 						culture = basque
 					}
 				}

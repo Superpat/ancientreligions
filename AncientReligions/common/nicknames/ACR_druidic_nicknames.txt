@@ -9,7 +9,7 @@
 
 # GIVEN BY TRAITS
 #################
-nick_the_wolf = {
+nick_the_wolf_acr = {
 	allow = {
 		NOT = { trait = craven }
 		trait = fian

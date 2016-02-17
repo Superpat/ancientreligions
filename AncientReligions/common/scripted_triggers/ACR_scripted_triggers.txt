@@ -1,4 +1,5 @@
-is_feminist_trigger = {
+# Character has a religion allowing women to hold councillor positions, equal succession laws, etc.
+is_feminist_religion_trigger = {
 	OR = {
 		religion = celtic_pagan_reformed
 		religion = celtic_pagan

@@ -4,21 +4,21 @@ coa_plain_hellenic;Hellenic Coat of Arms;;;;;;;;;;;;;x
 GOD_PLUTO;Pluto;Pluton;Pluto;;Pluto;;;;;;;;;x
 GOD_JUNO;Juno;Junon;Juno;;Juno;;;;;;;;;x
 GOD_JUNO_byzantine;Hera;Héra;Hera;;Hera;;;;;;;;;x
-GOD_VESTA;Vesta;Vesta;Vesta;;Vesta;;;;;;;;;x
+#GOD_VESTA;Vesta;Vesta;Vesta;;Vesta;;;;;;;;;x
 GOD_VESTA_byzantine;Hestia;Hestia;Hestia;;Hestia;;;;;;;;;x
-GOD_MINERVA;Minerva;Minerve;Minerva;;Minerva;;;;;;;;;x
+#GOD_MINERVA;Minerva;Minerve;Minerva;;Minerva;;;;;;;;;x
 GOD_MINERVA_byzantine;Athena;Athéna;Athene;;Atenea;;;;;;;;;x
 GOD_CERES;Ceres;Cérès;Ceres;;Ceres;;;;;;;;;x
 GOD_CERES_byzantine;Demeter;Déméter;Demeter;;Deméter;;;;;;;;;x
 GOD_DIANA;Diana;Diane;Diana;;Diana;;;;;;;;;x
 GOD_DIANA_byzantine;Artemis;Artémis;Artemis;;Artemisa;;;;;;;;;x
-GOD_VENUS;Venus;Vénus;Venus;;Venus;;;;;;;;;x
+#GOD_VENUS;Venus;Vénus;Venus;;Venus;;;;;;;;;x
 GOD_VENUS_byzantine;Aphrodite;Aphrodite;Aphrodite;;Afrodita;;;;;;;;;x
-GOD_MARS;Mars;Mars;Mars;;Marte;;;;;;;;;x
+#GOD_MARS;Mars;Mars;Mars;;Marte;;;;;;;;;x
 GOD_MARS_byzantine;Ares;Arès;Ares;;Ares;;;;;;;;;x
-GOD_MERCURY;Mercury;Mercure;Mercurius;;Mercurio;;;;;;;;;x
+#GOD_MERCURY;Mercury;Mercure;Mercurius;;Mercurio;;;;;;;;;x
 GOD_MERCURY_byzantine;Hermes;Hermès;Hermes;;Hermes;;;;;;;;;x
-GOD_JUPITER;Jupiter;Jupiter;Jupiter;;Júpiter;;;;;;;;;x
+#GOD_JUPITER;Jupiter;Jupiter;Jupiter;;Júpiter;;;;;;;;;x
 GOD_JUPITER_byzantine;Zeus;Zeus;Zeus;;Zeus;;;;;;;;;x
 GOD_NEPTUNE;Neptune;Neptune;Neptun;;Neptuno;;;;;;;;;x
 GOD_NEPTUNE_byzantine;Poseidon;Poséidon;Poseidon;;Poseidón;;;;;;;;;x
@@ -26,7 +26,6 @@ GOD_VULCAN;Vulcan;Vulcain;Vulcanus;;Vulcano;;;;;;;;;x
 GOD_VULCAN_byzantine;Hephaestus;Héphaïstos;Hephaistos;;Hefesto;;;;;;;;;x
 GOD_APOLLO;Apollo;Apollon;Apollon;;Apolo;;;;;;;;;x
 THE_THEOGONY;The Theogony;La Théogonie;Die Theogonie;;La Teogonía;;;;;;;;;x
-hellenic_pagan_DESC;The Hellenistic religion is polytheistic, with a pantheon of twelve major gods including Jupiter, Mars, Mercury, Venus, Minerva and Vesta. It originated in ancient Greece and with the conquests of Alexander the Great and the Roman Empire, it would go on to become the dominant religion in the Mediterranean world until the rise of Christendom.;L'hellénisme est polythéiste, avec un panthéon de douze dieux majeurs incluant Jupiter, Mars, Mercure, Venus, Minerve et Vesta. Il est originaire de la Grèce antique et avec les conquête d'Alexandre le Grand et l'Empire romain, allait devenir la religion dominante autour de la Méditerranée jusqu'à la montée du Christianisme.;;;;;;;;;;;;x
 hellenic_pagan_FEATURES;§Y*§! Can try to reconquer the land of the old Roman Empire from non-pagan rulers.\n§Y*§! Can liberate Italian and Greek provinces from non-pagan rulers.;§Y*§! Peut tenter de recapturer les terres du vieil Empire romain dirigées par des non païens.\n§Y*§! Peut libérer les provinces italiennes et grecques dirigées par des non païens.;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 stoic;Stoic;;;;;;;;;;;;;x
@@ -98,7 +97,7 @@ job_chancellor_hellenic_pagan;Magister Officiorum;Magister Officiorum;;;;;;;;;;;
 job_marshal_hellenic_pagan;Magister Militum;Magister Militum;;;;;;;;;;;;x
 job_marshal_hellenic_pagan_byzantine;Stratelates;Stratelates;;;;;;;;;;;;x
 job_treasurer_hellenic_pagan;Quaestor;Quaestor;;;;;;;;;;;;x
-job_spiritual_hellenic_pagan;Augur;Augure;;;;;;;;;;;;x
+#job_spiritual_hellenic_pagan;Augur;Augure;;;;;;;;;;;;x
 city_job_chancellor_hellenic_pagan;Magister Officiorum;Magister Officiorum;;;;;;;;;;;;x
 city_job_marshal_hellenic_pagan;Magister Militum;Magister Militum;;;;;;;;;;;;x
 city_job_marshal_hellenic_pagan_byzantine;Stratelates;Stratelates;;;;;;;;;;;;x

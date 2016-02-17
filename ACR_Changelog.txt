@@ -1,5 +1,14 @@
+2016-2-16 v0.37.2 "Aetna"
+-------------------------
+
+General:
+- Merge tactics from 2.5.1
+- Fix bug relating to Hellenic EREmperors being unable to reform the empire.
+- Fix localization overrides not being used.
+
 2016-2-10 v0.37.1 "Cecrops"
 -------------------------
+
 
 General:
 - Compatability with CK2 2.5.1

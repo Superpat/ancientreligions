@@ -1,20 +1,14 @@
-2016-? v0.37.2
+2016-2-16 v0.37.2 "Aetna"
 -------------------------
 
 General:
-- Merge 00_combat_tactics.txt with patch 2.5.1
-- Fix override of vanilla localization keys, by using separate file zz_ACR_override.csv that comes last in load order
-
-Celtic:
-- Re-activate the Circle of Druids for Druidic religion
-- Use new generic icon for "open cardinal screen"
-- Fix conflict with vanilla nickname nick_the_wolf
-
-Titan Cult:
-- Fix some localization encoding issue
+- Merge tactics from 2.5.1
+- Fix bug relating to Hellenic EREmperors being unable to reform the empire.
+- Fix localization overrides not being used.
 
 2016-2-10 v0.37.1 "Cecrops"
 -------------------------
+
 
 General:
 - Compatability with CK2 2.5.1

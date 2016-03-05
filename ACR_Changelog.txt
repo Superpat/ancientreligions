@@ -1,3 +1,15 @@
+2016-3-5 v0.37.3 "Tullius"
+-------------------------
+
+General:
+- Update to 2.5.2
+- Factored in the existence of the Feeble, Dull, Shrewd, and Robust traits for events and decisions, where appropriate.
+- Fixed bug in Pagan Subjugation that allowed vassals who subjugate another realm of equal or greater rank to their liege to become independent, which had been introduced in Cecrops.
+- Used new infamy modifier for custom CBs.
+ - Hellenic County Liberation = 75% Infamy
+ - Hellenic Reconquest = 85% Infamy
+ - Promethean Expansion gets no modification.
+
 2016-2-16 v0.37.2 "Aetna"
 -------------------------
 
@@ -8,7 +20,6 @@ General:
 
 2016-2-10 v0.37.1 "Cecrops"
 -------------------------
-
 
 General:
 - Compatability with CK2 2.5.1

@@ -1012,7 +1012,7 @@ decisions = {
 			}
 			modifier = {
 				factor = 0.5
-				trait = slow
+				is_dumb_trigger = yes
 			}
 			modifier = {
 				factor = 0.1
@@ -1024,10 +1024,10 @@ decisions = {
 			}
 			modifier = {
 				factor = 2.0
-				trait = quick
-			}
+				is_smart_trigger = yes
+			} # \/ These two /\ stack to give genius x4
 			modifier = {
-				factor = 4.0
+				factor = 2.0
 				trait = genius
 			}
 			modifier = {

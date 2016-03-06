@@ -1,3 +1,11 @@
+2016-?-? v?.??.? ???
+-------------------------
+
+General:
+
+Celtic:
+- Fixed some backward mtth modifiers in Aonach Tailteann events.
+
 2016-3-5 v0.37.3 "Tullius"
 -------------------------
 

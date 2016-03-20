@@ -2000,7 +2000,7 @@ character_event = {
 		is_abroad = no
 		any_spouse = {
 			is_adult = yes
-			NOR = { 
+			NOR = {
 				age = 40
 				trait = incapable
 				trait = inbred
@@ -2080,9 +2080,7 @@ character_event = {
 				chance = 25
 			}
 			random = {			
-				spouse = {
-					impregnate = ROOT
-				}
+				impregnate = ROOT
 				chance = 25
 			}
 			opinion = {

@@ -2984,7 +2984,7 @@ narrative_event = {
 			}
 		}
 	}
-	option = { #be an arrogant dick - choose only if you didn't learn anything from Greek mythology
+	option = { #be an arrogant dick - choose only if you didn't learn anything from Greek mythology and/or are roleplaying and/or suicidal
 		name = ancrel.4251.c
 		custom_tooltip = { text = VIET_artemis_response_possibility }
 		hidden_tooltip = {
@@ -3373,9 +3373,9 @@ character_event = {
 		}
 	}
 	
-	weight_multiplier = {
-		days = 1
-	}
+	#weight_multiplier = {
+	#	days = 1
+	#}
 
 	option = { # I-i-it's not like I care about Artemis or anything, she's just a random god I worship
 		name = ancrel.4265.a
@@ -3512,9 +3512,9 @@ character_event = {
 		}
 	}
 	
-	weight_multiplier = {
-		days = 1
-	}
+	#weight_multiplier = {
+	#	days = 1
+	#}
 	
 	immediate = {
 		set_character_flag =  VIET_hunted_with_artemis_twice
@@ -3928,6 +3928,7 @@ character_event = {
 			trait = wounded
 			trait = blinded
 			trait = eunuch
+			#trait = lunatic
 		}
 	}
 	
@@ -4372,7 +4373,7 @@ narrative_event = {
 
 
 
-# Artemis and you are chattnig when Zeus interrupts
+# Artemis and you are chatting when Zeus interrupts
 character_event = {
 	id = ancrel.4288
 	desc = ancrel.4288.desc
@@ -4901,6 +4902,10 @@ narrative_event = {
 }
 
 
+##############################################
+# Artemis Event Chain Heroic Deed Events
+##############################################
+
 
 # Wild Boar Spotted
 character_event = {
@@ -5240,7 +5245,7 @@ character_event = {
 
 
 
-# Artemis helps you recover from illnesses
+# Artemis helps you recover from illnesses - might need to be changed for upcoming DLC
 character_event = {
 	id = ancrel.4311
 	#title = ancrel.4311.title
@@ -5373,6 +5378,7 @@ narrative_event = {
 		OR = {
 			trait = incapable
 			trait = infirm
+			trait = lunatic
 		}
 	}
 	
@@ -5405,6 +5411,12 @@ narrative_event = {
 				trait = infirm
 			}
 			remove_trait = infirm
+		}
+		if = {
+			limit = {
+				trait = lunatic
+			}
+			remove_trait = lunatic
 		}
 	}
 }
@@ -5636,9 +5648,10 @@ character_event = {
 	}	
 	option = {# kill the offenders
 		name = ancrel.4315.c
-		random = {
-			add_trait = zealous
-			chance = 25
+		random_list = {
+			10 = { add_trait = zealous }
+			15 = { add_trait = wroth }
+			75 = {}
 		}
 		hidden_tooltip = {
 			character_event = { id = ancrel.4316 }

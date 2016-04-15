@@ -5,7 +5,8 @@
 #
 # Event ID ancrel.4000 - ancrel.4009 Decision Events
 # Event ID ancrel.4010 - ancrel.4019 Sed festival
-# Event ID ancrel.4100 - ancrel.4149 Nile Flooding
+# Event ID ancrel.4100 - ancrel.4199 Nile Flooding
+# Event ID ancrel.4200 - ancrel.4399 Kemetic Revival
 ###################################################
 
 namespace = ancrel
@@ -2600,3 +2601,71 @@ character_event = {
 		prestige = 5
 	}
 }
+
+###################################
+#
+# Ancient Religions
+# - Kemetic Revival Events
+#
+# ancrel.4200 - ancrel.4399 Flavor Events
+#
+# Author: theStormWeaver/la_xirsoi
+#
+###################################
+
+###################
+## Desert Nomads ##
+###################
+# you are on pilgrimage/hajj and get caught in a sandstorm
+character_event = {
+	id = ancrel.4200
+}
+
+# seperated from the caravan, you spot what looks like a building
+character_event = {
+	id = ancrel.4201
+}
+
+# the 'building' is just a rocky outcroping, you must decide to move on or use it as shelter
+character_event = {
+	id = ancrel.4202
+}
+
+# the building is on the outskirts of a small village, you are saved!
+character_event = {
+	id = ancrel.4203
+}
+
+# as the storm rages on and the chill of night sets in, you slip into unconsciousness
+character_event = {
+	id = ancrel.4204
+}
+
+# you awaken two days later in a tent that reeks of camels, you are saved by nomads!
+character_event = {
+	id = ancrel.4205
+}
+
+# you learn the tribe that saved you adhere to the ways of the Old Gods, and that there are many more in the desert
+character_event = {
+	id = ancrel.4206
+}
+
+# you accept the ways of the old gods, and bring these nomads with you as a new honor guard
+character_event = {
+	id = ancrel.4207
+}
+
+# you reject there ways, and return to your people
+character_event = {
+	id = ancrel.4208
+}
+
+#########################
+## Surveying a Pyramid ##
+#########################
+
+
+############################
+## Lost Heir of Cleopatra ##
+############################

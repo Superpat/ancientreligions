@@ -2630,9 +2630,9 @@ character_event = {
 	trigger = {
 		NOT = { has_character_flag = lost_in_sandstorm }
 		OR = {
-			has_trait = on_hajj
+			trait = on_hajj
 			AND = {
-				has_trait = on_pilgrimage
+				trait = on_pilgrimage
 				OR = {
 					has_character_flag = pilgrimage_to_jerusalem
 					has_character_flag = pilgrimage_to_antioch
@@ -2643,7 +2643,7 @@ character_event = {
 	}
 
 	immediate = {
-		add_character_flag = lost_in_sandstorm
+		set_character_flag = lost_in_sandstorm
 	}
 
 	mean_time_to_happen = {
@@ -2663,7 +2663,7 @@ character_event = {
 	}
 }
 
-# seperated from the caravan, you spot what looks like a building
+# seperated from the caravan, you spot a shadow that looks like a building
 character_event = {
 	id = ancrel.4201
 	desc = ancrel.4201.desc
@@ -2676,7 +2676,7 @@ character_event = {
 		custom_tooltip = {
 			text = ancrel.4201.a.tt
 			hidden_tooltip = {
-				random = {
+				random_list = {
 					10 = { character_event = { id = ancrel.4202 } }
 					10 = { character_event = { id = ancrel.4203 } }
 				}
@@ -2685,7 +2685,7 @@ character_event = {
 	}
 }
 
-# the 'building' is just a rocky outcroping, you must decide to move on or use it as shelter
+# the shadow is a temple that hums with ancient power
 character_event = {
 	id = ancrel.4202
 	desc = ancrel.4202.desc
@@ -2698,17 +2698,10 @@ character_event = {
 		custom_tooltip = {
 			text = ancrel.4202.a.tt
 			character_event = { id = ancrel.4209 }
-		}
-	}
-
-	option = { # take shelter
-		name = ancrel.4202.b
-		custom_tooltip = {
-			text = ancrel.4202.b.tt
-			random = {
+			random_list = {
 				90 = { character_event = { id = ancrel.4209 } }
 				10 = {
-					remove_character_flag = lost_in_sandstorm
+					clr_character_flag = lost_in_sandstorm
 					if = {
 						limit = {
 							religion_group = muslim
@@ -2722,12 +2715,22 @@ character_event = {
 						death = { death_reason = death_on_pilgrimage }
 					}
 				}
+			}			
+		}
+	}
+
+	option = { # take shelter
+		name = ancrel.4202.b
+		custom_tooltip = {
+			text = ancrel.4202.b.tt
+			hidden_tooltip = {
+				character_event = { id = ancrel.4204}
 			}
 		}
 	}
 }
 
-# the building is on the outskirts of a small village, you are saved!
+# the building is an inn on the pilgrim's highway, you're saved!
 character_event = {
 	id = ancrel.4203
 	desc = ancrel.4203.desc
@@ -2736,7 +2739,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		remove_character_flag = lost_in_sandstorm
+		clr_character_flag = lost_in_sandstorm
 	}
 
 	option = {
@@ -2744,7 +2747,7 @@ character_event = {
 	}
 }
 
-# as the storm rages on and the chill of night sets in, you slip into unconsciousness
+# as the storm rages on an old man enters the temple
 character_event = {
 	id = ancrel.4204
 	desc = ancrel.4204.desc
@@ -2761,7 +2764,8 @@ character_event = {
 	}
 }
 
-# you awaken two days later in a tent that reeks of camels, you are saved by nomads!
+# you learn the old man is from one of many tribes in the desert
+# that still worship the old gods
 character_event = {
 	id = ancrel.4205
 	desc = ancrel.4205.desc
@@ -2778,8 +2782,9 @@ character_event = {
 	}
 }
 
-# the hetman of the tribe implies that the old gods have guided you to the tribe
-character_event = {
+# the old man implies that "old man Set" has guided you here
+# it is your destiny to find this temple
+long_character_event = {
 	id = ancrel.4206
 	desc = ancrel.4206.desc
 	picture = GFX_evt_nomad_camp
@@ -2787,7 +2792,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		remove_character_flag = lost_in_sandstorm
+		clr_character_flag = lost_in_sandstorm
 	}
 
 	option = { # accept the ways of the old gods as your own
@@ -2811,7 +2816,7 @@ character_event = {
 	}
 }
 
-# finish the hajj (cause it can't be stopped), then convert
+# finish the hajj/pilgrimage (cause it can't be stopped), then convert
 character_event = {
 	id = ancrel.4207
 	desc = ancrel.4207.desc
@@ -2820,25 +2825,197 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = ancrel.420
+		name = ancrel.4207.a
+		custom_tooltip = {
+			text = ancrel.4207.a.tt
+			hidden_tooltip = {
+				character_event = { id = ancrel.4210 days = 30 }
+			}
+		}
 	}
 }
 
 # you reject there ways, and return to your people
 character_event = {
 	id = ancrel.4208
+	desc = ancrel.4208.desc
+	picture = GFX_evt_nomad_camp
+
+	is_triggered_only = yes
+
+	immediate = {
+		clr_character_flag = lost_in_sandstorm
+	}
+
+	option = {
+		name = ancrel.4208.a
+		random = {
+			chance = 20
+			add_trait = zealous
+		}
+	}
 }
 
-# after moving on from the outcropping, you eventually find your caravan and move on
+# after avoiding the temple, you find your caravan and continue the journey
 character_event = {
 	id = ancrel.4209
+	desc = ancrel.4209.desc
+	picture = GFX_evt_desert
+
+	is_triggered_only = yes
+
+	immediate = {
+		clr_character_flag = lost_in_sandstorm
+	}
+
+	option = {
+		name = ancrel.4209.a
+	}
 }
 
 # the tribes come to your banner (attrition-less event troops) and you finally convert
 character_event = {
 	id = ancrel.4210
 	desc = ancrel.4210.desc
-	
+	picture = GFX_evt_warrior_banners
+
+	is_triggered_only = yes
+
+	immediate = {
+		clr_character_flag = lost_in_sandstorm
+	}
+
+	option = {
+		name = ancrel.4210.a
+		religion = egyptian_pagan
+		
+		# tribal chief 1
+		create_character = {
+			name = "Menkhaf"
+			female = no
+			age = 42
+			culture = bedouin_arabic
+			religion = egyptian_pagan
+			attributes = {
+			    martial = 12
+			    diplomacy = 6
+			    stewardship = 9
+			    intrigue = 8
+			    learning = 6
+			}
+			trait = zealous
+			trait = cavalry_leader
+			trait = holy_warrior
+			trait = mystic
+			trait = skilled_tactician
+		}
+		new_character = {
+			spawn_unit = {
+			  owner = ROOT
+			  province = ROOT
+			  home = ROOT
+			  leader = THIS
+			  troops = {
+			    light_cavalry = { 600 600 }
+			    horse_archers = { 400 400 }
+			  }
+			  attrition = 0
+			  disband_on_peace = no
+			  cannot_inherit = yes
+			  maintenance_multiplier = 0.5
+			}
+		}
+		# tribal chief 2
+		create_character = {
+			name = "Sihathor"
+			female = no
+			age = 32
+			culture = bedouin_arabic
+			religion = egyptian_pagan
+			attributes = {
+				martial = 12
+				diplomacy = 6
+				stewardship = 6
+				intrigue = 12
+				learning = 8
+			}
+			trait = zealous
+			trait = cavalry_leader
+			trait = desert_terrain_leader
+			trait = tough_soldier
+		}
+		new_character = {
+			spawn_unit = {
+			  owner = ROOT
+			  province = ROOT
+			  home = ROOT
+			  leader = THIS
+			  troops = {
+			    light_cavalry = { 600 600 }
+			    horse_archers = { 400 400 }
+			  }
+			  attrition = 0
+			  disband_on_peace = no
+			  cannot_inherit = yes
+			  maintenance_multiplier = 0.5
+			}
+		}
+		# tribal chief 3
+		create_character = {
+			name = "Wenishezmu"
+			female = no
+			age = 29
+			culture = bedouin_arabic
+			religion = egyptian_pagan
+			attributes = {
+				martial = 9
+				diplomacy = 8
+				stewardship = 6
+				intrigue = 8
+				learning = 12
+			}
+			trait = zealous
+			trait = cavalry_leader
+			trait = rough_terrain_leader
+			trait = tough_soldier
+		}
+		new_character = {
+			spawn_unit = {
+			  owner = ROOT
+			  province = ROOT
+			  home = ROOT
+			  leader = THIS
+			  troops = {
+			    light_cavalry = { 600 600 }
+			    horse_archers = { 400 400 }
+			  }
+			  attrition = 0
+			  disband_on_peace = no
+			  cannot_inherit = yes
+			  maintenance_multiplier = 0.5
+			}
+		}
+		# the old man
+		create_character = {
+			name = "Merptah"
+			has_nickname = nick_the_old
+			female = no
+			age = 55
+			culture = bedouin_arabic
+			religion = egyptian_pagan
+			attributes = {
+				martial = 3
+				diplomacy = 8
+				stewardship = 5
+				intrigue = 7
+				learning = 10
+			}
+			trait = zealous
+			trait = mastermind_theologian
+			trait = mystic
+			trait = kind
+		}
+	}
 }
 
 #########################

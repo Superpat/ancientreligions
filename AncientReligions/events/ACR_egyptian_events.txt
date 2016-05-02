@@ -2628,7 +2628,11 @@ character_event = {
 	prisoner = no
 
 	trigger = {
-		NOT = { has_character_flag = lost_in_sandstorm }
+		NOR = { 
+			has_character_flag = lost_in_sandstorm
+			has_character_flag = awaiting_the_tribes
+			primary_title = { is_landless_type_title = yes }
+		}
 		OR = {
 			trait = on_hajj
 			AND = {
@@ -2653,6 +2657,11 @@ character_event = {
 			factor = 5
 			ai = yes  # even less common for ai
 		}
+		modifier = { # assured if a player in debug mode
+			factor = 0.01
+			ai = no
+			has_global_flag = ancrel_debug
+		}		
 	}
 
 	option = { # may <god> guide me
@@ -2678,7 +2687,14 @@ character_event = {
 			hidden_tooltip = {
 				random_list = {
 					10 = { character_event = { id = ancrel.4202 } }
-					10 = { character_event = { id = ancrel.4203 } }
+					10 = {
+						character_event = { id = ancrel.4203 }
+						modifier = {
+							factor = 0
+							ai = no
+							has_global_flag = ancrel_debug
+						}
+					}
 				}
 			}
 		}
@@ -2697,25 +2713,26 @@ character_event = {
 		name = ancrel.4202.a
 		custom_tooltip = {
 			text = ancrel.4202.a.tt
-			character_event = { id = ancrel.4209 }
-			random_list = {
-				90 = { character_event = { id = ancrel.4209 } }
-				10 = {
-					clr_character_flag = lost_in_sandstorm
-					if = {
-						limit = {
-							religion_group = muslim
+			hidden_tooltip = {
+				random_list = {
+					90 = { character_event = { id = ancrel.4209 } }
+					10 = {
+						clr_character_flag = lost_in_sandstorm
+						if = {
+							limit = {
+								religion_group = muslim
+							}
+							death = { death_reason = death_on_hajj }
 						}
-						death = { death_reason = death_on_hajj }
-					}
-					if = {
-						limit = {
-							religion_group = christian
+						if = {
+							limit = {
+								religion_group = christian
+							}
+							death = { death_reason = death_on_pilgrimage }
 						}
-						death = { death_reason = death_on_pilgrimage }
 					}
 				}
-			}			
+			}
 		}
 	}
 
@@ -2759,7 +2776,7 @@ character_event = {
 		name = ancrel.4204.a
 		custom_tooltip = {
 			text = ancrel.4204.a.tt
-			character_event = { id = ancrel.4205 days = 2 }
+			hidden_tooltip = { character_event = { id = ancrel.4205 days = 2 } }
 		}
 	}
 }
@@ -2777,7 +2794,7 @@ character_event = {
 		name = ancrel.4205.a
 		custom_tooltip = {
 			text = ancrel.4205.a.tt
-			character_event = { id = ancrel.4206 days = 1 }
+			hidden_tooltip = { character_event = { id = ancrel.4206 days = 1 } }
 		}
 	}
 }
@@ -2829,7 +2846,7 @@ character_event = {
 		custom_tooltip = {
 			text = ancrel.4207.a.tt
 			hidden_tooltip = {
-				character_event = { id = ancrel.4210 days = 30 }
+				character_event = { id = ancrel.4210 days = 60 }
 			}
 		}
 	}
@@ -2887,133 +2904,192 @@ character_event = {
 
 	option = {
 		name = ancrel.4210.a
+		if = {
+			limit = {
+				d_shiite = {
+					holder = ROOT
+				}
+			}
+			unsafe_destroy_landed_title = d_shiite
+		}
+		if = {
+			limit = {
+				d_sunni = {
+					holder = ROOT
+				}
+			}
+			unsafe_destroy_landed_title = d_sunni
+		}
+		if = {
+			limit = {
+				d_yazidi = {
+					holder = ROOT
+				}
+			}
+			unsafe_destroy_landed_title = d_yazidi
+		}
+		if = {
+			limit = {
+				d_ibadi = {
+					holder = ROOT
+				}
+			}
+			unsafe_destroy_landed_title = d_ibadi
+		}
+		if = {
+			limit = {
+				d_kharijite = {
+					holder = ROOT
+				}
+			}
+			unsafe_destroy_landed_title = d_kharijite
+		}
+		if = {
+			limit = {
+				d_hurufi = {
+					holder = ROOT
+				}
+			}
+			unsafe_destroy_landed_title = d_hurufi
+		}
+
 		religion = egyptian_pagan
 		
-		# tribal chief 1
-		create_character = {
-			name = "Menkhaf"
-			female = no
-			age = 42
-			culture = bedouin_arabic
-			religion = egyptian_pagan
-			attributes = {
-			    martial = 12
-			    diplomacy = 6
-			    stewardship = 9
-			    intrigue = 8
-			    learning = 6
+		primary_title = { 
+			ROOT = {
+				capital_scope = {
+					# tribal chief 1
+					create_character = {
+						name = "Menkhaf"
+						female = no
+						age = 42
+						culture = bedouin_arabic
+						religion = egyptian_pagan
+						employer = PREVPREV
+						attributes = {
+						    martial = 12
+						    diplomacy = 6
+						    stewardship = 9
+						    intrigue = 8
+						    learning = 6
+						}
+						trait = zealous
+						trait = cavalry_leader
+						trait = holy_warrior
+						trait = mystic
+						trait = skilled_tactician
+					}
+					new_character = {
+						spawn_unit = {
+						  owner = ROOT
+						  province = PREV
+						  home = PREV
+						  leader = THIS
+						  troops = {
+						    light_cavalry = { 600 600 }
+						    horse_archers = { 400 400 }
+						  }
+						  attrition = 0
+						  disband_on_peace = no
+						  cannot_inherit = yes
+						  maintenance_multiplier = 0.5
+						}
+					}
+					# tribal chief 2
+					create_character = {
+						name = "Sihathor"
+						female = no
+						age = 32
+						culture = bedouin_arabic
+						religion = egyptian_pagan
+						employer = PREVPREVPREV
+						attributes = {
+							martial = 12
+							diplomacy = 6
+							stewardship = 6
+							intrigue = 12
+							learning = 8
+						}
+						trait = zealous
+						trait = cavalry_leader
+						trait = desert_terrain_leader
+						trait = tough_soldier
+					}
+					new_character = {
+						spawn_unit = {
+						  owner = ROOT
+						  province = PREV
+						  home = PREV
+						  leader = THIS
+						  troops = {
+						    light_cavalry = { 600 600 }
+						    horse_archers = { 400 400 }
+						  }
+						  attrition = 0
+						  disband_on_peace = no
+						  cannot_inherit = yes
+						  maintenance_multiplier = 0.5
+						}
+					}
+					# tribal chief 3
+					create_character = {
+						name = "Wenishezmu"
+						female = no
+						age = 29
+						culture = bedouin_arabic
+						religion = egyptian_pagan
+						employer = PREVPREVPREV
+						attributes = {
+							martial = 9
+							diplomacy = 8
+							stewardship = 6
+							intrigue = 8
+							learning = 12
+						}
+						trait = zealous
+						trait = cavalry_leader
+						trait = rough_terrain_leader
+						trait = tough_soldier
+					}
+					new_character = {
+						spawn_unit = {
+						  owner = ROOT
+						  province = PREV
+						  home = PREV
+						  leader = THIS
+						  troops = {
+						    light_cavalry = { 600 600 }
+						    horse_archers = { 400 400 }
+						  }
+						  attrition = 0
+						  disband_on_peace = no
+						  cannot_inherit = yes
+						  maintenance_multiplier = 0.5
+						}
+					}
+					# the old man
+					create_character = {
+						name = "Merptah"
+						has_nickname = nick_the_old
+						female = no
+						age = 55
+						culture = bedouin_arabic
+						religion = egyptian_pagan
+						employer = PREVPREVPREV
+						attributes = {
+							martial = 3
+							diplomacy = 8
+							stewardship = 5
+							intrigue = 7
+							learning = 10
+						}
+						trait = zealous
+						trait = mastermind_theologian
+						trait = mystic
+						trait = kind
+					}
+				} 
 			}
-			trait = zealous
-			trait = cavalry_leader
-			trait = holy_warrior
-			trait = mystic
-			trait = skilled_tactician
-		}
-		new_character = {
-			spawn_unit = {
-			  owner = ROOT
-			  province = ROOT
-			  home = ROOT
-			  leader = THIS
-			  troops = {
-			    light_cavalry = { 600 600 }
-			    horse_archers = { 400 400 }
-			  }
-			  attrition = 0
-			  disband_on_peace = no
-			  cannot_inherit = yes
-			  maintenance_multiplier = 0.5
-			}
-		}
-		# tribal chief 2
-		create_character = {
-			name = "Sihathor"
-			female = no
-			age = 32
-			culture = bedouin_arabic
-			religion = egyptian_pagan
-			attributes = {
-				martial = 12
-				diplomacy = 6
-				stewardship = 6
-				intrigue = 12
-				learning = 8
-			}
-			trait = zealous
-			trait = cavalry_leader
-			trait = desert_terrain_leader
-			trait = tough_soldier
-		}
-		new_character = {
-			spawn_unit = {
-			  owner = ROOT
-			  province = ROOT
-			  home = ROOT
-			  leader = THIS
-			  troops = {
-			    light_cavalry = { 600 600 }
-			    horse_archers = { 400 400 }
-			  }
-			  attrition = 0
-			  disband_on_peace = no
-			  cannot_inherit = yes
-			  maintenance_multiplier = 0.5
-			}
-		}
-		# tribal chief 3
-		create_character = {
-			name = "Wenishezmu"
-			female = no
-			age = 29
-			culture = bedouin_arabic
-			religion = egyptian_pagan
-			attributes = {
-				martial = 9
-				diplomacy = 8
-				stewardship = 6
-				intrigue = 8
-				learning = 12
-			}
-			trait = zealous
-			trait = cavalry_leader
-			trait = rough_terrain_leader
-			trait = tough_soldier
-		}
-		new_character = {
-			spawn_unit = {
-			  owner = ROOT
-			  province = ROOT
-			  home = ROOT
-			  leader = THIS
-			  troops = {
-			    light_cavalry = { 600 600 }
-			    horse_archers = { 400 400 }
-			  }
-			  attrition = 0
-			  disband_on_peace = no
-			  cannot_inherit = yes
-			  maintenance_multiplier = 0.5
-			}
-		}
-		# the old man
-		create_character = {
-			name = "Merptah"
-			has_nickname = nick_the_old
-			female = no
-			age = 55
-			culture = bedouin_arabic
-			religion = egyptian_pagan
-			attributes = {
-				martial = 3
-				diplomacy = 8
-				stewardship = 5
-				intrigue = 7
-				learning = 10
-			}
-			trait = zealous
-			trait = mastermind_theologian
-			trait = mystic
-			trait = kind
 		}
 	}
 }

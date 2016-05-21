@@ -2734,6 +2734,27 @@ character_event = {
 				}
 			}
 		}
+
+		ai_chance = {
+			factor = 50
+
+			modifier = {
+				factor = 1.2
+				trait = craven
+			}
+			modifier = {
+				factor = 1.2
+				trait = zealous
+			}
+			modifier = {
+				factor = 1.2
+				trait = paranoid
+			}
+			modifier = {
+				factor = 1.2
+				trait = slothful
+			}
+		}
 	}
 
 	option = { # take shelter
@@ -2742,6 +2763,27 @@ character_event = {
 			text = ancrel.4202.b.tt
 			hidden_tooltip = {
 				character_event = { id = ancrel.4204}
+			}
+		}
+
+		ai_chance = {
+			factor = 50
+
+			modifier = {
+				factor = 1.2
+				trait = brave
+			}
+			modifier = {
+				factor = 1.2
+				trait = cynical
+			}
+			modifier = {
+				factor = 1.2
+				trait = trusting
+			}
+			modifier = {
+				factor = 1.2
+				trait = diligent
 			}
 		}
 	}
@@ -2820,6 +2862,30 @@ long_character_event = {
 				character_event = { id = ancrel.4207 }
 			}
 		}
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 1.2
+				trait = proud
+			}
+			modifier = {
+				factor = 1.2
+				trait = cynical
+			}
+			modifier = {
+				factor = 1.2
+				trait = brave
+			}
+			modifier = {
+				factor = 1.2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 1.2
+				trait = ambitious
+			}
+		}
 	}
 
 	option = { # reject the pagans, and continue on your journey
@@ -2828,6 +2894,26 @@ long_character_event = {
 			text = ancrel.4206.b.tt
 			hidden_tooltip = {
 				character_event = { id = ancrel.4208 }
+			}
+		}
+
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 1.2
+				trait = humble
+			}
+			modifier = {
+				factor = 1.2
+				trait = zealous
+			}
+			modifier = {
+				factor = 1.2
+				trait = craven
+			}
+			modifier = {
+				factor = 1.2
+				trait = content
 			}
 		}
 	}
@@ -3002,7 +3088,7 @@ character_event = {
 						age = 32
 						culture = bedouin_arabic
 						religion = egyptian_pagan
-						employer = PREVPREVPREV
+						employer = PREVPREV
 						attributes = {
 							martial = 12
 							diplomacy = 6
@@ -3038,7 +3124,7 @@ character_event = {
 						age = 29
 						culture = bedouin_arabic
 						religion = egyptian_pagan
-						employer = PREVPREVPREV
+						employer = PREVPREV
 						attributes = {
 							martial = 9
 							diplomacy = 8
@@ -3075,7 +3161,7 @@ character_event = {
 						age = 55
 						culture = bedouin_arabic
 						religion = egyptian_pagan
-						employer = PREVPREVPREV
+						employer = PREVPREV
 						attributes = {
 							martial = 3
 							diplomacy = 8

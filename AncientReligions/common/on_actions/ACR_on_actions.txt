@@ -21,7 +21,8 @@ on_yearly_pulse = {
 		100 = ancrel.4160 # someone has dared to kill a cat
 		100 = ancrel.4161 # be nice to girls (?)
 		100 = ancrel.4162 # Senet game
-		10  = ancrel.4166
+		10  = ancrel.4166 # ghost of akhenaten?
+		100 = ancrel.4215 # ancient tomb entrance discovered
 	}
 }
 

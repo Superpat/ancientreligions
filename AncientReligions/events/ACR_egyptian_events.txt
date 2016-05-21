@@ -3184,6 +3184,88 @@ character_event = {
 ## Surveying a Pyramid ##
 #########################
 
+# a servant informs you that a previously unknown entrance
+# to a pyramid has been uncovered
+# [on_bi_yearly_pulse]
+character_event = {
+	id = ancrel.4215
+	desc = ancrel.4215.desc
+	picture = GFX_evt_pyramid
+
+	only_rulers = yes
+	min_age = 16
+	only_capable = yes
+	prisoner = no
+
+	is_triggered_only = yes
+
+	weight_multiplier = {
+		days = 10
+		modifier = {
+			factor = 0
+			is_on_nile_trigger = no
+		}
+	}
+
+	option = { # survey the pyramid
+		option = ancrel.4215.a
+		custom_tooltip = {
+			text = ancrel.4215.a.tt
+			hidden_tooltip = {
+				character_event = { id = ancrel.4216 days = 3 }
+			}
+		}
+	}
+
+	option = { # don't survey the pyramid
+		option = ancrel.4215.b
+	}
+}
+
+# you and your entourage arrive at the entrance to the pyramid
+character_event = {
+	id = ancrel.4216
+	desc = ancrel.4216.desc
+	picture = GFX_evt_pyramid
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.4216.b
+		custom_tooltip = {
+			text = ancrel.4216.b.tt
+			hidden_tooltip = {
+				character_event = { id = ancrel.4217 days = 0 }
+			}
+		}
+	}
+}
+
+# you and your men have reached a fork in the tunnel, which way do you go?
+character_event = {
+	id = ancrel.4217
+	desc = ancrel.4217.desc
+	picture = GFX_evt_pyramid
+
+	is_triggered_only = yes
+
+	option = { # left?
+		
+	}
+
+	option = { # right?
+
+	}
+
+	option = { # back?
+		trigger = {
+			trait = craven
+		}
+		tooltip_info = craven
+
+		name = ancrel.4216.a
+	}
+}
 
 ############################
 ## Lost Heir of Cleopatra ##

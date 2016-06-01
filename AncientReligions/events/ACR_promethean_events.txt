@@ -149,6 +149,35 @@ character_event = {
 	}
 }
 
+# Promethean has decided to change their school of thought
+# [decision]
+character_event = {
+	id = ancrel.3404
+	desc = ancrel.3404.desc
+	picture = GFX_evt_library
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.3403.a
+		trigger = {	NOT = {	trait = stoic } }
+
+		add_trait = stoic
+	}
+	option = {
+		name = ancrel.3403.b
+		trigger = {	NOT = {	trait = skeptic } }
+
+		add_trait = skeptic
+	}
+	option = {
+		name = ancrel.3403.c
+		trigger = {	NOT = {	trait = epicurean } }
+
+		add_trait = epicurean
+	}
+}
+
 ###################################################################
 #
 # Rebuilding Crotone

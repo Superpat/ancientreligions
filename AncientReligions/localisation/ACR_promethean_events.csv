@@ -6,6 +6,10 @@ ancrel.3400.b;Let its holy fires never darken!;;;;;;;;;;;;;x
 ancrel.3400.c;Distressing...;;;;;;;;;;;;;x
 CHRONICLE_FIRST_ACADEMY;[Root.GetFullName] rebuilt The First Academy and established a new Scholarch to lead the Promethean Faith.;;;;;;;;;;;;;x
 ancrel.3402.desc;The province of [From.GetName], devestated after its conquest by your armies, has been slowly settled since then by people from your realm. The majority of its inhabitants are now [This.Culture.GetName] and [This.Religion.GetName]!;;;;;;;;;;;;;x
+ancrel.3403.desc;Now that you've come of age, it is time to decide which of the three great philosophical disciplines will you adhere to. This is an important decision in the life of every Promethean. It is not to be made lightly, nor can it be changed on a whim.;;;;;;;;;;;;;x
+ancrel.3403.a;Stoicism is my guide.;;;;;;;;;;;;;x
+ancrel.3403.b;Skepticism is the way to enlightenment.;;;;;;;;;;;;;x
+ancrel.3403.c;Epicureanism is the path to Henosis.;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 ancrel.3411.title;Crotone Construction Begins;;;;;;;;;;;;;x
 ancrel.3411.desc;Long has the ancient Pythagorean Academy at Crotone lain in ruins. But no more! You have invested significant resources into restoring this once great center of learning. From the ruins will arise a new Crotone Academy to bring enlightenment to the Western Mediterranean and spread the light of Prometheus' wisdom to all the world!;;;;;;;;;;;;;x

@@ -769,8 +769,8 @@ decisions = {
 			}
 			modifier = {
 				factor = 100
-				religion = promethean
-				is_neoplatonist_trigger = no
+				religion = promethean_pagan
+				is_neoplatonist = no
 			}
 		}
 	}

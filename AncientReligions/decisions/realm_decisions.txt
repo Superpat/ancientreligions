@@ -1775,10 +1775,6 @@ decisions = {
 				destroy_landed_title = THIS
 				hidden_tooltip = { activate_title = { title = THIS status = no } }
 			}
-#			any_demesne_title = {
-#				limit = { tier = KING }
-#				destroy_landed_title = THIS
-#			}
 			# Give lands to the Pope
 			if = {
 				limit = {

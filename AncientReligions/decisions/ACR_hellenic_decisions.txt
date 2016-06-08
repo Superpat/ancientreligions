@@ -728,7 +728,7 @@ decisions = {
 			always = no
 		}
 		ai_will_do = {
-			factor = 0.1 # unlikely
+			factor = 0.05 # unlikely
 
 			modifier = {
 				factor = 0

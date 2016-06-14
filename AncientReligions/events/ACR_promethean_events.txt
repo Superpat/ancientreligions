@@ -207,18 +207,62 @@ character_event = {
 		trigger = {	NOT = {	trait = stoic } }
 
 		add_trait = stoic
+
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 1.2
+				trait = cynical
+			}
+			modifier = {
+				factor = 1.2
+				trait = just
+			}
+		}
 	}
 	option = {
 		name = ancrel.3403.b
 		trigger = {	NOT = {	trait = skeptic } }
 
 		add_trait = skeptic
+
+		ai_chance = {
+			factor = 35
+			modifier = {
+				factor = 0.75
+				trait = ambitious
+			}
+		}
 	}
 	option = {
 		name = ancrel.3403.c
 		trigger = {	NOT = {	trait = epicurean } }
 
 		add_trait = epicurean
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.5
+				trait = gluttonous
+			}
+			modifier = {
+				factor = 0.5
+				trait = lustful
+			}
+			modifier = {
+				factor = 2
+				trait = content
+			}
+			modifier = { # the ambitious would never choose Epicureanism
+				factor = 0
+				trait = ambitious
+			}
+		}
 	}
 }
 

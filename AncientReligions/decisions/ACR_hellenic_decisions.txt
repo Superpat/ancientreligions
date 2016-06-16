@@ -697,27 +697,25 @@ decisions = {
 			
 			OR = {
 				religion = promethean_pagan
-				AND = {
-					religion = hellenic_pagan
-					OR = {
-						is_priest = yes
-						trait = scholar
-					}
-				}
-				AND = {
-					trait = mystic
-					is_priest = yes
-				}
+				is_neoplatonist = yes
 			}
 			
 			NOT = { had_character_flag = { flag = acr_changed_school days = 1825 } }
 			NOT = {	has_character_flag = do_not_disturb }
 		}
 		allow = {
-			piety = 200
+			OR = {
+				piety = 200
+				is_neoplatonist = no
+			}
 		}
 		effect = {
-			piety = -200
+			if = {
+				limit = {
+					is_neoplatonist = yes
+				}
+				piety = -200
+			}
 			set_character_flag = acr_changed_school
 			custom_tooltip = {
 				text = choose_school_tip
@@ -733,6 +731,7 @@ decisions = {
 			modifier = {
 				factor = 0
 				NOT = { piety = 350 }
+				is_neoplatonist = yes
 			}
 			modifier = {
 				factor = 2

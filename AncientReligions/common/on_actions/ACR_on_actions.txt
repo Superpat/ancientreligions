@@ -99,6 +99,7 @@ on_birth = {
 on_adulthood = {
 	events = {
 		ancrel.0241   # Changeling child's true nature asserts itself
+		ancrel.3403   # promethean chooses school
 	}
 }
 

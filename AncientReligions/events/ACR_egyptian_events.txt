@@ -73,7 +73,6 @@ province_event = {
 }
 
 # Luxor Restoration Part 3 ~2 years
-
 province_event = {
 	id = ancrel.4002
 	title = EVTNAME_ancrel_4002
@@ -1840,9 +1839,6 @@ character_event = {
 	prisoner = no
 	
 	trigger = {
-		#war = no
-		#in_command = no
-		#is_abroad = no
 		OR = {
 			religion = egyptian_pagan
 			religion = aten_pagan
@@ -2609,7 +2605,7 @@ character_event = {
 #
 # ancrel.4200 - ancrel.4399 Flavor Events
 #
-# Author: theStormWeaver/la_xirsoi
+# Author: theStormWeaver/xirsoi
 #
 ###################################
 
@@ -2976,7 +2972,7 @@ character_event = {
 	}
 }
 
-# the tribes come to your banner (attrition-less event troops) and you finally convert
+# the tribes come to your banner (event troops) and you finally convert
 character_event = {
 	id = ancrel.4210
 	desc = ancrel.4210.desc

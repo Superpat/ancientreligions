@@ -134,6 +134,9 @@ ca_culture_gaulish_2;Cavalry Field;;;;;;;;;;;;;x
 ca_culture_gaulish_3;Cavalry Field;;;;;;;;;;;;;x
 ca_culture_gaulish_4;Cavalry Field;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
+temple_barony_gaulish;Nemeton;;;;;;;;;;;;;x
+temple_barony_of_gaulish;Nemeton es;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;x
 baron_gaulish;Esu;;;;;;;;;;;;;x
 baron_female_gaulish;Esu;;;;;;;;;;;;;x
 barony_of_gaulish;Briga es;;;;;;;;;;;;;x

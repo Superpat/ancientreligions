@@ -700,7 +700,10 @@ decisions = {
 				is_neoplatonist = yes
 			}
 			
-			NOT = { had_character_flag = { flag = acr_changed_school days = 1825 } }
+			OR = {
+				had_character_flag = { flag = acr_changed_school days = 1825 }
+				NOT = { has_character_flag = acr_changed_school }
+			}
 			NOT = {	has_character_flag = do_not_disturb }
 		}
 		allow = {

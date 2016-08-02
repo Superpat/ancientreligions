@@ -1,10 +1,23 @@
-2016-?-? v?.??.? ???
+2016-?-? v0.38.0 "Diana"
 -------------------------
 
 General:
 
+
 Celtic:
 - Fixed some backward mtth modifiers in Aonach Tailteann events.
+- Gaulish culture now has special localizations for titles.
+- Non-theocracy title localizations have been removed from Celtic and Druidic paganism.
+-- It is my opinion that feudal, republican, and tribal titles should be derived from culture.
+
+Promethean:
+- Prometheans now get an event on adulthood to choose between the three Neoplatonist traits; Stoic, Skeptic, and Epicurean.
+-- You can switch to a different trait by decision every 5 years for 200 piety.
+-- Members of the same school have improved relations with one another.
+
+Kemetic:
+- Fixes an issue where men could become pregnant in a cat-related event.
+- 
 
 2016-3-5 v0.37.3 "Tullius"
 -------------------------

@@ -1,8 +1,8 @@
-2016-?-? v0.38.0 "Diana"
+2016-8-27 v0.38.0 "Diana"
 -------------------------
 
 General:
-
+- Updated to CK2 2.6.1 compatibility.
 
 Celtic:
 - Fixed some backward mtth modifiers in Aonach Tailteann events.
@@ -18,7 +18,9 @@ Promethean:
 
 Kemetic:
 - Fixes an issue where men could become pregnant in a cat-related event.
-- 
+- First (of three planned) Kemetic Revival event chain is out!
+-- There is a small chance that those who are On Hajj or On Pilgrimage in the East (Jerusalem, Antioch, or Axum) will be become lost in a sandstorm and meet an old man in an ancient temple.
+
 
 2016-3-5 v0.37.3 "Tullius"
 -------------------------

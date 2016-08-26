@@ -8,6 +8,7 @@ republic_governments = {
 			CASTLE
 			FAMILY_PALACE
 			FORT
+			HOSPITAL
 		}
 		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
 			TRIBAL
@@ -24,11 +25,7 @@ republic_governments = {
 			NAND = {
 				controls_religion = yes
 				NOT = { religion_group = muslim }
-				NOT = {
-					primary_title = {
-						is_landless_type_title = no
-					}
-				}
+				NOT = {	primary_title = { is_landless_type_title = no }	}
 			}
 			is_female = no
 			OR = {
@@ -90,6 +87,7 @@ republic_governments = {
 			CITY
 			CASTLE
 			FORT
+			HOSPITAL
 		}
 		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
 			TRIBAL
@@ -106,7 +104,7 @@ republic_governments = {
 			NAND = {
 				controls_religion = yes
 				NOT = { religion_group = muslim }
-				NOT = { religion = norse_pagan_reformed }
+				NOT = {	primary_title = { is_landless_type_title = no }	}
 			}
 			NOT = { is_government_potential = merchant_republic_government }
 		}

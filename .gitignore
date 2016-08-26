@@ -4,3 +4,6 @@
 
 # Github Markdown viewer plugin
 *.README.md.html
+
+# Thumbs.db files
+*.db

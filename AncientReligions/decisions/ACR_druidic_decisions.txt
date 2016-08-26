@@ -1,5 +1,6 @@
 decisions = {
 	hold_an_aonach_tailteann  = {
+		only_playable = yes
 		is_high_prio = yes
 		potential = {
 			NOT = {
@@ -40,7 +41,7 @@ decisions = {
 			clr_character_flag = tailteann_has_ended
 			wealth = -200
 			prestige = 100
-			character_event = { id = ancrel.1193 tooltip = "tailteann_invite" }
+			character_event = { id = ancrel.1193 tooltip = tailteann_invite }
 			hidden_tooltip = {
 				character_event = { id = ancrel.1191 days = 60 } # Aonach starts
 				clr_character_flag = tailteann_has_ended
@@ -69,6 +70,7 @@ decisions = {
 	}
 	
 	hold_divination = {
+		only_playable = yes
 		is_high_prio = yes
 		potential = {
 			has_dlc = "The Old Gods"
@@ -134,6 +136,8 @@ decisions = {
 	}
 
 	reinstate_celtic_rites = {
+		only_playable = yes
+		is_high_prio = yes
 		potential = {
 			has_dlc = "The Old Gods"
 			is_ruler = yes
@@ -193,6 +197,7 @@ decisions = {
 	}
 
 	organize_gwydion = {
+		only_playable = yes
 		is_high_prio = yes
 		potential = {
 			OR = {
@@ -322,6 +327,7 @@ decisions = {
 	}
 	
 	organize_fianna = {
+		only_playable = yes
 		is_high_prio = yes
 		potential = {
 			OR = {
@@ -385,7 +391,7 @@ decisions = {
 
 	vassalize_fianna = {
 		is_high_prio = yes
-		
+		only_playable = yes
 		potential = {
 			religion = celtic_pagan_reformed
 			is_heretic = no
@@ -442,6 +448,7 @@ decisions = {
 	}
 
 	donate_money_to_fianna = {
+		only_playable = yes
 		potential = {
 			religion = celtic_pagan_reformed
 			
@@ -509,7 +516,8 @@ decisions = {
 		}
 	}
 
-	invite_druid_to_court = { #Invite a Druid to court
+	invite_druid_to_court = {
+		only_playable = yes
 		potential = {
 			OR = {
 				religion = celtic_pagan
@@ -560,7 +568,7 @@ decisions = {
 			}	
 			modifier = {
 				factor = 0.5
-				trait = imbecile
+				is_dumb_trigger = yes
 			}		
 			modifier = {
 				factor = 2
@@ -574,14 +582,11 @@ decisions = {
 				factor = 2
 				primary_title = { higher_tier_than = DUKE }
 			}	
-			modifier = {
-				factor = 0.5
-				trait = slow
-			}	
 		}
 	}
 
 	invite_bard_to_court = {
+		only_playable = yes
 		potential = {
 			OR = {
 				religion = celtic_pagan
@@ -711,7 +716,7 @@ decisions = {
 			}	
 			modifier = {
 				factor = 0.5
-				trait = imbecile
+				is_dumb_trigger = yes
 			}		
 			modifier = {
 				factor = 2
@@ -724,15 +729,12 @@ decisions = {
 			modifier = {
 				factor = 2
 				primary_title = { higher_tier_than = DUKE }
-			}	
-			modifier = {
-				factor = 0.5
-				trait = slow
-			}	
+			}
 		}
 	}
 
 	assign_druid = { # For the AI, because they are dumb enough not to hand out minor titles
+		only_playable = yes
 		potential = {
 			ai = yes
 			OR = {
@@ -749,7 +751,6 @@ decisions = {
 			primary_title = { higher_tier_than = BARON }
 			any_courtier = {
 				trait = druid
-				is_female = no
 				is_adult = yes
 			}
 		}
@@ -773,6 +774,7 @@ decisions = {
 	}
 
 	assign_bard = { # For the AI, because they are dumb enough not to hand out minor titles
+		only_playable = yes
 		potential = {
 			ai = yes
 			OR = {
@@ -789,7 +791,6 @@ decisions = {
 			primary_title = { higher_tier_than = BARON }
 			any_courtier = {
 				trait = poet
-				is_female = no
 				is_adult = yes
 			}
 		}
@@ -813,6 +814,7 @@ decisions = {
 	}
 
 	give_offerings_sidhe = {
+		only_playable = yes
 		is_high_prio = yes
 		potential = {
 			has_dlc = "The Old Gods"
@@ -886,6 +888,7 @@ decisions = {
 	}
 
 	abdicate_gaelic = {
+		only_playable = yes
 		potential = {
 			is_ruler = yes
 			prisoner = no
@@ -936,6 +939,7 @@ decisions = {
 	}
 	
 	expel_red_dragons = {
+		only_playable = yes
 		potential = {
 			ai = no
 			religion = celtic_pagan_reformed
@@ -998,6 +1002,7 @@ decisions = {
 	}
 	
 	donate_money_to_red_dragons = {
+		only_playable = yes
 		potential = {
 			religion = celtic_pagan_reformed
 			

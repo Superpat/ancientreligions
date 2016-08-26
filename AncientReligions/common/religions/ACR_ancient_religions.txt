@@ -10,8 +10,10 @@ pagan_group = {
 		ai_convert_other_group = 2 # always try to convert
 		
 		color = { 0.6 0.1 0.1 }
+		
+		high_god_name = GOD_JUPITER
 		god_names = {
-			GOD_JUNO GOD_VESTA GOD_MINERVA GOD_CERES GOD_DIANA GOD_VENUS GOD_MARS GOD_MERCURY GOD_JUPITER GOD_NEPTUNE GOD_VULCAN GOD_APOLLO
+			GOD_JUNO GOD_VESTA GOD_MINERVA GOD_CERES GOD_DIANA GOD_VENUS GOD_MARS GOD_MERCURY GOD_SATURN GOD_NEPTUNE GOD_VULCAN GOD_APOLLO
 		}
 		evil_god_names = {
 			GOD_PLUTO
@@ -66,7 +68,7 @@ pagan_group = {
 		psc_marriage = yes
 
 		aggression = 2.0 # AI aggression factor
-		short_reign_opinion_year_mult = 4 # The default is 2
+		short_reign_opinion_year_mult = 2
 
 		religious_clothing_priest = 5
 
@@ -122,7 +124,7 @@ pagan_group = {
 		}
 	}
 
-	celtic_pagan_reformed = {
+	celtic_pagan_reformed = { # Druidic
 		# Use norsegfx rather than celticgfx to have the northern pagan rounded CoA on the map
 		graphical_culture = norsegfx
 		
@@ -182,7 +184,7 @@ pagan_group = {
 
 		aggression = 1.5 # AI aggression factor
 		
-		short_reign_opinion_year_mult = 3 # The default is 2
+		short_reign_opinion_year_mult = 1.5 # The default is 2
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
@@ -250,7 +252,7 @@ pagan_group = {
 		
 		dislike_tribal_organization = yes
 
-		short_reign_opinion_year_mult = 4 # The default is 2
+		short_reign_opinion_year_mult = 2
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3

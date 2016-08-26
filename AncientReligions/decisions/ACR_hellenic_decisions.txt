@@ -1,6 +1,7 @@
 decisions = {
 
 	recreate_pontificate = {
+		only_playable = yes
 		is_high_prio = yes
 		potential = {
 			religion = hellenic_pagan
@@ -66,7 +67,51 @@ decisions = {
 		}
 	}
 
+	organize_sacred_band = {
+		only_playable = yes
+		is_high_prio = yes
+		potential = {
+			higher_tier_than = count
+			religion = hellenic_pagan
+			has_regent = no
+			NOT = { has_global_flag = sacred_band_founded }
+		}
+		allow = {
+			tier = emperor
+			d_hellenic_pagan = { owner = { always = yes } } # There is currently a Pontifex Maximus
+			prestige = 300
+			wealth = 300
+		}
+		effect = {
+			set_global_flag = sacred_band_founded
+			prestige = -300
+			wealth = -300
+			activate_title = { title = d_sacred_band status = yes }
+			hidden_tooltip = {
+				narrative_event = { id = ancrel.2567 }
+				create_character = {
+					random_traits = yes
+					religion = ROOT
+					culture = ROOT
+					dynasty = NONE
+					female = no
+					age = 34
+					trait = skilled_tactician
+				}
+				new_character = {
+					d_sacred_band = {
+						grant_title = PREV
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	hold_titan_thysia = {
+		only_playable = yes
 		is_high_prio = yes
 		potential = {
 			has_dlc = "The Old Gods"
@@ -148,6 +193,7 @@ decisions = {
 	}
 
 	found_sickles = {
+		only_playable = yes
 		is_high_prio = yes
 		potential = {
 			has_dlc = "The Old Gods"
@@ -307,6 +353,7 @@ decisions = {
 	}
 
 	rebuild_first_academy = {
+		only_playable = yes
 		is_high_prio = yes
 		potential = {
 			religion = promethean_pagan
@@ -378,6 +425,7 @@ decisions = {
 	}
 
 	rebuild_crotone = {
+		only_playable = yes
 		is_high_prio = yes
 		potential = {
 			religion = promethean_pagan
@@ -429,6 +477,7 @@ decisions = {
 	}
 
 	hold_unbinding_festival = {
+		only_playable = yes
 		is_high_prio = yes
 		potential = {
 			has_dlc = "The Old Gods"
@@ -440,7 +489,7 @@ decisions = {
 			religion = promethean_pagan
 			
 			NOT = { has_character_modifier = held_unbinding_festival_timer }
-			NOT = {	has_character_flag = holding_unbinding_festival }
+			NOT = {	has_character_modifier = holding_unbinding_festival }
 			NOT = {	has_character_flag = do_not_disturb }
 		}
 		allow = {
@@ -494,6 +543,7 @@ decisions = {
 	}
 
 	organize_men_of_steel = {
+		only_playable = yes
 		is_high_prio = yes
 		potential = {
 			is_ruler = yes
@@ -515,7 +565,7 @@ decisions = {
 			piety = -300
 			prestige = -300
 			wealth = -200
-
+			set_character_flag = acr_organizer_steel
 			activate_title = { title = d_men_of_steel status = yes }
 			create_character = {
 				random_traits = no
@@ -640,6 +690,96 @@ decisions = {
 			modifier = {
 				factor = 0.25
 				trait = cynical
+			}
+		}
+	}
+
+	change_school = {
+		potential = {
+			has_dlc = "The Old Gods"
+			is_ruler = yes
+			age = 16
+			prisoner = no
+			NOT = { trait = in_hiding }
+			
+			OR = {
+				religion = promethean_pagan
+				is_neoplatonist = yes
+			}
+			
+			OR = {
+				had_character_flag = { flag = acr_changed_school days = 1825 }
+				NOT = { has_character_flag = acr_changed_school }
+			}
+			NOT = {	has_character_flag = do_not_disturb }
+		}
+		allow = {
+			OR = {
+				piety = 200
+				is_neoplatonist = no
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					is_neoplatonist = yes
+				}
+				piety = -200
+			}
+			set_character_flag = acr_changed_school
+			custom_tooltip = {
+				text = choose_school_tip
+				hidden_tooltip = { character_event = { id = ancrel.3404 } }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0.05 # unlikely
+
+			modifier = {
+				factor = 0
+				NOT = { piety = 350 }
+				is_neoplatonist = yes
+			}
+			modifier = {
+				factor = 2
+				trait = greedy
+				trait = epicurean
+			}
+			modifier = {
+				factor = 2
+				trait = zealous
+			}
+			modifier = {
+				factor = 2
+				trait = ambitious
+			}
+			modifier = {
+				factor = 1.5
+				trait = skeptic
+				trait = zealous
+			}
+			modifier = {
+				factor = 1.25
+				trait = skeptic
+				trait = ambitious
+			}
+			modifier = {
+				factor = 1.5
+				trait = stoic
+				trait = greedy
+			}
+			modifier = {
+				factor = 1.5
+				trait = stoic
+				trait = ambitious
+			}
+			modifier = {
+				factor = 100
+				religion = promethean_pagan
+				is_neoplatonist = no
 			}
 		}
 	}

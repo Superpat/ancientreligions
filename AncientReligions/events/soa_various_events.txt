@@ -124,8 +124,6 @@ diploresponse_event = {
 # Event triggers for a player
 character_event = {
 	id = SoA.3000
-	desc = OK
-	
 	hide_window = yes
 	
 	ai = no
@@ -133,6 +131,12 @@ character_event = {
 	
 	trigger = {
 		has_dlc = "Sons of Abraham"
+		NOT = {
+			has_game_rule = {
+				name = supernatural_events
+				value = off
+			}
+		}
 		OR = {
 			religion_group = christian
 			religion_group = muslim
@@ -182,8 +186,6 @@ character_event = {
 # Event triggers for the child
 character_event = {
 	id = SoA.3001
-	desc = OK
-	
 	hide_window = yes
 	
 	is_triggered_only = yes
@@ -504,8 +506,6 @@ character_event = {
 # Do not worry - bounce the event to get the name of the child
 character_event = {
 	id = SoA.3004
-	desc = OK
-	
 	hide_window = yes
 	
 	is_triggered_only = yes
@@ -518,8 +518,6 @@ character_event = {
 # Accuse of witchcraft - bounce the event to get the name of the child
 character_event = {
 	id = SoA.3005
-	desc = OK
-	
 	hide_window = yes
 	
 	is_triggered_only = yes
@@ -532,8 +530,6 @@ character_event = {
 # Accuse the mother of witchcraft - bounce the event to get the name of the child
 character_event = {
 	id = SoA.3006
-	desc = OK
-	
 	hide_window = yes
 	
 	is_triggered_only = yes
@@ -661,6 +657,8 @@ character_event = {
 				}
 			}
 			add_trait = bastard
+
+			dynasty = mother
 			
 			mother = {
 				remove_spouse = yes
@@ -675,6 +673,10 @@ character_event = {
 						who = ROOT
 						modifier = opinion_witch
 					}
+				}
+				if = {
+					limit = { is_lover = ROOT }
+					remove_lover = ROOT
 				}
 			}
 		}
@@ -769,8 +771,6 @@ character_event = {
 # Accused! - bounce
 character_event = {
 	id = SoA.3012
-	desc = OK
-	
 	hide_window = yes
 	
 	is_triggered_only = yes
@@ -893,8 +893,6 @@ character_event = {
 # Set real father correctly
 character_event = {
 	id = SoA.3016
-	desc = OK
-	
 	hide_window = yes
 	
 	is_triggered_only = yes
@@ -932,6 +930,8 @@ character_event = {
 		remove_trait = slow
 		remove_trait = imbecile
 		remove_trait = weak
+		remove_trait = feeble
+		remove_trait = dull
 		remove_trait = shy
 		remove_trait = trusting
 		add_trait = lustful
@@ -954,11 +954,11 @@ character_event = {
 		}
 		
 		father = {
-			character_event = { id = SoA.3021 }
+			narrative_event = { id = SoA.3021 }
 		}
 		
 		mother = {
-			character_event = { id = SoA.3021 }
+			narrative_event = { id = SoA.3021 }
 		}
 		
 		random_sibling = {
@@ -993,8 +993,6 @@ narrative_event = {
 # Demon Child tries to murder sibling in bed
 character_event = {
 	id = SoA.3030
-	desc = OK
-	
 	hide_window = yes
 	
 	min_age = 3
@@ -1061,8 +1059,6 @@ character_event = {
 # Demon Child tries to murder sibling in bed
 character_event = {
 	id = SoA.3031
-	desc = OK
-	
 	hide_window = yes
 	
 	is_triggered_only = yes
@@ -1263,7 +1259,7 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 	
 	trigger = {
-		trait = maimed
+		is_maimed_trigger = yes
 		trait = possessed
 		has_dlc = "Sons of Abraham"
 		OR = {
@@ -1282,7 +1278,30 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_SOA_3050
-		remove_trait = maimed
+		if = {
+			limit = { trait = maimed }
+			remove_trait = maimed
+		}
+		if = {
+			limit = { trait = one_eyed }
+			remove_trait = one_eyed
+		}
+		if = {
+			limit = { trait = one_handed }
+			remove_trait = one_handed
+		}
+		if = {
+			limit = { trait = one_legged }
+			remove_trait = one_legged
+		}
+		if = {
+			limit = { trait = disfigured }
+			remove_trait = disfigured
+		}
+		if = {
+			limit = { trait = mangled }
+			remove_trait = mangled
+		}
 	}
 }
 
@@ -1467,6 +1486,7 @@ character_event = {
 				trait = has_bubonic_plague
 			}
 			remove_trait = has_bubonic_plague
+			set_character_flag = achievement_i_got_better
 		}
 		if = {
 			limit = {
@@ -1549,11 +1569,11 @@ character_event = {
 	
 	only_rulers = yes
 	has_character_flag = demon_child_non_pagan
+	war = yes
+	has_dlc = "Sons of Abraham"
 	
 	trigger = {
-		war = yes
 		trait = possessed
-		has_dlc = "Sons of Abraham"
 		OR = {
 			is_primary_war_defender = yes
 			is_primary_war_attacker = yes
@@ -1736,8 +1756,6 @@ character_event = {
 # A witch nanny arrives at court
 character_event = {
 	id = SoA.3070
-	desc = OK
-	
 	hide_window = yes
 	
 	max_age = 15
@@ -1909,8 +1927,6 @@ character_event = {
 # Witch nanny moves with her charge
 character_event = {
 	id = SoA.3073
-	desc = OK
-	
 	hide_window = yes
 	
 	only_women = yes
@@ -1918,11 +1934,11 @@ character_event = {
 	only_capable = yes
 	min_age = 16
 	has_character_flag = witch_nanny
+	has_dlc = "Sons of Abraham"
+	is_married = no
 	
 	trigger = {
-		has_dlc = "Sons of Abraham"
 		is_ruler = no
-		is_married = no
 		is_consort = no
 		NOT = { religion_group = pagan_group }
 		NOT = {
@@ -1986,8 +2002,6 @@ character_event = {
 # Witch nanny commits suicide for the demon child
 character_event = {
 	id = SoA.3075
-	desc = OK
-	
 	hide_window = yes
 	
 	prisoner = no
@@ -2032,8 +2046,6 @@ character_event = {
 # Witch nanny commits suicide for the demon child
 character_event = {
 	id = SoA.3076
-	desc = OK
-	
 	hide_window = yes
 	
 	is_triggered_only = yes
@@ -2060,7 +2072,7 @@ character_event = {
 			}
 		}
 		death = {
-			death_reason = death_suicide
+			death_reason = death_suicide_fall
 		}
 	}
 }

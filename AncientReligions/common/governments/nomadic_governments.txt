@@ -26,11 +26,7 @@ nomadic_governments = {
 			NAND = {
 				controls_religion = yes
 				NOT = { religion_group = muslim }
-				NOT = {
-					primary_title = {
-						is_landless_type_title = no
-					}
-				}
+				NOT = {	primary_title = { is_landless_type_title = no }	}
 			}
 			is_patrician = no
 			mercenary = no
@@ -50,6 +46,7 @@ nomadic_governments = {
 		ignores_de_jure_laws = yes
 		can_build_holdings = no
 		can_build_forts = no
+		can_build_hospitals = no
 		can_build_temple = yes
 		
 		vassal_limit = -10

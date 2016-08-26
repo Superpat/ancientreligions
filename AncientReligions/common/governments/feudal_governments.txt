@@ -5,6 +5,7 @@ feudal_governments = {
 		allowed_holdings = { 
 			CASTLE 
 			FORT
+			HOSPITAL
 		}
 		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
 			TRIBAL
@@ -19,11 +20,7 @@ feudal_governments = {
 			NAND = {
 				controls_religion = yes
 				NOT = { religion_group = muslim }
-				NOT = {
-					primary_title = {
-						is_landless_type_title = no
-					}
-				}
+				NOT = {	primary_title = { is_landless_type_title = no }	}
 			}
 			NOT = {	religion_group = muslim	}
 			is_patrician = no
@@ -47,6 +44,7 @@ feudal_governments = {
 			CASTLE
 			TEMPLE
 			FORT
+			HOSPITAL
 		}
 		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
 			TRIBAL
@@ -65,11 +63,7 @@ feudal_governments = {
 			NAND = {
 				controls_religion = yes
 				NOT = { religion_group = muslim }
-				NOT = {
-					primary_title = {
-						is_landless_type_title = no
-					}
-				}
+				NOT = {	primary_title = { is_landless_type_title = no }	}
 			}
 			religion_group = muslim
 			is_patrician = no
@@ -85,6 +79,8 @@ feudal_governments = {
 		have_gender_laws = no
 		allows_matrilineal_marriage = no
 		free_retract_vassalage = yes
+
+		free_levies_in_offensive_war = yes # Took away the hardcoded stuff for muslims where they could raise levies without pissing off vassals if in an offensive war.
 
 		can_build_tribal = no
 		

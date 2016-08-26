@@ -9,16 +9,9 @@
 
 # GIVEN BY TRAITS
 #################
-nick_the_cunning = {
-	allow = {
-		trait = odysseus_reborn
-	}
-	chance = {
-		factor = 100
-	}
-}
 
 # GIVEN BY EVENT
 #################
+nick_the_cunning = {}
 nick_the_apostate = {}
 nick_cherished_of_diana = {}

@@ -680,40 +680,67 @@ character_event = {
 }
 
 ##### Coming of age ceremony - child's event
+# [on_yearly_childhood_pulse]
 character_event = {
 	id = ancrel.0184
-	title = EVTNAMEancrel.0184
-	desc = EVTDESCancrel.0184
-	picture = GFX_evt_son_bully
+	hide_window = yes
 	
-	min_age = 13
-	max_age = 16
+	is_triggered_only = yes
+	prisoner = no
 
 	trigger = {
-		OR = {		
+		age = 14
+		OR = {
 			religion = celtic_pagan
 			religion = celtic_pagan_reformed
+		}	
+		OR = {
+			father_even_if_dead = { is_alive = yes }
+			mother_even_if_dead = { is_alive = yes }
 		}
-		father = { is_alive = yes }
-		NOT = {
-			has_character_flag = had_coming_of_age_celtic
+		NOR = {
+			trait = incapable
+			has_character_flag = ancrel_training
 		}
 	}
 	
-	mean_time_to_happen = {
-		months = 6
-	}
-	
-	option = {
-		name = EVTOPTAancrel.0184
-		set_character_flag = had_coming_of_age_celtic
-		hidden_tooltip = {
-			father = {
-				character_event = {
-					id = ancrel.0183
-					days = 3
+	immediate = {
+		set_character_flag = ancrel_training
+		if = {
+			limit = {
+				father = {
+					is_alive = yes
+					any_child = {
+						character = ROOT
+						mother_even_if_dead = {
+							OR = {
+								is_alive = no
+								NOT = { higher_real_tier_than = PREVPREV }
+							}
+						}
+					}
 				}
 			}
+			father = { character_event = { id = ancrel.0183 days = 3 } }
+			break = yes
+		}
+		if = {
+			limit = {
+				mother = {
+					is_alive = yes
+					any_child = {
+						character = ROOT
+						father_even_if_dead = {
+							OR = {
+								is_alive = no
+								NOT = { higher_real_tier_than = PREVPREV }
+							}
+						}
+					}
+				}
+			}
+			mother = { character_event = { id = ancrel.0183 days = 3 } }
+			break = yes
 		}
 	}
 }
@@ -721,17 +748,22 @@ character_event = {
 # Training about to begin
 narrative_event = {
 	id = ancrel.0185
-	title = EVTNAMEancrel.0185
-	desc = EVTDESCancrel.0185
-	picture = GFX_evt_buddhist_pagoda
+	title = ancrel.0185.title
+	desc = ancrel.0185.desc
+	picture = GFX_evt_priests_in_forest
 	
 	is_triggered_only = yes
 
 	option = { # Training starts
-		name = EVTOPTAancrel.0185
+		name = ancrel.0185.a
 		add_trait = learning_druidic_arts
 		set_character_flag = druidic_training
 		clr_character_flag = wants_druidic_training
+		opinion = {
+			who = FROM
+			modifier = sent_druidic_training
+			years = 100
+		}
 	}
 }
 
@@ -766,7 +798,7 @@ character_event = {
 			OR = {
 				trait = cynical
 				trait = imbecile
-				trait = slow
+				is_dumb_trigger = yes
 				trait = craven
 				trait = learning_druidic_arts #don't ask to be a druid if you already are one
 				trait = druid
@@ -1010,7 +1042,7 @@ character_event = {
 		}
 		modifier = {
 			factor = 1.5
-			trait = slow
+			is_dumb_trigger = yes
 		}
 		modifier = {
 			factor = 1.5
@@ -1308,7 +1340,7 @@ character_event = {
 		}
 		modifier = {
 			factor = 1.5
-			trait = slow
+			is_dumb_trigger = yes
 		}
 		modifier = {
 			factor = 1.5

@@ -152,7 +152,7 @@ k_aten_pagan = {
 	}
 	
 	# Controls a religion
-	controls_religion = egyptian_pagan
+	controls_religion = aten_pagan
 	dignity = 100
 	religion = aten_pagan
 	

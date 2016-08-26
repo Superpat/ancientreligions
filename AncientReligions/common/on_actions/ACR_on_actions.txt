@@ -25,7 +25,11 @@ on_yearly_pulse = {
 		100 = ancrel.4154 # Bes protects from nightmare
 		100 = ancrel.4160 # someone has dared to kill a cat
 		100 = ancrel.4162 # Senet Game
-		100 = ancrel.4167 # Shemzu execution
+		100 = ancrel.4167 # Shezmu execution
+		100 = ancrel.4161 # be nice to girls (?)
+		100 = ancrel.4162 # Senet game
+		10  = ancrel.4166 # ghost of akhenaten?
+		#100 = ancrel.4215 # ancient tomb entrance discovered [unfinished]
 		
 		#Hellenic Flavor
 		100 = ancrel.4203 # Dead beggar doesn't have money to pay the ferryman
@@ -90,9 +94,10 @@ on_five_year_pulse = {
 	
 	random_events = {
 		#Egypt Flavor
-		20 = ancrel.4155 # expel the evil within
-		20 = ancrel.4159 # one of your wives displays feline grace... <.< >.>
-		20 = ancrel.4166 # Ghost of Akhenaten
+		200 = ancrel.4155 # expel the evil within
+		200 = ancrel.4159 # one of your wives displays feline grace... <.< >.>
+		100 = ancrel.4166 # Ghost of Akhenaten
+		200 = ancrel.4167 # Shezmu execution event
 		
 		#Hellenic Flavor
 		20 = ancrel.4202 # Zeus supposedly knocked a woman up - is she lying?
@@ -114,6 +119,9 @@ on_five_year_pulse = {
 
 # For characters 2 to 16 years old
 on_yearly_childhood_pulse = {
+	events = {
+		ancrel.0184 # Celtic child begins education (14 years old)
+	}
 	random_events = {
 		5000 = ancrel.0272 	# Acknowledged reincarnated child acquires trait from previous personality
 	}
@@ -162,8 +170,9 @@ on_birth = {
 
 # character
 on_adulthood = {
-	events = {		
+	events = {
 		ancrel.0241   # Changeling child's true nature asserts itself
+		ancrel.3403   # promethean chooses school
 	}
 }
 

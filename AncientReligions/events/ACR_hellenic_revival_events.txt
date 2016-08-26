@@ -43,7 +43,7 @@ character_event = {
 		NOR = {
 			realm_size = 101 						# empire is in big trouble, smaller than the alexiad start date
 			has_character_flag = ancrel_philosopher # hasn't had the event already
-			religion_group = pagan_group 			# isn't still christian
+			religion_group = pagan_group 			# is still christian
 			any_courtier = {
 				has_character_flag = special_priest # don't already have the priest in your court
 			}
@@ -377,9 +377,8 @@ character_event = {
 			religion = promethean_pagan
 		}
 		OR = {
-			culture = roman
-			culture = italian
-			culture = greek
+			culture_group = latin
+			culture_group = byzantine
 			culture = sicilian_greek # SWMH
 			culture_group = italian_group # SWMH
 		}
@@ -1194,3 +1193,54 @@ narrative_event = {
 	}
 }
 
+# The Sacred Band founded
+narrative_event = {
+	id = ancrel.2567
+	title = ancrel.2567.title
+	desc = ancrel.2567.desc
+	picture = GFX_evt_roman_temple
+	border = GFX_event_narrative_frame_war
+	
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	option = {
+		name = ancrel.2567.a
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					ai = no
+				}
+				narrative_event = { id = ancrel.2568 }
+			}
+		}
+	}
+}
+
+# The player is informed of the Sacred Band
+narrative_event = {
+	id = ancrel.2568
+	title = ancrel.2568.title
+	desc = ancrel.2568.desc
+	picture = GFX_evt_roman_temple
+	border = GFX_event_narrative_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ancrel.2568.a
+		trigger = {
+			religion = hellenic_pagan
+		}
+	}
+	
+	option = {
+		name = ancrel.2568.b
+		trigger = {
+			NOT = {
+				religion = hellenic_pagan
+			}
+		}
+	}
+}

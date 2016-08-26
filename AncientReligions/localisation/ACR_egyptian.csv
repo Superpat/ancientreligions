@@ -84,10 +84,9 @@ temple_duchy_of_egyptian_pagan;Grand Temple of;Grand Temple de;Grand Temple of;;
 temple_kingdom_of_egyptian_pagan;Pharaohate of;Phara de;Pharaohate of;;Pharaohate of;;;;;;;;;x
 temple_empire_of_egyptian_pagan;Empire of;Empire de;Empire of;;Empire of;;;;;;;;;x
 MERYATEN;Meryaten;;;;;;;;;;;;;x
-b_meir;Akhetaten;;;;;;;;;;;;;x
 ###### Minor Titles;;;;;;;;;;;;;;x
 title_master_palms;Master of Palms;;;;;;;;;;;;;x
-title_master_palms_desc;Palm trees were an important symbol of prosperity in Ancient Egyptian culture, in addition to the practical use of providing shade. The Master of Palms directs the small beauracracy surrounding the proper planting and care of palm trees in the cities of their masters domain.;;;;;;;;;;;;;x
+title_master_palms_desc;Palm trees were an important symbol of prosperity in Ancient Egyptian culture, in addition to the practical use of providing shade. The Master of Palms directs the small bureaucracy surrounding the proper planting and care of palm trees in the cities of their masters domain.;;;;;;;;;;;;;x
 title_gods_wife;Gods Wife;;;;;;;;;;;;;x
 title_gods_wife_desc;The Gods Wife was an important priestly title that was originally held by the sister or wife of the Pharoah. This title is now largely honorary and can be granted to any woman from the Pharoah's dynasty.;;;;;;;;;;;;;x
 title_divine_adoratrice;Divine Adoratrice;;;;;;;;;;;;;x
@@ -99,15 +98,15 @@ title_iry_pat_desc;Literally meaning 'member of the elite', this title was origi
 title_haty_a;Haty-a;;;;;;;;;;;;;x
 title_haty_a_desc;In ancient times an extremely high ranking title, second only to the Iry-pat, it is now simply the burghers counterpart to the noble Iry-pat.;;;;;;;;;;;;;x
 title_khetemty;Khetemty;;;;;;;;;;;;;x
-title_khetemty_desc;Meaning 'great royal sealer,' the Khetemty once was a beaurocratic office in charge of food distribution. It is now an honor bestowed on priests.;;;;;;;;;;;;;x
+title_khetemty_desc;Meaning 'great royal sealer,' the Khetemty once was a bureaucratic office in charge of food distribution. It is now an honor bestowed on priests.;;;;;;;;;;;;;x
 title_courtesan_egyptian_pagan;Khekeret-nisut;;;;;;;;;;;;;x
 title_courtesan_aten_pagan;Khekeret-nisut;;;;;;;;;;;;;x
 ###### Coptic;;;;;;;;;;;;;;x 
 egyptian_coptic;Coptic;;;;;;;;;;;;;x
 egyptian_coptic_desc;The Copts represent a return to the ancient ways of the Egyptian people. The result of a revivalist movement in Egypt, elements of Ancient Egyptian language, customs, architecture, and art have all been adapted to serve the times.;;;;;;;;;;;;;x
-ca_culture_egyptian_coptic_1;Temple of Anhur;;;;;;;;;;;;;x
+ca_culture_egyptian_coptic_1;Shrine of Anhur;;;;;;;;;;;;;x
 ca_culture_egyptian_coptic_2;Temple of Anhur;;;;;;;;;;;;;x
-ca_culture_egyptian_coptic_3;Temple of Anhur;;;;;;;;;;;;;x
-ca_culture_egyptian_coptic_4;Temple of Anhur;;;;;;;;;;;;;x
-ca_culture_egyptian_coptic_1_desc;A building dedicated to the study of war. Named for the Anhur, the god of war, this temple is home to the elite Anhuri warriors. Here these fighters hone their skills with the Khopesh and mounted archery.;;;;;;;;;;;;;;x
+ca_culture_egyptian_coptic_3;High Temple of Anhur;;;;;;;;;;;;;x
+ca_culture_egyptian_coptic_4;Grand Temple of Anhur;;;;;;;;;;;;;x
+ca_culture_egyptian_coptic_1_desc;A building dedicated to the study of war. Named after Anhur, the god of war, this temple is home to the elite Anhuri Warriors. Here these fighters hone their skills with the Khopesh and mounted archery.;;;;;;;;;;;;;;x
 RETTYPE_CUL_COPTIC;Anhuri Warriors;;;;;;;;;;;;;x

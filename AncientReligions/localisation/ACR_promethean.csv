@@ -16,11 +16,11 @@ city_job_spiritual_promethean_pagan;Daskalos;;;;;;;;;;;;;x
 tribal_job_spiritual_promethean_pagan;Daskalos;;;;;;;;;;;;;x
 nomad_job_spiritual_promethean_pagan;Daskalos;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
-title_master_scrolls;Archos tou Papyri;;;;;;;;;;;;;x
+title_master_scrolls;Archopapyri;;;;;;;;;;;;;x
 title_master_scrolls_desc;The "master of scrolls" is in charge of their lords personal library. This posting involves few actual responsibilities, but is prestigious for the trust implicit in its position.;;;;;;;;;;;;;x
-title_master_antiquities;Archos tou Thisavrous;;;;;;;;;;;;;x
+title_master_antiquities;Archothisavrous;;;;;;;;;;;;;x
 title_master_antiquities_desc;The "master of treasures" is in charge of their lords personal collection of artefacts from centuries long past. This posting involves as much liability, in the form of responsibility for theft, as it does prestige. A slightly larger income is afforded to this position to pay for security of the artefacts;;;;;;;;;;;;;x
-title_keeper_flame;Fylakas tis Flogas;;;;;;;;;;;;;x
+title_keeper_flame;Fylakasflogas;;;;;;;;;;;;;x
 title_keeper_flame_desc;The "keeper of the flame" is responsible for the maintenance of the lord's personal shrine and sacred fire. The important religious nature of this position affords some leverage with the clergy.;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 d_promethean_pagan;First Academy;;;;;;;;;;;;;x
@@ -33,11 +33,15 @@ organize_men_of_steel_desc;Create the Men of Steel, a Holy Order of Prometheanis
 hold_unbinding_festival;Hold the Unbinding Festival;;;;;;;;;;;;;x
 hold_unbinding_festival_desc;Hold a festival in remembrance of Prometheus' Unbinding from Mt Kazbek;;;;;;;;;;;;;x
 prepare_unbinding_festival;Begin preperations for the Unbinding Festival.;;;;;;;;;;;;;x
+change_school;Choose A School;;;;;;;;;;;;;x
+change_school_desc;Will you be Stoic, Skeptic, or Epicurean?;;;;;;;;;;;;;x
+choose_school_tip;Choose which of the schools to follow...;;;;;;;;;;;;;x
 rebuild_first_academy;Rebuild the First Academy;;;;;;;;;;;;;x
 rebuild_first_academy_desc;Rebuild the First Academy, with the Scholarch as the head of the Promethean faith.;;;;;;;;;;;;;x
 rebuild_crotone;Rebuild Crotone;;;;;;;;;;;;;x
 rebuild_crotone_desc;Rebuild the Academy at Crotone;;;;;;;;;;;;;x
 first_academy_restored;First Academy Restored;;;;;;;;;;;;;x
+crotone_academy;Academy of Crotone Rebuilt;;;;;;;;;;;;;x
 held_unbinding_festival_timer;Held an Unbinding Festival;;;;;;;;;;;;;x
 held_unbinding_festival_timer_desc;This character has held the tri-annual Unbinding Festival.;;;;;;;;;;;;;x
 opinion_held_unbinding_festival;Held an Unbinding Festival;;;;;;;;;;;;;x
@@ -57,7 +61,7 @@ acr_blasphemous_exhibition_desc;The populace are enraged by a rather blasphemous
 acr_excellent_performance;Excellent Performance;;;;;;;;;;;;;x
 acr_excellent_performance_desc;The populace are pleased by an excellent play that was held recently.;;;;;;;;;;;;;x
 holding_unbinding_festival;Holding Unbinding Festival;;;;;;;;;;;;;x
-holding_unbinding_festival_desc;This character is holding an Unbinding Festival, a religious celebration of the Promethean faith held every 3 years in the summer.;;;;;;;;;;;;;x
+holding_unbinding_festival_desc;This character is holding an Unbinding Festival, a religious celebration of the Promethean faith held every summer.;;;;;;;;;;;;;x
 depopulated_province;Depopulated;;;;;;;;;;;;;x
 depopulated_province_desc;This province was recently invaded and is severely depopulated. It will take a long time for it to fully recover.;;;;;;;;;;;;;x
 acr_crotone_arts;Academy of the Arts;;;;;;;;;;;;;x

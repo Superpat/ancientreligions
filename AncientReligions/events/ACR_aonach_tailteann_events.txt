@@ -798,7 +798,7 @@ character_event = {
 		}
 		modifier = {
 			factor = 0.75
-			trait = strong
+			is_strong_trigger = yes
 		}
 		modifier = {
 			factor = 0.75
@@ -806,23 +806,23 @@ character_event = {
 		}
 		modifier = {
 			factor = 1.25
-			NOT = { trait = dwarf }
+			trait = dwarf
 		}
 		modifier = {
 			factor = 1.25
-			NOT = { trait = weak }
+			is_weak_trigger = yes
 		}
 		modifier = {
 			factor = 1.25
-			NOT = { trait = ill }
+			trait = ill
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { martial = 6 }
 		}
 		modifier = {
 			factor = 1.25
 			NOT = { martial = 3 }
-		}
-		modifier = {
-			factor = 1.25
-			NOT = { martial = 1 }
 		}
 	}
 
@@ -920,7 +920,7 @@ character_event = {
 		}
 		modifier = {
 			factor = 0.75
-			trait = strong
+			is_strong_trigger = yes
 		}
 		modifier = {
 			factor = 0.75
@@ -936,23 +936,23 @@ character_event = {
 		}
 		modifier = {
 			factor = 1.25
-			NOT = { trait = dwarf }
+			trait = dwarf
 		}
 		modifier = {
 			factor = 1.25
-			NOT = { trait = weak }
+			is_weak_trigger = yes
 		}
 		modifier = {
 			factor = 1.25
-			NOT = { trait = ill }
+			trait = ill
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { martial = 6 }
 		}
 		modifier = {
 			factor = 1.25
 			NOT = { martial = 3 }
-		}
-		modifier = {
-			factor = 1.25
-			NOT = { martial = 1 }
 		}
 	}
 
@@ -2436,7 +2436,7 @@ character_event = {
 		}
 		modifier = {
 			factor = 1.5
-			trait = strong
+			is_strong_trigger = yes
 		}
 		modifier = {
 			factor = 0.9

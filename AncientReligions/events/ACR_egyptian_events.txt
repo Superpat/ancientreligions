@@ -5,7 +5,8 @@
 #
 # Event ID ancrel.4000 - ancrel.4009 Decision Events
 # Event ID ancrel.4010 - ancrel.4019 Sed festival
-# Event ID ancrel.4100 - ancrel.4149 Nile Flooding
+# Event ID ancrel.4100 - ancrel.4199 Nile Flooding
+# Event ID ancrel.4200 - ancrel.4399 Kemetic Revival
 ###################################################
 
 namespace = ancrel
@@ -39,7 +40,7 @@ province_event = {
 		has_global_flag = luxor_restoring
 		province_id = 795 # Asyut
 		NOT = { has_global_flag = luxor_restored }
-		had_province_flag = { flag = reb_luxor_1 days = 1255 random = 180 }
+		had_province_flag = { flag = reb_luxor_1 days = 1075 }
 		NOT = { has_province_flag = reb_luxor_2 }
 	}
 
@@ -48,7 +49,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 7
+		months = 6
 	}
 	
 	option = {
@@ -72,7 +73,6 @@ province_event = {
 }
 
 # Luxor Restoration Part 3 ~2 years
-
 province_event = {
 	id = ancrel.4002
 	title = EVTNAME_ancrel_4002
@@ -84,11 +84,11 @@ province_event = {
 		province_id = 795 # Asyut
 		NOT = { has_global_flag = luxor_restored }
 		has_province_flag = reb_luxor_1
-		had_province_flag = { flag = reb_luxor_2 days = 638 random = 92 }		
+		had_province_flag = { flag = reb_luxor_2 days = 546 }		
 	}
 
 	mean_time_to_happen = {
-		days = 7
+		months = 3
 	}
 	
 	immediate = {
@@ -185,7 +185,7 @@ province_event = {
 	picture = GFX_evt_pyramid
 
 	trigger = {
-		had_province_flag = { flag = pyramid_building_prov days = 3650 random = 3650 }
+		had_province_flag = { flag = pyramid_building_prov days = 3650 }
 		owner = { 
 			NOT = { has_character_flag = pyramid_built}
 		}
@@ -196,7 +196,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 7
+		years = 5
 	}
 	
 	option = {
@@ -1299,7 +1299,7 @@ character_event = {
 character_event = {
 	id = ancrel.4151
 	desc = ancrel.4151.desc
-	picture = GFX_evt_cathedral_soa_egyptian_pagan
+	picture = GFX_evt_castle_tower_egyptian_pagan
 
 	is_triggered_only = yes
 	
@@ -1839,9 +1839,6 @@ character_event = {
 	prisoner = no
 	
 	trigger = {
-		#war = no
-		#in_command = no
-		#is_abroad = no
 		OR = {
 			religion = egyptian_pagan
 			religion = aten_pagan
@@ -2000,7 +1997,7 @@ character_event = {
 		is_abroad = no
 		any_spouse = {
 			is_adult = yes
-			NOR = { 
+			NOR = {
 				age = 40
 				trait = incapable
 				trait = inbred
@@ -2080,9 +2077,7 @@ character_event = {
 				chance = 25
 			}
 			random = {			
-				spouse = {
-					impregnate = ROOT
-				}
+				impregnate = ROOT
 				chance = 25
 			}
 			opinion = {
@@ -2118,6 +2113,10 @@ character_event = {
 		war = no
 		in_command = no
 		is_abroad = no
+		OR = {
+			religion = egyptian_pagan
+			religion = aten_pagan
+		}
 	}
 	
 	weight_multiplier = {
@@ -2165,3 +2164,1094 @@ character_event = {
 		}
 	}
 }
+
+# be nice to grills
+character_event = {
+	id = ancrel.4161
+	desc = ancrel.4161.desc
+	picture = GFX_evt_maiden_egyptian_pagan
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	only_men = yes
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = egyptian_pagan
+			religion = aten_pagan
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+		modifier = {
+			factor = 0.5
+			trait = cruel
+		}
+		modifier = {
+			factor = 2
+			trait = just
+		}
+		modifier = {
+			factor = 0.5
+			trait = arbitrary
+		}
+	}
+
+	option = { # Be a feminazi
+		name = ancrel.4161.a
+		piety = 10
+		prestige = -10
+		any_courtier = {
+			limit = {
+				is_female = yes
+				is_adult = yes
+			}
+			opinion = {
+				modifier = opinion_egyptian_respects_women
+				who = ROOT
+				years = 5
+			}
+		}
+		any_courtier = {
+			limit = {
+				is_female = no
+				is_adult = yes
+				NOR = {
+					trait = kind
+					trait = zealous
+					trait = just
+					trait = humble
+				}
+			}
+			opinion = {
+				modifier = opinion_egyptian_stop_being_feminazi
+				who = ROOT
+				years = 5
+			}
+		}
+	}
+	option = { # Be a MRA jerk
+		name = ancrel.4161.b
+		piety = -10
+		prestige = 10
+		any_courtier = {
+			limit = {
+				is_female = yes
+				is_adult = yes
+			}
+			opinion = {
+				modifier = opinion_egyptian_disrespects_women
+				who = ROOT
+				years = 5
+			}
+		}
+	}
+}
+
+# Senet game - start
+character_event = {
+	id = ancrel.4162
+	desc = ancrel.4162.desc
+	picture = GFX_evt_tuscan_Country_egyptian_pagan
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		any_courtier = {
+			is_adult = yes
+			NOT = { trait = incapable }
+			religion = ROOT
+			ai = yes
+		}
+		OR = {
+			religion = egyptian_pagan
+			religion = aten_pagan
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 3
+			trait = gamer
+		}
+		modifier = {
+			factor = 2
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = shy
+		}
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+		modifier = {
+			factor = 0.5
+			trait = cruel
+		}
+		modifier = {
+			factor = 2
+			trait = humble
+		}
+		modifier = {
+			factor = 0.5
+			trait = proud
+		}
+	}
+
+	option = {
+		name = ancrel.4162.a
+		random_courtier = {
+			limit = {
+				is_adult = yes
+				NOT = { trait = incapable }
+				religion = ROOT
+				ai = yes
+			}
+			character_event = { id = ancrel.4163 tooltip = ancrel.4163.tooltip }
+		}
+	}
+}
+
+# Senet game - courtier event
+character_event = {
+	id = ancrel.4163
+	desc = ancrel.4163.desc
+	picture = GFX_evt_tuscan_Country_egyptian_pagan
+
+	is_triggered_only = yes
+
+	option = { # Ok!
+		name = ancrel.4163.a
+		FROM = {
+			random_list = {
+				50 = { character_event = { id = ancrel.4164 tooltip = ancrel.4164.tooltip } }
+				50 = { character_event = { id = ancrel.4165 tooltip = ancrel.4165.tooltip } }
+			}
+		}
+	}
+}
+
+# Senet game - courtier wins
+character_event = {
+	id = ancrel.4164
+	desc = ancrel.4164.desc
+	picture = GFX_evt_tuscan_Country_egyptian_pagan
+
+	is_triggered_only = yes
+
+	option = { # Ok!
+		name = ancrel.4164.a
+		random = {
+			add_trait = humble
+			chance = 20
+		}
+		FROM = {
+			opinion = {
+				modifier = opinion_egyptian_senet_game
+				who = ROOT
+				years = 1
+			}
+			reverse_opinion = {
+				modifier = opinion_egyptian_senet_game
+				who = ROOT
+				years = 1
+			}		
+		}
+	}
+	option = { # Ok!
+		name = ancrel.4164.b
+		random = {
+			add_trait = wroth
+			chance = 20
+		}
+		FROM = {
+			opinion = {
+				modifier = opinion_egyptian_sore_loser
+				who = ROOT
+				years = 1
+			}
+			reverse_opinion = {
+				modifier = opinion_egyptian_lost_senet_game
+				who = ROOT
+				years = 1
+			}		
+		}
+	}
+}
+
+# Senet game - liege wins
+character_event = {
+	id = ancrel.4165
+	desc = ancrel.4165.desc
+	picture = GFX_evt_tuscan_Country_egyptian_pagan
+
+	is_triggered_only = yes
+
+	option = { # Ok!
+		name = ancrel.4165.a
+		piety = 5
+		FROM = {
+			opinion = {
+				modifier = opinion_egyptian_senet_game
+				who = ROOT
+				years = 1
+			}
+			reverse_opinion = {
+				modifier = opinion_egyptian_senet_game
+				who = ROOT
+				years = 1
+			}		
+		}
+	}
+	option = { # Ok!
+		name = ancrel.4165.b
+		prestige = 5
+		FROM = {
+			opinion = {
+				modifier = opinion_egyptian_smug_winner
+				who = ROOT
+				years = 1
+			}
+			reverse_opinion = {
+				modifier = opinion_egyptian_pathetic_senet_player
+				who = ROOT
+				years = 1
+			}		
+		}
+	}
+}
+
+# Ghost of Akhenaten?
+character_event = {
+	id = ancrel.4166
+	desc = ancrel.4166.desc
+	picture = GFX_evt_desert
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		any_courtier = {
+			is_adult = yes
+			NOT = { trait = incapable }
+			religion = ROOT
+			ai = yes
+		}
+		religion = egyptian_pagan
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = cynical
+		}
+		modifier = {
+			factor = 0.5
+			trait = zealous
+		}
+		modifier = {
+			factor = 2
+			trait = paranoid
+		}
+		modifier = {
+			factor = 0.5
+			trait = trusting
+		}
+		modifier = {
+			factor = 2
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 0.5
+			trait = just
+		}
+	}
+
+	option = { # Ok!
+		name = ancrel.4166.a
+		random_courtier = {
+			limit = {
+				is_adult = yes
+				NOT = { trait = incapable }
+				religion = ROOT
+				ai = yes			
+			}
+			random_list = {
+				80 = {}
+				15 = { add_trait = ill }
+				4 = { add_trait = pneumonic }
+				1 = {
+					death = { death_reason = death_natural }
+				}
+			}
+		}
+	}
+}
+
+# Shezmu execution
+character_event = {
+	id = ancrel.4167
+	desc = ancrel.4167.desc
+	picture = GFX_evt_small_town_egyptian_pagan
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		any_courtier = {
+			is_adult = yes
+			NOT = { trait = incapable }
+			religion = ROOT
+			ai = yes
+		}
+		OR = {
+			religion = egyptian_pagan
+			religion = aten_pagan
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = just
+		}
+		modifier = {
+			factor = 0.5
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 2
+			trait = wroth
+		}
+		modifier = {
+			factor = 0.5
+			trait = patient
+		}
+		modifier = {
+			factor = 2
+			trait = cruel
+		}
+		modifier = {
+			factor = 0.5
+			trait = kind
+		}
+		modifier = {
+			factor = 2
+			trait = impaler
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}
+	}
+
+	option = { # Ok!
+		name = ancrel.4167.a
+		prestige = 5
+	}
+}
+
+###################################
+#
+# Ancient Religions
+# - Kemetic Revival Events
+#
+# ancrel.4200 - ancrel.4399 Flavor Events
+#
+# Author: theStormWeaver/xirsoi
+#
+###################################
+
+###################
+## Desert Nomads ##
+###################
+# you are on pilgrimage/hajj and get caught in a sandstorm
+character_event = {
+	id = ancrel.4200
+	desc = ancrel.4200.desc
+	picture = GFX_evt_sand_desert
+
+	only_rulers = yes
+	is_adult = yes
+	only_capable = yes
+	is_inaccessible_trigger = no
+
+	trigger = {
+		NOR = { 
+			has_character_flag = lost_in_sandstorm
+			has_character_flag = awaiting_the_tribes
+			primary_title = { is_landless_type_title = yes }
+		}
+		OR = {
+			trait = on_hajj
+			AND = {
+				trait = on_pilgrimage
+				OR = {
+					has_character_flag = pilgrimage_to_jerusalem
+					has_character_flag = pilgrimage_to_antioch
+					has_character_flag = pilgrimage_to_axum
+				}
+			}
+		}
+	}
+
+	immediate = {
+		set_character_flag = lost_in_sandstorm
+	}
+
+	mean_time_to_happen = {
+		days = 365 # should be quite uncommon, since pilgrimages/hajj only lasts about 30 days
+
+		modifier = {
+			factor = 5
+			ai = yes  # even less common for ai
+		}
+		modifier = { # assured if a player in debug mode
+			factor = 0.01
+			ai = no
+			has_global_flag = ancrel_debug
+		}		
+	}
+
+	option = { # may <god> guide me
+		name = ancrel.4200.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4201 }
+		}
+	}
+}
+
+# seperated from the caravan, you spot a shadow that looks like a building
+character_event = {
+	id = ancrel.4201
+	desc = ancrel.4201.desc
+	picture = GFX_evt_sand_desert
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.4201.a
+		custom_tooltip = {
+			text = ancrel.4201.a.tt
+			hidden_tooltip = {
+				random_list = {
+					10 = { character_event = { id = ancrel.4202 } }
+					10 = {
+						character_event = { id = ancrel.4203 }
+						modifier = {
+							factor = 0
+							ai = no
+							has_global_flag = ancrel_debug
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# the shadow is a temple that hums with ancient power
+character_event = {
+	id = ancrel.4202
+	desc = ancrel.4202.desc
+	picture = GFX_evt_sand_desert
+
+	is_triggered_only = yes
+
+	option = { # move on
+		name = ancrel.4202.a
+		custom_tooltip = {
+			text = ancrel.4202.a.tt
+			hidden_tooltip = {
+				random_list = {
+					90 = { character_event = { id = ancrel.4209 } }
+					10 = {
+						clr_character_flag = lost_in_sandstorm
+						death = { death_reason = death_missing }
+					}
+				}
+			}
+		}
+
+		ai_chance = {
+			factor = 50
+
+			modifier = {
+				factor = 1.2
+				trait = craven
+			}
+			modifier = {
+				factor = 1.2
+				trait = zealous
+			}
+			modifier = {
+				factor = 1.2
+				trait = paranoid
+			}
+			modifier = {
+				factor = 1.2
+				trait = slothful
+			}
+		}
+	}
+
+	option = { # take shelter
+		name = ancrel.4202.b
+		custom_tooltip = {
+			text = ancrel.4202.b.tt
+			hidden_tooltip = {
+				character_event = { id = ancrel.4204}
+			}
+		}
+
+		ai_chance = {
+			factor = 50
+
+			modifier = {
+				factor = 1.2
+				trait = brave
+			}
+			modifier = {
+				factor = 1.2
+				trait = cynical
+			}
+			modifier = {
+				factor = 1.2
+				trait = trusting
+			}
+			modifier = {
+				factor = 1.2
+				trait = diligent
+			}
+		}
+	}
+}
+
+# the building is an inn on the pilgrim's highway, you're saved!
+character_event = {
+	id = ancrel.4203
+	desc = ancrel.4203.desc
+	picture = GFX_evt_small_town_aten_pagan
+
+	is_triggered_only = yes
+
+	immediate = {
+		clr_character_flag = lost_in_sandstorm
+	}
+
+	option = {
+		name = ancrel.4203.a
+	}
+}
+
+# as the storm rages on an old man enters the temple
+character_event = {
+	id = ancrel.4204
+	desc = ancrel.4204.desc
+	picture = GFX_evt_sand_desert
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.4204.a
+		custom_tooltip = {
+			text = ancrel.4204.a.tt
+			hidden_tooltip = { character_event = { id = ancrel.4205 days = 1 } }
+		}
+	}
+}
+
+# you learn the old man is from one of many tribes in the desert
+# that still worship the old gods
+character_event = {
+	id = ancrel.4205
+	desc = ancrel.4205.desc
+	picture = GFX_evt_recovery
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.4205.a
+		custom_tooltip = {
+			text = ancrel.4205.a.tt
+			hidden_tooltip = { character_event = { id = ancrel.4206 days = 1 } }
+		}
+	}
+}
+
+# the old man implies that "old man Set" has guided you here
+# it is your destiny to find this temple
+long_character_event = {
+	id = ancrel.4206
+	desc = ancrel.4206.desc
+	picture = GFX_evt_nomad_camp
+
+	is_triggered_only = yes
+
+	immediate = {
+		clr_character_flag = lost_in_sandstorm
+	}
+
+	option = { # accept the ways of the old gods as your own
+		name = ancrel.4206.a
+		custom_tooltip = {
+			text = ancrel.4206.a.tt
+			hidden_tooltip = {
+				character_event = { id = ancrel.4207 }
+			}
+		}
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 1.2
+				trait = proud
+			}
+			modifier = {
+				factor = 1.2
+				trait = cynical
+			}
+			modifier = {
+				factor = 1.2
+				trait = brave
+			}
+			modifier = {
+				factor = 1.2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 1.2
+				trait = ambitious
+			}
+		}
+	}
+
+	option = { # reject the pagans, and continue on your journey
+		name = ancrel.4206.b
+		custom_tooltip = {
+			text = ancrel.4206.b.tt
+			hidden_tooltip = {
+				character_event = { id = ancrel.4208 }
+			}
+		}
+
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 1.2
+				trait = humble
+			}
+			modifier = {
+				factor = 1.2
+				trait = zealous
+			}
+			modifier = {
+				factor = 1.2
+				trait = craven
+			}
+			modifier = {
+				factor = 1.2
+				trait = content
+			}
+		}
+	}
+}
+
+# finish the hajj/pilgrimage (cause it can't be stopped), then convert
+character_event = {
+	id = ancrel.4207
+	desc = ancrel.4207.desc
+	picture = GFX_evt_nomad_camp
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.4207.a
+		custom_tooltip = {
+			text = ancrel.4207.a.tt
+			hidden_tooltip = {
+				character_event = { id = ancrel.4210 days = 60 }
+			}
+		}
+	}
+}
+
+# you reject there ways, and return to your people
+character_event = {
+	id = ancrel.4208
+	desc = ancrel.4208.desc
+	picture = GFX_evt_nomad_camp
+
+	is_triggered_only = yes
+
+	immediate = {
+		clr_character_flag = lost_in_sandstorm
+	}
+
+	option = {
+		name = ancrel.4208.a
+		random = {
+			chance = 20
+			add_trait = zealous
+		}
+	}
+}
+
+# after avoiding the temple, you find your caravan and continue the journey
+character_event = {
+	id = ancrel.4209
+	desc = ancrel.4209.desc
+	picture = GFX_evt_desert
+
+	is_triggered_only = yes
+
+	immediate = {
+		clr_character_flag = lost_in_sandstorm
+	}
+
+	option = {
+		name = ancrel.4209.a
+	}
+}
+
+# the tribes come to your banner (event troops) and you finally convert
+character_event = {
+	id = ancrel.4210
+	desc = ancrel.4210.desc
+	picture = GFX_evt_warrior_banners
+
+	is_triggered_only = yes
+
+	immediate = {
+		clr_character_flag = lost_in_sandstorm
+	}
+
+	option = {
+		name = ancrel.4210.a
+		if = {
+			limit = {
+				d_shiite = {
+					holder = ROOT
+				}
+			}
+			unsafe_destroy_landed_title = d_shiite
+		}
+		if = {
+			limit = {
+				d_sunni = {
+					holder = ROOT
+				}
+			}
+			unsafe_destroy_landed_title = d_sunni
+		}
+		if = {
+			limit = {
+				d_yazidi = {
+					holder = ROOT
+				}
+			}
+			unsafe_destroy_landed_title = d_yazidi
+		}
+		if = {
+			limit = {
+				d_ibadi = {
+					holder = ROOT
+				}
+			}
+			unsafe_destroy_landed_title = d_ibadi
+		}
+		if = {
+			limit = {
+				d_kharijite = {
+					holder = ROOT
+				}
+			}
+			unsafe_destroy_landed_title = d_kharijite
+		}
+		if = {
+			limit = {
+				d_hurufi = {
+					holder = ROOT
+				}
+			}
+			unsafe_destroy_landed_title = d_hurufi
+		}
+
+		religion = egyptian_pagan
+		
+		primary_title = { 
+			ROOT = {
+				capital_scope = {
+					# tribal chief 1
+					create_character = {
+						name = "Menkhaf"
+						female = no
+						age = 42
+						culture = bedouin_arabic
+						religion = egyptian_pagan
+						employer = PREVPREV
+						attributes = {
+						    martial = 12
+						    diplomacy = 6
+						    stewardship = 9
+						    intrigue = 8
+						    learning = 6
+						}
+						trait = zealous
+						trait = cavalry_leader
+						trait = holy_warrior
+						trait = mystic
+						trait = skilled_tactician
+					}
+					new_character = {
+						spawn_unit = {
+						  owner = ROOT
+						  province = PREV
+						  home = PREV
+						  leader = THIS
+						  troops = {
+						    light_cavalry = { 600 600 }
+						    horse_archers = { 400 400 }
+						  }
+						  attrition = 0
+						  disband_on_peace = no
+						  cannot_inherit = yes
+						  maintenance_multiplier = 0.5
+						}
+					}
+					# tribal chief 2
+					create_character = {
+						name = "Sihathor"
+						female = no
+						age = 32
+						culture = bedouin_arabic
+						religion = egyptian_pagan
+						employer = PREVPREV
+						attributes = {
+							martial = 12
+							diplomacy = 6
+							stewardship = 6
+							intrigue = 12
+							learning = 8
+						}
+						trait = zealous
+						trait = cavalry_leader
+						trait = desert_terrain_leader
+						trait = tough_soldier
+					}
+					new_character = {
+						spawn_unit = {
+						  owner = ROOT
+						  province = PREV
+						  home = PREV
+						  leader = THIS
+						  troops = {
+						    light_cavalry = { 600 600 }
+						    horse_archers = { 400 400 }
+						  }
+						  attrition = 0
+						  disband_on_peace = no
+						  cannot_inherit = yes
+						  maintenance_multiplier = 0.5
+						}
+					}
+					# tribal chief 3
+					create_character = {
+						name = "Wenishezmu"
+						female = no
+						age = 29
+						culture = bedouin_arabic
+						religion = egyptian_pagan
+						employer = PREVPREV
+						attributes = {
+							martial = 9
+							diplomacy = 8
+							stewardship = 6
+							intrigue = 8
+							learning = 12
+						}
+						trait = zealous
+						trait = cavalry_leader
+						trait = rough_terrain_leader
+						trait = tough_soldier
+					}
+					new_character = {
+						spawn_unit = {
+						  owner = ROOT
+						  province = PREV
+						  home = PREV
+						  leader = THIS
+						  troops = {
+						    light_cavalry = { 600 600 }
+						    horse_archers = { 400 400 }
+						  }
+						  attrition = 0
+						  disband_on_peace = no
+						  cannot_inherit = yes
+						  maintenance_multiplier = 0.5
+						}
+					}
+					# the old man
+					create_character = {
+						name = "Merptah"
+						has_nickname = nick_the_old
+						female = no
+						age = 55
+						culture = bedouin_arabic
+						religion = egyptian_pagan
+						employer = PREVPREV
+						attributes = {
+							martial = 3
+							diplomacy = 8
+							stewardship = 5
+							intrigue = 7
+							learning = 10
+						}
+						trait = zealous
+						trait = mastermind_theologian
+						trait = mystic
+						trait = kind
+					}
+				} 
+			}
+		}
+	}
+}
+
+#########################
+## Surveying a Pyramid ##
+#########################
+
+# a servant informs you that a previously unknown entrance
+# to a pyramid has been uncovered
+# [on_bi_yearly_pulse]
+character_event = {
+	id = ancrel.4215
+	desc = ancrel.4215.desc
+	picture = GFX_evt_pyramid
+
+	only_rulers = yes
+	min_age = 16
+	only_capable = yes
+	prisoner = no
+
+	is_triggered_only = yes
+
+	weight_multiplier = {
+		days = 10
+		modifier = {
+			factor = 0
+			is_on_nile_trigger = no
+		}
+	}
+
+	option = { # survey the pyramid
+		option = ancrel.4215.a
+		custom_tooltip = {
+			text = ancrel.4215.a.tt
+			hidden_tooltip = {
+				character_event = { id = ancrel.4216 days = 3 }
+			}
+		}
+	}
+
+	option = { # don't survey the pyramid
+		option = ancrel.4215.b
+	}
+}
+
+# you and your entourage arrive at the entrance to the pyramid
+character_event = {
+	id = ancrel.4216
+	desc = ancrel.4216.desc
+	picture = GFX_evt_pyramid
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.4216.b
+		custom_tooltip = {
+			text = ancrel.4216.b.tt
+			hidden_tooltip = {
+				character_event = { id = ancrel.4217 days = 0 }
+			}
+		}
+	}
+}
+
+# you and your men have reached a fork in the tunnel, which way do you go?
+character_event = {
+	id = ancrel.4217
+	desc = ancrel.4217.desc
+	picture = GFX_evt_pyramid
+
+	is_triggered_only = yes
+
+	option = { # left?
+		
+	}
+
+	option = { # right?
+
+	}
+
+	option = { # back?
+		trigger = {
+			trait = craven
+		}
+		tooltip_info = craven
+
+		name = ancrel.4216.a
+	}
+}
+
+############################
+## Lost Heir of Cleopatra ##
+############################

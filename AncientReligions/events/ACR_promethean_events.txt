@@ -5,7 +5,7 @@
 #
 # Event IDs ancrel.3400-3549 are reserved
 #
-# ancrel.3400 - 3410	various maintenance type events
+# ancrel.3400 - 3410	various events
 # ancrel.3411 - 3420	Rebuilding of Crotone
 # ancrel.3450 - 3549	The Unbinding Festival
 # ancrel.3550 - 3599	Holy Order Events
@@ -119,6 +119,153 @@ character_event = {
 		}
 	}
 }
+
+# Promethean child comes of age and chooses which school to join
+# [on_adulthood]
+character_event = {
+	id = ancrel.3403
+	desc = ancrel.3403.desc
+	picture = GFX_evt_library
+
+	is_triggered_only = yes
+
+	religion = promethean_pagan
+	
+	immediate = {
+		set_character_flag = acr_changed_school
+	}
+
+	option = {
+		name = ancrel.3403.a
+		add_trait = stoic
+
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 1.2
+				trait = cynical
+			}
+			modifier = {
+				factor = 1.2
+				trait = just
+			}
+		}
+	}
+	option = {
+		name = ancrel.3403.b
+		add_trait = skeptic
+
+		ai_chance = {
+			factor = 35
+			modifier = {
+				factor = 0.75
+				trait = ambitious
+			}
+		}
+	}
+	option = {
+		name = ancrel.3403.c
+		add_trait = epicurean
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.5
+				trait = gluttonous
+			}
+			modifier = {
+				factor = 0.5
+				trait = lustful
+			}
+			modifier = {
+				factor = 2
+				trait = content
+			}
+			modifier = { # the ambitious would never choose Epicureanism
+				factor = 0
+				trait = ambitious
+			}
+		}
+	}
+}
+
+# Promethean has decided to change their school of thought
+# [decision]
+character_event = {
+	id = ancrel.3404
+	desc = ancrel.3404.desc
+	picture = GFX_evt_library
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.3403.a
+		trigger = {	NOT = {	trait = stoic } }
+
+		add_trait = stoic
+
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 1.2
+				trait = cynical
+			}
+			modifier = {
+				factor = 1.2
+				trait = just
+			}
+		}
+	}
+	option = {
+		name = ancrel.3403.b
+		trigger = {	NOT = {	trait = skeptic } }
+
+		add_trait = skeptic
+
+		ai_chance = {
+			factor = 35
+			modifier = {
+				factor = 0.75
+				trait = ambitious
+			}
+		}
+	}
+	option = {
+		name = ancrel.3403.c
+		trigger = {	NOT = {	trait = epicurean } }
+
+		add_trait = epicurean
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 0.5
+				trait = gluttonous
+			}
+			modifier = {
+				factor = 0.5
+				trait = lustful
+			}
+			modifier = {
+				factor = 2
+				trait = content
+			}
+			modifier = { # the ambitious would never choose Epicureanism
+				factor = 0
+				trait = ambitious
+			}
+		}
+	}
+}
+
 ###################################################################
 #
 # Rebuilding Crotone
@@ -155,7 +302,7 @@ province_event = {
 		has_global_flag = acr_crotone_building
 		province_id = 337 # Consenza
 		NOT = { has_global_flag = acr_crotone_rebuilt }
-		had_province_flag = { flag = acr_reb_crotone_1 days = 1225 random = 180 }
+		had_province_flag = { flag = acr_reb_crotone_1 days = 1045 }
 		NOT = { has_province_flag = acr_reb_crotone_2 }
 	}
 
@@ -164,7 +311,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 7
+		months = 6
 	}
 	
 	option = {
@@ -195,15 +342,15 @@ province_event = {
 	picture = GFX_evt_roman_temple
 	
 	trigger = {
-		has_global_flag = acr_crotone_rebuilding
+		has_global_flag = acr_crotone_building
 		province_id = 337 # Consenza
-		NOT = { has_global_flag = acr_crotone_restored }
+		NOT = { has_global_flag = acr_crotone_rebuilt }
 		has_province_flag = acr_reb_crotone_1
-		had_province_flag = { flag = acr_reb_crotone_2 days = 638 random = 92 }		
+		had_province_flag = { flag = acr_reb_crotone_2 days = 546 }		
 	}
 
 	mean_time_to_happen = {
-		days = 7
+		months = 3
 	}
 	
 	immediate = {
@@ -227,7 +374,7 @@ province_event = {
 					holder = PREV
 				}
 			}
-
+			religion_authority = { modifier = crotone_academy }
 			prestige = 500
 		}
 		hidden_tooltip = {
@@ -456,7 +603,7 @@ character_event = {
 	}
 	option = { # lets not be cheap
 		name = ancrel.3452.b
-		set_character_flag = unbinding_moderate_festivities
+		set_character_flag = unbinding_middle_festivities
 
 		scaled_wealth = -0.1
 		prestige = 25
@@ -487,7 +634,7 @@ character_event = {
 	}
 	option = { # lets make it a festival to remember!
 		name = ancrel.3452.c
-		set_character_flag = undinding_grand_festivities
+		set_character_flag = unbinding_grand_festivities
 
 		scaled_wealth = -0.2
 		prestige = 50

@@ -4,21 +4,28 @@
 
 sickles_composition = {
 	levy_size = 6
-	heavy_infantry = 500
-	knights = 250
-	horse_archers = 250	
+	heavy_infantry = 250
+	knights = 125
+	horse_archers = 125
 }
 
 steel_composition = {
 	levy_size = 6
-	heavy_infantry = 300
-	pikemen = 200
-	archers = 300
-	knights = 200
+	heavy_infantry = 150
+	pikemen = 100
+	archers = 150
+	knights = 100
 }
 
 hellenic_composition = {
-	levy_size = 4
-	heavy_infantry = 2000
-	archers = 500
+	levy_size = 6
+	heavy_infantry = 400
+	archers = 100
+}
+
+sacred_band = {
+	levy_size = 6
+	heavy_infantry = 100
+	pikemen = 350
+	archers = 50
 }

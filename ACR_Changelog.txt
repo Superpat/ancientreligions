@@ -9,6 +9,7 @@ Celtic:
 - Gaulish culture now has special localizations for titles.
 - Non-theocracy title localizations have been removed from Celtic and Druidic paganism.
 -- It is my opinion that feudal, republican, and tribal titles should be derived from culture.
+- Fixed bad localization for the Warden of the Wild minor title description.
 
 Promethean:
 - Prometheans now get an event on adulthood to choose between the three Neoplatonist traits; Stoic, Skeptic, and Epicurean.

@@ -11,6 +11,10 @@ Celtic:
 -- It is my opinion that feudal, republican, and tribal titles should be derived from culture.
 - Fixed bad localization for the Warden of the Wild minor title description.
 
+Hellenic:
+- Quite a few Hellenic flavor events courtesy of retired modder cybrxkhan.
+-- Includes one really long event chain, but it's quite rare!
+
 Promethean:
 - Prometheans now get an event on adulthood to choose between the three Neoplatonist traits; Stoic, Skeptic, and Epicurean.
 -- You can switch to a different trait by decision every 5 years for 200 piety.

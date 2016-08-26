@@ -1,0 +1,5823 @@
+#######################################################################################
+#
+#
+# Micellaneous Flavor Events for Hellenic Pagans
+#
+# ancrel.4200-4299 reserved
+#
+# List of stuff:
+#
+# ancrel.4200-4249 Generic Hellenic Flavor Events
+# ancrel.4250-4349 I Can't Believe My Virgin Goddess of the Hunt is This Cute Event Chain (Become bff with Artemis)
+#
+#######################################################################################
+
+
+namespace = ancrel
+
+
+# HadesxPersephone OTP
+character_event = {
+	id = ancrel.4200
+	desc = ancrel.4200.desc
+	picture = GFX_evt_pomegranate
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = cynical
+		}
+		modifier = {
+			factor = 0.5
+			trait = zealous
+		}
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+		modifier = {
+			factor = 0.5
+			trait = envious
+		}
+		modifier = {
+			factor = 2
+			trait = gardener
+		}
+		modifier = {
+			factor = 0.5
+			trait = hunter
+		}
+		modifier = {
+			factor = 2
+			trait = just
+		}
+		modifier = {
+			factor = 0.5
+			trait = arbitrary
+		}
+	}
+
+	option = { # Hades ur a dick
+		name = ancrel.4200.a
+		custom_tooltip = { text = ancrel.4200.tooltip.1 }
+		prestige = 5
+		add_character_modifier = {
+			name = VIET_greek_mythology_thoughts
+			duration = 365
+		}
+	}
+	option = { # ILLUMINERTY
+		name = ancrel.4200.b
+		custom_tooltip = { text = ancrel.4200.tooltip.2 }
+		random_list = {
+			50 = { prestige = 5 }
+			50 = { piety = 5 }
+		}
+		add_character_modifier = {
+			name = VIET_greek_mythology_thoughts
+			duration = 365
+		}
+	}
+	option = { # Hades is a kind, lonely, sexy misundersetood god who rules a third of the universe and is looking for a wife and companionship
+		name = ancrel.4200.c
+		custom_tooltip = { text = ancrel.4200.tooltip.3 }
+		piety = 5
+		add_character_modifier = {
+			name = VIET_greek_mythology_thoughts
+			duration = 365
+		}
+	}
+	option = { # Demeter wants the Hades D
+		name = ancrel.4200.d
+		custom_tooltip = { text = ancrel.4200.tooltip.4 }
+		random_list = {
+			50 = { prestige = 5 }
+			50 = { piety = 5 }
+		}
+		add_character_modifier = {
+			name = VIET_greek_mythology_thoughts
+			duration = 365
+		}
+	}
+}
+
+# ApolloxArtemis twincest ftw
+character_event = {
+	id = ancrel.4201
+	desc = ancrel.4201.desc
+	picture = GFX_evt_sun_and_moon
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = cynical
+		}
+		modifier = {
+			factor = 0.5
+			trait = zealous
+		}
+		modifier = {
+			factor = 2
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}
+		modifier = {
+			factor = 2
+			trait = proud
+		}
+		modifier = {
+			factor = 0.5
+			trait = humble
+		}
+		modifier = {
+			factor = 2
+			trait = just
+		}
+		modifier = {
+			factor = 0.5
+			trait = arbitrary
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_pondered_artemis_apollo_twincest
+	}
+
+	option = { # Just siblings, is all
+		name = ancrel.4201.a
+		piety = 5
+		add_character_modifier = {
+			name = VIET_greek_mythology_thoughts
+			duration = 365
+		}
+	}
+	option = { # I ship Apollo and Artemis
+		name = ancrel.4201.b
+		prestige = 5
+		add_character_modifier = {
+			name = VIET_greek_mythology_thoughts
+			duration = 365
+		}
+	}
+	option = { # we r zoroastrians lul
+		name = ancrel.4201.c
+		random_list = {
+			50 = { prestige = 5 }
+			50 = { piety = 5 }
+		}
+		add_character_modifier = {
+			name = VIET_greek_mythology_thoughts
+			duration = 365
+		}
+	}
+	option = { # why not ask Artemis herself?
+		name = ancrel.4201.d
+		trigger = {
+			has_character_flag = VIET_hunted_with_artemis_twice
+		}
+		add_character_modifier = {
+			name = VIET_greek_mythology_thoughts
+			duration = 365
+		}
+		character_event = { id = ancrel.4264 tooltip = ancrel.4201.tooltip.0 days = 3 random = 10 }
+	}
+}
+
+# Zeus knocked me up
+character_event = {
+	id = ancrel.4202
+	desc = ancrel.4202.desc
+	picture = GFX_evt_zeus_on_throne
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = patient
+		}
+		modifier = {
+			factor = 0.5
+			trait = wroth
+		}
+		modifier = {
+			factor = 2
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 2
+			trait = lustful
+		}
+		modifier = {
+			factor = 0.5
+			trait = chaste
+		}
+		modifier = {
+			factor = 2
+			trait = just
+		}
+		modifier = {
+			factor = 0.5
+			trait = arbitrary
+		}
+	}
+
+	option = { # dismiss argument
+		name = ancrel.4202.a
+		piety = 5
+		prestige = 5
+		random_list = {
+			10 = { add_trait = slothful }
+			10 = { add_trait = just }
+			10 = { add_trait = content }
+			10 = { add_trait = cynical }
+			60 = {}
+		}
+	}
+	option = { # support husband - woman is clearly lying
+		name = ancrel.4202.b
+		add_character_modifier = {
+			name = VIET_not_convinced_Zeus
+			duration = 1000
+		}
+	}
+	option = { # support wife - her newborn is a child of Zeus!
+		name = ancrel.4202.c
+		add_character_modifier = {
+			name = VIET_convinced_Zeus
+			duration = 1000
+		}
+	}
+	option = { # if wife lets you have sex with her, you'll support her
+		name = ancrel.4202.d
+		trigger = {
+			NOT = { trait = chaste }
+			NOT = { trait = zealous }
+			NOT = { trait = celibate }
+			NOT = { trait = eunuch }
+		}
+		add_trait = lustful
+		piety = -20
+		custom_tooltip = { text = ancrel.4202.tooltip }
+	}
+}
+
+# Help beggar with Charon
+character_event = {
+	id = ancrel.4203
+	desc = ancrel.4203.desc
+	picture = GFX_evt_small_town_hellenic_pagan
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+		modifier = {
+			factor = 0.5
+			trait = cruel
+		}
+		modifier = {
+			factor = 2
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 2
+			trait = humble
+		}
+		modifier = {
+			factor = 0.5
+			trait = proud
+		}
+		modifier = {
+			factor = 2
+			trait = just
+		}
+		modifier = {
+			factor = 0.5
+			trait = arbitrary
+		}
+	}
+
+	option = {
+		name = ancrel.4203.a
+		wealth = -2
+		random = {
+			add_trait = charitable
+			chance = 25
+		}
+	}
+	option = {
+		name = ancrel.4203.b
+		random_list = {
+			30 = { add_trait = greedy }
+			10 = { add_trait = proud }
+			10 = { add_trait = cruel }
+			50 = {}
+		}
+	}
+}
+
+# Zeus pays a visit
+character_event = {
+	id = ancrel.4204
+	desc = ancrel.4204.desc
+	picture = GFX_evt_tuscan_country_byzantine
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = lustful
+		}
+		modifier = {
+			factor = 0.5
+			trait = chaste
+		}
+		modifier = {
+			factor = 2
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 2
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = shy
+		}
+		modifier = {
+			factor = 2
+			trait = gluttonous
+		}
+		modifier = {
+			factor = 0.5
+			trait = temperate
+		}
+	}
+
+	option = { #Let him in
+		name = ancrel.4204.a
+		prestige = -10
+		random_list = {
+			10 = { add_trait = charitable }
+			10 = { add_trait = kind }
+			10 = { add_trait = trusting }
+			70 = {}
+		}
+		hidden_tooltip = {
+			character_event = { id = ancrel.4206 }
+		}
+	}
+	option = { #Get rid of him
+		name = ancrel.4204.b
+		prestige = 10
+		hidden_tooltip = {
+			character_event = { id = ancrel.4205 }
+		}
+	}
+}
+
+# Zeus pays a visit - punishment
+character_event = {
+	id = ancrel.4205
+	desc = ancrel.4205.desc
+	picture = GFX_evt_zeus_on_throne
+
+	is_triggered_only = yes
+
+	option = { #uh oh
+		name = ancrel.4205.a
+		if = {
+			limit = {
+				NOT = { piety = 1000 }
+			}		
+			piety = -100
+		}
+		if = {
+			limit = {
+				piety = 1000
+			}		
+			piety = -500
+		}
+		add_character_modifier = {
+			name = VIET_gods_curse
+			duration = 3650
+		}
+		random = {
+			death = {
+				death_reason = death_natural
+			}
+			chance = 25
+		}
+	}
+}
+
+# Zeus pays a visit - reward
+character_event = {
+	id = ancrel.4206
+	desc = ancrel.4206.desc
+	picture = GFX_evt_zeus_on_throne
+
+	is_triggered_only = yes
+
+	option = { #yay
+		name = ancrel.4206.a
+		piety = 250
+		add_character_modifier = {
+			name = VIET_Zeus_blessing
+			duration = -1
+		}
+	}
+}
+
+
+# Stumble on some nymphs
+character_event = {
+	id = ancrel.4207
+	desc = ancrel.4207.desc
+	picture = GFX_evt_maiden_hellenic_pagan
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	max_age = 40
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	only_men = yes
+	
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		NOT = { trait = ugly }
+		NOT = { trait = hunchback }
+		NOT = { trait = harelip }
+		NOT = { trait = dwarf }
+		NOT = { trait = imbecile }
+		NOT = { trait = weak }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = lustful
+		}
+		modifier = {
+			factor = 0.5
+			trait = chaste
+		}
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+		modifier = {
+			factor = 2
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = shy
+		}
+		modifier = {
+			factor = 2
+			trait = slothful
+		}
+		modifier = {
+			factor = 0.5
+			trait = diligent
+		}
+		modifier = {
+			factor = 3
+			trait = attractive
+		}
+	}
+
+	option = { #Don't mind if I do!
+		name = ancrel.4207.a
+		if = {
+			limit = {
+				NOT = { trait = lustful }
+			}
+			random = {
+				add_trait = lustful
+				chance = 30
+			}
+		}
+		add_character_modifier = {
+			name = VIET_played_with_nymphs
+			duration = 1000
+		}
+	}
+	option = { # get awya
+		name = ancrel.4207.b
+		trigger = {
+			OR = {
+				is_married = yes
+				has_lover = yes
+			}
+		}		
+		if = {
+			limit = {
+				trait = lustful
+			}
+			random = {
+				remove_trait = lustful
+				chance = 60
+			}
+		}
+		if = {
+			limit = {
+				NOT = { trait = chaste }
+				NOT = { trait = lustful }
+			}
+			random = {
+				add_trait = chaste
+				chance = 20
+			}
+		}
+		piety = 5
+	}
+	option = { # stupid nymphs
+		name = ancrel.4207.c
+		add_character_modifier = {
+			name = the_prude
+			duration = 1000
+		}
+	}
+	option = { # i'll stay but don't touch me
+		name = ancrel.4207.d
+		if = {
+			limit = {
+				trait = lustful
+			}
+			random = {
+				remove_trait = lustful
+				chance = 50
+			}
+		}
+		random_list = {
+			30 = { add_trait = gregarious }
+			10 = { add_trait = chaste }
+			60 = {}
+		}
+		add_character_modifier = {
+			name = VIET_played_with_nymphs
+			duration = 1000
+		}
+	}
+}
+
+
+# Pharmakos
+character_event = {
+	id = ancrel.4208
+	desc = ancrel.4208.desc
+	picture = GFX_evt_small_town_hellenic_pagan
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		any_demesne_province = {
+			culture_group = byzantine
+			religion = ROOT
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = just
+		}
+		modifier = {
+			factor = 0.5
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 2
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}
+		modifier = {
+			factor = 2
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = shy
+		}
+		modifier = {
+			factor = 2
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.5
+			trait = slothful
+		}
+	}
+
+	option = { # observe ceremony
+		name = ancrel.4208.a
+		prestige = 5
+	}
+	option = { # stop the superstition!
+		name = ancrel.4208.b
+		random = {
+			add_trait = kind
+			chance = 25
+		}
+		random = {
+			add_trait = cynical
+			chance = 25
+		}
+	}
+}
+
+# Curse tablet
+character_event = {
+	id = ancrel.4209
+	desc = ancrel.4209.desc
+	picture = GFX_evt_hades_forest
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = cruel
+		}
+		modifier = {
+			factor = 0.5
+			trait = kind
+		}
+		modifier = {
+			factor = 2
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 0.5
+			trait = just
+		}
+		modifier = {
+			factor = 2
+			trait = deceitful
+		}
+		modifier = {
+			factor = 0.5
+			trait = honest
+		}
+		modifier = {
+			factor = 2
+			trait = paranoid
+		}
+		modifier = {
+			factor = 0.5
+			trait = trusting
+		}
+	}
+
+	option = { # Panic!
+		name = ancrel.4209.a
+		random_list = {
+			10 = { add_trait = craven }
+			10 = { add_trait = zealous }
+			10 = { add_trait = trusting }
+			70 = {}
+		}
+		random = {
+			add_character_modifier = {
+				name = VIET_curse_tablet
+				duration = 730
+			}
+			chance = 33
+		}
+	}
+	option = { # It's superstition
+		name = ancrel.4209.b
+		random = {
+			add_trait = cynical
+			chance = 20
+		}
+		random = {
+			add_character_modifier = {
+				name = VIET_curse_tablet
+				duration = 730
+			}
+			chance = 33
+		}
+	}
+	option = { # I don't fear some stupid writing!
+		name = ancrel.4209.c
+		random = {
+			add_trait = brave
+			chance = 20
+		}
+		random = {
+			add_character_modifier = {
+				name = VIET_curse_tablet
+				duration = 730
+			}
+			chance = 33
+		}
+	}
+}
+
+# Maid attempts to make you fall in love with her using binding spell
+character_event = {
+	id = ancrel.4210
+	desc = ancrel.4210.desc
+	picture = GFX_evt_stone_church_hellenic_pagan
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	max_age = 60
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	only_men = yes
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		NOT = { trait = ugly }
+		NOT = { trait = hunchback }
+		NOT = { trait = harelip }
+		NOT = { trait = dwarf }
+		NOT = { trait = imbecile }
+		NOT = { trait = weak }
+		NOT = { trait = cruel }
+		NOT = { trait = arbitrary }
+		NOT = { trait = wroth }
+		NOT = { has_character_flag = VIET_servant_binding_spell }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+		modifier = {
+			factor = 0.5
+			trait = envious
+		}
+		modifier = {
+			factor = 2
+			trait = patient
+		}
+		modifier = {
+			factor = 0.5
+			trait = deceitful
+		}
+		modifier = {
+			factor = 2
+			trait = humble
+		}
+		modifier = {
+			factor = 0.5
+			trait = proud
+		}
+		modifier = {
+			factor = 2
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = shy
+		}
+		modifier = {
+			factor = 3
+			trait = attractive
+		}
+		modifier = {
+			factor = 1.5
+			trait = strong
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_servant_binding_spell
+	}
+
+	option = { # Let's pretend this never happened
+		name = ancrel.4210.a
+		random = {
+			add_trait = content
+			chance = 10
+		}
+		custom_tooltip = { text = ancrel.4210.tooltip.1 }
+	}
+	option = { # Be mai lover
+		name = ancrel.4210.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				AND = {
+					trait = chaste
+					OR = {
+						has_lover = yes
+						is_married = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 0.1
+				OR = {
+					has_lover = yes
+					is_married = yes
+				}
+			}
+		}
+		random = {
+			add_trait = lustful
+			chance = 33
+		}
+		prestige = 5
+		create_character = {
+			dynasty = none
+			religion = ROOT
+			culture = ROOT
+			female = yes
+			age = 16
+			trait = fair
+			trait = shy
+			trait = kind
+			trait = chaste
+			trait = trusting
+		}		
+		hidden_tooltip = {
+			new_character = {
+				add_lover = ROOT
+				if = {
+					limit = {
+						has_global_flag = VIET_Traits_On
+					}
+					random = { #bewbs
+						add_trait = fertile
+						chance = 20
+					}
+				}
+				if = {
+					limit = {
+						has_global_flag = VIET_Traits_On
+					}
+					random_list = {
+						15 = { add_trait = melodious_voice }
+						15 = { add_trait = calm_voice }
+						70 = {}
+					}
+				}
+			}
+		}
+		custom_tooltip = { text = ancrel.4210.tooltip.2 }
+	}
+	option = { # Punish!
+		name = ancrel.4210.c
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0.1
+				OR = {
+					trait = kind
+					trait = patient
+					trait = content
+					trait = trusting
+					trait = humble
+				}
+			}
+		}
+		random_list = {
+			25 = { add_trait = cruel }
+			25 = { add_trait = wroth }
+			25 = { add_trait = zealous }
+			25 = { add_trait = arbitrary }
+		}
+		custom_tooltip = { text = ancrel.4210.tooltip.3 }
+	}
+	option = { # Gently reject them and help them find a proper spouse
+		name = ancrel.4210.d
+		trigger = {
+			NOT = { age = 30 }
+		}
+		random_list = {
+			25 = { add_trait = kind }
+			25 = { add_trait = patient }
+			25 = { add_trait = just }
+			25 = { add_trait = chaste }
+		}
+		add_character_modifier = {
+			name = VIET_hellenic_helped_maid
+			duration = 1095
+		}
+		custom_tooltip = { text = ancrel.4210.tooltip.4 }
+	}
+	option = { # Gently reject them and help them find a proper spouse
+		name = ancrel.4210.e
+		trigger = {
+			age = 30
+		}
+		random_list = {
+			25 = { add_trait = kind }
+			25 = { add_trait = patient }
+			25 = { add_trait = just }
+			25 = { add_trait = chaste }
+		}
+		add_character_modifier = {
+			name = VIET_hellenic_helped_maid
+			duration = 1095
+		}
+		custom_tooltip = { text = ancrel.4210.tooltip.5 }
+	}
+}
+
+# Servant boy attempts to make you fall in love with him using binding spell
+character_event = {
+	id = ancrel.4211
+	desc = ancrel.4211.desc
+	picture = GFX_evt_stone_church_hellenic_pagan
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	max_age = 45
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	only_women = yes
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		NOT = { trait = ugly }
+		NOT = { trait = hunchback }
+		NOT = { trait = harelip }
+		NOT = { trait = dwarf }
+		NOT = { trait = imbecile }
+		NOT = { trait = weak }
+		NOT = { trait = cruel }
+		NOT = { trait = arbitrary }
+		NOT = { trait = wroth }
+		NOT = { has_character_flag = VIET_servant_binding_spell }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+		modifier = {
+			factor = 0.5
+			trait = envious
+		}
+		modifier = {
+			factor = 2
+			trait = patient
+		}
+		modifier = {
+			factor = 0.5
+			trait = deceitful
+		}
+		modifier = {
+			factor = 2
+			trait = humble
+		}
+		modifier = {
+			factor = 0.5
+			trait = proud
+		}
+		modifier = {
+			factor = 2
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = shy
+		}
+		modifier = {
+			factor = 3
+			trait = attractive
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_servant_binding_spell
+	}
+
+	option = { # Let's pretend this never happened
+		name = ancrel.4211.a
+		random = {
+			add_trait = content
+			chance = 10
+		}
+		custom_tooltip = { text = ancrel.4211.tooltip.1 }
+	}
+	option = { # be mai lover
+		name = ancrel.4211.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				AND = {
+					trait = chaste
+					OR = {
+						has_lover = yes
+						is_married = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 0.1
+				OR = {
+					has_lover = yes
+					is_married = yes
+				}
+			}
+		}
+		random = {
+			add_trait = lustful
+			chance = 50
+		}
+		prestige = 5
+		create_character = {
+			dynasty = none
+			religion = ROOT
+			culture = ROOT
+			#female = yes
+			age = 16
+			trait = fair
+			trait = shy
+			trait = kind
+			trait = chaste
+			trait = trusting
+		}		
+		hidden_tooltip = {
+			new_character = {
+				add_lover = ROOT
+				random = {
+					add_trait = strong
+					chance = 20
+				}
+				if = {
+					limit = {
+						has_global_flag = VIET_Traits_On
+					}
+					random = { #big
+						add_trait = fertile
+						chance = 20
+					}
+				}
+				if = {
+					limit = {
+						has_global_flag = VIET_Traits_On
+					}
+					random = { #big
+						add_trait = tall
+						chance = 20
+					}
+				}
+			}
+		}
+		custom_tooltip = { text = ancrel.4211.tooltip.2 }
+	}
+	option = { # Punish!
+		name = ancrel.4211.c
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0.1
+				OR = {
+					trait = kind
+					trait = patient
+					trait = content
+					trait = trusting
+					trait = humble
+				}
+			}
+		}
+		random_list = {
+			25 = { add_trait = cruel }
+			25 = { add_trait = wroth }
+			25 = { add_trait = zealous }
+			25 = { add_trait = arbitrary }
+		}
+		custom_tooltip = { text = ancrel.4211.tooltip.3 }
+	}
+	option = { # Gently reject them and help them find a proper spouse
+		name = ancrel.4211.d
+		trigger = {
+			NOT = { age = 30 }
+		}
+		random_list = {
+			25 = { add_trait = kind }
+			25 = { add_trait = patient }
+			25 = { add_trait = just }
+			25 = { add_trait = chaste }
+		}
+		add_character_modifier = {
+			name = VIET_hellenic_helped_servant
+			duration = 1095
+		}
+		custom_tooltip = { text = ancrel.4211.tooltip.4 }
+	}
+	option = { # Gently reject them and help them find a proper spouse
+		name = ancrel.4211.e
+		trigger = {
+			age = 30
+		}
+		random_list = {
+			25 = { add_trait = kind }
+			25 = { add_trait = patient }
+			25 = { add_trait = just }
+			25 = { add_trait = chaste }
+		}
+		add_character_modifier = {
+			name = VIET_hellenic_helped_servant
+			duration = 1095
+		}
+		custom_tooltip = { text = ancrel.4211.tooltip.5 }
+	}
+}
+
+# Roman pietas/filial piety - daughter breastfeeds starving father
+character_event = {
+	id = ancrel.4212
+	desc = ancrel.4212.desc
+	picture = GFX_evt_stone_church_hellenic_pagan
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 0.5
+			trait = just
+		}
+		modifier = {
+			factor = 2
+			trait = patient
+		}
+		modifier = {
+			factor = 0.5
+			trait = wroth
+		}
+		modifier = {
+			factor = 2
+			trait = humble
+		}
+		modifier = {
+			factor = 0.5
+			trait = proud
+		}
+		modifier = {
+			factor = 2
+			trait = trusting
+		}
+		modifier = {
+			factor = 0.5
+			trait = paranoid
+		}
+	}
+
+	option = { # release the father
+		name = ancrel.4212.a
+		piety = 5
+		prestige = -10
+	}
+
+	option = { # release the father and provide them public support for the rest of their lives
+		name = ancrel.4212.b
+		piety = 40
+		prestige = -20
+		wealth = -30
+	}
+
+	option = { # do not release them
+		name = ancrel.4212.c
+		piety = -10
+		prestige = 10
+	}
+
+	option = { # execute them
+		name = ancrel.4212.d
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					trait = kind
+					trait = patient
+					trait = just
+					trait = humble
+					trait = zealous
+				}
+			}
+		}
+		piety = -20
+		prestige = 10
+		random_list = {
+			50 = { add_trait = cruel }
+			20 = { add_trait = wroth }
+			30 = {}
+		}
+		if = {
+			limit = {
+				trait = kind
+			}
+			remove_trait = kind
+		}
+	}
+}
+
+# Nymph legend in local province
+character_event = {
+	id = ancrel.4213
+	desc = ancrel.4213.desc
+	picture = GFX_evt_maiden_hellenic_pagan
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		NOT = {
+			any_demesne_province = {
+				has_province_modifier = VIET_nymph_protector
+			}
+		}
+		any_demesne_province = {
+			religion = ROOT
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = shy
+		}
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+		modifier = {
+			factor = 0.5
+			trait = cruel
+		}
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+		modifier = {
+			factor = 2
+			trait = lustful
+		}
+		modifier = {
+			factor = 0.5
+			trait = chaste
+		}
+	}
+
+	option = { # ok
+		name = ancrel.4213.a
+		random_demesne_province = {
+			limit = {
+				religion = ROOT
+			}
+			add_province_modifier = {
+				name = VIET_nymph_protector
+				duration = 7300
+			}
+		}
+	}
+}
+
+# Courtier's son wants to become follower of Cybele and castraste himself!
+character_event = {
+	id = ancrel.4214
+	desc = ancrel.4214.desc
+	picture = GFX_evt_stone_church_hellenic_pagan
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		NOT = {
+			any_courtier = {
+				has_character_modifier = VIET_follower_of_cybele
+			}
+		}
+		any_courtier = {
+			is_female = no
+			religion = ROOT
+			NOT = { trait = incapable }
+			ai = yes
+			NOT = { dynasty = ROOT }
+			has_landed_title = no
+			any_child = {
+				is_female = no
+				age = 13
+				NOT = { trait = zealous }
+				NOT = { trait = incapable }
+				NOT = { trait = eunuch }
+				ai = yes
+				NOT = { dynasty = ROOT }
+				has_landed_title = no
+			}
+		}
+		NOT = { has_character_flag = VIET_follower_of_cybele_event }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = just
+		}
+		modifier = {
+			factor = 0.5
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 2
+			trait = patient
+		}
+		modifier = {
+			factor = 0.5
+			trait = wroth
+		}
+		modifier = {
+			factor = 2
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = shy
+		}
+		modifier = {
+			factor = 2
+			trait = honest
+		}
+		modifier = {
+			factor = 0.5
+			trait = deceitful
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_follower_of_cybele_event
+		random_courtier = {
+			limit = {
+				is_female = no
+				religion = ROOT
+				NOT = { trait = incapable }
+				ai = yes
+				NOT = { dynasty = ROOT }
+				has_landed_title = no			
+			}
+			set_character_flag = VIET_cybele_father
+			random_child = {
+				limit = {
+					is_female = no
+					age = 13
+					NOT = { trait = zealous }
+					NOT = { trait = incapable }
+					NOT = { trait = eunuch }
+					ai = yes
+					NOT = { dynasty = ROOT }
+					has_landed_title = no				
+				}
+				set_character_flag = VIET_cybele_son
+			}
+		}
+	}
+
+	option = { # support father - no castration!
+		name = ancrel.4214.a
+		prestige = 10
+		random_courtier = {
+			limit = {
+				has_character_flag = VIET_cybele_father
+			}
+			opinion = {
+				modifier = opinion_cybele_agree
+				who = ROOT
+				years = 100
+			}			
+		}
+		random_courtier = {
+			limit = {
+				has_character_flag = VIET_cybele_son
+			}
+			opinion = {
+				modifier = opinion_cybele_disagree
+				who = ROOT
+				years = 100
+			}			
+		}
+	}
+	option = { # support son - yes castration!
+		name = ancrel.4214.b
+		piety = 10
+		random_courtier = {
+			limit = {
+				has_character_flag = VIET_cybele_father
+			}
+			opinion = {
+				modifier = opinion_cybele_disagree
+				who = ROOT
+				years = 100
+			}			
+		}
+		random_courtier = {
+			limit = {
+				has_character_flag = VIET_cybele_son
+			}
+			opinion = {
+				modifier = opinion_cybele_agree
+				who = ROOT
+				years = 100
+			}
+			add_trait = eunuch
+			add_character_modifier = {
+				name = VIET_follower_of_cybele
+				duration = -1
+			}
+		}
+	}
+	option = { #go to oracle for advice
+		name = ancrel.4214.c
+		random_list = {
+			75 = { #father wins
+				custom_tooltip = { text = ancre.4214.tooltip.1 }
+			}
+			25 = { #son wins
+				custom_tooltip = { text = ancre.4214.tooltip.2 }
+				hidden_tooltip = {
+					add_trait = eunuch
+					add_character_modifier = {
+						name = VIET_follower_of_cybele
+						duration = -1
+					}				
+				}
+			}
+		}
+	}
+}
+
+# Leptis Manialis
+character_event = {
+	id = ancrel.4215
+	desc = ancrel.4215.desc
+	picture = GFX_evt_tuscan_country_byzantine
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		capital_scope = {
+			religion = ROOT
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 2
+			trait = just
+		}
+		modifier = {
+			factor = 0.5
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 2
+			trait = humble
+		}
+		modifier = {
+			factor = 0.5
+			trait = proud
+		}
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+	}
+
+	option = { # ok
+		name = ancrel.4215.a
+		random_list = {
+			50 = { prestige = 5 }
+			50 = { piety = 5 }
+		}
+	}
+}
+
+# Hunted in Diana's sacred groves!
+character_event = {
+	id = ancrel.4216
+	desc = ancrel.4216.desc
+	picture = GFX_evt_hades_forest
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		any_courtier = {
+			is_female = no
+			NOT = { health_traits = 1 }
+			is_adult = yes
+			NOT = { trait = cynical }
+			NOT = { trait = hunchback }
+			ai = yes
+			OR = {
+				trait = hunter
+				trait = wroth
+				trait = slothful
+				trait = gregarious
+				trait = strong
+				trait = falconer
+				trait = cruel
+				trait = zealous
+				trait = paranoid
+				trait = trusting
+			}
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = shy
+		}
+		modifier = {
+			factor = 2
+			trait = patient
+		}
+		modifier = {
+			factor = 0.5
+			trait = wroth
+		}
+		modifier = {
+			factor = 2
+			trait = honest
+		}
+		modifier = {
+			factor = 0.5
+			trait = deceitful
+		}
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+	}
+
+	option = { # pray to Diana idiot!
+		name = ancrel.4216.a
+		piety = 5
+		random_courtier = {
+			limit = {
+				is_female = no
+				NOT = { health_traits = 1 }
+				is_adult = yes
+				NOT = { trait = cynical }
+				NOT = { trait = hunchback }
+				ai = yes
+				OR = {
+					trait = hunter
+					trait = wroth
+					trait = slothful
+					trait = gregarious
+					trait = strong
+					trait = falconer
+					trait = cruel
+					trait = zealous
+					trait = paranoid
+					trait = trusting
+				}			
+			}
+			random_list = {
+				30 = { piety = -50 }
+				30 = {
+					add_trait = ill			
+				}
+				39 = {
+					add_character_modifier = {
+						name = VIET_gods_curse
+						duration = 3650
+					}
+				}
+				1 = {
+					death = {
+						death_reason = death_natural
+					}				
+				}
+			}
+		}
+	}
+	option = { # lol who cares
+		name = ancrel.4216.b
+		random = {
+			add_trait = cynical
+			chance = 25
+		}
+		random_courtier = {
+			limit = {
+				is_female = no
+				NOT = { health_traits = 1 }
+				is_adult = yes
+				NOT = { trait = cynical }
+				NOT = { trait = hunchback }
+				ai = yes
+				OR = {
+					trait = hunter
+					trait = wroth
+					trait = slothful
+					trait = gregarious
+					trait = strong
+					trait = falconer
+					trait = cruel
+					trait = zealous
+					trait = paranoid
+					trait = trusting
+				}			
+			}
+			random_list = {
+				20 = { piety = -50 }
+				20 = {
+					add_trait = ill			
+				}
+				55 = {
+					add_character_modifier = {
+						name = VIET_gods_curse
+						duration = 3650
+					}
+				}
+				5 = {
+					death = {
+						death_reason = death_natural
+					}				
+				}
+			}
+		}
+	}
+}
+
+# Courtier marries nymph
+character_event = {
+	id = ancrel.4217
+	desc = ancrel.4217.desc
+	picture = GFX_evt_maiden_hellenic_pagan
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		any_demesne_province = {
+			any_province_character = {
+				is_adult = yes
+				is_married = no
+				has_lover = no
+				NOT = { age = 30 }
+				NOT = { health_traits = 1 }
+				NOT = { trait = ugly }
+				NOT = { trait = hunchback }
+				NOT = { trait = harelip }
+				NOT = { trait = dwarf }
+				NOT = { trait = imbecile }
+				NOT = { trait = weak }
+				NOT = { trait = cruel }
+				NOT = { trait = wroth }
+				NOT = { trait = arbitrary }
+				NOT = { trait = gluttonous }
+				OR = {
+					trait = attractive
+					trait = strong
+					trait = kind
+					trait = zealous
+					trait = lustful
+					trait = gregarious
+					trait = shy
+				}
+			}		
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+	}
+
+	option = { # ok
+		name = ancrel.4217.a
+		random_demesne_province = {
+			random_province_character = {
+				limit = {
+					is_adult = yes
+					is_married = no
+					has_lover = no
+					NOT = { age = 30 }
+					NOT = { health_traits = 1 }
+					NOT = { trait = ugly }
+					NOT = { trait = hunchback }
+					NOT = { trait = harelip }
+					NOT = { trait = dwarf }
+					NOT = { trait = imbecile }
+					NOT = { trait = weak }
+					NOT = { trait = cruel }
+					NOT = { trait = wroth }
+					NOT = { trait = arbitrary }
+					NOT = { trait = gluttonous }
+					OR = {
+						trait = attractive
+						trait = strong
+						trait = kind
+						trait = zealous
+						trait = lustful
+						trait = gregarious
+						trait = shy
+					}				
+				}
+				create_character = {
+					#random_traits = yes
+					dynasty = NONE
+					female = yes
+					religion = PREV
+					culture = PREV
+				}
+				new_character = {
+					add_spouse = PREV
+					add_lover = PREV
+					add_trait = fair
+					add_trait = chaste
+					add_trait = kind
+					add_trait = patient
+					add_trait = gregarious
+					add_character_modifier = {
+						name = VIET_rumored_nymph
+						duration = -1
+					}
+				}
+			}		
+		}
+	}
+}
+
+# Lightning strikes tree
+character_event = {
+	id = ancrel.4218
+	desc = ancrel.4218.desc
+	picture = GFX_evt_lightning_strike
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+		modifier = {
+			factor = 2
+			trait = just
+		}
+		modifier = {
+			factor = 0.5
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+		modifier = {
+			factor = 0.5
+			trait = cruel
+		}
+		modifier = {
+			factor = 2
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.5
+			trait = slothful
+		}
+	}
+
+	option = { # ok
+		name = ancrel.4218.a
+		piety = 20
+		add_character_modifier = {
+			name = VIET_fanatic_tree
+			duration = 3650
+		}
+	}
+}
+
+# Odysseus
+character_event = {
+	id = ancrel.4219
+	desc = ancrel.4219.desc
+	picture = GFX_evt_busy_trading_dock_republic_hellenic_pagan
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = content
+		}
+		modifier = {
+			factor = 0.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2
+			trait = deceitful
+		}
+		modifier = {
+			factor = 0.5
+			trait = honest
+		}
+		modifier = {
+			factor = 2
+			trait = slothful
+		}
+		modifier = {
+			factor = 0.5
+			trait = diligent
+		}
+		modifier = {
+			factor = 2
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = shy
+		}
+	}
+
+	option = { # Odysseus is a coward
+		name = ancrel.4219.a
+		piety = 5
+	}
+	option = { # Odysseus is smart and cool
+		name = ancrel.4219.b
+		prestige = 5
+	}
+	option = { # who cares m8
+		name = ancrel.4219.c
+		random = {
+			add_trait = cynical
+			chance = 20
+		}
+	}
+}
+
+# Stupid courtier claims he will "rescue" Persephone and marry her, like Pirithous
+character_event = {
+	id = ancrel.4220
+	desc = ancrel.4220.desc
+	picture = GFX_evt_small_town_hellenic_pagan
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		NOT = { has_character_flag = VIET_theseus_and_pirithous }
+		any_courtier = {
+			is_female = no
+			is_adult = yes
+			is_married = no
+			NOT = { trait = incapable }
+			NOT = { trait = zealous }
+			NOT = { trait = chaste }
+			NOT = { trait = temperate }
+			NOT = { trait = humble }
+			NOT = { trait = craven }
+			OR = {
+				trait = drunkard
+				trait = cynical
+				trait = lustful
+				trait = proud
+				trait = ambitious
+				trait = gregarious
+			}
+			religion = ROOT
+			ai = yes
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = lustful
+		}
+		modifier = {
+			factor = 0.5
+			trait = chaste
+		}
+		modifier = {
+			factor = 2
+			trait = honest
+		}
+		modifier = {
+			factor = 0.5
+			trait = deceitful
+		}
+		modifier = {
+			factor = 2
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}
+		modifier = {
+			factor = 2
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = shy
+		}
+	}
+
+	option = { # Don't be stupid bro
+		name = ancrel.4220.a
+		if = {
+			limit = {
+				trait = cynical
+			}
+			random = {
+				remove_trait = cynical
+				chance = 33
+			}
+		}
+		random_courtier = {
+			limit = {
+				is_female = no
+				is_adult = yes
+				is_married = no
+				NOT = { trait = incapable }
+				NOT = { trait = zealous }
+				NOT = { trait = chaste }
+				NOT = { trait = temperate }
+				NOT = { trait = humble }
+				NOT = { trait = craven }
+				OR = {
+					trait = drunkard
+					trait = cynical
+					trait = lustful
+					trait = proud
+					trait = ambitious
+					trait = gregarious
+				}
+				religion = ROOT
+				ai = yes
+			}
+			add_trait = proud
+			hidden_tooltip = {
+				character_event = { id = ancrel.4221 }
+			}
+		}
+		custom_tooltip = { text = ancrel.4220.tooltip }
+		hidden_tooltip = {
+			character_event = { id = ancrel.4222 }
+		}
+	}
+}
+
+# Stupid courtier claims he will "rescue" Persephone and marry her - AND DIES
+character_event = {
+	id = ancrel.4221
+	desc = ancrel.4221.desc
+	picture = GFX_evt_hades_forest
+
+	is_triggered_only = yes
+
+	option = { # Don't be stupid bro
+		name = ancrel.4221.a
+		death = {
+			death_reason = death_natural
+		}
+	}
+}
+
+# Stupid courtier claims he will "rescue" Persephone and marry her - and you get a blessing
+narrative_event = {
+	id = ancrel.4222
+	title = ancrel.4222.title
+	desc = ancrel.4222.desc
+	picture = GFX_evt_pomegranate
+
+	is_triggered_only = yes
+
+	option = { # Hades' blessing
+		name = ancrel.4222.a
+		piety = 20
+		add_character_modifier = {
+			name = VIET_hades_blessing
+			duration = -1
+		}
+	}	
+	option = { # Persephone's blessing
+		name = ancrel.4222.b
+		piety = 20
+		add_character_modifier = {
+			name = VIET_persephone_blessing
+			duration = -1
+		}
+	}
+}
+
+
+
+# Who's the fairest of them all?
+character_event = {
+	id = ancrel.4223
+	desc = ancrel.4223.desc
+	picture = GFX_evt_maiden_hellenic_pagan
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		NOT = { has_character_flag = VIET_who_is_fairest_goddess }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = lustful
+		}
+		modifier = {
+			factor = 0.5
+			trait = chaste
+		}
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+		modifier = {
+			factor = 2
+			trait = patient
+		}
+		modifier = {
+			factor = 0.5
+			trait = wroth
+		}
+		modifier = {
+			factor = 2
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = shy
+		}
+	}
+
+	option = { # Aphrodite of course, because she's the goddess of BEAUTY
+		name = ancrel.4223.a
+		prestige = 5
+		any_courtier = {
+			limit = {
+				OR = {
+					trait = lustful
+					trait = gregarious
+					trait = hedonist
+				}
+				NOT = { trait = scholar }
+				NOT = { trait = diligent }
+				NOT = { trait = just }
+				NOT = { trait = ambitious }
+				NOT = { trait = chaste }
+			}
+			opinion = {
+				modifier = opinion_aphrodite_attractive
+				who = ROOT
+				years = 1
+			}
+		}
+		hidden_tooltip = {
+			character_event = { id = ancrel.4224 }
+		}
+	}
+	option = { # Hera, because MILFs or she's queenly or something
+		name = ancrel.4223.b
+		piety = 5
+		any_courtier = {
+			limit = {
+				OR = {
+					trait = chaste
+					trait = ambitious
+				}
+				NOT = { trait = scholar }
+				NOT = { trait = diligent }
+				NOT = { trait = just }
+				NOT = { trait = gregarious }
+				NOT = { trait = lustful }
+			}
+			opinion = {
+				modifier = opinion_hera_attractive
+				who = ROOT
+				years = 1
+			}
+		}
+		hidden_tooltip = {
+			character_event = { id = ancrel.4225 }
+		}
+	}
+	option = { # Athena, because nerds are sexy
+		name = ancrel.4223.c
+		any_courtier = {
+			limit = {
+				OR = {
+					trait = scholar
+					trait = diligent
+					trait = just
+				}
+				NOT = { trait = chaste }
+				NOT = { trait = ambitious }
+				NOT = { trait = gregarious }
+				NOT = { trait = lustful }
+			}
+			opinion = {
+				modifier = opinion_athena_attractive
+				who = ROOT
+				years = 1
+			}
+		}
+		random_list = {
+			50 = { prestige = 5 }
+			50 = { piety = 5 }
+		}
+		hidden_tooltip = {
+			character_event = { id = ancrel.4225 }
+		}
+	}
+	option = { # I am a grill
+		name = ancrel.4223.d
+		trigger = {
+			is_female = yes			
+		}
+		random ={
+			add_trait = proud
+			chance = 20
+		}
+		random_list = {
+			50 = { prestige = 5 }
+			50 = { piety = 5 }
+		}		
+	}
+	option = { # Dicks not chicks!
+		name = ancrel.4223.e
+		trigger = {
+			OR = {
+				is_female = yes
+				AND = {
+					is_female = no
+					trait = homosexual
+				}
+			}
+		}
+		random_list = {
+			50 = { prestige = 5 }
+			50 = { piety = 5 }
+		}
+	}
+}
+
+# Aphrodite is pleased
+character_event = {
+	id = ancrel.4224
+	desc = ancrel.4224.desc
+	picture = GFX_evt_maiden_hellenic_pagan
+
+	is_triggered_only = yes
+
+	option = { # no Helen of Troy for you, tho
+		name = ancrel.4224.a
+		add_character_modifier = {
+			name = VIET_aphrodite_blessing
+			duration = -1
+		}
+	}
+}
+
+# Hera is pleased
+character_event = {
+	id = ancrel.4225
+	desc = ancrel.4225.desc
+	picture = GFX_evt_maiden_hellenic_pagan
+
+	is_triggered_only = yes
+
+	option = { # yay bonus
+		name = ancrel.4225.a
+		add_character_modifier = {
+			name = VIET_hera_blessing
+			duration = -1
+		}
+	}
+}
+
+# Athena is pleased
+character_event = {
+	id = ancrel.4226
+	desc = ancrel.4226.desc
+	picture = GFX_evt_maiden_hellenic_pagan
+
+	is_triggered_only = yes
+
+	option = { # u very smart
+		name = ancrel.4226.a
+		add_character_modifier = {
+			name = VIET_athena_blessing
+			duration = -1
+		}
+	}
+}
+
+# Herma
+character_event = {
+	id = ancrel.4227
+	desc = ancrel.4227.desc
+	picture = GFX_evt_stone_church_hellenic_pagan
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+		modifier = {
+			factor = 2
+			trait = greedy
+		}
+		modifier = {
+			factor = 0.5
+			trait = charitable
+		}
+		modifier = {
+			factor = 2
+			trait = just
+		}
+		modifier = {
+			factor = 0.5
+			trait = arbitrary
+		}
+	}
+
+	option = { # yes phallic statues
+		name = ancrel.4227.a
+		wealth = -10
+		piety = 10
+		random = {
+			add_character_modifier = {
+				name = VIET_hermes_blessing
+				duration = -1
+			}
+			chance = 50
+		}
+	}
+	option = { # no phallic statues
+		name = ancrel.4227.b
+		piety = -5
+	}
+}
+
+# Priapus statue
+character_event = {
+	id = ancrel.4228
+	desc = ancrel.4228.desc
+	picture = GFX_evt_small_town_hellenic_pagan
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+		modifier = {
+			factor = 2
+			trait = greedy
+		}
+		modifier = {
+			factor = 0.5
+			trait = charitable
+		}
+		modifier = {
+			factor = 2
+			trait = just
+		}
+		modifier = {
+			factor = 0.5
+			trait = arbitrary
+		}
+	}
+
+	option = { # yes phallic statues
+		name = ancrel.4228.a
+		add_character_modifier = {
+			name = VIET_priapus_blessing
+			duration = -1
+		}
+	}
+	option = { # ewwww phallic statues
+		name = ancrel.4228.b
+		random = {
+			add_trait = chaste
+			chance = 40
+		}
+		random = {
+			add_character_modifier = {
+				name = VIET_priapus_curse
+				duration = 730
+			}
+			chance = 20
+		}
+	}
+}
+
+# Lars familiaris
+character_event = {
+	id = ancrel.4229
+	desc = ancrel.4229.desc
+	picture = GFX_evt_stone_church_hellenic_pagan
+
+	is_triggered_only = yes
+	
+	min_age = 16
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		war = no
+		in_command = no
+		is_abroad = no
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+	}
+
+	option = { # yes phallic statues
+		name = ancrel.4229.a
+		piety = 5
+		random_list = {
+			75 = {}
+			5 = {
+				add_character_modifier = {
+					name = VIET_lars_diplomacy
+					duration = 1095
+				}
+			}
+			5 = {
+				add_character_modifier = {
+					name = VIET_lars_martial
+					duration = 1095
+				}
+			}
+			5 = {
+				add_character_modifier = {
+					name = VIET_lars_stewardship
+					duration = 1095
+				}
+			}
+			5 = {
+				add_character_modifier = {
+					name = VIET_lars_intrigue
+					duration = 1095
+				}
+			}
+			5 = {
+				add_character_modifier = {
+					name = VIET_lars_learning
+					duration = 1095
+				}
+			}
+		}
+	}
+}
+
+#####################################################################################################
+#
+# I Can't Believe My Virgin Goddess of the Hunt is This Cute
+#
+# Event chain starting off like the legend of Actaeon; however if the player chooses properly there is
+# a chance that instead of punishment the character will basically become Diana/Artemis' platonic friend.
+# A few events in this event chain were very vaguely based off some Greek Mythology fanfiction I've read
+# (Yes, that exists as a genre. .___. )
+#
+# ancrel.4250-4349 reserved
+#
+#####################################################################################################
+
+
+# While hunting, stumble on Artemis who is naked and bathing
+character_event = {
+	id = ancrel.4250
+	desc = ancrel.4250.desc
+	picture = GFX_evt_artemis_bathing
+
+	is_triggered_only = yes
+
+	min_age = 16
+	max_age = 40
+	only_rulers = yes
+	capable_only = yes
+	prisoner = no
+	ai = no
+	only_men = yes
+
+	trigger = { 
+		war = no 
+		in_command = no 
+		is_abroad = no	
+		NOT = { has_global_flag =  VIET_i_cant_believe_the_virgin_goddess_of_the_hunt_is_this_cute } #global flag only triggers if character becomes friends with Artemis
+		NOT = { has_character_flag =  VIET_stumbled_on_artemis }
+		NOT = { has_character_flag =  VIET_is_artemis_bff }
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		NOT = { health_traits = 1 }
+		NOT = { trait = inbred }
+		NOT = { trait = hunchback }
+		NOT = { trait = clubfoot }
+		NOT = { trait = dwarf }
+		NOT = { trait = imbecile }
+		NOT = { trait = cruel }
+		NOT = { trait = arbitrary }
+		NOT = { trait = wroth }
+		NOT = { trait = lustful }
+		prestige = 500
+	}
+
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = hunter
+		}
+		modifier = {
+			factor = 0.5
+			trait = scholar
+		}
+		modifier = {
+			factor = 2
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = shy
+		}
+		modifier = {
+			factor = 2
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}
+		modifier = {
+			factor = 2
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 2
+			trait = proud
+		}
+		modifier = {
+			factor = 0.5
+			trait = humble
+		}
+		modifier = {
+			factor = 2
+			trait = strong
+		}
+		modifier = {
+			factor = 0.5
+			trait = weak
+		}
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+	}
+	
+	immediate = {
+		set_character_flag =  VIET_stumbled_on_artemis
+		set_global_flag =  VIET_artemis_event_happened_previously
+	}
+
+	option = {
+		name = ancrel.4250.a
+		character_event = { id = ancrel.4251 tooltip = ancrel.4251.tooltip days = 1 }
+	}
+}
+
+# Artemis discovers intruder - choose how to react wisely!
+narrative_event = {
+	id = ancrel.4251
+	title = ancrel.4251.title
+	desc = ancrel.4251.desc
+	picture = GFX_evt_artemis_bathing
+
+	is_triggered_only = yes
+
+	option = { #beg for mercy
+		name = ancrel.4251.a
+		custom_tooltip = { text = VIET_artemis_response_possibility }
+		hidden_tooltip = {
+			random_list = {
+				20 = { character_event = { id = ancrel.4252 } } #Artemis kills you
+				30 = { character_event = { id = ancrel.4253 } } #Artemis injures you
+				50 = { character_event = { id = ancrel.4254 } } #Artemis spares you and becomes your bff
+			}
+		}
+	}
+	option = { #charm and persuade her with clever words
+		name = ancrel.4251.b
+		tooltip_info = diplomacy
+		trigger = {
+			diplomacy = 9
+		}
+		custom_tooltip = { text = VIET_artemis_response_possibility }
+		hidden_tooltip = {
+			random_list = {
+				5 = { character_event = { id = ancrel.4252 } } #Artemis kills you
+				20 = { character_event = { id = ancrel.4253 } } #Artemis injures you
+				75 = { character_event = { id = ancrel.4254 } } #Artemis spares you and becomes your bff
+			}
+		}
+	}
+	option = { #be an arrogant dick - choose only if you didn't learn anything from Greek mythology and/or are roleplaying and/or suicidal
+		name = ancrel.4251.c
+		custom_tooltip = { text = VIET_artemis_response_possibility }
+		hidden_tooltip = {
+			random_list = {
+				40 = { character_event = { id = ancrel.4252 } } #Artemis kills you because you're an idiot
+				60 = { character_event = { id = ancrel.4253 } } #Artemis injures you
+				#10 = { character_event = { id = ancrel.4254 } } #Artemis spares you and becomes your bff
+			}
+		}
+	}
+}
+
+# GG, you died
+character_event = {
+	id = ancrel.4252
+	desc = ancrel.4252.desc
+	picture = GFX_evt_artemis_bathing
+
+	is_triggered_only = yes
+
+	option = { # die
+		name = ancrel.4252.a
+		death = {
+			death_reason = death_accident
+		}		
+	}
+	option = { # die
+		name = ancrel.4252.b
+		random = {
+			add_trait = lustful
+			chance = 25
+		}
+		death = {
+			death_reason = death_accident
+		}		
+	}
+}
+
+# You are injured
+character_event = {
+	id = ancrel.4253
+	desc = ancrel.4253.desc
+	picture = GFX_evt_artemis
+
+	is_triggered_only = yes
+
+	option = { # die
+		name = ancrel.4253.a
+		add_trait = zealous
+		piety = 50
+		random_list = {
+			90 = {
+				add_trait = wounded
+				hidden_tooltip = { character_event = { id = 38280 } }
+			}
+			10 = {
+				add_trait = maimed
+				hidden_tooltip = { character_event = { id = 38281 } }
+			}			
+		}
+	}
+}
+
+# You successfully beg for mercy
+narrative_event = {
+	id = ancrel.4254
+	title = ancrel.4254.title
+	desc = ancrel.4254.desc
+	picture = GFX_evt_artemis_bathing
+
+	is_triggered_only = yes
+
+	option = { # phew
+		name = ancrel.4254.a
+		hidden_tooltip = { character_event = { id = ancrel.4257 days = 1 } }
+	}
+}
+
+# You try to charm her...
+narrative_event = {
+	id = ancrel.4255
+	title = ancrel.4255.title
+	desc = ancrel.4255.desc
+	picture = GFX_evt_artemis_bathing
+
+	is_triggered_only = yes
+
+	option = { # phew
+		name = ancrel.4255.a
+		hidden_tooltip = { character_event = { id = ancrel.4256 } }
+	}
+}
+
+# ... and it works.
+narrative_event = {
+	id = ancrel.4256
+	title = ancrel.4256.title
+	desc = ancrel.4256.desc
+	picture = GFX_evt_artemis_bathing
+
+	is_triggered_only = yes
+
+	option = { # I can't believe my virgin goddess of the hunt actually has a sense of humor
+		name = ancrel.4255.a
+		random = {
+			change_diplomacy = 1
+			chance = 50
+		}
+		hidden_tooltip = { character_event = { id = ancrel.4257 days = 1 } }
+	}
+}
+
+# Artemis invites you to join her hunting
+narrative_event = {
+	id = ancrel.4257
+	title = ancrel.4257.title
+	desc = ancrel.4257.desc
+	picture = GFX_evt_artemis_bathing
+
+	is_triggered_only = yes
+
+	option = { # I can't believe my virgin goddess of the hunt wants to hunt with me
+		name = ancrel.4257.a
+		hidden_tooltip = { character_event = { id = ancrel.4258 days = 1 } }
+	}
+}
+
+# You and Artemis go hunting
+narrative_event = {
+	id = ancrel.4258
+	title = ancrel.4258.title
+	desc = ancrel.4258.desc
+	picture = GFX_evt_artemis_moon
+
+	is_triggered_only = yes
+
+	option = { # I can't believe the virgin goddess of the hunt is my friend
+		name = ancrel.4258.a
+		set_global_flag =  VIET_i_cant_believe_the_virgin_goddess_of_the_hunt_is_this_cute
+		set_character_flag =  VIET_is_artemis_bff
+		if = {
+			limit = {
+				NOT = { trait = misguided_warrior }
+				NOT = { trait = tough_soldier }
+				NOT = { trait = skilled_tactician }
+			}
+			random_list = {
+				25 = { change_martial = 1 }
+				15 = { change_martial = 2 }
+				10 = { change_martial = 3 }
+			}
+		}
+		if = {
+			limit = {
+				trait = skilled_tactician
+			}
+			remove_trait = skilled_tactician
+			add_trait = brilliant_strategist
+		}
+		if = {
+			limit = {
+				trait = tough_soldier
+			}
+			remove_trait = tough_soldier
+			add_trait = skilled_tactician
+		}
+		if = {
+			limit = {
+				trait = misguided_warrior
+			}
+			remove_trait = misguided_warrior
+			add_trait = tough_soldier
+		}
+		random_list = {
+			25 = { health = 0.2 }
+			15 = { health = 0.5 }
+			10 = { health = 1 }		
+		}
+		add_character_modifier = {
+			name = VIET_artemis_blessing
+			duration = -1
+		}
+		hidden_tooltip = { character_event = { id = ancrel.4266 days = 123 random = 234 } } #second time hunting w/ Artemis
+	}
+}
+
+# Give Artemis another offering of dead animals...
+character_event = {
+	id = ancrel.4259
+	title = ancrel.4259.title
+	desc = ancrel.4259.desc
+	picture = GFX_evt_artemis_moon
+
+	is_triggered_only = yes
+
+	ai = no
+
+	trigger = { 
+		war = no 
+		in_command = no 
+		is_abroad = no
+		has_character_flag =  VIET_is_artemis_bff
+		has_character_flag =  VIET_hunted_with_artemis_twice
+		NOT = { has_character_flag = VIET_artemis_baklava }
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+	}
+
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_artemis_baklava
+	}
+
+	option = { # Give offering
+		name = ancrel.4259.a
+		piety = 20
+		hidden_tooltip = { character_event = { id = ancrel.4260 } }
+	}
+}
+
+# ... and she says that nowadays...
+narrative_character_event = {
+	id = ancrel.4260
+	title = ancrel.4260.title
+	desc = ancrel.4260.desc
+	picture = GFX_evt_woman_in_firelight
+
+	is_triggered_only = yes
+
+	option = { # hey girl y u no like animal carcasses
+		name = ancrel.4260.a
+		hidden_tooltip = { character_event = { id = ancrel.4261 } }
+	}
+	option = { # hey girl y u no like animal carcasses
+		name = ancrel.4260.b
+		hidden_tooltip = { character_event = { id = ancrel.4261 } }
+	}
+}
+
+# ... she prefers baklava
+narrative_event = {
+	id = ancrel.4261
+	title = ancrel.4261.title
+	desc = ancrel.4261.desc
+	picture = GFX_evt_stone_church_hellenic_pagan
+
+	is_triggered_only = yes
+
+	option = { # I can't believe my virgin goddess of the hunt has such a sweet tooth
+		name = ancrel.4261.a
+		piety = 10
+	}
+}
+
+# Apollo pays you a visit
+narrative_event = {
+	id = ancrel.4262
+	title = ancrel.4262.title
+	desc = ancrel.4262.desc
+	picture = GFX_evt_stone_church_hellenic_pagan
+
+	is_triggered_only = yes
+
+	ai = no
+
+	trigger = { 
+		war = no 
+		in_command = no 
+		is_abroad = no
+		has_character_flag =  VIET_is_artemis_bff
+		has_character_flag =  VIET_hunted_with_artemis_twice
+		NOT = { has_character_flag = VIET_apollo_visited }
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+	}
+
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = lustful
+		}
+		modifier = {
+			factor = 0.5
+			trait = chaste
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_apollo_visited
+	}
+
+	option = { # wait I have no interest in your sister!
+		name = ancrel.4262.a
+		hidden_tooltip = { character_event = { id = ancrel.4263 } }
+	}
+}
+
+# Apollo pays you a visit Part 2
+narrative_event = {
+	id = ancrel.4263
+	title = ancrel.4263.title
+	desc = ancrel.4263.desc
+	picture = GFX_evt_sun_and_moon
+
+	is_triggered_only = yes
+
+	option = { # I wonder why Apollo and Artemis are so close...
+		name = ancrel.4263.a
+		piety = 10
+		add_characer_modifier = {
+			name = VIET_apollo_blessing
+			duration = -1
+		}
+		if = {
+			limit = {
+				NOT = { has_character_flag = VIET_pondered_artemis_apollo_twincest }
+			}
+			character_event = { id = ancrel.4264 tooltip = ancrel.4264.tooltip days = 3 random = 10 }
+		}
+	}
+}
+
+
+# Artemis is tsundere for Apollo
+long_character_event = {
+	id = ancrel.4264
+	title = ancrel.4264.title
+	desc = ancrel.4264.desc
+	picture = GFX_evt_sun_and_moon
+
+	is_triggered_only = yes
+
+	option = { # I-i-it's not like I like my twin brother or anything
+		name = ancrel.4264.a
+		custom_tooltip = { text = VIET_apollo_is_a_baka }
+	}
+}
+
+
+# Devotion to Artemis inspires virtue - repeatable event
+character_event = {
+	id = ancrel.4265
+	desc = ancrel.4265.desc
+	picture = GFX_evt_artemis_moon
+
+	is_triggered_only = yes
+	
+	ai = no
+
+	trigger = { 
+		war = no 
+		in_command = no 
+		is_abroad = no
+		has_character_flag =  VIET_is_artemis_bff
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		OR = {
+			trait = envious
+			trait = wroth
+			trait = lustful
+			trait = slothful
+			trait = greedy
+			trait = gluttonous
+			trait = proud
+		}
+	}
+	
+	#weight_multiplier = {
+	#	days = 1
+	#}
+
+	option = { # I-i-it's not like I care about Artemis or anything, she's just a random god I worship
+		name = ancrel.4265.a
+		if = {
+			limit = {
+				trait = envious
+			}
+			remove_trait = envious
+		}
+		if = {
+			limit = {
+				NOT = { trait = kind }
+			}
+			random = {
+				add_trait = kind
+				chance = 33
+			}
+		}
+		if = {
+			limit = {
+				trait = wroth
+			}
+			remove_trait = wroth
+		}
+		if = {
+			limit = {
+				NOT = { trait = patient }
+			}
+			random = {
+				add_trait = patient
+				chance = 33
+			}
+		}
+		if = {
+			limit = {
+				trait = lustful
+			}
+			remove_trait = lustful
+		}
+		if = {
+			limit = {
+				NOT = { trait = chaste }
+			}
+			random = {
+				add_trait = chaste
+				chance = 33
+			}
+		}
+		if = {
+			limit = {
+				trait = slothful
+			}
+			remove_trait = slothful
+		}
+		if = {
+			limit = {
+				NOT = { trait = diligent }
+			}
+			random = {
+				add_trait = diligent
+				chance = 33
+			}
+		}
+		if = {
+			limit = {
+				trait = gluttonous
+			}
+			remove_trait = gluttonous
+		}
+		if = {
+			limit = {
+				NOT = { trait = temperate }
+			}
+			random = {
+				add_trait = temperate
+				chance = 33
+			}
+		}
+		if = {
+			limit = {
+				trait = proud
+			}
+			remove_trait = proud
+		}
+		if = {
+			limit = {
+				NOT = { trait = humble }
+			}
+			random = {
+				add_trait = humble
+				chance = 33
+			}
+		}
+		if = {
+			limit = {
+				trait = greedy
+			}
+			remove_trait = greedy
+		}
+		if = {
+			limit = {
+				NOT = { trait = temperate }
+			}
+			random = {
+				add_trait = temperate
+				chance = 33
+			}
+		}
+	}
+}
+
+
+# Second time hunting with Artemis
+character_event = {
+	id = ancrel.4266
+	#title = ancrel.4266.title
+	desc = ancrel.4266.desc
+	picture = GFX_evt_artemis_bathing
+
+	is_triggered_only = yes
+	
+	ai = no
+
+	trigger = { 
+		war = no 
+		in_command = no 
+		is_abroad = no	
+		has_character_flag =  VIET_is_artemis_bff
+		NOT = { has_character_flag =  VIET_hunted_with_artemis_twice }
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+	}
+	
+	#weight_multiplier = {
+	#	days = 1
+	#}
+	
+	immediate = {
+		set_character_flag =  VIET_hunted_with_artemis_twice
+	}
+
+	option = { # Ok
+		name = ancrel.4266.a
+		hidden_tooltip = { character_event = { id = ancrel.4267 } }
+	}
+}
+
+
+# Good time hunting with Artemis
+character_event = {
+	id = ancrel.4267
+	desc = ancrel.4267.desc
+	picture = GFX_evt_artemis_moon
+
+	is_triggered_only = yes
+	
+	option = { # Ok
+		name = ancrel.4267.a
+		piety = 20
+		prestige = 20
+		random_list = {
+			25 = { change_martial = 1 }
+			15 = { change_martial = 2 }
+			10 = { change_martial = 3 }
+			25 = { health = 0.2 }
+			15 = { health = 0.5 }
+			10 = { health = 1 }
+		}
+		add_character_modifier = {
+			name = VIET_chosen_of_artemis
+			duration = -1
+		}
+	}
+}
+
+
+
+# Artemis saves your ass in battle
+character_event = {
+	id = ancrel.4268
+	desc = ancrel.4268.desc
+	picture = GFX_evt_battle_hellenic_pagan
+
+	is_triggered_only = yes
+	
+	ai = no
+
+	trigger = { 
+		war = no 
+		in_command = no 
+		is_abroad = no
+		has_character_flag =  VIET_is_artemis_bff
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+	}
+
+	option = { # thanks pal
+		name = ancrel.4268.a
+		prestige = 5
+	}
+}
+
+# Ask Artemis for relationship advice
+narrative_event = {
+	id = ancrel.4269
+	title = ancrel.4269.title
+	desc = ancrel.4269.desc
+	picture = GFX_evt_artemis_bathing
+
+	is_triggered_only = yes
+	
+	ai = no
+
+	trigger = { 
+		war = no 
+		in_command = no 
+		is_abroad = no
+		has_character_flag =  VIET_is_artemis_bff
+		has_character_flag =  VIET_hunted_with_artemis_twice
+		NOT = { has_character_flag = VIET_artemis_relationship_advice }
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		is_married = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+		modifier = {
+			factor = 2
+			trait = chaste
+		}
+		modifier = {
+			factor = 0.5
+			trait = lustful
+		}
+		modifier = {
+			factor = 2
+			trait = shy
+		}
+		modifier = {
+			factor = 0.5
+			trait = gregarious
+		}
+		modifier = {
+			factor = 2
+			trait = wroth
+		}
+		modifier = {
+			factor = 0.5
+			trait = patient
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_artemis_relationship_advice
+	}
+
+	option = { # but ur a grill Artemis
+		name = ancrel.4269.a
+		hidden_tooltip = { character_event = { id = ancrel.4270 } }
+	}
+}
+
+# Artemis gives relationship advice
+narrative_event = {
+	id = ancrel.4270
+	title = ancrel.4270.title
+	desc = ancrel.4270.desc
+	picture = GFX_evt_tuscan_country_byzantine
+
+	is_triggered_only = yes
+	
+	ai = no
+
+	option = { # but ur a grill Artemis
+		name = ancrel.4270.a
+		random_list = {
+			50 = { character_event = { id = ancrel.4271 days = 3 random = 3 tooltip = ancrel.4271.tooltip } } #it doesn't work
+			50 = { character_event = { id = ancrel.4272 days = 3 random = 3 tooltip = ancrel.4272.tooltip } } #it works
+		}
+	}
+}
+
+# Artemis would make a bad marriage counselor
+character_event = {
+	id = ancrel.4271
+	desc = ancrel.4271.desc
+	picture = GFX_evt_artemis_moon
+
+	is_triggered_only = yes
+	
+	ai = no
+
+	option = { # but ur a grill Artemis
+		name = ancrel.4271.a
+		prestige = -10
+		spouse = {
+			opinion = {
+				modifier = opinion_artemis_bad_advice
+				who = ROOT
+				years = 5
+			}			
+		}
+	}
+}
+
+# Artemis would make a good marriage counselor
+character_event = {
+	id = ancrel.4272
+	desc = ancrel.4272.desc
+	picture = GFX_evt_artemis_moon
+
+	is_triggered_only = yes
+	
+	ai = no
+
+	option = { # thank you Artemis
+		name = ancrel.4272.a
+		spouse = {
+			opinion = {
+				modifier = opinion_artemis_good_advice
+				who = ROOT
+				years = 5
+			}
+			random = {
+				add_friend = ROOT
+				chance = 66
+			}
+			random = {
+				add_lover = ROOT
+				chance = 33
+			}
+		}
+	}
+}
+
+# Artemis gives sibling advice
+narrative_event = {
+	id = ancrel.4273
+	title = ancrel.4273.title
+	desc = ancrel.4273.desc
+	picture = GFX_evt_artemis
+
+	is_triggered_only = yes
+	
+	ai = no
+
+	trigger = { 
+		war = no 
+		in_command = no 
+		is_abroad = no
+		has_character_flag =  VIET_is_artemis_bff
+		has_character_flag =  VIET_apollo_visited
+		NOT = { has_character_flag = VIET_artemis_sibling_advice }
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		any_sibling = {
+			is_alive = yes
+			is_adult = yes
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+		modifier = {
+			factor = 0.5
+			trait = envious
+		}
+		modifier = {
+			factor = 2
+			trait = shy
+		}
+		modifier = {
+			factor = 0.5
+			trait = gregarious
+		}
+		modifier = {
+			factor = 2
+			trait = wroth
+		}
+		modifier = {
+			factor = 0.5
+			trait = patient
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_artemis_sibling_advice
+	}
+
+	option = { # but ur a grill Artemis
+		name = ancrel.4273.a
+		hidden_tooltip = { character_event = { id = ancrel.4274 } }
+	}
+}
+
+
+# Artemis says siblings have to stick together
+character_event = {
+	id = ancrel.4274
+	desc = ancrel.4274.desc
+	picture = GFX_evt_sun_and_moon
+
+	is_triggered_only = yes
+	
+	ai = no
+
+	option = { # Artemis x Apollo lolololol
+		name = ancrel.4274.a
+		prestige = -10
+		random_sibling = {
+			limit = {
+				is_alive = yes
+				is_adult = yes			
+			}
+			opinion = {
+				modifier = opinion_artemis_sibling_advice
+				who = ROOT
+				years = 20
+			}			
+		}
+	}
+}
+
+# Hunting with Artemis (should repeat regularly)
+character_event = {
+	id = ancrel.4275
+	desc = ancrel.4275.desc
+	picture = GFX_evt_artemis
+	
+	ai = no
+
+	trigger = { 
+		war = no 
+		in_command = no 
+		is_abroad = no
+		has_character_flag = VIET_is_artemis_bff
+		has_character_flag = VIET_hunted_with_artemis_twice
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 160
+		modifier = {
+			factor = 0.8
+			trait = zealous
+		}
+		modifier = {
+			factor = 1.25
+			trait = cynical
+		}
+	}
+
+	option = { # Artemis is my bff
+		name = ancrel.4275.a
+		piety = 10
+		random = {
+			change_martial = 1
+			chance = 10
+		}
+		if = {
+			limit = {
+				trait = depressed
+			}
+			random = {
+				remove_trait = depressed
+				chance = 40
+			}
+		}
+		if = {
+			limit = {
+				trait = stressed
+			}
+			random = {
+				remove_trait = stressed
+				chance = 60
+			}
+		}
+	}
+}
+
+# Artemis heals wounds
+character_event = {
+	id = ancrel.4276
+	desc = ancrel.4276.desc
+	picture = GFX_evt_artemis
+	
+	ai = no
+
+	trigger = { 
+		war = no 
+		in_command = no 
+		is_abroad = no
+		has_character_flag = VIET_is_artemis_bff
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		OR = {
+			trait = maimed
+			trait = wounded
+			trait = blinded
+			trait = eunuch
+			#trait = lunatic
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.8
+			trait = zealous
+		}
+		modifier = {
+			factor = 1.25
+			trait = cynical
+		}
+		modifier = {
+			factor = 2
+			NOT = { has_character_flag = VIET_hunted_with_artemis_twice }
+		}
+		modifier = {
+			factor = 1.25
+			trait = wounded
+		}
+	}
+
+	option = { # Artemis is kewl
+		name = ancrel.4276.a
+		if = {
+			limit = {
+				trait = maimed
+			}
+			remove_trait = maimed
+		}
+		if = {
+			limit = {
+				trait = wounded
+			}
+			remove_trait = wounded
+		}
+		if = {
+			limit = {
+				trait = blinded
+			}
+			remove_trait = blinded
+		}
+		if = {
+			limit = {
+				trait = eunuch
+			}
+			remove_trait = eunuch
+		}
+	}
+}
+
+# Artemis helps you break out of jail
+character_event = {
+	id = ancrel.4277
+	#title = ancrel.4277.title
+	desc = {
+		text = ancrel.4277.desc.a
+		trigger = {
+			NOT = { has_character_flag =  VIET_artemis_jailbreak_happened }
+		}
+	}
+	desc = { #lol we do it again
+		text = ancrel.4277.desc.b
+		trigger = {
+			has_character_flag =  VIET_artemis_jailbreak_happened
+		}
+	}
+	picture = GFX_evt_artemis
+	
+	ai = no
+	
+	prisoner = yes
+
+	trigger = { 
+		war = no 
+		in_command = no 
+		is_abroad = no
+		has_character_flag = VIET_is_artemis_bff
+		has_character_flag = VIET_hunted_with_artemis_twice
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.8
+			trait = zealous
+		}
+		modifier = {
+			factor = 1.25
+			trait = cynical
+		}
+		modifier = { #she can't save your ass all the time
+			factor = 4
+			has_character_flag = VIET_artemis_jailbreak_happened
+		}
+	}
+
+	option = { # Artemis is kewl
+		name = ancrel.4277.a
+		trigger = {
+			NOT = { has_character_flag =  VIET_artemis_jailbreak_happened }
+		}
+		if = {
+			limit = {
+				NOT = { has_character_flag =  VIET_artemis_jailbreak_happened }
+			}
+			set_character_flag =  VIET_artemis_jailbreak_happened
+		}
+		hidden_tooltip = {
+			host = {
+				character_event = { id = ancrel.4278 }
+			}
+		}
+		imprison = no
+	}
+	option = { # Artemis previously helped you break out of jail
+		name = ancrel.4277.b
+		trigger = {
+			has_character_flag =  VIET_artemis_jailbreak_happened
+		}
+		hidden_tooltip = {
+			host = {
+				character_event = { id = ancrel.4278 }
+			}
+		}
+		imprison = no
+	}
+}
+
+# Notify about Artemis jailbreak
+character_event = {
+	id = ancrel.4278
+	#title = ancrel.4278.title
+	desc = ancrel.4278.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+
+	option = { # Artemis is kewl
+		name = ancrel.4278.a
+		prestige = -50
+	}
+}
+
+
+# Artemis is in a bad mood
+narrative_event = {
+	id = ancrel.4279
+	title = ancrel.4279.title
+	desc = ancrel.4279.desc
+	picture = GFX_evt_artemis_moon
+
+	is_triggered_only = yes
+	
+	ai = no
+
+	trigger = { 
+		war = no 
+		in_command = no 
+		is_abroad = no
+		has_character_flag =  VIET_is_artemis_bff
+		has_character_flag =  VIET_hunted_with_artemis_twice
+		NOT = { has_character_flag = VIET_artemis_hates_fanfiction_about_her }
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		is_married = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+		modifier = {
+			factor = 0.5
+			trait = envious
+		}
+		modifier = {
+			factor = 2
+			learning = 13
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { learning = 7 }
+		}
+		modifier = {
+			factor = 2
+			trait = shy
+		}
+		modifier = {
+			factor = 0.5
+			trait = gregarious
+		}
+		modifier = {
+			factor = 2
+			trait = honest
+		}
+		modifier = {
+			factor = 0.5
+			trait = deceitful
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_artemis_hates_fanfiction_about_her
+	}
+
+	option = { # what's the matter?
+		name = ancrel.4279.a
+		hidden_tooltip = { character_event = { id = ancrel.4280 } }
+	}
+}
+
+
+# Artemis talks about misconceptions poets have of her
+narrative_event = {
+	id = ancrel.4280
+	title = ancrel.4280.title
+	desc = ancrel.4280.desc
+	picture = GFX_evt_artemis_bathing
+
+	is_triggered_only = yes
+
+	option = { # lolol
+		name = ancrel.4280.a
+		hidden_tooltip = { character_event = { id = ancrel.4281 } }
+	}
+}
+
+
+# Artemis gives you scrolls of poetry about her
+narrative_event = {
+	id = ancrel.4281
+	title = ancrel.4281.title
+	desc = ancrel.4281.desc
+	picture = GFX_evt_ancient_greek_scroll
+
+	is_triggered_only = yes
+
+	option = { # keep it
+		name = ancrel.4281.a
+		add_character_modifier = {
+			name = VIET_artemis_bad_poetry
+			duration = 3650
+		}
+	}
+	option = { # burn it
+		name = ancrel.4281.b
+		piety = 50
+	}
+}
+
+#Artemis blesses capital
+character_event = {
+	id = ancrel.4282
+	desc = ancrel.4282.desc
+	picture = GFX_evt_busy_trading_dock_republic_hellenic_pagan
+	
+	is_triggered_only = yes
+	
+	ai = no
+
+	
+	trigger = {
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}	
+		capital_scope = { 
+			religion = ROOT
+			NOT = { has_province_modifier = VIET_artemis_protects_province }
+		}
+		has_character_flag =  VIET_is_artemis_bff
+		has_character_flag =  VIET_hunted_with_artemis_twice
+		has_character_flag =  VIET_apollo_visited
+		has_character_flag =  VIET_artemis_baklava
+		NOT = { has_character_flag = VIET_artemis_province_done }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_artemis_province_done
+	}
+
+	option = {#ok
+		name = ancrel.4282.a
+		capital_scope = {
+			add_province_modifier = {
+				name = VIET_artemis_protects_province
+				duration = -1
+			}		
+		}
+	}
+}
+
+# Rumors about your relationship with Artemis
+character_event = {
+	id = ancrel.4283
+	desc = ancrel.4283.desc
+	picture = GFX_evt_artemis_bathing
+	
+	is_triggered_only = yes
+	
+	ai = no
+	
+	trigger = {
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		has_character_flag =  VIET_is_artemis_bff
+		has_character_flag =  VIET_hunted_with_artemis_twice
+		has_character_flag =  VIET_apollo_visited
+		has_character_flag =  VIET_artemis_hates_fanfiction_about_her
+		NOT = { has_character_flag = VIET_artemis_silly_literature }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_artemis_silly_literature
+	}
+
+	option = {#ok
+		name = ancrel.4283.a
+		add_character_modifier = {
+			name = VIET_artemis_rumors
+			duration = 730
+		}
+		character_event = { id = ancrel.4284 days = 30 random = 30 tooltip = ancrel.4284.tooltip }
+	}
+}
+
+# Artemis barges into your office
+narrative_event = {
+	id = ancrel.4284
+	title = ancrel.4284.title
+	desc = ancrel.4284.desc
+	picture = GFX_evt_ancient_greek_scroll
+	
+	option = {#ok
+		name = ancrel.4284.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4285 }
+		}
+	}
+}
+
+# Artemis is bored
+narrative_event = {
+	id = ancrel.4285
+	title = ancrel.4285.title
+	desc = ancrel.4285.desc
+	picture = GFX_evt_small_town_hellenic_pagan
+	
+	option = {#ok
+		name = ancrel.4285.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4286 }
+		}
+	}
+}
+
+# Artemis and player reads bad fiction about her
+narrative_event = {
+	id = ancrel.4286
+	title = ancrel.4286.title
+	desc = ancrel.4286.desc
+	picture = GFX_evt_ancient_greek_scroll
+	
+	option = {#ok
+		name = ancrel.4286.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4287 }
+		}
+	}
+}
+
+# Artemis and player reads bad fiction about her
+narrative_event = {
+	id = ancrel.4287
+	title = ancrel.4287.title
+	desc = ancrel.4287.desc
+	picture = GFX_evt_artemis_moon
+	
+	option = {#ok
+		name = ancrel.4287.a
+		piety = 20
+		if = {
+			limit = {
+				trait = stressed
+			}
+			random = {
+				remove_trait = stressed
+				chance = 66
+			}
+		}
+		if = {
+			limit = {
+				trait = depressed
+			}
+			random = {
+				remove_trait = depressed
+				chance = 66
+			}
+		}
+	}
+}
+
+
+
+# Artemis and you are chatting when Zeus interrupts
+character_event = {
+	id = ancrel.4288
+	desc = ancrel.4288.desc
+	picture = GFX_evt_tuscan_country_byzantine
+	
+	is_triggered_only = yes
+	
+	ai = no
+	
+	trigger = {
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		has_character_flag =  VIET_is_artemis_bff
+		has_character_flag =  VIET_hunted_with_artemis_twice
+		has_character_flag =  VIET_apollo_visited
+		NOT = { has_character_flag = VIET_artemis_zeus_interruption }
+		NOT = { has_character_modifier = VIET_heard_about_apollo_prank }
+		NOT = { trait = incapable }
+		NOT = { trait = infirm }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+		modifier = {
+			factor = 2
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}
+		modifier = {
+			factor = 2
+			trait = slothful
+		}
+		modifier = {
+			factor = 0.5
+			trait = diligent
+		}
+		modifier = {
+			factor = 2
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = shy
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_artemis_zeus_interruption
+	}
+
+	option = {#ok
+		name = ancrel.4288.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4289 }
+		}
+	}
+}
+
+# Zeus is running away from Hera, Artemis doesn't want to deal with his BS
+narrative_event = {
+	id = ancrel.4289
+	title = ancrel.4289.title
+	desc = ancrel.4289.desc
+	picture = GFX_evt_zeus_on_throne
+
+	option = {#ok
+		name = ancrel.4289.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4290 }
+		}
+	}
+}
+
+# Artemis complains about Zeus' infidelity
+narrative_event = {
+	id = ancrel.4290
+	title = ancrel.4290.title
+	desc = ancrel.4290.desc
+	picture = GFX_evt_artemis
+
+	option = {#ok
+		name = ancrel.4290.a
+		add_character_modifier = {
+			name = VIET_heard_about_apollo_prank
+			duration = 365
+		}
+	}
+}
+
+
+# Artemis tells you about a prank she played on Apollo
+character_event = {
+	id = ancrel.4291
+	desc = ancrel.4291.desc
+	picture = GFX_evt_artemis_bathing
+	
+	is_triggered_only = yes
+	
+	ai = no
+	
+	trigger = {
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		has_character_flag =  VIET_is_artemis_bff
+		has_character_flag =  VIET_hunted_with_artemis_twice
+		has_character_flag =  VIET_apollo_visited
+		NOT = { has_character_flag = VIET_artemis_pranks_apollo }
+		NOT = { has_character_modifier = VIET_heard_about_apollo_prank }
+		NOT = { trait = incapable }
+		NOT = { trait = infirm }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = content
+		}
+		modifier = {
+			factor = 0.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2
+			trait = trusting
+		}
+		modifier = {
+			factor = 0.5
+			trait = paranoid
+		}
+		modifier = {
+			factor = 2
+			trait = lustful
+		}
+		modifier = {
+			factor = 0.5
+			trait = chaste
+		}
+		modifier = {
+			factor = 2
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = shy
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_artemis_pranks_apollo
+	}
+
+	option = {#ok
+		name = ancrel.4291.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4292 }
+		}
+	}
+}
+
+# Artemis tells you about a prank she played on Apollo, part 2
+character_event = {
+	id = ancrel.4292
+	#title = ancrel.4292.title
+	desc = ancrel.4292.desc
+	picture = GFX_evt_zeus_on_throne
+
+	option = {#ok
+		name = ancrel.4292.a
+		add_character_modifier = {
+			name = VIET_heard_about_apollo_prank
+			duration = 365
+		}		
+	}
+}
+
+# Artemis and Apollo are arguing
+character_event = {
+	id = ancrel.4293
+	#title = ancrel.4293.title
+	desc = ancrel.4293.desc
+	picture = GFX_evt_sun_and_moon
+	
+	is_triggered_only = yes
+	
+	ai = no
+	
+	trigger = {
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		has_character_flag =  VIET_is_artemis_bff
+		has_character_flag =  VIET_hunted_with_artemis_twice
+		has_character_flag =  VIET_apollo_visited
+		NOT = { has_character_flag = VIET_artemis_apollo_argument }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = cynical
+		}
+		modifier = {
+			factor = 2
+			trait = trusting
+		}
+		modifier = {
+			factor = 0.5
+			trait = paranoid
+		}
+		modifier = {
+			factor = 2
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = shy
+		}
+		modifier = {
+			factor = 2
+			trait = patient
+		}
+		modifier = {
+			factor = 0.5
+			trait = wroth
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_artemis_apollo_argument
+	}
+	
+	option = {#ok
+		name = ancrel.4293.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4294 }
+		}
+	}
+}
+
+# Artemis and Apollo ask you to choose a side
+character_event = {
+	id = ancrel.4294
+	#title = ancrel.4294.title
+	desc = ancrel.4294.desc
+	picture = GFX_evt_stone_church_hellenic_pagan
+	
+	is_triggered_only = yes
+	
+	option = {#Pick Artemis
+		name = ancrel.4294.a
+		piety = 20
+		prestige = -10
+		custom_tooltip = { text = ancrel.4295.tooltip.1 }
+	}	
+	option = {#Pick Apollo
+		name = ancrel.4294.b
+		piety = 20
+		prestige = -10
+		custom_tooltip = { text = ancrel.4295.tooltip.2 }
+	}	
+	option = {#Pick both
+		name = ancrel.4294.c
+		tooltip_info = diplomacy
+		trigger = {
+			diplomacy = 13
+		}
+		piety = 20
+		prestige = 20
+		custom_tooltip = { text = ancrel.4295.tooltip.3 }
+	}
+}
+
+# Artemis complaining about Apollo having loud sex
+character_event = {
+	id = ancrel.4295
+	#title = ancrel.4295.title
+	desc = ancrel.4295.desc
+	picture = GFX_evt_maiden_hellenic_pagan
+	
+	is_triggered_only = yes
+	
+	ai = no
+	
+	trigger = {
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		has_character_flag =  VIET_is_artemis_bff
+		has_character_flag =  VIET_hunted_with_artemis_twice
+		has_character_flag =  VIET_apollo_visited
+		NOT = { has_character_flag = VIET_artemis_complains_about_apollo }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = honest
+		}
+		modifier = {
+			factor = 0.5
+			trait = deceitful
+		}
+		modifier = {
+			factor = 2
+			trait = chaste
+		}
+		modifier = {
+			factor = 0.5
+			trait = lustful
+		}
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+		modifier = {
+			factor = 0.5
+			trait = envious
+		}
+		modifier = {
+			factor = 2
+			trait = patient
+		}
+		modifier = {
+			factor = 0.5
+			trait = wroth
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_artemis_complains_about_apollo
+	}
+	
+	option = {# he's a man, can't help it
+		name = ancrel.4295.a
+		prestige = 5
+		hidden_tooltip = {
+			character_event = { id = ancrel.4296 }
+		}
+	}	
+	option = {# he's not being considerate
+		name = ancrel.4295.b
+		piety = 5
+		hidden_tooltip = {
+			character_event = { id = ancrel.4296 }
+		}
+	}
+}
+
+# Wow Artemis actually cares about Apollo
+narrative_event = {
+	id = ancrel.4296
+	title = ancrel.4296.title
+	desc = ancrel.4296.desc
+	picture = GFX_evt_sun_and_moon
+	
+	is_triggered_only = yes
+	
+	option = {#lolol
+		name = ancrel.4296.a
+	}	
+}
+
+# Ask Artemis about death
+character_event = {
+	id = ancrel.4297
+	#title = ancrel.4297.title
+	desc = ancrel.4297.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	min_age = 50
+	ai = no
+	
+	trigger = {
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		has_character_flag =  VIET_is_artemis_bff
+		has_character_flag =  VIET_hunted_with_artemis_twice
+		NOT = { has_character_flag = VIET_ask_artemis_about_death }
+		NOT = { trait = incapable }
+		NOT = { trait = infirm }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = honest
+		}
+		modifier = {
+			factor = 0.5
+			trait = deceitful
+		}
+		modifier = {
+			factor = 2
+			trait = chaste
+		}
+		modifier = {
+			factor = 0.5
+			trait = lustful
+		}
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+		modifier = {
+			factor = 0.5
+			trait = envious
+		}
+		modifier = {
+			factor = 2
+			trait = patient
+		}
+		modifier = {
+			factor = 0.5
+			trait = wroth
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_ask_artemis_about_death
+	}
+	
+	option = {# what is death?
+		name = ancrel.4297.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4298 }
+		}
+	}	
+}
+
+# Artemis talks about death
+narrative_event = {
+	id = ancrel.4298
+	title = ancrel.4298.title
+	desc = ancrel.4298.desc
+	picture = GFX_evt_pomegranate
+	
+	is_triggered_only = yes
+	
+	option = {# pomegranates
+		name = ancrel.4298.a
+		piety = 10
+	}	
+}
+
+
+# Character dies - Artemis escorts to the underworld
+narrative_event = {
+	id = ancrel.4299
+	title = ancrel.4299.title
+	desc = ancrel.4299.desc
+	picture = GFX_evt_artemis_moon
+	
+	is_triggered_only = yes
+	
+	ai = no
+	
+	trigger = {
+		#OR = {
+		#	religion = hellenic_pagan
+		#	religion = titan_pagan
+		#	religion = promethean_pagan
+		#}
+		#Character's actual religion doesn't matter, better to have a nice end
+		has_character_flag =  VIET_is_artemis_bff
+		has_character_flag =  VIET_hunted_with_artemis_twice
+	}
+	
+	immediate = {
+		set_global_flag = VIET_artemis_bff_has_died
+	}
+	
+	###########
+	#
+	# Nickname is based on Homeric Epithets. 
+	# I want to give it at the end of the character's life.
+	# The idea is that they will be remembered as a hero-figure in Greek mythology
+	# who was Diana/Artemis' champion, just like how Odysseus was sorta like Athena's champion.
+	#
+	###########
+	
+	option = {
+		name = ancrel.4299.a
+		give_nickname = nick_cherished_of_diana 
+		custom_tooltip = { text = VIET_artemis_finally_a_lotr_reference }
+
+		###############################
+		#
+		# Need to add event_target so character's name is saved for later events about hero cult?
+		#
+		###############################
+	}	
+}
+
+
+##############################################
+# Artemis Event Chain Heroic Deed Events
+##############################################
+
+
+# Wild Boar Spotted
+character_event = {
+	id = ancrel.4300
+	#title = ancrel.4300.title
+	desc = ancrel.4300.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	ai = no
+	
+	trigger = {
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		has_character_flag =  VIET_is_artemis_bff
+		has_character_flag =  VIET_hunted_with_artemis_twice
+		NOT = { has_character_flag = VIET_artemis_boar_heroism }
+		NOT = { trait = incapable }
+		NOT = { trait = infirm }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 2
+			trait = paranoid
+		}
+		modifier = {
+			factor = 0.5
+			trait = trusting
+		}
+		modifier = {
+			factor = 2
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}
+		modifier = {
+			factor = 2
+			trait = patient
+		}
+		modifier = {
+			factor = 0.5
+			trait = wroth
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_artemis_boar_heroism
+	}
+	
+	option = {# oh noes
+		name = ancrel.4300.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4301 }
+		}
+	}	
+}
+
+
+# Boar attacks!
+character_event = {
+	id = ancrel.4301
+	#title = ancrel.4301.title
+	desc = ancrel.4301.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	option = {# i will be brave
+		name = ancrel.4301.a
+		trigger = {
+			NOT = { trait = craven }
+		}
+		random = {
+			add_trait = brave
+			chance = 40
+		}
+		prestige = 10
+		hidden_tooltip = {
+			character_event = { id = ancrel.4303 }
+		}
+	}	
+	option = {# run away!
+		name = ancrel.4301.a
+		trigger = {
+			NOT = { trait = craven }
+		}
+		random = {
+			add_trait = brave
+			chance = 50
+		}
+		hidden_tooltip = {
+			character_event = { id = ancrel.4302 }
+		}
+	}	
+}
+
+
+# Artemis tells you to stop being a wuss
+narrative_event = {
+	id = ancrel.4302
+	title = ancrel.4302.title
+	desc = ancrel.4302.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	option = {# i will be brave
+		name = ancrel.4302.a
+		random = {
+			add_trait = brave
+			chance = 30
+		}
+		if = {
+			limit = {
+				trait = craven
+			}
+			remove_trait = craven
+		}
+		character_event = { id = ancrel.4303 tooltip = ancrel.4303.tooltip }
+	}	
+}
+
+# Slay the boar
+narrative_event = {
+	id = ancrel.4303
+	#title = ancrel.4303.title
+	desc = ancrel.4303.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	option = {# i will be brave
+		name = ancrel.4303.a
+		random = {
+			add_trait = wounded
+			hidden_tooltip = { character_event = { id = 38280 } }
+			chance = 25
+		}
+		character_event = { id = ancrel.4304 tooltip = ancrel.4304.tooltip }
+	}	
+}
+
+# Boar is dead - but who sent it?
+narrative_event = {
+	id = ancrel.4304
+	#title = ancrel.4304.title
+	desc = ancrel.4304.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	option = {# kewl
+		name = ancrel.4304.a
+		prestige = 20
+		add_character_modifier = {
+			name = VIET_killed_hellenic_great_boar
+			duration = 1000
+		}
+	}	
+}
+
+
+
+# Ceryneian Hind Spotted
+character_event = {
+	id = ancrel.4305
+	#title = ancrel.4305.title
+	desc = ancrel.4305.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	ai = no
+	
+	trigger = {
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		has_character_flag =  VIET_is_artemis_bff
+		has_character_flag =  VIET_hunted_with_artemis_twice
+		NOT = { has_character_flag = VIET_artemis_golden_hind_heroism }
+		NOT = { trait = incapable }
+		NOT = { trait = infirm }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = shy
+		}
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+		modifier = {
+			factor = 0.5
+			trait = cruel
+		}
+		modifier = {
+			factor = 2
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}
+		modifier = {
+			factor = 2
+			trait = trusting
+		}
+		modifier = {
+			factor = 0.5
+			trait = paranoid
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_artemis_golden_hind_heroism
+	}
+	
+	option = {# oh noes
+		name = ancrel.4305.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4306 }
+		}
+	}	
+}
+
+# Ceryneian Hind goes crazy
+character_event = {
+	id = ancrel.4306
+	#title = ancrel.4306.title
+	desc = ancrel.4306.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	option = {# oh noes
+		name = ancrel.4306.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4307 }
+		}
+	}	
+}
+
+# Ceryneian Hind goes crazy
+character_event = {
+	id = ancrel.4307
+	#title = ancrel.4307.title
+	desc = ancrel.4307.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	option = {# oh noes
+		name = ancrel.4307.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4308 }
+		}
+	}	
+}
+
+# Run away from Ceryneian Hind because can't kill Artemis' sacred animal
+narrative_event = {
+	id = ancrel.4308
+	title = ancrel.4308.title
+	desc = ancrel.4308.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	option = {# oh noes
+		name = ancrel.4308.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4309 }
+		}
+	}	
+}
+
+# Artemis and Apollo save the day - turns out to be Apollo's prank on his sister
+narrative_event = {
+	id = ancrel.4309
+	title = ancrel.4309.title
+	desc = ancrel.4309.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	option = {# oh yays
+		name = ancrel.4309.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4310 }
+		}
+	}	
+}
+
+# Successfully survived Ceryneian Hind
+character_event = {
+	id = ancrel.4310
+	#title = ancrel.4310.title
+	desc = ancrel.4310.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	option = {# oh yays
+		name = ancrel.4310.a
+		add_character_modifier = {
+			name = VIET_survived_golden_hind
+			duration = 1000
+		}
+	}	
+}
+
+
+
+# Artemis helps you recover from illnesses - might need to be changed for upcoming DLC
+character_event = {
+	id = ancrel.4311
+	#title = ancrel.4311.title
+	desc = ancrel.4311.desc
+	picture = GFX_evt_artemis
+	
+	ai = no
+
+	trigger = { 
+		war = no 
+		in_command = no 
+		is_abroad = no
+		has_character_flag = VIET_is_artemis_bff
+		has_character_flag = VIET_hunted_with_artemis_twice
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		OR = {
+			trait = syphilitic
+			trait = leper
+			trait = has_tuberculosis
+			trait = has_typhoid_fever
+			trait = has_typhus
+			trait = has_bubonic_plague
+			trait = has_measles
+			trait = has_small_pox
+			trait = has_aztec_disease
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.8
+			trait = zealous
+		}
+		modifier = {
+			factor = 1.25
+			trait = cynical
+		}
+		#modifier = {
+		#	factor = 2
+		#	NOT = { has_character_flag = VIET_hunted_with_artemis_twice }
+		#}
+	}
+
+	option = { # Artemis is kewl
+		name = ancrel.4311.a
+		if = {
+			limit = {
+				trait = syphilitic
+			}
+			remove_trait = syphilitic
+		}
+		if = {
+			limit = {
+				trait = leper
+			}
+			remove_trait = leper
+		}
+		if = {
+			limit = {
+				trait = has_tuberculosis
+			}
+			remove_trait = has_tuberculosis
+		}
+		if = {
+			limit = {
+				trait = has_typhoid_fever
+			}
+			remove_trait = has_typhoid_fever
+		}
+		if = {
+			limit = {
+				trait = has_typhus
+			}
+			remove_trait = has_typhus
+		}
+		if = {
+			limit = {
+				trait = has_bubonic_plague
+			}
+			remove_trait = has_bubonic_plague
+		}
+		if = {
+			limit = {
+				trait = has_measles
+			}
+			remove_trait = has_measles
+		}
+		if = {
+			limit = {
+				trait = has_small_pox
+			}
+			remove_trait = has_small_pox
+		}
+		if = {
+			limit = {
+				trait = has_aztec_disease
+			}
+			remove_trait = has_aztec_disease
+		}
+	}
+}
+
+
+
+# Artemis helps you recover from mental issues
+narrative_event = {
+	id = ancrel.4312
+	title = ancrel.4312.title
+	desc = ancrel.4312.desc
+	picture = GFX_evt_artemis
+	
+	ai = no
+
+	trigger = { 
+		war = no 
+		in_command = no 
+		is_abroad = no
+		has_character_flag = VIET_is_artemis_bff
+		has_character_flag = VIET_is_artemis_bff
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		OR = {
+			trait = incapable
+			trait = infirm
+			trait = lunatic
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.8
+			trait = zealous
+		}
+		modifier = {
+			factor = 1.25
+			trait = cynical
+		}
+		modifier = {
+			factor = 2
+			NOT = { has_character_flag = VIET_hunted_with_artemis_twice }
+		}
+	}
+
+	option = { # Artemis is kewl
+		name = ancrel.4312.a
+		if = {
+			limit = {
+				trait = incapable
+			}
+			remove_trait = incapable
+		}
+		if = {
+			limit = {
+				trait = infirm
+			}
+			remove_trait = infirm
+		}
+		if = {
+			limit = {
+				trait = lunatic
+			}
+			remove_trait = lunatic
+		}
+	}
+}
+
+
+# Reports of a highwayman
+character_event = {
+	id = ancrel.4313
+	#title = ancrel.4313.title
+	desc = ancrel.4313.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	ai = no
+	
+	trigger = {
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		has_character_flag =  VIET_is_artemis_bff
+		has_character_flag =  VIET_hunted_with_artemis_twice
+		NOT = { has_character_flag = VIET_artemis_highwayman_heroism }
+		NOT = { trait = incapable }
+		NOT = { trait = infirm }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+		modifier = {
+			factor = 0.5
+			trait = cruel
+		}
+		modifier = {
+			factor = 2
+			trait = just
+		}
+		modifier = {
+			factor = 0.5
+			trait = arbitrary
+		}
+		modifier = {
+			factor = 2
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_artemis_golden_hind_heroism
+	}
+	
+	option = {# oh noes
+		name = ancrel.4313.a
+		hidden_tooltip = {
+			character_event = { id = ancrel.4314 days = 2 random = 3 }
+		}
+	}	
+}
+
+# Capture the Highwayman
+narrative_event = {
+	id = ancrel.4314
+	title = ancrel.4314.title
+	desc = ancrel.4314.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	option = {# imprison
+		name = ancrel.4314.a
+		prestige = 20
+		add_character_modifier = {
+			name = VIET_artemis_captured_highwayman
+			duration = 1825
+		}
+		create_character = {
+			dynasty = culture
+			religion = ROOT
+			culture = ROOT
+			female = no
+			trait = envious
+			trait = brave
+			trait = gregarious
+			trait = deceitful
+		}		
+		new_character = {
+			if = {
+				limit = {
+					has_global_flag = VIET_Traits_On
+				}
+				random = {
+					add_trait = perceptive
+					chance = 15
+				}
+				random = {
+					add_trait = agile
+					chance = 15
+				}
+			}
+			random = {
+				add_trait = strong
+				chance = 40
+			}
+			random = {
+				add_trait = fair
+				chance = 20
+			}
+			random = {
+				add_trait = quick
+				chance = 20
+			}
+			imprison = ROOT
+		}		
+	}	
+	option = {# kill!
+		name = ancrel.4314.b
+		prestige = 20
+		add_character_modifier = {
+			name = VIET_artemis_captured_highwayman
+			duration = 1825
+		}	
+	}	
+}
+
+
+
+# Someone has sex in Artemis' temple
+character_event = {
+	id = ancrel.4315
+	#title = ancrel.4315.title
+	desc = ancrel.4315.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	ai = no
+	
+	trigger = {
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		has_character_flag =  VIET_is_artemis_bff
+		has_character_flag =  VIET_hunted_with_artemis_twice
+		NOT = { has_character_flag = VIET_artemis_temple_sex }
+		NOT = { has_character_modifier = VIET_heard_about_apollo_prank }
+		NOT = { trait = incapable }
+		NOT = { trait = infirm }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = shy
+		}
+		modifier = {
+			factor = 2
+			trait = cynical
+		}
+		modifier = {
+			factor = 0.5
+			trait = zealous
+		}
+		modifier = {
+			factor = 2
+			trait = chaste
+		}
+		modifier = {
+			factor = 0.5
+			trait = lustful
+		}
+		modifier = {
+			factor = 2
+			trait = paranoid
+		}
+		modifier = {
+			factor = 0.5
+			trait = trusting
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_artemis_temple_sex
+	}
+	
+	option = {# make the offenders pay a fine
+		name = ancrel.4315.a
+		random = {
+			add_trait = kind
+			chance = 25
+		}
+		hidden_tooltip = {
+			character_event = { id = ancrel.4316 }
+		}
+	}	
+	option = {# imprison the offenders
+		name = ancrel.4315.b
+		random = {
+			add_trait = zealous
+			chance = 25
+		}
+		hidden_tooltip = {
+			character_event = { id = ancrel.4316 }
+		}
+	}	
+	option = {# kill the offenders
+		name = ancrel.4315.c
+		random_list = {
+			10 = { add_trait = zealous }
+			15 = { add_trait = wroth }
+			75 = {}
+		}
+		hidden_tooltip = {
+			character_event = { id = ancrel.4316 }
+		}
+	}	
+}
+
+# Discuss decision with Artemis
+narrative_event = {
+	id = ancrel.4316
+	title = ancrel.4316.title
+	desc = ancrel.4316.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	option = {# ok
+		name = ancrel.4316.a
+		random = {
+			add_trait = gregarious
+			chance = 20
+		}
+	}	
+	option = {# ok
+		name = ancrel.4316.b
+		add_character_modifier = {
+			name = VIET_heard_about_apollo_prank
+			duration = 365
+		}
+	}	
+}
+
+# Yo Artemis if you hate sex why are you hanging out with me?
+character_event = {
+	id = ancrel.4317
+	#title = ancrel.4317.title
+	desc = ancrel.4317.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	ai = no
+	
+	trigger = {
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+			religion = promethean_pagan
+		}
+		has_character_flag =  VIET_is_artemis_bff
+		has_character_flag =  VIET_hunted_with_artemis_twice
+		NOT = { has_character_flag = VIET_artemis_sex_question }
+		NOT = { trait = celibate }
+		NOT = { trait = eunuch }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = gregarious
+		}
+		modifier = {
+			factor = 0.5
+			trait = shy
+		}
+		modifier = {
+			factor = 2
+			trait = cynical
+		}
+		modifier = {
+			factor = 0.5
+			trait = zealous
+		}
+		modifier = {
+			factor = 2
+			trait = humble
+		}
+		modifier = {
+			factor = 0.5
+			trait = proud
+		}
+		modifier = {
+			factor = 2
+			trait = kind
+		}
+		modifier = {
+			factor = 0.5
+			trait = cruel
+		}
+	}
+	
+	immediate = {
+		set_character_flag = VIET_artemis_sex_question
+	}
+	
+	option = {# CASTRATE MYSELF
+		name = ancrel.4317.a
+		piety = 500
+		character_event = { id = ancrel.4318 }
+	}	
+	option = {# Become celibate
+		name = ancrel.4317.b
+		piety = 200
+		add_trait = celibate
+	}	
+	option = {# Become chaste
+		name = ancrel.4317.c
+		trigger = {
+			NOT = { trait = chaste }
+		}
+		piety = 50
+		add_trait = chaste
+	}	
+	option = {# Is chaste
+		name = ancrel.4317.d
+		trigger = {
+			trait = chaste
+		}
+		piety = 50
+	}		
+	option = {# ok cool
+		name = ancrel.4317.e
+		piety = 20
+		if = {
+			limit = {
+				trait = lustful
+			}
+			remove_trait = lustful
+		}
+	}	
+}
+
+# Artemis says you're cuckoo for wanting to castrate yourself
+character_event = {
+	id = ancrel.4318
+	#title = ancrel.4318.title
+	desc = ancrel.4318.desc
+	picture = GFX_evt_hades_forest
+	
+	is_triggered_only = yes
+	
+	option = {# Become celibate
+		name = ancrel.4317.a
+		add_trait = celibate
+	}	
+	option = {# Become chaste
+		name = ancrel.4317.b
+		trigger = {
+			NOT = { trait = chaste }
+		}
+		add_trait = chaste
+	}	
+	option = {# Is chaste
+		name = ancrel.4317.c
+		trigger = {
+			trait = chaste
+		}
+	}		
+	option = {# ok cool
+		name = ancrel.4317.d
+		if = {
+			limit = {
+				trait = lustful
+			}
+			remove_trait = lustful
+		}
+	}	
+}

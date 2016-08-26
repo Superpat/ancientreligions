@@ -2619,9 +2619,9 @@ character_event = {
 	picture = GFX_evt_sand_desert
 
 	only_rulers = yes
-	min_age = 16
+	is_adult = yes
 	only_capable = yes
-	prisoner = no
+	is_inaccessible_trigger = no
 
 	trigger = {
 		NOR = { 
@@ -2714,18 +2714,7 @@ character_event = {
 					90 = { character_event = { id = ancrel.4209 } }
 					10 = {
 						clr_character_flag = lost_in_sandstorm
-						if = {
-							limit = {
-								religion_group = muslim
-							}
-							death = { death_reason = death_on_hajj }
-						}
-						if = {
-							limit = {
-								religion_group = christian
-							}
-							death = { death_reason = death_on_pilgrimage }
-						}
+						death = { death_reason = death_missing }
 					}
 				}
 			}
@@ -2814,7 +2803,7 @@ character_event = {
 		name = ancrel.4204.a
 		custom_tooltip = {
 			text = ancrel.4204.a.tt
-			hidden_tooltip = { character_event = { id = ancrel.4205 days = 2 } }
+			hidden_tooltip = { character_event = { id = ancrel.4205 days = 1 } }
 		}
 	}
 }

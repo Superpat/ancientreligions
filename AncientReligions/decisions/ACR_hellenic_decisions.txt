@@ -1,6 +1,7 @@
 decisions = {
 
 	recreate_pontificate = {
+		only_playable = yes
 		is_high_prio = yes
 		potential = {
 			religion = hellenic_pagan
@@ -67,8 +68,8 @@ decisions = {
 	}
 
 	organize_sacred_band = {
+		only_playable = yes
 		is_high_prio = yes
-		
 		potential = {
 			higher_tier_than = count
 			religion = hellenic_pagan
@@ -110,6 +111,7 @@ decisions = {
 	}
 
 	hold_titan_thysia = {
+		only_playable = yes
 		is_high_prio = yes
 		potential = {
 			has_dlc = "The Old Gods"
@@ -191,6 +193,7 @@ decisions = {
 	}
 
 	found_sickles = {
+		only_playable = yes
 		is_high_prio = yes
 		potential = {
 			has_dlc = "The Old Gods"
@@ -350,6 +353,7 @@ decisions = {
 	}
 
 	rebuild_first_academy = {
+		only_playable = yes
 		is_high_prio = yes
 		potential = {
 			religion = promethean_pagan
@@ -421,6 +425,7 @@ decisions = {
 	}
 
 	rebuild_crotone = {
+		only_playable = yes
 		is_high_prio = yes
 		potential = {
 			religion = promethean_pagan
@@ -472,6 +477,7 @@ decisions = {
 	}
 
 	hold_unbinding_festival = {
+		only_playable = yes
 		is_high_prio = yes
 		potential = {
 			has_dlc = "The Old Gods"
@@ -537,6 +543,7 @@ decisions = {
 	}
 
 	organize_men_of_steel = {
+		only_playable = yes
 		is_high_prio = yes
 		potential = {
 			is_ruler = yes

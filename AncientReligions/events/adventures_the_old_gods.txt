@@ -30,8 +30,6 @@ character_event = {
 		
 		is_ruler = no
 		
-#		year = 867
-		
 		any_claim = {
 			has_holder = yes
 			holder_scope = {

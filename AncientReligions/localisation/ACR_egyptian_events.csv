@@ -84,7 +84,7 @@ ancrel.4200.desc;A sandstorm has caught you and the other travellers unawares. I
 ancrel.4200.a;May [Root.Religion.GetRandomGodName] guide me to safety...;;;;;;;;;;;;;x
 ancrel.4201.desc;As you wander across the dunes through the blowing winds, you see a dark shape to your right. It looks like it could be a building, but then again, it may just be a boulder...;;;;;;;;;;;;;x
 ancrel.4201.a;What fortune!;;;;;;;;;;;;;x
-ancrel.4201.a.tt;You move toward the boulder...;;;;;;;;;;;;;x
+ancrel.4201.a.tt;You move toward the shadow...;;;;;;;;;;;;;x
 ancrel.4202.desc;As you approach the shadowy form it looms large before you. The wind and sand give way, revealing the shadow to be an old temple, it's statues worn of detail from centuries of sandstorms. And yet, you feel a presence with the ancient stones.\nThe light is failing and the air grows chill. Will you push on through the night to find the path, or take shelter within?;;;;;;;;;;;;;x
 ancrel.4202.a;This place chills my bones, I will not stay within it's walls.;;;;;;;;;;;;;x
 ancrel.4202.a.tt;You will brave the sands to find your way.;;;;;;;;;;;;;x

@@ -40,6 +40,3 @@ k_sindh_adj;Sindh;;;;;;;;;;;;;x
 k_mali_adj;Mali;;;;;;;;;;;;;x
 k_afghanistan_adj;Afghanistan;;;;;;;;;;;;;x
 k_baluchistan_adj;Baluchistan;;;;;;;;;;;;;x
-###### trait overrides ;;;;;;;;;;;;;;x
-on_hajj_death;on the road to Mecca;;;;;;;;;;;;;x
-on_pilgrimage_death;while on pilgrimage;;;;;;;;;;;;;x

@@ -1,4 +1,3 @@
-#character
 on_startup = { 
 	events = {
 		ancrel.9010 # set ancrel global flag when game begins

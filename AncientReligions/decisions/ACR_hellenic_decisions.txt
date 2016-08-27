@@ -704,7 +704,7 @@ decisions = {
 			
 			OR = {
 				religion = promethean_pagan
-				is_neoplatonist = yes
+				is_neoplatonist_trigger = yes
 			}
 			
 			OR = {
@@ -716,13 +716,13 @@ decisions = {
 		allow = {
 			OR = {
 				piety = 200
-				is_neoplatonist = no
+				is_neoplatonist_trigger = no
 			}
 		}
 		effect = {
 			if = {
 				limit = {
-					is_neoplatonist = yes
+					is_neoplatonist_trigger = yes
 				}
 				piety = -200
 			}
@@ -741,7 +741,7 @@ decisions = {
 			modifier = {
 				factor = 0
 				NOT = { piety = 350 }
-				is_neoplatonist = yes
+				is_neoplatonist_trigger = yes
 			}
 			modifier = {
 				factor = 2
@@ -779,7 +779,7 @@ decisions = {
 			modifier = {
 				factor = 100
 				religion = promethean_pagan
-				is_neoplatonist = no
+				is_neoplatonist_trigger = no
 			}
 		}
 	}

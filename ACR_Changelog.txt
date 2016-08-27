@@ -1,3 +1,9 @@
+2016-8-27 v0.38.1 "Actaeon"
+-------------------------
+
+Kemetic:
+- Fixed Kemetic revival events being called for any character at random.
+
 2016-8-27 v0.38.0 "Diana"
 -------------------------
 

@@ -15,33 +15,40 @@ namespace = ancrel
 # Patriarchate of Antioch
 character_event = {
 	id = LoR.200
-	desc = EVTDESCLoR.200
+	desc = EVTDESCLoR.200
 	picture = GFX_evt_bishop_byzantine
+	
+	ai = no
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		NOT = { has_global_flag = pat_antioch }
+		OR = {
+			religion = orthodox
+			is_heresy_of = orthodox
+		}
 		OR = {
 			has_landed_title = e_latin_empire
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		OR = {
-			religion = orthodox
-			is_heresy_of = orthodox
-		}
-		NOT = { has_global_flag = pat_antioch }
 		completely_controls = c_antiocheia
 	}
 	
+	mean_time_to_happen = {
+		days = 1
+	}
+		
 	option = {
 		name = EVTOPTALoR.200
 		set_global_flag = pat_antioch
 		piety = 100
 	}
 }
+
 character_event = {
 	id = ancrel.2200
-	desc = EVTDESCancrel.2200
+	desc = EVTDESCancrel.2200
 	picture = GFX_evt_bishop
 	
 	trigger = {
@@ -57,6 +64,9 @@ character_event = {
 		NOT = { has_global_flag = lat_pat_antioch }
 		completely_controls = c_antiocheia
 	}
+	mean_time_to_happen = {
+		days = 1
+	}
 	
 	option = {
 		name = EVTOPTALoR.200
@@ -68,22 +78,28 @@ character_event = {
 # Patriarchate of Jerusalem
 character_event = {
 	id = LoR.201
-	desc = EVTDESCLoR.201
+	desc = EVTDESCLoR.201
 	picture = GFX_evt_bishop_byzantine
+	
+	ai = no
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		NOT = { has_global_flag = pat_jerusalem }
+		OR = {
+			religion = orthodox
+			is_heresy_of = orthodox
+		}
 		OR = {
 			has_landed_title = e_latin_empire
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		OR = {
-			religion = orthodox
-			is_heresy_of = orthodox
-		}
-		NOT = { has_global_flag = pat_jerusalem }
 		completely_controls = c_jerusalem
+	}
+	
+	mean_time_to_happen = {
+		days = 1
 	}
 	
 	option = {
@@ -94,7 +110,7 @@ character_event = {
 }
 character_event = {
 	id = ancrel.2201
-	desc = EVTDESCancrel.2201
+	desc = EVTDESCancrel.2201
 	picture = GFX_evt_bishop
 	
 	trigger = {
@@ -110,7 +126,9 @@ character_event = {
 		NOT = { has_global_flag = lat_pat_jerusalem }
 		completely_controls = c_jerusalem
 	}
-	
+	mean_time_to_happen = {
+		days = 1
+	}
 	option = {
 		name = EVTOPTALoR.200
 		set_global_flag = lat_pat_jerusalem
@@ -121,22 +139,28 @@ character_event = {
 # Patriarchate of Alexandria
 character_event = {
 	id = LoR.202
-	desc = EVTDESCLoR.202
+	desc = EVTDESCLoR.202
 	picture = GFX_evt_bishop_byzantine
+	
+	ai = no
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		NOT = { has_global_flag = pat_alexandria }
+		OR = {
+			religion = orthodox
+			is_heresy_of = orthodox
+		}
 		OR = {
 			has_landed_title = e_latin_empire
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		OR = {
-			religion = orthodox
-			is_heresy_of = orthodox
-		}
-		NOT = { has_global_flag = pat_alexandria }
 		completely_controls = c_alexandria
+	}
+	
+	mean_time_to_happen = {
+		days = 1
 	}
 	
 	option = {
@@ -147,7 +171,7 @@ character_event = {
 }
 character_event = {
 	id = ancrel.2202
-	desc = EVTDESCancrel.2202
+	desc = EVTDESCancrel.2202
 	picture = GFX_evt_bishop
 	
 	trigger = {
@@ -163,6 +187,9 @@ character_event = {
 		NOT = { has_global_flag = lat_pat_alexandria }
 		completely_controls = c_alexandria
 	}
+	mean_time_to_happen = {
+		days = 1
+	}
 	
 	option = {
 		name = EVTOPTALoR.200
@@ -174,22 +201,28 @@ character_event = {
 # Patriarchate of Rome
 character_event = {
 	id = LoR.203
-	desc = EVTDESCLoR.203
+	desc = EVTDESCLoR.203
 	picture = GFX_evt_bishop_byzantine
+	
+	ai = no
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		NOT = { has_global_flag = pat_rome }
+		OR = {
+			religion = orthodox
+			is_heresy_of = orthodox
+		}
 		OR = {
 			has_landed_title = e_latin_empire
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
 		}
-		OR = {
-			religion = orthodox
-			is_heresy_of = orthodox
-		}
-		NOT = { has_global_flag = pat_rome }
 		completely_controls = c_roma
+	}
+	
+	mean_time_to_happen = {
+		days = 1
 	}
 	
 	option = {
@@ -202,7 +235,7 @@ character_event = {
 # Patriarchate of Constantinople
 character_event = {
 	id = ancrel.2203
-	desc = EVTDESCancrel.2203
+	desc = EVTDESCancrel.2203
 	picture = GFX_evt_bishop
 	
 	trigger = {
@@ -218,6 +251,9 @@ character_event = {
 		NOT = { has_global_flag = lat_pat_constantinople }
 		completely_controls = c_byzantion
 	}
+	mean_time_to_happen = {
+		days = 1
+	}
 	
 	option = {
 		name = EVTOPTALoR.200
@@ -232,7 +268,7 @@ character_event = {
 narrative_event = {
 	id = LoR.210
 	title = EVTNAMELoR.210
-	desc = EVTDESCLoR.210
+	desc = EVTDESCLoR.210
 	
 	picture = GFX_evt_icon
 	
@@ -240,9 +276,24 @@ narrative_event = {
 	
 	option = {
 		name = EVTOPTALoR.200
-		set_parent_religion = { religion = catholic parent = orthodox }
-		set_global_flag = schism_mended
-		give_nickname = nick_the_saint
+
+		if = {
+			limit = { religion = orthodox }
+			set_parent_religion = { religion = catholic parent = orthodox }
+		}
+		if = {
+			limit = { religion = monothelite }
+			set_parent_religion = { religion = catholic parent = monothelite }
+		}
+		if = {
+			limit = { religion = iconoclast }
+			set_parent_religion = { religion = catholic parent = iconoclast }
+		}
+		if = {
+			limit = { religion = paulician }
+			set_parent_religion = { religion = catholic parent = paulician }
+		}
+		
 		if = {
 			limit = {
 				NOT = { has_landed_title = k_orthodox }
@@ -250,9 +301,12 @@ narrative_event = {
 			}
 			k_orthodox = { holder_scope = { set_defacto_liege = ROOT } }
 		}
+		
+		set_global_flag = schism_mended
+		give_nickname = nick_the_saint
 		hidden_tooltip = {
 			any_playable_ruler = {
-				limit = { 
+				limit = {
 					religion = catholic
 					controls_religion = no
 				}
@@ -264,7 +318,7 @@ narrative_event = {
 narrative_event = {
 	id = ancrel.2210
 	title = EVTNAMELoR.210
-	desc = EVTDESCancrel.2210
+	desc = EVTDESCancrel.2210
 	
 	picture = GFX_evt_pope
 	
@@ -288,7 +342,7 @@ narrative_event = {
 					religion = orthodox
 					controls_religion = no
 				}
-				narrative_event = { id = ancrel.2211 }
+				narrative_event = { id = ancrel.2221 }
 			}
 		}
 	}
@@ -298,7 +352,7 @@ narrative_event = {
 narrative_event = {
 	id = LoR.211
 	title = EVTNAMELoR.210
-	desc = EVTDESCLoR.210
+	desc = EVTDESCLoR.210
 	
 	picture = GFX_evt_icon
 	
@@ -307,47 +361,16 @@ narrative_event = {
 	option = { # Yes
 		name = EVTOPTALoR.211
 		ai_chance = { factor = 75 }
-		religion = orthodox
+		religion = FROM
 		any_courtier = {
-			limit = { employer = { character = ROOT } }
-			religion = orthodox
-		}
-		any_vassal = {
-			limit = { is_playable = no }
-			religion = orthodox
+			limit = {
+				religion = catholic
+				liege = { character = ROOT }
+			}
+			religion = FROM
 		}
 		capital_scope = {
-			religion = orthodox
-		}
-	}
-	option = { # No
-		name = EVTOPTBLoR.211
-		ai_chance = { factor = 25 }
-	}
-}
-narrative_event = {
-	id = ancrel.2211
-	title = EVTNAMELoR.210
-	desc = EVTDESCLoR.210
-	
-	picture = GFX_evt_pope
-	
-	is_triggered_only = yes
-	
-	option = { # Yes
-		name = EVTOPTALoR.211
-		ai_chance = { factor = 75 }
-		religion = catholic
-		any_courtier = {
-			limit = { employer = { character = ROOT } }
-			religion = catholic
-		}
-		any_vassal = {
-			limit = { is_playable = no }
-			religion = catholic
-		}
-		capital_scope = {
-			religion = catholic
+			religion = FROM
 		}
 	}
 	option = { # No

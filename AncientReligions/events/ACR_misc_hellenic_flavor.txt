@@ -3308,7 +3308,7 @@ narrative_event = {
 	option = { # I wonder why Apollo and Artemis are so close...
 		name = ancrel.2563.a
 		piety = 10
-		add_characer_modifier = {
+		add_character_modifier = {
 			name = VIET_apollo_blessing
 			duration = -1
 		}
@@ -4284,6 +4284,8 @@ narrative_event = {
 	desc = ancrel.2584.desc
 	picture = GFX_evt_ancient_greek_scroll
 	
+	is_triggered_only = yes
+
 	option = {#ok
 		name = ancrel.2584.a
 		hidden_tooltip = {
@@ -4298,6 +4300,8 @@ narrative_event = {
 	title = ancrel.2585.title
 	desc = ancrel.2585.desc
 	picture = GFX_evt_small_town_hellenic_pagan
+		
+	is_triggered_only = yes
 	
 	option = {#ok
 		name = ancrel.2585.a
@@ -4313,6 +4317,8 @@ narrative_event = {
 	title = ancrel.2586.title
 	desc = ancrel.2586.desc
 	picture = GFX_evt_ancient_greek_scroll
+			
+	is_triggered_only = yes
 	
 	option = {#ok
 		name = ancrel.2586.a
@@ -4328,6 +4334,8 @@ narrative_event = {
 	title = ancrel.2587.title
 	desc = ancrel.2587.desc
 	picture = GFX_evt_artemis_moon
+			
+	is_triggered_only = yes
 	
 	option = {#ok
 		name = ancrel.2587.a
@@ -4432,7 +4440,9 @@ narrative_event = {
 	title = ancrel.2589.title
 	desc = ancrel.2589.desc
 	picture = GFX_evt_zeus_on_throne
-
+		
+	is_triggered_only = yes
+	
 	option = {#ok
 		name = ancrel.2589.a
 		hidden_tooltip = {
@@ -4447,7 +4457,9 @@ narrative_event = {
 	title = ancrel.2590.title
 	desc = ancrel.2590.desc
 	picture = GFX_evt_artemis
-
+		
+	is_triggered_only = yes
+	
 	option = {#ok
 		name = ancrel.2590.a
 		add_character_modifier = {
@@ -4537,7 +4549,9 @@ character_event = {
 	#title = ancrel.2592.title
 	desc = ancrel.2592.desc
 	picture = GFX_evt_zeus_on_throne
-
+		
+	is_triggered_only = yes
+	
 	option = {#ok
 		name = ancrel.2592.a
 		add_character_modifier = {

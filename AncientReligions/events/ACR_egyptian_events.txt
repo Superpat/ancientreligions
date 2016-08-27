@@ -2618,12 +2618,12 @@ character_event = {
 	desc = ancrel.4200.desc
 	picture = GFX_evt_sand_desert
 
-	only_rulers = yes
+	only_playable = yes
 	min_age = 16
 	only_capable = yes
-	is_inaccessible_trigger = no
 
 	trigger = {
+		is_inaccessible_trigger = no
 		NOR = { 
 			has_character_flag = lost_in_sandstorm
 			has_character_flag = awaiting_the_tribes
@@ -3193,7 +3193,7 @@ character_event = {
 	}
 
 	option = { # survey the pyramid
-		option = ancrel.4215.a
+		name = ancrel.4215.a
 		custom_tooltip = {
 			text = ancrel.4215.a.tt
 			hidden_tooltip = {
@@ -3203,7 +3203,7 @@ character_event = {
 	}
 
 	option = { # don't survey the pyramid
-		option = ancrel.4215.b
+		name = ancrel.4215.b
 	}
 }
 

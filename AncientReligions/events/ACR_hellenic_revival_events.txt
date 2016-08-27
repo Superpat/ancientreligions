@@ -1195,9 +1195,9 @@ narrative_event = {
 
 # The Sacred Band founded
 narrative_event = {
-	id = ancrel.2567
-	title = ancrel.2567.title
-	desc = ancrel.2567.desc
+	id = ancrel.2010
+	title = ancrel.2010.title
+	desc = ancrel.2010.desc
 	picture = GFX_evt_roman_temple
 	border = GFX_event_narrative_frame_war
 	
@@ -1206,13 +1206,13 @@ narrative_event = {
 	hide_from = yes
 	
 	option = {
-		name = ancrel.2567.a
+		name = ancrel.2010.a
 		hidden_tooltip = {
 			any_playable_ruler = {
 				limit = {
 					ai = no
 				}
-				narrative_event = { id = ancrel.2568 }
+				narrative_event = { id = ancrel.2011 }
 			}
 		}
 	}
@@ -1220,23 +1220,23 @@ narrative_event = {
 
 # The player is informed of the Sacred Band
 narrative_event = {
-	id = ancrel.2568
-	title = ancrel.2568.title
-	desc = ancrel.2568.desc
+	id = ancrel.2011
+	title = ancrel.2011.title
+	desc = ancrel.2011.desc
 	picture = GFX_evt_roman_temple
 	border = GFX_event_narrative_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = ancrel.2568.a
+		name = ancrel.2011.a
 		trigger = {
 			religion = hellenic_pagan
 		}
 	}
 	
 	option = {
-		name = ancrel.2568.b
+		name = ancrel.2011.b
 		trigger = {
 			NOT = {
 				religion = hellenic_pagan

@@ -14,3 +14,4 @@
 #################
 nick_the_cunning = {}
 nick_the_apostate = {}
+nick_cherished_of_diana = {}

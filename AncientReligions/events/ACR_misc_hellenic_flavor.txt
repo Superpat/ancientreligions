@@ -1280,7 +1280,7 @@ character_event = {
 			25 = { add_trait = chaste }
 		}
 		add_character_modifier = {
-			name = VIET_hellenic_helped_servant
+			name = VIET_hellenic_helped_maid
 			duration = 1095
 		}
 		custom_tooltip = { text = ancrel.2511.tooltip.4 }
@@ -1297,7 +1297,7 @@ character_event = {
 			25 = { add_trait = chaste }
 		}
 		add_character_modifier = {
-			name = VIET_hellenic_helped_servant
+			name = VIET_hellenic_helped_maid
 			duration = 1095
 		}
 		custom_tooltip = { text = ancrel.2511.tooltip.5 }

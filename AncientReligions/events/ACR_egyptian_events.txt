@@ -2640,6 +2640,13 @@ character_event = {
 				}
 			}
 		}
+		OR = {
+			has_game_rule = {
+				name = acr_ai_revival
+				value = on
+			}
+			ai = no
+		}
 	}
 
 	immediate = {
@@ -3189,6 +3196,16 @@ character_event = {
 		modifier = {
 			factor = 0
 			is_on_nile_trigger = no
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_game_rule = {
+					name = acr_ai_revival
+					value = off
+				}
+				ai = yes
+			}
 		}
 	}
 

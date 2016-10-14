@@ -349,6 +349,13 @@ character_event = {
 		
 		NOT = { religion_group = pagan_group }
 		culture_group = celtic
+		OR = {
+			has_game_rule = {
+				name = acr_ai_revival
+				value = on
+			}
+			ai = no
+		}
 	}
 
 	mean_time_to_happen = {

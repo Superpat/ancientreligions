@@ -189,6 +189,7 @@ has_impious_trait_trigger = {
 		trait = bad_priest_tengri
 		trait = bad_priest_zoroastrian
 		trait = bad_priest_aztec
+		trait = bad_druid
 		trait = hedonist
 		trait = lustful
 	}
@@ -457,6 +458,8 @@ has_fertile_trait_trigger = {
 		trait = hedonist
 		trait = lustful
 		trait = dancing_plague
+		trait = fian
+		trait = celtic_knight
 	}
 }
 
@@ -489,6 +492,7 @@ has_infertile_trait_trigger = {
 		trait = dysentery
 		trait = food_poisoning
 		trait = cancer
+		trait = learning_druidic_arts
 	}
 }
 
@@ -632,6 +636,8 @@ has_lifestyle_learning_trigger = {
 		trait = theologian
 		trait = mystic
 		trait = faqih
+		trait = druidic
+		is_neoplatonist = yes
 	}
 }
 
@@ -650,6 +656,8 @@ is_learned_trigger = {
 		trait = mastermind_theologian
 		trait = physician
 		trait = faqih
+		trait = druid
+		is_neoplatonist = yes
 	}
 }
 

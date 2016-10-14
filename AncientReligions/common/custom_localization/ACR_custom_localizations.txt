@@ -1,0 +1,13 @@
+# example locale for ACR
+defined_text = {
+	name = GetDruidDryad
+
+	text = {
+		trigger = { is_female = no }
+		localisation_key = Druid
+	}
+	text = {
+		trigger = { is_female = yes }
+		localisation_key = Dryad
+	}	
+}

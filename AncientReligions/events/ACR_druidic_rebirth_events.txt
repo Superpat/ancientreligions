@@ -38,6 +38,13 @@ character_event = {
 				has_minor_title = title_pagan_wizard
 			}
 		}
+		OR = {
+			has_game_rule = {
+				name = acr_ai_revival
+				value = on
+			}
+			ai = no
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -403,6 +410,13 @@ character_event = {
 			trait = possessed
 		}
 		NOT = { has_character_modifier = voice_of_jesus }
+		OR = {
+			has_game_rule = {
+				name = acr_ai_revival
+				value = on
+			}
+			ai = no
+		}
 	}
 	
 	mean_time_to_happen = {

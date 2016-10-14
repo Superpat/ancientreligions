@@ -7243,7 +7243,6 @@ pagan_subjugation = {
 					has_horde_culture = no # Should use tribal invasion instead
 				}
 			}
-#			NOT = { lower_tier_than = FROM }
 			
 			OR = {
 				NOT = { has_character_modifier = launched_subjugation }

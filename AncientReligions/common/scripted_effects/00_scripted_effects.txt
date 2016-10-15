@@ -3003,6 +3003,18 @@ add_crusade_trait_effect = {
 			religion = celtic_pagan
 			religion = celtic_pagan_reformed
 		}
-		add_trait = lughs_chosen
+		add_trait = lughs_own
+	}
+	if = {
+		limit = {
+			religion = egyptian_pagan
+		}
+		add_trait = montu
+	}
+	if = {
+		limit = {
+			religion = aten_pagan
+		}
+		add_trait = atens_chosen
 	}
 }

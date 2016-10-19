@@ -3,20 +3,23 @@
 
 General:
 - Compatibility with CK2 2.6.2
+- New Game Rule: AI Revival
+  - On: Player and AI are both able to get Ancient Religion revival events.
+  - Off: Only the player can get Ancient Religion revival events.
 
 Hellenic:
 - Fixed multiple broken flavor events
-- Hellenic Reconquest is now usable once every 50 years, not once per lifetime
+- Hellenic Reconquest is now usable once every 50 years, not once per lifetime.
 
 Promethean:
 - Neoplatonist traits (Stoic, Skeptic, Epicurean) are now considered good traits for doctors.
 
 Celtic:
-- Druid and Wizard (Bad Druid) are considered good traits for doctors.
+- Druid is considered a good trait for doctors.
 - Added new "Battle Raven" Celtic Crusader trait.
 
 Kemetic:
-- Added new "Might Bull of Montu" Kemetic Crusader trait.
+- Added new "Mighty Bull of Montu" Kemetic Crusader trait.
 
 Atenic:
 - Added new "Lightbringer" Atenic Crusader trait.

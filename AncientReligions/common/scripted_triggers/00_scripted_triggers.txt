@@ -1556,6 +1556,21 @@ has_crusade_trait_trigger = {
 			religion_group = jewish_group
 			trait = shaddai
 		}
+		AND = {
+			OR = {
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed
+			}
+			trait = lughs_own
+		}
+		AND = {
+			religion = egyptian_pagan
+			trait = montu
+		}
+		AND = {
+			religion = aten_pagan
+			trait = atens_chosen
+		}
 	}
 }
 

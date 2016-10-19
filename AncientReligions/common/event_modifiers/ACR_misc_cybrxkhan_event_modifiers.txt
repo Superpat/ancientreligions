@@ -107,6 +107,14 @@ VIET_rumored_nymph = {
 	sex_appeal_opinion = 40
 	icon = 39
 }
+VIET_artemis_rumors = {
+	fertility = 0.5
+	health = 1
+	diplomacy = 1
+	sex_appeal_opinion = 40
+	monthly_character_piety = -0.5
+	icon = 39
+}
 VIET_fanatic_tree = {
 	monthly_character_piety = 0.1
 	general_opinion = 5
@@ -214,12 +222,6 @@ VIET_artemis_protects_province = {
 	local_tax_modifier = 0.05
 	levy_size = 0.1
 	land_morale = 0.1
-	icon = 13
-}
-VIET_artemis_protects_province = {
-	monthly_character_prestige = 0.2
-	land_morale = 0.05
-	same_religion_opinion = 10
 	icon = 13
 }
 VIET_not_convinced_Zeus = {

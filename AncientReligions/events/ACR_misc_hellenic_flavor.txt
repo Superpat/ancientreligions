@@ -971,12 +971,10 @@ character_event = {
 			factor = 1
 			modifier = {
 				factor = 0
-				AND = {
-					trait = chaste
-					OR = {
-						has_lover = yes
-						is_married = yes
-					}
+				trait = chaste
+				OR = {
+					has_lover = yes
+					is_married = yes
 				}
 			}
 			modifier = {
@@ -1183,12 +1181,10 @@ character_event = {
 			factor = 1
 			modifier = {
 				factor = 0
-				AND = {
-					trait = chaste
-					OR = {
-						has_lover = yes
-						is_married = yes
-					}
+				trait = chaste
+				OR = {
+					has_lover = yes
+					is_married = yes
 				}
 			}
 			modifier = {
@@ -2976,7 +2972,7 @@ narrative_event = {
 			random_list = {
 				5 = { character_event = { id = ancrel.2552 } } #Artemis kills you
 				20 = { character_event = { id = ancrel.2553 } } #Artemis injures you
-				75 = { character_event = { id = ancrel.2554 } } #Artemis spares you and becomes your bff
+				75 = { character_event = { id = ancrel.2555 } } #Artemis spares you and becomes your bff
 			}
 		}
 	}
@@ -4901,7 +4897,6 @@ narrative_event = {
 # Wild Boar Spotted
 character_event = {
 	id = ancrel.2600
-	#title = ancrel.2600.title
 	desc = ancrel.2600.desc
 	picture = GFX_evt_hades_forest
 	
@@ -4973,7 +4968,6 @@ character_event = {
 # Boar attacks!
 character_event = {
 	id = ancrel.2601
-	#title = ancrel.2601.title
 	desc = ancrel.2601.desc
 	picture = GFX_evt_hades_forest
 	
@@ -5036,7 +5030,7 @@ narrative_event = {
 # Slay the boar
 narrative_event = {
 	id = ancrel.2603
-	#title = ancrel.2603.title
+	title = ancrel.2603.title
 	desc = ancrel.2603.desc
 	picture = GFX_evt_hades_forest
 	
@@ -5056,7 +5050,7 @@ narrative_event = {
 # Boar is dead - but who sent it?
 narrative_event = {
 	id = ancrel.2604
-	#title = ancrel.2604.title
+	title = ancrel.2604.title
 	desc = ancrel.2604.desc
 	picture = GFX_evt_hades_forest
 	
@@ -5076,7 +5070,6 @@ narrative_event = {
 # Ceryneian Hind Spotted
 character_event = {
 	id = ancrel.2605
-	#title = ancrel.2605.title
 	desc = ancrel.2605.desc
 	picture = GFX_evt_hades_forest
 	
@@ -5148,7 +5141,6 @@ character_event = {
 # Ceryneian Hind goes crazy
 character_event = {
 	id = ancrel.2606
-	#title = ancrel.2606.title
 	desc = ancrel.2606.desc
 	picture = GFX_evt_hades_forest
 	
@@ -5165,7 +5157,6 @@ character_event = {
 # Ceryneian Hind goes crazy
 character_event = {
 	id = ancrel.2607
-	#title = ancrel.2607.title
 	desc = ancrel.2607.desc
 	picture = GFX_evt_hades_forest
 	
@@ -5216,7 +5207,6 @@ narrative_event = {
 # Successfully survived Ceryneian Hind
 character_event = {
 	id = ancrel.2610
-	#title = ancrel.2610.title
 	desc = ancrel.2610.desc
 	picture = GFX_evt_hades_forest
 	
@@ -5234,7 +5224,6 @@ character_event = {
 # Artemis helps you recover from illnesses - might need to be changed for upcoming DLC
 character_event = {
 	id = ancrel.2611
-	#title = ancrel.2611.title
 	desc = ancrel.2611.desc
 	picture = GFX_evt_artemis
 	
@@ -5353,7 +5342,6 @@ narrative_event = {
 		in_command = no 
 		is_abroad = no
 		has_character_flag = VIET_is_artemis_bff
-		has_character_flag = VIET_is_artemis_bff
 		OR = {
 			religion = hellenic_pagan
 			religion = titan_pagan
@@ -5408,7 +5396,6 @@ narrative_event = {
 # Reports of a highwayman
 character_event = {
 	id = ancrel.2613
-	#title = ancrel.2613.title
 	desc = ancrel.2613.desc
 	picture = GFX_evt_hades_forest
 	
@@ -5545,7 +5532,6 @@ narrative_event = {
 # Someone has sex in Artemis' temple
 character_event = {
 	id = ancrel.2615
-	#title = ancrel.2615.title
 	desc = ancrel.2615.desc
 	picture = GFX_evt_hades_forest
 	
@@ -5668,7 +5654,6 @@ narrative_event = {
 # Yo Artemis if you hate sex why are you hanging out with me?
 character_event = {
 	id = ancrel.2617
-	#title = ancrel.2617.title
 	desc = ancrel.2617.desc
 	picture = GFX_evt_hades_forest
 	
@@ -5769,7 +5754,6 @@ character_event = {
 # Artemis says you're cuckoo for wanting to castrate yourself
 character_event = {
 	id = ancrel.2618
-	#title = ancrel.2618.title
 	desc = ancrel.2618.desc
 	picture = GFX_evt_hades_forest
 	

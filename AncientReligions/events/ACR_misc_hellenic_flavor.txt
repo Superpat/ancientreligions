@@ -1276,7 +1276,7 @@ character_event = {
 			25 = { add_trait = chaste }
 		}
 		add_character_modifier = {
-			name = VIET_hellenic_helped_maid
+			name = VIET_hellenic_helped_servant
 			duration = 1095
 		}
 		custom_tooltip = { text = ancrel.2511.tooltip.4 }
@@ -1293,7 +1293,7 @@ character_event = {
 			25 = { add_trait = chaste }
 		}
 		add_character_modifier = {
-			name = VIET_hellenic_helped_maid
+			name = VIET_hellenic_helped_servant
 			duration = 1095
 		}
 		custom_tooltip = { text = ancrel.2511.tooltip.5 }
@@ -1661,10 +1661,10 @@ character_event = {
 		name = ancrel.2514.c
 		random_list = {
 			75 = { #father wins
-				custom_tooltip = { text = ancre.4214.tooltip.1 }
+				custom_tooltip = { text = ancre.2514.tooltip.1 }
 			}
 			25 = { #son wins
-				custom_tooltip = { text = ancre.4214.tooltip.2 }
+				custom_tooltip = { text = ancre.2514.tooltip.2 }
 				hidden_tooltip = {
 					add_trait = eunuch
 					add_character_modifier = {
@@ -5141,6 +5141,7 @@ character_event = {
 # Ceryneian Hind goes crazy
 character_event = {
 	id = ancrel.2606
+	title = ancrel.2606.title
 	desc = ancrel.2606.desc
 	picture = GFX_evt_hades_forest
 	
@@ -5240,17 +5241,7 @@ character_event = {
 			religion = titan_pagan
 			religion = promethean_pagan
 		}
-		OR = {
-			trait = syphilitic
-			trait = leper
-			trait = has_tuberculosis
-			trait = has_typhoid_fever
-			trait = has_typhus
-			trait = has_bubonic_plague
-			trait = has_measles
-			trait = has_small_pox
-			trait = has_aztec_disease
-		}
+		has_disease_trigger = yes
 	}
 	
 	mean_time_to_happen = {
@@ -5263,68 +5254,11 @@ character_event = {
 			factor = 1.25
 			trait = cynical
 		}
-		#modifier = {
-		#	factor = 2
-		#	NOT = { has_character_flag = VIET_hunted_with_artemis_twice }
-		#}
 	}
 
 	option = { # Artemis is kewl
 		name = ancrel.2611.a
-		if = {
-			limit = {
-				trait = syphilitic
-			}
-			remove_trait = syphilitic
-		}
-		if = {
-			limit = {
-				trait = leper
-			}
-			remove_trait = leper
-		}
-		if = {
-			limit = {
-				trait = has_tuberculosis
-			}
-			remove_trait = has_tuberculosis
-		}
-		if = {
-			limit = {
-				trait = has_typhoid_fever
-			}
-			remove_trait = has_typhoid_fever
-		}
-		if = {
-			limit = {
-				trait = has_typhus
-			}
-			remove_trait = has_typhus
-		}
-		if = {
-			limit = {
-				trait = has_bubonic_plague
-			}
-			remove_trait = has_bubonic_plague
-		}
-		if = {
-			limit = {
-				trait = has_measles
-			}
-			remove_trait = has_measles
-		}
-		if = {
-			limit = {
-				trait = has_small_pox
-			}
-			remove_trait = has_small_pox
-		}
-		if = {
-			limit = {
-				trait = has_aztec_disease
-			}
-			remove_trait = has_aztec_disease
-		}
+		remove_disease_trait_effect = yes
 	}
 }
 

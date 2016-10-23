@@ -85,6 +85,15 @@ VIET_hellenic_helped_maid = {
 	monthly_character_prestige = 0.01
 	icon = 18
 }
+VIET_hellenic_helped_servant = {
+	monthly_character_piety = 0.01
+	monthly_character_prestige = 0.01
+	icon = 18
+}
+VIET_hellenic_killed_great_boar = {
+	monthly_character_prestige = 0.02
+	icon = 7
+}
 VIET_nymph_protector = {
 	disease_defence = 0.1
 	local_build_time_modifier = -0.1
@@ -235,4 +244,9 @@ VIET_convinced_Zeus = {
 VIET_heard_about_apollo_prank = {
 	diplomacy = 1
 	icon = 12
+}
+VIET_artemis_captured_highwayman = {
+	monthly_character_prestige = 0.05
+	martial = 1
+	icon = 1
 }

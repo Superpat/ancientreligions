@@ -23,7 +23,6 @@ on_yearly_pulse = {
 		#Egypt Flavor
 		100 = ancrel.4154 # Bes protects from nightmare
 		100 = ancrel.4160 # someone has dared to kill a cat
-		100 = ancrel.4162 # Senet Game
 		100 = ancrel.4167 # Shezmu execution
 		100 = ancrel.4161 # be nice to girls (?)
 		100 = ancrel.4162 # Senet game

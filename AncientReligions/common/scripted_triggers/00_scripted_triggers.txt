@@ -636,8 +636,8 @@ has_lifestyle_learning_trigger = {
 		trait = theologian
 		trait = mystic
 		trait = faqih
-		trait = druidic
-		is_neoplatonist = yes
+		trait = druid
+		is_neoplatonist_trigger = yes
 	}
 }
 
@@ -657,7 +657,7 @@ is_learned_trigger = {
 		trait = physician
 		trait = faqih
 		trait = druid
-		is_neoplatonist = yes
+		is_neoplatonist_trigger = yes
 	}
 }
 

@@ -96,6 +96,8 @@ VIET_hellenic_helped_maid;Helped Young Maid;;;;;;;;;;;x
 VIET_hellenic_helped_maid_desc;This kindly man has helped one of his maidservants find a good husband, a young man of honorable and gentle disposition who will treat her well.;;;;;;;;;;;x
 VIET_hellenic_helped_servant;Helped Young Servant;;;;;;;;;;;x
 VIET_hellenic_helped_servant_desc;This kindly woman has helped one of her servants find a good wife, a young woman of honorable and gentle disposition who will treat him well.;;;;;;;;;;;x
+VIET_hellenic_killed_great_boar;Killed Great Boar;;;;;;;;;;;x
+VIET_hellenic_killed_great_boar_desc;This character hunted and killed a mighty boar, earning them honor and fame.;;;;;;;;;;;x
 VIET_nymph_protector;Protected by Powerful Nymph;;;;;;;;;;;x
 VIET_nymph_protector_desc;Legend has it that a powerful nymph resides in this province, blessing it with prosperity and security, for she was the lover and wife of a lord who once ruled here ages ago.;;;;;;;;;;;x
 VIET_follower_of_cybele;Galli;;;;;;;;;;;x
@@ -191,6 +193,7 @@ ancrel.2510.a;This is ridiculous. Why do I put up with this?;;;;;;;;;;;;;x
 ancrel.2510.b;You know, you’re very pretty, and I can teach you many things, darling...;;;;;;;;;;;;;x
 ancrel.2510.c;She shall be punished for this witchcraft.;;;;;;;;;;;;;x
 ancrel.2510.d;I’m flattered, but I am your lord and you are a mere maid. ;;;;;;;;;;;;;x
+ancrel.2510.e;I’m flattered, but I am your lord and you are a mere maid. ;;;;;;;;;;;;;x
 ancrel.2510.tooltip.1;\n\nHer face is beet red as she promises not to make anymore trouble, and you both agree to pretend this never happened.;;;;;;;;;;;x
 ancrel.2510.tooltip.2;\n\nSeems like her love spell worked after all. And there’s nothing like seducing an innocent virgin and making her all yours.;;;;;;;;;;;x
 ancrel.2510.tooltip.3;\n\nWho knows what other crazy things she might be doing?;;;;;;;;;;;x
@@ -201,10 +204,12 @@ ancrel.2511.a;This is ridiculous. Why do I put up with this?;;;;;;;;;;;;;x
 ancrel.2511.b;You know, you’re very cute, and I can teach you many things, darling...;;;;;;;;;;;;;x
 ancrel.2511.c;He shall be punished for this witchcraft.;;;;;;;;;;;;;x
 ancrel.2511.d;I’m flattered, but I am your mistress and you are a mere servant. ;;;;;;;;;;;;;x
+ancrel.2511.e;I’m flattered, but I am your mistress and you are a mere servant. ;;;;;;;;;;;;;x
 ancrel.2511.tooltip.1;\n\nHis face is beet red as he promises not to make anymore trouble, and you both agree to pretend this never happened.;;;;;;;;;;;x
 ancrel.2511.tooltip.2;\n\nSeems like his love spell worked after all. And there’s nothing like seducing an innocent young boy and making him all yours.;;;;;;;;;;;x
 ancrel.2511.tooltip.3;\n\nWho knows what other crazy things he might be doing?;;;;;;;;;;;x
 ancrel.2511.tooltip.4;\n\nYou gently tell him he is being silly. “Someday you’ll find a good wife,” you tell him in a sisterly tone. “I can help you find one in the future, if you want.”;;;;;;;;;;;x
+ancrel.2511.tooltip.5;\n\nYou gently tell him he is being silly. “Someday you’ll find a good wife,” you tell him in a motherly tone. “I can help you find one in the future, if you want.”;;;;;;;;;;;x
 ancrel.2511.tooltip.5;\n\nYou gently tell her that he is being silly. “Someday you’ll find a good wife,” you tell her in a motherly tone. “I can help you find one in the future, if you want.”;;;;;;;;;;;x
 ancrel.2512.desc;One of your prisoners - an insignificant, elderly peasant - was starving and frail due to his advanced age and the conditions of his confinement, but his young daughter snuck into the prison every night, breastfeeding him so he could survive. For such a display of pietas, filial duty, many in your court say that the father should be given a pardon! The gods would be proud!;;;;;;;;;;;x
 ancrel.2512.a;Yes. Clearly the gods have blessed them. Release him!;;;;;;;;;;;;;x
@@ -341,7 +346,7 @@ ancrel.2577.desc.a;I sit in the prison cell, miserable. Suddenly, I hear a noise
 ancrel.2577.desc.b;I sit in the prison cell, miserable. Suddenly, I hear a noise, and the guards nearby have been knocked unconscious. Before I can investigate what happened, a beautiful woman with moon-pale skin and eyes the color of midnight blue appears. “It’s pathetic that I have to come in here to rescue you, you know,” Diana says, grinning. “This isn’t the first time I have to save you, right, mortal?”;;;;;;;;;;;;;x
 ancrel.2577.a;Looks like I owe you one, huh?;;;;;;;;;;;;;x
 ancrel.2577.b;It is my duty as your friend to annoy you like this.;;;;;;;;;;;;;x
-ancrel.2578.desc;Impossible! [FROM.GetTitledName] somehow escaped from your prisons. Your guards say that someone - a beautiful woman with inhuman grace and strength - somehow entered and helped him break out of jail.;;;;;;;;;;;x
+ancrel.2578.desc;Impossible! [From.GetTitledName] somehow escaped from your prisons. Your guards say that someone - a beautiful woman with inhuman grace and strength - somehow entered and helped him break out of jail.;;;;;;;;;;;x
 ancrel.2578.a;Did my prisoner have some kind of otherworldly help?;;;;;;;;;;;;;x
 ancrel.2579.desc;You’re out hunting with Diana today and she seems to be in a bad mood. As the two of you take a break and rest in a small clearing, you decide to risk it and ask if anything is wrong.;;;;;;;;;;;x
 ancrel.2579.a;I’m her champion, after all.;;;;;;;;;;;;;x
@@ -405,3 +410,31 @@ ancrel.2599.title;Light of the Moon;;;;;;;;;;;x
 ancrel.2599.desc;Suddenly, you see a light, and a figure appears. It is Diana in full regalia, and armed with her bow and arrow. “You’re dead,” she says as if it’s obvious. “Normally another god would escort you to the underworld, but Pluto allowed me to have the honors.”\n\n“Wait, what - ”\n\n“Come on, I don’t have all day. Do you have your coins for the ferryman? If you don’t you owe me big. Or I could steal a couple of Apollo’s coins instead, as I do need to get back at him. Yesterday he had the gall to come up to me and…. Anyways, I'll tell you later. Don’t worry, I’ll visit you in the underworld every now and then, but I’ve recommended to Pluto that you be placed in Elysium.”;;;;;;;;;;;x
 ancrel.2599.a;“Ah. Well. Thank you, Lady Diana. It’s the end for me, huh?”;;;;;;;;;;;;;x
 VIET_artemis_finally_a_lotr_reference;\n\nShe smiles gently. “End? No, my friend, the journey doesn't end here. Death is just another path, one that you must take.”;;;;;;;;;;;;;x
+ancrel.2600.desc;You are walking through a village in your realm when a local watchman runs up to you and your entourage. He is in panic, and you barely manage to catch what he tells you: hunters nearby encountered a wild boar, thrice the size of a normal one, and now it is running amuck and terrorizing everyone.;;;;;;;;;;;;;x
+ancrel.2600.a;Surely a wild animal is no issue for the local guard?;;;;;;;;;;;;;x
+ancrel.2601.desc;Suddenly, there are screams up ahead: the boar approaches! You raise your head to get a better look, and you see the monster atop a hill, impaling an unfortunate watchman who happened to be nearby. He is indeed of great size, big and hairy, a fearsome creature indeed, who seems impervious to harm! “Lady Diana protect us! Deliver us from this beast!” you hear someone cry.;;;;;;;;;;;;;x
+ancrel.2601.a;I will go and kill the beast myself, Diana will guide my hand!;;;;;;;;;;;;;x
+ancrel.2601.b;Everybody, run for your lives!;;;;;;;;;;;;;x
+ancrel.2602.title;Diana's Encouragement;;;;;;;;;;;;;x
+ancrel.2602.desc;As everyone starts fleeing from the beast, you hear a voice in your head.\n\n“Coward,” Diana whispers, though you can tell she is teasing you, rather than being insulting. You can almost see her smirk “Come on, we’ve both hunted worse animals.”\n\n“But you were there with me,” you argue.\n\n“Have faith in me. I will help you if you show some mettle. Now stop running away like Jupiter when his wife discovers he’s cheated on her again.”;;;;;;;;;;;;;x
+ancrel.2602.a;Yes, Lady Diana, if you say so.;;;;;;;;;;;;;x
+ancrel.2603.title;Potnia Theron;;;;;;;;;;;;;x
+ancrel.2603.desc;“You sure you can’t just tell the boar to relax?” you ask Diana, as the two of you stand at the edge of the village, bows drawn. The boar is some distance away, and starts to charge at both of you.\n\n“Normally I can with some effort,” Diana says, cool and calm, indifferent to the danger at hand. “For some reason I can’t.”\n\nYou, on the other hand, are very much in panic, though you try not to show it. “Alright, let’s kill it already!”\n\n“By Olympus, someone is eager today.”;;;;;;;;;;;;;x
+ancrel.2603.a;The two of you load your bows, aim… and fire.;;;;;;;;;;;;;x
+ancrel.2604.tooltip;You feel Diana guiding your hand.;;;;;;;;;;;;;x
+ancrel.2604.title;An Enemy Deity;;;;;;;;;;;;;x
+ancrel.2604.desc;You and Diana stand before the boar’s carcass. “Lots like someone will be eating well tonight,” Diana remarks. “But… you know, I have a feeling another god sent this boar, perhaps an enemy of mine. That’s probably why I couldn’t control it. I’ve occasionally conjured wild boars like this when I was angry at someone. Not my better days.”\n\n“Do you know who did this?” you ask.\n\nDiana shrugs. “I’ll find out soon enough. Maybe they’re targeting you because you’re my favorite follower. Don’t worry, I’ll protect you. I’m not incompetent like some of my relatives. But now, I hear the villagers and your soldiers returning. I must go.”\n\n“Thank you, my goddess,” you say to her as she disappears.;;;;;;;;;;;;;x
+ancrel.2604.a;Indeed, the villagers had quite a feast that evening.;;;;;;;;;;;;;x
+ancrel.2605.desc;You and some of your courtiers are hunting together. It’s unfortunately not as fulfilling as hunting with Diana - after all, she is the goddess of the hunt - but you have to keep up appearances. People would start getting suspicious if you only hunt by “yourself” after all. Suddenly, one of your courtiers gasps and points ahead. On a hill some distance away stands a hind with golden horns.;;;;;;;;;;;;;x
+ancrel.2605.a;Could it - wait, what are you doing?;;;;;;;;;;;;;x
+ancrel.2606.title;The Ceryneian Hind;;;;;;;;;;;;;x
+ancrel.2606.desc;“Lower your bows!” you exclaim. Your courtiers look at each other, confused. You explain, “What animal has a golden horn? Do you not remember the legends? Clearly this is an animal sacred to Diana, the Ceryneian Hind - ”\n\nYou stop as you hear something galloping.;;;;;;;;;;;;;x
+ancrel.2606.a;You look and see the deer charging towards you.;;;;;;;;;;;;;x
+ancrel.2607.title;The Ceryneian Hind;;;;;;;;;;;;;x
+ancrel.2607.desc;“Stop! Don’t hurt it! It is Diana’s sacred animal!” you cry, as your courtiers try to defend you from the crazed deer. All of you run around trying to avoid the deer, which seems to be acting strangely as if it had lost all its senses, jerking around and attacking randomly. “No! Let’s get out of here! Flee!”\n\nAs everyone scurries around, in the confusion, you get separated from your men.\n\nYou turn around. It’s just you and the deer. It is enraged, though you don’t know why. You mutter a prayer to Lady Diana and prepare for the worst.;;;;;;;;;;;;;x
+ancrel.2607.a;This is why I hunt alone!;;;;;;;;;;;;;x
+ancrel.2608.title;Saved!;;;;;;;;;;;;;x
+ancrel.2608.desc;Diana and Apollo appear before you suddenly, and command the hind to stop. After a few tense moments, it backs down and suddenly becomes docile and falls asleep.\n\n“Are you alright?” Diana asks.\n\n“Yes… but… what just happened?”\n\n“Apollo’s fault.”\n\nThe sun god sheepishly avoids your gaze. “I wanted to play a prank on Lady Diana but let’s just say getting the Ceryneian Hind drunk was not a good idea.” As if he had rehearsed beforehand, he says in a mechanical voice, “I apologize dear sister, and I apologize to [Root.GetTitledFirstName], for the problem I caused today even if it was Bacchus’ idea. I am lucky no one was hurt.”;;;;;;;;;;;;;x
+ancrel.2608.a;She rolls her eyes but accepts the apology.;;;;;;;;;;;;;x
+ancrel.2609.desc;Diana and Apollo appear before you suddenly, and command the hind to stop. After a few tense moments, it backs down and suddenly becomes docile and falls asleep.\n\n“Are you alright?” Diana asks.\n\n“Yes… but… what just happened?”\n\n“Apollo’s fault.”\n\nThe sun god sheepishly avoids your gaze. “I wanted to play a prank on Lady Diana but let’s just say getting the Ceryneian Hind drunk was not a good idea.” As if he had rehearsed beforehand, he says in a mechanical voice, “I apologize dear sister, and I apologize to [Root.GetTitledFirstName], for the problem I caused today even if it was Bacchus’ idea. I am lucky no one was hurt.”;;;;;;;;;;;;;x
+ancrel.2609.a;She rolls her eyes but accepts the apology.;;;;;;;;;;;;;x

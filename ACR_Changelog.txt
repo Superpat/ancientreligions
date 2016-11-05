@@ -1,3 +1,32 @@
+2016-11-04 v0.38.2 "Egeria"
+-------------------------
+
+General:
+- Compatibility with CK2 2.6.2
+- New Game Rule: AI Revival
+  - On: Player and AI are both able to get Ancient Religion revival events.
+  - Off: Only the player can get Ancient Religion revival events.
+- Did my best to obey the Supernatural Events Game Rule. Please report events that should be obeying it but aren't.
+  - Left the Sacred Symbols and Sidhe events alone intentionally, since they are an important mechanic for Celts.
+- Increased the frequency of the event that clears the Angry Sidhe modifier after a decent/good sacrifice.
+
+Hellenic:
+- Fixed a bunch of broken flavor events
+- Hellenic Reconquest is now usable once every 50 years, not once per lifetime.
+
+Promethean:
+- Neoplatonist traits (Stoic, Skeptic, Epicurean) are now considered good traits for doctors.
+
+Celtic:
+- Druid is considered a good trait for doctors.
+- Added new "Battle Raven" Celtic Crusader trait.
+
+Kemetic:
+- Added new "Mighty Bull of Montu" Kemetic Crusader trait.
+
+Atenic:
+- Added new "Lightbringer" Atenic Crusader trait.
+
 2016-8-27 v0.38.1 "Actaeon"
 -------------------------
 

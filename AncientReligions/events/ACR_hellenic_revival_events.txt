@@ -48,6 +48,14 @@ character_event = {
 				has_character_flag = special_priest # don't already have the priest in your court
 			}
 		}
+
+		OR = {
+			has_game_rule = {
+				name = acr_ai_revival
+				value = on
+			}
+			ai = no
+		}
 	}
 
 	immediate = {
@@ -383,6 +391,13 @@ character_event = {
 			culture_group = italian_group # SWMH
 		}
 		NOT = { has_character_flag = flag_studied_the_classics }
+		OR = {
+			has_game_rule = {
+				name = acr_ai_revival
+				value = on
+			}
+			any_liege = { ai = no }
+		}
 	}
 
 	mean_time_to_happen = {
@@ -946,6 +961,14 @@ character_event = {
 			culture_group = italian_group # SWMH
 		}
 		NOT = { has_character_flag = flag_mani_penninsula }
+
+		OR = {
+			has_game_rule = {
+				name = acr_ai_revival
+				value = on
+			}
+			ai = no
+		}
 	}
 	
 	mean_time_to_happen = {

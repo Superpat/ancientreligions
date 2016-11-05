@@ -38,7 +38,14 @@ decisions = {
 					religion_group = jewish_group
 					religion_authority = 0.15
 				}
-			}			
+			}
+			OR = {
+				has_game_rule = {
+					name = acr_ai_revival
+					value = on
+				}
+				ai = no
+			}
 		}
 		
 		allow = {
@@ -142,6 +149,13 @@ decisions = {
 						culture = norman
 					}
 				}
+			}
+			OR = {
+				has_game_rule = {
+					name = acr_ai_revival
+					value = on
+				}
+				ai = no
 			}
 		}
 		
@@ -259,7 +273,14 @@ decisions = {
 					religion = finnish_pagan_reformed
 					culture_group = finno_ugric
 				}
-			}			
+			}
+			OR = {
+				has_game_rule = {
+					name = acr_ai_revival
+					value = on
+				}
+				ai = no
+			}
 		}
 		
 		allow = {
@@ -357,7 +378,14 @@ decisions = {
 					religion_group = jewish_group
 					religion_authority = 0.15
 				}
-			}			
+			}
+			OR = {
+				has_game_rule = {
+					name = acr_ai_revival
+					value = on
+				}
+				ai = no
+			}		
 		}
 		
 		allow = {
@@ -449,7 +477,14 @@ decisions = {
 					religion_group = jewish_group
 					religion_authority = 0.15
 				}
-			}			
+			}
+			OR = {
+				has_game_rule = {
+					name = acr_ai_revival
+					value = on
+				}
+				ai = no
+			}		
 		}
 		
 		allow = {
@@ -534,7 +569,14 @@ decisions = {
 					religion = west_african_pagan_reformed
 					culture_group = west_african
 				}
-			}			
+			}
+			OR = {
+				has_game_rule = {
+					name = acr_ai_revival
+					value = on
+				}
+				ai = no
+			}
 		}
 		
 		allow = {
@@ -623,8 +665,16 @@ decisions = {
 					religion_group = jewish_group
 					religion_authority = 0.15
 				}
-			}			
+			}
+			OR = {
+				has_game_rule = {
+					name = acr_ai_revival
+					value = on
+				}
+				ai = no
+			}
 		}
+
 		
 		allow = {
 			war = no
@@ -701,7 +751,14 @@ decisions = {
 					religion_group = jewish_group
 					religion_authority = 0.10
 				}
-			}			
+			}
+			OR = {
+				has_game_rule = {
+					name = acr_ai_revival
+					value = on
+				}
+				ai = no
+			}
 		}
 		
 		allow = {
@@ -795,7 +852,14 @@ decisions = {
 						culture_group = byzantine
 					}
 				}
-			}			
+			}
+			OR = {
+				has_game_rule = {
+					name = acr_ai_revival
+					value = on
+				}
+				ai = no
+			}	
 		}
 		
 		allow = {

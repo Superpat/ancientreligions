@@ -261,7 +261,6 @@ character_event = {
 	}
 }
 
-
 # Bran's Voyage
 character_event = {
 	id = ancrel.1253
@@ -349,6 +348,13 @@ character_event = {
 		
 		NOT = { religion_group = pagan_group }
 		culture_group = celtic
+		OR = {
+			has_game_rule = {
+				name = acr_ai_revival
+				value = on
+			}
+			ai = no
+		}
 	}
 
 	mean_time_to_happen = {

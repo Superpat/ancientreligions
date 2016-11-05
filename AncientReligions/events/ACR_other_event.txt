@@ -918,3 +918,72 @@ character_event = {
 		}
 	}
 }
+
+# Arriving for the great holy war - Non-Hellenic Ancient Religions
+character_event = {
+	id = ancrel.9017
+	desc = "EVTDESC8300"
+	picture = "GFX_evt_battle"
+	border = GFX_event_normal_frame_war
+	
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		has_crusade_trait_trigger = no
+		in_command = yes
+		is_ancient_religion_trigger = yes
+		NOT = { religion = hellenic_pagan } # vanilla event covers hellenic
+		OR = {
+			AND = {
+				any_war = {
+					using_cb = crusade
+				}
+				crusade_target = {
+					is_located_in = ROOT
+				}
+			}
+			any_liege = {
+				religion = ROOT
+				any_war = {
+					using_cb = crusade
+				}
+				crusade_target = {
+					is_located_in = ROOT
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "8469.a"
+		trigger = {
+			OR = {
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed
+			}
+		}
+		add_trait = lughs_own
+	}
+
+	option = {
+		name = "8469.a"
+		trigger = {
+			religion = egyptian_pagan
+		}
+		add_trait = montu
+	}
+
+	option = {
+		name = "8469.a"
+		trigger = {
+			religion = aten_pagan
+		}
+		add_trait = atens_chosen
+	}
+}

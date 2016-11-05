@@ -193,13 +193,11 @@ hellenic_reconquest = {
 			NOT = {
 				any_war = {
 					attacker = { character = ROOT }
-					using_cb = imperial_reconquest
+					using_cb = hellenic_reconquest
 				}
 			}
-			OR = {
-				NOT = { has_character_flag = called_imperial_reconquest }
-				had_character_flag = { flag = called_imperial_reconquest days = 1825 }
-			}
+			
+			NOT = { has_character_modifier = called_hellenic_reconquest }
 			
 			NOT = { same_realm = FROM }
 
@@ -400,6 +398,16 @@ hellenic_reconquest = {
 		}
 	}
 	
+	on_add = {
+		ROOT = {
+			add_character_modifier = { 
+				name = called_hellenic_reconquest
+				years = 50
+				hidden = yes
+			}
+		}
+	}
+
 	on_success = {
 		ROOT = {
 			clr_character_flag = called_imperial_reconquest

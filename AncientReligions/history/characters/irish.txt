@@ -614,10 +614,10 @@
 	trait="tough_soldier"
 	father=131511
 	mother=131506
-	900.1.2={
-		birth="900.1.2"
+	910.1.2={
+		birth="910.1.2"
 	}
-	925.1.1={
+	927.1.1={
 		add_spouse=166058
 	}
 	943.2.26={
@@ -2461,7 +2461,7 @@
 
 6180 = {
 	name="Cú Uladh"
-	dynasty=550
+	dynasty=819
 	martial=5
 	diplomacy=4
 	intrigue=6
@@ -2481,11 +2481,7 @@
 
 6181 = {
 	name="Áed"
-	dynasty=550
-	martial=4
-	diplomacy=5
-	intrigue=6
-	stewardship=8
+	dynasty=819
 	religion="catholic"
 	culture="irish"
 	father=6182
@@ -2499,11 +2495,7 @@
 
 6182 = {
 	name="Domnall"
-	dynasty=550
-	martial=5
-	diplomacy=5
-	intrigue=6
-	stewardship=4
+	dynasty=819
 	religion="catholic"
 	culture="irish"
 	father=6183
@@ -2517,11 +2509,7 @@
 
 6183 = {
 	name="Domnall"
-	dynasty=550
-	martial=5
-	diplomacy=5
-	intrigue=6
-	stewardship=4
+	dynasty=819
 	religion="catholic"
 	culture="irish"
 	father=6184
@@ -2535,11 +2523,7 @@
 
 6184 = {
 	name="Colmán"
-	dynasty=550
-	martial=8
-	diplomacy=5
-	intrigue=5
-	stewardship=5
+	dynasty=819
 	religion="catholic"
 	culture="irish"
 	father=6185
@@ -2553,11 +2537,7 @@
 
 6185 = {
 	name="Áed"
-	dynasty=550
-	martial=8
-	diplomacy=5
-	intrigue=5
-	stewardship=6
+	dynasty=819
 	religion="catholic"
 	culture="irish"
 	father=6186
@@ -2571,11 +2551,7 @@
 
 6186 = {
 	name="Máel Colcu"
-	dynasty=550
-	martial=4
-	diplomacy=5
-	intrigue=4
-	stewardship=9
+	dynasty=819
 	religion="catholic"
 	culture="irish"
 	father=6187
@@ -2589,11 +2565,7 @@
 
 6187 = {
 	name="Áed"
-	dynasty=550
-	martial=2
-	diplomacy=7
-	intrigue=5
-	stewardship=2
+	dynasty=819
 	religion="catholic"
 	culture="irish"
 	father=6188
@@ -2607,14 +2579,10 @@
 
 6188 = {
 	name="Flaithbertach"
-	dynasty=550
-	martial=7
-	diplomacy=7
-	intrigue=1
-	stewardship=7
+	dynasty=819
 	religion="catholic"
 	culture="irish"
-	father=6189
+	father=160204
 	690.1.2={
 		birth="690.1.2"
 	}
@@ -2799,7 +2767,7 @@
 	stewardship=7
 	religion="catholic"
 	culture="irish"
-	father=6198
+	father=160207
 	870.1.2={
 		birth="870.1.2"
 	}
@@ -11285,8 +11253,8 @@
 	religion="catholic"
 	culture="irish"
 	father=83406 #Muiredach Muillethan
-	637.1.1={
-		birth="637.1.1"
+	670.1.1={
+		birth="670.1.1"
 	}
 	735.7.1={
 		death="735.7.1"
@@ -14762,6 +14730,7 @@
 	culture="irish"
 	father=1027
 	mother=1028
+	trait = legit_bastard
 	1014.1.1={
 		birth="1014.1.1" #unknown
 	}
@@ -14806,6 +14775,7 @@
 	trait="tough_soldier"
 	father=1025
 	mother=1026
+	trait = legit_bastard
 	1000.1.1={
 		birth="1000.1.1"
 	}
@@ -14828,6 +14798,7 @@
 	religion="catholic"
 	culture="irish"
 	trait="flamboyant_schemer"
+	trait = legit_bastard
 	father=1027
 	mother=1028
 	1018.1.1={
@@ -15376,10 +15347,10 @@
 	culture="irish"
 	father=166034
 	915.1.1={
-		birth="915.1.1"
+		birth=yes
 	}
 	968.1.1={
-		death="908.1.1"
+		death=yes
 	}
 }
 166038 = {
@@ -15541,8 +15512,8 @@
 	culture="irish"
 	father=131512
 	mother=166058
-	927.1.1={
-		birth="927.1.1"
+	927.12.1={
+		birth="927.12.1"
 	}
 	949.1.1={
 		death="949.1.1"

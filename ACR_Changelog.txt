@@ -6,9 +6,12 @@ General:
 - New Game Rule: AI Revival
   - On: Player and AI are both able to get Ancient Religion revival events.
   - Off: Only the player can get Ancient Religion revival events.
+- Did my best to obey the Supernatural Events Game Rule. Please report events that should be obeying it but aren't.
+  - Left the Sacred Symbols and Sidhe events alone intentionally, since they are an important mechanic for Celts.
+- Increased the frequency of the event that clears the Angry Sidhe modifier after a decent/good sacrifice.
 
 Hellenic:
-- Fixed multiple broken flavor events
+- Fixed a bunch of broken flavor events
 - Hellenic Reconquest is now usable once every 50 years, not once per lifetime.
 
 Promethean:

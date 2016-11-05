@@ -32,6 +32,8 @@ on_yearly_pulse = {
 		#Hellenic Flavor
 		100 = ancrel.2503 # Dead beggar doesn't have money to pay the ferryman
 		100 = ancrel.2509 # Found a curse tablet
+		100 = ancrel.2510 # maid tries to charm you
+		100 = ancrel.2511 # (male) servant tries to charm you
 		100 = ancrel.2515 # Leptis Manialis
 		100 = ancrel.2518 # Lightning strikes tree
 		100 = ancrel.2519 # Odysseus

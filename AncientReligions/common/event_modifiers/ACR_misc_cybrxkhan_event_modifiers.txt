@@ -250,3 +250,11 @@ VIET_artemis_captured_highwayman = {
 	martial = 1
 	icon = 1
 }
+VIET_survived_golden_hind = {
+	monthly_character_prestige = 0.05
+	combat_rating = 1
+}
+VIET_killed_hellenic_great_boar = {
+	monthly_character_prestige = 0.1
+	combat_rating = 2
+}

@@ -83,3 +83,13 @@ is_ancient_religion_trigger = {
 		religion = aten_pagan
 	}
 }
+
+supernatural_events_trigger = {
+	OR = {
+		has_game_rule = { name = supernatural_events value = unrestricted }
+		AND = {
+			has_game_rule = { name = supernatural_events value = on }
+			ai = no
+		}
+	}
+}

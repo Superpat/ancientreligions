@@ -161,6 +161,15 @@ character_event = {
 			any_vassal = {
 				character_event = { id = ancrel.0300 days = 2 }
 			}
+			any_courtier = {
+				limit = {
+					is_landed = no # don't want to get landed councilors twice!
+					liege = {
+						character = ROOT # or prisoners
+					}
+				}
+				character_event = { id = ancrel.0300 days = 2 }
+			}
 		}
 		if = {
 			limit = {
@@ -233,6 +242,13 @@ character_event = {
 					limit = { is_ruler = yes }
 					liege = { character_event = { id = ancrel.0004 days = 5 } }
 					any_vassal = { character_event = { id = ancrel.0003 days = 2 } }
+					any_courtier = {
+						limit = {
+							is_landed = no
+							liege = { character = ROOT }
+						}
+						character_event = { id = ancrel.0003 days = 2 }
+					}
 				}
 			}
 		}
@@ -262,7 +278,7 @@ character_event = {
 		random_vassal = {
 			limit = {
 				is_theocracy = yes
-				religion = catholic
+				religion_group = christian
 			}
 			opinion = {
 				modifier = opinion_happy
@@ -320,6 +336,21 @@ character_event = {
 		ai_chance = {
 			factor = 33
 			modifier = {
+				factor = 1.5
+				is_landed = no # unlanded characters more likely to convert
+			}
+			modifier = { # more likely to follow parent
+				factor = 1.5
+				OR = {
+					father = {
+						character = FROM
+					}
+					mother = {
+						character = FROM
+					}
+				}
+			}
+			modifier = {
 				factor = 2
 				has_character_modifier = celtic_ways
 			}
@@ -327,11 +358,23 @@ character_event = {
 				factor = 1.2
 				trait = proud
 			}
-			modifier = {
+			modifier = { # zealous characters wouldn't convert
 				factor = 0
 				trait = zealous
-				NOT = {
+				NOR = { # Unless, of course...
+					# they've adopted the celtic rite
 					has_character_modifier = celtic_ways
+					AND = {
+						OR = { # or the liege is their parent
+							father = {
+								character = FROM 
+							}
+							mother = {
+								character = FROM
+							}
+						}
+						is_ruler = no # and they are unlanded
+					}
 				}
 			}
 		}
@@ -359,6 +402,13 @@ character_event = {
 		piety = 50
 		ai_chance = {
 			factor = 66
+			modifier = {
+				factor = 0
+				liege = { # unlanded courtiers of player courts *always* convert
+					ai = no
+				}
+				is_landed = no
+			}
 		}
 		hidden_tooltip = {
 			if = {
@@ -393,7 +443,7 @@ character_event = {
 	}
 }
 
-### Lunatic and Possessed conversion
+### Lunatic or Possessed conversion
 # Hear a tapping at the door
 character_event = {
 	id = ancrel.0006
@@ -489,6 +539,28 @@ character_event = {
 		name = EVTOPTAancrel.0008
 		tooltip_info = lunatic
 		religion = celtic_pagan
+		hidden_tooltip = { 
+			any_vassal = {
+				character_event = { id = ancrel.0300 days = 2 }
+			}
+			any_courtier = {
+				limit = {
+					is_landed = no # don't want to get landed councilors twice!
+					liege = {
+						character = ROOT # or prisoners
+					}
+				}
+				character_event = { id = ancrel.0300 days = 2 }
+			}
+		}
+		if = {
+			limit = {
+				religion_group = christian
+			}
+			add_trait = sympathy_christendom
+		}
+		religion = celtic_pagan
+		piety = 50
 	}
 }
 

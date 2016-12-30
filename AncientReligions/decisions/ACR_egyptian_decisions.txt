@@ -376,7 +376,7 @@ decisions = {
 		}
 	}
 
-	# </ck2+>
+	# end ck2+ decisions
 	
 	restore_akhetaten = {
 		only_playable = yes

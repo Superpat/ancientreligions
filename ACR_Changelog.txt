@@ -1,6 +1,10 @@
 2017-??-?? v0.39 "Ares"
 -------------------------
-
+Celtic:
+ - Improved the conversion events slightly.
+  -- Unlanded children of the liege will not discount the possibility of converting just because they are Zealous.
+  -- The player's court will always convert (unless they are landed, like councilors, or prisoners).
+  -- The Insanity conversion event will now also cascade through the realm, allowing vassals and courtiers to convert with you.
 
 2016-11-04 v0.38.2 "Egeria"
 -------------------------

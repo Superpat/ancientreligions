@@ -23,6 +23,10 @@ ancrel.2007.desc;[From.GetFirstNameWithNick], the Hypatos Philosophon, has come 
 ancrel.2007.a;Your words ring true, old friend. Perhaps now is the time...;;;;;;;;;;;;;x
 ancrel.2007.b;Heretic! Be gone from my sight!;;;;;;;;;;;;;x
 ancrel.2007.c;You are not wrong, but perhaps something different is in order...;;;;;;;;;;;;;x
+ancrel.2011.title;Myrmidons;;;;;;;;;;;;x
+ancrel.2011.desc;In Greece the ancient faith of the Hellenes is experiencing a revival, one that is gaining strength. Thessalonike, the homeland of the hero Achilles, now firmly follows this religion. Inspired by the Epics and ready to adventure out into the world, a band of young men have begun calling themselves Myrmidons, rallying around their [From.GetRulerTtle], [From.GetDynName].;;;;;;;;;;;;x
+ancrel.2011.a;Disturbing...;;;;;;;;;;;;x
+ancrel.2011.b;May [Root.GetRandomGodName] watch their paths.;;;;;;;;;;;;x
 EVTDESCancrel.2101;As you are sitting down to dinner, your [Root.GetLordSpiritualName] comes up to you and tells you that [From.GetBestName] has strayed from the true faith. Claiming to have found enlightenment in the classical texts of ancient Rome and Greece, [From.GetSheHe] has forsaken [Root.Religion.GetRandomGodName] and professed his devotion to [From.Religion.GetRandomGodName].;Alors que vous vous asseyez pour dîner, votre [Root.GetLordSpiritualName] s'approche et vous explique que [From.GetBestName] s'est écarté de la vraie foi. Prétendant avoir trouvé l'illumination dans les textes classiques de la Rome et Grèce antique, [From.GetSheHe] a délaissé [Root.Religion.GetRandomGodName] et proclamé sa dévotion à [From.Religion.GetRandomGodName].;;;;;;;;;;;;x
 EVTOPTAancrel.2101;My [From.GetSonDaughter] did WHAT?;[From.GetSonDaughter] a fait QUOI ?;;;;;;;;;;;;x
 EVTOPTBancrel.2101;[From.GetSheHe] did WHAT?;[From.GetSheHe] a fait QUOI ?;;;;;;;;;;;;x

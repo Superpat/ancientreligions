@@ -3,7 +3,7 @@
 # ANCIENT RELIGIONS
 # - Revival of the Hellenic religion
 #
-# Event ID ancrel.2100 - ancrel.2109 reserved
+# Event ID ancrel.2000 - ancrel.2109 reserved
 #
 #######################################
 
@@ -351,6 +351,162 @@ long_character_event = {
 		
 		FROM = {
 			religion = promethean_pagan
+		}
+	}
+}
+
+#######################################
+#
+# - Myrmidons
+#
+#######################################
+
+# Thessalonike is solidly Hellenic, and the Myrmidons are formed!
+# (Pope)
+# [on_yearly_pulse]
+character_event = {
+	id = ancrel.2010
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = catholic
+		controls_religion = yes # papa
+		489 = {
+			religion = hellenic_pagan
+		}
+		490 = {
+			religion = hellenic_pagan
+		}
+		491 = {
+			religion = hellenic_pagan
+		}
+		NOT = {	d_myrmidons = { holder = { always = yes } }	}
+	}
+
+	immediate = {
+		set_global_flag = myrmidons_founded
+		activate_title = { title = d_myrmidons status = yes }
+		hidden_tooltip = {
+			create_character = {
+				random_traits = yes
+				religion = hellenic_pagan
+				culture = greek
+				dynasty = random
+				female = no
+				age = 29
+				trait = skilled_tactician
+				trait = zealous
+			}
+			new_character = {
+				wealth = 100
+				prestige = 100
+				piety = 50
+				d_myrmidons = {
+					grant_title = PREV
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = hellenic_pagan
+					culture = greek
+					female = no
+					age = 16
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = hellenic_pagan
+					culture = greek
+					female = no
+					age = 18
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = hellenic_pagan
+					culture = greek
+					female = no
+					age = 18
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = hellenic_pagan
+					culture = greek
+					female = no
+					age = 20
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = hellenic_pagan
+					culture = greek
+					female = no
+					age = 25
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = hellenic_pagan
+					culture = greek
+					female = no
+					age = 26
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = hellenic_pagan
+					culture = greek
+					female = no
+					age = 28
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = hellenic_pagan
+					culture = greek
+					female = yes
+					age = 16
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = random
+					religion = hellenic_pagan
+					culture = greek
+					female = yes
+					age = 17
+				}	
+				any_playable_ruler = {
+					limit = { ai = no }
+
+					narrative_event = { id = ancrel.2011 }
+				}
+			}
+		}
+	}
+}
+
+narrative_event = {
+	id = ancrel.2011
+	title = ancrel.2011.title
+	desc = ancrel.2011.desc
+	picture = GFX_evt_battle_hellenic_pagan
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.2011.a
+		trigger = {
+			NOT = { religion = hellenic_pagan }
+		}
+	}
+
+	option = {
+		name = ancrel.2011.b
+		trigger = {
+			relgion = hellenic_pagan
 		}
 	}
 }

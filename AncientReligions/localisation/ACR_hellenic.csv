@@ -76,6 +76,10 @@ d_hellenic_pagan_adj;Pontifical;;;;;;;;;;;;;x
 PONTIFEX_MAXIMUS;Pontifex Maximus;Pontifex Maximus;Pontifex Maximus;;Pontifex Maximus;;;;;;;;;x
 PONTIFICA_MAXIMUS;Pontifica Maximus;;;;;;;;;;;;;x
 PONTIFEX_MAXIMUS_FOA;Your Holiness;Sa Sainteté;Eure Heiligkeit;;Su Santidad;;;;;;;;;x
+d_myrmidons;The Myrmidons;;;;;;;;;;;;;x
+d_myrmidons_adj;Myrmidon;;;;;;;;;;;;;x
+ACHILLIARCH;Achilliarch;;;;;;;;;;;;;x
+ACHILLIARCH_FOA;Great Achilliarch;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 job_chancellor_hellenic_pagan;Magister Officiorum;Magister Officiorum;;;;;;;;;;;;x
 job_marshal_hellenic_pagan;Magister Militum;Magister Militum;;;;;;;;;;;;x

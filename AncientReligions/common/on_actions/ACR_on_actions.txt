@@ -11,6 +11,7 @@ on_yearly_pulse = {
 		ancrel.0153 # Liege doesn't have a Druid
 		ancrel.4100 # Nile flood
 		ancrel.2000 # philosopher approaches the Emperor
+		ancrel.2010 # Myrmidon formation
 		
 		#I Can't Believe My Virgin Goddess of the Hunt is This Cute Event Blob (i.e. Artemis Event Blob)		
 		ancrel.2566 # Second time hunting with Artemis

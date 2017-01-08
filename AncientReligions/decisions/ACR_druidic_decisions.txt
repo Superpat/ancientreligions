@@ -908,6 +908,15 @@ decisions = {
 		effect = {
 			custom_tooltip = {
 				text = gaelic_abdication
+				any_vassal = {
+					limit = { among_most_powerful_vassals = 5 }
+
+					ROOT = {
+						primary_title = {
+							add_weak_claim = PREVPREV
+						}
+					}
+				}
 				abdicate = yes
 			}
 		}
@@ -934,6 +943,14 @@ decisions = {
 			modifier = {
 				factor = 0
 				trait = paranoid
+			}
+			modifier = {
+				factor = 0
+				trait = proud
+			}
+			modifier = {
+				factor = 0
+				trait = ambitious
 			}
 		}
 	}

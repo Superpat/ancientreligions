@@ -10,6 +10,10 @@ Celtic:
   -- The player's court will always convert (unless they are landed, like councilors, or prisoners).
   -- The Insanity conversion event will now also cascade through the realm, allowing vassals and courtiers to convert with you.
   -- This should give Celtic revivals a leg to stand on. It's still unlikely they'll be more than a blip, but there's always a chance.
+ - Unfit King mechanic is enabled on an experimental basis.
+  -- It requires a Game Rule to enable.
+  -- In an effort to balance the ability to abdicate, the old ruler will have a strong claim on all titles and all Powerful Vassals will get a weak claim.
+  -- Please give feedback on this mechanic!
 
 Hellenic:
  - Added new Mercenary company, The Myrmidons.

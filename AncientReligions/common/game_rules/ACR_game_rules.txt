@@ -27,3 +27,19 @@ acr_ai_revival = {
 		desc = ancrel.ai_revival_rule.off.desc
 	}
 }
+
+acr_unfit_king_beta = {
+	name = ancrel.unfit_king_beta
+	dlc = "The Old Gods"
+
+	option = {
+		name = off
+		text = ancrel.unfit_king_rule.off
+		desc = ancrel.unfit_king_rule.off.desc
+	}
+	option = {
+		name = on
+		text = ancrel.unfit_king_rule.on
+		desc = ancrel.unfit_king_rule.on.desc
+	}
+}

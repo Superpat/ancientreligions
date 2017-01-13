@@ -61,13 +61,13 @@ pagan_group = {
 			GOD_JUNO GOD_VESTA GOD_MINERVA GOD_CERES GOD_DIANA GOD_VENUS GOD_MARS GOD_MERCURY GOD_JUPITER GOD_NEPTUNE GOD_VULCAN GOD_APOLLO	GOD_PROMETHEUS GOD_EPIMETHEUS	
 		}
 		unit_modifier = {
-			morale_offence = 0.3
-			morale_defence = 0.3
+			morale_offense = 0.3
+			morale_defense = 0.3
 
 			key = "TITAN"
 		}
 		unit_home_modifier = {
-			morale_defence = 0.2
+			morale_defense = 0.2
 			levy_size = 0.5
 			garrison_size = 0.5
 		}
@@ -123,15 +123,15 @@ pagan_group = {
 		}
 
 		unit_modifier = {
-			morale_defence = 0.2
+			morale_defense = 0.2
 			levy_size = 0.1
 			garrison_size = 0.3
 
 			key = "EXP_RELIGION"
 		}
 		unit_home_modifier = {
-			morale_defence = 0.1
-			morale_offence = 0.2
+			morale_defense = 0.1
+			morale_offense = 0.2
 			garrison_size = 0.1
 			levy_size = 0.3
 

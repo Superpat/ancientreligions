@@ -365,7 +365,7 @@ long_character_event = {
 # (Pope)
 # [on_yearly_pulse]
 character_event = {
-	id = ancrel.2010
+	id = ancrel.2050
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -382,7 +382,7 @@ character_event = {
 		491 = {
 			religion = hellenic_pagan
 		}
-		NOT = {	d_myrmidons = { holder = { always = yes } }	}
+		d_myrmidons = { has_holder = no	}
 	}
 
 	immediate = {
@@ -489,24 +489,24 @@ character_event = {
 }
 
 narrative_event = {
-	id = ancrel.2011
-	title = ancrel.2011.title
-	desc = ancrel.2011.desc
+	id = ancrel.2051
+	title = ancrel.2051.title
+	desc = ancrel.2051.desc
 	picture = GFX_evt_battle_hellenic_pagan
 
 	is_triggered_only = yes
 
 	option = {
-		name = ancrel.2011.a
+		name = ancrel.2051.a
 		trigger = {
 			NOT = { religion = hellenic_pagan }
 		}
 	}
 
 	option = {
-		name = ancrel.2011.b
+		name = ancrel.2051.b
 		trigger = {
-			relgion = hellenic_pagan
+			religion = hellenic_pagan
 		}
 	}
 }

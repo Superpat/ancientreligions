@@ -4,7 +4,7 @@ ancrel.ai_revival_rule.on;On;;;;;;;;;;;;;x
 ancrel.ai_revival_rule.on.desc;AI characters will be allowed to receive Ancient Religions Revival events.;;;;;;;;;;;;;x
 ancrel.ai_revival_rule.off;Off;;;;;;;;;;;;;x
 ancrel.ai_revival_rule.off.desc;Only players will be eligible for Ancient Religions Revival events.;;;;;;;;;;;;;x
-acnrel.unfit_king_rule;§BAncient Religions:§! Unfit King Mechanic - §RBeta§!;;;;;;;;;;;;;x
+acnrel.unfit_king_beta;§BAncient Religions:§! Unfit King Mechanic - §RBeta§!;;;;;;;;;;;;;x
 ancrel.unfit_king_rule.on;Enabled;;;;;;;;;;;;;x
 ancrel.unfit_king_rule.on.desc;The Unfit Gaelic King mechanic will be enabled. §RWARNING:§! This feature is in beta and may suck!;;;;;;;;;;;;;x
 ancrel.unfit_king_rule.off;Disabled;;;;;;;;;;;;;x

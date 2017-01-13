@@ -18,6 +18,10 @@ HEAD_PRIEST_african_pagan_reformed;Kungo Hogon;Kungo Hogon;Kungo Hogon;;Kungo Ho
 HEAD_PRIESTESS_african_pagan_reformed;Musoo Hogon;Musoo Hogon;Musoo Hogon;;Musoo Hogon;;;;;;;;;x
 HEAD_PRIEST_aztec_reformed;Quetzalcoatl;Quetzalcoatl;Quetzalcoatl;;Quetzalcoatl;;;;;;;;;x
 HEAD_PRIESTESS_aztec_reformed;Quetzalcoatl;Quetzalcoatl;Quetzalcoatl;;Quetzalcoatl;;;;;;;;;x
+###### *shrug* ;;;;;;;;;;;;;;x
+TITAN;Titanic;;;;;;;;;;;;;x
+EXP_RELIGION;Expansionist Religion;;;;;;;;;;;;;x
+EXP_RELIGION_HOME_TERRITORY;Expansionist Religion Home Territory;;;;;;;;;;;;;x
 ###### Misc keys for events;;;;;;;;;;;;;;x
 ancrel.damn;Damn!;;;;;;;;;;;;;;x
 ancrel.horrible;This is horrible!;;;;;;;;;;;;;;x

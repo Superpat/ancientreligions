@@ -561,7 +561,7 @@ narrative_event = {
 character_event = {
 	id = ancrel.1000
 	desc = ancrel.1000.desc
-	picture = 
+	picture = GFX_evt_nuada_mag_tuired
 
 	is_triggered_only = yes
 
@@ -575,6 +575,6 @@ character_event = {
 
 	option = {
 		name = ancrel.troublesome
-		add_character_modifier = unfit_gaelic_king
+		add_character_modifier = { name = unfit_gaelic_king duration = -1 }
 	}
 }

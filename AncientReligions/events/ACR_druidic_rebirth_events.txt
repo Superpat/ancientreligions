@@ -559,7 +559,6 @@ character_event = {
 			}
 			add_trait = sympathy_christendom
 		}
-		religion = celtic_pagan
 		piety = 50
 	}
 }

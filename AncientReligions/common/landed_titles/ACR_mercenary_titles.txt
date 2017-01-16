@@ -76,9 +76,7 @@ d_myrmidons = {
 	
 	# Hire Trigger
 	allow = {
-		OR = {
-			religion = hellenic_pagan
-		}
+		religion = hellenic_pagan
 	}
 	
 	# Parent Religion 

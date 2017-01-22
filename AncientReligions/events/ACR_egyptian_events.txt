@@ -2663,7 +2663,15 @@ character_event = {
 			factor = 0.01
 			ai = no
 			has_global_flag = ancrel_debug
-		}		
+		}
+		modifier = {
+			factor = 10
+			ai = yes
+			has_game_rule = {
+				name = acr_ai_revival
+				value = reduced
+			}
+		}
 	}
 
 	option = { # may <god> guide me
@@ -3204,6 +3212,13 @@ character_event = {
 					value = off
 				}
 				ai = yes
+			}
+		}
+		modifier = {
+			factor = 0.1
+			has_game_rule = {
+				name = acr_ai_revival
+				value = reduced
 			}
 		}
 	}

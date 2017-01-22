@@ -11,7 +11,7 @@ Celtic:
   -- The Insanity conversion event will now also cascade through the realm, allowing vassals and courtiers to convert with you.
   -- This should give Celtic revivals a leg to stand on. It's still unlikely they'll be more than a blip, but there's always a chance.
  - Unfit King mechanic is enabled on an experimental basis.
-  -- It requires a Game Rule to enable.
+  -- It is controlled by a game rule, and is disabled by default.
   -- In an effort to balance the ability to abdicate, the old ruler will have a strong claim on all titles and all Powerful Vassals will get a weak claim.
   -- Please give feedback on this mechanic!
 
@@ -19,6 +19,9 @@ Hellenic:
  - Added new Mercenary company, The Myrmidons.
   -- This company comes into existence when the entire duchy of Thessalonika is converted to Hellenism.
   -- Has 4 pure heavy infantry regiments.
+ - Updated the Philosopher event chain.
+ -- It is now possible to fire when the empire has 130 or fewer realm holdings, up from the previous limit of 100.
+ -- More events have been added to the chain to make the Philosopher earn any support he may get from the Emperor, and to allow for better stories to unfold.
 
 2016-11-04 v0.38.2 "Egeria"
 -------------------------

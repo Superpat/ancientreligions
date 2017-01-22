@@ -310,6 +310,10 @@ decisions = {
 					}
 				}
 			}
+			religion_authority = {
+				modifier = religious_order_formed
+				years = 10
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -369,6 +373,10 @@ decisions = {
 						}
 					}
 				}
+			}
+			religion_authority = {
+				modifier = religious_order_formed
+				years = 10
 			}
 		}
 		ai_will_do = {
@@ -483,6 +491,10 @@ decisions = {
 						}
 					}
 				}
+			}
+			religion_authority = {
+				modifier = religious_order_formed
+				years = 10
 			}
 		}
 		ai_will_do = {

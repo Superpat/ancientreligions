@@ -22,6 +22,11 @@ acr_ai_revival = {
 		desc = ancrel.ai_revival_rule.on.desc
 	}
 	option = {
+		name = reduced
+		text = ancrel.ai_revival_rule.reduced
+		desc = ancrel.ai_revival_rule.reduced.desc
+	}
+	option = {
 		name = off
 		text = ancrel.ai_revival_rule.off
 		desc = ancrel.ai_revival_rule.off.desc

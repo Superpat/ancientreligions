@@ -49,6 +49,14 @@ character_event = {
 	
 	mean_time_to_happen = {
 		months = 24
+		modifier = {
+			factor = 10
+			has_game_rule = {
+				name = acr_ai_revival
+				value = reduced
+			}
+			ai = yes
+		}
 	}	
 	
 	option = {
@@ -471,6 +479,14 @@ character_event = {
 	
 	mean_time_to_happen = {
 		months = 420
+		modifier = {
+			factor = 10
+			has_game_rule = {
+				name = acr_ai_revival
+				value = reduced
+			}
+			ai = yes
+		}
 	}
 	
 	option = {

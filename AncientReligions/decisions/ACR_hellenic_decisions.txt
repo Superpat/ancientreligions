@@ -104,6 +104,10 @@ decisions = {
 					}
 				}
 			}
+			religion_authority = {
+				modifier = religious_order_formed
+				years = 10
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -319,6 +323,10 @@ decisions = {
 				narrative_event = {
 					id = ancrel.3700 # bounce the event to have the warchief as root, ruler as from
 				}
+			}
+			religion_authority = {
+				modifier = religious_order_formed
+				years = 10
 			}
 		}
 		revoke_allowed = {
@@ -661,6 +669,10 @@ decisions = {
 					female = yes
 					age = 17
 				}
+			}
+			religion_authority = {
+				modifier = religious_order_formed
+				years = 10
 			}
 		}
 		revoke_allowed = {

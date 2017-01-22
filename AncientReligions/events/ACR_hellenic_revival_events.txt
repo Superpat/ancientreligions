@@ -41,7 +41,7 @@ character_event = {
 		}
 
 		NOR = {
-			realm_size = 101 						# empire is in big trouble, smaller than the alexiad start date
+			realm_size = 131 						# empire is in big trouble, like at the alexiad start date
 			has_character_flag = ancrel_philosopher # hasn't had the event already
 			religion_group = pagan_group 			# is still christian
 			any_courtier = {
@@ -60,6 +60,22 @@ character_event = {
 
 	immediate = {
 		set_character_flag = ancrel_philosopher
+	}
+
+	weight_multiplier = {
+		days = 360
+		modifier = {
+			factor = 0.1
+			has_game_rule = {
+				name = acr_ai_revival
+				value = reduced
+			}
+			ai = yes
+		}
+		modifier = {
+			factor = 2
+			NOT = { religion_authority = 0.5 }
+		}
 	}
 
 	option = { # allow the philosopher to enter the court
@@ -620,6 +636,13 @@ character_event = {
 				trait = cynical
 			}
 		}
+		modifier = {
+			factor = 10
+			has_game_rule = {
+				name = acr_ai_revival
+				value = reduced
+			}
+		}
 	}
 
 	immediate = {
@@ -1161,6 +1184,14 @@ character_event = {
 			factor = 1.5
 			year = 1100
 		}
+		modifier = {
+			factor = 10
+			has_game_rule = {
+				name = acr_ai_revival
+				value = reduced
+			}
+			ai = yes
+		}
 	}
 	
 	immediate = {
@@ -1316,7 +1347,6 @@ narrative_event = {
 	
 	major = yes
 	only_playable = yes
-	only_men = yes
 	
 	trigger = {
 		religion = hellenic_pagan

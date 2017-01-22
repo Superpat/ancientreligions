@@ -375,6 +375,14 @@ character_event = {
 			factor = 0.7
 			trait = sympathy_pagans
 		}
+		modifier = {
+			factor = 10
+			has_game_rule = {
+				name = acr_ai_revival
+				value = reduced
+			}
+			ai = yes
+		}
 	}
 
 	option = {

@@ -1,5 +1,4 @@
-culture =
-{
+culture = {
 	religion_group = "christian"
 
 	templates = { 
@@ -125,8 +124,7 @@ culture =
 	}
 }
 
-culture =
-{
+culture = {
 	religion_group = "muslim"
 
 	templates = { 
@@ -448,7 +446,6 @@ culture = {
 	
 	templates = { 
 		"coa_plain_muslim:1"
-#		"coa_plain_pagan:1"
 	}
 
 	color = {
@@ -512,8 +509,7 @@ culture = {
 	}
 }
 
-culture =
-{
+culture = {
 	religion_group = "jewish_group"
 
 	templates = { 

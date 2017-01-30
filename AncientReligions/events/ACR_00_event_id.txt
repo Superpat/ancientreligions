@@ -30,9 +30,9 @@
 # Hellenic Polytheism
 # Event ID ancrel.2000 - ancrel.3999 is reserved
 # 
-# ancrel.2000 - ancrel.2007 A Philosopher Joins the Imperial Court
-# ancrel.2010 - ancrel.2049 Sacred Band Events
-# ancrel.2051 - ancrel.2100 Myrmidon/Sacred Band/Hellenic Legion Events
+# ancrel.2000 - ancrel.2025 A Philosopher Joins the Imperial Court
+# ancrel.2026 - ancrel.2049 Sacred Band Events
+# ancrel.2051 - ancrel.2100 Myrmidon/Hellenic Legion Events
 # ancrel.2100 - ancrel.2109 Courtier Studies the Classics
 # ancrel.2110 - ancrel.2119 Flamines Maiores
 # ancrel.2120 - ancrel.2129 Vestales
@@ -66,6 +66,7 @@
 #
 # Misc ancient religion events
 # Event ID ancrel.9000 - ancrel.9999 is reserved
+#
 # GonePagan.1 - GonePagan.199 Gone Pagan events, from CK2+
 # ancrel.9001 - ancrel.9009 Paganify Customization Option
 #

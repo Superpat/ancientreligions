@@ -135,7 +135,7 @@ character_event = {
 	prisoner = no
 
 	trigger = {
-		had_character_flag = { flag = special_priest days = 90	}
+		had_character_flag = { flag = special_priest days = 1825 }
 		NOT = {
 			has_character_flag = ancrel_block_philosopher
 			has_minor_title = title_hypatos_philosophon
@@ -196,7 +196,7 @@ character_event = {
 	}
 }
 
-# priest vassal is upset, thinks the philosopher is a heretic (philosopher)
+# priest vassal is upset that the philosopher wants to implement a Platonic curriculum (philosopher)
 character_event = {
 	id = ancrel.2003
 	hide_window = yes
@@ -206,8 +206,9 @@ character_event = {
 	prisoner = no
 
 	trigger = {
-		had_character_flag = { flag = ancrel_hypatos days = 120 }
+		had_character_flag = { flag = ancrel_hypatos days = 1825 }
 		NOT = { has_character_flag = ancrel_block_philosopher }
+		NOT = { has_character_flag = do_not_disturb	}
 		liege = {
 			OR = {
 				has_landed_title = e_byzantium
@@ -231,7 +232,7 @@ character_event = {
 	}
 }
 
-# heretic philosopher (priest)
+# platonic curriculum (priest)
 character_event = {
 	id = ancrel.2004
 	hide_window = yes
@@ -245,7 +246,7 @@ character_event = {
 	}
 }
 
-# heretic philosopher (emperor)
+# platonic curriculum (emperor)
 character_event = {
 	id = ancrel.2005
 	desc = ancrel.2005.desc
@@ -279,18 +280,18 @@ character_event = {
 	}
 }
 
-# the hypatos proposes a return to the old ways (hypatos)
+# philosopher has a research project (philosopher)
 character_event = {
 	id = ancrel.2006
 	hide_window = yes
 
-	min_age = 16
-	capable_only = yes
 	prisoner = no
+	has_character_flag = { flag = special_priest }
+
+	is_triggered_only = yes
 
 	trigger = {
-		had_character_flag = { flag = ancrel_hypatos_support days = 45 }
-		NOT = { has_character_flag = ancrel_block_philosopher }
+		NOT = { has_character_flag = do_not_disturb	}
 		liege = {
 			OR = {
 				has_landed_title = e_byzantium
@@ -299,76 +300,443 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		days = 4
-	}
-
-	immediate = {
-		liege = { character_event = { id = ancrel.2007 days = 0 } }
-	}
-}
-
-# the hypatos makes a proposal (emperor)
-long_character_event = {
-	id = ancrel.2007
-	desc = ancrel.2007.desc
-	picture = GFX_evt_Whispering_in_ear
-	border = GFX_event_long_frame_religion
-
-	is_triggered_only = yes
-
-	option = { # return to the gods of your ancestors
-		name = ancrel.2007.a
-
-		religion = hellenic_pagan
-		add_trait = sympathy_christendom
-		give_nickname = nick_the_apostate
-		FROM = {
-			religion = hellenic_pagan
+	weight_multiplier = {
+		days = 7
+		modifier = {
+			factor = 5
+			NOT = {
+				has_character_flag = ancrel_research_project
+			}
 		}
 	}
 
-	option = { # banish the hypatos to a monastery
-		name = ancrel.2007.b
+	immediate = {
+		liege = {
+			character_event = { id = ancrel.2007 }
+		}
+	}
+}
 
+# philosopher has a research project (emperor)
+character_event = {
+	id = ancrel.2007
+	desc = ancrel.2007.desc
+	picture = 
+	border = GFX_evt_normal_frame_diplomacy
+
+	is_triggered_only = yes
+
+	option = { # support the research project
+		name = ancrel.2007.a
+		scaled_wealth = 0.2
 		FROM = {
-			add_trait = monk
-			remove_opinion = { who = ROOT modifier = opinion_patron }
-			clr_character_flag = special_priest
-			clr_character_flag = ancrel_hypatos_support
-			clr_character_flag = ancrel_hypatos
-			remove_title = title_hypatos_philosophon
-
-			if = {
-				limit = {
-					d_holy_sepulchre = {
-						holder_scope = {
-							always = yes
+			set_character_flag = ancrel_research_project
+			set_character_flag = do_not_disturb
+		}
+		custom_tooltip = {
+			text = ancrel.2007.a.tt
+			hidden_tooltip = {
+				random_list = {
+					25 = { # military tech
+						modifier = {
+							factor = 0.2
+							has_character_flag = ancrel_military_research
 						}
+						character_event = { id = ancrel.2008 days = 120 }
 					}
-				}
-
-				d_holy_sepulchre = {
-					holder_scope = {
-						move_character = PREVPREV
+					25 = { # economy tech
+						modifier = {
+							factor = 0.2
+							has_character_flag = ancrel_economy_research
+						}
+						character_event = { id = ancrel.2009 days = 120 }
+					}
+					25 = { # culture tech
+						modifier = {
+							factor = 0.2
+							has_character_flag = ancrel_culture_research
+						}
+						character_event = { id = ancrel.2010 days = 120 }
 					}
 				}
 			}
 		}
 	}
 
-	option = { # convert to Prometheanism
-		name = ancrel.2007.c
+	option = { # do not support the project
+		name = ancrel.2007.b
 
-		religion = promethean_pagan
-		add_trait = sympathy_christendom
-		give_nickname = nick_the_apostate
-		
-		FROM = {
-			religion = promethean_pagan
+	}
+}
+
+# research project (military)
+character_event = {
+	id = ancrel.2008
+	desc = ancrel.2008.desc
+	picture = 
+	border = GFX_evt_normal_frame_war
+
+	show_from_from = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.fantastic
+		military_techpoints = 50
+		FROMFROM = {
+			clr_character_flag = do_not_disturb
+			set_character_flag = ancrel_military_research
 		}
 	}
 }
+
+# research project (economic)
+character_event = {
+	id = ancrel.2008
+	desc = ancrel.2008.desc
+	picture = 
+	border = GFX_evt_normal_frame_economy
+
+	show_from_from = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.fantastic
+		economy_techpoints = 50
+		FROMFROM = {
+			clr_character_flag = do_not_disturb
+			set_character_flag = ancrel_economy_research
+		}
+	}
+}
+
+# research project (cultural)
+character_event = {
+	id = ancrel.2009
+	desc = ancrel.2009.desc
+	picture = 
+	border = GFX_evt_normal_frame_religion
+
+	show_from_from = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.fantastic
+		culture_techpoints = 50
+		FROMFROM = {
+			clr_character_flag = do_not_disturb
+			set_character_flag = ancrel_culture_research
+		}
+	}
+}
+
+# philosopher proposes a chronicle (philosopher)
+character_event = {
+	id = ancrel.2010
+	hide_window = yes
+
+	has_character_flag = special_priest
+	prisoner = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOR = {
+			has_character_flag = ancrel_chronicle
+			has_character_flag = ancrel_do_not_disturb
+		}
+		liege = {
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_roman_empire
+			}
+			NOT = {
+				has_character_modifier = {
+					name = ancrel_imperial_chronicle
+				}
+			}
+		}
+	}
+
+	immediate = {
+		liege = {
+			character_event = {	id = ancrel.2011 }
+		}
+	}
+}
+
+# philosopher proposes a chronicle (emperor)
+character_event = {
+	id = ancrel.2011
+	desc = ancrel.2011.desc
+	picture = 
+	border = GFX_evt_normal_frame_diplomacy
+
+	option = { # authorize the chronicle
+		name = ancrel.2011.a
+		scaled_wealth = 0.1
+		character_event = { ancrel.2012 days = 90 tooltip = ancrel.2012.tooltip }
+		FROM = {
+			set_character_flag = do_not_disturb
+			set_character_flag = ancrel_chronicle
+		}
+	}
+}
+
+# philosopher completes chronicle (emperor)
+character_event = {
+	id = ancrel.2012
+	desc = ancrel.2012.desc
+	picture = 
+	border = GFX_evt_normal_frame_diplomacy
+	show_from_from = yes
+
+	option = {
+		name = ancrel.2012.a
+		add_character_modifier = { name = ancrel_imperial_chronicle duration = -1 }
+		FROMFROM = {
+			clr_character_flag = do_not_disturb
+		}
+	}
+}
+
+# philosopher offers to reorder the beaurocracy (philosopher)
+character_event = {
+	id = ancrel.2013
+	hide_window = yes
+
+	has_character_flag = special_priest
+	prisoner = no
+
+	trigger = {
+		NOR = {
+			has_character_flag = ancrel_court
+			has_character_flag = do_not_disturb
+		}
+		liege = {
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_roman_empire
+			}
+			NOT = {
+				has_character_modifier = {
+					name = ancrel_streamlined_court
+				}
+			}
+		}
+	}
+
+	immediate = {
+		liege = {
+			character_event = { id = ancrel.2014 }
+		}
+	}
+}
+
+# philosopher offers to reorder the beaurocracy (emperor)
+character_event = {
+	id = ancrel.2014
+	desc = ancrel.2014.desc
+	picture = 
+	border = GFX_evt_normal_frame_economy
+
+	is_triggered_only = yes
+
+	option = { # exert your influence to back the philosopher's plans
+		name = ancrel.2014.a
+		prestige = -100
+		character_event = { id = ancrel.2015 days = 90 tooltip = ancrel.2015.tt }
+		FROM = {
+			set_character_flag = do_not_disturb
+			set_character_flag = ancrel_court
+		}
+	}
+
+	option = { # conserve your influence
+		name = ancrel.2014.b
+	}
+}
+
+# philosopher finishes reordering the beaurocracy (emperor)
+character_event = {
+	id = ancrel.2015
+	desc = ancrel.2015.desc
+	picture = 
+	border = GFX_evt_normal_frame_economy
+	show_from_from = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.2015.a
+		add_character_modifier = ancrel_streamlined_court
+		FROMFROM = {
+			clr_character_flag = do_not_disturb
+		}
+	}
+}
+
+# philosopher has sage advice about a rivalry (philosopher)
+character_event = {
+	id = ancrel.2016
+	hide_window = yes
+
+	has_character_flag = special_priest
+	prisoner = no
+
+	trigger = {
+		NOR = {
+			has_character_flag = do_not_disturb
+		}
+		liege = {
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_roman_empire
+			}
+			num_of_rivals = 1
+		}
+	}
+
+	immediate = {
+		liege = {
+			character_event = { id = ancrel.2017 }
+		}
+	}
+}
+
+# philosopher has sage advice about a rivalry (emperor)
+character_event = {
+	id = ancrel.2017
+	desc = ancrel.2017.desc
+	picture = 
+	border = GFX_evt_normal_frame_diplomacy
+}
+
+# emperor comes to a rival with words of wisdom (rival)
+character_event = {
+	id = ancrel.2018
+	desc = ancrel.2018.desc
+	picture = 
+	border = GFX_evt_normal_frame_diplomacy
+}
+
+# rival rejects overture of peace! (emperor)
+character_event = {
+	id = ancrel.2019
+	desc = ancrel.2019.desc
+	picture = 
+	border = GFX_evt_normal_frame_diplomacy
+}
+
+# rival accepts overture of peace! (emperor)
+character_event = {
+	id = ancrel.2020
+	desc = ancrel.2020.desc
+	picture = 
+	border = GFX_evt_normal_frame_diplomacy
+}
+
+# a priest vassal wants you to banish the philospher (philosopher)
+character_event = {
+	id = ancrel.2021
+	hide_window = yes
+}
+
+# a priest vassal wants you to banish the philosopher (priest)
+character_event = {
+	id = ancrel.2022
+	hide_window = yes
+}
+
+# a priest vassal wants you to banish the philosopher (emperor)
+character_event = {
+	id = ancrel.2023
+	desc = ancrel.2023.desc
+	picture = 
+	border = GFX_evt_normal_frame_religion
+}
+
+# blow off the priest's concerns (emperor)
+character_event = {
+	id = ancrel.2024
+	desc = ancrel.2024.desc
+	picture = 
+	border = GFX_evt_normal_frame_religion
+}
+
+# order the philosopher imprisoned (emperor)
+character_event = {
+	id = ancrel.2025
+	desc = ancrel.2025.desc
+	picture = 
+	border = GFX_evt_normal_frame_religion
+}
+
+# confront the philosopher (emperor)
+character_event = {
+	id = ancrel.2026
+	desc = ancrel.2026.desc
+	picture = 
+	border = GFX_evt_normal_frame_religion
+}
+
+# philosopher confesses to secretly being a pagan (emperor)
+character_event = {
+	id = ancrel.2027
+	desc = ancrel.2027.desc
+	picture = 
+	border = GFX_evt_normal_frame_religion
+}
+
+# give the (pagan) philosopher asylum (emperor)
+character_event = {
+	id = ancrel.2028
+	desc = ancrel.2028.desc
+	picture = 
+	border = GFX_evt_normal_frame_religion
+}
+
+# imprison the philosopher (emperor)
+character_event = {
+	id = ancrel.2029
+	desc = ancrel.2029.desc
+	picture = 
+	border = GFX_evt_normal_frame_intrigue
+}
+
+# force the philosopher to renounce paganism, sending him to a monestary (emperor)
+character_event = {
+	id = ancrel.2030
+	desc = ancrel.2030.desc
+	picture = 
+	border = GFX_evt_normal_frame_religion
+}
+
+# philosopher proposes a return to the old ways (philosopher)
+long_character_event = {
+	id = ancrel.2031
+	hide_window = yes
+}
+
+# philosopher proposes a return to the old ways (emperor)
+character_event = {
+	id = ancrel.2032
+	desc = ancrel.2032.desc
+	picture = 
+	border = GFX_evt_normal_frame_religion
+}
+
+# recall a banished philosopher
+character_event = {
+	id = ancrel.2033
+	desc = ancrel.2033.desc
+	picture = 
+	border = GFX_evt_normal_frame_religion
+}
+
+# 
 
 #######################################
 #
@@ -496,7 +864,7 @@ character_event = {
 				any_playable_ruler = {
 					limit = { ai = no }
 
-					narrative_event = { id = ancrel.2011 }
+					narrative_event = { id = ancrel.2051 }
 				}
 			}
 		}
@@ -1409,9 +1777,9 @@ narrative_event = {
 
 # The Sacred Band founded
 narrative_event = {
-	id = ancrel.2026
-	title = ancrel.2026.title
-	desc = ancrel.2026.desc
+	id = ancrel.2036
+	title = ancrel.2036.title
+	desc = ancrel.2036.desc
 	picture = GFX_evt_roman_temple
 	border = GFX_event_narrative_frame_war
 	
@@ -1420,13 +1788,13 @@ narrative_event = {
 	hide_from = yes
 	
 	option = {
-		name = ancrel.2026.a
+		name = ancrel.2036.a
 		hidden_tooltip = {
 			any_playable_ruler = {
 				limit = {
 					ai = no
 				}
-				narrative_event = { id = ancrel.2027 }
+				narrative_event = { id = ancrel.2037 }
 			}
 		}
 	}
@@ -1434,23 +1802,23 @@ narrative_event = {
 
 # The player is informed of the Sacred Band
 narrative_event = {
-	id = ancrel.2027
-	title = ancrel.2027.title
-	desc = ancrel.2027.desc
+	id = ancrel.2037
+	title = ancrel.2037.title
+	desc = ancrel.2037.desc
 	picture = GFX_evt_roman_temple
 	border = GFX_event_narrative_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = ancrel.2027.a
+		name = ancrel.2037.a
 		trigger = {
 			religion = hellenic_pagan
 		}
 	}
 	
 	option = {
-		name = ancrel.2027.b
+		name = ancrel.2037.b
 		trigger = {
 			NOT = {
 				religion = hellenic_pagan

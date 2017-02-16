@@ -99,10 +99,10 @@ decisions = {
 					trait = skilled_tactician
 				}
 				new_character = {
+					prestige = 300
+					wealth = 300
 					d_sacred_band = {
 						grant_title = PREV
-						prestige = 300
-						wealth = 300
 					}
 				}
 			}

@@ -120,8 +120,9 @@ character_event = {
 
 	trigger = {
 		had_character_flag = { flag = special_priest days = 90	}
-		NOT = {
+		NOR = {
 			has_character_flag = ancrel_block_philosopher
+			has_character_flag = ancrel_request_support
 			has_minor_title = title_hypatos_philosophon
 		}
 		liege = {
@@ -137,6 +138,7 @@ character_event = {
 	}
 
 	immediate = {
+		set_character_flag = ancrel_request_support
 		liege = { character_event = { id = ancrel.2002 days = 0 } }
 	}
 }
@@ -192,7 +194,10 @@ character_event = {
 
 	trigger = {
 		had_character_flag = { flag = ancrel_hypatos days = 120 }
-		NOT = { has_character_flag = ancrel_block_philosopher }
+		NOR = { 
+			has_character_flag = ancrel_block_philosopher
+			has_character_flag = ancrel_angry_priest 
+		}
 		liege = {
 			OR = {
 				has_landed_title = e_byzantium
@@ -206,6 +211,7 @@ character_event = {
 	}
 
 	immediate = {
+		set_character_flag = ancrel_angry_priest
 		liege = {
 			random_vassal = {
 				limit = { is_theocracy = yes }
@@ -275,8 +281,16 @@ character_event = {
 
 	trigger = {
 		had_character_flag = { flag = ancrel_hypatos_support days = 45 }
-		NOT = { has_character_flag = ancrel_block_philosopher }
+		NOR = { 
+			has_character_flag = ancrel_block_philosopher
+			has_character_flag = ancrel_heretic_philosopher
+		}
 		liege = {
+			NOR = { 
+				religion = hellenic_pagan
+				religion = promethean_pagan
+				religion = titan_pagan
+			}
 			OR = {
 				has_landed_title = e_byzantium
 				has_landed_title = e_roman_empire
@@ -289,6 +303,7 @@ character_event = {
 	}
 
 	immediate = {
+		set_character_flag = ancrel_heretic_philosopher
 		liege = { character_event = { id = ancrel.2007 days = 0 } }
 	}
 }
@@ -337,6 +352,26 @@ long_character_event = {
 					holder_scope = {
 						move_character = PREVPREV
 					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						d_holy_sepulchre = {
+							holder_scope = {
+								always = yes
+							}
+						}
+					}
+				}
+
+				ROOT.random_realm_lord = {
+					limit = {
+						tier = baron
+						is_theocracy = yes
+					}
+
+					move_character = PREV
 				}
 			}
 		}

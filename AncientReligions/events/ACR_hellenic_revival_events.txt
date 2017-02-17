@@ -136,7 +136,8 @@ character_event = {
 
 	trigger = {
 		had_character_flag = { flag = special_priest days = 1825 }
-		NOT = {
+		NOR = {
+			has_character_flag = ancrel_request_support
 			has_character_flag = ancrel_block_philosopher
 			has_minor_title = title_hypatos_philosophon
 		}
@@ -153,6 +154,7 @@ character_event = {
 	}
 
 	immediate = {
+		set_character_flag = ancrel_request_support
 		liege = { character_event = { id = ancrel.2002 days = 0 } }
 	}
 }
@@ -209,6 +211,7 @@ character_event = {
 		had_character_flag = { flag = ancrel_hypatos days = 1825 }
 		NOT = { has_character_flag = ancrel_block_philosopher }
 		NOT = { has_character_flag = do_not_disturb	}
+		NOT = { has_character_flag = ancrel_angry_priest }
 		liege = {
 			OR = {
 				has_landed_title = e_byzantium
@@ -222,6 +225,7 @@ character_event = {
 	}
 
 	immediate = {
+		set_character_flag = ancrel_angry_priest
 		liege = {
 			random_vassal = {
 				limit = { is_theocracy = yes }
@@ -328,7 +332,7 @@ character_event = {
 
 	option = { # support the research project
 		name = ancrel.2007.a
-		scaled_wealth = 0.2
+		scaled_wealth = -0.2
 		FROM = {
 			set_character_flag = ancrel_research_project
 			set_character_flag = do_not_disturb
@@ -365,7 +369,6 @@ character_event = {
 
 	option = { # do not support the project
 		name = ancrel.2007.b
-
 	}
 }
 

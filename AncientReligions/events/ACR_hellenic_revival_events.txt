@@ -365,13 +365,15 @@ long_character_event = {
 					}
 				}
 
-				ROOT.random_realm_lord = {
-					limit = {
-						tier = baron
-						is_theocracy = yes
-					}
+				ROOT = {
+					random_realm_lord = {
+						limit = {
+							tier = baron
+							is_theocracy = yes
+						}
 
-					move_character = PREV
+						move_character = PREVPREV
+					}
 				}
 			}
 		}

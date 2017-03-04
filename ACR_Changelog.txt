@@ -23,6 +23,21 @@ Hellenic:
  -- It is now possible to fire when the empire has 130 or fewer realm holdings, up from the previous limit of 100.
  -- More events have been added to the chain to make the Philosopher earn any support he may get from the Emperor, and to allow for better stories to unfold.
 
+
+2017-02-16 v0.38.3 "Hippolytus"
+-------------------------
+
+Hellenic:
+- Fixed a critical bug in the Philosopher event chain that was caused by the Virbius update.
+
+
+2017-02-16 v0.38.3 "Virbius"
+-------------------------
+
+Hellenic:
+- Fixed a critical bug in the Philosopher event chain.
+
+
 2016-11-04 v0.38.2 "Egeria"
 -------------------------
 
@@ -52,11 +67,13 @@ Kemetic:
 Atenic:
 - Added new "Lightbringer" Atenic Crusader trait.
 
+
 2016-8-27 v0.38.1 "Actaeon"
 -------------------------
 
 Kemetic:
 - Fixed Kemetic revival events being called for any character at random.
+
 
 2016-8-27 v0.38.0 "Diana"
 -------------------------
@@ -98,6 +115,7 @@ General:
  - Hellenic Reconquest = 85% Infamy
  - Promethean Expansion gets no modification.
 
+
 2016-2-16 v0.37.2 "Aetna"
 -------------------------
 
@@ -105,6 +123,7 @@ General:
 - Merge tactics from 2.5.1
 - Fix bug relating to Hellenic EREmperors being unable to reform the empire.
 - Fix localization overrides not being used.
+
 
 2016-2-10 v0.37.1 "Cecrops"
 -------------------------
@@ -123,6 +142,7 @@ Promethean:
 - Stoic trait now grants a +5 General Opinion bonus, as intended.
 - Skeptic and Epicurean traits now have icons.
 - All three philosophy traits have been given potential blocks to keep random children in Scotland from getting them.
+
 
 
 2016-1-26 v0.37.0 "Vulcan"
@@ -223,6 +243,7 @@ Atenic:
 - Atenic now uses Decadence. If the representitive of the divine on Earth behaves in a manner unworthy of the divine, the people will rise up to overthrow the unworthy in the name of Aten.
 - New Minor Titles: Gods Wife, Divine Adoratrice, Master of Palms, Fanbearer on the Right Hand of the King, Iry-pat, Haty-a, Khetemty.
 
+
 2015-8-12 v0.36.4 "Beroe"
 -------------------------
 - Compatibility with vanilla 2.4.3
@@ -238,6 +259,7 @@ Atenic:
 - Roman Viceroys now have unique localization.
 - Sed Festival can now be taken after 10 years instead of 30, so you actually have a chance of using it.
 - Court Wizard is no longer grantable.
+
 
 2015-7-19 v0.36.3 "Eryx"
 -------------------------
@@ -259,6 +281,7 @@ Celtic Paganism:
 - Adjusted the Potential on Invite Court Druid and Organize Fianna so it stops cluttering up your menu when its irrelevant. You now must either be a Irish cultured or personally hold land in Ireland to see it (in addition to being Celtic Pagan or Druidic).
 - Fixed bug that made nearly every child of a Celtic Pagan player reincarnated.
 - More small localization fixes.
+
 
 2015-02-27 v0.36.1 "Adonis"
 -------------------------

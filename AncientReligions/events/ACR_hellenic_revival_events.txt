@@ -139,6 +139,7 @@ character_event = {
 		NOR = {
 			has_character_flag = ancrel_request_support
 			has_character_flag = ancrel_block_philosopher
+			has_character_flag = ancrel_request_support
 			has_minor_title = title_hypatos_philosophon
 		}
 		liege = {
@@ -209,9 +210,11 @@ character_event = {
 
 	trigger = {
 		had_character_flag = { flag = ancrel_hypatos days = 1825 }
-		NOT = { has_character_flag = ancrel_block_philosopher }
-		NOT = { has_character_flag = do_not_disturb	}
-		NOT = { has_character_flag = ancrel_angry_priest }
+		NOR = { 
+			has_character_flag = ancrel_block_philosopher
+			has_character_flag = do_not_disturb
+			has_character_flag = ancrel_angry_priest
+		}
 		liege = {
 			OR = {
 				has_landed_title = e_byzantium
@@ -297,6 +300,11 @@ character_event = {
 	trigger = {
 		NOT = { has_character_flag = do_not_disturb	}
 		liege = {
+			NOR = { 
+				religion = hellenic_pagan
+				religion = promethean_pagan
+				religion = titan_pagan
+			}
 			OR = {
 				has_landed_title = e_byzantium
 				has_landed_title = e_roman_empire
@@ -715,6 +723,32 @@ character_event = {
 	desc = ancrel.2030.desc
 	picture = 
 	border = GFX_evt_normal_frame_religion
+
+	# save this here until i get to this event
+	effect = {
+		if = {
+			limit = {
+				NOT = {
+					d_holy_sepulchre = {
+						holder_scope = {
+							always = yes
+						}
+					}
+				}
+			}
+
+			ROOT = {
+				random_realm_lord = {
+					limit = {
+						tier = baron
+						is_theocracy = yes
+					}
+
+					move_character = PREVPREV
+				}
+			}
+		}	
+	}
 }
 
 # philosopher proposes a return to the old ways (philosopher)

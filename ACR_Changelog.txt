@@ -1,3 +1,9 @@
+2017-02-16 v0.38.3 "Hippolytus"
+-------------------------
+
+Hellenic:
+- Fixed a critical bug in the Philosopher event chain that was caused by the Virbius update.
+
 2017-02-16 v0.38.3 "Virbius"
 -------------------------
 

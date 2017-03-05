@@ -45,7 +45,7 @@ character_event = {
 			has_character_flag = ancrel_philosopher # hasn't had the event already
 			religion_group = pagan_group 			# is still christian
 			any_courtier = {
-				has_character_flag = special_priest # don't already have the priest in your court
+				has_character_flag = ancrel_special_priest # don't already have the priest in your court
 			}
 		}
 
@@ -75,6 +75,11 @@ character_event = {
 		modifier = {
 			factor = 2
 			NOT = { religion_authority = 0.5 }
+		}
+		modifier = {
+			factor = 10
+			has_global_flag = ancrel_debug
+			ai = no
 		}
 	}
 
@@ -114,7 +119,7 @@ character_event = {
 					who = ROOT
 				}
 				give_nickname = nick_the_stammerer
-				set_character_flag = special_priest
+				set_character_flag = ancrel_special_priest
 			}
 		}
 	}
@@ -135,7 +140,7 @@ character_event = {
 	prisoner = no
 
 	trigger = {
-		had_character_flag = { flag = special_priest days = 1825 }
+		had_character_flag = { flag = ancrel_special_priest days = 1825 }
 		NOR = {
 			has_character_flag = do_not_disturb
 			has_character_flag = ancrel_request_support
@@ -206,7 +211,7 @@ character_event = {
 	min_age = 16
 	capable_only = yes
 	prisoner = no
-	has_character_flag = special_priest
+	has_character_flag = ancrel_special_priest
 
 	trigger = {
 		had_character_flag = { flag = ancrel_hypatos days = 365 }
@@ -265,6 +270,9 @@ character_event = {
 		name = ancrel.2005.a
 		piety = -100
 		add_character_modifier = { name = acr_shielded_heretic duration = 1825 }
+		capital_scope = {
+			add_province_modifier = { name = ancrel_platonic_curriculum days = 1825 }
+		}
 
 		FROMFROM = {
 			add_friend = ROOT
@@ -292,7 +300,7 @@ character_event = {
 	hide_window = yes
 
 	prisoner = no
-	has_character_flag = { flag = special_priest }
+	has_character_flag = { flag = ancrel_special_priest }
 
 	is_triggered_only = yes
 
@@ -450,7 +458,7 @@ character_event = {
 	id = ancrel.2010
 	hide_window = yes
 
-	has_character_flag = special_priest
+	has_character_flag = ancrel_special_priest
 	prisoner = yes
 
 	is_triggered_only = yes
@@ -520,7 +528,7 @@ character_event = {
 	id = ancrel.2013
 	hide_window = yes
 
-	has_character_flag = special_priest
+	has_character_flag = ancrel_special_priest
 	prisoner = no
 
 	is_triggered_only = yes
@@ -599,7 +607,7 @@ character_event = {
 	id = ancrel.2016
 	hide_window = yes
 
-	has_character_flag = special_priest
+	has_character_flag = ancrel_special_priest
 	prisoner = no
 
 	is_triggered_only = yes
@@ -761,6 +769,8 @@ character_event = {
 	id = ancrel.2022
 	hide_window = yes
 
+	is_triggered_only = yes
+
 	has_character_flag = ancrel_hypatos_support
 	prisoner = no
 
@@ -789,6 +799,8 @@ character_event = {
 	id = ancrel.2023
 	hide_window = yes
 	
+	is_triggered_only = yes
+
 	immediate = {
 		liege = {
 			character_event = { id = ancrel.2024 days = 0 }
@@ -803,59 +815,52 @@ character_event = {
 	picture = 
 	border = GFX_evt_normal_frame_religion
 
+	is_triggered_only = yes
+
 	option = { # banish to a life as a monk
+		name = ancrel.2024.a
+
+		add_character_modifier = { name = acr_sided_with_church days = 1825 }
+		piet = 500
 		FROMFROM = {
-			add_trait = monk
-			remove_trait = stoic
-			clr_character_flag = special_priest
+			banish_to_monastery_effect = yes
+			clr_character_flag = ancrel_special_priest
 			clr_character_flag = ancrel_hypatos_support
+			set_character_flag = ancrel_block_philosopher
 		}
-		if = {
-			limit = {
-				d_holy_sepulchre = {
-					holder_scope = {
-						always = yes
-					}
-				}
-			}
-			d_holy_sepulchre = {
-				holder_scope = {
-					move_character = FROMFROM
-				}
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					d_holy_sepulchre = {
-						holder_scope = {
-							always = yes
-						}
-					}
-				}
-			}
-
-			random_realm_lord = {
-				limit = {
-					tier = baron
-					is_theocracy = yes
-				}
-
-				move_character = FROMFROM
-			}
-		}	
 	}
 
 	option = { # imprison
+		name = ancrel.2024.b
 
+		add_character_modifier = { name = acr_sided_with_church days = 1825 }
+		piet = 250
+		FROMFROM = {
+			imprison = ROOT
+			clr_character_flag = ancrel_special_priest
+			clr_character_flag = ancrel_hypatos_support
+			set_character_flag = ancrel_block_philosopher
+		}
 	}
 
 	option = { # confront
-
+		name = ancrel.2024.c
+		custom_tooltip = {
+			text = ancrel.2025.tt
+			hidden_tooltip = {
+				character_event = { id = ancrel.2025 days = 0 }
+			}
+		}
 	}
 
 	option = { # blow it off
+		name = ancrel.2024.d
 
+		piety = -250
+		add_character_modifier = { name = acr_shielded_heretic duration = 1825 }
+		FROMFROM = {
+			set_character_flag = ancrel_given_asylum # effectively!
+		}
 	}
 }
 
@@ -865,6 +870,18 @@ character_event = {
 	desc = ancrel.2025.desc
 	picture = 
 	border = GFX_evt_normal_frame_religion
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.2025.a
+		custom_tooltip = {
+			text = ancrel.2026.tt
+			hidden_tooltip = {
+				character_event = { id = ancrel.2026 days = 0 }
+			}
+		}
+	}
 }
 
 # philosopher confesses to secretly being a pagan (emperor)
@@ -874,50 +891,46 @@ character_event = {
 	picture = 
 	border = GFX_evt_normal_frame_religion
 
-	option = { # give the (pagan) philosopher asylum
+	is_triggered_only = yes
+
+	immediate = {
+		FROMFROMFROMFROM = {
+			religion = hellenic_pagan
+			add_trait = sympathy_christendom
+		}
+	}
+
+	option = { # force the philosopher to renounce paganism, sending him to a monastery
+		name = ancrel.2026.a
+		add_character_modifier = { name = acr_sided_with_church days = 1825 }
+		add_piety = 250
+		FROMFROMFROMFROM = {
+			banish_to_monastery_effect = yes
+			clr_character_flag = ancrel_special_priest
+			clr_character_flag = ancrel_hypatos_support
+			set_character_flag = ancrel_block_philosopher
+		}
 	}
 
 	option = { # imprison the philosopher
-		
+		name = ancrel.2026.b
+		add_character_modifier = { name = acr_sided_with_church days = 1825 }
+		piet = 125
+		FROMFROMFROMFROM = {
+			imprison = ROOT
+			clr_character_flag = ancrel_special_priest
+			clr_character_flag = ancrel_hypatos_support
+			set_character_flag = ancrel_block_philosopher
+		}
 	}
 
-	option = { # force the philosopher to renounce paganism, sending him to a monestary
-		if = {
-			limit = {
-				d_holy_sepulchre = {
-					holder_scope = {
-						always = yes
-					}
-				}
-			}
-			d_holy_sepulchre = {
-				holder_scope = {
-					move_character = PREVPREV
-				}
-			}
+	option = { # give the (pagan) philosopher asylum
+		name = ancrel.2026.c
+		piet = -500
+		add_character_modifier = { name = acr_shielded_heretic days = 1825 }
+		FROMFROMFROMFROM = {
+			set_character_flag = ancrel_given_asylum
 		}
-		if = {
-			limit = {
-				NOT = {
-					d_holy_sepulchre = {
-						holder_scope = {
-							always = yes
-						}
-					}
-				}
-			}
-
-			ROOT = {
-				random_realm_lord = {
-					limit = {
-						tier = baron
-						is_theocracy = yes
-					}
-
-					move_character = PREVPREV
-				}
-			}
-		}	
 	}
 }
 
@@ -925,6 +938,31 @@ character_event = {
 long_character_event = {
 	id = ancrel.2027
 	hide_window = yes
+
+	has_character_flag = ancrel_angry_priest
+	prisoner = no
+
+	trigger = {
+		had_character_flag = { flag = ancrel_given_asylum days = 60 }
+		NOR = {
+			has_character_flag = ancrel_propose_old_ways
+			has_character_flag = ancrel_block_philosopher
+		}
+	}
+
+	immediate = {
+		set_character_flag = ancrel_propose_old_ways
+		liege = {
+			random_vassal = {
+				limit = { is_theocracy = yes }
+				characte_event = { id = ancrel.2023 days = 0 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 20
+	}
 }
 
 # philosopher proposes a return to the old ways (emperor)
@@ -936,14 +974,12 @@ character_event = {
 }
 
 # recall a banished philosopher
-character_event = {
-	id = ancrel.2030
-	desc = ancrel.2030.desc
-	picture = 
-	border = GFX_evt_normal_frame_religion
-}
-
-# 
+#character_event = {
+#	id = ancrel.2029
+#	desc = ancrel.2029.desc
+#	picture = 
+#	border = GFX_evt_normal_frame_religion
+#} 
 
 #######################################
 #

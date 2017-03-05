@@ -19,3 +19,24 @@ clear_nile_flooding_effect = {
 	remove_province_modifier = VIET_nile_flood_overflow
 	remove_province_modifier = VIET_nile_flood_poor
 }
+
+banish_to_monastery_effect = {
+	# expand this to allow banishing to a random holy order
+	# should one exist for the (liege's?) religion
+	if = {
+		limit = { is_female = yes }
+		add_trait = nun
+	}
+	if = {
+		limit = { is_female = no }
+		add_trait = monk
+	}
+	liege = {
+		random_realm_lord = {
+			limit = { is_theocracy = yes }
+
+			move_character = PREVPREV
+		}
+	}
+}
+

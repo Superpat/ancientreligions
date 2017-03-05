@@ -93,6 +93,31 @@ ancrel_imperial_chronicle = {
 	vassal_opinion = 5
 }
 
+ancrel_platonic_curriculum = {
+	icon = 2
+
+	tech_growth_modifier = 0.10
+}
+
+acr_sided_with_church = {
+	icon = 17
+
+	christian_church_opinion = 20
+}
+
+acr_shielded_heretic = {
+	icon = 35
+
+	christian_church_opinion = -20
+}
+
+ancrel_streamlined_court = {
+	icon = 16
+
+	demense_size = 1
+	vassal_opinion = 10
+}
+
 called_hellenic_reconquest = { icon = 1 }
 
 #####################################################################
@@ -194,16 +219,4 @@ acr_terrible_performance = {
 
 	general_opinion = -10
 	monthly_character_prestige = 0.1
-}
-
-acr_sided_with_church = {
-	icon = 17
-
-	christian_church_opinion = 20
-}
-
-acr_shielded_heretic = {
-	icon = 35
-
-	christian_church_opinion = -20
 }

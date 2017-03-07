@@ -20,8 +20,8 @@ Hellenic:
   -- This company comes into existence when the entire duchy of Thessalonika is converted to Hellenism.
   -- Has 4 pure heavy infantry regiments.
  - Updated the Philosopher event chain.
- -- It is now possible to fire when the empire has 130 or fewer realm holdings, up from the previous limit of 100.
- -- More events have been added to the chain to make the Philosopher earn any support he may get from the Emperor, and to allow for better stories to unfold.
+ -- It is now possible to fire when the Empire has 130 or fewer realm holdings, up from the previous limit of 100.
+ -- More events have been added to the chain to make the Philosopher earn any support he may get from the Emperor, and to allow for a better story to unfold.
 
 
 2017-02-16 v0.38.3 "Hippolytus"

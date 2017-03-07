@@ -23,7 +23,7 @@ namespace = ancrel
 character_event = {
 	id = ancrel.2000
 	desc = ancrel.2000.desc
-	picture = GFX_evt_emissary
+	picture = GFX_evt_emissary_byzantine
 	border = GFX_event_normal_frame_religion
 
 	min_age = 16
@@ -35,9 +35,14 @@ character_event = {
 	trigger = {
 		has_dlc = "The Old Gods"
 
+		any_realm_province = {
+			title = c_byzantion
+		}
+
 		OR = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
+			has_landed_title = e_latin_empire
 		}
 
 		NOR = {
@@ -139,6 +144,8 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 
+	is_triggered_only = yes
+
 	trigger = {
 		had_character_flag = { flag = ancrel_special_priest days = 1825 }
 		NOR = {
@@ -150,17 +157,22 @@ character_event = {
 			OR = {
 				has_landed_title = e_byzantium
 				has_landed_title = e_roman_empire
+				has_landed_title = e_latin_empire
 			}
 		}
-	}
-
-	mean_time_to_happen = {
-		days = 7
 	}
 
 	immediate = {
 		set_character_flag = ancrel_request_support
 		liege = { character_event = { id = ancrel.2002 days = 0 } }
+	}
+
+	weight_multiplier = {
+		days = 7
+		modifier = {
+			factor = 5
+			had_character_flag = { flag = ancrel_special_priest days = 2000 }
+		}		
 	}
 }
 
@@ -168,7 +180,7 @@ character_event = {
 character_event = {
 	id = ancrel.2002
 	desc = ancrel.2002.desc
-	picture = GFX_evt_priests_in_forest
+	picture = GFX_evt_emissary_byzantine
 	border = GFX_event_normal_frame_religion
 
 	is_triggered_only = yes
@@ -223,6 +235,7 @@ character_event = {
 			OR = {
 				has_landed_title = e_byzantium
 				has_landed_title = e_roman_empire
+				has_landed_title = e_latin_empire
 			}
 		}
 	}
@@ -318,6 +331,7 @@ character_event = {
 			OR = {
 				has_landed_title = e_byzantium
 				has_landed_title = e_roman_empire
+				has_landed_title = e_latin_empire
 			}
 		}
 	}
@@ -343,8 +357,8 @@ character_event = {
 character_event = {
 	id = ancrel.2007
 	desc = ancrel.2007.desc
-	picture = 
-	border = GFX_evt_normal_frame_diplomacy
+	picture = GFX_evt_scientist
+	border = GFX_event_normal_frame_diplomacy
 
 	is_triggered_only = yes
 
@@ -394,8 +408,8 @@ character_event = {
 character_event = {
 	id = ancrel.2008
 	desc = ancrel.2008.desc
-	picture = 
-	border = GFX_evt_normal_frame_war
+	picture = GFX_evt_scientist
+	border = GFX_event_normal_frame_war
 
 	show_from_from = yes
 	
@@ -415,8 +429,8 @@ character_event = {
 character_event = {
 	id = ancrel.2008
 	desc = ancrel.2008.desc
-	picture = 
-	border = GFX_evt_normal_frame_economy
+	picture = GFX_evt_scientist
+	border = GFX_event_normal_frame_economy
 
 	show_from_from = yes
 
@@ -436,8 +450,8 @@ character_event = {
 character_event = {
 	id = ancrel.2009
 	desc = ancrel.2009.desc
-	picture = 
-	border = GFX_evt_normal_frame_religion
+	picture = GFX_evt_scientist
+	border = GFX_event_normal_frame_religion
 
 	show_from_from = yes
 
@@ -472,6 +486,7 @@ character_event = {
 			OR = {
 				has_landed_title = e_byzantium
 				has_landed_title = e_roman_empire
+				has_landed_title = e_latin_empire
 			}
 			NOT = {
 				has_character_modifier = {
@@ -492,13 +507,15 @@ character_event = {
 character_event = {
 	id = ancrel.2011
 	desc = ancrel.2011.desc
-	picture = 
-	border = GFX_evt_normal_frame_diplomacy
+	picture = GFX_evt_library
+	border = GFX_event_normal_frame_diplomacy
+
+	is_triggered_only = yes
 
 	option = { # authorize the chronicle
 		name = ancrel.2011.a
 		scaled_wealth = 0.1
-		character_event = { ancrel.2012 days = 90 tooltip = ancrel.2012.tooltip }
+		character_event = { id = ancrel.2012 days = 90 tooltip = ancrel.2012.tt }
 		FROM = {
 			set_character_flag = do_not_disturb
 			set_character_flag = ancrel_chronicle
@@ -510,9 +527,11 @@ character_event = {
 character_event = {
 	id = ancrel.2012
 	desc = ancrel.2012.desc
-	picture = 
-	border = GFX_evt_normal_frame_diplomacy
+	picture = GFX_evt_library
+	border = GFX_event_normal_frame_diplomacy
 	show_from_from = yes
+
+	is_triggered_only = yes
 
 	option = {
 		name = ancrel.2012.a
@@ -543,6 +562,7 @@ character_event = {
 			OR = {
 				has_landed_title = e_byzantium
 				has_landed_title = e_roman_empire
+				has_landed_title = e_latin_empire
 			}
 			NOT = {
 				has_character_modifier = {
@@ -554,7 +574,7 @@ character_event = {
 
 	immediate = {
 		liege = {
-			character_event = { id = ancrel.2014 }
+			character_event = { id = ancrel.2014 days = 0 }
 		}
 	}
 }
@@ -563,8 +583,8 @@ character_event = {
 character_event = {
 	id = ancrel.2014
 	desc = ancrel.2014.desc
-	picture = 
-	border = GFX_evt_normal_frame_economy
+	picture = GFX_evt_courtiers_talking
+	border = GFX_event_normal_frame_economy
 
 	is_triggered_only = yes
 
@@ -587,8 +607,8 @@ character_event = {
 character_event = {
 	id = ancrel.2015
 	desc = ancrel.2015.desc
-	picture = 
-	border = GFX_evt_normal_frame_economy
+	picture = GFX_evt_council
+	border = GFX_event_normal_frame_economy
 	show_from_from = yes
 
 	is_triggered_only = yes
@@ -621,6 +641,7 @@ character_event = {
 			OR = {
 				has_landed_title = e_byzantium
 				has_landed_title = e_roman_empire
+				has_landed_title = e_latin_empire
 			}
 			num_of_rivals = 1
 		}
@@ -664,8 +685,8 @@ character_event = {
 character_event = {
 	id = ancrel.2018
 	desc = ancrel.2018.desc
-	picture = 
-	border = GFX_evt_normal_frame_diplomacy
+	picture = GFX_evt_courtiers_talking
+	border = GFX_event_normal_frame_diplomacy
 	show_from_from = yes
 
 	is_triggered_only = yes
@@ -705,15 +726,15 @@ character_event = {
 character_event = {
 	id = ancrel.2019
 	desc = ancrel.2019.desc
-	picture = 
-	border = GFX_evt_normal_frame_diplomacy
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_diplomacy
 
 	is_triggered_only = yes
 
 	option = { # listen to FROM's words and end the rivalry
 		name = ancrel.2019.a
 		custom_tooltip = {
-			text = ancrel.2020.tt
+			text = ancrel.2019.tt
 			hidden_tooltip = {
 				FROM = {
 					character_event = { id = ancrel.2020 days = 0 }
@@ -725,7 +746,7 @@ character_event = {
 	option = { # PEACE IS FOR SISSIES!
 		name = ancrel.2019.b
 		custom_tooltip = {
-			text = ancrel.2021.tt
+			text = ancrel.2019.tt
 			hidden_tooltip = {
 				FROM = {
 					character_event = { id = ancrel.2021 days = 0 }
@@ -739,8 +760,8 @@ character_event = {
 character_event = {
 	id = ancrel.2020
 	desc = ancrel.2020.desc
-	picture = 
-	border = GFX_evt_normal_frame_diplomacy
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_diplomacy
 
 	is_triggered_only = yes
 
@@ -750,12 +771,13 @@ character_event = {
 		remove_rival = FROM
 	}
 }
+
 # rival rejects overture of peace! (emperor)
 character_event = {
 	id = ancrel.2021
 	desc = ancrel.2021.desc
-	picture = 
-	border = GFX_evt_normal_frame_diplomacy
+	picture = GFX_evt_rival_rulers
+	border = GFX_event_normal_frame_diplomacy
 
 	is_triggered_only = yes
 
@@ -781,6 +803,18 @@ character_event = {
 			has_character_flag = ancrel_angry_priest
 			has_character_flag = ancrel_block_philosopher
 		}
+		liege = {
+			NOR = { 
+				religion = hellenic_pagan
+				religion = promethean_pagan
+				religion = titan_pagan
+			}
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_roman_empire
+				has_landed_title = e_latin_empire
+			}
+		}
 	}
 
 	immediate = {
@@ -788,7 +822,7 @@ character_event = {
 		liege = {
 			random_vassal = {
 				limit = { is_theocracy = yes }
-				characte_event = { id = ancrel.2023 days = 0 }
+				character_event = { id = ancrel.2023 days = 0 }
 			}
 		}
 	}
@@ -812,8 +846,8 @@ character_event = {
 character_event = {
 	id = ancrel.2024
 	desc = ancrel.2024.desc
-	picture = 
-	border = GFX_evt_normal_frame_religion
+	picture = GFX_evt_hagia_sophia
+	border = GFX_event_normal_frame_religion
 
 	is_triggered_only = yes
 
@@ -821,7 +855,7 @@ character_event = {
 		name = ancrel.2024.a
 
 		add_character_modifier = { name = acr_sided_with_church days = 1825 }
-		piet = 500
+		piety = 500
 		FROMFROM = {
 			banish_to_monastery_effect = yes
 			clr_character_flag = ancrel_special_priest
@@ -834,7 +868,7 @@ character_event = {
 		name = ancrel.2024.b
 
 		add_character_modifier = { name = acr_sided_with_church days = 1825 }
-		piet = 250
+		piety = 250
 		FROMFROM = {
 			imprison = ROOT
 			clr_character_flag = ancrel_special_priest
@@ -859,7 +893,7 @@ character_event = {
 		piety = -250
 		add_character_modifier = { name = acr_shielded_heretic duration = 1825 }
 		FROMFROM = {
-			set_character_flag = ancrel_given_asylum # effectively!
+			set_character_flag = ancrel_ignored_concerns
 		}
 	}
 }
@@ -868,8 +902,8 @@ character_event = {
 character_event = {
 	id = ancrel.2025
 	desc = ancrel.2025.desc
-	picture = 
-	border = GFX_evt_normal_frame_religion
+	picture = GFX_evt_heretic
+	border = GFX_event_normal_frame_religion
 
 	is_triggered_only = yes
 
@@ -885,20 +919,13 @@ character_event = {
 }
 
 # philosopher confesses to secretly being a pagan (emperor)
-character_event = {
+long_character_event = {
 	id = ancrel.2026
 	desc = ancrel.2026.desc
-	picture = 
-	border = GFX_evt_normal_frame_religion
+	picture = GFX_evt_heretic
+	border = GFX_event_long_frame_religion
 
 	is_triggered_only = yes
-
-	immediate = {
-		FROMFROMFROMFROM = {
-			religion = hellenic_pagan
-			add_trait = sympathy_christendom
-		}
-	}
 
 	option = { # force the philosopher to renounce paganism, sending him to a monastery
 		name = ancrel.2026.a
@@ -915,7 +942,7 @@ character_event = {
 	option = { # imprison the philosopher
 		name = ancrel.2026.b
 		add_character_modifier = { name = acr_sided_with_church days = 1825 }
-		piet = 125
+		piety = 125
 		FROMFROMFROMFROM = {
 			imprison = ROOT
 			clr_character_flag = ancrel_special_priest
@@ -926,16 +953,18 @@ character_event = {
 
 	option = { # give the (pagan) philosopher asylum
 		name = ancrel.2026.c
-		piet = -500
+		piety = -500
 		add_character_modifier = { name = acr_shielded_heretic days = 1825 }
+		add_trait = sympathy_pagans
 		FROMFROMFROMFROM = {
 			set_character_flag = ancrel_given_asylum
+			#secret pagan
 		}
 	}
 }
 
 # philosopher proposes a return to the old ways (philosopher)
-long_character_event = {
+character_event = {
 	id = ancrel.2027
 	hide_window = yes
 
@@ -943,20 +972,33 @@ long_character_event = {
 	prisoner = no
 
 	trigger = {
-		had_character_flag = { flag = ancrel_given_asylum days = 60 }
+		OR = {
+			had_character_flag = { flag = ancrel_given_asylum days = 60
+			had_character_flag = { flag = ancrel_ignored_concerns days = 60
+		}
 		NOR = {
 			has_character_flag = ancrel_propose_old_ways
 			has_character_flag = ancrel_block_philosopher
+			has_character_flag = do_not_disturb
+		}
+		liege = {
+			NOR = { 
+				religion = hellenic_pagan
+				religion = promethean_pagan
+				religion = titan_pagan
+			}
+			OR = {
+				has_landed_title = e_byzantium
+				has_landed_title = e_roman_empire
+				has_landed_title = e_latin_empire
+			}
 		}
 	}
 
 	immediate = {
 		set_character_flag = ancrel_propose_old_ways
 		liege = {
-			random_vassal = {
-				limit = { is_theocracy = yes }
-				characte_event = { id = ancrel.2023 days = 0 }
-			}
+			character_event = { id = ancrel.2028 days = 0 }
 		}
 	}
 
@@ -966,20 +1008,53 @@ long_character_event = {
 }
 
 # philosopher proposes a return to the old ways (emperor)
-character_event = {
+long_character_event = {
 	id = ancrel.2028
-	desc = ancrel.2029.desc
-	picture = 
-	border = GFX_evt_normal_frame_religion
+	desc = ancrel.2028.desc
+	picture = GFX_evt_throne_room_byzantine
+	border = GFX_event_long_frame_religion
+
+	is_triggered_only = yes
+
+	option = { # take him up on the offer
+		name = ancrel.2028.a
+
+		religion = hellenic_pagan
+		add_trait = sympathy_christendom
+	}
+
+	option = { # i tolerate your faith, but i cannot follow it
+		trigger = {
+			FROMFROM = {
+				has_character_flag = ancrel_given_asylum
+			}
+		}
+		name = ancrel.2028.b
+	}
+
+	option = { # agree, but go about it stealthily
+		name = ancrel.2028.c
+		tooltip_info = intrigue
+		trigger = {
+			#has_dlc = "Monks & Mystics"
+			intrigue = 10
+		}
+
+		# convert stealthily, requires 2.7
+		religion = hellenic_pagan
+	}
+
+	option = { # imprison him, if you ignored the priests before
+		trigger = {
+			FROMFROM = {
+				has_character_flag = ancrel_ignored_concerns
+			}
+		}
+		name = ancrel.2028.d
+	}
 }
 
-# recall a banished philosopher
-#character_event = {
-#	id = ancrel.2029
-#	desc = ancrel.2029.desc
-#	picture = 
-#	border = GFX_evt_normal_frame_religion
-#} 
+# TODO: recall a banished philosopher
 
 #######################################
 #
@@ -998,7 +1073,7 @@ character_event = {
 
 	trigger = {
 		religion = catholic
-		controls_religion = yes # papa
+		controls_religion = yes # papas catholicos
 		489 = {
 			religion = hellenic_pagan
 		}

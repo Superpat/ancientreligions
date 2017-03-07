@@ -114,7 +114,7 @@ acr_shielded_heretic = {
 ancrel_streamlined_court = {
 	icon = 16
 
-	demense_size = 1
+	demesne_size = 1
 	vassal_opinion = 10
 }
 

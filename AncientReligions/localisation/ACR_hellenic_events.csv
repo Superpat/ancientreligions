@@ -32,45 +32,46 @@ ancrel.2007.b;I'm sorry, I simply can't spare the coin.;;;;;;;;;;;;;x
 ancrel.2008.desc;"As I suspected, the research has born fruit, my [Root.GetTitle]." [FromFrom.GetFirstNameWithNick] stands before your throne with bundles of schematics and formulae. "These results will improve our military measurably.";;;;;;;;;;;;;x
 ancrel.2009.desc;"The research did not go where I expected, but I think the results will speak for themselves." [FromFrom.GetFirstNameWithNick] stands beside your desk with rolled up blueprints and maps, and several small crates of what appear to be trade goods. "The Economy can be improved somewhat, with the careful application of these results.";;;;;;;;;;;;;x
 ancrel.2010.desc;[FromFrom.GetFirstNameWithNick] stands before a stack of papers and notebooks in your council chamber, "I've compiled essays, translations, and several interesting interpretations of Imperial Law that, I believe, could be applied to great effect within the empire.";;;;;;;;;;;;;x
-ancrel.2011.desc;You are discussing politics with [From.GetBestName] over dinner when he explains the meaning of Plato's Allegory of the Cave, "In the end, we cannot be certain that what we see is real. So, if you wish to sway your vassals opinions, you must take control of the truth." He puts down his fork and thinks a moment. "If you can provide me with a small sum of coin, I can produce and distribute an official Imperial Chronicle, which will... emphasize aspects of recent history such that you're rule is seen in the positive light it deserves.;;;;;;;;;;;;;x
-ancrel.2011.a;Tell me more about Plato's wisdom...;;;;;;;;;;;;;x
-ancrel.2012.tt;[From.GetFirstNameWithNick] begins work on the chronicle.;;;;;;;;;;;;;x
-ancrel.2012.desc;[FromFrom.GetFirstNameWithNick] has completed his Imperial Chronicle, and it's been distributed throughout the Empire. You can already see the change in your court and vassals. Some hail you as the greatest emperor in a century; even your detractors are saying you could be a worse emperor.;;;;;;;;;;;;;x
-ancrel.2012.a;Truth is muteable...;;;;;;;;;;;;;x
-ancrel.2014.desc;[From.GetTitledFirstName] is advising you on an issue at court when he becomes quiet. After a pensive moment he speaks, "My [Root.GetTitle], I believe the root of this issue lies with the complexity in the rules of the court. The beaurocracy has become quite tangled. If you give me some time, I can come up with a revised structure and set of codes to streamline the court. It will require political capital to inact, however.";;;;;;;;;;;;;x
-ancrel.2014.a;If it frees me from these petty issues, do it!;;;;;;;;;;;;;x
-ancrel.2014.b;I'll endure these headaches and save my influence for greater problems.;;;;;;;;;;;;;x
-ancrel.2015.tt;[From.GetFirstName] begins his work.;;;;;;;;;;;;;x
-ancrel.2015.desc;After a grueling 3 months, with much complaining from the clerks and palace officials, [FromFrom.GetBestName] has completed the restructuring of the beaurocracy. Although far from working like a well-oiled machine, the palace is running much more smoothly. You've found management of the Imperial Estates easier; so much so that you could consider adding another province the estates...;;;;;;;;;;;;;x
-ancrel.2015.a;Perhaps one with islands, where the beaurocrats can't reach me...;;;;;;;;;;;;;x
-ancrel.2018.desc;You are pacing through the palace thinking of how to foil your rival, [From.GetTitledFirstName], when you nearly collide with [FromFrom.GetFirstNameWithNick]. "[From.GetTitle], might I offer some of Epicurious' wisdom on friendships? I think it will show the futility of this rivalry. Perhaps even [From.GetTitledFirstName] will find it convincing.";;;;;;;;;;;;;x
-ancrel.2018.a;Anything to end this feud my friend.;;;;;;;;;;;;;x
-ancrel.2018.b;I would rather die than make amends with that fool!;;;;;;;;;;;;;x
-ancrel.2019.tt;You listen to [FromFrom.GetFirstName] and go to [From.GetTitledFirstName].;;;;;;;;;;;;;x
-ancrel.2019.desc;You are reviewing troop readiness reports from outer settlements when the [From.GetTitle] [From.GetHerHim]self walks into your court. [From.GetSheHe] seeks to end your mutual rivalry, and has some sagely words about friendship that imply that this feud is harmful to your souls.\n\nHow do you respond?;;;;;;;;;;;;;x
-ancrel.2019.a;Yes, perhaps it is time to reconcile.;;;;;;;;;;;;;x
-ancrel.2019.b;I will make peace with you when you are dead!;;;;;;;;;;;;;x
-ancrel.2019.tt;The [From.GetTitle] hears your reply;;;;;;;;;;;;;x
-ancrel.2020.desc;The Hypatos' advice worked! [From.GetTitledFirstName] has seen the wisdom in the words and has agreed to end your feud!;;;;;;;;;;;;;x
-ancrel.2021.desc;[From.GetTitledFirstName] has proven unwilling to listen to reason, and has rejected your overture of peace. "We will have peace when one of us dies, not before!";;;;;;;;;;;;;x
-ancrel.2024.desc;[From.GetTitledFirstName] has come at the head of a delegation of clergy. "This Hypatos Philosophon of yours has spread [FromFrom.GetHerHis] heretical teachings long enough! [FromFrom.GetSheHe] are corrupting the soul of the empire with paganry!" The clergy are demanding that you make some judgement.\n\nWhat do you do?;;;;;;;;;;;;;x
-ancrel.2024.a;I will leave [FromFrom.GetFirstName] to you.;;;;;;;;;;;;;x
-ancrel.2024.b;[FromFrom.GetFirstName] will face Imperial justice.;;;;;;;;;;;;;x
-ancrel.2024.c;I will discuss this with [FromFrom.GetFirstName] myself.;;;;;;;;;;;;;x
-ancrel.2024.d;[FromFrom.GetFirstName] is no heretic, you busy bodies!;;;;;;;;;;;;;x
-ancrel.2025.tt;You speak with [FromFrom.GetFirstName] about [From.GetTitledFirstName]'s charges.;;;;;;;;;;;;;x
-ancrel.2025.desc;You enter [FromFromFrom.GetTitledFirstName]'s study in the palace and tell [FromFromFrom.GetHerHim] about the charges. [FromFromFrom.GetSheHe] pauses briefly, "I feel I have served you well these years. Well enough that I can finally be open with you...
-ancrel.2025.a;What are you saying, [FromFromFrom.GetFirstName]?;;;;;;;;;;;;;x
-ancrel.2026.tt;[FromFromFrom.GetFirstName] confides in you...;;;;;;;;;;;;;x
-ancrel.2026.desc;"I am a Hellene, through and through. Every night I pray to the gods of Greece for inspiration, so I might better serve you, my [Root.GetTitle]." Seemingly emboldened, [FromFromFromFrom.GetFirstName]'s words come faster. "I prayed to Hermes so I might be clever; to Athena so that I could give you honeyed words for your vassals and rivals; to Zeus so that I might lend you wisdom. My lord, it is my pagan faith that allows me to serve you so well.";;;;;;;;;;;;;x
-ancrel.2026.a;You have lost your way, [FromFromFromFrom.GetFirstName], but you can find it again.;;;;;;;;;;;;;x
-ancrel.2026.b;Liar! Serpent! Guards, seize this pagan!;;;;;;;;;;;;;x
-ancrel.2026.c;You have served me well. I will protect you, my friend.;;;;;;;;;;;;;x
-ancrel.2028.desc;[From.GetFirstNameWithNick] has come to your office for a private discussion. "Once, Rome ruled the world. Now we are a shadow of that Empire. Nay, a sliver of a shadow. Since Constantine we have been shattered, ever shrinking. What changed? Our gods. Our greatest threat, the Saracens, is a twisted form of the faith we have espoused for centuries, a dark reflection of ourselves. I say they are punishment for abandoning the gods of our ancestors. Now, in our darkest hour, may be our last chance to save our people and return to the old ways!";;;;;;;;;;;;;x
-ancrel.2028.a;Your words ring true, old friend. Now is the time...;;;;;;;;;;;;;x
-ancrel.2028.b;I tolerate your faith, my friend, but I cannot follow it.;;;;;;;;;;;;;x
-ancrel.2028.c;You are right, yet again. However, we should proceed discretely...;;;;;;;;;;;;;x
-ancrel.2028.d;Heathen! Be gone from my sight!;;;;;;;;;;;;;x
+ancrel.2012.desc;You are discussing politics with [From.GetBestName] over dinner when he explains the meaning of Plato's Allegory of the Cave, "In the end, we cannot be certain that what we see is real. So, if you wish to sway your vassals opinions, you must take control of the truth." He puts down his fork and thinks a moment. "If you can provide me with a small sum of coin, I can produce and distribute an official Imperial Chronicle, which will... emphasize aspects of recent history such that you're rule is seen in the positive light it deserves.;;;;;;;;;;;;;x
+ancrel.2012.a;Tell me more about Plato's wisdom...;;;;;;;;;;;;;x
+ancrel.2013.tt;[From.GetFirstNameWithNick] begins work on the chronicle.;;;;;;;;;;;;;x
+ancrel.2013.desc;[FromFrom.GetFirstNameWithNick] has completed his Imperial Chronicle, and it's been distributed throughout the Empire. You can already see the change in your court and vassals. Some hail you as the greatest emperor in a century; even your detractors are saying you could be a worse emperor.;;;;;;;;;;;;;x
+ancrel.2013.a;Truth is muteable...;;;;;;;;;;;;;x
+ancrel.2015.desc;[From.GetTitledFirstName] is advising you on an issue at court when he becomes quiet. After a pensive moment he speaks, "My [Root.GetTitle], I believe the root of this issue lies with the complexity in the rules of the court. The beaurocracy has become quite tangled. If you give me some time, I can come up with a revised structure and set of codes to streamline the court. It will require political capital to inact, however.";;;;;;;;;;;;;x
+ancrel.2015.a;If it frees me from these petty issues, do it!;;;;;;;;;;;;;x
+ancrel.2015.b;I'll endure these headaches and save my influence for greater problems.;;;;;;;;;;;;;x
+ancrel.2016.tt;[From.GetFirstName] begins his work.;;;;;;;;;;;;;x
+ancrel.2016.desc;After a grueling 3 months, with much complaining from the clerks and palace officials, [FromFrom.GetBestName] has completed the restructuring of the beaurocracy. Although far from working like a well-oiled machine, the palace is running much more smoothly. You've found management of the Imperial Estates easier; so much so that you could consider adding another province the estates...;;;;;;;;;;;;;x
+ancrel.2016.a;Perhaps one with islands, where the beaurocrats can't reach me...;;;;;;;;;;;;;x
+ancrel.2019.desc;You are pacing through the palace thinking of how to foil your rival, [From.GetTitledFirstName], when you nearly collide with [FromFrom.GetFirstNameWithNick]. "[From.GetTitle], might I offer some of Epicurious' wisdom on friendships? I think it will show the futility of this rivalry. Perhaps even [From.GetTitledFirstName] will find it convincing.";;;;;;;;;;;;;x
+ancrel.2019.a;Anything to end this feud my friend.;;;;;;;;;;;;;x
+ancrel.2019.b;I would rather die than make amends with that fool!;;;;;;;;;;;;;x
+ancrel.2020.tt;You listen to [FromFrom.GetFirstName] and go to [From.GetTitledFirstName].;;;;;;;;;;;;;x
+ancrel.2020.desc;You are reviewing troop readiness reports from outer settlements when the [From.GetTitle] [From.GetHerHim]self walks into your court. [From.GetSheHe] seeks to end your mutual rivalry, and has some sagely words about friendship that imply that this feud is harmful to your souls.\n\nHow do you respond?;;;;;;;;;;;;;x
+ancrel.2020.a;Yes, perhaps it is time to reconcile.;;;;;;;;;;;;;x
+ancrel.2020.b;I will make peace with you when you are dead!;;;;;;;;;;;;;x
+ancrel.2021.tt;The [From.GetTitle] hears your reply.;;;;;;;;;;;;;x
+ancrel.2021.desc;The Hypatos' advice worked! [From.GetTitledFirstName] has seen the wisdom in the words and has agreed to end your feud!;;;;;;;;;;;;;x
+ancrel.2022.tt;The [From.GetTitle] hears your insult.;;;;;;;;;;;;;x
+ancrel.2022.desc;[From.GetTitledFirstName] has proven unwilling to listen to reason, and has rejected your overture of peace. "We will have peace when one of us dies, not before!";;;;;;;;;;;;;x
+ancrel.2025.desc;[From.GetTitledFirstName] has come at the head of a delegation of clergy. "This Hypatos Philosophon of yours has spread [FromFrom.GetHerHis] heretical teachings long enough! [FromFrom.GetSheHe] are corrupting the soul of the empire with paganry!" The clergy are demanding that you make some judgement.\n\nWhat do you do?;;;;;;;;;;;;;x
+ancrel.2025.a;I will leave [FromFrom.GetFirstName] to you.;;;;;;;;;;;;;x
+ancrel.2025.b;[FromFrom.GetFirstName] will face Imperial justice.;;;;;;;;;;;;;x
+ancrel.2025.c;I will discuss this with [FromFrom.GetFirstName] myself.;;;;;;;;;;;;;x
+ancrel.2025.d;[FromFrom.GetFirstName] is no heretic, you busy bodies!;;;;;;;;;;;;;x
+ancrel.2026.tt;You speak with [FromFrom.GetFirstName] about [From.GetTitledFirstName]'s charges.;;;;;;;;;;;;;x
+ancrel.2026.desc;You enter [FromFromFrom.GetTitledFirstName]'s study in the palace and tell [FromFromFrom.GetHerHim] about the charges. [FromFromFrom.GetSheHe] pauses briefly, "I feel I have served you well these years. Well enough that I can finally be open with you...;;;;;;;;;;;;;x
+ancrel.2026.a;What are you saying, [FromFromFrom.GetFirstName]?;;;;;;;;;;;;;x
+ancrel.2027.tt;[FromFromFrom.GetFirstName] confides in you...;;;;;;;;;;;;;x
+ancrel.2027.desc;"I am a Hellene, through and through. Every night I pray to the gods of Greece for inspiration, so I might better serve you, my [Root.GetTitle]." Seemingly emboldened, [FromFromFromFrom.GetFirstName]'s words come faster. "I prayed to Hermes so I might be clever; to Athena so that I could give you honeyed words for your vassals and rivals; to Zeus so that I might lend you wisdom. My lord, it is my pagan faith that allows me to serve you so well.";;;;;;;;;;;;;x
+ancrel.2027.a;You have lost your way, [FromFromFromFrom.GetFirstName], but you can find it again.;;;;;;;;;;;;;x
+ancrel.2027.b;Liar! Serpent! Guards, seize this pagan!;;;;;;;;;;;;;x
+ancrel.2027.c;You have served me well. I will protect you, my friend.;;;;;;;;;;;;;x
+ancrel.2029.desc;[From.GetFirstNameWithNick] has come to your office for a private discussion. "Once, Rome ruled the world. Now we are a shadow of that Empire. Nay, a sliver of a shadow. Since Constantine we have been shattered, ever shrinking. What changed? Our gods. Our greatest threat, the Saracens, is a twisted form of the faith we have espoused for centuries, a dark reflection of ourselves. I say they are punishment for abandoning the gods of our ancestors. Now, in our darkest hour, may be our last chance to save our people and return to the old ways!";;;;;;;;;;;;;x
+ancrel.2029.a;Your words ring true, old friend. Now is the time...;;;;;;;;;;;;;x
+ancrel.2029.b;I tolerate your faith, my friend, but I cannot follow it.;;;;;;;;;;;;;x
+ancrel.2029.c;You are right, yet again. However, we should proceed discretely...;;;;;;;;;;;;;x
+ancrel.2029.d;Heathen! Be gone from my sight!;;;;;;;;;;;;;x
 ancrel.2036.title;The Sacred Band Founded;La Bande Sacrée Fondée;The Sacred Band Founded;;The Sacred Band Founded;;;;;;;;;x
 ancrel.2036.desc;We have founded the Sacred Band, a closed brotherhood of soldiers whose iron discipline shall defend Hellenic believers everywhere.;Nous avons fondé la Bande Sacrée, une fraternité de soldats triés sur le volet dont la discipline de fer viendra à la défense des disciples helléniques où qu'ils soient.;We have founded the Sacred Band, a closed brotherhood of soldiers whose iron discipline shall defend Hellenic believers everywhere.;;We have founded the Sacred Band, a closed brotherhood of soldiers whose iron discipline shall defend Hellenic believers everywhere.;;;;;;;;;x
 ancrel.2036.a;Excellent...;;;;;;;;;;;;;x

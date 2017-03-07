@@ -14,7 +14,7 @@ on_yearly_pulse = {
 		ancrel.1000 # Celtic King is maimed
 		ancrel.2001 # Philosopher asks to be Hypatos
 		ancrel.2003 # Priest angry about Platonic Curriculum
-		ancrel.2022 # Priests are SUPER PISSED now
+		ancrel.2023 # Priests are SUPER PISSED now
 
 		#I Can't Believe My Virgin Goddess of the Hunt is This Cute Event Blob (a.k.a Artemis Event Blob)		
 		ancrel.2566 # Second time hunting with Artemis
@@ -24,9 +24,9 @@ on_yearly_pulse = {
 		#The Philosopher
 		100 = ancrel.2000 # Philosopher approaches the Emperor
 		200 = ancrel.2006 # Research Project
-		200 = ancrel.2010 # Imperial Chronicle
-		200 = ancrel.2013 # Streamline the Beaurocracy
-		200 = ancrel.2016 # Sage advice about a rivalry
+		200 = ancrel.2011 # Imperial Chronicle
+		200 = ancrel.2014 # Streamline the Beaurocracy
+		200 = ancrel.2017 # Sage advice about a rivalry
 
 		#Celtic Flavor
 		100 = ancrel.1260 # fennid arrested by marshal, catholics only (why?)

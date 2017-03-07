@@ -87,9 +87,8 @@ decisions = {
 			prestige = -300
 			wealth = -300
 			activate_title = { title = d_sacred_band status = yes }
-			character_event = { id = ancrel.3036 days = 0 }
 			hidden_tooltip = {
-				narrative_event = { id = ancrel.2026 }
+				narrative_event = { id = ancrel.2036 }
 				create_character = {
 					random_traits = yes
 					religion = ROOT

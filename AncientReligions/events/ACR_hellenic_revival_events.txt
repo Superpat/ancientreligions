@@ -92,10 +92,8 @@ character_event = {
 	option = { # allow the philosopher to enter the court
 		name = ancrel.2000.a
 		custom_tooltip = {
-			text = ancrel.2000.a.tt
 			create_character = {
 				random_traits = no
-				name = "Michael"
 				dynasty = none
 				religion = ROOT
 				culture = greek
@@ -123,8 +121,9 @@ character_event = {
 				opinion = {
 					modifier = opinion_patron
 					who = ROOT
+					years = 20
 				}
-				give_nickname = nick_the_stammerer
+				give_nickname = nick_the_stammerer_greek
 				set_character_flag = ancrel_special_priest
 			}
 		}
@@ -132,7 +131,7 @@ character_event = {
 
 	option = { # deny the request
 		name = ancrel.2000.b
-		custom_tooltip = { text = ancrel.2000.b.tt }
+		custom_tooltip = { text = ancrel.2000.tt }
 	}
 }
 
@@ -195,7 +194,7 @@ character_event = {
 			opinion = {
 				modifier = ancrel_honored_me
 				who = ROOT
-				months = 60
+				years = 5
 			}
 			set_character_flag = ancrel_hypatos
 		}
@@ -208,7 +207,7 @@ character_event = {
 			opinion = {
 				modifier = ancrel_dissapointed
 				who = ROOT
-				months = 60
+				years = 5
 			}
 
 			set_character_flag = ancrel_block_philosopher
@@ -365,7 +364,7 @@ character_event = {
 
 	option = { # support the research project
 		name = ancrel.2007.a
-		scaled_wealth = -0.2
+		scaled_wealth = -0.05
 		FROM = {
 			set_character_flag = ancrel_research_project
 			set_character_flag = do_not_disturb
@@ -647,7 +646,9 @@ character_event = {
 	immediate = {
 		set_character_flag = ancrel_sage_advice
 		liege = {
-			character_event = { id = ancrel.2018 }
+			random_rival = {
+				character_event = { id = ancrel.2018 }
+			}
 		}
 	}
 
@@ -704,6 +705,7 @@ character_event = {
 			opinion = {
 				modifier = ancrel_pleased
 				who = ROOT
+				years = 1
 			}
 		}
 	}
@@ -714,6 +716,7 @@ character_event = {
 			opinion = {
 				modifier = ancrel_dissapointed
 				who = ROOT
+				years = 1
 			}
 		}
 	}
@@ -1018,6 +1021,10 @@ long_character_event = {
 
 		religion = hellenic_pagan
 		add_trait = sympathy_christendom
+		FROMFROM = {
+			religion = hellenic_pagan
+			add_trait = sympathy_christendom
+		}
 	}
 
 	option = { # i tolerate your faith, but i cannot follow it

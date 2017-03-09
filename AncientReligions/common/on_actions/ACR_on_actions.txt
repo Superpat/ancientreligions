@@ -22,11 +22,11 @@ on_yearly_pulse = {
 	
 	random_events = {
 		#The Philosopher
-		100 = ancrel.2000 # Philosopher approaches the Emperor
-		200 = ancrel.2006 # Research Project
-		200 = ancrel.2011 # Imperial Chronicle
-		200 = ancrel.2014 # Streamline the Beaurocracy
-		200 = ancrel.2017 # Sage advice about a rivalry
+		150 = ancrel.2000 # Philosopher approaches the Emperor
+		300 = ancrel.2006 # Research Project
+		300 = ancrel.2011 # Imperial Chronicle
+		300 = ancrel.2014 # Streamline the Beaurocracy
+		300 = ancrel.2017 # Sage advice about a rivalry
 
 		#Celtic Flavor
 		100 = ancrel.1260 # fennid arrested by marshal, catholics only (why?)

@@ -672,7 +672,7 @@ character_event = {
 		prestige = 100
 
 		job_spiritual = {
-			opinion = { modifier = ancrel_dissapointed who = ROOT }
+			opinion = { modifier = ancrel_dissapointed who = ROOT years = 2}
 		}
 
  		hidden_tooltip = { # inform the priest
@@ -723,7 +723,7 @@ character_event = {
 		job_spiritual = {
 			prestige = 100
 			save_event_target_as = festival_prometheus
-			opinion = { modifier = ancrel_honored_me who = ROOT }
+			opinion = { modifier = ancrel_honored_me who = ROOT years = 2 }
 		}
 
 		hidden_tooltip = { #inform the priest
@@ -778,11 +778,11 @@ character_event = {
 
 			prestige = 100
 			save_event_target_as = festival_prometheus
-			opinion = { modifier = ancrel_honored_me who = ROOT }
+			opinion = { modifier = ancrel_honored_me who = ROOT years = 2 }
 		}
 
 		job_spiritual = {
-			opinion = { modifier = ancrel_dissapointed who = ROOT }
+			opinion = { modifier = ancrel_dissapointed who = ROOT years = 2 }
 		}
 
  		hidden_tooltip = { # inform the characters
@@ -830,11 +830,11 @@ character_event = {
 			}
 			prestige = 100
 			save_event_target_as = festival_prometheus
-			opinion = { modifier = ancrel_honored_me who = ROOT }
+			opinion = { modifier = ancrel_honored_me who = ROOT years = 2 }
 		}
 
 		job_spiritual = {
-			opinion = { modifier = ancrel_dissapointed who = ROOT }
+			opinion = { modifier = ancrel_dissapointed who = ROOT years = 2 }
 		}
 
  		hidden_tooltip = { # inform the characters
@@ -942,7 +942,7 @@ character_event = {
 		job_marshal = {
 			prestige = 100
 			save_event_target_as = festival_heracles
-			opinion = { modifier = ancrel_honored_me who = ROOT }
+			opinion = { modifier = ancrel_honored_me who = ROOT years = 2 }
 		}
 
 		hidden_tooltip = { # inform the marshal
@@ -1004,11 +1004,11 @@ character_event = {
 
 			prestige = 100
 			save_event_target_as = festival_heracles
-			opinion = { modifier = ancrel_honored_me who = ROOT }
+			opinion = { modifier = ancrel_honored_me who = ROOT years = 2 }
 		}
 
 		job_marshal = {
-			opinion = { modifier = ancrel_dissapointed who = ROOT }
+			opinion = { modifier = ancrel_dissapointed who = ROOT years = 2 }
 		}
 
 		hidden_tooltip = {
@@ -1065,10 +1065,10 @@ character_event = {
 			}
 			save_event_target_as = festival_heracles
 			prestige = 100
-			opinion = { modifier = ancrel_honored_me who = ROOT }
+			opinion = { modifier = ancrel_honored_me who = ROOT years = 2 }
 		}
 		job_marshal = {
-			opinion = { modifier = ancrel_dissapointed who = ROOT }
+			opinion = { modifier = ancrel_dissapointed who = ROOT years = 2 }
 		}
 
 		hidden_tooltip = {
@@ -2093,7 +2093,7 @@ character_event = {
 			text = ancrel.remove_firedancers
 			set_character_flag = ancrel_remove_firedancers
 		}
-		reverse_opinion = { modifier = ancrel_pleased who = FROM }
+		reverse_opinion = { modifier = ancrel_pleased who = FROM years = 2 }
 		random = {
 			chance = 20
 			add_trait = arbitrary
@@ -2174,7 +2174,7 @@ character_event = {
 	option = {
 		# it was just an accident
 		name = ancrel.3466.c
-		reverse_opinion = { modifier = ancrel_dissapointed who = FROM }
+		reverse_opinion = { modifier = ancrel_dissapointed who = FROM years = 2 }
 		random = {
 			chance = 20
 			add_trait = kind
@@ -2221,7 +2221,7 @@ character_event = {
 	option = {
 		#kill 'em
 		name = ancrel.3467.a
-		reverse_opinion = { modifier = ancrel_dissapointed who = FROM }
+		reverse_opinion = { modifier = ancrel_dissapointed who = FROM years = 2 }
 		custom_tooltip = {
 			text = ancrel.remove_firedancers
 			set_character_flag = ancrel_remove_firedancers
@@ -2314,7 +2314,7 @@ character_event = {
 			chance = 20
 			add_trait = kind
 		}
-		reverse_opinion = { modifier = ancrel_pleased who = FROM }
+		reverse_opinion = { modifier = ancrel_pleased who = FROM years = 2 }
 
 		ai_chance = {
 			factor = 25
@@ -2657,7 +2657,7 @@ character_event = {
 			trait = envious
 		}
 		new_character = {
-			opinion = { modifier = opinion_patron who = ROOT months = 360 }
+			opinion = { modifier = opinion_patron who = ROOT years = 10 }
 		}
 		ai_chance = {
 			factor = 90
@@ -3146,7 +3146,7 @@ character_event = {
 			trait = diligent
 		}
 		new_character = {
-			opinion = { modifier = opinion_patron who = ROOT months = 360 }
+			opinion = { modifier = opinion_patron who = ROOT years = 10 }
 		}
 
 		ai_chance = {
@@ -3680,7 +3680,7 @@ character_event = {
 	
 	option = {
 		name = ancrel.that_bastard
-		opinion = { modifier = ancrel_jealous who = event_target:festival_heracles }
+		opinion = { modifier = ancrel_jealous who = event_target:festival_heracles years = 2 }
 	}
 }
 
@@ -3731,7 +3731,7 @@ character_event = {
 
 	option = {
 		name = ancrel.that_bastard
-		opinion = { modifier = ancrel_jealous who = event_target:festival_prometheus }
+		opinion = { modifier = ancrel_jealous who = event_target:festival_prometheus years = 2 }
 	}
 }
 
@@ -3800,7 +3800,7 @@ character_event = {
 			opinion = {
 				modifier = opinion_held_unbinding_festival
 				who = ROOT
-				months = 12
+				years = 1
 			}
 		}
 	}

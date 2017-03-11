@@ -293,15 +293,7 @@ narrative_event = {
 			limit = { religion = paulician }
 			set_parent_religion = { religion = catholic parent = paulician }
 		}
-		
-		if = {
-			limit = {
-				NOT = { has_landed_title = k_orthodox }
-				NOT = { k_orthodox = { holder_scope = { is_liege_or_above = ROOT } } }
-			}
-			k_orthodox = { holder_scope = { set_defacto_liege = ROOT } }
-		}
-		
+
 		set_global_flag = schism_mended
 		give_nickname = nick_the_saint
 		hidden_tooltip = {

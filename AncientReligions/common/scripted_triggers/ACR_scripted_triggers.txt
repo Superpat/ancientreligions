@@ -39,9 +39,11 @@ is_attracted_to_prev = {
 }
 
 root_prev_mutual_attraction = {
-	is_attracted_to_prev = yes
-	PREV = {
+	ROOT = {
 		is_attracted_to_prev = yes
+		PREV = {
+			is_attracted_to_prev = yes
+		}
 	}
 }
 
@@ -91,5 +93,99 @@ supernatural_events_trigger = {
 			has_game_rule = { name = supernatural_events value = on }
 			ai = no
 		}
+	}
+}
+
+#True religion triggers
+true_religion_celtic_pagan_trigger = {
+	OR = {
+		AND = {
+			religion = celtic_pagan
+			has_secret_religion_trait_trigger = no
+		}
+		trait = secretly_celtic_pagan
+	}
+}
+
+true_religion_celtic_pagan_reformed_trigger = {
+	OR = {
+		AND = {
+			religion = celtic_pagan_reformed
+			has_secret_religion_trait_trigger = no
+		}
+		trait = secretly_celtic_pagan_reformed
+	}
+}
+
+true_religion_promethean_pagan_trigger = {
+	OR = {
+		AND = {
+			religion = promethean_pagan
+			has_secret_religion_trait_trigger = no
+		}
+		trait = secretly_promethean_pagan
+	}
+}
+
+true_religion_titan_pagan_trigger = {
+	OR = {
+		AND = {
+			religion = titan_pagan
+			has_secret_religion_trait_trigger = no
+		}
+		trait = secretly_titan_pagan
+	}
+}
+
+true_religion_egyptian_pagan_trigger = {
+	OR = {
+		AND = {
+			religion = egyptian_pagan
+			has_secret_religion_trait_trigger = no
+		}
+		trait = secretly_egyptian_pagan
+	}
+}
+
+true_religion_aten_pagan_trigger = {
+	OR = {
+		AND = {
+			religion = aten_pagan
+			has_secret_religion_trait_trigger = no
+		}
+		trait = secretly_aten_pagan
+	}
+}
+
+#Society triggers
+has_unseelie_prerequisites = {
+	has_common_devilworship_prerequisites = yes
+	OR = {
+		religion = celtic_pagan
+		religion = celtic_pagan_reformed
+		trait = secretly_celtic_pagan
+		trait = secretly_celtic_pagan_reformed
+	}
+}
+
+has_coven_prerequisites = {
+	has_common_devilworship_prerequisites = yes
+	OR = {
+		religion = hellenic_pagan
+		trait = secretly_hellenic_pagan
+		religion = promethean_pagan
+		trait = secretly_promethean_pagan
+		religion = titan_pagan
+		trait = secretly_titan_pagan
+	}
+}
+
+has_sand_snake_prerequisites = {
+	has_common_devilworship_prerequisites = yes
+	OR = {
+		religion = egyptian_pagan
+		religion = aten_pagan
+		trait = secretly_egyptian_pagan
+		trait = secretly_aten_pagan
 	}
 }

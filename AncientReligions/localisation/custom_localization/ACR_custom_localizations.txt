@@ -11,3 +11,24 @@ defined_text = {
 		localisation_key = Dryad
 	}	
 }
+
+defined_text = {
+	name = GetRandomAncientThinker
+
+	text = {
+		trigger = { always = yes }
+		localisation_key = AncientThinker_Aristotle
+	}
+	text = {
+		trigger = { always = yes }
+		localisation_key = AncientThinker_Plato
+	}
+	text = {
+		trigger = { always = yes }
+		localisation_key = AncientThinker_Socrates
+	}
+	text = {
+		trigger = { always = yes }
+		localisation_key = AncientThinker_Xenophon
+	}
+}

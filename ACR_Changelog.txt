@@ -3,25 +3,35 @@
 
 General:
  - Added unit modifiers to Hellenic, Titan, Promethean, Kemetic, and Atenic.
+ - Compatibility with CK2 2.7.
+   - Your old saves are probably not gonna work, so back them up!
+ - Secret Religious Societies are available for all 7 religions.
 
 Celtic:
  - Improved the conversion events slightly.
-  -- Unlanded children of the liege will not discount the possibility of converting just because they are Zealous.
-  -- The player's court will always convert (unless they are landed, like councilors, or prisoners).
-  -- The Insanity conversion event will now also cascade through the realm, allowing vassals and courtiers to convert with you.
-  -- This should give Celtic revivals a leg to stand on. It's still unlikely they'll be more than a blip, but there's always a chance.
+   - Unlanded children of the liege will not discount the possibility of converting just because they are Zealous.
+   - The player's court will always convert (unless they are landed, like councilors, or prisoners).
+   - The Insanity conversion event will now also cascade through the realm, allowing vassals and courtiers to convert with you.
+   - This should give Celtic revivals a leg to stand on. It's still unlikely they'll be more than a blip, but there's always a chance.
  - Unfit King mechanic is enabled on an experimental basis.
-  -- It is controlled by a game rule, and is disabled by default.
-  -- In an effort to balance the ability to abdicate, the old ruler will have a strong claim on all titles and all Powerful Vassals will get a weak claim.
-  -- Please give feedback on this mechanic!
+   - It is controlled by a game rule, and is disabled by default.
+   - In an effort to balance the ability to abdicate, the old ruler will have a strong claim on all titles and all Powerful Vassals will get a weak claim.
+   - Please give feedback on this mechanic!
+ - Added Devil Worshipper Society called The Unseelie Petitioners.
 
 Hellenic:
  - Added new Mercenary company, The Myrmidons.
-  -- This company comes into existence when the entire duchy of Thessalonika is converted to Hellenism.
-  -- Has 4 pure heavy infantry regiments.
+   - This company comes into existence when the entire duchy of Thessalonika is converted to Hellenism.
+   - Has 4 pure heavy infantry regiments.
  - Updated the Philosopher event chain.
- -- It is now possible to fire when the Empire has 130 or fewer realm holdings, up from the previous limit of 100.
- -- More events have been added to the chain to make the Philosopher earn any support he may get from the Emperor, and to allow for a better story to unfold.
+   - It is now possible to fire when the Empire has 130 or fewer realm holdings, up from the previous limit of 100.
+   - More events have been added to the chain to make the Philosopher earn any support he may get from the Emperor, and to allow for a better story to unfold.
+ - Added Devil Worshipper Society called The Coven.
+   - Prometheans and Titans have access as well.
+
+Kemetic:
+ - Added Devil Worshipper Society called The Fangs of Apep.
+   - Atenic have access as well.
 
 
 2017-02-16 v0.38.3 "Hippolytus"

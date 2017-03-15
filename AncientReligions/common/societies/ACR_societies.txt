@@ -1,1 +1,25 @@
-ACR_societies.txt
+# society of bards
+
+# druids
+
+# vates
+
+# oracles of delphi
+
+# vestals
+
+# mithras
+
+# sol invictus
+
+# horus-re
+
+# isis
+
+# osiris
+
+# hathor
+
+# horus
+
+# aten

@@ -3964,6 +3964,8 @@ add_crusade_trait_effect = {
 		}
 		add_trait = shaddai
 	}
+
+	### ACR ###
 	if = {
 		limit = {
 			OR = {
@@ -4201,7 +4203,11 @@ remove_secret_religion_trait_effect = {
 		remove_trait = secretly_pagan
 	}
 
-	# ACR
+	### ACR ###
+	if = {
+		limit = { trait = secretly_celtic_pagan }
+		remove_trait = secretly_celtic_pagan
+	}
 	if = {
 		limit = { trait = secretly_celtic_pagan_reformed }
 		remove_trait = secretly_celtic_pagan_reformed
@@ -4876,7 +4882,7 @@ join_from_devil_worshiper_society = {
 			}
 		}
 
-		# ACR
+		### ACR ###
 		if = {
 			limit = {
 				society_member_of = unseelie_petitioners
@@ -4980,6 +4986,8 @@ join_prev_devil_worshiper_society = {
 		join_society = the_trollcrafters
 	}
 
+
+	## ACR ###
 	if = {
 		limit = { PREV = { society_member_of = unseelie_petitioners } }
 		join_society = unseelie_petitioners
@@ -7235,6 +7243,11 @@ add_trait_for_prevs_secret_religion_society_effect = {
     	add_trait = secretly_zun_pagan_reformed
     }
 
+    ### ACR ###
+    if = {
+    	limit = { PREV = { society_member_of = secret_religious_society_celtic_pagan } }
+    	add_trait = secretly_celtic_pagan
+    }
     if = {
     	limit = { PREV = { society_member_of = secret_religious_society_celtic_pagan_reformed } }
     	add_trait = secretly_celtic_pagan_reformed
@@ -7322,6 +7335,7 @@ flip_to_secret_religion_effect = {
 		secretly_hellenic_pagan = { religion = hellenic_pagan remove_trait = secretly_hellenic_pagan }
 		secretly_pagan = { religion = pagan remove_trait = secretly_pagan }
 
+		secretly_celtic_pagan = { religion = celtic_pagan remove_trait = secretly_celtic_pagan }
 		secretly_celtic_pagan_reformed = { religion = celtic_pagan_reformed remove_trait = secretly_celtic_pagan_reformed }
 		secretly_hellenic_pagan = { religion = hellenic_pagan remove_trait = secretly_hellenic_pagan }
 		secretly_promethean_pagan = { religion = promethean_pagan remove_trait = secretly_promethean_pagan }
@@ -7398,6 +7412,10 @@ add_prevs_secret_religion_trait_effect = {
     }
 
     if = {
+    	limit = { PREV = { trait = secretly_celtic_pagan } }
+    	add_trait = secretly_celtic_pagan
+    }
+    if = {
     	limit = { PREV = { trait = secretly_celtic_pagan_reformed } }
     	add_trait = secretly_celtic_pagan_reformed
     }
@@ -7448,6 +7466,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     						has_character_flag = character_was_west_african_pagan_reformed
     						has_character_flag = character_was_zun_pagan_reformed
 
+    						has_character_flag = character_was_celtic_pagan
     						has_character_flag = character_was_celtic_pagan_reformed
     						has_character_flag = character_was_hellenic_pagan
     						has_character_flag = character_was_promethean_pagan
@@ -7487,6 +7506,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     						has_character_flag = character_was_west_african_pagan_reformed
     						has_character_flag = character_was_zun_pagan_reformed
 
+    						has_character_flag = character_was_celtic_pagan
     						has_character_flag = character_was_celtic_pagan_reformed
     						has_character_flag = character_was_hellenic_pagan
     						has_character_flag = character_was_promethean_pagan
@@ -7526,6 +7546,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     						has_character_flag = character_was_west_african_pagan_reformed
     						has_character_flag = character_was_zun_pagan_reformed
 
+    						has_character_flag = character_was_celtic_pagan
     						has_character_flag = character_was_celtic_pagan_reformed
     						has_character_flag = character_was_hellenic_pagan
     						has_character_flag = character_was_promethean_pagan
@@ -7565,6 +7586,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     						has_character_flag = character_was_west_african_pagan_reformed
     						has_character_flag = character_was_zun_pagan_reformed
 
+    						has_character_flag = character_was_celtic_pagan
     						has_character_flag = character_was_celtic_pagan_reformed
     						has_character_flag = character_was_hellenic_pagan
     						has_character_flag = character_was_promethean_pagan
@@ -7604,6 +7626,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     						has_character_flag = character_was_west_african_pagan_reformed
     						has_character_flag = character_was_zun_pagan_reformed
 
+    						has_character_flag = character_was_celtic_pagan
     						has_character_flag = character_was_celtic_pagan_reformed
     						has_character_flag = character_was_hellenic_pagan
     						has_character_flag = character_was_promethean_pagan
@@ -7643,6 +7666,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     						has_character_flag = character_was_west_african_pagan_reformed
     						has_character_flag = character_was_zun_pagan_reformed
 
+    						has_character_flag = character_was_celtic_pagan
     						has_character_flag = character_was_celtic_pagan_reformed
     						has_character_flag = character_was_hellenic_pagan
     						has_character_flag = character_was_promethean_pagan
@@ -7682,6 +7706,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     						has_character_flag = character_was_west_african_pagan_reformed
     						has_character_flag = character_was_zun_pagan_reformed
 
+    						has_character_flag = character_was_celtic_pagan
     						has_character_flag = character_was_celtic_pagan_reformed
     						has_character_flag = character_was_hellenic_pagan
     						has_character_flag = character_was_promethean_pagan
@@ -7721,6 +7746,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     						has_character_flag = character_was_west_african_pagan_reformed
     						has_character_flag = character_was_zun_pagan_reformed
 
+    						has_character_flag = character_was_celtic_pagan
     						has_character_flag = character_was_celtic_pagan_reformed
     						has_character_flag = character_was_hellenic_pagan
     						has_character_flag = character_was_promethean_pagan
@@ -7760,6 +7786,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     						has_character_flag = character_was_west_african_pagan_reformed
     						has_character_flag = character_was_zun_pagan_reformed
 
+    						has_character_flag = character_was_celtic_pagan
     						has_character_flag = character_was_celtic_pagan_reformed
     						has_character_flag = character_was_hellenic_pagan
     						has_character_flag = character_was_promethean_pagan
@@ -7799,6 +7826,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     						has_character_flag = character_was_west_african_pagan_reformed
     						has_character_flag = character_was_zun_pagan_reformed
 
+    						has_character_flag = character_was_celtic_pagan
     						has_character_flag = character_was_celtic_pagan_reformed
     						has_character_flag = character_was_hellenic_pagan
     						has_character_flag = character_was_promethean_pagan
@@ -7838,6 +7866,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     						has_character_flag = character_was_west_african_pagan_reformed
     						has_character_flag = character_was_zun_pagan_reformed
 
+    						has_character_flag = character_was_celtic_pagan
     						has_character_flag = character_was_celtic_pagan_reformed
     						has_character_flag = character_was_hellenic_pagan
     						has_character_flag = character_was_promethean_pagan
@@ -7877,6 +7906,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     						has_character_flag = character_was_west_african_pagan_reformed
     						has_character_flag = character_was_zun_pagan_reformed
 
+    						has_character_flag = character_was_celtic_pagan
     						has_character_flag = character_was_celtic_pagan_reformed
     						has_character_flag = character_was_hellenic_pagan
     						has_character_flag = character_was_promethean_pagan
@@ -7916,6 +7946,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     						has_character_flag = character_was_west_african_pagan_reformed
     						has_character_flag = character_was_zun_pagan_reformed
 
+    						has_character_flag = character_was_celtic_pagan
     						has_character_flag = character_was_celtic_pagan_reformed
     						has_character_flag = character_was_hellenic_pagan
     						has_character_flag = character_was_promethean_pagan
@@ -7955,6 +7986,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     						has_character_flag = character_was_west_african_pagan_reformed
     						has_character_flag = character_was_zun_pagan_reformed
 
+    						has_character_flag = character_was_celtic_pagan
     						has_character_flag = character_was_celtic_pagan_reformed
     						has_character_flag = character_was_hellenic_pagan
     						has_character_flag = character_was_promethean_pagan
@@ -7994,6 +8026,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     						has_character_flag = character_was_west_african_pagan_reformed
     						has_character_flag = character_was_zun_pagan_reformed
 
+    						has_character_flag = character_was_celtic_pagan
     						has_character_flag = character_was_celtic_pagan_reformed
     						has_character_flag = character_was_hellenic_pagan
     						has_character_flag = character_was_promethean_pagan
@@ -8033,6 +8066,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     						has_character_flag = character_was_west_african_pagan_reformed
     						has_character_flag = character_was_zun_pagan_reformed
 
+    						has_character_flag = character_was_celtic_pagan
     						has_character_flag = character_was_celtic_pagan_reformed
     						has_character_flag = character_was_hellenic_pagan
     						has_character_flag = character_was_promethean_pagan
@@ -8074,6 +8108,47 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     						has_character_flag = character_was_west_african_pagan_reformed
     						has_character_flag = character_was_zun_pagan_reformed
 
+    						has_character_flag = character_was_celtic_pagan
+    						has_character_flag = character_was_celtic_pagan_reformed
+    						has_character_flag = character_was_hellenic_pagan
+    						has_character_flag = character_was_promethean_pagan
+    						has_character_flag = character_was_titan_pagan
+    						has_character_flag = character_was_egyptian_pagan
+    						has_character_flag = character_was_aten_pagan
+    					}
+    				}
+    				religion = celtic_pagan
+    			}
+    			has_character_flag = character_was_celtic_pagan
+			}
+    	}
+    	add_trait = secretly_celtic_pagan_reformed
+    	clr_character_flag = character_was_celtic_pagan_reformed
+    }
+    if = {
+    	limit = { 
+    		OR = {
+    			AND = {
+    				NOT = {
+    					OR = {
+    						has_character_flag = character_was_catholic
+    						has_character_flag = character_was_orthodox
+    						has_character_flag = character_was_sunni
+    						has_character_flag = character_was_shiite
+    						has_character_flag = character_was_jewish
+    						has_character_flag = character_was_zoroastrian
+    						has_character_flag = character_was_hinduism
+    						has_character_flag = character_was_buddhism
+    						has_character_flag = character_was_jain
+    						has_character_flag = character_was_norse_pagan_reformed
+    						has_character_flag = character_was_slavic_pagan_reformed
+    						has_character_flag = character_was_tengri_pagan_reformed
+    						has_character_flag = character_was_baltic_pagan_reformed
+    						has_character_flag = character_was_finnish_pagan_reformed
+    						has_character_flag = character_was_west_african_pagan_reformed
+    						has_character_flag = character_was_zun_pagan_reformed
+
+    						has_character_flag = character_was_celtic_pagan
     						has_character_flag = character_was_celtic_pagan_reformed
     						has_character_flag = character_was_hellenic_pagan
     						has_character_flag = character_was_promethean_pagan
@@ -8113,6 +8188,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     						has_character_flag = character_was_west_african_pagan_reformed
     						has_character_flag = character_was_zun_pagan_reformed
 
+    						has_character_flag = character_was_celtic_pagan
     						has_character_flag = character_was_celtic_pagan_reformed
     						has_character_flag = character_was_hellenic_pagan
     						has_character_flag = character_was_promethean_pagan
@@ -8152,6 +8228,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     						has_character_flag = character_was_west_african_pagan_reformed
     						has_character_flag = character_was_zun_pagan_reformed
 
+    						has_character_flag = character_was_celtic_pagan
     						has_character_flag = character_was_celtic_pagan_reformed
     						has_character_flag = character_was_hellenic_pagan
     						has_character_flag = character_was_promethean_pagan
@@ -8191,6 +8268,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     						has_character_flag = character_was_west_african_pagan_reformed
     						has_character_flag = character_was_zun_pagan_reformed
 
+    						has_character_flag = character_was_celtic_pagan
     						has_character_flag = character_was_celtic_pagan_reformed
     						has_character_flag = character_was_hellenic_pagan
     						has_character_flag = character_was_promethean_pagan
@@ -8230,6 +8308,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     						has_character_flag = character_was_west_african_pagan_reformed
     						has_character_flag = character_was_zun_pagan_reformed
 
+    						has_character_flag = character_was_celtic_pagan
     						has_character_flag = character_was_celtic_pagan_reformed
     						has_character_flag = character_was_hellenic_pagan
     						has_character_flag = character_was_promethean_pagan
@@ -8269,6 +8348,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     						has_character_flag = character_was_west_african_pagan_reformed
     						has_character_flag = character_was_zun_pagan_reformed
 
+    						has_character_flag = character_was_celtic_pagan
     						has_character_flag = character_was_celtic_pagan_reformed
     						has_character_flag = character_was_hellenic_pagan
     						has_character_flag = character_was_promethean_pagan
@@ -8353,6 +8433,11 @@ add_religion_char_flag_effect = {
     	set_character_flag = character_was_zun_pagan_reformed
     }
 
+    ### ACR ###
+    if = {
+    	limit = { religion = celtic_pagan }
+    	set_character_flag = character_was_celtic_pagan
+    }
     if = {
     	limit = { religion = celtic_pagan_reformed }
     	set_character_flag = character_was_celtic_pagan_reformed
@@ -8397,6 +8482,9 @@ clr_religion_char_flag_effect = {
     clr_character_flag = character_was_west_african_pagan_reformed
     clr_character_flag = character_was_zun_pagan_reformed
 
+
+    ### ACR ###
+    clr_character_flag = character_was_celtic_pagan
     clr_character_flag = character_was_celtic_pagan_reformed
     clr_character_flag = character_was_hellenic_pagan
     clr_character_flag = character_was_promethean_pagan
@@ -8519,6 +8607,14 @@ event_target_old_religion_from_flag_effect = {
     	}
     }
 
+    ### ACR ###
+    if = {
+    	limit = { has_character_flag = character_was_celtic_pagan }
+    	random_character = {
+    		limit = { religion = celtic_pagan }
+    		save_event_target_as = old_religion
+    	}
+    }
     if = {
     	limit = { has_character_flag = character_was_celtic_pagan_reformed }
     	random_character = {
@@ -9923,7 +10019,86 @@ flip_secret_religious_community_provinces = {
 					remove_province_modifier = secret_zun_pagan_reformed_community
 				}
 			}
-		} 
+		}
+
+		### ACR ###
+		secret_religious_society_celtic_pagan = { 
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_celtic_pagan_community
+					}
+					religion = celtic_pagan
+					remove_province_modifier = secret_celtic_pagan_community
+				}
+			}
+		}
+		secret_religious_society_celtic_pagan_reformed = { 
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_celtic_pagan_reformed_community
+					}
+					religion = celtic_pagan_reformed 
+					remove_province_modifier = secret_celtic_pagan_reformed_community
+				}
+			}
+		}
+		secret_religious_society_hellenic_pagan = { 
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_hellenic_pagan_community
+					}
+					religion = hellenic_pagan
+					remove_province_modifier = secret_hellenic_pagan_community
+				}
+			}
+		}
+		secret_religious_society_promethean_pagan = { 
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_promethean_pagan_community
+					}
+					religion = promethean_pagan
+					remove_province_modifier = secret_promethean_pagan_community
+				}
+			}
+		}
+		secret_religious_society_titan_pagan = { 
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_titan_pagan_community
+					}
+					religion = titan_pagan
+					remove_province_modifier = secret_titan_pagan_community
+				}
+			}
+		}
+		secret_religious_society_egyptian_pagan = { 
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_egyptian_pagan_community
+					}
+					religion = egyptian_pagan
+					remove_province_modifier = secret_egyptian_pagan_community
+				}
+			}
+		}
+		secret_religious_society_aten_pagan = { 
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_aten_pagan_community
+					}
+					religion = aten_pagan
+					remove_province_modifier = secret_aten_pagan_community
+				}
+			}
+		}
 	}
 }
 

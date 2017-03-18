@@ -307,7 +307,6 @@ character_event = {
 			}
 		}
 	}
-
 }
 
 # Child kills Courtier I (AI Courtier)

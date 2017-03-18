@@ -7335,6 +7335,7 @@ flip_to_secret_religion_effect = {
 		secretly_hellenic_pagan = { religion = hellenic_pagan remove_trait = secretly_hellenic_pagan }
 		secretly_pagan = { religion = pagan remove_trait = secretly_pagan }
 
+		### ACR ###
 		secretly_celtic_pagan = { religion = celtic_pagan remove_trait = secretly_celtic_pagan }
 		secretly_celtic_pagan_reformed = { religion = celtic_pagan_reformed remove_trait = secretly_celtic_pagan_reformed }
 		secretly_hellenic_pagan = { religion = hellenic_pagan remove_trait = secretly_hellenic_pagan }
@@ -7411,6 +7412,7 @@ add_prevs_secret_religion_trait_effect = {
     	add_trait = secretly_zun_pagan_reformed
     }
 
+    ### ACR ###
     if = {
     	limit = { PREV = { trait = secretly_celtic_pagan } }
     	add_trait = secretly_celtic_pagan
@@ -8481,7 +8483,6 @@ clr_religion_char_flag_effect = {
     clr_character_flag = character_was_finnish_pagan_reformed
     clr_character_flag = character_was_west_african_pagan_reformed
     clr_character_flag = character_was_zun_pagan_reformed
-
 
     ### ACR ###
     clr_character_flag = character_was_celtic_pagan

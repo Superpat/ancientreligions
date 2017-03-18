@@ -1040,12 +1040,16 @@ long_character_event = {
 		name = ancrel.2029.c
 		tooltip_info = intrigue
 		trigger = {
-			#has_dlc = "Monks & Mystics"
 			intrigue = 10
 		}
 
-		# convert stealthily, requires 2.7
-		religion = hellenic_pagan
+		# convert stealthily, requires 2.7 (but not MnM)
+		add_religion_char_flag_effect = yes
+		add_trait = secretly_hellenic_pagan
+		FROMFROM ={
+			add_religion_char_flag_effect = yes
+			add_trait = secretly_hellenic_pagan
+		}
 	}
 
 	option = { # imprison him, if you ignored the priests before

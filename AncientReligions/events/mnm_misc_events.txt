@@ -9,6 +9,38 @@
 namespace = MNM
 
 ###RANKING UP EVENTS####
+
+# Hidden start: Send the rank-up request to the current Grandmaster (delayed event on self, from decision to rank up)
+character_event = {
+	id = MNM.10002
+
+	hide_window = yes
+
+	trigger = {
+		has_character_flag = has_sent_request_to_rank_up
+	}
+	
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { is_in_society = yes }
+			random_society_member = {
+				limit = {
+					is_society_grandmaster = yes
+					same_society_as = ROOT
+				}
+				character_event = { id = MNM.10000 } # send request to Grand Master. Relic rewards also handled by this event
+			}
+		}
+		if = {
+			limit = { is_in_society = no }
+			clr_character_flag = has_sent_request_to_rank_up
+		}
+	}
+}
+
+# Grandmaster gets the rank-up request
 character_event = {
 	id = MNM.10000
 	
@@ -63,6 +95,7 @@ letter_event = {
 		clr_character_flag = has_sent_request_to_rank_up
 	}
 }
+
 
 #Back up event for showing interest
 character_event = {

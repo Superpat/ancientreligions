@@ -2855,110 +2855,111 @@ increase_prosperity_effect = {
 }
 
 add_disease_level_effect = {
-	random_list = {
-		65 = { 
-			custom_tooltip = {
-				text = become_normal_ill
-			}
-		}
-		20 = { 
-			modifier = {
-				factor = 2
-				trait = strong
-			}
-			modifier = {
-				factor = 2
-				trait = robust
-			}
-			custom_tooltip = {
-				text = become_mild_ill
-				hidden_tooltip = { 
-					add_character_modifier = { name = mild_illness duration = -1 }
+		random_list = {
+			65 = { 
+				custom_tooltip = {
+					text = become_normal_ill
 				}
 			}
-		}
-		10 = { 
-			modifier = {
-				factor = 1.5
-				trait = feeble
-			}
-			modifier = {
-				factor = 1.5
-				trait = weak
-			}
-			modifier = {
-				factor = 0.5
-				trait = strong
-			}
-			modifier = {
-				factor = 0.5
-				trait = robust
-			}
-			modifier = {
-				factor = 1.5
-				age = 50
-			}
-			modifier = {
-				factor = 1.5
-				age = 60
-			}
-			modifier = {
-				factor = 1.5
-				age = 70
-			}
-			modifier = {
-				factor = 1.5
-				age = 80
-			}
-			custom_tooltip = {
-				text = become_severe_ill
-				hidden_tooltip = { 
-					add_character_modifier = { name = severe_illness duration = -1 }
+			20 = { 
+				modifier = {
+					factor = 2
+					trait = strong
+				}
+				modifier = {
+					factor = 2
+					trait = robust
+				}
+				custom_tooltip = {
+					text = become_mild_ill
+					hidden_tooltip = { 
+						add_character_modifier = { name = mild_illness duration = -1 }
+					}
 				}
 			}
-		}
-		5= { 
-			modifier = {
-				factor = 0
-				immortal = yes
+			10 = { 
+				modifier = {
+					factor = 1.5
+					trait = feeble
+				}
+				modifier = {
+					factor = 1.5
+					trait = weak
+				}
+				modifier = {
+					factor = 0.5
+					trait = strong
+				}
+				modifier = {
+					factor = 0.5
+					trait = robust
+				}
+				modifier = {
+					factor = 1.5
+					age = 50
+				}
+				modifier = {
+					factor = 1.5
+					age = 60
+				}
+				modifier = {
+					factor = 1.5
+					age = 70
+				}
+				modifier = {
+					factor = 1.5
+					age = 80
+				}
+				custom_tooltip = {
+					text = become_severe_ill
+					hidden_tooltip = { 
+						add_character_modifier = { name = severe_illness duration = -1 }
+					}
+				}
 			}
-			modifier = {
-				factor = 2
-				trait = feeble
-			}
-			modifier = {
-				factor = 2
-				trait = weak
-			}
-			modifier = {
-				factor = 0.5
-				trait = strong
-			}
-			modifier = {
-				factor = 0.5
-				trait = robust
-			}
-			 modifier = {
-				factor = 2
-				age = 50
-			}
-			modifier = {
-				factor = 2
-				age = 60
-			}
-			modifier = {
-				factor = 2
-				age = 70
-			}
-			modifier = {
-				factor = 2
-				age = 80
-			}
-			custom_tooltip = {
-				text = become_bedridden_ill
-				hidden_tooltip = { 
-					add_character_modifier = { name = bedridden_illness duration = -1 }
-					add_trait = sick_incapable
+			5= { 
+				modifier = {
+					factor = 0
+					immortal = yes
+				}
+				modifier = {
+					factor = 2
+					trait = feeble
+				}
+				modifier = {
+					factor = 2
+					trait = weak
+				}
+				modifier = {
+					factor = 0.5
+					trait = strong
+				}
+				modifier = {
+					factor = 0.5
+					trait = robust
+				}
+				 modifier = {
+					factor = 2
+					age = 50
+				}
+				modifier = {
+					factor = 2
+					age = 60
+				}
+				modifier = {
+					factor = 2
+					age = 70
+				}
+				modifier = {
+					factor = 2
+					age = 80
+				}
+				custom_tooltip = {
+					text = become_bedridden_ill
+					hidden_tooltip = { 
+						add_character_modifier = { name = bedridden_illness duration = -1 }
+						add_trait = sick_incapable
+					}
 				}
 			}
 		}
@@ -3090,6 +3091,7 @@ give_pneumonic_effect = {
 		}
 	}
 }
+
 
 give_has_tuberculosis_effect = {
 	if = {
@@ -7449,34 +7451,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	limit = { 
     		OR = {
     			AND = {
-    				NOT = {
-    					OR = {
-    						has_character_flag = character_was_catholic
-    						has_character_flag = character_was_orthodox
-    						has_character_flag = character_was_sunni
-    						has_character_flag = character_was_shiite
-    						has_character_flag = character_was_jewish
-    						has_character_flag = character_was_zoroastrian
-    						has_character_flag = character_was_hinduism
-    						has_character_flag = character_was_buddhism
-    						has_character_flag = character_was_jain
-    						has_character_flag = character_was_norse_pagan_reformed
-    						has_character_flag = character_was_slavic_pagan_reformed
-    						has_character_flag = character_was_tengri_pagan_reformed
-    						has_character_flag = character_was_baltic_pagan_reformed
-    						has_character_flag = character_was_finnish_pagan_reformed
-    						has_character_flag = character_was_west_african_pagan_reformed
-    						has_character_flag = character_was_zun_pagan_reformed
-
-    						has_character_flag = character_was_celtic_pagan
-    						has_character_flag = character_was_celtic_pagan_reformed
-    						has_character_flag = character_was_hellenic_pagan
-    						has_character_flag = character_was_promethean_pagan
-    						has_character_flag = character_was_titan_pagan
-    						has_character_flag = character_was_egyptian_pagan
-    						has_character_flag = character_was_aten_pagan
-    					}
-    				}
+    				has_character_was_religion_flag_trigger = no
     				religion = catholic
     			}
     			has_character_flag = character_was_catholic
@@ -7489,34 +7464,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	limit = { 
     		OR = {
     			AND = {
-    				NOT = {
-    					OR = {
-    						has_character_flag = character_was_catholic
-    						has_character_flag = character_was_orthodox
-    						has_character_flag = character_was_sunni
-    						has_character_flag = character_was_shiite
-    						has_character_flag = character_was_jewish
-    						has_character_flag = character_was_zoroastrian
-    						has_character_flag = character_was_hinduism
-    						has_character_flag = character_was_buddhism
-    						has_character_flag = character_was_jain
-    						has_character_flag = character_was_norse_pagan_reformed
-    						has_character_flag = character_was_slavic_pagan_reformed
-    						has_character_flag = character_was_tengri_pagan_reformed
-    						has_character_flag = character_was_baltic_pagan_reformed
-    						has_character_flag = character_was_finnish_pagan_reformed
-    						has_character_flag = character_was_west_african_pagan_reformed
-    						has_character_flag = character_was_zun_pagan_reformed
-
-    						has_character_flag = character_was_celtic_pagan
-    						has_character_flag = character_was_celtic_pagan_reformed
-    						has_character_flag = character_was_hellenic_pagan
-    						has_character_flag = character_was_promethean_pagan
-    						has_character_flag = character_was_titan_pagan
-    						has_character_flag = character_was_egyptian_pagan
-    						has_character_flag = character_was_aten_pagan
-    					}
-    				}
+    				has_character_was_religion_flag_trigger = no
     				religion = orthodox
     			}
     			has_character_flag = character_was_orthodox
@@ -7529,34 +7477,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	limit = { 
     		OR = {
     			AND = {
-    				NOT = {
-    					OR = {
-    						has_character_flag = character_was_catholic
-    						has_character_flag = character_was_orthodox
-    						has_character_flag = character_was_sunni
-    						has_character_flag = character_was_shiite
-    						has_character_flag = character_was_jewish
-    						has_character_flag = character_was_zoroastrian
-    						has_character_flag = character_was_hinduism
-    						has_character_flag = character_was_buddhism
-    						has_character_flag = character_was_jain
-    						has_character_flag = character_was_norse_pagan_reformed
-    						has_character_flag = character_was_slavic_pagan_reformed
-    						has_character_flag = character_was_tengri_pagan_reformed
-    						has_character_flag = character_was_baltic_pagan_reformed
-    						has_character_flag = character_was_finnish_pagan_reformed
-    						has_character_flag = character_was_west_african_pagan_reformed
-    						has_character_flag = character_was_zun_pagan_reformed
-
-    						has_character_flag = character_was_celtic_pagan
-    						has_character_flag = character_was_celtic_pagan_reformed
-    						has_character_flag = character_was_hellenic_pagan
-    						has_character_flag = character_was_promethean_pagan
-    						has_character_flag = character_was_titan_pagan
-    						has_character_flag = character_was_egyptian_pagan
-    						has_character_flag = character_was_aten_pagan
-    					}
-    				}
+    				has_character_was_religion_flag_trigger = no
     				religion = sunni
     			}
     			has_character_flag = character_was_sunni
@@ -7569,34 +7490,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	limit = { 
     		OR = {
     			AND = {
-    				NOT = {
-    					OR = {
-    						has_character_flag = character_was_catholic
-    						has_character_flag = character_was_orthodox
-    						has_character_flag = character_was_sunni
-    						has_character_flag = character_was_shiite
-    						has_character_flag = character_was_jewish
-    						has_character_flag = character_was_zoroastrian
-    						has_character_flag = character_was_hinduism
-    						has_character_flag = character_was_buddhism
-    						has_character_flag = character_was_jain
-    						has_character_flag = character_was_norse_pagan_reformed
-    						has_character_flag = character_was_slavic_pagan_reformed
-    						has_character_flag = character_was_tengri_pagan_reformed
-    						has_character_flag = character_was_baltic_pagan_reformed
-    						has_character_flag = character_was_finnish_pagan_reformed
-    						has_character_flag = character_was_west_african_pagan_reformed
-    						has_character_flag = character_was_zun_pagan_reformed
-
-    						has_character_flag = character_was_celtic_pagan
-    						has_character_flag = character_was_celtic_pagan_reformed
-    						has_character_flag = character_was_hellenic_pagan
-    						has_character_flag = character_was_promethean_pagan
-    						has_character_flag = character_was_titan_pagan
-    						has_character_flag = character_was_egyptian_pagan
-    						has_character_flag = character_was_aten_pagan
-    					}
-    				}
+    				has_character_was_religion_flag_trigger = no
     				religion = shiite
     			}
     			has_character_flag = character_was_shiite
@@ -7609,34 +7503,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	limit = { 
     		OR = {
     			AND = {
-    				NOT = {
-    					OR = {
-    						has_character_flag = character_was_catholic
-    						has_character_flag = character_was_orthodox
-    						has_character_flag = character_was_sunni
-    						has_character_flag = character_was_shiite
-    						has_character_flag = character_was_jewish
-    						has_character_flag = character_was_zoroastrian
-    						has_character_flag = character_was_hinduism
-    						has_character_flag = character_was_buddhism
-    						has_character_flag = character_was_jain
-    						has_character_flag = character_was_norse_pagan_reformed
-    						has_character_flag = character_was_slavic_pagan_reformed
-    						has_character_flag = character_was_tengri_pagan_reformed
-    						has_character_flag = character_was_baltic_pagan_reformed
-    						has_character_flag = character_was_finnish_pagan_reformed
-    						has_character_flag = character_was_west_african_pagan_reformed
-    						has_character_flag = character_was_zun_pagan_reformed
-
-    						has_character_flag = character_was_celtic_pagan
-    						has_character_flag = character_was_celtic_pagan_reformed
-    						has_character_flag = character_was_hellenic_pagan
-    						has_character_flag = character_was_promethean_pagan
-    						has_character_flag = character_was_titan_pagan
-    						has_character_flag = character_was_egyptian_pagan
-    						has_character_flag = character_was_aten_pagan
-    					}
-    				}
+    				has_character_was_religion_flag_trigger = no
     				religion = jewish
     			}
     			has_character_flag = character_was_jewish
@@ -7649,34 +7516,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	limit = { 
     		OR = {
     			AND = {
-    				NOT = {
-    					OR = {
-    						has_character_flag = character_was_catholic
-    						has_character_flag = character_was_orthodox
-    						has_character_flag = character_was_sunni
-    						has_character_flag = character_was_shiite
-    						has_character_flag = character_was_jewish
-    						has_character_flag = character_was_zoroastrian
-    						has_character_flag = character_was_hinduism
-    						has_character_flag = character_was_buddhism
-    						has_character_flag = character_was_jain
-    						has_character_flag = character_was_norse_pagan_reformed
-    						has_character_flag = character_was_slavic_pagan_reformed
-    						has_character_flag = character_was_tengri_pagan_reformed
-    						has_character_flag = character_was_baltic_pagan_reformed
-    						has_character_flag = character_was_finnish_pagan_reformed
-    						has_character_flag = character_was_west_african_pagan_reformed
-    						has_character_flag = character_was_zun_pagan_reformed
-
-    						has_character_flag = character_was_celtic_pagan
-    						has_character_flag = character_was_celtic_pagan_reformed
-    						has_character_flag = character_was_hellenic_pagan
-    						has_character_flag = character_was_promethean_pagan
-    						has_character_flag = character_was_titan_pagan
-    						has_character_flag = character_was_egyptian_pagan
-    						has_character_flag = character_was_aten_pagan
-    					}
-    				}
+    				has_character_was_religion_flag_trigger = no
     				religion = zoroastrian
     			}
     			has_character_flag = character_was_zoroastrian
@@ -7689,34 +7529,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	limit = { 
     		OR = {
     			AND = {
-    				NOT = {
-    					OR = {
-    						has_character_flag = character_was_catholic
-    						has_character_flag = character_was_orthodox
-    						has_character_flag = character_was_sunni
-    						has_character_flag = character_was_shiite
-    						has_character_flag = character_was_jewish
-    						has_character_flag = character_was_zoroastrian
-    						has_character_flag = character_was_hinduism
-    						has_character_flag = character_was_buddhism
-    						has_character_flag = character_was_jain
-    						has_character_flag = character_was_norse_pagan_reformed
-    						has_character_flag = character_was_slavic_pagan_reformed
-    						has_character_flag = character_was_tengri_pagan_reformed
-    						has_character_flag = character_was_baltic_pagan_reformed
-    						has_character_flag = character_was_finnish_pagan_reformed
-    						has_character_flag = character_was_west_african_pagan_reformed
-    						has_character_flag = character_was_zun_pagan_reformed
-
-    						has_character_flag = character_was_celtic_pagan
-    						has_character_flag = character_was_celtic_pagan_reformed
-    						has_character_flag = character_was_hellenic_pagan
-    						has_character_flag = character_was_promethean_pagan
-    						has_character_flag = character_was_titan_pagan
-    						has_character_flag = character_was_egyptian_pagan
-    						has_character_flag = character_was_aten_pagan
-    					}
-    				}
+    				has_character_was_religion_flag_trigger = no
     				religion = hindu
     			}
     			has_character_flag = character_was_hinduism
@@ -7729,34 +7542,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	limit = { 
     		OR = {
     			AND = {
-    				NOT = {
-    					OR = {
-    						has_character_flag = character_was_catholic
-    						has_character_flag = character_was_orthodox
-    						has_character_flag = character_was_sunni
-    						has_character_flag = character_was_shiite
-    						has_character_flag = character_was_jewish
-    						has_character_flag = character_was_zoroastrian
-    						has_character_flag = character_was_hinduism
-    						has_character_flag = character_was_buddhism
-    						has_character_flag = character_was_jain
-    						has_character_flag = character_was_norse_pagan_reformed
-    						has_character_flag = character_was_slavic_pagan_reformed
-    						has_character_flag = character_was_tengri_pagan_reformed
-    						has_character_flag = character_was_baltic_pagan_reformed
-    						has_character_flag = character_was_finnish_pagan_reformed
-    						has_character_flag = character_was_west_african_pagan_reformed
-    						has_character_flag = character_was_zun_pagan_reformed
-
-    						has_character_flag = character_was_celtic_pagan
-    						has_character_flag = character_was_celtic_pagan_reformed
-    						has_character_flag = character_was_hellenic_pagan
-    						has_character_flag = character_was_promethean_pagan
-    						has_character_flag = character_was_titan_pagan
-    						has_character_flag = character_was_egyptian_pagan
-    						has_character_flag = character_was_aten_pagan
-    					}
-    				}
+    				has_character_was_religion_flag_trigger = no
     				religion = buddhist
     			}
     			has_character_flag = character_was_buddhism
@@ -7769,34 +7555,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	limit = { 
     		OR = {
     			AND = {
-    				NOT = {
-    					OR = {
-    						has_character_flag = character_was_catholic
-    						has_character_flag = character_was_orthodox
-    						has_character_flag = character_was_sunni
-    						has_character_flag = character_was_shiite
-    						has_character_flag = character_was_jewish
-    						has_character_flag = character_was_zoroastrian
-    						has_character_flag = character_was_hinduism
-    						has_character_flag = character_was_buddhism
-    						has_character_flag = character_was_jain
-    						has_character_flag = character_was_norse_pagan_reformed
-    						has_character_flag = character_was_slavic_pagan_reformed
-    						has_character_flag = character_was_tengri_pagan_reformed
-    						has_character_flag = character_was_baltic_pagan_reformed
-    						has_character_flag = character_was_finnish_pagan_reformed
-    						has_character_flag = character_was_west_african_pagan_reformed
-    						has_character_flag = character_was_zun_pagan_reformed
-
-    						has_character_flag = character_was_celtic_pagan
-    						has_character_flag = character_was_celtic_pagan_reformed
-    						has_character_flag = character_was_hellenic_pagan
-    						has_character_flag = character_was_promethean_pagan
-    						has_character_flag = character_was_titan_pagan
-    						has_character_flag = character_was_egyptian_pagan
-    						has_character_flag = character_was_aten_pagan
-    					}
-    				}
+    				has_character_was_religion_flag_trigger = no
     				religion = jain
     			}
     			has_character_flag = character_was_jain
@@ -7809,34 +7568,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	limit = { 
     		OR = {
     			AND = {
-    				NOT = {
-    					OR = {
-    						has_character_flag = character_was_catholic
-    						has_character_flag = character_was_orthodox
-    						has_character_flag = character_was_sunni
-    						has_character_flag = character_was_shiite
-    						has_character_flag = character_was_jewish
-    						has_character_flag = character_was_zoroastrian
-    						has_character_flag = character_was_hinduism
-    						has_character_flag = character_was_buddhism
-    						has_character_flag = character_was_jain
-    						has_character_flag = character_was_norse_pagan_reformed
-    						has_character_flag = character_was_slavic_pagan_reformed
-    						has_character_flag = character_was_tengri_pagan_reformed
-    						has_character_flag = character_was_baltic_pagan_reformed
-    						has_character_flag = character_was_finnish_pagan_reformed
-    						has_character_flag = character_was_west_african_pagan_reformed
-    						has_character_flag = character_was_zun_pagan_reformed
-
-    						has_character_flag = character_was_celtic_pagan
-    						has_character_flag = character_was_celtic_pagan_reformed
-    						has_character_flag = character_was_hellenic_pagan
-    						has_character_flag = character_was_promethean_pagan
-    						has_character_flag = character_was_titan_pagan
-    						has_character_flag = character_was_egyptian_pagan
-    						has_character_flag = character_was_aten_pagan
-    					}
-    				}
+    				has_character_was_religion_flag_trigger = no
     				religion = norse_pagan_reformed
     			}
     			has_character_flag = character_was_norse_pagan_reformed
@@ -7849,34 +7581,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	limit = { 
     		OR = {
     			AND = {
-    				NOT = {
-    					OR = {
-    						has_character_flag = character_was_catholic
-    						has_character_flag = character_was_orthodox
-    						has_character_flag = character_was_sunni
-    						has_character_flag = character_was_shiite
-    						has_character_flag = character_was_jewish
-    						has_character_flag = character_was_zoroastrian
-    						has_character_flag = character_was_hinduism
-    						has_character_flag = character_was_buddhism
-    						has_character_flag = character_was_jain
-    						has_character_flag = character_was_norse_pagan_reformed
-    						has_character_flag = character_was_slavic_pagan_reformed
-    						has_character_flag = character_was_tengri_pagan_reformed
-    						has_character_flag = character_was_baltic_pagan_reformed
-    						has_character_flag = character_was_finnish_pagan_reformed
-    						has_character_flag = character_was_west_african_pagan_reformed
-    						has_character_flag = character_was_zun_pagan_reformed
-
-    						has_character_flag = character_was_celtic_pagan
-    						has_character_flag = character_was_celtic_pagan_reformed
-    						has_character_flag = character_was_hellenic_pagan
-    						has_character_flag = character_was_promethean_pagan
-    						has_character_flag = character_was_titan_pagan
-    						has_character_flag = character_was_egyptian_pagan
-    						has_character_flag = character_was_aten_pagan
-    					}
-    				}
+    				has_character_was_religion_flag_trigger = no
     				religion = slavic_pagan_reformed
     			}
     			has_character_flag = character_was_slavic_pagan_reformed
@@ -7889,34 +7594,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	limit = { 
     		OR = {
     			AND = {
-    				NOT = {
-    					OR = {
-    						has_character_flag = character_was_catholic
-    						has_character_flag = character_was_orthodox
-    						has_character_flag = character_was_sunni
-    						has_character_flag = character_was_shiite
-    						has_character_flag = character_was_jewish
-    						has_character_flag = character_was_zoroastrian
-    						has_character_flag = character_was_hinduism
-    						has_character_flag = character_was_buddhism
-    						has_character_flag = character_was_jain
-    						has_character_flag = character_was_norse_pagan_reformed
-    						has_character_flag = character_was_slavic_pagan_reformed
-    						has_character_flag = character_was_tengri_pagan_reformed
-    						has_character_flag = character_was_baltic_pagan_reformed
-    						has_character_flag = character_was_finnish_pagan_reformed
-    						has_character_flag = character_was_west_african_pagan_reformed
-    						has_character_flag = character_was_zun_pagan_reformed
-
-    						has_character_flag = character_was_celtic_pagan
-    						has_character_flag = character_was_celtic_pagan_reformed
-    						has_character_flag = character_was_hellenic_pagan
-    						has_character_flag = character_was_promethean_pagan
-    						has_character_flag = character_was_titan_pagan
-    						has_character_flag = character_was_egyptian_pagan
-    						has_character_flag = character_was_aten_pagan
-    					}
-    				}
+    				has_character_was_religion_flag_trigger = no
     				religion = tengri_pagan_reformed
     			}
     			has_character_flag = character_was_tengri_pagan_reformed
@@ -7929,34 +7607,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	limit = { 
     		OR = {
     			AND = {
-    				NOT = {
-    					OR = {
-    						has_character_flag = character_was_catholic
-    						has_character_flag = character_was_orthodox
-    						has_character_flag = character_was_sunni
-    						has_character_flag = character_was_shiite
-    						has_character_flag = character_was_jewish
-    						has_character_flag = character_was_zoroastrian
-    						has_character_flag = character_was_hinduism
-    						has_character_flag = character_was_buddhism
-    						has_character_flag = character_was_jain
-    						has_character_flag = character_was_norse_pagan_reformed
-    						has_character_flag = character_was_slavic_pagan_reformed
-    						has_character_flag = character_was_tengri_pagan_reformed
-    						has_character_flag = character_was_baltic_pagan_reformed
-    						has_character_flag = character_was_finnish_pagan_reformed
-    						has_character_flag = character_was_west_african_pagan_reformed
-    						has_character_flag = character_was_zun_pagan_reformed
-
-    						has_character_flag = character_was_celtic_pagan
-    						has_character_flag = character_was_celtic_pagan_reformed
-    						has_character_flag = character_was_hellenic_pagan
-    						has_character_flag = character_was_promethean_pagan
-    						has_character_flag = character_was_titan_pagan
-    						has_character_flag = character_was_egyptian_pagan
-    						has_character_flag = character_was_aten_pagan
-    					}
-    				}
+    				has_character_was_religion_flag_trigger = no
     				religion = baltic_pagan_reformed
     			}
     			has_character_flag = character_was_baltic_pagan_reformed
@@ -7969,34 +7620,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	limit = { 
     		OR = {
     			AND = {
-    				NOT = {
-    					OR = {
-    						has_character_flag = character_was_catholic
-    						has_character_flag = character_was_orthodox
-    						has_character_flag = character_was_sunni
-    						has_character_flag = character_was_shiite
-    						has_character_flag = character_was_jewish
-    						has_character_flag = character_was_zoroastrian
-    						has_character_flag = character_was_hinduism
-    						has_character_flag = character_was_buddhism
-    						has_character_flag = character_was_jain
-    						has_character_flag = character_was_norse_pagan_reformed
-    						has_character_flag = character_was_slavic_pagan_reformed
-    						has_character_flag = character_was_tengri_pagan_reformed
-    						has_character_flag = character_was_baltic_pagan_reformed
-    						has_character_flag = character_was_finnish_pagan_reformed
-    						has_character_flag = character_was_west_african_pagan_reformed
-    						has_character_flag = character_was_zun_pagan_reformed
-
-    						has_character_flag = character_was_celtic_pagan
-    						has_character_flag = character_was_celtic_pagan_reformed
-    						has_character_flag = character_was_hellenic_pagan
-    						has_character_flag = character_was_promethean_pagan
-    						has_character_flag = character_was_titan_pagan
-    						has_character_flag = character_was_egyptian_pagan
-    						has_character_flag = character_was_aten_pagan
-    					}
-    				}
+    				has_character_was_religion_flag_trigger = no
     				religion = finnish_pagan_reformed
     			}
     			has_character_flag = character_was_finnish_pagan_reformed
@@ -8009,34 +7633,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	limit = { 
     		OR = {
     			AND = {
-    				NOT = {
-    					OR = {
-    						has_character_flag = character_was_catholic
-    						has_character_flag = character_was_orthodox
-    						has_character_flag = character_was_sunni
-    						has_character_flag = character_was_shiite
-    						has_character_flag = character_was_jewish
-    						has_character_flag = character_was_zoroastrian
-    						has_character_flag = character_was_hinduism
-    						has_character_flag = character_was_buddhism
-    						has_character_flag = character_was_jain
-    						has_character_flag = character_was_norse_pagan_reformed
-    						has_character_flag = character_was_slavic_pagan_reformed
-    						has_character_flag = character_was_tengri_pagan_reformed
-    						has_character_flag = character_was_baltic_pagan_reformed
-    						has_character_flag = character_was_finnish_pagan_reformed
-    						has_character_flag = character_was_west_african_pagan_reformed
-    						has_character_flag = character_was_zun_pagan_reformed
-
-    						has_character_flag = character_was_celtic_pagan
-    						has_character_flag = character_was_celtic_pagan_reformed
-    						has_character_flag = character_was_hellenic_pagan
-    						has_character_flag = character_was_promethean_pagan
-    						has_character_flag = character_was_titan_pagan
-    						has_character_flag = character_was_egyptian_pagan
-    						has_character_flag = character_was_aten_pagan
-    					}
-    				}
+    				has_character_was_religion_flag_trigger = no
     				religion = west_african_pagan_reformed
     			}
     			has_character_flag = character_was_west_african_pagan_reformed
@@ -8049,34 +7646,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	limit = { 
     		OR = {
     			AND = {
-    				NOT = {
-    					OR = {
-    						has_character_flag = character_was_catholic
-    						has_character_flag = character_was_orthodox
-    						has_character_flag = character_was_sunni
-    						has_character_flag = character_was_shiite
-    						has_character_flag = character_was_jewish
-    						has_character_flag = character_was_zoroastrian
-    						has_character_flag = character_was_hinduism
-    						has_character_flag = character_was_buddhism
-    						has_character_flag = character_was_jain
-    						has_character_flag = character_was_norse_pagan_reformed
-    						has_character_flag = character_was_slavic_pagan_reformed
-    						has_character_flag = character_was_tengri_pagan_reformed
-    						has_character_flag = character_was_baltic_pagan_reformed
-    						has_character_flag = character_was_finnish_pagan_reformed
-    						has_character_flag = character_was_west_african_pagan_reformed
-    						has_character_flag = character_was_zun_pagan_reformed
-
-    						has_character_flag = character_was_celtic_pagan
-    						has_character_flag = character_was_celtic_pagan_reformed
-    						has_character_flag = character_was_hellenic_pagan
-    						has_character_flag = character_was_promethean_pagan
-    						has_character_flag = character_was_titan_pagan
-    						has_character_flag = character_was_egyptian_pagan
-    						has_character_flag = character_was_aten_pagan
-    					}
-    				}
+    				has_character_was_religion_flag_trigger = no
     				religion = zun_pagan_reformed
     			}
     			has_character_flag = character_was_zun_pagan_reformed
@@ -8086,79 +7656,25 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	clr_character_flag = character_was_zun_pagan_reformed
     }
 
-    ##### ACR #####
+    ### ACR ###
     if = {
     	limit = { 
     		OR = {
     			AND = {
-    				NOT = {
-    					OR = {
-    						has_character_flag = character_was_catholic
-    						has_character_flag = character_was_orthodox
-    						has_character_flag = character_was_sunni
-    						has_character_flag = character_was_shiite
-    						has_character_flag = character_was_jewish
-    						has_character_flag = character_was_zoroastrian
-    						has_character_flag = character_was_hinduism
-    						has_character_flag = character_was_buddhism
-    						has_character_flag = character_was_jain
-    						has_character_flag = character_was_norse_pagan_reformed
-    						has_character_flag = character_was_slavic_pagan_reformed
-    						has_character_flag = character_was_tengri_pagan_reformed
-    						has_character_flag = character_was_baltic_pagan_reformed
-    						has_character_flag = character_was_finnish_pagan_reformed
-    						has_character_flag = character_was_west_african_pagan_reformed
-    						has_character_flag = character_was_zun_pagan_reformed
-
-    						has_character_flag = character_was_celtic_pagan
-    						has_character_flag = character_was_celtic_pagan_reformed
-    						has_character_flag = character_was_hellenic_pagan
-    						has_character_flag = character_was_promethean_pagan
-    						has_character_flag = character_was_titan_pagan
-    						has_character_flag = character_was_egyptian_pagan
-    						has_character_flag = character_was_aten_pagan
-    					}
-    				}
+    				has_character_was_religion_flag_trigger = no
     				religion = celtic_pagan
     			}
     			has_character_flag = character_was_celtic_pagan
 			}
     	}
-    	add_trait = secretly_celtic_pagan_reformed
-    	clr_character_flag = character_was_celtic_pagan_reformed
+    	add_trait = secretly_celtic_pagan
+    	clr_character_flag = character_was_celtic_pagan
     }
     if = {
     	limit = { 
     		OR = {
     			AND = {
-    				NOT = {
-    					OR = {
-    						has_character_flag = character_was_catholic
-    						has_character_flag = character_was_orthodox
-    						has_character_flag = character_was_sunni
-    						has_character_flag = character_was_shiite
-    						has_character_flag = character_was_jewish
-    						has_character_flag = character_was_zoroastrian
-    						has_character_flag = character_was_hinduism
-    						has_character_flag = character_was_buddhism
-    						has_character_flag = character_was_jain
-    						has_character_flag = character_was_norse_pagan_reformed
-    						has_character_flag = character_was_slavic_pagan_reformed
-    						has_character_flag = character_was_tengri_pagan_reformed
-    						has_character_flag = character_was_baltic_pagan_reformed
-    						has_character_flag = character_was_finnish_pagan_reformed
-    						has_character_flag = character_was_west_african_pagan_reformed
-    						has_character_flag = character_was_zun_pagan_reformed
-
-    						has_character_flag = character_was_celtic_pagan
-    						has_character_flag = character_was_celtic_pagan_reformed
-    						has_character_flag = character_was_hellenic_pagan
-    						has_character_flag = character_was_promethean_pagan
-    						has_character_flag = character_was_titan_pagan
-    						has_character_flag = character_was_egyptian_pagan
-    						has_character_flag = character_was_aten_pagan
-    					}
-    				}
+    				has_character_was_religion_flag_trigger = no
     				religion = celtic_pagan_reformed
     			}
     			has_character_flag = character_was_celtic_pagan_reformed
@@ -8171,34 +7687,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	limit = { 
     		OR = {
     			AND = {
-    				NOT = {
-    					OR = {
-    						has_character_flag = character_was_catholic
-    						has_character_flag = character_was_orthodox
-    						has_character_flag = character_was_sunni
-    						has_character_flag = character_was_shiite
-    						has_character_flag = character_was_jewish
-    						has_character_flag = character_was_zoroastrian
-    						has_character_flag = character_was_hinduism
-    						has_character_flag = character_was_buddhism
-    						has_character_flag = character_was_jain
-    						has_character_flag = character_was_norse_pagan_reformed
-    						has_character_flag = character_was_slavic_pagan_reformed
-    						has_character_flag = character_was_tengri_pagan_reformed
-    						has_character_flag = character_was_baltic_pagan_reformed
-    						has_character_flag = character_was_finnish_pagan_reformed
-    						has_character_flag = character_was_west_african_pagan_reformed
-    						has_character_flag = character_was_zun_pagan_reformed
-
-    						has_character_flag = character_was_celtic_pagan
-    						has_character_flag = character_was_celtic_pagan_reformed
-    						has_character_flag = character_was_hellenic_pagan
-    						has_character_flag = character_was_promethean_pagan
-    						has_character_flag = character_was_titan_pagan
-    						has_character_flag = character_was_egyptian_pagan
-    						has_character_flag = character_was_aten_pagan
-    					}
-    				}
+    				has_character_was_religion_flag_trigger = no
     				religion = hellenic_pagan
     			}
     			has_character_flag = character_was_hellenic_pagan
@@ -8211,34 +7700,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	limit = { 
     		OR = {
     			AND = {
-    				NOT = {
-    					OR = {
-    						has_character_flag = character_was_catholic
-    						has_character_flag = character_was_orthodox
-    						has_character_flag = character_was_sunni
-    						has_character_flag = character_was_shiite
-    						has_character_flag = character_was_jewish
-    						has_character_flag = character_was_zoroastrian
-    						has_character_flag = character_was_hinduism
-    						has_character_flag = character_was_buddhism
-    						has_character_flag = character_was_jain
-    						has_character_flag = character_was_norse_pagan_reformed
-    						has_character_flag = character_was_slavic_pagan_reformed
-    						has_character_flag = character_was_tengri_pagan_reformed
-    						has_character_flag = character_was_baltic_pagan_reformed
-    						has_character_flag = character_was_finnish_pagan_reformed
-    						has_character_flag = character_was_west_african_pagan_reformed
-    						has_character_flag = character_was_zun_pagan_reformed
-
-    						has_character_flag = character_was_celtic_pagan
-    						has_character_flag = character_was_celtic_pagan_reformed
-    						has_character_flag = character_was_hellenic_pagan
-    						has_character_flag = character_was_promethean_pagan
-    						has_character_flag = character_was_titan_pagan
-    						has_character_flag = character_was_egyptian_pagan
-    						has_character_flag = character_was_aten_pagan
-    					}
-    				}
+    				has_character_was_religion_flag_trigger = no
     				religion = promethean_pagan
     			}
     			has_character_flag = character_was_promethean_pagan
@@ -8251,34 +7713,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	limit = { 
     		OR = {
     			AND = {
-    				NOT = {
-    					OR = {
-    						has_character_flag = character_was_catholic
-    						has_character_flag = character_was_orthodox
-    						has_character_flag = character_was_sunni
-    						has_character_flag = character_was_shiite
-    						has_character_flag = character_was_jewish
-    						has_character_flag = character_was_zoroastrian
-    						has_character_flag = character_was_hinduism
-    						has_character_flag = character_was_buddhism
-    						has_character_flag = character_was_jain
-    						has_character_flag = character_was_norse_pagan_reformed
-    						has_character_flag = character_was_slavic_pagan_reformed
-    						has_character_flag = character_was_tengri_pagan_reformed
-    						has_character_flag = character_was_baltic_pagan_reformed
-    						has_character_flag = character_was_finnish_pagan_reformed
-    						has_character_flag = character_was_west_african_pagan_reformed
-    						has_character_flag = character_was_zun_pagan_reformed
-
-    						has_character_flag = character_was_celtic_pagan
-    						has_character_flag = character_was_celtic_pagan_reformed
-    						has_character_flag = character_was_hellenic_pagan
-    						has_character_flag = character_was_promethean_pagan
-    						has_character_flag = character_was_titan_pagan
-    						has_character_flag = character_was_egyptian_pagan
-    						has_character_flag = character_was_aten_pagan
-    					}
-    				}
+    				has_character_was_religion_flag_trigger = no
     				religion = titan_pagan
     			}
     			has_character_flag = character_was_titan_pagan
@@ -8291,34 +7726,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	limit = { 
     		OR = {
     			AND = {
-    				NOT = {
-    					OR = {
-    						has_character_flag = character_was_catholic
-    						has_character_flag = character_was_orthodox
-    						has_character_flag = character_was_sunni
-    						has_character_flag = character_was_shiite
-    						has_character_flag = character_was_jewish
-    						has_character_flag = character_was_zoroastrian
-    						has_character_flag = character_was_hinduism
-    						has_character_flag = character_was_buddhism
-    						has_character_flag = character_was_jain
-    						has_character_flag = character_was_norse_pagan_reformed
-    						has_character_flag = character_was_slavic_pagan_reformed
-    						has_character_flag = character_was_tengri_pagan_reformed
-    						has_character_flag = character_was_baltic_pagan_reformed
-    						has_character_flag = character_was_finnish_pagan_reformed
-    						has_character_flag = character_was_west_african_pagan_reformed
-    						has_character_flag = character_was_zun_pagan_reformed
-
-    						has_character_flag = character_was_celtic_pagan
-    						has_character_flag = character_was_celtic_pagan_reformed
-    						has_character_flag = character_was_hellenic_pagan
-    						has_character_flag = character_was_promethean_pagan
-    						has_character_flag = character_was_titan_pagan
-    						has_character_flag = character_was_egyptian_pagan
-    						has_character_flag = character_was_aten_pagan
-    					}
-    				}
+    				has_character_was_religion_flag_trigger = no
     				religion = egyptian_pagan
     			}
     			has_character_flag = character_was_egyptian_pagan
@@ -8331,34 +7739,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	limit = { 
     		OR = {
     			AND = {
-    				NOT = {
-    					OR = {
-    						has_character_flag = character_was_catholic
-    						has_character_flag = character_was_orthodox
-    						has_character_flag = character_was_sunni
-    						has_character_flag = character_was_shiite
-    						has_character_flag = character_was_jewish
-    						has_character_flag = character_was_zoroastrian
-    						has_character_flag = character_was_hinduism
-    						has_character_flag = character_was_buddhism
-    						has_character_flag = character_was_jain
-    						has_character_flag = character_was_norse_pagan_reformed
-    						has_character_flag = character_was_slavic_pagan_reformed
-    						has_character_flag = character_was_tengri_pagan_reformed
-    						has_character_flag = character_was_baltic_pagan_reformed
-    						has_character_flag = character_was_finnish_pagan_reformed
-    						has_character_flag = character_was_west_african_pagan_reformed
-    						has_character_flag = character_was_zun_pagan_reformed
-
-    						has_character_flag = character_was_celtic_pagan
-    						has_character_flag = character_was_celtic_pagan_reformed
-    						has_character_flag = character_was_hellenic_pagan
-    						has_character_flag = character_was_promethean_pagan
-    						has_character_flag = character_was_titan_pagan
-    						has_character_flag = character_was_egyptian_pagan
-    						has_character_flag = character_was_aten_pagan
-    					}
-    				}
+    				has_character_was_religion_flag_trigger = no
     				religion = aten_pagan
     			}
     			has_character_flag = character_was_aten_pagan

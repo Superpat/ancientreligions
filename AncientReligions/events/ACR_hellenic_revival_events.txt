@@ -1021,7 +1021,7 @@ long_character_event = {
 
 		religion = hellenic_pagan
 		add_trait = sympathy_christendom
-		FROMFROM = {
+		FROM = {
 			religion = hellenic_pagan
 			add_trait = sympathy_christendom
 		}
@@ -1046,7 +1046,7 @@ long_character_event = {
 		# convert stealthily, requires 2.7 (but not MnM)
 		add_religion_char_flag_effect = yes
 		add_trait = secretly_hellenic_pagan
-		FROMFROM ={
+		FROM ={
 			add_religion_char_flag_effect = yes
 			add_trait = secretly_hellenic_pagan
 		}
@@ -1059,6 +1059,10 @@ long_character_event = {
 			}
 		}
 		name = ancrel.2029.d
+
+		FROM = {
+			imprison = ROOT
+		}
 	}
 }
 

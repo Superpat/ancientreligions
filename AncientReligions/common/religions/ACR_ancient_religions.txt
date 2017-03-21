@@ -16,7 +16,7 @@ pagan_group = {
 			GOD_JUNO GOD_VESTA GOD_MINERVA GOD_CERES GOD_DIANA GOD_VENUS GOD_MARS GOD_MERCURY GOD_SATURN GOD_NEPTUNE GOD_VULCAN GOD_APOLLO
 		}
 		evil_god_names = {
-			GOD_PLUTO
+			GOD_PLUTO GOD_HECATE
 		}
 		unit_modifier = {
 			levy_size = 0.3

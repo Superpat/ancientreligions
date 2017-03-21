@@ -1,0 +1,85 @@
+currency_name_secret_religious_society_celtic_pagan;Devotion;Dévotion;Hingabe;;Devoción;;;;x
+currency_name_secret_religious_society_celtic_pagan_reformed;Devotion;Dévotion;Hingabe;;Devoción;;;;x
+currency_name_secret_religious_society_hellenic_pagan;Devotion;Dévotion;Hingabe;;Devoción;;;;x
+currency_name_secret_religious_society_promethean_pagan;Devotion;Dévotion;Hingabe;;Devoción;;;;x
+currency_name_secret_religious_society_titan_pagan;Devotion;Dévotion;Hingabe;;Devoción;;;;x
+currency_name_secret_religious_society_egyptian_pagan;Devotion;Dévotion;Hingabe;;Devoción;;;;x
+currency_name_secret_religious_society_aten_pagan;Devotion;Dévotion;Hingabe;;Devoción;;;;x
+secret_religious_society_celtic_pagan;the Hidden Circle;;;;;;;;x
+secret_religious_society_celtic_pagan_desc;The followers of the Celtic faith have long known persecution, especially from Roman hands. As always, they persevere, even if they must use deception. Though they utter empty prayers to foreign gods, they secretly meet in private chambers and secluded groves to offer devotion and sacrifice to Danu, the Mother and source of life. They keep their faith knowing that some day mighty Taranis the Thunderer will strike down those who have persecuted the faithful.;;;;;;;;x
+secret_religious_society_celtic_pagan_reformed;Danu's Faithfull;;;;;;;;x
+secret_religious_society_celtic_pagan_reformed_desc;The Druidic faith may be young, but it's followers are no less devout than any other. Even when they must publicly profess faith in false gods, the children of Danu plan and prepare for the day when they might worship the gods in the light of day. They know that none can long stand against might of Lug of the Long Spear, and those that opress them will get what they deserve.;;;;;;;;x
+secret_religious_society_hellenic_pagan;the True Hellenes;;;;;;;;x
+secret_religious_society_hellenic_pagan_desc;For centuries the faith of the people of Greece and Rome was followed by millions. Though the number of adherents has dramatically shrunk, those that remain make up for it with their devotion. They deceive the followers of upstart and barbarian gods, though they send their prayers to the Olympians. They have struggled, but the True Hellenes know they will be victorious in the end, because none can stand against the fury of Almighty Zeus.;;;;;;;;x
+secret_religious_society_promethean_pagan;the Enlightened;;;;;;;;x
+secret_religious_society_promethean_pagan_desc;The Prometheans know that they must stand against the darkness of ignorance. They must preserve the light of enlightenment and Prometheus' wisdom. Theirs is a battle for the very future of the human race. Such a divine mission cannot be taken lightly, so they play the part of the devoted in the company of the ignorant and secretly prepare for the day that they can bring them into the light. In the end, it is light that drives away the darkness.;;;;;;;;x
+secret_religious_society_titan_pagan;the Chained;;;;;;;;x
+secret_religious_society_titan_pagan_desc;The Titan Cultist is one who understands toil and bondage. They hold back their righteous fury and look to their gods, bound in Tartarus still by the treacherous Olympians, for the strength to wait. The mighty Titans have lain in Tartarus, bound by divinely wrought chains, for whole ages of time. The least their mortal followers can do is wait for the right moment to strike. When that time comes, none shall miss it, for the very Earth itself will shake with the fury of Kronos.;;;;;;;;x
+secret_religious_society_egyptian_pagan;the Keepers of Ma'at;;;;;;;;x
+secret_religious_society_egyptian_pagan_desc;The followers of Kemetism continue to practice their ancient religion, despite being forced to profess faith in other gods. They organize in secret shrines and hidden chambers, honoring the timeless gods of Egypt. They know that they follow the greatest of gods, ones that led a people to build great monuments while other peoples were still wondering herders. Every day they look up and see the watchful eye of Ra, unblinking and eternal, and their faith remains strong. They know that soon their plans will come to fruition and Ra's burning gaze will scorch the unfaithfull.;;;;;;;;x
+secret_religious_society_aten_pagan;the Speakers of Aten;;;;;;;;x
+secret_religious_society_aten_pagan_desc;The followers of Aten know that they have always been the few against the many. This does not shake their faith, however. They look up each day at the undeniable truth. Aten is the giver of light, warmth, and life. So, they hide their faith from the deniers of Aten's truth, knowing eachother from the small gold discs they wear as symbols of their devotion. Just as Aten rises every day to scatter the darkness, the Speakers of Aten know that their long night too will end.;;;;;;;;x
+secret_religious_society_celtic_pagan_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_celtic_pagan_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_celtic_pagan_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_celtic_pagan_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_celtic_pagan_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_celtic_pagan_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_celtic_pagan_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_celtic_pagan_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_society_celtic_pagan_reformed_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_celtic_pagan_reformed_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_celtic_pagan_reformed_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_celtic_pagan_reformed_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_celtic_pagan_reformed_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_celtic_pagan_reformed_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_celtic_pagan_reformed_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_celtic_pagan_reformed_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_society_hellenic_pagan_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_hellenic_pagan_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_hellenic_pagan_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_hellenic_pagan_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_hellenic_pagan_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_hellenic_pagan_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_hellenic_pagan_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_hellenic_pagan_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_society_promethean_pagan_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_promethean_pagan_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_promethean_pagan_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_promethean_pagan_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_promethean_pagan_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_promethean_pagan_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_promethean_pagan_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_promethean_pagan_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_society_titan_pagan_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_titan_pagan_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_titan_pagan_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_titan_pagan_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_titan_pagan_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_titan_pagan_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_titan_pagan_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_titan_pagan_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_society_egyptian_pagan_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_egyptian_pagan_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_egyptian_pagan_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_egyptian_pagan_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_egyptian_pagan_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_egyptian_pagan_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_egyptian_pagan_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_egyptian_pagan_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_society_aten_pagan_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_aten_pagan_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_aten_pagan_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_aten_pagan_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_aten_pagan_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_aten_pagan_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_aten_pagan_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_aten_pagan_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_society_celtic_pagan_leader_desc;The High Priest of $SOCIETY|Y$, leading the international effort of bringing more people into the fold.;Le grand prêtre de $SOCIETY|Y$ dirige l'effort mondial visant à rassembler davantage de personnes en son sein.;Der Hohepriester des $SOCIETY|Y$-Zirkels, der die
+secret_religious_society_celtic_pagan_reformed_leader_desc;The High Priest of $SOCIETY|Y$, leading the international effort of bringing more people into the fold.;Le grand prêtre de $SOCIETY|Y$ dirige l'effort mondial visant à rassembler davantage de personnes en son sein.;Der Hohepriester des $SOCIETY|Y$-Zirkels, der die
+secret_religious_society_hellenic_pagan_leader_desc;The High Priest of $SOCIETY|Y$, leading the international effort of bringing more people into the fold.;Le grand prêtre de $SOCIETY|Y$ dirige l'effort mondial visant à rassembler davantage de personnes en son sein.;Der Hohepriester des $SOCIETY|Y$-Zirkels, der die
+secret_religious_society_promethean_pagan_leader_desc;The High Priest of $SOCIETY|Y$, leading the international effort of bringing more people into the fold.;Le grand prêtre de $SOCIETY|Y$ dirige l'effort mondial visant à rassembler davantage de personnes en son sein.;Der Hohepriester des $SOCIETY|Y$-Zirkels, der die
+secret_religious_society_titan_pagan_leader_desc;The High Priest of $SOCIETY|Y$, leading the international effort of bringing more people into the fold.;Le grand prêtre de $SOCIETY|Y$ dirige l'effort mondial visant à rassembler davantage de personnes en son sein.;Der Hohepriester des $SOCIETY|Y$-Zirkels, der die
+secret_religious_society_egyptian_pagan_leader_desc;The High Priest of $SOCIETY|Y$, leading the international effort of bringing more people into the fold.;Le grand prêtre de $SOCIETY|Y$ dirige l'effort mondial visant à rassembler davantage de personnes en son sein.;Der Hohepriester des $SOCIETY|Y$-Zirkels, der die
+secret_religious_society_aten_pagan_leader_desc;The High Priest of $SOCIETY|Y$, leading the international effort of bringing more people into the fold.;Le grand prêtre de $SOCIETY|Y$ dirige l'effort mondial visant à rassembler davantage de personnes en son sein.;Der Hohepriester des $SOCIETY|Y$-Zirkels, der die
+############### Devil Worshippers;;;;;;;;;x

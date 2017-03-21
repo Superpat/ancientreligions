@@ -3084,6 +3084,7 @@ has_prevs_secret_religion_truly_trigger = {
 	}
 }
 
+
 is_in_prevs_interesting_society_trigger = {
 	OR = {
 		AND = {
@@ -4644,3 +4645,17 @@ has_unsafe_secret_religion = {
 		}
 	}
 }
+
+
+
+				
+
+
+				
+
+
+
+				
+
+
+		

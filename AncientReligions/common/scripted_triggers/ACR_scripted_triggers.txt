@@ -41,7 +41,7 @@ is_attracted_to_prev = {
 root_prev_mutual_attraction = {
 	ROOT = {
 		is_attracted_to_prev = yes
-		PREV = {
+		PREVPREV = {
 			is_attracted_to_prev = yes
 		}
 	}
@@ -93,6 +93,35 @@ supernatural_events_trigger = {
 			has_game_rule = { name = supernatural_events value = on }
 			ai = no
 		}
+	}
+}
+
+has_character_was_religion_flag_trigger = {
+	OR = {
+		has_character_flag = character_was_catholic
+		has_character_flag = character_was_orthodox
+		has_character_flag = character_was_sunni
+		has_character_flag = character_was_shiite
+		has_character_flag = character_was_jewish
+		has_character_flag = character_was_zoroastrian
+		has_character_flag = character_was_hinduism
+		has_character_flag = character_was_buddhism
+		has_character_flag = character_was_jain
+		has_character_flag = character_was_norse_pagan_reformed
+		has_character_flag = character_was_slavic_pagan_reformed
+		has_character_flag = character_was_tengri_pagan_reformed
+		has_character_flag = character_was_baltic_pagan_reformed
+		has_character_flag = character_was_finnish_pagan_reformed
+		has_character_flag = character_was_west_african_pagan_reformed
+		has_character_flag = character_was_zun_pagan_reformed
+
+		has_character_flag = character_was_celtic_pagan
+		has_character_flag = character_was_celtic_pagan_reformed
+		has_character_flag = character_was_hellenic_pagan
+		has_character_flag = character_was_promethean_pagan
+		has_character_flag = character_was_titan_pagan
+		has_character_flag = character_was_egyptian_pagan
+		has_character_flag = character_was_aten_pagan
 	}
 }
 
@@ -180,7 +209,7 @@ has_coven_prerequisites = {
 	}
 }
 
-has_sand_snake_prerequisites = {
+has_sand_snakes_prerequisites = {
 	has_common_devilworship_prerequisites = yes
 	OR = {
 		religion = egyptian_pagan

@@ -60,6 +60,7 @@ join_secret_religious_society_based_on_secret_religion_trait_effect = {
 		secretly_west_african_pagan_reformed = { join_society = secret_religious_society_west_african_pagan_reformed }
 		secretly_zun_pagan_reformed = { join_society = secret_religious_society_zun_pagan_reformed }
 
+		### ACR ###
 		secretly_celtic_pagan = { join_society = secret_religious_society_celtic_pagan }
 		secretly_celtic_pagan_reformed = { join_society = secret_religious_society_celtic_pagan_reformed }
 		secretly_hellenic_pagan = { join_society = secret_religious_society_hellenic_pagan }

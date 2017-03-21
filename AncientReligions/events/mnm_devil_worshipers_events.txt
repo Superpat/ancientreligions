@@ -57,9 +57,7 @@ character_event = {
 
 	#Approving of heretics
 	option = {
-		name = {
-			text = EVTOPTA_7001 #If God didn't want us to ask questions, why did he make us curious?
-		}
+		name = EVTOPTA_7001 #If God didn't want us to ask questions, why did he make us curious?
 		
 		trigger = {
 			OR = {
@@ -187,9 +185,7 @@ character_event = {
 
 	#Disapproving of heretics
 	option = {
-		name = {
-			text = EVTOPTB_7001
-		}
+		name = EVTOPTB_7001
 		
 		custom_tooltip = { text = EVTOPTB_7001_TT }
 
@@ -11159,7 +11155,7 @@ character_event = {
 }
 
 # Province Bounce - Agitation 
-character_event = {
+province_event = {
 	id = MNM.20046
 	hide_window = yes
 	
@@ -11171,7 +11167,7 @@ character_event = {
 }
 
 # Province Bounce - Depraved Feast 
-character_event = {
+province_event = {
 	id = MNM.20047
 	hide_window = yes
 	

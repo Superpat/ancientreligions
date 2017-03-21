@@ -401,8 +401,6 @@ society_decisions = {
 	}
 }	
 
-
-
 ###THE ASSASSINS###
 society_decisions = {
 	#Assassins
@@ -1233,12 +1231,9 @@ society_decisions = {
 			}
 		}
 	}
-
-
 }
 
 targeted_decisions = {
-
 	#Power: Dark healing
 	devil_worshipers_dark_healing = {
 		is_in_society = yes
@@ -2033,7 +2028,7 @@ targeted_decisions = {
 		}
 		allow = {
 			OR = {
-				religion = celtic
+				religion = celtic_pagan
 				religion = celtic_pagan_reformed
 			}
 			is_inaccessible_trigger = no
@@ -2562,7 +2557,7 @@ targeted_decisions = {
 					OR = {
 						AND = {
 							is_landed = yes
-							capital_holding = { holding_type = TEMPLE }
+							capital_holding = { holding_type = temple }
 						}
 					    AND = {
 					        tier = baron
@@ -2570,7 +2565,7 @@ targeted_decisions = {
 					            any_demesne_province = {
 					                any_province_holding = {
 					                    owner = { character = ROOT }
-					                    holding_type = TEMPLE
+					                    holding_type = temple
 					                }
 					            }
 					        }
@@ -3114,5 +3109,4 @@ targeted_decisions = {
 			factor = 0
 		}
 	}
-	
 }

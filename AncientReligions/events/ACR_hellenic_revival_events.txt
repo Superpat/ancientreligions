@@ -92,6 +92,7 @@ character_event = {
 	option = { # allow the philosopher to enter the court
 		name = ancrel.2000.a
 		custom_tooltip = {
+			text = ancrel.2000.a.tt
 			create_character = {
 				random_traits = no
 				dynasty = none
@@ -131,7 +132,7 @@ character_event = {
 
 	option = { # deny the request
 		name = ancrel.2000.b
-		custom_tooltip = { text = ancrel.2000.tt }
+		custom_tooltip = { text = ancrel.2000.b.tt }
 	}
 }
 

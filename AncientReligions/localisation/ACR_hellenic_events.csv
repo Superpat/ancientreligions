@@ -16,6 +16,7 @@ ancrel_imperial_chronicle;Imperial Chronicle;;;;;;;;;;;;;x
 ancrel_imperial_chronicle_desc;A recently published chronicle of the last century of Imperial History has cast this character's rule in a positive light, giving them increased legitimacy in the eyes of the Empire.;;;;;;;;;;;;;x
 ancrel.2000.desc;A stuttering but brilliant teacher of philosophy from the University of Constantinople has approached you and offered their services as an advisor. However, some at court worry the professor's reverence for Plato borders on the heretical.\n\nWhat is your answer?;;;;;;;;;;;;;x
 ancrel.2000.a;The Empire could use wise council in this time of need.;;;;;;;;;;;;;x
+ancrel.2000.a.tt;The Philosopher joins your court.;;;;;;;;;;;;;x
 ancrel.2000.b;I need swords and coin, not words!;;;;;;;;;;;;;x
 ancrel.2000.b.tt;The professor of philosophy stays at the University.;;;;;;;;;;;;;x
 ancrel.2002.desc;The professor who petitioned to join your court, [From.GetFirstNameWithNick], has come to you with a request. [From.GetSheHeCap] wishes to be the next Hypatos Philosphon, the head of the University. "From this position I can better serve you and the Empire," [From.GetSheHe] says. The burghers will not like this interference in local affairs.;;;;;;;;;;;;;x

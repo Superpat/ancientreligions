@@ -82,4 +82,14 @@ secret_religious_society_promethean_pagan_leader_desc;The High Priest of $SOCIET
 secret_religious_society_titan_pagan_leader_desc;The High Priest of $SOCIETY|Y$, leading the international effort of bringing more people into the fold.;Le grand prêtre de $SOCIETY|Y$ dirige l'effort mondial visant à rassembler davantage de personnes en son sein.;Der Hohepriester des $SOCIETY|Y$-Zirkels, der die
 secret_religious_society_egyptian_pagan_leader_desc;The High Priest of $SOCIETY|Y$, leading the international effort of bringing more people into the fold.;Le grand prêtre de $SOCIETY|Y$ dirige l'effort mondial visant à rassembler davantage de personnes en son sein.;Der Hohepriester des $SOCIETY|Y$-Zirkels, der die
 secret_religious_society_aten_pagan_leader_desc;The High Priest of $SOCIETY|Y$, leading the international effort of bringing more people into the fold.;Le grand prêtre de $SOCIETY|Y$ dirige l'effort mondial visant à rassembler davantage de personnes en son sein.;Der Hohepriester des $SOCIETY|Y$-Zirkels, der die
-############### Devil Worshippers;;;;;;;;;x
+############### Devil Worshippers;;;;;;;;;;;;;x
+unseelie_recruit;Recruit to the Unseelie Petitioners;;;;;;;;;;;;;x
+unseelie_recruit_desc;Attempt to find out whether §Y[Root.GetTitledFirstName]§! is open to the power of the occult. If so, you may invite [Root.GetHerHim] to become a Petitioner.;;;;;;;;;;;;;x
+coven_recruit;Recruit to The Coven;;;;;;;;;;;;;x
+coven_recruit_desc;Attempt to find out whether §Y[Root.GetTitledFirstName]§! is open to the power of the occult. If so, you may invite [Root.GetHerHim] to become a member of The Coven.;;;;;;;;;;;;;x
+sand_snakes_recruit;Recruit to The Fangs of Apep;;;;;;;;;;;;;x
+sand_snakes_recruit_desc;Attempt to find out whether §Y[Root.GetTitledFirstName]§! is open to the power of the occult. If so, you may invite [Root.GetHerHim] to become a member of The Fangs of Apep.;;;;;;;;;;;;;x
+coven_recruit_desc;Attempt to find out whether §Y[Root.GetTitledFirstName]§! is open to the power of the occult. If so, you may invite [Root.GetHerHim] to become a Fang.;;;;;;;;;;;;;x
+unseelie_recruit_block_tooltip;Has not been approached by the Unseelie Petitioners before.;;;;;;;;;;;;;x
+coven_recruit_block_tooltip;Has not been approached by The Coven before.;;;;;;;;;;;;;x
+sand_snakes_recruit_block_tooltip;Has not been approached by the Fangs of Apep before.;;;;;;;;;;;;;x

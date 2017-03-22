@@ -86,9 +86,7 @@ letter_event = {
 
 	#Yes
 	option = {
-		name = {
-			text = EVTOPTA_10001
-		}
+		name = EVTOPTA_10001
 		if = { limit = { society_rank < 4 } #todo: Remember you can rankup to 4 in some societies
 			society_rank_up = 1
 		}
@@ -624,8 +622,6 @@ character_event = {
 letter_event = {
 	id = MNM.10023
 	border = GFX_event_letter_frame_religion
-
-	is_triggered_only = yes
 
 	#desc = {
 	#	trigger = { is_devil_worshiper_trigger = yes }
@@ -2628,11 +2624,8 @@ character_event = {
 			has_quest = quest_the_assassins_collect_debt
 			has_quest = quest_the_devil_worshipers_demonic_possession
 			has_quest = quest_hermetic_gather_ingredients
-			has_quest = quest_devil_worshipers_corrupt_priest
 			has_quest = quest_hermetics_infiltrate_laboratory
-			has_quest = quest_hermetics_find_text
 			has_quest = quest_devil_worshipers_corrupt_priest
-			has_quest = quest_the_devil_worshipers_demonic_possession
 			has_quest = quest_the_assassins_protege
 			has_quest = quest_hermetics_find_text
 			has_quest = quest_secret_religious_societies_induct_ruler

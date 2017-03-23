@@ -31,4 +31,24 @@ defined_text = {
 		trigger = { always = yes }
 		localisation_key = AncientThinker_Xenophon
 	}
+	text = {
+		trigger = { always = yes }
+		localisation_key = AncientThinker_Pliny
+	}
+	text = {
+		trigger = { always = yes }
+		localisation_key = AncientThinker_Epicurious
+	}
+	text = {
+		trigger = { always = yes }
+		localisation_key = AncientThinker_Zeno
+	}
+	text = {
+		trigger = { always = yes }
+		localisation_key = AncientThinker_Posidonius
+	}
+	text = {
+		trigger = { always = yes }
+		localisation_key = AncientThinker_Seneca
+	}
 }

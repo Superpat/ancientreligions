@@ -554,6 +554,7 @@ decisions = {
 			factor = 1
 			modifier = {
 				factor = 0.3 #Decrease chance AI will do this
+				always = yes
 			}
 			modifier = {
 				factor = 0.1
@@ -696,6 +697,7 @@ decisions = {
 			factor = 1
 			modifier = {
 				factor = 0.3 #Decrease chance AI will do this
+				always = yes
 			}
 			modifier = {
 				factor = 0.1
@@ -776,6 +778,7 @@ decisions = {
 			factor = 1
 			modifier = {
 				factor = 0.75 #Decrease chance AI will do this - they'll still do it eventually anyways, this will just prevent them from doing it immediately
+				always = yes
 			}
 		}
 	}
@@ -816,6 +819,7 @@ decisions = {
 			factor = 1
 			modifier = {
 				factor = 0.75 #Decrease chance AI will do this - they'll still do it eventually anyways, this will just prevent them from doing it immediately
+				always = yes
 			}
 		}
 	}
@@ -1090,6 +1094,7 @@ decisions = {
 			}
 			modifier = {
 				factor = 0.002 # Slow it down
+				always = yes
 			}
 		}
 	}

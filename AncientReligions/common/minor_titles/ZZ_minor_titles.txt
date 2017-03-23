@@ -27,7 +27,7 @@ title_commander = {
 					is_female = no
 					AND = {
 						is_feminist_religion_trigger = yes
-						liege = { religion = PREV }
+						liege = { religion = ROOT }
 					}	
 					liege = {
 						OR = {

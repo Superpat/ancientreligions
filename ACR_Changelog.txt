@@ -1,10 +1,10 @@
-2017-??-?? v0.39 "Ares"
+2017-03-23 v0.39 "Ares"
 -------------------------
 
 General:
  - Added unit modifiers to Hellenic, Titan, Promethean, Kemetic, and Atenic.
  - Compatibility with CK2 2.7.
-   - Your old saves are probably not gonna work, so back them up!
+   - Your old saves will probably work, but back them up just in case!
  - Secret Religious Societies are available for all 7 religions.
 
 Celtic:

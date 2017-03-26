@@ -1,3 +1,16 @@
+-------------------------
+
+General:
+ - Added some missing localisations.
+ - Fixed CTD bug when viewing the religion pane.
+
+Celtic:
+ - The Pendragon title is no longer applied to every Welsh/Breton/Pictish Emperor of Britania, only the first.
+
+Promethean:
+ - Fixes the Crotone Academy of Engineering's bonus being backwards (+5% local build time, rather than -5%).
+
+
 2017-03-23 v0.39 "Ares"
 -------------------------
 

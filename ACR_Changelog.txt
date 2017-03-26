@@ -11,6 +11,11 @@ Celtic:
 Promethean:
  - Fixes the Crotone Academy of Engineering's bonus being backwards (+5% local build time, rather than -5%).
 
+ Atenic:
+ - Aten characters now use the Iqta government by default.
+   - This was intended to go out in Ares but was forgotten.
+   - This change is probably temporary, a custom government for Aten characters is probably in the cards.
+
 
 2017-03-23 v0.39 "Ares"
 -------------------------

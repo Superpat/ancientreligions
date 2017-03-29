@@ -502,7 +502,8 @@ narrative_event = {
 	hide_from = yes
 	
 	only_playable = yes
-	ai = no
+
+	is_triggered_only = true
 
 	trigger = {
 		NOT = {
@@ -517,7 +518,9 @@ narrative_event = {
 				culture = breton
 				culture = pictish
 		}
-		FROM = e_britannia
+		e_britannia = {
+			title = FROM
+		}
 	}
 
 	immediate = {

@@ -168,14 +168,14 @@ acr_crotone_arts = {
 	icon = 3
 
 	tech_growth_modifier_culture = 0.05
-	local_revolt_risk = -0.02
+	local_revolt_risk = -0.025
 }
 
 acr_crotone_engineering = {
 	icon = 4
 
 	tech_growth_modifier_economy = 0.05
-	local_build_time_modifier = 0.05
+	local_build_time_modifier = -0.05
 }
 
 acr_crotone_military = {

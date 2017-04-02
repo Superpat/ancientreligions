@@ -488,6 +488,9 @@ character_event = {
 ########################################
 
 # Y Mab Darogan
+# on_create_title
+# on_new_holder
+# ROOT is character, FROM is title
 narrative_event = {
 	id = ancrel.0256
 	title = EVTNAMEancrel.0256
@@ -498,11 +501,13 @@ narrative_event = {
 	show_ROOT = yes
 	hide_from = yes
 	
-	only_rulers = yes
+	only_playable = yes
+
+	is_triggered_only = true
 
 	trigger = {
 		NOT = {
-			has_character_flag = first_brythonic_emperor
+			has_global_flag = ancrel_pendragon
 		}
 		OR = {
 			religion = celtic_pagan
@@ -511,26 +516,24 @@ narrative_event = {
 		OR = {
 				culture = welsh
 				culture = breton
+				culture = pictish
 		}
-		has_landed_title = e_britannia
-		primary_title = { 
-			any_previous_holder = { #Will not fire if Kingdom is usurped by someone else or reformed
-				NOT = {
-					has_character_flag = first_brythonic_emperor
-				}
-			}
+		e_britannia = {
+			title = FROM
 		}
 	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
+
 	immediate = {
 		give_nickname = nick_pendragon
-		set_character_flag = first_brythonic_emperor
+		set_global_flag = ancrel_pendragon
 		prestige = 200
 		piety = 100
 	}
+	
+	weight_multiplier = {
+		factor = 1
+	}
+
 	option = {
 		trigger = {
 			OR = {
@@ -540,6 +543,7 @@ narrative_event = {
 		}
 		name = EVTOPTAancrel.0256 #Ok
 	}
+
 	option = {
 		trigger = {
 			OR = {
@@ -550,6 +554,7 @@ narrative_event = {
 		}
 		name = EVTOPTBancrel.0256
 	}
+
 	option = {
 		trigger = {
 			religion_group = indian_group

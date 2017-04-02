@@ -22,7 +22,10 @@ feudal_governments = {
 				NOT = { religion_group = muslim }
 				NOT = {	primary_title = { is_landless_type_title = no }	}
 			}
-			NOT = {	religion_group = muslim	}
+			NOR = {
+				religion_group = muslim
+				religion = aten_pagan
+			}
 			is_patrician = no
 		}
 		
@@ -66,7 +69,10 @@ feudal_governments = {
 				NOT = { religion_group = muslim }
 				NOT = {	primary_title = { is_landless_type_title = no }	}
 			}
-			religion_group = muslim
+			OR = {
+				religion_group = muslim
+				religion = aten_pagan
+			}
 			is_patrician = no
 		}
 		

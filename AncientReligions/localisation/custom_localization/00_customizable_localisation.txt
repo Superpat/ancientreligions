@@ -3000,11 +3000,11 @@ defined_text = {
 		trigger = { society_member_of = secret_religious_society_promethean_pagan }
 	}
 	text = {
-		localisation_key = String_chain
+		localisation_key = String_chain_symbol
 		trigger = { society_member_of = secret_religious_society_titan_pagan }
 	}
 	text = {
-		localisation_key = String_eye_of_ra_pendant
+		localisation_key = String_eye_of_ra
 		trigger = { society_member_of = secret_religious_society_egyptian_pagan }
 	}
 	text = {
@@ -3389,7 +3389,7 @@ defined_text = {
 		}
 	}
 	text = {
-		localisation_key = String_Titanic
+		localisation_key = String_Titan
 		trigger = {
 			religion = titan_pagan
 		}
@@ -3590,7 +3590,7 @@ defined_text = {
 
 	### ACR ###
 	text = {
-		localisation_key = String_Celt
+		localisation_key = String_Celtic
 		trigger = { true_religion_celtic_pagan_trigger = yes }
 	}
 	text = {
@@ -4030,7 +4030,7 @@ defined_text = {
 		trigger = { true_religion_promethean_pagan_trigger = yes }
 	}
 	text = {
-		localisation_key = String_Titanist
+		localisation_key = String_Titan
 		trigger = { true_religion_titan_pagan_trigger = yes }
 	}
 	text = {
@@ -4966,31 +4966,31 @@ defined_text = {
 		}
 	}
 	text = {
-		localisation_key = String_RedCap
+		localisation_key = String_RedCaps
 		trigger = {
 			society_member_of = unseelie_petitioners
 		}
 	}
 	text = {
-		localisation_key = String_Goblin
+		localisation_key = String_Goblins
 		trigger = {
 			society_member_of = unseelie_petitioners
 		}
 	}
 	text = {
-		localisation_key = String_Fomor
+		localisation_key = String_Fomorians
 		trigger = {
 			society_member_of = unseelie_petitioners
 		}
 	}
 	text = {
-		localisation_key = String_Ker
+		localisation_key = String_Keres
 		trigger = {
 			society_member_of = the_coven
 		}
 	}
 	text = {
-		localisation_key = String_Cacodaemon
+		localisation_key = String_Cacodaemons
 		trigger = {
 			society_member_of = the_coven
 		}
@@ -5009,6 +5009,12 @@ defined_text = {
 	}
 	text = {
 		localisation_key = String_Ammit
+		trigger = {
+			society_member_of = the_sand_snakes
+		}
+	}
+	text = {
+		localisation_key = String_Babi
 		trigger = {
 			society_member_of = the_sand_snakes
 		}
@@ -5204,7 +5210,7 @@ defined_text = {
 	}
 	text = {
 		trigger = { society_member_of = the_sand_snakes }
-		localisation_key = String_Ammit
+		localisation_key = String_Great_Set
 	}
 }
 

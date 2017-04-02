@@ -1,3 +1,27 @@
+2017-04-01 v0.39.0.1 "Polemos"
+-------------------------
+
+General:
+ - Added some missing text in localisations.
+
+Celtic:
+ - The Pendragon title is no longer applied to every Welsh/Breton/Pictish Emperor of Britania, only the first.
+ - Some bits of French translation, provided by Amendile.
+
+Promethean:
+ - Fixes the Crotone Academy of Engineering's bonus being backwards (+5% local build time, rather than -5%).
+ - Prometheans now have access to the Hermetic Society.
+   - Neoplatonist traits give you Hermetic Society currency.
+
+Titan:
+ - Some bits of French translation, provided by lukaslunt.
+
+Atenic:
+ - Aten characters now use the Iqta government by default.
+   - This was intended to go out in Ares but was forgotten.
+   - This change is intended to be temporary; a custom government for Aten characters is probably in the cards.
+
+
 2017-03-23 v0.39 "Ares"
 -------------------------
 

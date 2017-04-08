@@ -446,6 +446,7 @@ culture = {
 	
 	templates = { 
 		"coa_plain_muslim:1"
+#		"coa_plain_pagan:1"
 	}
 
 	color = {

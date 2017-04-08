@@ -885,7 +885,6 @@ gender_laws = {
 			factor = 10
 		}
 	}
-
 	agnatic_succession = {
 		female_dynasty_opinion = -5
 	
@@ -924,7 +923,7 @@ gender_laws = {
 			}
 		}
 	}
-
+	
 	true_cognatic_succession = {
 		male_dynasty_opinion = -5
 		

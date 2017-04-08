@@ -7181,7 +7181,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-    					has_character_was_religion_flag = yes
+    					has_character_was_religion_flag_trigger = yes
     				}
     				religion = catholic
     			}
@@ -7197,7 +7197,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = cathar
     			}
@@ -7213,7 +7213,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = fraticelli
     			}
@@ -7229,7 +7229,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = waldensian
     			}
@@ -7245,7 +7245,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = lollard
     			}
@@ -7261,7 +7261,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = orthodox
     			}
@@ -7277,7 +7277,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = miaphysite
     			}
@@ -7293,7 +7293,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = monophysite
     			}
@@ -7309,7 +7309,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = bogomilist
     			}
@@ -7325,7 +7325,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = monothelite
     			}
@@ -7341,7 +7341,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = iconoclast
     			}
@@ -7357,7 +7357,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = paulician
     			}
@@ -7373,7 +7373,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = nestorian
     			}
@@ -7389,7 +7389,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = messalian
     			}
@@ -7405,7 +7405,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = sunni
     			}
@@ -7421,7 +7421,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = zikri
     			}
@@ -7437,7 +7437,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = yazidi
     			}
@@ -7453,7 +7453,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = ibadi
     			}
@@ -7469,7 +7469,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = kharijite
     			}
@@ -7485,7 +7485,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = shiite
     			}
@@ -7501,7 +7501,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = druze
     			}
@@ -7517,7 +7517,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = hurufi
     			}
@@ -7533,7 +7533,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = jewish
     			}
@@ -7549,7 +7549,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = karaite
     			}
@@ -7565,7 +7565,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = samaritan
     			}
@@ -7581,7 +7581,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = zoroastrian
     			}
@@ -7597,7 +7597,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = mazdaki
     			}
@@ -7613,7 +7613,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = manichean
     			}
@@ -7629,7 +7629,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = hindu
     			}
@@ -7645,7 +7645,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = buddhist
     			}
@@ -7661,7 +7661,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = jain
     			}
@@ -7677,7 +7677,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = norse_pagan_reformed
     			}
@@ -7693,7 +7693,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = slavic_pagan_reformed
     			}
@@ -7709,7 +7709,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = tengri_pagan_reformed
     			}
@@ -7725,7 +7725,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = baltic_pagan_reformed
     			}
@@ -7741,7 +7741,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = finnish_pagan_reformed
     			}
@@ -7757,7 +7757,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = west_african_pagan_reformed
     			}
@@ -7773,7 +7773,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = zun_pagan_reformed
     			}
@@ -7789,7 +7789,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = norse_pagan
     			}
@@ -7805,7 +7805,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = slavic_pagan
     			}
@@ -7821,7 +7821,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = tengri_pagan
     			}
@@ -7837,7 +7837,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = baltic_pagan
     			}
@@ -7853,7 +7853,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = finnish_pagan
     			}
@@ -7869,7 +7869,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = west_african_pagan
     			}
@@ -7885,7 +7885,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = zun_pagan
     			}
@@ -7903,7 +7903,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = celtic_pagan
     			}
@@ -7919,7 +7919,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = celtic_pagan_reformed
     			}
@@ -7935,7 +7935,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = hellenic_pagan
     			}
@@ -7951,7 +7951,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = promethean_pagan
     			}
@@ -7967,7 +7967,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = titan_pagan
     			}
@@ -7983,7 +7983,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = egyptian_pagan
     			}
@@ -7999,7 +7999,7 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     		OR = {
     			AND = {
     				NOT = {
-						has_character_was_religion_flag = yes
+						has_character_was_religion_flag_trigger = yes
     				}
     				religion = aten_pagan
     			}

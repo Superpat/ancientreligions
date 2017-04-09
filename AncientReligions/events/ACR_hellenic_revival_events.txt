@@ -928,6 +928,13 @@ long_character_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		FROMFROMFROMFROM = {
+			secret_religion = hellenic_pagan
+			set_character_flag = confessed_secret_religion_to_@ROOT
+		}
+	}
+
 	option = { # force the philosopher to renounce paganism, sending him to a monastery
 		name = ancrel.2027.a
 		add_character_modifier = { name = acr_sided_with_church days = 1825 }
@@ -1017,6 +1024,13 @@ long_character_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		FROM = {
+			secret_religion = hellenic_pagan
+			set_character_flag = confessed_secret_religion_to_@ROOT
+		}
+	}
+
 	option = { # take him up on the offer
 		name = ancrel.2029.a
 
@@ -1044,13 +1058,7 @@ long_character_event = {
 			intrigue = 10
 		}
 
-		# convert stealthily, requires 2.7 (but not MnM)
-		add_religion_char_flag_effect = yes
-		add_trait = secretly_hellenic_pagan
-		FROM ={
-			add_religion_char_flag_effect = yes
-			add_trait = secretly_hellenic_pagan
-		}
+		secret_religion = hellenic_pagan
 	}
 
 	option = { # imprison him, if you ignored the priests before
@@ -1062,6 +1070,7 @@ long_character_event = {
 		name = ancrel.2029.d
 
 		FROM = {
+			set_character_flag = ancrel_block_philosopher
 			imprison = ROOT
 		}
 	}

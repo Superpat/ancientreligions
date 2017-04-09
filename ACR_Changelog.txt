@@ -3,8 +3,8 @@
 
 General:
  - Compatibility with CK2 2.7.1
+ - Most conversion events now set secret religion rather than open religion.
 
- 
 2017-04-01 v0.39.1 "Polemos"
 -------------------------
 

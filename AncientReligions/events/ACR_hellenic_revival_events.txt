@@ -1440,9 +1440,9 @@ character_event = {
 			add_trait = sympathy_judaism
 		}
 		random_list = {
-			75 = { religion = hellenic_pagan }
-			20 = { religion = promethean_pagan }
-			5 = { religion = titan_pagan }
+			75 = { secret_religion = hellenic_pagan }
+			20 = { secret_religion = promethean_pagan }
+			5 = { secret_religion = titan_pagan }
 		}
 		
 		if = {
@@ -1452,14 +1452,6 @@ character_event = {
 		if = {
 			limit = { trait = zealous }
 			remove_trait = zealous
-		}
-		hidden_tooltip = {
-			host = {
-				if = {
-					limit = { NOT = { religion = ROOT } }
-					character_event = { id = ancrel.2101 }
-				}
-			}
 		}
 	}
 
@@ -1940,7 +1932,7 @@ character_event = {
 		create_random_priest = {
 			random_traits = no
 			dynasty = none
-			religion = hellenic_pagan
+			secret_religion = hellenic_pagan
 			culture = greek
 			age = 50
 			trait = patient
@@ -2000,6 +1992,12 @@ character_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		event_target:target_maniot_priest = {
+			set_character_flag = confessed_secret_religion_to_@ROOT
+		}
+	}
+
 	option = {
 		name = EVTOPTAancrel.2107
 		ai_chance = {
@@ -2027,7 +2025,7 @@ character_event = {
 			add_trait = sympathy_judaism
 		}
 		
-		religion = hellenic_pagan
+		secret_religion = hellenic_pagan
 		
 		event_target:target_maniot_priest = {
 			give_job_title = job_spiritual
@@ -2041,6 +2039,9 @@ character_event = {
 		}
 		add_trait = sympathy_pagans
 		add_trait = cynical
+		event_target:target_maniot_priest = {
+			leave_court_and_die_effect = yes
+		}
 	}
 }
 

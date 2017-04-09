@@ -404,7 +404,7 @@ character_event = {
 	}
 }
 
-#For the recruit: Recruiter contiunes offering more radical ideas, gives strange idol
+#For the recruit: Recruiter continues offering more radical ideas, gives strange idol
 character_event = {
 	id = MNM.7003
 	desc = EVTDESC_MNM_7003_A
@@ -436,6 +436,9 @@ character_event = {
 				trait = bad_priest_tengri
 				trait = bad_priest_zoroastrian
 				trait = bad_priest_aztec
+
+				### ACR ###
+				trait = bad_druid
 			}
 		}
 		
@@ -480,6 +483,9 @@ character_event = {
 					trait = bad_priest_tengri
 					trait = bad_priest_zoroastrian
 					trait = bad_priest_aztec
+
+					### ACR ###
+					trait = bad_druid
 				}
 			}
 			modifier = {
@@ -601,7 +607,7 @@ character_event = {
 		ai_chance = { factor = 100 }
 	}
 
-	#Too risky, volontary end (only available if recruit is willing to join)
+	#Too risky, voluntary end (only available if recruit is willing to join)
 	option = {
 		trigger = { FROM = { has_character_flag = willing_to_join } }
 		name = EVTOPTB_7004
@@ -1446,16 +1452,6 @@ letter_event = {
 		}
 	}
 }
-
-##ping event for the messenger
-#character_event = {
-#	id = MNM.7011
-#	hide_window = yes#
-
-#	is_triggered_only = yes#
-
-#	immediate = { FROM = { character_event = { id = MNM.7015 days = 5 } } }
-#}
 
 #For Recruit: Have met an intriguing person at court
 character_event = {
@@ -2322,6 +2318,11 @@ character_event = {
 							has_character_flag = being_recruited_by_the_cold_ones
 							has_character_flag = being_recruited_by_the_plaguebringers
 							has_character_flag = assassins_attempted_recruitment
+
+							### ACR ###
+							has_character_flag = being_recruited_by_the_unseelie
+							has_character_flag = being_recruited_by_the_coven
+							has_character_flag = being_recruited_by_the_sand_snakes
 						}
 					}
 				}

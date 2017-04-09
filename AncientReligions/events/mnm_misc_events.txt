@@ -112,6 +112,11 @@ character_event = {
 			interested_in_society = the_cold_ones
 			interested_in_society = the_plaguebringers
 			interested_in_society = secret_religious_cult
+
+			### ACR ###
+			interested_in_society = unseelie_petitioners
+			interested_in_society = the_coven
+			interested_in_society = the_sand_snakes
 		}
 	}
 
@@ -135,7 +140,12 @@ character_event = {
 			interested_in_society = the_cult_of_kali
 			interested_in_society = the_cold_ones
 			interested_in_society = the_plaguebringers
-			interested_in_society = secret_religious_cult		
+			interested_in_society = secret_religious_cult
+
+			### ACR ###
+			interested_in_society = unseelie_petitioners
+			interested_in_society = the_coven
+			interested_in_society = the_sand_snakes
 		}
 	}
 
@@ -255,7 +265,7 @@ character_event = {
 				character_event = { id = ancrel.9100 }
 			}
 		}
-		# Unseelie
+		# Coven
 		if = {
 			limit = {
 				interested_in_society = the_coven
@@ -271,7 +281,7 @@ character_event = {
 				character_event = { id = ancrel.9101 }
 			}
 		}
-		# Unseelie
+		# Fangs
 		if = {
 			limit = {
 				interested_in_society = the_sand_snakes
@@ -287,7 +297,7 @@ character_event = {
 				character_event = { id = ancrel.9102 }
 			}
 		}
-		#Secret religious sociery
+		#Secret religious society
 		if = {
 			limit = {
 				interested_in_society = secret_religious_cult
@@ -2769,8 +2779,16 @@ character_event = { #Save game conversion of secret_traits to secret religions
 				secretly_west_african_pagan_reformed = { set_secret_religion = west_african_pagan_reformed remove_trait = secretly_west_african_pagan_reformed }
 				secretly_zun_pagan = { set_secret_religion = zun_pagan remove_trait = secretly_zun_pagan }
 				secretly_zun_pagan_reformed = { set_secret_religion = zun_pagan_reformed remove_trait = secretly_zun_pagan_reformed }
-				secretly_hellenic_pagan = { set_secret_religion = hellenic_pagan remove_trait = secretly_hellenic_pagan }
 				secretly_pagan = { set_secret_religion = pagan remove_trait = secretly_pagan }
+				
+				### ACR ###
+				secretly_celtic_pagan = { set_secret_religion = celtic_pagan remove_trait = secretly_celtic_pagan }
+				secretly_celtic_pagan_reformed = { set_secret_religion = celtic_pagan_reformed remove_trait = secretly_celtic_pagan_reformed }
+				secretly_hellenic_pagan = { set_secret_religion = hellenic_pagan remove_trait = secretly_hellenic_pagan }
+				secretly_promethean_pagan = { set_secret_religion = promethean_pagan remove_trait = secretly_promethean_pagan }
+				secretly_titan_pagan = { set_secret_religion = titan_pagan remove_trait = secretly_titan_pagan }
+				secretly_egyptian_pagan = { set_secret_religion = egyptian_pagan remove_trait = secretly_egyptian_pagan }
+				secretly_aten_pagan = { set_secret_religion = aten_pagan remove_trait = secretly_aten_pagan }
 			}
 		}
 	}

@@ -345,11 +345,11 @@ character_event = {
 		ai_chance = {
 			factor = 33
 			modifier = {
-				factor = 1.5
-				is_landed = no # unlanded characters more likely to convert
+				factor = 100
+				is_landed = no # unlanded characters always convert
 			}
 			modifier = { # more likely to follow parent
-				factor = 1.5
+				factor = 2
 				OR = {
 					father = {
 						character = FROM
@@ -390,6 +390,15 @@ character_event = {
 		hidden_tooltip = { 
 			remove_character_modifier = celtic_ways
 			any_vassal = {
+				character_event = { id = ancrel.0300 days = 2 }
+			}
+			any_courtier = {
+				limit = {
+					is_landed = no # don't want to get landed councilors twice!
+					liege = {
+						character = ROOT # or prisoners
+					}
+				}
 				character_event = { id = ancrel.0300 days = 2 }
 			}
 			if = {

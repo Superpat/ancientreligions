@@ -874,6 +874,14 @@ character_event = {
 	}
 }
 
+##############################################
+#
+# Ancient Religions Reborn
+# - Debugging Events
+#
+# Event Ids: ancrel.9001 - 9100 reserved
+##############################################
+
 # set the ancrel_debug global flag for testing
 # some events and decisions may check this flag
 # and alter their behavior to make testing easier
@@ -928,7 +936,7 @@ character_event = {
 				}
 			}
 			any_liege = {
-				secret_religion = ROOT
+				religion = ROOT
 				any_war = {
 					using_cb = crusade
 				}
@@ -968,5 +976,73 @@ character_event = {
 			religion = aten_pagan
 		}
 		add_trait = atens_chosen
+	}
+}
+
+# debug to grant all titles in your dejure kingdom to you, including the king title
+character_event = {
+	id = ancrel.9020
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		capital_scope = {
+			kingdom = {
+				ROOT = { grant_title_no_opinion = PREV }
+				any_dejure_vassal_title = {
+					limit = {
+						is_active = yes
+					}
+					ROOT = { grant_title = PREV }
+				}
+			}
+		}
+	}
+}
+
+# debug to grant all kingdoms in your dejure empire, and the empire title
+character_event = {
+	id = ancrel.9021
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		capital_scope = {
+			empire = {
+				ROOT = { grant_title_no_opinion = PREV }
+
+				any_dejure_vassal_title = {
+					limit = {
+						is_active = yes
+					}
+
+					owner = {
+						set_defacto_liege = ROOT
+					}
+				}
+			}
+		}
+	}
+}
+
+# debug to convert all characters and provinces in your realm to your religion
+character_event = {
+	id = ancrel.9022
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		any_realm_character = {
+			religion = ROOT
+			culture = ROOT
+		}
+
+		any_realm_province = {
+			religion = ROOT
+			culture = ROOT
+		}
 	}
 }

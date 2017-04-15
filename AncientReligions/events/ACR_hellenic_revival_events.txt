@@ -1282,7 +1282,7 @@ character_event = {
 	mean_time_to_happen = {
 		years = 6
 		
-		#Increase MTTH by 50% every 50 years
+		#Increase MTTH by 10% every 50 years
 		modifier = {
 			factor = 1.1
 			year = 916

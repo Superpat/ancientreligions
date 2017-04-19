@@ -979,55 +979,77 @@ character_event = {
 	}
 }
 
-# debug to grant all titles in your dejure kingdom to you, including the king title
+# debug to grant all provinces in your dejure kingdom to you, including the king title
 character_event = {
-	id = ancrel.9020
-	hide_window = yes
-
-	is_triggered_only = yes
+    id = ancrel.9020
+    desc = ancrel.9020.desc
+    
+    is_triggered_only = yes
 
 	immediate = {
 		capital_scope = {
 			kingdom = {
-				ROOT = { grant_title_no_opinion = PREV }
-				any_dejure_vassal_title = {
-					limit = {
-						is_active = yes
-					}
-					ROOT = { grant_title = PREV }
+				save_event_target_as = ancrel_title_grant
+				ROOT = { 
+					grant_title_no_opinion = PREV
 				}
-			}
-		}
+    		}
+    	}
+    }
+
+    option = {
+    	name = OK
+	}
+
+	after = {
+    	any_independent_ruler = {
+    		limit = {
+    			de_jure_liege_or_above = event_target:ancrel_title_grant
+    		}
+    		any_realm_province = {
+    			county = {
+    				ROOT = { 
+						usurp_title = PREV
+					}
+    			}
+    		}
+    	}
 	}
 }
 
-# debug to grant all kingdoms in your dejure empire, and the empire title
+# debug to grant you the de jure empire of your capital and vassalize de jure vassals
 character_event = {
-	id = ancrel.9021
-	hide_window = yes
+    id = ancrel.9021
+    desc = ancrel.9021.desc
 
-	is_triggered_only = yes
+    is_triggered_only = yes
 
 	immediate = {
 		capital_scope = {
 			empire = {
-				ROOT = { grant_title_no_opinion = PREV }
-
-				any_dejure_vassal_title = {
-					limit = {
-						is_active = yes
-					}
-
-					owner = {
-						set_defacto_liege = ROOT
-					}
+				save_event_target_as = ancrel_title_grant
+				ROOT = { 
+					grant_title_no_opinion = PREV
 				}
-			}
-		}
+    		}
+    	}
+    }
+
+    option = {
+    	name = OK
+	}
+
+	after = {
+    	any_independent_ruler = {
+    		limit = {
+    			de_jure_liege_or_above = event_target:ancrel_title_grant
+    		}
+    		set_defacto_liege = ROOT
+    	}
 	}
 }
 
-# debug to convert all characters and provinces in your realm to your religion
+# debug to convert all characters and provinces in your realm to your religion and culture
 character_event = {
 	id = ancrel.9022
 	hide_window = yes

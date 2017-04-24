@@ -317,7 +317,7 @@ decisions = {
 				religion_group = christian
 				religion = hellenic_pagan
 			}
-			age = 16
+			is_adult = yes
 			prisoner = no
 			NOT = { trait = incapable }
 			NOT = { has_global_flag = rome_restored }

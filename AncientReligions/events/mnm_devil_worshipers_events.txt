@@ -2546,7 +2546,7 @@ letter_event = {
 		}
 		if = {
 			limit = { has_character_flag = assassins_attempted_recruitment }
-			join_society = the_plaguebringers
+			join_society = the_assassins
 		}
 
 		### ACR ###

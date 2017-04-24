@@ -1442,6 +1442,7 @@ defined_text = {
 	}
 }
 
+
 defined_text = {
 	name = GetDWReasonToJoin # Returns a phrase along the lines of "cure my lover" or "help me win on the battlefield"
 
@@ -2442,6 +2443,8 @@ defined_text = {
 	}
 }
 
+
+
 ###RELIGION###
 defined_text = {
 	name = GetHouseOfWorship # Returns a suitable name for the house of worship of your religion (WIP)
@@ -2915,6 +2918,7 @@ defined_text = {
 		trigger = { true_religion_group_indian_group_trigger = yes }
 	}
 }
+
 
 defined_text = {
 	name = GetTrueReligionAdjective
@@ -5951,6 +5955,7 @@ defined_text = {
 	}
 }
 
+
 defined_text = {
 	name = GetWesternZodiacSign
 	
@@ -6129,6 +6134,7 @@ defined_text = {
 	}
 }
 
+
 defined_text = {
 	name = GetSillyDebateSubject
 
@@ -6213,6 +6219,7 @@ defined_text = {
 		localisation_key = String_assassins_drugs_withdrawal
 	}
 }
+
 
 defined_text = {
 	name = GetOmenModifierName # (used exclusively in tooltip_info_omen_tt)
@@ -7447,6 +7454,7 @@ defined_text = {
 		}
 	}
 }
+
 
 defined_text = {
 	name = GetFriendEnjoyableQuirk #noun, singular

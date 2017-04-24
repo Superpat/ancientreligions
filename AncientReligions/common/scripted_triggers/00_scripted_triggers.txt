@@ -1484,6 +1484,7 @@ death_murder_trigger = {
 		death_murder_unknown_trigger = yes
 		death_murder_known_trigger = yes
 	}
+	
 }
 
 death_murder_unknown_trigger = {
@@ -1622,6 +1623,7 @@ gender_equality_trigger = {
 		}
 	}
 }
+
 
 has_minor_deity_trigger = {
 	OR = {
@@ -2086,7 +2088,6 @@ is_rich_holding = {
 
 	}
 }
-
 is_richer_holding = {
 	
 	OR = {
@@ -3095,15 +3096,11 @@ has_common_devilworship_prerequisites = {
 		text = must_be_a_sinner_tooltip
 		hidden_tooltip = {
 			OR = {
+				has_impious_trait_trigger = yes
+				has_vice_trigger = yes
+				trait = drunkard
 				trait = possessed
-				AND = {
-					has_impious_trait_trigger = yes
-					OR = {
-						has_vice_trigger = yes
-						trait = drunkard
-						trait = lunatic
-					}
-				}
+				trait = lunatic
 			}
 		}
 	}

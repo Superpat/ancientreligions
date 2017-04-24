@@ -190,7 +190,7 @@ character_event = {
 		name = ancrel.2002.a
 
 		FROM = {
-			give_minor_title = title_hypatos_philosophon
+			set_special_character_title = title_hypatos_philosophon
 			prestige = 100
 			opinion = {
 				modifier = ancrel_honored_me

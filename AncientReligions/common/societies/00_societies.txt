@@ -3511,6 +3511,7 @@ the_trollcrafters = {
 	}
 }
 
+
 the_cult_of_kali = {
 	primary_attribute = intrigue
 	is_secret = yes

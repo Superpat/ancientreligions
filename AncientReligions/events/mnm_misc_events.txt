@@ -742,6 +742,9 @@ character_event = {
 							75 = {
 								modifier = {
 									factor = 0
+								}
+								modifier = {
+									factor = 0
 									society_influence >= 30
 								}
 								add_mission_succeed_influence_effect = yes

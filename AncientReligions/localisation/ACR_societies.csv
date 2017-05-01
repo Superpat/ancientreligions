@@ -1,24 +1,3 @@
-currency_name_secret_religious_society_celtic_pagan;Devotion;Dévotion;Hingabe;;Devoción;;;;x
-currency_name_secret_religious_society_celtic_pagan_reformed;Devotion;Dévotion;Hingabe;;Devoción;;;;x
-currency_name_secret_religious_society_hellenic_pagan;Devotion;Dévotion;Hingabe;;Devoción;;;;x
-currency_name_secret_religious_society_promethean_pagan;Devotion;Dévotion;Hingabe;;Devoción;;;;x
-currency_name_secret_religious_society_titan_pagan;Devotion;Dévotion;Hingabe;;Devoción;;;;x
-currency_name_secret_religious_society_egyptian_pagan;Devotion;Dévotion;Hingabe;;Devoción;;;;x
-currency_name_secret_religious_society_aten_pagan;Devotion;Dévotion;Hingabe;;Devoción;;;;x
-secretly_celtic_pagan;Secretly Celtic Pagan;;;;;;;;;;;;;x
-secretly_celtic_pagan_desc;This character practices Celtic Paganism in secret.;;;;;;;;;;;;;x
-secretly_celtic_pagan_reformed;Secretly Druidic;;;;;;;;;;;;;x
-secretly_celtic_pagan_reformed_desc;This character practices Druidism in secret.;;;;;;;;;;;;;x
-secretly_hellenic_pagan;Secretly Hellenic;;;;;;;;;;;;;x
-secretly_hellenic_pagan_desc;This character practices Hellenism in secret.;;;;;;;;;;;;;x
-secretly_promethean_pagan;Secretly Promethean;;;;;;;;;;;;;x
-secretly_promethean_pagan_desc;This character practices Prometheanism in secret.;;;;;;;;;;;;;x
-secretly_titan_pagan;Secretly Titanic;;;;;;;;;;;;;x
-secretly_titan_pagan_desc;This character practices Titanism in secret.;;;;;;;;;;;;;x
-secretly_egyptian_pagan;Secretly Kemetic;;;;;;;;;;;;;x
-secretly_egyptian_pagan_desc;This character practices Kemetism in secret.;;;;;;;;;;;;;x
-secretly_aten_pagan;Secretly Atenic;;;;;;;;;;;;;x
-secretly_aten_pagan_desc;This character practices Atenism in secret.;;;;;;;;;;;;;x
 secret_religious_society_celtic_pagan;the Hidden Circle;;;;;;;;x
 secret_religious_society_celtic_pagan_desc;The followers of the Celtic faith have long known persecution, especially from Roman hands. As always, they persevere, even if they must use deception. Though they utter empty prayers to foreign gods, they secretly meet in private chambers and secluded groves to offer devotion and sacrifice to Danu, the Mother and source of life. They keep their faith knowing that some day mighty Taranis the Thunderer will strike down those who have persecuted the faithful.;;;;;;;;x
 secret_religious_society_celtic_pagan_reformed;Danu's Faithfull;;;;;;;;x
@@ -30,9 +9,24 @@ secret_religious_society_promethean_pagan_desc;The Prometheans know that they mu
 secret_religious_society_titan_pagan;the Chained;;;;;;;;x
 secret_religious_society_titan_pagan_desc;The Titan Cultist is one who understands toil and bondage. They hold back their righteous fury and look to their gods, bound in Tartarus still by the treacherous Olympians, for the strength to wait. The mighty Titans have lain in Tartarus, bound by divinely wrought chains, for whole ages of time. The least their mortal followers can do is wait for the right moment to strike. When that time comes, none shall miss it, for the very Earth itself will shake with the fury of Kronos.;;;;;;;;x
 secret_religious_society_egyptian_pagan;the Keepers of Ma'at;;;;;;;;x
-secret_religious_society_egyptian_pagan_desc;The followers of Kemetism continue to practice their ancient religion, despite being forced to profess faith in other gods. They organize in secret shrines and hidden chambers, honoring the timeless gods of Egypt. They know that they follow the greatest of gods, ones that led a people to build great monuments while other peoples were still wondering herders. Every day they look up and see the watchful eye of Ra, unblinking and eternal, and their faith remains strong. They know that soon their plans will come to fruition and Ra's burning gaze will scorch the unfaithfull.;;;;;;;;x
+secret_religious_society_egyptian_pagan_desc;The followers of Kemetism continue to practice their ancient religion, despite being forced to profess faith in other gods. They organize in secret shrines and hidden chambers, honoring the timeless gods of Egypt. They know that they follow the greatest of gods, ones that led a people to build great monuments while others were still wandering herders. Every day they look up and see the watchful eye of Ra, unblinking and eternal, and their faith remains strong. They know that soon their plans will come to fruition and Ra's burning gaze will scorch the unfaithfull.;;;;;;;;x
 secret_religious_society_aten_pagan;the Speakers of Aten;;;;;;;;x
 secret_religious_society_aten_pagan_desc;The followers of Aten know that they have always been the few against the many. This does not shake their faith, however. They look up each day at the undeniable truth. Aten is the giver of light, warmth, and life. So, they hide their faith from the deniers of Aten's truth, knowing eachother from the small gold discs they wear as symbols of their devotion. Just as Aten rises every day to scatter the darkness, the Speakers of Aten know that their long night too will end.;;;;;;;;x
+############### ;;;;;;;;;;;;;x
+secretly_convert_to_celtic_pagan_holy_site;Secretly Convert to Celtic Paganism;;;;;;;;;;;;;x
+secretly_convert_to_celtic_pagan_holy_site_desc;The §YCeltic Pagan§! shrine in §Y[Root.Location.GetName]§! has drawn my attention of late. It feels ancient, patient, and powerful. It seems to be waiting to reveal it's secrets. I am tempted to listen...;;;;;;;;;;;;;x
+secretly_convert_to_celtic_pagan_reformed_holy_site;Secretly Convert to Druidic;;;;;;;;;;;;;x
+secretly_convert_to_celtic_pagan_reformed_holy_site_desc;The §YDruidic§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;Les pèlerins §YDruidique§! qui affluent vers le site saint en §Y[Root.Location.GetName]§! m'impressionnent avec la profondeur et la passion de leur foi. Je suis tenté[Root.GetNoneE] de me convertir en secret...;Die §YDruidic§! Pilger in §Y[Root.Location.GetName]§! beeindrucken mich durch die Tiefe und die Leidenschaft ihres Glaubens. Ich bin versucht, heimlich zu konvertieren ...;;Los peregrinos §YDruidicas§! que acuden en masa al lugar sagrado en §Y[Root.Location.GetName]§! me impresionan con la profundidad y la pasión de su fe. Me tienta convertirme en secreto...;;;;;;;;;x
+secretly_convert_to_hellenic_pagan_holy_site;Secretly Convert to Hellenism;;;;;;;;;;;;;x
+secretly_convert_to_hellenic_pagan_holy_site_desc;The §YHellenic§! holy site in §Y[Root.Location.GetName]§! impress me with it's grandeur. It is as if the ancient gods are waiting for someone to take up their mantle again. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secretly_convert_to_promethean_pagan_holy_site;Secretly Convert to Prometheanism;;;;;;;;;;;;;x
+secretly_convert_to_hellenic_pagan_holy_site_desc;The §YPromethean§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secretly_convert_to_titan_pagan_holy_site;Secretly Convert to Titanism;;;;;;;;;;;;;x
+secretly_convert_to_titan_pagan_holy_site_desc;The §YTitan Cultists§! that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secretly_convert_to_egyptian_pagan_holy_site;Secretly Convert to Kemetism;;;;;;;;;;;;;x
+secretly_convert_to_egyptian_pagan_holy_site_desc;The ancient monuments of the §YKemetic§! gods in §Y[Root.Location.GetName]§! are fascinating. The depth and passion of the builder's devotion impresses me. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secretly_convert_to_aten_pagan_holy_site;Secretly Convert to Atenism;;;;;;;;;;;;;x
+secretly_convert_to_aten_pagan_holy_site_desc;The §YAtenic§! ruins in §Y[Root.Location.GetName]§! impress me with the their grandeur. The builder's devotion to the Aten is visible everywhere. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
 ############### ;;;;;;;;;;;;;x
 secret_religious_society_celtic_pagan_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
 secret_religious_society_celtic_pagan_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
@@ -130,9 +124,9 @@ unseelie_petitioners_rank_1_male;Abjurer;Apostat;Bannmagier;;Apóstata;;;;x
 unseelie_petitioners_rank_2_male;Conjurer;Sorcier;Beschwörer;;Conjurador;;;;x
 unseelie_petitioners_rank_3_male;Priest;Prêtre;Priester;;Sacerdote;;;;x
 unseelie_petitioners_rank_4_male;High Priest;Grand prêtre;Hohepriester;;Sumo sacerdote;;;;x
-unseelie_recruit;Recruit to the Unseelie Petitioners;;;;;;;;;;;;;x
-unseelie_recruit_desc;Attempt to find out whether §Y[Root.GetTitledFirstName]§! is open to the power of the occult. If so, you may invite [Root.GetHerHim] to become a Petitioner.;;;;;;;;;;;;;x
-unseelie_recruit_block_tooltip;Has not been approached by the Unseelie Petitioners before.;;;;;;;;;;;;;x
+unseelie_petitioners_recruit;Recruit to the Unseelie Petitioners;;;;;;;;;;;;;x
+unseelie_petitioners_recruit_desc;Attempt to find out whether §Y[Root.GetTitledFirstName]§! is open to the power of the occult. If so, you may invite [Root.GetHerHim] to become a Petitioner.;;;;;;;;;;;;;x
+unseelie_petitioners_recruit_block_tooltip;Has not been approached by the Unseelie Petitioners before.;;;;;;;;;;;;;x
 ############### The Coven ;;;;;;;;;;;;;x
 the_coven;The Coven of Hecate;;;;;;;;;;;;;x
 the_coven_desc;The witches and warlocks of The Coven live in defiance of the traditional gods of their people. They laugh at the Olympians' ordered universe, they sneer at Prometheus' promise of enlightenment, and they mock the Titan's futile rage. Instead they turn to Hecate, the goddess of magic. In moonlit groves and secret chambers they make sinister pacts to their goddess and commit acts of debauchery and murder. If that wasn't enough, they are said to posess powerful curses and unnaturally long lives...;;;;;;;;;;;;;x
@@ -146,9 +140,9 @@ the_coven_rank_2_male;Conjurer;Sorcier;Beschwörer;;Conjurador;;;;x
 the_coven_rank_3_male;Priest;Prêtre;Priester;;Sacerdote;;;;x
 the_coven_rank_4_male;High Priest;Grand prêtre;Hohepriester;;Sumo sacerdote;;;;x
 the_coven_leader_desc;The High Priest of The Coven;;;;;;;;;;;;;x
-coven_recruit_block_tooltip;Has not been approached by The Coven before.;;;;;;;;;;;;;x
-coven_recruit;Recruit to The Coven;;;;;;;;;;;;;x
-coven_recruit_desc;Attempt to find out whether §Y[Root.GetTitledFirstName]§! is open to the power of the occult. If so, you may invite [Root.GetHerHim] to become a member of The Coven.;;;;;;;;;;;;;x
+the_coven_recruit_block_tooltip;Has not been approached by The Coven before.;;;;;;;;;;;;;x
+the_coven_recruit;Recruit to The Coven;;;;;;;;;;;;;x
+the_coven_recruit_desc;Attempt to find out whether §Y[Root.GetTitledFirstName]§! is open to the power of the occult. If so, you may invite [Root.GetHerHim] to become a member of The Coven.;;;;;;;;;;;;;x
 ############### The Sand Snakes/Fangs of Apep;;;;;;;;;;;;;x
 the_sand_snakes;The Fangs of Apep;;;;;;;;;;;;;x
 the_sand_snakes_desc;Those who serve the Great Serpent hide in our midst, dedicating their depravities and perfidies to their Lord Apep. Every transgression is a hymn, every murder a roar of defiance against the peace and order of [Root.Religion.GetHighGodName]. Apep rewards such dark sacraments handsomely – witches are said to be gifted with unnatural lifespans and all manner of demonic powers.;Ceux qui servent le Grand Serpent se cachent au milieu de nous, consacrant leurs dépravations et perfidies à leur Seigneur Apep. Chaque transgression est un hymne, chaque assassinat un rugissement de défi contre la parole [Root.GetHighGodDuDelaDes]. Apep récompense généreusement de tels sombres sacrements – les sorciers sont dits dotés d'une durée de vie anormale et de pouvoirs démoniaques.;Die Jünger des Große Schlange verstecken sich in unserer Mitte und huldigen in perfider Verderbtheit Apep, ihrem Herrn. Jede Sünde ist ihnen Hymnus, jeder Mord ein Aufschrei gegen das Wort von [Root.Religion.GetHighGodNameCap]. Apep belohnt die Priester seiner dunklen Sakramente fürstlich: So heißt es, dass er Hexen ein unnatürlich langes Leben schenkt und ihnen alle möglichen dämonischen Kräfte verleiht.;;Aquellos que sirven al Gran Serpiente se ocultan entre nosotros, dedicando sus depravaciones y perfidias a su señor, Apep. Cada transgresión es un himno cada asesinato es un rugido de desafío contra la palabra de [Root.Religion.GetHighGodNameCap]. Apep recompensa esos sacramentos oscuros generosamente: se dice que las brujas están dotadas de una vida antinatural y de toda clase de poderes demoníacos.";;;;x
@@ -162,9 +156,9 @@ the_sand_snakes_rank_2_male;Conjurer;Sorcier;Beschwörer;;Conjurador;;;;x
 the_sand_snakes_rank_3_male;Priest;Prêtre;Priester;;Sacerdote;;;;x
 the_sand_snakes_rank_4_male;High Priest;Grand prêtre;Hohepriester;;Sumo sacerdote;;;;x
 the_sand_snakes_leader_desc;The Great Xroj of the Fangs of Apep;;;;;;;;;;;;;x
-sand_snakes_recruit_block_tooltip;Has not been approached by the Fangs of Apep before.;;;;;;;;;;;;;x
-sand_snakes_recruit;Recruit to The Fangs of Apep;;;;;;;;;;;;;x
-sand_snakes_recruit_desc;Attempt to find out whether §Y[Root.GetTitledFirstName]§! is open to the power of the occult. If so, you may invite [Root.GetHerHim] to become a member of The Fangs of Apep.;;;;;;;;;;;;;x
+the_sand_snakes_recruit_block_tooltip;Has not been approached by the Fangs of Apep before.;;;;;;;;;;;;;x
+the_sand_snakes_recruit;Recruit to The Fangs of Apep;;;;;;;;;;;;;x
+the_sand_snakes_recruit_desc;Attempt to find out whether §Y[Root.GetTitledFirstName]§! is open to the power of the occult. If so, you may invite [Root.GetHerHim] to become a member of The Fangs of Apep.;;;;;;;;;;;;;x
 ############### Strings ;;;;;;;;;;;;;x
 String_ker;Ker;;;;;;;;;;;;;x
 String_keres;Keres;;;;;;;;;;;;;x

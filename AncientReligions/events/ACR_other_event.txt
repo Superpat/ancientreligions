@@ -323,19 +323,17 @@ character_event = {
 				trait = lunatic
 			}
 		}
-		NOT = {
+		NOR = {
 			has_character_flag = can_go_pagan
 			has_character_flag = gone_pagan
 			trait = zealous
-			trait = crusader
-			trait = mujahid
-			trait = holy_warrior
+			has_crusade_trait_trigger = yes
 			has_character_modifier = voice_of_jesus
 			has_character_modifier = voice_of_satan
 			piety = 500
-			secret_religion = monophysite
-			secret_religion = miaphysite
-			secret_religion = pagan
+			religion = monophysite
+			religion = miaphysite
+			religion = pagan
 			AND = {
 				religion_group = pagan_group
 				is_reformed_religion = no
@@ -459,7 +457,7 @@ character_event = {
 		}
 		modifier = {
 			factor = 10
-			NOT = {
+			NOR = {
 				trait = cynical
 				trait = lunatic
 				any_spouse = { religion_group = pagan_group }

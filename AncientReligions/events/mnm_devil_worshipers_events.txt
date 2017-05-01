@@ -85,9 +85,7 @@ character_event = {
 
 	#Approving of heretics
 	option = {
-		name = {
-			text = EVTOPTA_7001 #If God didn't want us to ask questions, why did he make us curious?
-		}
+		name = EVTOPTA_7001 #If God didn't want us to ask questions, why did he make us curious?
 		
 		trigger = {
 			OR = {

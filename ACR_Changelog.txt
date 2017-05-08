@@ -1,9 +1,21 @@
-2017-04-?? v0.39.2 "Cadmus"
+2017-05-7 v0.39.2 "Cadmus"
 -------------------------
 
 General:
  - Compatibility with CK2 2.7.1
  - Most conversion events now set secret religion rather than open religion.
+ - Fixed a lot of localization bugs related to societies and custom localizations.
+ - Implemented the decisions to secretly convert to a religion if you own a holy site of that religion.
+   - For logical consistancy, the entirely fictional heresies of Prometheanism and Titanism require at least one province in the world to have their religion before the decision can be taken.
+ - Adjusted merc compositions again in an attempt to make them more like vanilla holy orders and merc companies.
+   - They've also been adjusted in some places to be a little less terrible and random.
+   - I'm very open to constructive feedback on merc compositions.
+
+Hellenic:
+ - Updated acceptable cultures for the Studied the Classics event chain.
+   - Removed Norman, French, and Occitan cultures.
+   - Added Serbian and Croatian, but it is much rarer (20% as likely, to be precise).
+
 
 2017-04-01 v0.39.1 "Polemos"
 -------------------------

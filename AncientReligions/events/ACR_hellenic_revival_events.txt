@@ -1264,10 +1264,13 @@ character_event = {
 			religion = promethean_pagan
 		}
 		OR = {
-			culture_group = latin
+			culture = roman
+			culture = italian
+			culture = croatian
+			culture = serbian
 			culture_group = byzantine
-			culture = sicilian_greek # SWMH
-			culture_group = italian_group # SWMH
+			# culture = sicilian_greek # SWMH
+			# culture_group = italian_group # SWMH
 		}
 		NOT = { has_character_flag = flag_studied_the_classics }
 		OR = {
@@ -1342,6 +1345,10 @@ character_event = {
 				trait = zealous
 				trait = cynical
 			}
+		}
+		modifier = { # croats and serbs should get it much less
+			factor = 5
+			culture_group = south_slavic
 		}
 		modifier = {
 			factor = 10

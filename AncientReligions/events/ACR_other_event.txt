@@ -20,7 +20,7 @@ character_event = {
 		ai_chance = {
 			factor = 10
 		}
-		religion = zoroastrian
+		secret_religion = zoroastrian
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical
@@ -55,7 +55,7 @@ character_event = {
 		ai_chance = {
 			factor = 10
 		}
-		religion = celtic_pagan
+		secret_religion = celtic_pagan
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical
@@ -74,30 +74,13 @@ character_event = {
 				culture = norman
 			}
 		}
-		religion = norse_pagan
+		secret_religion = norse_pagan
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical
 		}
 		piety = -200
 		add_trait = zealous		
-	}
-	option = {
-		name = "EVTOPTE_GoPagan_100"
-		ai_chance = { factor = 15 }
-		trigger = {
-			OR = {
-				culture_group = central_germanic
-				culture_group = west_germanic
-			}
-		}
-		religion = norse_pagan
-		if = {
-			limit = { trait = cynical }
-			remove_trait = cynical
-		}
-		piety = -200
-		add_trait = zealous
 	}
 	option = { # Maybe Not
 		name = "EVTOPTZ_GoPagan_100"
@@ -125,7 +108,7 @@ character_event = {
 		ai_chance = {
 			factor = 10
 		}
-		religion = baltic_pagan
+		secret_religion = baltic_pagan
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical
@@ -140,7 +123,7 @@ character_event = {
 			culture_group = finno_ugric
 			NOT = { religion = finnish_pagan}
 		}
-		religion = finnish_pagan
+		secret_religion = finnish_pagan
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical
@@ -165,7 +148,7 @@ character_event = {
 	option = {
 		name = "EVTOPTC_GoPagan_100"
 		ai_chance = { factor = 10 }
-		religion = tengri_pagan
+		secret_religion = tengri_pagan
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical
@@ -190,7 +173,7 @@ character_event = {
 	option = {
 		name = "EVTOPTC_GoPagan_100"
 		ai_chance = { factor = 10 }
-		religion = slavic_pagan
+		secret_religion = slavic_pagan
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical
@@ -218,7 +201,7 @@ character_event = {
 		trigger = {
 			culture_group = west_african
 		}
-		religion = west_african_pagan
+		secret_religion = west_african_pagan
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical
@@ -243,7 +226,7 @@ character_event = {
 	option = {
 		name = "EVTOPTC_GoPagan_100"
 		ai_chance = { factor = 10 }
-		religion = egyptian_pagan
+		secret_religion = egyptian_pagan
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical
@@ -268,7 +251,7 @@ character_event = {
 	option = {
 		name = "EVTOPTL_GoPagan_100"
 		ai_chance = { factor = 20 }
-		religion = jewish
+		secret_religion = jewish
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical
@@ -303,7 +286,7 @@ character_event = {
 			}
 			NOT = { religion = hellenic_pagan }
 		}
-		religion = hellenic_pagan
+		secret_religion = hellenic_pagan
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical
@@ -340,13 +323,11 @@ character_event = {
 				trait = lunatic
 			}
 		}
-		NOT = {
+		NOR = {
 			has_character_flag = can_go_pagan
 			has_character_flag = gone_pagan
 			trait = zealous
-			trait = crusader
-			trait = mujahid
-			trait = holy_warrior
+			has_crusade_trait_trigger = yes
 			has_character_modifier = voice_of_jesus
 			has_character_modifier = voice_of_satan
 			piety = 500
@@ -467,16 +448,16 @@ character_event = {
 			factor = 5
 			independent = no
 			is_female = yes
-			any_spouse = { religion = ROOT }
+			any_spouse = { secret_religion = ROOT }
 		}
 		modifier = {
 			factor = 10
 			independent = no
-			liege = { religion = ROOT }
+			liege = { secret_religion = ROOT }
 		}
 		modifier = {
 			factor = 10
-			NOT = {
+			NOR = {
 				trait = cynical
 				trait = lunatic
 				any_spouse = { religion_group = pagan_group }
@@ -891,6 +872,14 @@ character_event = {
 	}
 }
 
+##############################################
+#
+# Ancient Religions Reborn
+# - Debugging Events
+#
+# Event Ids: ancrel.9001 - 9100 reserved
+##############################################
+
 # set the ancrel_debug global flag for testing
 # some events and decisions may check this flag
 # and alter their behavior to make testing easier
@@ -985,5 +974,95 @@ character_event = {
 			religion = aten_pagan
 		}
 		add_trait = atens_chosen
+	}
+}
+
+# debug to grant all provinces in your dejure kingdom to you, including the king title
+character_event = {
+    id = ancrel.9020
+    desc = ancrel.9020.desc
+    
+    is_triggered_only = yes
+
+	immediate = {
+		capital_scope = {
+			kingdom = {
+				save_event_target_as = ancrel_title_grant
+				ROOT = { 
+					grant_title_no_opinion = PREV
+				}
+    		}
+    	}
+    }
+
+    option = {
+    	name = OK
+	}
+
+	after = {
+    	any_independent_ruler = {
+    		limit = {
+    			de_jure_liege_or_above = event_target:ancrel_title_grant
+    		}
+    		any_realm_province = {
+    			county = {
+    				ROOT = { 
+						usurp_title = PREV
+					}
+    			}
+    		}
+    	}
+	}
+}
+
+# debug to grant you the de jure empire of your capital and vassalize de jure vassals
+character_event = {
+    id = ancrel.9021
+    desc = ancrel.9021.desc
+
+    is_triggered_only = yes
+
+	immediate = {
+		capital_scope = {
+			empire = {
+				save_event_target_as = ancrel_title_grant
+				ROOT = { 
+					grant_title_no_opinion = PREV
+				}
+    		}
+    	}
+    }
+
+    option = {
+    	name = OK
+	}
+
+	after = {
+    	any_independent_ruler = {
+    		limit = {
+    			de_jure_liege_or_above = event_target:ancrel_title_grant
+    		}
+    		set_defacto_liege = ROOT
+    	}
+	}
+}
+
+# debug to convert all characters and provinces in your realm to your religion and culture
+character_event = {
+	id = ancrel.9022
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		any_realm_character = {
+			religion = ROOT
+			culture = ROOT
+		}
+
+		any_realm_province = {
+			religion = ROOT
+			culture = ROOT
+		}
 	}
 }

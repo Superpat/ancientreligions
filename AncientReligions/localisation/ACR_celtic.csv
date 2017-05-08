@@ -1,6 +1,7 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-###### Religion/titles definitions;;;;;;;;;;;;;;x
 coa_plain_celtic;Celtic Coat of Arms;Celtique;;;;;;;;;;;;x
+religion_openly_celtic_or_reformed_tooltip;Openly Celtic Pagan or Druidic;;;;;;;;;;;;;x
+###### Religion/titles definitions;;;;;;;;;;;;;;x
 HERO_RELIGION;Heroic Religion;Religion Héroique;;;;;;;;;;;;x
 HERO_RELIGION_HOME_TERRITORY;Heroic Religion in Home Territory;Religion Héroique dans sa terre d'origine;;;;;;;;;;;;x
 GOD_CERNNUNOS;Cernunnos;Cernunnos;Cernunnos;;Cernunnos;;;;;;;;;x

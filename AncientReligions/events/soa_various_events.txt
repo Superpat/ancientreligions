@@ -267,6 +267,7 @@ narrative_event = {
 			}
 		}
 	}
+	
 	option = {
 		name = { 
 			text = EVTOPTB_SOA_3002 # Pray and fast, mother
@@ -320,6 +321,7 @@ narrative_event = {
 	
 	option = {
 		name = EVTOPTC_SOA_3002 # Consult the Court Chaplain
+		
 		trigger = {
 			NOT = { society_member_of = the_satanists }
 			job_spiritual = {
@@ -1068,6 +1070,30 @@ character_event = {
 						value = off
 					}
 				}
+				OR = {
+					AND = {
+						has_game_rule = {
+							name = aztec_invasion
+							value = historical
+						}
+						year = 1250
+					}
+					AND = {
+						has_game_rule = {
+							name = aztec_invasion
+							value = random
+						}
+						total_years_played = 50
+					}
+					AND = {
+						has_game_rule = {
+							name = aztec_invasion
+							value = delayed_random
+						}
+						year = 1000
+						total_years_played = 50
+					}
+				}
 				mother = {
 					OR = {
 						is_alive = no
@@ -1120,7 +1146,6 @@ character_event = {
 		remove_trait = shy
 		remove_trait = trusting
 		add_trait = lustful
-		add_trait = envious
 		add_trait = deceitful
 		add_trait = ambitious
 		add_trait = cruel

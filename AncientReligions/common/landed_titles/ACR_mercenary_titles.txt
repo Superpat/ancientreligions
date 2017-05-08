@@ -350,5 +350,5 @@ d_burning_blades = {
 
 	strength_growth_per_century = 1.0
 
-	mercenary_type = horus_composition
+	mercenary_type = burning_blades_composition
 }

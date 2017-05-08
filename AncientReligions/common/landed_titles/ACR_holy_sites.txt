@@ -51,7 +51,7 @@ c_alexandria = {
 	holy_site = promethean_pagan
 }
 # site of a pythagorean academy at crotone
-c_consenza ={
+c_consenza = {
 	holy_site = promethean_pagan
 }
 # Kartli covers the southern slopes of Mt Kazbek,

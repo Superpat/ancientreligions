@@ -190,7 +190,7 @@ character_event = {
 		name = ancrel.2002.a
 
 		FROM = {
-			give_minor_title = title_hypatos_philosophon
+			set_special_character_title = title_hypatos_philosophon
 			prestige = 100
 			opinion = {
 				modifier = ancrel_honored_me
@@ -928,6 +928,13 @@ long_character_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		FROMFROMFROMFROM = {
+			secret_religion = hellenic_pagan
+			set_character_flag = confessed_secret_religion_to_@ROOT
+		}
+	}
+
 	option = { # force the philosopher to renounce paganism, sending him to a monastery
 		name = ancrel.2027.a
 		add_character_modifier = { name = acr_sided_with_church days = 1825 }
@@ -1017,6 +1024,13 @@ long_character_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		FROM = {
+			secret_religion = hellenic_pagan
+			set_character_flag = confessed_secret_religion_to_@ROOT
+		}
+	}
+
 	option = { # take him up on the offer
 		name = ancrel.2029.a
 
@@ -1044,13 +1058,7 @@ long_character_event = {
 			intrigue = 10
 		}
 
-		# convert stealthily, requires 2.7 (but not MnM)
-		add_religion_char_flag_effect = yes
-		add_trait = secretly_hellenic_pagan
-		FROM ={
-			add_religion_char_flag_effect = yes
-			add_trait = secretly_hellenic_pagan
-		}
+		secret_religion = hellenic_pagan
 	}
 
 	option = { # imprison him, if you ignored the priests before
@@ -1062,6 +1070,7 @@ long_character_event = {
 		name = ancrel.2029.d
 
 		FROM = {
+			set_character_flag = ancrel_block_philosopher
 			imprison = ROOT
 		}
 	}
@@ -1255,10 +1264,13 @@ character_event = {
 			religion = promethean_pagan
 		}
 		OR = {
-			culture_group = latin
+			culture = roman
+			culture = italian
+			culture = croatian
+			culture = serbian
 			culture_group = byzantine
-			culture = sicilian_greek # SWMH
-			culture_group = italian_group # SWMH
+			# culture = sicilian_greek # SWMH
+			# culture_group = italian_group # SWMH
 		}
 		NOT = { has_character_flag = flag_studied_the_classics }
 		OR = {
@@ -1273,7 +1285,7 @@ character_event = {
 	mean_time_to_happen = {
 		years = 6
 		
-		#Increase MTTH by 50% every 50 years
+		#Increase MTTH by 10% every 50 years
 		modifier = {
 			factor = 1.1
 			year = 916
@@ -1333,6 +1345,10 @@ character_event = {
 				trait = zealous
 				trait = cynical
 			}
+		}
+		modifier = { # croats and serbs should get it much less
+			factor = 5
+			culture_group = south_slavic
 		}
 		modifier = {
 			factor = 10
@@ -1430,11 +1446,8 @@ character_event = {
 			limit = { religion_group = jewish_group }
 			add_trait = sympathy_judaism
 		}
-		random_list = {
-			75 = { religion = hellenic_pagan }
-			20 = { religion = promethean_pagan }
-			5 = { religion = titan_pagan }
-		}
+
+		religion = hellenic_pagan
 		
 		if = {
 			limit = { trait = cynical }
@@ -1444,6 +1457,7 @@ character_event = {
 			limit = { trait = zealous }
 			remove_trait = zealous
 		}
+
 		hidden_tooltip = {
 			host = {
 				if = {
@@ -1522,7 +1536,7 @@ character_event = {
 			limit = { religion_group = jewish_group }
 			add_trait = sympathy_judaism
 		}
-		religion = FROM
+		set_secret_religion = FROM
 	}
 }
 
@@ -1931,7 +1945,7 @@ character_event = {
 		create_random_priest = {
 			random_traits = no
 			dynasty = none
-			religion = hellenic_pagan
+			secret_religion = hellenic_pagan
 			culture = greek
 			age = 50
 			trait = patient
@@ -1991,6 +2005,12 @@ character_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		event_target:target_maniot_priest = {
+			set_character_flag = confessed_secret_religion_to_@ROOT
+		}
+	}
+
 	option = {
 		name = EVTOPTAancrel.2107
 		ai_chance = {
@@ -2018,7 +2038,7 @@ character_event = {
 			add_trait = sympathy_judaism
 		}
 		
-		religion = hellenic_pagan
+		secret_religion = hellenic_pagan
 		
 		event_target:target_maniot_priest = {
 			give_job_title = job_spiritual
@@ -2032,6 +2052,9 @@ character_event = {
 		}
 		add_trait = sympathy_pagans
 		add_trait = cynical
+		event_target:target_maniot_priest = {
+			leave_court_and_die_effect = yes
+		}
 	}
 }
 

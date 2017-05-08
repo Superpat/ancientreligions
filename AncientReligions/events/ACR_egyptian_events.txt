@@ -3118,7 +3118,7 @@ character_event = {
 					}
 					# tribal chief 3
 					create_character = {
-						name = "Wenishezmu"
+						name = "Wenishesmu"
 						female = no
 						age = 29
 						culture = bedouin_arabic

@@ -3,7 +3,7 @@ title_commander = {
 	
 	attribute = martial
 	dignity = 0.05
-	opinion_effect = 10
+	opinion_effect = 5
 	realm_in_name = yes
 	
 	monthly_salary = 0.05
@@ -12,13 +12,8 @@ title_commander = {
 	revoke_allowed = no # Handled by diplomatic interaction
 	
 	allowed_to_hold = {
-		OR = {
-			primary_title = { temporary = no }
-			NOT = {
-				primary_title = {
-					always = yes
-				}
-			}
+		NOT = { 
+			primary_title = { temporary = yes } 
 		}
 		liege = { character = FROM }
 		OR = {
@@ -28,7 +23,7 @@ title_commander = {
 					AND = {
 						is_feminist_religion_trigger = yes
 						liege = { religion = ROOT }
-					}	
+					}
 					liege = {
 						OR = {
 							primary_title = {

@@ -17,7 +17,7 @@ Hellenic:
    - Added Serbian and Croatian, but it is much rarer (20% as likely, to be precise).
 
 
-2017-04-01 v0.39.1 "Polemos"
+2017-04-02 v0.39.1 "Polemos"
 -------------------------
 
 General:

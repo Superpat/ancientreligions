@@ -4537,8 +4537,10 @@ secret_religious_society_template = {
 	}
 
 	show_society = {
-		any_society_member = { society_member_of = FROM }
-		secret_religion = FROM
+		OR = {
+			any_society_member = { society_member_of = FROM }
+			secret_religion = FROM
+		}
 	}
 	
 	potential = {

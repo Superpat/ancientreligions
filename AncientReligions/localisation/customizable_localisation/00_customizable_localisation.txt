@@ -1605,7 +1605,9 @@ defined_text = {
 		trigger = { society_member_of = the_cult_of_kali } 
 	}
 
-	### ACR ### {
+	### ACR ###
+
+	text = {
 		localisation_key = String_black_magic
 		trigger = {
 			society_member_of = unseelie_petitioners
@@ -3347,31 +3349,31 @@ defined_text = {
 	### ACR ###
 	text = {
 		localisation_key = celtic_pagan
-		trigger = { true_religion_celtic_pagan_trigger = yes }
+		trigger = { true_religion = celtic_pagan }
 	}
 	text = {
 		localisation_key = celtic_pagan_reformed
-		trigger = { true_religion_celtic_pagan_reformed_trigger = yes }
+		trigger = { true_religion = celtic_pagan_reformed }
 	}
 	text = {
 		localisation_key = hellenic_pagan
-		trigger = { true_religion_hellenic_pagan_trigger = yes }
+		trigger = { true_religion = hellenic_pagan }
 	}
 	text = {
 		localisation_key = promethean_pagan
-		trigger = { true_religion_promethean_pagan_trigger = yes }
+		trigger = { true_religion = promethean_pagan }
 	}
 	text = {
-		localisation_key = titan_cult
-		trigger = { true_religion_titan_pagan_trigger = yes }
+		localisation_key = titan_pagan
+		trigger = { true_religion = titan_pagan }
 	}
 	text = {
 		localisation_key = egyptian_pagan
-		trigger = { true_religion_egyptian_pagan_trigger = yes }
+		trigger = { true_religion = egyptian_pagan }
 	}
 	text = {
 		localisation_key = aten_pagan
-		trigger = { true_religion_aten_pagan_trigger = yes }
+		trigger = { true_religion = aten_pagan }
 	}
 }
 

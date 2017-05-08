@@ -20,7 +20,7 @@ secretly_convert_to_celtic_pagan_reformed_holy_site_desc;The §YDruidic§! pilgrim
 secretly_convert_to_hellenic_pagan_holy_site;Secretly Convert to Hellenism;;;;;;;;;;;;;x
 secretly_convert_to_hellenic_pagan_holy_site_desc;The §YHellenic§! holy site in §Y[Root.Location.GetName]§! impress me with it's grandeur. It is as if the ancient gods are waiting for someone to take up their mantle again. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
 secretly_convert_to_promethean_pagan_holy_site;Secretly Convert to Prometheanism;;;;;;;;;;;;;x
-secretly_convert_to_hellenic_pagan_holy_site_desc;The §YPromethean§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
+secretly_convert_to_promethean_pagan_holy_site_desc;The §YPromethean§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
 secretly_convert_to_titan_pagan_holy_site;Secretly Convert to Titanism;;;;;;;;;;;;;x
 secretly_convert_to_titan_pagan_holy_site_desc;The §YTitan Cultists§! that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
 secretly_convert_to_egyptian_pagan_holy_site;Secretly Convert to Kemetism;;;;;;;;;;;;;x
@@ -28,6 +28,7 @@ secretly_convert_to_egyptian_pagan_holy_site_desc;The ancient monuments of the §
 secretly_convert_to_aten_pagan_holy_site;Secretly Convert to Atenism;;;;;;;;;;;;;x
 secretly_convert_to_aten_pagan_holy_site_desc;The §YAtenic§! ruins in §Y[Root.Location.GetName]§! impress me with the their grandeur. The builder's devotion to the Aten is visible everywhere. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
 ############### ;;;;;;;;;;;;;x
+secret_religious_society_celtic_pagan_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
 secret_religious_society_celtic_pagan_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
 secret_religious_society_celtic_pagan_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
 secret_religious_society_celtic_pagan_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
@@ -36,6 +37,7 @@ secret_religious_society_celtic_pagan_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel
 secret_religious_society_celtic_pagan_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
 secret_religious_society_celtic_pagan_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
 secret_religious_society_celtic_pagan_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_society_celtic_pagan_reformed_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
 secret_religious_society_celtic_pagan_reformed_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
 secret_religious_society_celtic_pagan_reformed_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
 secret_religious_society_celtic_pagan_reformed_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
@@ -44,6 +46,7 @@ secret_religious_society_celtic_pagan_reformed_rank_1_male;Faithful;Fidèle;Getre
 secret_religious_society_celtic_pagan_reformed_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
 secret_religious_society_celtic_pagan_reformed_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
 secret_religious_society_celtic_pagan_reformed_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_society_hellenic_pagan_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
 secret_religious_society_hellenic_pagan_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
 secret_religious_society_hellenic_pagan_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
 secret_religious_society_hellenic_pagan_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
@@ -52,6 +55,7 @@ secret_religious_society_hellenic_pagan_rank_1_male;Faithful;Fidèle;Getreuer;;Fi
 secret_religious_society_hellenic_pagan_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
 secret_religious_society_hellenic_pagan_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
 secret_religious_society_hellenic_pagan_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_society_promethean_pagan_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
 secret_religious_society_promethean_pagan_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
 secret_religious_society_promethean_pagan_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
 secret_religious_society_promethean_pagan_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
@@ -60,6 +64,7 @@ secret_religious_society_promethean_pagan_rank_1_male;Faithful;Fidèle;Getreuer;;
 secret_religious_society_promethean_pagan_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
 secret_religious_society_promethean_pagan_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
 secret_religious_society_promethean_pagan_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_society_titan_pagan_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
 secret_religious_society_titan_pagan_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
 secret_religious_society_titan_pagan_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
 secret_religious_society_titan_pagan_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
@@ -68,6 +73,7 @@ secret_religious_society_titan_pagan_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;
 secret_religious_society_titan_pagan_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
 secret_religious_society_titan_pagan_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
 secret_religious_society_titan_pagan_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_society_egyptian_pagan_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
 secret_religious_society_egyptian_pagan_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
 secret_religious_society_egyptian_pagan_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
 secret_religious_society_egyptian_pagan_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
@@ -75,7 +81,8 @@ secret_religious_society_egyptian_pagan_rank_4_female;Herald;Messagère;Herold;;M
 secret_religious_society_egyptian_pagan_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
 secret_religious_society_egyptian_pagan_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
 secret_religious_society_egyptian_pagan_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
-secret_religious_society_egyptian_pagan_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_society_egyptian_pagan_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x\
+secret_religious_society_aten_pagan_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
 secret_religious_society_aten_pagan_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
 secret_religious_society_aten_pagan_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
 secret_religious_society_aten_pagan_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
@@ -169,7 +176,9 @@ String_lightning_symbol;lightning symbol;;;;;;;;;;;;;x
 String_torch_symbol;torch symbol;;;;;;;;;;;;;x
 String_chain_symbol;symbol of chains;;;;;;;;;;;;;x
 String_eye_of_ra;Eye of Ra pendant;;;;;;;;;;;;;x
-String_solar_disk_pendant;solar disk pendant;;;;;;;;;;;;;x
+String_solar_disk;solar disk pendant;;;;;;;;;;;;;x
+Druid;Druid;;;;;;;;;;;;;x
+Dryad;Dryad;;;;;;;;;;;;;x
 String_Celt;Celt;;;;;;;;;;;;;x
 String_Druid;Druid;;;;;;;;;;;;;x
 String_Hellene;Hellene;;;;;;;;;;;;;x
@@ -182,13 +191,16 @@ String_Druidic;Druidic;;;;;;;;;;;;;x
 String_Hellenic;Hellenic;;;;;;;;;;;;;x
 String_Titanic;Titanic;;;;;;;;;;;;;x
 String_Titan_Cultist;Titan Cultist;;;;;;;;;;;;;x
+String_warlock;warlock;;;;;;;;;;;;;x
 String_Nuckelavee;Nuckelavee;;;;;;;;;;;;;x
 String_RedCaps;Red Caps;;;;;;;;;;;;;x
 String_Goblins;Goblins;;;;;;;;;;;;;x
 String_Fomorians;Fomorians;;;;;;;;;;;;;x
+String_Fomorian_Prince;Fomorian Prince;;;;;;;;;;;;;x
 String_Keres;Keres;;;;;;;;;;;;;x
 String_Cacodaemons;Cacodaemons;;;;;;;;;;;;;x
 String_Lamia;Lamia;;;;;;;;;;;;;x
+String_Lamia_Matriarch;Lamia Matriarch;;;;;;;;;;;;;x
 String_Gorgon;Gorgon;;;;;;;;;;;;;x
 String_Ammit;Ammit;;;;;;;;;;;;;x
 String_Great_Set;Set;;;;;;;;;;;;;x
@@ -201,10 +213,11 @@ String_Danus_blessings;Danu's blessings;;;;;;;;;;;;;x
 String_Heracles_strength_to_you;Heracles' strength to you;;;;;;;;;;;;;x
 String_Atlas_strength_to_you;Atlas' strength to you;;;;;;;;;;;;;x
 String_Amuns_blessings;Amun's blessings;;;;;;;;;;;;;x
-String_the_Atens_blessions;the Aten's blessings;;;;;;;;;;;;;x
+String_the_Atens_blessings;the Aten's blessings;;;;;;;;;;;;;x
 String_Arawn_watch_over_you;Arawn watch over you;;;;;;;;;;;;;x
 String_Hermes_guide_you;Hermes guide you;;;;;;;;;;;;;x
 String_May_the_Fire_Bringer_light_your_way;may the Fire Bringer light your way;;;;;;;;;;;;;x
+String_Prometheus_blessings;Prometheus' blessings;;;;;;;;;;;;;x
 String_Fury_and_rage;Fury and rage;;;;;;;;;;;;;x
 String_Bast_protect_you;Bast protect you;;;;;;;;;;;;;x
 String_may_Aten_guide_your_path;May the Aten guide your path;;;;;;;;;;;;;x

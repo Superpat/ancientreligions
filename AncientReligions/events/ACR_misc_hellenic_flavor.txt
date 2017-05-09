@@ -12,9 +12,7 @@
 #
 #######################################################################################
 
-
 namespace = ancrel
-
 
 # HadesxPersephone OTP
 character_event = {

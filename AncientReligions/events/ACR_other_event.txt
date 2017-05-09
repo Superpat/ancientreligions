@@ -476,7 +476,6 @@ character_event = {
 	}
 }
 
-
 ##############################################
 #
 # Ancient Religions Reborn

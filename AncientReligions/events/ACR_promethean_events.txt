@@ -266,6 +266,8 @@ character_event = {
 	}
 }
 
+# move prosperity from one to another
+
 ###################################################################
 #
 # Rebuilding Crotone

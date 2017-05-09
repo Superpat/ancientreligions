@@ -521,6 +521,8 @@ promethean_expansion = {
 	allowed_to_target_tributaries = no
 	allowed_to_target_suzerains = no
 
+	infamy_modifier = 1.5
+
 	can_use_gui = {
 		ROOT = {
 			prestige = 500

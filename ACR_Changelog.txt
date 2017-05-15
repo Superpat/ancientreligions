@@ -1,9 +1,17 @@
+2017-05-14 v0.39.2.2 "Pelagon"
+-------------------------
+
+Celtic:
+ - Fixed a bug that broke the Old Wizard event chain for Celts.
+
+
 2017-05-09 v0.39.2.1 "Thebes"
 -------------------------
 
 Hellenic:
  - Hellenic can now be a secret religion.
  - Secret Cults can be created for Hellenism.
+
 
 2017-05-07 v0.39.2 "Cadmus"
 -------------------------

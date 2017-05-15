@@ -75,6 +75,7 @@ character_event = {
 		}
 		new_character = {
 			give_minor_title = title_pagan_wizard
+			set_character_flag = ancrel_old_wizard
 		}
 	}
 	option = {

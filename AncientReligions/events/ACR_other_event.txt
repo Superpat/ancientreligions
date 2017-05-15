@@ -1066,3 +1066,36 @@ character_event = {
 		}
 	}
 }
+
+character_event = {
+	id = ancrel.9023
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_global_flag = ancrel_pelagon }
+	}
+
+	immediate = {
+		set_global_flag = ancrel_pelagon
+		any_independent_ruler = {
+			limit = {
+				culture_group = celtic
+			}
+			any_realm_character = {
+				limit = {
+					is_landed = no
+					secret_religion = celtic_pagan
+					age = 53
+					is_female = no
+					trait = mystic
+					trait = scholarly_theologian
+				}
+
+				set_character_flag = ancrel_old_wizard
+				give_minor_title = title_pagan_wizard
+			}
+		}
+	}
+}

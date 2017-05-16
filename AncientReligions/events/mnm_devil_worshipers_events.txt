@@ -192,19 +192,19 @@ character_event = {
 					### ACR ###
 					AND = {
 						has_character_flag = being_recruited_by_the_unseelie
-						true_religion_celtic_pagan_trigger = no
-						true_religion_celtic_pagan_reformed_trigger = no
+						true_religion = celtic_pagan
+						true_religion = celtic_pagan_reformed
 					}
 					AND = {
 						has_character_flag = being_recruited_by_the_coven
-						true_religion_hellenic_pagan_trigger = no
-						true_religion_promethean_pagan_trigger = no
-						true_religion_titan_pagan_trigger = no
+						true_religion = hellenic_pagan
+						true_religion = promethean_pagan
+						true_religion = titan_pagan
 					}
 					AND = {
 						has_character_flag = being_recruited_by_the_sand_snakes
-						true_religion_egyptian_pagan_trigger = no
-						true_religion_aten_pagan_trigger = no
+						true_religion = egyptian_pagan
+						true_religion = aten_pagan
 					}
 				}
 			}

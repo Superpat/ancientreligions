@@ -930,7 +930,7 @@ long_character_event = {
 
 	immediate = {
 		FROMFROMFROMFROM = {
-			secret_religion = hellenic_pagan
+			set_secret_religion = hellenic_pagan
 			set_character_flag = confessed_secret_religion_to_@ROOT
 		}
 	}
@@ -1026,7 +1026,7 @@ long_character_event = {
 
 	immediate = {
 		FROM = {
-			secret_religion = hellenic_pagan
+			set_secret_religion = hellenic_pagan
 			set_character_flag = confessed_secret_religion_to_@ROOT
 		}
 	}
@@ -1058,7 +1058,7 @@ long_character_event = {
 			intrigue = 10
 		}
 
-		secret_religion = hellenic_pagan
+		set_secret_religion = hellenic_pagan
 	}
 
 	option = { # imprison him, if you ignored the priests before
@@ -1803,14 +1803,14 @@ narrative_event = {
 	option = {
 		name = EVTOPTAancrel.2104
 		trigger = {
-			religion = hellenic_pagan
+			true_religion = hellenic_pagan
 		}
 	}
 	
 	option = {
 		name = EVTOPTBancrel.2104
 		trigger = {
-			NOT = { religion = hellenic_pagan }
+			NOT = { true_religion = hellenic_pagan }
 		}
 	}
 }
@@ -1945,7 +1945,6 @@ character_event = {
 		create_random_priest = {
 			random_traits = no
 			dynasty = none
-			secret_religion = hellenic_pagan
 			culture = greek
 			age = 50
 			trait = patient
@@ -1956,6 +1955,7 @@ character_event = {
 		}
 		new_character = {
 			save_event_target_as = target_maniot_priest
+			set_secret_religion = hellenic_pagan
 		}
 	}
 
@@ -2038,7 +2038,7 @@ character_event = {
 			add_trait = sympathy_judaism
 		}
 		
-		secret_religion = hellenic_pagan
+		set_secret_religion = hellenic_pagan
 		
 		event_target:target_maniot_priest = {
 			give_job_title = job_spiritual

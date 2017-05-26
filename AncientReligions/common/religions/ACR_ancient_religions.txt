@@ -53,6 +53,10 @@ pagan_group = {
 		intermarry = promethean_pagan
 		intermarry = egyptian_pagan
 		intermarry = aten_pagan
+
+
+		dynamic_cult = yes
+		secret_religion = yes
 	}
 
 	titan_pagan = {

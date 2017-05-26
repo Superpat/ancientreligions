@@ -68,13 +68,14 @@ character_event = {
 			female = no
 			age = 53
 			religion = ROOT
-			secret_religion = celtic_pagan
 			culture = ROOT
 			trait = mystic
 			trait = scholarly_theologian
 		}
 		new_character = {
+			set_secret_religion = celtic_pagan
 			give_minor_title = title_pagan_wizard
+			set_character_flag = ancrel_old_wizard
 		}
 	}
 	option = {

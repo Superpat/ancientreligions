@@ -20,7 +20,7 @@ character_event = {
 		ai_chance = {
 			factor = 10
 		}
-		secret_religion = zoroastrian
+		set_secret_religion = zoroastrian
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical
@@ -55,7 +55,7 @@ character_event = {
 		ai_chance = {
 			factor = 10
 		}
-		secret_religion = celtic_pagan
+		set_secret_religion = celtic_pagan
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical
@@ -74,7 +74,7 @@ character_event = {
 				culture = norman
 			}
 		}
-		secret_religion = norse_pagan
+		set_secret_religion = norse_pagan
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical
@@ -108,7 +108,7 @@ character_event = {
 		ai_chance = {
 			factor = 10
 		}
-		secret_religion = baltic_pagan
+		set_secret_religion = baltic_pagan
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical
@@ -123,7 +123,7 @@ character_event = {
 			culture_group = finno_ugric
 			NOT = { religion = finnish_pagan}
 		}
-		secret_religion = finnish_pagan
+		set_secret_religion = finnish_pagan
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical
@@ -148,7 +148,7 @@ character_event = {
 	option = {
 		name = "EVTOPTC_GoPagan_100"
 		ai_chance = { factor = 10 }
-		secret_religion = tengri_pagan
+		set_secret_religion = tengri_pagan
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical
@@ -173,7 +173,7 @@ character_event = {
 	option = {
 		name = "EVTOPTC_GoPagan_100"
 		ai_chance = { factor = 10 }
-		secret_religion = slavic_pagan
+		set_secret_religion = slavic_pagan
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical
@@ -201,7 +201,7 @@ character_event = {
 		trigger = {
 			culture_group = west_african
 		}
-		secret_religion = west_african_pagan
+		set_secret_religion = west_african_pagan
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical
@@ -226,7 +226,7 @@ character_event = {
 	option = {
 		name = "EVTOPTC_GoPagan_100"
 		ai_chance = { factor = 10 }
-		secret_religion = egyptian_pagan
+		set_secret_religion = egyptian_pagan
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical
@@ -251,7 +251,7 @@ character_event = {
 	option = {
 		name = "EVTOPTL_GoPagan_100"
 		ai_chance = { factor = 20 }
-		secret_religion = jewish
+		set_secret_religion = jewish
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical
@@ -286,7 +286,7 @@ character_event = {
 			}
 			NOT = { religion = hellenic_pagan }
 		}
-		secret_religion = hellenic_pagan
+		set_secret_religion = hellenic_pagan
 		if = {
 			limit = { trait = cynical }
 			remove_trait = cynical
@@ -1062,6 +1062,39 @@ character_event = {
 		any_realm_province = {
 			religion = ROOT
 			culture = ROOT
+		}
+	}
+}
+
+character_event = {
+	id = ancrel.9023
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_global_flag = ancrel_pelagon }
+	}
+
+	immediate = {
+		set_global_flag = ancrel_pelagon
+		any_independent_ruler = {
+			limit = {
+				culture_group = celtic
+			}
+			any_realm_character = {
+				limit = {
+					is_landed = no
+					secret_religion = celtic_pagan
+					age = 53
+					is_female = no
+					trait = mystic
+					trait = scholarly_theologian
+				}
+
+				set_character_flag = ancrel_old_wizard
+				give_minor_title = title_pagan_wizard
+			}
 		}
 	}
 }

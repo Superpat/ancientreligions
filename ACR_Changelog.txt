@@ -1,9 +1,10 @@
-2017-05-? v0.40 "Perses"
+2017-05-?? v0.40 "Perses"
 -------------------------
 > Perses was the son of the Titans Krios and Eurybia. His name means Destroyer/Ravager, a fitting name for the Titan of devestation. He was married to the Titan Asteria, with whom he fathered Hecate, the goddess of magic.
 
 General:
  - Modifiers to Prosperity for many events and decisions have been added for Reapers Due owners.
+ - A lot of bugs related to conversion events have been fixed. Secret Religion related commands are not idiosyncratic.
 
 Promethean:
  - The Depopulation mechanic of the Expansion CB has been re-written to modify Prosperity instead (for RD owners only, the old system still works if RD is off).
@@ -13,7 +14,22 @@ Promethean:
    - These events represent the Promethean policy of lebensraum and replace the old event that triggered on the Depopulated modifier for Reapers Due owners.
    - There is a chance that the province converts to your culture and religion. This chance increases dramatically for each level of Prosperity you transfer.
 
-2017-05-7 v0.39.2 "Cadmus"
+2017-05-14 v0.39.2.2 "Pelagon"
+-------------------------
+
+Celtic:
+ - Fixed a bug that broke the Old Wizard event chain for Celts.
+
+
+2017-05-09 v0.39.2.1 "Thebes"
+-------------------------
+
+Hellenic:
+ - Hellenic can now be a secret religion.
+ - Secret Cults can be created for Hellenism.
+
+
+2017-05-07 v0.39.2 "Cadmus"
 -------------------------
 
 General:

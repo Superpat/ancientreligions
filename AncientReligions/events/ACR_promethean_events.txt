@@ -57,13 +57,31 @@ narrative_event = {
 	}
 }
 
-# Depopulated Province Converts!
+# Depopulated Province Conversion
 province_event = {
 	id = ancrel.3401
 	hide_window = yes
 
 	trigger = {
-		has_province_modifier = depopulated_province
+		NOT = { religion = promethean_pagan }
+		OR = {
+			has_province_modifier = depopulated_province
+			has_province_modifier = depopulated_1
+			has_province_modifier = depopulated_2
+			has_province_modifier = depopulated_3
+		}
+		OR = {
+			NOT = { has_dlc = "Reapers" }
+			owner = {
+				any_demense_province = {
+					OR = {
+						has_province_modifier = prosperity_1
+						has_province_modifier = prosperity_2
+						has_province_modifier = prosperity_3
+					}
+				}
+			}
+		}
 		owner = {
 			top_liege = {
 				religion = promethean_pagan
@@ -95,14 +113,12 @@ province_event = {
 
 	immediate = {
 		owner = { 
-			top_liege = {
-				character_event = { id = ancrel.3402 }
-			}
+			character_event = { id = ancrel.3402 }
 		}
 	}
 }
 
-# Depopulated Province Converts! (top liege)
+# Depopulated Province Conversion (owner)
 character_event = {
 	id = ancrel.3402
 	desc = ancrel.3402.desc
@@ -111,11 +127,109 @@ character_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		# get a donor province
+		random_demense_province = {
+			limit = {
+				OR = {
+					has_province_modifier = prosperity_1
+					has_province_modifier = prosperity_2
+					has_province_modifier = prosperity_3
+				}
+			}
+
+			save_event_target_as = donor_province
+		}
+	}
+
 	option = {
+		name = ancrel.3402.a
+		trigger = {
+			NOT = { has_dlc = "Reapers" }
+		}
 		FROM = {
 			religion = ROOT
 			culture = ROOT
 			remove_province_modifier = depopulated_province
+		}
+	}
+
+	option = { # move once prosperity
+		name = ancrel.3402.b
+		trigger = {
+			has_dlc = "Reapers"
+		}
+
+		custom_tooltip = {
+			text = ancrel.3402.b.tt
+			hidden_tooltip = {
+				event_target:donor_province = {
+					decrease_prosperity_effect = yes
+				}
+				FROM = {
+					decrease_depopulation_effect = yes
+				}
+			}
+		}
+	}
+
+	option = { # move two prosperity
+		name = ancrel.3402.c
+		trigger = {
+			has_dlc = "Reapers"
+			FROM = {
+				OR = {
+					has_province_modifier = depopulated_2
+					has_province_modifier = depopulated_3
+				}
+			}
+			event_target:donor_province = {
+				OR = {
+					has_province_modifier = prosperity_2
+					has_province_modifier = prosperity_3
+				}
+			}
+		}
+
+		custom_tooltip = {
+			text = ancrel.3402.c.tt
+			hidden_tooltip = {
+				event_target:donor_province = {
+					decrease_prosperity_effect = yes
+					decrease_prosperity_effect = yes
+				}
+				FROM = {
+					decrease_depopulation_effect = yes
+					decrease_depopulation_effect = yes
+				}
+			}
+		}
+	}
+
+	option = { # move three prosperity
+		name = ancrel.3402.c
+		trigger = {
+			has_dlc = "Reapers"
+			FROM = {
+				has_province_modifier = depopulated_3
+			}
+			event_target:donor_province = {
+				has_province_modifier = prosperity_3
+			}
+		}
+
+		custom_tooltip = {
+			text = ancrel.3402.c.tt
+			hidden_tooltip = {
+				event_target:donor_province = {
+					devestate_province_effect = yes
+				}
+				FROM = {
+					decrease_depopulation_effect = yes
+					decrease_depopulation_effect = yes
+					decrease_depopulation_effect = yes
+				}
+			}
 		}
 	}
 }
@@ -266,7 +380,7 @@ character_event = {
 	}
 }
 
-# move prosperity from one to another
+# ask top liege to send colonists to depopulated province
 
 ###################################################################
 #

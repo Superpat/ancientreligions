@@ -14,6 +14,7 @@ Promethean:
    - These events represent the Promethean policy of lebensraum and replace the old event that triggered on the Depopulated modifier for Reapers Due owners.
    - There is a chance that the province converts to your culture and religion. This chance increases dramatically for each level of Prosperity you transfer.
 
+
 2017-05-14 v0.39.2.2 "Pelagon"
 -------------------------
 

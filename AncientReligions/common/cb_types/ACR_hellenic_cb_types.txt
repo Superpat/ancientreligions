@@ -584,8 +584,19 @@ promethean_expansion = {
 				     	}
 				     	NOT = { religion = promethean_pagan }
 					}
-					remove_province_modifier = depopulated_province
-					add_province_modifier = { name = depopulated_province duration = 10950 }
+					if {
+						limit = {
+							has_dlc = "Reapers"
+						}
+						devestate_province_effect = yes
+					}
+					if {
+						limit = {
+							NOT = { has_dlc = "Reapers" }
+						}
+						remove_province_modifier = depopulated_province
+						add_province_modifier = { name = depopulated_province duration = 10950 }
+					}
 				}
 			}
 			ROOT = {

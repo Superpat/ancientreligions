@@ -476,7 +476,7 @@ character_event = {
 		hidden_tooltip = {
 			# Calculate piety gain = 200 + nb_sed_festivals * 50
 			set_variable = { which = gain which = nb_sed_festivals }
-			multiply_variable = { which = gain value = 50 } 
+			multiply_variable = { which = gain value = 50 }
 			change_variable = { which = gain value = 200 }
 			piety = gain # variable
 		}
@@ -1446,10 +1446,6 @@ character_event = { #overflow
 	
 	option = {
 		name = OK
-	if = {
-		limit = {
-			has_dlc = "Reapers"
-		}
 	}
 }
 character_event = { #poor

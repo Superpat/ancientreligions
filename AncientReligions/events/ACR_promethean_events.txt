@@ -73,12 +73,15 @@ province_event = {
 		OR = {
 			NOT = { has_dlc = "Reapers" }
 			owner = {
-				any_demense_province = {
-					OR = {
-						has_province_modifier = prosperity_1
-						has_province_modifier = prosperity_2
-						has_province_modifier = prosperity_3
+				OR = {
+					any_demense_province = {
+						OR = {
+							has_province_modifier = prosperity_1
+							has_province_modifier = prosperity_2
+							has_province_modifier = prosperity_3
+						}
 					}
+					independent = no
 				}
 			}
 		}
@@ -112,6 +115,7 @@ province_event = {
 	}
 
 	immediate = {
+		save_event_target_as = receiver_province
 		owner = { 
 			character_event = { id = ancrel.3402 }
 		}
@@ -128,17 +132,22 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		# get a donor province
-		random_demense_province = {
+		if = {
 			limit = {
-				OR = {
-					has_province_modifier = prosperity_1
-					has_province_modifier = prosperity_2
-					has_province_modifier = prosperity_3
-				}
+				has_dlc = "Reapers"
 			}
+			# get a donor province
+			random_demense_province = {
+				limit = {
+					OR = {
+						has_province_modifier = prosperity_1
+						has_province_modifier = prosperity_2
+						has_province_modifier = prosperity_3
+					}
+				}
 
-			save_event_target_as = donor_province
+				save_event_target_as = donor_province
+			}
 		}
 	}
 
@@ -147,7 +156,7 @@ character_event = {
 		trigger = {
 			NOT = { has_dlc = "Reapers" }
 		}
-		FROM = {
+		event_target:receiver_province = {
 			religion = ROOT
 			culture = ROOT
 			remove_province_modifier = depopulated_province
@@ -166,7 +175,7 @@ character_event = {
 				event_target:donor_province = {
 					decrease_prosperity_effect = yes
 				}
-				FROM = {
+				event_target:receiver_province = {
 					decrease_depopulation_effect = yes
 				}
 			}
@@ -177,7 +186,7 @@ character_event = {
 		name = ancrel.3402.c
 		trigger = {
 			has_dlc = "Reapers"
-			FROM = {
+			event_target:receiver_province = {
 				OR = {
 					has_province_modifier = depopulated_2
 					has_province_modifier = depopulated_3
@@ -198,7 +207,7 @@ character_event = {
 					decrease_prosperity_effect = yes
 					decrease_prosperity_effect = yes
 				}
-				FROM = {
+				event_target:receiver_province = {
 					decrease_depopulation_effect = yes
 					decrease_depopulation_effect = yes
 				}
@@ -210,7 +219,7 @@ character_event = {
 		name = ancrel.3402.c
 		trigger = {
 			has_dlc = "Reapers"
-			FROM = {
+			event_target:receiver_province = {
 				has_province_modifier = depopulated_3
 			}
 			event_target:donor_province = {
@@ -224,9 +233,99 @@ character_event = {
 				event_target:donor_province = {
 					devestate_province_effect = yes
 				}
-				FROM = {
+				event_target:receiver_province = {
 					decrease_depopulation_effect = yes
 					decrease_depopulation_effect = yes
+					decrease_depopulation_effect = yes
+				}
+			}
+		}
+	}
+
+	option = { # request the liege for settlers
+		name = ancrel.3402.d
+		trigger = {
+			has_dlc = "Reapers"
+			independent = no
+			liege = {
+				any_demense_province = {
+					OR = {
+						has_province_modifier = prosperity_1
+						has_province_modifier = prosperity_2
+						has_province_modifier = prosperity_3
+					}
+				}
+			}
+		}
+
+		custom_tooltip = {
+			text = ancrel.3402.d.tt
+			hidden_tooltip = {
+				liege = { character_event = { id = ancrel.3405 days = 3 } }
+			}
+		}
+	}
+}
+
+# ask top liege to send colonists to depopulated province
+character_event = {
+	id = ancrel.3405
+	desc = ancrel.3405.desc
+	picture = 
+	border = GFX_event_normal_frame_economy
+
+	is_triggered_only = yes
+
+	immediate = {
+		random_demense_province = {
+			limit = {
+				OR = {
+					has_province_modifier = prosperity_1
+					has_province_modifier = prosperity_2
+					has_province_modifier = prosperity_3
+				}
+			}
+
+			save_event_target_as = donor_province
+		}
+	}
+
+	option = { # bump it up further
+		name = ancrel.3402.d
+		trigger = {
+			independent = no
+		}
+
+		custom_tooltip = {
+			text = ancrel.3402.d.tt
+			liege = { character_event = { id = ancrel.3405 days = 3 } }
+		}
+	}
+
+	option = { # that land is your responsibility!
+		name = ancrel.3405.b
+		
+		event_target:receiver_province = {
+			owner = { 
+				character_event = { id = ancrel.3406 days = 3 }
+			}
+		}
+	}
+
+	option = { # send settlers (move one prosperity)
+		name = ancrel.3405.c
+		trigger = {
+			has_dlc = "Reapers"
+			event_target
+		}
+
+		custom_tooltip = {
+			text = ancrel.3405.c.tt
+			hidden_tooltip = {
+				event_target:donor_province = {
+					decrease_prosperity_effect = yes
+				}
+				event_target:receiver_province = {
 					decrease_depopulation_effect = yes
 				}
 			}
@@ -379,8 +478,6 @@ character_event = {
 		}
 	}
 }
-
-# ask top liege to send colonists to depopulated province
 
 ###################################################################
 #

@@ -584,13 +584,13 @@ promethean_expansion = {
 				     	}
 				     	NOT = { religion = promethean_pagan }
 					}
-					if {
+					if = {
 						limit = {
 							has_dlc = "Reapers"
 						}
 						devestate_province_effect = yes
 					}
-					if {
+					if = {
 						limit = {
 							NOT = { has_dlc = "Reapers" }
 						}

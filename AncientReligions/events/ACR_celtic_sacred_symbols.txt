@@ -78,12 +78,6 @@ province_event = {
 			factor = 50
 		}
 		modifier = {
-			factor = 1.2
-			owner = {
-				trait = cynical
-			}
-		}
-		modifier = {
 			factor = 0.8
 			owner = {
 				trait = zealous
@@ -207,9 +201,9 @@ province_event = {
 				has_dlc = "Reapers"
 			}
 			custom_tooltip = {
-				text = capital_prospers_custom_tooltip
+				text = province_prospers_custom_tooltip
 				hidden_tooltip = {
-					capital_scope = {
+					ROOT = {
 						change_variable = { which = prosperity_value value = 4 }
 					}
 				}
@@ -374,9 +368,9 @@ province_event = {
 				has_dlc = "Reapers"
 			}
 			custom_tooltip = {
-				text = capital_prospers_custom_tooltip
+				text = province_prospers_custom_tooltip
 				hidden_tooltip = {
-					capital_scope = {
+					ROOT = {
 						change_variable = { which = prosperity_value value = 12 }
 					}
 				}

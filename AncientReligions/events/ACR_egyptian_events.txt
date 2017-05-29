@@ -475,10 +475,65 @@ character_event = {
 		
 		hidden_tooltip = {
 			# Calculate piety gain = 200 + nb_sed_festivals * 50
-			set_variable = { which = gain which = nb_sed_festivals }
-			multiply_variable = { which = gain value = 50 }
-			change_variable = { which = gain value = 200 }
-			piety = gain # variable
+			# set_variable = { which = gain which = nb_sed_festivals }
+			# multiply_variable = { which = gain value = 50 }
+			# change_variable = { which = gain value = 200 }
+			# piety = gain # variable
+
+			if = {
+				limit = {
+					is_variable_equal = { which = nb_sed_festivals value = 1 }
+				}
+				piety = 200
+			}
+			if = {
+				limit = {
+					is_variable_equal = { which = nb_sed_festivals value = 2 }
+				}
+				piety = 300
+			}
+			if = {
+				limit = {
+					is_variable_equal = { which = nb_sed_festivals value = 3 }
+				}
+				piety = 400
+			}
+			if = {
+				limit = {
+					is_variable_equal = { which = nb_sed_festivals value = 4 }
+				}
+				piety = 500
+			}
+			if = {
+				limit = {
+					is_variable_equal = { which = nb_sed_festivals value = 5 }
+				}
+				piety = 600
+			}
+			if = {
+				limit = {
+					is_variable_equal = { which = nb_sed_festivals value = 6 }
+				}
+				piety = 700
+			}
+			if = {
+				limit = {
+					is_variable_equal = { which = nb_sed_festivals value = 7 }
+				}
+				piety = 800
+			}
+			if = {
+				limit = {
+					is_variable_equal = { which = nb_sed_festivals value = 8 }
+				}
+				piety = 900
+			}
+			if = {
+				limit = {
+					check_variable = { which = nb_sed_festivals value = 9 }
+				}
+				piety = 1000
+			}
 		}
 		add_character_modifier = {
 			name = held_sed_festival
@@ -593,13 +648,11 @@ character_event = {
 			limit = {
 				has_dlc = "Reapers"
 			}
-			capital_scope = {
-				custom_tooltip = {
-					text = province_loses_prosperity_tooltip
-					hidden_tooltip = {
-						capital_scope = {
-							subtract_variable = { which = prosperity_value value = 8 }
-						}
+			custom_tooltip = {
+				text = province_loses_prosperity_tooltip
+				hidden_tooltip = {
+					capital_scope = {
+						subtract_variable = { which = prosperity_value value = 8 }
 					}
 				}
 			}
@@ -635,12 +688,12 @@ character_event = {
 					add_province_modifier = {
 						name = VIET_nile_flood_good
 						duration = 365
-						if = {
-							limit = {
-								has_dlc = "Reapers"
-							}
-							change_variable = { which = prosperity_value value = 2 }
+					}
+					if = {
+						limit = {
+							has_dlc = "Reapers"
 						}
+						change_variable = { which = prosperity_value value = 2 }
 					}
 					any_province_lord = {
 						character_event = { id = ancrel.4101 }
@@ -1636,9 +1689,7 @@ character_event = {
 				custom_tooltip = {
 					text = capital_prospers_custom_tooltip
 					hidden_tooltip = {
-						capital_scope = {
-							change_variable = { which = prosperity_value value = 2 }
-						}
+						change_variable = { which = prosperity_value value = 2 }
 					}
 				}
 			}
@@ -2263,7 +2314,7 @@ character_event = {
 				has_dlc = "Reapers"
 			}
 			custom_tooltip = {
-				text = province_loses_prosperity
+				text = province_loses_prosperity_tooltip
 				hidden_tooltip = {
 					capital_scope = {
 						change_variable = { which = prosperity_value value = 6 }

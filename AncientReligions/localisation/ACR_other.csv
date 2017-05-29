@@ -29,7 +29,8 @@ ancrel.troublesome;Troublesome indeed...;;;;;;;;;;;;;;x
 ancrel.that_bastard;Bastard...;;;;;;;;;;;;;x
 ancrel.bummer;That's dissapointing...;;;;;;;;;;;;;x
 ancrel.fantastic;That's fantastic!;;;;;;;;;;;;;x
-province_loses_prosperity_tooltip;Your capital loses some of it's prosperity!;;;;;;;;;;;;;x
+province_loses_prosperity_tooltip;The province loses some of it's prosperity!;;;;;;;;;;;;;x
+province_prospers_custom_tooltip;The province becomes more prosperous!;;;;;;;;;;;;;x
 ###### Misc opinion modifiers;;;;;;;;;;;;;x
 ancrel_honored_me;Honored Me;;;;;;;;;;;;;x
 ancrel_dissapointed;Dissapointed;;;;;;;;;;;;;x

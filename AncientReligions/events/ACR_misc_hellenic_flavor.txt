@@ -1526,7 +1526,7 @@ character_event = {
 			NOT = { trait = incapable }
 			ai = yes
 			NOT = { dynasty = ROOT }
-			has_landed_title = no
+			is_ruler = no
 			any_child = {
 				is_female = no
 				age = 13
@@ -1535,7 +1535,7 @@ character_event = {
 				NOT = { trait = eunuch }
 				ai = yes
 				NOT = { dynasty = ROOT }
-				has_landed_title = no
+				is_ruler = no
 			}
 		}
 		NOT = { has_character_flag = VIET_follower_of_cybele_event }
@@ -1586,7 +1586,7 @@ character_event = {
 				NOT = { trait = incapable }
 				ai = yes
 				NOT = { dynasty = ROOT }
-				has_landed_title = no
+				is_ruler = no
 			}
 			random_child = {
 				limit = {
@@ -1597,7 +1597,7 @@ character_event = {
 					NOT = { trait = eunuch }
 					ai = yes
 					NOT = { dynasty = ROOT }
-					has_landed_title = no				
+					is_ruler = no				
 				}
 				save_event_target_as = the_son
 				PREV = {

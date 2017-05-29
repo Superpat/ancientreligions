@@ -97,7 +97,9 @@ decisions = {
 		allow = {
 			war = no
 			any_demesne_title = {
-				is_occupied = no
+				location = {
+					any_province_holding = { is_occupied = no }
+				}
 			}
 			OR = {
 				any_vassal = {
@@ -872,7 +874,9 @@ decisions = {
 		allow = {
 			war = no
 			any_demesne_title = {
-				is_occupied = no
+				location = {
+					any_province_holding = { is_occupied = no }
+				}
 			}
 			OR = {
 				any_vassal = {

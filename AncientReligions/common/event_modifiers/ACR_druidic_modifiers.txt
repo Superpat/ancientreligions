@@ -237,8 +237,7 @@ sacred_stag = {
 sacred_dog = {
 	icon = 11
 	disease_defence = 0.04
-	regiment_reinforcement_speed = 0.05
-}
+	levy_reinforce_rate = 0.05
 sacred_oak = {
 	icon = 11
 	tech_growth_modifier = 0.05

@@ -3856,7 +3856,7 @@ character_event = {
 				}
 			}
 		}
-		opinion = { modifier = opinion_hate who = FROM duration = -1 }
+		opinion = { modifier = opinion_hate who = FROM years = 100 }
 	}
 }
 

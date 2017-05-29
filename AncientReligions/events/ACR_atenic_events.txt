@@ -106,9 +106,20 @@ province_event = {
 				   type = temple
 				   holder = PREV
 				}
+
+			if = {
+				limit = {
+					has_dlc = "Reapers"
+				}
+				custom_tooltip = {
+					text = province_prospers_custom_tooltip
+					hidden_tooltip = {
+						change_variable = { which = prosperity_value value = 5 }
+					}
+				}
 			}
-		}
-		owner = {
+			}
+
 			prestige = 500
 			religion_authority = {
 				modifier = akhetaten_restored

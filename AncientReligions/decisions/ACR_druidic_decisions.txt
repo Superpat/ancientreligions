@@ -134,7 +134,7 @@ decisions = {
 					text = capital_prospers_custom_tooltip
 					hidden_tooltip = {
 						capital_scope = {
-							change_variable = { which = prosperity_value value = 8 }
+							change_variable = { which = prosperity_value value = 6 }
 						}
 					}
 				}

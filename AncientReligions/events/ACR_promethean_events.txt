@@ -774,6 +774,20 @@ character_event = {
 
 		set_character_flag = unbinding_cheap_open
 
+		if = {
+			limit = {
+				has_dlc = "Reapers"
+			}
+			custom_tooltip = {
+				text = capital_prospers_custom_tooltip
+				hidden_tooltip = {
+					capital_scope = {
+						change_variable = { which = prosperity_value value = 1 }
+					}
+				}
+			}
+		}
+
 		ai_chance = {
 			factor = 25
 			modifier = {
@@ -805,6 +819,20 @@ character_event = {
 		prestige = 150
 
 		set_character_flag = unbinding_middle_open
+
+		if = {
+			limit = {
+				has_dlc = "Reapers"
+			}
+			custom_tooltip = {
+				text = capital_prospers_custom_tooltip
+				hidden_tooltip = {
+					capital_scope = {
+						change_variable = { which = prosperity_value value = 3 }
+					}
+				}
+			}
+		}
 
 		ai_chance = {
 			factor = 50
@@ -846,6 +874,20 @@ character_event = {
 
 		set_character_flag = unbinding_grand_open
 
+		if = {
+			limit = {
+				has_dlc = "Reapers"
+			}
+			custom_tooltip = {
+				text = capital_prospers_custom_tooltip
+				hidden_tooltip = {
+					capital_scope = {
+						change_variable = { which = prosperity_value value = 5 }
+					}
+				}
+			}
+		}
+
 		ai_chance = {
 			factor = 25
 			modifier = {
@@ -883,6 +925,20 @@ character_event = {
 		scaled_wealth = -0.05
 		prestige = -25
 
+		if = {
+			limit = {
+				has_dlc = "Reapers"
+			}
+			custom_tooltip = {
+				text = capital_prospers_custom_tooltip
+				hidden_tooltip = {
+					capital_scope = {
+						change_variable = { which = prosperity_value value = 1 }
+					}
+				}
+			}
+		}
+
 		ai_chance = {
 			factor = 25
 			modifier = {
@@ -907,12 +963,27 @@ character_event = {
 			}
 		}
 	}
+
 	option = { # lets not be cheap
 		name = ancrel.3452.b
 		set_character_flag = unbinding_middle_festivities
 
 		scaled_wealth = -0.1
 		prestige = 25
+
+		if = {
+			limit = {
+				has_dlc = "Reapers"
+			}
+			custom_tooltip = {
+				text = capital_prospers_custom_tooltip
+				hidden_tooltip = {
+					capital_scope = {
+						change_variable = { which = prosperity_value value = 3 }
+					}
+				}
+			}
+		}
 
 		ai_chance = {
 			factor = 50
@@ -938,12 +1009,27 @@ character_event = {
 			}
 		}	
 	}
+	
 	option = { # lets make it a festival to remember!
 		name = ancrel.3452.c
 		set_character_flag = unbinding_grand_festivities
 
 		scaled_wealth = -0.2
 		prestige = 50
+
+		if = {
+			limit = {
+				has_dlc = "Reapers"
+			}
+			custom_tooltip = {
+				text = capital_prospers_custom_tooltip
+				hidden_tooltip = {
+					capital_scope = {
+						change_variable = { which = prosperity_value value = 5 }
+					}
+				}
+			}
+		}
 
 		ai_chance = {
 			factor = 25

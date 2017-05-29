@@ -664,7 +664,7 @@ province_event = {
 				has_dlc = "Reapers"
 			}
 			custom_tooltip = {
-				text = province_loses_prosperity_tooltip
+				text = province_loses_prosperity_custom_tooltip
 				hidden_tooltip = {
 					subtract_variable = { which = prosperity_value value = 4 }
 				}
@@ -1071,7 +1071,7 @@ province_event = {
 				has_dlc = "Reapers"
 			}
 			custom_tooltip = {
-				text = province_loses_prosperity_tooltip
+				text = province_loses_prosperity_custom_tooltip
 				hidden_tooltip = {
 					subtract_variable = { which = prosperity_value value = 4 }
 				}

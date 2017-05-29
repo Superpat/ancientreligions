@@ -242,7 +242,23 @@ province_event = {
 				}
 			}
 		}		
-	}	
+	}
+
+	after = {
+		if = {
+			limit = {
+				has_dlc = "Reapers"
+			}
+			custom_tooltip = {
+				text = province_prospers_custom_tooltip
+				hidden_tooltip = {
+					ROOT = {
+						change_variable = { which = prosperity_value value = 8 }
+					}
+				}
+			}
+		}
+	}
 }
 
 # The Priesthood Restored
@@ -548,7 +564,7 @@ character_event = {
 				text = capital_prospers_custom_tooltip
 				hidden_tooltip = {
 					capital_scope = {
-						change_variable = { which = prosperity_value value = 8 }
+						change_variable = { which = prosperity_value value = 6 }
 					}
 				}
 			}
@@ -649,10 +665,10 @@ character_event = {
 				has_dlc = "Reapers"
 			}
 			custom_tooltip = {
-				text = province_loses_prosperity_tooltip
+				text = province_loses_prosperity_custom_tooltip
 				hidden_tooltip = {
 					capital_scope = {
-						subtract_variable = { which = prosperity_value value = 8 }
+						subtract_variable = { which = prosperity_value value = 6 }
 					}
 				}
 			}
@@ -1593,6 +1609,20 @@ character_event = {
 			name = VIET_garlic_distribution
 			duration = 730
 		}
+
+		if = {
+			limit = {
+				has_dlc = "Reapers"
+			}
+			custom_tooltip = {
+				text = capital_prospers_custom_tooltip
+				hidden_tooltip = {
+					capital_scope = {
+						change_variable = { which = prosperity_value value = 3 }
+					}
+				}
+			}
+		}
 	}
 
 	option = { #Don't distribute
@@ -1789,22 +1819,8 @@ province_event = {
 			religion = egyptian_pagan
 			religion = aten_pagan
 		}
-		OR = {
-			province_id = 788
-			province_id = 789
-			province_id = 790
-			province_id = 791
-			province_id = 792
-			province_id = 793
-			province_id = 794
-			province_id = 795
-			province_id = 796
-			province_id = 797
-			province_id = 798
-			province_id = 799
-			province_id = 800
-			province_id = 802
-		}
+
+		county = { is_on_nile_trigger = yes }
 	}
 	
 	mean_time_to_happen = {
@@ -1817,7 +1833,7 @@ province_event = {
 		}
 	}
 
-	option = {#Do nothing
+	option = { # Do nothing
 		name = ancrel.4153.a
 		owner = {
 			set_character_flag = VIET_descrated_egyptian_tombs_happened
@@ -1849,8 +1865,23 @@ province_event = {
 				}				
 			}
 		}
+
+		if = {
+			limit = {
+				has_dlc = "Reapers"
+			}
+			custom_tooltip = {
+				text = province_prospers_custom_tooltip
+				hidden_tooltip = {
+					ROOT = {
+						change_variable = { which = prosperity_value value = -4 }
+					}
+				}
+			}
+		}
 	}
-	option = {#Send in security
+
+	option = { # Send in security
 		name = ancrel.4153.b
 		owner = {
 			set_character_flag = VIET_descrated_egyptian_tombs_happened
@@ -1875,6 +1906,20 @@ province_event = {
 					name = VIET_province_desecrated_egyptian_tombs
 					duration = 1095
 				}				
+			}
+		}
+
+		if = {
+			limit = {
+				has_dlc = "Reapers"
+			}
+			custom_tooltip = {
+				text = province_loses_prosperity_custom_tooltip
+				hidden_tooltip = {
+					ROOT = {
+						change_variable = { which = prosperity_value value = -2 }
+					}
+				}
 			}
 		}
 	}
@@ -2020,7 +2065,8 @@ character_event = {
 		wealth = -10
 		character_event = { id = ancrel.4156 tooltip = ancrel.4156.tooltip }
 	}
-	option = { # Add 'em
+
+	option = { # Pff... yeah right
 		name = ancrel.4155.b
 		piety = -5
 		if = {
@@ -2059,7 +2105,7 @@ character_event = {
 
 	is_triggered_only = yes
 
-	option = { # Add 'em
+	option = { # Expel!
 		name = ancrel.4156.a
 		piety = 20
 		if = {
@@ -2314,7 +2360,7 @@ character_event = {
 				has_dlc = "Reapers"
 			}
 			custom_tooltip = {
-				text = province_loses_prosperity_tooltip
+				text = province_loses_prosperity_custom_tooltip
 				hidden_tooltip = {
 					capital_scope = {
 						change_variable = { which = prosperity_value value = 6 }
@@ -3189,7 +3235,7 @@ character_event = {
 	}
 }
 
-# the old man implies that "old man Set" has guided you here
+# the old man implies that "old man Set" has guided you here,
 # it is your destiny to find this temple
 long_character_event = {
 	id = ancrel.4206
@@ -3286,7 +3332,7 @@ character_event = {
 	}
 }
 
-# you reject there ways, and return to your people
+# you reject their ways, and return to your people
 character_event = {
 	id = ancrel.4208
 	desc = ancrel.4208.desc
@@ -3390,140 +3436,141 @@ character_event = {
 		religion = egyptian_pagan
 		
 		primary_title = { 
-			ROOT = {
-				capital_scope = {
-					# tribal chief 1
-					create_character = {
-						name = "Menkhaf"
-						female = no
-						age = 42
-						culture = bedouin_arabic
-						religion = egyptian_pagan
-						employer = PREVPREV
-						attributes = {
-						    martial = 12
-						    diplomacy = 6
-						    stewardship = 9
-						    intrigue = 8
-						    learning = 6
-						}
-						trait = zealous
-						trait = cavalry_leader
-						trait = holy_warrior
-						trait = mystic
-						trait = skilled_tactician
+			save_event_target_as = main_title
+		}
+		ROOT = {
+			capital_scope = {
+				# tribal chief 1
+				create_character = {
+					name = "Menkhaf"
+					female = no
+					age = 42
+					culture = bedouin_arabic
+					religion = egyptian_pagan
+					employer = event_target:main_title
+					attributes = {
+					    martial = 12
+					    diplomacy = 6
+					    stewardship = 9
+					    intrigue = 8
+					    learning = 6
 					}
-					new_character = {
-						spawn_unit = {
-						  owner = ROOT
-						  province = PREV
-						  home = PREV
-						  leader = THIS
-						  troops = {
-						    light_cavalry = { 600 600 }
-						    horse_archers = { 400 400 }
-						  }
-						  attrition = 0
-						  disband_on_peace = no
-						  cannot_inherit = yes
-						  maintenance_multiplier = 0.5
-						}
+					trait = zealous
+					trait = cavalry_leader
+					trait = holy_warrior
+					trait = mystic
+					trait = skilled_tactician
+				}
+				new_character = {
+					spawn_unit = {
+					  owner = ROOT
+					  province = PREV
+					  home = PREV
+					  leader = THIS
+					  troops = {
+					    light_cavalry = { 600 600 }
+					    horse_archers = { 400 400 }
+					  }
+					  attrition = 0
+					  disband_on_peace = no
+					  cannot_inherit = yes
+					  maintenance_multiplier = 0.5
 					}
-					# tribal chief 2
-					create_character = {
-						name = "Sihathor"
-						female = no
-						age = 32
-						culture = bedouin_arabic
-						religion = egyptian_pagan
-						employer = PREVPREV
-						attributes = {
-							martial = 12
-							diplomacy = 6
-							stewardship = 6
-							intrigue = 12
-							learning = 8
-						}
-						trait = zealous
-						trait = cavalry_leader
-						trait = desert_terrain_leader
-						trait = tough_soldier
+				}
+				# tribal chief 2
+				create_character = {
+					name = "Sihathor"
+					female = no
+					age = 32
+					culture = bedouin_arabic
+					religion = egyptian_pagan
+					employer = event_target:main_title
+					attributes = {
+						martial = 12
+						diplomacy = 6
+						stewardship = 6
+						intrigue = 12
+						learning = 8
 					}
-					new_character = {
-						spawn_unit = {
-						  owner = ROOT
-						  province = PREV
-						  home = PREV
-						  leader = THIS
-						  troops = {
-						    light_cavalry = { 600 600 }
-						    horse_archers = { 400 400 }
-						  }
-						  attrition = 0
-						  disband_on_peace = no
-						  cannot_inherit = yes
-						  maintenance_multiplier = 0.5
-						}
+					trait = zealous
+					trait = cavalry_leader
+					trait = desert_terrain_leader
+					trait = tough_soldier
+				}
+				new_character = {
+					spawn_unit = {
+					  owner = ROOT
+					  province = PREV
+					  home = PREV
+					  leader = THIS
+					  troops = {
+					    light_cavalry = { 600 600 }
+					    horse_archers = { 400 400 }
+					  }
+					  attrition = 0
+					  disband_on_peace = no
+					  cannot_inherit = yes
+					  maintenance_multiplier = 0.5
 					}
-					# tribal chief 3
-					create_character = {
-						name = "Wenishesmu"
-						female = no
-						age = 29
-						culture = bedouin_arabic
-						religion = egyptian_pagan
-						employer = PREVPREV
-						attributes = {
-							martial = 9
-							diplomacy = 8
-							stewardship = 6
-							intrigue = 8
-							learning = 12
-						}
-						trait = zealous
-						trait = cavalry_leader
-						trait = rough_terrain_leader
-						trait = tough_soldier
+				}
+				# tribal chief 3
+				create_character = {
+					name = "Wenishesmu"
+					female = no
+					age = 29
+					culture = bedouin_arabic
+					religion = egyptian_pagan
+					employer = event_target:main_title
+					attributes = {
+						martial = 9
+						diplomacy = 8
+						stewardship = 6
+						intrigue = 8
+						learning = 12
 					}
-					new_character = {
-						spawn_unit = {
-						  owner = ROOT
-						  province = PREV
-						  home = PREV
-						  leader = THIS
-						  troops = {
-						    light_cavalry = { 600 600 }
-						    horse_archers = { 400 400 }
-						  }
-						  attrition = 0
-						  disband_on_peace = no
-						  cannot_inherit = yes
-						  maintenance_multiplier = 0.5
-						}
+					trait = zealous
+					trait = cavalry_leader
+					trait = rough_terrain_leader
+					trait = tough_soldier
+				}
+				new_character = {
+					spawn_unit = {
+					  owner = ROOT
+					  province = PREV
+					  home = PREV
+					  leader = THIS
+					  troops = {
+					    light_cavalry = { 600 600 }
+					    horse_archers = { 400 400 }
+					  }
+					  attrition = 0
+					  disband_on_peace = no
+					  cannot_inherit = yes
+					  maintenance_multiplier = 0.5
 					}
-					# the old man
-					create_character = {
-						name = "Merptah"
-						has_nickname = nick_the_old
-						female = no
-						age = 55
-						culture = bedouin_arabic
-						religion = egyptian_pagan
-						employer = PREVPREV
-						attributes = {
-							martial = 3
-							diplomacy = 8
-							stewardship = 5
-							intrigue = 7
-							learning = 10
-						}
-						trait = zealous
-						trait = mastermind_theologian
-						trait = mystic
-						trait = kind
+				}
+				# the old man
+				create_character = {
+					name = "Merptah"
+					has_nickname = nick_the_old
+					female = no
+					age = 55
+					culture = bedouin_arabic
+					religion = egyptian_pagan
+					employer = event_target:main_title
+					attributes = {
+						martial = 3
+						diplomacy = 8
+						stewardship = 5
+						intrigue = 7
+						learning = 10
 					}
-				} 
-			}
+					trait = zealous
+					trait = mastermind_theologian
+					trait = mystic
+					trait = kind
+				}
+			} 
 		}
 	}
 }

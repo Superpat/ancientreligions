@@ -672,6 +672,13 @@ province_event = {
 					type = temple
 					holder = PREV
 				}
+
+				if = {
+					limit = {
+						has_dlc = "Reapers"
+					}
+					change_variable = { which = prosperity_value value = 20 }
+				}
 			}
 			religion_authority = { modifier = crotone_academy }
 			prestige = 500
@@ -978,8 +985,6 @@ character_event = {
  			job_spiritual = { character_event = { id = ancrel.3547 } }
  		}
 
- 		character_event = { id = ancrel.3454 days = 1 } # next decision
-
  		ai_chance = {
  			factor = 25
  			modifier = {
@@ -1028,8 +1033,6 @@ character_event = {
 		hidden_tooltip = { #inform the priest
 			job_spiritual = { character_event = { id = ancrel.3548 } }
 		}
-
- 		character_event = { id = ancrel.3454 days = 1 } # next decision
 
  		ai_chance = {
  			factor = 50
@@ -1089,8 +1092,6 @@ character_event = {
  			job_spiritual = { character_event = { id = ancrel.3546 } }
  		}
 
- 		character_event = { id = ancrel.3454 days = 1 } # next decision
-
  		ai_chance = {
  			factor = 25
  			modifier = {
@@ -1141,8 +1142,6 @@ character_event = {
  			job_spiritual = { character_event = { id = ancrel.3546 } }
  		}
 
- 		character_event = { id = ancrel.3454 days = 1 } # next decision
-
  		ai_chance = {
  			factor = 25
  			modifier = {
@@ -1166,6 +1165,10 @@ character_event = {
  				trait = lunatic
  			}
  		}
+	}
+
+	after = {
+ 		character_event = { id = ancrel.3454 days = 1 } # next decision
 	}
 }
 
@@ -1196,8 +1199,6 @@ character_event = {
 				character_event = { id = ancrel.3544 }
 			}
 		}
-
-		narrative_event = { id = ancrel.3455 days = 1 } # the opening ceremony!
 
  		ai_chance = {
  			factor = 25
@@ -1249,8 +1250,6 @@ character_event = {
 				character_event = { id = ancrel.3545 }
 			}
 		}
-
-		narrative_event = { id = ancrel.3455 days = 1 } # the opening ceremony!
 
  		ai_chance = {
  			factor = 50
@@ -1319,8 +1318,6 @@ character_event = {
 			}
 		}
 
-		narrative_event = { id = ancrel.3455 days = 1 } # the opening ceremony!
-
  		ai_chance = {
  			factor = 25
  			modifier = {
@@ -1379,8 +1376,6 @@ character_event = {
 			}
 		}
 
-		narrative_event = { id = ancrel.3455 days = 1 } # the opening ceremony!
-
  		ai_chance = {
  			factor = 25
  			modifier = {
@@ -1404,6 +1399,10 @@ character_event = {
  				trait = lunatic
  			}
  		}
+	}
+
+	after = {
+		narrative_event = { id = ancrel.3455 days = 1 } # the opening ceremony!		
 	}
 }
 
@@ -3084,52 +3083,54 @@ character_event = {
 		name = ancrel.3474.c
 		custom_tooltip = {
 			text = ancrel.3474.c.tt
-			random_list = {
-				50 = { # good outcome
-					modifier = {
-						factor = 1.2
-						intrigue = 12
+			hidden_tooltip = {
+				random_list = {
+					50 = { # good outcome
+						modifier = {
+							factor = 1.2
+							intrigue = 12
+						}
+						modifier = {
+							factor = 1.2
+							intrigue = 16
+						}
+						modifier = {
+							factor = 1.2
+							diplomacy = 12
+						}
+						modifier = {
+							factor = 1.2
+							diplomacy = 16
+						}
+						modifier = {
+							factor = 1.2
+							trait = gregarious
+						}
+						character_event = { id = ancrel.3478 }
 					}
-					modifier = {
-						factor = 1.2
-						intrigue = 16
+					50 = { # bad outcome
+						modifier = {
+							factor = 1.2
+							NOT = { intrigue = 8 }
+						}
+						modifier = {
+							factor = 1.2
+							NOT = { intrigue = 4 }
+						}
+						modifier = {
+							factor = 1.2
+							NOT = { diplomacy = 8 }
+						}
+						modifier = {
+							factor = 1.2
+							NOT = { diplomacy = 4 }
+						}
+						modifier = {
+							factor = 1.2
+							trait = shy
+						}
+						character_event = { id = ancrel.3479 }
 					}
-					modifier = {
-						factor = 1.2
-						diplomacy = 12
-					}
-					modifier = {
-						factor = 1.2
-						diplomacy = 16
-					}
-					modifier = {
-						factor = 1.2
-						trait = gregarious
-					}
-					character_event = { id = ancrel.3478 }
-				}
-				50 = { # bad outcome
-					modifier = {
-						factor = 1.2
-						NOT = { intrigue = 8 }
-					}
-					modifier = {
-						factor = 1.2
-						NOT = { intrigue = 4 }
-					}
-					modifier = {
-						factor = 1.2
-						NOT = { diplomacy = 8 }
-					}
-					modifier = {
-						factor = 1.2
-						NOT = { diplomacy = 4 }
-					}
-					modifier = {
-						factor = 1.2
-						trait = shy
-					}
-					character_event = { id = ancrel.3479 }
 				}
 			}
 		}

@@ -237,9 +237,9 @@ religion_secretly_in_egyptian_subgroup_trigger = {
 	}
 }
 
-true_religion_in_celtic_pagan_subgroup_trigger = {
+true_religion_in_celtic_subgroup_trigger = {
 	custom_tooltip = {
-		text = true_religion_in_celtic_pagan_subgroup_tooltip
+		text = true_religion_in_celtic_subgroup_tooltip
 		hidden_trigger = {
 			OR = {
 				true_religion = celtic_pagan
@@ -249,9 +249,9 @@ true_religion_in_celtic_pagan_subgroup_trigger = {
 	}
 }
 
-true_religion_in_hellenic_pagan_subgroup_trigger = {
+true_religion_in_hellenic_subgroup_trigger = {
 	custom_tooltip = {
-		text = true_religion_in_hellenic_pagan_subgroup_tooltip
+		text = true_religion_in_hellenic_subgroup_tooltip
 		hidden_trigger = {
 			OR = {
 				true_religion = hellenic_pagan
@@ -262,9 +262,9 @@ true_religion_in_hellenic_pagan_subgroup_trigger = {
 	}
 }
 
-true_religion_in_egyptian_pagan_subgroup_trigger = {
+true_religion_in_egyptian_subgroup_trigger = {
 	custom_tooltip = {
-		text = true_religion_in_egyptian_pagan_subgroup_tooltip
+		text = true_religion_in_egyptian_subgroup_tooltip
 		hidden_trigger = {
 			OR = {
 				true_religion = egyptian_pagan

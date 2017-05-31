@@ -3435,142 +3435,133 @@ character_event = {
 
 		religion = egyptian_pagan
 		
-		primary_title = { 
-			save_event_target_as = main_title
-		}
-		ROOT = {
-			capital_scope = {
-				# tribal chief 1
-				create_character = {
-					name = "Menkhaf"
-					female = no
-					age = 42
-					culture = bedouin_arabic
-					religion = egyptian_pagan
-					employer = event_target:main_title
-					attributes = {
-					    martial = 12
-					    diplomacy = 6
-					    stewardship = 9
-					    intrigue = 8
-					    learning = 6
-					}
-					trait = zealous
-					trait = cavalry_leader
-					trait = holy_warrior
-					trait = mystic
-					trait = skilled_tactician
+		capital_scope = {
+			# tribal chief 1
+			create_character = {
+				name = "Menkhaf"
+				female = no
+				age = 42
+				culture = bedouin_arabic
+				religion = egyptian_pagan
+				attributes = {
+				    martial = 12
+				    diplomacy = 6
+				    stewardship = 9
+				    intrigue = 8
+				    learning = 6
 				}
-				new_character = {
-					spawn_unit = {
-					  owner = ROOT
-					  province = PREV
-					  home = PREV
-					  leader = THIS
-					  troops = {
-					    light_cavalry = { 600 600 }
-					    horse_archers = { 400 400 }
-					  }
-					  attrition = 0
-					  disband_on_peace = no
-					  cannot_inherit = yes
-					  maintenance_multiplier = 0.5
-					}
+				trait = zealous
+				trait = cavalry_leader
+				trait = holy_warrior
+				trait = mystic
+				trait = skilled_tactician
+			}
+			new_character = {
+				spawn_unit = {
+				  owner = ROOT
+				  province = PREV
+				  home = PREV
+				  leader = THIS
+				  troops = {
+				    light_cavalry = { 600 600 }
+				    horse_archers = { 400 400 }
+				  }
+				  attrition = 0
+				  disband_on_peace = no
+				  cannot_inherit = yes
+				  maintenance_multiplier = 0.5
 				}
-				# tribal chief 2
-				create_character = {
-					name = "Sihathor"
-					female = no
-					age = 32
-					culture = bedouin_arabic
-					religion = egyptian_pagan
-					employer = event_target:main_title
-					attributes = {
-						martial = 12
-						diplomacy = 6
-						stewardship = 6
-						intrigue = 12
-						learning = 8
-					}
-					trait = zealous
-					trait = cavalry_leader
-					trait = desert_terrain_leader
-					trait = tough_soldier
+			}
+			# tribal chief 2
+			create_character = {
+				name = "Sihathor"
+				female = no
+				age = 32
+				culture = bedouin_arabic
+				religion = egyptian_pagan
+				attributes = {
+					martial = 12
+					diplomacy = 6
+					stewardship = 6
+					intrigue = 12
+					learning = 8
 				}
-				new_character = {
-					spawn_unit = {
-					  owner = ROOT
-					  province = PREV
-					  home = PREV
-					  leader = THIS
-					  troops = {
-					    light_cavalry = { 600 600 }
-					    horse_archers = { 400 400 }
-					  }
-					  attrition = 0
-					  disband_on_peace = no
-					  cannot_inherit = yes
-					  maintenance_multiplier = 0.5
-					}
+				trait = zealous
+				trait = cavalry_leader
+				trait = desert_terrain_leader
+				trait = tough_soldier
+			}
+			new_character = {
+				spawn_unit = {
+				  owner = ROOT
+				  province = PREV
+				  home = PREV
+				  leader = THIS
+				  troops = {
+				    light_cavalry = { 600 600 }
+				    horse_archers = { 400 400 }
+				  }
+				  attrition = 0
+				  disband_on_peace = no
+				  cannot_inherit = yes
+				  maintenance_multiplier = 0.5
 				}
-				# tribal chief 3
-				create_character = {
-					name = "Wenishesmu"
-					female = no
-					age = 29
-					culture = bedouin_arabic
-					religion = egyptian_pagan
-					employer = event_target:main_title
-					attributes = {
-						martial = 9
-						diplomacy = 8
-						stewardship = 6
-						intrigue = 8
-						learning = 12
-					}
-					trait = zealous
-					trait = cavalry_leader
-					trait = rough_terrain_leader
-					trait = tough_soldier
+			}
+			# tribal chief 3
+			create_character = {
+				name = "Wenishesmu"
+				female = no
+				age = 29
+				culture = bedouin_arabic
+				religion = egyptian_pagan
+				attributes = {
+					martial = 9
+					diplomacy = 8
+					stewardship = 6
+					intrigue = 8
+					learning = 12
 				}
-				new_character = {
-					spawn_unit = {
-					  owner = ROOT
-					  province = PREV
-					  home = PREV
-					  leader = THIS
-					  troops = {
-					    light_cavalry = { 600 600 }
-					    horse_archers = { 400 400 }
-					  }
-					  attrition = 0
-					  disband_on_peace = no
-					  cannot_inherit = yes
-					  maintenance_multiplier = 0.5
-					}
+				trait = zealous
+				trait = cavalry_leader
+				trait = rough_terrain_leader
+				trait = tough_soldier
+			}
+			new_character = {
+				spawn_unit = {
+				  owner = ROOT
+				  province = PREV
+				  home = PREV
+				  leader = THIS
+				  troops = {
+				    light_cavalry = { 600 600 }
+				    horse_archers = { 400 400 }
+				  }
+				  attrition = 0
+				  disband_on_peace = no
+				  cannot_inherit = yes
+				  maintenance_multiplier = 0.5
 				}
-				# the old man
-				create_character = {
-					name = "Merptah"
-					has_nickname = nick_the_old
-					female = no
-					age = 55
-					culture = bedouin_arabic
-					religion = egyptian_pagan
-					employer = event_target:main_title
-					attributes = {
-						martial = 3
-						diplomacy = 8
-						stewardship = 5
-						intrigue = 7
-						learning = 10
-					}
-					trait = zealous
-					trait = mastermind_theologian
-					trait = mystic
-					trait = kind
+			}
+			# the old man
+			create_character = {
+				name = "Merptah"
+				has_nickname = nick_the_old
+				female = no
+				age = 55
+				culture = bedouin_arabic
+				religion = egyptian_pagan
+				attributes = {
+					martial = 3
+					diplomacy = 8
+					stewardship = 5
+					intrigue = 7
+					learning = 10
 				}
-			} 
+				trait = zealous
+				trait = mastermind_theologian
+				trait = mystic
+				trait = kind
+			}
 		}
 	}
 }

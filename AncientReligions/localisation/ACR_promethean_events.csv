@@ -6,7 +6,25 @@ ancrel.3400.b;Let its holy fires never darken!;;;;;;;;;;;;;x
 ancrel.3400.c;Distressing...;;;;;;;;;;;;;x
 CHRONICLE_FIRST_ACADEMY;[Root.GetFullName] rebuilt The First Academy and established a new Scholarch to lead the Promethean Faith.;;;;;;;;;;;;;x
 ancrel.3402.desc;The province of [From.GetName], devestated after its conquest by your armies, has been slowly settled since then by people from your realm. The majority of its inhabitants are now [This.Culture.GetName] and [This.Religion.GetName]!;;;;;;;;;;;;;x
-ancrel.3403.desc;Now that you've come of age, it is time to decide which of the three great philosophical disciplines will you adhere to. This is an important decision in the life of every Promethean. It is not to be made lightly, nor can it be changed on a whim.;;;;;;;;;;;;;x
+ancrel.3402.desc.reapers;The province of [receiver_province.GetName], devestated after its conquest by your armies, is being slowly settled from your more prosperous provinces. If you were to get directly involved, you could have it settled much more quickly...;;;;;;;;;;;;;x
+ancrel.3402.b;Resettle a village from [donor_province.GetName].;;;;;;;;;;;;;x
+ancrel.3402.b.tt;[donor_province.GetName] loses one level of prosperity, [receiver_province.GetName] loses a level of depopulation.;;;;;;;;;;;;;x
+ancrel.3402.c;Resettle several villages from [donor_province.GetName].;;;;;;;;;;;;;x
+ancrel.3402.c.tt;[donor_province.GetName] loses two levels of prosperity, [receiver_province.GetName] loses two levels of depopulation.;;;;;;;;;;;;;x
+ancrel.3402.d;I will order a mass migration from [donor_province.GetName]!;;;;;;;;;;;;;x
+ancrel.3402.d.tt;[donor_province.GetName] loses all of its prosperity, [receiver_province.GetName] loses all of its depopulation.;;;;;;;;;;;;;x
+ancrel.3402.e;Send a request to [Root.Liege.GetTitledFirstName] for settlers.;;;;;;;;;;;;;x
+ancrel.3402.e.tt;[Root.Liege.GetTitledFirstName] will get your request.;;;;;;;;;;;;;x
+ancrel.3405.desc;[receiver_province.Owner.GetTitledFirstName] has requested assisstance in settling [donor_province.GetName], as it is currently depopulated.;;;;;;;;;;;;;x
+ancrel.3405.a;I don't want to deal with this, forward the request to [Root.Liege.GetTitledFirstName];;;;;;;;;;;;;x
+ancrel.3405.a.tt;[Root.Liege.GetTitledFirstName] will get your request.;;;;;;;;;;;;;x
+ancrel.3405.b;That land is [receiver_province.Owner.GetFirstName]'s responsibility!;;;;;;;;;;;;;x
+ancrel.3405.b.tt;[receiver_province.Owner.GetTitledFirstName] is informed of your rejection.;;;;;;;;;;;;;x
+ancrel.3405.c;I shall relocate a village from [donor_province.GetName].;;;;;;;;;;;;;x
+ancrel.3405.c.tt;[receiver_province.Owner.GetTitledFirstName] is informed you are settling villagers in [receiver_province.GetName].;;;;;;;;;;;;;x
+ancrel.3406.desc;You have received word that [From.GetTitledFirstName] got your request for aid in settling [receiver_province.GetName] and declined to send you aid!;;;;;;;;;;;;;x
+ancrel.3407.desc;A large caravan, practically an entire village, has arrived in [receiver_province.GetName]. At the head of the caravan a man on horseback informs you that they are from [donor_province.GetName] and have been sent by [From.GetBestName] to settle the province!;;;;;;;;;;;;;x
+ancrel.3403.desc;Now that you've come of age, it is time to decide which of the three great philosophical disciplines you will adhere to. This is an important decision in the life of every Promethean. It is not to be made lightly, nor can it be changed on a whim.;;;;;;;;;;;;;x
 ancrel.3403.a;Stoicism is my guide.;;;;;;;;;;;;;x
 ancrel.3403.b;Skepticism is the way to enlightenment.;;;;;;;;;;;;;x
 ancrel.3403.c;Epicureanism is the path to Henosis.;;;;;;;;;;;;;x

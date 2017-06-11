@@ -57,13 +57,34 @@ narrative_event = {
 	}
 }
 
-# Depopulated Province Converts!
+# Depopulated Province Conversion
 province_event = {
 	id = ancrel.3401
 	hide_window = yes
 
 	trigger = {
-		has_province_modifier = depopulated_province
+		NOT = { religion = promethean_pagan }
+		OR = {
+			has_province_modifier = depopulated_province
+			has_province_modifier = depopulated_1
+			has_province_modifier = depopulated_2
+			has_province_modifier = depopulated_3
+		}
+		OR = {
+			NOT = { has_dlc = "Reapers" }
+			owner = {
+				OR = {
+					any_demesne_province = {
+						OR = {
+							has_province_modifier = prosperity_modifier_1
+							has_province_modifier = prosperity_modifier_2
+							has_province_modifier = prosperity_modifier_3
+						}
+					}
+					independent = no
+				}
+			}
+		}
 		owner = {
 			top_liege = {
 				religion = promethean_pagan
@@ -94,29 +115,307 @@ province_event = {
 	}
 
 	immediate = {
+		save_event_target_as = receiver_province
 		owner = { 
-			top_liege = {
-				character_event = { id = ancrel.3402 }
-			}
+			character_event = { id = ancrel.3402 }
 		}
 	}
 }
 
-# Depopulated Province Converts! (top liege)
+# Depopulated Province Conversion (owner)
 character_event = {
 	id = ancrel.3402
-	desc = ancrel.3402.desc
+	desc = {
+		text = ancrel.3402.desc
+		trigger = {
+			NOT = { has_dlc = "Reapers" }
+		}
+	}
+	desc = {
+		text = ancrel.3402.desc.reapers
+		trigger = {
+			has_dlc = "Reapers"
+		}
+	}
 	picture = GFX_evt_peasants
 	border = GFX_event_normal_frame_economy
 
 	is_triggered_only = yes
 
+	immediate = {
+		if = {
+			limit = {
+				has_dlc = "Reapers"
+			}
+			# get a donor province
+			random_demesne_province = {
+				limit = {
+					OR = {
+						has_province_modifier = prosperity_modifier_1
+						has_province_modifier = prosperity_modifier_2
+						has_province_modifier = prosperity_modifier_3
+					}
+				}
+
+				save_event_target_as = donor_province
+			}
+		}
+	}
+
 	option = {
-		FROM = {
+		name = OK
+		trigger = {
+			NOT = { has_dlc = "Reapers" }
+		}
+		event_target:receiver_province = {
 			religion = ROOT
 			culture = ROOT
 			remove_province_modifier = depopulated_province
 		}
+	}
+
+	option = { # move one prosperity
+		name = ancrel.3402.b
+		trigger = {
+			has_dlc = "Reapers"
+		}
+
+		ai_chance = {
+			factor = 50
+		}
+
+		custom_tooltip = {
+			text = ancrel.3402.b.tt
+			hidden_tooltip = {
+				event_target:donor_province = {
+					decrease_prosperity_effect = yes
+				}
+				event_target:receiver_province = {
+					set_province_flag = received_one_prosperity
+					decrease_depopulation_effect = yes
+				}
+			}
+		}
+	}
+
+	option = { # move two prosperity
+		name = ancrel.3402.c
+		trigger = {
+			has_dlc = "Reapers"
+			event_target:receiver_province = {
+				OR = {
+					has_province_modifier = depopulated_2
+					has_province_modifier = depopulated_3
+				}
+			}
+			event_target:donor_province = {
+				OR = {
+					has_province_modifier = prosperity_modifier_2
+					has_province_modifier = prosperity_modifier_3
+				}
+			}
+		}
+
+		ai_chance = {
+			factor = 30
+		}
+
+		custom_tooltip = {
+			text = ancrel.3402.c.tt
+			hidden_tooltip = {
+				event_target:donor_province = {
+					decrease_prosperity_effect = yes
+					decrease_prosperity_effect = yes
+				}
+				event_target:receiver_province = {
+					set_province_flag = received_two_prosperity
+					decrease_depopulation_effect = yes
+					decrease_depopulation_effect = yes
+				}
+			}
+		}
+	}
+
+	option = { # move three prosperity
+		name = ancrel.3402.d
+		trigger = {
+			has_dlc = "Reapers"
+			event_target:receiver_province = {
+				has_province_modifier = depopulated_3
+			}
+			event_target:donor_province = {
+				has_province_modifier = prosperity_modifier_3
+			}
+		}
+
+		ai_chance=  {
+			factor = 20
+		}
+
+		custom_tooltip = {
+			text = ancrel.3402.d.tt
+			hidden_tooltip = {
+				event_target:donor_province = {
+					devestate_province_effect = yes
+				}
+				event_target:receiver_province = {
+					set_province_flag = received_three_prosperity
+					decrease_depopulation_effect = yes
+					decrease_depopulation_effect = yes
+					decrease_depopulation_effect = yes
+				}
+			}
+		}
+	}
+
+	option = { # request settlers from your liege
+		name = ancrel.3402.e
+		trigger = {
+			has_dlc = "Reapers"
+			independent = no
+			liege = {
+				any_demesne_province = {
+					OR = {
+						has_province_modifier = prosperity_modifier_1
+						has_province_modifier = prosperity_modifier_2
+						has_province_modifier = prosperity_modifier_3
+					}
+				}
+			}
+		}
+
+		ai_chance = {
+			factor = 15
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+		}
+
+		custom_tooltip = {
+			text = ancrel.3402.e.tt
+			hidden_tooltip = {
+				liege = { character_event = { id = ancrel.3405 days = 3 } }
+			}
+		}
+	}
+}
+
+# ask direct liege to send colonists to depopulated province (liege)
+character_event = {
+	id = ancrel.3405
+	desc = ancrel.3405.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_economy
+
+	is_triggered_only = yes
+
+	immediate = {
+		random_demesne_province = {
+			limit = {
+				OR = {
+					has_province_modifier = prosperity_modifier_1
+					has_province_modifier = prosperity_modifier_2
+					has_province_modifier = prosperity_modifier_3
+				}
+			}
+
+			save_event_target_as = donor_province
+		}
+	}
+
+	option = { # bump it up further
+		name = ancrel.3405.a
+		trigger = {
+			independent = no
+		}
+
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 1.2
+				trait = greedy
+			}
+		}
+
+		custom_tooltip = {
+			text = ancrel.3405.a.tt
+			liege = { character_event = { id = ancrel.3405 days = 3 } }
+		}
+	}
+
+	option = { # that land is your responsibility!
+		name = ancrel.3405.b
+		
+		ai_chance = {
+			factor = 25
+		}
+
+		custom_tooltip = {
+			text = ancrel.3405.b.tt
+			hidden_tooltip = {
+				event_target:receiver_province = {
+					owner = { 
+						character_event = { id = ancrel.3406 days = 3 }
+					}
+				}
+			}
+		}
+	}
+
+	option = { # send settlers (move one prosperity)
+		name = ancrel.3405.c
+		trigger = {
+			has_dlc = "Reapers"
+		}
+
+		ai_chance = {
+			factor = 25
+		}
+
+		custom_tooltip = {
+			text = ancrel.3405.c.tt
+			hidden_tooltip = {
+				event_target:donor_province = {
+					decrease_prosperity_effect = yes
+					owner = {
+						character_event = { id = ancrel.3407 days = 3 }
+					}
+				}
+				event_target:receiver_province = {
+					set_province_flag = received_one_prosperity
+					decrease_depopulation_effect = yes
+				}
+			}
+		}
+	}
+}
+
+# liege has declined request to send settlers
+character_event = {
+	id = ancrel.3406
+	desc = ancrel.3406.desc
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_economy
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.that_bastard
+	}
+}
+
+# liege has fulfilled request to send settlers
+character_event = {
+	id = ancrel.3407
+	desc = ancrel.3407.desc
+	picture = GFX_evt_culture_change
+	border = GFX_event_normal_frame_economy
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.fantastic
 	}
 }
 
@@ -373,6 +672,13 @@ province_event = {
 					type = temple
 					holder = PREV
 				}
+
+				if = {
+					limit = {
+						has_dlc = "Reapers"
+					}
+					change_variable = { which = prosperity_value value = 20 }
+				}
 			}
 			religion_authority = { modifier = crotone_academy }
 			prestige = 500
@@ -468,6 +774,20 @@ character_event = {
 
 		set_character_flag = unbinding_cheap_open
 
+		if = {
+			limit = {
+				has_dlc = "Reapers"
+			}
+			custom_tooltip = {
+				text = capital_prospers_custom_tooltip
+				hidden_tooltip = {
+					capital_scope = {
+						change_variable = { which = prosperity_value value = 1 }
+					}
+				}
+			}
+		}
+
 		ai_chance = {
 			factor = 25
 			modifier = {
@@ -499,6 +819,20 @@ character_event = {
 		prestige = 150
 
 		set_character_flag = unbinding_middle_open
+
+		if = {
+			limit = {
+				has_dlc = "Reapers"
+			}
+			custom_tooltip = {
+				text = capital_prospers_custom_tooltip
+				hidden_tooltip = {
+					capital_scope = {
+						change_variable = { which = prosperity_value value = 3 }
+					}
+				}
+			}
+		}
 
 		ai_chance = {
 			factor = 50
@@ -540,6 +874,20 @@ character_event = {
 
 		set_character_flag = unbinding_grand_open
 
+		if = {
+			limit = {
+				has_dlc = "Reapers"
+			}
+			custom_tooltip = {
+				text = capital_prospers_custom_tooltip
+				hidden_tooltip = {
+					capital_scope = {
+						change_variable = { which = prosperity_value value = 5 }
+					}
+				}
+			}
+		}
+
 		ai_chance = {
 			factor = 25
 			modifier = {
@@ -577,6 +925,20 @@ character_event = {
 		scaled_wealth = -0.05
 		prestige = -25
 
+		if = {
+			limit = {
+				has_dlc = "Reapers"
+			}
+			custom_tooltip = {
+				text = capital_prospers_custom_tooltip
+				hidden_tooltip = {
+					capital_scope = {
+						change_variable = { which = prosperity_value value = 1 }
+					}
+				}
+			}
+		}
+
 		ai_chance = {
 			factor = 25
 			modifier = {
@@ -601,12 +963,27 @@ character_event = {
 			}
 		}
 	}
+
 	option = { # lets not be cheap
 		name = ancrel.3452.b
 		set_character_flag = unbinding_middle_festivities
 
 		scaled_wealth = -0.1
 		prestige = 25
+
+		if = {
+			limit = {
+				has_dlc = "Reapers"
+			}
+			custom_tooltip = {
+				text = capital_prospers_custom_tooltip
+				hidden_tooltip = {
+					capital_scope = {
+						change_variable = { which = prosperity_value value = 3 }
+					}
+				}
+			}
+		}
 
 		ai_chance = {
 			factor = 50
@@ -632,12 +1009,27 @@ character_event = {
 			}
 		}	
 	}
+	
 	option = { # lets make it a festival to remember!
 		name = ancrel.3452.c
 		set_character_flag = unbinding_grand_festivities
 
 		scaled_wealth = -0.2
 		prestige = 50
+
+		if = {
+			limit = {
+				has_dlc = "Reapers"
+			}
+			custom_tooltip = {
+				text = capital_prospers_custom_tooltip
+				hidden_tooltip = {
+					capital_scope = {
+						change_variable = { which = prosperity_value value = 5 }
+					}
+				}
+			}
+		}
 
 		ai_chance = {
 			factor = 25
@@ -678,8 +1070,6 @@ character_event = {
  		hidden_tooltip = { # inform the priest
  			job_spiritual = { character_event = { id = ancrel.3547 } }
  		}
-
- 		character_event = { id = ancrel.3454 days = 1 } # next decision
 
  		ai_chance = {
  			factor = 25
@@ -729,8 +1119,6 @@ character_event = {
 		hidden_tooltip = { #inform the priest
 			job_spiritual = { character_event = { id = ancrel.3548 } }
 		}
-
- 		character_event = { id = ancrel.3454 days = 1 } # next decision
 
  		ai_chance = {
  			factor = 50
@@ -790,8 +1178,6 @@ character_event = {
  			job_spiritual = { character_event = { id = ancrel.3546 } }
  		}
 
- 		character_event = { id = ancrel.3454 days = 1 } # next decision
-
  		ai_chance = {
  			factor = 25
  			modifier = {
@@ -842,8 +1228,6 @@ character_event = {
  			job_spiritual = { character_event = { id = ancrel.3546 } }
  		}
 
- 		character_event = { id = ancrel.3454 days = 1 } # next decision
-
  		ai_chance = {
  			factor = 25
  			modifier = {
@@ -867,6 +1251,10 @@ character_event = {
  				trait = lunatic
  			}
  		}
+	}
+
+	after = {
+ 		character_event = { id = ancrel.3454 days = 1 } # next decision
 	}
 }
 
@@ -897,8 +1285,6 @@ character_event = {
 				character_event = { id = ancrel.3544 }
 			}
 		}
-
-		narrative_event = { id = ancrel.3455 days = 1 } # the opening ceremony!
 
  		ai_chance = {
  			factor = 25
@@ -950,8 +1336,6 @@ character_event = {
 				character_event = { id = ancrel.3545 }
 			}
 		}
-
-		narrative_event = { id = ancrel.3455 days = 1 } # the opening ceremony!
 
  		ai_chance = {
  			factor = 50
@@ -1020,8 +1404,6 @@ character_event = {
 			}
 		}
 
-		narrative_event = { id = ancrel.3455 days = 1 } # the opening ceremony!
-
  		ai_chance = {
  			factor = 25
  			modifier = {
@@ -1080,8 +1462,6 @@ character_event = {
 			}
 		}
 
-		narrative_event = { id = ancrel.3455 days = 1 } # the opening ceremony!
-
  		ai_chance = {
  			factor = 25
  			modifier = {
@@ -1105,6 +1485,10 @@ character_event = {
  				trait = lunatic
  			}
  		}
+	}
+
+	after = {
+		narrative_event = { id = ancrel.3455 days = 1 } # the opening ceremony!		
 	}
 }
 
@@ -2785,52 +3169,54 @@ character_event = {
 		name = ancrel.3474.c
 		custom_tooltip = {
 			text = ancrel.3474.c.tt
-			random_list = {
-				50 = { # good outcome
-					modifier = {
-						factor = 1.2
-						intrigue = 12
+			hidden_tooltip = {
+				random_list = {
+					50 = { # good outcome
+						modifier = {
+							factor = 1.2
+							intrigue = 12
+						}
+						modifier = {
+							factor = 1.2
+							intrigue = 16
+						}
+						modifier = {
+							factor = 1.2
+							diplomacy = 12
+						}
+						modifier = {
+							factor = 1.2
+							diplomacy = 16
+						}
+						modifier = {
+							factor = 1.2
+							trait = gregarious
+						}
+						character_event = { id = ancrel.3478 }
 					}
-					modifier = {
-						factor = 1.2
-						intrigue = 16
+					50 = { # bad outcome
+						modifier = {
+							factor = 1.2
+							NOT = { intrigue = 8 }
+						}
+						modifier = {
+							factor = 1.2
+							NOT = { intrigue = 4 }
+						}
+						modifier = {
+							factor = 1.2
+							NOT = { diplomacy = 8 }
+						}
+						modifier = {
+							factor = 1.2
+							NOT = { diplomacy = 4 }
+						}
+						modifier = {
+							factor = 1.2
+							trait = shy
+						}
+						character_event = { id = ancrel.3479 }
 					}
-					modifier = {
-						factor = 1.2
-						diplomacy = 12
-					}
-					modifier = {
-						factor = 1.2
-						diplomacy = 16
-					}
-					modifier = {
-						factor = 1.2
-						trait = gregarious
-					}
-					character_event = { id = ancrel.3478 }
-				}
-				50 = { # bad outcome
-					modifier = {
-						factor = 1.2
-						NOT = { intrigue = 8 }
-					}
-					modifier = {
-						factor = 1.2
-						NOT = { intrigue = 4 }
-					}
-					modifier = {
-						factor = 1.2
-						NOT = { diplomacy = 8 }
-					}
-					modifier = {
-						factor = 1.2
-						NOT = { diplomacy = 4 }
-					}
-					modifier = {
-						factor = 1.2
-						trait = shy
-					}
-					character_event = { id = ancrel.3479 }
 				}
 			}
 		}
@@ -3557,7 +3943,7 @@ character_event = {
 				}
 			}
 		}
-		opinion = { modifier = opinion_hate who = FROM duration = -1 }
+		opinion = { modifier = opinion_hate who = FROM years = 100 }
 	}
 }
 

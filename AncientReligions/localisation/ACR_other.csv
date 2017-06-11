@@ -18,10 +18,11 @@ HEAD_PRIEST_african_pagan_reformed;Kungo Hogon;Kungo Hogon;Kungo Hogon;;Kungo Ho
 HEAD_PRIESTESS_african_pagan_reformed;Musoo Hogon;Musoo Hogon;Musoo Hogon;;Musoo Hogon;;;;;;;;;x
 HEAD_PRIEST_aztec_reformed;Quetzalcoatl;Quetzalcoatl;Quetzalcoatl;;Quetzalcoatl;;;;;;;;;x
 HEAD_PRIESTESS_aztec_reformed;Quetzalcoatl;Quetzalcoatl;Quetzalcoatl;;Quetzalcoatl;;;;;;;;;x
-###### *shrug* ;;;;;;;;;;;;;;x
+###### Other stuff ;;;;;;;;;;;;;;x
 TITAN;Titanic;;;;;;;;;;;;;x
 EXP_RELIGION;Expansionist Religion;;;;;;;;;;;;;x
 EXP_RELIGION_HOME_TERRITORY;Expansionist Religion Home Territory;;;;;;;;;;;;;x
+DEATH_LOST_DESERT;became lost in the desert, and never returned;;;;;;;;;;;;;x
 ###### Misc keys for events;;;;;;;;;;;;;;x
 ancrel.damn;Damn!;;;;;;;;;;;;;;x
 ancrel.horrible;This is horrible!;;;;;;;;;;;;;;x
@@ -29,6 +30,8 @@ ancrel.troublesome;Troublesome indeed...;;;;;;;;;;;;;;x
 ancrel.that_bastard;Bastard...;;;;;;;;;;;;;x
 ancrel.bummer;That's dissapointing...;;;;;;;;;;;;;x
 ancrel.fantastic;That's fantastic!;;;;;;;;;;;;;x
+province_loses_prosperity_custom_tooltip;[Root.GetName] loses some of it's prosperity!;;;;;;;;;;;;;x
+province_prospers_custom_tooltip;[Root.GetName] becomes more prosperous!;;;;;;;;;;;;;x
 ###### Misc opinion modifiers;;;;;;;;;;;;;x
 ancrel_honored_me;Honored Me;;;;;;;;;;;;;x
 ancrel_dissapointed;Dissapointed;;;;;;;;;;;;;x

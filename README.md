@@ -2,7 +2,7 @@
 
 > An ancient religions mod for CK2
 
-This mod aims at recreating effectively dead religions in vanilla Crusader Kings 2.
+This mod aims at recreating dead religions in vanilla Crusader Kings 2.
 If you want to include it in any publicly released mod, you need permission from the authors.
 You also need to ask the authors noted in the Disclaimers section about their code.
 
@@ -11,12 +11,12 @@ You also need to ask the authors noted in the Disclaimers section about their co
 For more info, check the [Ancient Religions page on ckiiwiki](http://www.ckiiwiki.com/Ancient_Religions).
 
 Current Religions:
- - Hellenic paganism
+ - Hellenism
    - Titan Cult
    - Prometheanism
- - Celtic Druidism
- - Egyptian paganism
-    Atenism
+ - Celtic Paganism
+ - Kemetism (Egyptian pagan)
+   - Atenism
  
  There are currently no plans to add more religions, and we are not taking suggestions.
 
@@ -51,15 +51,17 @@ For improved maintainability and compatibility with other mods, the following co
 - Superskierpat: Original author of the mod and contributor of tens of thousands of lines of code.
 - Jonseverinsson: Early contributor and responsible for most of the Romano-centric content.
 - Rylock, Schwarherz, et. al.: The CK2+ team provided the foundation of our Kemetic implementation with Pyramids, Luxor, and the Anubis and Horus Guards.
-- AnaxXiphos: If its in the mod and it's a custom icon, he made it.
-- cybrxkhan: Advice, moral support, and some kickass Nile river events.
-- zijistark: Author of the Tiered Imperial Reconquest system.
+- AnaxXiphos: Contributed a large number of icons and CoAs.
+- cybrxkhan: Advice, moral support, and some kickass event chains.
 - jbelig: Beautiful CoAs for our religions and about half the flags for our custom titles.
 - Romulien: Tons of coding help, including our implementation of the Cardinal elections for the Archdruid.
-- theStormWeaver/xirsoi: Current mod maintainer and developer. Tens of thousands of lines of code. Dozen or so crudely made event pics.
+- theStormWeaver/xirsoi: Current mod maintainer and developer.
 
 ### Images
 - "The Favorite Poet"; Sir Lawrence Alma-Tadema
+
+## Sounds
+- death_lost_desert is a 7 second sample of *Desert Simple* by Proxima4 and downloaded from [Freesounds.org](https://www.freesound.org/people/Proxima4/sounds/104320/)
 
 ## Disclaimers
 
@@ -67,7 +69,6 @@ For improved maintainability and compatibility with other mods, the following co
 
 The following code and assets were included in Ancient Religions Reborn from other mods, or were included with explicit permission from the creator. To use these you must seek the permission of the authors.
 
-- Tiered Imperial Reconquest System; by zijistark of the Historical Immersion Project.
 - Most of our trait, decision, and religion icons; by AnaxXiphos of the Historical Immersion Project.
 - Nile River Floods event chain and modifiers; by cybrxkhan.
 - Horus Guard, Anubis Guard, and Paragon Xroj Flags; CK2+ Team.

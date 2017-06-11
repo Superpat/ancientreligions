@@ -1,3 +1,27 @@
+2017-06-11 v0.40 "Perses"
+-------------------------
+> Perses was the son of the Titans Krios and Eurybia. His name means Destroyer/Ravager, a fitting name for the Titan of devestation. He was married to the Titan Asteria, with whom he fathered Hecate, the goddess of magic.
+
+General:
+ - Modifiers to Prosperity for many events and decisions have been added for Reapers Due owners.
+   - All festivals/celebrations added by the mod now add a small amount of prosperity.
+   - Decisions to construct new holdings (Crotone, Luxor, etc.) add large amounts of prosperity.
+   - Gaining a Sacred Symbol adds a small amount of prosperity, but losing one removes the same amount.
+   - And many more!
+ - Many fixes for small bugs.
+   - A lot of bugs related to conversion events have been fixed. (Secret Religion related commands are not idiomatic).
+
+Promethean:
+ - The Depopulation mechanic of the Expansion CB has been re-written to modify Prosperity instead (for RD owners only, the old system still works if RD is off).
+   - Now, sieged provinces will lose three levels of prosperity, and all their progress toward higher prosperity will be lost.
+   - The CB cannot be used if there are any provinces in your realm that are depopulated at any level.
+ - Added events to send immigrants from your prosperous demense provinces to depopulated ones, losing Prosperity in one province to reduce depopulation in the other.
+   - These events represent the Promethean policy of lebensraum and replace the old event that triggered on the Depopulated modifier for Reapers Due owners.
+   - There is a chance that the province converts to your culture and religion. This chance increases dramatically for each level of Prosperity you transfer.
+   - If you don't want to give up a level of prosperity in one of your demesne provinces, you can ask your direct liege for help.
+     - Your direct liege can deny the request, send settlers (one prosperity), or forward your request to their liege.
+
+
 2017-05-14 v0.39.2.2 "Pelagon"
 -------------------------
 

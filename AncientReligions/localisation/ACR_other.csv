@@ -22,6 +22,7 @@ HEAD_PRIESTESS_aztec_reformed;Quetzalcoatl;Quetzalcoatl;Quetzalcoatl;;Quetzalcoa
 TITAN;Titanic;;;;;;;;;;;;;x
 EXP_RELIGION;Expansionist Religion;;;;;;;;;;;;;x
 EXP_RELIGION_HOME_TERRITORY;Expansionist Religion Home Territory;;;;;;;;;;;;;x
+DEATH_LOST_DESERT;became lost in the desert, and never returned;;;;;;;;;;;;;x
 ###### Misc keys for events;;;;;;;;;;;;;;x
 ancrel.damn;Damn!;;;;;;;;;;;;;;x
 ancrel.horrible;This is horrible!;;;;;;;;;;;;;;x

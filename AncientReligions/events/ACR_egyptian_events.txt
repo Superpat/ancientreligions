@@ -3123,7 +3123,7 @@ character_event = {
 					90 = { character_event = { id = ancrel.4209 } }
 					10 = {
 						clr_character_flag = lost_in_sandstorm
-						death = { death_reason = death_missing }
+						death = { death_reason = death_lost_desert }
 					}
 				}
 			}
@@ -3282,7 +3282,7 @@ long_character_event = {
 		}
 	}
 
-	option = { # reject the pagans, and continue on your journey
+	option = { # reject the pagans and continue on your journey
 		name = ancrel.4206.b
 		custom_tooltip = {
 			text = ancrel.4206.b.tt

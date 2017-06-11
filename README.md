@@ -60,6 +60,9 @@ For improved maintainability and compatibility with other mods, the following co
 ### Images
 - "The Favorite Poet"; Sir Lawrence Alma-Tadema
 
+## Sounds
+- death_lost_desert is a 7 second sample of *Desert Simple* by Proxima4 and downloaded from [Freesounds.org](https://www.freesound.org/people/Proxima4/sounds/104320/)
+
 ## Disclaimers
 
 ### Code from Third Parties

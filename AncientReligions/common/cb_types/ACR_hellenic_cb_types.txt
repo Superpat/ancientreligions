@@ -527,9 +527,22 @@ promethean_expansion = {
 		ROOT = {
 			prestige = 500
 			independent = yes
-			NOT = {
-				any_realm_province = {
-					has_province_modifier = depopulated_province
+			NOR = {
+				AND = {
+					has_dlc = "Reapers"
+					any_realm_province = {
+						OR = {
+							has_province_modifier = depopulated_1
+							has_province_modifier = depopulated_2
+							has_province_modifier = depopulated_3
+						}
+					}
+				}
+				AND = {
+					NOT = { has_dlc = "Reapers" }
+					any_realm_province = {
+						has_province_modifier = depopulated_province
+					}
 				}
 			}
 		}

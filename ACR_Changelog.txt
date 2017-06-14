@@ -1,4 +1,15 @@
-2017-06-11 v0.40 "Perses"
+2017-06-13 v0.40.1 "Krios"
+-------------------------
+> Krios was the titan father of Perses. Little is known of this Cthonic deity, other than that he and his wife Eurybia sided with the other titans in the Titanomachy and have been imprisoned in Tartarus for all time.
+
+Celtic:
+ - Fixed a bug with the Old wizard event chain for Celts.
+
+Promethean:
+ - Fixed a bad condition in the Expansion CB.
+ 
+
+2017-06-11 v0.40.0 "Perses"
 -------------------------
 > Perses was the son of the Titans Krios and Eurybia. His name means Destroyer/Ravager, a fitting name for the Titan of devestation. He was married to the Titan Asteria, with whom he fathered Hecate, the goddess of magic.
 

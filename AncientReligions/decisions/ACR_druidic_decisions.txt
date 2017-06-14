@@ -168,7 +168,6 @@ decisions = {
 			has_dlc = "The Old Gods"
 			is_ruler = yes
 			age = 16
-			prisoner = no
 			culture_group = celtic
 			NOT = {
 				has_character_flag = adopted_celtic_rites
@@ -178,7 +177,7 @@ decisions = {
 				}
 			}
 			any_courtier = {
-				religion = celtic_pagan
+				has_minor_title = title_court_wizard
 			}
 		}
 		allow = {
@@ -188,7 +187,7 @@ decisions = {
 			learning = 8
 			NOT = { trait = zealous }
 			any_courtier = {
-				religion = celtic_pagan
+				has_minor_title = title_court_wizard
 				prisoner = no
 			}
 		}

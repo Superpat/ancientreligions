@@ -1073,11 +1073,11 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { has_global_flag = ancrel_peres }
+		NOT = { has_global_flag = ancrel_eurybia }
 	}
 
 	immediate = {
-		set_global_flag = ancrel_peres
+		set_global_flag = ancrel_eurybia
 		any_independent_ruler = {
 			limit = {
 				culture_group = celtic
@@ -1085,21 +1085,13 @@ character_event = {
 			any_realm_character = {
 				limit = {
 					OR = {
-						AND = {
-							is_landed = no
-							secret_religion = celtic_pagan
-							age = 53
-							is_female = no
-							trait = mystic
-							trait = scholarly_theologian
-						}
 						has_character_flag = ancrel_old_wizard
+						has_minor_title = title_pagan_wizard
 					}
 				}
 
 				set_character_flag = ancrel_old_wizard
-				give_minor_title = title_pagan_wizard
-				set_secret_religion = celtic_pagan
+				give_minor_title = title_court_wizard
 			}
 		}
 	}

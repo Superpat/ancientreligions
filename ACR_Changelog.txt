@@ -1,3 +1,21 @@
+2017-06-18 v0.40.2 "Eurybia"
+-------------------------
+> Eurybia, whose name means "she who has a heart of flint", was the titan mother of Perses. Like her husband Krios, very little is known of Eurybia other than her immediate family. The meaning of her name suggests a cruel and callous nature.
+
+Celtic:
+ - The Old Wizard has slightly better traits now and will automatically become a Zealous Druid if you decide to go Celtic Pagan, assuming he's alive and in your court.
+ - When conversion cascades down your realm, characters whose true religion is celtic pagan will always accept conversion to celtic pagan.
+
+Promethean:
+ - Based on some feedback from forum user PlotVitalNPC, I've changed how moving prosperity to devestated provinces works to add some player agency.
+   - You now select the donor province with a title decision (right click on the county shield) called "Prepare Settlers".
+   - You then select the receiver province with another title decision called "Send Settlers".
+   - Only one province at a time can be preparing settlers.
+     - The selected province has an empty modifier called "Preparing Settlers" so you know which one it is.
+     - The modifier expires after 30 days.
+     - You can use a decision "Stop Preparing Settlers" to de-select that province.
+
+
 2017-06-13 v0.40.1 "Krios"
 -------------------------
 > Krios was the titan father of Perses. Little is known of this Cthonic deity, other than that he and his wife Eurybia sided with the other titans in the Titanomachy and have been imprisoned in Tartarus for all time.

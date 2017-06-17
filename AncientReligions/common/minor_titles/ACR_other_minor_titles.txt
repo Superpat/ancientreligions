@@ -17,6 +17,10 @@ title_court_wizard = {
 		is_ruler = no
 		trait = mystic
 		true_religion_group = pagan_group
+		NOT = {
+			# for removing the title
+			has_minor_title = title_court_druid
+		}
 	}
 	allowed_to_grant = {
 		always = no

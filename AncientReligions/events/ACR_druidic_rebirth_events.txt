@@ -28,7 +28,7 @@ character_event = {
 		is_ruler = yes
 		in_command = no
 		culture_group = celtic
-		NOT = {
+		NOR = {
 			OR = {
 				religion = celtic_pagan
 				religion = celtic_pagan_reformed
@@ -71,11 +71,13 @@ character_event = {
 			culture = ROOT
 			trait = mystic
 			trait = scholarly_theologian
+			trait = bad_druid
 		}
 		new_character = {
 			set_secret_religion = celtic_pagan
 			give_minor_title = title_pagan_wizard
 			set_character_flag = ancrel_old_wizard
+			opinion = { modifier = opinion_patron who = ROOT years = 50 }
 		}
 	}
 	option = {

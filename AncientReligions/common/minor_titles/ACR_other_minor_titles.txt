@@ -33,7 +33,9 @@ title_court_wizard = {
 title_pagan_wizard = {
 	grant_limit = 1
 
-	allowed_to_hold = {	always = yes }
+	allowed_to_hold = {
+		NOT = { has_minor_title = title_court_wizard }
+	}
 
 	allowed_to_grant = { always = no }
 

@@ -71,11 +71,12 @@ character_event = {
 			culture = ROOT
 			trait = mystic
 			trait = scholarly_theologian
-			trait = bad_druid
+			trait = gregarious
+			trait = quick
+			trait = frail
 		}
 		new_character = {
-			set_secret_religion = celtic_pagan
-			give_minor_title = title_pagan_wizard
+			give_minor_title = title_court_wizard
 			set_character_flag = ancrel_old_wizard
 			opinion = { modifier = opinion_patron who = ROOT years = 50 }
 		}

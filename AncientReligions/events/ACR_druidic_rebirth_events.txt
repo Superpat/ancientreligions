@@ -73,7 +73,7 @@ character_event = {
 			trait = scholarly_theologian
 			trait = gregarious
 			trait = quick
-			trait = frail
+			trait = feeble
 		}
 		new_character = {
 			give_minor_title = title_court_wizard
@@ -423,9 +423,9 @@ character_event = {
 			limit = {
 				has_minor_title = title_court_wizard
 			}
-			trait = zealous
-			trait = druid
-			grant_minor_title = title_court_druid
+			add_trait = zealous
+			add_trait = druid
+			give_minor_title = title_court_druid
 			clr_character_flag = ancrel_old_wizard
 		}
 	}

@@ -888,7 +888,7 @@ targetted_decisions = {
 
 	request_resettlement = {
 		filter = realm
-		ai_filter = realm
+		ai_target_filter = realm
 
 		from_potential = {
 			religion = promethean_pagan
@@ -958,9 +958,11 @@ title_decisions = {
 		}
 		
 		potential = {
-			is_prosperous_trigger = yes
-			religion = FROM
-			culture = FROM
+			location = { 
+				is_prosperous_trigger = yes
+				religion = FROM
+				culture = FROM
+			}
 
 			holder_scope = {
 				character = FROM
@@ -978,7 +980,7 @@ title_decisions = {
 		}
 		
 		effect = {
-			add_province_modifier = { name = preparing_settlers days = 30 }
+			location = { add_province_modifier = { name = preparing_settlers days = 30 } }
 		}
 		
 		ai_will_do = {
@@ -1001,7 +1003,9 @@ title_decisions = {
 		
 		potential = {
 			tier = count
-			is_depopulated_trigger = yes
+			location = {
+				is_depopulated_trigger = yes
+			}
 
 			holder_scope = {
 				character = FROM
@@ -1012,23 +1016,26 @@ title_decisions = {
 			custom_tooltip = {
 				text = must_be_preparing_settlers
 				hidden_tooltip = {
-					any_demesne_province = {
-						has_province_modifier = preparing_settlers
+					FROM = {
+						any_demesne_province = {
+							has_province_modifier = preparing_settlers
+						}
 					}
 				}
 			}
 		}
 		
 		effect = {
-			random_demesne_province = {
-				limit = {
-					has_province_modifier = preparing_settlers
+			location = { save_event_target_as = receiver_province }
+			FROM = {
+				random_demesne_province = {
+					limit = {
+						has_province_modifier = preparing_settlers
+					}
+
+					save_event_target_as = donor_province
 				}
-
-				save_event_target_as = donor_province
 			}
-
-			save_event_target_as = receiver_province
 		}
 		
 		ai_will_do = {

@@ -81,69 +81,71 @@ decrease_prosperity_effect = {
 # requires event targets donor_province and receiver_province
 # receiver_province must have province flag received_<one/two/three>_prosperity
 random_province_conversion_from_colonists_effect = {
-	random_list = {
-		15 = { # both religion and culture
-			modifier = {
-				factor = 1.5
-				any_neighbor_province = {
-					culture = event_target:donor_province
+	event_target:receiver_province = {
+		random_list = {
+			15 = { # both religion and culture
+				modifier = {
+					factor = 1.5
+					any_neighbor_province = {
+						culture = event_target:donor_province
+					}
 				}
-			}
-			modifier = {
-				factor = 1.5
-				any_neighbor_province = {
-					religion = event_target:donor_province
+				modifier = {
+					factor = 1.5
+					any_neighbor_province = {
+						religion = event_target:donor_province
+					}
 				}
-			}
-			modifier = {
-				factor = 2
-				has_province_flag = received_two_prosperity
-			}
-			modifier = {
-				factor = 5
-				has_province_flag = received_three_prosperity
-			}
+				modifier = {
+					factor = 2
+					has_province_flag = received_two_prosperity
+				}
+				modifier = {
+					factor = 5
+					has_province_flag = received_three_prosperity
+				}
 
-			culture = event_target:donor_province
-			relgion = event_target:donor_province
-		}
-		20 = { # culture
-			modifier = {
-				factor = 1.2
-				any_neighbor_province = {
-					culture = event_target:donor_province
+				culture = event_target:donor_province
+				religion = event_target:donor_province
+			}
+			20 = { # culture
+				modifier = {
+					factor = 1.2
+					any_neighbor_province = {
+						culture = event_target:donor_province
+					}
 				}
-			}
-			modifier = {
-				factor = 1.5
-				has_province_flag = received_two_prosperity
-			}
-			modifier = {
-				factor = 2
-				has_province_flag = received_three_prosperity
-			}
-
-			culture = event_target:donor_province
-		}
-		25 = { # religion
-			modifier = {
-				factor = 1.2
-				any_neighbor_province = {
-					religion = event_target:donor_province
+				modifier = {
+					factor = 1.5
+					has_province_flag = received_two_prosperity
 				}
-			}
-			modifier = {
-				factor = 1.5
-				has_province_flag = received_two_prosperity
-			}
-			modifier = {
-				factor = 2
-				has_province_flag = received_three_prosperity
-			}
+				modifier = {
+					factor = 2
+					has_province_flag = received_three_prosperity
+				}
 
-			religion = event_target:donor_province
-		}
-		50 = { # nothing!
+				culture = event_target:donor_province
+			}
+			25 = { # religion
+				modifier = {
+					factor = 1.2
+					any_neighbor_province = {
+						religion = event_target:donor_province
+					}
+				}
+				modifier = {
+					factor = 1.5
+					has_province_flag = received_two_prosperity
+				}
+				modifier = {
+					factor = 2
+					has_province_flag = received_three_prosperity
+				}
+
+				religion = event_target:donor_province
+			}
+			50 = { # nothing!
+			}
 		}
 	}
 

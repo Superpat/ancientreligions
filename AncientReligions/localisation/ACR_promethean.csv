@@ -58,6 +58,8 @@ holding_unbinding_festival;Holding Unbinding Festival;;;;;;;;;;;;;x
 holding_unbinding_festival_desc;This character is holding an Unbinding Festival, a religious celebration of the Promethean faith held every summer.;;;;;;;;;;;;;x
 depopulated_province;Depopulated;;;;;;;;;;;;;x
 depopulated_province_desc;This province was recently invaded and is severely depopulated. It will take a long time for it to fully recover.;;;;;;;;;;;;;x
+request_resettlement;Request Resettlement;;;;;;;;;;;;;x
+request_resettlement_desc;Request that [Root.GetTitledFirstName] send settlers to your lands.;;;;;;;;;;;;;x
 prepare_settlers;Prepare Settlers;;;;;;;;;;;;;x
 prepare_settlers_desc;You order local authorities in this county to begin preperations to relocate the peasants to another province.;;;;;;;;;;;;;x
 resettle_province;Resettle Province;;;;;;;;;;;;;x

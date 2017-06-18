@@ -2,12 +2,17 @@
 -------------------------
 > Eurybia, whose name means "she who has a heart of flint", was the titan mother of Perses. Like her husband Krios, very little is known of Eurybia other than her immediate family. The meaning of her name suggests a cruel and callous nature.
 
+General:
+ - Secret Cults now can only Prepare Ground in provinces owned by members of the Secret Cult.
+ - When apostates are burned at the stake and members of the society are informed, there is now an option to leave the society. The character is then barred from being recruited to any secret religious societies or devil worshipper societies for 5 years.
+
 Celtic:
  - The Old Wizard has slightly better traits now and will automatically become a Zealous Druid if you decide to go Celtic Pagan, assuming he's alive and in your court.
- - When conversion cascades down your realm, characters whose true religion is celtic pagan will always accept conversion to celtic pagan.
+ - When conversion cascades down your realm tree, characters whose true religion is Celtic pagan will always accept conversion to Celtic pagan.
 
 Promethean:
  - Based on some feedback from forum user PlotVitalNPC, I've changed how moving prosperity to devestated provinces works to add some player agency.
+   - The devestation of the province is reduced from -3 Prosperity to -2 Prosperity.
    - You now select the donor province with a title decision (right click on the county shield) called "Prepare Settlers".
    - You then select the receiver province with another title decision called "Send Settlers".
    - Only one province at a time can be preparing settlers.

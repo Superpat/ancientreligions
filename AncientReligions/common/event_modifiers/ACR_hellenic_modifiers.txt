@@ -155,6 +155,8 @@ depopulated_province = {
 	levy_size = -0.25	
 }
 
+preparing_settlers = { icon = 18 }
+
 holding_unbinding_festival = {
 	icon = 17
 

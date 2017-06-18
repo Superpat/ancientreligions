@@ -885,4 +885,157 @@ targetted_decisions = {
 			}
 		}
 	}
+
+	request_resettlement = {
+		filter = realm
+		ai_filter = realm
+
+		from_potential = {
+			religion = promethean_pagan
+			independent = no
+			any_demesne_province = {
+				is_depopulated_trigger = yes
+			}
+		}
+
+		potential = {
+			religion = promethean_pagan
+			FROM = {
+				liege = {
+					character = ROOT
+				}
+			}
+		}
+
+		allow = {
+			any_demesne_province = {
+				is_prosperous_trigger = yes
+			}
+		}
+
+		effect = {
+			FROM = {
+				random_demesne_province = {
+					limit = {
+						is_depopulated_trigger = yes
+					}
+
+					save_event_target_as = receiver_province
+				}
+				custom_tooltip = {
+					text = ancrel.3402.e.tt
+					hidden_tooltip = {
+						liege = { character_event = { id = ancrel.3405 days = 3 } }
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0.1
+			modifier = {
+				factor = 0.001
+				liege = {
+					NOT = { culture = PREV }
+				}
+			}
+		}
+	}
+}
+
+title_decisions = {
+	prepare_settlers = {
+		ai_target_filter = owned
+		filter = owned
+		
+		from_potential = {
+			tier = duke
+			religion = promethean_pagan
+
+			any_demesne_province = {
+				is_depopulated_trigger = yes
+			}
+		}
+		
+		potential = {
+			is_prosperous_trigger = yes
+			religion = FROM
+			culture = FROM
+
+			holder_scope = {
+				character = FROM
+			}
+		}
+		
+		allow = {
+			FROM = {
+				NOT = {
+					any_demesne_province = {
+						has_province_modifier = preparing_settlers
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_province_modifier = { name = preparing_settlers days = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.1
+			}
+		}
+	}
+
+	resettle_province = {
+		ai_target_filter = owned
+		filter = owned
+		
+		from_potential = {
+			any_demesne_province = {
+				is_prosperous_trigger = yes
+			}
+		}
+		
+		potential = {
+			tier = count
+			is_depopulated_trigger = yes
+
+			holder_scope = {
+				character = FROM
+			}
+		}
+		
+		allow = {
+			custom_tooltip = {
+				text = must_be_preparing_settlers
+				hidden_tooltip = {
+					any_demesne_province = {
+						has_province_modifier = preparing_settlers
+					}
+				}
+			}
+		}
+		
+		effect = {
+			random_demesne_province = {
+				limit = {
+					has_province_modifier = preparing_settlers
+				}
+
+				save_event_target_as = donor_province
+			}
+
+			save_event_target_as = receiver_province
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.1
+			}
+		}
+	}
 }

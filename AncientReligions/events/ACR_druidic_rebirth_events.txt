@@ -426,6 +426,7 @@ character_event = {
 			trait = zealous
 			trait = druid
 			grant_minor_title = title_court_druid
+			clr_character_flag = ancrel_old_wizard
 		}
 	}
 	option = { # reject their heathen ways

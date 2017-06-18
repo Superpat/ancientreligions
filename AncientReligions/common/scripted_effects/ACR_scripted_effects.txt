@@ -40,58 +40,10 @@ banish_to_monastery_effect = {
 	}
 }
 
-# reduces prosperity by 3 levels, adding depopulation if necessary
+# reduces prosperity by 2 levels, adding depopulation if necessary
 devestate_province_effect = {
-	if = {
-		limit = {
-			OR = {
-				has_province_modifier = depopulated_1
-				has_province_modifier = depopulated_2
-			}
-			NOR = {
-				has_province_modifier = prosperity_modifier_1
-				has_province_modifier = prosperity_modifier_2
-				has_province_modifier = prosperity_modifier_3
-			}
-		}
-		remove_province_modifier = depopulated_1
-		remove_province_modifier = depopulated_2
-		add_province_modifier = {
-			name = depopulated_3
-			duration = -1
-		}
-		clr_province_flag = recent_depopulation_1
-		clr_province_flag = recent_depopulation_2
-		set_province_flag = recent_depopulation_3
-	}
-	if = {
-		limit = {
-			has_province_modifier = prosperity_modifier_1
-		}
-		remove_province_modifier = prosperity_modifier_1
-		add_province_modifier = {
-			name = depopulated_2
-			duration = -1
-		}
-	}
-	if = {
-		limit = {
-			has_province_modifier = prosperity_modifier_2
-		}
-		remove_province_modifier = prosperity_modifier_2
-		add_province_modifier = {
-			name = depopulated_1
-			duration = -1
-		}
-	}
-	if = {
-		limit = {
-			has_province_modifier = prosperity_modifier_3
-		}
-		remove_province_modifier = prosperity_modifier_3
-	}
-
-	set_variable = { which = prosperity_value value = 0 }
+	decrease_prosperity_effect = yes
+	decrease_prosperity_effect = yes
 }
 
 decrease_prosperity_effect = {

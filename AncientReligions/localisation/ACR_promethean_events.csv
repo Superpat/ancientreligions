@@ -6,7 +6,7 @@ ancrel.3400.b;Let its holy fires never darken!;;;;;;;;;;;;;x
 ancrel.3400.c;Distressing...;;;;;;;;;;;;;x
 CHRONICLE_FIRST_ACADEMY;[Root.GetFullName] rebuilt The First Academy and established a new Scholarch to lead the Promethean Faith.;;;;;;;;;;;;;x
 ancrel.3402.desc;The province of [From.GetName], devestated after its conquest by your armies, has been slowly settled since then by people from your realm. The majority of its inhabitants are now [This.Culture.GetName] and [This.Religion.GetName]!;;;;;;;;;;;;;x
-ancrel.3402.desc.reapers;The province of [receiver_province.GetName], devestated after its conquest by your armies, is being slowly settled from your more prosperous provinces. If you were to get directly involved, you could have it settled much more quickly...;;;;;;;;;;;;;x
+ancrel.3402.desc.reapers;Preperations in [donor_province.GetName] are nearly complete, the only question is how large this resettlement effort should be. The more you send to [receiver_province.GetName], the more likely it is the settlers will dominate the region for generations. Of course, this will also have a negative impact on the economy in [donor_province.GetName].\n\nWhat is your decision?;;;;;;;;;;;;;x
 ancrel.3402.b;Resettle a village from [donor_province.GetName].;;;;;;;;;;;;;x
 ancrel.3402.b.tt;[donor_province.GetName] loses one level of prosperity, [receiver_province.GetName] loses a level of depopulation.;;;;;;;;;;;;;x
 ancrel.3402.c;Resettle several villages from [donor_province.GetName].;;;;;;;;;;;;;x
@@ -171,8 +171,8 @@ ancrel.3545.desc;In accordance with tradition, [From.GetTitledFirstName] has nam
 ancrel.3545.desc_alt;Defying tradition, [From.GetTitledFirstName] has chosen you to play Festival Heracles, over [From.GetMarshalName] [From.job_marshal.GetFullName] or even [From.GetHerHim]self.;;;;;;;;;;;;;x
 ancrel.3546.desc;[From.GetTitledFirstName] has defied tradition and named [festival_prometheus.GetTitledFirstName] as the Festival Prometheus.;;;;;;;;;;;;;x
 ancrel.3547.desc;[From.GetTitledFirstName] has named [From.GetHerHim]self as the Festival Prometheus.;;;;;;;;;;;;;x
-ancrel.3548.desc;In accordance with tradition, [From.GetTitledFirstName] has named you Festival Heracles for [From.GetHerHis] upcoming Unbinding Festival.;;;;;;;;;;;;;x
-ancrel.3548.desc_alt;Defying tradition, [From.GetTitledFirstName] has chosen you to play Festival Heracles, over [From.GetLordSpiritualName] [From.job_spiritual.GetFullName] or even [From.GetHerHim]self.;;;;;;;;;;;;;x
+ancrel.3548.desc;In accordance with tradition, [From.GetTitledFirstName] has named you Festival Prometheus for [From.GetHerHis] upcoming Unbinding Festival.;;;;;;;;;;;;;x
+ancrel.3548.desc_alt;Defying tradition, [From.GetTitledFirstName] has chosen you to play Festival Prometheus, over [From.GetLordSpiritualName] [From.job_spiritual.GetFullName] or even [From.GetHerHim]self.;;;;;;;;;;;;;x
 ancrel.3549.desc;The exhibitioners are packing up their gear, and the stage for the opening ceremony is being dismantled. The Festival is over.;;;;;;;;;;;;;x
 ancrel.3549.a;Now, to begin planning for the next one in three years...;;;;;;;;;;;;;x
 # Men of Steel Events ;;;;;;;;;;;;;;x

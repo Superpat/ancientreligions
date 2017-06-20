@@ -1,5 +1,4 @@
 decisions = {
-
 	recreate_pontificate = {
 		only_playable = yes
 		is_high_prio = yes
@@ -815,7 +814,6 @@ decisions = {
 }
 
 targetted_decisions = {
-
 	nominate_vestalis_decision = {
 		filter = court
 		ai_target_filter = court
@@ -908,6 +906,9 @@ targetted_decisions = {
 		}
 
 		allow = {
+			FROM = {
+				prestige = 200
+			}
 			any_demesne_province = {
 				is_prosperous_trigger = yes
 			}
@@ -915,16 +916,17 @@ targetted_decisions = {
 
 		effect = {
 			FROM = {
-				random_demesne_province = {
-					limit = {
-						is_depopulated_trigger = yes
-					}
-
-					save_event_target_as = receiver_province
-				}
+				prestige = -200
 				custom_tooltip = {
 					text = ancrel.3402.e.tt
 					hidden_tooltip = {
+						random_demesne_province = {
+							limit = {
+								is_depopulated_trigger = yes
+							}
+
+							save_event_target_as = receiver_province
+						}
 						liege = { character_event = { id = ancrel.3405 days = 3 } }
 					}
 				}
@@ -932,11 +934,17 @@ targetted_decisions = {
 		}
 
 		ai_will_do = {
-			factor = 0.1
+			factor = 0.01
 			modifier = {
 				factor = 0.001
 				liege = {
 					NOT = { culture = PREV }
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					prestige = 600
 				}
 			}
 		}
@@ -984,10 +992,41 @@ title_decisions = {
 		}
 		
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.1
+			factor = 0 # TODO: make the AI capable of handling this
+		}
+	}
+
+	stop_preparing_settlers = {
+		ai_target_filter = owned
+		filter = owned
+		
+		from_potential = {
+			tier = duke
+			religion = promethean_pagan
+
+			any_demesne_province = {
+				is_depopulated_trigger = yes
 			}
+		}
+		
+		potential = {
+			location = { 
+				has_province_modifier = preparing_settlers
+			}
+
+			holder_scope = {
+				character = FROM
+			}
+		}
+		
+		allow = { }
+		
+		effect = {
+			location = { remove_province_modifier = preparing_settlers }
+		}
+		
+		ai_will_do = { # never, that would be stupid
+			factor = 0
 		}
 	}
 

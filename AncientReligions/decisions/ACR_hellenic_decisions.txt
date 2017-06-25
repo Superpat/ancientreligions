@@ -519,6 +519,9 @@ decisions = {
 		allow = {
 			war = no
 			any_demesne_title = {
+				limit = {
+					tier = baron
+				}
 				is_occupied = no
 			}
 			month = 5
@@ -1003,10 +1006,6 @@ title_decisions = {
 		from_potential = {
 			tier = duke
 			religion = promethean_pagan
-
-			any_demesne_province = {
-				is_depopulated_trigger = yes
-			}
 		}
 		
 		potential = {

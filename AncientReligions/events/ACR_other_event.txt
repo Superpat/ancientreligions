@@ -974,6 +974,17 @@ character_event = {
 		}
 		add_trait = atens_chosen
 	}
+
+	option = {
+		name = 8469.a
+		trigger = {
+			NOR = {
+				is_celtic_pagan_or_reformed_trigger = yes
+				religion = aten_pagan
+				religion = egyptian_pagan
+			}
+		}
+	}
 }
 
 # debug to grant all provinces in your dejure kingdom to you, including the king title
@@ -1066,6 +1077,7 @@ character_event = {
 	}
 }
 
+# migration event, fired [on_start], smooths over issues with save files between versions
 character_event = {
 	id = ancrel.9023
 	hide_window = yes

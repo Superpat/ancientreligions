@@ -946,7 +946,23 @@ title_decisions = {
 		allow = { }
 		
 		effect = {
-			location = { increase_prosperity_effect = yes }
+			location = {
+				if = {
+					limit = {
+						is_depopulated_trigger = yes
+					}
+					decrease_depopulation_effect = yes
+				}
+				if = {
+					limit = {
+						OR = {
+							is_prosperous_trigger = yes
+							is_depopulated_trigger = no
+						}
+					}
+					increase_prosperity_effect = yes
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -973,7 +989,7 @@ title_decisions = {
 		allow = { }
 		
 		effect = {
-			location = { increase_depopulation_effect = yes }
+			location = { decrease_prosperity_effect = yes}
 		}
 		
 		ai_will_do = {

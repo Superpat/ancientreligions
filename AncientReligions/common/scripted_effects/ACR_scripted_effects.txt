@@ -50,7 +50,7 @@ decrease_prosperity_effect = {
 	### Depopulated Provinces
 	if = {
 		limit = { has_province_modifier = depopulated_2	}
-		hidden_tooltipk = { remove_province_modifier = depopulated_2 }
+		hidden_tooltip = { remove_province_modifier = depopulated_2 }
 		add_province_modifier = { name = depopulated_3 duration = -1 }
 		hidden_tooltip = {
 			clr_province_flag = recent_depopulation_2

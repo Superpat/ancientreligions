@@ -121,6 +121,26 @@ character_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		if = {
+			limit = {
+				has_dlc = "Reapers"
+			}
+			# get a donor province
+			random_demesne_province = {
+				limit = {
+					OR = {
+						has_province_modifier = prosperity_modifier_1
+						has_province_modifier = prosperity_modifier_2
+						has_province_modifier = prosperity_modifier_3
+					}
+				}
+
+				save_event_target_as = donor_province
+			}
+		}
+	}
+
 	option = {
 		name = OK
 		trigger = {

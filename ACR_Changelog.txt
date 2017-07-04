@@ -49,7 +49,11 @@ Promethean:
  - The Depopulation mechanic of the Expansion CB has been re-written to modify Prosperity instead (for RD owners only, the old system still works if RD is off).
    - Now, sieged provinces will lose three levels of prosperity, and all their progress toward higher prosperity will be lost.
    - The CB cannot be used if there are any provinces in your realm that are depopulated at any level.
+<<<<<<< HEAD
  - Added events to send immigrants from your prosperous demesne provinces to depopulated ones, losing Prosperity in one province to reduce depopulation in the other.
+=======
+ - Added events to send immigrants from your prosperous demense provinces to depopulated ones, losing Prosperity in one province to reduce depopulation in the other.
+>>>>>>> master
    - These events represent the Promethean policy of lebensraum and replace the old event that triggered on the Depopulated modifier for Reapers Due owners.
    - There is a chance that the province converts to your culture and religion. This chance increases dramatically for each level of Prosperity you transfer.
    - If you don't want to give up a level of prosperity in one of your demesne provinces, you can ask your direct liege for help.

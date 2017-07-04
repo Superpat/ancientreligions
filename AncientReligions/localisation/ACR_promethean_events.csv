@@ -6,7 +6,11 @@ ancrel.3400.b;Let its holy fires never darken!;;;;;;;;;;;;;x
 ancrel.3400.c;Distressing...;;;;;;;;;;;;;x
 CHRONICLE_FIRST_ACADEMY;[Root.GetFullName] rebuilt The First Academy and established a new Scholarch to lead the Promethean Faith.;;;;;;;;;;;;;x
 ancrel.3402.desc;The province of [From.GetName], devestated after its conquest by your armies, has been slowly settled since then by people from your realm. The majority of its inhabitants are now [This.Culture.GetName] and [This.Religion.GetName]!;;;;;;;;;;;;;x
+<<<<<<< HEAD
 ancrel.3402.desc.reapers;Preperations in [donor_province.GetName] are nearly complete, the only question is how large this resettlement effort should be. The more you send to [receiver_province.GetName], the more likely it is the settlers will dominate the region for generations. Of course, this will also have a negative impact on the economy in [donor_province.GetName].\n\nWhat is your decision?;;;;;;;;;;;;;x
+=======
+ancrel.3402.desc.reapers;The province of [receiver_province.GetName], devestated after its conquest by your armies, is being slowly settled from your more prosperous provinces. If you were to get directly involved, you could have it settled much more quickly...;;;;;;;;;;;;;x
+>>>>>>> master
 ancrel.3402.b;Resettle a village from [donor_province.GetName].;;;;;;;;;;;;;x
 ancrel.3402.b.tt;[donor_province.GetName] loses one level of prosperity, [receiver_province.GetName] loses a level of depopulation.;;;;;;;;;;;;;x
 ancrel.3402.c;Resettle several villages from [donor_province.GetName].;;;;;;;;;;;;;x

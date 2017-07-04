@@ -960,7 +960,6 @@ title_decisions = {
 		filter = owned
 		
 		from_potential = {
-			tier = duke
 			religion = promethean_pagan
 
 			any_demesne_province = {
@@ -971,8 +970,6 @@ title_decisions = {
 		potential = {
 			location = { 
 				is_prosperous_trigger = yes
-				religion = FROM
-				culture = FROM
 			}
 
 			holder_scope = {
@@ -981,10 +978,15 @@ title_decisions = {
 		}
 		
 		allow = {
-			FROM = {
-				NOT = {
-					any_demesne_province = {
-						has_province_modifier = preparing_settlers
+			custom_tooltip = {
+				text = not_already_preparing_settlers
+				hidden_tooltip = {
+					FROM = {
+						NOT = {
+							any_demesne_province = {
+								has_province_modifier = preparing_settlers
+							}
+						}
 					}
 				}
 			}
@@ -1004,7 +1006,6 @@ title_decisions = {
 		filter = owned
 		
 		from_potential = {
-			tier = duke
 			religion = promethean_pagan
 		}
 		
@@ -1018,7 +1019,7 @@ title_decisions = {
 			}
 		}
 		
-		allow = { }
+		allow = { always = yes }
 		
 		effect = {
 			location = { remove_province_modifier = preparing_settlers }
@@ -1066,12 +1067,18 @@ title_decisions = {
 		effect = {
 			location = { save_event_target_as = receiver_province }
 			FROM = {
-				random_demesne_province = {
-					limit = {
-						has_province_modifier = preparing_settlers
-					}
+				custom_tooltip = {
+					text = sending_settlers
+					hidden_tooltip = {
+						random_demesne_province = {
+							limit = {
+								has_province_modifier = preparing_settlers
+							}
 
-					save_event_target_as = donor_province
+							save_event_target_as = donor_province
+						}
+						character_event = { id = ancrel.3402 days = 0 }
+					}
 				}
 			}
 		}

@@ -116,7 +116,7 @@ character_event = {
 			has_dlc = "Reapers"
 		}
 	}
-	picture = GFX_evt_peasants
+	picture = GFX_evt_culture_change
 	border = GFX_event_normal_frame_economy
 
 	is_triggered_only = yes
@@ -352,13 +352,14 @@ character_event = {
 			hidden_tooltip = {
 				event_target:donor_province = {
 					decrease_prosperity_effect = yes
-					owner = {
-						character_event = { id = ancrel.3407 days = 3 }
-					}
 				}
 				event_target:receiver_province = {
 					set_province_flag = received_one_prosperity
 					decrease_depopulation_effect = yes
+
+					owner = {
+						character_event = { id = ancrel.3407 days = 3 }
+					}
 				}
 			}
 		}
@@ -390,8 +391,11 @@ character_event = {
 
 	option = {
 		name = ancrel.fantastic
+		random_province_conversion_from_colonists_effect = yes
 	}
 }
+
+
 
 # Promethean child comes of age and chooses which school to join
 # [on_adulthood]

@@ -62,11 +62,13 @@ request_resettlement;Request Resettlement;;;;;;;;;;;;;x
 request_resettlement_desc;Request that [Root.GetTitledFirstName] send settlers to your lands.;;;;;;;;;;;;;x
 prepare_settlers;Prepare Settlers;;;;;;;;;;;;;x
 prepare_settlers_desc;You order local authorities in this county to begin preperations to relocate the peasants to another province.;;;;;;;;;;;;;x
+not_already_preparing_settlers;Cannot be preparing settlers in another province.;;;;;;;;;;;;;x
 resettle_province;Resettle Province;;;;;;;;;;;;;x
 resettle_province_desc;Mark this province as the place your settlers should move to.;;;;;;;;;;;;;x
 must_be_preparing_settlers;Must be preparing settlers in a prosperous province;;;;;;;;;;;;;x
 preparing_settlers;Preparing Settlers;;;;;;;;;;;;;x
 preparing_settlers_desc;The locals here are preparing to send some of their number to another province as settlers.;;;;;;;;;;;;;x
+sending_settlers;Locals begin preparing for resettlement...;;;;;;;;;;;;;x
 acr_crotone_arts;Academy of the Arts;;;;;;;;;;;;;x
 acr_crotone_arts_desc;This province is home to the Crotone Academy of the Arts, and enjoys quality entertainment and cultural advancement as a result.;;;;;;;;;;;;;x
 acr_crotone_engineering;Academy of Engineering;;;;;;;;;;;;;x

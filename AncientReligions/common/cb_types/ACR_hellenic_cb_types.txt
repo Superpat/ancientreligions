@@ -507,6 +507,7 @@ hellenic_reconquest = {
 		factor = 100
 	}
 }
+
 promethean_expansion = {
 	name = CB_NAME_EXPANSION
 	war_name = WAR_NAME_EXPANSION
@@ -527,9 +528,22 @@ promethean_expansion = {
 		ROOT = {
 			prestige = 500
 			independent = yes
-			NOT = {
-				any_realm_province = {
-					has_province_modifier = depopulated_province
+			NOR = {
+				AND = {
+					has_dlc = "Reapers"
+					any_realm_province = {
+						OR = {
+							has_province_modifier = depopulated_1
+							has_province_modifier = depopulated_2
+							has_province_modifier = depopulated_3
+						}
+					}
+				}
+				AND = {
+					NOT = { has_dlc = "Reapers" }
+					any_realm_province = {
+						has_province_modifier = depopulated_province
+					}
 				}
 			}
 		}
@@ -608,12 +622,18 @@ promethean_expansion = {
 						has_nickname = no
 					}
 					random_list = {
+						10 = { give_nickname = nick_the_holy }
+						10 = { give_nickname = nick_the_glorious }
+						10 = { give_nickname = nick_the_lionheart }
 						10 = { give_nickname = nick_the_great }
-						10 = { give_nickname = nick_the_victorious }
-						10 = { give_nickname = nick_the_conqueror }
-						10 = { give_nickname = nick_the_brave }
-						10 = { give_nickname = nick_the_dragon }
-						10 = { give_nickname = nick_the_terrible }
+						10 = { give_nickname = nick_the_hammer }
+						20 = {
+							modifier = {
+								factor = 0
+								religion_group = christian
+							}
+							give_nickname = nick_the_sword_of_god
+						}
 					}
 				}
 			}
@@ -646,11 +666,18 @@ promethean_expansion = {
 						has_nickname = no
 					}
 					random_list = {
+						10 = { give_nickname = nick_the_holy }
+						10 = { give_nickname = nick_the_glorious }
+						10 = { give_nickname = nick_the_lionheart }
 						10 = { give_nickname = nick_the_great }
 						10 = { give_nickname = nick_the_hammer }
-						10 = { give_nickname = nick_the_avenger }
-						10 = { give_nickname = nick_the_lion }
-						10 = { give_nickname = nick_the_bold }
+						20 = {
+							modifier = {
+								factor = 0
+								religion_group = christian
+							}
+							give_nickname = nick_the_sword_of_god
+						}
 					}
 				}
 			}
@@ -684,11 +711,18 @@ promethean_expansion = {
 						has_nickname = no
 					}
 					random_list = {
+						10 = { give_nickname = nick_the_holy }
+						10 = { give_nickname = nick_the_glorious }
+						10 = { give_nickname = nick_the_lionheart }
 						10 = { give_nickname = nick_the_great }
 						10 = { give_nickname = nick_the_hammer }
-						10 = { give_nickname = nick_the_avenger }
-						10 = { give_nickname = nick_the_lion }
-						10 = { give_nickname = nick_the_bold }
+						20 = {
+							modifier = {
+								factor = 0
+								religion_group = christian
+							}
+							give_nickname = nick_the_sword_of_god
+						}
 					}
 				}
 			}

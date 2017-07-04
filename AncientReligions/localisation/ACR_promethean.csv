@@ -58,6 +58,17 @@ holding_unbinding_festival;Holding Unbinding Festival;;;;;;;;;;;;;x
 holding_unbinding_festival_desc;This character is holding an Unbinding Festival, a religious celebration of the Promethean faith held every summer.;;;;;;;;;;;;;x
 depopulated_province;Depopulated;;;;;;;;;;;;;x
 depopulated_province_desc;This province was recently invaded and is severely depopulated. It will take a long time for it to fully recover.;;;;;;;;;;;;;x
+request_resettlement;Request Resettlement;;;;;;;;;;;;;x
+request_resettlement_desc;Request that [Root.GetTitledFirstName] send settlers to your lands.;;;;;;;;;;;;;x
+prepare_settlers;Prepare Settlers;;;;;;;;;;;;;x
+prepare_settlers_desc;You order local authorities in this county to begin preperations to relocate the peasants to another province.;;;;;;;;;;;;;x
+not_already_preparing_settlers;Cannot be preparing settlers in another province.;;;;;;;;;;;;;x
+resettle_province;Resettle Province;;;;;;;;;;;;;x
+resettle_province_desc;Mark this province as the place your settlers should move to.;;;;;;;;;;;;;x
+must_be_preparing_settlers;Must be preparing settlers in a prosperous province;;;;;;;;;;;;;x
+preparing_settlers;Preparing Settlers;;;;;;;;;;;;;x
+preparing_settlers_desc;The locals here are preparing to send some of their number to another province as settlers.;;;;;;;;;;;;;x
+sending_settlers;Locals begin preparing for resettlement...;;;;;;;;;;;;;x
 acr_crotone_arts;Academy of the Arts;;;;;;;;;;;;;x
 acr_crotone_arts_desc;This province is home to the Crotone Academy of the Arts, and enjoys quality entertainment and cultural advancement as a result.;;;;;;;;;;;;;x
 acr_crotone_engineering;Academy of Engineering;;;;;;;;;;;;;x
@@ -71,7 +82,7 @@ SCHOLARCH;Scholarch;Scholarch;Scholarch;;Scholarch;;;;;;;;;x
 d_men_of_steel;Men of Steel;;;;;;;;;;;;;x
 d_men_of_steel_adj;Steely;;;;;;;;;;;;;x
 temple_baron_promethean_pagan;Philosophos;;;;;;;;;;;;;x
-temple_baron_female_promethean_pagan;Philosopheia;;;;;;;;;;;;;x
+temple_baron_female_promethean_pagan;Philosophoia;;;;;;;;;;;;;x
 temple_barony_promethean_pagan;Academy;;;;;;;;;;;;;x
 temple_barony_of_promethean_pagan;Academy of;;;;;;;;;;;;;x
 temple_count_promethean_pagan;Ypsilós Philosophos;;;;;;;;;;;;;x

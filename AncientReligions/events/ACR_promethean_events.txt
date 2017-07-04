@@ -64,31 +64,10 @@ province_event = {
 
 	trigger = {
 		NOT = { religion = promethean_pagan }
-		OR = {
-			has_province_modifier = depopulated_province
-			has_province_modifier = depopulated_1
-			has_province_modifier = depopulated_2
-			has_province_modifier = depopulated_3
-		}
-		OR = {
-			NOT = { has_dlc = "Reapers" }
-			owner = {
-				OR = {
-					any_demesne_province = {
-						OR = {
-							has_province_modifier = prosperity_modifier_1
-							has_province_modifier = prosperity_modifier_2
-							has_province_modifier = prosperity_modifier_3
-						}
-					}
-					independent = no
-				}
-			}
-		}
+		has_province_modifier = depopulated_province
+		NOT = { has_dlc = "Reapers" }
 		owner = {
-			top_liege = {
-				religion = promethean_pagan
-			}
+			religion = promethean_pagan
 		}
 	}
 
@@ -137,7 +116,7 @@ character_event = {
 			has_dlc = "Reapers"
 		}
 	}
-	picture = GFX_evt_peasants
+	picture = GFX_evt_culture_change
 	border = GFX_event_normal_frame_economy
 
 	is_triggered_only = yes
@@ -189,6 +168,7 @@ character_event = {
 			hidden_tooltip = {
 				event_target:donor_province = {
 					decrease_prosperity_effect = yes
+					remove_province_modifier = preparing_settlers
 				}
 				event_target:receiver_province = {
 					set_province_flag = received_one_prosperity
@@ -226,6 +206,7 @@ character_event = {
 				event_target:donor_province = {
 					decrease_prosperity_effect = yes
 					decrease_prosperity_effect = yes
+					remove_province_modifier = preparing_settlers
 				}
 				event_target:receiver_province = {
 					set_province_flag = received_two_prosperity
@@ -248,7 +229,7 @@ character_event = {
 			}
 		}
 
-		ai_chance=  {
+		ai_chance = {
 			factor = 20
 		}
 
@@ -256,7 +237,12 @@ character_event = {
 			text = ancrel.3402.d.tt
 			hidden_tooltip = {
 				event_target:donor_province = {
-					devestate_province_effect = yes
+					county = {
+						increase_depopulation_effect = yes
+						increase_depopulation_effect = yes
+						increase_depopulation_effect = yes
+					}
+					remove_province_modifier = preparing_settlers
 				}
 				event_target:receiver_province = {
 					set_province_flag = received_three_prosperity
@@ -275,11 +261,7 @@ character_event = {
 			independent = no
 			liege = {
 				any_demesne_province = {
-					OR = {
-						has_province_modifier = prosperity_modifier_1
-						has_province_modifier = prosperity_modifier_2
-						has_province_modifier = prosperity_modifier_3
-					}
+					is_prosperous_trigger = yes
 				}
 			}
 		}
@@ -299,6 +281,22 @@ character_event = {
 			}
 		}
 	}
+
+	after = {
+		event_target:receiver_province = {
+			if = {
+				limit = {
+					OR = {
+						has_province_flag = received_one_prosperity
+						has_province_flag = received_two_prosperity
+						has_province_flag = received_three_prosperity
+					}
+				}
+
+				random_province_conversion_from_colonists_effect = yes
+			}
+		}
+	}
 }
 
 # ask direct liege to send colonists to depopulated province (liege)
@@ -313,11 +311,7 @@ character_event = {
 	immediate = {
 		random_demesne_province = {
 			limit = {
-				OR = {
-					has_province_modifier = prosperity_modifier_1
-					has_province_modifier = prosperity_modifier_2
-					has_province_modifier = prosperity_modifier_3
-				}
+				is_prosperous_trigger = yes
 			}
 
 			save_event_target_as = donor_province
@@ -378,13 +372,14 @@ character_event = {
 			hidden_tooltip = {
 				event_target:donor_province = {
 					decrease_prosperity_effect = yes
-					owner = {
-						character_event = { id = ancrel.3407 days = 3 }
-					}
 				}
 				event_target:receiver_province = {
 					set_province_flag = received_one_prosperity
 					decrease_depopulation_effect = yes
+
+					owner = {
+						character_event = { id = ancrel.3407 days = 3 }
+					}
 				}
 			}
 		}
@@ -416,8 +411,11 @@ character_event = {
 
 	option = {
 		name = ancrel.fantastic
+		random_province_conversion_from_colonists_effect = yes
 	}
 }
+
+
 
 # Promethean child comes of age and chooses which school to join
 # [on_adulthood]

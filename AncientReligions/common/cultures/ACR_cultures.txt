@@ -36,7 +36,7 @@ celtic = {
 			Vindomorocios Viridovix Viridomaros Vismaros Vlatucias Voccio Vortrix Voteporix Vrittikos
 		}
 		female_names = {
-			Aballa Adiega Aia Andala Auctiona Genovefa Gesataia Iomara Obalda Pooyika Roveca Tertionicna 
+			Aballa Adiega Aia Andala Auctiona Boudicca Cartimandua Genovefa Gesataia Iomara Obalda Pooyika Roveca Tertionicna
 		}
 		
 		dukes_called_kings = yes

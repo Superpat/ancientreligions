@@ -28,14 +28,14 @@ character_event = {
 		is_ruler = yes
 		in_command = no
 		culture_group = celtic
-		NOT = {
+		NOR = {
 			OR = {
 				religion = celtic_pagan
 				religion = celtic_pagan_reformed
 			}
 			has_character_flag = hates_magic
 			any_courtier = {
-				has_minor_title = title_pagan_wizard
+				has_minor_title = title_court_wizard
 			}
 		}
 		OR = {
@@ -71,11 +71,14 @@ character_event = {
 			culture = ROOT
 			trait = mystic
 			trait = scholarly_theologian
+			trait = gregarious
+			trait = quick
+			trait = feeble
 		}
 		new_character = {
-			set_secret_religion = celtic_pagan
-			give_minor_title = title_pagan_wizard
+			give_minor_title = title_court_wizard
 			set_character_flag = ancrel_old_wizard
+			opinion = { modifier = opinion_patron who = ROOT years = 50 }
 		}
 	}
 	option = {
@@ -190,6 +193,7 @@ character_event = {
 		religion = celtic_pagan
 		piety = 50
 	}
+
 	option = {
 		name = EVTOPTBancrel.0002
 		piety = 50
@@ -415,6 +419,15 @@ character_event = {
 		}
 		religion = celtic_pagan
 		piety = 50
+		if = {
+			limit = {
+				has_minor_title = title_court_wizard
+			}
+			add_trait = zealous
+			add_trait = druid
+			give_minor_title = title_court_druid
+			clr_character_flag = ancrel_old_wizard
+		}
 	}
 	option = { # reject their heathen ways
 		name = ancrel.0300.b
@@ -423,10 +436,15 @@ character_event = {
 			factor = 66
 			modifier = {
 				factor = 0
-				liege = { # unlanded courtiers of player courts *always* convert
-					ai = no
+				OR = {
+					AND = { # unlanded courtiers of player courts *always* convert
+						liege = {
+							ai = no
+						}
+						is_landed = no
+					}
+					true_religion = celtic_pagan # people who are already celtic pagan will publicly convert
 				}
-				is_landed = no
 			}
 		}
 		hidden_tooltip = {
@@ -437,6 +455,7 @@ character_event = {
 		}
 	}
 }
+
 # Vassal converted to Celtic Paganism
 character_event = {
 	id = ancrel.0301
@@ -449,6 +468,7 @@ character_event = {
 		name = ancrel.0301.a
 	}
 }
+
 # Vassal refuses to convert to Celtic Paganism
 character_event = {
 	id = ancrel.0302
@@ -518,6 +538,7 @@ character_event = {
 		}
 	}
 }
+
 # The elves come in
 character_event = {
 	id = ancrel.0007
@@ -551,6 +572,7 @@ character_event = {
 		}
 	}
 }
+
 # King of the Elves!
 character_event = {
 	id = ancrel.0008

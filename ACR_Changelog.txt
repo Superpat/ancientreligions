@@ -1,4 +1,38 @@
-2017-06-11 v0.40 "Perses"
+2017-06-18 v0.40.2 "Eurybia"
+-------------------------
+> Eurybia, whose name means "she who has a heart of flint", was the titan mother of Perses. Like her husband Krios, very little is known of Eurybia other than her immediate family. The meaning of her name suggests a cruel and callous nature.
+
+General:
+ - Secret Cults now can only Prepare Ground in provinces owned by members of the Secret Cult.
+ - When apostates are burned at the stake and members of the society are informed, there is now an option to leave the society. The character is then barred from being recruited to any secret religious societies or devil worshipper societies for 5 years.
+
+Celtic:
+ - The Old Wizard has slightly better traits now and will automatically become a Zealous Druid if you decide to go Celtic Pagan, assuming he's alive and in your court.
+ - When conversion cascades down your realm tree, characters whose true religion is Celtic pagan will always accept conversion to Celtic pagan.
+
+Promethean:
+ - Based on some feedback from forum user PlotVitalNPC, I've changed how moving prosperity to devestated provinces works to add some player agency.
+   - The devestation of the province is reduced from -3 Prosperity to -2 Prosperity.
+   - You now select the donor province with a title decision (right click on the county shield) called "Prepare Settlers".
+   - You then select the receiver province with another title decision called "Send Settlers".
+   - Only one province at a time can be preparing settlers.
+     - The selected province has an empty modifier called "Preparing Settlers" so you know which one it is.
+     - The modifier expires after 30 days.
+     - You can use a decision "Stop Preparing Settlers" to de-select that province.
+
+
+2017-06-13 v0.40.1 "Krios"
+-------------------------
+> Krios was the titan father of Perses. Little is known of this Cthonic deity, other than that he and his wife Eurybia sided with the other titans in the Titanomachy and have been imprisoned in Tartarus for all time.
+
+Celtic:
+ - Fixed a bug with the Old wizard event chain for Celts.
+
+Promethean:
+ - Fixed a bad condition in the Expansion CB.
+ 
+
+2017-06-11 v0.40.0 "Perses"
 -------------------------
 > Perses was the son of the Titans Krios and Eurybia. His name means Destroyer/Ravager, a fitting name for the Titan of devestation. He was married to the Titan Asteria, with whom he fathered Hecate, the goddess of magic.
 
@@ -15,7 +49,11 @@ Promethean:
  - The Depopulation mechanic of the Expansion CB has been re-written to modify Prosperity instead (for RD owners only, the old system still works if RD is off).
    - Now, sieged provinces will lose three levels of prosperity, and all their progress toward higher prosperity will be lost.
    - The CB cannot be used if there are any provinces in your realm that are depopulated at any level.
+<<<<<<< HEAD
+ - Added events to send immigrants from your prosperous demesne provinces to depopulated ones, losing Prosperity in one province to reduce depopulation in the other.
+=======
  - Added events to send immigrants from your prosperous demense provinces to depopulated ones, losing Prosperity in one province to reduce depopulation in the other.
+>>>>>>> master
    - These events represent the Promethean policy of lebensraum and replace the old event that triggered on the Depopulated modifier for Reapers Due owners.
    - There is a chance that the province converts to your culture and religion. This chance increases dramatically for each level of Prosperity you transfer.
    - If you don't want to give up a level of prosperity in one of your demesne provinces, you can ask your direct liege for help.
@@ -368,7 +406,7 @@ Celtic Paganism:
 - Court Druid and Bard minor titles no longer restricted by government type. Any ruler (that matches other requirements) can hire them.
 - Court Bards can no longer be landed. If they are busy administering their own land, how can they have time being your bard all day?
 - Restless Sidhe is about 40% less likely to occur, and if you've had a good sacrifice to the Sidhe recently it won't happen.
--- Also descreased the mtth for the "sidhe are calmed" event, which requires you have at least a neutral response to your sacrifice. Should be far less annoying for those of you with a demense larger than 4 now ;)
+-- Also descreased the mtth for the "sidhe are calmed" event, which requires you have at least a neutral response to your sacrifice. Should be far less annoying for those of you with a demesne larger than 4 now ;)
 - Fixed localization problems in the Sidhe events that mistakenly referenced the religion of the province, instead of the ruler. This meant that a Celtic Pagan may occassinonaly say "May the Blessed Virgin protect us!".
 - Adjusted the Potential on Invite Court Druid and Organize Fianna so it stops cluttering up your menu when its irrelevant. You now must either be a Irish cultured or personally hold land in Ireland to see it (in addition to being Celtic Pagan or Druidic).
 - Fixed bug that made nearly every child of a Celtic Pagan player reincarnated.

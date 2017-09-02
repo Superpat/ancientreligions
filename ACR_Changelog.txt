@@ -1,4 +1,19 @@
-2017-06-18 v0.40.2 "Eurybia"
+2017-08-21 v0.40.3 "Asteria"
+-------------------------
+> Asteria "the starry one" was the titan of falling stars and nocturnal oracles and the daughter of Coeus and Pheobe, her sister was Leto. Unlike her husband, Asteria has several stories attributed to her. One such tale describes her flight from the advances of Zeus; she transformed into a quail and dived into the ocean, where she became an island bearing her name.
+
+General:
+ - Merged changes from the CK2 2.7.2 "Tiny Patch"
+
+Celtic:
+ - Removed two year cooldown for "Invite Druid to Court" decision.
+
+Kemetic:
+ - Pyramids are now an actual building that will appear in your holdings.
+  - Thanks to IhateTrains for importing the code from WtWSMS.
+
+
+2017-07-04 v0.40.2 "Eurybia"
 -------------------------
 > Eurybia, whose name means "she who has a heart of flint", was the titan mother of Perses. Like her husband Krios, very little is known of Eurybia other than her immediate family. The meaning of her name suggests a cruel and callous nature.
 

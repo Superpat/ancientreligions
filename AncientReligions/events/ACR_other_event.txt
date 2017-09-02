@@ -979,7 +979,7 @@ character_event = {
 		name = 8469.a
 		trigger = {
 			NOR = {
-				is_celtic_pagan_or_reformed_trigger = yes
+				is_celtic_or_reformed_trigger = yes
 				religion = aten_pagan
 				religion = egyptian_pagan
 			}

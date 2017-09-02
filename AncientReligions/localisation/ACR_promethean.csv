@@ -63,6 +63,8 @@ request_resettlement_desc;Request that [Root.GetTitledFirstName] send settlers t
 prepare_settlers;Prepare Settlers;;;;;;;;;;;;;x
 prepare_settlers_desc;You order local authorities in this county to begin preperations to relocate the peasants to another province.;;;;;;;;;;;;;x
 not_already_preparing_settlers;Cannot be preparing settlers in another province.;;;;;;;;;;;;;x
+stop_preparing_settlers;Stop Preparing Settlers;;;;;;;;;;;;;x
+stop_preparing_settlers;Order the local authorities to stop preparing the peasants for resettlement.;;;;;;;;;;;;;x
 resettle_province;Resettle Province;;;;;;;;;;;;;x
 resettle_province_desc;Mark this province as the place your settlers should move to.;;;;;;;;;;;;;x
 must_be_preparing_settlers;Must be preparing settlers in a prosperous province;;;;;;;;;;;;;x

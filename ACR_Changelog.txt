@@ -5,6 +5,9 @@
 General:
  - Merged changes from the CK2 2.7.2 "Tiny Patch"
 
+Celtic:
+ - Removed two year cooldown for "Invite Druid to Court" decision.
+
 Kemetic:
  - Pyramids are now an actual building that will appear in your holdings.
   - Thanks to IhateTrains for importing the code from WtWSMS.

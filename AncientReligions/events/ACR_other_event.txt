@@ -951,10 +951,7 @@ character_event = {
 	option = {
 		name = "8469.a"
 		trigger = {
-			OR = {
-				religion = celtic_pagan
-				religion = celtic_pagan_reformed
-			}
+			religion_openly_in_celtic_subgroup_trigger = yes
 		}
 		add_trait = lughs_own
 	}
@@ -979,7 +976,7 @@ character_event = {
 		name = 8469.a
 		trigger = {
 			NOR = {
-				is_celtic_or_reformed_trigger = yes
+				religion_openly_in_celtic_subgroup_trigger = yes
 				religion = aten_pagan
 				religion = egyptian_pagan
 			}
@@ -993,6 +990,10 @@ character_event = {
     desc = ancrel.9020.desc
     
     is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = ancrel_debug
+	}
 
 	immediate = {
 		capital_scope = {
@@ -1032,6 +1033,10 @@ character_event = {
 
     is_triggered_only = yes
 
+	trigger = {
+		has_global_flag = ancrel_debug
+	}
+
 	immediate = {
 		capital_scope = {
 			empire = {
@@ -1063,6 +1068,10 @@ character_event = {
 	hide_window = yes
 
 	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = ancrel_debug
+	}
 
 	immediate = {
 		any_realm_character = {

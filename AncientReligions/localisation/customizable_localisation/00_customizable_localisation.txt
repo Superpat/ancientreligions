@@ -2464,7 +2464,7 @@ defined_text = {
 		trigger = {
 			religion_group = pagan_group
 			NOT = {
-				religion_openly_celtic_or_reformed_trigger = no
+				religion_openly_in_celtic_subgroup_trigger = no
 			}
 		}
 	}
@@ -2491,14 +2491,14 @@ defined_text = {
 	text = {
 		localisation_key = GetHouseOfWorship_Celtic
 		trigger = {
-			religion_openly_celtic_or_reformed_trigger = yes
+			religion_openly_in_celtic_subgroup_trigger = yes
 			NOT = { culture = gaulish }
 		}
 	}
 	text = {
 		localisation_key = GetHouseOfWorship_Gaulish
 		trigger = {
-			religion_openly_celtic_or_reformed_trigger = yes
+			religion_openly_in_celtic_subgroup_trigger = yes
 			culture = gaulish
 		}
 	}

@@ -70,7 +70,7 @@ targeted_decisions = {
 			}
 		}
 		allow = {
-			religion_openly_celtic_or_reformed_trigger = yes
+			religion_openly_in_celtic_subgroup_trigger = yes
 			is_inaccessible_trigger = no
 			custom_tooltip = {
 				text = unseelie_recruit_block_tooltip

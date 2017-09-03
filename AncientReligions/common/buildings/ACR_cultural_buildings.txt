@@ -215,7 +215,7 @@ castle = {
 		
 		extra_tech_building_start = 0.8
 	}
-		ca_kemetic_pyramid = {
+	ca_kemetic_pyramid = {
 		potential = {
 			FROM = {
 				higher_tier_than = duke
@@ -238,7 +238,8 @@ castle = {
 
 		extra_tech_building_start = 0.0
 	}
- # City
+}
+
 city = {
 	ct_kemetic_pyramid = {
 		potential = {
@@ -264,7 +265,7 @@ city = {
 		extra_tech_building_start = 0.0
 	}
 }
- # Temple
+
 temple = {
 	tp_kemetic_pyramid = {
 		potential = {
@@ -290,7 +291,7 @@ temple = {
 		extra_tech_building_start = 0.0
 	}
 }
- # Tribal
+
 tribal = {
 	tb_kemetic_pyramid = {
 		potential = {
@@ -315,5 +316,4 @@ tribal = {
 
 		extra_tech_building_start = 0.0
 	}
-}
 }

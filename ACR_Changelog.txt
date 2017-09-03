@@ -1,3 +1,10 @@
+2017-09-03 v0.40.4 "Asteria 2"
+-------------------------
+
+General:
+ - Resolves bug where tribal characters would usurp county titles in their de jure kingdom, turn feudal, and all holdings would be destroyed.
+ 
+
 2017-09-02 v0.40.3 "Asteria"
 -------------------------
 > Asteria "the starry one" was the titan of falling stars and nocturnal oracles and the daughter of Coeus and Pheobe, her sister was Leto. Unlike her husband, Asteria has several stories attributed to her. One such tale describes her flight from the advances of Zeus; she transformed into a quail and dived into the ocean, where she became an island bearing her name.

@@ -21,11 +21,6 @@ character_event = {
 	
 	option = {
 		name = EVTOPTAancrel.0152
-		add_character_modifier = {
-			name = "new_druid_in_court"
-			duration = 730
-			hidden = yes
-		}
 		clr_character_flag = inviting_druid_over
 		random_list = {
 			35 = {
@@ -192,11 +187,6 @@ character_event = {
 	
 	option = {
 		name = EVTOPTAancrel.0154
-		add_character_modifier = {
-			name = "new_druid_in_court"
-			duration = 730
-			hidden = yes
-		}
 		clr_character_flag = inviting_druid_over
 		random_list = {
 			35 = {

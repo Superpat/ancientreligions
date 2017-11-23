@@ -194,6 +194,7 @@ acr_excellent_performance = {
 	local_revolt_risk = -0.05
 }
 
+# province modifier!
 acr_blasphemous_exhibition = {
 	icon = 36
 
@@ -203,8 +204,8 @@ acr_blasphemous_exhibition = {
 acr_grand_sculpture = {
 	icon = 7
 
-	add_prestige_modifier = 0.05
-	add_piety_modifier = 0.05
+	monthly_character_prestige = 0.05
+	monthly_character_piety = 0.05
 }
 
 acr_good_performance = {
@@ -232,4 +233,22 @@ acr_terrible_performance = {
 
 	general_opinion = -10
 	monthly_character_prestige = 0.1
+}
+
+#####################################################################
+# Wines, Oils, & Dionysus
+#####################################################################
+
+ancrel_winery = {
+	icon = 83
+}
+
+ancrel_oilworks = {
+	icon = 85
+}
+
+ancrel_held_dionysia = {
+	icon = 48
+	global_revolt_risk = -0.2
+	monthly_character_piety = 0.10
 }

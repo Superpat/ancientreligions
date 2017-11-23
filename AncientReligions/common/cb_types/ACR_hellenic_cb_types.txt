@@ -12,7 +12,6 @@ hellenic_county_liberation = {
 	allow_distant = yes
 
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	
 	infamy_modifier = 0.75
 
@@ -73,6 +72,16 @@ hellenic_county_liberation = {
 			}
 			holder_scope = {
 				is_liege_or_above = FROM
+			}
+		}
+	}
+
+	on_add = {
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
 			}
 		}
 	}
@@ -172,6 +181,7 @@ hellenic_county_liberation = {
 		factor = 100
 	}
 }
+
 hellenic_reconquest = {
 	name = CB_NAME_IMPERIAL
 	war_name = WAR_NAME_IMPERIAL
@@ -397,7 +407,7 @@ hellenic_reconquest = {
 			NOT = { same_realm = FROM }
 		}
 	}
-	
+
 	on_add = {
 		ROOT = {
 			add_character_modifier = { 
@@ -406,15 +416,19 @@ hellenic_reconquest = {
 				hidden = yes
 			}
 		}
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
 	}
 
 	on_success = {
 		ROOT = {
 			clr_character_flag = called_imperial_reconquest
 			set_character_flag = called_imperial_reconquest
-		}
-		any_attacker = {
-			limit = { character = ROOT }
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -443,7 +457,7 @@ hellenic_reconquest = {
 			limit = {
 				holder_scope = { character = FROM }
 			}
-			usurp_title_only = ROOT
+			usurp_title_only = { target = ROOT type = invasion }
 		}
 	}
 
@@ -471,7 +485,7 @@ hellenic_reconquest = {
 			participation_scaled_prestige = 200
 			if = {
 				limit = {
-					religion_group = muslim
+					uses_decadence = yes
 				}
 				participation_scaled_decadence = -10
 			}
@@ -483,7 +497,7 @@ hellenic_reconquest = {
 				participation_scaled_prestige = 200
 				if = {
 					limit = {
-						religion_group = muslim
+						uses_decadence = yes
 					}
 					participation_scaled_decadence = -10
 				}
@@ -520,7 +534,6 @@ promethean_expansion = {
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 
 	infamy_modifier = 1.5
 
@@ -550,13 +563,28 @@ promethean_expansion = {
 	}
 	
 	on_add = {
-		ROOT = { 
-			prestige = -500
+		ROOT = { prestige = -500 }
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
 		}
 	}
 
 	can_use_title = {
 		ROOT = {
+			OR = {
+				ai = yes
+				multiplayer = no
+				NOT = {
+					has_game_rule = {
+						name = multiplayer_invasions
+						value = off
+					}
+				}
+			}
 			independent = yes
 			religion = promethean_pagan
 			higher_tier_than = COUNT
@@ -576,9 +604,6 @@ promethean_expansion = {
 	on_success = {
 		ROOT = {
 			prestige = 200
-		}
-		any_attacker = {
-			limit = { character = ROOT }
 			participation_scaled_prestige = 200
 		}
 		any_attacker = {
@@ -603,11 +628,8 @@ promethean_expansion = {
 							has_dlc = "Reapers"
 						}
 						devestate_province_effect = yes
-					}
-					if = {
-						limit = {
-							NOT = { has_dlc = "Reapers" }
-						}
+					} 
+					else = {
 						remove_province_modifier = depopulated_province
 						add_province_modifier = { name = depopulated_province duration = 10950 }
 					}
@@ -627,13 +649,7 @@ promethean_expansion = {
 						10 = { give_nickname = nick_the_lionheart }
 						10 = { give_nickname = nick_the_great }
 						10 = { give_nickname = nick_the_hammer }
-						20 = {
-							modifier = {
-								factor = 0
-								religion_group = christian
-							}
-							give_nickname = nick_the_sword_of_god
-						}
+						20 = { give_nickname = nick_the_sword_of_god }
 					}
 				}
 			}
@@ -666,11 +682,11 @@ promethean_expansion = {
 						has_nickname = no
 					}
 					random_list = {
-						10 = { give_nickname = nick_the_holy }
-						10 = { give_nickname = nick_the_glorious }
-						10 = { give_nickname = nick_the_lionheart }
 						10 = { give_nickname = nick_the_great }
 						10 = { give_nickname = nick_the_hammer }
+						10 = { give_nickname = nick_the_avenger }
+						10 = { give_nickname = nick_the_lion }
+						10 = { give_nickname = nick_the_bold }
 						20 = {
 							modifier = {
 								factor = 0
@@ -681,9 +697,6 @@ promethean_expansion = {
 					}
 				}
 			}
-		}
-		any_defender = {
-			limit = { character = FROM }
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -711,24 +724,29 @@ promethean_expansion = {
 						has_nickname = no
 					}
 					random_list = {
-						10 = { give_nickname = nick_the_holy }
-						10 = { give_nickname = nick_the_glorious }
-						10 = { give_nickname = nick_the_lionheart }
 						10 = { give_nickname = nick_the_great }
 						10 = { give_nickname = nick_the_hammer }
-						20 = {
-							modifier = {
-								factor = 0
-								religion_group = christian
-							}
-							give_nickname = nick_the_sword_of_god
-						}
+						10 = { give_nickname = nick_the_avenger }
+						10 = { give_nickname = nick_the_lion }
+						10 = { give_nickname = nick_the_bold }
 					}
 				}
 			}
-		}
-		any_defender = {
-			limit = { character = FROM }
+			
+			if = {
+				limit = { 
+					has_dlc = "Legacy of Rome"
+					OR = { 
+						has_landed_title = e_byzantium
+						has_landed_title = e_roman_empire
+					}
+					OR = {
+						religion_group = christian
+						religion = hellenic_pagan
+					}
+				}
+				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
+			}
 			participation_scaled_prestige = 200
 		}
 		any_defender = {

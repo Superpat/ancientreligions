@@ -1,7 +1,7 @@
 secret_religious_society_celtic_pagan;the Hidden Circle;;;;;;;;x
 secret_religious_society_celtic_pagan_desc;The followers of the Celtic faith have long known persecution, especially from Roman hands. As always, they persevere, even if they must use deception. Though they utter empty prayers to foreign gods, they secretly meet in private chambers and secluded groves to offer devotion and sacrifice to Danu, the Mother and source of life. They keep their faith knowing that some day mighty Taranis the Thunderer will strike down those who have persecuted the faithful.;;;;;;;;x
 secret_religious_society_celtic_pagan_reformed;Danu's Faithfull;;;;;;;;x
-secret_religious_society_celtic_pagan_reformed_desc;The Druidic faith may be young, but it's followers are no less devout than any other. Even when they must publicly profess faith in false gods, the children of Danu plan and prepare for the day when they might worship the gods in the light of day. They know that none can long stand against might of Lug of the Long Spear, and those that opress them will get what they deserve.;;;;;;;;x
+secret_religious_society_celtic_pagan_reformed_desc;The Druidic faith may be young, but it's followers are no less devout than any other. Even when they must publicly profess faith in false gods, the children of Danu plan and prepare for the day when they might worship the gods in the light of day. They know that none can long stand against the might of Lug of the Long Spear, and those that opress them will get what they deserve.;;;;;;;;x
 secret_religious_society_hellenic_pagan;the True Hellenes;;;;;;;;x
 secret_religious_society_hellenic_pagan_desc;For centuries the faith of the people of Greece and Rome was followed by millions. Though the number of adherents has dramatically shrunk, those that remain make up for it with their devotion. They deceive the followers of upstart and barbarian gods, though they send their prayers to the Olympians. They have struggled, but the True Hellenes know they will be victorious in the end, because none can stand against the fury of Almighty Zeus.;;;;;;;;x
 secret_religious_society_promethean_pagan;the Enlightened;;;;;;;;x
@@ -166,6 +166,19 @@ the_sand_snakes_leader_desc;The Great Xroj of the Fangs of Apep;;;;;;;;;;;;;x
 the_sand_snakes_recruit_block_tooltip;Has not been approached by the Fangs of Apep before.;;;;;;;;;;;;;x
 the_sand_snakes_recruit;Recruit to The Fangs of Apep;;;;;;;;;;;;;x
 the_sand_snakes_recruit_desc;Attempt to find out whether §Y[Root.GetTitledFirstName]§! is open to the power of the occult. If so, you may invite [Root.GetHerHim] to become a member of The Fangs of Apep.;;;;;;;;;;;;;x
+############### Mysteries of Dionysus ;;;;;;;;;;;;;x
+mysteries_dionysus;Mysteries of Dionysus;;;;;;;;;;;;;x
+mysteries_dionysus_desc;Since the dawn of civilization there have been those who have rejected it's gifts. Those who count themselves as initiates of the Dionysian mysteries commune with their god in secret rituals of revelry and intoxication. Thoroughly intimate affairs, these secret gatherings forge strong bonds between the participants, bonds that frequently persist beyond the secrecy of the rituals. But that's not all, Twice-born Dionysus, they say, knows the secrets of life and death. It is these secrets the initiates hope to earn from their god.;;;;;;;;;;;;;x
+currency_name_mysteries_dionysus;Fervor;;;;;;;;;;;;;x
+mysteries_dionysus_leader_desc;Hierophant of the Dionysian Mysteries;;;;;;;;;;;;;x
+mysteries_dionysus_rank_1_male;Bacchus;;;;;;;;;;;;;x
+mysteries_dionysus_rank_1_female;Ariadne;;;;;;;;;;;;;x
+mysteries_dionysus_rank_2_male;Hymnodidaskolos;;;;;;;;;;;;;x
+mysteries_dionysus_rank_2_female;Hymnodidaskolos;;;;;;;;;;;;;x
+mysteries_dionysus_rank_3_male;Boukolos;;;;;;;;;;;;;x
+mysteries_dionysus_rank_3_female;Boukolos;;;;;;;;;;;;;x
+mysteries_dionysus_rank_4_male;Archiboukolos;;;;;;;;;;;;;x
+mysteries_dionysus_rank_4_female;Archiboukolos;;;;;;;;;;;;;x
 ############### Strings ;;;;;;;;;;;;;x
 String_ker;Ker;;;;;;;;;;;;;x
 String_keres;Keres;;;;;;;;;;;;;x

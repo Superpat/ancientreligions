@@ -133,6 +133,9 @@ has_character_was_religion_flag_trigger = {
 		has_character_flag = character_was_zoroastrian
 		has_character_flag = character_was_mazdaki
 		has_character_flag = character_was_manichean
+		has_character_flag = character_was_khurmazta
+		has_character_flag = character_was_bon
+		has_character_flag = character_was_taoist
 		has_character_flag = character_was_hindu
 		has_character_flag = character_was_buddhist
 		has_character_flag = character_was_jain
@@ -293,15 +296,24 @@ is_depopulated_trigger = {
 #Society triggers
 has_unseelie_prerequisites = {
 	has_common_devilworship_prerequisites = yes
-	religion_openly_in_celtic_subgroup_trigger = yes
+	OR = {
+		religion_openly_in_celtic_subgroup_trigger = yes
+		religion_secretly_in_celtic_subgroup_trigger = yes
+	}
 }
 
 has_coven_prerequisites = {
 	has_common_devilworship_prerequisites = yes
-	religion_openly_in_hellenic_subgroup_trigger = yes
+	OR = {
+		religion_openly_in_hellenic_subgroup_trigger = yes
+		religion_secretly_in_hellenic_subgroup_trigger = yes
+	}
 }
 
 has_sand_snakes_prerequisites = {
 	has_common_devilworship_prerequisites = yes
-	religion_openly_in_egyptian_subgroup_trigger = yes
+	OR = {
+		religion_openly_in_egyptian_subgroup_trigger = yes
+		religion_secretly_in_egyptian_subgroup_trigger = yes
+	}
 }

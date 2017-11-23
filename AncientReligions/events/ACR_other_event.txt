@@ -922,7 +922,7 @@ character_event = {
 		has_crusade_trait_trigger = no
 		in_command = yes
 		is_ancient_religion_trigger = yes
-		NOT = { religion = hellenic_pagan } # vanilla event covers hellenic
+		religion_openly_in_hellenic_subgroup_trigger = no # vanilla event covers hellenic
 		OR = {
 			AND = {
 				any_war = {

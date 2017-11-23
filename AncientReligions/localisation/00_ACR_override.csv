@@ -4,6 +4,8 @@
 SHOW_COLLEGE_OF_CARDINALS;Religious head electors;;;;;;;;;;;;;x
 POPE_VOTE_SCORE;§YReligious head suitability: $SCORE$§!;;;;;;;;;;;;;x
 CANDIDATE_SCORE;§YCandidate appointment score§!;;;;;;;;;;;;;x
+SUCCESSOR;Current Successor;;;;;;;;;;;;;x
+SUCCESSOR_TOOLTIP;This is the current expected successor of the religion head.;;;;;;;;;;;;;x
 ###### Map;;;;;;;;;;;;;;x
 b_meir;Akhetaten;;;;;;;;;;;;;x
 ###### Vanilla religions;;;;;;;;;;;;;;x
@@ -18,25 +20,3 @@ west_african_pagan_reformed;Akan;Akan;;;;;;;;;;;;x
 finnish_pagan;Finnic;Finnic;;;;;;;;;;;;x
 baltic_pagan;Baltic;Baltic;;;;;;;;;;;;x
 altaic_pagan;Altaic;Altaic;;;;;;;;;;;;x
-###### Missing vanilla title _adj, to avoid Validator errors;;;;;;;;;;;;;;x
-k_lanka_adj;Lanka;;;;;;;;;;;;;x
-k_telingana_adj;Telingana;;;;;;;;;;;;;x
-k_andhra_adj;Andhra;;;;;;;;;;;;;x
-k_tamilakam_adj;Tamilakam;;;;;;;;;;;;;x
-k_karnata_adj;Karnata;;;;;;;;;;;;;x
-k_maharastra_adj;Maharastra;;;;;;;;;;;;;x
-k_bihar_adj;Bihar;;;;;;;;;;;;;x
-k_orissa_adj;Orissa;;;;;;;;;;;;;x
-k_kamarupa_adj;Kamarupa;;;;;;;;;;;;;x
-k_bengal_adj;Bengal;;;;;;;;;;;;;x
-k_gondwana_adj;Gondwana;;;;;;;;;;;;;x
-k_kosala_adj;Kosala;;;;;;;;;;;;;x
-k_malwa_adj;Malwa;;;;;;;;;;;;;x
-k_rajputana_adj;Rajputana;;;;;;;;;;;;;x
-k_gujarat_adj;Gujarat;;;;;;;;;;;;;x
-k_delhi_adj;Delhi;;;;;;;;;;;;;x
-k_punjab_adj;Punjab;;;;;;;;;;;;;x
-k_sindh_adj;Sindh;;;;;;;;;;;;;x
-k_mali_adj;Mali;;;;;;;;;;;;;x
-k_afghanistan_adj;Afghanistan;;;;;;;;;;;;;x
-k_baluchistan_adj;Baluchistan;;;;;;;;;;;;;x

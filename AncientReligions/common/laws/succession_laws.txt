@@ -29,7 +29,6 @@ succession_laws = {
 						}
 					}
 				}
-				in_revolt = no
 			}
 			OR = {
 				is_landless_type_title = no
@@ -68,6 +67,7 @@ succession_laws = {
 						}
 					}
 				}
+				in_revolt = no
 			}
 			conditional_tooltip = {
 				trigger = {
@@ -118,7 +118,6 @@ succession_laws = {
 						}
 					}
 				}
-				in_revolt = no
 			}
 			OR = {
 				is_landless_type_title = no
@@ -150,6 +149,10 @@ succession_laws = {
 						}
 					}
 				}
+			}
+			holder_scope = {
+				show_scope_change = no
+				in_revolt = no
 			}
 		}
 		effect = {
@@ -1157,6 +1160,8 @@ gender_laws = {
 					OR = {
 						is_feminist_religion_trigger = yes
 						culture = basque
+						culture = zhangzhung
+						culture = sumpa
 					}
 				}
 				OR = {

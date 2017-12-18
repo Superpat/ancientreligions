@@ -3010,13 +3010,6 @@ tribal_invasion = {
 						10 = { give_nickname = nick_the_avenger }
 						10 = { give_nickname = nick_the_lion }
 						10 = { give_nickname = nick_the_bold }
-						20 = {
-							modifier = {
-								factor = 0
-								religion_group = christian
-							}
-							give_nickname = nick_the_sword_of_god
-						}
 					}
 				}
 			}
@@ -4557,6 +4550,7 @@ bid_for_independence = {
 				any_demesne_title = {
 					add_pressed_claim = FROM
 				}
+				set_character_flag = ai_flag_never_transfer
 			}
 		}
 		
@@ -7227,9 +7221,12 @@ embargo_cb = {
 					}
 				}
 				AND = {
-					higher_tier_than = DUKE
-					any_realm_lord = {
+					OR = {
 						is_merchant_republic = yes
+						higher_tier_than = DUKE
+					}
+					any_realm_lord = {
+						is_patrician = yes
 						any_trade_post = {
 							owner = {
 								OR = {

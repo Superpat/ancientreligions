@@ -1,3 +1,17 @@
+2017-12-17 v0.41.1 "Euronotus"
+-------------------------
+> Euronotus was a lesser god representing the South-East winds, his name  indicates this. "Euro (East)" and "Notus (South)".
+
+General:
+ - Compatibility with CK2 2.8.1
+
+Celtic:
+ - Fixes bug preventing Court Druid title from being manually assigned.
+
+Atenic:
+ - Fixes bug where Tribal Aten rulers who use the Adopt Feudalism decision would get Feudal Government instead of Iqta.
+
+
 2017-11-23 v0.41.0 "Apheliotes"
 -------------------------
 

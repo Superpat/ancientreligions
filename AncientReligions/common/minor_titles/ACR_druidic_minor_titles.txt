@@ -5,6 +5,7 @@
 
 title_court_druid = {
 	dignity = 0.2
+	realm_in_name = yes
 	grant_limit = 1
 	opinion_effect = 10
 
@@ -15,18 +16,16 @@ title_court_druid = {
 	is_unique = yes
 	
 	allowed_to_hold = {
- 		is_adult = yes
- 		is_ruler = no
- 		OR = {
- 			trait = druid
- 			trait = bad_druid
- 		}
- 		religion_openly_in_celtic_pagan_subgroup_trigger = yes
+		is_adult = yes
+		
+		OR = {
+			trait = druid
+			trait = bad_druid
+		}
 	}	
 	allowed_to_grant = {
-		is_ruler = yes
-		religion_openly_in_celtic_pagan_subgroup_trigger = yes
-	}
+		religion_openly_in_celtic_subgroup_trigger = yes
+  }
 	
 	gain_effect = {
 	}

@@ -17,9 +17,7 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -30,7 +28,7 @@ decisions = {
 		potential = {
 			has_global_flag = ancrel_debug
 			OR = {
-				has_focus = carousing
+				has_focus = focus_carousing
 				trait = hedonist
 				trait = drunkard
 				society_member_of = mysteries_dionysus
@@ -54,9 +52,7 @@ decisions = {
 				add_society_currency_minor_effect = yes
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -107,9 +103,7 @@ decisions = {
 				add_society_currency_minor_effect = yes
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+
 		ai_will_do = {
 			factor = 1
 			modifier = {

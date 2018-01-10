@@ -5,6 +5,12 @@ on_startup = {
 	}
 }
 
+on_character_ask_to_join_society = {
+	events = {
+		ancrel.3200 # mysteries of dionysus
+	}
+}
+
 #character
 on_yearly_pulse = {
 	events = {
@@ -23,7 +29,6 @@ on_yearly_pulse = {
 	
 	random_events = {
 		#The Philosopher
-		150 = ancrel.2000 # Philosopher approaches the Emperor
 		300 = ancrel.2006 # Research Project
 		300 = ancrel.2011 # Imperial Chronicle
 		300 = ancrel.2014 # Streamline the Beaurocracy

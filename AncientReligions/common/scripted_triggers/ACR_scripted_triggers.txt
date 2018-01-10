@@ -317,3 +317,13 @@ has_sand_snakes_prerequisites = {
 		religion_secretly_in_egyptian_subgroup_trigger = yes
 	}
 }
+
+has_dionysus_prerequisites = {
+	age = 16
+	OR = {
+		true_religion = hellenic_pagan
+		trait = mystic
+		trait = hedonist
+		trait = decadent
+	}
+}

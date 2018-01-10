@@ -13,6 +13,57 @@ namespace = ancrel
 ####################
 # ancrel.3200 - 3249
 
+# ask to join society
+character_event = {
+	id = ancrel.3200
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = { leader = { society_member_of = mysteries_dionysus}}
+	}
+
+	immediate = {
+		FROM = { leader = { character_event = { id = ancrel.3201 } } }
+	}
+}
+
+# bounce invite off leader
+character_event = {
+	id = ancrel.3201
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = { # bounce it back
+		FROM = { character_event = { id = ancrel.3202 } }
+	}
+}
+
+# ask if they are ready for the initiation
+# FROM is society leader
+character_event = {
+	id = ancrel.3202
+	desc = ancrel.3202.desc
+	picture = GFX_evt_whisper
+
+	is_triggered_only = yes
+
+	option = { # i'm ready
+		name = ancrel.3202.a
+		custom_tooltip = {
+			text = ancrel.3202.tooltip
+			hidden_tooltip = {
+				character_event = { id = ancrel.3203 }
+			}
+		}
+	}
+
+	option = { # on second thought...
+		name = ancrel.3202.b
+	}
+}
+
 #####################
 ## Dionysia events ##
 #####################

@@ -2409,6 +2409,7 @@ defined_text = {
 		trigger = { is_aztec_secret_religious_society_member_trigger = yes }
 	}
 	
+
 	text = {
 		localisation_key = String_May_the_Ancestors_guide_you
 		trigger = {
@@ -4847,6 +4848,374 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			OR = {
+				piety = 1000
+				trait = zealous
+				trait = content
+			}
+			NOT = { trait = cynical }
+		}
+		localisation_key = String_pious
+	}
+	text = {
+		trigger = {
+			OR = {
+				trait = just
+				AND = {
+					OR = {
+						trait = kind
+						trait = charitable
+					}
+					NOR = {
+						trait = arbitrary
+						trait = craven
+						trait = slothful
+						trait = content
+					}
+				}
+			}	
+		}
+		localisation_key = String_righteous
+	}
+	text = {
+		trigger = {
+			OR = {
+				trait = just
+				trait = kind
+				trait = charitable
+			}	
+			NOR = {
+				trait = wroth
+				trait = cruel
+				trait = impaler
+			}
+		}
+		localisation_key = String_benevolent
+	}
+	text = {
+		trigger = { trait = brave }
+		localisation_key = String_brave
+	}
+	text = {
+		trigger = { trait = honest }
+		localisation_key = String_sincere
+	}
+	text = {
+		trigger = {
+			is_female = yes
+			is_attractive_trigger = yes
+		}
+		localisation_key = String_lovely
+	}
+	text = {
+		trigger = {
+			OR = {
+				trait = fair
+				trait = gregarious
+				trait = socializer
+			}
+			has_unpleasant_trait_trigger = no
+			NOR = {
+				trait = ugly
+				trait = drunkard
+				trait = hedonist
+				trait = lustful
+			}
+		}
+		localisation_key = String_graceful
+	}
+	text = {
+		trigger = {
+			higher_tier_than = DUKE
+		}
+		localisation_key = String_great
+	}
+	text = {
+		trigger = {
+			higher_tier_than = DUKE
+		}
+		localisation_key = String_eminent
+	}
+	text = {
+		trigger = {
+			tier = EMPEROR
+		}
+		localisation_key = String_exalted
+	}
+	text = {
+		trigger = {
+			tier = EMPEROR
+		}
+		localisation_key = String_magnificent
+	}
+	text = {
+		trigger = {
+			is_offmap_ruler = yes
+		}
+		localisation_key = String_heavenly
+	}
+}
+
+defined_text = {
+	name = GetChineseOffmapTributaryPrestigeCost
+	text = {
+		trigger = { FROM = { tier = COUNT } }
+		localisation_key = String_offmap_cost_prestige_count
+	}
+	text = {
+		trigger = { FROM = { tier = DUKE } }
+		localisation_key = String_offmap_cost_prestige_duke
+	}
+	text = {
+		trigger = { FROM = { tier = KING is_nomadic = no } }
+		localisation_key = String_offmap_cost_prestige_king
+	}
+	text = {
+		trigger = { FROM = { tier = EMPEROR is_nomadic = no } }
+		localisation_key = String_offmap_cost_prestige_emperor
+	}
+	text = {
+		trigger = { FROM = { tier = KING is_nomadic = yes } }
+		localisation_key = String_offmap_cost_prestige_king_nomad
+	}
+	text = {
+		trigger = { FROM = { tier = EMPEROR is_nomadic = yes } }
+		localisation_key = String_offmap_cost_prestige_emperor_nomad
+	}
+}
+
+defined_text = { #being ordered context
+	name = GetChineseForceOpenDemand
+	text = { 
+		trigger = { has_character_flag = force_open_china_demands_tribute }
+		localisation_key = String_force_open_china_demands_tribute
+	}
+	text = { 
+		trigger = { has_character_flag = force_open_china_demands_trade_post }
+		localisation_key = String_force_open_china_demands_trade_post
+	}
+	text = { 
+		trigger = { has_character_flag = force_open_china_demands_wealth }
+		localisation_key = String_force_open_china_demands_wealth
+	}
+	text = { 
+		trigger = { has_character_flag = force_open_china_demands_eunuch }
+		localisation_key = String_force_open_china_demands_eunuch
+	}
+	text = { 
+		trigger = { has_character_flag = force_open_china_demands_concubine }
+		localisation_key = String_force_open_china_demands_concubine
+	}
+	text = { 
+		trigger = { has_character_flag = force_open_china_demands_return_chinese }
+		localisation_key = String_force_open_china_demands_chinese
+	}
+	text = { 
+		trigger = { has_character_flag = force_open_china_demands_backup }
+		localisation_key = String_force_open_china_demands_wealth #backup does reduced wealth
+	}
+}
+
+defined_text = { #third person context
+	name = GetChineseForceOpenDemandChina
+	text = { 
+		trigger = { has_character_flag = force_open_china_demands_tribute }
+		localisation_key = String_force_open_china_demands_tribute_china
+	}
+	text = { 
+		trigger = { has_character_flag = force_open_china_demands_trade_post }
+		localisation_key = String_force_open_china_demands_trade_post_china
+	}
+	text = { 
+		trigger = { has_character_flag = force_open_china_demands_wealth }
+		localisation_key = String_force_open_china_demands_wealth_china
+	}
+	text = { 
+		trigger = { has_character_flag = force_open_china_demands_eunuch }
+		localisation_key = String_force_open_china_demands_eunuch_china
+	}
+	text = { 
+		trigger = { has_character_flag = force_open_china_demands_concubine }
+		localisation_key = String_force_open_china_demands_concubine_china
+	}
+	text = { 
+		trigger = { has_character_flag = force_open_china_demands_return_chinese }
+		localisation_key = String_force_open_china_demands_chinese_china
+	}
+	text = { 
+		trigger = { has_character_flag = force_open_china_demands_backup }
+		localisation_key = String_force_open_china_demands_wealth_china #backup does reduced wealth
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+###NON-REUSABLE LOC KEYS###
+defined_text = {
+	name = GetCGMission
+	text = {
+		trigger = { has_character_flag = cg_diplomatic_visit }
+		localisation_key = GetCGMission_diplomatic_visit
+	}
+	text = {
+		trigger = { has_character_flag = cg_oversee_troops }
+		localisation_key = GetCGMission_oversee_troops
+	}
+	text = {
+		trigger = { has_character_flag = cg_study_military }
+		localisation_key = GetCGMission_study_military
+	}
+	text = {
+		trigger = { has_character_flag = cg_oversee_tax_collection }
+		localisation_key = GetCGMission_oversee_tax_collection
+	}
+	text = {
+		trigger = { has_character_flag = cg_trade }
+		localisation_key = GetCGMission_trade
+	}
+	text = {
+		trigger = { has_character_flag = cg_preaching }
+		localisation_key = GetCGMission_preaching
+	}
+	text = {
+		trigger = { has_character_flag = cg_study_theology }
+		localisation_key = GetCGMission_study_theology
+	}
+}
+
+defined_text = {
+	name = GetCGMissionOutcome
+	text = {
+		trigger = { has_character_flag = cg_diplomatic_visit }
+		localisation_key = GetCGMissionOutcome_diplomatic_visit
+	}
+	text = {
+		trigger = { has_character_flag = cg_oversee_troops }
+		localisation_key = GetCGMissionOutcome_oversee_troops
+	}
+	text = {
+		trigger = { has_character_flag = cg_study_military }
+		localisation_key = GetCGMissionOutcome_study_military
+	}
+	text = {
+		trigger = { has_character_flag = cg_oversee_tax_collection }
+		localisation_key = GetCGMissionOutcome_oversee_tax_collection
+	}
+	text = {
+		trigger = { has_character_flag = cg_trade }
+		localisation_key = GetCGMissionOutcome_trade
+	}
+	text = {
+		trigger = { has_character_flag = cg_preaching }
+		localisation_key = GetCGMissionOutcome_preaching
+	}
+	text = {
+		trigger = { has_character_flag = cg_study_theology }
+		localisation_key = GetCGMissionOutcome_study_theology
+	}
+}
+
+
+defined_text = {
+	name = GetHermeticInvention
+	text = {
+		trigger = { has_character_flag = war_invention }
+		localisation_key = String_warfare
+	}
+	text = {
+		trigger = { has_character_flag = prosperity_invention }
+		localisation_key = String_prosperity
+	}
+	text = {
+		trigger = { has_character_flag = knowledge_invention }
+		localisation_key = String_scholarship
+	}
+}
+
+defined_text = {
+	name = GetSocietyRankUpTooltip1
+
+	text = {
+		trigger = {  society_rank == 1 }
+		localisation_key = GetSocietyRankUpTooltip1_Standard_Rank1
+	}
+	text = {
+		trigger = { society_rank == 2 }
+		localisation_key = GetSocietyRankUpTooltip1_Standard_Rank2
+	}
+	text = {
+		trigger = { society_rank == 3 }
+		localisation_key = GetSocietyRankUpTooltip1_Standard_Rank3
+	}
+}
+
+defined_text = {
+	name = GetSocietyRankUpTooltip2
+
+	text = {
+		trigger = { 
+			NOR = {
+				society_member_of = monastic_order_jain
+				society_member_of = monastic_order_buddhist
+			}
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = { 
+			society_rank == 1
+			OR = {
+				society_member_of = monastic_order_jain
+				society_member_of = monastic_order_buddhist
+			}
+		}
+		localisation_key = GetSocietyRankUpTooltip2_MOBuddhistJain_Rank1
+	}
+	text = {
+		trigger = { 
+			society_rank == 2
+			OR = {
+				society_member_of = monastic_order_jain
+				society_member_of = monastic_order_buddhist
+			}
+		}
+		localisation_key = GetSocietyRankUpTooltip2_MOBuddhistJain_Rank2
+	}
+	text = {
+		trigger = { 
+			society_rank == 3
+			OR = {
+				society_member_of = monastic_order_jain
+				society_member_of = monastic_order_buddhist
+			}
+		}
+		localisation_key = GetSocietyRankUpTooltip2_MOBuddhistJain_Rank3
+	}
+}
+
+defined_text = {
+	name = GetSocietyRankUpTooltip4
+
+	text = {
+		trigger = { 
+			NOR = {
+				society_member_of = monastic_order_jain
+				society_member_of = monastic_order_buddhist
+			}
+		}
+		localisation_key = ""
+	}
+	text = {
+		trigger = { 
+			society_rank == 1
 			OR = {
 				piety = 1000
 				trait = zealous

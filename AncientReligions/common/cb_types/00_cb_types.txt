@@ -3010,6 +3010,13 @@ tribal_invasion = {
 						10 = { give_nickname = nick_the_avenger }
 						10 = { give_nickname = nick_the_lion }
 						10 = { give_nickname = nick_the_bold }
+						20 = {
+							modifier = {
+								factor = 0
+								religion_group = christian
+							}
+							give_nickname = nick_the_sword_of_god
+						}
 					}
 				}
 			}

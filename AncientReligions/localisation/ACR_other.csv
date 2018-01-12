@@ -23,6 +23,8 @@ TITAN;Titanic;;;;;;;;;;;;;x
 EXP_RELIGION;Expansionist Religion;;;;;;;;;;;;;x
 EXP_RELIGION_HOME_TERRITORY;Expansionist Religion Home Territory;;;;;;;;;;;;;x
 DEATH_LOST_DESERT;became lost in the desert, and never returned;;;;;;;;;;;;;x
+CTT_CRUSADE_PAGANIFIED;In a paganified world, Crusades can only be called if a player is Christian.;;;;;;;;;;;;;x
+CTT_JIHAD_PAGANIFIED;In a paganified world, Jihads can only be called if a player is Muslim.;;;;;;;;;;;;;x
 ###### Misc keys for events;;;;;;;;;;;;;;x
 ancrel.damn;Damn!;;;;;;;;;;;;;;x
 ancrel.horrible;This is horrible!;;;;;;;;;;;;;;x

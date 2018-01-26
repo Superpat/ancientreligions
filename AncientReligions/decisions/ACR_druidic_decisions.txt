@@ -267,7 +267,6 @@ decisions = {
 					d_gwydion = {
 						grant_title = PREV
 					}
-					set_defacto_liege = ROOT
 					create_character = {
 						random_traits = yes
 						dynasty = random
@@ -402,6 +401,8 @@ decisions = {
 					d_fianna = {
 						grant_title = PREV
 					}
+					prestige = 300
+					wealth = 300
 				}
 			}
 			religion_authority = {
@@ -919,10 +920,6 @@ decisions = {
 		potential = {
 			is_ruler = yes
 			prisoner = no
-			OR = {
-				religion = celtic_pagan
-				religion = celtic_pagan_reformed
-			}
 			has_character_modifier = unfit_gaelic_king
 		}
 		allow = {

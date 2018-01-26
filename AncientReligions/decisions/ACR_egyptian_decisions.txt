@@ -292,7 +292,6 @@ decisions = {
 					d_anubis = {
 						grant_title = PREV
 					}
-					set_defacto_liege = ROOT
 					if = {
 						limit = { ROOT = { ai = no } }
 						ROOT = {
@@ -356,7 +355,6 @@ decisions = {
 					d_horus = {
 						grant_title = PREV
 					}
-					set_defacto_liege = ROOT
 					if = {
 						limit = { ROOT = { ai = no } }
 						ROOT = {
@@ -472,7 +470,6 @@ decisions = {
 					d_burning_blades = {
 						grant_title = PREV
 					}
-					set_defacto_liege = ROOT
 					if = {
 						limit = { ROOT = { ai = no } }
 						ROOT = {

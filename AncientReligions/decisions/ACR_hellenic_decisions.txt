@@ -94,6 +94,7 @@ decisions = {
 					female = no
 					age = 34
 					trait = skilled_tactician
+					trait = homosexual
 				}
 				new_character = {
 					prestige = 300
@@ -743,6 +744,7 @@ decisions = {
 				}
 				piety = -200
 			}
+			clr_character_flag = acr_changed_school # please the validator
 			set_character_flag = acr_changed_school
 			custom_tooltip = {
 				text = choose_school_tip

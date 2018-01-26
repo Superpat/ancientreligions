@@ -603,6 +603,10 @@ character_event = {
 	religion = celtic_pagan
 
 	trigger = {
+		has_game_rule = {
+			name = acr_unfit_king_beta
+			value = on
+		}
 		NOT = { has_character_modifier = unfit_gaelic_king }
 		is_maimed_trigger = yes
 	}

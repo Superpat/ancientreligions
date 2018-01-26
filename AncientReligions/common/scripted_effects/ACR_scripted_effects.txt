@@ -176,3 +176,215 @@ random_province_conversion_from_colonists_effect = {
 		clr_province_flag = received_three_prosperity
 	}
 }
+
+create_diplomacy_mystic_effect = {
+	random_list = {
+		25 = {
+			create_character = {
+				random_traits = no
+				name = "Idunn"
+				dna = chaehghfacw
+				dynasty = none
+				religion = norse_pagan
+				culture = norse
+				female = yes
+				age = 17
+				health = 15
+				trait = grey_eminence
+				trait = gregarious
+				trait = mystic
+				trait = lustful
+				trait = charitable
+				trait = fair
+				trait = trusting
+				trait = poet
+			}
+		}
+		25 = {
+			create_character = {
+				random_traits = no
+				name = "Nestor"
+				dynasty = none
+				religion = hellenic_pagan
+				culture = greek
+				female = no
+				age = 62
+				health = 15
+				trait = grey_eminence
+				trait = gregarious
+				trait = mystic
+				trait = charitable
+				trait = fair
+				trait = trusting
+				trait = poet
+			}
+		}
+	}
+}
+
+create_martial_mystic_effect = {
+	random_list = {
+		25 = {
+			create_character = {
+				random_traits = no
+				dynasty = none
+				religion = west_african_pagan
+				culture = manden
+				female = yes
+				age = 36
+				health = 15
+				trait = brilliant_strategist
+				trait = mystic
+				trait = robust
+				trait = wroth
+				trait = diligent
+				trait = proud
+				trait = brave
+				trait = aggressive_leader
+			}
+		}
+		25 = {
+			create_character = {
+				random_traits = no
+				dynasty = none
+				religion = celtic_pagan
+				culture = gaulish
+				female = no
+				age = 36
+				health = 15
+				trait = brilliant_strategist
+				trait = mystic
+				trait = robust
+				trait = wroth
+				trait = diligent
+				trait = proud
+				trait = brave
+				trait = aggressive_leader
+			}
+		}
+		25 = {
+			create_character = {
+				random_traits = no
+				dynasty = none
+				religion = hellenic_pagan
+				culture = greek
+				female = no
+				age = 31
+				health = 15
+				trait = brilliant_strategist
+				trait = mystic
+				trait = robust
+				trait = wroth
+				trait = diligent
+				trait = proud
+				trait = brave
+				trait = infantry_leader
+			}
+		}
+	}
+}
+
+create_intrigue_mystic_effect = {
+	random_list = {
+		25 = {
+			create_character = {
+				random_traits = no
+				dynasty = none
+				religion = hurufi
+				culture = bedouin_arabic
+				female = yes
+				age = 72
+				health = 15
+				trait = elusive_shadow
+				trait = mystic
+				trait = hunchback
+				trait = slothful
+				trait = proud
+				trait = paranoid
+				trait = ambitious
+				trait = deceitful
+				trait = erudite		
+			}
+		}
+		25 = {
+			create_character = {
+				name = "Cleopatra"
+				random_traits = no
+				dynasty = none
+				religion = egyptian_pagan
+				culture = egyptian_coptic
+				female = yes
+				age = 34
+				health = 15
+				trait = elusive_shadow
+				trait = mystic
+				trait = fair
+				trait = slothful
+				trait = proud
+				trait = paranoid
+				trait = ambitious
+				trait = deceitful
+				trait = erudite		
+			}
+		}
+	}
+}
+
+create_learning_mystic_effect = {
+	random_list = {
+		25 = {
+			create_character = {
+				random_traits = no
+				dynasty = none
+				religion = buddhist
+				culture = sinhala
+				female = yes
+				age = 9
+				health = 15
+				trait = mystic
+				trait = brahmin
+				trait = theravada_buddhist
+				trait = quick
+				trait = fussy
+				trait = conscientious
+			}
+		}
+		25 = {
+			create_character = {
+				random_traits = no
+				name = "Seneca"
+				dynasty = none
+				religion = promethean_pagan
+				culture = roman
+				female = no
+				age = 72
+				health = 15
+				trait = mystic
+				trait = genius
+				trait = stoic
+				trait = mastermind_theologian
+				trait = chaste
+				trait = diligent
+			}
+		}
+		25 = {
+			create_character = {
+				random_traits = no
+				name = "Lucan"
+				dynasty = none
+				religion = hellenic_pagan
+				culture = roman
+				female = no
+				age = 25
+				health = 15
+				trait = poet
+				trait = genius
+				trait = mastermind_theologian
+				trait = fair
+				trait = stoic
+				trait = diligent
+				trait = proud
+			}
+		}
+	}	
+}

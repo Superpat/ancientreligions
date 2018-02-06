@@ -817,7 +817,8 @@ narrative_event = {
 						is_female = yes
 					}
 					give_nickname = nick_the_youthfull
-				} else {
+				} 
+				else = {
 					give_nickname = nick_the_wise
 				}
 				random_list = {
@@ -863,7 +864,8 @@ narrative_event = {
 				if = {
 					limit = { culture = greek }
 					give_nickname = nick_the_spartan
-				} else {
+				} 
+				else = {
 					give_nickname = nick_the_fearless
 				}
 
@@ -962,7 +964,8 @@ narrative_event = {
 				if = {
 					limit = { is_female = no }
 					give_nickname = nick_the_younger
-				} else {
+				} 
+				else = {
 					give_nickname = nick_the_gentle
 				}
 				change_diplomacy = 2

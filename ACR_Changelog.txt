@@ -1,4 +1,4 @@
-2018-01-?? v0.42.0 "Cernunnos"
+2018-0?-?? v0.42.0 "Cernunnos"
 -------------------------
 > Cernunnos is the Horned God, a deity of fertility, life, animals, and the underworld. Worshipped throughout Gaul and Celtiberia, Cernunnos was one of a small number of almost universally worshipped Celtic gods. His most famous appearances are on the Pillar of the Boatman, a carved column found in a Roman temple in Paris; and the Gundestrup Cauldron, a fantastic example of iron age silverwork found in a peat bog near Gundestrup, Denmark.
 
@@ -16,7 +16,7 @@ General:
  - Improved Nile River Flooding event to prevent repeated messages.
 
 Celtic:
- - Fixes bug where the Unfit King Beta game rule was not being honored.
+ - Fixes bug where the Unfit King Beta game rule was being ignored.
 
 Hellenic:
  - The Philosopher event chain is now more likely to fire and the max demense size requirement is relaxed to 180.
@@ -28,7 +28,7 @@ Kemetic:
 
 2017-12-17 v0.41.1 "Euronotus"
 -------------------------
-> Euronotus was a lesser god representing the South-East winds, his name  indicates this. "Euro (East)" and "Notus (South)".
+> Euronotus was a lesser god representing the South-East winds, his name indicates this. "Euro (East)" and "Notus (South)".
 
 General:
  - Compatibility with CK2 2.8.1

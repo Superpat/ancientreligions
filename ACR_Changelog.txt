@@ -6,7 +6,13 @@ General:
  - Crusades and Jihads can now be called in a Paganified world if the player is a member of the religion.
  - Most Holy Orders are no longer vassalized on creation.
  - Most Holy Orders now have the standard events from vanilla (making donations/loans, building castles, etc.)
- - Added a chance that immortal npcs will be an appropriate pagan religion.
+ - Added more possible immortal mystics, some of which will have ancient religions and/or cultures.
+  - Nestor the Wise, Greek Hellenic Pagan, master of diplomacy
+  - <random> the Spartan, Greek Hellenic Pagan, master of war.
+  - <random> the Fearless, Gaulish Celtic Pagan, master of war.
+  - Cleopatra the Alchemist, Ancient Coptic Kemetic, master spy.
+  - Seneca the Younger, Roman Promethean, master scholar.
+  - Lucan the Younger, Roman Hellenic Pagan, master scholar.
  - Improved Nile River Flooding event to prevent repeated messages.
 
 Celtic:
@@ -14,6 +20,7 @@ Celtic:
 
 Hellenic:
  - The Philosopher event chain is now more likely to fire and the max demense size requirement is relaxed to 180.
+  - Various conditions will also increase the odds of the event firing, such as being in a defensive war and your religion having a low MA (<50%).
 
 Kemetic:
  - Fixes a bug that prevented the "Lost in a Sandstorm" event chain from firing.

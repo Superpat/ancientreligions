@@ -87,6 +87,14 @@ character_event = {
 			has_global_flag = ancrel_debug
 			ai = no
 		}
+		modifier = {
+			factor = 2
+			war = yes
+		}
+		modifier = {
+			factor = 5
+			is_primary_war_defender = yes
+		}
 	}
 
 	option = { # allow the philosopher to enter the court

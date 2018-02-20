@@ -4231,7 +4231,7 @@ narrative_event = {
 	}
 }
 
-# request to join red dragons (courtier)
+# request to join men of steel (courtier)
 character_event = {
 	id = ancrel.3552
 	desc = ancrel.3552

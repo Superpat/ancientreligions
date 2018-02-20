@@ -293,6 +293,106 @@ is_depopulated_trigger = {
 	}	
 }
 
+# character scope, checks if the given character
+# is someone who could potentially donate land
+# to a holy order of their faith
+is_potential_land_doner_trigger = {
+	any_mercenary_title = {
+		religion = PREV
+		is_castle_building_holy_order_trigger = yes
+	}
+	OR = {
+		AND = {
+			religion_openly_in_celtic_subgroup_trigger = yes
+			has_land_in_celtic_regions_of_interest = yes
+		}
+		AND = {
+			religion_openly_in_hellenic_subgroup_trigger = yes
+			has_land_in_hellenic_regions_of_interest = yes
+		}
+		AND = {
+			religion_openly_in_egyptian_subgroup_trigger = yes
+			has_land_in_egyptian_regions_of_interest = yes
+		}
+	}
+	is_heretic = no
+}
+
+# character scope
+has_land_in_celtic_regions_of_interest = {
+	any_demesne_province = {
+		has_empty_holding = yes
+		empire = {
+			OR = {
+				title = e_france
+				title = e_hre
+				title = e_spain
+				title = e_britannia
+				title = e_italia
+			}
+		}
+	}	
+}
+
+# character scope
+has_land_in_hellenic_regions_of_interest = {
+	any_demesne_province = {
+		has_empty_holding = yes
+			OR = {
+				region = world_middle_east_jerusalem
+				region = world_africa_north
+				empire = e_byzantium
+				empire = e_italia
+				empire = e_francia
+				empire = e_spain
+				duchy = d_sinai
+			}
+		}
+	}	
+}
+
+# character scope
+has_land_in_egyptian_regions_of_interest = {
+	any_demesne_province = {
+		has_empty_holding = yes
+		empire = {
+			OR = {
+				title = e_arabia
+				title = e_abyssinia
+				title = e_byzantium
+			}
+		}
+	}	
+}
+
+# title scope, checks if the given title is a holy order
+# that would request a ruler to grant them permission
+# to build a castle on their lands
+is_castle_building_holy_order_trigger = {
+	holy_order = yes
+
+	OR = {
+		title = d_fianna
+		title = d_anubis
+		title = d_horus
+		title = d_legio_hellenica
+		title = d_sacred_band
+		title = d_sickles
+		title = d_burning_blades
+	}
+		
+	holder_scope = {
+		independent = yes
+		wealth = 300
+		NOT = {
+			realm_size = 10
+		}
+		NOT = {
+			num_of_count_titles = 1
+		}
+	}
+}
+
 #Society triggers
 has_unseelie_prerequisites = {
 	has_common_devilworship_prerequisites = yes

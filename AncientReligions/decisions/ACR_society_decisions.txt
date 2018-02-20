@@ -457,9 +457,7 @@ title_decisions = {
 				set_secret_religion = celtic_pagan
 			}
 		}
-		
 
-		
 		ai_will_do = {
 			factor = 0
 		}
@@ -522,8 +520,6 @@ title_decisions = {
 			}
 		}
 		
-
-		
 		ai_will_do = {
 			factor = 0
 		}
@@ -584,8 +580,6 @@ title_decisions = {
 				set_secret_religion = hellenic_pagan
 			}
 		}
-		
-
 		
 		ai_will_do = {
 			factor = 0
@@ -651,8 +645,6 @@ title_decisions = {
 			}
 		}
 		
-
-		
 		ai_will_do = {
 			factor = 0
 		}
@@ -716,8 +708,6 @@ title_decisions = {
 				set_secret_religion = titan_pagan
 			}
 		}
-		
-
 		
 		ai_will_do = {
 			factor = 0
@@ -840,8 +830,6 @@ title_decisions = {
 				set_secret_religion = aten_pagan
 			}
 		}
-		
-
 		
 		ai_will_do = {
 			factor = 0

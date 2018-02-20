@@ -10,8 +10,8 @@ General:
   - Nestor the Wise, Greek Hellenic Pagan, master of diplomacy
   - <random> the Spartan, Greek Hellenic Pagan, master of war.
   - <random> the Fearless, Gaulish Celtic Pagan, master of war.
-  - Cleopatra the Alchemist, Ancient Coptic Kemetic, master spy.
-  - Seneca the Younger, Roman Promethean, master scholar.
+  - Cleopatra the Alchemist, Coptic Kemetic Pagan, master spy.
+  - Seneca the Younger, Roman Promethean Pagan, master scholar.
   - Lucan the Younger, Roman Hellenic Pagan, master scholar.
  - Improved Nile River Flooding event to prevent repeated messages.
 

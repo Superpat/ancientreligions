@@ -689,10 +689,22 @@ character_event = {
 			is_title_active = THIS
 			holy_order = yes
 			religion = ROOT
-			NOT = { has_character_modifier = expelled_@THIS }
-			NOT = {
+			NOR = {
+				has_character_flag = expelled_@THIS
 				any_liege = {
-					has_character_modifier = expelled_@THIS
+					has_character_flag = expelled_@THIS
+				}
+			}
+		}
+
+		NOT = {
+			any_spouse = {
+				OR = {
+					is_landed = yes
+					AND = { # Won't happen if spouse is pregnant with non-bastard child
+						is_pregnant = yes
+						father_of_unborn = { character = ROOT } 
+					}
 				}
 			}
 		}
@@ -703,10 +715,12 @@ character_event = {
 			limit = {
 				holy_order = yes
 				religion = ROOT
-				NOT = { has_character_modifier = expelled_@THIS }
-				NOT = {
-					any_liege = {
-						has_character_modifier = expelled_@THIS
+				ROOT = {
+					NOR = {
+						has_character_flag = expelled_@PREV
+						any_liege = {
+							has_character_flag = expelled_@PREVPREV
+						}
 					}
 				}
 			}
@@ -786,7 +800,6 @@ character_event = {
 	}
 }
 
-# Son or brother asks to join the Red Dragons
 character_event = {
 	id = ancrel.9101
 	desc = ancrel.9101.desc
@@ -825,7 +838,6 @@ character_event = {
 	}
 }
 
-# Son or brother joins the Red Dragons
 character_event = {
 	id = ancrel.9102
 	desc = ancrel.9102.desc
@@ -850,17 +862,16 @@ character_event = {
 	}
 }
 
-# Liege refuses request to join the Red Dragons
 character_event = {
-	id = ancrel.1323
-	desc = EVTDESCancrel.1323
+	id = ancrel.9103
+	desc = ancrel.9103.desc
 	picture = GFX_EVT_warrior_banners
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name =  EVTOPTAancrel.1323
+		name =  ancrel.9103.a
 		
 		opinion = {
 			who = FROM
@@ -871,108 +882,57 @@ character_event = {
 
 # The Grand Master humbly requests the right to build a castle in your demesne
 character_event = {
-	id = ancrel.1324	
+	id = ancrel.9104	
 	hide_window = yes
 	
 	only_playable = yes
 	
 	trigger = {
-		religion = celtic_pagan_reformed
-		is_heretic = no
-		
-		d_red_dragons = {
-			holder_scope = {
-				wealth = 300
-				NOT = {
-					realm_size = 10
-				}
-				NOT = {
-					num_of_count_titles = 1
-				}
-			}
-		}
-		
-		any_demesne_province = {
-			has_empty_holding = yes
-			empire = {
-				OR = {
-					title = e_france
-					title = e_hre
-					title = e_spain
-					title = e_britannia
-				}
-			}
-		}
-		
 		has_dlc = "Sons of Abraham"
-		
-		NOT = { has_character_modifier = expelled_d_red_dragons }
-		NOT = {
-			any_liege = {
-				has_character_modifier = expelled_d_red_dragons
-			}
-		}
+
+		is_potential_land_doner_trigger = yes
 	}
 
 	mean_time_to_happen = {
 		months = 240
-		modifier = {
-			factor = 0.5
-			d_red_dragons = {
-				holder_scope = {
-					NOT = { demesne_size = 1 }
-				}
-			}
-		}
-		modifier = {
-			factor = 0.5
-			d_red_dragons = {
-				holder_scope = {
-					NOT = { demesne_size = 2 }
-				}
-			}
-		}
-		modifier = {
-			factor = 2.0
-			d_red_dragons = {
-				holder_scope = {
-					realm_size = 5
-				}
-			}
-		}
 	}
 	
 	immediate = {
-		random_demesne_province = {
+		random_mercenary_title = {
 			limit = {
-				has_empty_holding = yes
-				empire = {
-					OR = {
-						title = e_france
-						title = e_hre
-						title = e_spain
-						title = e_britannia
+				is_castle_building_holy_order_trigger = yes
+				religion = ROOT
+				NOT = {
+					ROOT = {
+						has_character_flag = expelled_@PREV
 					}
 				}
 			}
-			province_event = {
-				id = ancrel.1325
+
+			save_event_target_as = holy_order
+		}
+
+		random_demense_province = {
+			limit = {
+				is_in_root_religion_regions_of_interest_trigger = yes
 			}
+
+			province_event = { id = ancrel.9105 }
 		}
 	}
 }
 
 province_event = {
-	id = ancrel.1325
+	id = ancrel.9105
 	hide_window = yes
 	
 	is_triggered_only = yes
 	
 	immediate = {
-		d_red_dragons = {
+		event_target:holy_order = {
 			holder_scope = {
 				character_event = {
-					id = ancrel.1326
+					id = ancrel.9106
 				}
 			}
 		}
@@ -980,7 +940,7 @@ province_event = {
 }
 
 character_event = {
-	id = ancrel.1326
+	id = ancrel.9106
 	hide_window = yes
 	
 	is_triggered_only = yes
@@ -988,34 +948,31 @@ character_event = {
 	immediate = {
 		FROMFROM = {
 			letter_event = {
-				id = ancrel.1327
+				id = ancrel.9107
 			}
 		}
 	}
 }
 
 letter_event = {
-	id = ancrel.1327
-	desc = EVTDESCancrel.1327
+	id = ancrel.9107
+	desc = ancrel.9107.desc
 	border = GFX_event_letter_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name =  EVTOPTAancrel.1327 # Agree
+		name =  ancrel.9107.a # Agree
 		ai_chance = {
 			factor = 80
-			modifier = {
-				factor = 0
-				has_character_modifier = expelled_d_red_dragons
-			}
 		}
 		
 		hidden_tooltip = {
 			FROMFROM = {
-				province_event = { id = ancrel.1328 }
+				province_event = { id = ancrel.9108 }
 			}
-			remove_character_modifier = expelled_d_red_dragons
+			clr_character_flag = expelled_@FROM
+			remove_character_modifer = ancrel_expelled_holy_order
 		}
 		
 		piety = 200
@@ -1023,7 +980,7 @@ letter_event = {
 	}
 	
 	option = {
-		name =  EVTOPTBancrel.1321 # Refuse
+		name =  ancrel.9107.b # Refuse
 		ai_chance = {
 			factor = 20
 		}
@@ -1034,8 +991,8 @@ letter_event = {
 
 # Castle has been erected
 province_event = {
-	id = ancrel.1328
-	desc = EVTDESCancrel.1328
+	id = ancrel.9108
+	desc = ancrel.9108.desc
 	picture = GFX_EVT_castle_construction
 	border = GFX_event_normal_frame_religion
 	
@@ -1056,9 +1013,9 @@ province_event = {
 	}
 }
 
-# Ping event when expelling the Red Dragon
+# Ping event when expelling the holy order
 character_event = {
-	id = ancrel.1329
+	id = ancrel.9109
 	hide_window = yes
 	
 	is_triggered_only = yes
@@ -1081,7 +1038,7 @@ character_event = {
 	
 		FROM = {
 			letter_event = {
-				id = ancrel.1330
+				id = ancrel.9110
 			}
 		}
 		
@@ -1092,22 +1049,22 @@ character_event = {
 	}
 }
 
-# Notification event when expelling the Red Dragon
+# Notification event when expelling the holy order
 letter_event = {
-	id = ancrel.1330
-	desc = EVTDESCancrel.1330
+	id = ancrel.9110
+	desc = ancrel.9110.desc
 	border = GFX_event_letter_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name =  EVTOPTAancrel.1330
+		name =  ancrel.9110.a
 	}
 }
 
-# Ping event when donating money to the Red dragon
+# Ping event when donating money to the holy order
 character_event = {
-	id = ancrel.1331
+	id = ancrel.9111
 	hide_window = yes
 	
 	is_triggered_only = yes
@@ -1116,7 +1073,7 @@ character_event = {
 		wealth = 300
 		FROM = {
 			letter_event = {
-				id = ancrel.1332
+				id = ancrel.9112
 			}
 		}
 		opinion = {
@@ -1126,15 +1083,362 @@ character_event = {
 	}
 }
 
-# Notification event when donating money to the Red Dragon
+# Notification event when donating money to the holy order
 letter_event = {
-	id = ancrel.1332
-	desc = EVTDESCancrel.1332
+	id = ancrel.9112
+	desc = ancrel.9112.desc
 	border = GFX_event_letter_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = EXCELLENT
+	}
+}
+
+# The Grand Master demands one of your sons due to debt
+character_event = {
+	id = SoA.1000
+	hide_window = yes
+	
+	min_age = 16
+	only_playable = yes
+	religion_group = christian
+	
+	trigger = {
+		OR = {
+			religion = catholic
+			religion = cathar
+			religion = fraticelli
+			religion = waldensian
+			religion = lollard
+		}
+		is_heretic = no
+		has_character_modifier = borrowed_from_knights_templar
+		NOT = { has_character_flag = sent_son_to_knights_templar }
+		any_child = {
+			is_female = no
+			is_adult = yes
+			is_ruler = no
+			prisoner = no
+			NOT = { trait = incapable }
+			ROOT = {
+				NOT = { 
+					current_heir = { 
+						character = PREVPREV 
+					}
+				}
+			}
+		}
+		has_dlc = "Sons of Abraham"
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	immediate = {
+		random_child = {
+			limit = {
+				is_female = no
+				is_adult = yes
+				is_ruler = no
+				prisoner = no
+				NOT = { trait = incapable }
+				ROOT = {
+					NOT = { 
+						current_heir = { 
+							character = PREVPREV 
+						}
+					}
+				}
+			}
+			character_event = {
+				id = SoA.1001
+			}
+		}
+	}
+}
+
+character_event = {
+	id = SoA.1001
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_knights_templar = {
+			holder_scope = {
+				character_event = {
+					id = SoA.1002
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = SoA.1002
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			letter_event = {
+				id = SoA.1003
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = SoA.1003
+	desc = EVTDESC_SOA_1003
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1003 # Agree
+		ai_chance = {
+			factor = 100
+		}
+		
+		set_character_flag = sent_son_to_knights_templar
+		
+		piety = 100
+		
+		d_knights_templar = {
+			holder_scope = {
+				FROMFROM = {
+					hidden_tooltip = {
+						clear_wealth = PREV
+					}
+					spouse = {
+						remove_spouse = spouse
+						hidden_tooltip = { character_event = { id = SoA.2862 } }
+					}
+					move_character = PREV
+					add_trait = celibate
+					end_inaccessibility_effect = yes #removes in_hiding or in_seclusion
+
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1003 # Pay them back
+		wealth = -300
+		hidden_tooltip = {
+			remove_character_modifier = borrowed_from_knights_templar
+		}
+		FROM = {
+			wealth = 300
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_SOA_1003 # Refuse
+		piety = -1000
+	}
+}
+
+#### Still need to convert these !
+
+# Ping event when borrowing money from the Templars
+character_event = {
+	id = SoA.1010
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		wealth = -300
+		FROM = {
+			letter_event = {
+				id = SoA.1011
+			}
+		}
+	}
+}
+
+# Notification event when borrowing money from the Templars
+letter_event = {
+	id = SoA.1011
+	desc = EVTDESC_SOA_1011
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EXCELLENT
+	}
+}
+
+# Ping event when vassalizing the Templars
+character_event = {
+	id = SoA.1015
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_defacto_liege = FROM
+		FROM = {
+			letter_event = {
+				id = SoA.1016
+			}
+		}
+	}
+}
+
+# Notification event when vassalizing the Templars
+letter_event = {
+	id = SoA.1016
+	desc = EVTDESC_SOA_1016
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EXCELLENT
+	}
+}
+
+# The Grand Master demands the right to build a castle in your demesne
+character_event = {
+	id = SoA.1020
+	
+	hide_window = yes
+	
+	min_age = 16
+	only_playable = yes
+	religion_group = christian
+	
+	trigger = {
+		OR = {
+			religion = catholic
+			religion = cathar
+			religion = fraticelli
+			religion = waldensian
+			religion = lollard
+		}
+		is_heretic = no
+		
+		has_character_modifier = borrowed_from_knights_templar
+		NOT = { has_character_flag = sent_son_to_knights_templar }
+		
+		any_demesne_province = {
+			has_empty_holding = yes
+		}
+		
+		d_knights_templar = {
+			holder_scope = {
+				wealth = 300
+			}
+		}
+		has_dlc = "Sons of Abraham"
+		
+		NOT = { has_character_modifier = expelled_d_knights_templar }
+		NOT = {
+			any_liege = {
+				has_character_modifier = expelled_d_knights_templar
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	immediate = {
+		random_demesne_province = {
+			limit = {
+				has_empty_holding = yes
+			}
+			province_event = {
+				id = SoA.1021
+			}
+		}
+	}
+}
+
+province_event = {
+	id = SoA.1021
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_knights_templar = {
+			holder_scope = {
+				character_event = {
+					id = SoA.1022
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = SoA.1022
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			letter_event = {
+				id = SoA.1023
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = SoA.1023
+	desc = EVTDESC_SOA_1023
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1023 # Agree
+		ai_chance = {
+			factor = 100
+		}
+		
+		hidden_tooltip = {
+			remove_character_modifier = borrowed_from_knights_templar
+			remove_character_modifier = expelled_d_knights_templar
+			FROMFROM = {
+				province_event = { id = SoA.1024 }
+			}
+		}
+		
+		piety = 100
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1003 # Pay them back
+		wealth = -300
+		hidden_tooltip = {
+			remove_character_modifier = borrowed_from_knights_templar
+		}
+		FROM = {
+			wealth = 300
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_SOA_1003 # Refuse
+		piety = -1000
 	}
 }

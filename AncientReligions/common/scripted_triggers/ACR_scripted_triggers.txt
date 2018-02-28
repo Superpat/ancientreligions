@@ -297,7 +297,7 @@ is_depopulated_trigger = {
 # is someone who could potentially donate land
 # to a holy order of their faith
 is_potential_land_doner_trigger = {
-	any_mercenary_title = {
+	any_mercenary_band = {
 		religion = PREV
 		is_castle_building_holy_order_trigger = yes
 		ROOT = {

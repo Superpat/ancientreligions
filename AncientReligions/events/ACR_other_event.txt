@@ -685,7 +685,7 @@ character_event = {
 		
 		has_dlc = "Sons of Abraham"
 		
-		any_mercenary_company = {
+		any_mercenary_band = {
 			is_title_active = THIS
 			holy_order = yes
 			religion = ROOT
@@ -711,7 +711,7 @@ character_event = {
 	}
 	
 	immediate = {
-		random_mercenary_company = {
+		random_mercenary_band = {
 			limit = {
 				holy_order = yes
 				religion = ROOT
@@ -1098,26 +1098,28 @@ letter_event = {
 
 # The Grand Master demands one of your sons due to debt
 character_event = {
-	id = SoA.1000
+	id = ancrel.9113
 	hide_window = yes
 	
 	min_age = 16
 	only_playable = yes
-	religion_group = christian
 	
 	trigger = {
-		OR = {
-			religion = catholic
-			religion = cathar
-			religion = fraticelli
-			religion = waldensian
-			religion = lollard
+		any_mercenary_band = {
+			is_banking_holy_order_trigger = yes
+			religion = ROOT
+			ROOT = {
+				has_character_flag = borrowed_from_@PREV
+				is_heretic = no
+				NOT = { has_character_flag = sent_child_to_@PREV}
+			}
 		}
-		is_heretic = no
-		has_character_modifier = borrowed_from_knights_templar
-		NOT = { has_character_flag = sent_son_to_knights_templar }
+
 		any_child = {
-			is_female = no
+			OR = {
+				is_female = no
+				is_feminist_religion_trigger = yes
+			}
 			is_adult = yes
 			is_ruler = no
 			prisoner = no
@@ -1130,6 +1132,7 @@ character_event = {
 				}
 			}
 		}
+
 		has_dlc = "Sons of Abraham"
 	}
 	
@@ -1138,9 +1141,24 @@ character_event = {
 	}
 	
 	immediate = {
+		random_mercenary_band = {
+			limit = {
+				is_banking_holy_order = yes
+				religion = ROOT
+				ROOT = {
+					has_character_flag = borrowed_from_@PREV
+					NOT = { has_character_flag = sent_child_to_@PREV}
+				}
+			}
+
+			save_event_target_as = holy_order
+		}
 		random_child = {
 			limit = {
-				is_female = no
+				OR = {
+					is_female = no
+					is_feminist_religion_trigger = yes
+				}
 				is_adult = yes
 				is_ruler = no
 				prisoner = no
@@ -1154,23 +1172,23 @@ character_event = {
 				}
 			}
 			character_event = {
-				id = SoA.1001
+				id = ancrel.9014
 			}
 		}
 	}
 }
 
 character_event = {
-	id = SoA.1001
+	id = ancrel.9014
 	hide_window = yes
 	
 	is_triggered_only = yes
 	
 	immediate = {
-		d_knights_templar = {
+		event_target:holy_order = {
 			holder_scope = {
 				character_event = {
-					id = SoA.1002
+					id = ancrel.9015
 				}
 			}
 		}
@@ -1178,7 +1196,7 @@ character_event = {
 }
 
 character_event = {
-	id = SoA.1002
+	id = ancrel.9015
 	
 	hide_window = yes
 	
@@ -1187,30 +1205,30 @@ character_event = {
 	immediate = {
 		FROMFROM = {
 			letter_event = {
-				id = SoA.1003
+				id = ancrel.9016
 			}
 		}
 	}
 }
 
 letter_event = {
-	id = SoA.1003
-	desc = EVTDESC_SOA_1003
+	id = ancrel.9016
+	desc = ancrel.9016.desc
 	border = GFX_event_letter_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_SOA_1003 # Agree
+		name = ancrel.9016.a # Agree
 		ai_chance = {
 			factor = 100
 		}
 		
-		set_character_flag = sent_son_to_knights_templar
+		set_character_flag = sent_son_to_@event_target:holy_order
 		
 		piety = 100
 		
-		d_knights_templar = {
+		event_target:holy_order = {
 			holder_scope = {
 				FROMFROM = {
 					hidden_tooltip = {
@@ -1230,12 +1248,12 @@ letter_event = {
 	}
 	
 	option = {
-		name = EVTOPTB_SOA_1003 # Pay them back
+		name = ancrel.9016.b # Pay them back
 		wealth = -300
 		hidden_tooltip = {
-			remove_character_modifier = borrowed_from_knights_templar
+			remove_character_modifier = borrowed_from_@event_target:holy_order
 		}
-		FROM = {
+		event_target:holy_order = {
 			wealth = 300
 		}
 	}
@@ -1246,11 +1264,9 @@ letter_event = {
 	}
 }
 
-#### Still need to convert these !
-
-# Ping event when borrowing money from the Templars
+# Ping event when borrowing money from the holy order
 character_event = {
-	id = SoA.1010
+	id = ancrel.9017
 	
 	hide_window = yes
 	
@@ -1260,16 +1276,16 @@ character_event = {
 		wealth = -300
 		FROM = {
 			letter_event = {
-				id = SoA.1011
+				id = ancrel.9018
 			}
 		}
 	}
 }
 
-# Notification event when borrowing money from the Templars
+# Notification event when borrowing money from the holy order
 letter_event = {
-	id = SoA.1011
-	desc = EVTDESC_SOA_1011
+	id = ancrel.9018
+	desc = ancrel.9018.desc
 	border = GFX_event_letter_frame_religion
 	
 	is_triggered_only = yes
@@ -1279,9 +1295,9 @@ letter_event = {
 	}
 }
 
-# Ping event when vassalizing the Templars
+# Ping event when vassalizing the holy order
 character_event = {
-	id = SoA.1015
+	id = ancrel.9019
 	
 	hide_window = yes
 	
@@ -1291,16 +1307,16 @@ character_event = {
 		set_defacto_liege = FROM
 		FROM = {
 			letter_event = {
-				id = SoA.1016
+				id = ancrel.9020
 			}
 		}
 	}
 }
 
-# Notification event when vassalizing the Templars
+# Notification event when vassalizing the holy order
 letter_event = {
-	id = SoA.1016
-	desc = EVTDESC_SOA_1016
+	id = ancrel.9020
+	desc = ancrel.9020.desc
 	border = GFX_event_letter_frame_religion
 	
 	is_triggered_only = yes
@@ -1312,44 +1328,35 @@ letter_event = {
 
 # The Grand Master demands the right to build a castle in your demesne
 character_event = {
-	id = SoA.1020
+	id = ancrel.9021
 	
 	hide_window = yes
 	
 	min_age = 16
 	only_playable = yes
-	religion_group = christian
 	
 	trigger = {
-		OR = {
-			religion = catholic
-			religion = cathar
-			religion = fraticelli
-			religion = waldensian
-			religion = lollard
-		}
-		is_heretic = no
-		
-		has_character_modifier = borrowed_from_knights_templar
-		NOT = { has_character_flag = sent_son_to_knights_templar }
-		
-		any_demesne_province = {
-			has_empty_holding = yes
-		}
-		
-		d_knights_templar = {
+		any_mercenary_band = {
+			is_banking_holy_order_trigger = yes
+			religion = ROOT
 			holder_scope = {
 				wealth = 300
 			}
-		}
-		has_dlc = "Sons of Abraham"
-		
-		NOT = { has_character_modifier = expelled_d_knights_templar }
-		NOT = {
-			any_liege = {
-				has_character_modifier = expelled_d_knights_templar
+			ROOT = {
+				is_heretic = no
+				has_character_flag = borrowed_from_@PREV
+				NOT = { has_character_flag = sent_son_to_@PREV }
+				NOT = { has_character_modifier = expelled_@PREV }
+				NOT = {
+					any_liege = {
+						has_character_modifier = expelled_@PREV
+					}
+				}
 			}
 		}
+		
+		any_demese_province = { has_empty_holding = yes }
+		has_dlc = "Sons of Abraham"
 	}
 	
 	mean_time_to_happen = {
@@ -1357,29 +1364,54 @@ character_event = {
 	}
 	
 	immediate = {
+		random_mercenary_band = {
+			limit = {
+				is_banking_holy_order_trigger = yes
+				religion = ROOT
+				holder_scope = {
+					wealth = 300
+				}
+				ROOT = {
+					has_character_flag = borrowed_from_@PREV
+					NOT = { has_character_flag = sent_son_to_@PREV }
+					NOT = { has_character_modifier = expelled_@PREV }
+					NOT = {
+						any_liege = {
+							has_character_modifier = expelled_@PREV
+						}
+					}
+				}
+			}
+
+			save_event_target_as = holy_order
+		}
+
 		random_demesne_province = {
 			limit = {
 				has_empty_holding = yes
 			}
+			save_event_target_as = target_land
 			province_event = {
-				id = SoA.1021
+				id = ancrel.9022
 			}
 		}
+
+		save_event_target_as = lender
 	}
 }
 
 province_event = {
-	id = SoA.1021
+	id = ancrel.9022
 	
 	hide_window = yes
 	
 	is_triggered_only = yes
 	
 	immediate = {
-		d_knights_templar = {
+		event_target:holy_order = {
 			holder_scope = {
 				character_event = {
-					id = SoA.1022
+					id = ancrel.9023
 				}
 			}
 		}
@@ -1387,39 +1419,39 @@ province_event = {
 }
 
 character_event = {
-	id = SoA.1022
+	id = ancrel.9023
 	
 	hide_window = yes
 	
 	is_triggered_only = yes
 	
 	immediate = {
-		FROMFROM = {
+		event_target:lender = {
 			letter_event = {
-				id = SoA.1023
+				id = ancrel.9024
 			}
 		}
 	}
 }
 
 letter_event = {
-	id = SoA.1023
-	desc = EVTDESC_SOA_1023
+	id = ancrel.9024
+	desc = ancrel.9024.desc
 	border = GFX_event_letter_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_SOA_1023 # Agree
+		name = ancrel.9024.a # Agree
 		ai_chance = {
 			factor = 100
 		}
 		
 		hidden_tooltip = {
-			remove_character_modifier = borrowed_from_knights_templar
-			remove_character_modifier = expelled_d_knights_templar
-			FROMFROM = {
-				province_event = { id = SoA.1024 }
+			remove_character_flag = borrowed_from_@event_target:holy_order
+			remove_character_flag = expelled_@event_target:holy_order
+			event_target:target_land = {
+				province_event = { id = ancrel.9025 }
 			}
 		}
 		
@@ -1427,18 +1459,18 @@ letter_event = {
 	}
 	
 	option = {
-		name = EVTOPTB_SOA_1003 # Pay them back
+		name = ancrel.9024.b # Pay them back
 		wealth = -300
 		hidden_tooltip = {
-			remove_character_modifier = borrowed_from_knights_templar
+			remove_character_flag = borrowed_from_@event_target:holy_order
 		}
-		FROM = {
+		event_target:holy_order = {
 			wealth = 300
 		}
 	}
 	
 	option = {
-		name = EVTOPTC_SOA_1003 # Refuse
+		name = ancrel.9024.c # Refuse
 		piety = -1000
 	}
 }

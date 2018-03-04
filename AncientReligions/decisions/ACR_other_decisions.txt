@@ -123,3 +123,53 @@ decisions = {
 		}
 	}
 }
+
+targeted_decisions = {
+	borrow_money_from_holy_order = {
+		only_playable = yes
+		
+		from_potential = {
+			can_borrow_from_a_holy_order = yes
+		}
+
+		potential = {
+			religion = FROM
+			title = {
+				is_banking_holy_order_trigger = yes
+			}
+		}
+
+		allow = {
+			wealth = 300
+		}
+
+		effect = {
+			FROM = {
+				wealth = 300
+				add_character_modifier = {
+					name = borrowed_from_holy_order
+					duration = -1
+					inherit = yes
+				}
+			}
+			
+			hidden_tooltip = {
+				character_event = {
+					id = ancrel.9017
+				}
+			}
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				wealth = 0
+			}
+			modifier = {
+				factor = 0.25 # Slow it down
+			}
+		}
+	}
+}

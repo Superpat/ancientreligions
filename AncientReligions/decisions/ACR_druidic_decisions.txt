@@ -551,9 +551,9 @@ decisions = {
 	}
 
 	expel_red_dragons = {
+		ai = no
 		only_playable = yes
 		potential = {
-			ai = no
 			religion = celtic_pagan_reformed
 			higher_tier_than = DUKE
 			independent = yes
@@ -603,8 +603,6 @@ decisions = {
 				}
 			}
 		}
-		
-		
 		
 		ai_will_do = {
 			factor = 0

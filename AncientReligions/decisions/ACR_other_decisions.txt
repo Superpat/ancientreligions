@@ -257,6 +257,7 @@ targeted_decisions = {
 			}
 			NOT = { num_of_count_titles = 3 }
 			independent = yes
+			
 			primary_title = {
 				holy_order = yes
 				this_holy_order_can_be_vassalized_by_from = yes

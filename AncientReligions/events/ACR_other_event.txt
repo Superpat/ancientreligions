@@ -1241,7 +1241,6 @@ letter_event = {
 					move_character = PREV
 					add_trait = celibate
 					end_inaccessibility_effect = yes #removes in_hiding or in_seclusion
-
 				}
 			}
 		}
@@ -1472,5 +1471,29 @@ letter_event = {
 	option = {
 		name = ancrel.9024.c # Refuse
 		piety = -1000
+	}
+}
+
+# Castle has been erected
+province_event = {
+	id = ancrel.9025
+	desc = ancrel.9025.desc
+	picture = GFX_evt_castle_construction
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			wealth = -300
+		}
+	}
+	
+	option = {
+		name = ancrel.9025.a
+		build_holding = {
+		   type = castle
+		   holder = FROMFROM
+		}
 	}
 }

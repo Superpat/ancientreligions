@@ -474,6 +474,41 @@ prev_can_borrow_from_this_holy_order_trigger = {
 	}
 }
 
+# title scope, checks that FROM can vassalize the currently scoped holy order
+this_holy_order_can_be_vassalized_by_from_trigger = {
+	OR = {
+		AND = { # hellenic legion
+			e_roman_empire = {
+				holder_scope = FROM
+			}
+			title = d_hellenic_legion
+		}		
+		AND = { # kemetic/atenic HOs
+			holder_scope = {
+				religion_openly_in_egyptian_subgroup_trigger = yes
+			}
+			FROM = {
+				OR = {
+					controls_religion = yes
+					any_vassal = {
+						religion = FROM
+						controls_religion = yes
+					}
+				}
+			}
+		}
+		AND = { # sicles
+			title = d_sicles
+			holder_scope = {
+				combat_rating_diff = {
+					character = FROM
+					value = 2
+				}
+			}
+		}
+	}
+}
+
 #Society triggers
 has_unseelie_prerequisites = {
 	has_common_devilworship_prerequisites = yes

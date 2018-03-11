@@ -221,9 +221,6 @@ targeted_decisions = {
 					duration = -1
 					inherit = yes
 				}
-				ROOT = {
-
-				}
 				set_character_flag = expelled_@ROOT
 			}
 			hidden_tooltip = {
@@ -257,10 +254,10 @@ targeted_decisions = {
 			}
 			NOT = { num_of_count_titles = 3 }
 			independent = yes
-			
+
 			primary_title = {
 				holy_order = yes
-				this_holy_order_can_be_vassalized_by_from = yes
+				this_holy_order_can_be_vassalized_by_from_trigger = yes
 			}
 		}
 

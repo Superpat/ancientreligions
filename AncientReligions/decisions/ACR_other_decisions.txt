@@ -187,6 +187,9 @@ targeted_decisions = {
 						NOT = { character = FROM }
 					}
 				}
+				FROM = {
+					NOT = { has_character_flag = expelled_@PREV }
+				}
 			}
 		}
 

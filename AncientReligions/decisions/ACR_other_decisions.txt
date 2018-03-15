@@ -173,6 +173,79 @@ targeted_decisions = {
 		}
 	}
 
+	donate_money_to_holy_order = {
+		only_playable = yes
+
+		from_potential = {
+			has_dlc = "Sons of Abraham"
+			heretic = no
+			any_mercenary_title = {
+				holy_order = yes
+				religion = FROM
+				holder_scope = {
+					liege = {
+						NOT = { character = FROM }
+					}
+				}
+			}
+		}
+
+		potential = {
+			religion = FROM
+
+			liege = {
+				NOT = { character = FROM }
+			}
+
+			primary_title = {
+				holy_order = yes
+			}
+		}
+		
+		allow = {
+			wealth = 300
+		}
+		
+		effect = {
+			FROM = {
+				if = {
+					limit = { 
+						NOT = { has_character_modifier = donated_to_holy_order }
+					}
+					add_character_modifier = {
+						name = donated_to_holy_order
+						duration = -1
+					}
+				}
+				wealth = -300
+				piety = 300
+			}
+			
+			hidden_tooltip = {
+				character_event = {
+					id = ancrel.9111
+				}
+			}
+		}
+		
+		
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					piety = 1000
+					NOT = { wealth = 1000 }
+					NOT = { controls_religion = ROOT }
+				}
+			}
+			modifier = {
+				factor = 0.002 # Slow it down
+			}
+		}
+	}
+
 	expel_holy_order = {
 		ai = no
 		from_potential = {

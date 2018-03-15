@@ -689,10 +689,12 @@ character_event = {
 			is_title_active = THIS
 			holy_order = yes
 			religion = ROOT
-			NOR = {
-				has_character_flag = expelled_@THIS
-				any_liege = {
-					has_character_flag = expelled_@THIS
+			ROOT = {
+				NOR = {
+					has_character_flag = expelled_@PREV
+					any_liege = {
+						has_character_flag = expelled_@PREVPREV
+					}
 				}
 			}
 		}
@@ -1250,7 +1252,7 @@ letter_event = {
 		name = ancrel.9016.b # Pay them back
 		wealth = -300
 		hidden_tooltip = {
-			remove_character_modifier = borrowed_from_@event_target:holy_order
+			clr_character_flag = borrowed_from_@event_target:holy_order
 		}
 		event_target:holy_order = {
 			wealth = 300

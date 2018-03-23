@@ -205,7 +205,7 @@ religion_openly_in_egyptian_subgroup_trigger = {
 
 religion_secretly_in_celtic_subgroup_trigger = {
 	custom_tooltip = {
-		text = religion_secretly_celtic_or_reformed_tooltip
+		text = secret_religion_celtic_or_reformed_tooltip
 		hidden_trigger = {
 			OR = {
 				secret_religion = celtic_pagan
@@ -217,7 +217,7 @@ religion_secretly_in_celtic_subgroup_trigger = {
 
 religion_secretly_in_hellenic_subgroup_trigger = {
 	custom_tooltip = {
-		text = religion_secretly_in_hellenic_subgroup_tooltip
+		text = secret_religion_in_hellenic_subgroup_tooltip
 		hidden_trigger = {
 			OR = {
 				secret_religion = hellenic_pagan
@@ -230,7 +230,7 @@ religion_secretly_in_hellenic_subgroup_trigger = {
 
 religion_secretly_in_egyptian_subgroup_trigger = {
 	custom_tooltip = {
-		text = religion_secretly_in_egyptian_subgroup_tooltip
+		text = secret_religion_in_egyptian_subgroup_tooltip
 		hidden_trigger = {
 			OR = {
 				secret_religion = egyptian_pagan
@@ -498,7 +498,7 @@ this_holy_order_can_be_vassalized_by_from_trigger = {
 			}
 		}
 		AND = { # sicles
-			title = d_sicles
+			title = d_sickles
 			holder_scope = {
 				combat_rating_diff = {
 					character = FROM

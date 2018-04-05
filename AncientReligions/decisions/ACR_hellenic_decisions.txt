@@ -510,9 +510,7 @@ decisions = {
 		allow = {
 			war = no
 			any_demesne_title = {
-				limit = {
-					tier = baron
-				}
+				tier = baron
 				is_occupied = no
 			}
 			month = 5

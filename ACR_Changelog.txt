@@ -6,6 +6,8 @@ General:
  - Crusades and Jihads can now be called in a Paganified world if the player is a member of the religion.
  - Most Holy Orders are no longer vassalized on creation.
  - Most Holy Orders now have the standard events from vanilla (making donations/loans, building castles, etc.)
+  - Note: I've written a somewhat experimental new mechanism to implement these features, so they won't be exactly as vanilla. 
+  - The decisions are now targeted, so right-click the grandmaster of the order to use them.
  - Added more possible immortal mystics, some of which will have ancient religions and/or cultures.
   - Nestor the Wise, Greek Hellenic Pagan, master of diplomacy
   - <random> the Spartan, Greek Hellenic Pagan, master of war.

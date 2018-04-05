@@ -508,108 +508,6 @@ character_event = {
 	}
 }
 
-# debug to grant all provinces in your dejure kingdom to you, including the king title
-character_event = {
-    id = ancrel.9020
-    desc = ancrel.9020.desc
-    
-    is_triggered_only = yes
-
-	trigger = {
-		has_global_flag = ancrel_debug
-	}
-
-	immediate = {
-		capital_scope = {
-			kingdom = {
-				save_event_target_as = ancrel_title_grant
-				ROOT = { 
-					grant_title_no_opinion = PREV
-				}
-    		}
-    	}
-    }
-
-    option = {
-    	name = OK
-	}
-
-	after = {
-    	any_independent_ruler = {
-    		limit = {
-    			de_jure_liege_or_above = event_target:ancrel_title_grant
-    		}
-    		any_realm_province = {
-    			county = {
-    				ROOT = { 
-						usurp_title = PREV
-					}
-    			}
-    		}
-    	}
-	}
-}
-
-# debug to grant you the de jure empire of your capital and vassalize de jure vassals
-character_event = {
-    id = ancrel.9021
-    desc = ancrel.9021.desc
-
-    is_triggered_only = yes
-
-	trigger = {
-		has_global_flag = ancrel_debug
-	}
-
-	immediate = {
-		capital_scope = {
-			empire = {
-				save_event_target_as = ancrel_title_grant
-				ROOT = { 
-					grant_title_no_opinion = PREV
-				}
-    		}
-    	}
-    }
-
-    option = {
-    	name = OK
-	}
-
-	after = {
-    	any_independent_ruler = {
-    		limit = {
-    			de_jure_liege_or_above = event_target:ancrel_title_grant
-    		}
-    		set_defacto_liege = ROOT
-    	}
-	}
-}
-
-# debug to convert all characters and provinces in your realm to your religion and culture
-character_event = {
-	id = ancrel.9022
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_global_flag = ancrel_debug
-	}
-
-	immediate = {
-		any_realm_character = {
-			religion = ROOT
-			culture = ROOT
-		}
-
-		any_realm_province = {
-			religion = ROOT
-			culture = ROOT
-		}
-	}
-}
-
 # migration event, fired [on_start], smooths over issues with save files between versions
 character_event = {
 	id = ancrel.9023
@@ -688,7 +586,7 @@ character_event = {
 		any_mercenary_band = {
 			is_title_active = THIS
 			holy_order = yes
-			religion = ROOT
+			holder_scope = { religion = ROOT }
 			ROOT = {
 				NOR = {
 					has_character_flag = expelled_@PREV
@@ -713,21 +611,23 @@ character_event = {
 	}
 	
 	immediate = {
-		random_mercenary_band = {
+		random_character = {
 			limit = {
-				holy_order = yes
-				religion = ROOT
-				ROOT = {
-					NOR = {
-						has_character_flag = expelled_@PREV
-						any_liege = {
-							has_character_flag = expelled_@PREVPREV
+				primary_title = {
+					holy_order = yes
+					holder_scope = { religion = ROOT }
+					ROOT = {
+						NOR = {
+							has_character_flag = expelled_@PREV
+							any_liege = {
+								has_character_flag = expelled_@PREVPREV
+							}
 						}
 					}
 				}
 			}
 
-			save_event_target_as = holy_order
+			primary_title = { save_event_target_as = holy_order }
 		}
 	}
 
@@ -900,21 +800,23 @@ character_event = {
 	}
 	
 	immediate = {
-		random_mercenary_title = {
+		random_character = {
 			limit = {
-				is_castle_building_holy_order_trigger = yes
-				religion = ROOT
-				NOT = {
-					ROOT = {
-						has_character_flag = expelled_@PREV
+				primary_title = {
+					is_castle_building_holy_order_trigger = yes
+					holder_scope = { religion = ROOT }
+					NOT = {
+						ROOT = {
+							has_character_flag = expelled_@PREV
+						}
 					}
 				}
 			}
 
-			save_event_target_as = holy_order
+			primary_title = { save_event_target_as = holy_order }
 		}
 
-		random_demense_province = {
+		random_demesne_province = {
 			limit = {
 				is_in_root_religion_regions_of_interest_trigger = yes
 			}
@@ -1095,6 +997,7 @@ letter_event = {
 	
 	option = {
 		name = EXCELLENT
+		
 	}
 }
 
@@ -1109,7 +1012,7 @@ character_event = {
 	trigger = {
 		any_mercenary_band = {
 			is_banking_holy_order_trigger = yes
-			religion = ROOT
+			holder_scope = { religion = ROOT }
 			ROOT = {
 				has_character_flag = borrowed_from_@PREV
 				is_heretic = no
@@ -1174,14 +1077,14 @@ character_event = {
 				}
 			}
 			character_event = {
-				id = ancrel.9014
+				id = ancrel.9114
 			}
 		}
 	}
 }
 
 character_event = {
-	id = ancrel.9014
+	id = ancrel.9114
 	hide_window = yes
 	
 	is_triggered_only = yes
@@ -1190,7 +1093,7 @@ character_event = {
 		event_target:holy_order = {
 			holder_scope = {
 				character_event = {
-					id = ancrel.9015
+					id = ancrel.9115
 				}
 			}
 		}
@@ -1198,7 +1101,7 @@ character_event = {
 }
 
 character_event = {
-	id = ancrel.9015
+	id = ancrel.9115
 	
 	hide_window = yes
 	
@@ -1207,21 +1110,21 @@ character_event = {
 	immediate = {
 		FROMFROM = {
 			letter_event = {
-				id = ancrel.9016
+				id = ancrel.9116
 			}
 		}
 	}
 }
 
 letter_event = {
-	id = ancrel.9016
-	desc = ancrel.9016.desc
+	id = ancrel.9116
+	desc = ancrel.9116.desc
 	border = GFX_event_letter_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = ancrel.9016.a # Agree
+		name = ancrel.9116.a # Agree
 		ai_chance = {
 			factor = 100
 		}
@@ -1249,7 +1152,7 @@ letter_event = {
 	}
 	
 	option = {
-		name = ancrel.9016.b # Pay them back
+		name = ancrel.9116.b # Pay them back
 		wealth = -300
 		hidden_tooltip = {
 			clr_character_flag = borrowed_from_@event_target:holy_order
@@ -1267,7 +1170,7 @@ letter_event = {
 
 # Ping event when borrowing money from the holy order
 character_event = {
-	id = ancrel.9017
+	id = ancrel.9117
 	
 	hide_window = yes
 	
@@ -1277,7 +1180,7 @@ character_event = {
 		wealth = -300
 		FROM = {
 			letter_event = {
-				id = ancrel.9018
+				id = ancrel.9118
 			}
 		}
 	}
@@ -1285,8 +1188,8 @@ character_event = {
 
 # Notification event when borrowing money from the holy order
 letter_event = {
-	id = ancrel.9018
-	desc = ancrel.9018.desc
+	id = ancrel.9118
+	desc = ancrel.9118.desc
 	border = GFX_event_letter_frame_religion
 	
 	is_triggered_only = yes
@@ -1298,17 +1201,17 @@ letter_event = {
 
 # Ping event when vassalizing the holy order
 character_event = {
-	id = ancrel.9019
+	id = ancrel.9119
 	
 	hide_window = yes
 	
 	is_triggered_only = yes
 	
 	immediate = {
-		set_defacto_liege = FROM
-		FROM = {
+		set_defacto_liege = event_target:new_liege
+		event_target:new_liege = {
 			letter_event = {
-				id = ancrel.9020
+				id = ancrel.9120
 			}
 		}
 	}
@@ -1316,8 +1219,8 @@ character_event = {
 
 # Notification event when vassalizing the holy order
 letter_event = {
-	id = ancrel.9020
-	desc = ancrel.9020.desc
+	id = ancrel.9120
+	desc = ancrel.9120.desc
 	border = GFX_event_letter_frame_religion
 	
 	is_triggered_only = yes
@@ -1329,7 +1232,7 @@ letter_event = {
 
 # The Grand Master demands the right to build a castle in your demesne
 character_event = {
-	id = ancrel.9021
+	id = ancrel.9121
 	
 	hide_window = yes
 	
@@ -1339,24 +1242,24 @@ character_event = {
 	trigger = {
 		any_mercenary_band = {
 			is_banking_holy_order_trigger = yes
-			religion = ROOT
 			holder_scope = {
+				religion = ROOT
 				wealth = 300
 			}
 			ROOT = {
 				is_heretic = no
 				has_character_flag = borrowed_from_@PREV
 				NOT = { has_character_flag = sent_son_to_@PREV }
-				NOT = { has_character_modifier = expelled_@PREV }
+				NOT = { has_character_flag = expelled_@PREV }
 				NOT = {
 					any_liege = {
-						has_character_modifier = expelled_@PREV
+						has_character_flag = expelled_@PREV
 					}
 				}
 			}
 		}
 		
-		any_demese_province = { has_empty_holding = yes }
+		any_demesne_province = { has_empty_holding = yes }
 		has_dlc = "Sons of Abraham"
 	}
 	
@@ -1365,26 +1268,28 @@ character_event = {
 	}
 	
 	immediate = {
-		random_mercenary_band = {
+		random_character = {
 			limit = {
-				is_banking_holy_order_trigger = yes
-				religion = ROOT
-				holder_scope = {
-					wealth = 300
-				}
-				ROOT = {
-					has_character_flag = borrowed_from_@PREV
-					NOT = { has_character_flag = sent_son_to_@PREV }
-					NOT = { has_character_modifier = expelled_@PREV }
-					NOT = {
-						any_liege = {
-							has_character_modifier = expelled_@PREV
+				primary_title = {
+					is_banking_holy_order_trigger = yes 
+					ROOT = {
+						has_character_flag = borrowed_from_@PREV
+						NOT = { has_character_flag = sent_son_to_@PREV }
+						NOT = { has_character_flag = expelled_@PREV }
+						NOT = {
+							any_liege = {
+								has_character_flag = expelled_@PREV
+							}
 						}
 					}
 				}
+				religion = ROOT
+				wealth = 300
 			}
 
-			save_event_target_as = holy_order
+			primary_title = {
+				save_event_target_as = holy_order			
+			}
 		}
 
 		random_demesne_province = {
@@ -1393,7 +1298,7 @@ character_event = {
 			}
 			save_event_target_as = target_land
 			province_event = {
-				id = ancrel.9022
+				id = ancrel.9122
 			}
 		}
 
@@ -1402,7 +1307,7 @@ character_event = {
 }
 
 province_event = {
-	id = ancrel.9022
+	id = ancrel.9122
 	
 	hide_window = yes
 	
@@ -1412,7 +1317,7 @@ province_event = {
 		event_target:holy_order = {
 			holder_scope = {
 				character_event = {
-					id = ancrel.9023
+					id = ancrel.9123
 				}
 			}
 		}
@@ -1420,7 +1325,7 @@ province_event = {
 }
 
 character_event = {
-	id = ancrel.9023
+	id = ancrel.9123
 	
 	hide_window = yes
 	
@@ -1429,21 +1334,21 @@ character_event = {
 	immediate = {
 		event_target:lender = {
 			letter_event = {
-				id = ancrel.9024
+				id = ancrel.9124
 			}
 		}
 	}
 }
 
 letter_event = {
-	id = ancrel.9024
-	desc = ancrel.9024.desc
+	id = ancrel.9124
+	desc = ancrel.9124.desc
 	border = GFX_event_letter_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = ancrel.9024.a # Agree
+		name = ancrel.9124.a # Agree
 		ai_chance = {
 			factor = 100
 		}
@@ -1452,7 +1357,7 @@ letter_event = {
 			remove_character_flag = borrowed_from_@event_target:holy_order
 			remove_character_flag = expelled_@event_target:holy_order
 			event_target:target_land = {
-				province_event = { id = ancrel.9025 }
+				province_event = { id = ancrel.9125 }
 			}
 		}
 		
@@ -1460,7 +1365,7 @@ letter_event = {
 	}
 	
 	option = {
-		name = ancrel.9024.b # Pay them back
+		name = ancrel.9124.b # Pay them back
 		wealth = -300
 		hidden_tooltip = {
 			remove_character_flag = borrowed_from_@event_target:holy_order
@@ -1471,15 +1376,15 @@ letter_event = {
 	}
 	
 	option = {
-		name = ancrel.9024.c # Refuse
+		name = ancrel.9124.c # Refuse
 		piety = -1000
 	}
 }
 
 # Castle has been erected
 province_event = {
-	id = ancrel.9025
-	desc = ancrel.9025.desc
+	id = ancrel.9125
+	desc = ancrel.9125.desc
 	picture = GFX_evt_castle_construction
 	border = GFX_event_normal_frame_religion
 	
@@ -1492,7 +1397,7 @@ province_event = {
 	}
 	
 	option = {
-		name = ancrel.9025.a
+		name = ancrel.9125.a
 		build_holding = {
 		   type = castle
 		   holder = FROMFROM

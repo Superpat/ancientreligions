@@ -129,12 +129,12 @@ targeted_decisions = {
 		only_playable = yes
 		
 		from_potential = {
-			can_borrow_from_a_holy_order = yes
+			can_borrow_from_a_holy_order_trigger = yes
 		}
 
 		potential = {
 			religion = FROM
-			title = {
+			primary_title = {
 				is_banking_holy_order_trigger = yes
 			}
 		}
@@ -178,11 +178,11 @@ targeted_decisions = {
 
 		from_potential = {
 			has_dlc = "Sons of Abraham"
-			heretic = no
-			any_mercenary_title = {
+			is_heretic = no
+			any_mercenary_band = {
 				holy_order = yes
-				religion = FROM
 				holder_scope = {
+					religion = FROM
 					liege = {
 						NOT = { character = FROM }
 					}
@@ -240,7 +240,7 @@ targeted_decisions = {
 				OR = {
 					piety = 1000
 					NOT = { wealth = 1000 }
-					NOT = { controls_religion = ROOT }
+					NOT = { controls_religion = yes }
 				}
 			}
 			modifier = {
@@ -263,8 +263,8 @@ targeted_decisions = {
 				any_province_lord = {
 					ROOT = {
 						OR = {
-							character = PREVPREV
-							is_vassal_or_below = PREVPREV
+							character = PREV
+							is_vassal_or_below = PREV
 						}
 					}
 				}
@@ -342,12 +342,15 @@ targeted_decisions = {
 		}
 		
 		effect = {
-			FROM = { wealth = -500 }
+			FROM = {
+				wealth = -500
+				save_event_target_as = new_liege
+			}
 			
 			hidden_tooltip = {
 				wealth = 500
 				character_event = {
-					id = ancrel.9019
+					id = ancrel.9119
 				}
 			}
 		}

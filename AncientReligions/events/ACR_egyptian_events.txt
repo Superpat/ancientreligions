@@ -56,19 +56,19 @@ province_event = {
 		name = EVTOPTA_ancrel_4001 # Library
 		795 = {
 			add_province_modifier = { name = luxor_library duration = -1 }
-			}
+		}
 	}
 	option = {
 		name = EVTOPTB_ancrel_4001 # Promote Fanaticism
 		795 = {
 			add_province_modifier = { name = luxor_fanaticism duration = -1 }
-			}
+		}
 	}
 	option = {
 		name = EVTOPTC_ancrel_4001 # Promote Tax Collection
 		795 = {
 			add_province_modifier = { name = luxor_admin duration = -1 }
-			}
+		}
 	}
 }
 
@@ -1810,7 +1810,7 @@ province_event = {
 	
 	trigger = {
 		NOT = { has_province_modifier = VIET_province_desecrated_egyptian_tombs }
-		true_religion_in_egyptian_subgroup_trigger = yes
+		owner = { true_religion_in_egyptian_subgroup_trigger = yes }
 
 		county = { is_on_nile_trigger = yes }
 	}

@@ -34,6 +34,8 @@ ancrel.bummer;That's dissapointing...;;;;;;;;;;;;;x
 ancrel.fantastic;That's fantastic!;;;;;;;;;;;;;x
 province_loses_prosperity_custom_tooltip;[Root.GetName] loses some of it's prosperity!;;;;;;;;;;;;;x
 province_prospers_custom_tooltip;[Root.GetName] becomes more prosperous!;;;;;;;;;;;;;x
+String_July;July;;;;;;;;;;;;;;x
+String_friendly_to_outsiders;how friendly the emperor is to outsiders.;;;;;;;;;;;;;;x
 ###### Misc opinion modifiers;;;;;;;;;;;;;x
 ancrel_honored_me;Honored Me;;;;;;;;;;;;;x
 ancrel_dissapointed;Dissapointed;;;;;;;;;;;;;x

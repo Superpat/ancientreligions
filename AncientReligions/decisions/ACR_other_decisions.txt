@@ -146,6 +146,7 @@ targeted_decisions = {
 		effect = {
 			FROM = {
 				wealth = 300
+				save_event_target_as = lender
 				add_character_modifier = {
 					name = borrowed_from_holy_order
 					duration = -1
@@ -155,7 +156,7 @@ targeted_decisions = {
 			
 			hidden_tooltip = {
 				character_event = {
-					id = ancrel.9017
+					id = ancrel.9117
 				}
 			}
 			

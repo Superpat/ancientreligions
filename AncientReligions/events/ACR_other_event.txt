@@ -876,7 +876,7 @@ letter_event = {
 				province_event = { id = ancrel.9108 }
 			}
 			clr_character_flag = expelled_@FROM
-			remove_character_modifer = ancrel_expelled_holy_order
+			remove_character_modifier = ancrel_expelled_holy_order
 		}
 		
 		piety = 200
@@ -1046,17 +1046,19 @@ character_event = {
 	}
 	
 	immediate = {
-		random_mercenary_band = {
+		random_character = {
 			limit = {
-				is_banking_holy_order = yes
-				religion = ROOT
-				ROOT = {
-					has_character_flag = borrowed_from_@PREV
-					NOT = { has_character_flag = sent_child_to_@PREV}
+				primary_title = {
+					is_banking_holy_order = yes
+					religion = ROOT
+					ROOT = {
+						has_character_flag = borrowed_from_@PREV
+						NOT = { has_character_flag = sent_child_to_@PREV}
+					}
 				}
 			}
 
-			save_event_target_as = holy_order
+			primary_title = { save_event_target_as = holy_order }
 		}
 		random_child = {
 			limit = {
@@ -1178,7 +1180,7 @@ character_event = {
 	
 	immediate = {
 		wealth = -300
-		FROM = {
+		event_target:lender = {
 			letter_event = {
 				id = ancrel.9118
 			}
@@ -1354,8 +1356,8 @@ letter_event = {
 		}
 		
 		hidden_tooltip = {
-			remove_character_flag = borrowed_from_@event_target:holy_order
-			remove_character_flag = expelled_@event_target:holy_order
+			clr_character_flag = borrowed_from_@event_target:holy_order
+			clr_character_flag = expelled_@event_target:holy_order
 			event_target:target_land = {
 				province_event = { id = ancrel.9125 }
 			}
@@ -1368,10 +1370,10 @@ letter_event = {
 		name = ancrel.9124.b # Pay them back
 		wealth = -300
 		hidden_tooltip = {
-			remove_character_flag = borrowed_from_@event_target:holy_order
+			clr_character_flag = borrowed_from_@event_target:holy_order
 		}
 		event_target:holy_order = {
-			wealth = 300
+			holder_scope = { wealth = 300 }
 		}
 	}
 	

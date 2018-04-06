@@ -64,12 +64,8 @@ decrease_prosperity_effect = {
 	if = {
 		limit = {
 			NOR = {
-				has_province_modifier = prosperity_modifier_3
-				has_province_modifier = prosperity_modifier_2
-				has_province_modifier = prosperity_modifier_1
-				has_province_modifier = depopulated_1
-				has_province_modifier = depopulated_2
-				has_province_modifier = depopulated_3
+				is_prosperous_trigger = yes
+				is_depopulated_trigger = yes
 			}
 		}
 		add_province_modifier = { name = depopulated_1 duration = -1 }
@@ -259,7 +255,7 @@ create_martial_mystic_effect = {
 				trait = diligent
 				trait = proud
 				trait = brave
-				trait = aggressive_leader
+				trait = light_foot_leader
 			}
 		}
 		25 = {
@@ -278,7 +274,7 @@ create_martial_mystic_effect = {
 				trait = diligent
 				trait = proud
 				trait = brave
-				trait = infantry_leader
+				trait = heavy_infantry_leader
 			}
 		}
 	}

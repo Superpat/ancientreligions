@@ -342,7 +342,7 @@ is_in_celtic_regions_of_interest_trigger = {
 			title = e_hre
 			title = e_spain
 			title = e_britannia
-			title = e_italia
+			title = e_italy
 		}
 	}
 }
@@ -360,11 +360,15 @@ is_in_hellenic_regions_of_interest_trigger = {
 	OR = {
 		region = world_middle_east_jerusalem
 		region = world_africa_north
-		empire = e_byzantium
-		empire = e_italy
-		empire = e_francia
-		empire = e_spain
-		duchy = d_sinai
+		duchy = {
+			title = d_sinai
+		}
+		empire = { 
+			title = e_byzantium
+			title = e_italy
+			title = e_france
+			title = e_spain
+		}
 	}
 }
 
@@ -396,7 +400,7 @@ is_in_root_religion_regions_of_interest_trigger = {
 		}
 		AND = {
 			ROOT = { religion_openly_in_hellenic_subgroup_trigger = yes }
-			is_in_hellenic_regions_of_interest_trigger_trigger = yes
+			is_in_hellenic_regions_of_interest_trigger = yes
 		}
 		AND = {
 			ROOT = { religion_openly_in_egyptian_subgroup_trigger = yes }
@@ -419,6 +423,7 @@ is_castle_building_holy_order_trigger = {
 		title = d_sacred_band
 		title = d_sickles
 		title = d_burning_blades
+		title = d_men_of_steel
 	}
 		
 	holder_scope = {
@@ -446,6 +451,7 @@ is_banking_holy_order_trigger = {
 		title = d_sacred_band
 		title = d_sickles
 		title = d_burning_blades
+		title = d_men_of_steel
 	}
 }
 
@@ -503,6 +509,16 @@ this_holy_order_can_be_vassalized_by_from_trigger = {
 				combat_rating_diff = {
 					character = FROM
 					value = 2
+				}
+			}
+		}
+		AND = {
+			title = d_men_of_steel
+			d_promethean_pagan = { # only the top liege of the Scholarch
+				holder_scope = {
+					top_liege = {
+						character = FROM
+					}
 				}
 			}
 		}

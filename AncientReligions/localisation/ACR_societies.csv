@@ -179,6 +179,8 @@ mysteries_dionysus_rank_3_male;Boukolos;;;;;;;;;;;;;x
 mysteries_dionysus_rank_3_female;Boukolos;;;;;;;;;;;;;x
 mysteries_dionysus_rank_4_male;Archiboukolos;;;;;;;;;;;;;x
 mysteries_dionysus_rank_4_female;Archiboukolos;;;;;;;;;;;;;x
+############### Tristeria ;;;;;;;;;;;;;x
+not_already_holding_tristeria;Is not already holding Tristeria;;;;;;;;;;;;;x
 ############### Strings ;;;;;;;;;;;;;x
 String_ker;Ker;;;;;;;;;;;;;x
 String_keres;Keres;;;;;;;;;;;;;x

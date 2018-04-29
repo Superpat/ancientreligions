@@ -156,3 +156,7 @@ EVTOPTBancrel.2240;Am I next?;;;;;;;;;;;;;x
 EVTDESCancrel.2241;While watching the latest play from a local philosopher, you notice that some of the actors are completely drunk. This is an insult to your honor and to the art of the Theatre, though the man in charge assures you they will be taken care of, it is your duty to take charge.;;;;;;;;;;;;;x
 EVTOPTAancrel.2241;Kick them out!;;;;;;;;;;;;;x
 EVTOPTBancrel.2241;Actually, this strengthens the play;;;;;;;;;;;;;x
+# Wines, Oils, & Dionysus;;;;;;;;;;;;;;x
+ancrel_winery;Owns a Winery;;;;;;;;;;;;;x
+ancrel_oilworks:Owns Oilworks;;;;;;;;;;;;;x
+ancrel_held_dionysia;Held Dionysia;;;;;;;;;;;;;x

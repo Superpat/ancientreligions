@@ -79,6 +79,7 @@ decisions = {
 	build_oilworks = {
 		is_high_prio = yes
 		potential = {
+			has_global_flag = ancrel_debug
 			OR = {
 				has_focus = focus_seduction
 				trait = hedonist
@@ -144,14 +145,13 @@ targeted_decisions = {
 		}
 
 		effect = {
+			primary_title = { save_event_target_as = holy_order }
+			
 			FROM = {
 				wealth = 300
 				save_event_target_as = lender
-				add_character_modifier = {
-					name = borrowed_from_holy_order
-					duration = -1
-					inherit = yes
-				}
+				set_character_flag = borrowed_from_@holy_order
+				set_character_modifier_for_holy_order_flags_effect = yes
 			}
 			
 			hidden_tooltip = {
@@ -293,12 +293,8 @@ targeted_decisions = {
 					modifier = holy_order_expelled
 					years = 20
 				}
-				add_character_modifier = {
-					name = expelled_holy_order
-					duration = -1
-					inherit = yes
-				}
 				set_character_flag = expelled_@ROOT
+				set_character_modifier_for_holy_order_flags_effect = yes
 			}
 			hidden_tooltip = {
 				character_event = {

@@ -1,0 +1,49 @@
+#;;;;;;;;;;;;;;x
+temple_barony_gaulish;Nemeton;Nemeton;;;;;;;;;;;;x
+temple_barony_of_gaulish;Nemeton es;Nemeton de;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;x
+baron_gaulish;Esu;Ésus;;;;;;;;;;;;x
+baron_female_gaulish;Esu;Ésus;;;;;;;;;;;;x
+barony_of_gaulish;Briga es;Briga de;;;;;;;;;;;;x
+count_gaulish;Verbriga;Verbriga;;;;;;;;;;;;x
+count_female_gaulish;Verbriga;Verbriga;;;;;;;;;;;;x
+county_of_gaulish;Dunon es;Dunon de;;;;;;;;;;;;x
+duke_gaulish;Ardesus;Ardesus;;;;;;;;;;;;x
+duke_female_gaulish;Ardesus;Ardesus;;;;;;;;;;;;x
+duchy_gaulish;Verdunon;Verdunon;;;;;;;;;;;;x
+duchy_of_gaulish;Verdunon es;Verdunon de;;;;;;;;;;;;x
+king_gaulish;Rix;Rix;König;;Rey;;;;;;;;;x
+king_female_gaulish;Riga;Riga;Königin;;Reina;;;;;;;;;x
+kingdom_gaulish;Ardudunon;Ardudunon;;;;;;;;;;;;x
+kingdom_of_gaulish;Ardudunon es;Ardudunon de;;;;;;;;;;;;x
+emperor_gaulish;Vercingetorix;Vercingetorix;;;;;;;;;;;;x
+emperor_female_gaulish;Vercingetoriga;Vercingetoriga;;;;;;;;;;;;x
+empire_gaulish;Dunueramos;Dunueramos;;;;;;;;;;;;x
+empire_of_gaulish;Dunueramos es;Dunueramos de;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;x
+family_palace_baron_gaulish;Cintu;Cintu;;;;;;;;;;;;x
+family_palace_baron_female_gaulish;Cintu;Cintu;;;;;;;;;;;;x
+family_palace_gaulish;Tigern;Tigern;;;;;;;;;;;;x
+family_palace_barony_of_gaulish;Tigern es;Tigern de;;;;;;;;;;;;x
+city_barony_gaulish;Dunon;Dunon;;;;;;;;;;;;x
+city_barony_of_gaulish;Dunon es;Dunon de;;;;;;;;;;;;x
+city_baron_gaulish;Tuetodoro;Tuetodoro;;;;;;;;;;;;x
+city_baron_female_gaulish;Tuetodoro;Tuetodoro;;;;;;;;;;;;x
+city_county_gaulish;Gobret;Gobret;;;;;;;;;;;;x
+city_county_of_gaulish;Gobret es;Gobret de;;;;;;;;;;;;x
+city_count_gaulish;Dorogobret;Dorogobret;;;;;;;;;;;;x
+city_count_female_gaulish;Dorogobret;Dorogobret;;;;;;;;;;;;x
+city_duke_gaulish;Mardoro;Mardoro;;;;;;;;;;;;x
+city_duke_female_gaulish;Mardoro;Mardoro;;;;;;;;;;;;x
+city_duchy_gaulish;Martouto;Martouto;;;;;;;;;;;;x
+city_duchy_of_gaulish;Martouto es;Martouto de;;;;;;;;;;;;x
+city_king_gaulish;Vergobret;Vergobret;;;;;;;;;;;;x
+city_king_female_gaulish;Vergobret;Vergobret;;;;;;;;;;;;x
+city_kingdom_gaulish;Margobret;Margobret;;;;;;;;;;;;x
+city_kingdom_of_gaulish;Margobret es;Margobret de;;;;;;;;;;;;x
+city_emperor_gaulish;Dueramos;Dueramos;;;;;;;;;;;;x
+city_emperor_female_gaulish;Dueramos;Dueramos;;;;;;;;;;;;x
+city_empire_gaulish;Tutueramos;Tutueramos;;;;;;;;;;;;x
+city_empire_of_gaulish;Tutueramos es;Tutueramos de;;;;;;;;;;;;x
+#;;;;;;;;;;;;;;x
+title_high_judge_gaulish;Ardubruta;Ardubruta;;;;;;;;;;;;x

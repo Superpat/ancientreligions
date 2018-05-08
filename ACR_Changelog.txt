@@ -3,6 +3,7 @@
 > Cernunnos is the Horned God, a deity of fertility, life, animals, and the underworld. Worshipped throughout Gaul and Celtiberia, Cernunnos was one of a small number of almost universally worshipped Celtic gods. His most famous appearances are on the Pillar of the Boatman, a carved column found in a Roman temple in Paris; and the Gundestrup Cauldron, a fantastic example of iron age silverwork found in a peat bog near Gundestrup, Denmark.
 
 General:
+ - Compatability with CK2 2.9
  - Crusades and Jihads can now be called in a Paganified world if the player is a member of the religion.
  - Most Holy Orders are no longer vassalized on creation.
  - Most Holy Orders now have the standard events from vanilla (making donations/loans, building castles, etc.)
@@ -10,8 +11,8 @@ General:
   - The decisions are now targeted, so right-click the grandmaster of the order to use them.
  - Added more possible immortal mystics, some of which will have ancient religions and/or cultures.
   - Nestor the Wise, Greek Hellenic Pagan, master of diplomacy
-  - <random> the Spartan, Greek Hellenic Pagan, master of war.
-  - <random> the Fearless, Gaulish Celtic Pagan, master of war.
+  - (random) the Spartan, Greek Hellenic Pagan, master of war.
+  - (random) the Fearless, Gaulish Celtic Pagan, master of war.
   - Cleopatra the Alchemist, Coptic Kemetic Pagan, master spy.
   - Seneca the Younger, Roman Promethean Pagan, master scholar.
   - Lucan the Younger, Roman Hellenic Pagan, master scholar.
@@ -19,9 +20,10 @@ General:
 
 Celtic:
  - Fixes bug where the Unfit King Beta game rule was being ignored.
+ - Gaulish Queens will henceforth be known as Riga, and Empresses as Vercingetoriga.
 
 Hellenic:
- - The Philosopher event chain is now more likely to fire and the max demense size requirement is relaxed to 180.
+ - The Philosopher event chain is now more likely to fire and the max demense size requirement is relaxed to 200.
   - Various conditions will also increase the odds of the event firing, such as being in a defensive war and your religion having a low MA (<50%).
 
 Kemetic:

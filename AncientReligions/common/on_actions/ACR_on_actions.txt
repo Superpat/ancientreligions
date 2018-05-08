@@ -235,5 +235,6 @@ on_create_title = {
 on_new_holder = {
 	events = {
 		ancrel.0256 # Pendragon nick
+		ancrel.9299 # generic holy order maintenance event
 	}
 }

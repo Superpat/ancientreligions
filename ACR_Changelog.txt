@@ -1,3 +1,14 @@
+2018-05-15 v0.41.2 "Aura"
+-------------------------
+> Aura was a minor goddess of the breeze. Sometimes the plural Aurae was used, implying a race of nymphs. According to Nonnus, she was the daughter of the Titan Lelantos and the mother, by Dionysus, of Iacchus, a minor deity connected with the Eleusinian mysteries.
+
+General:
+ - Compatability with CK2 2.8.2
+
+ Kemetic:
+  - Fixes bug that prevented the "Lost in a Sandstorm" event from firing.
+  
+
 2017-12-17 v0.41.1 "Euronotus"
 -------------------------
 > Euronotus was a lesser god representing the South-East winds, his name  indicates this. "Euro (East)" and "Notus (South)".

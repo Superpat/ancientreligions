@@ -897,8 +897,10 @@ character_event = {
 		NOR = {
 			prisoner = yes
 			event_target:satanists_recruiter = {
-				is_alive = no
-				is_devil_worshiper_trigger = no
+				OR = {
+					is_alive = no
+					is_devil_worshiper_trigger = no
+				}
 			}
 		}
 	}
@@ -915,8 +917,10 @@ character_event = {
 		if = {
 			limit = {
 				event_target:satanists_recruiter = {
-					is_alive = no
-					is_devil_worshiper_trigger = no
+					OR = {
+						is_alive = no
+						is_devil_worshiper_trigger = no
+					}
 				}
 			}
 			event_target:satanists_recruiter = { 
@@ -1015,8 +1019,10 @@ character_event = {
 		NOR = {
 			prisoner = yes
 			event_target:satanists_recruiter = {
-				is_alive = no
-				is_devil_worshiper_trigger = no
+				OR = {
+					is_alive = no
+					is_devil_worshiper_trigger = no
+				}
 			}
 		}
 	}
@@ -1033,8 +1039,10 @@ character_event = {
 		if = {
 			limit = {
 				event_target:satanists_recruiter = {
-					is_alive = no
-					is_devil_worshiper_trigger = no
+					OR = {
+						is_alive = no
+						is_devil_worshiper_trigger = no
+					}
 				}
 			}
 			event_target:satanists_recruiter = { 
@@ -1155,8 +1163,10 @@ letter_event = {
 		NOR = {
 			prisoner = yes
 			event_target:satanists_recruiter = {
-				is_alive = no
-				is_devil_worshiper_trigger = no
+				OR = {
+					is_alive = no
+					is_devil_worshiper_trigger = no
+				}
 			}
 		}
 	}
@@ -1173,8 +1183,11 @@ letter_event = {
 		if = {
 			limit = {
 				event_target:satanists_recruiter = {
-					is_alive = no
-					is_devil_worshiper_trigger = no
+					OR = {
+						is_alive = no
+						is_devil_worshiper_trigger = no
+						prisoner = yes
+					}
 				}
 			}
 			event_target:satanists_recruiter = { 
@@ -1665,8 +1678,10 @@ character_event = {
 		NOR = {
 			prisoner = yes
 			event_target:satanists_inductor = {
-				is_alive = no
-				is_devil_worshiper_trigger = no
+				OR = {
+					is_alive = no
+					is_devil_worshiper_trigger = no
+				}
 			}
 		}
 	}
@@ -1683,8 +1698,10 @@ character_event = {
 		if = {
 			limit = {
 				event_target:satanists_inductor = {
-					is_alive = no
-					is_devil_worshiper_trigger = no
+					OR = {
+						is_alive = no
+						is_devil_worshiper_trigger = no
+					}
 				}
 			}
 			event_target:satanists_inductor = { 
@@ -1883,8 +1900,10 @@ character_event = {
 		NOR = {
 			prisoner = yes
 			event_target:satanists_inductor = {
-				is_alive = no
-				is_devil_worshiper_trigger = no
+				OR = {
+					is_alive = no
+					is_devil_worshiper_trigger = no
+				}
 			}
 		}
 	}
@@ -1901,8 +1920,10 @@ character_event = {
 		if = {
 			limit = {
 				event_target:satanists_inductor = {
-					is_alive = no
-					is_devil_worshiper_trigger = no
+					OR = {
+						is_alive = no
+						is_devil_worshiper_trigger = no
+					}
 				}
 			}
 			event_target:satanists_inductor = { 
@@ -6738,10 +6759,17 @@ character_event = { #birth
 	}
 	
 	immediate = {
-		random_list = {
-			50 = { set_character_flag = demon_child }
-			50 = { set_character_flag = demon_child_fake }
+		set_character_flag = demon_child_non_pagan
+		set_global_flag = demon_child_born
+		add_character_modifier = {
+			name = demon_child_non_pagan
+			hidden = yes
+			days = -1
 		}
+		
+		remove_trait = sickly
+		character_event = { id = SoA.3019 days = 90 random = 90 } # Demon child tombola
+
 		mother = { 
 			clr_character_flag = DW_unholy_mother 
 			save_event_target_as = unholy_mother
@@ -7246,7 +7274,7 @@ character_event = {
 		}
 		tooltip_info = martial
 		name = EVTOPT_MNM_7113_MARTIAL
-		add_society_currency_medium_effect = yes
+		add_society_currency_minor_effect = yes
 		event_target:desecration_holder = {
 			if = {
 				death = {
@@ -7266,7 +7294,7 @@ character_event = {
 		}
 		tooltip_info = intrigue
 		name = EVTOPT_MNM_7113_INTRIGUE
-		add_society_currency_medium_effect = yes
+		add_society_currency_minor_effect = yes
 		event_target:desecration_holder = {
 			death = {
 				death_reason = death_sacrificed
@@ -7447,7 +7475,7 @@ character_event = {
 		}
 		name = EVTOPT_MNM_7116_STEWARDSHIP
 		tooltip_info = stewardship
-		add_society_currency_medium_effect = yes
+		add_society_currency_minor_effect = yes
 		if = {
 			limit = {
 				event_target:dw_desecration_target = {
@@ -7491,7 +7519,7 @@ character_event = {
 		}
 		tooltip_info = learning
 		name = EVTOPT_MNM_7116_LEARNING
-		add_society_currency_major_effect = yes
+		add_society_currency_medium_effect = yes
 		character_event = { id = MNM.7117 days = 4 }
 	}
 	option = {
@@ -7537,7 +7565,7 @@ character_event = {
 	option = {
 		name = EVTOPTB_MNM_7116
 
-		add_society_currency_minor_effect = yes
+		add_society_currency_trivial_effect = yes
 
 		character_event = { id = MNM.7117 days = 4 }
 	}
@@ -7571,7 +7599,7 @@ character_event = {
 		name = EVTOPT_MNM_7117_VIOLENT
 		
 		clr_quest = quest_devil_worshipers_desecrate_temple
-		add_society_currency_medium_effect = yes
+		add_society_currency_minor_effect = yes
 		
 		event_target:dw_desecration_target = {
 			add_holding_modifier = {
@@ -10839,8 +10867,7 @@ narrative_event = {
 					duration = -1
 				}
 			}
-			
-			if = {
+			else_if = {
 				limit = { has_character_modifier = suspected_witch }
 				remove_character_modifier = suspected_witch
 				add_character_modifier = {
@@ -12729,10 +12756,10 @@ character_event = {
 
     trigger = {
 	    has_dlc = "Mystics"
-    	is_devil_worshiper_trigger = yes
     	OR = {
    			has_character_modifier = known_satanist
    			has_character_flag = was_ratted_out_by_fellow_member
+			has_character_flag = has_it_coming
     	}
     }
 	
@@ -12749,6 +12776,10 @@ character_event = {
 		modifier = {
 			factor = 2
 			independent = yes
+		}
+		modifier = {
+			factor = 2
+			is_devil_worshiper_trigger = yes
 		}
 	}
 	
@@ -12915,6 +12946,7 @@ character_event = {
     }
     after = {
 		character_event = { id = MNM.7855 }
+		clr_character_flag = has_it_coming
     }
 }
 
@@ -12930,7 +12962,6 @@ character_event = {
 
     trigger = {
     	has_dlc = "Mystics"
-    	is_devil_worshiper_trigger = yes
     	OR = {
    			has_character_modifier = known_satanist
    			has_character_flag = was_ratted_out_by_fellow_member

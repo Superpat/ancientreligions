@@ -106,6 +106,7 @@ pagan_group = {
 		intermarry = norse_pagan
 		intermarry = tengri_pagan
 		intermarry = aten_pagan
+		can_demand_religious_conversion = no
 	}
 
 	promethean_pagan = {
@@ -305,6 +306,7 @@ pagan_group = {
 		religious_clothing_priest = 3
 
 		intermarry = celtic_pagan_reformed
+		can_demand_religious_conversion = no
 	}
 	
 	egyptian_pagan = { # Kemetic

@@ -3,10 +3,10 @@
 > Cernunnos is the Horned God, a deity of fertility, life, animals, and the underworld. Worshipped throughout Gaul and Celtiberia, Cernunnos was one of a small number of almost universally worshipped Celtic gods. His most famous appearances are on the Pillar of the Boatman, a carved column found in a Roman temple in Paris; and the Gundestrup Cauldron, a fantastic example of iron age silverwork found in a peat bog near Gundestrup, Denmark.
 
 General:
- - Compatability with CK2 2.9
  - Crusades and Jihads can now be called in a Paganified world if the player is a member of the religion.
+  - For example, the Pope can call Crusades if their is a Catholic player.
  - Most Holy Orders are no longer vassalized on creation.
- - Most Holy Orders now have the standard events from vanilla (making donations/loans, building castles, etc.)
+ - Most Holy Orders now have the standard mechanics from vanilla (making donations/loans, building castles, etc.)
   - Note: I've written a somewhat experimental new mechanism to implement these features, so they won't be exactly as vanilla. 
   - The decisions are now targeted, so right-click the grandmaster of the order to use them.
  - Added more possible immortal mystics, some of which will have ancient religions and/or cultures.
@@ -26,13 +26,29 @@ Hellenic:
  - The Philosopher event chain is now more likely to fire and the max demense size requirement is relaxed to 200.
   - Various conditions will also increase the odds of the event firing, such as being in a defensive war and your religion having a low MA (<50%).
 
-Kemetic:
- - Fixes a bug that prevented the "Lost in a Sandstorm" event chain from firing.
+
+2018-05-16 v0.41.2 "Aura"
+-------------------------
+> Aura was a minor goddess of the breeze. Sometimes the plural Aurae was used, implying a race of nymphs. According to Nonnus, she was the daughter of the Titan Lelantos and the mother, by Dionysus, of Iacchus, a minor deity connected with the Eleusinian mysteries.
+
+General:
+ - Compatability with CK2 2.8.2
+
+ Celtic:
+  - Organizing the Fianna is more accessible than previously, specifically to British Emperors.
+
+ Kemetic:
+  - Fixes bug that prevented the "Lost in a Sandstorm" event from firing.
+   - Also fixed the death sound for this event.
 
 
 2017-12-17 v0.41.1 "Euronotus"
 -------------------------
+<<<<<<< HEAD
 > Euronotus was a lesser god representing the South-East winds, his name indicates this. "Euro (East)" and "Notus (South)".
+=======
+> Euronotus was a lesser god representing the South-East winds, his name  indicates this. "Euro (East)" and "Notus (South)".
+>>>>>>> master
 
 General:
  - Compatibility with CK2 2.8.1

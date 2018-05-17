@@ -137,7 +137,6 @@ decisions = {
 				}
 			}
 		}
-		
 		ai_will_do = {
 			factor = 1
 			
@@ -373,7 +372,13 @@ decisions = {
 			NOT = { has_global_flag = fianna_founded }
 		}
 		allow = {
-			has_landed_title = k_ireland
+			OR = {
+				has_landed_title = k_ireland
+				any_vassal = {
+					has_landed_title = k_ireland
+				}
+				completely_controls = k_ireland
+			}
 			prestige = 300
 			wealth = 300
 		}
@@ -415,6 +420,7 @@ decisions = {
 			factor = 1
 		}
 	}
+
 
 	vassalize_fianna = {
 		is_high_prio = yes
@@ -477,7 +483,6 @@ decisions = {
 		}
 		
 		
-		
 		ai_will_do = {
 			factor = 1
 		}
@@ -532,6 +537,7 @@ decisions = {
 			piety = 300
 		}
 		
+<<<<<<< HEAD
 		
 		
 		ai_will_do = {
@@ -659,6 +665,9 @@ decisions = {
 		}
 		
 		
+=======
+
+>>>>>>> master
 		
 		ai_will_do = {
 			factor = 1
@@ -1025,7 +1034,6 @@ decisions = {
 				}
 			}
 		}
-		
 		ai_will_do = {
 			factor = 1
 			
@@ -1080,7 +1088,6 @@ decisions = {
 				abdicate = yes
 			}
 		}
-		
 		ai_will_do = {
 			factor = 1
 			
@@ -1112,4 +1119,136 @@ decisions = {
 			}
 		}
 	}
+<<<<<<< HEAD
+=======
+	
+	expel_red_dragons = {
+		only_playable = yes
+		potential = {
+			ai = no
+			religion = celtic_pagan_reformed
+			higher_tier_than = DUKE
+			independent = yes
+			is_title_active = d_red_dragons
+			NOT = { has_character_modifier = expelled_d_red_dragons }
+			
+			any_realm_province = {
+				any_province_lord = {
+					d_red_dragons = {
+						holder_scope = {
+							OR = {
+								character = PREVPREV
+								is_vassal_or_below = PREVPREV
+							}
+						}
+					}
+				}
+			}
+			
+			has_dlc = "Sons of Abraham"
+		}
+		
+		allow = {
+			piety = 1000
+		}
+		
+		effect = {
+			piety = -1000
+			
+			religion_authority = {
+				modifier = holy_order_expelled
+				years = 20
+			}
+			
+			hidden_tooltip = {
+				d_red_dragons = {
+					holder_scope = {
+						character_event = {
+							id = ancrel.1329
+						}
+					}
+				}
+				add_character_modifier = {
+					name = expelled_d_red_dragons
+					duration = -1
+					inherit = yes
+				}
+			}
+		}
+		
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	donate_money_to_red_dragons = {
+		only_playable = yes
+		potential = {
+			religion = celtic_pagan_reformed
+			
+			is_title_active = d_red_dragons
+			
+			NOT = { has_character_modifier = expelled_d_red_dragons }
+			
+			has_dlc = "Sons of Abraham"
+			
+			d_red_dragons = {
+				holder_scope = {
+					liege = {
+						NOT = { character = ROOT }
+					}
+				}
+			}
+		}
+		
+		allow = {
+			wealth = 300
+		}
+		
+		effect = {
+			if = {
+				limit = { 
+					NOT = { has_character_modifier = donated_to_holy_order }
+				}
+				add_character_modifier = {
+					name = donated_to_holy_order
+					duration = -1
+				}
+			}
+			
+			hidden_tooltip = {
+				d_red_dragons = {
+					holder_scope = {
+						character_event = {
+							id = ancrel.1331
+						}
+					}
+				}
+			}
+			
+			wealth = -300
+			piety = 300
+		}
+		
+
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					piety = 1000
+					NOT = { wealth = 1000 }
+					NOT = { controls_religion = celtic_pagan_reformed }
+				}
+			}
+			modifier = {
+				factor = 0.002 # Slow it down
+				always = yes
+			}
+		}
+	}
+>>>>>>> master
 }

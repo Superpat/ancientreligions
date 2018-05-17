@@ -584,8 +584,21 @@ succession_laws = {
 				}
 				OR = {
 					culture = mongol
-					
-					is_reformed_religion = no
+					religion = bon
+					NOR = {
+						religion = norse_pagan
+						religion = tengri_pagan
+						religion = baltic_pagan
+						religion = finnish_pagan
+						religion = aztec
+						religion = pagan
+						religion = slavic_pagan
+						religion = west_african_pagan
+						
+						### ACR ###
+						religion = celtic_pagan
+						religion = titan_pagan
+					}
 				}
 				
 				NOT = { religion_group = muslim }

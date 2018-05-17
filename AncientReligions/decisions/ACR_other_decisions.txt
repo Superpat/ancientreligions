@@ -52,7 +52,7 @@ decisions = {
 				add_society_currency_minor_effect = yes
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 			modifier = {

@@ -6,7 +6,6 @@ is_feminist_religion_trigger = {
 		religion = promethean_pagan
 		religion = messalian
 		religion = cathar
-		primary_title = { has_law = status_of_women_4 }
 	}
 }
 

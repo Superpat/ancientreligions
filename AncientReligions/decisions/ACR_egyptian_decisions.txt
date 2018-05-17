@@ -44,7 +44,6 @@ decisions = {
 				character_event = { id = ancrel.4010 days = 15 }
 			}
 		}
-		
 		ai_will_do = {
 			factor = 1
 		}
@@ -80,7 +79,6 @@ decisions = {
 				province_event = { id = ancrel.4000 }
 			}
 		}
-		
 		ai_will_do = {
 			factor = 1
 			
@@ -124,7 +122,6 @@ decisions = {
 			set_character_flag = pyramid_building_char
 			character_event = { id = ancrel.4004 }
 		}
-		
 		ai_will_do = {
 			factor = 1
 			
@@ -407,7 +404,6 @@ decisions = {
 				province_event = { id = ancrel.5000 }
 			}
 		}
-		
 		ai_will_do = {
 			factor = 1
 			

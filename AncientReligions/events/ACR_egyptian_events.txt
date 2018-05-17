@@ -1811,7 +1811,6 @@ province_event = {
 	trigger = {
 		NOT = { has_province_modifier = VIET_province_desecrated_egyptian_tombs }
 		owner = { true_religion_in_egyptian_subgroup_trigger = yes }
-
 		county = { is_on_nile_trigger = yes }
 	}
 	

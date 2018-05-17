@@ -115,9 +115,7 @@ targeted_decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -250,9 +248,7 @@ targeted_decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -385,9 +381,7 @@ targeted_decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -464,9 +458,7 @@ title_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+
 		
 		ai_will_do = {
 			factor = 0
@@ -530,9 +522,7 @@ title_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+
 		
 		ai_will_do = {
 			factor = 0
@@ -595,9 +585,7 @@ title_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+
 		
 		ai_will_do = {
 			factor = 0
@@ -663,9 +651,7 @@ title_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+
 		
 		ai_will_do = {
 			factor = 0
@@ -731,9 +717,7 @@ title_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+
 		
 		ai_will_do = {
 			factor = 0
@@ -796,9 +780,7 @@ title_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+
 		
 		ai_will_do = {
 			factor = 0
@@ -861,9 +843,7 @@ title_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+
 		
 		ai_will_do = {
 			factor = 0
@@ -900,9 +880,7 @@ decisions = {
 			# pre-fire emergency cleanup event
 		}
 
-		revoke_allowed = {
-			always = no
-		}
+
 
 		ai_will_do = {
 			factor = 0

@@ -37,9 +37,7 @@ decisions = {
 				narrative_event = { id = ancrel.2104 }
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+
 		ai_will_do = {
 			factor = 1
 			
@@ -179,9 +177,7 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+
 		ai_will_do = {
 			factor = 1
 			
@@ -345,9 +341,7 @@ decisions = {
 				years = 10
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+
 		ai_will_do = {
 			factor = 1
 
@@ -419,9 +413,7 @@ decisions = {
 				narrative_event = { id = ancrel.3400 }
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+
 		ai_will_do = {
 			factor = 1
 			
@@ -473,9 +465,7 @@ decisions = {
 			set_global_flag = acr_crotone_building
 			character_event = { id = ancrel.3411 days = 1 }
 		}
-		revoke_allowed = {
-			always = no
-		}
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -543,9 +533,7 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+
 		ai_will_do = {
 			factor = 1
 			
@@ -694,9 +682,7 @@ decisions = {
 				years = 10
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+
 		ai_will_do = {
 			factor = 1
 
@@ -763,9 +749,7 @@ decisions = {
 				hidden_tooltip = { character_event = { id = ancrel.3404 } }
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+
 		ai_will_do = {
 			factor = 0.05 # unlikely
 
@@ -838,9 +822,7 @@ decisions = {
 			set_character_flag = ancrel_hodling_tristeria
 		}
 
-		revoke_allowed = {
-			always = no
-		}
+
 
 		ai_will_do = {
 			factor = 0 # TODO: proper ai weighting
@@ -879,9 +861,7 @@ decisions = {
 			set_character_flag = ancrel_holding_dionysia
 		}
 
-		revoke_allowed = {
-			always = no
-		}
+
 
 		ai_will_do = {
 			factor = 0 # TODO: proper ai weighting

@@ -140,9 +140,7 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+
 		ai_will_do = {
 			factor = 1
 			
@@ -379,7 +377,13 @@ decisions = {
 			NOT = { has_global_flag = fianna_founded }
 		}
 		allow = {
-			has_landed_title = k_ireland
+			OR = {
+				has_landed_title = k_ireland
+				any_vassal = {
+					has_landed_title = k_ireland
+				}
+				completely_controls = k_ireland
+			}
 			prestige = 300
 			wealth = 300
 		}
@@ -404,6 +408,8 @@ decisions = {
 					d_fianna = {
 						grant_title = PREV
 					}
+					prestige = 300
+					wealth = 300
 				}
 			}
 			religion_authority = {
@@ -419,6 +425,7 @@ decisions = {
 			factor = 1
 		}
 	}
+
 
 	vassalize_fianna = {
 		is_high_prio = yes
@@ -469,9 +476,7 @@ decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+
 		
 		ai_will_do = {
 			factor = 1
@@ -527,9 +532,7 @@ decisions = {
 			piety = 300
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+
 		
 		ai_will_do = {
 			factor = 1
@@ -895,9 +898,7 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+
 		ai_will_do = {
 			factor = 1
 			
@@ -955,9 +956,7 @@ decisions = {
 				abdicate = yes
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+
 		ai_will_do = {
 			factor = 1
 			
@@ -1044,9 +1043,7 @@ decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+
 		
 		ai_will_do = {
 			factor = 0
@@ -1102,9 +1099,7 @@ decisions = {
 			piety = 300
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+
 		
 		ai_will_do = {
 			factor = 1

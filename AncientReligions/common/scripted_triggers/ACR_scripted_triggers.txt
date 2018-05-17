@@ -6,7 +6,6 @@ is_feminist_religion_trigger = {
 		religion = promethean_pagan
 		religion = messalian
 		religion = cathar
-		primary_title = { has_law = status_of_women_4 }
 	}
 }
 
@@ -205,7 +204,7 @@ religion_openly_in_egyptian_subgroup_trigger = {
 
 religion_secretly_in_celtic_subgroup_trigger = {
 	custom_tooltip = {
-		text = religion_secretly_celtic_or_reformed_tooltip
+		text = secret_religion_in_celtic_subgroup_tooltip
 		hidden_trigger = {
 			OR = {
 				secret_religion = celtic_pagan
@@ -217,7 +216,7 @@ religion_secretly_in_celtic_subgroup_trigger = {
 
 religion_secretly_in_hellenic_subgroup_trigger = {
 	custom_tooltip = {
-		text = religion_secretly_in_hellenic_subgroup_tooltip
+		text = secret_religion_in_hellenic_subgroup_tooltip
 		hidden_trigger = {
 			OR = {
 				secret_religion = hellenic_pagan
@@ -230,7 +229,7 @@ religion_secretly_in_hellenic_subgroup_trigger = {
 
 religion_secretly_in_egyptian_subgroup_trigger = {
 	custom_tooltip = {
-		text = religion_secretly_in_egyptian_subgroup_tooltip
+		text = secret_religion_in_egyptian_subgroup_tooltip
 		hidden_trigger = {
 			OR = {
 				secret_religion = egyptian_pagan

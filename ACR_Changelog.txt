@@ -5,9 +5,13 @@
 General:
  - Compatability with CK2 2.8.2
 
+ Celtic:
+  - Organizing the Fianna is more accessible than previously, specifically to British Emperors.
+
  Kemetic:
   - Fixes bug that prevented the "Lost in a Sandstorm" event from firing.
-  
+   - Also fixed the death sound for this event.
+
 
 2017-12-17 v0.41.1 "Euronotus"
 -------------------------

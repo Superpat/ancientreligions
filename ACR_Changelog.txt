@@ -1,3 +1,15 @@
+2018-06-09 v0.41.3 "Cardea"
+-------------------------
+> Cardea was the ancient Roman godde4s of the hinge, doors, and winds. She was closely associated with the fundemental Roman city planning concept of "cardo", which described the main north-south street of a settlement or army camp. This is where the English "cardinal" (as in directions) comes from.
+
+General: 
+ - Fixes bug allowing an incomplete and in development decision to be visible, despite it doing nothing.
+  - Characters who took this decision will be refunded their money when you load the game with this update!
+
+ Celtic:
+ - Druids of the Circle will not be referred to as Cardinals when they are elected anymore.
+ 
+
 2018-05-16 v0.41.2 "Aura"
 -------------------------
 > Aura was a minor goddess of the breeze. Sometimes the plural Aurae was used, implying a race of nymphs. According to Nonnus, she was the daughter of the Titan Lelantos and the mother, by Dionysus, of Iacchus, a minor deity connected with the Eleusinian mysteries.

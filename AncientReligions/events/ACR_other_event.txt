@@ -1094,10 +1094,32 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { has_global_flag = ancrel_aura }
+		NOT = { has_global_flag = ancrel_cardea }
 	}
 
 	immediate = {
-		set_global_flag = ancrel_aura
+		set_global_flag = ancrel_cardea
+		any_player = {
+			limit = {
+				has_character_modifier = ancrel_oilworks
+			}
+
+			character_event = { id = ancrel.9024 days = 0 }
+		}
+	}
+}
+
+character_event = {
+	id = ancrel.9024
+	desc = ancrel.9024.desc
+	picture = GFX_evt_roman_temple
+
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+
+		wealth = 200
+		remove_character_modifier = ancrel_oilworks
 	}
 }

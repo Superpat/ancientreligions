@@ -79,6 +79,7 @@ decisions = {
 	build_oilworks = {
 		is_high_prio = yes
 		potential = {
+			has_global_flag = ancrel_debug
 			OR = {
 				has_focus = seduction
 				trait = hedonist

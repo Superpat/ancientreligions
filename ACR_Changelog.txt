@@ -1,6 +1,6 @@
-2018-06-09 v0.41.3 "Cardea"
+2018-06-10 v0.41.3 "Cardea"
 -------------------------
-> Cardea was the ancient Roman godde4s of the hinge, doors, and winds. She was closely associated with the fundemental Roman city planning concept of "cardo", which described the main north-south street of a settlement or army camp. This is where the English "cardinal" (as in directions) comes from.
+> Cardea was the ancient Roman goddess of the hinge, doors, and winds. She was closely associated with the fundemental Roman city planning concept of "cardo", which described the main north-south street of a settlement or army camp. This is where the English "cardinal" (as in directions) comes from.
 
 General: 
  - Fixes bug allowing an incomplete and in development decision to be visible, despite it doing nothing.
@@ -8,7 +8,7 @@ General:
 
  Celtic:
  - Druids of the Circle will not be referred to as Cardinals when they are elected anymore.
- 
+
 
 2018-05-16 v0.41.2 "Aura"
 -------------------------

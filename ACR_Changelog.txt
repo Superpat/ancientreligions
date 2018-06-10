@@ -6,8 +6,11 @@ General:
  - Fixes bug allowing an incomplete and in development decision to be visible, despite it doing nothing.
   - Characters who took this decision will be refunded their money when you load the game with this update!
 
- Celtic:
+Celtic:
  - Druids of the Circle will not be referred to as Cardinals when they are elected anymore.
+
+Hellenic:
+ - The decision icon for organizing the Sacred Band should work properly now.
 
 
 2018-05-16 v0.41.2 "Aura"
@@ -17,10 +20,10 @@ General:
 General:
  - Compatability with CK2 2.8.2
 
- Celtic:
+Celtic:
   - Organizing the Fianna is more accessible than previously, specifically to British Emperors.
 
- Kemetic:
+Kemetic:
   - Fixes bug that prevented the "Lost in a Sandstorm" event from firing.
    - Also fixed the death sound for this event.
 

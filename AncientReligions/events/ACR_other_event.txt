@@ -1,4 +1,480 @@
 namespace = ancrel
+namespace = GoPagan
+
+#reserved: GoPagan.100 to GoPagan.199
+
+#######################################
+# REVERSION TO PAGAN RELIGIONS
+#######################################
+
+#Zoroastrian
+character_event = {
+	id = GoPagan.100
+	desc = EVTDESC_GoPagan_100
+	picture = GFX_evt_imam
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_GoPagan_100"
+		ai_chance = {
+			factor = 10
+		}
+		set_secret_religion = zoroastrian
+		if = {
+			limit = { trait = cynical }
+			remove_trait = cynical
+		}
+		piety = -200
+		add_trait = zealous
+	}
+	option = { # Maybe Not
+		name = "EVTOPTZ_GoPagan_100"
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Celtic & Norse
+character_event = {
+	id = GoPagan.101
+	desc = EVTDESC_GoPagan_100
+	picture = GFX_evt_bishop
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTB_GoPagan_100"
+		trigger = {
+			OR = {
+				culture_group = celtic
+				culture_group = west_germanic
+				culture = frankish
+				culture = occitan
+			}
+		}
+		ai_chance = {
+			factor = 10
+		}
+		set_secret_religion = celtic_pagan
+		if = {
+			limit = { trait = cynical }
+			remove_trait = cynical
+		}
+		piety = -200
+		add_trait = zealous		
+	}
+	option = {
+		name = "EVTOPTD_GoPagan_100"
+		ai_chance = { factor = 15 }
+		trigger = {
+			OR = {
+				culture_group = north_germanic
+				culture_group = west_germanic
+				culture_group = central_germanic
+				culture = norman
+			}
+		}
+		set_secret_religion = norse_pagan
+		if = {
+			limit = { trait = cynical }
+			remove_trait = cynical
+		}
+		piety = -200
+		add_trait = zealous		
+	}
+	option = { # Maybe Not
+		name = "EVTOPTZ_GoPagan_100"
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Baltic & Finnic
+character_event = {
+	id = GoPagan.102
+	desc = EVTDESC_GoPagan_100
+	picture = GFX_evt_bishop_pagan_group
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTC_GoPagan_100"
+		trigger = {
+			OR = {
+				 culture_group = baltic
+				 culture = ugricbaltic
+			}
+			NOT = { religion = baltic_pagan}
+		}
+		ai_chance = {
+			factor = 10
+		}
+		set_secret_religion = baltic_pagan
+		if = {
+			limit = { trait = cynical }
+			remove_trait = cynical
+		}
+		piety = -200
+		add_trait = zealous
+	}
+	option = {
+		name = "EVTOPTC_GoPagan_100"
+		ai_chance = { factor = 10 }
+		trigger = {
+			culture_group = finno_ugric
+			NOT = { religion = finnish_pagan}
+		}
+		set_secret_religion = finnish_pagan
+		if = {
+			limit = { trait = cynical }
+			remove_trait = cynical
+		}
+		piety = -200
+		add_trait = zealous
+	}
+	option = { # Maybe Not
+		name = "EVTOPTZ_GoPagan_100"
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Tengri Pagan
+character_event = {
+	id = GoPagan.103
+	desc = EVTDESC_GoPagan_100
+	picture = GFX_evt_bishop_pagan_group
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTC_GoPagan_100"
+		ai_chance = { factor = 10 }
+		set_secret_religion = tengri_pagan
+		if = {
+			limit = { trait = cynical }
+			remove_trait = cynical
+		}
+		piety = -200
+		add_trait = zealous
+	}
+	option = { # Maybe Not
+		name = "EVTOPTZ_GoPagan_100"
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Slavic
+character_event = {
+	id = GoPagan.105
+	desc = EVTDESC_GoPagan_100
+	picture = GFX_evt_bishop_byzantine
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTC_GoPagan_100"
+		ai_chance = { factor = 10 }
+		set_secret_religion = slavic_pagan
+		if = {
+			limit = { trait = cynical }
+			remove_trait = cynical
+		}
+		piety = -200
+		add_trait = zealous
+	}
+	option = { # Maybe Not
+		name = "EVTOPTZ_GoPagan_100"
+		ai_chance = { factor = 1 }
+	}
+}
+
+#African
+character_event = {
+	id = GoPagan.106
+	desc = EVTDESC_GoPagan_100
+	picture = GFX_evt_sacrifice
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTC_GoPagan_100"
+		ai_chance = { factor = 10 }
+		trigger = {
+			culture_group = west_african
+		}
+		set_secret_religion = west_african_pagan
+		if = {
+			limit = { trait = cynical }
+			remove_trait = cynical
+		}
+		piety = -200
+		add_trait = zealous
+	}
+	option = { # Maybe Not
+		name = "EVTOPTZ_GoPagan_100"
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Egyptian Pagan
+character_event = {
+	id = GoPagan.107
+	desc = EVTDESC_GoPagan_100
+	picture = GFX_evt_pyramid
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTC_GoPagan_100"
+		ai_chance = { factor = 10 }
+		set_secret_religion = egyptian_pagan
+		if = {
+			limit = { trait = cynical }
+			remove_trait = cynical
+		}
+		piety = -200
+		add_trait = zealous
+	}
+	option = { # Maybe Not
+		name = "EVTOPTZ_GoPagan_100"
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Judaic
+character_event = {
+	id = GoPagan.108
+	desc = EVTDESC_GoPagan_100
+	picture = GFX_evt_synagogue
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTL_GoPagan_100"
+		ai_chance = { factor = 20 }
+		set_secret_religion = jewish
+		if = {
+			limit = { trait = cynical }
+			remove_trait = cynical
+		}
+		add_trait = zealous
+	}
+	option = { # Maybe Not
+		name = "EVTOPTZ_GoPagan_100"
+		ai_chance = { factor = 1 }
+	}
+}
+
+#Hellenic
+character_event = {
+	id = GoPagan.109
+	desc = EVTDESC_GoPagan_100
+	picture = GFX_evt_bishop_byzantine
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTM_GoPagan_100"
+		ai_chance = { factor = 10 }
+		trigger = {
+			OR = {
+				culture = roman
+				culture = greek
+				culture = italian
+				culture = sicilian
+				culture = sicilian_greek
+				culture_group = byzantine				
+			}
+			NOT = { religion = hellenic_pagan }
+		}
+		set_secret_religion = hellenic_pagan
+		if = {
+			limit = { trait = cynical }
+			remove_trait = cynical
+		}
+		piety = -200
+		add_trait = zealous
+	}
+	option = { # Maybe Not
+		name = "EVTOPTZ_GoPagan_100"
+		ai_chance = { factor = 1 }
+	}
+}
+
+#AI allowed to use the decision
+character_event = {
+	id = GoPagan.120
+	hide_window = yes
+	
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	ai = yes
+
+	trigger = {
+		is_heretic = no
+		piety = 0
+		health = 3
+		is_priest = no
+		controls_religion = no
+		OR = {
+			NOT = { religion_authority = 0.20 }
+			AND = {
+				NOT = { religion_authority = 0.40 }
+				trait = lunatic
+			}
+		}
+		NOR = {
+			has_character_flag = can_go_pagan
+			has_character_flag = gone_pagan
+			trait = zealous
+			has_crusade_trait_trigger = yes
+			has_character_modifier = voice_of_jesus
+			has_character_modifier = voice_of_satan
+			piety = 500
+			religion = monophysite
+			religion = miaphysite
+			religion = pagan
+			AND = {
+				religion_group = pagan_group
+				is_reformed_religion = no
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.25
+			trait = lunatic
+		}
+		modifier = {
+			factor = 0.25
+			trait = cynical
+		}
+		modifier = {
+			factor = 0.25
+			has_character_modifier = defied_church
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { religion_authority = 0.15 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { religion_authority = 0.10 }
+		}
+		modifier = {
+			factor = 0.5
+			trait = mystic
+		}
+		modifier = {
+			factor = 0.5
+			location = { religion_group = pagan_group }
+		}
+		modifier = {
+			factor = 0.5
+			independent = no
+			liege = { religion_group = pagan_group }
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				trait = sympathy_pagans
+				trait = sympathy_zoroastrianism
+				trait = sympathy_judaism
+				trait = sympathy_indian
+			}
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { learning = 5 }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { learning = 2 }
+		}
+		modifier = {
+			factor = 1.5
+			piety = 100
+		}
+		modifier = {
+			factor = 1.5
+			piety = 200
+		}
+		modifier = {
+			factor = 1.5
+			piety = 300
+		}
+		modifier = {
+			factor = 1.5
+			piety = 400
+		}
+		modifier = {
+			factor = 3
+			trait = slothful
+		}
+		modifier = {
+			factor = 3
+			trait = content
+		}
+		modifier = {
+			factor = 3
+			trait = craven
+		}
+		modifier = {
+			factor = 3
+			trait = patient
+		}
+		modifier = {
+			factor = 3
+			learning = 10
+		}
+		modifier = {
+			factor = 3
+			learning = 15
+		}
+		modifier = {
+			factor = 3
+			trait = scholar
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				trait = pilgrim
+				trait = hajjaj
+			}
+		}
+		modifier = {
+			factor = 5
+			independent = no
+			is_female = yes
+			any_spouse = { secret_religion = ROOT }
+		}
+		modifier = {
+			factor = 10
+			independent = no
+			liege = { secret_religion = ROOT }
+		}
+		modifier = {
+			factor = 10
+			NOR = {
+				trait = cynical
+				trait = lunatic
+				any_spouse = { religion_group = pagan_group }
+				any_dynasty_member = { religion_group = pagan_group }
+				any_liege = { religion_group = pagan_group }
+				any_vassal = { religion_group = pagan_group }
+				location = { religion_group = pagan_group }
+				location = { any_province_character = { religion_group = pagan_group } }
+			}
+		}		
+	}
+	
+	immediate = {
+		set_character_flag = can_go_pagan
+		add_trait = cynical
+	}
+}
 
 ##############################################
 #
@@ -400,7 +876,7 @@ character_event = {
 # Ancient Religions Reborn
 # - Debugging Events
 #
-# Event Ids: ancrel.9001 - 9099 reserved
+# Event Ids: ancrel.9001 - 9100 reserved
 ##############################################
 
 # set the ancrel_debug global flag for testing
@@ -508,6 +984,108 @@ character_event = {
 	}
 }
 
+# debug to grant all provinces in your dejure kingdom to you, including the king title
+character_event = {
+    id = ancrel.9020
+    desc = ancrel.9020.desc
+    
+    is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = ancrel_debug
+	}
+
+	immediate = {
+		capital_scope = {
+			kingdom = {
+				save_event_target_as = ancrel_title_grant
+				ROOT = { 
+					grant_title_no_opinion = PREV
+				}
+    		}
+    	}
+    }
+
+    option = {
+    	name = OK
+	}
+
+	after = {
+    	any_independent_ruler = {
+    		limit = {
+    			de_jure_liege_or_above = event_target:ancrel_title_grant
+    		}
+    		any_realm_province = {
+    			county = {
+    				ROOT = { 
+						usurp_title = PREV
+					}
+    			}
+    		}
+    	}
+	}
+}
+
+# debug to grant you the de jure empire of your capital and vassalize de jure vassals
+character_event = {
+    id = ancrel.9021
+    desc = ancrel.9021.desc
+
+    is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = ancrel_debug
+	}
+
+	immediate = {
+		capital_scope = {
+			empire = {
+				save_event_target_as = ancrel_title_grant
+				ROOT = { 
+					grant_title_no_opinion = PREV
+				}
+    		}
+    	}
+    }
+
+    option = {
+    	name = OK
+	}
+
+	after = {
+    	any_independent_ruler = {
+    		limit = {
+    			de_jure_liege_or_above = event_target:ancrel_title_grant
+    		}
+    		set_defacto_liege = ROOT
+    	}
+	}
+}
+
+# debug to convert all characters and provinces in your realm to your religion and culture
+character_event = {
+	id = ancrel.9022
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = ancrel_debug
+	}
+
+	immediate = {
+		any_realm_character = {
+			religion = ROOT
+			culture = ROOT
+		}
+
+		any_realm_province = {
+			religion = ROOT
+			culture = ROOT
+		}
+	}
+}
+
 # migration event, fired [on_start], smooths over issues with save files between versions
 character_event = {
 	id = ancrel.9023
@@ -516,887 +1094,33 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { has_global_flag = ancrel_cernunnos }
+		NOT = { has_global_flag = ancrel_cardea }
 	}
 
 	immediate = {
+		set_global_flag = ancrel_cardea
 		set_global_flag = ancrel_cernunnos
+		any_player = {
+			limit = {
+				has_character_modifier = ancrel_oilworks
+			}
+
+			character_event = { id = ancrel.9024 days = 0 }
+		}
 	}
 }
 
-##############################################
-#
-# Ancient Religions Reborn
-# - Generic Holy Order Events
-#
-# Event Ids: ancrel.9100 - 9299 reserved
-##############################################
-
-# request to join the order (courtier)
 character_event = {
-	id = ancrel.9100
-	desc = ancrel.9100.desc
+	id = ancrel.9024
+	desc = ancrel.9024.desc
 	picture = GFX_EVT_warrior_banners
-	border = GFX_event_normal_frame_religion
-	
-	only_men = yes
-	min_age = 16
-	max_age = 45
-	only_capable = yes
-	prisoner = no
-	
-	trigger = {
-		is_ruler = no
-		is_heretic = no
-		is_councillor = no
-		
-		martial = 5
-		
-		OR = {
-			father_even_if_dead = {
-				primary_title = { higher_tier_than = BARON }
-			}
-			mother_even_if_dead = {
-				primary_title = { higher_tier_than = BARON }
-			}
-		}
-		
-		any_liege = {
-			holy_order = no
-		}
-		
-		has_dlc = "Sons of Abraham"
-		
-		any_mercenary_band = {
-			is_title_active = THIS
-			holy_order = yes
-			holder_scope = { religion = ROOT }
-			ROOT = {
-				NOR = {
-					has_character_flag = expelled_@PREV
-					any_liege = {
-						has_character_flag = expelled_@PREVPREV
-					}
-				}
-			}
-		}
 
-		NOT = {
-			any_spouse = {
-				OR = {
-					is_landed = yes
-					AND = { # Won't happen if spouse is pregnant with non-bastard child
-						is_pregnant = yes
-						father_of_unborn = { character = ROOT } 
-					}
-				}
-			}
-		}
-	}
-	
-	immediate = {
-		random_character = {
-			limit = {
-				primary_title = {
-					holy_order = yes
-					holder_scope = { religion = ROOT }
-					ROOT = {
-						NOR = {
-							has_character_flag = expelled_@PREV
-							any_liege = {
-								has_character_flag = expelled_@PREVPREV
-							}
-						}
-					}
-				}
-			}
+	is_triggered_only = yes
 
-			primary_title = { save_event_target_as = holy_order }
-		}
-	}
-
-	mean_time_to_happen = {
-		years = 100
-		modifier = {
-			factor = 0.25
-			trait = zealous
-		}
-		modifier = {
-			factor = 2.0
-			trait = celibate
-		}
-		modifier = {
-			factor = 0.5
-			trait = homosexual
-		}
-		modifier = {
-			factor = 0.7
-			trait = content
-		}
-		modifier = {
-			factor = 1.25
-			trait = chaste
-		}
-		modifier = {
-			factor = 0.75
-			NOT = { age = 25 }
-		}
-		modifier = {
-			factor = 1.5
-			trait = slothful
-		}
-		modifier = {
-			factor = 0.5
-			trait = lustful
-		}
-		modifier = {
-			factor = 2.0
-			trait = cynical
-		}
-		modifier = {
-			factor = 0.5
-			trait = hedonist
-		}
-		modifier = {
-			factor = 2.0
-			trait = ambitious
-		}
-		modifier = {
-			factor = 2.0
-			any_heir_title = {
-				always = yes
-			}
-		}
-		modifier = {
-			factor = 2.0
-			is_primary_heir = yes
-		}
-	}
-	
 	option = {
-		name = ancrel.9100.a # Ask to go
-		liege = {
-			character_event = {
-				id = ancrel.9101
-			}
-		}
-	}
-	option = {
-		name = ancrel.9100.b # It's a bad idea
-	}
-}
+		name = OK
 
-character_event = {
-	id = ancrel.9101
-	desc = ancrel.9101.desc
-	picture = GFX_EVT_warrior_banners
-	border = GFX_event_normal_frame_religion
-	
-	is_triggered_only = yes
-	
-	option = {
-		name =  ancrel.9101.a # Agree
-		ai_chance = {
-			factor = 100
-		}
-		
-		piety = 100
-		
-		FROM = {
-			character_event = {
-				id = ancrel.9102
-				tooltip =  ancrel.9101.a.tt
-			}
-		}
-	}
-	
-	option = {
-		name =  ancrel.9101.b # Refuse
-		
-		piety = -100
-		
-		FROM = {
-			character_event = {
-				id = ancrel.9103
-				tooltip =  ancrel.9101.b.tt
-			}
-		}
-	}
-}
-
-character_event = {
-	id = ancrel.9102
-	desc = ancrel.9102.desc
-	picture = GFX_EVT_warrior_banners
-	border = GFX_event_normal_frame_religion
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EXCELLENT
-		
-		event_target:holy_order = {
-			holder_scope = {
-				ROOT = {
-					move_character = PREV
-					hidden_tooltip = {
-						clear_wealth = PREV
-					}
-				}
-			}
-		}
-	}
-}
-
-character_event = {
-	id = ancrel.9103
-	desc = ancrel.9103.desc
-	picture = GFX_EVT_warrior_banners
-	border = GFX_event_normal_frame_religion
-	
-	is_triggered_only = yes
-	
-	option = {
-		name =  ancrel.9103.a
-		
-		opinion = {
-			who = FROM
-			modifier = opinion_refused_request_holy_order
-		}
-	}
-}
-
-# The Grand Master humbly requests the right to build a castle in your demesne
-character_event = {
-	id = ancrel.9104	
-	hide_window = yes
-	
-	only_playable = yes
-	
-	trigger = {
-		has_dlc = "Sons of Abraham"
-
-		is_potential_land_doner_trigger = yes
-	}
-
-	mean_time_to_happen = {
-		months = 240
-	}
-	
-	immediate = {
-		random_character = {
-			limit = {
-				primary_title = {
-					is_castle_building_holy_order_trigger = yes
-					holder_scope = { religion = ROOT }
-					NOT = {
-						ROOT = {
-							has_character_flag = expelled_@PREV
-						}
-					}
-				}
-			}
-
-			primary_title = { save_event_target_as = holy_order }
-		}
-
-		random_demesne_province = {
-			limit = {
-				is_in_root_religion_regions_of_interest_trigger = yes
-			}
-
-			province_event = { id = ancrel.9105 }
-		}
-	}
-}
-
-province_event = {
-	id = ancrel.9105
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		event_target:holy_order = {
-			holder_scope = {
-				character_event = {
-					id = ancrel.9106
-				}
-			}
-		}
-	}
-}
-
-character_event = {
-	id = ancrel.9106
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		FROMFROM = {
-			letter_event = {
-				id = ancrel.9107
-			}
-		}
-	}
-}
-
-letter_event = {
-	id = ancrel.9107
-	desc = ancrel.9107.desc
-	border = GFX_event_letter_frame_religion
-	
-	is_triggered_only = yes
-	
-	option = {
-		name =  ancrel.9107.a # Agree
-		ai_chance = {
-			factor = 80
-		}
-		
-		hidden_tooltip = {
-			FROMFROM = {
-				province_event = { id = ancrel.9108 }
-			}
-			clear_expelled_holy_order_modifier_effect = yes
-		}
-		
-		piety = 200
-		wealth = 100
-	}
-	
-	option = {
-		name =  ancrel.9107.b # Refuse
-		ai_chance = {
-			factor = 20
-		}
-		
-		piety = -100
-	}
-}
-
-# Castle has been erected
-province_event = {
-	id = ancrel.9108
-	desc = ancrel.9108.desc
-	picture = GFX_EVT_castle_construction
-	border = GFX_event_normal_frame_religion
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		FROMFROM = {
-			wealth = -300
-		}
-	}
-	
-	option = {
-		name =  OK
-		build_holding = {
-		   type = castle
-		   holder = FROMFROM
-		}
-	}
-}
-
-# Ping event when expelling the holy order
-character_event = {
-	id = ancrel.9109
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		any_title_under = {
-			limit = {
-				tier = BARON
-				location = {
-					owner = {
-						OR = {
-							character = FROM
-							is_liege_or_above = FROM
-						}
-					}
-				}
-			}
-			usurp_title = FROM
-		}
-	
-		FROM = {
-			letter_event = {
-				id = ancrel.9110
-			}
-		}
-		
-		opinion = {
-			who = FROM
-			modifier = opinion_expelled_from_realm
-		}
-	}
-}
-
-# Notification event when expelling the holy order
-letter_event = {
-	id = ancrel.9110
-	desc = ancrel.9110.desc
-	border = GFX_event_letter_frame_religion
-	
-	is_triggered_only = yes
-	
-	option = {
-		name =  ancrel.9110.a
-	}
-}
-
-# Ping event when donating money to the holy order
-character_event = {
-	id = ancrel.9111
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		wealth = 300
-		FROM = {
-			letter_event = {
-				id = ancrel.9112
-			}
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_generous_donation
-		}
-	}
-}
-
-# Notification event when donating money to the holy order
-letter_event = {
-	id = ancrel.9112
-	desc = ancrel.9112.desc
-	border = GFX_event_letter_frame_religion
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EXCELLENT
-		
-	}
-}
-
-# The Grand Master demands one of your sons due to debt
-character_event = {
-	id = ancrel.9113
-	hide_window = yes
-	
-	min_age = 16
-	only_playable = yes
-	
-	trigger = {
-		any_mercenary_band = {
-			is_banking_holy_order_trigger = yes
-			holder_scope = { religion = ROOT }
-			ROOT = {
-				has_character_flag = borrowed_from_@PREV
-				is_heretic = no
-				NOT = { has_character_flag = sent_child_to_@PREV}
-			}
-		}
-
-		any_child = {
-			OR = {
-				is_female = no
-				is_feminist_religion_trigger = yes
-			}
-			is_adult = yes
-			is_ruler = no
-			prisoner = no
-			NOT = { trait = incapable }
-			ROOT = {
-				NOT = { 
-					current_heir = { 
-						character = PREVPREV 
-					}
-				}
-			}
-		}
-
-		has_dlc = "Sons of Abraham"
-	}
-	
-	mean_time_to_happen = {
-		months = 120
-	}
-	
-	immediate = {
-		random_character = {
-			limit = {
-				primary_title = {
-					is_banking_holy_order = yes
-					religion = ROOT
-					ROOT = {
-						has_character_flag = borrowed_from_@PREV
-						NOT = { has_character_flag = sent_child_to_@PREV}
-					}
-				}
-			}
-
-			primary_title = { save_event_target_as = holy_order }
-		}
-		random_child = {
-			limit = {
-				OR = {
-					is_female = no
-					is_feminist_religion_trigger = yes
-				}
-				is_adult = yes
-				is_ruler = no
-				prisoner = no
-				NOT = { trait = incapable }
-				ROOT = {
-					NOT = { 
-						current_heir = { 
-							character = PREVPREV 
-						}
-					}
-				}
-			}
-			character_event = {
-				id = ancrel.9114
-			}
-		}
-	}
-}
-
-character_event = {
-	id = ancrel.9114
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		event_target:holy_order = {
-			holder_scope = {
-				character_event = {
-					id = ancrel.9115
-				}
-			}
-		}
-	}
-}
-
-character_event = {
-	id = ancrel.9115
-	
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		FROMFROM = {
-			letter_event = {
-				id = ancrel.9116
-			}
-		}
-	}
-}
-
-letter_event = {
-	id = ancrel.9116
-	desc = ancrel.9116.desc
-	border = GFX_event_letter_frame_religion
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = ancrel.9116.a # Agree
-		ai_chance = {
-			factor = 100
-		}
-		
-		set_character_flag = sent_son_to_@event_target:holy_order
-		
-		piety = 100
-		
-		event_target:holy_order = {
-			holder_scope = {
-				FROMFROM = {
-					hidden_tooltip = {
-						clear_wealth = PREV
-					}
-					spouse = {
-						remove_spouse = spouse
-						hidden_tooltip = { character_event = { id = SoA.2862 } }
-					}
-					move_character = PREV
-					add_trait = celibate
-					end_inaccessibility_effect = yes #removes in_hiding or in_seclusion
-				}
-			}
-		}
-	}
-	
-	option = {
-		name = ancrel.9116.b # Pay them back
-		wealth = -300
-		hidden_tooltip = {
-			clear_borrowed_from_holy_order_modifier_effect = yes
-		}
-		event_target:holy_order = {
-			wealth = 300
-		}
-	}
-	
-	option = {
-		name = EVTOPTC_SOA_1003 # Refuse
-		piety = -1000
-	}
-}
-
-# Ping event when borrowing money from the holy order
-character_event = {
-	id = ancrel.9117
-	
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		wealth = -300
-		event_target:lender = {
-			letter_event = {
-				id = ancrel.9118
-			}
-		}
-	}
-}
-
-# Notification event when borrowing money from the holy order
-letter_event = {
-	id = ancrel.9118
-	desc = ancrel.9118.desc
-	border = GFX_event_letter_frame_religion
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EXCELLENT
-	}
-}
-
-# Ping event when vassalizing the holy order
-character_event = {
-	id = ancrel.9119
-	
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		set_defacto_liege = event_target:new_liege
-		event_target:new_liege = {
-			letter_event = {
-				id = ancrel.9120
-			}
-		}
-	}
-}
-
-# Notification event when vassalizing the holy order
-letter_event = {
-	id = ancrel.9120
-	desc = ancrel.9120.desc
-	border = GFX_event_letter_frame_religion
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EXCELLENT
-	}
-}
-
-# The Grand Master demands the right to build a castle in your demesne
-character_event = {
-	id = ancrel.9121
-	
-	hide_window = yes
-	
-	min_age = 16
-	only_playable = yes
-	
-	trigger = {
-		any_mercenary_band = {
-			is_banking_holy_order_trigger = yes
-			holder_scope = {
-				religion = ROOT
-				wealth = 300
-			}
-			ROOT = {
-				is_heretic = no
-				has_character_flag = borrowed_from_@PREV
-				NOT = { has_character_flag = sent_son_to_@PREV }
-				NOT = { has_character_flag = expelled_@PREV }
-				NOT = {
-					any_liege = {
-						has_character_flag = expelled_@PREV
-					}
-				}
-			}
-		}
-		
-		any_demesne_province = { has_empty_holding = yes }
-		has_dlc = "Sons of Abraham"
-	}
-	
-	mean_time_to_happen = {
-		months = 60
-	}
-	
-	immediate = {
-		random_character = {
-			limit = {
-				primary_title = {
-					is_banking_holy_order_trigger = yes 
-					ROOT = {
-						has_character_flag = borrowed_from_@PREV
-						NOT = { has_character_flag = sent_son_to_@PREV }
-						NOT = { has_character_flag = expelled_@PREV }
-						NOT = {
-							any_liege = {
-								has_character_flag = expelled_@PREV
-							}
-						}
-					}
-				}
-				religion = ROOT
-				wealth = 300
-			}
-
-			primary_title = {
-				save_event_target_as = holy_order			
-			}
-		}
-
-		random_demesne_province = {
-			limit = {
-				has_empty_holding = yes
-			}
-			save_event_target_as = target_land
-			province_event = {
-				id = ancrel.9122
-			}
-		}
-
-		save_event_target_as = lender
-	}
-}
-
-province_event = {
-	id = ancrel.9122
-	
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		event_target:holy_order = {
-			holder_scope = {
-				character_event = {
-					id = ancrel.9123
-				}
-			}
-		}
-	}
-}
-
-character_event = {
-	id = ancrel.9123
-	
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		event_target:lender = {
-			letter_event = {
-				id = ancrel.9124
-			}
-		}
-	}
-}
-
-letter_event = {
-	id = ancrel.9124
-	desc = ancrel.9124.desc
-	border = GFX_event_letter_frame_religion
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = ancrel.9124.a # Agree
-		ai_chance = {
-			factor = 100
-		}
-		
-		hidden_tooltip = {
-			clear_borrowed_from_holy_order_modifier_effect = yes
-			clear_expelled_holy_order_modifier_effect = yes
-			event_target:target_land = {
-				province_event = { id = ancrel.9125 }
-			}
-		}
-		
-		piety = 100
-	}
-	
-	option = {
-		name = ancrel.9124.b # Pay them back
-		wealth = -300
-		hidden_tooltip = {
-			clr_character_flag = borrowed_from_@event_target:holy_order
-		}
-		event_target:holy_order = {
-			holder_scope = { wealth = 300 }
-		}
-	}
-	
-	option = {
-		name = ancrel.9124.c # Refuse
-		piety = -1000
-	}
-}
-
-# Castle has been erected
-province_event = {
-	id = ancrel.9125
-	desc = ancrel.9125.desc
-	picture = GFX_evt_castle_construction
-	border = GFX_event_normal_frame_religion
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		FROMFROM = {
-			wealth = -300
-		}
-	}
-	
-	option = {
-		name = ancrel.9125.a
-		build_holding = {
-		   type = castle
-		   holder = FROMFROM
-		}
-	}
-}
-
-character_event = {
-	id = ancrel.9299
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-		set_flag_for_holy_order_modifiers_effect = yes
+		wealth = 200
+		remove_character_modifier = ancrel_oilworks
 	}
 }

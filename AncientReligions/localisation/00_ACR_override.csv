@@ -1,11 +1,14 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ###### Overridden vanilla keys have to be loaded last since patch 2.5;;;;;;;;;;;;;;x
 ###### Non-Catholic specific text for College of Cardinals;;;;;;;;;;;;;;x
-SHOW_COLLEGE_OF_CARDINALS;Religious head electors;;;;;;;;;;;;;x
+SHOW_COLLEGE_OF_CARDINALS;[GetReligiousHeadElectorBody];;;;;;;;;;;;;x
 POPE_VOTE_SCORE;§YReligious head suitability: $SCORE$§!;;;;;;;;;;;;;x
 CANDIDATE_SCORE;§YCandidate appointment score§!;;;;;;;;;;;;;x
 SUCCESSOR;Current Successor;;;;;;;;;;;;;x
-SUCCESSOR_TOOLTIP;This is the current expected successor of the religion head.;;;;;;;;;;;;;x
+SUCCESSOR_TOOLTIP;This is the current expected successor of the [GetReligiousHeadTitle].;;;;;;;;;;;;;x
+TITLE_GAINED_RELIGIOUS_SETUP;New [GetReligiousHeadElectorTitle] appointed.;;;;;;;;;;;;;x
+TITLE_GAINED_RELIGIOUS_LETTER;$NEWHOLDER$ was given a seat in the [GetReligiousHeadElectorBody].;;;;;;;;;;;;;x
+TITLE_GAINED_RELIGIOUS_LOG;$NEWHOLDER$ was given a seat in the [GetReligiousHeadElectorBody].;;;;;;;;;;;;;x
 ###### Map;;;;;;;;;;;;;;x
 b_meir;Akhetaten;;;;;;;;;;;;;x
 ###### Vanilla religions;;;;;;;;;;;;;;x
@@ -14,9 +17,7 @@ job_spiritual_hellenic_pagan;Augur;Augure;;;;;;;;;;;;x
 finnish_pagan_reformed;Suomenusko;Suomenusko;;;;;;;;;;;;x
 norse_pagan_reformed;Asatru;Asatru;;;;;;;;;;;;x
 baltic_pagan_reformed;Romuva;Romuva;;;;;;;;;;;;x
-altaic_pagan_reformed;Tengri;Tengri;;;;;;;;;;;;x
 slavic_pagan_reformed;Rodnovery;Rodnovery;;;;;;;;;;;;x
 west_african_pagan_reformed;Akan;Akan;;;;;;;;;;;;x
 finnish_pagan;Finnic;Finnic;;;;;;;;;;;;x
 baltic_pagan;Baltic;Baltic;;;;;;;;;;;;x
-altaic_pagan;Altaic;Altaic;;;;;;;;;;;;x

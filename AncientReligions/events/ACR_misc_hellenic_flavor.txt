@@ -218,7 +218,7 @@ character_event = {
 			name = VIET_greek_mythology_thoughts
 			duration = 365
 		}
-		character_event = { id = ancrel.2564 tooltip = ancrel.2501.tooltip.0 days = 3 random = 10 }
+		long_character_event = { id = ancrel.2564 tooltip = ancrel.2501.tooltip.0 days = 3 random = 10 }
 	}
 }
 
@@ -2291,7 +2291,7 @@ character_event = {
 		}
 		custom_tooltip = { text = ancrel.2520.tooltip }
 		hidden_tooltip = {
-			character_event = { id = ancrel.2522 }
+			narrative_event = { id = ancrel.2522 }
 		}
 	}
 }
@@ -2950,7 +2950,7 @@ character_event = {
 
 	option = {
 		name = ancrel.2550.a
-		character_event = { id = ancrel.2551 tooltip = ancrel.2551.tooltip days = 1 }
+		narrative_event = { id = ancrel.2551 tooltip = ancrel.2551.tooltip days = 1 }
 	}
 }
 
@@ -3234,11 +3234,11 @@ character_event = {
 
 	option = { # hey girl y u no like animal carcasses
 		name = ancrel.2560.a
-		hidden_tooltip = { character_event = { id = ancrel.2561 } }
+		hidden_tooltip = { narrative_event = { id = ancrel.2561 } }
 	}
 	option = { # hey girl y u no like animal carcasses
 		name = ancrel.2560.b
-		hidden_tooltip = { character_event = { id = ancrel.2561 } }
+		hidden_tooltip = { narrative_event = { id = ancrel.2561 } }
 	}
 }
 
@@ -3324,7 +3324,7 @@ narrative_event = {
 			limit = {
 				NOT = { has_character_flag = VIET_pondered_artemis_apollo_twincest }
 			}
-			character_event = { id = ancrel.2564 tooltip = ancrel.2564.tooltip days = 3 random = 10 }
+			long_character_event = { id = ancrel.2564 tooltip = ancrel.2564.tooltip days = 3 random = 10 }
 		}
 	}
 }
@@ -4281,7 +4281,7 @@ character_event = {
 			name = VIET_artemis_rumors
 			duration = 730
 		}
-		character_event = { id = ancrel.2584 days = 30 random = 10 tooltip = ancrel.2584.tooltip }
+		narrative_event = { id = ancrel.2584 days = 30 random = 10 tooltip = ancrel.2584.tooltip }
 	}
 }
 
@@ -4331,7 +4331,7 @@ narrative_event = {
 	option = {#ok
 		name = ancrel.2586.a
 		hidden_tooltip = {
-			character_event = { id = ancrel.2587 }
+			narrative_event = { id = ancrel.2587 }
 		}
 	}
 }
@@ -4437,7 +4437,7 @@ character_event = {
 	option = {#ok
 		name = ancrel.2588.a
 		hidden_tooltip = {
-			character_event = { id = ancrel.2589 }
+			narrative_event = { id = ancrel.2589 }
 		}
 	}
 }
@@ -4454,7 +4454,7 @@ narrative_event = {
 	option = {#ok
 		name = ancrel.2589.a
 		hidden_tooltip = {
-			character_event = { id = ancrel.2590 }
+			narrative_event = { id = ancrel.2590 }
 		}
 	}
 }
@@ -4740,14 +4740,14 @@ character_event = {
 		name = ancrel.2595.a
 		prestige = 5
 		hidden_tooltip = {
-			character_event = { id = ancrel.2596 }
+			narrative_event = { id = ancrel.2596 }
 		}
 	}	
 	option = {# he's not being considerate
 		name = ancrel.2595.b
 		piety = 5
 		hidden_tooltip = {
-			character_event = { id = ancrel.2596 }
+			narrative_event = { id = ancrel.2596 }
 		}
 	}
 }
@@ -4834,7 +4834,7 @@ character_event = {
 	option = {# what is death?
 		name = ancrel.2597.a
 		hidden_tooltip = {
-			character_event = { id = ancrel.2598 }
+			narrative_event = { id = ancrel.2598 }
 		}
 	}	
 }
@@ -4996,7 +4996,7 @@ character_event = {
 		}
 		prestige = 10
 		hidden_tooltip = {
-			character_event = { id = ancrel.2603 }
+			narrative_event = { id = ancrel.2603 }
 		}
 	}	
 	option = {# run away!
@@ -5009,7 +5009,7 @@ character_event = {
 			chance = 50
 		}
 		hidden_tooltip = {
-			character_event = { id = ancrel.2602 }
+			narrative_event = { id = ancrel.2602 }
 		}
 	}	
 }
@@ -5035,7 +5035,7 @@ narrative_event = {
 			}
 			remove_trait = craven
 		}
-		character_event = { id = ancrel.2603 tooltip = ancrel.2603.tooltip }
+		narrative_event = { id = ancrel.2603 tooltip = ancrel.2603.tooltip }
 	}	
 }
 
@@ -5055,7 +5055,7 @@ narrative_event = {
 			hidden_tooltip = { character_event = { id = 38280 } }
 			chance = 25
 		}
-		character_event = { id = ancrel.2604 tooltip = ancrel.2603.tooltip }
+		narrative_event = { id = ancrel.2604 tooltip = ancrel.2603.tooltip }
 	}	
 }
 
@@ -5177,7 +5177,7 @@ character_event = {
 	option = {# oh noes
 		name = ancrel.2607.a
 		hidden_tooltip = {
-			character_event = { id = ancrel.2608 }
+			narrative_event = { id = ancrel.2608 }
 		}
 	}	
 }
@@ -5194,7 +5194,7 @@ narrative_event = {
 	option = {# oh noes
 		name = ancrel.2608.a
 		hidden_tooltip = {
-			character_event = { id = ancrel.2609 }
+			narrative_event = { id = ancrel.2609 }
 		}
 	}	
 }
@@ -5404,7 +5404,7 @@ character_event = {
 	option = {# oh noes
 		name = ancrel.2613.a
 		hidden_tooltip = {
-			character_event = { id = ancrel.2614 days = 2 random = 3 }
+			narrative_event = { id = ancrel.2614 days = 2 random = 3 }
 		}
 	}	
 }
@@ -5545,7 +5545,7 @@ character_event = {
 			chance = 25
 		}
 		hidden_tooltip = {
-			character_event = { id = ancrel.2616 }
+			narrative_event = { id = ancrel.2616 }
 		}
 	}	
 	option = {# imprison the offenders
@@ -5555,7 +5555,7 @@ character_event = {
 			chance = 25
 		}
 		hidden_tooltip = {
-			character_event = { id = ancrel.2616 }
+			narrative_event = { id = ancrel.2616 }
 		}
 	}	
 	option = {# kill the offenders
@@ -5566,7 +5566,7 @@ character_event = {
 			75 = {}
 		}
 		hidden_tooltip = {
-			character_event = { id = ancrel.2616 }
+			narrative_event = { id = ancrel.2616 }
 		}
 	}	
 }

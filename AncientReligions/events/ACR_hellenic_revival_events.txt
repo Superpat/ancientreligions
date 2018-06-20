@@ -921,7 +921,7 @@ character_event = {
 		custom_tooltip = {
 			text = ancrel.2027.tt
 			hidden_tooltip = {
-				character_event = { id = ancrel.2027 days = 0 }
+				long_character_event = { id = ancrel.2027 days = 0 }
 			}
 		}
 	}
@@ -1014,7 +1014,7 @@ character_event = {
 	immediate = {
 		set_character_flag = ancrel_propose_old_ways
 		liege = {
-			character_event = { id = ancrel.2029 days = 0 }
+			long_character_event = { id = ancrel.2029 days = 0 }
 		}
 	}
 

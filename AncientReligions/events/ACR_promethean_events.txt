@@ -237,11 +237,9 @@ character_event = {
 			text = ancrel.3402.d.tt
 			hidden_tooltip = {
 				event_target:donor_province = {
-					county = {
-						increase_depopulation_effect = yes
-						increase_depopulation_effect = yes
-						increase_depopulation_effect = yes
-					}
+					increase_depopulation_effect = yes
+					increase_depopulation_effect = yes
+					increase_depopulation_effect = yes
 					remove_province_modifier = preparing_settlers
 				}
 				event_target:receiver_province = {

@@ -125,7 +125,7 @@ decisions = {
 	}
 }
 
-targeted_decisions = {
+targetted_decisions = {
 	borrow_money_from_holy_order = {
 		only_playable = yes
 		
@@ -149,7 +149,7 @@ targeted_decisions = {
 			
 			FROM = {
 				wealth = 300
-				save_event_target_as = lender
+				save_event_target_as = borrower
 				set_character_flag = borrowed_from_@holy_order
 				set_character_modifier_for_holy_order_flags_effect = yes
 			}
@@ -173,7 +173,7 @@ targeted_decisions = {
 			}
 		}
 	}
-
+	
 	donate_money_to_holy_order = {
 		only_playable = yes
 

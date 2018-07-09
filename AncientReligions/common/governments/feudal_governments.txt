@@ -21,7 +21,6 @@ feudal_governments = {
 		potential = {
 			NAND = {
 				controls_religion = yes
-				NOT = { religion_group = muslim }
 				NOT = {	primary_title = { is_landless_type_title = no }	}
 			}
 			NOR = {

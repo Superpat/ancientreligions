@@ -128,11 +128,11 @@ character_event = {
 			factor = 0.1
 			modifier = {
 				factor = 100
-				religion_openly_in_hellenic_subgroup = no
+				NOT = { religion_openly_in_hellenic_subgroup_trigger = yes }
 			}
 			modifier = {
 				factor = 100
-				true_religion_in_hellenic_subgroup = no
+				NOT = { true_religion_in_hellenic_subgroup_trigger = yes }
 			}
 		}
 		prestige = -100

@@ -42,6 +42,10 @@ organize_sacred_band;Organize the Sacred Band;Mettre sur pied la Bande Sacrée;Or
 organize_sacred_band_desc;Organize the Sacred Band Holy Order;Mettre sur pied la Bande Sacrée;Organize the Sacred Band;;Organize the Sacred Band;;;;;;;;x
 d_sacred_band;Sacred Band;;;;;;;;;;;;x
 d_sacred_band_adj;Sacred Band;;;;;;;;;;;;x
+borrowed_from_d_sacred_band;Borrowed from the Sacred Band;;;;;;;;;;;;x
+borrowed_from_d_sacred_band_desc;This character has an outstanding loan with the Sacred Band.;;;;;;;;;;;;x
+expelled_d_sacred_band;Expelled the Sacred Band;;;;;;;;;;;;x
+expelled_d_sacred_band_desc;This character, or a predecessor, banished the Sacred Band from the realm and seized their titles.;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 king_hellenic_pagan;Rex;Rex;Rex;;Rey;;;;;;;;;x
 king_hellenic_pagan_byzantine;Regas;Regas;Regas;;Rey;;;;;;;;;x
@@ -163,4 +167,6 @@ title_vestalis_maxima_desc;As the head of the College of the Vestales and the on
 d_legio_hellenica;Legio Hellenica;;;;;;;;;;;;;x
 d_legio_hellenica_adj;Legio Hellenica;;;;;;;;;;;;;x
 CENTURIO;Centurio;;;;;;;;;;;;;x
-CENTURIO_FOA;Centurio's;;;;;;;;;;;;;x
+CENTURIO_FOA;Sir;;;;;;;;;;;;;x
+expelled_d_legio_hellenica;Expelled the Hellenic Legion;;;;;;;;;;;;;x
+borrowed_from_d_legio_hellenica;Borrowed from the Hellenic Legion;;;;;;;;;;;;;x

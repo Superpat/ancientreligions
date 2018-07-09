@@ -269,7 +269,7 @@ character_event = {
 					is_society_grandmaster = no
 				}
 				save_event_target_as = satanists_recruiter
-				character_event = { id = ancrel.9100 }
+				character_event = { id = ancrel.9900 }
 			}
 		}
 		# Coven
@@ -285,7 +285,7 @@ character_event = {
 					is_society_grandmaster = no
 				}
 				save_event_target_as = satanists_recruiter
-				character_event = { id = ancrel.9101 }
+				character_event = { id = ancrel.9901 }
 			}
 		}
 		# Fangs
@@ -301,7 +301,7 @@ character_event = {
 					is_society_grandmaster = no
 				}
 				save_event_target_as = satanists_recruiter
-				character_event = { id = ancrel.9102 }
+				character_event = { id = ancrel.9902 }
 			}
 		}
 		#Secret religious society
@@ -427,7 +427,7 @@ character_event = {
 namespace = ancrel
 
 character_event = {
-	id = ancrel.9100
+	id = ancrel.9900
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -442,7 +442,7 @@ character_event = {
 }
 
 character_event = {
-	id = ancrel.9101
+	id = ancrel.9901
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -457,7 +457,7 @@ character_event = {
 }
 
 character_event = {
-	id = ancrel.9102
+	id = ancrel.9902
 	hide_window = yes
 
 	is_triggered_only = yes

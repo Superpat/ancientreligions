@@ -93,3 +93,17 @@ defined_text = {
 		localisation_key = acr_druid_of_the_circle
 	}
 }
+
+defined_text = {
+	name = GetReligiousHeadTitle
+
+	text = {
+		trigger = { religion_group = christian }
+		localisation_key = acr_pope
+	}
+
+	text = {
+		trigger = { religion_openly_in_celtic_subgroup_trigger = yes }
+		localisation_key = ARCH_DRUID
+	}
+}

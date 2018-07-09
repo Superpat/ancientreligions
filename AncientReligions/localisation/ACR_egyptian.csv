@@ -31,12 +31,24 @@ d_egyptian_pagan;The Paragon Cult of Amun;Le Culte Parandon d'Amon;The Paragon C
 d_egyptian_pagan_adj;Cultist;Sectateur;Cultist;;Cultist;;;;;;;;;x
 d_anubis;Anubis Guard;Garde d'Anubis;Anubis Guard;;Anubis Guard;;;;;;;;;x
 d_anubis_adj;Guardian;Garde;Guardian;;Guardian;;;;;;;;;x
+borrowed_from_d_anubis;Borrowed from the Anubis Guard;;;;;;;;;;;;x
+borrowed_from_d_anubis_desc;This character has an outstanding loan with the Anubis Guard.;;;;;;;;;;;;x
+expelled_d_anubis;Expelled the Anubis Guard;;;;;;;;;;;;x
+expelled_d_anubis_desc;This character, or a predecessor, banished the Anubis Guard from the realm and seized their titles.;;;;;;;;;;;;x
 d_horus;Horus Guard;Garde d'Horus;Horus Guard;;Horus Guard;;;;;;;;;x
 d_horus_adj;Guardian;Garde;Guardian;;Guardian;;;;;;;;;x
+borrowed_from_d_horus;Borrowed from the Horus Guard;;;;;;;;;;;;x
+borrowed_from_d_horus_desc;This character has an outstanding loan with the Horus Guard.;;;;;;;;;;;;x
+expelled_d_horus;Expelled the Horus Guard;;;;;;;;;;;;x
+expelled_d_horus_desc;This character, or a predecessor, banished the Horus Guard from the realm and seized their titles.;;;;;;;;;;;;x
 k_aten_pagan;The Paragon Cult of Aten;Le Culte Parandon d'Aton;;;;;;;;;;;;x
 k_aten_pagan_adj;Atenic;Atonien;;;;;;;;;;;;x
 d_burning_blades;The Burning Blades;Les lames brûlantes;;;;;;;;;;;;x
 d_burning_blades_adj;Burning;Ardent;;;;;;;;;;;;x
+borrowed_from_d_burning_blades;Borrowed from the Burning Blades;;;;;;;;;;;;x
+borrowed_from_d_burning_blades_desc;This character has an outstanding loan with the Burning Blades.;;;;;;;;;;;;x
+expelled_d_burning_blades;Expelled the Burning Blades;;;;;;;;;;;;x
+expelled_d_burning_blades_desc;This character, or a predecessor, banished the Burning Blades from the realm and seized their titles.;;;;;;;;;;;;x
 ###### FOA egyptian_pagan;;;;;;;;;;;;;;x
 count_egyptian_pagan;Irypat;Irypat;Irypat;;Irypat;;;;;;;;;x
 duke_egyptian_pagan;Nomarch;Nomarque;Nomarch;;Nomarch;;;;;;;;;x

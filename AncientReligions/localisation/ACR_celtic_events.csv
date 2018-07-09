@@ -506,7 +506,6 @@ abdicate_gaelic_desc;Even the great Nuada abdicated his throne after losing a li
 ###### Holy order events ;;;;;;;;;;;;;;x
 donate_money_to_fianna;Donate money to the Fianna;;;;;;;;;;;;;x
 donate_money_to_fianna_desc;I can donate money to the Fianna in exchange for Piety and lifelong respect from the [Root.Religion.GetName] Church;;;;;;;;;;;;;x
-expelled_d_fianna;Expelled the Fianna;;;;;;;;;;;;;x
 nick_the_boar_acr;The Boar;;;;;;;;;;;;;x
 nick_the_wolf_acr;the Wolf;le Loup;der Wolf;;el Lobo;;;;;;;;;;x
 organize_gwydion;Organize the Sons of Gwydion;;;;;;;;;;;;;x
@@ -605,7 +604,6 @@ donate_money_to_red_dragons;Donate money to the Red Dragon Knights;;;;;;;;;;;;;x
 donate_money_to_red_dragons_desc;I can donate money to the Red Dragon Knights in exchange for Piety and lifelong respect from the [Root.Religion.GetName] Church.;;;;;;;;;;;;;x
 expel_red_dragons;Expel the Red Dragons from your Realm;;;;;;;;;;;;;x
 expel_red_dragons_desc;Throw the Red Dragons out of your realm and seize their holdings.;;;;;;;;;;;;;x
-expelled_d_red_dragons;Expelled the Red Dragon Knights;;;;;;;;;;;;;x
 EVTTITLEancrel.1319;The Red Dragon Knights Assemble!;;;;;;;;;;;;;x
 EVTDESCancrel.1319;A band of warriors, dedicated to the protection of innocent druidic peoples everywhere, have decided to take a more active role on the European stage. Up till now the Red Dragon Knights, as they call themselves, have contented themselves with keeping safe the high ways and guarding the holy places of the druidic faith. The Red Dragon Knights will raise their banners for any druidic ruler at war with infidels, but they will not fight their brothers and sisters in the faith.;;;;;;;;;;;;;x
 EVTOPTAancrel.1319;May the gods guide their swords!;;;;;;;;;;;;;x

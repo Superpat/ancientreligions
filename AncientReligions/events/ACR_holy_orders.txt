@@ -9,9 +9,7 @@
 # request to join the order (courtier)
 character_event = {
 	id = ancrel.9100
-	desc = ancrel.9100.desc
-	picture = GFX_EVT_warrior_banners
-	border = GFX_event_normal_frame_religion
+	hide_window = yes # only shows for ai
 	
 	only_men = yes
 	min_age = 16
@@ -147,16 +145,16 @@ character_event = {
 		}
 	}
 	
-	option = {
-		name = ancrel.9100.a # Ask to go
+	option = { # Ask to go
+		name = OK
 		liege = {
 			character_event = {
 				id = ancrel.9101
 			}
 		}
 	}
-	option = {
-		name = ancrel.9100.b # It's a bad idea
+	option = { # It's a bad idea
+		name = OK
 	}
 }
 
@@ -200,9 +198,7 @@ character_event = {
 
 character_event = {
 	id = ancrel.9102
-	desc = ancrel.9102.desc
-	picture = GFX_EVT_warrior_banners
-	border = GFX_event_normal_frame_religion
+	hide_window = yes
 	
 	is_triggered_only = yes
 	
@@ -224,14 +220,12 @@ character_event = {
 
 character_event = {
 	id = ancrel.9103
-	desc = ancrel.9103.desc
-	picture = GFX_EVT_warrior_banners
-	border = GFX_event_normal_frame_religion
+	hide_window = yes
 	
 	is_triggered_only = yes
 	
 	option = {
-		name =  ancrel.9103.a
+		name =  OK
 		
 		opinion = {
 			who = FROM
@@ -505,9 +499,9 @@ character_event = {
 	immediate = {
 		random_character = {
 			limit = {
+				religion = ROOT
 				primary_title = {
-					is_banking_holy_order = yes
-					religion = ROOT
+					is_banking_holy_order_trigger = yes
 					ROOT = {
 						has_character_flag = borrowed_from_@PREV
 						NOT = { has_character_flag = sent_child_to_@PREV}
@@ -542,6 +536,7 @@ character_event = {
 	}
 }
 
+# the child
 character_event = {
 	id = ancrel.9114
 	hide_window = yes
@@ -617,7 +612,9 @@ letter_event = {
 			clear_borrowed_from_holy_order_modifier_effect = yes
 		}
 		event_target:holy_order = {
-			wealth = 300
+			holder_scope = {
+				wealth = 300
+			}
 		}
 	}
 	
@@ -637,7 +634,7 @@ character_event = {
 	
 	immediate = {
 		wealth = -300
-		event_target:lender = {
+		event_target:borrower = {
 			letter_event = {
 				id = ancrel.9118
 			}
@@ -761,7 +758,7 @@ character_event = {
 			}
 		}
 
-		save_event_target_as = lender
+		save_event_target_as = borrower
 	}
 }
 
@@ -791,7 +788,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		event_target:lender = {
+		event_target:borrower = {
 			letter_event = {
 				id = ancrel.9124
 			}
@@ -864,6 +861,9 @@ province_event = {
 	}
 }
 
+# triggered on inheritance
+# works because borrowed_from_@holy_order and expelled_@holy_order
+# are inherited modifiers
 character_event = {
 	id = ancrel.9299
 	hide_window = yes

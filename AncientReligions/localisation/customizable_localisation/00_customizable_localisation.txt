@@ -3353,31 +3353,31 @@ defined_text = {
 	### ACR ###
 	text = {
 		localisation_key = String_Celtic
-		trigger = { true_religion_celtic_pagan_trigger = yes }
+		trigger = { true_religion = celtic_pagan }
 	}
 	text = {
 		localisation_key = String_Druidic
-		trigger = { true_religion_celtic_pagan_reformed_trigger = yes }
+		trigger = { true_religion = celtic_pagan_reformed }
 	}
 	text = {
 		localisation_key = String_Hellenic
-		trigger = { true_religion_hellenic_pagan_trigger = yes }
+		trigger = { true_religion = hellenic_pagan }
 	}
 	text = {
 		localisation_key = String_Promethean
-		trigger = { true_religion_promethean_pagan_trigger = yes }
+		trigger = { true_religion = promethean_pagan }
 	}
 	text = {
 		localisation_key = String_Titanic
-		trigger = { true_religion_titan_pagan_trigger = yes }
+		trigger = { true_religion = titan_pagan }
 	}
 	text = {
 		localisation_key = String_Kemetic
-		trigger = { true_religion_egyptian_pagan_trigger = yes }
+		trigger = { true_religon = egyptian_pagan }
 	}
 	text = {
 		localisation_key = String_Atenic
-		trigger = { true_religion_aten_pagan_trigger = yes }
+		trigger = { true_religion = aten_pagan }
 	}	
 }
 
@@ -3752,31 +3752,31 @@ defined_text = {
 	### ACR ###
 	text = {
 		localisation_key = GOD_LUGH
-		trigger = { true_religion_celtic_pagan_trigger = yes }
+		trigger = { true_religion = celtic_pagan }
 	}
 	text = {
 		localisation_key = GOD_LUGH
-		trigger = { true_religion_celtic_pagan_reformed_trigger = yes }
+		trigger = { true_religion = celtic_pagan_reformed }
 	}
 	text = {
 		localisation_key = GOD_JUPITER
-		trigger = { true_religion_hellenic_pagan_trigger = yes }
+		trigger = { true_religion = hellenic_pagan }
 	}
 	text = {
 		localisation_key = GOD_PROMETHEUS
-		trigger = { true_religion_promethean_pagan_trigger = yes }
+		trigger = { true_religion = promethean_pagan }
 	}
 	text = {
 		localisation_key = GOD_KRONOS
-		trigger = { true_religion_titan_pagan_trigger = yes }
+		trigger = { true_religion = titan_pagan }
 	}
 	text = {
 		localisation_key = GOD_AMON
-		trigger = { true_religion_egyptian_pagan_trigger = yes }
+		trigger = { true_religon = egyptian_pagan }
 	}
 	text = {
 		localisation_key = GOD_ATEN
-		trigger = { true_religion_aten_pagan_trigger = yes }
+		trigger = { true_religion = aten_pagan }
 	}
 }
 
@@ -3872,31 +3872,31 @@ defined_text = {
 	### ACR ###
 	text = {
 		localisation_key = THE_BALLADS
-		trigger = { true_religion_celtic_pagan_trigger = yes }
+		trigger = { true_religion = celtic_pagan }
 	}
 	text = {
 		localisation_key = THE_STONES
-		trigger = { true_religion_celtic_pagan_reformed_trigger = yes }
+		trigger = { true_religion = celtic_pagan_reformed }
 	}
 	text = {
 		localisation_key = THE_THEOGONY
-		trigger = { true_religion_hellenic_pagan_trigger = yes }
+		trigger = { true_religion = hellenic_pagan }
 	}
 	text = {
 		localisation_key = THE_DIALOGUES
-		trigger = { true_religion_promethean_pagan_trigger = yes }
+		trigger = { true_religion = promethean_pagan }
 	}
 	text = {
 		localisation_key = THE_STONES
-		trigger = { true_religion_titan_pagan_trigger = yes }
+		trigger = { true_religion = titan_pagan }
 	}
 	text = {
 		localisation_key = BOOK_OF_THE_DEAD
-		trigger = { true_religion_egyptian_pagan_trigger = yes }
+		trigger = { true_religon = egyptian_pagan }
 	}
 	text = {
 		localisation_key = AMARNA_SCROLLS
-		trigger = { true_religion_aten_pagan_trigger = yes }
+		trigger = { true_religion = aten_pagan }
 	}
 }
 
@@ -4025,31 +4025,31 @@ defined_text = {
 	### ACR ###
 	text = {
 		localisation_key = String_Celt
-		trigger = { true_religion_celtic_pagan_trigger = yes }
+		trigger = { true_religion = celtic_pagan }
 	}
 	text = {
 		localisation_key = String_Druid
-		trigger = { true_religion_celtic_pagan_reformed_trigger = yes }
+		trigger = { true_religion = celtic_pagan_reformed }
 	}
 	text = {
 		localisation_key = String_Hellene
-		trigger = { true_religion_hellenic_pagan_trigger = yes }
+		trigger = { true_religion = hellenic_pagan }
 	}
 	text = {
 		localisation_key = String_Promethean
-		trigger = { true_religion_promethean_pagan_trigger = yes }
+		trigger = { true_religion = promethean_pagan }
 	}
 	text = {
 		localisation_key = String_Titan
-		trigger = { true_religion_titan_pagan_trigger = yes }
+		trigger = { true_religion = titan_pagan }
 	}
 	text = {
 		localisation_key = String_Kemetic
-		trigger = { true_religion_egyptian_pagan_trigger = yes }
+		trigger = { true_religon = egyptian_pagan }
 	}
 	text = {
 		localisation_key = String_Atenic
-		trigger = { true_religion_aten_pagan_trigger = yes }
+		trigger = { true_religion = aten_pagan }
 	}
 }
 
@@ -4191,31 +4191,31 @@ defined_text = {
 	### ACR ###
 	text = {
 		localisation_key = String_Celt
-		trigger = { true_religion_celtic_pagan_trigger = yes }
+		trigger = { true_religion = celtic_pagan }
 	}
 	text = {
 		localisation_key = String_Druid
-		trigger = { true_religion_celtic_pagan_reformed_trigger = yes }
+		trigger = { true_religion = celtic_pagan_reformed }
 	}
 	text = {
 		localisation_key = String_Hellene
-		trigger = { true_religion_hellenic_pagan_trigger = yes }
+		trigger = { true_religion = hellenic_pagan }
 	}
 	text = {
 		localisation_key = String_Promethean
-		trigger = { true_religion_promethean_pagan_trigger = yes }
+		trigger = { true_religion = promethean_pagan }
 	}
 	text = {
 		localisation_key = String_Titan
-		trigger = { true_religion_titan_pagan_trigger = yes }
+		trigger = { true_religion = titan_pagan }
 	}
 	text = {
 		localisation_key = String_Kemetic
-		trigger = { true_religion_egyptian_pagan_trigger = yes }
+		trigger = { true_religon = egyptian_pagan }
 	}
 	text = {
 		localisation_key = String_Atenic
-		trigger = { true_religion_aten_pagan_trigger = yes }
+		trigger = { true_religion = aten_pagan }
 	}
 }
 

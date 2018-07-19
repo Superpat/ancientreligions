@@ -130,6 +130,7 @@ targetted_decisions = {
 		only_playable = yes
 		
 		from_potential = {
+			ai = no
 			can_borrow_from_a_holy_order_trigger = yes
 		}
 
@@ -145,13 +146,14 @@ targetted_decisions = {
 		}
 
 		effect = {
-			primary_title = { save_event_target_as = holy_order }
-			
-			FROM = {
-				wealth = 300
-				save_event_target_as = borrower
-				set_character_flag = borrowed_from_@holy_order
-				set_character_modifier_for_holy_order_flags_effect = yes
+			primary_title = { 
+				save_event_target_as = holy_order
+				FROM = {
+					wealth = 300
+					save_event_target_as = borrower
+					set_character_flag = borrowed_from_@PREV
+					set_character_modifier_for_holy_order_flags_effect = yes
+				}
 			}
 			
 			hidden_tooltip = {
@@ -159,7 +161,6 @@ targetted_decisions = {
 					id = ancrel.9117
 				}
 			}
-			
 		}
 
 		ai_will_do = {
@@ -180,34 +181,24 @@ targetted_decisions = {
 		from_potential = {
 			has_dlc = "Sons of Abraham"
 			is_heretic = no
-			any_mercenary_band = {
-				holy_order = yes
-				holder_scope = {
-					religion = FROM
-					liege = {
-						NOT = { character = FROM }
-					}
-				}
-				FROM = {
-					NOT = { has_character_flag = expelled_@PREV }
-				}
-			}
 		}
 
 		potential = {
 			religion = FROM
 
-			liege = {
-				NOT = { character = FROM }
+			NOT = {
+				any_liege = {
+					character = FROM
+				}
 			}
 
 			primary_title = {
-				holy_order = yes
+				is_banking_holy_order_trigger = yes
 			}
 		}
 		
-		allow = {
-			wealth = 300
+		allow = { 
+			FROM = { wealth = 300 }
 		}
 		
 		effect = {
@@ -260,17 +251,6 @@ targetted_decisions = {
 				is_heretic = yes
 			}
 			
-			any_realm_province = {
-				any_province_lord = {
-					ROOT = {
-						OR = {
-							character = PREV
-							is_vassal_or_below = PREV
-						}
-					}
-				}
-			}
-			
 			has_dlc = "Sons of Abraham"
 		}
 
@@ -279,6 +259,18 @@ targetted_decisions = {
 				holy_order = yes
 			}
 			religion = FROM
+			FROM = {
+				any_realm_province = {
+					any_province_lord = {
+						ROOT = {
+							OR = {
+								character = PREV
+								is_vassal_or_below = PREV
+							}
+						}
+					}
+				}
+			}
 		}
 		
 		allow = {
@@ -315,15 +307,15 @@ targetted_decisions = {
 
 		from_potential = {
 			is_heretic = no
-			primary_title = { tier = KING }
+			primary_title = { higher_tier_than = DUKE }
 		}
 
 		potential = {
 			religion = FROM
 			NOT = { has_truce = FROM }
 			FROM = { NOT = { has_truce = PREV } }
-			liege = {
-				NOT = { character = FROM }
+			NOT = {
+				any_liege = { character = FROM }
 			}
 			NOT = { num_of_count_titles = 3 }
 			independent = yes
@@ -335,7 +327,7 @@ targetted_decisions = {
 		}
 
 		allow = {
-			wealth = 500
+			FROM = { wealth = 500 }
 		}
 		
 		effect = {

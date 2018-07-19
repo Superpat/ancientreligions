@@ -474,11 +474,7 @@ set_character_modifier_for_holy_order_flags_effect = {
 	if = {
 		limit = {
 			NOT = { has_character_modifier = borrowed_from_d_fianna }
-			d_fianna = {
-				PREV = {
-					has_character_flag = borrowed_from_@PREV
-				}
-			}
+			has_character_flag = borrowed_from_d_fianna
 		}
 		add_character_modifier = { 
 			name = borrowed_from_d_fianna
@@ -489,11 +485,7 @@ set_character_modifier_for_holy_order_flags_effect = {
 	if = {
 		limit = {
 			NOT = { has_character_modifier = borrowed_from_d_red_dragons }
-			d_red_dragons = {
-				PREV = {
-					has_character_flag = borrowed_from_@PREV
-				}
-			}
+			has_character_flag = borrowed_from_d_red_dragons
 		}
 		add_character_modifier = { 
 			name = borrowed_from_d_red_dragons
@@ -504,11 +496,7 @@ set_character_modifier_for_holy_order_flags_effect = {
 	if = {
 		limit = {
 			NOT = { has_character_modifier = borrowed_from_d_anubis }
-			d_anubis = {
-				PREV = {
-					has_character_flag = borrowed_from_@PREV
-				}
-			}
+			has_character_flag = borrowed_from_d_anubis
 		}
 		add_character_modifier = { 
 			name = borrowed_from_d_anubis
@@ -519,11 +507,7 @@ set_character_modifier_for_holy_order_flags_effect = {
 	if = {
 		limit = {
 			NOT = { has_character_modifier = borrowed_from_d_horus }
-			d_horus = {
-				PREV = {
-					has_character_flag = borrowed_from_@PREV
-				}
-			}
+			has_character_flag = borrowed_from_d_horus
 		}
 		add_character_modifier = { 
 			name = borrowed_from_d_horus
@@ -534,11 +518,7 @@ set_character_modifier_for_holy_order_flags_effect = {
 	if = {
 		limit = {
 			NOT = { has_character_modifier = borrowed_from_d_legio_hellenica }
-			d_legio_hellenica = {
-				PREV = {
-					has_character_flag = borrowed_from_@PREV
-				}
-			}
+			has_character_flag = borrowed_from_d_legio_hellenica
 		}
 		add_character_modifier = { 
 			name = borrowed_from_d_legio_hellenica
@@ -549,11 +529,7 @@ set_character_modifier_for_holy_order_flags_effect = {
 	if = {
 		limit = {
 			NOT = { has_character_modifier = borrowed_from_d_sacred_band }
-			d_sacred_band = {
-				PREV = {
-					has_character_flag = borrowed_from_@PREV
-				}
-			}
+			has_character_flag = borrowed_from_d_sacred_band
 		}
 		add_character_modifier = { 
 			name = borrowed_from_d_sacred_band
@@ -564,11 +540,7 @@ set_character_modifier_for_holy_order_flags_effect = {
 	if = {
 		limit = {
 			NOT = { has_character_modifier = borrowed_from_d_sickles }
-			d_sickles = {
-				PREV = {
-					has_character_flag = borrowed_from_@PREV
-				}
-			}
+			has_character_flag = borrowed_from_d_sickles
 		}
 		add_character_modifier = { 
 			name = borrowed_from_d_sickles
@@ -579,11 +551,7 @@ set_character_modifier_for_holy_order_flags_effect = {
 	if = {
 		limit = {
 			NOT = { has_character_modifier = borrowed_from_d_burning_blades }
-			d_burning_blades = {
-				PREV = {
-					has_character_flag = borrowed_from_@PREV
-				}
-			}
+			has_character_flag = borrowed_from_d_burning_blades
 		}
 		add_character_modifier = { 
 			name = borrowed_from_d_burning_blades
@@ -594,11 +562,7 @@ set_character_modifier_for_holy_order_flags_effect = {
 	if = {
 		limit = {
 			NOT = { has_character_modifier = borrowed_from_d_men_of_steel }
-			d_men_of_steel = {
-				PREV = {
-					has_character_flag = borrowed_from_@PREV
-				}
-			}
+			has_character_flag = borrowed_from_d_men_of_steel
 		}
 		add_character_modifier = { 
 			name = borrowed_from_d_men_of_steel
@@ -611,11 +575,7 @@ set_character_modifier_for_holy_order_flags_effect = {
 	if = {
 		limit = {
 			NOT = { has_character_modifier = expelled_d_fianna }
-			d_fianna = {
-				PREV = {
-					has_character_flag = expelled_@PREV
-				}
-			}
+			has_character_flag = expelled_d_fianna
 		}
 		add_character_modifier = { 
 			name = expelled_d_fianna
@@ -626,11 +586,7 @@ set_character_modifier_for_holy_order_flags_effect = {
 	if = {
 		limit = {
 			NOT = { has_character_modifier = expelled_d_red_dragons }
-			d_red_dragons = {
-				PREV = {
-					has_character_flag = expelled_@PREV
-				}
-			}
+			has_character_flag = expelled_d_red_dragons
 		}
 		add_character_modifier = { 
 			name = expelled_d_red_dragons
@@ -641,11 +597,7 @@ set_character_modifier_for_holy_order_flags_effect = {
 	if = {
 		limit = {
 			NOT = { has_character_modifier = expelled_d_anubis }
-			d_anubis = {
-				PREV = {
-					has_character_flag = expelled_@PREV
-				}
-			}
+			has_character_flag = expelled_d_anubis
 		}
 		add_character_modifier = { 
 			name = expelled_d_anubis
@@ -656,11 +608,7 @@ set_character_modifier_for_holy_order_flags_effect = {
 	if = {
 		limit = {
 			NOT = { has_character_modifier = expelled_d_horus }
-			d_horus = {
-				PREV = {
-					has_character_flag = expelled_@PREV
-				}
-			}
+			has_character_flag = expelled_d_horus
 		}
 		add_character_modifier = { 
 			name = expelled_d_horus
@@ -671,11 +619,7 @@ set_character_modifier_for_holy_order_flags_effect = {
 	if = {
 		limit = {
 			NOT = { has_character_modifier = expelled_d_legio_hellenica }
-			d_legio_hellenica = {
-				PREV = {
-					has_character_flag = expelled_@PREV
-				}
-			}
+			has_character_flag = expelled_d_legio_hellenica
 		}
 		add_character_modifier = { 
 			name = expelled_d_legio_hellenica
@@ -686,11 +630,7 @@ set_character_modifier_for_holy_order_flags_effect = {
 	if = {
 		limit = {
 			NOT = { has_character_modifier = expelled_d_sacred_band }
-			d_sacred_band = {
-				PREV = {
-					has_character_flag = expelled_@PREV
-				}
-			}
+			has_character_flag = expelled_d_sacred_band
 		}
 		add_character_modifier = { 
 			name = expelled_d_sacred_band
@@ -701,11 +641,7 @@ set_character_modifier_for_holy_order_flags_effect = {
 	if = {
 		limit = {
 			NOT = { has_character_modifier = expelled_d_sickles }
-			d_sickles = {
-				PREV = {
-					has_character_flag = expelled_@PREV
-				}
-			}
+			has_character_flag = expelled_d_sickles
 		}
 		add_character_modifier = { 
 			name = expelled_d_sickles
@@ -716,11 +652,7 @@ set_character_modifier_for_holy_order_flags_effect = {
 	if = {
 		limit = {
 			NOT = { has_character_modifier = expelled_d_burning_blades }
-			d_burning_blades = {
-				PREV = {
-					has_character_flag = expelled_@PREV
-				}
-			}
+			has_character_flag = expelled_d_burning_blades
 		}
 		add_character_modifier = { 
 			name = expelled_d_burning_blades
@@ -731,11 +663,7 @@ set_character_modifier_for_holy_order_flags_effect = {
 	if = {
 		limit = {
 			NOT = { has_character_modifier = expelled_d_men_of_steel }
-			d_men_of_steel = {
-				PREV = {
-					has_character_flag = expelled_@PREV
-				}
-			}
+			has_character_flag = expelled_d_men_of_steel
 		}
 		add_character_modifier = { 
 			name = expelled_d_men_of_steel

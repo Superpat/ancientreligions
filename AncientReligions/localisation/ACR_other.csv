@@ -65,6 +65,7 @@ must_not_fear_persecution;This character is too afraid of persecution to join.;;
 ###### Holy Order Template Events and Decisions ;;;;;;;;;;;;;x
 borrow_money_from_holy_order;Borrow Money from the [Root.GetTitle];;;;;;;;;;;;x
 borrow_money_from_holy_order_desc;Take out a loan of 300g with [Root.GetTitle]. They will want to be repaid eventually, and the church will disapprove of your debt.;;;;;;;;;;;;x
+no_loans_or_expulsion;Cannot have an extant loan with the order, nor can the order have been expelled from the lands.;;;;;;;;;;;;x
 donate_money_to_holy_order;Donate Money to the [Root.GetTitle];;;;;;;;;;;;x
 donate_money_to_holy_order_desc;Aid the [Root.GetTitle] in their cause by donating 300g. They will appreciate this gesture, and other members of the faith are sure to notice your generosity as well.;;;;;;;;;;;;x
 expel_holy_order;Expel the [Root.GetTitle];;;;;;;;;;;;x

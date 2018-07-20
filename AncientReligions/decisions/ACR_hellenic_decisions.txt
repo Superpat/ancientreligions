@@ -34,7 +34,7 @@ decisions = {
 			}
 			religion_authority = { modifier = pontifex_restored }
 			hidden_tooltip = {
-				narrative_event = { id = ancrel.2104 }
+				narrative_event = { id = hellenic.104 }
 			}
 		}
 		ai_will_do = {
@@ -84,7 +84,7 @@ decisions = {
 			wealth = -300
 			activate_title = { title = d_sacred_band status = yes }
 			hidden_tooltip = {
-				narrative_event = { id = ancrel.2036 }
+				narrative_event = { id = hellenic.036 }
 				create_character = {
 					random_traits = yes
 					religion = ROOT
@@ -155,7 +155,7 @@ decisions = {
 			set_character_flag = holding_titan_thysia
 			set_character_flag = recent_minor_decision
 			set_character_flag = do_not_disturb
-			hidden_tooltip = { character_event = { id = ancrel.3699 days = 150 } } # Safety catch flag clearing
+			hidden_tooltip = { character_event = { id = titan.99 days = 150 } } # Safety catch flag clearing
 			
 			if = {
 				limit = {
@@ -174,7 +174,7 @@ decisions = {
 			custom_tooltip = {
 				text = prepare_titan_thysia
 				hidden_tooltip = { 
-					character_event = { id = ancrel.3600 } 
+					character_event = { id = titan.0 } 
 				}
 			}
 		}
@@ -333,7 +333,7 @@ decisions = {
 				}
 
 				narrative_event = {
-					id = ancrel.3700 # bounce the event to have the warchief as root, ruler as from
+					id = titan.100 # bounce the event to have the warchief as root, ruler as from
 				}
 			}
 			religion_authority = {
@@ -409,7 +409,7 @@ decisions = {
 			religion_authority = { modifier = first_academy_restored }
 			set_character_flag = acr_restorer_of_academy
 			hidden_tooltip = {
-				narrative_event = { id = ancrel.3400 }
+				narrative_event = { id = promethean.400 }
 			}
 		}
 		ai_will_do = {
@@ -461,7 +461,7 @@ decisions = {
 		effect = {
 			wealth = -1000
 			set_global_flag = acr_crotone_building
-			character_event = { id = ancrel.3411 days = 1 }
+			character_event = { id = promethean.411 days = 1 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -524,7 +524,7 @@ decisions = {
 				text = prepare_unbinding_festival
 				hidden_tooltip = { 
 					add_character_modifier = { name = held_unbinding_festival_timer duration = 1000 } # three years, less 95 days
-					character_event = { id = ancrel.3450 }
+					character_event = { id = promethean.450 }
 				}
 			}
 		}
@@ -596,7 +596,7 @@ decisions = {
 				piety = 300
 				prestige = 100
 				narrative_event = {
-					id = ancrel.3550 # bounce the event to have the Grandmaster as root, ruler as from
+					id = promethean.550 # bounce the event to have the Grandmaster as root, ruler as from
 				}
 				create_character = {
 					random_traits = yes
@@ -740,7 +740,7 @@ decisions = {
 			set_character_flag = acr_changed_school
 			custom_tooltip = {
 				text = choose_school_tip
-				hidden_tooltip = { character_event = { id = ancrel.3404 } }
+				hidden_tooltip = { character_event = { id = promethean.404 } }
 			}
 		}
 		ai_will_do = {
@@ -868,7 +868,7 @@ targetted_decisions = {
 
 		effect = {
 			set_character_flag = flag_nominated_as_vestalis
-			d_hellenic_pagan = { owner = { character_event = { id = ancrel.2124 days = 1 } } }
+			d_hellenic_pagan = { owner = { character_event = { id = hellenic.124 days = 1 } } }
 		}
 
 		ai_will_do = {
@@ -936,7 +936,7 @@ targetted_decisions = {
 			FROM = {
 				prestige = -200
 				custom_tooltip = {
-					text = ancrel.3402.e.tt
+					text = promethean.402.e.tt
 					hidden_tooltip = {
 						random_demesne_province = {
 							limit = {
@@ -945,7 +945,7 @@ targetted_decisions = {
 
 							save_event_target_as = receiver_province
 						}
-						liege = { character_event = { id = ancrel.3405 days = 3 } }
+						liege = { character_event = { id = promethean.405 days = 3 } }
 					}
 				}
 			}
@@ -1092,7 +1092,7 @@ title_decisions = {
 
 							save_event_target_as = donor_province
 						}
-						character_event = { id = ancrel.3402 days = 0 }
+						character_event = { id = promethean.402 days = 0 }
 					}
 				}
 			}

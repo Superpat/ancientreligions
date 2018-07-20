@@ -3,7 +3,7 @@
 # ANCIENT RELIGIONS
 # - Aonach Tailteann Events
 #
-# Event ID ancrel.1190 - ancrel.1251 reserved
+# Event ID celtic.1190 - celtic.1251 reserved
 #
 ###################################
 
@@ -13,21 +13,21 @@ namespace = ancrel
 
 # Invitation
 character_event = {
-	id = ancrel.1190
-	desc = EVTDESCancrel.1190
+	id = celtic.1190
+	desc = celtic.1190.desc
 	picture = GFX_evt_courier
 
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.1190
+		name = EVTOPTAceltic.1190
 		prestige = 25
 		piety = 25
 		set_character_flag = attending_tailteann
 		set_character_flag = tailteann_death_phase
 	}
 	option = {
-		name = EVTOPTBancrel.1190
+		name = EVTOPTBceltic.1190
 		prestige = -50
 		piety = -50
 	}
@@ -35,14 +35,14 @@ character_event = {
 
 # Start of Aonach
 character_event = {
-	id = ancrel.1191
-	desc = EVTDESCancrel.1191
+	id = celtic.1191
+	desc = celtic.1191.desc
 	picture = GFX_evt_bonfire_celtic
 
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.1191
+		name = EVTOPTAceltic.1191
 		trigger = {
 			war = no
 		}
@@ -54,11 +54,11 @@ character_event = {
 			location = {
 				set_province_flag = tailteann_60_days
 			}
-			character_event = { id = ancrel.1199 days = 10 }
+			character_event = { id = celtic.1199 days = 10 }
 		}
 	}
 	option = {
-		name = EVTOPTBancrel.1191
+		name = EVTOPTBceltic.1191
 		trigger = {
 			war = yes
 		}
@@ -69,7 +69,7 @@ character_event = {
 				limit = {
 					has_character_flag = attending_tailteann
 				}
-				character_event = { id = ancrel.1192 }
+				character_event = { id = celtic.1192 }
 			}
 		}
 	}
@@ -77,14 +77,14 @@ character_event = {
 
 # Aonach has been cancelled
 character_event = {
-	id = ancrel.1192
-	desc = EVTDESCancrel.1192
+	id = celtic.1192
+	desc = celtic.1192.desc
 	picture = GFX_evt_bonfire_celtic
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.1192
+		name = EVTOPTAceltic.1192
 		prestige = -50
 		clr_character_flag = attending_tailteann
 	}
@@ -92,21 +92,21 @@ character_event = {
 
 # Invitations have gone out
 character_event = {
-	id = ancrel.1193
-	desc = EVTDESCancrel.1193
+	id = celtic.1193
+	desc = celtic.1193.desc
 	picture = GFX_evt_courier
 
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.1193
+		name = EVTOPTAceltic.1193
 	}
 }
 
 #[on_death] Ruler has died, the Aonach is over
 character_event = {
-	id = ancrel.1194
-	desc = EVTDESCancrel.1194
+	id = celtic.1194
+	desc = celtic.1194.desc
 	picture = GFX_evt_funeral_pyre
 
 	is_triggered_only = yes
@@ -116,7 +116,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.1194
+		name = EVTOPTAceltic.1194
 		clr_character_flag = tailteann_begins
 		clr_character_flag = winner_athletic
 		clr_character_flag = winner_fighting
@@ -140,10 +140,10 @@ character_event = {
 			clr_character_flag = attending_tailteann
 			clr_character_flag = attending_tailteann_event
 			letter_event = {
-				id = ancrel.1195
+				id = celtic.1195
 				days = 2
 				random = 2
-				tooltip = EVTTOOLTIPancrel.1195
+				tooltip = EVTTOOLTIPceltic.1195
 			}
 		}
 		any_vassal = {
@@ -156,10 +156,10 @@ character_event = {
 				}
 			}
 			letter_event = {
-				id = ancrel.1195
+				id = celtic.1195
 				days = 2
 				random = 2
-				tooltip = EVTTOOLTIPancrel.1195
+				tooltip = EVTTOOLTIPceltic.1195
 			}
 			set_character_flag = tailteann_has_ended
 			clr_character_flag = tailteann_craftsman
@@ -173,20 +173,20 @@ character_event = {
 
 # The Aonach has been cancelled due to Ruler's death
 letter_event = {
-	id = ancrel.1195
-	desc = EVTDESCancrel.1195
+	id = celtic.1195
+	desc = celtic.1195.desc
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.1195
+		name = EVTOPTAceltic.1195
 	}
 }
 
 # Choose who to honor at the bonfire
 character_event = {
-	id = ancrel.1196
-	desc = EVTDESCancrel.1196
+	id = celtic.1196
+	desc = celtic.1196.desc
 	picture = GFX_evt_bonfire_celtic
 	border = GFX_event_normal_frame_diplomacy
 	
@@ -214,7 +214,7 @@ character_event = {
 	hide_from = yes
 	
 	option = { # In memory of father
-		name = EVTOPTAancrel.1196
+		name = EVTOPTAceltic.1196
 		trigger = {
 			father_even_if_dead = {
 				is_alive = no
@@ -224,13 +224,13 @@ character_event = {
 		custom_tooltip = {
 			text = honor_dead_tailteann
 			hidden_tooltip = { 
-				narrative_event = { id = ancrel.1197 days = 2 }
+				narrative_event = { id = celtic.1197 days = 2 }
 			}
 		}
 	}
 	
 	option = { # In memory of mother
-		name = EVTOPTBancrel.1196
+		name = EVTOPTBceltic.1196
 		trigger = {
 			mother = {
 				is_alive = no
@@ -240,7 +240,7 @@ character_event = {
 		custom_tooltip = {
 			text = honor_dead_tailteann
 			hidden_tooltip = { 
-				narrative_event = { id = ancrel.1198 days = 2 }
+				narrative_event = { id = celtic.1198 days = 2 }
 			}
 		}
 	}	
@@ -248,9 +248,9 @@ character_event = {
 
 # In memory of father
 narrative_event = {
-	id = ancrel.1197
-	title = EVTNAMEancrel.1197
-	desc = EVTDESCancrel.1197
+	id = celtic.1197
+	title = EVTNAMEceltic.1197
+	desc = celtic.1197.desc
 	picture = GFX_evt_bonfire_celtic
 	border = GFX_event_narrative_frame_diplomacy
 	
@@ -259,7 +259,7 @@ narrative_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAancrel.1197
+		name = EVTOPTAceltic.1197
 		piety = 100
 		clr_character_flag = choose_dead_one_tailteann
 		set_character_flag = chosen_dead_one_tailteann
@@ -268,9 +268,9 @@ narrative_event = {
 
 # In memory of mother
 narrative_event = {
-	id = ancrel.1198
-	title = EVTNAMEancrel.1198
-	desc = EVTDESCancrel.1198
+	id = celtic.1198
+	title = EVTNAMEceltic.1198
+	desc = celtic.1198.desc
 	picture = GFX_evt_bonfire_celtic
 	border = GFX_event_narrative_frame_diplomacy
 	
@@ -279,7 +279,7 @@ narrative_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAancrel.1198
+		name = EVTOPTAceltic.1198
 		piety = 100
 		clr_character_flag = choose_dead_one_tailteann
 		set_character_flag = chosen_dead_one_tailteann
@@ -288,14 +288,14 @@ narrative_event = {
 
 # Ruler chooses which caste to favor
 character_event = {
-	id = ancrel.1199
-	desc = EVTDESCancrel.1199
+	id = celtic.1199
+	desc = celtic.1199.desc
 	picture = GFX_evt_ollamh_laws
 	
 	is_triggered_only = yes
 	
 	option = { # Favor warrior caste
-		name = EVTOPTAancrel.1199
+		name = EVTOPTAceltic.1199
 		custom_tooltip = {
 			text = give_laws_ollam
 			change_martial = 1
@@ -313,16 +313,16 @@ character_event = {
 				any_realm_character = {
 					if = {
 						limit = { has_character_flag = tailteann_death_phase }
-						character_event = { id = ancrel.1200 }
+						character_event = { id = celtic.1200 }
 					}
 				}
-				character_event = { id = ancrel.1207 }
+				character_event = { id = celtic.1207 }
 			}
 		}
 	}
 	
 	option = { # Favor Druidic caste
-		name = EVTOPTBancrel.1199
+		name = EVTOPTBceltic.1199
 		custom_tooltip = {
 			text = give_laws_ollam
 			change_learning = 1
@@ -340,16 +340,16 @@ character_event = {
 				any_realm_character = {
 					if = {
 						limit = { has_character_flag = tailteann_death_phase }
-						character_event = { id = ancrel.1201 }
+						character_event = { id = celtic.1201 }
 					}
 				}
-				character_event = { id = ancrel.1208 }
+				character_event = { id = celtic.1208 }
 			}
 		}
 	}
 	
 	option = { # Favor merchant caste
-		name = EVTOPTCancrel.1199
+		name = EVTOPTCceltic.1199
 		custom_tooltip = {
 			text = give_laws_ollam
 			change_stewardship = 1
@@ -367,16 +367,16 @@ character_event = {
 				any_realm_character = {
 					if = {
 						limit = { has_character_flag = tailteann_death_phase }
-						character_event = { id = ancrel.1202 }
+						character_event = { id = celtic.1202 }
 					}
 				}
-				character_event = { id = ancrel.1209 }
+				character_event = { id = celtic.1209 }
 			}
 		}
 	}
 	
 	option = { # Balance
-		name = EVTOPTDancrel.1199
+		name = EVTOPTDceltic.1199
 		trigger = {
 			diplomacy = 12
 		}
@@ -395,16 +395,16 @@ character_event = {
 				any_realm_character = {
 					if = {
 						limit = { has_character_flag = tailteann_death_phase }
-						character_event = { id = ancrel.1203 }
+						character_event = { id = celtic.1203 }
 					}
 				}
-				character_event = { id = ancrel.1210 }
+				character_event = { id = celtic.1210 }
 			}
 		}
 	}
 	
 	option = { # Favor the crown
-		name = EVTOPTEancrel.1199
+		name = EVTOPTEceltic.1199
 		trigger = {
 			trait = ambitious
 			trait = diligent
@@ -426,16 +426,16 @@ character_event = {
 				any_realm_character = {
 					if = {
 						limit = { has_character_flag = tailteann_death_phase }
-						character_event = { id = ancrel.1204 }
+						character_event = { id = celtic.1204 }
 					}
 				}
-				character_event = { id = ancrel.1211 }
+				character_event = { id = celtic.1211 }
 			}
 		}
 	}
 	
 	option = { # Fianna
-		name = EVTOPTFancrel.1199
+		name = EVTOPTFceltic.1199
 		trigger = {
 			trait = fian
 		}
@@ -454,16 +454,16 @@ character_event = {
 				any_realm_character = {
 					if = {
 						limit = { has_character_flag = tailteann_death_phase }
-						character_event = { id = ancrel.1205 }
+						character_event = { id = celtic.1205 }
 					}
 				}
-				character_event = { id = ancrel.1212 }
+				character_event = { id = celtic.1212 }
 			}
 		}
 	}
 	
 	option = { # Lunatic
-		name = EVTOPTGancrel.1199
+		name = EVTOPTGceltic.1199
 		trigger = {
 			trait = lunatic
 		}
@@ -483,10 +483,10 @@ character_event = {
 				any_realm_character = {
 					if = {
 						limit = { has_character_flag = tailteann_death_phase }
-						character_event = { id = ancrel.1206 }
+						character_event = { id = celtic.1206 }
 					}
 				}
-				character_event = { id = ancrel.1213 }
+				character_event = { id = celtic.1213 }
 			}
 		}
 	}
@@ -494,260 +494,260 @@ character_event = {
 
 #  Learn of new laws from Ollamh ( Wariors )
 character_event = {
-	id = ancrel.1200
-	desc = EVTDESCancrel.1200
+	id = celtic.1200
+	desc = celtic.1200.desc
 	picture = GFX_evt_bonfire_celtic
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.1200
+		name = EVTOPTAceltic.1200
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_phase
 			clr_character_flag = chosen_dead_one_tailteann
-			character_event = { id = ancrel.1251 }
+			character_event = { id = celtic.1251 }
 		}
 	}
 }
 
 #  Learn of new laws from Ollamh ( Druids )
 character_event = {
-	id = ancrel.1201
-	desc = EVTDESCancrel.1201
+	id = celtic.1201
+	desc = celtic.1201.desc
 	picture = GFX_evt_bonfire_celtic
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.1201
+		name = EVTOPTAceltic.1201
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_phase
 			clr_character_flag = chosen_dead_one_tailteann
-			character_event = { id = ancrel.1251 }
+			character_event = { id = celtic.1251 }
 		}
 	}
 }
 
 #  Learn of new laws from Ollamh ( Merchants )
 character_event = {
-	id = ancrel.1202
-	desc = EVTDESCancrel.1202
+	id = celtic.1202
+	desc = celtic.1202.desc
 	picture = GFX_evt_bonfire_celtic
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.1202
+		name = EVTOPTAceltic.1202
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_phase
 			clr_character_flag = chosen_dead_one_tailteann
-			character_event = { id = ancrel.1251 }
+			character_event = { id = celtic.1251 }
 		}
 	}
 }
 
 #  Learn of new laws from Ollamh ( Balanced )
 character_event = {
-	id = ancrel.1203
-	desc = EVTDESCancrel.1203
+	id = celtic.1203
+	desc = celtic.1203.desc
 	picture = GFX_evt_bonfire_celtic
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.1203
+		name = EVTOPTAceltic.1203
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_phase
 			clr_character_flag = chosen_dead_one_tailteann
-			character_event = { id = ancrel.1251 }
+			character_event = { id = celtic.1251 }
 		}
 	}
 }
 
 #  Learn of new laws from Ollamh ( Fianna )
 character_event = {
-	id = ancrel.1204
-	desc = EVTDESCancrel.1204
+	id = celtic.1204
+	desc = celtic.1204.desc
 	picture = GFX_evt_bonfire_celtic
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.1204
+		name = EVTOPTAceltic.1204
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_phase
 			clr_character_flag = chosen_dead_one_tailteann
-			character_event = { id = ancrel.1251 }
+			character_event = { id = celtic.1251 }
 		}
 	}
 }
 
 #  Learn of new laws from Ollamh ( Crown )
 character_event = {
-	id = ancrel.1205
-	desc = EVTDESCancrel.1205
+	id = celtic.1205
+	desc = celtic.1205.desc
 	picture = GFX_evt_bonfire_celtic
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.1205
+		name = EVTOPTAceltic.1205
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_phase
 			clr_character_flag = chosen_dead_one_tailteann
-			character_event = { id = ancrel.1251 }
+			character_event = { id = celtic.1251 }
 		}
 	}
 }
 
 #  Learn of new laws from Ollamh ( Birds )
 character_event = {
-	id = ancrel.1206
-	desc = EVTDESCancrel.1206
+	id = celtic.1206
+	desc = celtic.1206.desc
 	picture = GFX_evt_bonfire_celtic
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.1206
+		name = EVTOPTAceltic.1206
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_phase
 			clr_character_flag = chosen_dead_one_tailteann
-			character_event = { id = ancrel.1251 }
+			character_event = { id = celtic.1251 }
 		}
 	}
 }
 
 # Law Phase ( Wariors )
 character_event = {
-	id = ancrel.1207
-	desc = EVTDESCancrel.1200
+	id = celtic.1207
+	desc = celtic.1200.desc
 	picture = GFX_evt_bonfire_celtic
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.1207
+		name = EVTOPTAceltic.1207
 		hidden_tooltip = {
 			clr_character_flag = tailteann_law_phase
 			set_character_flag = tailteann_game_phase
-			character_event = { id = ancrel.1251 }
+			character_event = { id = celtic.1251 }
 		}
 	}
 }
 
 #  Law phase ( Druids )
 character_event = {
-	id = ancrel.1208
-	desc = EVTDESCancrel.1201
+	id = celtic.1208
+	desc = celtic.1201.desc
 	picture = GFX_evt_bonfire_celtic
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.1208
+		name = EVTOPTAceltic.1208
 		hidden_tooltip = {
 			clr_character_flag = tailteann_law_phase
 			set_character_flag = tailteann_game_phase
-			character_event = { id = ancrel.1251 }
+			character_event = { id = celtic.1251 }
 		}
 	}
 }
 
 #  Law phase ( Merchants )
 character_event = {
-	id = ancrel.1209
-	desc = EVTDESCancrel.1202
+	id = celtic.1209
+	desc = celtic.1202.desc
 	picture = GFX_evt_bonfire_celtic
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.1209
+		name = EVTOPTAceltic.1209
 		hidden_tooltip = {
 			clr_character_flag = tailteann_law_phase
 			set_character_flag = tailteann_game_phase
-			character_event = { id = ancrel.1251 }
+			character_event = { id = celtic.1251 }
 		}
 	}
 }
 
 #  Law phase ( Balanced )
 character_event = {
-	id = ancrel.1210
-	desc = EVTDESCancrel.1203
+	id = celtic.1210
+	desc = celtic.1203.desc
 	picture = GFX_evt_bonfire_celtic
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.1210
+		name = EVTOPTAceltic.1210
 		hidden_tooltip = {
 			clr_character_flag = tailteann_law_phase
 			set_character_flag = tailteann_game_phase
-			character_event = { id = ancrel.1251 }
+			character_event = { id = celtic.1251 }
 		}
 	}
 }
 
 #  Law phase ( Fianna )
 character_event = {
-	id = ancrel.1211
-	desc = EVTDESCancrel.1204
+	id = celtic.1211
+	desc = celtic.1204.desc
 	picture = GFX_evt_bonfire_celtic
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.1211
+		name = EVTOPTAceltic.1211
 		hidden_tooltip = {
 			clr_character_flag = tailteann_law_phase
 			set_character_flag = tailteann_game_phase
-			character_event = { id = ancrel.1251 }
+			character_event = { id = celtic.1251 }
 		}
 	}
 }
 
 #  Law phase ( Crown )
 character_event = {
-	id = ancrel.1212
-	desc = EVTDESCancrel.1205
+	id = celtic.1212
+	desc = celtic.1205.desc
 	picture = GFX_evt_bonfire_celtic
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.1212
+		name = EVTOPTAceltic.1212
 		hidden_tooltip = {
 			clr_character_flag = tailteann_law_phase
 			set_character_flag = tailteann_game_phase
-			character_event = { id = ancrel.1251 }
+			character_event = { id = celtic.1251 }
 		}
 	}
 }
 
 #  Law phase ( Birds )
 character_event = {
-	id = ancrel.1213
-	desc = EVTDESCancrel.1206
+	id = celtic.1213
+	desc = celtic.1206.desc
 	picture = GFX_evt_bonfire_celtic
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.1213
+		name = EVTOPTAceltic.1213
 		hidden_tooltip = {
 			clr_character_flag = tailteann_law_phase
 			set_character_flag = tailteann_game_phase
-			character_event = { id = ancrel.1251 }
+			character_event = { id = celtic.1251 }
 		}
 	}
 }
 
 # Character is the best athlete
 character_event = {
-	id = ancrel.1214
-	desc = EVTDESCancrel.1214
+	id = celtic.1214
+	desc = celtic.1214.desc
 	picture = GFX_evt_athlete
 
 	min_age = 16
@@ -828,7 +828,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.1214
+		name = EVTOPTAceltic.1214
 		wealth = 100
 		prestige = 300
 		hidden_tooltip = {
@@ -840,7 +840,7 @@ character_event = {
 						}
 					}
 				}
-				top_liege = { character_event = { id = ancrel.1215 } }
+				top_liege = { character_event = { id = celtic.1215 } }
 			}
 		}
 	}
@@ -848,14 +848,14 @@ character_event = {
 
 # Inform about best athlete
 character_event = {
-	id = ancrel.1215
-	desc = EVTDESCancrel.1215
+	id = celtic.1215
+	desc = celtic.1215.desc
 	picture = GFX_evt_athlete
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.1215
+		name = EVTOPTAceltic.1215
 		FROM = {
 			opinion = {
 				modifier = opinion_tailteann_athlete
@@ -868,8 +868,8 @@ character_event = {
 
 # Best fighter
 character_event = {
-	id = ancrel.1216
-	desc = EVTDESCancrel.1216
+	id = celtic.1216
+	desc = celtic.1216.desc
 	picture = GFX_evt_melee
 
 	min_age = 16
@@ -958,7 +958,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.1216
+		name = EVTOPTAceltic.1216
 		wealth = 75
 		prestige = 250
 		hidden_tooltip = {
@@ -970,7 +970,7 @@ character_event = {
 						}
 					}
 				}
-				top_liege = { character_event = { id = ancrel.1217 } }
+				top_liege = { character_event = { id = celtic.1217 } }
 			}
 		}
 	}
@@ -978,14 +978,14 @@ character_event = {
 
 # Inform about best fighter
 character_event = {
-	id = ancrel.1217
-	desc = EVTDESCancrel.1217
+	id = celtic.1217
+	desc = celtic.1217.desc
 	picture = GFX_evt_melee
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.1217
+		name = EVTOPTAceltic.1217
 		FROM = {
 			opinion = {
 				modifier = opinion_tailteann_fighter
@@ -998,8 +998,8 @@ character_event = {
 
 # Character wins best crafstman
 character_event = {
-	id = ancrel.1218
-	desc = EVTDESCancrel.1218
+	id = celtic.1218
+	desc = celtic.1218.desc
 	picture = GFX_evt_craftsman
 
 	min_age = 16
@@ -1085,7 +1085,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.1218
+		name = EVTOPTAceltic.1218
 		wealth = 50
 		prestige = 200
 		hidden_tooltip = {
@@ -1097,7 +1097,7 @@ character_event = {
 						}
 					}
 				}
-				top_liege = { character_event = { id = ancrel.1219 } }
+				top_liege = { character_event = { id = celtic.1219 } }
 			}
 		}
 	}
@@ -1105,14 +1105,14 @@ character_event = {
 
 # Inform about best crafstman
 character_event = {
-	id = ancrel.1219
-	desc = EVTDESCancrel.1219
+	id = celtic.1219
+	desc = celtic.1219.desc
 	picture = GFX_evt_craftsman
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.1219
+		name = EVTOPTAceltic.1219
 		FROM = {
 			opinion = {
 				modifier = opinion_tailteann_craftsman
@@ -1125,8 +1125,8 @@ character_event = {
 
 # Tailteann is over
 province_event = {
-	id = ancrel.1220
-	desc = EVTDESCancrel.1220
+	id = celtic.1220
+	desc = celtic.1220.desc
 	picture = GFX_evt_bonfire_celtic
 
 	trigger = {
@@ -1146,7 +1146,7 @@ province_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.1220
+		name = EVTOPTAceltic.1220
 		clr_province_flag = tailteann_60_days
 		owner = {
 			clr_character_flag = tailteann_game_phase
@@ -1193,22 +1193,22 @@ province_event = {
 				hidden_tooltip = {
 					random_list = {
 						10 = {
-							character_event = { id = ancrel.1224 }
+							character_event = { id = celtic.1224 }
 						}
 						10 = {
-							character_event = { id = ancrel.1225 }
+							character_event = { id = celtic.1225 }
 						}
 						10 = {
-							character_event = { id = ancrel.1226 }
+							character_event = { id = celtic.1226 }
 						}
 						10 = {
-							character_event = { id = ancrel.1227 }
+							character_event = { id = celtic.1227 }
 						}
 						10 = {
-							character_event = { id = ancrel.1228 }
+							character_event = { id = celtic.1228 }
 						}
 						10 = {
-							character_event = { id = ancrel.1229 }
+							character_event = { id = celtic.1229 }
 						}
 					}
 				}
@@ -1227,8 +1227,8 @@ province_event = {
 
 # Message about death
 character_event = {
-	id = ancrel.1221
-	desc = EVTDESCancrel.1221
+	id = celtic.1221
+	desc = celtic.1221.desc
 	picture = GFX_evt_funeral_pyre
 	
 	is_triggered_only = yes
@@ -1239,18 +1239,18 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.1221
+		name = EVTOPTAceltic.1221
 	}
 	option = {
-		name = EVTOPTBancrel.1221
+		name = EVTOPTBceltic.1221
 		set_character_flag = no_msg_death
 	}
 }
 
 # Message about maimed
 character_event = {
-	id = ancrel.1222
-	desc = EVTDESCancrel.1222
+	id = celtic.1222
+	desc = celtic.1222.desc
 	picture = GFX_evt_viking_throneroom_oldgods
 	
 	is_triggered_only = yes
@@ -1261,18 +1261,18 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.1221
+		name = EVTOPTAceltic.1221
 	}
 	option = {
-		name = EVTOPTBancrel.1221
+		name = EVTOPTBceltic.1221
 		set_character_flag = no_msg_maimed
 	}
 }
 
 # Message about wounded
 character_event = {
-	id = ancrel.1223
-	desc = EVTDESCancrel.1223
+	id = celtic.1223
+	desc = celtic.1223.desc
 	picture = GFX_evt_viking_throneroom_oldgods
 
 	trigger = {
@@ -1283,102 +1283,102 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.1221
+		name = EVTOPTAceltic.1221
 	}
 	option = {
-		name = EVTOPTBancrel.1221
+		name = EVTOPTBceltic.1221
 		set_character_flag = no_msg_wounded
 	}
 }
 
 # End of tailteann event
 character_event = {
-	id = ancrel.1224
-	desc = EVTDESCancrel.1224
+	id = celtic.1224
+	desc = celtic.1224.desc
 	picture = GFX_evt_athlete
 
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.1224
+		name = EVTOPTAceltic.1224
 		prestige = 50
 	}
 }
 
 # End of tailteann event
 character_event = {
-	id = ancrel.1225
-	desc = EVTDESCancrel.1225
+	id = celtic.1225
+	desc = celtic.1225.desc
 	picture = GFX_evt_athlete
 
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.1225
+		name = EVTOPTAceltic.1225
 		prestige = 100
 	}
 }
 
 # End of tailteann event
 character_event = {
-	id = ancrel.1226
-	desc = EVTDESCancrel.1226
+	id = celtic.1226
+	desc = celtic.1226.desc
 	picture = GFX_evt_athlete
 
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.1226
+		name = EVTOPTAceltic.1226
 		prestige = -50
 	}
 }
 
 # End of tailteann event
 character_event = {
-	id = ancrel.1227
-	desc = EVTDESCancrel.1227
+	id = celtic.1227
+	desc = celtic.1227.desc
 	picture = GFX_evt_athlete
 
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.1227
+		name = EVTOPTAceltic.1227
 		prestige = -100
 	}
 }
 
 # End of tailteann event
 character_event = {
-	id = ancrel.1228
-	desc = EVTDESCancrel.1228
+	id = celtic.1228
+	desc = celtic.1228.desc
 	picture = GFX_evt_athlete
 
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.1228
+		name = EVTOPTAceltic.1228
 		change_martial = 1
 	}
 }
 
 # End of tailteann event
 character_event = {
-	id = ancrel.1229
-	desc = EVTDESCancrel.1229
+	id = celtic.1229
+	desc = celtic.1229.desc
 	picture = GFX_evt_athlete
 
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.1229
+		name = EVTOPTAceltic.1229
 		change_martial = -1
 	}
 }	
 
 # Character is killed
 character_event = {
-	id = ancrel.1230
-	desc = EVTDESCancrel.1230
+	id = celtic.1230
+	desc = celtic.1230.desc
 	picture = GFX_evt_death
 
 	min_age = 16
@@ -1452,7 +1452,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.1230
+		name = EVTOPTAceltic.1230
 		death = {
 			death_reason = death_battle
 		}
@@ -1465,7 +1465,7 @@ character_event = {
 						}
 					}
 				}
-				top_liege = { character_event = { id = ancrel.1221 } }
+				top_liege = { character_event = { id = celtic.1221 } }
 			}
 		}
 	}
@@ -1473,8 +1473,8 @@ character_event = {
 
 # Character is maimed
 character_event = {
-	id = ancrel.1231
-	desc = EVTDESCancrel.1231
+	id = celtic.1231
+	desc = celtic.1231.desc
 	picture = GFX_evt_melee
 
 	min_age = 16
@@ -1551,7 +1551,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.1231
+		name = EVTOPTAceltic.1231
 		add_trait = maimed
 		hidden_tooltip = {
 			if = {
@@ -1562,7 +1562,7 @@ character_event = {
 						}
 					}
 				}
-				top_liege = { character_event = { id = ancrel.1222 } }
+				top_liege = { character_event = { id = celtic.1222 } }
 			}
 		}
 	}
@@ -1570,8 +1570,8 @@ character_event = {
 
 # Character is wounded
 character_event = {
-	id = ancrel.1232
-	desc = EVTDESCancrel.1232
+	id = celtic.1232
+	desc = celtic.1232.desc
 	picture = GFX_evt_melee
 
 	min_age = 16
@@ -1648,7 +1648,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.1232
+		name = EVTOPTAceltic.1232
 		add_trait = wounded
 		hidden_tooltip = {
 			if = {
@@ -1659,7 +1659,7 @@ character_event = {
 						}
 					}
 				}
-				top_liege = { character_event = { id = ancrel.1223 } }
+				top_liege = { character_event = { id = celtic.1223 } }
 			}
 		}
 	}
@@ -1667,8 +1667,8 @@ character_event = {
 
 # Character becomes craven
 character_event = {
-	id = ancrel.1233
-	desc = EVTDESCancrel.1233
+	id = celtic.1233
+	desc = celtic.1233.desc
 	picture = GFX_evt_melee
 
 	min_age = 16
@@ -1734,15 +1734,15 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.1233
+		name = EVTOPTAceltic.1233
 		add_trait = craven
 	}
 }
 
 # Character becomes brave
 character_event = {
-	id = ancrel.1234
-	desc = EVTDESCancrel.1234
+	id = celtic.1234
+	desc = celtic.1234.desc
 	picture = GFX_evt_melee
 
 	min_age = 16
@@ -1808,15 +1808,15 @@ character_event = {
 	}	
 
 	option = {
-		name = EVTOPTAancrel.1234
+		name = EVTOPTAceltic.1234
 		add_trait = brave
 	}
 }
 
 # Character becomes tough soldier
 character_event = {
-	id = ancrel.1235
-	desc = EVTDESCancrel.1235
+	id = celtic.1235
+	desc = celtic.1235.desc
 	picture = GFX_evt_athlete
 
 	min_age = 16
@@ -1880,7 +1880,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.1235
+		name = EVTOPTAceltic.1235
 		remove_trait = misguided_warrior
 		add_trait = tough_soldier 
 	}
@@ -1888,8 +1888,8 @@ character_event = {
 
 # Character becomes skilled tactician
 character_event = {
-	id = ancrel.1236
-	desc = EVTDESCancrel.1236
+	id = celtic.1236
+	desc = celtic.1236.desc
 	picture = GFX_evt_athlete
 
 	min_age = 16
@@ -1953,7 +1953,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.1236
+		name = EVTOPTAceltic.1236
 		remove_trait = tough_soldier 
 		add_trait = skilled_tactician 
 	}
@@ -1961,8 +1961,8 @@ character_event = {
 
 # Character becomes brilliant strategist
 character_event = {
-	id = ancrel.1237
-	desc = EVTDESCancrel.1237
+	id = celtic.1237
+	desc = celtic.1237.desc
 	picture = GFX_evt_athlete
 
 	min_age = 16
@@ -2026,7 +2026,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.1237
+		name = EVTOPTAceltic.1237
 		remove_trait = skilled_tactician 
 		add_trait = brilliant_strategist 
 	}
@@ -2034,8 +2034,8 @@ character_event = {
 
 # Character becomes skilled tactician
 character_event = {
-	id = ancrel.1238
-	desc = EVTDESCancrel.1238
+	id = celtic.1238
+	desc = celtic.1238.desc
 	picture = GFX_evt_athlete
 
 	min_age = 16
@@ -2099,7 +2099,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.1238
+		name = EVTOPTAceltic.1238
 		remove_trait = brilliant_strategist
 		add_trait = skilled_tactician  
 	}
@@ -2107,8 +2107,8 @@ character_event = {
 
 # Character becomes tough soldier
 character_event = {
-	id = ancrel.1239
-	desc = EVTDESCancrel.1239
+	id = celtic.1239
+	desc = celtic.1239.desc
 	picture = GFX_evt_athlete
 
 	min_age = 16
@@ -2172,7 +2172,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.1239
+		name = EVTOPTAceltic.1239
 		remove_trait = skilled_tactician
 		add_trait = tough_soldier
 	}
@@ -2180,8 +2180,8 @@ character_event = {
 
 # Character becomes misguided warrior
 character_event = {
-	id = ancrel.1240
-	desc = EVTDESCancrel.1240
+	id = celtic.1240
+	desc = celtic.1240.desc
 	picture = GFX_evt_athlete
 
 	min_age = 16
@@ -2245,7 +2245,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.1240
+		name = EVTOPTAceltic.1240
 		remove_trait = tough_soldier
 		add_trait = misguided_warrior
 	}
@@ -2253,8 +2253,8 @@ character_event = {
 
 # Character becomes homosexual
 character_event = {
-	id = ancrel.1241
-	desc = EVTDESCancrel.1241
+	id = celtic.1241
+	desc = celtic.1241.desc
 	picture = GFX_evt_shadowy_cabal
 
 	min_age = 16
@@ -2322,15 +2322,15 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.1241
+		name = EVTOPTAceltic.1241
 		add_trait = homosexual
 	}
 }
 
 # Character becomes syphilitic
 character_event = {
-	id = ancrel.1242
-	desc = EVTDESCancrel.1242
+	id = celtic.1242
+	desc = celtic.1242.desc
 	picture = GFX_evt_lovers
 
 	min_age = 16
@@ -2387,15 +2387,15 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.1242
+		name = EVTOPTAceltic.1242
 		add_trait = syphilitic
 	}
 }
 
 # Character becomes drunkard
 character_event = {
-	id = ancrel.1243
-	desc = EVTDESCancrel.1243
+	id = celtic.1243
+	desc = celtic.1243.desc
 	picture = GFX_evt_drunk
 	
 	min_age = 16
@@ -2451,15 +2451,15 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.1243
+		name = EVTOPTAceltic.1243
 		add_trait = drunkard
 	}
 }
 
 # Character becomes duelist
 character_event = {
-	id = ancrel.1244
-	desc = EVTDESCancrel.1244
+	id = celtic.1244
+	desc = celtic.1244.desc
 	picture = GFX_evt_melee
 	
 	min_age = 16
@@ -2519,15 +2519,15 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.1244
+		name = EVTOPTAceltic.1244
 		add_trait = duelist
 	}
 }
 
 # Character gains diplomacy
 character_event = {
-	id = ancrel.1245
-	desc = EVTDESCancrel.1245
+	id = celtic.1245
+	desc = celtic.1245.desc
 	picture = GFX_evt_whispers
 
 	min_age = 16
@@ -2597,15 +2597,15 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.1245
+		name = EVTOPTAceltic.1245
 		change_diplomacy = 1
 	}
 }
 
 # Character loses diplomacy
 character_event = {
-	id = ancrel.1246
-	desc = EVTDESCancrel.1246
+	id = celtic.1246
+	desc = celtic.1246.desc
 	picture = GFX_evt_whispers
 
 	min_age = 16
@@ -2675,15 +2675,15 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.1246
+		name = EVTOPTAceltic.1246
 		change_diplomacy = -1
 	}
 }
 
 # Character gains stewardship
 character_event = {
-	id = ancrel.1247
-	desc = EVTDESCancrel.1247
+	id = celtic.1247
+	desc = celtic.1247.desc
 	picture = GFX_evt_market
 
 	min_age = 16
@@ -2753,15 +2753,15 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.1247
+		name = EVTOPTAceltic.1247
 		change_stewardship = 1
 	}
 }
 
 # Character loses stewardship
 character_event = {
-	id = ancrel.1248
-	desc = EVTDESCancrel.1248
+	id = celtic.1248
+	desc = celtic.1248.desc
 	picture = GFX_evt_market
 
 	min_age = 16
@@ -2831,15 +2831,15 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.1248
+		name = EVTOPTAceltic.1248
 		change_stewardship = -1
 	}
 }
 
 # Character gains diplomacy
 character_event = {
-	id = ancrel.1249
-	desc = EVTDESCancrel.1249
+	id = celtic.1249
+	desc = celtic.1249.desc
 	picture = GFX_evt_council
 
 	min_age = 16
@@ -2909,15 +2909,15 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.1249
+		name = EVTOPTAceltic.1249
 		change_diplomacy = 1
 	}
 }
 
 # Character loses diplomacy
 character_event = {
-	id = ancrel.1250
-	desc = EVTDESCancrel.1250
+	id = celtic.1250
+	desc = celtic.1250.desc
 	picture = GFX_evt_council
 
 	min_age = 16
@@ -2987,20 +2987,20 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.1250
+		name = EVTOPTAceltic.1250
 		change_diplomacy = -1
 	}
 }
 
 #  Game Phase
 character_event = {
-	id = ancrel.1251
-	desc = EVTDESCancrel.1251
+	id = celtic.1251
+	desc = celtic.1251.desc
 	picture = GFX_evt_athlete
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAancrel.1211
+		name = EVTOPTAceltic.1211
 	}
 }

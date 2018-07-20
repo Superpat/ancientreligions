@@ -1,8 +1,8 @@
-#######################################
+#######################################.desc
 #
 # Roman Empire Restored
 #
-# Event ID ancrel.2220 - ancrel.2229 reserved
+# Event ID hellenic.220 - hellenic.229 reserved
 #
 #######################################
 
@@ -10,7 +10,7 @@ namespace = ancrel
 
 # The Restoration of Rome (Byzantium / Latin Empire)
 narrative_event = {
-	id = ancrel.2220
+	id = hellenic.220
 	title = EVTNAMELoR.20
 	desc = EVTDESCLoR.20
 	
@@ -81,7 +81,7 @@ narrative_event = {
 					limit = {
 						NOT = { character = ROOT }
 					}
-					narrative_event = { id = ancrel.2221 }
+					narrative_event = { id = hellenic.221 }
 				}
 			}
 		}
@@ -90,7 +90,7 @@ narrative_event = {
 
 # Informed about Restoration of Rome (Byzantium / Latin Empire)
 narrative_event = {
-	id = ancrel.2221
+	id = hellenic.221
 	title = EVTNAMELoR.21
 	desc = EVTDESCLoR.21
 	
@@ -121,9 +121,9 @@ narrative_event = {
 
 # The Restoration of Rome (HRE)
 narrative_event = {
-	id = ancrel.2222
+	id = hellenic.222
 	title = EVTNAMELoR.20
-	desc = EVTDESCancrel.2222
+	desc = hellenic.222.desc
 	
 	picture = GFX_evt_rome_restored_byzantine
 	
@@ -167,7 +167,7 @@ narrative_event = {
 					limit = {
 						NOT = { character = ROOT }
 					}
-					narrative_event = { id = ancrel.2223 }
+					narrative_event = { id = hellenic.223 }
 				}
 			}
 		}
@@ -176,9 +176,9 @@ narrative_event = {
 
 # Informed about Restoration of Rome (HRE)
 narrative_event = {
-	id = ancrel.2223
+	id = hellenic.223
 	title = EVTNAMELoR.21
-	desc = EVTDESCancrel.2223
+	desc = hellenic.223.desc
 	
 	picture = GFX_evt_rome_restored_byzantine
 	
@@ -207,9 +207,9 @@ narrative_event = {
 
 # The Creation of a new Rome
 narrative_event = {
-	id = ancrel.2224
+	id = hellenic.224
 	title = EVTNAMELoR.20
-	desc = EVTDESCancrel.2224
+	desc = hellenic.224.desc
 	
 	picture = GFX_evt_rome_restored_byzantine
 	
@@ -255,7 +255,7 @@ narrative_event = {
 					limit = {
 						NOT = { character = ROOT }
 					}
-					narrative_event = { id = ancrel.2225 }
+					narrative_event = { id = hellenic.225 }
 				}
 			}
 		}
@@ -264,9 +264,9 @@ narrative_event = {
 
 # Informed about Creation of a new Rome
 narrative_event = {
-	id = ancrel.2225
+	id = hellenic.225
 	title = EVTNAMELoR.21
-	desc = EVTDESCancrel.2225
+	desc = hellenic.225.desc
 	
 	picture = GFX_evt_rome_restored_byzantine
 	

@@ -3,7 +3,7 @@
 # Roman Events
 #
 # Event ID LoR.1 - LoR.199 reserved
-# Event ID ancrel.2230 - ancrel.2239 reserved
+# Event ID hellenic.230 - hellenic.239 reserved
 #
 #######################################
 
@@ -99,9 +99,9 @@ narrative_event = {
 
 # Provincia Cyrenaica
 narrative_event = {
-	id = ancrel.2230
-	title = EVTNAMEancrel.2230
-	desc = EVTDESCancrel.2230
+	id = hellenic.230
+	title = EVTNAMEhellenic.230
+	desc = hellenic.230.desc
 	
 	picture = GFX_evt_victory_arch_byzantine
 	
@@ -264,9 +264,9 @@ narrative_event = {
 
 # Provincia Sicilia
 narrative_event = {
-	id = ancrel.2231
-	title = EVTNAMEancrel.2231
-	desc = EVTDESCancrel.2231
+	id = hellenic.231
+	title = EVTNAMEhellenic.231
+	desc = hellenic.231.desc
 	
 	picture = GFX_evt_victory_arch_byzantine
 	
@@ -299,9 +299,9 @@ narrative_event = {
 
 # Provincia Corsica et Sardinia
 narrative_event = {
-	id = ancrel.2232
-	title = EVTNAMEancrel.2232
-	desc = EVTDESCancrel.2232
+	id = hellenic.232
+	title = EVTNAMEhellenic.232
+	desc = hellenic.232.desc
 	
 	picture = GFX_evt_victory_arch_byzantine
 	
@@ -333,9 +333,9 @@ narrative_event = {
 
 # Provincia Viennensis
 narrative_event = {
-	id = ancrel.2233
-	title = EVTNAMEancrel.2233
-	desc = EVTDESCancrel.2233
+	id = hellenic.233
+	title = EVTNAMEhellenic.233
+	desc = hellenic.233.desc
 	
 	picture = GFX_evt_victory_arch_byzantine
 	

@@ -3,7 +3,7 @@
 # ANCIENT RELIGIONS
 # - Celtic changelings
 #
-# Event IDs ancrel.0211-0241 is reserved
+# Event IDs celtic.211-0241 is reserved
 #
 ##################################################################
 
@@ -13,7 +13,7 @@ namespace = ancrel
 
 # Druid Warns About Child (AI Spouse)
 character_event = {
-	id = ancrel.0211
+	id = celtic.211
 	hide_window = yes
 	
 	only_women = yes
@@ -41,7 +41,7 @@ character_event = {
 		spouse = {
 			random_courtier = { 
 				limit = { trait = druid }
-				character_event = { id = ancrel.0212 }
+				character_event = { id = celtic.212 }
 			}
 		}
 	}
@@ -49,29 +49,29 @@ character_event = {
 
 # Druid Warns About Child (AI Druid)
 character_event = {
-	id = ancrel.0212
+	id = celtic.212
 	hide_window = yes
 	
 	is_triggered_only = yes
 	
 	immediate = {
 		liege = {
-			character_event = { id = ancrel.0213 }
+			character_event = { id = celtic.213 }
 		}
 	}
 }
 
 # Druid Warns About Child
 character_event = {
-	id = ancrel.0213
-	desc = EVTDESCancrel.0213
+	id = celtic.213
+	desc = celtic.213.desc
 	picture = GFX_evt_pregnancy
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.0213
+		name = EVTOPTAceltic.213
 		FROM = {
 			opinion = {
 				modifier = opinion_disappointed
@@ -81,7 +81,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTBancrel.0213
+		name = EVTOPTBceltic.213
 		FROMFROM = {
 			opinion = {
 				modifier = opinion_disappointed
@@ -96,7 +96,7 @@ character_event = {
 
 # Child is stolen by Sidhe
 character_event = {
-	id = ancrel.0215
+	id = celtic.215
 	hide_window = yes
 	
 	is_triggered_only = yes
@@ -117,7 +117,7 @@ character_event = {
 
 # Child acts strange I (AI)
 character_event = {
-	id = ancrel.0216
+	id = celtic.216
 	hide_window = yes
 	
 	ai = yes
@@ -137,28 +137,28 @@ character_event = {
 	
 	immediate = {
 		set_character_flag = changeling_child_strange_1
-		father = { character_event = { id = ancrel.0217 } }
+		father = { character_event = { id = celtic.217 } }
 	}
 }
 
 # Child acts strange I
 character_event = {
-	id = ancrel.0217
-	desc = EVTDESCancrel.0217
+	id = celtic.217
+	desc = celtic.217.desc
 	picture = GFX_evt_child_play
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.0217
+		name = EVTOPTAceltic.217
 		custom_tooltip = { text = changeling_child_acts_strange }
 	}
 }
 
 # Child acts strange II (AI)
 character_event = {
-	id = ancrel.0218
+	id = celtic.218
 	hide_window = yes
 	
 	ai = yes
@@ -178,28 +178,28 @@ character_event = {
 	
 	immediate = {
 		set_character_flag = changeling_child_strange_2
-		father = { character_event = { id = ancrel.0219 } }
+		father = { character_event = { id = celtic.219 } }
 	}
 }
 
 # Child acts strange II
 character_event = {
-	id = ancrel.0219
-	desc = EVTDESCancrel.0219
+	id = celtic.219
+	desc = celtic.219.desc
 	picture = GFX_evt_child_play
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.0219
+		name = EVTOPTAceltic.219
 		custom_tooltip = { text = changeling_child_acts_strange }
 	}
 }
 
 # Child acts strange III (AI)
 character_event = {
-	id = ancrel.0220
+	id = celtic.220
 	hide_window = yes
 	
 	ai = yes
@@ -219,28 +219,28 @@ character_event = {
 	
 	immediate = {
 		set_character_flag = changeling_child_strange_3
-		father = { character_event = { id = ancrel.0221 } }
+		father = { character_event = { id = celtic.221 } }
 	}
 }
 
 # Child acts strange III
 character_event = {
-	id = ancrel.0221
-	desc = EVTDESCancrel.0221
+	id = celtic.221
+	desc = celtic.221.desc
 	picture = GFX_evt_child_play
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.0221
+		name = EVTOPTAceltic.221
 		custom_tooltip = { text = changeling_child_acts_strange }
 	}
 }
 
 # Child kills Courtier I (AI Child)
 character_event = {
-	id = ancrel.0222
+	id = celtic.222
 	hide_window = yes
 	
 	ai = yes
@@ -303,7 +303,7 @@ character_event = {
 					in_command = no
 					NOT = { spouse = { character = host } }
 				}
-				character_event = { id = ancrel.0223 } 
+				character_event = { id = celtic.223 } 
 			}
 		}
 	}
@@ -311,27 +311,27 @@ character_event = {
 
 # Child kills Courtier I (AI Courtier)
 character_event = {
-	id = ancrel.0223
+	id = celtic.223
 	hide_window = yes
 	
 	is_triggered_only = yes
 	
 	immediate = {
-		liege = { character_event = { id = ancrel.0224 } }
+		liege = { character_event = { id = celtic.224 } }
 	}
 }
 
 #Child kills Courtier I
 character_event = {
-	id = ancrel.0224
-	desc = EVTDESCancrel.0224
+	id = celtic.224
+	desc = celtic.224.desc
 	picture = GFX_evt_viking_funeral_oldgods
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.0224
+		name = EVTOPTAceltic.224
 		FROM = {
 			death = {
 				death_reason = death_murder_unknown
@@ -342,7 +342,7 @@ character_event = {
 
 # Child kills Courtier II (AI Child)
 character_event = {
-	id = ancrel.0225
+	id = celtic.225
 	hide_window = yes
 	
 	ai = yes
@@ -405,7 +405,7 @@ character_event = {
 					in_command = no
 					NOT = { spouse = { character = host } }
 				}
-				character_event = { id = ancrel.0226 } 
+				character_event = { id = celtic.226 } 
 			}
 		}
 	}
@@ -413,27 +413,27 @@ character_event = {
 
 # Child kills Courtier II (AI Courtier)
 character_event = {
-	id = ancrel.0226
+	id = celtic.226
 	hide_window = yes
 	
 	is_triggered_only = yes
 	
 	immediate = {
-		liege = { character_event = { id = ancrel.0227 } }
+		liege = { character_event = { id = celtic.227 } }
 	}
 }
 
 #Child kills Courtier II
 character_event = {
-	id = ancrel.0227
-	desc = EVTDESCancrel.0227
+	id = celtic.227
+	desc = celtic.227.desc
 	picture = GFX_evt_viking_funeral_oldgods
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.0227
+		name = EVTOPTAceltic.227
 		FROM = {
 			death = {
 				death_reason = death_murder_unknown
@@ -444,7 +444,7 @@ character_event = {
 
 # Child kills Courtier III (AI Child)
 character_event = {
-	id = ancrel.0228
+	id = celtic.228
 	hide_window = yes
 	
 	ai = yes
@@ -507,7 +507,7 @@ character_event = {
 					in_command = no
 					NOT = { spouse = { character = host } }
 				}
-				character_event = { id = ancrel.0229 } 
+				character_event = { id = celtic.229 } 
 			}
 		}
 	}
@@ -515,27 +515,27 @@ character_event = {
 
 # Child kills Courtier III (AI Courtier)
 character_event = {
-	id = ancrel.0229
+	id = celtic.229
 	hide_window = yes
 	
 	is_triggered_only = yes
 	
 	immediate = {
-		liege = { character_event = { id = ancrel.0230 } }
+		liege = { character_event = { id = celtic.230 } }
 	}
 }
 
 #Child kills Courtier III
 character_event = {
-	id = ancrel.0230
-	desc = EVTDESCancrel.0230
+	id = celtic.230
+	desc = celtic.230.desc
 	picture = GFX_evt_viking_funeral_oldgods
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.0230
+		name = EVTOPTAceltic.230
 		FROM = {
 			death = {
 				death_reason = death_murder_unknown
@@ -546,7 +546,7 @@ character_event = {
 
 # Druid offers to save child (AI Child)
 character_event = {
-	id = ancrel.0231
+	id = celtic.231
 	hide_window = yes
 	
 	ai = yes
@@ -577,7 +577,7 @@ character_event = {
 		father = {
 			random_courtier = {
 				limit = { trait = druid }
-				character_event = { id = ancrel.0232 }
+				character_event = { id = celtic.232 }
 			}
 		}
 	}
@@ -585,36 +585,36 @@ character_event = {
 
 # Druid offers to save child (AI Druid)
 character_event = {
-	id = ancrel.0232
+	id = celtic.232
 	hide_window = yes
 	
 	is_triggered_only = yes
 	
 	immediate = {
 		liege = {
-			character_event = { id = ancrel.0233 }
+			character_event = { id = celtic.233 }
 		}
 	}
 }
 
 # Druid offers to save child
 character_event = {
-	id = ancrel.0233
-	desc = EVTDESCancrel.0233
+	id = celtic.233
+	desc = celtic.233.desc
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.0233
+		name = EVTOPTAceltic.233
 		hidden_tooltip = {
-			character_event = { id = ancrel.0234 days = 7 }
+			character_event = { id = celtic.234 days = 7 }
 		}
 		custom_tooltip = { text = changeling_trade_approved }
 	}
 	option = {
-		name = EVTOPTBancrel.0233
+		name = EVTOPTBceltic.233
 		FROM = {
 			opinion = {
 				modifier = opinion_very_disappointed
@@ -628,8 +628,8 @@ character_event = {
 
 # Changeling Trade Begins
 character_event = {
-	id = ancrel.0234
-	desc = EVTDESCancrel.0234
+	id = celtic.234
+	desc = celtic.234.desc
 	picture = GFX_evt_pagan
 	border = GFX_event_normal_frame_religion
 	
@@ -638,14 +638,14 @@ character_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAancrel.0234
+		name = EVTOPTAceltic.234
 		
 		custom_tooltip = {
 			text = changeling_trade_begins
 			hidden_tooltip = {
 				random_child = {
 					limit = { has_character_flag = changeling_trade }
-					character_event = { id = ancrel.0235 days = 3 }
+					character_event = { id = celtic.235 days = 3 }
 				}
 			}
 		}
@@ -654,7 +654,7 @@ character_event = {
 
 # Changeling Trade Begins (AI Child)
 character_event = {
-	id = ancrel.0235
+	id = celtic.235
 	hide_window = yes
 	
 	is_triggered_only = yes
@@ -663,7 +663,7 @@ character_event = {
 		father = {
 			random_courtier = {
 				limit = { trait = druid }
-				character_event = { id = ancrel.0236 }
+				character_event = { id = celtic.236 }
 			}
 		}
 	}
@@ -671,7 +671,7 @@ character_event = {
 
 # Changeling Trade Begins (AI Druid)
 character_event = {
-	id = ancrel.0236
+	id = celtic.236
 	hide_window = yes
 	
 	is_triggered_only = yes
@@ -679,10 +679,10 @@ character_event = {
 	immediate = {
 		liege = {
 			random_list = {
-				20 = { character_event = { id = ancrel.0237 days = 3 } }
-				20 = { character_event = { id = ancrel.0238 days = 3 } }
-				40 = { character_event = { id = ancrel.0239 days = 3 } }
-				20 = { character_event = { id = ancrel.0240 days = 3 } }
+				20 = { character_event = { id = celtic.237 days = 3 } }
+				20 = { character_event = { id = celtic.238 days = 3 } }
+				40 = { character_event = { id = celtic.239 days = 3 } }
+				20 = { character_event = { id = celtic.240 days = 3 } }
 			}
 		}
 	}
@@ -690,15 +690,15 @@ character_event = {
 
 # Changeling Trade Completed - Druid Dies
 character_event = {
-	id = ancrel.0237
-	desc = EVTDESCancrel.0237
+	id = celtic.237
+	desc = celtic.237.desc
 	picture = GFX_evt_child_play
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.0237
+		name = EVTOPTAceltic.237
 		FROM = {
 			death = {
 				death_reason = death_murder_unknown
@@ -712,15 +712,15 @@ character_event = {
 
 # Changeling Trade Completed - Child Dies
 character_event = {
-	id = ancrel.0238
-	desc = EVTDESCancrel.0238
+	id = celtic.238
+	desc = celtic.238.desc
 	picture = GFX_evt_viking_funeral_oldgods
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.0238
+		name = EVTOPTAceltic.238
 		FROMFROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -734,7 +734,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTBancrel.0238
+		name = EVTOPTBceltic.238
 		FROMFROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -745,7 +745,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTCancrel.0238
+		name = EVTOPTCceltic.238
 		FROMFROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -756,15 +756,15 @@ character_event = {
 
 # Changeling Trade Completed - Child is Unharmed
 character_event = {
-	id = ancrel.0239
-	desc = EVTDESCancrel.0239
+	id = celtic.239
+	desc = celtic.239.desc
 	picture = GFX_evt_pagan
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.0239
+		name = EVTOPTAceltic.239
 		FROMFROM = {
 			clr_character_flag = changeling_child
 			clr_character_flag = changeling_child_fake
@@ -776,15 +776,15 @@ character_event = {
 
 # Changeling Trade Completed - Child is Hurt
 character_event = {
-	id = ancrel.0240
-	desc = EVTDESCancrel.0240
+	id = celtic.240
+	desc = celtic.240.desc
 	picture = GFX_evt_pagan
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTBancrel.0238
+		name = EVTOPTBceltic.238
 		FROMFROM = {
 			clr_character_flag = changeling_child
 			clr_character_flag = changeling_child_fake
@@ -796,7 +796,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTCancrel.0238
+		name = EVTOPTCceltic.238
 		FROMFROM = {
 			clr_character_flag = changeling_child
 			clr_character_flag = changeling_child_fake
@@ -808,8 +808,8 @@ character_event = {
 
 #[on_adulthood] Changeling child becomes and adult (Trait makes character more keen to go on adventures and harder to kill)
 character_event = {
-	id = ancrel.0241
-	desc = EVTDESCancrel.0241
+	id = celtic.241
+	desc = celtic.241.desc
 	picture = GFX_evt_the_changeling_fuseli
 	border = GFX_event_normal_frame_religion
 	
@@ -826,7 +826,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.0241
+		name = EVTOPTAceltic.241
 		add_trait = changeling
 		hidden_tooltip = {
 			random_list = {

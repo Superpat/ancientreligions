@@ -3,8 +3,8 @@
 # ANCIENT RELIGIONS
 # - Egyptian events
 #
-# Event ID ancrel.4000 - ancrel.4009 Decision Events
-# Event ID ancrel.4010 - ancrel.4019 Sed festival
+# Event ID egyptian.0 - egyptian.9 Decision Events
+# Event ID egyptian.10 - egyptian.19 Sed festival
 # Event ID ancrel.4100 - ancrel.4199 Nile Flooding
 # Event ID ancrel.4200 - ancrel.4399 Kemetic Revival
 ###################################################
@@ -13,9 +13,9 @@ namespace = ancrel
 
 # Luxor Restoration Part 1
 province_event = {
-	id = ancrel.4000
-	title = EVTNAME_ancrel_4000
-	desc = EVTDESC_ancrel_4000
+	id = egyptian.0
+	title = EVTNAMEegyptian.0
+	desc = egyptian.0.desc
 	picture = GFX_persepolis_ruin
 
 	is_triggered_only = yes
@@ -25,15 +25,15 @@ province_event = {
 	}	
 
 	option = {
-		name = EVTOPTA_ancrel_4000 # Make it the greatest temple there ever was!
+		name = EVTOPTAegyptian.0 # Make it the greatest temple there ever was!
 	}
 }
 
 # Luxor Restoration Part 2 - Add Asyut bonus modifier ~8 years
 province_event = {
-	id = ancrel.4001
-	title = EVTNAME_ancrel_4001
-	desc = EVTDESC_ancrel_4001
+	id = egyptian.1
+	title = EVTNAMEegyptian.1
+	desc = egyptian.1.desc
 	picture = GFX_evt_temple_egyptian_pagan
 
 	trigger = {
@@ -53,19 +53,19 @@ province_event = {
 	}
 	
 	option = {
-		name = EVTOPTA_ancrel_4001 # Library
+		name = EVTOPTAegyptian.1 # Library
 		795 = {
 			add_province_modifier = { name = luxor_library duration = -1 }
 		}
 	}
 	option = {
-		name = EVTOPTB_ancrel_4001 # Promote Fanaticism
+		name = EVTOPTBegyptian.1 # Promote Fanaticism
 		795 = {
 			add_province_modifier = { name = luxor_fanaticism duration = -1 }
 		}
 	}
 	option = {
-		name = EVTOPTC_ancrel_4001 # Promote Tax Collection
+		name = EVTOPTCegyptian.1 # Promote Tax Collection
 		795 = {
 			add_province_modifier = { name = luxor_admin duration = -1 }
 		}
@@ -74,9 +74,9 @@ province_event = {
 
 # Luxor Restoration Part 3 ~2 years
 province_event = {
-	id = ancrel.4002
-	title = EVTNAME_ancrel_4002
-	desc = EVTDESC_ancrel_4002
+	id = egyptian.2
+	title = EVTNAMEegyptian.2
+	desc = egyptian.2.desc
 	picture = GFX_evt_temple_egyptian_pagan
 	
 	trigger = {
@@ -99,7 +99,7 @@ province_event = {
 	}
 
 	option = {
-		name = EVTOPTA_ancrel_4002
+		name = EVTOPTAegyptian.2
 		owner = {
 			795 = {
 				build_holding = {
@@ -119,7 +119,7 @@ province_event = {
 		hidden_tooltip = {
 			owner = {
 				set_character_flag = event_ancrel4003
-				narrative_event = { id = ancrel.4003 days = 7 }
+				narrative_event = { id = egyptian.3 days = 7 }
 			}
 			increase_prosperity_effect = yes
 		}
@@ -128,9 +128,9 @@ province_event = {
 
 # News spread about Luxor
 narrative_event = {
-	id = ancrel.4003
-	title = EVTNAME_ancrel_4003
-	desc = EVTDESC_ancrel_4003
+	id = egyptian.3
+	title = EVTNAMEegyptian.3
+	desc = egyptian.3.desc
 	picture = GFX_evt_temple_egyptian_pagan
 	border = GFX_event_narrative_frame_religion
 	
@@ -157,14 +157,14 @@ narrative_event = {
 		trigger = {
 			NOT = { has_character_flag = event_ancrel4003 }
 		}
-		name = EVTOPTA_ancrel_4003
+		name = EVTOPTAegyptian.3
 	}
 }
 
 # Pharaoh wants to build a Pyramid
 character_event = {
-	id = ancrel.4004
-	desc = EVTDESC_ancrel_4004
+	id = egyptian.4
+	desc = egyptian.4.desc
 	picture = GFX_evt_boatcoast
 
 	is_triggered_only = yes
@@ -174,15 +174,15 @@ character_event = {
 	}	
 
 	option = {
-		name = EVTOPTA_ancrel_4004 # Make it the greatest pyramid there ever was!
+		name = EVTOPTAegyptian.4 # Make it the greatest pyramid there ever was!
 		wealth = -600
 	}
 }
 
 # The Pyramid is done!
 province_event = {
-	id = ancrel.4005
-	desc = EVTDESC_ancrel_4005
+	id = egyptian.5
+	desc = egyptian.5.desc
 	picture = GFX_evt_pyramid
 
 	trigger = {
@@ -217,7 +217,7 @@ province_event = {
 	}
 	
 	option = {
-		name = EVTOPTA_ancrel_4005 # My pyramid is done!
+		name = EVTOPTAegyptian.5 # My pyramid is done!
 
 		trigger = { owner = { has_character_flag = pyramid_building_char}}
 		owner = {
@@ -227,7 +227,7 @@ province_event = {
 		}
 	}
 	option = {
-		name = EVTOPTB_ancrel_4005 # My predecessor's pyramid is done
+		name = EVTOPTBegyptian.5 # My predecessor's pyramid is done
 
 		trigger = { 
 			owner = {
@@ -242,7 +242,7 @@ province_event = {
 		}
 	}
 	option = {
-		name = EVTOPTC_ancrel_4005 # Pagan Garbage!
+		name = EVTOPTCegyptian.5 # Pagan Garbage!
 
 		trigger = { 
 			owner = {
@@ -273,9 +273,9 @@ province_event = {
 
 # The Priesthood Restored
 narrative_event = {
-	id = ancrel.4006
-	title = EVTNAME_ancrel_4006
-	desc = EVTDESC_ancrel_4006
+	id = egyptian.6
+	title = EVTNAMEegyptian.6
+	desc = egyptian.6.desc
 	picture = GFX_evt_bishop_muslim
 	border = GFX_event_narrative_frame_religion
 	
@@ -284,13 +284,13 @@ narrative_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_ancrel_4006
+		name = EVTOPTAegyptian.6
 		trigger = {
 			true_religion_in_egyptian_subgroup_trigger = yes
 		}
 	}
 	option = {
-		name = EVTOPTB_ancrel_4006
+		name = EVTOPTBegyptian.6
 		trigger = {
 			true_religion_in_egyptian_subgroup_trigger = no
 		}
@@ -299,9 +299,9 @@ narrative_event = {
 
 # Anubis Guard founded
 narrative_event = {
-	id = ancrel.4007
-	title = EVTNAME_ancrel_4007
-	desc = EVTDESC_ancrel_4007
+	id = egyptian.7
+	title = EVTNAMEegyptian.7
+	desc = egyptian.7.desc
 	picture = GFX_evt_anubis
 	border = GFX_event_narrative_frame_religion
 	
@@ -321,15 +321,15 @@ narrative_event = {
 		trigger = {
 			NOT = { has_character_flag = event_ancrel4007 }
 		}
-		name = EVTOPTA_ancrel_4007
+		name = EVTOPTAegyptian.7
 	}
 }
 
 # Horusian Guard Founded
 narrative_event = {
-	id = ancrel.4008
-	title = EVTNAME_ancrel_4008
-	desc = EVTDESC_ancrel_4008
+	id = egyptian.8
+	title = EVTNAMEegyptian.8
+	desc = egyptian.8.desc
 	picture = GFX_evt_horus
 	border = GFX_event_narrative_frame_religion
 	
@@ -349,7 +349,7 @@ narrative_event = {
 		trigger = {
 			NOT = { has_character_flag = event_ancrel4008 }
 		}
-		name = EVTOPTA_ancrel_4008
+		name = EVTOPTAegyptian.8
 	}
 }
 
@@ -359,18 +359,18 @@ narrative_event = {
 
 #Sed festival 1st day: the offerings
 character_event = {
-	id = ancrel.4010
-	desc = EVTDESC_ancrel_4010
+	id = egyptian.10
+	desc = egyptian.10.desc
 	picture = GFX_evt_temple_egyptian_pagan
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTA_ancrel_4010 # OK
+		name = EVTOPTAegyptian.10 # OK
 		hidden_tooltip = {
 			random_list = {
 				95 = {
-					character_event = { id = ancrel.4011 days = 1 }
+					character_event = { id = egyptian.11 days = 1 }
 				}
 				5 = {
 					modifier = {
@@ -389,7 +389,7 @@ character_event = {
 						factor = 0.3
 						trait = patient
 					}
-					character_event = { id = ancrel.4014 days = 1 }
+					character_event = { id = egyptian.14 days = 1 }
 				}
 			}
 		}
@@ -398,18 +398,18 @@ character_event = {
 
 #Sed festival 2nd day: the race
 character_event = {
-	id = ancrel.4011
-	desc = EVTDESC_ancrel_4011
+	id = egyptian.11
+	desc = egyptian.11.desc
 	picture = GFX_evt_temple_egyptian_pagan
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_ancrel_4011 # OK
+		name = EVTOPTAegyptian.11 # OK
 		hidden_tooltip = {
 			random_list = {
 				95 = {
-					character_event = { id = ancrel.4012 days = 1 }
+					character_event = { id = egyptian.12 days = 1 }
 				}
 				5 = {
 					modifier = {
@@ -428,7 +428,7 @@ character_event = {
 						factor = 10
 						NOT = { health = 0 }
 					}
-					character_event = { id = ancrel.4015 days = 1 }
+					character_event = { id = egyptian.15 days = 1 }
 				}
 			}
 		}
@@ -437,18 +437,18 @@ character_event = {
 
 #Sed festival last day: bow & arrow
 character_event = {
-	id = ancrel.4012
-	desc = EVTDESC_ancrel_4012
+	id = egyptian.12
+	desc = egyptian.12.desc
 	picture = GFX_evt_temple_egyptian_pagan
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTA_ancrel_4012 # OK
+		name = EVTOPTAegyptian.12 # OK
 		hidden_tooltip = {
 			random_list = {
 				95 = {
-					character_event = { id = ancrel.4013 days = 1 }
+					character_event = { id = egyptian.13 days = 1 }
 				}
 				5 = {
 					modifier = {
@@ -471,7 +471,7 @@ character_event = {
 						factor = 0.1
 						trait = hunter
 					}
-					character_event = { id = ancrel.4016 days = 1 }
+					character_event = { id = egyptian.16 days = 1 }
 				}
 			}
 		}
@@ -480,8 +480,8 @@ character_event = {
 
 #Sed festival successful conclusion 
 character_event = {
-	id = ancrel.4013
-	desc = EVTDESC_ancrel_4013
+	id = egyptian.13
+	desc = egyptian.13.desc
 	picture = GFX_evt_temple_egyptian_pagan
 	
 	is_triggered_only = yes
@@ -491,7 +491,7 @@ character_event = {
 	}	
 
 	option = {
-		name = EVTOPTA_ancrel_4013 # OK
+		name = EVTOPTAegyptian.13 # OK
 		
 		hidden_tooltip = {
 			# Calculate piety gain = 200 + nb_sed_festivals * 50
@@ -578,56 +578,56 @@ character_event = {
 
 #Sed festival 1st day failure: fallen asleep
 character_event = {
-	id = ancrel.4014
-	desc = EVTDESC_ancrel_4014
+	id = egyptian.14
+	desc = egyptian.14.desc
 	picture = GFX_evt_temple_egyptian_pagan
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTA_ancrel_4014 # OK
+		name = EVTOPTAegyptian.14 # OK
 		hidden_tooltip = {
-			character_event = { id = ancrel.4017 days = 1 }
+			character_event = { id = egyptian.17 days = 1 }
 		}
 	}
 }
 
 #Sed festival 2nd day failure: unable to finish the race
 character_event = {
-	id = ancrel.4015
-	desc = EVTDESC_ancrel_4015
+	id = egyptian.15
+	desc = egyptian.15.desc
 	picture = GFX_evt_temple_egyptian_pagan
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTA_ancrel_4015 # OK
+		name = EVTOPTAegyptian.15 # OK
 		hidden_tooltip = {
-			character_event = { id = ancrel.4017 days = 1 }
+			character_event = { id = egyptian.17 days = 1 }
 		}
 	}
 }
 
 #Sed festival last day failure: shoot someone in the crowd
 character_event = {
-	id = ancrel.4016
-	desc = EVTDESC_ancrel_4016
+	id = egyptian.16
+	desc = egyptian.16.desc
 	picture = GFX_evt_temple_egyptian_pagan
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTA_ancrel_4016 # OK
+		name = EVTOPTAegyptian.16 # OK
 		hidden_tooltip = {
-			character_event = { id = ancrel.4017 days = 1 }
+			character_event = { id = egyptian.17 days = 1 }
 		}
 	}
 }
 
 #Sed festival failed conclusion
 character_event = {
-	id = ancrel.4017
-	desc = EVTDESC_ancrel_4017
+	id = egyptian.17
+	desc = egyptian.17.desc
 	picture = GFX_evt_temple_egyptian_pagan
 	
 	is_triggered_only = yes
@@ -637,14 +637,14 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTA_ancrel_4017 # Depressed
+		name = EVTOPTAegyptian.17 # Depressed
 
 		add_trait = depressed
 		piety = -200
 	}
 	
 	option = {
-		name = EVTOPTB_ancrel_4017 # Who cares ?
+		name = EVTOPTBegyptian.17 # Who cares ?
 		
 		add_trait = cynical
 		piety = -200
@@ -652,7 +652,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTC_ancrel_4017 # Punishment
+		name = EVTOPTCegyptian.17 # Punishment
 		
 		add_trait = arbitrary
 		add_trait = paranoid
@@ -1484,7 +1484,7 @@ character_event = {
 
 character_event = { #good
 	id = ancrel.4101
-	desc = "ancrel.4101.desc"
+	desc = "ancrel.4101.desc".desc
 	picture = GFX_evt_ancient_egypt
 
 	notification = yes
@@ -1497,7 +1497,7 @@ character_event = { #good
 }
 character_event = { #great
 	id = ancrel.4102
-	desc = "ancrel.4102.desc"
+	desc = "ancrel.4102.desc".desc
 	picture = GFX_evt_ancient_egypt
 
 	notification = yes
@@ -1510,7 +1510,7 @@ character_event = { #great
 }
 character_event = { #overflow
 	id = ancrel.4103
-	desc = "ancrel.4103.desc"
+	desc = "ancrel.4103.desc".desc
 	picture = GFX_evt_ancient_egypt
 
 	notification = yes
@@ -1523,7 +1523,7 @@ character_event = { #overflow
 }
 character_event = { #poor
 	id = ancrel.4104
-	desc = "ancrel.4104.desc"
+	desc = "ancrel.4104.desc".desc
 	picture = GFX_evt_ancient_egypt
 
 	notification = yes
@@ -1549,7 +1549,7 @@ character_event = { #poor
 # Mmm garlic bby
 character_event = {
 	id = ancrel.4150
-	desc = ancrel.4150.desc
+	desc = ancrel.4150.desc.desc
 	picture = GFX_evt_small_town_egyptian_pagan
 
 	is_triggered_only = yes
@@ -1639,7 +1639,7 @@ character_event = {
 # Palm tree planting
 character_event = {
 	id = ancrel.4151
-	desc = ancrel.4151.desc
+	desc = ancrel.4151.desc.desc
 	picture = GFX_evt_castle_tower_egyptian_pagan
 
 	is_triggered_only = yes
@@ -1739,7 +1739,7 @@ character_event = {
 # Khnum Amulet
 character_event = {
 	id = ancrel.4152
-	desc = ancrel.4152.desc
+	desc = ancrel.4152.desc.desc
 	picture = GFX_evt_cathedral_soa_egyptian_pagan
 
 	is_triggered_only = yes
@@ -1805,7 +1805,7 @@ character_event = {
 # Desecrated Tombs
 province_event = {
 	id = ancrel.4153
-	desc = ancrel.4153.desc
+	desc = ancrel.4153.desc.desc
 	picture = GFX_evt_pyramid
 	
 	trigger = {
@@ -1919,7 +1919,7 @@ province_event = {
 # Bes protects from nightmare
 character_event = {
 	id = ancrel.4154
-	desc = ancrel.4154.desc
+	desc = ancrel.4154.desc.desc
 	picture = GFX_evt_nightmare
 
 	is_triggered_only = yes
@@ -1989,7 +1989,7 @@ character_event = {
 # Expel evil
 character_event = {
 	id = ancrel.4155
-	desc = ancrel.4155.desc
+	desc = ancrel.4155.desc.desc
 	picture = GFX_evt_tuscan_Country_egyptian_pagan
 
 	is_triggered_only = yes
@@ -2085,7 +2085,7 @@ character_event = {
 character_event = {
 	id = ancrel.4156
 	title = ancrel.4156.title
-	desc = ancrel.4156.desc
+	desc = ancrel.4156.desc.desc
 	picture = GFX_evt_temple_egyptian_pagan
 
 	is_triggered_only = yes
@@ -2180,7 +2180,7 @@ character_event = {
 # Upholding le Ma'at
 character_event = {
 	id = ancrel.4157
-	desc = ancrel.4157.desc
+	desc = ancrel.4157.desc.desc
 	picture = GFX_evt_tuscan_Country_egyptian_pagan
 
 	is_triggered_only = yes
@@ -2262,7 +2262,7 @@ character_event = {
 # Not Upholding le Ma'at
 character_event = {
 	id = ancrel.4158
-	desc = ancrel.4158.desc
+	desc = ancrel.4158.desc.desc
 	picture = GFX_evt_tuscan_Country_egyptian_pagan
 
 	is_triggered_only = yes
@@ -2353,7 +2353,7 @@ character_event = {
 # Pussycat
 character_event = {
 	id = ancrel.4159
-	desc = ancrel.4159.desc
+	desc = ancrel.4159.desc.desc
 	picture = GFX_evt_maiden_egyptian_pagan
 
 	is_triggered_only = yes
@@ -2467,7 +2467,7 @@ character_event = {
 # A criminal has killed a cat, a heinous crime!
 character_event = {
 	id = ancrel.4160
-	desc = ancrel.4160.desc
+	desc = ancrel.4160.desc.desc
 	picture = GFX_evt_cathedral_soa_egyptian_pagan
 
 	is_triggered_only = yes
@@ -2534,7 +2534,7 @@ character_event = {
 # be nice to grills
 character_event = {
 	id = ancrel.4161
-	desc = ancrel.4161.desc
+	desc = ancrel.4161.desc.desc
 	picture = GFX_evt_maiden_egyptian_pagan
 
 	is_triggered_only = yes
@@ -2634,7 +2634,7 @@ character_event = {
 # Senet game - start
 character_event = {
 	id = ancrel.4162
-	desc = ancrel.4162.desc
+	desc = ancrel.4162.desc.desc
 	picture = GFX_evt_tuscan_Country_egyptian_pagan
 
 	is_triggered_only = yes
@@ -2706,7 +2706,7 @@ character_event = {
 # Senet game - courtier event
 character_event = {
 	id = ancrel.4163
-	desc = ancrel.4163.desc
+	desc = ancrel.4163.desc.desc
 	picture = GFX_evt_tuscan_Country_egyptian_pagan
 
 	is_triggered_only = yes
@@ -2725,7 +2725,7 @@ character_event = {
 # Senet game - courtier wins
 character_event = {
 	id = ancrel.4164
-	desc = ancrel.4164.desc
+	desc = ancrel.4164.desc.desc
 	picture = GFX_evt_tuscan_Country_egyptian_pagan
 
 	is_triggered_only = yes
@@ -2773,7 +2773,7 @@ character_event = {
 # Senet game - liege wins
 character_event = {
 	id = ancrel.4165
-	desc = ancrel.4165.desc
+	desc = ancrel.4165.desc.desc
 	picture = GFX_evt_tuscan_Country_egyptian_pagan
 
 	is_triggered_only = yes
@@ -2815,7 +2815,7 @@ character_event = {
 # Ghost of Akhenaten?
 character_event = {
 	id = ancrel.4166
-	desc = ancrel.4166.desc
+	desc = ancrel.4166.desc.desc
 	picture = GFX_evt_desert
 
 	is_triggered_only = yes
@@ -2890,7 +2890,7 @@ character_event = {
 # Shezmu execution
 character_event = {
 	id = ancrel.4167
-	desc = ancrel.4167.desc
+	desc = ancrel.4167.desc.desc
 	picture = GFX_evt_small_town_egyptian_pagan
 
 	is_triggered_only = yes
@@ -2972,7 +2972,7 @@ character_event = {
 # you are on pilgrimage/hajj and get caught in a sandstorm
 character_event = {
 	id = ancrel.4200
-	desc = ancrel.4200.desc
+	desc = ancrel.4200.desc.desc
 	picture = GFX_evt_sand_desert
 
 	only_playable = yes
@@ -3044,7 +3044,7 @@ character_event = {
 # seperated from the caravan, you spot a shadow that looks like a building
 character_event = {
 	id = ancrel.4201
-	desc = ancrel.4201.desc
+	desc = ancrel.4201.desc.desc
 	picture = GFX_evt_sand_desert
 
 	is_triggered_only = yes
@@ -3073,7 +3073,7 @@ character_event = {
 # the shadow is a temple that hums with ancient power
 character_event = {
 	id = ancrel.4202
-	desc = ancrel.4202.desc
+	desc = ancrel.4202.desc.desc
 	picture = GFX_evt_sand_desert
 
 	is_triggered_only = yes
@@ -3150,7 +3150,7 @@ character_event = {
 # the building is an inn on the pilgrim's highway, you're saved!
 character_event = {
 	id = ancrel.4203
-	desc = ancrel.4203.desc
+	desc = ancrel.4203.desc.desc
 	picture = GFX_evt_small_town_aten_pagan
 
 	is_triggered_only = yes
@@ -3167,7 +3167,7 @@ character_event = {
 # as the storm rages on an old man enters the temple
 character_event = {
 	id = ancrel.4204
-	desc = ancrel.4204.desc
+	desc = ancrel.4204.desc.desc
 	picture = GFX_evt_sand_desert
 
 	is_triggered_only = yes
@@ -3185,7 +3185,7 @@ character_event = {
 # that still worship the old gods
 character_event = {
 	id = ancrel.4205
-	desc = ancrel.4205.desc
+	desc = ancrel.4205.desc.desc
 	picture = GFX_evt_recovery
 
 	is_triggered_only = yes
@@ -3203,7 +3203,7 @@ character_event = {
 # it is your destiny to find this temple
 long_character_event = {
 	id = ancrel.4206
-	desc = ancrel.4206.desc
+	desc = ancrel.4206.desc.desc
 	picture = GFX_evt_nomad_camp
 
 	is_triggered_only = yes
@@ -3280,7 +3280,7 @@ long_character_event = {
 # finish the hajj/pilgrimage (cause it can't be stopped), then convert
 character_event = {
 	id = ancrel.4207
-	desc = ancrel.4207.desc
+	desc = ancrel.4207.desc.desc
 	picture = GFX_evt_nomad_camp
 
 	is_triggered_only = yes
@@ -3299,7 +3299,7 @@ character_event = {
 # you reject their ways, and return to your people
 character_event = {
 	id = ancrel.4208
-	desc = ancrel.4208.desc
+	desc = ancrel.4208.desc.desc
 	picture = GFX_evt_nomad_camp
 
 	is_triggered_only = yes
@@ -3320,7 +3320,7 @@ character_event = {
 # after avoiding the temple, you find your caravan and continue the journey
 character_event = {
 	id = ancrel.4209
-	desc = ancrel.4209.desc
+	desc = ancrel.4209.desc.desc
 	picture = GFX_evt_desert
 
 	is_triggered_only = yes
@@ -3337,7 +3337,7 @@ character_event = {
 # the tribes come to your banner (event troops) and you finally convert
 character_event = {
 	id = ancrel.4210
-	desc = ancrel.4210.desc
+	desc = ancrel.4210.desc.desc
 	picture = GFX_evt_warrior_banners
 
 	is_triggered_only = yes
@@ -3539,7 +3539,7 @@ character_event = {
 # [on_bi_yearly_pulse]
 character_event = {
 	id = ancrel.4215
-	desc = ancrel.4215.desc
+	desc = ancrel.4215.desc.desc
 	picture = GFX_evt_pyramid
 
 	only_rulers = yes
@@ -3592,7 +3592,7 @@ character_event = {
 # you and your entourage arrive at the entrance to the pyramid
 character_event = {
 	id = ancrel.4216
-	desc = ancrel.4216.desc
+	desc = ancrel.4216.desc.desc
 	picture = GFX_evt_pyramid
 
 	is_triggered_only = yes
@@ -3611,7 +3611,7 @@ character_event = {
 # you and your men have reached a fork in the tunnel, which way do you go?
 character_event = {
 	id = ancrel.4217
-	desc = ancrel.4217.desc
+	desc = ancrel.4217.desc.desc
 	picture = GFX_evt_pyramid
 
 	is_triggered_only = yes

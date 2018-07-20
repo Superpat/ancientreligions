@@ -2,8 +2,8 @@ namespace = ancrel
 
 #Lover Remarks of your Paris-like sexual prowess
 character_event = {
-	id = ancrel.3010
-	desc = EVTDESCancrel.3010
+	id = epicblood.10
+	desc = epicblood.10.desc
 	picture = GFX_evt_roman_temple
 	border = GFX_event_normal_frame_religion
 
@@ -61,7 +61,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.3010
+		name = EVTOPTAepicblood.10
 		set_character_flag = personal_legend_5
 		prestige = 10
 	}
@@ -70,8 +70,8 @@ character_event = {
 #Your Odyssian cleverness becomes renowned after your 
 #involvement in a successfull assassination becomes known
 character_event = {
-	id = ancrel.3011
-	desc = EVTDESCancrel.3011
+	id = epicblood.11
+	desc = epicblood.11.desc
 	picture = GFX_evt_roman_temple
 	border = GFX_event_normal_frame_religion
 	is_triggered_only = yes
@@ -91,7 +91,7 @@ character_event = {
 		# where the plotter meets the above criteria
 	}
 	option = {
-		name = EVTOPTAancrel.3011
+		name = EVTOPTAepicblood.11
 		set_character_flag = personal_legend_5
 		prestige = 10
 	}
@@ -99,8 +99,8 @@ character_event = {
 
 #Your Nestor-ian skills at diplomacy are becoming famous
 character_event = {
-	id = ancrel.3012
-	desc = EVTDESCancrel.3012
+	id = epicblood.12
+	desc = epicblood.12.desc
 	picture = GFX_evt_roman_temple
 	border = GFX_event_normal_frame_religion
 
@@ -171,7 +171,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.3012
+		name = EVTOPTAepicblood.12
 		set_character_flag = personal_legend_5
 		prestige = 10
 	}
@@ -180,8 +180,8 @@ character_event = {
 #Your Achilles-like valor is on display for all to see as you take an enemy holding
 #[on_siege_won_leader]
 character_event = {
-	id = ancrel.3013
-	desc = EVTDESCancrel.3013
+	id = epicblood.13
+	desc = epicblood.13.desc
 	picture = GFX_evt_roman_temple
 	border = GFX_event_normal_frame_religion
 
@@ -207,7 +207,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.3013
+		name = EVTOPTAepicblood.13
 		set_character_flag = personal_legend_5
 	}	
 }
@@ -215,8 +215,8 @@ character_event = {
 #Your Hector-ish bravery is plainly seen while defending your land against an enemy army
 #[on_siege_won_leader]
 character_event = {
-	id = ancrel.3014
-	desc = EVTDESCancrel.3013
+	id = epicblood.14
+	desc = epicblood.13.desc
 	picture = GFX_evt_roman_temple
 	border = GFX_event_normal_frame_religion
 
@@ -240,7 +240,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.3013
+		name = EVTOPTAepicblood.13
 		set_character_flag = personal_legend_5
 	}
 }

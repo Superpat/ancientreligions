@@ -3,10 +3,10 @@
 # ANCIENT RELIGIONS
 # - Celtic Flavor Events
 #
-# Event IDs ancrel.0150 - 0151 
-#			ancrel.1252 - 1253
-#			ancrel.0208 - 0210
-#			ancrel.0256
+# Event IDs celtic.150 - 0151 
+#			celtic.1252 - 1253
+#			celtic.208 - 0210
+#			celtic.256
 #
 ###################################
 
@@ -16,8 +16,8 @@ namespace = ancrel
 
 # Meeting a Bard
 character_event = {
-	id = ancrel.0150
-	desc = EVTDESCancrel.0150
+	id = celtic.150
+	desc = celtic.150.desc
 	picture = GFX_evt_thebard
 	border = GFX_event_normal_frame_religion
 	
@@ -61,7 +61,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.0150
+		name = EVTOPTAceltic.150
 		piety = 25
 
 		random_list = {
@@ -73,7 +73,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTBancrel.0150
+		name = EVTOPTBceltic.150
 		trigger = {
 			trait = poet
 		}
@@ -94,8 +94,8 @@ character_event = {
 
 # The Afanc
 character_event = {
-	id = ancrel.0151
-	desc = EVTDESCancrel.0151
+	id = celtic.151
+	desc = celtic.151.desc
 	picture = GFX_evt_lakeside
 	border = GFX_event_normal_frame_religion
 	
@@ -143,7 +143,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.0151
+		name = EVTOPTAceltic.151
 		piety = 20
 		prestige = 20
 		random_list = {
@@ -165,7 +165,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTBancrel.0151
+		name = EVTOPTBceltic.151
 		piety = 20
 		prestige = -25
 		remove_trait = brave
@@ -174,8 +174,8 @@ character_event = {
 
 # The banshee
 character_event = {
-	id = ancrel.1252
-	desc = EVTDESCancrel.1252
+	id = celtic.1252
+	desc = celtic.1252.desc
 	picture = GFX_evt_banshee
 	border = GFX_event_normal_frame_religion
 	
@@ -228,7 +228,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.1252
+		name = EVTOPTAceltic.1252
 		piety = 75
 		random_list = {
 			10 = {
@@ -247,7 +247,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTBancrel.1252
+		name = EVTOPTBceltic.1252
 		prestige = 50
 		random_list = {
 			20 = {
@@ -263,8 +263,8 @@ character_event = {
 
 # Bran's Voyage
 character_event = {
-	id = ancrel.1253
-	desc = EVTDESCancrel.1253
+	id = celtic.1253
+	desc = celtic.1253.desc
 	picture = GFX_evt_boatcoast
 	border = GFX_event_normal_frame_religion
 	
@@ -308,7 +308,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.1253
+		name = EVTOPTAceltic.1253
 		piety = 20
 		prestige = 25
 		random_list = {
@@ -331,8 +331,8 @@ character_event = {
 #Character Sick, Rumor of Celts on St Kilda
 
 character_event = {
-	id = ancrel.0208
-	desc = EVTDESCancrel.0208
+	id = celtic.208
+	desc = celtic.208.desc
 	picture = GFX_evt_whispering_in_ear
 	border = GFX_event_normal_frame_religion
 
@@ -386,19 +386,19 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAancrel.0208
+		name = EVTOPTAceltic.208
 		ai_chance = {
 			factor = 50
 		}
 		custom_tooltip = {
 			text = travel_island
 			hidden_tooltip = {
-				character_event = { id = ancrel.0209 days = 5 }
+				character_event = { id = celtic.209 days = 5 }
 			}
 		}
 	}
 	option = {
-		name = EVTOPTBancrel.0208
+		name = EVTOPTBceltic.208
 		ai_chance = {
 			factor = 50
 		}
@@ -410,23 +410,23 @@ character_event = {
 
 # Arrival at St Kilda
 character_event = {
-	id = ancrel.0209
-	desc = EVTDESCancrel.0209
+	id = celtic.209
+	desc = celtic.209.desc
 	picture = GFX_evt_merchant_ship_at_sea_republic
 
 	is_triggered_only = yes
 
 	option = {	 #Accept the healing/conversion
-		name = EVTOPTAancrel.0209
+		name = EVTOPTAceltic.209
 		ai_chance = {
 			factor = 50
 		}
 		hidden_tooltip = {
-			character_event = { id = ancrel.0210 days = 10 }
+			character_event = { id = celtic.210 days = 10 }
 		}
 	}
 	option = {
-		name = EVTOPTBancrel.0209
+		name = EVTOPTBceltic.209
 		ai_chance = {
 			factor = 50
 		}
@@ -442,14 +442,14 @@ character_event = {
 
 # Accept their faith
 character_event = {
-	id = ancrel.0210
-	desc = EVTDESCancrel.0210
+	id = celtic.210
+	desc = celtic.210.desc
 	picture = GFX_evt_Pagan_dolmen
 
 	is_triggered_only = yes
 
 	option = { #Character healed/converted
-		name = EVTOPTAancrel.0210
+		name = EVTOPTAceltic.210
 		
 		if = {
 			limit = { religion_group = christian }
@@ -479,7 +479,7 @@ character_event = {
 			cure_illness = yes
 			hidden_tooltip = {
 				any_vassal = {
-					character_event = { id = ancrel.0300 days = 2 }
+					character_event = { id = celtic.300 days = 2 }
 				}
 				any_courtier = {
 					limit = {
@@ -488,7 +488,7 @@ character_event = {
 							character = ROOT # or prisoners
 						}
 					}
-					character_event = { id = ancrel.0300 days = 2 }
+					character_event = { id = celtic.300 days = 2 }
 				}
 			}
 		}
@@ -506,9 +506,9 @@ character_event = {
 # on_new_holder
 # ROOT is character, FROM is title
 narrative_event = {
-	id = ancrel.0256
-	title = EVTNAMEancrel.0256
-	desc = EVTDESCancrel.0256
+	id = celtic.256
+	title = EVTNAMEceltic.256
+	desc = celtic.256.desc
 	picture = GFX_event_y_mab_darogan
 
 	major = yes
@@ -555,7 +555,7 @@ narrative_event = {
 				religion = celtic_pagan_reformed
 			}
 		}
-		name = EVTOPTAancrel.0256 #Ok
+		name = EVTOPTAceltic.256 #Ok
 	}
 
 	option = {
@@ -573,14 +573,14 @@ narrative_event = {
 				}
 			}
 		}
-		name = EVTOPTBancrel.0256
+		name = EVTOPTBceltic.256
 	}
 
 	option = {
 		trigger = {
 			religion_group = indian_group
 		}
-		name = EVTOPTCancrel.0256
+		name = EVTOPTCceltic.256
 	}
 }
 
@@ -593,8 +593,8 @@ narrative_event = {
 # A Celtic King is maimed and thus unfit for rule!
 # [on_yearly_pulse]
 character_event = {
-	id = ancrel.1000
-	desc = ancrel.1000.desc
+	id = celtic.1000
+	desc = celtic.1000.desc.desc
 	picture = GFX_evt_nuada_mag_tuired
 
 	is_triggered_only = yes

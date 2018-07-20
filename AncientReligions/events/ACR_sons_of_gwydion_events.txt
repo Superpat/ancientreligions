@@ -3,7 +3,7 @@
 # ANCIENT RELIGIONS
 # - The Sons of Gwydion
 #
-# Event ID ancrel.0110 - ancrel.0149 reserved
+# Event ID celtic.110 - celtic.149 reserved
 #
 #######################################
 
@@ -13,9 +13,9 @@ namespace = ancrel
 
 # The Sons of Gwydion Founded (Brythonic King)
 narrative_event = {
-	id = ancrel.0110
-	title = ancrel.0110.title
-	desc = ancrel.0110.desc
+	id = celtic.110
+	title = celtic.110.title
+	desc = celtic.110.desc
 	picture = GFX_evt_celtic_warriors
 	border = GFX_event_narrative_frame_war
 	
@@ -24,7 +24,7 @@ narrative_event = {
 	major = yes
 	
 	option = {
-		name = ancrel.0110.a
+		name = celtic.110.a
 		trigger = {
 			has_character_flag = acr_founded_gwydion
 		}
@@ -35,7 +35,7 @@ narrative_event = {
 	}
 
 	option = {
-		name = ancrel.0110.b
+		name = celtic.110.b
 		trigger = {
 			NOT = { has_character_flag = acr_founded_gwydion }
 			religion = celtic_pagan_reformed
@@ -43,7 +43,7 @@ narrative_event = {
 	}
 
 	option = {
-		name = ancrel.0110.c
+		name = celtic.110.c
 		trigger = {
 			NOT = { religion = celtic_pagan_reformed }
 		}
@@ -52,7 +52,7 @@ narrative_event = {
 
 # Sons of Gwydion Chief gets Wolf trait
 character_event = {
-	id = ancrel.0115
+	id = celtic.115
 	hide_window = yes
 	
 	only_rulers = yes
@@ -72,7 +72,7 @@ character_event = {
 }
 
 character_event = {
-	id = ancrel.0118
+	id = celtic.118
 	hide_window = yes
 	
 	is_triggered_only = yes
@@ -85,7 +85,7 @@ character_event = {
 
 # Son wants to join the Sons of Gwydion (Son)
 character_event = {
-	id = ancrel.0119
+	id = celtic.119
 	hide_window = yes
 	
 	ai = yes
@@ -164,22 +164,22 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = ancrel.0120 } }
+		father = { character_event = { id = celtic.120 } }
 		set_character_flag = wants_gwydion
 	}
 }
 
 # Son wants to join the sons of Gwydion (Father)
 character_event = {
-	id = ancrel.0120
-	desc = EVTDESCancrel.0120
+	id = celtic.120
+	desc = celtic.120.desc
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.0120
+		name = EVTOPTAceltic.120
 		FROM = {
 			opinion = {
 				modifier = opinion_very_disappointed
@@ -190,7 +190,7 @@ character_event = {
 		prestige = -100
 	}
 	option = {
-		name = EVTOPTBancrel.0120
+		name = EVTOPTBceltic.120
 		d_gwydion = {
 			holder_scope = {
 				FROM = {
@@ -200,7 +200,7 @@ character_event = {
 		}
 		hidden_tooltip = {
 			FROM = { 
-				character_event = { id = ancrel.0118 days = 1460 }
+				character_event = { id = celtic.118 days = 1460 }
 			}
 		}
 		prestige = 100
@@ -209,7 +209,7 @@ character_event = {
 
 # Son returns scarred but seasoned (Son)
 character_event = {
-	id = ancrel.0124
+	id = celtic.124
 	hide_window = yes
 	
 	trigger = {
@@ -232,22 +232,22 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = ancrel.0125 } }
+		father = { character_event = { id = celtic.125 } }
 		clr_character_flag = serving_gwydion
 	}
 }
 
 # Son returns scarred but seasoned
 character_event = {
-	id = ancrel.0125
-	desc = EVTDESCancrel.0125
+	id = celtic.125
+	desc = celtic.125.desc
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.0125
+		name = EVTOPTAceltic.125
 		FROM = {
 			move_character = ROOT
 			add_trait = scarred
@@ -259,7 +259,7 @@ character_event = {
 
 # Son returns maimed (Son)
 character_event = {
-	id = ancrel.0128
+	id = celtic.128
 	hide_window = yes
 	
 	trigger = {
@@ -276,22 +276,22 @@ character_event = {
 	
 	immediate = {
 		add_trait = maimed
-		father = { character_event = { id = ancrel.0129 } }
+		father = { character_event = { id = celtic.129 } }
 		clr_character_flag = serving_gwydion
 	}
 }
 
 # Son returns maimed
 character_event = {
-	id = ancrel.0129
-	desc = EVTDESCancrel.0129
+	id = celtic.129
+	desc = celtic.129.desc
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.0129
+		name = EVTOPTAceltic.129
 		FROM = {
 			move_character = ROOT
 			tooltip = { add_trait = maimed }
@@ -302,7 +302,7 @@ character_event = {
 
 # Son returns as excellent strategist (Son)
 character_event = {
-	id = ancrel.0130
+	id = celtic.130
 	hide_window = yes
 	
 	trigger = {
@@ -342,22 +342,22 @@ character_event = {
 	}
 
 	immediate = {
-		father = { character_event = { id = ancrel.0131 } }
+		father = { character_event = { id = celtic.131 } }
 		clr_character_flag = serving_gwydion
 	}
 }
 
 # Son returns as excellent strategist
 character_event = {
-	id = ancrel.0131
-	desc = EVTDESCancrel.0131
+	id = celtic.131
+	desc = celtic.131.desc
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.0131
+		name = EVTOPTAceltic.131
 		if = {
 			limit = {
 				FROM = {
@@ -396,7 +396,7 @@ character_event = {
 
 # Son returns with PTSD (Son)
 character_event = {
-	id = ancrel.0132
+	id = celtic.132
 	hide_window = yes
 	
 	trigger = {
@@ -423,22 +423,22 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = ancrel.0133 } }
+		father = { character_event = { id = celtic.133 } }
 		clr_character_flag = serving_gwydion
 	}
 }
 
 # Son returns with PTSD
 character_event = {
-	id = ancrel.0133
-	desc = EVTDESCancrel.0133
+	id = celtic.133
+	desc = celtic.133.desc
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.0133
+		name = EVTOPTAceltic.133
 		FROM = {
 			move_character = ROOT
 			add_trait = stressed
@@ -450,7 +450,7 @@ character_event = {
 
 # Son returns home with wife (Son)
 character_event = {
-	id = ancrel.0134
+	id = celtic.134
 	hide_window = yes
 	
 	trigger = {
@@ -469,22 +469,22 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = ancrel.0135 } }
+		father = { character_event = { id = celtic.135 } }
 		clr_character_flag = serving_gwydion
 	}
 }
 
 # Son returns home with wife
 character_event = {
-	id = ancrel.0135
-	desc = EVTDESCancrel.0135
+	id = celtic.135
+	desc = celtic.135.desc
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.0135
+		name = EVTOPTAceltic.135
 		create_character = {
 			random_traits = yes
 			dynasty = NONE
@@ -505,7 +505,7 @@ character_event = {
 
 # Son returns home as a zealot (Son)
 character_event = {
-	id = ancrel.0136
+	id = celtic.136
 	hide_window = yes
 	
 	trigger = {
@@ -524,22 +524,22 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = ancrel.0137 } }
+		father = { character_event = { id = celtic.137 } }
 		clr_character_flag = serving_gwydion
 	}
 }
 
 # Son returns home as a zealot
 character_event = {
-	id = ancrel.0137
-	desc = EVTDESCancrel.0137
+	id = celtic.137
+	desc = celtic.137.desc
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.0137
+		name = EVTOPTAceltic.137
 		FROM = {
 			move_character = ROOT
 			add_trait = zealous
@@ -550,7 +550,7 @@ character_event = {
 
 # Son returns home as a seasoned warrior (Son)
 character_event = {
-	id = ancrel.0138
+	id = celtic.138
 	hide_window = yes
 	
 	trigger = {
@@ -592,22 +592,22 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = ancrel.0139 } }
+		father = { character_event = { id = celtic.139 } }
 		clr_character_flag = serving_gwydion
 	}
 }
 
 # Son returns home as a seasoned warrior
 character_event = {
-	id = ancrel.0139
-	desc = EVTDESCancrel.0139
+	id = celtic.139
+	desc = celtic.139.desc
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.0139
+		name = EVTOPTAceltic.139
 		FROM = {
 			move_character = ROOT
 			add_trait = brave
@@ -619,7 +619,7 @@ character_event = {
 
 # Son dies in battle (Son)
 character_event = {
-	id = ancrel.0140
+	id = celtic.140
 	hide_window = yes
 	
 	trigger = {
@@ -693,29 +693,29 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = ancrel.0141 } }
+		father = { character_event = { id = celtic.141 } }
 		clr_character_flag = serving_gwydion
 	}
 }
 
 # Son dies in battle
 character_event = {
-	id = ancrel.0141
-	desc = EVTDESCancrel.0141
+	id = celtic.141
+	desc = celtic.141.desc
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.0141
+		name = EVTOPTAceltic.141
 		FROM = { death = { death_reason = death_battle } }
 	}
 }
 
 # Son returns with loot (Son)
 character_event = {
-	id = ancrel.0142
+	id = celtic.142
 	hide_window = yes
 	
 	trigger = {
@@ -737,22 +737,22 @@ character_event = {
 	}
 	
 	immediate = {
-		father = { character_event = { id = ancrel.0143 } }
+		father = { character_event = { id = celtic.143 } }
 		clr_character_flag = serving_gwydion
 	}
 }
 
 # Son returns with loot
 character_event = {
-	id = ancrel.0143
-	desc = EVTDESCancrel.0143
+	id = celtic.143
+	desc = celtic.143.desc
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAancrel.0143
+		name = EVTOPTAceltic.143
 		FROM = {
 			move_character = ROOT
 			add_trait = wolf
@@ -763,8 +763,8 @@ character_event = {
 
 # Father dies, Player Son is heir
 character_event = {
-	id = ancrel.0144
-	desc = EVTDESCancrel.0144
+	id = celtic.144
+	desc = celtic.144.desc
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
@@ -788,7 +788,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAancrel.0144
+		name = EVTOPTAceltic.144
 		add_trait = wolf
 		prestige = 200
 		wealth = 200
@@ -797,7 +797,7 @@ character_event = {
 
 # Father dies, Son gets Wolf Warrior trait
 character_event = {
-	id = ancrel.0145
+	id = celtic.145
 	hide_window = yes
 	
 	trigger = {

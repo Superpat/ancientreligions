@@ -434,7 +434,7 @@ character_event = {
 # Arriving for the great holy war - Non-Hellenic Ancient Religions
 character_event = {
 	id = ancrel.9017
-	desc = "EVTDESC8300"
+	desc = EVTDESC8300
 	picture = "GFX_evt_battle"
 	border = GFX_event_normal_frame_war
 	

@@ -41,7 +41,7 @@ decisions = {
 				# Keep counter of number of Sed festivals hold
 				change_variable = { which = nb_sed_festivals value = 1 }
 	
-				character_event = { id = ancrel.4010 days = 15 }
+				character_event = { id = egyptian.10 days = 15 }
 			}
 		}
 		ai_will_do = {
@@ -76,7 +76,7 @@ decisions = {
 			set_global_flag = luxor_restoring
 			wealth = -1000
 			795 = {
-				province_event = { id = ancrel.4000 }
+				province_event = { id = egyptian.0 }
 			}
 		}
 		ai_will_do = {
@@ -120,7 +120,7 @@ decisions = {
 		}
 		effect = {
 			set_character_flag = pyramid_building_char
-			character_event = { id = ancrel.4004 }
+			character_event = { id = egyptian.4 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -182,7 +182,7 @@ decisions = {
 						grant_title = PREV
 					}
 					set_defacto_liege = ROOT
-					narrative_event = { id = ancrel.4006 }
+					narrative_event = { id = egyptian.6 }
 					if = {
 						limit = { ROOT = { ai = no } }
 						ROOT = {
@@ -233,7 +233,7 @@ decisions = {
 				k_aten_pagan = {
 					grant_title = ROOT
 				}
-				narrative_event = { id = ancrel.5004 }
+				narrative_event = { id = atenic.004 }
 				if = {
 					limit = { ROOT = { ai = no } }
 					ROOT = {
@@ -271,7 +271,7 @@ decisions = {
 			activate_title = { title = d_anubis status = yes }
 			hidden_tooltip = {
 				set_character_flag = event_ancrel4007
-				narrative_event = { id = ancrel.4007 }
+				narrative_event = { id = egyptian.7 }
 				create_character = {
 					random_traits = yes
 					religion = egyptian_pagan
@@ -334,7 +334,7 @@ decisions = {
 			activate_title = { title = d_horus status = yes }
 			hidden_tooltip = {
 				set_character_flag = event_ancrel4008
-				narrative_event = { id = ancrel.4008 }
+				narrative_event = { id = egyptian.8 }
 				create_character = {
 					random_traits = yes
 					religion = egyptian_pagan
@@ -401,7 +401,7 @@ decisions = {
 			set_global_flag = akhetaten_restoring
 			wealth = -1000
 			795 = {
-				province_event = { id = ancrel.5000 }
+				province_event = { id = atenic.000 }
 			}
 		}
 		ai_will_do = {
@@ -446,8 +446,8 @@ decisions = {
 			wealth = -300
 			activate_title = { title = d_burning_blades status = yes }
 			hidden_tooltip = {
-				set_character_flag = event_ancrel_5005
-				narrative_event = { id = ancrel.5005 }
+				set_character_flag = eventancrel.5005
+				narrative_event = { id = atenic.005 }
 				create_character = {
 					random_traits = yes
 					religion = aten_pagan

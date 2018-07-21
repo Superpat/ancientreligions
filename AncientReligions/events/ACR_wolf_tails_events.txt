@@ -9,7 +9,7 @@
 # Author: Adam 'xirsoi/theStormWeaver' Chevalier
 #
 
-namespace = ancrel
+namespace = celtic
 
 
 #############################################
@@ -138,7 +138,7 @@ province_event = {
 
 narrative_event = {
 	id = celtic.281
-	title = EVTNAMEceltic.281
+	title = celtic.281.title
 	desc = celtic.281.desc
 	picture = GFX_evt_celtic_warriors
 	border = GFX_event_narrative_frame_war

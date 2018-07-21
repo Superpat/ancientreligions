@@ -6,7 +6,7 @@
 #
 #######################################
 
-namespace = ancrel
+namespace = hellenic
 
 # The Restoration of Rome (Byzantium / Latin Empire)
 narrative_event = {

@@ -6,7 +6,7 @@
 # Event Ids: dionysus.0 - 3299 reserved
 ##############################################
 
-namespace = ancrel
+namespace = dionysus
 
 ####################
 ## Society events ##
@@ -142,7 +142,7 @@ character_event = {
 # Dionysia start
 character_event = {
 	id = dionysus.52
-	desc = dionysus.52
+	desc = dionysus.52.desc
 	picture = GFX_evt_market
 
 	is_triggered_only = yes

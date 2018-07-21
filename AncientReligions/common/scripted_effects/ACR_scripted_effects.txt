@@ -392,77 +392,77 @@ set_flag_for_holy_order_modifiers_effect = {
 	# Extant Loan
 	if = {
 		limit = { has_character_modifier = borrowed_from_d_fianna }
-		set_character_flag = borrowed_from_@d_fianna
+		set_character_flag = borrowed_from_d_fianna
 	}
 	if = {
 		limit = { has_character_modifier = borrowed_from_d_red_dragons }
-		set_character_flag = borrowed_from_@d_red_dragons
+		set_character_flag = borrowed_from_d_red_dragons
 	}
 	if = {
 		limit = { has_character_modifier = borrowed_from_d_anubis }
-		set_character_flag = borrowed_from_@d_anubis
+		set_character_flag = borrowed_from_d_anubis
 	}
 	if = {
 		limit = { has_character_modifier = borrowed_from_d_horus }
-		set_character_flag = borrowed_from_@d_horus
+		set_character_flag = borrowed_from_d_horus
 	}
 	if = {
 		limit = { has_character_modifier = borrowed_from_d_legio_hellenica }
-		set_character_flag = borrowed_from_@d_legio_hellenica
+		set_character_flag = borrowed_from_d_legio_hellenica
 	}
 	if = {
 		limit = { has_character_modifier = borrowed_from_d_sacred_band }
-		set_character_flag = borrowed_from_@d_sacred_band
+		set_character_flag = borrowed_from_d_sacred_band
 	}
 	if = {
 		limit = { has_character_modifier = borrowed_from_d_sickles }
-		set_character_flag = borrowed_from_@d_sickles
+		set_character_flag = borrowed_from_d_sickles
 	}
 	if = {
 		limit = { has_character_modifier = borrowed_from_d_burning_blades }
-		set_character_flag = borrowed_from_@d_burning_blades
+		set_character_flag = borrowed_from_d_burning_blades
 	}
 	if = {
 		limit = { has_character_modifier = borrowed_from_d_men_of_steel }
-		set_character_flag = borrowed_from_@d_men_of_steel
+		set_character_flag = borrowed_from_d_men_of_steel
 	}
 
 	# Expelled from the Realm
 	if = {
 		limit = { has_character_modifier = expelled_d_fianna }
-		set_character_flag = expelled_@d_fianna
+		set_character_flag = expelled_d_fianna
 	}
 	if = {
 		limit = { has_character_modifier = expelled_d_red_dragons }
-		set_character_flag = expelled_@d_red_dragons
+		set_character_flag = expelled_d_red_dragons
 	}
 	if = {
 		limit = { has_character_modifier = expelled_d_anubis }
-		set_character_flag = expelled_@d_anubis
+		set_character_flag = expelled_d_anubis
 	}
 	if = {
 		limit = { has_character_modifier = expelled_d_horus }
-		set_character_flag = expelled_@d_horus
+		set_character_flag = expelled_d_horus
 	}
 	if = {
 		limit = { has_character_modifier = expelled_d_legio_hellenica }
-		set_character_flag = expelled_@d_legio_hellenica
+		set_character_flag = expelled_d_legio_hellenica
 	}
 	if = {
 		limit = { has_character_modifier = expelled_d_sacred_band }
-		set_character_flag = expelled_@d_sacred_band
+		set_character_flag = expelled_d_sacred_band
 	}
 	if = {
 		limit = { has_character_modifier = expelled_d_sickles }
-		set_character_flag = expelled_@d_sickles
+		set_character_flag = expelled_d_sickles
 	}
 	if = {
 		limit = { has_character_modifier = expelled_d_burning_blades }
-		set_character_flag = expelled_@d_burning_blades
+		set_character_flag = expelled_d_burning_blades
 	}
 	if = {
 		limit = { has_character_modifier = expelled_d_men_of_steel }
-		set_character_flag = expelled_@d_men_of_steel
+		set_character_flag = expelled_d_men_of_steel
 	}
 }
 

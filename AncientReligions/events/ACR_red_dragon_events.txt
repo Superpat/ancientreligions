@@ -11,7 +11,7 @@
 # and Adam 'xirsoi/theStormWeaver' Chevalier
 #
 
-namespace = ancrel
+namespace = celtic
 
 # The birth of the Red Dragon Knights
 narrative_event = {
@@ -251,7 +251,7 @@ character_event = {
 		}
 	}
 	option = {
-		name =  EVTOPTBceltic.1320 # It's a bad idea
+		name =  celtic.1320.b # It's a bad idea
 	}
 }
 
@@ -275,20 +275,20 @@ character_event = {
 		FROM = {
 			character_event = {
 				id = celtic.1322
-				tooltip =  EVTTOOLTIPceltic.1322
+				tooltip =  celtic.1322.tt
 			}
 		}
 	}
 	
 	option = {
-		name =  EVTOPTBceltic.1321 # Refuse
+		name =  celtic.1321.b # Refuse
 		
 		piety = -100
 		
 		FROM = {
 			character_event = {
 				id = celtic.1323
-				tooltip =  EVTTOOLTIPceltic.1323
+				tooltip =  celtic.1323.tt
 			}
 		}
 	}
@@ -493,7 +493,7 @@ letter_event = {
 	}
 	
 	option = {
-		name =  EVTOPTBceltic.1321 # Refuse
+		name =  celtic.1321.b # Refuse
 		ai_chance = {
 			factor = 20
 		}

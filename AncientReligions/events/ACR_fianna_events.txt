@@ -11,12 +11,12 @@
 
 # Written by Superskierpat
 
-namespace = ancrel
+namespace = celtic
 
 # The Fianna Founded (Gaelic King)
 narrative_event = {
 	id = celtic.1150
-	title = EVTNAMEceltic.1150
+	title = celtic.1150.title
 	desc = celtic.1150.desc
 	picture = GFX_evt_celtic_warriors
 	border = GFX_event_narrative_frame_war
@@ -42,7 +42,7 @@ narrative_event = {
 # The Fianna Founded (Gaelic)
 narrative_event = {
 	id = celtic.1151
-	title = EVTNAMEceltic.1150
+	title = celtic.1150.title
 	desc = celtic.1151.desc
 	picture = GFX_evt_celtic_warriors
 	border = GFX_event_narrative_frame_war
@@ -209,7 +209,7 @@ character_event = {
 		prestige = -100
 	}
 	option = {
-		name = EVTOPTBceltic.1160
+		name = celtic.1160.b
 		d_fianna = {
 			holder_scope = {
 				FROM = {
@@ -1038,8 +1038,8 @@ character_event = {
 				
 	}	
 	
-	option = {
-		name = celtic.1254.a #Welcome them with a lavish feast
+	option = { #Welcome them with a lavish feast
+		name = celtic.1254.a
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -1082,8 +1082,8 @@ character_event = {
 		}
 		
 	}
-	option = {
-		name = EVTOPTBceltic.1254 #Welcome them reluctantly
+	option = { #Welcome them reluctantly
+		name = celtic.1254.b
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -1102,7 +1102,7 @@ character_event = {
 		set_character_flag = fian_band_visiting
 	}
 	option = {
-		name = EVTOPTCceltic.1254 #Refuse them Access
+		name = celtic.1254.c #Refuse them Access
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -1145,14 +1145,14 @@ character_event = {
 		clr_character_flag = fian_woman_seduced
 	}
 	
-	option = {
-		name = celtic.1255.a 	# pay for their expenses, and send them on their way
+	option = { #pay for their expenses, and send them on their way
+		name = celtic.1255.a
 		scaled_wealth = -0.05
 		piety = 5
 		
 	}
-	option = {
-		name = EVTOPTBceltic.1255 #let them stay at the castle while recovering.
+	option = { #let them stay at the castle while recovering
+		name = celtic.1255.b
 		prestige = -5
 		piety = 5
 		if = {
@@ -1189,8 +1189,8 @@ character_event = {
 		}
 	}	
 	
-	option = {
-		name = celtic.1256.a  #take him in your service.
+	option = {  #take him in your service.
+		name = celtic.1256.a
 		create_character = {
 			random_traits = no
 			dynasty = random
@@ -1207,8 +1207,8 @@ character_event = {
 		}	
 		scaled_wealth = -0.1
 	}
-	option = {
-		name = EVTOPTBceltic.1256 #give him lavish praise.
+	option = { #give him lavish praise
+		name = celtic.1256.b
 		prestige = 5
 	}
 }	
@@ -1258,14 +1258,14 @@ character_event = {
 		
 	}	
 	option = {
-		name = celtic.1257.a  #Throw them out.
+		name = celtic.1257.a  #Throw them out
 		clr_character_flag = fian_band_visiting
 		clr_character_flag = fian_recruited	
 		clr_character_flag = fian_woman_seduced
 		piety = -10 
 	}
-	option = {
-		name = EVTOPTBceltic.1257 #Ignore the complaints
+	option = { #Ignore the complaints
+		name = celtic.1257.a
 	 	random_courtier = {
 	 		limit = {
 	 			age = 16
@@ -1325,8 +1325,8 @@ character_event = {
 			has_character_flag = fian_recruited	
 		}		
 	}	
-	option = {
-		name = celtic.1258.a #stay
+	option = { #stay
+		name = celtic.1258.a
  		
  		
 		random_courtier = {
@@ -1355,8 +1355,8 @@ character_event = {
 	 	}
 	 	piety = -10
 	}
-	option = {
-		name = EVTOPTBceltic.1258 #dungeon
+	option = { #dungeon
+		name = celtic.1258.c
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -1420,14 +1420,14 @@ character_event = {
 			has_character_flag = fian_recruited	
 		}		
 	}	
-	option = {
-		name = celtic.1259.a #give them a farewell feast
+	option = { #give them a farewell feast
+		name = celtic.1259.a
 		prestige = 10
 		scaled_wealth = -0.05
 
 	}
-	option = {
-		name = EVTOPTBceltic.1259 #let them leave quitely
+	option = { #let them leave quitely
+		name = celtic.1259.b
 		prestige = -5
 	}
 }
@@ -1453,8 +1453,8 @@ character_event = {
 		}
 	}
 	
-	option = {
-		name = celtic.1260.a  #order him released
+	option = { #order him released
+		name = celtic.1260.a
 		job_marshal = {
 			opinion = {
 				modifier = marshal_overruled
@@ -1464,8 +1464,8 @@ character_event = {
 		piety = 5
 		clr_character_flag = hates_fianna
 	}
-	option = {
-		name = EVTOPTBceltic.1260 #it is not my concern
+	option = { #it is not my concern
+		name = celtic.1260.b
 		job_marshal = {
 			prestige = 10
 		}

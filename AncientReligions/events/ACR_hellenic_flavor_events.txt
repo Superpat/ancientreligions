@@ -9,7 +9,7 @@
 
 # Written by Patrick Marchand
 
-namespace = ancrel
+namespace = hellenic
 
 # Augur hit by lightning
 character_event = {
@@ -63,7 +63,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTBhellenic.240
+		name = hellenic.240.b
 		trigger = {
 			trait = paranoid
 		}
@@ -134,7 +134,7 @@ character_event = {
 		prestige = -50
 	}
 	option = {
-		name = EVTOPTBhellenic.241
+		name = hellenic.241.b
 		change_learning  = 1
 		random_list = {
 			70 = {}

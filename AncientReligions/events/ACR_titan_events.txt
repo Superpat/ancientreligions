@@ -20,7 +20,7 @@
 # Written by Henrik Eklund for the Viking Blot
 # Adapted for the Titan Cult by Adam 'theStormWeaver' Chevalier
 
-namespace = ancrel
+namespace = titan
 
 # You summon your vassals to a Thysia
 character_event = {
@@ -43,7 +43,7 @@ character_event = {
 				war = no
 				NOT = { trait = incapable }
 			}
-			character_event = { id = titan.1 tooltip = EVTTOOLTIPtitan.1 }
+			character_event = { id = titan.1 tooltip = titan.1.tt }
 			hidden_tooltip = { character_event = { id = titan.5 days = 10 } }
 		}
 		any_vassal = {
@@ -60,7 +60,7 @@ character_event = {
 				war = no
 				NOT = { trait = incapable }
 			}
-			character_event = { id = titan.2 tooltip = EVTTOOLTIPtitan.2 }
+			character_event = { id = titan.2 tooltip = titan.2.tt }
 		}
 		hidden_tooltip = { character_event = { id = titan.4 days = 10 } }
 	}
@@ -110,14 +110,14 @@ character_event = {
 			wealth = 5
 		}
 		FROM = {
-			character_event = { id = titan.3 tooltip = EVTTOOLTIPtitan.3 }
+			character_event = { id = titan.3 tooltip = titan.3.tt }
 		}
 		wealth = -5
 	}
 	option = { # Don't pay
-		name = EVTOPTBtitan.2
+		name = titan.2.b
 		FROM = {
-			character_event = { id = titan.36 tooltip = EVTTOOLTIPtitan.36 }
+			character_event = { id = titan.36 tooltip = titan.36.tt }
 		}
 		tooltip = {
 			FROM = {
@@ -876,8 +876,8 @@ character_event = {
 		piety = 15
 	}
 	option = {
-		name = EVTOPTBtitan.10
-		FROM = { character_event = { id = titan.37 tooltip = EVTTOOLTIPtitan.37 } }
+		name = titan.10.b
+		FROM = { character_event = { id = titan.37 tooltip = titan.37.tt } }
 		piety = -25
 	}
 }
@@ -909,8 +909,8 @@ character_event = {
 		piety = 25
 	}
 	option = {
-		name = EVTOPTBtitan.11
-		FROM = { character_event = { id = titan.37 tooltip = EVTTOOLTIPtitan.37 } }
+		name = titan.11.b
+		FROM = { character_event = { id = titan.37 tooltip = titan.37.tt } }
 		piety = -50
 	}
 }
@@ -942,8 +942,8 @@ character_event = {
 		piety = 25
 	}
 	option = {
-		name = EVTOPTBtitan.12
-		FROM = { character_event = { id = titan.37 tooltip = EVTTOOLTIPtitan.37 } }
+		name = titan.12.b
+		FROM = { character_event = { id = titan.37 tooltip = titan.37.tt } }
 		piety = -50
 	}
 }
@@ -977,8 +977,8 @@ character_event = {
 		piety = 15
 	}
 	option = {
-		name = EVTOPTBtitan.13
-		FROM = { character_event = { id = titan.37 tooltip = EVTTOOLTIPtitan.37 } }
+		name = titan.13.b
+		FROM = { character_event = { id = titan.37 tooltip = titan.37.tt } }
 		piety = -25
 	}
 }
@@ -1012,8 +1012,8 @@ character_event = {
 		piety = 15
 	}
 	option = {
-		name = EVTOPTBtitan.14
-		FROM = { character_event = { id = titan.37 tooltip = EVTTOOLTIPtitan.37 } }
+		name = titan.14.b
+		FROM = { character_event = { id = titan.37 tooltip = titan.37.tt } }
 		piety = -25
 	}
 }
@@ -1047,8 +1047,8 @@ character_event = {
 		piety = 15
 	}
 	option = {
-		name = EVTOPTBtitan.15
-		FROM = { character_event = { id = titan.37 tooltip = EVTTOOLTIPtitan.37 } }
+		name = titan.15.b
+		FROM = { character_event = { id = titan.37 tooltip = titan.37.tt } }
 		piety = -25
 	}
 }
@@ -1082,8 +1082,8 @@ character_event = {
 		piety = 15
 	}
 	option = {
-		name = EVTOPTBtitan.16
-		FROM = { character_event = { id = titan.37 tooltip = EVTTOOLTIPtitan.37 } }
+		name = titan.16.b
+		FROM = { character_event = { id = titan.37 tooltip = titan.37.tt } }
 		piety = -25
 	}
 }
@@ -1117,8 +1117,8 @@ character_event = {
 		piety = 15
 	}
 	option = {
-		name = EVTOPTBtitan.17
-		FROM = { character_event = { id = titan.37 tooltip = EVTTOOLTIPtitan.37 } }
+		name = titan.17.b
+		FROM = { character_event = { id = titan.37 tooltip = titan.37.tt } }
 		piety = -25
 	}
 }
@@ -1152,8 +1152,8 @@ character_event = {
 		piety = 15
 	}
 	option = {
-		name = EVTOPTBtitan.18
-		FROM = { character_event = { id = titan.37 tooltip = EVTTOOLTIPtitan.37 } }
+		name = titan.18.b
+		FROM = { character_event = { id = titan.37 tooltip = titan.37.tt } }
 		piety = -25
 	}
 }
@@ -1185,8 +1185,8 @@ character_event = {
 		piety = 15
 	}
 	option = {
-		name = EVTOPTBtitan.19
-		FROM = { character_event = { id = titan.37 tooltip = EVTTOOLTIPtitan.37 } }
+		name = titan.19.b
+		FROM = { character_event = { id = titan.37 tooltip = titan.37.tt } }
 		piety = -25
 	}
 }
@@ -1218,8 +1218,8 @@ character_event = {
 		piety = 15
 	}
 	option = {
-		name = EVTOPTBtitan.20
-		FROM = { character_event = { id = titan.37 tooltip = EVTTOOLTIPtitan.37 } }
+		name = titan.20.b
+		FROM = { character_event = { id = titan.37 tooltip = titan.37.tt } }
 		piety = -25
 	}
 }
@@ -1251,8 +1251,8 @@ character_event = {
 		piety = 25
 	}
 	option = {
-		name = EVTOPTBtitan.21
-		FROM = { character_event = { id = titan.37 tooltip = EVTTOOLTIPtitan.37 } }
+		name = titan.21.b
+		FROM = { character_event = { id = titan.37 tooltip = titan.37.tt } }
 		piety = -50
 	}
 }
@@ -1956,7 +1956,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTBtitan.51
+		name = titan.51.b
 		tooltip_info = drunkard
 		trigger = { 
 			trait = drunkard
@@ -2018,7 +2018,7 @@ character_event = {
 		name = titan.53.a
 		tooltip_info = gluttonous
 		FROM = {
-			character_event = { id = titan.54 tooltip = EVTTOOLTIPtitan.54 }
+			character_event = { id = titan.54 tooltip = titan.54.tt }
 		}	
 		hidden_tooltip = {
 			liege = {
@@ -2202,7 +2202,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTBtitan.57
+		name = titan.57.b
 		tooltip_info = lunatic
 		trigger = {
 			trait = lunatic
@@ -2297,7 +2297,7 @@ character_event = {
 		}	
 	}
 	option = {
-		name = EVTOPTBtitan.58
+		name = titan.58.b
 		tooltip_info = lustful
 		set_character_flag = feast_lustful
 		trigger = {
@@ -2387,7 +2387,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTBtitan.59
+		name = titan.59.b
 		tooltip_info = lustful
 		trigger = {
 			trait = lustful
@@ -2399,7 +2399,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTCtitan.59
+		name = titan.59.c
 		trigger = {
 			any_spouse = { character = FROM }
 		}
@@ -2595,7 +2595,7 @@ character_event = {
 		tooltip = {
 			random = {
 				chance = 50
-				character_event = { id = titan.69 tooltip = EVTTOOLTIPtitan.69 }
+				character_event = { id = titan.69 tooltip = titan.69.tt }
 			}
 			add_lover = FROM
 		}
@@ -2616,7 +2616,7 @@ character_event = {
 		tooltip_info = homosexual
 		random = {
 			chance = 50
-			character_event = { id = titan.69 tooltip = EVTTOOLTIPtitan.69 }
+			character_event = { id = titan.69 tooltip = titan.69.tt }
 			hidden_tooltip = {
 				FROM = {
 					character_event = { id = titan.69 }
@@ -2711,7 +2711,7 @@ character_event = {
 		tooltip = {
 			random = {
 				chance = 50
-				character_event = { id = titan.69 tooltip = EVTTOOLTIPtitan.69 }
+				character_event = { id = titan.69 tooltip = titan.69.tt }
 			}
 			add_lover = FROM
 		}
@@ -2732,7 +2732,7 @@ character_event = {
 		tooltip_info = homosexual
 		random = {
 			chance = 50
-			character_event = { id = titan.69 tooltip = EVTTOOLTIPtitan.69 }
+			character_event = { id = titan.69 tooltip = titan.69.tt }
 			hidden_tooltip = {
 				FROM = {
 					character_event = { id = titan.69 }
@@ -2819,7 +2819,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTBtitan.70
+		name = titan.70.b
 		tooltip_info = homosexual
 		trigger = {
 			trait = homosexual
@@ -2858,8 +2858,8 @@ character_event = {
 		piety = 15
 	}
 	option = {
-		name = EVTOPTBtitan.10
-		FROM = { character_event = { id = titan.37 tooltip = EVTTOOLTIPtitan.37 } }
+		name = titan.10.b
+		FROM = { character_event = { id = titan.37 tooltip = titan.37.tt } }
 		piety = -25
 	}
 }
@@ -2891,8 +2891,8 @@ character_event = {
 		piety = 15
 	}
 	option = {
-		name = EVTOPTBtitan.10
-		FROM = { character_event = { id = titan.37 tooltip = EVTTOOLTIPtitan.37 } }
+		name = titan.10.b
+		FROM = { character_event = { id = titan.37 tooltip = titan.37.tt } }
 		piety = -25
 	}
 }
@@ -2924,8 +2924,8 @@ character_event = {
 		piety = 15
 	}
 	option = {
-		name = EVTOPTBtitan.10
-		FROM = { character_event = { id = titan.37 tooltip = EVTTOOLTIPtitan.37 } }
+		name = titan.10.b
+		FROM = { character_event = { id = titan.37 tooltip = titan.37.tt } }
 		piety = -25
 	}
 }
@@ -3245,7 +3245,7 @@ character_event = {
 narrative_event = {
 	id = titan.100
 	title = titan.100.title
-	desc = titan.100.desc.desc
+	desc = titan.100.desc
 	picture = GFX_evt_war_planning
 	border = GFX_event_narrative_frame_religion
 
@@ -3264,7 +3264,7 @@ narrative_event = {
 			portrait = [From.GetID]
 		}
 
-		name = titan.100.a.a
+		name = titan.100.a
 	}
 
 	option = {
@@ -3273,7 +3273,7 @@ narrative_event = {
 			NOT = { has_character_flag = acr_founded_sickles }
 		}
 
-		name = titan.100.a.b
+		name = titan.100.b
 	}
 
 	option = {
@@ -3283,6 +3283,6 @@ narrative_event = {
 			}
 		}
 
-		name = titan.100.a.c
+		name = titan.100.c
 	}
 }

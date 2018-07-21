@@ -9,7 +9,7 @@
 
 # Written by Jon Severinsson
 
-namespace = ancrel
+namespace = hellenic
 
 # The Flamen Dialis must resign
 character_event = {

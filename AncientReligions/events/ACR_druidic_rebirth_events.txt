@@ -9,7 +9,7 @@
 
 # Written by Patrick Marchand
 
-namespace = ancrel
+namespace = celtic
 
 # Old "Wizard" Appears
 character_event = {
@@ -82,7 +82,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTBceltic.0
+		name = celtic.0.b
 		custom_tooltip = {
 			text = begone_sorcerer
 			set_character_flag = hates_magic
@@ -112,7 +112,7 @@ character_event = {
 				add_trait = sympathy_pagans
 			}
 			add_character_modifier = {
-				name = celtic_ways.a
+				name = celtic_ways
 				duration = -1
 			}
 			hidden_tooltip = {
@@ -195,7 +195,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTBceltic.2
+		name = celtic.2.b
 		piety = 50
 		remove_trait = sympathy_pagans
 		ai_chance = { factor = 50 }
@@ -248,7 +248,7 @@ character_event = {
 				add_trait = sympathy_pagans
 			}
 			add_character_modifier = {
-				name = celtic_ways.a
+				name = celtic_ways
 				duration = -1
 			}
 			hidden_tooltip = {
@@ -268,7 +268,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTBceltic.3
+		name = celtic.3.b
 		piety = 50
 		ai_chance = {
 			factor = 50
@@ -337,7 +337,7 @@ character_event = {
 # Vassal hears of liege's conversion
 character_event = {
 	id = celtic.300
-	desc = celtic.300.desc.desc
+	desc = celtic.300.desc
 	picture = GFX_evt_Pagan_dolmen
 	
 	prisoner = no
@@ -346,7 +346,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = { # convert to paganism as well
-		name = celtic.300.a.a
+		name = celtic.300.a
 		ai_chance = {
 			factor = 33
 			modifier = {
@@ -430,7 +430,7 @@ character_event = {
 		}
 	}
 	option = { # reject their heathen ways
-		name = celtic.300.a.b
+		name = celtic.300.b
 		piety = 50
 		ai_chance = {
 			factor = 66
@@ -459,26 +459,26 @@ character_event = {
 # Vassal converted to Celtic Paganism
 character_event = {
 	id = celtic.301
-	desc = celtic.301.desc.desc
+	desc = celtic.301.desc
 	picture = GFX_evt_Pagan_dolmen
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = celtic.301.a.a
+		name = celtic.301.a
 	}
 }
 
 # Vassal refuses to convert to Celtic Paganism
 character_event = {
 	id = celtic.302
-	desc = celtic.302.desc.desc
+	desc = celtic.302.desc
 	picture = GFX_evt_Ruler_listening_to_supplicant
 
 	is_triggered_only = yes
 	
 	option = {
-		name = celtic.302.a.a
+		name = celtic.302.a
 	}
 }
 
@@ -531,7 +531,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTBceltic.6
+		name = celtic.6.b
 		tooltip_info = lunatic
 		ai_chance = {
 			factor = 50
@@ -561,7 +561,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTBceltic.7
+		name = celtic.7.b
 		tooltip_info = lunatic
 		ai_chance = {
 			factor = 50

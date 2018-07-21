@@ -10,7 +10,7 @@
 # Written by Jon Severinsson
 # and Adam Chevalier
 
-namespace = ancrel
+namespace = hellenic
 
 #######################################
 #
@@ -1507,14 +1507,14 @@ character_event = {
 		piety = -10
 	}
 	option = {
-		name = EVTOPTBhellenic.101
+		name = hellenic.101.b
 		trigger = {
 			FROM = { NOT = { is_child_of = ROOT } }
 		}
 		piety = -10
 	}
 	option = {
-		name = EVTOPTChellenic.101
+		name = hellenic.101.c
 		trigger = {
 			OR = {
 				trait = arbitrary
@@ -1638,7 +1638,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTBhellenic.102
+		name = hellenic.102.b
 		ai_chance = {
 			factor = 50
 		}
@@ -1789,7 +1789,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTBhellenic.103
+		name = hellenic.103.b
 		ai_chance = { factor = 80 }
 		piety = 10
 		reverse_opinion = { modifier = opinion_rejected_hellenic_state_religion who = FROM }
@@ -1799,7 +1799,7 @@ character_event = {
 # The Pontifex Maximus is restored!
 narrative_event = {
 	id = hellenic.104
-	title = EVTNAMEhellenic.104
+	title = hellenic.104.title
 	desc = hellenic.104.desc
 	picture = GFX_evt_roman_temple
 	border = GFX_event_narrative_frame_religion
@@ -1816,7 +1816,7 @@ narrative_event = {
 	}
 	
 	option = {
-		name = EVTOPTBhellenic.104
+		name = hellenic.104.b
 		trigger = {
 			NOT = { true_religion = hellenic_pagan }
 		}
@@ -1835,7 +1835,7 @@ narrative_event = {
 # Only happens once in a lifetime
 character_event = {
 	id = hellenic.105
-	desc = hellenic.105
+	desc = hellenic.105.desc
 	picture = GFX_evt_whispering_in_ear
 	border = GFX_event_normal_frame_religion
 
@@ -1931,7 +1931,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTBhellenic.105
+		name = hellenic.105.b
 		ai_chance = {
 			factor = 50
 		}
@@ -1944,7 +1944,7 @@ character_event = {
 # Arrival in Mani Penninsula
 character_event = {
 	id = hellenic.106
-	desc = hellenic.106
+	desc = hellenic.106.desc
 	picture = GFX_evt_cave_dwellers
 
 	is_triggered_only = yes
@@ -1980,7 +1980,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTBhellenic.106
+		name = hellenic.106.b
 		ai_chance = {
 			factor = 50
 		}
@@ -2008,7 +2008,7 @@ character_event = {
 # Listen to the oracle
 character_event = {
 	id = hellenic.107
-	desc = hellenic.107
+	desc = hellenic.107.desc
 	picture = GFX_evt_roman_temple
 
 	is_triggered_only = yes
@@ -2054,7 +2054,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTBhellenic.107
+		name = hellenic.107.b
 		ai_chance = {
 			factor = 50
 		}

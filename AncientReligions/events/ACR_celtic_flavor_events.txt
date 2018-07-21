@@ -12,7 +12,7 @@
 
 # Written by Patrick Marchand
 
-namespace = ancrel
+namespace = celtic
 
 # Meeting a Bard
 character_event = {
@@ -73,7 +73,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTBceltic.150
+		name = celtic.150.b
 		trigger = {
 			trait = poet
 		}
@@ -165,7 +165,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTBceltic.151
+		name = celtic.151.b
 		piety = 20
 		prestige = -25
 		remove_trait = brave
@@ -247,7 +247,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTBceltic.1252
+		name = celtic.1252.b
 		prestige = 50
 		random_list = {
 			20 = {
@@ -398,7 +398,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTBceltic.208
+		name = celtic.208.b
 		ai_chance = {
 			factor = 50
 		}
@@ -426,7 +426,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTBceltic.209
+		name = celtic.209.b
 		ai_chance = {
 			factor = 50
 		}
@@ -507,12 +507,12 @@ character_event = {
 # ROOT is character, FROM is title
 narrative_event = {
 	id = celtic.256
-	title = EVTNAMEceltic.256
+	title = celtic.256.title
 	desc = celtic.256.desc
 	picture = GFX_event_y_mab_darogan
 
 	major = yes
-	show_ROOT = yes
+	#show_ROOT = yes
 	hide_from = yes
 	
 	only_playable = yes
@@ -548,17 +548,18 @@ narrative_event = {
 		factor = 1
 	}
 
-	option = {
+	option = { #Ok
+		name = celtic.256.a
 		trigger = {
 			OR = {
 				religion = celtic_pagan
 				religion = celtic_pagan_reformed
 			}
 		}
-		name = celtic.256 #Ok.a
 	}
 
 	option = {
+		name = celtic.256.b
 		trigger = {
 			OR = {
 				religion_group = christian
@@ -573,14 +574,13 @@ narrative_event = {
 				}
 			}
 		}
-		name = EVTOPTBceltic.256
 	}
 
 	option = {
+		name = celtic.256.c
 		trigger = {
 			religion_group = indian_group
 		}
-		name = EVTOPTCceltic.256
 	}
 }
 
@@ -594,7 +594,7 @@ narrative_event = {
 # [on_yearly_pulse]
 character_event = {
 	id = celtic.1000
-	desc = celtic.1000.desc.desc
+	desc = celtic.1000.desc
 	picture = GFX_evt_nuada_mag_tuired
 
 	is_triggered_only = yes

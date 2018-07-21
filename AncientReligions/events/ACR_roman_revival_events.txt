@@ -9,7 +9,7 @@
 
 # Written by Jon Severinsson
 
-namespace = ancrel
+namespace = hellenic
 
 # An Italian mayor takes the burgher's request to his liege.
 character_event = {
@@ -175,7 +175,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTBhellenic.152
+		name = hellenic.152.b
 		trigger = {
 			NOT = { culture = roman }
 		}
@@ -216,7 +216,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTChellenic.152
+		name = hellenic.152.c
 		trigger = {
 			NOT = { culture = roman }
 			FROM = {
@@ -249,7 +249,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTChellenic.152
+		name = hellenic.152.c
 		trigger = {
 			NOT = { culture = roman }
 			FROM = {
@@ -364,7 +364,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTBhellenic.153
+		name = hellenic.153.b
 		ai_chance = {
 			factor = 25
 			modifier = {
@@ -424,7 +424,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTChellenic.152
+		name = hellenic.152.c
 		trigger = {
 			NOT = { culture = roman }
 			FROM = {
@@ -457,7 +457,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTDhellenic.152
+		name = hellenic.152.d
 		trigger = {
 			NOT = { culture = roman }
 			FROM = {
@@ -529,7 +529,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTBhellenic.154
+		name = hellenic.154.b
 		trigger = {
 			NOT = { culture = roman }
 		}
@@ -539,7 +539,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTChellenic.154
+		name = hellenic.154.c
 		trigger = {
 			culture = roman
 		}
@@ -724,7 +724,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTBhellenic.154
+		name = hellenic.154.b
 		trigger = {
 			NOT = { culture = roman }
 		}
@@ -734,7 +734,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTChellenic.154
+		name = hellenic.154.c
 		trigger = {
 			culture = roman
 		}
@@ -882,7 +882,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTBhellenic.154
+		name = hellenic.154.b
 		trigger = {
 			NOT = { culture = roman }
 		}
@@ -892,7 +892,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTChellenic.154
+		name = hellenic.154.c
 		trigger = {
 			culture = roman
 		}

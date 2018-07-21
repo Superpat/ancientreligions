@@ -40,7 +40,7 @@ acr_circle_of_druids;Circle of Druids;;;;;;;;;;;;;x
 acr_druid_of_the_circle;Druid of The Circle;;;;;;;;;;;;;x
 acr_college_of_cardinals;College of Cardinals;;;;;;;;;;;;;x
 acr_cardinal;Cardinal;;;;;;;;;;;;;x
-ar_pope;Pope;;;;;;;;;;;;;x
+acr_pope;Pope;;;;;;;;;;;;;x
 ##### Various localisation strings ;;;;;;;;;;;;;;x
 dryad;dryad;dryade;;;;;;;;;;;;x
 druid_lowercase;druid;druide;;;;;;;;;;;;x

@@ -7,7 +7,7 @@
 #
 ##################################################################
 
-namespace = ancrel
+namespace = celtic
 
 ### Druidic warnings
 
@@ -81,7 +81,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTBceltic.213
+		name = celtic.213.b
 		FROMFROM = {
 			opinion = {
 				modifier = opinion_disappointed
@@ -614,7 +614,7 @@ character_event = {
 		custom_tooltip = { text = changeling_trade_approved }
 	}
 	option = {
-		name = EVTOPTBceltic.233
+		name = celtic.233.b
 		FROM = {
 			opinion = {
 				modifier = opinion_very_disappointed
@@ -734,7 +734,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTBceltic.238
+		name = celtic.238.b
 		FROMFROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -745,7 +745,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTCceltic.238
+		name = celtic.238.c
 		FROMFROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -784,7 +784,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTBceltic.238
+		name = celtic.238.b
 		FROMFROM = {
 			clr_character_flag = changeling_child
 			clr_character_flag = changeling_child_fake
@@ -796,7 +796,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTCceltic.238
+		name = celtic.238.c
 		FROMFROM = {
 			clr_character_flag = changeling_child
 			clr_character_flag = changeling_child_fake

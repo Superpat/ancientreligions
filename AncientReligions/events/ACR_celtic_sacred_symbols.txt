@@ -7,7 +7,7 @@
 #
 ##################################################################
 
-namespace = ancrel
+namespace = celtic
 
 #Set up holy symbol
 province_event = {

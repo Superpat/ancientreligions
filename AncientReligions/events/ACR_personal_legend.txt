@@ -1,4 +1,4 @@
-namespace = ancrel
+namespace = epicblood
 
 #Lover Remarks of your Paris-like sexual prowess
 character_event = {
@@ -61,7 +61,7 @@ character_event = {
 	}
 
 	option = {
-		name = epicblood.10.a.a
+		name = epicblood.10.a
 		set_character_flag = personal_legend_5
 		prestige = 10
 	}

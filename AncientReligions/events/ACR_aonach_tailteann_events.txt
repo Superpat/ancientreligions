@@ -27,7 +27,7 @@ character_event = {
 		set_character_flag = tailteann_death_phase
 	}
 	option = {
-		name = EVTOPTBceltic.1190
+		name = celtic.1190.b
 		prestige = -50
 		piety = -50
 	}
@@ -58,7 +58,7 @@ character_event = {
 		}
 	}
 	option = {
-		name = EVTOPTBceltic.1191
+		name = celtic.1191.b
 		trigger = {
 			war = yes
 		}
@@ -143,7 +143,7 @@ character_event = {
 				id = celtic.1195
 				days = 2
 				random = 2
-				tooltip = EVTTOOLTIPceltic.1195
+				tooltip = celtic.1195.tt
 			}
 		}
 		any_vassal = {
@@ -159,7 +159,7 @@ character_event = {
 				id = celtic.1195
 				days = 2
 				random = 2
-				tooltip = EVTTOOLTIPceltic.1195
+				tooltip = celtic.1195.tt
 			}
 			set_character_flag = tailteann_has_ended
 			clr_character_flag = tailteann_craftsman
@@ -230,7 +230,7 @@ character_event = {
 	}
 	
 	option = { # In memory of mother
-		name = EVTOPTBceltic.1196
+		name = celtic.1196.b
 		trigger = {
 			mother = {
 				is_alive = no
@@ -249,7 +249,7 @@ character_event = {
 # In memory of father
 narrative_event = {
 	id = celtic.1197
-	title = EVTNAMEceltic.1197
+	title = celtic.1197.title
 	desc = celtic.1197.desc
 	picture = GFX_evt_bonfire_celtic
 	border = GFX_event_narrative_frame_diplomacy
@@ -269,7 +269,7 @@ narrative_event = {
 # In memory of mother
 narrative_event = {
 	id = celtic.1198
-	title = EVTNAMEceltic.1198
+	title = celtic.1198.title
 	desc = celtic.1198.desc
 	picture = GFX_evt_bonfire_celtic
 	border = GFX_event_narrative_frame_diplomacy
@@ -322,7 +322,7 @@ character_event = {
 	}
 	
 	option = { # Favor Druidic caste
-		name = EVTOPTBceltic.1199
+		name = celtic.1199.b
 		custom_tooltip = {
 			text = give_laws_ollam
 			change_learning = 1
@@ -349,7 +349,7 @@ character_event = {
 	}
 	
 	option = { # Favor merchant caste
-		name = EVTOPTCceltic.1199
+		name = celtic.1199.c
 		custom_tooltip = {
 			text = give_laws_ollam
 			change_stewardship = 1
@@ -376,7 +376,7 @@ character_event = {
 	}
 	
 	option = { # Balance
-		name = EVTOPTDceltic.1199
+		name = celtic.1199.d
 		trigger = {
 			diplomacy = 12
 		}
@@ -404,7 +404,7 @@ character_event = {
 	}
 	
 	option = { # Favor the crown
-		name = EVTOPTEceltic.1199
+		name = celtic.1199.e
 		trigger = {
 			trait = ambitious
 			trait = diligent
@@ -435,7 +435,7 @@ character_event = {
 	}
 	
 	option = { # Fianna
-		name = EVTOPTFceltic.1199
+		name = celtic.1199.g
 		trigger = {
 			trait = fian
 		}
@@ -463,7 +463,7 @@ character_event = {
 	}
 	
 	option = { # Lunatic
-		name = EVTOPTGceltic.1199
+		name = celtic.1199.g
 		trigger = {
 			trait = lunatic
 		}
@@ -1242,7 +1242,7 @@ character_event = {
 		name = celtic.1221.a
 	}
 	option = {
-		name = EVTOPTBceltic.1221
+		name = celtic.1221.b
 		set_character_flag = no_msg_death
 	}
 }
@@ -1261,10 +1261,10 @@ character_event = {
 	}
 	
 	option = {
-		name = celtic.1221
+		name = celtic.1221.a
 	}
 	option = {
-		name = EVTOPTBceltic.1221
+		name = celtic.1221.b
 		set_character_flag = no_msg_maimed
 	}
 }
@@ -1286,7 +1286,7 @@ character_event = {
 		name = celtic.1221.a
 	}
 	option = {
-		name = EVTOPTBceltic.1221
+		name = celtic.1221.b
 		set_character_flag = no_msg_wounded
 	}
 }

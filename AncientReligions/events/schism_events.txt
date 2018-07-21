@@ -8,7 +8,7 @@
 #######################################
 
 namespace = LoR
-namespace = ancrel
+namespace = hellenic
 
 ### The Pentarchy
 

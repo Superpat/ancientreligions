@@ -13,7 +13,7 @@
 ##################################################################
 
 # Author: Adam 'theStormWeaver/xirsoi' Chevalier
-namespace = ancrel
+namespace = promethean
 
 # First Academy has been restored!
 narrative_event = {
@@ -2040,8 +2040,8 @@ character_event = {
 
 	is_triggered_only = yes
 
-	option = {
-		name = 452 # What took him/her so long?
+	option = { # What took him/her so long?
+		name = EVTOPTA452
 		ai_chance = {
 			factor = 34
 			modifier = {
@@ -2137,8 +2137,8 @@ character_event = {
 		}
 	}
 
-	option = {
-		name = EVTOPTB452 # Dissuade
+	option = { # Dissuade
+		name = EVTOPTB452
 		ai_chance = {
 			factor = 33
 			modifier = {

@@ -7,7 +7,7 @@
 #
 #######################################
 
-namespace = ancrel
+namespace = celtic
 
 # [on_birth] Child might be a reincarnation
 # Duplicate event RoI.10000 for the religion check and to have Celtic specific text on chained event
@@ -189,7 +189,7 @@ character_event = {
 	}
 	
 	option = {# Nonsense!
-		name = EVTOPTBceltic.271 
+		name = celtic.271.b
 		
 		hidden_tooltip = {
 			FROM = {
@@ -203,7 +203,7 @@ character_event = {
 # Duplicate event RoI.10010 for the religion check
 character_event = {
 	id = celtic.272
-	desc = _RoI_10010.desc
+	desc = EVTDESC_RoI_10010
 	picture = GFX_evt_reincarnation
 	border = GFX_event_normal_frame_religion
 	
@@ -225,7 +225,7 @@ character_event = {
 	}
 	
 	option = {
-		name = _RoI_10010
+		name = EVTOPTA_RoI_10010
 		reincarnation_scope = {
 			ROOT = {
 				copy_random_personality_trait = PREV

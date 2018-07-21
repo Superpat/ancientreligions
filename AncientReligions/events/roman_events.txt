@@ -10,7 +10,7 @@
 # Written by Henrik Eklund
 
 namespace = LoR
-namespace = ancrel
+namespace = hellenic
 
 ### Lost Roman Provinces
 
@@ -100,7 +100,7 @@ narrative_event = {
 # Provincia Cyrenaica
 narrative_event = {
 	id = hellenic.230
-	title = EVTNAMEhellenic.230
+	title = hellenic.230.title
 	desc = hellenic.230.desc
 	
 	picture = GFX_evt_victory_arch_byzantine
@@ -265,7 +265,7 @@ narrative_event = {
 # Provincia Sicilia
 narrative_event = {
 	id = hellenic.231
-	title = EVTNAMEhellenic.231
+	title = hellenic.231.title
 	desc = hellenic.231.desc
 	
 	picture = GFX_evt_victory_arch_byzantine
@@ -300,7 +300,7 @@ narrative_event = {
 # Provincia Corsica et Sardinia
 narrative_event = {
 	id = hellenic.232
-	title = EVTNAMEhellenic.232
+	title = hellenic.232.title
 	desc = hellenic.232.desc
 	
 	picture = GFX_evt_victory_arch_byzantine
@@ -334,7 +334,7 @@ narrative_event = {
 # Provincia Viennensis
 narrative_event = {
 	id = hellenic.233
-	title = EVTNAMEhellenic.233
+	title = hellenic.233.title
 	desc = hellenic.233.desc
 	
 	picture = GFX_evt_victory_arch_byzantine

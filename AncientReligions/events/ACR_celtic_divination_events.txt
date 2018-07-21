@@ -9,7 +9,7 @@
 
 # Written by Patrick Marchand
 
-namespace = ancrel
+namespace = celtic
 
 # You summon your vassals to the divination
 character_event = {
@@ -35,7 +35,7 @@ character_event = {
 				war = no
 				NOT = { trait = incapable }
 			}
-			character_event = { id = celtic.21 tooltip = EVTTOOLTIPceltic.21 }
+			character_event = { id = celtic.21 tooltip = celtic.21.tt }
 			hidden_tooltip = { character_event = { id = celtic.25 days = 10 } }
 		}
 		any_vassal = {
@@ -49,7 +49,7 @@ character_event = {
 				war = no
 				NOT = { trait = incapable }
 			}
-			character_event = { id = celtic.22 tooltip = EVTTOOLTIPceltic.22 }
+			character_event = { id = celtic.22 tooltip = celtic.22.tt }
 		}
 		hidden_tooltip = { character_event = { id = celtic.24 days = 10 } }
 	}
@@ -87,14 +87,14 @@ character_event = {
 			wealth = 20
 		}
 		FROM = {
-			character_event = { id = celtic.23 tooltip = EVTTOOLTIPceltic.23 }
+			character_event = { id = celtic.23 tooltip = celtic.23.tt }
 		}
 		wealth = -20
 	}
 	option = { # Don't pay
-		name = EVTOPTBceltic.22
+		name = celtic.22.b
 		FROM = {
-			character_event = { id = celtic.56 tooltip = EVTTOOLTIPceltic.56 }
+			character_event = { id = celtic.56 tooltip = celtic.56.tt }
 		}
 		tooltip = {
 			FROM = {
@@ -886,8 +886,8 @@ character_event = {
 		piety = 15
 	}
 	option = {
-		name = EVTOPTBceltic.30
-		FROM = { character_event = { id = celtic.57 tooltip = EVTTOOLTIPceltic.57 } }
+		name = celtic.30.b
+		FROM = { character_event = { id = celtic.57 tooltip = celtic.57.tt } }
 		piety = -25
 	}
 }
@@ -919,8 +919,8 @@ character_event = {
 		piety = 25
 	}
 	option = {
-		name = EVTOPTBceltic.31
-		FROM = { character_event = { id = celtic.57 tooltip = EVTTOOLTIPceltic.57 } }
+		name = celtic.31.b
+		FROM = { character_event = { id = celtic.57 tooltip = celtic.57.tt } }
 		piety = -50
 	}
 }
@@ -952,8 +952,8 @@ character_event = {
 		piety = 25
 	}
 	option = {
-		name = EVTOPTBceltic.32
-		FROM = { character_event = { id = celtic.57 tooltip = EVTTOOLTIPceltic.57 } }
+		name = celtic.32.b
+		FROM = { character_event = { id = celtic.57 tooltip = celtic.57.tt } }
 		piety = -50
 	}
 }
@@ -987,8 +987,8 @@ character_event = {
 		piety = 15
 	}
 	option = {
-		name = EVTOPTBceltic.33
-		FROM = { character_event = { id = celtic.57 tooltip = EVTTOOLTIPceltic.57 } }
+		name = celtic.33.b
+		FROM = { character_event = { id = celtic.57 tooltip = celtic.57.tt } }
 		piety = -25
 	}
 }
@@ -1022,8 +1022,8 @@ character_event = {
 		piety = 15
 	}
 	option = {
-		name = EVTOPTBceltic.34
-		FROM = { character_event = { id = celtic.57 tooltip = EVTTOOLTIPceltic.57 } }
+		name = celtic.34.b
+		FROM = { character_event = { id = celtic.57 tooltip = celtic.57.tt } }
 		piety = -25
 	}
 }
@@ -1057,8 +1057,8 @@ character_event = {
 		piety = 15
 	}
 	option = {
-		name = EVTOPTBceltic.35
-		FROM = { character_event = { id = celtic.57 tooltip = EVTTOOLTIPceltic.57 } }
+		name = celtic.35.b
+		FROM = { character_event = { id = celtic.57 tooltip = celtic.57.tt } }
 		piety = -25
 	}
 }
@@ -1092,8 +1092,8 @@ character_event = {
 		piety = 15
 	}
 	option = {
-		name = EVTOPTBceltic.36
-		FROM = { character_event = { id = celtic.57 tooltip = EVTTOOLTIPceltic.57 } }
+		name = celtic.36.b
+		FROM = { character_event = { id = celtic.57 tooltip = celtic.57.tt } }
 		piety = -25
 	}
 }
@@ -1127,8 +1127,8 @@ character_event = {
 		piety = 15
 	}
 	option = {
-		name = EVTOPTBceltic.37
-		FROM = { character_event = { id = celtic.57 tooltip = EVTTOOLTIPceltic.57 } }
+		name = celtic.37.b
+		FROM = { character_event = { id = celtic.57 tooltip = celtic.57.tt } }
 		piety = -25
 	}
 }
@@ -1162,8 +1162,8 @@ character_event = {
 		piety = 15
 	}
 	option = {
-		name = EVTOPTBceltic.38
-		FROM = { character_event = { id = celtic.57 tooltip = EVTTOOLTIPceltic.57 } }
+		name = celtic.38.b
+		FROM = { character_event = { id = celtic.57 tooltip = celtic.57.tt } }
 		piety = -25
 	}
 }
@@ -1195,8 +1195,8 @@ character_event = {
 		piety = 15
 	}
 	option = {
-		name = EVTOPTBceltic.39
-		FROM = { character_event = { id = celtic.57 tooltip = EVTTOOLTIPceltic.57 } }
+		name = celtic.39.b
+		FROM = { character_event = { id = celtic.57 tooltip = celtic.57.tt } }
 		piety = -25
 	}
 }
@@ -1228,8 +1228,8 @@ character_event = {
 		piety = 15
 	}
 	option = {
-		name = EVTOPTBceltic.40
-		FROM = { character_event = { id = celtic.57 tooltip = EVTTOOLTIPceltic.57 } }
+		name = celtic.40.b
+		FROM = { character_event = { id = celtic.57 tooltip = celtic.57.tt } }
 		piety = -25
 	}
 }
@@ -1261,8 +1261,8 @@ character_event = {
 		piety = 25
 	}
 	option = {
-		name = EVTOPTBceltic.41
-		FROM = { character_event = { id = celtic.57 tooltip = EVTTOOLTIPceltic.57 } }
+		name = celtic.41.b
+		FROM = { character_event = { id = celtic.57 tooltip = celtic.57.tt } }
 		piety = -50
 	}
 }
@@ -2255,8 +2255,8 @@ character_event = {
 		piety = 15
 	}
 	option = {
-		name = EVTOPTBceltic.30
-		FROM = { character_event = { id = celtic.57 tooltip = EVTTOOLTIPceltic.57 } }
+		name = celtic.30.b
+		FROM = { character_event = { id = celtic.57 tooltip = celtic.57.tt } }
 		piety = -25
 	}
 }
@@ -2288,8 +2288,8 @@ character_event = {
 		piety = 15
 	}
 	option = {
-		name = EVTOPTBceltic.30
-		FROM = { character_event = { id = celtic.57 tooltip = EVTTOOLTIPceltic.57 } }
+		name = celtic.30.b
+		FROM = { character_event = { id = celtic.57 tooltip = celtic.57.tt } }
 		piety = -25
 	}
 }
@@ -2321,8 +2321,8 @@ character_event = {
 		piety = 15
 	}
 	option = {
-		name = EVTOPTBceltic.30
-		FROM = { character_event = { id = celtic.57 tooltip = EVTTOOLTIPceltic.57 } }
+		name = celtic.30.b
+		FROM = { character_event = { id = celtic.57 tooltip = celtic.57.tt } }
 		piety = -25
 	}
 }

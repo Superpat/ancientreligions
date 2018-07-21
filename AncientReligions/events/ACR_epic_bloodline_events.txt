@@ -9,7 +9,7 @@
 
 # Written by Adam 'theStormWeaver/xirsoi' Chevalier
 
-namespace = ancrel
+namespace = epicblood
 
 # Studied the epic poems
 character_event = {
@@ -112,7 +112,7 @@ character_event = {
 	}
 	# Be boring and just let it go
 	option = {
-		name = EVTOPTBepicblood.0
+		name = epicblood.0.b
 		ai_chance = { factor = 50 }
 	}
 }
@@ -153,7 +153,7 @@ character_event = {
 	}
 	# Trojan
 	option = {
-		name = EVTOPTBepicblood.1
+		name = epicblood.1.b
 		character_event = { id = epicblood.3 }
 	}
 }
@@ -200,7 +200,7 @@ character_event = {
 	}
 	#Odysseus
 	option = {
-		name = EVTOPTBepicblood.2
+		name = epicblood.2.b
 		ai_chance = {
 			factor = 33
 			modifier = {
@@ -215,7 +215,7 @@ character_event = {
 	}
 	#Nestor
 	option = {
-		name = EVTOPTCepicblood.2
+		name = epicblood.2.c
 		ai_chance = {
 			factor = 33
 			modifier = {
@@ -265,7 +265,7 @@ character_event = {
 	}
 	#Aeneas
 	option = {
-		name = EVTOPTBepicblood.3
+		name = epicblood.3.b
 		ai_chance = {
 			factor = 33
 			modifier = {
@@ -288,7 +288,7 @@ character_event = {
 	}
 	#Paris
 	option = {
-		name = EVTOPTCepicblood.3
+		name = epicblood.3.c
 		ai_chance = {
 			factor = 33
 			modifier = {

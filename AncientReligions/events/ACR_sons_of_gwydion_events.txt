@@ -9,7 +9,7 @@
 
 # Written by Patrick Marchand
 
-namespace = ancrel
+namespace = celtic
 
 # The Sons of Gwydion Founded (Brythonic King)
 narrative_event = {
@@ -190,7 +190,7 @@ character_event = {
 		prestige = -100
 	}
 	option = {
-		name = EVTOPTBceltic.120
+		name = celtic.120.b
 		d_gwydion = {
 			holder_scope = {
 				FROM = {

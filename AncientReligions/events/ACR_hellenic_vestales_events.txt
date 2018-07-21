@@ -9,7 +9,7 @@
 
 # Written by Jon Severinsson
 
-namespace = ancrel
+namespace = hellenic
 
 # The Vestalis Maxima should be the guardian of all underage Vestalis
 character_event = {
@@ -189,7 +189,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTBhellenic.124
+		name = hellenic.124.b
 		trigger = {
 			NOT = { check_variable = { which = "num_vestales" value = 5 } }
 		}
@@ -201,7 +201,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTChellenic.124
+		name = hellenic.124.c
 		trigger = {
 			check_variable = { which = "num_vestales" value = 5 }
 		}

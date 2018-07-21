@@ -1356,7 +1356,7 @@ character_event = {
 	 	piety = -10
 	}
 	option = { #dungeon
-		name = celtic.1258.c
+		name = celtic.1258.b
 		ai_chance = {
 			factor = 1
 			modifier = {

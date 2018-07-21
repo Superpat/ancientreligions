@@ -1500,7 +1500,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAhellenic.101
+		name = hellenic.101.a
 		trigger = {
 			FROM = { is_child_of = ROOT }
 		}
@@ -1560,7 +1560,7 @@ character_event = {
 	hide_from = yes
 
 	option = {
-		name = EVTOPTAhellenic.102
+		name = hellenic.102.a
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -1675,7 +1675,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAhellenic.103
+		name = hellenic.103.a
 		ai_chance = {
 			factor = 20
 			modifier = {
@@ -1809,7 +1809,7 @@ narrative_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAhellenic.104
+		name = hellenic.104.a
 		trigger = {
 			true_religion = hellenic_pagan
 		}
@@ -1919,7 +1919,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAhellenic.105
+		name = hellenic.105.a
 		ai_chance = {
 			factor = 50
 		}
@@ -1968,7 +1968,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAhellenic.106
+		name = hellenic.106.a
 		ai_chance = {
 			factor = 50
 		}
@@ -2020,7 +2020,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAhellenic.107
+		name = hellenic.107.a
 		ai_chance = {
 			factor = 50
 		}
@@ -2133,7 +2133,7 @@ narrative_event = {
 		}
 	}
 	option = {
-		name = EVTOPTAhellenic.109
+		name = hellenic.109.a
 	}
 }
 

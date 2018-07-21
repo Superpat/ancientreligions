@@ -26,7 +26,7 @@ narrative_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAceltic.1150
+		name = celtic.1150.a
 		hidden_tooltip = {
 			any_playable_ruler = {
 				limit = {
@@ -50,7 +50,7 @@ narrative_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.1151
+		name = celtic.1151.a
 		custom_tooltip = {
 			text = fianna_organized
 		}
@@ -198,7 +198,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.1160
+		name = celtic.1160.a
 		FROM = {
 			opinion = {
 				modifier = opinion_very_disappointed
@@ -266,7 +266,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.1165
+		name = celtic.1165.a
 		FROM = {
 			move_character = ROOT
 			add_trait = scarred
@@ -310,7 +310,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.1169
+		name = celtic.1169.a
 		FROM = {
 			move_character = ROOT
 			tooltip = { add_trait = maimed }
@@ -376,7 +376,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.1171
+		name = celtic.1171.a
 		if = {
 			limit = {
 				FROM = {
@@ -457,7 +457,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.1173
+		name = celtic.1173.a
 		FROM = {
 			move_character = ROOT
 			add_trait = stressed
@@ -503,7 +503,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.1175
+		name = celtic.1175.a
 		create_character = {
 			random_traits = yes
 			dynasty = NONE
@@ -558,7 +558,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.1177
+		name = celtic.1177.a
 		FROM = {
 			move_character = ROOT
 			add_trait = zealous
@@ -626,7 +626,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.1179
+		name = celtic.1179.a
 		FROM = {
 			move_character = ROOT
 			add_trait = brave
@@ -727,7 +727,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.1181
+		name = celtic.1181.a
 		FROM = { death = { death_reason = death_battle } }
 	}
 }
@@ -771,7 +771,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.1183
+		name = celtic.1183.a
 		FROM = {
 			move_character = ROOT
 			add_trait = fian
@@ -807,7 +807,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.1184
+		name = celtic.1184.a
 		add_trait = fian
 		prestige = 200
 		wealth = 200
@@ -1039,7 +1039,7 @@ character_event = {
 	}	
 	
 	option = {
-		name = EVTOPTAceltic.1254 #Welcome them with a lavish feast
+		name = celtic.1254.a #Welcome them with a lavish feast
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -1146,7 +1146,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.1255 	# pay for their expenses, and send them on their way
+		name = celtic.1255.a 	# pay for their expenses, and send them on their way
 		scaled_wealth = -0.05
 		piety = 5
 		
@@ -1190,7 +1190,7 @@ character_event = {
 	}	
 	
 	option = {
-		name = EVTOPTAceltic.1256  #take him in your service.
+		name = celtic.1256.a  #take him in your service.
 		create_character = {
 			random_traits = no
 			dynasty = random
@@ -1258,7 +1258,7 @@ character_event = {
 		
 	}	
 	option = {
-		name = EVTOPTAceltic.1257  #Throw them out.
+		name = celtic.1257.a  #Throw them out.
 		clr_character_flag = fian_band_visiting
 		clr_character_flag = fian_recruited	
 		clr_character_flag = fian_woman_seduced
@@ -1326,7 +1326,7 @@ character_event = {
 		}		
 	}	
 	option = {
-		name = EVTOPTAceltic.1258 #stay
+		name = celtic.1258.a #stay
  		
  		
 		random_courtier = {
@@ -1421,7 +1421,7 @@ character_event = {
 		}		
 	}	
 	option = {
-		name = EVTOPTAceltic.1259 #give them a farewell feast
+		name = celtic.1259.a #give them a farewell feast
 		prestige = 10
 		scaled_wealth = -0.05
 
@@ -1454,7 +1454,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.1260  #order him released
+		name = celtic.1260.a  #order him released
 		job_marshal = {
 			opinion = {
 				modifier = marshal_overruled

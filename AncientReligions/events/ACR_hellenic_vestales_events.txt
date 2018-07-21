@@ -132,7 +132,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAhellenic.124
+		name = hellenic.124.a
 		trigger = {
 			NOT = { check_variable = { which = "num_vestales" value = 5 } }
 		}

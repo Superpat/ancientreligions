@@ -61,7 +61,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAepicblood.10
+		name = epicblood.10.a.a
 		set_character_flag = personal_legend_5
 		prestige = 10
 	}
@@ -91,7 +91,7 @@ character_event = {
 		# where the plotter meets the above criteria
 	}
 	option = {
-		name = EVTOPTAepicblood.11
+		name = epicblood.11.a
 		set_character_flag = personal_legend_5
 		prestige = 10
 	}
@@ -171,7 +171,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAepicblood.12
+		name = epicblood.12.a
 		set_character_flag = personal_legend_5
 		prestige = 10
 	}
@@ -207,7 +207,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAepicblood.13
+		name = epicblood.13.a
 		set_character_flag = personal_legend_5
 	}	
 }
@@ -240,7 +240,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAepicblood.13
+		name = epicblood.13.a
 		set_character_flag = personal_legend_5
 	}
 }

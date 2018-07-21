@@ -55,7 +55,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAhellenic.240
+		name = hellenic.240.a
 		trigger = {
 			NOT = {trait = paranoid}
 		}
@@ -130,7 +130,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAhellenic.241
+		name = hellenic.241.a
 		prestige = -50
 	}
 	option = {

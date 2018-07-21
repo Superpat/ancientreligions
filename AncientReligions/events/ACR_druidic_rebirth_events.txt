@@ -60,7 +60,7 @@ character_event = {
 	}	
 	
 	option = {
-		name = EVTOPTAceltic.0
+		name = celtic.0.a
 		
 		create_character = {
 			random_traits = no
@@ -101,7 +101,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.1
+		name = celtic.1.a
 		custom_tooltip = {
 			text = adopt_celtic_rites
 			piety = -50
@@ -112,7 +112,7 @@ character_event = {
 				add_trait = sympathy_pagans
 			}
 			add_character_modifier = {
-				name = celtic_ways
+				name = celtic_ways.a
 				duration = -1
 			}
 			hidden_tooltip = {
@@ -167,7 +167,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.2
+		name = celtic.2.a
 		ai_chance = { factor = 50 }
 		hidden_tooltip = { 
 			remove_character_modifier = celtic_ways
@@ -222,7 +222,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.3
+		name = celtic.3.a
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -248,7 +248,7 @@ character_event = {
 				add_trait = sympathy_pagans
 			}
 			add_character_modifier = {
-				name = celtic_ways
+				name = celtic_ways.a
 				duration = -1
 			}
 			hidden_tooltip = {
@@ -318,7 +318,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.4
+		name = celtic.4.a
 	}
 }
 # Vassal refuses celtic rites
@@ -330,7 +330,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.5
+		name = celtic.5.a
 	}
 }
 
@@ -346,7 +346,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = { # convert to paganism as well
-		name = celtic.300.a
+		name = celtic.300.a.a
 		ai_chance = {
 			factor = 33
 			modifier = {
@@ -430,7 +430,7 @@ character_event = {
 		}
 	}
 	option = { # reject their heathen ways
-		name = celtic.300.b
+		name = celtic.300.a.b
 		piety = 50
 		ai_chance = {
 			factor = 66
@@ -465,7 +465,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = celtic.301.a
+		name = celtic.301.a.a
 	}
 }
 
@@ -478,7 +478,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = celtic.302.a
+		name = celtic.302.a.a
 	}
 }
 
@@ -521,7 +521,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.6
+		name = celtic.6.a
 		ai_chance = {
 			factor = 50
 		}
@@ -551,7 +551,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.7
+		name = celtic.7.a
 		tooltip_info = lunatic
 		ai_chance = {
 			factor = 50
@@ -585,7 +585,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.8
+		name = celtic.8.a
 		tooltip_info = lunatic
 		religion = celtic_pagan
 		hidden_tooltip = { 

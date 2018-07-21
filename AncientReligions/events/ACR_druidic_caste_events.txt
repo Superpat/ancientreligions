@@ -20,7 +20,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.152
+		name = celtic.152.a
 		clr_character_flag = inviting_druid_over
 		random_list = {
 			35 = {
@@ -173,7 +173,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAceltic.153 #Ok
+		name = celtic.153.a #Ok
 	}
 }
 
@@ -186,7 +186,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.154
+		name = celtic.154.a
 		clr_character_flag = inviting_druid_over
 		random_list = {
 			35 = {
@@ -292,7 +292,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.155 # Send for a master of law
+		name = celtic.155.a # Send for a master of law
 		hidden_tooltip = {
 			character_event = {
 				id = celtic.154 
@@ -374,7 +374,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.157
+		name = celtic.157.a
 		add_trait = bad_druid
 		remove_trait = druid
 		if = {
@@ -427,7 +427,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.159
+		name = celtic.159.a
 
 		trigger = {
 			NOT = {
@@ -560,11 +560,11 @@ character_event = {
 	}
 	
 	option = {
-		name = celtic.161.a
+		name = celtic.161.a.a
 		character_event = { id = celtic.162 days = 3 tooltip = celtic.161.a.tt }
 	}
 	option = {
-		name = celtic.161.b
+		name = celtic.161.a.b
 		custom_tooltip = { text = celtic.161.b.tt }
 	}
 }
@@ -580,7 +580,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = celtic.162.a
+		name = celtic.162.a.a
 		scaled_wealth = 0.2
 		custom_tooltip = { 
 			text = bard_offer
@@ -606,7 +606,7 @@ character_event = {
 	}
 
 	option = {
-		name = celtic.162.b
+		name = celtic.162.a.b
 		custom_tooltip = { text = bard_declined }
 	}
 }
@@ -621,7 +621,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.183 # Send them on the path of the warrior
+		name = celtic.183.a # Send them on the path of the warrior
 		
 		custom_tooltip = {
 			text = path_of_the_warriors
@@ -727,7 +727,7 @@ narrative_event = {
 	is_triggered_only = yes
 
 	option = { # Training starts
-		name = celtic.185.a
+		name = celtic.185.a.a
 		add_trait = learning_druidic_arts
 		set_character_flag = druidic_training
 		clr_character_flag = wants_druidic_training
@@ -849,7 +849,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.187
+		name = celtic.187.a
 		FROM = {
 			opinion = {
 				modifier = opinion_very_disappointed
@@ -911,7 +911,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.189
+		name = celtic.189.a
 		FROM = {
 			add_trait = scarred
 			custom_tooltip = { 
@@ -963,7 +963,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.191
+		name = celtic.191.a
 		FROM = {
 			custom_tooltip = { 
 				text = return_from_druidic_training
@@ -1038,7 +1038,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.193
+		name = celtic.193.a
 		if = {
 			limit = {
 				FROM = {
@@ -1127,7 +1127,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.195
+		name = celtic.195.a
 		FROM = {
 			add_trait = lunatic
 			custom_tooltip = { 
@@ -1183,7 +1183,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.197
+		name = celtic.197.a
 		create_character = {
 			random_traits = yes
 			
@@ -1262,7 +1262,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.199
+		name = celtic.199.a
 		FROM = {
 			add_trait = zealous
 			custom_tooltip = { 
@@ -1339,7 +1339,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.201
+		name = celtic.201.a
 		FROM = {
 			add_trait = patient
 			custom_tooltip = { 
@@ -1448,7 +1448,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.203
+		name = celtic.203.a
 		FROM = { death = { death_reason = death_battle } }
 	}
 }
@@ -1493,7 +1493,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.205
+		name = celtic.205.a
 		FROM = {
 			custom_tooltip = { 
 				text = return_from_druidic_training
@@ -1537,7 +1537,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.206
+		name = celtic.206.a
 		custom_tooltip = {
 			text = return_from_druidic_training_player
 			remove_trait = learning_druidic_arts

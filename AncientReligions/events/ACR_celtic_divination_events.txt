@@ -23,7 +23,7 @@ character_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAceltic.20
+		name = celtic.20.a
 		any_vassal = {
 			limit = {
 				OR = {
@@ -65,7 +65,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.21
+		name = celtic.21.a
 		set_character_flag = attending_divination
 	}
 }
@@ -82,7 +82,7 @@ character_event = {
 	hide_from = yes
 	
 	option = { # Pay
-		name = EVTOPTAceltic.22
+		name = celtic.22.a
 		trigger = {
 			wealth = 20
 		}
@@ -126,7 +126,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.23
+		name = celtic.23.a
 		wealth = 20
 	}
 }
@@ -141,7 +141,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.56
+		name = celtic.56.a
 	}
 }
 
@@ -157,7 +157,7 @@ character_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAceltic.24
+		name = celtic.24.a
 		custom_tooltip = {
 			text = divination_begin
 			hidden_tooltip = {
@@ -207,7 +207,7 @@ character_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAceltic.25
+		name = celtic.25.a
 	}
 }
 
@@ -221,7 +221,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.26
+		name = celtic.26.a
 		hidden_tooltip = {
 			if = {
 				limit = { # Generic
@@ -378,7 +378,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.26
+		name = celtic.26.a
 		hidden_tooltip = {
 			if = {
 				limit = { # Generic
@@ -535,7 +535,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.26
+		name = celtic.26.a
 		hidden_tooltip = {
 			if = {
 				limit = { # Generic
@@ -692,7 +692,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.26
+		name = celtic.26.a
 		hidden_tooltip = {
 			if = {
 				limit = { # Generic
@@ -869,7 +869,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.30
+		name = celtic.30.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -902,7 +902,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.31
+		name = celtic.31.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -935,7 +935,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.32
+		name = celtic.32.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -968,7 +968,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.33
+		name = celtic.33.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -1003,7 +1003,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.34
+		name = celtic.34.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -1038,7 +1038,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.35
+		name = celtic.35.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -1073,7 +1073,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.36
+		name = celtic.36.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -1108,7 +1108,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.37
+		name = celtic.37.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -1143,7 +1143,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.38
+		name = celtic.38.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -1178,7 +1178,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.39
+		name = celtic.39.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -1211,7 +1211,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.40
+		name = celtic.40.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -1244,7 +1244,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.41
+		name = celtic.41.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -1277,7 +1277,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.42
+		name = celtic.42.a
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1299,7 +1299,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.42
+		name = celtic.42.a
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1321,7 +1321,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.42
+		name = celtic.42.a
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1343,7 +1343,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.42
+		name = celtic.42.a
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1365,7 +1365,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.42
+		name = celtic.42.a
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1387,7 +1387,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.42
+		name = celtic.42.a
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1409,7 +1409,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.42
+		name = celtic.42.a
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1431,7 +1431,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.42
+		name = celtic.42.a
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1453,7 +1453,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.42
+		name = celtic.42.a
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1475,7 +1475,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.42
+		name = celtic.42.a
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1497,7 +1497,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.42
+		name = celtic.42.a
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1519,7 +1519,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.42
+		name = celtic.42.a
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1543,7 +1543,7 @@ character_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAceltic.54
+		name = celtic.54.a
 		hidden_tooltip = {
 			any_vassal = {
 				limit = { has_character_flag = attending_divination }
@@ -1618,7 +1618,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.55
+		name = celtic.55.a
 	}
 }
 
@@ -1632,7 +1632,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.57
+		name = celtic.57.a
 	}
 }
 
@@ -1930,7 +1930,7 @@ character_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAceltic.60
+		name = celtic.60.a
 		prestige = 200
 		piety = 50
 		hidden_tooltip = {
@@ -1964,7 +1964,7 @@ character_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAceltic.61
+		name = celtic.61.a
 		custom_tooltip = {
 			text = divination_victory
 			hidden_tooltip = {
@@ -2003,7 +2003,7 @@ character_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAceltic.62
+		name = celtic.62.a
 		hidden_tooltip = {
 			any_vassal = {
 				limit = { has_character_flag = attending_divination }
@@ -2030,7 +2030,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.62
+		name = celtic.62.a
 		clr_character_flag = attending_divination
 		clr_character_flag = divination_vassal
 	}
@@ -2048,7 +2048,7 @@ character_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAceltic.64
+		name = celtic.64.a
 		custom_tooltip = {
 			text = divination_wealth
 			hidden_tooltip = {
@@ -2087,7 +2087,7 @@ character_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAceltic.65		
+		name = celtic.65.a	
 		custom_tooltip = {
 			text = divination_bad
 			prestige = -200
@@ -2126,7 +2126,7 @@ character_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAceltic.66
+		name = celtic.66.a
 		custom_tooltip = {
 			text = divination_bad
 			piety = -50
@@ -2163,7 +2163,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.67
+		name = celtic.67.a
 		set_character_flag = divination_vassal
 	}
 }
@@ -2178,7 +2178,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.68
+		name = celtic.68.a
 		set_character_flag = divination_vassal
 	}
 }
@@ -2193,7 +2193,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.69
+		name = celtic.69.a
 		set_character_flag = divination_vassal
 	}
 }
@@ -2208,7 +2208,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.70
+		name = celtic.70.a
 		set_character_flag = divination_vassal
 	}
 }
@@ -2223,7 +2223,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.71
+		name = celtic.71.a
 		set_character_flag = divination_vassal
 	}
 }
@@ -2238,7 +2238,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.30
+		name = celtic.30.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -2271,7 +2271,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.30
+		name = celtic.30.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -2304,7 +2304,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.30
+		name = celtic.30.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed

@@ -61,7 +61,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.150
+		name = celtic.150.a
 		piety = 25
 
 		random_list = {
@@ -143,7 +143,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.151
+		name = celtic.151.a
 		piety = 20
 		prestige = 20
 		random_list = {
@@ -228,7 +228,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.1252
+		name = celtic.1252.a
 		piety = 75
 		random_list = {
 			10 = {
@@ -308,7 +308,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.1253
+		name = celtic.1253.a
 		piety = 20
 		prestige = 25
 		random_list = {
@@ -386,7 +386,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAceltic.208
+		name = celtic.208.a
 		ai_chance = {
 			factor = 50
 		}
@@ -417,7 +417,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {	 #Accept the healing/conversion
-		name = EVTOPTAceltic.209
+		name = celtic.209.a
 		ai_chance = {
 			factor = 50
 		}
@@ -449,7 +449,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = { #Character healed/converted
-		name = EVTOPTAceltic.210
+		name = celtic.210.a
 		
 		if = {
 			limit = { religion_group = christian }
@@ -555,7 +555,7 @@ narrative_event = {
 				religion = celtic_pagan_reformed
 			}
 		}
-		name = EVTOPTAceltic.256 #Ok
+		name = celtic.256 #Ok.a
 	}
 
 	option = {

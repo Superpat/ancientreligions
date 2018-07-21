@@ -34,7 +34,7 @@ character_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAtitan.0
+		name = titan.0.a
 		any_vassal = {
 			limit = {
 				religion = titan_pagan
@@ -76,7 +76,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.1
+		name = titan.1.a
 		set_character_flag = attending_titan_thysia
 		set_character_flag = do_not_disturb
 		if = {
@@ -105,7 +105,7 @@ character_event = {
 	hide_from = yes
 	
 	option = { # Pay
-		name = EVTOPTAtitan.2
+		name = titan.2.a
 		trigger = {
 			wealth = 5
 		}
@@ -147,7 +147,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.3
+		name = titan.3.a
 		wealth = 20
 	}
 }
@@ -162,7 +162,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.36
+		name = titan.36.a
 	}
 }
 
@@ -178,7 +178,7 @@ character_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAtitan.4
+		name = titan.4.a
 		hidden_tooltip = {
 			if = {
 				limit = { 
@@ -233,7 +233,7 @@ character_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAtitan.4
+		name = titan.4.a
 	}
 }
 
@@ -247,7 +247,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.6
+		name = titan.6.a
 		hidden_tooltip = {
 			if = {
 				limit = { # Generic
@@ -400,7 +400,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.6
+		name = titan.6.a
 		hidden_tooltip = {
 			if = {
 				limit = { # Generic
@@ -553,7 +553,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.6
+		name = titan.6.a
 		hidden_tooltip = {
 			if = {
 				limit = { # Generic
@@ -706,7 +706,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.6
+		name = titan.6.a
 		hidden_tooltip = {
 			if = {
 				limit = { # Generic
@@ -859,7 +859,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.10
+		name = titan.10.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -892,7 +892,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.11
+		name = titan.11.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -925,7 +925,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.12
+		name = titan.12.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -958,7 +958,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.13
+		name = titan.13.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -993,7 +993,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.14
+		name = titan.14.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -1028,7 +1028,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.15
+		name = titan.15.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -1063,7 +1063,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.16
+		name = titan.16.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -1098,7 +1098,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.17
+		name = titan.17.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -1133,7 +1133,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.18
+		name = titan.18.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -1168,7 +1168,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.19
+		name = titan.19.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -1201,7 +1201,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.20
+		name = titan.20.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -1234,7 +1234,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.21
+		name = titan.21.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -1267,7 +1267,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.22
+		name = titan.22.a
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1289,7 +1289,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.22
+		name = titan.22.a
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1311,7 +1311,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.22
+		name = titan.22.a
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1333,7 +1333,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.22
+		name = titan.22.a
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1355,7 +1355,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.22
+		name = titan.22.a
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1377,7 +1377,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.22
+		name = titan.22.a
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1399,7 +1399,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.22
+		name = titan.22.a
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1421,7 +1421,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.22
+		name = titan.22.a
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1443,7 +1443,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.22
+		name = titan.22.a
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1465,7 +1465,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.22
+		name = titan.22.a
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1487,7 +1487,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.22
+		name = titan.22.a
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1509,7 +1509,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.22
+		name = titan.22.a
 		tooltip = {
 			FROMFROM = {
 				death = {
@@ -1533,7 +1533,7 @@ character_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAtitan.34
+		name = titan.34.a
 		hidden_tooltip = {
 			any_vassal = {
 				limit = { has_character_flag = attending_titan_thysia }
@@ -1557,7 +1557,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.35
+		name = titan.35.a
 	}
 }
 
@@ -1571,7 +1571,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.37
+		name = titan.37.a
 	}
 }
 
@@ -1716,7 +1716,7 @@ character_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAtitan.40
+		name = titan.40.a
 		hidden_tooltip = {
 			any_vassal = {
 				limit = { has_character_flag = attending_titan_thysia }
@@ -1786,7 +1786,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.41
+		name = titan.41.a
 		set_character_flag = titan_thysia_feast_vassal
 		custom_tooltip = { text = feast_begins }
 	}
@@ -1804,7 +1804,7 @@ character_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAtitan.42
+		name = titan.42.a
 		hidden_tooltip = {
 			any_vassal = {
 				limit = { has_character_flag = attending_titan_thysia }
@@ -1841,7 +1841,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.42
+		name = titan.42.a
 		clr_character_flag = attending_titan_thysia
 		clr_character_flag = titan_thysia_feast_vassal
 		clr_character_flag = feast_drunkard
@@ -1877,7 +1877,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAtitan.50
+		name = titan.50.a
 		tooltip_info = drunkard
 		set_character_flag = feast_drunkard
 		hidden_tooltip = {
@@ -1946,7 +1946,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.51
+		name = titan.51.a
 		trigger = { 
 			NOT = { trait = drunkard } 
 		}
@@ -2015,7 +2015,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.53
+		name = titan.53.a
 		tooltip_info = gluttonous
 		FROM = {
 			character_event = { id = titan.54 tooltip = EVTTOOLTIPtitan.54 }
@@ -2075,7 +2075,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.54
+		name = titan.54.a
 		opinion = {
 			modifier = opinion_vomit
 			who = FROM
@@ -2093,7 +2093,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.55
+		name = titan.55.a
 		opinion = {
 			modifier = opinion_feast_scandal
 			who = FROM
@@ -2123,7 +2123,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAtitan.56
+		name = titan.56.a
 		tooltip_info = lunatic
 		set_character_flag = feast_lunatic
 		hidden_tooltip = {
@@ -2192,7 +2192,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.57
+		name = titan.57.a
 		trigger = {
 			NOT = { trait = lunatic }
 		}
@@ -2236,7 +2236,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAtitan.58
+		name = titan.58.a
 		tooltip_info = lustful
 		set_character_flag = feast_lustful
 		trigger = {
@@ -2376,7 +2376,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.59
+		name = titan.59.a
 		trigger = {
 			NOT = { trait = lustful }
 			NOT = { any_spouse = { character = FROM } }
@@ -2466,7 +2466,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.61
+		name = titan.61.a
 		hidden_tooltip = {
 			FROM = {
 				character_event = { id = titan.62 }
@@ -2497,7 +2497,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.61
+		name = titan.61.a
 		tooltip = {
 			FROM = {
 				opinion = {
@@ -2572,7 +2572,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.64
+		name = titan.64.a
 		tooltip_info = homosexual
 		hidden_tooltip = {
 			FROM = {
@@ -2612,7 +2612,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.64
+		name = titan.64.a
 		tooltip_info = homosexual
 		random = {
 			chance = 50
@@ -2688,7 +2688,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.64
+		name = titan.64.a
 		tooltip_info = homosexual
 		hidden_tooltip = {
 			FROM = {
@@ -2728,7 +2728,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.64
+		name = titan.64.a
 		tooltip_info = homosexual
 		random = {
 			chance = 50
@@ -2755,7 +2755,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.69
+		name = titan.69.a
 		tooltip = {
 			liege = {
 				if = {
@@ -2809,7 +2809,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.70
+		name = titan.70.a
 		trigger = {
 			NOT = { trait = homosexual }
 		}
@@ -2841,7 +2841,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.10
+		name = titan.10.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -2874,7 +2874,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.10
+		name = titan.10.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -2907,7 +2907,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAtitan.10
+		name = titan.10.a
 		FROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -3264,7 +3264,7 @@ narrative_event = {
 			portrait = [From.GetID]
 		}
 
-		name = titan.100.a
+		name = titan.100.a.a
 	}
 
 	option = {
@@ -3273,7 +3273,7 @@ narrative_event = {
 			NOT = { has_character_flag = acr_founded_sickles }
 		}
 
-		name = titan.100.b
+		name = titan.100.a.b
 	}
 
 	option = {
@@ -3283,6 +3283,6 @@ narrative_event = {
 			}
 		}
 
-		name = titan.100.c
+		name = titan.100.a.c
 	}
 }

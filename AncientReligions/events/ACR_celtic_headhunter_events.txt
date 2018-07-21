@@ -150,7 +150,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.10
+		name = celtic.10.a
 		add_trait = head1
 	}
 }
@@ -296,7 +296,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.11
+		name = celtic.11.a
 		add_trait = head2
 	}
 }

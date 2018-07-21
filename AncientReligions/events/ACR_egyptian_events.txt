@@ -25,7 +25,7 @@ province_event = {
 	}	
 
 	option = {
-		name = EVTOPTAegyptian.0 # Make it the greatest temple there ever was!
+		name = egyptian.0.a # Make it the greatest temple there ever was!
 	}
 }
 
@@ -53,7 +53,7 @@ province_event = {
 	}
 	
 	option = {
-		name = EVTOPTAegyptian.1 # Library
+		name = egyptian.1.a # Library
 		795 = {
 			add_province_modifier = { name = luxor_library duration = -1 }
 		}
@@ -99,7 +99,7 @@ province_event = {
 	}
 
 	option = {
-		name = EVTOPTAegyptian.2
+		name = egyptian.2.a
 		owner = {
 			795 = {
 				build_holding = {
@@ -157,7 +157,7 @@ narrative_event = {
 		trigger = {
 			NOT = { has_character_flag = event_ancrel4003 }
 		}
-		name = EVTOPTAegyptian.3
+		name = egyptian.3.a
 	}
 }
 
@@ -174,7 +174,7 @@ character_event = {
 	}	
 
 	option = {
-		name = EVTOPTAegyptian.4 # Make it the greatest pyramid there ever was!
+		name = egyptian.4.a # Make it the greatest pyramid there ever was!
 		wealth = -600
 	}
 }
@@ -217,7 +217,7 @@ province_event = {
 	}
 	
 	option = {
-		name = EVTOPTAegyptian.5 # My pyramid is done!
+		name = egyptian.5.a # My pyramid is done!
 
 		trigger = { owner = { has_character_flag = pyramid_building_char}}
 		owner = {
@@ -284,7 +284,7 @@ narrative_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAegyptian.6
+		name = egyptian.6.a
 		trigger = {
 			true_religion_in_egyptian_subgroup_trigger = yes
 		}
@@ -321,7 +321,7 @@ narrative_event = {
 		trigger = {
 			NOT = { has_character_flag = event_ancrel4007 }
 		}
-		name = EVTOPTAegyptian.7
+		name = egyptian.7.a
 	}
 }
 
@@ -349,7 +349,7 @@ narrative_event = {
 		trigger = {
 			NOT = { has_character_flag = event_ancrel4008 }
 		}
-		name = EVTOPTAegyptian.8
+		name = egyptian.8.a
 	}
 }
 
@@ -366,7 +366,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAegyptian.10 # OK
+		name = egyptian.10.a # OK
 		hidden_tooltip = {
 			random_list = {
 				95 = {
@@ -405,7 +405,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAegyptian.11 # OK
+		name = egyptian.11.a # OK
 		hidden_tooltip = {
 			random_list = {
 				95 = {
@@ -444,7 +444,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAegyptian.12 # OK
+		name = egyptian.12.a # OK
 		hidden_tooltip = {
 			random_list = {
 				95 = {
@@ -491,7 +491,7 @@ character_event = {
 	}	
 
 	option = {
-		name = EVTOPTAegyptian.13 # OK
+		name = egyptian.13.a # OK
 		
 		hidden_tooltip = {
 			# Calculate piety gain = 200 + nb_sed_festivals * 50
@@ -585,7 +585,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAegyptian.14 # OK
+		name = egyptian.14.a # OK
 		hidden_tooltip = {
 			character_event = { id = egyptian.17 days = 1 }
 		}
@@ -601,7 +601,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAegyptian.15 # OK
+		name = egyptian.15.a # OK
 		hidden_tooltip = {
 			character_event = { id = egyptian.17 days = 1 }
 		}
@@ -617,7 +617,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAegyptian.16 # OK
+		name = egyptian.16.a # OK
 		hidden_tooltip = {
 			character_event = { id = egyptian.17 days = 1 }
 		}
@@ -637,7 +637,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAegyptian.17 # Depressed
+		name = egyptian.17.a # Depressed
 
 		add_trait = depressed
 		piety = -200

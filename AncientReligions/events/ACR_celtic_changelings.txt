@@ -71,7 +71,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.213
+		name = celtic.213.a
 		FROM = {
 			opinion = {
 				modifier = opinion_disappointed
@@ -151,7 +151,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.217
+		name = celtic.217.a
 		custom_tooltip = { text = changeling_child_acts_strange }
 	}
 }
@@ -192,7 +192,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.219
+		name = celtic.219.a
 		custom_tooltip = { text = changeling_child_acts_strange }
 	}
 }
@@ -233,7 +233,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.221
+		name = celtic.221.a
 		custom_tooltip = { text = changeling_child_acts_strange }
 	}
 }
@@ -331,7 +331,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.224
+		name = celtic.224.a
 		FROM = {
 			death = {
 				death_reason = death_murder_unknown
@@ -433,7 +433,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.227
+		name = celtic.227.a
 		FROM = {
 			death = {
 				death_reason = death_murder_unknown
@@ -535,7 +535,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.230
+		name = celtic.230.a
 		FROM = {
 			death = {
 				death_reason = death_murder_unknown
@@ -607,7 +607,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.233
+		name = celtic.233.a
 		hidden_tooltip = {
 			character_event = { id = celtic.234 days = 7 }
 		}
@@ -638,7 +638,7 @@ character_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAceltic.234
+		name = celtic.234.a
 		
 		custom_tooltip = {
 			text = changeling_trade_begins
@@ -698,7 +698,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.237
+		name = celtic.237.a
 		FROM = {
 			death = {
 				death_reason = death_murder_unknown
@@ -720,7 +720,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.238
+		name = celtic.238.a
 		FROMFROM = {
 			death = {
 				death_reason = death_sacrificed
@@ -764,7 +764,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.239
+		name = celtic.239.a
 		FROMFROM = {
 			clr_character_flag = changeling_child
 			clr_character_flag = changeling_child_fake
@@ -826,7 +826,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.241
+		name = celtic.241.a
 		add_trait = changeling
 		hidden_tooltip = {
 			random_list = {

@@ -243,7 +243,7 @@ character_event = {
 	}
 	
 	option = {
-		name =  EVTOPTAceltic.1320 # Ask to go
+		name =  celtic.1320.a # Ask to go
 		liege = {
 			character_event = {
 				id = celtic.1321
@@ -265,7 +265,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name =  EVTOPTAceltic.1321 # Agree
+		name =  celtic.1321.a # Agree
 		ai_chance = {
 			factor = 100
 		}
@@ -330,7 +330,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name =  EVTOPTAceltic.1323
+		name =  celtic.1323.a
 		
 		opinion = {
 			who = FROM
@@ -472,7 +472,7 @@ letter_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name =  EVTOPTAceltic.1327 # Agree
+		name =  celtic.1327.a # Agree
 		ai_chance = {
 			factor = 80
 			modifier = {
@@ -571,7 +571,7 @@ letter_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name =  EVTOPTAceltic.1330
+		name =  celtic.1330.a
 	}
 }
 

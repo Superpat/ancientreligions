@@ -163,7 +163,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAhellenic.152
+		name = hellenic.152.a
 		trigger = {
 			culture = roman
 		}
@@ -287,7 +287,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAhellenic.153
+		name = hellenic.153.a
 		trigger = {
 			NOT = { culture = roman }
 			OR = {
@@ -495,7 +495,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAhellenic.154
+		name = hellenic.154.a
 		trigger = {
 			NOT = { culture = roman }
 			OR = {
@@ -690,7 +690,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAhellenic.156
+		name = hellenic.156.a
 		trigger = {
 			NOT = { culture = roman }
 			OR = {
@@ -844,7 +844,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAhellenic.156
+		name = hellenic.156.a
 		trigger = {
 			NOT = { culture = roman }
 			OR = {

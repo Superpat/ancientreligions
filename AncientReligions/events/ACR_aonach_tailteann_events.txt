@@ -20,7 +20,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAceltic.1190
+		name = celtic.1190.a
 		prestige = 25
 		piety = 25
 		set_character_flag = attending_tailteann
@@ -42,7 +42,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAceltic.1191
+		name = celtic.1191.a
 		trigger = {
 			war = no
 		}
@@ -84,7 +84,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.1192
+		name = celtic.1192.a
 		prestige = -50
 		clr_character_flag = attending_tailteann
 	}
@@ -99,7 +99,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAceltic.1193
+		name = celtic.1193.a
 	}
 }
 
@@ -116,7 +116,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.1194
+		name = celtic.1194.a
 		clr_character_flag = tailteann_begins
 		clr_character_flag = winner_athletic
 		clr_character_flag = winner_fighting
@@ -179,7 +179,7 @@ letter_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.1195
+		name = celtic.1195.a
 	}
 }
 
@@ -214,7 +214,7 @@ character_event = {
 	hide_from = yes
 	
 	option = { # In memory of father
-		name = EVTOPTAceltic.1196
+		name = celtic.1196.a
 		trigger = {
 			father_even_if_dead = {
 				is_alive = no
@@ -259,7 +259,7 @@ narrative_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAceltic.1197
+		name = celtic.1197.a
 		piety = 100
 		clr_character_flag = choose_dead_one_tailteann
 		set_character_flag = chosen_dead_one_tailteann
@@ -279,7 +279,7 @@ narrative_event = {
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTAceltic.1198
+		name = celtic.1198.a
 		piety = 100
 		clr_character_flag = choose_dead_one_tailteann
 		set_character_flag = chosen_dead_one_tailteann
@@ -295,7 +295,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = { # Favor warrior caste
-		name = EVTOPTAceltic.1199
+		name = celtic.1199.a
 		custom_tooltip = {
 			text = give_laws_ollam
 			change_martial = 1
@@ -501,7 +501,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAceltic.1200
+		name = celtic.1200.a
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_phase
 			clr_character_flag = chosen_dead_one_tailteann
@@ -519,7 +519,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAceltic.1201
+		name = celtic.1201.a
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_phase
 			clr_character_flag = chosen_dead_one_tailteann
@@ -537,7 +537,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAceltic.1202
+		name = celtic.1202.a
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_phase
 			clr_character_flag = chosen_dead_one_tailteann
@@ -555,7 +555,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAceltic.1203
+		name = celtic.1203.a
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_phase
 			clr_character_flag = chosen_dead_one_tailteann
@@ -573,7 +573,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAceltic.1204
+		name = celtic.1204.a
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_phase
 			clr_character_flag = chosen_dead_one_tailteann
@@ -591,7 +591,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAceltic.1205
+		name = celtic.1205.a
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_phase
 			clr_character_flag = chosen_dead_one_tailteann
@@ -609,7 +609,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAceltic.1206
+		name = celtic.1206.a
 		hidden_tooltip = {
 			clr_character_flag = tailteann_death_phase
 			clr_character_flag = chosen_dead_one_tailteann
@@ -627,7 +627,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAceltic.1207
+		name = celtic.1207.a
 		hidden_tooltip = {
 			clr_character_flag = tailteann_law_phase
 			set_character_flag = tailteann_game_phase
@@ -645,7 +645,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAceltic.1208
+		name = celtic.1208.a
 		hidden_tooltip = {
 			clr_character_flag = tailteann_law_phase
 			set_character_flag = tailteann_game_phase
@@ -663,7 +663,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAceltic.1209
+		name = celtic.1209.a
 		hidden_tooltip = {
 			clr_character_flag = tailteann_law_phase
 			set_character_flag = tailteann_game_phase
@@ -681,7 +681,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAceltic.1210
+		name = celtic.1210.a
 		hidden_tooltip = {
 			clr_character_flag = tailteann_law_phase
 			set_character_flag = tailteann_game_phase
@@ -699,7 +699,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAceltic.1211
+		name = celtic.1211.a
 		hidden_tooltip = {
 			clr_character_flag = tailteann_law_phase
 			set_character_flag = tailteann_game_phase
@@ -717,7 +717,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAceltic.1212
+		name = celtic.1212.a
 		hidden_tooltip = {
 			clr_character_flag = tailteann_law_phase
 			set_character_flag = tailteann_game_phase
@@ -735,7 +735,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAceltic.1213
+		name = celtic.1213.a
 		hidden_tooltip = {
 			clr_character_flag = tailteann_law_phase
 			set_character_flag = tailteann_game_phase
@@ -828,7 +828,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.1214
+		name = celtic.1214.a
 		wealth = 100
 		prestige = 300
 		hidden_tooltip = {
@@ -855,7 +855,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.1215
+		name = celtic.1215.a
 		FROM = {
 			opinion = {
 				modifier = opinion_tailteann_athlete
@@ -958,7 +958,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.1216
+		name = celtic.1216.a
 		wealth = 75
 		prestige = 250
 		hidden_tooltip = {
@@ -985,7 +985,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.1217
+		name = celtic.1217.a
 		FROM = {
 			opinion = {
 				modifier = opinion_tailteann_fighter
@@ -1085,7 +1085,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.1218
+		name = celtic.1218.a
 		wealth = 50
 		prestige = 200
 		hidden_tooltip = {
@@ -1112,7 +1112,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.1219
+		name = celtic.1219.a
 		FROM = {
 			opinion = {
 				modifier = opinion_tailteann_craftsman
@@ -1146,7 +1146,7 @@ province_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.1220
+		name = celtic.1220.a
 		clr_province_flag = tailteann_60_days
 		owner = {
 			clr_character_flag = tailteann_game_phase
@@ -1239,7 +1239,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.1221
+		name = celtic.1221.a
 	}
 	option = {
 		name = EVTOPTBceltic.1221
@@ -1261,7 +1261,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.1221
+		name = celtic.1221
 	}
 	option = {
 		name = EVTOPTBceltic.1221
@@ -1283,7 +1283,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.1221
+		name = celtic.1221.a
 	}
 	option = {
 		name = EVTOPTBceltic.1221
@@ -1300,7 +1300,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAceltic.1224
+		name = celtic.1224.a
 		prestige = 50
 	}
 }
@@ -1314,7 +1314,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAceltic.1225
+		name = celtic.1225.a
 		prestige = 100
 	}
 }
@@ -1328,7 +1328,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAceltic.1226
+		name = celtic.1226.a
 		prestige = -50
 	}
 }
@@ -1342,7 +1342,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAceltic.1227
+		name = celtic.1227.a
 		prestige = -100
 	}
 }
@@ -1356,7 +1356,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAceltic.1228
+		name = celtic.1228.a
 		change_martial = 1
 	}
 }
@@ -1370,7 +1370,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAceltic.1229
+		name = celtic.1229.a
 		change_martial = -1
 	}
 }	
@@ -1452,7 +1452,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.1230
+		name = celtic.1230.a
 		death = {
 			death_reason = death_battle
 		}
@@ -1551,7 +1551,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAceltic.1231
+		name = celtic.1231.a
 		add_trait = maimed
 		hidden_tooltip = {
 			if = {
@@ -1648,7 +1648,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.1232
+		name = celtic.1232.a
 		add_trait = wounded
 		hidden_tooltip = {
 			if = {
@@ -1734,7 +1734,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.1233
+		name = celtic.1233.a
 		add_trait = craven
 	}
 }
@@ -1808,7 +1808,7 @@ character_event = {
 	}	
 
 	option = {
-		name = EVTOPTAceltic.1234
+		name = celtic.1234.a
 		add_trait = brave
 	}
 }
@@ -1880,7 +1880,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAceltic.1235
+		name = celtic.1235.a
 		remove_trait = misguided_warrior
 		add_trait = tough_soldier 
 	}
@@ -1953,7 +1953,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAceltic.1236
+		name = celtic.1236.a
 		remove_trait = tough_soldier 
 		add_trait = skilled_tactician 
 	}
@@ -2026,7 +2026,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAceltic.1237
+		name = celtic.1237.a
 		remove_trait = skilled_tactician 
 		add_trait = brilliant_strategist 
 	}
@@ -2099,7 +2099,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAceltic.1238
+		name = celtic.1238.a
 		remove_trait = brilliant_strategist
 		add_trait = skilled_tactician  
 	}
@@ -2172,7 +2172,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAceltic.1239
+		name = celtic.1239.a
 		remove_trait = skilled_tactician
 		add_trait = tough_soldier
 	}
@@ -2245,7 +2245,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAceltic.1240
+		name = celtic.1240.a
 		remove_trait = tough_soldier
 		add_trait = misguided_warrior
 	}
@@ -2322,7 +2322,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.1241
+		name = celtic.1241.a
 		add_trait = homosexual
 	}
 }
@@ -2387,7 +2387,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAceltic.1242
+		name = celtic.1242.a
 		add_trait = syphilitic
 	}
 }
@@ -2451,7 +2451,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAceltic.1243
+		name = celtic.1243.a
 		add_trait = drunkard
 	}
 }
@@ -2519,7 +2519,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.1244
+		name = celtic.1244.a
 		add_trait = duelist
 	}
 }
@@ -2597,7 +2597,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTAceltic.1245
+		name = celtic.1245.a
 		change_diplomacy = 1
 	}
 }
@@ -2675,7 +2675,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.1246
+		name = celtic.1246.a
 		change_diplomacy = -1
 	}
 }
@@ -2753,7 +2753,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.1247
+		name = celtic.1247.a
 		change_stewardship = 1
 	}
 }
@@ -2831,7 +2831,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.1248
+		name = celtic.1248.a
 		change_stewardship = -1
 	}
 }
@@ -2909,7 +2909,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.1249
+		name = celtic.1249.a
 		change_diplomacy = 1
 	}
 }
@@ -2987,7 +2987,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTAceltic.1250
+		name = celtic.1250.a
 		change_diplomacy = -1
 	}
 }
@@ -3001,6 +3001,6 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTAceltic.1211
+		name = celtic.1211.a
 	}
 }

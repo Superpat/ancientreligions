@@ -77,7 +77,7 @@ character_event = {
 	
 	# Decide to emulate one of the epic heroes
 	option = {
-		name = EVTOPTAepicblood.0
+		name = epicblood.0.a
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -130,7 +130,7 @@ character_event = {
 	
 	# Greek
 	option = {
-		name = EVTOPTAepicblood.1
+		name = epicblood.1.a
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -170,7 +170,7 @@ character_event = {
 	
 	#Achilles
 	option = {
-		name = EVTOPTAepicblood.2
+		name = epicblood.2.a
 		ai_chance = {
 			factor = 34
 			modifier = {
@@ -242,7 +242,7 @@ character_event = {
 	
 	#Hector
 	option = {
-		name = EVTOPTAepicblood.3
+		name = epicblood.3.a
 		ai_chance = {
 			factor = 34
 			modifier = {

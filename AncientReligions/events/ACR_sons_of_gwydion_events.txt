@@ -179,7 +179,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.120
+		name = celtic.120.a
 		FROM = {
 			opinion = {
 				modifier = opinion_very_disappointed
@@ -247,7 +247,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.125
+		name = celtic.125.a
 		FROM = {
 			move_character = ROOT
 			add_trait = scarred
@@ -291,7 +291,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.129
+		name = celtic.129.a
 		FROM = {
 			move_character = ROOT
 			tooltip = { add_trait = maimed }
@@ -357,7 +357,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.131
+		name = celtic.131.a
 		if = {
 			limit = {
 				FROM = {
@@ -438,7 +438,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.133
+		name = celtic.133.a
 		FROM = {
 			move_character = ROOT
 			add_trait = stressed
@@ -484,7 +484,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.135
+		name = celtic.135.a
 		create_character = {
 			random_traits = yes
 			dynasty = NONE
@@ -539,7 +539,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.137
+		name = celtic.137.a
 		FROM = {
 			move_character = ROOT
 			add_trait = zealous
@@ -607,7 +607,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.139
+		name = celtic.139.a
 		FROM = {
 			move_character = ROOT
 			add_trait = brave
@@ -708,7 +708,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.141
+		name = celtic.141.a
 		FROM = { death = { death_reason = death_battle } }
 	}
 }
@@ -752,7 +752,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTAceltic.143
+		name = celtic.143.a
 		FROM = {
 			move_character = ROOT
 			add_trait = wolf
@@ -784,11 +784,17 @@ character_event = {
 	
 	immediate = {
 		clr_character_flag = wants_gwydion
-		clr_character_flag = serving_gwydion
 	}
 	
 	option = {
-		name = EVTOPTAceltic.144
+		name = celtic.144.a
+		if = {
+			limit = {
+				has_character_flag = serving_gwydion
+			}
+			add_trait = wolf
+			clr_character_flag = serving_gwydion
+		}
 		add_trait = wolf
 		prestige = 200
 		wealth = 200
@@ -815,7 +821,12 @@ character_event = {
 	}
 	
 	immediate = {
-		add_trait = wolf
+		if = {
+			limit = {
+				has_character_flag = serving_gwydion
+			}
+			add_trait = wolf
+		}
 		clr_character_flag = wants_gwydion
 		clr_character_flag = serving_gwydion
 	}

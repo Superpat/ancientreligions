@@ -174,8 +174,8 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	option = {
-		name = EVTOPTAceltic.271 # Yes, clearly
+	option = {# Yes, clearly
+		name = celtic.271.a 
 		
 		hidden_tooltip = {
 			FROM = {
@@ -188,8 +188,8 @@ character_event = {
 		}
 	}
 	
-	option = {
-		name = EVTOPTBceltic.271 # Nonsense!
+	option = {# Nonsense!
+		name = EVTOPTBceltic.271 
 		
 		hidden_tooltip = {
 			FROM = {
@@ -225,7 +225,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTA_RoI_10010
+		name = _RoI_10010
 		reincarnation_scope = {
 			ROOT = {
 				copy_random_personality_trait = PREV

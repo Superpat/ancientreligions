@@ -27,6 +27,7 @@ narrative_event = {
 	is_triggered_only = yes
 
 	option = {
+		name = promethean.400.a
 		trigger = {
 			has_character_flag = acr_restorer_of_academy
 		}
@@ -36,24 +37,23 @@ narrative_event = {
 			portrait = [Root.GetID]
 		}
 
-		name = promethean.400.a
 	}
 
 	option = {
+		name = promethean.400.b
 		trigger = {
 			religion = promethean_pagan
 			NOT = {
 				has_character_flag = acr_restorer_of_academy
 			}
 		}
-		name = promethean.400.b
 	}
 
 	option = {
+		name = promethean.400.c
 		trigger = {
 			NOT = { religion = promethean_pagan }
 		}
-		name = promethean.400.c
 	}
 }
 
@@ -2041,7 +2041,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTA452 # What took him/her so long?
+		name = 452 # What took him/her so long?
 		ai_chance = {
 			factor = 34
 			modifier = {
@@ -4205,26 +4205,26 @@ narrative_event = {
 	is_triggered_only = yes
 
 	option = {
+		name = promethean.550.a
 		trigger = {
 			has_character_flag = acr_organizer_steel
 		}
-		name = promethean.550.a
 	}
 
 	option = {
+		name = promethean.550.b
 		trigger = {
 			religion = promethean_pagan
 			NOT = {
 				has_character_flag = acr_organizer_steel
 			}
 		}
-		name = promethean.550.b
 	}
 
 	option = {
+		name = promethean.550.c
 		trigger = {
 			NOT = { religion = promethean_pagan }
 		}
-		name = promethean.550.c
 	}
 }

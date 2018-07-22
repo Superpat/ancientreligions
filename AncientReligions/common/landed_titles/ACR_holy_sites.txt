@@ -3,6 +3,7 @@
 c_dublin = {
 	holy_site = celtic_pagan
 	holy_site = celtic_pagan_reformed
+	holy_site = britannic_pagan
 }
 c_gwynedd = {
 	holy_site = celtic_pagan
@@ -19,6 +20,22 @@ c_vannes = {
 c_dijon = {
 	holy_site = celtic_pagan
 	holy_site = celtic_pagan_reformed
+}
+
+c_gowrie = {
+	holy_site = britannic_pagan
+}
+
+c_middlesex = {
+	holy_site = britannic_pagan
+}
+
+c_wiltshire = { # stonehenge
+	holy_site = britannic_pagan
+}
+
+c_avranches = { # mortain
+	holy_site = britannic_pagan
 }
 
 ### Egyptian Pagan

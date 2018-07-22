@@ -4014,6 +4014,13 @@ add_crusade_trait_effect = {
 	}
 	if = {
 		limit = {
+			religion = britannic_pagan
+		}
+
+		add_trait = morrigan
+	}
+	if = {
+		limit = {
 			religion = egyptian_pagan
 		}
 		add_trait = montu
@@ -10034,6 +10041,10 @@ add_religion_char_flag_effect = {
     	set_character_flag = character_was_celtic_pagan_reformed
     }
     if = {
+    	limit = { religion = britannic_pagan }
+    	set_character_flag = character_was_britannic_pagan
+    }
+    if = {
     	limit = { religion = hellenic_pagan }
     	set_character_flag = character_was_hellenic_pagan
     }
@@ -10428,6 +10439,12 @@ event_target_old_religion_from_flag_effect = {
 	if = {
     	limit = { has_character_flag = character_was_celtic_pagan_reformed }
     	celtic_pagan_reformed = {
+    		save_event_target_as = old_religion
+    	}
+    }
+	if = {
+    	limit = { has_character_flag = character_was_britannic_pagan }
+    	britannic_pagan = {
     		save_event_target_as = old_religion
     	}
     }
@@ -12277,8 +12294,19 @@ flip_secret_religious_community_provinces = {
 					limit = {
 						has_province_modifier = secret_celtic_pagan_reformed_community
 					}
-					religion = celtic_pagan
+					religion = celtic_pagan_reformed
 					remove_province_modifier = secret_celtic_pagan_reformed_community
+				}
+			}
+		}
+		secret_religious_society_britannic_pagan = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_britannic_pagan_community
+					}
+					religion = britannic_pagan
+					remove_province_modifier = secret_britanic_pagan_community
 				}
 			}
 		}

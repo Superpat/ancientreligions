@@ -156,6 +156,7 @@ pagan_group = {
 		short_reign_opinion_year_mult = 1 # The default is 2
 		has_heir_designation = yes
 		feminist = yes
+		attacking_same_religion_piety_loss = yes
 
 		religious_clothing_head = 5
 		religious_clothing_priest = 5
@@ -225,6 +226,7 @@ pagan_group = {
 		
 		priests_can_marry = yes
 		female_temple_holders = yes
+		priests_can_inherit = no
 		feminist = yes
 		max_consorts = 3
 		allow_looting = yes
@@ -289,6 +291,7 @@ pagan_group = {
 
 		priests_can_marry = yes
 		female_temple_holders = yes
+		priests_can_inherit = no
 		feminist = yes
 		defensive_attrition = yes
 		max_consorts = 3
@@ -309,9 +312,64 @@ pagan_group = {
 		can_demand_religious_conversion = no
 	}
 	
+	britannic_pagan = {
+		graphical_culture = celticgfx
+		
+		icon = 59
+		heresy_icon = 60
+		
+		ai_convert_other_group = 2 # always try to convert
+		ai_convert_same_group = 2 # always try to convert
+		
+		color = { 0.5 0.9 0.5 }
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_CYCLES
+		priest_title = DRYAD
+		can_call_crusade = yes
+
+		high_god_name = GOD_BRITANNIA
+
+		god_names = {
+			GOD_BRITANNIA GOD_SC_ANDRASTE GOD_ST_BOUDICCA GOD_ST_BRIGID
+		}
+		evil_god_names = {
+			EVIL_UNSEELIE
+		}
+		
+		unit_modifier = {	
+			#???
+		}
+		
+		unit_home_modifier = {
+			#???
+		}
+		
+		parent = celtic_pagan_reformed
+		priests_can_marry = yes
+		priests_can_inherit = no
+		female_temple_holders = yes
+		feminist = yes
+
+		investiture = yes
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = yes
+		can_have_antipopes = yes
+		attacking_same_religion_piety_loss = yes
+
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+
+		allow_in_ruler_designer = no
+
+		intermarry = celtic_pagan
+		intermarry = celtic_pagan_reformed
+	}
+
 	egyptian_pagan = { # Kemetic
 		graphical_culture = africangfx
-		
+		secondary_event_pictures = egyptian_pagan
+
 		pre_reformed = yes
 		
 		icon = 61

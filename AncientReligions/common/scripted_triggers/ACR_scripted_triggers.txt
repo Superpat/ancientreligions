@@ -3,6 +3,7 @@ is_feminist_religion_trigger = {
 	OR = {
 		religion = celtic_pagan_reformed
 		religion = celtic_pagan
+		religion = britannic_pagan
 		religion = promethean_pagan
 		religion = messalian
 		religion = cathar
@@ -77,6 +78,7 @@ is_ancient_religion_trigger = {
 	OR = {
 		religion = celtic_pagan
 		religion = celtic_pagan_reformed
+		religion = britannic_pagan
 		religion = hellenic_pagan
 		religion = promethean_pagan
 		religion = titan_pagan
@@ -157,6 +159,7 @@ has_character_was_religion_flag_trigger = {
 
 		has_character_flag = character_was_celtic_pagan
 		has_character_flag = character_was_celtic_pagan_reformed
+		has_character_flag = character_was_britanic_pagan
 		has_character_flag = character_was_hellenic_pagan
 		has_character_flag = character_was_promethean_pagan
 		has_character_flag = character_was_titan_pagan
@@ -172,6 +175,7 @@ religion_openly_in_celtic_subgroup_trigger = {
 			OR = {
 				religion = celtic_pagan
 				religion = celtic_pagan_reformed
+				religion = britannic_pagan
 			}
 		}
 	}
@@ -209,6 +213,7 @@ religion_secretly_in_celtic_subgroup_trigger = {
 			OR = {
 				secret_religion = celtic_pagan
 				secret_religion = celtic_pagan_reformed
+				secret_religion = britannic_pagan
 			}
 		}
 	}
@@ -246,6 +251,7 @@ true_religion_in_celtic_subgroup_trigger = {
 			OR = {
 				true_religion = celtic_pagan
 				true_religion = celtic_pagan_reformed
+				true_religion = britannic_pagan
 			}
 		}
 	}
@@ -335,13 +341,18 @@ has_land_in_celtic_regions_of_interest_trigger = {
 
 # province scope
 is_in_celtic_regions_of_interest_trigger = {
-	empire = {
-		OR = {
-			title = e_france
-			title = e_hre
-			title = e_spain
-			title = e_britannia
-			title = e_italy
+	OR = {
+		kingdom = {
+			title = k_sicily
+		}
+		empire = {
+			OR = {
+				title = e_france
+				title = e_hre
+				title = e_spain
+				title = e_britannia
+				title = e_italy
+			}
 		}
 	}
 }

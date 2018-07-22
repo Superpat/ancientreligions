@@ -504,8 +504,7 @@ succession_laws = {
 				is_patrician = no
 				OR = {
 					culture_group = celtic
-					religion = celtic_pagan
-					religion = celtic_pagan_reformed
+					religion_openly_in_celtic_subgroup_trigger = yes
 				}
 				OR = {
 					independent = yes
@@ -856,6 +855,7 @@ succession_laws = {
 				OR = {
 					religion = catholic
 					religion = fraticelli
+					religion = britannic_pagan
 				}
 				is_merchant_republic = no
 				OR = {
@@ -949,6 +949,7 @@ gender_laws = {
 						NOT = { religion_group = muslim }
 						NOT = { religion = aztec }
 						NOT = { religion = aztec_reformed }
+						NOT = { religion = britannic_pagan }
 						has_horde_culture = no
 						OR = {
 							AND = {
@@ -1013,11 +1014,12 @@ gender_laws = {
 			factor = 10
 		}
 	}
+
 	agnatic_succession = {
 		female_dynasty_opinion = -5
 	
 		potential = {
-			always = yes
+			NOT = { religion = britannic_pagan }
 		}
 		effect = {
 			gender_succ = agnatic
@@ -1033,7 +1035,7 @@ gender_laws = {
 					value = all
 				}
 			}
-			
+
 			modifier = {
 				factor = 100
 				holder_scope = {
@@ -1069,6 +1071,7 @@ gender_laws = {
 				}
 				holder_scope = {
 					OR = {
+						is_feminist_religion_trigger = yes
 						AND = {
 							NOT = { religion_group = muslim }
 							NOT = { religion = aztec }
@@ -1146,10 +1149,10 @@ gender_laws = {
 		female_dynasty_opinion = 10
 		
 		potential = {
-			always = no # For modders only
+			religion = britannic_pagan
 		}
 		allow = {
-			always=yes
+			always = yes
 		}
 		effect = {
 			gender_succ = enatic
@@ -1161,10 +1164,15 @@ gender_laws = {
 		female_dynasty_opinion = 5
 		
 		potential = {
-			always = no # For modders only
+			religion = britannic_pagan
 		}
 		allow = {
-			always=yes
+			NOT = { is_theocracy = yes }
+			always = yes
+		}
+		default = yes
+		default_selection = {
+			factor = 1
 		}
 		effect = {
 			gender_succ = enatic_cognatic

@@ -74,9 +74,9 @@ d_celtic_pagan_reformed = {
 	
 	capital = 64 # Gwynedd
 	
-	title = "ARCH_DRUID"
-	title_female = "ARCH_DRUIDESS"
-	foa = "ARCH_DRUID_FOA"
+	title = ARCH_DRUID
+	title_female = ARCH_DRUIDESS
+	foa = ARCH_DRUID_FOA
 	
 	short_name = yes
 	
@@ -101,6 +101,32 @@ d_celtic_pagan_reformed = {
 	dignity = 100
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+
+k_britannic = {
+	color = { 128 230 128 }
+	color2 = { 255 255 255 }
+
+	capital = 32 # Middlesex
+
+	title = ARCHDRYAD
+	foa = k_britannic_foa
+	
+	short_name = yes
+
+	allow = { # restored via decision
+		always = no
+	}
+
+	# Always exists
+	landless = yes
+	primary = yes
+
+	controls_religion = britannic_pagan
+	dignity = 100
+	religion = britannic_pagan
+
+	dynasty_title_names = no
 }
 
 d_egyptian_pagan = {
@@ -166,9 +192,8 @@ d_promethean_pagan = {
 	capital = 482 # Athens, location of Plato's Academy
 
 	allow = {
-		always = no
+		always = no # made via decision
 	}
-	creation_requires_capital = yes
 
 	title = SCHOLARCH
 	title_female = SCHOLARCH

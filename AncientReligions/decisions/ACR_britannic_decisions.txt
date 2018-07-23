@@ -1,0 +1,71 @@
+decisions = {
+	establish_arch_dryad = {
+		only_playable = yes
+		is_high_prio = yes
+
+		potential = {
+			religion = britannic_pagan
+			religion_authority = 0.25
+			higher_tier_than = COUNT
+			NOT = { has_global_flag = acr_arch_dryad_created }
+		}
+
+		allow = {
+			completely_controls = c_middlesex
+			piety = 500
+			prestige = 300
+			wealth = 300
+			higher_tier_than = DUKE
+		}
+
+		effect = {
+			piety = -500
+			prestige = -300
+			wealth = -300
+
+			set_global_flag = acr_arch_dryad_created
+
+			hidden_tooltip = {
+				create_random_priest = {
+					female = yes
+					age = 32
+					trait = dryad
+					trait = zealous
+					culture = ROOT
+					religion = britannic_pagan
+				}
+				new_character = {
+					activate_title = { title = k_britannic_pagan status = yes }
+					k_britannic_pagan = {
+						grant_title = PREV
+					}
+					c_middlesex = {
+						location = {
+							random_province_holding = {
+								limit = { holding_type = temple }
+
+								grant_title = PREVPREVPREV
+							}
+						}
+					}
+				}
+
+				character_event = { id = britannic.0 days = 0 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0
+				NOR = {
+					wealth = 500
+					piety = 700
+					prestige = 500
+				}
+
+			}
+		}
+	}
+}

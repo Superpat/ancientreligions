@@ -752,6 +752,7 @@ succession_laws = {
 		potential = {
 			OR = { 
 				title = k_papal_state
+				title = k_britannic_pagan
 				title = d_celtic_pagan_reformed
 			}
 		}
@@ -782,7 +783,11 @@ succession_laws = {
 	
 	succ_open_elective = {
 		potential = {
-			NOT = { title = k_papal_state }
+			NOR = { 
+				title = k_papal_state
+				title = d_celtic_pagan_reformed
+				title = k_britannic_pagan
+			}
 			temporary = no
 			OR = {
 				is_primary_type_title = yes

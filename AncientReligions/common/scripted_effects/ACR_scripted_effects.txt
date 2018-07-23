@@ -426,6 +426,10 @@ set_flag_for_holy_order_modifiers_effect = {
 		limit = { has_character_modifier = borrowed_from_d_men_of_steel }
 		set_character_flag = borrowed_from_d_men_of_steel
 	}
+	if = {
+		limit = { has_character_modifier = borrowed_from_d_saint_boudicca }
+		set_character_flag = borrowed_from_d_saint_boudicca
+	}
 
 	# Expelled from the Realm
 	if = {
@@ -463,6 +467,10 @@ set_flag_for_holy_order_modifiers_effect = {
 	if = {
 		limit = { has_character_modifier = expelled_d_men_of_steel }
 		set_character_flag = expelled_d_men_of_steel
+	}
+	if = {
+		limit = { has_character_modifier = expelled_d_saint_boudicca }
+		set_character_flag = expelled_d_saint_boudicca
 	}
 }
 
@@ -570,6 +578,17 @@ set_character_modifier_for_holy_order_flags_effect = {
 			inherit = yes
 		}
 	}
+	if = {
+		limit = {
+			NOT = { has_character_modifier = borrowed_from_d_saint_boudicca }
+			has_character_flag = borrowed_from_d_saint_boudicca
+		}
+		add_character_modifier = { 
+			name = borrowed_from_d_saint_boudicca
+			duration = -1
+			inherit = yes
+		}
+	}
 
 	# Expelled from the Realm
 	if = {
@@ -671,6 +690,17 @@ set_character_modifier_for_holy_order_flags_effect = {
 			inherit = yes
 		}
 	}
+	if = {
+		limit = {
+			NOT = { has_character_modifier = expelled_d_saint_boudicca }
+			has_character_flag = expelled_d_saint_boudicca
+		}
+		add_character_modifier = { 
+			name = expelled_d_saint_boudicca
+			duration = -1
+			inherit = yes
+		}
+	}	
 }
 
 # requires event_target:holy_order to be defined
@@ -690,6 +720,7 @@ clear_borrowed_from_holy_order_modifier_effect = {
 				d_sickles = { PREVPREV = { remove_character_modifier = borrowed_from_d_sickles } }
 				d_burning_blades = { PREVPREV = { remove_character_modifier = borrowed_from_d_burning_blades } }
 				d_men_of_steel = { PREVPREV = { remove_character_modifier = borrowed_from_d_men_of_steel } }
+				d_saint_boudicca = { PREVPREV = { remove_character_modifier = borrowed_from_d_saint_boudicca }}
 			}
 		}
 	}
@@ -712,6 +743,7 @@ clear_expelled_holy_order_modifier_effect = {
 				d_sickles = { PREVPREV = { remove_character_modifier = expelled_d_sickles } }
 				d_burning_blades = { PREVPREV = { remove_character_modifier = expelled_d_burning_blades } }
 				d_men_of_steel = { PREVPREV = { remove_character_modifier = expelled_d_men_of_steel } }
+				d_saint_boudicca = { PREVPREV = { remove_character_modifier = expelled_d_saint_boudicca }}
 			}
 		}
 	}

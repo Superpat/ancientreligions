@@ -71,6 +71,21 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	
+	spriteType = {
+		name = "GFX_trait_dryad"
+		texturefile = "gfx\\traits\ACR\druid.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_bad_dryad"
+		texturefile = "gfx\\traits\ACR\bad_priest_druid.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
 	# Event Pictures
 	spriteType = {
 		name = "GFX_evt_headhunter"

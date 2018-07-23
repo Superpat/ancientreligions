@@ -176,10 +176,12 @@ on_assassination_disc = {
 }
 
 # character
+# baby is root
 on_birth = {
 	events = {
 		celtic.215 # Child Perceived to be a Changeling
 		epicblood.4 # Child is recognized as the blood of a reborn hero
+		britannic.1 # a dryad has given birth
 	}
 	random_events = {
 		1 = celtic.270 # child is reincarnation?

@@ -168,6 +168,13 @@ has_character_was_religion_flag_trigger = {
 	}
 }
 
+religion_openly_celtic_or_reformed_trigger = {
+	OR = {
+		religion = celtic_pagan
+		religion = celtic_pagan_reformed
+	}
+}
+
 religion_openly_in_celtic_subgroup_trigger = {
 	custom_tooltip = {
 		text = religion_openly_celtic_or_reformed_tooltip
@@ -434,6 +441,7 @@ is_castle_building_holy_order_trigger = {
 		title = d_sickles
 		title = d_burning_blades
 		title = d_men_of_steel
+		title = d_saint_boudicca
 	}
 		
 	holder_scope = {
@@ -460,6 +468,7 @@ is_banking_holy_order_trigger = {
 		title = d_sickles
 		title = d_burning_blades
 		title = d_men_of_steel
+		title = d_saint_boudicca
 	}
 }
 

@@ -1,0 +1,643 @@
+##################################################################
+# 
+# ANCIENT RELIGIONS
+# - Britannic Events
+#
+##################################################################
+
+namespace = britannic
+
+# Arch-Dryad is created
+character_event = {
+	id = britanic.0
+	desc = britannic.0.desc
+	#picture = GFX
+	border = GFX_event_normal_frame_religion
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = britannic.0.a
+		trigger = {
+			religion = britannic_pagan
+		}
+	}
+
+	option = {
+		name = britannic.0.b
+		trigger = {
+			true_religion_in_celtic_subgroup_trigger = yes
+			NOT = { religion = britannic_pagan }
+		}
+	}
+
+	option = {
+		name = britannic.0.c
+		trigger = {
+			true_religion_in_celtic_subgroup_trigger = no
+		}
+	}
+}
+
+# A dryad gives birth
+character_event = {
+	id = britannic.1
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		mother_even_if_dead = {
+			religion = britannic_pagan
+			OR = {
+				trait = dryad
+				trait = bad_dryad
+			}
+		}
+	}
+
+	immediate = {
+		mother = {
+			if = {
+				limit = { is_alive = yes }
+				FROM = {
+					piety = 100
+					prestige = 20
+				}
+				character_event = { id = britannic.2 days = 0 }
+			}
+		}
+	}
+}
+
+# bounce off mom
+character_event = {
+	id = britannic.2
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		liege = {
+			if = {
+				limit = {
+					religion = britannic_pagan
+					NOT = {
+						FROM = {
+							father = {
+								character = PREVPREV
+							}
+						}
+					}
+				}
+				character_event = { id = britannic.3 days = 0 }
+			}
+			any_realm_character = {
+				limit = {
+					religion = britannic_pagan
+					NOT = {
+						FROM = {
+							father = {
+								character = PREVPREV
+							}
+						}
+					}
+				}
+				character_event = { id = britannic.3 days = 0 }
+			}
+		}
+		FROM = {
+			father = {
+				character_event = { id = britannic.3 days = 0 }
+			}
+		}
+	}
+}
+
+# let the (sub)realm know
+character_event = {
+	id = britannic.3
+	desc = britannic.3.desc
+	#picture = GFX
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+
+	option = {
+		name = britannic.3.a
+		trigger = {
+			NOT = { 
+				FROMFROM = {
+					father = {
+						character = ROOT
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = britannic.3.a
+		trigger = {
+			FROMFROM = {
+				father = {
+					character = ROOT
+				}
+			}
+		}
+
+		piety = 50
+	}
+}
+
+# dryad gets dryad trait
+character_event = {
+	id = britannic.4
+	hide_window = yes
+
+	religion = britannic_pagan
+	only_women = yes
+
+	trigger = {
+		is_theocracy = yes
+		NOT = { trait = dryad }
+	}
+
+	immediate = {
+		add_trait = dryad
+	}
+}
+
+# Britannic becoming a wicked Dryad
+character_event = {
+	id = britannic.5
+	desc = britannic.5.desc
+	picture = GFX_evt_scandal
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+
+	min_age = 16
+	only_capable = yes
+	prisoner = no	
+	religion = britannic_pagan
+	
+	trigger = {
+		trait = dryad
+		NOR = {
+			intrigue = 3
+			diplomacy = 3
+			trait = bad_dryad
+		}
+		has_dlc = "Sons of Abraham"
+		OR = {
+			trait = cynical
+			trait = lustful
+			trait = chaste
+			trait = gluttonous
+			trait = greedy
+			trait = slothful
+			trait = envious
+			trait = wroth
+			trait = proud
+			trait = lunatic
+			trait = possessed
+			trait = hedonist
+		}
+	}
+
+	option = {
+		name = britannic.5.a
+		add_trait = bad_dryad
+		if = {
+			limit = {
+				is_ruler = yes
+				has_nickname = no
+				NOT = { trait = possessed }
+				NOT = { trait = lunatic }
+			}
+			give_nickname = nick_the_wicked
+		}
+		if = {
+			limit = {
+				is_ruler = yes
+				has_nickname = no
+				trait = possessed
+			}
+			give_nickname = nick_the_bewitched
+		}
+		if = {
+			limit = {
+				is_ruler = yes
+				has_nickname = no
+				trait = lunatic
+			}
+			give_nickname = nick_the_mad
+		}
+	}
+}
+
+##################################################################
+# 
+# Britannic
+# - Knights of Saint Boudicca
+#
+##################################################################
+
+character_event = {
+	id = britannic.10
+	title = britannic.10.title
+	desc = britannic.10.desc
+	#picture = GFX
+	border = GFX_event_normal_frame_war
+
+	major = yes
+	hide_from = yes
+	
+	only_rulers = yes
+	religion = catholic
+	only_men = yes
+	
+	trigger = {
+		NOT = {
+			is_title_active = d_saint_boudicca
+		}
+		is_title_active = k_britannic_pagan
+
+		controls_religion = yes # Let it happen for the Pope - he's always around
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	immediate = {
+		k_britannic_pagan = {
+			holder_scope = {
+				save_event_target_as = archdryad
+			}
+		}
+		activate_title = { title = d_saint_boudicca status = yes }
+		create_character = {
+			random_traits = no
+			dynasty = random
+			religion = britannic_pagan
+			culture = archdryad
+			female = yes
+			age = 28
+			trait = brilliant_strategist
+			trait = zealous
+			trait = humble
+			trait = ambitious
+			trait = strategist
+			trait = holy_warrior
+		}
+		new_character = {
+			wealth = 500
+			save_event_target_as = boudicca_leader
+			d_zun_warriors = {
+				grant_title = PREV
+			}
+			set_government_type = feudal_government
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = britannic_pagan
+				culture = boudicca_leader
+				female = yes
+				age = 16
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = britannic_pagan
+				culture = boudicca_leader
+				female = yes
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = britannic_pagan
+				culture = boudicca_leader
+				female = yes
+				age = 18
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = britannic_pagan
+				culture = boudicca_leader
+				female = yes
+				age = 20
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = britannic_pagan
+				culture = irsh
+				female = yes
+				age = 25
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = britannic_pagan
+				culture = boudicca_leader
+				female = yes
+				age = 26
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = britannic_pagan
+				culture = boudicca_leader
+				female = yes
+				age = 28
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = britannic_pagan
+				culture = welsh
+				female = no
+				age = 16
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = britannic_pagan
+				culture = boudicca_leader
+				female = no
+				age = 17
+			}
+		}
+	}
+	
+	option = {
+		name = britannic.10.a
+		trigger = {
+			religion = britannic_pagan
+		}
+	}
+	option = {
+		name = britannic.10.b
+		trigger = {
+			is_feminist_religion_trigger = no
+			NOT = { religion = britannic_pagan }
+		}
+	}
+	option = {
+		name = britannic.10.c
+		trigger = {
+			is_feminist_religion_trigger = yes
+			NOT = {	religion = britannic_pagan }
+		}
+	}
+}
+
+##################################################################
+# 
+# Britannic
+# - Arch-Dryad Interferes
+#
+##################################################################
+
+# arch-dryad wants you to have a dryad on your council
+character_event = {
+	id = britannic.20
+	hide_window = yes
+
+	religion = britannic_pagan
+
+	trigger = {
+		is_ruler = yes
+		is_theocracy = no
+
+		NOR = { # she's cool so long as you have at least one dryad on your council
+			any_voter = {
+				trait = dryad
+			}
+			had_character_flag = { flag = archdryad_noninterference days = 1825 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 1.5
+			trait = zealous
+		}
+		modifier = {
+			factor = 1.5
+			has_education_learning_trigger = yes
+		}
+		modifier = {
+			factor = 1.2
+			piety = 500
+		}
+		modifier = {
+			factor = 1.5
+			piety = 1000
+		}
+	}
+
+	immediate = {
+		k_britannic_pagan = {
+			character_event = { id = britannic.21 days = 0 }
+		}
+	}
+}
+
+character_event = {
+	id = britannic.21
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		create_random_priest = {
+			female = yes
+			age = 25
+			random_traits = yes
+		}
+		new_character = {
+			add_trait = dryad
+			add_trait = zealous
+
+			save_event_target_as = new_dryad
+		}
+
+		FROM = {
+			if = {
+				limit = { 
+					any_voter = {
+						trait = bad_dryad
+					}
+				}
+
+				random_voter = {
+					limit = {
+						trait = bad_dryad
+					}
+
+					save_event_target_as = old_councilor
+				}
+			} else_if = {
+				limit = {
+					any_voter = {
+						trait = cynical
+					}
+				}
+
+				random_voter = {
+					limit = {
+						trait = cynical
+					}
+					save_event_target_as = old_councilor
+				}
+			} else_if = {
+				random_voter = {
+					save_event_target_as = old_councilor
+				}
+			}
+
+			character_event = { id = britannic.22 days = 0 }
+		}
+	}
+}
+
+character_event = {
+	id = britannic.22
+	desc = {
+		text = britannic.22.desc.bad_dryad
+		trigger = {
+			event_target:old_councilor = {
+				trait = bad_dryad
+			}
+		}
+	}
+	desc = {
+		text = britannic.22.desc.cynic
+		trigger = {
+			event_target:old_councilor = {
+				trait = cynic
+				NOT = { trait = bad_dryad }
+			}
+		}
+	}
+	desc = {
+		text = britannic.22.desc.other
+		trigger = {
+			event_target:old_councilor = {
+				NOR = {
+					trait = bad_dryad
+					trait = cynic
+				}
+			}
+		}
+	}
+	#picture = GFX
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+
+	option = { # Acquiesce to her request
+		piety = 100
+		prestige = -50
+		reverse_opinion = { who = FROM modifier = ancrel_pleased }
+		reverse_opinion = { who = event_target:old_councilor modifier = ancrel_dissapointed }
+
+		#figure out which job to give to new_dryad
+		if = {
+			limit = {
+				job_spiritual = {
+					character = event_target:old_councilor
+				}
+			}
+
+			event_target:new_dryad = {
+				give_job_title = job_spiritual
+			}
+		}
+		if = {
+			limit = {
+				job_spymaster = {
+					character = event_target:old_councilor
+				}
+			}
+
+			event_target:new_dryad = {
+				give_job_title = job_spymaster
+			}
+		}
+		if = {
+			limit = {
+				job_treasurer = {
+					character = event_target:old_councilor
+				}
+			}
+
+			event_target:new_dryad = {
+				give_job_title = job_treasurer
+			}
+		}
+		if = {
+			limit = {
+				job_marshal = {
+					character = event_target:old_councilor
+				}
+			}
+
+			event_target:new_dryad = {
+				give_job_title = job_marshal
+			}
+		}
+		if = {
+			limit = {
+				job_chancellor = {
+					character = event_target:old_councilor
+				}
+			}
+
+			event_target:new_dryad = {
+				give_job_title = job_chancellor
+			}
+		}
+		if = {
+			limit = {
+				event_target:old_councilor = {
+					has_minor_title = title_councilmember_king
+				}
+			}
+
+			event_target:new_dryad = {
+				give_minor_title = title_councilmember_king
+			}
+		}
+		if = {
+			limit = {
+				event_target:old_councilor = {
+					has_minor_title = title_councilmember_emperor
+				}
+			}
+
+			event_target:new_dryad = {
+				give_minor_title = title_councilmember_emperor
+			}
+		}
+	}
+
+	option = { # be disinclined
+		name = britannic.22.b
+		piety = -100
+		prestige = 50
+
+		reverse_opinion = { who = FROM modifier = ancrel_dissapointed }
+		reverse_opinion = { who = event_target:old_councilor modifier = ancrel_pleased }
+	}
+}
+
+#

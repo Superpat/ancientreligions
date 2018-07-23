@@ -72,6 +72,15 @@ borrowed_from_d_fianna = {
 	church_opinion = -10
 }
 
+expelled_d_saint_boudicca = {
+	icon = 35
+}
+
+borrowed_from_d_saint_boudicca = {
+	icon = 24
+	church_opinion = -10
+}
+
 #####################################################################
 # Conversion Modifiers
 #####################################################################

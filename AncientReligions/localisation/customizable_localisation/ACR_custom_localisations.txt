@@ -103,7 +103,7 @@ defined_text = {
 	}
 
 	text = {
-		trigger = { religion_openly_in_celtic_subgroup_trigger = yes }
+		trigger = { religion_openly_celtic_or_reformed_trigger = yes }
 		localisation_key = ARCH_DRUID
 	}
 }

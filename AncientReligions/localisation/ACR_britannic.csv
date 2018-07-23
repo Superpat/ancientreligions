@@ -1,14 +1,48 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 britannic_pagan;Brittanic;;;;;;;;;;;;;x
-britannic_pagan_desc;The Brittanic religion is an offshoot of Druidic belief focused on the goddess Britannia, the personification of the island of Great Britain. She is viewed as a mother goddess and is worshipped to the exclusion of all other gods from Celtic tradition. The priesthood is entirely composed of women known as Dryads, with the Arch-Dryad as the supreme spiritual authority. Brittanics also venerate a host of saints, many of whom are recognized as gods amongst the Druids.;;;;;;;;;;;;;x
+britannic_pagan_desc;The Brittanic religion is a monotheistic offshoot of Druidic belief focused on the goddess Britannia, the personification of the British Isles. She is viewed as a mother goddess and is worshipped to the exclusion of all other gods from Celtic tradition. The priesthood is entirely composed of women known as Dryads, with the Arch-Dryad as the supreme spiritual authority. Brittanics also venerate a host of saints and Sanctaidd, divine servants of the Holy Mother that are much like angels in Abrahamic tradition. Most of the Sanctaidd are considered gods amongst the Druids.;;;;;;;;;;;;;x
 GOD_BRITANNIA;Britannia;;;;;;;;;;;;;x
-GOD_ST_BOUDICCA;St. Boudicca;;;;;;;;;;;;;x
+GOD_HOLY_MOTHER;The Holy Mother;;;;;;;;;;;;;x
+GOD_ST_BOUDICCA;Saint Boudicca;;;;;;;;;;;;;x
 GOD_SC_ANDRASTE;Sanctaidd Andraste;;;;;;;;;;;;;x
-GOD_ST_BRIGID;St. Brigid;;;;;;;;;;;;;x
-dryad;Dryad;;;;;;;;;;;;;x
-dryad_desc;This character is a dryad, a Britannic priestess.;;;;;;;;;;;;;x
+GOD_ST_BRIGID;Saint Brigid;;;;;;;;;;;;;x
+EVIL_UNSEELIE;the Unseelie Court;;;;;;;;;;;;;x
+# titles ;;;;;;;;;;;;;;x
 k_britannic;Church of Britannia;;;;;;;;;;;;;x
 k_britannic_adj;Britannic;;;;;;;;;;;;;x
 k_britannic_foa;Your Holiness;;;;;;;;;;;;;x
+d_saint_boudicca;Knights of Saint Boudicca;;;;;;;;;;;;;x
+d_saint_boudicca_adj;Saint Boudicca;;;;;;;;;;;;;x
+# minor titles ;;;;;;;;;;;;;;x
+title_dryad_circle_member;Dryad of the Circle;;;;;;;;;;;;;x
+title_dryad_circle_member_desc;The Circle of Dryads is the highest governing body in the Church of Britannia. It's sole duty is to elect the next Arch-Dryad.;;;;;;;;;;;;;x
+job_spiritual_britannic_pagan;Seer;;;;;;;;;;;;;x
+city_job_spiritual_britannic_pagan;Seer;;;;;;;;;;;;;x
+tribal_job_spiritual_britannic_pagan;Seer;;;;;;;;;;;;;x
+nomad_job_spiritual_britannic_pagan;Seer;;;;;;;;;;;;;x
+# regular titles ;;;;;;;;;;;;;;x
+temple_baron_female_britannic_pagan;Dryad;;;;;;;;;;;;;x
+temple_barony_britannic_pagan;Sacred Grove;Bosquet sacré;;;;;;;;;;;;x
+temple_barony_of_britannic_pagan;Sacred Grove of;Bosquet sacré de;;;;;;;;;;;;x
+temple_count_female_britannic_pagan;Dryad;;;;;;;;;;;;;x
+temple_county_britannic_pagan;Temple;Temple;;;;;;;;;;;;x
+temple_county_of_britannic_pagan;Temple of;Temple de;;;;;;;;;;;;x
+temple_duke_female_britannic_pagan;Dryad Superior;Dryada Supérieur;;;;;;;;;;;;x
+temple_duchy_britannic_pagan;Tribe;Tribu;;;;;;;;;;;;x
+temple_duchy_of_britannic_pagan;Tribe of;Tribu de;Stamm der;;Tribu de;;;;;;;;;x
+temple_king_female_britannic_pagan;High Mother;;;;;;;;;;;;;x
+temple_kingdom_britannic_pagan;Federation;Fédération;;;;;;;;;;;;x
+temple_kingdom_of_britannic_pagan;Federation of;Fédération de;;;;;;;;;;;;x
+temple_emperor_female_britannic_pagan;Great Mother;;;;;;;;;;;;;x
+temple_empire_britannic_pagan;Nation;Peuple;;;;;;;;;;;;x
+temple_empire_of_britannic_pagan;Nation of;Peuple de;;;;;;;;;;;;x
+# traits ;;;;;;;;;;;;;;x
+dryad;Dryad;;;;;;;;;;;;;x
+dryad_desc;This character is a dryad, a Britannic priestess.;;;;;;;;;;;;;x
+bad_dryad;Wicked Dryad;;;;;;;;;;;;;x
+bad_dryad_desc;This Dryad has conducted herself in ways unbecoming of her station.;;;;;;;;;;;;;x
 morrigan;Morrigan;;;;;;;;;;;;;x
 morrigan_desc;This character is a Morrigan, a veteran of a Britannic Great Holy War.;;;;;;;;;;;;;x
+# decisions ;;;;;;;;;;;;;;x
+establish_arch_dryad;Establish the Arch-Dryad;;;;;;;;;;;;;x
+establish_arch_dryad_desc;Setup an Arch-Dryad as the head of Britannic religion.;;;;;;;;;;;;;x

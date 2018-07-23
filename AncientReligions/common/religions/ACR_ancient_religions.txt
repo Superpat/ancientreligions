@@ -241,6 +241,7 @@ pagan_group = {
 		allow_in_ruler_designer = no
 
 		intermarry = celtic_pagan
+		intermarry = britannic_pagan
 	}
 	
 	celtic_pagan = {
@@ -309,7 +310,8 @@ pagan_group = {
 		religious_clothing_priest = 3
 
 		intermarry = celtic_pagan_reformed
-		can_demand_religious_conversion = no
+		intermarry = britannic_pagan
+		#can_demand_religious_conversion = no
 	}
 	
 	britannic_pagan = {
@@ -330,21 +332,23 @@ pagan_group = {
 		high_god_name = GOD_BRITANNIA
 
 		god_names = {
-			GOD_BRITANNIA GOD_SC_ANDRASTE GOD_ST_BOUDICCA GOD_ST_BRIGID
+			GOD_BRITANNIA GOD_HOLY_MOTHER GOD_SC_ANDRASTE GOD_ST_BOUDICCA GOD_ST_BRIGID
 		}
 		evil_god_names = {
 			EVIL_UNSEELIE
 		}
 		
-		unit_modifier = {	
+		#unit_modifier = {	
 			#???
-		}
+		#}
 		
-		unit_home_modifier = {
+		#unit_home_modifier = {
 			#???
-		}
+		#}
 		
 		parent = celtic_pagan_reformed
+		pre_reformed = yes
+
 		priests_can_marry = yes
 		priests_can_inherit = no
 		female_temple_holders = yes

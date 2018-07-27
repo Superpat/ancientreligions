@@ -748,3 +748,15 @@ clear_expelled_holy_order_modifier_effect = {
 		}
 	}
 }
+
+lower_temple_tax_obligation_effect = {
+	
+}
+
+lower_temple_levy_obligation_effect = {
+	
+}
+
+move_temple_obligations_toward_balanced_effect = {
+	
+}

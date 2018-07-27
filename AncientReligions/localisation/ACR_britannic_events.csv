@@ -18,4 +18,4 @@ britannic.22.desc.cynic;A Dryad has arrived in your court bearing a message from
 britannic.22.desc.other;A Dryad has arrived in your court bearing a message from [From.GetTitledFirstName] herself.\n"It has come to my attention that you lack the wisdom of a trained Dryad on your council. I have sent [new_dryad.GetFirstName] to serve this role. Heed her advice, good [Root.GetTitle]."\n What do you do?;;;;;;;;;;;;;x
 britannic.22.a;As the Arch-Dryad commands;;;;;;;;;;;;;x
 britannic.22.b;I alone choose my small-council!;;;;;;;;;;;;;x
-
+britannic.22.b.tt;[new_dryad.GetFirstName] returns to [From.GetTitledFirstName]'s court with your answer.;;;;;;;;;;;;;x

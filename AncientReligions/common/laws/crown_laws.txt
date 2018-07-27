@@ -457,7 +457,7 @@ de_jure_laws = {
 		allow = {
 			OR = {
 				year = 1000
-				religion = britannic_pagan
+				holder_scope = { religion = britannic_pagan }
 			}
 		}
 		revoke_allowed = {
@@ -493,8 +493,8 @@ de_jure_laws = {
 				}
 				is_tribal = no
 				is_nomadic = no
+				NOT = { religion = britannic_pagan }
 			}
-			NOT = { religion = britannic_pagan }
 		}
 		revoke_allowed = {
 			always = no

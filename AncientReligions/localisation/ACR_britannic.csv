@@ -46,3 +46,5 @@ morrigan_desc;This character is a Morrigan, a veteran of a Britannic Great Holy 
 # decisions ;;;;;;;;;;;;;;x
 establish_arch_dryad;Establish the Arch-Dryad;;;;;;;;;;;;;x
 establish_arch_dryad_desc;Setup an Arch-Dryad as the head of Britannic religion.;;;;;;;;;;;;;x
+# decisions ;;;;;;;;;;;;;;x
+nick_flowing_mane;of the Flowing Mane;;;;;;;;;;;;;x

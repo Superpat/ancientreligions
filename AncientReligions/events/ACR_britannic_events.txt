@@ -238,10 +238,63 @@ character_event = {
 	}
 }
 
+# Arch-Dryad is Wicked!
+character_event = {
+	id = britannic.6
+	hide_window = yes
+
+	min_age = 16
+	only_capable = yes
+	prisoner = no
+	religion = britannic_pagan
+
+	trigger = {
+		controls_religion = yes
+		trait = bad_dryad
+		has_dlc = "Sons of Abraham"
+		NOT = { has_character_modifier = bad_rel_head }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		add_character_modifier = {
+			name = bad_rel_head
+			duration = -1
+			hidden = yes
+		}
+		any_player = {
+			limit = {
+				religion_head = {
+					character = ROOT
+				}
+			}
+			character_event = { id = SoA.5312 days = 8 random = 7 }         # Notify players
+		}
+	}
+}
+
+# players notified of Wicked Arch-Dryad
+character_event = {
+	id = britannic.7
+	desc = britannic.7.desc
+	picture = GFX_evt_pope_feast
+	border = GFX_evt_normal_frame_religion
+
+	is_triggered_only = yes
+
+	option = {
+		name = britannic.7.a
+	}
+}
+
 ##################################################################
 # 
 # Britannic
 # - Knights of Saint Boudicca
+#   britannic.10 - 19 reserved
 #
 ##################################################################
 
@@ -296,7 +349,7 @@ character_event = {
 		new_character = {
 			wealth = 500
 			save_event_target_as = boudicca_leader
-			d_zun_warriors = {
+			d_saint_boudicca = {
 				grant_title = PREV
 			}
 			set_government_type = feudal_government
@@ -401,6 +454,7 @@ character_event = {
 # 
 # Britannic
 # - Arch-Dryad Interferes
+#   britannic.20 - 49 reserved
 #
 ##################################################################
 
@@ -414,11 +468,14 @@ character_event = {
 	trigger = {
 		is_ruler = yes
 		is_theocracy = no
-
+		has_global_flag = acr_arch_dryad_created
 		NOR = { # she's cool so long as you have at least one dryad on your council
 			any_voter = {
 				trait = dryad
 			}
+		}
+		OR = {
+			NOT = { has_character_flag = archdryad_noninterference }
 			had_character_flag = { flag = archdryad_noninterference days = 1825 }
 		}
 	}
@@ -442,6 +499,11 @@ character_event = {
 			factor = 1.5
 			piety = 1000
 		}
+		modifier = { # if you've given in to her demands in the last five years, she's way less likely to bug you
+			factor = 10
+			has_character_flag = acr_submit_to_arch_dryad
+			NOT = { had_character_flag = { flag = acr_submit_to_arch_dryad days = 1825 } }
+		}
 	}
 
 	immediate = {
@@ -461,6 +523,8 @@ character_event = {
 		create_random_priest = {
 			female = yes
 			age = 25
+			culture = FROM
+			religion = britannic_pagan
 			random_traits = yes
 		}
 		new_character = {
@@ -545,10 +609,17 @@ character_event = {
 	is_triggered_only = yes
 
 	option = { # Acquiesce to her request
+		clr_character_flag = acr_submit_to_arch_dryad
+		set_character_flag = acr_submit_to_arch_dryad
+
 		piety = 100
 		prestige = -50
 		reverse_opinion = { who = FROM modifier = ancrel_pleased }
 		reverse_opinion = { who = event_target:old_councilor modifier = ancrel_dissapointed }
+
+		event_target:new_dryad = {
+			move_character = ROOT
+		}
 
 		#figure out which job to give to new_dryad
 		if = {
@@ -628,6 +699,10 @@ character_event = {
 				give_minor_title = title_councilmember_emperor
 			}
 		}
+
+		ai_chance = {
+			factor = 90
+		}
 	}
 
 	option = { # be disinclined
@@ -637,7 +712,979 @@ character_event = {
 
 		reverse_opinion = { who = FROM modifier = ancrel_dissapointed }
 		reverse_opinion = { who = event_target:old_councilor modifier = ancrel_pleased }
+
+		custom_tooltip = { # new_dryad returns to archdryad with your answer
+			text = britannic.22.b.tt
+		}
+
+		ai_chance = {
+			factor = 10
+		}
+	}
+
+	option = { # ah, but you see <diplomacy diplomacy>
+		name = britannic.22.c
+		tooltip_info = diplomacy
+
+		trigger = { diplomacy > 12 }
+	}
+
+	option = { # cite scripture to get out of it
+		name = britannic.22.d
+		tooltip_info = learning
+
+		trigger = { learning > 12 }
 	}
 }
 
+# arch-dryad wants your laws to favor priests
+character_event = {
+	id = britannic.23
+	hide_window = yes
+
+	religion = britannic_pagan
+
+	trigger = {
+		is_ruler = yes
+		is_theocracy = no
+		OR = {
+			tier = COUNT
+			is_patrician = yes
+		}
+		# doesn't have laws churches like
+		NOR = {
+			AND = {
+				has_law = tax_levy_law_theocracy_4
+				has_dlc = "Zeus"
+			}
+			AND = {
+				OR = {
+					has_law = temple_contract_0
+					has_law = temple_tax_0
+				}
+				NOT = { has_dlc = "Zeus" }
+			}
+		}
+	}
+
+	immediate = {
+		k_britannic_pagan = {
+			character_event = { id = britannic.24 days = 0 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 1.5
+			trait = zealous
+		}
+		modifier = {
+			factor = 1.5
+			has_education_learning_trigger = yes
+		}
+		modifier = {
+			factor = 1.2
+			piety = 500
+		}
+		modifier = {
+			factor = 1.5
+			piety = 1000
+		}
+		modifier = { # if you've given in to her demands in the last five years, she's way less likely to bug you
+			factor = 10
+			has_character_flag = acr_submit_to_arch_dryad
+			NOT = { had_character_flag = { flag = acr_submit_to_arch_dryad days = 1825 } }
+		}
+	}
+}
+
+character_event = {
+	id = britannic.24
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_dlc = "Zeus" }
+			}
+			random_list = {
+				10 = {
+					modifier = {
+						factor = 0
+						has_law = temple_contract_0
+					}
+
+					FROM = { set_character_flag = acr_reduce_contract_law }
+				}
+				10 = {
+					modifier = {
+						factor = 0
+						has_law = temple_tax_0
+					}
+
+					FROM = { set_character_flag = acr_reduce_tax_law }
+				}
+			}
+		}
+
+		FROM = { character_event = { id = britannic.25 days = 0 } }
+	}
+}
+
+character_event = {
+	id = britannic.25
+	desc = {
+		text = britannic.25.desc.zeus
+		trigger = { 
+			has_dlc = "Zeus"
+		}
+	}
+	desc = {
+		text = britannic.25.desc.vanilla
+		trigger = {
+			NOT = { has_dlc = "Zeus" }
+		}
+	}
+	#picture = GFX
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+
+	option = {
+		name = britannic.25.a
+		if = {
+			limit = {
+				has_character_flag = acr_reduce_contract_law
+			}
+			lower_temple_levy_obligation_effect = yes
+		} else_if = {
+			limit = {
+				has_character_flag = acr_reduce_tax_law
+			}
+			lower_temple_tax_obligation_effect = yes
+		} else = {
+			move_temple_obligations_toward_balanced_effect = yes
+		}
+
+		reverse_opinion = { who = FROM modifier = ancrel_pleased }
+		clr_character_flag = acr_submit_to_arch_dryad
+		set_character_flag = acr_submit_to_arch_dryad
+	}
+
+	option = {
+		name = britannic.25.b
+
+		reverse_opinion = { who = FROM modifier = ancrel_dissapointed }
+	}
+
+	option = {
+		name = britannic.25.c
+		tooltip_info = diplomacy
+
+		trigger = {
+			diplomacy > 12
+		}
+	}
+
+	option = {
+		name = britannic.25.d
+		tooltip_info = learning
+
+		trigger = {
+			learning > 12
+		}
+	}
+}
+
+##################################################################
+# 
+# Britannic
+# - Arch-Dryad Grants Boons
+#   britannic.50 - 99 reserved
 #
+##################################################################
+
+# The Arch-Dryad gives money to someone fighting infidels
+character_event = {
+	id = britannic.50
+	desc = britannic.50.desc
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_religion
+	
+	min_age = 16
+	only_playable = yes
+	war = no
+	
+	trigger = {
+		controls_religion = yes	
+		religion = britannic_pagan
+
+		wealth = 500
+		# don't have the archdryad bombard the player
+		NOT = { had_character_flag = { flag = soldier_from_the_archdryad days = 365 } }
+		any_playable_ruler = {
+			religion = ROOT
+			NOT = { wealth = 500 }
+			religion_head = {
+				character = ROOT
+			}
+			NOT = { excommunicated_for = ROOT }
+			any_current_enemy = {
+				NOT = { religion = PREV }
+			}
+			NOT = { war_with = ROOT }
+			reverse_opinion = { who = ROOT value = 0 }
+			OR = {
+				NOT = { has_character_flag = money_from_the_archdryad }
+				OR = {
+					had_character_flag = { flag = money_from_the_archdryad days = 730 }
+					AND = {
+						ai = yes
+						had_character_flag = { flag = money_from_the_archdryad days = 365 }
+						any_war = {
+							using_cb = religious
+							OR = {
+								attacker = {
+									character = PREVPREV
+									NOT = { war_score = -15 }
+								}
+								defender = {
+									character = PREVPREV
+									war_score = 15
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.5
+			wealth = 1000
+		}
+		modifier = {
+			factor = 0.5
+			wealth = 2000
+		}
+	}
+	
+	option = {
+		name = britannic.50.a
+		ai_chance = { factor = 100 }
+		wealth = -200
+		
+		random_playable_ruler = {
+			limit = {
+				religion = ROOT
+				NOT = { wealth = 500 }
+				religion_head = {
+					character = ROOT
+				}
+				NOT = { excommunicated_for = ROOT }
+				any_current_enemy = {
+					NOT = { religion = PREV }
+				}
+				NOT = { war_with = ROOT }
+				reverse_opinion = {
+					who = ROOT
+					value = 0
+				}
+				OR = {
+					NOT = { has_character_flag = money_from_the_archdryad }
+					OR = {
+						had_character_flag = { flag = money_from_the_archdryad days = 730 }
+						AND = {
+							ai = yes
+							had_character_flag = { flag = money_from_the_archdryad days = 365 }
+							any_war = {
+								using_cb = religious
+								OR = {
+									attacker = {
+										character = PREVPREV
+										NOT = { war_score = -15 }
+									}
+									defender = {
+										character = PREVPREV
+										war_score = 15
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			
+			letter_event = { id = britannic.51 tooltip = britannic.51.tt }
+		}
+	}
+	
+	option = {
+		name = britannic.50.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+letter_event = {
+	id = britannic.51
+	desc = britannic.51
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = britannic.51
+		wealth = 200
+		set_character_flag = money_from_the_archdryad
+	}
+}
+
+# Arch-Dryad offers absolution for Kinslaying
+character_event = {
+	id = britannic.52
+	desc = britannic.52.desc
+	picture = GFX_evt_pope
+	border = GFX_event_normal_frame_religion
+	
+	min_age = 16
+	only_capable = yes
+	prisoner = no
+	only_playable = yes
+	religion_group = pagan
+	war = no
+	
+	trigger = {
+		controls_religion = yes
+		religion = britannic_pagan
+		
+		any_independent_ruler = {
+			religion = ROOT
+			rightful_religious_head = ROOT
+			is_any_kinslayer_trigger = yes
+			piety = 100
+			reverse_opinion  = { who = ROOT value = 0 }
+			NOT = { has_character_flag = kinslaying_offered }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	immediate = {
+		random_independent_ruler = {
+			limit = {
+				religion = ROOT
+				rightful_religious_head = ROOT
+				is_any_kinslayer_trigger = yes
+				piety = 100
+				reverse_opinion  = { who = ROOT value = 0 }
+			}
+			set_character_flag = kinslaying_offered
+		}
+	}
+	
+	option = {
+		name = britannic.52.a
+		ai_chance = { factor = 100 }
+		
+		random_independent_ruler = {
+			limit = {
+				religion = ROOT
+				rightful_religious_head = ROOT
+				is_any_kinslayer_trigger = yes
+				piety = 100
+				reverse_opinion  = { who = ROOT value = 0 }
+			}
+			
+			character_event = { id = 39211 tooltip = EVTTOOLTIP39211 }
+		}
+	}
+	
+	option = {
+		name = britannic.52.b	#incase someone plays the pope.. players will mod it in, so might as well give them a fun option here.
+		ai_chance = { factor = 0 }
+	}
+}
+
+
+character_event = {
+	id = britannic.53
+	desc = britannic.53
+	picture = GFX_evt_pope
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = britannic.53.a
+		ai_chance = { factor = 100 }
+		trigger_switch = {
+			on_trigger = trait
+			kinslayer = {
+				piety = -100
+				wealth = -50
+				remove_trait = kinslayer
+			}
+			familial_kinslayer = {
+				piety = -50
+				wealth = -25
+				remove_trait = familial_kinslayer
+			}
+			dynastic_kinslayer = {
+				piety = -25
+				wealth = -12
+				remove_trait = dynastic_kinslayer
+			}
+		}
+		FROM = { character_event = { id = britannic.54 days = 1 tooltip = britannic.54.tt } }
+	}
+	
+	option = {
+		name = britannic.53.b
+		ai_chance = { factor = 0 }
+		add_trait = cynical
+		FROM = { character_event = { id = britannic.55 days = 1  tooltip = britannic.55.tt } }
+	}
+}
+
+
+character_event = {
+	id = britannic.54
+	desc = britannic.54.desc
+	picture = GFX_evt_knight_kneeling
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	option = {
+		name = britannic.54.a
+		prestige = 10
+	}
+}
+
+
+character_event = {
+	id = britannic.55
+	desc = britannic.55
+	picture = GFX_evt_torture
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = britannic.55.a
+		prestige = -10
+	}
+}
+
+# Arch-Dryad sends a holy warrior to serve someone fighting infidels
+character_event = {
+	id = britannic.56
+	hide_window = yes
+	
+	min_age = 16
+	only_playable = yes
+	war = no
+	
+	trigger = {
+		controls_religion = yes	
+		religion = britannic_pagan
+
+		# don't have the archdryad bombard the player
+		NOT = { had_character_flag = { flag = money_from_the_archdryad days = 365 } }
+		NOT = { wealth = 500 }
+		any_playable_ruler = {
+			religion = ROOT
+			religion_head = {
+				character = ROOT
+			}
+			NOT = { excommunicated_for = ROOT }
+			any_current_enemy = {
+				NOT = { religion = PREV }
+			}
+			NOT = { war_with = ROOT }
+			reverse_opinion = { who = ROOT value = 0 }
+			OR = {
+				NOT = { has_character_flag = soldier_from_the_archdryad }
+				OR = {
+					had_character_flag = { flag = soldier_from_the_archdryad days = 730 }
+					AND = {
+						ai = yes
+						had_character_flag = { flag = soldier_from_the_archdryad days = 365 }
+						any_war = {
+							using_cb = religious
+							OR = {
+								attacker = {
+									character = PREVPREV
+									NOT = { war_score = -15 }
+								}
+								defender = {
+									character = PREVPREV
+									war_score = 15
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		modifier = { # if the archdryad is low on cash, she'll prefer sending a soldier
+			factor = 0.5
+			NOT = { wealth = 1000 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { wealth = 2000 }
+		}
+	}
+	
+	option = {
+		name = britannic.50.a
+		ai_chance = { factor = 100 }
+		
+		random_playable_ruler = {
+			limit = {
+				religion = ROOT
+				NOT = { wealth = 500 }
+				religion_head = {
+					character = ROOT
+				}
+				NOT = { excommunicated_for = ROOT }
+				any_current_enemy = {
+					NOT = { religion_group = PREV }
+				}
+				NOT = { war_with = ROOT }
+				reverse_opinion = {
+					who = ROOT
+					value = 0
+				}
+				OR = {
+					NOT = { has_character_flag = soldier_from_the_archdryad }
+					OR = {
+						had_character_flag = { flag = soldier_from_the_archdryad days = 730 }
+						AND = {
+							ai = yes
+							had_character_flag = { flag = soldier_from_the_archdryad days = 365 }
+							any_war = {
+								using_cb = religious
+								OR = {
+									attacker = {
+										character = PREVPREV
+										NOT = { war_score = -15 }
+									}
+									defender = {
+										character = PREVPREV
+										war_score = 15
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			
+			letter_event = { id = britannic.57 tooltip = britannic.57.tt }
+		}
+	}
+	
+	option = {
+		name = britannic.50.b
+		ai_chance = { factor = 0 }
+	}
+
+	option = {
+		name = britannic.50.c
+		trigger = {
+			trait = lunatic
+
+		}
+		ai_chance = { factor = 200 }
+		random_playable_ruler = {
+			limit = {
+				religion = ROOT
+				NOT = { wealth = 500 }
+				religion_head = {
+					character = ROOT
+				}
+				NOT = { excommunicated_for = ROOT }
+				any_current_enemy = {
+					NOT = { religion_group = PREV }
+				}
+				NOT = { war_with = ROOT }
+				reverse_opinion = {
+					who = ROOT
+					value = 0
+				}
+				NOT = { has_character_flag = horse_from_archdryad_@ROOT }
+				OR = {
+					NOT = { has_character_flag = soldier_from_the_archdryad }
+					OR = {
+						had_character_flag = { flag = soldier_from_the_archdryad days = 730 }
+						AND = {
+							ai = yes
+							had_character_flag = { flag = soldier_from_the_archdryad days = 365 }
+							any_war = {
+								using_cb = religious
+								OR = {
+									attacker = {
+										character = PREVPREV
+										NOT = { war_score = -15 }
+									}
+									defender = {
+										character = PREVPREV
+										war_score = 15
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			
+			letter_event = { id = britannic.58 tooltip = britannic.58.tt }
+		}
+	}
+}
+
+# archdryad sends a holy warrior
+letter_event = {
+	id = britannic.57
+	desc = britannic.57.desc
+	border = GFX_event_letter_frame_religion
+
+	is_triggered_only = yes
+
+	option = {
+		name = britannic.57.a
+		custom_tooltip = {
+			text = britannic.57.a.tt
+			hidden_tooltip = {
+				random_list = {
+					75 = {
+						create_random_soldier = {
+							dynasty = random
+							age = 19
+							female = yes
+							religion = britannic_pagan
+							culture = FROM
+						}
+					}
+					25 = {
+						create_random_soldier = {
+							dynasty = random
+							age = 20
+							female = no
+							religion = britannic_pagan
+							culture = FROM
+						}
+					}
+				}
+				new_character = {
+					add_trait = zealous
+					add_trait = holy_warrior
+
+					opinion = { who = ROOT modifier = opinion_patron }
+				}
+			}
+		}
+		set_character_flag = soldier_from_the_archdryad
+	}
+}
+
+# zomg the crazy lady sent me a horse to be a commander
+letter_event = {
+	id = britannic.58
+	desc = britannic.58.desc
+	border = GFX_event_letter_frame_religion
+
+	is_triggered_only = yes
+
+	option = {
+		name = britannic.58.a
+		create_character = {
+			name = "Enbarr"
+			female = yes
+			age = 16
+			religion = ROOT
+			culture = horse
+			race = horse
+			dynasty = NONE
+			trait = horse
+			trait = imbecile
+			trait = stubborn
+			trait = fair
+			trait = strong
+		}
+		new_character = {
+			hidden_tooltip = {
+				if = { 
+					limit = { ROOT = { trait = immortal trait = lunatic } }
+					character_event = { id = ZE.15001 days = 10 }
+				}
+				if = {
+					limit = { has_dlc = "Jade Dragon" }
+					character_event = { id = JD.60007 days = 30 }
+				}
+			}
+			give_nickname = nick_flowing_mane
+			opinion = { who = ROOT modifier = opinion_patron }
+		}
+		set_character_flag = soldier_from_the_archdryad
+		set_character_flag = horse_from_archdryad_@FROM
+	}	
+}
+
+# Arch-Dryad gifts a ruler with an artifact
+character_event = {
+	id = britannic.59
+	hide_window = yes
+	
+	min_age = 16
+	only_playable = yes
+	war = no
+	
+	trigger = {
+		controls_religion = yes	
+		religion = britannic_pagan
+
+		any_playable_ruler = {
+			religion = ROOT
+			religion_head = {
+				character = ROOT
+			}
+			# don't have the archdryad bombard the player
+			NOR = {
+				had_character_flag = { flag = money_from_the_archdryad days = 365 }
+				had_character_flag = { flag = soldier_from_archdryad_@ROOT days = 365 }
+				excommunicated_for = ROOT
+			}
+			any_current_enemy = {
+				NOT = { religion = PREV }
+			}
+			NOT = { war_with = ROOT }
+			reverse_opinion = { who = ROOT value = 30 }
+			OR = {
+				NOT = { has_character_flag = artifact_from_archdryad_@ROOT }
+				OR = {
+					had_character_flag = { flag = artifact_from_archdryad_@ROOT days = 730 }
+					AND = {
+						ai = yes
+						had_character_flag = { flag = artifact_from_archdryad_@ROOT days = 365 }
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = britannic.59.a
+		ai_chance = { factor = 100 }
+		wealth = -200
+		
+		random_playable_ruler = {
+			limit = {
+				religion = ROOT
+				religion_head = {
+					character = ROOT
+				}
+				# don't have the archdryad bombard the player
+				NOR = {
+					had_character_flag = { flag = money_from_the_archdryad days = 365 }
+					had_character_flag = { flag = soldier_from_archdryad_@ROOT days = 365 }
+					excommunicated_for = ROOT
+				}
+				any_current_enemy = {
+					NOT = { religion = PREV }
+				}
+				NOT = { war_with = ROOT }
+				reverse_opinion = { who = ROOT value = 30 }
+				OR = {
+					NOT = { has_character_flag = artifact_from_archdryad_@ROOT }
+					OR = {
+						had_character_flag = { flag = artifact_from_archdryad_@ROOT days = 730 }
+						AND = {
+							ai = yes
+							had_character_flag = { flag = artifact_from_archdryad_@ROOT days = 365 }
+						}
+					}
+				}
+			}
+			
+			letter_event = { id = britannic.60 tooltip = britannic.60.tt }
+		}
+	}
+	
+	option = {
+		name = britannic.59.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+# archdryad sends an artifact
+letter_event = {
+	id = britannic.60
+	desc = britannic.60.desc
+	border = GFX_event_letter_frame_religion
+
+	is_triggered_only = yes
+
+	option = {
+		name = britannic.60.a
+		set_character_flag = artifact_from_archdryad_@FROM
+		custom_tooltip = {
+			text = britannic.60.a.tt
+			hidden_tooltip = {
+				# generate random artifact based on piety and archdryad opinion,
+				# with caps on quality based on britannic MA
+			}
+		}
+	}
+}
+
+# Arch-Dryad sends an inquisitor
+character_event = {
+	id = britannic.61
+	hide_window = yes
+	
+	min_age = 16
+	only_playable = yes
+	war = no
+	
+	trigger = {
+		controls_religion = yes	
+		religion = britannic_pagan
+
+		any_playable_ruler = {
+			religion = ROOT
+			religion_head = {
+				character = ROOT
+			}
+			# don't have the archdryad bombard the player
+			NOR = {
+				had_character_flag = { flag = money_from_the_archdryad days = 365 }
+				had_character_flag = { flag = soldier_from_archdryad_@ROOT days = 365 }
+				excommunicated_for = ROOT
+			}
+			war = no
+			any_realm_province = {
+				OR = {
+					NOT = { religion = britannic_pagan }
+					has_province_modifier = heretic_stronghold
+				}
+			}
+			reverse_opinion = { who = ROOT value = 0 }
+			OR = {
+				NOT = { has_character_flag = inquisitor_from_archdryad_@ROOT }
+				OR = {
+					had_character_flag = { flag = inquisitor_from_archdryad_@ROOT days = 730 }
+					AND = {
+						ai = yes
+						had_character_flag = { flag = inquisitor_from_archdryad_@ROOT days = 365 }
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = britannic.59.a
+		ai_chance = { factor = 100 }
+		
+		random_playable_ruler = {
+			limit = {
+				religion = ROOT
+				religion_head = {
+					character = ROOT
+				}
+				# don't have the archdryad bombard the player
+				NOR = {
+					had_character_flag = { flag = money_from_the_archdryad days = 365 }
+					had_character_flag = { flag = soldier_from_archdryad_@ROOT days = 365 }
+					excommunicated_for = ROOT
+				}
+				war = no
+				any_realm_province = {
+					OR = {
+						NOT = { religion = britannic_pagan }
+						has_province_modifier = heretic_stronghold
+					}
+				}
+				reverse_opinion = { who = ROOT value = 0 }
+				NOT = {
+					any_courtier = {
+						has_character_flag = archdryads_inquisitor
+					}
+				}
+				OR = {
+					NOT = { has_character_flag = inquisitor_from_the_archdryad }
+					OR = {
+						had_character_flag = { flag = inquisitor_from_the_archdryad days = 730 }
+						AND = {
+							ai = yes
+							had_character_flag = { flag = inquisitor_from_the_archdryad days = 365 }
+						}
+					}
+				}
+			}
+			
+			letter_event = { id = britannic.62 tooltip = britannic.62.tt }
+		}
+	}
+	
+	option = {
+		name = britannic.61.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+# archdryad sends an inquisitor
+letter_event = {
+	id = britannic.62
+	desc = britannic.62.desc
+	border = GFX_event_letter_frame_religion
+
+	is_triggered_only = yes
+
+	option = {
+		name = britannic.62.a
+		set_character_flag = inquisitor_from_the_archdryad
+		custom_tooltip = {
+			text = britannic.62.a.tt
+			hidden_tooltip = {
+				create_random_intriguer = {
+					dynasty = none
+					female = yes
+					religion = britannic_pagan
+					culture = FROM
+				}
+				new_character = { # traits that are good for an inquisitor, no?
+					add_trait = zealous
+					add_trait = celibate # too focused on the inquisition!
+					add_trait = diligent
+					add_trait = just
+					opinion = { who = ROOT modifier = opinion_patron }
+
+					set_character_flag = archdryads_inquisitor
+				}
+			}
+		}
+	}
+}

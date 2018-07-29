@@ -750,13 +750,67 @@ clear_expelled_holy_order_modifier_effect = {
 }
 
 lower_temple_tax_obligation_effect = {
-	
+	if = {
+		limit = { has_law = temple_tax_1 }
+		add_law = temple_tax_0
+	}
+	if = {
+		limit = { has_law = temple_tax_2 }
+		add_law = temple_tax_1
+	}
+	if = {
+		limit = { has_law = temple_tax_3 }
+		add_law = temple_tax_2
+	}
 }
 
 lower_temple_levy_obligation_effect = {
-	
+	if = {
+		limit = { has_law = temple_contract_1 }
+		add_law = temple_contract_0
+	}
+	if = {
+		limit = { has_law = temple_contract_2 }
+		add_law = temple_contract_1
+	}
+	if = {
+		limit = { has_law = temple_contract_3 }
+		add_law = temple_contract_2
+	}
 }
 
 move_temple_obligations_toward_balanced_effect = {
-	
+	if = {
+		limit = { has_law = tax_levy_law_theocracy_3 }
+		add_law = tax_levy_law_theocracy_4
+	}
+	if = {
+		limit = { has_law = tax_levy_law_theocracy_2 }
+		add_law = tax_levy_law_theocracy_3
+	}
+	if = {
+		limit = { has_law = tax_levy_law_theocracy_1 }
+		add_law = tax_levy_law_theocracy_2
+	}
+	if = {
+		limit = { has_law = tax_levy_law_theocracy_0 }
+		add_law = tax_levy_law_theocracy_1
+	}
+
+	if = {
+		limit = { has_law = tax_levy_law_theocracy_5 }
+		add_law = tax_levy_law_theocracy_4
+	}
+	if = {
+		limit = { has_law = tax_levy_law_theocracy_6 }
+		add_law = tax_levy_law_theocracy_5
+	}
+	if = {
+		limit = { has_law = tax_levy_law_theocracy_7 }
+		add_law = tax_levy_law_theocracy_6
+	}
+	if = {
+		limit = { has_law = tax_levy_law_theocracy_8 }
+		add_law = tax_levy_law_theocracy_7
+	}
 }

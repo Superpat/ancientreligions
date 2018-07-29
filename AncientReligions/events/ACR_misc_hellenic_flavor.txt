@@ -223,7 +223,7 @@ character_event = {
 }
 
 # Zeus knocked me up
-character_event = {
+long_character_event = {
 	id = hellenic.502
 	desc = hellenic.502.desc
 	picture = GFX_evt_zeus_on_throne

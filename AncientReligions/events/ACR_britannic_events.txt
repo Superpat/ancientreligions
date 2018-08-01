@@ -1763,14 +1763,14 @@ character_event = {
 		text = britannic.64.upgrade
 	}
 	desc = {
-		trigger = { has_character_flag = cash }
-		text = britannic.64.cash
+		trigger = { has_character_flag = relief }
+		text = britannic.64.relief
 	}
 	desc = {
 		trigger = {
 			NOR = {
 				has_character_flag = upgrade_hospital
-				has_character_flag = cash
+				has_character_flag = relief
 			}
 		}
 		text = britannic.64.build
@@ -1817,19 +1817,30 @@ character_event = {
 				}
 			}
 		} else = {
-			# omg, just give'em some money
-			set_character_flag = cash
+			random_demesne_province = {
+				limit = {
+					has_disease = yes
+				}
+				save_event_target_as = afflicted_province
+			}
+			# send some doctors
+			set_character_flag = relief
 		}
 	}
 
 	option = {
 		trigger = {
-			has_character_flag = cash
+			has_character_flag = relief
 		}
 		name = britannic.64.a
 
-		wealth = 100
-		clr_character_flag = cash
+		event_target:afflicted_province = {
+			add_province_modifier = {
+				name = relief_effort
+				duration = 365
+			}
+		}
+		clr_character_flag = relief
 	}
 	option = {
 		trigger = {
@@ -1849,5 +1860,253 @@ character_event = {
 		name = britannic.64.a
 		
 		create_hospital = event_target:afflicted_province
+	}
+}
+
+##################################################################
+# 
+# Britannic
+# - Tumoidechais (baptism)
+#   britannic.100 - 149 reserved
+#
+##################################################################
+
+character_event = {
+	id = britannic.100
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		liege = {
+			character_event = { id = britannic.101 days = 1 }
+		}
+	}
+}
+
+character_event = {
+	id = britannic.101
+	desc = {
+		text = britannic.101.desc
+		trigger = {
+			FROM = {
+				mother = {
+					celtic_clergy_trigger = no
+				}
+			}
+		}
+	}
+	desc = {
+		text = britannic.101.mom
+		trigger = {
+			FROM = {
+				mother = {
+					celtic_clergy_trigger = yes
+				}
+			}
+		}
+	}
+	#picture = GFX
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+
+	option = { # cool
+		name = britannic.101.a
+		trigger = {
+			FROM = {
+				NOT = { has_character_flag = changeling_child }
+			}
+		}
+
+		hidden_tooltip = { 
+			random_list = {
+				90 = { character_event = { id = britannic.102 days = 1 } }
+				10 = { character_event = { id = britannic.103 days = 1 } }
+			}
+		}
+	}
+
+	option = { # I pray this saves the child from the unseelie
+		name = britannic.101.b
+		trigger = {
+			FROM = {
+				has_character_flag = changeling_child
+			}
+		}
+
+		hidden_tooltip = { character_event = { id = britannic.103 days = 1 } }
+	}
+}
+
+# tumoidechais (immersion day)
+long_character_event = {
+	id = britannic.102
+	desc = {
+		text = britannic.102.desc
+		trigger = {
+			FROM = {
+				mother = {
+					celtic_clergy_trigger = no
+				}
+			}
+		}
+	}
+	desc = {
+		text = britannic.102.mom
+		trigger = {
+			FROM = {
+				mother = {
+					celtic_clergy_trigger = yes
+				}
+			}
+		}
+	}
+	#picture = GFX
+	border = GFX_event_long_frame_religion
+
+	is_triggered_only = yes
+
+	immediate = {
+		random_vassal = {
+			limit = {
+				trait = dryad
+			}
+
+			save_event_target_as = presiding_dryad
+		}
+	}
+
+	option = {
+		name = OK
+
+		FROMFROM = {
+			add_character_modifier = {
+				modifier = good_tumtha
+				duration = 2190 # six years
+			}
+		}
+
+		piety = 100
+		prestige = 25
+	}
+}
+
+# bad weather on tumoidechais
+long_character_event = {
+	id = britannic.103
+	desc = {
+		text = britannic.103.desc
+		trigger = {
+			FROM = {
+				mother = {
+					celtic_clergy_trigger = no
+				}
+			}
+		}
+	}
+	desc = {
+		text = britannic.103.mom
+		trigger = {
+			FROM = {
+				mother = {
+					celtic_clergy_trigger = yes
+				}
+			}
+		}
+	}
+	#picture = GFX
+	border = GFX_event_long_frame_religion
+
+	is_triggered_only = yes
+
+	option = {
+		name = britannic.103.a
+
+		piety = 10
+
+		random_list = {
+			15 = {
+				add_trait = zealous
+			}
+			85 = {}
+		}
+
+		FROMFROM = {
+			piety = -100
+			add_character_modifier = {
+				modifier = bad_tumtha
+				days = 2190
+			}
+		}
+	}
+
+	option = {
+		name = britannic.103.b
+
+		piety = -10
+
+		random_list = {
+			15 = {
+				add_trait = zealous
+			}
+			85 = {}
+		}
+
+		FROMFROM = {
+			piety = -100
+			add_character_modifier = {
+				modifier = bad_tumtha
+				days = 2190
+			}
+		}
+	}
+}
+
+# child was never tumtha (child)
+character_event = {
+	id = britannic.104
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = britannic_pagan
+		age = 2
+		NOR = {
+			age = 4
+			trait = sych
+		}
+
+	}
+
+	immediate = {
+		liege = {
+			character_event = { id = britannic.105 days = 3 }
+		}
+	}
+}
+
+character_event = {
+	id = britannic.105
+	desc = britannic.105.desc
+	#picture = GFX
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+
+		FROM = {
+			add_trait = sych
+
+			father = {
+				piety = -100
+			}
+			mother = {
+				piety = -100
+			}
+		}
 	}
 }

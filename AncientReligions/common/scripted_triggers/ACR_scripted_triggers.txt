@@ -55,6 +55,29 @@ is_neoplatonist_trigger = {
 	}
 }
 
+celtic_clergy_in_good_standing_trigger = {
+	OR = {
+		trait = druid
+		trait = dryad
+		#trait = vates
+	}
+}
+
+celtic_clergy_in_bad_standing_trigger = {
+	OR = {
+		trait = bad_druid
+		trait = bad_dryad
+		#trait = bad_vates
+	}
+}
+
+celtic_clergy_trigger = {
+	OR = {
+		celtic_clergy_in_good_standing_trigger = yes
+		celtic_clergy_in_bad_standing_trigger = yes
+	}
+}
+
 is_on_nile_trigger = {
 	location = {
 		OR = {

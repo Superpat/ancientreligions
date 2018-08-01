@@ -139,6 +139,7 @@ on_five_year_pulse = {
 on_yearly_childhood_pulse = {
 	events = {
 		celtic.184 # Celtic child begins education (14 years old)
+		britannic.104 # Britannic child has not been tumtha!
 	}
 	random_events = {
 		5000 = celtic.272 	# Acknowledged reincarnated child acquires trait from previous personality

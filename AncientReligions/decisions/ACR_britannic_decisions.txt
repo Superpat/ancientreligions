@@ -69,3 +69,93 @@ decisions = {
 		}
 	}
 }
+
+targeted_decisions = {
+	hold_tumoidechais = {
+		filter = court
+		is_high_prio = yes # gotta let 'em know!
+
+		from_potential = {
+			religion = britannic_pagan
+		}
+		potential = {
+			NOT = { age = 1 }
+			OR = {
+				liege = {
+					religion = britannic_pagan
+				}
+				religion = britannic_pagan
+			}
+		}
+		allow = {
+			OR = {
+				AND = {
+					custom_tooltip = {
+						text = has_direct_access_to_the_sea_tt
+						hidden_tooltip = {
+							any_demesne_province = {
+								any_neighbor_province = {
+									is_land = no
+								}
+							}
+						}
+					}
+					wealth = 25
+				}
+				AND = {
+					custom_tooltip = {
+						text = has_access_to_the_sea_tt
+						hidden_tooltip = {
+							top_liege = {
+								any_realm_province = {
+									any_neighbor_province = {
+										is_land = no
+									}
+								}
+							}
+						}
+					}
+					wealth = 50
+				}
+				wealth = 100 # obtaining enough sea water for the tumtha is expensive when you aren't coastal!
+			}
+		}
+		effect = {
+			FROM = {
+				if = {
+					limit = {
+						any_demesne_province = {
+							any_neighbor_province = {
+								is_land = no
+							}
+						}
+					}
+					wealth = -25
+				} else_if = {
+					limit = {
+						top_liege = {
+							any_realm_province = {
+								any_neighbor_province = {
+									is_land = no
+								}
+							}
+						}
+					}
+					wealth = -50
+				} else = {
+					wealth = -100
+				}
+				custom_tooltip = {
+					text = tumoidechais_tt
+					hidden_tooltip = {
+						character_event = { id = britannic.100 days = 2 }
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0.5
+			# figure out how to make the parent more likely to take the decision for their child
+		}
+	}
+}

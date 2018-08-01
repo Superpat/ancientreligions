@@ -435,3 +435,15 @@ secretly_celtic_pagan_reformed = {
 	customizer = no
 	ai_zeal = -50
 }
+
+sych = { # welsh for "dry"
+	potential = {
+		religion = britannic_pagan
+	}
+	monthly_character_piety = -0.15
+	same_opinion = 15
+	same_religion_opinion = -10
+	church_opinion = -10
+	
+	religious = yes
+}

@@ -327,3 +327,22 @@ unfit_gaelic_king = {
 	land_morale = -0.20
 	general_opinion = -10
 }
+
+# province modifier
+relief_effort = {
+	icon = 50
+
+	disease_defence = 0.10
+}
+
+good_tumtha = {
+	icon = 8
+
+	piety = 0.1
+}
+
+bad_tumtha = {
+	icon = 26
+
+	piety = -0.1
+}

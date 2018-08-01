@@ -5,6 +5,10 @@ GOD_BRITANNIA;Britannia;;;;;;;;;;;;;x
 GOD_HOLY_MOTHER;The Holy Mother;;;;;;;;;;;;;x
 GOD_ST_BOUDICCA;Saint Boudicca;;;;;;;;;;;;;x
 GOD_SC_ANDRASTE;Sanctaidd Andraste;;;;;;;;;;;;;x
+#Rhiannon is the Moon;;;;;;;;;;;;;;x
+GOD_SC_RHIANNON;Sanctaidd Rhiannon;;;;;;;;;;;;;x
+#Olwen is the Sun;;;;;;;;;;;;;;x
+GOD_SC_OLWEN;Sanctaidd Olwen;;;;;;;;;;;;;x
 GOD_ST_BRIGID;Saint Brigid;;;;;;;;;;;;;x
 EVIL_UNSEELIE;the Unseelie Court;;;;;;;;;;;;;x
 # titles ;;;;;;;;;;;;;;x
@@ -43,8 +47,14 @@ bad_dryad;Wicked Dryad;;;;;;;;;;;;;x
 bad_dryad_desc;This Dryad has conducted herself in ways unbecoming of her station.;;;;;;;;;;;;;x
 morrigan;Morrigan;;;;;;;;;;;;;x
 morrigan_desc;This character is a Morrigan, a veteran of a Britannic Great Holy War.;;;;;;;;;;;;;x
+sych;Sych;;;;;;;;;;;;;x
+sych_desc;Britannic that never received a Tumtha are known as Sych, or "dry". They will always have difficult relations with other Britannics, especially the church.;;;;;;;;;;;;;x
 # decisions ;;;;;;;;;;;;;;x
 establish_arch_dryad;Establish the Arch-Dryad;;;;;;;;;;;;;x
 establish_arch_dryad_desc;Setup an Arch-Dryad as the head of Britannic religion.;;;;;;;;;;;;;x
-# decisions ;;;;;;;;;;;;;;x
+# other stuff ;;;;;;;;;;;;;;x
 nick_flowing_mane;of the Flowing Mane;;;;;;;;;;;;;x
+relief_effort;Relief Effort;;;;;;;;;;;;;x
+relief_effort_desc;This province has volunteers and clergy providing relief to the locals from an outbreak of disease.;;;;;;;;;;;;;x
+good_tumtha;This character experienced a good, if uneventful, Tumoidechais.;;;;;;;;;;;;;x
+bad_tumtha;This character's Tumoidechais was plagued with storms, a sign of Britannia's disfavor.;;;;;;;;;;;;;x

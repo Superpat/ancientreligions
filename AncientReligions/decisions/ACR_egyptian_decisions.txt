@@ -55,7 +55,7 @@ decisions = {
 		only_playable = yes
 		is_high_prio = yes
 		potential = {
-			is_playable = yes	
+			is_playable = yes
 			independent = yes
 			higher_tier_than = duke
 			religion = egyptian_pagan
@@ -70,7 +70,7 @@ decisions = {
 				}
 			}
 			war = no
-			has_regent = no		
+			has_regent = no
 		}
 		effect = {
 			set_global_flag = luxor_restoring
@@ -101,13 +101,13 @@ decisions = {
 		only_playable = yes
 		is_high_prio = yes
 		potential = {
-			is_playable = yes	
+			is_playable = yes
 			higher_tier_than = duke
 			OR = {
 				religion = egyptian_pagan
 				religion = aten_pagan
 			}
-			NOT = { 
+			NOT = {
 				has_character_flag = pyramid_built
 				has_character_flag = pyramid_building_char
 				capital_scope = { has_province_flag = pyramid_building_prov }
@@ -116,7 +116,7 @@ decisions = {
 		allow = {
 			wealth = 600
 			war = no
-			has_regent = no		
+			has_regent = no
 		}
 		effect = {
 			set_character_flag = pyramid_building_char
@@ -137,7 +137,7 @@ decisions = {
 					learning = 8
 				}
 			}
-		}		
+		}
 	}
 	
 	restore_priesthood_egyptian_pagan = {
@@ -157,9 +157,13 @@ decisions = {
 			piety = 500
 			wealth = 500
 			war = no
-			religion_authority = 0.6	
+			religion_authority = 0.6
+			custom_tooltip = {
+				text = luxor_restored_condition
+				has_global_flag = luxor_restored
+			}
 			b_luxor = { 
-				has_holder = yes 
+				has_holder = yes
 				holder_scope = { top_liege = { character = ROOT } }
 			}
 		}
@@ -209,7 +213,7 @@ decisions = {
 			higher_tier_than = duke # Tease the decision for kings
 			religion = aten_pagan
 			NOT = { has_global_flag = aten_priesthood_founded }
-			has_regent = no		
+			has_regent = no
 		}
 		allow = {
 			higher_tier_than = king
@@ -217,9 +221,13 @@ decisions = {
 			piety = 500
 			wealth = 500
 			war = no
-			religion_authority = 0.6	
-			b_meir = { 
-				has_holder = yes 
+			religion_authority = 0.6
+			custom_tooltip = {
+				text = akhetaten_restored_condition
+				has_global_flag = akhetaten_restored
+			}
+			b_meir = {
+				has_holder = yes
 				holder_scope = { top_liege = { character = ROOT } }
 			}
 		}
@@ -247,7 +255,7 @@ decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-		}	
+		}
 	}
 
 	organize_anubis = {
@@ -380,7 +388,7 @@ decisions = {
 		only_playable = yes
 		is_high_prio = yes
 		potential = {
-			is_playable = yes	
+			is_playable = yes
 			independent = yes
 			higher_tier_than = duke
 			religion = aten_pagan

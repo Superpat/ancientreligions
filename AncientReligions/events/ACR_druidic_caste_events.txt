@@ -320,15 +320,15 @@ character_event = {
 	trigger = {
 		is_ruler = yes
 		is_priest = yes
-		religion_openly_in_celtic_subgroup_trigger = yes
-		NOT = { 
+		religion_openly_celtic_or_reformed_trigger = yes
+		NOR = { 
 			trait = druid 
 			trait = bad_druid 
 		}
 	}
 	
 	mean_time_to_happen = {
-		days = 90
+		days = 30
 	}
 	
 	immediate = {

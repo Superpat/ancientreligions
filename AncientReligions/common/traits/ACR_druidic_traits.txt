@@ -440,6 +440,9 @@ sych = { # welsh for "dry"
 	potential = {
 		religion = britannic_pagan
 	}
+
+	random = no # only assigned via event
+
 	monthly_character_piety = -0.15
 	same_opinion = 15
 	same_religion_opinion = -10

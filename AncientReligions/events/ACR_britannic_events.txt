@@ -161,7 +161,10 @@ character_event = {
 
 	trigger = {
 		is_theocracy = yes
-		NOT = { trait = dryad }
+		NOR = {
+			trait = dryad
+			trait = bad_dryad
+		}
 	}
 
 	immediate = {
@@ -1125,7 +1128,6 @@ character_event = {
 	}
 }
 
-
 character_event = {
 	id = britannic.53
 	desc = britannic.53
@@ -1166,7 +1168,6 @@ character_event = {
 	}
 }
 
-
 character_event = {
 	id = britannic.54
 	desc = britannic.54.desc
@@ -1179,7 +1180,6 @@ character_event = {
 		prestige = 10
 	}
 }
-
 
 character_event = {
 	id = britannic.55
@@ -1390,6 +1390,7 @@ letter_event = {
 							female = yes
 							religion = britannic_pagan
 							culture = FROM
+							random_traits = yes
 						}
 					}
 					25 = {
@@ -1399,6 +1400,7 @@ letter_event = {
 							female = no
 							religion = britannic_pagan
 							culture = FROM
+							random_traits = yes
 						}
 					}
 				}
@@ -1866,10 +1868,160 @@ character_event = {
 ##################################################################
 # 
 # Britannic
-# - Tumoidechais (baptism)
+# - Lá Thumoideachais (baptism)
 #   britannic.100 - 149 reserved
 #
 ##################################################################
+
+# dryad is asked to officiate a tumtha
+character_event = {
+	id = britannic.110
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = YES
+
+		event_target:the_ruler = { letter_event = { id = britannic.109 days = 3 } }
+
+		ai_chance = {
+			factor = 75
+
+			modifier = {
+				factor = 10
+				event_target:the_child = {
+					mother = {
+						character = ROOT
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				opinion = {
+					who = event_target:the_ruler
+					value = 30
+				}
+			}
+			modifier = {
+				factor = 1.2
+				opinion = {
+					who = event_target:the_ruler
+					value = 50
+				}
+			}
+			modifier = {
+				factor = 1.2
+				opinion = {
+					who = event_target:the_ruler
+					value = 80
+				}
+			}
+			modifier = {
+				factor = 1.2
+				event_target:the_child = {
+					is_female = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = NO
+
+		event_target:the_ruler = { letter_event = { id = britannic.108 days = 3 } }
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 100
+				event_target:the_ruler = {
+					trait = excommunicated
+				}
+			}
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = event_target:the_ruler
+						value = -30
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = event_target:the_ruler
+						value = -50
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				NOT = {
+					opinion = {
+						who = event_target:the_ruler
+						value = -80
+					}
+				}
+			}
+		}
+	}
+}
+
+# dryad will officiate the tumtha
+letter_event = {
+	id = britannic.109
+	desc = britannic.109.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+		if = {
+			limit = {
+				any_demesne_province = {
+					any_neighbor_province = {
+						is_land = no
+					}
+				}
+			}
+			wealth = -25
+		} else_if = {
+			limit = {
+				top_liege = {
+					any_realm_province = {
+						any_neighbor_province = {
+							is_land = no
+						}
+					}
+				}
+			}
+			wealth = -50
+		} else = {
+			wealth = -100
+		}
+
+		character_event = { id = ancrel.100}
+	}
+
+	option = { # wait, no, i lied. i'm broke :(
+		name = ancrel.damn
+	}
+}
+
+# dryad will not officiate the tumtha
+letter_event = {
+	id = britannic.108
+	desc = britannic.108.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.damn
+	}
+}
 
 character_event = {
 	id = britannic.100
@@ -1886,26 +2038,7 @@ character_event = {
 
 character_event = {
 	id = britannic.101
-	desc = {
-		text = britannic.101.desc
-		trigger = {
-			FROM = {
-				mother = {
-					celtic_clergy_trigger = no
-				}
-			}
-		}
-	}
-	desc = {
-		text = britannic.101.mom
-		trigger = {
-			FROM = {
-				mother = {
-					celtic_clergy_trigger = yes
-				}
-			}
-		}
-	}
+	desc = britannic.101.desc
 	#picture = GFX
 	border = GFX_event_normal_frame_religion
 
@@ -1914,7 +2047,7 @@ character_event = {
 	option = { # cool
 		name = britannic.101.a
 		trigger = {
-			FROM = {
+			event_target:the_child = {
 				NOT = { has_character_flag = changeling_child }
 			}
 		}
@@ -1930,7 +2063,7 @@ character_event = {
 	option = { # I pray this saves the child from the unseelie
 		name = britannic.101.b
 		trigger = {
-			FROM = {
+			event_target:the_child = {
 				has_character_flag = changeling_child
 			}
 		}
@@ -1939,15 +2072,15 @@ character_event = {
 	}
 }
 
-# tumoidechais (immersion day)
+# lá thumoideachais (immersion day)
 long_character_event = {
 	id = britannic.102
 	desc = {
 		text = britannic.102.desc
 		trigger = {
-			FROM = {
+			event_target:the_child = {
 				mother = {
-					celtic_clergy_trigger = no
+					NOT = { character = event_target:the_dryad }
 				}
 			}
 		}
@@ -1955,9 +2088,9 @@ long_character_event = {
 	desc = {
 		text = britannic.102.mom
 		trigger = {
-			FROM = {
+			event_target:the_child = {
 				mother = {
-					celtic_clergy_trigger = yes
+					character = event_target:the_dryad
 				}
 			}
 		}
@@ -1967,23 +2100,19 @@ long_character_event = {
 
 	is_triggered_only = yes
 
-	immediate = {
-		random_vassal = {
-			limit = {
-				trait = dryad
-			}
-
-			save_event_target_as = presiding_dryad
-		}
-	}
-
 	option = {
 		name = OK
 
-		FROMFROM = {
+		event_target:the_child = {
 			add_character_modifier = {
 				modifier = good_tumtha
 				duration = 2190 # six years
+			}
+			if = {
+				limit = {
+					NOT = { religion = britannic_pagan }
+				}
+				religion = britannic_pagan
 			}
 		}
 
@@ -1992,15 +2121,15 @@ long_character_event = {
 	}
 }
 
-# bad weather on tumoidechais
+# bad weather on lá thumoideachais
 long_character_event = {
 	id = britannic.103
 	desc = {
 		text = britannic.103.desc
 		trigger = {
-			FROM = {
+			event_target:the_child = {
 				mother = {
-					celtic_clergy_trigger = no
+					NOT = { character = event_target:the_dryad }
 				}
 			}
 		}
@@ -2008,9 +2137,9 @@ long_character_event = {
 	desc = {
 		text = britannic.103.mom
 		trigger = {
-			FROM = {
+			event_target:the_child = {
 				mother = {
-					celtic_clergy_trigger = yes
+					character = event_target:the_dryad
 				}
 			}
 		}
@@ -2032,7 +2161,7 @@ long_character_event = {
 			85 = {}
 		}
 
-		FROMFROM = {
+		event_target:the_child = {
 			piety = -100
 			add_character_modifier = {
 				modifier = bad_tumtha
@@ -2048,12 +2177,12 @@ long_character_event = {
 
 		random_list = {
 			15 = {
-				add_trait = zealous
+				add_trait = cynical
 			}
 			85 = {}
 		}
 
-		FROMFROM = {
+		event_target:the_child = {
 			piety = -100
 			add_character_modifier = {
 				modifier = bad_tumtha
@@ -2077,7 +2206,6 @@ character_event = {
 			age = 4
 			trait = sych
 		}
-
 	}
 
 	immediate = {
@@ -2110,3 +2238,574 @@ character_event = {
 		}
 	}
 }
+
+##################################################################
+# 
+# Britannic
+# - Imbolg (fertility festival)
+#   britannic.150 - 249 reserved
+#
+##################################################################
+
+# The Imbolg begins!
+# Opening ceremony is a sunwise parade around the temple
+character_event = {
+	id = britannic.150
+	desc = britannic.150.desc
+	#picture = GFX_evt_parade
+
+	immediate = {
+		set_character_flag = imbolg_begin
+	}
+
+	option = {
+		name = britannic.150.a
+	}
+}
+
+# spring cleaning, found some old stuff
+# belonging to a close relative
+character_event = {
+	id = britannic.151
+	desc = britannic.151.desc
+	#picture = GFX_evt_jugglers
+
+	only_playable = yes
+	capable_only = yes
+	prisoner = no
+	war = no
+	has_character_flag = imbolg_begin
+
+	trigger = {
+		in_command = no
+		any_courtier = {
+			war = no
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { is_inaccessible_trigger = yes }
+			is_adult = yes
+			is_close_relative = yes
+		}
+		
+		OR = {
+			NOT = { has_character_flag = imbolg_event_happened }
+			had_character_flag = {
+				flag = imbolg_event_happened
+				days = 3
+			}
+		}
+
+		has_character_modifier = holding_imbolg
+		had_character_flag = {
+			flag = imbolg_begin
+			days = 3
+		}
+		NOT = { has_character_flag = imbolg_event_spring_cleaning }
+	}
+	
+	immediate = {
+		set_character_flag = imbolg_event_happened
+		set_character_flag = imbolg_event_spring_cleaning
+
+		any_courtier = {
+			limit = { 
+				war = no
+				prisoner = no
+				NOT = { trait = incapable }
+				NOT = { is_inaccessible_trigger = yes }
+				is_adult = yes
+				is_close_relative = yes
+			}
+
+			save_event_target_as = close_relative
+		}
+	}	
+
+	mean_time_to_happen = {
+		days = 200
+		
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = imbolg_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = imbolg_event_happened
+		}			
+	}
+
+	# return their things
+	option = {
+		name = "EVTOPTA4105"
+		trigger = {
+			NOT = { trait = greedy }
+			NOT = { trait = deceitful }
+		}
+		event_target:close_relative = {
+			opinion = {
+				modifier = ancrel_pleased
+				who = ROOT
+				years = 5
+			}
+		}
+	}
+
+	# sell it and donate the money to the church
+	option = {
+		name = "EVTOPTC4105"
+		trigger = {
+			OR = {
+				trait = kind
+				trait = charitable
+			}
+		}
+
+		piety = 100
+	}
+
+	# sell it and keep the money
+	option = {
+		name = "EVTOPTD4105"
+		trigger = {
+			trait = greedy
+		}
+		wealth = 50
+	}
+}
+
+# dick cakes
+character_event = {
+	id = britannic.152
+	desc = britannic.152.desc
+	picture = GFX_evt_market
+
+	trigger = {
+		in_command = no
+		
+		OR = {
+			NOT = { has_character_flag = imbolg_event_happened }
+			had_character_flag = {
+				flag = imbolg_event_happened
+				days = 3
+			}
+		}
+
+		has_character_modifier = holding_imbolg
+		had_character_flag = {
+			flag = imbolg_begin
+			days = 3
+		}
+		NOT = { has_character_flag = imbolg_event_dick_cakes }
+	}
+}
+
+# visit a holy well
+# do you leave a clootie or money?
+character_event = {
+	id = britannic.153
+	desc = britannic.153.desc
+	#picture = GFX
+
+	trigger = {
+		in_command = no
+
+		OR = {
+			NOT = { has_character_flag = imbolg_event_happened }
+			had_character_flag = {
+				flag = imbolg_event_happened
+				days = 3
+			}
+		}
+
+		has_character_modifier = holding_imbolg
+		had_character_flag = {
+			flag = imbolg_begin
+			days = 3
+		}
+		NOT = { has_character_flag = imbolg_event_holy_well }
+	}
+
+	immediate = {
+		set_character_flag = imbolg_event_holy_well
+		set_character_flag = imbolg_event_happened
+	}
+
+	mean_time_to_happen = {
+		days = 200
+		
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = imbolg_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = imbolg_event_happened
+		}			
+	}
+
+	option = { # clootie
+		name = britannic.153.a
+
+		piety = 10
+
+		random_list = {
+			20 = {
+				add_trait = greedy
+			}
+			80 = { }
+		}
+
+		hidden_tooltip = {
+			random_vassal = {
+				limit = {
+					is_capable = yes
+					in_command = no
+					religion = britannic_pagan
+				}
+
+				character_event = { id = britannic.154 days = 0 }
+			}
+		}
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.2
+				trait = cynical
+			}
+			modifier = {
+				factor = 1.2
+				trait = greedy
+			}
+		}
+	}
+
+	option = { # gold
+		name = britannic.153.b
+
+		wealth = -10
+		piety = 100
+
+		random_list = {
+			20 = {
+				add_trait = generous
+			}
+			80 = { }
+		}
+
+		hidden_tooltip = {
+			random_vassal = {
+				limit = {
+					is_capable = yes
+					in_command = no
+					religion = britannic_pagan
+				}
+
+				character_event = { id = britannic.155 days = 0 }
+			}
+		}
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.2
+				trait = zealous
+			}
+			modifier = {
+				factor = 1.2
+				trait = generous
+			}
+		}
+	}
+}
+
+# clootie (random vassal)
+character_event = {
+	id = britannic.154
+	desc = britannic.154.desc
+	#picture = GFX
+
+	is_triggered_only = yes
+
+	option = { # approve
+		name = ancrel.fool
+
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = britannic.156 days = 2 }
+			}
+		}
+	}
+
+	option = { # disapprove
+		name = ancrel.well_done
+
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = britannic.157 days = 2 }
+			}
+		}
+	}
+}
+
+
+# money (random vassal)
+character_event = {
+	id = britannic.155
+	desc = britannic.155.desc
+	#picture = GFX
+
+	is_triggered_only = yes
+
+	option = { # approve
+		name = ancrel.fool
+
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = britannic.156 days = 2 }
+			}
+		}
+	}
+
+	option = { # disapprove
+		name = ancrel.well_done
+
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = britannic.157 days = 2 }
+			}
+		}
+	}
+}
+
+# vassal approves (o.c.)
+character_event = {
+	id = britannic.156
+	desc = britannic.156.desc
+	#picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.fantastic
+
+		prestige = 100
+	}
+}
+
+# vassal disapproves (o.c.)
+character_event = {
+	id = britannic.157
+	desc = britannic.157.desc
+	#picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = ancrel.fool
+
+		prestige = -100
+	}
+}
+
+# making blackthorn solar wheels (brigid)
+character_event = {
+	id = britannic.158
+	desc = britannic.158.desc
+	#picture = GFX
+
+	trigger = {
+		in_command = no
+		
+		OR = {
+			NOT = { has_character_flag = imbolg_event_happened }
+			had_character_flag = {
+				flag = imbolg_event_happened
+				days = 3
+			}
+		}
+
+		has_character_modifier = holding_imbolg
+		had_character_flag = {
+			flag = imbolg_begin
+			days = 3
+		}
+		NOT = { has_character_flag = imbolg_event_blackthorn_wheel }
+	}
+
+	immediate = {
+		set_character_flag = imbolg_event_blackthorn_wheel
+		set_character_flag = imbolg_event_happened
+	}
+
+	mean_time_to_happen = {
+		days = 200
+		
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = imbolg_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = imbolg_event_happened
+		}			
+	}
+
+	option = {
+		name = OK
+
+		piety = 10
+	}
+}
+
+# commiserate at bonfire (ruler)
+character_event = {
+	id = britannic.159
+	desc = britannic.159.desc
+	#picture = GFX
+
+	trigger = {
+		in_command = no
+
+		OR = {
+			NOT = { has_character_flag = imbolg_event_happened }
+			had_character_flag = {
+				flag = imbolg_event_happened
+				days = 3
+			}
+		}
+
+		any_vassal = {
+			in_command = no
+			religion = britannic_pagan
+			is_incapable = no
+			NOT = { is_inaccessible_trigger = yes }
+			is_adult = yes
+		}
+
+		has_character_modifier = holding_imbolg
+		had_character_flag = {
+			flag = imbolg_begin
+			days = 3
+		}
+		NOT = { has_character_flag = imbolg_event_bonfire }
+	}
+
+	immediate = {
+		set_character_flag = imbolg_event_bonfire
+		set_character_flag = imbolg_event_happened
+
+		random_vassal = {
+			limit = {
+				in_command = no
+				religion = britannic_pagan
+				is_incapable = no
+				NOT = { is_inaccessible_trigger = yes }
+				is_adult = yes
+			}
+
+			save_event_target_as = the_vassal
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 200
+		
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = imbolg_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = imbolg_event_happened
+		}			
+	}
+
+	option = {
+		name = britannic.159.a
+
+		add_friend = event_target:the_vassal
+			
+		hidden_tooltip = {
+			event_target:the_vassal = {
+				character_event = { id = britannic.160 days = 0 }
+			}
+		}
+	}
+}
+
+# commiserate at bonfire (vassal)
+character_event = {
+	id = britannic.160
+	desc = britannic.160.desc
+	#picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = britannic.160.a
+
+		custom_tooltip = {
+			add_friend = FROM
+		}
+	}
+}
+
+# get in an argument at bonfire (ruler)
+
+# get in an argument at bonfire (vassal)
+
+# candlelight procession
+
+# dryad wants a male ruler to make her preggers
+
+# male courtier comes on to female ruler, hoping to get lucky
+
+# spouse gives you the eyebrow wiggle
+
+# The Imbolg is over
+character_event = {
+	id = britannic.249
+	desc = britannic.249.desc
+	picture = GFX_evt_market
+
+	is_triggered_only = yes
+
+	option = {
+		name = britannic.249.a
+		remove_character_modifier = holding_imbolg
+		clr_character_flag = do_not_disturb
+		clr_character_flag = imbolg_event_happened
+		clr_character_flag = imbolg_begin
+		set_character_flag = recent_imbolg
+		clr_character_flag = imbolg_event_spring_cleaning
+		clr_character_flag = imbolg_event_dick_cakes
+		clr_character_flag = imbolg_event_holy_well
+		prestige = 10
+		piety = 10
+	}
+}
+
+##################################################################
+# 
+# Britannic
+# - Flavor Events
+#   britannic.250 - 299 reserved
+#
+##################################################################
+
+# yall be preggers, and someone wants to rub the bump for luck
+
+# something about fishing
+
+##################################################################
+# 
+# Britannic
+# - Fishing Trip (pilgrimage)
+#   britannic.300 - 349 reserved
+#
+##################################################################

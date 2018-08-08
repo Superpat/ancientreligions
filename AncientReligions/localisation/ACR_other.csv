@@ -32,6 +32,8 @@ ancrel.troublesome;Troublesome indeed...;;;;;;;;;;;;;;x
 ancrel.that_bastard;Bastard...;;;;;;;;;;;;;x
 ancrel.bummer;That's dissapointing...;;;;;;;;;;;;;x
 ancrel.fantastic;That's fantastic!;;;;;;;;;;;;;x
+ancrel.fool;That fool.;;;;;;;;;;;;;x
+ancrel.well_done;Well done!;;;;;;;;;;;;;x
 province_loses_prosperity_custom_tooltip;[Root.GetName] loses some of it's prosperity!;;;;;;;;;;;;;x
 province_prospers_custom_tooltip;[Root.GetName] becomes more prosperous!;;;;;;;;;;;;;x
 String_July;July;;;;;;;;;;;;;;x

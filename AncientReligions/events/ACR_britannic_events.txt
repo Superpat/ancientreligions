@@ -2003,7 +2003,7 @@ letter_event = {
 			wealth = -100
 		}
 
-		character_event = { id = ancrel.100}
+		character_event = { id = ancrel.101 }
 	}
 
 	option = { # wait, no, i lied. i'm broke :(
@@ -2020,19 +2020,6 @@ letter_event = {
 
 	option = {
 		name = ancrel.damn
-	}
-}
-
-character_event = {
-	id = britannic.100
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-		liege = {
-			character_event = { id = britannic.101 days = 1 }
-		}
 	}
 }
 
@@ -2201,7 +2188,7 @@ character_event = {
 
 	trigger = {
 		religion = britannic_pagan
-		age = 2
+		age = 3
 		NOR = {
 			age = 4
 			trait = sych
@@ -2215,6 +2202,7 @@ character_event = {
 	}
 }
 
+# child was never tumtha (liege)
 character_event = {
 	id = britannic.105
 	desc = britannic.105.desc
@@ -2254,6 +2242,8 @@ character_event = {
 	desc = britannic.150.desc
 	#picture = GFX_evt_parade
 
+	is_triggered_only = yes
+
 	immediate = {
 		set_character_flag = imbolg_begin
 	}
@@ -2273,8 +2263,7 @@ character_event = {
 	only_playable = yes
 	capable_only = yes
 	prisoner = no
-	war = no
-	has_character_flag = imbolg_begin
+	min_age = 16
 
 	trigger = {
 		in_command = no
@@ -2380,6 +2369,11 @@ character_event = {
 	desc = britannic.152.desc
 	picture = GFX_evt_market
 
+	only_playable = yes
+	capable_only = yes
+	prisoner = no
+	min_age = 16
+
 	trigger = {
 		in_command = no
 		
@@ -2406,6 +2400,11 @@ character_event = {
 	id = britannic.153
 	desc = britannic.153.desc
 	#picture = GFX
+
+	only_playable = yes
+	capable_only = yes
+	prisoner = no
+	min_age = 16
 
 	trigger = {
 		in_command = no
@@ -2550,7 +2549,6 @@ character_event = {
 	}
 }
 
-
 # money (random vassal)
 character_event = {
 	id = britannic.155
@@ -2616,6 +2614,11 @@ character_event = {
 	desc = britannic.158.desc
 	#picture = GFX
 
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+
 	trigger = {
 		in_command = no
 		
@@ -2666,6 +2669,11 @@ character_event = {
 	id = britannic.159
 	desc = britannic.159.desc
 	#picture = GFX
+
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
 
 	trigger = {
 		in_command = no
@@ -2756,12 +2764,663 @@ character_event = {
 }
 
 # get in an argument at bonfire (ruler)
+character_event = {
+	id = britannic.161
+	desc = britannic.161.desc
+	#picture = GFX
+
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+
+	trigger = {
+		in_command = no
+
+		OR = {
+			NOT = { has_character_flag = imbolg_event_happened }
+			had_character_flag = {
+				flag = imbolg_event_happened
+				days = 3
+			}
+		}
+
+		any_vassal = {
+			in_command = no
+			religion = britannic_pagan
+			is_incapable = no
+			NOT = { is_inaccessible_trigger = yes }
+			is_adult = yes
+			NOT = {
+				is_rival = ROOT
+			}
+		}
+
+		has_character_modifier = holding_imbolg
+		had_character_flag = {
+			flag = imbolg_begin
+			days = 3
+		}
+		NOT = { has_character_flag = imbolg_event_bonfire }
+	}
+
+	immediate = {
+		set_character_flag = imbolg_event_bonfire
+		set_character_flag = imbolg_event_happened
+
+		random_vassal = {
+			limit = {
+				in_command = no
+				religion = britannic_pagan
+				is_incapable = no
+				NOT = { is_inaccessible_trigger = yes }
+				is_adult = yes
+			}
+
+			save_event_target_as = the_vassal
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 200
+		
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = imbolg_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = imbolg_event_happened
+		}			
+	}
+
+	option = {
+		name = britannic.161.a
+
+		add_rival = event_target:the_vassal
+			
+		hidden_tooltip = {
+			event_target:the_vassal = {
+				character_event = { id = britannic.162 days = 0 }
+			}
+		}
+	}
+}
 
 # get in an argument at bonfire (vassal)
+character_event = {
+	id = britannic.162
+	desc = britannic.162.desc
+	#picture = GFX
+
+	is_triggered_only = yes
+
+	option = {
+		name = britannic.162.a
+
+		custom_tooltip = {
+			add_rival = FROM
+		}
+	}
+}
 
 # candlelight procession
+character_event = {
+	id = britannic.163
+	desc = britannic.163.desc
+	#picture = GFX
+
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+
+	trigger = {
+		in_command = no
+		
+		OR = {
+			NOT = { has_character_flag = imbolg_event_happened }
+			had_character_flag = {
+				flag = imbolg_event_happened
+				days = 3
+			}
+		}
+
+		has_character_modifier = holding_imbolg
+		had_character_flag = {
+			flag = imbolg_begin
+			days = 3
+		}
+		NOT = { has_character_flag = imbolg_event_candlelight_procession }
+	}
+
+	immediate = {
+		set_character_flag = imbolg_event_candlelight_procession
+		set_character_flag = imbolg_event_happened
+	}
+
+	mean_time_to_happen = {
+		days = 200
+		
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = imbolg_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = imbolg_event_happened
+		}			
+	}
+
+	option = {
+		name = OK
+
+		piety = 10
+	}
+}
+
+# divinators offering to discern baby gender
+character_event = {
+	id = britannic.164
+	desc = britannic.164.desc
+	picture = GFX_evt_jugglers
+
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+
+	trigger = {
+		any_vassal = {
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { is_inaccessible_trigger = yes }
+			is_adult = yes
+			is_priest = yes
+		}
+		capital_scope = {
+			NOT = { has_province_modifier = peasants_upset }
+		}
+		
+		OR = {
+			NOT = { has_character_flag = imbolg_event_happened }
+			had_character_flag = {
+				flag = imbolg_event_happened
+				days = 3
+			}
+		}			
+
+		has_character_modifier = holding_imbolg
+		had_character_flag = {
+			flag = imbolg_begin
+			days = 3
+		}
+		NOT = { has_character_flag = imbolg_event_divinators }
+	}
+	
+	immediate = {
+		set_character_flag = imbolg_event_happened
+		set_character_flag = imbolg_event_divinators
+	}	
+
+	mean_time_to_happen = {
+		days = 240
+		
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = imbolg_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = imbolg_event_happened
+		}			
+	}
+
+	option = {
+		name = britannic.164.a #Allow them
+		trigger = {
+			OR = {	
+				ai = no
+				NOT = { trait = zealous }
+			}
+		}		
+		piety = -5
+		random_vassal = {
+			limit = {
+				prisoner = no
+				NOT = { trait = incapable }
+				NOT = { is_inaccessible_trigger = yes }
+				is_adult = yes
+				is_priest = yes
+			}
+			opinion = {
+				modifier = opinion_irritated
+				who = ROOT
+				years = 5
+			}
+		}
+		if = {
+			limit = { trait = zealous }
+			remove_trait = zealous
+		}
+	}
+	option = {
+		name = britannic.164.b #Banish them
+		piety = 10
+		capital_scope = {
+			add_province_modifier = {
+				name = peasants_upset
+				duration = 365
+			}
+		}
+	}
+}
+
+# villager gives birth during festival, blessed day!
+character_event = {
+	id = britannic.165
+	desc = britannic.165.desc
+	#picture = GFX
+
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+
+	trigger = {
+		OR = {
+			NOT = { has_character_flag = imbolg_event_happened }
+			had_character_flag = {
+				flag = imbolg_event_happened
+				days = 3
+			}
+		}
+
+		has_character_modifier = holding_imbolg
+		had_character_flag = {
+			flag = imbolg_begin
+			days = 3
+		}
+		NOT = { has_character_flag = imbolg_event_birth }
+	}
+
+	immediate = {
+		set_character_flag = imbolg_event_happened
+		set_character_flag = imbolg_event_birth
+	}
+
+	option = {
+		name = britannic.165.a
+
+		piety = -100
+	}
+}
+
+# villager has stillborn during festival, britannia protect us!
+character_event = {
+	id = britannic.166
+	desc = britannic.166.desc
+	#picture = GFX
+
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	only_rulers = yes
+
+	trigger = {
+		OR = {
+			NOT = { has_character_flag = imbolg_event_happened }
+			had_character_flag = {
+				flag = imbolg_event_happened
+				days = 3
+			}
+		}
+
+		has_character_modifier = holding_imbolg
+		had_character_flag = {
+			flag = imbolg_begin
+			days = 3
+		}
+		NOT = { has_character_flag = imbolg_event_birth }
+	}
+
+	immediate = {
+		set_character_flag = imbolg_event_happened
+		set_character_flag = imbolg_event_birth
+	}
+
+	option = {
+		name = britannic.166.a
+
+		piety = 100
+	}
+}
 
 # dryad wants a male ruler to make her preggers
+character_event = {
+	id = britannic.167
+	hide_window = yes
+
+	only_playable = yes
+	capable_only = yes
+	prisoner = no
+	min_age = 16
+	only_men = yes
+
+	trigger = {
+		any_vassal = {
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { is_inaccessible_trigger = yes }
+			is_adult = yes
+			is_priest = yes
+			NOT = { age = 45 }
+			NOT = {
+				num_of_children = 3
+			}
+			NOT ={
+				spouse = {
+					character = ROOT
+				}
+			}
+		}
+		capital_scope = {
+			NOT = { has_province_modifier = peasants_upset }
+		}
+		
+		OR = {
+			NOT = { has_character_flag = imbolg_event_happened }
+			had_character_flag = {
+				flag = imbolg_event_happened
+				days = 3
+			}
+		}			
+
+		has_character_modifier = holding_imbolg
+		had_character_flag = {
+			flag = imbolg_begin
+			days = 3
+		}
+		NOT = { has_character_flag = imbolg_event_horny_dryad }	
+	}
+
+	immediate = {
+		set_character_flag = imbolg_event_horny_dryad
+		set_character_flag = imbolg_event_happened
+
+		random_vassal = {
+			limit = {
+				prisoner = no
+				NOT = { trait = incapable }
+				NOT = { is_inaccessible_trigger = yes }
+				is_adult = yes
+				is_priest = yes
+				NOT = { age = 45 }
+				NOT = {
+					any_child = {
+						count = 1
+					}
+				}
+			}
+
+			character_event = { id = britannic.168 days = 1 }
+		}
+	}
+}
+
+# horny dryad decides whether to proposition the ruler (dryad)
+character_event = {
+	id = britannic.168
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	option = { # proposition him
+		name = EVTOPTA452
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 2
+				FROM = {
+					ROOT = { is_attracted_to_prev = yes }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				spouse = {
+					ROOT = { likes_better_than = { who = FROM than = PREV } }
+				}
+			}
+			modifier = {
+				factor = 1.2
+				trait = lustful
+			}
+			modifier = {
+				factor = 1.2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 1.2
+				num_of_children = 2
+			}
+			modifier = {
+				factor = 1.2
+				NOT = {
+					num_of_children = 2
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					num_of_children = 1
+				}
+			}
+		}
+		
+		FROM = { character_event = { id = britannic.169 days = 0 } }
+	}
+
+	option = { # i ain't no hussy
+		name = EVTOPTB452
+		ai_chance = {
+			factor = 67
+			modifier = {
+				factor = 10
+				trait = chaste
+			}
+			modifier = {
+				factor = 2
+				trait = shy
+			}
+			modifier = {
+				factor = 0.5
+				trait = trusting
+			}
+			modifier = {
+				factor = 0.1
+				FROM = {
+					OR = {
+						trait = seducer
+						trait = seductress
+					}
+				}
+			}
+			modifier = {
+				factor = 5
+				FROM = {
+					ROOT = { is_attracted_to_prev = no }
+				}
+			}
+		}
+	}
+}
+
+# male ruler is propositioned (ruler)
+character_event = {
+	id = britannic.169
+	desc = britannic.169
+	#picture= GFX
+
+	is_triggered_only = yes
+
+	option = { # heck yeah!
+		name = britannic.169.a
+		
+		add_lover = FROM
+		
+		hidden_tooltip = {
+			FROM = { character_event = { id = 453 tooltip = EVTTOOLTIP453 } }
+			# Chance of impregnation
+			if = {
+				limit = {
+					fertility = 0.25
+					FROM = { fertility = 0.25 }
+					OR = {
+						AND = {
+							is_female = yes
+							FROM = { is_female = no }
+							NOT = { age = 45 }
+						}
+						AND = {
+							is_female = no
+							FROM = {
+								is_female = yes
+								NOT = { age = 45 }
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						fertility = 0.5
+						FROM = { fertility = 0.5 }
+					}
+					random_list = {
+						75 = {
+							if = { 
+								limit = {
+									OR = {
+										is_female = yes
+										FROM = {
+											is_female = yes
+										}
+									}
+								}
+								impregnate = FROM
+								break = yes
+							}
+							impregnate_cuckoo = FROM
+						}
+						25 = { }
+					}
+					break = yes
+				}
+				
+				random_list = {
+					50 = {
+						if = { 
+							limit = {
+								OR = {
+									is_female = yes 
+									FROM = {
+										is_female = yes
+									}
+								}
+							}
+							impregnate = FROM
+							break = yes
+						}
+						impregnate_cuckoo = FROM
+					}
+					50 = { }
+				}
+			
+			}		
+		}
+	}
+
+	option = { # sure, but just this once!
+		name = britannic.169.b
+
+		hidden_tooltip = {
+			# Chance of impregnation
+			if = {
+				limit = {
+					fertility = 0.25
+					FROM = { fertility = 0.25 }
+					OR = {
+						AND = {
+							is_female = yes
+							FROM = { is_female = no }
+							NOT = { age = 45 }
+						}
+						AND = {
+							is_female = no
+							FROM = {
+								is_female = yes
+								NOT = { age = 45 }
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						fertility = 0.5
+						FROM = { fertility = 0.5 }
+					}
+					random_list = {
+						75 = {
+							if = { 
+								limit = {
+									OR = {
+										is_female = yes
+										FROM = {
+											is_female = yes
+										}
+									}
+								}
+								impregnate = FROM
+								break = yes
+							}
+							impregnate_cuckoo = FROM
+						}
+						25 = { }
+					}
+					break = yes
+				}
+				
+				random_list = {
+					50 = {
+						if = { 
+							limit = {
+								OR = {
+									is_female = yes 
+									FROM = {
+										is_female = yes
+									}
+								}
+							}
+							impregnate = FROM
+							break = yes
+						}
+						impregnate_cuckoo = FROM
+					}
+					50 = { }
+				}
+			
+			}		
+		}
+	}
+
+	option = {
+		name = britannic.169.c
+
+		reverse_opinion = { who = FROM modifier = ancrel_dissapointed }
+	}
+}
 
 # male courtier comes on to female ruler, hoping to get lucky
 
@@ -2801,6 +3460,8 @@ character_event = {
 # yall be preggers, and someone wants to rub the bump for luck
 
 # something about fishing
+
+# someone is running a hustle, selling fake sea water for tumtha
 
 ##################################################################
 # 

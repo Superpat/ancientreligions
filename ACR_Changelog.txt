@@ -17,6 +17,7 @@ General:
   - Seneca the Younger, Roman Promethean Pagan, master scholar.
   - Lucan the Younger, Roman Hellenic Pagan, master scholar.
  - Improved Nile River Flooding event to prevent repeated messages.
+ - Added requirements in Atenic and Kemetic priesthood restoration decisions to have the temples of respectively Akhetaten and Luxor restored
 
 Celtic:
  - Fixes bug where the Unfit King Beta game rule was being ignored.

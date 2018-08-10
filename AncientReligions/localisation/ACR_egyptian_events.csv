@@ -16,6 +16,7 @@ restore_luxor;Restore Luxor Temple;Restaurer le Temple de Luxor;Restore Luxor Te
 restore_luxor_desc;Restore Luxor Temple to its former glory.;Restaurer le Temple de Luxor à la hauteur de son lustre d'antan.;Restore Luxor Temple to its former glory.;;Restore Luxor Temple to its former glory.;;;;;;;;;x
 restore_priesthood_egyptian_pagan;Restore the Paragon Xroj;Restaurer le Parangon Xroj;Restore the Paragon Xroj;;Restore the Paragon Xroj;;;;;;;;;x
 restore_priesthood_egyptian_pagan_desc;Restore the Paragon Xroj.;Restaurer le Parangon Xroj;Restore the Paragon Xroj;;Restore the Paragon Xroj;;;;;;;;;x
+luxor_restored_condition;The temple of Luxor is restored;;;;;;;;;;;;;x
 build_pyramid;Build a Pyramid;Construire une Pyramide;Build a Pyramid;;Build a Pyramid;;;;;;;;;x
 build_pyramid_desc;Build yourself a mighty tomb;Vous construire une tombe majestueuse.;Build yourself a mighty tomb;;Build yourself a mighty tomb;;;;;;;;;x
 organize_anubis;Organize the Anubis Guard;Mettre sur pied la Garde d'Anubis;Organize the Anubis Guard;;Organize the Anubis Guard;;;;;;;;;x
@@ -28,6 +29,7 @@ organize_burning_blades;Organize the Burning Blades;;;;;;;;;;;;;x
 organize_burning_blades_desc;Organize the Burning Blades Holy Order;;;;;;;;;;;;;x
 restore_priesthood_aten_pagan;Restore the Priesthood of Aten;;;;;;;;;;;;;
 restore_priesthood_aten_pagan_desc;Establish yourself as the Meryaten, highest priest of the Aten faith, and living god!;;;;;;;;;;;;;x
+akhetaten_restored_condition;The temple of Akhetaten is restored;;;;;;;;;;;;;x
 restore_akhetaten;Restore Akhetaten;;;;;;;;;;;;;x
 restore_akhetaten_desc;Restore the ancient center of Aten's worship, Akhetaten.;;;;;;;;;;;;;x
 ###### Events;;;;;;;;;;;;;;x

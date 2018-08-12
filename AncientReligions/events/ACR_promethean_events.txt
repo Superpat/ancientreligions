@@ -3550,7 +3550,7 @@ character_event = {
 character_event = {
 	id = promethean.484
 	desc = promethean.484.desc
-	picture = GFX_evt_juggler #placeholder
+	picture = GFX_evt_jugglers #placeholder
 
 	trigger = {
 		has_character_modifier = holding_unbinding_festival

@@ -207,6 +207,11 @@ spriteTypes = {
 		texturefile = "gfx\\event_pictures\ACR\priests_in_forest.tga"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_evt_Ruler_listening_to_supplicant"
+		texturefile = "gfx\\event_pictures\\Ruler_listening_to_supplicant.tga"
+		allwaystransparent = yes
+	}
 	
 	# Decision icons
 	spriteType = {

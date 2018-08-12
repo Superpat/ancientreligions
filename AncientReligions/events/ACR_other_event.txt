@@ -637,7 +637,7 @@ character_event = {
 character_event = {
 	id = ancrel.9024
 	desc = ancrel.9024.desc
-	picture = GFX_EVT_warrior_banners
+	picture = GFX_evt_warrior_banners
 
 	is_triggered_only = yes
 

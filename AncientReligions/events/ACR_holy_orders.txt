@@ -161,7 +161,7 @@ character_event = {
 character_event = {
 	id = ancrel.9101
 	desc = ancrel.9101.desc
-	picture = GFX_EVT_warrior_banners
+	picture = GFX_evt_warrior_banners
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -348,7 +348,7 @@ letter_event = {
 province_event = {
 	id = ancrel.9108
 	desc = ancrel.9108.desc
-	picture = GFX_EVT_castle_construction
+	picture = GFX_evt_castle_construction
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes

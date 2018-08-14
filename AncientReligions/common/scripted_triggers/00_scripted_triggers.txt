@@ -1200,11 +1200,7 @@ can_be_spiritual_trigger = {
 			OR = {
 				NOT = { religion_openly_in_celtic_subgroup_trigger = yes }
 
-				trait = druid
-				trait = bad_druid
-
-				trait = dryad
-				trait = bad_dryad
+				celtic_clergy_trigger = yes
 			}
 		}
 		has_character_flag = special_spiritual

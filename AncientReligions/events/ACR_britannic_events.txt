@@ -472,8 +472,9 @@ character_event = {
 		is_ruler = yes
 		is_theocracy = no
 		has_global_flag = acr_arch_dryad_created
-		NOR = { # she's cool so long as you have at least one dryad on your council
+		NOR = { # she's cool so long as you have at least two dryads on your council
 			any_voter = {
+				count = 2
 				trait = dryad
 			}
 		}
@@ -841,15 +842,23 @@ character_event = {
 character_event = {
 	id = britannic.25
 	desc = {
-		text = britannic.25.desc.zeus
+		text = britannic.25.contract
 		trigger = { 
-			has_dlc = "Zeus"
+			NOT = { has_dlc = "Zeus" }
+			has_character_flag = acr_reduce_contract_law
 		}
 	}
 	desc = {
-		text = britannic.25.desc.vanilla
-		trigger = {
+		text = britannic.25.tax
+		trigger = { 
 			NOT = { has_dlc = "Zeus" }
+			has_character_flag = acr_reduce_tax_law
+		}
+	}
+	desc = {
+		text = britannic.25.zeus
+		trigger = {
+			has_dlc = "Zeus"
 		}
 	}
 	#picture = GFX
@@ -914,9 +923,7 @@ character_event = {
 # The Arch-Dryad gives money to someone fighting infidels
 character_event = {
 	id = britannic.50
-	desc = britannic.50.desc
-	picture = GFX_evt_battle
-	border = GFX_event_normal_frame_religion
+	hide_window = yes
 	
 	min_age = 16
 	only_playable = yes
@@ -1037,16 +1044,16 @@ character_event = {
 
 letter_event = {
 	id = britannic.51
-	desc = britannic.51
+	desc = britannic.51.desc
 	border = GFX_event_letter_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
 		trigger = {
-			NOT = { reverse_opinion = { who = FROM value = 30 } }
+			NOT = { reverse_opinion = { who = FROM value = 50 } }
 		}
-		name = britannic.51
+		name = britannic.51.a
 		wealth = 200
 		set_character_flag = money_from_the_archdryad
 	}
@@ -1055,7 +1062,7 @@ letter_event = {
 		trigger = {
 			reverse_opinion = { who = FROM value = 50 }
 		}
-		name = britannic.51
+		name = britannic.51.a
 		wealth = 500
 		set_character_flag = money_from_the_archdryad
 	}
@@ -1064,9 +1071,7 @@ letter_event = {
 # Arch-Dryad offers absolution for Kinslaying
 character_event = {
 	id = britannic.52
-	desc = britannic.52.desc
-	picture = GFX_evt_pope
-	border = GFX_event_normal_frame_religion
+	hide_window = yes
 	
 	min_age = 16
 	only_capable = yes
@@ -1106,7 +1111,7 @@ character_event = {
 	}
 	
 	option = {
-		name = britannic.52.a
+		name = OK
 		ai_chance = { factor = 100 }
 		
 		random_independent_ruler = {
@@ -1123,14 +1128,14 @@ character_event = {
 	}
 	
 	option = {
-		name = britannic.52.b	#incase someone plays the pope.. players will mod it in, so might as well give them a fun option here.
+		name = OK
 		ai_chance = { factor = 0 }
 	}
 }
 
 character_event = {
 	id = britannic.53
-	desc = britannic.53
+	desc = britannic.53.desc
 	picture = GFX_evt_pope
 	border = GFX_event_normal_frame_religion
 	
@@ -1170,11 +1175,10 @@ character_event = {
 
 character_event = {
 	id = britannic.54
-	desc = britannic.54.desc
-	picture = GFX_evt_knight_kneeling
-	border = GFX_event_normal_frame_religion
+	hide_window = yes
 	
 	is_triggered_only = yes
+
 	option = {
 		name = britannic.54.a
 		prestige = 10
@@ -1183,9 +1187,7 @@ character_event = {
 
 character_event = {
 	id = britannic.55
-	desc = britannic.55
-	picture = GFX_evt_torture
-	border = GFX_event_normal_frame_religion
+	hide_window = yes
 	
 	is_triggered_only = yes
 	
@@ -1855,7 +1857,7 @@ character_event = {
 	option = {
 		trigger = {
 			NOR = {
-				has_character_flag = cash
+				has_character_flag = relief
 				has_character_flag = upgrade_hospital
 			}
 		}
@@ -2003,7 +2005,7 @@ letter_event = {
 			wealth = -100
 		}
 
-		character_event = { id = ancrel.101 }
+		character_event = { id = ancrel.101 days = 7 }
 	}
 
 	option = { # wait, no, i lied. i'm broke :(
@@ -2088,7 +2090,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = OK
+		name = britannic.102.a
 
 		event_target:the_child = {
 			add_character_modifier = {
@@ -2103,8 +2105,17 @@ long_character_event = {
 			}
 		}
 
-		piety = 100
+		piety = 25
 		prestige = 25
+
+		event_target:the_child = {
+			mother = {
+				piety = 75
+			}
+			father = {
+				piety = 75
+			}
+		}
 	}
 }
 
@@ -2139,7 +2150,7 @@ long_character_event = {
 	option = {
 		name = britannic.103.a
 
-		piety = 10
+		piety = -10
 
 		random_list = {
 			15 = {
@@ -2149,10 +2160,16 @@ long_character_event = {
 		}
 
 		event_target:the_child = {
-			piety = -100
 			add_character_modifier = {
 				modifier = bad_tumtha
 				days = 2190
+			}
+
+			mother = {
+				piety = -75
+			}
+			father = {
+				piety = -75
 			}
 		}
 	}
@@ -2160,7 +2177,7 @@ long_character_event = {
 	option = {
 		name = britannic.103.b
 
-		piety = -10
+		piety = -25
 
 		random_list = {
 			15 = {
@@ -2170,10 +2187,16 @@ long_character_event = {
 		}
 
 		event_target:the_child = {
-			piety = -100
 			add_character_modifier = {
 				modifier = bad_tumtha
 				days = 2190
+			}
+
+			mother = {
+				piety = -75
+			}
+			father = {
+				piety = -75
 			}
 		}
 	}
@@ -2241,6 +2264,7 @@ character_event = {
 	id = britannic.150
 	desc = britannic.150.desc
 	#picture = GFX_evt_parade
+	border = GFX_event_normal_frame_religion
 
 	is_triggered_only = yes
 
@@ -2326,10 +2350,12 @@ character_event = {
 
 	# return their things
 	option = {
-		name = "EVTOPTA4105"
+		name = britannic.151.a
 		trigger = {
-			NOT = { trait = greedy }
-			NOT = { trait = deceitful }
+			NOR = { 
+				trait = greedy
+				trait = deceitful
+			}
 		}
 		event_target:close_relative = {
 			opinion = {
@@ -2342,7 +2368,7 @@ character_event = {
 
 	# sell it and donate the money to the church
 	option = {
-		name = "EVTOPTC4105"
+		name = britannic.151.b
 		trigger = {
 			OR = {
 				trait = kind
@@ -2355,7 +2381,7 @@ character_event = {
 
 	# sell it and keep the money
 	option = {
-		name = "EVTOPTD4105"
+		name = britannic.151.c
 		trigger = {
 			trait = greedy
 		}
@@ -2391,6 +2417,17 @@ character_event = {
 			days = 3
 		}
 		NOT = { has_character_flag = imbolg_event_dick_cakes }
+	}
+
+	option = {
+		name = britannic.152.a
+	}
+
+	option = {
+		name = britannic.152.b
+
+		wealth = -1
+		piety = 10
 	}
 }
 
@@ -2529,7 +2566,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = { # approve
-		name = ancrel.fool
+		name = ancrel.well_done
 
 		hidden_tooltip = {
 			FROM = {
@@ -2539,7 +2576,7 @@ character_event = {
 	}
 
 	option = { # disapprove
-		name = ancrel.well_done
+		name = ancrel.fool
 
 		hidden_tooltip = {
 			FROM = {
@@ -2558,7 +2595,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = { # approve
-		name = ancrel.fool
+		name = ancrel.well_done
 
 		hidden_tooltip = {
 			FROM = {
@@ -2568,7 +2605,7 @@ character_event = {
 	}
 
 	option = { # disapprove
-		name = ancrel.well_done
+		name = ancrel.fool
 
 		hidden_tooltip = {
 			FROM = {
@@ -2658,7 +2695,7 @@ character_event = {
 	}
 
 	option = {
-		name = OK
+		name = britannic.158.a
 
 		piety = 10
 	}
@@ -3055,7 +3092,23 @@ character_event = {
 	option = {
 		name = britannic.165.a
 
-		piety = -100
+		piety = 25
+
+		random = {
+			chance = 20
+			add_trait = zealous
+		}
+	}
+
+	option = {
+		name = britannic.165.b
+
+		piety = 10
+
+		random = {
+			chance = 20
+			add_trait = cynical
+		}
 	}
 }
 
@@ -3095,7 +3148,23 @@ character_event = {
 	option = {
 		name = britannic.166.a
 
-		piety = 100
+		piety = -10
+
+		random = {
+			chance = 20
+			add_trait = zealous
+		}
+	}
+
+	option = {
+		name = britannic.166.b
+
+		piety = -25
+
+		random = {
+			chance = 20
+			add_trait = cynical
+		}
 	}
 }
 
@@ -3126,9 +3195,6 @@ character_event = {
 					character = ROOT
 				}
 			}
-		}
-		capital_scope = {
-			NOT = { has_province_modifier = peasants_upset }
 		}
 		
 		OR = {
@@ -3423,8 +3489,487 @@ character_event = {
 }
 
 # male courtier comes on to female ruler, hoping to get lucky
+character_event = {
+	id = britannic.170
+	hide_window = yes
+
+	only_playable = yes
+	capable_only = yes
+	prisoner = no
+	min_age = 16
+	only_women = yes
+
+	trigger = {
+		any_vassal = {
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { is_inaccessible_trigger = yes }
+			is_adult = yes
+			is_landed = no
+			is_female = no
+			NOT = { age = 35 }
+			NOT ={
+				spouse = {
+					character = ROOT
+				}
+			}
+		}
+		
+		OR = {
+			NOT = { has_character_flag = imbolg_event_happened }
+			had_character_flag = {
+				flag = imbolg_event_happened
+				days = 3
+			}
+		}			
+
+		has_character_modifier = holding_imbolg
+		had_character_flag = {
+			flag = imbolg_begin
+			days = 3
+		}
+		NOT = { has_character_flag = imbolg_event_horny_courtier }	
+	}
+
+	immediate = {
+		set_character_flag = imbolg_event_horny_courtier
+		set_character_flag = imbolg_event_happened
+
+		random_vassal = {
+			limit = {
+				prisoner = no
+				NOT = { trait = incapable }
+				NOT = { is_inaccessible_trigger = yes }
+				is_adult = yes
+				is_landed = no
+				is_female = no
+				NOT = { age = 35 }
+				NOT ={
+					spouse = {
+						character = ROOT
+					}
+				}
+			}
+
+			character_event = { id = britannic.171 days = 1 }
+		}
+	}
+}
+
+# horny courtier decides whether to proposition the ruler (courtier)
+character_event = {
+	id = britannic.171
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	option = { # proposition her
+		name = EVTOPTA452
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 2
+				FROM = {
+					ROOT = { is_attracted_to_prev = yes }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				spouse = {
+					ROOT = { likes_better_than = { who = FROM than = PREV } }
+				}
+			}
+			modifier = {
+				factor = 1.2
+				trait = lustful
+			}
+			modifier = {
+				factor = 1.2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 1.2
+				num_of_children = 2
+			}
+			modifier = {
+				factor = 1.2
+				NOT = {
+					num_of_children = 2
+				}
+			}
+			modifier = {
+				factor = 1.5
+				is_married = no
+			}
+			modifier = {
+				factor = 2
+				FROM = { is_married = no }
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					num_of_children = 1
+				}
+			}
+		}
+		
+		FROM = { character_event = { id = britannic.172 days = 0 } }
+	}
+
+	option = { # i ain't no hussy
+		name = EVTOPTB452
+		ai_chance = {
+			factor = 67
+			modifier = {
+				factor = 10
+				trait = chaste
+			}
+			modifier = {
+				factor = 2
+				trait = shy
+			}
+			modifier = {
+				factor = 0.5
+				trait = trusting
+			}
+			modifier = {
+				factor = 0.1
+				FROM = {
+					OR = {
+						trait = seducer
+						trait = seductress
+					}
+				}
+			}
+			modifier = {
+				factor = 1.2
+				is_married = yes
+			}
+			modifier = {
+				factor = 1.2
+				FROM = { is_married = yes }
+			}
+			modifier = {
+				factor = 5
+				FROM = {
+					ROOT = { is_attracted_to_prev = no }
+				}
+			}
+		}
+	}
+}
+
+# female ruler is propositioned (ruler)
+character_event = {
+	id = britannic.172
+	desc = britannic.172.desc
+	#picture= GFX
+
+	is_triggered_only = yes
+
+	option = { # heck yeah!
+		name = britannic.172.a
+		
+		add_lover = FROM
+		
+		hidden_tooltip = {
+			FROM = { character_event = { id = 453 tooltip = EVTTOOLTIP453 } }
+			# Chance of impregnation
+			if = {
+				limit = {
+					fertility = 0.25
+					FROM = { fertility = 0.25 }
+					OR = {
+						AND = {
+							is_female = yes
+							FROM = { is_female = no }
+							NOT = { age = 45 }
+						}
+						AND = {
+							is_female = no
+							FROM = {
+								is_female = yes
+								NOT = { age = 45 }
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						fertility = 0.5
+						FROM = { fertility = 0.5 }
+					}
+					random_list = {
+						75 = {
+							if = { 
+								limit = {
+									OR = {
+										is_female = yes
+										FROM = {
+											is_female = yes
+										}
+									}
+								}
+								impregnate = FROM
+								break = yes
+							}
+							impregnate_cuckoo = FROM
+						}
+						25 = { }
+					}
+					break = yes
+				}
+				
+				random_list = {
+					50 = {
+						if = { 
+							limit = {
+								OR = {
+									is_female = yes 
+									FROM = {
+										is_female = yes
+									}
+								}
+							}
+							impregnate = FROM
+							break = yes
+						}
+						impregnate_cuckoo = FROM
+					}
+					50 = { }
+				}
+			
+			}		
+		}
+	}
+
+	option = { # sure, but just this once!
+		name = britannic.172.b
+
+		hidden_tooltip = {
+			# Chance of impregnation
+			if = {
+				limit = {
+					fertility = 0.25
+					FROM = { fertility = 0.25 }
+					OR = {
+						AND = {
+							is_female = yes
+							FROM = { is_female = no }
+							NOT = { age = 45 }
+						}
+						AND = {
+							is_female = no
+							FROM = {
+								is_female = yes
+								NOT = { age = 45 }
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						fertility = 0.5
+						FROM = { fertility = 0.5 }
+					}
+					random_list = {
+						75 = {
+							if = { 
+								limit = {
+									OR = {
+										is_female = yes
+										FROM = {
+											is_female = yes
+										}
+									}
+								}
+								impregnate = FROM
+								break = yes
+							}
+							impregnate_cuckoo = FROM
+						}
+						25 = { }
+					}
+					break = yes
+				}
+				
+				random_list = {
+					50 = {
+						if = { 
+							limit = {
+								OR = {
+									is_female = yes 
+									FROM = {
+										is_female = yes
+									}
+								}
+							}
+							impregnate = FROM
+							break = yes
+						}
+						impregnate_cuckoo = FROM
+					}
+					50 = { }
+				}
+			
+			}		
+		}
+	}
+
+	option = {
+		name = britannic.172.c
+
+		reverse_opinion = { who = FROM modifier = ancrel_dissapointed }
+	}
+}
 
 # spouse gives you the eyebrow wiggle
+character_event = {
+	id = britannic.173
+	hide_window = yes
+
+	only_playable = yes
+	capable_only = yes
+	prisoner = no
+	min_age = 16
+
+	trigger = {
+		any_spouse = {
+			religion = britannic_pagan
+
+			opinion = { who = PREV value = 30 }
+		}
+		
+		OR = {
+			NOT = { has_character_flag = imbolg_event_happened }
+			had_character_flag = {
+				flag = imbolg_event_happened
+				days = 3
+			}
+		}			
+
+		has_character_modifier = holding_imbolg
+		had_character_flag = {
+			flag = imbolg_begin
+			days = 3
+		}
+		NOT = { has_character_flag = imbolg_event_horny_spouse }	
+	}
+
+	immediate = {
+		set_character_flag = imbolg_event_horny_spouse
+		set_character_flag = imbolg_event_happenes
+
+		spouse = {
+			character_event = { id = britannic.174 days = 1 }
+		}
+	}
+}
+
+# ping off spouse
+character_event = {
+	id = britannic.174
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		FROM = { character_event = { id = britannic.175 days = 1 } }
+	}
+}
+
+# do you wiggle back?
+character_event = {
+	id = britannic.175
+	desc = britannic.175.desc
+	#picture = GFX
+
+	option = { # giggity
+		name = britannic.175.a
+
+		hidden_tooltip = {
+			FROM = { character_event = { id = 453 tooltip = EVTTOOLTIP453 } }
+			# Chance of impregnation
+			if = {
+				limit = {
+					fertility = 0.25
+					FROM = { fertility = 0.25 }
+					OR = {
+						AND = {
+							is_female = yes
+							FROM = { is_female = no }
+							NOT = { age = 45 }
+						}
+						AND = {
+							is_female = no
+							FROM = {
+								is_female = yes
+								NOT = { age = 45 }
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						fertility = 0.5
+						FROM = { fertility = 0.5 }
+					}
+					random_list = {
+						75 = {
+							if = { 
+								limit = {
+									OR = {
+										is_female = yes
+										FROM = {
+											is_female = yes
+										}
+									}
+								}
+								impregnate = FROM
+								break = yes
+							}
+							impregnate_cuckoo = FROM
+						}
+						25 = { }
+					}
+					break = yes
+				}
+				
+				random_list = {
+					50 = {
+						if = { 
+							limit = {
+								OR = {
+									is_female = yes 
+									FROM = {
+										is_female = yes
+									}
+								}
+							}
+							impregnate = FROM
+							break = yes
+						}
+						impregnate_cuckoo = FROM
+					}
+					50 = { }
+				}
+			}		
+		}		
+	}
+
+	option = { # no thanks
+		name = britannic.175.b
+
+		FROM = {
+			opinion = { who = ROOT modifier = ancrel_dissapointed }
+		}
+	}
+
+	option = { # sorry babe, i have a headache (diplo)
+		name = britannic.175.c
+		tooltip_info = diplomacy
+	}
+}
 
 # The Imbolg is over
 character_event = {
@@ -3444,6 +3989,13 @@ character_event = {
 		clr_character_flag = imbolg_event_spring_cleaning
 		clr_character_flag = imbolg_event_dick_cakes
 		clr_character_flag = imbolg_event_holy_well
+		clr_character_flag = imbolg_event_bonfire
+		clr_character_flag = imbolg_event_candlelight_procession
+		clr_character_flag = imbolg_event_divinators
+		clr_character_flag = imbolg_event_birth
+		clr_character_flag = imbolg_event_horny_dryad
+		clr_character_flag = imbolg_event_horny_courier
+		clr_character_flag = imbolg_event_horny_spouse
 		prestige = 10
 		piety = 10
 	}
@@ -3459,9 +4011,9 @@ character_event = {
 
 # yall be preggers, and someone wants to rub the bump for luck
 
-# something about fishing
-
 # someone is running a hustle, selling fake sea water for tumtha
+
+# something about fishing
 
 ##################################################################
 # 

@@ -105,9 +105,9 @@ decisions = {
 			wealth = 25
 			prisoner = no
 			NOT = { is_inaccessible_trigger = yes }
-			month = 4
+			month = 1
 			NOT = {
-				month = 7
+				month = 4
 			}
 			custom_tooltip = {
 				text = is_not_busy_trigger_tooltip

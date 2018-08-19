@@ -68,6 +68,17 @@ character_event = {
 				character_event = { id = britannic.2 days = 0 }
 			}
 		}
+
+		add_trait = child_of_dryad
+
+		if = {
+			limit = {
+				# stuff?
+				trait = bastard
+			}
+
+			remove_trait = bastard
+		}
 	}
 }
 
@@ -457,6 +468,7 @@ character_event = {
 # 
 # Britannic
 # - Arch-Dryad Interferes
+# - Arch-Dryad Chafes Under Secular Overlord
 #   britannic.20 - 49 reserved
 #
 ##################################################################
@@ -478,14 +490,11 @@ character_event = {
 				trait = dryad
 			}
 		}
-		OR = {
-			NOT = { has_character_flag = archdryad_noninterference }
-			had_character_flag = { flag = archdryad_noninterference days = 1825 }
-		}
+		archdryad_non_interference_trigger = no
 	}
 
 	mean_time_to_happen = {
-		months = 24
+		months = 120
 
 		modifier = {
 			factor = 1.5
@@ -769,6 +778,8 @@ character_event = {
 				NOT = { has_dlc = "Zeus" }
 			}
 		}
+
+		archdryad_non_interference_trigger = no
 	}
 
 	immediate = {
@@ -911,6 +922,34 @@ character_event = {
 		}
 	}
 }
+
+character_event = {
+	id = britannic.26
+	hide_window = yes
+
+	immediate = {
+		FROM = { character_event = { id = britannic.27 days = 6 } }
+	}
+}
+
+letter_event = {
+	id = britannic.27
+	desc = britannic.27.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = britannic.27.a
+		custom_tooltip = { text = britannic.27.tt }
+		set_character_flag = archdryad_noninterference
+	}
+}
+
+# Arch-Dryad demands control of a County
+
+# Arch-Dryad demands control of a Duchy
+
+# Arch-Dryad demands to be released as a vassal
 
 ##################################################################
 # 
@@ -1473,6 +1512,7 @@ character_event = {
 	trigger = {
 		controls_religion = yes	
 		religion = britannic_pagan
+		has_global_flag = ancrel_debug_dryad_artifact
 
 		any_playable_ruler = {
 			religion = ROOT
@@ -1482,7 +1522,7 @@ character_event = {
 			# don't have the archdryad bombard the player
 			NOR = {
 				had_character_flag = { flag = money_from_the_archdryad days = 365 }
-				had_character_flag = { flag = soldier_from_archdryad_@ROOT days = 365 }
+				had_character_flag = { flag = soldier_from_the_archdryad days = 365 }
 				excommunicated_for = ROOT
 			}
 			any_current_enemy = {
@@ -1490,16 +1530,7 @@ character_event = {
 			}
 			NOT = { war_with = ROOT }
 			reverse_opinion = { who = ROOT value = 30 }
-			OR = {
-				NOT = { has_character_flag = artifact_from_archdryad_@ROOT }
-				OR = {
-					had_character_flag = { flag = artifact_from_archdryad_@ROOT days = 730 }
-					AND = {
-						ai = yes
-						had_character_flag = { flag = artifact_from_archdryad_@ROOT days = 365 }
-					}
-				}
-			}
+			NOT = { has_character_flag = artifact_from_archdryad_@ROOT }
 		}
 	}
 	
@@ -1521,7 +1552,7 @@ character_event = {
 				# don't have the archdryad bombard the player
 				NOR = {
 					had_character_flag = { flag = money_from_the_archdryad days = 365 }
-					had_character_flag = { flag = soldier_from_archdryad_@ROOT days = 365 }
+					had_character_flag = { flag = soldier_from_the_archdryad days = 365 }
 					excommunicated_for = ROOT
 				}
 				any_current_enemy = {
@@ -1529,16 +1560,7 @@ character_event = {
 				}
 				NOT = { war_with = ROOT }
 				reverse_opinion = { who = ROOT value = 30 }
-				OR = {
-					NOT = { has_character_flag = artifact_from_archdryad_@ROOT }
-					OR = {
-						had_character_flag = { flag = artifact_from_archdryad_@ROOT days = 730 }
-						AND = {
-							ai = yes
-							had_character_flag = { flag = artifact_from_archdryad_@ROOT days = 365 }
-						}
-					}
-				}
+				NOT = { has_character_flag = artifact_from_archdryad_@ROOT }
 			}
 			
 			letter_event = { id = britannic.60 tooltip = britannic.60.tt }
@@ -2103,6 +2125,8 @@ long_character_event = {
 				}
 				religion = britannic_pagan
 			}
+
+			set_character_flag = tumtha
 		}
 
 		piety = 25
@@ -2171,6 +2195,8 @@ long_character_event = {
 			father = {
 				piety = -75
 			}
+
+			set_character_flag = tumtha
 		}
 	}
 
@@ -2198,6 +2224,8 @@ long_character_event = {
 			father = {
 				piety = -75
 			}
+
+			set_character_flag = tumtha
 		}
 	}
 }
@@ -2262,6 +2290,7 @@ character_event = {
 # Opening ceremony is a sunwise parade around the temple
 character_event = {
 	id = britannic.150
+	title = britannic.imbolg_title
 	desc = britannic.150.desc
 	#picture = GFX_evt_parade
 	border = GFX_event_normal_frame_religion
@@ -2281,6 +2310,7 @@ character_event = {
 # belonging to a close relative
 character_event = {
 	id = britannic.151
+	title = britannic.imbolg_title
 	desc = britannic.151.desc
 	#picture = GFX_evt_jugglers
 
@@ -2392,6 +2422,7 @@ character_event = {
 # dick cakes
 character_event = {
 	id = britannic.152
+	title = britannic.imbolg_title
 	desc = britannic.152.desc
 	picture = GFX_evt_market
 
@@ -2435,6 +2466,7 @@ character_event = {
 # do you leave a clootie or money?
 character_event = {
 	id = britannic.153
+	title = britannic.imbolg_title
 	desc = britannic.153.desc
 	#picture = GFX
 
@@ -2560,6 +2592,7 @@ character_event = {
 # clootie (random vassal)
 character_event = {
 	id = britannic.154
+	title = britannic.imbolg_title
 	desc = britannic.154.desc
 	#picture = GFX
 
@@ -2589,6 +2622,7 @@ character_event = {
 # money (random vassal)
 character_event = {
 	id = britannic.155
+	title = britannic.imbolg_title
 	desc = britannic.155.desc
 	#picture = GFX
 
@@ -2618,6 +2652,7 @@ character_event = {
 # vassal approves (o.c.)
 character_event = {
 	id = britannic.156
+	title = britannic.imbolg_title
 	desc = britannic.156.desc
 	#picture = GFX
 
@@ -2633,6 +2668,7 @@ character_event = {
 # vassal disapproves (o.c.)
 character_event = {
 	id = britannic.157
+	title = britannic.imbolg_title
 	desc = britannic.157.desc
 	#picture = GFX
 
@@ -2648,6 +2684,7 @@ character_event = {
 # making blackthorn solar wheels (brigid)
 character_event = {
 	id = britannic.158
+	title = britannic.imbolg_title
 	desc = britannic.158.desc
 	#picture = GFX
 
@@ -2704,6 +2741,7 @@ character_event = {
 # commiserate at bonfire (ruler)
 character_event = {
 	id = britannic.159
+	title = britannic.imbolg_title
 	desc = britannic.159.desc
 	#picture = GFX
 
@@ -2786,6 +2824,7 @@ character_event = {
 # commiserate at bonfire (vassal)
 character_event = {
 	id = britannic.160
+	title = britannic.imbolg_title
 	desc = britannic.160.desc
 	#picture = GFX
 
@@ -2803,6 +2842,7 @@ character_event = {
 # get in an argument at bonfire (ruler)
 character_event = {
 	id = britannic.161
+	title = britannic.imbolg_title
 	desc = britannic.161.desc
 	#picture = GFX
 
@@ -2888,6 +2928,7 @@ character_event = {
 # get in an argument at bonfire (vassal)
 character_event = {
 	id = britannic.162
+	title = britannic.imbolg_title
 	desc = britannic.162.desc
 	#picture = GFX
 
@@ -2905,6 +2946,7 @@ character_event = {
 # candlelight procession
 character_event = {
 	id = britannic.163
+	title = britannic.imbolg_title
 	desc = britannic.163.desc
 	#picture = GFX
 
@@ -2961,6 +3003,7 @@ character_event = {
 # divinators offering to discern baby gender
 character_event = {
 	id = britannic.164
+	title = britannic.imbolg_title
 	desc = britannic.164.desc
 	picture = GFX_evt_jugglers
 
@@ -3043,6 +3086,26 @@ character_event = {
 			limit = { trait = zealous }
 			remove_trait = zealous
 		}
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				trait = cynical
+			}
+			modifier = {
+				factor = 1.2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 1.2
+				trait = mystic
+			}
+			modifier = {
+				factor = 1.2
+				trait = pregnant
+			}
+		}
 	}
 	option = {
 		name = britannic.164.b #Banish them
@@ -3053,12 +3116,25 @@ character_event = {
 				duration = 365
 			}
 		}
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				trait = zealous
+			}
+			modifier = {
+				factor = 1.2
+				is_female = no
+			}
+		}
 	}
 }
 
 # villager gives birth during festival, blessed day!
 character_event = {
 	id = britannic.165
+	title = britannic.imbolg_title
 	desc = britannic.165.desc
 	#picture = GFX
 
@@ -3115,6 +3191,7 @@ character_event = {
 # villager has stillborn during festival, britannia protect us!
 character_event = {
 	id = britannic.166
+	title = britannic.imbolg_title
 	desc = britannic.166.desc
 	#picture = GFX
 
@@ -3182,15 +3259,14 @@ character_event = {
 	trigger = {
 		any_vassal = {
 			prisoner = no
-			NOT = { trait = incapable }
-			NOT = { is_inaccessible_trigger = yes }
+			is_inaccessible_trigger = no
 			is_adult = yes
 			is_priest = yes
-			NOT = { age = 45 }
-			NOT = {
+			is_pregnant = no
+			NOR = {
+				age = 45
+				trait = incapable
 				num_of_children = 3
-			}
-			NOT ={
 				spouse = {
 					character = ROOT
 				}
@@ -3214,20 +3290,19 @@ character_event = {
 	}
 
 	immediate = {
-		set_character_flag = imbolg_event_horny_dryad
-		set_character_flag = imbolg_event_happened
-
 		random_vassal = {
 			limit = {
 				prisoner = no
-				NOT = { trait = incapable }
-				NOT = { is_inaccessible_trigger = yes }
+				is_inaccessible_trigger = no
 				is_adult = yes
 				is_priest = yes
-				NOT = { age = 45 }
-				NOT = {
-					any_child = {
-						count = 1
+				is_pregnant = no
+				NOR = {
+					age = 45
+					trait = incapable
+					num_of_children = 3
+					spouse = {
+						character = ROOT
 					}
 				}
 			}
@@ -3248,6 +3323,13 @@ character_event = {
 		name = EVTOPTA452
 		ai_chance = {
 			factor = 33
+			modifier = { # dryads in good standing aren't likely to hit on married men!
+				factor = 0.1
+				FROM = {
+					is_married = yes
+				}
+				trait = dryad
+			}
 			modifier = {
 				factor = 2
 				FROM = {
@@ -3327,10 +3409,16 @@ character_event = {
 # male ruler is propositioned (ruler)
 character_event = {
 	id = britannic.169
+	title = britannic.imbolg_title
 	desc = britannic.169
 	#picture= GFX
 
 	is_triggered_only = yes
+
+	immediate = {
+		set_character_flag = imbolg_event_horny_dryad
+		set_character_flag = imbolg_event_happened
+	}
 
 	option = { # heck yeah!
 		name = britannic.169.a
@@ -3481,7 +3569,7 @@ character_event = {
 		}
 	}
 
-	option = {
+	option = { # control yourself woman!
 		name = britannic.169.c
 
 		reverse_opinion = { who = FROM modifier = ancrel_dissapointed }
@@ -3532,9 +3620,6 @@ character_event = {
 	}
 
 	immediate = {
-		set_character_flag = imbolg_event_horny_courtier
-		set_character_flag = imbolg_event_happened
-
 		random_vassal = {
 			limit = {
 				prisoner = no
@@ -3662,10 +3747,16 @@ character_event = {
 # female ruler is propositioned (ruler)
 character_event = {
 	id = britannic.172
+	title = britannic.imbolg_title
 	desc = britannic.172.desc
 	#picture= GFX
 
 	is_triggered_only = yes
+
+	immediate = {
+		set_character_flag = imbolg_event_horny_courtier
+		set_character_flag = imbolg_event_happened
+	}
 
 	option = { # heck yeah!
 		name = britannic.172.a
@@ -3838,6 +3929,8 @@ character_event = {
 			religion = britannic_pagan
 
 			opinion = { who = PREV value = 30 }
+
+			ai = yes
 		}
 		
 		OR = {
@@ -3858,7 +3951,7 @@ character_event = {
 
 	immediate = {
 		set_character_flag = imbolg_event_horny_spouse
-		set_character_flag = imbolg_event_happenes
+		set_character_flag = imbolg_event_happened
 
 		spouse = {
 			character_event = { id = britannic.174 days = 1 }
@@ -3881,6 +3974,7 @@ character_event = {
 # do you wiggle back?
 character_event = {
 	id = britannic.175
+	title = britannic.imbolg_title
 	desc = britannic.175.desc
 	#picture = GFX
 
@@ -3973,14 +4067,15 @@ character_event = {
 
 # The Imbolg is over
 character_event = {
-	id = britannic.249
-	desc = britannic.249.desc
+	id = britannic.199
+	title = britannic.imbolg_title
+	desc = britannic.199.desc
 	picture = GFX_evt_market
 
 	is_triggered_only = yes
 
 	option = {
-		name = britannic.249.a
+		name = britannic.199.a
 		remove_character_modifier = holding_imbolg
 		clr_character_flag = do_not_disturb
 		clr_character_flag = imbolg_event_happened
@@ -4005,7 +4100,7 @@ character_event = {
 # 
 # Britannic
 # - Flavor Events
-#   britannic.250 - 299 reserved
+#   britannic.200 - 249 reserved
 #
 ##################################################################
 

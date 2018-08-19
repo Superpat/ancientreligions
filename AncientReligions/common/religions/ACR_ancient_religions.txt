@@ -125,7 +125,7 @@ pagan_group = {
 
 		high_god_name = GOD_PROMETHEUS
 		god_names = {
-			GOD_PROMETHEUS GOD_EPIMETHEUS
+			GOD_PROMETHEUS GOD_EPIMETHEUS GOD_THE_BROTHERS GOD_PANDORA GOD_ASIA
 		}
 		evil_god_names = {
 			GOD_OLYMPIANS		

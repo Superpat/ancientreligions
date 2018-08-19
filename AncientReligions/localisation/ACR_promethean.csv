@@ -2,6 +2,9 @@
 GOD_PROMETHEUS;Prometheus;Prometheus;Prometheus;;Prometheus;;;;;;;;;x
 GOD_EPIMETHEUS;Epimetheus;Epimetheus;Epimetheus;;Epimetheus;;;;;;;;;x
 GOD_OLYMPIANS;the Olympians;the Olympians;the Olympians;;the Olympians;;;;;;;;;x
+GOD_THE_BROTHERS;the Brothers;;;;;;;;;;;;;x
+GOD_PANDORA;Pandora;;;;;;;;;;;;;x
+GOD_ASIA;Asia;;;;;;;;;;;;;x
 THE_DIALOGUES;The Dialogues;The Dialogues;The Dialogues;;The Dialogues;;;;;;;;;x
 PHILOSOPHER;Philosophos;Philosophos;Philosophos;;Philosophos;;;;;;;;;x
 promethean_pagan;Promethean;Promethean;Promethean;;Promethean;;;;;;;;;x
@@ -56,7 +59,7 @@ acr_blasphemous_exhibition_desc;The populace are enraged by a rather blasphemous
 acr_excellent_performance;Excellent Performance;;;;;;;;;;;;;x
 acr_excellent_performance_desc;The populace are pleased by an excellent play that was held recently.;;;;;;;;;;;;;x
 holding_unbinding_festival;Holding Unbinding Festival;;;;;;;;;;;;;x
-holding_unbinding_festival_desc;This character is holding an Unbinding Festival, a religious celebration of the Promethean faith held every summer.;;;;;;;;;;;;;x
+holding_unbinding_festival_desc;This character is holding an Unbinding Festival, a religious celebration of the Promethean faith held every third summer.;;;;;;;;;;;;;x
 depopulated_province;Depopulated;;;;;;;;;;;;;x
 depopulated_province_desc;This province was recently invaded and is severely depopulated. It will take a long time for it to fully recover.;;;;;;;;;;;;;x
 request_resettlement;Request Resettlement;;;;;;;;;;;;;x

@@ -176,6 +176,53 @@ decisions = {
 			
 		}
 	}
+
+	placate_archdryad = {
+		only_playable = yes
+		is_high_prio = yes
+
+		potential = {
+			religion = britannic_pagan
+			is_title_active = k_britannic_pagan
+
+			NOT = { had_character_flag = { flag = archdryad_noninterference days = 1850 } }
+		}
+
+		allow = {
+			scaled_wealth = { value = 1 min = 25 max = 200 }
+		}
+
+		effect = {
+			k_britannic_pagan = {
+				holder_scope = {
+					transfer_scaled_wealth = {
+						from = ROOT
+						to = THIS
+						value = 1
+						min = 25
+						max = 200
+					}
+
+					custom_tooltip = {
+						text = placate_archdryad.tt
+						hidden_tooltip = {
+							letter_event = { id = britannic.26 days = 1 }
+						}
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0.1
+			modifier = {
+				factor = 0
+				NOT = {
+					scaled_wealth = 2
+				}
+			}
+		}
+	}
 }
 
 targeted_decisions = {
@@ -191,13 +238,14 @@ targeted_decisions = {
 			religion = britannic_pagan
 		}
 		potential = {
-			OR = {
-				trait = dryad
-				trait = bad_dryad
-			}
+			religion = britannic_pagan
+			is_celtic_clergy_trigger = yes
 		}
-		third_party_potential = {			
-			NOT = { age = 3 }
+		third_party_potential = {
+			NOR = {
+				age = 3
+				has_character_flag = tumtha
+			}
 			OR = {
 				AND = {
 					liege = {

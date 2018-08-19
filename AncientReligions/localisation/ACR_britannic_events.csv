@@ -26,6 +26,9 @@ britannic.25.a;Of course, I will follow her council.;;;;;;;;;;;;;x
 britannic.25.b;My realm, my laws.;;;;;;;;;;;;;x
 britannic.25.c;Perhaps I can convince her otherwise...;;;;;;;;;;;;;x
 britannic.25.c;Perhaps I can defend my laws in scripture...;;;;;;;;;;;;;x
+britannic.27.desc;Dear [Root.GetTitledFirstName],\nI have received your generous donation. It is clear you do not need my guidance at this time.\nSigned, [From.GetTitledFirstName];;;;;;;;;;;;;x
+britannic.27.a;At last, some peace!;;;;;;;;;;;;;x
+britannic.27.tt;The Arch-Dryad will refrain from interfering in your rule for 10 years;;;;;;;;;;;;;x
 britannic.51.desc;I have been troubled with news of your fight against the infidels. I have sent some coin with this message to aid the war effort.;;;;;;;;;;;;;x
 britannic.51.a;I'm sure it will!;;;;;;;;;;;;;x
 britannic.53.desc;An envoy from the [From.GetTitle] has arrived bearing a letter. "Dear [Root.GetTitledFirstName],\nIn recognition of your good standing with the church I offer you absolution from your sin of Kinslaying.";;;;;;;;;;;;;x
@@ -56,12 +59,13 @@ britannic.103.mom;The party huddles on the beach and looks at the dark sky fearf
 britannic.103.a;Britannia have mercy!;;;;;;;;;;;;;x
 britannic.103.b;It's just bad weather!;;;;;;;;;;;;;x
 britannic.105.desc;With [From.GetFirstName] now out of infancy, [From.GetSheHe] is too old to be Thumoideachais. Without Britannia's blessing at the hands of a dryad [From.GetSheHe] will be ostracized and known as Sych, "dry".;;;;;;;;;;;;;x
-britannic.150.desc;Everyone gathers in front of the temple, each with their candle. Led by the dryad all form a parade in a sunwise procession around the temple, singing songs of praise for [GOD_SC_BRIGID] and asking for a bountiful spring. Finally, everyone is led in a prayer asking the Holy Mother to bless this Imbolg.;;;;;;;;;;;;;x
+britannic.imbolg_title;Imbolg;;;;;;;;;;;;;x
+britannic.150.desc;Everyone gathers in front of the temple, each with their candle. Led by the dryads all form a parade in a sunwise procession around the temple, singing songs of praise for [GOD_SC_BRIGID] and asking for a bountiful spring. Finally, everyone is led in a prayer asking the Holy Mother to bless this Imbolg.;;;;;;;;;;;;;x
 britannic.150.a;Let the festivities commence!;;;;;;;;;;;;;x
 britannic.151.desc;As you go about the traditional spring cleaning you've come across some old things that belong to [close_relative.GetFirstName]. The various items are probably worth a fair bit of coin, collectively.;;;;;;;;;;;;;x
 britannic.151.a;It all belongs to [close_relative.GetFirstName], I'll return it to them.;;;;;;;;;;;;;x
 britannic.151.b;[close_relative.GetFirstName] won't miss it. The church will do good with the coin.;;;;;;;;;;;;;x
-britannic.151.c;What [close_relative.GetFirstName] doesn't know what hurt [close_relative.GetHerHim].;;;;;;;;;;;;;x
+britannic.151.c;What [close_relative.GetFirstName] doesn't know won't hurt [close_relative.GetHerHim].;;;;;;;;;;;;;x
 britannic.152.desc;As you walk about the plaza you've come across a stand selling Cern Cakes. The phallic pastries celebrating [GOD_CERNUNOS] are covered in glaze and are said to promote fertility. The vendor wants to know if you'd like one.;;;;;;;;;;;;;x
 britannic.152.a;Oh, no. I, uh... I'm good.;;;;;;;;;;;;;x
 britannic.152.b;Sure!;;;;;;;;;;;;;x
@@ -76,7 +80,7 @@ britannic.155.a;Very pious of [From.GetHerHim];;;;;;;;;;;;;x
 britannic.155.b;A waste of good coin!;;;;;;;;;;;;;x
 britannic.156.desc;You've heard rumors that [From.GetFullName] has been speaking well of you. Specifically they've been praising you for your choice of offering at the well.;;;;;;;;;;;;;x
 britannic.157.desc;You've heard rumors that [From.GetFullName] has been speaking ill of you. Specifically they're criticising your choice of offering at the well.;;;;;;;;;;;;;x
-britannic.158.desc;You find yourself sitting at a table in a city square. All around you people are making blackthorn solar wheels to hang on their door mantles, to bless their homes for the next year. A child next to you smiles and asks if you're going to make one too.;;;;;;;;;;;;;x
+britannic.158.desc;You find yourself sitting at a table in a city square. All around you people are making solar wheels from blackthorn to hang on their door mantles, to bless their homes for the next year. A child next to you smiles and asks if you're going to make one too.;;;;;;;;;;;;;x
 britannic.158.a;Of course!;;;;;;;;;;;;;x
 britannic.159.desc;You've been sitting with [the_vassal.GetTitledFirstName] around one of the bonfires for the Imbolg. Before long, you've been talking for hours and having a wonderful time.;;;;;;;;;;;;;x
 britannic.159.a;We should have done this years go!;;;;;;;;;;;;;x
@@ -86,4 +90,25 @@ britannic.161.desc;You've been sitting with [the_vassal.GetTitledFirstName] arou
 britannic.161.a;Ass!;;;;;;;;;;;;;x
 britannic.162.desc;You've been sitting with [From.GetTitledFirstName] around one of the bonfires for the Imbolg. Before long your conversation gets heated. After hours of arguing you both leave angrily, shouting at eachother over your shoulders.;;;;;;;;;;;;;x
 britannic.162.a;Ass!;;;;;;;;;;;;;x
-britannic.163.desc;Hundreds of people fill the streets, each with a lit candle in hand. The procession slowly moves down the road as all sing hymns to [GOD_SC_BRIGID] and [GOD_HOLY_MOTHER].;;;;;;;;;;;;;x
+britannic.163.desc;Hundreds of people fill the streets, each with a lit candle in hand. The procession slowly moves down the road as all sing hymns to [GOD_ST_BRIGID] and [GOD_HOLY_MOTHER].;;;;;;;;;;;;;x
+britannic.164.desc;The local dryads have lodged a complaint regarding some fortune tellers that set up shop during the festival. They are offering to divine the number and gender of a couple's children. The dryads say these claims are heresy, as only Britannia knows this. However, the diviners are proving popular with the people.\nWhat do you do?;;;;;;;;;;;;;x
+britannic.164.a;Surely, they are doing no harm?;;;;;;;;;;;;;x
+britannic.164.b;We cannot allow this blasphemy to continue!;;;;;;;;;;;;;x
+britannic.165.desc;Word has quickly spread throughout the city, a prominent local merchant has given birth! The dryads are calling this a sign of good favor from [GOD_HOLY_MOTHER] and a bountiful year.;;;;;;;;;;;;;x
+britannic.165.a;Britannia smiles on us this day!;;;;;;;;;;;;;x
+britannic.165.b;Superstitious nonesense.;;;;;;;;;;;;;x
+britannic.166.desc;Word has quickly spread through the city like a dark cloud. A prominent local merchant has had a still born child! The dryads are warning all that it is a sign of [GOD_BRITANNIA]'s ire and that a bad year is ahead.;;;;;;;;;;;;;x
+britannic.169.desc;As you walk down the street admiring the festivities, you feel a light touch brushing your shoulder. "Be the conduit of Britannia's blessing," a voice whispers. You recognize [From.GetTitledFirstName] as you turn to face her. "I want you," she says, desire in her eyes.;;;;;;;;;;;;;x
+britannic.169.a;You have no idea how long I've waited for this!;;;;;;;;;;;;;x
+britannic.169.b;I do this for Britannia.;;;;;;;;;;;;;x
+britannic.169.c;Get ahold of yourself!;;;;;;;;;;;;;x
+britannic.172.desc;As you walk down the street admiring the festivities, you feel a light touch brushing your shoulder. "Let me be the conduit of Britannia's blessing," a voice whispers. You recognize [From.GetFullName] as you turn to face him. "I want you," he says, desire in his eyes.;;;;;;;;;;;;;x
+britannic.172.a;You have no idea how long I've waited for this!;;;;;;;;;;;;;x
+britannic.172.b;May Britannia bless me with child.;;;;;;;;;;;;;x
+britannic.172.c;You forget your place!;;;;;;;;;;;;;x
+britannic.175.desc;You and [From.GetTitledFirstName] are walking down the street, watching the festivities, when [From.GetSheHe] points out a young couple in a moment of passion in a corner of the square. [From.GetName] gives you a suggestive look. [From.GetSheHeCap] smiles, "Shall we continue the festivities somewhere private?";;;;;;;;;;;;;x
+britannic.175.a;You're so bad!;;;;;;;;;;;;;x
+britannic.175.b;I don't want to miss any of the festival!;;;;;;;;;;;;;x
+britannic.175.c;I'm sorry my love, I have a headache.;;;;;;;;;;;;;x
+britannic.199.desc;With the merchants packing their wares and the dryads performing their final blessings, the Imbolg has come to a close.;;;;;;;;;;;;;x
+britannic.199.a;I wonder how next year's festival will go.;;;;;;;;;;;;;x

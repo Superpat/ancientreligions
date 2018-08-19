@@ -78,6 +78,15 @@ celtic_clergy_trigger = {
 	}
 }
 
+# evaluates to true if the currently scoped character has
+# placated the arch-dryad recently
+archdryad_non_interference_trigger = {
+	OR = {
+		NOT = { has_character_flag = archdryad_noninterference }
+		had_character_flag = { flag = archdryad_noninterference days = 3650 }
+	}
+}
+
 is_on_nile_trigger = {
 	location = {
 		OR = {

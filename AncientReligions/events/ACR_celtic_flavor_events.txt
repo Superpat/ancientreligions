@@ -24,10 +24,7 @@ character_event = {
 	only_rulers = yes
 	
 	trigger = {
-		OR = {
-			religion = celtic_pagan
-			religion = celtic_pagan_reformed
-		}
+		true_religion_in_celtic_subgroup_trigger = yes
 		is_landed = yes
 		is_abroad = no
 	}
@@ -102,10 +99,7 @@ character_event = {
 	only_rulers = yes
 	
 	trigger = {
-		OR = {
-			religion = celtic_pagan
-			religion = celtic_pagan_reformed
-		}
+		true_religion_in_celtic_subgroup_trigger = yes
 		is_abroad = no
 	}
 	
@@ -182,10 +176,7 @@ character_event = {
 	only_rulers = yes
 	
 	trigger = {
-		OR = {
-			religion = celtic_pagan
-			religion = celtic_pagan_reformed
-		}
+		true_religion_in_celtic_subgroup_trigger = yes
 		is_landed = yes
 		is_abroad = no
 	}
@@ -271,10 +262,7 @@ character_event = {
 	only_rulers = yes
 	
 	trigger = {
-		OR = {
-			religion = celtic_pagan
-			religion = celtic_pagan_reformed
-		}
+		true_religion_in_celtic_subgroup_trigger = yes
 		is_landed = yes
 		is_abroad = no
 	}
@@ -600,9 +588,9 @@ character_event = {
 	is_triggered_only = yes
 
 	only_playable = yes
-	religion = celtic_pagan
 
 	trigger = {
+		religion_openly_celtic_or_reformed = yes
 		has_game_rule = {
 			name = acr_unfit_king_beta
 			value = on

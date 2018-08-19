@@ -2,6 +2,8 @@ secret_religious_society_celtic_pagan;the Hidden Circle;;;;;;;;x
 secret_religious_society_celtic_pagan_desc;The followers of the Celtic faith have long known persecution, especially from Roman hands. As always, they persevere, even if they must use deception. Though they utter empty prayers to foreign gods, they secretly meet in private chambers and secluded groves to offer devotion and sacrifice to Danu, the Mother and source of life. They keep their faith knowing that some day mighty Taranis the Thunderer will strike down those who have persecuted the faithful.;;;;;;;;x
 secret_religious_society_celtic_pagan_reformed;Danu's Faithfull;;;;;;;;x
 secret_religious_society_celtic_pagan_reformed_desc;The Druidic faith may be young, but it's followers are no less devout than any other. Even when they must publicly profess faith in false gods, the children of Danu plan and prepare for the day when they might worship the gods in the light of day. They know that none can long stand against the might of Lug of the Long Spear, and those that opress them will get what they deserve.;;;;;;;;x
+secret_religious_society_britannic_pagan;the Faithful Children;;;;;;;;x
+secret_religious_society_britannic_pagan_desc;The followers of [GOD_BRITANNIA] have always struggled against those who would deny her truth. As always, they persevere, even if they must submit to men. Though they utter empty prayers to foreign gods, they secretly meet in private chambers and secluded groves to offer devotion and sacrifice to Britannia, the Mother and source of life. They keep their faith knowing that some day [GOD_SC_ANDRASTE] will bring victory against those who persecuted the faithful.;;;;;;;;x
 secret_religious_society_hellenic_pagan;the True Hellenes;;;;;;;;x
 secret_religious_society_hellenic_pagan_desc;For centuries the faith of the people of Greece and Rome was followed by millions. Though the number of adherents has dramatically shrunk, those that remain make up for it with their devotion. They deceive the followers of upstart and barbarian gods, though they send their prayers to the Olympians. They have struggled, but the True Hellenes know they will be victorious in the end, because none can stand against the fury of Almighty Zeus.;;;;;;;;x
 secret_religious_society_promethean_pagan;the Enlightened;;;;;;;;x
@@ -17,6 +19,8 @@ secretly_convert_to_celtic_pagan_holy_site;Secretly Convert to Celtic Paganism;;
 secretly_convert_to_celtic_pagan_holy_site_desc;The §YCeltic Pagan§! shrine in §Y[Root.Location.GetName]§! has drawn my attention of late. It feels ancient, patient, and powerful. It seems to be waiting to reveal it's secrets. I am tempted to listen...;;;;;;;;;;;;;x
 secretly_convert_to_celtic_pagan_reformed_holy_site;Secretly Convert to Druidic;;;;;;;;;;;;;x
 secretly_convert_to_celtic_pagan_reformed_holy_site_desc;The §YDruidic§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;Les pèlerins §YDruidique§! qui affluent vers le site saint en §Y[Root.Location.GetName]§! m'impressionnent avec la profondeur et la passion de leur foi. Je suis tenté[Root.GetNoneE] de me convertir en secret...;Die §YDruidic§! Pilger in §Y[Root.Location.GetName]§! beeindrucken mich durch die Tiefe und die Leidenschaft ihres Glaubens. Ich bin versucht, heimlich zu konvertieren ...;;Los peregrinos §YDruidicas§! que acuden en masa al lugar sagrado en §Y[Root.Location.GetName]§! me impresionan con la profundidad y la pasión de su fe. Me tienta convertirme en secreto...;;;;;;;;;x
+secretly_convert_to_britannic_pagan_holy_site;Secretly Convert to Britannic;;;;;;;;;;;;;x
+secretly_convert_to_britannic_pagan_holy_site_desc;The §YBritannic§! shrine in §Y[Root.Location.GetName]§! has drawn my attention of late. The pilgrims that visit have boundless devotion and great faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
 secretly_convert_to_hellenic_pagan_holy_site;Secretly Convert to Hellenism;;;;;;;;;;;;;x
 secretly_convert_to_hellenic_pagan_holy_site_desc;The §YHellenic§! holy site in §Y[Root.Location.GetName]§! impresses me with it's grandeur. It is as if the ancient gods are waiting for someone to take up their mantle again. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
 secretly_convert_to_promethean_pagan_holy_site;Secretly Convert to Prometheanism;;;;;;;;;;;;;x
@@ -46,6 +50,15 @@ secret_religious_society_celtic_pagan_reformed_rank_1_male;Faithful;Fidèle;Getre
 secret_religious_society_celtic_pagan_reformed_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
 secret_religious_society_celtic_pagan_reformed_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
 secret_religious_society_celtic_pagan_reformed_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
+secret_religious_society_britannic_pagan_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_britannic_pagan_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
+secret_religious_society_britannic_pagan_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
+secret_religious_society_britannic_pagan_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
+secret_religious_society_britannic_pagan_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
+secret_religious_society_britannic_pagan_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
+secret_religious_society_britannic_pagan_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
+secret_religious_society_britannic_pagan_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
+secret_religious_society_britannic_pagan_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
 secret_religious_society_hellenic_pagan_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
 secret_religious_society_hellenic_pagan_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
 secret_religious_society_hellenic_pagan_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
@@ -96,6 +109,8 @@ secret_celtic_pagan_community;Secret Celtic Pagan Community;Communauté celtique 
 secret_celtic_pagan_community_desc;In secret, Celtic faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;Des fidèles celtique païen ont secrètement formé une communauté dans cette province. Ils y convertissent les autres personnes et protègent les leurs.;In dieser Provinz haben sich Anhänger des keltischen heidnischen Glaubens heimlich zu einer Gemeinde organisiert. Von dort aus bekehrt diese Gemeinde andere, wird immer größer und beschützt ihre Mitglieder.;;Los fieles de celtico pagano han creado una comunidad secreta en esta provincia. De este modo convierten a otros, crecen y protegen a los suyos.;;;;;;;;;x
 secret_celtic_pagan_reformed_community;Secret Druidic Community;Communauté druidique secrète;Geheime druidiche Gemeinde;;Comunidad druida secreta;;;;;;;;;x
 secret_celtic_pagan_reformed_community_desc;In secret, Druidic faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;Des fidèles Druidiques ont secrètement formé une communauté dans cette province. Ils y convertissent les autres personnes et protègent les leurs.;In dieser Provinz haben sich Anhänger des druidisch Glaubens heimlich zu einer Gemeinde organisiert. Von dort aus bekehrt diese Gemeinde andere, wird immer größer und beschützt ihre Mitglieder.;;Los fieles de Druida han creado una comunidad secreta en esta provincia. De este modo convierten a otros, crecen y protegen a los suyos.;;;;;;;;;x
+secret_britannic_pagan_community;Secret Britannic Community;Communauté britannique païen secrète;Geheime Britannischen heidnischen Gemeinde;;Comunidad britannico pagano secreta;;;;;;;;;x
+secret_britannic_pagan_community_desc;In secret, Brittanic faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;Des fidèles britannique païen ont secrètement formé une communauté dans cette province. Ils y convertissent les autres personnes et protègent les leurs.;In dieser Provinz haben sich Anhänger des britannischen heidnischen Glaubens heimlich zu einer Gemeinde organisiert. Von dort aus bekehrt diese Gemeinde andere, wird immer größer und beschützt ihre Mitglieder.;;Los fieles de britannico pagano han creado una comunidad secreta en esta provincia. De este modo convierten a otros, crecen y protegen a los suyos.;;;;;;;;;x
 secret_hellenic_pagan_community;Secret Hellenic Community;Communauté Hellenique secrète;Geheime Hellenisch heidnischen Gemeinde;;Comunidad hellenico pagano secreta;;;;;;;;;x
 secret_hellenic_pagan_community_desc;In secret, Hellenic faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;Des fidèles hellenique païen ont secrètement formé une communauté dans cette province. Ils y convertissent les autres personnes et protègent les leurs.;In dieser Provinz haben sich Anhänger des hellenisch heidnischen Glaubens heimlich zu einer Gemeinde organisiert. Von dort aus bekehrt diese Gemeinde andere, wird immer größer und beschützt ihre Mitglieder.;;Los fieles de hellenico pagano han creado una comunidad secreta en esta provincia. De este modo convierten a otros, crecen y protegen a los suyos.;;;;;;;;;x
 secret_promethean_pagan_community;Secret Promethean Pagan Community;Communauté Promethean secrète;Geheime Promethean heidnischen Gemeinde;;Comunidad Promethean pagano secreta;;;;;;;;;x
@@ -108,6 +123,7 @@ secret_aten_pagan_community;Secret Aten Pagan Community;Communauté Atenique secr
 secret_aten_pagan_community_desc;In secret, Atenic faithfuls have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;Des fidèles Atenique païen ont secrètement formé une communauté dans cette province. Ils y convertissent les autres personnes et protègent les leurs.;In dieser Provinz haben sich Anhänger des Atenisch heidnischen Glaubens heimlich zu einer Gemeinde organisiert. Von dort aus bekehrt diese Gemeinde andere, wird immer größer und beschützt ihre Mitglieder.;;Los fieles de Atenico pagano han creado una comunidad secreta en esta provincia. De este modo convierten a otros, crecen y protegen a los suyos.;;;;;;;;;x
 secret_religious_society_celtic_pagan_leader_desc;A High Priest in $SOCIETY|Y$;Un grand prêtre dans $SOCIETY|Y$;Hohepriester von $SOCIETY|Y$;;Sumo sacerdote de $SOCIETY|Y$;;;;;;;;;x
 secret_religious_society_celtic_pagan_reformed_leader_desc;A High Priest in $SOCIETY|Y$;Un grand prêtre dans $SOCIETY|Y$;Hohepriester von $SOCIETY|Y$;;Sumo sacerdote de $SOCIETY|Y$;;;;;;;;;x
+secret_religious_society_britannic_pagan_leader_desc;A High Priest in $SOCIETY|Y$;Un grand prêtre dans $SOCIETY|Y$;Hohepriester von $SOCIETY|Y$;;Sumo sacerdote de $SOCIETY|Y$;;;;;;;;;x
 secret_religious_society_hellenic_pagan_leader_desc;TA High Priest in $SOCIETY|Y$;Un grand prêtre dans $SOCIETY|Y$;Hohepriester von $SOCIETY|Y$;;Sumo sacerdote de $SOCIETY|Y$;;;;;;;;;x
 secret_religious_society_promethean_pagan_leader_desc;A High Priest in $SOCIETY|Y$;Un grand prêtre dans $SOCIETY|Y$;Hohepriester von $SOCIETY|Y$;;Sumo sacerdote de $SOCIETY|Y$;;;;;;;;;x
 secret_religious_society_titan_pagan_leader_desc;A High Priest in $SOCIETY|Y$;Un grand prêtre dans $SOCIETY|Y$;Hohepriester von $SOCIETY|Y$;;Sumo sacerdote de $SOCIETY|Y$;;;;;;;;;x
@@ -157,18 +173,18 @@ currency_name_the_sand_snakes;Dark Power;;;;;;;;;;;;;x
 the_sand_snakes_rank_1_female;Abjurer;Apostate;Bannmagierin;;Apóstata;;;;x
 the_sand_snakes_rank_2_female;Conjurer;Sorcière;Beschwörerin;;Conjuradora;;;;x
 the_sand_snakes_rank_3_female;Priestess;Prêtresse;Priesterin;;Sacerdotisa;;;;x
-the_sand_snakes_rank_4_female;High Priestess;Grande prêtresse;Hohepriesterin;;Suma sacerdotisa;;;;x
+the_sand_snakes_rank_4_female;Great Xroj;Grande prêtresse;Hohepriesterin;;Suma sacerdotisa;;;;x
 the_sand_snakes_rank_1_male;Abjurer;Apostat;Bannmagier;;Apóstata;;;;x
 the_sand_snakes_rank_2_male;Conjurer;Sorcier;Beschwörer;;Conjurador;;;;x
 the_sand_snakes_rank_3_male;Priest;Prêtre;Priester;;Sacerdote;;;;x
-the_sand_snakes_rank_4_male;High Priest;Grand prêtre;Hohepriester;;Sumo sacerdote;;;;x
+the_sand_snakes_rank_4_male;Great Xroj;Grand prêtre;Hohepriester;;Sumo sacerdote;;;;x
 the_sand_snakes_leader_desc;The Great Xroj of the Fangs of Apep;;;;;;;;;;;;;x
 the_sand_snakes_recruit_block_tooltip;Has not been approached by the Fangs of Apep before.;;;;;;;;;;;;;x
 the_sand_snakes_recruit;Recruit to The Fangs of Apep;;;;;;;;;;;;;x
 the_sand_snakes_recruit_desc;Attempt to find out whether §Y[Root.GetTitledFirstName]§! is open to the power of the occult. If so, you may invite [Root.GetHerHim] to become a member of The Fangs of Apep.;;;;;;;;;;;;;x
 ############### Mysteries of Dionysus ;;;;;;;;;;;;;x
 mysteries_dionysus;Mysteries of Dionysus;;;;;;;;;;;;;x
-mysteries_dionysus_desc;Since the dawn of civilization there have been those who have rejected it's gifts. Those who count themselves as initiates of the Dionysian mysteries commune with their god in secret rituals of revelry and intoxication. Thoroughly intimate affairs, these secret gatherings forge strong bonds between the participants, bonds that frequently persist beyond the secrecy of the rituals. But that's not all, Twice-born Dionysus, they say, knows the secrets of life and death. It is these secrets the initiates hope to earn from their god.;;;;;;;;;;;;;x
+mysteries_dionysus_desc;Since the dawn of civilization there have been those who have rejected it's gifts. Those who count themselves as initiates of the Dionysian Mysteries commune with their god in secret rituals of revelry and intoxication. Thoroughly intimate affairs, these secret gatherings forge strong bonds between the participants, bonds that frequently persist beyond the secrecy of the rituals. But that's not all, Twice-born Dionysus, they say, knows the secrets of life and death. It is these secrets the initiates hope to earn from their god.;;;;;;;;;;;;;x
 currency_name_mysteries_dionysus;Fervor;;;;;;;;;;;;;x
 mysteries_dionysus_leader_desc;Hierophant of the Dionysian Mysteries;;;;;;;;;;;;;x
 mysteries_dionysus_rank_1_male;Bacchus;;;;;;;;;;;;;x

@@ -126,9 +126,9 @@ character_event = {
 	is_triggered_only = yes
 	
 	only_rulers = yes
+	ai = no
 	
 	trigger = {
-		ai = no
 		OR = {
 			religion = celtic_pagan
 			religion = celtic_pagan_reformed
@@ -342,8 +342,9 @@ character_event = {
 	desc = celtic.157.desc
 	picture = GFX_evt_druid
 	
+	has_dlc = "Sons of Abraham"
+	
 	trigger = {
-		has_dlc = "Sons of Abraham"
 		OR = {
 			religion = celtic_pagan
 			religion = celtic_pagan_reformed
@@ -676,9 +677,9 @@ character_event = {
 	
 	is_triggered_only = yes
 	prisoner = no
+	min_age = 14
 
 	trigger = {
-		age = 14
 		religion_openly_in_celtic_subgroup_trigger = yes	
 		OR = {
 			father_even_if_dead = { is_alive = yes }
@@ -757,9 +758,9 @@ character_event = {
     max_age = 25
 	capable_only = yes
 	prisoner = no
+	has_dlc = "The Old Gods"
 	
 	trigger = {
-		has_dlc = "The Old Gods"
 		is_landed = no
 		in_command = no
 		OR = {
@@ -875,11 +876,12 @@ character_event = {
 	id = celtic.188
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = druidic_training
+	min_age = 18
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = druidic_training
 		NOT = { trait = scarred }
-		age = 18
 	}
 	
 	mean_time_to_happen = {
@@ -933,13 +935,14 @@ character_event = {
 	id = celtic.190
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = druidic_training
+	min_age = 18
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = druidic_training
 		NOT = {
 			trait = maimed
 		}
-		age = 18
 	}
 	
 	mean_time_to_happen = {
@@ -985,16 +988,17 @@ character_event = {
 	id = celtic.192
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = druidic_training
+	min_age = 18
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = druidic_training
 		NOT = { trait = brilliant_strategist }
 		OR = {
 			trait = detached_priest
 			trait = martial_cleric
 			trait = scholarly_theologian
 		}
-		age = 18
 	}
 	
 	mean_time_to_happen = {
@@ -1087,11 +1091,12 @@ character_event = {
 	id = celtic.194
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = druidic_training
+	min_age = 18
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = druidic_training
 		NOT = { trait = lunatic }
-		age = 18
 	}
 	
 	mean_time_to_happen = {
@@ -1149,10 +1154,11 @@ character_event = {
 	id = celtic.196
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = druidic_training
+	min_age = 18
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = druidic_training
-		age = 18
 		father = {
 			supernatural_events_trigger = yes
 		}
@@ -1230,11 +1236,12 @@ character_event = {
 	id = celtic.198
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = druidic_training
+	min_age = 18
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = druidic_training
 		NOT = { trait = zealous }
-		age = 18
 	}
 	
 	mean_time_to_happen = {
@@ -1284,11 +1291,9 @@ character_event = {
 	id = celtic.200
 	hide_window = yes
 	
-	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = druidic_training
-		age = 18
-	}
+	has_dlc = "The Old Gods"
+	has_character_flag = druidic_training
+	min_age = 18
 	
 	mean_time_to_happen = {
 		months = 120
@@ -1361,11 +1366,9 @@ character_event = {
 	id = celtic.202
 	hide_window = yes
 	
-	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = druidic_training
-		age = 18
-	}
+	has_dlc = "The Old Gods"
+	has_character_flag = druidic_training
+	min_age = 18
 	
 	mean_time_to_happen = {
 		months = 200
@@ -1458,11 +1461,9 @@ character_event = {
 	id = celtic.204
 	hide_window = yes
 	
-	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = druidic_training
-		age = 18
-	}
+	has_dlc = "The Old Gods"
+	has_character_flag = druidic_training
+	min_age = 18
 	
 	mean_time_to_happen = {
 		months = 160
@@ -1517,9 +1518,10 @@ character_event = {
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
+	has_dlc = "The Old Gods"
+	ai = no
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		ai = no
 		OR = {
 			has_character_flag = wants_druidic_training
 			has_character_flag = druidic_training
@@ -1559,9 +1561,10 @@ character_event = {
 	id = celtic.207
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	ai = yes
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		ai = yes
 		OR = {
 			has_character_flag = wants_druidic_training
 			has_character_flag = druidic_training

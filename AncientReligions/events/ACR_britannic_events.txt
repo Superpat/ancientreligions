@@ -196,6 +196,7 @@ character_event = {
 	only_capable = yes
 	prisoner = no	
 	religion = britannic_pagan
+	has_dlc = "Sons of Abraham"
 	
 	trigger = {
 		trait = dryad
@@ -204,7 +205,6 @@ character_event = {
 			diplomacy = 3
 			trait = bad_dryad
 		}
-		has_dlc = "Sons of Abraham"
 		OR = {
 			trait = cynical
 			trait = lustful
@@ -261,11 +261,11 @@ character_event = {
 	only_capable = yes
 	prisoner = no
 	religion = britannic_pagan
+	has_dlc = "Sons of Abraham"
 
 	trigger = {
 		controls_religion = yes
 		trait = bad_dryad
-		has_dlc = "Sons of Abraham"
 		NOT = { has_character_modifier = bad_rel_head }
 	}
 
@@ -479,11 +479,11 @@ character_event = {
 	hide_window = yes
 
 	religion = britannic_pagan
+	has_global_flag = acr_arch_dryad_created
 
 	trigger = {
 		is_ruler = yes
 		is_theocracy = no
-		has_global_flag = acr_arch_dryad_created
 		NOR = { # she's cool so long as you have at least two dryads on your council
 			any_voter = {
 				count = 2
@@ -1116,12 +1116,11 @@ character_event = {
 	only_capable = yes
 	prisoner = no
 	only_playable = yes
-	religion_group = pagan
+	religion = britannic_pagan
 	war = no
 	
 	trigger = {
 		controls_religion = yes
-		religion = britannic_pagan
 		
 		any_independent_ruler = {
 			religion = ROOT
@@ -1508,11 +1507,11 @@ character_event = {
 	min_age = 16
 	only_playable = yes
 	war = no
+	has_global_flag = ancrel_debug_dryad_artifact
 	
 	trigger = {
 		controls_religion = yes	
 		religion = britannic_pagan
-		has_global_flag = ancrel_debug_dryad_artifact
 
 		any_playable_ruler = {
 			religion = ROOT
@@ -1733,9 +1732,10 @@ letter_event = {
 character_event = {
 	id = britannic.63
 	hide_window = yes
+	
+	religion = britannic_pagan
 
 	trigger = {
-		religion = britannic_pagan
 		controls_religion = yes
 
 		NOT = { # she won't do it if she's dealing with plague herself
@@ -2236,10 +2236,11 @@ character_event = {
 	hide_window = yes
 
 	is_triggered_only = yes
+	
+	religion = britannic_pagan
+	min_age = 3
 
 	trigger = {
-		religion = britannic_pagan
-		age = 3
 		NOR = {
 			age = 4
 			trait = sych

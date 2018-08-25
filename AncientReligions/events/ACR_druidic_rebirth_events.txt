@@ -22,12 +22,12 @@ character_event = {
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+	has_dlc = "The Old Gods"
+	culture_group = celtic
 	
 	trigger = {
-		has_dlc = "The Old Gods"
 		is_ruler = yes
 		in_command = no
-		culture_group = celtic
 		NOR = {
 			OR = {
 				religion = celtic_pagan
@@ -491,9 +491,9 @@ character_event = {
 	
 	min_age = 16
 	prisoner = no
+	culture_group = celtic
 	
 	trigger = {
-		culture_group = celtic
 		OR = {
 			trait = lunatic
 			trait = possessed
@@ -620,9 +620,7 @@ narrative_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {
-		religion = celtic_pagan_reformed
-	}
+	religion = celtic_pagan_reformed
 
 	immediate = {
 		set_global_flag = celtic_pagan_reformation

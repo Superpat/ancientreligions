@@ -33,9 +33,10 @@ province_event = {
 	title = atenic.1.title
 	desc = atenic.1.desc
 	picture = GFX_evt_temple_egyptian_pagan
+	
+	has_global_flag = akhetaten_restoring
 
 	trigger = {
-		has_global_flag = akhetaten_restoring
 		province_id = 795 # Asyut
 		NOT = { has_global_flag = akhetaten_restored }
 		had_province_flag = { flag = reb_akhetaten_1 days = 2190 }
@@ -78,8 +79,9 @@ province_event = {
 	desc = atenic.2.desc
 	picture = GFX_evt_temple_egyptian_pagan
 	
+	has_global_flag = akhetaten_restoring
+	
 	trigger = {
-		has_global_flag = akhetaten_restoring
 		province_id = 795 # Asyut
 		NOT = { has_global_flag = akhetaten_restored }
 		has_province_flag = reb_akhetaten_1

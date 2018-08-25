@@ -102,12 +102,12 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_dlc = "The Old Gods"
+	has_global_flag = fianna_founded
 	
 	trigger = {
-		has_dlc = "The Old Gods"
 		is_landed = no
 		in_command = no
-		has_global_flag = fianna_founded
 		OR = {
 			religion = celtic_pagan
 			religion = celtic_pagan_reformed
@@ -231,9 +231,10 @@ character_event = {
 	id = celtic.1164
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = serving_fianna
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = serving_fianna
 		NOT = { trait = scarred }
 	}
 	
@@ -281,9 +282,10 @@ character_event = {
 	id = celtic.1168
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = serving_fianna
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = serving_fianna
 		NOT = {
 			trait = maimed
 		}
@@ -324,9 +326,10 @@ character_event = {
 	id = celtic.1170
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = serving_fianna
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = serving_fianna
 		NOT = { trait = brilliant_strategist }
 		OR = {
 			trait = misguided_warrior
@@ -418,9 +421,10 @@ character_event = {
 	id = celtic.1172
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = serving_fianna
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = serving_fianna
 		NOT = { trait = depressed }
 	}
 	
@@ -472,11 +476,9 @@ character_event = {
 	id = celtic.1174
 	hide_window = yes
 	
-	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = serving_fianna
-		is_married = no
-	}
+	has_dlc = "The Old Gods"
+	has_character_flag = serving_fianna
+	is_married = no
 	
 	mean_time_to_happen = {
 		months = 180
@@ -527,9 +529,10 @@ character_event = {
 	id = celtic.1176
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = serving_fianna
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = serving_fianna
 		NOT = { trait = zealous }
 	}
 	
@@ -572,10 +575,8 @@ character_event = {
 	id = celtic.1178
 	hide_window = yes
 	
-	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = serving_fianna
-	}
+	has_dlc = "The Old Gods"
+	has_character_flag = serving_fianna
 	
 	mean_time_to_happen = {
 		months = 120
@@ -641,10 +642,8 @@ character_event = {
 	id = celtic.1180
 	hide_window = yes
 	
-	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = serving_fianna
-	}
+	has_dlc = "The Old Gods"
+	has_character_flag = serving_fianna
 	
 	mean_time_to_happen = {
 		months = 200
@@ -737,10 +736,8 @@ character_event = {
 	id = celtic.1182
 	hide_window = yes
 	
-	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = serving_fianna
-	}
+	has_dlc = "The Old Gods"
+	has_character_flag = serving_fianna
 	
 	mean_time_to_happen = {
 		months = 160
@@ -787,16 +784,17 @@ character_event = {
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
+	has_dlc = "The Old Gods"
+	ai = no
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		ai = no
 		OR = {
 			has_character_flag = wants_fianna
 			has_character_flag = serving_fianna
 		}
 		father = { is_alive = no }
 	}
-			
+	
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -819,9 +817,10 @@ character_event = {
 	id = celtic.1185
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	ai = yes
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		ai = yes
 		OR = {
 			has_character_flag = wants_fianna
 			has_character_flag = serving_fianna
@@ -845,8 +844,9 @@ character_event = {
 	id = celtic.1186
 	hide_window = yes
 	
+	has_global_flag = celtic_pagan_reformation
+	
 	trigger = {
-		has_global_flag = celtic_pagan_reformation
 		NOT = { has_global_flag = fianna_reformed }
 		is_title_active = d_fianna
 	}
@@ -916,11 +916,11 @@ character_event = {
 	
 	only_playable = yes
 	prisoner = no
+	war = no
 	
 	picture = GFX_evt_emissary
 
 	trigger = {
-		war = no
 		in_command = no
 		OR = {
 			religion = celtic_pagan
@@ -1124,13 +1124,13 @@ character_event = {
 character_event = {
 	id = celtic.1255
 	desc = celtic.1255.desc
+	picture = GFX_evt_joust
 	
 	only_playable = yes
 	prisoner = no
+	has_character_flag = fian_band_visiting
 	
-	picture = GFX_evt_joust
 	trigger = {
-	 	has_character_flag = fian_band_visiting
 		NOT = {	has_character_flag = fian_recruited }
 		NOT = {	has_character_flag = fian_woman_seduced	}
 	}
@@ -1217,14 +1217,13 @@ character_event = {
 character_event = {
 	id = celtic.1257
 	desc = celtic.1257.desc
-	
+	picture = GFX_evt_joust
 	
 	only_playable = yes
 	prisoner = no
+	has_character_flag = fian_band_visiting
 	
-	picture = GFX_evt_joust
 	trigger = {
-	 	has_character_flag = fian_band_visiting
 	 	any_courtier = {
 	 		age = 16
 	 		is_female = no
@@ -1292,15 +1291,15 @@ character_event = {
 character_event = {
 	id = celtic.1258
 	desc = celtic.1258.desc
+	picture = GFX_evt_lovers
 	
 	only_playable = yes
 	prisoner = no
-	
-	picture = GFX_evt_lovers
+	has_character_flag = fian_band_visiting
 	
 	trigger = {
 		has_lover = no
-	 	has_character_flag = fian_band_visiting
+	 	
 		NOT = {	has_character_flag = fian_recruited }
 		NOT = {	has_character_flag = fian_woman_seduced	}
 		any_courtier = {
@@ -1401,10 +1400,8 @@ character_event = {
 	
 	only_playable = yes
 	prisoner = no
+	has_character_flag = fian_band_visiting
 	
-	trigger = {
-	 	has_character_flag = fian_band_visiting
-	}	
 	immediate = {
 		clr_character_flag = fian_band_visiting
 		clr_character_flag = fian_woman_seduced
@@ -1436,16 +1433,15 @@ character_event = {
 character_event = {
 	id = celtic.1260
 	desc = celtic.1260.desc
+	picture = GFX_evt_melee
 	
 	is_triggered_only = yes
 	
 	only_playable = yes
 	prisoner = no
-	
-	picture = GFX_evt_melee
+	war = no
 	
 	trigger = {
-		war = no
 		in_command = no
 		NOT = { has_character_flag = fian_band_visiting }
 		any_courtier = {

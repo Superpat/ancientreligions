@@ -35,9 +35,10 @@ province_event = {
 	title = egyptian.1.title
 	desc = egyptian.1.desc
 	picture = GFX_evt_temple_egyptian_pagan
+	
+	has_global_flag = luxor_restoring
 
 	trigger = {
-		has_global_flag = luxor_restoring
 		province_id = 795 # Asyut
 		NOT = { has_global_flag = luxor_restored }
 		had_province_flag = { flag = reb_luxor_1 days = 1075 }
@@ -79,8 +80,9 @@ province_event = {
 	desc = egyptian.2.desc
 	picture = GFX_evt_temple_egyptian_pagan
 	
+	has_global_flag = luxor_restoring
+	
 	trigger = {
-		has_global_flag = luxor_restoring
 		province_id = 795 # Asyut
 		NOT = { has_global_flag = luxor_restored }
 		has_province_flag = reb_luxor_1
@@ -694,8 +696,9 @@ character_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	
+	religion = catholic
+	
 	trigger = {
-		religion = catholic
 		controls_religion = yes # Let it happen for the Pope. He's always around.
 	}
 	
@@ -1558,9 +1561,9 @@ character_event = {
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
+	war = no
 	
 	trigger = {
-		war = no
 		in_command = no
 		is_abroad = no
 		true_religion_in_egyptian_subgroup_trigger = yes
@@ -1648,9 +1651,9 @@ character_event = {
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
+	war = no
 	
 	trigger = {
-		war = no
 		in_command = no
 		is_abroad = no
 		true_religion_in_egyptian_subgroup_trigger = yes
@@ -1748,9 +1751,9 @@ character_event = {
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
+	war = no
 	
 	trigger = {
-		war = no
 		in_command = no
 		is_abroad = no
 		true_religion_in_egyptian_subgroup_trigger = yes
@@ -1928,9 +1931,9 @@ character_event = {
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
+	war = no
 	
 	trigger = {
-		war = no
 		in_command = no
 		#is_abroad = no
 		true_religion_in_egyptian_subgroup_trigger = yes
@@ -1998,9 +2001,9 @@ character_event = {
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
+	war = no
 	
 	trigger = {
-		war = no
 		in_command = no
 		is_abroad = no
 		true_religion_in_egyptian_subgroup_trigger = yes
@@ -2271,9 +2274,9 @@ character_event = {
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
+	#war = no
 	
 	trigger = {
-		#war = no
 		#in_command = no
 		#is_abroad = no
 		true_religion_in_egyptian_subgroup_trigger = yes
@@ -2363,9 +2366,9 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_men = yes
+	war = no
 	
 	trigger = {
-		war = no
 		in_command = no
 		is_abroad = no
 		any_spouse = {
@@ -2477,9 +2480,9 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_men = yes
+	war = no
 	
 	trigger = {
-		war = no
 		in_command = no
 		is_abroad = no
 		true_religion_in_egyptian_subgroup_trigger = yes
@@ -2544,9 +2547,9 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_men = yes
+	war = no
 	
 	trigger = {
-		war = no
 		in_command = no
 		is_abroad = no
 		true_religion_in_egyptian_subgroup_trigger = yes
@@ -2643,9 +2646,9 @@ character_event = {
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
+	war = no
 	
 	trigger = {
-		war = no
 		in_command = no
 		is_abroad = no
 		any_courtier = {
@@ -2824,9 +2827,9 @@ character_event = {
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
+	war = no
 	
 	trigger = {
-		war = no
 		in_command = no
 		is_abroad = no
 		any_courtier = {
@@ -2899,9 +2902,9 @@ character_event = {
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
+	war = no
 	
 	trigger = {
-		war = no
 		in_command = no
 		is_abroad = no
 		any_courtier = {

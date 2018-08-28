@@ -157,9 +157,9 @@ narrative_event = {
 	hide_window = yes
 	
 	only_rulers = yes
+	has_global_flag = celtic_pagan_reformation
 
 	trigger = {
-		has_global_flag = celtic_pagan_reformation
 		NOT = { has_global_flag = wolftails_reformed }
 		has_landed_title = d_wolftails
 	}

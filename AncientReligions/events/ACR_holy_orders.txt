@@ -16,6 +16,7 @@ character_event = {
 	max_age = 45
 	only_capable = yes
 	prisoner = no
+	has_dlc = "Sons of Abraham"
 	
 	trigger = {
 		is_ruler = no
@@ -36,8 +37,6 @@ character_event = {
 		any_liege = {
 			holy_order = no
 		}
-		
-		has_dlc = "Sons of Abraham"
 		
 		any_mercenary_band = {
 			is_title_active = THIS
@@ -240,10 +239,9 @@ character_event = {
 	hide_window = yes
 	
 	only_playable = yes
+	has_dlc = "Sons of Abraham"
 	
 	trigger = {
-		has_dlc = "Sons of Abraham"
-
 		is_potential_land_doner_trigger = yes
 	}
 
@@ -459,6 +457,8 @@ character_event = {
 	
 	min_age = 16
 	only_playable = yes
+	has_dlc = "Sons of Abraham"
+	prisoner = no
 	
 	trigger = {
 		any_mercenary_band = {
@@ -478,7 +478,6 @@ character_event = {
 			}
 			is_adult = yes
 			is_ruler = no
-			prisoner = no
 			NOT = { trait = incapable }
 			ROOT = {
 				NOT = { 
@@ -488,8 +487,6 @@ character_event = {
 				}
 			}
 		}
-
-		has_dlc = "Sons of Abraham"
 	}
 	
 	mean_time_to_happen = {
@@ -694,6 +691,7 @@ character_event = {
 	
 	min_age = 16
 	only_playable = yes
+	has_dlc = "Sons of Abraham"
 	
 	trigger = {
 		any_mercenary_band = {
@@ -716,7 +714,6 @@ character_event = {
 		}
 		
 		any_demesne_province = { has_empty_holding = yes }
-		has_dlc = "Sons of Abraham"
 	}
 	
 	mean_time_to_happen = {

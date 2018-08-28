@@ -30,12 +30,11 @@ character_event = {
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+	has_dlc = "The Old Gods"
 
 	is_triggered_only = yes
 
 	trigger = {
-		has_dlc = "The Old Gods"
-
 		any_realm_province = {
 			title = c_byzantion
 		}
@@ -1100,9 +1099,10 @@ character_event = {
 	hide_window = yes
 
 	is_triggered_only = yes
+	
+	religion = catholic
 
 	trigger = {
-		religion = catholic
 		controls_religion = yes # papas catholicos
 		489 = {
 			religion = hellenic_pagan
@@ -1260,10 +1260,9 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_men = yes
+	has_dlc = "The Old Gods"
 
 	trigger = {
-		has_dlc = "The Old Gods"
-
 		learning = 6
 		is_landed = no
 		NOT = {	
@@ -1844,11 +1843,10 @@ character_event = {
 	only_rulers = yes
 	only_independent = yes
 	prisoner = no
+	has_dlc = "The Old Gods"
+	war = no
 	
 	trigger = {
-		has_dlc = "The Old Gods"
-		war = no
-		
 		completely_controls = c_monemvasia
 		
 		NOT = { religion_group = pagan_group }

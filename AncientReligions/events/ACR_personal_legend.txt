@@ -9,13 +9,12 @@ character_event = {
 
 	capable_only = yes
 	prisoner = no
+	has_dlc = "The Old Gods"
+	religion = hellenic_pagan
 
 	trigger = {
 		always = no #disabled for now	
-		has_dlc = "The Old Gods"
 		has_character_modifier = emulating_paris
-		religion = hellenic_pagan
-
 		has_lover = yes
 
 		NOT = { #can't be ugly, fat, or have bad genetic traits
@@ -75,13 +74,13 @@ character_event = {
 	picture = GFX_evt_roman_temple
 	border = GFX_event_normal_frame_religion
 	is_triggered_only = yes
-	capable_only = yes	
+	capable_only = yes
+	has_dlc = "The Old Gods"
+	religion = hellenic_pagan
 	
 	trigger = {
 		always = no #disabled for now
-		has_dlc = "The Old Gods"
 		has_character_modifier = emulating_odysseus
-		religion = hellenic_pagan
 		intrigue = 10
 		NOT = {
 			has_character_flag = personal_legend_5
@@ -105,12 +104,12 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 
 	capable_only = yes
+	has_dlc = "The Old Gods"
+	religion = hellenic_pagan
 	
 	trigger = {
 		always = no #disabled for now
-		has_dlc = "The Old Gods"
 		has_character_modifier = emulating_nestor
-		religion = hellenic_pagan
 		diplomacy = 10
 		NOT = {
 			has_character_flag = personal_legend_5
@@ -187,13 +186,12 @@ character_event = {
 
 	is_triggered_only = yes
 	capable_only = yes
+	has_dlc = "The Old Gods"
+	religion = hellenic_pagan
 	
 	trigger = {
 		always = no #disabled for now
-		has_dlc = "The Old Gods"
 		has_character_modifier = emulating_achilles
-		religion = hellenic_pagan
-
 		martial = 15
 #		Gotta get this clause working somehow...
 #		NOT = { # this is for takers of towns, not defenders!
@@ -222,13 +220,12 @@ character_event = {
 
 	is_triggered_only = yes
 	capable_only = yes
+	has_dlc = "The Old Gods"
+	religion = hellenic_pagan
 
 	trigger = {
 		always = no #disabled for now
-		has_dlc = "The Old Gods"
 		has_character_modifier = emulating_hector
-		religion = hellenic_pagan
-
 		martial = 15
 #		This *may* not work, Validator thinks its wrong,
 #		but the on_actions file says that FROM is title scope

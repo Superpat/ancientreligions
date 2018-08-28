@@ -514,10 +514,8 @@ character_event = {
     desc = ancrel.9020.desc
     
     is_triggered_only = yes
-
-	trigger = {
-		has_global_flag = ancrel_debug
-	}
+	
+	has_global_flag = ancrel_debug
 
 	immediate = {
 		capital_scope = {
@@ -556,10 +554,8 @@ character_event = {
     desc = ancrel.9021.desc
 
     is_triggered_only = yes
-
-	trigger = {
-		has_global_flag = ancrel_debug
-	}
+	
+	has_global_flag = ancrel_debug
 
 	immediate = {
 		capital_scope = {
@@ -593,9 +589,8 @@ character_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
-		has_global_flag = ancrel_debug
-	}
+	
+	has_global_flag = ancrel_debug
 
 	immediate = {
 		any_realm_character = {

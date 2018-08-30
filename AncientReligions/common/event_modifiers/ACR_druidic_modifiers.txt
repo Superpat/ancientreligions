@@ -338,11 +338,11 @@ relief_effort = {
 good_tumtha = {
 	icon = 8
 
-	piety = 0.1
+	monthly_character_piety = 0.1
 }
 
 bad_tumtha = {
 	icon = 26
 
-	piety = -0.1
+	monthly_character_piety = -0.1
 }

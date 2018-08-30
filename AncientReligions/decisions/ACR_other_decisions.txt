@@ -1,9 +1,10 @@
 decisions = {
 	paganify_the_world = {
 		is_high_prio = yes
+		ai = no
+		
 		potential = {
 			has_dlc = "The Old Gods"
-			ai = no
 			has_global_flag = ancrel
 			NOT = {
 				had_global_flag = { flag = ancrel days = 1 } # only on first day

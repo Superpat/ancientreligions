@@ -1865,9 +1865,10 @@ character_event = {
 	hide_from = yes
 	is_triggered_only = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = titan_thysia_feast_vassal
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = titan_thysia_feast_vassal
 		NOT = { has_character_flag = feast_drunkard }
 		liege = { 
 			has_character_flag = titan_thysia_feast
@@ -1974,9 +1975,10 @@ character_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = titan_thysia_feast_vassal
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = titan_thysia_feast_vassal
 		liege = {
 			has_character_flag = titan_thysia_feast
 			NOT = { has_character_flag = feast_gluttonous }
@@ -2111,9 +2113,10 @@ character_event = {
 	
 	is_triggered_only = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = titan_thysia_feast_vassal
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = titan_thysia_feast_vassal
 		NOT = { has_character_flag = feast_lunatic }
 		liege = { 
 			has_character_flag = titan_thysia_feast
@@ -2223,16 +2226,17 @@ character_event = {
 	hide_from = yes
 	is_triggered_only = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = titan_thysia_feast_vassal
+	only_men = yes
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = titan_thysia_feast_vassal
 		NOT = { has_character_flag = feast_lustful }
 		liege = { 
 			has_character_flag = titan_thysia_feast
 			NOT = { has_character_flag = feast_lustful }
 		}
 		trait = lustful
-		is_female = no
 	}
 	
 	option = {
@@ -2417,9 +2421,10 @@ character_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = titan_thysia_feast_vassal
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = titan_thysia_feast_vassal
 		NOT = { has_character_flag = feast_friendship }
 		liege = { 
 			has_character_flag = titan_thysia_feast
@@ -2519,12 +2524,13 @@ character_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = titan_thysia_feast_vassal
+	only_men = yes
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = titan_thysia_feast_vassal
 		NOT = { has_character_flag = feast_homosexual }
 		trait = homosexual
-		is_female = no
 		has_lover = no
 		liege = { 
 			NOT = { has_character_flag = feast_homosexual }
@@ -2635,12 +2641,13 @@ character_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = titan_thysia_feast_vassal
+	only_women = yes
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = titan_thysia_feast_vassal
 		NOT = { has_character_flag = feast_homosexual }
 		trait = homosexual
-		is_female = yes
 		has_lover = no
 		liege = { 
 			NOT = { has_character_flag = feast_homosexual }
@@ -2938,9 +2945,10 @@ character_event = { #feast_drunkard
 	
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = titan_thysia_feast
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = titan_thysia_feast
 		NOT = { has_character_flag = feast_drunkard }
 		any_vassal = {
 			has_character_flag = titan_thysia_feast_vassal
@@ -2967,9 +2975,10 @@ character_event = {
 	
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = titan_thysia_feast
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = titan_thysia_feast
 		NOT = { has_character_flag = feast_gluttonous }
 		any_vassal = {
 			has_character_flag = titan_thysia_feast_vassal
@@ -2996,9 +3005,10 @@ character_event = {
 	
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = titan_thysia_feast
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = titan_thysia_feast
 		NOT = { has_character_flag = feast_lunatic }
 		any_vassal = {
 			has_character_flag = titan_thysia_feast_vassal
@@ -3025,9 +3035,10 @@ character_event = {
 	
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = titan_thysia_feast
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = titan_thysia_feast
 		NOT = { has_character_flag = feast_lustful }
 		any_vassal = { 
 			has_character_flag = titan_thysia_feast_vassal
@@ -3056,9 +3067,10 @@ character_event = {
 	
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = titan_thysia_feast
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = titan_thysia_feast
 		NOT = { has_character_flag = feast_friendship }
 		has_character_flag = titan_thysia_feast_vassal
 		any_vassal = {
@@ -3101,10 +3113,11 @@ character_event = {
 	
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = titan_thysia_feast
+	
 	trigger = {
-		has_dlc = "The Old Gods"
 		NOT = { has_character_flag = feast_homosexual }
-		has_character_flag = titan_thysia_feast
 		any_vassal = { 
 			has_character_flag = titan_thysia_feast_vassal
 			NOT = { has_character_flag = feast_homosexual }
@@ -3157,10 +3170,11 @@ character_event = {
 	
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = titan_thysia_feast
+	
 	trigger = {
-		has_dlc = "The Old Gods"
 		NOT = { has_character_flag = feast_homosexual }
-		has_character_flag = titan_thysia_feast
 		any_vassal = { 
 			has_character_flag = titan_thysia_feast_vassal
 			NOT = { has_character_flag = feast_homosexual }

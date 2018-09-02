@@ -751,12 +751,12 @@ character_event = {
 
 	only_rulers = yes
 	ai = yes
+	has_character_flag = flag_roman_customs
 
 	trigger = {
 		lower_tier_than = DUKE
 		is_republic = yes
-		has_character_flag = flag_roman_customs
-
+		
 		capital_scope = {
 			NOT = { culture = roman }
 			OR = {

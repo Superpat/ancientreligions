@@ -111,9 +111,7 @@ character_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {
-		has_character_flag = tailteann_begins
-	}
+	has_character_flag = tailteann_begins
 	
 	option = {
 		name = celtic.1194.a
@@ -191,10 +189,10 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 	
 	only_rulers = yes
+	has_character_flag = tailteann_death_phase
 	
 	trigger = {
 		is_ruler = yes
-		has_character_flag = tailteann_death_phase
 		NOT = {
 			has_character_flag = choose_dead_one_tailteann
 			has_character_flag = chosen_dead_one_tailteann
@@ -754,9 +752,9 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_character_flag = attending_tailteann
 	
 	trigger = {
-		has_character_flag = attending_tailteann
 		NOT = {
 			has_character_flag = tailteann_has_ended
 		}
@@ -876,9 +874,9 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_character_flag = attending_tailteann
 	
 	trigger = {
-		has_character_flag = attending_tailteann
 		NOT = {
 			has_character_flag = tailteann_has_ended
 			has_character_flag = tailteann_fighting
@@ -1006,9 +1004,9 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_character_flag = attending_tailteann
 	
 	trigger = {
-		has_character_flag = attending_tailteann
 		NOT = {
 			has_character_flag = tailteann_has_ended
 			has_character_flag = tailteann_winner_athletic
@@ -1385,9 +1383,9 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_character_flag = attending_tailteann
 	
 	trigger = {
-		has_character_flag = attending_tailteann
 		NOT = {
 			has_character_flag = tailteann_has_ended
 		}
@@ -1481,9 +1479,9 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_character_flag = attending_tailteann
 	
 	trigger = {
-		has_character_flag = attending_tailteann
 		NOT = {
 			trait = maimed
 		}
@@ -1578,9 +1576,9 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_character_flag = attending_tailteann
 	
 	trigger = {
-		has_character_flag = attending_tailteann
 		NOT = { has_character_flag = attending_tailteann_event }
 		NOT = {
 			has_character_flag = tailteann_has_ended
@@ -1675,9 +1673,9 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_character_flag = attending_tailteann
 	
 	trigger = {
-		has_character_flag = attending_tailteann
 		NOT = { has_character_flag = attending_tailteann_event }
 		NOT = {
 			has_character_flag = tailteann_has_ended
@@ -1749,9 +1747,9 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
-	
+	has_character_flag = attending_tailteann
+		
 	trigger = {
-		has_character_flag = attending_tailteann
 		NOT = { has_character_flag = attending_tailteann_event }
 		NOT = {
 			has_character_flag = tailteann_has_ended
@@ -1823,9 +1821,9 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_character_flag = attending_tailteann
 	
 	trigger = {
-		has_character_flag = attending_tailteann
 		NOT = { has_character_flag = attending_tailteann_event }
 		NOT = {
 			has_character_flag = tailteann_has_ended
@@ -1896,9 +1894,9 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_character_flag = attending_tailteann
 	
 	trigger = {
-		has_character_flag = attending_tailteann
 		NOT = { has_character_flag = attending_tailteann_event }
 		NOT = {
 			has_character_flag = tailteann_has_ended
@@ -1969,9 +1967,9 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_character_flag = attending_tailteann
 	
 	trigger = {
-		has_character_flag = attending_tailteann
 		NOT = { has_character_flag = attending_tailteann_event }
 		NOT = {
 			has_character_flag = tailteann_has_ended
@@ -2042,9 +2040,9 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_character_flag = attending_tailteann
 	
 	trigger = {
-		has_character_flag = attending_tailteann
 		NOT = { has_character_flag = attending_tailteann_event }
 		NOT = {
 			has_character_flag = tailteann_has_ended
@@ -2115,9 +2113,9 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_character_flag = attending_tailteann
 	
 	trigger = {
-		has_character_flag = attending_tailteann
 		NOT = { has_character_flag = attending_tailteann_event }
 		NOT = {
 			has_character_flag = tailteann_has_ended
@@ -2188,9 +2186,9 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_character_flag = attending_tailteann
 	
 	trigger = {
-		has_character_flag = attending_tailteann
 		NOT = { has_character_flag = attending_tailteann_event }
 		NOT = {
 			has_character_flag = tailteann_has_ended
@@ -2261,9 +2259,9 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_character_flag = attending_tailteann
 	
 	trigger = {
-		has_character_flag = attending_tailteann
 		NOT = {
 			has_character_flag = tailteann_has_ended
 		}
@@ -2337,9 +2335,9 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_character_flag = attending_tailteann
 	
 	trigger = {
-		has_character_flag = attending_tailteann
 		NOT = {
 			has_character_flag = tailteann_has_ended
 		}
@@ -2402,9 +2400,9 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_character_flag = attending_tailteann
 	
 	trigger = {
-		has_character_flag = attending_tailteann
 		NOT = {
 			has_character_flag = tailteann_has_ended
 		}
@@ -2466,9 +2464,9 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_character_flag = attending_tailteann
 	
 	trigger = {
-		has_character_flag = attending_tailteann
 		NOT = {
 			has_character_flag = tailteann_has_ended
 		}
@@ -2534,9 +2532,9 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_character_flag = attending_tailteann
 	
 	trigger = {
-		has_character_flag = attending_tailteann
 		NOT = {
 			has_character_flag = tailteann_has_ended
 		}
@@ -2612,9 +2610,9 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_character_flag = attending_tailteann
 	
 	trigger = {
-		has_character_flag = attending_tailteann
 		NOT = {
 			has_character_flag = tailteann_has_ended
 		}
@@ -2690,9 +2688,9 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_character_flag = attending_tailteann
 	
 	trigger = {
-		has_character_flag = attending_tailteann
 		NOT = {
 			has_character_flag = tailteann_has_ended
 		}
@@ -2768,9 +2766,9 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_character_flag = attending_tailteann
 	
 	trigger = {
-		has_character_flag = attending_tailteann
 		NOT = {
 			has_character_flag = tailteann_has_ended
 		}
@@ -2846,9 +2844,9 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_character_flag = attending_tailteann
 	
 	trigger = {
-		has_character_flag = attending_tailteann
 		NOT = {
 			has_character_flag = tailteann_has_ended
 		}
@@ -2924,9 +2922,9 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_character_flag = attending_tailteann
 	
 	trigger = {
-		has_character_flag = attending_tailteann
 		NOT = {
 			has_character_flag = tailteann_has_ended
 		}

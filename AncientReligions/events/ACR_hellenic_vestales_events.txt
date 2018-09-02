@@ -90,9 +90,10 @@ character_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
+	
+	has_character_flag = flag_vestalis
 
 	trigger = {
-		has_character_flag = flag_vestalis
 		NOT = { has_minor_title = title_vestalis }
 		NOT = { has_minor_title = title_vestalis_maxima }
 	}
@@ -113,9 +114,7 @@ character_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
-		has_character_flag = flag_vestalis
-	}
+	has_character_flag = flag_vestalis
 
 	immediate = {
 		clr_character_flag = flag_vestalis

@@ -25,10 +25,10 @@ narrative_event = {
 	hide_from = yes
 	
 	only_rulers = yes
+	has_dlc = "The Old Gods"
+	has_global_flag = celtic_pagan_reformation
 	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_global_flag = celtic_pagan_reformation
 		NOT = {
 			is_title_active = d_red_dragons
 		}
@@ -142,20 +142,19 @@ character_event = {
 	picture = GFX_evt_warrior_banners
 	border = GFX_event_normal_frame_religion
 	
+	religion = celtic_pagan_reformed
 	only_men = yes
 	min_age = 16
 	max_age = 45
 	only_capable = yes
 	prisoner = no
+	has_dlc = "Sons of Abraham"
 	
 	trigger = {
 		is_ruler = no
-		religion = celtic_pagan_reformed
 		is_heretic = no
 		is_councillor = no
-		
 		martial = 5
-		
 		is_title_active = d_red_dragons
 		
 		OR = {
@@ -173,8 +172,6 @@ character_event = {
 				holy_order = no
 			}
 		}
-		
-		has_dlc = "Sons of Abraham"
 		
 		NOT = { has_character_modifier = expelled_d_red_dragons }
 		NOT = {
@@ -345,6 +342,7 @@ character_event = {
 	hide_window = yes
 	
 	only_playable = yes
+	has_dlc = "Sons of Abraham"
 	
 	trigger = {
 		religion = celtic_pagan_reformed
@@ -373,8 +371,6 @@ character_event = {
 				}
 			}
 		}
-		
-		has_dlc = "Sons of Abraham"
 		
 		NOT = { has_character_modifier = expelled_d_red_dragons }
 		NOT = {

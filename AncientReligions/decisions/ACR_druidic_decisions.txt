@@ -898,8 +898,9 @@ decisions = {
 
 	assign_druid = { # For the AI, because they are dumb enough not to hand out minor titles
 		only_playable = yes
+		ai = yes
+		
 		potential = {
-			ai = yes
 			OR = {
 				religion = celtic_pagan
 				religion = celtic_pagan_reformed
@@ -939,8 +940,9 @@ decisions = {
 
 	assign_bard = { # For the AI, because they are dumb enough not to hand out minor titles
 		only_playable = yes
+		ai = yes
+		
 		potential = {
-			ai = yes
 			OR = {
 				religion = celtic_pagan
 				religion = celtic_pagan_reformed

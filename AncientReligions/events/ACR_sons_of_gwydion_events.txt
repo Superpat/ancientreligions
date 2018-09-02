@@ -94,12 +94,12 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	prisoner = no
+	has_dlc = "The Old Gods"
+	has_global_flag = gwydion_founded
 	
 	trigger = {
-		has_dlc = "The Old Gods"
 		is_landed = no
 		in_command = no
-		has_global_flag = gwydion_founded
 		OR = {
 			religion = celtic_pagan
 			religion = celtic_pagan_reformed
@@ -212,9 +212,10 @@ character_event = {
 	id = celtic.124
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = serving_gwydion
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = serving_gwydion
 		NOT = { trait = scarred }
 	}
 	
@@ -262,9 +263,10 @@ character_event = {
 	id = celtic.128
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = serving_gwydion
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = serving_gwydion
 		NOT = {
 			trait = maimed
 		}
@@ -305,9 +307,10 @@ character_event = {
 	id = celtic.130
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = serving_gwydion
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = serving_gwydion
 		NOT = { trait = brilliant_strategist }
 		OR = {
 			trait = misguided_warrior
@@ -399,9 +402,10 @@ character_event = {
 	id = celtic.132
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = serving_gwydion
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = serving_gwydion
 		NOT = { trait = depressed }
 	}
 	
@@ -453,11 +457,9 @@ character_event = {
 	id = celtic.134
 	hide_window = yes
 	
-	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = serving_varangian
-		is_married = no
-	}
+	has_dlc = "The Old Gods"
+	has_character_flag = serving_varangian
+	is_married = no
 	
 	mean_time_to_happen = {
 		months = 180
@@ -508,9 +510,10 @@ character_event = {
 	id = celtic.136
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	has_character_flag = serving_gwydion
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = serving_gwydion
 		NOT = { trait = zealous }
 	}
 	
@@ -553,10 +556,8 @@ character_event = {
 	id = celtic.138
 	hide_window = yes
 	
-	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = serving_gwydion
-	}
+	has_dlc = "The Old Gods"
+	has_character_flag = serving_gwydion
 	
 	mean_time_to_happen = {
 		months = 120
@@ -622,10 +623,8 @@ character_event = {
 	id = celtic.140
 	hide_window = yes
 	
-	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = serving_gwydion
-	}
+	has_dlc = "The Old Gods"
+	has_character_flag = serving_gwydion
 	
 	mean_time_to_happen = {
 		months = 200
@@ -718,10 +717,8 @@ character_event = {
 	id = celtic.142
 	hide_window = yes
 	
-	trigger = {
-		has_dlc = "The Old Gods"
-		has_character_flag = serving_gwydion
-	}
+	has_dlc = "The Old Gods"
+	has_character_flag = serving_gwydion
 	
 	mean_time_to_happen = {
 		months = 160
@@ -768,16 +765,17 @@ character_event = {
 	picture = GFX_evt_viking_throneroom_oldgods
 	border = GFX_event_normal_frame_war
 	
+	has_dlc = "The Old Gods"
+	ai = no
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		ai = no
 		OR = {
 			has_character_flag = wants_gwydion
 			has_character_flag = serving_gwydion
 		}
 		father = { is_alive = no }
 	}
-			
+	
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -806,16 +804,17 @@ character_event = {
 	id = celtic.145
 	hide_window = yes
 	
+	has_dlc = "The Old Gods"
+	ai = yes
+	
 	trigger = {
-		has_dlc = "The Old Gods"
-		ai = yes
 		OR = {
 			has_character_flag = wants_gwydion
 			has_character_flag = serving_gwydion
 		}
 		father = { is_alive = no }
 	}
-			
+	
 	mean_time_to_happen = {
 		days = 1
 	}

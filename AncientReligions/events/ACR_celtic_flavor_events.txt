@@ -327,15 +327,13 @@ character_event = {
 	min_age = 16
 	prisoner = no
 	only_rulers = yes
+	has_dlc = "The Old Gods"
+	culture_group = celtic
 
 	trigger = {
-		has_dlc = "The Old Gods"
 		is_ill = yes
-		
 		completely_controls = c_innse_gall
-		
 		NOT = { religion_group = pagan_group }
-		culture_group = celtic
 		OR = {
 			has_game_rule = {
 				name = acr_ai_revival
@@ -516,9 +514,9 @@ narrative_event = {
 			religion = celtic_pagan_reformed
 		}
 		OR = {
-				culture = welsh
-				culture = breton
-				culture = pictish
+			culture = welsh
+			culture = breton
+			culture = pictish
 		}
 		e_britannia = {
 			title = FROM

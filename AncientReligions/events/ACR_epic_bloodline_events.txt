@@ -21,12 +21,11 @@ character_event = {
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+	has_dlc = "The Old Gods"
+	religion = hellenic_pagan
 	
 	trigger = {
-		has_dlc = "The Old Gods"
-		
 		learning = 6
-		religion = hellenic_pagan
 		NOT = { has_character_flag = flag_studied_the_classics }
 	}
 	
@@ -451,10 +450,9 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 
 	capable_only = yes
+	has_dlc = "The Old Gods"
 
 	trigger = {
-		has_dlc = "The Old Gods"
-
 		has_character_flag = personal_legend_5
 		has_character_flag = personal_legend_4
 		has_character_flag = personal_legend_3

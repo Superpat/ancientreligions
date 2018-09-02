@@ -18,9 +18,9 @@ character_event = {
 	is_triggered_only = yes
 	
 	only_men = yes
+	has_dlc = "Rajas of India"
 	
 	trigger = {
-		has_dlc = "Rajas of India"
 		OR = {
 			religion = celtic_pagan
 			religion = celtic_pagan_reformed
@@ -209,13 +209,14 @@ character_event = {
 	
 	is_triggered_only = yes
 	
+	has_dlc = "Rajas of India"
+	has_character_flag = reincarnation_education
+	
 	trigger = {
 		OR = {
 			religion = celtic_pagan
 			religion = celtic_pagan_reformed
 		}
-		has_dlc = "Rajas of India"
-		has_character_flag = reincarnation_education
 		NOT = { personality_traits = 5 }
 		reincarnation_scope = {
 			ROOT = {

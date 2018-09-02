@@ -103,7 +103,7 @@ d_celtic_pagan_reformed = {
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
 
-k_britannic = {
+k_britannic_pagan = {
 	color = { 128 230 128 }
 	color2 = { 255 255 255 }
 

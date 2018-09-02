@@ -989,7 +989,7 @@ can_be_chancellor_trigger = {
 	NOT = { has_character_modifier = resigned_in_anger }
 
 	OR = {
-		NOT = { religion_openly_in_celtic_subgroup_trigger = yes }
+		NOT = { religion_openly_celtic_or_reformed_trigger = yes }
 
 		OR = {
 			trait = druid

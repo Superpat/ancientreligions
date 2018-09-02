@@ -11,7 +11,7 @@ namespace = britannic
 character_event = {
 	id = britanic.0
 	desc = britannic.0.desc
-	#picture = GFX
+	picture = GFX_evt_church_council
 	border = GFX_event_normal_frame_religion
 
 	major = yes
@@ -130,7 +130,7 @@ character_event = {
 character_event = {
 	id = britannic.3
 	desc = britannic.3.desc
-	#picture = GFX
+	picture = GFX_evt_birth
 	border = GFX_event_normal_frame_religion
 
 	is_triggered_only = yes
@@ -316,23 +316,20 @@ character_event = {
 	id = britannic.10
 	title = britannic.10.title
 	desc = britannic.10.desc
-	#picture = GFX
+	picture = GFX_evt_warrior_banners
 	border = GFX_event_normal_frame_war
 
 	major = yes
-	hide_from = yes
 	
 	only_rulers = yes
-	religion = catholic
-	only_men = yes
+	religion = britannic_pagan
 	
 	trigger = {
 		NOT = {
 			is_title_active = d_saint_boudicca
 		}
-		is_title_active = k_britannic_pagan
 
-		controls_religion = yes # Let it happen for the Pope - he's always around
+		controls_religion = yes # Let it happen for the Arch-Dryad - she needs to be here anyway
 	}
 	
 	mean_time_to_happen = {
@@ -616,7 +613,7 @@ character_event = {
 			}
 		}
 	}
-	#picture = GFX
+	picture = GFX_evt_emissary
 	border = GFX_event_normal_frame_religion
 
 	is_triggered_only = yes
@@ -872,7 +869,7 @@ character_event = {
 			has_dlc = "Zeus"
 		}
 	}
-	#picture = GFX
+	picture = GFX_evt_emissary
 	border = GFX_event_normal_frame_religion
 
 	is_triggered_only = yes
@@ -923,15 +920,19 @@ character_event = {
 	}
 }
 
+# Placate the Arch-Dryad (bounce off her)
 character_event = {
 	id = britannic.26
 	hide_window = yes
+
+	is_triggered_only = yes
 
 	immediate = {
 		FROM = { character_event = { id = britannic.27 days = 6 } }
 	}
 }
 
+# notify ruler the AD is placated
 letter_event = {
 	id = britannic.27
 	desc = britannic.27.desc
@@ -945,11 +946,25 @@ letter_event = {
 	}
 }
 
+##################################################################
+# Vassalized Arch-Dryad Events                                   #
+##################################################################
+
 # Arch-Dryad demands control of a County
 
 # Arch-Dryad demands control of a Duchy
 
 # Arch-Dryad demands to be released as a vassal
+
+# Arch-Dryad threatens your position
+
+# grants a title to a powerful/ambitious/both vassal
+
+# excommunicates you
+
+# instigates local peasant revolts against you
+
+# wide-scale rebellion
 
 ##################################################################
 # 
@@ -973,8 +988,6 @@ character_event = {
 		religion = britannic_pagan
 
 		wealth = 600
-		# don't have the archdryad bombard the player
-		NOT = { had_character_flag = { flag = soldier_from_the_archdryad days = 365 } }
 		any_playable_ruler = {
 			religion = ROOT
 			NOT = { wealth = 500 }
@@ -987,6 +1000,9 @@ character_event = {
 			}
 			NOT = { war_with = ROOT }
 			reverse_opinion = { who = ROOT value = 0 }
+
+			# don't have the archdryad bombard the player
+			NOT = { had_character_flag = { flag = soldier_from_the_archdryad days = 365 } }
 			OR = {
 				NOT = { has_character_flag = money_from_the_archdryad }
 				OR = {
@@ -1801,7 +1817,7 @@ character_event = {
 		}
 		text = britannic.64.build
 	}
-	#picture = GFX
+	picture = GFX_evt_peasants
 	border = GFX_event_normal_frame_religion
 
 	is_triggered_only = yes
@@ -2050,7 +2066,7 @@ letter_event = {
 character_event = {
 	id = britannic.101
 	desc = britannic.101.desc
-	#picture = GFX
+	picture = GFX_evt_bishop
 	border = GFX_event_normal_frame_religion
 
 	is_triggered_only = yes
@@ -2106,7 +2122,7 @@ long_character_event = {
 			}
 		}
 	}
-	#picture = GFX
+	picture = GFX_evt_religious_exultation
 	border = GFX_event_long_frame_religion
 
 	is_triggered_only = yes
@@ -2166,7 +2182,7 @@ long_character_event = {
 			}
 		}
 	}
-	#picture = GFX
+	picture = GFX_evt_bishop
 	border = GFX_event_long_frame_religion
 
 	is_triggered_only = yes
@@ -2257,7 +2273,7 @@ character_event = {
 character_event = {
 	id = britannic.105
 	desc = britannic.105.desc
-	#picture = GFX
+	picture = GFX_evt_child_bully
 	border = GFX_event_normal_frame_religion
 
 	is_triggered_only = yes
@@ -2292,7 +2308,7 @@ character_event = {
 	id = britannic.150
 	title = britannic.imbolg_title
 	desc = britannic.150.desc
-	#picture = GFX_evt_parade
+	picture = GFX_evt_market
 	border = GFX_event_normal_frame_religion
 
 	is_triggered_only = yes
@@ -2312,7 +2328,7 @@ character_event = {
 	id = britannic.151
 	title = britannic.imbolg_title
 	desc = britannic.151.desc
-	#picture = GFX_evt_jugglers
+	picture = GFX_evt_castle_construction
 
 	only_playable = yes
 	capable_only = yes
@@ -2468,7 +2484,7 @@ character_event = {
 	id = britannic.153
 	title = britannic.imbolg_title
 	desc = britannic.153.desc
-	#picture = GFX
+	picture = GFX_evt_magnificent_castle
 
 	only_playable = yes
 	capable_only = yes
@@ -2594,7 +2610,7 @@ character_event = {
 	id = britannic.154
 	title = britannic.imbolg_title
 	desc = britannic.154.desc
-	#picture = GFX
+	picture = GFX_evt_magnificent_castle
 
 	is_triggered_only = yes
 
@@ -2624,7 +2640,7 @@ character_event = {
 	id = britannic.155
 	title = britannic.imbolg_title
 	desc = britannic.155.desc
-	#picture = GFX
+	picture = GFX_evt_magnificent_castle
 
 	is_triggered_only = yes
 
@@ -2654,7 +2670,7 @@ character_event = {
 	id = britannic.156
 	title = britannic.imbolg_title
 	desc = britannic.156.desc
-	#picture = GFX
+	picture = GFX_evt_courtiers_talking
 
 	is_triggered_only = yes
 
@@ -2670,7 +2686,7 @@ character_event = {
 	id = britannic.157
 	title = britannic.imbolg_title
 	desc = britannic.157.desc
-	#picture = GFX
+	picture = GFX_evt_courtiers_talking
 
 	is_triggered_only = yes
 
@@ -2686,7 +2702,7 @@ character_event = {
 	id = britannic.158
 	title = britannic.imbolg_title
 	desc = britannic.158.desc
-	#picture = GFX
+	picture = GFX_evt_children_talking
 
 	min_age = 16
 	capable_only = yes
@@ -2743,7 +2759,7 @@ character_event = {
 	id = britannic.159
 	title = britannic.imbolg_title
 	desc = britannic.159.desc
-	#picture = GFX
+	picture = GFX_evt_woman_in_firelight
 
 	min_age = 16
 	capable_only = yes
@@ -2826,7 +2842,7 @@ character_event = {
 	id = britannic.160
 	title = britannic.imbolg_title
 	desc = britannic.160.desc
-	#picture = GFX
+	picture = GFX_evt_woman_in_firelight
 
 	is_triggered_only = yes
 
@@ -2844,7 +2860,7 @@ character_event = {
 	id = britannic.161
 	title = britannic.imbolg_title
 	desc = britannic.161.desc
-	#picture = GFX
+	picture = GFX_evt_poke_king_in_chest
 
 	min_age = 16
 	capable_only = yes
@@ -2930,7 +2946,7 @@ character_event = {
 	id = britannic.162
 	title = britannic.imbolg_title
 	desc = britannic.162.desc
-	#picture = GFX
+	picture = GFX_evt_poke_king_in_chest
 
 	is_triggered_only = yes
 
@@ -2948,7 +2964,7 @@ character_event = {
 	id = britannic.163
 	title = britannic.imbolg_title
 	desc = britannic.163.desc
-	#picture = GFX
+	picture = GFX_evt_market
 
 	min_age = 16
 	capable_only = yes
@@ -3005,7 +3021,7 @@ character_event = {
 	id = britannic.164
 	title = britannic.imbolg_title
 	desc = britannic.164.desc
-	picture = GFX_evt_jugglers
+	picture = GFX_evt_heretic
 
 	min_age = 16
 	capable_only = yes
@@ -3136,7 +3152,7 @@ character_event = {
 	id = britannic.165
 	title = britannic.imbolg_title
 	desc = britannic.165.desc
-	#picture = GFX
+	picture = GFX_evt_birth
 
 	min_age = 16
 	capable_only = yes
@@ -3193,7 +3209,7 @@ character_event = {
 	id = britannic.166
 	title = britannic.imbolg_title
 	desc = britannic.166.desc
-	#picture = GFX
+	picture = GFX_evt_birth
 
 	min_age = 16
 	capable_only = yes
@@ -3411,7 +3427,7 @@ character_event = {
 	id = britannic.169
 	title = britannic.imbolg_title
 	desc = britannic.169
-	#picture= GFX
+	picture = GFX_evt_whispers
 
 	is_triggered_only = yes
 
@@ -3749,7 +3765,7 @@ character_event = {
 	id = britannic.172
 	title = britannic.imbolg_title
 	desc = britannic.172.desc
-	#picture= GFX
+	picture = GFX_evt_whispers
 
 	is_triggered_only = yes
 
@@ -3976,7 +3992,7 @@ character_event = {
 	id = britannic.175
 	title = britannic.imbolg_title
 	desc = britannic.175.desc
-	#picture = GFX
+	picture = GFX_evt_whispers
 
 	option = { # giggity
 		name = britannic.175.a

@@ -338,14 +338,6 @@ pagan_group = {
 			EVIL_UNSEELIE
 		}
 		
-		#unit_modifier = {	
-			#???
-		#}
-		
-		#unit_home_modifier = {
-			#???
-		#}
-		
 		parent = celtic_pagan_reformed
 		pre_reformed = yes
 

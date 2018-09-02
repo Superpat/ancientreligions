@@ -71,6 +71,7 @@ decisions = {
 
 	hold_imbolg = {
 		only_playable = yes
+		is_high_prio = yes
 		ai_check_interval = 3
 		potential = {
 			is_playable = yes
@@ -189,7 +190,7 @@ decisions = {
 		}
 
 		allow = {
-			scaled_wealth = { value = 1 min = 25 max = 200 }
+			scaled_wealth = { value = 1 min = 25 max = 500 }
 		}
 
 		effect = {
@@ -200,7 +201,7 @@ decisions = {
 						to = THIS
 						value = 1
 						min = 25
-						max = 200
+						max = 500
 					}
 
 					custom_tooltip = {

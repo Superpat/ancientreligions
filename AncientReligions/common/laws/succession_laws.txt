@@ -1024,7 +1024,9 @@ gender_laws = {
 		female_dynasty_opinion = -5
 	
 		potential = {
-			NOT = { religion = britannic_pagan }
+			holder_scope = {
+				NOT = { religion = britannic_pagan }
+			}
 		}
 		effect = {
 			gender_succ = agnatic
@@ -1154,7 +1156,9 @@ gender_laws = {
 		female_dynasty_opinion = 10
 		
 		potential = {
-			religion = britannic_pagan
+			holder_scope = {
+				religion = britannic_pagan
+			}
 		}
 		allow = {
 			always = yes
@@ -1169,11 +1173,14 @@ gender_laws = {
 		female_dynasty_opinion = 5
 		
 		potential = {
-			religion = britannic_pagan
+			holder_scope = {
+				religion = britannic_pagan
+			}
 		}
 		allow = {
-			NOT = { is_theocracy = yes }
-			always = yes
+			holder_scope = {
+				NOT = { is_theocracy = yes }
+			}
 		}
 		default = yes
 		default_selection = {

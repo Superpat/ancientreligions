@@ -346,3 +346,11 @@ bad_tumtha = {
 
 	monthly_character_piety = -0.1
 }
+
+holding_imbolg = {
+	icon = 48
+
+	monthly_character_prestige = 0.05
+}
+
+imbolg_timer = { icon = 1 }

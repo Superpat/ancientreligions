@@ -241,7 +241,7 @@ decisions = {
 				k_aten_pagan = {
 					grant_title = ROOT
 				}
-				narrative_event = { id = atenic.004 }
+				narrative_event = { id = atenic.4 }
 				if = {
 					limit = { ROOT = { ai = no } }
 					ROOT = {
@@ -409,7 +409,7 @@ decisions = {
 			set_global_flag = akhetaten_restoring
 			wealth = -1000
 			795 = {
-				province_event = { id = atenic.000 }
+				province_event = { id = atenic.0 }
 			}
 		}
 		ai_will_do = {
@@ -455,7 +455,7 @@ decisions = {
 			activate_title = { title = d_burning_blades status = yes }
 			hidden_tooltip = {
 				set_character_flag = eventancrel.5005
-				narrative_event = { id = atenic.005 }
+				narrative_event = { id = atenic.5 }
 				create_character = {
 					random_traits = yes
 					religion = aten_pagan

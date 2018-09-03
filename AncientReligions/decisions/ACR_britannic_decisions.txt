@@ -39,6 +39,7 @@ decisions = {
 					k_britannic_pagan = {
 						grant_title = PREV
 					}
+					set_defacto_liege = THIS
 					c_middlesex = {
 						location = {
 							random_province_holding = {
@@ -48,6 +49,8 @@ decisions = {
 							}
 						}
 					}
+
+					save_event_target_as = archdryad
 				}
 
 				character_event = { id = britannic.0 days = 0 }
@@ -125,7 +128,7 @@ decisions = {
 			set_character_flag = do_not_disturb
 			hidden_tooltip = {
 				character_event = {
-					id = britannic.249
+					id = britannic.199
 					days = 60
 				}
 				character_event = { id = britannic.150 }
@@ -247,17 +250,6 @@ targeted_decisions = {
 				age = 3
 				has_character_flag = tumtha
 			}
-			OR = {
-				AND = {
-					liege = {
-						religion = britannic_pagan
-					}
-					mother = {
-						religion = britannic_pagan
-					}
-				}
-				religion = britannic_pagan
-			}
 		}
 		allow = {
 			OR = {
@@ -293,21 +285,31 @@ targeted_decisions = {
 			}
 		}
 		third_party_allow = {
-			allow = yes
+			OR = {
+				AND = {
+					liege = {
+						religion = britannic_pagan
+					}
+					mother = {
+						religion = britannic_pagan
+					}
+				}
+				religion = britannic_pagan
+			}
 		}
 		effect = {
 			save_event_target_as = the_dryad
-			FROM = {
-				save_event_target_as = the_ruler
-				custom_tooltip = {
-					text = tumoidechais_tt
-					hidden_tooltip = {
-						character_event = { id = britannic.100 days = 2 }
-					}
-				}
-			}
 			FROMFROM = {
 				save_event_target_as = the_child
+			}
+			FROM = {
+				save_event_target_as = the_ruler
+			}
+			custom_tooltip = {
+				text = tumoidechais_tt
+				hidden_tooltip = {
+					character_event = { id = britannic.110 days = 2 }
+				}
 			}
 		}
 		ai_will_do = {

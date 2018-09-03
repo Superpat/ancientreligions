@@ -165,6 +165,37 @@ d_fianna = {
 	dynasty_title_names = no
 }
 
+d_saint_boudicca = {
+	color={ 75 0 75 }
+	color2={ 255 255 255 }
+	
+	capital = 64 #Gwynedd
+
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+	
+	# Always exists
+	landless = yes
+	
+	holy_order = yes
+	
+	# Parent Religion 
+	religion = britannic_pagan
+	
+	culture = welsh
+	
+	monthly_income = 4
+	
+	# Cannot be held as a secondary title
+	primary = yes
+
+	mercenary_type = red_dragons_composition
+
+	strength_growth_per_century = 1.0	
+
+	dynasty_title_names = no
+}
+
 d_anubis = {
 	color = { 128 120 20 }
 	color2 = { 255 255 255 }

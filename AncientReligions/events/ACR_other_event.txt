@@ -613,11 +613,10 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { has_global_flag = ancrel_cardea }
+		NOT = { has_global_flag = ancrel_cernunnos }
 	}
 
 	immediate = {
-		set_global_flag = ancrel_cardea
 		set_global_flag = ancrel_cernunnos
 		any_player = {
 			limit = {

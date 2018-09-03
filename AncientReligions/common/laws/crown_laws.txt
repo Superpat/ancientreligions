@@ -25,13 +25,7 @@ de_jure_laws = {
 				is_nomadic = no
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
 		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
 			factor = 0
 		}
 		effect = {
@@ -74,19 +68,13 @@ de_jure_laws = {
 				is_tribal = no
 				is_nomadic = no
 			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
+		}		
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
 				NOT = { has_law = crown_authority_0 }
 			}
-		}
-		ai_will_revoke = {
-			factor = 0
 		}
 		
 		pass_effect = {
@@ -167,9 +155,7 @@ de_jure_laws = {
 				is_nomadic = no
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}			
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -179,9 +165,6 @@ de_jure_laws = {
 				factor = 0
 				NOT = { has_law = crown_authority_1 }
 			}
-		}
-		ai_will_revoke = {
-			factor = 0
 		}
 		
 		pass_effect = {
@@ -261,9 +244,6 @@ de_jure_laws = {
 				is_nomadic = no
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -277,10 +257,6 @@ de_jure_laws = {
 				}
 			}
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		
 		pass_effect = {
 			hidden_tooltip = {
 				if = { 
@@ -303,7 +279,6 @@ de_jure_laws = {
 				}
 			}
 		}
-		
 		effect = {
 		
 			hidden_tooltip = {
@@ -356,9 +331,6 @@ de_jure_laws = {
 				is_nomadic = no
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -372,11 +344,6 @@ de_jure_laws = {
 				}
 			}
 		}
-		
-		ai_will_revoke = {
-			factor = 0
-		}
-		
 		pass_effect = {
 			hidden_tooltip = {
 				if = { 
@@ -399,7 +366,6 @@ de_jure_laws = {
 				}
 			}
 		}
-		
 		effect = {
 			hidden_tooltip = {
 				revoke_law = crown_authority_0
@@ -446,14 +412,8 @@ de_jure_laws = {
 					is_title_active = k_britannic_pagan
 				}
 			}
-		}
-		revoke_allowed = {
-			always = no
 		}			
 		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
 			factor = 0
 		}
 		effect = {
@@ -485,10 +445,7 @@ de_jure_laws = {
 					is_title_active = k_britannic_pagan
 				}
 			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
+		}		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -501,12 +458,9 @@ de_jure_laws = {
 						NOT = { trait = cynical }
 					}
 					NOT = { has_law = investiture_law_0 }
-					religion = britannic_pagan
+					holder_scope = { religion = britannic_pagan }
 				}
 			}
-		}
-		ai_will_revoke = {
-			factor = 0
 		}
 		effect = {
 			hidden_tooltip = {

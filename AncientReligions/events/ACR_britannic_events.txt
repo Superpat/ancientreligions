@@ -9,7 +9,7 @@ namespace = britannic
 
 # Arch-Dryad is created
 character_event = {
-	id = britanic.0
+	id = britannic.0
 	desc = britannic.0.desc
 	picture = GFX_evt_church_council
 	border = GFX_event_normal_frame_religion
@@ -61,11 +61,9 @@ character_event = {
 		mother = {
 			if = {
 				limit = { is_alive = yes }
-				FROM = {
-					piety = 100
-					prestige = 20
-				}
-				character_event = { id = britannic.2 days = 0 }
+				piety = 100
+				prestige = 20
+				character_event = { id = britannic.2 days = 1 }
 			}
 		}
 
@@ -181,6 +179,10 @@ character_event = {
 	immediate = {
 		add_trait = dryad
 	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
 }
 
 # Britannic becoming a wicked Dryad
@@ -190,8 +192,6 @@ character_event = {
 	picture = GFX_evt_scandal
 	border = GFX_event_normal_frame_religion
 	
-	is_triggered_only = yes
-
 	min_age = 16
 	only_capable = yes
 	prisoner = no	
@@ -207,8 +207,8 @@ character_event = {
 		}
 		OR = {
 			trait = cynical
-			trait = lustful
 			trait = chaste
+			trait = celibate
 			trait = gluttonous
 			trait = greedy
 			trait = slothful
@@ -219,6 +219,10 @@ character_event = {
 			trait = possessed
 			trait = hedonist
 		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
 	}
 
 	option = {
@@ -285,7 +289,7 @@ character_event = {
 					character = ROOT
 				}
 			}
-			character_event = { id = SoA.5312 days = 8 random = 7 }         # Notify players
+			character_event = { id = britannic.7 days = 8 random = 7 }         # Notify players
 		}
 	}
 }
@@ -347,7 +351,7 @@ character_event = {
 			random_traits = no
 			dynasty = random
 			religion = britannic_pagan
-			culture = archdryad
+			culture = event_target:archdryad
 			female = yes
 			age = 28
 			trait = brilliant_strategist
@@ -368,7 +372,7 @@ character_event = {
 				random_traits = yes
 				dynasty = random
 				religion = britannic_pagan
-				culture = boudicca_leader
+				culture = event_target:boudicca_leader
 				female = yes
 				age = 16
 			}
@@ -376,7 +380,7 @@ character_event = {
 				random_traits = yes
 				dynasty = random
 				religion = britannic_pagan
-				culture = boudicca_leader
+				culture = event_target:boudicca_leader
 				female = yes
 				age = 18
 			}
@@ -384,7 +388,7 @@ character_event = {
 				random_traits = yes
 				dynasty = random
 				religion = britannic_pagan
-				culture = boudicca_leader
+				culture = event_target:boudicca_leader
 				female = yes
 				age = 18
 			}
@@ -392,7 +396,7 @@ character_event = {
 				random_traits = yes
 				dynasty = random
 				religion = britannic_pagan
-				culture = boudicca_leader
+				culture = event_target:boudicca_leader
 				female = yes
 				age = 20
 			}
@@ -400,7 +404,7 @@ character_event = {
 				random_traits = yes
 				dynasty = random
 				religion = britannic_pagan
-				culture = irsh
+				culture = irish
 				female = yes
 				age = 25
 			}
@@ -408,7 +412,7 @@ character_event = {
 				random_traits = yes
 				dynasty = random
 				religion = britannic_pagan
-				culture = boudicca_leader
+				culture = event_target:boudicca_leader
 				female = yes
 				age = 26
 			}
@@ -416,7 +420,7 @@ character_event = {
 				random_traits = yes
 				dynasty = random
 				religion = britannic_pagan
-				culture = boudicca_leader
+				culture = scottish
 				female = yes
 				age = 28
 			}
@@ -432,7 +436,7 @@ character_event = {
 				random_traits = yes
 				dynasty = random
 				religion = britannic_pagan
-				culture = boudicca_leader
+				culture = event_target:boudicca_leader
 				female = no
 				age = 17
 			}
@@ -518,7 +522,9 @@ character_event = {
 
 	immediate = {
 		k_britannic_pagan = {
-			character_event = { id = britannic.21 days = 0 }
+			holder_scope = {
+				character_event = { id = britannic.21 days = 1 }
+			}
 		}
 	}
 }
@@ -572,8 +578,13 @@ character_event = {
 					}
 					save_event_target_as = old_councilor
 				}
-			} else_if = {
+			} else = {
 				random_voter = {
+					limit = {
+						NOT = {
+							trait = dryad
+						}
+					}
 					save_event_target_as = old_councilor
 				}
 			}
@@ -597,7 +608,7 @@ character_event = {
 		text = britannic.22.desc.cynic
 		trigger = {
 			event_target:old_councilor = {
-				trait = cynic
+				trait = cynical
 				NOT = { trait = bad_dryad }
 			}
 		}
@@ -608,7 +619,7 @@ character_event = {
 			event_target:old_councilor = {
 				NOR = {
 					trait = bad_dryad
-					trait = cynic
+					trait = cynical
 				}
 			}
 		}
@@ -737,6 +748,10 @@ character_event = {
 		tooltip_info = diplomacy
 
 		trigger = { diplomacy > 12 }
+
+		ai_chance = {
+			factor = 50
+		}
 	}
 
 	option = { # cite scripture to get out of it
@@ -744,6 +759,10 @@ character_event = {
 		tooltip_info = learning
 
 		trigger = { learning > 12 }
+
+		ai_chance = {
+			factor = 50
+		}
 	}
 }
 
@@ -781,7 +800,7 @@ character_event = {
 
 	immediate = {
 		k_britannic_pagan = {
-			character_event = { id = britannic.24 days = 0 }
+			holder_scope = { character_event = { id = britannic.24 days = 1 } }
 		}
 	}
 
@@ -880,14 +899,14 @@ character_event = {
 			limit = {
 				has_character_flag = acr_reduce_contract_law
 			}
-			lower_temple_levy_obligation_effect = yes
+			primary_title = { lower_temple_levy_obligation_effect = yes }
 		} else_if = {
 			limit = {
 				has_character_flag = acr_reduce_tax_law
 			}
-			lower_temple_tax_obligation_effect = yes
+			primary_title = { lower_temple_tax_obligation_effect = yes }
 		} else = {
-			move_temple_obligations_toward_balanced_effect = yes
+			primary_title = { move_temple_obligations_toward_balanced_effect = yes }
 		}
 
 		reverse_opinion = { who = FROM modifier = ancrel_pleased }
@@ -958,7 +977,7 @@ letter_event = {
 
 # Arch-Dryad threatens your position
 
-# grants a title to a powerful/ambitious/both vassal
+# grants a claim to a powerful/ambitious/both vassal
 
 # excommunicates you
 
@@ -1042,7 +1061,7 @@ character_event = {
 	}
 	
 	option = {
-		name = britannic.50.a
+		name = OK
 		ai_chance = { factor = 100 }
 		wealth = -200
 		
@@ -1087,12 +1106,12 @@ character_event = {
 				}
 			}
 			
-			letter_event = { id = britannic.51 tooltip = britannic.51.tt }
+			letter_event = { id = britannic.51 }
 		}
 	}
 	
 	option = {
-		name = britannic.50.b
+		name = NO
 		ai_chance = { factor = 0 }
 	}
 }
@@ -1177,12 +1196,12 @@ character_event = {
 				reverse_opinion  = { who = ROOT value = 0 }
 			}
 			
-			character_event = { id = 39211 tooltip = EVTTOOLTIP39211 }
+			character_event = { id = britannic.53 }
 		}
 	}
 	
 	option = {
-		name = OK
+		name = NO
 		ai_chance = { factor = 0 }
 	}
 }
@@ -1234,7 +1253,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = britannic.54.a
+		name = OK
 		prestige = 10
 	}
 }
@@ -1246,7 +1265,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = britannic.55.a
+		name = OK
 		prestige = -10
 	}
 }
@@ -1317,7 +1336,7 @@ character_event = {
 	}
 	
 	option = {
-		name = britannic.50.a
+		name = OK
 		ai_chance = { factor = 100 }
 		
 		random_playable_ruler = {
@@ -1361,17 +1380,17 @@ character_event = {
 				}
 			}
 			
-			letter_event = { id = britannic.57 tooltip = britannic.57.tt }
+			letter_event = { id = britannic.57 }
 		}
 	}
 	
 	option = {
-		name = britannic.50.b
+		name = NO
 		ai_chance = { factor = 0 }
 	}
 
 	option = {
-		name = britannic.50.c
+		name = OK
 		trigger = {
 			trait = lunatic
 		}
@@ -1420,7 +1439,7 @@ character_event = {
 				}
 			}
 			
-			letter_event = { id = britannic.58 tooltip = britannic.58.tt }
+			letter_event = { id = britannic.58 }
 		}
 	}
 }
@@ -1554,7 +1573,7 @@ character_event = {
 	}
 	
 	option = {
-		name = britannic.59.a
+		name = OK
 		ai_chance = { factor = 100 }
 		wealth = -200
 		
@@ -1578,12 +1597,12 @@ character_event = {
 				NOT = { has_character_flag = artifact_from_archdryad_@ROOT }
 			}
 			
-			letter_event = { id = britannic.60 tooltip = britannic.60.tt }
+			letter_event = { id = britannic.60 }
 		}
 	}
 	
 	option = {
-		name = britannic.59.b
+		name = NO
 		ai_chance = { factor = 0 }
 	}
 }
@@ -1602,7 +1621,7 @@ letter_event = {
 		custom_tooltip = {
 			text = britannic.60.a.tt
 			hidden_tooltip = {
-				# generate random artifact based on piety and archdryad opinion,
+				# generate random artifact based on archdryad opinion,
 				# with caps on quality based on britannic MA
 			}
 		}
@@ -1641,16 +1660,8 @@ character_event = {
 				}
 			}
 			reverse_opinion = { who = ROOT value = 30 }
-			OR = {
-				NOT = { has_character_flag = inquisitor_from_archdryad_@ROOT }
-				OR = {
-					had_character_flag = { flag = inquisitor_from_archdryad_@ROOT days = 730 }
-					AND = {
-						ai = yes
-						had_character_flag = { flag = inquisitor_from_archdryad_@ROOT days = 365 }
-					}
-				}
-			}
+
+			NOT = { has_character_flag = inquisitor_from_archdryad_@ROOT }
 		}
 	}
 	
@@ -1659,7 +1670,7 @@ character_event = {
 	}
 	
 	option = {
-		name = britannic.59.a
+		name = OK
 		ai_chance = { factor = 100 }
 		
 		random_playable_ruler = {
@@ -1699,12 +1710,12 @@ character_event = {
 				}
 			}
 			
-			letter_event = { id = britannic.62 tooltip = britannic.62.tt }
+			letter_event = { id = britannic.62 }
 		}
 	}
 	
 	option = {
-		name = britannic.61.b
+		name = NO
 		ai_chance = { factor = 0 }
 	}
 }
@@ -1719,9 +1730,9 @@ letter_event = {
 
 	option = {
 		name = britannic.62.a
-		set_character_flag = inquisitor_from_the_archdryad
+		set_character_flag = inquisitor_from_archdryad_@FROM
 		custom_tooltip = {
-			text = britannic.62.a.tt
+			text = britannic.62.tt
 			hidden_tooltip = {
 				create_random_intriguer = {
 					dynasty = none
@@ -1775,6 +1786,10 @@ character_event = {
 				has_disease = yes
 			}
 		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
 	}
 
 	immediate = {
@@ -1921,7 +1936,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = YES
+		name = OK
 
 		event_target:the_ruler = { letter_event = { id = britannic.109 days = 3 } }
 
@@ -2043,7 +2058,7 @@ letter_event = {
 			wealth = -100
 		}
 
-		character_event = { id = ancrel.101 days = 7 }
+		character_event = { id = britannic.101 days = 7 }
 	}
 
 	option = { # wait, no, i lied. i'm broke :(
@@ -2299,7 +2314,7 @@ character_event = {
 # 
 # Britannic
 # - Imbolg (fertility festival)
-#   britannic.150 - 249 reserved
+#   britannic.150 - 199 reserved
 #
 ##################################################################
 
@@ -2382,7 +2397,7 @@ character_event = {
 	}	
 
 	mean_time_to_happen = {
-		days = 200
+		days = 90
 		
 		modifier = {
 			factor = 0.33
@@ -2467,6 +2482,20 @@ character_event = {
 		NOT = { has_character_flag = imbolg_event_dick_cakes }
 	}
 
+	mean_time_to_happen = {
+		days = 120
+		
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = imbolg_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = imbolg_event_happened
+		}			
+	}
+
 	option = {
 		name = britannic.152.a
 	}
@@ -2517,7 +2546,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 200
+		days = 120
 		
 		modifier = {
 			factor = 0.33
@@ -2545,8 +2574,10 @@ character_event = {
 		hidden_tooltip = {
 			random_vassal = {
 				limit = {
-					is_capable = yes
-					in_command = no
+					NOR = {
+						in_command = yes
+						trait = incapable
+					}
 					religion = britannic_pagan
 				}
 
@@ -2575,7 +2606,7 @@ character_event = {
 
 		random_list = {
 			20 = {
-				add_trait = generous
+				add_trait = charitable
 			}
 			80 = { }
 		}
@@ -2583,8 +2614,10 @@ character_event = {
 		hidden_tooltip = {
 			random_vassal = {
 				limit = {
-					is_capable = yes
-					in_command = no
+					NOR = {
+						in_command = yes
+						trait = incapable
+					}
 					religion = britannic_pagan
 				}
 
@@ -2600,7 +2633,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 1.2
-				trait = generous
+				trait = charitable
 			}
 		}
 	}
@@ -2735,7 +2768,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 200
+		days = 120
 		
 		modifier = {
 			factor = 0.33
@@ -2812,7 +2845,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 200
+		days = 120
 		
 		modifier = {
 			factor = 0.33
@@ -2851,6 +2884,7 @@ character_event = {
 		name = britannic.160.a
 
 		custom_tooltip = {
+			text = britannic.160.tt
 			add_friend = FROM
 		}
 	}
@@ -2916,7 +2950,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 200
+		days = 120
 		
 		modifier = {
 			factor = 0.33
@@ -2955,6 +2989,7 @@ character_event = {
 		name = britannic.162.a
 
 		custom_tooltip = {
+			text = britannic.162.tt
 			add_rival = FROM
 		}
 	}
@@ -2997,7 +3032,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 200
+		days = 120
 		
 		modifier = {
 			factor = 0.33
@@ -3063,7 +3098,7 @@ character_event = {
 	}	
 
 	mean_time_to_happen = {
-		days = 240
+		days = 180
 		
 		modifier = {
 			factor = 0.33
@@ -3182,6 +3217,20 @@ character_event = {
 		set_character_flag = imbolg_event_birth
 	}
 
+	mean_time_to_happen = {
+		days = 180
+		
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = imbolg_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = imbolg_event_happened
+		}			
+	}
+
 	option = {
 		name = britannic.165.a
 
@@ -3239,6 +3288,20 @@ character_event = {
 		set_character_flag = imbolg_event_birth
 	}
 
+	mean_time_to_happen = {
+		days = 180
+		
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = imbolg_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = imbolg_event_happened
+		}			
+	}
+
 	option = {
 		name = britannic.166.a
 
@@ -3282,7 +3345,7 @@ character_event = {
 			is_pregnant = no
 			NOR = {
 				age = 45
-				trait = incapable
+				is_incapable = yes
 				num_of_children = 3
 				spouse = {
 					character = ROOT
@@ -3326,6 +3389,27 @@ character_event = {
 
 			character_event = { id = britannic.168 days = 1 }
 		}
+	}
+
+	mean_time_to_happen = {
+		days = 120
+		
+		modifier = {
+			factor = 2
+			OR = {
+				has_character_flag = imbolg_event_horny_spouse
+				has_character_flag = imbolg_event_horny_courtier # just in-case
+			}
+		}
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = imbolg_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = imbolg_event_happened
+		}			
 	}
 }
 
@@ -3427,7 +3511,7 @@ character_event = {
 character_event = {
 	id = britannic.169
 	title = britannic.imbolg_title
-	desc = britannic.169
+	desc = britannic.169.desc
 	picture = GFX_evt_whispers
 
 	is_triggered_only = yes
@@ -3655,6 +3739,27 @@ character_event = {
 
 			character_event = { id = britannic.171 days = 1 }
 		}
+	}
+
+	mean_time_to_happen = {
+		days = 120
+		
+		modifier = {
+			factor = 2
+			OR = {
+				has_character_flag = imbolg_event_horny_spouse
+				has_character_flag = imbolg_event_horny_dryad # just in-case
+			}
+		}
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = imbolg_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = imbolg_event_happened
+		}			
 	}
 }
 
@@ -3974,6 +4079,27 @@ character_event = {
 			character_event = { id = britannic.174 days = 1 }
 		}
 	}
+
+	mean_time_to_happen = {
+		days = 120
+		
+		modifier = {
+			factor = 2
+			OR = {
+				has_character_flag = imbolg_event_horny_dryad
+				has_character_flag = imbolg_event_horny_courtier
+			}
+		}
+		modifier = {
+			factor = 0.33
+			NOT = { has_character_flag = imbolg_event_happened }
+		}	
+		
+		modifier = {
+			factor = 1.5
+			has_character_flag = imbolg_event_happened
+		}			
+	}
 }
 
 # ping off spouse
@@ -3995,8 +4121,12 @@ character_event = {
 	desc = britannic.175.desc
 	picture = GFX_evt_whispers
 
+	is_triggered_only = yes
+
 	option = { # giggity
 		name = britannic.175.a
+
+		add_lover = FROM
 
 		hidden_tooltip = {
 			FROM = { character_event = { id = 453 tooltip = EVTTOOLTIP453 } }
@@ -4079,6 +4209,10 @@ character_event = {
 	option = { # sorry babe, i have a headache (diplo)
 		name = britannic.175.c
 		tooltip_info = diplomacy
+
+		trigger = {
+			diplomacy = 12
+		}
 	}
 }
 
@@ -4094,10 +4228,11 @@ character_event = {
 	option = {
 		name = britannic.199.a
 		remove_character_modifier = holding_imbolg
+		set_character_flag = recent_imbolg
+
 		clr_character_flag = do_not_disturb
 		clr_character_flag = imbolg_event_happened
 		clr_character_flag = imbolg_begin
-		set_character_flag = recent_imbolg
 		clr_character_flag = imbolg_event_spring_cleaning
 		clr_character_flag = imbolg_event_dick_cakes
 		clr_character_flag = imbolg_event_holy_well
@@ -4106,8 +4241,9 @@ character_event = {
 		clr_character_flag = imbolg_event_divinators
 		clr_character_flag = imbolg_event_birth
 		clr_character_flag = imbolg_event_horny_dryad
-		clr_character_flag = imbolg_event_horny_courier
+		clr_character_flag = imbolg_event_horny_courtier
 		clr_character_flag = imbolg_event_horny_spouse
+
 		prestige = 10
 		piety = 10
 	}

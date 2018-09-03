@@ -105,6 +105,7 @@ culture = {
 	religion = {
 		"celtic_pagan"
 		"celtic_pagan_reformed"
+		"britannic_pagan"
 	}
 	
 	templates = { 

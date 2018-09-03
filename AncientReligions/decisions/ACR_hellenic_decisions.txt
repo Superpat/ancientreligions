@@ -84,7 +84,7 @@ decisions = {
 			wealth = -300
 			activate_title = { title = d_sacred_band status = yes }
 			hidden_tooltip = {
-				narrative_event = { id = hellenic.036 }
+				narrative_event = { id = hellenic.36 }
 				create_character = {
 					random_traits = yes
 					religion = ROOT

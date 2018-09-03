@@ -26,7 +26,7 @@ character_event = {
 		spouse = {
 			supernatural_events_trigger = yes
 			any_courtier = { 
-				celtic_clergy_in_good_standing_trigger = yes
+				is_celtic_clergy_in_good_standing_trigger = yes
 			}
 		}
 		NOT = { has_character_flag = child_stolen_sidhe }
@@ -35,9 +35,9 @@ character_event = {
 	mean_time_to_happen = {
 		months = 550
 
-		modifier = { # way more likely if the mother is a wicked priest
+		modifier = { # way more likely if the mother is a wicked dryad
 			factor = 0.5
-			celtic_clergy_in_bad_standing_trigger = yes
+			is_celtic_clergy_in_bad_standing_trigger = yes
 		}
 	}
 	
@@ -45,7 +45,7 @@ character_event = {
 		set_character_flag = child_stolen_sidhe
 		spouse = {
 			random_courtier = { 
-				limit = { celtic_clergy_in_good_standing_trigger = yes }
+				limit = { is_celtic_clergy_in_good_standing_trigger = yes }
 				character_event = { id = celtic.212 }
 			}
 		}
@@ -569,7 +569,7 @@ character_event = {
 		}
 		father = {
 			any_courtier = {
-				celtic_clergy_in_good_standing_trigger = yes
+				is_celtic_clergy_in_good_standing_trigger = yes
 			}
 		}
 	}
@@ -582,7 +582,7 @@ character_event = {
 		set_character_flag = changeling_trade
 		father = {
 			random_courtier = {
-				limit = { celtic_clergy_in_good_standing_trigger = yes }
+				limit = { is_celtic_clergy_in_good_standing_trigger = yes }
 				character_event = { id = celtic.232 }
 			}
 		}
@@ -668,7 +668,7 @@ character_event = {
 	immediate = {
 		father = {
 			random_courtier = {
-				limit = { celtic_clergy_in_good_standing_trigger = yes }
+				limit = { is_celtic_clergy_in_good_standing_trigger = yes }
 				character_event = { id = celtic.236 }
 			}
 		}

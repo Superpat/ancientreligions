@@ -3357,7 +3357,7 @@ character_event = {
 					holder = ROOT
 				}
 			}
-			unsafe_destroy_landed_title = d_shiite
+			d_shiite = { unsafe_destroy_landed_title = THIS }
 		}
 		if = {
 			limit = {
@@ -3365,7 +3365,7 @@ character_event = {
 					holder = ROOT
 				}
 			}
-			unsafe_destroy_landed_title = d_sunni
+			d_sunni = { unsafe_destroy_landed_title = THIS }
 		}
 		if = {
 			limit = {
@@ -3373,7 +3373,7 @@ character_event = {
 					holder = ROOT
 				}
 			}
-			unsafe_destroy_landed_title = d_yazidi
+			d_yazidi = { unsafe_destroy_landed_title = THIS }
 		}
 		if = {
 			limit = {
@@ -3381,7 +3381,7 @@ character_event = {
 					holder = ROOT
 				}
 			}
-			unsafe_destroy_landed_title = d_ibadi
+			d_ibadi = { unsafe_destroy_landed_title = THIS }
 		}
 		if = {
 			limit = {
@@ -3389,7 +3389,7 @@ character_event = {
 					holder = ROOT
 				}
 			}
-			unsafe_destroy_landed_title = d_kharijite
+			d_kharijite = { unsafe_destroy_landed_title = THIS }
 		}
 		if = {
 			limit = {
@@ -3397,10 +3397,10 @@ character_event = {
 					holder = ROOT
 				}
 			}
-			unsafe_destroy_landed_title = d_hurufi
+			d_hurufi = { unsafe_destroy_landed_title = THIS }
 		}
 
-		religion = egyptian_pagan
+		unsafe_religion = egyptian_pagan
 		
 		capital_scope = {
 			# tribal chief 1

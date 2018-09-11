@@ -57,7 +57,8 @@ child_of_dryad;Child of a Dryad;;;;;;;;;;;;;x
 child_of_dryad_desc;As a child of a Dryad, this character is considered blessed by the Britannic Church.;;;;;;;;;;;;;x
 # decisions ;;;;;;;;;;;;;;x
 establish_arch_dryad;Establish the Arch-Dryad;;;;;;;;;;;;;x
-establish_arch_dryad_desc;Setup an Arch-Dryad as the head of Britannic religion.;;;;;;;;;;;;;x
+establish_arch_dryad_desc;Hold a Church Council to establish an Arch-Dryad as the head of Britannic religion.;;;;;;;;;;;;;x
+enough_dryads_for_council_tt;Must have at least 16 Dryads to hold a Church Council;;;;;;;;;;;;;x
 hold_imbolg;Hold an Imbolg;;;;;;;;;;;;;x
 hold_imbolg_desc;Hold an Imbolg, a fertility festival dedicated largely to Saint Brigid.;;;;;;;;;;;;;x
 hold_tumoidechais;Request Tumoidechais;;;;;;;;;;;;;x

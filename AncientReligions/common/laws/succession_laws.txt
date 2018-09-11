@@ -798,7 +798,12 @@ succession_laws = {
 						is_republic = yes
 						AND = {
 							is_theocracy = yes
-							NOT = { holder_scope = { religion_group = muslim } }
+							NOR = { 
+								holder_scope = { 
+									religion_group = muslim
+									religion = britannic_pagan
+								}
+							}
 						}
 					}
 				}
@@ -932,6 +937,49 @@ succession_laws = {
 }
 
 gender_laws = {
+	agnatic_succession = {
+		female_dynasty_opinion = -5
+	
+		potential = {
+			holder_scope = {
+				NOT = { religion = britannic_pagan }
+			}
+		}
+		effect = {
+			gender_succ = agnatic
+		}			
+		default = yes
+		default_selection = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					name = gender
+					value = all
+				}
+			}
+
+			modifier = {
+				factor = 100
+				holder_scope = {
+					NOR = {
+						religion_group = christian
+						AND = {
+							culture_group = tibetan_group
+							NOT = { religion = taoist }
+							NOT = { culture = tangut }
+						}
+					}
+					primary_title = {
+						NOT = { has_law = status_of_women_3 }
+						NOT = { has_law = status_of_women_4 }
+					}
+				}
+			}
+		}
+	}
+
 	cognatic_succession = {
 		potential = {
 			holder_scope = {
@@ -1019,53 +1067,8 @@ gender_laws = {
 			factor = 10
 		}
 	}
-
-	agnatic_succession = {
-		female_dynasty_opinion = -5
-	
-		potential = {
-			holder_scope = {
-				NOT = { religion = britannic_pagan }
-			}
-		}
-		effect = {
-			gender_succ = agnatic
-		}			
-		default = yes
-		default_selection = {
-			factor = 1
-			
-			modifier = {
-				factor = 0
-				has_game_rule = {
-					name = gender
-					value = all
-				}
-			}
-
-			modifier = {
-				factor = 100
-				holder_scope = {
-					NOR = {
-						religion_group = christian
-						AND = {
-							culture_group = tibetan_group
-							NOT = { religion = taoist }
-							NOT = { culture = tangut }
-						}
-					}
-					primary_title = {
-						NOT = { has_law = status_of_women_3 }
-						NOT = { has_law = status_of_women_4 }
-					}
-				}
-			}
-		}
-	}
 	
 	true_cognatic_succession = {
-		male_dynasty_opinion = -5
-		
 		potential = {
 			OR = {
 				AND = {
@@ -1150,24 +1153,7 @@ gender_laws = {
 			set_allows_matrilineal_marriage = yes
 		}	
 	}
-	
-	enatic_succession = {
-		male_dynasty_opinion = -10
-		female_dynasty_opinion = 10
-		
-		potential = {
-			holder_scope = {
-				religion = britannic_pagan
-			}
-		}
-		allow = {
-			always = yes
-		}
-		effect = {
-			gender_succ = enatic
-		}
-	}
-	
+
 	enatic_cognatic_succession = {
 		male_dynasty_opinion = -10
 		female_dynasty_opinion = 5
@@ -1188,7 +1174,25 @@ gender_laws = {
 		}
 		effect = {
 			gender_succ = enatic_cognatic
-		}			
+			set_allows_matrilineal_marriage = yes
+		}
 	}
 	
+	enatic_succession = {
+		male_dynasty_opinion = -10
+		female_dynasty_opinion = 10
+		
+		potential = {
+			holder_scope = {
+				religion = britannic_pagan
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			gender_succ = enatic
+			set_allows_matrilineal_marriage = yes
+		}
+	}
 }

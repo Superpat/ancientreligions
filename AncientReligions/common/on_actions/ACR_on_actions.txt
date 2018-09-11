@@ -48,14 +48,14 @@ on_yearly_pulse = {
 		#100 = egyptian.215 # ancient tomb entrance discovered [unfinished]
 		
 		#Hellenic Flavor
-		100 = hellenic.503 # Dead beggar doesn't have money to pay the ferryman
-		100 = hellenic.509 # Found a curse tablet
-		100 = hellenic.510 # maid tries to charm you
-		100 = hellenic.511 # (male) servant tries to charm you
-		100 = hellenic.515 # Leptis Manialis
-		100 = hellenic.518 # Lightning strikes tree
-		100 = hellenic.519 # Odysseus
-		250 = hellenic.529 # Praying to family Lares
+		20 = hellenic.503 # Dead beggar doesn't have money to pay the ferryman
+		20 = hellenic.509 # Found a curse tablet
+		20 = hellenic.510 # maid tries to charm you
+		20 = hellenic.511 # (male) servant tries to charm you
+		20 = hellenic.515 # Leptis Manialis
+		20 = hellenic.518 # Lightning strikes tree
+		20 = hellenic.519 # Odysseus
+		100 = hellenic.529 # Praying to family Lares
 		
 		#I Can't Believe My Virgin Goddess of the Hunt is This Cute Event Blob (a.k.a. Artemis Event Blob)
 		2000 = hellenic.559 # Make offerings to the goddess
@@ -112,10 +112,10 @@ on_five_year_pulse = {
 	
 	random_events = {
 		#Egypt Flavor
-		200 = egyptian.155 # expel the evil within
-		200 = egyptian.159 # one of your wives displays feline grace... <.< >.>
-		100 = egyptian.166 # Ghost of Akhenaten
-		200 = egyptian.167 # Shezmu execution event
+		100 = egyptian.155 # expel the evil within
+		100 = egyptian.159 # one of your wives displays feline grace... <.< >.>
+		50 = egyptian.166 # Ghost of Akhenaten
+		100 = egyptian.167 # Shezmu execution event
 		
 		#Hellenic Flavor
 		20 = hellenic.502 # Zeus supposedly knocked a woman up - is she lying?
@@ -224,6 +224,12 @@ on_county_religion_change = {
 	}
 }
 
+on_character_convert_religion = {
+	events = {
+		britannic.9 # fixes succession laws for britannic theocracy
+	}
+}
+
 # ROOT is the creating character
 # FROM is the title
 on_create_title = {
@@ -239,5 +245,6 @@ on_new_holder = {
 	events = {
 		celtic.256 # Pendragon nick
 		ancrel.9299 # generic holy order maintenance event
+		britannic.8 # fixes succession laws for britannic theocracy
 	}
 }

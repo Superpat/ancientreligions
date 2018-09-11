@@ -2192,6 +2192,7 @@ character_event = {
 		}
 		NOT = { has_character_flag = VIET_theseus_and_pirithous }
 		any_courtier = {
+			is_heir = no
 			is_female = no
 			is_adult = yes
 			is_married = no
@@ -2215,37 +2216,37 @@ character_event = {
 	}
 	
 	weight_multiplier = {
-		days = 30
+		days = 360
 		modifier = {
-			factor = 2
+			factor = 0.5
 			trait = lustful
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2
 			trait = chaste
 		}
 		modifier = {
-			factor = 2
+			factor = 0.5
 			trait = honest
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2
 			trait = deceitful
 		}
 		modifier = {
-			factor = 2
+			factor = 0.5
 			trait = brave
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2
 			trait = craven
 		}
 		modifier = {
-			factor = 2
+			factor = 0.5
 			trait = gregarious
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2
 			trait = shy
 		}
 	}

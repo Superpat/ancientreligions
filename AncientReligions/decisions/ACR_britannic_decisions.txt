@@ -16,6 +16,19 @@ decisions = {
 			prestige = 300
 			wealth = 300
 			higher_tier_than = DUKE
+
+			custom_tooltip = {
+				text = enough_dryads_for_council_tt
+
+				hidden_tooltip = {
+					any_character = {
+						count = 16
+
+						is_theocracy = yes
+						religion = britannic_pagan
+					}
+				}
+			}
 		}
 
 		effect = {

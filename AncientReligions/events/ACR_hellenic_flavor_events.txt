@@ -57,7 +57,7 @@ character_event = {
 	option = {
 		name = hellenic.240.a
 		trigger = {
-			NOT = {trait = paranoid}
+			NOT = { trait = paranoid }
 		}
 		piety = 25
 	}

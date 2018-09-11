@@ -38,6 +38,12 @@ character_event = {
 			true_religion_in_celtic_subgroup_trigger = no
 		}
 	}
+
+	after = {
+		event_target:archdryad = {
+			recalc_succession = yes
+		}
+	}
 }
 
 # A dryad gives birth
@@ -305,6 +311,82 @@ character_event = {
 
 	option = {
 		name = britannic.7.a
+	}
+}
+
+# britannic theocracy succession
+# fixes laws and abdicates if necessary
+character_event = {
+	id = britannic.8
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	religion = britannic_pagan
+
+	trigger = {
+		is_theocracy = yes
+
+		FROM = {
+			NAND = {
+				has_law = enatic_succession
+				has_law = succ_catholic_bishopric
+			}
+		}
+	}
+
+	immediate = {
+		FROM = {
+			add_law = { law = enatic_succession cooldown = no opinion_effect = no }
+			add_law = { law = succ_catholic_bishopric cooldown = no opinion_effect = no }
+		}
+
+		recalc_succession = yes
+
+		if = {
+			limit = {
+				is_female = no
+			}
+
+			abdicate = { move = no }
+		}
+	}
+}
+
+character_event = {
+	id = britannic.9
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	religion = britannic_pagan
+
+	trigger = {
+		is_theocracy = yes
+
+		primary_title = {
+			NAND = {
+				has_law = enatic_succession
+				has_law = succ_catholic_bishopric
+			}
+		}
+	}
+
+	immediate = {
+		primary_title = {
+			add_law = { law = enatic_succession cooldown = no opinion_effect = no }
+			add_law = { law = succ_catholic_bishopric cooldown = no opinion_effect = no }
+		}
+
+		recalc_succession = yes
+
+		if = {
+			limit = {
+				is_female = no
+			}
+
+			abdicate = { move = no }
+		}
 	}
 }
 

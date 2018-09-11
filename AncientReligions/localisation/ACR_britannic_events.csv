@@ -1,6 +1,6 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 britannic.0.title;Arch-Dryad Seated;;;;;;;;;;;;;x
-britannic.0.desc;[Root.GetTitledFirstName] has elevated [archdryad.GetFirstName] to the position of Arch-Dryad, establishing her as the ultimate spiritual authority for Britannic people everywhere. How she will wield this authority remains to be seen.;;;;;;;;;;;;;x
+britannic.0.desc;[Root.GetTitledFirstName]'s Church Council has elevated [archdryad.GetFirstName] to the position of Arch-Dryad, establishing her as the ultimate spiritual authority for Britannic people everywhere. How she will wield this authority remains to be seen.;;;;;;;;;;;;;x
 britannic.0.a;All hail [archdryad.GetTitledFirstName]!;;;;;;;;;;;;;x
 britannic.0.b;So they've decided on a head heretic?;;;;;;;;;;;;;x
 britannic.0.c;They're still heathens...;;;;;;;;;;;;;x

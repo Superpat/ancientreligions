@@ -413,8 +413,8 @@ laws = {
 	status_of_women_4 = {
 		group = status_of_women
 		allow = {
-			has_law = status_of_women_3
-			NOT = {
+			OR = {
+				has_law = status_of_women_3
 				holder_scope = { religion = britannic_pagan }
 			}
 		}

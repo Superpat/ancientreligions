@@ -133,6 +133,7 @@ is_celtic_secret_religious_society_member_trigger = {
 	OR = {
 		society_member_of = secret_religious_society_celtic_pagan
 		society_member_of = secret_religious_society_celtic_pagan_reformed
+		society_member_of = secret_religious_society_britannic_pagan
 	}
 }
 
@@ -204,6 +205,20 @@ religion_openly_celtic_or_reformed_trigger = {
 	OR = {
 		religion = celtic_pagan
 		religion = celtic_pagan_reformed
+	}
+}
+
+religion_secretly_celtic_or_reformed_trigger = {
+	OR = {
+		secret_religion = celtic_pagan
+		secret_religion = celtic_pagan_reformed
+	}
+}
+
+true_religion_celtic_or_reformed_trigger = {
+	OR = {
+		true_religion = celtic_pagan
+		true_religion = celtic_pagan_reformed
 	}
 }
 

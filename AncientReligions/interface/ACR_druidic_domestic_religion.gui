@@ -1618,7 +1618,7 @@ guiTypes = {
 		}
 		### title cardinal entry 5
 		windowType = {
-			name = "title_drd_circle_member_entry_5"
+			name = "title_dryad_circle_member_entry_5"
 			backGround =""
 			position = { x=440 y=238 }	
 			size = { x = 104 y = 104 }

@@ -18,6 +18,6 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_britannic_election_values"
-		texturefile = "gfx\\interface\ACR\icon_druidic_suitability.dds"
+		texturefile = "gfx\\interface\ACR\icon_dryadic_suitability.dds"
 	}
 }

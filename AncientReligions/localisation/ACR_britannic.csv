@@ -62,7 +62,7 @@ enough_dryads_for_council_tt;Must have at least 16 Dryads to hold a Church Counc
 hold_imbolg;Hold an Imbolg;;;;;;;;;;;;;x
 hold_imbolg_desc;Hold an Imbolg, a fertility festival dedicated largely to Saint Brigid.;;;;;;;;;;;;;x
 hold_tumoidechais;Request Tumoidechais;;;;;;;;;;;;;x
-hold_tumoidechais_named;Request that [Root.GetTitledFirstName] officiate a Tumoidechais for a child in your court. Any child who does not have a Tumoidechais by the age of 3 will be known as Sych.;;;;;;;;;;;;;x
+hold_tumoidechais_named;Request a Tumoidechais;;;;;;;;;;;;;x
 hold_tumoidechais_desc;Request that [Root.GetTitledFirstName] officiate a Tumoidechais for a child in your court. Any child who does not have a Tumoidechais by the age of 3 will be known as Sych.;;;;;;;;;;;;;x
 tumoidechais_tt;[Root.GetFirstName] gets your request.;;;;;;;;;;;;;x
 has_access_to_the_sea_tt;Has access to the sea via counties in the same realm.;;;;;;;;;;;;;x

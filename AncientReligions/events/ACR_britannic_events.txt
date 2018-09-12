@@ -326,11 +326,12 @@ character_event = {
 
 	trigger = {
 		is_theocracy = yes
-
+		always = no # disabled until HF enables enatic priesthoods
+		
 		FROM = {
 			NAND = {
 				has_law = enatic_succession
-				has_law = succ_catholic_bishopric
+				has_law = succ_open_elective
 			}
 		}
 	}
@@ -338,7 +339,7 @@ character_event = {
 	immediate = {
 		FROM = {
 			add_law = { law = enatic_succession cooldown = no opinion_effect = no }
-			add_law = { law = succ_catholic_bishopric cooldown = no opinion_effect = no }
+			add_law = { law = succ_open_elective cooldown = no opinion_effect = no }
 		}
 
 		recalc_succession = yes
@@ -363,11 +364,12 @@ character_event = {
 
 	trigger = {
 		is_theocracy = yes
+		always = no # disabled until HF enables enatic priesthoods
 
 		primary_title = {
 			NAND = {
 				has_law = enatic_succession
-				has_law = succ_catholic_bishopric
+				has_law = succ_open_elective
 			}
 		}
 	}
@@ -375,7 +377,7 @@ character_event = {
 	immediate = {
 		primary_title = {
 			add_law = { law = enatic_succession cooldown = no opinion_effect = no }
-			add_law = { law = succ_catholic_bishopric cooldown = no opinion_effect = no }
+			add_law = { law = succ_open_elective cooldown = no opinion_effect = no }
 		}
 
 		recalc_succession = yes

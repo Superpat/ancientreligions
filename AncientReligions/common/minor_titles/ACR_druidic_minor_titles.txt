@@ -47,7 +47,7 @@ title_royal_champion = {
 	
 	allowed_to_hold = {
 		is_adult = yes
-		religion_openly_celtic_or_reformed_trigger = yes
+		religion_openly_in_celtic_subgroup_trigger = yes
 		OR = {
 			trait = head1
 			trait = head2
@@ -71,7 +71,7 @@ title_royal_champion = {
 				independent = yes
 			}
 		}
-		religion_openly_celtic_or_reformed_trigger = yes
+		religion_openly_in_celtic_subgroup_trigger = yes
 	}
 	
 	gain_effect = {

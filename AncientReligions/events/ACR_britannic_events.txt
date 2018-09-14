@@ -205,7 +205,10 @@ character_event = {
 	has_dlc = "Sons of Abraham"
 	
 	trigger = {
-		trait = dryad
+		OR = {
+			trait = dryad
+			is_theocracy = yes
+		}
 		NOR = {
 			intrigue = 3
 			diplomacy = 3
@@ -327,7 +330,7 @@ character_event = {
 	trigger = {
 		is_theocracy = yes
 		always = no # disabled until HF enables enatic priesthoods
-		
+
 		FROM = {
 			NAND = {
 				has_law = enatic_succession
@@ -2143,10 +2146,22 @@ letter_event = {
 		}
 
 		character_event = { id = britannic.101 days = 7 }
+
+		ai_chance = {
+			factor = 1
+		}
 	}
 
 	option = { # wait, no, i lied. i'm broke :(
 		name = ancrel.damn
+
+		ai_chance = {
+			factor = 0
+			additive_modifier = {
+				value = 1000
+				NOT = { wealth = 100 }
+			}
+		}
 	}
 }
 
@@ -3425,7 +3440,10 @@ character_event = {
 			prisoner = no
 			is_inaccessible_trigger = no
 			is_adult = yes
-			is_priest = yes
+			OR = {
+				trait = dryad
+				trait = bad_dryad
+			}
 			is_pregnant = no
 			NOR = {
 				age = 45
@@ -3459,7 +3477,10 @@ character_event = {
 				prisoner = no
 				is_inaccessible_trigger = no
 				is_adult = yes
-				is_priest = yes
+				OR = {
+					trait = dryad
+					trait = bad_dryad
+				}
 				is_pregnant = no
 				NOR = {
 					age = 45

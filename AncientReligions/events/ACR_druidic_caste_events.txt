@@ -536,10 +536,7 @@ character_event = {
 	trigger = {
 		is_adult = yes
 		in_command = no
-		OR = {
-			religion = celtic_pagan
-			religion = celtic_pagan_reformed
-		}
+		religion_openly_in_celtic_subgroup_trigger = yes
 		location = {
 			county = {
 				region = world_europe_west

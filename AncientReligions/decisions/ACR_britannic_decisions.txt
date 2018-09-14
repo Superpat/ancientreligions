@@ -256,7 +256,8 @@ targeted_decisions = {
 		}
 		potential = {
 			religion = britannic_pagan
-			is_celtic_clergy_trigger = yes
+			is_theocracy = yes
+			#is_celtic_clergy_trigger = yes
 		}
 		third_party_potential = {
 			NOR = {
@@ -265,49 +266,53 @@ targeted_decisions = {
 			}
 		}
 		allow = {
-			OR = {
-				AND = {
-					custom_tooltip = {
-						text = has_direct_access_to_the_sea_tt
-						hidden_tooltip = {
-							any_demesne_province = {
-								any_neighbor_province = {
-									is_land = no
-								}
-							}
-						}
-					}
-					wealth = 25
-				}
-				AND = {
-					custom_tooltip = {
-						text = has_access_to_the_sea_tt
-						hidden_tooltip = {
-							top_liege = {
-								any_realm_province = {
+			FROM = {
+				OR = {
+					AND = {
+						custom_tooltip = {
+							text = has_direct_access_to_the_sea_tt
+							hidden_tooltip = {
+								any_demesne_province = {
 									any_neighbor_province = {
 										is_land = no
 									}
 								}
 							}
 						}
+						wealth = 25
 					}
-					wealth = 50
+					AND = {
+						custom_tooltip = {
+							text = has_access_to_the_sea_tt
+							hidden_tooltip = {
+								top_liege = {
+									any_realm_province = {
+										any_neighbor_province = {
+											is_land = no
+										}
+									}
+								}
+							}
+						}
+						wealth = 50
+					}
+					wealth = 100 # getting to the coast safely is expensive when your entire country is landlocked
 				}
-				wealth = 100 # getting to the coast safely is expensive when your entire country is landlocked
 			}
 		}
 		third_party_allow = {
-			OR = {
-				AND = {
-					liege = {
-						religion = britannic_pagan
+			FROMFROM = {
+				OR = {
+					AND = {
+						liege = {
+							religion = britannic_pagan
+						}
+						mother = {
+							religion = britannic_pagan
+						}
 					}
-					mother = {
-						religion = britannic_pagan
-					}
+					religion = britannic_pagan
 				}
-				religion = britannic_pagan
 			}
 		}
 		effect = {

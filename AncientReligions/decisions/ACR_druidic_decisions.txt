@@ -421,7 +421,6 @@ decisions = {
 		}
 	}
 
-
 	vassalize_fianna = {
 		is_high_prio = yes
 		only_playable = yes
@@ -750,10 +749,7 @@ decisions = {
 	invite_bard_to_court = {
 		only_playable = yes
 		potential = {
-			OR = {
-				religion = celtic_pagan
-				religion = celtic_pagan_reformed
-			}
+			religion_openly_in_celtic_subgroup_trigger = yes
 			primary_title = { higher_tier_than = BARON }
 		}
 		allow = {
@@ -943,10 +939,7 @@ decisions = {
 		ai = yes
 		
 		potential = {
-			OR = {
-				religion = celtic_pagan
-				religion = celtic_pagan_reformed
-			}
+			religion_openly_in_celtic_subgroup_trigger = yes
 			NOT = { 
 				any_courtier = {
 					has_minor_title = title_court_bard
@@ -987,10 +980,7 @@ decisions = {
 			is_ruler = yes
 			age = 16
 			prisoner = no
-			OR = {
-				religion = celtic_pagan
-				religion = celtic_pagan_reformed
-			}
+			religion_openly_in_celtic_subgroup_trigger = yes
 			NOT = {	
 				OR = {
 					has_character_modifier = sidhe_offerings_bad
@@ -1014,6 +1004,12 @@ decisions = {
 				any_courtier = {
 					has_minor_title = title_court_druid
 				}
+				AND = {
+					religion = britannic_pagan
+					any_courtier = {
+						has_job_title = job_spiritual
+					}
+				}
 			}
 			scaled_wealth = 0.30
 			prisoner = no
@@ -1034,7 +1030,7 @@ decisions = {
 			modifier = {
 				factor = 0
 				NOT = {
-					scaled_wealth = 3.0
+					scaled_wealth = 1.0
 				}
 			}
 			modifier = {

@@ -39,11 +39,17 @@ decisions = {
 			set_global_flag = acr_arch_dryad_created
 
 			hidden_tooltip = {
-				create_random_priest = {
+				create_character = {
 					female = yes
 					age = 32
 					trait = dryad
 					trait = zealous
+					trait = patient
+					trait = gregarious
+					trait = kind
+					trait = just
+					trait = lustful
+					trait = mastermind_theologian
 					culture = ROOT
 					religion = britannic_pagan
 				}
@@ -213,8 +219,8 @@ decisions = {
 			k_britannic_pagan = {
 				holder_scope = {
 					transfer_scaled_wealth = {
-						from = ROOT
-						to = THIS
+						from = FROM
+						to = ROOT
 						value = 1
 						min = 25
 						max = 500
@@ -247,9 +253,9 @@ targeted_decisions = {
 	#FROM 		= Decision Taker
 	#ROOT 		= Dryad to Officiate
 	hold_tumoidechais = {
+		third_party = FROM
 		filter = sub_realm
 		third_party_filter = home_court_including_me
-		is_high_prio = yes # gotta let 'em know!
 
 		from_potential = {
 			religion = britannic_pagan
@@ -260,9 +266,11 @@ targeted_decisions = {
 			#is_celtic_clergy_trigger = yes
 		}
 		third_party_potential = {
-			NOR = {
-				age = 3
-				has_character_flag = tumtha
+			FROMFROM = {
+				NOR = {
+					age = 3
+					has_character_flag = tumtha
+				}
 			}
 		}
 		allow = {
@@ -303,15 +311,10 @@ targeted_decisions = {
 		third_party_allow = {
 			FROMFROM = {
 				OR = {
-					AND = {
-						liege = {
-							religion = britannic_pagan
-						}
-						mother = {
-							religion = britannic_pagan
-						}
-					}
 					religion = britannic_pagan
+					mother = {
+						religion = britannic_pagan
+					}
 				}
 			}
 		}

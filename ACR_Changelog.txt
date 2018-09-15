@@ -40,7 +40,6 @@ Britannic Pagan:
   - Council voting behavior has been updated to ensure that Britannic councilors will behave appropriately.
  - Britannic rulers are forbidden from lowering the status of women laws and will never choose to vote in favor of doing so.
 
-
 Hellenic:
  - The Philosopher event chain is now more likely to fire and the max demense size requirement is relaxed to 200.
   - Various conditions will also increase the odds of the event firing, such as being in a defensive war and your religion having a low MA (<50%).

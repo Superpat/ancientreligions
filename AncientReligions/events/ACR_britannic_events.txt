@@ -424,7 +424,7 @@ character_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 36
+		months = 6
 	}
 	
 	immediate = {
@@ -2582,7 +2582,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 120
+		days = 90
 		
 		modifier = {
 			factor = 0.33
@@ -2645,7 +2645,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 120
+		days = 90
 		
 		modifier = {
 			factor = 0.33
@@ -2867,7 +2867,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 120
+		days = 90
 		
 		modifier = {
 			factor = 0.33
@@ -2944,7 +2944,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 120
+		days = 90
 		
 		modifier = {
 			factor = 0.33
@@ -3049,7 +3049,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 120
+		days = 90
 		
 		modifier = {
 			factor = 0.33
@@ -3131,7 +3131,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 120
+		days = 90
 		
 		modifier = {
 			factor = 0.33
@@ -3197,7 +3197,7 @@ character_event = {
 	}	
 
 	mean_time_to_happen = {
-		days = 180
+		days = 120
 		
 		modifier = {
 			factor = 0.33
@@ -3317,7 +3317,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 180
+		days = 120
 		
 		modifier = {
 			factor = 0.33
@@ -3388,7 +3388,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 180
+		days = 120
 		
 		modifier = {
 			factor = 0.33
@@ -3497,7 +3497,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 120
+		days = 90
 		
 		modifier = {
 			factor = 2
@@ -3847,7 +3847,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 120
+		days = 90
 		
 		modifier = {
 			factor = 2
@@ -4186,7 +4186,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 120
+		days = 90
 		
 		modifier = {
 			factor = 2

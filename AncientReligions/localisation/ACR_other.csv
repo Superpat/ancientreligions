@@ -65,16 +65,16 @@ MNM.70400.c;This is too much!;;;;;;;;;;;;;x
 MNM.70400.c.tt;You leave the [Root.GetSocietyName];;;;;;;;;;;;;x
 must_not_fear_persecution;This character is too afraid of persecution to join.;;;;;;;;;;;;;x
 ###### Holy Order Template Events and Decisions ;;;;;;;;;;;;;x
-borrow_money_from_holy_order;Borrow Money from the [Root.GetTitle];;;;;;;;;;;;x
-borrow_money_from_holy_order_desc;Take out a loan of 300g with [Root.GetTitle]. They will want to be repaid eventually, and the church will disapprove of your debt.;;;;;;;;;;;;x
+borrow_money_from_holy_order;Borrow Money from the [Root.primary_title.GetName];;;;;;;;;;;;x
+borrow_money_from_holy_order_desc;Take out a loan of 300g with [Root.primary_title.GetName]. They will want to be repaid eventually, and the church will disapprove of your debt.;;;;;;;;;;;;x
 no_loans_or_expulsion;Cannot have an extant loan with the order, nor can the order have been expelled from the lands.;;;;;;;;;;;;x
-donate_money_to_holy_order;Donate Money to the [Root.GetTitle];;;;;;;;;;;;x
-donate_money_to_holy_order_desc;Aid the [Root.GetTitle] in their cause by donating 300g. They will appreciate this gesture, and other members of the faith are sure to notice your generosity as well.;;;;;;;;;;;;x
-expel_holy_order;Expel the [Root.GetTitle];;;;;;;;;;;;x
-expel_holy_order_desc;You can expel the [Root.GetTitle] from your realm, seizing all titles and lands they hold there. This will prevent you from dealing with them in the future and damage the authority of [Root.Religion.GetName];;;;;;;;;;;;x
+donate_money_to_holy_order;Donate Money to the [Root.primary_title.GetName];;;;;;;;;;;;x
+donate_money_to_holy_order_desc;Aid the [Root.primary_title.GetName] in their cause by donating 300g. They will appreciate this gesture, and other members of the faith are sure to notice your generosity as well.;;;;;;;;;;;;x
+expel_holy_order;Expel the [Root.primary_title.GetName];;;;;;;;;;;;x
+expel_holy_order_desc;You can expel the [Root.primary_title.GetName] from your realm, seizing all titles and lands they hold there. This will prevent you from dealing with them in the future and damage the authority of [Root.Religion.GetName];;;;;;;;;;;;x
 vassalize_holy_order;Vassalize Holy Order;;;;;;;;;;;;x
-vassalize_holy_order_named;Vassalize the [Root.GetTitle];;;;;;;;;;;;x
-vassalize_holy_order_desc;You can exert your authority over the [Root.GetTitle], forcing them to recognize you as their liege.;;;;;;;;;;;;x
+vassalize_holy_order_named;Vassalize the [Root.primary_title.GetName];;;;;;;;;;;;x
+vassalize_holy_order_desc;You can exert your authority over the [Root.primary_title.GetName], forcing them to recognize you as their liege.;;;;;;;;;;;;x
 ancrel.9101.desc;Your courtier, [From.GetBestName], has requested your leave to join the [holy_order.GetName] and fight for [From.GetReligionAdherent]s.;;;;;;;;;;;;x
 ancrel.9101.a;Go, bring glory to [From.Religion.GetRandomGodName].;;;;;;;;;;;;x
 ancrel.9101.a.tt;[From.GetFirstName] is pleased!;;;;;;;;;;;;x

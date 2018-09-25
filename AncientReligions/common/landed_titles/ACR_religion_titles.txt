@@ -111,7 +111,7 @@ k_britannic_pagan = {
 
 	title = ARCHDRYAD
 	title_female = ARCHDRYAD
-	foa = k_britannic_foa
+	foa = k_britannic_pagan_foa
 	
 	short_name = yes
 

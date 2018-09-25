@@ -1,4 +1,4 @@
-2018-0?-?? v0.42.0 "Cernunnos"
+2018-??-?? v0.42.0 "Cernunnos"
 -------------------------
 > Cernunnos is the Horned God, a deity of fertility, life, animals, and the underworld. Worshipped throughout Gaul and Celtiberia, Cernunnos was one of a small number of almost universally worshipped Celtic gods. His most famous appearances are on the Pillar of the Boatman, a carved column found in a Roman temple in Paris; and the Gundestrup Cauldron, a fantastic example of iron age silverwork found in a peat bog near Gundestrup, Denmark.
 
@@ -17,7 +17,7 @@ General:
   - Seneca the Younger, Roman Promethean Pagan, master scholar.
   - Lucan the Younger, Roman Hellenic Pagan, master scholar.
  - Improved Nile River Flooding event to prevent repeated messages.
- - Added requirements in Atenic and Kemetic priesthood restoration decisions to have the temples of respectively Akhetaten and Luxor restored
+ - Added requirements in Atenic and Kemetic priesthood restoration decisions to have the temples of respectively Akhetaten and Luxor restored.
 
 Celtic:
  - Fixes bug where the Unfit King Beta game rule was being ignored.

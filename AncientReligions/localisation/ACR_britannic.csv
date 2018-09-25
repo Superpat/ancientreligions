@@ -13,6 +13,7 @@ GOD_ST_BRIGID;Saint Brigid;;;;;;;;;;;;;x
 EVIL_UNSEELIE;the Wayward Children;;;;;;;;;;;;;x
 THE_CYCLES;The Cycles;;;;;;;;;;;;;x
 ARCHDRYAD;Arch-Dryad;;;;;;;;;;;;;x
+DRYAD;Dryad;;;;;;;;;;;;;x
 # titles ;;;;;;;;;;;;;;x
 k_britannic_pagan;Church of Britannia;;;;;;;;;;;;;x
 k_britannic_pagan_adj;Britannic;;;;;;;;;;;;;x
@@ -22,26 +23,28 @@ d_saint_boudicca_adj;Boudiccid;;;;;;;;;;;;;x
 # minor titles ;;;;;;;;;;;;;;x
 title_dryad_circle_member;Dryad of the Circle;;;;;;;;;;;;;x
 title_dryad_circle_member_desc;The Circle of Dryads is the highest governing body in the Church of Britannia. It's sole duty is to elect the next Arch-Dryad.;;;;;;;;;;;;;x
-expected_next_title_dryad_circle_member;This Dryad is probably the next in line for a seat at the Circle.;;;;;;;;;;;;;x
-best_candidate_title_dryad_circle_member;Of all the Dryads in my realm, this one is the most likely to be appointed a seat at the Circle by the Arch-Dryad.;;;;;;;;;;;;;x
+expected_next_title_dryad_circle_member;Expected Next Member;;;;;;;;;;;;;x
+expected_next_title_dryad_circle_member_tooltip;This Dryad is probably the next in line for a seat at the Circle.;;;;;;;;;;;;;x
+best_candidate_title_dryad_circle_member;My Best Candidate;;;;;;;;;;;;;x
+best_candidate_title_dryad_circle_member_tooltip;Of all the Dryads in my realm, this one is the most likely to be appointed a seat at the Circle by the Arch-Dryad.;;;;;;;;;;;;;x
 job_spiritual_britannic_pagan;Seer;;;;;;;;;;;;;x
 city_job_spiritual_britannic_pagan;Seer;;;;;;;;;;;;;x
 tribal_job_spiritual_britannic_pagan;Seer;;;;;;;;;;;;;x
 nomad_job_spiritual_britannic_pagan;Seer;;;;;;;;;;;;;x
 # regular titles ;;;;;;;;;;;;;;x
-temple_baron_female_britannic_pagan;Dryad;;;;;;;;;;;;;x
+temple_baron_britannic_pagan;Dryad;;;;;;;;;;;;;x
 temple_barony_britannic_pagan;Sacred Grove;Bosquet sacré;;;;;;;;;;;;x
 temple_barony_of_britannic_pagan;Sacred Grove of;Bosquet sacré de;;;;;;;;;;;;x
-temple_count_female_britannic_pagan;Dryad;;;;;;;;;;;;;x
+temple_count_britannic_pagan;Dryad;;;;;;;;;;;;;x
 temple_county_britannic_pagan;Temple;Temple;;;;;;;;;;;;x
 temple_county_of_britannic_pagan;Temple of;Temple de;;;;;;;;;;;;x
-temple_duke_female_britannic_pagan;Dryad Superior;Dryada Supérieur;;;;;;;;;;;;x
+temple_duke_britannic_pagan;Dryad Superior;Dryada Supérieur;;;;;;;;;;;;x
 temple_duchy_britannic_pagan;Tribe;Tribu;;;;;;;;;;;;x
 temple_duchy_of_britannic_pagan;Tribe of;Tribu de;Stamm der;;Tribu de;;;;;;;;;x
-temple_king_female_britannic_pagan;High Mother;;;;;;;;;;;;;x
+temple_king_britannic_pagan;High Mother;;;;;;;;;;;;;x
 temple_kingdom_britannic_pagan;Federation;Fédération;;;;;;;;;;;;x
 temple_kingdom_of_britannic_pagan;Federation of;Fédération de;;;;;;;;;;;;x
-temple_emperor_female_britannic_pagan;Great Mother;;;;;;;;;;;;;x
+temple_emperor_britannic_pagan;Great Mother;;;;;;;;;;;;;x
 temple_empire_britannic_pagan;Nation;Peuple;;;;;;;;;;;;x
 temple_empire_of_britannic_pagan;Nation of;Peuple de;;;;;;;;;;;;x
 # traits ;;;;;;;;;;;;;;x

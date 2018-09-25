@@ -108,8 +108,8 @@ d_red_dragons = {
 	
 	capital = 64 #Gwynedd
 
-	title = "GRANDMASTER"
-	foa = "GRANDMASTER_FOA"
+	title = GRANDMASTER
+	foa = GRANDMASTER_FOA
 	
 	# Always exists
 	landless = yes
@@ -171,8 +171,9 @@ d_saint_boudicca = {
 	
 	capital = 64 #Gwynedd
 
-	title = "GRANDMASTER"
-	foa = "GRANDMASTER_FOA"
+	title = GRANDMASTER
+	title_female = GRANDMASTER
+	foa = GRANDMASTER_FOA
 	
 	# Always exists
 	landless = yes

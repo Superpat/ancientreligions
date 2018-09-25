@@ -440,10 +440,6 @@ de_jure_laws = {
 				}
 				is_tribal = no
 				is_nomadic = no
-				NAND = {
-					religion = britannic_pagan
-					is_title_active = k_britannic_pagan
-				}
 			}
 		}		
 		ai_will_do = {

@@ -462,6 +462,10 @@ zealot_pattern_for = {
 		}
 	}
 	
+	investiture_law_0 = {
+		religion = britannic_pagan
+	}
+
 	status_of_women_0 = { 
 		OR = {
 			is_female = yes
@@ -874,6 +878,9 @@ zealot_pattern_against = {
 	}
 	ze_administration_laws_2 = { always = yes }
 	
+	investiture_law_1 = {
+		religion = britannic_pagan
+	}
 	
 	status_of_women_0 = { 
 		always = no
@@ -907,7 +914,6 @@ zealot_pattern_against = {
 				has_law = enatic_succession
 			}
 		}
-
 	}
 
 	true_cognatic_succession = {

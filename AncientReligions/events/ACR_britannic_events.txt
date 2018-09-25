@@ -317,8 +317,10 @@ character_event = {
 	}
 }
 
+##################################################################
 # britannic theocracy succession
 # fixes laws and abdicates if necessary
+##################################################################
 
 #[on_new_holder]
 character_event = {
@@ -328,39 +330,27 @@ character_event = {
 	is_triggered_only = yes
 
 	religion = britannic_pagan
+	only_men = yes
 
 	trigger = {
 		is_theocracy = yes
-
-		FROM = {
-			NAND = {
-				has_law = enatic_succession
-				has_law = succ_open_elective
-			}
-		}
 	}
 
 	immediate = {
 		FROM = {
 			add_law = { law = enatic_succession cooldown = no opinion_effect = no }
-			add_law = { law = succ_open_elective cooldown = no opinion_effect = no }
+			add_law = { law = succ_catholic_bishopric cooldown = no opinion_effect = no }
 		}
 
-		if = {
-			limit = {
-				is_female = no
-			}
-
-			create_random_priest = {
-				religion = britannic_pagan
-				culture = ROOT
-				female = yes
-			}
-			new_character = {
-				add_trait = dryad
-				ROOT = {
-					abdicate_to = PREV
-				}
+		create_random_priest = {
+			religion = britannic_pagan
+			culture = ROOT
+			female = yes
+		}
+		new_character = {
+			add_trait = dryad
+			ROOT = {
+				abdicate_to = PREV
 			}
 		}
 
@@ -376,38 +366,27 @@ character_event = {
 	is_triggered_only = yes
 
 	religion = britannic_pagan
+	only_men = yes
 
 	trigger = {
 		is_theocracy = yes
-
-		primary_title = {
-			NAND = {
-				has_law = enatic_succession
-				has_law = succ_open_elective
-			}
-		}
 	}
 
 	immediate = {
 		primary_title = {
 			add_law = { law = enatic_succession cooldown = no opinion_effect = no }
-			add_law = { law = succ_open_elective cooldown = no opinion_effect = no }
+			add_law = { law = succ_catholic_bishopric cooldown = no opinion_effect = no }
 		}
 
-		if = {
-			limit = {
-				is_female = no
-			}
-			create_random_priest = {
-				religion = britannic_pagan
-				culture = ROOT
-				female = yes
-			}
-			new_character = {
-				add_trait = dryad
-				ROOT = {
-					abdicate_to = PREV
-				}
+		create_random_priest = {
+			religion = britannic_pagan
+			culture = ROOT
+			female = yes
+		}
+		new_character = {
+			add_trait = dryad
+			ROOT = {
+				abdicate_to = PREV
 			}
 		}
 
@@ -1062,7 +1041,7 @@ character_event = {
 letter_event = {
 	id = britannic.27
 	desc = britannic.27.desc
-
+	border = GFX_event_letter_frame_religion
 	is_triggered_only = yes
 
 	option = {
@@ -1072,21 +1051,534 @@ letter_event = {
 	}
 }
 
+# arch-dryad demands you switch to "papal" investiture
+# having this trigger on the ruler because the AD will NOT
+# put up with this shit (unless she *really* likes you)
+character_event = {
+	id = britannic.28
+	hide_window = yes
+
+	religion = britannic_pagan
+	only_rulers = yes
+
+	trigger = {
+		primary_title = {
+			has_law = investiture_1
+		}
+		is_title_active = k_britannic_pagan
+
+		k_britannic_pagan = {
+			holder_scope = {
+				NOT = { opinion = { who = ROOT value = 80 } }
+			}
+		}
+	}
+
+	immediate = {
+		k_britannic_pagan = {
+			holder_scope = {
+				character_event = { id = britannic.29 days = 1 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+}
+
+# ping off the arch-dryad
+character_event = {
+	id = britannic.29
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		FROM = {
+			letter_event = { id = britannic.30 days = 3 }
+		}
+	}
+}
+
+# AD demands you switch to papal investiture (ruler)
+letter_event = {
+	id = britannic.30
+	desc = britannic.30.desc
+	border = GFX_event_letter_frame_religion
+
+	is_triggered_only = yes
+
+	option = { # submit to her demand
+		name = britannic.30.a
+
+		primary_title = {
+			revoke_law = investiture_1
+			add_law = investiture_0
+		}
+
+		FROM = {
+			opinion = { who = ROOT modifier = ancrel_pleased }
+		}
+	}
+
+	option = { # refuse
+		name = britannic.30.b
+
+		FROM = {
+			opinion = { who = ROOT modifier = ancrel_furious }
+		}
+	}
+}
+
 ##################################################################
 # Vassalized Arch-Dryad Events                                   #
 ##################################################################
 
-# Arch-Dryad demands control of a County
+# Arch-Dryad demands control of Middlesex
+character_event = {
+	id = britannic.31
+	hide_window = yes
 
-# Arch-Dryad demands control of a Duchy
+	religion = britannic_pagan
+	only_rulers = yes
+	only_women = yes
+
+	trigger = {
+		independent = no
+		controls_religion = yes
+		top_liege = {
+			NOT = { reverse_opinion = { who = ROOT value = 80 } }
+			NOT = { has_character_flag = ancrel_scriptured_archdryad_@ROOT }
+			archdryad_non_interference_trigger = no
+			any_realm_title = {
+				title = c_middlesex
+				holder_scope = {
+					NOT = { character = ROOT }
+				}
+			}
+		}
+	}
+
+	immediate = {
+		liege = {
+			letter_event = { id = britannic.32 days = 1 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 36
+
+		modifier = {
+			factor = 10
+			archdryad_submission_trigger = yes
+		}
+	}
+}
+
+letter_event = {
+	id = britannic.32
+	desc = britannic.32.desc
+	border = GFX_event_letter_frame_religion
+
+	is_triggered_only = yes
+
+	option = { # submit
+		name = britannic.32.a
+
+		c_middlesex = {
+			holder_scope = {
+				if = {
+					limit = {
+						NOT = { character = ROOT }
+					}
+
+					opinion = { who = ROOT modifier = ancrel_furious }
+				}
+			}
+
+			FROM = {
+				usurp_title_plus_barony_if_unlanded_and_vassals = PREV
+				opinion = { who = ROOT modifier = ancrel_pleased }
+			}
+		}
+	}
+
+	option = { # defy her
+		name = britannic.32.b
+
+		c_middlesex = {
+			holder_scope = {
+				if = {
+					limit = {
+						NOT = { character = ROOT }
+					}
+
+					opinion = { who = ROOT modifier = ancrel_grateful }
+				}
+			}
+		}
+
+		FROM = {
+			opinion = { who = ROOT modifier = ancrel_furious }
+		}
+	}
+
+	option = { # out scripture her
+		name = britannic.32.c
+		tooltip_info = learning
+		set_character_flag = ancrel_scriptured_archdryad_@FROM
+		set_character_flag = acr_submit_to_arch_dryad
+		trigger = {
+			learning = 16
+		}
+	}
+}
+
+# Arch-Dryad demands control of Essex
+character_event = {
+	id = britannic.33
+	hide_window = yes
+
+	religion = britannic_pagan
+	only_rulers = yes
+	only_women = yes
+
+	trigger = {
+		independent = no
+		controls_religion = yes
+		top_liege = {
+			NOT = { reverse_opinion = { who = ROOT value = 80 } }
+			NOT = { has_character_flag = ancrel_scriptured_archdryad_@ROOT }
+			archdryad_non_interference_trigger = no
+			any_realm_title = {
+				title = d_essex
+				holder_scope = {
+					NOT = { character = ROOT }
+				}
+			}
+		}
+	}
+
+	immediate = {
+		liege = {
+			letter_event = { id = britannic.34 days = 1 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 36
+
+		modifier = {
+			factor = 10
+			archdryad_submission_trigger = yes
+		}
+	}
+}
+
+letter_event = {
+	id = britannic.34
+	desc = britannic.34.desc
+	border = GFX_event_letter_frame_religion
+
+	is_triggered_only = yes
+
+	option = { # submit
+		name = britannic.34.a
+
+		d_essex = {
+			holder_scope = {
+				if = {
+					limit = {
+						NOT = { character = ROOT }
+					}
+
+					opinion = { who = ROOT modifier = ancrel_furious }
+				}
+			}
+
+			FROM = {
+				usurp_title_plus_barony_if_unlanded_and_vassals = PREV
+				opinion = { who = ROOT modifier = ancrel_pleased }
+			}
+		}
+	}
+
+	option = { # defy her
+		name = britannic.34.b
+
+		d_essex = {
+			holder_scope = {
+				if = {
+					limit = {
+						NOT = { character = ROOT }
+					}
+
+					opinion = { who = ROOT modifier = ancrel_grateful }
+				}
+			}
+		}
+
+		FROM = {
+			opinion = { who = ROOT modifier = ancrel_furious }
+		}
+	}
+
+	option = { # out scripture her
+		name = britannic.34.c
+		tooltip_info = learning
+		set_character_flag = ancrel_scriptured_archdryad_@FROM
+		set_character_flag = acr_submit_to_arch_dryad
+		trigger = {
+			learning = 16
+		}
+	}
+}
 
 # Arch-Dryad demands to be released as a vassal
+character_event = {
+	id = britannic.35
+	hide_window = yes
 
+	religion = britannic_pagan
+	only_women = yes
+	only_rulers = yes
+
+	trigger = {
+		controls_religion = yes
+		independent = no
+		NOT = { # demand Middlesex and Essex first, if she can
+			liege = {
+				any_realm_title = {
+					OR = {
+						title = d_essex
+						title = c_middlesex
+					}
+				}
+				archdryad_non_interference_trigger = yes
+				reverse_opinion = { who = ROOT value = 80 }
+			}
+			has_character_flag = refused_independence_@ROOT
+		}
+	}
+
+	immediate = {
+		liege = {
+			letter_event = { id = britannic.36 days = 1 }
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 10
+
+		modifier = {
+			factor = 2
+			archdryad_submission_trigger = yes
+		}
+	}
+}
+
+letter_event = {
+	id = britannic.36
+	desc = britannic.36.desc
+	border = GFX_event_letter_frame_religion
+
+	is_triggered_only = yes
+
+	option = { # release her
+		name = britannic.36.a
+
+		FROM = {
+			set_defacto_liege = THIS
+		}
+	}
+
+	option = { # refuse
+		name = britannic.36.b
+		set_character_flag = refused_independence_@FROM
+		FROM = {
+			opinion = { who = ROOT modifier = ancrel_furious }
+		}
+	}
+}
 # Arch-Dryad threatens your position
+character_event = {
+	id = britannic.37
+	hide_window = yes
+
+	only_rulers = yes
+	only_women = yes
+	religion = britannic_pagan
+
+	trigger = {
+		independent = no
+		controls_religion = yes
+		liege = {
+			any_realm_title = {
+				OR = {
+					title = d_essex
+					title = c_middlesex
+				}
+			}
+			archdryad_non_interference_trigger = yes
+			reverse_opinion = { who = ROOT value = 80 }
+			has_character_flag = refused_independence_@ROOT
+		}
+	}
+
+	immediate = {
+		liege = {
+			letter_event = { id = britannic.38 days = 1 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+
+		modifier = {
+			factor = 2
+			archdryad_submission_trigger = yes
+		}
+	}
+}
+
+letter_event = {
+	id = britannic.38
+	desc = britannic.38.desc
+	border = GFX_event_letter_frame_religion
+
+	is_triggered_only = yes
+
+	option = {
+		name = britannic.38.a
+
+		FROM = {
+			set_defacto_liege = THIS
+		}
+	}
+
+	option = {
+		name = britannic.38.b
+		set_character_flag = ignored_ultimatum_archdryad_@FROM
+		FROM = {
+			custom_tooltip = {
+				text = britannic.39.tt
+				hidden_tooltip = {
+					character_event = { id = britannic.39 days = 7 }
+				}
+			}
+		}
+	}
+}
 
 # grants a claim to a powerful/ambitious/both vassal
+character_event = {
+	id = britannic.39
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		ROOT = {
+			most_popular_vassal = {
+				limit = {
+					ai_ambition = 30
+					ai_zeal = 30
+				}
+
+				FROM = {
+					primary_title = {
+						add_claim = PREVPREV
+					}
+				}
+
+				save_event_target_as = chosen_vassal
+			}
+
+			any_realm_character = {
+				character_event = { id = britannic.40 days = 3 }
+			}
+		}
+
+		character_event = { id = britannic.41 days = 365 }
+	}
+}
+
+character_event = {
+	id = britannic.40
+	desc = britannic.40.desc
+	picture = GFX_evt_pope
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+
+	option = { # WHAT?!
+		name = britannic.40.a
+		trigger = {
+			FROMFROM = {
+				character = ROOT
+			}
+		}
+	}
+
+	option = { # Nice
+		name = britannic.40.b
+		trigger = {
+			event_target:chosen_vassal = {
+				character = ROOT
+			}
+		}
+	}
+
+	option = { # interesting...
+		name = britannic.40.c
+		trigger = {
+			NOR = {
+				FROMFROM = {
+					character = ROOT
+				}
+				event_target:chosen_vassal = {
+					character = ROOT
+				}
+			}
+		}
+	}
+}
 
 # excommunicates you
+character_event = {
+	id = britannic.41
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		independent = no
+		liege = {
+			war = yes
+		}
+	}
+
+	immediate = {
+		liege = { character_event = { id = britannic.42 days = 3 } }
+	}
+}
+
+character_event = {
+	id = britannic.42
+	desc = britannic.42.desc
+	picture = GFX_evt_emissary
+
+	hide_from = yes
+	is_triggered_only = yes
+
+	option = {
+		name = britannic.42.a
+
+		add_trait = excommunicated
+		piety = -50
+	}
+}
 
 # instigates local peasant revolts against you
 

@@ -27,9 +27,8 @@ Celtic:
 Britannic Pagan:
  - A matriarchal and monotheistic religion based on the Romano-British goddess Britannia, a personification of the isles itself.
  - Borrows heavily from Catholicism, using the College of Cardinals (Circle of Dryads), a system of Saints and Sanctaidd (Angels), and a new Thumoideachais mechanic (baptism) I've created.
- - The Arch-Dryad is the head of the Britannic Church, a position formable by decision for a King or Emperor ruling Middlesex with sufficient cash and piety. There must also be at least 16 Britannic Priests in existence to form the Church of Britannia.
+ - The Arch-Dryad is the head of the Britannic Church, a position formable by decision for a King or Emperor ruling Middlesex with sufficient cash and piety. There must also be at least 16 Dryads in existence to form the Church of Britannia.
  - Dryad, Bad Dryad, and Child of a Dryad traits have all been added. Only priestesses get the Dryad trait.
-  - The intention being an all-female priesthood, but that isn't possible until Holy Fury is released.
  - The Thumoideachais mechanic allows a ruler to request a priest to officiate a Britannic baptism with a targetted decision.
   - The Thumoideachais must be held before the child turns 3.
   - If a child reaches the age of 3 without a Tumtha, they become Sych, "dry". This is a mark of shame for a Britannic and will worsen relations with other members of the faith and the Church in particular.

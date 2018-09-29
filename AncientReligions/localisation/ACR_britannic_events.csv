@@ -15,10 +15,10 @@ britannic.10.desc;As one of her first acts, the Arch-Dryad has approved the char
 britannic.10.a;For the Holy Mother!;;;;;;;;;;;;;x
 britannic.10.b;Women? With swords?!;;;;;;;;;;;;;x
 britannic.10.c;This is getting out of hand...;;;;;;;;;;;;;x
-britannic.22.desc.bad_dryad;A Dryad has arrived in your court bearing a message from [From.GetTitledFirstName] herself.\n"It has come to my attention that you have a disgraced Dryad on your council. This cannot stand! I have sent [new_dryad.GetFirstName] to replace the dark influence in your court. Heed her advice, good [Root.GetTitle]."\n What do you do?;;;;;;;;;;;;;x
-britannic.22.desc.cynic;A Dryad has arrived in your court bearing a message from [From.GetTitledFirstName] herself.\n"It has come to my attention that you have someone lacking in faith on your council. I have sent [new_dryad.GetFirstName] to replace them. Heed her advice, good [Root.GetTitle]."\n What do you do?;;;;;;;;;;;;;x
-britannic.22.desc.other;A Dryad has arrived in your court bearing a message from [From.GetTitledFirstName] herself.\n"It has come to my attention that you lack the wisdom of a trained Dryad on your council. I have sent [new_dryad.GetFirstName] to serve this role. Heed her advice, good [Root.GetTitle]."\n What do you do?;;;;;;;;;;;;;x
-britannic.22.a;As the Arch-Dryad commands;;;;;;;;;;;;;x
+britannic.22.desc.bad_dryad;A Dryad has arrived in your court bearing a message from [From.GetTitledFirstName] herself. "It has come to my attention that you have a disgraced Dryad on your council. This cannot stand! I have sent [new_dryad.GetFirstName] to replace the dark influence in your court. Heed her advice, good [Root.GetTitle]."\n\nWhat do you do?;;;;;;;;;;;;;x
+britannic.22.desc.cynic;A Dryad has arrived in your court bearing a message from [From.GetTitledFirstName] herself. "It has come to my attention that you have someone lacking in faith on your council. I have sent [new_dryad.GetFirstName] to replace them. Heed her advice, good [Root.GetTitle]."\n\nWhat do you do?;;;;;;;;;;;;;x
+britannic.22.desc.other;A Dryad has arrived in your court bearing a message from [From.GetTitledFirstName] herself. "It has come to my attention that you lack the wisdom of a trained Dryad on your council. I have sent [new_dryad.GetFirstName] to serve this role. Heed her advice, good [Root.GetTitle]."\n\nWhat do you do?;;;;;;;;;;;;;x
+britannic.22.a;As the Arch-Dryad commands.;;;;;;;;;;;;;x
 britannic.22.b;I alone choose my small-council!;;;;;;;;;;;;;x
 britannic.22.b.tt;[new_dryad.GetFirstName] returns to [From.GetTitledFirstName]'s court with your answer.;;;;;;;;;;;;;x
 britannic.22.c;Perhaps I can convince her otherwise...;;;;;;;;;;;;;x

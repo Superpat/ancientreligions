@@ -571,13 +571,13 @@ character_event = {
 	trigger = {
 		is_ruler = yes
 		is_theocracy = no
-		NOR = { # she's cool so long as you have at least two dryads on your council
+		NOT = { # she's cool so long as you have at least two dryads on your council
 			any_voter = {
 				count = 2
 				trait = dryad
 			}
 		}
-		archdryad_non_interference_trigger = no
+		NOT = { archdryad_non_interference_trigger = yes }
 	}
 
 	mean_time_to_happen = {
@@ -716,6 +716,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = { # Acquiesce to her request
+		name = britannic.22.a
 		clr_character_flag = acr_submit_to_arch_dryad
 		set_character_flag = acr_submit_to_arch_dryad
 
@@ -1226,6 +1227,7 @@ letter_event = {
 
 	option = { # out scripture her
 		name = britannic.32.c
+		custom_tooltip = { text = britanic.32.c.tt }
 		tooltip_info = learning
 		set_character_flag = ancrel_scriptured_archdryad_@FROM
 		set_character_flag = acr_submit_to_arch_dryad
@@ -1357,8 +1359,8 @@ character_event = {
 				}
 				archdryad_non_interference_trigger = yes
 				reverse_opinion = { who = ROOT value = 80 }
+				has_character_flag = refused_independence_@ROOT
 			}
-			has_character_flag = refused_independence_@ROOT
 		}
 	}
 
@@ -1420,7 +1422,7 @@ character_event = {
 					title = c_middlesex
 				}
 			}
-			archdryad_non_interference_trigger = yes
+			archdryad_non_interference_trigger = no
 			reverse_opinion = { who = ROOT value = 80 }
 			has_character_flag = refused_independence_@ROOT
 		}
@@ -1433,7 +1435,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 60
+		months = 36
 
 		modifier = {
 			factor = 2
@@ -1554,9 +1556,6 @@ character_event = {
 
 	trigger = {
 		independent = no
-		liege = {
-			war = yes
-		}
 	}
 
 	immediate = {

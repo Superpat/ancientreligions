@@ -191,7 +191,7 @@ character_event = {
 	}
 }
 
-# Britannic becoming a wicked Dryad
+# dryad becoming a wicked Dryad
 character_event = {
 	id = britannic.5
 	desc = britannic.5.desc

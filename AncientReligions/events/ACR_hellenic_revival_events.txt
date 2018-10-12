@@ -46,7 +46,7 @@ character_event = {
 		}
 
 		NOR = {
-			realm_size = 200 						# empire is in big trouble, like at the alexiad start date
+			realm_size = 230 						# empire is in big trouble, like at the alexiad start date
 			has_character_flag = ancrel_philosopher # hasn't had the event already
 			religion_group = pagan_group 			# is still christian
 			any_courtier = {

@@ -5,7 +5,7 @@
 General:
  - Crusades and Jihads can now be called in a Paganified world if the player is a member of the religion.
   - For example, the Pope can call Crusades if there is a Catholic player.
- - Most Holy Orders are no longer vassalized on creation.
+ - Holy Orders are no longer vassalized on creation.
  - Most Holy Orders now have the standard mechanics from vanilla (making donations/loans, building castles, etc.)
   - Note: I've written a somewhat experimental new mechanism to implement these features, so they won't be exactly as vanilla. 
   - The decisions are now targeted, so right-click the grandmaster of the order to use them.
@@ -40,7 +40,7 @@ Britannic Pagan:
  - Britannic rulers are forbidden from lowering the status of women laws and will never choose to vote in favor of doing so.
 
 Hellenic:
- - The Philosopher event chain is now more likely to fire and the max demense size requirement is relaxed to 200.
+ - The Philosopher event chain is now more likely to fire and the max demense size requirement is relaxed to 230.
   - Various conditions will also increase the odds of the event firing, such as being in a defensive war and your religion having a low MA (<50%).
 
 

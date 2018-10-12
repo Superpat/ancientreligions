@@ -706,7 +706,10 @@ character_event = {
 		#choose Nile flood for the year
 		random_list = {
 			500 = { #normal flood
-				788 = {
+				any_province = {
+					limit = {
+						is_on_nile_trigger = yes
+					}
 					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_good
@@ -717,190 +720,22 @@ character_event = {
 							has_dlc = "Reapers"
 						}
 						change_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.101 }
 					}
 				}
-				789 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_good
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
+				any_player = {
+					limit = {
+						any_realm_province = {
+							is_on_nile_trigger = yes
 						}
-						change_variable = { which = prosperity_value value = 2 }
 					}
-					any_province_lord = {
-						character_event = { id = egyptian.101 }
-					}
-				}
-				790 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_good
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.101 }
-					}
-				}
-				791 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_good
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.101 }
-					}
-				}
-				794 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_good
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.101 }
-					}
-				}
-				795 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_good
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.101 }
-					}
-				}
-				796 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_good
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.101 }
-					}
-				}
-				797 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_good
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.101 }
-					}
-				}
-				798 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_good
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.101 }
-					}
-				}
-				799 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_good
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.101 }
-					}
-				}
-				800 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_good
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.101 }
-					}
-				}
-				802 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_good
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.101 }
-					}
+					character_event = { id = egyptian.101 }
 				}
 			}
 			100 = { #great flood
-				788 = {
+				any_province = {
+					limit = {
+						is_on_nile_trigger = yes
+					}
 					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_great
@@ -911,190 +746,22 @@ character_event = {
 							has_dlc = "Reapers"
 						}
 						change_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.102 }
 					}
 				}
-				789 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_great
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
+				any_player = {
+					limit = {
+						any_realm_province = {
+							is_on_nile_trigger = yes
 						}
-						change_variable = { which = prosperity_value value = 4 }
 					}
-					any_province_lord = {
-						character_event = { id = egyptian.102 }
-					}
-				}
-				790 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_great
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.102 }
-					}
-				}
-				791 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_great
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.102 }
-					}
-				}
-				794 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_great
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.102 }
-					}
-				}
-				795 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_great
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.102 }
-					}
-				}
-				796 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_great
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.102 }
-					}
-				}
-				797 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_great
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.102 }
-					}
-				}
-				798 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_great
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.102 }
-					}
-				}
-				799 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_great
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.102 }
-					}
-				}
-				800 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_great
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.102 }
-					}
-				}
-				802 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_great
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.102 }
-					}
+					character_event = { id = egyptian.102 }
 				}
 			}
 			100 = { #overflow flood
-				788 = {
+				any_province = {
+					limit = {
+						is_on_nile_trigger = yes
+					}
 					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_overflow
@@ -1105,190 +772,22 @@ character_event = {
 							has_dlc = "Reapers"
 						}
 						subtract_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.103 }
 					}
 				}
-				789 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_overflow
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
+				any_player = {
+					limit = {
+						any_realm_province = {
+							is_on_nile_trigger = yes
 						}
-						subtract_variable = { which = prosperity_value value = 4 }
 					}
-					any_province_lord = {
-						character_event = { id = egyptian.103 }
-					}
-				}
-				790 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_overflow
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.103 }
-					}
-				}
-				791 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_overflow
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.103 }
-					}
-				}
-				794 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_overflow
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.103 }
-					}
-				}
-				795 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_overflow
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.103 }
-					}
-				}
-				796 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_overflow
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.103 }
-					}
-				}
-				797 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_overflow
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.103 }
-					}
-				}
-				798 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_overflow
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.103 }
-					}
-				}
-				799 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_overflow
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.103 }
-					}
-				}
-				800 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_overflow
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.103 }
-					}
-				}
-				802 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_overflow
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.103 }
-					}
+					character_event = { id = egyptian.103 }
 				}
 			}
 			200 = { #poor flood
-				788 = {
+				any_province = {
+					limit = {
+						is_on_nile_trigger = yes
+					}
 					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_poor
@@ -1299,186 +798,15 @@ character_event = {
 							has_dlc = "Reapers"
 						}
 						subtract_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.104 }
 					}
 				}
-				789 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_poor
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
+				any_player = {
+					limit = {
+						any_realm_province = {
+							is_on_nile_trigger = yes
 						}
-						subtract_variable = { which = prosperity_value value = 2 }
 					}
-					any_province_lord = {
-						character_event = { id = egyptian.104 }
-					}
-				}
-				790 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_poor
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.104 }
-					}
-				}
-				791 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_poor
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.104 }
-					}
-				}
-				794 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_poor
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.104 }
-					}
-				}
-				795 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_poor
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.104 }
-					}
-				}
-				796 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_poor
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.104 }
-					}
-				}
-				797 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_poor
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.104 }
-					}
-				}
-				798 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_poor
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.104 }
-					}
-				}
-				799 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_poor
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.104 }
-					}
-				}
-				800 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_poor
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.104 }
-					}
-				}
-				802 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_poor
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = egyptian.104 }
-					}
+					character_event = { id = egyptian.104 }
 				}
 			}
 		}

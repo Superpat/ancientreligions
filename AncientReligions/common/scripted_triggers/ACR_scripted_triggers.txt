@@ -552,7 +552,6 @@ prev_can_borrow_from_this_holy_order_trigger = {
 			}
 		}	
 	}
-
 }
 
 # title scope, checks that FROM can vassalize the currently scoped holy order

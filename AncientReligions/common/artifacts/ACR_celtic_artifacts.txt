@@ -1,2 +1,104 @@
 # Content by Adam 'theStormWeaver/xirsoi' Chevalier
 
+silver_hand_of_nuada = {
+	quality = 5
+	monthly_prestige = 0.5
+	monthly_piety = 0.5
+	stewardship = 3
+	active = {
+		religion_openly_in_celtic_subgroup_trigger = yes
+	}
+	stacking = no
+	allowed_gift = {
+		religion_openly_in_celtic_subgroup_trigger = yes
+	}
+	flags = { celtic_pagan religious very_rare hand }
+	picture = "GFX_prosthetic_hand_metal"
+	indestructible = yes
+}
+
+skull_of_brigid = {
+	quality = 4
+	monthly_piety = 0.5
+	learning = 1
+	same_religion_opion = 10
+	global_tax_modifier = 0.05
+	active = {
+		OR = {
+			religion_group = christian
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
+			religion = britannic_pagan
+		}
+	}	
+	stacking = no
+	allowed_gift = {
+		OR = {
+			religion_group = christian
+			religion = celtic_pagan
+			religion = celtic_pagan_reformed
+			religion = britannic_pagan
+		}
+	}
+	flags = { celtic_pagan christian religious saint bodypart head bone rare }
+	picture = "GFX_saintly_skull"
+}
+
+horn_of_bran_galed = {
+	quality = 4
+	monthly_prestige = 0.1
+	monthly_piety = 0.1
+	martial = 1
+	global_levy_size = 0.05
+	command_modifier = {
+		morale_defence = 0.2
+	}
+	active = {
+		religion_openly_in_celtic_subgroup_trigger = yes
+	}
+	stacking = no
+	allowed_gift = {
+		religion_openly_in_celtic_subgroup_trigger = yes
+	}
+	flags = { celtic_pagan religious rare horn }
+	picture = "GFX_gjallarhorn"
+}
+
+tusk_of_torc_triath = {
+	quality = 3
+	montly_prestige = 0.5
+	same_religion_opinion = 10
+	combat_rating = 2
+	active = {
+		religion_openly_in_celtic_subgroup_trigger = yes
+	}
+	stacking = no
+	allowed_gift = {
+		religion_openly_in_celtic_subgroup_trigger = yes
+	}
+	flags = { celtic_pagan religious rare horn }
+	picture = "GFX_strange_chest"
+}
+
+torque_of_boudicca = {
+	quality = 2
+	monthly_prestige = 0.1
+	monthly_piety = 0.1
+	active = {
+		OR = {
+			religion_openly_in_celtic_subgroup_trigger = yes
+			culture_group = celtic
+		}
+	}
+	stacking = no
+	allowed_gift = {
+		OR = {
+			religion_openly_in_celtic_subgroup_trigger = yes
+			culture_group = celtic
+		}
+	}
+	flags = { celtic_pagan rare neckless jewelry }
+	slot = neck
+	picture = "GFX_strange_chest"
+}
+

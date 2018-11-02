@@ -5,7 +5,7 @@
 General:
  - Crusades and Jihads can now be called in a Paganified world if the player is a member of the religion.
   - For example, the Pope can call Crusades if there is a Catholic player.
- - Holy Orders are no longer vassalized on creation.
+ - Holy Orders are no longer vassalizable.
  - Most Holy Orders now have the standard mechanics from vanilla (making donations/loans, building castles, etc.)
   - Note: I've written a somewhat experimental new mechanism to implement these features, so they won't be exactly as vanilla. 
   - The decisions are now targeted, so right-click the grandmaster of the order to use them.
@@ -17,7 +17,6 @@ General:
   - Seneca the Younger, Roman Promethean Pagan, master scholar.
   - Lucan the Younger, Roman Hellenic Pagan, master scholar.
  - Improved Nile River Flooding event to prevent repeated messages.
- - Added requirements in Atenic and Kemetic priesthood restoration decisions to have the temples of respectively Akhetaten and Luxor restored.
 
 Celtic:
  - Fixes bug where the Unfit King Beta game rule was being ignored.
@@ -25,7 +24,7 @@ Celtic:
  - Also introducing a new heresy, Britannic Pagan!
 
 Britannic Pagan:
- - A matriarchal and monotheistic religion based on the Romano-British goddess Britannia, a personification of the isles itself.
+ - A matriarchal and monotheistic religion based on the Romano-British goddess Britannia, a personification of the isles themselves.
  - Borrows heavily from Catholicism, using the College of Cardinals (Circle of Dryads), a system of Saints and Sanctaidd (Angels), and a new Thumoideachais mechanic (baptism) I've created.
  - The Arch-Dryad is the head of the Britannic Church, a position formable by decision for a King or Emperor ruling Middlesex with sufficient cash and piety. There must also be at least 16 Dryads in existence to form the Church of Britannia.
  - Dryad, Bad Dryad, and Child of a Dryad traits have all been added. Only priestesses get the Dryad trait.
@@ -42,6 +41,12 @@ Britannic Pagan:
 Hellenic:
  - The Philosopher event chain is now more likely to fire and the max demense size requirement is relaxed to 230.
   - Various conditions will also increase the odds of the event firing, such as being in a defensive war and your religion having a low MA (<50%).
+
+Kemetic:
+ - Made it more clear that restoring the Priesthood requires that Luxor is restored.
+
+Atenic:
+ - Made it more clear that forming the Meryatenate requires that Akhetaten is restored.
 
 
 2018-06-10 v0.41.3 "Cardea"

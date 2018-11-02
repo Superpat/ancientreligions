@@ -195,13 +195,12 @@ character_event = {
 		is_ruler = yes
 		NOT = {
 			has_character_flag = choose_dead_one_tailteann
-			has_character_flag = chosen_dead_one_tailteann
 		}
 		OR = {
 			father_even_if_dead = {
 				is_alive = no
 			}
-			mother = {
+			mother_even_if_dead = {
 				is_alive = no
 			}
 		}
@@ -230,7 +229,7 @@ character_event = {
 	option = { # In memory of mother
 		name = celtic.1196.b
 		trigger = {
-			mother = {
+			mother_even_if_dead = {
 				is_alive = no
 			}
 		}
@@ -259,8 +258,6 @@ narrative_event = {
 	option = {
 		name = celtic.1197.a
 		piety = 100
-		clr_character_flag = choose_dead_one_tailteann
-		set_character_flag = chosen_dead_one_tailteann
 	}
 }
 
@@ -279,8 +276,6 @@ narrative_event = {
 	option = {
 		name = celtic.1198.a
 		piety = 100
-		clr_character_flag = choose_dead_one_tailteann
-		set_character_flag = chosen_dead_one_tailteann
 	}
 }
 

@@ -2151,6 +2151,7 @@ character_event = {
 			religion_head = {
 				character = ROOT
 			}
+			has_dlc = "Mystics"
 			# don't have the archdryad bombard the player
 			NOR = {
 				had_character_flag = { flag = money_from_the_archdryad days = 365 }

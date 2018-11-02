@@ -168,7 +168,7 @@ decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = {
 				factor = 0
 				NOT = {
@@ -179,13 +179,13 @@ decisions = {
 			modifier = {
 				factor = 0
 				trait = slothful
-			}	
-			
+			}
+
 			modifier = {
 				factor = 0
 				NOT = { stewardship = 10 }
 			}
-			
+
 			modifier = {
 				factor = 0
 				has_character_flag = recent_minor_decision
@@ -195,8 +195,8 @@ decisions = {
 						days = 730
 					}
 				}
-			}			
-			
+			}
+
 		}
 	}
 

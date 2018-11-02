@@ -307,6 +307,7 @@ targetted_decisions = {
 		ai_check_interval = 6
 
 		from_potential = {
+			has_global_flag = ancrel_debug
 			is_heretic = no
 			primary_title = { higher_tier_than = DUKE }
 		}

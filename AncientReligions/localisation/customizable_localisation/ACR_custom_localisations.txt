@@ -9,7 +9,7 @@ defined_text = {
 	text = {
 		trigger = { is_female = yes }
 		localisation_key = dryad
-	}	
+	}
 }
 
 defined_text = {

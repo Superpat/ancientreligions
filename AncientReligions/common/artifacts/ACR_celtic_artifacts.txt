@@ -13,8 +13,70 @@ silver_hand_of_nuada = {
 		religion_openly_in_celtic_subgroup_trigger = yes
 	}
 	flags = { celtic_pagan religious very_rare hand }
-	picture = "GFX_prosthetic_hand_metal"
+	picture = GFX_prosthetic_hand_metal
 	indestructible = yes
+}
+
+trident_of_britannia = {
+	quality = 5
+	monthly_prestige = 0.5
+	martial = 3
+	combat_rating = 1
+	same_religion_opinion = 5
+	command_modifier = {
+		cavalry = 0.1
+		morale_offence = 0.1
+	}
+	active = {
+		religion = britannic_pagan
+	}
+	stacking = no
+	allowed_gift = {
+		religion = britannic_pagan
+	}
+	flags = { britannic_pagan religious very_rare combat }
+	slot = weapon
+	picture = GFX_strange_chest
+}
+
+helm_of_britannia = {
+	quality = 5
+	monthly_piety = 0.5
+	martial = 5
+	combat_rating = 1
+	same_religion_opinion = 5
+	command_modifier = {
+		heavy_infantry = 0.1
+	}
+	active = {
+		religion = britannic_pagan
+	}
+	stacking = no
+	allowed_gift = {
+		religion = britannic_pagan
+	}
+	flags = { britannic_pagan religious very_rare combat }
+	slot = crown
+}
+
+shield_of_britannia = {
+	quality = 5
+	martial = 1
+	combat_rating = 5
+	same_religion_opinion = 5
+	command_modifier = {
+		light_infantry = 0.1
+		morale_defence = 0.1
+	}
+	active = {
+		religion = britannic_pagan
+	}
+	stacking = no
+	allowed_gift = {
+		religion = britannic_pagan
+	}
+	flags = { britannic_pagan religious very_rare combat }
+	picture = GFX_strange_chest
 }
 
 skull_of_brigid = {
@@ -41,7 +103,7 @@ skull_of_brigid = {
 		}
 	}
 	flags = { celtic_pagan christian religious saint bodypart head bone rare }
-	picture = "GFX_saintly_skull"
+	picture = GFX_saintly_skull
 }
 
 horn_of_bran_galed = {
@@ -61,7 +123,7 @@ horn_of_bran_galed = {
 		religion_openly_in_celtic_subgroup_trigger = yes
 	}
 	flags = { celtic_pagan religious rare horn }
-	picture = "GFX_gjallarhorn"
+	picture = GFX_gjallarhorn
 }
 
 tusk_of_torc_triath = {
@@ -77,7 +139,7 @@ tusk_of_torc_triath = {
 		religion_openly_in_celtic_subgroup_trigger = yes
 	}
 	flags = { celtic_pagan religious rare horn }
-	picture = "GFX_strange_chest"
+	picture = GFX_strange_chest
 }
 
 torque_of_boudicca = {
@@ -99,6 +161,6 @@ torque_of_boudicca = {
 	}
 	flags = { celtic_pagan rare neckless jewelry }
 	slot = neck
-	picture = "GFX_strange_chest"
+	picture = GFX_strange_chest
 }
 

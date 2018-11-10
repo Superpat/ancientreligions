@@ -12,7 +12,7 @@ silver_hand_of_nuada = {
 	allowed_gift = {
 		religion_openly_in_celtic_subgroup_trigger = yes
 	}
-	flags = { celtic_pagan religious very_rare hand }
+	flags = { celtic_pagan religious unique hand }
 	picture = GFX_prosthetic_hand_metal
 	indestructible = yes
 }
@@ -34,7 +34,7 @@ trident_of_britannia = {
 	allowed_gift = {
 		religion = britannic_pagan
 	}
-	flags = { britannic_pagan religious very_rare combat }
+	flags = { britannic_pagan religious unique combat troops_morale }
 	slot = weapon
 	picture = GFX_strange_chest
 }
@@ -55,7 +55,7 @@ helm_of_britannia = {
 	allowed_gift = {
 		religion = britannic_pagan
 	}
-	flags = { britannic_pagan religious very_rare combat }
+	flags = { britannic_pagan religious unique combat }
 	slot = crown
 }
 
@@ -75,7 +75,7 @@ shield_of_britannia = {
 	allowed_gift = {
 		religion = britannic_pagan
 	}
-	flags = { britannic_pagan religious very_rare combat }
+	flags = { britannic_pagan religious unique combat troops_morale }
 	picture = GFX_strange_chest
 }
 
@@ -102,7 +102,7 @@ skull_of_brigid = {
 			religion = britannic_pagan
 		}
 	}
-	flags = { celtic_pagan christian religious saint bodypart head bone rare }
+	flags = { celtic_pagan christian religious saint bodypart head bone unique }
 	picture = GFX_saintly_skull
 }
 
@@ -122,7 +122,7 @@ horn_of_bran_galed = {
 	allowed_gift = {
 		religion_openly_in_celtic_subgroup_trigger = yes
 	}
-	flags = { celtic_pagan religious rare horn }
+	flags = { celtic_pagan religious unique horn troops_morale }
 	picture = GFX_gjallarhorn
 }
 
@@ -138,14 +138,14 @@ tusk_of_torc_triath = {
 	allowed_gift = {
 		religion_openly_in_celtic_subgroup_trigger = yes
 	}
-	flags = { celtic_pagan religious rare horn }
+	flags = { celtic_pagan religious unique horn }
 	picture = GFX_strange_chest
 }
 
 torque_of_boudicca = {
 	quality = 2
 	monthly_prestige = 0.1
-	monthly_piety = 0.1
+	short_reign_length = -3
 	active = {
 		OR = {
 			religion_openly_in_celtic_subgroup_trigger = yes
@@ -164,3 +164,67 @@ torque_of_boudicca = {
 	picture = GFX_strange_chest
 }
 
+old_carnyx = {
+	quality = 2
+	monthly_prestige = 0.05
+	command_modifier = {
+		morale_defence = 0.10
+		morale_offence = 0.10
+	}
+	active = {
+		OR = {
+			religion_openly_in_celtic_subgroup_trigger = yes
+			culture_group = celtic
+		}
+	}
+	stacking = no
+	allowed_gift = {
+		OR = {
+			religion_openly_in_celtic_subgroup_trigger = yes
+			culture_group = celtic
+		}
+	}
+	flags = { celtic_pagan rare horn troops_morale }
+	picture = GFX_carnyx
+}
+
+horned_helm = {
+	quality = 2
+	monthly_prestige = 0.1
+	active = {
+		OR = {
+			religion_openly_in_celtic_subgroup_trigger = yes
+			culture_group = celtic
+		}
+	}
+	stacking = no
+	allowed_gift = {
+		OR = {
+			religion_openly_in_celtic_subgroup_trigger = yes
+			culture_group = celtic
+		}
+	}
+	flags = { celtic_pagan }
+}
+
+battersea_shield = {
+	quality = 3
+	monthly_prestige = 0.1
+	command_modifier = {
+		heavy_infantry = 0.1
+	}
+	active = {
+		OR = {
+			religion_openly_in_celtic_subgroup_trigger = yes
+			culture_group = celtic
+		}
+	}
+	stacking = no
+	allowed_gift = {
+		OR = {
+			religion_openly_in_celtic_subgroup_trigger = yes
+			culture_group = celtic
+		}
+	}
+	flags = { celtic_pagan shield }
+}

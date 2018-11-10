@@ -23,6 +23,7 @@
 # celtic.1261 - celtic.1318 Thirteen Treasures of Britain events
 # celtic.1319 - celtic.1332 Red Dragon Knights
 # celtic.1333 - celtic.1334 The Fianna
+# celtic.2000 - celtic.2500 Artifact Events
 #
 ###################################
 #
@@ -42,6 +43,9 @@
 # hellenic.230 - hellenic.239 Roman Events
 # hellenic.240 - hellenic.259 Hellenic Flavour Events
 # hellenic.500 - hellenic.699 Cybrxkhan's Flavor Events
+# hellenic.1000 - hellenic.1500 Artifact Events
+#
+#
 # epicblood.0 - epicblood.199 Epic Bloodlines
 # dionysus.0 - dionysus.99 Mysteries of Dionysus Events
 # promethean.400 - promethean.549 Promethean Flavor Events
@@ -58,6 +62,7 @@
 # egyptian.10 - egyptian.19 Sed festival
 # egyptian.100 - egyptian.199 Cybrxkhan stuff (will be more detailed later)
 # egyptian.200 - egyptian.399 Kemetic Revival events
+# egyptian.1000 - egyptian.1500 Artifact Events
 # atenic.0 - atenic.500 Aten Stuff
 #
 ###################################

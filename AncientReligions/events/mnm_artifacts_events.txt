@@ -187,11 +187,6 @@ character_event = {
                         has_artifact = kronium
                         has_artifact = ceasars_robe
                         has_artifact = aeon_feather
-                        has_artifact = achilles_shield_piece
-                        has_artifact = hectors_armor
-                        has_artifact = odysseus_bow
-                        has_artifact = mask_of_agamemnon
-                        has_artifact = crown_of_theseus
                     }
                 }
                 modifier = {
@@ -200,7 +195,6 @@ character_event = {
                         relgion_openly_celtic_or_reformed_trigger = yes
                         has_artifact = silver_hand_of_nuada
                         has_artifact = skull_of_brigid
-                        has_artifact = horn_of_bran_galed
                     }
                 }
                 modifier = {
@@ -210,7 +204,6 @@ character_event = {
                         has_artifact = trident_of_britannia
                         has_artifact = helm_of_britannia
                         has_artifact = shield_of_britannia
-                        has_artifact = skull_of_brigid
                     }
                 }
 				event_target:rumor_councillor = { character_event = { id = MNM.9001 } } 
@@ -296,6 +289,10 @@ character_event = {
                         has_artifact = alexanders_armor
                         has_artifact = sphinx_claw
                         has_artifact = golden_apple
+                        has_artifact = hectors_armor
+                        has_artifact = odysseus_bow
+                        has_artifact = mask_of_agamemnon
+                        has_artifact = crown_of_theseus
                     }
                 }
                 modifier = {
@@ -303,8 +300,16 @@ character_event = {
                     AND = {
                         religion_openly_in_celtic_subgroup_trigger = yes
                         has_artifact = tusk_of_torc_triath
+                        has_artifact = horn_of_bran_galed
                     }
                 }
+				modifier = {
+					factor = 0
+					AND = {
+						religion = britannic_pagan
+						has_artifact = skull_of_brigid
+					}
+				}
 				event_target:rumor_councillor = { character_event = { id = MNM.9002 } }
 			} 
 			60 = { #Weak rumor
@@ -407,6 +412,7 @@ character_event = {
                     factor = 0
                     AND = {
                         religion_openly_in_hellenic_subgroup_trigger = yes
+                        has_artifact = achilles_shield_piece
                         has_artifact = corinthian_helm
                         has_artifact = tongue_of_oracle
                         has_artifact = silver_amphora
@@ -1781,7 +1787,7 @@ character_event = {
 						factor = 0
 						has_artifact = skull_of_brigid
 					}
-					narrative_event = { id = celtic.2001 } #receive "Skull of Brigid" event (celtic pagan)
+					narrative_event = { id = celtic.2000 } #receive "Skull of Brigid" event
 				}
 				10 = {
 					modifier = { factor = 0 religion_openly_celtic_or_reformed = no }
@@ -1836,6 +1842,175 @@ character_event = {
 						has_artifact = battersea_shield
 					}
 					narrative_event = { id = celtic.2011 } #receive "Battersea Shield" event
+				}
+
+                # Hellenic Artifacts
+				10 = {
+					modifier = { factor = 0 religion_openly_in_hellenic_subgroup_trigger = no }
+					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
+					modifier = {
+						factor = 0
+						has_artifact = nimean_lion_skin
+					}
+					narrative_event = { id = hellenic.1000 } #receive "Nimean Lion Skin" event
+				}
+				10 = {
+					modifier = {
+                        factor = 0
+                        religion_openly_hellenic_or_reformed_trigger = no
+                        NOT = { religion = titan_pagan }
+                    }
+					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
+					modifier = {
+						factor = 0
+						has_artifact = kronium
+					}
+					narrative_event = { id = hellenic.1001 } #receive "Kronium" event
+				}
+				10 = {
+					modifier = { factor = 0 religion_openly_in_hellenic_subgroup_trigger = no }
+					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
+					modifier = {
+						factor = 0
+						has_artifact = ceasars_robe
+					}
+					narrative_event = { id = hellenic.1002 } #receive "Bloody Robe of Ceasar" event
+				}
+				10 = {
+					modifier = {
+                        factor = 0
+                        religion_openly_in_hellenic_subgroup_trigger = no
+                        religon = promethean_pagan # prometheans don't like Aeon
+                    }
+					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
+					modifier = {
+						factor = 0
+						has_artifact = aeon_feather
+					}
+					narrative_event = { id = hellenic.1003 } #receive "Aeon's Feather" event
+				}
+				10 = {
+					modifier = { factor = 0 religion_openly_hellenic_or_reformed_trigger = no }
+					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
+					modifier = {
+						factor = 0
+						has_artifact = hectors_armor
+					}
+					narrative_event = { id = hellenic.1005 } #receive "Hector's Armor" event
+				}
+				10 = {
+					modifier = { factor = 0 religion_openly_in_hellenic_subgroup_trigger = no }
+					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
+					modifier = {
+						factor = 0
+						has_artifact = odysseus_bow
+					}
+					narrative_event = { id = hellenic.1006 } #receive "Odysseus' Bow" event
+				}
+				10 = {
+					modifier = { factor = 0 religion_openly_in_hellenic_subgroup_trigger = no }
+					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
+					modifier = {
+						factor = 0
+						has_artifact = mask_of_agamemnon
+					}
+					narrative_event = { id = hellenic.1007 } #receive "Mask of Agamemnon" event
+				}
+				10 = {
+					modifier = { 
+                        factor = 0
+                        NOR = {
+                            religion = promethean_pagan
+                            religion_openly_hellenic_or_reformed_trigger = yes
+                        }
+                    }
+					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
+					modifier = {
+						factor = 0
+						has_artifact = crown_of_theseus
+					}
+					narrative_event = { id = hellenic.1008 } #receive "Crown of Theseus" event
+				}
+				10 = {
+					modifier = { factor = 0 religion_openly_in_hellenic_subgroup_trigger = no }
+					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
+					modifier = {
+						factor = 0
+						has_artifact = skull_of_alexander
+					}
+					narrative_event = { id = hellenic.1009 } #receive "Alexander's Skull" event
+				}
+				10 = {
+					modifier = { factor = 0 religion_openly_in_hellenic_subgroup_trigger = no }
+					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
+					modifier = {
+						factor = 0
+						has_artifact = alexanders_armor
+					}
+					narrative_event = { id = hellenic.1010 } #receive "Alexander's Armor" event
+				}
+				10 = {
+					modifier = { factor = 0 religion_openly_in_hellenic_subgroup_trigger = no }
+					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_medium } }
+					modifier = {
+						factor = 0
+						has_artifact = gold_amphora
+					}
+					narrative_event = { id = hellenic.1011 } #receive "Golden Amphora" event
+				}
+				10 = {
+					modifier = { factor = 0 religion_openly_in_hellenic_subgroup_trigger = no }
+					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_medium } }
+					modifier = {
+						factor = 0
+						has_artifact = sphinx_claw
+					}
+					narrative_event = { id = hellenic.1012 } #receive "Sphinx Claw" event
+				}
+				10 = {
+					modifier = { factor = 0 religion_openly_in_hellenic_subgroup_trigger = no }
+					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_medium } }
+					modifier = {
+						factor = 0
+						has_artifact = golden_apple
+					}
+					narrative_event = { id = hellenic.1013 } #receive "Golden Apple" event
+				}
+				10 = {
+					modifier = { factor = 0 religion_openly_in_hellenic_subgroup_trigger = no }
+					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_minor } }
+					modifier = {
+						factor = 0
+						has_artifact = achilles_shield_piece
+					}
+					narrative_event = { id = hellenic.1004 } #receive "Fragment of Achilles' Shield" event
+				}
+				10 = {
+					modifier = { factor = 0 religion_openly_in_hellenic_subgroup_trigger = no }
+					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_minor } }
+					modifier = {
+						factor = 0
+						has_artifact = corinthian_helm
+					}
+					narrative_event = { id = hellenic.1014 } #receive "Corinthian Helm" event
+				}
+				10 = {
+					modifier = { factor = 0 religion_openly_in_hellenic_subgroup_trigger = no }
+					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_minor } }
+					modifier = {
+						factor = 0
+						has_artifact = tongue_of_oracle
+					}
+					narrative_event = { id = hellenic.1015 } #receive "Petrified Tongue of an Oracle" event
+				}
+				10 = {
+					modifier = { factor = 0 religion_openly_in_hellenic_subgroup_trigger = no }
+					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_minor } }
+					modifier = {
+						factor = 0
+						has_artifact = silver_amphora
+					}
+					narrative_event = { id = hellenic.1016 } #receive "Silver Amphora" event
 				}
 			}
 		}

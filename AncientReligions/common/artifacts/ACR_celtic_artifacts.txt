@@ -37,6 +37,7 @@ trident_of_britannia = {
 	flags = { britannic_pagan religious unique combat troops_morale }
 	slot = weapon
 	picture = GFX_strange_chest
+	indestructible = yes
 }
 
 helm_of_britannia = {
@@ -57,6 +58,7 @@ helm_of_britannia = {
 	}
 	flags = { britannic_pagan religious unique combat }
 	slot = crown
+	indestructible = yes
 }
 
 shield_of_britannia = {
@@ -77,6 +79,8 @@ shield_of_britannia = {
 	}
 	flags = { britannic_pagan religious unique combat troops_morale }
 	picture = GFX_strange_chest
+	slot = wrist
+	indestructible = yes
 }
 
 skull_of_brigid = {
@@ -104,6 +108,7 @@ skull_of_brigid = {
 	}
 	flags = { celtic_pagan christian religious saint bodypart head bone unique }
 	picture = GFX_saintly_skull
+	indestructible = yes
 }
 
 horn_of_bran_galed = {
@@ -161,7 +166,7 @@ torque_of_boudicca = {
 	}
 	flags = { celtic_pagan rare neckless jewelry }
 	slot = neck
-	picture = GFX_strange_chest
+	picture = GFX_boudiccas_torque
 }
 
 old_carnyx = {
@@ -205,10 +210,11 @@ horned_helm = {
 		}
 	}
 	flags = { celtic_pagan }
+	picture = GFX_horned_helm
 }
 
 battersea_shield = {
-	quality = 3
+	quality = 2
 	monthly_prestige = 0.1
 	command_modifier = {
 		heavy_infantry = 0.1
@@ -227,4 +233,5 @@ battersea_shield = {
 		}
 	}
 	flags = { celtic_pagan shield }
+	picture = GFX_battersea_shield
 }

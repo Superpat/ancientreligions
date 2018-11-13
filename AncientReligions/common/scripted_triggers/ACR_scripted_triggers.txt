@@ -93,7 +93,7 @@ archdryad_submission_trigger = {
 	AND = {
 		has_character_flag = acr_submit_to_arch_dryad
 		NOT = { had_character_flag = { flag = acr_submit_to_archdryad days = 3650 } }
-	}	
+	}
 }
 
 is_on_nile_trigger = {
@@ -231,6 +231,27 @@ true_religion_celtic_or_reformed_trigger = {
 	}
 }
 
+religion_openly_hellenic_or_reformed_trigger = {
+	OR = {
+		religion = hellenic_pagan
+		religion = hellenic_pagan_reformed
+	}
+}
+
+religion_secretly_hellenic_or_reformed_trigger = {
+	OR = {
+		secret_religion = hellenic_pagan
+		secret_religion = hellenic_pagan_reformed
+	}
+}
+
+true_religion_hellenic_or_reformed_trigger = {
+	OR = {
+		true_religion = hellenic_pagan
+		true_religion = hellenic_pagan_reformed
+	}
+}
+
 religion_openly_in_celtic_subgroup_trigger = {
 	custom_tooltip = {
 		text = religion_openly_celtic_or_reformed_tooltip
@@ -358,7 +379,7 @@ is_depopulated_trigger = {
 		has_province_modifier = depopulated_1
 		has_province_modifier = depopulated_2
 		has_province_modifier = depopulated_3
-	}	
+	}
 }
 
 # character scope, checks if the given character
@@ -369,8 +390,8 @@ is_potential_land_doner_trigger = {
 		holder_scope = { religion = ROOT }
 		is_castle_building_holy_order_trigger = yes
 		ROOT = {
-			NOR = { 
-				has_character_flag = expelled_@PREV 
+			NOR = {
+				has_character_flag = expelled_@PREV
 				any_liege = {
 					has_character_flag = expelled_@PREVPREV
 				}
@@ -399,7 +420,7 @@ has_land_in_celtic_regions_of_interest_trigger = {
 	any_demesne_province = {
 		has_empty_holding = yes
 		is_in_celtic_regions_of_interest_trigger = yes
-	}	
+	}
 }
 
 # province scope
@@ -425,7 +446,7 @@ has_land_in_hellenic_regions_of_interest_trigger = {
 	any_demesne_province = {
 		has_empty_holding = yes
 		is_in_hellenic_regions_of_interest_trigger = yes
-	}	
+	}
 }
 
 # province scope
@@ -452,7 +473,7 @@ has_land_in_egyptian_regions_of_interest_trigger = {
 	any_demesne_province = {
 		has_empty_holding = yes
 		is_in_egyptian_regions_of_interest_trigger = yes
-	}	
+	}
 }
 
 # province scope
@@ -499,7 +520,7 @@ is_castle_building_holy_order_trigger = {
 		title = d_men_of_steel
 		title = d_saint_boudicca
 	}
-		
+
 	holder_scope = {
 		independent = yes
 		wealth = 300
@@ -550,7 +571,7 @@ prev_can_borrow_from_this_holy_order_trigger = {
 					}
 				}
 			}
-		}	
+		}
 	}
 }
 

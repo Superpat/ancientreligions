@@ -4,7 +4,6 @@ true_religion_in_hellenic_subgroup_tooltip;Truly practicing an Ancient Hellenic 
 secret_religion_in_hellenic_subgroup_tooltip;Secretly practicing an Ancient Hellenic religion.;;;;;;;;;;;;;x
 coa_plain_hellenic;Hellenic Coat of Arms;;;;;;;;;;;;;x
 ###### Religion/titles definitions;;;;;;;;;;;;;;x
-GOD_PLUTO;Pluto;Pluton;Pluto;;Pluto;;;;;;;;;x
 GOD_JUNO;Hera;Héra;Hera;;Hera;;;;;;;;;x
 #GOD_VESTA;Vesta;Vesta;Vesta;;Vesta;;;;;;;;;x
 GOD_MINERVA;Athena;Athéna;Athene;;Atenea;;;;;;;;;x
@@ -14,9 +13,6 @@ GOD_VENUS;Aphrodite;Aphrodite;Aphrodite;;Afrodita;;;;;;;;;x
 GOD_MARS;Ares;Arès;Ares;;Ares;;;;;;;;;x
 GOD_MERCURY;Hermes;Hermès;Hermes;;Hermes;;;;;;;;;x
 GOD_JUPITER;Zeus;Zeus;Zeus;;Zeus;;;;;;;;;x
-GOD_NEPTUNE;Neptune;Neptune;Neptun;;Neptuno;;;;;;;;;x
-GOD_VULCAN;Vulcan;Vulcain;Vulcanus;;Vulcano;;;;;;;;;x
-GOD_APOLLO;Apollo;Apollon;Apollon;;Apolo;;;;;;;;;x
 GOD_HECATE;Hecate;;;;;;;;;;;;;x
 THE_THEOGONY;The Theogony;La Théogonie;Die Theogonie;;La Teogonía;;;;;;;;;x
 hellenic_pagan_FEATURES;§Y*§! Can try to reconquer the land of the old Roman Empire from non-pagan rulers.\n§Y*§! Can liberate Italian and Greek provinces from non-pagan rulers.;§Y*§! Peut tenter de recapturer les terres du vieil Empire romain dirigées par des non païens.\n§Y*§! Peut libérer les provinces italiennes et grecques dirigées par des non païens.;;;;;;;;;;;;x
@@ -96,8 +92,6 @@ d_hellenic_pagan_adj;Pontifical;;;;;;;;;;;;;x
 PONTIFEX_MAXIMUS;Pontifex Maximus;Pontifex Maximus;Pontifex Maximus;;Pontifex Maximus;;;;;;;;;x
 PONTIFICA_MAXIMUS;Pontifica Maximus;;;;;;;;;;;;;x
 PONTIFEX_MAXIMUS_FOA;Your Holiness;Sa Sainteté;Eure Heiligkeit;;Su Santidad;;;;;;;;;x
-d_myrmidons;The Myrmidons;;;;;;;;;;;;;x
-d_myrmidons_adj;Myrmidon;;;;;;;;;;;;;x
 ACHILLIARCH;Achilliarch;;;;;;;;;;;;;x
 ACHILLIARCH_FOA;Great Achilliarch;;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x

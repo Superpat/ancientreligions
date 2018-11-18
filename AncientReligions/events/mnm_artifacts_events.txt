@@ -284,7 +284,7 @@ character_event = {
                 modifier = {
                     factor = 0
                     AND = {
-                        religion_openly_in_hellenic_subgroup_trigger
+                        religion_openly_in_hellenic_subgroup_trigger = yes
                         has_artifact = skull_of_alexander
                         has_artifact = alexanders_armor
                         has_artifact = sphinx_claw

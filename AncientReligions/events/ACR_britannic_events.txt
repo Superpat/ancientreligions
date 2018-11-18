@@ -2192,7 +2192,7 @@ character_event = {
 					NOT = { religion = PREV }
 				}
 				NOT = { war_with = ROOT }
-				reverse_opinion = { who = ROOT value = 30 }
+				reverse_opinion = { who = ROOT value = 25 }
 				NOT = { has_character_flag = artifact_from_archdryad_@ROOT }
 			}
 			
@@ -2222,7 +2222,8 @@ letter_event = {
 			hidden_tooltip = {
 				# generate random artifact based on archdryad opinion,
 				# with caps on quality based on britannic MA
-			}
+
+			}	
 		}
 	}
 }
@@ -2522,7 +2523,7 @@ character_event = {
 ##################################################################
 # 
 # Britannic
-# - L· Thumoideachais (baptism)
+# - Lù Thumoideachais (baptism)
 #   britannic.100 - 149 reserved
 #
 ##################################################################
@@ -2725,7 +2726,7 @@ character_event = {
 	}
 }
 
-# l· thumoideachais (immersion day)
+# lù thumoideachais (immersion day)
 long_character_event = {
 	id = britannic.102
 	desc = {
@@ -2785,7 +2786,7 @@ long_character_event = {
 	}
 }
 
-# bad weather on l· thumoideachais
+# bad weather on lù thumoideachais
 long_character_event = {
 	id = britannic.103
 	desc = {

@@ -2,12 +2,12 @@
 #Event/decision/modifier definitions;;;;;;;;;;;;;;x
 ###### Hellenic revival;;;;;;;;;;;;;;x
 nick_the_apostate;the Apostate;;;;;;;;;;;;;x
-opinion_no_hellenic_state_religion;Did not establish a Hellenic state religion;N'a pas choisi l'hellÈnisme comme religion d'Ètat;;;;;;;;;;;;x
-opinion_no_forced_hellenic_state_religion;Did not enforce a Hellenic state religion;N'a pas forcÈ l'hellÈnisme en tant que religion d'Ètat;;;;;;;;;;;;x
-opinion_hellenic_state_religion;Established a Hellenic state religion;A Ètabli l'hellÈnisme comme religion d'Ètat;;;;;;;;;;;;x
-opinion_forced_hellenic_state_religion;Enforced a Hellenic state religion;A forcÈ l'hellÈnisme comme religion d'Ètat;;;;;;;;;;;;x
-opinion_adopted_hellenic_state_religion;Adopted the Hellenic state religion;A adoptÈ l'hellÈnisme d'Ètat;;;;;;;;;;;;x
-opinion_rejected_hellenic_state_religion;Rejected the Hellenic state religion;A rejetÈ l'hellÈnisme d'Ètat;;;;;;;;;;;;x
+opinion_no_hellenic_state_religion;Did not establish a Hellenic state religion;N'a pas choisi l'hellùnisme comme religion d'ùtat;;;;;;;;;;;;x
+opinion_no_forced_hellenic_state_religion;Did not enforce a Hellenic state religion;N'a pas forcù l'hellùnisme en tant que religion d'ùtat;;;;;;;;;;;;x
+opinion_hellenic_state_religion;Established a Hellenic state religion;A ùtabli l'hellùnisme comme religion d'ùtat;;;;;;;;;;;;x
+opinion_forced_hellenic_state_religion;Enforced a Hellenic state religion;A forcù l'hellùnisme comme religion d'ùtat;;;;;;;;;;;;x
+opinion_adopted_hellenic_state_religion;Adopted the Hellenic state religion;A adoptù l'hellùnisme d'ùtat;;;;;;;;;;;;x
+opinion_rejected_hellenic_state_religion;Rejected the Hellenic state religion;A rejetù l'hellùnisme d'ùtat;;;;;;;;;;;;x
 ancrel_streamlined_court;Streamlined Court;;;;;;;;;;;;;x
 ancrel_streamlined_court_desc;This character's court policies have recently been overhauled, streamlining the beaurocracy of the realm and making it more efficient.;;;;;;;;;;;;;x
 ancrel_platonic_curriculum;Neoplatonic Curriculum;;;;;;;;;;;;;x
@@ -35,7 +35,7 @@ hellenic.10.desc;[FromFrom.GetFirstNameWithNick] stands before a stack of papers
 hellenic.12.desc;You are discussing politics with [From.GetBestName] over dinner when he explains the meaning of Plato's Allegory of the Cave, "In the end, we cannot be certain that what we see is real. So, if you wish to sway your vassals opinions, you must take control of the truth." He puts down his fork and thinks a moment. "If you can provide me with a small sum of coin, I can produce and distribute an official Imperial Chronicle, which will... emphasize aspects of recent history such that you're rule is seen in the positive light it deserves.;;;;;;;;;;;;;x
 hellenic.12.a;Tell me more about Plato's wisdom...;;;;;;;;;;;;;x
 hellenic.13.tt;[From.GetFirstNameWithNick] begins work on the chronicle.;;;;;;;;;;;;;x
-hellenic.13.desc;[FromFrom.GetFirstNameWithNick] has completed [FromFrom.GetHerHis] Imperial Chronicle, and it's been distributed throughout the Empire. You can already see the change in your court and vassals. Some hail you as the greatest emperor in a century; even your detractors are saying you could be a worse emperor.;;;;;;;;;;;;;x
+hellenic.13.desc;[FromFrom.GetFirstNameWithNick] has completed [FromFrom.GetHerHis] Imperial Chronicle, and it's been distributed throughout the Empire. You can already see the change in your court and vassals. Some hail you as the greatest emperor in a century. Even your detractors are saying you could be a worse emperor.;;;;;;;;;;;;;x
 hellenic.13.a;Truth is muteable...;;;;;;;;;;;;;x
 hellenic.15.desc;[From.GetTitledFirstName] is advising you on an issue at court when he becomes quiet. After a pensive moment he speaks, "My [Root.GetTitle], I believe the root of this issue lies with the complexity in the rules of the court. The beaurocracy has become quite tangled. If you give me some time, I can come up with a revised structure and set of codes to streamline the court. It will require political capital to inact, however.";;;;;;;;;;;;;x
 hellenic.15.a;If it frees me from these petty issues, do it!;;;;;;;;;;;;;x
@@ -72,36 +72,36 @@ hellenic.29.a;Your words ring true, old friend. Now is the time...;;;;;;;;;;;;;x
 hellenic.29.b;I tolerate your faith, my friend, but I cannot follow it.;;;;;;;;;;;;;x
 hellenic.29.c;You are right, yet again. However, we should proceed discretely...;;;;;;;;;;;;;x
 hellenic.29.d;Heathen! Be gone from my sight!;;;;;;;;;;;;;x
-hellenic.36.title;The Sacred Band Founded;La Bande SacrÈe FondÈe;The Sacred Band Founded;;The Sacred Band Founded;;;;;;;;;x
-hellenic.36.desc;We have founded the Sacred Band, a closed brotherhood of soldiers whose iron discipline shall defend Hellenic believers everywhere.;Nous avons fondÈ la Bande SacrÈe, une fraternitÈ de soldats triÈs sur le volet dont la discipline de fer viendra ‡ la dÈfense des disciples hellÈniques o˘ qu'ils soient.;We have founded the Sacred Band, a closed brotherhood of soldiers whose iron discipline shall defend Hellenic believers everywhere.;;We have founded the Sacred Band, a closed brotherhood of soldiers whose iron discipline shall defend Hellenic believers everywhere.;;;;;;;;;x
+hellenic.36.title;The Sacred Band Founded;La Bande Sacrùe Fondùe;The Sacred Band Founded;;The Sacred Band Founded;;;;;;;;;x
+hellenic.36.desc;We have founded the Sacred Band, a closed brotherhood of soldiers whose iron discipline shall defend Hellenic believers everywhere.;Nous avons fondù la Bande Sacrùe, une fraternitù de soldats triùs sur le volet dont la discipline de fer viendra ù la dùfense des disciples hellùniques où qu'ils soient.;We have founded the Sacred Band, a closed brotherhood of soldiers whose iron discipline shall defend Hellenic believers everywhere.;;We have founded the Sacred Band, a closed brotherhood of soldiers whose iron discipline shall defend Hellenic believers everywhere.;;;;;;;;;x
 hellenic.36.a;Excellent...;;;;;;;;;;;;;x
-hellenic.37.title;The Sacred Band;La Bande SacrÈe;The Sacred Band Founded;;The Sacred Band Founded;;;;;;;;;x
-hellenic.37.desc;The Sacred Band are a brotherhood of soldiers noted for their stalwart discipline and unwavering resolution who have sworn to never rest until the Gods of Olympus are granted the respect they are due.;La Bande SacrÈe est une fraternitÈ de soldats connus pour leur discipline, leur loyautÈ et leur dÈtermination sans faille, qui ont fait le serment de ne jamais trouver le repos jusqu'‡ ce que les Dieulx de l'Olympe reÁoivent le respect qu'ils mÈritent.;The Sacred Band are a brotherhood of soldiers noted for their stalwart discipline and unwavering resolution who have sworn to never rest until the Gods of Olympus are granted the respect they are due.;;The Sacred Band are a brotherhood of soldiers noted for their stalwart discipline and unwavering resolution who have sworn to never rest until the Gods of Olympus are granted the respect they are due.;;;;;;;;;x
+hellenic.37.title;The Sacred Band;La Bande Sacrùe;The Sacred Band Founded;;The Sacred Band Founded;;;;;;;;;x
+hellenic.37.desc;The Sacred Band are a brotherhood of soldiers noted for their stalwart discipline and unwavering resolution who have sworn to never rest until the Gods of Olympus are granted the respect they are due.;La Bande Sacrùe est une fraternitù de soldats connus pour leur discipline, leur loyautù et leur dùtermination sans faille, qui ont fait le serment de ne jamais trouver le repos jusqu'ù ce que les Dieulx de l'Olympe reùoivent le respect qu'ils mùritent.;The Sacred Band are a brotherhood of soldiers noted for their stalwart discipline and unwavering resolution who have sworn to never rest until the Gods of Olympus are granted the respect they are due.;;The Sacred Band are a brotherhood of soldiers noted for their stalwart discipline and unwavering resolution who have sworn to never rest until the Gods of Olympus are granted the respect they are due.;;;;;;;;;x
 hellenic.37.a;Very good!;;;;;;;;;;;;;x
 hellenic.37.b;This is grave news...;;;;;;;;;;;;;x
 hellenic.51.title;Myrmidons;;;;;;;;;;;;x
 hellenic.51.desc;In Greece the ancient faith of the Hellenes is experiencing a revival, one that is gaining strength. Thessalonike, the homeland of the hero Achilles, now firmly follows this religion. Inspired by the Epics and ready to adventure out into the world, a band of young men have begun calling themselves Myrmidons, rallying around their [From.GetRulerTitle], [From.GetDynName].;;;;;;;;;;;;x
 hellenic.51.a;Disturbing...;;;;;;;;;;;;x
 hellenic.51.b;May [Root.GetRandomGodName] watch their paths.;;;;;;;;;;;;x
-hellenic.101.desc;As you are sitting down to dinner, your [Root.GetLordSpiritualName] comes up to you and tells you that [From.GetBestName] has strayed from the true faith. Claiming to have found enlightenment in the classical texts of ancient Rome and Greece, [From.GetSheHeCap] has forsaken [Root.Religion.GetRandomGodName] and professed [From.GetHerHis] devotion to [From.Religion.GetRandomGodName].;Alors que vous vous asseyez pour dÓner, votre [Root.GetLordSpiritualName] s'approche et vous explique que [From.GetBestName] s'est ÈcartÈ de la vraie foi. PrÈtendant avoir trouvÈ l'illumination dans les textes classiques de la Rome et GrËce antique, [From.GetSheHe] a dÈlaissÈ [Root.Religion.GetRandomGodName] et proclamÈ sa dÈvotion ‡ [From.Religion.GetRandomGodName].;;;;;;;;;;;;x
+hellenic.101.desc;As you are sitting down to dinner, your [Root.GetLordSpiritualName] comes up to you and tells you that [From.GetBestName] has strayed from the true faith. Claiming to have found enlightenment in the classical texts of ancient Rome and Greece, [From.GetSheHeCap] has forsaken [Root.Religion.GetRandomGodName] and professed [From.GetHerHis] devotion to [From.Religion.GetRandomGodName].;Alors que vous vous asseyez pour dùner, votre [Root.GetLordSpiritualName] s'approche et vous explique que [From.GetBestName] s'est ùcartù de la vraie foi. Prùtendant avoir trouvù l'illumination dans les textes classiques de la Rome et Grùce antique, [From.GetSheHe] a dùlaissù [Root.Religion.GetRandomGodName] et proclamù sa dùvotion ù [From.Religion.GetRandomGodName].;;;;;;;;;;;;x
 hellenic.101.a;My [From.GetSonDaughter] did WHAT?;[From.GetSonDaughter] a fait QUOI ?;;;;;;;;;;;;x
 hellenic.101.b;[From.GetSheHeCap] did WHAT?;[From.GetSheHe] a fait QUOI ?;;;;;;;;;;;;x
 hellenic.101.c;Tell him I'd like to know more about these ancient gods.;;;;;;;;;;;;x
-hellenic.102.desc;With the restoration of the religious institutions of old, you have the opportunity to re-establish the old imperial state religion once again, but your Christian vassals are not likely to appreciate such a decree.;Suite ‡ la restauration des institutions religieuses du passÈ, vous avez l'opportunitÈ de rÈtablir l'ancienne religion impÈriale ‡ nouveau, mais vos vassaux chrÈtiens ne vont probablement pas apprÈcier un tel dÈcret.;;;;;;;;;;;;x
+hellenic.102.desc;With the restoration of the religious institutions of old, you have the opportunity to re-establish the old imperial state religion once again, but your Christian vassals are not likely to appreciate such a decree.;Suite ù la restauration des institutions religieuses du passù, vous avez l'opportunitù de rùtablir l'ancienne religion impùriale ù nouveau, mais vos vassaux chrùtiens ne vont probablement pas apprùcier un tel dùcret.;;;;;;;;;;;;x
 hellenic.102.a;We must restore the glory of the old faith!;Nous devons restaurer la gloire de foi antique !;;;;;;;;;;;;x
-EVTTOOLTIPAhellenic.102;Parts of the Empire will convert to the re-established imperial state religion.\n;Des parties de l'Empire vont se convertir ‡ la religion impÈriale rÈtablie.\n;;;;;;;;;;;;x
+EVTTOOLTIPAhellenic.102;Parts of the Empire will convert to the re-established imperial state religion.\n;Des parties de l'Empire vont se convertir ù la religion impùriale rùtablie.\n;;;;;;;;;;;;x
 hellenic.102.b;Let my vassals choose their own faith.;Laissons me vassaux choisir leur propre foi.;;;;;;;;;;;;x
 hellenic.103.desc;[From.GetTitledName] has endeavored to restore the ancient faith to the Empire, and demands that you convert.;[From.GetTitledName] s'efforce de restaurer la foi antique de l'Empire, et exige votre conversion.;;;;;;;;;;;;x
-hellenic.103.a;Glory to [From.Religion.GetRandomGodName] and the Empire!;Gloire ‡ [From.Religion.GetRandomGodName] et ‡ l'Empire !;;;;;;;;;;;;x
-hellenic.103.b;May [Root.Religion.GetRandomGodName] protect us.;Que [Root.Religion.GetRandomGodName] nous protËge.;;;;;;;;;;;;x
+hellenic.103.a;Glory to [From.Religion.GetRandomGodName] and the Empire!;Gloire ù [From.Religion.GetRandomGodName] et ù l'Empire !;;;;;;;;;;;;x
+hellenic.103.b;May [Root.Religion.GetRandomGodName] protect us.;Que [Root.Religion.GetRandomGodName] nous protùge.;;;;;;;;;;;;x
 ###### Pontifex Maximus;;;;;;;;;;;;;;x
 pontifex_restored;Pontificate Restored;;;;;;;;;;;;;x
 recreate_pontificate;Restore the Pontificate Maxima;;;;;;;;;;;;;x
 recreate_pontificate_desc;Restore the priesthood of the Hellenic faith and declare yourself the Pontifex Maximus!;;;;;;;;;;;;;x
 hellenic.104.title;Return of the Pontificate Maxima;;;;;;;;;;;;;x
 hellenic.104.desc;After an interlude lasting a few centuries following the adoption of Christianity in Rome, Hellenism has returned as the state religion of [From.PrimaryTitle.GetName] and [From.GetTitledFirstName] has ordered the reinstitution of the Collegium Pontificum.\n\nThe Pontificate Maxima will serve as the highest religious authority in the Hellenic world, with powers ranging from the blessing of future military expeditions to the nomination of Vestals and flamens.;;;;;;;;;;;;;x
-hellenic.104.a;Rejoice!;RÈjouissons-nous !;Frohlocket!;;°Regocijaos!;;;;;;;;;x
-hellenic.104.b;Heathens!;PaÔens !;Ketzer!;;°Paganos!;;;;;;;;;x
+hellenic.104.a;Rejoice!;Rùjouissons-nous !;Frohlocket!;;ùRegocijaos!;;;;;;;;;x
+hellenic.104.b;Heathens!;Paùens !;Ketzer!;;ùPaganos!;;;;;;;;;x
 ###### Mani Penninsula;;;;;;;;;;;;;;x
 hellenic.105.desc;You have heard rumours about a group of Hellenic peasants on the Mani Penninsula who continue to practice their old ways. There is much debate at court on how large that group is, and how much their practices may have evolved since the old times...;;;;;;;;;;;;;x
 hellenic.105.a;This is an opportunity to better know my realm.;;;;;;;;;;;;;x
@@ -119,37 +119,37 @@ EVTTITLEhellenic.109;The Rise of the Hellenic Faith;;;;;;;;;;;;;x
 hellenic.109.desc;Secret adherents to the ancient beliefs of the Greek and Roman people have been coming forward in droves. Holding onto the ancient customs of Rome and led by a Centurio, they refer to themselves as the Hellenic Legion. Sworn to push back the tide of the Sons of Abraham, these zealots are prepared to be the sword arm of a new Hellenism.;;;;;;;;;;;;;x
 hellenic.109.a;Interesting...;;;;;;;;;;;;;x
 ###### Roman revival;;;;;;;;;;;;;;x
-was_refused_roman_revival;Roman revival refused;S'est vu refusÈ la renaissance romaine;;;;;;;;;;;;x
-was_allowed_roman_revival;Roman revival allowed;S'est vu autorisÈ la renaissance romaine;;;;;;;;;;;;x
-refused_roman_revival;Refused Roman revival;A refusÈ la renaissance romaine;;;;;;;;;;;;x
-allowed_roman_revival;Allowed Roman revival;A autorisÈ la renaissance romaine;;;;;;;;;;;;x
-hellenic.152.desc;As you are holding court, [From.GetTitledFirstName] approaches you with a petition supported by several prominent burghers in [From.PrimaryTitle.GetName], asking for your permission to restore the rights and customs befitting citizens of a Roman city.;Tandis que vous recevez la cour, [From.GetTitledFirstName] vous approche avec une pÈtition signÈe par plusieurs citoyens Èminents de [From.PrimaryTitle.GetName], demandant la permission de restaurer les droits et coutumes convenant aux citoyens d'une ville romaine.;;;;;;;;;;;;x
+was_refused_roman_revival;Roman revival refused;S'est vu refusù la renaissance romaine;;;;;;;;;;;;x
+was_allowed_roman_revival;Roman revival allowed;S'est vu autorisù la renaissance romaine;;;;;;;;;;;;x
+refused_roman_revival;Refused Roman revival;A refusù la renaissance romaine;;;;;;;;;;;;x
+allowed_roman_revival;Allowed Roman revival;A autorisù la renaissance romaine;;;;;;;;;;;;x
+hellenic.152.desc;As you are holding court, [From.GetTitledFirstName] approaches you with a petition supported by several prominent burghers in [From.PrimaryTitle.GetName], asking for your permission to restore the rights and customs befitting citizens of a Roman city.;Tandis que vous recevez la cour, [From.GetTitledFirstName] vous approche avec une pùtition signùe par plusieurs citoyens ùminents de [From.PrimaryTitle.GetName], demandant la permission de restaurer les droits et coutumes convenant aux citoyens d'une ville romaine.;;;;;;;;;;;;x
 hellenic.152.a;Of course, Roman customs are far superior to [From.Capital.Culture.GetName]!;Bien sur, les coutumes romaines sont bien meilleures que [From.Capital.Culture.GetName] !;;;;;;;;;;;;x
-hellenic.152.b;If that is the will of the people, so be it.;Si c'est le volontÈ du peuple, qu'il en soit ainsi.;;;;;;;;;;;;x
-hellenic.152.c;No, [Root.Culture.GetName] customs are superior and should be maintained!;Non, les coutumes [Root.Culture.GetName] sont meilleures et doivent Ítre conservÈes !;;;;;;;;;;;;x
+hellenic.152.b;If that is the will of the people, so be it.;Si c'est le volontù du peuple, qu'il en soit ainsi.;;;;;;;;;;;;x
+hellenic.152.c;No, [Root.Culture.GetName] customs are superior and should be maintained!;Non, les coutumes [Root.Culture.GetName] sont meilleures et doivent ùtre conservùes !;;;;;;;;;;;;x
 hellenic.152.d;No, I will not have any walking relics in my realm!;Non, je ne veut pas de reliques vivantes sur mon domaine !;;;;;;;;;;;;x
-hellenic.153.a;An excellence idea, let's get started immediately!;Une excellente idÈe, commenÁons immÈdiatement !;;;;;;;;;;;;x
+hellenic.153.a;An excellence idea, let's get started immediately!;Une excellente idùe, commenùons immùdiatement !;;;;;;;;;;;;x
 hellenic.153.b;You'll have my permission;Vous aurez ma permission.;;;;;;;;;;;;x
-hellenic.154.desc;[From.GetTitledFirstName] has approved the petition of [From.From.GetTitledFirstName] and allowed the burghers in [From.From.PrimaryTitle.GetName] to restore the rights and customs they think befitting citizens of a Roman city.;[From.GetTitledFirstName] a approuvÈ la pÈtition de [From.From.GetTitledFirstName] et autorisÈ les citoyens de [From.From.PrimaryTitle.GetName] ‡ restaurer les droits et coutumes qu'ils pensent convenables pour des citoyens d'une ville romaine.;;;;;;;;;;;;x
+hellenic.154.desc;[From.GetTitledFirstName] has approved the petition of [From.From.GetTitledFirstName] and allowed the burghers in [From.From.PrimaryTitle.GetName] to restore the rights and customs they think befitting citizens of a Roman city.;[From.GetTitledFirstName] a approuvù la pùtition de [From.From.GetTitledFirstName] et autorisù les citoyens de [From.From.PrimaryTitle.GetName] ù restaurer les droits et coutumes qu'ils pensent convenables pour des citoyens d'une ville romaine.;;;;;;;;;;;;x
 hellenic.154.a;Excelent, let's get started immediately!;Excellent, mettons nous au travail tout de suite !;;;;;;;;;;;;x
 hellenic.154.b;Good for them, I guess...;C'est bon pour eux, je suppose...;;;;;;;;;;;;x
 hellenic.154.c;Great news!;Excellente nouvelle !;;;;;;;;;;;;x
-hellenic.156.desc;The burghers in [From.From.PrimaryTitle.GetName] have chosen to restore most customs practiced in old Roman times. With time, Roman culture may spread to the whole province.;Les citoyens de [From.From.PrimaryTitle.GetName] ont choisi de restaurer la plupart des coutumes pratiquÈes au temps de la Rome antique. Avec du temps, la culture romaine pourrait se propager ‡ toute la province.;;;;;;;;;;;;x
-hellenic.156.a;Perhaps I should do the same;Peut Ítre je devrais faire de mÍme;;;;;;;;;;;;x
-hellenic.158.desc;With the restoration of Roman customs in [From.PrimaryTitle.GetName] the populace in [From.Capital.GetName] have embraced Roman culture.;Suite a la restauration de la culture romaine ‡ [From.PrimaryTitle.GetName], la population de [From.Capital.GetName] a adoptÈ la culture romaine.;;;;;;;;;;;;x
+hellenic.156.desc;The burghers in [From.From.PrimaryTitle.GetName] have chosen to restore most customs practiced in old Roman times. With time, Roman culture may spread to the whole province.;Les citoyens de [From.From.PrimaryTitle.GetName] ont choisi de restaurer la plupart des coutumes pratiquùes au temps de la Rome antique. Avec du temps, la culture romaine pourrait se propager ù toute la province.;;;;;;;;;;;;x
+hellenic.156.a;Perhaps I should do the same;Peut ùtre je devrais faire de mùme;;;;;;;;;;;;x
+hellenic.158.desc;With the restoration of Roman customs in [From.PrimaryTitle.GetName] the populace in [From.Capital.GetName] have embraced Roman culture.;Suite a la restauration de la culture romaine ù [From.PrimaryTitle.GetName], la population de [From.Capital.GetName] a adoptù la culture romaine.;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
-hellenic.110.desc;Without the Flaminica Dialis to assist you in your duties, the ancient religious laws require that you retire.;Sans la Flaminica Dialis pour vous assister dans vos fonctions, la loi religieuse antique exige que vous dÈmissionniez.;;;;;;;;;;;;x
-hellenic.111.desc;Without the Flaminica Martialis to assist you in your duties, the ancient religious laws require that you retire.;Sans la Flaminica Martialis pour vous assister dans vos fonctions, la loi religieuse antique exige que vous dÈmissionniez.;;;;;;;;;;;;x
-hellenic.112.desc;Without the Flaminica Quirinalis to assist you in your duties, the ancient religious laws require that you retire.;Sans la Flaminica Quirinalis pour vous assister  dans vos fonctions, la loi religieuse antique exige que vous dÈmissionniez.;;;;;;;;;;;;x
+hellenic.110.desc;Without the Flaminica Dialis to assist you in your duties, the ancient religious laws require that you retire.;Sans la Flaminica Dialis pour vous assister dans vos fonctions, la loi religieuse antique exige que vous dùmissionniez.;;;;;;;;;;;;x
+hellenic.111.desc;Without the Flaminica Martialis to assist you in your duties, the ancient religious laws require that you retire.;Sans la Flaminica Martialis pour vous assister dans vos fonctions, la loi religieuse antique exige que vous dùmissionniez.;;;;;;;;;;;;x
+hellenic.112.desc;Without the Flaminica Quirinalis to assist you in your duties, the ancient religious laws require that you retire.;Sans la Flaminica Quirinalis pour vous assister  dans vos fonctions, la loi religieuse antique exige que vous dùmissionniez.;;;;;;;;;;;;x
 #;;;;;;;;;;;;;;x
 nominate_vestalis_decision;Nominate [Root.GetTitledFirstName] as Vestalis;Nommer [Root.GetTitledFirstName] en tant que Vestale;;;;;;;;;;;;x
 nominate_vestalis_decision_desc;Nominate [Root.GetFirstName] for 30 years of dedicated service to the goddess Vesta. If accepted, she will abandon all claims at temporal power.;Nommer [Root.GetFirstName] pour 30 ans au service de Vesta.;;;;;;;;;;;;x
-opinion_nominated_vestalis;Nominated a Vestalis;A nommÈ une Vestale;;;;;;;;;;;;x
-hellenic.121.desc;After 30 years of devoted service to Vesta the time has come for you to retire from public office.;AprËs 30 ans dÈvouÈs au service de Vesta, le moment est venu pour vous de vous retirer de votre fonction publique.;;;;;;;;;;;;x
-hellenic.124.desc;One of your vassals has nominated a child for service to Vesta.;L'un de vos vassaux a nommÈ un enfant au service de Vesta;;;;;;;;;;;;x
+opinion_nominated_vestalis;Nominated a Vestalis;A nommù une Vestale;;;;;;;;;;;;x
+hellenic.121.desc;After 30 years of devoted service to Vesta the time has come for you to retire from public office.;Aprùs 30 ans dùvouùs au service de Vesta, le moment est venu pour vous de vous retirer de votre fonction publique.;;;;;;;;;;;;x
+hellenic.124.desc;One of your vassals has nominated a child for service to Vesta.;L'un de vos vassaux a nommù un enfant au service de Vesta;;;;;;;;;;;;x
 hellenic.124.a;Appoint her as Vestalis;La nommer en tant que Vestale;;;;;;;;;;;;x
 hellenic.124.b;I can find someone better;Vous pouvez trouver mieux.;Ich kann einen Besseren finden;;Puedo hallar a alguien mejor;;;;;;;;;x
-hellenic.124.c;I'm afraid there is no opening in the College of the Vestales.;Il n'y a malheureusement pas de poste libre dans le CollËge des Vestales.;;;;;;;;;;;;x
+hellenic.124.c;I'm afraid there is no opening in the College of the Vestales.;Il n'y a malheureusement pas de poste libre dans le Collùge des Vestales.;;;;;;;;;;;;x
 hellenic.240.desc;A local Augur has come to your court to perform a public Auguria, the ceremony is held in a plain outside the castle walls and while approaching clouds make you worrisome, the Augur will not postpone it. After observing the entrails of many sacrifices, the Augur is about to proclaim the will of the gods when a bolt of lightning strikes him violently!;;;;;;;;;;;;;x
 hellenic.240.a;It seems the gods spoke for themselves;;;;;;;;;;;;;x
 hellenic.240.b;Am I next?;;;;;;;;;;;;;x

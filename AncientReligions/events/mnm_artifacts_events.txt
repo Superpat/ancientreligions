@@ -56,7 +56,7 @@ character_event = {
 			#religion = hellenic_pagan
 		}
 	}
-
+ 
 	immediate = {
 		random_courtier_or_vassal = {
 			limit = {

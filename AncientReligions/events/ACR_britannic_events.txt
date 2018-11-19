@@ -2140,7 +2140,6 @@ character_event = {
 	min_age = 16
 	only_playable = yes
 	war = no
-	has_global_flag = ancrel_debug_dryad_artifact
 	
 	trigger = {
 		controls_religion = yes	
@@ -2223,6 +2222,84 @@ letter_event = {
 				# generate random artifact based on archdryad opinion,
 				# with caps on quality based on britannic MA
 
+				random_list = {
+					50 = {
+						modifier = {
+							factor = 0
+							OR = {
+								religion_authority < 80
+								reverse_opinion = {
+									who = FROM
+									value < 75
+								}
+								AND = {
+									has_artifact = silver_hand_of_nuada
+									has_artifact = trident_of_britannia
+									has_artifact = helm_of_britannia
+									has_artifact = shield_of_britannia
+								}
+							}
+						}
+						FROM = {
+							give_random_tier_5_artifact_to_prev_effect = yes
+						}
+					}
+					40 = {
+						modifier = {
+							factor = 0
+							OR = {
+								religion_authority < 60
+								reverse_opinion = {
+									who = FROM
+									value < 50
+								}
+								AND = {
+									has_artifact = skull_of_brigid
+									has_artifact = horn_of_bran_galed
+								}
+							}
+						}
+						FROM = {
+							give_random_tier_4_artifact_to_prev_effect = yes
+						}
+					}
+					30 = {
+						modifier = {
+							factor = 0
+							OR = {
+								religion_authority < 40
+								AND = {
+									has_artifact = tusk_of_torc_triath
+								}
+							}
+						}
+						FROM = {
+							give_random_tier_3_artifact_to_prev_effect = yes
+						}
+					}
+					20 = {
+						modifier = {
+							factor = 0
+							OR = {
+								religion_authority < 25
+								AND = {
+									has_artifact = torque_of_boudicca
+									has_artifact = old_carnyx
+									has_artifact = horned_helm
+									has_artifact = battersea_shield
+								}
+							}
+						}
+						FROM = {
+							give_random_tier_2_artifact_to_prev_effect = yes
+						}
+					}
+					10 = {
+						FROM = {
+							give_random_tier_1_artifact_to_prev_effect = yes
+						}
+					}
+				}
 			}	
 		}
 	}
@@ -2236,6 +2313,7 @@ character_event = {
 	min_age = 16
 	only_playable = yes
 	war = no
+	has_dlc = "Mystics"
 	
 	trigger = {
 		controls_religion = yes	

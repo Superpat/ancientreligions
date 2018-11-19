@@ -814,3 +814,122 @@ move_temple_obligations_toward_balanced_effect = {
 		add_law = tax_levy_law_theocracy_7
 	}
 }
+
+give_random_tier_5_artifact_to_prev_effect = {
+	random_list = {
+		25 = {
+			add_artifact = silver_hand_of_nuada
+		}
+		25 = {
+			add_artifact = trident_of_britannia
+		}
+		25 = {
+			add_artifact = helm_of_britannia
+		}
+		25 = {
+			add_artifact = shield_of_britannia
+		}
+	}
+
+	new_artifact = {
+		set_creation_date = 1.1.1
+		transfer_artifact = {
+			from = THIS
+			to = PREV
+		}
+	}
+}
+
+give_random_tier_4_artifact_to_prev_effect = {
+	random_list = {
+		50 = {
+			add_artifact = skull_of_brigid
+		}
+		50 = {
+			add_artifact = horn_of_bran_galed
+		}
+	}
+
+	new_artifact = {
+		set_creation_date = 1.1.1
+		transfer_artifact = {
+			from = THIS
+			to = PREV
+		}
+	}
+}
+
+give_random_tier_3_artifact_to_prev_effect = {
+	random_list = {
+		25 = {
+			add_artifact = tusk_of_torc_triath
+		}
+	}
+	
+	new_artifact = {
+		set_creation_date = 1.1.1
+		transfer_artifact = {
+			from = THIS
+			to = PREV
+		}
+	}
+}
+
+give_random_tier_2_artifact_to_prev_effect = {
+	random_list = {
+		25 = {
+			add_artifact = torque_of_boudicca
+		}
+		25 = {
+			add_artifact = old_carnyx
+		}
+		25 = {
+			add_artifact = horned_helm
+		}
+		25 = {
+			add_artifact = battersea_shield
+		}
+	}
+	
+	new_artifact = {
+		set_creation_date = 1.1.1
+		transfer_artifact = {
+			from = THIS
+			to = PREV
+		}
+	}
+}
+
+give_random_tier_1_artifact_to_prev_effect = {
+	random_list = {
+		10 = {
+			add_artifact = famous_tongue
+		}
+		10 = {
+			add_artifact = famous_head
+		}
+		10 = {
+			add_artifact = infamous_tongue
+		}
+		10 = {
+			add_artifact = famous_hand
+		}
+		10 = {
+			add_artifact = famous_arm
+		}
+		10 = {
+			add_artifact = famous_foot
+		}
+		10 = {
+			add_artifact = famous_ancient_weapon
+		}
+	}
+
+	new_artifact = {
+		set_creation_date = 1.1.1
+		transfer_artifact = {
+			from = PREV
+			to = PREVPREV
+		}
+	}
+}

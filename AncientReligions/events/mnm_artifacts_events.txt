@@ -185,8 +185,8 @@ character_event = {
                         religion = hellenic_pagan
                         has_artifact = nimean_lion_skin
                         has_artifact = kronium
-                        has_artifact = ceasars_robe
-                        has_artifact = aeon_feather
+                        has_artifact = caesars_robe
+                        has_artifact = aethons_feather
                     }
                 }
                 modifier = {
@@ -1872,22 +1872,22 @@ character_event = {
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
 					modifier = {
 						factor = 0
-						has_artifact = ceasars_robe
+						has_artifact = caesars_robe
 					}
-					narrative_event = { id = hellenic.1002 } #receive "Bloody Robe of Ceasar" event
+					narrative_event = { id = hellenic.1002 } #receive "Bloody Robe of Caesar" event
 				}
 				10 = {
 					modifier = {
                         factor = 0
                         religion_openly_in_hellenic_subgroup_trigger = no
-                        religon = promethean_pagan # prometheans don't like Aeon
+                        religon = promethean_pagan # prometheans don't like aethon
                     }
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
 					modifier = {
 						factor = 0
-						has_artifact = aeon_feather
+						has_artifact = aethons_feather
 					}
-					narrative_event = { id = hellenic.1003 } #receive "Aeon's Feather" event
+					narrative_event = { id = hellenic.1003 } #receive "aethon's Feather" event
 				}
 				10 = {
 					modifier = { factor = 0 religion_openly_hellenic_or_reformed_trigger = no }

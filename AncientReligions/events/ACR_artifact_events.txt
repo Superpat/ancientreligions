@@ -1314,7 +1314,7 @@ character_event = {
 	after = { clr_artifact_flagsmodifiers_effect = yes }
 }
 
-# Bloody Robe of Ceasar
+# Bloody Robe of Caesar
 #Quality 5
 character_event = {
 	id = hellenic.1002
@@ -1334,7 +1334,7 @@ character_event = {
 			modifier = opinion_extremely_disappointed
 			years = 20
 		}
-		add_artifact = ceasars_robe
+		add_artifact = caesars_robe
 		new_artifact = {
 			set_creation_date = 1.1.1
 		}
@@ -1359,7 +1359,7 @@ character_event = {
 			min = 50
 		}
 
-		add_artifact = ceasars_robe
+		add_artifact = caesars_robe
 		new_artifact = {
 			set_creation_date = 1.1.1
 		}
@@ -1379,7 +1379,7 @@ character_event = {
 			years = 15
 		}
 		reverse_add_favor = FROM
-		add_artifact = ceasars_robe
+		add_artifact = caesars_robe
 		new_artifact = {
 			set_creation_date = 1.1.1
 		}
@@ -1406,7 +1406,7 @@ character_event = {
 			chance = 20
 			add_friend = FROM
 		}
-		add_artifact = ceasars_robe
+		add_artifact = caesars_robe
 		new_artifact = {
 			set_creation_date = 1.1.1
 		}

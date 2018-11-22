@@ -2,33 +2,12 @@
 
 skull_of_brigid = {
 	max_amount = 1
-	spawn_date = -1.1.1
-
-	spawn_chance = {
-		value = 100
-		modifier = {
-			factor = 0
-			NOT = {
-
-			}
-		}
-	}
-
-	weight = {
-		value = 0
-		additive_modifier = {
-			value = 100
-
-			primary_title = {
-				title = b_st_brigit
-			}
-		}
-	}
+	spawn_date = 1.1.1
 }
 
 torque_of_boudicca = {
 	max_amount = 3
-	spawn_date = 1.1.60
+	spawn_date = 1.1.1
 
 	spawn_chance = {
 		value = 5

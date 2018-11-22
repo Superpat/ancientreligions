@@ -46,7 +46,7 @@ kronium = {
 	indestructible = yes
 }
 
-ceasars_robe = {
+caesars_robe = {
     quality = 5
     monthly_piety = 0.5
     short_reign_length = -5
@@ -70,7 +70,7 @@ ceasars_robe = {
 	indestructible = yes
 }
 
-aeons_feather = {
+aethons_feather = {
     quality = 5
     monthly_prestige = 1
     monthly_piety = 0.5
@@ -151,6 +151,7 @@ odysseus_bow = {
     }
     active = {
         religion_openly_in_hellenic_subgroup_trigger = yes
+        is_strong_trigger = yes
     }
     stacking = no
     allowed_gift = {

@@ -3047,7 +3047,10 @@ defined_text = {
 	text = {
 		localisation_key = String_saint
 		trigger = {
-			religion_group = christian
+			OR = {
+				religion_group = christian
+				religion = britannic_pagan
+			}
 		}
 	}
 	text = {
@@ -3065,6 +3068,7 @@ defined_text = {
 		localisation_key = String_great_hero
 		trigger = {
 			religion_group = pagan_group
+			NOT = { religion = britannic_pagan }
 		}
 	}
 }
@@ -3074,7 +3078,10 @@ defined_text = {
 	text = {
 		localisation_key = String_Saint_cap
 		trigger = {
-			religion_group = christian
+						OR = {
+				religion_group = christian
+				religion = britannic_pagan
+			}
 		}
 	}
 	text = {
@@ -3092,6 +3099,7 @@ defined_text = {
 		localisation_key = String_Great_Hero_cap
 		trigger = {
 			religion_group = pagan_group
+			NOT = { religion = britannic_pagan }
 		}
 	}
 }

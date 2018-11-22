@@ -347,4 +347,5 @@ achilles_shield_piece = {
         religion_openly_in_hellenic_subgroup_trigger = yes
     }
     flags = { religious hellenic_pagan troops_morale }
+    picture = GFX_strange_chest
 }

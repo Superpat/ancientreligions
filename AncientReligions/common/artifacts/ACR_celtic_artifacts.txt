@@ -58,6 +58,7 @@ helm_of_britannia = {
 	}
 	flags = { britannic_pagan religious unique combat }
 	slot = crown
+    picture = GFX_strange_chest
 	indestructible = yes
 }
 

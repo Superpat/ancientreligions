@@ -40,6 +40,10 @@ spriteTypes = {
 		name = "GFX_hold_sed_festival"
 		texturefile = "gfx\\interface\ACR\decision_icon_restore_luxor.dds" #Placeholder
 	}
+	spriteType = {
+		name = "GFX_organize_burning_blades"
+		texturefile = "gfx\\interface\ACR\decision_icon_organize_burning_blades.dds"
+	}
 
 	#Event pictures
 	spriteType = {

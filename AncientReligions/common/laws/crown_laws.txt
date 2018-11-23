@@ -139,6 +139,7 @@ de_jure_laws = {
 							NOT = { religion_group = pagan_group }
 							is_reformed_religion = yes
 							religion = bon
+							religion = bon_reformed
 						}
 					}
 				}
@@ -228,6 +229,7 @@ de_jure_laws = {
 							NOT = { religion_group = pagan_group }
 							is_reformed_religion = yes
 							religion = bon
+							religion = bon_reformed
 						}
 					}
 				}
@@ -279,6 +281,7 @@ de_jure_laws = {
 				}
 			}
 		}
+		
 		effect = {
 		
 			hidden_tooltip = {
@@ -318,6 +321,7 @@ de_jure_laws = {
 							NOT = { religion_group = pagan_group }
 							is_reformed_religion = yes
 							religion = bon
+							religion = bon_reformed
 						}
 					}
 				}
@@ -366,6 +370,7 @@ de_jure_laws = {
 				}
 			}
 		}
+		
 		effect = {
 			hidden_tooltip = {
 				revoke_law = crown_authority_0
@@ -402,6 +407,11 @@ de_jure_laws = {
 				}
 				is_tribal = no
 				is_nomadic = no
+				NOT = {
+					rightful_religious_head_scope = {
+						character = ROOT
+					}
+				}
 			}
 		}
 		allow = {
@@ -440,8 +450,16 @@ de_jure_laws = {
 				}
 				is_tribal = no
 				is_nomadic = no
+				NOT = {
+					rightful_religious_head_scope = {
+						character = ROOT
+					}
+				}
 			}
-		}		
+		}
+		allow = {
+			holy_order = no
+		}			
 		ai_will_do = {
 			factor = 1
 			modifier = {

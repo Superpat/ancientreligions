@@ -511,6 +511,7 @@ pragmatist_pattern_for = {
 	}
 }
 
+
 pragmatist_pattern_against = {
 	icon = 6
 	pattern_type = against

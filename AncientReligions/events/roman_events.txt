@@ -3,14 +3,12 @@
 # Roman Events
 #
 # Event ID LoR.1 - LoR.199 reserved
-# Event ID hellenic.230 - hellenic.239 reserved
 #
 #######################################
 
 # Written by Henrik Eklund
 
 namespace = LoR
-namespace = hellenic
 
 ### Lost Roman Provinces
 
@@ -26,6 +24,7 @@ narrative_event = {
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		is_alternate_start = no
 		OR = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
@@ -33,7 +32,9 @@ narrative_event = {
 		OR = {
 			religion_group = christian
 			religion = hellenic_pagan
+			religion = hellenic_pagan_reformed
 		}
+		
 		NOT = { has_global_flag = syria_palaestina }
 		completely_controls = d_oultrejourdain ### WARNING: completely_controls is a very demanding trigger.
 		completely_controls = d_edessa
@@ -70,6 +71,7 @@ narrative_event = {
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		is_alternate_start = no
 		OR = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
@@ -77,6 +79,7 @@ narrative_event = {
 		OR = {
 			religion_group = christian
 			religion = hellenic_pagan
+			religion = hellenic_pagan_reformed
 		}
 		NOT = { has_global_flag = aegyptus }
 		completely_controls = d_aswan
@@ -99,9 +102,9 @@ narrative_event = {
 
 # Provincia Cyrenaica
 narrative_event = {
-	id = hellenic.230
-	title = hellenic.230.title
-	desc = hellenic.230.desc
+	id = LoR.3
+	title = EVTNAMELoR.3
+	desc = EVTDESCLoR.3
 	
 	picture = GFX_evt_victory_arch_byzantine
 	
@@ -109,6 +112,7 @@ narrative_event = {
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		is_alternate_start = no
 		OR = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
@@ -116,6 +120,7 @@ narrative_event = {
 		OR = {
 			religion_group = christian
 			religion = hellenic_pagan
+			religion = hellenic_pagan_reformed
 		}
 		NOT = { has_global_flag = cyrenaica }
 		completely_controls = d_cyrenaica
@@ -144,6 +149,7 @@ narrative_event = {
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		is_alternate_start = no
 		OR = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
@@ -151,12 +157,12 @@ narrative_event = {
 		OR = {
 			religion_group = christian
 			religion = hellenic_pagan
+			religion = hellenic_pagan_reformed
 		}
 		NOT = { has_global_flag = africa }
 		completely_controls = d_tripolitania
 		completely_controls = d_tunis
 		completely_controls = d_kabylia
-		completely_controls = d_vidin
 	}
 	
 	mean_time_to_happen = {
@@ -182,6 +188,7 @@ narrative_event = {
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		is_alternate_start = no
 		OR = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
@@ -189,6 +196,7 @@ narrative_event = {
 		OR = {
 			religion_group = christian
 			religion = hellenic_pagan
+			religion = hellenic_pagan_reformed
 		}
 		NOT = { has_global_flag = illyricum }
 		completely_controls = d_carinthia
@@ -223,6 +231,7 @@ narrative_event = {
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		is_alternate_start = no
 		OR = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
@@ -230,6 +239,7 @@ narrative_event = {
 		OR = {
 			religion_group = christian
 			religion = hellenic_pagan
+			religion = hellenic_pagan_reformed
 		}
 		NOT = { has_global_flag = italia }
 		completely_controls = d_latium
@@ -249,126 +259,16 @@ narrative_event = {
 		completely_controls = d_apulia
 		completely_controls = d_salerno
 		completely_controls = d_calabria
+		completely_controls = d_sicily
 	}
+	
 	mean_time_to_happen = {
 		days = 1
 	}
-	
 	
 	option = {
 		name = EVTOPTALoR.1
 		set_global_flag = italia
-		prestige = 100
-	}
-}
-
-# Provincia Sicilia
-narrative_event = {
-	id = hellenic.231
-	title = hellenic.231.title
-	desc = hellenic.231.desc
-	
-	picture = GFX_evt_victory_arch_byzantine
-	
-	ai = no
-	
-	trigger = {
-		has_dlc = "Legacy of Rome"
-		OR = {
-			has_landed_title = e_byzantium
-			has_landed_title = e_roman_empire
-		}
-		OR = {
-			religion_group = christian
-			religion = hellenic_pagan
-		}
-		NOT = { has_global_flag = sicilia }
-		completely_controls = d_sicily
-	}
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	
-	option = {
-		name = EVTOPTALoR.1
-		set_global_flag = sicilia
-		prestige = 50
-	}
-}
-
-# Provincia Corsica et Sardinia
-narrative_event = {
-	id = hellenic.232
-	title = hellenic.232.title
-	desc = hellenic.232.desc
-	
-	picture = GFX_evt_victory_arch_byzantine
-	
-	ai = no
-	
-	trigger = {
-		has_dlc = "Legacy of Rome"
-		OR = {
-			has_landed_title = e_byzantium
-			has_landed_title = e_roman_empire
-		}
-		OR = {
-			religion_group = christian
-			religion = hellenic_pagan
-		}
-		NOT = { has_global_flag = sardinia }
-		completely_controls = d_sardinia
-	}
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {
-		name = EVTOPTALoR.1
-		set_global_flag = sardinia
-		prestige = 50
-	}
-}
-
-# Provincia Viennensis
-narrative_event = {
-	id = hellenic.233
-	title = hellenic.233.title
-	desc = hellenic.233.desc
-	
-	picture = GFX_evt_victory_arch_byzantine
-	
-	ai = no
-	
-	trigger = {
-		has_dlc = "Legacy of Rome"
-		OR = {
-			has_landed_title = e_byzantium
-			has_landed_title = e_roman_empire
-		}
-		OR = {
-			religion_group = christian
-			religion = hellenic_pagan
-		}
-		NOT = { has_global_flag = viennensis }
-		completely_controls = d_aquitaine
-		completely_controls = d_toulouse
-		completely_controls = d_gascogne
-		completely_controls = d_poitou
-		completely_controls = d_auvergne
-		completely_controls = d_bourbon
-		completely_controls = d_dauphine
-		completely_controls = d_provence
-	}
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	
-	option = {
-		name = EVTOPTALoR.1
-		set_global_flag = viennensis
 		prestige = 100
 	}
 }
@@ -385,6 +285,7 @@ narrative_event = {
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		is_alternate_start = no
 		OR = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
@@ -392,6 +293,7 @@ narrative_event = {
 		OR = {
 			religion_group = christian
 			religion = hellenic_pagan
+			religion = hellenic_pagan_reformed
 		}
 		NOT = { has_global_flag = gallia }
 		completely_controls = d_normandy
@@ -407,11 +309,14 @@ narrative_event = {
 		completely_controls = d_poitou
 		completely_controls = d_auvergne
 		completely_controls = d_bourbon
+		completely_controls = d_loire
+		completely_controls = d_penthievre
 		completely_controls = d_brittany
 		completely_controls = d_provence
 		completely_controls = d_savoie
 		completely_controls = d_dauphine
 		completely_controls = d_upper_burgundy
+		completely_controls = d_picardie
 	}
 	
 	mean_time_to_happen = {
@@ -437,6 +342,7 @@ narrative_event = {
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		is_alternate_start = no
 		OR = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
@@ -444,6 +350,7 @@ narrative_event = {
 		OR = {
 			religion_group = christian
 			religion = hellenic_pagan
+			religion = hellenic_pagan_reformed
 		}
 		NOT = { has_global_flag = germania }
 		completely_controls = d_mecklemburg
@@ -494,6 +401,7 @@ narrative_event = {
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		is_alternate_start = no
 		OR = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
@@ -501,6 +409,7 @@ narrative_event = {
 		OR = {
 			religion_group = christian
 			religion = hellenic_pagan
+			religion = hellenic_pagan_reformed
 		}
 		NOT = { has_global_flag = britannia }
 		completely_controls = d_northumberland
@@ -540,6 +449,7 @@ narrative_event = {
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		is_alternate_start = no
 		OR = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
@@ -547,6 +457,7 @@ narrative_event = {
 		OR = {
 			religion_group = christian
 			religion = hellenic_pagan
+			religion = hellenic_pagan_reformed
 		}
 		NOT = { has_global_flag = hispania }
 		completely_controls = d_galicia
@@ -592,6 +503,7 @@ narrative_event = {
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		is_alternate_start = no
 		OR = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
@@ -599,6 +511,7 @@ narrative_event = {
 		OR = {
 			religion_group = christian
 			religion = hellenic_pagan
+			religion = hellenic_pagan_reformed
 		}
 		NOT = { has_global_flag = mauretania }
 		completely_controls = d_marrakech
@@ -631,6 +544,7 @@ narrative_event = {
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		is_alternate_start = no
 		OR = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
@@ -638,6 +552,7 @@ narrative_event = {
 		OR = {
 			religion_group = christian
 			religion = hellenic_pagan
+			religion = hellenic_pagan_reformed
 		}
 		NOT = { has_global_flag = mesopotamia }
 		completely_controls = d_tigris
@@ -669,6 +584,7 @@ narrative_event = {
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		is_alternate_start = no
 		OR = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
@@ -676,6 +592,7 @@ narrative_event = {
 		OR = {
 			religion_group = christian
 			religion = hellenic_pagan
+			religion = hellenic_pagan_reformed
 		}
 		NOT = { has_global_flag = caledonia }
 		completely_controls = d_albany
@@ -708,6 +625,7 @@ narrative_event = {
 	
 	trigger = {
 		has_dlc = "Legacy of Rome"
+		is_alternate_start = no
 		OR = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
@@ -715,6 +633,7 @@ narrative_event = {
 		OR = {
 			religion_group = christian
 			religion = hellenic_pagan
+			religion = hellenic_pagan_reformed
 		}
 		NOT = { has_global_flag = hibernia }
 		completely_controls = d_connacht
@@ -741,7 +660,18 @@ narrative_event = {
 narrative_event = {
 	id = LoR.20
 	title = EVTNAMELoR.20
-	desc = EVTDESCLoR.20
+	desc = {
+		text = EVTDESCLoR.20
+		trigger = { 
+			is_alternate_start = no
+		}
+	}
+	desc = {
+		text = EVTDESCLoR20_HF
+		trigger = { 
+			is_alternate_start = yes
+		}
+	}
 	
 	picture = GFX_evt_rome_restored_byzantine
 	
@@ -766,12 +696,14 @@ narrative_event = {
 			}
 		}
 		e_roman_empire = {
+			show_scope_change = no
 			grant_title = ROOT
-			make_primary_title = yes
+			hidden_tooltip = { make_primary_title = yes }
 			copy_title_laws = e_byzantium
 			copy_title_history = e_byzantium
 		}
 		e_byzantium = {
+			show_scope_change = no
 			destroy_landed_title = THIS
 		}
 		hidden_tooltip = {
@@ -783,9 +715,80 @@ narrative_event = {
 				}
 				narrative_event = { id = LoR.21 }
 			}
+			if = { #Hellenic Resurgence
+				limit = { 
+					has_dlc = "Holy Fury" 
+					religion_group = christian
+					has_game_rule = {
+						name = hellenism_rule
+						value = on
+					}
+					OR = { 
+						culture = greek 
+						culture = italian
+						culture = roman
+					}
+				}
+				character_event = { id = HF.23106 days = 15 }				
+			}
+			if = { #Burn and Rebuild Rome.
+				limit = { 
+					has_dlc = "Holy Fury" 
+					333 = { any_province_holding = { holding_type = temple count = 2 } } #Check if Gengis Khan or whomever hasn't already leveled the place down.
+				}
+				333 = { province_event = { id = HF.23100 days = 155 } }				
+			}
 		}
 		add_trait = augustus
 		give_nickname = nick_the_glorious
+		if = { #New Imperial Bloodline. (male)
+				limit = { 
+					has_dlc = "Holy Fury" 
+					is_female = no
+					is_alternate_start = no
+					OR = { 
+						religion_group = christian
+						religion = hellenic_pagan
+						religion = hellenic_pagan_reformed
+					}
+	    			NOT = {
+	    				any_owned_bloodline = {
+    						has_bloodline_flag = roman_bloodline #Not if already member of a famous historical Roman Bloodline.
+    					}
+    				}
+				}
+				create_bloodline = {
+					type = roman_emperor_male
+				}
+				new_bloodline = {
+					set_description = "bloodline_desc_roman"
+				}	
+				sound_effect = bloodline_added			
+			}
+		if = { #New Imperial Bloodline. (female)
+			limit = { 
+				has_dlc = "Holy Fury" 
+				is_female = yes
+				is_alternate_start = no
+				OR = { 
+					religion_group = christian
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+    			NOT = {
+    				any_owned_bloodline = {
+						has_bloodline_flag = roman_bloodline #Not if already member of a famous historical Roman Bloodline.
+					}
+				}
+			}
+			create_bloodline = {
+				type = roman_emperor_female
+			}
+			new_bloodline = {
+				set_description = "bloodline_desc_roman"
+			}				
+			sound_effect = bloodline_added
+		}
 	}
 }
 
@@ -793,7 +796,18 @@ narrative_event = {
 narrative_event = {
 	id = LoR.21
 	title = EVTNAMELoR.21
-	desc = EVTDESCLoR.21
+	desc = {
+		text = EVTDESCLoR.21
+		trigger = { 
+			is_alternate_start = no
+		}
+	}
+	desc = {
+		text = EVTDESCLoR21_HF
+		trigger = { 
+			is_alternate_start = yes
+		}
+	}
 	
 	picture = GFX_evt_rome_restored_byzantine
 	
@@ -824,11 +838,15 @@ character_event = {
 	
 	hide_from = yes
 	
-	religion_group = christian
 	
 	is_triggered_only = yes
 	
 	trigger = {
+		OR = {
+			religion_group = christian
+			religion = hellenic_pagan
+			religion = hellenic_pagan_reformed
+		}
 		OR = {
 			has_landed_title = e_byzantium
 			has_landed_title = e_roman_empire
@@ -902,14 +920,38 @@ character_event = {
 narrative_event = {
 	id = LoR.40
 	title = EVTNAMELoR.40
-	desc = EVTDESCLoR.40
+	desc = {
+		trigger = {
+			religion_group = christian
+		}
+		text = EVTDESCLoR.40
+	}
+	desc = {
+		trigger = {
+			OR = { 
+				religion = hellenic_pagan
+				religion = hellenic_pagan_reformed
+			}
+		}
+		text = EVTDESCLoR40_HELLENIC
+	}
+	desc = {
+		trigger = {
+			NOR = { 
+				religion_group = christian
+				religion = hellenic_pagan
+				religion = hellenic_pagan_reformed
+			}
+		}
+		text = EVTDESCLoR40_GENERIC
+	}
 	
 	picture = GFX_evt_rome_restored_byzantine
 	
 	ai = no
-	religion_group = christian
 	
 	trigger = {
+		is_alternate_start = no
 		has_dlc = "Legacy of Rome"
 		OR = {
 			has_landed_title = e_byzantium
@@ -918,6 +960,7 @@ narrative_event = {
 		OR = {
 			religion_group = christian
 			religion = hellenic_pagan
+			religion = hellenic_pagan_reformed
 		}
 		NOT = { has_global_flag = roman_borders }
 		
@@ -1088,21 +1131,31 @@ narrative_event = {
 # Augustus Trait Gained
 character_event = {
 	id = LoR.45
-	desc = EVTDESCLoR.45
+	desc = {
+		text = EVTDESCLoR.45
+		trigger = { 
+			is_alternate_start = no
+		}
+	}
+	desc = {
+		text = EVTDESCLoR45_HF
+		trigger = { 
+			is_alternate_start = yes
+		}
+	}
 	picture = GFX_evt_rome_restored_byzantine
 	
 	only_playable = yes
-	has_global_flag = rome_restored
 	has_dlc = "Legacy of Rome"
+	has_global_flag = rome_restored
 	
 	trigger = {
 		has_landed_title = e_roman_empire
 		NOT = { trait = augustus }
 	}
 	
-	mean_time_to_happen = {
-		days = 1
-	}
+	is_triggered_only = yes
+	
 	
 	option = {
 		name = EVTOPTALoR.45
@@ -1125,12 +1178,53 @@ character_event = {
 		is_alive = yes
 	}
 	
-	mean_time_to_happen = {
-		days = 1
-	}
+	is_triggered_only = yes
 	
 	option = {
 		name = EVTOPTALoR.46
 		remove_trait = augustus
+	}
+}
+
+#On_death Augustus Trait inheritance
+character_event = {
+	id = LoR.47
+	hide_window = yes
+	
+	only_playable = yes
+	has_global_flag = rome_restored
+	has_dlc = "Legacy of Rome"
+	
+	trigger = {
+		has_landed_title = e_roman_empire
+	}
+	
+	is_triggered_only = yes
+	
+	
+	immediate = {
+		e_roman_empire = { current_heir = { character_event = { id = LoR.45 days = 2 } } }
+	}
+}
+
+#On_title_usurped Augustus Trait inheritance
+character_event = {
+	id = LoR.48
+	hide_window = yes
+	
+	only_playable = yes
+	has_global_flag = rome_restored
+	has_dlc = "Legacy of Rome"
+	
+	trigger = {
+		FROM = { title = e_roman_empire }
+		NOT = { trait = augustus }
+	}
+	
+	is_triggered_only = yes
+	
+	
+	immediate = {
+		ROOT = { character_event = { id = LoR.45 days = 2 } }
 	}
 }

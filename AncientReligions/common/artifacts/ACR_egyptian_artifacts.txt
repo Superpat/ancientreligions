@@ -1,1 +1,21 @@
 # Content by Adam 'theStormWeaver/xirsoi' Chevalier
+crown_egyptian_fylkir = { 
+	monthly_character_prestige = 0.4
+	monthly_character_piety = 0.7
+	stewardship = 2
+	intrigue = 2
+	tribal_opinion = 10
+	quality = 4
+	active = { 
+		has_landed_title = 
+	}
+	flags = { religious unique crown jewelry crown_jewel }
+	stacking = no
+	picture = "GFX_crown_zun_fylkir"
+	slot = crown
+	stacking = no
+	indestructible = yes
+	allowed_gift = {
+		always = no
+	}
+}

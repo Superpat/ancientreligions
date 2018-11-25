@@ -27,7 +27,7 @@ nomadic_governments = {
 		potential = {
 			OR = {
 				controls_religion = no
-				religion_group = muslim
+				OR = { religion_group = muslim religion = aten_pagan }
 				has_religion_feature = religion_temporal_head
 				AND = {
 					religion = norse_pagan_reformed

@@ -140,7 +140,7 @@ decisions = {
 		}
 	}
 	
-	restore_priesthood_egyptian_pagan = {
+	restore_priesthood_egyptian_pagan_reformed = {
 		only_playable = yes
 		is_high_prio = yes
 		potential = {
@@ -172,7 +172,7 @@ decisions = {
 			wealth = -500
 			piety = -250
 			prestige = 250
-			activate_title = { title = d_egyptian_pagan status = yes }
+			activate_title = { title = d_egyptian_pagan_reformed status = yes }
 			hidden_tooltip = {
 				create_random_priest = {
 					random_traits = yes
@@ -182,7 +182,7 @@ decisions = {
 					age = 41
 				}
 				new_character = {
-					d_egyptian_pagan = {
+					d_egyptian_pagan_reformed = {
 						grant_title = PREV
 					}
 					set_defacto_liege = ROOT

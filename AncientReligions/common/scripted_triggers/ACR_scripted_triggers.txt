@@ -270,7 +270,7 @@ religion_openly_in_hellenic_subgroup_trigger = {
 		text = religion_openly_in_hellenic_subgroup_tooltip
 		hidden_trigger = {
 			OR = {
-				religion = hellenic_pagan
+				religion_openly_hellenic_or_reformed_trigger = yes
 				religion = promethean_pagan
 				religion = titan_pagan
 			}
@@ -308,7 +308,7 @@ religion_secretly_in_hellenic_subgroup_trigger = {
 		text = secret_religion_in_hellenic_subgroup_tooltip
 		hidden_trigger = {
 			OR = {
-				secret_religion = hellenic_pagan
+				religion_secretly_hellenic_or_reformed_trigger = yes
 				secret_religion = promethean_pagan
 				secret_religion = titan_pagan
 			}
@@ -346,7 +346,7 @@ true_religion_in_hellenic_subgroup_trigger = {
 		text = true_religion_in_hellenic_subgroup_tooltip
 		hidden_trigger = {
 			OR = {
-				true_religion = hellenic_pagan
+				true_religion_hellenic_or_reformed_trigger = yes
 				true_religion = promethean_pagan
 				true_religion = titan_pagan
 			}
@@ -658,7 +658,7 @@ has_sand_snakes_prerequisites = {
 has_dionysus_prerequisites = {
 	age = 16
 	OR = {
-		true_religion = hellenic_pagan
+		true_religion_hellenic_or_reformed_trigger = yes
 		trait = mystic
 		trait = hedonist
 		trait = decadent

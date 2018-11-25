@@ -1,55 +1,6 @@
 # Religion-specific opinion can be added to modifiers (E.G., norse_pagan_opinion = 5), but the modifier *has* to be defined in 00_modifier_definitions.txt as well. It also needs localisation. Works for groups as well
 
 pagan_group = {
-	hellenic_pagan = {
-		graphical_culture = westerngfx
-		
-		pre_reformed = yes
-
-		icon = 37
-		heresy_icon = 57
-		
-		ai_convert_other_group = 2 # always try to convert
-		
-		color = { 0.6 0.1 0.1 }
-		
-		high_god_name = GOD_JUPITER
-		god_names = {
-			GOD_JUNO GOD_VESTA GOD_MINERVA GOD_CERES GOD_DIANA GOD_VENUS GOD_MARS GOD_MERCURY GOD_SATURN GOD_NEPTUNE GOD_VULCAN GOD_APOLLO
-		}
-		evil_god_names = {
-			GOD_PLUTO GOD_HECATE
-		}
-		unit_modifier = {
-			levy_size = 0.3
-			
-			retinuesize_perc = 0.5
-			
-			key = "OFF_RELIGION"
-		}
-		
-		crusade_name = GREAT_HOLY_WAR
-		can_call_crusade = yes
-		scripture_name = THE_THEOGONY
-		priest_title = AUGUR
-		priests_can_marry = yes
-		female_temple_holders = yes
-		psc_marriage = yes
-		
-		religious_clothing_head = 5
-		religious_clothing_priest = 5
-
-		allow_in_ruler_designer = yes
-
-		intermarry = promethean_pagan
-		intermarry = egyptian_pagan
-		intermarry = aten_pagan
-
-
-		dynamic_cult = yes
-		secret_religion = yes
-	}
-
 	titan_pagan = {
 		graphical_culture = norsegfx
 
@@ -110,9 +61,9 @@ pagan_group = {
 	}
 
 	promethean_pagan = {
-		graphical_culture = westerngfx
-
-		pre_reformed = yes
+		graphical_culture = hellenicgfx
+		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		interface_skin = { hellenic_interface }
 
 		ai_convert_other_group = 2 # always try to convert
 		ai_convert_same_group = 2 # always try to convert
@@ -158,8 +109,8 @@ pagan_group = {
 		feminist = yes
 		attacking_same_religion_piety_loss = yes
 
-		religious_clothing_head = 5
-		religious_clothing_priest = 5
+		religious_clothing_head = 12
+		religious_clothing_priest = 11
 
 		allow_in_ruler_designer = yes
 
@@ -176,7 +127,7 @@ pagan_group = {
 	celtic_pagan_reformed = { # Druidic
 		# Use norsegfx rather than celticgfx to have the northern pagan rounded CoA on the map
 		graphical_culture = norsegfx
-		
+		alternate_start = { always = no }
 		icon = 59
 		heresy_icon = 60
 		
@@ -188,6 +139,7 @@ pagan_group = {
 		scripture_name = THE_STONES
 		priest_title = DRUID
 		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
 
 		high_god_name = GOD_LUGH
 
@@ -196,32 +148,6 @@ pagan_group = {
 		}
 		evil_god_names = {
 			THE_FOMORIANS EVIL_BALOR EVIL_BRES GOD_CAILLEACH
-		}
-		
-		unit_modifier = {	
-			levy_size = 0.15
-			
-			retinuesize_perc = 0.3
-			garrison_size = 0.2
-			
-			key = "HERO_RELIGION"
-		}
-		
-		unit_home_modifier = {
-			land_morale = 0.4
-			light_infantry_defensive = 0.4
-			heavy_infantry_defensive = 0.4
-			pikemen_defensive = 0.4
-			light_cavalry_defensive = 0.4
-			knights_defensive = 0.4
-			archers_defensive = 0.4
-			horse_archers_defensive = 0.4
-			camel_cavalry_defensive = 0.4
-			war_elephants_defensive = 0.4
-			
-			garrison_size = 0.2
-			
-			key = "HERO_RELIGION_HOME_TERRITORY"
 		}
 		
 		priests_can_marry = yes
@@ -316,6 +242,8 @@ pagan_group = {
 	
 	britannic_pagan = {
 		graphical_culture = celticgfx
+		interface_skin = { christian_interface pagan_interface }
+		alternate_start = { always = no }
 		
 		icon = 59
 		heresy_icon = 60
@@ -352,6 +280,7 @@ pagan_group = {
 		can_grant_invasion_cb = invasion
 		can_grant_claim = yes
 		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
 
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
@@ -362,17 +291,16 @@ pagan_group = {
 		intermarry = celtic_pagan_reformed
 	}
 
-	egyptian_pagan = { # Kemetic
+	egyptian_pagan_reformed = {
 		graphical_culture = africangfx
 		secondary_event_pictures = egyptian_pagan
-
-		pre_reformed = yes
+		interface_skin = { zoroastrian_interface hellenic_interface }
 		
 		icon = 61
 		heresy_icon = 62
 
 		ai_convert_other_group = 2 # always try to convert
-		ai_convert_same_group = 2 # always try to convert
+		ai_convert_same_group = 1
 
 		color = { 0.5 0.4 0 }
 		
@@ -417,6 +345,69 @@ pagan_group = {
 		pc_marriage = yes
 		bs_marriage = yes
 		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+		
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
+	}
+
+	egyptian_pagan = { # Kemetic
+		graphical_culture = africangfx
+		secondary_event_pictures = egyptian_pagan
+		interface_skin = { zoroastrian_interface hellenic_interface }
+
+		reformed = egyptian_pagan_reformed
+		
+		icon = 61
+		heresy_icon = 62
+
+		ai_convert_other_group = 1
+		ai_convert_same_group = 0
+
+		color = { 0.5 0.4 0 }
+		
+		scripture_name = BOOK_OF_THE_DEAD
+		crusade_name = GREAT_HOLY_WAR
+		high_god_name = GOD_AMON
+
+		god_names = {
+			GOD_AMAUNET GOD_AMON GOD_HAUHET GOD_HEH GOD_KAUKET GOD_KEK GOD_NAUNET GOD_NUN GOD_RA GOD_ISIS GOD_OSIRIS GOD_ANUBIS
+		}
+		evil_god_names = {
+			GOD_SET GOD_APEP
+		}
+		unit_modifier = {		
+			garrison_size = 0.2
+			levy_size = 0.2
+			
+			key = "DEF_RELIGION"
+		}
+		unit_home_modifier = {
+			land_morale = 0.8
+			light_infantry_defensive = 0.8
+			heavy_infantry_defensive = 0.8
+			pikemen_defensive = 0.8
+			light_cavalry_defensive = 0.8
+			knights_defensive = 0.8
+			archers_defensive = 0.8
+			horse_archers_defensive = 0.8
+			camel_cavalry_defensive = 0.8
+			war_elephants_defensive = 0.8
+			
+			garrison_size = 0.4
+			
+			key = "DEF_RELIGION_HOME_TERRITORY"
+		}
+		
+		allow_rivermovement = yes
+		priests_can_marry = yes
+		female_temple_holders = yes
+		max_wives = 4
+		divine_blood = yes
+		pc_marriage = yes
+		bs_marriage = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
 		
 		religious_clothing_head = 5
 		religious_clothing_priest = 5
@@ -424,8 +415,8 @@ pagan_group = {
 	
 	aten_pagan = { # Atenism
 		graphical_culture = africangfx
-		
-		pre_reformed = yes
+		interface_skin = { zoroastrian_interface hellenic_interface muslim_interface }
+		#pre_reformed = yes
 
 		icon = 61
 		heresy_icon = 62
@@ -479,6 +470,8 @@ pagan_group = {
 		pc_marriage = yes
 		bs_marriage = yes
 		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
+
 		religious_clothing_head = 5
 		religious_clothing_priest = 5
 

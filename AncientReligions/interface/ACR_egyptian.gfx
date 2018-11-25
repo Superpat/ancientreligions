@@ -17,8 +17,8 @@ spriteTypes = {
 
 	#Decisions
 	spriteType = {
-		name = "GFX_restore_priesthood_egyptian_pagan"
-		texturefile = "gfx\\interface\ACR\decision_icon_restore_priesthood_egyptian_pagan.dds"
+		name = "GFX_restore_priesthood_egyptian_pagan_reformed"
+		texturefile = "gfx\\interface\ACR\decision_icon_restore_priesthood_egyptian_pagan_reformed.dds"
 	}
 	spriteType = {
 		name = "GFX_organize_anubis"

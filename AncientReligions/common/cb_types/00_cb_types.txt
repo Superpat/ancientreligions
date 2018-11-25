@@ -3478,11 +3478,11 @@ tribal_invasion = {
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
 					}
-						OR = { 
-							religion_group = christian
-							religion = hellenic_pagan
-							religion = hellenic_pagan_reformed
-						}
+					OR = { 
+						religion_group = christian
+						religion = hellenic_pagan
+						religion = hellenic_pagan_reformed
+					}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -10369,6 +10369,7 @@ pagan_subjugation = {
 			religion_group = pagan_group
 			is_reformed_religion = no
 			NOT = { religion = hellenic_pagan }
+			NOT = { religion = promethean_pagan }
 			NOT = { same_realm = FROM }
 			NOT = { is_liege_or_above = FROM }
 			mercenary = no
@@ -12826,75 +12827,36 @@ pagan_county_conquest = {
 		}
 	}
 
-	on_fail_title = { #white peace
+	on_fail_title = {
 		ROOT = {
-			show_scope_change = no
 			prestige = -100
-		}
-		
-		if = {
-			limit = {
-				NOT = { FROM = { religion = ROOT } }
-			}
-			ROOT = {
-				show_scope_change = no
-				religion_authority = {
-					modifier = lost_county_conquest
-				}
+			religion_authority = {
+				modifier = lost_county_conquest
 			}
 		}
-	
-		FROM = {
-			show_scope_change = no
+		any_defender = {
+			limit = { character = FROM }
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
 			limit = { NOT = { character = FROM } }
 			hidden_tooltip = { participation_scaled_prestige = 50 }
 		}
-
-		#To handle Warrior Lodge mission "Wage War" completion...
-		attacker = { save_event_target_as = attacker_target }
-		defender = { save_event_target_as = defender_target }
-
-		if = { 
-			limit = {
-				event_target:attacker_target = { has_quest = quest_warrior_lodge_war }
-				is_quest_target_of = event_target:attacker_target
-			}
-			event_target:attacker_target = {
-				show_scope_change = no
-				tooltip = { clr_quest = quest_warrior_lodge_war }
-				set_character_flag = white_peace@event_target:defender_target
-				#character_event = { id = HF.10514 days = 3 } #Sent from on_action instead
-			}
-		}
 	}
 
-	on_reverse_demand = { #losing the war
+	on_reverse_demand = {
 		ROOT = {
-			show_scope_change = no
 			prestige = -200
 			transfer_scaled_wealth = {
 				to = FROM
 				value = 4.0
 			}
-		}
-		
-		if = {
-			limit = {
-				NOT = { FROM = { religion = ROOT } }
-			}
-			ROOT = {
-				show_scope_change = no
-				religion_authority = {
-					modifier = lost_county_conquest
-				}
+			religion_authority = {
+				modifier = lost_county_conquest
 			}
 		}
-		
-		FROM = {
-			show_scope_change = no
+		any_defender = {
+			limit = { character = FROM }
 			participation_scaled_prestige = 100
 			participation_scaled_piety = 50
 		}
@@ -12903,24 +12865,6 @@ pagan_county_conquest = {
 			hidden_tooltip = {
 				participation_scaled_prestige = 100 
 				participation_scaled_piety = 50
-			}
-		}
-	}
-	on_reverse_demand_title = {
-		#To handle Warrior Lodge mission "Wage War" completion...
-		attacker = { save_event_target_as = attacker_target }
-		defender = { save_event_target_as = defender_target }
-
-		if = { 
-			limit = {
-				event_target:attacker_target = { has_quest = quest_warrior_lodge_war }
-				is_quest_target_of = event_target:attacker_target
-			}
-			event_target:attacker_target = {
-				show_scope_change = no
-				tooltip = { clr_quest = quest_warrior_lodge_war }
-				set_character_flag = lost_war@event_target:defender_target
-				#character_event = { id = HF.10514 days = 3 } #Sent from on_action instead
 			}
 		}
 	}
@@ -12939,105 +12883,6 @@ pagan_county_conquest = {
 	
 	defender_ai_defeat_worth = {
 		factor = 100
-	}
-	
-	ai_will_do = { 
-		factor = 1
-		
-		modifier = {
-			factor = 4.0
-			ROOT = {
-				OR = {
-					religion = norse_pagan
-					religion = norse_pagan_reformed
-				}
-			}
-			OR = {
-				empire = { title = e_scandinavia }
-				kingdom = { title = k_rus }
-			}
-		}
-		modifier = {
-			factor = 2.0
-			ROOT = {
-				OR = {
-					religion = norse_pagan
-					religion = norse_pagan_reformed
-				}
-			}
-			has_global_flag = viking_age_started
-			OR = {
-				empire = { title = e_britannia }
-				kingdom = { title = k_brittany }
-				kingdom = { title = k_france }
-				kingdom = { title = k_frisia }
-			}
-		}
-		modifier = {
-			factor = 2.0
-			ROOT = {
-				OR = {
-					religion = norse_pagan
-					religion = norse_pagan_reformed
-				}
-			}
-			has_global_flag = viking_age_started
-			FROM = { NOT = { religion_group = pagan_group } }
-			location = { port = yes }
-		}
-		modifier = {
-			factor = 0
-			ROOT = {
-				has_character_flag = is_temujin
-				has_landed_title = e_mongol_empire
-				demesne_size = 1
-			}
-			FROM = {
-				has_landed_title = e_china_west_governor
-			}
-		}
-		modifier = {
-			factor = 0
-			FROM = {
-				is_nomadic = yes
-			}
-			ROOT = {
-				is_nomadic = no
-				NOT = {
-					is_tribal = yes
-				}
-			}
-			NOT = {
-				any_direct_de_jure_vassal_title = {
-					any_direct_de_jure_vassal_title = {
-						OR = {
-							holding_type = castle
-							holding_type = city
-						}
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			FROM = {
-				is_nomadic = yes
-			}
-			ROOT = {
-				is_tribal = yes
-			}
-			NOT = {
-				any_direct_de_jure_vassal_title = {
-					any_direct_de_jure_vassal_title = {
-						OR = {
-							holding_type = castle
-							holding_type = city
-							holding_type = tribal
-						}
-					}
-				}
-			}
-		}
 	}
 }
 

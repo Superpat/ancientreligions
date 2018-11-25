@@ -17,7 +17,7 @@ hellenic_county_liberation = {
 
 	can_use = {
 		ROOT = { 
-			religion = hellenic_pagan 
+			religion_openly_hellenic_or_reformed_trigger = yes
 			NOT = { same_realm = FROM }
 		}
 		NOT = { FROM = { religion_group = pagan_group } }
@@ -77,6 +77,7 @@ hellenic_county_liberation = {
 	}
 
 	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
 		if = {
 			limit = { defender = { is_offmap_governor = offmap_china } }
 			attacker = {  
@@ -86,8 +87,8 @@ hellenic_county_liberation = {
 		}
 	}
 	
-	on_success_title = {
-		usurp_title_plus_barony_if_unlanded = ROOT
+	on_success_title = { #winning the war
+		usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
 		
 		any_de_jure_vassal_title = { # take all baronies too
 			limit = {
@@ -96,15 +97,20 @@ hellenic_county_liberation = {
 					OR = {
 						character = FROM
 						is_liege_or_above = FROM
+						AND = {
+							is_liege_or_above = ROOT
+							NOT = { culture = ROOT }
+							NOT = { religion = ROOT }
+						}
 					}
 				}
 			}
-
+			show_scope_change = no
 			usurp_title = ROOT
 		}
 		
-		any_attacker = {
-			limit = { character = ROOT }
+		ROOT = {
+			show_scope_change = no
 			participation_scaled_prestige = 100
 			participation_scaled_piety = 50
 		}
@@ -116,9 +122,32 @@ hellenic_county_liberation = {
 			}
 		}
 		
-		ROOT = {
-			religion_authority = {
-				modifier = won_county_conquest
+		if = {
+			limit = {
+				NOT = { FROM = { religion = ROOT } }
+			}
+			ROOT = {
+				show_scope_change = no
+				religion_authority = {
+					modifier = won_county_conquest
+				}
+			}
+		}
+
+		#To handle Warrior Lodge mission "Wage War" completion...
+		attacker = { save_event_target_as = attacker_target }
+		defender = { save_event_target_as = defender_target }
+
+		if = { 
+			limit = {
+				event_target:attacker_target = { has_quest = quest_warrior_lodge_war }
+				is_quest_target_of = event_target:attacker_target
+			}
+			event_target:attacker_target = {
+				show_scope_change = no
+				tooltip = { clr_quest = quest_warrior_lodge_war }
+				set_character_flag = won_war@event_target:defender_target
+				#character_event = { id = HF.10514 days = 3 } #Sent from on_action instead
 			}
 		}
 	}
@@ -191,45 +220,35 @@ hellenic_reconquest = {
 	check_de_jure_tier = DUKE # this scans all dejure duchies for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
+	
+	sort_priority = 1900
+
+	can_use_gui = {
+		check_if_crusader_trigger = yes
+	}
 
 	can_use = {
 		ROOT = {
 			NOT = { has_landed_title = e_roman_empire }
 			independent = yes
-			higher_tier_than = DUKE
-			religion = hellenic_pagan
-			NOT = { religion_group = FROM }
-			NOT = {
-				any_war = {
-					attacker = { character = ROOT }
-					using_cb = hellenic_reconquest
-				}
-			}
-			
-			NOT = { has_character_modifier = called_hellenic_reconquest }
-			
+			religion_openly_hellenic_or_reformed_trigger = yes
 			NOT = { same_realm = FROM }
-
-			NOT = {
-				# Use CB "pagan_holy_war" instead
-				AND = {
-					religion_group = pagan_group
-					OR = {
-						religion = aztec
-						is_reformed_religion = yes
-					}
-					NOT = { religion = FROM }
-					top_liege = { religion = ROOT }
-				}
-			}
+			mercenary = no
+			tier = DUKE
+			NOT = { has_character_flag = called_hellenic_reconquest }
+		}
+		FROM = {
+			NOT = { religion_group = muslim }
 		}
 	}
 
 	can_use_title = {
 		OR = {
 			de_jure_liege_or_above = k_byzantium
+			de_jure_liege_or_above = k_thrace
 			de_jure_liege_or_above = k_anatolia
+			de_jure_liege_or_above = k_epirus
+			de_jure_liege_or_above = k_trebizond
 			de_jure_liege_or_above = k_armenia
 			de_jure_liege_or_above = k_bulgaria
 			de_jure_liege_or_above = k_serbia
@@ -248,6 +267,8 @@ hellenic_reconquest = {
 			de_jure_liege_or_above = k_aragon
 			de_jure_liege_or_above = k_castille
 			de_jure_liege_or_above = k_andalusia
+			de_jure_liege_or_above = k_badajoz
+			de_jure_liege_or_above = k_valencia
 			de_jure_liege_or_above = k_leon
 			de_jure_liege_or_above = k_spanish_galicia
 			de_jure_liege_or_above = k_portugal
@@ -258,30 +279,32 @@ hellenic_reconquest = {
 			de_jure_liege_or_above = k_africa
 			de_jure_liege_or_above = k_mauretania
 			de_jure_liege_or_above = k_papal_state
+			de_jure_liege_or_above = k_papacy
 			de_jure_liege_or_above = k_venice
 			de_jure_liege_or_above = k_asturias
+			de_jure_liege_or_above = k_sardinia
+			de_jure_liege_or_above = k_antioch
+			de_jure_liege_or_above = k_cyprus
+			de_jure_liege_or_above = k_amalfi
+			de_jure_liege_or_above = k_venice
+			de_jure_liege_or_above = k_pisa
+			de_jure_liege_or_above = k_genoa
+			de_jure_liege_or_above = k_switzerland
+			de_jure_liege_or_above = k_romagna
+			de_jure_liege_or_above = k_carinthia
 		}
 	}
 	
 	is_valid = {
 		ROOT = {
 			independent = yes
-			OR = {
-				religion_group = christian
-				religion_group = pagan_group
-			}
+			religion_openly_hellenic_or_reformed_trigger = yes
 			NOT = { same_realm = FROM }
 		}
 	}
 
 	on_add = {
-		ROOT = {
-			add_character_modifier = { 
-				name = called_hellenic_reconquest
-				years = 50
-				hidden = yes
-			}
-		}
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
 		if = {
 			limit = { defender = { is_offmap_governor = offmap_china } }
 			attacker = {  
@@ -290,12 +313,11 @@ hellenic_reconquest = {
 			}
 		}
 	}
-
+	
 	on_success = {
 		ROOT = {
-			clr_character_flag = called_imperial_reconquest
-			set_character_flag = called_imperial_reconquest
 			participation_scaled_prestige = 100
+			set_character_flag = called_hellenic_reconquest
 		}
 		any_attacker = {
 			limit = { NOT = { character = ROOT } }
@@ -315,6 +337,7 @@ hellenic_reconquest = {
 					vassalize_or_take_under_title = {
 						title = PREV
 						enemy = FROM
+						type = invasion
 					}
 				}
 			}
@@ -325,28 +348,29 @@ hellenic_reconquest = {
 			}
 			usurp_title_only = { target = ROOT type = invasion }
 		}
+
+		hidden_tooltip = {
+			check_if_reconquista_finished_effect = yes
+			FROM = {
+				landless_pope_effect = yes
+			}
+		}
 	}
 
 	on_fail = {
-		ROOT = {
-			clr_character_flag = called_imperial_reconquest
-			set_character_flag = called_imperial_reconquest
-			prestige = -150
-		}
+		ROOT = { prestige = -150 }
 	}
 
 	on_reverse_demand = {
 		ROOT = {
-			clr_character_flag = called_imperial_reconquest
-			set_character_flag = called_imperial_reconquest
 			transfer_scaled_wealth = {
 				to = FROM
 				value = 4.0
 			}
 			ROOT = { prestige = -200 }
+			set_character_flag = called_hellenic_reconquest
 		}
-		any_defender = {
-			limit = { character = FROM }
+		FROM = {
 			participation_scaled_piety = 100
 			participation_scaled_prestige = 200
 			if = {
@@ -402,6 +426,7 @@ promethean_expansion = {
 	allowed_to_target_tributaries = no
 
 	infamy_modifier = 1.5
+	sort_priority = 1900
 
 	can_use_gui = {
 		ROOT = {
@@ -411,11 +436,7 @@ promethean_expansion = {
 				AND = {
 					has_dlc = "Reapers"
 					any_realm_province = {
-						OR = {
-							has_province_modifier = depopulated_1
-							has_province_modifier = depopulated_2
-							has_province_modifier = depopulated_3
-						}
+						is_depopulated_trigger = yes
 					}
 				}
 				AND = {
@@ -430,6 +451,7 @@ promethean_expansion = {
 	
 	on_add = {
 		ROOT = { prestige = -500 }
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
 		if = {
 			limit = { defender = { is_offmap_governor = offmap_china } }
 			attacker = {  
@@ -534,6 +556,12 @@ promethean_expansion = {
 						type = invasion
 					}
 				}
+			}
+		}
+		hidden_tooltip = {
+			check_if_reconquista_finished_effect = yes
+			FROM = {
+				landless_pope_effect = yes
 			}
 		}
 	}

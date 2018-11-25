@@ -14,8 +14,8 @@ akhetaten_library;Great Library;;;;;;;;;;;;;x
 ###### Decisions;;;;;;;;;;;;;;x
 restore_luxor;Restore Luxor Temple;Restaurer le Temple de Luxor;Restore Luxor Temple;;Restore Luxor Temple;;;;;;;;;x
 restore_luxor_desc;Restore Luxor Temple to its former glory.;Restaurer le Temple de Luxor à la hauteur de son lustre d'antan.;Restore Luxor Temple to its former glory.;;Restore Luxor Temple to its former glory.;;;;;;;;;x
-restore_priesthood_egyptian_pagan;Restore the Paragon Xroj;Restaurer le Parangon Xroj;Restore the Paragon Xroj;;Restore the Paragon Xroj;;;;;;;;;x
-restore_priesthood_egyptian_pagan_desc;Restore the Paragon Xroj.;Restaurer le Parangon Xroj;Restore the Paragon Xroj;;Restore the Paragon Xroj;;;;;;;;;x
+restore_priesthood_egyptian_pagan_reformed;Restore the Paragon Xroj;Restaurer le Parangon Xroj;Restore the Paragon Xroj;;Restore the Paragon Xroj;;;;;;;;;x
+restore_priesthood_egyptian_pagan_reformed_desc;Restore the Paragon Xroj.;Restaurer le Parangon Xroj;Restore the Paragon Xroj;;Restore the Paragon Xroj;;;;;;;;;x
 luxor_restored_condition;The temple of Luxor is restored;;;;;;;;;;;;;x
 build_pyramid;Build a Pyramid;Construire une Pyramide;Build a Pyramid;;Build a Pyramid;;;;;;;;;x
 build_pyramid_desc;Build yourself a mighty tomb;Vous construire une tombe majestueuse.;Build yourself a mighty tomb;;Build yourself a mighty tomb;;;;;;;;;x

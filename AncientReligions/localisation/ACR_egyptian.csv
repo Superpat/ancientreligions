@@ -27,8 +27,8 @@ GOD_OSIRIS;Osiris;Osiris;Osiris;;Osiris;;;;;;;;;x
 GOD_ANUBIS;Anubis;Anubis;Anubis;;Anubis;;;;;;;;;x
 GOD_APEP;Apep;Apep;Apep;;Apep;;;;;;;;;x
 ###### Titles;;;;;;;;;;;;;;x
-d_egyptian_pagan;The Paragon Cult of Amun;Le Culte Parandon d'Amon;The Paragon Cult of Amun;;The Paragon Cult of Amun;;;;;;;;;x
-d_egyptian_pagan_adj;Cultist;Sectateur;Cultist;;Cultist;;;;;;;;;x
+d_egyptian_pagan_reformed;The Paragon Cult of Amun;Le Culte Parandon d'Amon;The Paragon Cult of Amun;;The Paragon Cult of Amun;;;;;;;;;x
+d_egyptian_pagan_reformed_adj;Cultist;Sectateur;Cultist;;Cultist;;;;;;;;;x
 d_anubis;Anubis Guard;Garde d'Anubis;Anubis Guard;;Anubis Guard;;;;;;;;;x
 d_anubis_adj;Guardian;Garde;Guardian;;Guardian;;;;;;;;;x
 borrowed_from_d_anubis;Borrowed from the Anubis Guard;;;;;;;;;;;;x

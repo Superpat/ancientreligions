@@ -611,22 +611,3 @@ character_event = {
 		piety = 50
 	}
 }
-
-# override of vanilla event to support Druidic
-#[on_reform_religion]
-narrative_event = {
-	id = celtic.9
-	hide_window = yes
-
-	is_triggered_only = yes
-	
-	religion = celtic_pagan_reformed
-
-	immediate = {
-		set_global_flag = celtic_pagan_reformation
-
-		d_celtic_pagan_reformed = { # kicks off circle member nominations
-			recalc_succession = yes
-		}
-	}
-}

@@ -23,6 +23,7 @@ character_event = {
 	ai = yes
 
 	trigger = {
+		always = no # disabled for now, because it may be responsible for CTDs
 		prestige = 100
 		lower_tier_than = DUKE
 		religion = hellenic_pagan

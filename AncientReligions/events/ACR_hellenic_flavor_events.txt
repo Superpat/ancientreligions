@@ -21,7 +21,7 @@ character_event = {
 	only_rulers = yes
 	
 	trigger = {
-		religion = hellenic_pagan
+		religion_openly_hellenic_or_reformed = yes
 		is_abroad = no
 		is_landed = yes
 	}
@@ -91,7 +91,7 @@ character_event = {
 	only_rulers = yes
 	
 	trigger = {
-		religion = hellenic_pagan
+		religion_openly_hellenic_or_reformed = yes
 		is_abroad = no
 		is_landed = yes
 	}

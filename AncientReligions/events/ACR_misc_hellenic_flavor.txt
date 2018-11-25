@@ -31,11 +31,7 @@ character_event = {
 	trigger = {
 		in_command = no
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 	}
 	
 	weight_multiplier = {
@@ -135,11 +131,7 @@ character_event = {
 	trigger = {
 		in_command = no
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 	}
 	
 	weight_multiplier = {
@@ -239,11 +231,7 @@ long_character_event = {
 	trigger = {
 		in_command = no
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 	}
 	
 	weight_multiplier = {
@@ -339,11 +327,7 @@ character_event = {
 	trigger = {
 		in_command = no
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 	}
 	
 	weight_multiplier = {
@@ -418,11 +402,7 @@ character_event = {
 	trigger = {
 		in_command = no
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		supernatural_events_trigger = yes
 	}
 	
@@ -556,11 +536,7 @@ character_event = {
 	trigger = {
 		in_command = no
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		NOT = { trait = ugly }
 		NOT = { trait = hunchback }
 		NOT = { trait = harelip }
@@ -703,11 +679,7 @@ character_event = {
 	trigger = {
 		in_command = no
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		any_demesne_province = {
 			culture_group = byzantine
 			religion = ROOT
@@ -784,11 +756,7 @@ character_event = {
 	trigger = {
 		in_command = no
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 	}
 	
 	weight_multiplier = {
@@ -892,11 +860,7 @@ character_event = {
 	trigger = {
 		in_command = no
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		NOT = { trait = ugly }
 		NOT = { trait = hunchback }
 		NOT = { trait = harelip }
@@ -1106,11 +1070,7 @@ character_event = {
 	trigger = {
 		in_command = no
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		NOT = { trait = ugly }
 		NOT = { trait = hunchback }
 		NOT = { trait = harelip }
@@ -1317,11 +1277,7 @@ character_event = {
 	trigger = {
 		in_command = no
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 	}
 	
 	weight_multiplier = {
@@ -1427,11 +1383,7 @@ character_event = {
 	trigger = {
 		in_command = no
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		NOT = {
 			any_demesne_province = {
 				has_province_modifier = VIET_nymph_protector
@@ -1509,11 +1461,7 @@ character_event = {
 	trigger = {
 		in_command = no
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		NOT = {
 			any_courtier = {
 				has_character_modifier = VIET_follower_of_cybele
@@ -1684,11 +1632,7 @@ character_event = {
 	trigger = {
 		in_command = no
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		capital_scope = {
 			religion = ROOT
 		}
@@ -1756,11 +1700,7 @@ character_event = {
 	trigger = {
 		in_command = no
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		any_courtier = {
 			is_female = no
 			NOT = { health_traits = 1 }
@@ -1927,11 +1867,7 @@ character_event = {
 	trigger = {
 		in_command = no
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		any_demesne_province = {
 			any_province_character = {
 				is_adult = yes
@@ -2038,11 +1974,7 @@ character_event = {
 	trigger = {
 		in_command = no
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 	}
 	
 	weight_multiplier = {
@@ -2108,11 +2040,7 @@ character_event = {
 	trigger = {
 		in_command = no
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 	}
 	
 	weight_multiplier = {
@@ -2185,11 +2113,7 @@ character_event = {
 	trigger = {
 		in_command = no
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		NOT = { has_character_flag = VIET_theseus_and_pirithous }
 		any_courtier = {
 			is_heir = no
@@ -2356,11 +2280,7 @@ character_event = {
 	trigger = {
 		in_command = no
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		NOT = { has_character_flag = VIET_who_is_fairest_goddess }
 	}
 	
@@ -2594,11 +2514,7 @@ character_event = {
 	trigger = {
 		in_command = no
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 	}
 	
 	weight_multiplier = {
@@ -2672,11 +2588,7 @@ character_event = {
 	trigger = {
 		in_command = no
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 	}
 	
 	weight_multiplier = {
@@ -2755,11 +2667,7 @@ character_event = {
 	trigger = {
 		in_command = no
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 	}
 	
 	weight_multiplier = {
@@ -2861,11 +2769,7 @@ character_event = {
 			has_character_flag =  VIET_stumbled_on_artemis
 			has_character_flag =  VIET_is_artemis_bff
 		}
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		NOR = { 
 			health_traits = 1
 			trait = inbred
@@ -3193,11 +3097,7 @@ character_event = {
 		is_abroad = no
 		has_character_flag =  VIET_hunted_with_artemis_twice
 		NOT = { has_character_flag = VIET_artemis_baklava }
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 	}
 
 	weight_multiplier = {
@@ -3275,11 +3175,7 @@ narrative_event = {
 		is_abroad = no
 		has_character_flag =  VIET_hunted_with_artemis_twice
 		NOT = { has_character_flag = VIET_apollo_visited }
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 	}
 
 	weight_multiplier = {
@@ -3361,11 +3257,7 @@ character_event = {
 	trigger = {
 		in_command = no 
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		OR = {
 			trait = envious
 			trait = wroth
@@ -3505,11 +3397,7 @@ character_event = {
 		in_command = no 
 		is_abroad = no
 		NOT = { has_character_flag =  VIET_hunted_with_artemis_twice }
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 	}
 	
 	immediate = {
@@ -3565,11 +3453,7 @@ character_event = {
 	trigger = {
 		in_command = no 
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 	}
 	
 	weight_multiplier = {
@@ -3609,11 +3493,7 @@ narrative_event = {
 		is_abroad = no
 		has_character_flag =  VIET_hunted_with_artemis_twice
 		NOT = { has_character_flag = VIET_artemis_relationship_advice }
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 	}
 	
 	weight_multiplier = {
@@ -3753,11 +3633,7 @@ narrative_event = {
 		is_abroad = no
 		has_character_flag =  VIET_apollo_visited
 		NOT = { has_character_flag = VIET_artemis_sibling_advice }
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		any_sibling = {
 			is_alive = yes
 			is_adult = yes
@@ -3851,11 +3727,7 @@ character_event = {
 		in_command = no 
 		is_abroad = no
 		has_character_flag = VIET_hunted_with_artemis_twice
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 	}
 	
 	mean_time_to_happen = {
@@ -3911,11 +3783,7 @@ character_event = {
 	trigger = {
 		in_command = no 
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		OR = {
 			trait = maimed
 			trait = wounded
@@ -4002,11 +3870,7 @@ character_event = {
 		in_command = no 
 		is_abroad = no
 		has_character_flag = VIET_hunted_with_artemis_twice
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 	}
 	
 	mean_time_to_happen = {
@@ -4091,11 +3955,7 @@ narrative_event = {
 		is_abroad = no
 		has_character_flag =  VIET_hunted_with_artemis_twice
 		NOT = { has_character_flag = VIET_artemis_hates_fanfiction_about_her }
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 	}
 	
 	weight_multiplier = {
@@ -4193,11 +4053,7 @@ character_event = {
 	has_character_flag = VIET_is_artemis_bff
 	
 	trigger = {
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}	
+		religion_openly_in_hellenic_subgroup_trigger = yes	
 		capital_scope = { 
 			religion = ROOT
 			NOT = { has_province_modifier = VIET_artemis_protects_province }
@@ -4247,11 +4103,7 @@ character_event = {
 	has_character_flag =  VIET_is_artemis_bff
 	
 	trigger = {
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		has_character_flag =  VIET_hunted_with_artemis_twice
 		has_character_flag =  VIET_apollo_visited
 		has_character_flag =  VIET_artemis_hates_fanfiction_about_her
@@ -4380,11 +4232,7 @@ character_event = {
 	has_character_flag =  VIET_is_artemis_bff
 	
 	trigger = {
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		has_character_flag =  VIET_hunted_with_artemis_twice
 		has_character_flag =  VIET_apollo_visited
 		NOT = { has_character_flag = VIET_artemis_zeus_interruption }
@@ -4489,11 +4337,7 @@ character_event = {
 	has_character_flag =  VIET_is_artemis_bff
 	
 	trigger = {
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		has_character_flag =  VIET_hunted_with_artemis_twice
 		has_character_flag =  VIET_apollo_visited
 		NOT = { has_character_flag = VIET_artemis_pranks_apollo }
@@ -4581,11 +4425,7 @@ character_event = {
 	has_character_flag =  VIET_is_artemis_bff
 	
 	trigger = {
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		has_character_flag =  VIET_hunted_with_artemis_twice
 		has_character_flag =  VIET_apollo_visited
 		NOT = { has_character_flag = VIET_artemis_apollo_argument }
@@ -4685,11 +4525,7 @@ character_event = {
 	has_character_flag =  VIET_is_artemis_bff
 	
 	trigger = {
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		has_character_flag =  VIET_hunted_with_artemis_twice
 		has_character_flag =  VIET_apollo_visited
 		NOT = { has_character_flag = VIET_artemis_complains_about_apollo }
@@ -4779,11 +4615,7 @@ character_event = {
 	has_character_flag = VIET_is_artemis_bff
 	
 	trigger = {
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		has_character_flag =  VIET_hunted_with_artemis_twice
 		NOT = { has_character_flag = VIET_ask_artemis_about_death }
 		NOT = { trait = incapable }
@@ -4866,11 +4698,6 @@ narrative_event = {
 	has_character_flag = VIET_is_artemis_bff
 	
 	trigger = {
-		#OR = {
-		#	religion = hellenic_pagan
-		#	religion = titan_pagan
-		#	religion = promethean_pagan
-		#}
 		#Character's actual religion doesn't matter, better to have a nice end
 		has_character_flag =  VIET_hunted_with_artemis_twice
 	}
@@ -4892,7 +4719,20 @@ narrative_event = {
 		name = hellenic.599.a
 		give_nickname = nick_cherished_of_diana 
 		custom_tooltip = { text = VIET_artemis_finally_a_lotr_reference }
-
+		if = {
+			limit = {
+				is_female = yes
+			}
+			create_bloodline = {
+				type = chosen_of_artemis_female
+				has_dlc = "Holy Fury"
+			}
+		} else = {
+			create_bloodline = {
+				type = chosen_of_artemis_male
+				has_dlc = "Holy Fury"
+			}
+		}
 		###############################
 		#
 		# Need to add event_target so character's name is saved for later events about hero cult?
@@ -4917,11 +4757,7 @@ character_event = {
 	has_character_flag = VIET_is_artemis_bff
 	
 	trigger = {
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		has_character_flag =  VIET_hunted_with_artemis_twice
 		NOT = { has_character_flag = VIET_artemis_boar_heroism }
 		NOT = { trait = incapable }
@@ -5089,11 +4925,7 @@ character_event = {
 	has_character_flag = VIET_is_artemis_bff
 	
 	trigger = {
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		has_character_flag =  VIET_hunted_with_artemis_twice
 		NOT = { has_character_flag = VIET_artemis_golden_hind_heroism }
 		NOT = { trait = incapable }
@@ -5246,11 +5078,7 @@ character_event = {
 		in_command = no 
 		is_abroad = no
 		has_character_flag = VIET_hunted_with_artemis_twice
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		has_disease_trigger = yes
 	}
 	
@@ -5286,11 +5114,7 @@ narrative_event = {
 	trigger = {
 		in_command = no 
 		is_abroad = no
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		OR = {
 			trait = incapable
 			trait = infirm
@@ -5349,11 +5173,7 @@ character_event = {
 	has_character_flag = VIET_is_artemis_bff
 	
 	trigger = {
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		has_character_flag =  VIET_hunted_with_artemis_twice
 		NOT = { has_character_flag = VIET_artemis_highwayman_heroism }
 		NOT = { trait = incapable }
@@ -5485,11 +5305,7 @@ character_event = {
 	has_character_flag = VIET_is_artemis_bff
 	
 	trigger = {
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		has_character_flag =  VIET_hunted_with_artemis_twice
 		NOT = { has_character_flag = VIET_artemis_temple_sex }
 		NOT = { has_character_modifier = VIET_heard_about_apollo_prank }
@@ -5606,11 +5422,7 @@ character_event = {
 	has_character_flag = VIET_is_artemis_bff
 
 	trigger = {
-		OR = {
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		religion_openly_in_hellenic_subgroup_trigger = yes
 		has_character_flag =  VIET_hunted_with_artemis_twice
 		NOT = { has_character_flag = VIET_artemis_sex_question }
 		NOT = { trait = celibate }

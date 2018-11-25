@@ -1,80 +1,16 @@
 decisions = {
-	recreate_pontificate = {
-		only_playable = yes
-		is_high_prio = yes
-		potential = {
-			religion = hellenic_pagan
-			primary_title = { higher_real_tier_than = DUKE }
-			independent = yes
-			d_hellenic_pagan = {
-				has_holder = no #Covers the case of destroyed title considered active
-			}
-		}
-		allow = {
-			age = 16
-			prisoner = no
-
-			c_roma = { holder = ROOT }
-			OR = {
-				completely_controls = d_latium
-				e_byzantium = { holder = ROOT }
-				e_roman_empire = { holder = ROOT }
-				e_latin_empire = { holder = ROOT }
-			}
-			piety = 500
-			prestige = 300
-			religion_authority = 0.5
-		}
-		effect = {
-			piety = -500
-			prestige = -300
-			activate_title = { title = d_hellenic_pagan status = yes }
-			d_hellenic_pagan = {
-				grant_title = PREV
-			}
-			religion_authority = { modifier = pontifex_restored }
-			hidden_tooltip = {
-				narrative_event = { id = hellenic.104 }
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 0
-				NOT = {
-					prestige = 500
-				}
-			}
-			modifier = {
-				factor = 0
-				NOT = {
-					piety = 700
-				}
-			}			
-			modifier = {
-				factor = 0
-				trait = content
-			}
-			modifier = {
-				factor = 0
-				NOT = { diplomacy = 10 }
-			}			
-		}
-	}
-
 	organize_sacred_band = {
 		only_playable = yes
 		is_high_prio = yes
 		potential = {
 			higher_tier_than = count
-			religion = hellenic_pagan
+			religion = hellenic_pagan_reformed
 			has_regent = no
 			NOT = { has_global_flag = sacred_band_founded }
 		}
 		allow = {
 			tier = emperor
-			d_hellenic_pagan = { owner = { always = yes } } # There is currently a Pontifex Maximus
+			k_hellenic_pagan_reformed = { owner = { always = yes } } # There is currently a Pontifex Maximus
 			prestige = 300
 			wealth = 300
 		}
@@ -837,10 +773,10 @@ targetted_decisions = {
 		ai_target_filter = court
 
 		from_potential = {
-			religion = hellenic_pagan
-			NOT = { has_landed_title = d_hellenic_pagan }
-			d_hellenic_pagan = { owner = { always = yes } } # There is currently a Pontifex Maximus
-			d_hellenic_pagan = { owner = { NOT = { check_variable = { which = "num_vestales" value = 5 } } } } # The College of the Vestales has a seat open.
+			religion = hellenic_pagan_reformed
+			NOT = { has_landed_title = k_hellenic_pagan_reformed }
+			k_hellenic_pagan_reformed = { owner = { always = yes } } # There is currently a Pontifex Maximus
+			k_hellenic_pagan_reformed = { owner = { NOT = { check_variable = { which = "num_vestales" value = 5 } } } } # The College of the Vestales has a seat open.
 		}
 
 		potential = {
@@ -861,14 +797,14 @@ targetted_decisions = {
 			NOT = { trait = bastard }
 			NOT = { trait = legit_bastard }
 			NOT = { trait = child_of_consort }
-			religion = hellenic_pagan
-			father_even_if_dead = { religion = hellenic_pagan }
-			mother = { religion = hellenic_pagan }
+			religion = hellenic_pagan_reformed
+			father_even_if_dead = { religion = hellenic_pagan_reformed }
+			mother = { religion = hellenic_pagan_reformed }
 		}
 
 		effect = {
 			set_character_flag = flag_nominated_as_vestalis
-			d_hellenic_pagan = { owner = { character_event = { id = hellenic.124 days = 1 } } }
+			k_hellenic_pagan_reformed = { owner = { character_event = { id = hellenic.124 days = 1 } } }
 		}
 
 		ai_will_do = {
@@ -893,11 +829,11 @@ targetted_decisions = {
 			}
 			modifier = {
 				factor = 0.8
-				NOT = { d_hellenic_pagan = { owner = { reverse_opinion = { who = FROM value = -40 } } } }
+				NOT = { k_hellenic_pagan_reformed = { owner = { reverse_opinion = { who = FROM value = -40 } } } }
 			}
 			modifier = {
 				factor = 1.25
-				d_hellenic_pagan = { owner = { reverse_opinion = { who = FROM value = 40 } } }
+				k_hellenic_pagan_reformed = { owner = { reverse_opinion = { who = FROM value = 40 } } }
 			}
 		}
 	}

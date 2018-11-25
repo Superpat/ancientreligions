@@ -1120,6 +1120,9 @@ can_be_marshal_trigger = {
 			is_adult = yes
 		}
 		has_character_flag = special_marshal
+		any_owned_bloodline = {
+			has_bloodline_flag = bloodline_female_marshal
+		}
 	}
 	
 	independent = no

@@ -210,13 +210,6 @@ on_death = {
 	}
 }
 
-# When a pagan religion is reformed
-on_reform_religion = {
-	events = {
-		celtic.9	# celtic pagan reformation
-	}
-}
-
 # When the religion changes in a county
 on_county_religion_change = {
 	events = {

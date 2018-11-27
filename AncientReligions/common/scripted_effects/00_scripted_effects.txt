@@ -4025,21 +4025,30 @@ add_crusade_trait_effect = {
 		limit = {
 			OR = {
 				religion = celtic_pagan
-				religion = celtic_pagan_reformed
+				AND = {
+					religion = celtic_pagan_reformed
+					NOT = { has_religion_feature = religion_feature_matriarchal }
+				}
 			}
 		}
 		add_trait = lughs_own
 	}
 	if = {
 		limit = {
-			religion = britannic_pagan
+			OR = {
+				religion = britannic_pagan
+				AND = {
+					religion = celtic_pagan_reformed
+					has_religion_feature = religion_feature_matriarchal
+				}
+			}
 		}
 
 		add_trait = morrigan
 	}
 	if = {
 		limit = {
-			religion = egyptian_pagan
+			religion_openly_egyptian_or_reformed_trigger = yes
 		}
 		add_trait = montu
 	}
@@ -9851,7 +9860,54 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	clr_character_flag = character_was_bon
 		break = yes
     }
-	
+	if = {
+    	limit = {
+    		OR = {
+    			AND = {
+    				NOT = {
+						has_character_was_religion_flag_trigger = yes
+    				}
+    				religion = bon_reformed
+    			}
+    			has_character_flag = character_was_bon_reformed
+			}
+    	}
+    	set_secret_religion = bon_reformed	
+    	clr_character_flag = character_was_bon_reformed
+		break = yes
+    }
+	if = {
+    	limit = {
+    		OR = {
+    			AND = {
+    				NOT = {
+						has_character_was_religion_flag_trigger = yes
+    				}
+    				religion = hellenic_pagan
+    			}
+    			has_character_flag = character_was_hellenic_pagan
+			}
+    	}
+    	set_secret_religion = hellenic_pagan
+    	clr_character_flag = character_was_hellenic_pagan
+		break = yes
+    }
+	if = {
+    	limit = {
+    		OR = {
+    			AND = {
+    				NOT = {
+						has_character_was_religion_flag_trigger = yes
+    				}
+    				religion = hellenic_pagan_reformed
+    			}
+    			has_character_flag = character_was_hellenic_pagan_reformed
+			}
+    	}
+    	set_secret_religion = hellenic_pagan_reformed
+    	clr_character_flag = character_was_hellenic_pagan_reformed
+		break = yes
+    }
 	if = {
     	limit = {
     		OR = {
@@ -10141,6 +10197,136 @@ add_secret_religion_trait_trigger_is_religion_or_old_religion_flag_clear_flag_af
     	clr_character_flag = character_was_zun_pagan
 		break = yes
     }
+
+	### ACR ###
+    if = {
+    	limit = {
+    		OR = {
+    			AND = {
+    				NOT = {
+						has_character_was_religion_flag_trigger = yes
+    				}
+    				religion = celtic_pagan
+    			}
+    			has_character_flag = character_was_celtic_pagan
+			}
+    	}
+    	set_secret_religion = celtic_pagan
+    	clr_character_flag = character_was_celtic_pagan
+		break = yes
+    }
+    if = {
+    	limit = {
+    		OR = {
+    			AND = {
+    				NOT = {
+						has_character_was_religion_flag_trigger = yes
+    				}
+    				religion = celtic_pagan_reformed
+    			}
+    			has_character_flag = character_was_celtic_pagan_reformed
+			}
+    	}
+    	set_secret_religion = celtic_pagan_reformed
+    	clr_character_flag = character_was_celtic_pagan_reformed
+		break = yes
+    }
+    if = {
+    	limit = {
+    		OR = {
+    			AND = {
+    				NOT = {
+						has_character_was_religion_flag_trigger = yes
+    				}
+    				religion = britannic_pagan
+    			}
+    			has_character_flag = character_was_britannic_pagan
+			}
+    	}
+    	set_secret_religion = britannic_pagan
+    	clr_character_flag = character_was_britannic_pagan
+		break = yes
+    }
+    if = {
+    	limit = {
+    		OR = {
+    			AND = {
+    				NOT = {
+						has_character_was_religion_flag_trigger = yes
+    				}
+    				religion = titan_pagan
+    			}
+    			has_character_flag = character_was_titan_pagan
+			}
+    	}
+    	set_secret_religion = titan_pagan
+    	clr_character_flag = character_was_titan_pagan
+		break = yes
+    }
+    if = {
+    	limit = {
+    		OR = {
+    			AND = {
+    				NOT = {
+						has_character_was_religion_flag_trigger = yes
+    				}
+    				religion = promethean_pagan
+    			}
+    			has_character_flag = character_was_promethean_pagan
+			}
+    	}
+    	set_secret_religion = promethean_pagan
+    	clr_character_flag = character_was_promethean_pagan
+		break = yes
+    }
+    if = {
+    	limit = {
+    		OR = {
+    			AND = {
+    				NOT = {
+						has_character_was_religion_flag_trigger = yes
+    				}
+    				religion = egyptian_pagan
+    			}
+    			has_character_flag = character_was_egyptian_pagan
+			}
+    	}
+    	set_secret_religion = egyptian_pagan
+    	clr_character_flag = character_was_egyptian_pagan
+		break = yes
+    }
+    if = {
+    	limit = {
+    		OR = {
+    			AND = {
+    				NOT = {
+						has_character_was_religion_flag_trigger = yes
+    				}
+    				religion = egyptian_pagan_reformed
+    			}
+    			has_character_flag = character_was_egyptian_pagan_reformed
+			}
+    	}
+    	set_secret_religion = egyptian_pagan_reformed
+    	clr_character_flag = character_was_egyptian_pagan_reformed
+		break = yes
+    }
+    if = {
+    	limit = {
+    		OR = {
+    			AND = {
+    				NOT = {
+						has_character_was_religion_flag_trigger = yes
+    				}
+    				religion = aten_pagan
+    			}
+    			has_character_flag = character_was_aten_pagan
+			}
+    	}
+    	set_secret_religion = aten_pagan
+    	clr_character_flag = character_was_aten_pagan
+		break = yes
+    }	
 }
 
 add_religion_char_flag_effect = {
@@ -10359,10 +10545,6 @@ add_religion_char_flag_effect = {
     	set_character_flag = character_was_britannic_pagan
     }
     if = {
-    	limit = { religion = hellenic_pagan }
-    	set_character_flag = character_was_hellenic_pagan
-    }
-    if = {
     	limit = { religion = promethean_pagan }
     	set_character_flag = character_was_promethean_pagan
     }
@@ -10373,6 +10555,10 @@ add_religion_char_flag_effect = {
     if = {
     	limit = { religion = egyptian_pagan }
     	set_character_flag = character_was_egyptian_pagan
+    }
+	if = {
+    	limit = { religion = egyptian_pagan_reformed }
+    	set_character_flag = character_was_egyptian_pagan_reformed
     }
     if = {
     	limit = { religion = aten_pagan }
@@ -10422,6 +10608,7 @@ clr_religion_char_flag_effect = {
 	clr_character_flag = character_was_finnish_pagan_reformed
 	clr_character_flag = character_was_west_african_pagan_reformed
 	clr_character_flag = character_was_zun_pagan_reformed
+	clr_character_flag = character_was_hellenic_pagan_reformed
 	clr_character_flag = character_was_norse_pagan
 	clr_character_flag = character_was_slavic_pagan
 	clr_character_flag = character_was_tengri_pagan
@@ -10429,15 +10616,16 @@ clr_religion_char_flag_effect = {
 	clr_character_flag = character_was_finnish_pagan
 	clr_character_flag = character_was_west_african_pagan
 	clr_character_flag = character_was_zun_pagan
+	clr_character_flag = character_was_hellenic_pagan
 	clr_character_flag = character_was_aztec
 	clr_character_flag = character_was_aztec_reformed
 
 	clr_character_flag = character_was_celtic_pagan
 	clr_character_flag = character_was_celtic_pagan_reformed
-	clr_character_flag = character_was_hellenic_pagan
 	clr_character_flag = character_was_promethean_pagan
 	clr_character_flag = character_was_titan_pagan
 	clr_character_flag = character_was_egyptian_pagan
+	clr_character_flag = character_was_egyptian_pagan_reformed
 	clr_character_flag = character_was_aten_pagan
 }
 
@@ -10769,6 +10957,12 @@ event_target_old_religion_from_flag_effect = {
     	}
     }
 	if = {
+    	limit = { has_character_flag = character_was_hellenic_pagan_reformed }
+    	hellenic_pagan_reformed = {
+    		save_event_target_as = old_religion
+    	}
+    }
+	if = {
     	limit = { has_character_flag = character_was_promethean_pagan }
     	promethean_pagan = {
     		save_event_target_as = old_religion
@@ -10783,6 +10977,12 @@ event_target_old_religion_from_flag_effect = {
 	if = {
     	limit = { has_character_flag = character_was_egyptian_pagan }
     	egyptian_pagan = {
+    		save_event_target_as = old_religion
+    	}
+    }
+	if = {
+    	limit = { has_character_flag = character_was_egyptian_pagan_reformed }
+    	egyptian_pagan_reformed = {
     		save_event_target_as = old_religion
     	}
     }
@@ -12885,17 +13085,6 @@ flip_secret_religious_community_provinces = {
 				}
 			}
 		}
-		secret_religious_society_hellenic_pagan = { 
-			ROOT = {
-				any_demesne_province = {
-					limit = {
-						has_province_modifier = secret_hellenic_pagan_community
-					}
-					religion = hellenic_pagan
-					remove_province_modifier = secret_hellenic_pagan_community
-				}
-			}
-		}
 		secret_religious_society_promethean_pagan = { 
 			ROOT = {
 				any_demesne_province = {
@@ -12926,6 +13115,17 @@ flip_secret_religious_community_provinces = {
 					}
 					religion = egyptian_pagan
 					remove_province_modifier = secret_egyptian_pagan_community
+				}
+			}
+		}
+		secret_religious_society_egyptian_pagan_reformed = { 
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_egyptian_pagan_reformed_community
+					}
+					religion = egyptian_pagan_reformed
+					remove_province_modifier = secret_egyptian_pagan_reformed_community
 				}
 			}
 		}
@@ -22984,6 +23184,34 @@ transfer_crown_on_abdication_effect = {
 				} 
 			}
 	}
+	if = {
+		limit = { 
+			has_landed_title = d_celtic_pagan_reformed
+			any_artifact = { artifact_type = crown_celtic_fylkir }
+		}
+			current_heir = { save_event_target_as = crown_celtic_fylkir_heir }
+			any_artifact = { 
+				limit = { artifact_type = crown_celtic_fylkir }
+				transfer_artifact = {
+					from = PREV
+					to = event_target:crown_celtic_fylkir_heir
+				} 
+			}
+	}
+	if = {
+		limit = { 
+			has_landed_title = d_egyptian_pagan_reformed
+			any_artifact = { artifact_type = crown_egyptian_fylkir }
+		}
+			current_heir = { save_event_target_as = crown_egyptian_fylkir_heir }
+			any_artifact = { 
+				limit = { artifact_type = crown_egyptian_fylkir }
+				transfer_artifact = {
+					from = PREV
+					to = event_target:crown_egyptian_fylkir_heir
+				} 
+			}
+	}
 	#Now transfer all other remaining artifacts to the player_heir, who may or may not be the current_heir.
 	player_heir = { save_event_target_as = scoped_player_heir }
 	any_artifact = { 
@@ -23002,6 +23230,8 @@ transfer_crown_on_abdication_effect = {
 				artifact_type = scepter_bon_fylkir 
 				artifact_type = crown_aztec_fylkir
 				artifact_type = scepter_hellenic_fylkir 
+				artifact_type = crown_celtic_fylkir
+				artifact_type = crown_egyptian_fylkir
 			}
 		}
 		transfer_artifact = {

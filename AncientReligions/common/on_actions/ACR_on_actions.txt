@@ -1,7 +1,7 @@
 on_startup = { 
 	events = {
 		ancrel.9010 # set ancrel global flag when game begins
-		ancrel.9023 # Pelagon update bug fix for Thebes
+		ancrel.9023 # event to fix problems between updates
 	}
 }
 

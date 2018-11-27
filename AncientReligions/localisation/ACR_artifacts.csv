@@ -1,5 +1,7 @@
 silver_hand_of_nuada;Silver Hand of Nuada;;;;;;;;;;;;;x
 silver_hand_of_nuada_desc;This ornate prosthetic hand is crafted from purest silver and covered in elaborate runes and filigree. According to legend, this is the very silver hand that was made by Creidnhe and attached by Dian Cecht to replace the great King Nuada's hand, lost in battle to the Fir Bolg champion Sreng.;;;;;;;;;;;;;x
+spear_of_lugh;Gae Assail;;;;;;;;;;;;;x
+spear_of_lugh_desc;The spear of Lugh, Gae Assail is said to be "impossible to overcome" and that certain magic words could guarantee it would hit it's target when thrown and to have it return magically to the wielders hands.;;;;;;;;;;;;;x
 trident_of_britannia;Y Tair Tonnau;;;;;;;;;;;;;x
 trident_of_britannia_desc;The Three Waves, the trident of Britannia. Britannic scripture says Britannia used Y Tair Tonnau to create the world out of the primordial ocean. The first prong raised the land from the depths, the second created the lakes and rivers, the third created life. The trident knows it's true master is The Holy Mother, and will not give it's tremendous powers to anyone else. Even without such powerful magic, The Three Waves is a formidable weapon.;;;;;;;;;;;;;x
 helm_of_britannia;Britannia's Helm;;;;;;;;;;;;;x
@@ -24,7 +26,7 @@ battersea_shield_desc;This bronze tower shield is masterfully decorated. Pieces 
 nimean_lion_skin;Nimean Lionskin;;;;;;;;;;;;;x
 nimean_lion_skin_desc;This hooded cloak has been made from the hide of a large, black-maned lion. The skull has been fitted with a padded leather cap to serve as a helm. Many believe this to be the Nimean Lion's skin, the very hide worn by Heracles during his final 11 labors.;;;;;;;;;;;;;x
 kronium;Kronium;;;;;;;;;;;;;x
-kronium_desc;This large, uncut ruby is dark and lumpy, with sharp edges here and there. It gives the general impression of a scab or blood clot. Perhaps this is why the gem is believed to be the blood of Kronos, shed from wounds endured in the Titanomachy and crystalized over the millenia. No one knows how many of these stones exist, but they are greatly prized by the Titan's worshippers.;;;;;;;;;;;;;x
+kronium_desc;This large, uncut ruby is dark and lumpy, with sharp edges here and there. It gives the general impression of a scab or blood clot. Perhaps this is why the gem is believed to be the blood of Kronos, shed from wounds endured in the Titanomachy and crystalized over the millenia. No one knows how many of these stones exist, but they are greatly prized by the titan's worshippers.;;;;;;;;;;;;;x
 caesars_robe;Bloody Robes of Caesar;;;;;;;;;;;;;x
 caesars_robe_desc;This bloodstained toga is said to be the very same one worn by Gaius Julius Caesar the day he was assassinated. Caesar was deified after his death, making these robes one of the holiest objects in Roman religion.;;;;;;;;;;;;;x
 aethons_feather;Aethonian Feather;;;;;;;;;;;;;x
@@ -32,7 +34,7 @@ aethons_feather_desc;This huge reddish-brown feather is said to have come from t
 achilles_shield_complete;Achilles Shield;;;;;;;;;;;;;x
 achilles_shield_complete_desc;The shield given to Achilles by Hephaestus, at the bidding of his mother Thetis. It has been reforged from fragments and is a splendid piece of craftsmanship.;;;;;;;;;;;;;x
 hectors_armor;Hector's Armor;;;;;;;;;;;;;x
-hectors_armor_desc;A breastplate of hardened, oil-brushed bronze fitted to well-made leather armor. A large Iota embossed on the front in gold declares allegiance to Ilium This armor is believed to be that worn by Hector, as told in The Iliad It was taken by Achilles after he defeated Hector, and until now it was lost to history.;;;;;;;;;;;;;x
+hectors_armor_desc;A breastplate of hardened, oil-brushed bronze fitted to well-made leather armor. A large Iota embossed on the front in gold declares allegiance to Ilium. This armor is believed to be that worn by Hector. As told in The Iliad it was taken by Achilles after he defeated Hector, and until now it was lost to history.;;;;;;;;;;;;;x
 odysseus_bow;Odysseus' Bow;;;;;;;;;;;;;x
 odysseus_blow_desc;This large, black recurve bow is made of many layers of horn glued together. The curve is more dramatic than normal, requiring tremendous strength to string and draw. This has been taken to mean it is the bow of Odysseus himself, the legendary hero of The Odyssey.;;;;;;;;;;;;;x
 mask_of_agamemnon;Death Mask of Agamemnon;;;;;;;;;;;;;x
@@ -48,7 +50,7 @@ gold_amphora_desc;This ancient amphora is made of high quality gold. It is said 
 sphinx_claw;Sphinx Claw;;;;;;;;;;;;;x
 sphinx_claw_desc;A huge claw, jet-black and incredibly sharp. Said to be from the paw of a sphinx slain by some hero in ancient times.;;;;;;;;;;;;;x
 golden_apple;Golden Apple;;;;;;;;;;;;;x
-golden_apple_desc;An apple made of solid gold. Some say that either cursed touch of King Midas created this apple. Others say that it is the Apple of Discord which Eris threw onto Olympus, ultimately leading to the Trojan War.;;;;;;;;;;;;;x
+golden_apple_desc;An apple made of solid gold. Some say that the cursed touch of King Midas created this apple. Others say that it is the Apple of Discord which Eris threw onto Olympus, ultimately leading to the Trojan War.;;;;;;;;;;;;;x
 corinthian_helm;Corinthian Helm;;;;;;;;;;;;;x
 corinthian_helm_desc;An ancient relic, this helm belonged to a great warrior or prince.;;;;;;;;;;;;;x
 tongue_of_oracle;Petrified Tongue of an Oracle;;;;;;;;;;;;;x
@@ -56,4 +58,4 @@ tongue_of_oracle_desc;A small stone said to be the petrified tongue of an ancien
 silver_amphora;Silver Amphora;;;;;;;;;;;;;x
 silver_amphora_desc;A beautiful amphora made from fine silver and decorated with reliefs of humans and satyrs celebrating a bountiful harvest at the feet of Demeter.;;;;;;;;;;;;;x
 achilles_shield_piece;Shard of Achilles Shield;;;;;;;;;;;;;x
-achilles_shield_piece_desc;This shard of metal bares reliefs of battle scenes that may match the descriptions of Achilles shield from The Illiad. Perhaps if you found more...;;;;;;;;;;;;;x
+achilles_shield_piece_desc;This shard of metal bares reliefs of battle scenes that match the descriptions of Achilles shield from The Illiad. Perhaps if you found more...;;;;;;;;;;;;;x

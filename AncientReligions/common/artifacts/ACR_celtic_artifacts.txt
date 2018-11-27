@@ -2,8 +2,8 @@
 
 silver_hand_of_nuada = {
 	quality = 5
-	monthly_prestige = 0.5
-	monthly_piety = 0.5
+	monthly_character_prestige = 0.5
+	monthly_character_piety = 0.5
 	stewardship = 3
 	active = {
 		religion_openly_in_celtic_subgroup_trigger = yes
@@ -17,11 +17,34 @@ silver_hand_of_nuada = {
 	indestructible = yes
 }
 
+spear_of_lugh = {
+	quality = 5
+	monthly_character_prestige = 0.5
+	martial = 3
+	combat_rating = 25
+	same_religion_opinion = 5
+	command_modifier = {
+		cavalry = 0.1
+		morale_offence = 0.1
+	}
+	active = {
+		religion_openly_celtic_or_reformed_trigger = yes
+	}
+	stacking = no
+	allowed_gift = {
+		religion_openly_celtic_or_reformed_trigger = yes
+	}
+	flags = { celtic_pagan religious unique combat troops_morale }
+	slot = weapon
+	picture = GFX_strange_chest
+	indestructible = yes
+}
+
 trident_of_britannia = {
 	quality = 5
-	monthly_prestige = 0.5
+	monthly_character_prestige = 0.5
 	martial = 3
-	combat_rating = 1
+	combat_rating = 25
 	same_religion_opinion = 5
 	command_modifier = {
 		cavalry = 0.1
@@ -42,9 +65,9 @@ trident_of_britannia = {
 
 helm_of_britannia = {
 	quality = 5
-	monthly_piety = 0.5
+	monthly_character_piety = 0.5
 	martial = 5
-	combat_rating = 1
+	combat_rating = 10
 	same_religion_opinion = 5
 	command_modifier = {
 		heavy_infantry = 0.1
@@ -65,7 +88,7 @@ helm_of_britannia = {
 shield_of_britannia = {
 	quality = 5
 	martial = 1
-	combat_rating = 5
+	combat_rating = 20
 	same_religion_opinion = 5
 	command_modifier = {
 		light_infantry = 0.1
@@ -86,7 +109,7 @@ shield_of_britannia = {
 
 skull_of_brigid = {
 	quality = 4
-	monthly_piety = 0.5
+	monthly_character_piety = 0.5
 	learning = 1
 	same_religion_opion = 10
 	global_tax_modifier = 0.05
@@ -114,8 +137,8 @@ skull_of_brigid = {
 
 horn_of_bran_galed = {
 	quality = 4
-	monthly_prestige = 0.1
-	monthly_piety = 0.1
+	monthly_character_prestige = 0.1
+	monthly_character_piety = 0.1
 	martial = 1
 	global_levy_size = 0.05
 	command_modifier = {
@@ -136,7 +159,7 @@ tusk_of_torc_triath = {
 	quality = 3
 	montly_prestige = 0.5
 	same_religion_opinion = 10
-	combat_rating = 2
+	combat_rating = 20
 	active = {
 		religion_openly_in_celtic_subgroup_trigger = yes
 	}
@@ -150,7 +173,7 @@ tusk_of_torc_triath = {
 
 torque_of_boudicca = {
 	quality = 2
-	monthly_prestige = 0.1
+	monthly_character_prestige = 0.1
 	short_reign_length = -3
 	active = {
 		OR = {
@@ -172,7 +195,7 @@ torque_of_boudicca = {
 
 old_carnyx = {
 	quality = 2
-	monthly_prestige = 0.05
+	monthly_character_prestige = 0.05
 	command_modifier = {
 		morale_defence = 0.10
 		morale_offence = 0.10
@@ -196,7 +219,7 @@ old_carnyx = {
 
 horned_helm = {
 	quality = 2
-	monthly_prestige = 0.1
+	monthly_character_prestige = 0.1
 	active = {
 		OR = {
 			religion_openly_in_celtic_subgroup_trigger = yes
@@ -216,7 +239,7 @@ horned_helm = {
 
 battersea_shield = {
 	quality = 2
-	monthly_prestige = 0.1
+	monthly_character_prestige = 0.1
 	command_modifier = {
 		heavy_infantry = 0.1
 	}

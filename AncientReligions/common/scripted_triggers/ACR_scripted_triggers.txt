@@ -1,12 +1,18 @@
 # Character has a religion allowing women to hold councillor positions, equal succession laws, etc.
 is_feminist_religion_trigger = {
 	OR = {
-		religion = celtic_pagan_reformed
 		religion = celtic_pagan
+		AND = {
+			religion = celtic_pagan_reformed
+			NOT = { has_dlc = "Holy Fury" }
+		}
 		religion = britannic_pagan
 		religion = promethean_pagan
 		religion = messalian
 		religion = cathar
+		has_religion_feature = religion_feature_matriarchal
+		has_religion_feature = religion_feature_equal
+		has_religion_feature = religion_feature_bon
 	}
 }
 
@@ -120,10 +126,10 @@ is_ancient_religion_trigger = {
 		religion = celtic_pagan
 		religion = celtic_pagan_reformed
 		religion = britannic_pagan
-		religion = hellenic_pagan
 		religion = promethean_pagan
 		religion = titan_pagan
 		religion = egyptian_pagan
+		religion = egyptian_pagan_reformed
 		religion = aten_pagan
 	}
 }
@@ -178,6 +184,9 @@ has_character_was_religion_flag_trigger = {
 		has_character_flag = character_was_manichean
 		has_character_flag = character_was_khurmazta
 		has_character_flag = character_was_bon
+		has_character_flag = character_was_bon_reformed
+		has_character_flag = character_was_hellenic_pagan
+		has_character_flag = character_was_hellenic_pagan_reformed
 		has_character_flag = character_was_taoist
 		has_character_flag = character_was_hindu
 		has_character_flag = character_was_buddhist
@@ -202,10 +211,10 @@ has_character_was_religion_flag_trigger = {
 		has_character_flag = character_was_celtic_pagan
 		has_character_flag = character_was_celtic_pagan_reformed
 		has_character_flag = character_was_britanic_pagan
-		has_character_flag = character_was_hellenic_pagan
 		has_character_flag = character_was_promethean_pagan
 		has_character_flag = character_was_titan_pagan
 		has_character_flag = character_was_egyptian_pagan
+		has_character_flag = character_was_egyptian_pagan_reformed
 		has_character_flag = character_was_aten_pagan
 	}
 }
@@ -252,6 +261,27 @@ true_religion_hellenic_or_reformed_trigger = {
 	}
 }
 
+religion_openly_egyptian_or_reformed_trigger = {
+	OR = {
+		religion = egyptian_pagan
+		religion = egyptian_pagan_reformed
+	}
+}
+
+religion_secretly_egyptian_or_reformed_trigger = {
+	OR = {
+		secret_religion = egyptian_pagan
+		secret_religion = egyptian_pagan_reformed
+	}
+}
+
+true_religion_egyptian_or_reformed_trigger = {
+	OR = {
+		true_religion = egyptian_pagan
+		true_religion = egyptian_pagan_reformed
+	}
+}
+
 religion_openly_in_celtic_subgroup_trigger = {
 	custom_tooltip = {
 		text = religion_openly_celtic_or_reformed_tooltip
@@ -284,6 +314,7 @@ religion_openly_in_egyptian_subgroup_trigger = {
 		hidden_trigger = {
 			OR = {
 				religion = egyptian_pagan
+				religion = egyptian_pagan_reformed
 				religion = aten_pagan
 			}
 		}
@@ -322,6 +353,7 @@ religion_secretly_in_egyptian_subgroup_trigger = {
 		hidden_trigger = {
 			OR = {
 				secret_religion = egyptian_pagan
+				secret_religion = egyptian_pagan_reformed
 				secret_religion = aten_pagan
 			}
 		}
@@ -360,6 +392,7 @@ true_religion_in_egyptian_subgroup_trigger = {
 		hidden_trigger = {
 			OR = {
 				true_religion = egyptian_pagan
+				true_religion = egyptian_pagan_reformed
 				true_religion = aten_pagan
 			}
 		}

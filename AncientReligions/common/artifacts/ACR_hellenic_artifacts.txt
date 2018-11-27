@@ -3,8 +3,8 @@
 
 nimean_lion_skin = {
     quality = 5
-    monthly_prestige = 0.5
-    monthly_piety = 0.5
+    monthly_character_prestige = 0.5
+    monthly_character_piety = 0.5
     martial = 3
     command_modifier = {
         morale_offence = 0.20
@@ -24,8 +24,8 @@ nimean_lion_skin = {
 
 kronium = {
     quality = 5
-    monthly_prestige = 0.5
-    monthly_piety = 0.5
+    monthly_character_prestige = 0.5
+    monthly_character_piety = 0.5
     same_religion_opinion = 10
     global_tax_modifier = 0.05
     active = {
@@ -48,7 +48,7 @@ kronium = {
 
 caesars_robe = {
     quality = 5
-    monthly_piety = 0.5
+    monthly_character_piety = 0.5
     short_reign_length = -5
     same_religion_opinion = 10
     global_levy_size = 0.05
@@ -72,8 +72,8 @@ caesars_robe = {
 
 aethons_feather = {
     quality = 5
-    monthly_prestige = 1
-    monthly_piety = 0.5
+    monthly_character_prestige = 1
+    monthly_character_piety = 0.5
     command_modifier = {
         speed = 0.10
         retreat = 0.10
@@ -99,10 +99,10 @@ aethons_feather = {
 
 achilles_shield_complete = {
     quality = 4
-    monthly_piety = 0.5
-    monthly_prestige = 1
+    monthly_character_piety = 0.5
+    monthly_character_prestige = 1
     martial = 3
-    combat_rating = 5
+    combat_rating = 25
     command_modifier = {
         morale_defence = 0.10
     }
@@ -120,10 +120,10 @@ achilles_shield_complete = {
 
 hectors_armor = {
     quality = 4
-    monthly_piety = 1
-    monthly_prestige = 0.5
+    monthly_character_piety = 1
+    monthly_character_prestige = 0.5
     martial = 1
-    combat_rating = 10 
+    combat_rating = 15 
     command_modifier = {
         heavy_infantry = 0.20
     }
@@ -141,10 +141,10 @@ hectors_armor = {
 
 odysseus_bow = {
     quality = 4
-    monthly_piety = 0.5
-    monthly_prestige = 0.5
+    monthly_character_piety = 0.5
+    monthly_character_prestige = 0.5
     intrigue = 3
-    combat_rating = 10
+    combat_rating = 20
     command_modifier = {
         archers = 0.10
         horse_archers = 0.10
@@ -164,8 +164,8 @@ odysseus_bow = {
 
 mask_of_agamemnon = {
     quality = 4
-    monthly_piety = 0.5
-    monthly_prestige = 0.5
+    monthly_character_piety = 0.5
+    monthly_character_prestige = 0.5
     vassal_opinion = 10
     active = {
         religion_openly_in_hellenic_subgroup_trigger = yes
@@ -181,8 +181,8 @@ mask_of_agamemnon = {
 
 crown_of_theseus = {
     quality = 4
-    monthly_piety = 0.5
-    monthly_prestige = 0.5
+    monthly_character_piety = 0.5
+    monthly_character_prestige = 0.5
     short_reign_length = -5
     active = {
         OR = {
@@ -206,7 +206,7 @@ crown_of_theseus = {
 
 skull_of_alexander = {
     quality = 3
-    monthly_prestige = 0.75
+    monthly_character_prestige = 0.75
     global_levy_size = 0.05
     active = {
         religion_openly_in_hellenic_subgroup_trigger = yes
@@ -221,9 +221,9 @@ skull_of_alexander = {
 
 alexanders_armor = {
     quality = 3
-    monthly_prestige = 0.75
+    monthly_character_prestige = 0.75
     vassal_opinion = 10
-    combat_rating = 7
+    combat_rating = 10
     active = {
         religion_openly_in_hellenic_subgroup_trigger = yes
     }
@@ -238,7 +238,7 @@ alexanders_armor = {
 
 gold_amphora = {
     quality = 3
-    monthly_prestige = 0.5
+    monthly_character_prestige = 0.5
     stewardship = 3
     active = {
         always = yes
@@ -253,8 +253,8 @@ gold_amphora = {
 
 sphinx_claw = {
     quality = 3
-    monthly_prestige = 0.25
-    monthly_piety = 0.25
+    monthly_character_prestige = 0.25
+    monthly_character_piety = 0.25
     intrigue = 3
     active = {
         religion_openly_in_hellenic_subgroup_trigger = yes
@@ -269,7 +269,7 @@ sphinx_claw = {
 
 golden_apple = {
     quality = 3
-    monthly_piety = 0.5
+    monthly_character_piety = 0.5
     diplomacy = 3
     active = {
         religion_openly_in_hellenic_subgroup_trigger = yes
@@ -286,8 +286,8 @@ golden_apple = {
 
 corinthian_helm = {
     quality = 2
-    monthly_prestige = 0.1
-    combat_rating = 5
+    monthly_character_prestige = 0.5
+    combat_rating = 10
     command_modifier = {
         light_infantry = 0.1
     }
@@ -319,7 +319,7 @@ tongue_of_oracle = {
 
 silver_amphora = {
     quality = 2
-    monthly_prestige = 0.1
+    monthly_character_prestige = 0.1
     stewardship = 1
     active = {
         always = yes
@@ -334,8 +334,8 @@ silver_amphora = {
 
 achilles_shield_piece = {
     quality = 2
-    monthly_piety = 0.1
-    monthly_prestige = 0.1
+    monthly_character_piety = 0.1
+    monthly_character_prestige = 0.1
     command_modifier = {
         morale_defense = 0.01
     }

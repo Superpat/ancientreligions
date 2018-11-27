@@ -7,7 +7,7 @@ crown_egyptian_fylkir = {
 	tribal_opinion = 10
 	quality = 4
 	active = { 
-		has_landed_title = 
+		has_landed_title = d_egyptian_pagan_reformed
 	}
 	flags = { religious unique crown jewelry crown_jewel }
 	stacking = no

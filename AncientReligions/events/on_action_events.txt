@@ -5078,7 +5078,12 @@ narrative_event = {
                         religion = celtic_pagan_reformed 
                     } 
                 }
-                ROOT = { 
+                ROOT = {
+                    set_feminist = yes
+                    set_priests_can_marry = yes
+                    set_female_temple_holders = yes
+                    set_allow_looting = yes
+
                     set_unit_modifier = {	
                         levy_size = 0.15
                         
@@ -5114,7 +5119,13 @@ narrative_event = {
                         religion = egyptian_pagan_reformed 
                     } 
                 }
-                ROOT = { 
+                ROOT = {
+                    set_divine_blood = yes
+                    set_psc_marriage = yes
+                    set_bs_marriage = yes
+                    set_cousin_marriage = yes
+                    set_pc_marriage = yes
+
                     set_unit_modifier = {		
                         garrison_size = 0.2
                         levy_size = 0.2

@@ -3,6 +3,7 @@
 pagan_group = {
 	titan_pagan = {
 		graphical_culture = norsegfx
+		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
 
 		icon = 37
 		heresy_icon = 57
@@ -48,15 +49,20 @@ pagan_group = {
 
 		religious_clothing_priest = 5
 
-		allow_in_ruler_designer = yes
+		allow_in_ruler_designer = no
 
 		character_modifier = {
-			combat_rating = 2
+			combat_rating = 10
 		}
 
 		intermarry = norse_pagan
 		intermarry = tengri_pagan
+		intermarry = zun_pagan
 		intermarry = aten_pagan
+		intermarry = norse_pagan_reformed
+		intermarry = tengri_pagan_reformed
+		intermarry = zun_pagan_reformed
+
 		can_demand_religious_conversion = no
 	}
 
@@ -70,7 +76,7 @@ pagan_group = {
 
 		icon = 37
 		heresy_icon = 57
-		parent = hellenic_pagan
+		parent = hellenic_pagan_reformed
 
 		color = { 0.6 0 0 }
 
@@ -112,8 +118,6 @@ pagan_group = {
 		religious_clothing_head = 12
 		religious_clothing_priest = 11
 
-		allow_in_ruler_designer = yes
-
 		character_modifier = {
 			learning = 4
 		}
@@ -122,6 +126,8 @@ pagan_group = {
 		intermarry = egyptian_pagan
 		intermarry = christian
 		intermarry = muslim
+
+		allow_in_ruler_designer = no
 	}
 
 	celtic_pagan_reformed = { # Druidic
@@ -138,8 +144,6 @@ pagan_group = {
 		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_STONES
 		priest_title = DRUID
-		can_call_crusade = yes
-		join_crusade_if_bordering_hostile = yes
 
 		high_god_name = GOD_LUGH
 
@@ -150,12 +154,11 @@ pagan_group = {
 			THE_FOMORIANS EVIL_BALOR EVIL_BRES GOD_CAILLEACH
 		}
 		
-		priests_can_marry = yes
-		female_temple_holders = yes
+		priests_can_marry = no
 		priests_can_inherit = no
-		feminist = yes
 		max_consorts = 3
-		allow_looting = yes
+		can_call_crusade = yes
+		join_crusade_if_bordering_hostile = yes
 
 		aggression = 1.5 # AI aggression factor
 		
@@ -314,41 +317,16 @@ pagan_group = {
 		evil_god_names = {
 			GOD_SET GOD_APEP
 		}
-		unit_modifier = {		
-			garrison_size = 0.2
-			levy_size = 0.2
-			
-			key = "DEF_RELIGION"
-		}
-		unit_home_modifier = {
-			land_morale = 0.8
-			light_infantry_defensive = 0.8
-			heavy_infantry_defensive = 0.8
-			pikemen_defensive = 0.8
-			light_cavalry_defensive = 0.8
-			knights_defensive = 0.8
-			archers_defensive = 0.8
-			horse_archers_defensive = 0.8
-			camel_cavalry_defensive = 0.8
-			war_elephants_defensive = 0.8
-			
-			garrison_size = 0.4
-			
-			key = "DEF_RELIGION_HOME_TERRITORY"
-		}
 		
 		allow_rivermovement = yes
-		priests_can_marry = yes
-		female_temple_holders = yes
-		max_wives = 4
-		divine_blood = yes
-		pc_marriage = yes
-		bs_marriage = yes
+		max_wives = 3
 		can_call_crusade = yes
 		join_crusade_if_bordering_hostile = yes
 		
 		religious_clothing_head = 5
 		religious_clothing_priest = 5
+
+		allow_in_ruler_designer = no
 	}
 
 	egyptian_pagan = { # Kemetic
@@ -424,7 +402,7 @@ pagan_group = {
 		ai_convert_other_group = 2 # always try to convert
 		ai_convert_same_group = 2 # always try to convert
 
-		color = {0.9 0.8 0}
+		color = { 0.9 0.8 0 }
 		
 		scripture_name = AMARNA_SCROLLS
 		crusade_name = GREAT_HOLY_WAR
@@ -462,6 +440,7 @@ pagan_group = {
 		uses_decadence = yes
 
 		parent = egyptian_pagan
+
 		allow_rivermovement = yes
 		priests_can_marry = yes
 		female_temple_holders = yes
@@ -475,6 +454,6 @@ pagan_group = {
 		religious_clothing_head = 5
 		religious_clothing_priest = 5
 
-		allow_in_ruler_designer = yes
+		allow_in_ruler_designer = no
 	}
 }

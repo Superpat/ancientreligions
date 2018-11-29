@@ -29,6 +29,7 @@ title_druid_circle_member = {
 	
 	allow = {
 		religion = celtic_pagan_reformed
+		has_religion_feature = religion_theocratic_head
 		is_theocracy = yes
 		trait = druid
 		d_celtic_pagan_reformed = {
@@ -65,7 +66,7 @@ title_dryad_circle_member = {
 	allow = {
 		religion = britannic_pagan
 		is_theocracy = yes
-		#trait = dryad
+		is_celtic_clergy_trigger = yes
 		k_britannic_pagan = {
 			holder_scope = {
 				is_within_diplo_range = ROOT

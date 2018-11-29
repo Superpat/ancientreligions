@@ -193,7 +193,7 @@ character_event = {
                 modifier = {
                     factor = 0
                     AND = {
-                        religion = hellenic_pagan
+                        religion_openly_hellenic_or_reformed_trigger = yes
                         has_artifact = nimean_lion_skin
                         has_artifact = kronium
                         has_artifact = caesars_robe
@@ -217,7 +217,7 @@ character_event = {
                         has_artifact = shield_of_britannia
                     }
                 }
-				event_target:rumor_councillor = { character_event = { id = MNM.9001 } } 
+				event_target:rumor_councillor = { character_event = { id = MNM.9001 } }
 			}
 			30 = { #Good rumor
 				modifier = { 

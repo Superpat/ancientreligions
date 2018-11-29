@@ -1224,6 +1224,14 @@ targetted_decisions = {
 						religion = hellenic_pagan
 						hellenic_pagan_reformed = { has_religion_feature = religion_proselytizing }
 					}
+					AND = {
+						religion = celtic_pagan
+						celtic_pagan_reformed = { has_religion_feature = religion_proselytizing }
+					}
+					AND = {
+						religion = egyptian_pagan
+						egyptian_pagan_reformed = { has_religion_feature = religion_proselytizing }
+					}
 				}
 			}
 		}

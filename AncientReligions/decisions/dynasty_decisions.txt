@@ -91,10 +91,16 @@ targetted_decisions = {
 		filter = close_relatives
 		ai_target_filter = close_relatives
 		ai_check_interval = 30
-	
+		
+		is_ruler = yes
+
 		from_potential = {
-			ai = no
-			is_playable = yes
+			#ai = no
+			OR = {
+				trait = dryad
+				trait = bad_dryad
+				is_playable = yes
+			}
 			has_children = yes
 			has_polygamy = no
 		}

@@ -3312,7 +3312,6 @@ character_event = { #Save game conversion of secret_traits to secret religions
 				secretly_west_african_pagan_reformed = { set_secret_religion = west_african_pagan_reformed remove_trait = secretly_west_african_pagan_reformed }
 				secretly_zun_pagan = { set_secret_religion = zun_pagan remove_trait = secretly_zun_pagan }
 				secretly_zun_pagan_reformed = { set_secret_religion = zun_pagan_reformed remove_trait = secretly_zun_pagan_reformed }
-				secretly_hellenic_pagan = { set_secret_religion = hellenic_pagan remove_trait = secretly_hellenic_pagan }
 				secretly_pagan = { set_secret_religion = pagan remove_trait = secretly_pagan }
 			}
 		}

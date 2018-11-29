@@ -7,10 +7,7 @@ decisions = {
 			is_playable = yes
 			prisoner = no
 			higher_tier_than = duke
-			OR = {
-				religion = egyptian_pagan
-				religion = aten_pagan
-			}
+			religion_openly_in_egyptian_subgroup_trigger = yes
 			ruled_years = 30
 			NOT = {	has_character_flag = holding_sed_festival }
 			NOT = { has_character_modifier = held_sed_festival_timer }
@@ -58,7 +55,7 @@ decisions = {
 			is_playable = yes
 			independent = yes
 			higher_tier_than = duke
-			religion = egyptian_pagan
+			religion_openly_egyptian_or_reformed_trigger = yes
 			NOT = { has_global_flag = luxor_restored }
 			NOT = { has_global_flag = luxor_restoring }
 		}	
@@ -103,10 +100,7 @@ decisions = {
 		potential = {
 			is_playable = yes
 			higher_tier_than = duke
-			OR = {
-				religion = egyptian_pagan
-				religion = aten_pagan
-			}
+			religion_openly_in_egyptian_subgroup_trigger = yes
 			NOT = {
 				has_character_flag = pyramid_built
 				has_character_flag = pyramid_building_char
@@ -140,70 +134,6 @@ decisions = {
 		}
 	}
 	
-	restore_priesthood_egyptian_pagan_reformed = {
-		only_playable = yes
-		is_high_prio = yes
-		potential = {
-			has_dlc = "The Old Gods"
-			is_playable = yes
-			higher_tier_than = duke # Tease the decision for kings
-			religion = egyptian_pagan
-			NOT = { has_global_flag = egyptian_priesthood_founded }
-			has_regent = no		
-		}
-		allow = {
-			higher_tier_than = king
-			realm_learning = 25
-			piety = 500
-			wealth = 500
-			war = no
-			religion_authority = 0.6
-			custom_tooltip = {
-				text = luxor_restored_condition
-				has_global_flag = luxor_restored
-			}
-			b_luxor = { 
-				has_holder = yes
-				holder_scope = { top_liege = { character = ROOT } }
-			}
-		}
-		effect = {
-			set_global_flag = egyptian_priesthood_founded
-			wealth = -500
-			piety = -250
-			prestige = 250
-			activate_title = { title = d_egyptian_pagan_reformed status = yes }
-			hidden_tooltip = {
-				create_random_priest = {
-					random_traits = yes
-					religion = egyptian_pagan
-					culture = egyptian_arabic
-					dynasty = random
-					age = 41
-				}
-				new_character = {
-					d_egyptian_pagan_reformed = {
-						grant_title = PREV
-					}
-					set_defacto_liege = ROOT
-					narrative_event = { id = egyptian.6 }
-					if = {
-						limit = { ROOT = { ai = no } }
-						ROOT = {
-							chronicle = {
-								entry = CHRONICLE_EGYPTIAN_PRIESTHOOD
-								portrait = [Prev.GetID]
-							}
-						}
-					}
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	restore_priesthood_aten_pagan = {
 		only_playable = yes
 		is_high_prio = yes

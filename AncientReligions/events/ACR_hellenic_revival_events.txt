@@ -1265,19 +1265,13 @@ character_event = {
 	trigger = {
 		learning = 6
 		is_landed = no
-		NOT = {	
-			religion = hellenic_pagan
-			religion = titan_pagan
-			religion = promethean_pagan
-		}
+		true_religion_in_hellenic_subgroup_trigger = no
 		OR = {
 			culture = roman
 			culture = italian
 			culture = croatian
 			culture = serbian
 			culture_group = byzantine
-			# culture = sicilian_greek # SWMH
-			# culture_group = italian_group # SWMH
 		}
 		NOT = { has_character_flag = flag_studied_the_classics }
 		OR = {
@@ -1795,40 +1789,13 @@ character_event = {
 	}
 }
 
-# The Pontifex Maximus is restored!
-narrative_event = {
-	id = hellenic.104
-	title = hellenic.104.title
-	desc = hellenic.104.desc
-	picture = GFX_evt_roman_temple
-	border = GFX_event_narrative_frame_religion
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = hellenic.104.a
-		trigger = {
-			true_religion = hellenic_pagan
-		}
-	}
-	
-	option = {
-		name = hellenic.104.b
-		trigger = {
-			NOT = { true_religion = hellenic_pagan }
-		}
-	}
-}
-
 #######################################
 #
 # - Journey to the Mani Penninsula
 #
 #######################################
 
-# 32 pages thread on the forum deserves an event ;-)
+# 32 page thread on the forum deserves an event ;-)
 
 # Rumors on Mani Penninsula
 # Only happens once in a lifetime

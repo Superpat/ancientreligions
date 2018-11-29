@@ -19,7 +19,7 @@ montu = {
 	}
 	
 	martial = 2
-	combat_rating = 1
+	combat_rating = 10
 	
 	church_opinion = 15
 	same_opinion_if_same_religion = 15
@@ -56,7 +56,7 @@ atens_chosen = {
 	}
 	
 	martial = 2
-	combat_rating = 1
+	combat_rating = 10
 	
 	church_opinion = 15
 	same_opinion_if_same_religion = 15

@@ -149,7 +149,7 @@ d_fianna = {
 	holy_order = yes
 	
 	# Parent Religion 
-	religion = celtic_pagan
+	religion = celtic_pagan_reformed
 	
 	monthly_income = 1
 	
@@ -212,7 +212,7 @@ d_anubis = {
 	holy_order = yes
 	
 	# Parent Religion 
-	religion = egyptian_pagan
+	religion = egyptian_pagan_reformed
 	
 	# Extra income due to donations, etc
 	monthly_income = 2 # (Must be an integer between 1 and 512)	
@@ -242,7 +242,7 @@ d_horus = {
 	holy_order = yes
 	
 	# Parent Religion 
-	religion = egyptian_pagan
+	religion = egyptian_pagan_reformed
 	
 	# Extra income due to donations, etc
 	monthly_income = 2 # (Must be an integer between 1 and 512)	

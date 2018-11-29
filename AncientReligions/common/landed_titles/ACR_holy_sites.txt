@@ -1,6 +1,6 @@
 ### Celtic Pagan
 
-c_dublin = {
+c_dublin = { # hill of tara
 	holy_site = celtic_pagan
 	holy_site = celtic_pagan_reformed
 	holy_site = britannic_pagan
@@ -22,11 +22,11 @@ c_dijon = {
 	holy_site = celtic_pagan_reformed
 }
 
-c_gowrie = {
+c_gowrie = { # stone of scone
 	holy_site = britannic_pagan
 }
 
-c_middlesex = {
+c_middlesex = { # london, duh
 	holy_site = britannic_pagan
 }
 
@@ -42,22 +42,27 @@ c_avranches = { # mortain
 
 c_homs = {
 	holy_site = egyptian_pagan
+	holy_site = egyptian_pagan_reformed
 	holy_site = aten_pagan
 }
 c_ikonion = {		
 	holy_site = egyptian_pagan
+	holy_site = egyptian_pagan_reformed
 	holy_site = aten_pagan
 }
 c_gabiyaha = {
 	holy_site = egyptian_pagan
+	holy_site = egyptian_pagan_reformed
 	holy_site = aten_pagan
 }
 c_cairo = {
 	holy_site = egyptian_pagan
+	holy_site = egyptian_pagan_reformed
 	holy_site = aten_pagan
 }
 c_asyut = {
 	holy_site = egyptian_pagan
+	holy_site = egyptian_pagan_reformed
 	holy_site = aten_pagan
 }
 

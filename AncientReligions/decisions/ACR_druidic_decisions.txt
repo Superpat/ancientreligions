@@ -358,15 +358,8 @@ decisions = {
 				}
 				culture = irish
 			}
-			OR = {
-				tier = duke
-				tier = king
-				tier = emperor
-			}
-			OR = {
-				religion = celtic_pagan
-				religion = celtic_pagan_reformed
-			}
+			tier > count
+			religion = celtic_pagan_reformed
 			prisoner = no
 			age = 16
 			NOT = { has_global_flag = fianna_founded }
@@ -391,7 +384,7 @@ decisions = {
 				narrative_event = { id = celtic.1150 }
 				create_character = {
 					random_traits = yes
-					religion = celtic_pagan
+					religion = celtic_pagan_reformed
 					culture = ROOT
 					dynasty = NONE
 					female = no
@@ -445,11 +438,7 @@ decisions = {
 			}
 			
 			d_fianna = {
-				holder_scope = {
-					liege = {
-						NOT = { character = ROOT }
-					}
-				}
+				independent = yes
 			}
 		}
 		

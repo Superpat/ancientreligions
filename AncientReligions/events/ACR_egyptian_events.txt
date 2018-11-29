@@ -2679,56 +2679,14 @@ character_event = {
 
 	option = {
 		name = egyptian.210.a
-		if = {
+		any_demesne_title = {
 			limit = {
-				d_shiite = {
-					holder = ROOT
-				}
+				controls_religion = yes
 			}
-			d_shiite = { unsafe_destroy_landed_title = THIS }
-		}
-		if = {
-			limit = {
-				d_sunni = {
-					holder = ROOT
-				}
-			}
-			d_sunni = { unsafe_destroy_landed_title = THIS }
-		}
-		if = {
-			limit = {
-				d_yazidi = {
-					holder = ROOT
-				}
-			}
-			d_yazidi = { unsafe_destroy_landed_title = THIS }
-		}
-		if = {
-			limit = {
-				d_ibadi = {
-					holder = ROOT
-				}
-			}
-			d_ibadi = { unsafe_destroy_landed_title = THIS }
-		}
-		if = {
-			limit = {
-				d_kharijite = {
-					holder = ROOT
-				}
-			}
-			d_kharijite = { unsafe_destroy_landed_title = THIS }
-		}
-		if = {
-			limit = {
-				d_hurufi = {
-					holder = ROOT
-				}
-			}
-			d_hurufi = { unsafe_destroy_landed_title = THIS }
+			destroy_landed_title = THIS
 		}
 
-		unsafe_religion = egyptian_pagan
+		religion = egyptian_pagan
 		
 		capital_scope = {
 			# tribal chief 1
@@ -2820,6 +2778,7 @@ character_event = {
 				trait = cavalry_leader
 				trait = rough_terrain_leader
 				trait = tough_soldier
+				trait = impaler
 			}
 			new_character = {
 				spawn_unit = {

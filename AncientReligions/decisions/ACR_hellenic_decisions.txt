@@ -776,7 +776,7 @@ targetted_decisions = {
 			religion = hellenic_pagan_reformed
 			NOT = { has_landed_title = k_hellenic_pagan_reformed }
 			k_hellenic_pagan_reformed = { owner = { always = yes } } # There is currently a Pontifex Maximus
-			k_hellenic_pagan_reformed = { owner = { NOT = { check_variable = { which = "num_vestales" value = 5 } } } } # The College of the Vestales has a seat open.
+			k_hellenic_pagan_reformed = { owner = { check_variable = { which = "num_vestales" value < 5 } } } # The College of the Vestales has a seat open.
 		}
 
 		potential = {

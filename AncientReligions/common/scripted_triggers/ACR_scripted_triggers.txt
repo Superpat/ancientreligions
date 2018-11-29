@@ -2,10 +2,6 @@
 is_feminist_religion_trigger = {
 	OR = {
 		religion = celtic_pagan
-		AND = {
-			religion = celtic_pagan_reformed
-			NOT = { has_dlc = "Holy Fury" }
-		}
 		religion = britannic_pagan
 		religion = promethean_pagan
 		religion = messalian

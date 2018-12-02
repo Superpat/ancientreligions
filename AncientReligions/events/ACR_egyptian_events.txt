@@ -3,19 +3,19 @@
 # ANCIENT RELIGIONS
 # - Egyptian events
 #
-# Event ID ancrel.4000 - ancrel.4009 Decision Events
-# Event ID ancrel.4010 - ancrel.4019 Sed festival
-# Event ID ancrel.4100 - ancrel.4199 Nile Flooding
-# Event ID ancrel.4200 - ancrel.4399 Kemetic Revival
+# Event ID egyptian.0 - egyptian.9 Decision Events
+# Event ID egyptian.10 - egyptian.19 Sed festival
+# Event ID egyptian.100 - egyptian.199 Nile Flooding
+# Event ID egyptian.200 - egyptian.399 Kemetic Revival
 ###################################################
 
-namespace = ancrel
+namespace = egyptian
 
 # Luxor Restoration Part 1
 province_event = {
-	id = ancrel.4000
-	title = EVTNAME_ancrel_4000
-	desc = EVTDESC_ancrel_4000
+	id = egyptian.0
+	title = egyptian.0.title
+	desc = egyptian.0.desc
 	picture = GFX_persepolis_ruin
 
 	is_triggered_only = yes
@@ -25,19 +25,20 @@ province_event = {
 	}	
 
 	option = {
-		name = EVTOPTA_ancrel_4000 # Make it the greatest temple there ever was!
+		name = egyptian.0.a # Make it the greatest temple there ever was!
 	}
 }
 
 # Luxor Restoration Part 2 - Add Asyut bonus modifier ~8 years
 province_event = {
-	id = ancrel.4001
-	title = EVTNAME_ancrel_4001
-	desc = EVTDESC_ancrel_4001
+	id = egyptian.1
+	title = egyptian.1.title
+	desc = egyptian.1.desc
 	picture = GFX_evt_temple_egyptian_pagan
+	
+	has_global_flag = luxor_restoring
 
 	trigger = {
-		has_global_flag = luxor_restoring
 		province_id = 795 # Asyut
 		NOT = { has_global_flag = luxor_restored }
 		had_province_flag = { flag = reb_luxor_1 days = 1075 }
@@ -53,34 +54,35 @@ province_event = {
 	}
 	
 	option = {
-		name = EVTOPTA_ancrel_4001 # Library
+		name = egyptian.1.a # Library
 		795 = {
 			add_province_modifier = { name = luxor_library duration = -1 }
-			}
+		}
 	}
 	option = {
-		name = EVTOPTB_ancrel_4001 # Promote Fanaticism
+		name = egyptian.1.b # Promote Fanaticism
 		795 = {
 			add_province_modifier = { name = luxor_fanaticism duration = -1 }
-			}
+		}
 	}
 	option = {
-		name = EVTOPTC_ancrel_4001 # Promote Tax Collection
+		name = egyptian.1.c # Promote Tax Collection
 		795 = {
 			add_province_modifier = { name = luxor_admin duration = -1 }
-			}
+		}
 	}
 }
 
 # Luxor Restoration Part 3 ~2 years
 province_event = {
-	id = ancrel.4002
-	title = EVTNAME_ancrel_4002
-	desc = EVTDESC_ancrel_4002
+	id = egyptian.2
+	title = egyptian.2.title
+	desc = egyptian.2.desc
 	picture = GFX_evt_temple_egyptian_pagan
 	
+	has_global_flag = luxor_restoring
+	
 	trigger = {
-		has_global_flag = luxor_restoring
 		province_id = 795 # Asyut
 		NOT = { has_global_flag = luxor_restored }
 		has_province_flag = reb_luxor_1
@@ -99,7 +101,7 @@ province_event = {
 	}
 
 	option = {
-		name = EVTOPTA_ancrel_4002
+		name = egyptian.2.a
 		owner = {
 			795 = {
 				build_holding = {
@@ -119,7 +121,7 @@ province_event = {
 		hidden_tooltip = {
 			owner = {
 				set_character_flag = event_ancrel4003
-				narrative_event = { id = ancrel.4003 days = 7 }
+				narrative_event = { id = egyptian.3 days = 7 }
 			}
 			increase_prosperity_effect = yes
 		}
@@ -128,9 +130,9 @@ province_event = {
 
 # News spread about Luxor
 narrative_event = {
-	id = ancrel.4003
-	title = EVTNAME_ancrel_4003
-	desc = EVTDESC_ancrel_4003
+	id = egyptian.3
+	title = egyptian.3.title
+	desc = egyptian.3.desc
 	picture = GFX_evt_temple_egyptian_pagan
 	border = GFX_event_narrative_frame_religion
 	
@@ -157,14 +159,14 @@ narrative_event = {
 		trigger = {
 			NOT = { has_character_flag = event_ancrel4003 }
 		}
-		name = EVTOPTA_ancrel_4003
+		name = egyptian.3.a
 	}
 }
 
 # Pharaoh wants to build a Pyramid
 character_event = {
-	id = ancrel.4004
-	desc = EVTDESC_ancrel_4004
+	id = egyptian.4
+	desc = egyptian.4.desc
 	picture = GFX_evt_boatcoast
 
 	is_triggered_only = yes
@@ -174,15 +176,15 @@ character_event = {
 	}	
 
 	option = {
-		name = EVTOPTA_ancrel_4004 # Make it the greatest pyramid there ever was!
+		name = egyptian.4.a # Make it the greatest pyramid there ever was!
 		wealth = -600
 	}
 }
 
 # The Pyramid is done!
 province_event = {
-	id = ancrel.4005
-	desc = EVTDESC_ancrel_4005
+	id = egyptian.5
+	desc = egyptian.5.desc
 	picture = GFX_evt_pyramid
 
 	trigger = {
@@ -217,7 +219,7 @@ province_event = {
 	}
 	
 	option = {
-		name = EVTOPTA_ancrel_4005 # My pyramid is done!
+		name = egyptian.5.a # My pyramid is done!
 
 		trigger = { owner = { has_character_flag = pyramid_building_char}}
 		owner = {
@@ -227,7 +229,7 @@ province_event = {
 		}
 	}
 	option = {
-		name = EVTOPTB_ancrel_4005 # My predecessor's pyramid is done
+		name = egyptian.5.b # My predecessor's pyramid is done
 
 		trigger = { 
 			owner = {
@@ -242,7 +244,7 @@ province_event = {
 		}
 	}
 	option = {
-		name = EVTOPTC_ancrel_4005 # Pagan Garbage!
+		name = egyptian.5.c # Pagan Garbage!
 
 		trigger = { 
 			owner = {
@@ -273,9 +275,9 @@ province_event = {
 
 # The Priesthood Restored
 narrative_event = {
-	id = ancrel.4006
-	title = EVTNAME_ancrel_4006
-	desc = EVTDESC_ancrel_4006
+	id = egyptian.6
+	title = egyptian.6.title
+	desc = egyptian.6.desc
 	picture = GFX_evt_bishop_muslim
 	border = GFX_event_narrative_frame_religion
 	
@@ -284,13 +286,13 @@ narrative_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_ancrel_4006
+		name = egyptian.6.a
 		trigger = {
 			true_religion_in_egyptian_subgroup_trigger = yes
 		}
 	}
 	option = {
-		name = EVTOPTB_ancrel_4006
+		name = egyptian.6.b
 		trigger = {
 			true_religion_in_egyptian_subgroup_trigger = no
 		}
@@ -299,9 +301,9 @@ narrative_event = {
 
 # Anubis Guard founded
 narrative_event = {
-	id = ancrel.4007
-	title = EVTNAME_ancrel_4007
-	desc = EVTDESC_ancrel_4007
+	id = egyptian.7
+	title = egyptian.7.title
+	desc = egyptian.7.desc
 	picture = GFX_evt_anubis
 	border = GFX_event_narrative_frame_religion
 	
@@ -321,15 +323,15 @@ narrative_event = {
 		trigger = {
 			NOT = { has_character_flag = event_ancrel4007 }
 		}
-		name = EVTOPTA_ancrel_4007
+		name = egyptian.7.a
 	}
 }
 
 # Horusian Guard Founded
 narrative_event = {
-	id = ancrel.4008
-	title = EVTNAME_ancrel_4008
-	desc = EVTDESC_ancrel_4008
+	id = egyptian.8
+	title = egyptian.8.title
+	desc = egyptian.8.desc
 	picture = GFX_evt_horus
 	border = GFX_event_narrative_frame_religion
 	
@@ -349,7 +351,7 @@ narrative_event = {
 		trigger = {
 			NOT = { has_character_flag = event_ancrel4008 }
 		}
-		name = EVTOPTA_ancrel_4008
+		name = egyptian.8.a
 	}
 }
 
@@ -359,18 +361,18 @@ narrative_event = {
 
 #Sed festival 1st day: the offerings
 character_event = {
-	id = ancrel.4010
-	desc = EVTDESC_ancrel_4010
+	id = egyptian.10
+	desc = egyptian.10.desc
 	picture = GFX_evt_temple_egyptian_pagan
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTA_ancrel_4010 # OK
+		name = egyptian.10.a # OK
 		hidden_tooltip = {
 			random_list = {
 				95 = {
-					character_event = { id = ancrel.4011 days = 1 }
+					character_event = { id = egyptian.11 days = 1 }
 				}
 				5 = {
 					modifier = {
@@ -389,7 +391,7 @@ character_event = {
 						factor = 0.3
 						trait = patient
 					}
-					character_event = { id = ancrel.4014 days = 1 }
+					character_event = { id = egyptian.14 days = 1 }
 				}
 			}
 		}
@@ -398,18 +400,18 @@ character_event = {
 
 #Sed festival 2nd day: the race
 character_event = {
-	id = ancrel.4011
-	desc = EVTDESC_ancrel_4011
+	id = egyptian.11
+	desc = egyptian.11.desc
 	picture = GFX_evt_temple_egyptian_pagan
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_ancrel_4011 # OK
+		name = egyptian.11.a # OK
 		hidden_tooltip = {
 			random_list = {
 				95 = {
-					character_event = { id = ancrel.4012 days = 1 }
+					character_event = { id = egyptian.12 days = 1 }
 				}
 				5 = {
 					modifier = {
@@ -428,7 +430,7 @@ character_event = {
 						factor = 10
 						NOT = { health = 0 }
 					}
-					character_event = { id = ancrel.4015 days = 1 }
+					character_event = { id = egyptian.15 days = 1 }
 				}
 			}
 		}
@@ -437,18 +439,18 @@ character_event = {
 
 #Sed festival last day: bow & arrow
 character_event = {
-	id = ancrel.4012
-	desc = EVTDESC_ancrel_4012
+	id = egyptian.12
+	desc = egyptian.12.desc
 	picture = GFX_evt_temple_egyptian_pagan
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTA_ancrel_4012 # OK
+		name = egyptian.12.a # OK
 		hidden_tooltip = {
 			random_list = {
 				95 = {
-					character_event = { id = ancrel.4013 days = 1 }
+					character_event = { id = egyptian.13 days = 1 }
 				}
 				5 = {
 					modifier = {
@@ -471,7 +473,7 @@ character_event = {
 						factor = 0.1
 						trait = hunter
 					}
-					character_event = { id = ancrel.4016 days = 1 }
+					character_event = { id = egyptian.16 days = 1 }
 				}
 			}
 		}
@@ -480,8 +482,8 @@ character_event = {
 
 #Sed festival successful conclusion 
 character_event = {
-	id = ancrel.4013
-	desc = EVTDESC_ancrel_4013
+	id = egyptian.13
+	desc = egyptian.13.desc
 	picture = GFX_evt_temple_egyptian_pagan
 	
 	is_triggered_only = yes
@@ -491,7 +493,7 @@ character_event = {
 	}	
 
 	option = {
-		name = EVTOPTA_ancrel_4013 # OK
+		name = egyptian.13.a # OK
 		
 		hidden_tooltip = {
 			# Calculate piety gain = 200 + nb_sed_festivals * 50
@@ -578,56 +580,56 @@ character_event = {
 
 #Sed festival 1st day failure: fallen asleep
 character_event = {
-	id = ancrel.4014
-	desc = EVTDESC_ancrel_4014
+	id = egyptian.14
+	desc = egyptian.14.desc
 	picture = GFX_evt_temple_egyptian_pagan
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTA_ancrel_4014 # OK
+		name = egyptian.14.a # OK
 		hidden_tooltip = {
-			character_event = { id = ancrel.4017 days = 1 }
+			character_event = { id = egyptian.17 days = 1 }
 		}
 	}
 }
 
 #Sed festival 2nd day failure: unable to finish the race
 character_event = {
-	id = ancrel.4015
-	desc = EVTDESC_ancrel_4015
+	id = egyptian.15
+	desc = egyptian.15.desc
 	picture = GFX_evt_temple_egyptian_pagan
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTA_ancrel_4015 # OK
+		name = egyptian.15.a # OK
 		hidden_tooltip = {
-			character_event = { id = ancrel.4017 days = 1 }
+			character_event = { id = egyptian.17 days = 1 }
 		}
 	}
 }
 
 #Sed festival last day failure: shoot someone in the crowd
 character_event = {
-	id = ancrel.4016
-	desc = EVTDESC_ancrel_4016
+	id = egyptian.16
+	desc = egyptian.16.desc
 	picture = GFX_evt_temple_egyptian_pagan
 	
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTA_ancrel_4016 # OK
+		name = egyptian.16.a # OK
 		hidden_tooltip = {
-			character_event = { id = ancrel.4017 days = 1 }
+			character_event = { id = egyptian.17 days = 1 }
 		}
 	}
 }
 
 #Sed festival failed conclusion
 character_event = {
-	id = ancrel.4017
-	desc = EVTDESC_ancrel_4017
+	id = egyptian.17
+	desc = egyptian.17.desc
 	picture = GFX_evt_temple_egyptian_pagan
 	
 	is_triggered_only = yes
@@ -637,14 +639,14 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPTA_ancrel_4017 # Depressed
+		name = egyptian.17.a # Depressed
 
 		add_trait = depressed
 		piety = -200
 	}
 	
 	option = {
-		name = EVTOPTB_ancrel_4017 # Who cares ?
+		name = egyptian.17.b # Who cares ?
 		
 		add_trait = cynical
 		piety = -200
@@ -652,7 +654,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTC_ancrel_4017 # Punishment
+		name = egyptian.17.c # Punishment
 		
 		add_trait = arbitrary
 		add_trait = paranoid
@@ -690,12 +692,13 @@ character_event = {
 
 #Flood calculator
 character_event = {
-	id = ancrel.4100	
+	id = egyptian.100	
 	hide_window = yes
 	is_triggered_only = yes
 	
+	religion = catholic
+	
 	trigger = {
-		religion = catholic
 		controls_religion = yes # Let it happen for the Pope. He's always around.
 	}
 	
@@ -703,7 +706,10 @@ character_event = {
 		#choose Nile flood for the year
 		random_list = {
 			500 = { #normal flood
-				788 = {
+				any_province = {
+					limit = {
+						is_on_nile_trigger = yes
+					}
 					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_good
@@ -714,190 +720,22 @@ character_event = {
 							has_dlc = "Reapers"
 						}
 						change_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4101 }
 					}
 				}
-				789 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_good
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
+				any_player = {
+					limit = {
+						any_realm_province = {
+							is_on_nile_trigger = yes
 						}
-						change_variable = { which = prosperity_value value = 2 }
 					}
-					any_province_lord = {
-						character_event = { id = ancrel.4101 }
-					}
-				}
-				790 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_good
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4101 }
-					}
-				}
-				791 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_good
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4101 }
-					}
-				}
-				794 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_good
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4101 }
-					}
-				}
-				795 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_good
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4101 }
-					}
-				}
-				796 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_good
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4101 }
-					}
-				}
-				797 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_good
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4101 }
-					}
-				}
-				798 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_good
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4101 }
-					}
-				}
-				799 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_good
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4101 }
-					}
-				}
-				800 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_good
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4101 }
-					}
-				}
-				802 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_good
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4101 }
-					}
+					character_event = { id = egyptian.101 }
 				}
 			}
 			100 = { #great flood
-				788 = {
+				any_province = {
+					limit = {
+						is_on_nile_trigger = yes
+					}
 					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_great
@@ -908,190 +746,22 @@ character_event = {
 							has_dlc = "Reapers"
 						}
 						change_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4102 }
 					}
 				}
-				789 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_great
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
+				any_player = {
+					limit = {
+						any_realm_province = {
+							is_on_nile_trigger = yes
 						}
-						change_variable = { which = prosperity_value value = 4 }
 					}
-					any_province_lord = {
-						character_event = { id = ancrel.4102 }
-					}
-				}
-				790 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_great
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4102 }
-					}
-				}
-				791 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_great
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4102 }
-					}
-				}
-				794 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_great
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4102 }
-					}
-				}
-				795 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_great
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4102 }
-					}
-				}
-				796 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_great
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4102 }
-					}
-				}
-				797 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_great
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4102 }
-					}
-				}
-				798 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_great
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4102 }
-					}
-				}
-				799 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_great
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4102 }
-					}
-				}
-				800 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_great
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4102 }
-					}
-				}
-				802 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_great
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						change_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4102 }
-					}
+					character_event = { id = egyptian.102 }
 				}
 			}
 			100 = { #overflow flood
-				788 = {
+				any_province = {
+					limit = {
+						is_on_nile_trigger = yes
+					}
 					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_overflow
@@ -1102,190 +772,22 @@ character_event = {
 							has_dlc = "Reapers"
 						}
 						subtract_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4103 }
 					}
 				}
-				789 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_overflow
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
+				any_player = {
+					limit = {
+						any_realm_province = {
+							is_on_nile_trigger = yes
 						}
-						subtract_variable = { which = prosperity_value value = 4 }
 					}
-					any_province_lord = {
-						character_event = { id = ancrel.4103 }
-					}
-				}
-				790 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_overflow
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4103 }
-					}
-				}
-				791 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_overflow
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4103 }
-					}
-				}
-				794 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_overflow
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4103 }
-					}
-				}
-				795 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_overflow
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4103 }
-					}
-				}
-				796 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_overflow
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4103 }
-					}
-				}
-				797 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_overflow
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4103 }
-					}
-				}
-				798 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_overflow
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4103 }
-					}
-				}
-				799 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_overflow
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4103 }
-					}
-				}
-				800 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_overflow
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4103 }
-					}
-				}
-				802 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_overflow
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 4 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4103 }
-					}
+					character_event = { id = egyptian.103 }
 				}
 			}
 			200 = { #poor flood
-				788 = {
+				any_province = {
+					limit = {
+						is_on_nile_trigger = yes
+					}
 					clear_nile_flooding_effect = yes
 					add_province_modifier = {
 						name = VIET_nile_flood_poor
@@ -1296,186 +798,15 @@ character_event = {
 							has_dlc = "Reapers"
 						}
 						subtract_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4104 }
 					}
 				}
-				789 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_poor
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
+				any_player = {
+					limit = {
+						any_realm_province = {
+							is_on_nile_trigger = yes
 						}
-						subtract_variable = { which = prosperity_value value = 2 }
 					}
-					any_province_lord = {
-						character_event = { id = ancrel.4104 }
-					}
-				}
-				790 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_poor
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4104 }
-					}
-				}
-				791 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_poor
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4104 }
-					}
-				}
-				794 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_poor
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4104 }
-					}
-				}
-				795 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_poor
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4104 }
-					}
-				}
-				796 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_poor
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4104 }
-					}
-				}
-				797 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_poor
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4104 }
-					}
-				}
-				798 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_poor
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4104 }
-					}
-				}
-				799 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_poor
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4104 }
-					}
-				}
-				800 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_poor
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4104 }
-					}
-				}
-				802 = {
-					clear_nile_flooding_effect = yes
-					add_province_modifier = {
-						name = VIET_nile_flood_poor
-						duration = 365
-					}
-					if = {
-						limit = {
-							has_dlc = "Reapers"
-						}
-						subtract_variable = { which = prosperity_value value = 2 }
-					}
-					any_province_lord = {
-						character_event = { id = ancrel.4104 }
-					}
+					character_event = { id = egyptian.104 }
 				}
 			}
 		}
@@ -1483,8 +814,8 @@ character_event = {
 }
 
 character_event = { #good
-	id = ancrel.4101
-	desc = "ancrel.4101.desc"
+	id = egyptian.101
+	desc = egyptian.101.desc
 	picture = GFX_evt_ancient_egypt
 
 	notification = yes
@@ -1496,8 +827,8 @@ character_event = { #good
 	}
 }
 character_event = { #great
-	id = ancrel.4102
-	desc = "ancrel.4102.desc"
+	id = egyptian.102
+	desc = egyptian.102.desc
 	picture = GFX_evt_ancient_egypt
 
 	notification = yes
@@ -1509,8 +840,8 @@ character_event = { #great
 	}
 }
 character_event = { #overflow
-	id = ancrel.4103
-	desc = "ancrel.4103.desc"
+	id = egyptian.103
+	desc = egyptian.103.desc
 	picture = GFX_evt_ancient_egypt
 
 	notification = yes
@@ -1522,8 +853,8 @@ character_event = { #overflow
 	}
 }
 character_event = { #poor
-	id = ancrel.4104
-	desc = "ancrel.4104.desc"
+	id = egyptian.104
+	desc = egyptian.104.desc
 	picture = GFX_evt_ancient_egypt
 
 	notification = yes
@@ -1540,7 +871,7 @@ character_event = { #poor
 # Ancient Religions
 # - Egyptian Flavor Events
 #
-# ancrel.4150 - ancrel.4199 Flavor Events
+# egyptian.150 - egyptian.199 Flavor Events
 #
 # Author: Cybrxkhan
 #
@@ -1548,8 +879,8 @@ character_event = { #poor
 
 # Mmm garlic bby
 character_event = {
-	id = ancrel.4150
-	desc = ancrel.4150.desc
+	id = egyptian.150
+	desc = egyptian.150.desc
 	picture = GFX_evt_small_town_egyptian_pagan
 
 	is_triggered_only = yes
@@ -1558,9 +889,9 @@ character_event = {
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
+	war = no
 	
 	trigger = {
-		war = no
 		in_command = no
 		is_abroad = no
 		true_religion_in_egyptian_subgroup_trigger = yes
@@ -1603,7 +934,7 @@ character_event = {
 	}
 
 	option = { #Distribute garlic
-		name = ancrel.4150.a
+		name = egyptian.150.a
 		wealth = -10
 		piety = 10
 		add_character_modifier = {
@@ -1627,7 +958,7 @@ character_event = {
 	}
 
 	option = { #Don't distribute
-		name = ancrel.4150.b
+		name = egyptian.150.b
 		random_list = {
 			70 = {}
 			20 = { add_trait = greedy }
@@ -1638,8 +969,8 @@ character_event = {
 
 # Palm tree planting
 character_event = {
-	id = ancrel.4151
-	desc = ancrel.4151.desc
+	id = egyptian.151
+	desc = egyptian.151.desc
 	picture = GFX_evt_castle_tower_egyptian_pagan
 
 	is_triggered_only = yes
@@ -1648,9 +979,9 @@ character_event = {
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
+	war = no
 	
 	trigger = {
-		war = no
 		in_command = no
 		is_abroad = no
 		true_religion_in_egyptian_subgroup_trigger = yes
@@ -1698,7 +1029,7 @@ character_event = {
 	}
 
 	option = { # Add 'em
-		name = ancrel.4151.a
+		name = egyptian.151.a
 		wealth = -20
 		prestige = 10
 		random = {
@@ -1725,7 +1056,7 @@ character_event = {
 	}
 
 	option = { # No bro
-		name = ancrel.4151.b
+		name = egyptian.151.b
 		piety = 10
 		random_list = {
 			50 = {}
@@ -1738,8 +1069,8 @@ character_event = {
 
 # Khnum Amulet
 character_event = {
-	id = ancrel.4152
-	desc = ancrel.4152.desc
+	id = egyptian.152
+	desc = egyptian.152.desc
 	picture = GFX_evt_cathedral_soa_egyptian_pagan
 
 	is_triggered_only = yes
@@ -1748,9 +1079,9 @@ character_event = {
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
+	war = no
 	
 	trigger = {
-		war = no
 		in_command = no
 		is_abroad = no
 		true_religion_in_egyptian_subgroup_trigger = yes
@@ -1794,7 +1125,7 @@ character_event = {
 	}
 
 	option = { # Add 'em
-		name = ancrel.4152.a
+		name = egyptian.152.a
 		add_character_modifier = {
 			name = VIET_khnum_amulet
 			duration = -1
@@ -1804,14 +1135,13 @@ character_event = {
 
 # Desecrated Tombs
 province_event = {
-	id = ancrel.4153
-	desc = ancrel.4153.desc
+	id = egyptian.153
+	desc = egyptian.153.desc
 	picture = GFX_evt_pyramid
 	
 	trigger = {
 		NOT = { has_province_modifier = VIET_province_desecrated_egyptian_tombs }
-		true_religion_in_egyptian_subgroup_trigger = yes
-
+		owner = { true_religion_in_egyptian_subgroup_trigger = yes }
 		county = { is_on_nile_trigger = yes }
 	}
 	
@@ -1826,7 +1156,7 @@ province_event = {
 	}
 
 	option = { # Do nothing
-		name = ancrel.4153.a
+		name = egyptian.153.a
 		owner = {
 			set_character_flag = VIET_descrated_egyptian_tombs_happened
 			prestige = -20
@@ -1874,7 +1204,7 @@ province_event = {
 	}
 
 	option = { # Send in security
-		name = ancrel.4153.b
+		name = egyptian.153.b
 		owner = {
 			set_character_flag = VIET_descrated_egyptian_tombs_happened
 			wealth = -40
@@ -1919,8 +1249,8 @@ province_event = {
 
 # Bes protects from nightmare
 character_event = {
-	id = ancrel.4154
-	desc = ancrel.4154.desc
+	id = egyptian.154
+	desc = egyptian.154.desc
 	picture = GFX_evt_nightmare
 
 	is_triggered_only = yes
@@ -1929,9 +1259,9 @@ character_event = {
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
+	war = no
 	
 	trigger = {
-		war = no
 		in_command = no
 		#is_abroad = no
 		true_religion_in_egyptian_subgroup_trigger = yes
@@ -1982,15 +1312,15 @@ character_event = {
 	}
 
 	option = { # Add 'em
-		name = ancrel.4154.a
+		name = egyptian.154.a
 		piety = 5
 	}
 }
 
 # Expel evil
 character_event = {
-	id = ancrel.4155
-	desc = ancrel.4155.desc
+	id = egyptian.155
+	desc = egyptian.155.desc
 	picture = GFX_evt_tuscan_Country_egyptian_pagan
 
 	is_triggered_only = yes
@@ -1999,9 +1329,9 @@ character_event = {
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
+	war = no
 	
 	trigger = {
-		war = no
 		in_command = no
 		is_abroad = no
 		true_religion_in_egyptian_subgroup_trigger = yes
@@ -2047,13 +1377,13 @@ character_event = {
 	}
 
 	option = { # Shake the devil out!
-		name = ancrel.4155.a
+		name = egyptian.155.a
 		wealth = -10
-		character_event = { id = ancrel.4156 tooltip = ancrel.4156.tooltip }
+		character_event = { id = egyptian.156 tooltip = egyptian.156.tooltip }
 	}
 
 	option = { # Pff... yeah right
-		name = ancrel.4155.b
+		name = egyptian.155.b
 		piety = -5
 		if = {
 			limit = {
@@ -2084,15 +1414,15 @@ character_event = {
 
 # Expel evil, pt 2
 character_event = {
-	id = ancrel.4156
-	title = ancrel.4156.title
-	desc = ancrel.4156.desc
+	id = egyptian.156
+	title = egyptian.156.title
+	desc = egyptian.156.desc
 	picture = GFX_evt_temple_egyptian_pagan
 
 	is_triggered_only = yes
 
 	option = { # Expel!
-		name = ancrel.4156.a
+		name = egyptian.156.a
 		piety = 20
 		if = {
 			limit = {
@@ -2180,8 +1510,8 @@ character_event = {
 
 # Upholding le Ma'at
 character_event = {
-	id = ancrel.4157
-	desc = ancrel.4157.desc
+	id = egyptian.157
+	desc = egyptian.157.desc
 	picture = GFX_evt_tuscan_Country_egyptian_pagan
 
 	is_triggered_only = yes
@@ -2240,7 +1570,7 @@ character_event = {
 	}
 
 	option = { # Yeah, i'm pretty great
-		name = ancrel.4157.a
+		name = egyptian.157.a
 		prestige = 10
 		piety = 10
 
@@ -2262,8 +1592,8 @@ character_event = {
 
 # Not Upholding le Ma'at
 character_event = {
-	id = ancrel.4158
-	desc = ancrel.4158.desc
+	id = egyptian.158
+	desc = egyptian.158.desc
 	picture = GFX_evt_tuscan_Country_egyptian_pagan
 
 	is_triggered_only = yes
@@ -2272,9 +1602,9 @@ character_event = {
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
+	#war = no
 	
 	trigger = {
-		#war = no
 		#in_command = no
 		#is_abroad = no
 		true_religion_in_egyptian_subgroup_trigger = yes
@@ -2328,7 +1658,7 @@ character_event = {
 	}
 
 	option = { # Well, that's no good...
-		name = ancrel.4158.a
+		name = egyptian.158.a
 		prestige = -10
 		piety = -10
 		add_character_modifier = {
@@ -2353,8 +1683,8 @@ character_event = {
 
 # Pussycat
 character_event = {
-	id = ancrel.4159
-	desc = ancrel.4159.desc
+	id = egyptian.159
+	desc = egyptian.159.desc
 	picture = GFX_evt_maiden_egyptian_pagan
 
 	is_triggered_only = yes
@@ -2364,9 +1694,9 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_men = yes
+	war = no
 	
 	trigger = {
-		war = no
 		in_command = no
 		is_abroad = no
 		any_spouse = {
@@ -2426,7 +1756,7 @@ character_event = {
 	}
 
 	option = {
-		name = ancrel.4159.a
+		name = egyptian.159.a
 		random_spouse = {
 			limit = {
 				is_adult = yes
@@ -2467,8 +1797,8 @@ character_event = {
 
 # A criminal has killed a cat, a heinous crime!
 character_event = {
-	id = ancrel.4160
-	desc = ancrel.4160.desc
+	id = egyptian.160
+	desc = egyptian.160.desc
 	picture = GFX_evt_cathedral_soa_egyptian_pagan
 
 	is_triggered_only = yes
@@ -2478,9 +1808,9 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_men = yes
+	war = no
 	
 	trigger = {
-		war = no
 		in_command = no
 		is_abroad = no
 		true_religion_in_egyptian_subgroup_trigger = yes
@@ -2515,13 +1845,13 @@ character_event = {
 	}
 
 	option = { # Punish him
-		name = ancrel.4160.a
+		name = egyptian.160.a
 		piety = 10
 		custom_tooltip = { text = VIET_stupid_cat_lovers_boooo }
 	}
 
 	option = { # it's just a cat
-		name = ancrel.4160.b
+		name = egyptian.160.b
 		prestige = 10
 		piety = -10
 		random = {
@@ -2534,8 +1864,8 @@ character_event = {
 
 # be nice to grills
 character_event = {
-	id = ancrel.4161
-	desc = ancrel.4161.desc
+	id = egyptian.161
+	desc = egyptian.161.desc
 	picture = GFX_evt_maiden_egyptian_pagan
 
 	is_triggered_only = yes
@@ -2545,9 +1875,9 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	only_men = yes
+	war = no
 	
 	trigger = {
-		war = no
 		in_command = no
 		is_abroad = no
 		true_religion_in_egyptian_subgroup_trigger = yes
@@ -2582,7 +1912,7 @@ character_event = {
 	}
 
 	option = { # Be a feminazi
-		name = ancrel.4161.a
+		name = egyptian.161.a
 		piety = 10
 		prestige = -10
 		any_courtier = {
@@ -2615,7 +1945,7 @@ character_event = {
 		}
 	}
 	option = { # Be a MRA jerk
-		name = ancrel.4161.b
+		name = egyptian.161.b
 		piety = -10
 		prestige = 10
 		any_courtier = {
@@ -2634,8 +1964,8 @@ character_event = {
 
 # Senet game - start
 character_event = {
-	id = ancrel.4162
-	desc = ancrel.4162.desc
+	id = egyptian.162
+	desc = egyptian.162.desc
 	picture = GFX_evt_tuscan_Country_egyptian_pagan
 
 	is_triggered_only = yes
@@ -2644,9 +1974,9 @@ character_event = {
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
+	war = no
 	
 	trigger = {
-		war = no
 		in_command = no
 		is_abroad = no
 		any_courtier = {
@@ -2691,7 +2021,7 @@ character_event = {
 	}
 
 	option = {
-		name = ancrel.4162.a
+		name = egyptian.162.a
 		random_courtier = {
 			limit = {
 				is_adult = yes
@@ -2699,25 +2029,25 @@ character_event = {
 				religion = ROOT
 				ai = yes
 			}
-			character_event = { id = ancrel.4163 tooltip = ancrel.4163.tooltip }
+			character_event = { id = egyptian.163 tooltip = egyptian.163.tooltip }
 		}
 	}
 }
 
 # Senet game - courtier event
 character_event = {
-	id = ancrel.4163
-	desc = ancrel.4163.desc
+	id = egyptian.163
+	desc = egyptian.163.desc
 	picture = GFX_evt_tuscan_Country_egyptian_pagan
 
 	is_triggered_only = yes
 
 	option = { # Ok!
-		name = ancrel.4163.a
+		name = egyptian.163.a
 		FROM = {
 			random_list = {
-				50 = { character_event = { id = ancrel.4164 tooltip = ancrel.4164.tooltip } }
-				50 = { character_event = { id = ancrel.4165 tooltip = ancrel.4165.tooltip } }
+				50 = { character_event = { id = egyptian.164 tooltip = egyptian.164.tooltip } }
+				50 = { character_event = { id = egyptian.165 tooltip = egyptian.165.tooltip } }
 			}
 		}
 	}
@@ -2725,14 +2055,14 @@ character_event = {
 
 # Senet game - courtier wins
 character_event = {
-	id = ancrel.4164
-	desc = ancrel.4164.desc
+	id = egyptian.164
+	desc = egyptian.164.desc
 	picture = GFX_evt_tuscan_Country_egyptian_pagan
 
 	is_triggered_only = yes
 
 	option = { # Ok!
-		name = ancrel.4164.a
+		name = egyptian.164.a
 		random = {
 			add_trait = humble
 			chance = 20
@@ -2751,7 +2081,7 @@ character_event = {
 		}
 	}
 	option = { # Ok!
-		name = ancrel.4164.b
+		name = egyptian.164.b
 		random = {
 			add_trait = wroth
 			chance = 20
@@ -2773,14 +2103,14 @@ character_event = {
 
 # Senet game - liege wins
 character_event = {
-	id = ancrel.4165
-	desc = ancrel.4165.desc
+	id = egyptian.165
+	desc = egyptian.165.desc
 	picture = GFX_evt_tuscan_Country_egyptian_pagan
 
 	is_triggered_only = yes
 
 	option = { # Ok!
-		name = ancrel.4165.a
+		name = egyptian.165.a
 		piety = 5
 		FROM = {
 			opinion = {
@@ -2796,7 +2126,7 @@ character_event = {
 		}
 	}
 	option = { # Ok!
-		name = ancrel.4165.b
+		name = egyptian.165.b
 		prestige = 5
 		FROM = {
 			opinion = {
@@ -2815,8 +2145,8 @@ character_event = {
 
 # Ghost of Akhenaten?
 character_event = {
-	id = ancrel.4166
-	desc = ancrel.4166.desc
+	id = egyptian.166
+	desc = egyptian.166.desc
 	picture = GFX_evt_desert
 
 	is_triggered_only = yes
@@ -2825,9 +2155,9 @@ character_event = {
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
+	war = no
 	
 	trigger = {
-		war = no
 		in_command = no
 		is_abroad = no
 		any_courtier = {
@@ -2868,7 +2198,7 @@ character_event = {
 	}
 
 	option = { # Ok!
-		name = ancrel.4166.a
+		name = egyptian.166.a
 		random_courtier = {
 			limit = {
 				is_adult = yes
@@ -2890,8 +2220,8 @@ character_event = {
 
 # Shezmu execution
 character_event = {
-	id = ancrel.4167
-	desc = ancrel.4167.desc
+	id = egyptian.167
+	desc = egyptian.167.desc
 	picture = GFX_evt_small_town_egyptian_pagan
 
 	is_triggered_only = yes
@@ -2900,9 +2230,9 @@ character_event = {
 	only_rulers = yes
 	capable_only = yes
 	prisoner = no
+	war = no
 	
 	trigger = {
-		war = no
 		in_command = no
 		is_abroad = no
 		any_courtier = {
@@ -2951,7 +2281,7 @@ character_event = {
 	}
 
 	option = { # Ok!
-		name = ancrel.4167.a
+		name = egyptian.167.a
 		prestige = 5
 	}
 }
@@ -2961,7 +2291,7 @@ character_event = {
 # Ancient Religions
 # - Kemetic Revival Events
 #
-# ancrel.4200 - ancrel.4399 Flavor Events
+# egyptian.200 - egyptian.399 Flavor Events
 #
 # Author: theStormWeaver/xirsoi
 #
@@ -2972,8 +2302,8 @@ character_event = {
 ###################
 # you are on pilgrimage/hajj and get caught in a sandstorm
 character_event = {
-	id = ancrel.4200
-	desc = ancrel.4200.desc
+	id = egyptian.200
+	desc = egyptian.200.desc
 	picture = GFX_evt_sand_desert
 
 	only_playable = yes
@@ -3035,30 +2365,30 @@ character_event = {
 	}
 
 	option = { # may <god> guide me
-		name = ancrel.4200.a
+		name = egyptian.200.a
 		hidden_tooltip = {
-			character_event = { id = ancrel.4201 }
+			character_event = { id = egyptian.201 }
 		}
 	}
 }
 
 # seperated from the caravan, you spot a shadow that looks like a building
 character_event = {
-	id = ancrel.4201
-	desc = ancrel.4201.desc
+	id = egyptian.201
+	desc = egyptian.201.desc
 	picture = GFX_evt_sand_desert
 
 	is_triggered_only = yes
 
 	option = {
-		name = ancrel.4201.a
+		name = egyptian.201.a
 		custom_tooltip = {
-			text = ancrel.4201.a.tt
+			text = egyptian.201.a.tt
 			hidden_tooltip = {
 				random_list = {
-					20 = { character_event = { id = ancrel.4202 } }
+					20 = { character_event = { id = egyptian.202 } }
 					10 = {
-						character_event = { id = ancrel.4203 }
+						character_event = { id = egyptian.203 }
 						modifier = {
 							factor = 0
 							ai = no
@@ -3073,19 +2403,19 @@ character_event = {
 
 # the shadow is a temple that hums with ancient power
 character_event = {
-	id = ancrel.4202
-	desc = ancrel.4202.desc
+	id = egyptian.202
+	desc = egyptian.202.desc
 	picture = GFX_evt_sand_desert
 
 	is_triggered_only = yes
 
 	option = { # move on
-		name = ancrel.4202.a
+		name = egyptian.202.a
 		custom_tooltip = {
-			text = ancrel.4202.a.tt
+			text = egyptian.202.a.tt
 			hidden_tooltip = {
 				random_list = {
-					90 = { character_event = { id = ancrel.4209 } }
+					90 = { character_event = { id = egyptian.209 } }
 					10 = {
 						clr_character_flag = lost_in_sandstorm
 						death = { death_reason = death_lost_desert }
@@ -3117,11 +2447,11 @@ character_event = {
 	}
 
 	option = { # take shelter
-		name = ancrel.4202.b
+		name = egyptian.202.b
 		custom_tooltip = {
-			text = ancrel.4202.b.tt
+			text = egyptian.202.b.tt
 			hidden_tooltip = {
-				character_event = { id = ancrel.4204}
+				character_event = { id = egyptian.204}
 			}
 		}
 
@@ -3150,8 +2480,8 @@ character_event = {
 
 # the building is an inn on the pilgrim's highway, you're saved!
 character_event = {
-	id = ancrel.4203
-	desc = ancrel.4203.desc
+	id = egyptian.203
+	desc = egyptian.203.desc
 	picture = GFX_evt_small_town_aten_pagan
 
 	is_triggered_only = yes
@@ -3161,23 +2491,23 @@ character_event = {
 	}
 
 	option = {
-		name = ancrel.4203.a
+		name = egyptian.203.a
 	}
 }
 
 # as the storm rages on an old man enters the temple
 character_event = {
-	id = ancrel.4204
-	desc = ancrel.4204.desc
+	id = egyptian.204
+	desc = egyptian.204.desc
 	picture = GFX_evt_sand_desert
 
 	is_triggered_only = yes
 
 	option = {
-		name = ancrel.4204.a
+		name = egyptian.204.a
 		custom_tooltip = {
-			text = ancrel.4204.a.tt
-			hidden_tooltip = { character_event = { id = ancrel.4205 days = 1 } }
+			text = egyptian.204.a.tt
+			hidden_tooltip = { character_event = { id = egyptian.205 days = 1 } }
 		}
 	}
 }
@@ -3185,17 +2515,17 @@ character_event = {
 # you learn the old man is from one of many tribes in the desert
 # that still worship the old gods
 character_event = {
-	id = ancrel.4205
-	desc = ancrel.4205.desc
+	id = egyptian.205
+	desc = egyptian.205.desc
 	picture = GFX_evt_recovery
 
 	is_triggered_only = yes
 
 	option = {
-		name = ancrel.4205.a
+		name = egyptian.205.a
 		custom_tooltip = {
-			text = ancrel.4205.a.tt
-			hidden_tooltip = { character_event = { id = ancrel.4206 days = 1 } }
+			text = egyptian.205.a.tt
+			hidden_tooltip = { character_event = { id = egyptian.206 days = 1 } }
 		}
 	}
 }
@@ -3203,8 +2533,8 @@ character_event = {
 # the old man implies that "old man Set" has guided you here,
 # it is your destiny to find this temple
 long_character_event = {
-	id = ancrel.4206
-	desc = ancrel.4206.desc
+	id = egyptian.206
+	desc = egyptian.206.desc
 	picture = GFX_evt_nomad_camp
 
 	is_triggered_only = yes
@@ -3214,11 +2544,11 @@ long_character_event = {
 	}
 
 	option = { # accept the ways of the old gods as your own
-		name = ancrel.4206.a
+		name = egyptian.206.a
 		custom_tooltip = {
-			text = ancrel.4206.a.tt
+			text = egyptian.206.a.tt
 			hidden_tooltip = {
-				character_event = { id = ancrel.4207 }
+				character_event = { id = egyptian.207 }
 			}
 		}
 
@@ -3248,11 +2578,11 @@ long_character_event = {
 	}
 
 	option = { # reject the pagans and continue on your journey
-		name = ancrel.4206.b
+		name = egyptian.206.b
 		custom_tooltip = {
-			text = ancrel.4206.b.tt
+			text = egyptian.206.b.tt
 			hidden_tooltip = {
-				character_event = { id = ancrel.4208 }
+				character_event = { id = egyptian.208 }
 			}
 		}
 
@@ -3280,18 +2610,18 @@ long_character_event = {
 
 # finish the hajj/pilgrimage (cause it can't be stopped), then convert
 character_event = {
-	id = ancrel.4207
-	desc = ancrel.4207.desc
+	id = egyptian.207
+	desc = egyptian.207.desc
 	picture = GFX_evt_nomad_camp
 
 	is_triggered_only = yes
 
 	option = {
-		name = ancrel.4207.a
+		name = egyptian.207.a
 		custom_tooltip = {
-			text = ancrel.4207.a.tt
+			text = egyptian.207.a.tt
 			hidden_tooltip = {
-				character_event = { id = ancrel.4210 days = 60 }
+				character_event = { id = egyptian.210 days = 60 }
 			}
 		}
 	}
@@ -3299,8 +2629,8 @@ character_event = {
 
 # you reject their ways, and return to your people
 character_event = {
-	id = ancrel.4208
-	desc = ancrel.4208.desc
+	id = egyptian.208
+	desc = egyptian.208.desc
 	picture = GFX_evt_nomad_camp
 
 	is_triggered_only = yes
@@ -3310,7 +2640,7 @@ character_event = {
 	}
 
 	option = {
-		name = ancrel.4208.a
+		name = egyptian.208.a
 		random = {
 			chance = 20
 			add_trait = zealous
@@ -3320,8 +2650,8 @@ character_event = {
 
 # after avoiding the temple, you find your caravan and continue the journey
 character_event = {
-	id = ancrel.4209
-	desc = ancrel.4209.desc
+	id = egyptian.209
+	desc = egyptian.209.desc
 	picture = GFX_evt_desert
 
 	is_triggered_only = yes
@@ -3331,14 +2661,14 @@ character_event = {
 	}
 
 	option = {
-		name = ancrel.4209.a
+		name = egyptian.209.a
 	}
 }
 
 # the tribes come to your banner (event troops) and you finally convert
 character_event = {
-	id = ancrel.4210
-	desc = ancrel.4210.desc
+	id = egyptian.210
+	desc = egyptian.210.desc
 	picture = GFX_evt_warrior_banners
 
 	is_triggered_only = yes
@@ -3348,54 +2678,12 @@ character_event = {
 	}
 
 	option = {
-		name = ancrel.4210.a
-		if = {
+		name = egyptian.210.a
+		any_demesne_title = {
 			limit = {
-				d_shiite = {
-					holder = ROOT
-				}
+				controls_religion = yes
 			}
-			unsafe_destroy_landed_title = d_shiite
-		}
-		if = {
-			limit = {
-				d_sunni = {
-					holder = ROOT
-				}
-			}
-			unsafe_destroy_landed_title = d_sunni
-		}
-		if = {
-			limit = {
-				d_yazidi = {
-					holder = ROOT
-				}
-			}
-			unsafe_destroy_landed_title = d_yazidi
-		}
-		if = {
-			limit = {
-				d_ibadi = {
-					holder = ROOT
-				}
-			}
-			unsafe_destroy_landed_title = d_ibadi
-		}
-		if = {
-			limit = {
-				d_kharijite = {
-					holder = ROOT
-				}
-			}
-			unsafe_destroy_landed_title = d_kharijite
-		}
-		if = {
-			limit = {
-				d_hurufi = {
-					holder = ROOT
-				}
-			}
-			unsafe_destroy_landed_title = d_hurufi
+			destroy_landed_title = THIS
 		}
 
 		religion = egyptian_pagan
@@ -3490,6 +2778,7 @@ character_event = {
 				trait = cavalry_leader
 				trait = rough_terrain_leader
 				trait = tough_soldier
+				trait = impaler
 			}
 			new_character = {
 				spawn_unit = {
@@ -3539,8 +2828,8 @@ character_event = {
 # to a pyramid has been uncovered
 # [on_bi_yearly_pulse]
 character_event = {
-	id = ancrel.4215
-	desc = ancrel.4215.desc
+	id = egyptian.215
+	desc = egyptian.215.desc
 	picture = GFX_evt_pyramid
 
 	only_rulers = yes
@@ -3576,34 +2865,34 @@ character_event = {
 	}
 
 	option = { # survey the pyramid
-		name = ancrel.4215.a
+		name = egyptian.215.a
 		custom_tooltip = {
-			text = ancrel.4215.a.tt
+			text = egyptian.215.a.tt
 			hidden_tooltip = {
-				character_event = { id = ancrel.4216 days = 3 }
+				character_event = { id = egyptian.216 days = 3 }
 			}
 		}
 	}
 
 	option = { # don't survey the pyramid
-		name = ancrel.4215.b
+		name = egyptian.215.b
 	}
 }
 
 # you and your entourage arrive at the entrance to the pyramid
 character_event = {
-	id = ancrel.4216
-	desc = ancrel.4216.desc
+	id = egyptian.216
+	desc = egyptian.216.desc
 	picture = GFX_evt_pyramid
 
 	is_triggered_only = yes
 
 	option = {
-		name = ancrel.4216.b
+		name = egyptian.216.b
 		custom_tooltip = {
-			text = ancrel.4216.b.tt
+			text = egyptian.216.b.tt
 			hidden_tooltip = {
-				character_event = { id = ancrel.4217 days = 0 }
+				character_event = { id = egyptian.217 days = 0 }
 			}
 		}
 	}
@@ -3611,8 +2900,8 @@ character_event = {
 
 # you and your men have reached a fork in the tunnel, which way do you go?
 character_event = {
-	id = ancrel.4217
-	desc = ancrel.4217.desc
+	id = egyptian.217
+	desc = egyptian.217.desc
 	picture = GFX_evt_pyramid
 
 	is_triggered_only = yes
@@ -3631,7 +2920,7 @@ character_event = {
 		}
 		tooltip_info = craven
 
-		name = ancrel.4216.a
+		name = egyptian.216.a
 	}
 }
 

@@ -1,480 +1,4 @@
 namespace = ancrel
-namespace = GoPagan
-
-#reserved: GoPagan.100 to GoPagan.199
-
-#######################################
-# REVERSION TO PAGAN RELIGIONS
-#######################################
-
-#Zoroastrian
-character_event = {
-	id = GoPagan.100
-	desc = EVTDESC_GoPagan_100
-	picture = GFX_evt_imam
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVTOPTA_GoPagan_100"
-		ai_chance = {
-			factor = 10
-		}
-		set_secret_religion = zoroastrian
-		if = {
-			limit = { trait = cynical }
-			remove_trait = cynical
-		}
-		piety = -200
-		add_trait = zealous
-	}
-	option = { # Maybe Not
-		name = "EVTOPTZ_GoPagan_100"
-		ai_chance = { factor = 1 }
-	}
-}
-
-#Celtic & Norse
-character_event = {
-	id = GoPagan.101
-	desc = EVTDESC_GoPagan_100
-	picture = GFX_evt_bishop
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVTOPTB_GoPagan_100"
-		trigger = {
-			OR = {
-				culture_group = celtic
-				culture_group = west_germanic
-				culture = frankish
-				culture = occitan
-			}
-		}
-		ai_chance = {
-			factor = 10
-		}
-		set_secret_religion = celtic_pagan
-		if = {
-			limit = { trait = cynical }
-			remove_trait = cynical
-		}
-		piety = -200
-		add_trait = zealous		
-	}
-	option = {
-		name = "EVTOPTD_GoPagan_100"
-		ai_chance = { factor = 15 }
-		trigger = {
-			OR = {
-				culture_group = north_germanic
-				culture_group = west_germanic
-				culture_group = central_germanic
-				culture = norman
-			}
-		}
-		set_secret_religion = norse_pagan
-		if = {
-			limit = { trait = cynical }
-			remove_trait = cynical
-		}
-		piety = -200
-		add_trait = zealous		
-	}
-	option = { # Maybe Not
-		name = "EVTOPTZ_GoPagan_100"
-		ai_chance = { factor = 1 }
-	}
-}
-
-#Baltic & Finnic
-character_event = {
-	id = GoPagan.102
-	desc = EVTDESC_GoPagan_100
-	picture = GFX_evt_bishop_pagan_group
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVTOPTC_GoPagan_100"
-		trigger = {
-			OR = {
-				 culture_group = baltic
-				 culture = ugricbaltic
-			}
-			NOT = { religion = baltic_pagan}
-		}
-		ai_chance = {
-			factor = 10
-		}
-		set_secret_religion = baltic_pagan
-		if = {
-			limit = { trait = cynical }
-			remove_trait = cynical
-		}
-		piety = -200
-		add_trait = zealous
-	}
-	option = {
-		name = "EVTOPTC_GoPagan_100"
-		ai_chance = { factor = 10 }
-		trigger = {
-			culture_group = finno_ugric
-			NOT = { religion = finnish_pagan}
-		}
-		set_secret_religion = finnish_pagan
-		if = {
-			limit = { trait = cynical }
-			remove_trait = cynical
-		}
-		piety = -200
-		add_trait = zealous
-	}
-	option = { # Maybe Not
-		name = "EVTOPTZ_GoPagan_100"
-		ai_chance = { factor = 1 }
-	}
-}
-
-#Tengri Pagan
-character_event = {
-	id = GoPagan.103
-	desc = EVTDESC_GoPagan_100
-	picture = GFX_evt_bishop_pagan_group
-	
-	is_triggered_only = yes
-
-	option = {
-		name = "EVTOPTC_GoPagan_100"
-		ai_chance = { factor = 10 }
-		set_secret_religion = tengri_pagan
-		if = {
-			limit = { trait = cynical }
-			remove_trait = cynical
-		}
-		piety = -200
-		add_trait = zealous
-	}
-	option = { # Maybe Not
-		name = "EVTOPTZ_GoPagan_100"
-		ai_chance = { factor = 1 }
-	}
-}
-
-#Slavic
-character_event = {
-	id = GoPagan.105
-	desc = EVTDESC_GoPagan_100
-	picture = GFX_evt_bishop_byzantine
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVTOPTC_GoPagan_100"
-		ai_chance = { factor = 10 }
-		set_secret_religion = slavic_pagan
-		if = {
-			limit = { trait = cynical }
-			remove_trait = cynical
-		}
-		piety = -200
-		add_trait = zealous
-	}
-	option = { # Maybe Not
-		name = "EVTOPTZ_GoPagan_100"
-		ai_chance = { factor = 1 }
-	}
-}
-
-#African
-character_event = {
-	id = GoPagan.106
-	desc = EVTDESC_GoPagan_100
-	picture = GFX_evt_sacrifice
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVTOPTC_GoPagan_100"
-		ai_chance = { factor = 10 }
-		trigger = {
-			culture_group = west_african
-		}
-		set_secret_religion = west_african_pagan
-		if = {
-			limit = { trait = cynical }
-			remove_trait = cynical
-		}
-		piety = -200
-		add_trait = zealous
-	}
-	option = { # Maybe Not
-		name = "EVTOPTZ_GoPagan_100"
-		ai_chance = { factor = 1 }
-	}
-}
-
-#Egyptian Pagan
-character_event = {
-	id = GoPagan.107
-	desc = EVTDESC_GoPagan_100
-	picture = GFX_evt_pyramid
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVTOPTC_GoPagan_100"
-		ai_chance = { factor = 10 }
-		set_secret_religion = egyptian_pagan
-		if = {
-			limit = { trait = cynical }
-			remove_trait = cynical
-		}
-		piety = -200
-		add_trait = zealous
-	}
-	option = { # Maybe Not
-		name = "EVTOPTZ_GoPagan_100"
-		ai_chance = { factor = 1 }
-	}
-}
-
-#Judaic
-character_event = {
-	id = GoPagan.108
-	desc = EVTDESC_GoPagan_100
-	picture = GFX_evt_synagogue
-	
-	is_triggered_only = yes
-
-	option = {
-		name = "EVTOPTL_GoPagan_100"
-		ai_chance = { factor = 20 }
-		set_secret_religion = jewish
-		if = {
-			limit = { trait = cynical }
-			remove_trait = cynical
-		}
-		add_trait = zealous
-	}
-	option = { # Maybe Not
-		name = "EVTOPTZ_GoPagan_100"
-		ai_chance = { factor = 1 }
-	}
-}
-
-#Hellenic
-character_event = {
-	id = GoPagan.109
-	desc = EVTDESC_GoPagan_100
-	picture = GFX_evt_bishop_byzantine
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVTOPTM_GoPagan_100"
-		ai_chance = { factor = 10 }
-		trigger = {
-			OR = {
-				culture = roman
-				culture = greek
-				culture = italian
-				culture = sicilian
-				culture = sicilian_greek
-				culture_group = byzantine				
-			}
-			NOT = { religion = hellenic_pagan }
-		}
-		set_secret_religion = hellenic_pagan
-		if = {
-			limit = { trait = cynical }
-			remove_trait = cynical
-		}
-		piety = -200
-		add_trait = zealous
-	}
-	option = { # Maybe Not
-		name = "EVTOPTZ_GoPagan_100"
-		ai_chance = { factor = 1 }
-	}
-}
-
-#AI allowed to use the decision
-character_event = {
-	id = GoPagan.120
-	hide_window = yes
-	
-	min_age = 16
-	capable_only = yes
-	prisoner = no
-	ai = yes
-
-	trigger = {
-		is_heretic = no
-		piety = 0
-		health = 3
-		is_priest = no
-		controls_religion = no
-		OR = {
-			NOT = { religion_authority = 0.20 }
-			AND = {
-				NOT = { religion_authority = 0.40 }
-				trait = lunatic
-			}
-		}
-		NOR = {
-			has_character_flag = can_go_pagan
-			has_character_flag = gone_pagan
-			trait = zealous
-			has_crusade_trait_trigger = yes
-			has_character_modifier = voice_of_jesus
-			has_character_modifier = voice_of_satan
-			piety = 500
-			religion = monophysite
-			religion = miaphysite
-			religion = pagan
-			AND = {
-				religion_group = pagan_group
-				is_reformed_religion = no
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 240
-		modifier = {
-			factor = 0.25
-			trait = lunatic
-		}
-		modifier = {
-			factor = 0.25
-			trait = cynical
-		}
-		modifier = {
-			factor = 0.25
-			has_character_modifier = defied_church
-		}
-		modifier = {
-			factor = 0.75
-			NOT = { religion_authority = 0.15 }
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { religion_authority = 0.10 }
-		}
-		modifier = {
-			factor = 0.5
-			trait = mystic
-		}
-		modifier = {
-			factor = 0.5
-			location = { religion_group = pagan_group }
-		}
-		modifier = {
-			factor = 0.5
-			independent = no
-			liege = { religion_group = pagan_group }
-		}
-		modifier = {
-			factor = 0.5
-			OR = {
-				trait = sympathy_pagans
-				trait = sympathy_zoroastrianism
-				trait = sympathy_judaism
-				trait = sympathy_indian
-			}
-		}
-		modifier = {
-			factor = 0.75
-			NOT = { learning = 5 }
-		}
-		modifier = {
-			factor = 0.75
-			NOT = { learning = 2 }
-		}
-		modifier = {
-			factor = 1.5
-			piety = 100
-		}
-		modifier = {
-			factor = 1.5
-			piety = 200
-		}
-		modifier = {
-			factor = 1.5
-			piety = 300
-		}
-		modifier = {
-			factor = 1.5
-			piety = 400
-		}
-		modifier = {
-			factor = 3
-			trait = slothful
-		}
-		modifier = {
-			factor = 3
-			trait = content
-		}
-		modifier = {
-			factor = 3
-			trait = craven
-		}
-		modifier = {
-			factor = 3
-			trait = patient
-		}
-		modifier = {
-			factor = 3
-			learning = 10
-		}
-		modifier = {
-			factor = 3
-			learning = 15
-		}
-		modifier = {
-			factor = 3
-			trait = scholar
-		}
-		modifier = {
-			factor = 5
-			OR = {
-				trait = pilgrim
-				trait = hajjaj
-			}
-		}
-		modifier = {
-			factor = 5
-			independent = no
-			is_female = yes
-			any_spouse = { secret_religion = ROOT }
-		}
-		modifier = {
-			factor = 10
-			independent = no
-			liege = { secret_religion = ROOT }
-		}
-		modifier = {
-			factor = 10
-			NOR = {
-				trait = cynical
-				trait = lunatic
-				any_spouse = { religion_group = pagan_group }
-				any_dynasty_member = { religion_group = pagan_group }
-				any_liege = { religion_group = pagan_group }
-				any_vassal = { religion_group = pagan_group }
-				location = { religion_group = pagan_group }
-				location = { any_province_character = { religion_group = pagan_group } }
-			}
-		}		
-	}
-	
-	immediate = {
-		set_character_flag = can_go_pagan
-		add_trait = cynical
-	}
-}
 
 ##############################################
 #
@@ -910,8 +434,8 @@ character_event = {
 # Arriving for the great holy war - Non-Hellenic Ancient Religions
 character_event = {
 	id = ancrel.9017
-	desc = "EVTDESC8300"
-	picture = "GFX_evt_battle"
+	desc = EVTDESC8300
+	picture = GFX_evt_battle
 	border = GFX_event_normal_frame_war
 	
 	min_age = 16
@@ -949,7 +473,7 @@ character_event = {
 	}
 	
 	option = {
-		name = "8469.a"
+		name = 8469.a
 		trigger = {
 			religion_openly_in_celtic_subgroup_trigger = yes
 		}
@@ -957,7 +481,7 @@ character_event = {
 	}
 
 	option = {
-		name = "8469.a"
+		name = 8469.a
 		trigger = {
 			religion = egyptian_pagan
 		}
@@ -965,7 +489,7 @@ character_event = {
 	}
 
 	option = {
-		name = "8469.a"
+		name = 8469.a
 		trigger = {
 			religion = aten_pagan
 		}
@@ -990,10 +514,8 @@ character_event = {
     desc = ancrel.9020.desc
     
     is_triggered_only = yes
-
-	trigger = {
-		has_global_flag = ancrel_debug
-	}
+	
+	has_global_flag = ancrel_debug
 
 	immediate = {
 		capital_scope = {
@@ -1032,10 +554,8 @@ character_event = {
     desc = ancrel.9021.desc
 
     is_triggered_only = yes
-
-	trigger = {
-		has_global_flag = ancrel_debug
-	}
+	
+	has_global_flag = ancrel_debug
 
 	immediate = {
 		capital_scope = {
@@ -1069,9 +589,8 @@ character_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
-		has_global_flag = ancrel_debug
-	}
+	
+	has_global_flag = ancrel_debug
 
 	immediate = {
 		any_realm_character = {
@@ -1094,11 +613,11 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { has_global_flag = ancrel_cardea }
+		NOT = { has_global_flag = ancrel_cernunnos }
 	}
 
 	immediate = {
-		set_global_flag = ancrel_cardea
+		set_global_flag = ancrel_cernunnos
 		any_player = {
 			limit = {
 				has_character_modifier = ancrel_oilworks
@@ -1112,7 +631,7 @@ character_event = {
 character_event = {
 	id = ancrel.9024
 	desc = ancrel.9024.desc
-	picture = GFX_evt_roman_temple
+	picture = GFX_evt_warrior_banners
 
 	is_triggered_only = yes
 

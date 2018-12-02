@@ -7,6 +7,7 @@ head1 = {
 	}
 	
 	martial = 1
+	combat_rating = 5
 	monthly_character_prestige = 0.5
 	command_modifier = {	
 		religious_enemy = 0.1
@@ -24,6 +25,7 @@ head2 = {
 		}
 	}
 	martial = 3
+	combat_rating = 15
 	monthly_character_prestige = 1.5
 	customizer = no
 	same_religion_opinion = 5
@@ -87,6 +89,59 @@ bad_druid = {
 	cannot_inherit = yes
 }
 
+dryad = {
+	potential = {
+		religion = britannic_pagan
+		is_theocracy = yes
+	}
+
+	opposites = {
+		bad_dryad
+	}
+
+	religious = yes
+
+	monthly_character_piety = 0.5
+	learning = 2
+	diplomacy = 2
+	fertility = 0.10
+
+	customizer = no
+
+	cannot_inherit = yes
+}
+
+bad_dryad = {
+	religious = yes
+
+	potential = {
+		OR = {
+			is_theocracy = yes
+			is_ruler = no
+		}
+	}
+
+	opposites = {
+		dryad
+	}
+
+	church_opinion = -10
+	same_opinion_if_same_religion = 25
+
+	monthly_character_piety = -1
+	learning = 2
+	diplomacy = 1
+	fertility = 0.10
+
+	customizer = no
+	random = no
+
+	female_insult = INSULT_SCARECROW
+	child_insult = INSULT_SCARECROW
+	female_insult_adj = INSULT_CORRUPT
+	child_insult_adj = INSULT_CRUMMY
+}
+
 fian = {	
 	potential = {
 		OR = {
@@ -97,7 +152,7 @@ fian = {
 
 	martial = 2
 	learning = 1
-	
+	combat_rating = 7
 	same_religion_opinion = 5
 	
 	same_opinion = 10
@@ -121,9 +176,8 @@ celtic_knight = {
 	
 	martial = 2
 	learning = 1
-	
+	combat_rating = 10
 	same_religion_opinion = 5
-	
 	same_opinion = 10
 	
 	customizer = no
@@ -149,6 +203,7 @@ wolf = {
 	}
 	martial = 2
 	monthly_character_prestige = 0.15
+	combat_rating = 7
 
 	same_opinion = 10
 }
@@ -201,6 +256,7 @@ lughs_own = {
 	opposites = {
 		atens_chosen
 		montu
+		morrigan
 		crusader
 		mujahid
 		valhalla_bound
@@ -217,7 +273,7 @@ lughs_own = {
 	}
 	
 	martial = 2
-	combat_rating = 1
+	combat_rating = 10
 	
 	church_opinion = 15
 	same_opinion_if_same_religion = 15
@@ -233,152 +289,69 @@ lughs_own = {
 	female_compliment_adj = COMPL_RIGHTEOUS
 }
 
-secretly_celtic_pagan = {
+morrigan = {
 	opposites = {
-		secretly_cathar
-		secretly_fraticelli
-		secretly_waldensian
-		secretly_lollard
-		secretly_orthodox
-		secretly_bogomilist
-		secretly_monothelite
-		secretly_iconoclast
-		secretly_paulician
-		secretly_miaphysite
-		secretly_monophysite
-		secretly_nestorian
-		secretly_messalian
-		secretly_sunni
-		secretly_zikri
-		secretly_yazidi
-		secretly_shiite
-		secretly_druze
-		secretly_hurufi
-		secretly_ibadi
-		secretly_kharijite
-		secretly_jewish
-		secretly_samaritan
-		secretly_karaite
-		secretly_zoroastrian
-		secretly_mazdaki
-		secretly_manichean
-		secretly_hinduism
-		secretly_buddhism
-		secretly_jain
-		secretly_norse_pagan
-		secretly_norse_pagan_reformed
-		secretly_baltic_pagan
-		secretly_baltic_pagan_reformed
-		secretly_finnish_pagan
-		secretly_finnish_pagan_reformed
-		secretly_slavic_pagan
-		secretly_slavic_pagan_reformed
-		secretly_tengri_pagan
-		secretly_tengri_pagan_reformed
-		secretly_aztec
-		secretly_aztec_reformed
-		secretly_west_african_pagan
-		secretly_west_african_pagan_reformed
-		secretly_zun_pagan
-		secretly_zun_pagan_reformed
-		secretly_hellenic_pagan
-		secretly_pagan
-
-		secretly_promethean_pagan
-		secretly_titan_pagan
-		secretly_egyptian_pagan
-		secretly_aten_pagan
+		atens_chosen
+		montu
+		lughs_own
+		crusader
+		mujahid
+		valhalla_bound
+		eagle_warrior
+		sun_warrior
+		ukkos_shield
+		nyames_shield
+		peruns_chosen
+		romuvas_own
+		ares_own
+		tengri_warrior
+		shaddai
+		gondi_shahansha
 	}
-
-	is_visible = {
-		OR = {
-			character = FROM
-			society_member_of = secret_religious_society_celtic_pagan
-			AND = {
-				is_close_relative = FROM
-				trait = secretly_celtic_pagan
-			}
-		}
-	}
-
-	same_opinion = 15
 	
-	random = no
+	martial = 2
+	combat_rating = 10
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
 	customizer = no
-	ai_zeal = -50
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
 }
 
-secretly_celtic_pagan_reformed = {
-	opposites = {
-		secretly_cathar
-		secretly_fraticelli
-		secretly_waldensian
-		secretly_lollard
-		secretly_orthodox
-		secretly_bogomilist
-		secretly_monothelite
-		secretly_iconoclast
-		secretly_paulician
-		secretly_miaphysite
-		secretly_monophysite
-		secretly_nestorian
-		secretly_messalian
-		secretly_sunni
-		secretly_zikri
-		secretly_yazidi
-		secretly_shiite
-		secretly_druze
-		secretly_hurufi
-		secretly_ibadi
-		secretly_kharijite
-		secretly_jewish
-		secretly_samaritan
-		secretly_karaite
-		secretly_zoroastrian
-		secretly_mazdaki
-		secretly_manichean
-		secretly_hinduism
-		secretly_buddhism
-		secretly_jain
-		secretly_norse_pagan
-		secretly_norse_pagan_reformed
-		secretly_baltic_pagan
-		secretly_baltic_pagan_reformed
-		secretly_finnish_pagan
-		secretly_finnish_pagan_reformed
-		secretly_slavic_pagan
-		secretly_slavic_pagan_reformed
-		secretly_tengri_pagan
-		secretly_tengri_pagan_reformed
-		secretly_aztec
-		secretly_aztec_reformed
-		secretly_west_african_pagan
-		secretly_west_african_pagan_reformed
-		secretly_zun_pagan
-		secretly_zun_pagan_reformed
-		secretly_hellenic_pagan
-		secretly_pagan
-
-		secretly_promethean_pagan
-		secretly_titan_pagan
-		secretly_egyptian_pagan
-		secretly_aten_pagan
+sych = { # welsh for "dry"
+	potential = {
+		religion = britannic_pagan
 	}
 
-	is_visible = {
-		OR = {
-			character = FROM
-			society_member_of = secret_religious_society_celtic_pagan_reformed
-			AND = {
-				is_close_relative = FROM
-				trait = secretly_celtic_pagan_reformed
-			}
-		}
-	}
+	random = no # only assigned via event
 
-	same_opinion = 15
+	monthly_character_piety = -0.10
+	same_opinion = 5
+	same_religion_opinion = -5
+	church_opinion = -5
 	
+	religious = yes
+}
+
+child_of_dryad = {
+	potential = {
+		religion = britannic_pagan
+	}
+
 	random = no
-	customizer = no
-	ai_zeal = -50
+
+	monthly_character_piety = 0.10
+	same_opinion = 5
+	same_religion_opinion = 5
+	church_opinion = 5
+
+	religious = yes
 }

@@ -17,12 +17,11 @@ decisions = {
 			}
 			OR = {
 				religion_group = christian
-				religion = hellenic_pagan
+				religion_openly_hellenic_or_reformed_trigger = yes
 			}
 			OR = {
 				culture = roman
 				culture = italian
-				culture_group = italian_group # SWMH
 				has_landed_title = e_italy
 			}
 			OR = {
@@ -55,7 +54,7 @@ decisions = {
 			completely_controls = d_calabria
 		}
 		effect = {
-			narrative_event = { id = ancrel.2224 tooltip = EVTTOOLTIPLoR.20 }
+			narrative_event = { id = hellenic.224 tooltip = EVTTOOLTIPLoR.20 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -103,7 +102,7 @@ decisions = {
 			completely_controls = c_abydos
 		}
 		effect = {
-			narrative_event = { id = ancrel.2222 tooltip = EVTTOOLTIPLoR.20 }
+			narrative_event = { id = hellenic.222 tooltip = EVTTOOLTIPLoR.20 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -149,7 +148,7 @@ decisions = {
 			b_roma = { holder_scope = { religion = catholic } }
 		}
 		effect = {
-			narrative_event = { id = ancrel.2210 tooltip = EVTTOOLTIPLoR.210}
+			narrative_event = { id = hellenic.210 tooltip = EVTTOOLTIPLoR.210}
 			set_global_flag = schism_mended
 		}
 		ai_will_do = {

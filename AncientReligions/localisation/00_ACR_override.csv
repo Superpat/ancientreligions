@@ -1,18 +1,17 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 ###### Overridden vanilla keys have to be loaded last since patch 2.5;;;;;;;;;;;;;;x
 ###### Non-Catholic specific text for College of Cardinals;;;;;;;;;;;;;;x
-SHOW_COLLEGE_OF_CARDINALS;[GetReligiousHeadElectorBody];;;;;;;;;;;;;x
-POPE_VOTE_SCORE;ßYReligious head suitability: $SCORE$ß!;;;;;;;;;;;;;x
-CANDIDATE_SCORE;ßYCandidate appointment scoreß!;;;;;;;;;;;;;x
+SHOW_COLLEGE_OF_CARDINALS;[This.GetReligiousHeadElectionBody];;;;;;;;;;;;;x
+POPE_VOTE_SCORE;ùYReligious head suitability: $SCORE$ù!;;;;;;;;;;;;;x
+CANDIDATE_SCORE;ùYCandidate appointment scoreù!;;;;;;;;;;;;;x
 SUCCESSOR;Current Successor;;;;;;;;;;;;;x
-SUCCESSOR_TOOLTIP;This is the current expected successor of the [GetReligiousHeadTitle].;;;;;;;;;;;;;x
-TITLE_GAINED_RELIGIOUS_SETUP;New [GetReligiousHeadElectorTitle] appointed.;;;;;;;;;;;;;x
-TITLE_GAINED_RELIGIOUS_LETTER;$NEWHOLDER$ was given a seat in the [GetReligiousHeadElectorBody].;;;;;;;;;;;;;x
-TITLE_GAINED_RELIGIOUS_LOG;$NEWHOLDER$ was given a seat in the [GetReligiousHeadElectorBody].;;;;;;;;;;;;;x
+SUCCESSOR_TOOLTIP;This is the current expected successor of the [This.GetReligiousHeadTitle].;;;;;;;;;;;;;x
+TITLE_GAINED_RELIGIOUS_SETUP;New [This.GetReligiousHeadElectorTitle] appointed.;;;;;;;;;;;;;x
+TITLE_GAINED_RELIGIOUS_LETTER;$NEWHOLDER$ was given a seat in the [This.GetReligiousHeadElectionBody].;;;;;;;;;;;;;x
+TITLE_GAINED_RELIGIOUS_LOG;$NEWHOLDER$ was given a seat in the [This.GetReligiousHeadElectionBody].;;;;;;;;;;;;;x
 ###### Map;;;;;;;;;;;;;;x
 b_meir;Akhetaten;;;;;;;;;;;;;x
 ###### Vanilla religions;;;;;;;;;;;;;;x
-hellenic_pagan_DESC;The Hellenistic religion is polytheistic, with a pantheon of twelve major gods including Jupiter, Mars, Mercury, Venus, Minerva and Vesta. It originated in ancient Greece and with the conquests of Alexander the Great and the Roman Empire, it would go on to become the dominant religion in the Mediterranean world until the rise of Christendom.;L'hellÈnisme est polythÈiste, avec un panthÈon de douze dieux majeurs incluant Jupiter, Mars, Mercure, Venus, Minerve et Vesta. Il est originaire de la GrËce antique et avec les conquÍte d'Alexandre le Grand et l'Empire romain, allait devenir la religion dominante autour de la MÈditerranÈe jusqu'‡ la montÈe du Christianisme.;;;;;;;;;;;;x
 job_spiritual_hellenic_pagan;Augur;Augure;;;;;;;;;;;;x
 finnish_pagan_reformed;Suomenusko;Suomenusko;;;;;;;;;;;;x
 norse_pagan_reformed;Asatru;Asatru;;;;;;;;;;;;x

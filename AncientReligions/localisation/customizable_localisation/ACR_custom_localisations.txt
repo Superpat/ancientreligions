@@ -9,7 +9,7 @@ defined_text = {
 	text = {
 		trigger = { is_female = yes }
 		localisation_key = dryad
-	}	
+	}
 }
 
 defined_text = {
@@ -91,5 +91,23 @@ defined_text = {
 	text = {
 		trigger = { religion_openly_in_celtic_subgroup_trigger = yes }
 		localisation_key = acr_druid_of_the_circle
+	}
+}
+
+defined_text = {
+	name = GetReligiousHeadTitle
+
+	text = {
+		trigger = { religion_group = christian }
+		localisation_key = acr_pope
+	}
+
+	text = {
+		trigger = { religion_openly_celtic_or_reformed_trigger = yes }
+		localisation_key = ARCH_DRUID
+	}
+
+	text = {
+		trigger = { religion = britannic_pagan }
 	}
 }

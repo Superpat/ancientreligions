@@ -1,82 +1,13 @@
 # Pagan heads of religion
-
-d_hellenic_pagan = {
-	color={ 155 155 235 }
-	color2={ 220 220 0 }
-	
-	capital = 333 #Roma
-	
-	title = PONTIFEX_MAXIMUS
-	title_female = PONTIFICA_MAXIMUS
-	foa = PONTIFEX_MAXIMUS_FOA
-	
-	creation_requires_capital = yes
-	
-	allow = {
-		always = no
-	}
-	
-	gain_effect = {
-		hidden_tooltip = {
-			e_roman_empire = {
-				owner = {
-					if = {
-						limit = {
-							religion = hellenic_pagan
-						}
-						character_event = { id = ancrel.2102 days = 1 }
-					}
-				}
-			}
-			e_byzantium = {
-				owner = {
-					if = {
-						limit = {
-							religion = hellenic_pagan
-							NOT = { has_landed_title = e_roman_empire }
-						}
-						character_event = { id = ancrel.2102 days = 1 }
-					}
-				}
-			}
-			e_latin_empire = {
-				owner = {
-					if = {
-						limit = {
-							religion = hellenic_pagan
-							NOT = { has_landed_title = e_roman_empire }
-							NOT = { has_landed_title = e_byzantium }
-						}
-						character_event = { id = ancrel.2102 days = 1 }
-					}
-				}
-			}
-		}
-	}
-	
-	short_name = yes
-	
-	primary = no
-	
-	dignity = 100 # Counted as having this many more counties than it does
-	
-	# Controls a religion
-	controls_religion = hellenic_pagan
-	
-	religion = hellenic_pagan
-	
-	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
-}
-
 d_celtic_pagan_reformed = {
 	color={ 122 165 70 }
 	color2={ 220 220 0 }
 	
 	capital = 64 # Gwynedd
 	
-	title = "ARCH_DRUID"
-	title_female = "ARCH_DRUIDESS"
-	foa = "ARCH_DRUID_FOA"
+	title = ARCH_DRUID
+	title_female = ARCH_DRUIDESS
+	foa = ARCH_DRUID_FOA
 	
 	short_name = yes
 	
@@ -103,7 +34,34 @@ d_celtic_pagan_reformed = {
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
 
-d_egyptian_pagan = {
+k_britannic_pagan = {
+	color = { 128 230 128 }
+	color2 = { 255 255 255 }
+
+	capital = 32 # Middlesex
+
+	title = ARCHDRYAD
+	title_female = ARCHDRYAD
+	foa = k_britannic_pagan_foa
+	
+	short_name = yes
+
+	allow = { # restored via decision
+		always = no
+	}
+
+	# Always exists
+	landless = yes
+	primary = yes
+
+	controls_religion = britannic_pagan
+	dignity = 100
+	religion = britannic_pagan
+
+	dynasty_title_names = no
+}
+
+d_egyptian_pagan_reformed = {
 	color = { 222 125 120 }
 	color2 = { 120 120 0 }
 	
@@ -119,9 +77,9 @@ d_egyptian_pagan = {
 	primary = yes
 	
 	# Controls a religion
-	controls_religion = egyptian_pagan
+	controls_religion = egyptian_pagan_reformed
 	dignity = 100
-	religion = egyptian_pagan
+	religion = egyptian_pagan_reformed
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 	
@@ -144,12 +102,6 @@ k_aten_pagan = {
 	title_female = MERYATEN
 	
 	short_name = yes
-
-	creation_requires_capital = yes
-	
-	allow = {
-		always = no
-	}
 	
 	# Controls a religion
 	controls_religion = aten_pagan
@@ -164,11 +116,12 @@ d_promethean_pagan = {
 	color2={ 201 97 108 }
 
 	capital = 482 # Athens, location of Plato's Academy
+	
+	short_name = yes
 
 	allow = {
-		always = no
+		always = no # made via decision
 	}
-	creation_requires_capital = yes
 
 	title = SCHOLARCH
 	title_female = SCHOLARCH

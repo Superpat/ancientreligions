@@ -1,6 +1,7 @@
 culture = {
 	religion = {
 		"hellenic_pagan"
+		"hellenic_pagan_reformed"
 		"titan_pagan"
 		"promethean_pagan"
 	}
@@ -105,6 +106,7 @@ culture = {
 	religion = {
 		"celtic_pagan"
 		"celtic_pagan_reformed"
+		"britannic_pagan"
 	}
 	
 	templates = { 

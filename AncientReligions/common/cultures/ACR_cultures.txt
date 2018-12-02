@@ -43,8 +43,8 @@ celtic = {
 		
 		from_dynasty_prefix = "en "
 		
-		male_patronym = "ignos "
-		female_patronym = "igna "
+		male_patronym = "ignos"
+		female_patronym = "igna"
 		prefix = no
 
 		modifier = default_culture_modifier

@@ -1,4 +1,4 @@
-targeted_decisions = {
+targetted_decisions = {
 	#Action: unseelie_petitioners_recruit
 	unseelie_petitioners_recruit = {
 		is_in_society = yes
@@ -457,9 +457,7 @@ title_decisions = {
 				set_secret_religion = celtic_pagan
 			}
 		}
-		
 
-		
 		ai_will_do = {
 			factor = 0
 		}
@@ -522,8 +520,6 @@ title_decisions = {
 			}
 		}
 		
-
-		
 		ai_will_do = {
 			factor = 0
 		}
@@ -584,8 +580,6 @@ title_decisions = {
 				set_secret_religion = hellenic_pagan
 			}
 		}
-		
-
 		
 		ai_will_do = {
 			factor = 0
@@ -651,8 +645,6 @@ title_decisions = {
 			}
 		}
 		
-
-		
 		ai_will_do = {
 			factor = 0
 		}
@@ -717,8 +709,6 @@ title_decisions = {
 			}
 		}
 		
-
-		
 		ai_will_do = {
 			factor = 0
 		}
@@ -780,8 +770,6 @@ title_decisions = {
 			}
 		}
 		
-
-		
 		ai_will_do = {
 			factor = 0
 		}
@@ -842,8 +830,6 @@ title_decisions = {
 				set_secret_religion = aten_pagan
 			}
 		}
-		
-
 		
 		ai_will_do = {
 			factor = 0

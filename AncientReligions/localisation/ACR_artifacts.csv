@@ -1,3 +1,4 @@
+#### Celtic Artifacts ;;;;;;;;;;;;;;x
 silver_hand_of_nuada;Silver Hand of Nuada;;;;;;;;;;;;;x
 silver_hand_of_nuada_desc;This ornate prosthetic hand is crafted from purest silver and covered in elaborate runes and filigree. According to legend, this is the very silver hand that was made by Creidnhe and attached by Dian Cecht to replace the great King Nuada's hand, lost in battle to the Fir Bolg champion Sreng.;;;;;;;;;;;;;x
 spear_of_lugh;Gae Assail;;;;;;;;;;;;;x
@@ -22,6 +23,8 @@ horned_helm;Horned Helm;;;;;;;;;;;;;x
 horned_helm_desc;This helmet is centuries old, if not over a millenia. It was probably a prized posession of a celtic tribal chief, but the strange horns look silly by modern standards.;;;;;;;;;;;;;x
 battersea_shield;Battersea Shield;;;;;;;;;;;;;x
 battersea_shield_desc;This bronze tower shield is masterfully decorated. Pieces of colored enamel still cling to their fittings even after centuries at the bottom of a river.;;;;;;;;;;;;;x
+crown_celtic_fylkir;Crown of Oak;;;;;;;;;;;;;x
+crown_celtic_fylkir_desc;The sacred crown worn by the reigning Myrdinn, head of the Druidic faith.;;;;;;;;;;;;;x
 #### Hellenic Artifacts ;;;;;;;;;;;;;;x
 nimean_lion_skin;Nimean Lionskin;;;;;;;;;;;;;x
 nimean_lion_skin_desc;This hooded cloak has been made from the hide of a large, black-maned lion. The skull has been fitted with a padded leather cap to serve as a helm. Many believe this to be the Nimean Lion's skin, the very hide worn by Heracles during his final 11 labors.;;;;;;;;;;;;;x
@@ -59,3 +62,8 @@ silver_amphora;Silver Amphora;;;;;;;;;;;;;x
 silver_amphora_desc;A beautiful amphora made from fine silver and decorated with reliefs of humans and satyrs celebrating a bountiful harvest at the feet of Demeter.;;;;;;;;;;;;;x
 achilles_shield_piece;Shard of Achilles Shield;;;;;;;;;;;;;x
 achilles_shield_piece_desc;This shard of metal bares reliefs of battle scenes that match the descriptions of Achilles shield from The Illiad. Perhaps if you found more...;;;;;;;;;;;;;x
+### Egyptian;;;;;;;;;;;;;;x
+crown_egyptian_fylkir;Crown of Upper and Lower Egypt;;;;;;;;;;;;;x
+crown_egyptian_fylkir_desc;The sacred crown worn by the reigning Pharoah, head of the Kemetic faith.;;;;;;;;;;;;;x
+crown_meryaten;Sunburst Crown;;;;;;;;;;;;;x
+crown_meryaten_desc;The sacred crown worn by the reigning Meryaten, head of the Atenic faith.;;;;;;;;;;;;;x

@@ -1,8 +1,9 @@
-2018-??-?? v0.42.0 "Cernunnos"
+2018-12-02 v0.42.0 "Cernunnos"
 -------------------------
 > Cernunnos is the Horned God, a deity of fertility, life, animals, and the underworld. Worshipped throughout Gaul and Celtiberia, Cernunnos was one of a small number of almost universally worshipped Celtic gods. His most famous appearances are on the Pillar of the Boatman, a carved column found in a Roman temple in Paris; and the Gundestrup Cauldron, a fantastic example of iron age silverwork found in a peat bog near Gundestrup, Denmark.
 
 General:
+ - CK2 3.1 compatability
  - Crusades and Jihads can now be called in a Paganified world if the player is a member of the religion.
   - For example, the Pope can call Crusades if there is a Catholic player.
  - Holy Orders are no longer vassalizable.
@@ -16,11 +17,16 @@ General:
   - Cleopatra the Alchemist, Coptic Kemetic Pagan, master spy.
   - Seneca the Younger, Roman Promethean Pagan, master scholar.
   - Lucan the Younger, Roman Hellenic Pagan, master scholar.
- - Improved Nile River Flooding event to prevent repeated messages.
 
 Celtic:
  - Fixes bug where the Unfit King Beta game rule was being ignored.
  - Gaulish Queens will henceforth be known as Riga, and Empresses as Vercingetoriga.
+ - There are now Celtic artifacts to be found when searching for artifacts (Monks & Mystics feature):
+  - Tier 5: Silver Hand of Nuada, Spear of Lugh
+  - Tier 4: Skull of Brigid, Horn of Bran Galed, Crown of Myrdynn (temporal religious head)
+  - Tier 3: Tusk of Torc Triath
+  - Tier 2: Torque of Boudicca, Old Carnyx, Horned Helm, Battersea shield
+  - Tier 1: Generic tier 1 religious artifacts
  - Also introducing a new heresy, Britannic Pagan!
 
 Britannic Pagan:
@@ -37,16 +43,38 @@ Britannic Pagan:
  - Britannic rulers are restricted to Enatic, Enatic-Cognatic, and Absolute Cognatic succession laws.
   - Council voting behavior has been updated to ensure that Britannic councilors will behave appropriately.
  - Britannic rulers are forbidden from lowering the status of women laws and will never choose to vote in favor of doing so.
+ - There are now Britannic artifacts to be found when searching for artifacts (Monks & Mystics feature):
+  - Tier 5: Y Tair Tonau "The Three Waves" (trident of britannia), Helm of Britannia, Shield of Britannia
+  - Tier 4: Skull of Brigid, Horn of Bran Galed
+  - Tier 3: Tusk of Torc Triath
+  - Tier 2: Torque of Boudicca, Old Carnyx, Horned Helm, Battersea shield
+  - Tier 1: Generic tier 1 religious artifacts
 
 Hellenic:
+ - As with vanilla, Hellenic Pagan is now unreformed and reformable.
+  - Disabled the Myrmidon mercenary company in favor of the vanilla holy order of the same name.
+   - I'll add a new merc company for hellenes eventually!
  - The Philosopher event chain is now more likely to fire and the max demense size requirement is relaxed to 230.
   - Various conditions will also increase the odds of the event firing, such as being in a defensive war and your religion having a low MA (<50%).
+ - There are now Hellenic artifacts to be found when searching for artifacts (Monks & Mystics feature):
+  - Tier 5: Nimean Lionskin, Kronium, Bloody Robes of Caesar, Aethon's Feather
+  - Tier 4: Hector's Armor, Odysseus' Bow, Death Mask of Agamemnon, Crown of Theseus
+  - Tier 3: Skull of Alexander, Alexander's Armor, Golden Amphora, Sphinx Claw, Golden Apple
+  - Tier 2: Corinthian Helm, Petrified Tongue of an Oracle, Silver Amphora, Fragment of Achilles Shield
+  - Tier 1: Generic tier 1 religious artifacts
+ - Disabled my Roman cultural conversion events, as there is some evidence they are responsible for the CTD bugs some have experienced.
+  - Those with Holy Fury can still do the Roman Renaissance event chain that comes with the DLC.
 
 Kemetic:
- - Made it more clear that restoring the Priesthood requires that Luxor is restored.
+ - Kemetic Pagan is now unreformed and reformable.
+  - The unreformed religion has no religious head, and will be referred to as Egyptian Pagan.
+  - The reformed one now has the holy orders and "Rebuild Luxor" decision.
+  - The Paragon Cult of Amun will now be created on reformation.
+  - Crown of Upper and Lower Egypt (temporal religious head) has been added.
 
 Atenic:
  - Made it more clear that forming the Meryatenate requires that Akhetaten is restored.
+  - The Sunburst Crown is given to the Meryaten when the title is formed.
 
 
 2018-06-10 v0.41.3 "Cardea"

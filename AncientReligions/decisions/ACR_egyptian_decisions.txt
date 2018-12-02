@@ -133,60 +133,6 @@ decisions = {
 			}
 		}
 	}
-	
-	restore_priesthood_aten_pagan = {
-		only_playable = yes
-		is_high_prio = yes
-		potential = {
-			has_dlc = "The Old Gods"
-			is_playable = yes
-			higher_tier_than = duke # Tease the decision for kings
-			religion = aten_pagan
-			NOT = { has_global_flag = aten_priesthood_founded }
-			has_regent = no
-		}
-		allow = {
-			higher_tier_than = king
-			realm_learning = 25
-			piety = 500
-			wealth = 500
-			war = no
-			religion_authority = 0.6
-			custom_tooltip = {
-				text = akhetaten_restored_condition
-				has_global_flag = akhetaten_restored
-			}
-			b_meir = {
-				has_holder = yes
-				holder_scope = { top_liege = { character = ROOT } }
-			}
-		}
-		effect = {
-			set_global_flag = aten_priesthood_founded
-			wealth = -500
-			piety = -250
-			prestige = 250
-			activate_title = { title = k_aten_pagan status = yes }
-			hidden_tooltip = {
-				k_aten_pagan = {
-					grant_title = ROOT
-				}
-				narrative_event = { id = atenic.4 }
-				if = {
-					limit = { ROOT = { ai = no } }
-					ROOT = {
-						chronicle = {
-							entry = CHRONICLE_ATEN_PRIESTHOOD
-							portrait = [Root.GetID]
-						}
-					}
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
 
 	organize_anubis = {
 		only_playable = yes
@@ -360,6 +306,61 @@ decisions = {
 		}
 	}
 
+	restore_priesthood_aten_pagan = {
+		only_playable = yes
+		is_high_prio = yes
+		potential = {
+			has_dlc = "The Old Gods"
+			is_playable = yes
+			higher_tier_than = duke # Tease the decision for kings
+			religion = aten_pagan
+			NOT = { has_global_flag = aten_priesthood_founded }
+			has_regent = no
+		}
+		allow = {
+			higher_tier_than = king
+			realm_learning = 25
+			piety = 500
+			wealth = 500
+			war = no
+			religion_authority = 0.6
+			custom_tooltip = {
+				text = akhetaten_restored_condition
+				has_global_flag = akhetaten_restored
+			}
+			b_meir = {
+				has_holder = yes
+				holder_scope = { top_liege = { character = ROOT } }
+			}
+		}
+		effect = {
+			set_global_flag = aten_priesthood_founded
+			wealth = -500
+			piety = -250
+			prestige = 250
+			activate_title = { title = k_aten_pagan status = yes }
+			add_artifact = crown_meryaten
+			hidden_tooltip = {
+				k_aten_pagan = {
+					grant_title = ROOT
+				}
+				narrative_event = { id = atenic.4 }
+				if = {
+					limit = { ROOT = { ai = no } }
+					ROOT = {
+						chronicle = {
+							entry = CHRONICLE_ATEN_PRIESTHOOD
+							portrait = [Root.GetID]
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	organize_burning_blades = {
 		only_playable = yes
 		is_high_prio = yes

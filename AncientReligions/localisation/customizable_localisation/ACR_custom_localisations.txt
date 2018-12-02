@@ -106,4 +106,8 @@ defined_text = {
 		trigger = { religion_openly_celtic_or_reformed_trigger = yes }
 		localisation_key = ARCH_DRUID
 	}
+
+	text = {
+		trigger = { religion = britannic_pagan }
+	}
 }

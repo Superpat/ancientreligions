@@ -5,8 +5,8 @@ pagan_group = {
 		graphical_culture = norsegfx
 		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
 
-		icon = 37
-		heresy_icon = 57
+		icon = 58
+		heresy_icon = 59
 		parent = hellenic_pagan
 
 		color = { 0.6 0.2 0.2 }
@@ -74,8 +74,8 @@ pagan_group = {
 		ai_convert_other_group = 2 # always try to convert
 		ai_convert_same_group = 2 # always try to convert
 
-		icon = 37
-		heresy_icon = 57
+		icon = 58
+		heresy_icon = 59
 		parent = hellenic_pagan_reformed
 
 		color = { 0.6 0 0 }
@@ -134,8 +134,8 @@ pagan_group = {
 		# Use norsegfx rather than celticgfx to have the northern pagan rounded CoA on the map
 		graphical_culture = norsegfx
 		alternate_start = { always = no }
-		icon = 59
-		heresy_icon = 60
+		icon = 61
+		heresy_icon = 62
 		
 		ai_convert_other_group = 2 # always try to convert
 		ai_convert_same_group = 2 # always try to convert
@@ -177,8 +177,8 @@ pagan_group = {
 		# Use norsegfx rather than celticgfx to have the northern pagan rounded CoA on the map
 		graphical_culture = norsegfx
 		
-		icon = 58
-		heresy_icon = 60
+		icon = 60
+		heresy_icon = 62
 		
 		color = { 0.14 0.36 0.16 }
 		crusade_name = GREAT_HOLY_WAR
@@ -248,8 +248,8 @@ pagan_group = {
 		interface_skin = { christian_interface pagan_interface }
 		alternate_start = { always = no }
 		
-		icon = 59
-		heresy_icon = 60
+		icon = 61
+		heresy_icon = 62
 		
 		ai_convert_other_group = 2 # always try to convert
 		ai_convert_same_group = 2 # always try to convert
@@ -303,8 +303,8 @@ pagan_group = {
 		secondary_event_pictures = egyptian_pagan
 		interface_skin = { zoroastrian_interface hellenic_interface }
 		
-		icon = 61
-		heresy_icon = 62
+		icon = 64
+		heresy_icon = 65
 
 		ai_convert_other_group = 2 # always try to convert
 		ai_convert_same_group = 1
@@ -340,8 +340,8 @@ pagan_group = {
 
 		reformed = egyptian_pagan_reformed
 		
-		icon = 61
-		heresy_icon = 62
+		icon = 63
+		heresy_icon = 65
 
 		ai_convert_other_group = 1
 		ai_convert_same_group = 0
@@ -400,8 +400,8 @@ pagan_group = {
 		interface_skin = { zoroastrian_interface hellenic_interface muslim_interface }
 		#pre_reformed = yes
 
-		icon = 61
-		heresy_icon = 62
+		icon = 64
+		heresy_icon = 65
 		
 		ai_convert_other_group = 2 # always try to convert
 		ai_convert_same_group = 2 # always try to convert

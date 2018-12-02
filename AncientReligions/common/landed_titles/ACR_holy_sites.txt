@@ -5,7 +5,7 @@ c_dublin = { # hill of tara
 	holy_site = celtic_pagan_reformed
 	holy_site = britannic_pagan
 }
-c_gwynedd = {
+c_anglesey = {
 	holy_site = celtic_pagan
 	holy_site = celtic_pagan_reformed
 }

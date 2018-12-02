@@ -21,14 +21,15 @@ feudal_governments = {
 		potential = {
 			OR = {
 				controls_religion = no
-				OR = { religion_group = muslim religion = aten_pagan }
+				religion_group = muslim
+				religion = aten_pagan
 				has_religion_feature = religion_temporal_head
 				AND = {
 					religion = norse_pagan_reformed
 					has_religion_features = no # Old saves, and campaigns without HF, need the Fylkirate to continue working
 				}
 			}
-			OR = { religion_group = muslim religion = aten_pagan }
+			NOR = {	religion_group = muslim	religion = aten_pagan }
 			NOT = { is_government_potential = roman_imperial_government }
 			NOT = { is_government_potential = order_government }
 			NAND = { 
@@ -93,14 +94,18 @@ feudal_governments = {
 		potential = {
 			OR = {
 				controls_religion = no
-				OR = { religion_group = muslim religion = aten_pagan }
+				religion_group = muslim
+				religion = aten_pagan
 				has_religion_feature = religion_temporal_head
 				AND = {
 					religion = norse_pagan_reformed
 					has_religion_features = no # Old saves, and campaigns without HF, need the Fylkirate to continue working
 				}
 			}
-			OR = { religion_group = muslim religion = aten_pagan }
+			OR = {
+				religion_group = muslim
+				religion = aten_pagan
+			}
 			NOT = { is_government_potential = roman_imperial_government }
 			NOT = { is_government_potential = order_government }
 			NAND = { 
@@ -163,13 +168,14 @@ feudal_governments = {
 			OR = {
 				controls_religion = no
 				religion_group = muslim
+				religion = aten_pagan
 				has_religion_feature = religion_temporal_head
 				AND = {
 					religion = norse_pagan_reformed
 					has_religion_features = no # Old saves, and campaigns without HF, need the Fylkirate to continue working
 				}
 			}
-			NOR = { religion_group = muslim religion = aten_pagan }
+			NOR = {	religion_group = muslim	religion = aten_pagan }
 			NOT = { is_government_potential = roman_imperial_government }
 			NOT = { is_government_potential = order_government }
 			AND = { 

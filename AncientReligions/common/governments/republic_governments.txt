@@ -24,7 +24,8 @@ republic_governments = {
 		potential = {
 			OR = {
 				controls_religion = no
-				OR = { religion_group = muslim religion = aten_pagan }
+				religion_group = muslim
+				religion = aten_pagan
 				has_religion_feature = religion_temporal_head
 				AND = {
 					religion = norse_pagan_reformed

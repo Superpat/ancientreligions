@@ -71,7 +71,8 @@ Kemetic:
   - The reformed one now has the holy orders and "Rebuild Luxor" decision.
   - The Paragon Cult of Amun will now be created on reformation.
   - Crown of Upper and Lower Egypt (temporal religious head) has been added.
-
+  - Nile River events have been modified to be less spammy.
+  
 Atenic:
  - Made it more clear that forming the Meryatenate requires that Akhetaten is restored.
   - The Sunburst Crown is given to the Meryaten when the title is formed.

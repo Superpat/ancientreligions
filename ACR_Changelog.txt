@@ -1,9 +1,18 @@
+2018-12-03 v0.42.1 "Manawydan"
+-------------------------
+> Manawydan
+
+General:
+  - Fixes crash bug when doing anything involving the Commander minor title.
+  - Fixes bug with Flamen Dialis minor title.
+
+
 2018-12-02 v0.42.0 "Cernunnos"
 -------------------------
 > Cernunnos is the Horned God, a deity of fertility, life, animals, and the underworld. Worshipped throughout Gaul and Celtiberia, Cernunnos was one of a small number of almost universally worshipped Celtic gods. His most famous appearances are on the Pillar of the Boatman, a carved column found in a Roman temple in Paris; and the Gundestrup Cauldron, a fantastic example of iron age silverwork found in a peat bog near Gundestrup, Denmark.
 
 General:
- - CK2 3.1 compatability
+ - CK2 3.0 compatability
  - Crusades and Jihads can now be called in a Paganified world if the player is a member of the religion.
   - For example, the Pope can call Crusades if there is a Catholic player.
  - Holy Orders are no longer vassalizable.
@@ -72,10 +81,11 @@ Kemetic:
   - The Paragon Cult of Amun will now be created on reformation.
   - Crown of Upper and Lower Egypt (temporal religious head) has been added.
   - Nile River events have been modified to be less spammy.
-  
+
 Atenic:
  - Made it more clear that forming the Meryatenate requires that Akhetaten is restored.
   - The Sunburst Crown is given to the Meryaten when the title is formed.
+ - Added an icon for the "Organize the Burning Blades" decision
 
 
 2018-06-10 v0.41.3 "Cardea"
@@ -85,7 +95,6 @@ Atenic:
 General: 
  - Fixes bug allowing an incomplete and in development decision to be visible, despite it doing nothing.
   - Characters who took this decision will be refunded their money when you load the game with this update!
- - Added an icon for the "Organize the Burning Blades" decision
 
 Celtic:
  - Druids of the Circle will not be referred to as Cardinals when they are elected anymore.

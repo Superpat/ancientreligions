@@ -1932,6 +1932,9 @@ female_can_hold_minor_title_trigger = {
 						religion = messalian
 						religion = bogomilist
 						religion = mazdaki
+						religion = celtic_pagan
+						religion = promethean_pagan
+						religion = britannic_pagan
 					}
 					liege = { religion = ROOT }
 				}
@@ -1996,6 +1999,9 @@ female_can_hold_minor_commander_title_trigger = {
 						religion = messalian
 						religion = bogomilist
 						religion = mazdaki
+						religion = celtic_pagan
+						religion = promethean_pagan
+						religion = britannic_pagan
 					}
 					liege = { religion = ROOT }
 				}

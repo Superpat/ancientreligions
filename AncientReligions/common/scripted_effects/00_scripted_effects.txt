@@ -2891,19 +2891,6 @@ increase_prosperity_effect = {
 	}
 }
 
-decrease_prosperity_effect = {
-	if = {
-		limit = {
-			has_province_modifier = prosperity_modifier_3
-		}
-		hidden_tooltip = {
-			remove_province_modifier = prosperity_modifier_3
-			set_variable = { which = prosperity_value value = 250 }
-		}
-		add_province_modifier = { name = prosperity_modifier_2 duration = -1 }
-	}
-}
-
 add_disease_level_effect = {
 		random_list = {
 			65 = { 
@@ -4027,7 +4014,7 @@ add_crusade_trait_effect = {
 				religion = celtic_pagan
 				AND = {
 					religion = celtic_pagan_reformed
-					NOT = { has_religion_feature = religion_feature_matriarchal }
+					NOT = { has_religion_feature = religion_matriarchal }
 				}
 			}
 		}
@@ -4039,7 +4026,7 @@ add_crusade_trait_effect = {
 				religion = britannic_pagan
 				AND = {
 					religion = celtic_pagan_reformed
-					has_religion_feature = religion_feature_matriarchal
+					has_religion_feature = religion_matriarchal
 				}
 			}
 		}

@@ -337,7 +337,7 @@ achilles_shield_piece = {
     monthly_character_piety = 0.1
     monthly_character_prestige = 0.1
     command_modifier = {
-        morale_defense = 0.01
+        morale_defence = 0.01
     }
     active = {
         religion_openly_in_hellenic_subgroup_trigger = yes

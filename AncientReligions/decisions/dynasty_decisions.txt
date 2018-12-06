@@ -92,7 +92,7 @@ targetted_decisions = {
 		ai_target_filter = close_relatives
 		ai_check_interval = 30
 		
-		is_ruler = yes
+		only_rulers = yes
 
 		from_potential = {
 			#ai = no

@@ -2891,6 +2891,19 @@ increase_prosperity_effect = {
 	}
 }
 
+decrease_prosperity_effect = {
+	if = {
+		limit = {
+			has_province_modifier = prosperity_modifier_3
+		}
+		hidden_tooltip = {
+			remove_province_modifier = prosperity_modifier_3
+			set_variable = { which = prosperity_value value = 250 }
+		}
+		add_province_modifier = { name = prosperity_modifier_2 duration = -1 }
+	}
+}
+
 add_disease_level_effect = {
 		random_list = {
 			65 = { 
@@ -10978,6 +10991,12 @@ event_target_old_religion_from_flag_effect = {
     	}
     }
 	if = {
+    	limit = { has_character_flag = character_was_hellenic_pagan_reformed }
+    	hellenic_pagan_reformed = {
+    		save_event_target_as = old_religion
+    	}
+    }
+	if = {
     	limit = { has_character_flag = character_was_promethean_pagan }
     	promethean_pagan = {
     		save_event_target_as = old_religion
@@ -14316,6 +14335,7 @@ spawn_elder_effect = {
 				intrigue = 4
 				martial = 4
 			}
+			narrative_event = { id = HF.25818 days = 30 } #Notify everyone that the crusade has actually reached Antioch and is ready to engage.
 		}
 	}
 	if = { 
@@ -25447,15 +25467,8 @@ add_random_commander_trait_effect = {
 				}
 			}
 			add_trait = unyielding_leader
-		}
-		1 = {
-			trigger = {
-				NOT = {
-					trait = war_elephant_leader
 				}
-				location = {
-					region = world_india
-				}
+				culture_group = chinese_group
 			}
 			add_trait = war_elephant_leader
 		}
@@ -25755,6 +25768,7 @@ landless_pope_effect = {
 					is_name_randomized = yes
 				}
 			}
+			add_trait = levy_coordinator
 		}
 		if = {
 			limit = {
@@ -26320,6 +26334,7 @@ calculate_weather_status_in_demesne_effect = {
 		}
 		set_character_flag = mostly_light_rain
 	}
+
 	if = {
 		limit = {
 			check_variable = { # if heavy rain is more common than drought risk...
@@ -27168,6 +27183,10 @@ reformation_god_names_changes_effect = { #Reforming religion with certain Doctri
 					add_evil_god_name = GOD_DANA
 					add_evil_god_name = GOD_SEQUANA
 				}
+				remove_god_names = yes
+				set_high_god_name = GOD_SANGPO_BUMTRI
+				add_god_name = GOD_SANGPO_BUMTRI_2
+				add_evil_god_name = GOD_THE_EVIL_ONES
 			}
 			if = { #A ruler reforms Egyptian Paganism
 				limit = {

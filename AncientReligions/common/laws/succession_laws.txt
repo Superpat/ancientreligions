@@ -890,12 +890,13 @@ succession_laws = {
 						has_title_flag = alternate_hre
 					}
 				}
+				NOT = { religion_group = muslim }
 				is_merchant_republic = no
 				is_patrician = no
-				
 				OR = {
-					NOT = { religion_group = pagan_group }
-					is_reformed_religion = yes
+					culture_group = byzantine
+					culture = roman
+					religion = orthodox
 					religion = hellenic_pagan
 					has_law = succession_voting_power_1
 					has_law = succ_feudal_elective # Keep it even if you revoke Full Council Authority

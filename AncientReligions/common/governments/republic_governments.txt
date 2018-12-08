@@ -25,7 +25,6 @@ republic_governments = {
 			OR = {
 				controls_religion = no
 				religion_group = muslim
-				religion = aten_pagan
 				has_religion_feature = religion_temporal_head
 				AND = {
 					religion = norse_pagan_reformed
@@ -113,7 +112,7 @@ republic_governments = {
 		potential = {
 			NAND = {
 				controls_religion = yes
-				NOR = { religion_group = muslim religion = aten_pagan }
+				NOT = { religion_group = muslim }
 			}
 			NOT = { is_government_potential = merchant_republic_government }
 			holy_order = no

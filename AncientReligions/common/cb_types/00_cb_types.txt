@@ -3478,11 +3478,11 @@ tribal_invasion = {
 						has_landed_title = e_byzantium
 						has_landed_title = e_roman_empire
 					}
-					OR = { 
-						religion_group = christian
-						religion = hellenic_pagan
-						religion = hellenic_pagan_reformed
-					}
+						OR = { 
+							religion_group = christian
+							religion = hellenic_pagan
+							religion = hellenic_pagan_reformed
+						}
 				}
 				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			}
@@ -4296,6 +4296,9 @@ new_crusade = {
 		ROOT = {
 			uses_new_crusade = yes
 			can_call_crusade = yes
+			hidden_tooltip = {
+				NOT = { has_character_modifier = cancel_crusade_cooldown }
+			}
 		}
 		
 		FROM = {
@@ -4660,6 +4663,7 @@ new_crusade = {
 							limit = {
 								any_owned_bloodline = {
 									has_bloodline_flag = grand_crusader_bloodline
+									bloodline_is_active_for = PREV
 								}
 							}
 							set_crusade_pot_multiplier = 0.2
@@ -5462,6 +5466,7 @@ new_crusade = {
 								religion = THIS
 								inheritance = matrilineal
 							}
+							set_bloodline_founder_religion_flag_effect = yes
 						}
 					}
 					else = {
@@ -5471,6 +5476,7 @@ new_crusade = {
 								religion = THIS
 								inheritance = patrilineal
 							}
+							set_bloodline_founder_religion_flag_effect = yes
 						}
 					}
 				}
@@ -12827,36 +12833,75 @@ pagan_county_conquest = {
 		}
 	}
 
-	on_fail_title = {
+	on_fail_title = { #white peace
 		ROOT = {
+			show_scope_change = no
 			prestige = -100
-			religion_authority = {
-				modifier = lost_county_conquest
+		}
+		
+		if = {
+			limit = {
+				NOT = { FROM = { religion = ROOT } }
+			}
+			ROOT = {
+				show_scope_change = no
+				religion_authority = {
+					modifier = lost_county_conquest
+				}
 			}
 		}
-		any_defender = {
-			limit = { character = FROM }
+	
+		FROM = {
+			show_scope_change = no
 			participation_scaled_prestige = 50
 		}
 		any_defender = {
 			limit = { NOT = { character = FROM } }
 			hidden_tooltip = { participation_scaled_prestige = 50 }
 		}
+
+		#To handle Warrior Lodge mission "Wage War" completion...
+		attacker = { save_event_target_as = attacker_target }
+		defender = { save_event_target_as = defender_target }
+
+		if = { 
+			limit = {
+				event_target:attacker_target = { has_quest = quest_warrior_lodge_war }
+				is_quest_target_of = event_target:attacker_target
+			}
+			event_target:attacker_target = {
+				show_scope_change = no
+				tooltip = { clr_quest = quest_warrior_lodge_war }
+				set_character_flag = white_peace@event_target:defender_target
+				#character_event = { id = HF.10514 days = 3 } #Sent from on_action instead
+			}
+		}
 	}
 
-	on_reverse_demand = {
+	on_reverse_demand = { #losing the war
 		ROOT = {
+			show_scope_change = no
 			prestige = -200
 			transfer_scaled_wealth = {
 				to = FROM
 				value = 4.0
 			}
-			religion_authority = {
-				modifier = lost_county_conquest
+		}
+		
+		if = {
+			limit = {
+				NOT = { FROM = { religion = ROOT } }
+			}
+			ROOT = {
+				show_scope_change = no
+				religion_authority = {
+					modifier = lost_county_conquest
+				}
 			}
 		}
-		any_defender = {
-			limit = { character = FROM }
+		
+		FROM = {
+			show_scope_change = no
 			participation_scaled_prestige = 100
 			participation_scaled_piety = 50
 		}
@@ -12865,6 +12910,24 @@ pagan_county_conquest = {
 			hidden_tooltip = {
 				participation_scaled_prestige = 100 
 				participation_scaled_piety = 50
+			}
+		}
+	}
+	on_reverse_demand_title = {
+		#To handle Warrior Lodge mission "Wage War" completion...
+		attacker = { save_event_target_as = attacker_target }
+		defender = { save_event_target_as = defender_target }
+
+		if = { 
+			limit = {
+				event_target:attacker_target = { has_quest = quest_warrior_lodge_war }
+				is_quest_target_of = event_target:attacker_target
+			}
+			event_target:attacker_target = {
+				show_scope_change = no
+				tooltip = { clr_quest = quest_warrior_lodge_war }
+				set_character_flag = lost_war@event_target:defender_target
+				#character_event = { id = HF.10514 days = 3 } #Sent from on_action instead
 			}
 		}
 	}
@@ -12883,6 +12946,105 @@ pagan_county_conquest = {
 	
 	defender_ai_defeat_worth = {
 		factor = 100
+	}
+	
+	ai_will_do = { 
+		factor = 1
+		
+		modifier = {
+			factor = 4.0
+			ROOT = {
+				OR = {
+					religion = norse_pagan
+					religion = norse_pagan_reformed
+				}
+			}
+			OR = {
+				empire = { title = e_scandinavia }
+				kingdom = { title = k_rus }
+			}
+		}
+		modifier = {
+			factor = 2.0
+			ROOT = {
+				OR = {
+					religion = norse_pagan
+					religion = norse_pagan_reformed
+				}
+			}
+			has_global_flag = viking_age_started
+			OR = {
+				empire = { title = e_britannia }
+				kingdom = { title = k_brittany }
+				kingdom = { title = k_france }
+				kingdom = { title = k_frisia }
+			}
+		}
+		modifier = {
+			factor = 2.0
+			ROOT = {
+				OR = {
+					religion = norse_pagan
+					religion = norse_pagan_reformed
+				}
+			}
+			has_global_flag = viking_age_started
+			FROM = { NOT = { religion_group = pagan_group } }
+			location = { port = yes }
+		}
+		modifier = {
+			factor = 0
+			ROOT = {
+				has_character_flag = is_temujin
+				has_landed_title = e_mongol_empire
+				demesne_size = 1
+			}
+			FROM = {
+				has_landed_title = e_china_west_governor
+			}
+		}
+		modifier = {
+			factor = 0
+			FROM = {
+				is_nomadic = yes
+			}
+			ROOT = {
+				is_nomadic = no
+				NOT = {
+					is_tribal = yes
+				}
+			}
+			NOT = {
+				any_direct_de_jure_vassal_title = {
+					any_direct_de_jure_vassal_title = {
+						OR = {
+							holding_type = castle
+							holding_type = city
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			FROM = {
+				is_nomadic = yes
+			}
+			ROOT = {
+				is_tribal = yes
+			}
+			NOT = {
+				any_direct_de_jure_vassal_title = {
+					any_direct_de_jure_vassal_title = {
+						OR = {
+							holding_type = castle
+							holding_type = city
+							holding_type = tribal
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -18973,47 +19135,20 @@ powerful_vassal_takeover_war = { # Started from faction
 			limit = { has_law = succession_voting_power_0 }
 			add_law_w_cooldown = succession_voting_power_1
 		}
-		custom_tooltip = {
-			text = overthrow_text
-			hidden_tooltip = {
-				if = {
-					limit = { 
-						title = e_hre
-						has_title_flag = alternate_hre
-						NOR = { has_law = succ_feudal_elective has_law = succ_hre_elective }
-						has_law = law_voting_power_1
-						has_law = banish_voting_power_1
-						has_law = execution_voting_power_1
-						has_law = revoke_title_voting_power_1
-						has_law = grant_title_voting_power_1
-						has_law = imprison_voting_power_1
-						has_law = war_voting_power_1						
-					}
-					add_law_w_cooldown = succ_hre_elective
-				}
-				if = {
-					limit = { 
-						NOR = { 
-							title = e_hre 
-							has_title_flag = alternate_hre
-						}
-						NOR = { has_law = succ_feudal_elective has_law = succ_hre_elective }
-						has_law = law_voting_power_1
-						has_law = banish_voting_power_1
-						has_law = execution_voting_power_1
-						has_law = revoke_title_voting_power_1
-						has_law = grant_title_voting_power_1
-						has_law = imprison_voting_power_1
-						has_law = war_voting_power_1						
-					}
-					add_law_w_cooldown = succ_feudal_elective
-				}
-				if = {
-					limit = {
-						NOT = { has_law = succ_gavelkind }
-						NOR = { has_law = succ_feudal_elective has_law = succ_hre_elective }
-						NAND = {
-							has_law = succ_feudal_elective
+		if = { 
+			limit = { #Should not be changed from Imperial Elective
+				NOT = {	has_law = succ_byzantine_elective }
+			}
+			custom_tooltip = {
+				text = overthrow_text
+				hidden_tooltip = {
+					if = {
+						limit = { 
+							OR = { 
+								title = e_hre
+								has_title_flag = alternate_hre
+							}
+							NOR = { has_law = succ_feudal_elective has_law = succ_hre_elective }
 							has_law = law_voting_power_1
 							has_law = banish_voting_power_1
 							has_law = execution_voting_power_1
@@ -19022,8 +19157,42 @@ powerful_vassal_takeover_war = { # Started from faction
 							has_law = imprison_voting_power_1
 							has_law = war_voting_power_1						
 						}
+						add_law_w_cooldown = succ_hre_elective
 					}
-					add_law_w_cooldown = succ_gavelkind
+					if = {
+						limit = { 
+							NOR = { 
+								title = e_hre 
+								has_title_flag = alternate_hre
+							}
+							NOR = { has_law = succ_feudal_elective has_law = succ_hre_elective }
+							has_law = law_voting_power_1
+							has_law = banish_voting_power_1
+							has_law = execution_voting_power_1
+							has_law = revoke_title_voting_power_1
+							has_law = grant_title_voting_power_1
+							has_law = imprison_voting_power_1
+							has_law = war_voting_power_1						
+						}
+						add_law_w_cooldown = succ_feudal_elective
+					}
+					if = {
+						limit = {
+							NOT = { has_law = succ_gavelkind }
+							NOR = { has_law = succ_feudal_elective has_law = succ_hre_elective }
+							NAND = {
+								has_law = succ_feudal_elective
+								has_law = law_voting_power_1
+								has_law = banish_voting_power_1
+								has_law = execution_voting_power_1
+								has_law = revoke_title_voting_power_1
+								has_law = grant_title_voting_power_1
+								has_law = imprison_voting_power_1
+								has_law = war_voting_power_1						
+							}
+						}
+						add_law_w_cooldown = succ_gavelkind
+					}
 				}
 			}
 		}

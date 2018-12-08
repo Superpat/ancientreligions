@@ -1902,24 +1902,24 @@ defined_text = {
 
 	text = {
 		localisation_key = String_black_magic
-		trigger = {
-			society_member_of = the_satanists
+		trigger = { 
+			society_member_of = the_satanists 
 			religion_group = christian
-		}
+		} 
 	}
 	text = {
 		localisation_key = String_sihr
-		trigger = {
-			society_member_of = the_satanists
+		trigger = { 
+			society_member_of = the_satanists 
 			religion_group = muslim
-		}
+		} 
 	}
 	text = {
 		localisation_key = String_Qliphoth
-		trigger = {
-			society_member_of = the_satanists
+		trigger = { 
+			society_member_of = the_satanists 
 			religion_group = jewish_group
-		}
+		} 
 	}
 	text = {
 		localisation_key = String_black_magic
@@ -1934,7 +1934,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = String_koldovstvo
-		trigger = { society_member_of = the_cold_ones }
+		trigger = { society_member_of = the_cold_ones } 
 	}
 	text = {
 		localisation_key = String_seiðr
@@ -1942,11 +1942,11 @@ defined_text = {
 	}
 	text = {
 		localisation_key = String_black_magic
-		trigger = { society_member_of = the_plaguebringers }
+		trigger = { society_member_of = the_plaguebringers } 
 	}
 	text = {
 		localisation_key = String_dark_tantras
-		trigger = { society_member_of = the_cult_of_kali }
+		trigger = { society_member_of = the_cult_of_kali } 
 	}
 	text = {
 		localisation_key = String_sorcery

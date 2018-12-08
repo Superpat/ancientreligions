@@ -1,11 +1,21 @@
-2018-12-03 v0.42.1 "Manawydan"
+2018-12-08 v0.42.1 "Manannan"
 -------------------------
-> Manawydan
+> Manannan "mac Lir" (son of the sea), is the god of the sea. One of the gods said to rule the otherworld, he is said to ferry souls to the afterlife. He is ascribed several powerful artifacts and magical abilities, including the gift of prophecy. He also plays small but important roles in several legends, often as the foster father of the hero, such as Lugh of the Long Spear.
 
 General:
+  - CK2 3.1 compatability
   - Fixes crash bug when doing anything involving the Commander minor title.
   - Fixes bug with Flamen Dialis minor title.
 
+Celtic:
+  - Reformation will now modify god names if Dogmatic, Agnatic Clans, or Enatic Clans have been chosen.
+  - Added Rhiannon and Sequana as goddesses and removed The Horned One and Angus.
+    - The localisation keys are still there, so this won't break anything if you're The Sword of Angus or something.
+
+Egyptian:
+  - Accounted for Kemetic (reformed egyptian) in several places that were missed in the Cernunnos update.
+  - Reformation will now modify god names if Dogmatic, Agnatic Clans, or Enatic Clans have been chosen.
+  
 
 2018-12-02 v0.42.0 "Cernunnos"
 -------------------------

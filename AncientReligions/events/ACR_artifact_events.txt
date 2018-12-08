@@ -715,8 +715,8 @@ character_event = {
 # Boudicca's Torque
 #Quality 2
 character_event = {
-	id = ancrel.2008
-	desc = ancrel.2008.desc
+	id = celtic.2008
+	desc = celtic.2008.desc
 	picture = GFX_evt_relic_box
 	border = GFX_event_normal_frame_religion
 
@@ -815,8 +815,8 @@ character_event = {
 # Ancient Carnyx
 #Quality 2
 character_event = {
-	id = ancrel.2009
-	desc = ancrel.2009.desc
+	id = celtic.2009
+	desc = celtic.2009.desc
 	picture = GFX_evt_relic_box
 	border = GFX_event_normal_frame_religion
 
@@ -915,8 +915,8 @@ character_event = {
 # Horned Helm
 #Quality 2
 character_event = {
-	id = ancrel.2010
-	desc = ancrel.2010.desc
+	id = celtic.2010
+	desc = celtic.2010.desc
 	picture = GFX_evt_relic_box
 	border = GFX_event_normal_frame_religion
 
@@ -1015,8 +1015,8 @@ character_event = {
 # Battersea Shield
 #Quality 2
 character_event = {
-	id = ancrel.2011
-	desc = ancrel.2011.desc
+	id = celtic.2011
+	desc = celtic.2011.desc
 	picture = GFX_evt_relic_box
 	border = GFX_event_normal_frame_religion
 

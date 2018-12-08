@@ -1064,7 +1064,7 @@ character_event = {
 
 	trigger = {
 		primary_title = {
-			has_law = investiture_1
+			has_law = investiture_law_1
 		}
 		is_title_active = k_britannic_pagan
 
@@ -1114,8 +1114,8 @@ letter_event = {
 		name = britannic.30.a
 
 		primary_title = {
-			revoke_law = investiture_1
-			add_law = investiture_0
+			revoke_law = investiture_law_1
+			add_law = investiture_law_0
 		}
 
 		FROM = {
@@ -2582,7 +2582,7 @@ character_event = {
 			has_character_flag = upgrade_hospital
 		}
 		name = britannic.64.a
-		add_to_extra_holding = { type = hospital building = hospital_building_2 }
+		event_target:afflicted_province = { add_to_extra_holding = { type = hospital building = hospital_building_2 } }
 		clr_character_flag = upgrade_hospital
 	}
 	option = {

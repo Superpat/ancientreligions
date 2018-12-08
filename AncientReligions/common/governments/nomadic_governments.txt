@@ -28,7 +28,6 @@ nomadic_governments = {
 			OR = {
 				controls_religion = no
 				religion_group = muslim
-				religion = aten_pagan
 				has_religion_feature = religion_temporal_head
 				AND = {
 					religion = norse_pagan_reformed
@@ -56,6 +55,7 @@ nomadic_governments = {
 		can_build_hospitals = no
 		can_build_temple = yes
 		can_demand_religious_conversion = no
+		marriage_ignore_religion = yes
 		
 		vassal_limit = -10
 		commander_limit = -4

@@ -293,7 +293,7 @@ e_sunni = {
 	color={ 40 160 40 }
 	color2={ 220 220 0 }
 	
-#	capital = 719 # Mecca
+	#capital = 719 # Mecca
 	
 	title = "CALIPH"
 	title_female = "CALIPHA"
@@ -312,7 +312,7 @@ e_shiite = {
 	color={ 60 190 60 }
 	color2={ 220 220 0 }
 	
-#	capital = 719 # Mecca
+	#capital = 719 # Mecca
 	
 	title = "CALIPH"
 	title_female = "CALIPHA"
@@ -700,7 +700,7 @@ e_golden_horde = {
 		always = no
 	}
 	
-#	tribe = yes
+	#tribe = yes
 	
 	culture = mongol
 	religion = tengri_pagan
@@ -720,7 +720,7 @@ e_il-khanate = {
 		always = no
 	}
 	
-#	tribe = yes
+	#tribe = yes
 	
 	culture = mongol
 	religion = tengri_pagan
@@ -770,9 +770,9 @@ e_timurids = {
 	}
 	
 	# Always exists
-#	landless = yes
+	#landless = yes
 	
-#	tribe = yes
+	#tribe = yes
 	
 	culture = mongol
 	religion = sunni
@@ -2488,6 +2488,7 @@ d_varangian_guard = {
 
 	title = "CAPTAIN"
 	foa = "CAPTAIN_FOA"
+	title_female = "CAPTAIN_FEMALE"
 
 	# Always exists
 	landless = yes
@@ -6255,6 +6256,7 @@ e_byzantium = {
 	k_cyprus = {
 		color = { 85 138 236 }
 		capital = 757 # Famagusta
+		hellenic_pagan_reformed = 500 # Crusade target weight
 
 		allow = {
 			conditional_tooltip = {
@@ -6283,12 +6285,28 @@ e_byzantium = {
 	
 	k_trinacria = {
 		color={ 249 232 247 }
-	#	capital = 340 #	Palermo
+		capital = 340 #	Palermo
 	
 		allow = {
 			OR = {
 				religion = catholic
 				is_heresy_of = catholic
+			}
+			conditional_tooltip = {
+				trigger = {
+					FROM = {
+						NOT = {
+							any_previous_holder = {
+								always = yes # The title has existed before
+							}
+						}
+					}
+				}
+				FROM = {
+					any_previous_holder = {
+						always = yes # The title has existed before
+					}
+				}
 			}
 		}
 	}
@@ -6341,6 +6359,7 @@ e_byzantium = {
 		culture = greek
 		
 		orthodox = 1000 # Crusade target weight
+		hellenic_pagan_reformed = 5000 # Crusade target weight
 		
 		d_trebizond = {
 			color={ 125 160 30 }
@@ -6529,6 +6548,7 @@ e_byzantium = {
 
 		orthodox = 5000 # Crusade target weight
 		catholic = 2000 # Crusade target weight
+		hellenic_pagan_reformed = 5000 # Crusade target weight
 
 		d_optimatoi = {
 			color={ 225 90 190 }
@@ -6852,6 +6872,7 @@ e_byzantium = {
 		
 		orthodox = 5000 # Crusade target weight
 		catholic = 2000 # Crusade target weight
+		hellenic_pagan_reformed = 5000 # Crusade target weight
 		
 		d_thessalonika = {
 			color={ 189 19 130 }
@@ -7240,10 +7261,13 @@ e_byzantium = {
 		capital = 472 # Epieros
 		
 		#serbian = "Draugabitia"
+		hellenic_pagan_reformed = 2000 # Crusade target weight
 
 		d_ohrid = {
 			color={ 150 30 70 }
 			color2={ 255 255 20 }
+
+			capital = 471
 
 			greek = "Lychnidos"
 			arberian = "Ohri"
@@ -7422,6 +7446,8 @@ e_byzantium = {
 		d_cephalonia = {
 			color={ 222 155 155 }
 			color2={ 255 255 20 }
+
+			capital = 474
 
 			c_cephalonia = {
 				color={ 146 75 121 }
@@ -7934,6 +7960,8 @@ e_byzantium = {
 			color={ 160 20 130 }
 			color2={ 255 255 20 }
 
+			capital = 760
+
 			c_tyana = {
 				color={ 246 77 187 }
 				color2={ 255 255 20 }
@@ -7967,6 +7995,8 @@ e_byzantium = {
 		d_bucellarian = {
 			color={ 234 157 207 }
 			color2={ 255 255 20 }
+
+			capital = 753
 
 			greek = "Boukellarion"
 			turkish = "Ankara"
@@ -8760,6 +8790,8 @@ e_byzantium = {
 			color={ 175 50 170 }
 			color2={ 255 255 255 }
 
+			capital = 492
+
 			c_strymon = {
 				color={ 139 29 101 }
 				color2={ 255 255 20 }
@@ -9438,13 +9470,14 @@ e_byzantium = {
 		color = { 180 160 80 }
 		color2={ 255 255 255 }
 		
-		capital = 334 #	Napoli
+		capital = 340 #	Palermo
 		
 		culture = italian
 		
 		catholic = 500 # Crusade target weight
 		orthodox = 50
 		muslim = 10
+		hellenic_pagan_reformed = 5000 # Crusade target weight
 
 		allow = {
 			conditional_tooltip = {
@@ -10493,9 +10526,20 @@ e_italy = {
 		capital = 334 # Napoli
 		
 		allow = {
-			FROM = {
-				any_previous_holder = {
-					always = yes # The title has existed before
+			conditional_tooltip = {
+				trigger = {
+					FROM = {
+						NOT = {
+							any_previous_holder = {
+								always = yes # The title has existed before
+							}
+						}
+					}
+				}
+				FROM = {
+					any_previous_holder = {
+						always = yes # The title has existed before
+					}
 				}
 			}
 		}
@@ -10557,6 +10601,7 @@ e_italy = {
 		short_name = yes
 
 		christian = 10000 # Crusade target weight
+		hellenic_pagan_reformed = 5000 # Crusade target weight
 
 		allow = {
 			conditional_tooltip = {
@@ -10933,6 +10978,7 @@ e_italy = {
 		}
 		
 		christian = 10000 # Crusade target weight
+		hellenic_pagan_reformed = 5000 # Crusade target weight
 		
 		d_verona = {
 			color={ 170 255 170 }
@@ -13502,6 +13548,11 @@ e_scandinavia = {
 		}
 
 		d_oppland = {
+			color={ 100 125 220 }
+			color2={ 255 255 255 }
+
+			capital = 273
+
 			c_oppland = {
 				color={ 94 120 215 }
 				color2={ 255 255 255 }
@@ -13679,7 +13730,7 @@ e_scandinavia = {
 			}
 		}
 		d_trondelag = {
-#			color={ 144 130 205 }
+			#color={ 144 130 205 }
 			color={ 40 160 255 }
 			color2={ 255 255 255 }
 			
@@ -20232,7 +20283,7 @@ e_pontic_steppe = {
 				b_chernihivka = {
 				}
 			}
-			c_lower_dniepr = {
+			c_lower_dniepr = { # Tag inverted with c_oleshye
 				color={ 246 206 100 }
 				color2={ 255 255 255 }
 			
@@ -20377,7 +20428,7 @@ e_pontic_steppe = {
 			
 			capital = 1646 # Odessa
 						
-			c_oleshye = {
+			c_oleshye = { # Tag inverted with c_lower_dniepr
 				color={ 238 198 92 }
 				color2={ 255 255 255 }
 			
@@ -23012,6 +23063,8 @@ e_idel_ural = {
 			color={ 220 220 150 }
 			color2={ 255 255 255 }
 
+			capital = 615 # Bashkirs
+
 			c_bashkirs = {
 				color={ 209 174 79 }
 				color2={ 255 255 255 }
@@ -23307,6 +23360,8 @@ e_idel_ural = {
 		d_samoyed = {
 			color={ 100 115 55 }
 			color2={ 255 255 255 }
+
+			capital = 397
 
 			c_samoyeds = {
 				color={ 100 115 55 }
@@ -33339,6 +33394,7 @@ e_arabia = {
 		zoroastrian_group = 100 # Crusade target weight
 		zun_pagan_reformed = 100 # Crusade target weight
 		jewish_group = 500 # Crusade target weight
+		hellenic_pagan_reformed = 1000 # Crusade target weight
 		
 		coptic = "Kemet"
 		
@@ -41498,6 +41554,42 @@ d_obotrites = {
 	foa = "HIGH_CHIEF_FOA"
 }
 
+d_thessalia = {
+	color={ 198 28 139 }
+	color2={ 255 255 20 }
+
+	allow = {
+		conditional_tooltip = {
+			trigger = {
+				d_thessalia = {
+					is_titular = yes
+				}
+			}
+			d_thessalia = {
+				is_titular = no
+			}
+		}
+	}
+}
+
+d_peloponnese = {
+	color={ 196 35 140 }
+	color2={ 255 255 20 }
+
+	allow = {
+		conditional_tooltip = {
+			trigger = {
+				d_peloponnese = {
+					is_titular = yes
+				}
+			}
+			d_peloponnese = {
+				is_titular = no
+			}
+		}
+	}
+}
+
 # TITULAR KINGDOMS
 
 k_pechenegs = {
@@ -41622,6 +41714,8 @@ d_amalfi = {
 d_ragusa = {
 	color={ 133 98 17 }
 	color2={ 255 255 255 }
+
+	capital = 468
 
 	title = "RECTOR_TITLE"
 	title_female = "RECTOR_TITLE_FEMALE"
@@ -42854,8 +42948,8 @@ d_slavic_pagan_reformed = {
 	
 	capital = 515 # Tirgoviste
 	
-	title = "CHERNOBAN"
-	title_female = "CHERNOBAN"
+	title = "VELKY_VOLHV"
+	title_female = "VELKY_VOLHV"
 	foa = "HEAD_PRIEST_FOA"
 	
 	short_name = yes

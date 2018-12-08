@@ -890,12 +890,13 @@ succession_laws = {
 						has_title_flag = alternate_hre
 					}
 				}
+				NOT = { religion_group = muslim }
 				is_merchant_republic = no
 				is_patrician = no
-				
 				OR = {
-					NOT = { religion_group = pagan_group }
-					is_reformed_religion = yes
+					culture_group = byzantine
+					culture = roman
+					religion = orthodox
 					religion = hellenic_pagan
 					has_law = succession_voting_power_1
 					has_law = succ_feudal_elective # Keep it even if you revoke Full Council Authority
@@ -962,30 +963,31 @@ succession_laws = {
 					has_landed_title = e_roman_empire
 				}
 				NOT = { religion_group = muslim }
+				is_nomadic = no
 				is_merchant_republic = no
 				is_patrician = no
-				OR = {
-					culture_group = byzantine
-					culture = roman
-					religion = orthodox
-					religion = hellenic_pagan
-					religion = hellenic_pagan_reformed
-				}
-				OR = {
-					independent = yes
-					NOT = {
-						any_demesne_title = {
-							is_vice_royalty = yes
-						}
-					}
-				}
+			#	OR = {
+			#		culture_group = byzantine
+			#		culture = roman
+			#		religion = orthodox
+			#		religion = hellenic_pagan
+			#		religion = hellenic_pagan_reformed
+			#	}
+			#	OR = {
+			#		independent = yes
+			#		NOT = {
+			#			any_demesne_title = {
+			#				is_vice_royalty = yes
+			#			}
+			#		}
+			#	}
 			}
-			OR = {
-				is_landless_type_title = no
-				is_tribal_type_title = yes
-				temporary = yes
-			}
-			is_primary_type_title = no
+			#OR = {
+			#	is_landless_type_title = no
+			#	is_tribal_type_title = yes
+			#	temporary = yes
+			#}
+			#is_primary_type_title = no
 			NOT = { holder_scope = { government = confucian_bureaucracy } }
 			NOT = { holder_scope = { government = chinese_imperial_government } }
 
@@ -1074,6 +1076,7 @@ succession_laws = {
 			}
 			NOT = { holder_scope = { government = confucian_bureaucracy } }
 			NOT = { holder_scope = { government = chinese_imperial_government } }
+
 		}
 		allow = {
 			OR = {
@@ -1408,12 +1411,12 @@ succession_laws = {
 				title = k_papal_state
 				title = d_celtic_pagan_reformed
 				title = k_britannic_pagan
-				NAND = { 
-					has_law = succ_byzantine_elective 
-					OR = { 
-						title = e_byzantium
-						title = e_roman_empire
-					}
+			}
+			NAND = { 
+				has_law = succ_byzantine_elective 
+				OR = { 
+					title = e_byzantium
+					title = e_roman_empire
 				}
 			}
 			temporary = no
@@ -1710,7 +1713,7 @@ gender_laws = {
 						name = gender
 						value = all
 					}
-					is_patrician = no
+					#is_patrician = no
 				}
 				holder_scope = {
 					OR = {
@@ -1721,12 +1724,8 @@ gender_laws = {
 							has_horde_culture = no
 							#is_tribal = no
 							is_nomadic = no
-							is_merchant_republic = no
-							is_patrician = no
-						}
-						NAND = {
-							is_theocracy = yes
-							religion = britannic_pagan
+							#is_merchant_republic = no
+							#is_patrician = no
 						}
 						has_religion_feature = religion_equal
 						has_religion_feature = religion_feature_bon

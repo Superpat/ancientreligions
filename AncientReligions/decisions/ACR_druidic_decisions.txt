@@ -890,9 +890,10 @@ decisions = {
 	}
 
 	assign_druid = { # For the AI, because they are dumb enough not to hand out minor titles
-		ai = yes
-		
+		only_playable = yes
+				
 		potential = {
+			ai = yes
 			primary_title = { higher_tier_than = BARON }
 			religion_openly_celtic_or_reformed_trigger = yes
 			NOT = { 
@@ -927,9 +928,10 @@ decisions = {
 	}
 
 	assign_bard = { # For the AI, because they are dumb enough not to hand out minor titles
-		ai = yes
+		only_playable = yes
 		
 		potential = {
+			ai = yes
 			primary_title = { higher_tier_than = BARON }
 			religion_openly_in_celtic_subgroup_trigger = yes
 			NOT = { 

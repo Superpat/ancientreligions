@@ -1,3 +1,35 @@
+2018-12-10 v0.42.2 "Herne"
+-------------------------
+> Herne the Hunter is a ghost story told by Shakespeare about a phantom that haunted the woods of Windsor. According to the legend, he has the antlers of a stag and rides through the forest rattling his chains to keep people away from his oak tree.
+
+General:
+  - Added new random world religion icons.
+    - They're a Boar and a Bell; regular, reformed, and reformed heresy versions.
+    - Had to in order to make the icons appear correctly in a random world.
+  - Added a new shattered world option for religions, Random with Heresies.
+    - Sits between Random and Full Random, allows heresies but bars reformed religions from spawning (including the heresies of reformed religions).
+    - e.g. Fraticelli will spawn, but Britannic Pagan will not.
+
+Celtic:
+  - Organize Red Dragon Knights and Organize Sons of Gwydion now compatible with a Temporal Head.
+  - AI only decisions assign_bard and assign_druid should no longer be visible.
+  - When becoming a Living Legend, you are awarded a new bloodline instead of the trait.
+    - The trait still exists in the files for compatibility.
+
+Hellenic:
+  - Fixed bad references to the Pontifex Maximus.
+    - This fixes the Organize Sacred Band decision.
+  - For fun, the Titan Cult is now a heresy of unreformed Hellenic (as opposed to reformed).
+    - Titan Cult will become a heresy of the reformed faith on reformation though.
+
+Egyptian:
+  - Egyptian Pagan is now simply called "Egyptian" to match the other pagan religions.
+
+Aten:
+  - Atenism no longer requires Iqta government.
+    - Both Feudal and Tribal Atenic rulers will have to deal with decadence.
+
+
 2018-12-08 v0.42.1 "Manannan"
 -------------------------
 > Manannan "mac Lir" (son of the sea), is the god of the sea. One of the gods said to rule the otherworld, he is said to ferry souls to the afterlife. He is ascribed several powerful artifacts and magical abilities, including the gift of prophecy. He also plays small but important roles in several legends, often as the foster father of the hero, such as Lugh of the Long Spear.
@@ -6,6 +38,7 @@ General:
   - CK2 3.1 compatability
   - Fixes crash bug when doing anything involving the Commander minor title.
   - Fixes bug with Flamen Dialis minor title.
+  - Fixes messed up flags.
 
 Celtic:
   - Reformation will now modify god names if Dogmatic, Agnatic Clans, or Enatic Clans have been chosen.
@@ -22,80 +55,82 @@ Egyptian:
 > Cernunnos is the Horned God, a deity of fertility, life, animals, and the underworld. Worshipped throughout Gaul and Celtiberia, Cernunnos was one of a small number of almost universally worshipped Celtic gods. His most famous appearances are on the Pillar of the Boatman, a carved column found in a Roman temple in Paris; and the Gundestrup Cauldron, a fantastic example of iron age silverwork found in a peat bog near Gundestrup, Denmark.
 
 General:
- - CK2 3.0 compatability
- - Crusades and Jihads can now be called in a Paganified world if the player is a member of the religion.
-  - For example, the Pope can call Crusades if there is a Catholic player.
- - Holy Orders are no longer vassalizable.
- - Most Holy Orders now have the standard mechanics from vanilla (making donations/loans, building castles, etc.)
-  - Note: I've written a somewhat experimental new mechanism to implement these features, so they won't be exactly as vanilla. 
-  - The decisions are now targeted, so right-click the grandmaster of the order to use them.
- - Added more possible immortal mystics, some of which will have ancient religions and/or cultures.
-  - Nestor the Wise, Greek Hellenic Pagan, master of diplomacy
-  - (random) the Spartan, Greek Hellenic Pagan, master of war.
-  - (random) the Fearless, Gaulish Celtic Pagan, master of war.
-  - Cleopatra the Alchemist, Coptic Kemetic Pagan, master spy.
-  - Seneca the Younger, Roman Promethean Pagan, master scholar.
-  - Lucan the Younger, Roman Hellenic Pagan, master scholar.
+  - CK2 3.0 compatability
+  - Crusades and Jihads can now be called in a Paganified world if the player is a member of the religion.
+    - For example, the Pope can call Crusades if there is a Catholic player.
+  - Holy Orders are no longer vassalizable.
+  - Most Holy Orders now have the standard mechanics from vanilla (making donations/loans, building castles, etc.)
+    - Note: I've written a somewhat experimental new mechanism to implement these features, so they won't be exactly as vanilla. 
+    - The decisions are now targeted, so right-click the grandmaster of the order to use them.
+  - Added more possible immortal mystics, some of which will have ancient religions and/or cultures.
+    - Nestor the Wise, Greek Hellenic Pagan, master of diplomacy
+    - (random) the Spartan, Greek Hellenic Pagan, master of war.
+    - (random) the Fearless, Gaulish Celtic Pagan, master of war.
+    - Cleopatra the Alchemist, Coptic Kemetic Pagan, master spy.
+    - Seneca the Younger, Roman Promethean Pagan, master scholar.
+    - Lucan the Younger, Roman Hellenic Pagan, master scholar.
 
 Celtic:
- - Fixes bug where the Unfit King Beta game rule was being ignored.
- - Gaulish Queens will henceforth be known as Riga, and Empresses as Vercingetoriga.
- - There are now Celtic artifacts to be found when searching for artifacts (Monks & Mystics feature):
-  - Tier 5: Silver Hand of Nuada, Spear of Lugh
-  - Tier 4: Skull of Brigid, Horn of Bran Galed, Crown of Myrdynn (temporal religious head)
-  - Tier 3: Tusk of Torc Triath
-  - Tier 2: Torque of Boudicca, Old Carnyx, Horned Helm, Battersea shield
-  - Tier 1: Generic tier 1 religious artifacts
- - Also introducing a new heresy, Britannic Pagan!
+  - Fixes bug where the Unfit King Beta game rule was being ignored.
+  - Gaulish Queens will henceforth be known as Riga, and Empresses as Vercingetoriga.
+  - There are now Celtic artifacts to be found when searching for artifacts (Monks & Mystics feature):
+    - Tier 5: Silver Hand of Nuada, Spear of Lugh
+    - Tier 4: Skull of Brigid, Horn of Bran Galed, Crown of Myrdynn (temporal religious head)
+    - Tier 3: Tusk of Torc Triath
+    - Tier 2: Torque of Boudicca, Old Carnyx, Horned Helm, Battersea shield
+    - Tier 1: Generic tier 1 religious artifacts
+  - Also introducing a new heresy, Britannic Pagan!
 
 Britannic Pagan:
- - A matriarchal and monotheistic religion based on the Romano-British goddess Britannia, a personification of the isles themselves.
- - Borrows heavily from Catholicism, using the College of Cardinals (Circle of Dryads), a system of Saints and Sanctaidd (Angels), and a new Thumoideachais mechanic (baptism) I've created.
- - The Arch-Dryad is the head of the Britannic Church, a position formable by decision for a King or Emperor ruling Middlesex with sufficient cash and piety. There must also be at least 16 Dryads in existence to form the Church of Britannia.
- - Dryad, Bad Dryad, and Child of a Dryad traits have all been added. Only priestesses get the Dryad trait.
- - The Thumoideachais mechanic allows a ruler to request a priest to officiate a Britannic baptism with a targetted decision.
-  - The Thumoideachais must be held before the child turns 3.
-  - If a child reaches the age of 3 without a Tumtha, they become Sych, "dry". This is a mark of shame for a Britannic and will worsen relations with other members of the faith and the Church in particular.
- - A fertility festival called Imbolg has been added for Britannics. It's based on the Welsh festival of the same name held in honor of St Brigid.
-  - Brigid is a Saint to the Britannic as well and features heavily in the flavor text.
- - The Knights of Saint Boudicca are the Britannic holy order and will be formed shortly after the Arch-Dryad is created.
- - Britannic rulers are restricted to Enatic, Enatic-Cognatic, and Absolute Cognatic succession laws.
-  - Council voting behavior has been updated to ensure that Britannic councilors will behave appropriately.
- - Britannic rulers are forbidden from lowering the status of women laws and will never choose to vote in favor of doing so.
- - There are now Britannic artifacts to be found when searching for artifacts (Monks & Mystics feature):
-  - Tier 5: Y Tair Tonau "The Three Waves" (trident of britannia), Helm of Britannia, Shield of Britannia
-  - Tier 4: Skull of Brigid, Horn of Bran Galed
-  - Tier 3: Tusk of Torc Triath
-  - Tier 2: Torque of Boudicca, Old Carnyx, Horned Helm, Battersea shield
-  - Tier 1: Generic tier 1 religious artifacts
+  - A matriarchal and monotheistic religion based on the Romano-British goddess Britannia, a personification of the isles themselves.
+  - Borrows heavily from Catholicism, using the College of Cardinals (Circle of Dryads), a system of Saints and Sanctaidd (Angels), and a new Thumoideachais mechanic (baptism) I've created.
+  - The Arch-Dryad is the head of the Britannic Church, a position formable by decision for a King or Emperor ruling Middlesex with sufficient cash and piety. There must also be at least 16 Dryads in existence to form the Church of Britannia.
+  - Dryad, Bad Dryad, and Child of a Dryad traits have all been added. Only priestesses get the Dryad trait.
+  - The Thumoideachais mechanic allows a ruler to request a priest to officiate a Britannic baptism with a targetted decision.
+    - The Thumoideachais must be held before the child turns 3.
+    - If a child reaches the age of 3 without a Tumtha, they become Sych, "dry". This is a mark of shame for a Britannic and will worsen relations with other members of the faith and the Church in particular.
+  - A fertility festival called Imbolg has been added for Britannics. It's based on the Welsh festival of the same name held in honor of St Brigid.
+    - Brigid is a Saint to the Britannic as well and features heavily in the flavor text.
+  - The Knights of Saint Boudicca are the Britannic holy order and will be formed shortly after the Arch-Dryad is created.
+  - Britannic rulers are restricted to Enatic, Enatic-Cognatic, and Absolute Cognatic succession laws.
+    - Council voting behavior has been updated to ensure that Britannic councilors will behave appropriately.
+  - Britannic rulers are forbidden from lowering the status of women laws and will never choose to vote in favor of doing so.
+  - There are now Britannic artifacts to be found when searching for artifacts (Monks & Mystics feature):
+    - Tier 5: Y Tair Tonau "The Three Waves" (trident of britannia), Helm of Britannia, Shield of Britannia
+    - Tier 4: Skull of Brigid, Horn of Bran Galed
+    - Tier 3: Tusk of Torc Triath
+    - Tier 2: Torque of Boudicca, Old Carnyx, Horned Helm, Battersea shield
+    - Tier 1: Generic tier 1 religious artifacts
 
 Hellenic:
- - As with vanilla, Hellenic Pagan is now unreformed and reformable.
-  - Disabled the Myrmidon mercenary company in favor of the vanilla holy order of the same name.
-   - I'll add a new merc company for hellenes eventually!
- - The Philosopher event chain is now more likely to fire and the max demense size requirement is relaxed to 230.
-  - Various conditions will also increase the odds of the event firing, such as being in a defensive war and your religion having a low MA (<50%).
- - There are now Hellenic artifacts to be found when searching for artifacts (Monks & Mystics feature):
-  - Tier 5: Nimean Lionskin, Kronium, Bloody Robes of Caesar, Aethon's Feather
-  - Tier 4: Hector's Armor, Odysseus' Bow, Death Mask of Agamemnon, Crown of Theseus
-  - Tier 3: Skull of Alexander, Alexander's Armor, Golden Amphora, Sphinx Claw, Golden Apple
-  - Tier 2: Corinthian Helm, Petrified Tongue of an Oracle, Silver Amphora, Fragment of Achilles Shield
-  - Tier 1: Generic tier 1 religious artifacts
- - Disabled my Roman cultural conversion events, as there is some evidence they are responsible for the CTD bugs some have experienced.
-  - Those with Holy Fury can still do the Roman Renaissance event chain that comes with the DLC.
+  - As with vanilla, Hellenic Pagan is now unreformed and reformable.
+    - Disabled the Myrmidon mercenary company in favor of the vanilla holy order of the same name.
+      - I'll add a new merc company for hellenes eventually!
+  - The Philosopher event chain is now more likely to fire and the max demense size requirement is relaxed to 230.
+    - Various conditions will also increase the odds of the event firing, such as being in a defensive war and your religion having a low MA (<50%).
+  - There are now Hellenic artifacts to be found when searching for artifacts (Monks & Mystics feature):
+    - Tier 5: Nimean Lionskin, Kronium, Bloody Robes of Caesar, Aethon's Feather
+    - Tier 4: Hector's Armor, Odysseus' Bow, Death Mask of Agamemnon, Crown of Theseus
+    - Tier 3: Skull of Alexander, Alexander's Armor, Golden Amphora, Sphinx Claw, Golden Apple
+    - Tier 2: Corinthian Helm, Petrified Tongue of an Oracle, Silver Amphora, Fragment of Achilles Shield
+    - Tier 1: Generic tier 1 religious artifacts
+  - Disabled my Roman cultural conversion events, as there is some evidence they are responsible for the CTD bugs some have experienced.
+    - Those with Holy Fury can still do the Roman Renaissance event chain that comes with the DLC.
+  - The decision icon for organizing the Sacred Band should work properly now.
+
 
 Kemetic:
- - Kemetic Pagan is now unreformed and reformable.
-  - The unreformed religion has no religious head, and will be referred to as Egyptian Pagan.
-  - The reformed one now has the holy orders and "Rebuild Luxor" decision.
-  - The Paragon Cult of Amun will now be created on reformation.
-  - Crown of Upper and Lower Egypt (temporal religious head) has been added.
-  - Nile River events have been modified to be less spammy.
+  - Kemetic Pagan is now unreformed and reformable.
+    - The unreformed religion has no religious head, and will be referred to as Egyptian Pagan.
+    - The reformed one now has the holy orders and "Rebuild Luxor" decision.
+    - The Paragon Cult of Amun will now be created on reformation.
+    - Crown of Upper and Lower Egypt (temporal religious head) has been added.
+    - Nile River events have been modified to be less spammy.
 
 Atenic:
- - Made it more clear that forming the Meryatenate requires that Akhetaten is restored.
-  - The Sunburst Crown is given to the Meryaten when the title is formed.
- - Added an icon for the "Organize the Burning Blades" decision
+  - Made it more clear that forming the Meryatenate requires that Akhetaten is restored.
+    - The Sunburst Crown is given to the Meryaten when the title is formed.
+  - Added an icon for the "Organize the Burning Blades" decision
 
 
 2018-06-10 v0.41.3 "Cardea"
@@ -108,9 +143,6 @@ General:
 
 Celtic:
  - Druids of the Circle will not be referred to as Cardinals when they are elected anymore.
-
-Hellenic:
- - The decision icon for organizing the Sacred Band should work properly now.
 
 
 2018-05-16 v0.41.2 "Aura"

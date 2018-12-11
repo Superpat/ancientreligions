@@ -235,7 +235,15 @@ decisions = {
 			wealth = 300
 			d_celtic_pagan_reformed = {
 				holder_scope = {
-					is_liege_or_above = ROOT
+					show_scope_change = no
+					OR = {
+						is_liege_or_above = ROOT
+						AND = {
+							character = ROOT
+							celtic_pagan_reformed = { has_religion_feature = religion_temporal_head }
+						}
+						celtic_pagan_reformed = { has_religion_feature = religion_no_leader }
+					}
 				}
 			}
 		}
@@ -882,14 +890,11 @@ decisions = {
 	}
 
 	assign_druid = { # For the AI, because they are dumb enough not to hand out minor titles
-		only_playable = yes
 		ai = yes
 		
 		potential = {
-			OR = {
-				religion = celtic_pagan
-				religion = celtic_pagan_reformed
-			}
+			primary_title = { higher_tier_than = BARON }
+			religion_openly_celtic_or_reformed_trigger = yes
 			NOT = { 
 				any_courtier = {
 					has_minor_title = title_court_druid
@@ -897,7 +902,6 @@ decisions = {
 			}
 		}
 		allow = {
-			primary_title = { higher_tier_than = BARON }
 			any_courtier = {
 				trait = druid
 				is_adult = yes
@@ -907,7 +911,6 @@ decisions = {
 			random_courtier = {
 				limit = {
 					is_adult = yes
-					is_female = no
 					trait = druid
 				}
 				give_minor_title = title_court_druid
@@ -924,10 +927,10 @@ decisions = {
 	}
 
 	assign_bard = { # For the AI, because they are dumb enough not to hand out minor titles
-		only_playable = yes
 		ai = yes
 		
 		potential = {
+			primary_title = { higher_tier_than = BARON }
 			religion_openly_in_celtic_subgroup_trigger = yes
 			NOT = { 
 				any_courtier = {
@@ -936,7 +939,6 @@ decisions = {
 			}
 		}
 		allow = {
-			primary_title = { higher_tier_than = BARON }
 			any_courtier = {
 				trait = poet
 				is_adult = yes
@@ -970,13 +972,12 @@ decisions = {
 			age = 16
 			prisoner = no
 			religion_openly_in_celtic_subgroup_trigger = yes
-			NOT = {	
-				OR = {
-					has_character_modifier = sidhe_offerings_bad
-					has_character_modifier = sidhe_offerings_neutral
-					has_character_modifier = sidhe_offerings_good
-					has_character_flag = sidhe_offerings_giving
-				}
+			NOT = { has_religion_feature = religion_dogmatic }
+			NOR = {
+				has_character_modifier = sidhe_offerings_bad
+				has_character_modifier = sidhe_offerings_neutral
+				has_character_modifier = sidhe_offerings_good
+				has_character_flag = sidhe_offerings_giving
 			}
 		}
 		allow = {

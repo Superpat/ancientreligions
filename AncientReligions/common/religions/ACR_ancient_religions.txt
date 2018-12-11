@@ -3,7 +3,12 @@
 pagan_group = {
 	titan_pagan = {
 		graphical_culture = norsegfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		alternate_start = {
+			OR = {
+				has_alternate_start_parameter = { key = religion value = full_random }
+				has_alternate_start_parameter = { key = religion value = random_heresy }
+			}
+		}
 
 		icon = 58
 		heresy_icon = 59
@@ -68,15 +73,17 @@ pagan_group = {
 
 	promethean_pagan = {
 		graphical_culture = hellenicgfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		alternate_start = { always = no }
 		interface_skin = { hellenic_interface }
 
 		ai_convert_other_group = 2 # always try to convert
 		ai_convert_same_group = 2 # always try to convert
 
-		icon = 58
-		heresy_icon = 59
+		icon = 37
+		heresy_icon = 14
 		parent = hellenic_pagan_reformed
+
+		pre_reformed = yes
 
 		color = { 0.6 0 0 }
 
@@ -302,6 +309,7 @@ pagan_group = {
 		graphical_culture = africangfx
 		secondary_event_pictures = egyptian_pagan
 		interface_skin = { zoroastrian_interface hellenic_interface }
+		alternate_start = { always = no }
 		
 		icon = 64
 		heresy_icon = 65
@@ -397,8 +405,10 @@ pagan_group = {
 	
 	aten_pagan = { # Atenism
 		graphical_culture = africangfx
-		interface_skin = { zoroastrian_interface hellenic_interface muslim_interface }
-		#pre_reformed = yes
+		interface_skin = { zoroastrian_interface muslim_interface }
+		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		pre_reformed = yes
 
 		icon = 64
 		heresy_icon = 65
@@ -443,7 +453,7 @@ pagan_group = {
 		
 		uses_decadence = yes
 
-		parent = egyptian_pagan
+		parent = egyptian_pagan_reformed
 
 		allow_rivermovement = yes
 		priests_can_marry = yes

@@ -101,7 +101,12 @@ christian = {
 	}
 	cathar = {
 		graphical_culture = westerngfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		alternate_start = {
+			OR = {
+				has_alternate_start_parameter = { key = religion value = full_random }
+				has_alternate_start_parameter = { key = religion value = random_heresy }
+			}
+		}
 
 		icon = 1
 		heresy_icon = 6
@@ -135,7 +140,12 @@ christian = {
 	}
 	fraticelli = {
 		graphical_culture = westerngfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		alternate_start = {
+			OR = {
+				has_alternate_start_parameter = { key = religion value = full_random }
+				has_alternate_start_parameter = { key = religion value = random_heresy }
+			}
+		}
 
 		icon = 1
 		heresy_icon = 6
@@ -177,7 +187,12 @@ christian = {
 	}
 	waldensian = {
 		graphical_culture = westerngfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		alternate_start = {
+			OR = {
+				has_alternate_start_parameter = { key = religion value = full_random }
+				has_alternate_start_parameter = { key = religion value = random_heresy }
+			}
+		}
 
 		icon = 1
 		heresy_icon = 6
@@ -210,7 +225,12 @@ christian = {
 	}
 	lollard = {
 		graphical_culture = westerngfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		alternate_start = {
+			OR = {
+				has_alternate_start_parameter = { key = religion value = full_random }
+				has_alternate_start_parameter = { key = religion value = random_heresy }
+			}
+		}
 
 		icon = 1
 		heresy_icon = 6
@@ -344,7 +364,12 @@ christian = {
 	
 	monophysite = {
 		graphical_culture = westerngfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		alternate_start = {
+			OR = {
+				has_alternate_start_parameter = { key = religion value = full_random }
+				has_alternate_start_parameter = { key = religion value = random_heresy }
+			}
+		}
 
 		icon = 11
 		heresy_icon = 13
@@ -383,7 +408,12 @@ christian = {
 	
 	bogomilist = {
 		graphical_culture = westerngfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		alternate_start = {
+			OR = {
+				has_alternate_start_parameter = { key = religion value = full_random }
+				has_alternate_start_parameter = { key = religion value = random_heresy }
+			}
+		}
 
 		icon = 2
 		heresy_icon = 7
@@ -418,7 +448,12 @@ christian = {
 	
 	monothelite = {
 		graphical_culture = westerngfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		alternate_start = {
+			OR = {
+				has_alternate_start_parameter = { key = religion value = full_random }
+				has_alternate_start_parameter = { key = religion value = random_heresy }
+			}
+		}
 
 		icon = 2
 		heresy_icon = 7
@@ -458,7 +493,12 @@ christian = {
 	
 	iconoclast = {
 		graphical_culture = westerngfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		alternate_start = {
+			OR = {
+				has_alternate_start_parameter = { key = religion value = full_random }
+				has_alternate_start_parameter = { key = religion value = random_heresy }
+			}
+		}
 
 		icon = 2
 		heresy_icon = 7
@@ -498,7 +538,12 @@ christian = {
 	
 	paulician = {
 		graphical_culture = westerngfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		alternate_start = {
+			OR = {
+				has_alternate_start_parameter = { key = religion value = full_random }
+				has_alternate_start_parameter = { key = religion value = random_heresy }
+			}
+		}
 
 		icon = 2
 		heresy_icon = 7
@@ -600,7 +645,12 @@ christian = {
 	
 	messalian = {
 		graphical_culture = westerngfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		alternate_start = {
+			OR = {
+				has_alternate_start_parameter = { key = religion value = full_random }
+				has_alternate_start_parameter = { key = religion value = random_heresy }
+			}
+		}
 
 		icon = 46
 		heresy_icon = 47
@@ -718,7 +768,12 @@ muslim = {
 	}
 	zikri = {
 		graphical_culture = muslimgfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		alternate_start = {
+			OR = {
+				has_alternate_start_parameter = { key = religion value = full_random }
+				has_alternate_start_parameter = { key = religion value = random_heresy }
+			}
+		}
 
 		icon = 3
 		heresy_icon = 8
@@ -748,7 +803,12 @@ muslim = {
 	}
 	yazidi = {
 		graphical_culture = muslimgfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		alternate_start = {
+			OR = {
+				has_alternate_start_parameter = { key = religion value = full_random }
+				has_alternate_start_parameter = { key = religion value = random_heresy }
+			}
+		}
 
 		icon = 3
 		heresy_icon = 8
@@ -831,7 +891,12 @@ muslim = {
 	}
 	kharijite = {
 		graphical_culture = muslimgfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		alternate_start = {
+			OR = {
+				has_alternate_start_parameter = { key = religion value = full_random }
+				has_alternate_start_parameter = { key = religion value = random_heresy }
+			}
+		}
 
 		icon = 51
 		heresy_icon = 52
@@ -901,7 +966,12 @@ muslim = {
 	}
 	druze = {
 		graphical_culture = muslimgfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		alternate_start = {
+			OR = {
+				has_alternate_start_parameter = { key = religion value = full_random }
+				has_alternate_start_parameter = { key = religion value = random_heresy }
+			}
+		}
 
 		icon = 4
 		heresy_icon = 9
@@ -931,7 +1001,12 @@ muslim = {
 	}
 	hurufi = {
 		graphical_culture = muslimgfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		alternate_start = {
+			OR = {
+				has_alternate_start_parameter = { key = religion value = full_random }
+				has_alternate_start_parameter = { key = religion value = random_heresy }
+			}
+		}
 
 		icon = 4
 		heresy_icon = 9
@@ -1561,7 +1636,13 @@ pagan_group = {
 		icon = 15
 		heresy_icon = 16
 		color = { 0.8 0.2 0.2 }
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } has_dlc = "Sunset Invasion" }
+		alternate_start = {
+			OR = {
+				has_alternate_start_parameter = { key = religion value = full_random }
+				has_alternate_start_parameter = { key = religion value = random_heresy }
+			}
+			has_dlc = "Sunset Invasion"
+		}
 		
 		secondary_event_pictures = mesoamerican
 		
@@ -2254,7 +2335,12 @@ zoroastrian_group = {
 	
 	mazdaki = {
 		graphical_culture = persiangfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		alternate_start = {
+			OR = {
+				has_alternate_start_parameter = { key = religion value = full_random }
+				has_alternate_start_parameter = { key = religion value = random_heresy }
+			}
+		}
 		
 		secondary_event_pictures = sunni
 		
@@ -2355,7 +2441,12 @@ zoroastrian_group = {
 	
 	khurmazta = {
 		graphical_culture = persiangfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		alternate_start = {
+			OR = {
+				has_alternate_start_parameter = { key = religion value = full_random }
+				has_alternate_start_parameter = { key = religion value = random_heresy }
+			}
+		}
 		
 		secondary_event_pictures = sunni
 		
@@ -2460,7 +2551,12 @@ jewish_group = {
 	}
 	samaritan = {
 		graphical_culture = jewishgfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		alternate_start = {
+			OR = {
+				has_alternate_start_parameter = { key = religion value = full_random }
+				has_alternate_start_parameter = { key = religion value = random_heresy }
+			}
+		}
 		
 		icon = 38
 		heresy_icon = 39
@@ -2488,7 +2584,12 @@ jewish_group = {
 	}
 	karaite = {
 		graphical_culture = jewishgfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		alternate_start = {
+			OR = {
+				has_alternate_start_parameter = { key = religion value = full_random }
+				has_alternate_start_parameter = { key = religion value = random_heresy }
+			}
+		}
 		
 		icon = 38
 		heresy_icon = 39

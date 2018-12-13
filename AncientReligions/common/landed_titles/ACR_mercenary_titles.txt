@@ -149,7 +149,7 @@ d_fianna = {
 	holy_order = yes
 	
 	# Parent Religion 
-	religion = celtic_pagan_reformed
+	religion = celtic_pagan
 	
 	monthly_income = 1
 	

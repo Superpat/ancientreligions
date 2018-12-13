@@ -613,32 +613,38 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { has_global_flag = ancrel_cernunnos }
+		NOT = { has_global_flag = ancrel_carnutes }
 	}
 
 	immediate = {
-		set_global_flag = ancrel_cernunnos
-		any_player = {
+		set_global_flag = ancrel_carnutes
+		if = {
 			limit = {
-				has_character_modifier = ancrel_oilworks
+				has_global_flag = celtic_reformation
 			}
 
-			character_event = { id = ancrel.9024 days = 0 }
+			any_mercenary_band = {
+				limit = {
+					is_holy_order = yes
+					religion = celtic_pagan
+				}
+
+				religion = celtic_pagan_reformed
+			}
 		}
-	}
-}
+		if = {
+			limit = {
+				has_global_flag = egyptian_reformation
+			}
 
-character_event = {
-	id = ancrel.9024
-	desc = ancrel.9024.desc
-	picture = GFX_evt_warrior_banners
+			any_mercenary_band = {
+				limit = {
+					is_holy_order = yes
+					religion = egyptian_pagan
+				}
 
-	is_triggered_only = yes
-
-	option = {
-		name = OK
-
-		wealth = 200
-		remove_character_modifier = ancrel_oilworks
+				religion = egyptian_pagan_reformed
+			}
+		}
 	}
 }

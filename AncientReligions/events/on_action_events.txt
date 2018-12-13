@@ -5356,14 +5356,38 @@ narrative_event = {
 		if = {
 			limit = { religion = hellenic_pagan_reformed }
 			set_global_flag = hellenic_reformation
+			d_sacred_band = {
+				religion = hellenic_pagan_reformed
+			}
+			d_hellenic_legion = {
+				religion = hellenic_pagan_reformed
+			}
 		}
 		if = {
 			limit = { religion = celtic_pagan_reformed }
 			set_global_flag = celtic_reformation
+			d_wolftails = {
+				religion = celtic_pagan_reformed
+			}
+			d_gwydion = {
+				religion = celtic_pagan_reformed
+			}
+			d_red_dragons = {
+				religion = celtic_pagan_reformed
+			}
+			d_fianna = {
+				religion = celtic_pagan_reformed
+			}
 		}
 		if = {
 			limit = { religion = egyptian_pagan_reformed }
 			set_global_flag = egyptian_reformation
+			d_anubis = {
+				religion = egyptian_pagan_reformed
+			}
+			d_horus = {
+				religion = egyptian_pagan_reformed
+			}
 		}
         }
 	}

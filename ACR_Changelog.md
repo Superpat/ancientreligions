@@ -1,3 +1,26 @@
+2018-12-13 v0.42.3 "Carnutes"
+-------------------------
+> The Carnutes were a tribe of Celts in Gaul that contemporary scholars believed to represent the economic and religious heartland of the Celtic peoples. Julius Ceasar established the Carnutes as a protectorate and selected one of their number as king. Less than five years later this king was assassinated and all the Romans in Carnute territory were slaughtered. This rebellion is what sparked the full-scale revolt led by Vercingetorix. Their capitol eventually became the city of Chartres.
+
+Celtic:
+  - Creating Britannia while Celtic or Druidic will now grant the Blood of Arthur Pendragon bloodline, in addition to the Pendragon nickname.
+  - Druidic and Britannic can use the Holy War CB again.
+  - Celtic Holy Orders convert to Druidic on reformation.
+
+Hellenic:
+  - Fixed typo for Hellenic holy scripture.
+  - Sacred Band and Hellenic Legion Holy Orders convert to reformed on reformation.
+  - Becoming the Chosen of Artemis now grants a bloodline.
+
+Egyptian:
+  - Anubis and Horus Guard Holy Orders will convert to Kemetic on reformation.
+  - Coptic has been renamed to Neo-Coptic, to distinguish it from the vanilla one.
+  - Kemetic can use the Holy War CB again.
+  
+Atenic:
+  - The Meryatenate no longer causes you to have the wrong government.
+
+
 2018-12-10 v0.42.2 "Herne"
 -------------------------
 > Herne the Hunter is a ghost story told by Shakespeare about a phantom that haunted the woods of Windsor. According to the legend, he has the antlers of a stag and rides through the forest rattling his chains to keep people away from his oak tree.

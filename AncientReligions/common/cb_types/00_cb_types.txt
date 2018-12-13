@@ -11888,6 +11888,11 @@ pagan_holy_war = {
 				religion = aztec
 				religion = west_african_pagan_reformed
 				religion = zun_pagan_reformed
+
+				religion = celtic_pagan_reformed
+				religion = britannic_pagan
+				religion = egyptian_pagan_reformed
+				religion = aten_pagan
 			}
 			NOT = { has_religion_feature = religion_peaceful }
 			NOT = { same_realm = FROM }
@@ -11969,6 +11974,11 @@ pagan_holy_war = {
 				religion = aztec
 				religion = west_african_pagan_reformed
 				religion = zun_pagan_reformed
+
+				religion = celtic_pagan_reformed
+				religion = britannic_pagan
+				religion = egyptian_pagan_reformed
+				religion = aten_pagan
 			}
 			NOT = { same_realm = FROM }
 			NOT = { religion = FROM }

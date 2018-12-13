@@ -2071,7 +2071,7 @@ pagan_group = {
 		}
 		# Zeus, Hera, Poseidon, Demeter, Athena, Apollo, Artemis, Ares, Aphrodite, Hephaestus, Hermes, and either Hestia or Dionysus.
 		crusade_name = GREAT_HOLY_WAR
-		scripture_name = THE_THEOGENY
+		scripture_name = THE_THEOGONY
 		priest_title = AUGUR
 		
 		priests_can_marry = no
@@ -2109,7 +2109,7 @@ pagan_group = {
 		}
 		
 		crusade_name = GREAT_HOLY_WAR
-		scripture_name = THE_THEOGENY
+		scripture_name = THE_THEOGONY
 		priest_title = AUGUR
 		
 		priests_can_marry = no

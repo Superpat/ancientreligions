@@ -180,11 +180,8 @@ character_event = {
 			trait = brilliant_strategist
 			trait = duelist
 		}
-		NOT = { trait = head2 }
-		OR = {
-			religion = celtic_pagan
-			religion = celtic_pagan_reformed
-		}
+		NOR = { has_bloodline = living_legend_male has_bloodline = living_legend_female }
+		religion_openly_celtic_or_reformed_trigger = yes
 	}
 	
 	weight_multiplier = {
@@ -298,5 +295,22 @@ character_event = {
 	option = {
 		name = celtic.11.a
 		add_trait = head2
+		custom_tooltip = {
+			text = found_living_legend_bloodine_tt
+			hidden_tooltip = {
+				if = {
+					limit = {
+						is_female = yes
+					}
+					create_bloodline = {
+						type = living_legend_female
+					}
+				} else = {
+					create_bloodline = {
+						type = living_legend_male
+					}
+				}
+			}
+		}
 	}
 }

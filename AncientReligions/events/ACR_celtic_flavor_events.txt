@@ -528,6 +528,10 @@ narrative_event = {
 		set_global_flag = ancrel_pendragon
 		prestige = 200
 		piety = 100
+
+		create_bloodline = {
+			type = arthur_pendragon
+		}
 	}
 	
 	weight_multiplier = {

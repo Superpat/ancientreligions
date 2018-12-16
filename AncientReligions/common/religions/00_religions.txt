@@ -1637,10 +1637,7 @@ pagan_group = {
 		heresy_icon = 16
 		color = { 0.8 0.2 0.2 }
 		alternate_start = {
-			OR = {
-				has_alternate_start_parameter = { key = religion value = full_random }
-				has_alternate_start_parameter = { key = religion value = random_heresy }
-			}
+			has_alternate_start_parameter = { key = religion value = full_random }
 			has_dlc = "Sunset Invasion"
 		}
 		
@@ -2088,7 +2085,12 @@ pagan_group = {
 	}
 	hellenic_pagan = {
 		graphical_culture = hellenicgfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		alternate_start = {
+			OR = {
+				has_alternate_start_parameter = { key = religion value = full_random }
+				has_alternate_start_parameter = { key = religion value = random_heresy }
+			}
+		}
 		interface_skin = { hellenic_interface }
 		
 		#pre_reformed = yes
@@ -2124,6 +2126,7 @@ pagan_group = {
 	
 	bon_reformed = {
 		graphical_culture = mongolgfx
+		alternate_start = { always = no }
 		secondary_event_pictures = tengri_pagan
 		interface_skin = { bon_interface taoist_interface indian_interface muslim_interface }
 

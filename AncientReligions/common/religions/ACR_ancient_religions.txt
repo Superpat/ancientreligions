@@ -83,7 +83,7 @@ pagan_group = {
 		heresy_icon = 14
 		parent = hellenic_pagan_reformed
 
-		pre_reformed = yes
+		#pre_reformed = yes
 
 		color = { 0.6 0 0 }
 
@@ -113,6 +113,9 @@ pagan_group = {
 		priest_title = PHILOSOPHER
 		priests_can_marry = yes
 		female_temple_holders = yes
+
+		hard_to_convert = yes
+		can_demand_religious_conversion = yes
 
 		allow_looting = no
 		peace_piety_gain = 1.0
@@ -247,7 +250,7 @@ pagan_group = {
 
 		intermarry = celtic_pagan_reformed
 		intermarry = britannic_pagan
-		#can_demand_religious_conversion = no
+		can_demand_religious_conversion = no
 	}
 	
 	britannic_pagan = {
@@ -276,12 +279,15 @@ pagan_group = {
 		}
 		
 		parent = celtic_pagan_reformed
-		pre_reformed = yes
+		#pre_reformed = yes
 
 		priests_can_marry = yes
 		priests_can_inherit = no
 		investiture = yes
-		
+
+		hard_to_convert = yes
+		can_demand_religious_conversion = yes
+
 		female_temple_holders = yes
 		feminist = yes
 		women_can_take_consorts = yes
@@ -331,7 +337,9 @@ pagan_group = {
 		}
 		
 		allow_rivermovement = yes
-		max_wives = 3
+		max_wives = 4
+		female_temple_holders = yes
+		divine_blood = yes
 		can_call_crusade = yes
 		join_crusade_if_bordering_hostile = yes
 		
@@ -398,7 +406,8 @@ pagan_group = {
 		bs_marriage = yes
 		can_call_crusade = yes
 		join_crusade_if_bordering_hostile = yes
-		
+		can_demand_religious_conversion = no
+
 		religious_clothing_head = 5
 		religious_clothing_priest = 5
 	}
@@ -408,7 +417,7 @@ pagan_group = {
 		interface_skin = { zoroastrian_interface muslim_interface }
 		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
 
-		pre_reformed = yes
+		#pre_reformed = yes
 
 		icon = 64
 		heresy_icon = 65
@@ -464,6 +473,9 @@ pagan_group = {
 		bs_marriage = yes
 		can_call_crusade = yes
 		join_crusade_if_bordering_hostile = yes
+
+		hard_to_convert = yes
+		can_demand_religious_conversion = yes
 
 		religious_clothing_head = 5
 		religious_clothing_priest = 5

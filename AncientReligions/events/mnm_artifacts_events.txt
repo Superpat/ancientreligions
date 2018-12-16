@@ -217,6 +217,10 @@ character_event = {
                         has_artifact = shield_of_britannia
                     }
                 }
+				modifier = {
+					factor = 0
+					religion_openly_in_egyptian_subgroup_trigger = yes
+				}
 				event_target:rumor_councillor = { character_event = { id = MNM.9001 } }
 			}
 			30 = { #Good rumor
@@ -320,6 +324,10 @@ character_event = {
 						religion = britannic_pagan
 						has_artifact = skull_of_brigid
 					}
+				}
+				modifier = {
+					factor = 0
+					religion_openly_in_egyptian_subgroup_trigger = yes
 				}
 				event_target:rumor_councillor = { character_event = { id = MNM.9002 } }
 			} 

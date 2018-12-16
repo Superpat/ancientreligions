@@ -158,8 +158,8 @@ montu_desc;This character is a veteran of a Kemetic Great Holy War.;;;;;;;;;;;;;
 atens_chosen;Lightbringer;;;;;;;;;;;;;x
 atens_chosen_desc;This character is a veteran of an Atenic Great Holy War.;;;;;;;;;;;;;x
 ###### Coptic;;;;;;;;;;;;;;x 
-egyptian_coptic;Coptic;;;;;;;;;;;;;x
-egyptian_coptic_desc;The Copts represent a return to the ancient ways of the Egyptian people. The result of a revivalist movement in Egypt, elements of Ancient Egyptian language, customs, architecture, and art have all been adapted to serve the times.;;;;;;;;;;;;;x
+egyptian_coptic;Neo-Coptic;;;;;;;;;;;;;x
+egyptian_coptic_desc;Neo-Coptic represent a return to the ancient ways of the Egyptian people. The result of a revivalist movement in Egypt, elements of Ancient Egyptian language, customs, architecture, and art have all been adapted to serve the times.;;;;;;;;;;;;;x
 ca_culture_egyptian_coptic_1;Shrine of Anhur;;;;;;;;;;;;;x
 ca_culture_egyptian_coptic_2;Temple of Anhur;;;;;;;;;;;;;x
 ca_culture_egyptian_coptic_3;High Temple of Anhur;;;;;;;;;;;;;x

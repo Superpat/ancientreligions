@@ -367,7 +367,7 @@ decisions = {
 				culture = irish
 			}
 			tier > count
-			religion = celtic_pagan_reformed
+			religion = celtic_pagan
 			prisoner = no
 			age = 16
 			NOT = { has_global_flag = fianna_founded }

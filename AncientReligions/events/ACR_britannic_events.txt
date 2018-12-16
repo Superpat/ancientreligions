@@ -2601,7 +2601,7 @@ character_event = {
 ##################################################################
 # 
 # Britannic
-# - Lù Thumoideachais (baptism)
+# - La Thumoideachais (baptism)
 #   britannic.100 - 149 reserved
 #
 ##################################################################
@@ -2804,7 +2804,7 @@ character_event = {
 	}
 }
 
-# lù thumoideachais (immersion day)
+# la thumoideachais (immersion day)
 long_character_event = {
 	id = britannic.102
 	desc = {
@@ -2864,7 +2864,7 @@ long_character_event = {
 	}
 }
 
-# bad weather on lù thumoideachais
+# bad weather on la thumoideachais
 long_character_event = {
 	id = britannic.103
 	desc = {

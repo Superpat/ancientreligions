@@ -11,7 +11,7 @@
 
 namespace = celtic
 
-#[on_combat_pulse] Druidic character becomes reknowned headhunter
+#[on_combat_pulse] Druidic character becomes renowned headhunter
 character_event = {
 	id = celtic.10
 	desc = celtic.10.desc
@@ -180,12 +180,12 @@ character_event = {
 			trait = brilliant_strategist
 			trait = duelist
 		}
-		NOR = { has_bloodline = living_legend_male has_bloodline = living_legend_female }
+		NOT = { trait = head2 }
 		religion_openly_celtic_or_reformed_trigger = yes
 	}
 	
 	weight_multiplier = {
-		days = 1
+		days = 100
 		modifier = {
 			factor = 2
 			trait = brave
@@ -310,6 +310,18 @@ character_event = {
 						type = living_legend_male
 					}
 				}
+			}
+		}
+	}
+
+	option = {
+		name = celtic.11.a
+		add_trait = head2
+
+		trigger = {
+			NOR = {
+				is_bloodline_member_of = living_legend_male
+				is_bloodline_member_of = living_legend_female
 			}
 		}
 	}

@@ -1,3 +1,16 @@
+2018-12-18 v0.42.4 "Tasgetius"
+-------------------------
+> Tasgetius was a king of the Gaulish Carnutes tribe (carnutes meaning "the horned ones", possibly a connection to Cernunnos). Tasgetius was appointed to kingship by Julius Caeser himself. The puppet king was assassinated in three years.
+
+Celtic:
+  - Living Legend bloodline event will only fire once.
+    - Also made it so you can still become a Living Legend even if you already have the bloodline. You'll only get the trait in that case.
+  - Britannic's can get their crusader trait (Morrigan) again.
+
+Egyptian:
+  - Fixed bug where the "arriving in the GHW target lands" event repeats infinitely for Kemetics, reapplying the "Might Bull of Montu" trait each time.
+
+
 2018-12-15 v0.42.3 "Carnutes"
 -------------------------
 > The Carnutes were a tribe of Celts in Gaul that contemporary scholars believed to represent the economic and religious heartland of the Celtic peoples. Julius Ceasar established the Carnutes as a protectorate and selected one of their number as king. Less than five years later this king was assassinated and all the Romans in Carnute territory were slaughtered. This rebellion is what sparked the full-scale revolt led by Vercingetorix. Their capitol eventually became the city of Chartres.

@@ -792,10 +792,7 @@ has_crusade_trait_trigger = {
 			trait = sun_warrior
 		}
 		AND = {
-			OR = {
-				religion = hellenic_pagan
-				religion = hellenic_pagan_reformed
-			}
+			religion_openly_hellenic_or_reformed_trigger = yes
 			trait = ares_own
 		}
 		AND = {
@@ -819,7 +816,7 @@ has_crusade_trait_trigger = {
 			trait = ares_own
 		}
 		AND = {
-			religion = egyptian_pagan
+			religion_openly_egyptian_or_reformed_trigger = yes
 			trait = montu
 		}
 		AND = {
@@ -827,8 +824,12 @@ has_crusade_trait_trigger = {
 			trait = atens_chosen
 		}
 		AND = {
-			religion = celtic_pagan_reformed
+			religion_openly_celtic_or_reformed_trigger = yes
 			trait = lughs_own
+		}
+		AND = {
+			religion = britannic_pagan
+			trait = morrigan
 		}
 	}
 }

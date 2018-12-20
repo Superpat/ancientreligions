@@ -625,7 +625,7 @@ character_event = {
 
 			any_mercenary_band = {
 				limit = {
-					is_holy_order = yes
+					holy_order = yes
 					religion = celtic_pagan
 				}
 
@@ -639,7 +639,7 @@ character_event = {
 
 			any_mercenary_band = {
 				limit = {
-					is_holy_order = yes
+					holy_order = yes
 					religion = egyptian_pagan
 				}
 

@@ -1,7 +1,7 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 #Event/decision/modifier definitions;;;;;;;;;;;;;;x
 ###### Hellenic revival;;;;;;;;;;;;;;x
-nick_the_apostate;the Apostate;;;;;;;;;;;;;x
+#nick_the_apostate;the Apostate;;;;;;;;;;;;;x
 opinion_no_hellenic_state_religion;Did not establish a Hellenic state religion;N'a pas choisi l'hellùnisme comme religion d'ùtat;;;;;;;;;;;;x
 opinion_no_forced_hellenic_state_religion;Did not enforce a Hellenic state religion;N'a pas forcù l'hellùnisme en tant que religion d'ùtat;;;;;;;;;;;;x
 opinion_hellenic_state_religion;Established a Hellenic state religion;A ùtabli l'hellùnisme comme religion d'ùtat;;;;;;;;;;;;x

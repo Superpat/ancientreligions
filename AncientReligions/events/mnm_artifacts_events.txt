@@ -1799,7 +1799,7 @@ character_event = {
 					narrative_event = { id = celtic.2005 } #receive "Britannia's Shield" event
 				}
 				10 = {
-					modifier = { factor = 0 religion_openly_celtic_or_reformed = no }
+					modifier = { factor = 0 religion_openly_celtic_or_reformed_trigger = no }
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
 					modifier = {
 						factor = 0
@@ -1808,7 +1808,7 @@ character_event = {
 					narrative_event = { id = celtic.2000 } #receive "Skull of Brigid" event
 				}
 				10 = {
-					modifier = { factor = 0 religion_openly_celtic_or_reformed = no }
+					modifier = { factor = 0 religion_openly_celtic_or_reformed_trigger = no }
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
 					modifier = {
 						factor = 0
@@ -1817,7 +1817,7 @@ character_event = {
 					narrative_event = { id = celtic.2006 } #receive "Horn of Bran Galed" event
 				}
 				10 = {
-					modifier = { factor = 0 religion_openly_celtic_or_reformed = no }
+					modifier = { factor = 0 religion_openly_celtic_or_reformed_trigger = no }
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_medium } }
 					modifier = {
 						factor = 0
@@ -1826,7 +1826,7 @@ character_event = {
 					narrative_event = { id = celtic.2007 } #receive "Tusk of Torc Triath" event
 				}
 				10 = {
-					modifier = { factor = 0 religion_openly_celtic_or_reformed = no }
+					modifier = { factor = 0 religion_openly_celtic_or_reformed_trigger = no }
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_minor } }
 					modifier = {
 						factor = 0
@@ -1835,7 +1835,7 @@ character_event = {
 					narrative_event = { id = celtic.2008 } #receive "Boudicca's Torque" event
 				}
 				10 = {
-					modifier = { factor = 0 religion_openly_celtic_or_reformed = no }
+					modifier = { factor = 0 religion_openly_celtic_or_reformed_trigger = no }
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_minor } }
 					modifier = {
 						factor = 0
@@ -1844,7 +1844,7 @@ character_event = {
 					narrative_event = { id = celtic.2009 } #receive "Old Carnyx" event
 				}
 				10 = {
-					modifier = { factor = 0 religion_openly_celtic_or_reformed = no }
+					modifier = { factor = 0 religion_openly_celtic_or_reformed_trigger = no }
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_minor } }
 					modifier = {
 						factor = 0
@@ -1853,7 +1853,7 @@ character_event = {
 					narrative_event = { id = celtic.2010 } #receive "Horned Helm" event
 				}
 				10 = {
-					modifier = { factor = 0 religion_openly_celtic_or_reformed = no }
+					modifier = { factor = 0 religion_openly_celtic_or_reformed_trigger = no }
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_minor } }
 					modifier = {
 						factor = 0

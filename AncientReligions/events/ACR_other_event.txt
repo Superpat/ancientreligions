@@ -510,10 +510,10 @@ character_event = {
 
 # debug to grant all provinces in your dejure kingdom to you, including the king title
 character_event = {
-    id = ancrel.9020
-    desc = ancrel.9020.desc
-    
-    is_triggered_only = yes
+	id = ancrel.9020
+	hide_window = yes
+	
+	is_triggered_only = yes
 	
 	has_global_flag = ancrel_debug
 
@@ -524,36 +524,32 @@ character_event = {
 				ROOT = { 
 					grant_title_no_opinion = PREV
 				}
-    		}
-    	}
-    }
-
-    option = {
-    	name = OK
+			}
+		}
 	}
-
+	
 	after = {
-    	any_independent_ruler = {
-    		limit = {
-    			de_jure_liege_or_above = event_target:ancrel_title_grant
-    		}
-    		any_realm_province = {
-    			county = {
-    				ROOT = { 
+		any_independent_ruler = {
+			limit = {
+				de_jure_liege_or_above = event_target:ancrel_title_grant
+			}
+			any_realm_province = {
+				county = {
+					ROOT = { 
 						usurp_title = PREV
 					}
-    			}
-    		}
-    	}
+				}
+			}
+		}
 	}
 }
 
 # debug to grant you the de jure empire of your capital and vassalize de jure vassals
 character_event = {
-    id = ancrel.9021
-    desc = ancrel.9021.desc
+	id = ancrel.9021
+	hide_window = yes
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 	
 	has_global_flag = ancrel_debug
 
@@ -564,21 +560,17 @@ character_event = {
 				ROOT = { 
 					grant_title_no_opinion = PREV
 				}
-    		}
-    	}
-    }
-
-    option = {
-    	name = OK
+			}
+		}
 	}
-
+	
 	after = {
-    	any_independent_ruler = {
-    		limit = {
-    			de_jure_liege_or_above = event_target:ancrel_title_grant
-    		}
-    		set_defacto_liege = ROOT
-    	}
+		any_independent_ruler = {
+			limit = {
+				de_jure_liege_or_above = event_target:ancrel_title_grant
+			}
+			set_defacto_liege = ROOT
+		}
 	}
 }
 

@@ -45,17 +45,27 @@ on_yearly_pulse = {
 		100 = egyptian.161 # be nice to girls (?)
 		100 = egyptian.162 # Senet game
 		10  = egyptian.166 # ghost of akhenaten?
+		100  = egyptian.168 # Nefertum
+		100  = egyptian.169 # Constellation of Sah
+		200  = egyptian.172 # A simple Egyptian meal
+		100  = egyptian.173 # Fruit offering to temple
+		100  = egyptian.174 # Field of reeds
 		#100 = egyptian.215 # ancient tomb entrance discovered [unfinished]
 		
 		#Hellenic Flavor
-		20 = hellenic.503 # Dead beggar doesn't have money to pay the ferryman
-		20 = hellenic.509 # Found a curse tablet
-		20 = hellenic.510 # maid tries to charm you
-		20 = hellenic.511 # (male) servant tries to charm you
-		20 = hellenic.515 # Leptis Manialis
-		20 = hellenic.518 # Lightning strikes tree
-		20 = hellenic.519 # Odysseus
+		100 = hellenic.503 # Dead beggar doesn't have money to pay the ferryman
+		100 = hellenic.509 # Found a curse tablet
+		100 = hellenic.510 # maid tries to charm you
+		100 = hellenic.511 # (male) servant tries to charm you
+		100 = hellenic.515 # Leptis Manialis
+		100 = hellenic.518 # Lightning strikes tree
+		100 = hellenic.519 # Odysseus
 		100 = hellenic.529 # Praying to family Lares
+		100 = hellenic.530 # The greatest Greek city-state?
+		100 = hellenic.534 # Priest recitation mistake
+		100 = hellenic.536 # Oathbreaking courtier
+		100 = hellenic.537 # Vulcan's appearance
+		100 = hellenic.541 # Fruit of Pomona
 		
 		#I Can't Believe My Virgin Goddess of the Hunt is This Cute Event Blob (a.k.a. Artemis Event Blob)
 		2000 = hellenic.559 # Make offerings to the goddess
@@ -87,6 +97,7 @@ on_bi_yearly_pulse = {
 		50 = egyptian.157 # You are upholding Ma'at
 		50 = egyptian.158 # You are NOT upholding Ma'at
 		20 = egyptian.161 # Women had more rights in ancient Egypt
+		20 = egyptian.170 # Servant asks Shed for help
 		
 		#Hellenic Flavor
 		20 = hellenic.500 # HadesxPersephone
@@ -95,6 +106,10 @@ on_bi_yearly_pulse = {
 		20 = hellenic.516 # Courtier hunted in Diana's sacred groves
 		20 = hellenic.527 # Herma
 		20 = hellenic.528 # Touch Priapus statue or not?
+		20 = hellenic.539 # Statue of Flora
+		20 = hellenic.540 # Sterquilinus god of Feces
+		20 = hellenic.542 # Lightning breaks statue
+		20 = hellenic.545 # Pomegranate gift
 		
 		#I Can't Believe My Virgin Goddess of the Hunt is This Cute Event Blob (i.e. Artemis Event Blob)
 		100 = hellenic.582 # Artemis blesses capital
@@ -116,6 +131,8 @@ on_five_year_pulse = {
 		100 = egyptian.159 # one of your wives displays feline grace... <.< >.>
 		50 = egyptian.166 # Ghost of Akhenaten
 		100 = egyptian.167 # Shezmu execution event
+		100 = egyptian.171 # Visited the Egyptian underworld
+		50 = egyptian.171 # Creepy courtier tries to bang maid by using dark magic
 		
 		#Hellenic Flavor
 		20 = hellenic.502 # Zeus supposedly knocked a woman up - is she lying?
@@ -129,6 +146,9 @@ on_five_year_pulse = {
 		20 = hellenic.517 # Courtier marries nymph
 		20 = hellenic.520 # Theseus and Pirithuos
 		20 = hellenic.523 # Who's the fairest of them all?
+		20 = hellenic.531 # Prayers for Nix
+		20 = hellenic.532 # Erotes
+		20 = hellenic.544 # Athena visits
 		
 		#I Can't Believe My Virgin Goddess of the Hunt is This Cute Event Blob (i.e. Artemis Event Blob)
 		5 = hellenic.550 # Stumble upon Artemis naked

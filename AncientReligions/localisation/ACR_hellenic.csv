@@ -111,5 +111,5 @@ borrowed_from_d_legio_hellenica;Borrowed from the Hellenic Legion;;;;;;;;;;;;;x
 ###### Bloodlines ;;;;;;;;;;;;;;x
 chosen_of_artemis_male;Blood of [From.GetArtemisDianaName]'s Chosen;;;;;;;;;;;;;x
 chosen_of_artemis_female;Blood of [From.GetArtemisDianaName]'s Chosen;;;;;;;;;;;;;x
-chosen_of_artemis_male_desc;[From.Founder.GetFullName] is rumored to have had a close friendship with the goddess [From.GetArtemisDianaName]. According to legend, [From.Founder.GetSheHe] would go on hunting trips with the goddess and was escorted personally to the Elysian Fields. Their blessed blood runs in this character's veins.;;;;;;;;;;;;;x
-chosen_of_artemis_female_desc;[From.Founder.GetFullName] is rumored to have had a close friendship with the goddess [From.GetArtemisDianaName]. According to legend, [From.Founder.GetSheHe] would go on hunting trips with the goddess and was escorted personally to the Elysian Fields. Their blessed blood runs in this character's veins.;;;;;;;;;;;;;x
+chosen_of_artemis_male_desc;According to legend, [From.Founder.GetFullName] had a close friendship with [From.GetArtemisDianaName] and would go on hunting trips with the goddess and upon death was escorted personally to the Elysian Fields.;;;;;;;;;;;;;x
+chosen_of_artemis_female_desc;According to legend, [From.Founder.GetFullName] had a close friendship with [From.GetArtemisDianaName] and would go on hunting trips with the goddess and upon death was escorted personally to the Elysian Fields.;;;;;;;;;;;;;x

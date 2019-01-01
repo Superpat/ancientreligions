@@ -453,7 +453,8 @@ character_event = {
 			d_saint_boudicca = {
 				grant_title = PREV
 			}
-			set_government_type = feudal_government
+			set_government_type = order_government
+			set_defacto_liege = this
 			create_character = {
 				random_traits = yes
 				dynasty = random

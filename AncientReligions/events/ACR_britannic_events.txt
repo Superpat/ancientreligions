@@ -2228,7 +2228,7 @@ letter_event = {
 						modifier = {
 							factor = 0
 							OR = {
-								religion_authority < 80
+								religion_authority < 0.8
 								reverse_opinion = {
 									who = FROM
 									value < 75
@@ -2249,7 +2249,7 @@ letter_event = {
 						modifier = {
 							factor = 0
 							OR = {
-								religion_authority < 60
+								religion_authority < 0.6
 								reverse_opinion = {
 									who = FROM
 									value < 50
@@ -2268,7 +2268,7 @@ letter_event = {
 						modifier = {
 							factor = 0
 							OR = {
-								religion_authority < 40
+								religion_authority < 0.4
 								AND = {
 									has_artifact = tusk_of_torc_triath
 								}
@@ -2282,7 +2282,7 @@ letter_event = {
 						modifier = {
 							factor = 0
 							OR = {
-								religion_authority < 25
+								religion_authority < 0.25
 								AND = {
 									has_artifact = torque_of_boudicca
 									has_artifact = old_carnyx

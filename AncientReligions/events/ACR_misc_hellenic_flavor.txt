@@ -4723,14 +4723,22 @@ narrative_event = {
 			limit = {
 				is_female = yes
 			}
-			create_bloodline = {
-				type = chosen_of_artemis_female
-				has_dlc = "Holy Fury"
+			if = {
+				limit = {
+					has_dlc = "Holy Fury"
+				}
+				create_bloodline = {
+					type = chosen_of_artemis_female
+				}
 			}
 		} else = {
-			create_bloodline = {
-				type = chosen_of_artemis_male
-				has_dlc = "Holy Fury"
+			if = {
+				limit = {
+					has_dlc = "Holy Fury"
+				}
+				create_bloodline = {
+					type = chosen_of_artemis_male
+				}
 			}
 		}
 		###############################

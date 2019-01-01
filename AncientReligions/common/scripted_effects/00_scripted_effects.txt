@@ -25467,8 +25467,15 @@ add_random_commander_trait_effect = {
 				}
 			}
 			add_trait = unyielding_leader
+		}
+		1 = {
+			trigger = {
+				NOT = {
+					trait = war_elephant_leader
 				}
-				culture_group = chinese_group
+				location = {
+					region = world_india
+				}
 			}
 			add_trait = war_elephant_leader
 		}

@@ -1359,7 +1359,7 @@ character_event = {
 					}
 				}
 				archdryad_non_interference_trigger = yes
-				reverse_opinion = { who = ROOT value = 80 }
+				reverse_opinion = { who = ROOT value = 60 }
 				has_character_flag = refused_independence_@ROOT
 			}
 		}
@@ -1404,6 +1404,7 @@ letter_event = {
 		}
 	}
 }
+
 # Arch-Dryad threatens your position
 character_event = {
 	id = britannic.37
@@ -1482,11 +1483,22 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		ROOT = {
+		FROM = {
 			most_popular_vassal = {
 				limit = {
-					ai_ambition = 30
-					ai_zeal = 30
+					OR = {
+						AND = {
+							ai_ambition = 30
+							ai_zeal = 30
+						}
+						AND = {
+							ai = no
+							OR = {
+								trait = ambitious
+								trait = zealous
+							}
+						}
+					}
 				}
 
 				FROM = {

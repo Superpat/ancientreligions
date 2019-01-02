@@ -25775,8 +25775,8 @@ landless_pope_effect = {
 					is_name_randomized = yes
 				}
 			}
-			add_trait = levy_coordinator
 		}
+		add_trait = levy_coordinator
 		if = {
 			limit = {
 				NOR = {

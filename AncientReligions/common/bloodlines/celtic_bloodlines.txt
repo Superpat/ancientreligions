@@ -1,6 +1,6 @@
 living_legend_male = {
     inheritance = patrilineal
-    matrilinial_override = yes
+    matrilineal_override = yes
     allow_bastards = no
     flags = { bloodline_heroes bloodline_female_marshal created_bloodline }
     picture = GFX_bloodlines_placeholder_symbol
@@ -17,7 +17,7 @@ living_legend_male = {
 
 living_legend_female = {
     inheritance = matrilineal
-    matrilinial_override = yes
+    matrilineal_override = yes
     allow_bastards = no
     flags = { bloodline_heroes bloodline_female_marshal created_bloodline }
     picture = GFX_bloodlines_placeholder_symbol

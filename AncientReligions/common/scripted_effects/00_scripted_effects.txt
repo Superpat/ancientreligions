@@ -14335,7 +14335,6 @@ spawn_elder_effect = {
 				intrigue = 4
 				martial = 4
 			}
-			narrative_event = { id = HF.25818 days = 30 } #Notify everyone that the crusade has actually reached Antioch and is ready to engage.
 		}
 	}
 	if = { 
@@ -21035,22 +21034,25 @@ balance_weight_large_effect = { #Should be used rarely.
 #Used for seclusions, fasting, dungeon starvation, etc.
 lose_weight_small_effect = {
 	custom_tooltip = {
+		text = acr_weight_loss_small
 		hidden_tooltip = {
-		change_variable = { which = physique_variable value = -6 } #Because of the way trigger works, checks if you are below -5/-10/-15
+			change_variable = { which = physique_variable value = -6 } #Because of the way trigger works, checks if you are below -5/-10/-15
 		}
 	}
 } 
 lose_weight_medium_effect = {
 	custom_tooltip = {
+		text = acr_weight_loss_medium
 		hidden_tooltip = {
-	change_variable = { which = physique_variable value = -11 }
+			change_variable = { which = physique_variable value = -11 }
 		}
 	}
 } 
 lose_weight_large_effect = {
 	custom_tooltip = {
+		text = acr_weight_loss_large
 		hidden_tooltip = {
-	change_variable = { which = physique_variable value = -16 }
+			change_variable = { which = physique_variable value = -16 }
 		}
 	}
 }  
@@ -22282,6 +22284,20 @@ add_warrior_lodge_leader_trait_effect = {
 		}
 		warrior_lodge_hellenic = {
 			add_trait = hellenic_leader
+		}
+		
+		### ACR ###
+		warrior_lodge_celtic = {
+			add_trait = celtic_leader
+		}
+		warrior_lodge_britannic = {
+			add_trait = britannic_leader
+		}
+		warrior_lodge_titan = {
+			add_trait = titan_leader
+		}
+		warrior_lodge_egyptian = {
+			add_trait = egyptian_leader
 		}
 	}
 }

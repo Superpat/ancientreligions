@@ -5,8 +5,8 @@
 #
 # Event IDs promethean.400-3549 are reserved
 #
-# promethean.400 - 3410	various events
-# promethean.411 - 3420	Rebuilding of Crotone
+# promethean.400 - 410	various events
+# promethean.411 - 420	Rebuilding of Crotone
 # promethean.450 - 3549	The Unbinding Festival
 # promethean.550 - 3599	Holy Order Events
 #
@@ -53,6 +53,12 @@ narrative_event = {
 		name = promethean.400.c
 		trigger = {
 			NOT = { religion = promethean_pagan }
+		}
+	}
+
+	after = {
+		hidden_tooltip = {
+			character_event = { id = promethean.408 days = 60 random = 21 }
 		}
 	}
 }
@@ -557,6 +563,26 @@ character_event = {
 				trait = ambitious
 			}
 		}
+	}
+}
+
+# Neoplatonist schools are flourishing with the restoration of The First Academy
+character_event = {
+	id = promethean.408
+	title = promethean.408.title
+	desc = promethean.408.desc
+	picture = GFX_evt_courtiers_talking
+	border = GFX_event_normal_frame_religion
+
+	is_major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = flag_restored_stoic_intelligentia
+	}
+
+	option = {
+		name = ancrel_interesting
 	}
 }
 

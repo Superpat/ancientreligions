@@ -52,7 +52,8 @@ britannic.36.b;I am your liege lord madame, and that will not change!;;;;;;;;;;;
 britannic.38.desc;"I can no longer tolerate your refusal to recognize my independence. If you will not, I will be forced to find another who will.;;;;;;;;;;;;;x
 britannic.38.a;Alright, I don't need a civil war!;;;;;;;;;;;;;x
 britannic.38.b;I do not respond well to threats, priestess.;;;;;;;;;;;;;x
-britannic.40;The [From.GetTitle] has issued a proclamation,\n"To all good Britannic people! Let it be known that [From.GetTitledFirstName] has seen the impious rule of [FromFrom.GetTitledFirstName] and is not pleased! In Her wisdom, She has chosen [chosen_vassal.GetTitledFirstName] as the sword of the church and rightful [FromFrom.GetRulerTitle] of [FromFrom.PrimaryTitle.GetName]!"\nIt seems the Arch-Dryad has granted [chosen_vassal.GetFirstName] a claim to your title!;;;;;;;;;;;;;x
+britannic.39.tt;The Arch-Dryad gets your response.;;;;;;;;;;;;;x
+britannic.40.desc;The [From.GetTitle] has issued a proclamation,\n"To all good Britannic people! Let it be known that [From.GetTitledFirstName] has seen the impious rule of [FromFrom.GetTitledFirstName] and is not pleased! In Her wisdom, She has chosen [chosen_vassal.GetTitledFirstName] as the sword of the church and rightful [FromFrom.GetRulerTitle] of [FromFrom.PrimaryTitle.GetName]!"\nIt seems the Arch-Dryad has granted [chosen_vassal.GetFirstName] a claim to your title!;;;;;;;;;;;;;x
 britannic.40.a;She did WHAT?!;;;;;;;;;;;;;x
 britannic.40.b;Fantastic...;;;;;;;;;;;;;x
 britannic.40.c;This means war!;;;;;;;;;;;;;x

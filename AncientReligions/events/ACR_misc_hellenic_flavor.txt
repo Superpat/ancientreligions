@@ -6603,31 +6603,33 @@ province_event = {
 			name = VIET_glaucus_herb
 			duration = 1095
 		}
-		wealth = -5
-		random = {
-			add_trait = trusting
-			chance = 20
-		}
-		random_list = {
-			50 = {
-				custom_tooltip = { text = VIET_glaucus_herb_good_text }
-				hidden_tooltip = {
-					owner = {
-						add_character_modifier = {
-							name = VIET_glaucus_herb_good
-							duration = -1
-						}					
+		owner = {
+			wealth = -5
+			random = {
+				add_trait = trusting
+				chance = 20
+			}
+			random_list = {
+				50 = {
+					custom_tooltip = { text = VIET_glaucus_herb_good_text }
+					hidden_tooltip = {
+						owner = {
+							add_character_modifier = {
+								name = VIET_glaucus_herb_good
+								duration = -1
+							}					
+						}
 					}
 				}
-			}
-			50 = {
-				custom_tooltip = { text = VIET_glaucus_herb_bad_text }
-				hidden_tooltip = {
-					owner = {
-						add_character_modifier = {
-							name = VIET_glaucus_herb_bad
-							duration = -1
-						}					
+				50 = {
+					custom_tooltip = { text = VIET_glaucus_herb_bad_text }
+					hidden_tooltip = {
+						owner = {
+							add_character_modifier = {
+								name = VIET_glaucus_herb_bad
+								duration = -1
+							}					
+						}
 					}
 				}
 			}

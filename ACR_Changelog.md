@@ -1,3 +1,43 @@
+2019-01-04 v0.43.0 "Sequana"
+-------------------------
+> Sequana is a Celtic river goddess popular in Gaul. She was the patron of the river that bore her name, now known as the Seine. A shrine near the source of the river holds a Roman era statue of the goddess, revealing her popularity even after Caesars conquest. Hundreds of votive offerings to Sequana have been found at the bottom of the river near the shrine.
+
+Celtic:
+  - Living Legend bloodline event has been fixed. Those of you with many duplicate bloodlines can keep them as compensation for your troubles.
+  - The Celtic Warrior Lodge, "", has been added.
+    - Special leader trait is "".
+      - effects
+    - Right now it's identical to the other lodges, but I hope to think of something special in the future.
+  
+Britannic:
+  - Missing localisation was added for events involving a vassalized Arch-Dryad and having free investiture after the Arch-Dryad has been created.
+  - Fixes bug with Arch-Dryad giving artifacts to favored rulers.
+  - The Britannic Warrior Lodge, "", has been added.
+    - Special leader trait is "".
+      - effects
+
+Hellenic:
+  - Bug fixes and new events for the Artemis event chain from formerly retired CK2 modder cybrxkhan. Thanks!
+
+Promethean:
+  - Skeptic and Epicurean monastic orders have been added.
+    - They're mostly copies of the Stoics, with small tweaks here and there.
+    - Most anyone who has access to the Stoics will also have access to these societies.
+    - The relevant neoplatonist traits have been factored into all three societies.
+  - Removed Promethean from Lets. Get. PAGAN!, as it's now a heresy of a reformed religion, which makes things buggy.
+
+Titan Cult:
+  - The Titan Warrior Lodge, "", has been added.
+
+Egyptian:
+  - The Egyptian/Atenic Warrior Lodge, "", has been added.
+    - Special leader trait is "".
+      - effects
+
+Atenic:
+  - Removed Atenic from Lets. Get. PAGAN!, as it's now a heresy of a reformed religion, which makes things buggy.
+
+
 2018-12-18 v0.42.4 "Tasgetius"
 -------------------------
 > Tasgetius was a king of the Gaulish Carnutes tribe (carnutes meaning "the horned ones", possibly a connection to Cernunnos). Tasgetius was appointed to kingship by Julius Caeser himself. The puppet king was assassinated in three years.

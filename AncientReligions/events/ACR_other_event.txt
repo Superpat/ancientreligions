@@ -605,11 +605,11 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { has_global_flag = ancrel_carnutes }
+		NOT = { has_global_flag = ancrel_sequana }
 	}
 
 	immediate = {
-		set_global_flag = ancrel_carnutes
+		set_global_flag = ancrel_sequana
 		if = {
 			limit = {
 				has_global_flag = celtic_reformation
@@ -618,7 +618,7 @@ character_event = {
 			any_mercenary_band = {
 				limit = {
 					holy_order = yes
-					religion = celtic_pagan
+					holder_scope = { religion = celtic_pagan }
 				}
 
 				religion = celtic_pagan_reformed
@@ -632,11 +632,12 @@ character_event = {
 			any_mercenary_band = {
 				limit = {
 					holy_order = yes
-					religion = egyptian_pagan
+					holder_scope = { religion = egyptian_pagan }
 				}
 
 				religion = egyptian_pagan_reformed
 			}
 		}
+		
 	}
 }

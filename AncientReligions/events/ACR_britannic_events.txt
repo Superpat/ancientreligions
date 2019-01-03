@@ -1228,7 +1228,7 @@ letter_event = {
 
 	option = { # out scripture her
 		name = britannic.32.c
-		custom_tooltip = { text = britanic.32.c.tt }
+		custom_tooltip = { text = britannic.32.c.tt }
 		tooltip_info = learning
 		set_character_flag = ancrel_scriptured_archdryad_@FROM
 		set_character_flag = acr_submit_to_arch_dryad

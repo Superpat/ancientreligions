@@ -109,7 +109,7 @@ character_event = {
 
 		### ACR ###
 		clr_character_flag = being_recruited_by_the_unseelie
-		#clr_character_flag = being_recruited_by_the_coven
+		clr_character_flag = being_recruited_by_the_coven
 		clr_character_flag = being_recruited_by_the_sand_snakes
 	}
 
@@ -258,10 +258,10 @@ character_event = {
 						has_character_flag = being_recruited_by_the_unseelie
 						true_religion_in_celtic_subgroup_trigger = yes
 					}
-					#AND = {
-					#	has_character_flag = being_recruited_by_the_coven
-					#	true_religion_in_hellenic_subgroup_trigger = yes
-					#}
+					AND = {
+						has_character_flag = being_recruited_by_the_coven
+						true_religion_in_hellenic_subgroup_trigger = yes
+					}
 					AND = {
 						has_character_flag = being_recruited_by_the_sand_snakes
 						true_religion_in_egyptian_subgroup_trigger = yes
@@ -297,7 +297,7 @@ character_event = {
 
 		### ACR ###
 		clr_character_flag = being_recruited_by_the_unseelie
-		#clr_character_flag = being_recruited_by_the_coven
+		clr_character_flag = being_recruited_by_the_coven
 		clr_character_flag = being_recruited_by_the_sand_snakes
 
 		hidden_effect = { 
@@ -500,7 +500,7 @@ character_event = { # event notifying recruitee that "Something must've gone wro
 
 		### ACR ###
 		clr_character_flag = being_recruited_by_the_unseelie
-		#clr_character_flag = being_recruited_by_the_coven
+		clr_character_flag = being_recruited_by_the_coven
 		clr_character_flag = being_recruited_by_the_sand_snakes
 	}
 }
@@ -710,7 +710,7 @@ character_event = {
 
 		### ACR ###
 		clr_character_flag = being_recruited_by_the_unseelie
-		#clr_character_flag = being_recruited_by_the_coven
+		clr_character_flag = being_recruited_by_the_coven
 		clr_character_flag = being_recruited_by_the_sand_snakes
 		
 		hidden_effect = { character_event = { id = MNM.6998 } }  #to recruiter - via ping: recruit said no
@@ -895,7 +895,7 @@ character_event = {
 
 		### ACR ###
 		clr_character_flag = being_recruited_by_the_unseelie
-		#clr_character_flag = being_recruited_by_the_coven
+		clr_character_flag = being_recruited_by_the_coven
 		clr_character_flag = being_recruited_by_the_sand_snakes
 
 		hidden_effect = { character_event = { id = MNM.6996 days = 1 } } # turn down the satanists
@@ -1779,7 +1779,7 @@ letter_event = {
 
 							### ACR ###
 							being_recruited_by_the_unseelie = { PREV = { join_society = unseelie_petitioners } }
-							#being_recruited_by_the_coven = { PREV = { join_society = the_coven } }
+							being_recruited_by_the_coven = { PREV = { join_society = the_coven } }
 							being_recruited_by_the_sand_snakes = { PREV = { join_society = the_sand_snakes } }
 						}
 					}
@@ -2070,7 +2070,7 @@ character_event = {
 
 		### ACR ###
 		clr_character_flag = being_recruited_by_the_unseelie
-		#clr_character_flag = being_recruited_by_the_coven
+		clr_character_flag = being_recruited_by_the_coven
 		clr_character_flag = being_recruited_by_the_sand_snakes
 	}
 }
@@ -2464,7 +2464,7 @@ character_event = {
 
 			### ACR ###
 			clr_character_flag = being_recruited_by_the_unseelie
-			#clr_character_flag = being_recruited_by_the_coven
+			clr_character_flag = being_recruited_by_the_coven
 			clr_character_flag = being_recruited_by_the_sand_snakes
 		}
 	}

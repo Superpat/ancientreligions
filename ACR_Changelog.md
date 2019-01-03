@@ -1,6 +1,6 @@
 2019-01-04 v0.43.0 "Sequana"
 -------------------------
-> Sequana is a Celtic river goddess popular in Gaul. She was the patron of the river that bore her name, now known as the Seine. A shrine near the source of the river holds a Roman era statue of the goddess, revealing her popularity even after Caesars conquest. Hundreds of votive offerings to Sequana have been found at the bottom of the river near the shrine.
+> Sequana is a Celtic river goddess popular in Gaul. She was the patron of the river that bore her name, now known as the Seine. A shrine near the source of the river holds a Roman era statue of the goddess, revealing her popularity even after Caesar's conquest. Hundreds of votive offerings to Sequana have been found at the bottom of the river near the shrine.
 
 Celtic:
   - Living Legend bloodline event has been fixed. Those of you with many duplicate bloodlines can keep them as compensation for your troubles.
@@ -25,14 +25,20 @@ Promethean:
     - Most anyone who has access to the Stoics will also have access to these societies.
     - The relevant neoplatonist traits have been factored into all three societies.
   - Removed Promethean from Lets. Get. PAGAN!, as it's now a heresy of a reformed religion, which makes things buggy.
+  - Restored The Coven as a satanist society for Prometheans.
 
 Titan Cult:
   - The Titan Warrior Lodge, "", has been added.
+    - Special leader trait is "".
+      - effects
+  - Made The Coven the satanist society of the Titan Cult.
 
 Egyptian:
   - The Egyptian/Atenic Warrior Lodge, "", has been added.
     - Special leader trait is "".
       - effects
+  - Added new secret society, "". A fanatical cult dedicated to maintaining Ma'at and believing they are the mortal instruments of Shezmu, the Lord of Blood and Slaughterer of Souls.
+    - A zealous murder cult obsessed with justice, they are vigilantes conducting extra-judicial killings and are thus considered criminals.
 
 Atenic:
   - Removed Atenic from Lets. Get. PAGAN!, as it's now a heresy of a reformed religion, which makes things buggy.

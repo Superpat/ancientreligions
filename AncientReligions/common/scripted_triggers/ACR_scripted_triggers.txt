@@ -690,3 +690,15 @@ has_shezmu_prerequisites = {
 	}
 	NOT = { has_common_devilworship_prerequisites = yes }
 }
+
+is_hellenic_monastic_order_member_trigger = {
+	OR = {
+		is_society_member = monastic_order_stoics
+		is_society_member = monastic_order_skeptics
+		is_society_member = monastic_order_epicureans
+	}
+}
+
+is_celtic_monastic_order_member_trigger = {
+	always = no # none exist yet!
+}

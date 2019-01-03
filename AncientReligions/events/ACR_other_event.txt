@@ -46,21 +46,12 @@ character_event = {
 					limit = {
 						NOT = { religion_group = pagan_group }					
 						OR = {
-							culture = greek
+							culture_group = byzantine
 							culture = italian
 						}
 
 					}
 					character_event = { id = ancrel.9003 }
-				}
-				if = { # Promethean
-					limit = {
-						OR = {
-							culture = armenian
-							culture = georgian
-						}
-					}
-					character_event = { id = ancrel.9011 }
 				}
 				if = { # Titan
 					limit = {
@@ -75,15 +66,10 @@ character_event = {
 							culture = bedouin_arabic
 							culture = levantine_arabic
 							culture = egyptian_arabic
+							culture_group = east_african
 						}
 					}
 					character_event = { id = ancrel.9004 }
-				}
-				if = { # Atenic
-					limit = {
-						culture_group = east_african
-					}
-					character_event = { id = ancrel.9013 }
 				}
 				if = { # West African
 					limit = {
@@ -319,25 +305,6 @@ character_event = {
 	}
 }
 
-# Promethean
-character_event = {
-	id = ancrel.9011
-	desc = ancrel.9011.desc
-	picture = GFX_evt_roman_temple
-	hide_from = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = OK
-		religion = promethean_pagan
-		any_demesne_title = {
-			limit = { tier = count }
-			location = { religion = promethean_pagan }
-		}
-	}
-}
-
 # Titan
 character_event = {
 	id = ancrel.9012
@@ -353,25 +320,6 @@ character_event = {
 		any_demesne_title = {
 			limit = { tier = count }
 			location = { religion = promethean_pagan }
-		}
-	}
-}
-
-# Atenism
-character_event = {
-	id = ancrel.9013
-	desc = ancrel.9013.desc
-	picture = GFX_evt_pyramid
-	hide_from = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = OK
-		religion = aten_pagan
-		any_demesne_title = {
-			limit = { tier = count }
-			location = { religion = aten_pagan }
 		}
 	}
 }

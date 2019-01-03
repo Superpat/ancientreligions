@@ -37,8 +37,6 @@ Egyptian:
   - The Egyptian/Atenic Warrior Lodge, "", has been added.
     - Special leader trait is "".
       - effects
-  - Added new secret society, "". A fanatical cult dedicated to maintaining Ma'at and believing they are the mortal instruments of Shezmu, the Lord of Blood and Slaughterer of Souls.
-    - A zealous murder cult obsessed with justice, they are vigilantes conducting extra-judicial killings and are thus considered criminals.
 
 Atenic:
   - Removed Atenic from Lets. Get. PAGAN!, as it's now a heresy of a reformed religion, which makes things buggy.

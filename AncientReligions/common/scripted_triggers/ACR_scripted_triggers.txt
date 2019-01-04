@@ -659,8 +659,10 @@ has_unseelie_prerequisites = {
 has_coven_prerequisites = {
 	has_common_devilworship_prerequisites = yes
 	OR = {
-		true_religion = promethean_pagan
-		true_religion = titan_pagan
+		religion = promethean_pagan
+		religion = titan_pagan
+		secret_religion = promethean_pagan
+		secret_religion = titan_pagan
 	}
 }
 

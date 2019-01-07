@@ -10689,7 +10689,7 @@ warrior_lodge_hellenic = {
 				}
 			}
 		}
-is_adult = yes
+		is_adult = yes
 		custom_tooltip = {
 			text = has_not_angered_society_tt
 			hidden_trigger = { NOT = { has_character_modifier = warrior_lodge_failed_joining_cd } }

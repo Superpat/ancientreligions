@@ -1763,7 +1763,7 @@ character_event = {
 
                 # Celtic Artifacts
 				10 = {
-					modifier = { factor = 0 religion_openly_celtic_or_reformed = no }
+					modifier = { factor = 0 religion_openly_celtic_or_reformed_trigger = no }
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
 					modifier = {
 						factor = 0
@@ -1897,8 +1897,13 @@ character_event = {
 				10 = {
 					modifier = {
                         factor = 0
-                        religion_openly_in_hellenic_subgroup_trigger = no
-                        religon = promethean_pagan # prometheans don't like aethon
+						OR = {
+	                        religion = promethean_pagan # prometheans don't like aethon
+							NOR = {
+								religion_openly_hellenic_or_reformed_trigger = yes
+								religion = titan_pagan
+							}
+						}
                     }
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
 					modifier = {

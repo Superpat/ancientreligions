@@ -551,10 +551,7 @@ warrior_lodge_celtic = {
 			trait = lughs_own
 			factor = 1.1
 		}
-		modifier = {
-			trait = wolf
-			factor = 1.1
-		}
+
 		#NEGATIVE modifiers
 		modifier = {
 			trait = craven
@@ -2466,7 +2463,7 @@ monastic_order_skeptics = {
 		startup_limit = 4
 		modifier = {
 			monthly_character_piety = 0.2
-			diplomacy = 1
+			intrigue = 1
 			learning = 1
 			build_cost_city_modifier = -0.25
 			fertility = -0.15
@@ -2483,7 +2480,7 @@ monastic_order_skeptics = {
 		startup_limit = 2
 		modifier = { 
 			monthly_character_piety = 0.5
-			diplomacy = 1
+			intrigue = 1
 			learning = 2
 			build_cost_city_modifier = -0.5
 			fertility = -0.15

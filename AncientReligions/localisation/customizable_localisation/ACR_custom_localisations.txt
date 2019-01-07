@@ -8,7 +8,7 @@ defined_text = {
 	}
 	text = {
 		trigger = { is_female = yes }
-		localisation_key = dryad
+		localisation_key = dryad_lowercase
 	}
 }
 
@@ -109,5 +109,6 @@ defined_text = {
 
 	text = {
 		trigger = { religion = britannic_pagan }
+		localisation_key = ARCHDRYAD
 	}
 }

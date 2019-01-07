@@ -3,6 +3,7 @@ coa_plain_kemetic;Kemetic Coat of Arms;;;;;;;;;;;;;x
 religion_openly_in_egyptian_subgroup_tooltip;Openly practice an Ancient Egyptian religion.;;;;;;;;;;;;;x
 true_religion_in_egyptian_subgroup_tooltip;Truly practicing an Ancient Egyptian religion.;;;;;;;;;;;;;x
 secret_religion_in_egyptian_subgroup_tooltip;Secretly practicing an Ancient Egyptian religion.;;;;;;;;;;;;;x
+has_liege_vassal_or_neighbor_of_egyptian_religion_tt;Has a §YLiege§!, §YVassal§!, or a §Yneighboring ruler§! who follows an §YEgyptian§! faith\n;;;;;;;;;;;;;x
 ###### Religion/titles definitions;;;;;;;;;;;;;;x
 egyptian_pagan;Egyptian;;;;;;;;;;;;;x
 egyptian_pagan_DESC;The Egyptian religion is polytheistic, with a large selection of gods and cults. It originated in ancient Egypt and with the conquests of the Egyptian empire, it would go on to become the dominant religion in the middle east until the rise of the Roman empire. The faith has deteriorated in the centuries since it's downfall, it will take considerable effort to restore it's ancient institutions.;La religion kémite est polythéiste, avec un grand nombre de dieux et de cultes. Elle est née dans l'Ancienne Egypte et s'étendit avec les conquestes de l'Empire Egyptien, au point de devenir la religion dominante au Moyen-Orient jusqu'à l'avènement de l'Empire Romain.;;;;;;;;;;;;x
@@ -157,6 +158,8 @@ montu;Mighty Bull of Montu;;;;;;;;;;;;;x
 montu_desc;This character is a veteran of a Kemetic Great Holy War.;;;;;;;;;;;;;x
 atens_chosen;Lightbringer;;;;;;;;;;;;;x
 atens_chosen_desc;This character is a veteran of an Atenic Great Holy War.;;;;;;;;;;;;;x
+egyptian_leader;Sandstrider;;;;;;;;;;;;;x
+egyptian_leader_desc;This character is a master of desert terrain, lightning attacks leading troops in and out of combat quickly, and sieging enemy cities.;;;;;;;;;;;;;x
 ###### Coptic;;;;;;;;;;;;;;x 
 egyptian_coptic;Neo-Coptic;;;;;;;;;;;;;x
 egyptian_coptic_desc;Neo-Coptic represent a return to the ancient ways of the Egyptian people. The result of a revivalist movement in Egypt, elements of Ancient Egyptian language, customs, architecture, and art have all been adapted to serve the times.;;;;;;;;;;;;;x

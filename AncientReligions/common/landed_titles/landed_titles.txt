@@ -33909,7 +33909,6 @@ e_arabia = {
 		alan = "Philistia"
 		georgian = "Philistia"
 		assyrian = "Philistia"
-		roman = "Judea"
 		
 		assimilate = no # Duchies cannot de jure drift IN or OUT of this title
 		

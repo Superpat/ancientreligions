@@ -58,7 +58,9 @@ narrative_event = {
 
 	after = {
 		hidden_tooltip = {
-			character_event = { id = promethean.408 days = 60 random = 21 }
+			d_promethean_pagan = {
+				holder_scope = { narrative_event = { id = promethean.408 days = 60 random = 21 } }
+			}
 		}
 	}
 }
@@ -567,14 +569,14 @@ character_event = {
 }
 
 # Neoplatonist schools are flourishing with the restoration of The First Academy
-character_event = {
+narrative_event = {
 	id = promethean.408
 	title = EVTTITLEHF23123
 	desc = promethean.408.desc
 	picture = GFX_evt_courtiers_talking
-	border = GFX_event_normal_frame_religion
+	border = GFX_event_narrative_frame_religion
 
-	is_major = yes
+	major = yes
 	is_triggered_only = yes
 
 	immediate = {
@@ -637,7 +639,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 1.2
-				has_personality_martial_trigger = yes
+				has_lifestyle_martial_trigger = yes
 			}
 			modifier = {
 				factor = 1.5

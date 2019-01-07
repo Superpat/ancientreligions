@@ -1,6 +1,11 @@
-# Religion-specific opinion can be added to modifiers (E.G., norse_pagan_opinion = 5), but the modifier *has* to be defined in 00_modifier_definitions.txt as well. It also needs localisation. Works for groups as well
+# Religion-specific opinion can be added to modifiers (E.G., 
+# norse_pagan_opinion = 5), but the modifier *has* to be defined in 
+# 00_modifier_definitions.txt as well. It also needs localisation. Works
+# for groups as well
 
 pagan_group = {
+	color = { 0.6 0.0 0.0 } # included here to make validator shut the hell up
+
 	titan_pagan = {
 		graphical_culture = norsegfx
 		alternate_start = {

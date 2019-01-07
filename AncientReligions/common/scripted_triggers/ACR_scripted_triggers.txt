@@ -695,9 +695,9 @@ has_shezmu_prerequisites = {
 
 is_hellenic_monastic_order_member_trigger = {
 	OR = {
-		is_society_member = monastic_order_stoics
-		is_society_member = monastic_order_skeptics
-		is_society_member = monastic_order_epicureans
+		is_in_society = monastic_order_stoics
+		is_in_society = monastic_order_skeptics
+		is_in_society = monastic_order_epicureans
 	}
 }
 

@@ -1199,8 +1199,8 @@ letter_event = {
 				}
 			}
 
+			usurp_title_plus_barony_if_unlanded_and_vassals = FROM
 			FROM = {
-				usurp_title_plus_barony_if_unlanded_and_vassals = PREV
 				opinion = { who = ROOT modifier = ancrel_pleased }
 			}
 		}
@@ -1300,8 +1300,8 @@ letter_event = {
 				}
 			}
 
+			usurp_title_plus_barony_if_unlanded_and_vassals = FROM
 			FROM = {
-				usurp_title_plus_barony_if_unlanded_and_vassals = PREV
 				opinion = { who = ROOT modifier = ancrel_pleased }
 			}
 		}

@@ -1,49 +1,68 @@
 2019-01-04 v0.43.0 "Sequana"
--------------------------
+============================
+
 > Sequana is a Celtic river goddess popular in Gaul. She was the patron of the river that bore her name, now known as the Seine. A shrine near the source of the river holds a Roman era statue of the goddess, revealing her popularity even after Caesar's conquest. Hundreds of votive offerings to Sequana have been found at the bottom of the river near the shrine.
 
+General:
+
+Fixed many, many, *many* bugs.
+
 Celtic:
-  - Living Legend bloodline event has been fixed. Those of you with many duplicate bloodlines can keep them as compensation for your troubles.
-  - The Celtic Warrior Lodge, "", has been added.
-    - Special leader trait is "".
-      - effects
-    - Right now it's identical to the other lodges, but I hope to think of something special in the future.
+
+- Living Legend bloodline event has been fixed. Those of you with many duplicate bloodlines can keep them as compensation for your troubles.
+- The Celtic Warrior Lodge, "The Band of Camulos", has been added. Camulos is a Briton war and storm god.
+  - Special leader trait is "Raider".
+    - +50% Imprison Enemy Commander
+    - +20% in Hill Terrain
+    - +20% Morale Offence
   
 Britannic:
-  - Missing localisation was added for events involving a vassalized Arch-Dryad and having free investiture after the Arch-Dryad has been created.
-  - Fixes bug with Arch-Dryad giving artifacts to favored rulers.
-  - The Britannic Warrior Lodge, "", has been added.
-    - Special leader trait is "".
-      - effects
+
+- Missing localisation was added for events involving a vassalized Arch-Dryad and having free investiture after the Arch-Dryad has been created.
+- Fixes bug with Arch-Dryad giving artifacts to favored rulers.
+- The Britannic Warrior Lodge, "The Champions of Andraste", has been added. Andraste is the Sanctaidd ("Archangel") of Victory.
+  - Special leader trait is "Lancer".
+    - +20% Plains and Farmland Terrains.
+    - +20% to Light and Heavy Cavalry.
 
 Hellenic:
-  - Bug fixes and new events for the Artemis event chain from formerly retired CK2 modder cybrxkhan. Thanks!
+
+- Bug fixes and new events for the Artemis event chain from formerly retired CK2 modder cybrxkhan. Thanks!
 
 Promethean:
-  - Skeptic and Epicurean monastic orders have been added.
-    - They're mostly copies of the Stoics, with small tweaks here and there.
-    - Most anyone who has access to the Stoics will also have access to these societies.
-    - The relevant neoplatonist traits have been factored into all three societies.
-  - Removed Promethean from Lets. Get. PAGAN!, as it's now a heresy of a reformed religion, which makes things buggy.
-  - Restored The Coven as a satanist society for Prometheans.
+
+- Skeptic and Epicurean monastic orders have been added.
+  - They're mostly copies of the Stoics, with small tweaks here and there.
+  - Most anyone who has access to the Stoics will also have access to these societies.
+  - The relevant neoplatonist traits have been factored into all three societies.
+- Removed Promethean from Lets. Get. PAGAN!, as it's now a heresy of a reformed religion, which makes things buggy.
+- Restored The Coven as a satanist society for Prometheans.
 
 Titan Cult:
-  - The Titan Warrior Lodge, "", has been added.
-    - Special leader trait is "".
-      - effects
-  - Made The Coven the satanist society of the Titan Cult.
+
+- The Titan Warrior Lodge, "The Warriors of Perses", has been added. Perses is the Titan of Devastation.
+  - Special leader trait is "Ravager".
+    - +20% in Mountain Terrain.
+    - +20% for Light and Heavy Infantry.
+- Made The Coven the satanist society of the Titan Cult.
 
 Egyptian:
-  - The Egyptian/Atenic Warrior Lodge, "", has been added.
-    - Special leader trait is "".
-      - effects
+
+- The Egyptian/Atenic Warrior Lodge, "The Champions of the Sun", has been added.
+  - Special leader trait is "Sandstrider".
+    - +20% in Desert and Plains Terrains.
+    - +10% Speed
+    - +10% Retreat
+    - +20% Siege
 
 Atenic:
-  - Removed Atenic from Lets. Get. PAGAN!, as it's now a heresy of a reformed religion, which makes things buggy.
+
+- Removed Atenic from Lets. Get. PAGAN!, as it's now a heresy of a reformed religion, which makes things buggy.
 
 
 2018-12-18 v0.42.4 "Tasgetius"
 -------------------------
+
 > Tasgetius was a king of the Gaulish Carnutes tribe (carnutes meaning "the horned ones", possibly a connection to Cernunnos). Tasgetius was appointed to kingship by Julius Caeser himself. The puppet king was assassinated in three years.
 
 Celtic:

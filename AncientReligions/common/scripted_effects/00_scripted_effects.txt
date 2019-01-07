@@ -17548,7 +17548,7 @@ root_secret_religion_provinces_convert_effect = {
 					}
 				}
 			} 
-			secret_religious_society_egyptian_reformed_pagan = { 
+			secret_religious_society_egyptian_pagan_reformed = { 
 				PREV = {
 					any_demesne_province = {
 						limit = {
@@ -20951,22 +20951,25 @@ tiered_high_piety_negative_effect = {
 #Used for gluttonous and hedonistic actions.
 gain_weight_small_effect = {
 	custom_tooltip = {
+		text = acr_weight_gain_small
 		hidden_tooltip = {
-		change_variable = { which = physique_variable value = 5 }
+			change_variable = { which = physique_variable value = 5 }
 		}
 	}
 } 
 gain_weight_medium_effect = {
 	custom_tooltip = {
+		text = acr_weight_gain_medium
 		hidden_tooltip = {
-		change_variable = { which = physique_variable value = 10 }
+			change_variable = { which = physique_variable value = 10 }
 		}
 	}
 } 
 gain_weight_large_effect = {
 	custom_tooltip = {
+		text = acr_weight_gain_large
 		hidden_tooltip = {
-		change_variable = { which = physique_variable value = 15 }
+			change_variable = { which = physique_variable value = 15 }
 		}
 	}
 }
@@ -20974,6 +20977,7 @@ gain_weight_large_effect = {
 #Used for training and balanced lifestyle.
 balance_weight_small_effect =  {
 	custom_tooltip = {
+		text = acr_weight_balance_small
 		hidden_tooltip = {
 			#If variable is above 1, reduce it. If it's below 1 increase it.
 			if = { 
@@ -20993,6 +20997,7 @@ balance_weight_small_effect =  {
 } 
 balance_weight_medium_effect = {
 	custom_tooltip = {
+		text = acr_weight_balance_medium
 		hidden_tooltip = {
 			#If variable is above 1, reduce it. If it's below 1 increase it.
 			if = { 
@@ -21013,6 +21018,7 @@ balance_weight_medium_effect = {
 
 balance_weight_large_effect = { #Should be used rarely.
 	custom_tooltip = {
+		text = acr_weight_balance_large
 		hidden_tooltip = {
 			#If variable is above 1, reduce it. If it's below 1 increase it.
 			if = { 

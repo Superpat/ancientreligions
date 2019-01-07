@@ -3,7 +3,7 @@ secret_religious_society_celtic_pagan_desc;The followers of the Celtic faith hav
 secret_religious_society_celtic_pagan_reformed;Danu's Faithfull;;;;;;;;x
 secret_religious_society_celtic_pagan_reformed_desc;The Druidic faith may be young, but it's followers are no less devout than any other. Even when they must publicly profess faith in false gods, the children of Danu plan and prepare for the day when they might worship the gods in the light of day. They know that none can long stand against the might of Lug of the Long Spear, and those that opress them will get what they deserve.;;;;;;;;x
 secret_religious_society_britannic_pagan;the Faithful Children;;;;;;;;x
-secret_religious_society_britannic_pagan_desc;The followers of [GOD_BRITANNIA] have always struggled against those who would deny her truth. As always, they persevere, even if they must submit to men. Though they utter empty prayers to foreign gods, they secretly meet in private chambers and secluded groves to offer devotion and sacrifice to Britannia, the Mother and source of life. They keep their faith knowing that some day [GOD_SC_ANDRASTE] will bring victory against those who persecuted the faithful.;;;;;;;;x
+secret_religious_society_britannic_pagan_desc;The followers of Britannia have always struggled against those who would deny her truth. As always, they persevere, even if they must submit to men. Though they utter empty prayers to foreign gods, they secretly meet in private chambers and secluded groves to offer devotion and sacrifice to Britannia, the Mother and source of life. They keep their faith knowing that some day Andraste will bring victory against those who persecuted the faithful.;;;;;;;;x
 secret_religious_society_promethean_pagan;the Enlightened;;;;;;;;x
 secret_religious_society_promethean_pagan_desc;The Prometheans know that they must stand against the darkness of ignorance. They must preserve the light of enlightenment and Prometheus' wisdom. Theirs is a battle for the very future of the human race. Such a divine mission cannot be taken lightly, so they play the part of the devoted in the company of the ignorant and secretly prepare for the day that they can bring them into the light. In the end, it is light that drives away the darkness.;;;;;;;;x
 secret_religious_society_titan_pagan;the Chained;;;;;;;;x
@@ -199,6 +199,97 @@ mysteries_dionysus_rank_4_male;Archiboukolos;;;;;;;;;;;;;x
 mysteries_dionysus_rank_4_female;Archiboukolos;;;;;;;;;;;;;x
 ############### Tristeria ;;;;;;;;;;;;;x
 not_already_holding_tristeria;Is not already holding Tristeria;;;;;;;;;;;;;x
+############### Apostles of Shezmu ;;;;;;;;;;;;;x
+shezmu_cult;Apostles of Shezmu;;;;;;;;;;;;;x
+shezmu_cult_desc;A group of ascetics and shadowy warriors dedicated to upholding Ma'at.;;;;;;;;;;;;;x
+currency_name_shezmu_cult;Fervor;;;;;;;;;;;;;x
+shezmu_cult_leader_desc;Annointed of Shezmu;;;;;;;;;;;;;x
+shezmu_cult_rank_1_male;Raw;;;;;;;;;;;;;x
+shezmu_cult_rank_1_female;Raw;;;;;;;;;;;;;x
+shezmu_cult_rank_2_male;Distilled;;;;;;;;;;;;;x
+shezmu_cult_rank_2_female;Distilled;;;;;;;;;;;;;x
+shezmu_cult_rank_3_male;Blooded;;;;;;;;;;;;;x
+shezmu_cult_rank_3_female;Blooded;;;;;;;;;;;;;x
+shezmu_cult_rank_4_male;Annointed;;;;;;;;;;;;;x
+shezmu_cult_rank_4_female;Annointed;;;;;;;;;;;;;x
+############### Skeptics ;;;;;;;;;;;;;x
+monastic_order_skeptics;Skeptic Intelligentsia;;;;;;;;;;;;;x
+monastic_order_skeptics_desc;Skepticism teaches that knowledge of the truth is impossible, and so one should suspend belief. This point of view can be helpful in cutting through deception, but rarely results in friendships with non-Skeptics.;;;;;;;;;;;;;x
+monastic_order_skeptics_leader_desc;Megas Philosophos;;;;;;;;;;;;;x
+currency_name_monastic_order_skeptics;Apatheia;Apatheia;Apatheia;;Apatheia;;;;;;;;x
+monastic_order_skeptics_rank_1_female;Student;Étudiante;Studentin;;Estudiante;;;;;;;;x
+monastic_order_skeptics_rank_2_female;Thinker;Penseuse;Denkerin;;Pensadora;;;;;;;;x
+monastic_order_skeptics_rank_3_female;Philosopher;Philosophe;Philosophin;;Filósofa;;;;;;;;x
+monastic_order_skeptics_rank_4_female;Logoarch;Logoarche;Logoarchin;;Logoarca;;;;;;;;x
+monastic_order_skeptics_rank_1_male;Student;Étudiant;Student;;Estudiante;;;;;;;;x
+monastic_order_skeptics_rank_2_male;Thinker;Penseur;Denker;;Pensador;;;;;;;;x
+monastic_order_skeptics_rank_3_male;Philosopher;Philosophe;Philosoph;;Filósofo;;;;;;;;x
+monastic_order_skeptics_rank_4_male;Logoarch;Logoarche;Logoarch;;Logoarca;;;;;;;;x
+############### Epicureans ;;;;;;;;;;;;;x
+monastic_order_epicureans;Epicurean Intelligentsia;;;;;;;;;;;;;x
+monastic_order_epicureans_desc;The Order of Epicureans;;;;;;;;;;;;;x
+monastic_order_epicureans_leader_desc;Megas Philosophos;;;;;;;;;;;;;x
+currency_name_monastic_order_epicureans;Apatheia;Apatheia;Apatheia;;Apatheia;;;;;;;;x
+monastic_order_epicureans_rank_1_female;Student;Étudiante;Studentin;;Estudiante;;;;;;;;x
+monastic_order_epicureans_rank_2_female;Thinker;Penseuse;Denkerin;;Pensadora;;;;;;;;x
+monastic_order_epicureans_rank_3_female;Philosopher;Philosophe;Philosophin;;Filósofa;;;;;;;;x
+monastic_order_epicureans_rank_4_female;Logoarch;Logoarche;Logoarchin;;Logoarca;;;;;;;;x
+monastic_order_epicureans_rank_1_male;Student;Étudiant;Student;;Estudiante;;;;;;;;x
+monastic_order_epicureans_rank_2_male;Thinker;Penseur;Denker;;Pensador;;;;;;;;x
+monastic_order_epicureans_rank_3_male;Philosopher;Philosophe;Philosoph;;Filósofo;;;;;;;;x
+monastic_order_epicureans_rank_4_male;Logoarch;Logoarche;Logoarch;;Logoarca;;;;;;;;x
+############### Celtic Warrior Lodge ;;;;;;;;;;;;;x
+warrior_lodge_celtic;The Band of Camulos;;;;;;;;;;;;;x
+warrior_lodge_celtic_desc;Celtic Warrior Band;;;;;;;;;;;;;x
+warrior_lodge_celtic_leader_desc;War Chief;;;;;;;;;;;;;x
+currency_name_warrior_lodge_celtic;Renown;Renommée;Bekanntheit;;Renombre;;;;;;;;;x
+warrior_lodge_celtic_rank_1_female;Fledgling;Novice;Anfängerin;;Novata;;;;;;;;;x
+warrior_lodge_celtic_rank_2_female;Warrior;Guerrière;Kriegerin;;Guerrera;;;;;;;;;x
+warrior_lodge_celtic_rank_3_female;Veteran;Vétérane;Veteranin;;Veterana;;;;;;;;;x
+warrior_lodge_celtic_rank_4_female;Heroine;Héroïne;Heldin;;Heroína;;;;;;;;;x
+warrior_lodge_celtic_rank_1_male;Fledgling;Novice;Anfänger;;Novato;;;;;;;;;x
+warrior_lodge_celtic_rank_2_male;Warrior;Guerrier;Krieger;;Guerrero;;;;;;;;;x
+warrior_lodge_celtic_rank_3_male;Veteran;Vétéran;Veteran;;Veterano;;;;;;;;;x
+warrior_lodge_celtic_rank_4_male;Hero;Héros;Held;;Héroe;;;;;;;;;x
+############### Britannic Warrior Lodge ;;;;;;;;;;;;;x
+warrior_lodge_britannic;The Champions of Andraste;;;;;;;;;;;;;x
+warrior_lodge_britannic_desc;Britannic Warrior Band;;;;;;;;;;;;;x
+warrior_lodge_britannic_leader_desc;Champion;;;;;;;;;;;;;x
+currency_name_warrior_lodge_britannic;Renown;Renommée;Bekanntheit;;Renombre;;;;;;;;;x
+warrior_lodge_britannic_rank_1_female;Fledgling;Novice;Anfängerin;;Novata;;;;;;;;;x
+warrior_lodge_britannic_rank_2_female;Warrior;Guerrière;Kriegerin;;Guerrera;;;;;;;;;x
+warrior_lodge_britannic_rank_3_female;Veteran;Vétérane;Veteranin;;Veterana;;;;;;;;;x
+warrior_lodge_britannic_rank_4_female;Heroine;Héroïne;Heldin;;Heroína;;;;;;;;;x
+warrior_lodge_britannic_rank_1_male;Fledgling;Novice;Anfänger;;Novato;;;;;;;;;x
+warrior_lodge_britannic_rank_2_male;Warrior;Guerrier;Krieger;;Guerrero;;;;;;;;;x
+warrior_lodge_britannic_rank_3_male;Veteran;Vétéran;Veteran;;Veterano;;;;;;;;;x
+warrior_lodge_britannic_rank_4_male;Hero;Héros;Held;;Héroe;;;;;;;;;x
+############### Titan Warrior Lodge ;;;;;;;;;;;;;x
+warrior_lodge_titan;The Ravagers of Perses;;;;;;;;;;;;;x
+warrior_lodge_titan_desc;Titan Warrior Band;;;;;;;;;;;;;x
+warrior_lodge_titan_leader_desc;War Chief;;;;;;;;;;;;;x
+currency_name_warrior_lodge_titan;Renown;Renommée;Bekanntheit;;Renombre;;;;;;;;;x
+warrior_lodge_titan_rank_1_female;Fledgling;Novice;Anfängerin;;Novata;;;;;;;;;x
+warrior_lodge_titan_rank_2_female;Warrior;Guerrière;Kriegerin;;Guerrera;;;;;;;;;x
+warrior_lodge_titan_rank_3_female;Veteran;Vétérane;Veteranin;;Veterana;;;;;;;;;x
+warrior_lodge_titan_rank_4_female;Heroine;Héroïne;Heldin;;Heroína;;;;;;;;;x
+warrior_lodge_titan_rank_1_male;Fledgling;Novice;Anfänger;;Novato;;;;;;;;;x
+warrior_lodge_titan_rank_2_male;Warrior;Guerrier;Krieger;;Guerrero;;;;;;;;;x
+warrior_lodge_titan_rank_3_male;Veteran;Vétéran;Veteran;;Veterano;;;;;;;;;x
+warrior_lodge_titan_rank_4_male;Hero;Héros;Held;;Héroe;;;;;;;;;x
+############### Egyptian Warrior Lodge ;;;;;;;;;;;;;x
+warrior_lodge_egyptian;The Champions of the Sun;;;;;;;;;;;;;x
+warrior_lodge_egyptian_desc;Egyptian Warrior Band;;;;;;;;;;;;;x
+warrior_lodge_egyptian_leader_desc;Champion;;;;;;;;;;;;;x
+currency_name_warrior_lodge_egyptian;Renown;Renommée;Bekanntheit;;Renombre;;;;;;;;;x
+warrior_lodge_egyptian_rank_1_female;Fledgling;Novice;Anfängerin;;Novata;;;;;;;;;x
+warrior_lodge_egyptian_rank_2_female;Warrior;Guerrière;Kriegerin;;Guerrera;;;;;;;;;x
+warrior_lodge_egyptian_rank_3_female;Veteran;Vétérane;Veteranin;;Veterana;;;;;;;;;x
+warrior_lodge_egyptian_rank_4_female;Heroine;Héroïne;Heldin;;Heroína;;;;;;;;;x
+warrior_lodge_egyptian_rank_1_male;Fledgling;Novice;Anfänger;;Novato;;;;;;;;;x
+warrior_lodge_egyptian_rank_2_male;Warrior;Guerrier;Krieger;;Guerrero;;;;;;;;;x
+warrior_lodge_egyptian_rank_3_male;Veteran;Vétéran;Veteran;;Veterano;;;;;;;;;x
+warrior_lodge_egyptian_rank_4_male;Hero;Héros;Held;;Héroe;;;;;;;;;x
 ############### Strings ;;;;;;;;;;;;;x
 String_ker;Ker;;;;;;;;;;;;;x
 String_keres;Keres;;;;;;;;;;;;;x

@@ -293,9 +293,6 @@ succession_laws = {
 				voting_rules = elective_gavelkind
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}			
 	}
 	succ_eldership = {
 		dynasty_opinion = 5
@@ -410,9 +407,6 @@ succession_laws = {
 				voting_rules = eldership_rules
 			}
 			elective_voting_rules = eldership_rules
-		}
-		revoke_allowed = {
-			always = no
 		}			
 	}
 	
@@ -844,9 +838,6 @@ succession_laws = {
 				base_type = feudal_elective
 				voting_rules = feudal_elective
 			}
-		}
-		revoke_allowed = {
-			always = no
 		}			
 	}
 	succ_hre_elective = {
@@ -1005,9 +996,6 @@ succession_laws = {
 				base_type = feudal_elective
 				voting_rules = byzantine_elective
 			}
-		}
-		revoke_allowed = {
-			always = no
 		}			
 	}
 
@@ -1132,9 +1120,6 @@ succession_laws = {
 				base_type = tanistry
 				voting_rules = tanistry
 			}
-		}
-		revoke_allowed = {
-			always = no
 		}			
 	}
 	
@@ -1646,9 +1631,6 @@ gender_laws = {
 		effect = {
 			gender_succ = cognatic
 			set_allows_matrilineal_marriage = yes
-		}
-		revoke_allowed = {
-			always = no
 		}			
 		default = yes
 		default_selection = {
@@ -1667,9 +1649,6 @@ gender_laws = {
 		}
 		effect = {
 			gender_succ = agnatic
-		}
-		revoke_allowed = {
-			always = no
 		}			
 		default = yes
 		default_selection = {
@@ -1801,9 +1780,6 @@ gender_laws = {
 		effect = {
 			gender_succ = true_cognatic
 			set_allows_matrilineal_marriage = yes
-		}
-		revoke_allowed = {
-			always = no
 		}	
 		default_selection = {
 			factor = 1
@@ -1842,9 +1818,6 @@ gender_laws = {
 		effect = {
 			gender_succ = enatic
 		}
-		revoke_allowed = {
-			always = no
-		}
 		default_selection = {
 			factor = 1
 			
@@ -1871,9 +1844,6 @@ gender_laws = {
 		}
 		effect = {
 			gender_succ = enatic_cognatic
-		}
-		revoke_allowed = {
-			always = no
 		}	
 		default_selection = {
 			factor = 1

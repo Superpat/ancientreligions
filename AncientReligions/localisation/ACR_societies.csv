@@ -187,7 +187,7 @@ the_sand_snakes_recruit;Recruit to The Fangs of Apep;;;;;;;;;;;;;x
 the_sand_snakes_recruit_desc;Attempt to find out whether §Y[Root.GetTitledFirstName]§! is open to the power of the occult. If so, you may invite [Root.GetHerHim] to become a member of The Fangs of Apep.;;;;;;;;;;;;;x
 ############### Mysteries of Dionysus ;;;;;;;;;;;;;x
 mysteries_dionysus;Mysteries of Dionysus;;;;;;;;;;;;;x
-mysteries_dionysus_desc;Since the dawn of civilization there have been those who have rejected it's gifts. Those who count themselves as initiates of the Dionysian Mysteries commune with their god in secret rituals of revelry and intoxication. Thoroughly intimate affairs, these secret gatherings forge strong bonds between the participants, bonds that frequently persist beyond the secrecy of the rituals. But that's not all, Twice-born Dionysus, they say, knows the secrets of life and death. It is these secrets the initiates hope to earn from their god.;;;;;;;;;;;;;x
+mysteries_dionysus_desc;Since the dawn of civilization there have been those who have rejected it's gifts. Those who count themselves as initiates of the Dionysian Mysteries commune with their god in secret rituals of revelry and intoxication. Intimate affairs, these secret gatherings forge strong bonds between the participants, ones that persist beyond the secret rituals.;;;;;;;;;;;;;x
 currency_name_mysteries_dionysus;Fervor;;;;;;;;;;;;;x
 mysteries_dionysus_leader_desc;[GetSocietyLeaderDesc];;;;;;;;;;;;;x
 mysteries_dionysus_rank_1_male;Bacchus;;;;;;;;;;;;;x
@@ -202,7 +202,7 @@ mysteries_dionysus_rank_4_female;Archiboukolos;;;;;;;;;;;;;x
 not_already_holding_tristeria;Is not already holding Tristeria;;;;;;;;;;;;;x
 ############### Apostles of Shezmu ;;;;;;;;;;;;;x
 shezmu_cult;Apostles of Shezmu;;;;;;;;;;;;;x
-shezmu_cult_desc;A group of ascetics and shadowy warriors dedicated to upholding Ma'at.;;;;;;;;;;;;;x
+shezmu_cult_desc;Ascetics and shadowy warriors dedicated to upholding Ma'at, the Apostles of Shezmu are vigilantes that look to the Lord of Blood and Slaughterer of Souls for the secrets to spiritual purity. To this end they ritually murder those they see as Isfet, unjust, the opposite of Ma'at. They practice the ritual creation of wines and perfumed oils as acts of purification and emulation of Shezmu.;;;;;;;;;;;;;x
 currency_name_shezmu_cult;Fervor;;;;;;;;;;;;;x
 shezmu_cult_leader_desc;[GetSocietyLeaderDesc];;;;;;;;;;;;;x
 shezmu_cult_rank_1_male;Raw;;;;;;;;;;;;;x
@@ -245,7 +245,7 @@ warrior_lodge_celtic_desc;[GetCelticWarriorLodgeDesc];;;;;;;;;;;;;x
 warrior_lodge_celtic_real;The Band of Camulos;;;;;;;;;;;;;x
 warrior_lodge_celtic_desc_real;The bold warriors of the Band of Camulos, a Celtic god of war and thunder, hold eachother to a high standard of honor and provide mentorship if a member seems to stray. They are known to regard wild boars highly and their families will use totems of these fierce creatures to bestow strength and ferocity to their members.;;;;;;;;;;;;;x
 warrior_lodge_celtic_random;The Company of the Boar;;;;;;;;;;;;;x
-warrior_lodge_celtic_desc_random;The bold warriors of the Company of the Boar, a [celtic_pagan.GetName] god of war and thunder, hold eachother to a high standard of honor and provide mentorship if a member seems to stray. They are known to regard wild boars highly and their families will use totems of these fierce creatures to bestow strength and ferocity to their members.;;;;;;;;;;;;;x
+warrior_lodge_celtic_desc_random;The bold warriors of the Company of the Boar hold eachother to a high standard of honor and provide mentorship if a member seems to stray. They are known to regard wild boars highly and their families will use totems of these fierce creatures to bestow strength and ferocity to their members.;;;;;;;;;;;;;x
 warrior_lodge_celtic_leader_desc;[GetSocietyLeaderDesc];;;;;;;;;;;;;x
 currency_name_warrior_lodge_celtic;Renown;Renommée;Bekanntheit;;Renombre;;;;;;;;;x
 warrior_lodge_celtic_rank_1_female;Fledgling;Novice;Anfängerin;;Novata;;;;;;;;;x
@@ -256,7 +256,7 @@ warrior_lodge_celtic_rank_1_male;Fledgling;Novice;Anfänger;;Novato;;;;;;;;;x
 warrior_lodge_celtic_rank_2_male;Warrior;Guerrier;Krieger;;Guerrero;;;;;;;;;x
 warrior_lodge_celtic_rank_3_male;Veteran;Vétéran;Veteran;;Veterano;;;;;;;;;x
 warrior_lodge_celtic_rank_4_male;Hero;Héros;Held;;Héroe;;;;;;;;;x
-string_celtic_training;adjusting the fit of [fellow_member.GetHerHis] pack, pointing out that our hike has gone on longer than planned. The [fellow_member.GetManWoman] smirks before remarking: "you're a natural climber, my friend.";;;;;;;;;;;;;x
+string_celtic_training;adjusting the fit of [fellow_member.GetHerHis] pack, pointing out that our hike has gone on longer than planned. The [fellow_member.GetManWoman] smirks before remarking: "you're a natural in these hills, my friend.";;;;;;;;;;;;;x
 string_celtic_symbol;the boar;;;;;;;;;;;;;x
 string_celtic_symbol_short;boar;;;;;;;;;;;;;x
 string_celtic_symbol_short_cap;Boar;;;;;;;;;;;;;x
@@ -266,9 +266,9 @@ string_WL_celtic_religion;§Y[celtic_pagan_reformed.GetName]§! religion;;;;;;;;;;
 warrior_lodge_britannic;[GetBritannicWarriorLodge];;;;;;;;;;;;;x
 warrior_lodge_britannic_desc;[GetBritannicWarriorLodgeDesc];;;;;;;;;;;;;x
 warrior_lodge_britannic_real;The Champions of Andraste;;;;;;;;;;;;;x
-warrior_lodge_britannic_desc_real;The proud Champions of Andraste, the Britannic sanctaidd of victory, strive to uphold an ideal of valor and guide their fellows from dishonorable acts. They favor mounted combat and venerate Epona almost as much as Andraste. The families of the Champions will sometimes hang symbols of horses to grant their heroes luck on the battlefield and guide the hooves of their mounts.;;;;;;;;;;;;;x
+warrior_lodge_britannic_desc_real;The proud Champions of Andraste, the Britannic sanctaidd of victory, strive to uphold an ideal of valor and guide their fellows from dishonorable acts. They favor mounted combat and venerate Epona almost as much as Andraste. The families of the Champions will sometimes hang Epona's symbol to grant their heroes luck on the battlefield and guide the hooves of their mounts.;;;;;;;;;;;;;x
 warrior_lodge_britannic_random;The Champions of the Horse;;;;;;;;;;;;;x
-warrior_lodge_britannic_desc_random;The proud Champions of the Horse, strive to uphold an ideal of valor and guide their fellows from dishonorable acts. They favor mounted combat and venerate the horse god almost as much as [britannic_pagan.GetHighGodName]. The families of the Champions will sometimes hang symbols of horses to grant their heroes luck on the battlefield and guide the hooves of their mounts.;;;;;;;;;;;;;x
+warrior_lodge_britannic_desc_random;The proud Champions of the Horse strive to uphold an ideal of valor and guide their fellows from dishonorable acts. They favor mounted combat and venerate the horse god almost as much as [britannic_pagan.GetHighGodName]. The families of the Champions will sometimes hang symbols of horses to grant their heroes luck on the battlefield and guide the hooves of their mounts.;;;;;;;;;;;;;x
 warrior_lodge_britannic_leader_desc;[GetSocietyLeaderDesc];;;;;;;;;;;;;x
 currency_name_warrior_lodge_britannic;Renown;Renommée;Bekanntheit;;Renombre;;;;;;;;;x
 warrior_lodge_britannic_rank_1_female;Fledgling;Novice;Anfängerin;;Novata;;;;;;;;;x
@@ -279,7 +279,7 @@ warrior_lodge_britannic_rank_1_male;Fledgling;Novice;Anfänger;;Novato;;;;;;;;;x
 warrior_lodge_britannic_rank_2_male;Warrior;Guerrier;Krieger;;Guerrero;;;;;;;;;x
 warrior_lodge_britannic_rank_3_male;Veteran;Vétéran;Veteran;;Veterano;;;;;;;;;x
 warrior_lodge_britannic_rank_4_male;Hero;Héros;Held;;Héroe;;;;;;;;;x
-string_britannic_training;as I round on [fellow_member.GetHerHim]. [fellow_member.GetSheHe] pulls a waterskin from [fellow_member.GetHerHis] saddle and remarks, "you're rather good at this.";;;;;;;;;;;;;x
+string_britannic_training;as I round on [fellow_member.GetHerHim]. [fellow_member.GetFirstName] pulls a waterskin from [fellow_member.GetHerHis] saddle and remarks, "you're rather good at this.";;;;;;;;;;;;;x
 string_britannic_symbol;the horse;;;;;;;;;;;;;x
 string_britannic_symbol_short;horse;;;;;;;;;;;;;x
 string_britannic_symbol_short_cap;Horse;;;;;;;;;;;;;x
@@ -302,7 +302,7 @@ warrior_lodge_titan_rank_1_male;Fledgling;Novice;Anfänger;;Novato;;;;;;;;;x
 warrior_lodge_titan_rank_2_male;Warrior;Guerrier;Krieger;;Guerrero;;;;;;;;;x
 warrior_lodge_titan_rank_3_male;Veteran;Vétéran;Veteran;;Veterano;;;;;;;;;x
 warrior_lodge_titan_rank_4_male;Hero;Héros;Held;;Héroe;;;;;;;;;x
-string_titan_training;adjusting the fit of [fellow_member.GetHerHis] pack, pointing out that our hike has gone on longer than planned. The [fellow_member.GetManWoman] smirks before remarking: "you're a natural climber, my friend.";;;;;;;;;;;;;x
+string_titan_training;adjusting the fit of [fellow_member.GetHerHis] pack, pointing out that our climb has gone on longer than planned. The [fellow_member.GetManWoman] smirks before remarking: "you're a natural climber, my friend.";;;;;;;;;;;;;x
 string_titan_symbol;the titans;;;;;;;;;;;;;x
 string_titan_symbol_short;titan;;;;;;;;;;;;;x
 string_titan_symbol_short_cap;Titan;;;;;;;;;;;;;x
@@ -314,7 +314,7 @@ warrior_lodge_egyptian_desc;[GetEgyptianWarriorLodgeDesc];;;;;;;;;;;;;x
 warrior_lodge_egyptian_real;The Champions of the Sun;;;;;;;;;;;;;x
 warrior_lodge_egyptian_desc_real;The seasoned Champions of the Sun seek to uphold the Egyptian ideal of truth and justice, embodied in the word ma'at. Looking to the resourceful jackal for guidance and inspiration, the champions work together in packs to master desert terrain and harden their minds and bodies.;;;;;;;;;;;;;x
 warrior_lodge_egyptian_random;The Daymen;;;;;;;;;;;;;x
-warrior_lodge_egyptian_desc_random;The Daymen seek to master the [egyptian_pagan.GetName] ideal of martial discipline and companionship. Looking to the resourceful jackal for guidance and inspiration, the daymen work together in packs to master desert terrain and harden their minds and bodies.;;;;;;;;;;;;;x
+warrior_lodge_egyptian_desc_random;The Daymen seek to master the [egyptian_pagan.GetName] ideal of martial skill and companionship. Looking to the resourceful jackal for guidance and inspiration, the daymen work together in packs to master desert terrain and harden their minds and bodies.;;;;;;;;;;;;;x
 warrior_lodge_egyptian_leader_desc;[GetSocietyLeaderDesc];;;;;;;;;;;;;x
 currency_name_warrior_lodge_egyptian;Renown;Renommée;Bekanntheit;;Renombre;;;;;;;;;x
 warrior_lodge_egyptian_rank_1_female;Fledgling;Novice;Anfängerin;;Novata;;;;;;;;;x
@@ -325,7 +325,7 @@ warrior_lodge_egyptian_rank_1_male;Fledgling;Novice;Anfänger;;Novato;;;;;;;;;x
 warrior_lodge_egyptian_rank_2_male;Warrior;Guerrier;Krieger;;Guerrero;;;;;;;;;x
 warrior_lodge_egyptian_rank_3_male;Veteran;Vétéran;Veteran;;Veterano;;;;;;;;;x
 warrior_lodge_egyptian_rank_4_male;Hero;Héros;Held;;Héroe;;;;;;;;;x
-string_egyptian_training;and crouched in the shadow of an outcroping. As [fellow_member.GetSheHe] poured sand from [fellow_member.GetHerHis] boot [fellow_member.GetFirstName] remarked, "you're quite good at this.";;;;;;;;;;;;;x
+string_egyptian_training;crouching in the shadow of an outcroping. As [fellow_member.GetSheHe] poured sand from [fellow_member.GetHerHis] boot [fellow_member.GetFirstName] remarked, "You're quite good at this.";;;;;;;;;;;;;x
 string_egyptian_symbol;the jackal;;;;;;;;;;;;;x
 string_egyptian_symbol_short;jackal;;;;;;;;;;;;;x
 string_egyptian_symbol_short_cap;Jackal;;;;;;;;;;;;;x

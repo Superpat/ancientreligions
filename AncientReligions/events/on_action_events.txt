@@ -5359,7 +5359,7 @@ narrative_event = {
 			d_sacred_band = {
 				religion = hellenic_pagan_reformed
 			}
-			d_hellenic_legion = {
+			d_legio_hellenica = {
 				religion = hellenic_pagan_reformed
 			}
 		}

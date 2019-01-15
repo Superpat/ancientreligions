@@ -10,6 +10,7 @@ Fixed many, many, *many* bugs.
 Celtic:
 
 - Living Legend bloodline event has been fixed. Those of you with many duplicate bloodlines can keep them as compensation for your troubles.
+- Added new Torques as Celtic crown jewels. These will replace crowns (but take the neck slot), and Celts will get the swords Christians and Norse get.
 - The Celtic Warrior Lodge, "The Band of Camulos", has been added. Camulos is a Briton war and storm god.
   - Special leader trait is "Raider".
     - +50% Imprison Enemy Commander
@@ -19,7 +20,8 @@ Celtic:
 Britannic:
 
 - Missing localisation was added for events involving a vassalized Arch-Dryad and having free investiture after the Arch-Dryad has been created.
-- Fixes bug with Arch-Dryad giving artifacts to favored rulers.
+- Fixes bug with events where the Arch-Dryad gives artifacts to favored rulers.
+- Britannic characters will also use the new torques as crown jewels.
 - The Britannic Warrior Lodge, "The Champions of Andraste", has been added. Andraste is the Sanctaidd ("Archangel") of Victory.
   - Special leader trait is "Lancer".
     - +20% Plains and Farmland Terrains.
@@ -35,6 +37,11 @@ Promethean:
   - They're mostly copies of the Stoics, with small tweaks here and there.
   - Most anyone who has access to the Stoics will also have access to these societies.
   - The relevant neoplatonist traits have been factored into all three societies.
+- All three Neoplatonist societies favor Learning, but each also favors another attribute.
+  - The 0.5 x Learning bonus has been replaced with a 0.3 x Learning + 0.2 x the other attribute
+  - Stoics favor and grant Diplomacy.
+  - Skeptics favor and grant Intrigue.
+  - Epicureans favor and grant Stewardship.
 - Removed Promethean from Lets. Get. PAGAN!, as it's now a heresy of a reformed religion, which makes things buggy.
 - Restored The Coven as a satanist society for Prometheans.
 
@@ -59,9 +66,8 @@ Atenic:
 
 - Removed Atenic from Lets. Get. PAGAN!, as it's now a heresy of a reformed religion, which makes things buggy.
 
-
 2018-12-18 v0.42.4 "Tasgetius"
--------------------------
+============================
 
 > Tasgetius was a king of the Gaulish Carnutes tribe (carnutes meaning "the horned ones", possibly a connection to Cernunnos). Tasgetius was appointed to kingship by Julius Caeser himself. The puppet king was assassinated in three years.
 

@@ -203,7 +203,7 @@ character_event = {
                 modifier = {
                     factor = 0
                     AND = {
-                        relgion_openly_celtic_or_reformed_trigger = yes
+                        religion_openly_celtic_or_reformed_trigger = yes
                         has_artifact = silver_hand_of_nuada
                         has_artifact = skull_of_brigid
                     }
@@ -8664,6 +8664,13 @@ character_event = {
         	add_artifact = crown_of_crows_2
         	add_artifact = sword_of_heroes_2
         }
+		else_if = {
+			limit = {
+				religion_openly_in_celtic_subgroup_trigger = yes
+			}
+			add_artifact = jeweled_torque_2
+			add_artifact = sword_of_heroes_2
+		}
         else = {
         	add_artifact = heros_crown_2
         	add_artifact = axe_of_the_ancestors_2
@@ -8761,6 +8768,13 @@ character_event = {
         	add_artifact = crown_of_crows
         	add_artifact = sword_of_heroes
         }
+		else_if = {
+			limit = {
+				religion_openly_in_celtic_subgroup_trigger = yes
+			}
+			add_artifact = jeweled_torque
+			add_artifact = sword_of_heroes
+		}
         else = {
         	add_artifact = heros_crown
         	add_artifact = axe_of_the_ancestors
@@ -8858,6 +8872,13 @@ character_event = {
         	add_artifact = crown_of_the_sea
         	add_artifact = golden_sword
         }
+		else_if = {
+			limit = {
+				religion_openly_in_celtic_subgroup_trigger = yes
+			}
+			add_artifact = golden_torque
+			add_artifact = golden_sword
+		}
         else = {
         	add_artifact = amber_crown
         	add_artifact = obsidian_axe
@@ -8963,6 +8984,13 @@ character_event = {
         	add_artifact = iron_crown
         	add_artifact = engraved_sword
         }
+		else_if = {
+			limit = {
+				religion_openly_in_celtic_subgroup_trigger = yes
+			}
+			add_artifact = silver_torque
+			add_artifact = engraved_sword
+		}
         else = {
         	add_artifact = engraved_crown
         	add_artifact = ceremonial_axe
@@ -11143,7 +11171,12 @@ character_event = {
 		        	new_artifact = { set_artifact_flag = stolen_by_smith }
 		        	add_artifact = sword_of_heroes
 		        	new_artifact = { set_artifact_flag = stolen_by_smith }
-		        }
+		        } else_if = {
+					add_artifact = jeweled_torque
+					new_artifact = { set_artifact_flag = stolen_by_smith }
+					add_artifact = sword_of_heroes
+					new_artifact = { set_artifact_flag = stolen_by_smith }
+				}
 		        else = {
 		        	add_artifact = heros_crown
 		        	new_artifact = { set_artifact_flag = stolen_by_smith }
@@ -11227,6 +11260,17 @@ character_event = {
 		        	add_artifact = golden_sword
 		        	new_artifact = { set_artifact_flag = stolen_by_smith }
 		        }
+				else_if = {
+					limit = {
+						FROM = {
+							religion_openly_in_celtic_subgroup_trigger = yes
+						}
+					}
+					add_artifact = golden_torque
+					new_artifact = { set_artifact_flag = stolen_by_smith }
+					add_artifact = golden_sword
+					new_artifact = { set_artifact_flag = stolen_by_smith }
+				}
 		        else = {
 		        	add_artifact = amber_crown
 		        	new_artifact = { set_artifact_flag = stolen_by_smith }
@@ -11310,6 +11354,17 @@ character_event = {
 		        	add_artifact = engraved_sword
 		        	new_artifact = { set_artifact_flag = stolen_by_smith }
 		        }
+				else_if = {
+					limit = {
+						FROM = {
+							religion_openly_in_celtic_subgroup_trigger = yes
+						}
+						add_artifact = silver_torque
+						new_artifact = { set_artifact_flag = stolen_by_smith }
+						add_artifact = engraved_sword
+						new_artifact = { set_artifact_flag = stolen_by_smith }
+					}
+				}
 		        else = {
 		        	add_artifact = engraved_crown
 		        	new_artifact = { set_artifact_flag = stolen_by_smith }

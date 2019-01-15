@@ -2495,8 +2495,12 @@ monastic_order_skeptics = {
     	
     	per_attribute = {
     		name = learning
-    		value = 0.5
+    		value = 0.3
     	}
+		per_attribute = {
+			name = intrigue
+			value = 0.2
+		}
 		has_trait = {
 			trait = skeptic
 			value = 5
@@ -2818,7 +2822,7 @@ monastic_order_epicureans = {
 		startup_limit = 4
 		modifier = {
 			monthly_character_piety = 0.2
-			diplomacy = 1
+			stewardship = 1
 			learning = 1
 			build_cost_city_modifier = -0.25
 			fertility = -0.15
@@ -2835,7 +2839,7 @@ monastic_order_epicureans = {
 		startup_limit = 2
 		modifier = { 
 			monthly_character_piety = 0.5
-			diplomacy = 1
+			stewardship = 1
 			learning = 2
 			build_cost_city_modifier = -0.5
 			fertility = -0.15
@@ -2850,7 +2854,11 @@ monastic_order_epicureans = {
     	
     	per_attribute = {
     		name = learning
-    		value = 0.5
+    		value = 0.3
+    	}
+    	per_attribute = {
+    		name = stewardship
+    		value = 0.2
     	}
 		has_trait = {
 			trait = epicurean

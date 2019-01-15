@@ -189,15 +189,15 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_society_portrait_ring_shezmu_cult"
-		texturefile = "gfx\\interface\\societies\\portrait_ring_the_assassins.dds"
+		texturefile = "gfx\\interface\\societies\\portrait_ring_olympic_champions.dds"
 	}
 	spriteType = {
 		name = "GFX_society_portrait_ring_small_shezmu_cult"
-		texturefile = "gfx\\interface\\ACR\\shezmu\\portrait_ring_small_shezmu.dds"
+		texturefile = "gfx\\interface\\societies\\portrait_ring_small_olympic_champions.dds"
 	}
 	spriteType = {
 		name = "GFX_society_currency_shezmu_cult"
-		texturefile = "gfx\\interface\\societies\\society_currency_the_assassins.dds"
+		texturefile = "gfx\\interface\\ACR\\shezmu\\society_currency_shezmu_cult.dds"
 	}
 	spriteType = {
 		name = "GFX_shezmu_cult_ranks"

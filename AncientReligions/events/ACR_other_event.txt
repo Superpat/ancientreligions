@@ -586,6 +586,19 @@ character_event = {
 				religion = egyptian_pagan_reformed
 			}
 		}
-		
+		if = {
+			limit = {
+				has_global_flag = hellenic_reformation
+			}
+
+			any_mercenary_band = {
+				limit = {
+					holy_order = yes
+					holder_scope = { hellenic_pagan }
+				}
+
+				religion = hellenic_pagan_reformed
+			}
+		}
 	}
 }

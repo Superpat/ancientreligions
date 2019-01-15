@@ -453,7 +453,8 @@ character_event = {
 			d_saint_boudicca = {
 				grant_title = PREV
 			}
-			set_government_type = feudal_government
+			set_government_type = order_government
+			set_defacto_liege = this
 			create_character = {
 				random_traits = yes
 				dynasty = random
@@ -1198,8 +1199,8 @@ letter_event = {
 				}
 			}
 
+			usurp_title_plus_barony_if_unlanded_and_vassals = FROM
 			FROM = {
-				usurp_title_plus_barony_if_unlanded_and_vassals = PREV
 				opinion = { who = ROOT modifier = ancrel_pleased }
 			}
 		}
@@ -1227,7 +1228,7 @@ letter_event = {
 
 	option = { # out scripture her
 		name = britannic.32.c
-		custom_tooltip = { text = britanic.32.c.tt }
+		custom_tooltip = { text = britannic.32.c.tt }
 		tooltip_info = learning
 		set_character_flag = ancrel_scriptured_archdryad_@FROM
 		set_character_flag = acr_submit_to_arch_dryad
@@ -1299,8 +1300,8 @@ letter_event = {
 				}
 			}
 
+			usurp_title_plus_barony_if_unlanded_and_vassals = FROM
 			FROM = {
-				usurp_title_plus_barony_if_unlanded_and_vassals = PREV
 				opinion = { who = ROOT modifier = ancrel_pleased }
 			}
 		}
@@ -1358,7 +1359,7 @@ character_event = {
 					}
 				}
 				archdryad_non_interference_trigger = yes
-				reverse_opinion = { who = ROOT value = 80 }
+				reverse_opinion = { who = ROOT value = 60 }
 				has_character_flag = refused_independence_@ROOT
 			}
 		}
@@ -1403,6 +1404,7 @@ letter_event = {
 		}
 	}
 }
+
 # Arch-Dryad threatens your position
 character_event = {
 	id = britannic.37
@@ -1481,11 +1483,22 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		ROOT = {
+		FROM = {
 			most_popular_vassal = {
 				limit = {
-					ai_ambition = 30
-					ai_zeal = 30
+					OR = {
+						AND = {
+							ai_ambition = 30
+							ai_zeal = 30
+						}
+						AND = {
+							ai = no
+							OR = {
+								trait = ambitious
+								trait = zealous
+							}
+						}
+					}
 				}
 
 				FROM = {
@@ -2227,7 +2240,7 @@ letter_event = {
 						modifier = {
 							factor = 0
 							OR = {
-								religion_authority < 80
+								religion_authority < 0.8
 								reverse_opinion = {
 									who = FROM
 									value < 75
@@ -2248,7 +2261,7 @@ letter_event = {
 						modifier = {
 							factor = 0
 							OR = {
-								religion_authority < 60
+								religion_authority < 0.6
 								reverse_opinion = {
 									who = FROM
 									value < 50
@@ -2267,7 +2280,7 @@ letter_event = {
 						modifier = {
 							factor = 0
 							OR = {
-								religion_authority < 40
+								religion_authority < 0.4
 								AND = {
 									has_artifact = tusk_of_torc_triath
 								}
@@ -2281,7 +2294,7 @@ letter_event = {
 						modifier = {
 							factor = 0
 							OR = {
-								religion_authority < 25
+								religion_authority < 0.25
 								AND = {
 									has_artifact = torque_of_boudicca
 									has_artifact = old_carnyx

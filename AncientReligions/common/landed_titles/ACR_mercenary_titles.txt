@@ -42,10 +42,7 @@ d_gwydion = {
 	
 	# Hire Trigger
 	allow = {
-		OR = {
-			religion = celtic_pagan
-			religion = celtic_pagan_reformed
-		}
+		religion_openly_celtic_or_reformed_trigger = yes
 	}
 	
 	# Parent Religion 
@@ -302,7 +299,7 @@ d_sacred_band = {
 	holy_order = yes
 	
 	# Parent Religion 
-	religion = hellenic_pagan
+	religion = hellenic_pagan_reformed
 	
 	# Extra income due to donations, etc
 	monthly_income = 2 # (Must be an integer between 1 and 512)	

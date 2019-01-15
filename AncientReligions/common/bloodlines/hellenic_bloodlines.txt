@@ -1,6 +1,6 @@
 chosen_of_artemis_male = {
     inheritance = patrilineal
-    matrilinial_override = yes
+    matrilineal_override = yes
     allow_bastards = no
     flags = { divine_patron bloodline_heroes bloodline_female_marshal }
     picture = GFX_bloodlines_placeholder_symbol
@@ -16,8 +16,8 @@ chosen_of_artemis_male = {
 }
 
 chosen_of_artemis_female = {
-    inheritance = matrilinial
-    matrilinial_override = yes
+    inheritance = matrilineal
+    matrilineal_override = yes
     allow_bastards = no
     flags = { divine_patron bloodline_heroes bloodline_female_marshal }
     picture = GFX_bloodlines_placeholder_symbol

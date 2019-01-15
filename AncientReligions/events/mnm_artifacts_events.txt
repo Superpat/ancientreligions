@@ -203,7 +203,7 @@ character_event = {
                 modifier = {
                     factor = 0
                     AND = {
-                        relgion_openly_celtic_or_reformed_trigger = yes
+                        religion_openly_celtic_or_reformed_trigger = yes
                         has_artifact = silver_hand_of_nuada
                         has_artifact = skull_of_brigid
                     }
@@ -1763,7 +1763,7 @@ character_event = {
 
                 # Celtic Artifacts
 				10 = {
-					modifier = { factor = 0 religion_openly_celtic_or_reformed = no }
+					modifier = { factor = 0 religion_openly_celtic_or_reformed_trigger = no }
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
 					modifier = {
 						factor = 0
@@ -1799,7 +1799,7 @@ character_event = {
 					narrative_event = { id = celtic.2005 } #receive "Britannia's Shield" event
 				}
 				10 = {
-					modifier = { factor = 0 religion_openly_celtic_or_reformed = no }
+					modifier = { factor = 0 religion_openly_celtic_or_reformed_trigger = no }
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
 					modifier = {
 						factor = 0
@@ -1808,7 +1808,7 @@ character_event = {
 					narrative_event = { id = celtic.2000 } #receive "Skull of Brigid" event
 				}
 				10 = {
-					modifier = { factor = 0 religion_openly_celtic_or_reformed = no }
+					modifier = { factor = 0 religion_openly_celtic_or_reformed_trigger = no }
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
 					modifier = {
 						factor = 0
@@ -1817,7 +1817,7 @@ character_event = {
 					narrative_event = { id = celtic.2006 } #receive "Horn of Bran Galed" event
 				}
 				10 = {
-					modifier = { factor = 0 religion_openly_celtic_or_reformed = no }
+					modifier = { factor = 0 religion_openly_celtic_or_reformed_trigger = no }
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_medium } }
 					modifier = {
 						factor = 0
@@ -1826,7 +1826,7 @@ character_event = {
 					narrative_event = { id = celtic.2007 } #receive "Tusk of Torc Triath" event
 				}
 				10 = {
-					modifier = { factor = 0 religion_openly_celtic_or_reformed = no }
+					modifier = { factor = 0 religion_openly_celtic_or_reformed_trigger = no }
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_minor } }
 					modifier = {
 						factor = 0
@@ -1835,7 +1835,7 @@ character_event = {
 					narrative_event = { id = celtic.2008 } #receive "Boudicca's Torque" event
 				}
 				10 = {
-					modifier = { factor = 0 religion_openly_celtic_or_reformed = no }
+					modifier = { factor = 0 religion_openly_celtic_or_reformed_trigger = no }
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_minor } }
 					modifier = {
 						factor = 0
@@ -1844,7 +1844,7 @@ character_event = {
 					narrative_event = { id = celtic.2009 } #receive "Old Carnyx" event
 				}
 				10 = {
-					modifier = { factor = 0 religion_openly_celtic_or_reformed = no }
+					modifier = { factor = 0 religion_openly_celtic_or_reformed_trigger = no }
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_minor } }
 					modifier = {
 						factor = 0
@@ -1853,7 +1853,7 @@ character_event = {
 					narrative_event = { id = celtic.2010 } #receive "Horned Helm" event
 				}
 				10 = {
-					modifier = { factor = 0 religion_openly_celtic_or_reformed = no }
+					modifier = { factor = 0 religion_openly_celtic_or_reformed_trigger = no }
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_minor } }
 					modifier = {
 						factor = 0
@@ -1897,8 +1897,13 @@ character_event = {
 				10 = {
 					modifier = {
                         factor = 0
-                        religion_openly_in_hellenic_subgroup_trigger = no
-                        religon = promethean_pagan # prometheans don't like aethon
+						OR = {
+	                        religion = promethean_pagan # prometheans don't like aethon
+							NOR = {
+								religion_openly_hellenic_or_reformed_trigger = yes
+								religion = titan_pagan
+							}
+						}
                     }
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
 					modifier = {
@@ -8659,6 +8664,13 @@ character_event = {
         	add_artifact = crown_of_crows_2
         	add_artifact = sword_of_heroes_2
         }
+		else_if = {
+			limit = {
+				religion_openly_in_celtic_subgroup_trigger = yes
+			}
+			add_artifact = jeweled_torque_2
+			add_artifact = sword_of_heroes_2
+		}
         else = {
         	add_artifact = heros_crown_2
         	add_artifact = axe_of_the_ancestors_2
@@ -8756,6 +8768,13 @@ character_event = {
         	add_artifact = crown_of_crows
         	add_artifact = sword_of_heroes
         }
+		else_if = {
+			limit = {
+				religion_openly_in_celtic_subgroup_trigger = yes
+			}
+			add_artifact = jeweled_torque
+			add_artifact = sword_of_heroes
+		}
         else = {
         	add_artifact = heros_crown
         	add_artifact = axe_of_the_ancestors
@@ -8853,6 +8872,13 @@ character_event = {
         	add_artifact = crown_of_the_sea
         	add_artifact = golden_sword
         }
+		else_if = {
+			limit = {
+				religion_openly_in_celtic_subgroup_trigger = yes
+			}
+			add_artifact = golden_torque
+			add_artifact = golden_sword
+		}
         else = {
         	add_artifact = amber_crown
         	add_artifact = obsidian_axe
@@ -8958,6 +8984,13 @@ character_event = {
         	add_artifact = iron_crown
         	add_artifact = engraved_sword
         }
+		else_if = {
+			limit = {
+				religion_openly_in_celtic_subgroup_trigger = yes
+			}
+			add_artifact = silver_torque
+			add_artifact = engraved_sword
+		}
         else = {
         	add_artifact = engraved_crown
         	add_artifact = ceremonial_axe
@@ -11138,7 +11171,12 @@ character_event = {
 		        	new_artifact = { set_artifact_flag = stolen_by_smith }
 		        	add_artifact = sword_of_heroes
 		        	new_artifact = { set_artifact_flag = stolen_by_smith }
-		        }
+		        } else_if = {
+					add_artifact = jeweled_torque
+					new_artifact = { set_artifact_flag = stolen_by_smith }
+					add_artifact = sword_of_heroes
+					new_artifact = { set_artifact_flag = stolen_by_smith }
+				}
 		        else = {
 		        	add_artifact = heros_crown
 		        	new_artifact = { set_artifact_flag = stolen_by_smith }
@@ -11222,6 +11260,17 @@ character_event = {
 		        	add_artifact = golden_sword
 		        	new_artifact = { set_artifact_flag = stolen_by_smith }
 		        }
+				else_if = {
+					limit = {
+						FROM = {
+							religion_openly_in_celtic_subgroup_trigger = yes
+						}
+					}
+					add_artifact = golden_torque
+					new_artifact = { set_artifact_flag = stolen_by_smith }
+					add_artifact = golden_sword
+					new_artifact = { set_artifact_flag = stolen_by_smith }
+				}
 		        else = {
 		        	add_artifact = amber_crown
 		        	new_artifact = { set_artifact_flag = stolen_by_smith }
@@ -11305,6 +11354,17 @@ character_event = {
 		        	add_artifact = engraved_sword
 		        	new_artifact = { set_artifact_flag = stolen_by_smith }
 		        }
+				else_if = {
+					limit = {
+						FROM = {
+							religion_openly_in_celtic_subgroup_trigger = yes
+						}
+						add_artifact = silver_torque
+						new_artifact = { set_artifact_flag = stolen_by_smith }
+						add_artifact = engraved_sword
+						new_artifact = { set_artifact_flag = stolen_by_smith }
+					}
+				}
 		        else = {
 		        	add_artifact = engraved_crown
 		        	new_artifact = { set_artifact_flag = stolen_by_smith }

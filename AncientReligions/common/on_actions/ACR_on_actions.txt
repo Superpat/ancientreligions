@@ -132,38 +132,36 @@ on_bi_yearly_pulse = {
 
 #character
 on_five_year_pulse = {
-	
 	random_events = {
-		ACR_random_events = {
-			delay = 48
-			1000 = 0
-			#Egypt Flavor
-			100 = egyptian.155 # expel the evil within
-			100 = egyptian.159 # one of your wives displays feline grace... <.< >.>
-			50 = egyptian.166 # Ghost of Akhenaten
-			100 = egyptian.167 # Shezmu execution event
-			100 = egyptian.171 # Visited the Egyptian underworld
-			50 = egyptian.171 # Creepy courtier tries to bang maid by using dark magic
-			
-			#Hellenic Flavor
-			20 = hellenic.502 # Zeus supposedly knocked a woman up - is she lying?
-			20 = hellenic.504 # Zeus visits
-			20 = hellenic.507 # Stumble on some nymphs
-			20 = hellenic.510 # Maid attempts to use love spell
-			20 = hellenic.511 # Servant boy attempts to use love spell
-			20 = hellenic.512 # Daughter breastfeeds starving father
-			20 = hellenic.513 # Nymph legend
-			20 = hellenic.514 # Courtier's son wants to become priest of Cybele
-			20 = hellenic.517 # Courtier marries nymph
-			20 = hellenic.520 # Theseus and Pirithuos
-			20 = hellenic.523 # Who's the fairest of them all?
-			20 = hellenic.531 # Prayers for Nix
-			20 = hellenic.532 # Erotes
-			20 = hellenic.544 # Athena visits
-			
-			#I Can't Believe My Virgin Goddess of the Hunt is This Cute Event Blob (i.e. Artemis Event Blob)
-			10 = hellenic.550 # Stumble upon Artemis naked		
-		}
+    delay = 48
+    1000 = 0
+    
+    #Egypt Flavor
+    100 = egyptian.155 # expel the evil within
+    100 = egyptian.159 # one of your wives displays feline grace... <.< >.>
+    50 = egyptian.166 # Ghost of Akhenaten
+    100 = egyptian.167 # Shezmu execution event
+    100 = egyptian.171 # Visited the Egyptian underworld
+		50 = egyptian.175 # Creepy courtier tries to bang maid by using dark magic
+		
+		#Hellenic Flavor
+		20 = hellenic.502 # Zeus supposedly knocked a woman up - is she lying?
+		20 = hellenic.504 # Zeus visits
+		20 = hellenic.507 # Stumble on some nymphs
+		20 = hellenic.510 # Maid attempts to use love spell
+		20 = hellenic.511 # Servant boy attempts to use love spell
+		20 = hellenic.512 # Daughter breastfeeds starving father
+		20 = hellenic.513 # Nymph legend
+		20 = hellenic.514 # Courtier's son wants to become priest of Cybele
+		20 = hellenic.517 # Courtier marries nymph
+		20 = hellenic.520 # Theseus and Pirithuos
+		20 = hellenic.523 # Who's the fairest of them all?
+		20 = hellenic.531 # Prayers for Nix
+		20 = hellenic.532 # Erotes
+		20 = hellenic.544 # Athena visits
+		
+		#I Can't Believe My Virgin Goddess of the Hunt is This Cute Event Blob (i.e. Artemis Event Blob)
+		5 = hellenic.550 # Stumble upon Artemis naked
 	}
 }
 
@@ -190,20 +188,17 @@ on_combat_pulse = {
 # any leader in battle on winning side is ROOT - opponent army leader is FROM
 on_battle_won = {
 	random_events = {
-		10 = epicblood.14 # Hector-like bravery displayed
 	}
 }
 
 # Fires for the owner of the winning unit (ROOT). The taken Holding title is in FROM.
 on_siege_over_winner = {
 	random_events = {
-		100 = epicblood.13 # Ancient Religions, Achilles event
 	}
 }
 #character
 on_assassination_disc = {
  	random_events = {
-		25  = epicblood.11 # discovered, but your ingenious plan has made you famous!
 		100 = 0
 	}
 }
@@ -213,7 +208,6 @@ on_assassination_disc = {
 on_birth = {
 	events = {
 		celtic.215 # Child Perceived to be a Changeling
-		epicblood.4 # Child is recognized as the blood of a reborn hero
 		britannic.1 # a dryad has given birth
 	}
 	random_events = {

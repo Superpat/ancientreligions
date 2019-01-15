@@ -319,7 +319,7 @@ character_event = {
 		add_trait = head2
 
 		trigger = {
-			NOR = {
+			OR = {
 				is_bloodline_member_of = living_legend_male
 				is_bloodline_member_of = living_legend_female
 			}

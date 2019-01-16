@@ -5,7 +5,7 @@
 
 General:
 
-Fixed many, many, *many* bugs.
+- Fixed many, many, *many* bugs.
 
 Celtic:
 

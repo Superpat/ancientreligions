@@ -70,10 +70,12 @@ celtic = {
 arabic = {
 	egyptian_coptic = {
 		graphical_cultures = { arabicgfx muslimgfx }
+		alternate_start = {
 			OR = {
 				has_alternate_start_parameter = { key = culture value = full_random }
 				has_alternate_start_parameter = { key = culture value = random }
 			}
+		}
 		
 		color = { 0.2 0.7 0.1 }
 

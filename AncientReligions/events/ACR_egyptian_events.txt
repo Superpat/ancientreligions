@@ -3307,6 +3307,7 @@ character_event = {
 
 	trigger = {
 		NOR = { 
+			has_global_flag = egyptian_reformation
 			has_character_flag = lost_in_sandstorm
 			has_character_flag = awaiting_the_tribes
 			primary_title = { is_landless_type_title = yes }

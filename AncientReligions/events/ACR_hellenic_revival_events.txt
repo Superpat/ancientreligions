@@ -1577,7 +1577,7 @@ character_event = {
 			culture_group = italian_group # SWMH
 		}
 		NOT = { has_character_flag = flag_mani_penninsula }
-
+		NOT = { has_global_flag = hellenic_reformation }
 		OR = {
 			has_game_rule = {
 				name = acr_ai_revival

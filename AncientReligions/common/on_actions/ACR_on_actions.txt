@@ -131,17 +131,17 @@ on_bi_yearly_pulse = {
 #character
 on_five_year_pulse = {
 	random_events = {
-    delay = 48
-    1000 = 0
-    
-    #Egypt Flavor
-    100 = egyptian.155 # expel the evil within
-    100 = egyptian.159 # one of your wives displays feline grace... <.< >.>
-    50 = egyptian.166 # Ghost of Akhenaten
-    100 = egyptian.167 # Shezmu execution event
-    100 = egyptian.171 # Visited the Egyptian underworld
+		delay = 48
+		1000 = 0
+
+		#Egypt Flavor
+		100 = egyptian.155 # expel the evil within
+		100 = egyptian.159 # one of your wives displays feline grace... <.< >.>
+		50 = egyptian.166 # Ghost of Akhenaten
+		100 = egyptian.167 # Shezmu execution event
+		100 = egyptian.171 # Visited the Egyptian underworld
 		50 = egyptian.175 # Creepy courtier tries to bang maid by using dark magic
-		
+			
 		#Hellenic Flavor
 		20 = hellenic.502 # Zeus supposedly knocked a woman up - is she lying?
 		20 = hellenic.504 # Zeus visits
@@ -157,7 +157,7 @@ on_five_year_pulse = {
 		20 = hellenic.531 # Prayers for Nix
 		20 = hellenic.532 # Erotes
 		20 = hellenic.544 # Athena visits
-		
+
 		#I Can't Believe My Virgin Goddess of the Hunt is This Cute Event Blob (i.e. Artemis Event Blob)
 		5 = hellenic.550 # Stumble upon Artemis naked
 	}

@@ -22,9 +22,6 @@ on_yearly_pulse = {
 		hellenic.1 # Philosopher asks to be Hypatos
 		hellenic.3 # Priest angry about Platonic Curriculum
 		hellenic.23 # Priests are SUPER PISSED now
-
-		#I Can't Believe My Virgin Goddess of the Hunt is This Cute Event Blob (a.k.a Artemis Event Blob)		
-		hellenic.566 # Second time hunting with Artemis
 	}
 	
 	random_events = {

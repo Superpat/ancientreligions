@@ -29,7 +29,7 @@ Britannic:
 
 Hellenic:
 
-- Bug fixes and new events for the Artemis event chain from formerly retired CK2 modder cybrxkhan. Thanks!
+- Bug fixes and new events for the Artemis event chain from (formerly!) retired CK2 modder cybrxkhan. Thanks!
 
 Promethean:
 

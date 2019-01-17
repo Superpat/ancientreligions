@@ -2745,7 +2745,6 @@ character_event = {
 #
 #####################################################################################################
 
-
 # While hunting, stumble on Artemis who is naked and bathing
 character_event = {
 	id = hellenic.550
@@ -3228,7 +3227,6 @@ narrative_event = {
 	}
 }
 
-
 # Artemis is tsundere for Apollo
 long_character_event = {
 	id = hellenic.564
@@ -3243,7 +3241,6 @@ long_character_event = {
 		custom_tooltip = { text = VIET_apollo_is_a_baka }
 	}
 }
-
 
 # Devotion to Artemis inspires virtue - repeatable event
 character_event = {
@@ -3382,7 +3379,6 @@ character_event = {
 	}
 }
 
-
 # Second time hunting with Artemis
 character_event = {
 	id = hellenic.566
@@ -3396,12 +3392,15 @@ character_event = {
 		set_character_flag =  VIET_hunted_with_artemis_twice
 	}
 
+	trigger = {
+		has_character_flag = VIET_is_artemis_bff
+	}
+
 	option = { # Ok
 		name = hellenic.566.a
 		hidden_tooltip = { character_event = { id = hellenic.567 } }
 	}
 }
-
 
 # Good time hunting with Artemis
 character_event = {

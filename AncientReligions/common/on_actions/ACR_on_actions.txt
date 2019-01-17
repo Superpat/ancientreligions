@@ -94,39 +94,37 @@ on_bi_yearly_pulse = {
 	}
 
 	random_events = {
-		ACR_random_events = {
-			delay = 32
-			1000 = 0
-			#Egypt Flavor
-			20 = egyptian.150 # Distribute Garlic
-			20 = egyptian.151 # Palm trees
-			20 = egyptian.152 # Khnum Amulet
-			50 = egyptian.157 # You are upholding Ma'at
-			50 = egyptian.158 # You are NOT upholding Ma'at
-			20 = egyptian.161 # Women had more rights in ancient Egypt
-			20 = egyptian.170 # Servant asks Shed for help
-			
-			#Hellenic Flavor
-			20 = hellenic.500 # HadesxPersephone
-			20 = hellenic.501 # ApolloxArtemis
-			20 = hellenic.508 # Pharmakos ceremony
-			20 = hellenic.516 # Courtier hunted in Diana's sacred groves
-			20 = hellenic.527 # Herma
-			20 = hellenic.528 # Touch Priapus statue or not?
-			20 = hellenic.539 # Statue of Flora
-			20 = hellenic.540 # Sterquilinus god of Feces
-			20 = hellenic.542 # Lightning breaks statue
-			20 = hellenic.545 # Pomegranate gift
-			
-			#I Can't Believe My Virgin Goddess of the Hunt is This Cute Event Blob (i.e. Artemis Event Blob)
-			100 = hellenic.582 # Artemis blesses capital
-			100 = hellenic.583 # Rumors about your relationship with Artemis
-			100 = hellenic.588 # Artemis and you are chatting when Zeus interrupts
-			100 = hellenic.593 # Artemis and Apollo are arguing
-			300 = hellenic.600 # Wild Boar Spotted
-			300 = hellenic.605 # Ceryneian Hind Spotted
-			300 = hellenic.613 # Highwaymen
-		}
+		delay = 32
+		1000 = 0
+		#Egypt Flavor
+		20 = egyptian.150 # Distribute Garlic
+		20 = egyptian.151 # Palm trees
+		20 = egyptian.152 # Khnum Amulet
+		50 = egyptian.157 # You are upholding Ma'at
+		50 = egyptian.158 # You are NOT upholding Ma'at
+		20 = egyptian.161 # Women had more rights in ancient Egypt
+		20 = egyptian.170 # Servant asks Shed for help
+		
+		#Hellenic Flavor
+		20 = hellenic.500 # HadesxPersephone
+		20 = hellenic.501 # ApolloxArtemis
+		20 = hellenic.508 # Pharmakos ceremony
+		20 = hellenic.516 # Courtier hunted in Diana's sacred groves
+		20 = hellenic.527 # Herma
+		20 = hellenic.528 # Touch Priapus statue or not?
+		20 = hellenic.539 # Statue of Flora
+		20 = hellenic.540 # Sterquilinus god of Feces
+		20 = hellenic.542 # Lightning breaks statue
+		20 = hellenic.545 # Pomegranate gift
+		
+		#I Can't Believe My Virgin Goddess of the Hunt is This Cute Event Blob (i.e. Artemis Event Blob)
+		100 = hellenic.582 # Artemis blesses capital
+		100 = hellenic.583 # Rumors about your relationship with Artemis
+		100 = hellenic.588 # Artemis and you are chatting when Zeus interrupts
+		100 = hellenic.593 # Artemis and Apollo are arguing
+		300 = hellenic.600 # Wild Boar Spotted
+		300 = hellenic.605 # Ceryneian Hind Spotted
+		300 = hellenic.613 # Highwaymen
 	}
 }
 

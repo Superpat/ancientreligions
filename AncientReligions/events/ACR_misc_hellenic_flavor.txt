@@ -968,6 +968,7 @@ character_event = {
 		}		
 		hidden_tooltip = {
 			new_character = {
+				add_random_education_trait = yes
 				add_lover = ROOT
 				if = {
 					limit = {
@@ -1174,6 +1175,7 @@ character_event = {
 		}		
 		hidden_tooltip = {
 			new_character = {
+				add_random_education_trait = yes
 				add_lover = ROOT
 				random = {
 					add_trait = strong
@@ -1940,6 +1942,7 @@ character_event = {
 					culture = PREV
 				}
 				new_character = {
+					add_random_education_trait = yes
 					add_spouse = PREV
 					add_lover = PREV
 					add_trait = fair

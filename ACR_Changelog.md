@@ -30,6 +30,7 @@ Britannic:
 Hellenic:
 
 - Bug fixes and new events for the Artemis event chain from (formerly!) retired CK2 modder cybrxkhan. Thanks!
+- Removed custom Roman cultural buildings in favor of the ones provided by vanilla.
 
 Promethean:
 

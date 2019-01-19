@@ -3923,3 +3923,49 @@ character_event = {
 ############################
 ## Lost Heir of Cleopatra ##
 ############################
+
+#Egyptian Warrior Lodge has been recreated.
+#Players notified.
+narrative_event = {
+	id = egyptian.400
+	title = egyptian.400.title
+	desc = egyptian.400.desc
+	hide_from = yes
+	hide_new = yes
+
+	picture = GFX_evt_celtic_warriors
+	
+	only_playable = yes
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = egyptian.400.a
+		trigger = {
+			OR = { 
+				society_member_of = warrior_lodge_egyptian
+				religion_openly_egyptian_or_reformed_trigger = yes
+				religion_secretly_egyptian_or_reformed_trigger = yes
+				can_join_society = warrior_lodge_egyptian
+			}
+		}
+		if = {
+			limit = { 
+				NOT = { society_member_of = warrior_lodge_egyptian }
+				can_join_society = warrior_lodge_egyptian
+			}
+			join_society = warrior_lodge_egyptian
+		}
+	}
+	option = {
+		name = egyptian.400.b
+		trigger = {
+			NOR = { 
+				society_member_of = warrior_lodge_egyptian
+				religion_openly_egyptian_or_reformed_trigger = yes
+				religion_secretly_egyptian_or_reformed_trigger = yes
+			}
+		}
+	}
+}

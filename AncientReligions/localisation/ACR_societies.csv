@@ -262,6 +262,13 @@ string_celtic_symbol_short;boar;;;;;;;;;;;;;x
 string_celtic_symbol_short_cap;Boar;;;;;;;;;;;;;x
 string_battle_nick_celtic_symbol;Boar Spirit;;;;;;;;;;;;;x
 string_WL_celtic_religion;§Y[celtic_pagan_reformed.GetName]§! religion;;;;;;;;;;;;;x
+create_warrior_lodge_celtic;Found the Band of Camulos;;;;;;;;;;;;;x
+create_warrior_lodge_celtic_desc;Create a new warrior lodge in the tradition of Celtic faith.;;;;;;;;;;;;;x
+create_warrior_lodge_celtic_tooltip;Warriors gather to join the Band of Camulos;;;;;;;;;;;;;x
+celtic.303.title;The Band of Camulos;;;;;;;;;;;;;x
+celtic.303.desc;In [From.PrimaryTitle.GetName], [From.GetTitledFirstName] has formed a new society of warriors called The Band of Camulos. Upholding ideals of bravery, honor, and physical prowess. This [From.GetFirstName] has put out the call for those of like mind to join this warrior lodge, even those who don't worship the Celtic gods.;;;;;;;;;;;;;x
+celtic.303.a;Sounds like a good time!;;;;;;;;;;;;;x
+celtic.303.b;Sounds like a scam...;;;;;;;;;;;;;x
 ############### Britannic Warrior Lodge ;;;;;;;;;;;;;x
 warrior_lodge_britannic;[GetBritannicWarriorLodge];;;;;;;;;;;;;x
 warrior_lodge_britannic_desc;[GetBritannicWarriorLodgeDesc];;;;;;;;;;;;;x
@@ -285,6 +292,13 @@ string_britannic_symbol_short;horse;;;;;;;;;;;;;x
 string_britannic_symbol_short_cap;Horse;;;;;;;;;;;;;x
 string_battle_nick_britannic_symbol;Horse Spirit;;;;;;;;;;;;;x
 string_WL_britannic_religion;§Y[britannic_pagan.GetName]§! religion;;;;;;;;;;;;;x
+create_warrior_lodge_britannic;Found the Champions of Andraste;;;;;;;;;;;;;x
+create_warrior_lodge_britannic_desc;Create a new warrior lodge in the tradition of Britannic faith.;;;;;;;;;;;;;x
+create_warrior_lodge_britannic_tooltip;Warriors gather to join the Champions of Andraste;;;;;;;;;;;;;x
+britannic.350.title;The Champions of Andraste;;;;;;;;;;;;;x
+celtic.350.desc;In [From.PrimaryTitle.GetName], [From.GetTitledFirstName] has formed a new society of warriors called The Champions of Andraste. A fellowship of knights dedicated to the chivalric ideals of Britannic beliefs and improving themselves through martial training and sports. This [From.GetFirstName] has put out the call for those of like mind to join this warrior lodge, even those who don't worship the Holy Mother.;;;;;;;;;;;;;x
+celtic.350.a;Sounds like a good time!;;;;;;;;;;;;;x
+celtic.350.b;Sounds like a scam...;;;;;;;;;;;;;x
 ############### Titan Warrior Lodge ;;;;;;;;;;;;;x
 warrior_lodge_titan;[GetTitanWarriorLodge];;;;;;;;;;;;;x
 warrior_lodge_titan_desc;[GetTitanWarriorLodgeDesc];;;;;;;;;;;;;x
@@ -308,6 +322,13 @@ string_titan_symbol_short;titan;;;;;;;;;;;;;x
 string_titan_symbol_short_cap;Titan;;;;;;;;;;;;;x
 string_battle_nick_titan_symbol;Broken Chains;;;;;;;;;;;;;x
 string_WL_titan_religion;§Y[titan_pagan.GetName]§! religion;;;;;;;;;;;;;x
+create_warrior_lodge_titan;Found the Ravagers of Perses;;;;;;;;;;;;;x
+create_warrior_lodge_titans_desc;Create a new warrior lodge in the tradition of Titan faith.;;;;;;;;;;;;;x
+create_warrior_lodge_titan_tooltip;Warriors gather to join the Ravagers of Perses;;;;;;;;;;;;;x
+titan.150.title;The Ravagers of Perses;;;;;;;;;;;;;x
+titan.150.desc;In [From.PrimaryTitle.GetName], [From.GetTitledFirstName] has formed a new society of warriors called The Champions of Andraste. A society of fighters dedicated to the brutal ideals of Titan Cult and improving themselves through martial training and athletic competition. This [From.GetFirstName] has put out the call for those of like mind to join this warrior lodge, even those who don't worship the Titan of Devestation.;;;;;;;;;;;;;x
+titan.150.a;Sounds like a good time!;;;;;;;;;;;;;x
+titan.150.b;What? Like a fighting club?;;;;;;;;;;;;;x
 ############### Egyptian Warrior Lodge ;;;;;;;;;;;;;x
 warrior_lodge_egyptian;[GetEgyptianWarriorLodge];;;;;;;;;;;;;x
 warrior_lodge_egyptian_desc;[GetEgyptianWarriorLodgeDesc];;;;;;;;;;;;;x
@@ -331,6 +352,13 @@ string_egyptian_symbol_short;jackal;;;;;;;;;;;;;x
 string_egyptian_symbol_short_cap;Jackal;;;;;;;;;;;;;x
 string_battle_nick_egyptian_symbol;Jackal Spirit;;;;;;;;;;;;;x
 string_WL_egyptian_religion;§Y[egyptian_pagan_reformed.GetName]§! religion;;;;;;;;;;;;;x
+create_warrior_lodge_egyptian;Found the Champions of the Sun;;;;;;;;;;;;;x
+create_warrior_lodge_egyptian_desc;Create a new warrior lodge in the tradition of Egyptian faith.;;;;;;;;;;;;;x
+create_warrior_lodge_egyptian_tooltip;Warriors gather to join the Champions of the Sun;;;;;;;;;;;;;x
+egyptian.400.title;Champions of the Sun;;;;;;;;;;;;;x
+egyptian.400.desc;In [From.PrimaryTitle.GetName], [From.GetTitledFirstName] has formed a new society of warriors called The Champions of the Sun. A fellowship of warriors dedicated to the improving themselves through martial training and athletics. This [From.GetFirstName] has put out the call for those of like mind to join this warrior lodge, even those who don't worship the gods of Egypt.;;;;;;;;;;;;;x
+egyptian.400.a;Sounds like a good time!;;;;;;;;;;;;;x
+egyptian.400.b;Sounds like a scam...;;;;;;;;;;;;;x
 ############### Strings ;;;;;;;;;;;;;x
 String_ker;Ker;;;;;;;;;;;;;x
 String_keres;Keres;;;;;;;;;;;;;x

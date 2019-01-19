@@ -46,9 +46,7 @@ warrior_lodge_celtic = {
                     has_alternate_start_parameter = { key = religion value = historical }
                 }
             }
-            any_independent_ruler = {
-                religion_openly_celtic_or_reformed_trigger = yes
-            }
+            has_global_flag = flag_restored_warrior_lodge_celtic
         }
 	}
 	indestructible = yes
@@ -628,9 +626,7 @@ warrior_lodge_britannic = {
                     has_alternate_start_parameter = { key = religion value = historical }
                 }
             }
-            any_independent_ruler = {
-                religion = britannic_pagan
-            }
+            has_global_flag = flag_restored_warrior_lodge_britannic
         }
 	}
 	indestructible = yes
@@ -1205,9 +1201,7 @@ warrior_lodge_titan = {
                     has_alternate_start_parameter = { key = religion value = historical }
                 }
             }
-            any_independent_ruler = {
-                religion = titan_pagan
-            }
+            has_global_flag = flag_restored_warrior_lodge_titan
         }
 	}
 	indestructible = yes
@@ -1776,9 +1770,7 @@ warrior_lodge_egyptian = {
                     has_alternate_start_parameter = { key = religion value = historical }
                 }
             }
-            any_independent_ruler = {
-                religion_openly_in_egyptian_subgroup_trigger = yes
-            }
+            has_global_flag = flag_restored_warrior_lodge_egyptian
         }
 	}
 	indestructible = yes

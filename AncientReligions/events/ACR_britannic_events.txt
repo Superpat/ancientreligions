@@ -4919,3 +4919,49 @@ character_event = {
 #   britannic.300 - 349 reserved
 #
 ##################################################################
+
+#Britannic Warrior Lodge has been recreated.
+#Players notified.
+narrative_event = {
+	id = britannic.350
+	title = britannic.350.title
+	desc = britannic.350.desc
+	hide_from = yes
+	hide_new = yes
+
+	picture = GFX_evt_celtic_warriors
+	
+	only_playable = yes
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = britannic.350.a
+		trigger = {
+			OR = { 
+				society_member_of = warrior_lodge_britannic
+				religion_openly_britannic_or_reformed_trigger = yes
+				religion_secretly_britannic_or_reformed_trigger = yes
+				can_join_society = warrior_lodge_britannic
+			}
+		}
+		if = {
+			limit = { 
+				NOT = { society_member_of = warrior_lodge_britannic }
+				can_join_society = warrior_lodge_britannic
+			}
+			join_society = warrior_lodge_britannic
+		}
+	}
+	option = {
+		name = britannic.350.b
+		trigger = {
+			NOR = { 
+				society_member_of = warrior_lodge_britannic
+				religion_openly_britannic_or_reformed_trigger = yes
+				religion_secretly_britannic_or_reformed_trigger = yes
+			}
+		}
+	}
+}

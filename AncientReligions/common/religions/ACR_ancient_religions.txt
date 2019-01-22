@@ -342,12 +342,14 @@ pagan_group = {
 		}
 		
 		allow_rivermovement = yes
-		max_wives = 4
-		female_temple_holders = yes
-		divine_blood = yes
 		can_call_crusade = yes
 		join_crusade_if_bordering_hostile = yes
-		
+		divine_blood = yes
+		psc_marriage = yes
+		bs_marriage = yes
+		cousin_marriage = yes
+		pc_marriage = yes
+
 		religious_clothing_head = 5
 		religious_clothing_priest = 5
 

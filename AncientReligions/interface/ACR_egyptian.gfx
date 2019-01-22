@@ -138,4 +138,8 @@ spriteTypes = {
 		texturefile = "gfx\\event_pictures\ACR\anubis.tga"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_religion_feature_egyptian"
+		texturefile = "gfx\\interface\ACR\religion_feature_egyptian.dds"
+	}
 }

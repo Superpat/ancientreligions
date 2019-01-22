@@ -294,4 +294,9 @@ spriteTypes = {
 		name = "GFX_invite_bard_to_court"
 		texturefile = "gfx\\interface\ACR\decision_icon_hold_divination.dds"
 	}
+
+	spriteType = {
+		name = "GFX_religion_feature_celtic"
+		texturefile = "gfx\\interface\ACR\religion_feature_celtic.dds"
+	}
 }

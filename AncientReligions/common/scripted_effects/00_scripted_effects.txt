@@ -27212,10 +27212,6 @@ reformation_god_names_changes_effect = { #Reforming religion with certain Doctri
 					add_evil_god_name = GOD_DANA
 					add_evil_god_name = GOD_SEQUANA
 				}
-				remove_god_names = yes
-				set_high_god_name = GOD_SANGPO_BUMTRI
-				add_god_name = GOD_SANGPO_BUMTRI_2
-				add_evil_god_name = GOD_THE_EVIL_ONES
 			}
 			if = { #A ruler reforms Egyptian Paganism
 				limit = {
@@ -27247,16 +27243,17 @@ reformation_god_names_changes_effect = { #Reforming religion with certain Doctri
 						has_religion_feature = religion_matriarchal
 					}
 					set_high_god_name = GOD_AMAUNET
+					add_god_name = GOD_AMAUNET
 					if = {
 						limit = {
 							NOT = { has_religion_feature = religion_dogmatic }
 						}
-						add_god_name = GOD_AMAUNET
 						add_god_name = GOD_HAUHET
 						add_god_name = GOD_KAUKET
 						add_god_name = GOD_NAUNET
 						add_god_name = GOD_ISIS
 					}
+					add_evil_god_name = GOD_AMON
 					add_evil_god_name = GOD_APEP
 					add_evil_god_name = GOD_SET
 				}
@@ -27265,11 +27262,11 @@ reformation_god_names_changes_effect = { #Reforming religion with certain Doctri
 						has_religion_feature = religion_patriarchal
 					}
 					set_high_god_name = GOD_AMON
+					add_god_name = GOD_AMON
 					if = {
 						limit = {
 							NOT = { has_religion_feature = religion_dogmatic }
 						}
-						add_god_name = GOD_AMON
 						add_god_name = GOD_HEH
 						add_god_name = GOD_KEK
 						add_god_name = GOD_NUN
@@ -27290,11 +27287,15 @@ reformation_god_names_changes_effect = { #Reforming religion with certain Doctri
 				OR = { 
 					has_religion_feature = religion_holy_family 
 					has_religion_feature = religion_feature_zun
+					has_religion_feature = religion_feature_egyptian
 				}
 			}
 			if = {
 				limit = { #Reformer himself, but only if he is not becoming the High God due to synergy.
-					NOT = { has_religion_feature = religion_temporal_head }
+					OR = {
+						NOT = { has_religion_feature = religion_temporal_head }
+						has_religion_feature = religion_feature_egyptian
+					}
 					OR = { 
 						AND = { 
 							is_female = no

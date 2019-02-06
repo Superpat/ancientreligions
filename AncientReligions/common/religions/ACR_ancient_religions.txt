@@ -119,7 +119,7 @@ pagan_group = {
 		priests_can_marry = yes
 		female_temple_holders = yes
 
-		hard_to_convert = yes
+		hard_to_convert = no
 		can_demand_religious_conversion = yes
 
 		allow_looting = no
@@ -290,7 +290,8 @@ pagan_group = {
 		priests_can_inherit = no
 		investiture = yes
 
-		hard_to_convert = yes
+		hard_to_convert = no
+		attacking_same_religion_piety_loss = yes
 		can_demand_religious_conversion = yes
 
 		female_temple_holders = yes
@@ -341,6 +342,7 @@ pagan_group = {
 			GOD_SET GOD_APEP
 		}
 		
+		max_wives = 4
 		allow_rivermovement = yes
 		can_call_crusade = yes
 		join_crusade_if_bordering_hostile = yes
@@ -481,7 +483,7 @@ pagan_group = {
 		can_call_crusade = yes
 		join_crusade_if_bordering_hostile = yes
 
-		hard_to_convert = yes
+		hard_to_convert = no
 		can_demand_religious_conversion = yes
 
 		religious_clothing_head = 5

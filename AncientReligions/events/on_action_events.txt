@@ -3521,6 +3521,7 @@ character_event = {
 			AND = {
 				NOT = { religion = zoroastrian }
 				NOT = { religion = messalian }
+				NOT = { religion_openly_in_egyptian_subgroup_trigger = yes }
 				NOT = { has_religion_feature = religion_holy_family }
 				NOT = { has_religion_feature = religion_feature_zun }
 			}

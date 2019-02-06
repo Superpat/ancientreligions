@@ -74,6 +74,7 @@ religion_nature = {
 						religion = baltic_pagan
 						religion = finnish_pagan
 						religion = west_african_pagan
+						religion = egyptian_pagan
 					}
 				}
 			}

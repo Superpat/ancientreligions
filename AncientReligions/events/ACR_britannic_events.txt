@@ -4931,9 +4931,7 @@ narrative_event = {
 
 	picture = GFX_evt_celtic_warriors
 	
-	only_playable = yes
-	hide_from = yes
-	
+	only_playable = yes	
 	is_triggered_only = yes
 	
 	option = {
@@ -4941,8 +4939,8 @@ narrative_event = {
 		trigger = {
 			OR = { 
 				society_member_of = warrior_lodge_britannic
-				religion_openly_britannic_or_reformed_trigger = yes
-				religion_secretly_britannic_or_reformed_trigger = yes
+				religion = britannic_pagan
+				secret_religion = britannic_pagan
 				can_join_society = warrior_lodge_britannic
 			}
 		}
@@ -4959,8 +4957,9 @@ narrative_event = {
 		trigger = {
 			NOR = { 
 				society_member_of = warrior_lodge_britannic
-				religion_openly_britannic_or_reformed_trigger = yes
-				religion_secretly_britannic_or_reformed_trigger = yes
+				religion = britannic_pagan
+				secret_religion = britannic_pagan
+				can_join_society = warrior_lodge_britannic
 			}
 		}
 	}

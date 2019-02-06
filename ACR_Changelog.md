@@ -11,6 +11,7 @@ Celtic:
 
 - Living Legend bloodline event has been fixed. Those of you with many duplicate bloodlines can keep them as compensation for your troubles.
 - Added new Torques as Celtic crown jewels. These will replace crowns (but take the neck slot), and Celts will get the swords Christians and Norse get.
+- Added new unique Doctrine for Celtic, "Clans of Dannu", which grants Equality, Animism, haruspicy, and the Heroic Religion unit modifiers.
 - The Celtic Warrior Lodge, "The Band of Camulos", has been added. Camulos is a Briton war and storm god.
   - Special leader trait is "Raider".
     - +50% Imprison Enemy Commander
@@ -56,6 +57,7 @@ Titan Cult:
 
 Egyptian:
 
+- Added unique Egyptian Doctrine "Children of the Nile", which includes Ancestor Veneration, Equality, and Stability.
 - The Egyptian/Atenic Warrior Lodge, "The Champions of the Sun", has been added.
   - Special leader trait is "Sandstrider".
     - +20% in Desert and Plains Terrains.

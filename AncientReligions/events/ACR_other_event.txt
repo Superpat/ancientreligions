@@ -594,7 +594,7 @@ character_event = {
 			any_mercenary_band = {
 				limit = {
 					holy_order = yes
-					holder_scope = { hellenic_pagan }
+					holder_scope = { religion = hellenic_pagan }
 				}
 
 				religion = hellenic_pagan_reformed

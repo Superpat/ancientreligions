@@ -152,3 +152,6 @@ britannic.175.b;I don't want to miss any of the festival!;;;;;;;;;;;;;x
 britannic.175.c;I'm sorry my love, I have a headache.;;;;;;;;;;;;;x
 britannic.199.desc;With the merchants packing their wares and the dryads performing their final blessings, the Imbolg has come to a close.;;;;;;;;;;;;;x
 britannic.199.a;I wonder how next year's festival will go.;;;;;;;;;;;;;x
+britannic.350.desc;[From.GetTitledFirstName] of [From.PrimaryTitle.GetName] has formed a band of like-minded warriors called the Champions of Andraste. Spending their time in sports and martial training, these comrades in arms strive to exemplify the chivalric ideals of Britannic society. Despite their reverence for the Britannic demigods Andraste and Epona, membership is not limited to members of that faith.;;;;;;;;;;;;;x
+britannic.350.a;They sound like my kind of people.;;;;;;;;;;;;;x
+britannic.350.b;Good for [From.GetHerHim].;;;;;;;;;;;;;x

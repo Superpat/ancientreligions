@@ -3877,7 +3877,7 @@ defined_text = {
 	text = {
 		localisation_key = String_Hellene
 		trigger = {
-			religion_hellenic_or_reformed_trigger = yes
+			religion_openly_hellenic_or_reformed_trigger = yes
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
 			}
@@ -3904,7 +3904,7 @@ defined_text = {
 	text = {
 		localisation_key = String_Kemetic
 		trigger = {
-			religion = egyptian_pagan
+			religion_openly_egyptian_or_reformed_trigger = yes
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
 			}
@@ -4491,7 +4491,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = String_Kemetic
-		trigger = { true_religon = egyptian_pagan  
+		trigger = { true_religion = egyptian_pagan  
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
 			}
@@ -5108,7 +5108,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = BOOK_OF_THE_DEAD
-		trigger = { true_religon = egyptian_pagan }
+		trigger = { true_religion = egyptian_pagan }
 	}
 	text = {
 		localisation_key = AMARNA_SCROLLS
@@ -5373,7 +5373,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = String_Kemetic
-		trigger = { true_religon = egyptian_pagan 
+		trigger = { true_religion = egyptian_pagan 
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
 			}
@@ -5658,7 +5658,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = String_Kemetic
-		trigger = { true_religon = egyptian_pagan 
+		trigger = { true_religion = egyptian_pagan 
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
 			}

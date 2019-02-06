@@ -736,7 +736,8 @@ character_event = {
 	
 	trigger = { 
 		OR = { 
-			has_religion_feature = religion_haruspicy 
+			has_religion_feature = religion_haruspicy
+			has_religion_feature = religion_feature_celtic
 			religion = hellenic_pagan
 			religion = hellenic_pagan_reformed
 		} 
@@ -805,6 +806,7 @@ character_event = {
 	trigger = { 
 		OR = { 
 			has_religion_feature = religion_haruspicy 
+			has_religion_feature = religion_feature_celtic
 			religion = hellenic_pagan
 			religion = hellenic_pagan_reformed
 		} 
@@ -847,6 +849,7 @@ character_event = {
 		war = yes
 		OR = { 
 			has_religion_feature = religion_haruspicy 
+			has_religion_feature = religion_feature_celtic
 			religion = hellenic_pagan
 			religion = hellenic_pagan_reformed
 		} 
@@ -3133,6 +3136,8 @@ character_event = {
 				has_religion_feature = religion_equal
 				has_religion_feature = religion_feature_bon
 				has_religion_feature = religion_matriarchal
+				has_religion_feature = religion_feature_celtic
+				has_religion_feature = religion_feature_egyptian
 			}
 		}
 	}
@@ -3225,6 +3230,8 @@ character_event = {
 					OR = { 
 						has_religion_feature = religion_equal 
 						has_religion_feature = religion_feature_bon
+						has_religion_feature = religion_feature_celtic
+						has_religion_feature = religion_feature_egyptian
 					}
 					NOR = {  
 						#is_merchant_republic = yes
@@ -3312,9 +3319,11 @@ character_event = {
 					FROM = { has_religion_feature = religion_patriarchal }
 					ROOT = { 
 						OR = { 
-							has_religion_feature = religion_equal 
+							has_religion_feature = religion_equal
 							has_religion_feature = religion_feature_bon
 							has_religion_feature = religion_matriarchal
+							has_religion_feature = religion_feature_celtic
+							has_religion_feature = religion_feature_egyptian
 						}
 					}
 				}
@@ -3340,9 +3349,11 @@ character_event = {
 					FROM = { has_religion_feature = religion_matriarchal }
 					ROOT = { 
 						OR = { 
-							has_religion_feature = religion_equal 
+							has_religion_feature = religion_equal
 							has_religion_feature = religion_feature_bon
 							has_religion_feature = religion_patriarchal
+							has_religion_feature = religion_feature_celtic
+							has_religion_feature = religion_feature_egyptian
 						}
 					}
 				}
@@ -3369,6 +3380,8 @@ character_event = {
 						OR = { 
 							has_religion_feature = religion_equal 
 							has_religion_feature = religion_feature_bon
+							has_religion_feature = religion_feature_celtic
+							has_religion_feature = religion_feature_egyptian
 						}
 					}
 					ROOT = { 
@@ -3398,6 +3411,8 @@ character_event = {
 						OR = { 
 							has_religion_feature = religion_equal 
 							has_religion_feature = religion_feature_bon
+							has_religion_feature = religion_feature_celtic
+							has_religion_feature = religion_feature_egyptian
 						}
 					}
 					ROOT = { 
@@ -9108,7 +9123,10 @@ narrative_event = {
 		}
 		OR = {
 			AND = {
-				has_religion_feature = religion_haruspicy
+				OR = {
+					has_religion_feature = religion_haruspicy
+					has_religion_feature = religion_feature_celtic
+				}
 				has_religion_feature = religion_astrology 
 			}
 			AND = {
@@ -9544,7 +9562,10 @@ narrative_event = {
 		}
 		OR = {
 			AND = {
-				has_religion_feature = religion_haruspicy
+				OR = {
+					has_religion_feature = religion_haruspicy
+					has_religion_feature = religion_feature_celtic
+				}
 				has_religion_feature = religion_astrology 
 				has_religion_feature = religion_no_leader 
 			}
@@ -9792,6 +9813,7 @@ character_event = {
 			}
 			OR = { 
 				has_religion_feature = religion_haruspicy
+				has_religion_feature = religion_feature_celtic
 				religion = hellenic_pagan
 				religion = hellenic_pagan_reformed
 			}
@@ -10535,8 +10557,9 @@ character_event = {
 					is_adult = no
 					ROOT = { religion = PREV } 
 					OR = { 
-						has_religion_feature = religion_holy_family 
+						has_religion_feature = religion_holy_family
 						has_religion_feature = religion_feature_zun
+						has_religion_feature = religion_feature_egyptian
 					} 
 				}
 				change_variable = { which = burned_hearts_points value = 1 }
@@ -14402,6 +14425,7 @@ character_event = {
 			higher_tier_than = BARON
 			OR = {
 				has_religion_feature = religion_stable
+				has_religion_feature = religion_feature_egyptian
 				has_religion_feature = religion_feature_slavic
 				has_religion_feature = religion_feature_finnish
 			}
@@ -16595,14 +16619,20 @@ character_event = {
 				religion = west_african_pagan
 				religion = west_african_pagan_reformed
 			} 
-			has_religion_feature = religion_animistic 
+			OR = {
+				has_religion_feature = religion_animistic
+				has_religion_feature = religion_feature_celtic
+			}
 		} 
 		picture = GFX_evt_magic_ritual
 	}
 	picture = { 
 		trigger = { 
 			NOT = { has_dlc = "Mystics" } 
-			has_religion_feature = religion_animistic 
+			OR = {
+				has_religion_feature = religion_animistic
+				has_religion_feature = religion_feature_celtic
+			}
 		} 
 		picture = GFX_evt_tribal_shrine
 	}
@@ -16619,7 +16649,8 @@ character_event = {
 		OR = {
 			religion = west_african_pagan
 			religion = west_african_pagan_reformed
-			has_religion_feature = religion_animistic 
+			has_religion_feature = religion_animistic
+			has_religion_feature = religion_feature_celtic
 		}
 	}
 	
@@ -16782,14 +16813,20 @@ character_event = {
 				religion = west_african_pagan
 				religion = west_african_pagan_reformed
 			} 
-			has_religion_feature = religion_animistic 
+			OR = {
+				has_religion_feature = religion_animistic
+				has_religion_feature = religion_feature_celtic
+			}
 		} 
 		picture = GFX_evt_magic_ritual
 	}
 	picture = { 
 		trigger = { 
 			NOT = { has_dlc = "Mystics" } 
-			has_religion_feature = religion_animistic 
+			OR = {
+				has_religion_feature = religion_animistic
+				has_religion_feature = religion_feature_celtic
+			}
 		} 
 		picture = GFX_evt_tribal_shrine
 	}
@@ -17110,7 +17147,8 @@ character_event = {
 		OR = {
 			religion = west_african_pagan
 			religion = west_african_pagan_reformed
-			has_religion_feature = religion_animistic 
+			has_religion_feature = religion_animistic
+			has_religion_feature = religion_feature_celtic
 		}
 	}
 	
@@ -17254,6 +17292,7 @@ character_event = {
 	trigger = {
 		OR = { 
 			has_religion_feature = religion_holy_family 
+			religion_openly_in_egyptian_subgroup_trigger = yes
 			has_religion_feature = religion_feature_zun
 		}
 		new_character = { is_close_relative = FROM }
@@ -17383,7 +17422,8 @@ character_event = {
 	
 	trigger = {
 		OR = { 
-			has_religion_feature = religion_holy_family 
+			has_religion_feature = religion_holy_family
+			religion_openly_in_egyptian_subgroup_trigger = yes
 			has_religion_feature = religion_feature_zun
 		}
 		has_religion_feature = religion_dogmatic
@@ -17406,8 +17446,9 @@ character_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		religion_openly_in_egyptian_subgroup_trigger = no
 		OR = { 
-			has_religion_feature = religion_holy_family 
+			has_religion_feature = religion_holy_family
 			has_religion_feature = religion_feature_zun
 		}
 		has_religion_feature = religion_dogmatic

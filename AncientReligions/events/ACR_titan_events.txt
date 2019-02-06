@@ -3313,8 +3313,6 @@ narrative_event = {
 	picture = GFX_evt_celtic_warriors
 	
 	only_playable = yes
-	hide_from = yes
-	
 	is_triggered_only = yes
 	
 	option = {
@@ -3322,8 +3320,8 @@ narrative_event = {
 		trigger = {
 			OR = { 
 				society_member_of = warrior_lodge_titan
-				religion_openly_titan_or_reformed_trigger = yes
-				religion_secretly_titan_or_reformed_trigger = yes
+				religion = titan_pagan
+				secret_religion = titan_pagan
 				can_join_society = warrior_lodge_titan
 			}
 		}
@@ -3340,8 +3338,8 @@ narrative_event = {
 		trigger = {
 			NOR = { 
 				society_member_of = warrior_lodge_titan
-				religion_openly_titan_or_reformed_trigger = yes
-				religion_secretly_titan_or_reformed_trigger = yes
+				religion = titan_pagan
+				secret_religion = titan_pagan
 			}
 		}
 	}

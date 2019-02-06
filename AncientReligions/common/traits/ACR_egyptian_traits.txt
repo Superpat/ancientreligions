@@ -83,3 +83,9 @@ egyptian_leader = {
 		siege = 0.2
 	}
 }
+
+blessed_ancestor_egyptian = {
+	random = no
+	customizer = no
+	pagan_group_opinion = 50
+}

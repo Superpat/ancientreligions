@@ -209,7 +209,7 @@ d_anubis = {
 	holy_order = yes
 	
 	# Parent Religion 
-	religion = egyptian_pagan_reformed
+	religion = egyptian_pagan
 	
 	# Extra income due to donations, etc
 	monthly_income = 2 # (Must be an integer between 1 and 512)	
@@ -239,7 +239,7 @@ d_horus = {
 	holy_order = yes
 	
 	# Parent Religion 
-	religion = egyptian_pagan_reformed
+	religion = egyptian_pagan
 	
 	# Extra income due to donations, etc
 	monthly_income = 2 # (Must be an integer between 1 and 512)	

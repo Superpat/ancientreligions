@@ -819,9 +819,9 @@ character_event = {
 	
 	immediate = {
 		random_list = {
-			95 = { # do nothing
+			80 = { # do nothing
 			}
-			5 = { # try to join a society
+			20 = { # try to join a society
 				modifier = {
 					factor = 2
 					higher_tier_than = BARON
@@ -834,7 +834,7 @@ character_event = {
 				
 				random_list = {
 					700 = { } # Fall back dead weight
-					100 = {
+					100 = { # benedictines
 						trigger = {
 							can_join_society = monastic_order_benedictine
 						}

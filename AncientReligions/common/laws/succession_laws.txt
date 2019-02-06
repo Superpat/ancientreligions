@@ -316,6 +316,7 @@ succession_laws = {
 						religion = west_african_pagan
 					}
 					has_religion_feature = religion_beatification
+					has_religion_feature = religion_feature_egyptian
 					has_religion_feature = religion_feature_baltic
 					has_religion_feature = religion_feature_west_african
 				}
@@ -379,6 +380,7 @@ succession_laws = {
 							religion = west_african_pagan
 						}
 						has_religion_feature = religion_beatification
+						has_religion_feature = religion_feature_egyptian
 						has_religion_feature = religion_feature_baltic
 						has_religion_feature = religion_feature_west_african
 					}
@@ -1562,6 +1564,8 @@ gender_laws = {
 				NOT = { religion = britannic_pagan }
 				NOT = { has_religion_feature = religion_matriarchal }
 				NOT = { has_religion_feature = religion_equal }
+				NOT = { has_religion_feature = religion_feature_egyptian }
+				NOT = { has_religion_feature = religion_feature_celtic }
 				OR = {
 					NOT = { tier = baron }
 					is_theocracy = yes
@@ -1644,6 +1648,8 @@ gender_laws = {
 			holder_scope = { 
 				NOT = { has_religion_feature = religion_matriarchal } 
 				NOT = { has_religion_feature = religion_equal }
+				NOT = { has_religion_feature = religion_feature_egyptian }
+				NOT = { has_religion_feature = religion_feature_celtic }
 				NOT = { religion = britannic_pagan }
 			}
 		}
@@ -1713,6 +1719,8 @@ gender_laws = {
 							#is_patrician = no
 						}
 						has_religion_feature = religion_equal
+						has_religion_feature = religion_feature_egyptian
+						has_religion_feature = religion_feature_celtic
 						has_religion_feature = religion_feature_bon
 						AND = {
 							has_dlc = "Zeus"
@@ -1749,7 +1757,11 @@ gender_laws = {
 					}
 				}
 				holder_scope = {
-					has_religion_feature = religion_equal
+					OR = {
+						has_religion_feature = religion_equal
+						has_religion_feature = religion_feature_egyptian
+						has_religion_feature = religion_feature_celtic
+					}
 				}
 			}
 			
@@ -1766,6 +1778,8 @@ gender_laws = {
 						religion = messalian
 						religion = mazdaki
 						has_religion_feature = religion_equal
+						has_religion_feature = religion_feature_egyptian
+						has_religion_feature = religion_feature_celtic
 					}
 				}
 				OR = {
@@ -1786,9 +1800,11 @@ gender_laws = {
 			
 			modifier = {
 				factor = 0.1
-				NOT = {
-					holder_scope = {
+				holder_scope = {
+					NOR = {
 						has_religion_feature = religion_equal
+						has_religion_feature = religion_feature_egyptian
+						has_religion_feature = religion_feature_celtic
 					}
 				}
 			}
@@ -1796,7 +1812,11 @@ gender_laws = {
 			modifier = {
 				factor = 100
 				holder_scope = {
-					has_religion_feature = religion_equal
+					OR = {
+						has_religion_feature = religion_equal
+						has_religion_feature = religion_feature_egyptian
+						has_religion_feature = religion_feature_celtic
+					}
 				}
 			}
 		}

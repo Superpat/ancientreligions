@@ -931,7 +931,7 @@ decisions = {
 						ai = yes
 						can_join_society = warrior_lodge_celtic
 					}
-					random = { chance = 75 join_society = warrior_lodge_celtic }
+					random = { chance = 80 join_society = warrior_lodge_celtic }
 				}
 				any_neighbor_independent_ruler = {
 					limit = {
@@ -952,11 +952,6 @@ decisions = {
 				}
 			}
 		}
-		
-		revoke_allowed = {
-			always = no
-		}
-		
 		ai_will_do = {
 			factor = 1
 		}
@@ -1041,11 +1036,6 @@ decisions = {
 				}
 			}
 		}
-		
-		revoke_allowed = {
-			always = no
-		}
-		
 		ai_will_do = {
 			factor = 1
 		}
@@ -1129,12 +1119,7 @@ decisions = {
 					narrative_event = { id = titan.150 }
 				}
 			}
-		}
-		
-		revoke_allowed = {
-			always = no
-		}
-		
+		}		
 		ai_will_do = {
 			factor = 1
 		}
@@ -1196,7 +1181,7 @@ decisions = {
 				any_vassal = {
 					limit = {
 						ai = yes
-						can_join_society = warrior_lodge_egyptianc
+						can_join_society = warrior_lodge_egyptian
 					}
 					random = { chance = 75 join_society = warrior_lodge_egyptian }
 				}
@@ -1218,12 +1203,7 @@ decisions = {
 					narrative_event = { id = egyptian.400 }
 				}
 			}
-		}
-		
-		revoke_allowed = {
-			always = no
-		}
-		
+		}		
 		ai_will_do = {
 			factor = 1
 		}

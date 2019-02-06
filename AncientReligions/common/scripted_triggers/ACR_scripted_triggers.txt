@@ -4,11 +4,14 @@ is_feminist_religion_trigger = {
 		religion = celtic_pagan
 		religion = britannic_pagan
 		religion = promethean_pagan
+		religion = egyptian_pagan
 		religion = messalian
 		religion = cathar
 		has_religion_feature = religion_matriarchal
 		has_religion_feature = religion_equal
 		has_religion_feature = religion_feature_bon
+		has_religion_feature = religion_feature_celtic
+		has_religion_feature = religion_feature_egyptian
 	}
 }
 

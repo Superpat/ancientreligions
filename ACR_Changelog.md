@@ -6,12 +6,15 @@
 General:
 
 - Fixed many, many, *many* bugs.
+- Thanks to Maal for the warrior society backgrounds!
+  - Check out his mods The Great Trade League and Fighters Guilds!
 
 Celtic:
 
 - Living Legend bloodline event has been fixed. Those of you with many duplicate bloodlines can keep them as compensation for your troubles.
 - Added new Torques as Celtic crown jewels. These will replace crowns (but take the neck slot), and Celts will get the swords Christians and Norse get.
 - Added new unique Doctrine for Celtic, "Clans of Dannu", which grants Equality, Animism, haruspicy, and the Heroic Religion unit modifiers.
+  - Crappy Animism morale bonus not applied.
 - The Celtic Warrior Lodge, "The Band of Camulos", has been added. Camulos is a Briton war and storm god.
   - Special leader trait is "Raider".
     - +50% Imprison Enemy Commander
@@ -54,10 +57,16 @@ Titan Cult:
     - +20% in Mountain Terrain.
     - +20% for Light and Heavy Infantry.
 - Made The Coven the satanist society of the Titan Cult.
+- Removed Atenic from Lets. Get. PAGAN! as, even though it's a heresy of unreformed Hellenic, things get weird if it becomes the orthodoxy before Hellenism reforms.
+  - For the same reason, the Titan Cult has been removed from alternate start scenarios.
 
 Egyptian:
 
-- Added unique Egyptian Doctrine "Children of the Nile", which includes Ancestor Veneration, Equality, and Stability.
+- Added unique Egyptian Doctrine "Children of the Nile", which includes Ancestor Veneration, Equality, Stability, and the Defensive troop bonuses.
+  - Eldership succession is available but not enforced.
+- Special Egyptian variant of Ancestor Veneration will mark the venerated ancestor as a "Demigod", and get a special Demigod trait.
+  - This will be the case even if you take Ancestor Veneration directly instead of taking Children of the Nile.
+- Kemetic keeps Divine Blood by default, so holy family based synergies will apply when you reform.
 - The Egyptian/Atenic Warrior Lodge, "The Champions of the Sun", has been added.
   - Special leader trait is "Sandstrider".
     - +20% in Desert and Plains Terrains.

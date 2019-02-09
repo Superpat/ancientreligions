@@ -64,24 +64,24 @@ spriteTypes = {
     ### The Band of Camulos ###
 	spriteType = {
 		name = "GFX_society_main_background_warrior_lodge_celtic"
-		texturefile = "gfx\\interface\\societies\\society_bg_warrior_lodge_norse.dds"
+		texturefile = "gfx\\interface\\ACR\\society_bg_band_of_camulos.dds"
 	}
 	spriteType = {
 		name = "GFX_society_expansion_background_warrior_lodge_celtic"
-		texturefile = "gfx\\interface\\societies\\society_exp_bg_warrior_lodge_norse.dds"
+		texturefile = "gfx\\interface\\societies\\society_exp_bg_band_of_medeina.dds"
 	}
 	spriteType = {
 		name = "GFX_icon_small_warrior_lodge_celtic"
-		texturefile = "gfx\\interface\\societies\\symbol_small_warrior_lodge_norse.dds"
+		texturefile = "gfx\\interface\\ACR\\symbol_small_band_of_camulos.dds"
 		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_society_portrait_ring_warrior_lodge_celtic"
-		texturefile = "gfx\\interface\\societies\\portrait_ring_warrior_lodge_norse.dds"
+		texturefile = "gfx\\interface\\societies\\portrait_ring_band_of_medeina.dds"
 	}
 	spriteType = {
 		name = "GFX_society_portrait_ring_small_warrior_lodge_celtic"
-		texturefile = "gfx\\interface\\societies\\portrait_ring_small_warrior_lodge_norse.dds"
+		texturefile = "gfx\\interface\\societies\\portrait_ring_small_band_of_medeina.dds"
 	}
 	spriteType = {
 		name = "GFX_society_currency_warrior_lodge_celtic"
@@ -91,24 +91,20 @@ spriteTypes = {
     ### The Champions of Andraste ###
 	spriteType = {
 		name = "GFX_society_main_background_warrior_lodge_britannic"
-		texturefile = "gfx\\interface\\societies\\society_bg_warrior_lodge_norse.dds"
-	}
-	spriteType = {
-		name = "GFX_society_expansion_background_warrior_lodge_britannic"
-		texturefile = "gfx\\interface\\societies\\society_exp_bg_warrior_lodge_norse.dds"
+		texturefile = "gfx\\interface\\ACR\\society_bg_champions_of_andraste.dds"
 	}
 	spriteType = {
 		name = "GFX_icon_small_warrior_lodge_britannic"
-		texturefile = "gfx\\interface\\societies\\symbol_small_warrior_lodge_norse.dds"
+		texturefile = "gfx\\interface\\ACR\\symbol_small_champions_of_andraste.dds"
 		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_society_portrait_ring_warrior_lodge_britannic"
-		texturefile = "gfx\\interface\\societies\\portrait_ring_warrior_lodge_norse.dds"
+		texturefile = "gfx\\interface\\societies\\portrait_ring_wolf_warriors.dds"
 	}
 	spriteType = {
 		name = "GFX_society_portrait_ring_small_warrior_lodge_britannic"
-		texturefile = "gfx\\interface\\societies\\portrait_ring_small_warrior_lodge_norse.dds"
+		texturefile = "gfx\\interface\\societies\\portrait_ring_small_wolf_warriors.dds"
 	}
 	spriteType = {
 		name = "GFX_society_currency_warrior_lodge_britannic"
@@ -118,24 +114,24 @@ spriteTypes = {
     ### The Ravagers of Perses ###
 	spriteType = {
 		name = "GFX_society_main_background_warrior_lodge_titan"
-		texturefile = "gfx\\interface\\societies\\society_bg_warrior_lodge_norse.dds"
+		texturefile = "gfx\\interface\\ACR\\society_bg_ravagers_of_perses.dds"
 	}
 	spriteType = {
 		name = "GFX_society_expansion_background_warrior_lodge_titan"
-		texturefile = "gfx\\interface\\societies\\society_exp_bg_warrior_lodge_norse.dds"
+		texturefile = "gfx\\interface\\societies\\society_exp_bg_wolf_warriors.dds"
 	}
 	spriteType = {
 		name = "GFX_icon_small_warrior_lodge_titan"
-		texturefile = "gfx\\interface\\societies\\symbol_small_warrior_lodge_norse.dds"
+		texturefile = "gfx\\interface\\ACR\\symbol_small_ravagers_of_perses.dds"
 		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_society_portrait_ring_warrior_lodge_titan"
-		texturefile = "gfx\\interface\\societies\\portrait_ring_warrior_lodge_norse.dds"
+		texturefile = "gfx\\interface\\societies\\portrait_ring_wolf_warriors.dds"
 	}
 	spriteType = {
 		name = "GFX_society_portrait_ring_small_warrior_lodge_titan"
-		texturefile = "gfx\\interface\\societies\\portrait_ring_small_warrior_lodge_norse.dds"
+		texturefile = "gfx\\interface\\societies\\portrait_ring_small_wolf_warriors.dds"
 	}
 	spriteType = {
 		name = "GFX_society_currency_warrior_lodge_titan"
@@ -145,24 +141,24 @@ spriteTypes = {
     ### The Champions of the Sun ###
 	spriteType = {
 		name = "GFX_society_main_background_warrior_lodge_egyptian"
-		texturefile = "gfx\\interface\\societies\\society_bg_warrior_lodge_zun.dds"
+		texturefile = "gfx\\interface\\societies\\society_bg_fire_warriors.dds"
 	}
 	spriteType = {
 		name = "GFX_society_expansion_background_warrior_lodge_egyptian"
-		texturefile = "gfx\\interface\\societies\\society_exp_bg_warrior_lodge_zun.dds"
+		texturefile = "gfx\\interface\\societies\\society_exp_bg_fire_warriors.dds"
 	}
 	spriteType = {
 		name = "GFX_icon_small_warrior_lodge_egyptian"
-		texturefile = "gfx\\interface\\societies\\symbol_small_warrior_lodge_zun.dds"
+		texturefile = "gfx\\interface\\societies\\symbol_small_fire_warriors.dds"
 		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_society_portrait_ring_warrior_lodge_egyptian"
-		texturefile = "gfx\\interface\\societies\\portrait_ring_warrior_lodge_zun.dds"
+		texturefile = "gfx\\interface\\societies\\portrait_ring_fire_warriors.dds"
 	}
 	spriteType = {
 		name = "GFX_society_portrait_ring_small_warrior_lodge_egyptian"
-		texturefile = "gfx\\interface\\societies\\portrait_ring_small_warrior_lodge_zun.dds"
+		texturefile = "gfx\\interface\\societies\\portrait_ring_small_fire_warriors.dds"
 	}
 	spriteType = {
 		name = "GFX_society_currency_warrior_lodge_egyptian"

@@ -8,12 +8,7 @@ pagan_group = {
 
 	titan_pagan = {
 		graphical_culture = norsegfx
-		alternate_start = {
-			OR = {
-				has_alternate_start_parameter = { key = religion value = full_random }
-				has_alternate_start_parameter = { key = religion value = random_heresy }
-			}
-		}
+		alternate_start = { always = no }
 
 		icon = 58
 		heresy_icon = 59
@@ -424,7 +419,7 @@ pagan_group = {
 	aten_pagan = { # Atenism
 		graphical_culture = africangfx
 		interface_skin = { zoroastrian_interface muslim_interface }
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		alternate_start = { always = no }
 
 		#pre_reformed = yes
 

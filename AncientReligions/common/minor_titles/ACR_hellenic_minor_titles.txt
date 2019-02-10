@@ -156,7 +156,7 @@ title_vestalis = {
 	}
 		
 	allowed_to_grant = {
-		has_landed_title = d_hellenic_pagan
+		has_landed_title = k_hellenic_pagan
 	}
 
 	gain_effect = {
@@ -165,7 +165,7 @@ title_vestalis = {
 		add_trait = vestalis
 		recalc_succession = yes
 		set_character_flag = flag_vestalis
-		d_hellenic_pagan = { owner = { change_variable = { which = "num_vestales" value = 1 } } }
+		k_hellenic_pagan = { owner = { change_variable = { which = "num_vestales" value = 1 } } }
 	}
 	lose_effect = {
 	}
@@ -196,7 +196,7 @@ title_vestalis_maxima = {
 	}
 	
 	allowed_to_grant = {
-		has_landed_title = d_hellenic_pagan
+		has_landed_title = k_hellenic_pagan
 	}
 
 	gain_effect = {
@@ -226,7 +226,7 @@ title_flamen_dialis = {
 		is_adult = yes
 		is_female = no
 		OR = {
-			spouse = { religion_openly_hellenic_or_reformed_trigger }
+			spouse = { religion_openly_hellenic_or_reformed_trigger = yes}
 			# We want to remove the title by event if his wife dies or converts
 			has_minor_title = title_flamen_dialis
 		}
@@ -234,7 +234,7 @@ title_flamen_dialis = {
 	}
 	
 	allowed_to_grant = {
-		has_landed_title = d_hellenic_pagan
+		has_landed_title = k_hellenic_pagan
 	}
 
 	gain_effect = {
@@ -265,7 +265,7 @@ title_flaminica_dialis = {
 	}
 	
 	allowed_to_grant = {
-		has_landed_title = d_hellenic_pagan
+		has_landed_title = k_hellenic_pagan
 	}
 
 	gain_effect = {
@@ -291,7 +291,7 @@ title_flamen_martialis = {
 		is_adult = yes
 		is_female = no
 		OR = {
-			spouse = { religion_openly_hellenic_or_reformed_trigger }
+			spouse = { religion_openly_hellenic_or_reformed_trigger = yes }
 			# We want to remove the title by event if his wife dies or converts
 			has_minor_title = title_flamen_martialis
 		}
@@ -299,7 +299,7 @@ title_flamen_martialis = {
 	}
 	
 	allowed_to_grant = {
-		has_landed_title = d_hellenic_pagan
+		has_landed_title = k_hellenic_pagan
 	}
 
 	gain_effect = {
@@ -330,7 +330,7 @@ title_flaminica_martialis = {
 	}
 	
 	allowed_to_grant = {
-		has_landed_title = d_hellenic_pagan
+		has_landed_title = k_hellenic_pagan
 	}
 
 	gain_effect = {
@@ -367,7 +367,7 @@ title_flamen_quirinalis = {
 		religion_openly_hellenic_or_reformed_trigger = yes
 	}
 	allowed_to_grant = {
-		has_landed_title = d_hellenic_pagan
+		has_landed_title = k_hellenic_pagan
 	}
 
 	gain_effect = {
@@ -398,7 +398,7 @@ title_flaminica_quirinalis = {
 	}
 	
 	allowed_to_grant = {
-		has_landed_title = d_hellenic_pagan
+		has_landed_title = k_hellenic_pagan
 	}
 
 	gain_effect = {

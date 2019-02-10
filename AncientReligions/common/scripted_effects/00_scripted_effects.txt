@@ -14335,7 +14335,6 @@ spawn_elder_effect = {
 				intrigue = 4
 				martial = 4
 			}
-			narrative_event = { id = HF.25818 days = 30 } #Notify everyone that the crusade has actually reached Antioch and is ready to engage.
 		}
 	}
 	if = { 
@@ -16885,7 +16884,6 @@ add_chinese_artifact_effect = { #Used in event JD.15016 (possible to use elsewhe
 				new_artifact = {
 					set_name = chinese_tapestry_grand_name
 				}
-				trigger = { ROOT = { NOT = { has_artifact = chinese_tapestry_grand } } }
 			}
 		}
 		new_artifact = {
@@ -17549,7 +17547,7 @@ root_secret_religion_provinces_convert_effect = {
 					}
 				}
 			} 
-			secret_religious_society_egyptian_reformed_pagan = { 
+			secret_religious_society_egyptian_pagan_reformed = { 
 				PREV = {
 					any_demesne_province = {
 						limit = {
@@ -20952,22 +20950,25 @@ tiered_high_piety_negative_effect = {
 #Used for gluttonous and hedonistic actions.
 gain_weight_small_effect = {
 	custom_tooltip = {
+		text = acr_weight_gain_small
 		hidden_tooltip = {
-		change_variable = { which = physique_variable value = 5 }
+			change_variable = { which = physique_variable value = 5 }
 		}
 	}
 } 
 gain_weight_medium_effect = {
 	custom_tooltip = {
+		text = acr_weight_gain_medium
 		hidden_tooltip = {
-		change_variable = { which = physique_variable value = 10 }
+			change_variable = { which = physique_variable value = 10 }
 		}
 	}
 } 
 gain_weight_large_effect = {
 	custom_tooltip = {
+		text = acr_weight_gain_large
 		hidden_tooltip = {
-		change_variable = { which = physique_variable value = 15 }
+			change_variable = { which = physique_variable value = 15 }
 		}
 	}
 }
@@ -20975,6 +20976,7 @@ gain_weight_large_effect = {
 #Used for training and balanced lifestyle.
 balance_weight_small_effect =  {
 	custom_tooltip = {
+		text = acr_weight_balance_small
 		hidden_tooltip = {
 			#If variable is above 1, reduce it. If it's below 1 increase it.
 			if = { 
@@ -20994,6 +20996,7 @@ balance_weight_small_effect =  {
 } 
 balance_weight_medium_effect = {
 	custom_tooltip = {
+		text = acr_weight_balance_medium
 		hidden_tooltip = {
 			#If variable is above 1, reduce it. If it's below 1 increase it.
 			if = { 
@@ -21014,6 +21017,7 @@ balance_weight_medium_effect = {
 
 balance_weight_large_effect = { #Should be used rarely.
 	custom_tooltip = {
+		text = acr_weight_balance_large
 		hidden_tooltip = {
 			#If variable is above 1, reduce it. If it's below 1 increase it.
 			if = { 
@@ -21035,22 +21039,25 @@ balance_weight_large_effect = { #Should be used rarely.
 #Used for seclusions, fasting, dungeon starvation, etc.
 lose_weight_small_effect = {
 	custom_tooltip = {
+		text = acr_weight_loss_small
 		hidden_tooltip = {
-		change_variable = { which = physique_variable value = -6 } #Because of the way trigger works, checks if you are below -5/-10/-15
+			change_variable = { which = physique_variable value = -6 } #Because of the way trigger works, checks if you are below -5/-10/-15
 		}
 	}
 } 
 lose_weight_medium_effect = {
 	custom_tooltip = {
+		text = acr_weight_loss_medium
 		hidden_tooltip = {
-	change_variable = { which = physique_variable value = -11 }
+			change_variable = { which = physique_variable value = -11 }
 		}
 	}
 } 
 lose_weight_large_effect = {
 	custom_tooltip = {
+		text = acr_weight_loss_large
 		hidden_tooltip = {
-	change_variable = { which = physique_variable value = -16 }
+			change_variable = { which = physique_variable value = -16 }
 		}
 	}
 }  
@@ -22283,6 +22290,20 @@ add_warrior_lodge_leader_trait_effect = {
 		warrior_lodge_hellenic = {
 			add_trait = hellenic_leader
 		}
+		
+		### ACR ###
+		warrior_lodge_celtic = {
+			add_trait = celtic_leader
+		}
+		warrior_lodge_britannic = {
+			add_trait = britannic_leader
+		}
+		warrior_lodge_titan = {
+			add_trait = titan_leader
+		}
+		warrior_lodge_egyptian = {
+			add_trait = egyptian_leader
+		}
 	}
 }
 fire_haruspicy_event_effect = {
@@ -22293,7 +22314,8 @@ fire_haruspicy_event_effect = {
 					OR = { 
 						religion = hellenic_pagan 
 						religion = hellenic_pagan_reformed
-						has_religion_feature = religion_haruspicy 
+						has_religion_feature = religion_haruspicy
+						has_religion_feature = religion_feature_celtic
 					} 
 				} 
 			}
@@ -22307,7 +22329,8 @@ fire_haruspicy_event_effect = {
 					OR = { 
 						religion = hellenic_pagan 
 						religion = hellenic_pagan_reformed
-						has_religion_feature = religion_haruspicy 
+						has_religion_feature = religion_haruspicy
+						has_religion_feature = religion_feature_celtic
 					} 
 				} 
 			}
@@ -25467,8 +25490,15 @@ add_random_commander_trait_effect = {
 				}
 			}
 			add_trait = unyielding_leader
+		}
+		1 = {
+			trigger = {
+				NOT = {
+					trait = war_elephant_leader
 				}
-				culture_group = chinese_group
+				location = {
+					region = world_india
+				}
 			}
 			add_trait = war_elephant_leader
 		}
@@ -25768,8 +25798,8 @@ landless_pope_effect = {
 					is_name_randomized = yes
 				}
 			}
-			add_trait = levy_coordinator
 		}
+		add_trait = levy_coordinator
 		if = {
 			limit = {
 				NOR = {
@@ -26011,7 +26041,7 @@ change_rain_effect = { # Needs a province scope...
 			}
 		}
 	}
-	else = {
+	else_if = {
 		limit = { has_province_modifier = africa_drought }
 		random_list = {
 			10 = { # Make it better (heavy rain)...
@@ -27183,10 +27213,6 @@ reformation_god_names_changes_effect = { #Reforming religion with certain Doctri
 					add_evil_god_name = GOD_DANA
 					add_evil_god_name = GOD_SEQUANA
 				}
-				remove_god_names = yes
-				set_high_god_name = GOD_SANGPO_BUMTRI
-				add_god_name = GOD_SANGPO_BUMTRI_2
-				add_evil_god_name = GOD_THE_EVIL_ONES
 			}
 			if = { #A ruler reforms Egyptian Paganism
 				limit = {
@@ -27218,16 +27244,17 @@ reformation_god_names_changes_effect = { #Reforming religion with certain Doctri
 						has_religion_feature = religion_matriarchal
 					}
 					set_high_god_name = GOD_AMAUNET
+					add_god_name = GOD_AMAUNET
 					if = {
 						limit = {
 							NOT = { has_religion_feature = religion_dogmatic }
 						}
-						add_god_name = GOD_AMAUNET
 						add_god_name = GOD_HAUHET
 						add_god_name = GOD_KAUKET
 						add_god_name = GOD_NAUNET
 						add_god_name = GOD_ISIS
 					}
+					add_evil_god_name = GOD_AMON
 					add_evil_god_name = GOD_APEP
 					add_evil_god_name = GOD_SET
 				}
@@ -27236,11 +27263,11 @@ reformation_god_names_changes_effect = { #Reforming religion with certain Doctri
 						has_religion_feature = religion_patriarchal
 					}
 					set_high_god_name = GOD_AMON
+					add_god_name = GOD_AMON
 					if = {
 						limit = {
 							NOT = { has_religion_feature = religion_dogmatic }
 						}
-						add_god_name = GOD_AMON
 						add_god_name = GOD_HEH
 						add_god_name = GOD_KEK
 						add_god_name = GOD_NUN
@@ -27261,11 +27288,15 @@ reformation_god_names_changes_effect = { #Reforming religion with certain Doctri
 				OR = { 
 					has_religion_feature = religion_holy_family 
 					has_religion_feature = religion_feature_zun
+					religion = egyptian_pagan_reformed
 				}
 			}
 			if = {
 				limit = { #Reformer himself, but only if he is not becoming the High God due to synergy.
-					NOT = { has_religion_feature = religion_temporal_head }
+					OR = {
+						NOT = { has_religion_feature = religion_temporal_head }
+						has_religion_feature = religion_feature_egyptian
+					}
 					OR = { 
 						AND = { 
 							is_female = no

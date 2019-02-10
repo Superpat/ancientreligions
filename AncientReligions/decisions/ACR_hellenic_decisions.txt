@@ -37,6 +37,8 @@ decisions = {
 					d_sacred_band = {
 						grant_title = PREV
 					}
+					set_government_type = order_government
+					set_defacto_liege = this
 				}
 			}
 			religion_authority = {
@@ -192,6 +194,8 @@ decisions = {
 				d_sickles = {
 					grant_title = PREV
 				}
+				set_government_type = order_government
+				set_defacto_liege = this
 				wealth = 200
 				piety = 300
 				prestige = 300
@@ -528,6 +532,8 @@ decisions = {
 				d_men_of_steel = {
 					grant_title = PREV
 				}
+				set_government_type = order_government
+				set_defacto_liege = this
 				wealth = 200
 				piety = 300
 				prestige = 100

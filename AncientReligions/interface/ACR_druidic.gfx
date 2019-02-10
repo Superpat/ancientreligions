@@ -99,6 +99,20 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	spriteType = {
+		name = "GFX_trait_celtic_leader"
+		texturefile = "gfx\\traits\ACR\celtic_leader.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_britannic_leader"
+		texturefile = "gfx\\traits\ACR\britannic_leader.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 
 	# Event Pictures
 	spriteType = {
@@ -279,5 +293,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_invite_bard_to_court"
 		texturefile = "gfx\\interface\ACR\decision_icon_hold_divination.dds"
+	}
+
+	spriteType = {
+		name = "GFX_religion_feature_celtic"
+		texturefile = "gfx\\interface\ACR\religion_feature_celtic.dds"
 	}
 }

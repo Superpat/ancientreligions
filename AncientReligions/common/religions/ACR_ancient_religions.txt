@@ -1,14 +1,14 @@
-# Religion-specific opinion can be added to modifiers (E.G., norse_pagan_opinion = 5), but the modifier *has* to be defined in 00_modifier_definitions.txt as well. It also needs localisation. Works for groups as well
+# Religion-specific opinion can be added to modifiers (E.G., 
+# norse_pagan_opinion = 5), but the modifier *has* to be defined in 
+# 00_modifier_definitions.txt as well. It also needs localisation. Works
+# for groups as well
 
 pagan_group = {
+	color = { 0.6 0.0 0.0 } # included here to make validator shut the hell up
+
 	titan_pagan = {
 		graphical_culture = norsegfx
-		alternate_start = {
-			OR = {
-				has_alternate_start_parameter = { key = religion value = full_random }
-				has_alternate_start_parameter = { key = religion value = random_heresy }
-			}
-		}
+		alternate_start = { always = no }
 
 		icon = 58
 		heresy_icon = 59
@@ -114,7 +114,7 @@ pagan_group = {
 		priests_can_marry = yes
 		female_temple_holders = yes
 
-		hard_to_convert = yes
+		hard_to_convert = no
 		can_demand_religious_conversion = yes
 
 		allow_looting = no
@@ -285,7 +285,8 @@ pagan_group = {
 		priests_can_inherit = no
 		investiture = yes
 
-		hard_to_convert = yes
+		hard_to_convert = no
+		attacking_same_religion_piety_loss = yes
 		can_demand_religious_conversion = yes
 
 		female_temple_holders = yes
@@ -336,13 +337,16 @@ pagan_group = {
 			GOD_SET GOD_APEP
 		}
 		
-		allow_rivermovement = yes
 		max_wives = 4
-		female_temple_holders = yes
-		divine_blood = yes
+		allow_rivermovement = yes
 		can_call_crusade = yes
 		join_crusade_if_bordering_hostile = yes
-		
+		divine_blood = yes
+		psc_marriage = yes
+		bs_marriage = yes
+		cousin_marriage = yes
+		pc_marriage = yes
+
 		religious_clothing_head = 5
 		religious_clothing_priest = 5
 
@@ -415,7 +419,7 @@ pagan_group = {
 	aten_pagan = { # Atenism
 		graphical_culture = africangfx
 		interface_skin = { zoroastrian_interface muslim_interface }
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+		alternate_start = { always = no }
 
 		#pre_reformed = yes
 
@@ -474,7 +478,7 @@ pagan_group = {
 		can_call_crusade = yes
 		join_crusade_if_bordering_hostile = yes
 
-		hard_to_convert = yes
+		hard_to_convert = no
 		can_demand_religious_conversion = yes
 
 		religious_clothing_head = 5

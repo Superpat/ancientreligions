@@ -983,7 +983,9 @@ can_be_chancellor_trigger = {
 					OR = { 
 						liege = { has_religion_feature = religion_matriarchal } 
 						liege = { has_religion_feature = religion_equal } 
-						liege = { has_religion_feature = religion_feature_bon } 
+						liege = { has_religion_feature = religion_feature_bon }
+						liege = { has_religion_feature = religion_feature_celtic }
+						liege = { has_religion_feature = religion_feature_egyptian }
 					} 
 				}
 				trait = horse # So we can have female glitterhoofs! :D
@@ -1068,7 +1070,9 @@ can_be_marshal_trigger = {
 					OR = { 
 						liege = { has_religion_feature = religion_matriarchal } 
 						liege = { has_religion_feature = religion_equal } 
-						liege = { has_religion_feature = religion_feature_bon } 
+						liege = { has_religion_feature = religion_feature_bon }
+						liege = { has_religion_feature = religion_feature_celtic }
+						liege = { has_religion_feature = religion_feature_egyptian }
 					} 
 				}
 				trait = horse # So we can have female glitterhoofs! :D
@@ -1153,6 +1157,8 @@ can_be_treasurer_trigger = {
 						liege = { has_religion_feature = religion_matriarchal } 
 						liege = { has_religion_feature = religion_equal } 
 						liege = { has_religion_feature = religion_feature_bon } 
+						liege = { has_religion_feature = religion_feature_celtic }
+						liege = { has_religion_feature = religion_feature_egyptian }
 					} 
 				}
 				trait = horse # So we can have female glitterhoofs! :D
@@ -1229,6 +1235,8 @@ can_be_spymaster_trigger = {
 						liege = { has_religion_feature = religion_matriarchal } 
 						liege = { has_religion_feature = religion_equal } 
 						liege = { has_religion_feature = religion_feature_bon } 
+						liege = { has_religion_feature = religion_feature_celtic }
+						liege = { has_religion_feature = religion_feature_egyptian }
 					} 
 				}
 				trait = horse # So we can have female glitterhoofs! :D
@@ -1489,6 +1497,8 @@ can_be_councilmember_emperor_trigger = {
 						liege = { has_religion_feature = religion_matriarchal } 
 						liege = { has_religion_feature = religion_equal } 
 						liege = { has_religion_feature = religion_feature_bon } 
+						liege = { has_religion_feature = religion_feature_celtic }
+						liege = { has_religion_feature = religion_feature_egyptian }
 					} 
 				}
 				AND = {
@@ -1901,8 +1911,10 @@ male_can_hold_minor_title_trigger = {
 			text = tooltip_not_matriarchal_liege_religion_feature
 			NOR = {
 				has_religion_feature = religion_matriarchal
+				religion = britannic_pagan
 				liege = {
 					has_religion_feature = religion_matriarchal
+					religion = britannic_pagan
 				}
 			}
 		}
@@ -1930,6 +1942,7 @@ female_can_hold_minor_title_trigger = {
 						religion = bogomilist
 						religion = mazdaki
 						religion = celtic_pagan
+						religion = egyptian_pagan
 						religion = promethean_pagan
 						religion = britannic_pagan
 					}
@@ -1941,10 +1954,14 @@ female_can_hold_minor_title_trigger = {
 				AND = {
 					OR = {
 						has_religion_feature = religion_equal
+						has_religion_feature = religion_feature_celtic
+						has_religion_feature = religion_feature_egyptian
 						has_religion_feature = religion_matriarchal
 					}
 					liege = {
 						has_religion_feature = religion_equal
+						has_religion_feature = religion_feature_celtic
+						has_religion_feature = religion_feature_egyptian
 						has_religion_feature = religion_matriarchal
 					}
 				}
@@ -1997,6 +2014,7 @@ female_can_hold_minor_commander_title_trigger = {
 						religion = bogomilist
 						religion = mazdaki
 						religion = celtic_pagan
+						religion = egyptian_pagan
 						religion = promethean_pagan
 						religion = britannic_pagan
 					}
@@ -2009,10 +2027,14 @@ female_can_hold_minor_commander_title_trigger = {
 					OR = {
 						has_religion_feature = religion_equal
 						has_religion_feature = religion_matriarchal
+						has_religion_feature = religion_feature_celtic
+						has_religion_feature = religion_feature_egyptian
 					}
 					liege = {
 						has_religion_feature = religion_equal
 						has_religion_feature = religion_matriarchal
+						has_religion_feature = religion_feature_celtic
+						has_religion_feature = religion_feature_egyptian
 					}
 				}
 			}
@@ -2364,7 +2386,7 @@ FROMs_religion_is_playable_trigger = {
 			}
 			NOT = { has_dlc = "The Old Gods" }
 		}
-		AND = { #Means you're not allowed to play the Bön religion (Pagan)
+		AND = { #Means you're not allowed to play the Bon religion (Pagan)
 			FROM = { 
 				OR = { 
 					religion = bon
@@ -2723,7 +2745,7 @@ is_monastic_member_trigger = {
 	OR = {
 		is_dharmic_monastic_member_trigger = yes
 		is_christian_monastic_member_trigger = yes
-		society_member_of = monastic_order_stoics
+		is_hellenic_monastic_order_member_trigger = yes
 	}
 }
 
@@ -8288,6 +8310,8 @@ can_still_be_marshal_byzantine_trigger = {
 						liege = { has_religion_feature = religion_matriarchal } 
 						liege = { has_religion_feature = religion_equal } 
 						liege = { has_religion_feature = religion_feature_bon } 
+						liege = { has_religion_feature = religion_feature_celtic } 
+						liege = { has_religion_feature = religion_feature_egyptian } 
 					} 
 				}
 				trait = horse # So we can have female glitterhoofs! :D

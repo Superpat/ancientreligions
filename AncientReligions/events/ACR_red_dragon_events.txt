@@ -16,7 +16,7 @@ namespace = celtic
 # The birth of the Red Dragon Knights
 narrative_event = {
 	id = celtic.1319
-	title = EVTTITLEceltic.1319
+	title = celtic.1319.title
 	desc = celtic.1319.desc
 	picture = GFX_evt_celtic_warriors
 	border = GFX_event_narrative_frame_religion

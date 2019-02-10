@@ -2375,6 +2375,7 @@ monastic_order_stoics = {
 			religion = hellenic_pagan 
 			religion = hellenic_pagan_reformed
 			religion = promethean_pagan
+			trait = stoic
 			AND = { 
 				culture = roman
 				OR = { #Somewhat compatible when mixed with Roman culture.
@@ -2386,7 +2387,11 @@ monastic_order_stoics = {
 				}
 			}
 		}
-		NOT = { trait = excommunicated }
+		NOR = {
+			trait = excommunicated
+			trait = skeptic
+			trait = epicurean
+		}
 		custom_tooltip = {
 			text = did_not_betray_society
 			NOT = { has_character_flag = betrayed_monastic_order_stoics }
@@ -2409,6 +2414,7 @@ monastic_order_stoics = {
 			religion = hellenic_pagan 
 			religion = hellenic_pagan_reformed
 			religion = promethean_pagan
+			trait = stoic
 			AND = { 
 				culture = roman
 				OR = { #Somewhat compatible when mixed with Roman culture.
@@ -2491,8 +2497,16 @@ monastic_order_stoics = {
     	
     	per_attribute = {
     		name = learning
-    		value = 0.5
+    		value = 0.3
     	}
+		per_attribute = {
+			name = diplomacy
+			value = 0.2
+		}
+		has_trait = {
+			trait = stoic
+			value = 5
+		}
 		has_trait = {
 			trait = scholar
 			value = 4
@@ -2576,7 +2590,10 @@ monastic_order_stoics = {
 
 	member_score = {
 		value = 10
-
+		modifier = {
+			trait = stoic
+			factor = 5
+		}
 		modifier = {
 			trait = scholar
 			factor = 5
@@ -2643,7 +2660,8 @@ monastic_order_stoics = {
 				is_tribal = yes
 				is_nomadic = yes
 			}
-			OR = { 
+			OR = {
+				trait = stoic
 				religion = hellenic_pagan 
 				religion = hellenic_pagan_reformed
 				AND = { 
@@ -2664,7 +2682,11 @@ monastic_order_stoics = {
 				mercenary = yes
 				holy_order = yes
 			}
-			NOT = { trait = excommunicated }
+			NOR = {
+				trait = excommunicated
+				trait = skeptic
+				trait = epicurean
+			}
 			has_secret_religion_trait_trigger = no
 			OR = {
 				trait = zealous
@@ -2730,7 +2752,6 @@ hermetics = {
 				OR = {
 					religion = hellenic_pagan
 					religion = hellenic_pagan_reformed
-					religion = promethean_pagan
 				}
 			}
 			religion = taoist
@@ -10672,7 +10693,7 @@ warrior_lodge_hellenic = {
 				}
 			}
 		}
-is_adult = yes
+		is_adult = yes
 		custom_tooltip = {
 			text = has_not_angered_society_tt
 			hidden_trigger = { NOT = { has_character_modifier = warrior_lodge_failed_joining_cd } }

@@ -1,6 +1,6 @@
 living_legend_male = {
     inheritance = patrilineal
-    matrilinial_override = yes
+    matrilineal_override = yes
     allow_bastards = no
     flags = { bloodline_heroes bloodline_female_marshal created_bloodline }
     picture = GFX_bloodlines_placeholder_symbol
@@ -17,7 +17,7 @@ living_legend_male = {
 
 living_legend_female = {
     inheritance = matrilineal
-    matrilinial_override = yes
+    matrilineal_override = yes
     allow_bastards = no
     flags = { bloodline_heroes bloodline_female_marshal created_bloodline }
     picture = GFX_bloodlines_placeholder_symbol
@@ -48,4 +48,48 @@ arthur_pendragon = {
     monthly_character_prestige = 0.1
 
     vassal_opinion = 15
+}
+
+saintly_bloodline_celtic_01 = {
+	monthly_character_piety = 0.3
+	command_modifier = {
+		religious_enemy = 0.3
+	}	
+	saintly_defender_bloodline = 1
+	inheritance = patrilineal
+	allow_bastards = no
+	flags = { ancestor_worship_bloodline defender_of_the_faith }
+	picture = GFX_bloodlines_symbol_war
+	active = {
+		custom_tooltip = {
+			text = saintly_bloodline_same_religion_TT
+			FROM = {
+				founder = {
+					religion = ROOT
+				}
+			}
+		}
+	}
+}
+
+saintly_bloodline_britannic_01 = {
+	monthly_character_piety = 0.3
+	command_modifier = {
+		religious_enemy = 0.3
+	}	
+	saintly_defender_bloodline = 1
+	inheritance = matrilineal
+	allow_bastards = no
+	flags = { ancestor_worship_bloodline defender_of_the_faith }
+	picture = GFX_bloodlines_symbol_horse
+	active = {
+		custom_tooltip = {
+			text = saintly_bloodline_same_religion_TT
+			FROM = {
+				founder = {
+					religion = ROOT
+				}
+			}
+		}
+	}
 }

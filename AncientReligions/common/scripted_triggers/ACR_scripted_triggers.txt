@@ -4,11 +4,14 @@ is_feminist_religion_trigger = {
 		religion = celtic_pagan
 		religion = britannic_pagan
 		religion = promethean_pagan
+		religion = egyptian_pagan
 		religion = messalian
 		religion = cathar
 		has_religion_feature = religion_matriarchal
 		has_religion_feature = religion_equal
 		has_religion_feature = religion_feature_bon
+		has_religion_feature = religion_feature_celtic
+		has_religion_feature = religion_feature_egyptian
 	}
 }
 
@@ -89,7 +92,7 @@ archdryad_non_interference_trigger = {
 	}
 }
 
-# evaluates to true if hte currently scoped character has
+# evaluates to true if the currently scoped character has
 # submitted to the arch-dryad's demands recently
 archdryad_submission_trigger = {
 	AND = {
@@ -273,11 +276,10 @@ true_religion_egyptian_or_reformed_trigger = {
 
 religion_openly_in_celtic_subgroup_trigger = {
 	custom_tooltip = {
-		text = religion_openly_celtic_or_reformed_tooltip
+		text = religion_openly_in_celtic_subgroup_tt
 		hidden_trigger = {
 			OR = {
-				religion = celtic_pagan
-				religion = celtic_pagan_reformed
+				religion_openly_celtic_or_reformed_trigger = yes
 				religion = britannic_pagan
 			}
 		}
@@ -302,8 +304,7 @@ religion_openly_in_egyptian_subgroup_trigger = {
 		text = religion_openly_in_egyptian_subgroup_tooltip
 		hidden_trigger = {
 			OR = {
-				religion = egyptian_pagan
-				religion = egyptian_pagan_reformed
+				religion_openly_egyptian_or_reformed_trigger = yes
 				religion = aten_pagan
 			}
 		}
@@ -315,8 +316,7 @@ religion_secretly_in_celtic_subgroup_trigger = {
 		text = secret_religion_in_celtic_subgroup_tooltip
 		hidden_trigger = {
 			OR = {
-				secret_religion = celtic_pagan
-				secret_religion = celtic_pagan_reformed
+				religion_secretly_celtic_or_reformed_trigger = yes
 				secret_religion = britannic_pagan
 			}
 		}
@@ -341,8 +341,7 @@ religion_secretly_in_egyptian_subgroup_trigger = {
 		text = secret_religion_in_egyptian_subgroup_tooltip
 		hidden_trigger = {
 			OR = {
-				secret_religion = egyptian_pagan
-				secret_religion = egyptian_pagan_reformed
+				religion_secretly_egyptian_or_reformed_trigger = yes
 				secret_religion = aten_pagan
 			}
 		}
@@ -354,8 +353,7 @@ true_religion_in_celtic_subgroup_trigger = {
 		text = true_religion_in_celtic_subgroup_tooltip
 		hidden_trigger = {
 			OR = {
-				true_religion = celtic_pagan
-				true_religion = celtic_pagan_reformed
+				true_religion_celtic_or_reformed_trigger = yes
 				true_religion = britannic_pagan
 			}
 		}
@@ -380,8 +378,7 @@ true_religion_in_egyptian_subgroup_trigger = {
 		text = true_religion_in_egyptian_subgroup_tooltip
 		hidden_trigger = {
 			OR = {
-				true_religion = egyptian_pagan
-				true_religion = egyptian_pagan_reformed
+				true_religion_egyptian_or_reformed_trigger = yes
 				true_religion = aten_pagan
 			}
 		}
@@ -598,6 +595,7 @@ prev_can_borrow_from_this_holy_order_trigger = {
 }
 
 # title scope, checks that FROM can vassalize the currently scoped holy order
+# NOTE: This trigger is currently unused!
 this_holy_order_can_be_vassalized_by_from_trigger = {
 	OR = {
 		AND = { # hellenic legion
@@ -610,7 +608,7 @@ this_holy_order_can_be_vassalized_by_from_trigger = {
 		}
 		AND = {
 			title = d_sacred_band
-			d_hellenic_pagan = {
+			k_hellenic_pagan = {
 				holder_scope = {
 					character = FROM
 				}
@@ -664,8 +662,10 @@ has_unseelie_prerequisites = {
 has_coven_prerequisites = {
 	has_common_devilworship_prerequisites = yes
 	OR = {
-		religion_openly_in_hellenic_subgroup_trigger = yes
-		religion_secretly_in_hellenic_subgroup_trigger = yes
+		religion = promethean_pagan
+		religion = titan_pagan
+		secret_religion = promethean_pagan
+		secret_religion = titan_pagan
 	}
 }
 
@@ -685,4 +685,25 @@ has_dionysus_prerequisites = {
 		trait = hedonist
 		trait = decadent
 	}
+}
+
+has_shezmu_prerequisites = {
+	age = 16
+	OR = {
+		religion_openly_in_egyptian_subgroup_trigger = yes
+		religion_secretly_in_egyptian_subgroup_trigger = yes
+	}
+	NOT = { has_common_devilworship_prerequisites = yes }
+}
+
+is_hellenic_monastic_order_member_trigger = {
+	OR = {
+		is_in_society = monastic_order_stoics
+		is_in_society = monastic_order_skeptics
+		is_in_society = monastic_order_epicureans
+	}
+}
+
+is_celtic_monastic_order_member_trigger = {
+	always = no # none exist yet!
 }

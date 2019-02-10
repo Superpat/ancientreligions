@@ -274,32 +274,6 @@ province_event = {
 	}
 }
 
-# The Priesthood Restored
-narrative_event = {
-	id = egyptian.6
-	title = egyptian.6.title
-	desc = egyptian.6.desc
-	picture = GFX_evt_bishop_muslim
-	border = GFX_event_narrative_frame_religion
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = egyptian.6.a
-		trigger = {
-			true_religion_in_egyptian_subgroup_trigger = yes
-		}
-	}
-	option = {
-		name = egyptian.6.b
-		trigger = {
-			true_religion_in_egyptian_subgroup_trigger = no
-		}
-	}
-}
-
 # Anubis Guard founded
 narrative_event = {
 	id = egyptian.7
@@ -3307,6 +3281,7 @@ character_event = {
 
 	trigger = {
 		NOR = { 
+			has_global_flag = egyptian_reformation
 			has_character_flag = lost_in_sandstorm
 			has_character_flag = awaiting_the_tribes
 			primary_title = { is_landless_type_title = yes }
@@ -3922,3 +3897,47 @@ character_event = {
 ############################
 ## Lost Heir of Cleopatra ##
 ############################
+
+#Egyptian Warrior Lodge has been recreated.
+#Players notified.
+narrative_event = {
+	id = egyptian.400
+	title = egyptian.400.title
+	desc = egyptian.400.desc
+	hide_from = yes
+	hide_new = yes
+
+	picture = GFX_evt_celtic_warriors
+	
+	only_playable = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = egyptian.400.a
+		trigger = {
+			OR = { 
+				society_member_of = warrior_lodge_egyptian
+				religion_openly_egyptian_or_reformed_trigger = yes
+				religion_secretly_egyptian_or_reformed_trigger = yes
+				can_join_society = warrior_lodge_egyptian
+			}
+		}
+		if = {
+			limit = { 
+				NOT = { society_member_of = warrior_lodge_egyptian }
+				can_join_society = warrior_lodge_egyptian
+			}
+			join_society = warrior_lodge_egyptian
+		}
+	}
+	option = {
+		name = egyptian.400.b
+		trigger = {
+			NOR = { 
+				society_member_of = warrior_lodge_egyptian
+				religion_openly_egyptian_or_reformed_trigger = yes
+				religion_secretly_egyptian_or_reformed_trigger = yes
+			}
+		}
+	}
+}

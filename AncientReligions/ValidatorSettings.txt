@@ -46,7 +46,7 @@ AddFlag = ContextValidator.AllowCharacterWideTargeting
 
 # Cultures that for some reason don't appear in the files but that you want
 # to consider valid anyways.
-(AddToEnum Culture) = {sicilian_greek sicilian}
+(AddToEnum Culture) = {sicilian_greek sicilian arpitan}
 
 # Culture groups that for some reason don't appear in the files but that you want
 # to consider valid anyways.
@@ -60,11 +60,34 @@ AddFlag = ContextValidator.AllowCharacterWideTargeting
 # to consider valid anyways.
 #(AddToEnum ReligionGroup) = { }
 
+# Sounds that for some reason don't appear in the files but that you want
+# to consider valid anyways.
+#(AddToEnum Sound) = { }
+
+# Traits that for some reason don't appear in the files but that you want
+# to consider valid anyways.
+(AddToEnum Trait) = {fertile fair tall calm_voice melodious_voice perceptive agile}
+
+# DLC names that for some reason don't appear in the files but that you want
+# to consider valid anyways.
+#(AddToEnum Dlc) = { }
+
+# Disables scripted trigger duplicate id checking
+AddFlag = DisableScriptedTriggerDuplicateIdChecking
+# Disables scripted effect duplicate id checking
+AddFlag = DisableScriptedEffectDuplicateIdChecking
+# Disables scripted score value duplicate id checking
+#AddFlag = DisableScriptedScoreValueDuplicateIdChecking
 
 ###########################################
 # LOCALIZATION
 ###########################################
 
+# Languages that should be ignored when doing localization checking
+# Note that this is the column number. The first language corresponds to
+# "1", the second to "2", etc. For example in vanilla, specifying "2"
+# would skip errors for FRENCH.
+(MakeEnum IgnoreLanguages) = { }
 # Disables check that all keys are found in the localization file. This assumes that you use keys everywhere. If not you'll get lots of false positives.
 #AddFlag = NoCheckKey
 # Don't check for the existence of a "_adj" entry for titles
@@ -94,13 +117,13 @@ AddFlag = CharacterHistory.NoBirthDeathCheck
 # Sets the most days that the father can be dead before a child is born
 (SetVar CharacterHistory.MaxDaysFatherDeadBeforeChild) = 300
 # Disables twin check
-#AddFlag = CharacterHistory.NoTwinCheck
+AddFlag = CharacterHistory.NoTwinCheck
 # Disables bastard check
-#AddFlag = CharacterHistory.NoBastardCheck
+AddFlag = CharacterHistory.NoBastardCheck
 # Don't enforce characters needing a death date
-#AddFlag = CharacterHistory.NoDeathDateNeeded
+AddFlag = CharacterHistory.NoDeathDateNeeded
 # Don't do disconnected dynasty checks
-#AddFlag = CharacterHistory.NoDisconnectedDynastyChecks
+AddFlag = CharacterHistory.NoDisconnectedDynastyChecks
 
 # These flags disable the corresponding checks for history, but only if the solution
 # would make the birth date before year 1. What this means is say character X is married
@@ -134,6 +157,8 @@ AddFlag = Events.NoCheckLeadingZeroInId
 #AddFlag = Events.NoCheckEventBorderPrefix
 # Disables checks that an event with hide_window=yes 
 AddFlag = Events.DisableSpecialHideWindowChecks
+# Disable duplicate ID checking
+#AddFlag = Events.DisableDuplicateIdChecking
 
 ###########################################
 # DECISIONS

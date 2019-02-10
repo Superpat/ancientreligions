@@ -18,7 +18,6 @@ character_event = {
 	picture = GFX_evt_Whispering_in_ear
 	border = GFX_event_normal_frame_religion
 	
-	ai = no
 	min_age = 16
 	capable_only = yes
 	prisoner = no
@@ -29,14 +28,12 @@ character_event = {
 		is_ruler = yes
 		in_command = no
 		NOR = {
-			OR = {
-				religion = celtic_pagan
-				religion = celtic_pagan_reformed
-			}
+			is_ancient_religion_trigger = yes
 			has_character_flag = hates_magic
 			any_courtier = {
 				has_minor_title = title_court_wizard
 			}
+			has_global_flag = celtic_reformation
 		}
 		OR = {
 			has_game_rule = {
@@ -55,6 +52,10 @@ character_event = {
 				name = acr_ai_revival
 				value = reduced
 			}
+			ai = yes
+		}
+		modifier = {
+			factor = 2
 			ai = yes
 		}
 	}	
@@ -499,6 +500,7 @@ character_event = {
 			trait = possessed
 		}
 		NOT = { has_character_modifier = voice_of_jesus }
+		NOT = { has_global_flag = celtic_reformation }
 		OR = {
 			has_game_rule = {
 				name = acr_ai_revival

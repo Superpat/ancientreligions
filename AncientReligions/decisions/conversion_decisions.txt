@@ -92,9 +92,6 @@ targetted_decisions = {
 				add_trait = pagan_branch_4
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
 		ai_will_do = {
 			factor = 0
 		}
@@ -2528,9 +2525,6 @@ targetted_decisions = {
 			}
 			culture = outremer
 		}
-		revoke_allowed = {
-			always = no
-		}
 		ai_will_do = {
 			factor = 1
 			
@@ -3004,9 +2998,6 @@ decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
 		
 		ai_will_do = {
 			factor = 1
@@ -3317,9 +3308,6 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -3439,9 +3427,6 @@ decisions = {
 					}
 				}
 			}
-		}
-		revoke_allowed = {
-			always = no
 		}
 		ai_will_do = {
 			factor = 1

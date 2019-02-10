@@ -968,6 +968,7 @@ character_event = {
 		}		
 		hidden_tooltip = {
 			new_character = {
+				add_random_education_trait = yes
 				add_lover = ROOT
 				if = {
 					limit = {
@@ -1174,6 +1175,7 @@ character_event = {
 		}		
 		hidden_tooltip = {
 			new_character = {
+				add_random_education_trait = yes
 				add_lover = ROOT
 				random = {
 					add_trait = strong
@@ -1940,6 +1942,7 @@ character_event = {
 					culture = PREV
 				}
 				new_character = {
+					add_random_education_trait = yes
 					add_spouse = PREV
 					add_lover = PREV
 					add_trait = fair
@@ -2742,7 +2745,6 @@ character_event = {
 #
 #####################################################################################################
 
-
 # While hunting, stumble on Artemis who is naked and bathing
 character_event = {
 	id = hellenic.550
@@ -3225,7 +3227,6 @@ narrative_event = {
 	}
 }
 
-
 # Artemis is tsundere for Apollo
 long_character_event = {
 	id = hellenic.564
@@ -3240,7 +3241,6 @@ long_character_event = {
 		custom_tooltip = { text = VIET_apollo_is_a_baka }
 	}
 }
-
 
 # Devotion to Artemis inspires virtue - repeatable event
 character_event = {
@@ -3379,7 +3379,6 @@ character_event = {
 	}
 }
 
-
 # Second time hunting with Artemis
 character_event = {
 	id = hellenic.566
@@ -3393,12 +3392,15 @@ character_event = {
 		set_character_flag =  VIET_hunted_with_artemis_twice
 	}
 
+	trigger = {
+		has_character_flag = VIET_is_artemis_bff
+	}
+
 	option = { # Ok
 		name = hellenic.566.a
 		hidden_tooltip = { character_event = { id = hellenic.567 } }
 	}
 }
-
 
 # Good time hunting with Artemis
 character_event = {
@@ -4714,13 +4716,11 @@ narrative_event = {
 			}
 			create_bloodline = {
 				type = chosen_of_artemis_female
-				has_dlc = "Holy Fury"
 			}
 		} 
 		else = {
 			create_bloodline = {
 				type = chosen_of_artemis_male
-				has_dlc = "Holy Fury"
 			}
 		}
 		###############################
@@ -6605,31 +6605,29 @@ province_event = {
 			name = VIET_glaucus_herb
 			duration = 1095
 		}
-		wealth = -5
-		random = {
-			add_trait = trusting
-			chance = 20
-		}
-		random_list = {
-			50 = {
-				custom_tooltip = { text = VIET_glaucus_herb_good_text }
-				hidden_tooltip = {
-					owner = {
+		owner = {
+			wealth = -5
+			random = {
+				add_trait = trusting
+				chance = 20
+			}
+			random_list = {
+				50 = {
+					custom_tooltip = { text = VIET_glaucus_herb_good_text }
+					hidden_tooltip = {
 						add_character_modifier = {
 							name = VIET_glaucus_herb_good
 							duration = -1
-						}					
+						}
 					}
 				}
-			}
-			50 = {
-				custom_tooltip = { text = VIET_glaucus_herb_bad_text }
-				hidden_tooltip = {
-					owner = {
+				50 = {
+					custom_tooltip = { text = VIET_glaucus_herb_bad_text }
+					hidden_tooltip = {
 						add_character_modifier = {
 							name = VIET_glaucus_herb_bad
 							duration = -1
-						}					
+						}
 					}
 				}
 			}

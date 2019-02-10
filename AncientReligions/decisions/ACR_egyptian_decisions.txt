@@ -152,13 +152,12 @@ decisions = {
 			set_global_flag = anubis_founded
 			prestige = -300
 			wealth = -300
-			activate_title = { title = d_anubis status = yes }
 			hidden_tooltip = {
 				set_character_flag = event_ancrel4007
 				narrative_event = { id = egyptian.7 }
 				create_character = {
 					random_traits = yes
-					religion = egyptian_pagan
+					religion = ROOT
 					culture = egyptian_arabic
 					dynasty = NONE
 					age = 34
@@ -171,9 +170,12 @@ decisions = {
 					}
 				}
 				new_character = {
+					activate_title = { title = d_anubis status = yes }
 					d_anubis = {
 						grant_title = PREV
 					}
+					set_government_type = order_government
+					set_defacto_liege = this
 					if = {
 						limit = { ROOT = { ai = no } }
 						ROOT = {
@@ -221,7 +223,7 @@ decisions = {
 				narrative_event = { id = egyptian.8 }
 				create_character = {
 					random_traits = yes
-					religion = egyptian_pagan
+					religion = ROOT
 					culture = egyptian_arabic
 					dynasty = NONE
 					age = 34
@@ -237,6 +239,8 @@ decisions = {
 					d_horus = {
 						grant_title = PREV
 					}
+					set_government_type = order_government
+					set_defacto_liege = this
 					if = {
 						limit = { ROOT = { ai = no } }
 						ROOT = {
@@ -406,6 +410,8 @@ decisions = {
 					d_burning_blades = {
 						grant_title = PREV
 					}
+					set_government_type = order_government
+					set_defacto_liege = this
 					if = {
 						limit = { ROOT = { ai = no } }
 						ROOT = {

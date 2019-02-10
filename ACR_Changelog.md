@@ -1,4 +1,4 @@
-2019-01-04 v0.43.0 "Sequana"
+2019-02-09 v0.43.0 "Sequana"
 ============================
 
 > Sequana is a Celtic river goddess popular in Gaul. She was the patron of the river that bore her name, now known as the Seine. A shrine near the source of the river holds a Roman era statue of the goddess, revealing her popularity even after Caesar's conquest. Hundreds of votive offerings to Sequana have been found at the bottom of the river near the shrine.

@@ -2762,24 +2762,6 @@ diploresponse_event = {
 	}
 }
 
-# GRANT_LANDED_TITLE_INTERACTION_DECLINE_EVENT =
-#diploresponse_event = {
-#	id = 229
-#
-#	is_triggered_only = yes
-#	major = no
-#
-#	trigger = {
-#		ai = no
-#	}
-#
-#	desc = "EVTDESC229"
-#
-#	option = {
-#		name = "OK"
-#	}
-#}
-
 # APPOINT_TO_OFFICE_INTERACTION_ACCEPT_EVENT =
 diploresponse_event = {
 	id = 230
@@ -4890,13 +4872,11 @@ narrative_event = {
 				} 
 			}
 			if = {
-				limit = { #Switch to equality.
+				limit = { #Switch to true cognatic.
 					ROOT = { 
-						OR = { 
+						OR = {
 							has_religion_feature = religion_equal 
 							has_religion_feature = religion_feature_bon
-							has_religion_feature = religion_feature_celtic
-							has_religion_feature = religion_feature_egyptian
 						}
 						NOR = {  
 							is_merchant_republic = yes
@@ -4911,6 +4891,26 @@ narrative_event = {
 							cooldown = no
 							opinion_effect = no
 						}
+					}
+				} 
+			}
+			if = {
+				limit = { #Switch to equal status of women.
+					ROOT = { 
+						OR = {
+							has_religion_feature = religion_equal 
+							has_religion_feature = religion_feature_bon
+							has_religion_feature = religion_feature_celtic
+							has_religion_feature = religion_feature_egyptian
+						}
+						NOR = {  
+							is_merchant_republic = yes
+							is_republic = yes
+						}
+					}
+				}
+				ROOT = { 
+					any_demesne_title = { 
 						add_law = {
 							law = status_of_women_4
 							cooldown = no
@@ -5453,31 +5453,45 @@ narrative_event = {
 				} 
 			}
 			if = {
-				limit = { 
-					ROOT = {
-						OR = { 
-							has_religion_feature = religion_equal 
-							has_religion_feature = religion_feature_bon
-							has_religion_feature = religion_feature_celtic
-							has_religion_feature = religion_feature_egyptian
-						}
+				limit = { #Switch to true cognatic.
+					OR = {
+						has_religion_feature = religion_equal 
+						has_religion_feature = religion_feature_bon
+					}
+					NOR = {  
+						is_merchant_republic = yes
+						is_republic = yes
 					}
 				}
-				ROOT = { 
-					any_demesne_title = { 
-						add_law = {
-							law = true_cognatic_succession
-							cooldown = no
-							opinion_effect = no
-						}
-						add_law = {
-							law = status_of_women_4
-							cooldown = no
-							opinion_effect = no
-						}
-					} 
-					recalc_succession = yes
-				} 
+				any_demesne_title = { 
+					add_law = {
+						law = true_cognatic_succession
+						cooldown = no
+						opinion_effect = no
+					}
+				}
+				recalc_succession = yes
+			}
+			if = {
+				limit = { #Switch to equal status of women.
+					OR = {
+						has_religion_feature = religion_equal 
+						has_religion_feature = religion_feature_bon
+						has_religion_feature = religion_feature_celtic
+						has_religion_feature = religion_feature_egyptian
+					}
+					NOR = {  
+						is_merchant_republic = yes
+						is_republic = yes
+					}
+				}
+				any_demesne_title = { 
+					add_law = {
+						law = status_of_women_4
+						cooldown = no
+						opinion_effect = no
+					}
+				}
 			}
 			ROOT = {
 				if = {
@@ -5485,7 +5499,7 @@ narrative_event = {
 						has_religion_feature = religion_matriarchal 
 					}
 					any_close_relative = { 
-					limit = { is_female = no }
+						limit = { is_female = no }
 						opinion = { 
 							who = ROOT 
 							modifier = bad_succ_law_change
@@ -5587,8 +5601,6 @@ narrative_event = {
 					OR = { 
 						has_religion_feature = religion_equal 
 						has_religion_feature = religion_feature_bon
-						has_religion_feature = religion_feature_celtic
-						has_religion_feature = religion_feature_egyptian
 					}
 				}
 			}
@@ -5607,6 +5619,28 @@ narrative_event = {
 					}
 				} 
 				recalc_succession = yes
+			} 
+		}
+		if = {
+			limit = { #Offer chance to switch the vassals' status of women laws.
+				ROOT = {
+					OR = { 
+						has_religion_feature = religion_equal 
+						has_religion_feature = religion_feature_bon
+						has_religion_feature = religion_feature_celtic
+						has_religion_feature = religion_feature_egyptian
+					}
+				}
+			}
+			custom_tooltip = { text = tooltip_HF23016_A }
+			hidden_tooltip = { 
+				any_demesne_title = { 
+					add_law = {
+						law = status_of_women_4
+						cooldown = no
+						opinion_effect = no
+					}
+				}
 			} 
 		}
 		if = {
@@ -6589,53 +6623,6 @@ character_event = {
 		remove_trait = in_hiding
 	}
 }
-
-###### TODO REMOVE TEST EVENT
-#character_event = {
-#	id = 686
-#	hide_window = yes
-#	is_triggered_only = yes
-#	
-#	trigger = {
-#		is_save_game = no
-#		NOT = { has_global_flag = start_seed_bloodlines }
-#		NOT = { is_shattered_world = yes }
-#	}
-#	
-#	immediate = {
-#		set_global_flag = start_seed_bloodlines
-#		any_independent_ruler = {
-#			count = 5
-#			random_list = {
-#				10 = {
-#					create_bloodline = {
-#						type = bloodline_martial
-#					}
-#				}
-#				10 = {
-#					create_bloodline = {
-#						type = bloodline_steward
-#					}
-#				}
-#				10 = {
-#					create_bloodline = {
-#						type = bloodline_intrigue
-#					}
-#				}
-#				10 = {
-#					create_bloodline = {
-#						type = bloodline_learning
-#					}
-#				}
-#				10 = {
-#					create_bloodline = {
-#						type = bloodline_diplomacy
-#					}
-#				}
-#			}
-#		}
-#	}
-#}
 
 character_event = {
 	id = 687

@@ -744,6 +744,7 @@ warrior_lodge_britannic = {
 		powers = {
 			warrior_lodge_inspire_warriors #Power: Inspire Warriors
 			warrior_lodge_war_sacrifice #Power: War Sacrifice
+			warrior_lodge_britannic_call_hedge_knights #Power: Call Knights Errant
 		}
 	}
 

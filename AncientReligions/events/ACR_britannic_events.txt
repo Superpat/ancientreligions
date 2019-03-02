@@ -4964,3 +4964,106 @@ narrative_event = {
 		}
 	}
 }
+
+## Power 3: Call Hedge Knights
+#Which composition?
+character_event = {
+	id = britannic.351
+	desc = britannic.351.desc
+    picture = GFX_evt_mysterious_forest
+    border = GFX_event_normal_frame_war
+    
+    has_dlc = "Holy Fury"
+
+    is_triggered_only = yes
+    
+	immediate = { 
+		random_list = { 
+			33 = { sound_effect = Land_Battle_Sword_01 } 
+			33 = { sound_effect = Land_Battle_Sword_02 } 
+			33 = { sound_effect = Land_Battle_Sword_03 } 
+		}
+	}
+
+    option = {
+        name = britannic.351.a
+            capital_scope = {
+                show_scope_change = no
+                ROOT = {
+                    show_scope_change = no
+                    spawn_unit = { 
+                        province = PREV
+                        owner = ROOT
+                        troops = { 
+                    		heavy_infantry = { 1000 1000 }
+                    		archers = { 500 500 }
+                        }
+                        earmark = hedge_knights
+                        attrition = 0.5
+                        disband_on_peace = yes
+                    }
+                }
+            }
+        ai_chance = {    
+            factor = 30
+        }
+    }
+    option = {
+        name = britannic.351.b
+            capital_scope = {
+                show_scope_change = no
+                ROOT = {
+                    show_scope_change = no
+                    spawn_unit = { 
+                        province = PREV
+                        owner = ROOT
+                        troops = { 
+                            pikemen = { 1000 1000 }
+                        }
+                        earmark = hedge_knights
+                        attrition = 0.5
+                        disband_on_peace = yes 
+                    }
+                }
+            }
+        ai_chance = {    
+            factor = 30
+        }
+    }
+    option = {
+        name = britannic.351.c
+            capital_scope = {
+                show_scope_change = no
+                ROOT = {
+                    show_scope_change = no
+                    spawn_unit = { 
+                        province = PREV
+                        owner = ROOT
+                        troops = { 
+                    		light_cavalry = { 1000 1000 }
+							knights = { 250 250 }
+                        }
+                        earmark = hedge_knights
+                        attrition = 0.5
+                        disband_on_peace = yes
+                    }
+                }
+            }
+        ai_chance = {    
+            factor = 30
+        }
+    }
+    option = { #Changed my mind
+        name = britannic.351.d
+       hidden_tooltip = {
+            remove_character_modifier = lodge_summon_warriors_cooldown
+           	if = { 
+           		limit = { society_member_of = warrior_lodge_britannic } #Safety check for sneaky players.
+           		add_society_currency_medium_effect = yes 
+           	}
+        }
+        ai_chance = {    
+            factor = 0
+        }
+    }
+}

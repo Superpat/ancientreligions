@@ -451,8 +451,7 @@ succession_laws = {
                 }
 				
 				OR = {
-					NOT = { religion_group = pagan_group }
-					is_reformed_religion = yes
+					is_organized_religion_trigger = yes
 					religion = hellenic_pagan
 					is_patrician = yes
 				}
@@ -615,10 +614,8 @@ succession_laws = {
 							}
 						}
 						OR = {
-							NOT = { religion_group = pagan_group }
 							religion = bon
-							religion = bon_reformed
-							is_reformed_religion = yes
+							is_organized_religion_trigger = yes
 							religion = hellenic_pagan
 						}
 					}
@@ -779,8 +776,7 @@ succession_laws = {
 				is_patrician = no
 				
 				OR = {
-					NOT = { religion_group = pagan_group }
-					is_reformed_religion = yes
+					is_organized_religion_trigger = yes
 					religion = hellenic_pagan
 					has_law = succession_voting_power_1
 					OR = { 

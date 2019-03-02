@@ -155,3 +155,7 @@ britannic.199.a;I wonder how next year's festival will go.;;;;;;;;;;;;;x
 britannic.350.desc;[From.GetTitledFirstName] of [From.PrimaryTitle.GetName] has formed a band of like-minded warriors called the Champions of Andraste. Spending their time in sports and martial training, these comrades in arms strive to exemplify the chivalric ideals of Britannic society. Despite their reverence for the Britannic demigods Andraste and Epona, membership is not limited to members of that faith.;;;;;;;;;;;;;x
 britannic.350.a;They sound like my kind of people.;;;;;;;;;;;;;x
 britannic.350.b;Good for [From.GetHerHim].;;;;;;;;;;;;;x
+britannic.351.desc;My fellow knights of [Root.Society.GetName] will gladly come to the help of a fellow [britannic_pagan.GetName] warrior in the time of need, rushing out of the countryside and wildlands to prove their mettle and fight against the enemies of [Root.PrimaryTitle.GetName].;;;;;;;;;;;;;x
+britannic.351.a;I need strong arms to defeat my foes!;;;;;;;;;;;;;x
+britannic.351.b;I require many spears to defend my lands!;;;;;;;;;;;;;x
+britannic.351.c;Cavalry will overrun my enemies!;;;;;;;;;;;;;x

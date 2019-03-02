@@ -133,6 +133,16 @@ is_ancient_religion_trigger = {
 	}
 }
 
+is_organized_religion_trigger = {
+	OR = {
+		NOT = { religion_group = pagan_group }
+		is_reformed_religion = yes
+		religion = britannic_pagan
+		religion = aten_pagan
+		religion = promethean_pagan
+	}
+}
+
 supernatural_events_trigger = {
 	OR = {
 		has_game_rule = { name = supernatural_events value = unrestricted }

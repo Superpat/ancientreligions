@@ -1,3 +1,25 @@
+2019-03-02 v0.43.1 "Sequani"
+============================
+
+> The Sequani were a tribe in ancient Gaul. Before the arrival of Caesar they allied with the Arverni against the Aedui. They hired a German tribe, the Suebi, to help them. Unfortunately they were betrayed and lost 1/3 of their territory and their independence to the Germans. Strabo posited that the Sequani derived their name from the river, and thus the goddess, but their territory isn't in that river's watershed. It is more likely their name derives from Souconna, the modern Saone, which marked their western border.
+
+General:
+
+- Britannic, Promethean, and Atenic should now all be considered reformed for most purposes.
+  - I need to replace the "Demand Religious Conversion" decision still.
+- Fixed some more bugs that i've forgotten about.
+
+Celtic:
+
+- Toned down "Clans of Dannu", removing the OP "Heroic Religion" troop modifier and removing the forced True-Cognatic succession.
+
+Egyptian:
+
+- Toned down "Children of the Nile", removing the OP "Egyptian Warriors" troop modifier and removing the forced True-Cognatic succession.
+  - Polygamy is back, rather than giving concubines.
+  - Ladies still get their boy toys.
+- The Champions of the Sun have a new custom background and emblem, thanks Maal!
+
 2019-02-09 v0.43.0 "Sequana"
 ============================
 

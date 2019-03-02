@@ -78,6 +78,10 @@ has_direct_access_to_the_sea_tt;Has a coastal province.;;;;;;;;;;;;;x
 placate_archdryad;Placate the Arch-Dryad;;;;;;;;;;;;;x
 placate_archdryad_desc;By making a large donation to the church, as a symbol of support and submition to the Arch-Dryad, we can be sure she will not attempt to interfere in our affairs for 10 years.;;;;;;;;;;;;;x
 placate_archdryad.tt;The Arch-Dryad receives your donation.;;;;;;;;;;;;;x
+warrior_lodge_britannic_call_hedge_knights;Call knights errant;;;;;;;;;;;;;x
+warrior_lodge_britannic_call_hedge_knights_desc;Recruit wandering knights to your cause, creating a small army.;;;;;;;;;;;;;x
+tooltip_call_hedge_knights;The call for knights errant is put out.;;;;;;;;;;;;;x
+tooltip_has_not_already_called_hedge_knights;Has not already called on kights errant.;;;;;;;;;;;;;x
 ### other stuff ;;;;;;;;;;;;;;x
 CIRCLE_OF_DRYADS;Circle of Dryads;;;;;;;;;;;;;x
 nick_flowing_mane;of the Flowing Mane;;;;;;;;;;;;;x

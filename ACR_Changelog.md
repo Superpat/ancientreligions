@@ -1,4 +1,4 @@
-2019-03-02 v0.43.1 "Sequani"
+2019-03-08 v0.43.1 "Sequani"
 ============================
 
 > The Sequani were a tribe in ancient Gaul. Before Caesar's conquest they allied with the Arverni against the Aedui. They hired a German tribe, the Suebi, to help them. Unfortunately they were betrayed, losing 1/3 of their territory and their independence to the Suebi. Strabo posited that the Sequani derived their name from Sequana, but their territory isn't in that river's watershed. It is more likely their name derives from Souconna, the modern Saone, which marked their western border.
@@ -13,10 +13,16 @@ General:
 Celtic:
 
 - Toned down "Clans of Dannu", removing the OP "Heroic Religion" troop modifier and stopped forcing True-Cognatic succession.
+- The religious head title for Druidic is now called the Archdruid(dess), the King-tier theocracy Great Druid(ess), and the Emperor-tier theocracy is Myrdynn.
+  - I'm open to ideas for having a different temporal head name.
 
 Britannic:
 
 - Fixed missing localisation for the Circle of Dryads.
+
+Promethean:
+
+- Fixed bug where Prometheans couldn't join the Hermetic Society.
 
 Egyptian:
 

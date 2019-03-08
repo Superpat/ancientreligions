@@ -2733,6 +2733,7 @@ hermetics = {
 		learning = 10
 		OR = {
 			has_religion_feature = religion_astrology
+			religion = promethean_pagan
 			religion_group = christian
 			religion_group = muslim
 			religion_group = jewish_group

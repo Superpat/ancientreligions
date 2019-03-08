@@ -27293,10 +27293,7 @@ reformation_god_names_changes_effect = { #Reforming religion with certain Doctri
 			}
 			if = {
 				limit = { #Reformer himself, but only if he is not becoming the High God due to synergy.
-					OR = {
-						NOT = { has_religion_feature = religion_temporal_head }
-						has_religion_feature = religion_feature_egyptian
-					}
+					NOT = { has_religion_feature = religion_temporal_head }
 					OR = { 
 						AND = { 
 							is_female = no

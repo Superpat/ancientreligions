@@ -14,7 +14,7 @@ GOD_ST_BOUDICCA;Saint Boudicca;;;;;;;;;;;;;x
 GOD_ST_BRIGID;Saint Brigid;;;;;;;;;;;;;x
 EVIL_UNSEELIE;the Wayward Children;;;;;;;;;;;;;x
 THE_CYCLES;The Cycles;;;;;;;;;;;;;x
-ARCHDRYAD;Arch-Dryad;;;;;;;;;;;;;x
+ARCHDRYAD;Archdryad;;;;;;;;;;;;;x
 DRYAD;Dryad;;;;;;;;;;;;;x
 dryad_lowercase;dryad;;;;;;;;;;;;;x
 # titles ;;;;;;;;;;;;;;x
@@ -84,6 +84,7 @@ tooltip_call_hedge_knights;The call for knights errant is put out.;;;;;;;;;;;;;x
 tooltip_has_not_already_called_hedge_knights;Has not already called on kights errant.;;;;;;;;;;;;;x
 ### other stuff ;;;;;;;;;;;;;;x
 CIRCLE_OF_DRYADS;Circle of Dryads;;;;;;;;;;;;;x
+acr_dryad_of_the_circle;Dryad of The Circle;;;;;;;;;;;;;x
 nick_flowing_mane;of the Flowing Mane;;;;;;;;;;;;;x
 relief_effort;Relief Effort;;;;;;;;;;;;;x
 relief_effort_desc;This province has volunteers and clergy providing relief to the locals from an outbreak of disease.;;;;;;;;;;;;;x

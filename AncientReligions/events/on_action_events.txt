@@ -5310,7 +5310,7 @@ narrative_event = {
 				}
 				add_artifact = crown_egyptian_fylkir
 			}
-			hidden_effect = { reformation_god_names_changes_effect = yes }
+			#hidden_effect = { reformation_god_names_changes_effect = yes }
 			#Opinion boost to new religious head (if any) and Reformer.
 			if = {
 				limit = { 

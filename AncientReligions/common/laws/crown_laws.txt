@@ -136,8 +136,7 @@ de_jure_laws = {
 					text = TT_NOT_UNREFORMED_PAGAN
 					hidden_tooltip = {
 						OR = {
-							NOT = { religion_group = pagan_group }
-							is_reformed_religion = yes
+							is_organized_religion_trigger = yes
 							religion = bon
 							religion = bon_reformed
 						}
@@ -226,8 +225,7 @@ de_jure_laws = {
 					text = TT_NOT_UNREFORMED_PAGAN
 					hidden_tooltip = {
 						OR = {
-							NOT = { religion_group = pagan_group }
-							is_reformed_religion = yes
+							is_organized_religion_trigger = yes
 							religion = bon
 							religion = bon_reformed
 						}
@@ -318,8 +316,7 @@ de_jure_laws = {
 					text = TT_NOT_UNREFORMED_PAGAN
 					hidden_tooltip = {
 						OR = {
-							NOT = { religion_group = pagan_group }
-							is_reformed_religion = yes
+							is_organized_religion_trigger = yes
 							religion = bon
 							religion = bon_reformed
 						}

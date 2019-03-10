@@ -74,6 +74,8 @@ job_chancellor_egyptian_pagan;Vizier;Vizir;Wesir;;Visir;;;;;;;;;x
 job_marshal_egyptian_pagan;Sesemut;Sesemut;Sesemut;;Sesemut;;;;;;;;;x
 job_spiritual_egyptian_pagan;Xroj;Xroj;Xroj;;Xroj;;;;;;;;;x
 job_treasurer_egyptian_pagan;Pruj-Hdoj;Pruj-Hdoj;Pruj-Hdoj;;Pruj-Hdoj;;;;;;;;;x
+KEMETIC_HEAD;[GetKemeticHeadTitle];;;;;;;;;;;;;x
+AAI_PHARAOH;Aai-Pharaoh;Aai-Pharaoh;Aai-Pharaoh;;Aai-Pharaoh;;;;;;;;;x
 PARAGON_XROJ;Paragon;Parangon;Paragon;;Paragon;;;;;;;;;x
 ###### FOA egyptian_pagan_reformed;;;;;;;;;;;;;;x
 count_egyptian_pagan_reformed;Irypat;Irypat;Irypat;;Irypat;;;;;;;;;x

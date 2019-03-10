@@ -10376,10 +10376,8 @@ pagan_subjugation = {
 	
 	can_use = {
 		ROOT = {
-			religion_group = pagan_group
-			is_reformed_religion = no
+			is_organized_religion_trigger = no
 			NOT = { religion = hellenic_pagan }
-			NOT = { religion = promethean_pagan }
 			NOT = { same_realm = FROM }
 			NOT = { is_liege_or_above = FROM }
 			mercenary = no
@@ -10429,10 +10427,7 @@ pagan_subjugation = {
 			religion_group = pagan_group
 			is_nomadic = no
 			NOT = { is_offmap_governor = yes }
-			OR = {
-				is_reformed_religion = no
-				is_reformed_religion = ROOT
-			}
+			is_organized_religion_trigger = yes
 			NOT = {
 				any_war = {
 					defender = { character = PREVPREV }
@@ -10478,7 +10473,7 @@ pagan_subjugation = {
 			
 			if = {
 				limit = {
-					is_reformed_religion = ROOT
+					ROOT = { is_organized_religion_trigger = yes }
 					controls_religion = no
 				}
 				religion = ROOT # Reformed pagans are forced to convert back
@@ -17719,7 +17714,7 @@ nomad_subjugation = {
 			
 			if = {
 				limit = {
-					is_reformed_religion = ROOT
+					ROOT = { is_organized_religion_trigger = yes }
 					controls_religion = no
 				}
 				religion = ROOT # Reformed pagans are forced to convert back

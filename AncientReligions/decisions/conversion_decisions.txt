@@ -1121,8 +1121,7 @@ targetted_decisions = {
 		potential = {
 			is_playable = yes
 			is_heretic = yes
-			religion_group = pagan_group
-			is_reformed_religion = no
+			is_organized_religion_trigger = no
 		}
 		allow = {
 			NOT = { trait = zealous }
@@ -2799,8 +2798,7 @@ decisions = {
 			is_playable = yes
 			OR = {
 				AND = {
-					religion_group = pagan_group
-					is_reformed_religion = no
+					is_organized_religion_trigger = no
 					NOT = { religion_authority = 0.4 }
 				}
 				NOT = { religion_authority = 0.3 }
@@ -2815,10 +2813,7 @@ decisions = {
 				attacker = {
 					NOT = { religion = ROOT }
 					religion_authority = 0.5
-					OR = {
-						NOT = { religion_group = pagan_group }
-						is_reformed_religion = yes
-					}
+					is_organized_religion_trigger = yes
 				}
 				OR = {
 					using_cb = crusade
@@ -2846,10 +2841,7 @@ decisions = {
 						attacker = {
 							NOT = { religion = ROOT }
 							religion_authority = 0.5
-							OR = {
-								NOT = { religion_group = pagan_group }
-								is_reformed_religion = yes
-							}
+							is_organized_religion_trigger = yes
 						}
 						OR = {
 							using_cb = crusade
@@ -2871,10 +2863,9 @@ decisions = {
 				limit = { 
 					has_dlc = "Holy Fury"
 					is_tribal = yes
-					religion_group = pagan_group 
 					higher_real_tier_than = count 		
 					NOT = { trait = incapable }
-					NOT = { is_reformed_religion = yes }
+					is_organized_religion_trigger = no
 					NOT = { has_character_flag = flag_converting_baptism }
 					NOT = { has_character_modifier = baptism_request_cooldown } 
 					independent = yes 
@@ -3016,10 +3007,7 @@ decisions = {
 						attacker = {
 							NOT = { religion = ROOT }
 							religion_authority = 0.45
-							OR = {
-								NOT = { religion_group = pagan_group }
-								is_reformed_religion = yes
-							}
+							is_organized_religion_trigger = yes
 						}
 						OR = {
 							using_cb = crusade
@@ -3047,10 +3035,7 @@ decisions = {
 					attacker = {
 						NOT = { religion = ROOT }
 						religion_authority = 0.45
-						OR = {
-							NOT = { religion_group = pagan_group }
-							is_reformed_religion = yes
-						}
+						is_organized_religion_trigger = yes
 					}
 					OR = {
 						using_cb = crusade

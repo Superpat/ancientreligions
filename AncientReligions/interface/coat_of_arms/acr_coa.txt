@@ -54,6 +54,7 @@ culture = {
 culture = {
 	religion = {
 		"egyptian_pagan"
+		"egyptian_pagan_reformed"
 		"aten_pagan"
 	}
 	

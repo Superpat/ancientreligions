@@ -1201,7 +1201,7 @@ decisions = {
 					d_myrmidons = {
 						grant_title = PREV
 					}
-					set_government_type = feudal_government
+					set_government_type = order_government
 					save_event_target_as = leader_of_myrmidons
 					create_character = {
 						random_traits = yes
@@ -1968,7 +1968,7 @@ settlement_decisions = {
 			is_playable = yes
 			is_tribal = yes
 			higher_tier_than = COUNT 
-			is_reformed_religion = no
+			is_organized_religion_trigger = no
 			independent = yes
 			OR = { 
 				religion = norse_pagan
@@ -2253,10 +2253,7 @@ settlement_decisions = {
 		
 		from_potential = {
 			has_dlc = "Holy Fury"
-			OR = {
-				NOT = { religion_group = pagan_group }
-				is_reformed_religion = yes
-			}
+			is_organized_religion_trigger = yes
 			is_playable = yes
 			is_tribal = no
 			is_nomadic = no

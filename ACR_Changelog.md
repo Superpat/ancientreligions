@@ -1,4 +1,4 @@
-2019-03-08 v0.43.1 "Sequani"
+2019-03-09 v0.43.1 "Sequani"
 ============================
 
 > The Sequani were a tribe in ancient Gaul. Before Caesar's conquest they allied with the Arverni against the Aedui. They hired a German tribe, the Suebi, to help them. Unfortunately they were betrayed, losing 1/3 of their territory and their independence to the Suebi. Strabo posited that the Sequani derived their name from Sequana, but their territory isn't in that river's watershed. It is more likely their name derives from Souconna, the modern Saone, which marked their western border.

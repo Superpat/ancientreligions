@@ -15,14 +15,17 @@ Celtic:
 - Toned down "Clans of Dannu", removing the OP "Heroic Religion" troop modifier and stopped forcing True-Cognatic succession.
 - The religious head title for Druidic is now called the Archdruid(dess), the King-tier theocracy Great Druid(ess), and the Emperor-tier theocracy is Myrdynn.
   - I'm open to ideas for having a different temporal head name.
+- New society background image for the Unseelie Petitioners courtesy of Maal.
 
 Britannic:
 
 - Fixed missing localisation for the Circle of Dryads.
+- Changed Arch-Dryad to Archdryad.
 
 Promethean:
 
 - Fixed bug where Prometheans couldn't join the Hermetic Society.
+- New society background image for The Coven courtesy of Maal.
 
 Egyptian:
 
@@ -32,6 +35,7 @@ Egyptian:
 - The Champions of the Sun have a new custom background and emblem, thanks Maal!
 - If you choose Temporal Leadership when reforming to Kemetic, the religious head title will be referred to as Aai-Pharaoh, like an emperor.
 - Kemetic gets the appropriate CoAs again.
+- New society background image for the Fangs of Apep courtesy of Maal.
 
 2019-02-09 v0.43.0 "Sequana"
 ============================

@@ -17369,6 +17369,7 @@ e_russia = {
 	capital = 547 # Kiev
 	
 	culture = russian
+	short_name = yes
 	
 	allow = {
 		hidden_tooltip = {
@@ -33909,6 +33910,7 @@ e_arabia = {
 		alan = "Philistia"
 		georgian = "Philistia"
 		assyrian = "Philistia"
+		roman = "Judea"
 		
 		assimilate = no # Duchies cannot de jure drift IN or OUT of this title
 		
@@ -51495,4 +51497,17 @@ d_burtas = {
 d_luxembourg = {
 	color={ 110 110 155 }
 	color2={ 255 255 255 }
+}
+
+e_russian_empire = {	
+	color={ 220 60 70 }
+	color2={ 255 255 255 }
+	
+	capital = 582 # Vladimir
+	
+	culture = russian
+	
+	allow = {
+		always = no # Only created through special event
+	}
 }

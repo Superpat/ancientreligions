@@ -721,7 +721,7 @@ muslim = {
 	
 	# Names given only to Muslim characters (base names)
 	female_names = {
-		Ayesha Abrar Afifah Anabia Hijrah Hind Hareem Iqra Judi Karida Khadijah Khalidah Khawlah Madeeha Maryam Mariyah Maymunah Mariam Mina Nuwwarrah Qismah Ruqayyah Saba Safaa Safiyyah Salma Shahrazad Sirin Sumaiyah Thuwaibah Umamah Zainab Zubaidah 
+		Ayesha Abrar Afifah Anabia Hijrah Hind Hareem Iqra Judi Karida Khadijah Khalidah Khawlah Madeeha Maryam Mariyah Maymunah Mariam Mina Nuwwarrah Qismah Ruqayyah Saba Safaa Safiyyah Salma Shahrazad Sirin Sumaiyah Thuwaibah Umamah Zainab Zubaidah Zainab 
 	}
 	
 	sunni = {
@@ -2126,7 +2126,6 @@ pagan_group = {
 	
 	bon_reformed = {
 		graphical_culture = mongolgfx
-		alternate_start = { always = no }
 		secondary_event_pictures = tengri_pagan
 		interface_skin = { bon_interface taoist_interface indian_interface muslim_interface }
 
@@ -2134,6 +2133,7 @@ pagan_group = {
 		heresy_icon = 56
 		
 		color = { 8 150 131 }
+		alternate_start = { always = no }
 		
 		scripture_name = MDODUS
 		priest_title = LAMA

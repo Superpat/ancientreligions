@@ -506,21 +506,21 @@ defined_text = {
 			}
 		}
 	}
-	text = {
-		localisation_key = GetRelation_Acquaintance 
-		trigger = { 
-			NOR = { 
-				relationship_with_root_trigger = yes
-				family_of_root_trigger = yes
-				liege = { character = ROOT }
-				is_liege_of = ROOT
-				AND = {
-					dynasty = ROOT
-					NOT = { dynasty = none }
-				}
-			} 
-		}
-	}
+#	text = { # Outcommented, now that we have proper fallback text.
+#		localisation_key = GetRelation_Acquaintance 
+#		trigger = { 
+#			NOR = { 
+#				relationship_with_root_trigger = yes
+#				family_of_root_trigger = yes
+#				liege = { character = ROOT }
+#				is_liege_of = ROOT
+#				AND = {
+#					dynasty = ROOT
+#					NOT = { dynasty = none }
+#				}
+#			} 
+#		}
+#	}
 	text = {
 		localisation_key = GetRelation_fellow_member
 		trigger = { 
@@ -551,6 +551,49 @@ defined_text = {
 		trigger = { 
 			is_consort = ROOT
 			is_female = no
+		}
+	}
+	text = {
+		localisation_key = GetRelation_enemy
+		weight_multiplier = { factor = 100 }
+		trigger = {
+			any_war = {
+				OR = {
+					any_attacker = {
+						character = ROOT
+					}
+					any_defender = {
+						character = ROOT
+					}
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = GetRelation_sway_target
+		weight_multiplier = { factor = 1 }
+		trigger = { 
+			ROOT = {
+				persistent_event_target:sway_target = {
+					character = PREVPREV
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = GetRelation_antagonist
+		weight_multiplier = { factor = 1 }
+		trigger = { 
+			OR = {
+				ROOT = {
+					persistent_event_target:antagonize_target = {
+						character = PREVPREV
+					}
+				}
+				persistent_event_target:antagonize_target = {
+					character = ROOT
+				}
+			}
 		}
 	}
 	fallback_text = {
@@ -2543,7 +2586,7 @@ defined_text = { #Does not work for jain and buddhist
 
 defined_text = {
 	name = GetMOSaint
-
+	
 	text = {
 		localisation_key = String_Saint_Benedict
 		trigger = { society_member_of = monastic_order_benedictine
@@ -2953,7 +2996,7 @@ defined_text = {
 			}
 		}
 	}
-
+	
 	### ACR ###
 	text = {
 		localisation_key = String_Danus_blessings
@@ -3854,7 +3897,6 @@ defined_text = {
 			}
 		}
 	}
-
 	### ACR ###
 	text = {
 		localisation_key = String_Celt
@@ -6999,7 +7041,7 @@ defined_text = {
 
 defined_text = {
 	name = GetDWRandomDemon
-
+	
 	text = {
 		trigger = {
 			society_member_of = the_satanists
@@ -7682,6 +7724,11 @@ defined_text = {
 		trigger = { has_character_flag = armor_set }
 		localisation_key = String_set_of_armor
 	}
+	text = {
+		trigger = { has_character_flag = zweihanded_sword }
+		localisation_key = String_sword
+	}
+
 }
 
 defined_text = {
@@ -7699,7 +7746,7 @@ defined_text = {
 
 defined_text = {
 	name = GetSunName
-
+	
 	text = {
 		trigger = {
 			NOR = {
@@ -7754,7 +7801,7 @@ defined_text = {
 
 defined_text = {
 	name = GetMercuryName
-
+	
 	text = {
 		trigger = {
 			NOR = {
@@ -7804,7 +7851,7 @@ defined_text = {
 
 defined_text = {
 	name = GetVenusName
-
+	
 	text = {
 		trigger = {
 			NOR = {
@@ -7854,7 +7901,7 @@ defined_text = {
 
 defined_text = {
 	name = GetEarthName
-
+	
 	text = {
 		trigger = {
 			NOR = {
@@ -7904,7 +7951,7 @@ defined_text = {
 
 defined_text = {
 	name = GetMoonName
-
+	
 	text = {
 		trigger = {
 			NOR = {
@@ -8005,7 +8052,7 @@ defined_text = {
 
 defined_text = {
 	name = GetJupiterName
-
+	
 	text = {
 		trigger = {
 			NOR = {
@@ -8055,7 +8102,7 @@ defined_text = {
 
 defined_text = {
 	name = GetSaturnName
-
+	
 	text = {
 		trigger = {
 			NOR = {
@@ -8105,7 +8152,7 @@ defined_text = {
 
 defined_text = {
 	name = GetUranusName
-
+	
 	text = {
 		trigger = {
 			NOR = {
@@ -8155,7 +8202,7 @@ defined_text = {
 
 defined_text = {
 	name = GetNeptuneName
-
+	
 	text = {
 		trigger = {
 			NOR = {
@@ -8205,7 +8252,7 @@ defined_text = {
 
 defined_text = {
 	name = GetPlutoName
-
+	
 	text = {
 		trigger = {
 			NOR = {
@@ -8255,7 +8302,7 @@ defined_text = {
 
 defined_text = {
 	name = GetRandomPlanetName
-
+	
 	text = {
 		trigger = {
 			NOR = {
@@ -8485,7 +8532,7 @@ defined_text = {
 
 defined_text = {
 	name = GetHermeticsDestinedRole
-
+	
 	text = {
 		trigger = {
 			has_character_flag = destined_steward
@@ -8520,7 +8567,7 @@ defined_text = {
 
 defined_text = {
 	name = GetHermeticsDestinedExpertise
-
+	
 	text = {
 		trigger = {
 			has_character_flag = destined_steward
@@ -8556,7 +8603,7 @@ defined_text = {
 
 defined_text = {
 	name = GetWesternZodiacSign
-
+	
 	text = {
 		trigger = {
 			is_born_under_Aries_trigger = yes
@@ -9565,7 +9612,7 @@ defined_text = {
 			}
 		}
 	}
-
+	
 	text = {
 		localisation_key = String_is_fantastically_shiny
 		trigger = {
@@ -9990,7 +10037,7 @@ defined_text = {
 
 defined_text = {
 	name = GetDemonHuntersEventTitle #Work-around to have dynamic titles in an event - [USED ONLY IN MNM.7855]
-
+	
 	text = {
 		localisation_key = EVTTITLE_MNM_7855_A
 		trigger = {
@@ -11565,7 +11612,7 @@ defined_text = { #Read like: we are busy focusing on the [GetRandomChineseFocus]
 # Gets the name of the current month
 defined_text = {
 	name = GetMonth
-
+	
 	text = {
 		trigger = {
 			month = 0
@@ -11657,7 +11704,7 @@ defined_text = {
 # Gets the name of the Chinese refugee's specialty
 defined_text = {
 	name = GetChineseProfession
-
+	
 	text = {
 		trigger = {
 			has_character_flag = is_chinese_administrator
@@ -11690,7 +11737,7 @@ defined_text = {
 # Gets the name of the Chinese courtier's invite reason (for when they die, mostly? Could be used elsewhere though.)
 defined_text = {
 	name = GetChineseCharacterRole
-
+	
 	text = {
 		trigger = {
 			has_character_flag = is_chinese_administrator
@@ -11735,7 +11782,7 @@ defined_text = {
 
 defined_text = {
 	name = GetRegionalBigAnimal
-
+	
 	text = {
 		localisation_key = String_stag
 		trigger = {
@@ -11789,7 +11836,7 @@ defined_text = {
 }
 defined_text = {
 	name = GetRegionalBigAnimalCap
-
+	
 	text = {
 		localisation_key = String_Stag
 		trigger = {
@@ -11889,7 +11936,7 @@ defined_text = {
 
 defined_text = {
 	name = GetPublicOpinionOfWork
-
+	
 	#Vices
 	text = {
 		trigger = {
@@ -12170,7 +12217,7 @@ defined_text = {
 		weight_multiplier = { factor = 100 }
 		localisation_key = String_amusing
 	}
-
+	
 	fallback_text = {
 		localisation_key = String_opinion_fallback #decent
 	}
@@ -12178,7 +12225,7 @@ defined_text = {
 
 defined_text = { #NOTE: only used when writing a book (due to event_target:new_book)!
 	name = GetExpectationOfWork
-
+	
 	#fast writers...
 	text = {
 		trigger = {
@@ -16564,6 +16611,48 @@ defined_text = { ### Needs a province scope - USE ONLY TOGETHER WITH GetTerrain!
 	}
 }
 defined_text = { ### Needs a province scope - USE ONLY TOGETHER WITH GetTerrain! ###
+	name = GetInOnCap
+	text = {
+		trigger = { terrain = forest }
+		localisation_key = string_In
+	}
+	text = {
+		trigger = { terrain = hills }
+		localisation_key = string_In
+	}
+	text = {
+		trigger = { terrain = mountain }
+		localisation_key = string_In
+	}
+	text = {
+		trigger = { terrain = plains }
+		localisation_key = string_On
+	}
+	text = {
+		trigger = { terrain = farmlands }
+		localisation_key = string_On
+	}
+	text = {
+		trigger = { terrain = steppe }
+		localisation_key = string_On
+	}
+	text = {
+		trigger = { terrain = desert }
+		localisation_key = string_In
+	}
+	text = {
+		trigger = { terrain = jungle }
+		localisation_key = string_In
+	}
+	text = {
+		trigger = { terrain = arctic }
+		localisation_key = string_In
+	}
+	fallback_text = {
+		localisation_key = string_In
+	}
+}
+defined_text = { ### Needs a province scope - USE ONLY TOGETHER WITH GetTerrain! ###
 	name = GetThroughOver
 	text = {
 		trigger = { terrain = forest }
@@ -17481,7 +17570,10 @@ defined_text = {
 
 	text = {
 		trigger = {
-			has_character_flag = sword_tier_2
+			OR = {
+				has_character_flag = sword_tier_2
+				has_character_flag = zweihanded_sword
+				}
 		}
 		localisation_key = string_greatsword
 	}
@@ -19732,3 +19824,117 @@ defined_text = {
 		localisation_key = string_vanilla_augustus_desc
 	}
 }
+defined_text = {
+	name = GetPrincelyElectorsList
+	text = {
+		trigger = {
+			e_hre = {
+				persistent_event_target:hre_title_1_per = {
+					always = yes #If one of them exists then all of them do.
+				}
+			}
+		}
+		localisation_key = string_princely_elective_elector_list_desc
+	}
+
+	fallback_text = {
+		localisation_key = String_empty_space
+	}
+}
+
+
+defined_text = {
+	name = GetGirlWomanBoyMan
+
+	text = {
+		localisation_key = String_girl
+		trigger = {
+			is_female = yes
+			is_adult = no
+		}
+	}
+	text = {
+		localisation_key = String_woman
+		trigger = {
+			is_female = yes
+			is_adult = yes
+		}
+	}
+	text = {
+		localisation_key = String_boy
+		trigger = {
+			is_female = no
+			is_adult = no
+		}
+	}
+	text = {
+		localisation_key = String_man
+		trigger = {
+			is_female = no
+			is_adult = yes
+		}
+	}
+}
+
+
+defined_text = {
+	name = GetArtifactStorage
+
+	text = {
+		localisation_key = String_library
+		trigger = {
+			has_artifact_flag = book
+		}
+	}
+	text = {
+		localisation_key = String_armory
+		trigger = {
+			OR = {
+				has_artifact_flag = armor
+				has_artifact_flag = combat_weapon
+			}
+			NOT = { artifact_age = 30 }
+		}
+	}
+	text = {
+		localisation_key = String_old_armory
+		trigger = {
+			OR = {
+				has_artifact_flag = armor
+				has_artifact_flag = combat_weapon
+			}
+			artifact_age = 30
+		}
+	}
+	text = {
+		localisation_key = String_treasury
+		trigger = {
+			has_artifact_flag = jewelry
+		}
+	}
+	text = {
+		localisation_key = String_temple
+		trigger = {
+			has_artifact_flag = saint
+			ROOT = { religion_group = christian }
+		}
+	}
+	text = {
+		localisation_key = String_temple
+		trigger = {
+			has_artifact_flag = saint
+			has_artifact_flag = bodypart
+		}
+	}
+	text = {
+		localisation_key = String_treasury
+		trigger = {
+			has_artifact_flag = skull
+		}
+	}
+	
+	fallback_text = {
+		localisation_key = String_treasury
+	}
+}
+

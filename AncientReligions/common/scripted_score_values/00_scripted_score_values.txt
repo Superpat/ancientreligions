@@ -2081,7 +2081,7 @@ post_reformation_ruler_conversion_score = {
 	modifier = { 
 		factor = 1.5
 		ROOT = { has_religion_feature = religion_holy_family }
-		NOR = {
+		NOT = { 
 			religion = zun_pagan
 		}
 	}

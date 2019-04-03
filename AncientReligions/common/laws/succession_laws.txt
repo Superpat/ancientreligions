@@ -879,13 +879,12 @@ succession_laws = {
 						has_title_flag = alternate_hre
 					}
 				}
-				NOT = { religion_group = muslim }
 				is_merchant_republic = no
 				is_patrician = no
+				
 				OR = {
-					culture_group = byzantine
-					culture = roman
-					religion = orthodox
+					NOT = { religion_group = pagan_group }
+					is_organized_religion_trigger = yes
 					religion = hellenic_pagan
 					has_law = succession_voting_power_1
 					has_law = succ_feudal_elective # Keep it even if you revoke Full Council Authority
@@ -1360,7 +1359,10 @@ succession_laws = {
 			OR = { 
 				title = k_papal_state
 				title = k_britannic_pagan
-				title = d_celtic_pagan_reformed
+				AND = {
+					title = d_celtic_pagan_reformed
+					has_religion_feature = religion_theocratic_head
+				}
 			}
 		}
 		
@@ -1630,7 +1632,7 @@ gender_laws = {
 		
 		effect = {
 			gender_succ = cognatic
-			set_allows_matrilineal_marriage = yes
+			law_set_allow_matrilineal_marriage = yes
 		}			
 		default = yes
 		default_selection = {
@@ -1789,7 +1791,7 @@ gender_laws = {
 		}
 		effect = {
 			gender_succ = true_cognatic
-			set_allows_matrilineal_marriage = yes
+			law_set_allow_matrilineal_marriage = yes
 		}	
 		default_selection = {
 			factor = 1

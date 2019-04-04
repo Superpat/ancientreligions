@@ -1,3 +1,23 @@
+2019-04-03 v0.43.2 "Ariovistus"
+===========================
+
+> Ariovistus was the leader of the Suebi tribe when they were hired by the Sequani to fight the Aedui. After the war was won he demanded a third of the Sequani territory and threatened to take another third by force if they didn't comply.
+
+General:
+
+- Compatability with CK2 3.1
+- Promethean, Britannic, and Atenic can build Grand Universities and Great Libraries despite not technically being reformed.
+
+Celtic:
+
+- Fixed a bug that prevented characters from getting the right crown jewels.
+- The Archdruid should now only use the Circle of Druids if Druidic has Hierarchical Leadership.
+
+Egyptian:
+
+- The dynamic name for the religious head title should work better now.
+- Egyptian sub-group religions can always build pyramids.
+
 2019-03-09 v0.43.1 "Sequani"
 ============================
 

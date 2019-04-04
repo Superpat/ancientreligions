@@ -31,7 +31,7 @@
 
 ### Example elective succession setup
 #my_test_law = {
-#   elector_stances = { #Electoral stances visible on the Electors' tab. Do not directly affect voting pattern unless used as triggers in the modifiers of candidate_voter_score.
+	#elector_stances = { #Electoral stances visible on the Electors' tab. Do not directly affect voting pattern unless used as triggers in the modifiers of candidate_voter_score.
 #		my_stance = {
 #			icon = 5
 #			days = 1
@@ -1497,7 +1497,7 @@ feudal_elective = {
 				religion = zoroastrian
 				religion = messalian
 				religion_openly_in_egyptian_subgroup_trigger = yes
-				has_religion_feature = religion_holy_family
+				has_religion_feature = religion_holy_family 
 				has_religion_feature = religion_feature_zun
 			} 
 			OR = { 
@@ -3512,16 +3512,16 @@ feudal_elective = {
 				religion = ROOT
 			}
 			NOR = {
-				mother = {
-					is_alive = yes
-					is_married = ROOT
-					parent_for_elective_succession_trigger = yes
-				}
-				father = {
-					is_alive = yes
-					is_married = ROOT
-					parent_for_elective_succession_trigger = yes
-				}
+				#mother = {         # Uncommenting this condition provokes that a ruler's son is not a valid candidate if the mother is married to the ruler and a candidate
+				#	is_alive = yes
+				#	is_married = ROOT
+				#	parent_for_elective_succession_trigger = yes
+				#}
+				#father = {			# Same as above, for the father
+				#	is_alive = yes
+				#	is_married = ROOT
+				#	parent_for_elective_succession_trigger = yes
+				#}
 				trait = cat
 				trait = disinherited
 				trait = horse

@@ -253,20 +253,16 @@ defined_text = {
 
 	text = {
 		trigger = {
-			d_egyptian_pagan_reformed = {
-				holder_scope = {
-					has_religion_feature = religion_temporal_head
-				}
+			egyptian_pagan_reformed = {
+				has_religion_feature = religion_temporal_head
 			}
 		}
 		localisation_key = AAI_PHARAOH
 	}
 	text = {
 		trigger = {
-			d_egyptian_pagan_reformed = {
-				holder_scope = {
-					NOT = { has_religion_feature = religion_temporal_head }
-				}
+			egyptian_pagan_reformed = {
+				NOT = { has_religion_feature = religion_temporal_head }
 			}
 		}
 		localisation_key = PARAGON_XROJ

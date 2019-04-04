@@ -1657,6 +1657,7 @@ decisions = {
 				trait = bloodthirsty_gods_1
 				trait = bloodthirsty_gods_2
 				trait = bloodthirsty_gods_3
+		
 			}
 			piety = 100
 			custom_tooltip = { 

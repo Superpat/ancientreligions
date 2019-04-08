@@ -2023,19 +2023,8 @@ wonder_university = {
 	potential = {
 		is_nomadic = no
 		OR = {
-			religion_group = christian
-			religion_group = muslim
-			religion_group = jewish_group
-			religion_group = zoroastrian_group
-			religion_group = indian_group
-			religion = hellenic_pagan_reformed
-			religion = hellenic_pagan
-		}
-		trigger_if = {
-			limit = {
-				is_organized_religion_trigger = no
-			}
 			is_organized_religion_trigger = yes
+			religion = hellenic_pagan
 		}
 	}
 	active = {
@@ -2176,19 +2165,8 @@ wonder_library = {
 	potential = {
 		is_nomadic = no
 		OR = {
-			religion_group = christian
-			religion_group = muslim
-			religion_group = jewish_group
-			religion_group = zoroastrian_group
-			religion_group = indian_group
-			religion = hellenic_pagan_reformed
-			religion = hellenic_pagan
-		}
-		trigger_if = {
-			limit = {
-				is_organized_religion_trigger = no
-			}
 			is_organized_religion_trigger = yes
+			religion = hellenic_pagan
 		}
 	}
 	active = {

@@ -371,7 +371,7 @@ decisions = {
 				}
 				culture = irish
 			}
-			tier > count
+			higher_tier_than = count
 			religion = celtic_pagan
 			prisoner = no
 			age = 16

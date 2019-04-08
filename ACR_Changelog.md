@@ -1,4 +1,4 @@
-2019-04-03 v0.43.2 "Ariovistus"
+2019-04-08 v0.43.2 "Ariovistus"
 ===========================
 
 > Ariovistus was the leader of the Suebi tribe when they were hired by the Sequani to fight the Aedui. After the war was won he demanded a third of the Sequani territory and threatened to take another third by force if they didn't comply.

@@ -2750,6 +2750,7 @@ wonder_pyramid_giza = {
 				culture = egyptian_arabic
 				trait = lunatic
 				has_religion_feature = religion_feature_pyramids
+				religion_openly_in_egyptian_subgroup_trigger = yes
 			}
 		}
 	}

@@ -316,7 +316,6 @@ succession_laws = {
 						religion = west_african_pagan
 					}
 					has_religion_feature = religion_beatification
-					has_religion_feature = religion_feature_egyptian
 					has_religion_feature = religion_feature_baltic
 					has_religion_feature = religion_feature_west_african
 				}
@@ -380,7 +379,6 @@ succession_laws = {
 							religion = west_african_pagan
 						}
 						has_religion_feature = religion_beatification
-						has_religion_feature = religion_feature_egyptian
 						has_religion_feature = religion_feature_baltic
 						has_religion_feature = religion_feature_west_african
 					}

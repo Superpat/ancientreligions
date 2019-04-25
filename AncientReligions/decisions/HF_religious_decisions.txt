@@ -1478,7 +1478,8 @@ decisions = {
 				is_tribal = yes
 				is_nomadic = yes
 			}
-			OR = { 
+			OR = {
+				religion = promethean_pagan
 				religion = hellenic_pagan 
 				religion = hellenic_pagan_reformed
 				AND = { 

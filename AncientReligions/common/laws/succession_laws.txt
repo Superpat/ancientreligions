@@ -1359,7 +1359,7 @@ succession_laws = {
 				title = k_britannic_pagan
 				AND = {
 					title = d_celtic_pagan_reformed
-					has_religion_feature = religion_theocratic_head
+					holder_scope = { has_religion_feature = religion_theocratic_head }
 				}
 			}
 		}

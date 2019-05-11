@@ -36,11 +36,6 @@ society_decisions = {
 				duration = 365
 			}
 		}
-
-		revoke_allowed = {
-			always = no
-		}
-
 		ai_will_do = {
 			factor = 0.001
 			modifier = {
@@ -69,7 +64,7 @@ targetted_decisions = {
 		}
 		
 		from_potential = {
-			has_DLC = "Mystics"
+			has_dlc = "Mystics"
 			society_rank >= 2
 			is_monastic_member_trigger = yes
 			is_adult = yes
@@ -224,11 +219,6 @@ targetted_decisions = {
 			FROM = { character_event = { id = MNM.4950 } }
 			character_event = { id = MNM.4951 }
 		}
-		
-		revoke_allowed = {
-		always = no
-		}
-		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -262,7 +252,7 @@ targetted_decisions = {
 		}
 		
 		from_potential = {
-			has_DLC = "Mystics"
+			has_dlc = "Mystics"
 			society_rank >= 3
 			is_monastic_member_trigger = yes
 			is_adult = yes
@@ -418,11 +408,6 @@ targetted_decisions = {
 			FROM = { character_event = { id = MNM.4960 } }
 			character_event = { id = MNM.4961 }
 		}
-		
-		revoke_allowed = {
-		always = no
-		}
-		
 		ai_will_do = {
 			factor = 1
 			modifier = {

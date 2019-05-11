@@ -6,10 +6,19 @@
 General:
 
 - Fixed many many bugs reported by The Validator.
+- Fixed issue where Reformed Pagans couldn't use the Great Library or Grand University Great Works.
 
 Celtic:
 
 - Fixed issue that made the Archdruid never qualify for Papal Succession.
+
+Hellenic:
+
+- Hellenic Monastic Orders (Stoics, Skeptics, Epicureans) have access to the correct decisions now.
+
+Egyptian:
+
+- Egyptians always have access to Pyramids, including the Great Pyramids.
 
 2019-04-08 v0.43.2 "Ariovistus"
 ===========================

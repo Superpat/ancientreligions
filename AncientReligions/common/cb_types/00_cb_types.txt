@@ -9598,7 +9598,6 @@ imperial_reconquest = {
 			de_jure_liege_or_above = k_mauretania
 			de_jure_liege_or_above = k_papal_state
 			de_jure_liege_or_above = k_papacy
-			de_jure_liege_or_above = k_venice
 			de_jure_liege_or_above = k_asturias
 			de_jure_liege_or_above = k_sardinia
 			de_jure_liege_or_above = k_antioch
@@ -10380,6 +10379,7 @@ pagan_subjugation = {
 	
 	can_use = {
 		ROOT = {
+			religion_group = pagan_group
 			is_organized_religion_trigger = no
 			NOT = { religion = hellenic_pagan }
 			NOT = { same_realm = FROM }
@@ -10431,7 +10431,12 @@ pagan_subjugation = {
 			religion_group = pagan_group
 			is_nomadic = no
 			NOT = { is_offmap_governor = yes }
-			is_organized_religion_trigger = yes
+			OR = {
+				is_reformed_religion = no
+				ROOT = {
+					is_organized_religion_trigger = yes
+				}
+			}
 			NOT = {
 				any_war = {
 					defender = { character = PREVPREV }

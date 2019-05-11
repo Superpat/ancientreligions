@@ -913,12 +913,15 @@ decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			trigger = {
-				had_global_flag = { flag = viking_age_started years = 2 }
-				OR = {
-					independent = yes
-					any_liege = {
-						ai = no
+			modifier = {
+				factor = 0
+				NOT = {
+					had_global_flag = { flag = viking_age_started years = 2 }
+					OR = {
+						independent = yes
+						any_liege = {
+							ai = no
+						}
 					}
 				}
 			}

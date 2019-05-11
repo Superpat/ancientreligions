@@ -1,3 +1,25 @@
+2019-05-11 v0.43.3 "Vesontio"
+===========================
+
+> Vesontio was the site of a battle between Gaius Julius Caesar's 6 Roman legions and the armies of Ariovistus in 58 BC. The Roman's nearly lost, if not for a snap judgement by Crassus to send the infantry reserve to support the right flank, the German's may have been able to encircle Caesar's forces. Ariovistus is believed to have escaped, but his exact fate is unknown except that he was dead before 54 BC drew to a close.
+
+General:
+
+- Fixed many many bugs reported by The Validator.
+- Fixed issue where Reformed Pagans couldn't use the Great Library or Grand University Great Works.
+
+Celtic:
+
+- Fixed issue that made the Archdruid never qualify for Papal Succession.
+
+Hellenic:
+
+- Hellenic Monastic Orders (Stoics, Skeptics, Epicureans) have access to the correct decisions now.
+
+Egyptian:
+
+- Egyptians always have access to Pyramids, including the Great Pyramids.
+
 2019-04-08 v0.43.2 "Ariovistus"
 ===========================
 

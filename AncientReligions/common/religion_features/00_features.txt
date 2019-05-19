@@ -1628,6 +1628,7 @@ religion_leadership = {
 						religion = tengri_pagan
 						religion = zun_pagan
                         religion = celtic_pagan
+						religion = hellenic_pagan
 					}
 				}
 			}

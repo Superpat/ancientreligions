@@ -101,7 +101,7 @@ title_collegium_member = {
 	allow = {
 		religion = hellenic_pagan_reformed
 		is_theocracy = yes
-		d_hellenic_pagan = {
+		k_hellenic_pagan = {
 			holder_scope = {
 				is_within_diplo_range = ROOT
 			}

@@ -26028,7 +26028,7 @@ e_persia = {
 			color={ 95 180 35 }
 			color2={ 255 255 255 }
 			
-			capital = 700 # Bira
+			capital = 712 # Rahbah
 			
 			c_rahbah = {
 				color={ 41 238 26 }
@@ -33390,6 +33390,7 @@ e_arabia = {
 		
 		culture = egyptian_arabic
 		
+		catholic = 450 # Crusade target weight
 		orthodox = 20 # Crusade target weight
 		muslim = 400 # Crusade target weight
 		zoroastrian_group = 100 # Crusade target weight

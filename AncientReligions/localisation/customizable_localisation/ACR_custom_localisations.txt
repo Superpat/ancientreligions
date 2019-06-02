@@ -257,19 +257,14 @@ defined_text = {
 	name = GetKemeticHeadTitle
 
 	text = {
+		localisation_key = AAI_PHARAOH
 		trigger = {
-			egyptian_pagan_reformed = {
+			d_egyptian_pagan_reformed = {
 				has_religion_feature = religion_temporal_head
 			}
 		}
-		localisation_key = AAI_PHARAOH
 	}
-	text = {
-		trigger = {
-			egyptian_pagan_reformed = {
-				NOT = { has_religion_feature = religion_temporal_head }
-			}
-		}
+	fallback_text = {
 		localisation_key = PARAGON_XROJ
 	}
 }

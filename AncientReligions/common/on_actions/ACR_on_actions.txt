@@ -67,6 +67,13 @@ on_yearly_pulse = {
 			100 = hellenic.537 # Vulcan's appearance
 			100 = hellenic.541 # Fruit of Pomona
 			
+			# Promethean Prosperity
+			100 = promethean.101 # better roads improve trade
+			100 = promethean.102 # roads allow better patrols, reducing banditry
+			100 = promethean.103 # dams increase arable land
+			100 = promethean.104 # irrigation increases arable land
+			100 = promethean.105 # bridges improve travel and trade
+
 			#I Can't Believe My Virgin Goddess of the Hunt is This Cute Event Blob (a.k.a. Artemis Event Blob)
 			2000 = hellenic.559 # Make offerings to the goddess
 			1500 = hellenic.562 # Apollo pays you a visit

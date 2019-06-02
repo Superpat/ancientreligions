@@ -234,6 +234,7 @@ decisions = {
 			OR = {
 				religion_group = christian
 				religion_group = pagan_group	
+				religion_group = zoroastrian_group
 				has_alternate_start_parameter = { key = religion_names value = random }
 			}
 			NOT = {
@@ -659,6 +660,7 @@ decisions = {
 		potential = {
 			is_playable = yes
 			religion_group = muslim
+			NOT = { religion = qarmatian }
 			NOT = { trait = hajjaj }
 			NOT = { trait = on_hajj }
 			NOT = {	has_character_flag = preparing_hajj }
@@ -913,15 +915,12 @@ decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				NOT = {
-					had_global_flag = { flag = viking_age_started years = 2 }
-					OR = {
-						independent = yes
-						any_liege = {
-							ai = no
-						}
+			trigger = {
+				had_global_flag = { flag = viking_age_started years = 2 }
+				OR = {
+					independent = yes
+					any_liege = {
+						ai = no
 					}
 				}
 			}

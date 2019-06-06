@@ -7630,7 +7630,7 @@ character_event = {
 }
 
 #Owner of province is notified of destruction of settlement.
-character_event = {
+province_event = {
 	id = HF.23211
 	desc = EVTDESCHF23211
 	picture = { 
@@ -15927,7 +15927,7 @@ character_event = {
 			}
 			remove_trait = groomed
 		}
-		else_if = { 
+		else = { 
 			add_trait = uncouth
 		}
 		ai_chance = { 

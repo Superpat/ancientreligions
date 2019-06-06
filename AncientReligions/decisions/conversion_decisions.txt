@@ -3354,7 +3354,7 @@ decisions = {
 						if = {
 							limit = { 
 								culture = italian
-								capital_scope = { NOT = { distance = { where = PREV distance = 100 } } } 
+								owner = { capital_scope = { NOT = { distance = { where = PREVPREV distance = 100 } } } }
 							}
 							random = { 
 								chance = 40 
@@ -3364,7 +3364,7 @@ decisions = {
 						if = {
 							limit = { 
 								culture_group = latin
-								capital_scope = { NOT = { distance = { where = PREV distance = 200 } } } 
+								owner = { capital_scope = { NOT = { distance = { where = PREVPREV distance = 200 } } } }
 							}
 							random = { 
 								chance = 20 
@@ -3374,7 +3374,7 @@ decisions = {
 						if = {
 							limit = { 
 								culture_group = latin
-								capital_scope = { NOT = { distance = { where = PREV distance = 400 } } } 
+								owner = { capital_scope = { NOT = { distance = { where = PREVPREV distance = 400 } } } }
 							}
 							random = { 
 								chance = 5
@@ -3395,7 +3395,7 @@ decisions = {
 						if = {
 							limit = { 
 								culture = roman
-								capital_scope = { NOT = { distance = { where = PREV distance = 100 } } } 
+								owner = { capital_scope = { NOT = { distance = { where = PREVPREV distance = 100 } } } }
 							}
 							random = { 
 								chance = 10 
@@ -3405,7 +3405,7 @@ decisions = {
 						if = {
 							limit = { 
 								culture = roman
-								capital_scope = { NOT = { distance = { where = PREV distance = 200 } } } 
+								owner = { capital_scope = { NOT = { distance = { where = PREVPREV distance = 200 } } } }
 							}
 							random = { 
 								chance = 5 

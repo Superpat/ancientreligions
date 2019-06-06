@@ -295,6 +295,12 @@ acr_infrastructure_investment = {
 	icon = 12
 }
 
+acr_cultural_friction = {
+	icon = 34
+
+	local_revolt_risk = 0.01
+}
+
 #####################################################################
 # Wines, Oils, Dionysus
 #####################################################################
@@ -309,6 +315,6 @@ ancrel_oilworks = {
 
 ancrel_held_dionysia = {
 	icon = 48
-	global_revolt_risk = -0.2
+	global_revolt_risk = -0.05
 	monthly_character_piety = 0.10
 }

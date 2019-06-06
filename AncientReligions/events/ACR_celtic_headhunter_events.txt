@@ -294,7 +294,15 @@ character_event = {
 	
 	option = {
 		name = celtic.11.a
+		trigger = {
+			NOR = {
+				is_bloodline_member_of = living_legend_female
+				is_bloodline_member_of = living_legend_male
+			}
+		}
+
 		add_trait = head2
+		
 		custom_tooltip = {
 			text = found_living_legend_bloodine_tt
 			hidden_tooltip = {

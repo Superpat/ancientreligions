@@ -4,7 +4,7 @@ promethean.101.desc;With the improvements to the road network in [Root.GetName] 
 promethean.102.desc;Improved roads and regularly placed guard towers have improved security in [Root.GetName], cutting down on banditry and improving commerce.;;;;;;;;;;;;;x
 promethean.103.desc;The people of [Root.GetName] have seen greater crop yields since a dam was built, increasing the amount of arable land.;;;;;;;;;;;;;x
 promethean.104.desc;The farms of [Root.GetName] are producing more crops than ever before, due to greatly improved irrigation throughout the province.;;;;;;;;;;;;;x
-promethean.105.dec;The trade routes in [Root.GetName] have been made more efficient through the repair of old bridges and the construction of new ones.;;;;;;;;;;;;;x
+promethean.105.desc;The trade routes in [Root.GetName] have been made more efficient through the repair of old bridges and the construction of new ones.;;;;;;;;;;;;;x
 promethean.110.desc;A group of a few dozen settlers have arrived in [Root.GetName] from the neighboring province of [origin.GetName], having heard of your invitation for settlement.;;;;;;;;;;;;;x
 promethean.111.desc;A large carvan of foreign settlers have arrived from [origin.GetName] looking to settle. While they speak a strange language and have odd customs, technically the province is open for settlement to all comers.;;;;;;;;;;;;;x
 promethean.111.a;All are welcome in [Root.GetName]!;;;;;;;;;;;;;x
@@ -14,10 +14,14 @@ promethean.112.desc;Word has reached you that the locals in [Root.GetName] are i
 promethean.112.a;They're just going to have to learn to get along.;;;;;;;;;;;;;x
 promethean.112.b;Banish some of the trouble-makers.;;;;;;;;;;;;;x
 promethean.112.c;Let me talk some sense into them.;;;;;;;;;;;;;x
+promethean.113.desc;not implemented;;;;;;;;;;;;;x
+promethean.113.a;not implemented;;;;;;;;;;;;;x
+promethean.113.b;not implemented;;;;;;;;;;;;;x
 promethean.114.desc;In the province of [Root.GetName] an extended family has come from [origin.GetName], seeking to settle down and make their fortune.;;;;;;;;;;;;;x
 promethean.115.desc;A wealthy merchant from [origin.GetName] has formally requested permission to enter your service as a baron in [Root.GetName]. He will fund the construction of his keep himself and swear fealty to you. This will undoubtedly be a boon to the province and your rule, but it he will be bringing hundreds of [origin.Culture.GetName] people with him.;;;;;;;;;;;;x
 promethean.115.a;All are welcome in [Root.GetName]!;;;;;;;;;;;;;x
 promethean.115.b;I cannot risk so much foreign influence.;;;;;;;;;;;;;x
+promethean.115.tt;[foreign_noble.GetFullName] and his retinue return to [origin.GetName].;;;;;;;;;;;;;x
 promethean.116.prosperous;With the population of [Root.GetName] booming and it's economy soaring, the open invitation for settlement is farcical at best. We are forced to withdraw it.;;;;;;;;;;;;;x
 promethean.116.infidel;With [Root.GetName] under our administration the status of open settlement is no longer under effect.;;;;;;;;;;;;;x
 promethean.400.title;The First Academy Restored;;;;;;;;;;;;;x

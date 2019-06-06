@@ -81,7 +81,7 @@ defined_text = {
 
 	text = {
 		trigger = { religion = britannic_pagan }
-		localisation_key = acr_circle_of_dryads
+		localisation_key = CIRCLE_OF_DRYADS
 	}
 }
 

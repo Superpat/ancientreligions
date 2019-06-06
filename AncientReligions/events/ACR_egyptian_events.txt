@@ -646,7 +646,7 @@ character_event = {
 				has_dlc = "Reapers"
 			}
 			custom_tooltip = {
-				text = province_loses_prosperity_custom_tooltip
+				text = province_declines_custom_tooltip
 				hidden_tooltip = {
 					capital_scope = {
 						subtract_variable = { which = prosperity_value value = 6 }
@@ -1211,7 +1211,7 @@ province_event = {
 				has_dlc = "Reapers"
 			}
 			custom_tooltip = {
-				text = province_loses_prosperity_custom_tooltip
+				text = province_declines_custom_tooltip
 				hidden_tooltip = {
 					ROOT = {
 						change_variable = { which = prosperity_value value = -2 }
@@ -1645,7 +1645,7 @@ character_event = {
 				has_dlc = "Reapers"
 			}
 			custom_tooltip = {
-				text = province_loses_prosperity_custom_tooltip
+				text = province_declines_custom_tooltip
 				hidden_tooltip = {
 					capital_scope = {
 						change_variable = { which = prosperity_value value = 6 }

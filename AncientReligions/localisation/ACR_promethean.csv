@@ -103,6 +103,7 @@ acr_open_settlement;Open Settlement;;;;;;;;;;;;x
 acr_open_settlement_desc;This province has been opened to settlement by anyone willing to make the journey.;;;;;;;;;;;;x
 acr_infrastructure_investment;Infrastructure Investment;;;;;;;;;;;;x
 acr_infrastructure_investment_desc;This province's infrasture recently received a large amount of investment, improving roads, dams, irrigation, etc.;;;;;;;;;;;;x
+infrastructure_projects_tt;[Root.GetName] will get infrastructure related events over time that increase it's prosperity.;;;;;;;;;;;;x
 foreign_influence_grows_minor_custom_tooltip;The influence of foreign practices grows slightly in [Root.GetName].;;;;;;;;;;;;x
 foreign_influence_grows_custom_tooltip;The influence of foreign practices grows in [Root.GetName]!;;;;;;;;;;;;x
 foreign_influence_grows_major_custom_tooltip;The influence of foreign practices grows greatly in [Root.GetName]!;;;;;;;;;;;;x

@@ -5,7 +5,7 @@
 
 General:
 
-- Merged in changes from CK2 3.1.1
+- Merged in changes from CK2 3.2
 
 Hellenic:
 

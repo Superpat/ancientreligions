@@ -1066,9 +1066,9 @@ title_decisions = {
 		}
 
 		effect = {
-			add_province_modifier = { name = acr_stimulate_growth duration = 1825 }
+			location = { add_province_modifier = { name = acr_stimulate_growth duration = 1825 } }
 			hidden_tooltip = {
-				province_event = { id = promethean.100 days = 1825 }
+				location = { province_event = { id = promethean.100 days = 1825 } }
 			}
 		}
 
@@ -1197,10 +1197,12 @@ title_decisions = {
 
 		effect = {
 			custom_tooltip = {
-				text = province_opened_for_settlement_tt
+				text = infrastructure_projects_tt
 				location = { add_province_modifier = { name = acr_infrastructure_investment duration = 7300 } }
 			}
-			wealth = -100
+			FROM = {
+				wealth = -100
+			}
 		}
 
 		ai_will_do = {

@@ -664,6 +664,9 @@ province_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		location = {
+			has_province_modifier = acr_open_settlement
+		}
 		OR = {
 			location = {
 				OR = {

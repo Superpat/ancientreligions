@@ -1,4 +1,4 @@
-2019-05-?? v0.44.0 "Danu"
+2019-06-?? v0.44.0 "Danu"
 ===========================
 
 > Danu; variously Dan, Don, Donnu, etc., was the mother goddess of the ancient Celts. Her legend is shared across all Celtic peoples; when the world was barren Danu was desperately lonely. She began to weep and her tears formed the rivers. Where they flowed life was born.

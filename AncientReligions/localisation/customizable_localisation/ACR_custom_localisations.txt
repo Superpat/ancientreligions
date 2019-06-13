@@ -259,9 +259,7 @@ defined_text = {
 	text = {
 		localisation_key = AAI_PHARAOH
 		trigger = {
-			d_egyptian_pagan_reformed = {
-				has_religion_feature = religion_temporal_head
-			}
+			has_global_flag = acr_aai_pharaoh
 		}
 	}
 	fallback_text = {

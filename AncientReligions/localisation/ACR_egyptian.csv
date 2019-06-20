@@ -6,6 +6,7 @@ secret_religion_in_egyptian_subgroup_tooltip;Secretly practicing an Ancient Egyp
 has_liege_vassal_or_neighbor_of_egyptian_religion_tt;Has a §YLiege§!, §YVassal§!, or a §Yneighboring ruler§! who follows an §YEgyptian§! faith\n;;;;;;;;;;;;;x
 religion_feature_egyptian;Children of the Nile;;;;;;;;;;;;;x
 religion_feature_egyptian_desc;In this new chapter of Kemetic faith we must remember that the Pharaohs have been a stabilising force for centuries and should remain so for centuries to come.;;;;;;;;;;;;;x
+egyptian_reconquest_desc;The Pharaoh of Aai-Kemet has certain territorial claims which they can press on lands once held by the ancient pharaohs.;;;;;;;;;;;;;x
 ###### Religion/titles definitions;;;;;;;;;;;;;;x
 egyptian_pagan;Egyptian;;;;;;;;;;;;;x
 egyptian_pagan_DESC;The Egyptian religion is polytheistic, with a large selection of gods and cults. It originated in ancient Egypt and with the conquests of the Egyptian empire, it would go on to become the dominant religion in the middle east until the rise of the Roman empire. The faith has deteriorated in the centuries since it's downfall, it will take considerable effort to restore it's ancient institutions.;La religion kémite est polythéiste, avec un grand nombre de dieux et de cultes. Elle est née dans l'Ancienne Egypte et s'étendit avec les conquestes de l'Empire Egyptien, au point de devenir la religion dominante au Moyen-Orient jusqu'à l'avènement de l'Empire Romain.;;;;;;;;;;;;x
@@ -35,6 +36,8 @@ GOD_APEP;Apep;Apep;Apep;;Apep;;;;;;;;;x
 ###### Titles;;;;;;;;;;;;;;x
 d_egyptian_pagan_reformed;The Paragon Cult of Amun;Le Culte Parandon d'Amon;The Paragon Cult of Amun;;The Paragon Cult of Amun;;;;;;;;;x
 d_egyptian_pagan_reformed_adj;Cultist;Sectateur;Cultist;;Cultist;;;;;;;;;x
+e_greater_egypt;Aai-Kemet;;;;;;;;;;;;x
+e_greater_egypt_adj;Aai-Kemet;;;;;;;;;;;;x
 d_anubis;Anubis Guard;Garde d'Anubis;Anubis Guard;;Anubis Guard;;;;;;;;;x
 d_anubis_adj;Guardian;Garde;Guardian;;Guardian;;;;;;;;;x
 borrowed_from_d_anubis;Borrowed from the Anubis Guard;;;;;;;;;;;;x
@@ -82,8 +85,8 @@ count_egyptian_pagan_reformed;Irypat;Irypat;Irypat;;Irypat;;;;;;;;;x
 duke_egyptian_pagan_reformed;Nomarch;Nomarque;Nomarch;;Nomarch;;;;;;;;;x
 king_egyptian_pagan_reformed;Pharaoh;Pharaon;Pharaoh;;Pharaoh;;;;;;;;;x
 king_female_egyptian_pagan_reformed;Pharaoh;Pharaon;Pharaoh;;Pharaoh;;;;;;;;;x
-emperor_egyptian_pagan_reformed;Aai-Pharaoh;Aai-Pharaoh;Aai-Pharaoh;;Aai-Pharaoh;;;;;;;;;x
-emperor_female_egyptian_pagan_reformed;Aai-Pharaoh;Aai-Pharaoh;Aai-Pharaoh;;Aai-Pharaoh;;;;;;;;;x
+emperor_egyptian_pagan_reformed;Aai-Pharaoh;;;;;;;;;;;;;x
+emperor_female_egyptian_pagan_reformed;Aai-Pharaoh;;;;;;;;;;;;;x
 title_queen_mother_egyptian_pagan_reformed;Mewet Pharaoh;Mewet Pharaon;Mewet Pharaoh;;Mewet Pharaoh;;;;;;;;;x
 temple_baron_egyptian_pagan_reformed;Local Cult Leader;Dirigeant du Culte Local;Local Cult Leader;;Local Cult Leader;;;;;;;;;x
 temple_count_egyptian_pagan_reformed;Priest;Prêtre;Priest;;Priest;;;;;;;;;x
@@ -175,7 +178,7 @@ ca_culture_egyptian_coptic_2;Temple of Anhur;;;;;;;;;;;;;x
 ca_culture_egyptian_coptic_3;High Temple of Anhur;;;;;;;;;;;;;x
 ca_culture_egyptian_coptic_4;Grand Temple of Anhur;;;;;;;;;;;;;x
 ca_culture_egyptian_coptic_1_desc;A building dedicated to the study of war. Named after Anhur, the god of war, this temple is home to the elite Anhuri Warriors. Here these fighters hone their skills with the Khopesh and mounted archery.;;;;;;;;;;;;;;x
-RETTYPE_CUL_COPTIC;Anhuri Warriors;;;;;;;;;;;;;x
+RETTYPE_CUL_ECOPTIC;Anhuri Warriors;;;;;;;;;;;;;x
 ###### Other ;;;;;;;;;;;;;;x
 ca_kemetic_pyramid;Pyramid;;;;;;;;;;;;;x
 ct_kemetic_pyramid;Pyramid;;;;;;;;;;;;;x

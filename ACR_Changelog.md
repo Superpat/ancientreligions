@@ -1,3 +1,41 @@
+2019-06-20 v0.44.0 "Danu"
+===========================
+
+> Danu; variously Dan, Don, Donnu, etc., was the mother goddess of the ancient Celts. Her legend is shared across all Celtic peoples; when the world was barren Danu was desperately lonely. She began to weep and her tears formed the rivers. Where they flowed life was born.
+
+General:
+
+- Merged in changes from CK2 3.2
+
+Hellenic:
+
+- Reformed Hellenic will use a Collegium Pontificum if reformed with Theocratic Leadership.
+
+Promethean:
+
+- Fixes bug with the Neoplatonist societies where no matter what you chose you would end up in the Stoics.
+- Introducing 'Promethean Prosperity'
+  - A set of decisions used on individual counties to build up the population and economy, increasing prosperity to prepare for the next Expansion War.
+  - _Stimulate Growth_: Reduce local taxes and redirect some of it to a grain dole for the poor. Effect is a 25% reduction in local taxes. After 25 years a large amount of prosperity is added via event.
+  - _Sponsor Local Festival_: Infuse a small amount of gold (10gp) into the local economy by sponsoring one of the many small festivals that happened in the era for a slight increase in prosperity immediately. There is a six month cooldown on the province for this decision.
+  - _Invest in Infrastructure_: Put down 100gp to improve the infrastructure in the province. A modifier will be applied for 20 years, allowing some events to be triggered to increase prosperity. This is probably the best bang for your buck.
+  - _Open For Settlement_: Open the province to unrestricted settlement. Unlike the Resettlement Mechanic of moving levels of prosperity, Open Settlement is disorganized and slow. Events will fire over time that will increase prosperity.
+    - Some of these settlers will come from foreign territories, and will bring their foreign ideas with them.
+    - Every group of foreigners that enter the province will increase the Foreign Influence in the province. The higher this is, the more likely you will experience friction between the settlers and the locals, creating revolt risk.
+    - These events will continue to fire until one of three things happens:
+      1. You manually end open settlement via title decision.
+      2. The province reaches Prosperity 2.
+      3. The province is no longer controlled by a Promethean.
+
+Kemetic:
+
+- Kemetic head of religion name is back to being Paragon, as the dynamic thing doesn't work.
+- Disabled the old "Build Pyramid" decision, as the new Great Works is a better feature.
+  - The old buildings will remain for the foreseeable future, you just won't be able to make more.
+- You can now form the empire of Aai-Kemet (basically Greater Egypt) if you are of an Egyptian religion, hold the title of Egypt and the dejure lands of Egypt and Nubia, and the duchies of Cyrenaica, Jerusalem, and Oultrajourdain.
+  - This empire works much like the Roman Empire does, immediately moving your kingdoms into it's dejure and enabling a special Reconquest CB.
+    - This CB targets dejure duchies in Africa, Egypt, Nubia, Abyssinia, Jerusalem, Syria, Antioch, and Cyprus.
+
 2019-05-11 v0.43.3 "Vesontio"
 ===========================
 

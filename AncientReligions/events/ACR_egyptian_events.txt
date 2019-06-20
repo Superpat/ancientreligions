@@ -6,8 +6,9 @@
 # Event ID egyptian.0 - egyptian.9 Decision Events
 # Event ID egyptian.10 - egyptian.19 Sed festival
 # Event ID egyptian.100 - egyptian.149 Nile Flooding
-# Event ID egyptian.150 - egyptian.199 Egyptian flavor events
+# Event ID egyptian.150 - egyptian.199 Egyptian flavor
 # Event ID egyptian.200 - egyptian.399 Kemetic Revival
+# Event ID egyptian.401 - egyptian.499 Greater Egypt
 ###################################################
 
 namespace = egyptian
@@ -646,7 +647,7 @@ character_event = {
 				has_dlc = "Reapers"
 			}
 			custom_tooltip = {
-				text = province_loses_prosperity_custom_tooltip
+				text = province_declines_custom_tooltip
 				hidden_tooltip = {
 					capital_scope = {
 						subtract_variable = { which = prosperity_value value = 6 }
@@ -1211,7 +1212,7 @@ province_event = {
 				has_dlc = "Reapers"
 			}
 			custom_tooltip = {
-				text = province_loses_prosperity_custom_tooltip
+				text = province_declines_custom_tooltip
 				hidden_tooltip = {
 					ROOT = {
 						change_variable = { which = prosperity_value value = -2 }
@@ -1645,7 +1646,7 @@ character_event = {
 				has_dlc = "Reapers"
 			}
 			custom_tooltip = {
-				text = province_loses_prosperity_custom_tooltip
+				text = province_declines_custom_tooltip
 				hidden_tooltip = {
 					capital_scope = {
 						change_variable = { which = prosperity_value value = 6 }
@@ -3935,8 +3936,82 @@ narrative_event = {
 		trigger = {
 			NOR = { 
 				society_member_of = warrior_lodge_egyptian
-				religion_openly_egyptian_or_reformed_trigger = yes
-				religion_secretly_egyptian_or_reformed_trigger = yes
+				can_join_society = warrior_lodge_egyptian
+			}
+		}
+	}
+}
+
+##################################
+## Restoration of Greater Egypt ##
+##################################
+
+## Greater Egypt Restored!
+
+# The Declaration of Greater Egypt
+narrative_event = {
+	id = egyptian.401
+	title = egyptian.401.title
+	desc = egyptian.401.desc
+	
+	picture = GFX_evt_pyramid
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = egyptian.401.a
+		hidden_tooltip = {
+			any_demesne_title = {
+				limit = {
+					tier = KING
+					ROOT = {
+						completely_controls = PREV
+					}
+				}
+				de_jure_liege = e_greater_egypt
+			}
+		}
+		e_greater_egypt = {
+			show_scope_change = no
+			grant_title = ROOT
+			hidden_tooltip = { make_primary_title = yes }
+			copy_title_laws = k_egypt
+		}
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					NOT = { has_landed_title = k_egypt }
+					ai = no
+				}
+				narrative_event = { id = egyptian.402 }
+			}
+		}
+		give_nickname = nick_the_glorious
+	}
+}
+
+# Informed about the Declaration of Greater Egypt
+narrative_event = {
+	id = egyptian.402
+	title = egyptian.402.title
+	desc = egyptian.402.desc
+	
+	picture = GFX_evt_pyramid
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = egyptian.402.a
+		trigger = {
+			true_religion = FROM
+		}
+	}
+
+	option = {
+		name = egyptian.402.b
+		trigger = {
+			NOT = {
+				true_religion = FROM
 			}
 		}
 	}

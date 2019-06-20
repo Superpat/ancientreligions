@@ -5309,6 +5309,7 @@ narrative_event = {
 					religion = egyptian_pagan_reformed
 				}
 				add_artifact = crown_egyptian_fylkir
+				set_global_flag = acr_aai_pharaoh
 			}
 			#hidden_effect = { reformation_god_names_changes_effect = yes }
 			#Opinion boost to new religious head (if any) and Reformer.

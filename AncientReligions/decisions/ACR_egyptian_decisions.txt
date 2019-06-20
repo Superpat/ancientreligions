@@ -98,6 +98,7 @@ decisions = {
 		only_playable = yes
 		is_high_prio = yes
 		potential = {
+			always = no
 			is_playable = yes
 			higher_tier_than = duke
 			religion_openly_in_egyptian_subgroup_trigger = yes
@@ -427,6 +428,50 @@ decisions = {
 				modifier = religious_order_formed
 				years = 10
 			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	restore_greater_egypt = {
+		only_independent = yes
+		is_high_prio = yes
+		ai_check_interval = 24
+		
+		potential = {
+			is_playable = yes
+			has_landed_title = k_egypt
+			religion_openly_in_egyptian_subgroup_trigger = yes
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { has_global_flag = greater_egypt_restored }
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			prestige = 3000
+			completely_controls = d_alexandria
+			completely_controls = d_damietta
+			completely_controls = d_cairo
+			completely_controls = d_aswan
+			completely_controls = d_sinai
+			completely_controls = d_faiyum
+			completely_controls = d_asyut
+			completely_controls = d_paraetonium
+			completely_controls = d_nobatia
+			completely_controls = d_nubia
+			completely_controls = d_sennar
+			completely_controls = d_hayya
+			completely_controls = d_cyrenaica
+			completely_controls = d_oultrejourdain
+			completely_controls = d_jerusalem
+		}
+		effect = {
+			set_global_flag = greater_egypt_restored
+			narrative_event = { id = egyptian.401 tooltip = egyptian.401.tt }
 		}
 		ai_will_do = {
 			factor = 1

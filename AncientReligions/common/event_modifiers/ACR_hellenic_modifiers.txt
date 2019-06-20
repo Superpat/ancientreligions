@@ -256,6 +256,10 @@ acr_good_performance = {
 	general_opinion = 5
 }
 
+acr_foreign_influence = {
+	icon = 20
+}
+
 # character modifier!
 acr_great_performance = {
 	icon = 18

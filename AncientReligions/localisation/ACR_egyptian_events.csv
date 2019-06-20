@@ -114,8 +114,19 @@ egyptian.209.desc;After what seemed like hours, but may well have been just minu
 egyptian.209.a;[Root.Religion.GetHighGodName] was with me this night...;;;;;;;;;;;;;x
 egyptian.210.desc;You hear trumpets from the walls, and know whats happening even before the watch captain can tell you. Your new honor guard has arrived. Thousands of warriors on horseback, their spears gleaming in the sun. They are led by three men, each holding a banner with your heraldry topped with a gold ankh.;;;;;;;;;;;;;;x
 egyptian.210.a;Now the work can begin...;;;;;;;;;;;;;;x
+egyptian.400.desc;Word has reached you of the formation of a new society of warriors dedicated to upholding the ideals of the [From.Religion.GetName] through martial discipline and endurance training in the harsh desert sands. While primarly concerned with [From.Religion.GetName] beliefs, membership is not restricted to that faith's adherents.;;;;;;;;;;;;;;x
+egyptian.400.a;An intriguing organization.;;;;;;;;;;;;;;x
+egyptian.400.b;No thanks...;;;;;;;;;;;;;;x
+egyptian.401.title;A Greater Egypt;;;;;;;;;;;;;;x
+egyptian.401.desc;Your power and legitimacy can no longer be denied. In a grand ceremony you sign a proclamation, declaring the Empire of Aai-Kemet.;;;;;;;;;;;;;;x
+egyptian.401.a;It's only the beginning...;;;;;;;;;;;;;;x
+egyptian.401.tt;The Greater Egyptian Empire of Aai-Kemet is created.;;;;;;;;;;;;;;x
+egyptian.402.title;A Greater Egypt;;;;;;;;;;;;;;x
+egyptian.402.desc;A proclamation from [From.GetTitledFirstName] has been delivered to you, it declares the creation of "Aai-Kemet", the Greater Egyptian Empire. No doubt this is a precursor to territorial ambitions...;;;;;;;;;;;;;;x
+egyptian.402.a;A great day indeed.;;;;;;;;;;;;;;x
+egyptian.402.b;Trumped up fool!;;;;;;;;;;;;;;x
 hf.40020.egyptian;[saint_person.GetTitledName] is a well known exemplar of our faith, who recently passed away. Discussions about permanently venerating [saint_person.GetHerHim] as a demigod have come up, but everyone is waiting for my final decision on the matter.;;;;;;;;;;;;;;;x
-egyptian_pharaoh_cannonize_choice_TT;[saint_person.GetTitledName]'s funerary cult will get official support, making [saint_person.GetHerHim] a §YDemigod! of the faith. [saint_person.GetHerHisCap] §YDynasty§! would surely appreciate the gesture.;;;;;;;;;;;;;;x
+egyptian_pharaoh_cannonize_choice_TT;[saint_person.GetTitledName]'s funerary cult will get official support, making [saint_person.GetHerHim] a §YDemigod§! of the faith. [saint_person.GetHerHisCap] §YDynasty§! would surely appreciate the gesture.;;;;;;;;;;;;;;x
 ###### Chronicle;;;;;;;;;;;;;;x
 CHRONICLE_EGYPTIAN_PRIESTHOOD;Backed by [Root.GetTitledName]'s contributions and the growing power of the reborn Kemetic faith, [Prev.GetDynName] was installed as the Paragon Xroj, the first high priest of a new Kemetic era.;;;;;;;;;;;;;x
 CHRONICLE_ANUBIS_GUARD;Backed by [Root.GetTitledName]'s contributions and the growing power of the reborn Kemetic faith, the Anubis Guard, an order of chariot archers and spears, was established under the command of [Prev.GetDynName].;;;;;;;;;;;;;x

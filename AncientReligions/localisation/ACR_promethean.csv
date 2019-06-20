@@ -104,11 +104,14 @@ acr_open_settlement_desc;This province has been opened to settlement by anyone w
 acr_infrastructure_investment;Infrastructure Investment;;;;;;;;;;;;x
 acr_infrastructure_investment_desc;This province's infrasture recently received a large amount of investment, improving roads, dams, irrigation, etc.;;;;;;;;;;;;x
 infrastructure_projects_tt;[Root.GetName] will get infrastructure related events over time that increase it's prosperity.;;;;;;;;;;;;x
+acr_foreign_influence;Foreign Influence: [foreign_influence.GetValue];;;;;;;;;;;;x
+acr_foreign_influence_desc;This represents the level of foreign cultural and religious influence on the province. Higher values increase the risk of tension.;;;;;;;;;;;;x
 foreign_influence_grows_minor_custom_tooltip;The influence of foreign practices grows slightly in [Root.GetName].;;;;;;;;;;;;x
-foreign_influence_grows_custom_tooltip;The influence of foreign practices grows in [Root.GetName]!;;;;;;;;;;;;x
+foreign_influence_grows_moderate_custom_tooltip;The influence of foreign practices grows in [Root.GetName]!;;;;;;;;;;;;x
 foreign_influence_grows_major_custom_tooltip;The influence of foreign practices grows greatly in [Root.GetName]!;;;;;;;;;;;;x
 foreign_influence_declines_minor_custom_tooltip;The influence of foreign culture decreases slightly in [This.GetName]!;;;;;;;;;;;;x
-foreign_influence_declines_custom_tooltip;The influence of foreign culture decreases in [This.GetName]!;;;;;;;;;;;;x
+foreign_influence_declines_moderate_custom_tooltip;The influence of foreign culture decreases in [This.GetName]!;;;;;;;;;;;;x
+foreign_influence_declines_major_custom_tooltip;The influence of foreign culture decreases greatly in [This.GetName]!;;;;;;;;;;;;x
 # Titles;;;;;;;;;;;;;;x
 d_promethean_pagan;The First Academy;;;;;;;;;;;;;x
 d_promethean_pagan_adj;Academecian;;;;;;;;;;;;;x

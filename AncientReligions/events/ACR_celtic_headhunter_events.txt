@@ -29,15 +29,15 @@ character_event = {
 	trigger = {
 		is_alive = yes
 		NOT = { trait = head1 }
-		OR = {
-			religion = celtic_pagan
-			religion = celtic_pagan_reformed
-		}
+		religion_openly_celtic_or_reformed_trigger = yes
 		OR = {
 			trait = brave
 			trait = fian
 			trait = celtic_knight
 			trait = wroth
+		}
+		NOT = {
+			has_religion_feature = religion_peaceful
 		}
 	}
 	
@@ -295,9 +295,10 @@ character_event = {
 	option = {
 		name = celtic.11.a
 		trigger = {
-			NOR = {
-				is_bloodline_member_of = living_legend_female
-				is_bloodline_member_of = living_legend_male
+			NOT = {
+				any_owned_bloodline = {
+					has_bloodline_flag = bloodline_legendary
+				}
 			}
 		}
 
@@ -327,9 +328,8 @@ character_event = {
 		add_trait = head2
 
 		trigger = {
-			OR = {
-				is_bloodline_member_of = living_legend_male
-				is_bloodline_member_of = living_legend_female
+			any_owned_bloodline = {
+				has_bloodline_flag = bloodline_legendary
 			}
 		}
 	}

@@ -532,7 +532,6 @@ religion_doctrine = {
 			NOR = { 
 				has_selected_religion_feature = religion_feature_zun #Redundant
 				has_selected_religion_feature = religion_feature_bon
-                religion = egyptian_pagan_reformed # redundant
 				religion = zoroastrian #Random World.
 				religion = messalian
 			} 

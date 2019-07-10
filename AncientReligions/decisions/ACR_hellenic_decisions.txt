@@ -350,16 +350,6 @@ decisions = {
 			set_character_flag = acr_restorer_of_academy
 			hidden_tooltip = {
 				narrative_event = { id = promethean.400 }
-				any_player = {
-					limit = {
-						OR = {
-							religion_openly_in_hellenic_subgroup_trigger = yes
-							culture = roman
-							is_within_diplo_range = ROOT
-						}
-					}
-					narrative_event = { id = promethean.408 days = 10 }
-				}
 			}
 		}
 		ai_will_do = {

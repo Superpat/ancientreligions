@@ -950,7 +950,7 @@ title_decisions = {
 		}
 		
 		effect = {
-			location = { add_province_modifier = { name = preparing_settlers days = 30 } }
+			location = { add_province_modifier = { name = preparing_settlers duration = 30 } }
 		}
 		
 		ai_will_do = {
@@ -1253,6 +1253,7 @@ title_decisions = {
 		potential = {
 			location = {
 				NOR = {
+					has_province_modifier = prosperity_modifier_2
 					has_province_modifier = prosperity_modifier_3
 					has_province_modifier = acr_open_settlement
 				}
@@ -1261,7 +1262,7 @@ title_decisions = {
 
 		effect = {
 			location = {
-				add_province_modifier = { name = acr_open_settlement days = -1 }
+				add_province_modifier = { name = acr_open_settlement duration = -1 }
 			}
 		}
 

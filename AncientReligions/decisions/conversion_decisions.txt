@@ -3121,7 +3121,7 @@ decisions = {
 							limit = { religion = orthodox }
 							add_province_modifier = {
 								name = appeased_religious
-								months = 60
+								duration = 1825
 							}
 						}
 					}

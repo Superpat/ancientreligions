@@ -1365,6 +1365,10 @@ succession_laws = {
 					title = k_hellenic_pagan
 					holder_scope = { has_religion_feature = religion_theocratic_head }
 				}
+				AND = {
+					title = d_egyptian_pagan_reformed
+					holder_scope = { has_religion_feature = religion_theocratic_head }
+				}
 			}
 		}
 		
@@ -1399,6 +1403,7 @@ succession_laws = {
 				title = d_celtic_pagan_reformed
 				title = k_britannic_pagan
 				title = k_hellenic_pagan
+				title = d_egyptian_pagan_reformed
 			}
 			NAND = { 
 				has_law = succ_byzantine_elective 

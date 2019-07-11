@@ -14,7 +14,7 @@ Promethean:
 
 Kemetic:
 
-- If reformed with Hierocratic Leadership, will use a Council of Xroj mechanic (College of Cardinals).
+- If reformed with Hierocratic Leadership, will use a Xroj Council mechanic (College of Cardinals).
 
 2019-06-20 v0.44.0 "Danu"
 ===========================

@@ -33,6 +33,14 @@ GOD_ISIS;Isis;Isis;Isis;;Isis;;;;;;;;;x
 GOD_OSIRIS;Osiris;Osiris;Osiris;;Osiris;;;;;;;;;x
 GOD_ANUBIS;Anubis;Anubis;Anubis;;Anubis;;;;;;;;;x
 GOD_APEP;Apep;Apep;Apep;;Apep;;;;;;;;;x
+### Xroj Council;;;;;;;;;;;;;;x
+XROJ_COUNCIL;The Xroj Council;;;;;;;;;;;;;x
+NEXT_PARAGON;Next Paragon;;;;;;;;;;;;;x
+title_xroj_council_member;Xroj Councilor;;;;;;;;;;;;;x
+best_candidate_title_xroj_council_member;My best candidate;Mon meilleur candidat;;;;;;;;;;;;x
+best_candidate_title_xroj_council_member_tooltip;Of all the priests in my realm, this one is the likeliest to enter the Xroj Council;;;;;;;;;;;;;x
+expected_next_title_xroj_council_member;Expected next Xroj Councilor;;;;;;;;;;;;;x
+expected_next_title_xroj_council_member_tooltip;This priest is probably the next member of the Xroj Council, once a position becomes available;;;;;;;;;;;;;x
 ###### Titles;;;;;;;;;;;;;;x
 d_egyptian_pagan_reformed;The Paragon Cult of Amun;Le Culte Parandon d'Amon;The Paragon Cult of Amun;;The Paragon Cult of Amun;;;;;;;;;x
 d_egyptian_pagan_reformed_adj;Cultist;Sectateur;Cultist;;Cultist;;;;;;;;;x

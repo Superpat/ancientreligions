@@ -179,6 +179,7 @@ has_character_was_religion_flag_trigger = {
 		has_character_flag = character_was_shiite
 		has_character_flag = character_was_druze
 		has_character_flag = character_was_hurufi
+		has_character_flag = character_was_qarmatian
 		has_character_flag = character_was_jewish
 		has_character_flag = character_was_karaite
 		has_character_flag = character_was_samaritan
@@ -506,6 +507,7 @@ is_in_egyptian_regions_of_interest_trigger = {
 			title = e_arabia
 			title = e_abyssinia
 			title = e_byzantium
+			title = e_greater_egypt
 		}
 	}
 }

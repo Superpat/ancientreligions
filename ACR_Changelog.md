@@ -1,3 +1,21 @@
+2019-07-11 v0.44.1 "Gwydion"
+===========================
+
+> Gwyddion, son of Don, is a Welsh mythic figure featured in the Fourth Branch of the Mabinogi. Magician, trickster, and hero, Gwydion's adventures are varied and long.
+
+General:
+
+- Merges Irish history changes from CK2 3.2.1
+
+Promethean:
+
+- Fixes bug that caused an event to be fired ~13,000 times after the First Academy is restored.
+- Fixes issues with Promethean Prosperity feature.
+
+Kemetic:
+
+- If reformed with Hierocratic Leadership, will use a Council of Xroj mechanic (College of Cardinals).
+
 2019-06-20 v0.44.0 "Danu"
 ===========================
 
@@ -9,7 +27,7 @@ General:
 
 Hellenic:
 
-- Reformed Hellenic will use a Collegium Pontificum if reformed with Theocratic Leadership.
+- Reformed Hellenic will use a Collegium Pontificum if reformed with Hierocratic Leadership.
 
 Promethean:
 

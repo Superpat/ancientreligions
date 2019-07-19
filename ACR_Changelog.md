@@ -7,6 +7,10 @@ General:
 
 - Merges Irish history changes from CK2 3.2.1
 
+Celtic:
+
+- Fixed a bug where the headhunter and living legend events could fire seemingly simultaneously.
+
 Promethean:
 
 - Fixes bug that caused an event to be fired ~13,000 times after the First Academy is restored.

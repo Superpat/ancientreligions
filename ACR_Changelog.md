@@ -1,4 +1,4 @@
-2019-07-11 v0.44.1 "Gwydion"
+2019-07-21 v0.44.1 "Gwydion"
 ===========================
 
 > Gwyddion, son of Don, is a Welsh mythic figure featured in the Fourth Branch of the Mabinogi. Magician, trickster, and hero, Gwydion's adventures are varied and long.

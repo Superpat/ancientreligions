@@ -28,7 +28,6 @@ character_event = {
 
 	trigger = {
 		is_alive = yes
-		NOT = { trait = head1 }
 		religion_openly_celtic_or_reformed_trigger = yes
 		OR = {
 			trait = brave
@@ -36,8 +35,10 @@ character_event = {
 			trait = celtic_knight
 			trait = wroth
 		}
-		NOT = {
+		NOR = {
 			has_religion_feature = religion_peaceful
+			trait = head1
+			trait = head2
 		}
 	}
 	
@@ -152,6 +153,7 @@ character_event = {
 	option = {
 		name = celtic.10.a
 		add_trait = head1
+		set_character_flag = ancrel_headhunter
 	}
 }
 
@@ -182,6 +184,7 @@ character_event = {
 		}
 		NOT = { trait = head2 }
 		religion_openly_celtic_or_reformed_trigger = yes
+		had_character_flag = { flag = ancrel_headhunter days = 780 }
 	}
 	
 	weight_multiplier = {
@@ -332,5 +335,9 @@ character_event = {
 				has_bloodline_flag = bloodline_legendary
 			}
 		}
+	}
+
+	after = {
+		clr_character_flag = ancrel_headhunter
 	}
 }

@@ -10,6 +10,7 @@ General:
 Celtic:
 
 - Fixed a bug where the headhunter and living legend events could fire seemingly simultaneously.
+- Court Druid and Court Bard are marked as high priority minor titles, so you will be alerted if the post is empty.
 
 Promethean:
 

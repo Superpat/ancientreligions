@@ -1,3 +1,16 @@
+2019-07-24 v0.44.1.1 "Goewin"
+===========================
+
+> Goewin was the virgin foot-holder of King Math of Venedotia. Gilfaethwy, nephew to the king, became obsessed with her and convinced Gwydion to help him have his way with her. The trickster stole magic pigs from another king to trigger a war. During the confusion Gilfaethwy rapes the innocent woman. For this transgression Math turns both men into wild animals for three years.
+
+General:
+
+- Steam botched the upload for the Gwydion update, so this should hopefully fix that.
+
+Celtic:
+
+- There is now an option to secretly convert to Celtic Pagan when a bishop demands you drop the Celtic Rites.
+
 2019-07-21 v0.44.1 "Gwydion"
 ===========================
 

@@ -209,6 +209,20 @@ character_event = {
 		}
 		hidden_tooltip = { remove_character_modifier = celtic_ways }
 	}
+
+	option = {
+		name = celtic.2.c
+		ai_chance = { factor = 20 }
+		religion_head = {
+			opinion = {
+				modifier = opinion_happy
+				who = ROOT
+				years = 2
+			}
+		}
+		remove_character_modifier = celtic_ways
+		set_secret_religion = celtic_pagan
+	}
 }
 
 # Adopt celtic rites (vassal)
